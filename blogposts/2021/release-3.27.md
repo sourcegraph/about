@@ -40,7 +40,7 @@ changelogItems:
 
 Sourcegraph 3.27 is now available! For this release, we focused on making Sourcegraph Batch Changes even better, upgraded our minimum supported version of Postgres from 9.6 to 12, and added a new `contains` functionality to search.
 
-## Batch Changes Updates
+## Batch Changes updates
 
 [Batch Changes](https://about.sourcegraph.com/batch-changes/) allows you to automate large-scale code changes with a single declarative file. With a simple UI, Batch Changes makes it easy to track and manage all of your changesets from checks to code reviews until each change is merged.
 As part of this release you can now define batch change rollout windows allowing you to better control when changes are rolled out, and we added the ability to mark changesets as “archived” when a new batch spec is created.
@@ -50,7 +50,7 @@ As part of this release you can now define batch change rollout windows allowing
 We updated the minimum supported version of Postgres from 9.6 to 12. If you are maintaining an external database and your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27.
 [Read more about why we made this change](https://about.sourcegraph.com/blog/postgres-version-update/).
 
-## New "Contains" functionality
+## New "contains" functionality
 
 Contains is a new query built-in that enables you to conditionally filter repositories based on the repository contents. For example, you can now search across repositories only if those repositories contain a particular file (like a README), or a particular file with some content (like a CHANGELOG file that includes the word fix).
 
