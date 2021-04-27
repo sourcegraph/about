@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph 3.27 release"
-publishDate: 2021-04-20T10:00-07:00
+publishDate: 2021-04-27T10:00-07:00
 description: "Sourcegraph 3.27 release includes Batch Changes updates, changes to the minimum required version of Postgres, and a new seach feature."
 tags: [blog, release]
 slug: "release/3.27"
@@ -53,5 +53,3 @@ We updated the minimum supported version of Postgres from 9.6 to 12. If you are 
 ## New "Contains" functionality 
 
 Contains is a new query built-in that enables you to conditionally filter repositories based on the repository contents. For example, you can now search across repositories only if those repositories contain a particular file (like a README), or a particular file with some content (like a CHANGELOG file that includes the word fix).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hKXoMVzBZ5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
