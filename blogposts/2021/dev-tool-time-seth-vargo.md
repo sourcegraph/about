@@ -3,7 +3,7 @@ title: Dev Tool Time with Seth Vargo - April 14, 2021
 description: On April 14, 2021, Dev Tool Time welcomed Seth Vargo as our first guest. Seth showed us his productivity optimized desk setup, talked about great window management and keyboard shortcuts. He shared his .gitconfig and much more.
 author: Vanesa Ortiz
 authorUrl: https://twitter.com/vanesacodes
-publishDate: 2021-04-27T10:00-07:00
+publishDate: 2021-04-28T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-seth-vargo
 heroImage: https://sourcegraphstatic.com/Twitter-Feed-Seth-Vargo-WS.png
