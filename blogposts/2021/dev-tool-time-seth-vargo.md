@@ -13,8 +13,6 @@ published: true
 
 On April 14, 2021, Dev Tool Time welcomed Seth Vargo as our first guest. You can find the live stream video at the end of this blog post.
 
-</br>
-
 > ![Seth Vargo](/blog/seth-vargo.jpg)
 >
 > ### About Seth Vargo
@@ -23,7 +21,6 @@ On April 14, 2021, Dev Tool Time welcomed Seth Vargo as our first guest. You can
 >
 > Seth Vargo is an engineer at Google Cloud. Previously he worked at HashiCorp, Chef Software, CustomInk, and some Pittsburgh-based startups. He is the author of Learning Chef and is passionate about reducing inequality in technology. When he is not writing, working on open source, teaching, or speaking at conferences, Seth advises non-profits.
 
-</br>
 Seth was generous in sharing his dev productivity secrets, including how to leverage keyboard shortcuts, a hack for setting up a new computer in record time, and his .gitconfig containing the Git aliases you need to become a Git ninja.
 
 He also talked about the importance of screen real estate and showed us his desk setup that’s optimized for productivity. Here is a summary of the setup and tools he mentioned:
@@ -93,9 +90,9 @@ Seth also swears by [Cinch](https://www.irradiatedsoftware.com/cinch/), a mouse-
 ---
 
 <p style="text-align: center; font-weight: bold;">
-Join us on April 28th at 11am PT/ 2pm ET for <a src="http://info.sourcegraph.com/dev-tool-time">Dev Tool Time</a> with our next guest <a src="https://twitter.com/leahculver">Leah Culver</a>, iOS engineer at Twitter.
+Join us on April 28th at 11am PT/ 2pm ET for <a href="http://info.sourcegraph.com/dev-tool-time">Dev Tool Time</a> with our next guest <a href="https://twitter.com/leahculver">Leah Culver</a>, iOS engineer at Twitter.
 </p>
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/$sltjIaAwWac?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/sltjIaAwWac?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
