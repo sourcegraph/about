@@ -82,16 +82,12 @@ Join us on April 28th at 11am PT/ 2pm ET for <a href="http://info.sourcegraph.co
 ---
 
 <a name="seth-vargo">
-<div class="row alert-info">
-  <div class="col-2">
-    <img src="/blog/seth-vargo.jpg" alt="Seth Vargo">
-  </div>
-  <div class="col-8">
-    <h3>About Seth Vargo</h3>
-    <h4>Google Cloud Engineer</h4>
-    <p>Seth Vargo is an engineer at Google Cloud. Previously he worked at HashiCorp, Chef Software, CustomInk, and some Pittsburgh-based startups. He is the author of Learning Chef and is passionate about reducing inequality in technology. When he is not writing, working on open source, teaching, or speaking at conferences, Seth advises non-profits.<p>
-  </div>
-</div>
+
+> ### About Seth Vargo
+>
+> #### Google Cloud Engineer
+>
+> Seth Vargo is an engineer at Google Cloud. Previously he worked at HashiCorp, Chef Software, CustomInk, and some Pittsburgh-based startups. He is the author of Learning Chef and is passionate about reducing inequality in technology. When he is not writing, working on open source, teaching, or speaking at conferences, Seth advises non-profits.
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/sltjIaAwWac?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
