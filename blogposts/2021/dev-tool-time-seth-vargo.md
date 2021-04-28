@@ -11,7 +11,7 @@ socialImage: https://sourcegraphstatic.com/Twitter-Feed-Seth-Vargo-WS.png
 published: true
 ---
 
-On April 14, 2021, Dev Tool Time welcomed Seth Vargo as our first guest. You can find the live stream video at the end of this blog post.
+On April 14, 2021, Dev Tool Time welcomed Seth Vargo as our first guest. You can watch the live stream video on [YouTube Live](https://www.youtube.com/watch?v=sltjIaAwWac) or at the bottom of this blog post.
 
 > ![Seth Vargo](/blog/seth-vargo.jpg)
 >
