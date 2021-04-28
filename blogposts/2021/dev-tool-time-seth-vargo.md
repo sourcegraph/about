@@ -23,7 +23,7 @@ He also talked about the importance of screen real estate and showed us his desk
 
 ![Seth Vargo Desk Setup](https://sourcegraphstatic.com/SethVargo-DeskSetup2.jpg)
 
-### [LG 5k monitor](https://www.apple.com/shop/product/HMUB2LL/A/lg-ultrafine-5k-display)
+### [LG 5K monitor](https://www.apple.com/shop/product/HMUB2LL/A/lg-ultrafine-5k-display)
 
 This monitor comes with a built-in USB-C hub to charge his MacBook at 96 watts, his Stream Deck and to connect his [Thunderbolt-based wired Ethernet](https://eshop.macsales.com/item/OWC/TB3ADP10GBE/).
 
@@ -33,7 +33,7 @@ Each Stream Deck button is assigned to run something, for example one button sho
 
 ![Seth Vargo Stream Deck](https://sourcegraphstatic.com/SethVargo-StreamDeck.jpg)
 
-### [Elgato 4k Cam Link](https://www.elgato.com/en/cam-link-4k)
+### [Elgato 4K Cam Link](https://www.elgato.com/en/cam-link-4k)
 
 This allows Seth to stream with his DSLR camera and he gets many compliments on how great his video quality is.
 
