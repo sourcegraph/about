@@ -11,7 +11,7 @@ socialImage: https://sourcegraphstatic.com/Twitter-Feed-Seth-Vargo-WS.png
 published: true
 ---
 
-On April 14, 2021, Dev Tool Time welcomed [Seth Vargo](https://www.sethvargo.com/me) as our first guest. You can watch the live stream video on [YouTube Live](https://www.youtube.com/watch?v=sltjIaAwWac) or at the bottom of this blog post.
+On April 14, 2021, Dev Tool Time welcomed [Seth Vargo](#seth-vargo) as our first guest. You can watch the live stream video on [YouTube Live](https://www.youtube.com/watch?v=sltjIaAwWac) or at the [bottom](#seth-vargo) of this blog post.
 
 Seth was generous in sharing his dev productivity secrets, including how to leverage keyboard shortcuts, a hack for setting up a new computer in record time, and his [.gitconfig](https://gist.github.com/sethvargo/d10a81f219f6469889269af2076b4d39) containing the [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases) you need to become a Git ninja.
 
@@ -81,6 +81,7 @@ Join us on April 28th at 11am PT/ 2pm ET for <a href="http://info.sourcegraph.co
 
 ---
 
+<a name="seth-vargo">
 <div class="row alert-info">
   <div class="col-2">
     <img src="/blog/seth-vargo.jpg" alt="Seth Vargo">
