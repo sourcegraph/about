@@ -21,7 +21,7 @@ On April 14, 2021, Dev Tool Time welcomed Seth Vargo as our first guest. You can
 >
 > Seth Vargo is an engineer at Google Cloud. Previously he worked at HashiCorp, Chef Software, CustomInk, and some Pittsburgh-based startups. He is the author of Learning Chef and is passionate about reducing inequality in technology. When he is not writing, working on open source, teaching, or speaking at conferences, Seth advises non-profits.
 
-Seth was generous in sharing his dev productivity secrets, including how to leverage keyboard shortcuts, a hack for setting up a new computer in record time, and his .gitconfig containing the Git aliases you need to become a Git ninja.
+Seth was generous in sharing his dev productivity secrets, including how to leverage keyboard shortcuts, a hack for setting up a new computer in record time, and his [.gitconfig](https://gist.github.com/sethvargo/d10a81f219f6469889269af2076b4d39) containing the [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases) you need to become a Git ninja.
 
 He also talked about the importance of screen real estate and showed us his desk setup that’s optimized for productivity. Here is a summary of the setup and tools he mentioned:
 
@@ -74,16 +74,12 @@ Seth makes heavy use of [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-
 
 ### [Visual Studio Code](https://code.visualstudio.com/)
 
-Visual Studio Code is Seth’s favorite IDE, and his color scheme of choice is [Default Material Dark](https://marketplace.visualstudio.com/items?itemName=yuchiu2002.default-material-dark-theme). He uses the [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons) theme for his icons. He also uses the [Go Plugin for VS Code](https://code.visualstudio.com/docs/languages/go) to help with auto-formatting, so he doesn’t have to worry about indentation or tabs versus spaces. These are his [VSCode configurations](https://gist.github.com/sethvargo/d565d2ce0bdd54c8248fcd4c808ca1a4).
-
-</br>
+Visual Studio Code is Seth’s favorite IDE, and his color scheme of choice is [Default Material Dark](https://marketplace.visualstudio.com/items?itemName=yuchiu2002.default-material-dark-theme). He uses the [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons) theme for his icons. He also uses the [Go Plugin for VS Code](https://code.visualstudio.com/docs/languages/go) to help with auto-formatting, so he doesn’t have to worry about indentation or tabs versus spaces. These are his [VS Code configurations](https://gist.github.com/sethvargo/d565d2ce0bdd54c8248fcd4c808ca1a4).
 
 > ### Words of Wisdom:
 >
 > _“Formatting is owned by the repository… the linting configuration is a property
 > of the repository not a property of the user.”_
-
-</br>
 
 Seth also swears by [Cinch](https://www.irradiatedsoftware.com/cinch/), a mouse-based window manager, as well as [Terraform](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) and [Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode) plugins (although we didn’t get to cover the last two in the live stream).
 
