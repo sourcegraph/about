@@ -195,8 +195,8 @@ const Index: React.FunctionComponent = (props: any) => (
                             Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/batch_changes">
-                                Batch Changes documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="/batch-changes/">
+                                Learn more about Batch Changes <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
