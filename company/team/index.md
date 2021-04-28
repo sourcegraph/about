@@ -855,4 +855,4 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [RafLeszczynski](https://github.com/RafLeszczynski)
 - [rafal@sourcegraph.com](mailto:rafal@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rleszcz/)
 - Raf lives with his family outside of Poznan (Poland), surrounded by forests, boars, deers, and other wildlife.
-He likes to travel, visit places off the beaten path, and trek in the mountains. Raf also spends bing chunk of his free time playing video games, both recent titles and retro ones. He has ten different gaming consoles, including NES, the first-generation Game Boy, and Commodore 64, all in working condition.    
+He likes to travel, visit places off the beaten path, and trek in the mountains. Raf also spends bing chunk of his free time playing video games, both recent titles and retro ones. He has ten different gaming consoles, including NES, the first-generation Game Boy, and Commodore 64, all in working condition.
