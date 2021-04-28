@@ -589,7 +589,7 @@ To add yourself to this page:
 - Onboarding and Training Manager
 - Buenos Aires, Argentina 🇦🇷 / Barcelona, Spain 🇪🇸
 - [ines@sourcegraph.com](mailto:ines@sourcegraph.com), [GitHub](https://github.com/InesRoitman), [LinkedIn](https://www.linkedin.com/in/ines-roitman/) , [Pronounce my name 🔊](https://www.pronouncenames.com/In%C3%A9s)
-- Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for teaching and learning. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection.
+- Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for Harry Potter and everything with magic on it. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection. 
 
 ## James Clifford (he/him)
 
