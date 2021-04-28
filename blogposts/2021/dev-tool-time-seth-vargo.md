@@ -1,5 +1,5 @@
 ---
-title: Dev Tool Time with Seth Vargo: Productivity hacks and .gitconfig tips
+title: "Dev Tool Time with Seth Vargo: Productivity hacks and .gitconfig tips"
 description: Check out the recording of our first episode of Dev Tool Time, in which Google Cloud Engineer Seth Vargo shares his tips for a productivity-optimized desk setup, efficient window management, and keyboard shortcuts.
 author: Vanesa Ortiz
 authorUrl: https://twitter.com/vanesacodes
