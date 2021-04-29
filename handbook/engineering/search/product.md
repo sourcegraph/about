@@ -72,6 +72,14 @@ Every week on Friday, Slackbot will start a thread for teammates to share:
 
 Projects that will span multiple iterations should have an associated project board tracking all known issues (example: [search contexts](https://github.com/orgs/sourcegraph/projects/113)). The subset of issues planned for a given iteration can then be added to the iteration's project, as GitHub issues can have multiple associated projects.
 
+#### Slack time
+
+We should plan with built-in slack time: the time engineers plan to allocate to roadmap goals should not be 100% of your available engineering time. As an engineer, "things I'd like to get to, but are non-priority work" are tackled as part of this slack time.
+
+On the other hand, the planning document + initial set of issues in the project board represents "work that we plan to complete to keep us on track for our goals".
+
+Adding non-priority items to the iteration project board when _completed_ is be a good way of surfacing what was accomplished. Depending on the nature of the task, mentioning it in weekly updates may be more appropriate -- user's discretion.
+
 #### Changing our processes
 
 We keep our iteration process fluid. We discuss any aspects that could be improved in our retrospective, and aggressively bias towards testing out new changes immediately.
@@ -79,5 +87,4 @@ We keep our iteration process fluid. We discuss any aspects that could be improv
 ### Retrospectives
 
 At the end of every iteration, we conduct a retrospective. Our retrospective notes can be found [here](https://docs.google.com/document/d/15F7OXwFTpLIvjPrJtNd0wRY49MtCUO-kMacpcIMlAWU/edit).
-
 
