@@ -6,8 +6,8 @@ authorUrl:
 publishDate: 2021-04-29T18:00+02:00
 tags: [blog, remote, design]
 slug: better-onboarding-how-to-prevent-codebase-overwhelm
-heroImage: 
-socialImage: 
+heroImage: https://sourcegraphstatic.com/better-onboarding-prevent-codebase-overwhelm.png
+socialImage: https://sourcegraphstatic.com/better-onboarding-prevent-codebase-overwhelm.png
 published: true
 ---
 
