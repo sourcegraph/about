@@ -10,6 +10,12 @@ const CASESTUDIES: {
     external?: boolean
 }[] = [
         {
+            name: 'Indeed',
+            logo: '/external-logos/indeed-logo.svg',
+            title: 'Indeed keeps code up to date and accelerates development velocity',
+            url: '/case-studies/indeed-accelerates-development-velocity',
+        },
+        {
             name: 'Workiva',
             logo: '/external-logos/workiva-vector-logo.svg',
             title: 'Workiva reduces the time it takes to make large-scale code changes by 80%',
