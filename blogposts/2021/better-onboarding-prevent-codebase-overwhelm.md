@@ -11,6 +11,8 @@ socialImage: https://sourcegraphstatic.com/better-onboarding-prevent-codebase-ov
 published: true
 ---
 
+![Better onboarding video game graphic](/blog/better-onboarding-prevent-codebase-overwhelm.png)
+
 Joining a new team is pretty exhilarating: tackling new codebases, learning interdependencies and systems, and collaborating with new teammates to bring different products to life. 
 But the learning curve can be daunting, confusing, and even debilitating, not only undermining developers’ skills and ambitions as new team members, but delaying their ability to contribute to the bigger picture.
 
@@ -25,7 +27,7 @@ But why does the emergence of these sprawling, complex codebases create big prob
 If we think of the era of Big Code in terms of the massive growth in the volume and complexity of code that teams are required to manage in the hyper-specific, and possibly imperfect, systems within any organization, this creates an ad hoc environment for us to navigate—without guidance, standards, and tools to keep things in sync with our new teams and leadership. 
 But every new workplace is different, and code overload can mean different things in different environments. 
 Not only are new team members just trying to understand the code, they’re trying to learn how the company uniquely structures and thinks about its code. 
-Marek Zaluski, a developer education engineer here at Sourcegraph, noted, “The biggest challenges are getting familiar with what’s already there. The bigger it is, the more difficulty there is.” 
+[Marek Zaluski](/company/team#marek-zaluski), a developer education engineer here at Sourcegraph, noted, “The biggest challenges are getting familiar with what’s already there. The bigger it is, the more difficulty there is.” 
 And without effective code search or support, you end up dividing your hours into learning and researching new codebases, and then actually implementing them.
 
 ## Codebase overwhelm can lead to anxiety and self-doubt
@@ -37,7 +39,7 @@ Not only does being thrown in the deep end result in wasted time and productivit
 
 Even when they’re well qualified for the job, new developers will have moments of self-doubt and impostor syndrome. “In the past, I’ve been in situations where I’m thrown into a new project and expected to figure it out. 
 It’s stressful, and the bigger the codebase, the more anxiety I have. It’s hard to even know where to start,” said Marek. 
-Adam Harvey, another developer here at Sourcegraph said, “Culture becomes important. You want the space to make mistakes when you’re coming into a new environment. You want a combination of psychological safety (knowing that your team won’t throw you under the bus) and technical safety (guardrails to know that you won’t make a huge mistake for a customer).” 
+[Adam Harvey](/company/team#adam-harvey-he-him), another developer here at Sourcegraph said, “Culture becomes important. You want the space to make mistakes when you’re coming into a new environment. You want a combination of psychological safety (knowing that your team won’t throw you under the bus) and technical safety (guardrails to know that you won’t make a huge mistake for a customer).” 
 Marek agreed, saying “Part of psychological safety is knowing that asking questions is encouraged. You can start to feel isolated if you’re worried about bothering your fellow engineers by asking questions that seem too simple.” 
 
 ## How engineering managers can implement better onboarding 
