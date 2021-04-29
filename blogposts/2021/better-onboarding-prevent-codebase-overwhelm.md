@@ -1,10 +1,10 @@
 ---
 title: "Better onboarding: How to prevent codebase overwhelm"
 description: "A data-driven look at how the rise in code complexity affects new developers joining a team, and how engineering managers can support new hires with better onboarding."
-author: Patricia No and Rebecca Dodd
+author: Patricia No
 authorUrl: 
 publishDate: 2021-04-29T18:00+02:00
-tags: [blog, remote, design]
+tags: [blog, remote]
 slug: better-onboarding-how-to-prevent-codebase-overwhelm
 heroImage: /blog/better-onboarding-prevent-codebase-overwhelm.png
 socialImage: https://sourcegraphstatic.com/better-onboarding-prevent-codebase-overwhelm.png
@@ -44,7 +44,7 @@ Marek agreed, saying “Part of psychological safety is knowing that asking ques
 
 ## How engineering managers can implement better onboarding 
 
-Repeatable, scalable onboarding that continually raises the curve is an ongoing and collaborative effort: 
+Repeatable, scalable onboarding that continually raises the curve is an ongoing and collaborative effort. Here's how to go about it: 
 
 ### Get everyone involved 
 
@@ -68,7 +68,7 @@ Having a centralized system with clear documentation helps distribute knowledge 
 Sometimes being lost isn’t just a discovery problem, but a social one. If you asked a group of engineers which databases to use, you might get multiple answers. Clear communication, guidance, and standards builds a transparent and safe environment to know how much knowledge you’re still missing before you can fully participate and contribute. 
 Adam added, “A huge part of onboarding into a Big Code environment is how we interact with each other, and learn how to navigate through systems like operational monitoring, testing, or incident handling with reasonable confidence. 
 
-### Make sure that everyone is using the same resources and tools 
+### Make sure everyone is using the same resources and tools 
 
 Marek stated, “Sometimes when you’re reaching for a particular tool or library, you don’t even know if you have something in-house already or if you need to look externally. 
 Codesearch makes it easier to look through your list of repositories to find what others have done.” Ensuring it’s clear what tools are available and in use helps new developers quickly find their footing, familiarizing themselves with codebases and coding conventions and eliminating the need to start from scratch every time. 
