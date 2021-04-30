@@ -15,6 +15,7 @@
     - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
     - [Website style guide](website_style_guide.md)
 - [Developer Education](education.md)
+    - [Public projects using Sourcegraph](public_projects_using_sourcegraph.md)
 - [Brand](Brand.md)
 - [Marketing operations](marketing_operations.md)
     - [Livestream events](livestream.md)
