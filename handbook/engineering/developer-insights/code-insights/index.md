@@ -120,12 +120,12 @@ The team follows the [default code review guidelines](https://docs.sourcegraph.c
 2. If the author would like their PR to be merged once all of the requested reviewers have approved it they add the label `merge-on-all-approve`
 3. When there are only minor issues, reviewers are encouraged to give "approval with comments" and trust their teammates to address the comments without requiring a follow-up review.
 
-### Code Insights front-end
+### Code Insights frontend
 
-Most specific part of code insights pages that’s charts.
-We use svg and d3 libraries (d3-scales, d3-axis, d3-format) to build code insights charts.
+The most interesting part of the code insights UI are the charts.
+We use SVG and D3 libraries (d3-scales, d3-axis, d3-format) for this.
 
-**Learning materials**
+#### Learning materials
 
 - [SVG intro specs _MDN_](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
   Simple and short description of most popular aspects of SVG.
