@@ -44,11 +44,11 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 ### [Security](../../handbook/engineering/security/goals.md#goals)
 
-### [Frontend platform](../../handbook/engineering/web/frontend-platform/goals.md#goals)
+### [Frontend platform](../../handbook/engineering/developer-insights/frontend-platform/goals.md#goals)
 
-### [Extensibility](../../handbook/engineering/web/extensibility/goals.md#goals)
+### [Extensibility](../../handbook/engineering/developer-insights/extensibility/goals.md#goals)
 
-#### [Code insights](../../handbook/engineering/web/code-insights/goals.md#goals)
+#### [Code insights](../../handbook/engineering/developer-insights/code-insights/goals.md#goals)
 
 ## [Product](../../handbook/product/goals.md)
 
