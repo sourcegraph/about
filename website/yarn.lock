@@ -1766,10 +1766,10 @@
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.1.tgz#78b5433344e2f92e8b306c06a5622c50c245bf6b"
   integrity sha512-S6oPal772qJZHoRZLFc/XoZW2gFvwXusYUmXPXkgxJLuEk2vOt7jc4Yo6z/vtI0EBkbPBVrJJ0B+prLIKiWqHg==
 
-"@types/bootstrap@5.0.12":
-  version "5.0.12"
-  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-5.0.12.tgz#d044b6404bf3c89fc90df2822a86dfcd349db522"
-  integrity sha512-iowwPfp9Au6aoxS2hOgeRjXE25xdfLrTpmxzQSUs21z5qY3UZpmjSIWF4h8jPYPEXgZioIKLB2OSU8oWzzJAcQ==
+"@types/bootstrap@5.0.13":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-5.0.13.tgz#493e6b82a56589d9bdbb06f3bc6956002cf73883"
+  integrity sha512-LsSZyG0K7VVi4HKHFr8b8LN2EuLqb79XbC+D7/FvTI5u8G1HKJGfxggcL+T4Kdmi/ZAfEsOL/0bysIf5OndO4g==
   dependencies:
     "@popperjs/core" "2.6.0"
     "@types/jquery" "*"
