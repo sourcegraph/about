@@ -2,7 +2,7 @@
 
 Our company goals are public:
 
-- [FY22 OKRs (not yet public)](https://docs.google.com/document/d/18d3sX38O6ephNuoHqZT9BwU1m1_FGuRfsTwYbc8lMV8/edit?ts=6015f75e#)
+- [FY22 OKRs (not yet public)](https://docs.google.com/spreadsheets/d/1pNXVev2JtYC94lB1NIfsc8OqyYnnSFn7p5PYFcniblE/edit#gid=1699297878)
 - Historical snapshots:
   - [FY21-Q2](2021_q2.md)
   - [FY21-Q1](2021_q1.md)
