@@ -28,7 +28,7 @@ The Brand Team works closely with Product, Sales, Marketing, People, and Operati
 
 Our team acts as liaison or point-of-contact with external entities when producing branded content, sponsorships, or partnerships in accordance with [Sourcegraph’s Brand Guidelines](brand_guidelines.md).
 
-Our company values can be found [here](../../company/values.md). Our Brand Creative Team Mission and Values can be found [here](brand_and_creative_team_mission_and_values.md).
+Our company values can be found [here](../../../company/values.md). Our Brand Creative Team Mission and Values can be found [here](brand_and_creative_team_mission_and_values.md).
 
 ## The Team
 Functional Areas: Design, illustration, animation, video production, copywriting, narrative, project management, brand strategy, market research, website development, and more.
@@ -94,7 +94,7 @@ Events
 Copy  
 - Maintain and update brand style guide, voice and tone  
 - Copywriting, editing and proofing for social media, ads, website, scripts, etc.  
-	- For blog posts, white papers, e-books, and other long-form serial content, please go to [Content Marketing](content.md)  
+	- For blog posts, white papers, e-books, and other long-form serial content, please go to [Content Marketing](../content.md)  
 
 ## Additional resources
 - [Brand & Creative Team Mission and Values](brand_and_creative_team_mission_and_values.md)  
