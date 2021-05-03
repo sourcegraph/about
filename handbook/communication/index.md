@@ -146,6 +146,19 @@ Most meetings at Sourcegraph are video calls. We prefer [Zoom](https://zoom.us) 
 - [Clean escalation](./conflicts.md#clean-resolution)
 - [Customer ethics policy](customer_ethics.md)
 
+## Brain Food
+
+Brain Food meetings are our internal knowledge sharing sessions. These meetings can be formal presentations or informal discussions and are open to anyone in the company. Subjects of talks are completely free and are not limited to tech discussions. Here are a few examples:
+
+- Sharing internal team knowledge to the rest of the company
+- Presenting a useful tool
+- Presenting a personal project
+- Hands on session / workshops
+- Brainstorming session about an experimental subject
+- Preparing an external talk
+
+If you have an idea for a session, add an event to the calendar and invite the engineering-team@sourcegraph.com
+
 ## Getting nice email signatures
 
 1. In Gmail **Settings** > **General** scroll down to signature:
