@@ -9,7 +9,7 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Indeed case study. LEarn how Indeed keeps code up to date and accelerates development velocity',
+            title: 'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
             description:
                 'Indeed case study.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png'
