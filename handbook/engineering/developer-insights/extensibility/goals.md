@@ -26,4 +26,16 @@ We want – and our users want – our users to build custom extensions, but t
 
 ## Roadmap
 
-The Extensibility [roadmap](https://sourcegraph.productboard.com/feature-board/2689572-fy2022-roadmap-developer-insights) can be viewed in Productboard.
+### FY22 Q2 (Current quarter)
+
+The below items are the team's current focus in order of priority. The full Extensibility [roadmap](https://sourcegraph.productboard.com/feature-board/2689572-fy2022-roadmap-developer-insights), including progress status, can be viewed in Productboard.
+
+| Feature     | Delivery date |
+| ----------- | ----------- |
+| Marketplace redesign | 2021-07-15 |
+| Sourcegraph extension partnership (confidential) | 2021-06-30 |
+| Extensions demo videos | 2021-07-15 |  
+| Troubleshooting documentation | 2021-06-15 |
+| Browser Extension release process is replicable for all 3 browsers | 2021-05-31 |
+
+
