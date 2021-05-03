@@ -72,9 +72,13 @@ To make edits to multiple files and submit all of the edits as a group to be rev
 
 ### Web interface
 
+#### Multiple changes in a single PR
+
 A screen recording of how to make multiple changes in a single PR in the web interface for GitHub:
 
 <iframe src="https://drive.google.com/file/d/1UL3JqbXEGLaVXEkk4G81wGO69z8J_Cbw/preview" width="640" height="480"></iframe>
+
+#### Making a new page
 
 A screen recording of how to make a new file and include it for review in the web interface for GitHub:
 
