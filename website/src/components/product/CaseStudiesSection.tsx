@@ -12,7 +12,7 @@ const CASESTUDIES: {
         {
             name: 'Indeed',
             logo: '/external-logos/indeed-logo.svg',
-            title: 'Indeed keeps code up to date and accelerates development velocity',
+            title: 'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
             url: '/case-studies/indeed-accelerates-development-velocity',
         },
         {
