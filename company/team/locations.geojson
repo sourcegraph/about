@@ -793,6 +793,19 @@
           51.507351
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kelli Rockwell"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.19268798828126,
+          47.616346999837226
+        ]
+      }
     }
   ]
 }
