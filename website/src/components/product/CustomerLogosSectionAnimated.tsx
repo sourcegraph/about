@@ -175,6 +175,10 @@ const ITEMS: {
             name: 'GetYourGuide',
             url: '/external-logos/gyg.svg',
         },
+        {
+            name: 'Twilio',
+            url: '/external-logos/twilio-segment-horizontal-darkacai-logo.svg',
+        },
     ]
 
 interface Props {
