@@ -6,8 +6,11 @@ authorUrl: https://twitter.com/thorstenball
 publishDate: 2021-04-15T18:00+02:00
 tags: [blog]
 slug: avoiding-the-pitfalls-of-iteration-based-development
+heroImage: /blog/avoid-pitfalls.png
 published: true
 ---
+
+![Avoiding pitfalls cartoon graphic](/blog/avoiding-pitfalls.png)
 
 It doesn't matter whether you call it _Agile_, _Sprint_, _Shape Up_, or something
 else. The premise of iteration-based work is this: until you've built the
