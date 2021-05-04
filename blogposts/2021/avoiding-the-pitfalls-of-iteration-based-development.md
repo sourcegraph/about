@@ -10,14 +10,14 @@ heroImage: /blog/avoid-pitfalls.png
 published: true
 ---
 
-![Avoiding pitfalls cartoon graphic](/blog/avoid-pitfalls.png)
-
 It doesn't matter whether you call it _Agile_, _Sprint_, _Shape Up_, or something
 else. The premise of iteration-based work is this: until you've built the
 product, you don't really know what it should look like or how to best build
 it. You've never used it, so how would you know how it works best? You also
 haven't built it yet, which means you don't have experience building it. Chances
 are low that you can accurately predict how its development will go.
+
+![Avoiding pitfalls cartoon graphic](/blog/avoid-pitfalls.png)
 
 So what you do is you acknowledge that you don't know and lean into that.
 You _don't_ plan the development of the product from start to finish in every
