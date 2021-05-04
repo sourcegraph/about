@@ -15,7 +15,7 @@
     - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
     - [Website style guide](website_style_guide.md)
 - [Developer Education](education.md)
-- [Brand](brand/Brand.md)
+- [Brand](brand/index.md)
     - [Building a strong brand](brand/building_a_strong_brand.md)
     - [Brand Guidelines](brand/brand_guidelines.md)
     - [Creative Requests](brand/brand_and_creative_team_requests.md)
