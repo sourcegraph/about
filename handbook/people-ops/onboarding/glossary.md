@@ -63,7 +63,7 @@ In Git, a single set of changes. This is how you store changes in your repositor
 A collection of (usually related) source code and other files, plus the history of those files. It is a location for your project, similar to a Google Drive folder that stores related documents in one place. 
 
 ### Branch
-A specific series of changes in a repository, usually used to isolate changes during their development. Branching lets you make changes, test them in a staging area, then merge them into the “master branch” (the “live” part of your code).
+A specific series of changes in a repository, usually used to isolate changes during their development. Branching lets you make changes, test them in a staging area, then merge them into the “main branch” (the “live” part of your code).
 
 ### Main Branch
 The primary branch of a repository, usually holding the actively-developed product and working of features (non-working versions tend to stay in branches). This is the “live” part of a project that can be viewed by the public. Sometimes referred to as the "master" branch.
