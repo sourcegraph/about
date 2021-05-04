@@ -856,3 +856,12 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [rafal@sourcegraph.com](mailto:rafal@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rleszcz/)
 - Raf lives with his family outside of Poznan (Poland), surrounded by forests, boars, deers, and other wildlife.
 He likes to travel, visit places off the beaten path, and trek in the mountains. Raf also spends bing chunk of his free time playing video games, both recent titles and retro ones. He has ten different gaming consoles, including NES, the first-generation Game Boy, and Commodore 64, all in working condition.
+
+## Kelli Rockwell (she/her)
+
+- Software Engineer, Batch Changes
+- Seattle, WA, USA 🇺🇸
+- GitHub: [courier-new](https://github.com/courier-new)
+- [kelli@sourcegraph.com](mailto:kelli@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kellirockwell/), [Twitter](https://twitter.com/courierneue)
+- Name pronunciation: /[ˈkɛl.i ˈɹɑk.wɛl](http://ipa-reader.xyz/?text=%CB%88k%C9%9Bl.i%20%CB%88%C9%B9%C9%91k.w%C9%9Bl&voice=Joanna)/
+- Kelli grew up in Arizona before slowly making her way up the west coast US from LA to SF to Seattle, WA. She became a "professional web developer" before she was even qualified to babysit, getting paid in Neopoints to make Neopets layouts and community fan pages for her online friends as a pre-teen. She is definitely not addicted to [bubble tea](https://en.wikipedia.org/wiki/Bubble_tea) (or “boba”, as it’s called on the west coast) and professes that she could stop at any time. When she's not consuming boba, she plays tennis, attends developer conferences and meet-ups, travels for the food, completes jigsaw puzzles, and tries to convince her hypoallergenic cat, Calla, to cuddle with her while coding.
