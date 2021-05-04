@@ -9,16 +9,16 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
+            title: 'Indeed keeps code up to date and accelerates development velocity',
             description:
-                'Indeed case study.',
+                'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png'
         }}
         className="navbar-dark bg-black"
     >
         <CaseStudyPage
             customer="Indeed"
-            title="Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity"
+            title="Indeed keeps code up to date and accelerates development velocity"
             logo="/external-logos/indeed-logo.svg"
             quote={{
                 quote:
