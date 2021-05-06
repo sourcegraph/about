@@ -12,7 +12,7 @@ See also our [completed goals](goals_completed.md).
 
 **Problem:** Sourcegraph extensions won't grow or provide nearly as much value if Sourcegraph builds and maintains the only extensions. (In fact, at that point, we're sometimes just costing ourselves in the documentation + maintenance of an extensions platform when we might as well build first-class features directly).
 
-We want – and our users want – our users to build custom extensions, but there are a number of blockers preventing this. These include documentation issues, the extension registry's appearance sending mixed or incorrect messages about what extensions are and how actively they're maintained, the ability of a user to use many Sourcegraph extensions at once, and validating the impact of a the third party partnership/developer model for major third-party extension.
+We want – and our users want – our users to build custom extensions, but there are a number of blockers preventing this. These include documentation issues, the extension registry's appearance sending mixed or incorrect messages about what extensions are and how actively they're maintained, the ability of a user to use many Sourcegraph extensions at once, and validating the impact of a the third party partnership/developer model for major third-party extensions.
 
 **Why we are focusing on this:** Extensions can provide sales, retention, differentiation, delight, and "free" functionality to Sourcegraph. An in-depth explanation of these benefits and evidence they exist is [in this doc](https://docs.google.com/document/d/1bpyQWEkrFS3Uk0TQ3kXWJfR1ZPvWYKr020ufnm1TFsQ/edit).
 
@@ -50,5 +50,4 @@ The below items are the team's current focus areas in order of delivery quarter.
 | Browser Extension handles both Sourcegraph.com and a private instance | Integration maintenance | Q3 |
 | All code host integrations natively support Bitbucket Cloud and Data Center | Integration maintenance | Q4 |
 | Identify barriers to integration adoption | Integration adoption | Q4 |
-
 
