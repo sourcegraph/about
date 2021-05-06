@@ -2,7 +2,7 @@
 
 The Extensibility team focuses on high impact projects aligned with the company's OKRs. 
 
-As Sourcegraph continues grows, and the team is able to bring on a dedicated product manager, designer, and additional engineers, the team's roadmap will adopt a more traditional product development trajectory. 
+As Sourcegraph continues to grow and the team is able to bring on a dedicated product manager, designer, and additional engineers, the team's roadmap will adopt a more traditional product development trajectory. 
 
 ## Goals for FY22
 
@@ -50,6 +50,5 @@ The below items are the team's current focus areas in order of delivery quarter.
 | Browser Extension handles both Sourcegraph.com and a private instance | Integration maintenance | Q3 |
 | All code host integrations natively support Bitbucket Cloud and Data Center | Integration maintenance | Q4 |
 | Identify barriers to integration adoption | Integration adoption | Q4 |
-
 
 
