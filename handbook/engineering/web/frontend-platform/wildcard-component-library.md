@@ -63,4 +63,4 @@ To keep other teams informed about the changes to the component system, we shoul
 - In the #progress channel
 - In a standalone documentation for the Wildcard Component Library (TODO)
 - In the #component-system-updates channel
-- The component system is versioned, and changelogs are generated accordingly
+- Through generated changelogs (TODO)
