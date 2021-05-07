@@ -780,15 +780,15 @@
           50.84323737103244
         ]
       }
-     },
-     { 
-       "type": "Feature", 
-       "properties": { 
-         "name": "Rebecca Dodd" 
-       }, 
-       "geometry": { 
-         "type": "Point", 
-         "coordinates": [ 
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rebecca Dodd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -0.127758,
           51.507351
         ]
@@ -806,6 +806,24 @@
           47.616346999837226
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "name": "Debbie Johnstone",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.686126261949539,
+          50.162324321993545
+        ]
+      }
     }
+  ]
+}
   ]
 }
