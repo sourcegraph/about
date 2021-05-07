@@ -62,5 +62,5 @@ To keep other teams informed about the changes to the component system, we shoul
 - In the FE Platform Team weekly email
 - In the #progress channel
 - In a standalone documentation for the Wildcard Component Library (TODO)
-- In the #components-system-updates channel
+- In the #component-system-updates channel
 - The component system is versioned, and changelogs are generated accordingly
