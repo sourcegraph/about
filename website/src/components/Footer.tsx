@@ -65,7 +65,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://boards.greenhouse.io/sourcegraph91">Careers</a>
+                                    <a href="/careers">Careers</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/contact">Contact</Link>
