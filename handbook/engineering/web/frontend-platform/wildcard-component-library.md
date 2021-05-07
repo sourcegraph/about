@@ -57,7 +57,7 @@ If the product team after having started working on a feature, identifies in a c
 - In Storybook
 - Built with a clear case for reusability
 
-## Sharing updates to the components system
+## Sharing updates to the component system
 To keep other teams informed about the changes to the component system, we should share updates:
 - In the FE Platform Team weekly email
 - In the #progress channel
