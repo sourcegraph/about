@@ -2,7 +2,7 @@
 
 Wildcard Component Library is a comprehensive collection of reusable, design-approved components that can be composed to quickly build out different user journeys across the web app. WCL is stored in its own [directory](https://github.com/sourcegraph/sourcegraph/tree/main/client/wildcard), owned by the [Fronted Platform Team](https://about.sourcegraph.com/handbook/engineering/web/frontend-platform) and contributed to by all Sourcegraph teammates. WCL is a part of the Wildcard Design System.
 
-## WCL x Frontend Platfrom Team
+## WCL x Frontend Platform Team
 - The Frontend Platform Team is the owner of the design system and Wildcard Component Library  and needs to be up-to-date with all the changes and needs of other teams
 - The Frontend Platform Team should enable other teams to make changes to the Wildcard Component Library by keeping them up-to-date (see Sharing updates to the components system), helping them plan their work, providing expertise, and reviewing the changes
 - The Frontend Platform team **shouldn't be responsible for implementing components for other teams**. Otherwise, we would create a bottleneck and FE Platform team wouldn’t have time to focus on their team goals.
