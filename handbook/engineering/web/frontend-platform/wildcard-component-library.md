@@ -52,7 +52,7 @@ If the product team after having started working on a feature, identifies in a c
 
 ### A component is deemed to be ready from an engineering perspective when effort has been made to ensure it is:
 - Unit tested
-- Accessible
+- [Accessible](https://docs.sourcegraph.com/dev/background-information/web/accessibility)
 - Documented textually, explaining when this component should be used and why
 - In Storybook
 - Built with a clear case for reusability
