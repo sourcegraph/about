@@ -16,7 +16,7 @@ See also our [completed goals](goals_completed.md).
 
 1. Users can create insights effectively and without error
    1. This includes an easy path to finding/creating insights, like through the search UI (one-click create from search)
-1. Code insights can run on the backend and meet a users' running-speed expectations 
+1. Code insights can run on the backend and meet a user's loading-time expectations 
    1. We'll build both backend optimizations and UI expectation-setting and communicating
    1. This also involves exploring parallel rather than serial implementations
 1. We have docs for both of the above features
