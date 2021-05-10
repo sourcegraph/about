@@ -26,6 +26,7 @@ Here's the process for getting a change published to the handbook. For detailed 
 1. Wait for the necessary teammates to review and approve your pull request.
 1. Merge the pull request.
 1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
+2. Use the #handbook-announce label to notify other people of important handbook updates on the #handbook-announce Slack channel.
 
 ## Reviewing and approving another person's proposal
 
@@ -59,10 +60,11 @@ If you just need to edit a single page, you can do it entirely on the web.
    - Press the **Commit changes** button.
 1. Press the **Create pull request** button. Now your change has been proposed!
    - You can share the link to the pull request with anyone to show them your proposed change (e.g., `https://github.com/sourcegraph/about/pull/123).
-1. Select teammates to review using the **Reviewers** button on the right side of the pull request page.
-1. Wait for teammates to review, comment on, and approve your pull request.
-1. When you're ready to publish the change and make it live, press the **Squash and merge** button, then press **Confirm squash and merge**.
-1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
+1. If you want this update to be published in the Slack channel #handbook-announce, select the handbook-announce label using the **Label** button on the right side of the pull request page.
+2. Select teammates to review using the **Reviewers** button on the right side of the pull request page.
+3. Wait for teammates to review, comment on, and approve your pull request.
+4. When you're ready to publish the change and make it live, press the **Squash and merge** button, then press **Confirm squash and merge**.
+5. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
 
 ## Edit multiple files or add a new file
 
