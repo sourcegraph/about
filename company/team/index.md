@@ -886,3 +886,10 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Tech Ops Analyst
 - San Clemente, California, USA 🇺🇸
 - Nate grew up in Orange County, California but has traveled all across the world, most recently to Peru. In his free time, he likes to swim, practice yoga, and go on hikes. 
+
+## Cassie Melani (she/her)
+
+-Teammate Success Manager
+-Seattle, Washington, USA 🇺🇸
+-[cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/)
+-Cassie was born and raised in sunny 🍊Orange County, California and moved up to 🌁Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but she decided she wanted gloomier weather, so she recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲Seattle with her husband (Will). Together, they have two mischevious fur babies, Lola and Sterling (professionally known as @sterlingandlola). In her spare time, Cassie enjoys spin classes, traveling to tropical locations, cooking Molly Baz recipes, and watching plant videos on YouTube.
