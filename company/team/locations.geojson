@@ -822,6 +822,22 @@
           50.162324321993545
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name:": "Dan Mckean"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1917724609375,
+          51.004681939880314
+        ]
+      }
     }
   ]
 }
