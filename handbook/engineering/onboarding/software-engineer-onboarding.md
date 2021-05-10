@@ -6,7 +6,7 @@
 
 Before you dive in to engineering tasks like reading and writing code, it is important to give yourself the time and space set the context for the work you will be doing here at Sourcegraph.
 
-1. Company values
+1. Read through our [company values](../../../company/values.md)
 2. Engineering principles and practices
 3. Recommended reading
 
