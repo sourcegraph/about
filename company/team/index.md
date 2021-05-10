@@ -872,3 +872,12 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Walnut Creek, California, USA 🇺🇸
 - [katerina@sourcegraph.com](mailto:katerina@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/katerinanikolova/)
 - Katerina was raised in Bulgaria, but moved to Belgium at age 19 and moved to various countries ever since. She has lived in France, China and Dubai. She currently lives in Walnut Creek (East Bay) with her two daughters Nia and Jennifer. Her spare time is occupied by hiking, biking, playing, and travelling with her daughters. She started her career as a flight attendant for Emirates Airlines in the United Arab Emirates, but moved on to supporting executives after relocating to the U.S. She has worked at Chevron, Stanford, Alibaba and Credit Karma before joining Sourcegraph. Katerina obtained her Bachelor in Mass Communications from UC Berkeley and a Master in Public Administration from San Francisco State University. She has a passion for fashion, music and fun events that bring people together.
+
+## Dan Mckean (he/him)
+
+- Product Manager, Distribution & Security
+- Shaftesbury (Dorset), UK 🇬🇧
+- GitHub: [dan-mckean](https://github.com/dan-mckean)
+- [dan.mckean@sourcegraph.com](mailto:dan.mckean@sourcegraph.com)
+- Bio (hobbies, work experience, family, pets, etc.)
+- Dan grew up in the South of England, and (with a detour via London) ended up in Dorset in the south west, a county with beautiful coast (but lives as far from the sea as it's possible to get – though not deliberately!) He lives with his wife (Emma), four kids (7y, 5y, 2x14m) and 3-legged springer spaniel (9y). His spare time is largely spent chasing his twin identical boys in an effort to prevent injury. Any (genuinely) spare time is spent trying to make things out of wood. 
