@@ -48,7 +48,7 @@ _(Only accessible to Sourcegraph teammates until finalized.)_
 
 In addition to the [engineering principles and practices](../principles-and-practices.md) the Developer Insights org follows the following principles and practices.
 
-### Unblocking a teammate is your highest priority
+### Unblocking others is your highest priority
 
 If a teammate is blocked by you on a question, your approval, or a pull request review, your top priority is always to unblock them, either directly or through helping them find someone else who can, even if this takes time away from your own or your team's priorities.
 
