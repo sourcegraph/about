@@ -46,7 +46,7 @@ _(Only accessible to Sourcegraph teammates until finalized.)_
 
 ## Principles and practices
 
-In addition to the [engineering principles and practices](../engineering/principles-and-practices.md) the Developer Insights org follows the following principles and practices.
+In addition to the [engineering principles and practices](../principles-and-practices.md) the Developer Insights org follows the following principles and practices.
 
 ### Unblocking a teammate is your highest priority
 
