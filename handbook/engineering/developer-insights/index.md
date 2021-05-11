@@ -64,7 +64,7 @@ Pull request authors should always prefer requesting reviews from a specific tea
 
 Reviewers should try to review in a timely manner; doing so allows everyone involved in the pull request to iterate faster as the context is fresh in memory. Reviewers should aim to review within one working day from the date they were assigned to the pull request. If you don't think you'll be able to review a pull request within that time, let the author know as soon as possible.
 
-If the author of the merge request has not heard anything after one day, a new reviewer should be assigned.
+If the author of the pull request has not heard anything after one day, a new reviewer should be assigned.
 
 ## Processes
 
