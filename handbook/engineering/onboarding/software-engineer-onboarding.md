@@ -6,9 +6,11 @@
 
 Before you dive in to engineering tasks like reading and writing code, it is important to give yourself the time and space set the context for the work you will be doing here at Sourcegraph.
 
-1. Read through our [company values](../../../company/values.md)
-2. Engineering principles and practices
-3. Recommended reading
+1. Read our [company values](../../../company/values.md).
+2. Read our [engineering principles and practices](../principles-and-practices.md).
+3. Start reading these books (in any order). As you are reading, share your thoughts with your team during team syncs. You should have finished reading both of these books by the end of your second month (block off time to do it, it is important!).
+    - [Turn the Ship Around](https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404/) - An inspiring story of how Navy captain David Marquet turned the lowest performing submarine in the Navy into the top performing one with his bottom's up leadership style.
+    - [Orbiting the Giant Hairball](https://www.amazon.com/Orbiting-Giant-Hairball-Corporate-Surviving/dp/0670879835/) - An entertaining self-account of Gordon MacKenzie's experience fostering creativity on his team at Hallmark Cards. Buy the hard copy. There are lots of fun illustrations and short stories. It is a quick read and probably unlike any other book you have read.
 
 ### Starter tasks
 
@@ -60,6 +62,10 @@ We have many resources available to help you onboard and gain context:
 
 ## Weeks 4-6
 
+### Reading
+
+You should be well on your way to finishing both [Turn the Ship Around](https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404/) and [Orbiting the Giant Hairball](https://www.amazon.com/Orbiting-Giant-Hairball-Corporate-Surviving/dp/0670879835/), and you should have shared a few thoughts with your team already. Keep it up!
+
 ### Start contributing to your team's goals
 
 By now, you'll have shipped multiple improvements, paired with all members of your immediate team to understand what they were working on, and learned a lot about Sourcegraph. It'll be time for you to start contributing to your team's goals! It'll be up to you to define how you'll accomplish this:
@@ -78,3 +84,7 @@ At Sourcegraph, you'll be expected to own the problems your team is solving, and
 ## Give feedback on your onboarding
 
 You should be discussing your onboarding progress every week with your manager. At the end of week 6 at Sourcegraph, spend one hour summarizing your onboarding experience (what has gone well, what was challenging, what would help you moving forward). Write down your thoughts and discuss them in your next 1-1 with your manager. Take your time to answer thoughtfully — your answers will be very important to make sure our onboarding process is even better for future hires!
+
+## Weeks 6-8
+
+Finish reading [Turn the Ship Around](https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404/) and [Orbiting the Giant Hairball](https://www.amazon.com/Orbiting-Giant-Hairball-Corporate-Surviving/dp/0670879835/), and share any final thoughts with your team.
