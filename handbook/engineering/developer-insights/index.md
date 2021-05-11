@@ -78,7 +78,7 @@ Each Engineering Manager of the teams in the org is responsible for sending out 
 
 ### Health reports
 
-The engineering managers are responsible for compiling a bi-weekly health report ([see example](https://docs.google.com/spreadsheets/d/1PnRPydNYLF2Als3KpVuIYO8dXeqckp_sbowVkvkdkeE/edit)) for their team. 
+The engineering managers are responsible for compiling a weekly health report ([see example](https://docs.google.com/spreadsheets/d/1PnRPydNYLF2Als3KpVuIYO8dXeqckp_sbowVkvkdkeE/edit)) for their team. 
 
 The report is a confidential update between the Director and the Engineering Managers and serves the following purpose:
 1. Updates the director on how things are going at a high-level in the team
