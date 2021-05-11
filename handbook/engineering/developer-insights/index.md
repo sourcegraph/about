@@ -85,5 +85,3 @@ The report is a confidential update between the Director and the Engineering Man
 1. Identifies areas of concern that could lead to proactive intervention to mitigate concerns
 
 The report is not used for judging the performance of the team or the manager, and its intention is solely to inform and trigger dialogue. Managers are not expected to provide exhaustive notes, rather high-level summaries are preferred.
-
-Considering the similar nature of the report to the team's status update the preference is for EMs to deliver the health report update in the same week as the status update.
