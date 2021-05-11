@@ -4,11 +4,11 @@
 
 ### Learn about our culture and values
 
-Before you dive in to engineering tasks like reading and writing code, it is important to give yourself the time and space set the context for the work you will be doing here at Sourcegraph.
+Before you dive in to engineering tasks like reading and writing code, it is important to give yourself the time and space to set the context for the work you will be doing here at Sourcegraph.
 
 1. Read our [company values](../../../company/values.md).
 2. Read our [engineering principles and practices](../principles-and-practices.md).
-3. Start reading these books (in any order). As you are reading, share your thoughts with your team during team syncs. You should have finished reading both of these books by the end of your second month (block off time to do it, it is important!).
+3. Start reading [Turn the Ship Around](https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404/) and [Orbiting the Giant Hairball](https://www.amazon.com/Orbiting-Giant-Hairball-Corporate-Surviving/dp/0670879835/) (in any order). As you are reading, share your thoughts with your team during team syncs. You should have finished reading both of these books by the end of your second month (block off time to do it, it is important!).
     - [Turn the Ship Around](https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404/) - An inspiring story of how Navy captain David Marquet turned the lowest performing submarine in the Navy into the top performing one with his bottom's up leadership style.
     - [Orbiting the Giant Hairball](https://www.amazon.com/Orbiting-Giant-Hairball-Corporate-Surviving/dp/0670879835/) - An entertaining self-account of Gordon MacKenzie's experience fostering creativity on his team at Hallmark Cards. Buy the hard copy. There are lots of fun illustrations and short stories. It is a quick read and probably unlike any other book you have read.
 
