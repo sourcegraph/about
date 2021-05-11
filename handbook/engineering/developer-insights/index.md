@@ -53,6 +53,7 @@ In addition to the [engineering principles and practices](../engineering/princip
 If a teammate is blocked by you on a question, your approval, or a pull request review, your top priority is always to unblock them, either directly or through helping them find someone else who can, even if this takes time away from your own or your team's priorities.
 
 We want teammates to do what is best for the org as a whole. Don't optimize for the goals of your team when it negatively impacts the goals of other teams, our users, and/or the company. Those goals are also your problem and your job.
+
 ### Pull request reviews
 
 #### Authors
