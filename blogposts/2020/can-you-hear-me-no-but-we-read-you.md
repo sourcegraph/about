@@ -28,7 +28,7 @@ These hacks and tools work well, but sometimes they’ll cut out or they’ll la
 
 Thankfully, I have a wonderful, supportive team, and this has never been a problem in my day-to-day work.
 
-Our team has been growing quickly, expanding from just a single product manager to a team of eight product managers and designers ([we’re still growing!](https://about.sourcegraph.com/company/careers)), and we’re always thinking of ways to connect and support each other as a team. So when our VP of Product suggested an idea to help the team build empathy and better understand the video call experience from the perspective of someone relying on captions, we jumped on it.
+Our team has been growing quickly, expanding from just a single product manager to a team of eight product managers and designers ([we’re still growing!](https://boards.greenhouse.io/sourcegraph91)), and we’re always thinking of ways to connect and support each other as a team. So when our VP of Product suggested an idea to help the team build empathy and better understand the video call experience from the perspective of someone relying on captions, we jumped on it.
 
 When we held our next product team sync, the whole team joined sans audio. We would all depend only on captions to follow the conversation.
 

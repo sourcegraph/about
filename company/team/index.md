@@ -2,9 +2,17 @@
 
 This page contains brief bios of our team. Teammates may also have a personal documentation page in this directory that is named according to their Sourcegraph email address (e.g. you@sourcegraph.com -> you.md).
 
-To add yourself to this page, copy the following template, paste it at the end of this file, and make it about yourself!
+To add yourself to this page:
 
-## Full Name (optional pronouns)
+1. Accept GitHub's email invite to the Sourcegraph org (you should be a member of [the `Everyone` group](https://github.com/orgs/sourcegraph/teams/everyone) in Sourcegraph's GitHub organization).
+1. Go to the bottom right of this page and click "Edit this page."
+1. In the edit view, copy the following template, paste it at the end of the edit view, and make it about yourself! Look at others' bios for examples.
+1. Under "Commit changes" at the bottom of the page, replace the "Update index.md" text with a summary of your change, e.g., Add Alex to team page.
+1. Click the green "Commit changes" button. If you do not see the green "Commit Changes" button, refer to step 1. Successful changes will become visible shortly (but not immediately).
+
+**You can find the bio template below (all fields are optional).**
+
+## Full Name (pronouns)
 
 - Role(s)
 - City, region, country, country flag emoji (optional: add yourself to [the team locations map](locations.md)!)
@@ -65,10 +73,10 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Eric Brody-Moore
 
-- Growth & Business Operations
-- San Francisco, CA 🇺🇸
-- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ericbm/), [ebrodymoore](https://github.com/ebrodymoore)
-- Eric splits his weekends eating his way through the Bay Area and getting out of town to explore the west coast nature, snowboard or golf. Prior to Sourcegraph, Eric was the first hire at Drift Marketplace, where he built the finance and analytics functions, and Deloitte Consulting’s strategy and operations practice. Eric graduated with a BS in Finance from the University of Washington.
+- Business Operations Manager
+- Nashville, TN, USA 🇺🇸
+- [ericbm@sourcegraph.com](mailto:ericbm@sourcegraph.com), [@ebrodymoore](https://github.com/ebrodymoore), [LinkedIn](https://www.linkedin.com/in/ericbm/)
+- Eric enjoys golfing, snowboarding and just about anything else outdoors. Prior to Sourcegraph, Eric has worked across strategy & ops, finance and analytics at Drift and Deloitte Consulting. He was going to end his bio here, but had to mention his deep, deep love for his hometown Michigan Wolverines.
 
 ## Keegan Carruthers-Smith
 
@@ -87,7 +95,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 ## Vanesa Ortiz (she/her)
 
 - Name pronunciation: /[ˈvanɛsa ɔɹˈtiz](http://ipa-reader.xyz/?text=%5B%CB%88van%C9%9Bsa%20%C9%94%C9%B9%CB%88tiz%5D&voice=Penelope)/
-- Content Engineer
+- Community Advocate
 - San Francisco, CA, USA 🇺🇸
 - [vanesa@sourcegraph.com](mailto:vanesa@sourcegraph.com), [vanesa](https://github.com/vanesa), [@vanesacodes](https://twitter.com/vanesacodes), [LinkedIn](https://www.linkedin.com/in/vanesaortiz/)
 - Vanesa loves to travel (45 countries so far), spend time with her daughter, son and husband, sing and make jewelry. She grew up in the Dominican jungle and is really good at catching lizards. Prior to Sourcegraph, she lived in Germany and built dev tools for the infrastructure team at Lovoo. She used to be a human rights researcher for the London School of Economics before transtitioning to software engineering. Her weakness is sushi.
@@ -98,7 +106,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - San Francisco, CA (Ramaytush Ohlone land)
 - GitHub: [mercadon](https://github.com/mercadon)
 - [noemi@sourcegraph.com](mailto:noemi@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/noem%C3%AD-mercado-3aa92798/), [pronounce my name 🔊](https://www.name-coach.com/noemi-mercado)
-- Noemi was borned and raised in the Bay Area, she spends her free time caring for her cacti collection and pup named Valencia. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care.
+- Noemi was born and raised in the Bay Area, she spends her free time caring for her cacti collection and pup named Valencia. Before Sourcegraph, she helped run hiring and onboarding at the homecare startup, Honor. Prior to that, she worked in HR at a non-profit supporting children in foster care.
 
 ## Nick Snyder (he/him)
 
@@ -120,14 +128,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Brest, Brittany, France 🇫🇷
 - [loic@sourcegraph.com](mailto:loic@sourcegraph.com), [lguychard](https://github.com/lguychard), [LinkedIn](https://www.linkedin.com/in/lo%C3%AFc-guychard-749b8152/)
 - Loïc loves oceanside living and long bike rides. He started his career as a linguist, before transitioning to software engineering while working at Dashlane.
-
-## Aileen Agricola (she/her)
-
-- First name pronounced eye-LEAN
-- Senior Digital Marketing Manager
-- San Carlos, CA and Bainbridge Island, WA USA 🇺🇸
-- [aileen@sourcegraph.com](mailto:aileen@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/aileenagricola)
-- Aileen is a techie at heart with a foundation in IT and databases. Her first startup experience was at Patrol Software where she got the startup buzz to try out multiple roles in customer support, product management, business development and sales. Most recently, she built the website for [Neo4j](https://neo4j.com) and learned that everything is connected. In her spare time she keeps active by hiking, running or biking. She also loves to travel and binges the best in streaming tv.
 
 ## Dan Adler (he/him)
 
@@ -153,7 +153,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Farhan Attamimi
 
-- Software Engineer
+- Senior Data Operations Analyst
 - Singapore 🇸🇬
 - [farhan@sourcegraph.com](mailto:farhan@sourcegraph.com), [attfarhan](https://github.com/attfarhan)
 - Farhan writes code to pass the time while impatiently waiting for Manchester United to return to glory.
@@ -232,9 +232,9 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Marek Zaluski
 
-- Software Engineer
+- Developer Education Engineer
 - Ottawa, Canada 🇨🇦
-- [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [marekweb](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
+- [marek@sourcegraph.com](mailto:marek@sourcegraph.com), [GitHub](https://github.com/marekweb), [Twitter](https://twitter.com/marekweb)
 - Marek is a JavaScript and TypeScript developer with an interest in developer tools and tech education. He occasionally teaches programming courses and contributes to coding bootcamps, and he previously ran a software consulting agency. He lives in Canada's capital with his wife and his jack russell terrier 🐕.
 
 ## Adam Harvey (he/him)
@@ -258,14 +258,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - New York, NY, USA 🇺🇸
 - [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [christinelovett](https://github.com/christinelovett)
 - Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT.
-
-## Gonzalo Peci (he/him)
-
-- Engineering Manager
-- Palma de Mallorca, Balearic Islands, Spain, 🇪🇸
-- [gonzalo@sourcegraph.com](mailto:gonzalo@sourcegraph.com), [pecigonzalo](https://github.com/pecigonzalo), [LinkedIn](https://linkedin.com/in/pecig), [manager docs](gonza.md), [pronounce my name 🔊](https://www.youtube.com/watch?v=4reRML9gTc4)
-- Gonzalo is originally from Argentina but has been moving around the world since 2012. He enjoys playing video games, traveling and reading. Recently he started playing the bass 🎸 and has a Metal/Punk garage band. He has an infrastructure background and has
-  gone down the tech rabbit hole and learned programming languages 🤓.
 
 ## Alicja Suska (she/her)
 
@@ -320,7 +312,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 
 ## Chris Pine (he/she/they/Chris)
 
-- Engineering Manager, Campaigns
+- Engineering Manager, Batch Changes
 - Portland, OR, USA 🇺🇸
 - [chrispine@sourcegraph.com](mailto:chrispine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chris-pine-4b188272/), [chrispine](https://github.com/chrispine), [Twitter](https://twitter.com/OtherChrisPine)
 - Name pronunciation: /[kɹɪs paɪn](http://ipa-reader.xyz/?text=k%C9%B9%C9%AAs%20pa%C9%AAn&voice=Joanna)/
@@ -435,7 +427,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Account Executive
 - New York, New York (Currently in Boca Raton, FL)
 - [eli@sourcegraph.com](mailto:eli@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/eli-rothschild-b922824a/)
-- Eli was raised in Baltimore, MD, has been in New York City since 2007 (resided in 4 of the 5 boroughs), and recently joined the unofficial 6th borough of NYC, Boca Raton, FL. He has been in SaaS sales with early stage to high growth companies for a majority of his professional career. Prior to joining Sourcegraph, Eli was an Enterprise Account Executive at Segment, and previously at Mixpanel during similar stages of company growth. When not listening to the latest tech and business podcasts, Eli is a student of U.S and World history, enjoys playing chess, following his favorite sports teams, and traveling with his wife.
+- Eli was raised in Baltimore, MD, has been in New York City since 2007. He has been in SaaS sales with early stage to high growth companies for a majority of his professional career. Prior to joining Sourcegraph, Eli was an Enterprise Account Executive at Segment, and previously at Mixpanel during similar stages of company growth. When not listening to the latest tech and business podcasts, Eli is a student of U.S and World history, enjoys playing chess, following his favorite sports teams, and traveling.
 
 ## Josh Saunders
 
@@ -451,14 +443,6 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Github: [scalabilitysolved](https://github.com/scalabilitysolved)
 - [oconvey@sourcegraph.com](mailto:oconvey@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/owenconvey/)
 - Owen was born and raised in England and has been residing in Barcelona since 2012.  He spends a lot of time watching Rugby, playing with his young daughter and tinkering with his laptop.  Prior to Sourcegraph, he was a manager at Help Scout and loves empowering and motivating autonomous engineering teams.  His Achilles' heel is most definitely pizza.
-
-## Nick McMillen (he/him)
-
-- Customer Engineer
-- San Francisco, CA, US 🇺🇸
-- GitHub: [mcmillennick](https://github.com/mcmillennick)
-- [nmcmillen@sourcegraph.com](mailto:nmcmillen@sourcegraph.com)
-- Nick was born and raised in the Bay Area but moved to San Francisco in 2011. Before Sourcegraph he worked at Sepialine as well as some early stage startups. In his free time he's an avid maker who loves working on props from movies and tv (ask him about 3d printing or laser cutting). He also obesses about all things space and has way too much NASA merch.
 
 ## Virginia Ulrich (she/her)
 
@@ -605,7 +589,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Onboarding and Training Manager
 - Buenos Aires, Argentina 🇦🇷 / Barcelona, Spain 🇪🇸
 - [ines@sourcegraph.com](mailto:ines@sourcegraph.com), [GitHub](https://github.com/InesRoitman), [LinkedIn](https://www.linkedin.com/in/ines-roitman/) , [Pronounce my name 🔊](https://www.pronouncenames.com/In%C3%A9s)
-- Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for teaching and learning. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection.
+- Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for teaching and learning. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection.  
 
 ## James Clifford (he/him)
 
@@ -638,7 +622,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Oakland, CA, USA 🇺🇸
 - GitHub: [kyfli](https://github.com/kyfli)
 - [kylie@sourcegraph.com](mailto:kylie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kylie-fligstein/)
-- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through. 
+- Kylie a is dog-mom to a young PomChi, Nooks. She spends her time eating her way through Eater lists, reviewing restaurants, and once upon a time, throwing elaborate dinner parties filled with craft cocktails, fine wine, fermented foods, and usually involving a sous vide. She's a solution oriented executor, with an emphasis on following up & through.
 
 ## Caitlin Moran (she/her)
 
@@ -646,15 +630,7 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Brooklyn, NY USA 🇺🇸
 - GitHub: [Caitlinsourcegraph](https://github.com/caitlinsourcegraph)
 - [Caitlin@sourcegraph.com](mailto:caitlin@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/caitlincarducci/)
-- Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC! 
-
-## Miles Mulcare (he/him)
-
-- Account Executive
-- San Francisco, CA, USA 🇺🇸
-- GitHub: [MilesmulcareSG](https://github.com/MilesmulcareSG)
-- [miles@sourcegraph.com](mailto:miles@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/milesmulcare)
-- Miles lives in San Francisco's North Beach neighborhood. Prior to Sourcegraph, Miles spent 7.5 years at Fastly where he helped enterprise Engineering, Product, and Security teams to scale from $10M to over $200M in revenue. Miles graduated with a BA in Communications from Lewis & Clark College. Outside of work, Miles enjoys time with his family, Paige and Liam, and he is an avid road and mountain biker.
+- Caitlin is married to her wife Mo and lives in Brooklyn with their dogs Henry and Onion Ring. Prior to Sourcegraph, Caitlin spent 4 years at Optimizely before starting the sales team as the first Account Executive at Radar. Outside of work Caitlin enjoys spending time with her family, riding her bike (or Peloton if there is snow on the ground!) and exploring NYC!
 
 ## Murat Sutunc (he/him)
 
@@ -673,11 +649,11 @@ To add yourself to this page, copy the following template, paste it at the end o
 - Lisa wants to make tech more accessible through education and community building. She previously led the Developer Education/Community team at DigitalOcean, and wrote very popular open access books on Python programming and machine learning. An interdisciplinary researcher and teacher, Lisa earned her PhD from the City University of New York, and held postdoctoral positions at MIT and Harvard. A native New Yorker, she is interested in both public transportation and complicated street parking signage.
 
 ## Jon Kishpaugh (he/him)
-- Account Executive 
+- Account Executive
 - San Francisco, CA, USA
 - GitHub: [JonKish](https://github.com/jonkish)
 - jon@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jonathan-kishpaugh-8459217/)
-- Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active. 
+- Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active.
 
 ## Dudley Nostrand
 - Senior Manager, Value Engineering
@@ -698,7 +674,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Director of Legal
 - San Francisco, CA, USA 🇺🇸
 - [tammy@sourcegraph.com](mailto:tammy@sourcegraph.com)
-- Tammy joins Sourcegraph after years of counseling technology companies on matters including products, litigation, commercial contracts, data privacy, M&A, startup financing, and regulatory filings and investigations. She enjoys creative writing, reading fiction, solo traveling, watching basketball, and baking sourdough during the pandemic. 
+- Tammy joins Sourcegraph after years of counseling technology companies on matters including products, litigation, commercial contracts, data privacy, M&A, startup financing, and regulatory filings and investigations. She enjoys creative writing, reading fiction, solo traveling, watching basketball, and baking sourdough during the pandemic.
 
 ## Warren Gifford (he/him)
 
@@ -723,6 +699,14 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [giselle@sourcegraph.com](mailto:giselle@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/giselle-northy/), [Pronounce my name 🔊](https://www.pronouncenames.com/search?name=Giselle)
 - Giselle is a long time nerd who has dabbled in coding and PC games for many years. She started her tech career after several twists and turns, followed by a short stint in Sales & Marketing. At work her passions include automating the boring, creating an amazing customer experience, leveling up coding skills, and learning something new every day! Outside of work, she enjoys spending time with family, her fur children Odin the dog, cats Ben & Jerry, exercise, gardening and nature walks.
 
+## Vova Kulikov (he/him)
+
+- Software Engineer
+- St. Petersburg, Russia 🇷🇺
+- GitHub [vovakulikov](https://github.com/vovakulikov)
+- [vova@sourcegraph.com](mailto:vova@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/vovakulikov/), [@vovakulikov](https://twitter.com/_vovakulikov), [vovakulikov.me](https://vovakulikov.me), [Pronounce my name 🔊](https://www.pronouncenames.com/search?name=Vova)
+- Vova is a software engineer with a designer background. Found himself passionate about UX/UI and write some open-source code. He joins Sourcegraph after years of working on the frontend platform at Wrike. He loves generative art, geometry, and mathematics. Outside of work, he loves to play basketball and watch NBA Boston Celtics games.
+
 ## Alex Fogg (he/him)
 - Customer Engineer
 - Philadelphia, PA, USA 🇺🇸
@@ -736,3 +720,176 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - GitHub: [adeola-ak](https://github.com/adeola-ak)
 - [adeola@sourcegraph.com](mailto:adeola@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/adeola-a-b0b6b270)
 - Adeola joins Sourcegraph fresh out of an engineering bootcamp after years of doing work that she never felt challenged or very excited about. Having studied Finance in undergrad, she knows a thing or two about credit and managing money, but really loves to talk about all things code. Adeola finds life to be awfully boring without purpose and meaning, and strives to become a better person both professionally and personally everyday. Real connections mean a lot to Adeola and she loves to engage with people who feel the same way. Outside of work, she loves going out to eat, watching basketball, sniffing candles, reading and relaxing.
+
+## Patrick Dubroy (he/him)
+- Engineering Manager, Frontend platform
+- Munich, Germany 🇩🇪
+- GitHub: [pdubroy](https://github.com/pdubroy)
+- [patrick@sourcegraph.com](mailto:patrick@sourcegraph.com), [Twitter](https://twitter.com/dubroy), [LinkedIn](https://www.linkedin.com/in/pdubroy), [dubroy.com](https://dubroy.com/)
+- Patrick is a small-town Canadian kid who's been living in Germany for the past 10 years. Previously, he worked on autonomous driving at Lyft, where he was an enthusiastic user of Sourcegraph. Outside of work, he loves to play soccer, watch [Bayern Munich](https://fcbayern.com/) games, and explore the gravel roads around Munich on his bike.
+
+## Beatrix Woo (she/her)
+- Customer Support Engineer
+- San Diego, CA, USA
+- - [beatrix@sourcegraph.com](mailto:beatrix@sourcegraph.com), [GitHub](https://github.com/abeatrix), [LinkedIn](https://www.linkedin.com/in/wbeatrix/) , [Pronounce my name 🔊](https://www.youtube.com/watch?v=aZWHsV96NqY)
+- Originally from Hong Kong, Beatrix is now residing in the sunny San Diego with her husband and their Shiba Inu, Goku. She has recently made a career change from the Financial industry after working for Morgan Stanley and Uber to pick up her old passion in coding. She is currently working toward her Master’s Degree in Software Engineering. In her free time, Beatrix likes to spend time with her family, learn about different technologies, build mechanical keyboards, and play League of Legends with friends.
+
+## Stompy Mwendwa
+- Customer Support Engineer
+- Nairobi, Kenya 🇰🇪
+- GitHub: [airamare01](https://github.com/airamare01)
+- [stompy@sourcegraph.com](mailto:stompy@sourcegraph.com), [@stompy_amare](https://twitter.com/stompy-amare), [stompymwendwa.com](https://stompymwendwa.com), [LinkedIn](https://www.linkedin.com/in/stompy-mwendwa), [pronounce my name 🔊](https://www.name-coach.com/stompy-mwendwa)
+- Stompy is from the Pride of Africa and previously worked in customer success roles prior to joining Sourcegraph. He is a CS graduate and fell in with computers playing around with MS-DOS in the mid-90s. Stompy loves helping people achieve their goals and is a staunch believer of the Swahili proverb: "Kusaidia ni moyo wala si utajiri" - Helping is of the heart, not of the pocket. When he's not working, he loves hopping onto motorcycles and going on adventures, watching/playing basketball(Go Lakers!), playing video games, listening to hip-hop and going out to eat.
+
+## Nishil Patel (he/him)
+- Enterprise Account Executive
+- Brooklyn, NY, USA 🇺🇸
+- GitHub: [nishil-patel1](https://github.com/nishil-patel1)
+- [nishil@sourcegraph.com](mailto:nishil@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/nishilp)
+- Nishil (Nish) is a UK & US dual-citizen whom lives in Brooklyn's Clinton Hill neighborhood. Nish joins Sourcegraph from Sift, where he spent 4 years protecting digital businesses from fraud by building machine learning models. When not working, Nish can be found ranking NYC pizza joints, supporting Arsenal or competing with friends on Peloton. (Add me and let's ride! @ButtermilkCzar)
+
+## Sam Cregg
+- Sales Development Rep
+- Boston, MA, USA :us:
+- [samcregg@sourcegraph.com](mailto:samcregg@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sam-cregg/)
+- Sam enjoys golfing, boating and being outdoors. Prior to Sourcegraph, Sam  worked at IBM in a variety of sales roles including Hybrid Cloud, IoT and Blockchain. He loves to travel and hopes to do more in the coming years. He is a big Boston sports fan who is orginally from Topsfield, MA but now lives in the North End of Boston.
+
+## Indradhanush Gupta (he/him)
+- Software Engineer, Core Application
+- Kolkata, India, 🇮🇳
+- GitHub: [indradhanush](https://github.com/indradhanush)
+- [indradhanush@sourcegraph.com](mailto:indradhanush@sourcegraph.com), [Twitter](https://twitter.com/indradhanush92), [Pronounce my name 🔊](https://pronouncenames.com/pronounce/indradhanush), [indradhanush.github.io](https://indradhanush.github.io)
+- Indradhanush is a tinkerer and a lazy one at that. If he ever has to do the same thing twice, chances are he will work on automating it away. He likes to go down rabbit holes thinking about human psychology and obsesses about his audio quality on video calls. Away from work, he suffers from having too many hobbies but is most passionate about playing drums. His other hobbies in order of frequency are playing Dungeons & Dragons once a week with friends, playing on his PS4 once every few weeks, reading a book (science, fiction and fantasy) once every few months and painting once every few years.
+
+## Tia Wucher (she/her/hers)
+- Director of Customer Engineering, East
+- Apple Valley, MN, USA
+- GitHub: [tiawucher](https://github.com/tiawucher)
+- [tia@sourcegraph.com](mailto:tia@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tiawucher)
+- Tia is a true Minnesotan who embodies the strange accent and language of the midwest (Ope, Uff da, You Betcha); she even makes hotdish! She enjoys hopping in the camper for a weekend in the outdoors, hiking in Jackson Hole, WY and her precious family - husband Robert, pupson Nelson, pupson Philippe and furcat Sophia. Before joining Sourcegraph, she was the Sr. Director of Technical Success at Optimizely where she supported and lead three teams: Solution Engineers, Technical Support Engineers and Technical Account Managers. Her mission at Sourcegraph is to make our customers and team wildly successful.
+
+## Sarah Reece (she/her)
+- Director, Demand Generation
+- Winston Salem, NC, USA
+- GitHub: [sarah-reece](https://github.com/sarah-reece)
+- [sarah@sourcegraph.com](mailto:sarah@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sbethreece/)
+- Sarah is a North Carolina native, tracking her roots all the way back to legendary pioneers and indigenous peoples. While her roots go deep, her wings spread wide. She's lived, worked, and traveled all over the world. She's intensely curious and comes alive when learning new things and connecting previously unconnected dots. Hobbies include underestimating how long a hike will take, acting as if she's a sommelier, and lurking financial subreddits.
+
+## Steph Hay (she/her)
+- Senior Business Operations Analyst
+- Los Angeles, CA, USA 🇺🇸
+- GitHub: [stephmhay](https://github.com/stephmhay)
+- [steph@sourcegraph.com](mailto:steph@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/stephaniemhay)
+- Steph lives in Los Angeles and loves taking advantage of the perfect weather by getting outside as much as possible. After multiple failed attempts at surfing, she has finally accepted that she is much better suited to outdoor activities requiring little to no skill and has since taken up paddleboarding and long walks on the beach. Steph started her career in investment banking and also worked in venture investing before joining Sourcegraph.
+
+## Kelsey Brown (she/her)
+- Senior Business Operations Analyst
+- Arlington, VA, USA 🇺🇸 
+- GitHub: [kelsey-brown](https://github.com/kelsey-brown)
+- [kelsey@sourcegraph.com](mailto:kelsey@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kelsey-brown-25220b68/)
+- Prior to Sourcegraph, Kelsey worked in consulting on projects related to strategy, business operations, and technology. Outside of work, Kelsey loves doing anything active, including weightlifting, snowboarding, and playing ultimate frisbee. She is currently based in the Washington, DC area, but hails from Chicago, and would therefore be happy to passionately defend the superiority of Chicago-style over New York-style pizza with you any day of the week.
+
+## Ryan Hitchman
+- Software Engineer, Search Core Backend
+- Boulder, Colorado, USA
+- [hitchman@sourcegraph.com](mailto:hitchman@sourcegraph.com), [rmmh](https://github.com/rmmh), [LinkedIn](https://www.linkedin.com/in/ryan-hitchman-485974aa)
+- Ryan loves cooking, photography, his family, and learning all sorts of trivia.
+
+## Bill Creager
+- Director of Engineering
+- Buda, TX USA 🇺🇸 
+- [bill.creager@sourcegraph.com](mailto:bill.creager@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/bill-creager-8055911a/)
+- If he isn't in front of this computer, Bill can usually be found doing one of the following: eating some BBQ in Austin, riding his bike or running, watching his kids play soccer, camping with the family, or working with his hands (building furniture, building and playing guitars). He grew up in Phoenix, AZ and went to Northern Arizona University in Flagstaff, AZ where he studied computer science (after a quick detour in Environmental Engineering, it wasn't for him).   Prior to Sourcegraph he worked at Procore, Spiceworks, and Demand Media and has been living in Texas for 11 years (he got there as quick as he could)!
+
+## Samson Goddy (he/him)
+
+- Director of Community
+- Port Harcourt, Nigeria 🇳🇬
+- GitHub: [samswag](https://github.com/samswag)
+- [samson@sourcegraph.com](mailto:samson@sourcegraph.com),[@samson_goddy](https://twitter.com/Samson_Goddy),[LinkedIn](https://linkedin.com/in/samsongoddy)
+- Samson, a software developer who believes in creating something iconic. An open source advocate who has been sustaining projects with his diverse experiences. He maintains tools, desktops and likes contributing back to the large OSS ecosystem. Building communities is something he passionate about, and he currently runs Open Source Community Africa, a non-profit org that promotes and educates everything open source. He loves playing console games, mobile photography and eating jollof rice.
+
+## Kendrick Morris (he/him)
+- Finance and Operations Analyst
+- San Francisco, CA USA 🇺🇸 
+- GitHub: [kmorris50](https://github.com/kmorris50)
+- [kendrick@sourcegraph.com](mailto:kendrick@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kendrick-morris-3563b993)
+- Kendrick grew up in Houston, TX and now resides in San Francisco, CA. He graduated with a degree in Economics-Accounting & Government from Claremont McKenna College. Prior to Sourcegraph, Kendrick worked in the Deloitte San Francisco audit practice and currently holds a CPA license in California. He enjoys listening to podcasts, collecting vintage basketball cards, and driving just about anywhere for good barbecue.
+
+## John Harwell
+- Account Executive
+- Atlanta, GA USA 🇺🇸 
+- [john.harwell@sourcegraph.com](mailto:john.harwell@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/john-s-harwell/)
+- John enjoys spending time with his wife, Nicole, and 2 sons, Isaac and Owen, playing games (sports, board, card, video, puzzles, etc.), attending concerts, and traveling to new places. John has been in SaaS sales his entire professional career, much of that time in the project management space. 
+
+## Christy Haragan (she/her)
+- Director of Customer Engineering - International
+- London, UK 🇬🇧 
+- [christy@sourcegraph.com](mailto:christy@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/christy-haragan/)
+- Christy used to enjoy playing football (before Covid lockdown; hopefully she can update this in the future once calmer times occur), skiing, running, and yoga. She has been a CTO and co-founder of an app-startup and has a masters degree in Computer Science from the University of York.
+
+## Rebecca Dodd (she/her)
+- Senior Managing Editor
+- London, UK 🇬🇧
+- [rebecca@sourcegraph.com](mailto:rebecca@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rebecca-lee-dodd/)
+- Originally from Cape Town, South Africa, Rebecca started her career in journalism before finding her way into tech via content marketing. Prior to Sourcegraph she worked at GitLab for over four years and managed their company blog. An enthusiastic traveller, Rebecca has a custom Google Map of every city she's ever visited, complete with colour-coded pins of the best coffee shops and restaurants. Ask her for recommendations!
+
+## Julie Campagna (she/her)
+- Senior Manager, Customer Advocacy
+- Sebastopol, CA  USA
+- GitHub: [juliecampagna](https://github.com/juliecampagna)
+- [julie@sourcegraph.com](mailto:julie@sourcegraph.com)
+- Name pronunciation: cohmpanya
+- Julie grew up in NH, 30 miles north of Boston, and after attending the University of Maine, moved to San Francisco to become a writer. Starting at PC World magazine, she later joined and wrote and produced customer stories for Adobe Systems and Atlassian. Julie currrently lives with her two bulldogs Angus and Peaches on a ranch in Sonoma County. She enjoys swimming, live music, growing flowers, and reading fiction, as well as riding her Kubota tractor around her yard.
+
+## Carly Jones (she/her)
+- VP, Talent
+- Denver, CO USA 🇺🇸
+- GitHub: [carlyj0nes] (https://github.com/carlyj0nes)
+- Carly is a Denver native who went to college in Vermont (Middlebury), lived in Washington, DC for 5 years, and has since returned home to Colorado.  Prior to Sourcegraph, she gained experience leading talent teams at high growth startups and is passionate about all things talent acquisition.  When not working, you can find Carly tackling a DIY project, practicing her golf game, spending time outdoors, and traveling. 
+
+## Rafal Leszczynski (he/him)
+
+- Engineering Manager, Core Application
+- Jelonek (Poznan), Poland 🇵🇱
+- GitHub: [RafLeszczynski](https://github.com/RafLeszczynski)
+- [rafal@sourcegraph.com](mailto:rafal@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rleszcz/)
+- Raf lives with his family outside of Poznan (Poland), surrounded by forests, boars, deers, and other wildlife.
+He likes to travel, visit places off the beaten path, and trek in the mountains. Raf also spends bing chunk of his free time playing video games, both recent titles and retro ones. He has ten different gaming consoles, including NES, the first-generation Game Boy, and Commodore 64, all in working condition.
+
+## Kelli Rockwell (she/her)
+
+- Software Engineer, Batch Changes
+- Seattle, WA, USA 🇺🇸
+- GitHub: [courier-new](https://github.com/courier-new)
+- [kelli@sourcegraph.com](mailto:kelli@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/kellirockwell/), [Twitter](https://twitter.com/courierneue)
+- Name pronunciation: /[ˈkɛl.i ˈɹɑk.wɛl](http://ipa-reader.xyz/?text=%CB%88k%C9%9Bl.i%20%CB%88%C9%B9%C9%91k.w%C9%9Bl&voice=Joanna)/
+- Kelli grew up in Arizona before slowly making her way up the west coast US from LA to SF to Seattle, WA. She became a "professional web developer" before she was even qualified to babysit, getting paid in Neopoints to make Neopets layouts and community fan pages for her online friends as a pre-teen. She is definitely not addicted to [bubble tea](https://en.wikipedia.org/wiki/Bubble_tea) (or “boba”, as it’s called on the west coast) and professes that she could stop at any time. When she's not consuming boba, she plays tennis, attends developer conferences and meet-ups, travels for the food, completes jigsaw puzzles, and tries to convince her hypoallergenic cat, Calla, to cuddle with her while coding.
+
+## Katerina Nikolova (she/her)
+
+- Chief of Staff to the CEO and Co-founder at Sourcegraph
+- Walnut Creek, California, USA 🇺🇸
+- [katerina@sourcegraph.com](mailto:katerina@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/katerinanikolova/)
+- Katerina was raised in Bulgaria, but moved to Belgium at age 19 and moved to various countries ever since. She has lived in France, China and Dubai. She currently lives in Walnut Creek (East Bay) with her two daughters Nia and Jennifer. Her spare time is occupied by hiking, biking, playing, and travelling with her daughters. She started her career as a flight attendant for Emirates Airlines in the United Arab Emirates, but moved on to supporting executives after relocating to the U.S. She has worked at Chevron, Stanford, Alibaba and Credit Karma before joining Sourcegraph. Katerina obtained her Bachelor in Mass Communications from UC Berkeley and a Master in Public Administration from San Francisco State University. She has a passion for fashion, music and fun events that bring people together.
+
+## Dan Mckean (he/him)
+
+- Product Manager, Distribution & Security
+- Shaftesbury (Dorset), UK 🇬🇧
+- GitHub: [dan-mckean](https://github.com/dan-mckean)
+- [dan.mckean@sourcegraph.com](mailto:dan.mckean@sourcegraph.com)
+- Dan grew up in the South of England, and (with a detour via London) ended up in Dorset in the south west, a county with beautiful coast (but lives as far from the sea as it's possible to get – though not deliberately!) He lives with his wife (Emma), four kids (7y, 5y, 2x14m) and 3-legged springer spaniel (9y). His spare time is largely spent chasing his twin identical boys in an effort to prevent injury. Any (genuinely) spare time is spent trying to make things out of wood. 
+
+## Nate Tang (he/him)
+
+- Tech Ops Analyst
+- San Clemente, California, USA 🇺🇸
+- Nate grew up in Orange County, California but has traveled all across the world, most recently to Peru. In his free time, he likes to swim, practice yoga, and go on hikes. 
+
+## Cassie Melani (she/her)
+
+- Teammate Success Manager
+- Seattle, Washington, USA 🇺🇸
+- [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/)
+- Cassie was born and raised in sunny 🍊Orange County, California and moved up to 🌁Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but she decided she wanted gloomier weather, so she recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲Seattle with her husband (Will). Together, they have two mischevious fur babies, Lola and Sterling (professionally known as @sterlingandlola). In her spare time, Cassie enjoys spin classes, traveling to tropical locations, cooking Molly Baz recipes, and watching plant videos on YouTube.

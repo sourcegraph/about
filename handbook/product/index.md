@@ -11,11 +11,13 @@ Product at Sourcegraph consists of [product management](product_management/index
    - [Kylie Fligstein](../../../company/team/index.md#kylie-fligstein-she-her), Executive Business Partner - Product
    - [Product managers](roles/index.md#product-manager)
       - [María Craig](../../../company/team/index.md#maría-craig-she-her) - [Code intel](../engineering/code-intelligence/index.md)
-      - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) - [Code insights](../engineering/code-insights/index.md)
-      - [Malo Marrec](../../../company/team/index.md#malo-marrec-he-him) - [Campaigns](../engineering/campaigns/index.md)
+      - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) - [Code insights](../engineering/developer-insights/code-insights/index.md)
+      - [Malo Marrec](../../../company/team/index.md#malo-marrec-he-him) - [Batch Changes](../engineering/batch-changes/index.md)
+      - [Dan Mckean](../../../company/team/index.md##dan-mckean-he-him) - [Distribution](../engineering/distribution/index.md) & [Security](../engineering/security/index.md)
+      - R.P. starts 2021-05-03 - [Core application](../engineering/core-application/index.md)
    - [Product designers](roles/index.md#product-designer)
-      - [Rob Rhyne](../../../company/team/index.md#rob-rhyne) - [Campaigns](../engineering/campaigns/index.md) and [Search](../engineering/search/index.md)
-      - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her) - [Web](../engineering/web/index.md), [Code Insights](../engineering/code-insights/index.md) and [Code intel](../engineering/code-intelligence/index.md)
+      - [Rob Rhyne](../../../company/team/index.md#rob-rhyne) - [Batch Changes](../engineering/batch-changes/index.md) and [Search](../engineering/search/index.md)
+      - [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her) - [Frontend Platform](../engineering/developer-insights/frontend-platform/index.md), [Extensibility](../engineering/developer-insights/extensibility/index.md), [Code Insights](../engineering/developer-insights/code-insights/index.md) and [Code intel](../engineering/code-intelligence/index.md)
       - [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) - [Core application](../engineering/core-application/index.md) and [Search (Code monitoring & contexts)](../engineering/search/index.md)
 
 ## Planning
@@ -24,6 +26,8 @@ Product at Sourcegraph consists of [product management](product_management/index
 - [Roadmap](roadmap.md)
 
 ## Resources
+
+- [Sourcegraph's product design principles](./design_principles.md)
 
 ### References
 
@@ -37,6 +41,7 @@ Product at Sourcegraph consists of [product management](product_management/index
   - [All RFC documents](https://drive.google.com/drive/folders/1zP3FxdDlcSQGC1qvM9lHZRaHH4I9Jwwa) (Google Drive)
   - [How we use RFCs](../communication/rfcs/index.md)
 - [Product learnings](product_learning.md)
+- [Working with BizOps](../ops/bizops/index.md#how-to-work-with-us)
 
 ### Metrics
 

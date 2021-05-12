@@ -1,5 +1,5 @@
 # Marketing roles
-- [Director of Community](https://jobs.lever.co/sourcegraph/480e8d71-03af-4659-ac90-b8e32ad4ef34)
-- [Customer Marketing Manager](customer_marketing_manager.md)
+- [Senior Demand Generation Program Manager](https://boards.greenhouse.io/sourcegraph91/jobs/4003928004)
+- [Product Marketing Manager, Emerging Products](https://boards.greenhouse.io/sourcegraph91/jobs/4003930004)
 
-See our [careers page](../../../company/careers.md) for open positions and more info.
+See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open positions and more info.

@@ -13,6 +13,7 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Using Salesforce](salesforce.md)
 - [Sales Resources](salesresources.md)
 - [Engaging with Legal](saleslegal.md)
+- [Engaging with Security](salessecurity.md)
 
 ## Pipeline, data, and models
 
@@ -36,6 +37,7 @@ Not all team members are reflected here yet. If you see yourself missing, please
   - [Eli Rothschild](../../company/team/index.md#eli-rothschild-he-him)
   - [Scott Cambell](../../company/team/index.md#scott-campbell-he-him)
   - [Hannah Freilich](../../company/team/index.md#hannah-freilich)
+  - [John Harwell](../../company/team/index.md#john-harwell)
 - [Greg Bastis](../../company/team/index.md#greg-bastis-he-him) (RVP of West)
   - [Owen Brennan](../../company/team/index.md#owen-brennan-he-him)
   - [Chris Surdi](../../company/team/index.md#chris-surdi)
@@ -46,9 +48,9 @@ See [roles](./roles/index.md) page.
 
 ## How sales works with other Sourcegraph teams
 
-### [Customer engineering](../ce/support.md) (for customer support)
+### [Customer engineering](../support/index.md) (for customer support)
 
-- [How to request support (for customers)](../ce/support.md#how-to-get-support-for-customers)
+- [How to request support (for customers)](../support/index.md#how-to-get-support-for-customers)
 - [Creating and maintaining license keys for customers](../ce/license_keys.md)
 
 ### [Team members who want to join calls](onboarding/joining_customer_calls.md)

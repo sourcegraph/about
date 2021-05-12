@@ -18,7 +18,7 @@ Gatsby requires Node.js, and we recommend using [yarn](https://yarnpkg.com/en/) 
 
 ## Developing locally
 
-[Click here to develop the handbook locally](#Handbook)
+Developing the static site locally is separate from developing the handbook. [Read the Handbook section](#Handbook) to learn how to develop the handbook locally.
 
 In a terminal, change into the `website` directory, and run:
 
@@ -48,7 +48,7 @@ Learn how to [create and publish a blog post](https://about.sourcegraph.com/hand
 
 ## Handbook
 
-The [Sourcegraph handbook](https://about.sourcegraph.com/handbook) also lives in this repository. Soon it will be deployed together with the rest of the about.sourcegraph.com site.
+The [Sourcegraph handbook](https://about.sourcegraph.com/handbook) also lives in this repository. This is currently deployed in GCP.
 
 The handbook uses [docsite](https://github.com/sourcegraph/docsite).
 

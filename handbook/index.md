@@ -14,7 +14,7 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Goals](../company/goals/index.md)
 - [Team](../company/team/index.md)
   - [Org chart](../company/team/org_chart.md)
-  - [Careers](../company/careers.md)
+  - [Careers](https://boards.greenhouse.io/sourcegraph91)
 - [CEO](ceo/index.md)
 - [Communication](communication/index.md)
   - [Content guidelines](communication/content_guidelines.md)
@@ -39,19 +39,23 @@ The handbook is a living document and we expect every teammate to propose improv
 <!-- When updating the engineering team list below, please also update company/team/org_chart.md. -->
 
 - [Engineering](engineering/index.md)
-  - [Campaigns](engineering/campaigns/index.md)
+  - [Batch Changes](engineering/batch-changes/index.md)
   - [Core application](engineering/core-application/index.md)
-  - [Code Insights](engineering/code-insights/index.md)
   - [Code intelligence](engineering/code-intelligence/index.md)
   - [Distribution](engineering/distribution/index.md)
   - [Search](engineering/search/index.md)
   - [Security](engineering/security/index.md)
-  - [Web](engineering/web/index.md)
+  - [Developer Insights](engineering/developer-insights/index.md)
+     - [Code insights](engineering/developer-insights/code-insights/index.md)
+     - [Extensibility](engineering/developer-insights/extensibility/index.md)
+     - [Frontend platform](engineering/developer-insights/frontend-platform/index.md)
+     - [API docs](engineering/developer-insights/api-docs/index.md)
+
+### [Customer Support](support/index.md)
 
 ### [Customer Engineering](ce/index.md)
 
 - [Customer Engineering](ce/index.md)
-- [Customer Support](ce/support.md)
 - Customer Training (TODO)
 
 ### [Marketing](marketing/index.md)
@@ -61,6 +65,8 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Sales strategy & operations](sales/sales-ops/index.md)
 
 ### [Talent](talent/index.md)
+
+- [Careers](careers.md)
 
 ### [Operations](ops/index.md)
 

@@ -190,13 +190,13 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-5">
                         <h2>Make large-scale code changes</h2>
                         <p>
-                            Remove legacy code, fix critical security issues, and pay down tech debt. Run campaigns to
+                            Remove legacy code, fix critical security issues, and pay down tech debt. Use Batch Changes to
                             compute diffs and create branches and pull requests across multiple repositories. With
                             Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/campaigns">
-                                Campaigns documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            <a className="d-flex align-items-center" href="/batch-changes/">
+                                Learn more about Batch Changes <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
                     </div>
@@ -204,11 +204,11 @@ const Index: React.FunctionComponent = (props: any) => (
                         <div className="container video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
                                 className="embed-responsive-item"
-                                src="https://www.youtube-nocookie.com/embed/EfKwKFzOs3E?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                                 allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 frameBorder={0}
-                                title="Sourcegraph Campaigns"
+                                title="Sourcegraph Batch Changes"
                             ></iframe>
                         </div>
                     </div>
@@ -233,7 +233,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <p>
                             Aggregate data from connected external services, and enhance it with code intelligence
                             to give you the information you care about. Take direct actions on these insights with&nbsp;
-                            <Link to="https://docs.sourcegraph.com/campaigns">campaigns</Link>, like proposing
+                            <Link to="https://docs.sourcegraph.com/batch_changes">Batch Changes</Link>, like proposing
                             an automated refactor to fix a problem detected through static analysis.
                         </p>
                         <div className="pt-1">

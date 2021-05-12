@@ -17,18 +17,18 @@ These timings are approximate, and you are welcome to reorder these outcomes bas
 - You are able to describe the career aspirations of each teammate, where they are struggling, and where they are thriving.
 - Your manager, your peer managers, and your teammates report that they are happy and relieved to have you on the team because you have already had a positive impact.
 - You understand who your stakeholders are and have met with them to understand their priorities.
-- You have read either [Turn the Ship Around or Orbiting the Giant Hairball](../leadership/index.md#book-recommendations) and shared your thoughts with your peer managers during a team sync.
+- You have read either [Turn the Ship Around or Orbiting the Giant Hairball](../engineering-management/index.md#book-recommendations) and shared your thoughts with your peer managers during a team sync.
 
 ## Month 2
 
 - You are the credible voice and point of contact for the team. You are directly responsible for the team's success.
-- You have a written forecast (e.g., in the handbook) of the work the team is going to do over the next ~3 months to make progress toward their goals.
+- You have a written forecast of the work the team is going to do over the next ~3 months to make progress toward their goals.
 - You are accountable for your team's hiring process.
   - You understand what the team's hiring needs are (for example: skills, values).
   - You have confidence that our hiring process is calibrated to measure what we are looking for in an efficient and unbiased way (if not, you have proposed improvements).
   - You conduct the hiring manager screen calls for candidates who would be joining your team.
     - You can pitch Sourcegraph as a whole, the part of the product your team works on, and the team itself.
-- You have read both [Turn the Ship Around and Orbiting the Giant Hairball](../leadership/index.md#book-recommendations) and shared your thoughts with your peer managers during a team sync.
+- You have read both [Turn the Ship Around and Orbiting the Giant Hairball](../engineering-management/index.md#book-recommendations) and shared your thoughts with your peer managers during a team sync.
 
 ## Give feedback on your onboarding
 

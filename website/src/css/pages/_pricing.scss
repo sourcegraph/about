@@ -4,4 +4,10 @@
         max-width: var(--breakpoint-lg);
         margin: 0 auto;
     }
+
+    &__quote-link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }

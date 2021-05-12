@@ -3,7 +3,7 @@
 *This guide is made to define and explain many of the terms that are commonplace in conversations at the Sourcegraph office but not necessarily outside of it. The goal of this guide is to break down these terms in a way that your average person can comprehend, at least at very high level. Think of this as an "intro to dev-speak"* :)
 
 ### Binary
-The simplest form of computer code or programming data. It is a series of 1s and 0s that makes up the “language” that computers understand.
+The simplest form of computer code or programming data. It is a series of 1s and 0s that makes up the “language” that computers understand. It's also used to refer to a pre-compiled executable program. Source code is generally compiled into a binary to be executed on an specific operating systems.
 
 ### Code
 The fundamental component of a computer program that is created by a developer. It can be read and understood by a human and then translated into machine language (binary machine code).
@@ -42,7 +42,7 @@ A system that tracks changes to a document or project over time in an orderly an
 This is similar to how a Google Doc allows you to review a document’s history (see what changes occurred, who made which changes, etc.) Version control provides the ability to “time travel” and restore previous versions of the document in case something went wrong with one of the changes. 
 
 ### Git
-A version control system, developed for the maintenance of code with particularly strong support or simultaneous efforts by many developers.
+A version control system, developed for the maintenance of code with particularly strong support for simultaneous efforts by many developers.
 
 ### README
 This is the file outlining the project and is written by the project developers for others to read. It is comparable to a “front page” of a project, where the project is outlined and described by those that worked on it. 
@@ -63,10 +63,10 @@ In Git, a single set of changes. This is how you store changes in your repositor
 A collection of (usually related) source code and other files, plus the history of those files. It is a location for your project, similar to a Google Drive folder that stores related documents in one place. 
 
 ### Branch
-A specific series of changes in a repository, usually used to isolate changes during their development. Branching lets you make changes, test them in a staging area, then merge them into the “master branch” (the “live” part of your code).
+A specific series of changes in a repository, usually used to isolate changes during their development. Branching lets you make changes, test them in a staging area, then merge them into the “main branch” (the “live” part of your code).
 
-### Master Branch
-The primary branch of a repository, usually holding the actively-developed product and working of features (non-working versions tend to stay in branches). This is the “live” part of a project that can be viewed by the public.
+### Main Branch
+The primary branch of a repository, usually holding the actively-developed product and working of features (non-working versions tend to stay in branches). This is the “live” part of a project that can be viewed by the public. Sometimes referred to as the "master" branch.
 
 ### Clone
 A copy of a repository, including its full history. Similar to a copy of a Google Doc with all its revision history. 
@@ -91,6 +91,7 @@ A text-based interface for controlling computers by issuing textual commands. Ba
 ### API (Application Programming Interface)
 An API allows a piece of software to interact with another piece of software.
 
-
 ### Server
-An instance of a computer program that accepts and responds to requests made by another program. There are several different kinds of servers (application server, web server, cloud server, etc.).
+A computer (virtual or physical) that runs services and/or "serves information" to other computers. Its could also refer to an instance of a computer program. There are several different kinds of servers (application server, web server, cloud server, etc.). 
+
+

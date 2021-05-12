@@ -11,38 +11,39 @@
 ### People Ops team members
 
 - [Noemi Mercado](../../../company/team/index.md#noemi-mercado-she-her), Head of People Ops
-  - [David Li](../../../company/team/index.md#david-li-he-him), Technical Recruiter
   - Cecily Black, Recruiting Coordinator
   - [Inés Roitman](https://about.sourcegraph.com/company/team#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
 
 ## Teammate experience
 
 - [All-remote work](../../company/remote/index.md)
-- [Interview process](hiring/interview_process.md)
-- [Hiring](hiring/index.md)
-- [Before starting](onboarding/before_starting.md)
+- [Interview process](../talent/hiring/interview_process.md)
+- [Hiring](../talent/hiring/index.md)
 - [Onboarding](onboarding/index.md)
 - [Performance review cycles](review-cycles/index.md)
 - [United States visa sponsorship](visa-sponsorship.md)
 - [Employment verification](employment_verification.md)
+- [Switching teams](switching-teams.md)
 - [Leaving](leaving.md)
 - Hackathons: We don't have any company-wide hackathons planned. If you want to do one for your team, just propose it and find the right time. (See related "[Innovation time](../engineering/index.md#innovation-time)" for engineering, which could apply to any team if you think it would be good.)
 
 ## Benefits
 
-- [Compensation](compensation.md)
+- [Compensation](compensation/index.md)
+  - [How to create an offer](compensation/offers.md)
+  - [Equity and stock options FAQ](compensation/equity-faq.md)
 - [Benefits and perks](benefits-and-perks.md)
 - [Travel](travel.md)
-- [Invoices](invoices.md)
 - [Covered expenses](spending-company-money.md) (aka "Spending company money")
 - [Expense reports](expenses.md)
-- [Vacation/FTO/PTO](https://github.com/sourcegraph/Graphbook/blob/master/Holidays,%20FTO,%20and%20leaves%20of%20absence/Vacation%20and%20FTO.md)
+- [Vacation/FTO/PTO](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks#vacation)
+- [Requesting time off](requesting-time-off.md)
 - [Holidays](holidays.md)
 - [Donations](donations.md)
 
 ## Roles
 
-See our [careers page](../../company/careers.md) for open roles on the People Ops team.
+See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open roles on the People Ops team.
 
 ## DEI
 

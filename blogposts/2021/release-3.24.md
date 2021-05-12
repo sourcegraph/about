@@ -28,4 +28,3 @@ changelogItems:
     url: https://about.sourcegraph.com/blog/feature-removal-interactive-search-mode/
     category: Search
 ---
-\* Please [contact Sourcegraph](https://about.sourcegraph.com/contact/sales/) with any licensing questions.

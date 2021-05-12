@@ -35,37 +35,37 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
     heroLink,
     children,
 }) => (
-        <div className={`${slugify(customer).toLowerCase()}-${className} ${className}`}>
-            <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
-                {heroImage && (<div className="case-studies__quote row pt-3">
-                    <div className="col-lg-3">
-                        <a href={heroLink} rel="nofollow"><img className="img-fluid mx-auto d-block" src={heroImage} alt={customer} /></a>
-                    </div>
-                    <div className="col-lg-9 ">
-                        {quote && <div className="text-left">
-                            <p className="text-light" dangerouslySetInnerHTML={{ __html: quote.quote }} />
-                            <footer className="blockquote-footer text-light mt-1">{quote.author}</footer>
-                        </div>}
-                    </div>
-                </div>)}
-                {quote && !heroImage && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
-                {pdf && (
-                    <a href={pdf} className="btn btn-primary mt-3" rel="nofollow" target="_blank">
-                        <i className="fa fa-file-pdf pr-2" />
+    <div className={`${slugify(customer).toLowerCase()}-${className} ${className}`}>
+        <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
+            {heroImage && (<div className="case-studies__quote row pt-3">
+                <div className="col-lg-3">
+                    <a href={heroLink} rel="nofollow"><img className="img-fluid mx-auto d-block" src={heroImage} alt={customer} /></a>
+                </div>
+                <div className="col-lg-9 ">
+                    {quote && <div className="text-left">
+                        <p className="text-light" dangerouslySetInnerHTML={{ __html: quote.quote }} />
+                        <footer className="blockquote-footer text-light mt-1">{quote.author}</footer>
+                    </div>}
+                </div>
+            </div>)}
+            {quote && !heroImage && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
+            {pdf && (
+                <a href={pdf} className="btn btn-primary mt-3" rel="nofollow" target="_blank">
+                    <i className="fa fa-file-pdf pr-2" />
                         Download PDF
                 </a>
-                )}
-            </CaseStudyJumbotron>
+            )}
+        </CaseStudyJumbotron>
 
-            <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">
-                <div className="container pt-6 pb-4">
-                    <h1 className={`${titleClassName}`}>{title}</h1>
-                </div>
-            </ContentSection>
+        <ContentSection color="white" className="col-sm-12 col-md-9 col-lg-7">
+            <div className="container pt-6 pb-4">
+                <h1 className={`${titleClassName}`}>{title}</h1>
+            </div>
+        </ContentSection>
 
-            {children}
-        </div>
-    )
+        {children}
+    </div>
+)
 
 export const MediaQuote: React.FunctionComponent<{
     image?: string
@@ -132,17 +132,19 @@ export const InContentImage: React.FunctionComponent<{
 export const CaseStudyRequestDemoForm: React.FunctionComponent<{
     title?: string
     description?: string
+    demoFormURL?: string
 }> = ({
     title = 'See Sourcegraph in action.',
     description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
+    demoFormURL = '/contact/request-demo',
 }) => (
-            <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
-                <div className="container text-center pt-6">
-                    <h3 className="display-3 font-weight-bold">{title}</h3>
-                    <p>{description}</p>
-                    <Link className="btn btn-primary mx-2 mb-3" to="/contact/request-demo" title="Request a demo">
-                        Schedule a demo
-            </Link>
-                </div>
-            </ContentSection>
-        )
+        <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
+            <div className="container text-center pt-6">
+                <h3 className="display-3 font-weight-bold">{title}</h3>
+                <p>{description}</p>
+                <Link className="btn btn-primary mx-2 mb-3" to={demoFormURL} title="Request a demo">
+                    Schedule a demo
+                </Link>
+            </div>
+        </ContentSection>
+    )

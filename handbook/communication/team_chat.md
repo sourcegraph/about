@@ -13,7 +13,10 @@ Exceptions:
 - #feedback retains messages indefinitely because it provides a good source of user testimonials.
 - #engaging-external-engineers retains indefinitely because team chat is the easiest way to solicit advice from our broader team, and the questions are usually one-off, so it wouldn't make sense to try to make this more organized.
 - #sales-prospecting retains indefinitely to support the education of new teammates about how to communicate with customers and prospects.
+- #west_sales_news_and_prospecting and #east_sales_news_and_prospecting retain messages indefinitely to serve as libraries of start-up accounts that the sales team can target as AE and SDR headcount scales.
+- #sales-resources retains messages indefinitely to serve as a library of quickly evolving sales collateral and tools.
 - All channels that we share with customers or prospects (typically containing the prefixes #trial- or #support-) retain messages indefinitely to preserve context for support or audit-related purposes.
+- #marketintel retains messages indefinitely to keep a longterm overview of market information around the field of developer tools.
 
 [Historical archive of Slack messages prior to 2019-11-09](https://drive.google.com/file/d/1FUbOEsMM4fWRpxymgNHZCAssOPEFDelJ/view?usp=sharing): unzip and open `sourcegraph-slack-archive-to-20191109/index.html` to view. If you consult this, please be sure to add whatever information you learn to a source of truth so we reduce our reliance on this archive.
 
@@ -48,8 +51,8 @@ We have many Slack channels. You don't have to join them all, but here is a good
 
 Our goal is to facilitate open and transparent communication both within teams as well as between teams. Since these are two different audiences, we recommend that each team maintains two separate channels in Slack following these naming conventions:
 
-1. `${TEAMNAME}-chat` is the default channel for discussing work that the team is doing and fielding questions from outside of the team. If you have a question to ask another team, ask it in their `-chat` channel.
-1. `{$TEAMNAME}-team` is a secondary channel that the team can use to communicate about topics that are not related to the work of the team and clearly only relevant to members of the team itself (for example: social chit chat, notifying team you will be late to a team meeting, scheduling a team meeting or offsite). This channel is *not* for having internal team discussions about work the team is doing; those discussions are potentially relevant to people outside of the team and should be done in `-chat`. The team should treat this as their own channel, even if non-teammates have joined. We encourage teams to keep this channel public for transparency.
+1. `${TEAMNAME}` is the default channel for discussing work that the team is doing and fielding questions from outside of the team. If you have a question to ask another team, ask it in their default channel.
+1. `{$TEAMNAME}-internal` is a secondary channel that the team can use to communicate about topics that are not related to the work of the team and clearly only relevant to members of the team itself (for example: social chit chat, notifying team you will be late to a team meeting, scheduling a team meeting or offsite). This channel is *not* for having internal team discussions about work the team is doing; those discussions are potentially relevant to people outside of the team and should be done in the default channel above. The team should treat this as their own channel, even if non-teammates have joined. We encourage teams to keep this channel public for transparency.
 
 If teams require additional channels they should follow the convention of prefixing the channel name with their team name. For example: `web-onboarding`
 
