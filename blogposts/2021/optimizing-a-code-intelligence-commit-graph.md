@@ -143,7 +143,7 @@ The following query plan shows an execution trace that visited around 100 commit
     1. Insert rows into result set as well as a new temporary intermediate table table
     1. Replace the working table with the intermediate table and empty the intermediate table
 
-A row is a duplicate of another row (from Postgres's point of view) if they both contain the same set of values. However, from our point of view, a row is a duplicate of another row if only their commit values match. After all, we're running a breadth-first search over a graph and by the time we've seen a commit for the second time, we've already seen it via the shortest path. This mismatch in expectations don't cost us correctness, but it does cause performance problems and the pain that comes with it.
+A row is a duplicate of another row (from PostgreSQL's point of view) if they both contain the same set of values. However, from our point of view, a row is a duplicate of another row if only their commit values match. After all, we're running a breadth-first search over a graph and by the time we've seen a commit for the second time, we've already seen it via the shortest path. This mismatch in expectations don't cost us correctness, but it does cause performance problems and the pain that comes with it.
 
 #### Example
 
@@ -174,7 +174,7 @@ Running the query above from the commit `703e33` produces the following CTE resu
 
 Notice that there are two ways to get from commit `7033ee` to commit `3d2f27`, therefore the entries for `3d2f27` are duplicated in the CTE results (and therefore the working table). Also notice that the number of _new_ rows per iteration is growing as the iteration count rises in such graphs. **For some configuration of input, this query is [quadratic](https://accidentallyquadratic.tumblr.com/) instead of linear.**
 
-What we _wanted_ to happen was for the "duplicate rows" not to be inserted into the working table at all. Unfortunately, each record in this example is distinct due to the differing path lengths - a detail we glossed over when designing this query in the first place. Another classic case of the computer doing what you _told_ it to do instead of what you _wanted_ it to do. 🙄
+What we _wanted_ to happen was for the "duplicate rows" not to be inserted into the working table at all. Unfortunately, each record in this example is distinct due to the differing path lengths—a detail we glossed over when designing this query in the first place. Another classic case of the computer doing what you _told_ it to do instead of what you _wanted_ it to do. 🙄
 
 ---
 
