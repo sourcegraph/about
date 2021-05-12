@@ -533,7 +533,7 @@ Home stretch - we can do this. To summarize:
 
 1. The speed at which we produce the commit graph is no longer a problem, and
 1. The resources we require to produce the commit graph is no longer a problem, but
-1. The amount of data we're writing into Postgres _is_ a problem.
+1. The amount of data we're writing into PostgreSQL _is_ a problem.
 
 Our [final and successful effort](https://github.com/sourcegraph/sourcegraph/pull/16636) to fix these time and space issues attacked the problem in two parts.
 
