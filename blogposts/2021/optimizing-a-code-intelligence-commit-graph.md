@@ -29,7 +29,7 @@ The [first step](https://github.com/sourcegraph/sourcegraph/pull/5691) in this p
 
 Our initial stab at this problem was to introduce 2 new tables to Postgres: `commits` and `lsif_data_markers`.
 
-The `commits` table stores data similar to a flattened version of the output from `git log --all --pretty='%H %P'` (a commit followed by a list of its parents), for each repository. Example values for this table are shown below to aid our running example. This table would generally store the full 40-character revhash - we are abbreviating them for brevity here.
+The `commits` table stores data similar to a flattened version of the output from `git log --all --pretty='%H %P'` (a commit followed by a list of its parents), for each repository. Example values for this table are shown below to aid our running example. This table would generally store the full 40-character commit ID—we are abbreviating them for brevity here.
 
 | id  | repository                    | commit              | parent_commit       |
 | --- | ----------------------------- | ------------------- | ------------------- |
