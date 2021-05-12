@@ -180,7 +180,7 @@ What we _wanted_ to happen was for the "duplicate rows" not to be inserted into 
 
 Our [first attempt to optimize this query](https://github.com/sourcegraph/sourcegraph/pull/5980) directly tackled the problem of duplicate rows in the worktable, as shown in the above example. This change simply removes the direction column from the lineage table expression. The "duplicates" that we now throw out are records for commits that have already been seen via a shorter path. This required that we take the limiting condition out of the table expression and into the select, which changes the behavior very slightly (it now limits by working set size, not by distance, which was an acceptable trade-off for the performance increase).
 
-Additional [efforts](https://github.com/sourcegraph/sourcegraph/pull/5984) to optimize this query were highly successful. The following chart compares the query latency of the original query (_quadratic_, blue) and the optimized query (_fast linear_, green), and we've *very clearly* removed the term that was creating the quadratic behavior.
+[Additional efforts to optimize this query](https://github.com/sourcegraph/sourcegraph/pull/5984) were highly successful. The following chart compares the query latency of the original query (_quadratic_, blue) and the optimized query (_fast linear_, green), and we've *very clearly* removed the term that was creating the quadratic behavior.
 
 <div class="no-shadow">
   <img src="https://user-images.githubusercontent.com/1387653/66709486-a9813900-ed22-11e9-9519-d9a9c098b37d.png" alt="query latency comparison">
