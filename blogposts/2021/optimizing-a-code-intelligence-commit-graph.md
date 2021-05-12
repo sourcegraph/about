@@ -285,7 +285,7 @@ The topological ordering of the commit graph and each traversal takes time linea
 
 Well, it's not _quite_ linear time if you take into account some of the stuff we claimed we could hand-wave away earlier: index files for different root directories.
 
-Many large repositories are built up of smaller, self-contained projects. Or, at least independently analyzable units of code. This enables a fairly coarse caching scheme: each time the repository is indexed on git push or periodically, only the units fo code that have had explicitly changed since the last indexed commit needs to be re-indexed.
+Many large repositories are built up of smaller, self-contained projects. Or, at least independently analyzable units of code. This enables a fairly coarse caching scheme: each time the repository is indexed on `git push` or periodically, only the units of code that have had explicitly changed since the last indexed commit needs to be re-indexed.
 
 This means that there is no single nearest upload per commit: there is a nearest upload _per distinct indexing root directory_. To show the difference in output, we'll use the following commit graph, where:
 
