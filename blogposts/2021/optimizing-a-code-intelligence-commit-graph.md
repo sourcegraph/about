@@ -21,7 +21,7 @@ Regardless of the indexing method, it is always possible for a user to find them
 
 This is a glaring hole in the feature. The majority of users are exploring code on the tip of a branch, which is the _least_ likely commit to have an index immediately after it's been pushed to the code host.
 
-In order to plug this hole, we determine the set of nearby commits for which Sourcegraph has received an index, query these indexes on behalf of the requested commit, then adjust the resulting locations (file paths and ranges within a document) using the git diff between the commits as a guide. This enables Sourcegraph to respond with precise results to requests on commits missing an index.
+In order to plug this hole, we determine the set of nearby commits for which Sourcegraph has received an index, query these indexes on behalf of the requested commit, then adjust the resulting locations (file paths and ranges within a document) using the Git diff between the commits as a guide. This enables Sourcegraph to respond with precise results to requests on commits missing an index.
 
 ## Tracking cross-commit index visibility
 
