@@ -100,7 +100,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 </li>
                                 <li className="nav-item">
                                     <a
-                                        href="https://twitter.com/srcgraph"
+                                        href="https://twitter.com/sourcegraph"
                                         target="_blank"
                                         rel="nofollow noopener"
                                         aria-label="Twitter"
