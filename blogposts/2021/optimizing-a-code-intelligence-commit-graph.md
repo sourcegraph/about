@@ -541,7 +541,7 @@ First, we've changed the commit graph traversal behavior to look only at ancesto
 
 Second, we re-applied our tricks described in the previous section. We had good luck with throwing out huge amounts of data which we could efficiently recalculate when necessary, and save the resources that would otherwise be required to store them. This concept is known as [rematerialization](https://en.wikipedia.org/wiki/Rematerialization) in the compiler ecosystem, where values may be computed multiple times instead of storing and loading the already-computed value from memory in the case where a load/store pair is more expensive than the computation itself, or if it would otherwise increase register pressure.
 
-Instead of writing the set of visible uploads per commit, what if we only store the visible uploads for commits that can't trivially recomputed? We've already determined the set of commits that can be easily rematerialized - we can just move the rematerialization from database insertion time to query time.
+Instead of writing the set of visible uploads per commit, what if we only store the visible uploads for commits that can't trivially recomputed? We've already determined the set of commits that can be easily rematerialized—we can just move the rematerialization from database insertion time to query time.
 
 However, it's not as easy as just throwing out the data we don't need—we still need to encode some additional bookkeeping metadata to enable us to recalculate these values cheaply (without pulling back and traversing the entire commit graph on each query).
 
