@@ -124,7 +124,7 @@ Of particular note is that we don't visit _sibling_ commits: once we reach a com
 
 ## Performance improvements
 
-Unfortunately, our first stab at an implementation had a number of rather disappointing performance characteristics, as first stabs typically do. The query above is basically a SQL translation of an imperative graph-walking algorithm. Thinking of the query in these terms makes it easier to see that the runtime cost of the query will increase proportional to the distance travelled through the graph.
+Unfortunately, our first stab at an implementation had a number of rather disappointing performance characteristics, as first stabs typically do. The query above is basically a SQL translation of an imperative graph-walking algorithm. Thinking of the query in these terms makes it easier to see that the runtime cost of the query will increase proportionally to the distance travelled through the graph.
 
 The following query plan shows an execution trace that visited around 10 commits (the resulting commit was 5 commits away, and we search in both directions). This query takes about 40ms, which is already a high cost for a query that runs every time a user hovers over an identifier.
 
