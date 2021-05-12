@@ -478,7 +478,7 @@ type CommitGraphView struct {
 }
 ```
 
-The first change is the introduction of the `Flags` field, which encodes the data previous stored in the `Distance`, `AncestorVisible`, and `Overwritten` fields. We encode the value of the booleans by setting the highest two bits on the 32-bit integer, and keep the remaining 30 lower bits to encode the distance. This still gives us enough room to encode a commit distance of over one billion, which ... if you're looking that far back in your git history I guarantee you're going to get garbage out-of-date results. Now, the `UploadMeta` struct occupies only 16 bytes.
+The first change is the introduction of the `Flags` field, which encodes the data previous stored in the `Distance`, `AncestorVisible`, and `Overwritten` fields. We encode the value of the booleans by setting the highest two bits on the 32-bit integer, and keep the remaining 30 lower bits to encode the distance. This still gives us enough room to encode a commit distance of over one billion, which ... if you're looking that far back in your Git history I guarantee you're going to get garbage out-of-date results. Now, the `UploadMeta` struct occupies only 16 bytes.
 
 The second change is the replacement of the root and indexer fields by a map from upload identifiers to a _hash_ of the indexer and root fields. Remember that we use these values only to determine which uploads shadow other uploads. We don't care about the actual values - we only care if they're equivalent or not. Our chosen hash always occupies 128 bits, which is a fraction of the size required by storing the full path string (75 characters take 600 bits to encode).
 
