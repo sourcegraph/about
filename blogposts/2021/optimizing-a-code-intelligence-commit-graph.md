@@ -134,7 +134,7 @@ The following query plan shows an execution trace that visited around 100 commit
 
 ![slow query plan](https://sourcegraphstatic.com/blog/commit-graph-optimizations/slow.png)
 
-[Adding additional indexes](https://github.com/sourcegraph/sourcegraph/pull/5946) to the `commits` table helped a bit, but did not fundamentally change the performance characteristics of the query. An even larger pathology was discovered in repositories with a large number of merge commits. In order to understand the performance issue, it's important to understand how the recursive query evaluation works in the case of duplicates, which was initially un-intuitive to us. Paraphrasing the [Postgres documentation](https://www.postgresql.org/docs/13/queries-with.html), recursive queries are evaluated with the following steps (emphasis ours):
+[Adding additional indexes](https://github.com/sourcegraph/sourcegraph/pull/5946) to the `commits` table helped a bit, but did not fundamentally change the performance characteristics of the query. An even larger pathology was discovered in repositories with a large number of merge commits. In order to understand the performance issue, it's important first to understand how the recursive query evaluation works in the case of duplicates, which was initially unintuitive to us. Paraphrasing the [PostgreSQL documentation](https://www.postgresql.org/docs/13/queries-with.html), recursive queries are evaluated with the following steps (emphasis ours):
 
 1. Evaluate the non-recursive term and **discard duplicate rows**
 1. Insert rows into result set as well as a temporary working table
