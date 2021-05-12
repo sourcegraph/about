@@ -543,7 +543,7 @@ Second, we re-applied our tricks described in the previous section. We had good 
 
 Instead of writing the set of visible uploads per commit, what if we only store the visible uploads for commits that can't trivially recomputed? We've already determined the set of commits that can be easily rematerialized - we can just move the rematerialization from database insertion time to query time.
 
-However, it's not as easy as just throwing out the data we don't need - we still need to encode some additional bookkeeping metadata to enable us to recalculate these values cheaply (without pulling back and traversing the entire commit graph on each query).
+However, it's not as easy as just throwing out the data we don't need—we still need to encode some additional bookkeeping metadata to enable us to recalculate these values cheaply (without pulling back and traversing the entire commit graph on each query).
 
 We introduced a new table, `lsif_nearest_uploads_links`, which stores a link from each commit that can be trivially recomputed to its nearest ancestor with LSIF data. Queries are still now a simply constant-time lookup:
 
