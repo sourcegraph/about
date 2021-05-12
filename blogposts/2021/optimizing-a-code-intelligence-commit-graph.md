@@ -224,9 +224,9 @@ Well, it solves the problem once and for all _at a particular scale_. There is a
 
 In order to prevent queries which must travel a large distance over the commit graph before finding a visible upload from timing out or affecting the stability of the database, we still keep a hard limit on the number of commits we will visit during the graph traversal. The benefit of this limit is stability to the Sourcegraph instance by limiting the maximum load a single query can put on the database. The downside is that there are many shapes of commit graphs and data markers that will fail to find a visible upload, even if the distance is not too large.
 
-Since we stopped tracking distance to increase the number of duplicate rows, we no longer have a limit on _distance_, but on the number of total commits. This means that one query will travel a smaller distance on a commit graph with a large number of merge commits and a larger distance on a commit graph that is mostly linear.
+Since we stopped tracking distance to increase the number of duplicate rows, we no longer have a limit on _distance_, but on the number of total commits. This means that one query will travel a smaller distance on a commit graph with a large number of merge commits, and a larger distance on a commit graph that is mostly linear.
 
-Another issue is high commit velocity. Suppose that we have a hard limit of viewing 50 commits. We will then be able to look (approximately) 25 commits in a single direction. If the process for uploading LSIF data only happens every 50 commits, on average, then there will be pockets of commits that cannot see far enough to spot a relative commit with an upload. This turns out to be common in the case of large development teams working on single repository.
+Another issue is high commit velocity. Suppose that we have a hard limit of viewing 50 commits. We will then be able to look (approximately) 25 commits in a single direction. If the process for uploading LSIF data only happens every 50 commits, on average, then there will be pockets of commits that cannot see far enough to spot a relative commit with an upload. This turns out to be common in the case of large development teams working on a single repository.
 
 In this circumstance, bounded traversals are a fundamental design flaw. In order to get rid of this constraint, we turn to a technique that was very successful in the past: index the result of the queries out of band. This technique forms the basis of our search: we create a series of n-gram indexes over source text so we can quickly look inside text documents. This technique also forms the basis of our code intelligence: we create [indexes](https://microsoft.github.io/language-server-protocol/specifications/lsif/0.5.0/specification) that contain the answers to all the relevant language server queries that could be made about code at a particular revision.
 
@@ -431,7 +431,7 @@ One of our large enterprise customers, who is also one of our earliest adopters 
 
 ![worker OOM](https://sourcegraphstatic.com/blog/commit-graph-optimizations/oom.png)
 
-The precise code intelligence worker process, which converts LSIF data uploaded by the user into our internal representation and writes it to our code intelligence data store, was ballooning in memory as jobs were processed. The extra memory hunger was extreme enough that the workers were consistently crashing with an out of memory exception towards the end of each job. No job was completing successfully.
+The precise code intelligence worker process, which converts LSIF data uploaded by the user into our internal representation and writes it to our code intelligence data store, was ballooning in memory as jobs were processed. The extra memory hunger was extreme enough that the workers were consistently crashing with an "out of memory" exception towards the end of each job. No job was completing successfully.
 
 After grabbing additional screenshots of our monitoring system, output to a few SQL queries, and a few pprof traces from the offending Go process, we proved that the culprit was [this function](https://stackoverflow.com/questions/12699781/how-can-i-pass-multiple-source-files-to-the-typescript-compiler) and knew we needed to find a way to reduce the resident memory required to calculate the full table of visible uploads for each commit.
 
@@ -443,7 +443,7 @@ To give a sense of this user's scale:
 
 While the commit graph itself was relatively small (the [k8s/k8s](https://github.com/kubernetes/kubernetes) commit graph is twice that size and could be processed without issue), the number of distinct roots was very large.
 
-As a emergency [first attempt](https://github.com/sourcegraph/sourcegraph/pull/16086) to reduce memory usage, we were able to cut the amount of memory required to calculate visible uploads down by a factor of four (with the side effect of doubling the time it took to compute the commit graph). This was an acceptable trade-off, especially for a background process, and especially in a patch release meant to restore code intelligence to a private instance.
+As an emergency [first attempt to reduce memory usage](https://github.com/sourcegraph/sourcegraph/pull/16086), we were able to cut the amount of memory required to calculate visible uploads down by a factor of 4 (with the side effect of doubling the time it took to compute the commit graph). This was an acceptable trade-off, especially for a background process, and especially in a patch release meant to restore code intelligence to a private instance.
 
 The majority of the memory was being taken up by the following `UploadMeta` structure, which was the bookkeeping metadata we tracked for each visible commit at each upload. The root and indexer fields denote the directory where the indexer was run and the name of the indexing tool, respectively. An index with a smaller commit distance can _shadow_ another only if these values are equivalent.
 
@@ -494,7 +494,7 @@ This made their entire instance unstable, and this series of events escalated us
 
 We attacked the problem again, starting out again by tackling some low-hanging fruit by ignoring large amounts of unneeded data. When we pull back the commit graph for a repository, it's unlikely that we need the _entire_ commit graph. There's little sense in filling out the visibility of the long tale of historic commits, especially as its distance to the oldest LSIF upload grows over time. Now, we [entirely ignore](https://github.com/sourcegraph/sourcegraph/pull/16140) the portion of the commit graph that existed _before_ the oldest known LSIF upload fro that repository.
 
-In the same spirit, we can remove the explicit step of topologically sorting the commit graph in the application by instead [sorting it via the git command](https://github.com/sourcegraph/sourcegraph/pull/16270). This is basically the same win as replacing a `sort` call in your webapp with an `ORDER BY` clause in your SQL query. This further reduces the required memory as we're no longer taking large amounts of stack space to traverse long chains of commits in the graph.
+In the same spirit, we can remove the explicit step of topologically sorting the commit graph in the application by instead [sorting it via the Git command](https://github.com/sourcegraph/sourcegraph/pull/16270). This is basically the same win as replacing a `sort` call in your webapp with an `ORDER BY` clause in your SQL query. This further reduces the required memory as we're no longer taking large amounts of stack space to traverse long chains of commits in the graph.
 
 Our [last change](https://github.com/sourcegraph/sourcegraph/pull/16368), however, was the real heavy hitter. So far, we've been storing our commit graph in a map from commits to the set of uploads visible from that commit. When the number of distinct roots is large, these lists are also quite large. Most notably, this makes the merge operation between two lists quite expensive in terms of both CPU (the original merge procedure compares each pair of elements from the list in a trivial but quadratic nested loop) and memory (merging two lists creates a third, all of which are live at the same time).
 
@@ -521,15 +521,15 @@ This last change turned out to be a **huge** win. When we started, the commit gr
 
 ![cpu and memory reduction](https://sourcegraphstatic.com/blog/commit-graph-optimizations/cpu-mem-fix.png)
 
-But of course the story isn't over. We're battling with the [triple constraint](https://en.wikipedia.org/wiki/Project_management_triangle) of latency, memory, and disk usage here. And since we've optimized two of these properties, the third must necessarily suffer. Improvements in software often deal with similar time/space trade-offs. Removing a bad performance property of a system often doesn't _remove_ the bad property completely - it just pushes it into a corner that is less noticeable.
+But of course the story isn't over. We're battling with the [triple constraint](https://en.wikipedia.org/wiki/Project_management_triangle) of latency, memory, and disk usage here. And since we've optimized two of these properties, the third must necessarily suffer. Improvements in software often deal with similar time/space trade-offs. Removing a bad performance property of a system often doesn't _remove_ the bad property completely—it just pushes it into a corner that is less noticeable.
 
 In this case, it was **very** noticeable.
 
 ![critical db size](https://sourcegraphstatic.com/blog/commit-graph-optimizations/full-disk.png)
 
-## Pick 3: low latency, low memory usage, low disk usage, and developer sanity
+## Pick 3: low latency, low memory usage, low disk usage, or developer sanity
 
-Home stretch - we can do this. To summarize:
+Home stretch—we can do this. To summarize:
 
 1. The speed at which we produce the commit graph is no longer a problem, and
 1. The resources we require to produce the commit graph is no longer a problem, but
