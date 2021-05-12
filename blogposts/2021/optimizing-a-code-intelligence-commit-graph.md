@@ -49,7 +49,7 @@ This table is synchronized with the source of truth in gitserver whenever we rec
 | github.com/sourcegraph/sample | <code>d67b8d</code> |
 | github.com/sourcegraph/sample | <code>0eed16</code> |
 
-Together, these two tables enable us to recursively search up and down the commit graph starting at a particular requested commit, and stop the search once we reach a commit that has index data. The following [recursive common table expression](https://www.postgresql.org/docs/13/queries-with.html) does just that.
+Together, these 2 tables enable us to recursively search up and down the commit graph starting at a particular requested commit, and stop the search once we reach a commit that has index data. The following [recursive common table expression](https://www.postgresql.org/docs/13/queries-with.html) does just that.
 
 ```sql
 -- lineage is a table expression that traverses the commit graph for the given
