@@ -120,24 +120,26 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
         <ContentSection className="py-4 pt-md-8 pb-md-5">
             <div className="row justify-content-center">
                 <div className="col-lg-10 text-center">
-                    <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
-                        <p>
-                            The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
-                            capability for reducing the hidden burden of updates pushed across teams and enabling us to
-                            increase our engineering velocity.
-                        </p>
-                        <footer className="blockquote-footer">
-                            Jared Hodge, Sr. Manager Developer Experience
-                            <div className="my-4">
-                                <img
-                                    src="/external-logos/indeed-logo.svg"
-                                    width="110px"
-                                    height="30.250px"
-                                    alt="Indeed"
-                                />
-                            </div>
-                        </footer>
-                    </blockquote>
+                    <a href="../case-studies/indeed-accelerates-development-velocity" className="card-link">
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key
+                                capability for reducing the hidden burden of updates pushed across teams and enabling us to
+                                increase our engineering velocity.
+                            </p>
+                            <footer className="blockquote-footer">
+                                Jared Hodge, Sr. Manager Developer Experience
+                                <div className="my-4">
+                                    <img
+                                        src="/external-logos/indeed-logo.svg"
+                                        width="110px"
+                                        height="30.250px"
+                                        alt="Indeed"
+                                    />
+                                </div>
+                            </footer>
+                        </blockquote>
+                    </a>
                 </div>
             </div>
         </ContentSection>
@@ -221,19 +223,21 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
         <ContentSection className="py-4">
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-10 text-center">
-                    <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
-                        <p>
-                            Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
-                            large-scale code changes before we make them. This enables the entire team to make more
-                            impactful decisions more often.
-                        </p>
-                        <footer className="blockquote-footer">
-                            Trent Grover, Director of Architecture - Client Technologies, Workiva
-                        </footer>
-                        <div className="d-flex justify-content-center my-4">
-                            <img src="/external-logos/workiva-vector-logo.svg" width="110px" alt="Workiva" />
-                        </div>
-                    </blockquote>
+                    <a href="../case-studies/workiva-automates-large-scale-code-changes" className="card-link">
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
+                            <p>
+                                Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of
+                                large-scale code changes before we make them. This enables the entire team to make more
+                                impactful decisions more often.
+                            </p>
+                            <footer className="blockquote-footer">
+                                Trent Grover, Director of Architecture - Client Technologies, Workiva
+                            </footer>
+                            <div className="d-flex justify-content-center my-4">
+                                <img src="/external-logos/workiva-vector-logo.svg" width="110px" alt="Workiva" />
+                            </div>
+                        </blockquote>
+                    </a>
                 </div>
             </div>
         </ContentSection>
