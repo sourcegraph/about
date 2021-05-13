@@ -17,7 +17,7 @@ I appreciate honesty presented in a nice way, and I'll try to do the same.
 
 #### Preferred way to collaborate
 
-Live collaboration time in a pyschologically safe space where folks are free to share ideas.
+Live collaboration time in a psychologically safe space where folks are free to share ideas.
 
 #### How you approach problems
 
