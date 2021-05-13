@@ -1,6 +1,7 @@
 import cookies from 'js-cookie'
 
 export const SOURCEGRAPH_ANONYMOUS_ID_KEY = 'sourcegraphAnonymousUid'
+export const SOURCEGRAPH_SOURCE_URL_KEY = 'sourcegraphSourceUrl'
 export interface HubSpotForm {
     portalId: string
     formId: string
@@ -15,6 +16,7 @@ export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, on
     const hubspot = document.getElementById(targetId)
     hubspot!.appendChild(script)
     const anonymousId = cookies.get(SOURCEGRAPH_ANONYMOUS_ID_KEY)
+    const firstSourceURL = cookies.get(SOURCEGRAPH_SOURCE_URL_KEY)
     script.addEventListener('load', () => {
         ;(window as any).hbspt.forms.create({
             portalId,
@@ -30,6 +32,18 @@ export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, on
                     if (anonymousIdInput && anonymousIdInput.value === '') {
                         // Populate the hidden anonymous_user_id form field with the value from the sourcegraphAnonymousUid cookie.
                         anonymousIdInput.value = anonymousId || ''
+                    }
+
+                    const firstSourceURLInput = form.querySelector<HTMLInputElement>('input[name="first_source_url"]')
+                    const emailInput = form.querySelector<HTMLInputElement>('input[name="email"]')
+                    if (
+                        firstSourceURLInput &&
+                        firstSourceURLInput.value === '' &&
+                        emailInput &&
+                        emailInput.value === ''
+                    ) {
+                        // Populate the hidden first_source_url form field with the value from the sourcegraphSourceUrl cookie.
+                        firstSourceURLInput.value = firstSourceURL || ''
                     }
                 }
                 if (onFormReady) {

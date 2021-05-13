@@ -80,6 +80,21 @@ Structured meetings are great, but it's important to have casual, unscheduled, f
 
 See "[1-1 meetings](../leadership/1-1.md)".
 
+## [Announcements](announcements.md)
+
+See "[Announcements](announcements.md)".
+
+## Shortening URLs
+
+Using shorter URLs is much easier to fit into small spaces or images than the full link to our page or handbook. 
+This will redirect to our home page:
+
+- [srcgr.ph](http://srcgr.ph/)
+
+We also use (srcgr.ph)[srcgr.ph] as our Bitly custom URL.
+It is also possible to customise specific sub-paths via Bitly. To do so we use our Bitly account, which is linked to our Twitter account. 
+
+
 ## Google Docs
 
 1. We use Google Docs for:
@@ -125,10 +140,11 @@ Most meetings at Sourcegraph are video calls. We prefer [Zoom](https://zoom.us) 
 
 - [Seeking and giving feedback](./seeking-and-giving-feedback.md)
 
-## Handling conflict
+## Handling conflicts
 
-- [Conflict resolution](./code_of_conduct.md#conflict-resolution)
-- [Clean escalation](./code_of_conduct.md#clean-escalation)
+- [Conflict resolution](./conflicts.md)
+- [Clean escalation](./conflicts.md#clean-resolution)
+- [Customer ethics policy](customer_ethics.md)
 
 ## Brain Food
 
@@ -141,16 +157,19 @@ Brain Food meetings are our internal knowledge sharing sessions. These meetings 
 - Brainstorming session about an experimental subject
 - Preparing an external talk
 
-Brain Food sessions take place every other friday and, to accomodate timezone differences, are split in two separate sessions:
+If you have an idea for a session, add an event to the calendar and invite the engineering-team@sourcegraph.com
 
-- EMEA friendly session time: 16:00 CET
-- NA friendly session time: 2:00PM PST
+## Getting nice email signatures
 
-Each session is 1-hour long, however the session is only as long as the group needs to present and wants to keep the discussion going. They will both be recorded and published on Slack. Speakers can sign-up for either one of them depending on their own timezone.
+1. In Gmail **Settings** > **General** scroll down to signature:
 
-Presentations can use one of two formats:
+![image](https://user-images.githubusercontent.com/3173176/79911585-73112e80-83d5-11ea-85b3-929c20de72d6.png)
 
-- Lightning Talks: Maximum 7 minutes long
-- Presentation: Maximum 15 minutes long
+2. Make the first line e.g. **Tommy Pesavento** (he/him)
+3. Make the second line your role, include any additional information you like on subsequent lines (socials, etc.)
+4. Choose **Insert image** and then **Web Address (URL)** and enter https://user-images.githubusercontent.com/3173176/115082082-2d892380-9eba-11eb-9606-6c4b9c4eb465.png then choose **Small** size after it has been entered.
+5. Click the image, then click **Link** and paste https://sourcegraph.com into the **Web Address** field. Now your image links to the website!
+6. Your signature should now look something like this, and clicking the Sourcegraph logo should bring you to sourcegraph.com:
+7. You may wish to add another line like `What is Universal Code Search? | We're hiring!` with links to https://about.sourcegraph.com/ and https://about.sourcegraph.com/company/careers
 
-To sign-up, use this [Google Sheet](https://docs.google.com/spreadsheets/d/1HLVFH9JUxchPNH4FoIQAThorbpdvmTl0ndmZzmpjsuU/edit?usp=sharing). The talk will be added to the Google Calendar invitation which will be sent to everyone.
+<img width="464" alt="image" src="https://user-images.githubusercontent.com/3173176/115082263-7a6cfa00-9eba-11eb-93ba-61b72de8b30b.png">

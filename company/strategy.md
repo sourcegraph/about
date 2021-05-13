@@ -71,7 +71,7 @@ Code search is a powerful tool that becomes indispensable when you work on large
 
 - Fast code search that scales to giant codebases and the universe of open-source code.
 - Precise code navigation that makes walking the reference graph as simple as point-and-click.
-- Make large scale refactorings possible (universal search-and-replace).
+- Make large scale code changes possible (universal search-and-replace).
 - Integrate with code hosts and code review tools to bring these developer superpowers to everywhere SWEs need to understand code.
 - Sourcegraph becomes a natural hub to distribute other dev tools, due to its extensibility and the fact that the average developer using Sourcegraph does so several times per day.
 - Sourcegraph provides analytics about what parts of the code are changing and makes this view accessible to every individual developer.

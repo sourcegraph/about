@@ -1,6 +1,6 @@
 ---
 title: "Better C++ precise code intelligence"
-author: Garo Brik
+author: Roux
 publishDate: 2020-07-20T07:00-07:00
 tags: [blog]
 slug: c-plus-plus-code-intel

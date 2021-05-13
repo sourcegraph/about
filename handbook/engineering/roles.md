@@ -20,18 +20,34 @@ Engineering managers lead, grow, and develop teams of software engineers.
 
 ### Responsibilities
 
-- Facilitate and sustain a healthy, inclusive team culture where everyone is set up to do their best work (examples: [retrospectives](../../retrospectives/index.md), [team events](../people-ops/travel.md#team-events), [compensation](../people-ops/compensation.md)).
+- Facilitate and sustain a healthy, inclusive team culture where everyone is set up to do their best work (examples: [retrospectives](../../retrospectives/index.md), [team events](../people-ops/travel.md#team-events), [compensation](../people-ops/compensation/index.md)).
 - Model, teach, and apply [our values](../../../company/values.md) and [our guiding engineering principles](../index.md#guiding-principles).
 - Ensure the team has clear incremental goals that are documented and are always up-to-date (example: [PM – EM partnership responsibilities](../product/roles/product_manager_engineering_manager_responsibilities.md)).
-- Regularly communicate the team's progress toward their goals as well as changes in team goals to appropriate stakeholders (examples: presenting a slide at [company meeting](../communication/company_meeting.md), [weekly updates](leadership/index.md#weekly-updates))
-- Support and coach teammates to grow in their careers and fulfill their responsibilities (examples: [1-1s](../leadership/1-1.md), [retrospectives](), [review cycles](https://about.sourcegraph.com/handbook/people-ops/review-cycles/index.md), [compensation](../people-ops/compensation.md))
+- Regularly communicate the team's progress toward their goals as well as changes in team goals to appropriate stakeholders (examples: presenting a slide at [company meeting](../communication/company_meeting.md), [weekly updates](engineering-management.md#status-updates))
+- Support and coach teammates to grow in their careers and fulfill their responsibilities (examples: [1-1s](../leadership/1-1.md), [retrospectives](), [review cycles](https://about.sourcegraph.com/handbook/people-ops/review-cycles/index.md), [compensation](../people-ops/compensation/index.md))
 - Grow the team in a sustainable way so that the team can accomplish more over time (examples: define open roles, maintain a hiring plan over time, source candidates with help from our talent org, define efficient and effective interview process, make hiring decisions).
 
-## VP Engineering
+## Director of Engineering
+
+Directors lead, grow, and develop multiple teams in Engineering.
 
 ### Responsibilities
 
-TODO
+- Lead, organize, and support the work of multiple engineering teams to deliver on key initiatives that are critical to the success of Sourcegraph.
+- Recruit, hire, and grow excellent engineers and engineering managers to create a diverse team.
+- Model, teach, and apply [our values](../../../company/values.md) in everyday interactions.
+- Facilitate and sustain a healthy, inclusive team culture where everyone is set up to do their best work.
+
+## VP Engineering
+
+The VP of Engineering ensures that we have an effective engineering organization at Sourcegraph.
+
+### Responsibilities
+
+- Ensure that we have excellent people on our engineering team who are inspired and motivated.
+- Ensure that we have the right plans/priorities, and we are delivering on those plans quickly/reliably.
+- Ensure that we are making the right technical investments for the long term success of our product and team.
+- Ensure that we have excellent culture, organization, and processes.
 
 ## Switching roles
 

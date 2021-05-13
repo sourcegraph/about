@@ -13,6 +13,15 @@ jobs:
         run: |
           go install github.com/sourcegraph/docsite/cmd/docsite
           docsite check
+  geojson:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - name: install geojsonhint
+        run: yarn add @mapbox/geojsonhint@3.0.0
+      - name: geojsonhint
+        run: node_modules/.bin/geojsonhint < ./company/team/locations.geojson
   yarn:
     runs-on: ubuntu-latest
     steps:

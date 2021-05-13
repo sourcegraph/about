@@ -127,3 +127,7 @@ This is because:
 - We haven't built the automated testing and update infrastructure to make continuous customer releases reliable.
 
 In the future, we may introduce continuous releases if these issues become surmountable.
+
+### Weekend releases
+
+If the 20th falls on a non-working day, the release captain will move the release forward to the first working day. The calendar events will reflect this.

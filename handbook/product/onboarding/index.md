@@ -6,18 +6,21 @@ Welcome to Sourcegraph! As a member of the product team, it is your job to be th
 
 ## Manager checklist
 
+- Visit the [Onboarding process for Hiring Managers](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-for-hiring-managers) page to understand the workflow with People Ops.
 - Create onboarding Google doc and copy in this page to customize week 2-4 tasks and have a personal checklist for the new teammate.
 - Update onboarding doc Week 2-4 with initial projects.
-- Grant access to necessary services.
+- Notify People Ops on the tools needed by day one - [Tools for new teammates form](https://docs.google.com/forms/d/e/1FAIpQLSeQjfoLjAZUim7pVYw9joQCssXuVz2t2RlpjLadzmHrj15cwQ/viewform)
    - [Sourcegraph organization on GitHub](https://github.com/orgs/sourcegraph/people)
    - Invite to GitHub teams, including [@sourcegraph/everyone](https://github.com/orgs/sourcegraph/teams/everyone)
    - Figma
    - Productboard
+   - Looker
+- Grant access to necessary services.
    - UserTesting.com
 - Schedule a recurring [1-1](../../leadership/1-1.md).
 - Schedule daily check-ins for the first week at Sourcegraph to keep up with onboarding and to create space for answering any questions that might come up.
 - Create a 1-1 doc and add initial discussion items
-   - Onboarding doc - YAYYYYYYY WELCOME!!!!! 🎉
+   - Onboarding doc - YAYYYYYYYYYY WELCOME!!!!! 🎉
       - Your onboarding doc is to help outline the projects and tasks you have over your first 30 days.
       - This 1:1 doc will be where we take notes on discussions, set goals, and make sure you’re on track.
    - Weekly 1:1 - do you have a preference of time/day of the week?
@@ -38,8 +41,8 @@ Remember:
 
 ### Day 1
 
-- Complete [general onboarding](../../people-ops/onboarding/index.md#general-onboarding-checklist)
-   - Keep the [guiding principles](../../engineering/onboarding.md#guiding-principles) from the general onboarding page in mind - we are here to support you and you should act like an owner!
+- Complete [general onboarding](../../people-ops/onboarding/general_onboarding.md)
+   - Keep the [guiding principles](../../people-ops/onboarding/index.md#guiding-principles) from the general onboarding page in mind - we are here to support you and you should act like an owner!
 - Write your 30-60-90 day objectives in your 1:1 doc with Christina
 
 ### Get to know the team
@@ -52,7 +55,7 @@ Remember:
    - Sourcegraph user docs
    - Team sync docs - review recent meeting notes for context
    - Current [tracking issue(s)](../../engineering/tracking_issues.md)
-   - Join the Engineering Manager weekly updates [Google Group](https://groups.google.com/a/sourcegraph.com/g/engineering-leadership-status) ([handbook description](../../engineering/leadership.md#weekly-updates)).
+   - Join the Engineering Manager weekly updates [Google Group](https://groups.google.com/a/sourcegraph.com/g/engineering-leadership-status) ([handbook description](../../engineering/engineering-management.md#status-updates)).
 
 ### Set up the basics
 
@@ -114,7 +117,7 @@ You'll find we have a strong base to work from, but we are in the early stages o
    - Download [Figma](https://www.figma.com)
    - (Optional) Set nudge to 8px in preferences > nudge amount
    - Install Figma plugins:
-      - [A11y - Color Contrast Checker](https://www.figma.com/community/plugin/733159460536249875/A11y---Color-Contrast-Checker) - handy tool to check if your designs meet accessibility standards
+      - [A11y - Color Contrast Checker](https://www.figma.com/community/plugin/733159460536249875/A11y---Color-Contrast-Checker) - handy tool to check if your designs meet our [accessibility standards](../design/design-and-interaction-guidelines.md#accessibility-standards)
       - [Iconify](https://www.figma.com/community/plugin/735098390272716381/Iconify) - We use the material design icons which can be searched and included with this plugin
       - [Style organizer](https://www.figma.com/community/plugin/816627069580757929/Style-Organizer) - helps us manage color
       - [Data lab](https://www.figma.com/community/plugin/740286071386014712/Data-Lab) - populates layers with data. This helps us provide more accurate designs and avoid tedious text generation

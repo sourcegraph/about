@@ -50,4 +50,4 @@ _\*\*Ask the new parents beforehand if they are ok with fresh flowers, as some p
 
 ---
 
-_PS: We are [hiring](https://about.sourcegraph.com/jobs)!_
+_PS: We are [hiring](https://boards.greenhouse.io/sourcegraph91)!_

@@ -1,7 +1,13 @@
 # Talent
 
-See "[People Ops](../people-ops/index.md)" for more information about our current talent team as we work on hiring a [VP Talent](vp_talent.md).
+- [Hiring](https://about.sourcegraph.com/handbook/talent/hiring)
 
-## Roles
+Coming soon:
 
-- [VP Talent](vp_talent.md)
+Resources for Candidates
+
+Resources for Hiring Managers
+
+Resources for Teammates 
+
+Resources for Recruiters 

@@ -4,36 +4,46 @@ Our company goals are public.
 
 See "[Guidelines for goals](guidelines.md)" for more information about how we choose and use goals at Sourcegraph. Need to [edit the goals on this page](#how-to-edit)?
 
+[**Sourcegraph OKR Tracker**](https://docs.google.com/spreadsheets/d/1pNXVev2JtYC94lB1NIfsc8OqyYnnSFn7p5PYFcniblE/edit#gid=1699297878)
+
+
 <div id="goals-loading">
 	Compiling goals...
 	<br/>
 	<small>If the goals do not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
 </div>
 
-## [Top company goals](../../handbook/ceo/index.md#goals)
-
-## [Sales](../../handbook/sales/index.md#goals)
-
-## [Customer Engineering](../../handbook/ce/index.md#goals)
-
-## [Operations](../../handbook/ops/index.md#goals)
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
+
 ### [People Ops](../../handbook/people-ops/index.md#goals)
+
 ### [Business Operations & Strategy](../../handbook/ops/bizops/index.md#goals)
+
 ### [Finance & Accounting](../../handbook/ops/finance/index.md#goals)
+
 ### [Legal](../../handbook/ops/legal/index.md#goals)
 
 ## Engineering
+
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
-### [Engineering leadership](../../handbook/engineering/leadership/index.md#goals)
-### [Campaigns](../../handbook/engineering/campaigns/goals.md#goals)
-### [Cloud](../../handbook/engineering/cloud/goals.md#goals)
+
+### [Batch Changes](../../handbook/engineering/batch-changes/goals.md#goals)
+
+### [Core application](../../handbook/engineering/core-application/goals.md#goals)
+
 ### [Code intelligence](../../handbook/engineering/code-intelligence/goals.md#goals)
+
 ### [Distribution](../../handbook/engineering/distribution/goals.md#goals)
+
 ### [Search](../../handbook/engineering/search/goals.md#goals)
+
 ### [Security](../../handbook/engineering/security/goals.md#goals)
-### [Web](../../handbook/engineering/web/goals.md#goals)
-### [Code Insights](../../handbook/engineering/code-insights/goals.md#goals)
+
+### [Frontend platform](../../handbook/engineering/developer-insights/frontend-platform/goals.md#goals)
+
+### [Extensibility](../../handbook/engineering/developer-insights/extensibility/goals.md#goals)
+
+#### [Code insights](../../handbook/engineering/developer-insights/code-insights/goals.md#goals)
 
 ## [Product](../../handbook/product/goals.md)
 

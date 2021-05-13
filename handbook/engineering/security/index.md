@@ -71,7 +71,7 @@ The security team helps other teams investigate, orient, review, and sometimes p
 
 **Small changes**
 
-Small changes, defined as less than 1 day of effort are communicated in a GitHub issue, either in the [sourcegraph repository](https://www.github.com/sourcegraph/sourcegraph) or, when sensitive in nature, the [security repository](https://www.github.com/sourcegraph/security-issues). We provide a detailed bug report, including the steps to reproduce, and an example of the desired state. Where possible, we identify and propose a fix, and submit a pull request to the [code owner](../code_reviews.md#who-should-i-get-a-code-review-from).
+Small changes, defined as less than 1 day of effort are communicated in a GitHub issue, either in the [sourcegraph repository](https://www.github.com/sourcegraph/sourcegraph) or, when sensitive in nature, the [security repository](https://www.github.com/sourcegraph/security-issues). We provide a detailed bug report, including the steps to reproduce, and an example of the desired state. Where possible, we identify and propose a fix, and submit a pull request to the [code owner](https://docs.sourcegraph.com/dev/background-information/code_reviews#who-should-i-get-a-code-review-from).
 
 **Medium changes**
 
@@ -91,10 +91,8 @@ Security develops infrastructure in the [Auxilliary project](https://console.clo
 
 ## Members
 
-- [Chayim Kirshen](../../../company/team/index.md#chayim-kirshen-he-him) ([Engineering Manager](../roles.md#engineering-manager)).
-- [Elizabeth Stirling](../../../company/team/index.md#elizabeth-stirling-she-her)
-- [André Eleuterio](../../../company/team/index.md#andré-eleuterio-hehim)
-
-## Open Positions
-
-[Software Engineer - Security](https://jobs.lever.co/sourcegraph/c36db3e1-0ece-465d-ad7c-1eb6de9a4b22)
+- [Dan Mckean](../../../company/team/index.md#dan-mckean-he-him) (Product Manager)
+- FQ2 engineering manager hire, [Bill Creager](../../../company/team/index.md#bill-creager) acting manager until then {#security-eng}
+  - [Elizabeth Stirling](../../../company/team/index.md#elizabeth-stirling-she-her)
+  - [André Eleuterio](../../../company/team/index.md#andré-eleuterio-hehim)
+  - FQ4 security engineer

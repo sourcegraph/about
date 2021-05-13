@@ -7,7 +7,7 @@ Sourcegraph uses the following styles on <a href="https://about.sourcegraph.com"
 
 ## Logos and icons
 
-- [All logo formats](https://drive.google.com/drive/folders/1lvSh9Q1aFsewAZ-_0tYIIH_nsKPPY0SR)
+- [Download all logo formats](https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/Sourcegraph%20Logos_official.zip)
 - [Material design icons](https://materialdesignicons.com/)
 
 <img class="mark" src="https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/sourcegraph-logo.svg" alt="Sourgraph logo">
@@ -18,7 +18,7 @@ Sourcegraph logo
 <img class="mark-rev" src="https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reverse.svg" alt="Sourcegraph wordmark reverse logo">
 
 Sourcegraph wordmark reverse logo
-<a href="https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reverse.svg">SVG</a> | <a href="https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reverse.png">PNG</a> | <a href="https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reverse.eps">EPS</a>
+<a href="https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reverse.svg">SVG</a> | <a href="https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reverse.png">PNG</a> | <a href="https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/sourcegraph-wordmark-reversed.eps">EPS</a>
 
 <img class="logomark" src="https://cdn2.hubspot.net/hubfs/2762526/Brand%20assets/sourcegraph-logomark.svg" alt="Sourcegraph logomark">
 
@@ -45,17 +45,20 @@ Sourcegraph logomark
 <div class="square blue">
 </div>
 #0fb6f2<br />
-R15 G182 B242
+R15 G182 B242<br />
+PMS 801c
 
 <div class="square purple">
 </div>
 #b114f7<br />
-R177 G20 B247
+R177 G20 B247<br />
+PMS 2592c
 
 <div class="square orange">
 </div>
 #f86012<br />
-R248 G96 B18
+R248 G96 B18<br />
+PMS 1655c
 
 ## Buttons
 

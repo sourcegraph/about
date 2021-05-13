@@ -32,4 +32,4 @@ Security should never be focused solely on responsible disclosure and responding
 
 ## So how can you help?
 
-There are plenty of great ways to help us make a better, more secure product.  You can [report a vulnerability](https://about.sourcegraph.com/handbook/engineering/security#reporting-a-vulnerability), or review the code, or even [contribute to Sourcegraph](https://www.github.com/sourcegraph/sourcegraph). Maybe you’d like to share your thoughts on security with us by emailing security@sourcegraph.com, or even [join the team](https://about.sourcegraph.com/company/careers#engineering)!
+There are plenty of great ways to help us make a better, more secure product.  You can [report a vulnerability](https://about.sourcegraph.com/handbook/engineering/security#reporting-a-vulnerability), or review the code, or even [contribute to Sourcegraph](https://www.github.com/sourcegraph/sourcegraph). Maybe you’d like to share your thoughts on security with us by emailing security@sourcegraph.com, or even [join the team](https://boards.greenhouse.io/sourcegraph91)!

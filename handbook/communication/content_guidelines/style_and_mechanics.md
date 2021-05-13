@@ -41,7 +41,7 @@ Avoid abbreviations, acronyms, latinisms, and jargon when possible. Use complete
 
 ## Adverbs and adjectives
 
-Try to avoid adjectives and adverbs. Using adjectives and adverbs (for example, it’s “easy” to get started with Sourcegraph) shapes perception and sets expectations, and can inadvertently lead to a negative emotional experience for our users. 
+Try to avoid adjectives and adverbs. Using adjectives and adverbs (for example, it’s “easy” to get started with Sourcegraph) shapes perception and sets expectations, and can inadvertently lead to a negative emotional experience for our users.
 
 Instead, look for opportunities to capture the same meaning through other forms. What makes an “easy” book easy relative to other books? Can that be used as a scale of relative difficulty?
 
@@ -91,13 +91,13 @@ Use present tense to describe the result of actions.
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Campaign created</li>
+<li>Batch change created</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>Campaign has been created</li>
+<li>Batch change has been created</li>
 </ul>
 </div>
 </div>
@@ -122,26 +122,26 @@ Render proper nouns as their creators/trademarks prefer: Docker, Bitbucket, GitL
 
 ## Contractions
 
-Use contractions like “we’ll” or “there’s!” They make our writing more conversational. 
+Use contractions like “we’ll” or “there’s!” They make our writing more conversational.
 
 However, don’t rely on contractions alone for a conversational voice.
 
 ## Conversational writing
 
-Our voice is conversational. When we’re talking, we connect words with articles like “the,” “for,” “these,” and “an.” If we remove these from our writing, it makes our copy feel stiff and complicated. We can be flexible, though. If space is a limitation, the article can be omitted. 
+Our voice is conversational. When we’re talking, we connect words with articles like “the,” “for,” “these,” and “an.” If we remove these from our writing, it makes our copy feel stiff and complicated. We can be flexible, though. If space is a limitation, the article can be omitted.
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Create a new campaign</li>
+<li>Create a new batch change</li>
 <li>Save your changes</li>
 </ul>
 </div>
 <div class="item no">
 <h5>When necessary</h5>
 <ul>
-<li>Create campaign</li>
+<li>Create batch change</li>
 <li>Save changes</li>
 </ul>
 </div>
@@ -428,9 +428,9 @@ Watch out for dumb apostrophes (`'`). These are a relic of typewriters, and can 
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>This campaign’s results are now available</li>
-<li>This campaign is Jen’s favourite</li>
-<li>Chris’s favourite campaign</li>
+<li>This batch change’s results are now available</li>
+<li>This batch change is Jen’s favourite</li>
+<li>Chris’s favourite batch change</li>
 </ul>
 </div>
 </div>
@@ -572,7 +572,7 @@ Watch out for dumb quotation marks (`'` and `"`). These are a relic of typewrite
 
 ### Slashes
 
-Don't use spaces between two terms separated by a slash. 
+Don't use spaces between two terms separated by a slash.
 
 <div class="usage">
 <div class="item yes">
@@ -591,7 +591,7 @@ Don't use spaces between two terms separated by a slash.
 
 ## Places
 
-Spell out all city names. 
+Spell out all city names.
 
 When written in paragraph copy, write out country, state, and province names on the first mention. On subsequent mentions, abbreviating is fine.
 
@@ -718,11 +718,43 @@ Always title case our name. Don’t abbreviate or add a space to our name.
 </div>
 </div>
 
-Only use _we_ and _our_ (as in “our GitHub integration”) in informal documents. In documentation or marketing material, depending on the context, just avoid it, or use “the” or “Sourcegraph”. 
+Only use _we_ and _our_ (as in “our GitHub integration”) in informal documents. In documentation or marketing material, depending on the context, just avoid it, or use “the” or “Sourcegraph”.
+
+### Product names
+
+We capitalize product names. Qualify product names with `Sourcegraph $FEATURE` on first reference. Don't capitalize product names when referencing them generically or in context of taking an action. 
+
+List of product names: 
+
+- Batch Changes
+- Code Insights
+- Code Intelligence
+- Universal Code Search
+
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>With Sourcegraph Universal Code Search you can...</li>
+<li>You can search across all your repositories with Universal Code Search.</li>
+<li>Companies benefit from a universal code search tool because...</li>
+<li>Sourcegraph Batch Changes are... Batch Changes allow you to...</li>
+<li>To create a batch change...</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Use Sourcegraph universal code search to...</li>
+<li>With code insights you can...</li>
+<li>Here’s how to use code intelligence.</li>
+</ul>
+</div>
+</div>
 
 ### Feature names
 
-Don’t capitalize descriptive product or feature names. Features are not proper nouns. Avoid phrasing that can imply official product names.
+We don't capitalize features or integrations. 
 
 <div class="usage">
 <div class="item yes">
@@ -730,54 +762,53 @@ Don’t capitalize descriptive product or feature names. Features are not proper
 <ul>
 <li>Use the Phabricator integration to...</li>
 <li>Want to use this in your code review tool? Use Sourcegraph’s <a href="#_" aria-disabled="true">GitHub integration</a>.</li>
-<li>Here’s how to use campaigns.</li>
+<li>Here’s how to use code search.</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>Use the Phabricator Integration to... <em>(the capital “I” makes it into a proper noun, which implies it’s a separate product from “Sourcegraph Phabricator integration.”)</em></li>
+<li>Use the Phabricator Integration to... <em>(the capital “I” makes it into a proper noun, which implies it’s a product.”)</em></li>
 <li>Want to use this in your code review tool? Use <a href="#_" aria-disabled="true">Sourcegraph for GitHub</a>. <em>(Implies that “Sourcegraph for GitHub” is an official product name.)</em></li>
-<li>Here’s how to use Campaigns.</li>
+<li>Here’s how to use Code Search.</li>
 </ul>
 </div>
 </div>
 
-Use the natural plural/singular form. If a feature name is a plural noun, treat it as a plural noun.
-
-<div class="usage">
-<div class="item yes">
-<h5>Yes</h5>
-<ul>
-<li>Campaigns are available.</li>
-</ul>
-</div>
-<div class="item no">
-<h5>No</h5>
-<ul>
-<li>Campaigns is available.</li>
-</ul>
-</div>
-</div>
-
-Refer to the natural noun of the product feature directly.
+Use the natural plural/singular form. If a product or feature name is a plural noun, treat it as a plural noun.
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>Campaigns are available.</li>
+<li>Batch Changes are available.</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
-<li>The campaigns feature is available.</li>
+<li>Batch Changes is available.</li>
 </ul>
 </div>
 </div>
 
-Qualify feature names with `Sourcegraph $FEATURE` (and capitalize the feature name) only on marketing pages and only when needed (never in product documentation, in-product text).
+Refer to the natural noun of the product or feature directly.
+
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Batch Changes are available.</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>The Batch Changes product is available.</li>
+</ul>
+</div>
+</div>
+
 
 ## Writing about people
 
@@ -813,7 +844,7 @@ Do not use the term “edge cases” to describe users living with disabilities.
 
 ### Gender and sexuality
 
-Don’t call groups of people “guys.” Don’t call women “girls.” 
+Don’t call groups of people “guys.” Don’t call women “girls.”
 
 Avoid gendered terms.
 
@@ -989,10 +1020,10 @@ Don’t use examples to compensate for poor documentation. Avoid “cutesy” ex
 
 For consistency, all examples should use the following names (as appropriate).
 
-- **People:** Alice, Bob, Carol, David, Elizabeth (alphabetical first names)
-- **Usernames:** `alice`, `bob`
+- **People:** Logan, Morgan, Jordan, Riley (gender-neutral first names)
+- **Usernames:** `logan`, `morgan`, `jordan`, `riley`
 - **Hostnames:** example.com and subdomains of example.com (avoid using real names such as `mycompany.com`)
-- **Email addresses:** alice@example.com, bob@example.com
+- **Email addresses:** logan@example.com, morgan@example.com
 - **URLs:** https://sourcegraph.example.com (assume HTTPS)
 - **Organizations:** ABC Organization (`abc-org`)
 

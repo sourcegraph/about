@@ -9,135 +9,143 @@ const ITEMS: {
         rel?: string
     }
 }[] = [
-    {
-        name: 'Cloudflare',
-        url: '/external-logos/cloudflare-color-logo.svg',
-    },
-    {
-        name: 'Nutanix',
-        url: '/external-logos/nutanix-logo.svg',
-    },
-    {
-        name: 'Uber',
-        url: '/external-logos/uber.svg',
-    },
-    {
-        name: 'Lyft',
-        url: '/external-logos/lyft-logo.svg',
-        link: {
-            url: '/case-studies/lyft-monolith-to-microservices',
+        {
+            name: 'Cloudflare',
+            url: '/external-logos/cloudflare-color-logo.svg',
         },
-    },
-    {
-        name: 'Amazon',
-        url: '/external-logos/amazon-logo.svg',
-    },
-    {
-        name: 'Qualtrics',
-        url: '/external-logos/qualtrics-logo.svg',
-    },
-    {
-        name: 'Toast',
-        url: '/external-logos/toast-logo.svg',
-    },
-    {
-        name: 'SoFi',
-        url: '/external-logos/sofi-logo.svg',
-        link: {
-            url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
+        {
+            name: 'Nutanix',
+            url: '/external-logos/nutanix-logo.svg',
         },
-    },
-    {
-        name: 'Yelp',
-        url: '/external-logos/yelp.svg',
-        link: {
-            url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
-            target: '_blank',
-            rel: 'nofollow',
+        {
+            name: 'Uber',
+            url: '/external-logos/uber.svg',
         },
-    },
-    {
-        name: 'Adidas Running',
-        url: '/external-logos/adidas-runtastic-sq-logo.svg',
-    },
-    {
-        name: 'Indeed',
-        url: '/external-logos/indeed-logo.svg',
-    },
-    {
-        name: 'Prezi',
-        url: '/external-logos/prezi-logo.svg',
-    },
-    {
-        name: 'F5',
-        url: '/external-logos/f5-logo.svg',
-    },
-    {
-        name: 'Quantcast',
-        url: '/external-logos/quantcast-logo.svg',
-        link: {
-            url: '/case-studies/quantcast-large-scale-refactoring',
+        {
+            name: 'Lyft',
+            url: '/external-logos/lyft-logo.svg',
+            link: {
+                url: '/case-studies/lyft-monolith-to-microservices',
+            },
         },
-    },
-    {
-        name: 'Criteo',
-        url: '/external-logos/criteo-logo.svg',
-    },
-    {
-        name: 'Paypal',
-        url: '/external-logos/paypal-logo.svg',
-    },
-    {
-        name: 'Convoy',
-        url: '/external-logos/convoy-logo.svg',
-        link: {
-            url: '/case-studies/convoy-improved-on-boarding',
+        {
+            name: 'Amazon',
+            url: '/external-logos/amazon-logo.svg',
         },
-    },
-    {
-        name: 'Outreach',
-        url: '/external-logos/outreach-logo.svg',
-    },
-    {
-        name: 'Plaid',
-        url: '/external-logos/plaid-logo.svg',
-    },
-    {
-        name: 'Expanse',
-        url: '/external-logos/expanse-logo.svg',
-    },
-    {
-        name: 'Collective Health',
-        url: '/external-logos/collective-health-logo.svg',
-    },
-    {
-        name: 'Button',
-        url: '/external-logos/use-button-logo.svg',
-    },
-    {
-        name: 'Apex Clearing',
-        url: '/external-logos/apex-clearing-logo.png',
-    },
-    {
-        name: 'AppLovin',
-        url: '/external-logos/applovin-logo.svg',
-    },
-    {
-        name: 'Thorn',
-        url: '/external-logos/thorn-logo.svg',
-        link: {
-            url: '/case-studies/we-are-thorn',
+        {
+            name: 'Qualtrics',
+            url: '/external-logos/qualtrics-logo.svg',
         },
-    },
-    {
-        name: 'Thought Machine',
-        url: '/external-logos/thought-machine-logo.svg',
-    },
-    {
-        name: 'GetYourGuide',
-        url: '/external-logos/gyg.svg',
-    },
-]
+        {
+            name: 'Toast',
+            url: '/external-logos/toast-logo.svg',
+        },
+        {
+            name: 'GE',
+            url: '/external-logos/general-electric-logo.svg',
+        },
+        {
+            name: 'SoFi',
+            url: '/external-logos/sofi-logo.svg',
+            link: {
+                url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
+            },
+        },
+        {
+            name: 'Yelp',
+            url: '/external-logos/yelp.svg',
+            link: {
+                url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
+                target: '_blank',
+                rel: 'nofollow',
+            },
+        },
+        {
+            name: 'Adidas Running',
+            url: '/external-logos/adidas-runtastic-sq-logo.svg',
+        },
+        {
+            name: 'Indeed',
+            url: '/external-logos/indeed-logo.svg',
+        },
+        {
+            name: 'Prezi',
+            url: '/external-logos/prezi-logo.svg',
+        },
+        {
+            name: 'F5',
+            url: '/external-logos/f5-logo.svg',
+        },
+        {
+            name: 'Quantcast',
+            url: '/external-logos/quantcast-logo.svg',
+            link: {
+                url: '/case-studies/quantcast-large-scale-refactoring',
+            },
+        },
+        {
+            name: 'Criteo',
+            url: '/external-logos/criteo-logo.svg',
+        },
+        {
+            name: 'Paypal',
+            url: '/external-logos/paypal-logo.svg',
+        },
+        {
+            name: 'Convoy',
+            url: '/external-logos/convoy-logo.svg',
+            link: {
+                url: '/case-studies/convoy-improved-on-boarding',
+            },
+        },
+        {
+            name: 'Outreach',
+            url: '/external-logos/outreach-logo.svg',
+        },
+        {
+            name: 'Plaid',
+            url: '/external-logos/plaid-logo.svg',
+        },
+        {
+            name: 'Expanse',
+            url: '/external-logos/expanse-logo.svg',
+        },
+        {
+            name: 'Collective Health',
+            url: '/external-logos/collective-health-logo.svg',
+        },
+        {
+            name: 'Button',
+            url: '/external-logos/use-button-logo.svg',
+        },
+        {
+            name: 'Apex Clearing',
+            url: '/external-logos/apex-clearing-logo.png',
+        },
+        {
+            name: 'AppLovin',
+            url: '/external-logos/applovin-logo.svg',
+        },
+        {
+            name: 'Thorn',
+            url: '/external-logos/thorn-logo.svg',
+            link: {
+                url: '/case-studies/we-are-thorn',
+            },
+        },
+        {
+            name: 'Thought Machine',
+            url: '/external-logos/thought-machine-logo.svg',
+        },
+        {
+            name: 'GetYourGuide',
+            url: '/external-logos/gyg.svg',
+        },
+        {
+            name: 'Twilio',
+            url: '/external-logos/twilio-segment-horizontal-darkacai-logo.svg',
+        },
+    ]
 
 export const CustomerLogosSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="customers" className={`container customer-logos-section ${className}`}>
@@ -159,12 +167,12 @@ export const CustomerLogosSection: React.FunctionComponent<{ className?: string 
                             />
                         </a>
                     ) : (
-                        <img
-                            className="customer-logos-section__item-logo d-block mx-auto"
-                            src={logo.url}
-                            alt={logo.name}
-                        />
-                    )}
+                            <img
+                                className="customer-logos-section__item-logo d-block mx-auto"
+                                src={logo.url}
+                                alt={logo.name}
+                            />
+                        )}
                 </div>
             ))}
         </div>

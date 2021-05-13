@@ -16,6 +16,8 @@ We expect new teammates to spend up to **$1,850** for desk setup, which includes
 
 This is not a hard budget—rather, it is a guide based on what past teammates have spent. As a reminder, you don't need permission for every purchase, and we trust you to make decisions that are in the best interests of Sourcegraph. If you expect to significantly exceed the listed amount on any purchase, however, please notify @sourcegraph/people-ops so we can decide if we need to update this guide.
 
+If you don't spend all of your budget when you first join, it's ok to spend it later providing you remain inside the total budget.
+
 #### Team-specific totals
 
 - We expect new [Design team](../product/design/index.md) members to spend **$2,650** to allow for purchasing higher-resolution monitors or other design equipment.
@@ -42,7 +44,7 @@ The estimated spend for interns is **$925*** and includes only the electronic it
 
 Once your contract is signed, you will need to purchase and expense your Sourcegraph computer. Computers and laptop insurance (this includes Apple Care if you purchase a Mac as your work computer) are fully reimbursable outside of the [desk setup total estimate above](#desk-set-up), however, engineering roles have different hardware requirements from other roles (please see below for necessary specs corresponding to your role). Computers are considered property of the company.
 
-**Laptop (engineering team):**
+**Laptop (engineering team and customer support team):**
 
 - 16" MacBook Pro, 2.4 GHz (5 GHz turbo) 8‑core (upgrade), 64 GB (upgrade), 1 TB SSD
 - Any other laptop that is of equal or lesser value than the pre-approved laptop.

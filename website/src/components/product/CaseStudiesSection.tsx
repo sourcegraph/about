@@ -10,6 +10,18 @@ const CASESTUDIES: {
     external?: boolean
 }[] = [
         {
+            name: 'Indeed',
+            logo: '/external-logos/indeed-logo.svg',
+            title: 'Indeed keeps code up to date and accelerates development velocity',
+            url: '/case-studies/indeed-accelerates-development-velocity',
+        },
+        {
+            name: 'Workiva',
+            logo: '/external-logos/workiva-vector-logo.svg',
+            title: 'Workiva reduces the time it takes to make large-scale code changes by 80%',
+            url: '/case-studies/workiva-automates-large-scale-code-changes',
+        },
+        {
             name: 'CERN',
             logo: '/external-logos/cern-name-logo.svg',
             title: 'Sourcegraph empowers CERN to tackle code reuse and code changes in mission-critical applications',
@@ -81,11 +93,11 @@ export const CaseStudiesSection: React.FunctionComponent<{ className?: string }>
                                     <ExternalLinkIcon className="icon-inline ml-1" />
                                 </a>
                             ) : (
-                                    <a href={study.url} className="card-link">
-                                        <p className="card-text">{study.title}</p>
-                                        <ArrowRightIcon className="icon-inline ml-1" />
-                                    </a>
-                                )}
+                                <a href={study.url} className="card-link">
+                                    <p className="card-text">{study.title}</p>
+                                    <ArrowRightIcon className="icon-inline ml-1" />
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>

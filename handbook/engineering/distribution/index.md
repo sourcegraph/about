@@ -7,7 +7,7 @@ The distribution team is responsible for making Sourcegraph easy to deploy, scal
 ## Contact
 
 - Slack: #distributioneers channel or @distribution
-- [Support rotation](#support-rotation)
+- For support requests, please use our dedicated [support rotation](#support-rotation)
 - File issues: [team/distribution](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/distribution) label
 
 ## Team communication
@@ -47,23 +47,20 @@ See [Goals](goals.md)
 
 ## Members
 
-- We're hiring a [Product Manager](https://jobs.lever.co/sourcegraph/254299f5-f91b-43e2-aa1a-3732963dd296) for this role. The engineering team is owning PM responsibilities in the meantime.
-- [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) ([Engineering Manager](../roles.md#engineering-manager))
+- [Dan Mckean (Product Manager)](../../../company/team/index.md#dan-mckean-he-him)
+- FQ2 [Engineering Manager](../roles.md#engineering-manager) hire, [Bill Creager](../../../company/team/index.md#bill-creager) acting manager until then {#distribution-eng}
   - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
-  - [Uwe Hoffmann](../../../company/team/index.md#uwe-hoffmann)
   - [Dave Try](../../../company/team/index.md#dave-try)
-  - [Robert Lin](../../../company/team/index.md#robert-lin) (2020 intern)
   - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
+  - FQ1 [distribution engineer](https://boards.greenhouse.io/sourcegraph91/jobs/4003908004)
+  - FQ2 [Robert Lin](../../../company/team/index.md#robert-lin) (early July)
+  - FQ3 hire
 
-Other:
+## Incident on-call rotation
 
-- [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst) is in an experimental role acting as [an internal contributor, focused on high-value low-cost wins across the board.](https://docs.google.com/document/d/18c9dVjw5MuvOMHahCFQQPAVsp1vRdFDDI_7hmo5MWyQ/edit) His work is not isolated from the Distribution team, it will tracked on [a project board](https://github.com/orgs/sourcegraph/projects/106), with regular status updates to his manager and any other relevant teams. He will work closely with (and sometimes embedded in) other teams, and get alignment with the product team (and any other team) on his work. This is an experiment between 2020-11-23 and 2021-01-23 and we will evaluate the outcome around that time. [Gonzalo Peci](../../../company/team/index.md#gonzalo-peci-hehim) will continue to be his manager during this experiment.
+Who is on-call? Slack: `/genie whoisoncall Distribution`
 
-## On-call rotation
-
-Who is on call? Slack: `/genie whoisoncall Distribution`
-
-We have an OpsGenie rotation to respond to [incidents](../incidents/index.md) (events that cause service disruption). You can find more information about [being on call in the handbook](../incidents/on_call.md).
+We have a 24x7 OpsGenie rotation to respond to [incidents](../incidents/index.md) (events that cause service disruption). You can find more information about [being on-call in the handbook](../incidents/on_call.md).
 
 **Incidents on-call**
 
@@ -72,12 +69,18 @@ We have an OpsGenie rotation to respond to [incidents](../incidents/index.md) (e
 
 ## Support rotation
 
-Who is on call? Slack: `/genie whoisoncall distribution-support`
+Who is on-call? Slack: `/genie whoisoncall distribution-support`
 
-We maintain a support rotation to deal day-to-day requests (respond to ad-hoc, time-sensitive questions from customers or other teams, RFC review requests, etc). This makes it easier for other teams to reach out an engineer on the team who's priority is answering these questions and helps other engineers on the team remain focused. You can read more about this on the references below.
+_You can directly notify the on-call support engineer by using the handle `@distribution-support`._
+
+We maintain a support rotation to deal day-to-day requests (respond to ad-hoc, time-sensitive questions from customers or other teams, RFC review requests, etc). This makes it easier for other teams to reach out an engineer on the team whose priority is being the point of contact for these questions. You can read more about this on the references below.
 When you are the active support engineer, your focus and priority is responding to requests and questions in #distributioneers, sometimes this might require creating an issue, re-assigning, looping in other engineers, etc.
 
 _If for any reason you are unavailable for a rotation, please coordinate with the team for someone to take over._
+
+**Resonsibilities**:
+
+The on-call support engineer is responsbile for owning the communication and determining the relative priority of the issue. However, the on-call engineer is **not expected** to solve issues entirely on their own (in fact, it's encouraged to pull in the other engineers if necessary - to bounce ideas off of one another, someone else might have more expertise in this particular area, etc.).
 
 **References:**
 
@@ -90,8 +93,8 @@ Here are some guidelines that will help ensure we can reply to your request appr
 
 #### General questions
 
-Send us a message in #distributioneers and notify the active engineer by `@` his user in the message.
-Alternatively `@` the engineer in the thread in which he is required.
+Send us a message in #distributioneers and notify the active engineer by `@distribution-support` in the message.
+Alternatively `@distribution-support` the engineer in the thread in which he is required.
 If this is a **time sensitive request**, please let us know in the message that this is the case
 
 #### Customer incidents
@@ -100,35 +103,3 @@ You can send an urgent notification to the engineer directly from Slack utilizin
 If the engineer is unable, a message will be send to the rest of the team.
 
 Please provide a link to an [issue](https://about.sourcegraph.com/handbook/ce/customer_issues) in the message.
-
-## Growth plan
-
-_Updated 2020-11-18_
-
-We are looking to grow this team to 8 engineers so we can split into two teams.
-
-<!-- TODO(@nick): Does it actually make sense to grow and divide here? -->
-
-### Distribution
-
-This team owns how we develop, build, release, deploy, and upgrade Sourcegraph Cloud and at customers on-premise.
-
-Examples:
-
-- Expand and maintain our customer deployment options (for example: single Docker image, Docker Compose, Kubernetes, AMI)
-- Ensure that we have a fast and automated release/deployment process to Cloud.
-- Maintain Buildkite infrastructure.
-- Provide automated upgrades for on-premise customers.
-- Build general dev tools that aren't specific to frontend or backend (for example: Codenotify, merge/review bots). <!-- TODO(@nick): should this be under the operations team? -->
-
-### Operations platform
-
-This team is directly responsible for Sourcegraph Cloud uptime and reliability, as well as being responsible for operational infrastructure that enables other engineering teams to observe and monitor the parts of the product they own.
-
-Examples:
-
-- Provide logging and metrics infrastructure that enables developers to observe/search current and historical data as well as define alerts.
-- Provision and scale of our Cloud resources (for example: GCP).
-- Measure and sustain 99.99% uptime and reliability of Sourcegraph Cloud.
-- Enforce access controls and network security policies for our Cloud resources.
-- Make it easy for customers to share relevant data when submitting bug reports.

@@ -6,7 +6,7 @@ We maintain multiple flavors of infrastructure with various degrees of managemen
 
 ## GCP infrastructure basics
 
-GCP infrastructure is configured via [terraform](https://www.terraform.io/) in the [infrastructure repository](https://github.com/sourcegraph/infrastructure/). All configuration for security projects should be stored in the [security subdirectory](https://github.com/sourcegraph/infrastructure/tree/main/security). Please adhere to this [terraform style guide](../../languages/terraform.md) when working here.
+GCP infrastructure is configured via [terraform](https://www.terraform.io/) in the [infrastructure repository](https://github.com/sourcegraph/infrastructure/). All configuration for security projects should be stored in the [security subdirectory](https://github.com/sourcegraph/infrastructure/tree/main/security). Please adhere to this [terraform style guide](https://docs.sourcegraph.com/dev/background-information/languages/terraform) when working here.
 
 For instructions on how to deploy this infrastructure, see [GCP Deployment Playbooks](./playbooks.md#gcp-deployment-playbooks).
 
@@ -91,19 +91,6 @@ To implement in [#17281](https://github.com/sourcegraph/sourcegraph/issues/17281
 This is a testbed to allow us to test changes to logs without risking production logs. This pushes logs to the [stage logging environment](#elastic-logging-stage), so that they don't pollute production logs in [elastic](#elastic-cloud).
 
 
-
-### sourcegraph-security-vault
-
-Currently unused. Will eventually contain a [HashiCorp Vault](https://www.vaultproject.io/) instance for secret management. This may change depending on the state of [Managed Vault](https://www.hashicorp.com/cloud-platform). We may transition to using a [managed vault service](#hashicorp-vault).
-
-
-
-### sourcegraph-vault-stage
-
-Unmaintained and [to be deleted](https://github.com/sourcegraph/sourcegraph/issues/17046) - purely used as a testbed for vault. Do not add production secrets to this instance.
-
-
-
 ## Managed services
 
 ### Elastic cloud
@@ -129,7 +116,3 @@ Note that the index refresh interval is 30 seconds.
 To implement in [#17281](https://github.com/sourcegraph/sourcegraph/issues/17281).
 
 
-
-### HashiCorp Vault
-
-This section is a placeholder, since we may or may not use this service.
