@@ -545,7 +545,7 @@ Instead of writing the set of visible uploads per commit, what if we only store 
 
 However, it's not as easy as just throwing out the data we don't need—we still need to encode some additional bookkeeping metadata to enable us to recalculate these values cheaply (without pulling back and traversing the entire commit graph on each query).
 
-We introduced a new table, `lsif_nearest_uploads_links`, which stores a link from each commit that can be trivially recomputed to its nearest ancestor with LSIF data. Queries are still now a simply constant-time lookup:
+We introduced a new table, `lsif_nearest_uploads_links`, which stores a link from each commit that can be trivially recomputed to its nearest ancestor with LSIF data. Queries are now a simple, constant-time lookup:
 
 - If the commit exists in `lsif_nearest_uploads`, we simply use those visible uploads, otherwise
 - If the commit exists in `lsif_nearest_upload_links`, we use the visible uploads attached to the ancestor.
@@ -568,7 +568,7 @@ The `lsif_nearest_uploads` table associates a commit with its visible uploads, j
 | github.com/sourcegraph/sample | <code>67e0bf</code> | <code>[2]</code>    |
 | github.com/sourcegraph/sample | <code>599611</code> | <code>[1, 2]</code> |
 
-Luckily, some benefits compound one another here, and after we started ignoring traversing the graph in both directions, we can simplify these properties to only account for ancestor-direction traversals. Notably, a commit whose parent has multiple children (`7e0471`, for example) were necessary to store for the descendant-direction traversal, but no longer need to be stored. This further increases the number of trivially recomputable commits, saving even more space.
+Luckily, some benefits compound one another here, and after we started ignoring traversing the graph in both directions, we can simplify these properties to only account for ancestor-direction traversals. Notably, commits whose parent has multiple children (`7e0471`, for example) no longer need to be stored because they were useful only in descendant-direction traversals (unless they are non-trivial for another reason). This further increases the number of trivially recomputable commits, saving even more space.
 
 The `lsif_nearest_uploads_links` table stores a _forwarding pointer_ to the ancestor that has the same set of visible uploads.
 
