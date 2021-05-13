@@ -88,6 +88,7 @@ Only use _we_ and _our_ (as in “our GitHub integration”) in informal documen
 |OpenID Connect   |OIDC   |   |
 |organization   |"company" or "team" or "org"   |   |
 |open source   |"open-source", "Open Source"   |[Favoring common usage](https://github.com/sourcegraph/about/issues/508#issuecomment-588600005)   |
+|open source code   |"public code"   |   |
 |**P**   |   |   |
 |parameter|   |Parameter describes a key:value pair to filter behavior or change search behavior.   |
 |PostgreSQL   |Postgres, postgres, PgSQL, Postgresql, PostGres,   |Proper name   |
