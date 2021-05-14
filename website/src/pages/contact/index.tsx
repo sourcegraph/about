@@ -91,10 +91,10 @@ export default ((props: any) => (
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
-                                    href="https://twitter.com/srcgraph"
+                                    href="https://twitter.com/sourcegraph"
                                     target="_blank"
                                 >
-                                    <TwitterIcon /> @srcgraph
+                                    <TwitterIcon /> @sourcegraph
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
