@@ -1,6 +1,6 @@
 # Batch Changes CE onboarding
 
-Welcome to Batch Changes! This page is primarily for new members of the CE team, but it could be helpful to others, too! After going through these steps, you should:
+Welcome to Batch Changes! This page is primarily for new members of the CE team, but it could be helpful to other teams, too! After going through these steps, you should:
 
 - understand what Batch Changes is
 - be able to present it to customers from a value, usage, and functional perspective
@@ -36,17 +36,19 @@ Let's use [comby](https://comby.dev/). Batch Changes can run any code change too
 
 Answer those question:
 - what is comby?
-- does batch change rely on comby?
+- does Batch Changes rely on comby?
 
 
 ### Step 3: The `on` attribute
-Can you scope down your batch change to only a few repos? Look at the [`on`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on) attribute, and scope down your batch-change to <repo1> <repo2> <repo3>
+Can you scope down your batch change to only a few repos? Modify the spec to scope down your batch change to <repo1> <repo2> <repo3>. Tip: you may find [`on`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on) useful.
 
 ### Step 4: Publishing
 Sometimes you want to publish only _some_ but not all changesets to the codehosts and keep the others unpublished, for example to test out if the repository owners will merge the changesets. Find out how to publish only on <repo> using the [`published`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#changesettemplate-published) attribute
 
 ### Step 5: Templating
 Can you use [templating](https://docs.sourcegraph.com/batch_changes/references/batch_spec_templating) to TODO:find an approachable use case compatible with the comby example.
+
+Tip: we maintain a [cheat sheet](https://docs.sourcegraph.com/batch_changes/references/batch_spec_cheat_sheet) with commonly used patterns
 
 ### Step 6: Tracking existing changesets
 Batch Changes can track changesets that have been created manually. Create a new batch change to track the last 10 changesets opened on [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph).
