@@ -34,6 +34,11 @@ Answer those questions:
 ### Step 2: comby
 Let's use [comby](https://comby.dev/). Batch Changes can run any code change tool, but comby is great for structural-type change. See how it works with Batch Changes in this [tutorial](https://docs.sourcegraph.com/batch_changes/tutorials/refactor_go_comby). Don't publish your changesets yet!
 
+Answer those question:
+- what is comby?
+- does batch change rely on comby?
+
+
 ### Step 3: The `on` attribute
 Can you scope down your batch change to only a few repos? Look at the [`on`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on) attribute, and scope down your batch-change to <repo1> <repo2> <repo3>
 
@@ -41,7 +46,7 @@ Can you scope down your batch change to only a few repos? Look at the [`on`](htt
 Sometimes you want to publish only _some_ but not all changesets to the codehosts and keep the others unpublished, for example to test out if the repository owners will merge the changesets. Find out how to publish only on <repo> using the [`published`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#changesettemplate-published) attribute
 
 ### Step 5: Templating
-Can you use [templating](https://docs.sourcegraph.com/batch_changes/references/batch_spec_templating) to TODO:find an approachable use case compatible with the comby example
+Can you use [templating](https://docs.sourcegraph.com/batch_changes/references/batch_spec_templating) to TODO:find an approachable use case compatible with the comby example.
 
 ### Step 6: Tracking existing changesets
 Batch Changes can track changesets that have been created manually. Create a new batch change to track the last 10 changesets opened on [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph).
