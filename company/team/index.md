@@ -295,12 +295,6 @@ To add yourself to this page:
 - [juliana@sourcegraph.com](mailto:juliana@sourcegraph.com), [limitedmage](https://github.com/limitedmage), [LinkedIn](https://www.linkedin.com/in/julianapena/), [Twitter](https://twitter.com/limitedmage), [pronounce my name 🔊](https://www.name-coach.com/julip)
 - Juliana is originally from Cali, Colombia 🇨🇴 and went to college in Mexico City 🇲🇽 before moving to the Seattle area. She loves building powerful and beautiful web applications that improve people's lives. Before Sourcegraph, Juliana worked at Microsoft building successful startup projects, and is now very excited to be working in a real startup company. Outside of work, Juliana loves cyling, collecting Lego, playing video games, and traveling.
 
-## David Li (he/him)
-
-- Technical Recruiter
-- Seattle, WA, USA 🇺🇸
-- [david@sourcegraph.com](mailto:david@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/withdavidli/)
-- David is originally from the Northeast US and has recently moved to Seattle. Prior to Sourcegraph he was at Facebook and Cruise (self-driving cars), where he helped build new teams and scaled recruiting efforts through analytics and operations. He is interested in tennis and has recently started attending music festivals (you'll see him in the front!).
 
 ## Tharuntej Kandala (he/him)
 
@@ -494,13 +488,6 @@ To add yourself to this page:
 - [andre@sourcegraph.com](mailto:andre@sourcegraph.com), [@eleuterio_](https://twitter.com/eleuterio_)
 - André is a Security Engineer from Curitiba, Brazil. Before joining Sourcegraph he was working at npm and GitHub, holding different security responsibilities. André is a devout follower of Athletico Paranaense, a local soccer team, despite its rare joys and successes. Definitely a geek, be careful when bringing up Breath of the Wild or Magic the Gathering around André as that can lead to some very long conversations.
 
-## Hannah Freilich
-
-- Account Executive
-- Quincy, MA
-- GitHub: Hannah-Sourcegraph
-- [hannah@sourcegraph.com](mailto:hannah@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/hannah-freilich-5ba30780/)
-- Hannah was born and raised in CT, but has been living in and around Boston for the past 15 years.  Formerly a public school teacher, Hannah became inspired by entreprenuership and decided to pursue a career in tech sales at a small startup.  In her free time, she enjoys spending time with family and friends, listening to music, cooking, traveling and enjoying the outdoors.
 
 ## Emily Chapman (she/her)
 
@@ -761,13 +748,6 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [indradhanush@sourcegraph.com](mailto:indradhanush@sourcegraph.com), [Twitter](https://twitter.com/indradhanush92), [Pronounce my name 🔊](https://pronouncenames.com/pronounce/indradhanush), [indradhanush.github.io](https://indradhanush.github.io)
 - Indradhanush is a tinkerer and a lazy one at that. If he ever has to do the same thing twice, chances are he will work on automating it away. He likes to go down rabbit holes thinking about human psychology and obsesses about his audio quality on video calls. Away from work, he suffers from having too many hobbies but is most passionate about playing drums. His other hobbies in order of frequency are playing Dungeons & Dragons once a week with friends, playing on his PS4 once every few weeks, reading a book (science, fiction and fantasy) once every few months and painting once every few years.
 
-## Tia Wucher (she/her/hers)
-- Director of Customer Engineering, East
-- Apple Valley, MN, USA
-- GitHub: [tiawucher](https://github.com/tiawucher)
-- [tia@sourcegraph.com](mailto:tia@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tiawucher)
-- Tia is a true Minnesotan who embodies the strange accent and language of the midwest (Ope, Uff da, You Betcha); she even makes hotdish! She enjoys hopping in the camper for a weekend in the outdoors, hiking in Jackson Hole, WY and her precious family - husband Robert, pupson Nelson, pupson Philippe and furcat Sophia. Before joining Sourcegraph, she was the Sr. Director of Technical Success at Optimizely where she supported and lead three teams: Solution Engineers, Technical Support Engineers and Technical Account Managers. Her mission at Sourcegraph is to make our customers and team wildly successful.
-
 ## Sarah Reece (she/her)
 - Director, Demand Generation
 - Winston Salem, NC, USA
@@ -893,3 +873,10 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Seattle, Washington, USA 🇺🇸
 - [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/)
 - Cassie was born and raised in sunny 🍊Orange County, California and moved up to 🌁Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but she decided she wanted gloomier weather, so she recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲Seattle with her husband (Will). Together, they have two mischevious fur babies, Lola and Sterling (professionally known as @sterlingandlola). In her spare time, Cassie enjoys spin classes, traveling to tropical locations, cooking Molly Baz recipes, and watching plant videos on YouTube.
+
+## Rebecca Rissinger (she/her)
+- Manager, Marketing Operations
+- Red Bank, New Jersey, USA
+- GitHub: rebecca-rissinger
+- Rebecca.Rissinger@sourcegraph.com
+- Rebecca lives in Red Bank, NJ with her husband Jon. They have a son named Declan and two dog children- Lucky and Sassy. Rebecca needs coffee to function and misses traveling desperately. She loves soccer, almost any outdoor activity, concerts, and anything sweet.
