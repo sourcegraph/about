@@ -20,13 +20,13 @@ General [CE onboarding](../../ce/onboarding.md)
 
 - If you are blocked at any time during onboarding, ask for help in [#batch-changes](https://sourcegraph.slack.com/archives/CMMTWQQ49).
 - Feel free to document your onboarding experience and share it back with the Bacth Changes team so that we can make this even better!
-- In this tutorial, we will use [k8s.sgdev.org](https://k8s.sgdev.org) as our environment. You should have access by default using SSO.
+- In this tutorial, we will use [demo.sourcegraph.com](https://demo.sourcegraph.com) as our environment. You should have access by default using SSO.
 - Tip: Use the docs extensively to complete the tutorial steps.
 
 ### Step 1: Quickstart
 Let's start with a quick setup example to warm up: [Quickstart](https://docs.sourcegraph.com/batch_changes/quickstart).
 
-Answer those questions:
+By the end of this step, you should be able to answer:
 - what does `on` do?
 - what are `steps`?
 - what is the difference between *apply* and *publish*?
@@ -34,7 +34,7 @@ Answer those questions:
 ### Step 2: comby
 Let's use [comby](https://comby.dev/). Batch Changes can run any code change tool, but comby is great for structural-type change. See how it works with Batch Changes in this [tutorial](https://docs.sourcegraph.com/batch_changes/tutorials/refactor_go_comby). Don't publish your changesets yet!
 
-Answer those question:
+By the end of this step, you should be able to answer:
 - what is comby?
 - does Batch Changes rely on comby?
 
