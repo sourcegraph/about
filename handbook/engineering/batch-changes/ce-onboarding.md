@@ -1,6 +1,6 @@
 # Batch Changes CE onboarding
 
-Welcome to Batch Changes! This page is primarily for new members of the CE team, but it could be helpful to other teams, too! After going through these steps, you should:
+Welcome to Batch Changes! This page is primarily for new members of the CE team, but it could be helpful to other teams, too. After going through these steps, you should:
 
 - understand what Batch Changes is
 - be able to present it to customers from a value, usage, and functional perspective
@@ -57,6 +57,6 @@ Batch Changes can track changesets that have been created manually. Create a new
 Record yourself demo-ing Batch Changes, and send a link to your video to @malo to get feedback and fine tune your approach!
 
 ## There's always more!
-Congrats!!! This is the end of the Batch Changes CE onboarding, we hope it was useful to you!
+Congrats!!! This is the end of the Batch Changes CE onboarding, we hope it was useful to you.
 
 Feel free to continue exploring the docs, and check out our [Batch Changes examples](https://github.com/sourcegraph/batch-change-examples) (contributions welcome).
