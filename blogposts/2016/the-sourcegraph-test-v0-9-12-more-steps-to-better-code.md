@@ -33,7 +33,7 @@ So, we made **The Sourcegraph Test** to measure how well your tools help you man
 11.  Can you review and discuss code even after it has been merged?
 12.  Does your code review process use any form of checklist (i.e., it’s not completely up to the discretion of the reviewer)?
 
-Give yourself a **_yes_** (1 point each) or **_no_**(0 points) for each question. A score of 12 is perfect, and 9 is pretty good. Most teams are at 4 or 5.
+Give yourself a **_yes_** (1 point each) or **_no_** (0 points) for each question. A score of 12 is perfect, and 9 is pretty good. Most teams are at 4 or 5.
 
 ### So what?
 
