@@ -65,9 +65,11 @@ Here are some of the technologies we use to deliver on our goals:
 - [RxJS](https://rxjs-dev.firebaseapp.com/guide/overview)
 - [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
 
-## Processes
+## Principles
 
 We inherit Sourcegraph's [engineering principles and practices](https://about.sourcegraph.com/handbook/engineering/principles-and-practices) and [Developer Insights principles and practices](https://about.sourcegraph.com/handbook/engineering/developer-insights#principles-and-practices). In addition, we have a few processes and practices specific to the Frontend Platform team:
+
+## Processes
 
 ### Planning and prioritization
 
