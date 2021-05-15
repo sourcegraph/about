@@ -8,7 +8,7 @@ Software engineers build our product and infrastructure.
 
 ### Responsibilities
 
-- Model and apply [our company values](../../company/values.md) and our [guiding engineering principles](principles-and-practices) throughout all your interactions and work.
+- Model and apply [our company values](../../company/values.md) and our [guiding engineering principles](principles-and-practices.md) throughout all your interactions and work.
 - Iteratively create, ship, and maintain high quality architecture, code, tests, and documentation that aligns with team goals.
 - Document and share your progress in relevant locations at least once a week (for example: in GitHub issues, team slack channel, #progress, [CHANGELOG.md](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md)).
 - Prioritize unblocking and supporting your teammates (for example: sharing knowledge, answering questions, providing feedback).
