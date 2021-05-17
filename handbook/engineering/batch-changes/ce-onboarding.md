@@ -57,7 +57,11 @@ By the end of this step, you should be able to answer:
 Batch Changes can track changesets that have been created manually. Create a new batch change to track the last 10 changesets opened on [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph).
 
 ## Part 3: Get feedback
-Record yourself demo-ing Batch Changes, and send a link to your video to @malo to get feedback and fine tune your approach!
+Record yourself demo-ing Batch Changes, and send a link to your video to @malo on slack to get feedback and fine tune your approach! Aim for a demo of less than 10 minutes, and feel free to use this structure:
+
+- Explain the high level value
+- Run the user through how to create a batch change (feel free to skip the CLI execution time)
+- Run the user though tracking batch changes from the GUI?
 
 ## There's always more!
 Congrats!!! This is the end of the Batch Changes CE onboarding, we hope it was useful to you.
