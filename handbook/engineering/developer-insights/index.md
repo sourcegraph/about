@@ -62,7 +62,7 @@ We want teammates to do what is best for the org as a whole. Don't optimize for 
 
 ##### Prefer small PRs (<400 lines)
 
-We extend Sourcegraph's company-wide guidance (see [what makes an effective PR]((https://docs.sourcegraph.com/dev/background-information/code_reviews#what-makes-an-effective-pull-request-pr)) with a specific guideline that _PRs should contain less than 400 changed lines_ (excluding tests). Note that this is a _guideline_ and not a hard limit: there are situations where it doesn't make sense (e.g. PRs that are mostly mechanical changes).
+We extend Sourcegraph's company-wide guidance (see [what makes an effective PR](https://docs.sourcegraph.com/dev/background-information/code_reviews#what-makes-an-effective-pull-request-pr)) with a specific guideline that _PRs should contain less than 400 changed lines_ (excluding tests). Note that this is a _guideline_ and not a hard limit: there are situations where it doesn't make sense (e.g. PRs that are mostly mechanical changes).
 
 ##### Keep reviewers to a minimum
 
