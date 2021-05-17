@@ -3,12 +3,15 @@ title: "When gut instinct doesn’t scale: Creating Sourcegraph’s product desi
 author: Quinn Keast
 authorUrl: 
 description: "Here’s how our rapidly growing all-remote product and design teams collaborated asynchronously to define Sourcegraph’s inclusive product design principles to help us scale consistently."
+heroImage: /blog/product-design-principles-hero.jpg
 publishDate: 2021-05-17T18:00-07:00
 tags: [blog]
 slug: creating-sourcegraph-product-design-principles
 heroImage: TBA
 published: true
 ---
+
+![product design principles graphic](/blog/product-design-principles-hero.jpg)
 
 As we’ve grown over the last few months, the Sourcegraph design and product teams have found ourselves having more discussions around product and design decisions. 
 This is a common challenge for design teams everywhere: there are often many valid ways to solve a problem, each with its own set of tradeoffs and assumptions. 
