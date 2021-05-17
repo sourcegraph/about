@@ -880,3 +880,10 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: rebecca-rissinger
 - Rebecca.Rissinger@sourcegraph.com
 - Rebecca lives in Red Bank, NJ with her husband Jon. They have a son named Declan and two dog children- Lucky and Sassy. Rebecca needs coffee to function and misses traveling desperately. She loves soccer, almost any outdoor activity, concerts, and anything sweet.
+
+## Ryan Phillips (He/Him)
+- Product Manager, Core App
+- San Francisco, CA, USA 🇺🇸
+- GitHub: [Ryphil](https://github.com/ryphil)
+- [Ryphil@sourcegraph.com](mailto:ryphil@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ryphil/)
+- Born in the wild west (Texas), Ryan now lives in San Francisco, CA where he loves exploring the amazing nature nearby! Ryan lives to experience and build products which have an incredibly high level of craft - custom JH Audio headphones, to beautiful books such as Designing Design, to delicious food! Outside of Sourcegraph, Ryan is a lecturer at the d.school at Stanford University, teaching at the intersection of technology, design, and inclusion. He is always open to adventure, lets explore together! 
