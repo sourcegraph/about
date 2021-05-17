@@ -7,7 +7,6 @@ heroImage: /blog/product-design-principles-hero.jpg
 publishDate: 2021-05-17T18:00-07:00
 tags: [blog]
 slug: creating-sourcegraph-product-design-principles
-heroImage: TBA
 published: true
 ---
 
