@@ -56,13 +56,19 @@ Normally, waiting for a PR review does not mean you are blocked: it's expected t
 
 We want teammates to do what is best for the org as a whole. Don't optimize for the goals of your team when it negatively impacts the goals of other teams, our users, and/or the company. Those goals are also your problem and your job.
 
-### Pull request reviews
+### Pull requests
 
-#### Authors
+#### For authors
 
-Pull request authors should always prefer requesting reviews from a specific teammate as apposed to a group. This creates accountability and clear expectation.
+##### Prefer small PRs (<400 lines)
 
-#### Reviewers
+We extend Sourcegraph's company-wide guidance (see [what makes an effective PR]((https://docs.sourcegraph.com/dev/background-information/code_reviews#what-makes-an-effective-pull-request-pr)) with a specific guideline that _PRs should contain less than 400 changed lines_ (excluding tests). Note that this is a _guideline_ and not a hard limit: there are situations where it doesn't make sense (e.g. PRs that are mostly mechanical changes).
+
+##### Keep reviewers to a minimum
+
+Pull request authors should always prefer requesting reviews from specific teammate(s) as apposed to a group. This creates accountability and clear expectations. A single reviewer is usually sufficient.
+
+#### For reviewers
 
 Reviewers should try to review in a timely manner; doing so allows everyone involved in the pull request to iterate faster as the context is fresh in memory. Reviewers should aim to review within one working day from the date they were assigned to the pull request. If you don't think you'll be able to review a pull request within that time, let the author know as soon as possible.
 
