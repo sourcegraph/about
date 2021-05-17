@@ -72,7 +72,7 @@ export default ((props: any) => (
                             <h5 className="card-header">Jobs</h5>
                             <div className="card-body">
                                 <p className="card-text">For information about joining our team:</p>
-                                <Link className="btn btn-outline-primary stretched-link" to="/jobs">
+                                <Link className="btn btn-outline-primary stretched-link" to="https://boards.greenhouse.io/sourcegraph91">
                                     See career opportunities
                                 </Link>
                             </div>
@@ -91,10 +91,10 @@ export default ((props: any) => (
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
-                                    href="https://twitter.com/srcgraph"
+                                    href="https://twitter.com/sourcegraph"
                                     target="_blank"
                                 >
-                                    <TwitterIcon /> @srcgraph
+                                    <TwitterIcon /> @sourcegraph
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
