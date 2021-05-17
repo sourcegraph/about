@@ -89,23 +89,29 @@ Once we all felt strongly that our product design principles captured our team�
 
 ## Sourcegraph’s product design principles
 
+*   **A personal tool within a larger workflow**
 
+Sourcegraph is a powerful yet personal tool that exists within a larger workflow. Design for familiar patterns with thoughtful defaults, while embracing personalization and adaptability.
 
-*   **A personal tool within a larger workflow \
-**Sourcegraph is a powerful yet personal tool that exists within a larger workflow. Design for familiar patterns with thoughtful defaults, while embracing personalization and adaptability.
-*   **Made for everyone \
-**Our purpose is to make it so [everyone can code](/company/strategy#purpose). This demands we make Sourcegraph accessible and useful for all developers through universal, inclusive design.
-*   **Gracefully manage complexity \
-**Sourcegraph supports complex product requirements, but also empowers users to manage this complexity for their individual needs.
-*   **Code as content \
-**More time is spent reading than writing code. Elevate the craft of code as content.
-*   **Trust is earned \
-** Sourcegraph is the source of truth for developers working on and learning about their code, but this trust is earned. Accuracy, transparency, recency, and honesty together work to uphold this source of truth.
-*   **Create momentum \
-**Help developers create and maintain flow. To do this, Sourcegraph must be fast in every way. We design purposefully to help users iterate and build momentum.
+*   **Made for everyone**
+
+Our purpose is to make it so [everyone can code](/company/strategy#purpose). This demands we make Sourcegraph accessible and useful for all developers through universal, inclusive design.
+
+*   **Gracefully manage complexity**
+Sourcegraph supports complex product requirements, but also empowers users to manage this complexity for their individual needs.
+
+*   **Code as content**
+
+More time is spent reading than writing code. Elevate the craft of code as content.
+
+*   **Trust is earned**
+
+Sourcegraph is the source of truth for developers working on and learning about their code, but this trust is earned. Accuracy, transparency, recency, and honesty together work to uphold this source of truth.
+*   **Create momentum**
+
+Help developers create and maintain flow. To do this, Sourcegraph must be fast in every way. We design purposefully to help users iterate and build momentum.
 
 We’ve published our [product design principles](https://about.sourcegraph.com/handbook/product/design_principles) in our open handbook.
-
 
 ## The path forward
 
