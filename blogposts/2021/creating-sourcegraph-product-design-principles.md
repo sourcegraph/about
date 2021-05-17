@@ -38,7 +38,7 @@ Developers use design principles as a lens to collaborate on design, from discov
 
 ### Sidebar: What’s the difference between design principles and design patterns?
 
-Design principles and design patterns are often conflated. Where design principles are simple, broadly applicable, and capture our shared vision and values, design patterns** **are the tangible and repeatable expression of our principles in combination with heuristics of good design and usability. 
+Design principles and design patterns are often conflated. Where design principles are simple, broadly applicable, and capture our shared vision and values, design patterns are the tangible and repeatable expression of our principles in combination with heuristics of good design and usability. 
 
 Design principles don’t change often, as they reflect a core truth of who we are. Design patterns change over time to meet new needs, technology, and trends.
 
@@ -63,7 +63,7 @@ This gave us a target and alignment around a shared conceptual understanding of 
 
 #### 2. Digging in individually to reflect on principles in action ahead of the workshop
 
- Ahead of the workshop, we did some homework. Each member of the team went off to explore and reflect on how other organizations defined their principles, and how those principles were reflected in their products. 
+Ahead of the workshop, we did some homework. Each member of the team went off to explore and reflect on how other organizations defined their principles, and how those principles were reflected in their products. 
 
 
 #### 3. Workshop
@@ -100,6 +100,7 @@ Sourcegraph is a powerful yet personal tool that exists within a larger workflow
 Our purpose is to make it so [everyone can code](/company/strategy#purpose). This demands we make Sourcegraph accessible and useful for all developers through universal, inclusive design.
 
 *   **Gracefully manage complexity**
+
 Sourcegraph supports complex product requirements, but also empowers users to manage this complexity for their individual needs.
 
 *   **Code as content**
@@ -126,6 +127,6 @@ Sourcegraph is an open company, and so our process, artifacts, and resources are
 **Resources**
 
 *   [Design principles planning and workshop document](https://docs.google.com/document/d/10Ko8z1ozVaUStuPG2-cM_EJUVJvcgabv8qZYNAJXn24/edit#)
-*   [Mural board](https://miro.com/app/board/o9J_lT0O5TU=/)
+*   [Miro board](https://miro.com/app/board/o9J_lT0O5TU=/)
 *   [RFC 342: Sourcegraph Design Principles](https://docs.google.com/document/d/1zRbtZR68ZITYypSAJJ63Ir_fFPxJfTtidJmsrxUXW7o/edit#)
 *   [Sourcegraph’s design principles in our handbook](https://about.sourcegraph.com/handbook/product/design_principles)
