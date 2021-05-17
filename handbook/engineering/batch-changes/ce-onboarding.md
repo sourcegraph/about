@@ -46,9 +46,12 @@ Can you scope down your batch change to only a two repositories? Modify the spec
 Sometimes you want to publish only _some_ but not all changesets to the codehosts and keep the others unpublished, for example to test out if the repository owners will merge the changesets. Find out how to publish only on [sourcegraph-ce-onboarding/tiny-go-testing-repository] using [`published`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#changesettemplate-published).
 
 ### Step 5: Templating
-Can you use [templating](https://docs.sourcegraph.com/batch_changes/references/batch_spec_templating) to TODO:find an approachable use case compatible with the comby example.
+Can you use [templating](https://docs.sourcegraph.com/batch_changes/references/batch_spec_templating) to add an additional step to the spec, and run a linter _only_ on the files that have been modified?
 
 Tip: we maintain a [cheat sheet](https://docs.sourcegraph.com/batch_changes/references/batch_spec_cheat_sheet) with commonly used patterns
+
+By the end of this step, you should be able to answer:
+- what is templating? why is it useful?
 
 ### Step 6: Tracking existing changesets
 Batch Changes can track changesets that have been created manually. Create a new batch change to track the last 10 changesets opened on [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph).
