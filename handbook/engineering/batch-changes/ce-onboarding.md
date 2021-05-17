@@ -32,7 +32,7 @@ By the end of this step, you should be able to answer:
 - what is the difference between *apply* and *publish*?
 
 ### Step 2: comby
-Let's use [comby](https://comby.dev/). Batch Changes can run any code change tool, but comby is great for structural-type change. See how it works with Batch Changes in this [tutorial](https://docs.sourcegraph.com/batch_changes/tutorials/refactor_go_comby). Don't publish your changesets yet!
+Let's use [comby](https://comby.dev/). Batch Changes can run any code change tool, but comby is great for structural-type change. See how it works with Batch Changes in this [tutorial](https://docs.sourcegraph.com/batch_changes/tutorials/refactor_go_comby). We have created three playground repositories that you can open changesets on: add `repo:sourcegraph-ce-onboarding` to the search query to limit the search results to those. Don't publish your changesets yet!
 
 By the end of this step, you should be able to answer:
 - what is comby?
@@ -40,10 +40,10 @@ By the end of this step, you should be able to answer:
 
 
 ### Step 3: The `on` attribute
-Can you scope down your batch change to only a few repos? Modify the spec to scope down your batch change to <repo1> <repo2> <repo3>. Tip: you may find [`on`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on) useful.
+Can you scope down your batch change to only a two repositories? Modify the spec to scope down your batch change to [sourcegraph-ce-onboarding/titan](https://github.com/sourcegraph-ce-onboarding/titan) and [sourcegraph-ce-onboarding/tiny-go-testing-repository](https://github.com/sourcegraph-ce-onboarding/tiny-go-testing-repository). Tip: you may find [`on`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on) useful.
 
 ### Step 4: Publishing
-Sometimes you want to publish only _some_ but not all changesets to the codehosts and keep the others unpublished, for example to test out if the repository owners will merge the changesets. Find out how to publish only on <repo> using the [`published`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#changesettemplate-published) attribute
+Sometimes you want to publish only _some_ but not all changesets to the codehosts and keep the others unpublished, for example to test out if the repository owners will merge the changesets. Find out how to publish only on [sourcegraph-ce-onboarding/tiny-go-testing-repository] using [`published`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#changesettemplate-published).
 
 ### Step 5: Templating
 Can you use [templating](https://docs.sourcegraph.com/batch_changes/references/batch_spec_templating) to TODO:find an approachable use case compatible with the comby example.
