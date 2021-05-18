@@ -114,8 +114,8 @@ To assist in this regard we provide the following guideline for teammates to fol
 
 *When acknowledging a statement:*
 
-- `:thumbsup:` 👍 = acknowledgment as in I agree with the statement
-- `:thumbsdown:` 👎 = acknowledgment as in I disagree with a statement - encouraged to always follow up with written response
+- `:thumbsup:` 👍 = I agree with the statement
+- `:thumbsdown:` 👎 =  I disagree with a statement - encouraged to always follow up with written response
 
 *When acknowledging a question:*
 
