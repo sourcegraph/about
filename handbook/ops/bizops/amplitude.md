@@ -1,0 +1,29 @@
+## How do I get started?
+1. [Understand the data](#data)
+1. Amplitude documentation for [building analyses](https://help.amplitude.com/hc/en-us/categories/360003165371-Build-and-share-your-analysis)
+1. Ask BizOps!
+
+## Why Amplitude?
+Amplitude is a specialized product analytics tool that specializes in turning event data into actionable insights and dashboards. 
+
+### Why aren’t we using Looker for this?
+Looker is very flexible in that we have the ability to set it up for any purpose. But this also means that to provide a great self-service experience for what we want from a product analytics tool, this would take a LOT of work. We get these capabilities out of the box with Amplitude. 
+
+### What is in Looker vs. Amplitude?
+
+Anything not based directly on analyzing events is in Looker. This includes pings from on-prem instances, anything we get from the Cloud Postgres database, and any data from third-parties tools (such as Google Analytics and Salesforce). 
+
+| Type of analysis        | Tool      | Example |
+|-------------------------|-----------|---------|
+| Retention/engagement    | Amplitude | [Link](https://analytics.amplitude.com/sourcegraph/chart/7l5vdg4?source=workspace)    |
+| Adoption of public code | Looker    | [Link](https://sourcegraph.looker.com/dashboards-next/175)    |
+| Progress towards OKRs   | Looker    | [Link](https://sourcegraph.looker.com/dashboards-next/166)    |
+| On-prem instances/pings | Looker    | [Link](https://sourcegraph.looker.com/dashboards-next/174)    |
+| Signup funnel on Cloud  | Amplitude | [Link](https://analytics.amplitude.com/sourcegraph/chart/jumvevm?source=workspace)    |
+
+
+### Data
+Most Sourcegraph Cloud events are being sent to Amplitude. The events not being sent are extremely low traffic events or ones we have explicitly decided to exclude (such as code insights events because we’re focused on enterprise and Cloud data won’t inform any decisions). The [full data map is in Drive](https://docs.google.com/spreadsheets/d/171up68LIY1xQZTgBoA5FQpGO62Wg0a0wNNrm8ksVm4A/edit#gid=0).
+
+It’s sent through s script that runs every hour and pulls from ```sourcegraph_analytics.amplitude_events```, which is loaded by [this scheduled query](https://console.cloud.google.com/bigquery/scheduled-queries/locations/us/configs/609f8a27-0000-287c-9f20-f403043cb328/runs?project=telligentsourcegraph).
+
