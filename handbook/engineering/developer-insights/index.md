@@ -100,7 +100,7 @@ In addition to team specific channels, we communicate in the following org-wide 
 
 [#developer-insights-org-leadership](https://sourcegraph.slack.com/archives/C01P1TVDJR4): This channel is for the Engineering Managers, Product Managers and Product Designers to discuss higher-level matters impacting the whole org.
 
-#### Acknowledgment
+#### Slack acknowledgment
 
 In an async-first communication environment it is important to remove assumptions/uncertainty around whether teammates have seen, understood or acted on a message.  
 To assist in this regard we provide the following guideline for teammates to follow when communicating and responding in Slack. 
