@@ -103,7 +103,7 @@ In addition to team specific channels, we communicate in the following org-wide 
 #### Acknowledgment
 
 In an async-first communication environment it is important to remove assumptions/uncertainty around whether teammates have seen, understood or acted on a message.  
-To assist in this regard we provide the following guideline for teammates to follow when communicating and responsing in Slack. 
+To assist in this regard we provide the following guideline for teammates to follow when communicating and responding in Slack. 
 
 **The most important thing to remember is not which emoji to use, but rather to remember to acknowledge and to do it in a clear and unambiguous way.**
 
