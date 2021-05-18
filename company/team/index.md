@@ -872,3 +872,10 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: [Ryphil](https://github.com/ryphil)
 - [Ryphil@sourcegraph.com](mailto:ryphil@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ryphil/)
 - Born in the wild west (Texas), Ryan now lives in San Francisco, CA where he loves exploring the amazing nature nearby! Ryan lives to experience and build products which have an incredibly high level of craft - custom JH Audio headphones, to beautiful books such as Designing Design, to delicious food! Outside of Sourcegraph, Ryan is a lecturer at the d.school at Stanford University, teaching at the intersection of technology, design, and inclusion. He is always open to adventure, lets explore together! 
+
+## Jake Sorensen (He/Him)
+- Programs Lead, Demand Gen Campaigns
+- Los Angeles, CA, USA 🇺🇸 
+- GitHub: [jakevsen](https://github.com/jakevsen) 
+- jake@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jakevsorensen/) 
+- Born and raised in Utah now living in California with my partner of twelve years, Tia, and our two Chihuahuas, Dory and Minnie. I discovered my love for marketing working in field marketing, demand gen, and account-based marketing and love empowering teams to be passionate and innovative in their careers. I have a degree in environmental science and hydrogeology, aspirations for Shakespearean acting, and am a fluent French speaker and Francophile. My passions include my family, travel, iaido practice and matcha.
