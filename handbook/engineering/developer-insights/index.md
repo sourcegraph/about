@@ -109,8 +109,8 @@ To assist in this regard we provide the following guideline for teammates to fol
 
 *When acknowledging a request:*
 
-- `:thumbsup:` (👍) = acknowledgment as in I see the request and will action it
-- `:white_check_mark:` (✅) = acknowledgment as in I have completed my action on the request
+- `:thumbsup:` (👍) = I see the request and will action it
+- `:white_check_mark:` (✅) = I have completed my action on the request
 
 *When acknowledging a statement:*
 
