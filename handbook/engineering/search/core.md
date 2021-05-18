@@ -43,3 +43,8 @@ Iterations start **every other Monday**.
 **On the first Monday of an iteration:**
 
 - The team reviews the iteration plan during the team sync, and kicks off the iteration.
+
+
+## Misc
+
+[iteration log (deprecated)](./iteration_log.md)
