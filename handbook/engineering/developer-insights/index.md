@@ -119,7 +119,7 @@ To assist in this regard we provide the following guideline for teammates to fol
 
 *When acknowledging a question:*
 
-It is always preferred to provide a written response.
+It is always preferred to provide a written response, unless it's a simple yes/no question in which case `:thumbs-up:` (👍)/`:thumbs-down:` (👎) is an acceptable response.
 
 ### Events
 
