@@ -11,7 +11,7 @@ Looker is very flexible in that we have the ability to set it up for any purpose
 
 ### What is in Looker vs. Amplitude?
 
-Anything not based directly on analyzing events (e.g. product usage) is in Looker. This includes [pings from on-prem instances](https://docs.sourcegraph.com/admin/pings), anything we get from the [Cloud Postgres database](https://github.com/sourcegraph/sourcegraph/blob/main/internal/database/schema.md) and any data from third-parties tools (such as Google Analytics and Salesforce). 
+Anything not based directly on analyzing Sourcegraph Cloud events is in Looker. This includes [pings from on-prem instances](https://docs.sourcegraph.com/admin/pings), anything we get from the [Cloud Postgres database](https://github.com/sourcegraph/sourcegraph/blob/main/internal/database/schema.md) and any data from third-parties tools (such as Google Analytics and Salesforce). 
 
 | Type of analysis        | Tool      | Example |
 |-------------------------|-----------|---------|
