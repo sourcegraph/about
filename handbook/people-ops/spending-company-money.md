@@ -6,7 +6,7 @@ We want to make sure you have what you need to be productive and happy in your r
 - You likely won't need every single item on this list—please use your best judgment and buy when you need them. Remember, Sourcegraph doesn't have unlimited funds—spend this money as if it was your own.
   - For example, if you intend to work out of a coworking space most of the time, you may not need a fully equipped home office as well.
 - If you spend more than $1,000 on any given physical item, it will be considered property of the company.
-- Please file an expense report within 60 days of an eligible purchase. See [submitting expenses](expenses.md) for additional help.
+- Please file an expense report within 60 days of an eligible purchase. See [submitting expenses](../ops/finance/expenses.md) for additional help.
 
 ## Desk set-up
 
