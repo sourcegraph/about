@@ -45,9 +45,9 @@ Individual teams should also think about how to onboard new members to the thing
 High-level context is the hardest to transfer. It’s the hardest to document (without going out of date) and you can't automate it, because this really just reduces to grokking the overall architecture, which isn’t the same as truly understanding how the pieces fit together and knowing what the core assumptions and tension points are. 
 However, it's important to transfer knowledge, including historical knowledge, otherwise you can get into a position where all the members of the team who feel confident making big changes, not just small, incremental ones, are gone. 
 
-Jean shared: “This exact scenario played out for a new engineer recently. They love context and understanding the history behind decisions. 
+Jean shared: "This exact scenario played out for a new engineer recently. They love context and understanding the history behind decisions. 
 Thankfully, Sourcegraph has this practice of putting [Requests for Comments (RFCs)](https://about.sourcegraph.com/handbook/communication/rfcs) together when we want to introduce any changes or make architectural decisions. 
-We were able to refer to this document, which even predates my time, that gave context on these decisions. Because even the people who worked on it at the time eventually forget about it.” 
+We were able to refer to this document, which even predates my time, that gave context on these decisions. Because even the people who worked on it at the time eventually forget about it." 
 
 As Jean said in our conversation, context is king, so don't underestimate the importance of giving people the proper context, because it's better to spend more time upfront to enable people to move much more quickly down the road.
 
