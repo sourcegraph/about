@@ -879,3 +879,9 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: [jakevsen](https://github.com/jakevsen) 
 - jake@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jakevsorensen/) 
 - Born and raised in Utah now living in California with my partner of twelve years, Tia, and our two Chihuahuas, Dory and Minnie. I discovered my love for marketing working in field marketing, demand gen, and account-based marketing and love empowering teams to be passionate and innovative in their careers. I have a degree in environmental science and hydrogeology, aspirations for Shakespearean acting, and am a fluent French speaker and Francophile. My passions include my family, travel, iaido practice and matcha.
+
+## Coury Clark (He/Him)
+- Software Engineer, Code Insights
+- Phoenix, AZ, USA
+- coury@sourcegraph.com
+- Coury is an Arizona native who currently lives in Phoenix. He learned to fly airplanes when he was 12 years old at a local glider club, and got his pilot’s license in both gliders and single engine airplanes in his teens. He started programming in c++ with a desire to make video games, and spent some time learning that he is a terrible 3D artist in Maya. Since then, Coury has loved exploring the complexities of software engineering, and has decided he is still a terrible artist (in any dimension). In his free time he likes to play music on piano / guitar, explore new foods through cooking, spend time birding and doing photography, and hanging out with his wife and cat.
