@@ -64,12 +64,12 @@ This helps them acquire more context on their own and therefore ask smarter ques
 
 Good onboarding often requires tailoring the experience to a new hire's specific strengths, experience, and personality. 
 
-> “I think as a new engineer onboarding, you're a little bit of an adventurer; you're going into uncharted territory. 
+> "I think as a new engineer onboarding, you're a little bit of an adventurer; you're going into uncharted territory. 
 > What you want to do as a manager is allow them some freedom to explore because that process leads to learning and discovery, but you also want to set them up for success. 
 > So you want to give them a map—that could be your architecture documents. You want to make sure they have the right gear, so that could be making sure they have the right software and a laptop and all of that. 
 > And you would probably give them a satellite phone as well if they really get stuck out in the wilderness, so they can call for help. 
 > That might be the team that is there to support them or an onboarding buddy who gives them guidance along the way. 
-> Something that means they can call a friend if they really get stuck.” – Jean
+> Something that means they can call a friend if they really get stuck." – Jean
 
 Standardization and automation should take place for the common things, mostly in the form of checklists and documentation, but it's also important to leave room for the "satellite phone" so a new hire can call in for help from a more experienced teammate. 
 This is especially important in fast-moving companies, because the codebase always moves faster than documentation/automation.
