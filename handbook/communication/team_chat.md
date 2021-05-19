@@ -45,7 +45,7 @@ In public channels, we use threads to organize conversations around topics and l
 
 ## Name
 
-To avoid confusion, set your Slack **display name** as "First Name (or preferred name) Last Name".
+To avoid confusion, set your Slack **display name** as `First Name (or preferred name) Last Name`.
 
 ## Channels
 
