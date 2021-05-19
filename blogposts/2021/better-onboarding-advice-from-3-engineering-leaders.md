@@ -26,7 +26,7 @@ She's now the director of the mentorship program at PowerToFly, a non-profit ded
 Ryan Djurovich is a DevOps Manager at Xero, Australia's largest accounting software company. 
 He leads the team responsible for developer infrastructure, experience, and tooling.
 
-Jean du Plessis is a Director of Engineering at Sourcegraph, where he leads the Developer Insights organization, which includes the frontend platform, extensibility, code insights, and API docs teams.
+[Jean du Plessis](https://www.linkedin.com/in/jeandp/) is a Director of Engineering at Sourcegraph, where he leads the Developer Insights organization, which includes the frontend platform, extensibility, code insights, and API docs teams.
 
 The 3 offered their thoughts on the process of onboarding new engineers to the team, revealing some strong parallels as well as some particular areas of emphasis and focus.
 
