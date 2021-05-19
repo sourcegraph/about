@@ -14,6 +14,7 @@ published: true
 ![Better onboarding video game graphic](/blog/better-onboarding-advice-from-engineering-leaders.gif)
 
 _This is the second post in our Better Onboarding series. Check out the first, "[How to prevent codebase overwhelm](https://about.sourcegraph.com/blog/better-onboarding-how-to-prevent-codebase-overwhelm/)"_.
+
 Growing a software engineering team poses unique challenges. You’re bringing people on board who weren't witness to the evolution of the codebase, or privy to the discussions and debates around critical design decisions. 
 They aren't aware of why you added many of the features and logic—some hackier than the rest. 
 They may not even be familiar with the general toolset that your team has come to rely on to work efficiently.
