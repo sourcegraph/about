@@ -23,7 +23,7 @@ In this post, we'll take a deep dive with engineering leaders from 3 highly repu
 Limor Bergman is a former Director of Engineering at Digital Ocean, where she led the organizations responsible for Droplets, Kubernetes, Kernel, Performance, Systems, and Orchestration. 
 She's now the director of the mentorship program at PowerToFly, a non-profit dedicated to helping women grow their careers.
 
-Ryan Djurovich is a DevOps Manager at Xero, Australia's largest accounting software company. 
+[Ryan Djurovich](https://www.linkedin.com/in/ryandjurovich/) is a DevOps Manager at Xero, Australia's largest accounting software company. 
 He leads the team responsible for developer infrastructure, experience, and tooling.
 
 [Jean du Plessis](https://www.linkedin.com/in/jeandp/) is a Director of Engineering at Sourcegraph, where he leads the Developer Insights organization, which includes the frontend platform, extensibility, code insights, and API docs teams.
