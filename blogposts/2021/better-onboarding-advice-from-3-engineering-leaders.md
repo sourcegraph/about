@@ -1,15 +1,17 @@
 ---
-title: 'When gut instinct doesn’t scale: Creating Sourcegraph’s product design principles'
+title: 'Better onboarding: Here’s how the best engineering leaders do it'
 author: Beyang Liu
 authorUrl: 
 description: 'Building robust software that runs at scale is a team effort. Here are 3 engineering leaders on how they use both human and automated processes to set their growing teams up for success.'
-heroImage: 
-socialImage: 
+heroImage: /blog/better-onboarding-advice-from-engineering-leaders.gif
+socialImage: website/static/blog/better-onboarding-advice-from-engineering-leaders.gif
 publishDate: 2021-05-19T18:00-07:00
 tags: [blog]
 slug: better-onboarding-advice-from-engineering-leaders
 published: true
 ---
+
+![Better onboarding video game graphic](/blog/better-onboarding-advice-from-engineering-leaders.gif)
 
 Growing a software engineering team poses unique challenges. You’re bringing people on board who weren't witness to the evolution of the codebase, or privy to the discussions and debates around critical design decisions. 
 They aren't aware of why you added many of the features and logic—some hackier than the rest. 
