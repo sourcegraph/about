@@ -2,34 +2,35 @@
 
 The conclusion of every project should include analysis of performance. Below is the beginnings of us keeping track of what we've learned based on usage data.
 
-- [Search homepages and tour (2020-11-30)](#2020-11-30)
-- [Value of browser extensions](#2020-12-06)
-- [What actions lead to Cloud retention](#2021-01-11)
 - [Successful search sessions <> week 1 retention](#2021-05-19)
+- [What actions lead to Cloud retention](#2021-01-11)
+- [Value of browser extensions](#2020-12-06)
+- [Search homepages and tour (2020-11-30)](#2020-11-30)
+
 ## 2021-05-19
 
 **Team**: Product
 
 **Author**: Eric Brody-Moore
 
-**Overview**: We processed sessions on Sourcegraph Cloud for the success or failure of search sessions and, most notably, how this correlates to week 1 retention.
+**Overview**: We processed sessions on Sourcegraph Cloud to categorize them as successful or failed search sessions and, most notably, how they correlates to week 1 retention.
 
 At its core, a successful session includes a click into search results. See more context in the [RFC](https://docs.google.com/document/d/1hzW3kjnIJHzgh8JgCqVXVn7wJbzvCnT14LsaCT95S8E/edit?ts=608c6eb3#). Our definition of a successful session may have to change in the future. 
 
 ### Search session success/failure
 
-Conclusion: one successful session (in its definition today) does not lead to realization of the value proposition and week 1 retention.
+*Conclusion*: one successful session (in its definition today) does not lead to realization of the value proposition and week 1 retention.
 
 This supports the need for a lot of projects/ideas already in motion:
-- seeing hovers in search results (hovering leads to almost 2x retention compared to only searching)
-- improvements to the search tour (60% of fails had two or less searches)
+- Including code intelligence in search results (hovering leads to 2x retention compared to only searching)
+- Improvements to the search tour. 60% of failed search sessions had two or less searches, which were most likely low quality searches
 
-What I think will help:
-- search redesign RFC 
-- ranking 
-- improvements to the search tour to get people to the code they care about and learn the search syntax
+What I *think* will help but have no quantitative proof from this analysis:
+- More efforts from the search redesesign to improve the quality of the searches earlier on in the user lifecycle
+- Search results ranking so the likelihood of a user clicking into results and seeing code intelligence is higher 
+- Improvements to the search tour to get people to the code they care about and learn the search syntax
 
-Data
+**Data**
 
 I ran a week of search sessions for the week of 2021-05-03.
 - 64% were success, 36% were failed sessions
@@ -43,7 +44,7 @@ Of the fails:
 - 60% of fails are <=2 searches and leave; 68% are <=3 searches and leave
 
 Supporting data
-- 12% week 1 retention in all users who searched vs. week 1 21% retention for users who hovered (Source: [Amplitude](https://analytics.amplitude.com/sourcegraph/chart/7l5vdg4?source=workspace))
+- 12% week 1 retention in all users who searched vs. week 1 24% retention for users who hovered and clicked 'find references' (Source: [Amplitude](https://analytics.amplitude.com/sourcegraph/chart/7l5vdg4?source=workspace))
 - Multiple searches vs. one search increases the week 1 retention from 10 -> 15% (Source: [Ampltide](https://analytics.amplitude.com/sourcegraph/chart/6gzjoql?source=workspace))
 
 
