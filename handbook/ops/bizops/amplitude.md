@@ -21,11 +21,10 @@ Anything not based directly on analyzing events (e.g. product usage) is in Looke
 | On-prem instances/pings | Looker    | [Link](https://sourcegraph.looker.com/dashboards-next/174)    |
 | Signup funnel on Cloud  | Amplitude | [Link](https://analytics.amplitude.com/sourcegraph/chart/jumvevm?source=workspace)    |
 
-
+Any analysis that was conducted in Looker prior to the implementation of Amplitude can still be done in Looker, and existing Looker dashboards and visualizations will still be maintained. Amplitude will help us conduct new and different analysis regarding product analytics. 
 ### Data
 Most Sourcegraph Cloud events are being sent to Amplitude. The events not being sent are extremely low traffic events, non-UI events (e.g. backend events for a search that we capture) or ones we have explicitly decided to exclude (such as code insights events because we’re focused on enterprise and Cloud data won’t inform any decisions). The [full data map is in Drive](https://docs.google.com/spreadsheets/d/171up68LIY1xQZTgBoA5FQpGO62Wg0a0wNNrm8ksVm4A/edit#gid=0).
 
 The data in Amplitude starts on 2020-12-01. 
 
 It’s sent through a script that runs every hour and pulls from ```sourcegraph_analytics.amplitude_events```, which is loaded by [this scheduled query](https://console.cloud.google.com/bigquery/scheduled-queries/locations/us/configs/609f8a27-0000-287c-9f20-f403043cb328/runs?project=telligentsourcegraph).
-
