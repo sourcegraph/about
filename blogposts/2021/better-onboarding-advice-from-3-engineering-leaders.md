@@ -20,7 +20,7 @@ They may not even be familiar with the general toolset that your team has come t
 Great companies invest a great deal of effort into helping new engineers onboard to their codebases. 
 In this post, we'll take a deep dive with engineering leaders from 3 highly reputed engineering organizations to understand how they structure their onboarding, and how they address specific challenges in order to support their new hires and help them ramp up as quickly as possible.
 
-Limor Bergman is a former Director of Engineering at Digital Ocean, where she led the organizations responsible for Droplets, Kubernetes, Kernel, Performance, Systems, and Orchestration. 
+[Limor Bergman](https://www.linkedin.com/in/limorbergman/) is a former Director of Engineering at Digital Ocean, where she led the organizations responsible for Droplets, Kubernetes, Kernel, Performance, Systems, and Orchestration. 
 She's now the director of the mentorship program at PowerToFly, a non-profit dedicated to helping women grow their careers.
 
 [Ryan Djurovich](https://www.linkedin.com/in/ryandjurovich/) is a DevOps Manager at Xero, Australia's largest accounting software company. 
