@@ -13,16 +13,16 @@ The conclusion of every project should include analysis of performance. Below is
 
 **Author**: Eric Brody-Moore
 
-**Overview**: We processed sessions on Sourcegraph Cloud to categorize them as successful or failed search sessions and, most notably, how they correlates to week 1 retention.
+**Overview**: We processed sessions on Sourcegraph Cloud to categorize them as successful or failed search sessions and, most notably, how they correlates to week 1 retention. 
 
-At its core, a successful session includes a click into search results. See more context in the [RFC](https://docs.google.com/document/d/1hzW3kjnIJHzgh8JgCqVXVn7wJbzvCnT14LsaCT95S8E/edit?ts=608c6eb3#). Our definition of a successful session may have to change in the future. 
+**Caveat**: Our current defition/proxy of a successful session is a click into search results. This will evolve over time to become more accurate. See more context in the [RFC](https://docs.google.com/document/d/1hzW3kjnIJHzgh8JgCqVXVn7wJbzvCnT14LsaCT95S8E/edit?ts=608c6eb3#).
 
 ### Search session success/failure
 
-*Conclusion*: one successful session (in its definition today) does not lead to realization of the value proposition and week 1 retention.
+*Conclusion*: one successful session (in its definition today) does not lead to realization of the value proposition and week 1 retention. 
 
 This supports the need for a lot of projects/ideas already in motion:
-- Including code intelligence in search results (hovering leads to 2x retention compared to only searching)
+- Including code intelligence in search results (hovering is 2x retention correlated with retention than submitting a search)
 - Improvements to the search tour. 60% of failed search sessions had two or less searches, which were most likely low quality searches
 
 What I *think* will help but have no quantitative proof from this analysis:
@@ -46,6 +46,8 @@ Of the fails:
 Supporting data
 - 12% week 1 retention in all users who searched vs. week 1 24% retention for users who hovered and clicked 'find references' (Source: [Amplitude](https://analytics.amplitude.com/sourcegraph/chart/7l5vdg4?source=workspace))
 - Multiple searches vs. one search increases the week 1 retention from 10 -> 15% (Source: [Ampltide](https://analytics.amplitude.com/sourcegraph/chart/6gzjoql?source=workspace))
+
+**Note:** This data should not be looked at as causation, but we have additional qualitative analyses that makes me more confident in the conclusions. 
 
 
 ## 2021-01-11
