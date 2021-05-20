@@ -2,7 +2,6 @@
 
 Welcome to the distribution team! This document will guide you through distribution-specific onboarding tasks to make your start here at Sourcegraph as smooth as it can be.
 
-
 ## Distribution Onboarding Checklist.
 
 ### Week 1
@@ -47,12 +46,36 @@ Welcome to the distribution team! This document will guide you through distribut
 
 ### By the end of your first month, the following will be true
 
-#### Goals
+#### Goals:
 - Confidently deploy sourcegraph via all supported deployment methods, and understand when a customer would use one over the others.
 - Begin diving into and improving technical documentation and processes.
 - Understand how sourcegraph is released.
+- Confidently contributing to and closing team issues
 
 #### Tasks:
 - Review the sourcegraph install docs and make any appropriate updates.
 - Shadow the release captain during the release process. Point out things that don't make sense, ask questions, in order to help us improve the process.
+- Take on new issues, and pair with other engineers.
+
+### By the end of your second month, the following will be true
+
+#### Goals:
+- You will have assisted [customer engineering](../../ce/ce.md) and [customer support](../../support/index.md), taken ownership of any distribution tasks and resolved them.
+- Made improvements to our processes and how we deliver sourcegraph.
+
+#### Tasks
+- Take on the @distribution-support rotation and pair with the customer facing teams to resolve issues.
+- Identify inefficiences and raise issues to fix them
+
+### By the end of your third month, the following will be true
+
+#### Goals:
+ - Mentoring direct team members, and engineers in Customer Engineering and Customer Support
+ - Contribute to long term team goals
+
+#### Tasks:
+- Develop any new material required to help others level up and understand our product
+- Add to the teams planning and OKRs
+
+
 
