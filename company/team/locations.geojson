@@ -845,7 +845,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "name": "Nate Tang"},
+        "name": "Nate Tang"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -854,13 +855,14 @@
         ]
       }
     },
-    }
+    {
      "type": "Feature",
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
-        "name": "Jake Sorensen"},
+        "name": "Jake Sorensen"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -868,4 +870,6 @@
           34.182049
          ]
       }
-   
+    }
+    ]
+ }
