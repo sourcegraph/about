@@ -2,14 +2,14 @@
 
 Welcome to the distribution team! This document will guide you through distribution-specific onboarding tasks to make your start here at Sourcegraph as smooth as it can be.
 
-## Distribution Onboarding Checklist.
+## Distribution Onboarding Checklist
 
 ### Week 1
 
 #### Goals:
 - Clear knowledge of what the company’s, and Distributions’s mission, vision, values and culture are.
 - Know the expected outcome of each Distribution onboarding milestone.
-- Become familiar with Distribution [product](product.md),[tech stack](techstack.md) and [processes](recurring_processes.md).
+- Become familiar with Distribution [product](product.md),[tech stack](tech_stack.md) and [processes](recurring_processes.md).
 - Go through [General Onboarding](../../people-ops/onboarding/general_onboarding.md)
 - You have a sense of what tools you will be using and for what
 
