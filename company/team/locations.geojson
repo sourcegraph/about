@@ -853,6 +853,19 @@
           33.438926308946805
         ]
       }
+    },
     }
-  ]
-}
+     "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Jake Sorensen"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.307480,
+          34.182049
+         ]
+      }
+   
