@@ -1,4 +1,4 @@
-{
+  {
   "type": "FeatureCollection",
   "features": [
     {
@@ -852,6 +852,22 @@
         "coordinates": [
           -117.61731147766113,
           33.438926308946805
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Cassie Melani"
+    },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.34887838363649,
+          47.65703408702765
         ]
       }
     },
