@@ -28,7 +28,7 @@ You'll have to get some basics set up in your first few days:
 
 ### Onboarding sessions
 
-Your manager will help you schedule the following training sessions. 
+Your manager will help you schedule the following training sessions:
 
 - Product demo
     - Cloud vs. self-hosted
