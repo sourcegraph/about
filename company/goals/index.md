@@ -4,19 +4,14 @@ Our company goals are public.
 
 See "[Guidelines for goals](guidelines.md)" for more information about how we choose and use goals at Sourcegraph. Need to [edit the goals on this page](#how-to-edit)?
 
+[**Sourcegraph OKR Tracker**](https://docs.google.com/spreadsheets/d/1pNXVev2JtYC94lB1NIfsc8OqyYnnSFn7p5PYFcniblE/edit#gid=1699297878)
+
+
 <div id="goals-loading">
 	Compiling goals...
 	<br/>
 	<small>If the goals do not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
 </div>
-
-## [Top company goals](../../handbook/ceo/index.md#goals)
-
-## [Sales](../../handbook/sales/index.md#goals)
-
-## [Customer Engineering](../../handbook/ce/index.md#goals)
-
-## [Operations](../../handbook/ops/index.md#goals)
 
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 

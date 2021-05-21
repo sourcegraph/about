@@ -15,12 +15,24 @@
     - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
     - [Website style guide](website_style_guide.md)
 - [Developer Education](education.md)
+
+- Community Relations
     - [Public projects using Sourcegraph](public_projects_using_sourcegraph.md)
-- [Brand](Brand.md)
+
+- [Brand](brand/index.md)
+    - [Building a strong brand](brand/building_a_strong_brand.md)
+    - [Brand Guidelines](brand/brand_guidelines.md)
+    - [Creative Requests](brand/brand_and_creative_team_requests.md)
+    - [Production Process](brand/production_process.md)
+    - [Naming Process for Products, Features and Programs](brand/naming_process_for_products_features_and_programs.md)
+
 - [Marketing operations](marketing_operations.md)
     - [Livestream events](livestream.md)
     - [Looker dashboards](https://sourcegraph.looker.com/browse/boards/2)
     - [Digital ads](ad_conversion_flows.md)
+- Marketing requests and feedback
+    - [Make a request or share an idea](https://form.asana.com/?k=hNaq42PNshdQ1FjjEUKjLA&d=7195383522959)
+    - [Sign up for Marketing office hours](https://docs.google.com/spreadsheets/d/1o8rHntP0j6-JFryhc0_g6MKEI6l3dZE7NTKasyQx46M/edit#gid=0)
 - [Marketing roles - open positions](roles/index.md)
 
 ## Members
@@ -37,8 +49,10 @@
         - We will be hiring technical educators
     - [Sarah Reece](https://about.sourcegraph.com/company/team#sarah-reece-she-her), Director of Demand Generation
         - Lori Heyman, Digital Marketing Programs
+        - Rebecca Rissinger, Manager, Marketing Operations
     - Tommy Pesavento, Director of Brand Design
-        - We will be hiring a brand design team
+        - Fabiana Castellanos, Project Coordinator, Brand
+        - We are building a brand team
     - [Samson Goddy](https://about.sourcegraph.com/company/team#samson-goddy-he-him), Director of Community
         - [Vanesa Ortiz](../../company/team/index.md#vanesa-ortiz-she-her), Content Engineer
         - We will be hiring developer advocates

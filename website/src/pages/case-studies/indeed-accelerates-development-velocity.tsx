@@ -11,7 +11,7 @@ export default ((props: any) => (
         meta={{
             title: 'Indeed keeps code up to date and accelerates development velocity',
             description:
-                'Indeed case study.',
+                'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png'
         }}
         className="navbar-dark bg-black"

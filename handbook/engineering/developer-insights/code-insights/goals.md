@@ -1,58 +1,44 @@
 # Code insights goals and roadmap
 
-## Goals
+The Code insights team focuses on bringing code insights to life as a valuable new Sourcegraph product. 
+
+The team's goals and roadmap contain the features and customer signals that guide our work.  
+
+## Goals for FY22 
 
 See also our [completed goals](goals_completed.md).
 
-### FY22 OKR: 3 enterprise customers have created 2+ code insights that they check 2+ times a week
+### 1. Deliver a user-loved, revenue-capturing product 
 
-**Problem:** Engineers and engineering managers/directors/VPs want to be able to understand their codebase at a high level (which parts of the code base are health/unhealthy? How close are we to removing all instances of a code smell?). Existing tools that just use git data don't answer these questions because they don't look at the code itself, just the pattern of commits. Sourcegraph has all the information needed to answer these questions, but there is currently no way for an engineering leader to get the answer out of Sourcegraph.
+#### 1.1 Deliver code insights beta version
 
-**Value to Sourcegraph:** The Sourcegraph sales cycle is unusual because although we consistently wow our users, the economic decision-maker is usually not one of these users. Instead, the people with the power to sign a contract with us are higher up within an organization and usually depend on running a trial to fully understand the value of Sourcegraph. When code insights answers these personas' higher-level questions about codebases that our core features do not currently answer, it can dramatically speed up our sales cycle as well as our sales pipeline by giving decision makers a reason to buy Sourcegraph without needing to run a trial.
+**Problem:** Code insights can't be [in beta](https://docs.sourcegraph.com/admin/beta_and_prototype_features) until: 
 
-#### FY22Q1 OKR: 3 enterprise customers have created a code insight
+1. Users can create insights effectively and without error
+   1. This includes an easy path to finding/creating insights, like through the search UI (one-click create from search)
+1. Code insights can run on the backend and meet a user's loading-time expectations 
+   1. We'll build both backend optimizations and UI expectation-setting and communicating
+   1. This also involves exploring parallel rather than serial implementations
+1. We have docs for both of the above features
 
-**Problem:** While our existing code insights prototypes get customers interested in trying the product, they currently cause many problems for a customer who tries to use them, because:
-- The backend runs slowly on the scale of many days to populate data, and the frontend doesn't reveal or mitigate this
-- You create code insights in your settings file, which creates a poor UX for creating a code insight
-- There is limited in-product guidance of how to use or view code insights
+**Why we are focusing on this:** a beta that sets/meets appropriate user expectations, scales to their entire codebase, and is usable without hand-holding from CE/product is necessary to then ultimately enable insights by default in an open beta. An open beta in turn will allow us to collect feedback and add necessary features as we develop code insights into a revenue-capturing, generally available product.
 
-**Milestones and outcomes:**
+**How we will measure success:** We will track quantitative customer adoption and usage for metrics like number of insights created, number of users who have created an insight, and number of pageviews on code insights in our [Code Insights KPIs](https://sourcegraph.looker.com/dashboards/172) dashboard. We will also be in frequent contact with code insights customers and the CE team to collect qualitative feedback about the product.
 
-1.  Customers can easily create their own custom insights using a dedicated UI.
+#### 1.2 Deliver code insights GA version
 
-    - **Outcome:** Code insights can move from prototype to beta feature (easy to enable or enabled by default, documented, and supported by the CE team rather than the product team).
-    - **Outcome:** At least three customers create their own code insights that they actively reference.
+**Problem:** In order to launch code insights widely and capture the value in new revenue, in addition to the beta features, we'll need to:
 
-1. Code insights running on the backend over a large scale of repos create a positive user experience even if they require a long loading time.
+1. Make the more complex finer-touch improvements customers have already asked for and indicated are necessary, like repo filtering
+1. Improve where and when code insights display in context within Sourcegraph, and how a user can control that or share their insights
+1. Other features TBD based on beta feedback + progress
 
-    - **Outcome:** We see code insights churn after creation of an insight decrease by 50%.
+**Why we are focusing on this:** To deliver on creating a revenue-capturing product. This is important because we deeply believe in the [mission and vision](index.md#mission) of code insights, and in order to continue developing increasingly valuable features we must prove that the product can be self-sustaining. 
 
-#### Future milestones and outcomes:
-
-1. Code insights are useful to a broad set of customers (this may include integrations with batch changes, code monitoring, or third party data sources – see [Productboard feature view](https://sourcegraph.productboard.com/feature-board/1793095-code-insights)).
-
-    - **Outcome:** Code insights features are actively in use by VPs/Directors at 5+ enterprise customers.
-
-1. Code insights is GA (generally available) for all customers and has low/no barriers to wide adoption.
-
-    - **Outcome:** Customers communicate to their AE/CE that they use code insights in making engineering decisions.
-    - **Outcome:** 10% of Sourcegraph customers actively use code insights.
-    - **Outcome:** Customers use code insights with limited help from CE in setting them up.
-
-1. Code insights provides enough value to be a paid product.
-
-    - **Outcome:** Existing customers buy code insights as its own paid feature.
-    - **Outcome:** Customers who express explicit interest in the code insights features have a faster sales cycle through our pipeline than our average customer.
-    - **Outcome:** Code insights is the primary driver behind 5 new enterprise sales.
+**How we will measure success:** Our primary measure of success will be if customers find code insights valuable enough to purchase it. Our secondary success metrics (or post-purchase success metrics) will be the same adoption and retention metrics on our [Code Insights KPIs](https://sourcegraph.looker.com/dashboards/172) dashboard.
 
 ## Roadmap
 
-Our [roadmap is in Productboard](https://sourcegraph.productboard.com/roadmap/2327428-code-insights-objectives-roadmap). We organize our roadmap by milestone objective rather than feature, because to achieve each milestone we may shift or prioritize features based on further customer feedback or product decisions.
+### FY22
 
-Our roadmap as of 2021-03-19:
-
-<div style="overflow-x: auto; width: 100%">
-<!-- Screenshot taken with this browser extension: https://chrome.google.com/webstore/detail/svg-screenshot/nfakpcpmhhilkdpphcjgnokknpbpdllg -->
-<object data="./roadmap.svg" type="image/svg+xml" />
-</div>
+The Code Insights [roadmap](https://sourcegraph.productboard.com/feature-board/2689572-fy2022-roadmap-developer-insights) can be viewed in Productboard. (There is also a [Code insights team-specific gantt chart roadmap](https://sourcegraph.productboard.com/roadmap/2809900-code-insights-features-timeline-roadmap) view with the same information.)

@@ -1,4 +1,4 @@
-{
+  {
   "type": "FeatureCollection",
   "features": [
     {
@@ -780,19 +780,112 @@
           50.84323737103244
         ]
       }
-     },
-     { 
-       "type": "Feature", 
-       "properties": { 
-         "name": "Rebecca Dodd" 
-       }, 
-       "geometry": { 
-         "type": "Point", 
-         "coordinates": [ 
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rebecca Dodd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -0.127758,
           51.507351
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kelli Rockwell"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.19268798828126,
+          47.616346999837226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "name": "Debbie Johnstone",
+        "marker-size": "medium",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.686126261949539,
+          50.162324321993545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name:": "Dan Mckean"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1917724609375,
+          51.004681939880314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Nate Tang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.61731147766113,
+          33.438926308946805
+        ]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Cassie Melani"
+    },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.34887838363649,
+          47.65703408702765
+        ]
+      }
+    },
+    {
+     "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Jake Sorensen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.307480,
+          34.182049
+         ]
+      }
     }
-  ]
-}
+    ]
+ }

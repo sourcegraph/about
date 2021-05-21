@@ -26,6 +26,7 @@ See [Goals](goals.md)
 - [Internal infrastructure](internal_infrastructure.md)
 - [Tools](tools/index.md)
 - [Tech stack](tech_stack.md)
+- [Onboarding](onboarding.md)
 
 ### Resources
 
@@ -47,8 +48,8 @@ See [Goals](goals.md)
 
 ## Members
 
-- We're hiring a [Product Manager](../../product/roles/index.md#product-manager) ([apply here](https://boards.greenhouse.io/sourcegraph91/jobs/4013258004)) for this role. The engineering team is owning PM responsibilities in the meantime.
-- FQ2 [Engineering Manager](../roles.md#engineering-manager) hire {#distribution-eng}
+- [Dan Mckean (Product Manager)](../../../company/team/index.md#dan-mckean-he-him)
+- FQ2 [Engineering Manager](../roles.md#engineering-manager) hire, [Bill Creager](../../../company/team/index.md#bill-creager) acting manager until then {#distribution-eng}
   - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
   - [Dave Try](../../../company/team/index.md#dave-try)
   - [Dax McDonald](../../../company/team/index.md#dax-mcdonald-he-him)
@@ -73,10 +74,14 @@ Who is on-call? Slack: `/genie whoisoncall distribution-support`
 
 _You can directly notify the on-call support engineer by using the handle `@distribution-support`._
 
-We maintain a support rotation to deal day-to-day requests (respond to ad-hoc, time-sensitive questions from customers or other teams, RFC review requests, etc). This makes it easier for other teams to reach out an engineer on the team who's priority is answering these questions and helps other engineers on the team remain focused. You can read more about this on the references below.
+We maintain a support rotation to deal day-to-day requests (respond to ad-hoc, time-sensitive questions from customers or other teams, RFC review requests, etc). This makes it easier for other teams to reach out an engineer on the team whose priority is being the point of contact for these questions. You can read more about this on the references below.
 When you are the active support engineer, your focus and priority is responding to requests and questions in #distributioneers, sometimes this might require creating an issue, re-assigning, looping in other engineers, etc.
 
 _If for any reason you are unavailable for a rotation, please coordinate with the team for someone to take over._
+
+**Resonsibilities**:
+
+The on-call support engineer is responsbile for owning the communication and determining the relative priority of the issue. However, the on-call engineer is **not expected** to solve issues entirely on their own (in fact, it's encouraged to pull in the other engineers if necessary - to bounce ideas off of one another, someone else might have more expertise in this particular area, etc.).
 
 **References:**
 

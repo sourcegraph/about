@@ -13,6 +13,7 @@
 - [Noemi Mercado](../../../company/team/index.md#noemi-mercado-she-her), Head of People Ops
   - Cecily Black, Recruiting Coordinator
   - [Inés Roitman](https://about.sourcegraph.com/company/team#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
+  - [Cassie Melani](https://about.sourcegraph.com/company/team#cassie-melani-she-her), Teammate Success Manager
 
 ## Teammate experience
 
@@ -35,7 +36,7 @@
 - [Benefits and perks](benefits-and-perks.md)
 - [Travel](travel.md)
 - [Covered expenses](spending-company-money.md) (aka "Spending company money")
-- [Expense reports](expenses.md)
+- [Expense reports](../ops/finance/expenses.md)
 - [Vacation/FTO/PTO](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks#vacation)
 - [Requesting time off](requesting-time-off.md)
 - [Holidays](holidays.md)

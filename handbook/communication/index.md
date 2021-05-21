@@ -157,19 +157,7 @@ Brain Food meetings are our internal knowledge sharing sessions. These meetings 
 - Brainstorming session about an experimental subject
 - Preparing an external talk
 
-Brain Food sessions take place every other friday and, to accomodate timezone differences, are split in two separate sessions:
-
-- EMEA friendly session time: 16:00 CET
-- NA friendly session time: 2:00PM PST
-
-Each session is 1-hour long, however the session is only as long as the group needs to present and wants to keep the discussion going. They will both be recorded and published on Slack. Speakers can sign-up for either one of them depending on their own timezone.
-
-Presentations can use one of two formats:
-
-- Lightning Talks: Maximum 7 minutes long
-- Presentation: Maximum 15 minutes long
-
-To sign-up, use this [Google Sheet](https://docs.google.com/spreadsheets/d/1HLVFH9JUxchPNH4FoIQAThorbpdvmTl0ndmZzmpjsuU/edit?usp=sharing). The talk will be added to the Google Calendar invitation which will be sent to everyone.
+If you have an idea for a session, add an event to the calendar and invite the engineering-team@sourcegraph.com
 
 ## Getting nice email signatures
 
@@ -179,7 +167,7 @@ To sign-up, use this [Google Sheet](https://docs.google.com/spreadsheets/d/1HLVF
 
 2. Make the first line e.g. **Tommy Pesavento** (he/him)
 3. Make the second line your role, include any additional information you like on subsequent lines (socials, etc.)
-4. Choose **Insert image** and then **Web Address (URL)** and enter https://user-images.githubusercontent.com/3173176/115082082-2d892380-9eba-11eb-9606-6c4b9c4eb465.png then choose **Medium** size after it has been entered.
+4. Choose **Insert image** and then **Web Address (URL)** and enter https://user-images.githubusercontent.com/3173176/115082082-2d892380-9eba-11eb-9606-6c4b9c4eb465.png then choose **Small** size after it has been entered.
 5. Click the image, then click **Link** and paste https://sourcegraph.com into the **Web Address** field. Now your image links to the website!
 6. Your signature should now look something like this, and clicking the Sourcegraph logo should bring you to sourcegraph.com:
 7. You may wish to add another line like `What is Universal Code Search? | We're hiring!` with links to https://about.sourcegraph.com/ and https://about.sourcegraph.com/company/careers

@@ -1,3 +1,0 @@
-# Brand
-
-Page coming soon!

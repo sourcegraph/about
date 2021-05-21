@@ -1,4 +1,5 @@
-# Marketing operations
+# Marketing operations*
+ *WIP as of 5.17.21 (This page was created some time ago and is in the process of being updated!)
 
 ## Lead management
 
@@ -110,7 +111,7 @@ Any inquiry that is:
 
 - [Hubspot](https://app.hubspot.com/reports-dashboard/2762526/view/144686)
 - [Salesforce](https://sourcegraph2020.my.salesforce.com/)
-- Zoominfo
+- Clearbit has replaced Zoominfo for data enrichment and is now owned by [Sales Strategy and Operations](https://about.sourcegraph.com/handbook/sales/sales-ops) 
 
 ### Analytics 
 

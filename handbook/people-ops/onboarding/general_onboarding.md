@@ -13,12 +13,12 @@
 - **[Zoom](https://zoom.us/signin):** Set up your Zoom account and [recommended settings](../../communication.md#video-calls).
 - **[Jamf Now](https://sourcegraph.jamfcloud.com/)**: Enroll your device in our MDM (ask Cecily for your access code).
 - It might not be immediately necessary, but if you ever need to click a HubSpot link just ask for access in #sales.
-
+- **[Sourcegraph.com](https://sourcegraph.com)**: Create an account and ask in Slack [#it-tech-ops](https://sourcegraph.slack.com/archives/C01CSS3TC75) to be added to [the Sourcegraph organization](https://sourcegraph.com/organizations/sourcegraph/settings/members) so you get to test in-development features, etc. 
 
 ### U.S. based teammates
 
 - **[Expensify](https://www.expensify.com/signin):** Submit receipts for any work related expenses for reimbursement. Expensify will be linked to your Sourcegraph email.
-- **[Gusto](https://gusto.com/)**: Select your health plans, set up payment information, enter your I-9 information. Gusto will be linked to your personal email.
+- **[Gusto](https://gusto.com/)**: Select your health plans, set up payment information, enter your I-9 information. Gusto will be linked to your personal email. *We are in the process of transitioning off of Gusto to Rippling. This section will be updated soon*
 - **[Human Interest](https://humaninterest.com/):** Check on your 401k.
 
 ### Teammates based outside of U.S.

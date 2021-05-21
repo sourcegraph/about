@@ -4,7 +4,7 @@ This page documents resources that are relevant and valuable to anyone on the en
 
 ## Slack
 
-- #eng-manager-team is a public channel where engineering managers can discuss work as a [first team](https://lethain.com/first-team/).
+- #eng-manager-internal is a public channel where engineering managers can discuss work as a [first team](https://lethain.com/first-team/).
 - #leadership-chat is a public channel (not specific to engineering) where anyone can discuss and share information of general interest to leadership at Sourcegraph.
 - #manager-team is a private channel where managers across functions can solicit advice from and share info with fellow managers about topics that they do not feel comfortable discussing in #leadership-chat for any reason.
 
@@ -47,7 +47,7 @@ Here are some books that multiple people on the team have read and recommend. If
 - [Radical Candor](https://www.radicalcandor.com/the-book/) - How to be a great leader by caring personally and challenging directly.
 - [An Elegant Puzzle](https://lethain.com/elegant-puzzle/) - A field manual on how to do engineering management. Reads like a well structured markdown file.
 - [The Five Dysfunctions of a Team](https://www.amazon.com/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756) - A model of how to think about what makes a highly effective team paired with a fictional story that illustrates the model.
-- A few members of the engineering management team will be reading [The Leader’s Guide to Unconscious Bias](https://www.amazon.com/Leaders-Guide-Unconscious-Bias-High-Performing/dp/1982144319) and doing some [facilitated small group discussions](../support/support-values-enablement.md#part-2-deep-dive-on-be-welcoming-and-inclusive). This is like a small scale beta test of [one step of our plan to invest in diversity, equity, and inclusion this year](../communication/dei.md#unconscious-bias). The tentative plan for the first cohort (can be adjusted based on availability of the actual people in the first cohort) would be:
+- A few members of the engineering management team will be reading [The Leader’s Guide to Unconscious Bias](https://www.amazon.com/Leaders-Guide-Unconscious-Bias-High-Performing/dp/1982144319) and doing some [facilitated small group discussions](../support/support-values-enablement.md#part-2-deep-dive-on-be-welcoming-and-inclusive). This is like a small scale beta test of [one step of our plan to invest in diversity, equity, and inclusion this year](../communication/dei.md#unconscious-bias). The tentative plan for the first cohort (can be adjusted based on availability of the actual people in the first cohort) would be: {#the-leaders-guide-to-unconscious-bias}
   - Kickoff email week of May 17
   - Session 1 week of May 24
   - Session 2 week of June 7

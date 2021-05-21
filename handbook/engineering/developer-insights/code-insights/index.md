@@ -10,7 +10,7 @@ The code insights team is responsible for building and delivering code insights 
 - [Alicja Suska](../../../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../../product/roles/index.md#product-designer))
 - [Felix Becker](../../../../company/team/index.md#felix-becker) ([Engineering Manager](../../roles.md#engineering-manager)) {#code-insights-eng}
   - [Vova Kulikov](https://about.sourcegraph.com/company/team#vova-kulikov-he-him) (Frontend Engineer)
-  - C. C. (Backend Engineer) starting 2021-05-27
+  - [Coury Clark](../../../../company/team/index.md#coury-clark-he-him) (Backend Engineer)
   - [Valery Bugakov](../../../../company/team/index.md#valery-bugakov-he-him) (Frontend Engineer) joining 2021-06-07 from the [Frontend platform team](../frontend-platform/index.md)
 
 ## Mission
@@ -50,7 +50,7 @@ For more information about code insights, see the original [product document](ht
 
 ## Contact
 
-- [#code-insights-chat](https://sourcegraph.slack.com/archives/C014ZCKMCAV) channel or @codeinsights in Slack.
+- [#code-insights](https://sourcegraph.slack.com/archives/C014ZCKMCAV) channel or @codeinsights in Slack.
 - [team/code-insights](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/code-insights) label on GitHub.
 
 ## Goals and roadmap
@@ -76,13 +76,15 @@ Attendees are encouraged to add comments on talking points asynchronously before
 We plan and track our day-to-day work on our [Kanban board](https://github.com/orgs/sourcegraph/projects/118). Our current process is as follows:
 
 - Incoming tickets (e.g. from other teams) arrive in the _Inbox_ column.
-- Work is scheduled by adding a card to the _Planned_ column. This happens after talking through the next priorities in our [weekly sync](#weekly-sync) or raising something asynchronously in the #code-insights-chat Slack channel.
+- Work is scheduled by adding a card to the _Planned_ column. This happens after talking through the next priorities in our [weekly sync](#weekly-sync) or raising something asynchronously in the #code-insights Slack channel.
   - The _Planned_ column is an _ordered_ column, by priority. Priority is discussed on the team.
   - Work should not be moved into this column until it is ready for development.
   - Anything that needs design input gets the `needs-design` label and goes in the _Needs design_ column.
 - When starting work, engineers pull cards from the _Planned_ column and move it to the _In Progress_ column.
 - There should never be more than a couple of cards in the _In Progress_ column at the same time. If we paused work on something (e.g. because priorities changed), it should be moved back to _Planned_ or _Icebox_ as appropriate.
 - Things we triaged from the _Inbox_, but don't plan to work on, go into the _Icebox_.
+
+Note: we intentionally plan so we can avoid merging significant work less than two days before a release (if a release is on the 20th, our last day to merge is the 18th). Exceptions require explicit approval of both the PM and EM. 
 
 ### Tracking Issues
 

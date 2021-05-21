@@ -55,6 +55,7 @@ Welcome to Sourcegraph - we're very excited to have you on the Customer Engineer
 - Shadow as many customer/prospect calls as possible
 - Participate in any relevant training sessions or workshops
 - Deliver demo cert presentation to team
+- Go through the [Batch Change CE onboarding](../engineering/batch-changes/ce-onboarding.md)
 
 ### Month 2
 
@@ -95,21 +96,24 @@ NOTE: Request access/licenses to these tools in [#it-tech-ops](https://sourcegra
 
 ## Resources
 
-#### Demo Recordings
+### Demo Recordings
   - [101 Demo](https://drive.google.com/file/d/1VUZ0rnZQpNgjtGDI0tMC-h-OtL0Czz8H/view?usp=sharing) (dan@)
   - [Product Info Session](https://youtu.be/iTBTri_q5MA) (jonah@)
   - [CE-to-CE Demo walkthrough](https://drive.google.com/drive/folders/1rf2E2KLBztH1Qe2shq3p39afF5mLK7m1)
-#### Product Deep-Dives
+
+### Product Deep-Dives
   - [Batch Changes Overiew Deck](https://docs.google.com/presentation/d/1CN3KQf1Hfdb4RO6FgBgKuiHK4ERcOAHPgVnOcBu-MPU/edit#slide=id.g7d2aea8729_0_0)
   - [Structural Search Overview](https://zoom.us/rec/share/CJtwQ7uEp3v1pvPqdUD7GDuaYm_2g6w3zSP7GNA3aGQHZDjQ72awYXvHEnwsoio6.Bt-0DuuAZjs7UXMc?startTime=1606237440000)
   - [Code Intelligence](https://drive.google.com/file/d/1TyCj62LLmhvamXK-CC6D8-7uGk1jmsKj/view) [[slides](https://docs.google.com/presentation/d/181oMTXRmcTqTCfOe5P__fLKwlzV1uk9wvwG6ocFgz20/edit?usp=sharing)]
-#### CE Resources
+
+### CE Resources
   - [Shared CE Calendar](https://calendar.google.com/calendar/u/0?cid=Y19yY3Y0ZTRqODI0OXZzNmJwbzd0bXFrZjVuZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
   - [Open opportunities with assigned CE in Salesforce](https://sourcegraph2020.lightning.force.com/lightning/r/Report/00O3t000006jUsfEAE/view)
   - [Deploying Sourcegraph](https://docs.sourcegraph.com/admin/install):
      - Watch [Dave's Kubernetes Walkthrough video](https://drive.google.com/drive/folders/1JqQlrmGX8u_EuhNptj-qrzuZ4RifhTuF) for an understanding of that setup process
     - Watch [Stephen's Kubernetes Upgrade video](https://drive.google.com/file/d/1oIrKJPo9hvc2UMfpb-a57HV9fCYEcS9n/view) to see how customers upgrade K8s instances.
-    -   Understand the 3 differrent Sourcegraph deployment methods
+    -   Understand the 3 different Sourcegraph deployment methods
+        - [Deployment Type vs. Product](./deployment-methods.md)   
         - ["Deployment types - A crash course in Sourcegraph"](https://docs.google.com/presentation/d/1u4mbXjubQqV-6WFbuS7Q1b_X6BVh-_GWzzFQMcrAzLw/edit#slide=id.p)
   - [Architecture overview](https://docs.sourcegraph.com/dev/background-information/architecture) to understand how our application and system         works.
       - Also review [How the Sourcegraph CLI executes a batch spec](https://docs.sourcegraph.com/batch_changes/explanations/how_src_executes_a_batch_spec)
@@ -117,8 +121,6 @@ NOTE: Request access/licenses to these tools in [#it-tech-ops](https://sourcegra
      - [Grafana and Prometheus](https://docs.sourcegraph.com/admin/observability/metrics)
      - [Tracing](https://docs.sourcegraph.com/admin/observability/tracing)
      - [Alerting](https://docs.sourcegraph.com/admin/observability/alerting)
-
-
 
 ## FAQ
 

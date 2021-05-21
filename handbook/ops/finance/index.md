@@ -6,6 +6,7 @@ The finance & accounting team is responsible for helping Sourcegraph acquire and
 - [ARR tracking and the monthly closing process](arr.md)
 - [Paying bills](payables.md)
 - [Submitting an invoice](invoices.md)
+- [Expenses](expenses.md)
 
 ## Team
 
@@ -74,9 +75,9 @@ A fiscal year is a one-year period that corporations like Sourcegraph use for ac
 
 Annual Recurring Revenue (ARR) is the dollar value of contracted recurring revenue in a (normalized) one-year period.
 
-ARR includes committed [bookings](#booking) with contract start dates that fall in the first 15 days of the following calendar month. This allows Sourcegraph sales team members to get credit for renewals and expansions that may fall in the (near) future. Exceptions to this require written approval from the VP of Operations and the VP of Sales.
+ARR includes committed [bookings](#booking) with contract start dates that fall in the first 15 days of the following calendar month. This allows Sourcegraph sales team members to get credit for renewals and expansions that may fall in the (near) future. Exceptions to this require written approval from the VP of Operations and the VP of Sales. Please see [ARR timing examples](https://docs.google.com/document/d/1SdUzcW8UUUgSjawIdjPw2bDBJ-j0Fjo3Et0r6yOnikE/edit).
 
-Furthermore, if the Company enters into a multi-year contract with a customer and the out-year billings are contractually locked in, then we will recognize ARR on a straight-line basis. If there is a term or clause in the contract that provides for an opt-out arrangement, then we will only recognize the portion of ARR that is contractually guaranteed. This policy allows Sourcegraph sales team members to get credit for deals with higher pricing in the later portion of the contractual period. Exceptions to this require written approval from the VP of Operations and the VP of Sales. Please see [ARR examples](https://docs.google.com/document/d/1H-qNQTzlDnnr6uNP4NcFFYwkL-ILyoQlBW9qEaYglg0/edit)
+Furthermore, if the Company enters into a multi-year contract with a customer and the out-year billings are contractually locked in, then we will recognize ARR on a straight-line basis. If there is a term or clause in the contract that provides for an opt-out arrangement, then we will only recognize the portion of ARR that is contractually guaranteed. This policy allows Sourcegraph sales team members to get credit for deals with higher pricing in the later portion of the contractual period. Exceptions to this require written approval from the VP of Operations and the VP of Sales. Please see [ARR examples](https://docs.google.com/document/d/1H-qNQTzlDnnr6uNP4NcFFYwkL-ILyoQlBW9qEaYglg0/edit).
 
 ### IARR
 
@@ -91,6 +92,8 @@ New [IARR](#iarr) is IARR from *new customers* (i.e., organizations that were **
 Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations that were already customers at the beginning of the period).
 
 If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
+
+The finance team reviews the AR aging schedule on a monthly basis and assesses customer collectability risk. If an existing customer signs a contract but holds an outstanding bill which the Finance team has deemed a high probability to be uncollectible, the Company will not recognize Expansion IARR until the full amount of the outstanding invoice is paid. 
 
 ### Booking
 
