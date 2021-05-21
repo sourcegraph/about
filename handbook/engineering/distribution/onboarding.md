@@ -1,6 +1,7 @@
 # Distribution Engineer Oboarding
 
-Welcome to the distribution team! This document will guide you through distribution-specific onboarding tasks to make your start here at Sourcegraph as smooth as it can be.
+Welcome to the distribution team! This document will guide you through distribution-specific onboarding tasks to make your start here at Sourcegraph as smooth as it can be. Make sure you've read and completed the [general engineering onboarding guide](https://about.sourcegraph.com/handbook/engineering/onboarding) and the per-role guides ([Software engineer onboarding](https://about.sourcegraph.com/handbook/engineering/onboarding/software-engineer-onboarding) and [Engineering manager onboarding](https://about.sourcegraph.com/handbook/engineering/onboarding/engineering-manager-onboarding))
+
 
 ## Distribution Onboarding Checklist
 
@@ -78,4 +79,3 @@ Welcome to the distribution team! This document will guide you through distribut
 #### Tasks:
 - Develop any new material required to help others level up and understand our product
 - Add to the teams planning and OKRs
-
