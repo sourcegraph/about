@@ -12,8 +12,7 @@ _Total interview time: 4 hours + ~1 hour project_
 1. [30 min] **Data deep dive**: The biz ops talks with you about how you think about measuring product. [Internal interviewer documentation](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/customers-and-data.md)
 1. [30 hr] **Engineering collaboration**: The Engineering Manager from the team you're interviewing for talks with you about how you collaborate and work within a team. [Internal interviewer documentation](https://github.com/sourcegraph/interviews/blob/master/product/product-manager/design-engineering-collaboration.md)
 1. [30 min] [Beyang Liu](../../../../../company/team/index.md#beyang-liu) (CTO)
-1. We make you a job offer.
-1. We check your references during your first week to find out what motivates you and how best to work with you.
+1. We make you a job offer & you accept! :)
 
 We want to ensure Sourcegraph is an environment that suits your working style and empowers you to do your best work, so we are eager to answer any questions that you have about us at any point in the interview process.
 
