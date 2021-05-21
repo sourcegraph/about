@@ -36,7 +36,7 @@ Welcome to the distribution team! This document will guide you through distribut
 - Develop high-level understanding of product.
 - You are participating in our team rituals.
 - Get to know your team.
-- Close at least one issue.
+- Work towards closing one issue.
 #### Tasks:
 - Attend product tour.
 - Schedule a 1 on 1 meeting with each of the engineers in the team
@@ -76,6 +76,5 @@ Welcome to the distribution team! This document will guide you through distribut
 #### Tasks:
 - Develop any new material required to help others level up and understand our product
 - Add to the teams planning and OKRs
-
 
 
