@@ -12,15 +12,15 @@ export default ((props: any) => (
         meta={{
             title: 'Cloudflare accelerates debugging and improves security',
             description:
-                'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
+                'Cloudflare case study. Learn how Cloudflare accelerates debugging and improves security',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png'
         }}
         className="navbar-dark bg-black"
     >
         <CaseStudyPage
-            customer="Indeed"
+            customer="Cloudflare"
             title="Cloudflare accelerates debugging and improves security"
-            logo="/external-logos/cloudflare-logo-vector.svg"
+            logo="/external-logos/cloudflare-white-logo.png"
             quote={{
                 quote:
                     'Sourcegraph is the only code search tool that natively integrates with our code and understands how our code works.',
