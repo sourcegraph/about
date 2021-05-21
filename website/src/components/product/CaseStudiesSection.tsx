@@ -10,6 +10,12 @@ const CASESTUDIES: {
     external?: boolean
 }[] = [
         {
+            name: 'Cloudflare',
+            logo: '/external-logos/cloudflare-logo-vector.svg',
+            title: 'Cloudflare accelerates debugging and improves security',
+            url: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
+        },
+        {
             name: 'Indeed',
             logo: '/external-logos/indeed-logo.svg',
             title: 'Indeed keeps code up to date and accelerates development velocity',
