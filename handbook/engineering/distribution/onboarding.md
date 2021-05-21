@@ -7,7 +7,7 @@ Welcome to the distribution team! This document will guide you through distribut
 ### Week 1
 
 #### Goals:
-- Clear knowledge of what the company’s, and Distributions’s mission, vision, values and culture are.
+- Clear knowledge of the [company goals](https://about.sourcegraph.com/company/goals) and [values](https://about.sourcegraph.com/company/values) and [culture](https://about.sourcegraph.com/handbook/communication/code_of_conduct),  as well as [Distributions’s mission and vision](https://about.sourcegraph.com/handbook/engineering/distribution).
 - Know the expected outcome of each Distribution onboarding milestone.
 - Become familiar with Distribution [product](product.md),[tech stack](tech_stack.md) and [processes](recurring_processes.md).
 - Go through [General Onboarding](../../people-ops/onboarding/general_onboarding.md)
@@ -76,5 +76,4 @@ Welcome to the distribution team! This document will guide you through distribut
 #### Tasks:
 - Develop any new material required to help others level up and understand our product
 - Add to the teams planning and OKRs
-
 
