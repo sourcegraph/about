@@ -11,7 +11,7 @@ const CASESTUDIES: {
 }[] = [
         {
             name: 'Cloudflare',
-            logo: '/external-logos/cloudflare-logo-vector.svg',
+            logo: '/external-logos/cloudflare-color-logo.svg',
             title: 'Cloudflare accelerates debugging and improves security',
             url: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
         },
