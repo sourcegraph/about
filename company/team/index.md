@@ -885,3 +885,11 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Phoenix, AZ, USA
 - coury@sourcegraph.com
 - Born and raised in Arizona, currently living in Phoenix. He learned to fly airplanes when he was 12 years old at a local glider club, and got his pilot’s license in both gliders and single engine airplanes in his teens. He started programming in c++ with a desire to make video games, and spent some time learning that he is a terrible 3D artist in Maya. Since then, Coury has loved exploring the complexities of software engineering, and has decided he is still a terrible artist (in any dimension). In his free time he likes to play music on piano / guitar, explore new foods through cooking, spend time birding and doing photography, and hanging out with his wife and cat.
+
+## Aimee Menne (she/her)
+- Director of Customer Engineering
+- Denver, CO USA 🇺🇸
+- Github: [amenne](https://github.com/amenne)
+- [aimee@sourcegraph.com](mailto:aimee@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/aimee-menne-8343487/)
+- Aimee has spent her career, and is extremely passionate about, delivering customer-centric solutions. An Indiana native, she spent time in both Washington DC and San Francisco before landing in Denver, Colorado. Outside of work, Aimee is usually doing a variety of outdoor activities (running, cycling, skiing, hiking, camping, fishing) or traveling to new places.
+

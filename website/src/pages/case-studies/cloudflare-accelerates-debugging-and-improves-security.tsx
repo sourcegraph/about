@@ -12,15 +12,15 @@ export default ((props: any) => (
         meta={{
             title: 'Cloudflare accelerates debugging and improves security',
             description:
-                'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
+                'Cloudflare case study. Learn how Cloudflare accelerates debugging and improves security',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png'
         }}
         className="navbar-dark bg-black"
     >
         <CaseStudyPage
-            customer="Indeed"
+            customer="Cloudflare"
             title="Cloudflare accelerates debugging and improves security"
-            logo="/external-logos/cloudflare-logo-vector.svg"
+            logo="/external-logos/cloudflare-white-logo.png"
             quote={{
                 quote:
                     'Sourcegraph is the only code search tool that natively integrates with our code and understands how our code works.',
@@ -31,7 +31,7 @@ export default ((props: any) => (
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
                     <p>
-                        A web performance and security company, Cloudflare offers CDN, DNS, DDoS protection and security products and 
+                        A web performance and security company, Cloudflare offers CDN, DNS, DDoS protection, and security products and 
                         services to millions of customers worldwide. The company has approximately 2,000 employees, a quarter of which are 
                         engineers.
                     </p>
@@ -45,16 +45,14 @@ export default ((props: any) => (
                     </p>
 
                     <p>
-                        But using their code host’s native code search functionality wasn't cutting it. For example, their code host’s 
-                        native search functionality would take ASCII characters and run them through ElasticSearch. Special characters, 
-                        including spaces, were completely ignored and there was no way to filter results based on file types, folder names, 
-                        or code logic.
+                        But using their code host’s native code search functionality wasn't cutting it. For example, it would take 
+                        ASCII characters and run them through ElasticSearch. Special characters, including spaces, were completely 
+                        ignored and there was no way to filter results based on file types, folder names, or code logic.
                     </p>
 
                     <InContentBlockquote
                         quote="We were trying to answer questions like who was using specific dependencies and different libraries and where are 
-                        these lines of code or log lines coming from. We needed to be able to search thousands of repos to find them,” said 
-                        Terin Stock, Systems Engineer at Cloudflare."
+                        these lines of code or log lines coming from. We needed to be able to search thousands of repos to find them."
                         author={terinStock}
                     />
 
