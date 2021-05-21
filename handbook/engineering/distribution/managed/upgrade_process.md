@@ -63,6 +63,8 @@ Export the following values in your shell based on the above:
 ```sh
 export OLD_DEPLOYMENT=red # the current deployment from above
 export NEW_DEPLOYMENT=$([ "$OLD_DEPLOYMENT" = "red" ] && echo "black" || echo "red")
+# old version used to verify upgrade
+export OLD_VERSION=$(cat ${CUSTOMER}\/${OLD_DEPLOYMENT}\/VERSION)
 ```
 
 Make sure your copy of the [`deploy-sourcegraph-managed`](https://github.com/sourcegraph/deploy-sourcegraph-managed) repository is up to date:
@@ -188,7 +190,7 @@ For each reference, ensure that the *entire* service entry is up to date (i.e. n
 You can list references like so (if nothing shows up, you should be good to go):
 
 ```sh
-cat $NEW_DEPLOYMENT/docker-compose/docker-compose.yaml | grep ${"$(cat $OLD_DEPLOYMENT/VERSION)"#v}
+cat $NEW_DEPLOYMENT/docker-compose/docker-compose.yaml | grep ${OLD_VERSION#v}
 ```
 
 Commit and apply the upgrade:
@@ -254,7 +256,7 @@ echo "gcloud compute start-iap-tunnel default-$NEW_DEPLOYMENT-instance 80 --loca
 Ensure that no containers are running from the previous deployment
 
 ```sh
-docker ps | grep ${OLD_VERSION}
+gcloud beta compute ssh --zone "us-central1-f" --tunnel-through-iap --project "sourcegraph-managed-${CUSTOMER}" --command "docker ps --format {{.Image}} | grep ${OLD_VERSION#v}" root@default-${NEW_DEPLOYMENT}-instance
 ```
 
 Check that `src` access is set up correctly:
