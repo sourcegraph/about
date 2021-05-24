@@ -6,7 +6,7 @@ publishDate: 2021-05-12T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph-part-2
 heroImage: https://sourcegraphstatic.com/blog/lsif-go/lsif-go-improvements.png
-published: true
+published: false
 ---
 
 <!-- TODO - recap previous post -->
