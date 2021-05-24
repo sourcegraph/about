@@ -11,7 +11,10 @@ published: true
 
 Since the first version of Sourcegraph, precise code navigation has been a first-order concern. Its ability to provide compiler-accurate code navigation in a web-based interface is a superpower for our users.
 
-![Cross-repository jump to definition](https://sourcegraphstatic.com/precise-xrepo-j2d.gif)
+<figure>
+  <img src="https://sourcegraphstatic.com/precise-xrepo-j2d.gif" alt="Cross-repository jump to definition"/>
+  <figcaption>Cross-repository jump to definition from a use in <code>sourcegraph/sourcegraph</code> to a definition in <code>gorilla/mux</code>.</figcaption>
+</figure>
 
 The [journey to our current implementation](/evolution-of-the-precise-code-intel-backend/) began in February 2019 when we shifted our efforts from running Language Servers along side Sourcegraph to pre-indexing source code via the Language Server Index Format (LSIF) and uploading it to Sourcegraph. This change introduced a new requirement of the user: they are now responsible for producing and uploading the LSIF index.
 
@@ -106,9 +109,10 @@ This query maintains a worklist (the query-local `lineage` table) seeded by the 
 
 The values of the tables above represent the following hypothetical commit graph, where `a36064` is the head of the `main` branch, `6106fc` is the head of the feature branch `feat/x`, and the commits with uploads (`f4fb06` and `d67b8d`) are drawn in blue.
 
-<div class="no-shadow">
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph1.png" alt="sample commit graph">
-</div>
+<figure>
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph1.png" alt="Sample commit graph">
+  <figcaption>A Git commit graph with mainline branch <code>main</code> and a feature branch <code>x</code>.</figcaption>
+</figure>
 
 Running the query above from the commit `313082` produces the following CTE results over three iterations before halting, and ultimately returns `d67b8d` as the nearest commit visible to the target query.
 
@@ -128,11 +132,17 @@ Unfortunately, our first stab at an implementation had a number of rather disapp
 
 The following query plan shows an execution trace that visited around 10 commits (the resulting commit was 5 commits away, and we search in both directions). This query takes about 40ms, which is already a high cost for a query that runs every time a user hovers over an identifier.
 
-![fast query plan](https://sourcegraphstatic.com/blog/commit-graph-optimizations/fast.png)
+<figure>
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/fast.png" alt="Fast query plan"/>
+  <figcaption>Query plan of a commit graph traversal visiting 10 commits.</figcaption>
+</figure>
 
 The following query plan shows an execution trace that visited around 100 commits (the resulting commit was 44 commits away). This query takes about 330ms, which is well over the [noticeable latency threshold](https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/12OmNyQYtlZ/pdf).
 
-![slow query plan](https://sourcegraphstatic.com/blog/commit-graph-optimizations/slow.png)
+<figure id="query-plan">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/slow.png" alt="Slow query plan"/>
+  <figcaption>Query plan of a commit graph traversal visiting 100 commits.</figcaption>
+</figure>
 
 [Adding additional indexes](https://github.com/sourcegraph/sourcegraph/pull/5946) to the `commits` table helped a bit, but did not fundamentally change the performance characteristics of the query. An even larger pathology was discovered in repositories with a large number of merge commits. In order to understand the performance issue, it's important first to understand how the recursive query evaluation works in the case of duplicates, which was initially unintuitive to us. Paraphrasing the [PostgreSQL documentation](https://www.postgresql.org/docs/13/queries-with.html), recursive queries are evaluated with the following steps (emphasis ours):
 
@@ -149,9 +159,10 @@ A row is a duplicate of another row (from PostgreSQL's point of view) if they bo
 
 The following hypothetical commit graph contains a number of feature branches that are eventually merged back into mainline, unlike our previous example where all commits had at most one parent.
 
-<div class="no-shadow">
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph2.png" alt="sample commit graph">
-</div>
+<figure>
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph2.png" alt="Sample commit graph">
+  <figcaption>A Git commit graph with feature branches <code>x</code> and <code>y</code> merged into <code>main</code>.</figcaption>
+</figure>
 
 Running the query above from the commit `703e33` produces the following CTE results over the first four iterations.
 
@@ -182,9 +193,10 @@ Our [first attempt to optimize this query](https://github.com/sourcegraph/source
 
 [Additional efforts to optimize this query](https://github.com/sourcegraph/sourcegraph/pull/5984) were highly successful. The following chart compares the query latency of the original query (_quadratic_, blue) and the optimized query (_fast linear_, green), and we've *very clearly* removed the term that was creating the quadratic behavior.
 
-<div class="no-shadow">
-  <img src="https://user-images.githubusercontent.com/1387653/66709486-a9813900-ed22-11e9-9519-d9a9c098b37d.png" alt="query latency comparison">
-</div>
+<figure>
+  <img src="https://user-images.githubusercontent.com/1387653/66709486-a9813900-ed22-11e9-9519-d9a9c098b37d.png" alt="Query latency comparison">
+  <figcaption>Comparison of latencies between different Git commit graph traversal queries in PostgreSQL.</figcaption>
+</figure>
 
 Looking back at [the query plan above](#query-plan), the we can now determine that the culprit drastically affecting performance is the index scan within the nested loop. Ignore the sequential scan block here, which is usually suspicious but happens to be a red herring in this case. The sequential scan happens in favor of an index because of the small size of the `lsif_data_markers` dataset. When the table becomes larger, it is replaced with an efficient index scan.
 
