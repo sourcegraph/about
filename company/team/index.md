@@ -186,13 +186,6 @@ To add yourself to this page:
 - [felix@sourcegraph.com](mailto:felix@sourcegraph.com), [felixfbecker](https://github.com/felixfbecker), [Twitter](https://github.com/felixfbecker), [LinkedIn](https://www.linkedin.com/in/felixfbecker/)
 - Felix discovered batch files on Windows 98 in elementary school and one thing led to another. He has the most fun in all things web technology and open source, especially TypeScript. But when that gets boring, he likes to play field hockey and sail the north & baltic seas.
 
-## Roux (they/them)
-
-- [Pronounced roo](http://ipa-reader.xyz/?text=%C9%B9u%CB%90)
-- Software engineer
-- Unceded territory of musqueam, squamish, and tsleil-waututh nations
-- roux@sourcegraph.com
-- Roux is outside or waiting for warmer weather. They are autistic, trans, and non-binary. They like to cook, climb, dance, read, & game and would love to talk about these things. They live with their family and wish their larger baby would stop pouncing on their smaller baby.
 
 ## Quin Keough
 
