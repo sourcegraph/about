@@ -2,10 +2,10 @@
 title: "Optimizing a code intelligence commit graph (Part 2)"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
-publishDate: 2021-05-12T18:00-07:00
+publishDate: 2021-05-24T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph-part-2
-heroImage: https://sourcegraphstatic.com/blog/lsif-go/lsif-go-improvements.png
+heroImage: https://user-images.githubusercontent.com/82806852/118469885-10848200-b6fe-11eb-8670-43300ef355a8.jpg
 published: false
 ---
 
