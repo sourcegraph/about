@@ -9,15 +9,11 @@ heroImage: https://user-images.githubusercontent.com/82806852/118469885-10848200
 published: false
 ---
 
-<!-- TODO - recap previous post -->
+In [Part 1 of this optimization story](/blog/optimizing-a-code-intel-commit-graph/), we detailed how Sourcegraph can resolve code intelligence queries using data from older commits when data on the requested commit is not yet available. The implementation lies completely within PostgreSQL, and the queries run with very low latency (<1ms). We boldly claimed that our scalability concerns **once and for all**.
 
-[Part 1](/blog/optimizing-a-code-intel-commit-graph/)
+Turns out that was a half-truth (if not a lie) and it solves the problem only at a particular scale. There is an entire class of enterprise customers we would like to target to benefit from this feature as well, except the speed at which the code moves is a huge obstacle to overcome using this technique of calculating visible uploads on demand.
 
-## Scalability improvements
-
-Well, it solves the problem once and for all _at a particular scale_. There is an entire class of enterprise customers we would like to target to benefit from this feature as well, except the speed at which the code moves is a huge obstacle to overcome using this technique of calculating visible uploads on demand.
-
-In order to prevent queries which must travel a large distance over the commit graph before finding a visible upload from timing out or affecting the stability of the database, we still keep a hard limit on the number of commits we will visit during the graph traversal. The benefit of this limit is stability to the Sourcegraph instance by limiting the maximum load a single query can put on the database. The downside is that there are many shapes of commit graphs and data markers that will fail to find a visible upload, even if the distance is not too large.
+In order to prevent queries that travel a large distance over the commit graph from timing out or using a disproportionate amount of resources within the database, we still keep a hard limit on the number of commits we will visit during the graph traversal. The benefit of this limit is stability to the Sourcegraph instance by limiting the maximum load a single query can put on the database. The downside is that there are many shapes of commit graphs and data markers that will fail to find a visible upload, even if the distance is not too large.
 
 Since we stopped tracking distance to increase the number of duplicate rows, we no longer have a limit on _distance_, but on the number of total commits. This means that one query will travel a smaller distance on a commit graph with a large number of merge commits, and a larger distance on a commit graph that is mostly linear.
 
@@ -50,7 +46,7 @@ The `lsif_dirty_repositories` table tracks which repositories need their commit 
 
 #### Example
 
-For this example, we'll use the same graph as we did above, where commits `80c800`, `c85b4b`, and `3daedb` define uploads #1, #2, and #3, respectively.
+For this example, we'll use the following commit graph, where commits `80c800`, `c85b4b`, and `3daedb` define uploads #1, #2, and #3, respectively.
 
 <div class="no-shadow">
   <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph3.png" alt="sample commit graph">
@@ -80,7 +76,7 @@ The topological ordering of the commit graph and each traversal takes time linea
 
 Well, it's not _quite_ linear time if you take into account some of the stuff we claimed we could hand-wave away earlier: index files for different root directories.
 
-Many large repositories are built up of smaller, self-contained projects. Or, at least independently analyzable units of code. This enables a fairly coarse caching scheme: each time the repository is indexed on `git push` or periodically, only the units of code that have had explicitly changed since the last indexed commit needs to be re-indexed.
+Many large repositories are built up of smaller, self-contained projects. Or, at least independently analyzable units of code. This enables a fairly coarse caching scheme: each time the repository is indexed (on `git push`, or periodically), only the units of code that have had explicitly changed since the last indexed commit needs to be re-indexed.
 
 This means that there is no single nearest upload per commit: there is a nearest upload _per distinct indexing root directory_. To show the difference in output, we'll use the following commit graph, where:
 
@@ -222,13 +218,13 @@ The size of the table here (relative to the simple table produced by a single-ro
 
 **We drastically underestimated the value of _m_ for some enterprise customers.**
 
-One of our large enterprise customers, who is also one of our earliest adopters of LSIF-base code intelligence at scale, had completed an upgrade from Sourcegraph 3.17 to 3.20. After the upgrade, they realized they were no longer getting refreshed precise code intelligence and sent us this poorly drawn Sydney Opera House of a graph, indicating that something was deeply wrong.
+One of our large enterprise customers, who is also one of our earliest adopters of LSIF-base code intelligence at scale, had completed an upgrade from Sourcegraph 3.17 to 3.20. After the upgrade, they realized they were no longer getting refreshed precise code intelligence and sent us this cubist Sydney Opera House of a graph, indicating that something was deeply wrong.
 
 ![worker OOM](https://sourcegraphstatic.com/blog/commit-graph-optimizations/oom.png)
 
 The precise code intelligence worker process, which converts LSIF data uploaded by the user into our internal representation and writes it to our code intelligence data store, was ballooning in memory as jobs were processed. The extra memory hunger was extreme enough that the workers were consistently crashing with an "out of memory" exception towards the end of each job. No job was completing successfully.
 
-After grabbing additional screenshots of our monitoring system, output to a few SQL queries, and a few pprof traces from the offending Go process, we proved that the culprit was [this function](https://stackoverflow.com/questions/12699781/how-can-i-pass-multiple-source-files-to-the-typescript-compiler) and knew we needed to find a way to reduce the resident memory required to calculate the full table of visible uploads for each commit.
+After grabbing additional screenshots of our monitoring system, output to a few SQL queries, and a few pprof traces from the offending Go process, we proved that the culprit was [the function that determined the set of uploads visible at each commit](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@dc8beddf4066e30198c5ea368e6ee1092a6f4560/-/blob/enterprise/internal/codeintel/stores/dbstore/commit_graph.go#L37:6) and knew we needed to find a way to reduce the resident memory required to do so.
 
 To give a sense of this user's scale:
 
@@ -238,7 +234,7 @@ To give a sense of this user's scale:
 
 While the commit graph itself was relatively small (the [k8s/k8s](https://github.com/kubernetes/kubernetes) commit graph is twice that size and could be processed without issue), the number of distinct roots was very large.
 
-As an emergency [first attempt to reduce memory usage](https://github.com/sourcegraph/sourcegraph/pull/16086), we were able to cut the amount of memory required to calculate visible uploads down by a factor of 4 (with the side effect of doubling the time it took to compute the commit graph). This was an acceptable trade-off, especially for a background process, and especially in a patch release meant to restore code intelligence to a private instance.
+As an emergency [first attempt to reduce memory usage](https://github.com/sourcegraph/sourcegraph/pull/16086), we were able to cut the amount of memory required to calculate visible uploads down by a factor of 4 (with the side effect of doubling the time it took to compute the commit graph). This was an acceptable trade-off, especially for a background process, and especially in a patch release meant to restore code intelligence to a high-volume private instance.
 
 The majority of the memory was being taken up by the following `UploadMeta` structure, which was the bookkeeping metadata we tracked for each visible commit at each upload. The root and indexer fields denote the directory where the indexer was run and the name of the indexing tool, respectively. An index with a smaller commit distance can _shadow_ another only if these values are equivalent.
 
@@ -254,7 +250,7 @@ type UploadMeta struct {
 
 type CommitGraphView map[string][]UploadMeta // commit -> visible uploads
 ```
-Two commit graph views must be created per repository: one traversing the commit graph in each direction. Each instance of an `UploadMeta` struct occupies 56 bytes in memory (calculated via `unsafe.Sizeof(UploadMeta{})`). At the scale above, these structs occupy nearly 30GB of memory, which excludes the values in the `Root` and `Indexer` fields. The values of the root field, in particular, were quite large (file paths up to 200, characters, the average hovering around 75 characters) and repeated very frequently. This was by far the dominating factor, as confirmed by the customer's Go heap trace.
+Two commit graph views must be created per repository: one traversing the commit graph in each direction. Each instance of an `UploadMeta` struct occupies 56 bytes in memory (calculated via `unsafe.Sizeof(UploadMeta{})`). At the scale above, these structs occupy nearly 30GB of memory, which excludes the values in the `Root` and `Indexer` fields. The values of the root field, in particular, were quite large (file paths up to 200 characters, the average hovering around 75 characters) and repeated very frequently. This was by far the dominating factor, as confirmed by the customer's Go heap trace.
 
 We replaced the struct with the following set of data structures, which yields a much smaller yet semantically equivalent encoding to the commit graph view defined above.
 
@@ -275,7 +271,7 @@ type CommitGraphView struct {
 
 The first change is the introduction of the `Flags` field, which encodes the data previous stored in the `Distance`, `AncestorVisible`, and `Overwritten` fields. We encode the value of the booleans by setting the highest two bits on the 32-bit integer, and keep the remaining 30 lower bits to encode the distance. This still gives us enough room to encode a commit distance of over one billion, which ... if you're looking that far back in your Git history I guarantee you're going to get garbage out-of-date results. Now, the `UploadMeta` struct occupies only 16 bytes.
 
-The second change is the replacement of the root and indexer fields by a map from upload identifiers to a _hash_ of the indexer and root fields. Remember that we use these values only to determine which uploads shadow other uploads. We don't care about the actual values—we only care if they're equivalent or not. Our chosen hash always occupies 128 bits, which is a fraction of the size required by storing the full path string (75 characters take 600 bits to encode).
+The second change is the replacement of the root and indexer fields by a map from upload identifiers to a _hash_ of the indexer and root fields. Because we use these values only to determine which uploads shadow other uploads, we don't care about the actual values—we only care if they're equivalent or not. Our chosen hash always occupies 128 bits, which is a fraction of the size required by storing the full path string (75 characters take 600 bits to encode).
 
 This also greatly reduces the _multiplicity_ of these strings in memory. Before, we were duplicating each indexer and root values for every _visible_ upload. Now, we only need to store them for each _upload_, as the values do not change depending on where in the commit graph you are looking. Logically, this was simply a [string interning](https://en.wikipedia.org/wiki/String_interning) optimization.
 
@@ -283,11 +279,11 @@ This also greatly reduces the _multiplicity_ of these strings in memory. Before,
 
 While we were busy preparing a patch release to restore code intelligence to our customer, they had upgraded to the next version to fix an unrelated error they were experiencing in Sourcegraph's search code.
 
-This made things **far** worse. In Sourcegraph 3.22, we moved the code that calculated the commit graph from the precise-code-intel-worker into the frontend in an effort to consolidate background and period processes into the same package. Our first stab at memory reduction wasn't quite _enough_, and now the frontend pods were taking turns using all available memory and crashing.
+This made things **far** worse. In Sourcegraph 3.22, we moved the code that calculated the commit graph from the precise-code-intel-worker into the frontend in an effort to consolidate background and periodic processes into the same package. Our first stab at memory reduction wasn't quite enough, and now the frontend pods were taking turns using all available memory and crashing.
 
 This made their entire instance unstable, and this series of events escalated us from a priority zero event to a [priority now](https://devblogs.microsoft.com/oldnewthing/20081121-00/?p=20123) event.
 
-We attacked the problem again, starting out again by tackling some low-hanging fruit by ignoring large amounts of unneeded data. When we pull back the commit graph for a repository, it's unlikely that we need the _entire_ commit graph. There's little sense in filling out the visibility of the long tale of historic commits, especially as its distance to the oldest LSIF upload grows over time. Now, we [entirely ignore](https://github.com/sourcegraph/sourcegraph/pull/16140) the portion of the commit graph that existed _before_ the oldest known LSIF upload fro that repository.
+We attacked the problem again, starting out again by tackling some low-hanging fruit by ignoring large amounts of unneeded data. When we pull back the commit graph for a repository, it's unlikely that we need the _entire_ commit graph. There's little sense in filling out the visibility of the long tale of historic commits, especially as its distance to the oldest LSIF upload grows over time. Now, we [entirely ignore](https://github.com/sourcegraph/sourcegraph/pull/16140) the portion of the commit graph that existed _before_ the oldest known LSIF upload for that repository.
 
 In the same spirit, we can remove the explicit step of topologically sorting the commit graph in the application by instead [sorting it via the Git command](https://github.com/sourcegraph/sourcegraph/pull/16270). This is basically the same win as replacing a `sort` call in your webapp with an `ORDER BY` clause in your SQL query. This further reduces the required memory as we're no longer taking large amounts of stack space to traverse long chains of commits in the graph.
 
@@ -308,7 +304,7 @@ The visibility for the remaining commits cannot be recalculated on the fly so ea
 1. The commit defines an upload,
 1. The commit has multiple parents; this would require a merge when traversing forwards,
 1. The commit has multiple children; this would require a merge when traversing backwards, or
-1. The commit has a sibling, _i.e._, its parents have other children or its children have other parents. We ensure that we calculate the set of visible uploads to make downstream calculations easier. For example, we keep track of the visible uploads for commit `e43f5b` so that when we ask for the visible uploads from _both_ parents of `599611` we do not have to perform a traversal.
+1. The commit has a sibling, _i.e._, its parents have other children or its children have other parents. We ensure that we calculate the set of visible uploads of these commits to make downstream calculations easier. For example, we keep track of the visible uploads for commit `e43f5b` so that when we ask for the visible uploads from _both_ parents of `599611` we do not have to perform a traversal.
 
 It turns out that 80% of our problematic commit graph can be recalculated in this way, meaning that we only need to keep 20% of the commit graph resident in memory at any given time.
 
@@ -334,7 +330,7 @@ Our [final and successful effort](https://github.com/sourcegraph/sourcegraph/pul
 
 First, we've changed the commit graph traversal behavior to look only at ancestors. Since we started to ignore the bulk of the commit graph that existed before the first commit with LSIF data, looking into the _future_ for LSIF data now has limited applicability. Generally, users will be on the tip of a branch (either the default branch, or a feature branch if reviewing a pull request). We can still answer code intelligence queries for these commits, as they necessarily occur after _some_ LSIF data has been uploaded. Additionally, an unrelated [bug fix](https://github.com/sourcegraph/sourcegraph/pull/16733) caused descendant-direction traversals to increase memory usage. So at this point, it just seemed sensible to stop worrying about this reverse case, which was never truly necessary from a usability standpoint. Looking in one direction reduces the amount of data we need to store by about 50%.
 
-Second, we re-applied our tricks described in the previous section. We had good luck with throwing out huge amounts of data which we could efficiently recalculate when necessary, and save the resources that would otherwise be required to store them. This concept is known as [rematerialization](https://en.wikipedia.org/wiki/Rematerialization) in the compiler ecosystem, where values may be computed multiple times instead of storing and loading the already-computed value from memory in the case where a load/store pair is more expensive than the computation itself, or if it would otherwise increase register pressure.
+Second, we re-applied our tricks described in the previous section. We had good luck with throwing out huge amounts of data which we could efficiently recalculate when necessary, and save the resources that would otherwise be required to store them. This concept is known as [rematerialization](https://en.wikipedia.org/wiki/Rematerialization) in compiler circles, where values may be computed multiple times instead of storing and loading the already-computed value from memory. This is useful in the case where a load/store pair is more expensive than the computation itself, or if the load/stores would otherwise increase register pressure.
 
 Instead of writing the set of visible uploads per commit, what if we only store the visible uploads for commits that can't trivially recomputed? We've already determined the set of commits that can be easily rematerialized—we can just move the rematerialization from database insertion time to query time.
 
@@ -490,5 +486,11 @@ digraph G {
 
 <style>
   .blog-post__html .no-shadow img { box-shadow: none; }
-  .workingtable-highlight { color: #ffffff; background-color: #005cb9; }
+  .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
+
+  figcaption {
+    text-align: center;
+    margin-top: -2rem;
+    font-style: italic;
+  }
 </style>

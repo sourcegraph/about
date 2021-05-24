@@ -25,7 +25,7 @@ In order to plug this hole, we determine the set of nearby commits for which Sou
 
 ## Tracking cross-commit index visibility
 
-The first step in this process is to [track how commits of a repository relate to one another](https://github.com/sourcegraph/sourcegraph/pull/5691). Unfortunately, the service providing the code intelligence features was separated (by design) from the rest of the product. We had only recently [gained access to the Sourcegraph PostgreSQL database](https://github.com/sourcegraph/sourcegraph/pull/5740) used by the rest of the application, and no other team was tracking commit information. The source of truth for that data was gitserver, which required both an RPC call and a subprocess to access.
+The first step in this process is to [track how commits of a repository relate to one another](https://github.com/sourcegraph/sourcegraph/pull/5691). Unfortunately, the service providing the code intelligence features was separated (by design) from the rest of the product. We had only recently [gained access to the Sourcegraph PostgreSQL database](https://github.com/sourcegraph/sourcegraph/pull/5740) used by the rest of the application, and no other team was tracking commit information. The source of truth for that data was another service called gitserver, which required both an RPC call and a subprocess to access.
 
 Our initial stab at this problem was to introduce 2 new tables to PostgreSQL: `commits` and `lsif_data_markers`.
 
@@ -41,7 +41,7 @@ The `commits` table stores data similar to a flattened version of the output fro
 | 5   | github.com/sourcegraph/sample | <code>d67b8d</code> | <code>323e23</code> |
 | 6   | github.com/sourcegraph/sample | <code>323e23</code> |                     |
 
-This table is synchronized with the source of truth in gitserver whenever we receive a request or an index for a commit that we didn't know about previously. A row present in the `lsif_data_markers` table denotes that an index was uploaded for a particular commit. Example values for this table are also shown below.
+This table is synchronized with the source of truth in gitserver whenever we receive a request for a commit that we didn't know about previously. A row present in the `lsif_data_markers` table denotes that an index was uploaded for a particular commit. Example values for this table are also shown below.
 
 | repository                    | commit              |
 | ----------------------------- | ------------------- |
@@ -178,7 +178,7 @@ What we _wanted_ to happen was for the "duplicate rows" not to be inserted into 
 
 ---
 
-Our [first attempt to optimize this query](https://github.com/sourcegraph/sourcegraph/pull/5980) directly tackled the problem of duplicate rows in the worktable, as shown in the above example. This change simply removes the direction column from the lineage table expression. The "duplicates" that we now throw out are records for commits that have already been seen via a shorter path. This required that we take the limiting condition out of the table expression and into the select, which changes the behavior very slightly (it now limits by working set size, not by distance, which was an acceptable trade-off for the performance increase).
+Our [first attempt to optimize this query](https://github.com/sourcegraph/sourcegraph/pull/5980) directly tackled the problem of duplicate rows in the worktable, as shown in the above example. This change simply removes the `distance` column from the lineage table expression. The "duplicates" that we now throw out are records for commits that have already been seen via a shorter path. This required that we move the limiting condition from table expression into the select, which changes the behavior very slightly (it now limits by working set size, not by distance, which was an acceptable trade-off for the performance increase).
 
 [Additional efforts to optimize this query](https://github.com/sourcegraph/sourcegraph/pull/5984) were highly successful. The following chart compares the query latency of the original query (_quadratic_, blue) and the optimized query (_fast linear_, green), and we've *very clearly* removed the term that was creating the quadratic behavior.
 
@@ -186,7 +186,7 @@ Our [first attempt to optimize this query](https://github.com/sourcegraph/source
   <img src="https://user-images.githubusercontent.com/1387653/66709486-a9813900-ed22-11e9-9519-d9a9c098b37d.png" alt="query latency comparison">
 </div>
 
-The culprit is the index scan within the nested loop. Ignore the sequential scan block here, which is a red herring. The sequential scan happens in favor of an index because of the small size of the `lsif_data_markers` dataset. When the table becomes larger, it is replaced with an efficient index scan.
+Looking back at [the query plan above](#query-plan), the we can now determine that the culprit drastically affecting performance is the index scan within the nested loop. Ignore the sequential scan block here, which is usually suspicious but happens to be a red herring in this case. The sequential scan happens in favor of an index because of the small size of the `lsif_data_markers` dataset. When the table becomes larger, it is replaced with an efficient index scan.
 
 **But index scans are supposed to be fast!** Well, they _are_ faster than a sequential scan, but may not be as fast as an index scan that uses a different index, or uses an index in a slightly different way. This particular scan fetches rows from the commits table using only `c.repository = l.repository` as the index condition. This pulls back literally the entire commit graph for the repository and each row is then filtered based on the remaining conditions. There are two multicolumn indexes that _could_ conceivably be used here: one on (`repository`, `commit`) and one on (`repository`, `parent_commit`). However, the following filter conditions would require the use of _both_ indexes, which PostgreSQL seems unable to do, or unwilling to do due to an inaccurate query cost estimate.
 
@@ -212,12 +212,22 @@ ON c.repository = l.repository AND l.direction = 'D' AND c.parent_commit = l."co
 
 The query plan for this new query, shown below, seems more complex at first glance. However, this query is **drastically** more efficient. The same input that required 330ms to evaluate now takes under 1ms to evaluate.
 
-![super fast query plan](https://sourcegraphstatic.com/blog/commit-graph-optimizations/super-fast.png)
+<figure>
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/super-fast.png" alt="Super fast query plan"/>
+  <figcaption>Query plan of an optimized commit graph traversal visiting 100 commits.</figcaption>
+</figure>
 
 Even though we're now executing a greater number of steps, each step can be evaluated efficiently. The old inefficient index scan has been broken into two different index scans: one that traverses the ancestor direction, and another that traverses the descendant direction. The simple conditionals in each query can be evaluated _without an index filter_ by each of the multicolumn indexes above. Instead of pulling back the entire commit graph on each iteration of the table expression, we pull exactly the set of rows that need to be added to the working table.
 
 This change makes the query efficient enough that we no longer have to worry about caching results, as running it on every request only contributes a negligible amount of time. Thus solving the problem [once and for all](https://www.youtube.com/watch?v=IjmtVKOAHPM)!
 
-<!-- TODO - transition to next post -->
+<style>
+  .blog-post__html .no-shadow img { box-shadow: none; }
+  .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
 
-[Part 2](/blog/optimizing-a-code-intel-commit-graph-part-2/)
+  figcaption {
+    text-align: center;
+    margin-top: -2rem;
+    font-style: italic;
+  }
+</style>
