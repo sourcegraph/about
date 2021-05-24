@@ -25,9 +25,9 @@ In order to plug this hole, we determine the set of nearby commits for which Sou
 
 ## Tracking cross-commit index visibility
 
-The [first step](https://github.com/sourcegraph/sourcegraph/pull/5691) in this process is to track how commits of a repository relate to one another. Unfortunately, the service providing the code intelligence features was separated (by design) from the rest of the product. We had only recently [gained access](https://github.com/sourcegraph/sourcegraph/pull/5740) to the Sourcegraph Postgres database used by the rest of the application, and no other team was tracking commit information. The source of truth for that data was gitserver, which required both an RPC call and a subprocess to access.
+The first step in this process is to [track how commits of a repository relate to one another](https://github.com/sourcegraph/sourcegraph/pull/5691). Unfortunately, the service providing the code intelligence features was separated (by design) from the rest of the product. We had only recently [gained access to the Sourcegraph PostgreSQL database](https://github.com/sourcegraph/sourcegraph/pull/5740) used by the rest of the application, and no other team was tracking commit information. The source of truth for that data was gitserver, which required both an RPC call and a subprocess to access.
 
-Our initial stab at this problem was to introduce 2 new tables to Postgres: `commits` and `lsif_data_markers`.
+Our initial stab at this problem was to introduce 2 new tables to PostgreSQL: `commits` and `lsif_data_markers`.
 
 The `commits` table stores data similar to a flattened version of the output from `git log --all --pretty='%H %P'` (a commit followed by a list of its parents), for each repository. Example values for this table are shown below to aid our running example. This table would generally store the full 40-character commit ID—we are abbreviating them for brevity here.
 
