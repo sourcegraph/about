@@ -155,6 +155,10 @@ footer a {
 	border: solid 1px var(--border-color);
 	border-radius: 0;
 	width: 10rem;
+  /* the styles below are related to the Swiftype search integration */
+  height: initial;
+  padding-left: 30px;
+  background-position-y: 10px;
 }
 #search-button {
 	margin-left: 0.125rem;
