@@ -6,7 +6,7 @@ tags: [blog, release]
 slug: "release/3.28"
 published: true
 changelogItems:
-    - description: "Added security enhancements, including 1) only site admins can list users on an instance, 2) repository permissions can now be enabled for site admins via the `authz.enforceForSiteAdmins` setting, 3) site admins can no longer view user added code host configuration, and 4) site admins cannot add access tokens for any user by default."
+  - description: "Added security enhancements, including 1) only site admins can list users on an instance, 2) repository permissions can now be enabled for site admins via the `authz.enforceForSiteAdmins` setting, 3) site admins can no longer view user added code host configuration, and 4) site admins cannot add access tokens for any user by default."
     url: "https://github.com/sourcegraph/sourcegraph/pull/20619"
     category: Admin
   - description: "Bulk comments on many changesets are now available in Batch Changes."
