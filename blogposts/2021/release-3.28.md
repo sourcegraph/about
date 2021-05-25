@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph 3.28 release"
-publishDate: 2021-05-20T10:00-07:00
+publishDate: 2021-05-24T10:00-07:00
 description: "Sourcegraph 3.28 release"
 tags: [blog, release]
 slug: "release/3.28"
