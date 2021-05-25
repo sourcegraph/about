@@ -2,11 +2,7 @@
 
 The finance & accounting team is responsible for helping Sourcegraph acquire and allocate resources optimally, plan for the future, track progress and execution, and measure results.
 
-- [Sources of truth](#sources-of-truth)
 - [ARR tracking and the monthly closing process](arr.md)
-- [Paying bills](payables.md)
-- [Submitting an invoice](invoices.md)
-- [Expenses](expenses.md)
 
 ## Team
 
@@ -118,3 +114,9 @@ We also complete a balance sheet review. This review is focused on providing ana
 We work with an outsourced accounting firm named [Officengine](https://officengine.com/). They close the books monthly and produce our financial statements, and provide support in processing payables, preparing taxes, filing corporate registrations, and more.
 
 Reach out to the [Finance team](#team) for an introduction if needed.
+
+### Accounts Payable & Expenses
+
+- [Paying Company bills](payables.md)
+- [Submitting an invoice (teammates based outside of US)](invoices.md)
+- [Submitting reimbursable expenses](expenses.md)

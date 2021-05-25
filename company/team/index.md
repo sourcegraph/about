@@ -893,3 +893,9 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [aimee@sourcegraph.com](mailto:aimee@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/aimee-menne-8343487/)
 - Aimee has spent her career, and is extremely passionate about, delivering customer-centric solutions. An Indiana native, she spent time in both Washington DC and San Francisco before landing in Denver, Colorado. Outside of work, Aimee is usually doing a variety of outdoor activities (running, cycling, skiing, hiking, camping, fishing) or traveling to new places.
 
+## Nicholas Gage (he/him)
+- Head of Sales Development
+- Oakland, CA USA
+- Github: [ngage1](https://github.com/ngage1)
+- [ngage@sourcegraph.com](mailto:ngage@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/nicholas-g-4a0b6948/)
+- Nick grew up on the East Coast in the greater Boston area. After spending many years in the southeast working as an account executive for AT&T, Nick made the move to San Francisco to work with Box. Nick is passionate about development, both personal and professional. When outside of work, Nick enjoys spending time with his wife, Grace, and their dog, Rocky. Whether hiking, skimboarding, golfing, or skiing, Nick loves spending time outdoors (preferably in the sun!). 
