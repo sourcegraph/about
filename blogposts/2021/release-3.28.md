@@ -12,7 +12,7 @@ changelogItems:
   - description: "Bulk comments on many changesets are now available in Batch Changes."
     url: https://github.com/sourcegraph/sourcegraph/pull/20361
     category: Batch Changes
- - description: "The extension registry main page has a new visual design that better conveys the most useful information about extensions, and individual extension pages have better information architecture."
+  - description: "The extension registry main page has a new visual design that better conveys the most useful information about extensions, and individual extension pages have better information architecture."
     url: https://github.com/sourcegraph/sourcegraph/pull/20822
     category: Extensions
   - description: "Added 15 additional language autocompletions for the `lang:` filter in the search bar."
