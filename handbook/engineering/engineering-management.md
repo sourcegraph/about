@@ -65,7 +65,7 @@ An Acting Manager occupies a role temporarily and will move back to their origin
 
 ### Interim Manager
 
-Interim Manager positions are for teammates pursuing an Engineering Manager role long term but lack the necessary people management experience. The requirement is that, before moving into the role full time, they will make at least one successful hire. The official promotion will not occur before 30 days after that new hire's start date, so that we can assess whether the hire was truly successful. If the new hire's success is indeterminate at the 30-day mark, we will continue to review until a firm decision is made. If the new hire is not successful, that does not mean that the Interim Manager cannot eventually move into the full-time role.
+Interim Manager positions are for teammates pursuing an Engineering Manager role long term but lack the necessary people management experience. The requirement is that, before moving into the role full time, they will make at least one successful hire. The official transition to Engineering Manager will not occur before 30 days after that new hire's start date, so that we can assess whether the hire was truly successful. If the new hire's success is indeterminate at the 30-day mark, we will continue to review until a firm decision is made. If the new hire is not successful, that does not mean that the Interim Manager cannot eventually move into the full-time role.
 
 In some cases, it may not be practical, or headcount planning might not allow for the Interim Manager to make a new hire. In this case, the Interim Manager and the interim manager's manager should agree on success criteria based on the role's requirements.
 
