@@ -33,4 +33,4 @@ Sourcegraph 3.28 is now available! For this release, we added new security enhan
 
 ## Extensions registry update 
 
-Extensions enable you to connect all your other tools to get functionality like test coverage, 1-click open file in editor, custom highlighting, and information from your other favorite services all in one place on Sourcegraph. The [extensions registry main page](https://sourcegraph.com/extensions?category=All) has a new visual design that better conveys the most useful information about extensions and individual extension pages have better information architecture.
+Extensions allow you to connect all your other tools to get functionality like test coverage, 1-click open file in editor, custom highlighting, and information from your other favorite services all in one place on Sourcegraph. The [extensions registry main page](https://sourcegraph.com/extensions?category=All) has a new visual design that better conveys the most useful information about extensions. Individual extension pages now have better information architecture.
