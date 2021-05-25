@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.28 release"
 publishDate: 2021-05-24T10:00-07:00
-description: "Sourcegraph 3.28 release"
+description: "The Sourcegraph 3.28 release includes new security enhancements and the redesigned extensions registry."
 tags: [blog, release]
 slug: "release/3.28"
 published: true
