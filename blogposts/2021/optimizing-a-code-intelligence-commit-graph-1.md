@@ -40,15 +40,15 @@ Our initial stab at this problem was to introduce 2 new tables to PostgreSQL: `c
 
 The `commits` table stores data similar to a flattened version of the output from `git log --all --pretty='%H %P'` (a commit followed by a list of its parents), for each repository. Example values for this table are shown below to aid our running example. This table would generally store the full 40-character commit ID—we are abbreviating them for brevity here.
 
-| id  | repository                    | commit              | parent_commit       |
-| --- | ----------------------------- | ------------------- | ------------------- |
-| 1   | github.com/sourcegraph/sample | <code>a36064</code> | <code>f4fb06</code> |
-| 2   | github.com/sourcegraph/sample | <code>f4fb06</code> | <code>4c8d9d</code> |
-| 3   | github.com/sourcegraph/sample | <code>313082</code> | <code>4c8d9d</code> |
-| 3   | github.com/sourcegraph/sample | <code>6a06fc</code> | <code>313082</code> |
-| 4   | github.com/sourcegraph/sample | <code>4c8d9d</code> | <code>d67b8d</code> |
-| 5   | github.com/sourcegraph/sample | <code>d67b8d</code> | <code>323e23</code> |
-| 6   | github.com/sourcegraph/sample | <code>323e23</code> |                     |
+| repository                    | commit              | parent_commit       |
+| ----------------------------- | ------------------- | ------------------- |
+| github.com/sourcegraph/sample | <code>a36064</code> | <code>f4fb06</code> |
+| github.com/sourcegraph/sample | <code>f4fb06</code> | <code>4c8d9d</code> |
+| github.com/sourcegraph/sample | <code>313082</code> | <code>4c8d9d</code> |
+| github.com/sourcegraph/sample | <code>6a06fc</code> | <code>313082</code> |
+| github.com/sourcegraph/sample | <code>4c8d9d</code> | <code>d67b8d</code> |
+| github.com/sourcegraph/sample | <code>d67b8d</code> | <code>323e23</code> |
+| github.com/sourcegraph/sample | <code>323e23</code> |                     |
 
 This table is synchronized with the source of truth in gitserver whenever we receive a request for a commit that we didn't know about previously. A row present in the `lsif_data_markers` table denotes that an index was uploaded for a particular commit. Example values for this table are also shown below.
 
@@ -72,9 +72,9 @@ WITH RECURSIVE lineage(repository, "commit", parent_commit, has_lsif_data, dista
 
     SELECT l.* FROM (
         -- seed ancestor search
-        SELECT c.*, 0, 'A' FROM commits_with_lsif_data_markers c UNION
+        SELECT c.*, 0, 'A' FROM commits c UNION
         -- seed descendant search
-        SELECT c.*, 0, 'D' FROM commits_with_lsif_data_markers c
+        SELECT c.*, 0, 'D' FROM commits c
     ) l
     WHERE l.repository = $1 AND l."commit" = $2
 
@@ -91,7 +91,7 @@ WITH RECURSIVE lineage(repository, "commit", parent_commit, has_lsif_data, dista
     FROM
         lineage l
     JOIN
-        commits_with_lsif_data_markers c
+        commits c
     ON
         c.repository = l.repository AND (
             -- parent coming from child
@@ -106,7 +106,10 @@ WITH RECURSIVE lineage(repository, "commit", parent_commit, has_lsif_data, dista
 -- Select the first row from lineage with LSIF data. This will return such a commit
 -- with a minimized distance, as the table expression has the same ordering as the
 -- traversal by construction.
-SELECT l."commit" FROM lineage l WHERE l.has_lsif_data LIMIT 1
+SELECT l."commit"
+FROM lineage l
+WHERE EXISTS (SELECT 1 FROM lsif_data_markers m WHERE m.repository = l.repository AND m."commit" = l."commit" has has_lsif_data)
+LIMIT 1
 ```
 
 This query maintains a worklist (the query-local `lineage` table) seeded by the requested commit, and grows by finding untracked commits that are either a parent (the ancestor `A` direction) or a child (the descendant `D` direction) of a commit already in the worklist and inserting it. The table is implicitly ordered by its insertions, so the final select returns the commit with index data that also has the smallest commit distance to the requested commit. The `WHERE` clause inside of the CTE is there to limit the size of the working table, which can be pathologically large in the case of a large commit graph and no uploads visible from a given commit.
@@ -217,14 +220,14 @@ To reduce the cost of this index scan, we rewrote the recursive term within the 
 ```sql
 SELECT c.*, l.distance + 1, l.direction
 FROM lineage l
-JOIN commits_with_lsif_data_markers c
+JOIN commits c
 ON c.repository = l.repository AND l.direction = 'A' AND c."commit" = l.parent_commit
 
 UNION
 
 SELECT c.*, l.distance + 1, l.direction
 FROM lineage l
-JOIN commits_with_lsif_data_markers c
+JOIN commits c
 ON c.repository = l.repository AND l.direction = 'D' AND c.parent_commit = l."commit"
 ```
 
