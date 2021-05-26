@@ -156,7 +156,7 @@ The following query plan shows an execution trace that visited around 100 commit
 1. Insert rows into result set as well as a temporary working table
 1. While the working table is not empty:
     1. Evaluate the recursive term by substituting the recursive self-reference with the working table and **discard duplicate rows**
-    1. Insert rows into result set as well as a new temporary intermediate table table
+    1. Insert rows into result set as well as a new temporary intermediate table
     1. Replace the working table with the intermediate table and empty the intermediate table
 
 A row is a duplicate of another row (from PostgreSQL's point of view) if they both contain the same set of values. However, from our point of view, a row is a duplicate of another row if only their commit values match. After all, we're running a breadth-first search over a graph and by the time we've seen a commit for the second time, we've already seen it via the shortest path. This mismatch in expectations don't cost us correctness, but it does cause performance problems and the pain that comes with it.
