@@ -63,10 +63,8 @@ Together, these 2 tables enable us to recursively search up and down the commit 
 ```sql
 -- lineage is a table expression that traverses the commit graph for the given
 -- repository starting at the given commit, and returns the set of commit records
--- reachable via ancestor and descendant paths supplemented with an additional
--- column, has_lsif_data, indicating whether or not that commit has an associated
--- code intelligence index.
-WITH RECURSIVE lineage(repository, "commit", parent_commit, has_lsif_data, distance, direction) AS (
+-- reachable via ancestor and descendant paths.
+WITH RECURSIVE lineage(repository, "commit", parent_commit, distance, direction) AS (
     -- Non-recursive term: Seed the lineage table with the commit we're starting
     -- the traversal from.
 
