@@ -2,12 +2,18 @@
 title: "Optimizing a code intelligence commit graph (Part 1)"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
+description: "Read about our journey to enabling Sourcegraph to respond to requests on commits missing an index quickly, with precise results."
 publishDate: 2021-05-24T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph
-heroImage: https://user-images.githubusercontent.com/82806852/118469885-10848200-b6fe-11eb-8670-43300ef355a8.jpg
+heroImage: /blog/optimizing-code-intelligence-commit-graph.png
+socialImage: /blog/optimizing-code-intelligence-commit-graph.png
 published: true
 ---
+
+![Optimizing code intelligence commit graph graphic](/blog/optimizing-code-intelligence-commit-graph.png)
+
+Sourcegraph's [Code Intelligence](https://about.sourcegraph.com/handbook/engineering/code-intelligence) team builds tools and services that provide contextual information around code. These enable users to perform fast, comprehensive, and accurate code navigation, to surface dependency relationships across projects, repositories, and languages, and to index and keep code up to date across all languages. In this post I'll dive into how Sourcegraph can resolve code intelligence queries using data from older commits when data on the requested commit is not yet available. In Part 2 I'll cover how we tackled scalability of this feature. 
 
 Since the first version of Sourcegraph, precise code navigation has been a first-order concern. Its ability to provide compiler-accurate code navigation in a web-based interface is a superpower for our users.
 
@@ -16,9 +22,9 @@ Since the first version of Sourcegraph, precise code navigation has been a first
   <figcaption>Cross-repository jump to definition from a use in <code>sourcegraph/sourcegraph</code> to a definition in <code>gorilla/mux</code>.</figcaption>
 </figure>
 
-The [journey to our current implementation](/evolution-of-the-precise-code-intel-backend/) began in February 2019 when we shifted our efforts from running Language Servers along side Sourcegraph to pre-indexing source code via the Language Server Index Format (LSIF) and uploading it to Sourcegraph. This change introduced a new requirement of the user: they are now responsible for producing and uploading the LSIF index.
+The [journey to our current implementation](/evolution-of-the-precise-code-intel-backend/) began in February 2019 when we shifted our efforts from running Language Servers alongside Sourcegraph to pre-indexing source code via the Language Server Index Format (LSIF) and uploading it to Sourcegraph. This change introduced a new requirement of the user: they are now responsible for producing and uploading the LSIF index.
 
-The method in which a user produces an LSIF index is highly variable and depends on many factors. If a repository is not too large, a user may wish to create a new index on every commit in their CI. If a repository is very large (the monorepo case), or an organization has a large number of repositories, it may be advantageous to instead index code periodically and upload a refreshed index. Google uses such a scheduled job to refresh their monorepo's index twice a day.
+The method to produce an LSIF index is highly variable and depends on many factors. If a repository is not too large, a user may wish to create a new index on every commit in their CI. If a repository is very large (the monorepo case), or an organization has a large number of repositories, it may be better to instead index code periodically and upload a refreshed index. Google uses such a scheduled job to refresh their monorepo's index twice a day.
 
 Regardless of the indexing method, it is always possible for a user to find themselves browsing a commit for which Sourcegraph has not received an index. This can happen due to a slow job in a continuous integration server, a backed-up indexing processing queue, or the commit may simply be skipped in the case of a periodic refresh.
 
@@ -103,7 +109,7 @@ WITH RECURSIVE lineage(repository, "commit", parent_commit, has_lsif_data, dista
 SELECT l."commit" FROM lineage l WHERE l.has_lsif_data LIMIT 1
 ```
 
-This query maintains a worklist (the query-local `lineage` table) seeded by the requested commit, and grows by finding untracked commits that are either a parent (the ancestor `A` direction) or a child (the descendant `D` direction) of a commit already in the worklist and inserting it. The table is implicitly ordered by its insertions, so the final select returns the commit with index data that also has the smallest commit distance to the requested commit. The `WHERE` clause inside of the CTE is there to limit size of the working table, which can be pathologically large in the case of a large commit graph and no uploads visible from a given commit.
+This query maintains a worklist (the query-local `lineage` table) seeded by the requested commit, and grows by finding untracked commits that are either a parent (the ancestor `A` direction) or a child (the descendant `D` direction) of a commit already in the worklist and inserting it. The table is implicitly ordered by its insertions, so the final select returns the commit with index data that also has the smallest commit distance to the requested commit. The `WHERE` clause inside of the CTE is there to limit the size of the working table, which can be pathologically large in the case of a large commit graph and no uploads visible from a given commit.
 
 #### Example
 
@@ -114,7 +120,7 @@ The values of the tables above represent the following hypothetical commit graph
   <figcaption>A Git commit graph with mainline branch <code>main</code> and a feature branch <code>x</code>.</figcaption>
 </figure>
 
-Running the query above from the commit `313082` produces the following CTE results over three iterations before halting, and ultimately returns `d67b8d` as the nearest commit visible to the target query.
+Running the query above from the commit `313082` produces the following CTE results over 3 iterations before halting, and ultimately returns `d67b8d` as the nearest commit visible to the target query.
 
 | iteration | commit              | parent_commit       | has\_lsif\_data | distance | direction |
 | --------- |-------------------- | ------------------- | ------------- | -------- | --------- |
@@ -164,7 +170,7 @@ The following hypothetical commit graph contains a number of feature branches th
   <figcaption>A Git commit graph with feature branches <code>x</code> and <code>y</code> merged into <code>main</code>.</figcaption>
 </figure>
 
-Running the query above from the commit `703e33` produces the following CTE results over the first four iterations.
+Running the query above from the commit `703e33` produces the following CTE results over the first 4 iterations.
 
 <table>
 <tr><th>iteration</th><th>commit</th><th>parent_commit</th><th>has_lsif_data</th><th>distance</th><th>direction</th></tr>
@@ -183,7 +189,7 @@ Running the query above from the commit `703e33` produces the following CTE resu
 <tr class="workingtable-highlight"><td>4</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>false</td><td>3</td><td>A</td></tr>
 </table>
 
-Notice that there are two ways to get from commit `7033ee` to commit `3d2f27`, therefore the entries for `3d2f27` are duplicated in the CTE results (and therefore the working table). Also notice that the number of _new_ rows per iteration is growing as the iteration count rises in such graphs. **For some configuration of input, this query is [quadratic](https://accidentallyquadratic.tumblr.com/) instead of linear.**
+Notice that there are 2 ways to get from commit `7033ee` to commit `3d2f27`, therefore the entries for `3d2f27` are duplicated in the CTE results (and therefore the working table). Also notice that the number of _new_ rows per iteration is growing as the iteration count rises in such graphs. **For some configuration of input, this query is [quadratic](https://accidentallyquadratic.tumblr.com/) instead of linear.**
 
 What we _wanted_ to happen was for the "duplicate rows" not to be inserted into the working table at all. Unfortunately, each record in this example is distinct due to the differing path lengths—a detail we glossed over when designing this query in the first place. Another classic case of the computer doing what you _told_ it to do instead of what you _wanted_ it to do. 🙄
 
@@ -229,9 +235,15 @@ The query plan for this new query, shown below, seems more complex at first glan
   <figcaption>Query plan of an optimized commit graph traversal visiting 100 commits.</figcaption>
 </figure>
 
-Even though we're now executing a greater number of steps, each step can be evaluated efficiently. The old inefficient index scan has been broken into two different index scans: one that traverses the ancestor direction, and another that traverses the descendant direction. The simple conditionals in each query can be evaluated _without an index filter_ by each of the multicolumn indexes above. Instead of pulling back the entire commit graph on each iteration of the table expression, we pull exactly the set of rows that need to be added to the working table.
+Even though we're now executing a greater number of steps, each step can be evaluated efficiently. The old, inefficient index scan has been broken into 2 different index scans: one that traverses the ancestor direction, and another that traverses the descendant direction. The simple conditionals in each query can be evaluated _without an index filter_ by each of the multicolumn indexes above. Instead of pulling back the entire commit graph on each iteration of the table expression, we pull exactly the set of rows that need to be added to the working table.
 
 This change makes the query efficient enough that we no longer have to worry about caching results, as running it on every request only contributes a negligible amount of time. Thus solving the problem [once and for all](https://www.youtube.com/watch?v=IjmtVKOAHPM)!
+
+## Lessons learned
+
+Firstly, I spoke too soon as there wouldn't be a Part 2 if we _had_ solved the problem once and for all. Secondly, sometimes the more complex the query, the more efficient it is. And lastly, the cliché holds: computers do what you tell them to. When debugging this is usually a good place to start.
+
+Stay tuned for Part 2 in which we tackle scalability challenges.
 
 <style>
   figure .no-shadow { box-shadow: none; }
