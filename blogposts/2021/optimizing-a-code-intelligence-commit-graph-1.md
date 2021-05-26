@@ -3,7 +3,7 @@ title: "Optimizing a code intelligence commit graph (Part 1)"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 description: "We enabled Sourcegraph to respond to requests for commits missing a code intelligence index quickly and with precise results. Read about our journey."
-publishDate: 2021-05-24T18:00-07:00
+publishDate: 2021-05-26T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph
 heroImage: /blog/optimizing-code-intelligence-commit-graph.png
@@ -13,7 +13,7 @@ published: true
 
 ![Optimizing code intelligence commit graph graphic](/blog/optimizing-code-intelligence-commit-graph.png)
 
-Sourcegraph's [Code Intelligence](https://about.sourcegraph.com/handbook/engineering/code-intelligence) team builds tools and services that provide contextual information around code. These enable users to perform fast, comprehensive, and accurate code navigation, to surface dependency relationships across projects, repositories, and languages, and to index and keep code up to date across all languages. In this post I'll dive into how Sourcegraph can resolve code intelligence queries using data from older commits when data on the requested commit is not yet available. In Part 2 I'll cover how we tackled scalability of this feature. 
+Sourcegraph's [Code Intelligence](https://about.sourcegraph.com/handbook/engineering/code-intelligence) team builds tools and services that provide contextual information around code. These enable users to perform fast, comprehensive, and accurate code navigation, and to surface dependency relationships across projects, repositories, and languages. In this post I'll dive into how Sourcegraph can resolve code intelligence queries using data from older commits when data on the requested commit is not yet available. In Part 2, we'll cover how additional scalability concerns presented themselves and how we tackled them.
 
 Since the first version of Sourcegraph, precise code navigation has been a first-order concern. Its ability to provide compiler-accurate code navigation in a web-based interface is a superpower for our users.
 
@@ -239,9 +239,13 @@ Even though we're now executing a greater number of steps, each step can be eval
 
 This change makes the query efficient enough that we no longer have to worry about caching results, as running it on every request only contributes a negligible amount of time. Thus solving the problem [once and for all](https://www.youtube.com/watch?v=IjmtVKOAHPM)!
 
+Well, it solved the problem once and for all _at a particular scale_.
+
 ## Lessons learned
 
-Firstly, I spoke too soon as there wouldn't be a Part 2 if we _had_ solved the problem once and for all. Secondly, sometimes the more complex the query, the more efficient it is. And lastly, the cliché holds: computers do what you tell them to. When debugging this is usually a good place to start.
+One major take away for us was the concrete reinforcement that databases are a hugely deep subject, but are not magic. Building and maintaining an accurate mental model of how your tools work seems to be a necessary skill in software engineering, and acting with poor mental models can lead to disastrous performance results (at best).
+
+Another major takeaway is that the cliché holds: computers do what you tell them to and nothing more. When debugging correctness and performance issues, it's good to _shed_ your previous mental model and re-assess its correctness as you dive deeper into your stack.
 
 Stay tuned for Part 2 in which we tackle additional scalability challenges.
 
