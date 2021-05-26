@@ -123,13 +123,13 @@ The values of the tables above represent the following hypothetical commit graph
 
 Running the query above from the commit `313082` produces the following CTE results over 3 iterations before halting, and ultimately returns `d67b8d` as the nearest commit visible to the target query.
 
-| iteration | commit              | parent_commit       | has\_lsif\_data | distance | direction |
-| --------- |-------------------- | ------------------- | ------------- | -------- | --------- |
-| 1         | <code>313082</code> | <code>4c8d9d</code> | false         | 0        | A         |
-| 1         | <code>313082</code> | <code>4c8d9d</code> | false         | 0        | D         |
-| 2         | <code>4c8d9d</code> | <code>d67b8d</code> | false         | 1        | A         |
-| 2         | <code>6a06fc</code> | <code>313082</code> | false         | 1        | D         |
-| 3         | <code>d67b8d</code> | <code>323e23</code> | true          | 2        | A         |
+| iteration | commit              | parent_commit       | distance | direction |
+| --------- |-------------------- | ------------------- | -------- | --------- |
+| 1         | <code>313082</code> | <code>4c8d9d</code> | 0        | A         |
+| 1         | <code>313082</code> | <code>4c8d9d</code> | 0        | D         |
+| 2         | <code>4c8d9d</code> | <code>d67b8d</code> | 1        | A         |
+| 2         | <code>6a06fc</code> | <code>313082</code> | 1        | D         |
+| 3         | <code>d67b8d</code> | <code>323e23</code> | 2        | A         |
 
 Of particular note is that we don't visit _sibling_ commits: once we reach a commit by travelling in the ancestor direction, we can't suddenly flip direction. Maintaining the direction heading during traversal ensures that the algorithm will eventually terminate.
 
@@ -174,20 +174,20 @@ The following hypothetical commit graph contains a number of feature branches th
 Running the query above from the commit `703e33` produces the following CTE results over the first 4 iterations.
 
 <table>
-<tr><th>iteration</th><th>commit</th><th>parent_commit</th><th>has_lsif_data</th><th>distance</th><th>direction</th></tr>
-<tr><td>1</td><td><code>703e33</code></td><td><code>6307e6</code></td><td>false</td><td>0</td><td>A</td></tr>
-<tr><td>1</td><td><code>703e33</code></td><td><code>6307e6</code></td><td>false</td><td>0</td><td>D</td></tr>
-<tr><td>1</td><td><code>703e33</code></td><td><code>5a24e4</code></td><td>false</td><td>0</td><td>A</td></tr>
-<tr><td>1</td><td><code>703e33</code></td><td><code>5a24e4</code></td><td>false</td><td>0</td><td>D</td></tr>
-<tr><td>2</td><td><code>5a24e4</code></td><td><code>3d2f27</code></td><td>false</td><td>1</td><td>A</td></tr>
-<tr><td>2</td><td><code>6307e6</code></td><td><code>4a848f</code></td><td>false</td><td>1</td><td>A</td></tr>
-<tr class="workingtable-highlight"><td>3</td><td><code>3d2f27</code></td><td><code>09210f</code></td><td>false</td><td>2</td><td>A</td></tr>
-<tr class="workingtable-highlight"><td>3</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>false</td><td>2</td><td>A</td></tr>
-<tr><td>3</td><td><code>4a848f</code></td><td><code>3d2f27</code></td><td>false</td><td>2</td><td>A</td></tr>
-<tr><td>4</td><td><code>09210f</code></td><td></td><td>false</td><td>3</td><td>A</td></tr>
-<tr><td>4</td><td><code>2190d3</code></td><td><code>1f64f9</code></td><td>false</td><td>3</td><td>A</td></tr>
-<tr class="workingtable-highlight"><td>4</td><td><code>3d2f27</code></td><td><code>09210f</code></td><td>false</td><td>3</td><td>A</td></tr>
-<tr class="workingtable-highlight"><td>4</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>false</td><td>3</td><td>A</td></tr>
+<tr><th>iteration</th><th>commit</th><th>parent_commit</th><th>distance</th><th>direction</th></tr>
+<tr><td>1</td><td><code>703e33</code></td><td><code>6307e6</code></td><td>0</td><td>A</td></tr>
+<tr><td>1</td><td><code>703e33</code></td><td><code>6307e6</code></td><td>0</td><td>D</td></tr>
+<tr><td>1</td><td><code>703e33</code></td><td><code>5a24e4</code></td><td>0</td><td>A</td></tr>
+<tr><td>1</td><td><code>703e33</code></td><td><code>5a24e4</code></td><td>0</td><td>D</td></tr>
+<tr><td>2</td><td><code>5a24e4</code></td><td><code>3d2f27</code></td><td>1</td><td>A</td></tr>
+<tr><td>2</td><td><code>6307e6</code></td><td><code>4a848f</code></td><td>1</td><td>A</td></tr>
+<tr class="workingtable-highlight"><td>3</td><td><code>3d2f27</code></td><td><code>09210f</code></td><td>2</td><td>A</td></tr>
+<tr class="workingtable-highlight"><td>3</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>2</td><td>A</td></tr>
+<tr><td>3</td><td><code>4a848f</code></td><td><code>3d2f27</code></td><td>2</td><td>A</td></tr>
+<tr><td>4</td><td><code>09210f</code></td><td></td><td>3</td><td>A</td></tr>
+<tr><td>4</td><td><code>2190d3</code></td><td><code>1f64f9</code></td><td>3</td><td>A</td></tr>
+<tr class="workingtable-highlight"><td>4</td><td><code>3d2f27</code></td><td><code>09210f</code></td><td>3</td><td>A</td></tr>
+<tr class="workingtable-highlight"><td>4</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>3</td><td>A</td></tr>
 </table>
 
 Notice that there are 2 ways to get from commit `7033ee` to commit `3d2f27`, therefore the entries for `3d2f27` are duplicated in the CTE results (and therefore the working table). Also notice that the number of _new_ rows per iteration is growing as the iteration count rises in such graphs. **For some configuration of input, this query is [quadratic](https://accidentallyquadratic.tumblr.com/) instead of linear.**
