@@ -243,7 +243,7 @@ This change makes the query efficient enough that we no longer have to worry abo
 
 Firstly, I spoke too soon as there wouldn't be a Part 2 if we _had_ solved the problem once and for all. Secondly, sometimes the more complex the query, the more efficient it is. And lastly, the cliché holds: computers do what you tell them to. When debugging this is usually a good place to start.
 
-Stay tuned for Part 2 in which we tackle scalability challenges.
+Stay tuned for Part 2 in which we tackle additional scalability challenges.
 
 <style>
   figure .no-shadow { box-shadow: none; }
