@@ -32,7 +32,7 @@ Bring Sourcegraph’s insights into your codebase ([Code Intel](../code-intellig
          - [Felix Becker](../../../company/team/index.md#felix-becker) ([Engineering Manager](../roles.md#engineering-manager))
               - [Vova Kulikov](../../../company/team/index.md#vova-kulikov-he-him)
               - [Coury Clark](../../../company/team/index.md#coury-clark-he-him)
-              - FQ2/Q3 hire (Frontend Engineer)
+              - FQ3 hire (Frontend Engineer)
      - [API docs](../developer-insights/api-docs/index.md)
          - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) is the acting [Engineering Manager](../roles.md#engineering-manager) for this workstream
               - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
