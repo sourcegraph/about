@@ -106,7 +106,7 @@ WITH RECURSIVE lineage(repository, "commit", parent_commit, distance, direction)
 -- traversal by construction.
 SELECT l."commit"
 FROM lineage l
-WHERE EXISTS (SELECT 1 FROM lsif_data_markers m WHERE m.repository = l.repository AND m."commit" = l."commit" has has_lsif_data)
+WHERE EXISTS (SELECT 1 FROM lsif_data_markers m WHERE m.repository = l.repository AND m."commit" = l."commit")
 LIMIT 1
 ```
 
