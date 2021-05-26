@@ -45,13 +45,11 @@ Individual teams should also think about how to onboard new members to the thing
 ## Share high-level context
 
 High-level context is the hardest to transfer. It’s difficult to document, because grokking the overall architecture means understanding how the pieces fit together and knowing what the core assumptions and tension points are. Even if you do a reasonable job with the documentation, chances are it will fall out of date.
-However, it's important to transfer such knowledge, including historical knowledge. Otherwise you can get into a position where no one is left on the team who feels confident making big changes, not just small, incremental ones.
+However, it's important to transfer such knowledge, including historical knowledge. Otherwise you can get into a position where no one is left on the team who feels confident making big changes, not just small, incremental ones. As Jean said in our conversation, context is king, so don't underestimate the importance of giving people the proper context, because it's better to spend more time upfront to enable people to move much more quickly down the road.
 
 Having a source of truth that captures not just code changes, but high-level discussions about the motivation behind changes is important, because it preserves the "why" for new members of the team who may need to understand it at some point down the road. Jean shared: "This exact scenario played out for a new engineer recently. They love context and understanding the history behind decisions. 
 Thankfully, Sourcegraph has this practice of putting [Requests for Comments (RFCs)](https://about.sourcegraph.com/handbook/communication/rfcs) together when we want to introduce any changes or make architectural decisions. 
 We were able to refer to this document, which even predates my time, that gave context on these decisions. Because even the people who worked on it at the time eventually forget about it." 
-
-As Jean said in our conversation, context is king, so don't underestimate the importance of giving people the proper context, because it's better to spend more time upfront to enable people to move much more quickly down the road.
 
 Limor shared that putting new hires into an on-call rotation can also help them get oriented, because diagnosing and addressing outages will require them to understand the system end to end.
 During on-call, when they're not resolving an issue, they should be updating the docs based on the last thing they just resolved. 
