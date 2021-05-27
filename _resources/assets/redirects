@@ -1,10 +1,10 @@
 /company/careers https://boards.greenhouse.io/sourcegraph91 308
-/company/okrs /company/goals 308
-/company/okrs/2019_q3 /company/goals/2019_q3 308
-/company/okrs/2019_q4 /company/goals/2019_q4 308
-/company/okrs/2020_q1 /company/goals/2020_q1 308
-/company/okrs/2020_q2 /company/goals/2020_q2 308
-/company/open_source_open_company /company#sourcegraph-open-product-open-company-open-source 308
+/company/okrs /handbook/company/goals 308
+/company/okrs/2019_q3 /handbook/company/goals/2019_q3 308
+/company/okrs/2019_q4 /handbook/company/goals/2019_q4 308
+/company/okrs/2020_q1 /handbook/company/goals/2020_q1 308
+/company/okrs/2020_q2 /handbook/company/goals/2020_q2 308
+/company/open_source_open_company /handbook/company#sourcegraph-open-product-open-company-open-source 308
 
 /handbook/communication/style_guide /handbook/communication/content_guidelines 308
 /handbook/company_meeting /handbook/communication/company_meeting 308
@@ -40,7 +40,7 @@
 /handbook/people-ops/invoices /handbook/ops/finances/invoices 308
 /handbook/people-ops/expenses /handbook/ops/finances/expenses 308
 /handbook/product/personas /handbook/marketing/personas 308
-/handbook/values /company/values 308
+/handbook/values /handbook/company/values 308
 
 /handbook/ce/support /handbook/support 308
 

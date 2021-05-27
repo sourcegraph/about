@@ -208,7 +208,7 @@ because we built it.
 
 [localmaximum]: https://elezea.com/2012/09/iphone-5-local-maximum/
 [sunkencost]: https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect
-[quinn]: https://about.sourcegraph.com/company/team#quinn-slack
+[quinn]: https://about.sourcegraph.com/handbook/company/team#quinn-slack
 [pr1]: https://github.com/sourcegraph/sourcegraph/pull/5482
 [pr2]: https://github.com/sourcegraph/sourcegraph/pull/8008
 [pr3]: https://github.com/sourcegraph/about/pull/583

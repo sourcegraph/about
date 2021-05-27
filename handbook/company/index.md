@@ -3,7 +3,7 @@
 - [**about.sourcegraph.com**](https://about.sourcegraph.com) for information about Sourcegraph (the product and the company)
   - [Careers](https://boards.greenhouse.io/sourcegraph91)
   - [News](https://about.sourcegraph.com/news)
-- [Sourcegraph handbook](../handbook/index.md#company)
+- [Sourcegraph handbook](../index.md#company)
 - [All-remote](remote/index.md)
 - [Goals](goals/index.md)
 - [Strategy](strategy.md)
@@ -24,7 +24,7 @@ You might not realize it, but the products you use every day are not just open s
 
 ## Open company
 
-This means that principles, strategies, and processes for internal company functions are publicly documented in [our handbook](../handbook/index.md), including for recruiting, marketing, pricing, and sales—not just engineering and product.
+This means that principles, strategies, and processes for internal company functions are publicly documented in [our handbook](../index.md), including for recruiting, marketing, pricing, and sales—not just engineering and product.
 
 Being an open company is important because being an open product isn't enough to gain the trust of developers. You need to do the same for other important parts of the company that affect the product, the open source project, and the users. See [GitLab's pricing strategy](https://about.gitlab.com/handbook/product/pricing/) in their public handbook for a great example of this.
 
@@ -32,4 +32,4 @@ Open company doesn't mean that everything is public; only principles, strategies
 
 ## Open source
 
-To learn more about what **open source** means at Sourcegraph, see the [open source FAQs](../community/faq.md) and [license documentation](https://github.com/sourcegraph/sourcegraph#license).
+To learn more about what **open source** means at Sourcegraph, see the [open source FAQs](../../handbook/community/faq.md) and [license documentation](https://github.com/sourcegraph/sourcegraph#license).

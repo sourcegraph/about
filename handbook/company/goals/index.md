@@ -15,37 +15,37 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 
-### [People Ops](../../handbook/people-ops/index.md#goals)
+### [People Ops](../../people-ops/index.md#goals)
 
-### [Business Operations & Strategy](../../handbook/ops/bizops/index.md#goals)
+### [Business Operations & Strategy](../../ops/bizops/index.md#goals)
 
-### [Finance & Accounting](../../handbook/ops/finance/index.md#goals)
+### [Finance & Accounting](../../ops/finance/index.md#goals)
 
-### [Legal](../../handbook/ops/legal/index.md#goals)
+### [Legal](../../ops/legal/index.md#goals)
 
 ## Engineering
 
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
 
-### [Batch Changes](../../handbook/engineering/batch-changes/goals.md#goals)
+### [Batch Changes](../../engineering/batch-changes/goals.md#goals)
 
-### [Core application](../../handbook/engineering/core-application/goals.md#goals)
+### [Core application](../../engineering/core-application/goals.md#goals)
 
-### [Code intelligence](../../handbook/engineering/code-intelligence/goals.md#goals)
+### [Code intelligence](../../engineering/code-intelligence/goals.md#goals)
 
-### [Distribution](../../handbook/engineering/distribution/goals.md#goals)
+### [Distribution](../../engineering/distribution/goals.md#goals)
 
-### [Search](../../handbook/engineering/search/goals.md#goals)
+### [Search](../../engineering/search/goals.md#goals)
 
-### [Security](../../handbook/engineering/security/goals.md#goals)
+### [Security](../../engineering/security/goals.md#goals)
 
-### [Frontend platform](../../handbook/engineering/developer-insights/frontend-platform/goals.md#goals)
+### [Frontend platform](../../engineering/developer-insights/frontend-platform/goals.md#goals)
 
-### [Extensibility](../../handbook/engineering/developer-insights/extensibility/goals.md#goals)
+### [Extensibility](../../engineering/developer-insights/extensibility/goals.md#goals)
 
-#### [Code insights](../../handbook/engineering/developer-insights/code-insights/goals.md#goals)
+#### [Code insights](../../engineering/developer-insights/code-insights/goals.md#goals)
 
-## [Product](../../handbook/product/goals.md)
+## [Product](../../product/goals.md)
 
 ---
 
@@ -53,8 +53,8 @@ See "[Guidelines for goals](guidelines.md)" for more information about how we ch
 
 This page is generated automatically based on the contents of other handbook pages.
 
-1. To add a team's goals, [edit this page](https://github.com/sourcegraph/about/edit/master/company/goals/index.md) and add a link to the section of the team's page that lists the goals (such as `### [My team](../../handbook/myteam/index.md#goals)`). If the entire page is about goals, omit the section from the URL (for example, omit `#goals`).
-1. To edit a team's goals, edit the linked section on the team's page. In the example above, you'd edit the `Goals` section of `../../handbook/myteam/index.md`. Everything in that section until the next same-level heading is displayed on this page.
+1. To add a team's goals, [edit this page](https://github.com/sourcegraph/about/edit/master/company/goals/index.md) and add a link to the section of the team's page that lists the goals (such as `### [My team](../../myteam/index.md#goals)`). If the entire page is about goals, omit the section from the URL (for example, omit `#goals`).
+1. To edit a team's goals, edit the linked section on the team's page. In the example above, you'd edit the `Goals` section of `../../myteam/index.md`. Everything in that section until the next same-level heading is displayed on this page.
 1. To add any other text or structure to this page, just insert it as you would normally. Only 3rd-level heading links (lines that start with `###` and that have a link) are treated specially; all other content is preserved.
 
 <script>

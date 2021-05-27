@@ -69,4 +69,4 @@ Whether you use Sourcegraph 20 times per day or are new to it, we'd love to hear
 
 We look forward to hearing from you!
 
-From the [entire Sourcegraph team](https://about.sourcegraph.com/company/team), happy coding!
+From the [entire Sourcegraph team](https://about.sourcegraph.com/handbook/company/team), happy coding!

@@ -17,7 +17,7 @@ const LEADERS: {
             name: 'Quinn Slack',
             image: '/staff/avatar-quinn.jpg',
             title: 'CEO and Cofounder',
-            bio: '/company/team#quinn-slack',
+            bio: '/handbook/company/team#quinn-slack',
             github: 'https://github.com/sqs',
             linkedin: 'https://www.linkedin.com/in/quinnslack',
             twitter: 'https://twitter.com/sqs'
@@ -26,7 +26,7 @@ const LEADERS: {
             name: 'Beyang Liu',
             image: '/staff/avatar-beyang.jpg',
             title: 'CTO and Cofounder',
-            bio: '/company/team#beyang-liu',
+            bio: '/handbook/company/team#beyang-liu',
             github: 'https://github.com/beyang',
             linkedin: 'https://www.linkedin.com/in/beyang-liu',
             twitter: 'https://twitter.com/beyang'
@@ -35,7 +35,7 @@ const LEADERS: {
             name: 'Christina Forney',
             image: '/staff/avatar-christina.jpg',
             title: 'VP Product',
-            bio: '/company/team#christina-forney-she-her',
+            bio: '/handbook/company/team#christina-forney-she-her',
             github: 'https://github.com/christinaforney',
             linkedin: 'https://www.linkedin.com/in/christinaforney',
             twitter: 'https://twitter.com/christina4nee'
@@ -44,7 +44,7 @@ const LEADERS: {
             name: 'Dan Adler',
             image: '/staff/avatar-dan.jpg',
             title: 'VP Operations',
-            bio: '/company/team#dan-adler-he-him',
+            bio: '/handbook/company/team#dan-adler-he-him',
             github: 'https://github.com/dadlerj',
             linkedin: 'https://www.linkedin.com/in/danielnealadler',
             twitter: 'https://twitter.com/DanielNealAdler'
@@ -53,7 +53,7 @@ const LEADERS: {
             name: 'Gregg Stone',
             image: '/staff/avatar-gregg.jpg',
             title: 'VP Sales',
-            bio: '/company/team#gregg-stone',
+            bio: '/handbook/company/team#gregg-stone',
             github: 'https://github.com/sourcegraph',
             linkedin: 'https://www.linkedin.com/in/stonegregg',
             twitter: 'https://twitter.com/srcgraph'
@@ -62,7 +62,7 @@ const LEADERS: {
             name: 'Kacie Jenkins',
             image: '/staff/avatar-kacie.jpg',
             title: 'VP Marketing',
-            bio: '/company/team#kacie-jenkins-she-her',
+            bio: '/handbook/company/team#kacie-jenkins-she-her',
             github: 'https://github.com/sourcegraph',
             linkedin: 'https://www.linkedin.com/in/kaciejenkins',
             twitter: 'https://twitter.com/mskaciej'
@@ -71,7 +71,7 @@ const LEADERS: {
             name: 'Nick Snyder',
             image: '/staff/avatar-nick.jpg',
             title: 'VP Engineering',
-            bio: '/company/team#nick-snyder-he-him',
+            bio: '/handbook/company/team#nick-snyder-he-him',
             github: 'https://github.com/nicksnyder',
             linkedin: 'https://www.linkedin.com/in/nickdsnyder',
             twitter: 'https://twitter.com/nickdsnyder'
@@ -80,7 +80,7 @@ const LEADERS: {
             name: 'Noemi Mercado',
             image: '/staff/avatar-noemi.jpg',
             title: 'Head of People Ops',
-            bio: '/company/team#noemi-mercado-she-her',
+            bio: '/handbook/company/team#noemi-mercado-she-her',
             github: 'https://github.com/mercadon',
             linkedin: 'https://www.linkedin.com/in/noemí-mercado-3aa92798',
             twitter: 'https://twitter.com/srcgraph'

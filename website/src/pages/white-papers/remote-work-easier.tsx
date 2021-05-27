@@ -43,7 +43,7 @@ export default ((props: any) => (
                     </p>
                     <p>
                         We have compiled some excellent tips and tricks from fellow{' '}
-                        <a href="https://about.sourcegraph.com/company/team">teammates</a> on how to live your best
+                        <a href="https://about.sourcegraph.com/handbook/company/team">teammates</a> on how to live your best
                         distributed work life!
                     </p>
                     <h2 className="pt-5 pb-1">Tips for working remotely</h2>

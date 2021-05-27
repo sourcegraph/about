@@ -7,13 +7,13 @@
 Work-wise I'm mostly a hands-off manager. I believe in hiring smart people, setting clear expectations, and then holding people accountable.
 That said, I am always happy to get involved in the work when you need me.
 
-I place a lot of emphasis on career development and personal growth with my direct reports. I believe if you are engaged and growing, not only will you be happy, but the team will benefit from it.  
+I place a lot of emphasis on career development and personal growth with my direct reports. I believe if you are engaged and growing, not only will you be happy, but the team will benefit from it.
 
 I use the [CliftonStrengths assessment](https://www.gallup.com/cliftonstrengths) to better understand your unique strengths so that I can help create the opportunities for you to utilize them.
 
 ## 1-1s
 
-I do weekly [1-1s](../../handbook/leadership/1-1.md) with my direct reports.  
+I do weekly [1-1s](../../leadership/1-1.md) with my direct reports.
 
 ## Skip-level meetings
 
@@ -21,7 +21,7 @@ I do skip-level meetings with all my indirect reports once a month.
 
 ## Getting to know you
 
-If I am your new manager, I will ask you to schedule a series of three 60 minute 1-1s (1 per week, in addition to our regular 1-1) to learn more about you.  
+If I am your new manager, I will ask you to schedule a series of three 60 minute 1-1s (1 per week, in addition to our regular 1-1) to learn more about you.
 
 Here are the topics for the sessions:
 
