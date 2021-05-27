@@ -13,7 +13,6 @@
     - [Editing blog posts](editing_blog_posts.md)
     - [Creating blog posts](creating_blog_posts.md)
     - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
-    - [Website style guide](website_style_guide.md)
 - [Developer Education](education.md)
 - [Brand](brand/index.md)
     - [Building a strong brand](brand/building_a_strong_brand.md)
