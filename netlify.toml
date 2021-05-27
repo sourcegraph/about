@@ -77,12 +77,12 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
 
 [[redirects]]
   from = "/workflow"
-  to = "https://about-docsite.sourcegraph.com/workflow"
+  to = "https://about-docsite.sourcegraph.com/handbook/workflow"
   status = 200
   force = true
 [[redirects]]
   from = "/workflow/*"
-  to = "https://about-docsite.sourcegraph.com/workflow/:splat"
+  to = "https://about-docsite.sourcegraph.com/handbook/workflow/:splat"
   status = 200
   force = true
 

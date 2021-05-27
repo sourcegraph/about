@@ -33,7 +33,7 @@ Product at Sourcegraph consists of [product management](product_management/index
 
 - [Onboarding to the product team](./onboarding/index.md)
 - [Personas](../marketing/personas.md)
-- The [Sourcegraph workflow](../../workflow/index.md) describes how our product fits into the developer workflow.
+- The [Sourcegraph workflow](../workflow/index.md) describes how our product fits into the developer workflow.
 - Product documents (PDs)
   - [All PDs](https://drive.google.com/drive/folders/1UbuN9izpTj7ppJiduKI5tid8GEFuAiEx) (Google Drive)
   - [How we use PDs](product_documents.md)
