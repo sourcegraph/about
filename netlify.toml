@@ -22,35 +22,68 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
 
 [[redirects]]
   from = "/community"
-  to = "https://about-docsite.sourcegraph.com/handbook/community"
-  status = 200
+  to = "/handbook/community"
+  status = 308
   force = true
+
 [[redirects]]
   from = "/community/*"
-  to = "https://about-docsite.sourcegraph.com/handbook/community/:splat"
-  status = 200
+  to = "/handbook/community/:splat"
+  status = 308
   force = true
 
 [[redirects]]
   from = "/direction"
-  to = "https://about-docsite.sourcegraph.com/handbook/direction"
-  status = 200
+  to = "/handbook/direction"
+  status = 308
   force = true
+
 [[redirects]]
   from = "/direction/*"
-  to = "https://about-docsite.sourcegraph.com/handbook/direction/:splat"
-  status = 200
+  to = "/handbook/direction/:splat"
+  status = 308
   force = true
 
 [[redirects]]
   from = "/company"
-  to = "https://about-docsite.sourcegraph.com/handbook/company"
-  status = 200
+  to = "/handbook/company"
+  status = 308
   force = true
+
 [[redirects]]
   from = "/company/*"
-  to = "https://about-docsite.sourcegraph.com/handbook/company/:splat"
-  status = 200
+  to = "/handbook/company/:splat"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/retrospectives"
+  to = "/handbook/retrospectives"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/retrospectives/*"
+  to = "/handbook/retrospectives/:splat"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/workflow"
+  to = "/handbook/workflow"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/workflow/*"
+  to = "/handbook/workflow/:splat"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/search"
+  to = "/handbook"
+  status = 308
   force = true
 
 [[redirects]]
@@ -58,36 +91,9 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   to = "https://about-docsite.sourcegraph.com/handbook"
   status = 200
   force = true
+
 [[redirects]]
   from = "/handbook/*"
   to = "https://about-docsite.sourcegraph.com/handbook/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/retrospectives"
-  to = "https://about-docsite.sourcegraph.com/handbook/retrospectives"
-  status = 200
-  force = true
-[[redirects]]
-  from = "/retrospectives/*"
-  to = "https://about-docsite.sourcegraph.com/handbook/retrospectives/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/workflow"
-  to = "https://about-docsite.sourcegraph.com/handbook/workflow"
-  status = 200
-  force = true
-[[redirects]]
-  from = "/workflow/*"
-  to = "https://about-docsite.sourcegraph.com/handbook/workflow/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/search"
-  to = "https://about-docsite.sourcegraph.com/search"
   status = 200
   force = true
