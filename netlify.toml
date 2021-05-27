@@ -21,12 +21,12 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   force = true
 
 [[redirects]]
-  from = "/handbook/community"
+  from = "/community"
   to = "https://about-docsite.sourcegraph.com/handbook/community"
   status = 200
   force = true
 [[redirects]]
-  from = "/handbook/community/*"
+  from = "/community/*"
   to = "https://about-docsite.sourcegraph.com/handbook/community/:splat"
   status = 200
   force = true
@@ -65,12 +65,12 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   force = true
 
 [[redirects]]
-  from = "/handbook/retrospectives"
+  from = "/retrospectives"
   to = "https://about-docsite.sourcegraph.com/handbook/retrospectives"
   status = 200
   force = true
 [[redirects]]
-  from = "/handbook/retrospectives/*"
+  from = "/retrospectives/*"
   to = "https://about-docsite.sourcegraph.com/handbook/retrospectives/:splat"
   status = 200
   force = true
