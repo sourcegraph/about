@@ -45,7 +45,7 @@ We track and report anonymous, non-specific, aggregate metrics from Sourcegraph 
 
 ### Key success metrics
 
-| Outcome                                             | Metric                                                                    
+| Outcome                                             | Metric
 |----------------------------------------------------|------------------------------------------------------------------------ |
 | Are developers using Batch Changes?                 | number of batch changes created, number of changesets published        |
 | Are batch changes successful?                       | merge rate of batch changes (changesets merged / changesets published) |
@@ -84,9 +84,9 @@ When I create a batch change to make large-scale code changes I want to _focus o
 Our two-week sprints start every other Wednesday. We follow this process:
 
 * Before the iteration (sprint N+1) begins, we do pre-planning to make the most of our the planning meeting:
-  * EM creates the milestone for sprint N+1 and a `planned/BatchersSprintN` label for things that didn't get finished in the previous sprint.
-  * EM checks for [untracked issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Ateam%2Fbatchers+no%3Amilestone) and adds them to the "Needs prioritization" column of [our planning project](https://github.com/orgs/sourcegraph/projects/119).
-  * Everyone on the team looks through our planning project for any issues they do not expect to finish by the end of the sprint (EOD Tuesday), and set the next sprint's milestone. Make sure to set the relevant `planned` label on issues that move to the next sprint, for tracking and accountability.
+  * EM creates the milestone for sprint N+1.
+  * EM checks for [untracked issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Ateam%2Fbatchers) and adds them to the "Needs prioritization" column of [our planning project](https://github.com/orgs/sourcegraph/projects/119).
+  * Everyone on the team looks through our planning project for any issues they do not expect to finish by the end of the sprint (EOD Tuesday), and set the next sprint's milestone.
   * Engineers add/refine estimates to issues in the planning project. All estimates in GitHub are assumed to be upper-bound estimates. (A missing estimate means "between 1 second and 1 trillion years.")
   * Everyone on the team reviews our [roadmap in Productboard](https://sourcegraph.productboard.com/roadmap/2263724-campaigns-releases) for the current/next release.
 
@@ -115,13 +115,13 @@ The Batch Changes team is the current owner of [src-cli](https://github.com/sour
 
 ## Members
 
-- [Malo Marrec](../../../company/team/index.md#malo-marrec-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
-- [Rob Rhyne](../../../company/team/index.md#rob-rhyne) ([Product Designer](../../product/roles/index.md#product-designer))
-- [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](../roles.md#engineering-manager)) {#batch-changes-eng}
-  - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
-  - [Adam Harvey](../../../company/team/index.md#adam-harvey-he-him)
-  - [Erik Seliger](../../../company/team/index.md#erik-seliger)
-  - [Kelli Rockwell](../../../company/team/index.md#kelli-rockwell-she-her)
+- [Malo Marrec](../../company/team/index.md#malo-marrec-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
+- [Rob Rhyne](../../company/team/index.md#rob-rhyne) ([Product Designer](../../product/roles/index.md#product-designer))
+- [Chris Pine](../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](../roles.md#engineering-manager)) {#batch-changes-eng}
+  - [Thorsten Ball](../../company/team/index.md#thorsten-ball-he-him)
+  - [Adam Harvey](../../company/team/index.md#adam-harvey-he-him)
+  - [Erik Seliger](../../company/team/index.md#erik-seliger)
+  - [Kelli Rockwell](../../company/team/index.md#kelli-rockwell-she-her)
 
 ## Related links
 

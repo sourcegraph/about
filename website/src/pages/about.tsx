@@ -50,12 +50,12 @@ export default class About extends React.Component<any, any> {
                         <div className="bg-gradient-green-blue mb-5">
                             <div className="container py-6">
                                 <h2>Learn all about Sourcegraph</h2>
-                                <p>The <Link to="/handbook">Sourcegraph handbook</Link> has everything from our high-level <Link to="/company/strategy">strategy</Link>, <Link to="/direction">product direction</Link>, and <Link to="/company/values">values</Link>, to documentation of business processes including <Link to="/handbook/marketing/messaging">messaging</Link> and <Link to="/handbook/engineering#guiding-principles">engineering principles</Link>.  It's public for everyone to read because we are <Link to="/company/values#open-and-transparent">open and transparent</Link>.</p>
+                                <p>The <Link to="/handbook">Sourcegraph handbook</Link> has everything from our high-level <Link to="/handbook/company/strategy">strategy</Link>, <Link to="/handbook/direction">product direction</Link>, and <Link to="/handbook/company/values">values</Link>, to documentation of business processes including <Link to="/handbook/marketing/messaging">messaging</Link> and <Link to="/handbook/engineering#guiding-principles">engineering principles</Link>.  It's public for everyone to read because we are <Link to="/handbook/company/values#open-and-transparent">open and transparent</Link>.</p>
                             </div>
                         </div>
                         <div className="container py-5 mb-5">
                             <h2>Sourcegraph team</h2>
-                            <p>Sourcegraph is an <Link to="/company/remote">all-remote</Link> company, working asynchronously across time zones and continents. Meet our <Link to="/company/team">team members</Link> and learn about our commitment to <Link to="/handbook/communication/code_of_conduct#our-standards">inclusion</Link>.</p>
+                            <p>Sourcegraph is an <Link to="/handbook/company/remote">all-remote</Link> company, working asynchronously across time zones and continents. Meet our <Link to="/handbook/company/team">team members</Link> and learn about our commitment to <Link to="/handbook/communication/code_of_conduct#our-standards">inclusion</Link>.</p>
                             <Link className="btn btn-sm btn-primary mb-2" to="https://boards.greenhouse.io/sourcegraph91">
                                 Open roles - we're hiring!
                                 </Link>

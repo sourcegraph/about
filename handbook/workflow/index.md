@@ -1,6 +1,6 @@
 # Sourcegraph workflow
 
-Sourcegraph helps [<!-- personas -->](../handbook/marketing/personas.md) organizations with the following stages of the development workflow:
+Sourcegraph helps [<!-- personas -->](../marketing/personas.md) organizations with the following stages of the development workflow:
 
 - **Code:** Unblock yourself while coding by finding answers in the code and every bit of related information.
 - **Review:** Review code, find problems early, and share knowledge.

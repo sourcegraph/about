@@ -1,6 +1,6 @@
 # Sourcegraph values
 
-These values are the beliefs and principles that help us achieve our [goals](goals/index.md) and [vision](strategy.md#vision) and build an [inclusive team](../handbook/communication/code_of_conduct.md). These apply at every level of our organization—"you" refers to individuals, teams, and Sourcegraph as a whole.
+These values are the beliefs and principles that help us achieve our [goals](goals/index.md) and [vision](strategy.md#vision) and build an [inclusive team](../communication/code_of_conduct.md). These apply at every level of our organization—"you" refers to individuals, teams, and Sourcegraph as a whole.
 
 - [**Be customer driven**](#be-customer-driven): You proactively work on the right things by continuously orienting your goals around delivering value to your customers.
 - [**Work as a team**](#work-as-a-team): You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.
@@ -46,7 +46,7 @@ You are responsible for finding out what high-quality work looks like and delive
 
 - If you don’t know what high quality looks like, it's your responsibility to find out (for example, by asking teammates and stakeholders).
 - If you don’t have the time to produce high-quality work, then it's your responsibility to take more time or cut scope (and communicate this), so that you can produce high-quality work.
-- If you don’t have the skills to produce high-quality work, then it's your responsibility to acquire those skills (for example: learn them yourself, make use of [Sourcegraph's education budget](../handbook/people-ops/travel.md#professional-development-and-education), delegate to an existing teammate with the necessary skills, or hire a new teammate with those skills).
+- If you don’t have the skills to produce high-quality work, then it's your responsibility to acquire those skills (for example: learn them yourself, make use of [Sourcegraph's education budget](../people-ops/travel.md#professional-development-and-education), delegate to an existing teammate with the necessary skills, or hire a new teammate with those skills).
 - If you need help producing high-quality work, it is your responsibility to get that help.
 
 If we discover that we've produced something that does not meet our quality bar, we'll roll it back (for example, revert a commit, roll back a deployment, or unpublish content) until we can make it high quality. If that's not possible, we'll prioritize improving it.
@@ -57,17 +57,17 @@ High-quality isn't the opposite of iterative. You can keep quality high while st
 
 You make people from all groups and backgrounds feel comfortable belonging to our team and community. You understand that diversity is having a seat at the table, inclusion is having a voice, and belonging is having that voice be heard. You are actively against racism and bias.
 
-- In order for us to realize our purpose, our team must have diverse perspectives that are truly heard. 
+- In order for us to realize our purpose, our team must have diverse perspectives that are truly heard.
 - In order for everyone to feel safe sharing their perspective, truly having a voice, and being heard, we must all continuously confront our unconscious biases by identifying them ourselves, graciously accepting when they are identified for us, and doing the work to ensure our biases do not inform our conduct and decision-making.
 
 We view equity and inclusion as foundational elements to our culture, our success, and our ability to realize our purpose. We understand that:
 
-- We all have unconscious biases we need to confront. 
+- We all have unconscious biases we need to confront.
 - Good people can say and do biased or racist things (and this doesn’t automatically make them bad people).
 - Diversity supports our moral values and practical goals and we cannot truly have diversity without also having equity and inclusion.
 - We consider a focus on diversity, equity, and inclusion a critical job function of all leaders at Sourcegraph.
 
-For more information, see our "[Diversity, equity, and inclusion](../../handbook/communication/dei.md)".
+For more information, see our "[Diversity, equity, and inclusion](../communication/dei.md)".
 
 ### Open and transparent
 
@@ -79,7 +79,7 @@ We favor transparency by default. There are multiple levels of transparency, and
 
 | Level of transparency | Description | Channels | Examples |
 |---|---|---|---|
-| Public | Anyone outside of Sourcegraph can access this information. **This is the default level of transparency.** | [Handbook](../handbook/index.md), [code](https://github.com/sourcegraph/sourcegraph), [issues](https://github.com/sourcegraph/sourcegraph/issues), public Google Docs such as [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs) | Goals, plans, all code, product docs, dev docs, company docs |
+| Public | Anyone outside of Sourcegraph can access this information. **This is the default level of transparency.** | [Handbook](../index.md), [code](https://github.com/sourcegraph/sourcegraph), [issues](https://github.com/sourcegraph/sourcegraph/issues), public Google Docs such as [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs) | Goals, plans, all code, product docs, dev docs, company docs |
 | Internal to Sourcegraph | Information that is not public for specific reasons, but is shared with Sourcegraph teammates. | Public Slack channels, Google Docs accessible to everyone at Sourcegraph, internal [Google Groups](https://groups.google.com/all-groups) | Board slides, company financial info, customer information, open security investigations |
 | Private | Information that is neither public nor internal to Sourcegraph for specific reasons, but is shared only with a specific set of people. | Private Slack channels or DMs, private Google Docs, private emails | Feedback, compensation, and personal information of teammates and candidates |
 

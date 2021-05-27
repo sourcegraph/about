@@ -39,7 +39,7 @@ Give yourself a **_yes_** (1 point each) or **_no_** (0 points) for each questio
 
 Until you’re running at 12/12 on The Sourcegraph Test (_and_ The Joel Test), you’re wasting a lot of precious development time on tasks that aren’t core to your business and product. Tracking down the source of a bug takes an extra 5 minutes here, figuring out the impact of a change in a code review takes 10 minutes more, refactoring a method name via plain-text search adds half an hour on top of that — small numbers, maybe, but they add up fast, and they get more costly as your team grows. Any team that’s wasting 20% of their day is falling behind competitors and is being drained of their creative energy to create amazing products.
 
-At [Sourcegraph](http://sourcegraph.com), we think every developer — in every company, in every language, working on any kind of code — deserves to be 12/12\. See the [Sourcegraph master plan](https://about.sourcegraph.com/company/strategy) for how we’re working to make that possible.
+At [Sourcegraph](http://sourcegraph.com), we think every developer — in every company, in every language, working on any kind of code — deserves to be 12/12\. See the [Sourcegraph master plan](https://about.sourcegraph.com/handbook/company/strategy) for how we’re working to make that possible.
 
 [**Share your score on Twitter!** ➜](https://twitter.com/intent/tweet?text=My%20dev%20tools%20are%20at%20__%2F12%20on%20the%20%23sourcegraphtest%20https%3A%2F%2Ftext.sourcegraph.com%2Fthe-sourcegraph-test-12-more-steps-to-better-code-e5c281850c&source=webclient&via=srcgraph&related=srcgraph)
 

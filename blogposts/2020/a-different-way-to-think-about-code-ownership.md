@@ -24,7 +24,7 @@ As our team has grown over the past year, I started to observe patterns that mad
 My diagnosis was that there were two problems:
 
 1. The low signal to noise ratio of automatically assigned reviews was slowing the team down.
-1. The design of CODEOWNERS (its name, its UI treatment, it automatically adding code reviewers) created a gatekeeper culture to code review that discouraged a [high agency](https://about.sourcegraph.com/company/values#high-agency) mindset.
+1. The design of CODEOWNERS (its name, its UI treatment, it automatically adding code reviewers) created a gatekeeper culture to code review that discouraged a [high agency](https://about.sourcegraph.com/handbook/company/values#high-agency) mindset.
 
 ## Validation
 

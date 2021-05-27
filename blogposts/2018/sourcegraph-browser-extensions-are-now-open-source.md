@@ -16,7 +16,7 @@ published: true
 
 We're open sourcing it today for two reasons:
 
-1. We are committed to making more of Sourcegraph open source so we can be transparent with our development and enable passionate developers to help us achieve our [master plan](/company/strategy).
+1. We are committed to making more of Sourcegraph open source so we can be transparent with our development and enable passionate developers to help us achieve our [master plan](/handbook/company/strategy).
 2. We are preparing for our upcoming release of [Sourcegraph extensions](https://docs.sourcegraph.com/extensions) open standard, which lets you write an "editor extension"-like tool once and use it anywhere you look at code (in your code host, in multiple editors, and on Sourcegraph). Sourcegraph for Chrome and Firefox will be two of the first clients that support Sourcegraph extensions.
 
 Visit the [sourcegraph/sourcegraph](https://github.com/sourcegraph/sourcegraph/tree/master/client/browser) repository to see the code and install the browser extension.

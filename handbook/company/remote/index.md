@@ -7,7 +7,7 @@ Sourcegraph is an all-remote company, which means:
 - We work asynchronously across time zones and continents.
   - You choose when you want to work. (Most people work the normal working hours for their timezone.)
   - You don't need to ask permission or tell anyone if you need to step out.
-  - We try to limit the number of synchronous meetings, but there are some [company](../../handbook/communication/company_meeting.md) and team meetings that you need to attend which might be outside of your normal working hours. We do our best to optimize meeting times for all involved participants.
+  - We try to limit the number of synchronous meetings, but there are some [company](../../communication/company_meeting.md) and team meetings that you need to attend which might be outside of your normal working hours. We do our best to optimize meeting times for all involved participants.
 
 ## FAQ
 
@@ -30,7 +30,7 @@ At Sourcegraph, we support these kinds of interactions in many ways. Here are a 
 
 1. We use https://donut.com to schedule 1-1s between random teammates each week.
 1. In addition to our weekly company meeting, weekly team meetings, and regular 1-1s with your manager, teams schedule regular optional "watercooler" meetings with no agenda where teammates can join and chit-chat. Teammates also frequently hop on a video chat to chat, pair program, or work through an issue together (just like you would in an office).
-1. We have [travel budgets](../../handbook/people-ops/travel.md) so teammates can meet up with their team to bond.
+1. We have [travel budgets](../../people-ops/travel.md) so teammates can meet up with their team to bond.
 
 ### Is it harder to support less experienced teammates on an all-remote team?
 

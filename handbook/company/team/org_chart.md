@@ -8,31 +8,31 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 	<small>If the org chart does not appear, please <a href="https://github.com/sourcegraph/about/issues">report this issue</a> and include the output from your browser's devtools JavaScript console.</small>
 </div>
 
-## [Engineering](../../handbook/engineering/eng_org.md#current-organization)
+## [Engineering](../../engineering/eng_org.md#current-organization)
 
-[Future engineering org chart and hiring plan](../../handbook/engineering/eng_org.md#planned-organization)
+[Future engineering org chart and hiring plan](../../engineering/eng_org.md#planned-organization)
 
-## [Product](../../handbook/product/index.md#members)
+## [Product](../../product/index.md#members)
 
-## [Customer Support](../../handbook/support/index.md#the-team)
+## [Customer Support](../../support/index.md#the-team)
 
-## [Customer Engineering](../../handbook/ce/index.md#members)
+## [Customer Engineering](../../ce/index.md#members)
 
-## [Marketing](../../handbook/marketing/index.md#members)
+## [Marketing](../../marketing/index.md#members)
 
 ## Operations
 <!-- When updating the ops team list below, please also update handbook/index.md. -->
-### [People Ops](../../handbook/people-ops/index.md#people-ops-team-members)
-### [Business Operations & Strategy](../../handbook/ops/bizops/index.md#members)
-### [Finance & Accounting](../../handbook/ops/finance/index.md#members)
-### [Legal](../../handbook/ops/legal/index.md#members)
-### [Tech Ops](../../handbook/ops/tech-ops/index.md#members)
+### [People Ops](../../people-ops/index.md#people-ops-team-members)
+### [Business Operations & Strategy](../../ops/bizops/index.md#members)
+### [Finance & Accounting](../../ops/finance/index.md#members)
+### [Legal](../../ops/legal/index.md#members)
+### [Tech Ops](../../ops/tech-ops/index.md#members)
 
 ## Sales
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
-### [Sales team](../../handbook/sales/index.md#members)
-### [SDR team](../../handbook/sales/sdrteam/index.md#members)
-### [Sales strategy & operations](../../handbook/sales/sales-ops/index.md#members)
+### [Sales team](../../sales/index.md#members)
+### [SDR team](../../sales/sdrteam/index.md#members)
+### [Sales strategy & operations](../../sales/sales-ops/index.md#members)
 
 ## Other teams: TODO
 
@@ -44,8 +44,8 @@ Not all teams are listed here yet.
 
 This org chart is generated automatically based on the contents of other handbook pages.
 
-1. To add a team, [edit this page](https://github.com/sourcegraph/about/edit/main/company/team/org_chart.md) and add a link to the section of the team's page that lists the members (such as `### [My team](../../handbook/myteam/index.md#members)`).
-1. To edit a team, edit the linked section on the team's page. In the example above, you'd edit the `Members` section of `../../handbook/myteam/index.md`. Everything in that section until the next heading is displayed on this page.
+1. To add a team, [edit this page](https://github.com/sourcegraph/about/edit/main/company/team/org_chart.md) and add a link to the section of the team's page that lists the members (such as `### [My team](../../myteam/index.md#members)`).
+1. To edit a team, edit the linked section on the team's page. In the example above, you'd edit the `Members` section of `../../myteam/index.md`. Everything in that section until the next heading is displayed on this page.
 1. To add any other text or structure to this page, just insert it as you would normally. Only 3rd-level heading links (lines that start with `###` and that have a link) are treated specially; all other content is preserved.
 
 <script>

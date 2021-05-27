@@ -14,12 +14,13 @@ Any expenses more than 90 days old require approval by People Ops and Finance.
 
 ## US based teammates
 
-You will receive an invitation via email to our Expensify organization during your first week, please sign up using that link. (Please do not sign up manually, this will create an account but it will not be associated with the proper organization or expense policy and will result in delayed reimbursements). If you do not have an invite to Expensify within your first week, please contact People Ops.
+You will receive an invitation via email to our Expensify organization during your first week, please sign up using that link. (Please do not sign up manually, this will create an account but it will not be associated with the proper organization or expense policy and will result in delayed reimbursements). If you do not have an invite to Expensify within your first week, please contact People Ops. You will need to link a bank account to Expensify.
 
 ### When submitting an expense via Expensify
 
 - Create a report for the entire month, and add individual expenses to that report.
-- Ensure the date and description fields are properly filled out
+- Upload receipts for each expense (required for all expenses above $25).
+- Ensure the date and description fields are properly filled out.
   - The date listed on your expense should be the date of purchase (not the date of submission).
   - The description field should list exactly what item is being expensed.
 - Ensure that each expense is properly categorized.
@@ -27,7 +28,8 @@ You will receive an invitation via email to our Expensify organization during yo
   - Software purchases or subscriptions should be categorized as "Software and SaaS <$1000"
   - Computer purchases and other hardware (monitor, headphones, etc.) should be categorized as "Computer & Related"
   - Home office set-up purchases (chairs, desks, etc.) should be categorized as "Furniture & Office"
-  - Note: there is no designated "home office setup" category in Expensify. Each expensed item should be categorized individually. So even though we have one home office setup budget, it spans across multiple categories.
+  - There is no designated "home office setup" category in Expensify. Each expensed item should be categorized individually. So even though we have one home office setup budget, it spans across multiple categories.
+  - Onboarding teammates may receive a $2000 maximum limit notice when expensing computer & equipment. Please note that first-time computer purchases are considered an exception to this policy.
 
 ## Teammates based outside of the US
 

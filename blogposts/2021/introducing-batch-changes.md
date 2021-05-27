@@ -2,7 +2,7 @@
 title: Introducing Batch Changes
 description: Learn how to automate and track large-scale code changes across all of your repositories and code hosts with Sourcegraph Batch Changes.
 author: Sourcegraph
-authorUrl: https://about.sourcegraph.com/company/team#erica-lindberg-she-her
+authorUrl: https://about.sourcegraph.com/handbook/company/team#erica-lindberg-she-her
 publishDate: 2021-03-24T10:00-07:00
 tags: [blog, product, batch changes]
 slug: introducing-batch-changes

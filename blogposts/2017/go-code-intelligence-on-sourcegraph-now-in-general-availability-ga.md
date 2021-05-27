@@ -41,4 +41,4 @@ Thanks to everyone who has been using Sourcegraph so far and sending us feedback
 
 [![](https://cdn-images-1.medium.com/max/800/1*71FZEE4Nr5RYmG5cFrB1eA.png)](https://sourcegraph.com/join)
 
-What’s next? We’ll be releasing support for more languages on Sourcegraph as fast as we can, when each language’s analyzer meets our quality bar. Follow our progress on the [Sourcegraph master plan](https://about.sourcegraph.com/company/strategy). You can also try our alpha support for TypeScript, or sign up for [private alpha/beta access to other languages](https://sourcegraph.com/beta).
+What’s next? We’ll be releasing support for more languages on Sourcegraph as fast as we can, when each language’s analyzer meets our quality bar. Follow our progress on the [Sourcegraph master plan](https://about.sourcegraph.com/handbook/company/strategy). You can also try our alpha support for TypeScript, or sign up for [private alpha/beta access to other languages](https://sourcegraph.com/beta).

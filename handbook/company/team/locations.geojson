@@ -1,4 +1,4 @@
-  {
+{
   "type": "FeatureCollection",
   "features": [
     {
@@ -855,14 +855,14 @@
         ]
       }
     },
-     {
+    {
       "type": "Feature",
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
         "name": "Cassie Melani"
-    },
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -872,7 +872,7 @@
       }
     },
     {
-     "type": "Feature",
+      "type": "Feature",
       "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
@@ -882,10 +882,21 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.307480,
-          34.182049
-         ]
+          -118.366660,
+          34.158210
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Nick Gage"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27508544921875,
+          37.810326435534755
+        ]
       }
     }
-    ]
- }
+  ]
+}

@@ -23,7 +23,7 @@ To add yourself to this page:
 
 ## Quinn Slack
 
-- [CEO](../../handbook/ceo/index.md), Cofounder, Board of Directors
+- [CEO](../../ceo/index.md), Cofounder, Board of Directors
 - Mill Valley, CA, USA 🇺🇸
 - [sqs@sourcegraph.com](mailto:sqs@sourcegraph.com), [slack.org](https://slack.org), [@sqs](https://twitter.com/sqs), [LinkedIn](https://www.linkedin.com/in/quinnslack), [he](http://pronoun.is/he)
 - Quinn lives just north of the Golden Gate Bridge with his wife and daughter. Prior to Sourcegraph, Quinn cofounded Blend Labs, an enterprise technology company with ~500 employees dedicated to improving home lending. At Palantir Technologies, he created a technology platform to help two of the top five U.S. banks recover from the housing crisis. He was the first employee and developer at Bleacher Report after graduating from high school. Quinn graduated with a BS in Computer Science from Stanford.
@@ -561,7 +561,7 @@ To add yourself to this page:
 - Onboarding and Training Manager
 - Buenos Aires, Argentina 🇦🇷 / Barcelona, Spain 🇪🇸
 - [ines@sourcegraph.com](mailto:ines@sourcegraph.com), [GitHub](https://github.com/InesRoitman), [LinkedIn](https://www.linkedin.com/in/ines-roitman/) , [Pronounce my name 🔊](https://www.pronouncenames.com/In%C3%A9s)
-- Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for teaching and learning. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection.  
+- Inés is above all a curious person, which is why she spends her time reading and traveling (and daydreaming of her next holiday, wondering where to go next). She has a Bachelors degree in Education Sciences and has a passion for teaching and learning. Before Sourcegraph she worked designing digital educational content and dynamics for an EdTech startup and, after that, as a Technical Trainer for a SaaS focused in Brand Protection.
 
 ## James Clifford (he/him)
 
@@ -749,7 +749,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 
 ## Kelsey Brown (she/her)
 - Senior Business Operations Analyst
-- Arlington, VA, USA 🇺🇸 
+- Arlington, VA, USA 🇺🇸
 - GitHub: [kelsey-brown](https://github.com/kelsey-brown)
 - [kelsey@sourcegraph.com](mailto:kelsey@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kelsey-brown-25220b68/)
 - Prior to Sourcegraph, Kelsey worked in consulting on projects related to strategy, business operations, and technology. Outside of work, Kelsey loves doing anything active, including weightlifting, snowboarding, and playing ultimate frisbee. She is currently based in the Washington, DC area, but hails from Chicago, and would therefore be happy to passionately defend the superiority of Chicago-style over New York-style pizza with you any day of the week.
@@ -762,7 +762,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 
 ## Bill Creager
 - Director of Engineering
-- Buda, TX USA 🇺🇸 
+- Buda, TX USA 🇺🇸
 - [bill.creager@sourcegraph.com](mailto:bill.creager@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/bill-creager-8055911a/)
 - If he isn't in front of this computer, Bill can usually be found doing one of the following: eating some BBQ in Austin, riding his bike or running, watching his kids play soccer, camping with the family, or working with his hands (building furniture, building and playing guitars). He grew up in Phoenix, AZ and went to Northern Arizona University in Flagstaff, AZ where he studied computer science (after a quick detour in Environmental Engineering, it wasn't for him).   Prior to Sourcegraph he worked at Procore, Spiceworks, and Demand Media and has been living in Texas for 11 years (he got there as quick as he could)!
 
@@ -776,20 +776,20 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 
 ## Kendrick Morris (he/him)
 - Finance and Operations Analyst
-- San Francisco, CA USA 🇺🇸 
+- San Francisco, CA USA 🇺🇸
 - GitHub: [kmorris50](https://github.com/kmorris50)
 - [kendrick@sourcegraph.com](mailto:kendrick@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/kendrick-morris-3563b993)
 - Kendrick grew up in Houston, TX and now resides in San Francisco, CA. He graduated with a degree in Economics-Accounting & Government from Claremont McKenna College. Prior to Sourcegraph, Kendrick worked in the Deloitte San Francisco audit practice and currently holds a CPA license in California. He enjoys listening to podcasts, collecting vintage basketball cards, and driving just about anywhere for good barbecue.
 
 ## John Harwell
 - Account Executive
-- Atlanta, GA USA 🇺🇸 
+- Atlanta, GA USA 🇺🇸
 - [john.harwell@sourcegraph.com](mailto:john.harwell@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/john-s-harwell/)
-- John enjoys spending time with his wife, Nicole, and 2 sons, Isaac and Owen, playing games (sports, board, card, video, puzzles, etc.), attending concerts, and traveling to new places. John has been in SaaS sales his entire professional career, much of that time in the project management space. 
+- John enjoys spending time with his wife, Nicole, and 2 sons, Isaac and Owen, playing games (sports, board, card, video, puzzles, etc.), attending concerts, and traveling to new places. John has been in SaaS sales his entire professional career, much of that time in the project management space.
 
 ## Christy Haragan (she/her)
 - Director of Customer Engineering - International
-- London, UK 🇬🇧 
+- London, UK 🇬🇧
 - [christy@sourcegraph.com](mailto:christy@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/christy-haragan/)
 - Christy used to enjoy playing football (before Covid lockdown; hopefully she can update this in the future once calmer times occur), skiing, running, and yoga. She has been a CTO and co-founder of an app-startup and has a masters degree in Computer Science from the University of York.
 
@@ -811,7 +811,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - VP, Talent
 - Denver, CO USA 🇺🇸
 - GitHub: [carlyj0nes] (https://github.com/carlyj0nes)
-- Carly is a Denver native who went to college in Vermont (Middlebury), lived in Washington, DC for 5 years, and has since returned home to Colorado.  Prior to Sourcegraph, she gained experience leading talent teams at high growth startups and is passionate about all things talent acquisition.  When not working, you can find Carly tackling a DIY project, practicing her golf game, spending time outdoors, and traveling. 
+- Carly is a Denver native who went to college in Vermont (Middlebury), lived in Washington, DC for 5 years, and has since returned home to Colorado.  Prior to Sourcegraph, she gained experience leading talent teams at high growth startups and is passionate about all things talent acquisition.  When not working, you can find Carly tackling a DIY project, practicing her golf game, spending time outdoors, and traveling.
 
 ## Rafal Leszczynski (he/him)
 
@@ -843,14 +843,15 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Product Manager, Distribution & Security
 - Shaftesbury (Dorset), UK 🇬🇧
 - GitHub: [dan-mckean](https://github.com/dan-mckean)
+- [Readme!](../../product/dan-mckean-readme.md)
 - [dan.mckean@sourcegraph.com](mailto:dan.mckean@sourcegraph.com)
-- Dan grew up in the South of England, and (with a detour via London) ended up in Dorset in the south west, a county with beautiful coast (but lives as far from the sea as it's possible to get – though not deliberately!) He lives with his wife (Emma), four kids (7y, 5y, 2x14m) and 3-legged springer spaniel (9y). His spare time is largely spent chasing his twin identical boys in an effort to prevent injury. Any (genuinely) spare time is spent trying to make things out of wood. 
+- Dan grew up in the South of England, and (with a detour via London) ended up in Dorset in the south west, a county with beautiful coast (but lives as far from the sea as it's possible to get – though not deliberately!) He lives with his wife (Emma), four kids (7y, 5y, 2x14m) and 3-legged springer spaniel (9y). His spare time is largely spent chasing his twin identical boys in an effort to prevent injury. Any (genuinely) spare time is spent trying to make things out of wood.
 
 ## Nate Tang (he/him)
 
 - Tech Ops Analyst
 - San Clemente, California, USA 🇺🇸
-- Nate grew up in Orange County, California but has traveled all across the world, most recently to Peru. In his free time, he likes to swim, practice yoga, and go on hikes. 
+- Nate grew up in Orange County, California but has traveled all across the world, most recently to Peru. In his free time, he likes to swim, practice yoga, and go on hikes.
 
 ## Cassie Melani (she/her)
 
@@ -871,13 +872,13 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - San Francisco, CA, USA 🇺🇸
 - GitHub: [Ryphil](https://github.com/ryphil)
 - [Ryphil@sourcegraph.com](mailto:ryphil@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/ryphil/)
-- Born in the wild west (Texas), Ryan now lives in San Francisco, CA where he loves exploring the amazing nature nearby! Ryan lives to experience and build products which have an incredibly high level of craft - custom JH Audio headphones, to beautiful books such as Designing Design, to delicious food! Outside of Sourcegraph, Ryan is a lecturer at the d.school at Stanford University, teaching at the intersection of technology, design, and inclusion. He is always open to adventure, lets explore together! 
+- Born in the wild west (Texas), Ryan now lives in San Francisco, CA where he loves exploring the amazing nature nearby! Ryan lives to experience and build products which have an incredibly high level of craft - custom JH Audio headphones, to beautiful books such as Designing Design, to delicious food! Outside of Sourcegraph, Ryan is a lecturer at the d.school at Stanford University, teaching at the intersection of technology, design, and inclusion. He is always open to adventure, lets explore together!
 
 ## Jake Sorensen (He/Him)
 - Programs Lead, Demand Gen Campaigns
-- Los Angeles, CA, USA 🇺🇸 
-- GitHub: [jakevsen](https://github.com/jakevsen) 
-- jake@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jakevsorensen/) 
+- Los Angeles, CA, USA 🇺🇸
+- GitHub: [jakevsen](https://github.com/jakevsen)
+- jake@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/jakevsorensen/)
 - Born and raised in Utah now living in California with my partner of twelve years, Tia, and our two Chihuahuas, Dory and Minnie. I discovered my love for marketing working in field marketing, demand gen, and account-based marketing and love empowering teams to be passionate and innovative in their careers. I have a degree in environmental science and hydrogeology, aspirations for Shakespearean acting, and am a fluent French speaker and Francophile. My passions include my family, travel, iaido practice and matcha.
 
 ## Coury Clark (He/Him)
@@ -893,3 +894,9 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [aimee@sourcegraph.com](mailto:aimee@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/aimee-menne-8343487/)
 - Aimee has spent her career, and is extremely passionate about, delivering customer-centric solutions. An Indiana native, she spent time in both Washington DC and San Francisco before landing in Denver, Colorado. Outside of work, Aimee is usually doing a variety of outdoor activities (running, cycling, skiing, hiking, camping, fishing) or traveling to new places.
 
+## Nicholas Gage (he/him)
+- Head of Sales Development
+- Oakland, CA USA
+- Github: [ngage1](https://github.com/ngage1)
+- [ngage@sourcegraph.com](mailto:ngage@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/nicholas-g-4a0b6948/)
+- Nick grew up on the East Coast in the greater Boston area. After spending many years in the southeast working as an account executive for AT&T, Nick made the move to San Francisco to work with Box. Nick is passionate about development, both personal and professional. When outside of work, Nick enjoys spending time with his wife, Grace, and their dog, Rocky. Whether hiking, skimboarding, golfing, or skiing, Nick loves spending time outdoors (preferably in the sun!).
