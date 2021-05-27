@@ -1,6 +1,6 @@
 {
   "$comment": "This configures the documentation server used in local development only. If you make any substantive changes, also make them to the about-sourcegraph-com.Deployment.yaml file in the deploy-sourcegraph-dot-com repository.",
-  "content": ".",
+  "content": "./handbook",
   "contentExcludePattern": "^/(press-releases|podcast|website|blogposts|docs|README\\.md)(/|$)",
   "baseURLPath": "/",
   "templates": "_resources/templates",
