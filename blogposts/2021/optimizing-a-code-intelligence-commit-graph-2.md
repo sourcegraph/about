@@ -2,7 +2,7 @@
 title: "Optimizing a code intelligence commit graph (Part 2)"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
-description: "We enabled Sourcegraph to resolve code intelligence queries on commits missing a code intelligence index, but ran into scalability challenges for users with large commit graphs. Here's how we unearthed and resolved the problem."
+description: "We enabled Sourcegraph to resolve code intelligence requests for commits missing an index, but ran into scalability challenges when dealing with large commit graphs. Here's how we unearthed and resolved the problem."
 publishDate: 2021-05-24T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph-part-2
@@ -71,7 +71,7 @@ For this example, we'll use the following commit graph, where commits `80c800`, 
 
 The first step of the algorithm is to [topologically sort](https://en.wikipedia.org/wiki/Topological_sorting) each commit so that a commit is processed only after all of its parents are processed. Then we perform a simple [greedy process](https://en.wikipedia.org/wiki/Greedy_algorithm) to determine which uploads are visible at each stage of the commit. If a commit defines an upload, it is visible to that commit. Otherwise, the set of visible uploads for the commit is the same as the uploads visible from each parent (just at a higher distance).
 
-Because each parent can see a different set of uploads, we need to specify what happens when these sets _merge_. Take commit `e8331f` as an example. This commit can see both upload #3 via commit `3daedb`), as well as upload #1 via commit `9d9c37`. This yields a visible set `{(id=1, dist=4), (id=3 dist=1)}`. As part of the merge operation, we throw out the uploads that are further away in favor of the ones that are closer. Similarly, we may see different uploads that tie in distance (as is the case with commit `69a5ed`, which can see both uploads #1 and #2 at the same distance). In these cases, we break ties deterministically by favoring the upload with the smallest identifier.
+Because each parent can see a different set of uploads, we need to specify what happens when these sets _merge_. Take commit `e8331f` as an example. This commit can see both upload #3 via commit `3daedb`), as well as upload #1 via commit `9d9c37`. This yields a visible set `{(id=1, dist=4), (id=3 dist=1)}`. As part of the merge operation, we throw out the uploads that are farther away in favor of the ones that are closer. Similarly, we may see different uploads that tie in distance (as is the case with commit `69a5ed`, which can see both uploads #1 and #2 at the same distance). In these cases, we break ties deterministically by favoring the upload with the smallest identifier.
 
 We want to search the graph in both directions, so we perform the operation again but visit the commits in the reverse order. The set of forward-visible uploads and backwards-visible uploads can then be merged using the same rules as stated above. The complete set of visible uploads for each commit for this example commit graph are shown below.
 
