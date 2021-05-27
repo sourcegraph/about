@@ -33,23 +33,23 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
 
 [[redirects]]
   from = "/direction"
-  to = "https://about-docsite.sourcegraph.com/direction"
+  to = "https://about-docsite.sourcegraph.com/handbook/direction"
   status = 200
   force = true
 [[redirects]]
   from = "/direction/*"
-  to = "https://about-docsite.sourcegraph.com/direction/:splat"
+  to = "https://about-docsite.sourcegraph.com/handbook/direction/:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "/company"
-  to = "https://about-docsite.sourcegraph.com/company"
+  to = "https://about-docsite.sourcegraph.com/handbook/company"
   status = 200
   force = true
 [[redirects]]
   from = "/company/*"
-  to = "https://about-docsite.sourcegraph.com/company/:splat"
+  to = "https://about-docsite.sourcegraph.com/handbook/company/:splat"
   status = 200
   force = true
 

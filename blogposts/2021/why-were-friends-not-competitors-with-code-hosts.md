@@ -21,17 +21,17 @@ First, some background on the state of the code host market.
 
 **We believe no single code host will ever become a monopoly.** Code host market fragmentation is here to stay. It's a huge market, so there's plenty of room for all of today's code hosts to keep growing and earning tons of revenue for years to come. We have great admiration for the teams building all the major code hosts; we don't expect them to stop competing and cede market share to their competitors. And someone out there is probably hacking on a new version control system or code host that will make today's stuff look old-fashioned.
 
-**Large companies have (and will always have) code scattered across many code hosts.** Underlying this market dynamism are two key differences between code hosts and other business apps: 
+**Large companies have (and will always have) code scattered across many code hosts.** Underlying this market dynamism are two key differences between code hosts and other business apps:
 
 1. Developers have major influence over the tools they use.
-2. Code hosts are necessarily interoperable because of the open-standards nature of code and version control systems. 
+2. Code hosts are necessarily interoperable because of the open-standards nature of code and version control systems.
 
-These factors make it much harder and less valuable for a company to strictly enforce usage of a single code host (compared to that of other business apps). 
+These factors make it much harder and less valuable for a company to strictly enforce usage of a single code host (compared to that of other business apps).
 
 Other practical matters also factor in. After an acquisition, it can take months or years to merge codebases. Security or scalability might require spinning up multiple separate code host instances. Or sometimes a rogue dev team might just strongly prefer a different code host, and it's not worth stopping them.
 
 ## Why Sourcegraph won't become a code host
-Bringing Universal Code Search to every dev and company is very valuable by itself. Many devs have never used really good code search, but when they do, they find it impossible to live without. Multiply that impact by millions of devs, and that's enough to [build a big business](https://about.sourcegraph.com/blog/series-c-with-sequoia/) that keeps our [awesome team](https://about.sourcegraph.com/company/team) excited for many years to come. (For the purposes of this argument, you don't need to agree with our optimistic business outlook, just that we genuinely believe in it.) So, we don't want to build a code host because we're plenty satisfied by building Universal Code Search.
+Bringing Universal Code Search to every dev and company is very valuable by itself. Many devs have never used really good code search, but when they do, they find it impossible to live without. Multiply that impact by millions of devs, and that's enough to [build a big business](https://about.sourcegraph.com/blog/series-c-with-sequoia/) that keeps our [awesome team](https://about.sourcegraph.com/handbook/company/team) excited for many years to come. (For the purposes of this argument, you don't need to agree with our optimistic business outlook, just that we genuinely believe in it.) So, we don't want to build a code host because we're plenty satisfied by building Universal Code Search.
 
 And, thankfully, we don't need to build a code host. Many great code hosts already exist with nice APIs that Sourcegraph can integrate with, and, of course, the underlying repositories are in Git or other open-standards, open-source version control systems. We can build code search on top of code hosts and search across all of them instead of needing to reinvent a code host from the ground up just to add on a single feature. This may seem obvious, but it's actually quite rare in a world where most apps and platforms don't use open standards. The fiercely competitive nature of the code host market and the advocacy of devs deserve credit here for keeping code hosts open and interoperable.
 

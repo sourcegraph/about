@@ -10,7 +10,7 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-We are building [the best code search and browsing tool for your team](/) to help you write, review, and ship code better. Our mission is to [bring the future sooner](/company/strategy) by bringing the best tools to developers everywhere.
+We are building [the best code search and browsing tool for your team](/) to help you write, review, and ship code better. Our mission is to [bring the future sooner](/handbook/company/strategy) by bringing the best tools to developers everywhere.
 
 Our announcement this month that [Sourcegraph is now open source](/community/faq) is one way we will get there even faster.
 
