@@ -5,7 +5,7 @@ authorUrl:
 description: 'Building robust software that runs at scale is a team effort. Here are 3 engineering leaders on how they use both human and automated processes to set their growing teams up for success.'
 heroImage: /blog/better-onboarding-advice-from-engineering-leaders.gif
 socialImage: website/static/blog/better-onboarding-advice-from-engineering-leaders.gif
-publishDate: 2021-05-19T18:00-07:00
+publishDate: 2021-05-27T18:00-07:00
 tags: [blog]
 slug: better-onboarding-advice-from-engineering-leaders
 published: true
