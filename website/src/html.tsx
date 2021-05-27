@@ -57,7 +57,7 @@ export default class HTML extends React.Component<HtmlProps> {
                     `,
                     }}
                     />
-                    {/* End Google Tag Manager */}
+                    {/*  End Google Tag Manager */}
                     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d" data-blockingmode="auto" type="text/javascript"></script>
                 </head>
                 <body>
