@@ -21,13 +21,13 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   force = true
 
 [[redirects]]
-  from = "/community"
-  to = "https://about-docsite.sourcegraph.com/community"
+  from = "/handbook/community"
+  to = "https://about-docsite.sourcegraph.com/handbook/community"
   status = 200
   force = true
 [[redirects]]
-  from = "/community/*"
-  to = "https://about-docsite.sourcegraph.com/community/:splat"
+  from = "/handbook/community/*"
+  to = "https://about-docsite.sourcegraph.com/handbook/community/:splat"
   status = 200
   force = true
 

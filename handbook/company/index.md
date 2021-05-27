@@ -32,4 +32,4 @@ Open company doesn't mean that everything is public; only principles, strategies
 
 ## Open source
 
-To learn more about what **open source** means at Sourcegraph, see the [open source FAQs](../../community/faq.md) and [license documentation](https://github.com/sourcegraph/sourcegraph#license).
+To learn more about what **open source** means at Sourcegraph, see the [open source FAQs](../../handbook/community/faq.md) and [license documentation](https://github.com/sourcegraph/sourcegraph#license).
