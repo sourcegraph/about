@@ -13,7 +13,7 @@ published: true
 
 ![Optimizing code intelligence commit graph graphic](/blog/optimizing-code-intelligence-commit-graph.png)
 
-Sourcegraph's [Code Intelligence](https://about.sourcegraph.com/handbook/engineering/code-intelligence) team builds tools and services that provide contextual information around code. These enable users to perform fast, comprehensive, and accurate code navigation, and to surface dependency relationships across projects, repositories, and languages. In this post I'll dive into how Sourcegraph can resolve code intelligence queries using data from older commits when data on the requested commit is not yet available. In Part 2, we'll cover how additional scalability concerns presented themselves and how we tackled them.
+Sourcegraph's [Code Intelligence](https://about.sourcegraph.com/handbook/engineering/code-intelligence) team builds tools and services that provide contextual information around code. These enable users to perform fast, comprehensive, and accurate code navigation, and to surface dependency relationships across projects, repositories, and languages. In this post I'll dive into how Sourcegraph can resolve code intelligence queries using data from older commits when data on the requested commit is not yet available. In [Part 2](/blog/optimizing-a-code-intel-commit-graph-part-2/), we'll cover how additional scalability concerns presented themselves and how we tackled them.
 
 Since the first version of Sourcegraph, precise code navigation has been a first-order concern. Its ability to provide compiler-accurate code navigation in a web-based interface is a superpower for our users.
 
@@ -248,7 +248,7 @@ One major take away for us was the concrete reinforcement that databases are a h
 
 Another major takeaway is that the cliché holds: computers do what you tell them to and nothing more. When debugging correctness and performance issues, it's good to _shed_ your previous mental model and re-assess its correctness as you dive deeper into your stack.
 
-Stay tuned for Part 2 in which we tackle additional scalability challenges.
+Check out [Part 2](/blog/optimizing-a-code-intel-commit-graph-part-2/), in which we tackle additional scalability challenges.
 
 <style>
   figure .no-shadow { box-shadow: none; }
