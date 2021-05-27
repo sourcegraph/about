@@ -65,13 +65,13 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   force = true
 
 [[redirects]]
-  from = "/retrospectives"
-  to = "https://about-docsite.sourcegraph.com/retrospectives"
+  from = "/handbook/retrospectives"
+  to = "https://about-docsite.sourcegraph.com/handbook/retrospectives"
   status = 200
   force = true
 [[redirects]]
-  from = "/retrospectives/*"
-  to = "https://about-docsite.sourcegraph.com/retrospectives/:splat"
+  from = "/handbook/retrospectives/*"
+  to = "https://about-docsite.sourcegraph.com/handbook/retrospectives/:splat"
   status = 200
   force = true
 
