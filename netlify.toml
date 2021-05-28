@@ -81,8 +81,9 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   force = true
 
 [[redirects]]
-  from = "/search?q=*"
-  to = "/handbook#stq=:splat"
+  from = "/search"
+  to = "/handbook#stq=:q"
+  query = {q = ":q"}
   status = 308
   force = true
 
