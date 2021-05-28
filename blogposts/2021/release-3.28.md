@@ -37,7 +37,7 @@ Extensions allow you to connect all your other tools to get functionality like t
 
 ## New Code Insights (prototype feature) creation UI
 
-<p><video autoplay loop muted playsinline>
+<p><video autoplay loop muted playsinline style="width:600px">
   <source src="https://sourcegraphstatic.com/blog/3.28/create_new_insight_flow.mp4" type="video/mp4">
  </video></p>
 
