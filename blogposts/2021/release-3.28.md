@@ -37,8 +37,8 @@ Extensions allow you to connect all your other tools to get functionality like t
 
 ## New Code Insights (prototype feature) creation UI
 
-<video autoplay loop muted playsinline>
+<p><video autoplay loop muted playsinline>
   <source src="https://sourcegraphstatic.com/blog/3.28/create_new_insight_flow.mp4" type="video/mp4">
- </video>
+ </video></p>
 
 Code Insights answers high-level questions about your code by analyzing specific regular expressions, languages, or code patterns in your codebase over time. Search-based and language insights now have form fields with suggestions and validations to help you quickly set up your first code insight. To enable Code Insights and create an insight, follow [this new quickstart guide](https://docs.sourcegraph.com/code_insights/quickstart). 
