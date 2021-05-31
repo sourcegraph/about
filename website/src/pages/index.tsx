@@ -11,26 +11,30 @@ import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogo
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
         <div className="home">
-            <div className="home__hero">
+            <div className="home__hero mb-6">
                 <div className="home__intro container">
                     <div className="row">
-                        <div className="col mt-6 mb-6 mb-lg-0">
+                        <div className="col mt-6 mb-6 mb-lg-0 text-center">
                             <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
                             <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
-                            <p className="home__semiwide-paragraph my-5">
+                            <p className="my-5">
                                 Find and fix things across all of your code faster with Sourcegraph. Onboard to a new
                                 codebase, make large-scale refactors, increase efficiency, address security risks,
                                 root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
-                                <Link className="btn btn-primary" to="/get-started">
+                                <Link className="btn btn-primary mr-3" to="/get-started">
                                     Try Sourcegraph now <ArrowRightIcon className="ml-1" />
+                                </Link>
+                                <Link className="btn btn-light" to="/contact/request-info/">
+                                    Talk to a product specialist <ArrowRightIcon className="ml-1" />
                                 </Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <CustomerLogosSectionAnimated showButton={true} className="pt-5" />
             <ContentSection className="py-6 mt-3 d-none d-sm-block">
                 <div className="home__nested-screenshots">
                     <img
@@ -45,10 +49,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     />
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated showButton={true} className="pt-5" />
-            <div className="container">
-                <hr className="my-md-6" />
-            </div>
+
             <ContentSection className="mt-5 mb-6">
                 <div className="row">
                     <div className="col-lg-5 mt-md-5">
@@ -110,6 +111,7 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
+                        <p>CODE SEARCH</p>
                         <h2>Find anything in code, fast</h2>
                         <p>
                             Sourcegraph returns results in milliseconds, even across thousands of repositories, like:
@@ -168,6 +170,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                     <div className="col-lg-5">
+                        <p>CODE INTELLIGENCE</p>
                         <h2>Navigate code, with definitions and references</h2>
                         <p>
                             Find definitions, references, usage examples, and anything else in code, across package,
@@ -188,6 +191,7 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
+                        <p>BATCH CHANGES</p>
                         <h2>Make large-scale code changes</h2>
                         <p>
                             Remove legacy code, fix critical security issues, and pay down tech debt. Use Batch Changes to
@@ -210,36 +214,6 @@ const Index: React.FunctionComponent = (props: any) => (
                                 frameBorder={0}
                                 title="Sourcegraph Batch Changes"
                             ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </ContentSection>
-            <ContentSection className="mt-6">
-                <div className="row flex-wrap-reverse">
-                    <div className="col-lg-7 pr-lg-6 mt-3">
-                        <div className="container video-embed embed-responsive embed-responsive-16by9 ">
-                            <iframe
-                                className="embed-responsive-item"
-                                src="https://www.youtube-nocookie.com/embed/XqeRb6Mc4Co?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowFullScreen={true}
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameBorder={0}
-                                title="Product preview: code insights"
-                            ></iframe>
-                        </div>
-                    </div>
-                    <div className="col-lg-5">
-                        <h2>Generate code insights [preview]</h2>
-                        <p>
-                            Aggregate data from connected external services, and enhance it with code intelligence
-                            to give you the information you care about. Take direct actions on these insights with&nbsp;
-                            <Link to="https://docs.sourcegraph.com/batch_changes">Batch Changes</Link>, like proposing
-                            an automated refactor to fix a problem detected through static analysis.
-                        </p>
-                        <div className="pt-1">
-                            <a className="d-flex align-items-center" href="/contact/request-demo">
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </a>
                         </div>
                     </div>
                 </div>
