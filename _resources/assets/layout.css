@@ -1,190 +1,218 @@
 /* GLOBAL */
 :root {
-	--breakpoint-width: 900px;
-	--text-color: #242f30;
-	--link-color: #0055c5;
-	--link-hover-color: #1986ea;
-	--border-color: #e1e3e8;
-	--body-bg: #f4f6f8;
-	--header-bg: #f4f6f8;
-	--width: 1200px;
-	--spacing: 1rem;
-	--logo-width: 120px;
-	--logo-height: 16.84px;
-	--logo-padding-y: 0.75rem;
-	--header-height: calc(var(--logo-height) + 2*var(--logo-padding-y) + 1px);
+    --breakpoint-width: 900px;
+    --text-color: #242f30;
+    --link-color: #0055c5;
+    --link-hover-color: #1986ea;
+    --border-color: #e1e3e8;
+    --body-bg: #f4f6f8;
+    --header-bg: #ffffff;
+    --width: 1200px;
+    --spacing: 1rem;
+    --logo-width: 120px;
+    --logo-height: 16.84px;
+    --logo-padding-y: 0.75rem;
+    --header-height: calc(var(--logo-height) + 2 * var(--logo-padding-y) + 1px);
 }
 body {
-	margin: 0;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-	background-color: var(--body-bg);
-	color: var(--text-color);
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	font-size: 14px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol';
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
 }
 a {
-	color: var(--link-color);
-	text-decoration: none;
+    color: var(--link-color);
+    text-decoration: none;
 }
 a:hover {
-	color: var(--link-hover-color);
-	text-decoration: underline;
+    color: var(--link-hover-color);
+    text-decoration: underline;
 }
 
 /* UTILITIES */
 .container {
-	max-width: var(--width);
-	margin-left: auto;
-	margin-right: auto;
+    max-width: var(--width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Scroll slightly beyond in-page anchor so that the fixed header doesn't obscure it. */
 :target::before {
-	content: "";
-	display: block;
-	position: relative;
-	pointer-events: none;
+    content: '';
+    display: block;
+    position: relative;
+    pointer-events: none;
 }
 :not(.anchor-inline):target::before {
-	/* Scroll so that header anchors are at the top of the viewport. */
-	height: var(--header-height);
-	margin-top: calc(-1 * var(--header-height));
+    /* Scroll so that header anchors are at the top of the viewport. */
+    height: var(--header-height);
+    margin-top: calc(-1 * var(--header-height));
 }
 .anchor-inline:target::before {
-	/* Scroll so that inline anchors are at the center (vertically) of the viewport. */
-	height: 50vh;
-	margin-top: -50vh;
+    /* Scroll so that inline anchors are at the center (vertically) of the viewport. */
+    height: 50vh;
+    margin-top: -50vh;
 }
 .anchor-inline + .anchor-inline-link::before {
-	content: "🔗";
-	width: 1rem;
-	height: 1rem;
+    content: '🔗';
+    width: 1rem;
+    height: 1rem;
 }
 .anchor-inline:target + .anchor-inline-link {
-	background-color: yellow;
-	border: solid 1px #eecc11;
-	display: inline-block;
-	padding: 0.1rem;
-	margin: -0.1rem;
+    background-color: yellow;
+    border: solid 1px #eecc11;
+    display: inline-block;
+    padding: 0.1rem;
+    margin: -0.1rem;
 }
 
 /* HEADER */
 #header {
-	position: sticky;
-	top: 0;
-	z-index: 1;
-	background-color: var(--header-bg);
-	border-bottom: solid 1px var(--border-color);
-	padding-left: calc(0.5*var(--spacing));
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--header-bg);
+    border-bottom: solid 1px var(--border-color);
+    padding-left: calc(0.5 * var(--spacing));
 }
 #header > .container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 #header #logo {
-	flex: 0 0;
-	display: flex;
-	align-items: center;
-	white-space: nowrap;
-	color: inherit;
-	text-decoration: none;
-	padding-top: var(--logo-padding-y);
-	padding-bottom: var(--logo-padding-y);
-	margin-right: 0.5rem;
+    flex: 0 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: inherit;
+    text-decoration: none;
+    padding-top: var(--logo-padding-y);
+    padding-bottom: var(--logo-padding-y);
+    margin-right: 0.5rem;
 }
 #header #logo img {
-	width: var(--logo-width);
-	height: var(--logo-height);
-	margin-right: 7px;
+    width: var(--logo-width);
+    height: var(--logo-height);
+    margin-right: 7px;
 }
 #header nav {
-	flex: 1 0;
-	padding-top: 0.4rem;
-	padding-bottom: 0.4rem;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin-right: 0.25rem;
-	white-space: nowrap;
+    flex: 1 0;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 0.25rem;
+    white-space: nowrap;
 }
-#header nav > a {
-	color: var(--text-color);
-	padding: 0.25rem 0.4rem;
-	text-decoration: none;
+#header nav a {
+    color: var(--link-color);
+    padding: 0.25rem 0.4rem;
+    text-decoration: none;
 }
 
 /* FOOTER */
 footer {
     border-top: solid 1px var(--border-color);
-    padding: calc(1.5*var(--spacing)) 0;
+    padding: calc(1.5 * var(--spacing)) 0;
     font-size: 80%;
 }
 footer nav.links ul {
     display: flex;
-	flex-wrap: wrap;
-	list-style: none;
+    flex-wrap: wrap;
+    list-style: none;
 }
 footer nav.links ul li {
-
 }
 footer a {
     color: var(--text-muted);
     white-space: nowrap;
-    padding: calc(0.25*var(--spacing)) calc(0.5*var(--spacing));
-    margin-bottom: calc(0.75*var(--spacing));
-    margin-right: calc(0.75*var(--spacing));
+    padding: calc(0.25 * var(--spacing)) calc(0.5 * var(--spacing));
+    margin-bottom: calc(0.75 * var(--spacing));
+    margin-right: calc(0.75 * var(--spacing));
 }
 
 /* SEARCH */
 #search-form {
-	display: inline-flex;
-	margin-bottom: 0;
-	margin-right: 0.5rem;
+    display: inline-flex;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
 }
 
 #search-input,
 #search-button {
-	padding: 0.325rem;
+    padding: 0.325rem;
 }
 
 #search-input {
-	-webkit-appearance: textfield;
-	border: solid 1px var(--border-color);
-	border-radius: 0;
-	width: 10rem;
-  /* the styles below are related to the Swiftype search integration */
-  height: initial;
-  padding-left: 30px;
-  background-position-y: 10px;
+    -webkit-appearance: textfield;
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 30rem;
+    /* the styles below are related to the Swiftype search integration */
+    height: initial;
+    padding-left: 30px;
+    background-position-y: 10px;
 }
+
+@media (max-width: 465px) {
+  #search-input {
+    width: 15rem;
+  }
+
+  #header nav div {
+    margin-top: 1rem;
+  }
+}
+
 #search-button {
-	margin-left: 0.125rem;
-	background-color: transparent;
-	border: solid 1px var(--border-color);
-	cursor: pointer;
+    background-color: var(--link-color);
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid var(--link-color);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
-#search-button:hover, #search-button:active, #search-button:focus {
-	color: var(--link-color);
+
+#search-button:hover,
+#search-button:active,
+#search-button:focus {
+    color: #ffffff;
 }
 
 /* PAGE */
 @media (max-width: 900px) {
-	.visible-sm { display: unset; }
-	.visible-lg { display: none; }
+    .visible-sm {
+        display: unset;
+    }
+    .visible-lg {
+        display: none;
+    }
 }
 @media (min-width: 900px) {
-	.visible-sm { display: none; }
-	.visible-lg { display: unset; }
+    .visible-sm {
+        display: none;
+    }
+    .visible-lg {
+        display: unset;
+    }
 }
 /* Cookiebot updates */
 body {
-  background-color: #f4f6f8;
+    background-color: #f4f6f8;
 }
 button#CybotCookiebotDialogBodyButtonDetails {
-	text-decoration: none;
+    text-decoration: none;
 }
 .container-md {
     max-width: 1140px;
