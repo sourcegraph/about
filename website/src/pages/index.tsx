@@ -17,7 +17,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <div className="col mt-6 mb-6 mb-lg-0 text-center">
                             <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
                             <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
-                            <p className="my-5">
+                            <p className="my-5 col-9 mx-auto">
                                 Find and fix things across all of your code faster with Sourcegraph. Onboard to a new
                                 codebase, make large-scale refactors, increase efficiency, address security risks,
                                 root-cause incidents, and more.
@@ -26,7 +26,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 <Link className="btn btn-primary mr-3" to="/get-started">
                                     Try Sourcegraph now <ArrowRightIcon className="ml-1" />
                                 </Link>
-                                <Link className="btn btn-light" to="/contact/request-info/">
+                                <Link className="btn btn-outline-primary" to="/contact/request-info/">
                                     Talk to a product specialist <ArrowRightIcon className="ml-1" />
                                 </Link>
                             </div>

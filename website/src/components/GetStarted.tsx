@@ -59,8 +59,8 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                             <div className="pt-1">Contact us: <a href="/contact/request-info/?form_submission_source=getting-started">Talk with a product specialist</a></div>
                         </div>
                         <div className="col-lg-6 get-started__search">
-                            <h2 className="get-started__search-headings">Search public code</h2>
-                            <p>Search public code or your own public repositories now.</p>
+                            <h2 className="get-started__search-headings">Search open source code</h2>
+                            <p>Search open source code or your own public repositories now.</p>
                             <div className="get-started__action boxshadow">
                                 Sourcegraph Cloud searches top repositories from GitHub and GitLab and will index any
                                 public repository you specify.
