@@ -138,7 +138,7 @@ To add yourself to this page:
 
 ## Tomás Senart
 
-- Engineering Manager
+- Software Engineer
 - Lisbon, Portugal 🇵🇹 / Berlin, Germany 🇩🇪
 - [tomas@sourcegraph.com](mailto:tomas@sourcegraph.com), [tsenart](https://github.com/tsenart), [@tsenart](https://twitter.com/tsenart), [LinkedIn](https://www.linkedin.com/in/tsenart/)
 - Name pronunciation: /[to.ˈmas](http://ipa-reader.xyz/?text=to.%CB%88mas&voice=Cristiano)/
@@ -901,9 +901,17 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [ngage@sourcegraph.com](mailto:ngage@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/nicholas-g-4a0b6948/)
 - Nick grew up on the East Coast in the greater Boston area. After spending many years in the southeast working as an account executive for AT&T, Nick made the move to San Francisco to work with Box. Nick is passionate about development, both personal and professional. When outside of work, Nick enjoys spending time with his wife, Grace, and their dog, Rocky. Whether hiking, skimboarding, golfing, or skiing, Nick loves spending time outdoors (preferably in the sun!).
 
-## Devon Coords (she/hers)
+## Devon Coords (She/Her)
 - Senior Technical Recruiter, Team Lead
 - White Plains, NY USA 🇺🇸 
 - GitHub: [devoncoords](https://github.com/devoncoords)
 - [devon@sourcegraph.com](mailto:devon@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/devonelliscoords)
-- Devon loves spending time with her husband (Andrew), daughter (Madison), dog (Bailey), and cat (Gato). Prior to Sourcegraph, Devon was the Managing Director of a tech recruiting agency in New York City and has ~9 years' experience in the industry. When not working, Devon tries to spend most of her time outside, doing home renovation projects, trying to keep her indoor plants alive, and traveling.
+- Devon loves spending time with her husband (Andrew), daughter (Madison), dog (Bailey), and cat (Gato). Prior to Sourcegraph, Devon was the Managing Director of a tech recruiting agency in New York City and has ~9 years' experience in the industry. When not working, Devon tries to spend most of her time outside, doing home renovation projects, cooking, trying to keep her plants alive, and traveling.
+
+## Trevor Houghton (he/him)
+
+- Recruiting Operations Specialist 
+- Austin, TX, USA 🇺🇸
+- GitHub: TrevorHoughton
+- trevor@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/trevorhoughton/)
+- Trevor grew up in Portland, OR before attending Colorado College, where he played NCAA soccer and majored in International Political Economy. He has sinced moved to Austin, TX and gained sales experience at Emergo and talent acquisition experience at Indeed.com. Outside of work, Trevor enjoys coaching, playing piano, skiing, traveling, and losing at chess.  

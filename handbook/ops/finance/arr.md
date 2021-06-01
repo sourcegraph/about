@@ -4,11 +4,6 @@ The below policy relates to all expenses above $10,000 - including monthly recur
 
 ## AP Policy
 
- - Mission Statement
- - Scope
- - Objectives
- - Procurement process
-
 ### Policy Mission Statement
 
 Sourcegraph employees are required to undertake an efficient, timely and cost-effective procurement process while ensuring appropriate levels of diligence and accountability in accordance with the processes outlined in this policy.
@@ -50,7 +45,7 @@ Best practice procurement processes should commence with the following steps:
 
 The table below presents the approval levels required for expenditure, based on $ amounts. Amounts below are in US dollars, inclusive of all taxes and charges.  For procurement that exceeds an annual equivalent of $10,000, the Finance team will complete a PO.
 
-|Amount (Annual Equivalent)|Approval Required|Recommend Method of Payment|
+|Amount (Annual Equivalent)|Approval Required|Recommended Method of Payment|
 |---|---|---|
 |$0 - $1,000|Does not require specific approval|Expensify / Remote.com / Brex / Bill.com|
 |$1,000 to $10,000|Needs to be approved by a director or above of your department|Brex / Bill.com via Sourcegraph AP team|
