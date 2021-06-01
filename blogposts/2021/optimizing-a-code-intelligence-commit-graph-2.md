@@ -304,11 +304,11 @@ This made things **far** worse. In Sourcegraph 3.22, we moved the code that calc
 
 This made their entire instance unstable, and this series of events escalated us from a priority zero event to a [priority now](https://devblogs.microsoft.com/oldnewthing/20081121-00/?p=20123) event.
 
-We attacked the problem again, starting out once more by tackling some low-hanging fruit, by ignoring large amounts of unneeded data. When we pull back the commit graph for a repository, it's unlikely that we need the _entire_ commit graph. There's little sense in filling out the visibility of the long tale of historic commits, especially as its distance to the oldest LSIF upload grows over time. Now, we [entirely ignore](https://github.com/sourcegraph/sourcegraph/pull/16140) the portion of the commit graph that existed _before_ the oldest known LSIF upload for that repository.
+We attacked the problem again, starting out once more by tackling some low-hanging fruit, by ignoring large amounts of unneeded data. When we pull back the commit graph for a repository, it's unlikely that we need the _entire_ commit graph. There's little sense in filling out the visibility of the long tail of historic commits, especially as its distance to the oldest LSIF upload grows over time. Now, we [entirely ignore](https://github.com/sourcegraph/sourcegraph/pull/16140) the portion of the commit graph that existed _before_ the oldest known LSIF upload for that repository.
 
 In the same spirit, we can remove the explicit step of topologically sorting the commit graph in the application by instead [sorting it via the Git command](https://github.com/sourcegraph/sourcegraph/pull/16270). This is basically the same win as replacing a `sort` call in your webapp with an `ORDER BY` clause in your SQL query. This further reduces the required memory as we're no longer taking large amounts of stack space to traverse long chains of commits in the graph.
 
-Our [last change](https://github.com/sourcegraph/sourcegraph/pull/16368), however, was the real heavy hitter and comes in two parts.
+Our [last change](https://github.com/sourcegraph/sourcegraph/pull/16368), however, was the real heavy hitter and comes in 2 parts.
 
 First, we've so far been storing our commit graph in a map from commits to the set of uploads visible from that commit. When the number of distinct roots is large, the lists under each commit can also become quite large. Most notably, this makes the merge operation between 2 lists quite expensive in terms of both CPU and memory. CPU is increased as the merge procedure compares each pair of elements from the list in a trivial but quadratic nested loop. Memory is increased as merging 2 lists creates a third, all of which are live at the same time before any are a candidate for garbage collection.
 
@@ -322,6 +322,7 @@ We make the observation that looking in a single direction, each commit can see 
 var visibleUploads map[string /* commit */]map[string /* indexer+root */]Upload /* sole upload visible at root */
 ```
 
+<a id="Tricks"></a>
 Second, we stop pre-calculating the set of visible uploads for **every** commit at once. We make the observation that for a large class of commits, the set of visible uploads are simply redundant information.
 
 <figure>
@@ -368,7 +369,7 @@ Our [final and successful effort](https://github.com/sourcegraph/sourcegraph/pul
 
 First, we've changed the commit graph traversal behavior to look only at ancestors. Since we started to ignore the bulk of the commit graph that existed before the first commit with LSIF data, looking into the _future_ for LSIF data now has limited applicability. Generally, users will be on the tip of a branch (either the default branch, or a feature branch if reviewing a pull request). We can still answer code intelligence queries for these commits, as they necessarily occur after _some_ LSIF data has been uploaded. Additionally, an unrelated [bug fix](https://github.com/sourcegraph/sourcegraph/pull/16733) caused descendant-direction traversals to increase memory usage. So at this point, it just seemed sensible to stop worrying about this reverse case, which was never truly necessary from a usability standpoint. Looking in one direction reduces the amount of data we need to store by about 50%.
 
-Second, we re-applied our tricks described in the previous section. We had good luck with throwing out huge amounts of data which we could efficiently recalculate when necessary, and save the resources that would otherwise be required to store them. This concept is known as [rematerialization](https://en.wikipedia.org/wiki/Rematerialization) in compiler circles, where values may be computed multiple times instead of storing and loading the already-computed value from memory. This is useful in the case where a load/store pair is more expensive than the computation itself, or if the load/stores would otherwise increase register pressure.
+Second, we re-applied our [tricks](#Tricks) described in the previous section. We had good luck with throwing out huge amounts of data which we could efficiently recalculate when necessary, and save the resources that would otherwise be required to store them. This concept is known as [rematerialization](https://en.wikipedia.org/wiki/Rematerialization) in compiler circles, where values may be computed multiple times instead of storing and loading the already-computed value from memory. This is useful in the case where a load/store pair is more expensive than the computation itself, or if the load/stores would otherwise increase register pressure.
 
 Instead of writing the set of visible uploads per commit, what if we only store the visible uploads for commits that can't be trivially recomputed? We've already determined the set of commits that can be easily rematerialized—we can just move the rematerialization from database insertion time to query time.
 
