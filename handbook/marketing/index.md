@@ -11,7 +11,7 @@
     - [Product marketing hierarchy](product_marketing_hierarchy.md)
 - [Content Marketing](content.md)
     - [Creating blog posts](creating_blog_posts.md)
-    - [Editing blog posts](/creating_blog_posts#editing-blog-posts.md)
+    - [Editing blog posts](creating_blog_posts.md#editing-blog-posts)
 - [Developer Education](education.md)
 
 - Community Relations
