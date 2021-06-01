@@ -35,7 +35,9 @@ The following Git commit graph illustrates this, where commit `b` could simply b
   <figcaption>A Git commit graph with large distances between code intelligence indexes.</figcaption>
 </figure>
 
-In this circumstance, bounded traversals are a fundamental design flaw. To get rid of this constraint, we turn to a technique that was very successful in the past: index the result of the queries out of band. This technique forms the basis of our search: we create a series of n-gram indexes over source text so we can quickly look inside text documents. This technique also forms the basis of our code intelligence: we create [indexes](https://microsoft.github.io/language-server-protocol/specifications/lsif/0.5.0/specification) that contain the answers to all the relevant language server queries that could be made about code at a particular revision.
+## A better design
+
+In these circumstances, bounded traversals are a fundamental design flaw. To get rid of this constraint, we turn to a technique that was very successful in the past: index the result of the queries out of band. This technique forms the basis of our search: we create a series of n-gram indexes over source text so we can quickly look inside text documents. This technique also forms the basis of our code intelligence: we create [indexes](https://microsoft.github.io/language-server-protocol/specifications/lsif/0.5.0/specification) that contain the answers to all the relevant language server queries that could be made about code at a particular revision.
 
 In the same spirit, we eschew graph traversal at query time and calculate the set of visible uploads for each commit ahead of time (whenever the commit graph or set of uploads for a repository changes). This reduces the complexity of the query in the request path into a simple single-record lookup.
 
@@ -255,6 +257,8 @@ To give a sense of this user's scale:
 
 While the commit graph itself was relatively small (the [k8s/k8s](https://github.com/kubernetes/kubernetes) commit graph is twice that size and could be processed without issue), the number of distinct roots was very large.
 
+## Memory reduction attempts
+
 As an emergency [first attempt to reduce memory usage](https://github.com/sourcegraph/sourcegraph/pull/16086), we were able to cut the amount of memory required to calculate visible uploads down by a factor of 4 (with the side effect of doubling the time it took to compute the commit graph). This was an acceptable trade-off, especially for a background process, and especially in a patch release meant to restore code intelligence to a high-volume private instance.
 
 The majority of the memory was being taken up by the following `UploadMeta` structure, which was the bookkeeping metadata we tracked for each visible commit at each upload. The root and indexer fields denote the directory where the indexer was run and the name of the indexing tool, respectively. An index with a smaller commit distance can _shadow_ another only if these values are equivalent.
@@ -310,7 +314,9 @@ In the same spirit, we can remove the explicit step of topologically sorting the
 
 Our [last change](https://github.com/sourcegraph/sourcegraph/pull/16368), however, was the real heavy hitter and comes in 2 parts.
 
-First, we've so far been storing our commit graph in a map from commits to the set of uploads visible from that commit. When the number of distinct roots is large, the lists under each commit can also become quite large. Most notably, this makes the merge operation between 2 lists quite expensive in terms of both CPU and memory. CPU is increased as the merge procedure compares each pair of elements from the list in a trivial but quadratic nested loop. Memory is increased as merging 2 lists creates a third, all of which are live at the same time before any are a candidate for garbage collection.
+### Part 1: Using a more compact data structure
+
+We've so far been storing our commit graph in a map from commits to the set of uploads visible from that commit. When the number of distinct roots is large, the lists under each commit can also become quite large. Most notably, this makes the merge operation between 2 lists quite expensive in terms of both CPU and memory. CPU is increased as the merge procedure compares each pair of elements from the list in a trivial but quadratic nested loop. Memory is increased as merging 2 lists creates a third, all of which are live at the same time before any are a candidate for garbage collection.
 
 ```go
 var visibleUploads map[string /* commit */][]Upload /* unsorted slice of visible uploads */
@@ -322,8 +328,9 @@ We make the observation that looking in a single direction, each commit can see 
 var visibleUploads map[string /* commit */]map[string /* indexer+root */]Upload /* sole upload visible at root */
 ```
 
-<a id="Tricks"></a>
-Second, we stop pre-calculating the set of visible uploads for **every** commit at once. We make the observation that for a large class of commits, the set of visible uploads are simply redundant information.
+### Part 2: Ignoring uninteresting data
+
+We stop pre-calculating the set of visible uploads for **every** commit at once. We make the observation that for a large class of commits, the set of visible uploads are simply redundant information.
 
 <figure>
   <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph5.png" alt="Sample commit graph" class="no-shadow">
