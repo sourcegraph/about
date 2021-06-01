@@ -72,9 +72,19 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             </Link>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
+                                            <Link
+                                                className="header__nav-link nav-link"
+                                                to="/case-studies"
+                                                activeClassName="header__nav-link-active"
+                                            >
+                                                Case Studies
+                                            </Link>
+                                        </li>
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <a
                                                 className="header__nav-link nav-link"
                                                 href="https://docs.sourcegraph.com"
+                                                target="_blank"
                                             >
                                                 Docs <ExternalLinkIcon className="icon-inline small ml-1" />
                                             </a>
