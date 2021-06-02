@@ -79,7 +79,7 @@
     "@types/react-share": "3.0.3",
     "gatsby-cli": "^2.19.1",
     "gatsby-plugin-tslint": "^0.0.2",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "sharp": "^0.27.1",
     "slugify": "^1.4.6",
     "stylelint": "^13.13.1",
