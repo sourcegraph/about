@@ -56,8 +56,7 @@ Managing large number of changesets requires a lot of manual work. Having to man
 Bulk actions allow users to automate taking an action on many changesets at a time. In this release, we are introducing a first bulk action: **comments**. Common use cases include:
 - nudge repository owners to merge starving changesets "This batch change is now 54% merged, consider merging yours!"
 - add links to docs, or add instructions to all the changesets in a batch change
-
-[Read more]([https://docs.sourcegraph.com/batch_changes/how-tos/bulk_operations_on_changesets])
+- [Read more](https://docs.sourcegraph.com/batch_changes/how-tos/bulk_operations_on_changesets)
 
 <p><video autoplay loop muted playsinline style="width:600px">
   <source src="https://sourcegraphstatic.com/blog/3.28/batch-changes-bulk-action-comment.mp4" type="video/mp4">
@@ -65,7 +64,7 @@ Bulk actions allow users to automate taking an action on many changesets at a ti
 
 In future releases we will add other bulk actions: merge, close and more.
 
-Bulk actions makes Batch Changes very convenient for tracking and managing changesets, including for changesets that have not been created with Batch Changes. To manage a large number of existing changesets, you could import them into a batch change (how-to)[https://docs.sourcegraph.com/batch_changes/how-tos/tracking_existing_changesets], and use bulk actions.
+Bulk actions makes Batch Changes very convenient for tracking and managing changesets, including for changesets that have not been created with Batch Changes. To manage a large number of existing changesets, you could [import them into a batch change](https://docs.sourcegraph.com/batch_changes/how-tos/tracking_existing_changesets), and use bulk actions.
 
 ### Conditional execution in batch specs
 
@@ -92,4 +91,4 @@ We introduced helper functions to use in the if statement, see the docs to learn
 ### Cheatsheet and examples
 
 - We added a [cheatsheet](https://docs.sourcegraph.com/batch_changes/references/batch_spec_cheat_sheet) highlighting commonly used batch spec patterns
-- We added a new batch change example: [changing YAML files](https://github.com/sourcegraph/batch-change-examples/tree/main/modify-yaml). Feedback welcome on what examples we should build next [GitHub project](https://github.com/sourcegraph/batch-change-examples/projects/1)!
+- We added a new batch change example: [changing YAML files](https://github.com/sourcegraph/batch-change-examples/tree/main/modify-yaml). Feedback welcome on what examples we should build next ([project](https://github.com/sourcegraph/batch-change-examples/projects/1))
