@@ -11,6 +11,8 @@ socialImage: https://sourcegraphstatic.com/blog/high-performing-development-team
 published: true
 ---
 
+![Facilitating high-performing teams](https://sourcegraphstatic.com/blog/high-performing-development-teams-observability.gif)
+
 Legacy methods for predicting system failures are no longer enough. To bring development and operation teams together more effectively, you need modern observability and monitoring tools designed for highly distributed systems and microservices architectures.
 
 During a recent [Sourcegraph podcast episode](/podcast/charity-majors/), Cofounder and CTO [Beyang Liu](/handbook/company/team#beyang-liu) spoke with Charity Majors, Founder and CTO of [Honeycomb](https://www.honeycomb.io/) about the impact of observability and monitoring on development teams.
