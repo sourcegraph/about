@@ -37,7 +37,7 @@ While monitoring tools are great for keeping operations teams informed about sys
 
 ## You need to be measuring the right things 
 
- According to the [Accelerated State of DevOps report](https://cloud.google.com/devops/state-of-devops/), the bottom 50% of performers are getting worse year-over-year, while the top 50% continue to get better even faster. That’s because complex systems are constantly on the verge of overtaking teams if they’re taking steps to make their software more comprehensible.
+ According to the [Accelerated State of DevOps report](https://cloud.google.com/devops/state-of-devops/), the bottom 50% of performers are getting worse year-over-year, while the top 50% continue to get better even faster. That’s because complex systems are constantly on the verge of overtaking teams if they’re not taking steps to make their software more comprehensible.
 
 > "These are social-technical systems. The people, the code, the tools you use for deploying and managing that code, and observability are important steps, but it’s all about the effectiveness of the team. I feel like 80, 90, or more percentage of your velocity and your ability to ship code with confidence has nothing to do with your personal skills. It has everything to do with your team."
 
