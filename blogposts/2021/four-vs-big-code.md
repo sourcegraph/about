@@ -6,10 +6,12 @@ description: ""
 publishDate: 2021-05-26T18:00-07:00
 tags: [blog]
 slug: 
-heroImage: 
-socialImage: 
+heroImage: https://sourcegraphstatic.com/blog/four-vs-big-code.png
+socialImage: https://sourcegraphstatic.com/blog/four-vs-big-code.png
 published: true
 ---
+
+![Four Vs of Big Code](https://sourcegraphstatic.com/blog/four-vs-big-code.png)
 
 In 2020, we issued a survey of more than 500 software development professionals in North America on the challenges and risks posed by increasing code complexity. 
 The key findings of the survey is that code is profoundly growing in four ways (four Vs!): volume, variety, velocity, and value. 
