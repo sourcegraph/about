@@ -3,7 +3,7 @@ title: "Optimizing a code intelligence commit graph (Part 2)"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 description: "We enabled Sourcegraph to resolve code intelligence requests for commits missing an index, but ran into scalability challenges when dealing with large commit graphs. Here's how we unearthed and resolved the problem."
-publishDate: 2021-05-24T18:00-07:00
+publishDate: 2021-06-05T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph-part-2
 heroImage: /blog/optimizing-code-intelligence-commit-graph.png
@@ -420,7 +420,15 @@ The `lsif_nearest_uploads_links` table stores a _forwarding pointer_ to the ance
 
 Note that for our instances with a large number of distinct indexing roots, this saves a **massive** amount of storage space. The majority of commits (> 80%) can link to an ancestor, which requires only referencing a fixed-size commit hash. The remaining minority of commits must explicitly list their visible uploads, of which there may be many thousands.
 
-<!-- TODO - better conclusion -->
+This set of changes finally reduces disk usage from 100% to a much more reasonable 3-5%. 🎉
+
+And things _seem_ to be remaining calm...
+
+## Lessons learned (part 2)
+
+In [Part 1](/blog/optimizing-a-code-intel-commit-graph/#Lessons-learned) we pointed out that databases are a hugely deep subject and knowing your tools deeply can get you fairly far with performance. Unfortunately, with the wrong data model, it doesn't matter how fast you can read or write it from the storage layer. You're optimizing the wrong thing and missing the forest for the trees.
+
+In Part 2, we presented a fantastic way to "optimize the database" by reducing the size of our data set. Taking a step back away from the nitty-gritty details of an existing implementation to determine the shape of the data surrounding a problem can reveal much more straightforward and efficient ways to analyze and manipulate that data. This is especially true in a world with changing assumptions.
 
 <!--
 digraph G {
