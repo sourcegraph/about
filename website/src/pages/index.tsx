@@ -23,7 +23,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
-                                <Link className="btn btn-primary mr-3" to="/get-started">
+                                <Link className="btn btn-primary m-3" to="/get-started">
                                     Try Sourcegraph now <ArrowRightIcon className="ml-1" />
                                 </Link>
                                 <Link className="btn btn-outline-primary" to="/contact/request-info/">
