@@ -8,7 +8,7 @@ tags: [blog]
 slug: role-of-observability-tools-high-performing-development-teams
 heroImage: https://sourcegraphstatic.com/blog/high-performing-development-teams-observability.gif
 socialImage: https://sourcegraphstatic.com/blog/high-performing-development-teams-observability.gif
-published: false
+published: true
 ---
 
 Legacy methods for predicting system failures are no longer enough. To bring development and operation teams together more effectively, you need modern observability and monitoring tools designed for highly distributed systems and microservices architectures.
