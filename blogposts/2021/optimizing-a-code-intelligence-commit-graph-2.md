@@ -3,13 +3,15 @@ title: "Optimizing a code intelligence commit graph (Part 2)"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 description: "We enabled Sourcegraph to resolve code intelligence requests for commits missing an index, but ran into scalability challenges when dealing with large commit graphs. Here's how we unearthed and resolved the problem."
-publishDate: 2021-06-05T18:00-07:00
+publishDate: 2021-06-03T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph-part-2
 heroImage: /blog/optimizing-code-intelligence-commit-graph.png
 socialImage: /blog/optimizing-code-intelligence-commit-graph.png
 published: true
 ---
+
+![Optimizing code intelligence commit graph graphic](/blog/optimizing-code-intelligence-commit-graph.png)
 
 In [Part 1 of this optimization story](/blog/optimizing-a-code-intel-commit-graph/), we detailed how Sourcegraph can resolve code intelligence queries using data from older commits when data on the requested commit is not yet available. The implementation lies completely within PostgreSQL, and the queries run with very low latency (<1ms). We boldly claimed that our fears of scalability were no longer cause for concern.
 
