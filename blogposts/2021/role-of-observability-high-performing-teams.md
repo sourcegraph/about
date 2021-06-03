@@ -1,8 +1,8 @@
 ---
 title: "Monitoring is no longer enough: For high-performing development teams you need observability tools"
-author: 
+author: Kevin Graham
 authorUrl: 
-description: "Observability and tracking the right metrics are critical to development teams' success. We chatted to Charity Majors of Honeycomb about bridging the gap between dev and ops and making software more comprehensible to everyone."
+description: "Observability and tracking the right metrics are critical to development teams' success. We chatted to Charity Majors of Honeycomb about bridging the gap between dev and ops, and making software more comprehensible to everyone."
 publishDate: 2021-06-04T18:00-07:00
 tags: [blog]
 slug: role-of-observability-tools-high-performing-development-teams
@@ -15,13 +15,13 @@ published: true
 
 Legacy methods for predicting system failures are no longer enough. To bring development and operation teams together more effectively, you need modern observability and monitoring tools designed for highly distributed systems and microservices architectures.
 
-During a recent [Sourcegraph podcast episode](/podcast/charity-majors/), Cofounder and CTO [Beyang Liu](/handbook/company/team#beyang-liu) spoke with Charity Majors, Founder and CTO of [Honeycomb](https://www.honeycomb.io/) about the impact of observability and monitoring on development teams.
+During a recent [Sourcegraph podcast episode](/podcast/charity-majors/), [Charity Majors](https://www.linkedin.com/in/charity-majors/), Founder and CTO of [Honeycomb](https://www.honeycomb.io/) spoke with Sourcegraph Cofounder and CTO [Beyang Liu](/handbook/company/team#beyang-liu) about the impact of observability and monitoring on development teams.
 
 ## Why monitoring alone is no longer enough
 
 Orgs have historically relied in telemetry and monitoring tools to predict and surface system failues, but in most cases, logs are only useful if you know what to include in them before deployment and what to search for when a problem arises. Similarly, most metrics aren’t tied together in a way that makes it possible to understand these complex system states. 
 
->"Many times, when an app is down and you have to figure out what’s going on, it’s a very manual process. You’ve got your top lists of metrics and your defined questions to monitor, but if those don’t indicate the problem you're looking for a needle in a haystack." – Charity
+>"Many times, when an app is down and you have to figure out what’s going on, it’s a very manual process. You’ve got your top lists of metrics and your defined questions to monitor, but if those don’t indicate the problem, you're looking for a needle in a haystack." – Charity
 
 Enter observability tools: A way to deal with unknown unknowns or the situations you cannot predict beforehand. While most monitoring tools measure specific data points to know when something is wrong, observability tools can track hundreds of different data points to provide more context and help surface the reason behind failures. Furthermore, by shifting away from the emphasis on the system itself when collecting data towards the user experience, it’s far easier to trace issues back to their source.
 
