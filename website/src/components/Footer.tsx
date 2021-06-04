@@ -54,7 +54,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/podcast">Podcast</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="https://info.sourcegraph.com/emergence-of-big-code-2020-survey">Big code survey</Link>
+                                    <a href="https://info.sourcegraph.com/emergence-of-big-code-2020-survey">Big code survey</a>
                                 </li>
                             </ul>
                         </div>
