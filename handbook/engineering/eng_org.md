@@ -25,7 +25,7 @@ We expect engineering managers to not manage more than 8 people directly.
 
 If a team is approaching capacity and we need to continue to grow, the manager of the team should work with their manager to create a plan to grow and divide the team. This involves identifying a new engineering manager (either internally or hiring), which can take ~3 months, so it is important to plan ahead. In advance of identifying a new manager, the manager of the team at capacity should already start organizing the team's work as if they were managing two separate teams. This eases the team into the transition before we actually have a new engineering manager onboard.
 
-When teams grow and divide, we prefer to grow the org horizontally not vertically. This means the new engineering manager would be a peer to the old engineering manager, not report to the old engineering manager, as long as the engineering manager's manager has capacity. If the engineering manager's manager doesn't have the capacity, then we need to make a higher-level decision about how to adjust our org structure to support the growth we need.
+When teams grow and divide, we prefer to grow the org horizontally, not vertically. This means the new engineering manager would be a peer to the existing engineering manager, not report to the existing engineering manager, as long as the engineering manager's manager has capacity. If the engineering manager's manager doesn't have the capacity, then we need to make a higher-level decision about how to adjust our org structure to support the growth we need.
 
 ## Transferring teams
 
