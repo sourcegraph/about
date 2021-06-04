@@ -17,7 +17,7 @@ A minimum viable team contains:
   - 2 engineers per necessary skillset (for example: if a team requires both backend and frontend engineers, then the minimum team is 2x frontend + 2x backend) for collaboration and redundancy
   - 3 engineers total (for example: if a team only needs frontend engineers, then there can be a team of 3 frontend engineers)
 
-New teams will not be created until/unless we have committed headcount in the plan to staff them to a minimum viable team within a reasonable timeframe (6 months), or to whatever is necessary to make the new team successful, whichever is larger.
+New teams will not be created until/unless we have committed headcount in the plan to staff them to a minimum viable team within a reasonable timeframe, or to whatever is necessary to make the new team successful, whichever is larger.
 
 ### Maximum viable team
 
