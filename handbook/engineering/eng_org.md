@@ -17,13 +17,15 @@ A minimum viable team contains:
   - 2 engineers per necessary skillset (for example: if a team requires both backend and frontend engineers, then minimum team is 2x frontend + 2x backend) for colalboration and redundancy
   - 3 engineers total (for example: if a team only needs frontend engineers, then there can be a team of 3 frontend engineers)
 
-New teams will not be created until/unless we have committed headcount in the plan to staff them to a minimum viable team, or to whatever is necessary to make the new team successful, whichever is larger.
+New teams will not be created until/unless we have committed headcount in the plan to staff them to a minimum viable team within a reasonable timeframe (6 months), or to whatever is necessary to make the new team successful, whichever is larger.
 
 ### Maximum viable team
 
 We expect engineering managers to not manage more than 8 people directly.
 
 If a team is approaching capacity and we need to continue to grow, the manager of the team should work with their manager to create a plan to grow and divide the team. This involves identifying a new engineering managers (either internally or hiring), which can take ~3 months, so it is important to plan ahead. In advance of identifying a new manager, the manager of the team at capacity should already start organizing the teams work as if they were managing two separate teams. This eases the team into the transition before we actually have a new engineering manager onboard.
+
+When teams grow and divide, we prefer to grow the org horizontally not vertically. This means the new engineering manager would be a peer to the old engineering manager, not report to the old engineering manager, as long as the enginering manger's manager has capacity. If the enginering manger's manager doesn't have capacity, then we need to make a higher level decision about how to adjust our org structure to support the growth we need.
 
 ## Transferring teams
 
