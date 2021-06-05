@@ -113,7 +113,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-5">
                         <p>CODE SEARCH</p>
                         <h2>Find anything in code, fast</h2>
-                        <p>
+                        <div>
                             Sourcegraph returns results in milliseconds, even across thousands of repositories, like:
                             <ul>
                                 <li>
@@ -129,7 +129,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 </li>
                                 <li>Definitions of a specific function</li>
                             </ul>
-                        </p>
+                        </div>
                         <p>
                             Write queries with regex, punctuation, symbols, and advanced syntax-aware pattern matching.
                             Sourcegraph’s visual and interactive query builder constructs complex queries to find and
@@ -144,11 +144,11 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-7 pl-lg-6 mt-3">
                         <div className="container video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
-                                class="embed-responsive-item"
+                                className="embed-responsive-item"
                                 src="https://www.youtube-nocookie.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
+                                allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
+                                frameBorder={0}
                                 title="AND/OR operators for universal code search"
                             ></iframe>
                         </div>
@@ -160,11 +160,11 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-7 pr-lg-6 mt-3">
                         <div className="container video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
-                                class="embed-responsive-item"
+                                className="embed-responsive-item"
                                 src="https://www.youtube-nocookie.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
+                                allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
+                                frameBorder={0}
                                 title="Exploring code with Sourcegraph"
                             ></iframe>
                         </div>
