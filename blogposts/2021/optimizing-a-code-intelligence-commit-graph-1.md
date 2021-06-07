@@ -22,7 +22,7 @@ Since the first version of Sourcegraph, precise code navigation has been a first
   <figcaption>Cross-repository jump to definition from a use in <code>sourcegraph/sourcegraph</code> to a definition in <code>gorilla/mux</code>.</figcaption>
 </figure>
 
-The [journey to our current implementation](/evolution-of-the-precise-code-intel-backend/) began in February 2019 when we shifted our efforts from running Language Servers alongside Sourcegraph to pre-indexing source code via the Language Server Index Format (LSIF) and uploading it to Sourcegraph. This change introduced a new requirement of the user: they are now responsible for producing and uploading the LSIF index.
+The [journey to our current implementation](/blog/evolution-of-the-precise-code-intel-backend/) began in February 2019 when we shifted our efforts from running Language Servers alongside Sourcegraph to pre-indexing source code via the Language Server Index Format (LSIF) and uploading it to Sourcegraph. This change introduced a new requirement of the user: they are now responsible for producing and uploading the LSIF index.
 
 The method to produce an LSIF index is highly variable and depends on many factors. If a repository is not too large, a user may wish to create a new index on every commit in their CI. If a repository is very large (the monorepo case), or an organization has a large number of repositories, it may be better to instead index code periodically and upload a refreshed index. Google uses such a scheduled job to refresh their monorepo's index twice a day.
 
@@ -141,7 +141,11 @@ The following query plan shows an execution trace that visited around 10 commits
 
 <figure>
   <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/fast.png" alt="Fast query plan"/>
-  <figcaption>Query plan of a commit graph traversal visiting 10 commits.</figcaption>
+  <figcaption>
+    Query plan of a commit graph traversal visiting 10 commits.
+    <br/>
+    <small>Diagram produced from Alex Tatiyants' <a href="https://github.com/AlexTatiyants/pev">Postgres Explain Visualizer</a>.</small>
+  </figcaption>
 </figure>
 
 The following query plan shows an execution trace that visited around 100 commits (the resulting commit was 44 commits away). This query takes about 330ms, which is well over the [noticeable latency threshold](https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/12OmNyQYtlZ/pdf).
