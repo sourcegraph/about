@@ -141,7 +141,11 @@ The following query plan shows an execution trace that visited around 10 commits
 
 <figure>
   <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/fast.png" alt="Fast query plan"/>
-  <figcaption>Query plan of a commit graph traversal visiting 10 commits.</figcaption>
+  <figcaption>
+    Query plan of a commit graph traversal visiting 10 commits.
+    <br/>
+    <small>Diagram produced from Alex Tatiyants' <a href="https://github.com/AlexTatiyants/pev">Postgres Explain Visualizer</a>.</small>
+  </figcaption>
 </figure>
 
 The following query plan shows an execution trace that visited around 100 commits (the resulting commit was 44 commits away). This query takes about 330ms, which is well over the [noticeable latency threshold](https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/12OmNyQYtlZ/pdf).
