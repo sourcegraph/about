@@ -972,3 +972,9 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [nicky@sourcegraph.com](mailto:nicky@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/nvanmaanen/)
 - Currently, Nicky is enjoying the ocean and eucalyptus trees with her family in Southern California but her heart remains in the commotion and sounds of New York City. She has a BA in Anthropology from Scripps College and an MS in Public Policy from Carnegie Mellon University. Prior to Sourcegraph, Nicky has held numerous jobs from Selling Mini Coopers to working in the Computer Forensic Unit at the Manhattan DAs office.
 
+## Ken Mills
+- Account Executive - Public Sector
+- Chantilly, VA USA 🇺🇸
+- GitHub: kenwmills
+- [ken.mills@sourcegraph.com] (mailto:ken.mills@sourcegraph.com), [LinkedIn](http://www.linkedin.com/in/ken-mills-2601b74) [Twitter](https://twitter.com/kenwmills)
+- Ken grew up in the South before joining the US Army.  Since then, he has lived in the Southwest (Fort Huachuca, AZ), Northwest (Fort Lewis, WA), Northeast (Nashua, NH), and is currently in the Washington DC metro area. Ken enjoys walking, hiking and casual bike riding, as well as reading and spending time with family and friends.  Prior to Sourcegraph, Ken was the Regional Director - Government Accounts for VersionOne, Inc (merged with CollabNet, and later renamed Digital.ai) and has spent the last 20 years selling software solutions into the Public Sector.
