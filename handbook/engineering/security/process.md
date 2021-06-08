@@ -11,20 +11,20 @@ Our processes are in a period of change, so if in doubt, please reach out to us 
 ## Principles
 
 1. [Goals](https://about.sourcegraph.com/company/goals/guidelines) are something we strive for, whilst tracking and communicating progress.
-2. A work item is a piece of work (e.g., writing code, hiring a new teammate) that makes progress toward achieving a goal.
+2. A work item is a piece of work (e.g., writing code, hiring a new teammate, deploying a new tool) that makes progress toward achieving a goal.
 3. Releases may be made up of N workitems, that may impact Y goals. Whilst this is true, we communicate both internally and externally progress towards those goals.
-4. Security by its various nature has public work items ([main repo](https://github.com/sourcegraph/sourcegraph) and private workitems ([security repo](https://github.com/sourcegraph/security-issues/)). Over time workitems should move from the private repository to the public repository once they can be made public. The ideal goal state is the lack of a private security repository.
+4. Security by its various nature has constraints on how public it's work can be. The Security team are currently trialing Jira for our execution of work - work in Jira is not currently visible, but out [high level plans](goals.md) are still public.
+5. Work items can still be raised by anyone in the ([main repo](https://github.com/sourcegraph/sourcegraph) and private workitems ([security repo](https://github.com/sourcegraph/security-issues/)) can be created in. Over time workitems should move from the private repository to the public repository once they can be made public. The ideal goal state is the lack of a private security repository.
 
 
 ## Process Overview
 
 ### Planning & Roadmap
 
-1. We plan iterations and features prior to their execution, in a team planning session.
+1. We plan iterations and features (prior to their execution) in a team planning session.
 2. We set one or more goals for the iteration.
-3. We write RFCs and solicit feedback ideally, prior to the start of an iteration, but especially with forethought in mind.
+3. We write RFCs and solicit feedback (ideally), prior to the start of an iteration, but especially with forethought in mind.
 4. We hold weekly team syncs and [track them here](https://docs.google.com/document/d/1l-JyN-hol2G6YXNqPsJsIgN2z3aZEzOW4-Julu4xthI).
-5. We report on our status and progress weekly in [tracking issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Atracking+label%3Ateam%2Fsecurity), and radiate communication.
 
 ProductBoard serves as our tool for oversight and higher level planning. 
 
@@ -42,23 +42,18 @@ Jira is intended only for **planned** work.
     * Stuff we're **going to do** makes it into here via ProductBoard, where it gets broken down, ordered, and prioritized against other commited stuff
   * Small items that don't fit with the strategic roadmap, but that need to be done soon
   * Bugs  
+  * Asks from internal teams (e.g. support or consultation)
 
 ## How to work with us
 
 We're always happy for teams to [request security code reviews](secure-code-review.md).
 
-Please raise all support request into..........................
+Security questionnaires for new and existing customers should [follow the process here](https://about.sourcegraph.com/handbook/sales/salessecurity) - feel free to message us on [#security](https://sourcegraph.slack.com/archives/C1JH2BEHZ) too.
 
-In the event you feel something is urgent, please also copy a link and a line or two of written explantion of the urgency into [#security](https://sourcegraph.slack.com/archives/C1JH2BEHZ) and tag `@security-support`.
+Security questions and support requests should be raised in [#security](https://sourcegraph.slack.com/archives/C1JH2BEHZ):
+  1. Click the lightning bolt below the Slack message box in [#security](https://sourcegraph.slack.com/archives/C1JH2BEHZ)
+  2. Select an option at the top of the menu
+  3. Fill out the questions
+  4. Tag @security-support in the resulting thread if urgent
 
 We're happy to have you reach out to us on [#security](https://sourcegraph.slack.com/archives/C1JH2BEHZ) if you have any doubts, or for any reason feel like our process can't work for you in a particular case.
-
-## Other processes
-
-### Learning / retrospective
-
-After the each release, we hold a [retrospective](https://about.sourcegraph.com/retrospectives). We try to understand the degree to which we achieved the goals we communicated at the beginning of the iteration. We identify what went well and what our opportunities for improvement. We actively choose one of the things we've learned, and target its improvement.
-
-### Deploying infrastructure
-
-Security develops infrastructure in the [Auxilliary project](https://console.cloud.google.com/home/dashboard?project=sourcegraph-server&_ga=2.42742757.1539584256.1606825468-757838940.1606655220). We work with the [Distribution team](https://about.sourcegraph.com/handbook/engineering/distribution) to deploy and test in dogfood, and promote to production. We are responsible for documentation and operating systems, and [Distribution](https://about.sourcegraph.com/handbook/engineering/distribution) helps make infrastructure production-ready based on our guidelines. Security acts as an input to Distribution.
