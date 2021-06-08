@@ -77,6 +77,24 @@ const LEADERS: {
             twitter: 'https://twitter.com/nickdsnyder'
         },
         {
+            name: 'Carly Jones',
+            image: '/staff/avatar-carly.jpg',
+            title: 'VP Talent',
+            bio: '/handbook/company/team#carly-jones-she-her',
+            github: 'https://github.com/carlyj0nes',
+            linkedin: 'https://www.linkedin.com/in/carlycjones/',
+            twitter: 'https://twitter.com/srcgraph'
+        },
+        {
+            name: 'Katerina Nikolova',
+            image: '/staff/avatar-katerina.jpg',
+            title: 'Chief of Staff',
+            bio: '/handbook/company/team#katerina-nikolova-she-her',
+            github: 'https://github.com/katerina-sourcegraph',
+            linkedin: 'https://www.linkedin.com/in/katerinanikolova/',
+            twitter: 'https://twitter.com/Katerin74625921'
+        },
+        {
             name: 'Noemi Mercado',
             image: '/staff/avatar-noemi.jpg',
             title: 'Head of People Ops',
@@ -92,8 +110,8 @@ export const LeadershipSection: React.FunctionComponent<{ className?: string }> 
         <h2>Leadership</h2>
         <div className="row mt-5">
             {LEADERS.map((staff, i) => (
-                <div className="col-lg-4 mb-6">
-                    <div key={i} className={`leadership-section__item ${staff.name.replace(' ', '-').toLowerCase()}`}>
+                <div key={i} className="col-lg-4 mb-6">
+                    <div className={`leadership-section__item ${staff.name.replace(' ', '-').toLowerCase()}`}>
                         <a href={staff.bio}><img className="leadership-section__item-image" src={staff.image} alt={`Sourcegraph team: ${staff.name} - ${staff.title}`} /></a>
                         <h5><a href={staff.bio}>{staff.name}</a></h5>
                         <p className="leadership-section__item-title">{staff.title}</p>
