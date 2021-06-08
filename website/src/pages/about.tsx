@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import { ContentSection } from '../components/content/ContentSection'
 import { LeadershipSection } from '../components/LeadershipSection'
+import { BoardSection } from '../components/BoardSection'
 import * as craft from '../images/about/sg-craftventures.png'
 import * as felicis from '../images/about/sg-felicis.png'
 import * as goldcrest from '../images/about/sg-goldcrest.png'
@@ -22,7 +23,6 @@ export default class About extends React.Component<any, any> {
                         <meta name="twitter:site" content="@srcgraph" />
                         <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
                         <meta name="twitter:card" content="summary" />
-
                         <meta
                             name="twitter:description"
                             content="The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer."
@@ -63,6 +63,9 @@ export default class About extends React.Component<any, any> {
                         <ContentSection>
                             <LeadershipSection />
                         </ContentSection>
+                        <ContentSection>
+                            <BoardSection />
+                        </ContentSection>
                         <div className="about__investors mb-5">
                             <div className="container">
                                 <h2 className="mb-3">
@@ -86,7 +89,6 @@ export default class About extends React.Component<any, any> {
                                     <div className="col-md-3">
                                         <img src={goldcrest} alt="Sourcegraph investor: Goldcrest Capital" />
                                     </div>
-
                                 </div>
                             </div>
                         </div>
