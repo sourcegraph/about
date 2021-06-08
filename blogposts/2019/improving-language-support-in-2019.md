@@ -11,7 +11,7 @@ heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---
 
-Sourcegraph's [master plan](https://about.sourcegraph.com/company/strategy) is to bring basic code intelligence to every devloper wherever you see code. Despite deploying [a ton of experimental language servers in 2018](https://about.sourcegraph.com/blog/sourcegraph-2-8-19-languages-ridiculously-huge-monorepos-lsp-a-graphql-api), language support has not improved much in the past year - why?
+Sourcegraph's [master plan](https://about.sourcegraph.com/handbook/company/strategy) is to bring basic code intelligence to every devloper wherever you see code. Despite deploying [a ton of experimental language servers in 2018](https://about.sourcegraph.com/blog/sourcegraph-2-8-19-languages-ridiculously-huge-monorepos-lsp-a-graphql-api), language support has not improved much in the past year - why?
 
 - Wrapping language servers gave us remote execution of the language server, but [lsp-adapter](https://github.com/sourcegraph/lsp-adapter) did not solve more fundamental problems related to incompatible compiler and package manager versions, not installing dependencies, slow initialization, and poor quality in general
 - lsp-proxy was complex and no single Sourcegrapher fully understood how lsp-proxy, lsp-adapter, and indexer worked

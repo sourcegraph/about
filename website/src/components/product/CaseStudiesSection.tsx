@@ -10,6 +10,12 @@ const CASESTUDIES: {
     external?: boolean
 }[] = [
         {
+            name: 'Cloudflare',
+            logo: '/external-logos/cloudflare-color-logo.svg',
+            title: 'Cloudflare accelerates debugging and improves security',
+            url: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
+        },
+        {
             name: 'Indeed',
             logo: '/external-logos/indeed-logo.svg',
             title: 'Indeed keeps code up to date and accelerates development velocity',
@@ -83,7 +89,7 @@ export const CaseStudiesSection: React.FunctionComponent<{ className?: string }>
     <div id="customers" className={`case-studies-section container-fluid ${className}`}>
         <div className="card-deck">
             {CASESTUDIES.map((study, i) => (
-                <div className="col-lg-4 mb-6">
+                <div key={i} className="col-lg-4 mb-6">
                     <div key={i} className={`${study.name.replace(' ', '-').toLowerCase()} card`}>
                         <div className="card-body">
                             <img className="case-studies-section__item-logo " src={study.logo} alt="Card image cap" />

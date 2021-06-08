@@ -34,4 +34,4 @@ Otherwise, you can [run a self-hosted instance of Sourcegraph 2.13](https://docs
 
 In the coming weeks and months, depending on the language. Our top priorities are Java and PHP (as well as introducing Swift support).
 
-See the [Sourcegraph roadmap](https://about.sourcegraph.com/direction) for a timeline of when these languages will be added back. If you don't see a language listed yet, we don't have a date to re-add it. If you'd like to contribute language support, let us know. We are [hiring software engineers](https://github.com/sourcegraph/careers), or we can sponsor you as a part-time contributor.
+See the [Sourcegraph roadmap](https://about.sourcegraph.com/handbook/direction) for a timeline of when these languages will be added back. If you don't see a language listed yet, we don't have a date to re-add it. If you'd like to contribute language support, let us know. We are [hiring software engineers](https://github.com/sourcegraph/careers), or we can sponsor you as a part-time contributor.

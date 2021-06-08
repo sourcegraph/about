@@ -2,20 +2,18 @@
 
 ## Limits
 
-Generally, you should feel free to spend in ways that are in the best interest of the business (see our philosophy in [spending company money](../../people-ops/spending-company-money.md)). 
+Generally, you should feel free to spend in ways that are in the best interest of the business (see our philosophy in [spending company money](../../people-ops/spending-company-money.md)).
 
-Specific categories of purchases that are listed on the [spending company money page](../../people-ops/spending-company-money.md) (e.g. laptops, home office setup, etc.) do not need to follow the approval process below. They are pre-approved and can be [submitted for reimbursement](../../people-ops/expenses.md) directly.
+Specific categories of purchases that are listed on the [spending company money page](../../people-ops/spending-company-money.md) (e.g. laptops, home office setup, etc.) do not need to follow the approval process below. They are pre-approved and can be [submitted for reimbursement](expenses.md) directly.
 
-However, if you intend to make any other purchase that falls above the limits below, please seek approval from your direct manager or, if necessary, [contact the finance team](index.md#contact). 
+However, if you intend to make any other purchase that falls above the limits below, please refer to our [Company accounts payable policy](ap.md).
 
-When Subscribing to a service that will be paid for monthly, please take the annual equivalent of that service value when applying the below approval limits (i.e signing up for a product that costs $500 per month, the annual value is $6,000 per annum, please use the annual value ($6,000) when applying the below thresholds).
-
-|Role|Maximum expense without management approval|Maximum expense without finance approval|
+|Amount (Annual Equivalent)|Approval Required|Recommend Method of Payment|
 |---|---|---|
-|Department leads (VP-level or above)|$15,000|$20,000|
-|Directors|$5,000|$20,000|
-|Managers|$2,500|$5,000|
-|All team members|$500|$1,000|
+|$0 - $1,000|Does not require specific approval|Expensify / Remote.com / Brex / Bill.com|
+|$1,000 to $10,000|Needs to be approved by a director or above of your department|Brex / Bill.com via Sourcegraph AP team|
+|$10,000 or greater|Needs to be approved by a director or above of your department and Finance|Bill.com via Sourcegraph AP Team|
+|$50,000 or greater|Needs to be approved by a director or above of your department, Finance, and the VP of Operations|Bill.com via Sourcegraph AP Team|
 
 ## Corporate credit cards
 
@@ -28,7 +26,7 @@ Just [contact the finance team](index.md#contact) if you believe you are eligibl
 |Department leads (VP-level or above)|$10,000|
 |Managers and Directors|$1,000|
 
-It is not required to provide receipts for purchases on Brex cards, provided it is used for corporate purchases (as opposed to personal purchases that are expensed).  
+It is not required to provide receipts for purchases on Brex cards, provided it is used for corporate purchases (as opposed to personal purchases that are expensed).
 If you have a purchase that you’d like to explain/clarify post about it in the `#finance` Slack channel (e.g. if it's some new system for the team) or email `finance@sourcegraph.com` (e.g. if it's a personal reimbursable expense).
 
 ## Getting invoices paid

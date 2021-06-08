@@ -63,18 +63,20 @@ If you use Google Chrome, you can add a Sourcegraph handbook search shortcut to 
 1. In the "Add search engine" form, enter:
    - Search engine: `Sourcegraph handbook`
    - Keyword: `hb` (or some other shortcut of your choosing)
-   - URL with %s in place of query: https://about.sourcegraph.com/search?q=%s
+   - URL with %s in place of query: `https://about.sourcegraph.com/handbook#stq=%s`
 1. Press the **Add** button.
 
-### Firefox 
+### Firefox
 
 If you use Firefox, you can add a Sourcegraph handbook search shortcut to the address bar
 
-#### Setup 
+#### Setup
 
 1. Right-click the search bar on https://about.sourcegraph.com/handbook.
 1. Choose `Add a keyword for this Search`.
 1. Enter a keyword that you would like to use (e.g. `hb`).
+1. Open your bookmarks and edit the handbook bookmark that was just created
+1. Change the URL on the bookmark to `https://about.sourcegraph.com/handbook#stq=%s`
 
 ### Usage
 
@@ -93,8 +95,12 @@ We chose Markdown files in a Git repository for the handbook because it allows g
 
 ## Why make this handbook public?
 
-Sourcegraph is an [open product, an open company, and open source](../company/index.md#sourcegraph-open-product-open-company-open-source). Our company principles, strategies, and processes are all publicly documented.
+Sourcegraph is an [open product, an open company, and open source](company/index.md#sourcegraph-open-product-open-company-open-source). Our company principles, strategies, and processes are all publicly documented.
 
 ## Acknowledgements
 
 Portions of this documentation are derived from [GitLab's handbook](https://docs.gitlab.com) (see [license](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/LICENCE)).
+
+## Handbook feedback
+
+We're constantly iterating on what the best version of our Sourcegraph handbook might look like. Is it easy to use? Do you find what you're looking for? Let us know [here](https://docs.google.com/forms/d/e/1FAIpQLSfb0yU9xmnvK2namuUzUEKbB9IqZlNQF2IWw0OpLsGvBiW2oQ/viewform?usp=sf_link).

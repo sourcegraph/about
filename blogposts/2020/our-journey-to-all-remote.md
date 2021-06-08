@@ -13,7 +13,7 @@ published: true
 
 ![Sourcegraph San Francisco office mural](/blog/sf-office-mural.jpg)
 
-On February 20, 2020, we officially moved out of our amazing San Francisco office and became an [all-remote](https://about.sourcegraph.com/company/remote) company. Few people have worked at an all-remote company before, and I frequently get questions—especially from candidates—about what led to this decision. This blog post documents our journey to all-remote.
+On February 20, 2020, we officially moved out of our amazing San Francisco office and became an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company. Few people have worked at an all-remote company before, and I frequently get questions—especially from candidates—about what led to this decision. This blog post documents our journey to all-remote.
 
 ## Remote-friendly engineering
 
@@ -77,6 +77,6 @@ Once this decision was made, we needed to:
 
 We love all-remote, but it doesn't work for everyone (just like an open-office floor plan doesn't work for everyone). Working remotely gives you extra freedom and flexibility, but also requires extra discipline and personal responsibility. Certain things that happen organically in an office environment (e.g., informal conversations at lunch), need to be explicitly planned (e.g., by scheduling small "water cooler" meetings with no agenda, or scheduling 1:1s between random teammates using a tool like donut.com).
 
-We are committed to supporting all our teammates to help them be successful. Check out our [tips for working remotely](https://about.sourcegraph.com/company/remote/tips).
+We are committed to supporting all our teammates to help them be successful. Check out our [tips for working remotely](https://about.sourcegraph.com/handbook/company/remote/tips).
 
 If you have any questions about all-remote teams, join us during [our Developer Meetup on Tuesday, May 7 2020 at 10:00 AM PDT](https://info.sourcegraph.com/online-meetup-may-7?utm_source=blog), and I will be happy to answer them.

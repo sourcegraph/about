@@ -55,6 +55,6 @@ Thank you to the [open source contributors](https://github.com/sourcegraph/sourc
 
 ## Next up: Sourcegraph 3.0
 
-We're hard at work on the next major release, Sourcegraph 3.0. It will significantly improve language support for code intelligence, simplify deployment and site configuration, improve debuggability of code host integrations, and allow much more extensibility (including searching other types of things, such as GitHub issues and PR comments, rendered documentation, and log data). See the next couple months on the [Sourcegraph product roadmap](https://about.sourcegraph.com/direction) for more details. Work has already begun on [sourcegraph/sourcegraph@`master`](https://github.com/sourcegraph/sourcegraph).
+We're hard at work on the next major release, Sourcegraph 3.0. It will significantly improve language support for code intelligence, simplify deployment and site configuration, improve debuggability of code host integrations, and allow much more extensibility (including searching other types of things, such as GitHub issues and PR comments, rendered documentation, and log data). See the next couple months on the [Sourcegraph product roadmap](https://about.sourcegraph.com/handbook/direction) for more details. Work has already begun on [sourcegraph/sourcegraph@`master`](https://github.com/sourcegraph/sourcegraph).
 
 If you're on Sourcegraph 2.x, you should update to 2.13 now and can upgrade to 3.0 when it is released.
