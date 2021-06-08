@@ -12,7 +12,9 @@ We think that security is an enabler for the business. Sourcegraph is committed 
 - FQ2 engineering manager hire, [Bill Creager](../../../company/team/index.md#bill-creager) acting manager until then {#security-eng}
   - [Elizabeth Stirling](../../../company/team/index.md#elizabeth-stirling-she-her)
   - [André Eleuterio](../../../company/team/index.md#andré-eleuterio-hehim)
-  - FQ4 security engineer
+  - FY2022 security engineer
+  - FY2022 security engineer
+  - FY2022 security engineer
 
 ## Contact
 
