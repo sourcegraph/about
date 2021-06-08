@@ -964,3 +964,8 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [nicky@sourcegraph.com](mailto:nicky@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/nvanmaanen/)
 - Currently, Nicky is enjoying the ocean and eucalyptus trees with her family in Southern California but her heart remains in the commotion and sounds of New York City. She has a BA in Anthropology from Scripps College and an MS in Public Policy from Carnegie Mellon University. Prior to Sourcegraph, Nicky has held numerous jobs from Selling Mini Coopers to working in the Computer Forensic Unit at the Manhattan DAs office.
 
+
+## Debbie Johnstone (she/her)
+- Tech Ops Manager
+- Costa Mesa, California, USA 🇺🇸
+- GitHub: NickyVM
