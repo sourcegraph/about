@@ -221,4 +221,4 @@ We want to hear what you think about Sourcegraph and the new updates in 3.16. Po
 
 Any questions about Sourcegraph? Get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com). We look forward to hearing from you!
 
-From the [entire Sourcegraph team](https://about.sourcegraph.com/company/team), happy coding!
+From the [entire Sourcegraph team](https://about.sourcegraph.com/handbook/company/team), happy coding!

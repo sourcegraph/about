@@ -33,4 +33,16 @@ Sourcegraph 3.28 is now available! For this release, we added new security enhan
 
 ## Extensions registry update 
 
+<p>
+  <img src="https://sourcegraphstatic.com/blog/3.28/before_after_extensions_registry_redesign.jpg" width="500" alt="before and after screenshot of the registry redesign">
+</p>
+
 Extensions allow you to connect all your other tools to get functionality like test coverage, 1-click open file in editor, custom highlighting, and information from your other favorite services all in one place on Sourcegraph. The [extensions registry main page](https://sourcegraph.com/extensions?category=All) has a new visual design that better conveys the most useful information about extensions. Individual extension pages now have better information architecture.
+
+## New Code Insights (prototype feature) creation UI
+
+<p><video autoplay loop muted playsinline style="width:600px">
+  <source src="https://sourcegraphstatic.com/blog/3.28/create_new_insight_flow.mp4" type="video/mp4">
+ </video></p>
+
+Code Insights answers high-level questions about your code by analyzing specific regular expressions, languages, or code patterns in your codebase over time. Search-based and language insights now have form fields with suggestions and validations to help you quickly set up your first code insight. To enable Code Insights and create an insight, follow [this new quickstart guide](https://docs.sourcegraph.com/code_insights/quickstart). 

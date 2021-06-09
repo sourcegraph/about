@@ -6,18 +6,18 @@
 
 ## Team
 
-- [List of all Sourcegraph team members](../../company/team/index.md)
+- [List of all Sourcegraph team members](../company/team/index.md)
 
 ### People Ops team members
 
-- [Noemi Mercado](../../../company/team/index.md#noemi-mercado-she-her), Head of People Ops
+- [Noemi Mercado](../company/team/index.md#noemi-mercado-she-her), Head of People Ops
   - Cecily Black, Recruiting Coordinator
-  - [Inés Roitman](https://about.sourcegraph.com/company/team#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
-  - [Cassie Melani](https://about.sourcegraph.com/company/team#cassie-melani-she-her), Teammate Success Manager
+  - [Inés Roitman](https://about.sourcegraph.com/handbook/company/team#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
+  - [Cassie Melani](https://about.sourcegraph.com/handbook/company/team#cassie-melani-she-her), Teammate Success Manager
 
 ## Teammate experience
 
-- [All-remote work](../../company/remote/index.md)
+- [All-remote work](../company/remote/index.md)
 - [Interview process](../talent/hiring/interview_process.md)
 - [Hiring](../talent/hiring/index.md)
 - [Onboarding](onboarding/index.md)
@@ -50,6 +50,9 @@ See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open role
 
 - [Diversity, equity, and inclusion](../communication/dei.md)
 - [Personal Pronouns](personal-pronouns.md)
+
+## Other policies
+
 - [Anti-corruption/anti-bribery](anti-corruption.md)
 
 ## General office information
@@ -63,3 +66,9 @@ See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open role
 **Phone Number:** (650) 273-5591
 
 **DUNS Number:** 117775232
+
+**Tax ID:** For the Tax ID, refer to [Sourcegraph W9](https://drive.google.com/file/d/1sxASpL9AmPiUgMx2qE-yXLtwTlfHGyBW/)
+
+**NAICS code:** 541512
+
+**SIC code:** 7373

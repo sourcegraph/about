@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-go@v2
         with:
           go-version: '1.14.6'
-      - name: docsite check 
+      - name: docsite check
         run: |
           go install github.com/sourcegraph/docsite/cmd/docsite
           docsite check
@@ -21,7 +21,7 @@ jobs:
       - name: install geojsonhint
         run: yarn add @mapbox/geojsonhint@3.0.0
       - name: geojsonhint
-        run: node_modules/.bin/geojsonhint < ./company/team/locations.geojson
+        run: node_modules/.bin/geojsonhint < ./handbook/company/team/locations.geojson
   yarn:
     runs-on: ubuntu-latest
     steps:

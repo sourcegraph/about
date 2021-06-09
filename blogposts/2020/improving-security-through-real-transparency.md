@@ -8,7 +8,7 @@ heroImage: https://sourcegraphstatic.com/blog/transparent-security-tomorrow.png
 published: true
 ---
 
-One of the things that comes with being an open source company is a commitment to transparency.  As an industry, we mostly think about this in terms of [source code](http://github.com/sourcegraph/), and at Sourcegraph we think of this in terms of the [company itself](https://about.sourcegraph.com/company), including [product direction](https://about.sourcegraph.com/direction). I’d like to extend that to security.  In the ideal world, security would be as open as our codebase, even if that ideal is a difficult reality. It might be an audacious idea, but it’s one that’s worth striving for.
+One of the things that comes with being an open source company is a commitment to transparency.  As an industry, we mostly think about this in terms of [source code](http://github.com/sourcegraph/), and at Sourcegraph we think of this in terms of the [company itself](https://about.sourcegraph.com/handbook/company), including [product direction](https://about.sourcegraph.com/handbook/direction). I’d like to extend that to security.  In the ideal world, security would be as open as our codebase, even if that ideal is a difficult reality. It might be an audacious idea, but it’s one that’s worth striving for.
 
 ## Background: Where is the industry today
 

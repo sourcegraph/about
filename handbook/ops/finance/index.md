@@ -7,9 +7,9 @@ The finance & accounting team is responsible for helping Sourcegraph acquire and
 
 ### Members
 
-- [Dan Adler](../../../../company/team/index.md#dan-adler-he-him), VP Operations
-- [Tommy O Donnell](https://about.sourcegraph.com/company/team#tommy-o-donnell-he-him), Manager, Financial Planning & Analysis
-- [Kendrick Morris](../../../../company/team/index.md#kendrick-morris-he-him), Finance & Operations Analyst
+- [Dan Adler](../../company/team/index.md#dan-adler-he-him), VP Operations
+- [Tommy O Donnell](https://about.sourcegraph.com/handbook/company/team#tommy-o-donnell-he-him), Manager, Financial Planning & Analysis
+- [Kendrick Morris](../../company/team/index.md#kendrick-morris-he-him), Finance & Operations Analyst
 
 ### Roles
 
@@ -86,7 +86,7 @@ Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations t
 
 If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
 
-The finance team reviews the AR aging schedule on a monthly basis and assesses customer collectability risk. If an existing customer signs a contract but holds an outstanding bill which the Finance team has deemed a high probability to be uncollectible, the Company will not recognize Expansion IARR until the full amount of the outstanding invoice is paid. 
+The finance team reviews the AR aging schedule on a monthly basis and assesses customer collectability risk. If an existing customer signs a contract but holds an outstanding bill which the Finance team has deemed a high probability to be uncollectible, the Company will not recognize Expansion IARR until the full amount of the outstanding invoice is paid.
 
 ### Booking
 
@@ -115,6 +115,9 @@ Reach out to the [Finance team](#team) for an introduction if needed.
 ### Accounts Payable & Expenses
 
 - [Paying Company bills](payables.md)
-- [Company AP Policy](arr.md)
+- [AP Policy](ap.md)
 - [Submitting an invoice (teammates based outside of US)](invoices.md)
 - [Submitting reimbursable expenses](expenses.md)
+
+### Accounts Receivable
+- [AR Policy](https://docs.google.com/document/d/1tfAL68QSI-ZDqBIIALzY5tVcRk_B8jabpSSAyAK5iGk/edit).

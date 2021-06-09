@@ -8,18 +8,28 @@ The search core team owns all parts of Sourcegraph that map an interpreted searc
 
 ## Team members
 
-- We're hiring a [Product Manager](../../product/roles/index.md#product-manager) ([apply here](https://boards.greenhouse.io/sourcegraph91/jobs/4013257004)) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
-- [Rob Rhyne](../../../company/team/index.md#rob-rhyne) ([Product Designer](../../product/roles/index.md#product-designer))
-- FQ3 [Engineering Manager](../roles.md#engineering-manager), [Loïc Guychard](../../../company/team/index.md#loïc-guychard) acting manager until then. {#search-core-eng}
-    - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
-    - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
-    - [Ryan Hitchman](../../../company/team/index.md#ryan-hitchman)
+- We're hiring a [Product Manager](../../product/roles/index.md#product-manager) ([apply here](https://boards.greenhouse.io/sourcegraph91/jobs/4013257004)) for this role. [Christina Forney](../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
+- [Rob Rhyne](../../company/team/index.md#rob-rhyne) ([Product Designer](../../product/roles/index.md#product-designer))
+- FQ3 [Engineering Manager](../roles.md#engineering-manager), [Loïc Guychard](../../company/team/index.md#loïc-guychard) acting manager until then. {#search-core-eng}
+    - [Keegan Carruthers-Smith](../../company/team/index.md#keegan-carruthers-smith)
+    - [Stefan Hengl](../../company/team/index.md#stefan-hengl-he-him)
+    - [Ryan Hitchman](../../company/team/index.md#ryan-hitchman)
     - FQ3 backend engineer
 
 ## Contact
 
 - #search channel or @search-core on Slack.
 - [`team/search-core` on GitHub](https://github.com/orgs/sourcegraph/teams/search-core)
+
+## Support rotation
+
+The Search Core team has a customer support rotation: each week, one team member will be responsible for fielding questions and requests from Customer Engineering and Customer Support.
+
+The engineer on support rotation can be contacted using the Slack alias `@search-core-support`.
+
+The support rotation can be viewed on Opsgenie: [search core schedule](https://sourcegraph.app.opsgenie.com/teams/dashboard/1cc52380-1d71-420e-9c80-2ccb161c648c/main).
+
+Should an engineer be unable to fulfill support responsibilities for any reason (for example, due to upcoming time off), they should swap with a teammate.
 
 ## Iterations
 

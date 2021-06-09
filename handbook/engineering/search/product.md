@@ -21,16 +21,26 @@ It also owns a subset of features built on top of Sourcegraph search:
 
 ## Team members
 
-- We're hiring a [Product Manager](../../product/roles/index.md#product-manager) ([apply here](https://boards.greenhouse.io/sourcegraph91/jobs/4003912004)) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
-- [Rob Rhyne](../../../company/team/index.md#rob-rhyne) and [Quinn Keast](../../../company/team/index.md#quinn-keast-he-him) ([Product Designers](../../product/roles/index.md#product-designer))
-- [Loïc Guychard](../../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager)) {#search-product-eng} <!-- this anchor is used to render the eng org chart -->
-    - [Rijnard van Tonder](../../../company/team/index.md#rijnard-van-tonder)
-    - [Juliana Peña](../../../company/team/index.md#juliana-peña-she-her)
-    - [Rok Novosel](../../../company/team/index.md#rok-novosel-he-him)
-    - [Camden Cheek](../../../company/team/index.md#camden-cheek-hehim)
+- We're hiring a [Product Manager](../../product/roles/index.md#product-manager) ([apply here](https://boards.greenhouse.io/sourcegraph91/jobs/4003912004)) for this role. [Christina Forney](../../company/team/index.md#christina-forney-she-her) is involved in the meantime to help Loïc with prioritiation decisions. All new requests for this team should be routed through the EM (as acting PM).
+- [Rob Rhyne](../../company/team/index.md#rob-rhyne) and [Quinn Keast](../../company/team/index.md#quinn-keast-he-him) ([Product Designers](../../product/roles/index.md#product-designer))
+- [Loïc Guychard](../../company/team/index.md#loïc-guychard) ([Engineering Manager](../roles.md#engineering-manager)) {#search-product-eng} <!-- this anchor is used to render the eng org chart -->
+    - [Rijnard van Tonder](../../company/team/index.md#rijnard-van-tonder)
+    - [Juliana Peña](../../company/team/index.md#juliana-peña-she-her)
+    - [Rok Novosel](../../company/team/index.md#rok-novosel-he-him)
+    - [Camden Cheek](../../company/team/index.md#camden-cheek-hehim)
     - F.K., starting 2021-05-24
 
 ## Processes
+
+### Support rotation
+
+The search product team has a customer support rotation: each week, one team member will be responsible for fielding questions and requests from Customer Engineering and Customer Support.
+
+The engineer on support rotation can be contacted using the Slack alias `@search-product-support`.
+
+The support rotation can be viewed on Opsgenie: [search product schedule](https://sourcegraph.app.opsgenie.com/teams/dashboard/a1de0c85-2457-4183-9065-91a208be4034/main).
+
+Should an engineer be unable to fulfill support responsibilities for any reason (for example, due to upcoming time off), they should swap with a teammate.
 
 ### Planning
 

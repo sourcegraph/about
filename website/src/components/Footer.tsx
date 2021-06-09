@@ -54,7 +54,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/podcast">Podcast</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="https://info.sourcegraph.com/emergence-of-big-code-2020-survey">Big code survey</Link>
+                                    <a href="https://info.sourcegraph.com/emergence-of-big-code-2020-survey">Big code survey</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,7 +65,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://boards.greenhouse.io/sourcegraph91">Careers</a>
+                                    <a href="https://boards.greenhouse.io/sourcegraph91">Careers - We're Hiring!</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/contact">Contact</Link>
@@ -77,7 +77,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/news">News</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="/company/strategy">Sourcegraph strategy</a>
+                                    <a href="/handbook/company/strategy">Sourcegraph strategy</a>
                                 </li>
                             </ul>
                         </div>

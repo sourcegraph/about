@@ -92,7 +92,7 @@ The last important feature of LSP that I’ll touch upon in this post is extensi
 
 ### The future of Code Intelligence
 
-History has taught us that when it comes to creating technology, it’s overwhelmingly the technologies that save developers time that win. Sourcegraph’s [mission](https://about.sourcegraph.com/company/strategy) revolves around saving developers time. To that end, we’ve invested deeply in Code Intelligence, because we believe it is a huge multiplier of developer productivity and, as a corollary, a multiplier of the overall rate of technological progress.
+History has taught us that when it comes to creating technology, it’s overwhelmingly the technologies that save developers time that win. Sourcegraph’s [mission](https://about.sourcegraph.com/handbook/company/strategy) revolves around saving developers time. To that end, we’ve invested deeply in Code Intelligence, because we believe it is a huge multiplier of developer productivity and, as a corollary, a multiplier of the overall rate of technological progress.
 
 We believe that LSP will bring a new wave of Code-Intelligence-powered editor plugins, IDEs, and developer tools. We hope other companies, organizations, and individuals building tools for programmers will join us in adopting and promoting this standard for the benefit of programmers everywhere.
 

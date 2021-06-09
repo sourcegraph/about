@@ -298,9 +298,6 @@ table {
 @import 'templates/PostTemplate';
 @import 'components/PrismTheme';
 
-body {
-    background: url('/page-bg.svg') repeat;
-}
 .virtual-br::before {
     content: '\A';
 }
