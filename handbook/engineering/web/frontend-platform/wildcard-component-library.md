@@ -14,7 +14,7 @@ What steps to take when one of the teams needs to update or add a component in W
 
 1. The lead designer for the project creates a separate page in the project Figma file with full specification regarding the component (separate from the general project page or general design system files)
 2. The designer initiates the communication between the engineers from the product team and the Frontend Platform Team by marking them as reviewers in the Figma file containing the component specs
-3. Engineers from both teams review the document and plan the implementation work. Both teams can choose engineering leads for the project who will be responsible for communication and progress (higher efficiency and clear ownership).
+3. Engineers from both teams review the document and plan the implementation work. Both teams can choose engineering leads for the project who will be responsible for communication and progress (higher efficiency and clear ownership). The engineering lead should create a proposal for a new component on the [FE Platform Project board](https://github.com/orgs/sourcegraph/projects/144) using [Wildcard proposal template](https://github.com/sourcegraph/sourcegraph/blob/main/.github/ISSUE_TEMPLATE/wildcard_proposal.md).
 4. During the implementation, the FE Platform Team is informed about key milestones and any issues that occur. FE Platform engineers should be asked for a review in any of those key moments.
 5. When the component is ready, the product team should ask for additional reviews from:
   - The lead engineer for this project from the FE Platform Team
