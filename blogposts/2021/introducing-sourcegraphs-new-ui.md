@@ -41,7 +41,7 @@ And now, today––a few short months after beginning the project––we are p
 
 ![improved diff view screenshot](https://sourcegraphstatic.com/blog/redesign/layouts.png)
 
-- Layout factors heavily in the usability of a design. We've improved pages like diff diff views to make them easier to use and to help users quickly find the information they need. 
+- Layout factors heavily in the usability of a design. We've improved pages like diff views to make them easier to use and to help users quickly find the information they need. 
 - Segmentation improves focus. We've neatly wrapped sections of the UI in containers to help users focus on the most important elements.
 
 ## Consistent headers and navigation
