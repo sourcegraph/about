@@ -59,7 +59,7 @@ If the product team after having started working on a feature, identifies in a c
 
 ## Sharing updates to the component system
 To keep other teams informed about the changes to the component system, we should share updates:
-- In the FE Platform Team weekly email
+- In the FE Platform team [status update](../../../leadership.md#status-updates)
 - In the #progress channel
 - In a standalone documentation for the Wildcard Component Library (TODO)
 - In the #component-system-updates channel
