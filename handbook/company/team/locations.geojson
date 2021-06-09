@@ -899,7 +899,7 @@
           33.84874817060767
         ]
       }
-   },
+    },
     {
       "type": "Feature",
       "properties": {
@@ -910,7 +910,20 @@
         "coordinates": [
           -117.92734265327452,
           33.673845318635735
-         ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nate Maynard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.99771118164062,
+          39.75471275080197
+        ]
       }
     }
   ]
