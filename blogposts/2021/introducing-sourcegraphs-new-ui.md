@@ -25,35 +25,35 @@ And now, today––a few short months after beginning the project––we are p
 
 ## Refined search results design
 
-![refined search results design screenshot](https://sourcegraphstatic.com/blog/redesign/Search%20results.png)
+![refined search results design screenshot](https://sourcegraphstatic.com/blog/redesign/redesign_search_results.png)
 
 - Searching code can require writing code. The redesigned search bar is 100% width at all times to provide the space required to be expressive with queries.
 - We want to reduce the requirement to learn query syntax. The new results sidebar provides a home for features like dynamic filters that help users discover search syntax without referencing documentation. _It also provides room for new features, so watch this space._
 
 ## Renewed focus on code
 
-![focus on code screenshot](https://sourcegraphstatic.com/blog/redesign/code.png)
+![focus on code screenshot](https://sourcegraphstatic.com/blog/redesign/redesign_code.png)
 
 - Readability of code is paramount. To facilitate that, we’ve reduced non-essential UI elements to provide greater focus on the code itself.
 - Complicated interfaces can cause fatigue, so we've reduced UI elements overall and positioned the most important items so they’re unobtrusive and live exactly where they are needed.
 
 ## Improved layouts
 
-![improved diff view screenshot](https://sourcegraphstatic.com/blog/redesign/layouts.png)
+![improved diff view screenshot](https://sourcegraphstatic.com/blog/redesign/redesign_layouts.png)
 
 - Layout factors heavily in the usability of a design. We've improved pages like diff views to make them easier to use and to help users quickly find the information they need. 
 - Segmentation improves focus. We've neatly wrapped sections of the UI in containers to help users focus on the most important elements.
 
 ## Consistent headers and navigation
 
-![new campaign headers screenshot](https://sourcegraphstatic.com/blog/redesign/headers.png)
+![new campaign headers screenshot](https://sourcegraphstatic.com/blog/redesign/redesign_headers.png)
 
 - Sourcegraph is rapidly becoming more than code search. A new global navigation provides immediate discoverability and access to current and future functionality.
 - Consistency improves usability. We've standardized headers to orient users and provide all available options in a single location.
 
 ## Promoting extensibility
 
-![exntensions redesign screenshot](https://sourcegraphstatic.com/blog/redesign/extensions.png)
+![exntensions redesign screenshot](https://sourcegraphstatic.com/blog/redesign/redesign_extensions.png)
 
 Everything you know about your code can live in one place. We've brought the extension registry back to the main navigation and improved its design and navigation to help you find addons that merge your data, other tools, and code into a single pane of view... and to promote extensions you've built.
 
