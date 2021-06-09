@@ -9,35 +9,22 @@ Wildcard Component Library is a comprehensive collection of reusable, design-app
 - Other product teams should feel empowered to make changes and create components by themselves
 
 ## Changing and creating components
-### Process of changing or creating a component by a product team
 What steps to take when one of the teams needs to update or add a component in WCL?
-
-1. The lead designer for the project creates a separate page in the project Figma file with full specification regarding the component (separate from the general project page or general design system files)
-2. The designer initiates the communication between the engineers from the product team and the Frontend Platform Team by marking them as reviewers in the Figma file containing the component specs
-3. Engineers from both teams review the document and plan the implementation work. Both teams can choose engineering leads for the project who will be responsible for communication and progress (higher efficiency and clear ownership). The engineering lead should create a proposal for a new component on the [FE Platform Project board](https://github.com/orgs/sourcegraph/projects/144) using [Wildcard proposal template](https://github.com/sourcegraph/sourcegraph/blob/main/.github/ISSUE_TEMPLATE/wildcard_proposal.md).
-4. During the implementation, the FE Platform Team is informed about key milestones and any issues that occur. FE Platform engineers should be asked for a review in any of those key moments.
-5. When the component is ready, the product team should ask for additional reviews from:
-  - The lead engineer for this project from the FE Platform Team
-  - The FE Platform Team Designer
-6. When changes are approved, the product team merges the PR
-
-Important: we would like to avoid the situation where the FE Platform Team is engaged only at the end of the process or doesn’t know about the changes at all.
-
-### Process of changing or creating a component by the FE Platform Team or the Design Team
-It is possible that the Design Team or the FE Platform Team themselves initiate changes to the WCL. Here are the steps to take:
-
-1. The designer creates a Figma file with full specification regarding the component (separate from the general project file or general design system files)
+1. The designer creates a Figma file with full specification regarding the component (separate from the general project file or general design system files) and a Github issue for a new component to track the implementation progress
 2. The designer initiates the cross-team communication by marking as reviewers:
-  - The FE Platform Team engineers
-  - At least one other Design Team member
-  - Members of other teams affected by the changes 
-3. After all the reviews are completed, the FE Platform Team plans the implementation
-4. During the implementation, the FE Platform Team stays in constant communication with the Design Team members engaged in the project. Asks for review, if necessary.
-5. The FE Platform Team should ask for final reviews from:
-  - The FE Platform Team members
-  - The Design Team members engaged in the project
-6. Members of other teams engaged by the project and affected by the changes 
-7. When changes are approved, the FE Platform Team team merges the PR
+- Members of the engineering team who will be implementing the work
+- At least one other Design Team member
+- Members of other teams affected by the changes
+3. After all the reviews are completed, the engineering team plans the implementation. The engineering lead should create a proposal for a new component on the [FE Platform Project board](https://github.com/orgs/sourcegraph/projects/144) using [Wildcard proposal template](https://github.com/sourcegraph/sourcegraph/blob/main/.github/ISSUE_TEMPLATE/wildcard_proposal.md).
+4. During the implementation, the engineering team stays in constant communication with the Design Team members engaged in the project. Asks for review, if necessary.
+5. The engineering team should ask for final reviews from:
+- Members of the FE Platform team
+- Members of the engineering team implementing the change
+- Members of other teams affected by the changes (if applicable)
+- Members of the Design Team engaged in the project
+6. When changes are approved, the engineering team merges the PR
+
+Important: we would like to avoid the situation where the FE Platform Team is engaged only at the end of the process or doesn’t know about the changes at all. During the implementation, please inform the FE Platform Team is about key milestones and any issues that occur. FE Platform engineers should be asked for a review in any of those key moments.
 
 If the product team after having started working on a feature, identifies in a code review that a part of the UI should be extracted into a shared component (e.g., "This is very similar to the widget used in XYZ...can we make it a shared component?"), do not block the PR and kick off the "changing or creating a component" flow asynchronously.
 
