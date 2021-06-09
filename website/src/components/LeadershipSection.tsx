@@ -86,6 +86,15 @@ const LEADERS: {
             twitter: 'https://twitter.com/srcgraph'
         },
         {
+            name: 'Debbie Johnstone',
+            image: '/staff/avatar-debbie.jpg',
+            title: 'VP People',
+            bio: '/handbook/company/team#debbie-johnstone-she-her',
+            github: 'https://github.com/sourcegraph',
+            linkedin: 'https://www.linkedin.com/in/debbie-johnstone-58901a1b/',
+            twitter: 'https://twitter.com/srcgraph'
+        },
+        {
             name: 'Katerina Nikolova',
             image: '/staff/avatar-katerina.jpg',
             title: 'Chief of Staff',
