@@ -53,7 +53,7 @@ And now, today––a few short months after beginning the project––we are p
 
 ## Promoting extensibility
 
-![exntensions redesign screenshot](https://sourcegraphstatic.com/blog/redesign/exntensions.png)
+![exntensions redesign screenshot](https://sourcegraphstatic.com/blog/redesign/extensions.png)
 
 Everything you know about your code can live in one place. We've brought the extension registry back to the main navigation and improved its design and navigation to help you find addons that merge your data, other tools, and code into a single pane of view... and to promote extensions you've built.
 
