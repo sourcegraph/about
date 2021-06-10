@@ -12,9 +12,9 @@ Wildcard Component Library is a comprehensive collection of reusable, design-app
 What steps to take when one of the teams needs to update or add a component in WCL?
 1. The designer creates a Figma file with full specification regarding the component (separate from the general project file or general design system files) and a Github issue for a new component to track the implementation progress
 2. The designer initiates the cross-team communication by marking as reviewers:
-- Members of the engineering team who will be implementing the work
-- At least one other Design Team member
-- Members of other teams affected by the changes
+   - Members of the engineering team who will be implementing the work
+   - At least one other Design Team member
+   - Members of other teams affected by the changes
 3. After all the reviews are completed, the engineering team plans the implementation. The engineering lead should create a proposal for a new component on the [FE Platform Project board](https://github.com/orgs/sourcegraph/projects/144) using [Wildcard proposal template](https://github.com/sourcegraph/sourcegraph/blob/main/.github/ISSUE_TEMPLATE/wildcard_proposal.md).
 4. During the implementation, the engineering team stays in constant communication with the Design Team members engaged in the project. Asks for review, if necessary.
 5. The engineering team should ask for final reviews from:
