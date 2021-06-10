@@ -4,26 +4,21 @@
 - [Branded swag](#branded-swag)
 - [How to send a gift](#how-to-send-a-gift)
 - [Available inventory](#available-inventory)
-- [Shipping costs](#shipping-charges)
 - [Swag costs calculator](https://docs.google.com/spreadsheets/d/12qS2knJ75V5EXcm2Pjk9NKo7naJgMM9M_MOxAvyW-Oc/edit#gid=0)
 
-
-## Gifting Guidelines
-
-Welcome to our Gifting Guidelines Page! Have a request for custom swag? Use the [Swag Request Form](https://app.asana.com/0/1200419124213353/list) 
-
-*Note that adding new items to out inventory can take around 8+ weeks if a custom design is being created and applied to the item vs our standard branding and logo applications*
 
 
 ## Branded swag
 
-Branded swag are lower-cost items with our logo on them 
+Welcome to our Gifting Guidelines Page!:gift: Have a request for custom swag? Use the [Swag Request Form](https://app.asana.com/0/1200419124213353/list).
 
-**Vendor:** Printfection
+>Note that adding new items to out inventory can take around 8+ weeks if a custom design is being created and applied to the item vs our standard branding and logo applications.
 
-Our custom swag includes socks, stickers, notebooks, t-shirts and tumblers. It is a great way to thank someone for advocating for Sourcegraph in their company, or to recognize something special that they have done for us or our community. These items are available through Printfection with weight- and location-based global shipping.
+Branded swag are lower-cost items with our logo on them. It includes socks, stickers, notebooks, t-shirts and tumblers. It is a great way to thank someone for advocating for Sourcegraph in their company, or to recognize something special that they have done for us or our community. These items are available through Printfection with weight- and location-based global shipping.
 
 *Note that the items in our inventory are the same ones found in our new hire kits (look for link), but not all of the items are available as user or customer swag due to cost and inventory limits.*
+
+Our swag vendor is [Printfection](https://www.printfection.com/swag/)
 
 
 ### Use cases
@@ -46,15 +41,15 @@ Our custom swag includes socks, stickers, notebooks, t-shirts and tumblers. It i
 ## How to send a gift 
 
 1. Fill in the Swag Requests form. You will need:
-  -Name of the recipient
-  
+    
+    - [x] Name of the recipient
     - [x] Email of the recipient
-  
+    - [x] A reason for the request (e.g: Participated as a guest speaker on our web series)  
     - [x] Personal message from you to them
-  
     - [x] Country of destination (not strictly necessary but preferred)  
+    
   
-2. The Brand team will review  your request. Note: all requests be reviewed on a case-by-case basis factoring in current inventory levels and use cases
+2. The Brand team will review  your request. *Note: all requests be reviewed on a case-by-case basis factoring in current inventory levels and use cases*
 3. Approved requests will be sent to Printfection every Thursday. 
 4. Your recipient will receive an email giveaway link from brand@sourcegraph.com to choose their gift and enter their own shipping info
 
@@ -68,13 +63,14 @@ Our custom swag includes socks, stickers, notebooks, t-shirts and tumblers. It i
 | Sourcegraph Notebook                   |     $4.85     |   
 | Dress socks                            |     $16.07    |
 | Fuzzy socks                            |     $5.25     |
-| Men's/Unisex t-shirt                   |      $10      |
-| Women's t-shirt                        |      $10      |
+| Men's/Unisex t-shirt                   |      $10      | 
+| Women's t-shirt *(available soon)*     |      $10      | 
+
 
 
 ## Shipping charges
 
-Printfection’s shipping costs are determined by weight and destination. To get an estimate of total cost you can use our  [Swag Cost Calculator](https://docs.google.com/spreadsheets/d/12qS2knJ75V5EXcm2Pjk9NKo7naJgMM9M_MOxAvyW-Oc/edit#gid=0).
+Printfection’s shipping costs are determined by weight and destination. To get an estimate of total cost you can use our [Swag Cost Calculator](https://docs.google.com/spreadsheets/d/12qS2knJ75V5EXcm2Pjk9NKo7naJgMM9M_MOxAvyW-Oc/edit#gid=0)
 
 Learn more about shipping and fulfillment costs in [this article](https://help.printfection.com/hc/en-us/articles/204467034-Example-shipping-fulfillment-costs).
 
