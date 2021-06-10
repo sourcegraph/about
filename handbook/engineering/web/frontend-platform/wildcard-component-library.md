@@ -24,7 +24,7 @@ What steps to take when one of the teams needs to update or add a component in W
 - Members of the Design Team engaged in the project
 6. When changes are approved, the engineering team merges the PR
 
-Important: we would like to avoid the situation where the FE Platform Team is engaged only at the end of the process or doesn’t know about the changes at all. During the implementation, please inform the FE Platform Team is about key milestones and any issues that occur. FE Platform engineers should be asked for a review in any of those key moments.
+Important: we would like to avoid the situation where the FE Platform Team is engaged only at the end of the process or doesn’t know about the changes at all. During the implementation, please inform the FE Platform Team about key milestones and any issues that occur. FE Platform engineers should be asked for a review in any of those key moments.
 
 If the product team after having started working on a feature, identifies in a code review that a part of the UI should be extracted into a shared component (e.g., "This is very similar to the widget used in XYZ...can we make it a shared component?"), do not block the PR and kick off the "changing or creating a component" flow asynchronously.
 
