@@ -18,10 +18,10 @@ What steps to take when one of the teams needs to update or add a component in W
 3. After all the reviews are completed, the engineering team plans the implementation. The engineering lead should create a proposal for a new component on the [FE Platform Project board](https://github.com/orgs/sourcegraph/projects/144) using [Wildcard proposal template](https://github.com/sourcegraph/sourcegraph/blob/main/.github/ISSUE_TEMPLATE/wildcard_proposal.md).
 4. During the implementation, the engineering team stays in constant communication with the Design Team members engaged in the project. Asks for review, if necessary.
 5. The engineering team should ask for final reviews from:
-- Members of the FE Platform team
-- Members of the engineering team implementing the change
-- Members of other teams affected by the changes (if applicable)
-- Members of the Design Team engaged in the project
+   - Members of the FE Platform team
+   - Members of the engineering team implementing the change
+   - Members of other teams affected by the changes (if applicable)
+   - Members of the Design Team engaged in the project
 6. When changes are approved, the engineering team merges the PR
 
 Important: we would like to avoid the situation where the FE Platform Team is engaged only at the end of the process or doesn’t know about the changes at all. During the implementation, please inform the FE Platform Team about key milestones and any issues that occur. FE Platform engineers should be asked for a review in any of those key moments.
