@@ -51,7 +51,7 @@ Code Insights answers high-level questions about your code by analyzing specific
 
 ### Introducing bulk actions
 
-Managing large number of changesets requires a lot of manual work. Having to manually comment, close or merge hundreds of changesets takes time: spending 15 seconds adding a comment on 500 changesets manually would result in 2 hours of work :exploding_head: (and killing your motivation for the day).
+Managing large number of changesets requires a lot of manual work. Having to manually comment, close or merge hundreds of changesets takes time: spending 15 seconds adding a comment on 500 changesets manually would result in 2 hours of work (and killing your motivation for the day).
 
 Bulk actions allow users to automate taking an action on many changesets at a time. In this release, we are introducing a first bulk action: **comments**. Common use cases include:
 - nudge repository owners to merge starving changesets "This batch change is now 54% merged, consider merging yours!"
