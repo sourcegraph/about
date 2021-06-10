@@ -58,7 +58,7 @@ We have two week cycles starting on Wednesdays. We do a sync planning the day be
 
 ### Tagging teammates
 
-Feel free to tag `@core-app` on Slack or anyone directly as and when required. It is acceptable to tag people to get their attention. On the contrary it is also acceptable to turn off your notifications when you want to focus and do not want to be interrupted .
+Feel free to tag `@core-app` on Slack or anyone directly as and when required. It is acceptable to tag people to get their attention. On the contrary it is also acceptable to turn off your notifications when you want to focus and do not want to be interrupted.
 
 ## Members
 
