@@ -316,8 +316,7 @@ A quick crash course for anyone unfamiliar:
     </td>
     <td>
       <ul>
-        <li>Make the EM aware of any career</li>
-        <li>related conversations that come up when working with engineers directly</li>
+        <li>Make the EM aware of any career-related conversations that come up when working with engineers directly</li>
         <li>Provide continuous insight to EM on what areas engineers excel in and what areas they can grow in</li>
       </ul>
     </td>
