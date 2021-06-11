@@ -60,8 +60,8 @@ export default class Pricing extends React.Component<any, any> {
 
                                 <p>
                                     Fill out the form or tweet us{' '}
-                                    <a href="https://twitter.com/srcgraph" target="_blank">
-                                        @srcgraph
+                                    <a href="https://twitter.com/sourcegraph" target="_blank">
+                                        @sourcegraph
                                     </a>
                                     , and we'll get back to you ASAP on how to get started!
                                 </p>
