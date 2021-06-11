@@ -107,4 +107,11 @@ We're constantly iterating on what the best version of our Sourcegraph handbook 
 
 ## Handbook site troubleshooting
 
-If the handbook is loading slowly, deleting the pod sometimes helps. 
+If the handbook is loading slowly, deleting the pod sometimes helps. It occurs after e.g. ~16 days of the pod being alive:
+
+```
+$ kubectl get pods -A | grep about
+default         about-sourcegraph-com-6d9b8dc9d5-llmh6                      1/1     Running     0          16d
+$ kubectl -n default delete pod about-sourcegraph-com-6d9b8dc9d5-llmh6
+pod "about-sourcegraph-com-6d9b8dc9d5-llmh6" deleted
+```
