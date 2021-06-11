@@ -223,7 +223,7 @@ export default ((props: any) => (
             <ContentSection color="black" className="py-5">
                 <div className="row justify-content-md-center">
                     <div className="col-md-3 text-center">
-                        <a href="https://twitter.com/srcgraph" target="_blank">
+                        <a href="https://twitter.com/sourcegraph" target="_blank">
                             <TwitterIcon size={72} />
                         </a>
                     </div>
