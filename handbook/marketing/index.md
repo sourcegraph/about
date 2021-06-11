@@ -14,6 +14,7 @@
 - [Content Marketing](content.md)
     - [Creating blog posts](creating_blog_posts.md)
     - [Editing blog posts](creating_blog_posts.md#editing-blog-posts)
+- [Demand Gen](demandgen.md)
 - [Developer Education](education.md)
 
 - Community Relations
