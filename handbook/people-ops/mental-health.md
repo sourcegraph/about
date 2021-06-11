@@ -84,3 +84,7 @@ ____________________________________________________________________________
 
   
 If at any point you feel as though you or your teammate is in crisis or dealing with a mental health issue which you are unsure of how to deal with, please reach out to any member of the People Ops team immediately either on Slack or confidentially at People-ops@sourcegraph.com. We will work with you to assess the situation and triage it accordingly with proper resources and support. 
+
+
+
+EXAMPLE EDIT FOR PR DEMO
