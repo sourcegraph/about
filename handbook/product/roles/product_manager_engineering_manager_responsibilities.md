@@ -185,8 +185,7 @@ A quick crash course for anyone unfamiliar:
         <li>Prioritize design requirements for future iterations</li>
         <li>Collaborate on user research requirements</li>
         <li>Working alongside designers to prototype new features</li>
-        <li>Work alongside designers in team</li>
-        <li>related design reviews</li>
+        <li>Work alongside designers in team-related design reviews</li>
       </ul>
     </td>
     <td>
