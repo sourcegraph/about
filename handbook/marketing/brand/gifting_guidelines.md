@@ -14,28 +14,23 @@ Welcome to our Gifting Guidelines Page!:gift: Have a request for custom swag? Us
 
 >Note that adding new items to out inventory can take around 8+ weeks if a custom design is being created and applied to the item vs our standard branding and logo applications.
 
-Branded swag are lower-cost items with our logo on them. It includes socks, stickers, notebooks, t-shirts and tumblers. It is a great way to thank someone for advocating for Sourcegraph in their company, or to recognize something special that they have done for us or our community. These items are available through Printfection with weight- and location-based global shipping.
+>Make sure that you comply with our [anti-corruption/anti-bribery policy](https://about.sourcegraph.com/handbook/people-ops/anti-corruption) and reach out to #legal slack channel or legal@sourcegraph.com with any questions. 
 
-*Note that the items in our inventory are the same ones found in our new hire kits (look for link), but not all of the items are available as user or customer swag due to cost and inventory limits.*
+**Branded swag** are lower-cost items with our logo on them. This includes socks, stickers, notebooks, t-shirts and tumblers. It is a great way to thank someone for advocating for Sourcegraph in their company, or to recognize something special that they have done for us or our community. These items are available through [Printfection](https://www.printfection.com/swag/) with weight- and location-based global shipping.
 
-Our swag vendor is [Printfection](https://www.printfection.com/swag/)
+All items in our inventory are the same ones found in our new hire kits, but not all of the items are available as user or customer swag due to cost and inventory limits.
+
 
 
 ### Use cases
 
--As a thank you gift for attending an event
-
--To strengthen the bond after a demo
-
--Customers’ who we’d like to make a personal connection with
-
--As a welcome gift once a buyer closes a large sale
-
--To active community members that have contributed actionable, useful feedback on Sourcegraph products
-
--Someone who has advocated for Sourcegraph’s adoption at their current company
-
--Those who participated in a Sourcegraph-hosted event as a guest or speaker (virtual chat, panel discussion, podcast, web series guest, and similar)
+- As a thank you gift for attending an event
+- To strengthen the bond after a demo
+- Customers’ who we’d like to make a personal connection with
+- As a welcome gift once a buyer closes a large sale
+- To active community members that have contributed actionable, useful feedback on Sourcegraph products
+- Someone who has advocated for Sourcegraph’s adoption at their current company
+- Those who participated in a Sourcegraph-hosted event as a guest or speaker (virtual chat, panel discussion, podcast, web series guest, and similar)
 
 
 ## How to send a gift 
@@ -74,7 +69,7 @@ Printfection’s shipping costs are determined by weight and destination. To get
 
 Learn more about shipping and fulfillment costs in [this article](https://help.printfection.com/hc/en-us/articles/204467034-Example-shipping-fulfillment-costs).
 
-*Import Fees* 
+###Import Fees 
 
 Printfection offers international shipping to 213 countries, APO/FPO military addresses, and US territories. The import fees are paid for by Printfection when possible; however, there are times recipients may be required to cover some of the duties or taxes. Please read more about international shipping [here](https://help.printfection.com/hc/en-us/articles/201462224-International-shipping#:~:text=Printfection%20offers%20international%20shipping%20to,military%20addresses%2C%20and%20US%20territories).
 
