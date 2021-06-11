@@ -57,7 +57,7 @@ A quick crash course for anyone unfamiliar:
         <li>Speak to customers about upcoming features</li>
         <li>Promote new features internally in the company</li>
         <li>Communicate with marketing + sales around upcoming or recent feature releases</li>
-        <li>Reach out to customers when heavilyrequested features are released</li>
+        <li>Reach out to customers when heavily requested features are released</li>
         <li>Make sure the CE + Sales team understands and is excited to sell new features</li>
       </ul>
     </td>
