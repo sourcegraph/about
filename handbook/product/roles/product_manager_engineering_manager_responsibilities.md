@@ -39,7 +39,7 @@ the content per cell is quite large (markdown only has one line per cell).
 
 A quick crash course for anyone unfamiliar:
 
-<table>...<table>: self-explanatory
+<table>...</table>: self-explanatory
 <tr>...</tr>: table row
 <th>...</th>: table header (cell)
 <td>...</td>: table data (cell)
