@@ -63,7 +63,7 @@ We work alongside just about every team at Sourcegraph. Here is how we add value
 
 
 
-## OOO Protocols
+## OOO/Vacation/PTO Protocols
 
 Prior to taking time off, CEs should:
 
@@ -178,4 +178,3 @@ If a CE authors a Sourcegraph extension then initially CE are the ones that supp
 Should product feedback / requests be identified as part of this project work, such as changes needed to our extension API or batch changes product to support use cases, then CE will raise that to product following the normal process.
 
 If a CE-authored extension goes beyond the scope of a CE’s ability to maintain it and we need official product/eng support for an extension, then CE leadership will raise that request to Eng and Product leadership for consideration. This request and approval is required before the project is initiated.
-
