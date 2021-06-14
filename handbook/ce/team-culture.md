@@ -115,7 +115,7 @@ We believe that this is the exact moment in our journey to take such a risk and 
 We envision our CE team being able to continue building and fostering relationships with developer users and champions at our prospects and customers, continue serving as the technical experts during the sales cycle and helping enable our customers throughout our journey together (from the very first meeting and every subsequent meeting thereafter), while being able to impact and deliver cross-functional, cross-customer projects and establish a new strategic customer focus.
 
 ##### What we mean by cross-functional, cross-customer projects
-A project-based focused falls into two categories:
+Project-based work falls into two categories:
 1. internal projects partnering with cross-functional stakeholders on relevant teams to create collateral, tools, and / or content that will benefit our teams and our customers
 2. external projects specific to one or more customer-stated needs that either solve a problem or help our champions grow usage internally
 
