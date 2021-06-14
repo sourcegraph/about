@@ -99,10 +99,6 @@ OR
 
 Title/role includes developer productivity, developer experience, API services, distinguished eng, platform engineer, director+ eng
 
-AND
-
-Company has 50+ devs
-
 ### Target Account
 
 Target Accounts are prospective customer accounts that the AE/SDR has specifically identified as priority accounts for outbound prospecting efforts.
