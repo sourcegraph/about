@@ -44,6 +44,6 @@ In slack, the #red-accounts channel has been created so that when the Customer H
 #### Roles and Responsibilities
 The CE will monitor the Customer Health dashboard and where appliable update the Customer Health field on the Salesforce Account record to red.
 
-Should an AE or CE feel that an account, which isn't designated as red via the health dashboard, is in fact red for any reason (eg a champion leaves, etc) they should align, and the CE should update the Salesforce Account record to red.
+Should an AE or CE feel that an account which isn't designated as red via the health dashboard, is in fact red for any reason (eg a champion leaves, etc) they should align, and the CE should update the Salesforce Account record to red.
 
 Both the AE and CE are responsible for participating in the creation of the action plan, and overseeing the action plan through to resolution.
