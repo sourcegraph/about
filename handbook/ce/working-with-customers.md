@@ -1,4 +1,4 @@
-# Customer Engineering :: Working with Customers
+# Customer Engineering: Working with Customers
 
 This page captures best practices, playbooks, and processes for how CEs should work with customers.
 
