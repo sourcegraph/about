@@ -3,7 +3,7 @@
 ## The Talent team 
 Each hiring managers has an assigned recruiter for their hiring needs  
 
-- [Devon Coords](../../../company/team/index.md#devon-coords-she-her), Senior Technical Recruiter, Team Lead
+- [Devon Coords](../../company/team/index.md#devon-coords-she-her), Senior Technical Recruiter, Team Lead
     - Engineering 
     - Product 
     - Customer Engineering 
