@@ -1,6 +1,8 @@
 // stylelint-disable declaration-property-unit-whitelist
 // stylelint-disable selector-max-id
 
+@use "sass:math";
+
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/mixins';
 
@@ -203,9 +205,9 @@ img.icon-inline,
     // TODO find a better way to scale icons that is not proportional to the font size
     // 14px font size -> 20px icon size
     // stylelint-disable-next-line declaration-property-unit-whitelist
-    width: (20em / 14);
+    width: math.div(20em, 14);
     // stylelint-disable-next-line declaration-property-unit-whitelist
-    height: (20em / 14);
+    height: math.div(20em, 14);
     // Match color of the text
     fill: currentColor;
 }

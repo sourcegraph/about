@@ -8,5 +8,3 @@ declare const graphql: (query: TemplateStringsArray) => void
 declare module '*.png'
 declare module '*.gif'
 // declare module '*.svg'
-
-declare module 'gatsby-image'
