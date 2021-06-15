@@ -34,7 +34,7 @@ published: true
 <div class="flex flex-column flex-row-ns">
     <div class="flex-grow-1">
         <p class="ma0">
-        Today we have two new partners who share our vision and $20 million in Series A funding led by Redpoint Ventures along with Goldcrest Capital to help us on our path toward our <a href="https://about.sourcegraph.com/company/strategy">Sourcegraph master plan</a>.
+        Today we have two new partners who share our vision and $20 million in Series A funding led by Redpoint Ventures along with Goldcrest Capital to help us on our path toward our <a href="https://about.sourcegraph.com/handbook/company/strategy">Sourcegraph master plan</a>.
         </p>
         <p>
         Scott Raney of Redpoint Ventures and Dan Friedland of Goldcrest Capital have joined the Board of Directors and share our vision of a world where everyone—not just the ones working at the half-dozen dominant tech companies—can create products using the best technology. Scott, who backed Twilio, Stripe and Heroku, brings deep knowledge of scaling developer-focused products and first-hand experience helping teams build substantial businesses in the process. Dan brings knowledge around building transformative technology that solves real problems for businesses across all industries.
@@ -54,7 +54,7 @@ published: true
 
 <div class="bg-light-11 br3 mv4 pa3 ph4">
     <p>
-        Our new funding will help us continue executing on our company roadmap, what we call our <a href="https://about.sourcegraph.com/company/strategy">Sourcegraph master plan</a>. Our goals are clear:
+        Our new funding will help us continue executing on our company roadmap, what we call our <a href="https://about.sourcegraph.com/handbook/company/strategy">Sourcegraph master plan</a>. Our goals are clear:
         <ul>
         <li>to make basic code intelligence ubiquitous,</li>
         <li>make code review continuous and intelligent,</li>

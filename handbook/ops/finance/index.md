@@ -2,21 +2,14 @@
 
 The finance & accounting team is responsible for helping Sourcegraph acquire and allocate resources optimally, plan for the future, track progress and execution, and measure results.
 
-- [Sources of truth](#sources-of-truth)
-- [ARR tracking and the monthly closing process](arr.md)
-- [Paying bills](payables.md)
-- [Submitting an invoice](invoices.md)
-- [Expenses](expenses.md)
-
 ## Team
 
-We are hiring for the finance & accounting team! See all [open positions](https://boards.greenhouse.io/sourcegraph91).
 
 ### Members
 
-- [Dan Adler](../../../../company/team/index.md#dan-adler-he-him), VP Operations
-- [Tommy O Donnell](https://about.sourcegraph.com/company/team#tommy-o-donnell-he-him), Manager, Financial Planning & Analysis
-- [Kendrick Morris](../../../../company/team/index.md#kendrick-morris-he-him), Finance & Operations Analyst
+- [Dan Adler](../../company/team/index.md#dan-adler-he-him), VP Operations
+- [Tommy O Donnell](https://about.sourcegraph.com/handbook/company/team#tommy-o-donnell-he-him), Manager, Financial Planning & Analysis
+- [Kendrick Morris](../../company/team/index.md#kendrick-morris-he-him), Finance & Operations Analyst
 
 ### Roles
 
@@ -93,7 +86,7 @@ Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations t
 
 If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
 
-The finance team reviews the AR aging schedule on a monthly basis and assesses customer collectability risk. If an existing customer signs a contract but holds an outstanding bill which the Finance team has deemed a high probability to be uncollectible, the Company will not recognize Expansion IARR until the full amount of the outstanding invoice is paid. 
+The finance team reviews the AR aging schedule on a monthly basis and assesses customer collectability risk. If an existing customer signs a contract but holds an outstanding bill which the Finance team has deemed a high probability to be uncollectible, the Company will not recognize Expansion IARR until the full amount of the outstanding invoice is paid.
 
 ### Booking
 
@@ -118,3 +111,16 @@ We also complete a balance sheet review. This review is focused on providing ana
 We work with an outsourced accounting firm named [Officengine](https://officengine.com/). They close the books monthly and produce our financial statements, and provide support in processing payables, preparing taxes, filing corporate registrations, and more.
 
 Reach out to the [Finance team](#team) for an introduction if needed.
+
+### Accounts Payable & Expenses
+
+- [Paying Company bills](payables.md)
+- [AP Policy](ap.md)
+- [Submitting an invoice (teammates based outside of US)](invoices.md)
+- [Submitting reimbursable expenses](expenses.md)
+
+### Accounts Receivable
+- [AR Policy](https://docs.google.com/document/d/1tfAL68QSI-ZDqBIIALzY5tVcRk_B8jabpSSAyAK5iGk/edit)
+
+### Fixed Assets
+- [Fixed Asset Policy](https://docs.google.com/document/d/155anVJgInRempR92LiiOwOIf2JJB5jj3b9ktrp8nznY/edit)

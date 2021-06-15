@@ -27,7 +27,7 @@ Teams track the work they are doing in [GitHub Projects](https://github.com/orgs
    - Code insights
       - [Backend](https://github.com/orgs/sourcegraph/projects/122)
       - [Current work](https://github.com/orgs/sourcegraph/projects/118)
-   - Front end platform 
+   - Front end platform
    - Extensibility
       - [Standalone issues backlog](https://github.com/orgs/sourcegraph/projects/116)
       - [Current iteration](https://github.com/orgs/sourcegraph/projects/118)
@@ -43,14 +43,14 @@ Teams track the work they are doing in [GitHub Projects](https://github.com/orgs
       - [Support](https://github.com/orgs/sourcegraph/projects/153)
       - [Planning board](https://github.com/orgs/sourcegraph/projects/148)
    - Distribution
- 
+
 ## Planning artifacts
 
 Planning requires several artifacts for communicating. This section clarifies how each artifact is used in the planning process.
 
 ### Goals
 
-[Goals](../../company/goals/index.md) align teams with the company's goals. They should be used to make prioritization decisions and help to maintain team direction and focus.
+[Goals](../company/goals/index.md) align teams with the company's goals. They should be used to make prioritization decisions and help to maintain team direction and focus.
 
 ### Roadmap
 
@@ -71,7 +71,7 @@ The project roadmap is:
 - a place for discussions about priority
 - where engineering and product negotiate the next most important thing to work on
 
-Teams should work on the next thing at the top of the roadmap and should not jump around. If there is a desire to work on something lower on the roadmap, that should be elevated during team meetings and the chnage in priority should be discussed. That item should be moved in the roadmap based on the outcome of the discussion.
+Teams should work on the next thing at the top of the roadmap and should not jump around. If there is a desire to work on something lower on the roadmap, that should be elevated during team meetings and the change in priority should be discussed. That item should be moved in the roadmap based on the outcome of the discussion.
 
 ### RFCs
 

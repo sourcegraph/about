@@ -43,7 +43,7 @@ export default ((props: any) => (
                     </p>
                     <p>
                         We have compiled some excellent tips and tricks from fellow{' '}
-                        <a href="https://about.sourcegraph.com/company/team">teammates</a> on how to live your best
+                        <a href="https://about.sourcegraph.com/handbook/company/team">teammates</a> on how to live your best
                         distributed work life!
                     </p>
                     <h2 className="pt-5 pb-1">Tips for working remotely</h2>
@@ -223,7 +223,7 @@ export default ((props: any) => (
             <ContentSection color="black" className="py-5">
                 <div className="row justify-content-md-center">
                     <div className="col-md-3 text-center">
-                        <a href="https://twitter.com/srcgraph" target="_blank">
+                        <a href="https://twitter.com/sourcegraph" target="_blank">
                             <TwitterIcon size={72} />
                         </a>
                     </div>

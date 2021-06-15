@@ -78,7 +78,7 @@ Once we all felt strongly that our product design principles captured our teamâ€
   Sourcegraph is a powerful yet personal tool that exists within a larger workflow. Design for familiar patterns with thoughtful defaults, while embracing personalization and adaptability.
 
 - **Made for everyone**<br />
-  Our purpose is to make it so [everyone can code](/company/strategy#purpose). This demands we make Sourcegraph accessible and useful for all developers through universal, inclusive design.
+  Our purpose is to make it so [everyone can code](/handbook/company/strategy#purpose). This demands we make Sourcegraph accessible and useful for all developers through universal, inclusive design.
 
 - **Gracefully manage complexity**<br />
   Sourcegraph supports complex product requirements, but also empowers users to manage this complexity for their individual needs.

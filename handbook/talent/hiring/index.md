@@ -6,15 +6,14 @@
    - We proactively promote our open positions to many different groups, communities, and networks.
    - If we believe there is a talented set of individuals who are not applying to our team, we will initiate outbound efforts to reach them. We believe there is value in reaching out to candidates who are not directly connected to the social graph of our team today.
 1. We want our hiring process to be fair to all candidates.
-   - Our job descriptions use inclusive language.
+   - We recognize that the way a job description is written can plan a key role in promoting positive Diversity & Inclusion efforts. In fact, countless studies have shown that certain demographics are less likely than others to apply if they don’t meet 100% of the outlined qualifications.  Because of this, our job descriptions focus on the **impact** a candidate will make in the role versus a long list of requirements that have historically impeded underrepresented candidates from applying, resulting in a larger and more diverse candidate pool.  
    - We ask a consistent set of questions to each candidate so that we can objectively measure performance across candidates.
-   - There are two interviewers in each interview so that we can better detect and compensate for misunderstandings during the interview and biases in the written feedback after the interview.
    - Interviewers take written notes during the interview so there is an objective record of the interview that can be referenced when making a hiring decision.
    - All interviewers submit written feedback independently before being able to see feedback from other interviewers. Feedback may not be edited after submission.
    - We maintain a consistent hiring [decision process](#decision-making-process) for all candidates.
 1. Hiring managers own the hiring process for their team.
    - Hiring managers are encouraged to experiment to learn how to improve their hiring process.
-   - The handbook is kept up-to-date with our learnings and current norms.
+   - The handbook is kept up-to-date with our learnings and current norms. If something is missing from the Handbook, please Slack @hiring. 
 
 ## How recruiting interfaces with hiring managers
 
@@ -37,13 +36,13 @@ We will work with recruiters and hiring managers to gain access to the tools the
 Folder for agency tracker and to store contracts here: https://drive.google.com/drive/folders/1I6fpcQEP4ueQP_sjyO2MwuRnujmzti4a
 
 - Who is allowed to engage with external recruiting agencies?
-   - Any hiring managers that need additional support to full-fill hiring needs. Usually if they do not have internal recruiter. Speak with David Li or Noemi Mercado if you have an agency in mind or need help finding one.
+   - Any hiring managers that need additional support to fullfill hiring needs can leverage an external agency. Please contact @hiring or recruiting@sourcegraph.com to make a request.
 - Is it not allowed if we have an internal recruiter for the team?
    - This should be reviewed on a case by case basis to see what is the required candidate pipeline to meet the team’s hiring goals. If internal recruiter(s) are not enough to meet the needs of the team then hiring manager can seek external help.
 - Do we allow exclusive contracts to hire for our roles?
    - Most roles should allow for multiple sources for hiring. Exceptions to this can be for executive level roles.
 - How do agencies submit candidates?
-   - All agencies should submit candidates through our agency portal at a minimum. Please speak to David Li on how to set this up.
+   - All agencies should submit candidates via Greenhouse. Please contact @hiring or recruiting@sourcegraph.com to get an agency added to Greenhouse.
 
 ## Open positions
 
@@ -131,11 +130,15 @@ Here are some other questions that candidates have asked (e.g., in the [CEO inte
 
 ## Making an offer
 
-Once the decision is made to [extend an offer](interview_process.md#outcome) to a candidate, a representative from the People Ops team will reach out to the hiring manager to figure out offer details together.
+Once the decision is made to [extend an offer](interview_process.md#outcome) to a candidate, the following process is followed:
 
-When the offer is approved, the hiring manager and a representative from the People Ops team will schedule a call to walk through a summary of the offer with the candidate. This summary will include an overview of cash compensation (including any commission or bonus plans), benefits, and any equity-based compensation (including a simple calculator for potential future values).
-
-Once the candidate verbally accepts the offer, Sourcegraph legal team will send the official DocuSign with the appropriate contracting or employment agreement(s) for the candidate's role, status, and location. Templates for employees and contractors can be found in the shared [HR/Employees/Contractors Dropbox folder](https://www.dropbox.com/home/Legal/HR%3AEmployees%3AContractors).
+1. The recruiter confirms the offer details with the hiring manager (compensation, equity, level) and submits the offer for approval in Greenhouse.
+   - Offer approval chain: VP, Talent > Hiring Manager > Department Head > VP, Operations.
+2. Once the offer is approved in Greenhouse, the recruiter schedules an offer summary call (attendees: a member of the Talent team, the hiring manager, and the candidate) to walk through the offer details.
+3. Immediately following the offer summary call, the recruiter sends the offer summary via email for the candidate to review.
+4. In addition, the VP, Talent generates and sends the official offer via DocuSign to the candidate for signature.
+5. Once the candidate signs the offer letter, the talent team sends a welcome email and Cc's HR (for onboarding) and the hiring manager.
+6. HR then begins the onboarding process and provides details to set the candidate up for success on their first day!
 
 ## Policy on outreaching to prospective candidates that work at a Sourcegraph customer
 

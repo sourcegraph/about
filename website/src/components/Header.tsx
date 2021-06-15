@@ -29,15 +29,6 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                {/* Temporary banner for batch changes */}
-                {(this.props.isHome || this.props.isBlog) && (
-                    <div className="d-flex align-items-center justify-content-center bg-purple text-white font-weight-bold p-2">
-                        Introducing Batch Changes: Automate large-scale code changes.
-                        <Link to="/batch-changes" className="ml-2 btn btn-sm btn-light">
-                            Learn more
-                        </Link>
-                    </div>
-                )}
                 <nav className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container-lg px-0 px-lg-3">
                         <Link className="navbar-brand header__logo" to="/">
@@ -73,9 +64,19 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             </Link>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
+                                            <Link
+                                                className="header__nav-link nav-link"
+                                                to="/case-studies"
+                                                activeClassName="header__nav-link-active"
+                                            >
+                                                Case Studies
+                                            </Link>
+                                        </li>
+                                        <li className="header__nav-item nav-item" role="presentation">
                                             <a
                                                 className="header__nav-link nav-link"
                                                 href="https://docs.sourcegraph.com"
+                                                target="_blank"
                                             >
                                                 Docs <ExternalLinkIcon className="icon-inline small ml-1" />
                                             </a>

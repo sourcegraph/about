@@ -6,13 +6,13 @@ Our brand is at the root of everything we do. It’s how we behave, communicate,
 
 Everything defined in our brand guide — from typeface, to color, to texture — is carefully chosen to visually represent our brand and help communicate our voice, our vision, and our values. 
 
-Download our complete Brand Guidelines <!-- ***(add link to Hubspot folder)*** -->
+[Download our Brand Guidelines](https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/_Sourcegraph_Brand_Guidelines_2-2.pdf) (.pdf)  
 
-## Logos 
+[Download the Sourcegraph Brand Kit](https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/Sourcegraph%20Brand%20Kit%202.2%20-%20May%202021.zip) (.zip, includes full Brand Guidelines PDF, plus logos, fonts, color palettes, and more)
+
+## Logo usage 
 
 Please use our logos and brand elements appropriately, and only for good things, in compliance with the guidelines linked above. 🖖    
-
-Download all logo formats (.zip folder) <!-- ***(add link to Husbspot folder)*** -->
 
 
 ## Primary Typefaces
@@ -32,11 +32,12 @@ The Source type family was selected for three primary reasons:
 
 [Get Source Code Pro from Google Fonts](https://fonts.google.com/specimen/Source+Code+Pro)  |  [Go to the Source Code Pro repo on GitHub](https://github.com/pauldhunt/SourceCodePro)
 
-<!-- ***Add example*** -->
+
 
 ## Typography
 
-📖 For more information about sizing of headlines for web and print use, plus typographic guidance for body copy, please download our complete Brand Guidelines.  <!-- ***(add link to Hubspot folder)*** -->
+📖 For more information about sizing of headlines for web and print use, plus typographic guidance for body copy, please download our complete Brand Guidelines or our Brand Kit which includes type families.  
+
 
 <!-- ***Replace examples below with extra light or semi bold text and correct sizes*** -->
 
@@ -56,7 +57,7 @@ The Source type family was selected for three primary reasons:
 
 <!-- Fix color boxes before each section*** Why aren't they showing up here like they did on the old page? -->
 
-🌈 Our primary brand colors are listed below in various formats, to ensure accurate representation of our logo when used in digital or printed applications.    
+🌈 Our primary brand colors are listed below in various formats, to ensure accurate representation of our logo when used in digital or printed applications. For the complete brand palette, including ADA guidance and an ASE file for Adobe Creative Cloud, download our Brand Kit linked above.   
 
 **Sourcegraph Sky Blue** 
 
@@ -103,7 +104,7 @@ C:0, M:83, Y:82, K:0
 
 <br>
 
-Please reach out to the Brand team if you have any questions about how or when to utilize the above elements: brand@sourcegraph.com
+Please reach out to the Brand team if you have any questions about how or when to utilize the above elements: [brand@sourcegraph.com](mailto:brand@sourcegraph.com). 🤙   
 
 
 

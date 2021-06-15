@@ -28,3 +28,11 @@
         color: $dark-9;
     }
 }
+
+.board-section {
+    .leadership-section__item {
+        &-image {
+            border-radius: 50%;
+        }
+    }
+}

@@ -20,7 +20,7 @@ With this momentum and the investment, we're improving Sourcegraph to provide un
 *   Collaborating with popular open source projects to enable really good code search for each project
 *   Starting outreach to students and universities so students can better find answers to their code questions and more quickly learn about codebases
 
-We're hiring for many roles (and we're a permanently [all-remote company](https://about.sourcegraph.com/company/remote)):
+We're hiring for many roles (and we're a permanently [all-remote company](https://about.sourcegraph.com/handbook/company/remote)):
 
 *   [Software Engineer - Frontend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-frontend.md)
 *   [Software Engineer - Backend](https://github.com/sourcegraph/careers/blob/master/job-descriptions/software-engineer-backend.md)

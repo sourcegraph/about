@@ -1,13 +1,14 @@
 # Support Team README
 
-Our README expands on our profile in [the company team directory](https://about.sourcegraph.com/company/team) and are meant to help us orient to one another. 
+Our README expands on our profile in [the company team directory](https://about.sourcegraph.com/handbook/company/team) and are meant to help us orient to one another.
 
 * Adeola README
-* Beatrix README
+* Beatrix [README](bee-readme.md)
+* Carl [README](carl-readme.md)
 * Giselle [README](giselle-readme.md)
 * Stompy [README](stompy-readme.md)
 * Warren README
-* Virginia README
+* Virginia [README](virginia-readme.md)
 
 The format, style, order, etc is up to each of us. Just make sure to include the following:
 
