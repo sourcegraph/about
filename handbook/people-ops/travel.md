@@ -43,8 +43,3 @@ Sourcegraph generally holds two company-wide events each year, each fully covere
   - This is *in addition* to the other benefits mentioned on this page.
   - The purpose of defining this as one “trip” (instead of providing a set dollar budget) is to avoid punishing teammates that live far away from other teammates, and who would therefore incur higher airfare costs.
 
-
-## Professional development and education
-
-- Each team member has a $1,000 USD budget for professional development and education, as outlined on our [benefits page](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks#professional-development).
-- This can also be used for travel related to professional development (e.g., for conferences or training sessions).
