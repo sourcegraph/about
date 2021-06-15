@@ -35,19 +35,8 @@ const Index: React.FunctionComponent = (props: any) => (
                 </div>
             </div>
             <CustomerLogosSectionAnimated showButton={true} className="pt-5" />
-            <ContentSection className="py-6 mt-3 d-none d-sm-block">
-                <div className="home__nested-screenshots">
-                    <img
-                        src="/screenshots/code-page-0.png"
-                        className="home__screenshot home__screenshot--main"
-                        alt="Searching for code in the Sourcegraph search bar"
-                    />
-                    <img
-                        src="/screenshots/search-page-1.png"
-                        className="home__screenshot home__screenshot--nested"
-                        alt="Code results from a code search, including code coverage states"
-                    />
-                </div>
+            <ContentSection className="pt-6 mt-3 d-none d-sm-block">
+                <div className="home__screenshot"></div>
             </ContentSection>
 
             <ContentSection className="mt-5 mb-6">
