@@ -10,8 +10,8 @@ The SDR Team (fill in the blanks)
     - [Kevin "Quigs" Quiqley](../company/team/index.md#kevin-quigley-he-him)
   - East Outbound SDRs
     - [Sam Cregg](../company/team/index.md#sam-cregg)
-    - Jenna Pierre (TBA)
-  - Inbound SDRs
+    - Jenna Pierre(TBA)
+  - Inbound SDR
     - [Mark "Markie" Muldez](../company/team/index.md#mark-muldez-he-him)
 
 
