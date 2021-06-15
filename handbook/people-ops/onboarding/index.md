@@ -1,6 +1,6 @@
 # Onboarding
 
-Welcome to Sourcegraph! We are so excited to have you on the team. This page outlines what you'll need to do to get started.
+Here you are! Sourcegraph! We are so excited to have you on the team. This page outlines what you'll need to do to get started.
 
 - [Onboarding buddy program](./buddy-program.md)
 
