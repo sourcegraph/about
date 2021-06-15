@@ -16,6 +16,7 @@
     - [Editing blog posts](creating_blog_posts.md#editing-blog-posts)
 
 - [Demand Gen](demandgen.md)
+    -[Digital Programs](digital_programs.md)
 
 - [Developer Education](education.md)
 - Community Relations
