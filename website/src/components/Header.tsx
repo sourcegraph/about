@@ -19,6 +19,7 @@ export default class Header extends React.Component<HeaderProps, any> {
             isOpen: false,
         }
     }
+
     public toggle(): void {
         this.setState({
             isOpen: !this.state.isOpen,
