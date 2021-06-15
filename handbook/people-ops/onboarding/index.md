@@ -59,7 +59,7 @@ The People Ops team wants to help managers support their teammates better, in or
 
 We also want to support managers in gathering insight of their teammate’s progress and development.
 
-Read about how we do this in [Onboarding Feedback Milestones]()
+Read about how we do this in [Onboarding Feedback Milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-feedback-milestones)
 
 ## Before you start at Sourcegraph
 
