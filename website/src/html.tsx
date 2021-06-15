@@ -18,9 +18,6 @@ export default class HTML extends React.Component<HtmlProps> {
         return (
             <html lang="en">
                 <head>
-                    {/* Add jQuery as a dependency for the Clearbit script */}
-                    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                    
                     {this.props.headComponents}
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
