@@ -1,6 +1,6 @@
 ## Carl Hicks
 
-[Bio on team page](../../company/team/index.md#carl-hicks-he-him)
+[Bio on team page](../company/team/index.md#carl-hicks-he-him)
 
 ### View on Customer Support
 I generally always assume good intent and approach problems with empathy. Our customers have a job they are trying to get done; how do we remove the immediate barrier to allow them to do that. (Bonus points if you can teach them how to unblock themselves in the future.)
