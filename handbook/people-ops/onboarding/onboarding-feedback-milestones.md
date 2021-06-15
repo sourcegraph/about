@@ -33,11 +33,7 @@ During the new teammates’ first week with us, they will find a task in their P
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_OKRs_**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_In this section you’ll learn more about what goals & objectives we’re aiming to achieve in this quarter and this year (for Sourcegraph_
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_and your team), and get guidance on how to understand how you contribute to these and engage with your manager to get an_
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_idea of how you’re tracking._
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_In this section you’ll learn more about what goals & objectives we’re aiming to achieve in this quarter and this year (for Sourcegraph and your team), and get guidance on how to understand how you contribute to these and engage with your manager to get an idea of how you’re tracking._
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_[Here](https://about.sourcegraph.com/company/goals/2021_q2) you can read about our Objectives and key results, and [here](https://about.sourcegraph.com/company/goals/guidelines) you can read about why and how we define them._
 
@@ -45,19 +41,11 @@ During the new teammates’ first week with us, they will find a task in their P
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Feedback Milestones_**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_As part of our high-agency culture, we encourage you to own your career as much as possible - this includes asking for feedback_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_As part of our high-agency culture, we encourage you to own your career as much as possible - this includes asking for feedback on how you’re doing, and giving your manager feedback on what you need from them in order to succeed. You’ll chat to your manager a few times in your first weeks, but we’d like you to set up your first formal feedback milestones in your first three months with us._
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_on how you’re doing, and giving your manager feedback on what you need from them in order to succeed. You’ll chat to your_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_The aim of these meetings is to open a two-way conversation between you and your manager about what’s on track and what needs action, both on your contribution and how well you’re living our shared values._
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_manager a few times in your first weeks, but we’d like you to set up your first formal feedback milestones in your first three months with us._
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_The aim of these meetings is to open a two-way conversation between you and your manager about what’s on track and what_
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_needs action, both on your contribution and how well you’re living our shared values._
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_You must **set up three meetings** with your manager, each of them 30min long, using your Gmail calendar. Remember to include a_
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Zoom call and name each of them as outlined below._
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_You must **set up three meetings** with your manager, each of them 30min long, using your Gmail calendar. Remember to include a Zoom call and name each of them as outlined below._
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**_Feedback milestone 1: (your name)/(your manager’s name)_**
 
