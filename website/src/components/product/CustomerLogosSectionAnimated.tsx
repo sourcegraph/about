@@ -386,7 +386,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
                 ref={innerContainerRef}
             >
                 {(windowWidth > minDeviceWidth) && showButton &&
-                    <a href="/customers">
+                    <a href="/case-studies">
                         <animated.div className={"sourcegraph-cta-button " + buttonClass} style={{ left: x, top: y, transform: scale.interpolate(s => `scale(${s}) translate(-50%, -50%)`) }}>
                             Learn how customers <br /> use Sourcegraph
                     </animated.div>
@@ -425,7 +425,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
             </div>
             {(windowWidth < minDeviceWidth) && showButton &&
                 <div className={"sourcegraph-cta-bottom-container"}>
-                    <a href="/customers" className={"sourcegraph-cta-link-bottom"}>
+                    <a href="/case-studies" className={"sourcegraph-cta-link-bottom"}>
                         <div className={"sourcegraph-cta-button-bottom"}>Learn how customers <br /> use Sourcegraph</div>
                     </a>
                 </div>
