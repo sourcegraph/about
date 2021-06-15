@@ -16,6 +16,10 @@
     - [Editing blog posts](creating_blog_posts.md#editing-blog-posts)
 
 - [Demand Gen](demandgen.md)
+    - [Digital Programs](digital_programs.md)
+    - [Account-Based Experience](abx.md)
+    - [Field Marketing](field_marketing.md)
+    - [Webinars](webinars.md)
 
 - [Developer Education](education.md)
 - Community Relations
