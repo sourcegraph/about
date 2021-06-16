@@ -109,8 +109,8 @@ export default ((props: any) => (
                     <h2 className="display-3">3 Why code search?</h2>
                     <p> Once developers have code search they wonder how they ever lived without it. Being able to quickly find, understand, and fix the code you’re looking for just makes sense when 75% of a developer’s time is spent reading and understanding code. Not surprisingly, this sentiment is quite common and motivating among people who use and build code search tools. Han-Wen Nienhuys, the creator of the Zoekt code search engine, says:</p>
                         
-                        *"Software engineering is more about reading code than writing it, and part of this process is finding the code that you should read."*
-	                                 *– Han-Wen Nienhuys, "[Going beyond grep for searching source code](https://medium.com/hotels-com-technology/going-beyond-grep-for-searching-source-code-zoekt-e7da88ac7b2e)"*
+                    <blockquote>
+                    Software engineering is more about reading code than writing it, and part of this process is finding the code that you should read. – Han-Wen Nienhuys, "[Going beyond grep for searching source code](https://medium.com/hotels-com-technology/going-beyond-grep-for-searching-source-code-zoekt-e7da88ac7b2e)"</blockquote>
                         
                     <p> Developers at local business listing site Yelp [use code search to scan through tens of thousands of lines of code](https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html#shipping-code-faster-with-sourcegraph) before adding new parameters that could unintentionally break something elsewhere on the site. Code search empowers them to ship code fast and more reliably. </p>
                         
