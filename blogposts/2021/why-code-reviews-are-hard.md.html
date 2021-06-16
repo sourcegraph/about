@@ -12,18 +12,16 @@ canonical:  Use to override the canonical link i.e. https://www.fastcompany.com/
 published: true
 ---
 
-Software developers often begin with the same expectation: I am here to write code. Good code. Useful code. After a while, developers realize they read more code than they write.
+As developers, we often begin with the same expectation: I am here to write code. Good code. Useful code. And after a while, we realize that we actually read more code than we write.
 
-Most developers’ core daily duties include reviewing the latest code changes. These code reviews serve many purposes and are generally a good thing. Yet, most developers despise them. This is because code reviews are way more painful than they should be.
+For most of us, our core daily duties include reviewing the latest code changes. These code reviews serve many purposes and are generally a good thing. Yet, most of us despise them. Why? Because code reviews are way more painful than they should be.
 
 Why is this the case? Code reviews are nothing new. We should be able to make them uncomplicated and efficient.
 
-In this article, we explore why code reviews are important, who should conduct them, and what we can do to make them more efficient.
-
 ## Why code reviews are painful
-Software projects are complex, but the right processes, tooling, frameworks, and devices can help tame this complexity. One way to improve code quality, minimizing bugs and security flaws, is conducting code reviews. In this process, reviewers — either predetermined or ad-hoc — look over a set of changes. This is usually a merge request.
+Software projects are complex, but the right processes, tooling, frameworks, and devices can help tame this complexity. One way to improve code quality, minimizing bugs and security flaws, is conducting code reviews. In this process, reviewers — either predetermined or ad-hoc — look over a set of changes. This is usually done in a merge or pull request.
 
-There are flaws in this setup. The first flaw is the selection of who should review the change. People might assume that only the most senior engineers should review code because they have the most experience, and their input can teach the code’s creator. But, busy senior developers don’t have time to handle every code review, and junior developers don’t want to wait days or weeks for a completed review.
+There are flaws in this setup. The first flaw is the selection of who should review the change. It's easy to assume that only the most senior engineers should review code because they have the most experience, and their input can teach the code’s creator. But, busy senior developers don’t have time to handle every code review, and junior developers don’t want to wait days or weeks for a completed review.
 
 The second flaw is that many reviewers focus only on technical aspects, as these are easy to check. Does the code use the latest language features correctly? Does it follow the style guide? Does it follow best practices? Reviewers often focus on these questions, skipping questions about whether the code does what it should and how it covers edge cases.
 
@@ -33,9 +31,7 @@ Many tools show what has changed. The pull request approvals at GitHub or Azure 
 
 The third pitfall with code reviews is their size. Code changes should be so minimal that reviewing takes almost no time. The context should be straightforward, and everything should seem logical. This isn’t always the case, though. Change requests are often bloated. They consist of many commits, including cleanups, changes to unrelated areas, and refactoring in related technical areas without any business impact.
 
-Large change requests result in exceedingly long reviews, usually taking hours or days to complete. This blocks the change from occurring and drains resources. Reviewers may also forget to check basic items, overlooking issues or missing opportunities for improvements.  
-
-The review may be lengthy and incomplete. There may be too many review issues to tackle reliably, which is another reason to avoid large change requests. Also, large changes are inevitable, so there must be a way to cope with those, too.
+Large change requests result in exceedingly long reviews, usually taking hours or days to complete. This blocks the change from occurring and drains resources. Reviewers may also forget to check basic items, overlooking issues or missing opportunities for improvements. The review may be lengthy and incomplete. There may be too many review issues to tackle reliably, which is another reason to avoid large change requests. However, large changes are inevitable, so there must be a way to cope with those, too.
 
 What can we do to mitigate these issues and improve the code review process?
 
@@ -58,7 +54,7 @@ To reduce larger code reviews, timebox each review session. Always determine its
 
 But, what about context? How can we improve context retrieval? An enhanced code search is helpful here.
 
-## Introducing universal code search
+## Adding context to the review process 
 Universal code searches help improve many aspects of software development. This new tool eases code review pain by providing reviewers the right context, whether implicitly or on demand. Finding all references or jumping to definitions is only the beginning. There’s also no need to spin up a local integrated development environment.
 
 Universal code search combines different repositories using different project types and languages in one search engine. The result is a knowledge graph of all combined sources that developers can query from a single location. This is done using a set of smart filters and context-aware operators. The search engine understands relationships between different parts of the code and treats them correctly.
