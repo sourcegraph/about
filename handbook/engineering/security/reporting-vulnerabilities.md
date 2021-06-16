@@ -68,3 +68,15 @@ When we receive [a report of a security vulnerability](#submission-requirements)
 - If so, a member of our security team will [file a vulnerability report in sourcegraph/security-issues](https://github.com/sourcegraph/security-issues/issues/new/choose) and follow the checklist in the issue template.
 
 - If not, a member of our security team will respond to the report to notify the reporter why we are not acting on the report.
+
+## How we disclose security vulnerabilities
+
+For every confirmed vulnerability in Sourcegraph or its products, regardless of severity, the Security team will:
+
+- Create a security advisory describing the vulnerability, impact to users and remediation. We currently publish GitHub Security Advisories in our GitHub repositories. 
+- Request a CVE ID for each vulnerability.
+- Update the CHANGELOG with a reference to the CVE and advisory.
+- Inform the security updates mailing list.
+- Coordinate upgrades with customers for HIGH/CRITICAL issues.
+
+If you find any past Sourcegraph vulnerabilities that were not disclosed this way please let us know. 
