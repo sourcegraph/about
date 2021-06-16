@@ -1,6 +1,6 @@
 ---
 title: Why are code reviews still so hard?
-description: A 300 character limit field for describing your post. Use this is you want to specially craft the excerpt shown on the index page. Uses the first 300 characters of text from your post if this field does not exist.
+description: Code reviews got you down? Here's how to make the process better. 
 author: Florian Rappl
 authorUrl: https://twitter.com/florianrappl?lang=en
 publishDate: YYYY-MM-DDT10:00-07:00
