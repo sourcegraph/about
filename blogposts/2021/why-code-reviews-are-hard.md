@@ -79,3 +79,10 @@ Conduct reviews at fixed times, ensuring clear goals. Involve both senior and ju
 Universal search helps to answer questions and find context to understand the problem. The right tool can streamline your workflow, eliminating the need to work off copied files or switch platforms.
 
 Together, these solutions and strategies can make your next code review less painful.
+
+<aside class="note">
+  <h2>About the author</h2>
+  
+  <p> Dr. Florian Rappl is Solution Architect for IoT and distributed web applications at smapiot. His main interest lies in the creation of innovative architectures that scale in development and usage. He won several prizes for his work and is a Microsoft MVP in the area of development technologies. He regularly blogs and writes articles for popular magazines and websites in the web development space.</p>
+
+</aside>
