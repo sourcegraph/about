@@ -1,13 +1,20 @@
 # SDR Team
 
-The SDR Team (fill in the blanks)
+The SDR Team (TBA)
 
 ## Members
 
-- [Quin Keough](../company/team/index.md#quin-keough) - West
-- [Mark Muldez](../company/team/index.md#mark-muldez-he-him) - East
-- [Sam Cregg](../company/team/index.md#sam-cregg) - East
-- [Nicholas Gage](../company/team/index.md#nicholas-gage-he-him) - Head of Sales Development
+- [Nicholas Gage](../company/team/index.md#nicholas-gage-he-him), Head of Sales Development
+   - West Outbound SDRs
+      - [Quin "Q" Keough](../company/team/index.md#quin-keough)
+      - [Kevin "Quigs" Quiqley](../company/team/index.md#kevin-quigley-he-him)
+   - East Outbound SDRs
+      - [Sam Cregg](../company/team/index.md#sam-cregg)
+      - Jenna Pierre. TBD
+   - Inbound SDR
+      - [Mark "Markie" Muldez](../company/team/index.md#mark-muldez-he-him)
+                  
+More SDRs coming soon...
 
 ## Quick Links
 
@@ -36,7 +43,7 @@ AE leads initial call and dispositions the opportunity accordingly:
 
 - **Needs More Work** - if the Opportunity doesn’t meet the requirements of a Sales Accepted Opportunity, but we believe that it has the potential to reach this stage with additional progress, keep it in the initial stage and devise a plan b/t the AE & SDR to get it to Sales Accepted Opportunity.
 
-  - Examples here: great account/need, but we have to get into a different contact or great opportunity but no next steps could be confirmed
+  - Examples here: great account/need, but we have to get into a different contact or great opportunity but no next steps could be confirmed.
 
 
 ## SDR to AE Handoff

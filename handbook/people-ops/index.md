@@ -2,7 +2,7 @@
 
 ## Goals
 
-[WIP Goals](https://docs.google.com/document/d/1DYve4t4DrY5ppoBrwiasL2iqgTcBZ41ROe91CN6urVA/edit?ts=5f3c23b6#heading=h.74q0h5s6i2fz)
+WIP
 
 ## Team
 
@@ -37,10 +37,11 @@
 - [Travel](travel.md)
 - [Covered expenses](spending-company-money.md) (aka "Spending company money")
 - [Expense reports](../ops/finance/expenses.md)
-- [Vacation/FTO/PTO](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks#vacation)
+- [Paid time off and working hours](paid-time-off-and-working-hours.md)
 - [Requesting time off](requesting-time-off.md)
 - [Holidays](holidays.md)
 - [Donations](donations.md)
+- [Celebrating birthdays and anniversaries](celebrate.md)
 
 ## Roles
 

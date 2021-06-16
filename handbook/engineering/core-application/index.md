@@ -50,6 +50,16 @@ We have two week cycles starting on Wednesdays. We do a sync planning the day be
 
 ## Team norms
 
+### Getting assistance
+
+If you need assistance with a task, let the team know in the #core-application-sync channel. You'll find your peers are more than happy to act as a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) and get you unblocked, or direct you to the right person(s) for further assistance.
+
+See [Tagging teammates](#tagging-teammates) below for more information.
+
+### Giving assistance
+
+Consider setting up regular [office hours](https://support.google.com/calendar/answer/190998?co=GENIE.Platform%3DDesktop&hl=en) so that peers can reserve your time, while knowing that they won't be disrupting your daily workflow.
+
 ### Code reviews
 
 - **Post-merge feedback:** It is important to make progress while getting feedback from other teammates in code reviews. On the one hand, the pull request author doesn't have to be blocked by all reviewers who the author intends to get feedback from; on the other hand, reviewers can still focus on their work on hands and leave feedback at their convenience. The pull request author should use their best judgement to decide if a pull request should wait (for high-risk changes) or simply rely on post-merge feedback.
@@ -63,14 +73,14 @@ Feel free to tag `@core-app` on Slack or anyone directly as and when required. I
 ## Members
 
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
-- R.P. ([Product Manager](../../product/roles/index.md#product-manager)) starts 2021-05-03. [Christina Forney](../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
+
+- [Ryan Phillips](../../company/team/index.md#ryan-phillips-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
 - [Quinn Keast](../../company/team/index.md#quinn-keast-he-him) ([Product Designer](../../product/roles/index.md#product-designer))
-- Rafal Leszczynski ([Engineering Manager](../roles.md#engineering-manager)) {#core-application-eng}
-    - [Joe Chen](../../company/team/index.md#joe-chen)
-    - [Ryan Slade](../../company/team/index.md#ryan-slade-he-him)
-    - [Alan Harris](../../company/team/index.md#alan-harris-he-him)
-    - [Artem Ruts](../../company/team/index.md#artem-ruts-he-him)
-    - [Tomás Senart](../../company/team/index.md#tomás-senart)
-    - [Asdine El Hrychy](../../company/team/index.md#asdine-el-hrychy)
-    - [Indradhanush Gupta](../../company/team/index.md#indradhanush-gupta-he-him)
-    - FQ4 hire
+- [Rafal Leszczynski](../../company/team/index.md#rafal-leszczynski-he-him) ([Engineering Manager](../roles.md#engineering-manager))
+  - [Joe Chen](../../company/team/index.md#joe-chen)
+  - [Ryan Slade](../../company/team/index.md#ryan-slade-he-him)
+  - [Alan Harris](../../company/team/index.md#alan-harris-he-him)
+  - [Artem Ruts](../../company/team/index.md#artem-ruts-he-him)
+  - [Asdine El Hrychy](../../company/team/index.md#asdine-el-hrychy)
+  - [Indradhanush Gupta](../../company/team/index.md#indradhanush-gupta-he-him)
+  - FQ4 hire

@@ -998,10 +998,16 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [carl@sourcegraph.com](mailto:carl@sourcegraph.com)
 - Carl lives in Washington, DC. When not working, you will generally find him spending time with his two sons or building mechanical keyboards. Before Sourcegraph, Carl worked as a consultant at IBM working focusing on internal IaaS cloud services.
 
+## Kelsey Nagel (she/her)
+- Corporate Recruiter
+- Minneapolis, MN USA :us:
+- GitHub: [kelseynagel] (https://github.com/kelseynagel)
+- Kelsey is a North Dakota native living in Minneapolis with her husband and two dogs, Crew and Nash.  She is an avid Recruiter, bringing 5 years of talent acquisition experience in high growth companies before joining Sourcegraph.  When not working, you'll find Kelsey travelling, spending time on lakes in Minnesota summers, and trying new Sushi restaurants.
+
 ## Oluebube Princess Egbuna (She/Her)
 
 - Education Engineer
 - Lagos, Nigeria 🇳🇬
-- GitHub: [unicodeveloper](https://github.com/Princesso)
+- GitHub: [Princesso](https://github.com/Princesso)
 - [princess@sourcegraph.com](mailto:princess@sourcegraph.com)
 - Princess is Nigerian and lives in Lagos, Nigeria. She has worked as a software engineer using several technologies of which javascript is her favorite. She preaches open source and also leads a few tech communities. When she is not in the zone, she enjoys cooking, taking walks with her daughter and hosting friends.

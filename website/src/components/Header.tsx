@@ -19,6 +19,7 @@ export default class Header extends React.Component<HeaderProps, any> {
             isOpen: false,
         }
     }
+
     public toggle(): void {
         this.setState({
             isOpen: !this.state.isOpen,
@@ -77,7 +78,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 href="https://docs.sourcegraph.com"
                                                 target="_blank"
                                             >
-                                                Docs <ExternalLinkIcon className="icon-inline small ml-1" />
+                                                Docs
                                             </a>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">

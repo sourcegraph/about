@@ -35,15 +35,12 @@ All items in our inventory are the same ones found in our new hire kits, but not
 
 ## How to send a gift 
 
-1. Fill in the Swag Requests form. You will need:
-    
-    - [x] Name of the recipient
-    - [x] Email of the recipient
-    - [x] A reason for the request (e.g: Participated as a guest speaker on our web series)  
-    - [x] Personal message from you to them
-    - [x] Country of destination (not strictly necessary but preferred)  
-    
-  
+1. Fill in the Swag Requests form. You will need:  
+- Name of the recipient
+- Email of the recipient
+- A reason for the request (e.g: Participated as a guest speaker on our web series)
+- Personal message from you to them
+- Country of destination (not strickly necessary but preferred) 
 2. The Brand team will review  your request. *Note: all requests will be reviewed on a case-by-case basis factoring in current inventory levels and use cases*
 3. Approved requests will be sent to Printfection every Thursday. 
 4. Your recipient will receive an email giveaway link from brand@sourcegraph.com to choose their gift and enter their own shipping info
@@ -51,16 +48,14 @@ All items in our inventory are the same ones found in our new hire kits, but not
 
 ## Available inventory
 
-
-|            **Item**                    |   **Price**   | 
-|----------------------------------------|---------------|
-| Austin Cork-Bottom Tumbler (20 oz)     |      $19      |
-| Sourcegraph Notebook                   |     $4.85     |   
-| Dress socks                            |     $16.07    |
-| Fuzzy socks                            |     $5.25     |
-| Men's/Unisex t-shirt                   |      $10      | 
-| Women's t-shirt *(available soon)*     |      $10      | 
-
+|**Item**                                |**Price** |
+|----------------------------------------|----------|
+|Austin Cork-Bottom Tumbler (20 oz)      |$19       |
+|Sourcegraph Notebook                    |$4.85     |
+|Dress Socks                             |$16.07    |
+|Fuzzy socks                             |$5.25     |
+|Men's/Unisex t-shirt                    |$10       |
+|Women's t-shirt *(available soon)*      |$10       |
 
 
 ## Shipping charges
