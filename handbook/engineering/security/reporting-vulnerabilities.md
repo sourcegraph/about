@@ -68,7 +68,3 @@ When we receive [a report of a security vulnerability](#submission-requirements)
 - If so, a member of our security team will [file a vulnerability report in sourcegraph/security-issues](https://github.com/sourcegraph/security-issues/issues/new/choose) and follow the checklist in the issue template.
 
 - If not, a member of our security team will respond to the report to notify the reporter why we are not acting on the report.
-
-  > Thank you for your report. Could you please provide us with $INFOX, $INFOY, and \$INFOZ so we can investigate this further?
-
-  > Thank you for your report. We will not be taking further action on this report because \$REASONS.
