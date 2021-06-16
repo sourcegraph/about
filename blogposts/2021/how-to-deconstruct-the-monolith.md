@@ -4,12 +4,14 @@ author: Marcelo Oliveira
 authorUrl: 
 description: ''
 heroImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
-socialImage: https://about.sourcegraph.com/blog/product-design-principles-hero.jpg
-publishDate: 2021-05-17T18:00-07:00
+socialImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
+publishDate: 2021-06-16T18:00-07:00
 tags: [blog]
 slug: how-to-deconstruct-the-monolith
 published: true
 ---
+
+![deconstructing the monolith gif](https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif)
 
 [Monoliths](https://en.wikipedia.org/wiki/Monolithic_application) are the traditional way of building applications. A monolith starts as a small piece of software that grows over time with new features. Unfortunately, this all-in-one software approach makes it difficult to scale our applications. Even when we build a monolith as a well-organized structure, our application’s codebase can become so large that individual developers and teams don’t understand how it all fits together.
 
