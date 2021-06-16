@@ -56,7 +56,7 @@ If you need assistance with a task, let the team know in the #core-application-s
 
 See [Tagging teammates](#tagging-teammates) below for more information.
 
-### Giving Assistance
+### Giving assistance
 
 Consider setting up regular [office hours](https://support.google.com/calendar/answer/190998?co=GENIE.Platform%3DDesktop&hl=en) so that peers can reserve your time, while knowing that they won't be disrupting your daily workflow.
 
