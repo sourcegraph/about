@@ -3,7 +3,7 @@ title: 'How to deconstruct the monolith'
 author: Marcelo Oliveira
 authorUrl: 
 description: ''
-heroImage: /blog/product-design-principles-hero.jpg
+heroImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
 socialImage: https://about.sourcegraph.com/blog/product-design-principles-hero.jpg
 publishDate: 2021-05-17T18:00-07:00
 tags: [blog]
