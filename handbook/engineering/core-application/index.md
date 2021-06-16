@@ -50,7 +50,7 @@ We have two week cycles starting on Wednesdays. We do a sync planning the day be
 
 ## Team norms
 
-### Getting Assistance
+### Getting assistance
 
 If you need assistance with a task, let the team know in the #core-application-sync channel. You'll find your peers are more than happy to act as a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) and get you unblocked, or direct you to the right person(s) for further assistance.
 
