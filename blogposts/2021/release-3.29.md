@@ -25,13 +25,6 @@ We now autosuggest and autocomplete the repository field in the correct format. 
 
 ## Batch Changes
 
-### Publish Batch Changes from the dashboard
-The batch changes specs allows for [detailed control](https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#publishing-a-subset-of-changesets) of which changesets are published to the codehost, and which are kept unpublished. This model is very powerful when you want to keep your batch spec declarative, and use them as a reproducible source of truth for a batch change. However, it requires back and forth between the dashboard and the CLI and can feel tedious for users that want to take a shortcut and don't need the spec to be the source of truth.
-
-With this release, you can either choose to control the publishing status with the `publish` spec field (the only available option currently), or omit it and control publishing from the GUI.  
-
-TODO: video
-
 ### New bulk actions: retry and merge (experimental)
 
 Last release we introduced [bulk actions](https://about.sourcegraph.com/blog/release/3.28/#Batch-changes), allowing users to comment on hundreds of changesets in a few clicks. We add two more bulk actions in this release: retry errored changesets and merge.
