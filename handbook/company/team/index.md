@@ -1011,3 +1011,11 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: [Princesso](https://github.com/Princesso)
 - [princess@sourcegraph.com](mailto:princess@sourcegraph.com)
 - Princess is Nigerian and lives in Lagos, Nigeria. She has worked as a software engineer using several technologies of which javascript is her favorite. She preaches open source and also leads a few tech communities. When she is not in the zone, she enjoys cooking, taking walks with her daughter and hosting friends.
+
+## Rami Hamdan (they/them)
+- Customer Engineer
+- Albuquerque, NM from Palestine 🇵🇸
+- Github: [ZrnH](https://github.com/zrnh)
+- [rami@sourcegraph.com](mailto:rami@sourcegraph.com)
+- Rami is an experienced Technical Solutions Architect with a knack for solving complex problems using different tools and lots of jokes. In their spare time they love to take advantage of the beautiful NM outdoors with their very sweet doggie. Rami loves to cook traditional Palestinain food for their friends and family and spends lots of time perfecting recipes. They also love to exercise and cycle, and they're always looking for new climbing buddies. 
+
