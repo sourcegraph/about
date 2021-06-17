@@ -6,6 +6,91 @@ tags: [blog, release]
 slug: "release/3.29"
 published: false
 changelogItems:
+# Added
+  - description: "Code Insights queries can now run concurrently up to a limit set by the `insights.query.worker.concurrency` site config."
+    url: https://github.com/sourcegraph/sourcegraph/pull/21219
+    category: 
+  - description: "Code Insights workers now support a rate limit for query execution and historical data frame analysis using the `insights.query.worker.rateLimit` and `insights.historical.worker.rateLimit` site configurations."
+    url: https://github.com/sourcegraph/sourcegraph/pull/21533
+    category: 
+  - description: "The GraphQL `Site` `SettingsSubject` type now has an `allowSiteSettingsEdits` field to allow clients to determine whether the instance uses the `GLOBAL_SETTINGS_FILE` environment variable."
+    url: https://github.com/sourcegraph/sourcegraph/pull/21827
+    category: API
+  - description: "Code Insights creation UI now has auto-save logic and clear all fields functionality"
+    url: https://github.com/sourcegraph/sourcegraph/pull/21744
+    category: 
+  - description: Code Insights creation UI now has a suggestions support for the repository fields
+    url: https://github.com/sourcegraph/sourcegraph/pull/21699
+    category: Repositories
+  - description: A new bulk operation to retry many changesets at once has been added to Batch Changes.
+    url: https://github.com/sourcegraph/sourcegraph/pull/21173
+    category: Batch Changes
+  - description: "A `security_event_logs` database table has been added in support of upcoming security-related efforts."
+    url: https://github.com/sourcegraph/sourcegraph/pull/21949
+    category: 
+  - description: Added featured Sourcegraph extensions query to the GraphQL API, as well as a section in the extension registry to display featured extensions.
+    url: https://github.com/sourcegraph/sourcegraph/pull/21665
+    category: API
+  - description: "The search page now has a `create insight` button to create search-based insight based on your search query"
+    url: https://github.com/sourcegraph/sourcegraph/pull/21943
+    category: Search
+  - description: Added support for Terraform syntax highlighting.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22040
+    category: 
+  - description: A new bulk operation to merge many changesets at once has been added to Batch Changes.
+    url: https://github.com/sourcegraph/sourcegraph/pull/21959
+    category: Batch Changes
+  - description: Pings include aggregated usage for the Code Insights creation UI, organization visible insight count per insight type, and insight step size in days.
+    url: https://github.com/sourcegraph/sourcegraph/pull/21671
+    category: 
+  - description: "Search-based insight creation UI now supports `count:` filter in data series query input."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22049
+    category: Search
+# Changed
+  - description: SSH public keys generated to access code hosts with batch changes now include a comment indicating they originated from Sourcegraph.
+    url: https://github.com/sourcegraph/sourcegraph/issues/20523
+    category: Batch Changes
+  - description: "The copy query button is now permanently enabled and `experimentalFeatures.copyQueryButton` setting has been deprecated."
+    url: https://github.com/sourcegraph/sourcegraph/pull/21364
+    category: 
+  - description: "Search streaming is now permanently enabled and `experimentalFeatures.searchStreaming` setting has been deprecated."
+    url: https://github.com/sourcegraph/sourcegraph/pull/21522
+    category: Search
+  - description: Pings removes the collection of aggregate search filter usage counts and adds a smaller set of aggregate usage counts for query operators, predicates, and pattern counts.
+    url: https://github.com/sourcegraph/sourcegraph/pull/21320
+    category: Search
+  - description: "Sourcegraph will now refuse to start if there are unfinished [out-of-band-migrations](https://docs.sourcegraph.com/admin/migrations) that are deprecated in the current version. See the [upgrade documentation](https://docs.sourcegraph.com/admin/updates) for changes to the upgrade process."
+    url: https://github.com/sourcegraph/sourcegraph/pull/20967
+    category: Admin
+  - description: Code Insight pages now have new URLs
+    url: https://github.com/sourcegraph/sourcegraph/pull/21856
+    category: 
+  - description: "We are proud to bring you an entirely new visual design for the Sourcegraph UI. We think you’ll find this new design improves your experience and sets the stage for some incredible features to come. Some of the highlights include:"
+    url: "https://about.sourcegraph.com/blog/introducing-sourcegraphs-new-ui/"
+    category: 
+# Fixed
+  - description: "Stricter validation of structural search queries. The `type:` parameter is not supported for structural searches and returns an appropriate alert."
+    url: https://github.com/sourcegraph/sourcegraph/pull/21487
+    category: Search
+  - description: Batch changeset specs that are not attached to changesets will no longer prematurely expire before the batch specs that they are associated with.
+    url: https://github.com/sourcegraph/sourcegraph/pull/21678
+    category: Batch Changes
+  - description: Code insights line chart no longer has a negative quadrant
+    url: https://github.com/sourcegraph/sourcegraph/pull/22018
+    category: 
+  - description: "Correctly handle field aliases in the query (like `r:` versus `repo:`) when used with `contains` predicates."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22105
+    category: Repositories
+# Removed
+  - description: "The deprecated GraphQL `icon` field on CommitSearchResult and Repository was removed."
+    url: https://github.com/sourcegraph/sourcegraph/pull/21310
+    category: Search
+  - description: "The undocumented `index` filter was removed from search type-ahead suggestions."
+    url: https://github.com/sourcegraph/sourcegraph/issues/18806
+    category: Search
+  - description: "Code host connection tokens aren't used for creating changesets anymore when the user is site admin and no credential has been specified."
+    url: https://github.com/sourcegraph/sourcegraph/issues/16814
+    category: Admin
 
 ---
 
