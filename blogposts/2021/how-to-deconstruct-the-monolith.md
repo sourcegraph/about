@@ -23,7 +23,7 @@ Let’s look at some steps you can take to deconstruct a monolith gradually and 
 
 ## Step 1: Build alongside it
 
-Modernizing an existing monolith differs from completely replacing it by developing a new, equivalent application based on microservices. Developing a new application would introduce so many risks to the project that rollout would likely fail, causing stakeholders to push for a return to the original monolith.
+Modernizing an existing monolith isn't the same as completely replacing it by developing a new, equivalent application based on microservices. Developing a new application would introduce so many risks to the project that rollout would likely fail, causing stakeholders to push for a return to the original monolith.
 
 Successful evolution from monolith to microservices requires building both alongside each other. But a development team should be wary of migrating old code right away. Migrating can be complicated and confusing, especially when the team lacks appropriate planning and guidance.
 
