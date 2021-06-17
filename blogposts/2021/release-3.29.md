@@ -97,6 +97,8 @@ changelogItems:
 Sourcegraph 3.29 is now available! For this release, we added
 
 ## Search results ranking
+We're making search results more relevant, starting with better prioritization of repos vs. code in your search results. Search results and suggestions are now ranked by descending star count on sourcegraph.com and customer instances (for repos with stars), making it easier to find specific repos. Start searching on sourcegraph.com to experience the new ranking.
+
 Star count import from github.com/sourcegraph/ghdump is done. We now have 418321 repos with star data in the production repo table.
 Suggestions and search results are now ranked by descending star count on sourcegraph.com (and customer instances if repos there have stars). Try it out live!
 
