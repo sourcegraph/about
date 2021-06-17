@@ -64,9 +64,6 @@ changelogItems:
   - description: Code Insight pages now have new URLs
     url: https://github.com/sourcegraph/sourcegraph/pull/21856
     category: 
-  - description: "We are proud to bring you an entirely new visual design for the Sourcegraph UI. We think you’ll find this new design improves your experience and sets the stage for some incredible features to come. Some of the highlights include:"
-    url: "https://about.sourcegraph.com/blog/introducing-sourcegraphs-new-ui/"
-    category: 
 # Fixed
   - description: "Stricter validation of structural search queries. The `type:` parameter is not supported for structural searches and returns an appropriate alert."
     url: https://github.com/sourcegraph/sourcegraph/pull/21487
@@ -100,6 +97,11 @@ We're making search results more relevant, starting with better prioritization o
 
 Star count import from github.com/sourcegraph/ghdump is done. We now have 418321 repos with star data in the production repo table.
 Suggestions and search results are now ranked by descending star count on sourcegraph.com (and customer instances if repos there have stars). Try it out live!
+
+## New visual design for the Sourcegraph UI
+We are proud to bring you an entirely new visual design for the Sourcegraph UI. The new visual design was developed to help users find references, troubleshoot errors, gain insight, make changes on a massive scale, and read code. Check out the [blog post](https://about.sourcegraph.com/blog/introducing-sourcegraphs-new-ui/) to learn more.
+
+(Add screenshot)
 
 ## Code Insights
 
