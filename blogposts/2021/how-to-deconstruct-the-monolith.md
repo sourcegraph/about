@@ -100,3 +100,7 @@ Finally, once the new microservice abstraction of the functionality is stable, w
 Migrating from a monolithic architecture to microservices offers many benefits. These include scalability and the ability to assign many developer teams to build different services simultaneously.
 
 Modernizing a monolithic application is a multi-team development effort. It takes planning and deliberate work to break a monolith into smaller parts. Our tour described how to leverage tools, patterns, and methods tested in the field to guide our efforts towards a safe and consistent microservices development. So, when it’s time to say goodbye to your monolith, you have the knowledge you need to prepare for a successful migration.
+
+### About the author
+
+_Marcelo Ricardo de Oliveira is a senior freelance software developer who lives with his lovely wife Luciana and his little buddy and stepson Kauê in Guarulhos, Brazil. He is the co-founder of the Brazilian TV Guide TV Map and currently works for Alura Cursos Online._
