@@ -14,11 +14,11 @@ What we want to learn:
 
 Send the following prompt to the candidate to prepare for this interview:
 
-> Part 1: (~30 min) Pick a developer application (e.g., code hosts like GitHub or GitLab, cloud providers like AWS or GCP, monitoring tools like Lightstep or Sentry, etc) and walk us through what works well and what doesn't. We do not want you to prepare a presentation or script, but should come knowing which application you want to use as an example and be prepared to have a conversation about it.
+> Part 1: (~15 min) Pick a developer application (e.g., code hosts like GitHub or GitLab, cloud providers like AWS or GCP, monitoring tools like Lightstep or Sentry, etc) and walk us through what works well and what doesn't. We do not want you to prepare a presentation or script, but should come knowing which application you want to use as an example and be prepared to have a conversation about it.
 >
-> Part 2: (~90 min) We will give you a specific problem to solve for [Sourcegraph](https://sourcegraph.com/search) and would like you to walk us through your design process. We will be evaluating the process, not the final outcome of the solution.
+> Part 2: (~60 min) We will give you a specific problem to solve for [Sourcegraph](https://sourcegraph.com/search) and would like you to walk us through your design process. We will be evaluating the process, not the final outcome of the solution.
 
-## Exercise 1 (30 min): Pick a developer application
+## Exercise 1 (15 min): Pick a developer application
 
 ### Purpose
 
@@ -36,7 +36,7 @@ Ask follow up questions:
 - How would you change it?
 - Continue asking why repeatedly.
 
-## Exercise 2 (~90 min): Sourcegraph exercise
+## Exercise 2 (~60 min): Sourcegraph exercise
 
 ### Purpose/goal
 
