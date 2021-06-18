@@ -9,6 +9,7 @@ At Sourcegraph, we define **content marketing** as generating awareness, buildin
 
 ## Quick links
 
+- [Editorial process)(#editorial-process)
 - [Creating blog posts](creating_blog_posts.md)
 - [Editing blog posts](creating_blog_posts.md#editing-blog-posts)
 - [Adding screenshots and screen recordings (GIFs and videos)](adding_screenshots_screen_recording.md)
@@ -21,8 +22,7 @@ Our purpose, mission, and vision explain why we create, who we create it for, an
 
 **Mission:** Educate the market on the risks of poor developer experiences (ex: Big Code) and the benefits of effective development environments (ex: universal code search).
 
-**Vision:** Become the most trusted branded resource
-covering the developer experience.
+**Vision:** Become the most trusted branded resource covering the developer experience.
 
 
 ## Content principles
@@ -76,6 +76,16 @@ The editorial team will triage pitches weekly on Monday. Once you have submitted
 
 ## Measuring quality 
 
-[Internal feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)
+One of our values is quality and we want to be known as a brand that produces high-quality, interesting content. As a starting point to measure quality, we will use the **[content feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)** which asks our internal subject matter experts and content consumers to rate the quality of the content and how likely they are to share the content. 
+
+For now, we will solicit feedback after the content is published. 
+
+### Using the **[content feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)**
+
+1. Share a link to either the PR or published content in the #progress channel with a link to the feedback form. 
+2. Share the #progress channel message in the #dev-chat and #sales channels. 
+3. If responses are low after 5 days, consider sharing to the #general channel as well. 
+
+
 
 
