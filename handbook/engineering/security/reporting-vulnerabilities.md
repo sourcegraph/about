@@ -12,13 +12,13 @@ When a monetary bounty is presented, eligible reports will be based on the sever
 
 **Safe Harbor**
 
-Sourcegraph commits to not pursuing legal action against researchers for actions conducted accordingly to our policies and within the declared scope.
+Sourcegraph commits to not pursuing legal action against researchers for actions conducted according to our policies and within the declared scope.
 
 **Scope**
 
 The following products and deployments are within scope for our Bug Bounty program:
 
-- Sourcegraph Cloud deploment: sourcegraph.com
+- Sourcegraph Cloud deployment: sourcegraph.com
 - Sourcegraph source code: https://github.com/sourcegraph/sourcegraph
 - Sourcegraph CLI: https://github.com/sourcegraph/src-cli
 - Sourcegraph browser extension: https://github.com/sourcegraph/sourcegraph/tree/main/client/browser
