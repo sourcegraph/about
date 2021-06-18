@@ -84,17 +84,4 @@ We ensure Sourcegraph is secure by using security tooling and processes:
 - Containers are scanned for CVEs using GCP tooling.
 - Regular internal audits of our code and systems.
 - Annual 3rd party penetration tests.
-- Code coverage tools to ensure unit test coverage
-
-<p class="text-center">
-  <!--[if lte IE 8]>
-  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-  <![endif]-->
-  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-  <script>
-    hbspt.forms.create({
-    portalId: "2762526",
-    formId: "0ff99031-7caf-433a-8aef-8c9345948288"
-  });
-  </script>
-</p>
+- Code coverage tools to ensure unit test coverage.
