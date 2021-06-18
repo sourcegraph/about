@@ -19,3 +19,6 @@ The batch changes specs allows for [detailed control](https://docs.sourcegraph.c
 With this release, you can either choose to control the publishing status with the `publish` spec field (the only available option currently), or omit it and control publishing from the GUI.  
 
 TODO: video
+
+## Other
+* Search scopes are now named search snippets
