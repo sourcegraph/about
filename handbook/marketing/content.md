@@ -76,11 +76,20 @@ The editorial team will triage pitches weekly on Monday. Once you have submitted
 
 ## Measuring quality 
 
-One of our values is quality and we want to be known as a brand that produces high-quality, interesting content. As a starting point to measure quality, we will use the **[content feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)** which asks our internal subject matter experts and content consumers to rate the quality of the content and how likely they are to share the content. 
+One of our values is quality and we want to be known as a brand that produces high-quality, interesting content. To ensure we are living our values, we have baked quality measurement into our editorial process. 
 
-For now, we will solicit feedback after the content is published. 
+There are many ways we can measure quality, such as:
+
+1. Ranking on Hacker News (rare)
+2. Traffic 
+3. Time spent on page
+4. Shares on Twitter 
+
+While we track each of these inputs, as a young brand who's distribution processes are still being created, we need a way to measure quality without the data being skewed by the level of distribution the content piece received. As a starting point, we will use the **[content feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)** which asks our internal subject matter experts and content consumers to rate the quality of the content and how likely they are to share the content. Using this form, we can begin to create a baseline and generate an NPS score for our content. 
 
 ### Using the **[content feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)**
+
+As an internal quality check, all of our content goes through an internal review process to guage the quality of content as perceived by our internal audience representatives (developers). We also welcome feedback from any person in the company, regardless of which department they work in. 
 
 1. Share a link to either the PR or published content in the #progress channel with a link to the feedback form. 
 2. Share the #progress channel message in the #dev-chat and #sales channels. 
