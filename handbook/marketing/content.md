@@ -73,3 +73,9 @@ The editorial team will triage pitches weekly on Monday. Once you have submitted
 1. Once the final draft is approved by you and your editor, it will be staged and/or scheduled for release. 
 
 **What happens if I want to write something on my own, on my own time for Sourcegraph’s blog?** Once you’re ready for an editor’s review, submit your draft in place of a pitch and follow the article submission guidelines. An editor will reach out to you with feedback, requested changes, and publishing options. Please note that immediate publishing may not be available. If you would like to publish on your own schedule, [Medium](https://medium.com/) is a great option for self-publishing. 
+
+## Measuring quality 
+
+[Internal feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)
+
+
