@@ -2,7 +2,7 @@
 
 The interview simulates a real-life design collaboration. The goal is to build something together and to understand the way the candidate thinks about design in practice, and to experience their process.
 
-What we want to learn:
+What we would like to learn:
 
 - How they think and ideate
 - Their facilitation strategy
