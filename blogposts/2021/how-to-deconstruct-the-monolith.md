@@ -2,7 +2,7 @@
 title: 'How to deconstruct the monolith'
 author: Marcelo Oliveira
 authorUrl: 
-description: ''
+description: 'Breaking a monolith down into microservices can seem daunting. We rounded up the tools, patterns, and field-tested methods to guide your efforts towards a successful migration.'
 heroImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
 socialImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
 publishDate: 2021-06-16T18:00-07:00
@@ -87,7 +87,7 @@ When we can’t easily intercept calls and create a proxy to reroute the request
 
 Branch by abstraction requires us to modify the existing monolith’s code. It works by implementing the next few steps:
 
-1. Identify the code within the monolith that composes the functionality. This means finding out classes, methods, and parameters without worrying about the actual implementation. Finding those functional lines in a vast monolith codebase is often an arduous task. To make the lives of your microservices developers easier, consider [universal code search](https://about.sourcegraph.com/). It provides a search engine for code across all your repositories and branches, so you can find and filter algorithms, definitions, and references instantaneously.
+1. Identify the code within the monolith that composes the functionality. This means finding out classes, methods, and parameters without worrying about the actual implementation. Finding those functional lines in a vast monolith codebase is often an arduous task. To make the lives of your microservices developers easier, consider [universal code search](/get-started). It provides a search engine for code across all your repositories and branches, so you can find and filter algorithms, definitions, and references instantaneously.
 2. Create the interfaces that compose the functionality’s abstraction. This means creating a new code that defines a new “contract” for classes, methods, and parameters discovered in the previous step. 
 3. Refactor the old monolith’s code, ensuring it adheres to the interfaces defined by the new abstraction. Notice that this step doesn’t break or change the existing functionality in any way but decouples the identified functionality from the rest of the monolith. 
 4. Implement the new service, ensuring the existing functionality behaves precisely as in the monolith.
