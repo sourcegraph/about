@@ -34,10 +34,10 @@ export default ((props: any) => (
                 <div className="col-lg-4 sticky-top mt-2">
                     <div className="list-group">
                         <Link to="#1" className="list-group-item list-group-item-action">
-                            1 Find security problems in hours<ArrowRightIcon className="icon-inline ml-1" />
+                            1 Introduction<ArrowRightIcon className="icon-inline ml-1" />
                         </Link>
                         <Link to="#2" className="list-group-item list-group-item-action">
-                            2 Find security problems in hours<ArrowRightIcon className="icon-inline ml-1" />
+                            2 What is code search?<ArrowRightIcon className="icon-inline ml-1" />
                         </Link>
                         <Link to="#3" className="list-group-item list-group-item-action">
                             3 Find security problems in hours<ArrowRightIcon className="icon-inline ml-1" />
