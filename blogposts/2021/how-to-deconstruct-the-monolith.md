@@ -19,7 +19,7 @@ In contrast, [microservices](https://en.wikipedia.org/wiki/Microservices) make s
 
 In a distributed system, multiple teams can independently develop different features in separate services. When successfully implemented, a microservices development culture enables each team to be autonomous, requiring minimal coordination to work with other teams. As a result, it boasts improved code quality and long-term code ownership.
 
-Let’s look at some steps you can take to deconstruct a monolith gradually and replace it with a microservices application.
+This is all great if you build your application with microservices from the outset, but what about existing monolithic applications? Let’s look at some steps you can take to deconstruct a monolith gradually and replace it with a microservices application.
 
 ## Step 1: Build alongside it
 
@@ -36,9 +36,9 @@ Examples of new features that would be suitable candidates to develop as microse
 *   A gift card redemption service in an e-commerce application
 *   A corporate subscription management service for a video streaming platform
 
-If running in the cloud, consider building initial microservices using services such as [AWS Lambda](https://aws.amazon.com/lambda/), [Azure Functions](https://azure.microsoft.com/en-us/services/functions), or [Firebase Functions](https://firebase.google.com/products/functions). These products implement function as a service (FAAS), a type of serverless computing that allows applications to run in a cloud computing execution model without a need for server provisioning and management.
+If running in the cloud, consider building initial microservices using services such as [AWS Lambda](https://aws.amazon.com/lambda/), [Azure Functions](https://azure.microsoft.com/en-us/services/functions), or [Firebase Functions](https://firebase.google.com/products/functions). These products implement function as a service (FaaS), a type of serverless computing that allows applications to run in a cloud computing execution model without a need for server provisioning and management.
 
-Cloud functions can ease development efforts in transitioning to microservices. With FAAS and serverless computing, we can run backend code without managing our server systems or applications — giving us time to adapt to the microservices approach. Meanwhile, operations teams can gradually build out and scale a microservice-friendly architecture.
+Cloud functions can ease development efforts in transitioning to microservices. With FaaS and serverless computing, we can run backend code without managing our server systems or applications—giving us time to adapt to the microservices approach. Meanwhile, operations teams can gradually build out and scale a microservice-friendly architecture.
 
 ## Step 2: Separate high-traffic services
 
@@ -65,7 +65,7 @@ The open-source observability project OpenTelemetry integrates with Jaeger and P
 
 ## Step 3: Say goodbye to your monolith
 
-Once we split high traffic and high load parts of a monolith into microservices, we should split the rest of our monolith along functional lines. For example, this includes authentication, notification, and logging. To help with this task, let’s look at two beneficial microservices patterns: the [strangler pattern](https://martinfowler.com/bliki/StranglerFigApplication.html) and the [branch by abstraction pattern](https://martinfowler.com/bliki/BranchByAbstraction.html).
+Once we split high-traffic and high-load parts of a monolith into microservices, we should split the rest of our monolith along functional lines. For example, this includes authentication, notification, and logging. To help with this task, let’s look at two beneficial microservices patterns: the [strangler pattern](https://martinfowler.com/bliki/StranglerFigApplication.html) and the [branch by abstraction pattern](https://martinfowler.com/bliki/BranchByAbstraction.html).
 
 ### The strangler pattern 
 
