@@ -119,6 +119,4 @@ We now autosuggest and autocomplete the repository field in the correct format. 
 
 Last release we introduced [bulk actions](https://about.sourcegraph.com/blog/release/3.28/#Batch-changes), allowing users to comment on hundreds of changesets in a few clicks. We add two more bulk actions in this release: retry errored changesets and merge.
 
-Merge is released as an experimental feature. It supports merge commit and squash merge on GitHub and GitLab, and merge commit on Bitbucket. Try it out! For example, you can now filter all changesets that have passed checks and review, and merge them all in a few clicks. [Read more]() TODO.
-
-TODO: video
+Merge is released as an experimental feature. It supports merge commit and squash merge on GitHub and GitLab, and merge commit on Bitbucket. Try it out! For example, you can now filter all changesets that have passed checks and review, and merge them all in a few clicks. [Read more](https://docs.sourcegraph.com/batch_changes/how-tos/bulk_operations_on_changesets#supported-types-of-bulk-operations).
