@@ -5,7 +5,7 @@ authorUrl:
 description: 'Breaking a monolith down into microservices can seem daunting. We rounded up the tools, patterns, and field-tested methods to guide your efforts towards a successful migration.'
 heroImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
 socialImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
-publishDate: 2021-06-16T18:00-07:00
+publishDate: 2021-06-18T18:00-07:00
 tags: [blog]
 slug: how-to-deconstruct-the-monolith
 published: true
