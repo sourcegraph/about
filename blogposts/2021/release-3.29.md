@@ -24,9 +24,6 @@ changelogItems:
   - description: A new bulk operation to retry many changesets at once has been added to Batch Changes.
     url: https://github.com/sourcegraph/sourcegraph/pull/21173
     category: Batch Changes
-  - description: "A `security_event_logs` database table has been added in support of upcoming security-related efforts."
-    url: https://github.com/sourcegraph/sourcegraph/pull/21949
-    category: 
   - description: Added featured Sourcegraph extensions query to the GraphQL API, as well as a section in the extension registry to display featured extensions.
     url: https://github.com/sourcegraph/sourcegraph/pull/21665
     category: API
@@ -117,6 +114,6 @@ We now autosuggest and autocomplete the repository field in the correct format. 
 
 ### New bulk actions: retry and merge (experimental)
 
-Last release we introduced [bulk actions](https://about.sourcegraph.com/blog/release/3.28/#Batch-changes), allowing users to comment on hundreds of changesets in a few clicks. We add two more bulk actions in this release: retry errored changesets and merge.
+Last release we introduced [bulk actions](https://about.sourcegraph.com/blog/release/3.28/#Batch-changes), allowing users to comment on hundreds of changesets in a few clicks. We've added two more bulk actions in this release: retry errored changesets and merge.
 
-Merge is released as an experimental feature. It supports merge commit and squash merge on GitHub and GitLab, and merge commit on Bitbucket. Try it out! For example, you can now filter all changesets that have passed checks and review, and merge them all in a few clicks. [Read more](https://docs.sourcegraph.com/batch_changes/how-tos/bulk_operations_on_changesets#supported-types-of-bulk-operations).
+Merge is released as an experimental feature. It supports merge commit and squash merge on GitHub and GitLab, and merge commit on Bitbucket. For example, you can now filter all changesets that have passed checks and review, and merge them all in a few clicks. [Read more](https://docs.sourcegraph.com/batch_changes/how-tos/bulk_operations_on_changesets#supported-types-of-bulk-operations).
