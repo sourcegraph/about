@@ -85,7 +85,7 @@ There are many ways we can measure quality, such as:
 3. Time spent on page
 4. Shares on Twitter 
 
-While we track each of these inputs, as a young brand who's distribution processes are still being created, we need a way to measure quality without the data being skewed by the level of distribution the content piece received. As a starting point, we will use the **[content feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)** which asks our internal subject matter experts and content consumers to rate the quality of the content and how likely they are to share the content. Using this form, we can begin to create a baseline and generate an NPS score for our content. 
+While we track each of these inputs, as a young brand who's distribution processes are still being created, we need a way to measure quality without the data being skewed by the level of distribution the content piece received. As a starting point, we will use the **[content feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)** which asks our internal subject matter experts and content consumers to rate the quality of the content and how likely they are to share the content. Using this form, we can begin to create a baseline and generate an NPS score for our content. Content that receives a low NPS score (TODO: one we have a baseline, we can determine our threshold for holding content if it does not meet a certain score) should be improved before publishing and distributing. 
 
 ### Using the **[content feedback form](https://docs.google.com/forms/d/18RhCpBWv6bzQwNEAY8a6BU52aOpCemsodOU-GaGVvmg/edit)**
 
@@ -94,6 +94,16 @@ As an internal quality check, all of our content goes through an internal review
 1. Share a link to either the PR or published content in the #progress channel with a link to the feedback form. 
 2. Share the #progress channel message in the #dev-chat and #sales channels. 
 3. If responses are low after 5 days, consider sharing to the #general channel as well. 
+
+### Calculating NPS score
+
+To calculate the NPS score, simply subtract the number of detractors from the number of promoters. 
+
+| ----------- | ----------- |
+| < 4      | Detractor   |
+| 5-6   | Passive    |
+| 7-10   | Promoter  |
+
 
 
 
