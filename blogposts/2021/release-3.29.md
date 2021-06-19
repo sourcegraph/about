@@ -98,7 +98,7 @@ Suggestions and search results are now ranked by descending star count on source
 ## New visual design for the Sourcegraph UI
 We are proud to bring you an entirely new visual design for the Sourcegraph UI. The new visual design was developed to help users find references, troubleshoot errors, gain insight, make changes on a massive scale, and read code. Check out the [blog post](https://about.sourcegraph.com/blog/introducing-sourcegraphs-new-ui/) to learn more.
 
-(Add screenshot)
+![refined search results design screenshot](https://sourcegraphstatic.com/blog/redesign/r_search_results.png)
 
 ## Code Insights
 
