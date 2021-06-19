@@ -2,21 +2,23 @@
 
 ## Goals
 
-[WIP Goals](https://docs.google.com/document/d/1DYve4t4DrY5ppoBrwiasL2iqgTcBZ41ROe91CN6urVA/edit?ts=5f3c23b6#heading=h.74q0h5s6i2fz)
+WIP
 
 ## Team
 
-- [List of all Sourcegraph team members](../../company/team/index.md)
+- [List of all Sourcegraph team members](../company/team/index.md)
 
 ### People Ops team members
 
-- [Noemi Mercado](../../../company/team/index.md#noemi-mercado-she-her), Head of People Ops
-  - Cecily Black, Recruiting Coordinator
-  - [Inés Roitman](https://about.sourcegraph.com/company/team#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
+- Debbie Johnstone, VP of People
+- [Noemi Mercado](../company/team/index.md#noemi-mercado-she-her), Head of People Operations
+- [Inés Roitman](https://about.sourcegraph.com/handbook/company/team#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
+- [Cassie Melani](https://about.sourcegraph.com/handbook/company/team#cassie-melani-she-her), Teammate Success Manager
+- [Cecily Black](https://about.sourcegraph.com/handbook/company/team#cecily-black-she-her), People Operations Coordinator
 
 ## Teammate experience
 
-- [All-remote work](../../company/remote/index.md)
+- [All-remote work](../company/remote/index.md)
 - [Interview process](../talent/hiring/interview_process.md)
 - [Hiring](../talent/hiring/index.md)
 - [Onboarding](onboarding/index.md)
@@ -35,11 +37,12 @@
 - [Benefits and perks](benefits-and-perks.md)
 - [Travel](travel.md)
 - [Covered expenses](spending-company-money.md) (aka "Spending company money")
-- [Expense reports](expenses.md)
-- [Vacation/FTO/PTO](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks#vacation)
+- [Expense reports](../ops/finance/expenses.md)
+- [Paid time off and working hours](paid-time-off-and-working-hours.md)
 - [Requesting time off](requesting-time-off.md)
 - [Holidays](holidays.md)
 - [Donations](donations.md)
+- [Celebrating birthdays and anniversaries](celebrate.md)
 
 ## Roles
 
@@ -49,6 +52,14 @@ See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open role
 
 - [Diversity, equity, and inclusion](../communication/dei.md)
 - [Personal Pronouns](personal-pronouns.md)
+
+## Mental health
+
+- [Mental health and wellness initiatives](mental-health.md)
+- Modern Health - *Program launching in August 2021*
+
+## Other policies
+
 - [Anti-corruption/anti-bribery](anti-corruption.md)
 
 ## General office information
@@ -62,3 +73,9 @@ See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open role
 **Phone Number:** (650) 273-5591
 
 **DUNS Number:** 117775232
+
+**Tax ID:** For the Tax ID, refer to [Sourcegraph W9](https://drive.google.com/file/d/1sxASpL9AmPiUgMx2qE-yXLtwTlfHGyBW/)
+
+**NAICS code:** 541512
+
+**SIC code:** 7373

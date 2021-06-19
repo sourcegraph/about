@@ -24,7 +24,7 @@
 			analytics_storage: "denied",
 			wait_for_update: 500
 		});
-		gtag("set", "ads_data_redaction", true);	
+		gtag("set", "ads_data_redaction", true);
 	</script>
 	<!-- Google Tag Manager -->
 	<script data-cookieconsent="ignore">(function (w, d, s, l, i) {
@@ -55,11 +55,13 @@
 			<nav>
 				<form id="search-form" method="get" action="/search">
 					<input type="text" id="search-input" name="q" value="{{block "query" .}}{{end}}"
-						placeholder="Search handbook..." spellcheck="false" />
+						placeholder="Search handbook..." spellcheck="false" class="st-default-search-input"/>
 					<button id="search-button" type="submit">Search</button>
 				</form>
-				<a href="https://about.sourcegraph.com">About</a>
-				<a href="https://sourcegraph.com">Sourcegraph.com</a>
+        <div>
+          <a href="https://about.sourcegraph.com">About Sourcegraph</a>
+          <a href="https://sourcegraph.com">Sourcegraph.com</a>
+        </div>
 			</nav>
 		</div>
 	</header>
@@ -81,6 +83,14 @@
 			</div>
 		</footer>
 	</div>
+  <script type="text/javascript">
+    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+    })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+    _st('install','JAPrEEBxHhYT4SnMJQmX','2.0.0');
+  </script>
 </body>
 
 </html>

@@ -1,3 +1,0 @@
-# Brand Guidelines
-
-Coming Soon!

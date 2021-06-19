@@ -1,6 +1,7 @@
 # Engineering
 
 - [Onboarding](onboarding.md)
+- [Principles and practices](principles-and-practices.md)
 - RFCs (requests for comment)
   - [All RFC documents](https://drive.google.com/drive/folders/1zP3FxdDlcSQGC1qvM9lHZRaHH4I9Jwwa) (Google Drive)
   - [How we use RFCs](../communication/rfcs/index.md)
@@ -27,25 +28,8 @@
 - [How engineering is organized](eng_org.md).
 - [Roles and responsibilities](roles.md)
 
-## Guiding principles
 
-We build things in this order:
-
-1. **Make it work**: Build the minimal useful thing that we can use to start collecting feedback and validating we are on the right track. Take shortcuts where possible (cut scope, not quality) because this work might get thrown away if we discover we are going in the wrong direction.
-1. **Make it smooth**: Once we have signal that we are building the right thing, the next goal is to make the experience smooth so we feel good about putting this in front of users. Aim for smooth when in the make it work phase (to avoid duplicate efforts), but if it's possible to separate the two in order to move things forward, we should!
-1. **Make it fast**: Now that the experience works smoothly, make sure it is fast for users. There is no benefit to speeding up a fundamentally broken experience.
-1. **Make it scale**: Make it work at large scale. It is better to have high demand and need to surge on scalability than to make an infinitely scalable unused feature.
-
-## Ownership of technical decisions
-
-The default owner of any technical decision is the person or team that owns the work implied by the decision.
-
-If ownership is unclear, ask "Do we have a designated owner for X?" in an appropriate Slack channel and @mention appropriate managers.
-
-If there is a dispute about ownership, then perform a [clean escalation](../communication/conflicts.md) to determine an owner.
-
-
-### Communication
+## Communication
 
 For a list of engineering relevant Slack channels to join see the [team chat](../communication/team_chat.md#engineering) page in the handbook.
 
@@ -53,16 +37,6 @@ For a list of engineering relevant Slack channels to join see the [team chat](..
 
 [Open positions](hiring/index.md#open-positions)
 
-## Innovation time
-
-We love it when engineers have ideas for things they want to do, even if they don't align with our existing iteration plans or [goals](../../company/goals/index.md). We want to create time and space for engineers to work on these ideas without negatively impacting our team goals and planned work.
-
-If you have an idea for something you want to work on, then you have a few options:
-
-1. **Just do it** if you can timebox the effort (e.g., 1-2 days) such that it won't impact your ability to deliver on existing plans.
-2. If working on your idea would require a non-trivial amount of time or would impact your ability to deliver on existing plans, then have a discussion with your manager to come up with a feasible plan (e.g., explicitly schedule time to work on your idea during the next iteration).
-
-In any case, you should report the results of your work in [progress updates](tracking_issues.md#progress-updates) just like any other work.
 
 ## Repositories
 
@@ -80,6 +54,19 @@ Sourcegraph has a lot of repositories!
 
 - [Infrastructure repositories](https://github.com/sourcegraph?utf8=%E2%9C%93&q=repo-type-infrastructure&type=&language=)
 - [Customer infrastructure repositories](https://github.com/sourcegraph?utf8=%E2%9C%93&q=repo-type-infrastructure+repo-type-customer&type=&language=)
+
+## Sourcegraph deployments and other developer test instances:
+
+- [sourcegraph.com](https://sourcegraph.com) is our production deployment for open source code.
+- [sourcegraph.sgdev.org](http://sourcegraph.sgdev.org) is our private deployment of Sourcegraph that contains some of our private code.
+- [k8s.sgdev.org](https://k8s.sgdev.org) is a dogfood deployment that replicates the scale of our largest customers.
+- [demo.sourcegraph.com](https://demo.sourcegraph.com) is a managed instance used for CE demos.
+- [devmanaged.sourcegraph.com](https://devmanaged.sourcegraph.com) is a managed instance used for managed instances development.
+- [storybook.sgdev.org](http://storybook.sgdev.org) is a design system built with Storybook.
+- [gerrit.sgdev.org](https://gerrit.sgdev.org) is a Gerrit test instance.
+- [gitlab.sgdev.org](https://gitlab.sgdev.org) is a Gitlab test instance.
+- [github.sgdev.org](https://github.sgdev.org) is a Github test instance.
+- [bitbucket.sgdev.org](https://bitbucket.sgdev.org) is a Bitbucket test instance.
 
 ## Where Sourcegraph gets extended functionality:
 

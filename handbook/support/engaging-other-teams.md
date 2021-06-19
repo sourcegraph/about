@@ -26,7 +26,7 @@ Never say "I need to ask engineering" or anything that can erode trust with the 
 
 If you don't need help and are filing a defect, you can skip this step.
 
-When you need help, post in our #customer-support-chat Slack channel first to see if anyone on our team is able to help you move forward. Always trust your assessment of the situation and move forward to engaging engineering based on the level of urgency/priority associated with the work.
+When you need help, post in our #customer-support-internal Slack channel first to see if anyone on our team is able to help you move forward. Always trust your assessment of the situation and move forward to engaging engineering based on the level of urgency/priority associated with the work.
 
 ## Step 3: Identify which team can help you
 
@@ -50,7 +50,7 @@ Any other questions about monitoring and performance should be routed to the [Di
 
 ### Code host connections
 
-**Keywords**: `code host`, `cloning`, `syncing`, `token`, `GitHub`, `GitLab`, `Bitbucket`, `Phabricator`, `Gerrit`, `repository`, `project`, `Perforce`, `src-expose`
+**Keywords**: `code host`, `cloning`, `syncing`, `token`, `GitHub`, `GitLab`, `Bitbucket`, `Phabricator`, `Gerrit`, `repository`, `project`, `Perforce`, `src-expose`, `src serve-git`
 
 Any questions about code host connections and repository syncing should be routed to the [Core application team](../engineering/core-application/index.md).
 
@@ -129,10 +129,8 @@ If it turns our to be a general issue affecting multiple deployments, create an 
 ### Add the priority label
 Add a prioritization label to the Github issue, from `ce/p0` to `ce/p3` based on a combination of (1) the severity of the issue and (2) any relevant context that translates to level of urgency (for example, if a customer is in the sales process, issues have a higher degree of urgency):
 
-* `ce/p0`: System outages (`about`, `/search` (for sourcegraph.com only), or `docs` is fully unreachable) are always p0. At your discretion, we may also designate an issue p0 that results in the company's Sourcegraph instance being unusable.
-* `ce/p1`: All customer reported issues per our contractual p1 service level agreement definition [here](../support/index.md#our-service-level-agreements-slas).
-* `ce/p2`: All customer reported issues per our contractual p2 service level agreement definition [here](../support/index.md#our-service-level-agreements-slas).
-* `ce/p3`: All feature requests.
+* `cs/p1`: All customer reported issues per our contractual p1 service level agreement definition [here](../support/index.md#our-service-level-agreements-slas).
+* `cs/p2`: All customer reported issues per our contractual p2 service level agreement definition [here](../support/index.md#our-service-level-agreements-slas), including all feature requests.
 
 Selecting priority is more of an art than a science. Start with the issue and its severity and then move it up based on all relevant context (again, for example, are we in the sales process? does the customer have something happening that requires more immediate attention?)
 
@@ -142,11 +140,11 @@ Selecting priority is more of an art than a science. Start with the issue and it
 
 After you file the Github issue, alert the relevant engineering team you did so in Slack. Keep it simple and always provide 1) a brief description of what you need, 2) link to the Github issue, and 3) the context around timeline (for example: it's okay to look at this tomorrow or later in the week).
 
-* When it's a RFH for Core App and Distribution, be sure Virginia accounts for it in the temporary [RFH priorities list](https://docs.google.com/spreadsheets/d/1GMSRdsMtelj2LbWdvkJQfiYDHrUcQ_Atd4GVuTONYx4/edit?usp=sharing), which we are currently using (as of 2021-04-19) to understand priorities across all customers and make the best decision for all of our customers and for us as a company. Generally, issues are added in the order opened (so, newest issue = last priority); however, all issues are assessed and reordered based on full context as they are added. If it feels right to you as the CSE responsible for the new issue to be last, add it. If you think it needs a different placement on the list, create a thread to discuss with Virginia and the rest of the team in #customer-support-team. Virginia shares this with Bill and Raf to keep CS, Core App, and Distribution teams aligned across all issues we are collaborating to solve.
-* When posting in Distribution team's Slack channel, use @distribution-support to contact the the [on-call dev](../engineering/distribution/index.md#support-rotation) (not the team @distribution group -- while we use the @ group for all other engineering teams, most of our help requests go to Distribution, so they have a support rotation to help let the team have more focus time)
+* When posting in Distribution team's Slack channel, use @distribution-support to contact the the [on-call dev](../engineering/distribution/index.md#support-rotation) (not the team @distribution group -- while we use the @ group for all other engineering teams, most of our help requests go to Distribution, so they have a support rotation to help let the team have more focus time) -- be sure to also use the Slack template as described [here](https://about.sourcegraph.com/handbook/engineering/distribution#general-support-requests)
 * When posting in Batcher Changes team's Slack channel, use @batchers-support
 * When posting for Core App, be sure to do so in the #core-application-support channel and use @core-app-support
 * When posting for Search, use @search-core-support or @search-product-support ... depending which team within Search you need
+* Whenever we have more work than any one engineering team can handle via their support process, we prioritize issues holistically. We try to catch this before the engineering team has to alert us.
 
 ### Defects
 

@@ -161,8 +161,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,

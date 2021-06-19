@@ -1,4 +1,0 @@
-{
-  "extends": "@sourcegraph/tslint-config",
-  "rules": { "jsx-no-lambda": false }
-}

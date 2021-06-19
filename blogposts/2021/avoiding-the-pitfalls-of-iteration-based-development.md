@@ -6,6 +6,7 @@ authorUrl: https://twitter.com/thorstenball
 publishDate: 2021-04-15T18:00+02:00
 tags: [blog]
 slug: avoiding-the-pitfalls-of-iteration-based-development
+heroImage: /blog/avoid-pitfalls.png
 published: true
 ---
 
@@ -15,6 +16,8 @@ product, you don't really know what it should look like or how to best build
 it. You've never used it, so how would you know how it works best? You also
 haven't built it yet, which means you don't have experience building it. Chances
 are low that you can accurately predict how its development will go.
+
+![Avoiding pitfalls cartoon graphic](/blog/avoid-pitfalls.png)
 
 So what you do is you acknowledge that you don't know and lean into that.
 You _don't_ plan the development of the product from start to finish in every
@@ -205,7 +208,7 @@ because we built it.
 
 [localmaximum]: https://elezea.com/2012/09/iphone-5-local-maximum/
 [sunkencost]: https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect
-[quinn]: https://about.sourcegraph.com/company/team#quinn-slack
+[quinn]: https://about.sourcegraph.com/handbook/company/team#quinn-slack
 [pr1]: https://github.com/sourcegraph/sourcegraph/pull/5482
 [pr2]: https://github.com/sourcegraph/sourcegraph/pull/8008
 [pr3]: https://github.com/sourcegraph/about/pull/583

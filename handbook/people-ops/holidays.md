@@ -10,7 +10,8 @@ We will reschedule any Monday [company meetings](../communication/company_meetin
 * Martin Luther King Jr. Day - observed third Monday in January
 * Easter Monday – observed the Monday following Easter Sunday (varies by year, but will fall between March 22 and April 25)
 * International Workers' Day/Labour Day - observed May 1
-* Fourth of July - observed July 4th
+* U.S. Memorial Day - observed May 31
+* Fourth of July - observed the Monday following the 4th of July
 * Labor Day (US/Canada) – observed first Monday in September
 * Christmas Eve and Christmas - observed December 24th and 25th
 

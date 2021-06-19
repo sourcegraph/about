@@ -2,20 +2,14 @@
 
 The finance & accounting team is responsible for helping Sourcegraph acquire and allocate resources optimally, plan for the future, track progress and execution, and measure results.
 
-- [Sources of truth](#sources-of-truth)
-- [ARR tracking and the monthly closing process](arr.md)
-- [Paying bills](payables.md)
-- [Submitting an invoice](invoices.md)
-
 ## Team
 
-We are hiring for the finance & accounting team! See all [open positions](https://boards.greenhouse.io/sourcegraph91).
 
 ### Members
 
-- [Dan Adler](../../../../company/team/index.md#dan-adler-he-him), VP Operations
-- [Tommy O Donnell](https://about.sourcegraph.com/company/team#tommy-o-donnell-he-him), Manager, Financial Planning & Analysis
-- [Kendrick Morris](../../../../company/team/index.md#kendrick-morris-he-him), Finance & Operations Analyst
+- [Dan Adler](../../company/team/index.md#dan-adler-he-him), VP Operations
+- [Tommy O Donnell](https://about.sourcegraph.com/handbook/company/team#tommy-o-donnell-he-him), Manager, Financial Planning & Analysis
+- [Kendrick Morris](../../company/team/index.md#kendrick-morris-he-him), Finance & Operations Analyst
 
 ### Roles
 
@@ -64,9 +58,9 @@ A fiscal year is a one-year period that corporations like Sourcegraph use for ac
 - Metrics
 	- Quarterly and monthly [IARR](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=2006715807)
 	- [ARR](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=1460993554)
-	- [Annualized net retention](https://docs.google.com/spreadsheets/d/17RAw8fPZsniGtAIHBLoC33fK4ihrspem0uIqK1sHqEs/edit#gid=992805610)
-	- [Payback period & CAC efficiency](https://docs.google.com/spreadsheets/d/17RAw8fPZsniGtAIHBLoC33fK4ihrspem0uIqK1sHqEs/edit#gid=992805610)
-	- [Burn ratio & ARR per employee](https://docs.google.com/spreadsheets/d/17RAw8fPZsniGtAIHBLoC33fK4ihrspem0uIqK1sHqEs/edit#gid=992805610)
+	- [Annualized net retention](https://docs.google.com/spreadsheets/d/1mO0Sx8hv-RKZkwgF-6HWjQnCbGmowdvej9DuntKleNs/edit#gid=0)
+	- [Payback period & CAC efficiency](https://docs.google.com/spreadsheets/d/1mO0Sx8hv-RKZkwgF-6HWjQnCbGmowdvej9DuntKleNs/edit#gid=0)
+	- [Burn ratio & ARR per employee](https://docs.google.com/spreadsheets/d/1mO0Sx8hv-RKZkwgF-6HWjQnCbGmowdvej9DuntKleNs/edit#gid=0)
 
 ## Definitions
 
@@ -74,9 +68,9 @@ A fiscal year is a one-year period that corporations like Sourcegraph use for ac
 
 Annual Recurring Revenue (ARR) is the dollar value of contracted recurring revenue in a (normalized) one-year period.
 
-ARR includes committed [bookings](#booking) with contract start dates that fall in the first 15 days of the following calendar month. This allows Sourcegraph sales team members to get credit for renewals and expansions that may fall in the (near) future. Exceptions to this require written approval from the VP of Operations and the VP of Sales.
+ARR includes committed [bookings](#booking) with contract start dates that fall in the first 15 days of the following calendar month. This allows Sourcegraph sales team members to get credit for renewals and expansions that may fall in the (near) future. Exceptions to this require written approval from the VP of Operations and the VP of Sales. Please see [ARR timing examples](https://docs.google.com/document/d/1SdUzcW8UUUgSjawIdjPw2bDBJ-j0Fjo3Et0r6yOnikE/edit).
 
-Furthermore, if the Company enters into a multi-year contract with a customer and the out-year billings are contractually locked in, then we will recognize ARR on a straight-line basis. If there is a term or clause in the contract that provides for an opt-out arrangement, then we will only recognize the portion of ARR that is contractually guaranteed. This policy allows Sourcegraph sales team members to get credit for deals with higher pricing in the later portion of the contractual period. Exceptions to this require written approval from the VP of Operations and the VP of Sales. Please see [ARR examples](https://docs.google.com/document/d/1H-qNQTzlDnnr6uNP4NcFFYwkL-ILyoQlBW9qEaYglg0/edit)
+Furthermore, if the Company enters into a multi-year contract with a customer and the out-year billings are contractually locked in, then we will recognize ARR on a straight-line basis. If there is a term or clause in the contract that provides for an opt-out arrangement, then we will only recognize the portion of ARR that is contractually guaranteed. This policy allows Sourcegraph sales team members to get credit for deals with higher pricing in the later portion of the contractual period. Exceptions to this require written approval from the VP of Operations and the VP of Sales. Please see [ARR examples](https://docs.google.com/document/d/1H-qNQTzlDnnr6uNP4NcFFYwkL-ILyoQlBW9qEaYglg0/edit).
 
 ### IARR
 
@@ -91,6 +85,8 @@ New [IARR](#iarr) is IARR from *new customers* (i.e., organizations that were **
 Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations that were already customers at the beginning of the period).
 
 If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
+
+The finance team reviews the AR aging schedule on a monthly basis and assesses customer collectability risk. If an existing customer signs a contract but holds an outstanding bill which the Finance team has deemed a high probability to be uncollectible, the Company will not recognize Expansion IARR until the full amount of the outstanding invoice is paid.
 
 ### Booking
 
@@ -115,3 +111,16 @@ We also complete a balance sheet review. This review is focused on providing ana
 We work with an outsourced accounting firm named [Officengine](https://officengine.com/). They close the books monthly and produce our financial statements, and provide support in processing payables, preparing taxes, filing corporate registrations, and more.
 
 Reach out to the [Finance team](#team) for an introduction if needed.
+
+### Accounts Payable & Expenses
+
+- [Paying Company bills](payables.md)
+- [AP Policy](ap.md)
+- [Submitting an invoice (teammates based outside of US)](invoices.md)
+- [Submitting reimbursable expenses](expenses.md)
+
+### Accounts Receivable
+- [AR Policy](https://docs.google.com/document/d/1tfAL68QSI-ZDqBIIALzY5tVcRk_B8jabpSSAyAK5iGk/edit)
+
+### Fixed Assets
+- [Fixed Asset Policy](https://docs.google.com/document/d/155anVJgInRempR92LiiOwOIf2JJB5jj3b9ktrp8nznY/edit)

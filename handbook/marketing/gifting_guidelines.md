@@ -1,3 +1,0 @@
-# Gifting Guidelines
-
-Coming Soon!

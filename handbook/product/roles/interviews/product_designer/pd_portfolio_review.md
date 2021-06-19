@@ -4,16 +4,16 @@ This is the gating interview (the way the coding exercise is for engineers) befo
 
 The goals of this interview are to:
 
-- Understand the candidate's approach and philosiphy to design.
+- Understand the candidate's approach and philosophy to design.
 - Validate the candidate's design competency.
 - How the candidate communicates and presents their ideas.
-- The candidate's ability to influence and pursuade others.
+- The candidate's ability to influence and persuade others.
 
 ## Invite prompt
 
 The candidate will be sent the following to allow them to prepare for the interview:
 
-> In this interview, we will be looking for you to give some real insight into a problem you were solving as part of a project you've worked on. We would like you to lead us through this problem or case study in detail. We'll look to understand the size and structure of the team you were a part of, the goals of the project, your low-fidelity design work, your high-fidelity design skills, how you approached research, how you synthesized research data to inform design decisions, what design standards and guidelines you worked within, and how you collaborated with a wider team. We are particularly interested in your process for the project, the outcomes, and the challenges you encountered.
+> In this interview, we will be looking for you to give some real insight into a problem you were solving as part of a project you've worked on. We would like you to lead us through this problem or case study in detail. We'll look to understand the size and structure of the team you were a part of, the goals of the project, your low-fidelity design work, your high-fidelity design skills, how you approached research, how you synthesized research data to inform design decisions, what design standards and guidelines you worked within, and how you collaborated with a wider team. We are particularly interested in your process for the project, the outcomes, the challenges you encountered, and tradeoffs you made.
 
 ## Script
 

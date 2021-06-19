@@ -7,6 +7,6 @@
   "assets": "_resources/assets",
   "assetsBaseURLPath": "/assets/",
   "check": {
-    "ignoreURLPattern": "(^https?://)|(^#)|(^mailto:[\\w.-]+@([\\w.-]+\\.)+\\w+(\\?|$))|(^chrome://)|(^/@)"
+    "ignoreURLPattern": "(^https?://)|(^#)|(^javascript:)|(^mailto:[\\w.-]+@([\\w.-]+\\.)+\\w+(\\?|$))|(^chrome://)|(^/@)"
   }
 }

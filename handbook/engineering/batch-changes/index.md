@@ -10,7 +10,7 @@ This is the inspirational end game state for Batch Changes in 3 years:
 
 - **Code invariants** - Describe a code pattern once, and your batch change will fix it everywhere, automatically, forever, thanks to its declarative model.
 - **Continuous maintenance** - Instead of deferring codebase maintenance to large, painful, and risky changes, Batch Changes lets developers introduce changes incrementally and in a safe and automated way. Much like CI/CD increased efficiency and reduced risk through small deployments, Batch Changes lets developers make incremental codebase-wide changes.
-- **In-editor and instant feedback** - Developers don’t leave the editor to create or be notified of changesets. Repository owners can discover and apply great code patterns faster.
+- **In-editor and instant feedback** - Developers don’t leave the editor to create or be notified of changesets. Repository owners can discover and apply great code patterns faster. Linters are not enough: when you catch a new pattern, you want to make sure it's not introduced again (lint), but also fix it everywhere it already exists.
 - **Universal Batch Changes** - Make changes to public and private code. Open source projects can provide batch specs so that their dependents can seamlessly upgrade. Batch Changes eases upgrading in private and on-premise environments.
 
 ## Contact
@@ -45,7 +45,7 @@ We track and report anonymous, non-specific, aggregate metrics from Sourcegraph 
 
 ### Key success metrics
 
-| Outcome                                             | Metric                                                                    
+| Outcome                                             | Metric
 |----------------------------------------------------|------------------------------------------------------------------------ |
 | Are developers using Batch Changes?                 | number of batch changes created, number of changesets published        |
 | Are batch changes successful?                       | merge rate of batch changes (changesets merged / changesets published) |
@@ -84,9 +84,9 @@ When I create a batch change to make large-scale code changes I want to _focus o
 Our two-week sprints start every other Wednesday. We follow this process:
 
 * Before the iteration (sprint N+1) begins, we do pre-planning to make the most of our the planning meeting:
-  * EM creates the milestone for sprint N+1 and a `planned/BatchersSprintN` label for things that didn't get finished in the previous sprint.
-  * Everyone on the team looks through [our backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fbatchers+milestone%3ABacklog) for any issues they think we should consider for the next sprint. To to so, add the issue to the "Needs prioritization" column of [our planning project](https://github.com/orgs/sourcegraph/projects/119).
-  * Everyone on the team looks through our planning project for any issues they do not expect to finish by the end of the sprint (EOD Tuesday), and set the next sprint's milestone. Make sure to set the relevant `planned` label on issues that move to the next sprint, for tracking and accountability.
+  * EM creates the milestone for sprint N+1.
+  * EM checks for [untracked issues](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+no%3Aproject+label%3Ateam%2Fbatchers) and adds them to the "Needs prioritization" column of [our planning project](https://github.com/orgs/sourcegraph/projects/119).
+  * Everyone on the team looks through our planning project for any issues they do not expect to finish by the end of the sprint (EOD Tuesday), and set the next sprint's milestone.
   * Engineers add/refine estimates to issues in the planning project. All estimates in GitHub are assumed to be upper-bound estimates. (A missing estimate means "between 1 second and 1 trillion years.")
   * Everyone on the team reviews our [roadmap in Productboard](https://sourcegraph.productboard.com/roadmap/2263724-campaigns-releases) for the current/next release.
 
@@ -115,13 +115,13 @@ The Batch Changes team is the current owner of [src-cli](https://github.com/sour
 
 ## Members
 
-- [Malo Marrec](../../../company/team/index.md#malo-marrec-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
-- [Rob Rhyne](../../../company/team/index.md#rob-rhyne) ([Product Designer](../../product/roles/index.md#product-designer))
-- [Chris Pine](../../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](../roles.md#engineering-manager)) {#batch-changes-eng}
-  - [Thorsten Ball](../../../company/team/index.md#thorsten-ball-he-him)
-  - [Adam Harvey](../../../company/team/index.md#adam-harvey-he-him)
-  - [Erik Seliger](../../../company/team/index.md#erik-seliger)
-  - K.R. starting May 3
+- [Malo Marrec](../../company/team/index.md#malo-marrec-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
+- [Rob Rhyne](../../company/team/index.md#rob-rhyne) ([Product Designer](../../product/roles/index.md#product-designer))
+- [Chris Pine](../../company/team/index.md#chris-pine-he-she-they-chris) ([Engineering Manager](../roles.md#engineering-manager)) {#batch-changes-eng}
+  - [Thorsten Ball](../../company/team/index.md#thorsten-ball-he-him)
+  - [Adam Harvey](../../company/team/index.md#adam-harvey-he-him)
+  - [Erik Seliger](../../company/team/index.md#erik-seliger)
+  - [Kelli Rockwell](../../company/team/index.md#kelli-rockwell-she-her)
 
 ## Related links
 
@@ -129,6 +129,7 @@ The Batch Changes team is the current owner of [src-cli](https://github.com/sour
 - [Developer documentation](https://docs.sourcegraph.com/dev/background-information/batch_changes)
 - [Onboarding](onboarding.md)
 - [Supporting Batch Changes](supporting-batch-changes.md)
+- [CE onboarding](ce-onboarding.md)
 - [Batch Changes Drive Folder (private)](https://drive.google.com/drive/u/0/folders/18Sa_NpsVRvVV8MIvuXyoDEinpEf8fbGn)
 - [Batch Changes Product Marketing Brief](https://docs.google.com/document/d/1yQpCKF50gx8_T-KDnU4s9TjW6fZpMUfWLF2h4xSM8jk)
 

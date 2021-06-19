@@ -68,7 +68,9 @@ Our iterations last two weeks and are comprised of the following:
   1. Review any existing agenda items and be prepared to discuss them.
   1. Update the current release [tracking issue](../tracking_issues.md) with a summary of progress for the previous week and plans for the next week.
 
-- Team Updates: Every Friday, we update the tracking issue with our weekly progress to inform external stakeholders of the state of milestone goals. The engineers working on a goal are responsible for its update.
+- Team Updates:   
+  1. Each day, our Daily Standup Bot prompts us to add a text check-in by answering what we worked on the day before, what we're planning to work on next, and if there are any current blockers.
+  2. Every Friday, we update the tracking issue with our weekly progress to inform external stakeholders of the state of milestone goals. The engineers working on a goal are responsible for its update. 
 
 We track most of our work as [issues on the Sourcegraph main repository](https://github.com/sourcegraph/sourcegraph/issues). If you have an issue that wants our attention, mention [the @sourcegraph/code-intel team](https://github.com/orgs/sourcegraph/teams/code-intel) or tag your issue with the [`team/code-intelligence` label](https://github.com/sourcegraph/sourcegraph/labels/team%2Fcode-intelligence).
 
@@ -94,14 +96,13 @@ Our team is growing and to help our new teammates have the best onboarding exper
 
 ## Members
 
-- [María Craig](../../../company/team/index.md#maría-craig-she-her) ([Product Manager](../../product/roles/index.md#product-manager))
-- [Alicja Suska](../../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
-- [Owen Convey](../../../company/team/index.md#owen-convey-he-him) ([Engineering Manager](../roles.md#engineering-manager)) {#code-intelligence-eng}
-  - [Eric Fritz](../../../company/team/index.md#eric-fritz-he-him)
-  - [Roux](../../../company/team/index.md#roux-they-them)
-  - [Noah Santschi-Cooney](../../../company/team/index.md#noah-santschi-cooney-he-him)
-  - [Ólafur Páll Geirsson](../../../company/team/index.md#olafurpg)
-  - [TJ DeVries](../../../company/team/index.md#tj-devries)
+- [María Craig](../../company/team/index.md#maría-craig-she-her) ([Product Manager](../../product/roles/index.md#product-manager))
+- [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
+- [Owen Convey](../../company/team/index.md#owen-convey-he-him) ([Engineering Manager](../roles.md#engineering-manager)) {#code-intelligence-eng}
+  - [Eric Fritz](../../company/team/index.md#eric-fritz-he-him)
+  - [Noah Santschi-Cooney](../../company/team/index.md#noah-santschi-cooney-he-him)
+  - [Ólafur Páll Geirsson](../../company/team/index.md#olafurpg)
+  - [TJ DeVries](../../company/team/index.md#tj-devries)
   - FQ3 hire
 
 ## Ownership

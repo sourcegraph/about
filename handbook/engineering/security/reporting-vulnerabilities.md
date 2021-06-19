@@ -1,12 +1,34 @@
 # Reporting a vulnerability
 
-If you think that you have found a security or privacy vulnerability, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will reply to reports within 2 US business days to acknowledge that we received them, and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread. We will read, but may not respond to low quality or spammy reports (e.g. those produced by automated tooling). We welcome reports from everyone, including security researchers, developers, and customers.
+We at Sourcegraph value the security community and believe that responsible disclosure of security vulnerabilities in our product and tools helps us ensure the security and privacy of our users. 
 
-### Bounties
+If you think that you have found a security or privacy vulnerability, please email us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>. We will reply to reports within 5 US business days to acknowledge that we received them, and will strive to send you regular updates on our progress until the issue is resolved. You may request an update by replying to the existing email thread. We will read, but may not respond to low quality or spammy reports (e.g. those produced by automated tooling). We welcome reports from everyone, including security researchers, developers, and customers.
+
+### Bug bounty
 
 We provide monetary rewards, from $50 to $10,000 USD, for security vulnerability reports. The actual reward amount is determined based on the number of customers impacted, the difficulty of exploiting the vulnerability, the severity of the consequences (e.g. service disruption, data leakage, reputational damage to Sourcegraph) of a successful exploit, and the quality of the security report.
 
 When a monetary bounty is presented, eligible reports will be based on the severity, as determined by [CVSS v3.1](https://www.first.org/cvss/calculator/3.1). We will send payment to a valid PayPal account. We will ask you for the name and country associated with your PayPal account.
+
+**Safe Harbor**
+
+Sourcegraph commits to not pursuing legal action against researchers for actions conducted according to our policies and within the declared scope.
+
+**Scope**
+
+The following products and deployments are within scope for our Bug Bounty program:
+
+- Sourcegraph Cloud deployment: sourcegraph.com
+- Sourcegraph source code: https://github.com/sourcegraph/sourcegraph
+- Sourcegraph CLI: https://github.com/sourcegraph/src-cli
+- Sourcegraph browser extension: https://github.com/sourcegraph/sourcegraph/tree/main/client/browser
+- Sourcegraph extensions developed by Sourcegraph: https://sourcegraph.com/extensions?category=All&query=Sourcegraph
+
+The following targets and actions are out-of-scope:
+- Sourcegraph domains not listed in the in-scope section
+- Social engineering against Sourcegraph users and employees
+- Denial of Service
+- Spamming
 
 **Categories**
 
@@ -24,7 +46,7 @@ All timelines below reflect US business days.
 
 | Type of response       | Time to response     |
 | :------------- | :----------: |
-| First response| 2 days |
+| First response| 5 days |
 | Time to initial investigation and assessment | 10 days |
 | Time to bounty determination | 20 days |
 | Time to resolution | depends on severity and complexity |
@@ -67,6 +89,14 @@ When we receive [a report of a security vulnerability](#submission-requirements)
 
 - If not, a member of our security team will respond to the report to notify the reporter why we are not acting on the report.
 
-  > Thank you for your report. Could you please provide us with $INFOX, $INFOY, and \$INFOZ so we can investigate this further?
+## How we disclose security vulnerabilities
 
-  > Thank you for your report. We will not be taking further action on this report because \$REASONS.
+For every confirmed vulnerability in Sourcegraph or its products, regardless of severity, the Security team will:
+
+- Create a security advisory describing the vulnerability, impact to users and remediation. We currently publish GitHub Security Advisories in our GitHub repositories. 
+- Request a CVE ID for each vulnerability.
+- Update the CHANGELOG with a reference to the CVE and advisory.
+- Inform the security updates mailing list.
+- Coordinate upgrades with customers for HIGH/CRITICAL issues.
+
+If you find any past Sourcegraph vulnerabilities that were not disclosed this way please let us know. 

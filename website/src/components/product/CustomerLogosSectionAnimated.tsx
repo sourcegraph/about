@@ -12,27 +12,48 @@ const ITEMS: {
     }
 }[] = [
         {
-            name: 'Collective Health',
-            url: '/external-logos/collective-health-logo.svg',
+            name: 'Amazon',
+            url: '/external-logos/amazon-logo.svg',
         },
         {
-            name: 'F5',
-            url: '/external-logos/f5-logo.svg',
+            name: 'Dropbox',
+            url: '/external-logos/dropbox-logo.svg',
+        },
+        {
+            name: 'Cloudflare',
+            url: '/external-logos/cloudflare-color-logo.svg',
+        },
+        {
+            name: 'GE',
+            url: '/external-logos/general-electric-logo.svg',
+        },
+        {
+            name: 'Paypal',
+            url: '/external-logos/paypal-logo.svg',
+        },
+        {
+            name: 'Indeed',
+            url: '/external-logos/indeed-logo.svg',
         },
         {
             name: 'Uber',
             url: '/external-logos/uber.svg',
         },
         {
-            name: 'Lyft',
-            url: '/external-logos/lyft-logo.svg',
-            // link: {
-            //     url: '/case-studies/lyft-monolith-to-microservices',
-            // },
+            name: 'Plaid',
+            url: '/external-logos/plaid-logo.svg',
         },
         {
-            name: 'Amazon',
-            url: '/external-logos/amazon-logo.svg',
+            name: 'Lyft',
+            url: '/external-logos/lyft-logo.svg',
+        },
+        {
+            name: 'Collective Health',
+            url: '/external-logos/collective-health-logo.svg',
+        },
+        {
+            name: 'F5',
+            url: '/external-logos/f5-logo.svg',
         },
         {
             name: 'Qualtrics',
@@ -43,28 +64,12 @@ const ITEMS: {
             url: '/external-logos/toast-logo.svg',
         },
         {
-            name: 'GE',
-            url: '/external-logos/general-electric-logo.svg',
-        },
-        {
             name: 'SoFi',
             url: '/external-logos/sofi-logo.svg',
-            // link: {
-            //     url: '/case-studies/sofi-moves-fast-on-hundreds-of-microservices',
-            // },
         },
         {
             name: 'Yelp',
             url: '/external-logos/yelp.svg',
-            // link: {
-            //     url: 'https://engineeringblog.yelp.com/2019/11/winning-the-hackathon-with-sourcegraph.html',
-            //     target: '_blank',
-            //     rel: 'nofollow',
-            // },
-        },
-        {
-            name: 'Dropbox',
-            url: '/external-logos/dropbox-logo.svg',
         },
         {
             name: 'Prezi',
@@ -85,24 +90,14 @@ const ITEMS: {
         {
             name: 'Quantcast',
             url: '/external-logos/quantcast-logo.svg',
-            // link: {
-            //     url: '/case-studies/quantcast-large-scale-refactoring',
-            // }
         },
         {
             name: 'Criteo',
             url: '/external-logos/criteo-logo.svg',
         },
         {
-            name: 'Paypal',
-            url: '/external-logos/paypal-logo.svg',
-        },
-        {
             name: 'Convoy',
             url: '/external-logos/convoy-logo.svg',
-            // link: {
-            //     url: '/case-studies/convoy-improved-on-boarding',
-            // },
         },
         {
             name: 'Outreach',
@@ -119,10 +114,6 @@ const ITEMS: {
         {
             name: 'Expanse',
             url: '/external-logos/expanse-logo.svg',
-        },
-        {
-            name: 'Cloudflare',
-            url: '/external-logos/cloudflare-color-logo.svg',
         },
         {
             name: 'Factset',
@@ -151,17 +142,6 @@ const ITEMS: {
         {
             name: 'Thorn',
             url: '/external-logos/thorn-logo.svg',
-            // link: {
-            //     url: '/case-studies/we-are-thorn',
-            // },
-        },
-        {
-            name: 'Plaid',
-            url: '/external-logos/plaid-logo.svg',
-        },
-        {
-            name: 'Indeed',
-            url: '/external-logos/indeed-logo.svg',
         },
         {
             name: 'TripActions',
@@ -174,6 +154,10 @@ const ITEMS: {
         {
             name: 'GetYourGuide',
             url: '/external-logos/gyg.svg',
+        },
+        {
+            name: 'Twilio',
+            url: '/external-logos/twilio-segment-horizontal-darkacai-logo.svg',
         },
     ]
 
@@ -392,8 +376,8 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
             </h3>
             {!showButton &&
                 <div className="row justify-content-center">
-                    <div className="col-lg-6 text-center">
-                        <a href="/case-studies">Read case studies <ArrowRightBoxIcon className="icon-inline ml-1" /></a>
+                    <div className="col-lg-6 text-center mt-2">
+                        <a href="/case-studies" className="btn btn-outline-primary">Read case studies <ArrowRightBoxIcon className="icon-inline ml-1" /></a>
                     </div>
                 </div>
             }
@@ -402,7 +386,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
                 ref={innerContainerRef}
             >
                 {(windowWidth > minDeviceWidth) && showButton &&
-                    <a href="/customers">
+                    <a href="/case-studies">
                         <animated.div className={"sourcegraph-cta-button " + buttonClass} style={{ left: x, top: y, transform: scale.interpolate(s => `scale(${s}) translate(-50%, -50%)`) }}>
                             Learn how customers <br /> use Sourcegraph
                     </animated.div>
@@ -441,7 +425,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
             </div>
             {(windowWidth < minDeviceWidth) && showButton &&
                 <div className={"sourcegraph-cta-bottom-container"}>
-                    <a href="/customers" className={"sourcegraph-cta-link-bottom"}>
+                    <a href="/case-studies" className={"sourcegraph-cta-link-bottom"}>
                         <div className={"sourcegraph-cta-button-bottom"}>Learn how customers <br /> use Sourcegraph</div>
                     </a>
                 </div>

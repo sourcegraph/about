@@ -90,11 +90,11 @@ export default ((props: any) => (
                     <div className="col-lg-7 pl-lg-6">
                         <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
-                                class="embed-responsive-item"
+                                className="embed-responsive-item"
                                 src="https://www.youtube-nocookie.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
+                                allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
+                                frameBorder={0}
                                 title="Universal code search using regex with Sourcegraph"
                             ></iframe>
                         </div>
@@ -135,11 +135,11 @@ export default ((props: any) => (
                     <div className="col-lg-7 pl-lg-6">
                         <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
-                                class="embed-responsive-item"
+                                className="embed-responsive-item"
                                 src="https://www.youtube-nocookie.com/embed/KSx61-yAMLs?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
+                                allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
+                                frameBorder={0}
                                 title="Exploring code with Sourcegraph"
                             ></iframe>
                         </div>
@@ -184,11 +184,11 @@ export default ((props: any) => (
                     <div className="col-lg-7 pl-lg-6">
                         <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
-                                class="embed-responsive-item"
+                                className="embed-responsive-item"
                                 src="https://www.youtube-nocookie.com/embed/OGd8wr7XpgU?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
+                                allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
+                                frameBorder={0}
                                 title="Searching for security vulnerabilities company-wide with Sourcegraph"
                             ></iframe>
                         </div>
@@ -230,11 +230,11 @@ export default ((props: any) => (
                     <div className="col-lg-7 pl-lg-6">
                         <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
                             <iframe
-                                class="embed-responsive-item"
+                                className="embed-responsive-item"
                                 src="https://www.youtube-nocookie.com/embed/LgpuH2iaZ3w?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                                allowfullscreen=""
+                                allowFullScreen={true}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                frameborder="0"
+                                frameBorder={0}
                                 title="Sourcegraph and GitLab: Code reviews and code discovery in action"
                             ></iframe>
                         </div>
@@ -271,7 +271,7 @@ export default ((props: any) => (
                 <div className="row">
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Fix things quickly and safely</h2>
-                        <p>
+                        <div>
                             Teams use Batch Changes to swiftly and securely remove legacy code, fix critical security
                             issues, pay down tech debt, and make large-scale code changes and refactors across the
                             entire codebase:
@@ -289,8 +289,7 @@ export default ((props: any) => (
                                     across the entire codebase
                                 </li>
                             </ul>
-                        </p>
-                        <p></p>
+                        </div>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
                         <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
