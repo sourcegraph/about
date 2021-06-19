@@ -36,9 +36,6 @@ changelogItems:
   - description: A new bulk operation to merge many changesets at once has been added to Batch Changes.
     url: https://github.com/sourcegraph/sourcegraph/pull/21959
     category: Batch Changes
-  - description: Pings include aggregated usage for the Code Insights creation UI, organization visible insight count per insight type, and insight step size in days.
-    url: https://github.com/sourcegraph/sourcegraph/pull/21671
-    category: 
   - description: "Search-based insight creation UI now supports `count:` filter in data series query input."
     url: https://github.com/sourcegraph/sourcegraph/pull/22049
     category: Search
@@ -52,15 +49,9 @@ changelogItems:
   - description: "Search streaming is now permanently enabled and `experimentalFeatures.searchStreaming` setting has been deprecated."
     url: https://github.com/sourcegraph/sourcegraph/pull/21522
     category: Search
-  - description: Pings removes the collection of aggregate search filter usage counts and adds a smaller set of aggregate usage counts for query operators, predicates, and pattern counts.
-    url: https://github.com/sourcegraph/sourcegraph/pull/21320
-    category: Search
   - description: "Sourcegraph will now refuse to start if there are unfinished [out-of-band-migrations](https://docs.sourcegraph.com/admin/migrations) that are deprecated in the current version. See the [upgrade documentation](https://docs.sourcegraph.com/admin/updates) for changes to the upgrade process."
     url: https://github.com/sourcegraph/sourcegraph/pull/20967
     category: Admin
-  - description: Code Insight pages now have new URLs
-    url: https://github.com/sourcegraph/sourcegraph/pull/21856
-    category: 
 # Fixed
   - description: "Stricter validation of structural search queries. The `type:` parameter is not supported for structural searches and returns an appropriate alert."
     url: https://github.com/sourcegraph/sourcegraph/pull/21487
@@ -103,12 +94,20 @@ We are proud to bring you an entirely new visual design for the Sourcegraph UI. 
 ## Code Insights
 
 ### One-click Code Insights creation from your search
-TODO IMG PLACEHOLDER
-You can now create code insights with 1 click, right from the search query view. Take your search query and turn it into a visualization of your results count in your code over time, to see if your usage of an API, function, or other target is growing or shrinking.
+
+<p><video autoplay loop muted playsinline style="width:600px">
+  <source src="https://sourcegraphstatic.com/blog/3.29/one_click_create_insight.mp4" type="video/mp4">
+ </video></p>
+ 
+ You can now create code insights with 1 click, right from the search query view. Take your search query and turn it into a visualization of your results count in your code over time, to see if your usage of an API, function, or other target is growing or shrinking.
 
 ### Improved creation forms for Code Insights
-TODO IMG PLACEHOLDER
-We now autosuggest and autocomplete the repository field in the correct format. The forms also now autosave your configuration, in case you navigate away before you hit "create." (You can clear your existing autosave if you want to start fresh, with the "clear all fields" button.)
+
+<p><video autoplay loop muted playsinline style="width:600px">
+  <source src="https://sourcegraphstatic.com/blog/3.29/autosuggest_autosave_code_insights.mp4" type="video/mp4">
+ </video></p>
+
+ We now autosuggest and autocomplete the repository field in the correct format. The forms also now autosave your configuration, in case you navigate away before you hit "create." (You can clear your existing autosave if you want to start fresh, with the "clear all fields" button.)
 
 ## Batch Changes
 
