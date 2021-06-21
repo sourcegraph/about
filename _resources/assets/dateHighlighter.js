@@ -1,8 +1,16 @@
 import { parse } from 'https://cdn.skypack.dev/chrono-node'
+import tippy from 'https://cdn.skypack.dev/tippy.js'
 
 window.addEventListener('DOMContentLoaded', () => {
     for (const element of document.querySelectorAll('time')) {
-        element.title = getDateTooltip(element)
+        tippy(element, {
+            content: getDateTooltip(element),
+            placement: 'bottom-end',
+            arrow: false,
+            duration: 0,
+            offset: [0, 6],
+            theme: 'light',
+        })
     }
 })
 
