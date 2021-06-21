@@ -1,5 +1,5 @@
-import { parse } from 'https://cdn.skypack.dev/chrono-node'
-import tippy from 'https://cdn.skypack.dev/tippy.js'
+import { parse } from 'https://cdn.skypack.dev/chrono-node@2'
+import tippy from 'https://cdn.skypack.dev/tippy.js@6'
 
 window.addEventListener('DOMContentLoaded', () => {
     for (const element of document.querySelectorAll('time')) {
