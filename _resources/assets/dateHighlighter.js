@@ -46,6 +46,8 @@ function formatDateTime(timeElement) {
     if (!parsed) {
         return timeElement.dateTime
     }
+
+    // Only include the parts of the date that we know about
     /** @type {Intl.DateTimeFormatOptions} */
     const options = {
         year: parsed.isCertain('year') ? 'numeric' : undefined,
