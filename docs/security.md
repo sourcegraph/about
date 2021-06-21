@@ -48,7 +48,7 @@ Sourcegraph on-premise allows you to have the most control over the deployment a
 
 - Authentication via SAML, OAuth, HTTP Proxy auth, and OpenID Connect is configurable. Basic authentication is enabled by default.
 
-- Sourcegraph can be configured to [enforce repository permissions](https://docs.sourcegraph.com/admin/repo/permissions) from connected code hosts. Sourcegraph also exposes a GraphQL API to explicitly set repository permissions.
+- Enterprise customers can configure Sourcegraph to [enforce repository permissions](https://docs.sourcegraph.com/admin/repo/permissions) from connected code hosts. Sourcegraph also exposes a GraphQL API to explicitly set repository permissions.
 
 - Encryption at-rest and in-transit are configurable and highly recommended.
 
@@ -85,3 +85,7 @@ We ensure Sourcegraph is secure by using security tooling and processes:
 - Regular internal audits of our code and systems.
 - Annual 3rd party penetration tests.
 - Code coverage tools to ensure unit test coverage.
+
+### Software Bill of Materials (SBOM) and OSS usage
+
+Sourcegraph is an OSS product licensed under Apache 2.0. We also make great use of open source components and ship them as part of our application. Full lists of tools and licenses can be found [here](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/third-party-licenses)
