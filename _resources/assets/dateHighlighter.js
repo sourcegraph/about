@@ -19,6 +19,18 @@ window.addEventListener('DOMContentLoaded', () => {
  * @returns {string}
  */
 function getDateTooltip(element) {
+    let tooltip = formatDateTime(element)
+    if (element.dataset.isStartOfInterval) {
+        tooltip = 'Begins on ' + tooltip
+    }
+    return tooltip
+}
+
+/**
+ * @param {HTMLTimeElement} element
+ * @returns {string}
+ */
+function formatDateTime(element) {
     // See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#valid_datetime_values for possible values of `element.dateTime`.
 
     // Handle MM-DD reference
