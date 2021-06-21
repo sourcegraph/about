@@ -13,7 +13,7 @@ and provide the entire Sales organization the tools and training to execute at a
 
 ## Basic Goals -  What We Do
 
-   ## Value Engineering Team
+   ### Value Engineering Team
  - Interview prospective customers in the early stages of a deal to help build a joint business case with them in close partnership with Account Executives (AEs) and Customer Engineers (CEs)
  - Build outside-in business cases to support later stages of a deal working with the account team (AE + CE) without any customer interviews and instead utilizing publicly available information, and benchmarks from industry / other customers
  - Help support a challenging customer renewal with a value realized estimation exercise
@@ -28,7 +28,7 @@ and provide the entire Sales organization the tools and training to execute at a
  - Contribute to pricing & packaging strategy ensuring that they scale with value delivered to customers, minimizing long term price-to-value challenges as the company grows
  - Assist in designing how data should be captured and exchanged between all of the company’s operational systems that are related to customer value, including product analytics, CRM, demand generation, and customer success
 
-  ## Sales Enablement
+  ### Sales Enablement
  - Provide the Sales team with the resources they need to close more deals - including content, tools, knowledge, and information to effectively sell to customers.
  - Manage the Sales Onboarding Program and continually update based on current trends and content
 
