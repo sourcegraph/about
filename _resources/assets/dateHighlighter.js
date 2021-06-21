@@ -15,36 +15,36 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 /**
- * @param {HTMLTimeElement} element
+ * @param {HTMLTimeElement} timeElement
  * @returns {string}
  */
-function getDateTooltip(element) {
-    let tooltip = formatDateTime(element)
-    if (element.dataset.isStartOfInterval) {
+function getDateTooltip(timeElement) {
+    let tooltip = formatDateTime(timeElement)
+    if (timeElement.dataset.isStartOfInterval) {
         tooltip = 'Begins on ' + tooltip
     }
     return tooltip
 }
 
 /**
- * @param {HTMLTimeElement} element
+ * @param {HTMLTimeElement} timeElement
  * @returns {string}
  */
-function formatDateTime(element) {
-    // See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#valid_datetime_values for possible values of `element.dateTime`.
+function formatDateTime(timeElement) {
+    // See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#valid_datetime_values for possible values of `timeElement.dateTime`.
 
     // Handle MM-DD reference
-    if (/^\d\d-\d\d$/.test(element.dateTime)) {
-        return new Date(`${new Date().getFullYear()}-${element.dateTime}`).toLocaleString(undefined, {
+    if (/^\d\d-\d\d$/.test(timeElement.dateTime)) {
+        return new Date(`${new Date().getFullYear()}-${timeElement.dateTime}`).toLocaleString(undefined, {
             month: 'long',
             day: 'numeric',
         })
     }
 
     // Handle all other possible values with a lenient parser.
-    const parsed = parse(element.dateTime)[0]?.start
+    const parsed = parse(timeElement.dateTime)[0]?.start
     if (!parsed) {
-        return element.dateTime
+        return timeElement.dateTime
     }
     /** @type {Intl.DateTimeFormatOptions} */
     const options = {
