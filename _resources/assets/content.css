@@ -3,6 +3,14 @@
   content: "\A";
 }
 
+time {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #bbb;
+  text-underline-offset: 0.2em;
+  cursor: help;
+}
+
 .pre-wrap {
   white-space: pre-wrap;
 }
