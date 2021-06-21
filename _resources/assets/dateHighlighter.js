@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
     for (const element of document.querySelectorAll('time')) {
         tippy(element, {
             content: getDateTooltip(element),
-            placement: 'bottom-end',
+            placement: 'bottom-start',
             arrow: false,
             duration: 0,
             offset: [0, 6],
