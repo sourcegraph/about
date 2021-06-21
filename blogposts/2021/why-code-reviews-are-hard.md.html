@@ -1,6 +1,6 @@
 ---
 title: Why are code reviews still so hard?
-description: Code reviews got you down? Here's how to make the process better. 
+description: Code reviews are part of the job, so why are they still so tedious? Here's how to make the process better. 
 author: Florian Rappl
 authorUrl: https://twitter.com/florianrappl?lang=en
 publishDate: 2021-06-28T10:00-07:00
@@ -36,11 +36,11 @@ Large change requests result in exceedingly long reviews, usually taking hours o
 What can we do to mitigate these issues and improve the code review process?
 
 ## Improving the code review process
-Improving the review process starts with establishing and implementing a structured approach. To avoid context switching (or side-task distraction), you should conduct code reviews at fixed times — unless, of course, there is a bug fix that developers need to apply as soon as possible. Perform code reviews in a pair or mob programming manner, involving both junior and senior developers.
+Improving the review process starts with establishing and implementing a structured approach. To avoid context switching (or side-task distraction), consider conducting code reviews at fixed times — unless, of course, there is a bug fix that developers need to apply as soon as possible. Additionally, perform code reviews in a pair or mob programming manner, involving both junior and senior developers.
 
 Including less-experienced developers in the review process is beneficial. Reviewing code created by more experienced developers will help them to get to the same level faster.
 
-Also, less-experienced developers tend to ask more basic questions. Senior developers may not ask these questions, but talking them through may produce interesting answers. Sometimes, a small question triggers a non-trivial chain of thought that leads to new insights.
+Also, less-experienced developers tend to ask more basic questions. Senior developers may not ask these questions, but talking through seemingly "basic" questions may produce interesting answers. Sometimes, a small question triggers a non-trivial chain of thought that leads to new insights.
 
 Senior developers are often resistant to certain changes. For example, there might be hesitation towards changing the code style from object-oriented programming (OOP) to more functional programming (FP). Junior developers tend to be more open to change and are less likely to preserve systems purely because they’re familiar.
 
@@ -55,15 +55,15 @@ To reduce larger code reviews, timebox each review session. Always determine its
 But, what about context? How can we improve context retrieval? An enhanced code search is helpful here.
 
 ## Adding context to the review process 
-Universal code searches help improve many aspects of software development. This new tool eases code review pain by providing reviewers the right context, whether implicitly or on demand. Finding all references or jumping to definitions is only the beginning. There’s also no need to spin up a local integrated development environment.
+Universal code searches help improve many aspects of software development. It eases code review pain by providing reviewers the right context, whether implicitly or on demand. Finding all references or jumping to definitions is only the beginning. There’s also no need to spin up a local integrated development environment.
 
-Universal code search combines different repositories using different project types and languages in one search engine. The result is a knowledge graph of all combined sources that developers can query from a single location. This is done using a set of smart filters and context-aware operators. The search engine understands relationships between different parts of the code and treats them correctly.
+Universal code search combines different repositories using different project types and languages in one search engine. The result is a knowledge graph of all combined sources that you can query from a single location. This is done using a set of smart filters and context-aware operators. The search engine understands relationships between different parts of the code and treats them correctly.
 
-A solution like Sourcegraph allows developers to enhance existing tools such as GitHub or GitLab with universal search integration. Integrations are a vital part of the expected developer experience. Without the necessary integrations, developers may need to switch tooling.
+A solution like Sourcegraph allows you to enhance existing tools such as GitHub or GitLab with universal search integration. Integrations are a vital part of the expected developer experience. Without the necessary integrations, developers may need to switch tooling.
 
 With universal code search running on GitHub, more context is available directly in the code review. Method or function names link to corresponding sections of the codebase. There’s no need to keep a separate copy of the code open in your editor or integrated development environment to follow along and explore the changes.
 
-Search features in integrated development environments and text editors aren’t always up to the task of finding what’s needed. For example, code might be present many times, in different locations, in a database. Universal code search’s ability to spot similar code or duplicates is useful for developers. It identifies existing code much better and infers potential refactoring paths.
+Search features in integrated development environments and text editors aren’t always up to the task of finding what’s needed. For example, code might be present many times, in different locations, in a database. Universal code search’s ability to spot similar code or duplicates is useful: it identifies existing code much better and infers potential refactoring paths.
 
 These universal code search abilities also reduce the impact of large code reviews. Reviewers can see and understand larger change sets.
 
