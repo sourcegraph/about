@@ -4,6 +4,7 @@ import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import TwitchIcon from 'mdi-react/TwitchIcon'
+import SpotifyIcon from 'mdi-react/SpotifyIcon'
 import * as React from 'react'
 
 export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
@@ -55,6 +56,9 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 </li>
                                 <li className="nav-item">
                                     <a href="https://info.sourcegraph.com/emergence-of-big-code-2020-survey">Big code survey</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="https://open.spotify.com/user/p3ntuomfda8r7czdbsgy36ogk?si=8095204aefc24587">Sourcegraph Radio</a>
                                 </li>
                             </ul>
                         </div>
@@ -136,6 +140,16 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         aria-label="Twitch"
                                     >
                                         <TwitchIcon />
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a
+                                        href="https://open.spotify.com/user/p3ntuomfda8r7czdbsgy36ogk?si=8095204aefc24587"
+                                        target="_blank"
+                                        rel="nofollow noopener"
+                                        aria-label="Spotify"
+                                    >
+                                        <SpotifyIcon />
                                     </a>
                                 </li>
                             </ul>
