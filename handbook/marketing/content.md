@@ -76,7 +76,7 @@ The editorial team will triage pitches weekly on Monday. Once you have submitted
 
 ## Measuring quality 
 
-One of our values is quality and we want to be known as a brand that produces high-quality, interesting content. To ensure we are living our values, we have baked quality measurement into our editorial process. 
+One of our values is [high quality](/handbook/company/values#high-quality) and it's our job to make sure Sourcegraph is known as a brand that produces high-quality, interesting content. To ensure we are living our values, we have baked quality measurement into our editorial process. 
 
 There are many ways we can measure quality, such as:
 
