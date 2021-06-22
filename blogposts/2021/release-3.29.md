@@ -45,7 +45,7 @@ changelogItems:
     category: Batch Changes
   - description: "The copy query button is now permanently enabled and `experimentalFeatures.copyQueryButton` setting has been deprecated."
     url: https://github.com/sourcegraph/sourcegraph/pull/21364
-    category: 
+    category: Search
   - description: "Search streaming is now permanently enabled and `experimentalFeatures.searchStreaming` setting has been deprecated."
     url: https://github.com/sourcegraph/sourcegraph/pull/21522
     category: Search
