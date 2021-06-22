@@ -4,7 +4,7 @@ description: Code reviews are part of the job, so why are they still so tedious?
 author: Florian Rappl
 authorUrl: https://twitter.com/florianrappl?lang=en
 publishDate: 2021-06-28T10:00-07:00
-tags: [blog], [code review]
+tags: [blog, code review]
 slug: why-code-reviews-are-still-hard
 heroImage: /blog/thumbnail-image.jpg
 socialImage: Use to set large social image i.e.  https://about.sourcegraph.com/blog/sourcegraph-social-img.png
