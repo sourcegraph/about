@@ -4,7 +4,7 @@ publishDate: 2021-06-18T10:00-07:00
 description: "The Sourcegraph 3.29 release introduces improved search results ranking, makes it easier to create Code Insights, and includes support for bulk actions with Batch Changes."
 tags: [blog, release]
 slug: "release/3.29"
-published: false
+published: true
 changelogItems:
   - description: "Code Insights queries can now run concurrently up to a limit set by the `insights.query.worker.concurrency` site config."
     url: https://github.com/sourcegraph/sourcegraph/pull/21219
