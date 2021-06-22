@@ -11,13 +11,13 @@ changelogItems:
     category: Code Insights
   - description: "Code Insights workers now support a rate limit for query execution and historical data frame analysis using the `insights.query.worker.rateLimit` and `insights.historical.worker.rateLimit` site configurations."
     url: https://github.com/sourcegraph/sourcegraph/pull/21533
-    category: 
+    category: Code Insights
   - description: "The GraphQL `Site` `SettingsSubject` type now has an `allowSiteSettingsEdits` field to allow clients to determine whether the instance uses the `GLOBAL_SETTINGS_FILE` environment variable."
     url: https://github.com/sourcegraph/sourcegraph/pull/21827
     category: API
   - description: "Code Insights creation UI now has autosave logic and clear all fields functionality."
     url: https://github.com/sourcegraph/sourcegraph/pull/21744
-    category: 
+    category: Code Insights
   - description: Code Insights creation UI now has suggestions support for the repository fields.
     url: https://github.com/sourcegraph/sourcegraph/pull/21699
     category: Repositories
@@ -38,8 +38,7 @@ changelogItems:
     category: Batch Changes
   - description: "Search-based insight creation UI now supports `count:` filter in data series query input."
     url: https://github.com/sourcegraph/sourcegraph/pull/22049
-    category: Search
-# Changed
+    category: Code Insights
   - description: SSH public keys generated to access code hosts with batch changes now include a comment indicating they originated from Sourcegraph.
     url: https://github.com/sourcegraph/sourcegraph/issues/20523
     category: Batch Changes
@@ -52,7 +51,6 @@ changelogItems:
   - description: "Sourcegraph will now refuse to start if there are unfinished [out-of-band-migrations](https://docs.sourcegraph.com/admin/migrations) that are deprecated in the current version. See the [upgrade documentation](https://docs.sourcegraph.com/admin/updates) for changes to the upgrade process."
     url: https://github.com/sourcegraph/sourcegraph/pull/20967
     category: Admin
-# Fixed
   - description: "Stricter validation of structural search queries. The `type:` parameter is not supported for structural searches and returns an appropriate alert."
     url: https://github.com/sourcegraph/sourcegraph/pull/21487
     category: Search
@@ -61,14 +59,10 @@ changelogItems:
     category: Batch Changes
   - description: Code insights line chart no longer has a negative quadrant.
     url: https://github.com/sourcegraph/sourcegraph/pull/22018
-    category: 
+    category: Code Insights
   - description: "Correctly handle field aliases in the query (like `r:` versus `repo:`) when used with `contains` predicates."
     url: https://github.com/sourcegraph/sourcegraph/pull/22105
     category: Repositories
-# Removed
-  - description: "The deprecated GraphQL `icon` field on CommitSearchResult and Repository was removed."
-    url: https://github.com/sourcegraph/sourcegraph/pull/21310
-    category: Search
   - description: "The undocumented `index` filter was removed from search type-ahead suggestions."
     url: https://github.com/sourcegraph/sourcegraph/issues/18806
     category: Search
@@ -82,9 +76,6 @@ Sourcegraph 3.29 is now available! For this release, we introduced search result
 
 ## Search results ranking
 We're making search results more relevant, starting with better prioritization of repos vs. code in your search results. Search results and suggestions are now ranked by descending star count on sourcegraph.com and customer instances (for repos with stars), making it easier to find specific repos. Start searching on sourcegraph.com to experience the new ranking.
-
-Star count import from [github.com/sourcegraph/ghdump](https://github.com/sourcegraph/ghdump) is done. We now have 418,321 repos with star data in the production repo table.
-Suggestions and search results are now ranked by descending star count on sourcegraph.com (and customer instances if repos there have stars). Try it out live!
 
 ## New visual design for the Sourcegraph UI
 We are proud to bring you an entirely new visual design for the Sourcegraph UI. The new visual design was developed to help users find references, troubleshoot errors, gain insight, make changes on a massive scale, and read code. Check out our recent blog post to [learn more about the new Sourcegraph UI](/blog/introducing-sourcegraphs-new-ui/).
