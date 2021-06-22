@@ -18,7 +18,7 @@ changelogItems:
   - description: "Code Insights creation UI now has autosave logic and clear all fields functionality."
     url: https://github.com/sourcegraph/sourcegraph/pull/21744
     category: 
-  - description: Code Insights creation UI now has a suggestions support for the repository fields
+  - description: Code Insights creation UI now has suggestions support for the repository fields.
     url: https://github.com/sourcegraph/sourcegraph/pull/21699
     category: Repositories
   - description: A new bulk operation to retry many changesets at once has been added to Batch Changes.
