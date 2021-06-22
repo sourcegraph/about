@@ -27,7 +27,7 @@ changelogItems:
   - description: Added featured Sourcegraph extensions query to the GraphQL API, as well as a section in the extension registry to display featured extensions.
     url: https://github.com/sourcegraph/sourcegraph/pull/21665
     category: API
-  - description: "The search page now has a `create insight` button to create search-based insight based on your search query"
+  - description: "The search page now has a `create insight` button to create search-based insights based on your search query."
     url: https://github.com/sourcegraph/sourcegraph/pull/21943
     category: Search
   - description: Added support for Terraform syntax highlighting.
