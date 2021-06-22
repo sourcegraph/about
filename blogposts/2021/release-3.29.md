@@ -15,7 +15,7 @@ changelogItems:
   - description: "The GraphQL `Site` `SettingsSubject` type now has an `allowSiteSettingsEdits` field to allow clients to determine whether the instance uses the `GLOBAL_SETTINGS_FILE` environment variable."
     url: https://github.com/sourcegraph/sourcegraph/pull/21827
     category: API
-  - description: "Code Insights creation UI now has auto-save logic and clear all fields functionality"
+  - description: "Code Insights creation UI now has autosave logic and clear all fields functionality."
     url: https://github.com/sourcegraph/sourcegraph/pull/21744
     category: 
   - description: Code Insights creation UI now has a suggestions support for the repository fields
