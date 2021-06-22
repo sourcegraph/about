@@ -59,7 +59,7 @@ changelogItems:
   - description: Batch changeset specs that are not attached to changesets will no longer prematurely expire before the batch specs that they are associated with.
     url: https://github.com/sourcegraph/sourcegraph/pull/21678
     category: Batch Changes
-  - description: Code insights line chart no longer has a negative quadrant
+  - description: Code insights line chart no longer has a negative quadrant.
     url: https://github.com/sourcegraph/sourcegraph/pull/22018
     category: 
   - description: "Correctly handle field aliases in the query (like `r:` versus `repo:`) when used with `contains` predicates."
