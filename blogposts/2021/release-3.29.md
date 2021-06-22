@@ -32,7 +32,7 @@ changelogItems:
     category: Search
   - description: Added support for Terraform syntax highlighting.
     url: https://github.com/sourcegraph/sourcegraph/pull/22040
-    category: 
+    category: Search
   - description: A new bulk operation to merge many changesets at once has been added to Batch Changes.
     url: https://github.com/sourcegraph/sourcegraph/pull/21959
     category: Batch Changes
