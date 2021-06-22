@@ -87,7 +87,7 @@ Star count import from [github.com/sourcegraph/ghdump](https://github.com/source
 Suggestions and search results are now ranked by descending star count on sourcegraph.com (and customer instances if repos there have stars). Try it out live!
 
 ## New visual design for the Sourcegraph UI
-We are proud to bring you an entirely new visual design for the Sourcegraph UI. The new visual design was developed to help users find references, troubleshoot errors, gain insight, make changes on a massive scale, and read code. Check out the [blog post](https://about.sourcegraph.com/blog/introducing-sourcegraphs-new-ui/) to learn more.
+We are proud to bring you an entirely new visual design for the Sourcegraph UI. The new visual design was developed to help users find references, troubleshoot errors, gain insight, make changes on a massive scale, and read code. Check out our recent blog post to [learn more about the new Sourcegraph UI](/blog/introducing-sourcegraphs-new-ui/).
 
 ![refined search results design screenshot](https://sourcegraphstatic.com/blog/redesign/r_search_results.png)
 
