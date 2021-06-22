@@ -99,7 +99,7 @@ We are proud to bring you an entirely new visual design for the Sourcegraph UI. 
   <source src="https://sourcegraphstatic.com/blog/3.29/one_click_create_insight.mp4" type="video/mp4">
  </video></p>
  
- You can now create code insights with 1 click, right from the search query view. Take your search query and turn it into a visualization of your results count in your code over time, to see if your usage of an API, function, or other target is growing or shrinking.
+ You can now create code insights with one click, right from the search query view. Take your search query and turn it into a visualization of your results count in your code over time, to see if your usage of an API, function, or other target is growing or shrinking.
 
 ### Improved creation forms for Code Insights
 
