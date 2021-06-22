@@ -42,7 +42,7 @@ Sourcegraph on-premise allows you to have the most control over the deployment a
 
 - Sourcegraph instances deployed on-premise do not send any customer code to other servers. Sourcegraph employees have no access to customer data or code.
 
-- Other than the email address of the initial installer (for customer support, security, and product notification purposes), Sourcegraph never sends any private user data, such as usernames or email addresses, or other specific data to any other servers, including to sourcegraph.com. Learn more in our [pings documentation](https://docs.sourcegraph.com/admin/pings).
+- Other than the email address of the initial installer (to know who to contact regarding sales, product updates, security updates, and policy updates), Sourcegraph customer-managed systems never send any private user data to any other system or servers maintained by Sourcegraph (company). Learn more in our [pings documentation](https://docs.sourcegraph.com/admin/pings).
 
 - When running Sourcegraph on your own infrastructure, all application logs are stored locally, and never shared with Sourcegraph. Sourcegraph employees and contractors never have access to your Sourcegraph instance, or any of its data, unless explicitly shared for troubleshooting purposes.
 
