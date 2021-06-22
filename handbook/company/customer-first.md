@@ -12,7 +12,7 @@ This means that everyone involved needs to be prepared to honor the area of owne
 In terms of responsibilities, we frame it like this:
 
 * Sales is responsible for establishing, retaining, and growing our commercial relationship with customers
-* Customer Engineering (aka CE) is responsible for educating our users on how to use Sourcegraph, providing  proactive technical expertise, and overall accountable for our customers’ success, usage, and adoption of our products
+* Customer Engineering (aka CE) is responsible for educating our users on how to use Sourcegraph, providing proactive technical expertise, and is overall accountable for our customers’ success, usage, and adoption of our products
 * Effective 2021-08-01, Customer Support (aka CS) is responsible for satisfying support SLAs for customers pre-sales (1 hour) and post-sales (defined contractual [SLAs](https://about.sourcegraph.com/handbook/support#slas)) between 2am-5pm pacific Monday-Friday (this will expand to 24/5 support as the team grows over the course of FY22). Between now and 2021-08-01, as the CS team hires and onboards additional folks, they will adhere to a 24 hour SLA for all pre-sales issues between 9am-5pm pacific Monday-Friday.
 * Product is responsible for the overall success of the product, including prioritization of support-driven, eng-driven, and product-driven efforts
 * Engineering is responsible for giving accurate time estimates (necessary for effective prioritization) and providing enough engineering capacity to respond to interrupts (non-defect, non-feature request issues filed by CS)
@@ -26,8 +26,8 @@ In terms of how that plays out day to day, we frame it like this:
 
 This is how this all fits together in terms of workflow:
 
-* Once a customer agrees to move forward with first a proof of concept, and again when they agree to move forward with a production set-up, the CE offers proactive coaching and guidance to set-up the customer for success
-* At any point pre-sales or post-sales (ie while setting up a proof of concept or production deployment), the customer may need:
+* Once a customer agrees to move forward with first a trial, and again when they agree to move forward with a production set-up, the CE offers proactive coaching and guidance to set-up the customer for success
+* At any point pre-sales or post-sales (ie while setting up a trial or production deployment), the customer may need:
 	* An answer to a how-to question
 	* To make a feature request
 	* Help troubleshooting something not working correctly
@@ -43,7 +43,7 @@ A few notes for CE:
 * CE routes all feature requests to product for consideration and prioritization
 * If a CE feels compelled to let a customer know CS will help them, they should do so without using loaded terms like “ASAP” or that sign-up CS for something they may not be able to honor
 	* *A member of our support team will help you with this. They typically are able to start digging in within a few hours at most, so you are in good hands! If anything has changed on your side to make this more urgent, let me know and I can be sure they are aware, too.*
-* CE should always provide as much context as possible to CS as outlined [here](https://about.sourcegraph.com/handbook/ce#customer-support-engineers-cses)
+* CE should always provide as much context as possible to CS as outlined [here](https://about.sourcegraph.com/handbook/ce/team-culture#customer-support-engineers-cses)
 
 A few notes for CS:
 
