@@ -78,9 +78,9 @@ Sourcegraph 3.29 is now available! For this release, we introduced search result
 We're making search results more relevant, starting with better prioritization of repos vs. code in your search results. Search results and suggestions are now ranked by descending star count on sourcegraph.com and customer instances (for repos with stars), making it easier to find specific repos. Start searching on sourcegraph.com to experience the new ranking.
 
 ## New visual design for the Sourcegraph UI
-We are proud to bring you an entirely new visual design for the Sourcegraph UI. The new visual design was developed to help users find references, troubleshoot errors, gain insight, make changes on a massive scale, and read code. Check out our recent blog post to [learn more about the new Sourcegraph UI](/blog/introducing-sourcegraphs-new-ui/).
+We are proud to bring you an entirely new visual design for the Sourcegraph UI. The new visual design was developed to help users find references, troubleshoot errors, gain insight, make changes on a massive scale, and read code. Check out our recent blog post to [learn more about the new Sourcegraph UI](/blog/introducing-sourcegraphs-new-ui/). 
 
-![refined search results design screenshot](https://sourcegraphstatic.com/blog/redesign/r_search_results.png)
+<img src="https://sourcegraphstatic.com/blog/redesign/r_search_results.png" alt="refined search results design screenshot" style="max-width:calc(100% - 10px);"/> 
 
 ## Code Insights
 
@@ -89,8 +89,8 @@ We are proud to bring you an entirely new visual design for the Sourcegraph UI. 
 <p><video autoplay loop muted playsinline style="width:600px">
   <source src="https://sourcegraphstatic.com/blog/3.29/one_click_create_insight.mp4" type="video/mp4">
  </video></p>
- 
- You can now create code insights with one click, right from the search query view. Take your search query and turn it into a visualization of your results count in your code over time, to see if your usage of an API, function, or other target is growing or shrinking.
+
+You can now create code insights with one click, right from the search query view. Take your search query and turn it into a visualization of your results count in your code over time, to see if your usage of an API, function, or other target is growing or shrinking.
 
 ### Improved creation forms for Code Insights
 
@@ -98,7 +98,7 @@ We are proud to bring you an entirely new visual design for the Sourcegraph UI. 
   <source src="https://sourcegraphstatic.com/blog/3.29/autosuggest_autosave_code_insights.mp4" type="video/mp4">
  </video></p>
 
- We now autosuggest and autocomplete the repository field in the correct format. The forms also now autosave your configuration, in case you navigate away before you hit "create." (You can clear your existing autosave if you want to start fresh, with the "clear all fields" button.)
+We now autosuggest and autocomplete the repository field in the correct format. The forms also now autosave your configuration, in case you navigate away before you hit "create." (You can clear your existing autosave if you want to start fresh, with the "clear all fields" button.)
 
 ## Batch Changes
 
