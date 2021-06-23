@@ -106,17 +106,6 @@ export default ((props: any) => (
                         rabbit holes. Let's get started!
                     </p>
 
-                    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-                        <iframe
-                            className="embed-responsive-item"
-                            src="https://www.youtube-nocookie.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                            allowFullScreen={true}
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            frameBorder={0}
-                            title="Universal code search using regex with Sourcegraph"
-                        ></iframe>
-                    </div>
-
 		            <hr className="my-md-6" id="" />
             	</div>
 
@@ -125,17 +114,6 @@ export default ((props: any) => (
                     <p>
                         Coming soon.
                     </p>
-
-                    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-                        <iframe
-                            className="embed-responsive-item"
-                            src="https://www.youtube-nocookie.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                            allowFullScreen={true}
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            frameBorder={0}
-                            title="Universal code search using regex with Sourcegraph"
-                        ></iframe>
-                    </div>
 
 		            <hr className="my-md-6" id="" />
             	</div>
@@ -173,17 +151,6 @@ export default ((props: any) => (
                         
                     <p> Code search improves the experience and velocity of development by acting as a search bar that can point devs in the right direction when they get stuck or need answers. It’s an integral part of an efficient dev workflow as it allows you to find code across all your repositories to find answers, references, and examples. If you are in the business of writing and shipping code, you should know about code search and how to use it. </p>
 
-                    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-                        <iframe
-                            className="embed-responsive-item"
-                            src="https://www.youtube-nocookie.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                            allowFullScreen={true}
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            frameBorder={0}
-                            title="Universal code search using regex with Sourcegraph"
-                        ></iframe>
-                    </div>
-
 		            <hr className="my-md-6" id="" />
             	</div>
 
@@ -198,17 +165,6 @@ export default ((props: any) => (
                         the necessary changes across codebases.
                     </p>
 
-                    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-                        <iframe
-                            className="embed-responsive-item"
-                            src="https://www.youtube-nocookie.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                            allowFullScreen={true}
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            frameBorder={0}
-                            title="Universal code search using regex with Sourcegraph"
-                        ></iframe>
-                    </div>
-
 		            <hr className="my-md-6" id="" />
             	</div>
 
@@ -222,17 +178,6 @@ export default ((props: any) => (
                         risky code changes. Then, use Batch Changes to automate the process of fixing, merging, and 
                         deploying the necessary changes across codebases.
                     </p>
-
-                    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-                        <iframe
-                            className="embed-responsive-item"
-                            src="https://www.youtube-nocookie.com/embed/J9k7l5W1qbk?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                            allowFullScreen={true}
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            frameBorder={0}
-                            title="Universal code search using regex with Sourcegraph"
-                        ></iframe>
-                    </div>
 
 		            <hr className="my-md-6" id="" />
             	</div>
