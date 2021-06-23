@@ -1,6 +1,6 @@
 ---
 title: "Sourcegraph 3.29 release"
-publishDate: 2021-06-18T10:00-07:00
+publishDate: 2021-06-23T10:00-07:00
 description: "The Sourcegraph 3.29 release introduces improved search results ranking, makes it easier to create Code Insights, and includes support for bulk actions with Batch Changes."
 tags: [blog, release]
 slug: "release/3.29"
