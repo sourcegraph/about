@@ -379,7 +379,7 @@ To add yourself to this page:
 ## Jonah Dueck (he/him)
 
 - Customer Engineer
-- Santa Clara, CA, USA 🇺🇸
+- Seattle, WA, USA 🇺🇸
 - [jonah@sourcegraph.com](mailto:jonah@sourcegraph.com), [justdueck](https://github.com/justdueck), [LinkedIn](https://www.linkedin.com/in/jonah-dueck/)
 -  Jonah has been working within the IT space since high school. He started out by founding and running a small IT company in northern Nevada while still in high school and after graduating, moved on to working for another small company in Northern California. Most recently, he worked in internal IT operations and technical program management at Google for about 2 years. Outside of work, he enjoys rock climbing, playing music (guitar and drums), riding his motorcycle and working on his old VW bus (there's always something breaking on it).
 
@@ -1019,3 +1019,12 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: [gabtorre](https://github.com/gabtorre), [LinkedIn](https://www.linkedin.com/in/gabtorres/)
 - [gabe@sourcegraph.com](mailto:gabe@sourcegraph.com)
 - Gabe is a developer from Los Angeles with a background in design. He enjoys sports, fitness, gaming, reading, exploring new places with his dog Bruno, and staring at art.
+
+## Suki Randhawa (He/Him)
+
+- Enterprise Account Executive
+- London, UK 🇬🇧
+- GitHub: [suki-randhawa1](https://github.com/suki-randhawa1)
+- [suki@sourcegraph.com](mailto:suki@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/suki-randhawa-353526/)
+- Suki is located in West London and is married with two kids. He started his career as a R&D developer, before moving to deploying and then selling software around the world. Suki and his wife founded a clothing brand to help new mums feed their lovely babies outside their home. Suki likes martial arts and all things HIIT related. Suki has a MBA from Henley Business School and a BSc from University of Warwick.
+

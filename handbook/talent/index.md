@@ -5,7 +5,7 @@ The Talent team is responsible for helping every team at Sourcegraph hire, and f
 ## Talent Team Members
 - [Carly Jones](../company/team/index.md#carly-jones-she-her), VP of Talent
     - [Devon Coords](../company/team/index.md#devon-coords-she-her), Senior Technical Recruiter, Team Lead
-    - [Kelsey Nagel], Marketing & Finance Recruiter 
+    - [Kelsey Nagel](../company/team/index.md#kelsey-nagel-she-her), Marketing & Finance Recruiter 
     - [Trevor Houghton](../company/team/index.md#trevor-houghton-he-him), Recruitment Operations Specialist
     - We are hiring Recruiters!  View our open positions [here](https://boards.greenhouse.io/sourcegraph91)
 
@@ -28,6 +28,9 @@ The Talent team is responsible for helping every team at Sourcegraph hire, and f
    - [Extending an offer] Coming soon
 - [Using recruitment agencies](https://about.sourcegraph.com/handbook/talent/hiring)
 - [Interview training & best practices] Coming soon
+   - [Unconscious bias training] Coming soon
+   - [Values interview training] Coming soon
+   - [Interviewing 101] Coming soon
 - Tools
    - [Greenhouse, our ATS](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_greenhouse)
    - [LinkedIn, our sourcing tool] Coming soon
@@ -39,7 +42,12 @@ The Talent team is responsible for helping every team at Sourcegraph hire, and f
 - [Interview training & best practices] Coming soon
 
 ## Resources for Recruiters 
-- [Partnering with hiring managers] Coming soon 
+- [Partnering with Hiring Managers](https://about.sourcegraph.com/handbook/talent/hiring/how_recruiting_interfaces_with_hiring_managers)
+- [Interview training & best practices] Coming soon
+   - [Unconscious bias training] Coming soon
+   - [Values interview training] Coming soon
+   - [Interviewing 101] Coming soon
+   - [Counter offer training] Coming soon
 - [Recruitment branding] Coming soon
 - Tools
    - [Greenhouse, our ATS](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_greenhouse)
