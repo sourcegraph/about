@@ -1,8 +1,8 @@
 ---
 title: "How not to break a search engine or: What I learned about unglamorous engineering"
 description: "When we switched to a new search query parser in September 2020, you'd never know that
-anything had changed. This is an account of the invisible, rigorous testing
-that happened behind the scenes to make this seamless transition possible."
+anything had changed. This is an account of the invisible, rigorous testing that
+happened behind the scenes to ensure a seamless transition."
 author: Rijnard van Tonder
 authorUrl: https://twitter.com/rvtond
 publishDate: 2021-06-24T10:00-07:00
@@ -29,9 +29,9 @@ for code:
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/search-bar.png" style="width: 660px" alt="Code search input bar">
 
-When the switch activated the new parser in September 2020, you'd never know that
-anything had changed. This is an account of the invisible, rigorous testing
-that happened behind the scenes to make this seamless switch possible.
+When the switch activated the new parser in September 2020, you'd never know
+that anything had changed. This is an account of the invisible, rigorous
+testing to ensure a seamless transition.
 
 The motivation for the change was to introduce standard boolean operators like
 `and`, `or`, and `not` in queries. Sourcegraph had supported some of these
@@ -235,15 +235,15 @@ broke in order to get there. In hindsight, did I go overboard on some parts and
 would I have done things differently? In short, no.  New functionality was
 rolled out iteratively and quickly in phases that users could freely try along
 the way. I also enabled new implementations on our dogfood instance as things
-matured. The core implementation probably took only two or three months, but
-crossing the point of no return and removing the fallback was a slow and
-thorough process. If I sensed that excessive testing was stunting progress and
-delaying the planned timeline, I might feel differently, but I never got that
-sense. And to be clear, I did more than rewriting and testing parsers in that
-six-month time frame, but that's off-topic. Our current state isn't perfect,
-there's more to tweak — but when the previous code was finally dropped, it
-wasn't one of those typical anxiety-inducing rushes to hit a deadline. It felt
-good and it felt right.
+matured. The core implementation and testing probably took only one or two
+months, but crossing the point of no return and removing the fallback was a
+slow and thorough process. If I sensed that excessive testing was stunting
+progress and delaying the planned timeline, I might feel differently, but I
+never got that sense. And to be clear, I did more than rewriting and testing
+parsers in that six-month time frame, but that's off-topic. Our current state
+isn't perfect, there's more to tweak — but when the previous code was finally
+dropped, it wasn't one of those typical anxiety-inducing rushes to hit a
+deadline. It felt good and it felt right.
 
 ## In closing: Unglamorous engineering and you
 
