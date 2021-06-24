@@ -27,7 +27,7 @@ Sourcegraph—the bit that users type into the search bar. This component
 processes every single input that goes into the search bar when users search
 for code: 
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/search-bar.png" style="width: 660px">
+<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/search-bar.png" style="width: 660px" alt="Code search input bar">
 
 When the switch activated the new parser in September 2020, you'd never know that
 anything had changed. This is an account of the invisible, rigorous testing
@@ -88,8 +88,7 @@ defense for testing correctness. I reused some of our existing parser tests
 lot of additional tests for new parts of the syntax. You bet there's test
 coverage.
 
-
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/parser-coverage.png" style="width: 300px">
+<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/parser-coverage.png" style="width: 300px" alt="Parser file unit test coverage">
 
 ### Part 2: Integration testing
 
@@ -101,7 +100,18 @@ important because the parser produced a new and different internal
 representation. I'd abstracted out a common interface for our backend to access
 the new data structure under the feature-flagged code path to test on.
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/integration.png" style="width: 800px">
+<figure style="width: 800px; margin: auto;">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/integration.png" alt="Integration testing diagram">
+  <a id="fig-1"><figcaption>
+  <i>Fig. 1: Integration testing abstracts a common interface for our backend
+  to access query values.
+  We test that the backend produces the same search results for
+  simple queries (ones that don't have, e.g., </i>
+  <code>or</code>
+  <i>-operators), irrespective of whether those values originate from the existing parser's output or the new one.</i></figcaption></a>
+</figure>
+
+<br>
 
 When I got to this part, we didn't have a good way to run integration tests. We
 had browser-based end-to-end testing that was onerous to set up, time-consuming
@@ -153,18 +163,18 @@ gave me peace of mind that things were holding up.
 ### Part 4: Differential testing
 
 Differential testing came towards the end of the migration work, when I was
-ready to flip the switch for good.<a href="#footnote-1"><sup>1</sup></a>
-The new parser had been active under a
-feature flag on our dogfood instance and some customer instances, but it was
-time to make it the default. The point of no return. For more peace of mind, I
-wanted assurance that the data structure output of the new parser was
-_interpreted_ the same way as the old one on a larger set of queries
-than our integration tests covered. I collected a couple thousand queries from
-the fuzz testing and live queries on our dogfood instance. I then ran these
-through a utility that parses the input with both new and old parsers, converts
-the two outputs to a unified data structure that encodes the query properties,
-and then diffs the two outputs. Any difference implied that the query output
-was interpreted differently by the backend and a potential bug.
+ready to flip the switch for good.<a href="#footnote-1"><sup>1</sup></a> The
+new parser had been active under a feature flag on our dogfood instance and
+some customer instances, but it was time to make it the default. The point of
+no return. For more peace of mind, I wanted assurance that the data structure
+output of the new parser was _interpreted_ the same way as the old one on a
+larger set of queries than our integration tests covered. I collected a couple
+thousand queries from the fuzz testing and live queries on our dogfood
+instance. I then ran these through a utility that parses the input with both
+new and old parsers, converts the two outputs to a unified data structure that
+encodes the query properties, and then diffs the two outputs. Any difference
+implied that the query output was interpreted differently by the backend and a
+potential bug. 
 
 I caught one good bug with differential testing, where the previous parser ran
 a heuristic step that escapes a trailing dangling parenthesis for regular
@@ -194,10 +204,9 @@ delta?
 
 ## Value in the unseen and unspoken
 
-There's unglamorous engineering in the software all around us. For all
-its lack of recognition, I wish we grasped its value a bit better. I'm reminded
-of a tweet by a former colleague who researched donations for open source
-projects:
+There's unglamorous engineering in the software all around us. For all its lack
+of recognition, I wish we grasped its value a bit better. I'm reminded of a
+tweet by a former colleague who researched donations for open source projects:
 
 <blockquote class="twitter-tweet tw-align-center" data-conversation="none"><p lang="en" dir="ltr">I can tell you from some informal interviews we did outside that paper, that people spend the money on gruntwork — the stuff that’s fun they’re more likely to do anyway, money or not.</p>&mdash; Bogdan Vasilescu (@b_vasilescu) <a href="https://twitter.com/b_vasilescu/status/1279199236094132227?ref_src=twsrc%5Etfw">July 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -222,27 +231,19 @@ codebase, everyone oblivious except themselves.
 ## New capabilities while steadily transitioning the old
 
 Sourcegraph supports more combinations of operators now. And nothing outright
-broke in order to get there. And to be clear, I did more than rewriting and
-testing parsers in that six-month time frame. There were frequent updates in
-releases that customers could enable along the way, with a safe fallback to
-disable new functionality. I also enabled new implementations on our dogfood
-instance as things matured. The core implementation probably took only two or
-three months, but crossing the point of no return and removing the fallback was
-a slow and thorough process. There's more to tweak, but when the previous code
-was finally dropped, it felt good and it felt right.
-
-## Developer tools reduce unglamorous effort
-
-While building the new parser I ran countless searches and constantly jumped
-around the codebase to figure out how things interacted. It made me realize
-that developer tools like code search are really just empowering me to do
-unglamorous engineering more effectively. That's a very, very good thing. Of
-course tools like code search aren't exclusive to humdrum work, but I wonder
-how much value developers ultimately derive from tools that reduce unglamorous
-effort. I bet it's substantial. Refactoring and rewriting, searching for
-dependency versions and updating them—this _is_ the stuff of unglamorous
-engineering. But maybe because the nature of the work is so unseen, so is the
-value behind the developer tools that power it.
+broke in order to get there. In hindsight, did I go overboard on some parts and
+would I have done things differently? In short, no.  New functionality was
+rolled out iteratively and quickly in phases that users could freely try along
+the way. I also enabled new implementations on our dogfood instance as things
+matured. The core implementation probably took only two or three months, but
+crossing the point of no return and removing the fallback was a slow and
+thorough process. If I sensed that excessive testing was stunting progress and
+delaying the planned timeline, I might feel differently, but I never got that
+sense. And to be clear, I did more than rewriting and testing parsers in that
+six-month time frame, but that's off-topic. Our current state isn't perfect,
+there's more to tweak — but when the previous code was finally dropped, it
+wasn't one of those typical anxiety-inducing rushes to hit a deadline. It felt
+good and it felt right.
 
 ## In closing: Unglamorous engineering and you
 
@@ -252,13 +253,14 @@ behavior is intentional. But a surprised or mildly inconvenienced user is a far
 cry from releasing a bug that takes down a company's instance. Severe bugs
 cascade into out-of-band releases for our distribution team and upgrades for
 customers. They also tend to have a latent effect on engineer productivity (in
-this case, mine) when bugs later impose context-switches to fix things—conceptually big costs that I wanted to avoid. All of these considerations,
-code changes, and heaps of testing happened in the pursuit of an unglamorous
-outcome while two, maybe three, engineers reviewed the code to see it play out.
-I know this isn't an isolated thing. I get faint hints of other engineers at
-Sourcegraph doing momentous but unglamorous things that most of the
-organization is blissfully unaware of. And the Twitterverse suggests there's
-more of it happening in software all around us:
+this case, mine) when bugs later impose context-switches to fix
+things—conceptually big costs that I wanted to avoid. All of these
+considerations, code changes, and heaps of testing happened in the pursuit of
+an unglamorous outcome while two, maybe three, engineers reviewed the code to
+see it play out. I know this isn't an isolated thing. I get faint hints of
+other engineers at Sourcegraph doing momentous but unglamorous things that most
+of the organization is blissfully unaware of. And the Twitterverse suggests
+there's more of it happening in software all around us:
 
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">A huge problem in software companies is that large new features get praise, promotions, accolades... while migrating off a legacy system, increasing performance 2,4,10X, or reducing error rates, pages, or alerts by X% is often only recognized by peers and not leadership.</p>&mdash; Dan Mayer (@danmayer) <a href="https://twitter.com/danmayer/status/1395564252308541440?ref_src=twsrc%5Etfw">May 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -284,7 +286,12 @@ well-known tech company who used this title on their business card.</small></a>
 
 **About the author**
 
-[Rijnard](https://twitter.com/rvtond) is interested in developing new ways to search, manipulate, and fix code.
-He holds a PhD in Computer Science from Carnegie Mellon University, where he researched automated bug fixing. He enjoys fundamental research but also wants to make research ideas a reality in practice. That's why he currently works at Sourcegraph, where he applies his research background to develop new tools and techniques for large-scale code search and automated refactoring.
+[Rijnard](https://twitter.com/rvtond) is interested in developing new ways to
+search, manipulate, and fix code.  He holds a PhD in Computer Science from
+Carnegie Mellon University, where he researched automated bug fixing. He enjoys
+fundamental research but also wants to make research ideas a reality in
+practice. That's why he currently works at Sourcegraph, where he applies his
+research background to develop new tools and techniques for large-scale code
+search and automated refactoring.
 
-<small>Acks: Thanks [Rebecca Dodd](/company/team#rebecca-dodd-she-her) for feedback on the content of this post.</small>
+<small>Acks: Thanks [Rebecca Dodd](/company/team#rebecca-dodd-she-her) and [Camden Cheek](https://twitter.com/camdendcheek) for feedback on the content of this post.</small>
