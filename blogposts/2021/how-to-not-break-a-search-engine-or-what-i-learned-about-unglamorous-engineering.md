@@ -1,20 +1,25 @@
 ---
-title: "How Not to Break a Search Engine or: What I Learned About Unglamorous Engineering"
+title: "How not to break a search engine or: What I learned about unglamorous engineering"
+description: "When we switched to a new search query parser in September 2020, you'd never know that
+anything had changed. This is an account of the invisible, rigorous testing
+that happened behind the scenes to make this seamless transition possible."
 author: Rijnard van Tonder
 authorUrl: https://twitter.com/rvtond
-publishDate: 2021-06-23T10:00-07:00
+publishDate: 2021-06-24T10:00-07:00
 tags: [blog, code, search, software, engineering, testing]
-slug: how-to-not-break-a-search-engine-unglamorous-engineering
-heroImage:
-socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
+slug: how-not-to-break-a-search-engine-unglamorous-engineering
+heroImage: https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
+socialImage: https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
 published: true
 ---
 
-<p style="padding: 0px 40px 0px 40px; text-align: justify;">“<i>In 2020 I flipped the switch to use the completely rewritten parser for
+![Unglamorous engineering](https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg)
+
+>_"In 2020 I flipped the switch to use a completely rewritten parser for
 Sourcegraph search queries. It serves tens of thousands of users and processes
 millions of queries. And after flipping the switch... nothing remarkable
-happened. Nobody noticed. Zero reports of implementation bugs.  Everything had
-gone as planned. I'd pulled off my greatest feat of unglamorous engineering.</i>”</p>
+happened. Nobody noticed. Zero reports of implementation bugs. Everything had
+gone as planned. I'd pulled off my greatest feat of unglamorous engineering."_
 
 
 Early last year I started rewriting the parser that processes search queries in
@@ -24,7 +29,7 @@ for code:
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/search-bar.png" style="width: 660px">
 
-When the switch activated the new parser in September 2020, you’d never know that
+When the switch activated the new parser in September 2020, you'd never know that
 anything had changed. This is an account of the invisible, rigorous testing
 that happened behind the scenes to make this seamless switch possible.
 
@@ -42,8 +47,8 @@ were the goals. But to get to the goal I had to suspend my focus on the shiny
 Sourcegraph's bread and butter is code search. Every single search query is
 going to run through this new code. Bugs in a beta feature are understandable.
 A UI bug may be temporarily excusable. But a bug in the query processing of the
-core product could spell a lot of very real trouble. What if previously working
-queries stop working? What if they behave incorrectly? What if an input crashes
+core product could spell a lot of trouble. What if previously working
+queries stopped working? What if they behaved incorrectly? What if an input crashed
 the server? The point was to support new operators in the query, and I was
 going to introduce these, but mentally I was more preoccupied with ensuring
 that _existing queries keep working_ the way that they should.
@@ -77,7 +82,7 @@ well for migrating other systems that accept user input.
 ### Part 1: Unit testing
 
 Unit testing was the obvious thing to do™ and familiar territory for a lot of
-developers, so I won't belabor this part. I thought of this as my front line
+developers, so I won't belabor this part. I thought of this as my frontline
 defense for testing correctness. I reused some of our existing parser tests
 (which served as a rough specification of things to get right) and also added a
 lot of additional tests for new parts of the syntax. You bet there's test
@@ -88,13 +93,13 @@ coverage.
 
 ### Part 2: Integration testing
 
-Once I wrote a feature flagged code path to use the new parser, it was time to
+Once I wrote a feature-flagged code path to use the new parser, it was time to
 test whether Sourcegraph behaved functionally similar. Integration tests ran a
 search query through a running instance of the Sourcegraph application and
 checked whether search results were expected. This testing phase was so
 important because the parser produced a new and different internal
 representation. I'd abstracted out a common interface for our backend to access
-the new data structure under the feature flagged code path to test on.
+the new data structure under the feature-flagged code path to test on.
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/integration.png" style="width: 800px">
 
@@ -104,7 +109,7 @@ to run, and brittle. I was desperate for a way to do this more easily and
 quickly, and only really needed to run queries through our backend GraphQL API,
 not the browser. I wrote a barebones utility to locally run queries through our
 backend and snapshot the results
-[#10712](https://github.com/sourcegraph/sourcegraph/pull/10712). This testing
+([#10712](https://github.com/sourcegraph/sourcegraph/pull/10712)). This testing
 was _immensely_ helpful because I could lock in existing expected search
 behaviors for every new addition. I didn't want a user to enter a reasonable
 query and get an unreasonable result. It preempted a bunch of behavioral bugs
@@ -116,13 +121,13 @@ heavily using my local barebones utility, my coworker
 [@joe](https://twitter.com/jc_unknwon) brought this testing to our CI. It was a
 game changer. Now all of our development was subject to this testing, not just
 my local tinkering. I'd venture that this is probably the most valuable part of
-our search testing infrastructure today. The crazy thing is how rock solid it
+our search testing infrastructure today. The wild thing is how rock solid it
 is. We get flakes in our CI all the time, but not from this part. For all its
 complexity (set up and tear down of a live Sourcegraph instance, repository
 cloning, and running some intensive tests), I can't recall a single time it's
 buckled. I'm amazed every time I think about it. I don't know how Joe did it,
 but the thing is just peak unglamorous engineering to me. I imagine it was
-painful to write and test. But I'm so impressed. The wait was worth it and it's
+painful to write and test, but I'm so impressed. The wait was worth it and it's
 been catching bugs ever since.
 
 ### Part 3: Fuzz testing
@@ -135,13 +140,13 @@ it's a breeze to set up.
 
 I ran local fuzz jobs for a couple of hours here and there throughout
 development. Continuous fuzzing is nice to have, but local fuzzing was good
-enough. This part caught three bugs. Two bugs caused a `panic` that broke an
+enough. This part caught three bugs, two of which caused a `panic` that broke an
 assertion when concatenating certain patterns with unbalanced parentheses or
 unconventional unicode space characters
-[#12457](https://github.com/sourcegraph/sourcegraph/pull/12457). The other was
-caused by an out of bound access for patterns that ending with a trailing `\`
-[#12463](https://github.com/sourcegraph/sourcegraph/pull/12463). This was on an
-experimental feature flagged code path. No biggie. I was happy to find only
+([#12457](https://github.com/sourcegraph/sourcegraph/pull/12457)). The other was
+caused by an out-of-bound access for patterns that ending with a trailing `\`
+([#12463](https://github.com/sourcegraph/sourcegraph/pull/12463)). This was on an
+experimental feature-flagged code path. No biggie. I was happy to find only
 these, and that they were fairly low profile. More than anything, fuzz testing
 gave me peace of mind that things were holding up.
 
@@ -162,15 +167,15 @@ and then diffs the two outputs. Any difference implied that the query output
 was interpreted differently by the backend and a potential bug.
 
 I caught one good bug with differential testing, where the previous parser ran
-a heuristic step that escapes a trailing dangling parentheses for regular
+a heuristic step that escapes a trailing dangling parenthesis for regular
 expressions. The heuristic interpreted an invalid regular expression like
-`foo.*(` as `foo.*\(`. This to avoid throwing a syntax error at the user and
+`foo.*(` as `foo.*\(`. This is to avoid throwing a syntax error at the user and
 instead yield matches for what they likely intended
-[#12733](https://github.com/sourcegraph/sourcegraph/issues/12733). There were
+([#12733](https://github.com/sourcegraph/sourcegraph/issues/12733)). There were
 three other differences that turned out to be fairly inconsequential, but nice
 to catch. These bugs were about differing interpretations of reserved syntax.
 For example, the new reserved syntax `or` in the new parser had special
-meaning.  The old parser didn't ascribe any special meaning to `or`, and this
+meaning. The old parser didn't ascribe any special meaning to `or`, and this
 (intentional) difference reflected in the testing.
 
 ## The switch is flipped
@@ -184,17 +189,17 @@ gone as planned. I'd pulled off my greatest feat of unglamorous engineering.
 Hardly anyone could appreciate how months of effort culminated in an
 incident-free transition. That was, after all, expected. I mean, how do you
 derive appreciation from users, peers, or managers when the point was for no
-one to notice anything significant had changed... when there's no perceptible
+one to notice anything significant had changed; when there's no perceptible
 delta?
 
 ## Value in the unseen and unspoken
 
-There's unglamorous engineering activity in the software all around us. For all
+There's unglamorous engineering in the software all around us. For all
 its lack of recognition, I wish we grasped its value a bit better. I'm reminded
 of a tweet by a former colleague who researched donations for open source
 projects:
 
-<p style="padding: 0px 40px 0px 40px; text-align: justify;">“<i>From some informal interviews [we learned] people spend money on gruntwork—the stuff that's fun they're more likely to do anyway, money or not. </i>” <a href="https://twitter.com/b_vasilescu/status/1279199236094132227"><b>↗</b></a></p>
+<blockquote class="twitter-tweet tw-align-center" data-conversation="none"><p lang="en" dir="ltr">I can tell you from some informal interviews we did outside that paper, that people spend the money on gruntwork — the stuff that’s fun they’re more likely to do anyway, money or not.</p>&mdash; Bogdan Vasilescu (@b_vasilescu) <a href="https://twitter.com/b_vasilescu/status/1279199236094132227?ref_src=twsrc%5Etfw">July 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This suggests that gruntwork, if not glamorous, is certainly valuable (and
 perhaps, even disproportionately so). At the same time, I wouldn't necessarily
@@ -230,12 +235,12 @@ was finally dropped, it felt good and it felt right.
 
 While building the new parser I ran countless searches and constantly jumped
 around the codebase to figure out how things interacted. It made me realize
-that developer tools like code search is really just empowering me to do
+that developer tools like code search are really just empowering me to do
 unglamorous engineering more effectively. That's a very, very good thing. Of
 course tools like code search aren't exclusive to humdrum work, but I wonder
 how much value developers ultimately derive from tools that reduce unglamorous
 effort. I bet it's substantial. Refactoring and rewriting, searching for
-dependency versions and updating them, this _is_ the stuff of unglamorous
+dependency versions and updating them—this _is_ the stuff of unglamorous
 engineering. But maybe because the nature of the work is so unseen, so is the
 value behind the developer tools that power it.
 
@@ -247,8 +252,7 @@ behavior is intentional. But a surprised or mildly inconvenienced user is a far
 cry from releasing a bug that takes down a company's instance. Severe bugs
 cascade into out-of-band releases for our distribution team and upgrades for
 customers. They also tend to have a latent effect on engineer productivity (in
-this case, mine) when bugs later impose context-switches to fix things.
-Conceptually big costs that I wanted to avoid. All of these considerations,
+this case, mine) when bugs later impose context-switches to fix things—conceptually big costs that I wanted to avoid. All of these considerations,
 code changes, and heaps of testing happened in the pursuit of an unglamorous
 outcome while two, maybe three, engineers reviewed the code to see it play out.
 I know this isn't an isolated thing. I get faint hints of other engineers at
@@ -256,15 +260,14 @@ Sourcegraph doing momentous but unglamorous things that most of the
 organization is blissfully unaware of. And the Twitterverse suggests there's
 more of it happening in software all around us:
 
-<p style="padding: 0px 40px 0px 40px; text-align: justify;">“<i>
-A huge problem in software companies is that large new features get praise, promotions, accolades... while migrating off a legacy system, increasing performance ... or reducing error rates ... is often only recognized by peers...</i>” <a href="https://twitter.com/danmayer/status/139556425230854144"><b>↗</b></a></p>
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">A huge problem in software companies is that large new features get praise, promotions, accolades... while migrating off a legacy system, increasing performance 2,4,10X, or reducing error rates, pages, or alerts by X% is often only recognized by peers and not leadership.</p>&mdash; Dan Mayer (@danmayer) <a href="https://twitter.com/danmayer/status/1395564252308541440?ref_src=twsrc%5Etfw">May 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I empathize with the engineers who don't have an audience for their unglamorous
 work, who want to say "I did A Thing, there's nothing to see, but more people
-should care. Let me tell you about it!".  I like my portion of showpiece
+should care. Let me tell you about it!"  I like my portion of showpiece
 engineering, don't get me wrong. But shouldn't doing the necessary, unglamorous
 work be a marketable skill as well? Where's the signage that reads "Unglamorous
-engineers wanted. Will pay handsomely."? I hope you're encouraged to share what
+engineers wanted. Will pay handsomely"? I hope you're encouraged to share what
 you've pulled off.
 
 ---
@@ -282,6 +285,6 @@ well-known tech company who used this title on their business card.</small></a>
 **About the author**
 
 [Rijnard](https://twitter.com/rvtond) is interested in developing new ways to search, manipulate, and fix code.
-He holds a PhD in Computer Science from Carnegie Mellon University, where he researched automated bug fixing. He enjoys fundamental research but also wants to make research ideas a reality in practice. That's why he currently works at Sourcegraph, where he applies his research background to develop new tools and techniques for large scale code search and automated refactoring.
+He holds a PhD in Computer Science from Carnegie Mellon University, where he researched automated bug fixing. He enjoys fundamental research but also wants to make research ideas a reality in practice. That's why he currently works at Sourcegraph, where he applies his research background to develop new tools and techniques for large-scale code search and automated refactoring.
 
-<small>Acks: Thanks [Rebecca Dodd](https://www.linkedin.com/in/rebecca-lee-dodd/) for feedback on the content of this post.</small>
+<small>Acks: Thanks [Rebecca Dodd](/company/team#rebecca-dodd-she-her) for feedback on the content of this post.</small>
