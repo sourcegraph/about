@@ -80,9 +80,7 @@ We're making search results more relevant, starting with better prioritization o
 ## New visual design for the Sourcegraph UI
 We are proud to bring you an entirely new visual design for the Sourcegraph UI. The new visual design was developed to help users find references, troubleshoot errors, gain insight, make changes on a massive scale, and read code. Check out our recent blog post to [learn more about the new Sourcegraph UI](/blog/introducing-sourcegraphs-new-ui/). 
 
-<p>
-  <img src="https://sourcegraphstatic.com/blog/redesign/r_search_results.png" alt="refined search results design screenshot" /> 
-</p>
+<img src="https://sourcegraphstatic.com/blog/redesign/r_search_results.png" alt="refined search results design screenshot" style="max-width:calc(100% - 10px);"/>
 
 ## Code Insights
 
