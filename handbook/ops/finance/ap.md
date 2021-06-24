@@ -88,6 +88,10 @@ The justification for limiting the number of suppliers must be communicated via 
  
 Sourcegraph employees should also inquire as to whether customer references / testimonials are available for items of expenditure greater than $10,000. 
 
+##### NDAs (Vendors)
+
+The best practice is to share and sign our [NDA](https://drive.google.com/file/d/1M6UA8ro-qsdrj9fiB7wkJlD2jpy8epDI/view) with every vendor when you begin conversations and before you disclose confidential business information. Once you have a fully signed NDA, save a copy in our [NDA folder](https://drive.google.com/drive/folders/1kwsephGh0quiOIgvLBE_XU3DEfe97Z78) as Vendor Name-NDA-Year-Month-Day. For NDA signatory authority, see our [contract review and signature authority policy](https://about.sourcegraph.com/handbook/ops/legal/Contract%20Review%20and%20Signature%20Authority%20Policy#ndas-for-customers-vendors-partners). 
+
 ##### Commercial Negotiations
 
 The table below highlights different commercial terms of a procurement negotiation, in order of importance to Sourcegraph. Buyers are encouraged to consult with the Finance team if they require support during commercial negotiations with suppliers.
@@ -131,9 +135,9 @@ Designated buyers (employees who are responsible for the spend) should monitor c
 
 Once the contract is agreed, if this is the first time Sourcegraph has used this supplier, the designated buyer should request the supplier to complete a new supplier form if required. Refer to [Sourcegraph New Supplier form](https://docs.google.com/document/d/1Y5y3fSylGsHYuAiD_U2YJer41nAFGAAd2WAifkDGQ6o/edit).
 
-##### Confidential Information
+##### Hourly-Based Contract Threshold
 
-All information received from suppliers is to be treated as confidential. Further, if the vendor has any access to information which Sourcegraph considers confidential, the Sourcegraph employee should consult with the legal team and consider if a non-disclosure agreement (NDA) is required.
+For hourly-based contracts, such as with a third-party contractor, please notify the Finance team when billing exceeds $5,000 in a given month.
  
 ##### Managing Conflicts of Interest
 

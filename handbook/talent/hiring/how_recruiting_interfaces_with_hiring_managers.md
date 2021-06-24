@@ -8,12 +8,12 @@ Each hiring manager has an assigned recruiter for their hiring needs. If you are
     - Product
     - Customer Engineering
     - Support
-- [Kelsey Nagel], G&A Recruiter
+- [Kelsey Nagel](../../company/team/index.md#kelsey-nagel-she-her), Corporate Recruiter
     - Marketing
     - Finance
     - Legal
-    - Operations
-    - People Team
+    - BizOps
+    - People Operations
 - [Trevor Houghton](../../company/team/index.md#trevor-houghton-he-him), Recruitment Operations Specialist
     - Interview Scheduling for all departments
 
@@ -59,11 +59,12 @@ Our time-to-fill goal is an average of 45-days.  This means that the timespan fr
 - Once fully approved in Greenhouse, Recruiter schedules offer summary call. The purpose of the offer summary call is to review our offer with the candidate and answer any questions they may have.  
    - Attendees: Recruiter, Hiring Manager, Candidate.
    - During the call, we review: 1) compensation 2) equity 3) perks, travel (and benefits, if applicable). 
+   - Before ending the call, be sure to determine a potential start date (all starts dates should fall on a cohort Monday) and 2) schedule a follow up call to answer any questions.
 - Following the offer call, Recruiter sends the offer summary to the candidate in an email. 
 - Once the candidate verbally accepts, the VP Talent send the official offer to the candidate via Docusign.
 - The Hiring Manager posts an announcement of the candidate's acceptance in the Slack #Hiring channel.
 
 ### After the offer
-- After the candidate signs the offer, the Recruiting team sends a welcome email to the candidate and Cc's the hiring manager.
-- The Recruiting team marks the candidate as "Hired" in Greenhouse, closes the job, and exports the candidate to Bamboo.
+- After the candidate signs the offer, the Recruiter sends a welcome email to the candidate and Cc's the Hiring Manager.
+- The Recruiter marks the candidate as "Hired" in Greenhouse, closes the job (if applicable), sends a hire report to Ines, VP of Talent, and Hiring Manager, and exports the candidate to Bamboo.
 - The People Operations team then works with the candidate to onboard them and get them set up for their first day.
