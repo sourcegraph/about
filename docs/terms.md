@@ -9,7 +9,7 @@ Thank you for using Sourcegraph! Select the appropriate Terms of Service below.
 
 Are you interested in terms for...
 
-* **[A private or self-hosted Sourcegraph instance](/terms-private)**: If you’d like to use a private or self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your private code, rather than the public Sourcegraph.com instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your private or self-hosted instance, please see our [terms and conditions](/terms-private).
+* **[A private or self-hosted Sourcegraph instance](/terms-self-hosted)**: If you’d like to use a private or self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your private code, rather than the public Sourcegraph.com instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your private or self-hosted instance, please see our [terms and conditions](/terms-self-hosted).
 
 * **[Sourcegraph.com](/terms-dotcom)**: If you’d like to use sourcegraph.com (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a private or self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with sourcegraph.com, please see our [Sourcegraph.com terms and conditions](/terms-dotcom).
 
