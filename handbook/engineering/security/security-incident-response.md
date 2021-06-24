@@ -1,9 +1,9 @@
 # Security Incident Response Policy
 
-Policy Owner: security@sourcegraph.com  
-Policy Authors: André Eleuterio, Dan Mckean  
-Approved by: Bill Creager, Director of Platform and Infrastructure  
-Effective Date: July 31st 2021  
+**Policy Owner:** security@sourcegraph.com  
+**Policy Authors:** André Eleuterio, Dan Mckean  
+**Approved by:** Bill Creager, Director of Platform and Infrastructure  
+**Effective Date:** July 31st 2021  
 
 ## Purpose
 
