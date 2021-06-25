@@ -61,8 +61,8 @@ First, decide how you want to contribute:
 
 The editorial team will triage pitches weekly on Monday. Once you have submitted a pitch:
 
-1. An editor will be assigned and will give you feedback on your idea.
-1. The pitch is approved by you and your editor, and a publishing schedule is created.
+1. An editor will be assigned and will give you feedback on your idea. At this point we may suggest an alternative channel or content format for your idea (guide/case study/social post/etc.)
+1. If the pitch is approved by you and your editor, next we'll decide on a timeline together.
 1. First draft is submitted by the first draft deadline.
 1. An editor and/or peer reviewer is completed by the first draft review deadline. Please reference the [peer review template](https://docs.google.com/document/d/1KHFMIGmbmDPsE8EYPAf4DPD6kek_1dRnKf49wG5foU0/edit) when conducting your review. You do not need to answer every reflection question. This is a guide to help you provide useful and actionable feedback to the author.
 1. A second draft is submitted. This may be your final draft depending on its polish and completeness. If there are major outstanding structural and/or mechanical issues, your editor may request a third draft.
