@@ -54,7 +54,7 @@ The table below presents the approval levels required for expenditure, based on 
 
 ##### How to Get Finance approval
 
-For procurement that exceeds an annual equivalent of $10,000, please send a quote, estimate, or contractual draft to the Finance team prior to finalizing an agreement. The Finance team can be reached via ap@sourcegraph.com or the #finance Slack channel. 
+For procurement that exceeds an annual equivalent of $10,000, please send a quote, estimate, or contractual draft to the Finance team prior to finalizing an agreement. The Finance team can be reached via ap@sourcegraph.com or the #finance Slack channel.
 
 #### Go-to-market Stage
  
@@ -130,6 +130,8 @@ Designated buyers (employees who are responsible for the spend) should monitor c
 - Renegotiations can commence in a timely manner, in advance of cessation or renewal
 - Sourcegraph employees can go to market to request additional quotes from alternative suppliers (if required)
 - If desired, that a vendor / contractor can be terminated by Sourcegraph allowing for any required notice period
+
+Please note that we do not accept auto-renewal clauses unless approved via Legal and Finance.
 
 ##### New Supplier Form
 
