@@ -1,11 +1,11 @@
 ---
 title: "How not to break a search engine or: What I learned about unglamorous engineering"
 description: "When we switched to a new search query parser in September 2020, you'd never know that
-anything had changed. This is an account of the invisible, rigorous testing that
+anything had changed. This is an account of the rigorous testing that
 happened behind the scenes to ensure a seamless transition."
 author: Rijnard van Tonder
 authorUrl: https://twitter.com/rvtond
-publishDate: 2021-06-24T10:00-07:00
+publishDate: 2021-06-25T10:00-07:00
 tags: [blog, code, search, software, engineering, testing]
 slug: how-not-to-break-a-search-engine-unglamorous-engineering
 heroImage: https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
@@ -31,7 +31,7 @@ for code:
 
 When the switch activated the new parser in September 2020, you'd never know
 that anything had changed. This is an account of the invisible, rigorous
-testing to ensure a seamless transition.
+testing that ensured a seamless transition.
 
 The motivation for the change was to introduce standard boolean operators like
 `and`, `or`, and `not` in queries. Sourcegraph had supported some of these
@@ -240,8 +240,8 @@ months, but crossing the point of no return and removing the fallback was a
 slow and thorough process. If I sensed that excessive testing was stunting
 progress and delaying the planned timeline, I might feel differently, but I
 never got that sense. And to be clear, I did more than rewriting and testing
-parsers in that six-month time frame, but that's off-topic. Our current state
-isn't perfect, there's more to tweak — but when the previous code was finally
+parsers in that six-month time frame, but that's off topic. Our current state
+isn't perfect, there's more to tweak—but when the previous code was finally
 dropped, it wasn't one of those typical anxiety-inducing rushes to hit a
 deadline. It felt good and it felt right.
 
@@ -286,12 +286,12 @@ well-known tech company who used this title on their business card.</small></a>
 
 **About the author**
 
-[Rijnard](https://twitter.com/rvtond) is interested in developing new ways to
+_[Rijnard](https://twitter.com/rvtond) is interested in developing new ways to
 search, manipulate, and fix code.  He holds a PhD in Computer Science from
 Carnegie Mellon University, where he researched automated bug fixing. He enjoys
 fundamental research but also wants to make research ideas a reality in
 practice. That's why he currently works at Sourcegraph, where he applies his
 research background to develop new tools and techniques for large-scale code
-search and automated refactoring.
+search and automated refactoring._
 
 <small>Acks: Thanks [Rebecca Dodd](/company/team#rebecca-dodd-she-her) and [Camden Cheek](https://twitter.com/camdendcheek) for feedback on the content of this post.</small>
