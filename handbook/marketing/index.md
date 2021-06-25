@@ -11,9 +11,9 @@
     - [Product marketing hierarchy](product_marketing_hierarchy.md)
     - [Product marketing roadmap](https://docs.google.com/spreadsheets/d/1268CYG4arbGT6F0Eyy4e-EY5CQgtopcS9OdAenkjtzY/edit#gid=0)
     - [Release post process](release_post_process.md)
-- [Content Marketing](content.md)
-    - [Creating blog posts](creating_blog_posts.md)
-    - [Editing blog posts](creating_blog_posts.md#editing-blog-posts)
+- [Content Marketing](content/index.md)
+    - [Creating blog posts](content/blog/creating_blog_posts.md)
+    - [Editing blog posts](content/blog/creating_blog_posts.md#editing-blog-posts)
 
 - [Demand Gen](demandgen.md)
     - [Account Based Experience](account_based_experience.md) 
