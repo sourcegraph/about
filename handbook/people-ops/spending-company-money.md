@@ -68,6 +68,7 @@ Once your contract is signed, you will need to purchase and expense your Sourceg
 **Software/SaaS/cloud:** please check with the appropriate team and manager to ask if we already have a subscription or licenses to the software. If not, please get @sourcegraph/people-ops's approval for software or a subscription that would cost more than $500 per year.
 
 **[Internet, phone, and wellness](../ops/finance/expenses.md#internet-phone-and-wellness-benefits):** The following items are automatically added to your pay, and they don't need to be expensed.
+
 - **Internet/WiFi plan:** $50/month
 - **Cell phone plan:** $75/month
 - **Wellness:** $100/month
