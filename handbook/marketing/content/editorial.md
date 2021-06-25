@@ -2,7 +2,7 @@
 
 ## Editorial Strategy 
 
-The FY22 Editorial Strategy for the Sourcegraph blog builds on our [FY22 Content Strategy](.).
+The FY22 Editorial Strategy for the Sourcegraph blog builds on our [FY22 Content Strategy](index.md).
 
 As one of Sourcegraph’s primary channels for generating awareness, the blog should play a key role in establishing the brand and our credibility with our audience. Beyond the blog, contributions to external publications and spin-off programs such as newsletters make up an editorial ecosystem.
 
@@ -14,7 +14,7 @@ With so much potential content to share, an editorial strategy helps to guide ou
 
 ### Editorial principles
 
-The editorial strategy for Sourcegraph’s blog draws on the same [principles that inform our overall content strategy](./#content-principles): 
+The editorial strategy for Sourcegraph’s blog draws on the same [principles that inform our overall content strategy](index.md#content-principles): 
 
 1. **Quality over quantity.** We do not sacrifice quality for quantity, and we take our reputation as a content producing company seriously. We respect our audiences’ time and thus, we respect the creative process and allow ample time for content creation. 
 1. **Audience-first mentality.** We prioritize the needs of our audience over our own. Our content offers useful and actionable information regardless of whether the reader uses Sourcegraph or not. Content marketing does not equal advertising. 
