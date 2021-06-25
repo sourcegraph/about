@@ -5,7 +5,7 @@ title: Terms of Service for Sourcegraph.com
 
 Last modified: June 25, 2021
 
-See the changes since the [previous version](https://github.com/sourcegraph/about/blob/8ffc3f71f4605907c2bfae4235f6c706ca1e32ef/docs/terms-dotcom.md)
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-dotcom%5C.md+type:diff&patternType=literal) since the [previous version](https://github.com/sourcegraph/about/blob/8ffc3f71f4605907c2bfae4235f6c706ca1e32ef/docs/terms-dotcom.md)
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of the applications, software, products, and services we make available at Sourcegraph.com.
 
