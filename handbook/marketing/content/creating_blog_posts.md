@@ -83,7 +83,7 @@ Uses Bootstrap for responsive sizing and adequate whitespace between adjacent el
 
 ### Adding a screenshot or screen recording
 
-You can read about [embedding GIFs and videos](../../adding_screenshots_screen_recording.md) here.
+You can read about [embedding GIFs and videos](../adding_screenshots_screen_recording.md) here.
 
 ## Previewing your blog post
 
