@@ -3,7 +3,9 @@ layout: markdown
 title: Terms of Service for Sourcegraph.com
 ---
 
-Last modified: June 24, 2021
+Last modified: June 25, 2021
+
+See the changes since the previous version
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of the applications, software, products, and services we make available at Sourcegraph.com.
 
@@ -19,7 +21,7 @@ Are you interested in terms for...
 
 * **Sourcegraph.com**: You're in the right place! Read on.
 
-* **[A self-hosted Sourcegraph instance](https://about.sourcegraph.com/terms-self-hosted)**: If you’d like to use a self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your private code, rather than the public Sourcegraph.com instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your self-hosted instance, please see our terms and conditions at https://about.sourcegraph.com/terms-self-hosted.
+* **[A self-hosted Sourcegraph instance](https://about.sourcegraph.com/terms-self-hosted)**: If you’d like to use a self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your code, rather than the Sourcegraph.com instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your self-hosted instance, please see our terms and conditions at https://about.sourcegraph.com/terms-self-hosted.
 
 * **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache.
 
@@ -66,13 +68,13 @@ As used on this page, the following terms have the following specific meanings:
 
 1.2 **“Agreement”** means, collectively, the terms and conditions laid out on this page (these “Terms”), and all other applicable rules, policies, and procedures that we may publish from time to time on the Site, including but not limited to our [Privacy Policy](/privacy).
 
-1.3 **“Content”** means any content displayed on the Site or made available through the Services, including but not limited to text (including Documentation), data (including Public Code Data), articles, images, photographs, videos, applications, software (including source code), and other materials, as well as the Services themselves (with respect to us).
+1.3 **“Content”** means any content displayed on the Site or made available through the Services, including but not limited to text (including Documentation), data (including Code Data), articles, images, photographs, videos, applications, software (including source code), and other materials, as well as the Services themselves (with respect to us).
 
 1.4 **“Documentation”** means the documentation regarding the Services that we make available for use at https://docs.sourcegraph.com.
 
-1.5 **“Public Code”** means the publicly available open source code that we analyze in order to provide you Public Code Data via the Services.
+1.5 **“Code”** means source code that we analyze in order to provide you Code Data via the Services.
 
-1.6 **“Public Code Data”** means the results of our analysis of Public Code, which we may provide to you from time to time via the Services.
+1.6 **“Code Data”** means the results of our analysis of Code, which we may provide to you from time to time via the Services.
 
 1.7 **“Services”** means, collectively, the applications, software, products, and services provided by us on or for use exclusively in connection with the Site, including but not limited to our browser and editor extensions (to the extent exclusively connected to the Site and not a self-hosted instance).
 
@@ -116,19 +118,31 @@ As used on this page, the following terms have the following specific meanings:
 
 3.1  **License from Us to You**.
 
-1. **Grant**.  Subject to the terms and conditions of the Agreement, we hereby grant to you a limited, revocable, non-transferable, non-sublicensable (except, with respect to Organizations, to your employees and contractors performing services for you or on your behalf) license to access and use the Services in order to review Public Code Data in the manner contemplated by the Agreement and the Documentation, solely for your internal business purposes. You may only use the Documentation to support your use of the Services. All rights in the Services and Public Code Data not expressly granted herein are hereby reserved by us.
+1. **Grant**.  Subject to the terms and conditions of the Agreement, we hereby grant to you a limited, revocable, non-transferable, non-sublicensable (except, with respect to Organizations, to your employees and contractors performing services for you or on your behalf) license to access and use the Services in order to review Code Data in the manner contemplated by the Agreement and the Documentation, solely for your internal business purposes. You may only use the Documentation to support your use of the Services. All rights in the Services and Code Data not expressly granted herein are hereby reserved by us.
 
-2. **Restrictions**. You may not, and may not permit any third-party to redistribute, encumber, sell, rent, lease, sublicense, or otherwise transfer rights to all or any part of the Services or Public Code Data without our prior written approval.
+2. **Restrictions**. You may not, and may not permit any third-party to redistribute, encumber, sell, rent, lease, sublicense, or otherwise transfer rights to all or any part of the Services or Code Data without our prior written approval. Your use of the Site and Services must not violate any applicable laws, including copyright or trademark laws, export control or sanctions laws, or other laws in your jurisdiction. You are responsible for making sure that your use of the Site and Services complies with laws and any applicable regulations.
 
 3.2 **License Grant from You to Us**.
 
-1. **User-Generated Content**. Some areas of the Services allow users to post Content such as profile information, comments, reviews, etc. (**“User-Generated Content”** or **“UGC”**) (for clarity, this does not include Public Code that comes from a public code host). WE CLAIM NO OWNERSHIP OF YOUR UGC. However, you understand that other users may view and interact with your UGC in accordance with your Account settings, and you grant us rights reasonably necessary to do so. We have the right (but not the obligation) to remove any UGC at any time and for any reason.
+1. **User-Generated Content**. Some areas of the Services allow users to post Content such as profile information, proprietary Code, comments, reviews, etc. (**“User-Generated Content”** or **“UGC”**) (for clarity, this does not include open source Code as defined by the Open Source Initiative at https://opensource.org/osd). WE CLAIM NO OWNERSHIP OF YOUR UGC. However, you understand that other users may view and interact with your UGC in accordance with your Account settings, and you grant us rights reasonably necessary to do so. We have the right (but not the obligation) to remove any UGC at any time and for any reason.
 
-2. **Grant**. By posting UGC on or through the Services, you grant (and you represent and warrant that you have all rights necessary to grant) to Sourcegraph a royalty-free, sublicensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, modify, and publish all such UGC via the Services (including your name, voice, and/or likeness as contained in your UGC), including for marketing and promotion.
+2. **Grant**. By posting UGC on or through the Services, you grant (and you represent and warrant that you have all rights necessary to grant) to Sourcegraph a royalty-free, sublicensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, modify, and publish all such UGC via the Services (including your name, voice, and/or likeness as contained in your UGC) for the limited purposes of:
+
+    (i) providing and improving the Services;
+
+    (ii) protecting the Services to prevent abuse; 
+
+    (iii) tailoring the Services to you; and
+    
+    (iv) marketing the Services.
+    
+We do not use any Content (including any UGC) in private repositories to market the Services. The license you give us is only for the above purposes. 
 
 3. **Representations and Warranties Regarding UGC**. In connection with your UGC, you represent, warrant, and covenant that you have the right to post it, including written consent from anyone referenced or involved, it doesn't violate any laws (such as IP or privacy rights), and we won’t have to pay anybody else (including you) in order to host it and make it available to other users.
 
 4. **Responsibility for UGC**. We take no responsibility and assume no liability for any UGC that you or any other user or third-party posts. You’re solely responsible for your UGC and the consequences of posting it, and you agree that we’re only acting as a passive conduit for your online distribution and publication of your UGC. You understand and agree that you may be exposed to UGC that is inaccurate, objectionable, inappropriate for children, or otherwise unsuited to your purpose, and we’re not liable for any damages you allege to incur as a result.
+
+5. **Private Repositories**. Some Accounts have private repositories, which allow you to control access to Content. We consider the contents of private repositories to be confidential to you. Our personnel may only access the content of your private repositories in the situations described in our Privacy Policy. In addition, you may enable additional access to your private repositories to use certain services or features. We may also be compelled by law to disclose the contents of your private repositories, in which case we will provide notice regarding our access to private repository content to the extent permitted by law. 
 
 3.3 **Ownership of the Services**. The Services are owned and operated by Sourcegraph. All Content made available via the Services is owned by us or our licensors (including you, with respect to UGC) and is protected by intellectual property and other applicable laws. All of our trademarks, service marks, and trade names are proprietary to us or our affiliates.
 
@@ -168,7 +182,7 @@ We have implemented commercially reasonable technical and organizational measure
 
 <span style="color:#777777"><i>**Short version**: We can shut off the services or discontinue your access for any reason at any time.</i></span>
 
-You agree that we, in our sole discretion and for any or no reason, may terminate any Account (or any part of any Account) you may have. In addition, we reserve the right to discontinue any aspect of the Services at any time, including the right to discontinue the display and analysis of any Public Code Data.
+You agree that we, in our sole discretion and for any or no reason, may terminate any Account (or any part of any Account) you may have. In addition, we reserve the right to discontinue any aspect of the Services at any time, including the right to discontinue the display and analysis of any Code Data.
 
 You agree that any termination of your access to the Services or your Account may happen without prior notice, and you agree that we will not be liable for such termination.
 
@@ -206,7 +220,7 @@ If there's ever a conflict between the terms of this Agreement and the terms app
 
 <span style="color:#777777"><i>**Short version**: If you think we (or a user of the services) is infringing your copyrights, let us know and we’ll handle it in compliance with law.</i></span>
 
-If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible via the Services, please notify our copyright agent as set forth in the DMCA. For your complaint to be valid under the DMCA, you must provide the following information in writing:
+We respect the intellectual property of others and ask that you do too. We reserve the right to delete or disable content alleged to be infringing and terminate accounts of repeat infringers. If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible via the Services, please notify our copyright agent as set forth in the DMCA. For your complaint to be valid under the DMCA, you must provide the following information in writing:
 
 1. An electronic or physical signature of a person authorized to act on behalf of the copyright owner;
 2. Identification of the copyrighted work that you claim has been infringed;
@@ -237,9 +251,9 @@ In accordance with the DMCA and other applicable law, we have adopted a policy o
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: The services and public code data are provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span>
+<span style="color:#777777"><i>**Short version**: The Services and Code Data are provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span>
 
-THE SERVICES AND PUBLIC CODE DATA, AND ANY OTHER SOFTWARE, APPLICATIONS, PRODUCTS, AND SERVICES MADE AVAILABLE ON OR IN CONNECTION WITH THE SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR OTHERWISE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, SOURCEGRAPH DISCLAIMS, ON BEHALF OF ITSELF AND ITS LICENSORS, ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. FURTHER, WE DO NOT WARRANT THAT THE SERVICES OR PUBLIC CODE DATA OR ANY PART THEREOF (OR YOUR ACCESS THERETO) WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS, WILL MEET YOUR REQUIREMENTS, OR THAT DEFECTS WILL BE CORRECTED.
+THE SERVICES AND CODE DATA, AND ANY OTHER SOFTWARE, APPLICATIONS, PRODUCTS, AND SERVICES MADE AVAILABLE ON OR IN CONNECTION WITH THE SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR OTHERWISE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, SOURCEGRAPH DISCLAIMS, ON BEHALF OF ITSELF AND ITS LICENSORS, ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. FURTHER, WE DO NOT WARRANT THAT THE SERVICES OR CODE DATA OR ANY PART THEREOF (OR YOUR ACCESS THERETO) WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS, WILL MEET YOUR REQUIREMENTS, OR THAT DEFECTS WILL BE CORRECTED.
 
 CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS AS PROVIDED BY LAW.
 
@@ -265,7 +279,7 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: The services and public code data are provided at your own risk.</i></span>
+<span style="color:#777777"><i>**Short version**: The Services and Code Data are provided at your own risk.</i></span>
 
 You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiaries, agents, managers, and other affiliated companies, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from:
 
@@ -273,7 +287,7 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 2. your violation of any term of the Agreement, including without limitation, your breach of any of the representations and warranties above;
 3. your violation of any third-party right, including without limitation any right of privacy, publicity rights or intellectual property rights;
 4. your violation of any law, rule or regulation of the United States or any other country;
-5. any claim or damages that arise as a result of your use of the Public Code Data or any Content submitted via your account (including UGC); or
+5. any claim or damages that arise as a result of your use of the Code Data or any Content submitted via your account (including UGC); or
 6. any other party's access and use of the Services with your unique username, password or other appropriate security code. We will have the right to control the defense, settlement, adjustment or compromise of any such claims, actions or proceedings by using counsel selected by us. We will use reasonable efforts to notify you of any such claims, actions, or proceedings upon becoming aware of the same.
 
 <span style="color:#b200f8;">
@@ -326,6 +340,6 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 
 15.9 **Entire Agreement**. This, including the agreements incorporated by reference, constitutes the entire agreement between you and us relating to the subject matter herein and will not be modified except in writing, signed by both parties, or by a change made by us as set forth in the Agreement.
 
-15.10 **Claims**. To the extent permissible under applicable law, you and we agree that any cause of action you may have arising out of or related to the Services or Public Code Data must commence within one (1) year after the cause of action accrues. Otherwise, such cause of action is permanently barred.
+15.10 **Claims**. To the extent permissible under applicable law, you and we agree that any cause of action you may have arising out of or related to the Services or Code Data must commence within one (1) year after the cause of action accrues. Otherwise, such cause of action is permanently barred.
 
 15.11 **Disclosures**. The Services are offered by Sourcegraph, Inc., located at 981 Mission St, San Francisco, CA 94103, and can be reached via email at support@sourcegraph.com or telephone at (650) 318-3480. If you are a California resident, (a) you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information; and (b) in accordance with Cal. Civ. Code § 1789.3, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by contacting them in writing at 1625 North Market Blvd., Suite N 112 Sacramento, CA 95834, or by telephone at (800) 952-5210 or (916) 445-1254.
