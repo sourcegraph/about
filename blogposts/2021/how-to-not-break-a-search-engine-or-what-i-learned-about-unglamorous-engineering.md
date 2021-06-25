@@ -102,13 +102,12 @@ the new data structure under the feature-flagged code path to test on.
 
 <figure style="width: 800px; margin: auto;">
   <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/integration.png" alt="Integration testing diagram">
-  <a id="fig-1"><figcaption>
-  <i>Fig. 1: Integration testing abstracts a common interface for our backend
+  <i><small>Integration testing abstracts a common interface for our backend
   to access query values.
   We test that the backend produces the same search results for
   simple queries (ones that don't have, e.g., </i>
   <code>or</code>
-  <i>-operators), irrespective of whether those values originate from the existing parser's output or the new one.</i></figcaption></a>
+  <i>-operators), irrespective of whether those values originate from the existing parser's output or the new one.</i></small></a>
 </figure>
 
 <br>
