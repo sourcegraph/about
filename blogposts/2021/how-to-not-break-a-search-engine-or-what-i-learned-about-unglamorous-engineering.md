@@ -264,7 +264,7 @@ there's more of it happening in software all around us:
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">A huge problem in software companies is that large new features get praise, promotions, accolades... while migrating off a legacy system, increasing performance 2,4,10X, or reducing error rates, pages, or alerts by X% is often only recognized by peers and not leadership.</p>&mdash; Dan Mayer (@danmayer) <a href="https://twitter.com/danmayer/status/1395564252308541440?ref_src=twsrc%5Etfw">May 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I empathize with the engineers who don't have an audience for their unglamorous
-work, who want to say "I did A Thing, there's nothing to see, but more people
+work, who want to say, "I did A Thing, there's nothing to see, but more people
 should care. Let me tell you about it!"  I like my portion of showpiece
 engineering, don't get me wrong. But shouldn't doing the necessary, unglamorous
 work be a marketable skill as well? Where's the signage that reads "Unglamorous
