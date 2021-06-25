@@ -100,7 +100,7 @@ important because the parser produced a new and different internal
 representation. I'd abstracted out a common interface for our backend to access
 the new data structure under the feature-flagged code path to test on.
 
-<figure style="width: 800px; margin: auto; box-shadow: none;">
+<figure style="width: 800px; max-width: 100%; margin: auto; box-shadow: none;">
   <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/integration.png" alt="Integration testing diagram">
   <i><small>Integration testing abstracts a common interface for our backend
   to access query values.
