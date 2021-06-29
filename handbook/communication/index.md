@@ -50,11 +50,7 @@ The following places are not sources of truth. Treat documents and conversations
 
 #### Scheduling meetings with Google Calendar 
 
-- Before you start, set your [Working Hours](https://support.google.com/calendar/answer/7638168) to the times when you are available to meet with others. 
-- Under [Event Settings](https://calendar.google.com/calendar/u/0/r/settings), change the default guest permissions to  "Modify event" so that other people can easily reschedule the meeting if needed.
-  - Consider enabling "Speedy meetings" to build in a 5- or 10-minute break at the end of meetings.
-
-![Modifying Google Calendar event settings](https://sourcegraphstatic.com/handbook/google-calendar-event-settings.png)
+Before you start, please make sure you've [configured your Google Calendar settings](../people-ops/onboarding/general_onboarding.md#configure-google-calendar) as described in the onboarding guidelines.
 
 - When creating the Google Calendar event:
   - Use the "Find a Time" feature to see when you and other meeting attendees are all available. 

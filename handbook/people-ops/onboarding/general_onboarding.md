@@ -29,7 +29,11 @@
 
 - [Add your working hours to Google Calendar](https://calendar.google.com/calendar/r/settings) so your teammates know when it is safe to add meetings to your calendar.
 - Add any local [holidays](../holidays.md) you observe to your calendar so people know you're not working.
-- Make it so any attendees can edit meetings you create: `Default guest permissions: Modify event` (this makes it easy for teammates to reschedule when necessary).
+- Under [Event Settings](https://calendar.google.com/calendar/u/0/r/settings), change the default guest permissions to  "Modify event" (this makes it easy for teammates to reschedule when necessary).
+  - Consider enabling "Speedy meetings" to build in a 5- or 10-minute break at the end of meetings.
+
+![Modifying Google Calendar event settings](https://sourcegraphstatic.com/handbook/google-calendar-event-settings.png)
+
 - Set up a recurring weekly [1-1 meeting](../../leadership/1-1.md) with your manager (e.g., `1-1 $YOURNAME-$MANAGERNAME`).
 - Join the Sourcegraph events calendar by copying `sourcegraph.com_9cd67o8p3gs0rtpj73bt326psk@group.calendar.google.com` into your [add calendar field](https://calendar.google.com/calendar/u/0/r/settings/addcalendar?)
 - Also join the [social calendar](../../company/remote/social_calendar.md)
