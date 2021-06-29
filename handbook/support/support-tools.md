@@ -27,7 +27,7 @@ When you first start in support, the list of tools to set-up can feel like a lot
 
 ## Test Environments
 
-There are two test environments created specifically for the Customer Support Engineers to run tests on when helping customers. They allow supports to reproduce issues without affecting our production instances.
+There are some test environments created specifically for the Customer Support Engineers to run tests on when helping customers. They allow supports to reproduce issues without affecting our production instances.
 
 * [Test instance deployed with Docker Compose](https://cse-aws-test.sgdev.org/)
 * [Test instance deployed with Kubernetes](https://cse-k8s.sgdev.org/)
