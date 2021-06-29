@@ -16,6 +16,7 @@ We use a variety of CTAs, including:
 - Testimonial content & [case studies](https://about.sourcegraph.com/case-studies/) – testimonial quotes from customers and case study offers provide third-party credibility for both individual developers and their managers
 
 ### Audiences
+
 > **For developer-focused campaigns**, we speak directly to individual practitioners who are trying to solve specific Big Code problems that Sourcegraph can address (better code search, better code reviews, finding & fixing bugs faster, etc.)
 
 > **For manager-focused campaigns**, we speak to engineering managers who may have larger organizational challenges, such as onboarding new team members, finding security vulnerabilities, moving from monolith to microservices, etc. 
