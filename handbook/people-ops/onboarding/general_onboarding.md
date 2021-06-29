@@ -38,6 +38,7 @@
 - Join the Sourcegraph events calendar by copying `sourcegraph.com_9cd67o8p3gs0rtpj73bt326psk@group.calendar.google.com` into your [add calendar field](https://calendar.google.com/calendar/u/0/r/settings/addcalendar?)
 - Also join the [social calendar](../../company/remote/social_calendar.md)
 - You can add a secondary time zone in your calendar. This will show two time columns. This is very useful when you work closely with people in another time zone. Go to **Settings > General > Time zone** and select the **Display secondary time zone** box. Choose the time zones you want and label them.
+- See the Communication handbook for [more on scheduling meetings](../../communication/index.md#scheduling-meetings-with-google-calendar).
 
 ## Learn how to contribute to the handbook
 
