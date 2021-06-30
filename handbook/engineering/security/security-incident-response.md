@@ -66,6 +66,8 @@ For critical issues, the response team will follow an iterative response process
 - Containment & neutralization (short term work)
 - Recovery & vulnerability remediation
 - Hardening & Detection improvements (lessons learned, long term work)
+- Post-mortem
+- Customer communication
 
 #### Detailed
 
@@ -92,6 +94,7 @@ Ensure the following is occurring with sufficient frequency and detail:
 - Apply emergency mitigations
 - Plan long term mitigations
 - Document Root Cause Analysis (RCA)
+- Assist in customer-facing comms as needed
 - Additional items as needed
 
 ### Special Considerations
@@ -111,7 +114,7 @@ Incident responders must have access to Slack available before listing themselve
 - Incident response shall be performed according to this plan and any associated procedures.
 - All incidents shall be formally documented, and a documented root cause analysis shall be performed.
 - Suspected and confirmed unauthorized access events shall be reviewed by the Incident Response Team. Breach determinations shall only be made by the incident manager in coordination with appropriate executive management.
-- Sourcegraph shall promptly and properly notify customers, partners, users, affected parties, and regulatory agencies of relevant incidents or breaches in accordance with Sourcegraph policies, contractual commitments, and regulatory requirements.
+- Sourcegraph shall promptly and properly notify customers, partners, users, affected parties, and regulatory agencies of relevant incidents or breaches in accordance with Sourcegraph policies, contractual commitments, and regulatory requirements. Sourcegraph will disclose the issue as soon as it is confirmed and initial investigations are done.
 - This Incident Response Plan shall be reviewed and tested at least annually.
 
 ##  Roles & Responsibilities
@@ -126,7 +129,7 @@ Every employee and user of any Sourcegraph information resources has responsibil
 | Incident Response Team (IRT) | The individuals who have been engaged and are actively working on the incident. All members of the IRT will remain engaged in incident response until the incident is formally resolved, or they are formally dismissed by the Incident Manager. |
 | Engineers (Support and Development) | Qualified engineers will be placed into the on-call rotation and may act as the Incident Manager (if primary resources are not available) or a member of the IRT when engaged to respond to an incident. Engineers are responsible for understanding the technologies and components of the information systems, the security controls in place including logging, monitoring, and alerting tools, appropriate communications channels, incident response protocols, escalation procedures, and documentation requirements. When Engineers are engaged in incident response, they become members of the IRT. |
 | Users | Employees and contractors of Sourcegraph. Users are responsible for following policies, reporting problems, suspected problems, weaknesses, suspicious activity, and security incidents and events. |
-| Marketing | Marketing are responsible for compiling communications to customers, owning the communication strategy and methods, and publishing/sending the communications related to a security incident or event. |
+| Marketing | Marketing are responsible for working with the Incident Manager to compile communications (internal, customer-facing, and/or external), guiding the communication strategy and methods, and publishing/sending the communications related to a security incident or event. Coordinate with CE/Support/Sales on customer-impacting incidents and delivering information to key contacts. |
 | Customers | Customers are responsible for reporting problems with their use of Sourcegraph services. Customers are responsible for verifying that reported problems are resolved. This includes end users of sourcegraph.com |
 | Legal Counsel | Responsible, in conjunction with the CEO and executive management, for determining if an incident shall be considered a reportable breach. Counsel shall review and approve in writing all external breach notices before they are sent to any external party. |
 | Executive Management | Responsible, in conjunction with the CEO and legal counsel, for determining if an incident shall be considered a reportable breach. An appropriate company officer shall review and approve in writing all external breach notices before they are sent to any external party. Sourcegraph shall seek stakeholder consensus when determining whether a breach has occurred. The Sourcegraph CEO shall make a final breach determination in the event that consensus cannot be reached. |
