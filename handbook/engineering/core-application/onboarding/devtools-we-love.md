@@ -17,9 +17,12 @@
 ## Kubernetes
 
 - [k9s](https://k9scli.io/) - a CLI for managing Kubernetes clusters
+- [Kustomize](https://kustomize.io/) - a template-free configuration customization tool
 - [Lens](https://k8slens.dev/) - an IDE for managing Kubernetes clusters
 
 ## Terminal
 
 - [httpie](https://httpie.io/) - a very user-friendly HTTP client
+- [jq](https://stedolan.github.io/jq/) - a flexible JSON processor
+- [prettyping](https://github.com/denilsonsa/prettyping) - a more graphical `ping` wrapper
 - [z](https://github.com/rupa/z) - a tool for quickly navigating to commonly-used directories
