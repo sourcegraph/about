@@ -25,4 +25,5 @@
 - [httpie](https://httpie.io/) - a very user-friendly HTTP client
 - [jq](https://stedolan.github.io/jq/) - a flexible JSON processor
 - [prettyping](https://github.com/denilsonsa/prettyping) - a more graphical `ping` wrapper
+- [tmux](https://github.com/tmux/tmux/wiki) - a terminal multiplexer
 - [z](https://github.com/rupa/z) - a tool for quickly navigating to commonly-used directories
