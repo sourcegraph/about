@@ -1,31 +1,73 @@
 # A/B testing
 
 ## Why A/B testing
-A/B testing is a great way to test out which of two variants (A or B) of a website or product perform better. It’s frequently used as an experimentation methodology because it allows us to get rid of a number of statistical biases, and isolate the signal (an increase in a metric) from the noise (random fluctuations in the metric). The power of A/B testing comes from randomization: users are allocated randomly to version A or B.
+A/B testing is a great way to test out which of two or more variants (A or B) of a website or product perform better. It’s frequently used as an experimentation methodology because it allows us to get rid of a number of statistical biases, and isolate the signal (an increase in a metric) from the noise (random fluctuations in the metric). The power of A/B testing comes from randomization: users are allocated randomly to version A or B.
 
-
-### Example
-When improving the experience on sourcegraph.com, we are faced with several challenges:
-The number and diversity of users renders UX research costly for some features (homepage, CTAs, onboarding).
-Measuring a metric before/after a change (pre/post) doesn’t work, because many things are happening at the same time. If we launch a marketing campaign AND feature X to improve retention, and we see retention decrease, how do we know if it’s caused by poorly qualified traffic from the marketing campaign or feature X not performing?
-Recently, retention was cut by half, for a yet unknown reason that we guess is a change in the nature of the traffic. If we had A/B tested that week, we could have measured the impact of new features, since both cohorts would have seen, on average, the same amount of “normal” and “weird” traffic.
-We have working assumptions and good intuition for the direction thanks to product research, but we don’t completely understand the mechanisms of search UX. We need to experiment.
-
+Measuring a metric before/after a change (pre/post) sometimes doesn’t work, because many things are happening at the same time. If we launch a marketing campaign AND a feature to improve retention, and we see retention decrease, how do we know if it’s caused by poorly qualified traffic from the marketing campaign or by the feature not performing? Recently, retention was cut by half, for a yet unknown reason that we guess is a change in the nature of the traffic. If we had A/B tested that week, we could have measured the impact of new features, since both cohorts would have seen, on average, the same amount of “normal” and “weird” traffic.
 
 ## When to A/B testing
 
-A/B testing is a good fit when there is:
-the right kind of uncertainty - it’s no use A/B testing versions if we already know the result with high probability.
-For example, fixing a frequently reported bug likely does not require A/B testing.
-For example, launching a new key feature backed by product and UX research does not require A/B testing, and success can be measured directly with an adoption metric.
-But evaluating versions of button placement, CTAs, landing pages, onboarding flows, features with complex interactions with other features, is a good fit.
-Sometimes though, we will want to use A/B testing for things we know are important just to quantify impact, as opposed to just validating (yes/no) impact.
-a large number of users - some changes touch a large number of users, with heterogeneous behaviours: they are great fit for A/B testing. On the contrary, if the change affects a small number of users, in-depth user interviews will yield deeper insights.
-a testable hypothesis - A/B testing requires a testable hypothesis,impacting a measurable metric, such as “we believe that this UX change will significantly impact conversion”
-New features, or having a design that creates trust are likely not good candidates
+A/B testing is a good fit when there are several competing valid options with no clear answer, a clear metric to measure success, and a large enough number of users to test on.
 
+**Impact**
+A/B tests take time and resources, and we can only run a few A/B tests at a time to avoid interferences between tests. We should keep A/B testing for high-impact metrics optimization, that match the other conditions here.
+
+**Uncertainty**
+A/B testing is useful when there are several options to choose from, possibly with competing explanations on why they would work, but no clear winner.
+
+It’s no use A/B testing versions if we already know the result with high probability. Sometimes though, we will want to use A/B testing for things we know are important just to *quantify* impact (is it worth maintaining this?), as opposed to just *validate* (yes/no) impact.
+
+**A measure**
+A/B testing requires a clear quantitative way to measure what is "better".
+
+
+**A large enough number of users**
+A/B testing requires a large enough number of user to get statistically significant results. The smaller the number of user in the A/B testing cohort, the more the change needs to have a big impact on the metric to be measurable. This is because the signal (the impact of the change) needs to be higher than the noise (the random fluctuation in a metric).
+
+For example, retention fluctuates week over week for "random" reasons we don't understand. The more users, the smaller those "random" fluctuations will be: this will make it possible to decide wether a change caused by an experiment was likely random, or likely caused by the experiment.
+
+Running A/B tests on a number of users that is too small is inefficient (waste time to setup the A/B test), inconclusive (the result will be that no conclusion can be made) and sometimes counterproductive (miscommunicated, an insignificant A/B test leads teammates to draw conclusions that aren't valid and can be hard to debunk). In that case, it's better to choose another method, such as user interviews.
+
+### Examples
+
+**Good A/B test candidates**
+- Evaluating signup flows, or any flow that result in a measurable action
+- Evaluating versions of button placement, CTAs, landing pages
+
+**Bad A/B test candidates**
+- Launching a new key feature backed by product and UX research: success can be measured directly with an adoption metric (there is an easier way)
+- Fixing a frequently reported bug likely does not require A/B testing (no uncertainty)
+- Changing the design to build brand trust (no metric)
 
 ## How to run an A/B test
+
+After you identify a good A/B test candidate:
+
+### Define the A/B test
+
+- Define the target metric
+- Define the A, B (and more) versions
+- Define the length depending on the number of users you need, and check for statistical significance with a calculator ([example](https://www.optimizely.com/sample-size-calculator/))
+- Pick a feature flag name for your A/B test
+- Document that in a ticket.
+- Label all the issues that will go into that A/B test with `AB-test/<flag-name>`. That way anyone can see what change are in a given A/B test, and what the name of the feature flag is. It will also make it easier to cleanup the flag when the test ends.
+
+
+### Setup the A/B test
+
+- Add your A/B test to the [tracker](https://docs.google.com/spreadsheets/d/1BSLrcvnhq-7X9XrsM81MQePYBVjozxB2GWgNmOUdyeI/edit) and sync with BizOps to make sure it will not conclict with other A/B tests.
+
+TODO
+
+### Run the A/B test
+
+
+### Analyze the A/B test
+
+
+### Cleanup
+
+
 
 ## Resources
 
