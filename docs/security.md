@@ -89,3 +89,18 @@ We ensure Sourcegraph is secure by using security tooling and processes:
 ### Software Bill of Materials (SBOM) and OSS usage
 
 Sourcegraph is an OSS product licensed under Apache 2.0. We also make great use of open source components and ship them as part of our application. Full lists of tools and licenses can be found [here](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/third-party-licenses)
+
+## Security Updates
+
+<p class="text-center">
+  <!--[if lte IE 8]>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+  <![endif]-->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+    portalId: "2762526",
+    formId: "0ff99031-7caf-433a-8aef-8c9345948288"
+  });
+  </script>
+</p>
