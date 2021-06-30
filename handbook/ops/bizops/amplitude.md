@@ -37,7 +37,7 @@ It’s sent through a [script](https://github.com/sourcegraph/Amplitude/blob/mai
 
 #### Event properties
 
-Event properties are attributes of a particular event. These are added to the ```amplitude_events``` table as individual columns from this scheduled query. For example, here's a snippet that extracts event properties from both the argument field of an event, as well as an event itself. 
+Event properties are attributes of a particular event. These are added to the ```amplitude_events``` table as individual columns from this scheduled query. For example, here's a snippet that extracts event properties from both the argument field of an event, as well as an event itself.
 
 ```
 JSON_EXTRACT(argument,
@@ -61,9 +61,9 @@ repogroup_name,
 
 #### User properties
 
-User properties are the attributes of individual users. The ```amplitude_user_characteristics``` table defines all user properties, and this table is joined in with every event that is passed to Amplitude. 
+User properties are the attributes of individual users. The ```amplitude_user_characteristics``` table defines all user properties, and this table is joined in with every event that is passed to Amplitude. These user properties include every A/B test from ```ab_test_users```. See more in the A/B testing doc (coming soon). 
 
-These user properties include every A/B test from ```ab_test_users```. See more in the A/B testing doc (coming soon). 
+If an additional user property is added to this table, it will only be applied to events and users going forward. User properties are sent to Amplitude along with events, so new properties will only be added when a user triggers an event that is sent to Amplitude. 
 
 #### Adding events to Amplitude
 1. A product/engineering team member should let BizOps/DataOps know if there's an event they would like added to Amplitude. 
