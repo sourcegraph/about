@@ -1,7 +1,7 @@
 # A/B testing
 
 ## Why A/B testing
-A/B testing is a great way to test out which of two or more variants (A or B) of a website or product perform better. It’s frequently used as an experimentation methodology because it allows us to get rid of a number of statistical biases, and isolate the signal (an increase in a metric) from the noise (random fluctuations in the metric). The power of A/B testing comes from randomization: users are allocated randomly to version A or B.
+A/B testing is a great way to test out which of two or more variants (A or B) of a website or product perform better. It’s frequently used as an experimentation methodology because it allows us to get rid of a number of statistical biases, and isolate the signal (an increase in a metric) from the noise (random fluctuations in the metric). The power of A/B testing comes from randomization: users are allocated randomly to the control group or A (no change) and a proposed improvement (B).
 
 Measuring a metric before/after a change (pre/post) sometimes doesn’t work, because many things are happening at the same time. If we launch a marketing campaign AND a feature to improve retention, and we see retention decrease, how do we know if it’s caused by poorly qualified traffic from the marketing campaign or by the feature not performing? Recently, retention was cut by half, for a yet unknown reason that we guess is a change in the nature of the traffic. If we had A/B tested that week, we could have measured the impact of new features, since both cohorts would have seen, on average, the same amount of “normal” and “weird” traffic.
 
@@ -21,7 +21,7 @@ It’s no use A/B testing versions if we already know the result with high proba
 
 #### A measure
 
-A/B testing requires a clear quantitative way to measure what is "better".
+A/B testing requires a clear quantitative way to measure what is "better". A common advise is to pick a single, clear metric so that there is no ambiguity in deciding if the change `passed` or `failed`.
 
 
 #### A large enough number of users
