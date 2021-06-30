@@ -9,19 +9,23 @@ Measuring a metric before/after a change (pre/post) sometimes doesn’t work, be
 
 A/B testing is a good fit when there are several competing valid options with no clear answer, a clear metric to measure success, and a large enough number of users to test on.
 
-**Impact**
+#### Impact
+
 A/B tests take time and resources, and we can only run a few A/B tests at a time to avoid interferences between tests. We should keep A/B testing for high-impact metrics optimization, that match the other conditions here.
 
-**Uncertainty**
+#### Uncertainty
+
 A/B testing is useful when there are several options to choose from, possibly with competing explanations on why they would work, but no clear winner.
 
 It’s no use A/B testing versions if we already know the result with high probability. Sometimes though, we will want to use A/B testing for things we know are important just to *quantify* impact (is it worth maintaining this?), as opposed to just *validate* (yes/no) impact.
 
-**A measure**
+#### A measure
+
 A/B testing requires a clear quantitative way to measure what is "better".
 
 
-**A large enough number of users**
+#### A large enough number of users
+
 A/B testing requires a large enough number of user to get statistically significant results. The smaller the number of user in the A/B testing cohort, the more the change needs to have a big impact on the metric to be measurable. This is because the signal (the impact of the change) needs to be higher than the noise (the random fluctuation in a metric).
 
 For example, retention fluctuates week over week for "random" reasons we don't understand. The more users, the smaller those "random" fluctuations will be: this will make it possible to decide wether a change caused by an experiment was likely random, or likely caused by the experiment.
@@ -30,11 +34,13 @@ Running A/B tests on a number of users that is too small is inefficient (waste t
 
 ### Examples
 
-**Good A/B test candidates**
+#### Good A/B test candidates
+
 - Evaluating signup flows, or any flow that result in a measurable action
 - Evaluating versions of button placement, CTAs, landing pages
 
-**Bad A/B test candidates**
+#### Bad A/B test candidates
+
 - Launching a new key feature backed by product and UX research: success can be measured directly with an adoption metric (there is an easier way)
 - Fixing a frequently reported bug likely does not require A/B testing (no uncertainty)
 - Changing the design to build brand trust (no metric)
@@ -47,15 +53,15 @@ After you identify a good A/B test candidate:
 
 - Define the target metric
 - Define the A, B (and more) versions
-- Define the length depending on the number of users you need, and check for statistical significance with a calculator ([example](https://www.optimizely.com/sample-size-calculator/))
-- Pick a feature flag name for your A/B test
-- Document that in an issue, you can use this [issue template](TODO)
+- Define the length of the test, depending on the number of users you need, and check for statistical significance with a calculator ([example](https://www.optimizely.com/sample-size-calculator/))
+- Pick a feature flag name for your A/B test (eg. `w0-signup-optimization`)
+- Document that in an issue, you can use this [issue template](TODO). Make the title explicit so that others know it's an A/B test.
 - Label all the issues that will go into that A/B test with `AB-test/<flag-name>`. That way anyone can see what change are in a given A/B test, and what the name of the feature flag is. It will also make it easier to cleanup the flag when the test ends. [Example](https://github.com/orgs/sourcegraph/projects/181?card_filter_query=label%3Aab-test%2Fw0-signup-optimisation).
 
 
 ### Setup the A/B test
 
-- Add your A/B test to the [tracker](https://docs.google.com/spreadsheets/d/1BSLrcvnhq-7X9XrsM81MQePYBVjozxB2GWgNmOUdyeI/edit) and sync with BizOps to make sure it will not conclict with other A/B tests.
+- Add your A/B test to the [tracker](https://docs.google.com/spreadsheets/d/1BSLrcvnhq-7X9XrsM81MQePYBVjozxB2GWgNmOUdyeI/edit) and sync with BizOps to make sure it will not conflict with other A/B tests.
 
 TODO
 
