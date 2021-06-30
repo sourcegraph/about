@@ -80,16 +80,7 @@ We review each candidate at each stage of our hiring pipeline (e.g. application,
 
 ## Making a referral
 
-Current employees can refer a candidate in Greenhouse [here](https://tracking.cirrusinsight.com/5ae92f4c-b2ab-4851-852d-32a879d5bc4b/player-vimeo-com-video-163888438)
-
-Having your referral complete the application provides helpful context when considering their profile, but is not required.
-
-Benefits of having a referral complete the application:
-
-- Provides information that the hiring team think is important for the role that may not have been represented in their resume or referral notes.
-- Allows the hiring team to have a deeper conversation about who they are, what they are looking for, and about their experience.
-
-There is no need for your referral to apply through our careers page once you have referred them in Greenhouse.
+If you want to refer someone in your network, please add them in Greenhouse [here](https://tracking.cirrusinsight.com/5ae92f4c-b2ab-4851-852d-32a879d5bc4b/player-vimeo-com-video-163888438). There is **no need** for your referral to apply through our careers page once you have referred them in Greenhouse.
 
 ## [Interview process](interview_process.md)
 
