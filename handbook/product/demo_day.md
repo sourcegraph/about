@@ -10,9 +10,10 @@ Demos should be short and easy to prepare for, so that as many team members as p
 
 All demos are:
 
-- Features or changes that are **merged** into main and are **live** (i.e. on [Sourcegraph Cloud](https://sourcegraph.com/search) or [k8s.sgdev.org](https://k8s.sgdev.org))
-- Presented (ideally) by one of the teammates who built it
+- Features, changes, small bug fixes, or behind the scenes engineering work from the last month that are **merged** into main and are **live** (i.e. on [Sourcegraph Cloud](https://sourcegraph.com/search) or [k8s.sgdev.org](https://k8s.sgdev.org)).
+- Presented (ideally) by one of the teammates who built it.
 - Limited to 3 minutes (or less).
+- Can be recorded ahead of time and will be played for attendees (optional).
 
 We are here to help and support you as you prepare for your demo. Kylie or your team's PM will work with you to make sure that you can articulate in the simplest way possible why this new feature is awesome for our community and customers.
 
@@ -47,3 +48,5 @@ Here are some examples of great demos previously shared (not necessarily followi
 ## How to get scheduled
 
 When your team ships something that would make a great demo, mention @demoday-schedule in your #progress post, or send a short message to #demoday and you’ll be added to the schedule. Kylie will reach out in advance to plan prep time.
+
+We will keep track of and will organize the schedule in [this demo day schedule](https://docs.google.com/spreadsheets/d/1Te8HQXbUP-LZzoeSG90sN_dWyRgvZEB96uJoKPNbZqg/edit?usp=sharing).
