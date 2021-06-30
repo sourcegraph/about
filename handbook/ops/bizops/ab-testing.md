@@ -73,6 +73,7 @@ TODO
 
 ### Cleanup
 
+You should book some time for cleaning up after the A/B test. That can be either removing the flag and rolling out the changes, or removing the changes altogether. You can create a ticket for this when defining the test if useful.
 
 
 ## Resources
