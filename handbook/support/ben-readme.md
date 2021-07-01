@@ -1,7 +1,5 @@
 ## Ben Gordon
 
-[Bio on team page](https://about.sourcegraph.com/handbook/company/team#ben-gordon-he-him)
-
 ### View on Customer Support
 Customer Support is about tackling immediate problems efficiently and effectively. I want customers to feel good about reaching out for support, knowing that they are helping shape the development of the product they already love.
 
