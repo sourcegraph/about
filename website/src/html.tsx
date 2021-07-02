@@ -18,6 +18,7 @@ export default class HTML extends React.Component<HtmlProps> {
         return (
             <html lang="en">
                 <head>
+                    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NV75KPZ"></script>
                     {this.props.headComponents}
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
