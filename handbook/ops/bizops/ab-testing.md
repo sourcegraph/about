@@ -19,7 +19,7 @@ A/B testing is useful when there are several options to choose from, possibly wi
 
 It’s no use A/B testing versions if we already know the result with high probability. Sometimes though, we will want to use A/B testing for things we know are important just to *quantify* impact (is it worth maintaining this?), as opposed to just *validate* (yes/no) impact.
 
-#### A measure
+#### Measuring
 
 A/B testing requires a clear quantitative way to measure what is "better". A common advise is to pick a single, clear metric so that there is no ambiguity in deciding if the change `passed` or `failed`.
 
