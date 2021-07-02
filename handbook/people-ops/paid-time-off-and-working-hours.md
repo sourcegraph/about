@@ -4,6 +4,8 @@ At Sourcegraph, every teammate has agency over how they create a balance between
 
 This balance looks different from person to person and may be reliant on a number of factors, including a teammate’s preferred working style, location, and family obligations. For that reason, we empower our teammates to have agency over their working times, the vacations they take, the time they need to recharge, and the number of hours they can put in over any week without losing focus or motivation. Here are some basic guidelines to help our teammates navigate their paid time off for rest, paid time off for reasons other than rest, and working hours.
 
+Go here to read about [requesting time off](https://about.sourcegraph.com/handbook/people-ops/requesting-time-off).
+
 ## Paid time off (for rest)
 
 Our company-wide policy is unlimited paid time off in exchange for achieving work outcomes that impact our success, but we encourage our teammates to take a minimum of 30 days total paid time off for rest in a calendar year. Your total paid time off refers to vacation days, bank/public holidays, and religious days, and you can mix these days up as they best suit you, but remember that the intention is for you to disconnect and get rest.
