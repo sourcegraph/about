@@ -24,7 +24,7 @@ It’s no use A/B testing versions if we already know the result with high proba
 A/B testing requires a clear quantitative way to measure what is "better". A common advise is to pick a single, clear metric so that there is no ambiguity in deciding if the change `passed` or `failed`.
 
 
-#### A large enough number of users
+#### Volume of users to reach statistical significance
 
 A/B testing requires a large enough number of user to get statistically significant results. The smaller the number of user in the A/B testing cohort, the more the change needs to have a big impact on the metric to be measurable. This is because the signal (the impact of the change) needs to be higher than the noise (the random fluctuation in a metric).
 
