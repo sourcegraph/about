@@ -26,7 +26,7 @@ A/B testing requires a clear quantitative way to measure what is "better". A com
 
 #### Volume of users to reach statistical significance
 
-A/B testing requires a large enough number of user to get statistically significant results. The smaller the number of user in the A/B testing cohort, the more the change needs to have a big impact on the metric to be measurable. This is because the signal (the impact of the change) needs to be higher than the noise (the random fluctuation in a metric).
+A/B testing requires a large enough number of users to get statistically significant results. The smaller the number of users in the A/B testing cohort, the more the change needs to have a big impact on the metric to be measurable. This is because the signal (the impact of the change) needs to be higher than the noise (the random fluctuation in a metric).
 
 For example, retention fluctuates week over week for "random" reasons we don't understand. The more users, the smaller those "random" fluctuations will be: this will make it possible to decide wether a change caused by an experiment was likely random, or likely caused by the experiment.
 
