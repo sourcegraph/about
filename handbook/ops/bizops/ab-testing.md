@@ -62,19 +62,13 @@ After you identify a good A/B test candidate:
 ### Setup the A/B test
 
 - Add your A/B test to the [tracker](https://docs.google.com/spreadsheets/d/1BSLrcvnhq-7X9XrsM81MQePYBVjozxB2GWgNmOUdyeI/edit) and sync with BizOps to make sure it will not conflict with other A/B tests.
-
-TODO
-
-### Run the A/B test
-
+- [Use a feature flag](https://docs.sourcegraph.com/dev/how-to/use_feature_flags) to setup and rollout the A/B test
 
 ### Analyze the A/B test
-
+Analyze and write a report in a source of truth. Link to that in the original A/B test ticket.
 
 ### Cleanup
-
-You should book some time for cleaning up after the A/B test. That can be either removing the flag and rolling out the changes, or removing the changes altogether. You can create a ticket for this when defining the test if useful.
-
+You should book some time for cleaning up after the A/B test. That can be either [removing the flag](https://docs.sourcegraph.com/dev/how-to/use_feature_flags#disable-or-delete-the-feature-flag) and rolling out the changes, or removing the changes altogether. You can create a ticket for this when defining the test if useful.
 
 ## Resources
 
