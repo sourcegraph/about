@@ -5,7 +5,7 @@ A/B testing is a great way to test out which of two or more variants (A or B) of
 
 Measuring a metric before/after a change (pre/post) sometimes doesn’t work, because many things are happening at the same time. If we launch a marketing campaign AND a feature to improve retention, and we see retention decrease, how do we know if it’s caused by poorly qualified traffic from the marketing campaign or by the feature not performing? Recently, retention was cut by half, for a yet unknown reason that we guess is a change in the nature of the traffic. If we had A/B tested that week, we could have measured the impact of new features, since both cohorts would have seen, on average, the same amount of “normal” and “weird” traffic.
 
-## When to A/B testing
+## When to A/B test
 
 A/B testing is a good fit when there are several competing valid options with no clear answer, a clear metric to measure success, and a large enough number of users to test on.
 
