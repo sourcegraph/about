@@ -40,3 +40,7 @@ Amplitude is built on top of our existing [eventLogger infrastructure](https://s
 2. Since Amplitude events are based on ```sourcegraph_analytics.amplitude_events_v3``` an [INSERT statement](https://console.cloud.google.com/bigquery?pli=1&project=telligentsourcegraph&ws=!1m14!1m4!1m3!1stelligentsourcegraph!2sbquxjob_3a38e2f8_179cb5027f7!3sUS!1m4!4m3!1stelligentsourcegraph!2sdotcom_events!3samplitude_events_v2!1m3!8m2!1s839055276916!2sed7433a9cf0646a8a7c186c907b9accb&jobFilter=%255B%257B_22k_22_3A_22User%2520email_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22ericbm%2540sourcegraph.com_5C_22_22_2C_22s_22_3Atrue%257D%255D&sq=839055276916:ed7433a9cf0646a8a7c186c907b9accb) needs to be run to add or backfill events. A BizOps/DataOps team member will run this INSERT statement.
 3. Add the event to the [data map](https://docs.google.com/spreadsheets/d/171up68LIY1xQZTgBoA5FQpGO62Wg0a0wNNrm8ksVm4A/edit#gid=0).
 4. Within an hour or two of the INSERT statement, the [automated script](https://github.com/sourcegraph/Amplitude/blob/main/main.py) will load these events into Amplitude.
+
+### A/B testing in Amplitude
+
+Each A/B test has a user characteristic where the A/B test is true or false (true = they saw the variant, false = they saw the original). 
