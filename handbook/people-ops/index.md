@@ -46,7 +46,7 @@ WIP
 - [Paid time off and working hours](paid-time-off-and-working-hours.md)
   - [Requesting time off](requesting-time-off.md)
 - [Bank and public holidays](holidays.md)
-- [Donations teammates can do](donations.md)
+- [Donations teammates can make](donations.md)
 - [Celebrating birthdays and anniversaries](celebrate.md)
 - [When we can sponsor United States visas](visa-sponsorship.md)
 - [Employment verification](employment_verification.md)
