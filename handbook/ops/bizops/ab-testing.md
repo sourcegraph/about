@@ -65,6 +65,7 @@ After you identify a good A/B test candidate:
 
 - Add your A/B test to the [tracker](https://docs.google.com/spreadsheets/d/1BSLrcvnhq-7X9XrsM81MQePYBVjozxB2GWgNmOUdyeI/edit) and sync with BizOps to make sure it will not conflict with other A/B tests.
 - [Use a feature flag](https://docs.sourcegraph.com/dev/how-to/use_feature_flags) to setup and rollout the A/B test
+- Follow the steps to [add the events to Sourcegraph and Amplitude](../amplitude.md#adding-events-to-amplitude)
 
 ### Analyze the A/B test
 Analyze and write a report in a source of truth. Link to that in the original A/B test ticket.
