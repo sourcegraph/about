@@ -69,7 +69,7 @@ After you identify a good A/B test candidate:
 - Follow the steps to [add the events to Sourcegraph and Amplitude](amplitude.md#adding-events-to-amplitude)
 
 ### Analyze the A/B test
-Analyze and write a report in a source of truth. Link to that in the original A/B test ticket.
+Analyze, write a report in a source of truth, and link to that in the original A/B test ticket. You can use Amplitude (link to come) or [BigQuery/Sheets](https://docs.google.com/spreadsheets/d/1m31oBnqJKu9JVuHA27pZVA1sdv_tc2Vc36pvXwv6mhI/edit#gid=802294460) to evaluate A/B tests. 
 
 ### Cleanup
 You should book some time for cleaning up after the A/B test. That can be either [removing the flag](https://docs.sourcegraph.com/dev/how-to/use_feature_flags#disable-or-delete-the-feature-flag) and rolling out the changes, or removing the changes altogether. You can create a ticket for this when defining the test if useful.
