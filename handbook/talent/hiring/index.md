@@ -12,7 +12,7 @@
    - All interviewers submit written feedback independently before being able to see feedback from other interviewers. Feedback may not be edited after submission.
    - We maintain a consistent hiring [decision process](#decision-making-process) for all candidates.
 1. Hiring managers own the hiring process for their team.
-   - Hiring managers are encouraged to partner with [their assigned Recruiter](https://about.sourcegraph.com/handbook/talent/hiring/how_recruiting_interfaces_with_hiring_managers#the-talent-team) to experiment to learn how to improve their hiring process.
+   - Hiring managers are encouraged to partner with [their assigned Recruiter](hiring/how_recruiting_interfaces_with_hiring_managers.md#the-talent-team) to experiment to learn how to improve their hiring process.
    - The handbook is kept up-to-date with our learnings and current norms. If something is missing from the Handbook, please Slack @hiring.
 
 ## How recruiting interfaces with hiring managers
