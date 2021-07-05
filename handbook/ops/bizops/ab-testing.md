@@ -40,6 +40,7 @@ Running A/B tests on a number of users that is too small is inefficient (waste t
 
 - Evaluating signup flows, or any flow that result in a measurable action
 - Evaluating versions of button placement, CTAs, landing pages
+- Evaluating different messaging and positioning statements
 
 #### Bad A/B test candidates
 
