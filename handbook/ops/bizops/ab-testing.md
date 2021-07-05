@@ -7,7 +7,7 @@ Measuring a metric before/after a change (pre/post) sometimes doesn’t work, be
 
 ## When to A/B test
 
-A/B testing is a good fit when there are several competing valid options with no clear answer, a clear metric to measure success, and a large enough number of users to test on.
+A/B testing is a good fit when there are several competing valid options with no clear answer, a clear metric to measure success, and a large enough number of users to test on. Evaluate:
 
 #### Impact
 
