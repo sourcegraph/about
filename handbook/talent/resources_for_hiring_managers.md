@@ -1,7 +1,7 @@
 # Resources for Hiring Managers 
 
 ## Partnering with recruiting 
-Each hiring manager has an [assigned recruiter]((https://about.sourcegraph.com/handbook/talent#talent-team-members) for their hiring needs. If you are unsure which Recruiter you should partner with, please Slack @hiring to inquire. 
+Each hiring manager has an [assigned recruiter](https://about.sourcegraph.com/handbook/talent#talent-team-members) for their hiring needs. If you are unsure which Recruiter you should partner with, please Slack @hiring to inquire. 
 
 ## Estimated time-to-hire
 It is our goal to fill our openings as quickly as possible while maintaining a high quality bar and a strong candidate experience.  Our time-to-fill goal is an average of 45-days.  This means that the timespan from intake meeting to candidate offer acceptance (when a candidate signs their offer letter) should be, on average, 45-days or less.  
@@ -18,7 +18,7 @@ Please [click here](https://about.sourcegraph.com/handbook/talent/interview_proc
 ### 1. Opening a new job
 - To open a new role:
     - The Hiring Manager fills out [this intake form](https://docs.google.com/forms/d/1ju9waV4k_TpYMGmYZaH5eA2swkuvIthLFKQCzqrRUZM/edit).
-    - The Hiring Manager creates a job description using [this template](https://docs.google.com/document/d/1rJAYyARbegvvH_e-VTrHoFhU9cDG5WfHov3L12NeCO8/edit).  Read more about why we write job descriptions in this way [here](https://about.sourcegraph.com/handbook/talent/hiring/interview_process#creating-a-job-description). 
+    - The Hiring Manager creates a job description using [this template](https://docs.google.com/document/d/1rJAYyARbegvvH_e-VTrHoFhU9cDG5WfHov3L12NeCO8/edit).  Read more about why we write job descriptions in this way [here](https://about.sourcegraph.com/handbook/talent/interview_process#creating-a-job-description). 
     - The Hiring Manager creates an [interview plan](https://docs.google.com/spreadsheets/d/1pMG_K3pf_pP_AIvy8jjOKc-h6htDJ5QkvEMD3prAQ5Y/edit#gid=1566158302).  Before creating your plan, we encourage you to [read more](https://about.sourcegraph.com/handbook/talent/hiring) about why creating an interview plan comprised of structured interview questions is critical to our success. 
    
 - Once the Hiring Manager completes the above steps, the Recruiter takes the below actions:
@@ -87,14 +87,9 @@ You can see a list of all recruiting tools [here](https://about.sourcegraph.com/
 
 Please put your written feedback into Greenhouse as soon as possible following the interview (immediately is ideal) while it is still fresh in your mind.  You can also leverage your [BrightHire recording](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire) to revisit key points during the interview when providing feedback.
 
-### Feedback rating
+All feedback must be submitted in Greenhouse before discussing with anyone. This is required and ensures that bias does not impact your hiring recommendation.
 
-- **Strong positive**. You are confident that this person would make our team better and you would be excited to have the chance to work with them.
-- **Positive**. You observed only positive signs that this person would be a good fit for our team, but you don't feel strongly about hiring them.
-- **Negative**. You are neutral or have doubts about whether this person would make our team better.
-- **Strong negative**. You are very confident that we should not hire this person because they would not be successful on our team.
-
-All positive feedback with no strongly positive feedback is usually not sufficient. We want to hire people who we are excited to work with.
+In addition to written feedback, you will also be asked to give an overall rating: 1. Strong yes 2. Yes 3. No 4. Strong no.  Please familiarize yourself with our [rating definitions](https://about.sourcegraph.com/handbook/talent/interview_process#providing-interview-feedback) to ensure all teammates are rating candidates using the same scale.  
 
 ## Interview debriefs
 
@@ -104,9 +99,9 @@ We conduct debriefs after a candidate finishes interviews. The debrief can eithe
 
 We are flexible when it comes to scheduling interviews because we are all-remote and we don't need to schedule all interviews back-to-back (unlike typical onsite interviews at other companies). Some candidates like spreading interviews out (e.g., across multiple days and/or having breaks between interviews on the same day) and others prefer to batch them as much as possible to get it over with. *Ask the candidate what their ideal interview schedule looks like and then try to accommodate those preferences as much as possible (given interviewer availability)*.
 
-Even if candidates prefer to batch all their interviews together, it might not be possible due to the timezones of available interviewers.
+Even if candidates prefer to batch all their interviews together, it might not be possible due to the time zones of available interviewers.
 
 If interviews are spread over multiple days and it is clear from the initial feedback that we won't be moving forward, we will cancel the remaining scheduled interviews to save our teammates and the candidate's time.
 
-To schedule an interview with a candidate, please reach work with your recruiter or Slack @hiring.  You can see a list of Recruiters [here](https://about.sourcegraph.com/handbook/talent/hiring/how_recruiting_interfaces_with_hiring_managers#the-talent-team).
+To schedule an interview with a candidate, please reach work with your recruiter or Slack @hiring.  You can see a list of Recruiters [here](https://about.sourcegraph.com/handbook/talent#talent-team-members).
 
