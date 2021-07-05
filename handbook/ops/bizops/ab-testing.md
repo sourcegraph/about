@@ -28,7 +28,7 @@ A/B testing requires a clear quantitative way to measure what is "better". A com
 
 A/B testing requires a large enough number of users to get statistically significant results. The smaller the number of users in the A/B testing cohort, the more the change needs to have a big impact on the metric to be measurable. This is because the signal (the impact of the change) needs to be higher than the noise (the random fluctuation in a metric).
 
-If you want to A/B test over a part of the product that does not receive a lot of traffic and therefore needs a much bigger impact on the metric to be statistically significant, the variant tested generally needs to be much more ambitious and thoughtful (e.g. removing 75% of steps in a sign-up flow instead of changing the color of a button). 
+If you want to A/B test over a part of the product that does not receive a lot of traffic and therefore needs a much bigger impact on the metric to be statistically significant, the variant tested generally needs to be much more ambitious and thoughtful (e.g. removing 75% of steps in a sign-up flow instead of changing the color of a button).
 
 For example, retention fluctuates week over week for "random" reasons we don't understand. The more users, the smaller those "random" fluctuations will be: this will make it possible to decide wether a change caused by an experiment was likely random, or likely caused by the experiment.
 
@@ -66,7 +66,7 @@ After you identify a good A/B test candidate:
 
 - Add your A/B test to the [tracker](https://docs.google.com/spreadsheets/d/1BSLrcvnhq-7X9XrsM81MQePYBVjozxB2GWgNmOUdyeI/edit) and sync with BizOps to make sure it will not conflict with other A/B tests.
 - [Use a feature flag](https://docs.sourcegraph.com/dev/how-to/use_feature_flags) to setup and rollout the A/B test
-- Follow the steps to [add the events to Sourcegraph and Amplitude](../amplitude.md#adding-events-to-amplitude)
+- Follow the steps to [add the events to Sourcegraph and Amplitude](amplitude.md#adding-events-to-amplitude)
 
 ### Analyze the A/B test
 Analyze and write a report in a source of truth. Link to that in the original A/B test ticket.
