@@ -114,7 +114,7 @@ In addition to the above interviews, some departments have department-specific i
 
 ## Sales
 
-**Sales Development Representativ:**
+**Sales Development Representative:**
 
 - SDR writing assignment
   -  Interviewer(s): NA - this is a take home assignment.
