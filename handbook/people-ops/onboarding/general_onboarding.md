@@ -1,6 +1,6 @@
 # General onboarding checklist
 
-*We are in the process of creating a single, unified, structured onboarding checklist for each team, hosted in [Process St](process.st). This means some teams will have one checklist while others may still have a general one (in Process St.) and a team specific one provided by their manager.*
+*We are in the process of creating a single, unified, structured onboarding checklist for each team, hosted in [Process St](https://app.process.st/reports). This means some teams will have one checklist while others may still have a general one (in Process St.) and a team specific one provided by their manager.*
 
 - Watch the [new team member intro from the CEO](https://www.youtube.com/watch?v=EVHUGZe5uts)
 
