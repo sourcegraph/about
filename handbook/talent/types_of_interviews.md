@@ -131,4 +131,4 @@ In addition to the above interviews, some departments have department-specific i
   -  Purpose: you will be preparing a 45-minute presentation, to be shared with Greg Bastis, VP, West, and Account Executive(s) on the team. Please use this presentation as a guide for the conversation.  The goal of the presentation is to help us get to know you better as a person and as a professional. Primary themes include your bio/work history, how you approach building and process, and the types of customers with whom you’ve worked in the past. ** If you have any issues accessing the above presentation, please reply all to this email and we will help!
 
 ### Talent 
-- Coming soon
+- Coming soon.
