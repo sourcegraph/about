@@ -43,4 +43,4 @@ Amplitude is built on top of our existing [eventLogger infrastructure](https://s
 
 ### A/B testing in Amplitude
 
-Each A/B test has a user characteristic where the A/B test is true or false (true = they saw the variant, false = they saw the original). See the page on [A/B testing](ab-testing.md) for more information about experimentation at Sourcegraph.
+Each A/B test has a user property where the A/B test is true or false (true = they saw the variant, false = they saw the original). See the page on [A/B testing](ab-testing.md) for more information about experimentation at Sourcegraph.
