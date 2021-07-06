@@ -95,7 +95,7 @@ We have a weekly rotation for triaging and grooming issues. During their week on
 1. Click the "+ Add cards" button and search for `is:issue is:open label:team/frontend-platform` to find all open issues for the Frontend Platform team that are not yet on our board. For each issue that is found, drag the card into the _Inbox_ column on our board.
 2. For each issue in the _Inbox_ column, consider the following:
    - Is it clear what needs to be done? If not, ask for clarification on the ticket, apply an appropriate label (e.g., `needs-more-info`), and move the ticket to the _Needs input_ column.
-   - Is it clearly something that should be done by the Frontend Platform team? If not, tag other teams (using the appropriate `team/xyz` label) and have a discussion about which is the best team to own the issue. Or you can add the `needs-discussion` label and discuss it with the team at the next Frontend Platform sync / FPT coffee.
+   - Is it clearly something that should be done by the Frontend Platform team? If not, tag other teams (using the appropriate `team/xyz` label) and have a discussion about which is the best team to own the issue. Or you can add the `needs-discussion` label and discuss it with the team at an upcoming meeting (e.g. Frontend Platform sync or FPT coffee).
    - Is it ready for development? If required, add the `needs-design` label and move the ticket into the _Needs input_ column.
    - If it's ready for development and you know how to prioritize it correctly, move it to one of the _Backlog_ columns. If you don't know how to prioritize it, you can leave it in the _Inbox_ column and ask your teammates for help with prioritization.
 
@@ -148,4 +148,4 @@ The team holds weekly syncs.
 
 The meeting notes of team syncs can be found [in this doc](https://docs.google.com/document/d/1_wptyMfAjLagJKPjIhPt_miXoEpYuyo_64PBCTTr5h0/edit).
 
-Before team syncs, teammates and stakeholders should write down under "Agenda" in the meeting notes document anything that they'd like to bring up for discussion with the whole team.
+Before team syncs, teammates and stakeholders should write down under "Agenda" in the meeting notes document anything that they'd like to bring up for discussion with the whole team. During the sync, we dedicate time to discussing any tickets on our board that have the `needs-discussion` label.
