@@ -37,7 +37,7 @@ We track the following categories in pings for each month. The explanations are 
 Our metrics infrastructure (Looker, Amplitude) gets user counts from our event_logs database.
 
 ### On-Prem Instances
-In each ping, instances will send a site_activity.DAUs, site_activity.WAUs, and site_activity.MAUs field which represent daily, weekly, and monthly user counts on an instance. These numbers are taken from the `event_logs` table of the instance, and count the number of distinct user IDs that executed any action on the instance in a given time period. See the [`activeUsers` function](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%407eeeb9b+func+activeUsers&patternType=literal) for the implementation and SQL query.
+In each ping, instances will send a site_activity.DAUs, site_activity.WAUs, and site_activity.MAUs field which represent daily, weekly, and monthly user counts on an instance. These numbers are taken from the `event_logs` table of the instance, and count the number of distinct user IDs that executed any action on the instance in a given time period. These are sent back to us in the form of pings, which is what shows up in Looker. See the [`activeUsers` function](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%407eeeb9b+func+activeUsers&patternType=literal) for the implementation and SQL query.
 
 ### Sourcegraph Cloud
 
