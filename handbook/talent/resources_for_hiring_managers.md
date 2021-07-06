@@ -92,13 +92,24 @@ You can see a list of all recruiting tools [here](hiring/index.md#recruiting-too
 - Guide to using [BrightHire](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire), our interview recording tool
 - Guide to using [Greenhouse](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_greenhouse), our applicant tracking system
 
-## Providing interview feedback
+## Providing internal interview feedback
 
 Please put your written feedback into Greenhouse as soon as possible following the interview (immediately is ideal) while it is still fresh in your mind.  You can also leverage your [BrightHire recording](hiring/guide_to_using_brighthire.md) to revisit key points during the interview when providing feedback.
 
 All feedback must be submitted in Greenhouse before discussing with anyone. This is required and ensures that bias does not impact your hiring recommendation.
 
 We want to ensure that teammates score candidates in a consistent fashion which is why we have [definitions](https://about.sourcegraph.com/handbook/talent/interview_process#providing-interview-feedback) for what the following ratings mean: 1. Strong yes 2. Yes 3. No 4. Strong no. 
+
+## Providing feedback to candidates 
+
+Candiates often ask for feedback and are curious to know why we're not moving forward with them.  We don't share specific reasons or feedback if we decide not to move forward in our hiring process with a candidate.  It would be nice if we could give feedback like this, but we don't do this today. Why?
+
+- The written feedback that we collect during our interview process is intended for an internal audience. We don't ask our interviewers to spend time and effort packaging their feedback in a way that can be delivered directly to candidates.
+- Adequately summarizing all interview feedback for a candidate is challenging and time consuming. We choose to spend our time focusing on delivering developmental feedback to our existing teammates.
+
+If any interviewer is asked by a candidate for interview feedback, they may respond with the following message:
+
+> I understand the desire to receive feedback from our interview process, but unfortunately we are not in a position to give it. Here is some public documentation to that effect: https://about.sourcegraph.com/handbook/talent/hiring#sharing-interview-feedback.
 
 ## Interview debriefs
 
