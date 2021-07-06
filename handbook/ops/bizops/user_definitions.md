@@ -31,7 +31,7 @@ We track the following categories in pings for each month. The explanations are 
 | DAU/MAU | The ratio of average DAUs over a month to the number of MAUs in the corresponding month. If the ratio is 0.4 or 40%, the average user used Sourcegraph 12 days per month (30 days * .4 = 12). |
 | DAU/WAU | The ratio of average DAUs over a week to the number of WAUs in the corresponding week. If the ratio is 0.4 or 40%, the average user used Sourcegraph 2.8 days per week (7 days * .4 = 2.8).   |
 
-# How are users calculated in the app?
+# How are users calculated?
 
 
 Our metrics infrastructure (Looker, Amplitude) gets user counts from our event_logs database.
@@ -48,5 +48,4 @@ There are shortcomings to this. For one, when a user converts into an authed use
 ### In-app site admin usage stas page
 
 This is a known issue. In the site admin panel, we have a Usage stats page that displays number of MAUs. This pulls data from Redis, which gets populated by our `usagestatsdeprecated` package. This was an old way of collecting data, and is not reliable. This has been raised, and will be fixed to use the `event_logs` table. 
-
 
