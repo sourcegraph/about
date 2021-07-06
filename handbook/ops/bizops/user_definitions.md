@@ -45,7 +45,6 @@ For Sourcegraph Cloud, we use the same method for calculating user counts, pulli
 
 There are shortcomings to this. For one, when a user converts into an authed user, their events conducted with their anonymous user ID are still in the DB, so we would count two different users being active rather than a single user.For analytics purposes in Amplitude, this is also not ideal because we are not able to connect the actions of a user before and after they've converted.
 
-### In-app site admin usage stas page
+### In-app site admin [usage stats page](https://sourcegraph.com/site-admin/usage-statistics)
 
 This is a known issue. In the site admin panel, we have a Usage stats page that displays number of MAUs. This pulls data from Redis, which gets populated by our `usagestatsdeprecated` package. This was an old way of collecting data, and is not reliable. This has been raised, and will be fixed to use the `event_logs` table. 
-
