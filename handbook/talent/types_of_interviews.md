@@ -32,8 +32,10 @@ All departments are likely to have some or all of the below universal interview 
 - Duration: 30-minutes is average, but sometimes these are longer.
 - Details: during this stage in the interview process, the Hiring Manager will introduce themself, get to know you, and answer any initial questions you may have.  This stage is meant to be conversational and informative for both us and the candidate. 
 - Example questions: 
-  -  Tell me about a time when you made a critical mistake. What happened, and how did you deal with it?
-  -  Tell me about a time when you identified a problem and took the initiative to solve it.
+  -  Tell me how you would describe Sourcegraph to a friend.
+  -  Why are you a good fit for our open role?
+  -  What would make you a successful teammate? 
+  -  Role specific questions... 
 
 ## Resume deep dive 
 - Interviewer(s): the hiring manager or a peer leads the Resume deep dive, and sometimes there is another teammate who shadows the interview.
@@ -108,14 +110,24 @@ In addition to the above interviews, some departments have department-specific i
 
 ## Product
 
+**Product Manager **
+
+- Coming soon
+
+**Product Designer**
+
 - Product designer portfolio review
   -  Interviewer(s): Coming soon
   -  Duration: Coming soon
   -  Details: in this interview, we will be looking for you to give some real insight into a problem you were solving as part of a project you’ve worked on. We would like you to lead us through this problem or case study in detail. We’ll look to understand the size and structure of the team you were a part of, the goals of the project, your low-fidelity design work, your high-fidelity design skills, how you approached research, how you synthesized research data to inform design decisions, what design standards and guidelines you worked within, and how you collaborated with a wider team. We are particularly interested in your process for the project, the outcomes, the challenges you encountered, and tradeoffs you made.
 
+**Product Leadership**
+
+- Coming soon
+
 ## Sales
 
-**Sales Development Representativ:**
+**Sales Development Representative:**
 
 - SDR writing assignment
   -  Interviewer(s): NA - this is a take home assignment.
