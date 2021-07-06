@@ -5,8 +5,12 @@ The below information is intended to help our candidates prepare for each step o
 ## The interview process 
 All role-specific interview processes are documented at the end of each [job description](https://boards.greenhouse.io/sourcegraph91).  You can also read more about our interview process [here](https://about.sourcegraph.com/handbook/talent/interview_process).   
 
-## Types of interview questions
-We ask structured questions for all interviews, meaning that all candidates are asked the same questions in an effort to reduce bias and to even the playing-field. The interview may be recorded so that we can focus on the candidate, not taking notes, and ensure that we're delivering a great interview experience. If a candidate prefers not to be recorded during the interview, they can let us know - the structure of the interview and decision-making process will remain the same and the decision not to be recorded will have no weight on their candidacy.
+## Structured interview questions
+We ask structured questions for all interviews, meaning that all candidates are asked the same questions in an effort to reduce bias and to even the playing-field. The interview [may be recorded](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire) so that we can focus on the candidate, not taking notes, and ensure that we're delivering a great interview experience. If a candidate prefers not to be recorded during the interview, they can let us know - the structure of the interview and decision-making process will remain the same and the decision not to be recorded will have no weight on their candidacy.
+
+## Universal interviews 
+
+All departments are likely to have the below interview stages:
 
 ### Recruiter screen 
 - Interviewer: the assigned recruiter for the role.
@@ -131,4 +135,4 @@ In addition to the above interviews, some departments have department-specific i
   -  Purpose: you will be preparing a 45-minute presentation, to be shared with Greg Bastis, VP, West, and Account Executive(s) on the team. Please use this presentation as a guide for the conversation.  The goal of the presentation is to help us get to know you better as a person and as a professional. Primary themes include your bio/work history, how you approach building and process, and the types of customers with whom you’ve worked in the past. ** If you have any issues accessing the above presentation, please reply all to this email and we will help!
 
 ### Talent 
-- Coming soon
+- Coming soon.
