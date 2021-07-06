@@ -47,6 +47,7 @@ We run (or have run) ads/sponsorships on the following channels in order to rais
 - [Hanselman](https://www.hanselman.com/)
 
 #### Developer-Facing Podcasts
+
 - [Software Engineering Daily](https://softwareengineeringdaily.com/)
 - [Daring Fireball “The Talk Show”](https://daringfireball.net/thetalkshow/)
 - [Go Time](https://changelog.com/gotime)
@@ -61,9 +62,9 @@ We run search ads (text and display) on both Google and Bing. Our display ads ru
 ### Paid Social Campaigns
 
 We have run multiple [Sponsored Content campaigns on LinkedIn](https://www.linkedin.com/company/sourcegraph/posts/?feedView=ads&viewAsMember=true), using the following content offers, among others:
-* [Ex-Googler’s Guide to Dev Tools](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools/) – blog post – served to ex-Googler individual developers
-* [Big Code survey](https://info.sourcegraph.com/emergence-of-big-code-2020-survey) – PDF download – served to individual developers/managers at Target Accounts
-* [Better onboarding](https://about.sourcegraph.com/blog/better-onboarding-how-to-prevent-codebase-overwhelm/) – blog post – served to individual developers at Target Accounts
+- [Ex-Googler’s Guide to Dev Tools](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools/) (blog post - served to ex-Googler individual developers)
+- [Big Code survey](https://info.sourcegraph.com/emergence-of-big-code-2020-survey) (PDF download - served to individual developers/managers at Target Accounts)
+- [Better onboarding](https://about.sourcegraph.com/blog/better-onboarding-how-to-prevent-codebase-overwhelm/) (blog post - served to individual developers at Target Accounts)
 
 Additionally, we have an ongoing LinkedIn campaign promoting Sourcegraph (using testimonial quotes and case study content) that is served to engineers/managers at companies in Salesforce deal stages 4-6.
 

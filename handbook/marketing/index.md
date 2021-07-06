@@ -20,9 +20,6 @@
     - [Account Based Experience](account_based_experience.md)
     - [Digital Marketing Programs](digital_marketing_programs.md)
     - [Marketing operations](marketing_operations.md)
-         - [Livestream events](livestream.md)
-         - [Looker dashboards](https://sourcegraph.looker.com/browse/boards/2)
-         - [Digital ads](ad_conversion_flows.md)
 
 - [Developer Education](education.md)
 - Community Relations
@@ -66,6 +63,10 @@
         - [Vanesa Ortiz](../company/team/index.md#vanesa-ortiz-she-her), Content Engineer
         - [Prosper Otemuyiwa](../company/team/index.md#prosper-otemuyiwa-he-him), Staff Developer Evangelist
         - We will be hiring developer advocates
+    -  Amie Rotherham, Director of Global Communications 
+    
+
+
 
 ## Open Roles
 

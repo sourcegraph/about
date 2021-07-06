@@ -1,58 +1,76 @@
-The Talent team is responsible for helping every team at Sourcegraph hire, and for providing an incredible experience to all candidates. 
-
 # Talent
+
+The Talent team is responsible for helping every team at Sourcegraph hire, and for providing an incredible experience to all candidates.
 
 ## Talent Team Members
 - [Carly Jones](../company/team/index.md#carly-jones-she-her), VP of Talent
-    - [Devon Coords](../company/team/index.md#devon-coords-she-her), Senior Technical Recruiter, Team Lead
-    - [Kelsey Nagel](../company/team/index.md#kelsey-nagel-she-her), Marketing & Finance Recruiter 
-    - [Trevor Houghton](../company/team/index.md#trevor-houghton-he-him), Recruitment Operations Specialist
-    - We are hiring Recruiters!  View our open positions [here](https://boards.greenhouse.io/sourcegraph91)
+- [Devon Coords](../company/team/index.md#devon-coords-she-her), Senior Technical Recruiter, Team Lead
+   - Engineering
+   - Product
+   - Customer Engineering
+   - Support
+- [Kelsey Nagel](../company/team/index.md#kelsey-nagel-she-her), Corporate Recruiter
+   - Marketing
+   - Finance
+   - Legal
+   - BizOps
+   - People Operations
+- Coming July 19th!  Senior Sales Recruiter 
+- [Trevor Houghton](../company/team/index.md#trevor-houghton-he-him), Recruitment Operations Specialist
+   - Interview scheduling for all departments
 
-## Resources for Candidates
-- [Our open positions](https://boards.greenhouse.io/sourcegraph91)
-- [All remote work](https://about.sourcegraph.com/handbook/company/remote)
-- [Our hiring values](https://about.sourcegraph.com/handbook/talent/hiring)
-- [Our company values](https://about.sourcegraph.com/handbook/company/values)
-- [Our benefits & perks](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks)
-- [Our interview process](https://about.sourcegraph.com/handbook/talent/hiring/interview_process)
-- [Providing candidate experience feedback] Coming soon
-- [US Visa Sponsorship](https://about.sourcegraph.com/handbook/people-ops/visa-sponsorship)
+We are **hiring recruiters**!  View our open positions [here](https://boards.greenhouse.io/sourcegraph91).
 
-## Resources for Hiring Managers
-- [Partnering with the Recruiting Team](https://about.sourcegraph.com/handbook/talent/hiring/how_recruiting_interfaces_with_hiring_managers)
-   - [Opening a new job](https://docs.google.com/forms/d/1ju9waV4k_TpYMGmYZaH5eA2swkuvIthLFKQCzqrRUZM/edit)
-   - [Writing a job description](https://docs.google.com/document/d/1rJAYyARbegvvH_e-VTrHoFhU9cDG5WfHov3L12NeCO8/edit)
-   - [Creating an interview plan](https://docs.google.com/spreadsheets/d/1pMG_K3pf_pP_AIvy8jjOKc-h6htDJ5QkvEMD3prAQ5Y/edit#gid=1566158302)
-   - [Scheduling an interview](https://about.sourcegraph.com/handbook/talent/hiring/interview_process)
-   - [Extending an offer] Coming soon
+## [Resources for Candidates](https://about.sourcegraph.com/handbook/talent/resources_for_candidates)
+
+- [Open positions](https://about.sourcegraph.com/handbook/talent/resources_for_candidates#how-to-apply)
+- [Company values](https://about.sourcegraph.com/handbook/talent/resources_for_candidates#our-company-values)
+- [Perks, benefits & compensation](https://about.sourcegraph.com/handbook/talent/resources_for_candidates#benefits-and-perks)
+- [How to prepare for your interview](https://about.sourcegraph.com/handbook/talent/resources_for_candidates)
+- [Types of interviews](https://about.sourcegraph.com/handbook/talent/types_of_interviews)
+- [Candidate FAQ](https://about.sourcegraph.com/handbook/talent/resources_for_candidates#candidate-faq)  
+
+## [Resources for Hiring Managers](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers)
+
+- The interview process
+   - [The interview process](https://about.sourcegraph.com/handbook/talent/interview_process)
+   - [Types of interviews](https://about.sourcegraph.com/handbook/talent/types_of_interviews)
+   - [Opening a new job](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers#the-interview-process)
+   - [Writing a job description](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers#the-interview-process)
+   - [Creating an interview plan](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers#the-interview-process)
+   - [Scheduling an interview](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers#scheduling)
+   - [Extending an offer](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers#3-offer-stage)
+- Interviewing 
+   - [Hiring manager screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#hiring-manager-screen)
+   - [Interview training](https://about.sourcegraph.com/handbook/talent/interview_training)
+- [Recruiting tools](https://about.sourcegraph.com/handbook/talent/hiring#recruiting-tools)
+   - [Greenhouse](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_greenhouse), our ATS
+   - [BrightHire](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire#guide-to-using-brighthire), our interview recording tool
+   - [LinkedIn](https://about.sourcegraph.com/handbook/talent/hiring/linkedin), our sourcing tool
 - [Using recruitment agencies](https://about.sourcegraph.com/handbook/talent/hiring)
-- [Interview training & best practices] Coming soon
-   - [Unconscious bias training] Coming soon
-   - [Values interview training] Coming soon
-   - [Interviewing 101] Coming soon
-- Tools
-   - [Greenhouse, our ATS](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_greenhouse)
-   - [LinkedIn, our sourcing tool] Coming soon
-   - [Brighthire, our interview recording tool](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire)
 
-## Resources for Teammates 
-- How to refer a candidate 
-   - [Video Instructions here](https://vimeo.com/163888438)
-   - [Written Instructions here] Coming soon
-- [How to share a job on social media] Coming soon
-- [Interview training & best practices] Coming soon
+## [Resources for Teammates](https://about.sourcegraph.com/handbook/talent/resources_for_teammates)
 
-## Resources for Recruiters 
-- [Partnering with Hiring Managers](https://about.sourcegraph.com/handbook/talent/hiring/how_recruiting_interfaces_with_hiring_managers)
-- [Interview training & best practices] Coming soon
-   - [Unconscious bias training] Coming soon
-   - [Values interview training] Coming soon
-   - [Interviewing 101] Coming soon
-   - [Counter offer training] Coming soon
-- [Recruitment branding] Coming soon
-- Tools
-   - [Greenhouse, our ATS](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_greenhouse)
-   - [LinkedIn Recruiter, our sourcing tool] Coming soon
-   - [Brighthire, our interview recording tool] Coming soon
-   - [Ashby, our metrics tool] Coming soon
+- [How to refer a candidate](https://about.sourcegraph.com/handbook/talent/hiring#making-a-referral)
+- Interviewing
+   - [Peer interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#peer-interview)
+   - [Team collaboration interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#team-collaboration-interview)
+   - [Values interview](https://about.sourcegraph.com/handbook/talent/hiring/evaluating_values)
+- [Interview training & best practices](https://about.sourcegraph.com/handbook/talent/interview_training)
+- [Recruiting Tools](https://about.sourcegraph.com/handbook/talent/hiring#recruiting-tools)
+   - [BrightHire](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire#guide-to-using-brighthire), our interview recording tool
+
+## [Resources for Recruiters](https://about.sourcegraph.com/handbook/talent/resources_for_recruiters)
+
+- [Partnering with hiring managers](https://about.sourcegraph.com/handbook/talent/resources_for_recruiters)
+- Interviewing
+   - [Recruiter screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#recruiter-screen)
+- [Interview training & best practices](https://about.sourcegraph.com/handbook/talent/interview_training)
+- [Recruiting tools](https://about.sourcegraph.com/handbook/talent/hiring#recruiting-tools)
+   - [Greenhouse](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_greenhouse), our ATS
+   - [BrightHire](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire#guide-to-using-brighthire), our interview recording tool
+   - [Ashby](https://app.ashbyhq.com/access), our metrics tool
+   - LinkedIn Recruiter, our sourcing tool
+- Recruitment branding 
+   - [Where we post our jobs](https://about.sourcegraph.com/handbook/talent/hiring/job_boards)
+- [Metrics](https://about.sourcegraph.com/handbook/talent/recruiting_metrics)
