@@ -41,7 +41,7 @@ In each ping, instances will send a site_activity.DAUs, site_activity.WAUs, and 
 
 ### Sourcegraph Cloud
 
-For Sourcegraph Cloud, we use the same method for calculating user counts, pulling from the Sourcegraph Cloud database. However, for Cloud, we track unauthed users using their `anonymous_user_id`. This is a separate column which contains an anonymous ID, which is stored in a cookie for users that visit Sourcegraph.com. Therefore, for all charts that track Cloud active users, this includes unauthenticated users. 
+For Sourcegraph Cloud, we use the same method for calculating user counts, pulling from the Sourcegraph Cloud `event_logs` table. For Cloud, we track unauthenticated users using their `anonymous_user_id`. This is a separate column which contains an anonymous ID, which is stored in a cookie for users that visit Sourcegraph.com. Therefore, for all charts that track Cloud active users, unauthenticated users are included in these counts. 
 
 There are shortcomings to this. For one, when a user converts into an authed user, their events conducted with their anonymous user ID are still in the DB, so we would count two different users being active rather than a single user.For analytics purposes in Amplitude, this is also not ideal because we are not able to connect the actions of a user before and after they've converted.
 
