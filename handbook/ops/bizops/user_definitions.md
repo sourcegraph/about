@@ -47,4 +47,4 @@ There are shortcomings to this. For one, when a user converts into an authed use
 
 ### In-app site admin [usage stats page](https://sourcegraph.com/site-admin/usage-statistics)
 
-This is a known issue. In the site admin panel, we have a Usage stats page that displays number of MAUs. This pulls data from Redis, which gets populated by our `usagestatsdeprecated` package. This was an old way of collecting data, and is not reliable. This has been raised, and will be fixed to use the `event_logs` table. 
+In the site admin panel, we have a Usage stats page that displays number of MAUs. This pulls data from Redis, which gets populated by our `usagestatsdeprecated` package. This was an old way of collecting data, and is not reliable. This is a known issue, and will be fixed to use the `event_logs` table. 
