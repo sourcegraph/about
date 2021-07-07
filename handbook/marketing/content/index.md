@@ -47,3 +47,23 @@ How our content strategy aligns with our company values.
 | Be a good human   | Our content is rooted in empathy for our audiences. We strive to be relatable and show care for the people we speak to. We never engage in slander or defamation of another person, product, company, or service.    |
 | Open and transparent  | Our content strategies, plans, and tactics are open and accessible to everyone in the company. We create editorial processes that make it easy to see and understand what content is planned, in progress, published, and how it’s performing.    |
 | Continuously grow   | We actively solicit feedback and use data to improve the quality of our content. We experiment with new content ideas by writing proposals and reporting on our findings.   |
+
+## Content sourcing
+
+### `#newsroom` channel
+
+The #newsroom channel is for team members to surface new story ideas to the content team. Anyone is welcome to join and can share links to news, opinion, discussions, or Sourcegraph product developments that could be worth pursuing as a blog post, guide, quiz, web article, or another content format.
+
+We know that team members often share interesting news or industry trends in other channels. The point of #newsroom is to help the content team to aggregate and curate items that have potential to be a strong piece of content. The content can be anything that's relevant to our audience.
+
+#### How to contribute ideas
+
+Team members can post in the #newsroom channel as they think of things, or participate in the channel's weekly Geekbot prompts. Feel free to suggest edits to the Geekbot questions.
+
+- The channel does not replace [pitching to the blog](#guidelines-for-contributing-to-sourcegraph-s-blog). Team members can still fill out the Asana form to pitch a blog post if you want to write about something, and there's no requirement to post in the #newsroom channel. The channel is for more informal sharing of possible ideas.
+- It's up to the sharer to decide if you would like to write the content or if you're just offering the idea to the content team.
+- We won't be able to turn all ideas into content. In some cases an idea may be more suitable for another publishing outlet, or it may spark an idea for related content. We want to embody our value of [high quality](./company/values,md#high-quality) in all our content. To publish only the very best ideas, we need a lot of ideas to choose from! Anything you contribute adds to the pool of ideas and helps us to live this value. 
+
+#### Soliciting feedback
+
+We may also use #newsroom to solicit feedback from channel members on recently published content. 

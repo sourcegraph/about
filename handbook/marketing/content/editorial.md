@@ -58,6 +58,7 @@ First, decide how you want to contribute:
 
 1. If you have an original article idea that you want to write, start by submitting your pitch via this [Asana form](https://form.asana.com/?k=gU7tdLoh3TyyrSa-w0-pCQ&d=7195383522959) so we can triage appropriately.
 1. If you have an idea to submit but you don't want to write it, you can still submit the idea via the Asana form, just make a note that you are not proposing to write the post yourself.
+1. If you don't have a specific idea but just want to share some noteworthy news/industry trends/product developments that could inspire a blog post or another type of content, please share in the [#newsroom channel on Slack](index.md#newsroom-channel).
 
 The editorial team will triage pitches weekly on Monday. Once you have submitted a pitch:
 
