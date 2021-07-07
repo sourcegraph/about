@@ -8,7 +8,7 @@ socialImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
 publishDate: 2021-06-18T18:00-07:00
 tags: [blog]
 slug: how-to-deconstruct-the-monolith
-published: true
+published: false
 ---
 
 ![deconstructing the monolith gif](https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif)
