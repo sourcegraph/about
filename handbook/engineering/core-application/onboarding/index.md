@@ -34,7 +34,7 @@ Please ensure you've familiarized yourself with the [General Onboarding](https:/
 ### Service Deep Dives
 
 - [How frontend works](#)
-- [How repo-updater works](#)
+- [How repo-updater works](how-repo-updater-works.md)
 - [How gitserver works](how-gitserver-works.md)
 
 ### Data Deep Dives
