@@ -62,7 +62,7 @@ Team members can post in the #newsroom channel as they think of things, or parti
 
 - The channel does not replace [pitching to the blog](#guidelines-for-contributing-to-sourcegraph-s-blog). Team members can still fill out the Asana form to pitch a blog post if you want to write about something, and there's no requirement to post in the #newsroom channel. The channel is for more informal sharing of possible ideas.
 - It's up to the sharer to decide if you would like to write the content or if you're just offering the idea to the content team.
-- We won't be able to turn all ideas into content. In some cases an idea may be more suitable for another publishing outlet, or it may spark an idea for related content. We want to embody our value of [high quality](./company/values.md#high-quality) in all our content. To publish only the very best ideas, we need a lot of ideas to choose from! Anything you contribute adds to the pool of ideas and helps us to live this value. 
+- We won't be able to turn all ideas into content. In some cases an idea may be more suitable for another publishing outlet, or it may spark an idea for related content. We want to embody our value of [high quality](../../company/values.md#high-quality) in all our content. To publish only the very best ideas, we need a lot of ideas to choose from! Anything you contribute adds to the pool of ideas and helps us to live this value. 
 
 #### Soliciting feedback
 
