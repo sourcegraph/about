@@ -43,3 +43,20 @@ The customer health score combines high-level, aggregated metrics in order to un
 Additional Resources:
 - [Project overview](https://docs.google.com/spreadsheets/d/1D2CJoVdkbXsBwVjgNDziGXBanWBfVhoVs6_kDBRStfA/edit#gid=1229546656): Describes which metrics we view as indicative of customer health along with how scores are calculated, and provides space for ongoing feedback
 - [Dashboard](https://sourcegraph.looker.com/dashboards-next/179?Customer%20Engineer=&Account%20Executive=&Unique%20Server%20ID=&Region=): The customer health dashboard is the source of truth for health scores and is updated in real-time
+
+# How are users calculated?
+
+Our metrics infrastructure (Looker, Amplitude) gets user counts from our event_logs table (either directly or indirectly).
+
+### On-Prem Instances
+In each ping, instances will send a site_activity.DAUs, site_activity.WAUs, and site_activity.MAUs field which represent daily, weekly, and monthly user counts on an instance. These numbers are taken from the `event_logs` table of the instance, and count the number of distinct user IDs that executed any action on the instance in a given time period. These are sent back to us in the form of pings, which is what shows up in Looker. See the [`activeUsers` function](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%407eeeb9b+func+activeUsers&patternType=literal) for the implementation and SQL query.
+
+### Sourcegraph Cloud
+
+For Sourcegraph Cloud, we use the same method for calculating user counts, pulling from the Sourcegraph Cloud `event_logs` table. For Cloud, we track unauthenticated users using their `anonymous_user_id`. This is a separate column which contains an anonymous ID, which is stored in a cookie for users that visit Sourcegraph.com. Therefore, for all charts that track Cloud active users, unauthenticated users are included in these counts. 
+
+There are shortcomings to this. For one, when a user converts into an authed user, their events conducted with their anonymous user ID are still in the DB, so we would count two different users being active rather than a single user.For analytics purposes in Amplitude, this is also not ideal because we are not able to connect the actions of a user before and after they've converted.
+
+### In-app site admin [usage stats page](https://sourcegraph.com/site-admin/usage-statistics)
+
+In the site admin panel, we have a Usage stats page that displays number of MAUs. This pulls data from Redis, which gets populated by our `usagestatsdeprecated` package. This was an old way of collecting data, and is not reliable. This is a known issue, and will be fixed to use the `event_logs` table. 

@@ -217,10 +217,11 @@ To add yourself to this page:
 
 ## Robert Lin
 
-- Software Engineer Intern
+- Software Engineer
 - Taipei, Taiwan 🇹🇼 (GMT+8)
-- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [bobheadxi](https://github.com/bobheadxi), [LinkedIn](https://www.linkedin.com/in/robert-lin)
-- If it involves moving without _too_ much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final semester remotely studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
+- He/him
+- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [GitHub](https://github.com/bobheadxi), [LinkedIn](https://www.linkedin.com/in/robert-lin)
+- Robert loves climbing plastic rocks and playing around with ideas and technologies through hacking on projects and writing. He recently graduated from the University of British Columbia with an BSc in Mathematics, where he used to run a club dedicated to helping students work together to build software projects.
 
 ## Marek Zaluski
 
@@ -237,12 +238,12 @@ To add yourself to this page:
 - Name pronunciation: [/ˈadəm hˈɑːvi/](http://ipa-reader.xyz/?text=%CB%88ad%C9%99m%20h%CB%88%C9%91%CB%90vi&voice=Brian)
 - Adam plays cricket, yells at hockey teams, and spends an inordinate amount of time convincing his golden retriever to drop things. He started his technology journey with an IBM XT in the 80s, and never looked back once he discovered the GW-BASIC `RENUM` command. Technologically, Adam enjoys programming language design, convincing runtimes to work on hardware they weren't designed to, and deluding himself that abusing CSS animations is exactly what his film degree qualified him to do.
 
-## Mark Muldez (he/him)
+## Mark "Markie" Muldez (he/him)
 
-- Sales Development Representative
+- Sales Development
 - Tampa, FL 🌴 🇺🇸
 - [mark@sourcegraph.com](mailto:mark@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mmuldez/)
-- Mark has been working in sales for the past 8 years and he's held various roles such as SDR, AE, and Team Lead. Prior to Sourcegraph, Mark was the lead technical SDR for the west region at Imply.io, where he successfully built a strong and sustainable pipeline for the company. In his spare time, Mark loves to spend time with his wife, his 2-year-old little guy, and their mini Australian shepherd dog. He's a big Golden State Warriors fan, plays guitar, works out to earn the right to eat plates of sushi, and goes to the beach to avoid getting bit by mosquitoes. He also thinks spicy mayo is life. 🙌🏽
+- Mark has been working in sales for the past 8 years and he's held various roles such as SDR, AE, and Team Lead. Prior to Sourcegraph, Mark was the lead technical SDR for the west region at Imply.io, where he successfully built a strong and sustainable pipeline for the company. Mark is a Golden State Warriors fan, plays guitar, works out to earn the right to eat plates of sushi, and because he's in Florida, mosquitoes get really bad in the summer so the best way to avoid them is to hit up the beach. And oh btw, he thinks spicy mayo is life. 🙌🏽
 
 ## Christine Lovett (she/her)
 
@@ -787,7 +788,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 
 ## Rebecca Dodd (she/her)
 - Senior Managing Editor
-- London, UK 🇬🇧
+- Bristol, UK 🇬🇧
 - [rebecca@sourcegraph.com](mailto:rebecca@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rebecca-lee-dodd/)
 - Originally from Cape Town, South Africa, Rebecca started her career in journalism before finding her way into tech via content marketing. Prior to Sourcegraph she worked at GitLab for over four years and managed their company blog. An enthusiastic traveller, Rebecca has a custom Google Map of every city she's ever visited, complete with colour-coded pins of the best coffee shops and restaurants. Ask her for recommendations!
 
@@ -1050,3 +1051,19 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: [donavonelli](https://github.com/donavonelli), [LinkedIn](https://www.linkedin.com/in/donavonelli/), 
 - [don@sourcegraph.com](mailto:don@sourcegraph.com)
 - Donavon is an army veteran with a love for programming and all things tech. Based in the peach state, you can usual find him either exercising, watching tv, playing video games or playing with his dog, CiCee
+
+## Jason Harris (He/Him)
+
+- Customer Support Engineer
+- Los Angeles, CA USA
+- Github: [jasonhawkharris](https://github.com/jasonhawkharris), [LinkedIn](https://www.linkedin.com/in/jasonhawkharris/)
+- [jason.harris@sourcegraph.com](mailto:jason.harris@sourcegraph.com)
+- Jason is a musician and software engineer living in Los Angeles. He is married to a nurse practitioner named Ashley. He has two tabby cats, Pierre and Dmitri. They actively plan his demise. However, he suspects they'll never pull the trigger because they secretly love him, though they would never admit it.
+
+## Jenna Pierre (She/Her)
+
+- Sales Development Representative
+- Citizen of the world, currently based in Peru 🇵🇪
+- GitHub: [jennapierre](https://github.com/jennapierre), [LinkedIn](https://www.linkedin.com/in/jenna-pierre/)
+- [jenna@sourcegraph.com](mailto:jenna@sourcegraph.com)
+- Jenna is a wandering, global English teacher-turned Sales professional. She does not have any pets of her own because of her nomadic lifestyle, but she frequently wins the love of the foreign kitties she encounters with tuna and belly rubs. In her free time, Jenna enjoys reading on the beach, trying new recipes, and salsa dancing with whoever is close by. 

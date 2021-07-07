@@ -23,6 +23,7 @@ The Business Operations & Strategy (BizOps) team operates with the mission of dr
 - [User metrics definitions](user_definitions.md)
 - [CustomerOps Tools Overview](customer_ops_tools.md)
 - [Amplitude overview](amplitude.md)
+- [A/B testing](ab-testing.md)
 
 ## Goals
 
@@ -35,7 +36,9 @@ We use [GitHub issues in the Sourcegraph analytics repository](https://github.co
 ## How to work with us
 
 ### Contact
+
 Get in touch with us, or ask for our input or help:
+
 - Post in the #analytics or #business-ops channels, or mention @business-ops in any channel
 - Tag [@sourcegraph/bizops](https://github.com/orgs/sourcegraph/teams/bizops) in existing [sourcegraph/sourcegraph GitHub issues](https://github.com/sourcegraph/sourcegraph/issues)
 
