@@ -27,8 +27,8 @@ The handbook is a living document and we expect every teammate to propose improv
 ### [People Ops](people-ops/index.md)
 
 - [People Ops](people-ops/index.md)
-  - [Team](people-ops#team.md)
-  - [Goals](people-ops#goals.md)
+  - [Team](people-ops/index.md#team)
+  - [Goals](people-ops/index.md#goals)
 
 ### [Product](product/index.md)
 
