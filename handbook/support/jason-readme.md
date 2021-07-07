@@ -26,13 +26,13 @@ Writing/reading/exploring code.
 I write best and solve problems EARLY in the morning. Administrative tasks are easier for me in the afternoon when my brain is tired.
 
 ### How do you feel about getting messages after/outside of hours that are meant for you to see and respond to during active hours
-I have no problem with it at all. My notifications are off anyways when I'm not working anyways. 
+I have no problem with it at all. My notifications are off when I'm not working anyways. 
 
 ### How folks can best show up for us when we seem off (give space, ask if work is the right place for us to be today, etc)
-I have severe MDD with intense episodes. I've been effectively medicated for years but sometimes it still hits pretty hard. It means a lot when people ask me how I am. Getting the day off is sometimes necessary for me to process/bounce back, but I try not to do that, because sometimes it feels like work is the best medicine.
+I have severe MDD with intense episodes. I've been effectively medicated for years but sometimes it still hits pretty hard. It means a lot when people ask me how I am. Getting the day off is sometimes necessary for me to process/bounce back, but I try not to do that. Sometimes work is the best medicine.
 
 ### Things you are aware of that trigger anxious feelings/feelings of less than at work
-Receiving negative feedback in a private space is fine with me and welcome, but receiving negative feedback in a public space triggers a stress reaction/defense mechanism.
+Receiving negative feedback in a private space is fine with me, and welcome, but receiving negative feedback in a public space triggers a stress reaction/defense mechanism.
 
 ### Technical areas of knowledge
 Javascript/React/Node.js - Expert
