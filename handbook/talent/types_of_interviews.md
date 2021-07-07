@@ -25,6 +25,23 @@ We strive for consistency across all interviews.
 ## Structured interview questions
 We ask structured questions for all interviews, meaning that all candidates are asked the same questions in an effort to reduce bias and to even the playing-field. The interview [may be recorded](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire) so that we can focus on the candidate, not taking notes, and ensure that we're delivering a great interview experience. If a candidate prefers not to be recorded during the interview, they can let us know - the structure of the interview and decision-making process will remain the same and the decision not to be recorded will have no weight on their candidacy.
 
+## Agenda 
+
+We believe that interviewing is a two-way street, and that it is important for both our interviewers and our candidates to get their questions answered.  Below is a rough agenda for all interviewers to follow.  
+
+- Beginning 
+   - Usually this is ~5 minutes or less
+   - The interviewer introduces themself
+   - The interviewer explains the agenda 
+   - The interviewer asks the candidate if they have any questions before getting started
+- Middle 
+   - The length of this interview varies depending on the type of interview
+   - Interview question time, presentation, or project review
+- End 
+   - Usually this is ~10 minutes
+   - Answer any questions that the candidate has. 
+   - This as an opportunity to get the candidate excited about Sourcegraph.
+
 # Universal interviews 
 
 All departments are likely to have some or all of the below universal interview stages:
