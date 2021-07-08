@@ -27,7 +27,7 @@ Welcome to the distribution team! This document will guide you through distribut
 - Read our [Distribution handbook pages](index.md)
 - Join the distribution Slack channels
   - #distributioneers
-  - #distribution-team
+  - #distribution-team (private channel, so request an invite from another member of the team!)
   - #dev-ops
   - #dev-chat
   - #dev-accounce
