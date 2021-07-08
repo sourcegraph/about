@@ -1079,7 +1079,7 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 ## Alex Jean-Baptiste (He/Him)
 
 - Customer Support Engineer
-- Atlanta, Georgia USA 🇺🇸 (optional: add yourself to [the team locations map](locations.md)!)
+- Atlanta, Georgia USA 🇺🇸 
 - GitHub: [alexAtSourcegraph](https://github.com/alexAtSourcegraph), [LinkedIn](https://www.linkedin.com/in/alexjeanb) 
 - [alex.jean-baptiste@sourcegraph.com](mailto:alex.jean-baptiste@sourcegraph.com)
 - [Name pronunciation](https://www.name-coach.com/alex-jean-baptiste)
