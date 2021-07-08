@@ -254,7 +254,7 @@ export default ((props: any) => (
                     </ul>
                     
                     <p>Performance and scale are often not considered actual features, but they are first-order considerations for the results page. Ideally, you want code search that scales to the entire universe of code that you care about (including downstream dependencies and currently unused but potentially useful libraries) that returns useful results in as little time as possible. Time to first result and search scope of a single query are KPIs to evaluate for the overall usability and trustworthiness of code search.</p>
-                    <h3>3. Code browsing interface</>
+                    <h3>3. Code browsing interface</h3>
                     
                     <p> Most code search engines include or are paired with some sort of code browsing interface. This code browsing interface is most often not the editor, but a web-based browsing interface. The reason for this is that opening up a result in an editor might be disruptive (causing a developer to "lose their place" in the code they're currently editing) or impossible (the code surfaced hasn't even been checked out to the developer's editor environment).</>
 
