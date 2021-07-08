@@ -25,9 +25,11 @@ The following products and deployments are within scope for our Bug Bounty progr
 - Sourcegraph extensions developed by Sourcegraph: https://sourcegraph.com/extensions?category=All&query=Sourcegraph
 
 The following targets and actions are out-of-scope:
+
 - Sourcegraph domains not listed in the in-scope section
 - Social engineering against Sourcegraph users and employees
 - Denial of Service
+- Credential Stuffing
 - Spamming
 
 **Categories**
