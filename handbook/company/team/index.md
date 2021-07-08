@@ -1078,7 +1078,7 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 
 ## Alex Jean-Baptiste (He/Him)
 
-- Cusomer Support Engineer
+- Customer Support Engineer
 - Atlanta, Georgia USA 🇺🇸 (optional: add yourself to [the team locations map](locations.md)!)
 - GitHub: [alexAtSourcegraph](https://github.com/alexAtSourcegraph), [LinkedIn](https://www.linkedin.com/in/alexjeanb) 
 - [alex.jean-baptiste@sourcegraph.com](mailto:alex.jean-baptiste@sourcegraph.com)
