@@ -109,27 +109,27 @@ In addition to the above interviews, some departments have department-specific i
 
     Your objective in this meeting is to: 
 
-    1. Gather all the information that you need in order to be successful at planning and executing this event.
-    2. Provide recommendations, share potential ideas, and discuss solutions with Kacie and Gregg.
+  -  Gather all the information that you need in order to be successful at planning and executing this event.
+  -  Provide recommendations, share potential ideas, and discuss solutions with Kacie and Gregg.
 
     Our advice: 
 
-    - Don't go overboard on preparation or detail.
-    - Clever ideas are awesome and appreciated.
-    - We are also looking for your process/framework/principles.
-    - If you need to take notes, we usually use Google Docs!
+  -  Don't go overboard on preparation or detail.
+  -  Clever ideas are awesome and appreciated.
+  -  We are also looking for your process/framework/principles.
+  -  If you need to take notes, we usually use Google Docs!
 
     Some background info: 
 
-    - Team org: [Sales team](https://about.sourcegraph.com/handbook/sales) and [Marketing team](https://about.sourcegraph.com/handbook/marketing)
-    - [Publicly referenceable customer logos](https://about.sourcegraph.com/customers/)
-    - Everything at [Sourcegraph](https://about.sourcegraph.com/) and our [handbook](https://about.sourcegraph.com/handbook) should be assumed to be accurate and up to date.
+  -  Team org: [Sales team](https://about.sourcegraph.com/handbook/sales) and [Marketing team](https://about.sourcegraph.com/handbook/marketing)
+  -  [Publicly referenceable customer logos](https://about.sourcegraph.com/customers/)
+  -  Everything at [Sourcegraph](https://about.sourcegraph.com/) and our [handbook](https://about.sourcegraph.com/handbook) should be assumed to be accurate and up to date.
 
     A few pointers: 
 
-    - Ask identifying questions about existing gaps on the team
-    - Be ready to identify immediate solutions
-    - Be prepared to have a dynamic conversation to uncover nuances about the teams you will be working with
+  -  Ask identifying questions about existing gaps on the team
+  -  Be ready to identify immediate solutions
+  -  Be prepared to have a dynamic conversation to uncover nuances about the teams you will be working with
 
 ## BizOps, Finance, Legal, TechOps
 - Coming soon
