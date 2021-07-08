@@ -50,7 +50,7 @@ GitHub issues help us manage requests by including as much relevant information 
 
 A BizOps team member will triage and assign issues to the relevant team member.
 
-For *time-sensitive* and *urgent* requests, please post the GitHub issue link in the #business-ops channel in Slack and tag @business-operations to ensure visibility.
+For *time-sensitive* and *urgent* requests, please tag the issue with the `urgent` label. This will make the GitHub issue appear in the #analytics channel in Slack to ensure visibility, where you can follow up with more details/asks.
 
 ## How we work
 
