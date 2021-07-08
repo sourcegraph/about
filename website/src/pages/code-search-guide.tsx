@@ -49,6 +49,10 @@ export default ((props: any) => (
                         <Link to="#5" className="list-group-item list-group-item-action">
                             5 Common features of code search<ArrowRightIcon className="icon-inline ml-1" />
                         </Link>
+                        <Link to="#6" className="list-group-item list-group-item-action">
+                            6 How to use code search<ArrowRightIcon className="icon-inline ml-1" />
+                        </Link>
+                        
                     </div>
                 </div>
 
