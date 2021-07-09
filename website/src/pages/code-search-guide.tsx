@@ -118,21 +118,36 @@ export default ((props: any) => (
                     <p>
                         Code search is a way to find answers to questions related to your codebase. It’s powered by a code search engine: a program that searches for and identifies items in a corpus of source code according to the query specified by the user.
                     </p>
-                    
-                    <table style="width:80%"> 
-                      <tr>
-                          <th> Definitions </th>
-                      </tr>
-                      <tr>
-                          <td> Code Search: A way to find answers to questions related to your codebase by searching the contents of the codebase. </td>
-                          <td> Code Search Engine: A program that searches for and identifies items in a corpus of source code which corresponds to the input specified by the user. Inputs may be keywords or patterns, structures, or identifiers. <td>
-                      </tr>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Phrase</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Code Search:</td>
+                                <td>A way to find answers to questions related to your codebase by searching the contents of the codebase.</td>
+                            </tr>
+                            <tr>
+                                <td>Code Search Engine:</td>
+                                <td>A program that searches for and identifies items in a corpus of source code which corresponds to the input specified by the user. Inputs may be keywords or patterns, structures, or identifiers.</td>
+                            </tr>
+                        </tbody>
                     </table>
+
+                    <p>
+                        Inputs may be keywords, patterns, structures, or identifiers. A code search engine produces results based on inputs 
+                        such as text, structures, or symbols.
+                    </p>
                     
-                    <p> Inputs may be keywords, patterns, structures, or identifiers. A code search engine produces results based on inputs such as text, structures, or symbols. </p>
-                    
-                    <p> Most code search tools integrate with code hosts and editors so that developers can search, navigate, and understand their code. It helps devs stay in flow and find answers quickly when actively writing or reviewing code. Really good code search makes it possible to search all of your code, regardless of where it’s hosted. 
-                          </p>
+                    <p>
+                        Most code search tools integrate with code hosts and editors so that developers can search, navigate, 
+                        and understand their code. It helps devs stay in flow and find answers quickly when actively writing or 
+                        reviewing code. Really good code search makes it possible to search all of your code, regardless of where it’s hosted. 
+                    </p>
 
 		            <hr className="my-md-6" id="" />
             	</div>
@@ -166,9 +181,9 @@ export default ((props: any) => (
                         code fast and more reliably.
                     </p>
 
-                    <p> For businesses, code search is critical to maintaining development velocity. As code bases become more complex, more interconnected, and harder to navigate, development velocity stalls. It takes longer to find answers, and constant context switching squashes productive workflows. Tech giants like Microsoft, Google, and Facebook are also keenly aware of how important good code search is to development velocity and have invested millions of dollars into building internal code search tools. </p>
+                    <p>For businesses, code search is critical to maintaining development velocity. As code bases become more complex, more interconnected, and harder to navigate, development velocity stalls. It takes longer to find answers, and constant context switching squashes productive workflows. Tech giants like Microsoft, Google, and Facebook are also keenly aware of how important good code search is to development velocity and have invested millions of dollars into building internal code search tools. </p>
                         
-                    <p> Code search improves the experience and velocity of development by acting as a search bar that can point devs in the right direction when they get stuck or need answers. It’s an integral part of an efficient dev workflow as it allows you to find code across all your repositories to find answers, references, and examples. If you are in the business of writing and shipping code, you should know about code search and how to use it. </p>
+                    <p>Code search improves the experience and velocity of development by acting as a search bar that can point devs in the right direction when they get stuck or need answers. It’s an integral part of an efficient dev workflow as it allows you to find code across all your repositories to find answers, references, and examples. If you are in the business of writing and shipping code, you should know about code search and how to use it. </p>
 
 		            <hr className="my-md-6" id="" />
             	</div>
@@ -179,27 +194,30 @@ export default ((props: any) => (
                         Code search can vary greatly in its capabilities depending on the type of tool. Code host-based code search is limited to searching the repositories within the code host and the languages indexed by the code host.
                     </p>
                     
-                    <table style="width:100%">
-                        <tr>
-                            <th>Type of code search</th>
-                            <th> Capabilitiies</th>
-                        </tr>
-                        <tr>
-                            <td> Standalone</td>
-                            <td> Code search is a tool that integrates with code hosts and editors to enable developers to search, navigate, and understand code through the use of queries and filters. </td>
-                        </tr>
-                        <tr> 
-                            <td> Code host-based code search</td>
-                            <td> Code search tools that are provided as part of a code hosting platform’s capabilities. With code host-based code search, users are typically limited to searching repositories that exist within the code host platform. </td>
-                        </tr>
-                        <tr> 
-                            <td> Universal code search </td>
-                            <td> Universal code search is code search that spans your repositories, code hosts, and programming languages allowing developers to find answers, references, and examples both internally and externally, across the internet. </td>
-                        </tr>
-                        
-                        <p> Code search that is not universal is very limited. For example, using a code search tool that is specific to a single code host means you can’t search code that is stored in other code hosts, limiting access to information. Search that is limited to a specific programming language is like only being able to use Google to find information on a single brand of cars, versus searching all car brands. 
-                        </p>
-                                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type of code search</th>
+                                <th>Capabilitiies</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Standalone</td>
+                                <td>Code search is a tool that integrates with code hosts and editors to enable developers to search, navigate, and understand code through the use of queries and filters.</td>
+                            </tr>
+                            <tr>
+                                <td>Code host-based code search</td>
+                                <td>Code search tools that are provided as part of a code hosting platform’s capabilities. With code host-based code search, users are typically limited to searching repositories that exist within the code host platform.</td>
+                            </tr>
+                            <tr> 
+                                <td>Universal code search</td>
+                                <td>Universal code search is code search that spans your repositories, code hosts, and programming languages allowing developers to find answers, references, and examples both internally and externally, across the internet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Code search that is not universal is very limited. For example, using a code search tool that is specific to a single code host means you can’t search code that is stored in other code hosts, limiting access to information. Search that is limited to a specific programming language is like only being able to use Google to find information on a single brand of cars, versus searching all car brands.</p>
 
 		            <hr className="my-md-6" id="" />
             	</div>
@@ -237,10 +255,11 @@ export default ((props: any) => (
                         <li>Autocompletion, which helps complete common queries and keywords. This is especially helpful if the query syntax is particularly expressive or powerful.</li>
                     </ul>
                     
-                    <p>The search interface is the combination of the query syntax and the UI components surrounding and including the search box. It is the jumping-off point of most code search workflows and its primary purpose is to accept and interpret user intent for what should be displayed in the results interface.
+                    <p>
+                        The search interface is the combination of the query syntax and the UI components surrounding and including the search box. It is the jumping-off point of most code search workflows and its primary purpose is to accept and interpret user intent for what should be displayed in the results interface.
                     </p>
                     
-                    <h3> 2. Results interface </h3>
+                    <h3>2. Results interface</h3>
                     
                     <p>The purpose of the search results page is to surface the results that are most relevant to the user's intent, to enable easy scanning of the result set, and to serve as a jumping off point into the actual code that the results point to.</p>
                     
@@ -253,12 +272,24 @@ export default ((props: any) => (
                         <li>Whether a total count is returned</li>
                     </ul>
                     
-                    <p>Performance and scale are often not considered actual features, but they are first-order considerations for the results page. Ideally, you want code search that scales to the entire universe of code that you care about (including downstream dependencies and currently unused but potentially useful libraries) that returns useful results in as little time as possible. Time to first result and search scope of a single query are KPIs to evaluate for the overall usability and trustworthiness of code search.</p>
+                    <p>
+                        Performance and scale are often not considered actual features, but they are first-order considerations 
+                        for the results page. Ideally, you want code search that scales to the entire universe of code that you 
+                            care about (including downstream dependencies and currently unused but potentially useful libraries) 
+                        that returns useful results in as little time as possible. Time to first result and search scope of a single 
+                        query are KPIs to evaluate for the overall usability and trustworthiness of code search.
+                    </p>
+                    
                     <h3>3. Code browsing interface</h3>
                     
-                    <p> Most code search engines include or are paired with some sort of code browsing interface. This code browsing interface is most often not the editor, but a web-based browsing interface. The reason for this is that opening up a result in an editor might be disruptive (causing a developer to "lose their place" in the code they're currently editing) or impossible (the code surfaced hasn't even been checked out to the developer's editor environment).</>
+                    <p>
+                        Most code search engines include or are paired with some sort of code browsing interface. This code browsing 
+                        interface is most often not the editor, but a web-based browsing interface. The reason for this is that opening 
+                        up a result in an editor might be disruptive (causing a developer to "lose their place" in the code they're 
+                        currently editing) or impossible (the code surfaced hasn't even been checked out to the developer's editor environment).
+                    </p>
 
-                    <p>The browsing interface is important, because this is how the developer, having found the area of code of interest, now needs to dive into the code and build a working mental model of how it works and where it fits into the large codebase.</p> 
+                    <p>The browsing interface is important, because this is how the developer, having found the area of code of interest, now needs to dive into the code and build a working mental model of how it works and where it fits into the large codebase.</p>
 
                     <p>Code browsing interfaces often have some subset of the following features:</p>
                     
