@@ -31,17 +31,21 @@ PII and user characteristics
 
 All outside tools are cloud products and therefore the data is hosted by the service provider. All internal tools and product data is stored in the Postgres database that hosts Sourcegraph Cloud, as well as data pipelines and warehouses in Google Cloud Platform. 
 
-### Who has access to my data?
+### Can Sourcegraph developers or admins see my private code?
 
-TBD - core and/or distribution team to answer this question 
-
-### Can you see my private code?
-
-TBD - core and/or distribution team to answer this question 
+No. Only you can see or edit your private code. Code host permissions are enforced and not even Sourcegraph’s admin accounts can see private code. Manage your permissions in the code host and they will be automatically replicated in Sourcegraph.
 
 ### Is my data encrypted?
 
-TBD - core and/or distribution team to answer this question 
+Yes, our dedicated security team follows best-practices for data encryption. We know that source code is one of your most sensitive assets. Every component of Sourcegraph was designed with security in mind. We've detailed our strict security guidelines for different deployment types below:
+* User credentials are encrypted in our database using 256-bit Advanced Encryption Standard (AES-256) keys in Galois Counter Mode (GCM). The keys are automatically rotated every 90 days.
+* All storage volumes are encrypted at rest, and data is encrypted in-cloud during transport.
+* We leverage IAM groups and rules to enforce the principle of least access across our cloud infrastructure.
+* The domain sourcegraph.com is managed through Cloudflare and uses its security capabilities, like Web Application Firewall and Rate Limiting.
+* We only log information crucial for security and support. Only restricted personnel have access to user data. Logs are stored in GCP and the information is retained for 180 days. 
+* Our Incident Response plan is currently under review. It will be publicly available when finalized.
+
+Our full data policy is outlined in our [Terms of Service](https://about.sourcegraph.com/terms-dotcom) and our [Privacy Policy](https://about.sourcegraph.com/privacy/). If you have further questions, reach out to us at Security@sourcegraph.com. 
 
 ### What is my private data used for?
 
