@@ -1,3 +1,4 @@
+
 # Types of interviews 
 
 The below information is intended to help our candidates prepare for each step of the interview. Please note that the example questions are **examples only** and may not be the exact questions asked in the actual interview process. 
@@ -149,6 +150,12 @@ In addition to the above interviews, some departments have department-specific i
   -  Interviewer(s): Coming soon.
   -  Duration: 60-minutes.
   -  Details: during this stage in the interview process, we try to get a sense of your approach and thought process when reviewing writing drafts submitted by team members. You will be given a blog post draft to review for the first 30-minutes of the session, after which you and the hiring manager go through how you approached the piece and talk about the changes you made and why.
+
+- Technical Content working session
+  -  Interviewer(s): Coming soon.
+  -  Duration: 60-minutes.
+  -  Details: during this stage in the interview process, we try to get a sense of how you think about content. You will be given (2) pieces of content to read through for the first 30 minutes of the session, after which you and the hiring manager will take the last 30 minutes to go through what you liked, disliked, and what you would change about each piece and why.
+
 
 ## People Operations
 - Coming soon
