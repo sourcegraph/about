@@ -217,10 +217,11 @@ To add yourself to this page:
 
 ## Robert Lin
 
-- Software Engineer Intern
+- Software Engineer
 - Taipei, Taiwan 🇹🇼 (GMT+8)
-- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [bobheadxi](https://github.com/bobheadxi), [LinkedIn](https://www.linkedin.com/in/robert-lin)
-- If it involves moving without _too_ much thinking, Robert enjoys it: running, climbing, swimming, and more. He is in his final semester remotely studying mathematics at the University of British Columbia, but on the side he loves dabbling in building tooling, web interfaces, and writing.
+- He/him
+- [robert@sourcegraph.com](mailto:robert@sourcegraph.com), [GitHub](https://github.com/bobheadxi), [LinkedIn](https://www.linkedin.com/in/robert-lin)
+- Robert loves climbing plastic rocks and playing around with ideas and technologies through hacking on projects and writing. He recently graduated from the University of British Columbia with an BSc in Mathematics, where he used to run a club dedicated to helping students work together to build software projects.
 
 ## Marek Zaluski
 
@@ -237,12 +238,12 @@ To add yourself to this page:
 - Name pronunciation: [/ˈadəm hˈɑːvi/](http://ipa-reader.xyz/?text=%CB%88ad%C9%99m%20h%CB%88%C9%91%CB%90vi&voice=Brian)
 - Adam plays cricket, yells at hockey teams, and spends an inordinate amount of time convincing his golden retriever to drop things. He started his technology journey with an IBM XT in the 80s, and never looked back once he discovered the GW-BASIC `RENUM` command. Technologically, Adam enjoys programming language design, convincing runtimes to work on hardware they weren't designed to, and deluding himself that abusing CSS animations is exactly what his film degree qualified him to do.
 
-## Mark Muldez (he/him)
+## Mark "Markie" Muldez (he/him)
 
-- Sales Development Representative
+- Sales Development
 - Tampa, FL 🌴 🇺🇸
 - [mark@sourcegraph.com](mailto:mark@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mmuldez/)
-- Mark has been working in sales for the past 8 years and he's held various roles such as SDR, AE, and Team Lead. Prior to Sourcegraph, Mark was the lead technical SDR for the west region at Imply.io, where he successfully built a strong and sustainable pipeline for the company. In his spare time, Mark loves to spend time with his wife, his 2-year-old little guy, and their mini Australian shepherd dog. He's a big Golden State Warriors fan, plays guitar, works out to earn the right to eat plates of sushi, and goes to the beach to avoid getting bit by mosquitoes. He also thinks spicy mayo is life. 🙌🏽
+- Mark has been working in sales for the past 8 years and he's held various roles such as SDR, AE, and Team Lead. Prior to Sourcegraph, Mark was the lead technical SDR for the west region at Imply.io, where he successfully built a strong and sustainable pipeline for the company. Mark is a Golden State Warriors fan, plays guitar, works out to earn the right to eat plates of sushi, and because he's in Florida, mosquitoes get really bad in the summer so the best way to avoid them is to hit up the beach. And oh btw, he thinks spicy mayo is life. 🙌🏽
 
 ## Christine Lovett (she/her)
 
@@ -440,6 +441,14 @@ To add yourself to this page:
 - GitHub: TommyODonnell
 - [tommy@sourcegraph.com](mailto:tommy@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tommyodonnell87/)
 - Tommy hails from County Kerry on the South West Coast of Ireland. He graduated with a degree in Business studies from the University of Limerick before completing a Masters in Accounting at Dublin City University. Prior to Sourcegraph Tommy spent over 5 years working on a diverse range of clients at the EY Limerick and Boston offices, before spending a further 5 years in a financial reporting role at Pivotal Software. When he is not stuck in spreadsheets, you will probably find him having a quiet pint of Guinness, following the fortunes of the New England Patriots and the Kerry Gaelic Football team, or reading up on the latest rounds of funding’s in the startup world.
+
+## Cecily Black (she/her)
+
+- People Operations Coordinator
+- San Jose, California, United States 🇺🇸
+- GitHub: CecilyBee
+- [cecily@sourcegraph.com](mailto:cecily@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cecilyblack/)
+- Cecily grew up in San Jose and returned in 2018 with a new love for sunny Cailfornia ☀️ after living in Portland, Oregon for two years. In her free time she loves to hike, go to the beach, camp, and go to concerts / dance. 💃 She lives with her boyfriend and their little dog, Leo.
 
 ## Mike McLaughlin (he/him)
 
@@ -787,7 +796,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 
 ## Rebecca Dodd (she/her)
 - Senior Managing Editor
-- London, UK 🇬🇧
+- Bristol, UK 🇬🇧
 - [rebecca@sourcegraph.com](mailto:rebecca@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rebecca-lee-dodd/)
 - Originally from Cape Town, South Africa, Rebecca started her career in journalism before finding her way into tech via content marketing. Prior to Sourcegraph she worked at GitLab for over four years and managed their company blog. An enthusiastic traveller, Rebecca has a custom Google Map of every city she's ever visited, complete with colour-coded pins of the best coffee shops and restaurants. Ask her for recommendations!
 
@@ -917,14 +926,6 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [prosper@sourcegraph.com](mailto:prosper@sourcegraph.com), [@unicodeveloper](https://twitter.com/unicodeveloper)
 - Prosper was born and raised in Lagos, Nigeria. A software engineer who has worked on biometric, health and developer tools. He is a seasoned developer advocate, veteran conference speaker and a firm open source hacker who believes immensely in the intersection of people & technology. He co-founded and leads forloop, the largest developer community in Africa. He loves travelling, playing football and tinkering with the fire emoji.
 
-## Cecily Black (she/her)
-
-- People Operations Coordinator
-- San Jose, California, USA 🇺🇸
-- GitHub: CecilyBee
-- [cecily@sourcegraph.com](mailto:cecily@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cecilyblack/)
-- Cecily grew up in San Jose and returned in 2018 with a new love for sunny Cailfornia ☀️ after living in Portland, Oregon for two years. In her free time she loves to hike, go to the beach, camp, and go to concerts / dance. 💃 She lives with her boyfriend and their little dog, Leo.
-
 ## Kevin Quigley (he/him)
 
 - Sales Development Rep
@@ -1028,3 +1029,74 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [suki@sourcegraph.com](mailto:suki@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/suki-randhawa-353526/)
 - Suki is located in West London and is married with two kids. He started his career as a R&D developer, before moving to deploying and then selling software around the world. Suki and his wife founded a clothing brand to help new mums feed their lovely babies outside their home. Suki likes martial arts and all things HIIT related. Suki has a MBA from Henley Business School and a BSc from University of Warwick.
 
+## Amber Furbush (She/her)
+- Customer Support Enginer
+- Commerce City, CO, US us
+- GitHub: [amberfurbush0317](https://github.com/amberfurbush0317)
+- [amber@sourcegraph.com](mailto:amber@sourcegraph.com)
+- Amber joins Sourcegraph previously worked in customer success roles prior to joining Sourcegraph. In her free time, Amber likes to spend time with her family, learn about different technologies, history and making new friends. 
+
+## Ben Gordon (He/Him)
+
+- Customer Support Engineer
+-  Chicago IL, USA 🇺🇸
+- GitHub: [benjaminwgordon](https://github.com/benjaminwgordon), [LinkedIn](https://www.linkedin.com/in/benjaminwgordon/)
+- [ben.gordon@sourcegraph.com](mailto:ben.gordon@sourcegraph.com)
+- Ben is an engineer based in Chicago.  Before joining Sourcegraph, he was in an instructor role where he taught students to code.  He enjoys fitness, board games, disc golf, and blacksmithing.
+
+## Donavon Ellison (He/Him)
+
+- Customer Support Engineer
+- Acworth, GA USA
+- GitHub: [donavonelli](https://github.com/donavonelli), [LinkedIn](https://www.linkedin.com/in/donavonelli/), 
+- [don@sourcegraph.com](mailto:don@sourcegraph.com)
+- Donavon is an army veteran with a love for programming and all things tech. Based in the peach state, you can usual find him either exercising, watching tv, playing video games or playing with his dog, CiCee
+
+## Jason Harris (He/Him)
+
+- Customer Support Engineer
+- Los Angeles, CA USA
+- Github: [jasonhawkharris](https://github.com/jasonhawkharris), [LinkedIn](https://www.linkedin.com/in/jasonhawkharris/)
+- [jason.harris@sourcegraph.com](mailto:jason.harris@sourcegraph.com)
+- Jason is a musician and software engineer living in Los Angeles. He is married to a nurse practitioner named Ashley. He has two tabby cats, Pierre and Dmitri. They actively plan his demise. However, he suspects they'll never pull the trigger because they secretly love him, though they would never admit it.
+
+## Jenna Pierre (She/Her)
+
+- Sales Development Representative
+- Citizen of the world, currently based in Peru 🇵🇪
+- GitHub: [jennapierre](https://github.com/jennapierre), [LinkedIn](https://www.linkedin.com/in/jenna-pierre/)
+- [jenna@sourcegraph.com](mailto:jenna@sourcegraph.com)
+- Jenna is a wandering, global English teacher-turned Sales professional. She does not have any pets of her own because of her nomadic lifestyle, but she frequently wins the love of the foreign kitties she encounters with tuna and belly rubs. In her free time, Jenna enjoys reading on the beach, trying new recipes, and salsa dancing with whoever is close by. 
+
+## Michael Bali (He/Him)
+
+- Customer Support Engineer
+- Lagos, Nigeria 🇳🇬
+- GitHub: [topebali](https://github.com/topebali), [LinkedIn](https://www.linkedin.com/in/michael-temitope-bali-830640171)
+- [michael.bali@sourcegraph.com](mailto:michael.bali@sourcegraph.com)
+- Michael is very passionate about helping those around him. He enjoys Soccer alot and discussing politics most especially politics in Africa with friends. During his leisure, he enjoys playing console games, reading books (crime thrillers) and travelling. He is also enthusiastic about meeting new folks and open minded to learning!
+
+## Alex Jean-Baptiste (He/Him)
+
+- Customer Support Engineer
+- Atlanta, Georgia USA 🇺🇸 
+- GitHub: [alexAtSourcegraph](https://github.com/alexAtSourcegraph), [LinkedIn](https://www.linkedin.com/in/alexjeanb) 
+- [alex.jean-baptiste@sourcegraph.com](mailto:alex.jean-baptiste@sourcegraph.com)
+- [Name pronunciation](https://www.name-coach.com/alex-jean-baptiste)
+- Alex is a Haitian-American 🇭🇹🇺🇸 information technologist and writer from Miami, Florida🌴. He is passionate about the arts. He enjoys hiking trails, visiting museums, and performing comedy🤣. He is done writing.
+
+## Zach Naidu
+
+- Sales Development Representative
+- San Francisco, California USA 🇺🇸
+- GitHub: [zachnaidu](https://github.com/zachnaidu)
+- [zach@sourcegraph.com](mailto:zach@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/zachnaidu/), [Twitter](https://twitter.com/ZachNaidu)
+- Zach is a native of Dallas, Texas and loves all things sports - especially the Dallas Mavericks. From a family of six with three loving sisters (Kaitlin, Chandler, and Olivia), Zach enjoys golfing, pickup basketball, and tossing a football. He was a sports columnist in college and also enjoys playing board/card games and competing in fantasy football with high school and college friends.
+
+## Kelvin Lee (He/Him)
+
+- Customer Support Engineer
+- (Northern) California, USA 🇺🇸
+- [kelvin@sourcegraph.com](mailto:kelvin@sourcegraph.com)
+- [Name pronunciation](https://www.howtopronounce.com/kelvin)
+- Kelvin is a person who doesn't know how to describe himself. He often takes time in answering "How are you doing?".

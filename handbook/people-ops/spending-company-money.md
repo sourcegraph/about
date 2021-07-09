@@ -12,9 +12,9 @@ We want to make sure you have what you need to be productive and happy in your r
 
 ### Full-time teammates
 
-We expect new teammates to spend up to **$1,850** for desk setup, which includes all the items in the "Desk items" section.
+We expect new teammates to spend up to **$2,000** for desk setup, which includes all the items in the "Desk items" section.
 
-This is not a hard budget—rather, it is a guide based on what past teammates have spent. As a reminder, you don't need permission for every purchase, and we trust you to make decisions that are in the best interests of Sourcegraph. If you expect to significantly exceed the listed amount on any purchase, however, please notify @sourcegraph/people-ops so we can decide if we need to update this guide.
+As a reminder, you don't need permission for every purchase, and we trust you to make decisions that are in the best interests of Sourcegraph. If you expect to significantly exceed the listed amount on any purchase, however, please notify @sourcegraph/people-ops and finance@sourcegraph.com so we can decide if we need to update this guide.
 
 If you don't spend all of your budget when you first join, it's ok to spend it later providing you remain inside the total budget.
 
@@ -72,14 +72,18 @@ Once your contract is signed, you will need to purchase and expense your Sourceg
 - **Cell phone plan:** $75/month
 - **Wellness:** $100/month
 
-**Co-working/office space:** $300-500/month for renting your space, including parking while you are working from your designated co-working space. 
+**Co-working/office space:** $300-500/month for renting your space, including parking while you are working from your designated co-working space.
 
-> *Note*: This budget is meant to be an average cost of co-working spaces, and serves as a recommendation. It should be dependent on the
-> average cost of co-working spaces in your particular geo-location. If
-> your co-working space is significantly more than the averages listed
-> here, please get approval from ***People Ops*** and ***Finance*** via email.
+You will not need permission for choosing which co-working space you’d like to sign up for. We trust that you will pick a co-working space which both benefits you and is within budgetary reason. Our only recommendation is that you pick a co-working space on a *day-to-day drop in basis* or a *month-to-month basis* for ease of monthly reimbursement.
 
-**Education and professional development (conferences, courses):** $1000/year (if you want to exceed this amount, simply notify @sourcegraph/people-ops in advance to explain the situation and to receive approval).
+> Note: This budget is meant to be an average cost of co-working spaces,
+> and serves as a recommendation. It should be dependent on the average
+> cost of co-working spaces in your particular geo-location. If your
+> co-working space is significantly more than $500 USD, please get
+> approval from People Ops and Finance via email.
+
+
+**Education and professional development (conferences, courses):** $1000 USD/year (if your professional development conference, event, or purchase exceeds this amount, simply notify People Ops & Finance via email with the anticipated cost to obtain approval).
 
 **Moving (moving, packing, shipping, etc.):** $1000/year
 

@@ -1,9 +1,9 @@
 ---
 layout: markdown
-title: Terms of Service for Private and Self-hosted Sourcegraph Instances
+title: Terms of Service for Self-hosted Sourcegraph Instances
 ---
 
-Last modified: May 7, 2020
+Last modified: June 24, 2021
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of software, products, and services we make available at Sourcegraph.com.
 
@@ -17,9 +17,9 @@ Thank you for using Sourcegraph! This page lays out the basic terms and conditio
 
 Are you interested in terms for...
 
-* **A private or self-hosted Sourcegraph instance**: You're in the right place! Read on.
+* **A self-hosted Sourcegraph instance**: You're in the right place! Read on.
 
-* **[Sourcegraph.com](https://about.sourcegraph.com/terms-dotcom)**: If you’d like to use Sourcegraph.com (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a private or self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with sourcegraph.com, please see our Sourcegraph.com terms and conditions at https://about.sourcegraph.com/terms-dotcom.
+* **[Sourcegraph.com](https://about.sourcegraph.com/terms-dotcom)**: If you’d like to use Sourcegraph.com (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with sourcegraph.com, please see our Sourcegraph.com terms and conditions at https://about.sourcegraph.com/terms-dotcom.
 
 * **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache.
 

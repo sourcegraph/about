@@ -11,26 +11,26 @@
     - [Product marketing hierarchy](product_marketing_hierarchy.md)
     - [Product marketing roadmap](https://docs.google.com/spreadsheets/d/1268CYG4arbGT6F0Eyy4e-EY5CQgtopcS9OdAenkjtzY/edit#gid=0)
     - [Release post process](release_post_process.md)
-- [Content Marketing](content.md)
-    - [Creating blog posts](creating_blog_posts.md)
-    - [Editing blog posts](creating_blog_posts.md#editing-blog-posts)
+- [Content Marketing](content/index.md)
+    - [Editorial](content/editorial.md) 
+    - [Creating blog posts](content/creating_blog_posts.md)
+    - [Editing blog posts](content/creating_blog_posts.md#editing-blog-posts)
 
 - [Demand Gen](demandgen.md)
+    - [Account Based Experience](account_based_experience.md)
+    - [Digital Marketing Programs](digital_marketing_programs.md)
     - [Marketing operations](marketing_operations.md)
-         - [Livestream events](livestream.md)
-         - [Looker dashboards](https://sourcegraph.looker.com/browse/boards/2)
-         - [Digital ads](ad_conversion_flows.md)
-    
+
 - [Developer Education](education.md)
 - Community Relations
     - [Public projects using Sourcegraph](public_projects_using_sourcegraph.md)
 
 - [Brand](brand/index.md)
-    - [Building a strong brand](brand/building_a_strong_brand.md)
+    - [Building a Strong Brand](brand/building_a_strong_brand.md)
     - [Brand Guidelines](brand/brand_guidelines.md)
-    - [Creative Requests](brand/brand_and_creative_team_requests.md)
-    - [Production Process](brand/production_process.md)
+    - [Brand and Creative Requests](brand/brand_and_creative_team_requests.md)
     - [Naming Process for Products, Features and Programs](brand/naming_process_for_products_features_and_programs.md)
+    - [Working with Us](brand/production_process.md)
 
 - Marketing requests and feedback
     - [Make a request or share an idea](https://form.asana.com/?k=hNaq42PNshdQ1FjjEUKjLA&d=7195383522959)
@@ -43,7 +43,7 @@
     - [Andy Schumeister](../company/team/index.md#andy-schumeister-he-him), Director of Product Marketing
         - [Julie Campagna](../company/team/index.md#julie-campagna-she-her), Senior Customer Advocacy Manager
         - Product Marketing Manager, Emerging Products - starting in July
-        - Product Marketing Lead, Enterprise - starting in July 
+        - Product Marketing Lead, Enterprise - starting in July
     - [Erica Lindberg](../company/team/index.md#erica-lindberg-she-her), Director of Content Strategy
         - [Rebecca Dodd](../company/team/index.md#rebecca-dodd-she-her), Senior Managing Editor
         - [Jenny Bergen](../company/team/index.md#jenny-bergen-she-her), Manager, Content Marketing
@@ -63,6 +63,10 @@
         - [Vanesa Ortiz](../company/team/index.md#vanesa-ortiz-she-her), Content Engineer
         - [Prosper Otemuyiwa](../company/team/index.md#prosper-otemuyiwa-he-him), Staff Developer Evangelist
         - We will be hiring developer advocates
+    -  Amie Rotherham, Director of Global Communications 
+    
+
+
 
 ## Open Roles
 

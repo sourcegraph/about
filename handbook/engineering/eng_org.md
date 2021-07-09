@@ -19,6 +19,10 @@ A minimum viable team contains:
 
 New teams will not be created until/unless we have committed headcount in the plan to staff them to a minimum viable team within a reasonable timeframe, or to whatever is necessary to make the new team successful, whichever is larger.
 
+### Optimal team size
+
+The optimal engineering team size is somewhere between minimum and maximum size, and depends on the team's scope, the engineering manager's capacity, and teammate capabilities. We trust engineering managers to make the right decision for their team.
+
 ### Maximum viable team
 
 We expect engineering managers to not manage more than 8 people directly.
@@ -57,7 +61,7 @@ Plans can change given new information!
 
 - [Nick Snyder](../company/team/index.md#nick-snyder-he-him), [VP Engineering](roles.md#vp-engineering) (reports to [Beyang Liu](index.md#beyang-liu), CTO)
     - Global code graph {#global-code-graph}
-        - FQ2 [Director of Engineering](https://boards.greenhouse.io/sourcegraph91/jobs/4005231004). Nick acting director until then.
+        - Y.T. starting 2021-08-03. Nick acting director until then.
         - [Search core](search/core.md)
             - [Team: Search core](search/core.md#search-core-eng)
         - [Search product](search/product.md)

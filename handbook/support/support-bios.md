@@ -2,12 +2,15 @@
 
 Our README expands on our profile in [the company team directory](https://about.sourcegraph.com/handbook/company/team) and are meant to help us orient to one another.
 
-* Adeola README
+* Adeola [README](adeola-readme.md)
 * Beatrix [README](bee-readme.md)
+* Ben [README](ben-readme.md)
 * Carl [README](carl-readme.md)
+* Gabe [README](gabe-readme.md)
 * Giselle [README](giselle-readme.md)
+* Jason [README](jason-readme.md)
 * Stompy [README](stompy-readme.md)
-* Warren README
+* Warren [README](warren-readme.md)
 * Virginia [README](virginia-readme.md)
 
 The format, style, order, etc is up to each of us. Just make sure to include the following:

@@ -15,6 +15,7 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Goals](company/goals/index.md)
 - [Team](company/team/index.md)
   - [Org chart](company/team/org_chart.md)
+  - [Teammates](https://about.sourcegraph.com/handbook/company/team)
   - [Careers](https://boards.greenhouse.io/sourcegraph91)
 - [CEO](ceo/index.md)
 - [Communication](communication/index.md)
@@ -23,11 +24,11 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ## Teams at Sourcegraph
 
-### People Ops
+### [People Ops](people-ops/index.md)
 
 - [People Ops](people-ops/index.md)
-  - [Leadership](leadership/index.md)
-  - [1-1](leadership/1-1.md)
+  - [Team](people-ops/index.md#team)
+  - [Goals](people-ops/index.md#goals)
 
 ### [Product](product/index.md)
 
@@ -58,6 +59,11 @@ The handbook is a living document and we expect every teammate to propose improv
 ### [Customer Engineering](ce/index.md)
 
 ### [Marketing](marketing/index.md)
+- [Product Marketing](marketing/product_marketing.md)
+- [Content Marketing](marketing/content/index.md)
+- [Demand Gen](marketing/demandgen.md)
+- [Developer Education](marketing/education.md)
+- [Brand](marketing/brand/index.md)
 
 ### [Sales](sales/index.md)
 
@@ -66,10 +72,10 @@ The handbook is a living document and we expect every teammate to propose improv
 ### [Talent](talent/index.md)
 
 - [Our open positions](careers.md)
-- [Resources for candidates](https://about.sourcegraph.com/handbook/talent)
-- [Resources for hiring managers](https://about.sourcegraph.com/handbook/talent)
-- [Resources for teammates](https://about.sourcegraph.com/handbook/talent)
-- [Resources for recruiters](https://about.sourcegraph.com/handbook/talent)
+- [Resources for candidates](https://about.sourcegraph.com/handbook/talent#resources-for-candidates)
+- [Resources for hiring managers](https://about.sourcegraph.com/handbook/talent#resources-for-hiring-managers)
+- [Resources for teammates](https://about.sourcegraph.com/handbook/talent#resources-for-teammates)
+- [Resources for recruiters](https://about.sourcegraph.com/handbook/talent#resources-for-recruiters)
 
 ### [Operations](ops/index.md)
 
