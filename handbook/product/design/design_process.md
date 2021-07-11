@@ -155,11 +155,22 @@ While asynchronous communication is a core attribute of remote work, key moments
 ### Metrics collection
 
 - In the RFC process, the definition of success will include items which can be measured and evaluated
-- Involve the [Business Operations & Strategy team](../../ops/bizops/index.md) in determining what metrics to track and how they are tracked
-- Work with engineers to add the required eventLog tracking
-- Tools
-    - Looker
-    - Google analytics
+- The locations and interaction moments where these metrics will be collected often must be defined within design files. 
+- To define a metric, use a [metric card](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/%F0%9F%9B%A0Project-Tools?node-id=2597%3A6172) from the [project tools](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/%F0%9F%9B%A0Project-Tools?node-id=0%3A1&viewport=-1298%2C3150%2C1) library. These cards help standardize the naming and descriptions of metrics across the product. 
+- A metric name is defined in the following format:
+  - Project_Segment_INDEX-NUM_StageName
+    - *Project*: the name of the project. A project may have many metrics.
+    - *Segment*: the specific element (or series of elements) that are being measured. 
+    - *INDEX-NUM*: the events place in a funnel of related events, starting with 0. If the funnel has 3 stages, the last stage is 2. If a single event is being tracked this number will be 0
+    - *StageName*: a nice-name identifier for the metric’s position in the funnel
+  - Example: 
+    - A CTA funnel with 3 stages: CTA, a click on the CTA and a user signing up for the product would require the collection of 3 events:
+      - SignUpPLGMonitor_0_Tour
+      - SignUpPLGMonitor_1_CTA
+      - SignUpPLGMonitor_2_SignUpPage
+  - If a large number of metrics are being collected, consider creating a Metrics page [Figma](https://www.figma.com/file/LfQUGTLvfYWxyuFoyQsptB/?node-id=251%3A7408) to identify the locations and interactions where metrics will be collected
+  - Metrics review
+  -   It is good practice to discuss the collection of metrics with the analytics team. Consider requesting a review of your metrics definitions before the project goes to development.
 
 ### Refinement
 
