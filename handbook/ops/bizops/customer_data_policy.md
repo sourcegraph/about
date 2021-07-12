@@ -9,7 +9,7 @@ Product data
 | Montoring and observabiltity tools (Sentry, Honeycomb, Jaeger)   | :heavy-check-mark: |                    |                                                                                                                                                                                                      |                 |
 | Sourcegraph Cloud Postgres database                              | :heavy-check-mark: |                    | Retain indefinitely unless deletion request is received                                                                                                                                              |                 |
 | Sourcegraph.com user action/event logs                           | :heavy-check-mark: |                    | Retain data for 1 year                                                                                                                                                                               |                 |
-| Amplitude                                                        | :heavy-check-mark: |                    |                                                                                                                                                                                                      |                 |
+| Amplitude                                                        | :heavy-check-mark: |                    | Indefinitely                                                                                                                                                                                                     |                 |
 | Google Analytics                                                 | :heavy-check-mark: |                    | Indefinitely                                                                                                                                                                                         |                 |
 
 
@@ -18,18 +18,15 @@ PII and user characteristics
 |---------------------------------------------------|--------------------|---------------------|------------------------------------------------------------------------------------------------------|--------------------|
 | HubSpot and Salesforce (CRM/marketing automation) | :heavy-check-mark: | :heavy-check-mark:  | Retain all customer information                                                                      |                    |
 | Communication tools (Gmail, Jira, Productboard)   | :heavy-check-mark: | :heavy-check-mark:  | Retain all inbound customer communication                                                            |                    |
-| Slack                                             | :heavy-check-mark: | :heavy-check-mark:  | Customer support channels are maintained indefinitely; all other messages are deleted after 3 months |                    |
+| Slack                                             | :heavy-check-mark: | :heavy-check-mark:  | Customer support channels and private messages are maintained indefinitely. See our full [Slack retention policy](../../communication/team_chat.md#retention) for more information |                    |
 | View list of sales tools                          | :heavy-check-mark: | :heavy-check-mark:  | Retain all outbound customer communication                                                           |                    |
-|                                                   |                    |                     |                                                                                                      |                    |
-|                                                   |                    |                     |                                                                                                      |                    |
-|                                                   |                    |                     |                                                                                                      |                    |
 
 
 ## FAQs
 
 ### Where is my data stored?
 
-All outside tools are cloud products and therefore the data is hosted by the service provider. All internal tools and product data is stored in the Postgres database that hosts Sourcegraph Cloud, as well as data pipelines and warehouses in Google Cloud Platform. 
+All outside tools listed above are cloud products and therefore the data is hosted by the service provider. All product data and any internally-built tools are stored in the Postgres database that hosts Sourcegraph Cloud, as well as data pipelines and warehouses in Google Cloud Platform. 
 
 ### Can Sourcegraph developers or admins see my private code?
 
