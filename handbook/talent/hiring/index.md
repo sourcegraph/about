@@ -73,6 +73,13 @@ If any interviewer is asked by a candidate for interview feedback, they may resp
 
 Interviewing requires time and effort, both for us and for candidates. The hiring manager is responsible for monitoring feedback during the interview phase, and if it becomes obvious that we won't be moving forward with a candidate, then the hiring manager should cancel any remaining interviews to be respectful of both the candidate's and interviewers' time.
 
+## Handling interview "no-shows" 
+
+If a candidate no-shows to an interview, please take the following steps: 
+- Immediately send a Slack to #Hiring alerting to talent team. 
+- Look on the candidate's resume (in your Greenhouse scorecard link in your calendar invite) to see if they have their email or phone number listed.  If they do, please send an email and Cc recruiting@sourcegraph.com. The email should say: "Hi [candidate name], I believe we have an interview scheduled today at [insert time].  Are you still available to meet?  If so, please use this Zoom link: [insert Zoom link]."
+- The Talent team will also immedately call the candidate to see if they are still joining, or if the interview needs to be rescheduled. 
+
 ## Sharing company financials
 
 Choosing to join a company is a significant commitment. We want people to have an accurate view of Sourcegraph's financial and business position before they join. (Every Sourcegraph team member after they join has regular access to this information on our Google Drive, and they can ask the CEO directly if they have any other questions.)
