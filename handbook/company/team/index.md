@@ -859,7 +859,7 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Teammate Success Manager
 - Seattle, Washington, USA 🇺🇸
 - [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/)
-- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (professionally known as @sterlingandlola). In her spare time, Cassie enjoys spin classes, traveling to tropical locations, cooking Molly Baz recipes, and watching plant videos on YouTube. 
+- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (professionally known as @sterlingandlola). In her spare time, Cassie enjoys spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to garden. 
 
 ## Rebecca Rissinger (she/her)
 - Manager, Marketing Operations
@@ -1078,8 +1078,8 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 
 ## Alex Jean-Baptiste (He/Him)
 
-- Cusomer Support Engineer
-- Atlanta, Georgia USA 🇺🇸 (optional: add yourself to [the team locations map](locations.md)!)
+- Customer Support Engineer
+- Atlanta, Georgia USA 🇺🇸 
 - GitHub: [alexAtSourcegraph](https://github.com/alexAtSourcegraph), [LinkedIn](https://www.linkedin.com/in/alexjeanb) 
 - [alex.jean-baptiste@sourcegraph.com](mailto:alex.jean-baptiste@sourcegraph.com)
 - [Name pronunciation](https://www.name-coach.com/alex-jean-baptiste)
@@ -1089,6 +1089,14 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 
 - Sales Development Representative
 - San Francisco, California USA 🇺🇸
-- GitHub: zachnaidu
+- GitHub: [zachnaidu](https://github.com/zachnaidu)
 - [zach@sourcegraph.com](mailto:zach@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/zachnaidu/), [Twitter](https://twitter.com/ZachNaidu)
 - Zach is a native of Dallas, Texas and loves all things sports - especially the Dallas Mavericks. From a family of six with three loving sisters (Kaitlin, Chandler, and Olivia), Zach enjoys golfing, pickup basketball, and tossing a football. He was a sports columnist in college and also enjoys playing board/card games and competing in fantasy football with high school and college friends.
+
+## Kelvin Lee (He/Him)
+
+- Customer Support Engineer
+- (Northern) California, USA 🇺🇸
+- [kelvin@sourcegraph.com](mailto:kelvin@sourcegraph.com)
+- [Name pronunciation](https://www.howtopronounce.com/kelvin)
+- Kelvin is a person who doesn't know how to describe himself. He often takes time in answering "How are you doing?".
