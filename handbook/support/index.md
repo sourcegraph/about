@@ -21,7 +21,7 @@ For additional context, check out [RFC 274](https://docs.google.com/document/d/1
 
 ## The team
 - [Adeola Akinsiku](../company/team/index.md#adeola-akinsiku)
-- Alex Jean-Baptiste
+- [Alex Jean-Baptiste](../company/team/index.md#alex-jean-baptiste-he-him)
 - Amber Furbush
 - [Beatrix Woo](../company/team/index.md#beatrix-woo-she-her)
 - [Ben Gordon](../company/team/index.md#team#ben-gordon-he-him)
