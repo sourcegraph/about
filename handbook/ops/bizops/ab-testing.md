@@ -60,20 +60,19 @@ Communicate good candidates with any relevant parties. This could include other 
 
 ### Define the A/B test
 
-- Fill out all the following information on the [A/B testing tracker](https://docs.google.com/spreadsheets/d/1BSLrcvnhq-7X9XrsM81MQePYBVjozxB2GWgNmOUdyeI/edit):
+- Fill out all the following information in an [issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=AB-test&template=ab-test.md&title=A%2FB+test%3A+%3Cname%3E) with `A/B testing` as a linked project.
   - Define the target metric
   - Define the A, B (and more) versions
   - Define the length of the test, depending on the number of users you need, and check for statistical significance with a calculator ([example](https://www.optimizely.com/sample-size-calculator/)). Let BizOps know if you need to understand how much existing traffic there is to determine the expected length of the test
-- Set up the exact methodology (write the query, build the chart) for how this will be evaluated before the test launches to not introduce any bias in the evaluation
-- Pick a feature flag name for your A/B test (eg. `w0-signup-optimisation`)
-- Document that in an issue, you can use this [issue template](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=AB-test&template=ab-test.md&title=A%2FB+test%3A+%3Cname%3E). Make the title explicit so that others know it's an A/B test.
+  - Pick a feature flag name for your A/B test (eg. `w0-signup-optimisation`)
+  - Set up the exact methodology (write the query, build the chart) for how this will be evaluated before the test launches to not introduce any bias in the evaluation
 - Label all the issues that will go into that A/B test with `AB-test/<flag-name>`. That way anyone can see what change are in a given A/B test, and what the name of the feature flag is. It will also make it easier to cleanup the flag when the test ends. [Example](https://github.com/orgs/sourcegraph/projects/181?card_filter_query=label%3Aab-test%2Fw0-signup-optimisation).
 - ***WIP: Follow the naming conventions when adding events***
 
 
 ### Setup the A/B test
 
-- Add remaining A/B test attributes to the [tracker](https://docs.google.com/spreadsheets/d/1BSLrcvnhq-7X9XrsM81MQePYBVjozxB2GWgNmOUdyeI/edit) and sync with BizOps to make sure it will not conflict with other A/B tests.
+- Post in #product-led to sync with product, marketing and business operations teams so everyone can ensure there are no conflicting A/B tests running
 - [Use a feature flag](https://docs.sourcegraph.com/dev/how-to/use_feature_flags) to setup and rollout the A/B test
 - Follow the steps to [add the events to Sourcegraph and Amplitude](amplitude.md#adding-events-to-amplitude)
 
