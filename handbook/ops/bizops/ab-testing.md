@@ -79,6 +79,8 @@ Communicate good candidates with any relevant parties. This could include other 
 ### Analyze the A/B test
 Analyze, write a report in a source of truth, and link to that in the original A/B test ticket. You can use Amplitude (link to come) or [BigQuery/Sheets](https://docs.google.com/spreadsheets/d/1m31oBnqJKu9JVuHA27pZVA1sdv_tc2Vc36pvXwv6mhI/edit#gid=802294460) to evaluate A/B tests. 
 
+We use this [calculator](https://neilpatel.com/ab-testing-calculator/) to evaluate significance.
+
 ### Cleanup
 You should book some time for cleaning up after the A/B test. That can be either [removing the flag](https://docs.sourcegraph.com/dev/how-to/use_feature_flags#disable-or-delete-the-feature-flag) and rolling out the changes, or removing the changes altogether. You can create a ticket for this when defining the test if useful.
 

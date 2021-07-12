@@ -1078,9 +1078,25 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 
 ## Alex Jean-Baptiste (He/Him)
 
-- Cusomer Support Engineer
-- Atlanta, Georgia USA 🇺🇸 (optional: add yourself to [the team locations map](locations.md)!)
+- Customer Support Engineer
+- Atlanta, Georgia USA 🇺🇸 
 - GitHub: [alexAtSourcegraph](https://github.com/alexAtSourcegraph), [LinkedIn](https://www.linkedin.com/in/alexjeanb) 
 - [alex.jean-baptiste@sourcegraph.com](mailto:alex.jean-baptiste@sourcegraph.com)
 - [Name pronunciation](https://www.name-coach.com/alex-jean-baptiste)
 - Alex is a Haitian-American 🇭🇹🇺🇸 information technologist and writer from Miami, Florida🌴. He is passionate about the arts. He enjoys hiking trails, visiting museums, and performing comedy🤣. He is done writing.
+
+## Zach Naidu
+
+- Sales Development Representative
+- San Francisco, California USA 🇺🇸
+- GitHub: [zachnaidu](https://github.com/zachnaidu)
+- [zach@sourcegraph.com](mailto:zach@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/zachnaidu/), [Twitter](https://twitter.com/ZachNaidu)
+- Zach is a native of Dallas, Texas and loves all things sports - especially the Dallas Mavericks. From a family of six with three loving sisters (Kaitlin, Chandler, and Olivia), Zach enjoys golfing, pickup basketball, and tossing a football. He was a sports columnist in college and also enjoys playing board/card games and competing in fantasy football with high school and college friends.
+
+## Kelvin Lee (He/Him)
+
+- Customer Support Engineer
+- (Northern) California, USA 🇺🇸
+- [kelvin@sourcegraph.com](mailto:kelvin@sourcegraph.com)
+- [Name pronunciation](https://www.howtopronounce.com/kelvin)
+- Kelvin is a person who doesn't know how to describe himself. He often takes time in answering "How are you doing?".
