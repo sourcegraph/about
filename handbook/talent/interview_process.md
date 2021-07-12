@@ -60,8 +60,14 @@ Even if candidates prefer to batch all their interviews together, it might not b
  
 If interviews are spread over multiple days and it is clear from the initial feedback that we won't be moving forward, we will cancel the remaining scheduled interviews to save our teammates' and the candidate's time.
  
-To schedule an interview with a candidate, please work with your recruiter or Slack @hiring.  You can see a list of Recruiters [here](https://about.sourcegraph.com/handbook/talent/hiring/how_recruiting_interfaces_with_hiring_managers#the-talent-team).
+To schedule an interview with a candidate, please work with your Recruiter or Slack @hiring.  You can see a list of Recruiters [here](https://about.sourcegraph.com/handbook/talent/hiring/how_recruiting_interfaces_with_hiring_managers#the-talent-team).
+
+## Handling Interview No-Shows
  
+If you are scheduled to conduct an interview and the candidate has not shown up after 5 minutes, please Slack @hiring and tag your Recruiter. You can see a list of Recruiters [here](https://about.sourcegraph.com/handbook/talent/hiring/how_recruiting_interfaces_with_hiring_managers#the-talent-team).
+
+Your Recruiter will reach out to the candidate to determine reasoning. If your Recruiter cannot get in touch with the candidate and/or the candidate still has not shown up after 10 minutes, the interview will be rescheduled and you may have that time back in your schedule.
+
 ## Providing interview feedback
  
 Please put your written feedback into Greenhouse as soon as possible following the interview (immediately is ideal) while it is still fresh in your mind.  You can also leverage your [BrightHire recording](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire) to revisit key points during the interview when providing feedback.
