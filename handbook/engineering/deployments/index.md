@@ -2,8 +2,6 @@
 
 For a complete list of Sourcegraph instances we manage, see our [instances documentation](instances.md).
 
-For common actions related to operating our Sourcegraph deployments, see [playbooks](./playbooks.md).
-
 - [Deployment basics](#deployment-basics)
   - [Images](#images)
   - [Renovate](#renovate)
@@ -13,6 +11,12 @@ For common actions related to operating our Sourcegraph deployments, see [playbo
   - [Merging changes from deploy-sourcegraph](#merging-changes-from-deploy-sourcegraph)
 - [Relationship between deploy-sourcegraph repositories](#relationship-between-deploy-sourcegraph-repositories)
   - [Merging upstream `deploy-sourcegraph` into `deploy-sourcegraph-dot-com`](#merging-upstream-deploy-sourcegraph-into-deploy-sourcegraph-dot-com)
+
+Additional resources:
+
+- [Playbooks](./playbooks.md)
+- [Azure DevOps](./azure_devops.md)
+- [RPO & RTO](./rto_rpo.md)
 
 ## Deployment basics
 

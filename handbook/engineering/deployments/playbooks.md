@@ -1,6 +1,7 @@
 # Playbooks for deployments
 
 - [General](#general)
+- [Debugging](#debugging)
   - [Check what version of Sourcegraph is deployed](#check-what-version-of-sourcegraph-is-deployed)
 - [Sourcegraph.com](#sourcegraphcom)
   - [Deploying to sourcegraph.com](#deploying-to-sourcegraphcom)
@@ -14,9 +15,14 @@
   - [Creating banners for maintenance tasks](#creating-banners-for-maintenance-tasks)
 - [k8s.sgdev.org](#k8ssgdevorg)
   - [Manage users in k8s.sgdev.org](#manage-users-in-k8ssgdevorg)
+- [PostgreSQL](#postgresql)
 - [Cloudflare Configuration](#cloudflare-configuration)
 
 ## General
+
+## Debugging
+
+See [debugging](./debugging/index.md).
 
 ### Check what version of Sourcegraph is deployed
 
@@ -158,6 +164,10 @@ To learn more about this deployment, see [instances](./instances.md#k8s-sgdev-or
 To create an account on [k8s.sgdev.org](https://k8s.sgdev.org), log in with your Sourcegraph Google account via OpenID Connect.
 
 To promote a user to site admin (required to make configuration changes), use the admin user credentials available in 1password (titled `k8s.sgdev.org admin user`) to log in to [k8s.sgdev.org](https://k8s.sgdev.org), and go to the [users page](https://k8s.sgdev.org/site-admin/users) to promote the desired user.
+
+## PostgreSQL
+
+See [PostgreSQL](./postgresql.md)
 
 ## Cloudflare Configuration
 
