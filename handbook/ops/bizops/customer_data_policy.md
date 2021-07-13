@@ -10,16 +10,16 @@ Product data
 | Montoring and observabiltity tools (Sentry, Honeycomb) | :heavy_check_mark: | | 90 days (Sentry) and 60 days (Honeycomb) | Engineering teams |
 | Sourcegraph Cloud Postgres database | :heavy_check_mark: | | Retain indefinitely unless deletion request is received | Analytics and engineering teams |
 Sourcegraph.com user action/event logs | :heavy_check_mark: | | Retain data for 1 year | All Sourcegraph teammates |
-| Amplitude | :heavy_check_mark: | | Indefinitely | |
+| Amplitude | :heavy_check_mark: | | Indefinitely | All Sourcegraph teammates |
 | Google Analytics | :heavy_check_mark: | | Indefinitely | All Sourcegraph teammates |
 
-PII and user characteristics
+User communications
 | Source/platform | Sourcegraph Cloud | On-prem/self-hosted | How long is this data kept for? | Who can access it? |
 |---------------------------------------------------|--------------------|---------------------|------------------------------------------------------------------------------------------------------|--------------------|
-| HubSpot and Salesforce (CRM/marketing automation) | :heavy_check_mark: | Only instance admins and opted-in users | Retain all customer information | |
-| Communication tools (Gmail, Jira, Productboard) | :heavy_check_mark: | Only instance admins and opted-in users | Retain all inbound customer communication | |
-| Slack | :heavy_check_mark: | Only instance admins and opted-in users | Customer support channels and private messages are maintained indefinitely. See our full [Slack retention policy](../../communication/team_chat.md#retention) for more information | |
-| View list of sales tools | :heavy_check_mark: | Only instance admins and opted-in users | Retain all outbound customer communication | |
+| HubSpot and Salesforce (CRM/marketing automation) | :heavy_check_mark: | Only instance admins and opted-in users | Retain all customer information | All Sourcegraph teammates |
+| Communication tools (Gmail, Jira, Productboard) | :heavy_check_mark: | Only instance admins and opted-in users | Retain all inbound customer communication | All Sourcegraph teammates |
+| Slack | :heavy_check_mark: | Only instance admins and opted-in users | Customer support channels and private messages are maintained indefinitely. See our full [Slack retention policy](../../communication/team_chat.md#retention) for more information | All Sourcegraph teammates |
+| View list of sales tools | :heavy_check_mark: | Only instance admins and opted-in users | Retain all outbound customer communication | All Sourcegraph teammates |
 
 ## FAQs
 
