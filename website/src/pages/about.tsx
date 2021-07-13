@@ -10,6 +10,7 @@ import * as felicis from '../images/about/sg-felicis.png'
 import * as goldcrest from '../images/about/sg-goldcrest.png'
 import * as redpoint from '../images/about/sg-redpoint.png'
 import * as sequoia from '../images/about/sg-sequoia.png'
+import * as andreessenhorowitz from '../images/about/sg-andreessen-horowitz.png'
 
 export default class About extends React.Component<any, any> {
     public render(): JSX.Element | null {
@@ -72,6 +73,9 @@ export default class About extends React.Component<any, any> {
                                     Investors
                                 </h2>
                                 <div className="row align-items-center mt-3">
+                                    <div className="col-md-3">
+                                        <img src={andreessenhorowitz} alt="Sourcegraph investor: Sequoia" />
+                                    </div>
                                     <div className="col-md-3">
                                         <img src={sequoia} alt="Sourcegraph investor: Sequoia" />
                                     </div>
