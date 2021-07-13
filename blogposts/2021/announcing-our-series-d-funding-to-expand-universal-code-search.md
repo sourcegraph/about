@@ -14,7 +14,7 @@ published: true
 
 ![Announcing Sourcegraph's Series D Round](/blog/announcing-sourcegraphs-series-d-round.jpg)
 
-We’re excited to share the news that we’ve closed a $125M Series D funding round (led by [Andreessen Horowitz](https://a16z.com/2021/07/13/investing-in-sourcegraph/)) at a $2.625B valuation. We welcome Sarah Wang from Andreessen Horowitz to our board as an observer. Insight Partners and Geodesic Capital also joined our existing investors in the round.
+We’re excited to share [the news](https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/?tpcc=ECTW2020) that we’ve closed a $125M Series D funding round (led by [Andreessen Horowitz](https://a16z.com/2021/07/13/investing-in-sourcegraph/)) at a $2.625B valuation. We welcome Sarah Wang from Andreessen Horowitz to our board as an observer. Insight Partners and Geodesic Capital also joined our existing investors in the round.
 
 ## What’s so important about code search?
 
