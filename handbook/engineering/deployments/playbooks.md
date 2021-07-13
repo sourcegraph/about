@@ -1,17 +1,30 @@
 # Playbooks for deployments
 
-- [Playbooks for deployments](#playbooks-for-deployments)
-    - [Sourcegraph.com](#sourcegraphcom)
-        - [Deploying to sourcegraph.com](#deploying-to-sourcegraphcom)
-        - [Rolling back sourcegraph.com](#rolling-back-sourcegraphcom)
-        - [Invalidating all user sessions](#invalidating-all-user-sessions)
-        - [Accessing sourcegraph.com database](#accessing-sourcegraphcom-database)
-            - [Via the CLI](#via-the-cli)
-            - [Via BigQuery (for read-only operations)](#via-bigquery-for-read-only-operations)
-        - [Restarting docs.sourcegraph.com](#restarting-about-sourcegraph-com-and-docs-sourcegraph-com)
-    - [k8s.sgdev.org](#k8ssgdevorg)
-        - [Manage users in k8s.sgdev.org](#manage-users-in-k8ssgdevorg)
-    - [Cloudflare Configuration](#cloudflare-configuration)
+- [General](#general)
+  - [Check what version of Sourcegraph is deployed](#check-what-version-of-sourcegraph-is-deployed)
+- [Sourcegraph.com](#sourcegraphcom)
+  - [Deploying to sourcegraph.com](#deploying-to-sourcegraphcom)
+  - [Rolling back sourcegraph.com](#rolling-back-sourcegraphcom)
+  - [Backing up & restoring a Cloud SQL instance (production databases)](#backing-up--restoring-a-cloud-sql-instance-production-databases)
+  - [Invalidating all user sessions](#invalidating-all-user-sessions)
+  - [Accessing sourcegraph.com database](#accessing-sourcegraphcom-database)
+    - [Via the CLI](#via-the-cli)
+    - [Via BigQuery (for read-only operations)](#via-bigquery-for-read-only-operations)
+  - [Restarting about.sourcegraph.com and docs.sourcegraph.com](#restarting-aboutsourcegraphcom-and-docssourcegraphcom)
+  - [Creating banners for maintenance tasks](#creating-banners-for-maintenance-tasks)
+- [k8s.sgdev.org](#k8ssgdevorg)
+  - [Manage users in k8s.sgdev.org](#manage-users-in-k8ssgdevorg)
+- [Cloudflare Configuration](#cloudflare-configuration)
+
+## General
+
+### Check what version of Sourcegraph is deployed
+
+[Install `sg`, the Sourcegraph developer tool](https://github.com/sourcegraph/sourcegraph/blob/main/dev/sg/README.md), and using the [`sg live` command](https://github.com/sourcegraph/sourcegraph/blob/main/dev/sg/README.md#sg-live---see-currently-deployed-version) you can see the version currently deployed for a specific environment:
+
+```sh
+sg live <environment>
+```
 
 ## Sourcegraph.com
 

@@ -1,10 +1,8 @@
 # Deployments
 
-We maintain multiple [instances](instances.md) of Sourcegraph:
+For a complete list of Sourcegraph instances we manage, see our [instances documentation](instances.md).
 
-- [Instances](./instances.md): information about our different instances
-
-Learn more about how these work in:
+For common actions related to operating our Sourcegraph deployments, see [playbooks](./playbooks.md).
 
 - [Deployment basics](#deployment-basics)
   - [Images](#images)
