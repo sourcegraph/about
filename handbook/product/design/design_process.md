@@ -170,7 +170,7 @@ While asynchronous communication is a core attribute of remote work, key moments
       - SignUpPLGMonitor_2_SignUpPage
   - If a large number of events are being collected, consider creating a Metrics page [Figma](https://www.figma.com/file/LfQUGTLvfYWxyuFoyQsptB/?node-id=251%3A7408) to identify the locations and interactions where events will be collected
   - Metrics review
-  -   Consider requesting a review of your metrics definitions from the analytics team before the project goes to development.
+    - Consider requesting a review of your metrics definitions from the analytics team before the project goes to development.
 
 ### Refinement
 
