@@ -36,7 +36,7 @@ Nobody knows how to measure dev productivity, but every dev knows what it feels 
 
 > “At Criteo, developer happiness is our top priority—not just productivity. We want to tackle the things that developers see as hurdles in their day-to-day life. By providing them with the right tools, like Sourcegraph, we’ve found that increased productivity is a natural byproduct. … We’re thrilled that it’s given us the ability to make our developers happier and more productive in their roles." - François Jehl, Senior Engineering Manager, [Criteo](/case-studies/criteo-tackles-big-code/)
 
-Our new and existing investors will partner with us to help launch new products and bring Universal Code Search to every dev at every company of every size and scale. We have a lot more to build, and we need a lot of hands to make it happen—we’re [hiring for 40+ open roles](/careers) on our global, all-remote team.
+Our new and existing investors will partner with us to help launch new products and bring Universal Code Search to every dev at every company of every size and scale. We have a lot more to build, and we need a lot of hands to make it happen—we’re [hiring for 40+ open roles](https://boards.greenhouse.io/sourcegraph91) on our global, all-remote team.
 
 We have a lot more coming down the pipe. And if you haven't yet tried Sourcegraph, [try Sourcegraph now](https://docs.sourcegraph.com)! It takes less than five minutes to set up and start searching your own code locally.
 
