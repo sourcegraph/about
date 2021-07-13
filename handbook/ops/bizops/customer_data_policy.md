@@ -17,10 +17,10 @@ Product data
 PII and user characteristics
 | Source/platform                                   | Sourcegraph Cloud  | On-prem/self-hosted | How long is this data kept for?                                                                      | Who can access it? |
 |---------------------------------------------------|--------------------|---------------------|------------------------------------------------------------------------------------------------------|--------------------|
-| HubSpot and Salesforce (CRM/marketing automation) | :heavy_check_mark: | :heavy_check_mark:  | Retain all customer information                                                                      |                    |
-| Communication tools (Gmail, Jira, Productboard)   | :heavy_check_mark: | :heavy_check_mark:  | Retain all inbound customer communication                                                            |                    |
-| Slack                                             | :heavy_check_mark: | :heavy_check_mark:  | Customer support channels and private messages are maintained indefinitely. See our full [Slack retention policy](../../communication/team_chat.md#retention) for more information |                    |
-| View list of sales tools                          | :heavy_check_mark: | :heavy_check_mark:  | Retain all outbound customer communication                                                           |                    |
+| HubSpot and Salesforce (CRM/marketing automation) | :heavy_check_mark: | Only instance admins and opted-in users  | Retain all customer information                                                                      |                    |
+| Communication tools (Gmail, Jira, Productboard)   | :heavy_check_mark: | Only instance admins and opted-in users  | Retain all inbound customer communication                                                            |                    |
+| Slack                                             | :heavy_check_mark: | Only instance admins and opted-in users  | Customer support channels and private messages are maintained indefinitely. See our full [Slack retention policy](../../communication/team_chat.md#retention) for more information |                    |
+| View list of sales tools                          | :heavy_check_mark: | Only instance admins and opted-in users  | Retain all outbound customer communication                                                           |                    |
 
 
 ## FAQs
