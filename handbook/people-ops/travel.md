@@ -39,7 +39,7 @@ Sourcegraph is an  [all-remote](https://about.sourcegraph.com/handbook/company/r
 
 Team meetups are very important for building cohesiveness in remote teams and spreading Sourcegraph culture across the company. 
 
-Be economical in choosing your accommodations, modes of transportation, and where you’ll be dining. We understand that there may be limits, and we urge you to find options that are both convenient for you while being reasonable reimbursements for the company. We trust you to use your best judgement while spending company money.
+We are a [high agency](https://about.sourcegraph.com/handbook/company/values#high-agency) team. Be economical in choosing your accommodations, modes of transportation, and where you’ll be dining. We understand that there may be limits, and we urge you to find options that are both convenient for you while being reasonable reimbursements for the company. 
 
 > *For example: If you are attending a conference and see that a cheaper hotel is a half hour away from your conference venue, but you will need to pay for the taxi to the venue which would ultimately make your cost the same, book a more convenient option!*
 
@@ -130,7 +130,7 @@ We advise spending within reason for the location you are visiting, with a $400 
 
 ## Dining and your per diem:
 
-   We ask you to use your best judgment when traveling and spending company money. Don’t go overboard with spending on food and drinks. Always ask for receipts and keep them organized.
+   We ask you to use your best judgment when traveling and spending company money. Don’t go overboard with spending on food and drinks. Always ask for receipts for expenses over $25 USD and keep them organized.
     
  -   All teammates will receive a [per diem](https://www.merriam-webster.com/words-at-play/what-does-per-diem-mean) while they travel:
 	 - $80 per day for all 3 meals, alcoholic beverages included.
