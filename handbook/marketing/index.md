@@ -2,6 +2,32 @@
 
 <img align="right" src="https://sourcegraphstatic.com/marketing-logo.gif" style="max-height:100%" alt="Sourcegraph Marketing team logo"/>
 
+## How to contact Marketing
+
+### General Marketing requests and feedback
+
+- [Make a request or share an idea](https://form.asana.com/?k=hNaq42PNshdQ1FjjEUKjLA&d=7195383522959)
+- [Sign up for Marketing office hours](https://docs.google.com/spreadsheets/d/1o8rHntP0j6-JFryhc0_g6MKEI6l3dZE7NTKasyQx46M/edit#gid=0)
+- Join the [Marketing team meeting](https://calendar.google.com/event?action=TEMPLATE&tmeid=dWozMjcxcjlnazMxZ2xjcnNkOHZrdjBwNXZfMjAyMTA3MTJUMTUzMDAwWiByZWJlY2NhQHNvdXJjZWdyYXBoLmNvbQ&tmsrc=rebecca%40sourcegraph.com&scp=ALL) (every second week)
+- Slack channel: #marketing
+
+### Who to go to for what
+
+The table below breaks down the capabilities of each team within Marketing. Once you've identified which team is relevant to your query, check out their handbook page or contact them via their Slack channel or contact form. If you're still not sure which team you should contact, please submit a [general request](#General-Marketing-requests-and-feedback) or reach out in #marketing.
+
+| Team                | What we can help with | Slack channels | Submit an idea                                                                            |
+|---------------------|-----------------------|----------------|-------------------------------------------------------------------------------------------|
+| [Brand](brand/index.md)               |                       |                |                                                                                           |
+| Communications      |                       |                |                                                                                           |
+| Community Relations          |                       |                |                                                                                           |
+| [Content Marketing](content/index.md)   | Writing, editing, and strategic support for content that raises awareness and builds trust with our developer audience. Content channels and formats we own: the blog (except for release posts, which are managed by Product Marketing), web articles, guides, quizzes.                       | #content-chat  | [Content Proposal form](https://form.asana.com/?k=gU7tdLoh3TyyrSa-w0-pCQ&d=7195383522959) |
+| [Demand Gen](demandgen.md)          |                       |                |                                                                                           |
+| [Developer Education](education.md) |                       |                |                                                                                           |
+| [Product Marketing](product_marketing.md)   |                       |                |                                                                                           |
+
+
+## Related handbook pages
+
 - [Messaging](messaging.md)
     - [What is Sourcegraph?](messaging.md#sourcegraph-value-proposition)
     - [What problems does Sourcegraph solve?](messaging.md#what-problems-does-sourcegraph-solve)
@@ -32,9 +58,7 @@
     - [Naming Process for Products, Features and Programs](brand/naming_process_for_products_features_and_programs.md)
     - [Working with Us](brand/production_process.md)
 
-- Marketing requests and feedback
-    - [Make a request or share an idea](https://form.asana.com/?k=hNaq42PNshdQ1FjjEUKjLA&d=7195383522959)
-    - [Sign up for Marketing office hours](https://docs.google.com/spreadsheets/d/1o8rHntP0j6-JFryhc0_g6MKEI6l3dZE7NTKasyQx46M/edit#gid=0)
+
 - [Marketing roles - open positions](https://sourcegraph.com/careers)
 
 ## Members
