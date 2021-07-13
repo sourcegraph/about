@@ -33,6 +33,10 @@ All outside tools listed above are cloud products and therefore the data is host
 
 No. Only you can see or edit your private code. Code host permissions are enforced and not even Sourcegraph’s admin accounts can see private code. Manage your permissions in the code host and they will be automatically replicated in Sourcegraph.
 
+### Can Sourcegraph developers or admins see my private settings and Sourcegraph configuration?
+
+No. Only you can see or edit your private settings and Sourcegraph configuration. 
+
 ### Is my data encrypted?
 
 Yes, our dedicated security team follows best-practices for data encryption. We know that source code is one of your most sensitive assets. Every component of Sourcegraph was designed with security in mind. We've detailed our strict security guidelines for different deployment types below:
