@@ -23,7 +23,7 @@
 [Install `sg`, the Sourcegraph developer tool](https://github.com/sourcegraph/sourcegraph/blob/main/dev/sg/README.md), and using the [`sg live` command](https://github.com/sourcegraph/sourcegraph/blob/main/dev/sg/README.md#sg-live---see-currently-deployed-version) you can see the version currently deployed for a specific environment:
 
 ```sh
-sg live <environment>
+sg live <environment|url>
 ```
 
 ## Sourcegraph.com
