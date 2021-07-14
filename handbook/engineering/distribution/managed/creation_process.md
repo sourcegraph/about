@@ -2,7 +2,7 @@
 
 Creating a new managed instance involves following the steps below.
 
-1. Create a issue with the managed instance template in the `sourcegraph/customer` repository. 
+1. Create a issue with the managed instance template in the `sourcegraph/customer` repository.
 1. Create a new GCP project `sourcegraph-managed-$COMPANY` under the "Managed instances" folder in the Sourcegraph GCP organization.
 1. Create GCP service account credentials:
     - From console.cloud.google.com select the project > **APIs & Services** > **Credentials** > **Create credentials** > **Service account**
@@ -14,8 +14,10 @@ Creating a new managed instance involves following the steps below.
     - **Add key** > **Create new key** > **JSON** > **Create**
 1. Upload the service account key and create admin credentials in 1password:
     - Open the 1password [Managed instances vault](https://my.1password.com/vaults/l35e5xtcfsk5suuj4vfj76hqpy/allitems) (ask @stephen, @bill, or @beyang to grant you access)
-    - **Add** > **Document** > enter **$COMPANY service account** as the title > Upload the service account JSON  file previously downloaded > **Save**
-    - **Add** > **Password** > enter **$COMPANY sourcegraph-admin** as the title > Change **length** to 40 and turn on symbols and digits >> **Save**
+    - **Add** > **Document** > enter **$COMPANY service account** as the title > Upload the service account JSON file previously downloaded > **Save**
+    - **Add** > **Login** > enter **$COMPANY sourcegraph-admin** as the title
+      - **User:** `managed+$COMPANY@sourcegraph.com`
+      - **Password:** Change **length** to 40 and turn on symbols and digits > **Save**
 1. In GCP, enable the **Compute Engine API**:
    - Under **APIs & Services** > **Library** search for "Compute"
    - Select **Compute Engine API** and choose **Enable**
@@ -31,11 +33,16 @@ Creating a new managed instance involves following the steps below.
      - For **Secret value**, enter the OpsGenie webhook URL from [Internal managed instances vault: OpsGenie Webhook URL](https://my.1password.com/vaults/nwbckdjmg4p7y4ntestrtopkuu/allitems/d64bhllfw4wyybqnd4c3wvca2m)
      - Click **Create secret**.
 1. Clone and `cd deploy-sourcegraph-managed/`
-1. `VERSION=vMAJOR.MINOR.PATH ./util/create-managed-instance.sh $COMPANY/` and **commit the result**. Make sure that the version exists in [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker/tags).
-1. Open and edit `deploy-sourcegraph-managed/$COMPANY/gcp-tfstate/gcp-tfstate.tf` according to the comments within, commit the result.
+1. Set variables:
+   - `export VERSION=vMAJOR.MINOR.PATH`
+   - `export COMPANY=$COMPANY`
+1. Check out a new branch: `git checkout $COMPANY/create-instance`
+1. `./util/create-managed-instance.sh $COMPANY/` and **commit the result**. Make sure that the version exists in [deploy-sourcegraph-docker](https://github.com/sourcegraph/deploy-sourcegraph-docker/tags).
+1. Open and edit `deploy-sourcegraph-managed/$COMPANY/gcp-tfstate/gcp-tfstate.tf` according to the TODO comments within, commit the result.
+1. Ensure you are using the version of Terraform indicated in `.tool-versions` using `tfenv`
 1. In `gcp-tfstate` run `terraform init && terraform apply && git add . && git commit -m 'initialize GCP tfstate bucket'`
-1. Open and edit `infrastructure.tf` according to the comments within and commit the result.
-1. Open and edit `terraform.tfvars` according to the comments within and commit the result.
+1. Open and edit `infrastructure.tf` according to the TODO comments within and commit the result.
+1. Open and edit `terraform.tfvars` according to the TODO comments within and commit the result.
 1. In `deploy-sourcegraph-managed/$COMPANY` run `terraform init && terraform plan && terraform apply`
 1. Access the instance over SSH and confirm all containers are healthy ([instructions](operations.md#ssh-access)). You may find `docker ps` reports no containers, that indicates it is still installing Docker, etc. To watch this progress see [debugging startup scripts](operations.md#debugging-startup-scripts), it usually takes <10m.
 1. In the infrastructure repository, [create a DNS entry](https://github.com/sourcegraph/infrastructure/blob/master/dns/sourcegraph-managed.tf) that points `$COMPANY.sourcegraph.com` to the `default-global-address` IP (see ["Finding the external load balancer IP"](operations.md#finding-the-external-ips)) and follow the process there to `asdf exec terraform apply` it.
