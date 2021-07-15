@@ -39,7 +39,7 @@ All departments are likely to have some or all of the below universal interview 
   -  Why are you interested in Sourcegraph and our open position?
   -  What are you looking for in your next role, and what are you career goals?
   -  Do you have overlap with a specific timezone? (only applicable for roles that have time zone requirements)
-  -  How much exposure have you had working with teammates across time zones? How did you stay connected and up-to-date?
+  -  Tell us how much exposure, if any, you have had working with teammates across time zones. How did you stay connected and up-to-date with your team?
   -  What is your ideal start date?
   -  Are your compensation expectations in line with our compensation range, which is XYZ?  
   -  What questions do you have for us?
