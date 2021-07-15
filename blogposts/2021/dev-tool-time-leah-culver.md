@@ -1,9 +1,9 @@
 ---
-title: "'If you're still using Google Docs, what are you doing?!' Dev Tool Time with Leah Culver"
+title: "'I'm happy to represent the minimalist setup lifestyle': Dev Tool Time with Leah Culver"
 description: "Leah Culver, iOS Developer at Twitter, joined us to share some developer life hacks, her minimalist, no-config philosophy for tools, and her secret for reaching inbox zero."
 author: Vanesa Ortiz
 authorUrl: https://twitter.com/vanesacodes
-publishDate: 2021-07-09T10:00-07:00
+publishDate: 2021-07-15T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-leah-culver
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-leah-culver.jpg
@@ -33,7 +33,7 @@ Leah’s fondness of keeping all her data in the cloud also applies to her Git v
 
 ## [Tower](https://www.git-tower.com/)
 
-> "I'm a big advocate of self-review"
+> "I'm a big advocate of self-review."
 
 Tower is Leah’s visual Git client of choice. She likes using a GUI over the command line as it lets her preview what she’s doing clearly before committing. For example, you can see the changes as they would appear in a pull request, which makes self-reviewing (which Leah values highly) much more pleasant. 
 
