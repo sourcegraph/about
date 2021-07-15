@@ -557,6 +557,25 @@ Use periods in complete sentences. Don’t use periods in headlines or labels. P
 
 ### Quotation marks
 
+When quoting content, use double quotation marks. Use single quotation marks to quote content within an existing quote.
+
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Add an insight to “Test Dashboard”</li>
+<li>“When quoting inside existing quotes, ‘Single quotes’ are the way to go”</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Add an insight to ‘Test Dashboard’</li>
+<li>“When quoting inside existing quotes, avoid “double quoting””</li>
+</ul>
+</div>
+</div>
+
 Watch out for dumb quotation marks (`'` and `"`). These are a relic of typewriters, and can be identified by how they’re straight rather than curly. Always use typographic quotation marks (`‘` and `’`, `“` and `”`).
 
 <div class="usage">
