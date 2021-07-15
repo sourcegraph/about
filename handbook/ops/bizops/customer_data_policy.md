@@ -22,12 +22,14 @@ Sourcegraph.com event logs | ✔️ | | Retain data for 1 year | All Sourcegraph
 
 ## User communications
 
-| Source/platform | Sourcegraph Cloud | Self-hosted | How long is this data kept for? | Who can access it? |
+| Source/platform | Sourcegraph Cloud | Self-hosted* | How long is this data kept for? | Who can access it? |
 |---------------------------------------------------|--------------------|---------------------|------------------------------------------------------------------------------------------------------|--------------------|
-| HubSpot and Salesforce (CRM/marketing automation) | ✔️ | Only instance admins and opted-in users | Retain all customer information | All Sourcegraph teammates |
-| Communication tools (Gmail, Jira, Productboard) | ✔️ | Only instance admins and opted-in users | Retain all inbound customer communication | All Sourcegraph teammates |
-| Slack | ✔️ | Only instance admins and opted-in users | Customer support channels and private messages are maintained indefinitely. See our full [Slack retention policy](../../communication/team_chat.md#retention) for more information | All Sourcegraph teammates |
-| View full [list of sales tools](../../sales/onboarding/index.md#getting-started) | ✔️ | Only instance admins and opted-in users | Retain all outbound customer communication | All Sourcegraph teammates |
+| HubSpot and Salesforce (CRM/marketing automation) | ✔️ | ✔️ | Retain all customer information | All Sourcegraph teammates |
+| Communication tools (Jira, Productboard) | ✔️ | ✔️ | Retain all inbound customer communication | All Sourcegraph teammates |
+| Slack shared channels | ✔️ | ✔️ | Customer support channels and private messages are maintained indefinitely. See our full [Slack retention policy](../../communication/team_chat.md#retention) for more information | All Sourcegraph teammates |
+| View full [list of sales tools](../../sales/onboarding/index.md#getting-started) | ✔️ | ✔️ | Retain all outbound customer communication | All Sourcegraph teammates |
+
+<b>*For self-hosted, Sourcegraph can only view instance admin and opted-in users' contact information.</b>
 
 ## FAQs
 
