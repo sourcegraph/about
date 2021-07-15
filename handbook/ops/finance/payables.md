@@ -24,7 +24,7 @@ Just [contact the finance team](index.md#contact) if you believe you are eligibl
 |Role|Default monthly credit limit|
 |---|---|
 |Department leads (VP-level or above)|$10,000|
-|Managers and Directors|$1,000|
+|Managers and Directors|$3,000|
 
 It is not required to provide receipts for corporate purchases on Brex cards (i.e. vendor payments). For purchase of personal purchases above $50, (i.e. laptops, food, travel expenses), please upload a receipt.
 
