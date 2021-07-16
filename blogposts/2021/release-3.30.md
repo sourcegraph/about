@@ -16,7 +16,7 @@ Sourcegraph 3.30 is now available! For this release, we introduced
 
 ### Batch Changes: Publish and unpublish changests from the Guide
 
-Batch Changes features a powerful idempotent [spec-based workflow](https://docs.sourcegraph.com/batch_changes/explanations/batch_changes_design), where the spec file defines the batch change. In particular, the [`published`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#changesettemplate-published) field defines if changesets are published to the codehost or not.
+Batch Changes features a powerful idempotent [spec-based workflow](https://docs.sourcegraph.com/batch_changes/explanations/batch_changes_design), where the spec file defines the batch change. In particular, the [`published`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#changesettemplate-published) property defines if changesets are published to the codehost or not.
 
 This workflow is great for reproducibility and having a completely CLI-based workflow, and we are keeping it!
 
