@@ -23,3 +23,9 @@ This workflow is great for reproducibility and having a completely CLI-based wor
 _In addition_, we are allowing changesets to be published and unpublished directly from the GUI, to make the workflow more approachable to new users. Simply omit the `published` field in the specs, and the GUI will become the source of truth for publishing changesets.
 
 <!--TODO a small GIF showing a user publishing specs from the GUI (select a few changesets, click the publish bulk action) -->
+
+### New code search reference
+
+* We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcuts to using the fitlers in queries. 
+
+<!--TODO a small GIF a user clicking a repo: filter and using autocomplete to resolve github.com\/sourcegraph/sourcgraph$ -->
