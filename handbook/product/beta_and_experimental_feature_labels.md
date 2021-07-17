@@ -12,7 +12,7 @@ Labelling features correctly lets us move quickly and release early in order to 
   - Make users less likely to assume the overall quality of Sourcegraph is as brittle as an early feature might be
   - Communicate that we are particularly interested in user feedback
   - Communicate that a user's feedback is more likely to have meaningful impact due to the early stage
-  - Let us release paid-tier features initially for free, to usage feedback fast and build our sales and marketing knowledge
+  - Let us release paid-tier features initially for free, to get usage feedback fast or to build our sales and marketing knowledge
 
 ## When to use each label: 
 
