@@ -18,6 +18,8 @@ A repo-updater instance exposes an [HTTP server](https://sourcegraph.com/github.
 
 The service's key data structure is a [priority queue](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/scheduler.go?L509-551) of repository updates. These updates are sorted using [simple heuristics](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/scheduler.go?L609-622) based on repository metadata. Additionally, queue positions can be modified in response to [explicit requests](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/scheduler.go?L368-377). Similar determinations are made for [permissions and authorization updates](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/enterprise/cmd/repo-updater/internal/authz/request_queue.go?L9-12).
 
+As noted earlier, there are a variety of code hosts that Sourcegraph can integrate with. The [Source interface](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/sources.go?L82-90) abstracts these code host communication details. For example, [listing GitHub repositories](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/github.go?L204-224) is handled differently than [listing GitLab repositories](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/gitlab.go?L229-340).
+
 ## Miscellaneous
 
 ### Production instances
