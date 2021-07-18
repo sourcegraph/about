@@ -1,17 +1,32 @@
 # How [gitserver](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/tree/cmd/gitserver) works
 
 - [How gitserver works](#how-gitserver-works)
+  - [Purpose](#purpose)
+    - [Overview](#overview)
   - [Miscellaneous](#miscellaneous)
     - [Production instances](#production-instances)
     - [Command timeouts](#command-timeouts)
+    - [Concurrency control](#concurrency-control)
     - [Cleanup tasks](#cleanup-tasks)
     - [Useful metrics](#useful-metrics)
+
+## Purpose
+
+Sourcegraph mirrors repositories from code hosts. Code hosts may be SaaS products, such as GitHub or AWS CodeCommit, or local installations that are private to a customer's environment. The gitserver service is responsible for providing HTTP-based access to (and management of) all repositories that are made accessible via configured code hosts.
+
+### Overview
+
+Each gitserver instance exposes an [HTTP server](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L276-297) as its primary interface. This interface allows clients to clone a repository onto a particular instance, and then direct subsequent Git commands to that repository on that instance.
+
+Generic Git commands are processed using an [exec endpoint](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L769-979), which avoids exploding the HTTP server with every individual Git operation that's possible. Sourcegraph-specific commands and queries, such as [whether a repository is cloneable](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L579-623), are routed through purpose-built HTTP handlers.
+
+The service supports different version control systems, or _VCS_, that are compatible with Git. The implementation details of these systems are abstracted by a [VCSSyncer interface](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/vcs_syncer.go?L20-34). For example, the steps to clone a [Git repository]((https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/vcs_syncer.go?L70-85)) differ from those of a [Perforce repository](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/vcs_syncer.go?L227-254).
 
 ## Miscellaneous
 
 ### Production instances
 
-There are currently [20 gitserver instances](https://sourcegraph.com/github.com/sourcegraph/deploy-sourcegraph-dot-com@ec7effbc9491e3ee0c77c3d70ac3f2eb8cb34837/-/blob/base/frontend/sourcegraph-frontend.Deployment.yaml?L104-105) in production. This is a static list made available via the `SRC_GIT_SERVERS` environment variable.
+There are currently [20 gitserver instances](https://sourcegraph.com/github.com/sourcegraph/deploy-sourcegraph-dot-com@ec7effbc9491e3ee0c77c3d70ac3f2eb8cb34837/-/blob/base/frontend/sourcegraph-frontend.Deployment.yaml?L104-105) in production on Sourcegraph Cloud. This is a static list made available via the `SRC_GIT_SERVERS` environment variable.
 
 At the moment, we shard repositories across gitserver instances using a [modular hashing strategy](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/gitserver/client.go?L118-124) based on the repository name. This is the responsibility of the [gitserver client](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/gitserver/client.go).
 
@@ -22,6 +37,10 @@ In the future, we will shift to a [consistent hashing strategy](https://en.wikip
 ### Command timeouts
 
 There are two different command timeout checks in gitserver: the [short timeout](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L177-200) and the [long timeout](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L221-224). Note that some commands are expected to take a considerable amount of time, especially when executed against large monorepos (some of which can be multiple TB in size).
+
+### Concurrency control
+
+[Repositories can be locked](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/lock.go?L7-24) during sensitive operations to prevent concurrent activities from taking place, such as [two clones of the same repository](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L1279-1287) on the same instance.
 
 ### Cleanup tasks
 
