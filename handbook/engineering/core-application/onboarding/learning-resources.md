@@ -1,0 +1,40 @@
+# Learning resources
+
+- [Learning resources](#learning-resources)
+  - [Docker](#docker)
+  - [General](#general)
+  - [Go](#go)
+  - [GraphQL](#graphql)
+  - [Kubernetes](#kubernetes)
+  - [React](#react)
+  - [TypeScript](#typescript)
+
+## Docker
+
+- [Learn Docker in a Month of Lunches](https://smile.amazon.com/Learn-Docker-Month-Lunches-Stoneman/dp/1617297054)
+
+## General
+
+- [Designing Data-Intensive Applications](https://smile.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+
+## Go
+
+- [The Go Programming Language](https://smile.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440)
+- [Concurrency in Go](https://smile.amazon.com/Concurrency-Go-Tools-Techniques-Developers/dp/1491941197)
+- [Go in Action](https://smile.amazon.com/Go-Action-William-Kennedy/dp/1617291781)
+
+## GraphQL
+
+- [The Road to GraphQL](https://smile.amazon.com/gp/product/1730853935)
+
+## Kubernetes
+
+- [Learn Kubernetes in a Month of Lunches](https://smile.amazon.com/Learn-Kubernetes-Month-Lunches-Stoneman/dp/1617297984)
+
+## React
+
+- [The Road to React](https://smile.amazon.com/gp/product/172004399X)
+
+## TypeScript
+
+- [Programming TypeScript](https://smile.amazon.com/gp/product/1492037656)

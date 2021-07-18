@@ -50,5 +50,4 @@ Please ensure you've familiarized yourself with the [General Onboarding](https:/
 
 - [Devtools we love](devtools-we-love.md)
 - [Tips and tricks](tips-and-tricks.md)
-- [Language resources](#)
-- [Infrastructure resources](#)
+- [Learning resources](learning-resources.md)
