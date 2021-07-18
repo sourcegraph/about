@@ -3,7 +3,7 @@
   - [Purpose](#purpose)
     - [Overview](#overview)
   - [Miscellaneous](#miscellaneous)
-    - [Singleton nature](#singleton-nature)
+    - [Production instances](#production-instances)
     - [General dependencies](#general-dependencies)
     - [Cloud-specific dependencies](#cloud-specific-dependencies)
 
@@ -20,9 +20,9 @@ The service's key data structure is a [priority queue](https://sourcegraph.com/g
 
 ## Miscellaneous
 
-### Singleton nature
+### Production instances
 
-There is [only one instance](https://sourcegraph.com/github.com/sourcegraph/deploy-sourcegraph-dot-com@ec7effbc9491e3ee0c77c3d70ac3f2eb8cb34837/-/blob/base/repo-updater/repo-updater.Deployment.yaml?L17) of repo-updater running, by design. This avoids expensive coordination issues, and helps with respecting the aforementioned code host limits.
+There is [exactly one instance](https://sourcegraph.com/github.com/sourcegraph/deploy-sourcegraph-dot-com@ec7effbc9491e3ee0c77c3d70ac3f2eb8cb34837/-/blob/base/repo-updater/repo-updater.Deployment.yaml?L17) of repo-updater running, by design. This avoids expensive coordination issues, and helps with respecting the aforementioned code host limits.
 
 ### General dependencies
 
