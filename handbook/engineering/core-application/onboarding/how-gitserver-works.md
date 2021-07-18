@@ -27,7 +27,7 @@ The service supports different version control systems, or VCS, that are compati
 
 One repository-related responsibility _not_ handled by gitserver is the scheduling of syncs and updates. To clone repositories, clients interact with repo-updater; that service provides a priority queue and schedulers that determine when clones and fetches will take place. Other Git commands are sent directly from clients to gitserver.
 
-See ["How repo-updater works: Overview"](how-repo-updater-works.md#overview) for more information.
+> See ["How repo-updater works: Overview"](how-repo-updater-works.md#overview) for more information.
 
 ## Miscellaneous
 
