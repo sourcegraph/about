@@ -6,10 +6,9 @@
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Learning Materials](#learning-materials)
-    - [Tours](#tours)
-    - [Service Deep Dives](#service-deep-dives)
-    - [Data Deep Dives](#data-deep-dives)
-    - [Key Component Deep Dives](#key-component-deep-dives)
+    - [Service Tours](#service-tours)
+    - [Data Tours](#data-tours)
+    - [Component Tours](#component-tours)
   - [Extras](#extras)
 
 ## Introduction
@@ -26,25 +25,20 @@ The first days and weeks on a new team can be daunting. There's a lot of informa
 
 Please ensure you've familiarized yourself with the [General Onboarding](https://about.sourcegraph.com/handbook/people-ops/onboarding#for-all-new-teammates) and [Engineering Onboarding](https://about.sourcegraph.com/handbook/engineering/onboarding#engineering-onboarding) documents. The materials on this page are geared toward the [Core Application team](https://about.sourcegraph.com/handbook/engineering/core-application).
 
-### Tours
-
-- [About the Sourcegraph product](#)
-- [About the Sourcegraph project](#)
-
-### Service Deep Dives
+### Service Tours
 
 - [How frontend works](#)
 - [How repo-updater works](how-repo-updater-works.md)
 - [How gitserver works](how-gitserver-works.md)
 
-### Data Deep Dives
+### Data Tours
 
 - [What we store and why](#)
 - [How repository permissions work](#)
 - [How on-prem licensing works](#)
 - [How private code works](#)
 
-### Key Component Deep Dives
+### Component Tours
 
 - [How the GraphQL resolvers work](#)
 - [How the REST endpoints work](#)
