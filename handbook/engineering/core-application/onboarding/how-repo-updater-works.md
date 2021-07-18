@@ -6,6 +6,7 @@
     - [Production instances](#production-instances)
     - [General dependencies](#general-dependencies)
     - [Cloud-specific dependencies](#cloud-specific-dependencies)
+    - [Useful metrics](#useful-metrics)
 
 
 ## Purpose
@@ -34,4 +35,12 @@ Before repo-updater can begin accepting work, it needs to check that [frontend](
 
 ### Cloud-specific dependencies
 
-If repo-updater is running in [sourcegraph.com mode](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/shared/main.go?L188-231), it will verify that certain [external services](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/types/types.go?L452-466) (specifically GitHub and GitLab) are properly configured. This is a requirement for us to be able to [automatically add](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/frontend/backend/repos.go?L63-97) repositories from those external services when users browse to them.
+If repo-updater is running in [sourcegraph.com mode](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/shared/main.go?L188-231), it will verify that certain [code hosts](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/types/types.go?L452-466) (specifically GitHub and GitLab) are properly configured. This is a requirement for us to be able to [automatically add](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/frontend/backend/repos.go?L63-97) repositories from those code hosts when users browse to them.
+
+### Useful metrics
+
+We track a variety of metrics in repo-updater that you'll want to familiarize yourself with. For example:
+
+- [Repositories queued for update](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/metrics.go?L88-91)
+- [Errors encountered while updating](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/metrics.go?L63-66)
+- [Total number of code host calls](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/observability.go?L211-214)
