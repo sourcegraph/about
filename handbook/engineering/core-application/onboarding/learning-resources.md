@@ -6,6 +6,7 @@
   - [Go](#go)
   - [GraphQL](#graphql)
   - [Kubernetes](#kubernetes)
+  - [Postgres](#postgres)
   - [React](#react)
   - [TypeScript](#typescript)
 
@@ -30,6 +31,12 @@
 ## Kubernetes
 
 - [Learn Kubernetes in a Month of Lunches](https://smile.amazon.com/Learn-Kubernetes-Month-Lunches-Stoneman/dp/1617297984)
+- [Kubernetes in Action](https://www.amazon.com/Kubernetes-Action-Marko-Luksa/dp/1617293725)
+
+## Postgres
+
+- [Postgres: Up and Running](https://www.amazon.com/PostgreSQL-Running-Practical-Advanced-Database/dp/1491963417)
+- [The Art of PostgreSQL](https://theartofpostgresql.com/)
 
 ## React
 
