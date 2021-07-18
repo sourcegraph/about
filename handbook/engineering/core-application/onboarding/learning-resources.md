@@ -17,6 +17,8 @@
 ## General
 
 - [Designing Data-Intensive Applications](https://smile.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+- [Introduction to Information Retrieval](https://www.amazon.com/Introduction-Information-Retrieval-Christopher-Manning/dp/0521865719)
+- [Information Retrieval: Implementing and Evaluating Search Engines](https://www.amazon.com/Information-Retrieval-Implementing-Evaluating-Engines/dp/0262528878)
 
 ## Go
 
