@@ -1,6 +1,7 @@
 # Learning resources
 
 - [Learning resources](#learning-resources)
+  - [Authn/z](#authnz)
   - [Docker](#docker)
   - [General](#general)
   - [Go](#go)
@@ -9,6 +10,10 @@
   - [Postgres](#postgres)
   - [React](#react)
   - [TypeScript](#typescript)
+
+## Authn/z
+
+- [OAuth 2 in Action](https://www.amazon.com/OAuth-2-Action-Justin-Richer/dp/161729327X)
 
 ## Docker
 
