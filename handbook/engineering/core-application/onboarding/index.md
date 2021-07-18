@@ -8,7 +8,6 @@
   - [Learning Materials](#learning-materials)
     - [Service Tours](#service-tours)
     - [Data Tours](#data-tours)
-    - [Component Tours](#component-tours)
   - [Extras](#extras)
 
 ## Introduction
@@ -37,14 +36,6 @@ Please ensure you've familiarized yourself with the [General Onboarding](https:/
 - [How repository permissions work](#)
 - [How on-prem licensing works](#)
 - [How private code works](#)
-
-### Component Tours
-
-- [How the GraphQL resolvers work](#)
-- [How the REST endpoints work](#)
-- [How the debug endpoints work](#)
-- [How the internal/database package works](#)
-- [How the enterprise package works](#)
 
 ## Extras
 
