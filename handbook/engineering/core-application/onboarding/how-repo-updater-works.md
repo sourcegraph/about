@@ -3,18 +3,26 @@
   - [Purpose](#purpose)
     - [Overview](#overview)
   - [Miscellaneous](#miscellaneous)
+    - [Singleton nature](#singleton-nature)
     - [General dependencies](#general-dependencies)
     - [Cloud-specific dependencies](#cloud-specific-dependencies)
 
+
 ## Purpose
 
-TODO
+Sourcegraph mirrors repositories from code hosts. Code hosts may be SaaS products, such as GitHub or AWS CodeCommit, or local installations that are private to a customer's environment. The repo-updater service schedules repository synchronization activities using gitserver and any configured code hosts.
 
 ### Overview
 
-TODO
+A repo-updater instance exposes an [HTTP server](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/repoupdater/server.go?L70-80) as its primary interface. This interface allows clients to schedule code host, repository and repository permission synchronizations. Although the majority of Git operations are issued directly to gitserver, clones and fetches are routed through repo-updater to ensure that code host limits and other concerns are respected.
+
+The service's key data structure is a [priority queue](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/scheduler.go?L509-551) of repository updates. These updates are sorted using [simple heuristics](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/scheduler.go?L609-622) based on repository metadata. Additionally, queue positions can be modified in response to [explicit requests](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/scheduler.go?L368-377). Similar determinations are made for [permissions and authorization updates](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/enterprise/cmd/repo-updater/internal/authz/request_queue.go?L9-12).
 
 ## Miscellaneous
+
+### Singleton nature
+
+There is [only one instance](https://sourcegraph.com/github.com/sourcegraph/deploy-sourcegraph-dot-com@ec7effbc9491e3ee0c77c3d70ac3f2eb8cb34837/-/blob/base/repo-updater/repo-updater.Deployment.yaml?L17) of repo-updater running, by design. This avoids expensive coordination issues, and helps with respecting the aforementioned code host limits.
 
 ### General dependencies
 
