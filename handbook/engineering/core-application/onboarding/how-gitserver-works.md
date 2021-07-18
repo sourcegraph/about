@@ -40,7 +40,8 @@ There are two different command timeout checks in gitserver: the [short timeout]
 
 ### Concurrency control
 
-[Repositories can be locked](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/lock.go?L7-24) during sensitive operations to prevent concurrent activities from taking place, such as [two clones of the same repository](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L1279-1287) on the same instance.
+[
+[Repositories can be locked](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/lock.go?L7-24) during sensitive operations to prevent concurrent activities from taking place, such as [two clones of the same repository](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L1279-1287) on the same instance. Locks operate at the directory level on a single instance, since repositories are not replicated across instances today.
 
 ### Cleanup tasks
 
