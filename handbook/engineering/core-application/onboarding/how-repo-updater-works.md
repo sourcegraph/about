@@ -21,6 +21,8 @@ The service's key data structure is a [priority queue](https://sourcegraph.com/g
 
 As noted earlier, there are a variety of code hosts that Sourcegraph can integrate with. The [Source interface](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/sources.go?L82-90) abstracts these code host communication details. For example, [listing GitHub repositories](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/github.go?L204-224) is handled differently than [listing GitLab repositories](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/gitlab.go?L229-340).
 
+The update activities themselves are handled via [background worker jobs](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/sync_worker.go?L32-94). The [external_service_sync_jobs_with_next_sync_at view](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/sync_worker.go?L67) can be queried to get insight into the priority queue's activities and current depth.
+
 ## Miscellaneous
 
 ### Production instances
