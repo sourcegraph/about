@@ -3,6 +3,7 @@
 - [How gitserver works](#how-gitserver-works)
   - [Purpose](#purpose)
     - [Overview](#overview)
+      - [Scheduling repository updates](#scheduling-repository-updates)
   - [Miscellaneous](#miscellaneous)
     - [Production instances](#production-instances)
     - [Command timeouts](#command-timeouts)
@@ -20,7 +21,13 @@ Each gitserver instance exposes an [HTTP server](https://sourcegraph.com/github.
 
 Generic Git commands are processed using an [exec endpoint](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L769-979), which avoids exploding the HTTP server with every individual Git operation that's possible. Sourcegraph-specific commands and queries, such as [whether a repository is cloneable](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L579-623), are routed through purpose-built HTTP handlers.
 
-The service supports different version control systems, or _VCS_, that are compatible with Git. The implementation details of these systems are abstracted by a [VCSSyncer interface](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/vcs_syncer.go?L20-34). For example, the steps to clone a [Git repository]((https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/vcs_syncer.go?L70-85)) differ from those of a [Perforce repository](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/vcs_syncer.go?L227-254).
+The service supports different version control systems, or VCS, that are compatible with Git. The implementation details of these systems are abstracted by a [VCSSyncer interface](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/vcs_syncer.go?L20-34). For example, the steps to clone a [Git repository]((https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/vcs_syncer.go?L70-85)) differ from those of a [Perforce repository](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/vcs_syncer.go?L227-254).
+
+#### Scheduling repository updates
+
+One repository-related responsibility _not_ handled by gitserver is the scheduling of syncs and updates. To clone repositories, clients interact with repo-updater; that service provides a priority queue and schedulers that determine when clones and fetches will take place. Other Git commands are sent directly from clients to gitserver.
+
+See ["How repo-updater works: Overview"](how-repo-updater-works.md#overview) for more information.
 
 ## Miscellaneous
 
@@ -40,7 +47,6 @@ There are two different command timeout checks in gitserver: the [short timeout]
 
 ### Concurrency control
 
-[
 [Repositories can be locked](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/lock.go?L7-24) during sensitive operations to prevent concurrent activities from taking place, such as [two clones of the same repository](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/gitserver/server/server.go?L1279-1287) on the same instance. Locks operate at the directory level on a single instance, since repositories are not replicated across instances today.
 
 ### Cleanup tasks
