@@ -39,6 +39,6 @@ Please ensure you've familiarized yourself with the [General Onboarding](https:/
 
 ## Extras
 
+- [Learning resources](learning-resources.md)
 - [Devtools we love](devtools-we-love.md)
 - [Tips and tricks](tips-and-tricks.md)
-- [Learning resources](learning-resources.md)
