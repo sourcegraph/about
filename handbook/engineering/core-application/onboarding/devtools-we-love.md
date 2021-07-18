@@ -22,6 +22,8 @@
 
 ## Terminal
 
+- [fx](https://github.com/antonmedv/fx) - an interactive JSON processor
+- [hstr](https://github.com/dvorka/hstr) - a terminal history navigator
 - [httpie](https://httpie.io/) - a very user-friendly HTTP client
 - [jq](https://stedolan.github.io/jq/) - a flexible JSON processor
 - [prettyping](https://github.com/denilsonsa/prettyping) - a more graphical `ping` wrapper
