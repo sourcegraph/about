@@ -91,9 +91,9 @@ If you don't have a topic in mind, here's some inspiration.
 
 Below are some examples of the types of blog post that are usually popular (from our blog and beyond):
 
-- [An ex-Googler's guide to dev tools](../../../blog/ex-googler-guide-dev-tools.md) – one of our top posts of all time!
-- [How not to break a search engine or: What I learned about unglamorous engineering](../../../blog/how-not-to-break-a-search-engine-unglamorous-engineering.md)
-- [Optimizing a code intelligence commit graph](../../../blog/optimizing-a-code-intel-commit-graph.md)
+- [An ex-Googler's guide to dev tools](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools/) – one of our top posts of all time!
+- [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Optimizing a code intelligence commit graph](https://about.sourcegraph.com/blog/optimizing-a-code-intel-commit-graph/)
 - [Scaling monorepo maintenance](https://github.blog/2021-04-29-scaling-monorepo-maintenance/)
 - [When AWS Autoscale Doesn’t](https://segment.com/blog/when-aws-autoscale-doesn-t/)
 - [The story of one latency spike](https://blog.cloudflare.com/the-story-of-one-latency-spike/)
