@@ -6,7 +6,7 @@ publishDate: 2021-07-13T00:00-07:00
 tags: [blog]
 slug: the-future-of-code-search
 heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
-socialImage: /blog/announcing-sourcegraphs-series-d-round.jpg
+socialImage: https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round.jpg
 published: true
 ---
 

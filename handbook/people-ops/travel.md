@@ -90,7 +90,7 @@ Each teammate has one fully-paid trip per year to meet up with an individual or 
 For teammates with business-related travel requirements, trips will be fully paid pending manager/director approval in addition to above budgets. We would include the following types of meetups:
 
  - Customer Champion meetups 
- - Executive meetups (no approval required)
+ - Director to Executive level meetups (no approval required)
  - Marketing conferences 
  - Mandatory team trainings
  - Regional Sales Kickoff (Sales, Sales Ops, CE included)
@@ -138,7 +138,7 @@ We advise spending within reason for the location you are visiting, with a $300 
 -   We will reimburse only your own portion of the bill if you’re traveling with a non-teammate, so make sure to separate your bills or ask for separate receipts. 
 
 #### Trip Summary
-Please see below for a complete summary of spend limit, per diem, and hotel budget guidelines for each type of trip.
+Please see below for a complete summary of spend limit, per diem, and hotel budget guidelines for each type of trip. The best practice is to plan your trip in accordance with the per diem and hotel policy, in order to efficiently use the spending budget allowed. Costs incurred will only be reimbursed to spending limits provided (or the applicable guidance), so it is up to the individual/team how to best allocate that spending allowance for their trips.
 
 |Trip Category|Total Spend Limit|Per Diem?|Hotel Budget?|
 |---|---|---|---|
