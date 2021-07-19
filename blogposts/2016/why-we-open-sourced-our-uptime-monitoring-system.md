@@ -82,4 +82,4 @@ But availability alone is not enough. There are plenty of open source projects w
 *   [checkup.Storage](https://sourcegraph.com/github.com/sourcegraph/checkup@d7cd4db3ced36aea99e56f3ed13d877688bff20c/-/def/GoPackage/github.com/sourcegraph/checkup/-/Checkup/Storage) is the interface you implement to create a new type of data store (e.g., if you wanted to store the data in Google Object Store instead of S3 or local disk).
 *   [checkup.Checker](https://sourcegraph.com/github.com/sourcegraph/checkup@d7cd4db3ced36aea99e56f3ed13d877688bff20c/-/def/GoPackage/github.com/sourcegraph/checkup/-/Checker) is the interface you implement to create a new type of health check.
 
-We hope you’ll find Checkup useful as a tool and informative as a codebase. Please [send us feedback](https://twitter.com/srcgraph) and let us know how you’re using it!
+We hope you’ll find Checkup useful as a tool and informative as a codebase. Please [send us feedback](https://twitter.com/sourcegraph) and let us know how you’re using it!

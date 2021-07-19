@@ -85,7 +85,7 @@ Search scopes are now accessible on every page to more easily filter your search
 
 We’ve added search scope pages to more easily share search scopes among team members. Add the `id` and `description` fields to the `search.scopes` config option to get a page that automatically filters your search to the specified scope. We’ve also added public search scope pages for popular groups of repositories on Sourcegraph.com, including the [top 1000 Rust crates](https://sourcegraph.com/search/scope/crates), [100 most depended-upon npm packages](https://sourcegraph.com/search/scope/npm), [core Ethereum code](https://sourcegraph.com/search/scope/ethereum), and [Go code by the Go team](https://sourcegraph.com/search/scope/goteam).
 
-Have an idea for a search scope that would be useful to your community? Tweet us [@srcgraph](https://twitter.com/srcgraph).
+Have an idea for a search scope that would be useful to your community? Tweet us [@sourcegraph](https://twitter.com/sourcegraph).
 
 <div style="padding-bottom:73.4%;height:0;position:relative;overflow:hidden;">
 
