@@ -14,7 +14,7 @@ published: true
 
 All the cool kids are doing machine learning, but they're doing it in Python. Can we change that? Can we solve ML problems in Go? What are the libraries out there? Is it fast enough? Follow Francesc on a trip that will take us from machine learning and matrix multiplication, through TensorFlow and Python, to finish with Go and cgo on the GPU.
 
-Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@srcgraph](https://twitter.com/srcgraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
+Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@sourcegraph](https://twitter.com/sourcegraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
 
 ![Image uploaded from iOS](//images.contentful.com/le3mxztn6yoo/7MLYQeQ1TGcumqgUmuY2mY/18d5fdda571bf8f5b6c3e6cc8dcabb89/Image_uploaded_from_iOS.jpg)
 

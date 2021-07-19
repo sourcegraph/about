@@ -63,7 +63,7 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 Whether you use Sourcegraph 20 times per day or are new to it, we'd love to hear what you think!
 
--     Get in touch on Twitter ([@srcgraph](https://twitter.com/srcgraph)),
+-     Get in touch on Twitter ([@sourcegraph](https://twitter.com/sourcegraph)),
 -     File an issue on [GitHub](https://github.com/sourcegraph/sourcegraph/issues), or
 -     Email us at [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 

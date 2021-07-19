@@ -40,7 +40,7 @@ For more information on Sourcegraph Batch Changes, please visit: [https://about.
 ## About Sourcegraph
 Sourcegraph helps companies solve [Big Code problems](https://about.sourcegraph.com/press-release/big-code-survey-2020/) so developers can innovate faster. [Sourcegraph’s Universal Code Search](https://info.sourcegraph.com/universal-code-search-ebook-req?_ga=2.2548852.572487746.1614803471-1473741360.1614803471) is the only solution that empowers developers to easily search, understand, and automate across all of their code. Sourcegraph’s customers include many of the world’s leading companies, such as Amazon, PayPal, Uber, Lyft, Yelp, Atlassian, and Indeed. The all-remote company is backed by Sequoia Capital, Craft Ventures, Redpoint Ventures, and Goldcrest Capital.
 
-Visit [sourcegraph.com/jobs](https://about.sourcegraph.com/handbook/company/careers) for career opportunities, follow Sourcegraph on Twitter at [@srcgraph](https://twitter.com/srcgraph), or visit [about.sourcegraph.com](https://about.sourcegraph.com).
+Visit [sourcegraph.com/jobs](https://about.sourcegraph.com/handbook/company/careers) for career opportunities, follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph), or visit [about.sourcegraph.com](https://about.sourcegraph.com).
 
 ## Media contact
 Kelly Hall<br>

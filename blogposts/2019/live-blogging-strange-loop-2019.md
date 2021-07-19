@@ -56,7 +56,7 @@ To create and publish a liveblog post:
 1. A preview version of the site with your blogpost will be available in the checks section of the pull request for final confirmation.
 1. A Sourcegrapher will also review your pull request, and once approved and merged, will be online in less than 5 minutes.
 
-Once live, your post will be promoted on the [Strange Loop](https://twitter.com/strangeloop_stl) and [Sourcegraph](https://twitter.com/srcgraph) Twitter accounts, crediting you and raising your profile to our combined 20,000+ followers.
+Once live, your post will be promoted on the [Strange Loop](https://twitter.com/strangeloop_stl) and [Sourcegraph](https://twitter.com/sourcegraph) Twitter accounts, crediting you and raising your profile to our combined 20,000+ followers.
 
 ## To sign up for liveblogging
 

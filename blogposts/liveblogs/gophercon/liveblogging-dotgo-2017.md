@@ -16,4 +16,4 @@ We’re excited to be running the official liveblog for dotGo 2017 in Paris on M
 
 Some highlights from GopherCon 2017: 12 Gophers contributed liveblogs for 26 talks, including [gRPC in Production by Alan Shreve](/blog/grpc-in-production-alan-shreve) and [The New Era of Go Package Management by Sam Boyer](/go/the-new-era-of-go-package-management/).
 
-If you’re at dotGo, stop by and say hello! For those of you at home, follow the action on [Twitter](https://twitter.com/srcgraph) or follow the posts at [https://about.sourcegraph.com/go](/go).
+If you’re at dotGo, stop by and say hello! For those of you at home, follow the action on [Twitter](https://twitter.com/sourcegraph) or follow the posts at [https://about.sourcegraph.com/go](/go).
