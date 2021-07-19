@@ -1,8 +1,8 @@
 # Beta and experimental feature labels
 
-We use a hierarchy of feature labels to set expectations with our users and internally: `Experimental` << `Beta` << GA. 
+We use a hierarchy of feature labels to set expectations with our users and internally: `Experimental` ➡️ `Beta` ➡️ GA. 
 
-GA ("General Availability") has no in-product label and is the default user assumption for an unlabelled feature. 
+[GA ("General Availability")](https://www.productplan.com/glossary/general-availability/) has no in-product label and is the default user assumption for an unlabelled feature. 
 
 ## Why we use these labels:
 
@@ -58,4 +58,4 @@ Ask yourself:
 
 **Rarely**, sometimes we use a different label when a feature is in `Beta` in order to benefit from limiting initial rollout without invoking users' connotations with the word "Beta." 
 
-For example: a feature may be ready for GA in on a security and functional level, but we want to test the UX before entering GA. We don't want users to incorrectly assume the security isn't robust by attaching a `Beta` label, but we do need to communicate limited availability and possible UX polishing. Traditionally, we use the term `Early Access` for these cases. 
+For example: a feature may be ready for GA on a security and functional level, but we want to test the UX before entering GA. We don't want users to incorrectly assume the security isn't robust by attaching a `Beta` label, but we do need to communicate limited availability and possible UX polishing. Traditionally, we use the term `Early Access` for these cases. 
