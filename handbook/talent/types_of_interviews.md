@@ -73,8 +73,9 @@ All departments are likely to have some or all of the below universal interview 
 - Example questions: 
   -  Tell us about the best team you've ever been a part of.
   -  Tell us about a time when you had to put your team's interests above your own. 
+  -  Tell us how you collaborate with teammates in different offices/locations/time zones.
 
-## Team collaboration interview 
+## Team-collaboration interview 
 - Interviewer(s): people outside of your respective department who you would cross-collaborate with regularly.  
 - Duration: 30-45 minutes.
 - Details: during this stage of the interview process, you will meet with members of another team with whom you would partner regularly.  The goal of this interview is to understand how you communicate and collaborate with cross-functional partners within Sourcegraph. 
@@ -102,36 +103,27 @@ Read more about our values interview [here](https://about.sourcegraph.com/handbo
 In addition to the above interviews, some departments have department-specific interviews.
 
 ## Administrative 
-- Executive Business Partner working session scenario
+
+**Executive Business Partner **
+
+Working session scenario:
   - Interviewer(s): Kacie Jenkins, Katerina Nikolova, Gregg Stone, and Kelsey Nagel 
   - Duration: 60-minutes.
-  - Details: The goal of this working session is to give us all a sense of what it would be like to work together. Below is a hypothetical situation that we would like to play out during this 60-minute session.
-
-    You are new to the role (30 days) when Kacie and Gregg ask you to meet and discuss organizing an in-person event for       the sales/marketing teams. The idea behind this event is to build strong relationships among team members and align on     goals. 
-
-    Your objective in this meeting is to: 
-
-   1. Gather all the information that you need in order to be successful at planning and executing this event.
-   2. Provide recommendations, share potential ideas, and discuss solutions with Kacie and Gregg.
-
-    Our advice: 
-
-    - Don't go overboard on preparation or detail.
-    - Clever ideas are awesome and appreciated.
-    - We are also looking for your process/framework/principles.
-    - If you need to take notes, we usually use Google Docs!
-
-    Some background info: 
-
-    - Team org: [Sales team](https://about.sourcegraph.com/handbook/sales) and [Marketing team](https://about.sourcegraph.com/handbook/marketing)
-    - [Publicly referenceable customer logos](https://about.sourcegraph.com/customers/)
-    - Everything at [Sourcegraph](https://about.sourcegraph.com/) and our [handbook](https://about.sourcegraph.com/handbook) should be assumed to be accurate and up to date.
-
-    A few pointers: 
-
-    - Ask identifying questions about existing gaps on the team
-    - Be ready to identify immediate solutions
-    - Be prepared to have a dynamic conversation to uncover nuances about the teams you will be working with
+  - Details: The goal of this working session is to give us all a sense of what it would be like to work together. Here is a hypothetical situation that we would like to play out during this 60-minute session: you are new to the role (30-days in) when Kacie and Gregg ask you to meet and discuss organizing an in-person event for the sales/marketing teams. The idea behind this event is to build strong relationships among team members and align on goals. Your objective in this meeting is to: 
+  - 1. Gather all the information that you need in order to be successful at planning and executing this event.
+  - 2. Provide recommendations, share potential ideas, and discuss solutions with Kacie and Gregg.
+- A few pointers: 
+  - Ask identifying questions about existing gaps on the team
+  - Be ready to identify immediate solutions
+  - Be prepared to have a dynamic conversation to uncover nuances about the teams you will be working with
+  - Don't go overboard on preparation or detail.
+  - Clever ideas are awesome and appreciated.
+  - We are also looking for your process/framework/principles.
+  - If you need to take notes, we usually use Google Docs!
+- Some background info: 
+  - Team org: [Sales team](https://about.sourcegraph.com/handbook/sales) and [Marketing team](https://about.sourcegraph.com/handbook/marketing)
+  - [Publicly referenceable customer logos](https://about.sourcegraph.com/customers/)
+  - Everything at [Sourcegraph](https://about.sourcegraph.com/) and our [handbook](https://about.sourcegraph.com/handbook) should be assumed to be accurate and up to date.
 
 ## BizOps, Finance, Legal, TechOps
 - Coming soon
@@ -173,7 +165,6 @@ In addition to the above interviews, some departments have department-specific i
   - Interviewer(s): Product Designer and Engineering Manager. 
   - Duration: 30 mins
   - Details: In this interview, you will meet an Engineering Manager and Product Designer that you will be working with closely as well as a Product Designer. The goal of this interview is to understand how you collaborate with different teams, communicating and inspiring a shared Product vision across the organization. We will ask questions about how you have strategically organizing plans across multiple teams, solving and resolving any issues that have come up. We’re looking to see how you have created and nurtured relationships and trust, prioritizing and making decisions while getting buy-in from necessary stakeholders. This replaces the Peer interview for this role. 
- 
 
 **Product manager**
 
@@ -215,6 +206,8 @@ In addition to the above interviews, some departments have department-specific i
 
 
 ## Sales
+
+You can read more about our sales interview process [here](https://about.sourcegraph.com/handbook/sales/interviews). 
 
 **Sales Development Representative:**
 
