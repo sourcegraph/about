@@ -41,6 +41,7 @@ The customer health score combines high-level, aggregated metrics in order to un
 | Net Promoter Score| Used as a measure of sentiment toward the platform among a customer’s users|
 
 Additional Resources:
+
 - [Project overview](https://docs.google.com/spreadsheets/d/1D2CJoVdkbXsBwVjgNDziGXBanWBfVhoVs6_kDBRStfA/edit#gid=1229546656): Describes which metrics we view as indicative of customer health along with how scores are calculated, and provides space for ongoing feedback
 - [Dashboard](https://sourcegraph.looker.com/dashboards-next/179?Customer%20Engineer=&Account%20Executive=&Unique%20Server%20ID=&Region=): The customer health dashboard is the source of truth for health scores and is updated in real-time
 
