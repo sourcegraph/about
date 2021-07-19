@@ -74,8 +74,25 @@ Using BrightHire is optional for both our interviewers and our candidates. We wi
 
 - We encourage you to read about the [different types of interviews](https://about.sourcegraph.com/handbook/talent/types_of_interviews) a candidate can expect while going through the interview process. This page has a lot of information on the purpose of each interview stage, as well as sample questions you may be asked.
 
+### Individual Team Goals
+
+- [Company](https://about.sourcegraph.com/handbook/company/goals)
+- [People Ops](https://about.sourcegraph.com/handbook/people-ops#goals)
+- [Product](https://about.sourcegraph.com/handbook/product/goals)
+- Engineering
+   - [DevOps/Distribution](https://about.sourcegraph.com/handbook/engineering/distribution/goals)
+   - [Extensibility](https://about.sourcegraph.com/handbook/engineering/developer-insights/extensibility/goals)
+   - [Code Insights](https://about.sourcegraph.com/handbook/engineering/developer-insights/code-insights/goals)
+   - [Frontend Platform](https://about.sourcegraph.com/handbook/engineering/developer-insights/frontend-platform/goals)
+- Customer Support
+- Customer Engineering
+- Marketing
+- Sales
+- Talent
+- Operations
+
 ### Helpful links
-- We are a [transparant](https://about.sourcegraph.com/handbook/marketing/messaging) company and everything we do lives in our [Handbook](https://about.sourcegraph.com/handbook). We encourage you to read through it prior to your interview.
+- We are a [transparent](https://about.sourcegraph.com/handbook/marketing/messaging) company and everything we do lives in our [Handbook](https://about.sourcegraph.com/handbook). We encourage you to read through it prior to your interview.
 - Our [messaging and definitions](https://about.sourcegraph.com/handbook/marketing/messaging) should help you better understand what Sourcegraph does.
 - [Benefits and perks](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks). 
 - [Teammates bios](https://about.sourcegraph.com/handbook/company/team).
