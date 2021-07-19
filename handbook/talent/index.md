@@ -62,7 +62,8 @@ We are **hiring recruiters**!  View our open positions [here](https://boards.gre
 
 ## [Resources for Recruiters](https://about.sourcegraph.com/handbook/talent/resources_for_recruiters)
 
-- [Partnering with hiring managers](https://about.sourcegraph.com/handbook/talent/resources_for_recruiters)
+- Partnering with hiring managers
+   - [Slack kick off process](https://about.sourcegraph.com/handbook/talent/resources_for_recruiters)
 - Interviewing
    - [Recruiter screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#recruiter-screen)
 - [Interview training & best practices](https://about.sourcegraph.com/handbook/talent/interview_training)
