@@ -37,10 +37,9 @@ Teams track the work they are doing in [GitHub Projects](https://github.com/orgs
          - Note that other teams are not currently expected to have access to this, but future use of it or other tools is in discussion.
       - [Security Support Board](https://github.com/orgs/sourcegraph/projects/178)
    - Core application
-      - [Production testing of all authorization models](https://github.com/orgs/sourcegraph/projects/164)
-      - [Retro actions](https://github.com/orgs/sourcegraph/projects/162)
+      - Note: Core application is currently piloting [JIRA](https://www.atlassian.com/software/jira) for issue tracking. This experiment runs throughout Q2. Due to this pilot, others across the Sourcegraph organization may not have access. Please reach out to Ryphil@sourcegraph.com if you have core-app roadmap questions. If you have feedback or a feature request but do not have access to Jira, please add it to the "Backlog (CE Feature Requests/Feedback)" column. 
+      - [Planning board](https://sourcegraph.atlassian.net/secure/RapidBoard.jspa?projectKey=COREAPP&rapidView=5)
       - [Support](https://github.com/orgs/sourcegraph/projects/153)
-      - [Planning board](https://github.com/orgs/sourcegraph/projects/148)
    - Distribution
       - [Distribution backlog board](https://github.com/orgs/sourcegraph/projects/68)
       - [Find the latest Distribution sprint board](https://github.com/orgs/sourcegraph/projects?query=is%3Aopen+dist)
