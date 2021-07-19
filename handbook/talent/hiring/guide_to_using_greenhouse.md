@@ -41,6 +41,7 @@
 - [How to merge a candidate](https://support.greenhouse.io/hc/en-us/articles/115004506466-Merge-candidate-profiles).
 - How to [search candidates using boolean queries](https://support.greenhouse.io/hc/en-us/articles/202360199-Search-candidates-using-boolean-queries-).
 - [How to create an offer](https://support.greenhouse.io/hc/en-us/articles/200721744-Create-Offer).
+- [How to add your signature](https://support.greenhouse.io/hc/en-us/articles/203800669-How-do-I-set-up-or-edit-my-email-signature-).
 
 ## How to use Greenhouse as a Recruiting Coordinator / Scheduler
 
