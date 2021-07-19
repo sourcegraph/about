@@ -29,7 +29,7 @@ You can take part in the hackathon in a few ways:
 
 As with everything we do, [be customer driven](../../company/values.md##be-customer-driven). When choosing a topic, consider whether our core audience of developers would be interested in it. If you're a developer, would you click on this post if you saw it on Hacker News?
 
-- 
+Our [Editorial handbook also has some ideas and inspiration](editorial.md#what-to-write-about-for-the-sourcegraph-blog) to help you get started. 
 
 ### Submitting
 
@@ -37,12 +37,12 @@ Don't worry—you don't need to finish your submission on the day and we won't p
 
 - You will have until the end of the following week (2021-09-06) to submit your complete draft. 
 - Please have a peer review your draft before you submit it.
-- You can submit in a Google Doc or PR 
+- You can submit in a Google Doc or PR. Please @ mention Rebecca Dodd (@rebeccadee on GitHub) to make sure your submission is counted.  
 
 ### Publishing
 
 - We will review your submissions as soon as possible and may have feedback for you to address before publishing.
-- Depending on how many submissions we receive, there may be a delay before we can publish your posts. It's better for us to stagger publishing so we don't overwhelm our potential readers with too much at once. 
+- Depending on how many submissions we receive, there may be a delay before we publish your post. It's better for us to stagger publishing so we don't overwhelm our potential readers with too much at once. 
 - If your submission is time sensitive (for example, it relates to a product release or community event) please let us know when you submit. 
 
 ## Incentives and rewards
