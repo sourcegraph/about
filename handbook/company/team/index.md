@@ -775,6 +775,14 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [samson@sourcegraph.com](mailto:samson@sourcegraph.com),[@samson_goddy](https://twitter.com/Samson_Goddy),[LinkedIn](https://linkedin.com/in/samsongoddy)
 - Samson, a software developer who believes in creating something iconic. An open source advocate who has been sustaining projects with his diverse experiences. He maintains tools, desktops and likes contributing back to the large OSS ecosystem. Building communities is something he passionate about, and he currently runs Open Source Community Africa, a non-profit org that promotes and educates everything open source. He loves playing console games, mobile photography and eating jollof rice.
 
+## Fabiana Castellanos (she/her)
+
+- Project Coordinator, Brand
+- Oceanside, CA USA 🇺🇸
+- Github: fabicastp
+- [fabiana@sourcegraph.com](mailto:fabiana@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/fabicastp/)
+- Fabiana was born and raised in Venezuela🇻🇪 and moved to California 4 years ago with her husband, dog and parrot. She's a big fan of processes and organization, and you’ll often hear her say *I have a spreadsheet for that.* She’s had the pleasure of doing PM with creatives throughout her professional career. They are the yin to her yang, she says. She’s also very proud of her Venezuelan culture and loves inviting people over to her home to eat arepas. 
+
 ## Kendrick Morris (he/him)
 - Finance and Operations Analyst
 - San Francisco, CA USA 🇺🇸
@@ -859,7 +867,7 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Teammate Success Manager
 - Seattle, Washington, USA 🇺🇸
 - [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/)
-- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (professionally known as @sterlingandlola). In her spare time, Cassie enjoys spin classes, traveling to tropical locations, cooking Molly Baz recipes, and watching plant videos on YouTube. 
+- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (professionally known as @sterlingandlola). In her spare time, Cassie enjoys spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to garden. 
 
 ## Rebecca Rissinger (she/her)
 - Manager, Marketing Operations
@@ -1100,3 +1108,18 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [kelvin@sourcegraph.com](mailto:kelvin@sourcegraph.com)
 - [Name pronunciation](https://www.howtopronounce.com/kelvin)
 - Kelvin is a person who doesn't know how to describe himself. He often takes time in answering "How are you doing?".
+
+## Mariam Adedeji (She/Her)
+
+- Customer Support Engineer
+- Lagos, Nigeria 🇳🇬
+- GitHub: [rhiam](https://github.com/rhiam), [LinkedIn](https://www.linkedin.com/in/omobolanle-adedeji-0b845167)
+- [mariam@sourcegraph.com](mailto:mariam@sourcegraph.com)
+- Mariam is a confident female engineer from Nigeria. Previously worked as a software engineer prior to joining Sourcegraph. She enjoys coding, watching movies, travelling, making new friends, and organising events.
+
+## Alex Isken (He/Him)
+
+- Product Marketing Manager
+- Milwaukee, WI, USA 🇺🇸
+- [alex.isken@sourcegraph.com](mailto:alex.isken@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/alexisken/), [GitHub](https://github.com/iskyOS)
+- Alex is a proud Milwaukeean. Prior to Sourcegraph, Alex worked in various technology roles at Nielsen and was also a PMM at Datadog in NYC (but he's very happy to be back in the midwest). Alex loves board games, disc golf, and microbreweries, and he has an undying passion for Marquette basketball.

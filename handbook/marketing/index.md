@@ -12,7 +12,7 @@
     - [Product marketing roadmap](https://docs.google.com/spreadsheets/d/1268CYG4arbGT6F0Eyy4e-EY5CQgtopcS9OdAenkjtzY/edit#gid=0)
     - [Release post process](release_post_process.md)
 - [Content Marketing](content/index.md)
-    - [Editorial](content/editorial.md) 
+    - [Editorial](content/editorial.md)
     - [Creating blog posts](content/creating_blog_posts.md)
     - [Editing blog posts](content/creating_blog_posts.md#editing-blog-posts)
 
@@ -24,6 +24,7 @@
 - [Developer Education](education.md)
 - Community Relations
     - [Public projects using Sourcegraph](public_projects_using_sourcegraph.md)
+    - [Adding a community landing page](oss_community_pages.md)
 
 - [Brand](brand/index.md)
     - [Building a Strong Brand](brand/building_a_strong_brand.md)
@@ -57,14 +58,18 @@
         - Rebecca Rissinger, Manager, Marketing Operations
         - Jake Sorensen, Programs Lead, Demand Gen Campaigns
     - Tommy Pesavento, Director of Brand Design
-        - Fabiana Castellanos, Project Coordinator, Brand
-        - We are building a brand team
+        - [Fabiana Castellanos](https://about.sourcegraph.com/handbook/company/team#fabiana-castellanos-she-her), Project Coordinator, Brand
+        - [Sruti Dhulipala](https://www.linkedin.com/in/sruti-dhulipala/), Senior Manager, Global Brand Strategy
+        - [Mustafa (Moose) Ulker](https://www.linkedin.com/in/mooooose/), Senior Copywriter
+        - [Kristen Sundberg](https://www.linkedin.com/in/kristensundberg/), Senior Manager, Social Media
+        - Mate Gyorffy, Web Developer (contractor)
+        - *We are building a brand team*
     - [Samson Goddy](../company/team/index.md#samson-goddy-he-him), Director of Community
         - [Vanesa Ortiz](../company/team/index.md#vanesa-ortiz-she-her), Content Engineer
         - [Prosper Otemuyiwa](../company/team/index.md#prosper-otemuyiwa-he-him), Staff Developer Evangelist
         - We will be hiring developer advocates
-    -  Amie Rotherham, Director of Global Communications 
-    
+    -  Amie Rotherham, Director of Global Communications
+
 
 
 
