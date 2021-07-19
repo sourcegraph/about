@@ -150,5 +150,5 @@ nnoremap <silent> <leader>r :call LanguageClient_contextMenu()<CR>
 
 There you go! You now have the basic features you know and love from Sourcegraph code intelligence inside Vim or Neovim.
 
-Got any other Vim plugins and integrations I should know about? Let me know by tweeting at [ij_snow](https://twitter.com/ij_snow) and [@srcgraph](https://twitter.com/srcgraph)!
+Got any other Vim plugins and integrations I should know about? Let me know by tweeting at [ij_snow](https://twitter.com/ij_snow) and [@sourcegraph](https://twitter.com/sourcegraph)!
 

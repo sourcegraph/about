@@ -34,7 +34,7 @@ As a liveblogger for a talk, you'll get your own dedicated seat, and the task of
 
 ## To apply
 
-Contact me at [ryan@sourcegraph.com](mailto:ryan@sourcegraph.com) or tweet at [@srcgraph](https://twitter.com/srcgraph) and [@ryan_blunden](https://twitter.com/ryan_blunden), whatever is easiest.
+Contact me at [ryan@sourcegraph.com](mailto:ryan@sourcegraph.com) or tweet at [@sourcegraph](https://twitter.com/sourcegraph) and [@ryan_blunden](https://twitter.com/ryan_blunden), whatever is easiest.
 
 If you’re selected, I'll get in touch and give you instructions for how to make your post(s) as awesome as possible.
 
@@ -75,4 +75,4 @@ If you’re selected, I'll get in touch and give you instructions for how to mak
 ## See you at GopherCon or online
 If you’re at GopherCon, I'd love to meet you and if you've got ideas for what we at Sourcegraph should be working on next to make your life as a developer better, then we'd love to hear it!
 
-For those of you at home, [follow us on Twitter](https://twitter.com/srcgraph) or follow the posts at [https://about.sourcegraph.com/go](https://about.sourcegraph.com/go).
+For those of you at home, [follow us on Twitter](https://twitter.com/sourcegraph) or follow the posts at [https://about.sourcegraph.com/go](https://about.sourcegraph.com/go).
