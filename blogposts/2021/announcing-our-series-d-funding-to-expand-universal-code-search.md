@@ -6,7 +6,7 @@ publishDate: 2021-07-13T00:00-07:00
 tags: [blog, product, batch changes]
 slug: announcing-sourcegraphs-series-d-round
 heroImage: /blog/announcing-sourcegraphs-series-d-round.jpg
-socialImage: /blog/announcing-sourcegraphs-series-d-round.jpg
+socialImage: https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round.jpg
 published: true
 ---
 
