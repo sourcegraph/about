@@ -29,3 +29,9 @@ _In addition_, we are allowing changesets to be published and unpublished direct
 * We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcuts to using the fitlers in queries. 
 
 <!--TODO a small GIF a user clicking a repo: filter and using autocomplete to resolve github.com\/sourcegraph/sourcgraph$ -->
+
+### Code Insights Dashboards 
+
+<!--TODO a small GIF of adding code insights to a dashboard and viewing that dashboard -->
+
+You can now add your code insights to individual dashboard pages, in order to group and share a contextual subest of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](TODO_ADD_DOCS_LINK). 
