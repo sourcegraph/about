@@ -26,10 +26,7 @@ We like to take the time to celebrate big milestones for teammates who have hit 
 
 	 - [ ] Immediate team members
       
-	 - [ ] Anyone who teammate regularly works with
-
--   Teammates to [donate](https://about.sourcegraph.com/handbook/people-ops/donations) $100 USD to a 501c(3) organization of their choice. *(This tax code classification is typically listed on a non-profit organization’s webpage.)* Sourcegraph will double the amount and donate $200 USD in total to the organization. If you need any help finding an organization, reach out to *Cassie Melani*!
-    
+	 - [ ] Anyone who teammate regularly works with    
 
   
   
