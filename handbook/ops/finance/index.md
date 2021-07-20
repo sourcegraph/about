@@ -54,7 +54,8 @@ A fiscal year is a one-year period that corporations like Sourcegraph use for ac
 
 ### Sources of truth
 
-- Financial statements
+- [Financial Statements](https://go.xero.com/Dashboard/)
+- [Mosaic](https://app.mosaic.tech/home)
 - Metrics
 	- Quarterly and monthly [IARR](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=2006715807)
 	- [ARR](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=1460993554)
