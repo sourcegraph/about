@@ -22,7 +22,7 @@ This workflow is great for reproducibility and having a completely CLI-based wor
 
 _In addition_, we are allowing changesets to be published and unpublished directly from the GUI, to make the workflow more approachable to new users. Simply omit the `published` field in the specs, and the GUI will become the source of truth for publishing changesets.
 
-<!--TODO a small GIF showing a user publishing specs from the GUI (select a few changesets, click the publish bulk action) -->
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-from-gui.gif" alt="Publish changesets from GUI demo" />
 
 ### New code search reference
 
