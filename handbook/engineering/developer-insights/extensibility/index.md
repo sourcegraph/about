@@ -138,7 +138,7 @@ The team follow's the [default code review guidelines](https://docs.sourcegraph.
 
 #### Cross-functional reviews
 
-Engineers will often need reviews from teammates from other functions. For example, a pull request can benefit from visual review from a designer. In such cases, the author should be sure to tag the requested cross-functional reviewer(s) in their PR description, along with what exactly they need reviewed and when they need it to be reviewed by (e.g. "@Joelkw can you review the banner copy by the end of the week?").
+Engineers will often need reviews from teammates from other functions. For example, a pull request can benefit from visual review from a designer. In such cases, the author should be sure to request the PR review as well as tag the requested cross-functional reviewer(s) in their PR description, along with what exactly they need reviewed and when they need it to be reviewed by (e.g. "@Joelkw can you review the banner copy by the end of the week?").
 
 ### Feature freeze
 
