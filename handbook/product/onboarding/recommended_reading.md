@@ -7,6 +7,7 @@ Here are some books that folks on the team have read and recommend. If you haven
 - [Inspired: How to Create Tech Products Customers Love](https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers-dp-1119387507/dp/1119387507/)
 - [Empowered: Ordinary People, Extraordinary Products](https://www.amazon.com/EMPOWERED-Ordinary-Extraordinary-Products-Silicon/dp/111969129X/)
 - [Building Products for the Enterprise](https://www.amazon.com/Building-Products-Enterprise-Management-Software/dp/1492024783)
+
 ## Design
 
 - [Designing Design](https://www.lars-mueller-publishers.com/designing-design) - Note: This may take some searching to find at a reasonable price, but is certainly worth the search.
