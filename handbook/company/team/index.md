@@ -1123,3 +1123,11 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Milwaukee, WI, USA 🇺🇸
 - [alex.isken@sourcegraph.com](mailto:alex.isken@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/alexisken/), [GitHub](https://github.com/iskyOS)
 - Alex is a proud Milwaukeean. Prior to Sourcegraph, Alex worked in various technology roles at Nielsen and was also a PMM at Datadog in NYC (but he's very happy to be back in the midwest). Alex loves board games, disc golf, and microbreweries, and he has an undying passion for Marquette basketball.
+
+## Marija Petrovic (She/Her)
+
+- Team Lead, Senior Sales Recruiter
+- Naples, FL USA 🇺🇸
+- GitHub: [marija.petrovic214](https://github.com/marija.petrovic214), [LinkedIn](https://www.linkedin.com/in/marija-petrovic-b49b9b38/)
+- [marija.petrovic@sourcegraph.com](mailto:marija.petrovic@sourcegraph.com)
+- Marija, pronounced "Maria", is a Serbian-American living in sunny Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida (Go Gators!). Outside of work, she enjoys spending time with family & her son Luka, traveling, tennis, skiing, yoga, painting, and investing in anything self-care/self-improvement-oriented! 
