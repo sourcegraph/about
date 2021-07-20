@@ -1128,5 +1128,5 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 
 - Full Stack Engineer
 - Stamford, CT, USA 🇺🇸
-- katy@sourcegraph.com](mailto:katy@sourcegraph.com), [GitHub](https://github.com/katjuell), [katjuell.site](https://katjuell.site), [@katjuell](https://twitter.com/katjuell), [LinkedIn](https://www.linkedin.com/in/kathleen-juell/)
+- [katy@sourcegraph.com](mailto:katy@sourcegraph.com), [GitHub](https://github.com/katjuell), [katjuell.site](https://katjuell.site), [@katjuell](https://twitter.com/katjuell), [LinkedIn](https://www.linkedin.com/in/kathleen-juell/)
 - Originally from Maine, Katy has been living in the greater NYC area for many years, with a brief stint in Philly. Most recently, she worked as a Full Stack Developer on the Digital Experience team at DigitalOcean. She also holds a PhD in early American literature, and thinks often about the analogies between literary analysis and writing and reading code — since both are, at some level, recognizing patterns in language and striving for eloquent (or at least reasonable!) expression. In addition to language-y things, she enjoys cooking, yoga, hanging with friends, and trying to amuse her feisty calico cat.
