@@ -68,6 +68,6 @@ with Go support, and TypeScript and JavaScript in beta
 
 ![1*H8CMqa0AW96Qo3QYJHzV0Q](//images.contentful.com/le3mxztn6yoo/jRPMuudUFqik84G6UKk48/d752b4a5ac3fafbc5bc7132fe6a3e8c5/1_H8CMqa0AW96Qo3QYJHzV0Q.png)
 
-P.P.S. Each stanza of this post was a haiku. If you think there's something poetic about good code and good code reviews, [follow us on Twitter](https://twitter.com/srcgraph) or check out [Sourcegraph](https://sourcegraph.com).
+P.P.S. Each stanza of this post was a haiku. If you think there's something poetic about good code and good code reviews, [follow us on Twitter](https://twitter.com/sourcegraph) or check out [Sourcegraph](https://sourcegraph.com).
 
 [![](https://cdn-images-1.medium.com/max/800/1*VUuHfrjTo93o7TreumQaRA.png)](https://docs.sourcegraph.com/integration/browser_extension?hl=en)

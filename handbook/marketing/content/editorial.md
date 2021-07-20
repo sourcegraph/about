@@ -56,11 +56,21 @@ Please follow these guidelines when contributing to Sourcegraph’s blog.
 
 First, decide how you want to contribute:
 
-1. If you have an original article idea that you want to write, start by submitting your pitch via this [Asana form](https://form.asana.com/?k=gU7tdLoh3TyyrSa-w0-pCQ&d=7195383522959) so we can triage appropriately.
-1. If you have an idea to submit but you don't want to write it, you can still submit the idea via the Asana form, just make a note that you are not proposing to write the post yourself.
+#### Write the draft yourself
 
-The editorial team will triage pitches weekly on Monday. Once you have submitted a pitch:
+If you have an original article idea that you want to write, start by submitting your pitch via this [Asana form](https://form.asana.com/?k=gU7tdLoh3TyyrSa-w0-pCQ&d=7195383522959) so we can triage appropriately.
 
+#### We interview you
+
+If you are short on time or less comfortable writing, a member of the content team can interview you and use the transcript to start an outline for you to work from. Please mention if you want to go this route when you fill out your [form](https://form.asana.com/?k=gU7tdLoh3TyyrSa-w0-pCQ&d=7195383522959). 
+
+#### Just submit an idea
+
+If you have an idea to submit but you don't want to write it, you can still submit the idea via the [Asana form](https://form.asana.com/?k=gU7tdLoh3TyyrSa-w0-pCQ&d=7195383522959), just make a note that you are not proposing to write the post yourself.
+
+#### Once you have submitted a pitch
+
+1. The Editorial team triages pitches weekly.
 1. An editor will be assigned and will give you feedback on your idea. At this point we may suggest an alternative channel or content format for your idea (guide/case study/social post/etc.)
 1. If the pitch is approved by you and your editor, next we'll decide on a timeline together.
 1. First draft is submitted by the first draft deadline.
@@ -69,4 +79,39 @@ The editorial team will triage pitches weekly on Monday. Once you have submitted
 1. The editor does a final copyedit.
 1. Once the final draft is approved by you and your editor, it will be staged and/or scheduled for release.
 
-**What happens if I want to write something on my own, on my own time for Sourcegraph’s blog?** Once you’re ready for an editor’s review, submit your draft in place of a pitch and follow the article submission guidelines. An editor will reach out to you with feedback, requested changes, and publishing options. Please note that immediate publishing may not be available. If you would like to publish on your own schedule, [Medium](https://medium.com/) is a great option for self-publishing.
+#### What happens if I want to write something on my own, on my own time for Sourcegraph’s blog?
+
+Once you’re ready for an editor’s review, submit your draft in place of a pitch and follow the article submission guidelines. An editor will reach out to you with feedback, requested changes, and publishing options. Please note that immediate publishing may not be available. If you would like to publish on your own schedule, [Medium](https://medium.com/) is a great option for self-publishing.
+
+### What to write about for the Sourcegraph blog
+
+If you don't have a topic in mind, here's some inspiration. 
+
+#### Examples of great engineering posts
+
+Below are some examples of the types of blog post that are usually popular (from our blog and beyond):
+
+- [An ex-Googler's guide to dev tools](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools/) – one of our top posts of all time!
+- [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Optimizing a code intelligence commit graph](https://about.sourcegraph.com/blog/optimizing-a-code-intel-commit-graph/)
+- [Scaling monorepo maintenance](https://github.blog/2021-04-29-scaling-monorepo-maintenance/)
+- [When AWS Autoscale Doesn’t](https://segment.com/blog/when-aws-autoscale-doesn-t/)
+- [The story of one latency spike](https://blog.cloudflare.com/the-story-of-one-latency-spike/)
+
+#### Brainstorm board
+
+There are a lot of ideas on our [Miro board](https://miro.com/app/board/o9J_l9gAUM4=/). Feel free to use it for inspiration or let us know if you'd like to write about one of the topics!
+
+#### Themes
+
+Dan Luu summarized some [common themes from his own blog](http://danluu.com/programming-blogs/) which could help spark some ideas for you too:
+
+- [This thing that's often considered easy is harder than you might think](http://danluu.com/file-consistency/)
+- [This thing that's often considered hard is easier than you might think](http://danluu.com/edit-binary/)
+- [This obvious fact is not obvious at all](http://danluu.com/dunning-kruger/)
+- [Humans are human](http://danluu.com/postmortem-lessons/): humans make mistakes, [and systems must be designed to account for that](http://danluu.com/google-sre-book/)
+- [Computers will have faults](http://danluu.com/postmortem-lessons/), [and systems must be designed to account for that](http://danluu.com/limplock/)
+- [Is it just me](http://danluu.com/broken-builds/), [or is stuff really broken?](http://danluu.com/everything-is-broken/)
+
+
+

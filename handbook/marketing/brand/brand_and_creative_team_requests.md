@@ -13,26 +13,26 @@
 1. Send a request through one of our Request Forms: 
     * [Social Media Requests](https://form.asana.com?k=iaHgTYAJiueNE5zlGxalqw&d=7195383522959) - *do you want to send a tweet? Post a photo on Instagram? This is your form!*
     * [Swag Requests](https://form.asana.com?k=ysBKSzSA2xjRifqqEvFbJQ&d=7195383522959) - *send a branded gift to a member of our community!* Make sure to check out [Gifting Guidelines](https://about.sourcegraph.com/handbook/marketing/brand/gifting_guidelines)
-    * Any other [Creative Requests](https://form.asana.com?k=Zv_DWGDitZCYr0FXY3bvHg&d=7195383522959) - *see our [capabilities](https://about.sourcegraph.com/handbook/marketing/brand/brand_and_creative_team_requests#capabilities) below*
+    * Any other [Creative Requests](https://form.asana.com?k=Zv_DWGDitZCYr0FXY3bvHg&d=7195383522959) - *see our [capabilities](#our-capabilities) below*
 2. We receive the request and reply with one of three most likely options:
 	1. We’re able to support the work directly and will schedule a kickoff or request more information;
 	1. We’re able to support indirectly and will help source and manage a vendor;
 	1. We’re unable to support right now and will connect you directly with a trusted vendor, contractor, or other resource (such as a template).
 3. If we’re able to support your request directly or indirectly, we send you an Asana Form with a few fill-in-the-blank questions that automatically generates a Project Card for us.
-4. If we aren’t able to support, we will facilitate an introduction to a trusted partner from our [Preferred Vendor Network (PVN)](https://about.sourcegraph.com/handbook/marketing/brand/the_network#the-network) of creative partners.
+4. If we aren’t able to support, we will facilitate an introduction to a trusted partner from our [Preferred Vendor Network](https://about.sourcegraph.com/handbook/marketing/brand/production_process#sourcegraph-preferred-vendor-network) of creative partners.
 5. We meet with you and your team to gather more info for a Creative Brief, which will include the background, goals, timelines, budget, and other important resources.
 
 *Have questions about the form or need help filling it out? Email us at brand@sourcegraph.com and we'll be happy to help.*
 
 ## Our Capabilities
 
-*Branding*
+### Branding
 - Brand management, brand identity design, logos, lockups, colors, etc.
 - Brand strategy, naming, positioning, packaging, narrative and market research
 See [Naming Process Guide](naming_process_for_products_features_and_programs.md) for more information on naming features, products, programs and initiatives
 - [Maintain and update Sourcegraph brand guidelines](brand_guidelines.md) and brand assets
 
-*Design*
+### Design
 - Graphic design for print and digital media
 - Illustrations, iconography, infographics
 - Motion design and animation
@@ -40,20 +40,20 @@ See [Naming Process Guide](naming_process_for_products_features_and_programs.md)
 - Print design and production, marketing collateral, swag
 - Swag procurement, design, and fulfillment
 
-*Photo/Video Production*
+### Photo/Video Production
 - Video production, shooting (location and studio), storyboarding, proj. management
 - Sound design, audio production, mixing, sampling, mastering
 - VR/AR, 360º films, CGI, motion graphics, and animation
 - Photography, editing, retouching, and archiving
 
-*Website/Digital Experience*
+### Website/Digital Experience
 - Maintain and update website, incl. integrations, testing and SEO
 - Website design, page design, campaign and landing pages, microsites
 - Interactive design, incl. data visualization and infographics
 - Email design and development
 - Digital marketing stack and B guidance, strategy, and execution
 
-*Events*
+### Events
 - Event planning, strategy and design
 - Booth, stage or environmental design and production
 - Swag design and fulfillment planning. See our [Gifting Guidelines](gifting_guidelines.md)
@@ -68,7 +68,7 @@ This tier precludes the need for a brand-new creative concept, with strategy, me
 
 Examples: a video production schedule could take 4 weeks to 4 months depending on the story and characters involved, travel or travel restrictions, scheduling; a new narrative for a business unit or at the company level can potentially be completed in a 90-day sprint depending on availability of stakeholder and user interviews; a major website redesign or migration could take 6-9 months based on research, planning, architecture, development, testing, and so on). 
 
-If the request for a Tier 1 designated project comes in with several complex elements, some of the desired outcomes may be scoped into a Phase 2, or perhaps pared down, and some work will be assigned to an agency partner within our [Preferred Vendor Network](https://about.sourcegraph.com/handbook/marketing/brand/the_network#the-network) to scale our support capability.
+If the request for a Tier 1 designated project comes in with several complex elements, some of the desired outcomes may be scoped into a Phase 2, or perhaps pared down, and some work will be assigned to an agency partner within our [Preferred Vendor Network](https://about.sourcegraph.com/handbook/marketing/brand/production_process#sourcegraph-preferred-vendor-network) to scale our support capability.
 
 If the latter happens, we will coordinate with the vendor and help manage the project as if they are an extension of our team, including them in recurring meetings, adding to Slack channels, and translating feedback from team members while ensuring adherence to Sourcegraph brand standards. These projects will begin with an exploratory meeting between the requestor(s) and the Director of Brand Design and Creative, along with the appropriate stakeholders from Marketing or cross-functional teams. Information gathered during this meeting will be used to create a first draft of the creative brief and circulate with the rest of the team for commenting before commencing work.
 
@@ -78,7 +78,7 @@ If the deadline, budget, and request are in alignment with resources, we will as
 
 May include one or more individual assets that require extensive collaboration across team(s) and/or various vendors/contributors. Examples would be complex, interactive creative assets that may require design, animation, production, copywriting and/or multimedia; mini campaigns for an event or announcement; individual short videos (not part of larger campaigns) such as for HR, internal, or lighter-visibility announcements; some event planning and/or signage design; multi-page booklets or brochures; complex but straightforward presentation deck builds from scratch; brand design extensions; and so on. May incorporate use of existing creative, templates, components, or design systems.
 
-For these projects, it is advised to sync with the Director of Brand Design and Creative to allocate resourcing and help ensure brand adherence. The Brand team will work with you to create a brief and initiate a project plan, and support directly via our in-house team or with the help of our [Creative Network](https://about.sourcegraph.com/handbook/marketing/brand/the_network#the-network). If the project also requires [Naming](https://about.sourcegraph.com/handbook/marketing/brand/naming_process_for_products_features_and_programs), that could add 1-2 weeks at a minimum even if no legal review is required due to trademarking.
+For these projects, it is advised to sync with the Director of Brand Design and Creative to allocate resourcing and help ensure brand adherence. The Brand team will work with you to create a brief and initiate a project plan, and support directly via our in-house team or with the help of our [Creative Network](https://about.sourcegraph.com/handbook/marketing/brand/production_process#sourcegraph-preferred-vendor-network). If the project also requires [Naming](https://about.sourcegraph.com/handbook/marketing/brand/naming_process_for_products_features_and_programs), that could add 1-2 weeks at a minimum even if no legal review is required due to trademarking.
 
 ### Tier 3 – Templated/formulaic work, or testing revisions to an existing asset or campaign
 
@@ -100,7 +100,3 @@ This includes design work that can be done by the individual, such as business c
 - [Gifting guidelines](gifting_guidelines.md)  
 - [Creative Brief template](https://docs.google.com/document/d/1iCCzdXtR8AkO2ehNS-zaDM-zgy337mYlQIvsF4cOssA/edit) (.GDOC)
 - [Master Slides Template](https://docs.google.com/presentation/d/18ovKYtoPhYV93rITNXEKZ2z5jlT9PSuXeJV3a8XlWuc/edit#slide=id.gd3ef0c1bfc_0_105) (.GSLIDES)
-
-Delete:
-- [Project Tiers](project_tiers.md)  
-- [Creative Brief template](creative_brief_template.md)  
