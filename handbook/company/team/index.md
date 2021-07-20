@@ -1130,3 +1130,11 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Stamford, CT, USA 🇺🇸
 - [katy@sourcegraph.com](mailto:katy@sourcegraph.com), [GitHub](https://github.com/katjuell), [katjuell.site](https://katjuell.site), [@katjuell](https://twitter.com/katjuell), [LinkedIn](https://www.linkedin.com/in/kathleen-juell/)
 - Originally from Maine, Katy has been living in the greater NYC area for many years, with a brief stint in Philly. Most recently, she worked as a Full Stack Developer on the Digital Experience team at DigitalOcean. She also holds a PhD in early American literature, and thinks often about the analogies between literary analysis and writing and reading code — since both are, at some level, recognizing patterns in language and striving for eloquent (or at least reasonable!) expression. In addition to language-y things, she enjoys cooking, yoga, hanging with friends, and trying to amuse her feisty calico cat.
+
+## Bill Caplan (He/Him)
+
+- Senior Customer Engineer
+- Raleigh, NC USA 🇺🇸
+- Github: [billCaplan](https://github.com/billCaplan)
+- [bill.caplan@sourcegraph.com](mailto:bill.caplan@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/caplanbill/)
+- Bill lives in Raleigh, NC with his wife Kristen and their son Grayson.  After growing up in Pittsburgh and spending time at Ohio State (Go Bucks!), he spend seven years in San Francisco, working to help customers better understand and utilize the software that they buy.  He recently moved back to the East Coast, now calling Raleigh home.  In his free time he enjoys watching or playing sports (football, racing, hockey) and trying to become a backyard pizza chef.
