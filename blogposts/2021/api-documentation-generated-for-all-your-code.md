@@ -6,14 +6,14 @@ authorUrl:
 publishDate: 2021-07-21T10:00-07:00
 tags: [blog, code, search, software, engineering, testing]
 slug: api-documentation-for-all-your-code
-heroImage: https://sourcegraphstatic.com/blog/api-docs/api-docs.png
-socialImage: https://sourcegraphstatic.com/blog/api-docs/api-docs.png 
+heroImage: https://sourcegraphstatic.com/blog/api-docs/sourcegraph-api-docs.png
+socialImage: https://sourcegraphstatic.com/blog/api-docs/sourcegraph-api-docs.png
 published: true
 ---
 
 At Sourcegraph, we have a small team working hard on a new experimental feature: API docs.
 
-In order to build awesome code search we've built a global graph of code that has a deep, semantic understanding of the underlying code - which we represent as LSIF code intelligence data. Using Sourcegraph's [LSIF code intelligence data](https://lsif.dev), we can analyze your code and generate API documentation for all of it. We've started with Go code and intend to expand to more languages as we develop this feature. 
+In order to build awesome code search we've built a global graph of code that has a deep, semantic understanding of the underlying code—which we represent as [LSIF code intelligence data](https://lsif.dev). Using Sourcegraph's LSIF code intelligence data, we can analyze your code and generate API documentation for all of it. We've started with Go code and intend to expand to more languages as we develop this feature. 
 
 ![API Docs](https://sourcegraphstatic.com/blog/api-docs/api-docs.png)
 
@@ -65,13 +65,13 @@ Due to API docs being built on code intelligence data, it understands exactly wh
 
 ### A deep understanding of code
 
-We're paying attention to the small details, and really tailoring API docs to each language. We want an experience that makes sense for Go first, because here at Sourcegraph we use primarily Go and TypeScript and want to ensure we build an experience Go developers love, then we'll expand to more languages and build an experience that makes sense in the context of other languages - a tailored experience for each.
+We're paying attention to the small details, and really tailoring API docs to each language. We want an experience that makes sense for Go first, because here at Sourcegraph we use primarily Go and TypeScript and want to ensure we build an experience Go developers love. Then we'll expand to more languages and build an experience that makes sense in the context of other languages—a tailored experience for each.
 
 One way we've enabled this is by allowing LSIF language indexers to emit data in the way they see fit. Sourcegraph merely renders it, indexes it, and adds a nice navigation experience. For example, the Go LSIF indexer even chooses to display URL hashes in a way that makes sense specifically for Go, with a `Receiver.Method` format:
 
 ![URL hash display for Go](https://sourcegraphstatic.com/blog/api-docs/url-hash-displays.gif)
 
-In the near future, we'll enable you to search and filter based on symbol types as well. "just show me variables", "just private and deprecated functions", etc. based on the deep understanding of the code we've built:
+In the near future, we'll enable you to search and filter based on symbol types as well: "just show me variables", "just private and deprecated functions", etc. based on the deep understanding of the code we've built.
 
 ![Display symbol types](https://sourcegraphstatic.com/blog/api-docs/symbol-types.gif)
 
