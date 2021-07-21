@@ -38,11 +38,7 @@ Today, it's still in its very early stages—and only a few months into developm
 
 Want to try it out on your own Go repositories? Tweet [@sourcegraph](https://twitter.com/sourcegraph) with your GitHub repository name and we'll set it up for you, or [follow our documentation]([https://docs.sourcegraph.com/code_intelligence/apidocs](https://docs.sourcegraph.com/code_intelligence/apidocs)).
 
-## Improving rapidly
-
-Here's a little highlight of the changes we've made recently.
-
-### On by default, for everyone
+## On by default, for everyone
 
 The most important announcement here is that API docs is now an on-by-default experiment for everyone! You can begin trying it out on Sourcegraph.com as well as your own Sourcegraph instance.
 
@@ -51,16 +47,14 @@ The most important announcement here is that API docs is now an on-by-default ex
   <figcaption>Use the API docs button on any repository page to access API docs.</figcaption>
 </figure>
 
-&nbsp;
-
 <figure>
   <img height="80px" src="https://sourcegraphstatic.com/blog/api-docs/welcome-prompt.png" alt="The new welcome prompt describing how to use API docs">
-  <figcaption>Once you click it, you'll be greeted with information about how to get started in a brand new welcome prompt we’ve added</figcaption>
+  <figcaption>Once you click it, you'll be greeted with information about how to get started</figcaption>
 </figure>
 
 ### Understands the types of symbols, and uses iconography to communicate
 
-Due to API docs being built on code intelligence data, it understands exactly what symbols are and has detailed information about them. Whether symbols are deprecated, whether they're a function, variable, interface, etc. and the UI now communicates this information using icons:
+API docs is built on code intelligence data, so it has a deep semantic understanding of symbols, their type information, whether they're deprecated, a function, variable, interface, etc. and the UI now communicates this information using icons:
 
 <figure>
   <img src="https://sourcegraphstatic.com/blog/api-docs/symbols.gif" alt="A structured tree of symbols with type information to navigate a Go package">
@@ -78,38 +72,38 @@ Within a Go package, there are many sub-packages. We've improved the way we rend
 
 ### A deep understanding of code
 
-We're paying attention to the small details, and really tailoring API docs to each language. We want an experience that makes sense for Go first, because here at Sourcegraph we use primarily Go and TypeScript and want to ensure we build an experience Go developers love. Then we'll expand to more languages and build an experience that makes sense in the context of other languages—a tailored experience for each.
+We're paying attention to the small details, and really tailoring API docs to each language.
 
-One way we've enabled this is by allowing LSIF language indexers to emit data in the way they see fit. Sourcegraph merely renders it, indexes it, and adds a nice navigation experience. For example:
+At Sourcegraph, we use primarily Go and TypeScript - so we're starting by building an experience that Go developers will love, then we'll expand to more languages and build an experience that is really tailored to, and makes sense in the context of, the individual language.
+
+One way we've enabled this is by allowing LSIF language indexers to emit data in the way they see fit. Sourcegraph merely renders it, indexes it, and adds a nice navigation experience.
 
 <figure>
   <img src="https://sourcegraphstatic.com/blog/api-docs/url-hash-displays.gif" alt="Browser URL bar showing a URL and hash designed specifically for the Go language">
   <figcaption>The Go LSIF indexer chooses to display URL hashes in a way that makes sense specifically for Go, with a `Receiver.Method` format</figcaption>
 </figure>
 
-&nbsp;
-
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/api-docs/symbol-types.gif" alt="Hovering over symbols and showing Sourcegraph's deep semantic understanding of type information">
+  <img height="400px" src="https://sourcegraphstatic.com/blog/api-docs/symbol-types.gif" alt="Hovering over symbols and showing Sourcegraph's deep semantic understanding of type information">
   <figcaption>Hovering over symbols shows Sourcegraph's deep semantic understanding of type information, which you'll soon be able to search and filter based on.</figcaption>
 </figure>
 
 ### Feedback widget
 
-We know there will be a ton of feedback as things are very early in development, and so we've made it as easy as possible to give feedback from any API docs page:
+API docs is still very early in development, so we're making it as easy as possible to give feedback. In fact, we're making it possible to email feedback directly to the lead engineer (that's me) [stephen@sourcegraph.com](mailto:stephen@sourcegraph.com) - I'm eager to hear what you think!
+
+We've also made it possible to submit feedback on the API docs pages themselves,and you can also send feedback to us via Twitter [@sourcegraph](https://twitter.com/sourcegraph).
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/api-docs/feedback-widget.png" alt="The new feedback widget with various emojis">
+  <img height="400px" src="https://sourcegraphstatic.com/blog/api-docs/feedback-widget.png" alt="The new feedback widget with various emojis">
   <figcaption>Use the feedback widget on API docs pages, or directly email feedback to us!</figcaption>
 </figure>
 
-You can directly email feedback to the lead engineer [stephen@sourcegraph.com](mailto:stephen@sourcegraph.com) (me) or the entire team via Twitter [@sourcegraph](https://twitter.com/sourcegraph). We really want to hear what you think as we continue to rapidly develop this experimental feature!
-
 #### About the author
 
-[Stephen Gutekanst](https://slimsag.com) is one of Sourcegraph's earliest engineers, and has authored many parts of Sourcegraph including the `src` CLI, monitoring architecture, managed instances, and editor extensions to name a few. Stephen has worked with most of Sourcegraph's largest customers, and enjoys solving the most critical and technically challenging issues users face in our effort to bring world-class developer tools to everyone. Outside of Sourcegraph, Stephen researches search engine technology and video game development.
+[Stephen Gutekanst](https://slimsag.com) is one of Sourcegraph's earliest engineers, and has authored many parts of Sourcegraph including _the `src` CLI_, m_onitoring architecture_, _managed instances_, and _editor extensions_ to name a few. Stephen has worked with most of Sourcegraph's largest customers, and enjoys solving the most critical and technically challenging issues users face in our effort to bring world-class developer tools to everyone. Outside of Sourcegraph, Stephen researches and develops search engine and video game technology.
 
-Special thanks to [Rebecca Dodd](https://about.sourcegraph.com/handbook/company/team#rebecca-dodd-she-her) and [Erica Lindberg](https://about.sourcegraph.com/handbook/company/team#erica-lindberg-she-her) for their help with the content of this article, and [Jean du Plessis](https://about.sourcegraph.com/handbook/company/team#jean-du-plessis-he-him) (Director of Engineering: Developer Insights) and the rest of the Sourcegraph team for their assistance and feedback in developing API docs.
+Special thanks to [Rebecca Dodd](https://about.sourcegraph.com/handbook/company/team#rebecca-dodd-she-her) and [Erica Lindberg](https://about.sourcegraph.com/handbook/company/team#erica-lindberg-she-her) for their help with the content of this article, and [Jean du Plessis](https://about.sourcegraph.com/handbook/company/team#jean-du-plessis-he-him) and the rest of the team for their assistance and feedback on API docs.
 
 <style>
   figure .no-shadow { box-shadow: none; }
