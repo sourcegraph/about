@@ -8,6 +8,7 @@ You might think of this page as a remote version of "the clever workflows and sh
 
 - **Search across all GSuite content with Google Cloud Search.** You can use https://cloudsearch.google.com/cloudsearch to search across Mail, Drive, Groups and Calendar, as an additional tip, you can create a custom search for it as recommended in the [Chrome](#chrome) section using `https://cloudsearch.google.com/cloudsearch/search?q=%s`.
 - Use the shortcut URLs [docs.new](http://docs.new), [sheets.new](http://sheets.new), and [slides.new](http://slides.new) for a super fast way to create new docs!
+- **Add multiple timezones to your Calendar sidebar.** On the calendar page, go to Settings > Timezone > World Clock to add additional timezone displays. 
 
 ## Slack
 
@@ -45,6 +46,7 @@ You might think of this page as a remote version of "the clever workflows and sh
 - [Kap](https://getkap.co/) open source screen recorder for MacOS
 - [CleanShot X](https://cleanshot.com/) is a paid but incredibly good screenshot/GIF/video  recording tool for macOS.
 - [Screenflow](http://www.telestream.net/screenflow/overview.htm) is a paid video recording product that allows you to record your screen and webcam at the same time.
+- [Clocker](https://apps.apple.com/us/app/clocker/id1056643111?mt=12) for Mac makes it easy to see multiple timezones from your clock.
 
 ## Miscellaneous
 
