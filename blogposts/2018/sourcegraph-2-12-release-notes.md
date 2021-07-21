@@ -16,7 +16,7 @@ Our announcement this month that [Sourcegraph is now open source](/handbook/comm
 
 Here’s new, what’s changed, and what’s fixed in Sourcegraph 2.12.
 
-- [Build and publish your own Sourcegraph extensions](https://docs.sourcegraph.com/extensions/authoring) (like the [Codecov Sourcegraph extension](https://twitter.com/srcgraph/status/1038200208138502144))
+- [Build and publish your own Sourcegraph extensions](https://docs.sourcegraph.com/extensions/authoring) (like the [Codecov Sourcegraph extension](https://twitter.com/sourcegraph/status/1038200208138502144))
 
 - [Sourcegraph for GitLab](https://docs.sourcegraph.com/integration/gitlab)
 

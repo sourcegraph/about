@@ -21,7 +21,7 @@ export default class About extends React.Component<any, any> {
                         <title>Sourcegraph - About</title>
                         <meta name="twitter:title" content="Sourcegraph - About" />
                         <meta property="og:title" content="Sourcegraph - About" />
-                        <meta name="twitter:site" content="@srcgraph" />
+                        <meta name="twitter:site" content="@sourcegraph" />
                         <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
                         <meta name="twitter:card" content="summary" />
                         <meta

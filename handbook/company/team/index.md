@@ -1116,3 +1116,33 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: [rhiam](https://github.com/rhiam), [LinkedIn](https://www.linkedin.com/in/omobolanle-adedeji-0b845167)
 - [mariam@sourcegraph.com](mailto:mariam@sourcegraph.com)
 - Mariam is a confident female engineer from Nigeria. Previously worked as a software engineer prior to joining Sourcegraph. She enjoys coding, watching movies, travelling, making new friends, and organising events.
+
+## Alex Isken (He/Him)
+
+- Product Marketing Manager
+- Milwaukee, WI, USA 🇺🇸
+- [alex.isken@sourcegraph.com](mailto:alex.isken@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/alexisken/), [GitHub](https://github.com/iskyOS)
+- Alex is a proud Milwaukeean. Prior to Sourcegraph, Alex worked in various technology roles at Nielsen and was also a PMM at Datadog in NYC (but he's very happy to be back in the midwest). Alex loves board games, disc golf, and microbreweries, and he has an undying passion for Marquette basketball.
+
+## Katy Juell (She/Her)
+
+- Full Stack Engineer
+- Stamford, CT, USA 🇺🇸
+- [katy@sourcegraph.com](mailto:katy@sourcegraph.com), [GitHub](https://github.com/katjuell), [katjuell.site](https://katjuell.site), [@katjuell](https://twitter.com/katjuell), [LinkedIn](https://www.linkedin.com/in/kathleen-juell/)
+- Originally from Maine, Katy has been living in the greater NYC area for many years, with a brief stint in Philly. Most recently, she worked as a Full Stack Developer on the Digital Experience team at DigitalOcean. She also holds a PhD in early American literature, and thinks often about the analogies between literary analysis and writing and reading code — since both are, at some level, recognizing patterns in language and striving for eloquent (or at least reasonable!) expression. In addition to language-y things, she enjoys cooking, yoga, hanging with friends, and trying to amuse her feisty calico cat.
+
+## Bill Caplan (He/Him)
+
+- Senior Customer Engineer
+- Raleigh, NC USA 🇺🇸
+- Github: [billCaplan](https://github.com/billCaplan)
+- [bill.caplan@sourcegraph.com](mailto:bill.caplan@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/caplanbill/)
+- Bill lives in Raleigh, NC with his wife Kristen and their son Grayson.  After growing up in Pittsburgh and spending time at Ohio State (Go Bucks!), he spend seven years in San Francisco, working to help customers better understand and utilize the software that they buy.  He recently moved back to the East Coast, now calling Raleigh home.  In his free time he enjoys watching or playing sports (football, racing, hockey) and trying to become a backyard pizza chef.
+
+## Marija Petrovic (She/Her)
+
+- Team Lead, Senior Sales Recruiter
+- Naples, FL USA 🇺🇸
+- GitHub: [marija.petrovic214](https://github.com/marija.petrovic214), [LinkedIn](https://www.linkedin.com/in/marija-petrovic-b49b9b38/)
+- [marija.petrovic@sourcegraph.com](mailto:marija.petrovic@sourcegraph.com)
+- Marija, pronounced "Maria", is a Serbian-American living in sunny Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida. Outside of work, she enjoys spending time with family & her son Luka, traveling, tennis, skiing, yoga, painting/art, and investing in anything self-care/self-improvement-oriented! 
