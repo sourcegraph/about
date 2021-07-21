@@ -6,8 +6,175 @@ tags: [blog, release]
 slug: "release/3.30"
 published: false
 changelogItems:
-
-
+  - description: "Added support for `select:file.directory` in search queries, which returns unique directory paths for results that satisfy the query."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22449
+    category: Search
+  - description: "An `sg_service` Postgres role has been introduced, as well as an `sg_repo_access_policy` policy on the `repo` table that restricts access to that role. The role that owns the `repo` table will continue to get unrestricted access."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22303
+    category: Repositories
+  - description: "Every service that connects to the database (i.e. Postgres) now has a \"Database connections\" monitoring section in its Grafana dashboard."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22570
+    category:
+  - description: A new bulk operation to close many changesets at once has been added to Batch Changes.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22547
+    category: Batch Changes
+  - description: Backend Code Insights will aggregate viewable repositories based on the authenticated user.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22471
+    category: Repositories
+  - description: Added support for highlighting .frugal files as Thrift syntax.
+    url:
+    category:
+  - description: "Added `file:contains.content(regexp)` predicate, which filters only to files that contain matches of the given pattern."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22666
+    category:
+  - description: "Repository syncing is now done in streaming mode by default. Customers with many repositories should notice code host updates much faster, with repo-updater consuming less memory. Using the previous batch mode can be done by setting the `ENABLE_STREAMING_REPOS_SYNCER` environment variable to `false` in `repo-updater`. That environment variable will be deleted in the next release."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22756
+    category: Batch Changes
+  - description: Enabled the ability to query Batch Changes changesets, changesets stats, and file diff stats for an individual repository via the Sourcegraph GraphQL API.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22744/
+    category: Batch Changes
+  - description: "Added \"Groovy\" to the initial `lang:` filter suggestions in the search bar."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22755
+    category: Search
+  - description: "The `lang:` filter suggestions now show all supported, matching languages as the user types a language name."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22765
+    category:
+  - description: Code Insights can now be grouped into dashboards.
+    url: https://github.com/sourcegraph/sourcegraph/issues/22215
+    category:
+  - description: "Batch Changes changesets can now be [published from the Sourcegraph UI](https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui)."
+    url: https://github.com/sourcegraph/sourcegraph/issues/18277
+    category: Batch Changes
+  - description: The repository page now has a new button to view batch change changesets created in that specific repository, with a badge indicating how many changesets are currently open.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22804
+    category: Batch Changes
+  - description: "Experimental: Search-based code insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }`."
+    url: https://github.com/sourcegraph/sourcegraph/issues/22759
+    category: Search
+  - description: "Experimental: Search-based code insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }` and tick the checkbox in the insight creation/edit UI."
+    url: https://github.com/sourcegraph/sourcegraph/issues/22759
+    category: Search
+  - description: Search References is a new search sidebar section to simplify learning about the available search filters directly where they are used.
+    url: https://github.com/sourcegraph/sourcegraph/issues/21539
+    category: Search
+# Changed
+  - description: Backend Code Insights only fills historical data frames that have changed to reduce the number of searches required.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22298
+    category: Search
+  - description: Backend Code Insights displays data points for a fixed 6 months period in 2 week intervals, and will carry observations forward that are missing.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22298
+    category:
+  - description: Backend Code Insights now aggregate over 26 weeks instead of 6 months.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22527
+    category:
+  - description: "Search queries now disallow specifying `rev:` without `repo:`. Note that to search across potentially multiple revisions, a query like `repo:.* rev:\u003crevision\u003e` remains valid."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22705
+    category: Search
+  - description: The extensions status bar on diff pages has been redesigned and now shows information for both the base and head commits.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22123/files
+    category:
+  - description: "The `applyBatchChange` and `createBatchChange` mutations now accept an optional `publicationStates` argument to set the publication state of specific changesets within the batch change. [#22485](https://github.com/sourcegraph/sourcegraph/pull/22485) and"
+    url: https://github.com/sourcegraph/sourcegraph/pull/22854
+    category: Batch Changes
+  - description: Search queries now return up to 80 suggested filters. Previously we returned up to 24.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22863
+    category: Search
+  - description: "GitHub code host connections can now include `repositoryQuery` entries that match more than 1000 repositories from the GitHub search API without requiring the previously document work-around of splitting the query up with `created:` qualifiers, which is now done automatically."
+    url: https://github.com/sourcegraph/sourcegraph/issues/2562
+    category: Search
+# Fixed
+  - description: The Batch Changes user and site credential encryption migrators added in Sourcegraph 3.28 could report zero progress when encryption was disabled, even though they had nothing to do. This has been fixed, and progress will now be correctly reported.
+    url: https://github.com/sourcegraph/sourcegraph/issues/22277
+    category: Batch Changes
+  - description: Listing Github Entreprise org repos now returns internal repos as well.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22339
+    category: Repositories
+  - description: "Jaeger works in Docker-compose deployments again."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22691
+    category: Admin
+  - description: "A bug where the pattern `)` makes the browser unresponsive."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22738
+    category:
+  - description: "An issue where using `select:repo` in conjunction with `and` patterns did not yield expected repo results."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22743
+    category: Repositories
+  - description: "The `isLocked` and `isDisabled` fields of GitHub repositories are now fetched correctly from the GraphQL API of GitHub Enterprise instances. Users that rely on the `repos` config in GitHub code host connections should update so that locked and disabled repositories defined in that list are actually skipped."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22788
+    category: API
+  - description: "Homepage no longer fails to load if there are invalid entries in user's search history."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22857
+    category: Search
+  - description: An issue where regexp query highlighting in the search bar would render incorrectly on Firefox.
+    url: https://github.com/sourcegraph/sourcegraph/pull/23043
+    category: Search
+# Removed
+  - description: "The experimental paginated search feature (the `stable:` keyword) has been removed, to be replaced with streaming search."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22428
+    category: Search
+  - description: The experimental extensions view page has been removed.
+    url: https://github.com/sourcegraph/sourcegraph/pull/22565
+    category:
+  - description: "A search query diagnostic that previously warned the user when quotes are interpreted literally has been removed. The literal meaning has been Sourcegraph's default search behavior for some time now."
+    url: https://github.com/sourcegraph/sourcegraph/pull/22892
+    category: Search
+# API docs (experimental)
+  - description: "API docs is enabled by default in Sourcegraph 3.30.0. It can be disabled by adding `\"apiDocs\": false` to the `experimentalFeatures` section of user settings."
+    url:
+    category:
+  - description: The API docs landing page now indicates what API docs are and provide more info.
+    url:
+    category:
+  - description: The API docs landing page now represents the code in the repository root, instead of an empty page.
+    url:
+    category: Repositories
+  - description: Pages now correctly indicate it is an experimental feature, and include a feedback widget.
+    url:
+    category:
+  - description: Subpages linked via the sidebar are now rendered much better, and have an expandable section.
+    url:
+    category:
+  - description: Symbols in documentation now have distinct icons for e.g. functions/vars/consts/etc.
+    url:
+    category:
+  - description: "Symbols are now sorted in exported-first, alphabetical order."
+    url:
+    category:
+  - description: Repositories without LSIF documentation data now show a friendly error page indicating what languages are supported, how to set it up, etc.
+    url:
+    category: Repositories
+  - description: "API docs can now distinguish between different types of symbols, tests, examples, benchmarks, etc. and whether symbols are public/private - to support filtering in the future."
+    url:
+    category:
+  - description: Only public/exported symbols are included by default for now.
+    url:
+    category:
+  - description: "URL paths for Go packages are now friendlier, e.g. `/-/docs/cmd/frontend/auth` instead of `/-/docs/cmd-frontend-auth`."
+    url:
+    category:
+  - description: "URLs are now formatted by the language indexer, in a way that makes sense for the language, e.g. `#Mocks.CreateUserAndSave` instead of `#ypeMocksCreateUserAndSave` for a Go method `CreateUserAndSave` on type `Mocks`."
+    url:
+    category:
+  - description: "Go blank identifier assignments `var _ = ...` are no longer incorrectly included."
+    url:
+    category:
+  - description: "Go symbols defined within functions, e.g. a `var` inside a `func` scope are no longer incorrectly included."
+    url:
+    category:
+  - description: "`Functions`, `Variables`, and other top-level sections are no longer rendered empty if there are none in that section."
+    url:
+    category:
+  - description: A new test suite for LSIF indexers implementing the Sourcegraph documentation extension to LSIF is available.
+    url: "https://github.com/sourcegraph/lsif-static-doc"
+    category:
+  - description: "We now emit the LSIF data needed to in the future support \"Jump to API docs\" from code views, \"View code\" from API docs, usage examples in API docs, and search indexing."
+    url:
+    category: Search
+  - description: Various UI style issues, color contrast issues, etc. have been fixed.
+    url:
+    category:
+  - description: Major improvements to the GraphQL APIs for API documentation.
+    url:
+    category: API
 ---
 
 Sourcegraph 3.30 is now available! For this release, we introduced
