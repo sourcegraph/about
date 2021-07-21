@@ -110,3 +110,14 @@ You can directly email feedback to the lead engineer [stephen@sourcegraph.com](m
 [Stephen Gutekanst](https://slimsag.com) is one of Sourcegraph's earliest engineers, and has authored many parts of Sourcegraph including the `src` CLI, monitoring architecture, managed instances, and editor extensions to name a few. Stephen has worked with most of Sourcegraph's largest customers, and enjoys solving the most critical and technically challenging issues users face in our effort to bring world-class developer tools to everyone. Outside of Sourcegraph, Stephen researches search engine technology and video game development.
 
 Special thanks to [Rebecca Dodd](https://about.sourcegraph.com/handbook/company/team#rebecca-dodd-she-her) and [Erica Lindberg](https://about.sourcegraph.com/handbook/company/team#erica-lindberg-she-her) for their help with the content of this article, and [Jean du Plessis](https://about.sourcegraph.com/handbook/company/team#jean-du-plessis-he-him) (Director of Engineering: Developer Insights) and the rest of the Sourcegraph team for their assistance and feedback in developing API docs.
+
+<style>
+  figure .no-shadow { box-shadow: none; }
+  .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
+
+  figcaption {
+    text-align: center;
+    margin-top: -2rem;
+    font-style: italic;
+  }
+</style>
