@@ -1146,3 +1146,11 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: [marija.petrovic214](https://github.com/marija.petrovic214), [LinkedIn](https://www.linkedin.com/in/marija-petrovic-b49b9b38/)
 - [marija.petrovic@sourcegraph.com](mailto:marija.petrovic@sourcegraph.com)
 - Marija, pronounced "Maria", is a Serbian-American living in sunny Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida. Outside of work, she enjoys spending time with family & her son Luka, traveling, tennis, skiing, yoga, painting/art, and investing in anything self-care/self-improvement-oriented! 
+
+## Kristen Sundberg (She/Her)
+
+- Senior Social Media Manager
+- Boston, MA USA 🇺🇸
+- GitHub: [kristen-sundberg](https://github.com/kristen-sundberg)
+- [Twitter](https://twitter.com/thisiskris_s), [LinkedIn](https://www.linkedin.com/in/kristensundberg/), [kristen@sourcegraph.com](mailto:kristen@sourcegraph.com)
+- Kristen is a New England native that resides in a small town outside of Boston, MA. She has a knack for making brands loveable. And has been managing social media for tech and software brands the majority of her career. She's a Stonehill College alumni, who speaks passionately about chronic illness, remote work, and social media best practices. When away from the keyboard, you will find Kristen on an adventure with [Leo the Samoyed](https://www.instagram.com/ladyandleolife/), crafting with her Cricut, or watching true crime documentaries and BravoTV.
