@@ -177,7 +177,7 @@ changelogItems:
     category: API
 ---
 
-Sourcegraph 3.30 is now available! For this release, we introduced
+Sourcegraph 3.30 is now available! For this release, we introduced:
 
 ## Update
 
