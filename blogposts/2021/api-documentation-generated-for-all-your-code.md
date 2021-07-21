@@ -61,15 +61,6 @@ API docs is built on code intelligence data, so it has a deep semantic understan
   <figcaption>A structured tree of symbols with type information to navigate a Go package's documentation</figcaption>
 </figure>
 
-### Better sub-page navigation
-
-Within a Go package, there are many sub-packages. We've improved the way we render documentation subpages so you can skip over useless directories and get right to the content:
-
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/api-docs/subpage-navigation.gif" alt="A sub-page navigation menu that now expands/collapses">
-  <figcaption>A sub-page navigation menu that now expands/collapses - but we're still hard at work improving navigation in API docs!</figcaption>
-</figure>
-
 ### A deep understanding of code
 
 We're paying attention to the small details, and really tailoring API docs to each language.
@@ -88,7 +79,7 @@ One way we've enabled this is by allowing LSIF language indexers to emit data in
   <figcaption>Hovering over symbols shows Sourcegraph's deep semantic understanding of type information, which you'll soon be able to search and filter based on.</figcaption>
 </figure>
 
-### Feedback widget
+### Direct feedback
 
 API docs is still very early in development, so we're making it as easy as possible to give feedback. In fact, we're making it possible to email feedback directly to the lead engineer (that's me) [stephen@sourcegraph.com](mailto:stephen@sourcegraph.com) - I'm eager to hear what you think!
 
