@@ -14,7 +14,7 @@ published: true
 
 Go is a great language for writing network servers. Cindy's talk explains what under the hood when you call `http.ListenAndServe`.
 
-Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@srcgraph](https://twitter.com/srcgraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
+Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@sourcegraph](https://twitter.com/sourcegraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
 
 ---
 

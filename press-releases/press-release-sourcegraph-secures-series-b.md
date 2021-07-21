@@ -34,13 +34,13 @@ To be effective, code search must be universal across six dimensions: all reposi
 "I led the Kythe project at Google and saw how much leverage Google developers get from high-quality code search. I joined Sourcegraph because I want this Universal Code Search technology to be available to all developers at all companies,"" said Michael Fromberger, software engineer at Sourcegraph.
 
 ## Developer Love
-Our engineers loved @srcgraph so much that we decided to make it the singular supported tool at Yelp for #codesearch and viewing: [bit.ly/2pEko0o](https://bit.ly/2pEko0o) 
+Our engineers loved @sourcegraph so much that we decided to make it the singular supported tool at Yelp for #codesearch and viewing: [bit.ly/2pEko0o](https://bit.ly/2pEko0o) 
 &mdash; Yelp Engineering
 
 "Every single developer that used Sourcegraph and talked to me about it loved the product. I think that every code product must have intelligent navigation.” [https://news.ycombinator.com/item?id=18118924](https://news.ycombinator.com/item?id=18118924)
 &mdash; Sid Sijbrandij, GitLab CEO
 
-@srcgraph is one of the best solutions for online code traversal. 
+@sourcegraph is one of the best solutions for online code traversal. 
 [https://twitter.com/akshay_deo/status/1194614605110136832](https://twitter.com/akshay_deo/status/1194614605110136832)
 &mdash; Staff engineer at Slack
 
@@ -52,13 +52,13 @@ To learn more, register for the [Sourcegraph Universal Code Search webinar](http
 - [Sourcegraph Website](https://about.sourcegraph.com/)
 - [Sourcegraph Documentation](https://docs.sourcegraph.com/)
 - [Sourcegraph Blog](https://about.sourcegraph.com/blog/)
-- [Sourcegraph on Twitter](https://twitter.com/srcgraph)
+- [Sourcegraph on Twitter](https://twitter.com/sourcegraph)
 - [Sourcegraph on LinkedIn](https://www.linkedin.com/company/sourcegraph/)
 - [Sourcegraph on GitHub](https://github.com/sourcegraph)
 - [Code change management](https://about.sourcegraph.com/product/code-change-management/?utm_medium=organic_search&utm_source=pr&utm_campaign=ucs-announce&utm_content=pr)
 
 ## About Sourcegraph
-Sourcegraph Universal Code Search empowers all developers to explore, navigate, and better understand all code, everywhere, faster. Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems. Sourcegraph is built for all companies, from startups needing a solid foundation for growth to enterprises with complex security, scaling, and deployment needs. The all-remote company is headquartered in San Francisco, CA and backed by Craft Ventures, Redpoint Ventures, and Goldcrest Capital – visit [sourcegraph.com/jobs](https://about.sourcegraph.com/jobs/) for career opportunities. Follow Sourcegraph on Twitter at [@srcgraph](https://twitter.com/srcgraph?lang=en) or visit [about.sourcegraph.com](https://about.sourcegraph.com/). 
+Sourcegraph Universal Code Search empowers all developers to explore, navigate, and better understand all code, everywhere, faster. Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems. Sourcegraph is built for all companies, from startups needing a solid foundation for growth to enterprises with complex security, scaling, and deployment needs. The all-remote company is headquartered in San Francisco, CA and backed by Craft Ventures, Redpoint Ventures, and Goldcrest Capital – visit [sourcegraph.com/jobs](https://about.sourcegraph.com/jobs/) for career opportunities. Follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph?lang=en) or visit [about.sourcegraph.com](https://about.sourcegraph.com/). 
 
 ## Media Contact
 Danielle Salvato-Earl<br>
