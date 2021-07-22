@@ -14,7 +14,7 @@ changelogItems:
     category: Batch Changes
   - description: Backend Code Insights will aggregate viewable repositories based on the authenticated user.
     url: https://github.com/sourcegraph/sourcegraph/pull/22471
-    category: Repositories
+    category: Code Insights
   - description: All `.frugal` files will now be displayed with Thrift syntax highlighting.
     url:
     category:
@@ -56,16 +56,16 @@ changelogItems:
     category: Search
   - description: Backend Code Insights displays data points for a fixed 6 months period in 2 week intervals, and will carry observations forward that are missing.
     url: https://github.com/sourcegraph/sourcegraph/pull/22298
-    category:
+    category: Code Insights
   - description: Backend Code Insights now aggregate over 26 weeks instead of 6 months.
     url: https://github.com/sourcegraph/sourcegraph/pull/22527
-    category:
+    category: Code Insights
   - description: "Search queries now disallow specifying `rev:` without `repo:`. Note that to search across potentially multiple revisions, a query like `repo:.* rev:\u003crevision\u003e` remains valid."
     url: https://github.com/sourcegraph/sourcegraph/pull/22705
     category: Search
   - description: The extensions status bar on diff pages has been redesigned and now shows information for both the base and head commits.
     url: https://github.com/sourcegraph/sourcegraph/pull/22123/files
-    category:
+    category: Extensions
   - description: "The `applyBatchChange` and `createBatchChange` mutations now accept an optional `publicationStates` argument to set the publication state of specific changesets within the batch change. [#22485](https://github.com/sourcegraph/sourcegraph/pull/22485) and"
     url: https://github.com/sourcegraph/sourcegraph/pull/22854
     category: Batch Changes
@@ -96,7 +96,6 @@ changelogItems:
   - description: An issue where regexp query highlighting in the search bar would render incorrectly on Firefox.
     url: https://github.com/sourcegraph/sourcegraph/pull/23043
     category: Search
-# Removed
   - description: "The experimental paginated search feature (the `stable:` keyword) has been removed, to be replaced with streaming search."
     url: https://github.com/sourcegraph/sourcegraph/pull/22428
     category: Search
