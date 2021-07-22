@@ -21,7 +21,7 @@ changelogItems:
   - description: Backend Code Insights will aggregate viewable repositories based on the authenticated user.
     url: https://github.com/sourcegraph/sourcegraph/pull/22471
     category: Repositories
-  - description: Added support for highlighting .frugal files as Thrift syntax.
+  - description: All `.frugal` files will now be displayed with Thrift syntax highlighting.
     url:
     category:
   - description: "Added `file:contains.content(regexp)` predicate, which filters only to files that contain matches of the given pattern."
