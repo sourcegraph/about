@@ -21,7 +21,10 @@
     - [Digital Marketing Programs](digital_marketing_programs.md)
     - [Marketing operations](marketing_operations.md)
 
-- [Developer Education](education.md)
+- [Developer Education](education/index.md)
+    - [Learn Platform](education/learn-platform.md)
+    - [DevEd Council](education/dev-ed-council.md)
+
 - Community Relations
     - [Public projects using Sourcegraph](public_projects_using_sourcegraph.md)
     - [Adding a community landing page](oss_community_pages.md)
@@ -52,6 +55,7 @@
     - [Lisa Tagliaferri](../company/team/index.md#lisa-tagliaferri-flexible), Director of Developer Education
         - [Marek Zaluski](../company/team/index.md#marek-zaluski), Developer Education Engineer
         - [Oluebube Princess Egbuna](../company/team/index.md#oluebube-princess-egbuna-she-her), Education Engineer
+        - [Katy Juell](../company/team/index.md#katy-juell-she-her), Full Stack Engineer
         - We will be hiring technical educators
     - [Sarah Reece](../company/team/index.md#sarah-reece-she-her), Director of Demand Generation
         - Lori Heyman, Digital Marketing Programs
