@@ -41,6 +41,6 @@ Until you’re running at 12/12 on The Sourcegraph Test (_and_ The Joel Test), y
 
 At [Sourcegraph](http://sourcegraph.com), we think every developer — in every company, in every language, working on any kind of code — deserves to be 12/12\. See the [Sourcegraph master plan](https://about.sourcegraph.com/handbook/company/strategy) for how we’re working to make that possible.
 
-[**Share your score on Twitter!** ➜](https://twitter.com/intent/tweet?text=My%20dev%20tools%20are%20at%20__%2F12%20on%20the%20%23sourcegraphtest%20https%3A%2F%2Ftext.sourcegraph.com%2Fthe-sourcegraph-test-12-more-steps-to-better-code-e5c281850c&source=webclient&via=srcgraph&related=srcgraph)
+[**Share your score on Twitter!** ➜](https://twitter.com/intent/tweet?text=My%20dev%20tools%20are%20at%20__%2F12%20on%20the%20%23sourcegraphtest%20https%3A%2F%2Ftext.sourcegraph.com%2Fthe-sourcegraph-test-12-more-steps-to-better-code-e5c281850c&source=webclient&via=sourcegraph&related=sourcegraph)
 
-> Note: The Sourcegraph Test is v0.9 so we can incorporate any feedback before finalizing it. Did we miss anything? Tell us [**@srcgraph**](https://twitter.com/srcgraph)using the hashtag **#sourcegraphtest**.
+> Note: The Sourcegraph Test is v0.9 so we can incorporate any feedback before finalizing it. Did we miss anything? Tell us [**@sourcegraph**](https://twitter.com/sourcegraph)using the hashtag **#sourcegraphtest**.

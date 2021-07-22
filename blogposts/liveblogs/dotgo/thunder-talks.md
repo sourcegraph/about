@@ -12,7 +12,7 @@ published: true
 
 The thunder talks are the second round of lightning talks from many speakers.
 
-Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@srcgraph](https://twitter.com/srcgraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
+Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@sourcegraph](https://twitter.com/sourcegraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
 
 ## gocv.io
 
