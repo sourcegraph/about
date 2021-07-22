@@ -15,7 +15,7 @@ changelogItems:
   - description: "Every service that connects to the database (i.e. Postgres) now has a \"Database connections\" monitoring section in its Grafana dashboard."
     url: https://github.com/sourcegraph/sourcegraph/pull/22570
     category:
-  - description: A new bulk operation to close many changesets at once has been added to Batch Changes.
+  - description: You can now use a new bulk operation to close many changesets at once in Batch Changes.
     url: https://github.com/sourcegraph/sourcegraph/pull/22547
     category: Batch Changes
   - description: Backend Code Insights will aggregate viewable repositories based on the authenticated user.
