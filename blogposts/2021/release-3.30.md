@@ -9,9 +9,6 @@ changelogItems:
   - description: "Added support for `select:file.directory` in search queries, which returns unique directory paths for results that satisfy the query."
     url: https://github.com/sourcegraph/sourcegraph/pull/22449
     category: Search
-  - description: "An `sg_service` Postgres role has been introduced, as well as an `sg_repo_access_policy` policy on the `repo` table that restricts access to that role. The role that owns the `repo` table will continue to get unrestricted access."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22303
-    category: Repositories
   - description: "Every service that connects to the database (i.e. Postgres) now has a \"Database connections\" monitoring section in its Grafana dashboard."
     url: https://github.com/sourcegraph/sourcegraph/pull/22570
     category:
