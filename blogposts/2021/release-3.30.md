@@ -199,6 +199,8 @@ _In addition_, we are allowing changesets to be published and unpublished direct
 
 ### Code Insights Dashboards 
 
-<!--TODO a small GIF of adding code insights to a dashboard and viewing that dashboard -->
+<p><video autoplay loop muted playsinline style="width:600px">
+  <source src="https://sourcegraphstatic.com/blog/3.30/insights_dashboards.mp4" type="video/mp4">
+ </video></p>
 
 You can now add your code insights to individual dashboard pages, in order to group and share a contextual subest of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](TODO_ADD_DOCS_LINK). 
