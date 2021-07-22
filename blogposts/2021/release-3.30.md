@@ -42,7 +42,7 @@ changelogItems:
   - description: "Batch Changes changesets can now be [published from the Sourcegraph UI](https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui)."
     url: https://github.com/sourcegraph/sourcegraph/issues/18277
     category: Batch Changes
-  - description: The repository page now has a new button to view batch change changesets created in that specific repository, with a badge indicating how many changesets are currently open.
+  - description: The repository page now has a new button to view Batch Change changesets created in that specific repository, with a badge indicating how many changesets are currently open.
     url: https://github.com/sourcegraph/sourcegraph/pull/22804
     category: Batch Changes
   - description: "Experimental: Search-based code insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }`."
