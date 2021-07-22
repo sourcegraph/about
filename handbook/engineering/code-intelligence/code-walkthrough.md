@@ -39,10 +39,13 @@ or to guide us through [Redux](https://github.com/reduxjs/redux).
     - 10 minutes of questions.
 - Be ready to screenshare the library in question via your IDE or editor of choice.
 
-During the interview we will guide you to areas of the code that seem ripe for discussion.
-We may ask you to zoom in or out of layers of abstraction (into/out of functions, classes, and packages) in order to help us build a shared understanding of the code under review.
-You will be asked to explain how particular parts of the code under review work. The level of explanation will vary (but will not be a mystery):
+During the interview we will guide you to areas of the code that seem ripe for discussion.  We may ask you to zoom in or out of layers of abstraction (into/out of functions, classes, and packages) in order to help us build a shared understanding of the code under review.
+You will be asked to explain how particular parts of the code under review work.
+
+The level of explanation will vary (but will not be a mystery):
 we may ask how high-level components interact, or we may ask how an individual function works in detail.
-We will try to ask both! We will ask follow-up questions about performance, usage ergonomics, code complexity, and ideas for improvements.
+We will try to ask both!
+
+We will ask follow-up questions about performance, usage ergonomics, code complexity, and ideas for improvements.
 We’ll also ask clarifying questions about how the code under review reacts to certain input or usage conditions.
 You will be asked to explain potential trade-offs given different hypothetical design constraints (what in the code would need to change).
