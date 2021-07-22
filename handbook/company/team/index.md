@@ -1154,4 +1154,10 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub [shawnplusplus](https://github.com/shawnplusplus)
 - [shawn@sourcegraph.com](mailto:shawn@sourcegraph.com)
 - Originally from Fargo, ND, Shawn lives in Rochester with his wife Katie, son Harrison, and two dogs Tucker and Charlie. His careeer goal is to make technology more accessible and easy to understand for everyone. When he's not working, he can be found at the lake in the summer with his family, reading a book, and in the long Minnesota winters, doing all things hockey.  
-- 
+
+## Moose (Mustafa) Ulker (He/Him)
+
+- Senior Copywriter/Creative 
+- Los Angeles,USA 🇺🇸
+- [moose@sourcegraph.com](mailto:moose@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/mooooose/)
+- My grandpa was quite a famous storyteller, as well as my grandma; my dad and my mom too. So, I found myself telling stories to my brother when I was five. Since then I never stopped. -28 Years Later— I'm creating and telling stories for global brands. Nothing has changed. I just add some taglines and hashtags at the end. www.mustafaulker.com 
