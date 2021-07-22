@@ -35,7 +35,7 @@ changelogItems:
     category: Search
   - description: "The `lang:` filter suggestions now show all supported, matching languages as the user types a language name."
     url: https://github.com/sourcegraph/sourcegraph/pull/22765
-    category:
+    category: Search
   - description: Code Insights can now be grouped into dashboards.
     url: https://github.com/sourcegraph/sourcegraph/issues/22215
     category:
