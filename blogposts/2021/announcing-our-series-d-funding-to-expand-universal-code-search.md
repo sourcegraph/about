@@ -6,7 +6,7 @@ publishDate: 2021-07-13T00:00-07:00
 tags: [blog, product, batch changes]
 slug: announcing-sourcegraphs-series-d-round
 heroImage: /blog/announcing-sourcegraphs-series-d-round.jpg
-socialImage: /blog/announcing-sourcegraphs-series-d-round.jpg
+socialImage: https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round.jpg
 published: true
 ---
 
@@ -26,7 +26,7 @@ We’re in the earliest days of Universal Code Search and in many ways it feels 
 
 ## Didn’t you just raise funding?
 
-We’ve never been busier. We announced our [$50M Series C led by Sequoia](/blog/series-c-with-sequoia/) in December, and things haven’t slowed down. We've seen significant growth in [major enterprise and leading tech companies, financial institutions, and governmental organizations](/customers). Over 800,000 developers have used Soucegraph in the last 12 months, including devs from 3 out of 5 FAANG, General Electric, Uber, and Plaid.
+We’ve never been busier. We announced our [$50M Series C led by Sequoia](/blog/series-c-with-sequoia/) in December, and things haven’t slowed down. We've seen significant growth in [major enterprise and leading tech companies, financial institutions, and governmental organizations](/customers). Over 800,000 developers have used Soucegraph in the last 12 months, including devs from General Electric, Uber, Plaid, and 3 out of 5 FAANG.
 
 We also launched [Batch Changes](/batch-changes/), which lets devs automate large-scale changes to keep code updated and secure and reduce tech debt.
 

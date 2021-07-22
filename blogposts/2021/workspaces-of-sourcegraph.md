@@ -38,7 +38,7 @@ Why customize your programming font? Glad you asked! Code, like no other languag
 ## What we learned
 While these results are not statistically significant, one trend does stand out: developers will customize their environments to improve the readability of code. Keep scrolling to check out some of the setups Sourcegraphers have deployed to help them create universal code search.
 
-**What editors, themes and fonts do you use? Tweet us at @srcgraph to share your thoughts and images. Make sure to not include sensitive information in any screens you share!**
+**What editors, themes and fonts do you use? Tweet us at @sourcegraph to share your thoughts and images. Make sure to not include sensitive information in any screens you share!**
 
 ## Workspaces of Sourcegraph
 
@@ -226,4 +226,4 @@ I'm experimenting with the Nova editor alongside VSCode, which replaced Sublime 
 
 # What does your editor look like? 
 
-We want to see your setup too! Tweet it to us [@srcgraph](https://twitter.com/srcgraph).
+We want to see your setup too! Tweet it to us [@sourcegraph](https://twitter.com/sourcegraph).

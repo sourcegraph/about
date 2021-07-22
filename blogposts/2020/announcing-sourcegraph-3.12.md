@@ -100,7 +100,7 @@ Hover tooltips and find reference results now display a badge to indicate when a
 
 ## Experimental features
 
-This release contains many exciting new improvements to the Sourcegraph UI, configuration, and search capabilities. We look forward to hearing your feedback about them! Tweet [@srcgraph](https://twitter.com/srcgraph) or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) with your thoughts.
+This release contains many exciting new improvements to the Sourcegraph UI, configuration, and search capabilities. We look forward to hearing your feedback about them! Tweet [@sourcegraph](https://twitter.com/sourcegraph) or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com) with your thoughts.
 
 ### Interactive search mode
 
@@ -187,4 +187,4 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!
+From the entire Sourcegraph team ([@sourcegraph](https://twitter.com/sourcegraph)), happy coding!

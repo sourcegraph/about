@@ -82,7 +82,7 @@ Each team is allocated $4,000 USD per year per teammate for team meetups (minimu
 
 Each teammate has one fully-paid trip per year to meet up with an individual or a group, and this can include anyone in the company.
 
- - The recommended trip expense is $2,500. People Ops and Finance will approve trips in excess of this amount for certain circumstances.
+ - People Ops and Finance will approve trips in excess of $2,500 for certain circumstances.
  - This trip is  _in addition_  to the other benefits mentioned on this page.
 
 ## 4. Business/customer travel
@@ -90,7 +90,7 @@ Each teammate has one fully-paid trip per year to meet up with an individual or 
 For teammates with business-related travel requirements, trips will be fully paid pending manager/director approval in addition to above budgets. We would include the following types of meetups:
 
  - Customer Champion meetups 
- - Executive meetups (no approval required)
+ - Director to Executive level meetups (no approval required)
  - Marketing conferences 
  - Mandatory team trainings
  - Regional Sales Kickoff (Sales, Sales Ops, CE included)
@@ -120,7 +120,8 @@ We advise spending within reason for the location you are visiting, with a $300 
  - Travelers are encouraged to book flights at least 30 days in advance to avoid premium airfare pricing.
  - Book from travel providers that offer flexible cancellation policies and refundable rates, should your plans change at any time.
  - Sourcegraph will pay for flight to and from locations. Any changes made to your itinerary to extend your trip and change your flight itinerary will be out of pocket expenses.
- - Gas and parking would be considered reimbursable within the applicable budget.
+ - Gas and parking would be considered reimbursable within the applicable budget (Category 2,3,5) travel.
+ - When driving a personal vehicle to a company-sponsored event (Category 1, 4), the Company will reimburse based on current IRS standard mileage rate of $0.56 per mile for 2021. This reimbursement per mile incorporates not only the cost of the fuel, but also maintenance and wear and tear of the vehicle. Upon expense submission, please provide a calculation of miles driven to and from the event.
  - Ride-shares (Uber, Lyft, etc.) are encouraged whenever possible instead of renting a car.
 	 - If you’re in the US and would like to rent a car, we recommend checking with the following companies before booking your car rental elsewhere:
 		 - [Turo](https://turo.com/)  
@@ -138,7 +139,7 @@ We advise spending within reason for the location you are visiting, with a $300 
 -   We will reimburse only your own portion of the bill if you’re traveling with a non-teammate, so make sure to separate your bills or ask for separate receipts. 
 
 #### Trip Summary
-Please see below for a complete summary of spend limit, per diem, and hotel budget guidelines for each type of trip.
+Please see below for a complete summary of spend limit, per diem, and hotel budget guidelines for each type of trip. The best practice is to plan your trip in accordance with the per diem and hotel policy, in order to efficiently use the spending budget allowed. Costs incurred will only be reimbursed to spending limits provided (or the applicable guidance), so it is up to the individual/team how to best allocate that spending allowance for their trips.
 
 |Trip Category|Total Spend Limit|Per Diem?|Hotel Budget?|
 |---|---|---|---|

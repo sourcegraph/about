@@ -165,4 +165,4 @@ Upgrading from 2.x or 3.0? [See the migration guide](https://docs.sourcegraph.co
 
 ---
 
-From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!
+From the entire Sourcegraph team ([@sourcegraph](https://twitter.com/sourcegraph)), happy coding!
