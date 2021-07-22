@@ -1154,4 +1154,11 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub [shawnplusplus](https://github.com/shawnplusplus)
 - [shawn@sourcegraph.com](mailto:shawn@sourcegraph.com)
 - Originally from Fargo, ND, Shawn lives in Rochester with his wife Katie, son Harrison, and two dogs Tucker and Charlie. His careeer goal is to make technology more accessible and easy to understand for everyone. When he's not working, he can be found at the lake in the summer with his family, reading a book, and in the long Minnesota winters, doing all things hockey.  
-- 
+
+## Shawn King (He/Him)
+
+- Social Media Community Manager
+- Uyo, Nigeria
+- GitHub [emmanuellar](https://github.com/emmanuellar)
+- [amarachi.azubuike@sourcegraph.com](mailto:amarachiazubuike@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/amarachiemmanuelaazubuike/)
+- Amarachi (Amara) is a Nigerian, living in Uyo, Nigeria. She is passionate about bringing coding to everyone, and building developer communities. Outside of work, she loves to see movies,read novels, chat with friends or take walks.
