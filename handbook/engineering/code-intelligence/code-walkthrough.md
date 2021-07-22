@@ -11,7 +11,7 @@ The following page details how we approach the technical hiring within the Code 
 - Allow you as the candidate to focus on an area that you are comfortable in.
 - Allow a dialogue that simulates a technical discussion between your potential future peers.
 - Use the discussion as a proxy for technical aptitude and programming skills.
-- Have a time efficient process for yourself and Sourcegraph.
+- Have a time-efficient process for yourself and Sourcegraph.
 
 ### We want to find engineers that are:
 - Good communicators.
