@@ -45,7 +45,7 @@ changelogItems:
   - description: The repository page now has a new button to view Batch Change changesets created in that specific repository, with a badge indicating how many changesets are currently open.
     url: https://github.com/sourcegraph/sourcegraph/pull/22804
     category: Batch Changes
-  - description: "Experimental: Search-based code insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }`."
+  - description: "Experimental: Search-based Code Insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }`."
     url: https://github.com/sourcegraph/sourcegraph/issues/22759
     category: Search
   - description: "Experimental: Search-based code insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }` and tick the checkbox in the insight creation/edit UI."
