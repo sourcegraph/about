@@ -9,9 +9,6 @@ changelogItems:
   - description: "Added support for `select:file.directory` in search queries, which returns unique directory paths for results that satisfy the query."
     url: https://github.com/sourcegraph/sourcegraph/pull/22449
     category: Search
-  - description: "Every service that connects to the database (i.e. Postgres) now has a \"Database connections\" monitoring section in its Grafana dashboard."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22570
-    category:
   - description: You can now use a new bulk operation to close many changesets at once in Batch Changes.
     url: https://github.com/sourcegraph/sourcegraph/pull/22547
     category: Batch Changes
@@ -39,8 +36,8 @@ changelogItems:
   - description: Code Insights can now be grouped into dashboards.
     url: https://github.com/sourcegraph/sourcegraph/issues/22215
     category:
-  - description: "Batch Changes changesets can now be [published from the Sourcegraph UI](https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui)."
-    url: https://github.com/sourcegraph/sourcegraph/issues/18277
+  - description: "Batch Changes changesets can now be published from the Sourcegraph UI."
+    url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
     category: Batch Changes
   - description: The repository page now has a new button to view Batch Change changesets created in that specific repository, with a badge indicating how many changesets are currently open.
     url: https://github.com/sourcegraph/sourcegraph/pull/22804
@@ -54,7 +51,6 @@ changelogItems:
   - description: Search References is a new search sidebar section to simplify learning about the available search filters directly where they are used.
     url: https://github.com/sourcegraph/sourcegraph/issues/21539
     category: Search
-# Changed
   - description: Backend Code Insights only fills historical data frames that have changed to reduce the number of searches required.
     url: https://github.com/sourcegraph/sourcegraph/pull/22298
     category: Search
@@ -79,10 +75,6 @@ changelogItems:
   - description: "GitHub code host connections can now include `repositoryQuery` entries that match more than 1000 repositories from the GitHub search API without requiring the previously document work-around of splitting the query up with `created:` qualifiers, which is now done automatically."
     url: https://github.com/sourcegraph/sourcegraph/issues/2562
     category: Search
-# Fixed
-  - description: The Batch Changes user and site credential encryption migrators added in Sourcegraph 3.28 could report zero progress when encryption was disabled, even though they had nothing to do. This has been fixed, and progress will now be correctly reported.
-    url: https://github.com/sourcegraph/sourcegraph/issues/22277
-    category: Batch Changes
   - description: Listing Github Entreprise org repos now returns internal repos as well.
     url: https://github.com/sourcegraph/sourcegraph/pull/22339
     category: Repositories
@@ -114,64 +106,9 @@ changelogItems:
   - description: "A search query diagnostic that previously warned the user when quotes are interpreted literally has been removed. The literal meaning has been Sourcegraph's default search behavior for some time now."
     url: https://github.com/sourcegraph/sourcegraph/pull/22892
     category: Search
-# API docs (experimental)
   - description: "API docs is enabled by default in Sourcegraph 3.30.0. It can be disabled by adding `\"apiDocs\": false` to the `experimentalFeatures` section of user settings."
     url:
-    category:
-  - description: The API docs landing page now indicates what API docs are and provide more info.
-    url:
-    category:
-  - description: The API docs landing page now represents the code in the repository root, instead of an empty page.
-    url:
-    category: Repositories
-  - description: Pages now correctly indicate it is an experimental feature, and include a feedback widget.
-    url:
-    category:
-  - description: Subpages linked via the sidebar are now rendered much better, and have an expandable section.
-    url:
-    category:
-  - description: Symbols in documentation now have distinct icons for e.g. functions/vars/consts/etc.
-    url:
-    category:
-  - description: "Symbols are now sorted in exported-first, alphabetical order."
-    url:
-    category:
-  - description: Repositories without LSIF documentation data now show a friendly error page indicating what languages are supported, how to set it up, etc.
-    url:
-    category: Repositories
-  - description: "API docs can now distinguish between different types of symbols, tests, examples, benchmarks, etc. and whether symbols are public/private - to support filtering in the future."
-    url:
-    category:
-  - description: Only public/exported symbols are included by default for now.
-    url:
-    category:
-  - description: "URL paths for Go packages are now friendlier, e.g. `/-/docs/cmd/frontend/auth` instead of `/-/docs/cmd-frontend-auth`."
-    url:
-    category:
-  - description: "URLs are now formatted by the language indexer, in a way that makes sense for the language, e.g. `#Mocks.CreateUserAndSave` instead of `#ypeMocksCreateUserAndSave` for a Go method `CreateUserAndSave` on type `Mocks`."
-    url:
-    category:
-  - description: "Go blank identifier assignments `var _ = ...` are no longer incorrectly included."
-    url:
-    category:
-  - description: "Go symbols defined within functions, e.g. a `var` inside a `func` scope are no longer incorrectly included."
-    url:
-    category:
-  - description: "`Functions`, `Variables`, and other top-level sections are no longer rendered empty if there are none in that section."
-    url:
-    category:
-  - description: A new test suite for LSIF indexers implementing the Sourcegraph documentation extension to LSIF is available.
-    url: "https://github.com/sourcegraph/lsif-static-doc"
-    category:
-  - description: "We now emit the LSIF data needed to in the future support \"Jump to API docs\" from code views, \"View code\" from API docs, usage examples in API docs, and search indexing."
-    url:
-    category: Search
-  - description: Various UI style issues, color contrast issues, etc. have been fixed.
-    url:
-    category:
-  - description: Major improvements to the GraphQL APIs for API documentation.
-    url:
-    category: API
+    category: API Docs
 ---
 
 Sourcegraph 3.30 is now available! For this release, we introduced:
