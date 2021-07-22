@@ -197,7 +197,7 @@ _In addition_, we are allowing changesets to be published and unpublished direct
 
 <!--TODO a small GIF a user clicking a repo: filter and using autocomplete to resolve github.com\/sourcegraph/sourcgraph$ -->
 
-### Code Insights Dashboards 
+### Code Insights dashboards 
 
 <p><video autoplay loop muted playsinline style="width:600px">
   <source src="https://sourcegraphstatic.com/blog/3.30/insights_dashboards.mp4" type="video/mp4">
