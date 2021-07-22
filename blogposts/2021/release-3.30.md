@@ -26,7 +26,7 @@ changelogItems:
     category:
   - description: "Added `file:contains.content(regexp)` predicate, which filters only to files that contain matches of the given pattern."
     url: https://github.com/sourcegraph/sourcegraph/pull/22666
-    category:
+    category: Search
   - description: "Repository syncing is now done in streaming mode by default. Customers with many repositories should notice code host updates much faster, with repo-updater consuming less memory. Using the previous batch mode can be done by setting the `ENABLE_STREAMING_REPOS_SYNCER` environment variable to `false` in `repo-updater`. That environment variable will be deleted in the next release."
     url: https://github.com/sourcegraph/sourcegraph/pull/22756
     category: Batch Changes
