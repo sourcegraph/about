@@ -15,7 +15,7 @@ The Sales team represents us and our values to customers, bringing back dollars 
 - [Engaging with Legal](saleslegal.md)
 - [Engaging with Security](salessecurity.md)
 
-## Pipeline, data, and models
+## ne, data, and models
 
 - [Transactions](https://docs.google.com/spreadsheets/d/1Ao3Nqw6gH3yAuZtICV3xo35kKKnI9oKXnvPuTQ0Fh9c/edit#gid=0)
 - [FY21 plan](https://docs.google.com/spreadsheets/d/1EkZ7O69-2jbgtacoFDrY8L6rP73Hlqp_syyVCnmGAFA/edit#gid=1071026049)
@@ -40,6 +40,7 @@ Not all team members are reflected here yet. If you see yourself missing, please
   - [John Harwell](../company/team/index.md#john-harwell)
   - [Nishil Patel](../company/team/index.md#nishil-patel-he-him)
   - [Ken Mills](https://about.sourcegraph.com/handbook/company/team#ken-mills)
+  - [Brady Hermann](https://about.sourcegraph.com/handbook/company/team#brady-herrmann-he-him)
 - [Greg Bastis](../company/team/index.md#greg-bastis-he-him) (Regional VP of West)
   - [Owen Brennan](../company/team/index.md#owen-brennan-he-him)
   - [Chris Surdi](../company/team/index.md#chris-surdi)
@@ -47,8 +48,10 @@ Not all team members are reflected here yet. If you see yourself missing, please
   - [Jon Kishpaugh](../company/team/index.md#jon-kishpaugh-he-him)
   - [James Clifford](../company/team/index.md#james-clifford-he-him)
   - [Natalie Khoury](../company/team/index.md#natalie-khoury)
+  - [Rashad Bartholomew](../company/team/index.md#rashad-bartholomew-he-him)
 - Prakash Durgani (Head of International Sales)
   - Khoshal Wial
+  - Suki Randhawa
 
 ### Roles
 
@@ -83,10 +86,19 @@ Sales Accepted Opportunities are where ALL of the following are true:
 - We have completed an intro call/meeting with the company/contact
 - Company/contact has expressed some form of interest/need in Sourcegraph
 - Contact can be a potential champion or coach
-- Company has >50 Developers
+- Company has >50 Developers **OR** Company is a Commercial account ( <250 employees)
 - We have next steps
 
 Any Opportunity that is moved into the Qualification Stage or beyond is automatically tagged as Sales Accepted Opportunity in Salesforce
+
+### Multiple Sales Accepted Opportunities (SAOs) within the same account:
+
+It is acceptable to create multiple opportunities within the same account. SDR crediting will apply under the following circumstances:
+
+- The new SAO has a new Primary Contact
+- The new Primary Contact was not referred by an existing Primary Contact
+- There have been no Closed Won opportunities within the past 30 days
+- All SAO criteria is met for the newly created opportunity
 
 ### Target Opportunity Profile:
 
@@ -98,9 +110,9 @@ OR
 
 Title/role includes developer productivity, developer experience, API services, distinguished eng, platform engineer, director+ eng
 
-AND
+AND 
 
-Company has 50+ devs
+Company has 50+ devs **OR** Company is a Commercial account ( <250 employees)
 
 ### Target Account
 

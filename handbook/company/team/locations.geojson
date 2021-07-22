@@ -899,7 +899,7 @@
           33.84874817060767
         ]
       }
-   },
+    },
     {
       "type": "Feature",
       "properties": {
@@ -910,7 +910,98 @@
         "coordinates": [
           -117.92734265327452,
           33.673845318635735
-         ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Carl Hicks"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.036873,
+          38.907192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ben Gordon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.62420654296875,
+          41.87582421126483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Donavon Ellison"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61172103881836,
+          34.1109517943943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Michael Bali"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.379206,
+          6.524379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mariam Adedeji"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.515625,
+          7.710991655433229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alex Isken"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.90158987045288,
+          43.0482043271894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bill Caplan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.63889217376709,
+          35.78408549932274
+        ]
       }
     }
   ]

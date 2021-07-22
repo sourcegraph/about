@@ -29,8 +29,8 @@ This is a basic breakdown of our expectations for providing a smooth onboarding 
 - New teammate has the necessary support from their peers, manager, and People team (regular 1-1s, shadowing...)
 - New teammate knows where to find answers to their questions 
 - New teammate experiences no logistical challenges (payroll, expenses, benefits, setting up accounts or other systems...)
-- The onboarding checklist is manageable and easy to navigate by new teammate'
-- New teammate has the necessary understanding of Sourcegraph's values, products, value proposition, and internal processes to be able to conduct their role responsibilities
+- The onboarding checklist is manageable and easy to navigate by new teammates
+- New teammate has the necessary understanding of Sourcegraph's values, products, value proposition, and internal processes to be able to conduct their role's responsibilities
 
 ### Onboarding experience
 Surveys are conducted at the 3-month mark to collect feedback from all new teammates to make sure that their onboarding experience is properly equipping them with the support and resources necessary for them to be successful in their new role. 
@@ -53,20 +53,13 @@ Survey questions:
 #### Mid-onboarding check-in
 People Ops sets up individual meetings to collect live feedback and address any questions or concerns from every new teammate at the 1-month mark.
 
-### Onboarding effectiveness
-Surveys are also conducted at the 3-month mark to collect feedback from hiring managers to measure overall onboarding effectiveness so we can ensure that our onboarding is helping new teammates properly ramp up for their roles in the expected timeframe.
+## Onboarding Feedback Milestones
 
-Survey questions:
+The People Ops team wants to help managers support their teammates better, in order for them to avoid burnout, better clarify expectations, give feedback on progress and stimulate confidence in new teammates in the first few months, thereby enhancing performance and wellbeing. 
 
-- Was the teammate able to comply with their assignments (in time)?
-- Were they responsive?
-- Did they participate in team meetings?
-- Were they able to integrate to the team?
-- Have they made meaningful contributions?
-- Are they able to perform expected duties for their role?
+We also want to support managers in gathering insight of their teammate’s progress and development.
 
-If this needs to get more specific by role, we can make adjustments to questions if needed.
-
+Read about how we do this in [Onboarding Feedback Milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-feedback-milestones)
 
 ## Before you start at Sourcegraph
 

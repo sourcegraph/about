@@ -185,26 +185,32 @@ Avoid any instructions or language that requires the user to see the layout or d
 
 ## Numbers
 
-Use the numeral when numbers appear in copy. This includes ordinals (numbers that tell the position of something in a list).
+- Spell out numbers 1-9 except for percentages and ranges.
+- Use numerals for 10 upwards. 
+- Always use the numeral for ordinals (numbers that tell the position of something in a list).
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
 <li>30+ results</li>
-<li>Last updated 2 days ago</li>
+<li>Last updated two days ago</li>
+<li>Only 5% of developers prefer working in an office.</li>
+<li>More than 6 out of 10 software professionals reported a significant increase...</li>
 </ul>
 </div>
 <div class="item no">
 <h5>No</h5>
 <ul>
 <li>Thirty or more results</li>
-<li>Last updated two days ago</li>
+<li>Last updated 2 days ago</li>
+<li>Only five % of developers prefer working in an office.</li>
+<li>More than six out of ten software professionals reported a significant increase...</li>
 </ul>
 </div>
 </div>
 
-Numbers over 3 digits get commas.
+Numbers over three digits get commas.
 
 <div class="usage">
 <div class="item yes">
@@ -551,7 +557,28 @@ Use periods in complete sentences. Don’t use periods in headlines or labels. P
 
 ### Quotation marks
 
-Watch out for dumb quotation marks (`'` and `"`). These are a relic of typewriters, and can be identified by how they’re straight rather than curly. Always use typographic quotation marks (`‘` and `’`, `“` and `”`).
+When quoting content, use double quotation marks. Use single quotation marks to quote content within an existing quote.
+In HTML, using `<q></q>` will automatically apply the correct quotation marks for nested `<q>` tags.
+
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>Add an insight to “Test Dashboard”</li>
+<li>“When quoting inside existing quotes, ‘Single quotes’ are the way to go”</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>Add an insight to ‘Test Dashboard’</li>
+<li>“When quoting inside existing quotes, avoid “double quoting””</li>
+</ul>
+</div>
+</div>
+
+Watch out for dumb quotation marks (`'` and `"`). These are a relic of typewriters, and can be identified by how they’re straight rather than curly. Always use typographic quotation marks (`‘` and `’`, `“` and `”`).<br>
+In HTML, the easiest way to add the appropriate typographic quotation marks is to wrap the quote in `<q></q>` instead of manually quoting.
 
 <div class="usage">
 <div class="item yes">
@@ -1034,3 +1061,20 @@ Treat all supported platforms equally. For example, don’t give instructions fo
 Wherever possible, link to a 3rd-party tool’s existing documentation over explaining it in our own documentation, because our explanation can easily become outdated.
 
 Prefer the `https` URL scheme (`https://example.com` not `http://example.com`). The only exception is if the site actually doesn’t support HTTPS.
+
+### Caption tracks and transcripts
+
+Provide caption tracks and transcripts for all video and audio media. The style and mechanics in these content guidelines should be followed where possible, particularly with [product and feature names](style_and_mechanics.md#product-names), [capitalization](style_and_mechanics.md#capitalization-names), and [punctuation](style_and_mechanics.md#punctuation).
+
+While automatic transcription tools like Otter are recommended, the generated transcript must be treated as a first draft. Review the transcript for accuracy, formatting, and style conventions.
+
+Where a narrator describes code, search queries, or other text that also appears in a video, match the captions to the text and formatting shown in the video.
+
+<div class="usage">
+<div class="item yes">
+<h5>Example</h5>
+<ul>
+<li>Search query in video says `ReadFile`, but automatic transcript says `read file`. Transcript should be updated to `ReadFile` as shown in the video.</li>
+</ul>
+</div>
+</div>

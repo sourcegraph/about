@@ -21,11 +21,22 @@ For additional context, check out [RFC 274](https://docs.google.com/document/d/1
 
 ## The team
 - [Adeola Akinsiku](../company/team/index.md#adeola-akinsiku)
-- [Warren Gifford](../company/team/index.md#warren-gifford-he-him)
-- [Stompy Mwendwa](../company/team/index.md#stompy-mwendwa)
-- [Giselle Northy](../company/team/index.md#giselle-northy-she-her)
+- [Alex Jean-Baptiste](../company/team/index.md#alex-jean-baptiste-he-him)
+- [Amber Furbush](../company/team/index.md#amber-furbush-she-her)
 - [Beatrix Woo](../company/team/index.md#beatrix-woo-she-her)
-- [Virginia Ulrich](../company/team/index.md#virginia-ulrich-she-her) (Head of Customer Support - reporting to Beyang, CTO)
+- [Ben Gordon](../company/team/index.md#team#ben-gordon-he-him)
+- [Carl Hicks](../company/team/index.md#carl-hicks-he-him)
+- [Don Ellison](../company/team/index.md#donavon-ellison-he-him)
+- [Gabe Torres](../company/team/index.md#team#gabe-torres-he-him)
+- [Giselle Northy](../company/team/index.md#giselle-northy-she-her)
+- [Jason Harris](../company/team/index.md#jason-harris-he-him)
+- [Kelvin Lee](../company/team/index.md#kelvin-lee-he-him)
+- [Mariam Adedeji](../company/team/index.md#mariam-adedeji-she-her)
+- [Michael Bali](../company/team/index.md#michael-bali-hehim)
+- [Stompy Mwendwa](../company/team/index.md#stompy-mwendwa)
+- [Warren Gifford](../company/team/index.md#warren-gifford-he-him)
+- [Virginia Ulrich](../company/team/index.md#virginia-ulrich-she-her) (Head of Customer Support - reporting to Beyang Liu, CTO)
+- 2 to-be-hired managers coming soon
 
 More details about each team member in [our team READMEs](support-bios.md).
 
@@ -49,12 +60,12 @@ In addition to these top level key performance indicators (KPIs), we will have s
 
 
 ## How we intersect with other teams
-We work alongside just about every team. Here is how we add value to each other and a collaboration overview for each pairing.
+We are a [customer-first company](../company/customer-first.md). We work alongside just about every team. Here is how we add value to each other and a collaboration overview for each pairing.
 
 ### Customer Engineers (CEs)
-- **How support adds value to CE:** Support is the go-to technical team for our CEs, helping customers both pre- and post-sales, and allowing CEs to do more proactive work by taking on the reactive technical troubleshooting work when customers experience issues.
+- **How support adds value to CE:** Support helps customers both pre- and post-sales, and allowing CEs to do more proactive work by taking on the reactive technical troubleshooting work when customers experience issues.
 - **How CE adds value to support:** CE has nuanced context that is valuable to how support works with a customer; CE can also help clarify / remind customers we need information (during regularly scheduled calls) on the more tricky issues.
-- **Collaboration overview:** We can think of CE and support as work best friends, working closely together every day, primarily communicating in Slack. CEs (or others -- including customers -- but primarily CEs) may engage support at any point during the pre-sales and post-sales customer engagement process. Where Sales is focused on the commercial relationship, CE is focused on product success/usage/adoption. If the CE is stuck, doesn’t know the answer, that is the exact right time to bring in support and let support do the heads-down troubleshooting work. This relationship helps provide space for CEs to be proactive and fits in perfectly with the already reactive nature of the support workflow.
+- **Collaboration overview:** We can think of CE and support as work best friends, working closely together every day, primarily communicating in Slack. CEs (or others -- including customers -- but primarily CEs) may engage support at any point during the pre-sales and post-sales process to share context to help support best serve our customers.
 
 ### Software Engineers (SWEs)
 - **How support adds value to SWEs:** Support handles the majority of customer issues, reducing the amount of time engineering has to be reactive and providing a more data-driven view into the source of recurring issues/questions; support also handles the majority of internal and external communication during a critical p0 incident (letting engineering stay focused on solving the issue).

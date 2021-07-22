@@ -5,9 +5,11 @@ When set up for it, engineering and support teams have so much to offer each oth
 ## Data sharing
 CS categorizes all customer inquiries so that we can get better insight into trends and identify opportunities for improvement. CSEs also share qualitative data about customer context and/or issues to ensure we fully consider what is best for the customer in our decision making.
 
+## Office hours
+Some folks in engineering offer office hours and those can be useful for a CSE to join to learn, ask questions, collaborate. 
+
 ## Team rotations
 
-* **CSEs rotate on Distribution.** As part of CSE onboarding, sometime during a CSE’s first or second month, they join the Distribution team for an iteration. During this period, it’s as if the CSE is part of the Distribution team, pairing with members of Distribution to learn as much as possible. The CSE stops taking new customer support tickets the Thursday prior to their rotation, so they have as little support work to follow-up on as possible during the rotation. (If a CSE feels a customer requires a transition of responsibility on a ticket, they can raise this to the team for discussion in our #customer-support-internal Slack channel.) The CSE also does the rotation with the intent of sharing the knowledge they learn with the rest of their CSE teammates.
 * **CSEs rotate on other engineering teams.** Depending on interest and timing with all involved, CSEs may also do rotations in other teams. These will be carefully coordinated to make sure that we always have enough help available to our customers. If a CSE is interested, they can start the process by talking with Virginia to determine next steps.
 * **Members of engineering rotate on support.** There is tons of value in working directly with customers and seeing the variety of questions and issues that come up across our entire customer base. Any member of engineering who is interested in working in support for a day or even a week, just needs to let the support team in #customer-support-internal and we will make it happen. Starting in FY22Q2, all new hires in engineering will do a 3 day rotation in support as part of their onboarding, as well as an annual rotation.
 
@@ -23,7 +25,7 @@ We are not quite a big enough team to have folks pair long term with one team. F
 
 
 ## Root cause focus
-It can be hard to focus on the root cause. It can be far too easy to focus on solving for a symptom instead. CSEs know to keep this focus and how to divide the work so that we offer a quick solution and are able to plan for the deeper work to address the underlying issue. Read [an open letter about root cause)[root-cause.md] for more.
+It can be hard to focus on the root cause. It can be far too easy to focus on solving for a symptom instead. CSEs know to keep this focus and how to divide the work so that we offer a quick solution and are able to plan for the deeper work to address the underlying issue. Read [an open letter about root cause](root-cause.md) for more.
 
 ## Support rotation donut pairing
 
@@ -56,22 +58,6 @@ When we work on documentation, we…
 * ...ensure that every page in our docs to have a single purpose (it may take us awhile to redo what is there, but keep this in mind for creating/revising)
 * ...ensure that if we move a page, we add a redirect for the old URL [here](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/doc/_resources/assets/redirects)
 * ...default to explaining in text so it’s searchable (avoid screenshots)
-
-## Troubleshooting documentation project
-Starting in FY22Q1 with a goal to complete in FY22Q2, CSEs are adopting an area of focus to specifically fill the gap of where to start troubleshooting when an issue surfaces. Giselle is leading this effort (if you have questions) and anyone can see our progress in this table (we simply mark when something is done and if you want more detailed status, you can check with support in #customer-support-internal). When a CSE is responsible for a focus, they will work with that team to capture all the good information about troubleshooting.
-
-|Focus|CSE Responsible|Status|
-|---|---|---|
-|API docs|TBD||
-|Batch changes|TBD||
-|Code insights|TBD||
-|Code intelligence|Warren|In-progress; Eric completed [v1](https://docs.sourcegraph.com/code_intelligence/references/troubleshooting)|
-|Core application|Stompy|In-progress|
-|Distribution|Giselle|In-progress|
-|Extensibility|Beatrix|In-progress|
-|Frontend platform|TBD||
-|Search (core and product)|Adeola|In-progress|
-|Security|TBD||
 
 ## Projects
 Some engineering teams have a way for a CSE to take on a scope-bound project (like taking responsibility for a small Github issue). This isn’t easy for all teams and it’s better if we start with a conversation than jumping in. The best place to start is with Virginia just in case she has helpful context she has forgotten to share. And also consider the following…

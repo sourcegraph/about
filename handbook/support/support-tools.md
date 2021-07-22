@@ -8,6 +8,7 @@ When you first start in support, the list of tools to set-up can feel like a lot
 * Zoom is how we connect synchronously.
 * Gmail is mostly for notifications.
 * Google calendar is for your calendar, as well as shared calendars (like the CS team calendar).
+* Asana is for our project tracking as a team
 * Gsuite is for drafts, slide decks, and spreadsheets.
 * Lattice is to facilitate our for our twice yearly [review cycles](https://about.sourcegraph.com/handbook/people-ops/review-cycles).
 * Greenhouse is for hiring.
@@ -24,8 +25,54 @@ When you first start in support, the list of tools to set-up can feel like a lot
 * Krisp quiets background noise when on Zoom.
 * Grammarly and Hemingwayapp help us say what we intend and catch any typos we don't see.
 
+## Test Environments
+
+There are some test environments created specifically for the Customer Support Engineers to run tests on when helping customers. They allow the team to reproduce and debug issues without affecting our production instances.
+
+* [Test instance deployed with Docker Compose](https://cse-aws-test.sgdev.org/)
+* [Test instance deployed with Kubernetes](https://cse-k8s.sgdev.org/)
+* [Single Docker for local testing](https://docs.sourcegraph.com/admin/install/docker)
+* [Installation guide for Local Development](https://docs.sourcegraph.com/dev)
+* [GitHub test instance ](https://github.sgdev.org)
+* [GitLab test instance ](https://gitlab.sgdev.org)
+* [Gerrit test instance ](https://gerrit.sgdev.org/)
+* [Bitbucket test instance ](https://bitbucket.sgdev.org/)
+* [Phabricator test instance ](https://phabricator.sgdev.org/)
+
+> NOTE: You can find all the login credentials for the test instances in your 1Password account.
+
 ## Troubleshooting
-A placeholder to be populated over time as the team onboards and ramps-up
+
+### GitHub Repository for Support Tools
+
+The [Support Tools GitHub Repository](https://github.com/sourcegraph/support-tools) contains tools built by the Customer Support Engineers that provide values when supporting our customers. You are welcome to add your projects to this repository, but please speak to Virginia about your ideas and plans before development starts to aviod possible conflicts. 
+
+> NOTE: Please aviod working directly on main branch.
+
+[Link to Support Tools GitHub Repository](https://github.com/sourcegraph/support-tools)
+
+### Command Line Generator
+
+The [Command Line Generator](https://sourcegraph.github.io/support-tools/command-generator/beta/) is a simple web app that supports can use to generate the most frequently used commands for different deployment type when supporting a customer.
+
+[Link to Command Line Generator GitHub Repository](https://github.com/sourcegraph/support-tools/tree/main/command-generator)
+
+### Sourcegraph Graphql Voyager
+
+[Sourcegraph Graphql Voyager](https://sourcegraph.github.io/support-tools/Graphql-Voyager/) is a bootstraped tool that allows users to visually explore the Sourcegraph GraphQL API as an interactive graph.
+
+#### How to use:
+
+1. Go to [Cors Demo](https://cors-anywhere.herokuapp.com/) to opt-in for temporary `Cors Anywhere` access by clicking on the Request temporary access to the demo server button
+2. Enter your Sourcegraph Token on homescreen
+
+[Link to Sourcegraph Graphql Voyager GitHub Repository](https://github.com/sourcegraph/support-tools/tree/main/Graphql-Voyager)
+
+### Scripts
+
+Creating customized scripts can help automate a repetitive task for the team and the customers. You can find all the existing scripts in this [directory](https://github.com/sourcegraph/support-tools/tree/main/scripts) and are welcome to write and share your own custom scripts with the team.
+
+[Link to GitHub Repository for Scripts](https://github.com/sourcegraph/support-tools/tree/main/scripts)
 
 
 ## Zendesk

@@ -19,6 +19,7 @@ export default class Header extends React.Component<HeaderProps, any> {
             isOpen: false,
         }
     }
+
     public toggle(): void {
         this.setState({
             isOpen: !this.state.isOpen,
@@ -28,6 +29,16 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
+                {/* Temporary banner for 2021 Q2 launch */}
+                {(this.props.isHome || this.props.isBlog) && (
+                    <div className="d-flex align-items-center justify-content-center background-purple text-white font-weight-bold p-2">
+                        We just raised $125M (led by a16z) to bring really great code search to every developer
+                        <Link to="/blog/the-future-of-code-search/" className="ml-2 btn btn-sm btn-light">
+                            See how
+                        </Link>
+                    </div>
+                )}
+
                 <nav className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container-lg px-0 px-lg-3">
                         <Link className="navbar-brand header__logo" to="/">
@@ -77,7 +88,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 href="https://docs.sourcegraph.com"
                                                 target="_blank"
                                             >
-                                                Docs <ExternalLinkIcon className="icon-inline small ml-1" />
+                                                Docs
                                             </a>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">

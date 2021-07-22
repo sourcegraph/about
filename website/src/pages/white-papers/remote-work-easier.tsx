@@ -223,7 +223,7 @@ export default ((props: any) => (
             <ContentSection color="black" className="py-5">
                 <div className="row justify-content-md-center">
                     <div className="col-md-3 text-center">
-                        <a href="https://twitter.com/srcgraph" target="_blank">
+                        <a href="https://twitter.com/sourcegraph" target="_blank">
                             <TwitterIcon size={72} />
                         </a>
                     </div>
@@ -233,9 +233,9 @@ export default ((props: any) => (
                             <a
                                 href="https://twitter.com/share?ref_src=twsrc%5Etfw"
                                 className="twitter-share-button"
-                                data-text='Great read on "Remote software development made easier" – @srcgraph has helped me with ...'
+                                data-text='Great read on "Remote software development made easier" – @sourcegraph has helped me with ...'
                                 data-url="https://about.sourgraph.com/white-papers/remote-work-easier"
-                                data-related="srcgraph"
+                                data-related="sourcegraph"
                                 data-show-count="false"
                             ></a>{' '}
                             and let us know!

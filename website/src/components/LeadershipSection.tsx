@@ -56,7 +56,7 @@ const LEADERS: {
             bio: '/handbook/company/team#gregg-stone',
             github: 'https://github.com/sourcegraph',
             linkedin: 'https://www.linkedin.com/in/stonegregg',
-            twitter: 'https://twitter.com/srcgraph'
+            twitter: 'https://twitter.com/sourcegraph'
         },
         {
             name: 'Kacie Jenkins',
@@ -83,7 +83,7 @@ const LEADERS: {
             bio: '/handbook/company/team#carly-jones-she-her',
             github: 'https://github.com/carlyj0nes',
             linkedin: 'https://www.linkedin.com/in/carlycjones/',
-            twitter: 'https://twitter.com/srcgraph'
+            twitter: 'https://twitter.com/sourcegraph'
         },
         {
             name: 'Debbie Johnstone',
@@ -92,7 +92,7 @@ const LEADERS: {
             bio: '/handbook/company/team#debbie-johnstone-she-her',
             github: 'https://github.com/sourcegraph',
             linkedin: 'https://www.linkedin.com/in/debbie-johnstone-58901a1b/',
-            twitter: 'https://twitter.com/srcgraph'
+            twitter: 'https://twitter.com/sourcegraph'
         },
         {
             name: 'Katerina Nikolova',
@@ -110,7 +110,7 @@ const LEADERS: {
             bio: '/handbook/company/team#noemi-mercado-she-her',
             github: 'https://github.com/mercadon',
             linkedin: 'https://www.linkedin.com/in/noemí-mercado-3aa92798',
-            twitter: 'https://twitter.com/srcgraph'
+            twitter: 'https://twitter.com/sourcegraph'
         },
     ]
 

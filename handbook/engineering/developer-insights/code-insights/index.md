@@ -58,6 +58,16 @@ For more information about code insights, see the original [product document](ht
 
 [Goals and roadmap](goals.md)
 
+## Useful browser bookmarks ⭐️
+
+The following bookmarks are useful to add to your browser's bookmark bar if you're on the code insights team. You can drag & drop these directly into your bookmarks bar.
+
+- [GitHub Project Board](https://github.com/orgs/sourcegraph/projects/118?fullscreen=true) (fullscreen)
+- [New code insights issue](https://github.com/sourcegraph/sourcegraph/issues/new?labels=team/code-insights&projects=sourcegraph/118) (pre-fills labels and project)
+- <a href="javascript:location.search='?expand=1&template=developer_insights.md&labels=team/code-insights'">Use Developer Insights PR template</a> (bookmarklet, run on the open-PR GitHub page to add our checklist template)
+- [Code Insights GDrive folder](https://drive.google.com/drive/folders/16DrxdYnJAQ-fCIy3n1DXheReqWNV5U12) (all our documents are here or linked from here)
+- [Code Insights Roadmap](https://sourcegraph.productboard.com/roadmap/2809900-code-insights-features-timeline-roadmap)
+
 ## Processes
 
 We share the [Developer Insights org's processes](../index.md#processes), plus the following for our team.
@@ -79,7 +89,8 @@ We plan and track our day-to-day work on our [Kanban board](https://github.com/o
 - Incoming tickets (e.g. from other teams) arrive in the _Inbox_ column.
 - Work is scheduled by adding a card to the _Planned_ column. This happens after talking through the next priorities in our [weekly sync](#weekly-sync) or raising something asynchronously in the #code-insights Slack channel.
   - The _Planned_ column is an _ordered_ column, by priority. Priority is discussed on the team.
-  - Work should not be moved into this column until it is ready for development.
+  - Work should not be moved into the _Planned_ column until it is ready for development _and_ estimated and prioritized. 
+  - Work that is ready for development but not yet estimated or prioritized sits in the _Ready for Dev_ column. 
   - Anything that needs design input gets the `needs-design` label and goes in the _Needs design_ column.
 - When starting work, engineers pull cards from the _Planned_ column and move it to the _In Progress_ column.
 - There should never be more than a couple of cards in the _In Progress_ column at the same time. If we paused work on something (e.g. because priorities changed), it should be moved back to _Planned_ or _Icebox_ as appropriate.
@@ -141,3 +152,13 @@ We use SVG and D3 libraries (d3-scales, d3-axis, d3-format) for this.
   If you want to dive a little more into the peculiarities of SVG spec.
 
 **NOTE**: _The order is not important, you can read these as you like depending on what you are interested in._
+
+## Code Insights history 
+
+In mid-2020, Code Insights was born out of [RFC 144: Code Insights](https://docs.google.com/document/d/1EHzor6I1GhVVIpl70mH-c10b1tNEl_p1xRMJ9qHQfoc/edit#), with the stated goal of being a Sourcegraph feature directly valuable to users in engineering leadership, in addition to individual developers. It was prototyped solely on the frontend to validate strong customer interest. 
+
+In late 2020, after the initial validation, and using the frontend-only functional prototype, a product designer and newly-hired product manager developed a detailed validation of use cases, customer excitement, potential directions, and the existing spaces the product fit into. Those findings are in [PD 18: Code Insights](https://docs.google.com/document/d/1d34gCpt_rUOMAun8phcjNsFofGaaA_N_8znmgaugdKw/edit). 
+
+In early 2021, seeing continued validation and opportunity, Code Insights became its own team separate from the "web team" (now 2021's Developer Insights org). 
+
+In mid-2021 we made the first engineering hires to grow Code Insights to a full engineering team and bring the product to market. 

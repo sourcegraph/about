@@ -15,12 +15,15 @@ You might think of this page as a remote version of "the clever workflows and sh
 - **Automatically add links to your slack posts by copying a url, highlighting the text you want to link in the slack message, and then pasting.** This way you can use `cmd`+`v` instead of the Slack "add link" button or the slack keyboard shortcut of `cmd`+`shift`+`U`.
 - **Disable their WYSIWYG editor if you prefer markdown.** Go to Preferences > Advanced > Check "Format messages with markup."
 - **Show only unread channels in your channel sections.** Right-click on a channel section or the "Channels" header, then select "Show" > "Unread channels only."
+- **Set up [Slack keywords](https://slack.com/slack-tips/get-notified-when-someone-mentions-a-topic-you-care-about) to get notified about relevant threads you aren't tagged in.** Go to Preferences > Notifications > My keywords and add your list of keywords separated by commas. You'll get notified whenever someone uses them.
+- **Use [Slackbot's reminder feature](https://slack.com/help/articles/208423427-Set-a-reminder#set-a-reminder-for-a-message) to get reminded of threads later on without leaving them as unread** Hover on any Slack message > Select "More actions" in the tool bar > Select "Remind me about this" and choose when you'd like to be reminded. Slackbot will keep your pending messages backlog, you can mark items as Complete when you've gone through them. 
 
 ### Popular app integrations
 
 - **[Connect your Google calendar](https://slack.com/app-pages/google-calendar)** to get reminders and show when you're in a meeting.
 - **[Connect Zoom](https://sourcegraph.slack.com/apps/A5GE9BMQC-zoom)** so you can type `/zoom` and quickly start zoom calls.
 - **[Connect Clockwise](https://www.getclockwise.com/)** if you use it to schedule meetings; use the GCal integration to send you reminders and the Clockwise integration to handle detailed Slack status updates.
+- **[Connect Google Drive](https://sourcegraph.slack.com/services/B0250C3EWQ5)** to get notifications on comments and shares on Google Drive files. Note: after you add this Slack integration, you have to go to the Google drive app in the "Apps" section of Slack and message it `on` ([full docs on managing notifications](https://slack.com/help/articles/205875058-Google-Drive-for-Slack#manage-notifications)). If the integration still doesn't respond, [removing it from the entire slack workspace](https://sourcegraph.slack.com/services/B026KBZJGJC) and then re-adding it might work, but you should first verify with others via Slacking #it-tech-ops that it's stopped working for them. After you remove and re-add, you should notify the same channel that you've done so, because everyone might need to re-message `on` to their drive app channel. 
 
 ## Web Browsers
 

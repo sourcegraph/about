@@ -46,9 +46,19 @@ See [goals](goals.md)
 
 ## Processes
 
-We have two week cycles starting on Wednesdays. We do a sync planning the day before (Tuesday) where we determine what each teammate works on. We use GitHub projects to track that work. We do a sync retrospective on Mondays, before planning, and a general team sync meeting every other Monday. We use Geekbot in the #core-application-sync channel for daily updates and weekly digests.
+We have two week cycles starting on Wednesdays. We do a sync planning the day before (Tuesday) where we determine what each teammate works on. We use JIRA to track that work. We do a sync retrospective before the planning meeting, and have a general team sync meeting every other Monday. We use Geekbot in the #core-application-sync channel for daily updates.
 
 ## Team norms
+
+### Getting assistance
+
+If you need assistance with a task, let the team know in the #core-application-sync channel. You'll find your peers are more than happy to act as a [rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) and get you unblocked, or direct you to the right person(s) for further assistance.
+
+See [Tagging teammates](#tagging-teammates) below for more information.
+
+### Giving assistance
+
+Consider setting up regular [office hours](https://support.google.com/calendar/answer/190998?co=GENIE.Platform%3DDesktop&hl=en) so that peers can reserve your time, while knowing that they won't be disrupting your daily workflow.
 
 ### Code reviews
 
@@ -56,17 +66,28 @@ We have two week cycles starting on Wednesdays. We do a sync planning the day be
 - **Approve to unblock:** When the reviewer thinks there are no obvious blockers and trusts the pull request author will take care of comments/questions/concerns (e.g. answer to questions, explain rationale, act on code suggestions) before merging the pull request.
 - **Request for changes:** When the reviewer believes it is important to get another round of review from the person before merging the pull request. This situation often happens when there is a significant design change.
 
+### JIRA
+
+The team is currently experimenting with JIRA as our project tracker.
+
+To track GitHub PRs automatically in JIRA, use the JIRA ticket number anywhere in the branch name. So for example, if the ticket number is `COREAPP-42` and you name your branch `the-answer-to-everything-COREAPP-42`, the resulting PR from this branch will automatically be associated with the JIRA ticket.
+
+
+### Tagging teammates
+
+Feel free to tag `@core-app` on Slack or anyone directly as and when required. It is acceptable to tag people to get their attention. On the contrary it is also acceptable to turn off your notifications when you want to focus and do not want to be interrupted.
+
 ## Members
 
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
-- R.P. ([Product Manager](../../product/roles/index.md#product-manager)) starts 2021-05-03. [Christina Forney](../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
+
+- [Ryan Phillips](../../company/team/index.md#ryan-phillips-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
 - [Quinn Keast](../../company/team/index.md#quinn-keast-he-him) ([Product Designer](../../product/roles/index.md#product-designer))
-- Rafal Leszczynski ([Engineering Manager](../roles.md#engineering-manager)) {#core-application-eng}
-    - [Joe Chen](../../company/team/index.md#joe-chen)
-    - [Ryan Slade](../../company/team/index.md#ryan-slade-he-him)
-    - [Alan Harris](../../company/team/index.md#alan-harris-he-him)
-    - [Artem Ruts](../../company/team/index.md#artem-ruts-he-him)
-    - [Tomás Senart](../../company/team/index.md#tomás-senart)
-    - [Asdine El Hrychy](../../company/team/index.md#asdine-el-hrychy)
-    - [Indradhanush Gupta](../../company/team/index.md#indradhanush-gupta-he-him)
-    - FQ4 hire
+- [Rafal Leszczynski](../../company/team/index.md#rafal-leszczynski-he-him) ([Engineering Manager](../roles.md#engineering-manager)) {#core-application-eng}
+  - [Joe Chen](../../company/team/index.md#joe-chen)
+  - [Ryan Slade](../../company/team/index.md#ryan-slade-he-him)
+  - [Alan Harris](../../company/team/index.md#alan-harris-he-him)
+  - [Artem Ruts](../../company/team/index.md#artem-ruts-he-him)
+  - [Asdine El Hrychy](../../company/team/index.md#asdine-el-hrychy)
+  - [Indradhanush Gupta](../../company/team/index.md#indradhanush-gupta-he-him)
+  - FQ4 hire
