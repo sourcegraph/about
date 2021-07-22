@@ -78,26 +78,11 @@ changelogItems:
   - description: Listing Github Entreprise org repos now returns internal repos as well.
     url: https://github.com/sourcegraph/sourcegraph/pull/22339
     category: Repositories
-  - description: "An issue where using `select:repo` in conjunction with `and` patterns did not yield expected repo results."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22743
-    category: Repositories
   - description: "The `isLocked` and `isDisabled` fields of GitHub repositories are now fetched correctly from the GraphQL API of GitHub Enterprise instances. Users that rely on the `repos` config in GitHub code host connections should update so that locked and disabled repositories defined in that list are actually skipped."
     url: https://github.com/sourcegraph/sourcegraph/pull/22788
     category: API
-  - description: "Homepage no longer fails to load if there are invalid entries in user's search history."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22857
-    category: Search
-  - description: An issue where regexp query highlighting in the search bar would render incorrectly on Firefox.
-    url: https://github.com/sourcegraph/sourcegraph/pull/23043
-    category: Search
   - description: "The experimental paginated search feature (the `stable:` keyword) has been removed, to be replaced with streaming search."
     url: https://github.com/sourcegraph/sourcegraph/pull/22428
-    category: Search
-  - description: The experimental extensions view page has been removed.
-    url: https://github.com/sourcegraph/sourcegraph/pull/22565
-    category:
-  - description: "A search query diagnostic that previously warned the user when quotes are interpreted literally has been removed. The literal meaning has been Sourcegraph's default search behavior for some time now."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22892
     category: Search
   - description: "API docs is enabled by default in Sourcegraph 3.30.0. It can be disabled by adding `\"apiDocs\": false` to the `experimentalFeatures` section of user settings."
     url:
