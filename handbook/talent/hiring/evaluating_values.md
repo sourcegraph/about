@@ -1,6 +1,7 @@
 # The values interview 
 
-We expect every teammate, team, and our company to live up to the [Sourcegraph values](../../company/values.md). It is therefore important that we evaluate every candidate on the values to determine how successful they will be within Sourcegraph.  Because of this, **all candidates,** regardless of level or role, go through a [values interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#values-interview) as part of their interview process with Sourcegraph.
+## Why do we conduct a values interview?
+We expect every teammate, team, and our company to live up to the [Sourcegraph values](../../company/values.md). It is therefore important that we evaluate every candidate on the values to determine how successful they will be within Sourcegraph.  **All candidates,** regardless of level or role, go through a [values interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#values-interview) as part of their interview process with Sourcegraph.
 
 ## What is the values interview? 
 - Interviewers: two teammates outside of the department for which a candidate is interviewing.
@@ -21,16 +22,16 @@ You can see more information about our interview stages [here](https://about.sou
 
 **Part 1**: Introduce yourself, build rapport, and set agenda
 
-Sample script: Hi [candidate name], thank you so much for joining us today!  We know you have been through several other stages of the interview process, and everyone has really enjoyed getting to know you thus far.  For the next 30-minutes, we're excited to spend time together discussing our values, which we believe are the principles and beliefs that help us achieve our goals and vision.  We'd like to start with introductions.  We will then ask a series of questions related to our values, and we'll be sure to leave 5-10 minutes at the end for questions from you.  Does this sound good?
+Sample script: Hi [candidate name], thank you so much for joining us today!  We know you have been through several other stages of the interview process, and everyone has really enjoyed getting to know you thus far.  For the next 30-minutes, we're excited to spend time together discussing our values, which we believe are the principles and beliefs that help us achieve our goals and vision.  We'd like to start with introductions.  We will then ask a series of questions related to our values, and we'll be sure to leave 5-10 minutes at the end for questions from you.  Does this sound good?  Do you have any questions before we get started?
 
-- 1st interviewer: my name is [name], my role is [position], and I have been at Sourcegraph for [length of time].
+- 1st (lead) interviewer: my name is [name], my role is [position], and I have been at Sourcegraph for [length of time].
 - 2nd interviewer: my name is [name], my role is [position], and I have been at Sourcegraph for [length of time].
 
 You can find the above information in the "interview prep" section of your Greenhouse scorecard. 
 
 **Part 2**: Ask structured, behavioral-based interview questions
 
-- Your stuctured interview questions can be found in your Greenhouse scorecard
+- Your stuctured interview questions can be found in your Greenhouse scorecard.  There are 5 questions listed.  If you find yourself running out of time, please **skip** the last question to give the candidate time for their questions. 
 - Your goal is to assess whether or not the candidate aligns with our values only. This is **not a skills assessment** for the role. 
 - Please make sure the interview is recorded by pressing "Record with Brighthire."  (Recording an interview is not required but we encourage it.  To learn more about why we record our interviews and why it helps provide a fair, inclusive, and enjoyable interview experience, [click here](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire).
 - Be sure to ask "drill down questions" and continue to ask more specific open ended "tell me..." questions to dig deeper and fully understand the candidate's response before moving forward to the next question. Some examples of "drill down questions" include:
@@ -43,7 +44,7 @@ You can find the above information in the "interview prep" section of your Green
 - Tell them why you love Sourcegraph! 
 - We are transforming the world by making it so that everyone can code.
 - We are a handbook-first company, and lead with transparency. 
-- We have experience tremendous revenue growth.
+- We have experienced tremendous revenue growth.
 - We have incredible leadership who set the example for trust and open communication.
 - We have endless growth opportunities and we invest in our employees' professional development.
 
@@ -51,19 +52,18 @@ You can find the above information in the "interview prep" section of your Green
 
 - Please fill out your Greenhouse Scorecard following the interview.  
 - To ensure that bias doesn't impact your decision-making, please be sure to fill out your scorecard before discussing with anyone. 
-- To learn more about providing feedback, [click here](https://about.sourcegraph.com/handbook/talent/interview_process#providing-interview-feedback).
+- To learn more about providing feedback, [click here](https://about.sourcegraph.com/handbook/talent/interview_process#providing-interview-feedback).  We want to hire people who we are **excited about**, so if you are not a "strong yes" and find yourself feeling neutral, please tell us why.     
 
 # Resources for recruiters 
 
-Please ask the Hiring Manager if they have any suggestions for their role.
-Reminders:
+When determining who the Values interview team is for a new role, please remember:
 
 - Must have been here for 3+ months. Here is a [doc](https://docs.google.com/spreadsheets/d/1NUDEjzud_GxocjKkd__m0hTf21tN3OIgOwtk_OjhV20/edit?ts=60e4c3bd#gid=0) that lists everyone who has been here for 3+ months. 
-- Must be two people from different departments
-- Please keep diversity in mind when selecting teams
+- Must be two people from different departments.
+- Please keep diversity in mind when selecting teams.
 
 Once the values team has been selected, the Recruiter is responsible for sending a Slack to each values team saying:
-- "Hi team! You have been selected to serve as the values team for the [role title]. [Here](https://about.sourcegraph.com/handbook/talent/hiring/evaluating_values) is a resource to help you in the interview. One of you will need to opt in as the lead (this person is the one who begins the introduction and asks the first question). All questions are listed in your Greenhouse scorecard, found in the interview prep link in an interview calendar invite. If you have any questions or would like to practice in advance of the interview, let me know and I'll send a calendar invite!"
+- "Hi team! You have been nominated to serve on the values interview team for the [role title]. Please review this [Handbook guide](https://about.sourcegraph.com/handbook/talent/hiring/evaluating_values) to learn more about our values interview. We recongize that this is outside of your day-to-day responsibilities, so please let us know if you're willing to participate (and if you're too busy right now, no worries!).  If you agree to opt in, you will conduct a 30-minute values interview for all [role title] finalists. One of you will serve as the "lead interviewer" (this person is the one who begins the introduction and asks the first question). All questions are listed in your Greenhouse scorecard, which can be found in the interview prep link in an interview calendar invite. If you have any questions or would like to practice in advance of the interview, please let me know and I'll send a calendar invite!"
 
 # Resources for candidates 
 
