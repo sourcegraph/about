@@ -15,6 +15,7 @@ $headings-font-family: 'PT Sans', $font-family-base;
 
 $blue: #2c7ef6;
 $red: #dc3545;
+$purple: #5033e1;
 $brand-purple: #b200f8;
 $brand-cyan: #00b4f2;
 $brand-orange: #f96316;
@@ -53,7 +54,6 @@ $input-btn-padding-y: 0.55rem;
 @import 'node_modules/bootstrap/scss/variables';
 
 // Set variables that rely on Bootstrap variables.
-
 $spacer: 1rem;
 $spacers: (
     0: 0,

@@ -15,7 +15,7 @@ All teammates who have been at Sourcegraph for 3+ months are eligible to conduct
 
 ## How do I conduct a values interview? 
 
-The purpose of the values interview is to determine if the candidate embodies and exemplifies our values.  It is not meant to be a skill assessment, and should only focus on Sourcegraph's values.
+The purpose of the values interview is to determine if the candidate embodies and exemplifies our values.  It is not meant to be a skill assessment, and should only focus on Sourcegraph's values. One member of the values team will opt in as a lead (this person is the one who begins the introduction and asks the first question), and then you will alternate asking questions with the other member of the values team.
 
 You can see more information about our interview stages [here](https://about.sourcegraph.com/handbook/talent/types_of_interviews)
 
@@ -33,7 +33,10 @@ You can find the above information in the "interview prep" section of your Green
 - Your stuctured interview questions can be found in your Greenhouse scorecard
 - Your goal is to assess whether or not the candidate aligns with our values only. This is **not a skills assessment** for the role. 
 - Please make sure the interview is recorded by pressing "Record with Brighthire."  (Recording an interview is not required but we encourage it.  To learn more about why we record our interviews and why it helps provide a fair, inclusive, and enjoyable interview experience, [click here](https://about.sourcegraph.com/handbook/talent/hiring/guide_to_using_brighthire).
-- Be sure to ask "drill down questions" and continue to ask more specific open ended "tell me..." questions to dig deeper and fully understand the candidate's response before moving forward to the next question.
+- Be sure to ask "drill down questions" and continue to ask more specific open ended "tell me..." questions to dig deeper and fully understand the candidate's response before moving forward to the next question. Some examples of "drill down questions" include:
+  -  "Tell us why you made that decision"
+  -  "Tell us what you would have done differently"
+  -  "Tell us how you implemented that feedback moving forward"
 
 **Part 3**: Answer candidate questions, sell, and end on a positive note!
 
@@ -49,6 +52,18 @@ You can find the above information in the "interview prep" section of your Green
 - Please fill out your Greenhouse Scorecard following the interview.  
 - To ensure that bias doesn't impact your decision-making, please be sure to fill out your scorecard before discussing with anyone. 
 - To learn more about providing feedback, [click here](https://about.sourcegraph.com/handbook/talent/interview_process#providing-interview-feedback).
+
+# Resources for recruiters 
+
+Please ask the Hiring Manager if they have any suggestions for their role.
+Reminders:
+
+- Must have been here for 3+ months. Here is a [doc](https://docs.google.com/spreadsheets/d/1NUDEjzud_GxocjKkd__m0hTf21tN3OIgOwtk_OjhV20/edit?ts=60e4c3bd#gid=0) that lists everyone who has been here for 3+ months. 
+- Must be two people from different departments
+- Please keep diversity in mind when selecting teams
+
+Once the values team has been selected, the Recruiter is responsible for sending a Slack to each values team saying:
+- "Hi team! You have been selected to serve as the values team for the [role title]. [Here](https://about.sourcegraph.com/handbook/talent/hiring/evaluating_values) is a resource to help you in the interview. One of you will need to opt in as the lead (this person is the one who begins the introduction and asks the first question). All questions are listed in your Greenhouse scorecard, found in the interview prep link in an interview calendar invite. If you have any questions or would like to practice in advance of the interview, let me know and I'll send a calendar invite!"
 
 # Resources for candidates 
 
