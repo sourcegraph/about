@@ -301,4 +301,4 @@ We’ve used Go to build a large-scale code search engine that compiles and inde
 
 #### Questions/comments?
 
-Follow [me (@sqs)](https://twitter.com/sqs) and [@srcgraph](https://twitter.com/srcgraph) on Twitter. And **check out** [**Sourcegraph**](https://sourcegraph.com)!
+Follow [me (@sqs)](https://twitter.com/sqs) and [@sourcegraph](https://twitter.com/sourcegraph) on Twitter. And **check out** [**Sourcegraph**](https://sourcegraph.com)!

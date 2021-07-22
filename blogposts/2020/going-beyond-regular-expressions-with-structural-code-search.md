@@ -302,5 +302,5 @@ For a complete overview, refer to [comby.dev](https://comby.dev).
 
 ## Feedback
 
-- Have a usage question or suggestion about structural search? [Send us a tweet](https://twitter.com/srcgraph) or e-mail us at <feedback@sourcegraph.com>
+- Have a usage question or suggestion about structural search? [Send us a tweet](https://twitter.com/sourcegraph) or e-mail us at <feedback@sourcegraph.com>
 - Run into a bug? [Create an issue on GitHub](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=bug_report.md&title=)

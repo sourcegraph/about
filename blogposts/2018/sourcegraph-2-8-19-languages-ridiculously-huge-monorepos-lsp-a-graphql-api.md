@@ -142,4 +142,4 @@ See the [Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/s
 
 **Ready to install or upgrade? [Get Sourcegraph 2.8.](https://docs.sourcegraph.com/#quickstart)**
 
-Questions/feedback/complaints/requests? Contact us at [@srcgraph](https://twitter.com/srcgraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues). We're planning for our next release, Sourcegraph 2.9 in mid-June, right now. The sooner we hear from you, the better!
+Questions/feedback/complaints/requests? Contact us at [@sourcegraph](https://twitter.com/sourcegraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues). We're planning for our next release, Sourcegraph 2.9 in mid-June, right now. The sooner we hear from you, the better!
