@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.30 release"
 publishDate: 2021-07-20T10:00-07:00
-description: "The Sourcegraph 3.30 release introduces"
+description: "The Sourcegraph 3.30 release introduces support for publishing or unpublishing changesets from the GUI, a new search reference to the search results sidebar, and Code Insights dashboards."
 tags: [blog, release]
 slug: "release/3.30"
 published: false
