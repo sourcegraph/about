@@ -76,7 +76,7 @@ One way we've enabled this is by allowing LSIF language indexers to emit data in
 
 <figure>
   <img height="400px" src="https://sourcegraphstatic.com/blog/api-docs/symbol-types.gif" alt="Hovering over symbols and showing Sourcegraph's deep semantic understanding of type information">
-  <figcaption>Hovering over symbols shows Sourcegraph's deep semantic understanding of type information, which you'll soon be able to search and filter based on.</figcaption>
+  <figcaption>Soon it will be possible to search and filter using Sourcegraph's deep semantic understanding of type information</figcaption>
 </figure>
 
 ### Direct feedback
