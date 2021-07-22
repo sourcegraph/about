@@ -27,6 +27,7 @@ For this interview you'll drive a walkthrough of either a personal project or li
 The following are sample ideas, the most important thing is you choose a library that you are comfortable and familiar with.  Walkthroughs can be done in
 any language, we do have a preference if possible that they are close to the domain you'd be working in.
 
+
 - For a full-stack position you may choose a library that you've used heavily such as [DateJs](https://github.com/datejs/Datejs)
 or to guide us through [Redux](https://github.com/reduxjs/redux).
 - If you're interviewing for a backend position you may choose a library such as [Mux](https://github.com/gorilla/mux) or [Ristretto](https://github.com/dgraph-io/ristretto).
@@ -37,21 +38,11 @@ or to guide us through [Redux](https://github.com/reduxjs/redux).
     - 30 minute walkthrough (script below).
     - 10 minutes of questions.
 - Be ready to screenshare the library in question via your IDE or editor of choice.
-- At some point during the discussion, the engineers will ask you to describe a function of their choice in
-  which you'll walk them through the language constructs and flow.
 
-### Interview script
-
-As we're attempting to stimulate a technical discussion between peers the following list is an outline of
-how we'll approach the conversation.  The ordering below is not indicative of the flow of the discussion.
-
-- What problem does this library solve?
-- If we wanted to use this, how would we get started?
-_Screensharing would now begin_
-- Can you show us where we'd instantiate the library?
-- What's the high level architecture?
-- Can you explain some of the different levels of abstraction?
-- What would you change about the library?
-- What is a clear flaw the library has?
-- What is an understandable piece of tech debt? How would go about refactoring this?
-- If you were to solve this problem from scratch, what different tradeoffs would you make?
+During the interview we will guide you to areas of the code that seem ripe for discussion.
+We may ask you to zoom in or out of layers of abstraction (into/out of functions, classes, and packages) in order to help us build a shared understanding of the code under review.
+You will be asked to explain how particular parts of the code under review work. The level of explanation will vary (but will not be a mystery):
+we may ask how high-level components interact, or we may ask how an individual function works in detail.
+We will try to ask both! We will ask follow-up questions about performance, usage ergonomics, code complexity, and ideas for improvements.
+We’ll also ask clarifying questions about how the code under review reacts to certain input or usage conditions.
+You will be asked to explain potential trade-offs given different hypothetical design constraints (what in the code would need to change).
