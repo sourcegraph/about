@@ -34,7 +34,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                     --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                     --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                     --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                    sourcegraph/server:3.29.1</span>
+                                    sourcegraph/server:3.30.0</span>
                                 <span className="get-started__copytext">
                                     <FileDocumentMultipleOutlineIcon
                                         className="copytext icon-inline ml-1 medium"
