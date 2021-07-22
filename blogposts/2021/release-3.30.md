@@ -78,12 +78,6 @@ changelogItems:
   - description: Listing Github Entreprise org repos now returns internal repos as well.
     url: https://github.com/sourcegraph/sourcegraph/pull/22339
     category: Repositories
-  - description: "Jaeger works in Docker-compose deployments again."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22691
-    category: Admin
-  - description: "A bug where the pattern `)` makes the browser unresponsive."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22738
-    category:
   - description: "An issue where using `select:repo` in conjunction with `and` patterns did not yield expected repo results."
     url: https://github.com/sourcegraph/sourcegraph/pull/22743
     category: Repositories
