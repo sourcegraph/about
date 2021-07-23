@@ -28,7 +28,7 @@ The following are sample ideas, the most important thing is you choose a library
 any language, we do have a preference if possible that they are close to the domain you'd be working in.
 
 
-- For a full-stack position you may choose a library that you've used heavily,  for example [DateJs](https://github.com/datejs/Datejs)
+- For a full-stack position you may choose a library that you've used heavily, for example [DateJs](https://github.com/datejs/Datejs)
 or [Redux](https://github.com/reduxjs/redux).
 - For a backend position you may choose a library that you've used heavily, for example [Mux](https://github.com/gorilla/mux) or [Ristretto](https://github.com/dgraph-io/ristretto).
 
