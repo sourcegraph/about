@@ -36,7 +36,7 @@ WIP
 - Hackathons: We don't have any company-wide hackathons planned. If you want to do one for your team, just propose it and find the right time. (See related "[Innovation time](../engineering/index.md#innovation-time)" for engineering, which could apply to any team if you think it would be good.)
 
 ## What we offer our teammates
-
+- [How we employ people globally](global-employment-structures.md)
 - [How we structure compensation](compensation/index.md)
   - [How to create an offer](compensation/offers.md)
   - [Equity and stock options FAQ](compensation/equity-faq.md)
