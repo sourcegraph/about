@@ -5,7 +5,7 @@ Being an all-remote company without entities outside of the US yet, we adopt dif
 Our preferred method for engaging the work of teammates outside of the US is as a full-time contractor. 
 
 ### Contracts
-Full-time contracting teammates receive a contracting agreement specific to the country they are based in. (In some instances, they may receive a more generic        “international” contract if one is not available for their specific country). This contracting agreement will specify a start date but may be open-ended. 
+Full-time contracting teammates receive a contracting agreement specific to the country they are based in. (In some instances, they may receive a more generic “international” contract if one is not available for their specific country). This contracting agreement will specify a start date but may be open-ended. 
 
 ### Benefits, allowances and expenses
 Full-time contracting teammates are not eligible for benefits. We wanted to give teammates the flexibility to work from anywhere in the world, and a contracting structure allowed us to offer that. We chose to keep all offers and roles on a U.S. salary, rather than adjusting for cost of living by location. The intention is that this difference would allow teammates to cover the benefits we are unable to provide on a contracting structure. 
