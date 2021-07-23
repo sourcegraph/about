@@ -1,6 +1,6 @@
 .get-started-page {
     textarea {
-        font-family: 'IBM Plex Mono';
+        font-family: $font-family-monospace;
         font-size: 0.8rem;
         width: 100%;
         outline: none;
@@ -11,7 +11,7 @@
     }
     &__installtext {
         position: relative;
-        font-family: 'IBM Plex Mono';
+        font-family: $font-family-monospace;
         font-size: 0.8rem;
         width: 100%;
         outline: none;

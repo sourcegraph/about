@@ -8,10 +8,10 @@
 
 @import 'colors';
 
-$font-family-sans-serif: 'IBM Plex Sans', ui-system, sans-serif;
-$font-family-monospace: 'IBM Plex Mono', monospace;
+$font-family-sans-serif: source-sans-pro, sans-serif; // Adobe Source Sans Pro
+$font-family-monospace: source-code-pro, monospace; // Adobe Source Code Pro for code
 $font-family-base: $font-family-sans-serif;
-$headings-font-family: 'PT Sans', $font-family-base;
+$headings-font-family: $font-family-base;
 
 $blue: #2c7ef6;
 $red: #dc3545;
@@ -44,8 +44,8 @@ $border-radius-lg: 0.25rem;
 $border-radius-sm: 0.1rem;
 
 $font-weight-semibold: 600;
-$font-weight-bold: $font-weight-semibold; // uses IBM Plex Sans Semi-bold
-$font-weight-bolder: 700; // uses IBM Plex Sans Bold
+$font-weight-bold: $font-weight-semibold; // uses Adobe Sans Pro Semi-bold
+$font-weight-bolder: 700; // uses Adobe Sans Pro Bold
 
 $headings-font-weight: 700; // PT Sans Bold
 
