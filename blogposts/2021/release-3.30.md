@@ -4,7 +4,7 @@ publishDate: 2021-07-20T10:00-07:00
 description: "The Sourcegraph 3.30 release introduces support for publishing or unpublishing changesets from the GUI, a new search reference to the search results sidebar, and Code Insights dashboards."
 tags: [blog, release]
 slug: "release/3.30"
-published: false
+published: true
 changelogItems:
   - description: "Added support for `select:file.directory` in search queries, which returns unique directory paths for results that satisfy the query."
     url: https://github.com/sourcegraph/sourcegraph/pull/22449
