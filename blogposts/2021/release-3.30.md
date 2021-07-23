@@ -106,7 +106,9 @@ _In addition_, we are allowing changesets to be published and unpublished direct
 
 We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcut to using the filters in queries. 
 
-<!--TODO a small GIF a user clicking a repo: filter and using autocomplete to resolve github.com\/sourcegraph/sourcgraph$ -->
+<p>
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/redesign/search-ref.gif" width="625" alt="Search reference demo">
+</p>
 
 ## Code Insights dashboards 
 
