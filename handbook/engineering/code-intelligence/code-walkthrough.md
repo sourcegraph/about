@@ -35,7 +35,7 @@ or to guide us through [Redux](https://github.com/reduxjs/redux).
 ---
 - Interview length: 45 minutes
     - 5 minutes of introductions.
-    - 30 minute walkthrough (script below).
+    - 30 minute walkthrough.
     - 10 minutes of questions.
 - Be ready to screenshare the library in question via your IDE or editor of choice.
 
