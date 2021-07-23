@@ -1,6 +1,6 @@
 # Code walkthrough
 
-The following page details how we approach the technical hiring within the Code Intelligence team instead of take home projects.
+The following page details how we approach technical hiring within the Code Intelligence team instead of take home projects.
 
 ### What is the day to day engineering experience at Sourcegraph?
 - We're often reading code we haven't written.
