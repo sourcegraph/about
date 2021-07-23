@@ -5,10 +5,12 @@
 > ⚠️ **IMPORTANT:** This provides a _rough estimate_ to the best of our ability, infrastructure pricing estimates are not trivial to do accurately and actual costs are always subject to change. The goal of this is to give you a rough estimate of costs, not an exact amount.<br><br>ℹ️ If unsure about any anything with pricing for a managed instance, message `@distribution-support` in the [#distributioneers slack channel](https://sourcegraph.slack.com/archives/CJX299FGE) – ensure you include all the information needed for the resource calculator and any extra information about why you need help.
 
 Several data points are needed to work out the cost:
+
 - Size of all of their repositories on disk
 - Number of repositories
 - Number of those repositories that are monorepos
 
+These data points are also listed in the CSE [managed instance request template](https://github.com/sourcegraph/customer/blob/master/.github/ISSUE_TEMPLATE/new_managed_instance.md).
 
 | Cost estimate  | Description                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------|
