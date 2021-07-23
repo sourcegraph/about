@@ -43,6 +43,7 @@ This continuity means we give customers consistent and high-quality service from
   - [Emily Chapman](../company/team/index.md#emily-chapman-she-her)
   - [Jonah Dueck](../company/team/index.md#jonah-dueck-he-him)
   - [Manuel Ucles](../company/team/index.md#manuel-ucles)
+  - [Nate Maynard](../company/team/index.md#nate-maynard-he-him)
 - Customer Engineers (US East)
   - [Alex Fogg](../company/team/index.md#alex-fogg-he-him)
   - [Christine Lovett](../company/team/index.md#christine-lovett-she-her)
