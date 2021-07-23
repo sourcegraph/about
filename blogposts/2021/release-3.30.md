@@ -5,6 +5,8 @@ description: "The Sourcegraph 3.30 release introduces support for publishing or 
 tags: [blog, release]
 slug: "release/3.30"
 published: true
+heroImage: https://sourcegraphstatic.com/blog/3.30/sourcegraph-3-30-live.png
+socialImage: https://sourcegraphstatic.com/blog/3.30/sourcegraph-3-30-live.png
 changelogItems:
   - description: "Added support for `select:file.directory` in search queries, which returns unique directory paths for results that satisfy the query."
     url: https://github.com/sourcegraph/sourcegraph/pull/22449
