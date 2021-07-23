@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.30 release"
 publishDate: 2021-07-20T10:00-07:00
-description: "The Sourcegraph 3.30 release introduces support for publishing or unpublishing changesets from the GUI, a new search reference to the search results sidebar, and Code Insights dashboards."
+description: "Sourcegraph 3.30 introduces support for publishing or unpublishing changesets from the GUI, a new search reference to the search results sidebar, and Code Insights dashboards."
 tags: [blog, release]
 slug: "release/3.30"
 published: true
@@ -37,7 +37,7 @@ changelogItems:
     category: Search
   - description: Code Insights can now be grouped into dashboards.
     url: https://github.com/sourcegraph/sourcegraph/issues/22215
-    category:
+    category: Code Insights
   - description: "Batch Changes changesets can now be published from the Sourcegraph UI."
     url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
     category: Batch Changes
@@ -47,19 +47,16 @@ changelogItems:
   - description: "Experimental: Search-based Code Insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }`."
     url: https://github.com/sourcegraph/sourcegraph/issues/22759
     category: Search
-  - description: "Experimental: Search-based code insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }` and tick the checkbox in the insight creation/edit UI."
-    url: https://github.com/sourcegraph/sourcegraph/issues/22759
-    category: Search
   - description: Search References is a new search sidebar section to simplify learning about the available search filters directly where they are used.
     url: https://github.com/sourcegraph/sourcegraph/issues/21539
     category: Search
-  - description: Backend Code Insights only fills historical data frames that have changed to reduce the number of searches required.
+  - description: Backend Code Insights only fills historical data frames that have changed, to reduce the number of searches required.
     url: https://github.com/sourcegraph/sourcegraph/pull/22298
     category: Search
-  - description: Backend Code Insights displays data points for a fixed 6 months period in 2 week intervals, and will carry observations forward that are missing.
+  - description: Backend Code Insights displays data points for a fixed six-month period in two-week intervals, and will carry missing observations forward.
     url: https://github.com/sourcegraph/sourcegraph/pull/22298
     category: Code Insights
-  - description: Backend Code Insights now aggregate over 26 weeks instead of 6 months.
+  - description: Backend Code Insights now aggregate over 26 weeks instead of six months.
     url: https://github.com/sourcegraph/sourcegraph/pull/22527
     category: Code Insights
   - description: "Search queries now disallow specifying `rev:` without `repo:`. Note that to search across potentially multiple revisions, a query like `repo:.* rev:\u003crevision\u003e` remains valid."
@@ -74,10 +71,10 @@ changelogItems:
   - description: Search queries now return up to 80 suggested filters. Previously we returned up to 24.
     url: https://github.com/sourcegraph/sourcegraph/pull/22863
     category: Search
-  - description: "GitHub code host connections can now include `repositoryQuery` entries that match more than 1000 repositories from the GitHub search API without requiring the previously document work-around of splitting the query up with `created:` qualifiers, which is now done automatically."
+  - description: "GitHub code host connections can now include `repositoryQuery` entries that match more than 1,000 repositories from the GitHub search API without requiring the previously documented workaround of splitting the query up with `created:` qualifiers, which is now done automatically."
     url: https://github.com/sourcegraph/sourcegraph/issues/2562
     category: Search
-  - description: Listing Github Entreprise org repos now returns internal repos as well.
+  - description: "Listing GitHub Entreprise org repos now returns internal repos as well."
     url: https://github.com/sourcegraph/sourcegraph/pull/22339
     category: Repositories
   - description: "The `isLocked` and `isDisabled` fields of GitHub repositories are now fetched correctly from the GraphQL API of GitHub Enterprise instances. Users that rely on the `repos` config in GitHub code host connections should update so that locked and disabled repositories defined in that list are actually skipped."
@@ -87,15 +84,13 @@ changelogItems:
     url: https://github.com/sourcegraph/sourcegraph/pull/22428
     category: Search
   - description: "API docs is enabled by default in Sourcegraph 3.30.0. It can be disabled by adding `\"apiDocs\": false` to the `experimentalFeatures` section of user settings."
-    url:
+    url: https://about.sourcegraph.com/blog/api-documentation-for-all-your-code/
     category: API Docs
 ---
 
 Sourcegraph 3.30 is now available! For this release, we introduced:
 
-## Update
-
-### Batch Changes: Publish and unpublish changesets from the GUI
+## Batch Changes: Publish and unpublish changesets from the GUI
 
 Batch Changes features a powerful idempotent [spec-based workflow](https://docs.sourcegraph.com/batch_changes/explanations/batch_changes_design), where the spec file defines the batch change. In particular, the [`published`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#changesettemplate-published) property defines if changesets are published to the codehost or not.
 
@@ -103,17 +98,19 @@ This workflow is great for reproducibility and having a completely CLI-based wor
 
 _In addition_, we are allowing changesets to be published and unpublished directly from the GUI, to make the workflow more approachable to new users. Simply omit the `published` field in the specs, and the GUI will become the source of truth for publishing changesets.
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-from-gui.gif" alt="Publish changesets from GUI demo" />
+<p>
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-from-gui.gif" width="625" alt="Publish changesets from GUI demo">
+</p>
 
-### New code search reference
+## New code search reference
 
-* We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcuts to using the fitlers in queries. 
+We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcut to using the filters in queries. 
 
 <!--TODO a small GIF a user clicking a repo: filter and using autocomplete to resolve github.com\/sourcegraph/sourcgraph$ -->
 
-### Code Insights dashboards 
+## Code Insights dashboards 
 
-<p><video autoplay loop muted playsinline style="width:600px">
+<p><video autoplay loop muted playsinline style="width:625px">
   <source src="https://sourcegraphstatic.com/blog/3.30/insights_dashboards.mp4" type="video/mp4">
  </video></p>
 
