@@ -1,6 +1,6 @@
 # Code walkthrough
 
-The following page details how we approach the technical hiring within the Code Intelligence team instead of take home projects.
+The following page details how we approach technical hiring within the Code Intelligence team instead of take home projects.
 
 ### What is the day to day engineering experience at Sourcegraph?
 - We're often reading code we haven't written.
@@ -30,13 +30,14 @@ any language, we do have a preference if possible that they are close to the dom
 
 - For a full-stack position you may choose a library that you've used heavily,  for example [DateJs](https://github.com/datejs/Datejs)
 or [Redux](https://github.com/reduxjs/redux).
-- If you're interviewing for a backend position you may choose a library that you've used heavily, for example [Mux](https://github.com/gorilla/mux) or [Ristretto](https://github.com/dgraph-io/ristretto).
+- For a backend position you may choose a library that you've used heavily, for example [Mux](https://github.com/gorilla/mux) or [Ristretto](https://github.com/dgraph-io/ristretto).
 
 ---
 - Interview length: 45 minutes
     - 5 minutes of introductions.
     - 30 minute walkthrough.
     - 10 minutes of questions that you have for our engineers about working at Sourcegraph.
+
 - Be ready to screenshare the library in question via your IDE or editor of choice.
 
 During the interview we will guide you to areas of the code that seem ripe for discussion.  We may ask you to zoom in or out of layers of abstraction (into/out of functions, classes, and packages) in order to help us build a shared understanding of the code under review.
