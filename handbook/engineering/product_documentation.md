@@ -14,7 +14,7 @@ It's the [responsibility of the Product Manager](../../handbook/product/roles/in
 
 We use the [monthly release blog post](https://about.sourcegraph.com/blog) as a changelog checklist to ensure everything is documented.
 
-## Local development of documentation only
+### Local development of documentation only
 
 For local development of documentation, clone the main [sourcegraph repository](https://github.com/sourcegraph/sourcegraph/tree/master/).  The development environment for Sourcegraph, detailed in [Getting started with developing Sourcegraph](https://github.com/sourcegraph/sourcegraph/blob/master/doc/dev/local_development.md), is not required.
 
@@ -27,20 +27,26 @@ cd sourcegraph
 
 Navigate the browser to [https://localhost:5080](https://localhost:5080) to view the documentation.
 
-## Naming and linking documentation pages
+## Best practices
+
+Best practices for writing documentation.
+
+### Naming and linking documentation pages
 
 1. Every page in a directory should be linked to from its parent page (index.md in that directory), unless the document is designed to be [standalone](#standalone-documents).
-1. Every new document should be:
-    - Cross-linked to its related documentation, and linked from its topic-related index, when it exists.
-    - Linked to from the [docs global nav template](https://github.com/sourcegraph/sourcegraph/blob/master/doc/_resources/templates/document.html#L58).
+1. Every new document should be cross-linked to its related documentation, and linked from its topic-related index, when it exists.
 1. Always cross-link to `.md` files, including the file extension, so that the docs are browsable as-is (e.g., in GitHub's file browser).
 1. When you create a new directory, always start with an `index.md` file. Don't use another file name and don't create `README.md` files.
 1. Don't use special chars and spaces, or capital letters in file names, directory names, branch names, and anything that generates a path.
-1. For large images and other binary assets, upload them to the `sourcegraph-assets` Google Cloud Storage bucket instead with `gsutil cp -a public-read local/path/to/myasset.png gs://sourcegraph-assets/` (and refer to them as `https://sourcegraphstatic.com/myasset.png`).
 1. When creating a new document and it has more than one word in its name, use underscores instead of spaces or dashes (`-`). For example, a proper name would be `import_projects_from_github.md`.
-1. Start a new directory with an `index.md` file.
 
-## Standalone documents
+### Images and binary assets
+
+For large images and other binary assets, upload them to the `sourcegraph-assets` Google Cloud Storage bucket instead with `gsutil cp -a public-read local/path/to/myasset.png gs://sourcegraph-assets/` (and refer to them as `https://sourcegraphstatic.com/myasset.png`).
+
+## Tips and tricks
+
+### Standalone documents
 
 By default, an error will be raised if a documentation page is not linked to, as we want it to be discovered by readers and indexed by search engines. If the need arises for a page to be standalone and not linked to (e.g., you've moved the page's contents but don't want to break external inbound links), add the following YAML front matter content to the top of the page:
 
