@@ -70,6 +70,7 @@ Deployment documentation should be structured as follows:
     - See [administration documentation best practices](#administration-documentation).
     - When creating documentation for X, reference these guides instead of repeating.
     - Anything that is not specific to X deployment method should be added to the relevant product documentation instead and linked.
+    - Upgrade and configuration documentation should be included here, because unlike installation and upgrades customers will need them often.
 
 Example: [Sourcegraph with Docker Compose](https://docs.sourcegraph.com/admin/install/docker-compose).
 
