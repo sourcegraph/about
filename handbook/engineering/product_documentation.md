@@ -44,6 +44,35 @@ Best practices for writing documentation.
 
 For large images and other binary assets, upload them to the `sourcegraph-assets` Google Cloud Storage bucket instead with `gsutil cp -a public-read local/path/to/myasset.png gs://sourcegraph-assets/` (and refer to them as `https://sourcegraphstatic.com/myasset.png`).
 
+### Administration documentation
+
+This advice currently pertains to [Sourcegraph administration documentation](https://docs.sourcegraph.com/admin) and [Distribution documentation](https://about.sourcegraph.com/handbook/engineering/distribution).
+
+- Try to avoid repeating information. Instead, find the most relevant home for a piece of information, and link to it from where you want it so that the information can be easily found and referenced from other places.
+  - e.g. [Deployments playbooks](deployments/playbooks.md), [Managed instances operations](./distribution/managed/operations.md), [Docker Compose operations guides](https://docs.sourcegraph.com/admin/install/docker-compose/operations)
+- Instead of adding an FAQ item, try to add the information in a more agnostic format to the relevant documents first, so that it can easily be found and referenced from other places.
+  - e.g. instead of "How do I do X when Y for Z?", try "Do X" with a section for "Y" situation in the relevant documents for "Z"
+  - If a FAQ item still feels prudent, link to the guide from the FAQ instead of repeating the information.
+- Try to avoid creating new pages. This makes information easier to discover, reference, and maintain (keep up to date).
+  - If a new guide or overview is going to be too long to be added to a page, try to distill its components into smaller "operations" that can be added elsewhere, or see if there are documentation that can be referenced instead.
+
+#### Deployment documentation
+
+Deployment documentation should be structured as follows:
+
+- `admin/install/X/...`
+  - "Sourcegraph with X" (`admin/install/X/index.md`). Includes:
+    - Installation (`#installation`): how to install Sourcegraph with this method. Can link out to separate guide(s) where appropriate.
+      - This gets featured here because a customer will likely only encounter installation once.
+      - Simiarly, "Migration to X" (`admin/install/X/migrate.md`) should be in its own page because a custoemr will likely only encounter it once.
+    - About (`#about`): links to background info, some basic ideas, etc.
+  - "Operations guides for Sourcegraph with X" (`admin/install/X/operations.md`)
+    - See [administration documentation best practices](#administration-documentation).
+    - When creating documentation for X, reference these guides instead of repeating.
+    - Anything that is not specific to X deployment method should be added to the relevant product documentation instead and linked.
+
+Example: [Sourcegraph with Docker Compose](https://docs.sourcegraph.com/admin/install/docker-compose).
+
 ## Tips and tricks
 
 ### Standalone documents
