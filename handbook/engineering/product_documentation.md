@@ -66,7 +66,7 @@ Deployment documentation should be structured as follows:
       - This gets featured here because a customer will likely only encounter installation once.
       - Simiarly, "Migration to X" (`admin/install/X/migrate.md`) should be in its own page because a custoemr will likely only encounter it once.
     - About (`#about`): links to background info, some basic ideas, etc.
-  - "Operations guides for Sourcegraph with X" (`admin/install/X/operations.md`)
+  - "Operations guides for Sourcegraph with X" (`admin/install/X/operations.md`). This page should be the go-to page for "I need to do something with my X deployment".
     - See [administration documentation best practices](#administration-documentation).
     - When creating documentation for X, reference these guides instead of repeating.
     - Anything that is not specific to X deployment method should be added to the relevant product documentation instead and linked.
