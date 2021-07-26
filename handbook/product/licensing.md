@@ -9,7 +9,7 @@ Licensing at Sourcegraph can be confusing: the word "license" (or "licence", for
 
 The core of Sourcegraph is [licensed under the Apache License, version 2.0](https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.apache).
 
-As described [in the open source FAQ](../../community/faq.md#is-all-of-sourcegraph-open-source), users can use just that functionality without agreeing to any enterprise licensing terms by building their own server image. If they do so, no code from our enterprise licensed features nor any trademarks or logos will be included in their Sourcegraph deployment. This means that there will be no references to functionality such as batch changes.
+As described [in the open source FAQ](../community/faq.md#is-all-of-sourcegraph-open-source), users can use just that functionality without agreeing to any enterprise licensing terms by building their own server image. If they do so, no code from our enterprise licensed features nor any trademarks or logos will be included in their Sourcegraph deployment. This means that there will be no references to functionality such as batch changes.
 
 Most users, however, will use our prebuilt images, which include code licensed under our [enterprise license](https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.enterprise). Users who use these images — with or without a paid plan — are agreeing to be bound by the terms of the enterprise license in addition to the terms of the Apache License.
 
