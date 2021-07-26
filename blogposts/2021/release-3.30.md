@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.30 release"
 publishDate: 2021-07-20T10:00-07:00
-description: "Sourcegraph 3.30 introduces support for publishing or unpublishing changesets from the GUI, a new search reference to the search results sidebar, and Code Insights dashboards."
+description: "Sourcegraph 3.30 TODO - this needs improvement"
 tags: [blog, release]
 slug: "release/3.30"
 published: true
@@ -18,23 +18,20 @@ changelogItems:
     url: https://github.com/sourcegraph/sourcegraph/pull/22471
     category: Code Insights
   - description: All `.frugal` files will now be displayed with Thrift syntax highlighting.
-    url:
-    category:
+    url: https://github.com/sourcegraph/sourcegraph/pull/22625
+    category: Code Browsing
   - description: "Added `file:contains.content(regexp)` predicate, which filters only to files that contain matches of the given pattern."
     url: https://github.com/sourcegraph/sourcegraph/pull/22666
     category: Search
   - description: "Repository syncing is now done in streaming mode by default. Customers with many repositories should notice code host updates much faster, with repo-updater consuming less memory. Using the previous batch mode can be done by setting the `ENABLE_STREAMING_REPOS_SYNCER` environment variable to `false` in `repo-updater`. That environment variable will be deleted in the next release."
     url: https://github.com/sourcegraph/sourcegraph/pull/22756
-    category: Batch Changes
+    category: Performance
   - description: Enabled the ability to query Batch Changes changesets, changesets stats, and file diff stats for an individual repository via the Sourcegraph GraphQL API.
     url: https://github.com/sourcegraph/sourcegraph/pull/22744/
     category: Batch Changes
-  - description: "Added \"Groovy\" to the initial `lang:` filter suggestions in the search bar."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22755
-    category: Search
   - description: "The `lang:` filter suggestions now show all supported, matching languages as the user types a language name."
     url: https://github.com/sourcegraph/sourcegraph/pull/22765
-    category: Search
+    category: Code Browsing
   - description: Code Insights can now be grouped into dashboards.
     url: https://github.com/sourcegraph/sourcegraph/issues/22215
     category: Code Insights
@@ -46,13 +43,13 @@ changelogItems:
     category: Batch Changes
   - description: "Experimental: Search-based Code Insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }`."
     url: https://github.com/sourcegraph/sourcegraph/issues/22759
-    category: Search
+    category: Code Insights
   - description: Search References is a new search sidebar section to simplify learning about the available search filters directly where they are used.
     url: https://github.com/sourcegraph/sourcegraph/issues/21539
     category: Search
   - description: Backend Code Insights only fills historical data frames that have changed, to reduce the number of searches required.
     url: https://github.com/sourcegraph/sourcegraph/pull/22298
-    category: Search
+    category: Code Insights
   - description: Backend Code Insights displays data points for a fixed six-month period in two-week intervals, and will carry missing observations forward.
     url: https://github.com/sourcegraph/sourcegraph/pull/22298
     category: Code Insights
@@ -73,16 +70,13 @@ changelogItems:
     category: Search
   - description: "GitHub code host connections can now include `repositoryQuery` entries that match more than 1,000 repositories from the GitHub search API without requiring the previously documented workaround of splitting the query up with `created:` qualifiers, which is now done automatically."
     url: https://github.com/sourcegraph/sourcegraph/issues/2562
-    category: Search
-  - description: "Listing GitHub Entreprise org repos now returns internal repos as well."
+    category: Admin
+  - description: "Listing GitHub Enterprise org repos now returns internal repos as well."
     url: https://github.com/sourcegraph/sourcegraph/pull/22339
-    category: Repositories
+    category: Admin
   - description: "The `isLocked` and `isDisabled` fields of GitHub repositories are now fetched correctly from the GraphQL API of GitHub Enterprise instances. Users that rely on the `repos` config in GitHub code host connections should update so that locked and disabled repositories defined in that list are actually skipped."
     url: https://github.com/sourcegraph/sourcegraph/pull/22788
     category: API
-  - description: "The experimental paginated search feature (the `stable:` keyword) has been removed, to be replaced with streaming search."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22428
-    category: Search
   - description: "API docs is enabled by default in Sourcegraph 3.30.0. It can be disabled by adding `\"apiDocs\": false` to the `experimentalFeatures` section of user settings."
     url: https://about.sourcegraph.com/blog/api-documentation-for-all-your-code/
     category: API Docs
@@ -104,16 +98,16 @@ _In addition_, we are allowing changesets to be published and unpublished direct
 
 ## New code search reference
 
-We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcut to using the filters in queries. 
+We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcut to using the filters in queries.
 
 <p>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/redesign/search-ref.gif" width="625" alt="Search reference demo">
 </p>
 
-## Code Insights dashboards 
+## Code Insights dashboards
 
 <p><video autoplay loop muted playsinline style="width:625px">
   <source src="https://sourcegraphstatic.com/blog/3.30/insights_dashboards.mp4" type="video/mp4">
  </video></p>
 
-You can now add your code insights to individual dashboard pages, in order to group and share a contextual subest of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](https://docs.sourcegraph.com/code_insights/explanations/viewing_code_insights#insights-dashboards). 
+You can now add your code insights to individual dashboard pages, in order to group and share a contextual subest of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](https://docs.sourcegraph.com/code_insights/explanations/viewing_code_insights#insights-dashboards).
