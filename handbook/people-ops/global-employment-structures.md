@@ -1,4 +1,4 @@
-# Our global employment structures
+# Our global engagement structures
 Being an all-remote company without entities outside of the US yet, we adopt different ways of engaging talent across the world. Here we outline the different ways we do this outside of the US, and the considerations and limitations associated with each type, for hiring managers and referring teammates to be aware of. 
 
 ## Full-time contractors (non-US teammates)
@@ -8,7 +8,7 @@ Our preferred method for engaging the work of teammates outside of the US is as 
 Full-time contracting teammates receive a contracting agreement specific to the country they are based in. (In some instances, they may receive a more generic “international” contract if one is not available for their specific country). This contracting agreement will specify a start date but may be open-ended. 
 
 ### Benefits, allowances and expenses
-Full-time contracting teammates are not eligible for benefits. We wanted to give teammates the flexibility to work from anywhere in the world, and a contracting structure allowed us to offer that. We chose to keep all offers and roles on a U.S. salary, rather than adjusting for cost of living by location. The intention is that this difference would allow teammates to cover the benefits we are unable to provide on a contracting structure. 
+Full-time contracting teammates are not eligible for benefits. We wanted to give teammates the flexibility to work from anywhere in the world, and a contracting structure allowed us to offer that. We chose to keep all offers and roles on a U.S. compensation, rather than adjusting for cost of living by location. The intention is that this difference would allow teammates to cover the benefits we are unable to provide on a contracting structure. 
 Full-time contracting teammates can expense recurring expenses as outlined in our handbook.
 
 ### Payments
@@ -20,7 +20,7 @@ Teammates may also choose to incorporate and create an entity through which to b
 Full-time contracting teammates are marked as hired in Greenhouse, have a start date that aligns with the cohort calendar, have a profile in Bamboo, and enjoy the same thorough general or team-specific onboarding enjoyed by regular teammates. 
 
 ## Full-time employees (non-US, via EOR/PEO)
-In exceptional cases where a candidate outside of the US cannot join as a full-time contractor, we may decide to engage a Professional Employment Organization (PEO) or Employer of Record (EOR) as a third party employer. 
+In exceptional cases where a candidate outside of the US cannot join as a contractor, we may decide to engage a Professional Employment Organization (PEO) or Employer of Record (EOR) as a third party employer. 
 We are currently assessing the viability of using PEOs and EORs on a country-by-country basis, based on multiple factors (the number of teammates in the country, the availability of a partner PEO, local legal requirements, costs and more). Until we have done the due diligence here, a full-time contracting agreement remains the preferred method for securing talent outside of the US. 
 
 The Talent team and hiring managers carefully assess these exceptional cases where a PEO/EOR may be required, and engage the PeopleOps team to chat about the merit of the case early on, as our current partner, Remote, may not be able to support us in all countries.
@@ -55,9 +55,9 @@ Temporary contractors are marked as hired in Greenhouse, have a start date that 
 Hiring managers should consult the Talent and PeopleOps team early if an exceptional situation requires a different onboarding process for reasons critical to the role, or if the role is expected to become a full-time role in the near future. Alternatively, it’s up to hiring managers to set up introductions and provide information as needed for the purpose of the temporary contract.
 
 ## Work Visas
-Our decision to go fully remote was done in consideration to being able to engage talented people all over the world, without being limited to those who lived in a particular country or those who were able to acquire visas to work in a particular country. Our teammates can work from anywhere in the world, so we’ve limited sponsorship for visas to only roles that would actively require the presence in a particular country as part of their role and job responsibilities at Sourcegraph. In such cases we will work to support teammates as much as possible, but if we do not currently work with a PEO/EOR that can sponsor the visa in the country, there may be a significant delay (multiple months) as we investigate and implement an alternative solution. We encourage hiring managers to let us know as early as possible, before the role is even opened, if such requirements exist.
+Our decision to go fully remote was done to be able to engage talented people all over the world, without being limited to those who lived in a particular country or those who were able to acquire visas to work in a particular country. Our teammates can work from anywhere in the world, so we’ve limited sponsorship for visas to only roles that would actively require the presence in a particular country as part of their role and job responsibilities at Sourcegraph. This applies both to taking on sponsorship for new visas, as well as transferring sponsorship for existing visas. In such cases we will work to support teammates as much as possible, but if we do not currently work with a PEO/EOR that can sponsor the visa in the country, there may be a significant delay (multiple months) as we investigate and implement an alternative solution. We encourage hiring managers to let us know as early as possible, before the role is even opened, if such requirements exist.
 
-If a candidate is currently on a visa and would prefer to keep their status in a particular country for personal reasons, Sourcegraph may be able to take on the sponsorship (depending on our EOR/PEO’s ability to support/sponsor the specific visa; see the full list of countries in which we currently offer PEO-based employment at <LINK>.), but we may require the teammate to carry the cost of transferring the visa to the PEO/EOR involved. 
+If a candidate is currently on a visa and would prefer to keep their status in a particular country for personal reasons, Sourcegraph may be able to take on the sponsorship, depending on whether we have a EOR/PEO able to support sponsorship in that country, but we may require the teammate to carry the cost of transferring the visa to the PEO/EOR involved. 
 
 
 
