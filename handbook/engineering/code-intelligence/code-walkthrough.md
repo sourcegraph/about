@@ -24,13 +24,18 @@ The following page details how we approach technical hiring within the Code Inte
 
 For this interview you'll drive a walkthrough of either a personal project or library of your choice.
 
-The following are sample ideas, the most important thing is you choose a library that you are comfortable and familiar with.  Walkthroughs can be done in
-any language, we do have a preference if possible that they are close to the domain you'd be working in.
+The following are sample ideas, the most important thing is you choose something that you are comfortable and familiar with.  Walkthroughs can be done in
+any language, we do have a preference if possible that they are close to the domain you'd be working in. If you're choosing a library, feel free
+to show us it's usage contextually within other projects (these may be your personal projects too) and what problems you've solved with it historically.
 
 
 - For a full-stack position you may choose a library that you've used heavily, for example [DateJs](https://github.com/datejs/Datejs)
-or [Redux](https://github.com/reduxjs/redux).
-- For a backend position you may choose a library that you've used heavily, for example [Mux](https://github.com/gorilla/mux) or [Ristretto](https://github.com/dgraph-io/ristretto).
+or [Redux](https://github.com/reduxjs/redux).  With a smaller library like DateJs you can walk us through it's usage in other projects, what problems you've solved, how you'd approach testing it.  With Redux perhaps you want to dive into the internals and compare it's technical proposition
+  versus other solutions.
+- For a backend position you may choose a library that you've used heavily, for example [Mux](https://github.com/gorilla/mux) or [Ristretto](https://github.com/dgraph-io/ristretto).  As an example, with Mux you could compare what problems it solves or introduces versus the Go standard library.
+ As an example for Ristretto perhaps you'd highlight it's usage in other projects and some of the underlying caching mechanisms.
+
+With whatever you choose to walk us through, if you're stuck where to start, choose a test case or how the project/library is initialized. We'll take it from there!
 
 ---
 - Interview length: 45 minutes
