@@ -36,7 +36,7 @@ Plus, there are several new and improved [Sourcegraph extensions](https://docs.s
 
 Also, in case you missed it, [Sourcegraph is now open source](/handbook/community/faq) (Apache-licensed).
 
-Want to hear about new features and releases as soon as they're available? Follow [@srcgraph](https://twitter.com/srcgraph).
+Want to hear about new features and releases as soon as they're available? Follow [@sourcegraph](https://twitter.com/sourcegraph).
 
 Ready to [install or upgrade a self-hosted Sourcegraph instance](#install-or-upgrade)? You can also [try these features on Sourcegraph.com for open source code](https://sourcegraph.com).
 
@@ -207,4 +207,4 @@ Upgrading from 2.x or 3.0.0? [See the migration guide](https://docs.sourcegraph.
 
 ---
 
-From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!
+From the entire Sourcegraph team ([@sourcegraph](https://twitter.com/sourcegraph)), happy coding!

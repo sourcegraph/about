@@ -12,9 +12,9 @@ We want to make sure you have what you need to be productive and happy in your r
 
 ### Full-time teammates
 
-We expect new teammates to spend up to **$1,850** for desk setup, which includes all the items in the "Desk items" section.
+We expect new teammates to spend up to **$2,000** for desk setup, which includes all the items in the "Desk items" section.
 
-This is not a hard budget—rather, it is a guide based on what past teammates have spent. As a reminder, you don't need permission for every purchase, and we trust you to make decisions that are in the best interests of Sourcegraph. If you expect to significantly exceed the listed amount on any purchase, however, please notify @sourcegraph/people-ops so we can decide if we need to update this guide.
+As a reminder, you don't need permission for every purchase, and we trust you to make decisions that are in the best interests of Sourcegraph. If you expect to significantly exceed the listed amount on any purchase, however, please notify @sourcegraph/people-ops and finance@sourcegraph.com so we can decide if we need to update this guide.
 
 If you don't spend all of your budget when you first join, it's ok to spend it later providing you remain inside the total budget.
 
@@ -44,7 +44,7 @@ The estimated spend for interns is **$925*** and includes only the electronic it
 
 Once your contract is signed, you will need to purchase and expense your Sourcegraph computer. Computers and laptop insurance (this includes Apple Care if you purchase a Mac as your work computer) are fully reimbursable outside of the [desk setup total estimate above](#desk-set-up), however, engineering roles have different hardware requirements from other roles (please see below for necessary specs corresponding to your role). Computers are considered property of the company.
 
-**Laptop (engineering team and customer support team):**
+**Laptop (Engineering team, Customer Engineering team and Customer Support team):**
 
 - 16" MacBook Pro, 2.4 GHz (5 GHz turbo) 8‑core (upgrade), 64 GB (upgrade), 1 TB SSD
 - Any other laptop that is of equal or lesser value than the pre-approved laptop.
@@ -83,7 +83,7 @@ You will not need permission for choosing which co-working space you’d like to
 > approval from People Ops and Finance via email.
 
 
-**Education and professional development (conferences, courses):** $1000/year (if you want to exceed this amount, simply notify @sourcegraph/people-ops in advance to explain the situation and to receive approval).
+**Education and professional development (conferences, courses):** $1000 USD/year (if your professional development conference, event, or purchase exceeds this amount, simply notify People Ops & Finance via email with the anticipated cost to obtain approval).
 
 **Moving (moving, packing, shipping, etc.):** $1000/year
 

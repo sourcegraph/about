@@ -30,7 +30,7 @@ Learn more about how enterprise organizations are driving innovation with Univer
 ## About Sourcegraph
 Sourcegraph helps companies solve [Big Code problems](https://about.sourcegraph.com/press-release/big-code-survey-2020/) so developers can innovate faster. [Sourcegraph’s Universal Code Search](https://info.sourcegraph.com/universal-code-search-ebook-req) is the only solution that empowers developers to easily find and understand code and fix problems across the entire codebase. Companies using Sourcegraph benefit from accelerated software iteration, improved code quality, faster bug fixes and incident response times, more effective remote coding collaboration, safer legacy code deprecation, better coding insights and [more](https://info.sourcegraph.com/universal-code-search-ebook-req). Sourcegraph’s customers include many of the world’s leading companies, such as Amazon, PayPal, Uber, Lyft, Yelp, Atlassian, and Indeed. The all-remote company is backed by Sequoia Capital, Craft Ventures, Redpoint Ventures, and Goldcrest Capital.
 
-Visit [sourcegraph.com/jobs](https://about.sourcegraph.com/handbook/company/careers) for career opportunities, follow Sourcegraph on Twitter at [@srcgraph](https://twitter.com/srcgraph), or visit [about.sourcegraph.com](https://about.sourcegraph.com/).
+Visit [sourcegraph.com/jobs](https://about.sourcegraph.com/handbook/company/careers) for career opportunities, follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph), or visit [about.sourcegraph.com](https://about.sourcegraph.com/).
 
 ## Media Contact
 Tanya Carlsson<br />

@@ -7,39 +7,45 @@ const BOARD: {
     bio: string
 }[] = [
         {
+            name: 'Sarah Wang',
+            image: '/board/sarah-wang.png',
+            title: 'Andreessen Horowitz',
+            bio: '/handbook/company/team#',
+        },
+        {
             name: 'David Sacks',
             image: '/board/david-sacks.jpg',
-            title: 'Board Member',
-            bio: '/handbook/company/team#',
-        },
-        {
-            name: 'Brian Murray',
-            image: '/board/brian-murray.jpg',
-            title: 'Board Member',
-            bio: '/handbook/company/team#',
-        },
-        {
-            name: 'Scott Raney',
-            image: '/board/scott-raney.jpg',
-            title: 'Board Member',
-            bio: '/handbook/company/team#',
-        },
-        {
-            name: 'Andrew Reed',
-            image: '/board/andrew-reed.jpg',
-            title: 'Board Member',
-            bio: '/handbook/company/team#',
-        },
-        {
-            name: 'Dan Friedland',
-            image: '/board/dan-friedland.jpg',
-            title: 'Board Member',
+            title: 'Craft Ventures',
             bio: '/handbook/company/team#',
         },
         {
             name: 'Adam Ross',
             image: '/board/adam-ross.jpg',
-            title: 'Board Member',
+            title: 'Goldcrest Capital',
+            bio: '/handbook/company/team#',
+        },
+        {
+            name: 'Andrew Reed',
+            image: '/board/andrew-reed.jpg',
+            title: 'Sequoia Capital',
+            bio: '/handbook/company/team#',
+        },
+        {
+            name: 'Scott Raney',
+            image: '/board/scott-raney.jpg',
+            title: 'Redpoint Ventures',
+            bio: '/handbook/company/team#',
+        },
+        {
+            name: 'Brian Murray',
+            image: '/board/brian-murray.jpg',
+            title: 'Craft Ventures',
+            bio: '/handbook/company/team#',
+        },
+        {
+            name: 'Dan Friedland',
+            image: '/board/dan-friedland.jpg',
+            title: 'Goldcrest Capital',
             bio: '/handbook/company/team#',
         },
     ];

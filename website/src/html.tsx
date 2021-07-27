@@ -18,6 +18,7 @@ export default class HTML extends React.Component<HtmlProps> {
         return (
             <html lang="en">
                 <head>
+                    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NV75KPZ"></script>
                     {this.props.headComponents}
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -32,6 +33,10 @@ export default class HTML extends React.Component<HtmlProps> {
                         rel="chrome-webstore-item"
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
                     />
+
+                    {/* Adobe Soruce Sans Pro Fonts */}
+                    <link rel="stylesheet" href="https://use.typekit.net/ngk3rlb.css"/>
+
                     <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
                     <script data-cookieconsent="ignore" dangerouslySetInnerHTML={{
                         __html: `window.dataLayer = window.dataLayer || [];
@@ -47,7 +52,7 @@ export default class HTML extends React.Component<HtmlProps> {
                     `,
                     }}
                     />
-                    {/*  Google Tag Manager */}
+                    {/* Google Tag Manager */}
                     <script data-cookieconsent="ignore" dangerouslySetInnerHTML={{
                         __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

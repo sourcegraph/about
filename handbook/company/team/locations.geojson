@@ -941,12 +941,79 @@
     },
     {
       "type": "Feature",
-      "properties": {"name": "Donavon Ellison"},
+      "properties": {
+        "name": "Donavon Ellison"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -84.61172103881836,
           34.1109517943943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Michael Bali"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.379206,
+          6.524379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mariam Adedeji"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.515625,
+          7.710991655433229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alex Isken"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.90158987045288,
+          43.0482043271894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bill Caplan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.63889217376709,
+          35.78408549932274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beyang Liu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.39413261413574,
+          37.78726741375342
         ]
       }
     }

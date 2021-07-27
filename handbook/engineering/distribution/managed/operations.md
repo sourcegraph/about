@@ -2,7 +2,7 @@
 
 - [Red/black deployment model](#redblack-deployment-model)
 - [SSH access](#ssh-access)
-- [Port-forwarding (direct access to Caddy, Jaeger, and Grafana)](#port-forwarding-direct-access-to-caddy-jaeger-and-grafana)
+- [Port-forwarding](#port-forwarding)
 - [Access through the GCP load balancer as a user would](#access-through-the-gcp-load-balancer-as-a-user-would)
 - [Accessing the Docker containers](#accessing-the-docker-containers)
 - [Finding the external IPs](#finding-the-external-ips)
@@ -146,6 +146,7 @@ More details: https://cloud.google.com/compute/docs/startupscript
 
 ## Restarting for configuration updates
 
-SSH into the instance, cd to `/deployment/docker-compose` and run:
-
-`docker-compose restart sourcegraph-frontend-0 sourcegraph-frontend-internal`
+1. Navigate to the instance that you'd like to access in the `sourcegraph-managed-customer` project(the instance is either the `default-red-instance` or `default-black instance`
+2. SSH into the instance within GCP via the option provided.
+3. `cd` to the `deployment` folder and run:
+4. `docker compose restart sourcegraph-frontend-0 sourcegraph-frontend-internal`

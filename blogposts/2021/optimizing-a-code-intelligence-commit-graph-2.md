@@ -7,7 +7,7 @@ publishDate: 2021-06-03T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph-part-2
 heroImage: /blog/optimizing-code-intelligence-commit-graph.png
-socialImage: /blog/optimizing-code-intelligence-commit-graph.png
+socialImage: https://about.sourcegraph.com/blog/optimizing-code-intelligence-commit-graph.png
 published: true
 ---
 
