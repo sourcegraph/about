@@ -43,6 +43,25 @@ Using [this document](https://docs.google.com/spreadsheets/d/1NUDEjzud_GxocjKkd_
 
 To review the interview process / what to expect as we begin interviewing candidates, please reference the guidelines for hiring managers doc [in the handbook](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers)
 
+### Values Team Kick-Off Process
+Please ask the Hiring Manager if they have any suggestions for their role.
+Reminders:
+
+- Must have been here for 3+ months. Here is a [doc](https://docs.google.com/spreadsheets/d/1NUDEjzud_GxocjKkd__m0hTf21tN3OIgOwtk_OjhV20/edit?ts=60e4c3bd#gid=0) that lists everyone who has been here for 3+ months. 
+- Must be two people from different departments
+- Please keep diversity in mind when selecting teams
+
+Once the values team has been selected, the Recruiter is responsible for sending a Slack to each values team saying:
+
+"Hi team! As you know, our values interview is critical to ensuring that our new hires embody our values, and we need our teammates help! The two of you have been nominated to serve as the values team for the [role title]!  We recognize that this is outside of your day-to-day responsibilities, so please let us know if you're willing to participate (and if you're too busy right now, no worries! We can always add you to another team when your schedule allows). If you both agree to opt in, below are some helpful details:
+
+- The two of you will conduct a 30-minute values interview for all [role title] finalists.  We anticipate 3-5 total interviews (so this would be a 1.5-2.5 hour commitment) and will be spread out over multiple days.
+- One of you will need to opt in as the lead (this person is the one who begins the introduction and asks the first question).
+- [Here](https://about.sourcegraph.com/handbook/talent/hiring/evaluating_values) is a resource to help you in the interview. 
+- All structured interview questions are listed in your Greenhouse scorecard, found in the interview prep link in your interview calendar invite. 
+
+Please let me know if this is something you're both willing to participate in and I'll add you to the interview plan.  And if you have any questions or would like to practice in advance of the interview, let me know and I'll send a calendar invite!"
+
 ### LinkedIn posting best practices
 It is much better to copy and paste the entire post and then give the author credit by tagging them. Long story short, avoid resharing and copy/paste instead.
 
