@@ -781,7 +781,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Oceanside, CA USA 🇺🇸
 - Github: fabicastp
 - [fabiana@sourcegraph.com](mailto:fabiana@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/fabicastp/)
-- Fabiana was born and raised in Venezuela🇻🇪 and moved to California 4 years ago with her husband, dog and parrot. She's a big fan of processes and organization, and you’ll often hear her say *I have a spreadsheet for that.* She’s had the pleasure of doing PM with creatives throughout her professional career. They are the yin to her yang, she says. She’s also very proud of her Venezuelan culture and loves inviting people over to her home to eat arepas. 
+- Fabiana is from Venezuela 🇻🇪 but moved to California 4 years ago with her husband, dog and parrot. She's a big fan of processes and organization, and you’ll often hear her say *I have a spreadsheet for that.* She’s had the pleasure of doing project management with creatives throughout her professional career. They are the yin to her yang, she says. She’s also very proud of her Venezuelan culture and loves inviting people over to her home to eat arepas. 
 
 ## Kendrick Morris (he/him)
 - Finance and Operations Analyst
@@ -808,13 +808,6 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [rebecca@sourcegraph.com](mailto:rebecca@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rebecca-lee-dodd/)
 - Originally from Cape Town, South Africa, Rebecca started her career in journalism before finding her way into tech via content marketing. Prior to Sourcegraph she worked at GitLab for over four years and managed their company blog. An enthusiastic traveller, Rebecca has a custom Google Map of every city she's ever visited, complete with colour-coded pins of the best coffee shops and restaurants. Ask her for recommendations!
 
-## Julie Campagna (she/her)
-- Senior Manager, Customer Advocacy
-- Sebastopol, CA  USA
-- GitHub: [juliecampagna](https://github.com/juliecampagna)
-- [julie@sourcegraph.com](mailto:julie@sourcegraph.com)
-- Name pronunciation: cohmpanya
-- Julie grew up in NH, 30 miles north of Boston, and after attending the University of Maine, moved to San Francisco to become a writer. Starting at PC World magazine, she later joined and wrote and produced customer stories for Adobe Systems and Atlassian. Julie currrently lives with her two bulldogs Angus and Peaches on a ranch in Sonoma County. She enjoys swimming, live music, growing flowers, and reading fiction, as well as riding her Kubota tractor around her yard.
 
 ## Carly Jones (she/her)
 - VP, Talent
@@ -1154,4 +1147,33 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub [shawnplusplus](https://github.com/shawnplusplus)
 - [shawn@sourcegraph.com](mailto:shawn@sourcegraph.com)
 - Originally from Fargo, ND, Shawn lives in Rochester with his wife Katie, son Harrison, and two dogs Tucker and Charlie. His careeer goal is to make technology more accessible and easy to understand for everyone. When he's not working, he can be found at the lake in the summer with his family, reading a book, and in the long Minnesota winters, doing all things hockey.  
-- 
+
+## Kristen Sundberg (She/Her)
+
+- Senior Social Media Manager
+- Boston, MA USA 🇺🇸
+- GitHub: [kristen-sundberg](https://github.com/kristen-sundberg)
+- [Twitter](https://twitter.com/thisiskris_s), [LinkedIn](https://www.linkedin.com/in/kristensundberg/), [kristen@sourcegraph.com](mailto:kristen@sourcegraph.com)
+- Kristen is a New England native that resides in a small town outside of Boston, MA. She has a knack for making brands loveable. And has been managing social media for tech and software brands the majority of her career. She's a Stonehill College alumni, who speaks passionately about chronic illness, remote work, and social media best practices. When away from the keyboard, you will find Kristen on an adventure with [Leo the Samoyed](https://www.instagram.com/ladyandleolife/), crafting with her Cricut, or watching true crime documentaries and BravoTV.
+
+## Moose (Mustafa) Ulker (He/Him)
+
+- Senior Copywriter/Creative 
+- Los Angeles,USA 🇺🇸
+- [moose@sourcegraph.com](mailto:moose@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/mooooose/)
+- My grandpa was quite a famous storyteller, as well as my grandma; my dad and my mom too. So, I found myself telling stories to my brother when I was five. Since then I never stopped. -30 Years Later— I'm creating and telling stories for global brands. Nothing has changed. I just add some taglines and hashtags at the end. www.mustafaulker.com 
+
+## Amie Rotherham (She/Her)
+
+- Director of Global Communications 
+- Toronto, Canada 🇨🇦 
+- GitHub: [amieroth] (https://github.com/amieroth)
+- [amie.rotherham@sourcegraph.com](mailto:amie.rotherham@sourcegraph.com), [LinkedIn] (https://www.linkedin.com/in/amierotherham/) [Twitter] (https://twitter.com/amieroth) 
+- Amie grew up on Vancouver Island on the far west coast of Canada, and currently lives in Toronto by way of San Francisco by way of Vancouver. She's spent 10 years working in tech PR, helping B2B brands and emerging tech gain mainstream adoption. She spends her time sending snail mail (and practicing calligraphy), testing out new recipes in the kitchen (and getting lessons from her chef husband), and reading (mainly fiction). 
+
+## Max Wiederholt (He/Him)
+
+- Customer Engineer
+- Mountain View, CA, USA 🇺🇸
+- [max.wiederholt@sourcegraph.com](mailto:max.wiederholt@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/maxwiederholt/), [Github](https://github.com/maaaaaaaax), [Twitter](https://twitter.com/maxwiederholt)
+- Max was born and raised in the San Francisco Bay Area. Prior to Sourcegraph, Max founded [Mischief](https://www.mischief.app/), a social network that helps anyone make a movie or TV series, then license that work to a streaming service. Max has worked on Google's developer relations team and Confluent's sales team. He graduated from UCLA with a BA in Political Science, before learning to code via [Harvard's CS50x online course](https://cs50.harvard.edu/x/2021/) and [San Jose's Coding Dojo](https://www.codingdojo.com/).
