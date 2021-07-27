@@ -135,7 +135,17 @@ In addition to the above interviews, some departments have department-specific i
     - Be prepared to have a dynamic conversation to uncover nuances about the teams you will be working with
 
 ## BizOps, Finance, Legal, TechOps
-- Coming soon
+- Product Analyst take-home project
+  -  This exercise should take 2-3 hours to complete;please don’t take more than that!
+  -  Getting setup: You’ll be using Mode Analytics public datasets tocomplete this take-home project. Here are the steps to getting into the SQL workspace:
+    -  1.Create an account if you don’t already have one
+    -  2.Click the green+in the top right (‘Create report’)to access the workspace
+    -  3.We’ll be using the following Mode Public Warehousetables to complete the exercise:tutorials.playbook_users,tutorials.playbook_events,tutorials.playbook_experiments,tutorials.playbook_emails
+    
+ - Prompt: For each of the following questions please create charts and/or tables (within Mode orby exporting to a spreadsheet tool if that’s easier)to show your findings. We’re not expecting a slide deck or document to explain your findings, but quick summaries of charts, if needed, are just fine. Keep in mind that in most cases there are no “right” or “wrong” answers; we’re more interested in your approach and thought processes.
+    - 1.What company is most engaged with the product?
+    - 2.We ran an A/B test (experiment) to increase ‘like_message’actions users are taking. Which variant would you recommend going forward with, if any?
+ - When you’ve completed the project, share your results via static run links along with some availability you have over the next week to review the project with  a BizOps team members. When reviewing, you can expect questions about your approach in getting to know the data, the process you took to findthe results, results themselves, and how you decidedto communicate your findings.
 
 ## Customer Support
 - Customer Support Manager
@@ -286,6 +296,30 @@ In addition to the above interviews, some departments have department-specific i
   -  Interviewer(s): Coming soon.
   -  Duration: 60-minutes.
   -  Details: during this stage in the interview process, we try to get a sense of your approach and thought process when reviewing writing drafts submitted by team members. You will be given a blog post draft to review for the first 30-minutes of the session, after which you and the hiring manager go through how you approached the piece and talk about the changes you made and why.
+
+- Technical Content working session
+  -  Duration: 60-minutes.
+  -  Details: during this stage in the interview process, we try to get a sense of how you think about content. You will be given (2) pieces of content to read through for the first 30 minutes of the session, after which, you and the hiring manager will take the last 30 minutes to go through what you liked, disliked, and what you would change about each piece and why.
+
+- Senior Digital Marketing Manager working session
+  -  Duration: 60-minutes.
+  -  The Goal: The purpose of this working session is to give us all a sense of what it'd be like to work together and make sure we have a shared understanding of the role and goals. This is not meant to be stressful or require a lot of preparation. 
+    Part 1: Methodology & Planning (20 Minutes)
+      - Coming out of our conversations we’ve taken an action item to better understand your campaign planning and activation methodology. 
+        - What are your ideas for a long-term, evergreen brand activation across the various digital channels? 
+        - What would a successful campaign look like? 
+        - How would you monitor and share results?
+    Part 2: Creativity & Collaboration (20 Minutes)
+      - We’ve just wrapped up our H2 off site where the brand team led a brainstorm about big ideas for a second half awareness campaign focused on quick wins targeting developers. 
+      - Top 3 creative ideas to fuel digital marketing campaigns directed at a DevOps Audience. These creative ideas can be part of the long-term brand awareness plays, or quarterly campaigns
+          - Include your timeline for concept-to-execution
+          - What would your goals be for these quick win campaigns?
+          - What are some key deliverables you’d expect to see from these campaigns?
+          - Who will you collaborate with and why?
+          - How would you approach bridging these awareness activities with contact acquisition/product sign-ups?
+    - NOTE: Please don't go overboard on preparation, plans, or detail. A Google Doc outline is how we'd do this kind of thing internally, so that's best. Doesn't have to be pretty. If you prefer slides, that's fine. This will be a casual back and forth conversation; not a formal presentation.
+
+
 
 ## People Operations
 - Coming soon

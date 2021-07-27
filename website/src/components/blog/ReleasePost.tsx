@@ -26,7 +26,7 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 <div className="card-body release-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
             )}
 
-            <h3 className="card-body pb-2 pt-0 m-0 release-post__changelog-header">Changelog</h3>
+            <h3 className="card-body pb-2 pt-4 m-0 release-post__changelog-header">Changelog highlights</h3>
             <div className="release-post__items list-group list-group-flush">
                 {post.frontmatter.changelogItems?.map(({ url, category, description }, i) => (
                     <a href={url} className="release-post__item d-md-flex list-group-item list-group-item-action" key={i}>
@@ -83,8 +83,20 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 </h1>
                 <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
             </header>
-
-            <div className="card-body">{body}</div>
+            {!full && post.frontmatter.heroImage ? (
+                <div className="card-body pt-0 d-flex">
+                    <div className="flex-1">{body}</div>
+                    <Link to={url} className="pl-3">
+                        <img
+                            className="blog-post__image"
+                            src={post.frontmatter.heroImage}
+                            alt={post.frontmatter.title}
+                        />
+                    </Link>
+                </div>
+            ) : (
+                    <div className="card-body">{body}</div>
+                )}
         </Tag>
     )
 }
