@@ -69,9 +69,8 @@ This workflow is great for reproducibility and having a completely CLI-based wor
 _In addition_, we are allowing changesets to be published and unpublished directly from the GUI, to make the workflow more approachable to new users. Simply omit the `published` field in the specs, and the GUI will become the source of truth for publishing changesets.
 
 <div style="text-align:center">
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-changesets-from-gui.gif" alt="Publish changesets from GUI demo">
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-changesets-from-gui.gif" alt="Publish changesets from GUI demo" style="max-width:calc(100% - 10px);"/>
 </div>
-
 
 ## Code Insights dashboards
 
@@ -86,9 +85,8 @@ You can now add your code insights to individual dashboard pages, in order to gr
 We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcut to using the filters in queries.
 
 <div style="text-align:center">
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/search-ref.gif" alt="Search reference demo">
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/search-ref.gif" alt="Search reference demo" style="max-width:calc(100% - 10px);"/>
 </div>
-
 
 ## Introducing API docs
 
@@ -96,8 +94,6 @@ Try out our brand new experimental feature that builds on top of Sourcegraph's s
 
 Read the [Sneak peek: API documentation generated for all your code](./api-documentation-for-all-your-code.md) blog post for more details.
 
-
 <div style="text-align:center">
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/api-docs.png" alt="Sourcegraph's new API docs feature">
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/api-docs.png" alt="Sourcegraph's new API docs feature" style="max-width:calc(100% - 10px);"/>
 </div>
-
