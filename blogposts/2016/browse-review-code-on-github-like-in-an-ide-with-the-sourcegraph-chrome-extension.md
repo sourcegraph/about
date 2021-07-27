@@ -31,11 +31,11 @@ The [Sourcegraph Chrome extension](https://docs.sourcegraph.com/integration/brow
 
 It’s totally free. See what other devs are saying about it:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Learning a new code base using <a href="https://twitter.com/srcgraph">@srcgraph</a> is extra dope! <a href="https://t.co/MKbac0RB0B">https://t.co/MKbac0RB0B</a> <a href="https://t.co/6YWeYyyYZo">pic.twitter.com/6YWeYyyYZo</a></p>&mdash; Kelsey Hightower (@kelseyhightower) <a href="https://twitter.com/kelseyhightower/status/791084672797122561">October 26, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Learning a new code base using <a href="https://twitter.com/sourcegraph">@sourcegraph</a> is extra dope! <a href="https://t.co/MKbac0RB0B">https://t.co/MKbac0RB0B</a> <a href="https://t.co/6YWeYyyYZo">pic.twitter.com/6YWeYyyYZo</a></p>&mdash; Kelsey Hightower (@kelseyhightower) <a href="https://twitter.com/kelseyhightower/status/791084672797122561">October 26, 2016</a></blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Used <a href="https://twitter.com/srcgraph">@srcgraph</a> jump-to-definition across 3 projects, 2 langs, finally landing deep in Golang src. Took &lt; 10 min to pin down the issue. 💪🏼</p>&mdash; Gabe Monroy (@gabrtv) <a href="https://twitter.com/gabrtv/status/738861622882508801">June 3, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Used <a href="https://twitter.com/sourcegraph">@sourcegraph</a> jump-to-definition across 3 projects, 2 langs, finally landing deep in Golang src. Took &lt; 10 min to pin down the issue. 💪🏼</p>&mdash; Gabe Monroy (@gabrtv) <a href="https://twitter.com/gabrtv/status/738861622882508801">June 3, 2016</a></blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Do you use source graph?&quot; My multi-times a day question for when I talk to people about <a href="https://twitter.com/github">@github</a> projects. <a href="https://twitter.com/hashtag/devBetter?src=hash">#devBetter</a> <a href="https://twitter.com/srcgraph">@srcgraph</a></p>&mdash; chase adams (@chaseadamsio) <a href="https://twitter.com/chaseadamsio/status/774284535655653376">September 9, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Do you use source graph?&quot; My multi-times a day question for when I talk to people about <a href="https://twitter.com/github">@github</a> projects. <a href="https://twitter.com/hashtag/devBetter?src=hash">#devBetter</a> <a href="https://twitter.com/sourcegraph">@sourcegraph</a></p>&mdash; chase adams (@chaseadamsio) <a href="https://twitter.com/chaseadamsio/status/774284535655653376">September 9, 2016</a></blockquote>
 
 * * *
 

@@ -26,4 +26,4 @@ Our series will cover how we do:
 - New feature proposals/plans
 - Customer feedback and technical support
 
-**[Subscribe to email updates](http://eepurl.com/doKVs9)** to get notified when the next posts in the series are published. [Tell us @srcgraph](https://twitter.com/srcgraph) if there are other topics you'd like to hear about. We're looking forward to sharing our team's culture and processes!
+**[Subscribe to email updates](http://eepurl.com/doKVs9)** to get notified when the next posts in the series are published. [Tell us @sourcegraph](https://twitter.com/sourcegraph) if there are other topics you'd like to hear about. We're looking forward to sharing our team's culture and processes!

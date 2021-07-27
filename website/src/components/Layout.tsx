@@ -42,7 +42,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                 <Helmet>
                     <title>{metaProps.title}</title>
                     <meta name="twitter:title" content={metaProps.title} />
-                    <meta name="twitter:site" content="@srcgraph" />
+                    <meta name="twitter:site" content="@sourcegraph" />
                     <meta name="twitter:image" content={metaProps.image} />
                     <meta name="twitter:card" content="summary" />
                     <meta name="twitter:description" content={metaProps.description} />

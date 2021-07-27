@@ -80,6 +80,6 @@ You can [sign up and auth your private code](https://sourcegraph.com/join) or tr
 
 Thank you to all the members of the Go community who’ve supported us along the way with feedback, bug reports, and word-of-mouth evangelism.
 
-Whether you’re new to Sourcegraph or are among the tens of thousands of programmers who already use it, this new edition will let you spend less time making sense of code and more time writing it. [So check it out now](https://sourcegraph.com/github.com/golang/go/-/blob/src/bytes/buffer.go#L17) and [let us know what you think](https://twitter.com/srcgraph)!
+Whether you’re new to Sourcegraph or are among the tens of thousands of programmers who already use it, this new edition will let you spend less time making sense of code and more time writing it. [So check it out now](https://sourcegraph.com/github.com/golang/go/-/blob/src/bytes/buffer.go#L17) and [let us know what you think](https://twitter.com/sourcegraph)!
 
 [![](https://cdn-images-1.medium.com/max/800/1*Hw9u6TmGEpKxyBW_WApmrw.png)](https://sourcegraph.com)

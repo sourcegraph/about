@@ -37,6 +37,7 @@ WIP
 
 ## What we offer our teammates
 
+- [How we employ people globally](global-employment-structures.md)
 - [How we structure compensation](compensation/index.md)
   - [How to create an offer](compensation/offers.md)
   - [Equity and stock options FAQ](compensation/equity-faq.md)
@@ -44,11 +45,10 @@ WIP
 - [Benefits and perks we offer](benefits-and-perks.md)
 - [Guidelines for travel](travel.md)
 - [Paid time off and working hours](paid-time-off-and-working-hours.md)
-  - [Requesting time off](requesting-time-off.md)
+  - [Submitting time off](submitting-time-off.md)
 - [Bank and public holidays](holidays.md)
 - [Donations teammates can make](donations.md)
 - [Celebrating birthdays and anniversaries](celebrate.md)
-- [When we can sponsor United States visas](visa-sponsorship.md)
 - [Employment verification](employment_verification.md)
 
 

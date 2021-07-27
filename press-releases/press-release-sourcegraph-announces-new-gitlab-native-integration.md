@@ -60,12 +60,12 @@ Over 10,000 developers rely on the Sourcegraph platform to ship high-quality sof
 - [Sourcegraph Website](https://about.sourcegraph.com/)
 - [Sourcegraph Documentation](https://docs.sourcegraph.com/)
 - [Sourcegraph Blog](https://about.sourcegraph.com/blog/)
-- [Sourcegraph on Twitter](https://twitter.com/srcgraph)
+- [Sourcegraph on Twitter](https://twitter.com/sourcegraph)
 - [Sourcegraph on LinkedIn](https://www.linkedin.com/company/sourcegraph/)
 - [Sourcegraph on GitHub](https://github.com/sourcegraph)
 
 ## About Sourcegraph
-Sourcegraph empowers all developers with universal code search. Sourcegraph’s mission is to provide tools that let developers from any organization create quality products by leveraging the best technology available. Sourcegraph is built for companies of all sizes, from startups that need a solid foundation for growth, to the world’s largest enterprises with complex security, scaling, and deployment needs. The company is headquartered in San Francisco, CA, and is backed by Redpoint Ventures and Goldcrest Capital. Follow Sourcegraph on Twitter at [@srcgraph](https://twitter.com/srcgraph) or visit [www.sourcegraph.com](https://sourcegraph.com/).
+Sourcegraph empowers all developers with universal code search. Sourcegraph’s mission is to provide tools that let developers from any organization create quality products by leveraging the best technology available. Sourcegraph is built for companies of all sizes, from startups that need a solid foundation for growth, to the world’s largest enterprises with complex security, scaling, and deployment needs. The company is headquartered in San Francisco, CA, and is backed by Redpoint Ventures and Goldcrest Capital. Follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph) or visit [www.sourcegraph.com](https://sourcegraph.com/).
 
 ## Media Contact
 Tanya Carlsson<br>

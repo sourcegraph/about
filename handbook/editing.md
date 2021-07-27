@@ -10,7 +10,7 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 - Any engineer at Sourcegraph can help. (The *code* that engineers write at Sourcegraph also consists of files in a Git repository, so engineers are very familiar with making these kinds of edits.)
 - [Teammates who have already made a handbook change](https://sourcegraph.com/github.com/sourcegraph/about/-/stats/contributors?path=handbook%2F) can help.
-- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @eric, @aharvey, @virginia, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
+- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @eric, @aharvey, @virginia, @ines, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
 - Ask in #handbook: `Who can screen-share with me to help me make an edit to the handbook?`
 - Don't be afraid of breaking anything! It is very easy for any engineer on the team to roll back to the previous version of the handbook if you make a mistake.
 
@@ -20,6 +20,7 @@ Here's the process for getting a change published to the handbook. For detailed 
 
 1. Propose the edits you want to make by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) on the Git repository at [github.com/sourcegraph/about](https://github.com/sourcegraph/about).
    - Because the [handbook is public](usage.md#why-make-this-handbook-public), anyone in the world can see your proposed edits.
+1. Make sure the [handbook checks pass](#handbook-checks).
 1. You can request a review from specific teammates (who will get a notification) on the GitHub pull request page.
    - We don't have any rules around who needs to review what changes. Use your judgment (e.g., if your change affects the entire engineering team, request review from the VP Engineering).
    - For minor edits, you can skip review.
@@ -65,6 +66,26 @@ If you just need to edit a single page, you can do it entirely on the web.
 1. Wait for teammates to review, comment on, and approve your pull request.
 1. When you're ready to publish the change and make it live, press the **Squash and merge** button, then press **Confirm squash and merge**.
 1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
+
+### Handbook checks
+
+>If you are running the handbook locally, you can run these checks before you push your commit, [explained in the readme](https://github.com/sourcegraph/about#handbook).
+
+On your Github pull request page, you'll notice a green checkmark or a red X-mark next to your commits. This information repeated at the end of the page with a "Some checks were not successful" in red or "All checks have passed" in green.
+
+These "checks" are automated formatting and structural rules that run on your new changes. The goal is to help you catch common errors before you merge your pull request to the handbook, because if a handbook user hits these errors when they are live, it's a poor experience.
+
+Ideally, you won't merge your pull request unless all checks have passed and are "green." If you see any red failed checks then you can click the red "X" and then click on the tooltip to be taken to more details ([example page with red X build](https://github.com/sourcegraph/about/pull/3564); [example details page](https://github.com/sourcegraph/about/runs/2976049292)). 
+
+If you're not sure what the error message means or can't determine how to fix it, you are welcome to ask for help in Slack's #handbook and optionally tag @handbook-support, but first refer to the common errors:
+
+#### Interpreting handbook check failures: most common examples
+
+- **Must link to .md files ([example](https://github.com/sourcegraph/about/runs/2976049292))**: `handbook/product/user_feedback.md: must link to .md file, not ../support/support-workflow` means that the error is in the file (handbook page) `handbook/product/user_feedback.md`, and the error is that there is a link to a URL rather than the markdown file of the page itself. 
+  - **Fix:** add an `.md` and make the link to `../support/support-workflow.md` instead of `../support/support-workflow`. 
+  - **Note:** if there is an anchor tag in the link, the `.md` goes before the anchor tag, like `../support/support-workflow.md#support-workflow`. 
+- **Disconnected page ([example](https://github.com/sourcegraph/about/runs/2975885844)):** `handbook/engineering/hiring/engineering-leadership.md: disconnected page (no inlinks from other pages)` means that the error is _not_ in the file `handbook/engineering/hiring/engineering-leadership.md`, but rather there are no pages in the handbook linking to this file page. 
+   - **Fix:** Determine if this page is still valuable, and if so, on which other handbook page to add a link to this page. If it's not obvious or you're not sure, you should post for help in #handbook and tag someone you think might know better (based on the content of the disconnected page). 
 
 ## Edit multiple files or add a new file
 
@@ -124,6 +145,25 @@ Pictures, images, and graphics must be uploaded to Google Cloud Storage to be ad
 ## Uploading large files
 
 If you want to upload a large file (such as a large image, video, or audio recording) and make it available in the handbook, upload the file to Google Drive and then get a shareable link to the file on Google Drive. Add that link to the handbook. Don't add large files to the handbook repository itself (because Git is not a good way to store large non-text files).
+
+## Using relative paths to link handbook pages
+
+When adding a link to another handbook page, it is best practise to use relative paths. A relative path refers to a location that is relative to a current directory. You can take a look at this video of Jean explaining relative paths and how they work.
+
+<iframe src="https://drive.google.com/file/d/1V84J62tCZuqq8BZKCdq9pJMT9bVb5rmY/preview" width="640" height="480" allow="autoplay"></iframe>
+
+You can also watch [it in Zoom](https://sourcegraph.zoom.us/rec/play/WCRDO_j9x4xw50xsjzBCWKIrL7eoAGBmDDOj7rdjkCIiDpRJ43rArVqrUy1tt4ybpg6fG9FEE0Flv49c.VqDasC2HEHZwRvFv?continueMode=true&_x_zm_rtaid=d0smscs5STuq8vNmHv40bg.1626856634998.9c37f9d9e5d2185652ba07f389dddf2d&_x_zm_rhtaid=329) with audio transcript.
+
+To sum up, the path described the location of the file, naming every directory before the file (called .md). Relative paths are a way of indicating where the file is. The program that reads the relative paths interprets links from where it is at the moment, so we need to make sure to indicate if the directory is different to the one we are at the moment. 
+
+Example:
+If we are linking the Buddy program handbook page (handbook/people-ops/onboarding/buddy-program.md) to the Onboarding for hiring managers page (handbook/people-ops/onboarding/onboarding-for-hiring-managers.md) we will only need to say **buddy-program.md** because they share the same directory.
+However, if we want to link the Buddy program handbook page to Engineering onboarding page (handbook/engineering/onboarding.md) we would need to use ../ to go back in the directory and then indicate the correct path: **../../engineering/onboarding.md**
+
+**Why do we do this?**
+While it is possible to use absolute URLs (ones that include the domain e.g. https://about.sourcegraph.com/handbook) to link to pages, if the domain changes, it is more difficult to update the URLs compared to using relative URLs.
+
+*Remember that if the .md file name changes or the directory changes (because you’ve moved the file to another team’s page, for example) you will need to update the path.*
 
 ## Adding redirects
 
