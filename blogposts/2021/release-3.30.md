@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.30 release"
 publishDate: 2021-07-20T10:00-07:00
-description: "Sourcegraph 3.30 introduces support for publishing batch changes from the UI, Code Insights dashboards, and a new search reference in the search sidebar."
+description: "Sourcegraph 3.30 introduces support for publishing batch changes from the UI, Code Insights dashboards, a new search reference in the search sidebar, and experimental API docs."
 tags: [blog, release]
 slug: "release/3.30"
 published: true
@@ -74,11 +74,11 @@ _In addition_, we are allowing changesets to be published and unpublished direct
 
 ## Code Insights dashboards
 
+You can now add your code insights to individual dashboard pages, in order to group and share a contextual subest of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](https://docs.sourcegraph.com/code_insights/explanations/viewing_code_insights#insights-dashboards).
+
 <p><video autoplay loop muted playsinline style="width:625px">
   <source src="https://sourcegraphstatic.com/blog/3.30/insights_dashboards.mp4" type="video/mp4">
 </video></p>
-
-You can now add your code insights to individual dashboard pages, in order to group and share a contextual subest of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](https://docs.sourcegraph.com/code_insights/explanations/viewing_code_insights#insights-dashboards).
 
 ## New code search reference
 
@@ -86,4 +86,14 @@ We've added a new search reference to the search results sidebar. The search ref
 
 <p>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/redesign/search-ref.gif" width="625" alt="Search reference demo">
+</p>
+
+## Introducing API docs
+
+Try out our brand new experimental feature that builds on top of Sourcegraph's semantic understanding of your code to analyze and generate API documentation. We're starting with Golang and would love to hear from you what language we should tackle next.
+
+Read the [Sneak peek: API documentation generated for all your code](./api-documentation-for-all-your-code.md) blog post for more details.
+
+<p>
+  <img src="https://sourcegraphstatic.com/blog/api-docs/api-docs.png" width="625" alt="Sourcegraph's new API docs feature">
 </p>

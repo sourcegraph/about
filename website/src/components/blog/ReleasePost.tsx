@@ -26,7 +26,7 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 <div className="card-body release-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
             )}
 
-            <h3 className="card-body pb-2 pt-0 m-0 release-post__changelog-header">Changelog</h3>
+            <h3 className="card-body pb-2 pt-4 m-0 release-post__changelog-header">Changelog highlights</h3>
             <div className="release-post__items list-group list-group-flush">
                 {post.frontmatter.changelogItems?.map(({ url, category, description }, i) => (
                     <a href={url} className="release-post__item d-md-flex list-group-item list-group-item-action" key={i}>
