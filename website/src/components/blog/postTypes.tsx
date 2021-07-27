@@ -101,6 +101,8 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
     blog: {
         title: 'Blog',
         baseUrl: '/blog',
+        image: 'https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png',
+        blogImage: 'https://about.sourcegraph.com/blog/strange-loop-banner-landscape.jpg',
         meta: {
             title: 'Sourcegraph Blog',
             description:
