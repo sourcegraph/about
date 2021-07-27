@@ -68,15 +68,13 @@ This workflow is great for reproducibility and having a completely CLI-based wor
 
 _In addition_, we are allowing changesets to be published and unpublished directly from the GUI, to make the workflow more approachable to new users. Simply omit the `published` field in the specs, and the GUI will become the source of truth for publishing changesets.
 
-<p>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-from-gui.gif" width="625" alt="Publish changesets from GUI demo">
-</p>
+![Publish changesets from GUI demo](https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-from-gui.gif)
 
 ## Code Insights dashboards
 
 You can now add your code insights to individual dashboard pages, in order to group and share a contextual subset of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](https://docs.sourcegraph.com/code_insights/explanations/viewing_code_insights#insights-dashboards).
 
-<p><video autoplay loop muted playsinline style="width:625px">
+<p><video autoplay loop muted playsinline style="width:100%">
   <source src="https://sourcegraphstatic.com/blog/3.30/insights_dashboards.mp4" type="video/mp4">
 </video></p>
 
@@ -84,9 +82,7 @@ You can now add your code insights to individual dashboard pages, in order to gr
 
 We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcut to using the filters in queries.
 
-<p>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/redesign/search-ref.gif" width="625" alt="Search reference demo">
-</p>
+![Search reference demo](https://storage.googleapis.com/sourcegraph-assets/blog/redesign/search-ref.gif)
 
 ## Introducing API docs
 
@@ -94,6 +90,4 @@ Try out our brand new experimental feature that builds on top of Sourcegraph's s
 
 Read the [Sneak peek: API documentation generated for all your code](./api-documentation-for-all-your-code.md) blog post for more details.
 
-<p>
-  <img src="https://sourcegraphstatic.com/blog/api-docs/api-docs.png" width="625" alt="Sourcegraph's new API docs feature">
-</p>
+![Sourcegraph's new API docs feature](https://sourcegraphstatic.com/blog/api-docs/api-docs.png)
