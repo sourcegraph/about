@@ -54,15 +54,16 @@ Our high-agency culture is only successful if individuals across the organizatio
 
 ### Examples
 
-While the principle above is clear, how to apply it can be murky. Examples below are helpful to illustrate it.
+While the principle above is clear, how to apply it can be murky. Examples below are helpful to illustrate it. This section is a work in progress—please add additional examples where decision rights were clear and made a decision successful!
 
 #### Changing our team’s OKR for this quarter
 
 - Because the team itself is responsible for the execution and results of their own OKRs, the [decider](#decider) should be clear: the team manager must make the decision to change an OKR.
+- In some cases, OKRs are jointly owned by two teams, and thus both managers would have joint decision rights. As described above, [this can be a risky pattern](#what-makes-an-effective-decision), and both managers must strive to ensure that shared ownership doesn't result in unclear roles, inertia, or passivity.
 
-#### Choosing software to use for expense reimbursements
+#### Choosing software to use for teammates to use to submit expenses for reimbursement
 
-- While the Tech Ops and Finance teams are responsible for the execution of the decision, the Finance team alone must deal with the repercussions of the decision as the ongoing maintainers of the expense reimbursement process. In this case, the owner of the process on the Finance team would be the [decider](#decider).
+- While the Tech Ops and Finance teams are responsible for the execution of the decision, the Finance team alone must deal with the repercussions of the decision as the ongoing maintainers of the process of approving expenses and reimbursing teammates. In this case, the owner of the process on the Finance team would be the [decider](#decider).
 - This is a more complex situation, of course, as everyone at the company will _use_ this software. The [recommender](#recommenders) should collect input from a sample of teammates to verify the new process will be successful.
 
 #### Building a new Growth team to focus on user growth
@@ -70,8 +71,6 @@ While the principle above is clear, how to apply it can be murky. Examples below
 - While user growth is a company-wide goal, it primarily aligns with the Product and Marketing organizations (based on team-level OKRs and efforts). Other teams affected include Sales, Engineering, Business Operations, and more.
 - As a result, the Product and Marketing teams are the ones who are primarily responsible for the results of such a decision. In this case, greater impact will be felt on the Product and Engineering organizations versus Marketing, as they may have to reallocate teammates to this new team full-time.
 - Given the goal that would drive this decision is cross-functional, the heads of Marketing and Engineering should be consulted for input, or potentially even given [approver](#approvers) rights, but in this case, the [decider](#decider) is the head of the Product organization.
-
-Please provide examples where decision rights were clear and made a decision successful!
 
 ## Highly cross-functional decisions
 
