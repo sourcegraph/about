@@ -13,7 +13,7 @@ The following page details how we approach technical hiring within the Code Inte
 - Use the discussion as a proxy for technical aptitude and programming skills.
 - Have a time-efficient process for yourself and Sourcegraph.
 
-### We want to find engineers that are:
+### We want to find engineers who are:
 - Good communicators.
 - Can tailor the technical depth and scope of a conversation dependent on the audience.
 - Can effectively teach and share their knowledge.
