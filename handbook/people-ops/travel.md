@@ -52,6 +52,8 @@ We also want you and expect you to use your full travel budgets each year! For t
 > -   A teammate cannot use their team budget for individual travel.
 > -   A teammate cannot skip the winter holiday party to get a longer stay at the spring/summer company-wide event.
 
+Most importantly, when planning any type of meetup, be aware of the optics surrounding your meetup and create opportunities for your teammates to join if they are interested. Planning events through our lens of inclusion can aid in creating an equitable meetup for all teammates.
+
 **There are five types of company-sponsored, company-paid travel:**
 
  1. Company-wide travel
