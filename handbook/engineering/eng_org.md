@@ -13,7 +13,7 @@ A minimum viable team contains:
 - A product manager
 - An engineering manager
 - Appropriate product design support depending on the work of the team
-- Four engineers, with a minimum of two per skillset (e.g. 2 backend and 2 frontend, or 4 backend/frontend)
+- Four engineers, with a minimum of two per skillset (examples: 2 backend + 2 frontend, 4 backend, 4 frontend)
 
 New teams will not be created until/unless we have committed headcount in the plan to staff them to a minimum viable team within 3 months of forming the team, or to whatever is necessary to make the new team successful, whichever is larger.
 
