@@ -1170,3 +1170,18 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: [amieroth] (https://github.com/amieroth)
 - [amie.rotherham@sourcegraph.com](mailto:amie.rotherham@sourcegraph.com), [LinkedIn] (https://www.linkedin.com/in/amierotherham/) [Twitter] (https://twitter.com/amieroth) 
 - Amie grew up on Vancouver Island on the far west coast of Canada, and currently lives in Toronto by way of San Francisco by way of Vancouver. She's spent 10 years working in tech PR, helping B2B brands and emerging tech gain mainstream adoption. She spends her time sending snail mail (and practicing calligraphy), testing out new recipes in the kitchen (and getting lessons from her chef husband), and reading (mainly fiction). 
+
+## Max Wiederholt (He/Him)
+
+- Customer Engineer
+- Mountain View, CA, USA 🇺🇸
+- [max.wiederholt@sourcegraph.com](mailto:max.wiederholt@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/maxwiederholt/), [Github](https://github.com/maaaaaaaax), [Twitter](https://twitter.com/maxwiederholt)
+- Max was born and raised in the San Francisco Bay Area. Prior to Sourcegraph, Max founded [Mischief](https://www.mischief.app/), a social network that helps anyone make a movie or TV series, then license that work to a streaming service. Max has worked on Google's developer relations team and Confluent's sales team. He graduated from UCLA with a BA in Political Science, before learning to code via [Harvard's CS50x online course](https://cs50.harvard.edu/x/2021/) and [San Jose's Coding Dojo](https://www.codingdojo.com/).
+
+## Justin Boyson (He/Him)
+
+- Frontend Engineer
+- Austin, TX, USA 🇺🇸
+- GitHub: [unclejustin](https://github.com/unclejustin)
+- [justin.boyson@sourcegraph.com](mailto:justin.boyson@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/justindavidboyson/)
+- Justin got his first taste of coding on a Commodore 64. He and his brother "hacked" their Wheel of Fortune™ game replacing all the character's speech text with curse words to hilarious effect. Since then he's turned his curiosity towards more positive pursuits, most recently as a Frontend Engineer at GitLab. Justin's antics are graciously tolerated by his patient wife, three less patient dogs, and one completely impatient cat. When he's not working there is an equal chance of finding him doing some subset of the following: roasting/drinking coffee, working on his house, playing video games, playing music, napping.

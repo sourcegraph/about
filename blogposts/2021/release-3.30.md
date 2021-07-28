@@ -58,7 +58,15 @@ changelogItems:
     category: Search
 ---
 
-Sourcegraph 3.30 is now available! For this release, we introduced:
+> ⚠️ WARNING: Several customers have reported experiencing issues with external service code host syncing after upgrading to Sourcegraph 3.30.0 and 3.30.1. We are currently working to root cause this issue. In the meantime, **we recommend that you do not upgrade to any of the 3.30.x releases.**
+>
+> For updates, please follow [sourcegraph#23288](https://github.com/sourcegraph/sourcegraph/issues/23288).
+>
+> If you have already upgraded, please reach out to [support@sourcegraph.com](mailto:support@sourcegraph.com) to discuss possible solutions.
+
+---
+
+For this release, we introduced:
 
 ## Batch Changes: Publish and unpublish changesets from the GUI
 
@@ -68,25 +76,25 @@ This workflow is great for reproducibility and having a completely CLI-based wor
 
 _In addition_, we are allowing changesets to be published and unpublished directly from the GUI, to make the workflow more approachable to new users. Simply omit the `published` field in the specs, and the GUI will become the source of truth for publishing changesets.
 
-<p>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-from-gui.gif" width="625" alt="Publish changesets from GUI demo">
-</p>
+<div style="text-align:center">
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-changesets-from-gui.gif" alt="Publish changesets from GUI demo" style="max-width:calc(100% - 10px);"/>
+</div>
 
 ## Code Insights dashboards
 
-You can now add your code insights to individual dashboard pages, in order to group and share a contextual subest of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](https://docs.sourcegraph.com/code_insights/explanations/viewing_code_insights#insights-dashboards).
+You can now add your code insights to individual dashboard pages, in order to group and share a contextual subset of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](https://docs.sourcegraph.com/code_insights/explanations/viewing_code_insights#insights-dashboards).
 
-<p><video autoplay loop muted playsinline style="width:625px">
+<div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
   <source src="https://sourcegraphstatic.com/blog/3.30/insights_dashboards.mp4" type="video/mp4">
-</video></p>
+</video></div>
 
 ## New code search reference
 
 We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcut to using the filters in queries.
 
-<p>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/redesign/search-ref.gif" width="625" alt="Search reference demo">
-</p>
+<div style="text-align:center">
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/search-ref.gif" alt="Search reference demo" style="max-width:calc(100% - 10px);"/>
+</div>
 
 ## Introducing API docs
 
@@ -94,6 +102,6 @@ Try out our brand new experimental feature that builds on top of Sourcegraph's s
 
 Read the [Sneak peek: API documentation generated for all your code](./api-documentation-for-all-your-code.md) blog post for more details.
 
-<p>
-  <img src="https://sourcegraphstatic.com/blog/api-docs/api-docs.png" width="625" alt="Sourcegraph's new API docs feature">
-</p>
+<div style="text-align:center">
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/api-docs.png" alt="Sourcegraph's new API docs feature" style="max-width:calc(100% - 10px);"/>
+</div>
