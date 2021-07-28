@@ -11,7 +11,7 @@ The core of Sourcegraph is [licensed under the Apache License, version 2.0](http
 
 As described [in the open source FAQ](../community/faq.md#is-all-of-sourcegraph-open-source), users can use just that functionality without agreeing to any enterprise licensing terms by building their own server image. If they do so, no code from our enterprise licensed features nor any trademarks or logos will be included in their Sourcegraph deployment. This means that there will be no references to functionality such as batch changes.
 
-Most users, however, will use our prebuilt images, which include code licensed under our [enterprise license](https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.enterprise). Users who use these images — with or without a paid plan — are agreeing to be bound by the terms of the enterprise license in addition to the terms of the Apache License.
+Most users, however, will use our prebuilt images, which include code licensed under our [enterprise license](https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.enterprise), and require agreeing to our [terms of service](https://about.sourcegraph.com/terms/) and [privacy policy](https://about.sourcegraph.com/privacy). Users who use these images — with or without a paid plan — are agreeing to be bound by the terms of the enterprise license in addition to the terms of the Apache License.
 
 ## Plans
 
@@ -26,3 +26,5 @@ You can think of this as a set of three options from the user's perspective:
 1. Run a fully open source deployment of Sourcegraph. No enterprise code is included in this deployment, no enterprise features (or even landing pages for those features) are enabled, and no option is provided to do so.
 2. Run Sourcegraph Core. This corresponds to [the _Free_ option on the pricing page](https://about.sourcegraph.com/pricing/). A Sourcegraph Core deployment includes enterprise code, but without a license key, any functionality provided therein is extremely limited. (For example, batch changes can only be made with up to five changesets.)
 3. Run Sourcegraph with a paid plan. This corresponds to [the _Team_ or _Enterprise_ options on the pricing page](https://about.sourcegraph.com/pricing/). These deployments include enterprise code, with paid features available based on the customer's plan, controlled by their license key.
+
+For more information, you may also want to refer to our [explanation of Sourcegraph Enterprise vs Sourcegraph OSS](../ce/enterprise-vs-oss.md).
