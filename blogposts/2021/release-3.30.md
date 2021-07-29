@@ -59,9 +59,9 @@ changelogItems:
 ---
 
 > ⚠️ WARNING: Users upgrading from 3.29 are advised to **upgrade directly to Sourcegraph 3.30.3**.
-> This release contains critical fixes to [issues](https://github.com/sourcegraph/sourcegraph/issues/23288) in previous 3.30.x releases.
+> This release contains critical fixes to issues in previous 3.30.x releases.
 >
-> If you have already upgraded to 3.30.0, 3.30.1, or 3.30.2 and are encountering issues, please reach out to [support@sourcegraph.com](mailto:support@sourcegraph.com) to discuss possible solutions.
+> If you have already upgraded to 3.30.0, 3.30.1, or 3.30.2 and are encountering issues, please follow [this migration guide](https://docs.sourcegraph.com/admin/migration/3_30).
 
 ---
 
