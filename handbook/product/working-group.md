@@ -27,9 +27,9 @@ There is no formal process for creating a working group, but here are a few guid
 
 - **define the outcome.** A working group is not a set organisational structure like a team or an org. It disappears once its outcome is achieved. Clearly defining the outcome helps set expectations and organise work.
 - **define how the decision will be made.** See [making decisions at Sourcegraph](../communication/decisions.md).
-- **sketch out a roadmap**
+- **sketch out a roadmap**.
 - **write a proposal** to share the outcome, identify participants and roadmap widely. Writing an RFC can help.
-- **collect feedback** and create the working group
+- **collect feedback** and create the working group.
 
 ### Communication channels
 
