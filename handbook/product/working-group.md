@@ -8,7 +8,7 @@ In that case, creating a working group can help bring structure and visibility i
 
 ## What is a working group
 
-A working group is a formally defined but ephemeral team focused on delivering a cross-functional outcome. Recent examples include making `/search` the homepage, and defining cloud personas.
+A working group is a formally defined but ephemeral group of people focused on delivering a cross-functional outcome. Recent examples include making `/search` the homepage, and defining cloud personas.
 
 Working groups bring structure and clarity on delivering a specific outcome. A working group should have a clearly purpose, participants, and agreed upon communication channels.
 
