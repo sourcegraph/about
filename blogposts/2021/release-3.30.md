@@ -58,15 +58,14 @@ changelogItems:
     category: Search
 ---
 
-> ⚠️ WARNING: Several customers have reported experiencing issues with external service code host syncing after upgrading to Sourcegraph 3.30.0 and 3.30.1. We are currently working to root cause this issue. In the meantime, **we recommend that you do not upgrade to any of the 3.30.x releases.**
+> ⚠️ WARNING: Users upgrading from 3.29 are advised to **upgrade directly to Sourcegraph 3.30.3**.
+> This release contains critical fixes to [issues](https://github.com/sourcegraph/sourcegraph/issues/23288) in previous 3.30.x releases.
 >
-> For updates, please follow [sourcegraph#23288](https://github.com/sourcegraph/sourcegraph/issues/23288).
->
-> If you have already upgraded, please reach out to [support@sourcegraph.com](mailto:support@sourcegraph.com) to discuss possible solutions.
+> If you have already upgraded to 3.30.0, 3.30.1, or 3.30.2 and are encountering issues, please reach out to [support@sourcegraph.com](mailto:support@sourcegraph.com) to discuss possible solutions.
 
 ---
 
-For this release, we introduced:
+Sourcegraph 3.30 is now available! For this release, we introduced:
 
 ## Batch Changes: Publish and unpublish changesets from the GUI
 
