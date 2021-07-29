@@ -34,7 +34,7 @@ Product at Sourcegraph consists of [product management](product_management/index
 - [User research](./user_research/index.md)
 - [Recommended reading](./onboarding/recommended_reading.md)
 - [Product licensing](licensing.md)
-
+- [Creating a working group](working-group.md)
 ### Metrics
 
 - [Product metrics dashboard](https://sourcegraph.looker.com/dashboards/127)
