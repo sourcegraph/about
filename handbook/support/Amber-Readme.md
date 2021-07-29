@@ -37,14 +37,15 @@ Then relax.. smile..laugh and repeat!
 when am not on time or close to being late 
 
 ### Technical areas of knowledge
+
 I dabble in the follwing areas: 
--SQL
--Relational Databases
--Data loading
--SIP protocols
--Dailing Rules
--AWS
--VMware 
+- SQL
+- Relational Databases
+- data loading
+- SIP protocols
+- dailing Rules
+- AWS
+- VMware 
 
 ### Technical interests to learn
 - docker
