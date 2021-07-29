@@ -781,7 +781,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Oceanside, CA USA 🇺🇸
 - Github: fabicastp
 - [fabiana@sourcegraph.com](mailto:fabiana@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/fabicastp/)
-- Fabiana was born and raised in Venezuela🇻🇪 and moved to California 4 years ago with her husband, dog and parrot. She's a big fan of processes and organization, and you’ll often hear her say *I have a spreadsheet for that.* She’s had the pleasure of doing PM with creatives throughout her professional career. They are the yin to her yang, she says. She’s also very proud of her Venezuelan culture and loves inviting people over to her home to eat arepas. 
+- Fabiana is from Venezuela 🇻🇪 but moved to California 4 years ago with her husband, dog and parrot. She's a big fan of processes and organization, and you’ll often hear her say *I have a spreadsheet for that.* She’s had the pleasure of doing project management with creatives throughout her professional career. They are the yin to her yang, she says. She’s also very proud of her Venezuelan culture and loves inviting people over to her home to eat arepas. 
 
 ## Kendrick Morris (he/him)
 - Finance and Operations Analyst
@@ -1162,3 +1162,33 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Los Angeles,USA 🇺🇸
 - [moose@sourcegraph.com](mailto:moose@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/mooooose/)
 - My grandpa was quite a famous storyteller, as well as my grandma; my dad and my mom too. So, I found myself telling stories to my brother when I was five. Since then I never stopped. -30 Years Later— I'm creating and telling stories for global brands. Nothing has changed. I just add some taglines and hashtags at the end. www.mustafaulker.com 
+
+## Amie Rotherham (She/Her)
+
+- Director of Global Communications 
+- Toronto, Canada 🇨🇦 
+- GitHub: [amieroth] (https://github.com/amieroth)
+- [amie.rotherham@sourcegraph.com](mailto:amie.rotherham@sourcegraph.com), [LinkedIn] (https://www.linkedin.com/in/amierotherham/) [Twitter] (https://twitter.com/amieroth) 
+- Amie grew up on Vancouver Island on the far west coast of Canada, and currently lives in Toronto by way of San Francisco by way of Vancouver. She's spent 10 years working in tech PR, helping B2B brands and emerging tech gain mainstream adoption. She spends her time sending snail mail (and practicing calligraphy), testing out new recipes in the kitchen (and getting lessons from her chef husband), and reading (mainly fiction). 
+
+## Max Wiederholt (He/Him)
+
+- Customer Engineer
+- Mountain View, CA, USA 🇺🇸
+- [max.wiederholt@sourcegraph.com](mailto:max.wiederholt@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/maxwiederholt/), [Github](https://github.com/maaaaaaaax), [Twitter](https://twitter.com/maxwiederholt)
+- Max was born and raised in the San Francisco Bay Area. Prior to Sourcegraph, Max founded [Mischief](https://www.mischief.app/), a social network that helps anyone make a movie or TV series, then license that work to a streaming service. Max has worked on Google's developer relations team and Confluent's sales team. He graduated from UCLA with a BA in Political Science, before learning to code via [Harvard's CS50x online course](https://cs50.harvard.edu/x/2021/) and [San Jose's Coding Dojo](https://www.codingdojo.com/).
+
+## Justin Boyson (He/Him)
+
+- Frontend Engineer
+- Austin, TX, USA 🇺🇸
+- GitHub: [unclejustin](https://github.com/unclejustin)
+- [justin.boyson@sourcegraph.com](mailto:justin.boyson@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/justindavidboyson/)
+- Justin got his first taste of coding on a Commodore 64. He and his brother "hacked" their Wheel of Fortune™ game replacing all the character's speech text with curse words to hilarious effect. Since then he's turned his curiosity towards more positive pursuits, most recently as a Frontend Engineer at GitLab. Justin's antics are graciously tolerated by his patient wife, three less patient dogs, and one completely impatient cat. When he's not working there is an equal chance of finding him doing some subset of the following: roasting/drinking coffee, working on his house, playing video games, playing music, napping.
+
+## Sruti Dhulipala (She/Her)
+- 👋 Senior Manager, Global Brand Strategy
+- 🌴 Los Angeles, California, USA
+- 👀 I’m always fascinated by the intersection of technology, culture, brands, and human behavior. I love keeping a pulse on trends as they are often great predictors of innovation.
+- 🌱 I’m currently learning permaculture, yoga, and very recently, how to use GitHub!
+- ✨ I’m looking to collaborate on all things related to awareness, brand perception, and adoption of Sourcegraph. I've spent over 12 years imparting my expertise and passion in scaling strategic initiatives that foster product engagement for a plethora of innovative brands (including Theranos!) My background in consulting, service design, brand strategy, and advertising give me a unique perspective to develop compelling brand narratives, cultivating an enriched connection with users and translating that into measured business impact. Specialties: Service Design, Design Thinking, Ethnographic Research, Enterprise Digital Strategy and Transformation, Experience Design, Organizational Culture Change Management, Brand Strategy, Product Marketing, Product Launch, Go-To-Market, Communications Planning.

@@ -9,7 +9,8 @@ The extensibility team owns our code host and third-party integrations (includin
 - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../../product/roles/index.md#product-manager)) is the acting PM for this team until we can hire a dedicated PM for it. Once that happens, Joel will focus entirely on code insights.
 - [Murat Sutunc](../../../company/team/index.md#murat-sutunc-he-him) (Interim [Engineering Manager](../../roles.md#engineering-manager)) {#extensibility-eng}
   - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-  - FQ2 full-stack engineer hire
+  - E.T. starting 2021-08-23
+  - FY22 full-stack engineer hire
 
 ## Mission
 
@@ -103,7 +104,7 @@ This column represents issues that we’ve acknowledged but are currently not pl
 This column exists for our design partners to track their issues.
 sorted by priority (descending)
 Items should be assigned to alicja & eng
-Our kanplan methodology gives us the ability to backlog groom while continuously delivering quality software. We benefit from flexible planning, clearer focus, and total transparency because our board represents our priorities. We also communicate our team updates with the broader engineering org [every two weeks](https://about.sourcegraph.com/handbook/engineering/engineering-management#status-updates).
+Our kanplan methodology gives us the ability to refine the backlog while continuously delivering quality software. We benefit from flexible planning, clearer focus, and total transparency because our board represents our priorities. We also communicate our team updates with the broader engineering org [every two weeks](https://about.sourcegraph.com/handbook/engineering/engineering-management#status-updates).
 
 ### Tracking Issues
 
