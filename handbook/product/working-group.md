@@ -23,7 +23,7 @@ If you answered yes to the questions above, creating a working group could help.
 
 ## Proposing a working group
 
-There is no formal process for creating a working group, but here are a few guidelines to help drive success
+There is no formal process for creating a working group, but here are a few guidelines to help drive success:
 
 - **define the outcome.** A working group is not a set organisational structure like a team or an org. It disappears once its outcome is achieved. Clearly defining the outcome helps set expectations and organise work.
 - **define how the decision will be made.** See [making decisions at Sourcegraph](../communication/decisions.md).
