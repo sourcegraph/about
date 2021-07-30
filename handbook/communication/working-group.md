@@ -15,7 +15,7 @@ Working groups bring structure and clarity on delivering a specific outcome. A w
 Like any structure, it creates some overhead, so we should avoid superfluous working groups. Before creating one consider:
 
 - is the initiative critical to achieving our goals?
-- does the initiative require sustained work and coordination over time? If you just need review and alignment, consider writing an [RFC](../communication/rfcs.md).
+- does the initiative require sustained work and coordination over time? If you just need review and alignment, consider writing an [RFC](rfcs.md).
 - is the initiative important for multiple teams or functions?
 - are existing communication channels insufficient to achieve the outcome?
 
@@ -26,7 +26,7 @@ If you answered yes to the questions above, creating a working group could help.
 There is no formal process for creating a working group, but here are a few guidelines to help drive success:
 
 - **define the outcome.** A working group is not a set organisational structure like a team or an organization. It disappears once its outcome is achieved. Clearly defining the outcome helps set expectations and organise work.
-- **define how the decision will be made.** See [making decisions at Sourcegraph](../communication/decisions.md).
+- **define how the decision will be made.** See [making decisions at Sourcegraph](decisions.md).
 - **sketch out a roadmap**.
 - **write a proposal** to share the outcome, identify participants and roadmap widely. Writing an RFC can help.
 - **collect feedback** and create the working group.
