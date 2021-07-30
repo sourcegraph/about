@@ -3,7 +3,7 @@
 
 # Phase II: Teammate Travel Meetup Guidelines
 
-As of June 16th 2021, we have resumed reimbursing travel per our  [team travel budgets](https://about.sourcegraph.com/handbook/people-ops/travel#team-travel-budgets)  for travel and in-person events that are permitted by law. We want this to be gradual, and all events must be completely optional.
+As of June 16th 2021, we have resumed reimbursing travel per our  [team travel budgets](https://about.sourcegraph.com/handbook/people-ops/travel#2-team-travel)  for travel and in-person events that are permitted by law. We want this to be gradual, and all events must be completely optional.
 
 As an all-remote company, we want everyone to feel included and connected, regardless of where they’re located. Choosing to travel or meet is an incredibly personal decision, and we support team members who may not be interested in meeting up at this time.
 
@@ -51,6 +51,8 @@ We also want you and expect you to use your full travel budgets each year! For t
 > -   A teammate cannot reallocate the budget from a company-wide event to an individual trip.
 > -   A teammate cannot use their team budget for individual travel.
 > -   A teammate cannot skip the winter holiday party to get a longer stay at the spring/summer company-wide event.
+
+Most importantly, when planning or attending any type of meetup, remember that you are representing the Sourcegraph team. In alignment with **[our company values](https://about.sourcegraph.com/handbook/company/values)**, we encourage a lens of inclusion in creating an equitable meetup for all teammates.
 
 **There are five types of company-sponsored, company-paid travel:**
 
@@ -172,7 +174,7 @@ As a reminder, travel is voluntary and no teammates are required to travel. Trip
 
 After your request has been submitted, you will receive approval from Finance via email within 1 business day.
 
-For any additional questions, please reach out to **#finance** or **#people-ops**.
+For any additional questions, please reach out to **#finance** or **#people-ops**. Also, you can post in #expense-inquiries via Slack.
 
 ## Budget Template
 -   We have provided an easy-to-complete travel budget calculator for your next team trip. See our [Travel Budget Example](https://docs.google.com/spreadsheets/d/1az1m-V9ddhwlZ_jSHnoMtK0J4VO1Aeph0mKDNf6SsEY/edit#gid=0) for ideas when submitting requests.

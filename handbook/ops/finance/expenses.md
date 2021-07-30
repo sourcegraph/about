@@ -2,13 +2,13 @@
 
 ## Approvals
 
-Generally, you should feel free to spend in ways that are in the best interest of the business (see our philosophy in [spending company money](../../people-ops/spending-company-money.md)). However, if you intend to spend >$500 on a single purchase (or, depending on your position, above higher limits), please see our [spending limits](payables.md#limits)
+Generally, you should feel free to spend in ways that are in the best interest of the business (see our philosophy in [spending company money](../../people-ops/spending-company-money.md)). However, if you intend to spend >$500 on a single purchase (or, depending on your position, above higher limits), please see our [spending limits](payables.md#limits). For all expense related questions, feel free to email us at ap@sourcegraph.com or post in Slack at #expense-inquiries.
 
 ## Submit expenses every month
 
 Teammates should submit expenses at the end of every month, ideally in a single report (if US based) or invoice (if based outside the US) for the full month.
 
-Our accountants prepare unaudited financial statements every month based on the prior month's spending. Submitting expenses soon after the month ends simplifies their jobs, makes the financial reports we rely on for planning more accurate, helps our finance team track and ensure that each teammate is in compliance with our monthly expense limits, and helps you get your money back faster!
+Our accountants prepare unaudited financial statements every month based on the prior month's spending. Submitting expenses before the month ends simplifies their jobs, makes the financial reports we rely on for planning more accurate, helps our finance team track and ensure that each teammate is in compliance with our monthly expense limits, and helps you get your money back faster!
 
 Any expenses more than 90 days old require approval by People Ops and Finance.
 
