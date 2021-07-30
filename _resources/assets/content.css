@@ -3,10 +3,10 @@
   content: '\A';
 }
 
-time {
+time, abbr[title] {
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-color: #bbb;
+  text-decoration-color: #a6b6d9;
   text-underline-offset: 0.2em;
   cursor: help;
 }
@@ -359,7 +359,7 @@ time {
   padding-left: 5px;
   padding-right: 3px;
   right: 0;
-  bottom: 0.1em;
+  top: 0.1em;
   font-size: 0.9em;
 }
 

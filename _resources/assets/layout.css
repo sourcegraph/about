@@ -5,18 +5,40 @@
     --sg-dark-gray: #6c757d;
     --sg-space-black: #000000;
 
-    --sg-vivid-violet: #a112ff;
-    --sg-vermillion: #ff5543;
-    --sg-sky-blue: #00cbec;
+    --sg-yellow-1: #FFF2CF;
+    --sg-yellow-2: #FFDB45;
+    --sg-yellow-3: #FFC247;
+    --sg-yellow-4: #FF9933;
+
+    --sg-violet-1: #E8D1FF;
+    --sg-violet-2: #A112FF;
+    --sg-violet-3: #820DDE;
+    --sg-violet-4: #6112A3;
+
+    --sg-red-1: #FFC9C9;
+    --sg-red-2: #FF5543;
+    --sg-red-3: #ED2E20;
+    --sg-red-4: #C22626;
+
+    --sg-blue-1: #C7FFFF;
+    --sg-blue-2: #00cbec;
+    --sg-blue-3: #00A1C7;
+    --sg-blue-4: #005482;
 
     --sg-plum-1: #bfbfff;
     --sg-plum-2: #6b59ed;
     --sg-plum-3: #5033e1;
     --sg-plum-4: #3826cc;
-    --sg-blurple: var(--sg-plum-3);
 
+    /* Logo colors */
+    --sg-vermillion: var(--sg-red-2);
+    --sg-vivid-violet: var(--sg-violet-2);
+    --sg-sky-blue: var(--sg-blue-2);
+
+    --sg-lemon: var(--sg-yellow-2);
+    --sg-blurple: var(--sg-plum-3);
     --sg-action-green: #17AB52;
-    --sg-alert-red: #ED2E20;
+    --sg-alert-red: var(--sg-red-3);
 
     --font-family: 'Source Sans Pro', sans-serif;
     --font-family-code: 'Source Code', monospace;
