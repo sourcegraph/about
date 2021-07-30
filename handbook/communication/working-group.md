@@ -1,6 +1,7 @@
 # Using working groups to deliver cross-team initiatives
 
 Some initiatives require committed effort and buy-in from multiple teams and functions, over a period of time. In an async culture, this sometimes means that:
+
 - it's hard to get committed time from contributors
 - getting buy-in and sharing updates is harder as there is no habitual way to do it (team channel, source of truth)
 
