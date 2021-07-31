@@ -17,7 +17,7 @@ const STARTER_FEATURES: Features = {
     batchChanges: false,
     codeHostIntegration: true,
     api: true,
-    selfHosted: true,
+    selfHosted: false,
     userAndAdminRoles: false,
     singleSignOn: false,
     multipleCodeHosts: false,
@@ -85,7 +85,10 @@ export default ((props: any) => (
                                 planProperties={
                                     <>
                                         <PricingPlanProperty>
-                                            Up to 10 users
+                                            Up to 10 users self-hosted | 1 user on cloud
+                                        </PricingPlanProperty>
+                                        <PricingPlanProperty className="mt-3">
+                                            Self-hosted or cloud deployment
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
                                             Community support on our public issue tracker<br />&nbsp;
@@ -94,9 +97,13 @@ export default ((props: any) => (
                                 }
                                 features={STARTER_FEATURES}
                                 isFree={true}
-                                buttonLabel="Deploy"
+                                buttonLabel="Deploy (self-hosted)"
                                 buttonClassName="btn-outline-primary"
                                 buttonHref="https://docs.sourcegraph.com#quickstart-guide"
+
+                                button2Label="Sign up (cloud)"
+                                button2ClassName="btn-outline-primary"
+                                button2Href=""
                             />
                         </div>
 
@@ -109,6 +116,9 @@ export default ((props: any) => (
                                     <>
                                         <PricingPlanProperty>
                                             Unlimited users
+                                        </PricingPlanProperty>
+                                        <PricingPlanProperty className="mt-3">
+                                            Self-hosted or managed instance
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
                                             SLA with dedicated customer engineer<br />and private Slack channel
