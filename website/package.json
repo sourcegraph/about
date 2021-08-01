@@ -82,7 +82,7 @@
     "prettier": "^2.3.2",
     "slugify": "^1.5.3",
     "stylelint": "^13.13.1",
-    "stylelint-scss": "^3.19.0",
+    "stylelint-scss": "^3.20.1",
     "typescript": "^4.3.2",
     "webpack": "^5.38.1"
   }
