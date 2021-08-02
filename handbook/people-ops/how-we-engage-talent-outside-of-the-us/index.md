@@ -71,7 +71,7 @@ Temporary contractors are marked as hired in Greenhouse, have a start date that 
 
 Hiring managers should consult the Talent and PeopleOps team early if an exceptional situation requires a different onboarding process for reasons critical to the role, or if the role is expected to become a full-time role in the near future. Alternatively, it’s up to hiring managers to set up introductions and provide information as needed for the purpose of the temporary contract.
 
-To read more about Temporary contractors and how they are defined visit [this page](how-we-engage-talent-outside-of-the-us/temporary-contractors.md)
+To read more about Temporary contractors and how they are defined visit [this page](temporary-contractors.md)
 
 ## Work Visas
 Since our teammates can generally work from anywhere in the world, we sponsor visas for only roles that require the presence in a particular country as part of the job responsibilities. In such cases we will work to support teammates as much as possible, but if our PEOs do not sponsor the visa, an alternative solution may take multiple months to implement. We encourage hiring managers to let the Talent and PeopleOps teams know as early as possible, before the role is even opened, if such requirements exist.
