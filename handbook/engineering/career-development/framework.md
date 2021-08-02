@@ -447,7 +447,7 @@ An in-band compensation increase (while staying at the same level) can happen at
       <td colspan="3" rowspan="2" class="tbd">
         <p>
           We haven't defined these levels at Sourcegraph yet, which would be equivalent in impact to a <a href="../roles#director-of-engineering">Director of Engineering</a> and <a href="../roles#vp-engineering">VP of Engineering</a>, respectively.
-          Like <a href="#ic5">IC5</a>, these are different <strong>roles</strong> than the levels preceding it based not only on performance, but also company need, and (like <a href="#ic5">IC5</a>) what impact at this level looks like may wary more from person to person than at preceding levels.
+          Like <a href="#ic5">IC5</a>, these are different <strong>roles</strong> than the levels preceding it based not only on performance, but also company need, and (like <a href="#ic5">IC5</a>) what impact at this level looks like may vary more from person to person than at preceding levels.
         </p>
         <p>
           We will define these no later than if any of the following become true:
