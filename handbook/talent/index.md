@@ -7,7 +7,6 @@ The Talent team is responsible for helping every team at Sourcegraph hire, and f
 - [Devon Coords](../company/team/index.md#devon-coords-she-her), Senior Technical Recruiter, Team Lead
    - Engineering
    - Product
-   - Customer Engineering
    - Support
 - [Kelsey Nagel](../company/team/index.md#kelsey-nagel-she-her), Corporate Recruiter
    - Marketing
@@ -15,7 +14,9 @@ The Talent team is responsible for helping every team at Sourcegraph hire, and f
    - Legal
    - BizOps
    - People Operations
-- Coming July 19th!  Senior Sales Recruiter 
+- [Marija Petrovic](../company/team/index.md#marija-petrovic-she-her), Senior Sales Recruiter, Team Lead
+   - Sales
+   - Customer Engineering
 - [Trevor Houghton](../company/team/index.md#trevor-houghton-he-him), Recruitment Operations Specialist
    - Interview scheduling for all departments
 
@@ -62,7 +63,8 @@ We are **hiring recruiters**!  View our open positions [here](https://boards.gre
 
 ## [Resources for Recruiters](https://about.sourcegraph.com/handbook/talent/resources_for_recruiters)
 
-- [Partnering with hiring managers](https://about.sourcegraph.com/handbook/talent/resources_for_recruiters)
+- The interview process
+   - [Kicking off a new search](https://about.sourcegraph.com/handbook/talent/resources_for_recruiters)
 - Interviewing
    - [Recruiter screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#recruiter-screen)
 - [Interview training & best practices](https://about.sourcegraph.com/handbook/talent/interview_training)

@@ -1,28 +1,70 @@
 /* GLOBAL */
 :root {
+    /* Brand guideline colors */
+    --sg-light-gray: #f4f7fb;
+    --sg-dark-gray: #6c757d;
+    --sg-space-black: #000000;
+
+    --sg-yellow-1: #FFF2CF;
+    --sg-yellow-2: #FFDB45;
+    --sg-yellow-3: #FFC247;
+    --sg-yellow-4: #FF9933;
+
+    --sg-violet-1: #E8D1FF;
+    --sg-violet-2: #A112FF;
+    --sg-violet-3: #820DDE;
+    --sg-violet-4: #6112A3;
+
+    --sg-red-1: #FFC9C9;
+    --sg-red-2: #FF5543;
+    --sg-red-3: #ED2E20;
+    --sg-red-4: #C22626;
+
+    --sg-blue-1: #C7FFFF;
+    --sg-blue-2: #00cbec;
+    --sg-blue-3: #00A1C7;
+    --sg-blue-4: #005482;
+
+    --sg-plum-1: #bfbfff;
+    --sg-plum-2: #6b59ed;
+    --sg-plum-3: #5033e1;
+    --sg-plum-4: #3826cc;
+
+    /* Logo colors */
+    --sg-vermillion: var(--sg-red-2);
+    --sg-vivid-violet: var(--sg-violet-2);
+    --sg-sky-blue: var(--sg-blue-2);
+
+    --sg-lemon: var(--sg-yellow-2);
+    --sg-blurple: var(--sg-plum-3);
+    --sg-action-green: #17AB52;
+    --sg-alert-red: var(--sg-red-3);
+
+    --font-family: 'Source Sans Pro', sans-serif;
+    --font-family-code: 'Source Code', monospace;
+
     --breakpoint-width: 900px;
     --text-color: #242f30;
     --link-color: #0055c5;
     --link-hover-color: #1986ea;
+    --link-active-color: #1986ea;
     --border-color: #e1e3e8;
-    --body-bg: #f4f6f8;
+    --body-bg: var(--sg-light-gray);
     --header-bg: #ffffff;
     --width: 1200px;
-    --spacing: 1rem;
+    --spacing: 1.25rem;
     --logo-width: 120px;
-    --logo-height: 16.84px;
-    --logo-padding-y: 0.75rem;
+    --logo-height: 1.5rem;
+    --logo-padding-y: 0.25rem;
     --header-height: calc(var(--logo-height) + 2 * var(--logo-padding-y) + 1px);
 }
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-        'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family:  var(--font-family);
     background-color: var(--body-bg);
     color: var(--text-color);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    font-size: 14px;
 }
 a {
     color: var(--link-color);
@@ -113,7 +155,6 @@ a:hover {
     white-space: nowrap;
 }
 #header nav a {
-    color: var(--link-color);
     padding: 0.25rem 0.4rem;
     text-decoration: none;
 }
@@ -148,7 +189,7 @@ footer a {
 
 #search-input,
 #search-button {
-    padding: 0.325rem;
+    padding: 0.3rem;
 }
 
 #search-input {
@@ -162,7 +203,13 @@ footer a {
     /* the styles below are related to the Swiftype search integration */
     height: initial;
     padding-left: 30px;
-    background-position-y: 10px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    background-size: 1rem 1rem;
+    background-position: 0.5rem 0.6rem;
+    background-image: url(https://unpkg.com/@mdi/svg@5/svg/magnify.svg);
+    background-repeat: no-repeat;
+    background-clip: padding-box;
 }
 
 @media (max-width: 465px) {
@@ -176,10 +223,10 @@ footer a {
 }
 
 #search-button {
-    background-color: var(--link-color);
+    background-color: var(--sg-plum-3);
     color: #ffffff;
     cursor: pointer;
-    border: 1px solid var(--link-color);
+    border: 1px solid var(--sg-plum-3);
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
@@ -187,7 +234,7 @@ footer a {
 #search-button:hover,
 #search-button:active,
 #search-button:focus {
-    color: #ffffff;
+    background-color: var(--sg-plum-4);
 }
 
 /* PAGE */
@@ -208,9 +255,6 @@ footer a {
     }
 }
 /* Cookiebot updates */
-body {
-    background-color: #f4f6f8;
-}
 button#CybotCookiebotDialogBodyButtonDetails {
     text-decoration: none;
 }
