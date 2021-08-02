@@ -99,7 +99,7 @@ We've added a new search reference to the search results sidebar. The search ref
 
 Try out our brand new experimental feature that builds on top of Sourcegraph's semantic understanding of your code to analyze and generate API documentation. We're starting with Golang and would love to hear from you what language we should tackle next.
 
-Read the [Sneak peek: API documentation generated for all your code](./api-documentation-for-all-your-code.md) blog post for more details.
+Read the [Sneak peek: API documentation generated for all your code](https://about.sourcegraph.com/blog/api-documentation-for-all-your-code/) blog post for more details.
 
 <div style="text-align:center">
 <img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/api-docs.png" alt="Sourcegraph's new API docs feature" style="max-width:calc(100% - 10px);"/>
