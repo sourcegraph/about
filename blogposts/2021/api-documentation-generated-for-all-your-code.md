@@ -6,8 +6,8 @@ authorUrl: https://slimsag.com
 publishDate: 2021-07-22T10:00-07:00
 tags: [blog, code, search, software, engineering, testing]
 slug: api-documentation-for-all-your-code
-heroImage: https://sourcegraphstatic.com/blog/api-docs/sourcegraph-api-docs.png
-socialImage: https://sourcegraphstatic.com/blog/api-docs/sourcegraph-api-docs.png
+heroImage: https://sourcegraphstatic.com/blog/api-docs/sourcegraph-api-docs-hero.png
+socialImage: https://sourcegraphstatic.com/blog/api-docs/sourcegraph-api-docs-hero.png
 published: true
 ---
 
