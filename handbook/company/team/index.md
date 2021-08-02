@@ -1200,3 +1200,11 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub: [thisisvic](https://github.com/thisisvic)
 - [victoria.yunger@sourcegraph.com](mailto:victoria.yunger@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/victoriayunger/)
 - Victoria was born in Ukraine, grew up in Israel, and then moved to the U.S. to pursue her Master's degree at UChicago. As of three years, she calls San Francisco her (foggy) home. Pre-Sourcegraph, Victoria worked as a product marketer at Zendesk. Back in Israel a.k.a Startup Nation, she held several marketing roles and served in the Israeli Defense Forces for 2 years that felt like 20. She is passionate about pitch slides that resonate with a buyer, Sonoma wines that elevate a dinner, and true crime podcasts.
+
+## Luke Taylor (He/Him)
+
+- Enterprise Account Executive
+- Amsterdam, The Netherlands
+- Github: [iamluketaylor](https://github.com/iamluketaylor), [luke.taylor@sourcegraph.com](mailto:luke.taylor@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/iamluketaylor/)
+- Working on the EMEA Sales Team. A Brit based out of beautiful Amsterdam. After bouncing around tiny start ups for a few years in London, I did 5 years at Optimizely, working with a bunch of folks here (James Clifford, Greg Bastis, Jon Kishpaugh, Khoshal Wial and co.). Outside of work my day-to-day is mostly just filler, killing time in between meals. When I'm not eating I love to train, play hockey, surf (badly), play my bass guitar and game (PC). I am also always trying to find new ways to grow and develop myself - happiness is the goal! Always down to talk about all things personal and professional growth.
+
