@@ -150,3 +150,11 @@ More details: https://cloud.google.com/compute/docs/startupscript
 2. SSH into the instance within GCP via the option provided.
 3. `cd` to the `deployment` folder and run:
 4. `docker compose restart sourcegraph-frontend-0 sourcegraph-frontend-internal`
+
+## Providing temporary access for Customer Support issues
+
+1. After a Github issue has been filed, CSE may request access to a managed instance.
+1. Access should be provided by elevating their IAM privileges too the same level as the
+distribution team within the GCP project via their Sourcegraph email in the IAM GCP console.
+1. After finishing the support case, access should be removed via removing their Sourcegraph
+email from the IAM console.

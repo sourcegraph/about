@@ -35,9 +35,16 @@ In many cases, questions can span multiple teams. For example, a question about 
 
 ### Deployment
 
-**Keywords**: `deploy`, `Docker`, `container`, `image`, `Kubernetes`/`k8s`, `cluster`, `AWS`, `Google Cloud`/`GCP`
+**Keywords**: `deploy`, `Docker`, `container`, `image`, `Kubernetes`/`k8s`, `cluster`, `AWS`, `Google Cloud`/`GCP` , `managed-instance`
 
 Any questions about deployment should be routed to the [Distribution team](../engineering/distribution/index.md).
+
+#### Managed Instances
+
+When the issue involves a managed instance, you should reach out to the distribution team after filling the issue and tagging @distribution-support in Slack.
+They can provide access to the instance to help in resolving the issue.
+After the issue is resolving, the CSE is responsible for confirming their access
+has been removed. The Github issue should only be closed after CSE access has been removed.
 
 ### Monitoring, management, and performance optimization
 
