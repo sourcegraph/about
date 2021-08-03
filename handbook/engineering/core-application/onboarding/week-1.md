@@ -1,8 +1,22 @@
 # Week 1
 
 - [Week 1](#week-1)
-  - [Objectives](#objectives)
+  - [Activities](#activities)
+  - [Outcomes](#outcomes)
 
-## Objectives
+## Activities
 
-- TODO
+These activities are where most of your time will be spent during week 1:
+
+- *Complete starter tasks:* There are a variety of [onboarding tasks](https://about.sourcegraph.com/handbook/engineering/onboarding#starter-tasks) that are applicable to all engineers at Sourcegraph. Completing these is a prerequisite to further work, so please prioritize them!
+- *Attend team meetings:* The core application team has a [regular meeting schedule](https://about.sourcegraph.com/handbook/engineering/core-application#processes) to coordinate work and keep in touch with each other across timezones and continents. Join these meetings, ask lots of questions and start to get a feel for the team and its activities.
+- *Architecture presentation:* Sourcegraph has [many moving pieces](https://docs.sourcegraph.com/dev/background-information/architecture), and many of those moving pieces interact with the core application services. The team will present a high-level overview of the system and its components, which will give you a foundation for taking [deeper code dives](index.md#service-tours) on your own throughout the week.
+- *Pair with your buddy on their work:* We do not require engineers to pair program as part of their daily activities, but it can be an effective strategy for sharing knowledge quickly. Set up an hour with your onboarding buddy to either contribute to their current work, or do a code review of previous work that they'd like to share.
+
+## Outcomes
+
+At the end of the week, the following outcomes should be achieved:
+
+1. Have Sourcegraph running in your configured development environment.
+2. Understand the major components of Sourcegraph and how they work together at a high level.
+3. Know how the team organizes work, shares progress and ships code to production.
