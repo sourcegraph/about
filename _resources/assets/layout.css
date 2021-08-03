@@ -56,7 +56,7 @@
     --logo-width: 120px;
     --logo-height: 1.5rem;
     --logo-padding-y: 0.25rem;
-    --header-height: calc(var(--logo-height) + 2 * var(--logo-padding-y) + 1px);
+    --header-height: calc(3rem + 1px);
 }
 body {
     margin: 0;
@@ -83,30 +83,23 @@ a:hover {
 }
 
 /* Scroll slightly beyond in-page anchor so that the fixed header doesn't obscure it. */
-:target::before {
-    content: '';
-    display: block;
-    position: relative;
-    pointer-events: none;
-}
-:not(.anchor-inline):target::before {
+:not(.anchor-inline):target {
     /* Scroll so that header anchors are at the top of the viewport. */
-    height: var(--header-height);
-    margin-top: calc(-1 * var(--header-height));
+    scroll-margin-top: var(--header-height);
 }
-.anchor-inline:target::before {
+.anchor-inline:target {
     /* Scroll so that inline anchors are at the center (vertically) of the viewport. */
-    height: 50vh;
-    margin-top: -50vh;
+    scroll-margin-top: 50vh;
 }
 .anchor-inline + .anchor-inline-link::before {
     content: '🔗';
     width: 1rem;
     height: 1rem;
+    padding-left: 0.2em;
 }
 .anchor-inline:target + .anchor-inline-link {
-    background-color: yellow;
-    border: solid 1px #eecc11;
+    background-color: var(--sg-yellow-2);
+    border: solid 1px var(--sg-yellow-3);
     display: inline-block;
     padding: 0.1rem;
     margin: -0.1rem;
@@ -115,6 +108,7 @@ a:hover {
 /* HEADER */
 #header {
     position: sticky;
+    height: var(--header-height);
     top: 0;
     z-index: 1;
     background-color: var(--header-bg);
@@ -219,6 +213,18 @@ footer a {
 
   #header nav div {
     margin-top: 1rem;
+  }
+}
+
+/* Account for wrapping nav */
+@media (max-width: 1029px) {
+  :root {
+    --header-height: 4.5rem;
+  }
+}
+@media (max-width: 754px) {
+  :root {
+    --header-height: 6.5rem;
   }
 }
 
