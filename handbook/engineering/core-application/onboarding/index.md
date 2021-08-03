@@ -5,7 +5,7 @@
 - [Onboarding | Core Application](#onboarding--core-application)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [Onboarding Objectives](#onboarding-objectives)
+  - [Onboarding by Week](#onboarding-by-week)
   - [Service Tours](#service-tours)
   - [Data Tours](#data-tours)
   - [Extras](#extras)
@@ -22,9 +22,9 @@ The first days and weeks on a new team can be daunting. There's a lot of informa
 
 > Please ensure you've familiarized yourself with the [General Onboarding](https://about.sourcegraph.com/handbook/people-ops/onboarding#for-all-new-teammates) and [Engineering Onboarding](https://about.sourcegraph.com/handbook/engineering/onboarding#engineering-onboarding) documents. The materials on this page are geared toward the [Core Application team](https://about.sourcegraph.com/handbook/engineering/core-application).
 
-## Onboarding Objectives
+## Onboarding by Week
 
-The core application team owns services that are fundamental to Sourcegraph's operations. It's an important responsibility that's both exciting and challenging. To that end, we've defined the following timeline and objectives to help you focus on what matters the most at each step of your onboarding journey.
+The core application team owns services that are fundamental to Sourcegraph's operations. It's an important responsibility that's both exciting and challenging. To that end, we've defined the following timeline to help you focus on what matters the most at each step of your onboarding journey.
 
 - [Week 1](week-1.md)
 - [Week 2](week-2.md)
