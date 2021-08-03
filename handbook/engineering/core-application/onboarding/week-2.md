@@ -18,5 +18,5 @@ Here's where you'll spend your time in week 2:
 At the end of the week, you'll have achieved the following outcomes:
 
 1. You'll have shipped a feature or fix to production yourself.
-2. You'll have gained a deeper knowledge of one of our services.
-3. You'll understand how to use Sourcegraph itself to tackle work efficiently.
+1. You'll have gained a deeper knowledge of one of our services.
+1. You'll understand how to use Sourcegraph itself to tackle work efficiently.

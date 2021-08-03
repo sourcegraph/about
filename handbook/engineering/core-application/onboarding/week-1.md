@@ -6,6 +6,8 @@
 
 ## Activities
 
+Welcome to the team! This week is all about getting up to speed. There are plenty of reading materials to familiarize yourself with, but we'll also make sure you get your hands on some code as well.
+
 These activities are where most of your time will be spent during week 1:
 
 - **Complete starter tasks:** There are a variety of [onboarding tasks](https://about.sourcegraph.com/handbook/engineering/onboarding#starter-tasks) that are applicable to all engineers at Sourcegraph. Completing these is a prerequisite to further work, so please prioritize them!
@@ -18,5 +20,5 @@ These activities are where most of your time will be spent during week 1:
 At the end of the week, you'll have achieved the following outcomes:
 
 1. You'll have Sourcegraph running in your fully-configured development environment.
-2. You'll understand the major components of Sourcegraph and how they work together at a high level.
-3. You'll know how the team organizes work, shares progress and ships code to production.
+1. You'll understand the major components of Sourcegraph and how they work together at a high level.
+1. You'll know how the team organizes work, shares progress and ships code to production.
