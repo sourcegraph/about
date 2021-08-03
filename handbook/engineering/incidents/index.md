@@ -13,13 +13,13 @@ An incident is any unplanned event that causes a service disruption. Here are so
 - There is a security issue with Sourcegraph.
 - The `main` build is broken.
 
-Incidents can be reported by anyone (e.g. customers, Sourcegraph teammates) via [incident.io](incident_io). The first Sourcegraph teammate (regardless of their role) that becomes aware of an incident is responsible for taking a few actions:
+Incidents can be reported by anyone (e.g. customers, Sourcegraph teammates) via incident.<unlink></unlink>io. The first Sourcegraph teammate (regardless of their role) that becomes aware of an incident is responsible for taking a few actions:
 
 1. If the incident was reported by someone outside of Sourcegraph, acknowledge that the incident is being handled.
 2. Start a new incident with the incident.<unlink></unlink>io Slack bot: `/incident`
    - set the description and (severity)[severity] from the modal in Slack
    - this will create a new chatroom in Slack where all other communication should occur
-3. Identify an engineer to be the [Incident Lead](incident_lead)
+3. Identify an engineer to be the [Incident Lead](#incident-lead)
    - If you are an engineer and available for 30 minutes, then you should [triage the incident](#triage).
    - If you are not an engineer or are not available to triage the incident, then ask the on-call engineer to triage the incident.
      - You can find out who is on-call by typing `/genie whoisoncall` in Slack.
@@ -84,8 +84,7 @@ After the incident is resolved:
 1. Create GitHub issues for any appropriate followup work.
 1. Schedule a [retrospective](../../retrospectives/index.md) if you think it would be valuable.
 
-## Incident<unlink>.io
 
-For more on why we need an incident management system here: [RFC 415](https://docs.google.com/document/d/18uGC02waDIZBIuxJy8y4EQvcm64MNl7neTTb83xU-j0/edit?usp=sharing)
+For more on why we need an incident management system, go here: [RFC 415](https://docs.google.com/document/d/18uGC02waDIZBIuxJy8y4EQvcm64MNl7neTTb83xU-j0/edit?usp=sharing)
 
-Need help using incident.io, got here: [Help Centre](https://docs.incident.io/)
+Need help using incident<unlink>.io, go to their Help Centre: https://docs.incident.io/
