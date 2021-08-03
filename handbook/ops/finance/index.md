@@ -114,6 +114,7 @@ Reach out to the [Finance team](#team) for an introduction if needed.
 
 ### Accounts Payable & Expenses
 
+- [Spending Company money](spending-company-money.md)
 - [Paying Company bills](payables.md)
 - [AP Policy](ap.md)
 - [Submitting an invoice (teammates based outside of US)](invoices.md)
