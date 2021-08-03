@@ -7,7 +7,6 @@
   - [Introduction](#introduction)
   - [Onboarding by Week](#onboarding-by-week)
   - [Service Tours](#service-tours)
-  - [Data Tours](#data-tours)
   - [Extras](#extras)
 
 ## Introduction
@@ -32,16 +31,9 @@ The core application team owns services that are fundamental to Sourcegraph's op
 - [Week 4](week-4.md)
 ## Service Tours
 
-- [How frontend works](#)
-- [How repo-updater works](how-repo-updater-works.md)
 - [How gitserver works](how-gitserver-works.md)
-
-## Data Tours
-
-- [What we store and why](#)
-- [How repository permissions work](#)
-- [How on-prem licensing works](#)
-- [How private code works](#)
+- [How repo-updater works](how-repo-updater-works.md)
+- [How frontend works](#)
 
 ## Extras
 
