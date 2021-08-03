@@ -1031,9 +1031,6 @@
       }
     },
     {
-  "type": "FeatureCollection",
-  "features": [
-    {
       "type": "Feature",
       "properties": { 
         "name": "<Luke Taylor>" 
