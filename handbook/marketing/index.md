@@ -28,6 +28,7 @@
 - Community Relations
     - [Public projects using Sourcegraph](public_projects_using_sourcegraph.md)
     - [Adding a community landing page](oss_community_pages.md)
+    - [How to become a Sourcegraph Champion](becoming_a_sourcegraph_champion.md)
 
 - [Brand](brand/index.md)
     - [Building a Strong Brand](brand/building_a_strong_brand.md)
