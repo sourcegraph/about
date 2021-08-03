@@ -1029,6 +1029,23 @@
           30.267153
         ]
       }
+    },
+    {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { 
+        "name": "<Luke Taylor>" 
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8758764564991,
+          52.353725318203985
+        ]
+      }
     }
   ]
 }
+ 
