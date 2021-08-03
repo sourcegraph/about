@@ -29,23 +29,8 @@ See product comparisons and integrations with:
 ## Summary feature comparison chart
 
 <style>
-    table.comparison-chart {
-        table-layout: fixed;
-    }
-    table.comparison-chart thead th:nth-child(1) {
-        width: 20%;
-    }
-    table.comparison-chart thead th:nth-child(2) {
-        width: 20%;
-    }
-    table.comparison-chart thead th:nth-child(3) {
-        width: 20%;
-    }
-    table.comparison-chart thead th:nth-child(4) {
-        width: 20%;
-    }
-    table.comparison-chart thead th:nth-child(5) {
-        width: 20%;
+    table.comparison-chart thead th {
+        width: 16%;
     }
     table.comparison-chart td {
         height: 4em;
