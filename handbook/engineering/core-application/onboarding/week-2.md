@@ -11,7 +11,7 @@ You completed your first week - great job! The first week is always a whirlwind 
 Here's where you'll spend your time in week 2:
 
 - **Pair with your buddy on your work:** Your onboarding buddy will pair with you on one or more tasks from our [JIRA board](https://sourcegraph.atlassian.net/secure/RapidBoard.jspa?rapidView=5&projectKey=COREAPP). These will be tasks that we've previously evaluated as being good for new hires to tackle (and ship to production!)
-- **Take a service tour:** We've created high level [service tours](index.md#service-tours) for important services that we interact with regularly. Choose one of them, use the links in the supporting documentation to explore the code, and then discuss what you learned with your onboarding buddy.
+- **Take a service tour:** We've created [service tours](index.md#service-tours) for important services that we interact with regularly. Choose one of them, use the links in the supporting documentation to explore the code, and then discuss what you learned with your onboarding buddy.
 
 ## Outcomes
 
