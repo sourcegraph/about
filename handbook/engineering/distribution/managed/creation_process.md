@@ -69,14 +69,6 @@ Creating a new managed instance involves following the steps below.
 					"url": "$WEBHOOK_URL"
 				}
 			},
-			{
-				"level": "warning",
-				"notifier": {
-					"type": "slack",
-					"username": "$COMPANY",
-					"url": "$WEBHOOK_URL"
-				}
-			}
 		],
    ```
 1. Add an entry for the customer by adding their HubSpot link to the checklist in the [managed instances upgrade issue template](../../releases/upgrade_managed_issue_template.md).
