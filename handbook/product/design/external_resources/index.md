@@ -1,0 +1,10 @@
+# External resources
+
+The design team curates a list of external resources we find useful to reference and share.
+
+- [10 General principles for interaction design](https://www.interaction-design.org/literature/article/heuristic-evaluation-how-to-conduct-a-heuristic-evaluation)
+- [UX research cheat sheet](https://www.nngroup.com/articles/ux-research-cheat-sheet/)
+- [usability.gov](https://www.usability.gov/)
+- [Apple's human interface guidelines](https://developer.apple.com/design/human-interface-guidelines/)
+- [Google's material design](https://material.io/design/)
+- [Potential UX projects](https://docs.google.com/document/d/1LemO13R3f0Ku88WK8tFr7_Qo4teDA0Bebs8Y2TGkS3U/edit#heading=h.xsac5d1pz16w)
