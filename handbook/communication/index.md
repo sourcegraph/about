@@ -6,6 +6,7 @@ We're an [all-remote](../company/remote/index.md) company, with teammates from a
 
 These places are the source of truth for information at Sourcegraph. Information in these places is expected to be accurate and up-to-date:
 
+- [Handbook](https://about.sourcegraph.com/handbook)
 - [Documentation](https://docs.sourcegraph.com)
 - [sourcegraph/sourcegraph repository](https://github.com/sourcegraph/sourcegraph)
 - [sourcegraph/about repository](https://github.com/sourcegraph/sourcegraph)
