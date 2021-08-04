@@ -18,6 +18,7 @@ Creating a new managed instance involves following the steps below.
     - **Add** > **Login** > enter **$COMPANY sourcegraph-admin** as the title
       - **User:** `managed+$COMPANY@sourcegraph.com`
       - **Password:** Change **length** to 40 and turn on symbols and digits > **Save**
+    - Note: for all of the above, if the company name differs (i.e. via abbreviation) from the name of the folder used in `sourcegraph/customer`, please include the abbreviation in the 1password as well for easier search
 1. In GCP, enable the **Compute Engine API**:
    - Under **APIs & Services** > **Library** search for "Compute"
    - Select **Compute Engine API** and choose **Enable**
