@@ -1,4 +1,4 @@
-# Reporting a vulnerability
+# Reporting a vulnerabilitytesttest
 
 We at Sourcegraph value the security community and believe that responsible disclosure of security vulnerabilities in our product and tools helps us ensure the security and privacy of our users. 
 
