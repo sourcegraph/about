@@ -24,6 +24,11 @@
     margin-top: var(--index-margin-top);
     overflow-y: auto;
 }
+@media (min-width: 900px) {
+  #index {
+    max-width: 17rem;
+  }
+}
 #index > h3.version {
     font-weight: bold;
     font-size: 100%;
@@ -55,7 +60,6 @@
     flex: 8 4;
     background-color: white;
     padding: var(--spacing) var(--spacing) calc(3 * var(--spacing));
-    overflow: hidden;
     border-radius: 3px;
     margin-bottom: 1rem;
     border: 1px solid var(--border-color);
