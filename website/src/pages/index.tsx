@@ -144,6 +144,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
+
             <ContentSection className="mt-6">
                 <div className="row flex-wrap-reverse">
                     <div className="col-lg-7 pr-lg-6 mt-3">
@@ -177,6 +178,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
+
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
@@ -207,6 +209,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
+
             <GetStarted className="bg-gradient-green-blue mt-6" />
         </div>
     </Layout>

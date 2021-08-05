@@ -3,7 +3,7 @@ import { ContentSection } from './content/ContentSection'
 
 export const IntegrationsSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <ContentSection className={className}>
-        <h2 className="display-3 font-weight-bold">Works with your code, infrastructure, and tools</h2>
+        <h2 className="display-3 font-weight-bold mb-3">Works with your code, infrastructure, and tools</h2>
         <div className="row">
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">All your repositories</h3>
@@ -58,6 +58,9 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     </li>
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Ridiculously big monorepos</code>
+                    </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">Open source repos</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">500,000+ repositories</code>
@@ -250,6 +253,9 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">npm</code>
                     </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">sonarcube/sonarcloud</code>
+                    </li>
                     <li className="d-block">
                         <a href="https://docs.sourcegraph.com/integration" className="small text-muted">
                             See all integrations or build your own
@@ -262,6 +268,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                 <ul className="list-inline d-inline-flex flex-wrap">
                     <li className="list-inline-item text-nowrap">
                         Who? <code className="border rounded px-1">Self-hosted (you)</code>{' '}
+                        <code className="border rounded px-1">Cloud</code>{' '}
                         <code className="border rounded px-1">Managed by us</code>{' '}
                     </li>
                     <li className="list-inline-item text-nowrap">

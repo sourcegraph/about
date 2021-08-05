@@ -103,7 +103,7 @@ export default ((props: any) => (
 
                                 button2Label="Sign up (cloud)"
                                 button2ClassName="btn-outline-primary"
-                                button2Href=""
+                                button2Href="/code-search"
                             />
                         </div>
 

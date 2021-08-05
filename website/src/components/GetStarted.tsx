@@ -25,6 +25,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                     <h1 className="display-2 font-weight-bold mb-5">Get started with Sourcegraph for free</h1>
                     <div className="row">
                         <div className="col-lg-6 get-started__local">
+                            <div className="text-uppercase">Self-hosted</div>
                             <h2 className="get-started__search-headings">Search your own code</h2>
                             <p>
                                 <span className="h5">Quickstart:</span> Run this to launch Sourcegraph locally:
@@ -49,7 +50,6 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                 </a>{' '}
                                 for information about Docker deployments, Kubernetes clusters, and other clusters.
                             </p>
-
                             <h2 className="h5 mt-4">Want help?</h2>
                             <div className="pt-1">
                                 <a className="btn btn-sm btn-outline-primary mb-2" href="https://docs.sourcegraph.com">
@@ -59,6 +59,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                             <div className="pt-1">Contact us: <a href="https://info.sourcegraph.com/talk-to-a-developer">Talk to an engineer</a></div>
                         </div>
                         <div className="col-lg-6 get-started__search">
+                            <div className="text-uppercase">Cloud</div>
                             <h2 className="get-started__search-headings">Search open source code</h2>
                             <p>Search open source code or your own public repositories now.</p>
                             <div className="get-started__action boxshadow">
