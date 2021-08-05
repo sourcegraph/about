@@ -31,7 +31,7 @@ Our [product design principles](../design_principles.md) are how we express our 
 
 ### Designing in the open
 
-At Sourcegraph, we design in the open. This is an important part of how we work as a design team, and is a key part of how we apply [our values](../company/values.md) to our work and thrive in our globally distributed, remote company.
+At Sourcegraph, we design in the open. This is an important part of how we work as a design team, and is a key part of how we apply [our values](../../company/values.md) to our work and thrive in our globally distributed, remote company.
 
 Designing in the open means many things to us.
 
@@ -45,7 +45,7 @@ Designing in the open is hard! As designers, it’s easy to want to hold back on
 Product design at Sourcegraph is low-process and highly adaptive. Every project is a little bit different, but we usually follow the same general approach where cross-disciplinary project teams move together through **Discovery** and **Delivery** phases.
 
 
-- **The Discovery phase** provides space for the project team to collaborate on problem definition, [research](./researcg/index.md), ideation and experimentation, [testing](./research/index.md), and ultimately to converge on an outcome that the project team agrees to move forward into Delivery.
+- **The Discovery phase** provides space for the project team to collaborate on problem definition, [research](./research/index.md), ideation and experimentation, [testing](./research/index.md), and ultimately to converge on an outcome that the project team agrees to move forward into Delivery.
 
 - **The Delivery phase** is the tactical implementation of the outcome of the Discovery phase, usually by engineering, and results in shipping something that we can then [measure](./metrics/index.md) and evaluate.
 
@@ -69,6 +69,6 @@ We avoid siloed work as much as possible. Instead of design and development phas
 ## Toolkit
 
 - [Tools](./tools/index.md)
-- [Content guidelines](../../communication/content_guidelines)
+- [Content guidelines](../../communication/content_guidelines/index.md)
 - [Documents and templates](./documents_templates/index.md)
 - [External resources](./external_resources/index.md)
