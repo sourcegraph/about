@@ -22,13 +22,13 @@ Please reference the [hiring plan](https://docs.google.com/spreadsheets/d/1Dpf6a
 ### 1. Opening a new job
 
 - To open a new role:
-    - The Hiring Manager fills out [this intake form](https://docs.google.com/forms/d/1ju9waV4k_TpYMGmYZaH5eA2swkuvIthLFKQCzqrRUZM/edit).
+    - The Hiring Manager fills out [this intake form](https://docs.google.com/forms/d/1ju9waV4k_TpYMGmYZaH5eA2swkuvIthLFKQCzqrRUZM/edit).  Responses are routed to our [headcount tracking sheet](https://docs.google.com/spreadsheets/d/1Dpf6aDw1ESJRYroJz6-ZtaACJxwjEu4my_xeYuB3a7E/edit#gid=2123710308).
     - The Hiring Manager creates a job description using [this template](https://docs.google.com/document/d/1rJAYyARbegvvH_e-VTrHoFhU9cDG5WfHov3L12NeCO8/edit).  Read more about why we write job descriptions in this way [here](interview_process.md#creating-a-job-description).
     - The Hiring Manager creates an [interview plan](https://docs.google.com/spreadsheets/d/1pMG_K3pf_pP_AIvy8jjOKc-h6htDJ5QkvEMD3prAQ5Y/edit#gid=1566158302).  Before creating your plan, we encourage you to [read more](hiring/index.md) about why creating an interview plan comprised of structured interview questions is critical to our success.
 
 - Once the Hiring Manager completes the above steps, the Recruiter takes the below actions:
     - Recruiter schedules a 30-45 minute intake meeting with the Hiring Manager to kick off the search.  This is a necessary step to ensure initial alignment and set our search up for success.
-    - Recruiter opens the job in Greenhouse and builds out the interview plan, adding all behavioral-based, structured questions directly into each interview stage.
+    - Recruiter opens the job in Greenhouse by copying the "Template" job and builds out the interview plan, adding all behavioral-based, structured questions directly into each interview stage.  All interview stages should use the standard interview titles, found [here](https://about.sourcegraph.com/handbook/talent/types_of_interviews).
     - Recruiter posts the job to our [Careers page](https://boards.greenhouse.io/sourcegraph91) and LinkedIn. If you would like it posted in other locations, please ask your Recruiter or send a Slack message to @hiring.  You can see a list of other job boards we are considering [here](hiring/job_boards.md).
 
 ### 2. Recruiting Stage
@@ -56,15 +56,21 @@ Please reference the [hiring plan](https://docs.google.com/spreadsheets/d/1Dpf6a
    - Agenda: 1. the Hiring Manager kicks off the call to give the candidate feedback and tell why we’re excited about them 2. the Recruiter then shares their screen to display the offer summary document. The Recruiter then covers our compensation philosophy, the compensation specifics, perks, travel (and benefits, if applicable), and equity 3. the Hiring Manager and Recruiter answers any questions and asks how the candidate is feeling about the opportunity.  
    - Before ending the call, be sure to determine a potential start date (all start dates should fall on a cohort Monday) and 2) schedule a follow up call to answer any questions.
 - Following the offer call, Recruiter sends the offer summary to the candidate in an email.
-- To send an official offer, the Recruiter
-   - 1. updates the offer approval with the accurate start date
-   - 2. tags the VP Talent and the Recruitment Operations Specialist in the notes section: "@Carly @Trevor please send this [US/Non-US] offer letter"
+- To send an official offer, the Recruiter:
+   - Updates the offer approval with the accurate start date
+   - Tags the VP Talent and the Recruitment Operations Specialist in the notes section: "@Carly @Trevor please send this [US/Non-US] offer letter"
 - The official offer is sent to the candidate via Docusign.
 
 ### 4. After the offer
 - After the candidate signs the offer, the Recruiter sends a welcome email to the candidate and Cc's the Hiring Manager.
 - The Hiring Manager posts an announcement of the candidate's acceptance in the Slack #Hiring channel.
-- The Recruiter declines all other candidates, marks the candidate as "Hired" in Greenhouse, closes the job (if applicable), sends a hire report to Ines, VP of Talent, and Hiring Manager, and exports the candidate to Bamboo.
+- The Recruiter takes the following steps: 
+   - Declines all other candidates. 
+   - Confirms that the start date and hired date are correct, ensuring accurate time-to-fill data.
+   - Marks the candidate as "Hired" in Greenhouse.
+   - Closes the job (if applicable).
+   - Sends a hire report to Ines, VP of Talent, and Hiring Manager.
+   - Exports the candidate to Bamboo.
 - The People Operations team then works with the candidate to onboard them and get them set up for their first day.
 
 ## Using external recruiting agencies

@@ -42,3 +42,33 @@ When choosing two people to be on the values interview, please keep in mind the 
 Using [this document](https://docs.google.com/spreadsheets/d/1NUDEjzud_GxocjKkd__m0hTf21tN3OIgOwtk_OjhV20/edit?ts=60e4c3bd#gid=0), [@hiring manager], please select two people who are highlighted in green (indicating that they have been here for 3 months or longer). In addition, here is a [doc](https://about.sourcegraph.com/handbook/talent/hiring/evaluating_values) that outlines the values interview. Once you've identified your interviewers, I will ensure they are trained & ready to go!
 
 To review the interview process / what to expect as we begin interviewing candidates, please reference the guidelines for hiring managers doc [in the handbook](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers)
+
+### Extending an offer
+- Once finalist is identified, Recruiter completes references if necessary.
+- Recruiter confirms level and compensation.
+    - [Compensation philosophy](../people-ops/compensation/index.md#components-of-compensation)
+- Recruiter submits offer for approval in Greenhouse.
+   - Approval chain: VP Talent > Hiring Manager > Department Head > VP Operations.
+- Once the offer is **fully approved** in Greenhouse, Recruiter schedules offer summary call. The purpose of the offer summary call is to review our offer with the candidate and answer any questions they may have.  
+   - Attendees: Recruiter, Hiring Manager, Candidate.
+   - Prior to the call, Recruiter drafts an Offer Summary and sends to VP Talent and Hiring Manager confirming the offer details are correct, and outlining the agenda for the call. 
+   - Agenda: 1. the Hiring Manager kicks off the call to give the candidate feedback and tell why we’re excited about them 2. the Recruiter then shares their screen to display the offer summary document. The Recruiter then covers our compensation philosophy, the compensation specifics, perks, travel (and benefits, if applicable), and equity 3. the Hiring Manager and Recruiter answers any questions and asks how the candidate is feeling about the opportunity.  
+   - Before ending the call, be sure to determine a potential start date (all start dates should fall on a cohort Monday) and 2) schedule a follow up call to answer any questions.
+- Following the offer call, Recruiter sends the offer summary to the candidate in an email.
+- To send an official offer, the Recruiter
+   - 1. updates the offer approval with the accurate start date
+   - 2. tags the VP Talent and the Recruitment Operations Specialist in the notes section: "@Carly @Trevor please send this [US/Non-US] offer letter"
+- The official offer is sent to the candidate via Docusign.
+
+### After the offer
+- After the candidate signs the offer, the Recruiter sends a welcome email to the candidate and Cc's the Hiring Manager.
+- The Hiring Manager posts an announcement of the candidate's acceptance in the Slack #Hiring channel.
+- The Recruiter declines all other candidates, marks the candidate as "Hired" in Greenhouse, closes the job (if applicable), sends a hire report to Ines, VP of Talent, and Hiring Manager, and exports the candidate to Bamboo.
+- The People Operations team then works with the candidate to onboard them and get them set up for their first day.
+
+### LinkedIn posting best practices
+It is much better to copy and paste the entire post and then give the author credit by tagging them. Long story short, avoid resharing and copy/paste instead.
+
+Avoid including links directly in your posts. Anything that takes the user away from LinkedIn is discouraged... so instead, add the link as a comment.
+
+[Here's](https://www.linkedin.com/pulse/13-tips-mastering-linkedin-algorithm-jay-palter/) an article for more helpful tips!

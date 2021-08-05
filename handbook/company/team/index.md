@@ -635,14 +635,6 @@ To add yourself to this page:
 - dudley@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/dudleynostrand/)
 - Dudley lives in Hamilton, MA ( just north of Boston) with his wife Sasha and two kids Xander and Bennett (both in college in NC). Originally from Florida and Newport, Rhode Island, he moved to Hamilton 22 years ago. He spent 15 years at Fidelity Investments, before moving on to tech companies like BMC and Appdynamics/Cisco. He enjoys spending time boating, fishing, riding his motorcycle, and traveling with his family to tropical destinations to sit on the beach and swim in the ocean.
 
-## Shaan Sheth (he/him)
-- Director of Business Operations & Strategy
-- Los Angeles, CA USA 🇺🇸
-- GitHub: [shaan-sourcegraph](https://github.com/shaan-sourcegraph)
-- [shaan@sourcegraph.com](mailto:shaan@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/shaansheth/)
-- Shaan joins Sourcegraph after a decade in finance and operations roles at large and small software companies, including Salesforce and Greenhouse Software. 
-Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and optimizing for the best credit card points programs. Shaan grew up in CA and graduated from UC Berkeley.
-
 ## Tammy Zhu (she/her)
 - Director of Legal
 - San Francisco, CA, USA 🇺🇸
@@ -781,7 +773,7 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - Oceanside, CA USA 🇺🇸
 - Github: fabicastp
 - [fabiana@sourcegraph.com](mailto:fabiana@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/fabicastp/)
-- Fabiana was born and raised in Venezuela🇻🇪 and moved to California 4 years ago with her husband, dog and parrot. She's a big fan of processes and organization, and you’ll often hear her say *I have a spreadsheet for that.* She’s had the pleasure of doing PM with creatives throughout her professional career. They are the yin to her yang, she says. She’s also very proud of her Venezuelan culture and loves inviting people over to her home to eat arepas. 
+- Fabiana is from Venezuela 🇻🇪 but moved to California 4 years ago with her husband, dog and parrot. She's a big fan of processes and organization, and you’ll often hear her say *I have a spreadsheet for that.* She’s had the pleasure of doing project management with creatives throughout her professional career. They are the yin to her yang, she says. She’s also very proud of her Venezuelan culture and loves inviting people over to her home to eat arepas. 
 
 ## Kendrick Morris (he/him)
 - Finance and Operations Analyst
@@ -808,13 +800,6 @@ Outside of work, he enjoys golfing, cheering on his favorite LA sports teams and
 - [rebecca@sourcegraph.com](mailto:rebecca@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/rebecca-lee-dodd/)
 - Originally from Cape Town, South Africa, Rebecca started her career in journalism before finding her way into tech via content marketing. Prior to Sourcegraph she worked at GitLab for over four years and managed their company blog. An enthusiastic traveller, Rebecca has a custom Google Map of every city she's ever visited, complete with colour-coded pins of the best coffee shops and restaurants. Ask her for recommendations!
 
-## Julie Campagna (she/her)
-- Senior Manager, Customer Advocacy
-- Sebastopol, CA  USA
-- GitHub: [juliecampagna](https://github.com/juliecampagna)
-- [julie@sourcegraph.com](mailto:julie@sourcegraph.com)
-- Name pronunciation: cohmpanya
-- Julie grew up in NH, 30 miles north of Boston, and after attending the University of Maine, moved to San Francisco to become a writer. Starting at PC World magazine, she later joined and wrote and produced customer stories for Adobe Systems and Atlassian. Julie currrently lives with her two bulldogs Angus and Peaches on a ranch in Sonoma County. She enjoys swimming, live music, growing flowers, and reading fiction, as well as riding her Kubota tractor around her yard.
 
 ## Carly Jones (she/her)
 - VP, Talent
@@ -1154,4 +1139,71 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - GitHub [shawnplusplus](https://github.com/shawnplusplus)
 - [shawn@sourcegraph.com](mailto:shawn@sourcegraph.com)
 - Originally from Fargo, ND, Shawn lives in Rochester with his wife Katie, son Harrison, and two dogs Tucker and Charlie. His careeer goal is to make technology more accessible and easy to understand for everyone. When he's not working, he can be found at the lake in the summer with his family, reading a book, and in the long Minnesota winters, doing all things hockey.  
-- 
+
+## Kristen Sundberg (She/Her)
+
+- Senior Social Media Manager
+- Boston, MA USA 🇺🇸
+- GitHub: [kristen-sundberg](https://github.com/kristen-sundberg)
+- [Twitter](https://twitter.com/thisiskris_s), [LinkedIn](https://www.linkedin.com/in/kristensundberg/), [kristen@sourcegraph.com](mailto:kristen@sourcegraph.com)
+- Kristen is a New England native that resides in a small town outside of Boston, MA. She has a knack for making brands loveable. And has been managing social media for tech and software brands the majority of her career. She's a Stonehill College alumni, who speaks passionately about chronic illness, remote work, and social media best practices. When away from the keyboard, you will find Kristen on an adventure with [Leo the Samoyed](https://www.instagram.com/ladyandleolife/), crafting with her Cricut, or watching true crime documentaries and BravoTV.
+
+## Moose (Mustafa) Ulker (He/Him)
+
+- Senior Copywriter/Creative 
+- Los Angeles,USA 🇺🇸
+- [moose@sourcegraph.com](mailto:moose@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/mooooose/)
+- My grandpa was quite a famous storyteller, as well as my grandma; my dad and my mom too. So, I found myself telling stories to my brother when I was five. Since then I never stopped. -30 Years Later— I'm creating and telling stories for global brands. Nothing has changed. I just add some taglines and hashtags at the end. www.mustafaulker.com 
+
+## Amie Rotherham (She/Her)
+
+- Director of Global Communications 
+- Toronto, Canada 🇨🇦 
+- GitHub: [amieroth] (https://github.com/amieroth)
+- [amie.rotherham@sourcegraph.com](mailto:amie.rotherham@sourcegraph.com), [LinkedIn] (https://www.linkedin.com/in/amierotherham/) [Twitter] (https://twitter.com/amieroth) 
+- Amie grew up on Vancouver Island on the far west coast of Canada, and currently lives in Toronto by way of San Francisco by way of Vancouver. She's spent 10 years working in tech PR, helping B2B brands and emerging tech gain mainstream adoption. She spends her time sending snail mail (and practicing calligraphy), testing out new recipes in the kitchen (and getting lessons from her chef husband), and reading (mainly fiction). 
+
+## Max Wiederholt (He/Him)
+
+- Customer Engineer
+- Mountain View, CA, USA 🇺🇸
+- [max.wiederholt@sourcegraph.com](mailto:max.wiederholt@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/maxwiederholt/), [Github](https://github.com/maaaaaaaax), [Twitter](https://twitter.com/maxwiederholt)
+- Max was born and raised in the San Francisco Bay Area. Prior to Sourcegraph, Max founded [Mischief](https://www.mischief.app/), a social network that helps anyone make a movie or TV series, then license that work to a streaming service. Max has worked on Google's developer relations team and Confluent's sales team. He graduated from UCLA with a BA in Political Science, before learning to code via [Harvard's CS50x online course](https://cs50.harvard.edu/x/2021/) and [San Jose's Coding Dojo](https://www.codingdojo.com/).
+
+## Justin Boyson (He/Him)
+
+- Frontend Engineer
+- Austin, TX, USA 🇺🇸
+- GitHub: [unclejustin](https://github.com/unclejustin)
+- [justin.boyson@sourcegraph.com](mailto:justin.boyson@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/justindavidboyson/)
+- Justin got his first taste of coding on a Commodore 64. He and his brother "hacked" their Wheel of Fortune™ game replacing all the character's speech text with curse words to hilarious effect. Since then he's turned his curiosity towards more positive pursuits, most recently as a Frontend Engineer at GitLab. Justin's antics are graciously tolerated by his patient wife, three less patient dogs, and one completely impatient cat. When he's not working there is an equal chance of finding him doing some subset of the following: roasting/drinking coffee, working on his house, playing video games, playing music, napping.
+
+## Sruti Dhulipala (She/Her)
+- 👋 Senior Manager, Global Brand Strategy
+- 🌴 Los Angeles, California, USA
+- 👀 I’m always fascinated by the intersection of technology, culture, brands, and human behavior. I love keeping a pulse on trends as they are often great predictors of innovation.
+- 🌱 I’m currently learning permaculture, yoga, and very recently, how to use GitHub!
+- ✨ I’m looking to collaborate on all things related to awareness, brand perception, and adoption of Sourcegraph. I've spent over 12 years imparting my expertise and passion in scaling strategic initiatives that foster product engagement for a plethora of innovative brands (including Theranos!) My background in consulting, service design, brand strategy, and advertising give me a unique perspective to develop compelling brand narratives, cultivating an enriched connection with users and translating that into measured business impact. Specialties: Service Design, Design Thinking, Ethnographic Research, Enterprise Digital Strategy and Transformation, Experience Design, Organizational Culture Change Management, Brand Strategy, Product Marketing, Product Launch, Go-To-Market, Communications Planning.
+
+## Victoria Yunger (She/Her)
+
+- Product Marketing Lead, Enterprise
+- San Francisco, CA, USA 🇺🇸
+- GitHub: [thisisvic](https://github.com/thisisvic)
+- [victoria.yunger@sourcegraph.com](mailto:victoria.yunger@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/victoriayunger/)
+- Victoria was born in Ukraine, grew up in Israel, and then moved to the U.S. to pursue her Master's degree at UChicago. As of three years, she calls San Francisco her (foggy) home. Pre-Sourcegraph, Victoria worked as a product marketer at Zendesk. Back in Israel a.k.a Startup Nation, she held several marketing roles and served in the Israeli Defense Forces for 2 years that felt like 20. She is passionate about pitch slides that resonate with a buyer, Sonoma wines that elevate a dinner, and true crime podcasts.
+
+## Luke Taylor (He/Him)
+
+- Enterprise Account Executive
+- Amsterdam, The Netherlands
+- Github: [iamluketaylor](https://github.com/iamluketaylor), [luke.taylor@sourcegraph.com](mailto:luke.taylor@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/iamluketaylor/)
+- Working on the EMEA Sales Team. A Brit based out of beautiful Amsterdam. After bouncing around tiny start ups for a few years in London, I did 5 years at Optimizely, working with a bunch of folks here (James Clifford, Greg Bastis, Jon Kishpaugh, Khoshal Wial and co.). Outside of work my day-to-day is mostly just filler, killing time in between meals. When I'm not eating I love to train, play hockey, surf (badly), play my bass guitar and game (PC). I am also always trying to find new ways to grow and develop myself - happiness is the goal! Always down to talk about all things personal and professional growth.
+
+## Anna (Tzvetana) Mikhova (She/Her)
+
+- Director of Product
+- Salt Lake City, UT, USA 🇺🇸
+- Github: [anna-mikhova](https://github.com/anna-mmikhova), [anna@sourcegraph.com](mailto:anna@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tzvetanamikhov/), [@AnnaMikhova](https://twitter.com/annamikhova)
+- Anna currently resides in Utah with her husband and toddler boy.  She is originally from Bulgaria and has spent time in multiple countries and cities in and out of the US.  Anna has a diverse work background blending software engineering, UX, marketing and management, and has worked in various industries during her career.  She most recently comes from Pluralsight where she led the Platform Product team and helped scale data and platform capabilities.  She's super passionate about dev productivity and wants to help speed up technology innovation everywhere through challenging how we manage the ever growing complexity of big code.  In her free time Anna enjoys being out in nature with her fam, traveling to experience different cultures, keeping up with all things product and the occasional furniture restoration project.
+

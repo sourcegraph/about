@@ -74,12 +74,13 @@ All departments are likely to have some or all of the below universal interview 
   -  Tell us about the best team you've ever been a part of.
   -  Tell us about a time when you had to put your team's interests above your own. 
 
-## Team collaboration interview 
+## Cross-team collaboration interview 
 - Interviewer(s): people outside of your respective department who you would cross-collaborate with regularly.  
 - Duration: 30-45 minutes.
 - Details: during this stage of the interview process, you will meet with members of another team with whom you would partner regularly.  The goal of this interview is to understand how you communicate and collaborate with cross-functional partners within Sourcegraph. 
 - Example questions: 
-  -  Coming soon
+  -  Tell us about a recent project you worked on where you collaborate with people outside of your department
+  -  Tell me about a project where you or your team had a disagreement with someone in another function
 
 ## Values interview 
 Read more about our values interview [here](https://about.sourcegraph.com/handbook/talent/hiring/evaluating_values). 
@@ -90,10 +91,10 @@ Read more about our values interview [here](https://about.sourcegraph.com/handbo
 - Example questions: 
   -  We will ask behavioral-based, open-ended questions directly related to our values. 
 
-## Department head interview 
-- Interviewer: the department head.
+## Leadership interview 
+- Interviewer: a member of the leadership team for the department.
 - Duration: 30-45 minutes.
-- Details: during this stage in the interview process, the head of the department will ask questions to gain more insight into the following areas: your grit, curiosity, passion, growth mindset, intelligence, and values.  They will also answer any final questions you may have! This is generally the last stage in our interview process.
+- Details: during this stage in the interview process, a member of the leadership team for the department will ask questions to gain more insight into the following areas: your grit, curiosity, passion, growth mindset, intelligence, and values.  They will also answer any final questions you may have! This is generally the last stage in our interview process.
 - Example questions: 
   -  Coming soon
 
@@ -134,16 +135,168 @@ In addition to the above interviews, some departments have department-specific i
     - Be prepared to have a dynamic conversation to uncover nuances about the teams you will be working with
 
 ## BizOps, Finance, Legal, TechOps
-- Coming soon
+- BizOps: Product Analyst take-home project
+  -  This exercise should take 2-3 hours to complete;please don’t take more than that!
+  -  Getting setup: You’ll be using Mode Analytics public datasets tocomplete this take-home project. Here are the steps to getting into the SQL workspace:
+    -  1.Create an account if you don’t already have one
+    -  2.Click the green+in the top right (‘Create report’)to access the workspace
+    -  3.We’ll be using the following Mode Public Warehousetables to complete the exercise:tutorials.playbook_users,tutorials.playbook_events,tutorials.playbook_experiments,tutorials.playbook_emails
+    
+ - Prompt: For each of the following questions please create charts and/or tables (within Mode orby exporting to a spreadsheet tool if that’s easier)to show your findings. We’re not expecting a slide deck or document to explain your findings, but quick summaries of charts, if needed, are just fine. Keep in mind that in most cases there are no “right” or “wrong” answers; we’re more interested in your approach and thought processes.
+    - 1.What company is most engaged with the product?
+    - 2.We ran an A/B test (experiment) to increase ‘like_message’actions users are taking. Which variant would you recommend going forward with, if any?
+    - When you’ve completed the project, share your results via static run links along with some availability you have over the next week to review the project with  a BizOps team members. When reviewing, you can expect questions about your approach in getting to know the data, the process you took to findthe results, results themselves, and how you decidedto communicate your findings.
+
+- Legal: Corporate & Legal Counsel take-home project
+  - The goal of the assignment is to give you a chance to demonstrate how you think, write, and negotiate while tackling issues that are top of mind for Sourcegraph and our customers. 
+  - Please see the attached MSA redlines (we will provide this to you if you get to this stage in the process) from our prospective customer, a CA-based tech company. Deal summary:
+    - On-premise instance
+    - 100K USD ACV
+  - Will you respond to the redlines and include comments to the customer explaining your reasoning for any redlines that you reject or modify? Please accept any redlines that you suggest that we agree to with a brief comment explaining why. 
+  - In addition, please draft a short, casual note with your assessment that you would send to the account executive. Include a short issues list, with the prioritization of issues made clear.
 
 ## Customer Support
-- Coming soon
+- Customer Support Manager
+  -  Direct Report Interview
+    -  During this stage of the interview process, we will get an understanding of your leadership capabilities
+    -  Example questions:
+      -  Tell us about how you created trust with your last team
+      -  Tell us what you do when someone makes a mistake
+  -  Technical Savvy Interview
+   - During this stage of the interview process, we will discuss our product, customers, and technology and determine if you will be effective in a technology leadership role.
 
 ## Customer Engineering
-- Coming soon
+- Customer Engineer Take Home & Live Project Interview
+  -  For this interview we want to give you an opportunity to learn about our product! Sourcegraph has a public version of our product available here to let users get a sense of product capabilities - it’s connected to public Github repositories. We’ll use this instance to guide the project portion of the interview which will be conducted live, via Zoom, with a customer engineer on the team.
+  -  There are two main concepts you should get familiar with in advance of the interview:
+   -  Search
+   -  Intelligence
+  -  Using search and our intelligence features we’ll emulate a customer use case with you and ask you to demonstrate it live for us. We don’t expect you to know everything, so if you get stuck during the interview, show us how you go about researching in our docs to try and find the answer! This is as much about understanding how you approach and breakdown problems as it is getting to the correct answer. This will be followed by a short Q&A with the customer engineer to give you both a chance to get to know each other more.
+  -  We’ll conduct the interview in the following format:
+    -  20 minutes: live use-case demonstration
+      -  The customer engineer will ask you to perform a few basic search and intelligence functions
+      -  You will be sharing your screen (both the Sourcegraph public instance and our docs)
+    -  15 minutes: Q&A from customer engineer to learn more about you and your capabilities
+    -  10 minutes: general Q&A with customer engineer
+      -  Ask anything you want! It’s your chance to learn about the team, the role, and the company from a peer!
+
+  -  Finally, in preparation for your interview, we would like you to answer the following questions. We may drill into some of your answers as part of the 15 minute Q&A in the interview:
+    -  Explain why “code reviews” are a good use-case for Sourcegraph. Explain the challenges of code-review and how Sourcegraph addresses those.
+    -  Describe some security “code smells” that Sourcegraph could help find
+    -  For larger deployments, Sourcegraph recommends Kubernetes as the deployment technology. Why do you think this is vs:
+    -  A single Docker node
+    -  Docker Compose
+    -  Sourcegraph supports precise code intelligence for more accurate “Go To Definition” or “Find All References” for a symbol. Why do you think precise code intelligence will generally give better results for languages like Java or Go, vs languages like JavaScript or Python?
+
+- Mock Meeting
+  -  For this stage, we want to assess your ability to lead customer discovery, dig-deep in a customer's pain and objectives and understand their technical landscape. We also want to test your ability to understand the needs of and communicate with different levels of individuals, from developers to CTOs / Directors of Engineering. And finally, we want to test your ability to tailor your message and correlate product value to stated customer needs.
+  -  The agenda for the final interview will be as follows:
+  -  30 minutes discovery. The goal is to dig deep both technically and from a business perspective.
+  -  15 minutes of feedback (out of role-play).
+
+  -  To set the scene, this is some background on the fictional company you will be running the session for, and the two customer attendees:
+  -  The customer is “Zoomies”, a ride-sharing company. They are an international company who make $100mn in revenue. You are talking to the dev team who are responsible for writing the ride-sharing app for customers.
+  -  The two attendees are: The Director of Engineering and a Senior SRE.
+  -  You know from high-level talks from the SDR that they are growing their dev team due to success in the market and expansion into new car manufacturers, but that a past security issue that made it into production code has created negative press for them.
+
+  -  During this session there are five things we would like your discovery process to uncover from the audience:
+  -  Alignment on the prospects’ business goals
+  -  Identify the prospects’ pain points
+  -  Uncovering their technical landscape
+  -  Identify which stakeholders are detractors vs advocates
+  -  At a high-level correlating Sourcegraph’s value against the customers’ needs
+
+  -  You should expect the audience to be technical, so it is important in the final section where you are "pitching" the value of Sourcegraph back to the audience to align business value AND technical alignment.
+  -  As you prepare for this it may be useful to read some of our customer case studies ( https://about.sourcegraph.com/case-studies/ ) to understand how they have solved their problems and gotten value from our products. It may also be helpful to read about our five core use cases ( https://about.sourcegraph.com/customers ).
 
 ## Engineering
-- Coming soon
+- Assignment
+  -  Duration: max 3 hours.
+  -  Details: during this stage of the interview process, you will complete an asynchronous coding exercise. We will give you an overview of the exercise in advance. We will send you the details at a time of your choosing and you will have up to 3 hours to work on the exercise. You will be able to use your own development environment and look up documentation on the internet.
+
+- TypeScript coding exercise
+  -  Duration: 2 hours.
+  -  Details: We designed this exercise to measure your understanding of callbacks and asynchronous execution.
+  -  You will choose a two hour timeframe to independently work on the exercise. You can choose any day and time; we just schedule an email.
+  -  At your chosen date and time, we will send you a zipped TypeScript project that contains instructions and some unit tests.
+  -  TypeScript is a superset of JavaScript, so if you are comfortable with JavaScript and have experience reading any typed language, then you should be fine. We recommend reading through the [TypeScript docs](https://www.typescriptlang.org/docs/handbook/basic-types.html) if you aren't already familiar with TypeScript.
+  -  You should have Node.js (>=8.16.0) installed on your computer.
+  -  You can look up documentation on the Internet while you are coding.
+  -  You may use open-source libraries, but most candidates don't find it necessary. For some parts of the exercise, we'll explicitly require that you not use any.
+  -  After two hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
+  -  If we decide to move forward, we will schedule a 30-minute followup call to discuss your code.
+
+- Frontend coding exercise
+  -  Duration: 3 hours.
+  -  Details: We designed this exercise to measure your understanding of building web UIs.
+  -  You will choose a three hour timeframe to independently work on the exercise. You can choose any day and time; we just schedule an email.
+  -  The exercise asks you to implement a UI in a scaffold TypeScript **React** app.
+  -  We provide you with the code of the scaffold app, the URL of a working **backend API** to fetch data from and a link to a **Figma design** for the UI.
+  -  The backend exposes the same data over both a RESTful interface and a GraphQL endpoint. You can chose whichever of the two you are most comfortable with.
+  -  You can use your own development environment and lookup documentation on the internet.
+  -  You should have Node.js (>=14.0.0) installed on your computer.
+  -  If you have never worked with React or it's been a long time, we recommend brushing up on their basics a bit before taking the exercise.
+  -  There are no "advanced" React features needed to pass the exercise.
+  -  We will grade your submission on both the code (implementation) and the result (UI, functionality, etc), so we recommend to not compromise one over the other.
+  -  Apply the same standards to your solution you would to any solution you implement in a real-world production-ready app.
+  -  If you can't get the whole exercise done in the time box, cut scope and make informed trade-offs the same way you would for a "real" app and note them in your README.
+  -  Try to hand in a "well-rounded" submission that demonstrates your skills as well as possible.
+  -  If we decide to move forward, we schedule a one hour follow-up call to discuss your submission.
+
+- Go coding exercise
+  -  Duration: 2 hours.
+  -  Details: We designed this exercise to measure your understanding of HTTP requests, concurrency, and error handling.
+  -  You will choose a two hour timeframe to independently work on the exercise. You can choose any day and time that works for you; there are no scheduling constraints.
+  -  At your chosen date and time, we will send you detailed instructions. You will be building a simple API server in Go that calls a JSON endpoint of another service and exposes a JSON endpoint of its own.
+  -  You should have a recent version of Go (≥ 1.11) installed on your computer.
+  -  You can look up documentation on the internet while you are coding.
+  -  You are not prohibited from using open-source libraries, but the problem is easily solved using only the Go standard library.
+  -  After two hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
+  -  If we decide to move forward, we will schedule a 30-minute followup call to discuss your code.
+
+- CLI coding exercise
+  -  Duration: 90-minutes.
+  -  Details: We designed [this synchronous exercise](https://github.com/sourcegraph/interviews/blob/master/engineering/coding/simple-polling/README.md) to measure your approach to coding a small application in a paired setting.
+  -  We will schedule a 90-minute timeframe to work with a Sourcegraph engineer.
+  -  In this exercise you write a command-line application that processes a data file and computes some simple metrics.
+  -  The data file will be emailed to you 10-minutes prior to the interview.
+  -  You may use the language of your choice.
+  -  You can use your own development environment, and look up documentation on the internet.
+  -  You are not prohibited from using open-source libraries.
+  -  If we decide to move forward, we will schedule interviews with team members.
+
+- Distribution exercise
+  -  Duration: 3 hours.
+  -  Details: We designed this exercise to measure your skills at integrating build and deployment workflows into a development lifecycle, as well as your ability to code a simple HTTP service.
+  -  You will choose a three hour timeframe to independently work on the exercise. You can choose any day and time that works for you; there are no scheduling constraints.
+  -  At your chosen date and time, we will send you detailed instructions. You will be building a simple pipeline to build and deploy a set of Go services and create a simple HTTP client in the language of your choice. We prefer to use Go or Typescript, but you can choose the language you feel more comfortable with.
+  -  You should have a recent version of Go (≥ 1.13) installed on your computer.
+  -  You should have a simple Kubernetes local cluster ([kind](https://kind.sigs.k8s.io/), [k3d](https://github.com/rancher/k3d), [minikube](https://minikube.sigs.k8s.io/docs/start/))
+  -  You can look up documentation on the internet while you are coding.
+  -  After three hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
+  -  If we decide to move forward, we will schedule a 30-minute followup call to discuss your code.
+
+- Extensibility exercise
+  -  Duration: 2 hours.
+  -  Details: We designed this exercise to measure your ability to show logical thinking and apply that thinking towards a code implementation. There's no frontend UI work involved.
+  - You will choose a two hour timeframe to independently work on the exercise. You can choose any day and time; we just schedule an email.
+   - At your chosen date and time, we will send you a zipped TypeScript project that contains instructions.
+  - TypeScript is a superset of JavaScript, so if you are comfortable with JavaScript and have experience reading any typed language, then you should be fine. We recommend reading through the [TypeScript docs](https://www.typescriptlang.org/docs/handbook/basic-types.html) if you aren't already familiar with TypeScript.
+  - You should have Node.js (>=14) installed on your computer.
+  - You can look up documentation on the Internet while you are coding.
+  - You may use open-source libraries, but most candidates don't find it necessary.
+  - After two hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
+  - If we decide to move forward, we will schedule a followup call to discuss your code.
+
+- Technical interview
+  -  Interviewer(s): two members of the engineering department
+  -  Duration: 60-minutes.
+  -  Details: during this stage in the interview process, we will get an understanding of the technical depth of your experience and how you would contribute to our engineering culture. We will ask you about your past work and accomplishments in depth, how you worked wiht others, decisions you made, and what you'd do differently today.
+
+- Working Session
+  -  Interviewer(s): two members of the engineering department
+  -  Duration: 60-minutes.
+  -  Details: during this stage in the interview process, we will give you an open problem statement and you will walk us through how you would solve the problem.
 
 ## Marketing
 
@@ -151,6 +304,30 @@ In addition to the above interviews, some departments have department-specific i
   -  Interviewer(s): Coming soon.
   -  Duration: 60-minutes.
   -  Details: during this stage in the interview process, we try to get a sense of your approach and thought process when reviewing writing drafts submitted by team members. You will be given a blog post draft to review for the first 30-minutes of the session, after which you and the hiring manager go through how you approached the piece and talk about the changes you made and why.
+
+- Technical Content working session
+  -  Duration: 60-minutes.
+  -  Details: during this stage in the interview process, we try to get a sense of how you think about content. You will be given (2) pieces of content to read through for the first 30 minutes of the session, after which, you and the hiring manager will take the last 30 minutes to go through what you liked, disliked, and what you would change about each piece and why.
+
+- Senior Digital Marketing Manager working session
+  -  Duration: 60-minutes.
+  -  The Goal: The purpose of this working session is to give us all a sense of what it'd be like to work together and make sure we have a shared understanding of the role and goals. This is not meant to be stressful or require a lot of preparation. 
+    Part 1: Methodology & Planning (20 Minutes)
+      - Coming out of our conversations we’ve taken an action item to better understand your campaign planning and activation methodology. 
+        - What are your ideas for a long-term, evergreen brand activation across the various digital channels? 
+        - What would a successful campaign look like? 
+        - How would you monitor and share results?
+    Part 2: Creativity & Collaboration (20 Minutes)
+      - We’ve just wrapped up our H2 off site where the brand team led a brainstorm about big ideas for a second half awareness campaign focused on quick wins targeting developers. 
+      - Top 3 creative ideas to fuel digital marketing campaigns directed at a DevOps Audience. These creative ideas can be part of the long-term brand awareness plays, or quarterly campaigns
+          - Include your timeline for concept-to-execution
+          - What would your goals be for these quick win campaigns?
+          - What are some key deliverables you’d expect to see from these campaigns?
+          - Who will you collaborate with and why?
+          - How would you approach bridging these awareness activities with contact acquisition/product sign-ups?
+    - NOTE: Please don't go overboard on preparation, plans, or detail. A Google Doc outline is how we'd do this kind of thing internally, so that's best. Doesn't have to be pretty. If you prefer slides, that's fine. This will be a casual back and forth conversation; not a formal presentation.
+
+
 
 ## People Operations
 - Coming soon
@@ -173,18 +350,41 @@ In addition to the above interviews, some departments have department-specific i
   - Interviewer(s): Product Designer and Engineering Manager. 
   - Duration: 30 mins
   - Details: In this interview, you will meet an Engineering Manager and Product Designer that you will be working with closely as well as a Product Designer. The goal of this interview is to understand how you collaborate with different teams, communicating and inspiring a shared Product vision across the organization. We will ask questions about how you have strategically organizing plans across multiple teams, solving and resolving any issues that have come up. We’re looking to see how you have created and nurtured relationships and trust, prioritizing and making decisions while getting buy-in from necessary stakeholders. This replaces the Peer interview for this role. 
- 
 
+
+**Director of Technical Writing**
+
+- Design collaboration
+  - Interviewer: [Product designer](https://about.sourcegraph.com/handbook/product/product_org) 
+  - Duration: 30 mins
+  - Details: In this interview, you will meet with one of the Product Designers to discuss how you've worked with Design and other cross funcitonal teams in the past. We will ask questions about your philsophy on technical writing and documentation and how you lead and evalgelize your ideas throughout an organization. We're looking for how you prioriize and productize documentation, and how you would go about doing so in our handbook-first company. 
+
+- Engineering collaboration
+  - Interviewer: [Engineering manager](https://about.sourcegraph.com/handbook/engineering/eng_org#planned-organization)
+  - Duration: 30 mins
+  - Details: In this interview, you will meet with one of the Engineering managers to discuss how you've worked closely with Engineering and other cross funcitonal teams in the past to build the best technical documentation. We have a unique opportunity to create an interesting integrated docs experience with our product. We'd like to discuss that vision and how you would be able to help us achieve this vision. 
+
+- Marketing collaboration
+  - Interviewer: [Marketing team member](https://about.sourcegraph.com/handbook/company/team/org_chart#sts=Marketing)
+  - Duration: 30 mins
+  - Details: In this interview, you will meet with someone from the Marketing team to discuss how you've partnered with Marketing and other cross funcitonal teams in the past. We're interested in how you will work closely with the Developer education team aligning and overlapping for creating an incredible experience for developers. We'll talk about how to you collaborate and produce educational and other types of content that connects with our customers and users.  
+
+- Customer support collaboration
+  - Interviewer: [Virginia Ulrich](https://about.sourcegraph.com/handbook/support/virginia-readme), Head of CS 
+  - Duration: 30 mins
+  - Details: In this interview, you will meet with the Head of CS, to discuss how you've worked with Customer Support and other cross funcitonal teams in the past. Customer support has a unique view into the key problems that our customers are experiencing, and are key to making sure our product documentation helps them sort through questions. We will discuss how the two teams collaborate together to create documentation that is trusted and loved by our users and customers. We're looking for how you would create and build out a doc structure and organization that benefits the Customer Support team and our customers. 
+ 
+ 
 **Product manager**
 
 - Async writing project [(RFC Project)](https://about.sourcegraph.com/handbook/product/roles/interviews/product_manager/pm_rfc_project)
   - Interviewer(s): NA - this is a take home assignment. [Two members from the Product team](https://about.sourcegraph.com/handbook/product) will review your RFC and discuss it with you in the next round of interviews. 
   - Duration: ~1 hour
   - Details: This is a take home writing assignment to see how you communicate and think about product problems. Below is the prompt on the project. [Here's how we will measure the project](https://about.sourcegraph.com/handbook/product/roles/interviews/product_manager/pm_rfc_project): 
-    - Please write a Request for comments (RFC) in a Google Doc for a recent problem you identified, solved, and shipped (the project is complete). The RFC should communicate how this problem ties to the product vision for your product/product area.
-    - It should have our standard RFC structure from the handbook, or see the RFC template: Background, Problem, Proposed solution, and Definition of success. However, our handbook states that the precise format is not as important as the content itself, so feel free to improve upon this format as necessary.
-    - Aim for about one page of writing (don’t go over two pages) with standard styling. This is long enough to give us the signal we want, while at the same time is short enough that you don’t experience “writer’s block” and can write it in one sitting. We expect this to take you ~1 hour.
-    - What’s important is that the writing is clear and easy to understand. It should show us that you care about your writing by making conscious decisions of what to leave in or out, paying attention to grammar and spelling, and phrasing things in an understandable way.
+   - Please write a Request for comments (RFC) in a Google Doc for a recent problem you identified, solved, and shipped (the project is complete). The RFC should communicate how this problem ties to the product vision for your product/product area.
+   - It should have our standard RFC structure from the handbook, or see the RFC template: Background, Problem, Proposed solution, and Definition of success. However, our handbook states that the precise format is not as important as the content itself, so feel free to improve upon this format as necessary.
+   - Aim for about one page of writing (don’t go over two pages) with standard styling. This is long enough to give us the signal we want, while at the same time is short enough that you don’t experience “writer’s block” and can write it in one sitting. We expect this to take you ~1 hour.
+   - What’s important is that the writing is clear and easy to understand. It should show us that you care about your writing by making conscious decisions of what to leave in or out, paying attention to grammar and spelling, and phrasing things in an understandable way.
     - The challenge is to explain something to a reader that doesn’t have the same context as you have, just like you would in a proposal for a new feature.
 
 - Product interview
@@ -196,7 +396,6 @@ In addition to the above interviews, some departments have department-specific i
   - Interviewer(s): Engineering Manager. 
   - Duration: 30 min 
   - Details: In this interview, you will meet with the Engineering Manager from the team you’re interviewing for, your counterpart in the PM-EM responsibilities. We will be evaluating how you collaborate and work within a team, specifically how you partner with Engineering to drive the product vision of your team. We will focus on your technical background, as you will need to be able to discuss the technical aspects of our product with customers and communicate feedback and technical insight to the team. It is important that you demonstrate enthusiasm and understanding for the product and problem space, identifying and communicating the pain that Sourcegraph solves for developers.
-
 
 **Product designer**
 
@@ -212,7 +411,6 @@ In addition to the above interviews, some departments have department-specific i
   - The interview is in 2 parts. Below is the prompt: 
    - Part 1: (~15 min) Pick a developer application (e.g., code hosts like GitHub or GitLab, cloud providers like AWS or GCP, monitoring tools like Lightstep or Sentry, etc) and walk us through what works well and what doesn’t. We do not want you to prepare a presentation or script, but should come knowing which application you want to use as an example and be prepared to have a conversation about it.
    - Part 2: (~60 min) We will give you a specific problem to solve for Sourcegraph and would like you to walk us through your design process. We will be evaluating the process, not the final outcome of the solution. Please be prepared to work in your favorite design tool for wireframes and low fidelity mocks.
-
 
 ## Sales
 

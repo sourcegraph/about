@@ -13,9 +13,11 @@ Our schedule is reflected in the working hours set in our calendars and blocks h
 |---|---|---|---|
 |Adeola|10am - 6pm|7am - 3pm|Friday|
 |Alex|9am - 5pm|6am - 2pm|TBA|
+|Amber|9am - 5pm|8am - 4pm|TBA|
 |Beatrix|7am - 3pm|7am - 3pm|Wednesday|
 |Ben|9am - 5pm|7am - 3pm|TBD|
 |Carl|6am - 2pm|3am - 11am|TBD|
+|Don|10am - 6pm|7pm - 3pm|TBD|
 |Gabe|9am - 5pm|9am - 5pm|TBD|
 |Giselle|8am - 4pm|8am - 4pm|Thursday|
 |Stompy|11am - 7pm|1am - 9am|Friday|
