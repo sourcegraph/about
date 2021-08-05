@@ -1,5 +1,7 @@
 # Visual design
 
+(Update coming soon!)
+
 - Visual design should utilize the Sourcegraph’s Figma based component system
 - Dark compositions will be created for each major design
 - If new components are required, the following process should be followed:

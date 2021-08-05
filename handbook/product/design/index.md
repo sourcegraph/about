@@ -1,7 +1,6 @@
 # Product design
 
-TODO
-(High level overview about the product design team.)
+(High-level overview about the product design team is coming soon!)
 
 ## Team
 
@@ -57,14 +56,14 @@ We avoid siloed work as much as possible. Instead of design and development phas
 - [Design artifacts](./artifacts/index.md)
 - [Visual design](./visual_design/index.md)
 - [Metrics](./metrics/index.md)
-- [Design critiques](./design_critiques/index.md)
+- [Design critiques](./design_critiques/index.md) (Coming soon)
 - [Reviewing design](./reviewing_design/index.md)
-- [Intersecting with other teams](./intersecting_with_other_teams/index.md)
+- [Intersecting with other teams](./intersecting_with_other_teams/index.md) (Coming soon)
 - [Research](./research/index.md)
-- [Tracking work](./tracking_work/index.md)
-- [Requesting work](./requesting_work/index.md)
-- [Team rituals](./team_rituals/index.md)
-- [Design team onboarding](./onboarding/index.md)
+- [Tracking work](./tracking_work/index.md) (Coming soon)
+- [Requesting work](./requesting_work/index.md) (Coming soon)
+- [Team rituals](./team_rituals/index.md) (Coming soon)
+- [Design team onboarding](./onboarding/index.md) (Coming soon)
 - [Hiring](../roles/interviews/product_designer/index.md)
 
 ## Toolkit
