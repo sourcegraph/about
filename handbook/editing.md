@@ -29,7 +29,7 @@ Here's the process for getting a change published to the handbook. For detailed 
 1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
 1. Use the #handbook-announce label to notify other people of important handbook updates on the #handbook-announce Slack channel.
 
-**Is this your first time using GitHub? Do you not feel confortable editing the handbook?** Visit [this handbook page]() to read about basic concepts and steps.
+**Is this your first time using GitHub? Do you not feel confortable editing the handbook?** Visit [this handbook page](first-steps-to-edit-handbook.md) to read about basic concepts and steps.
 
 ## Reviewing and approving another person's proposal
 
