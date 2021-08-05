@@ -26,7 +26,7 @@ Considering the Onboarding checklist lives in Process St., this page contains an
 - **[Human Interest](https://humaninterest.com/):** To check on your 401k. 
 
 Expensify, Rippling, and Human Interest are managed by our back office, Officengine. U.S. based teammates can contact Officengine directly for questions pertaining to **health insurance, dental insurance, vision insurance, life insurance, 401k, and payroll (including tax withholdings)**. To do this, use the [Sourcegraph support request](https://docs.google.com/forms/d/e/1FAIpQLSecCNJDd8r26WxjOK0AHIGEV1gfzN_tRdYnXr2heIejLN-BUg/viewform) form to input requests and _indicate their urgency_. This form feeds into Officengine's ticketing system and alerts their team via email. 
-- **Please note**: Questions about **health insurance, dental insurance, vision insurance, life insurance, 401k, and payroll (including tax withholdings)** go to the [People Ops](https://about.sourcegraph.com/handbook/people-ops) team.
+- **Please note**: Questions about **PTO/leave, family planning support, professional development, travel, and moving** go to the [People Ops](https://about.sourcegraph.com/handbook/people-ops) team.
 
 ### Teammates based outside of U.S.
 
