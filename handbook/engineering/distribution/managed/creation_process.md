@@ -3,7 +3,8 @@
 Creating a new managed instance involves following the steps below.
 
 1. Create a issue with the managed instance template in the `sourcegraph/customer` repository.
-1. Create a new GCP project `sourcegraph-managed-$COMPANY` under the "Managed instances" folder in the Sourcegraph GCP organization.
+1. Create a new GCP project for the instance by adding it to the [`managed_projects` tfvar in the infrastructure repo's `gcp/projects/terraform.tfvars`](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/infrastructure%24%40main+managed_projects+%3D+%7B+:%5B_%5D+%7D&patternType=structural)
+    - It will look something like `sourcegraph-managed-$COMPANY = { ... }` - refer to the existing variables for more details
 1. Create GCP service account credentials:
     - From console.cloud.google.com select the project > **APIs & Services** > **Credentials** > **Create credentials** > **Service account**
     - Service account name: `deploy`
@@ -18,6 +19,7 @@ Creating a new managed instance involves following the steps below.
     - **Add** > **Login** > enter **$COMPANY sourcegraph-admin** as the title
       - **User:** `managed+$COMPANY@sourcegraph.com`
       - **Password:** Change **length** to 40 and turn on symbols and digits > **Save**
+    - Note: for all of the above, if the company name differs (i.e. via abbreviation) from the name of the folder used in `sourcegraph/customer`, please include the abbreviation in the 1password as well for easier search
 1. In GCP, enable the **Compute Engine API**:
    - Under **APIs & Services** > **Library** search for "Compute"
    - Select **Compute Engine API** and choose **Enable**
@@ -69,14 +71,6 @@ Creating a new managed instance involves following the steps below.
 					"url": "$WEBHOOK_URL"
 				}
 			},
-			{
-				"level": "warning",
-				"notifier": {
-					"type": "slack",
-					"username": "$COMPANY",
-					"url": "$WEBHOOK_URL"
-				}
-			}
 		],
    ```
 1. Add an entry for the customer by adding their HubSpot link to the checklist in the [managed instances upgrade issue template](../../releases/upgrade_managed_issue_template.md).
