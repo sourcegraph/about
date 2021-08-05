@@ -1207,3 +1207,10 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Github: [anna-mikhova](https://github.com/anna-mmikhova), [anna@sourcegraph.com](mailto:anna@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tzvetanamikhov/), [@AnnaMikhova](https://twitter.com/annamikhova)
 - Anna currently resides in Utah with her husband and toddler boy.  She is originally from Bulgaria and has spent time in multiple countries and cities in and out of the US.  Anna has a diverse work background blending software engineering, UX, marketing and management, and has worked in various industries during her career.  She most recently comes from Pluralsight where she led the Platform Product team and helped scale data and platform capabilities.  She's super passionate about dev productivity and wants to help speed up technology innovation everywhere through challenging how we manage the ever growing complexity of big code.  In her free time Anna enjoys being out in nature with her fam, traveling to experience different cultures, keeping up with all things product and the occasional furniture restoration project.
 
+## Ajay Sridhar (He/Him)
+
+- Customer Engineer
+- London, UK 🇬🇧
+- GitHub: ajaynz
+- [ajay.sridhar@sourcegraph.com](mailto:ajay.sridhar@sourcegraph.com), [LinkedIn](https://linkedin.com/in/ajaysridhar/)
+- Ajay lives in the UK with his wife and daughter, he came over to Sourcegraph from prior sales roles at Puppet, CA, Broadcom & Automic. He loves everything sports and cars, in his spare time you will either find him at the gym or doing somethign fun outdoor.
