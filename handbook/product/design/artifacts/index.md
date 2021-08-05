@@ -6,14 +6,14 @@ We use Figma files, RFCs, Google Docs, GitHub issues, and more as artifacts. Art
 
 Decisions are made in design artifacts. While we can talk about things in synchronous sessions like Slack conversations or video calls, by making decisions in artifacts, it helps others to understand the context around the decision and provide further feedback or ask questions in a self-contained space.
 
-It’s our role as designers to [set expectations around our artifacts](../reviewing_design/index.md): what state they’re at, whether or not we’re ready for feedback, and what kind of feedback we’re seeking.
+It’s our role as designers to [set expectations around our artifacts](../reviewing_design/index.md): what state they’re at, whether or not we’re ready for feedback, and what kind of feedback we’re seeking. [Seeking feedback](../../../communication/seeking-and-giving-feedback.md#giving-feedback) is a skill we're always working to improve.
 
 As a design team, we’re low-process. We avoid making artifacts for the sake of making artifacts. Instead, we make artifacts when it makes sense to help us communicate and collaborate, and we optimize for clarity and understanding.
 
 That’s also why we don’t always create high-fidelity design artifacts. Sometimes, a simple sketch in Excalidraw or on paper is all that’s needed to communicate and agree on what should be done. It’s up to the project team to decide what’s right for their problem and context.
 
-## Tips for creating asynchronous design artifacts
+## Tips for better asynchronous design artifacts
 
-- Design artifacts should clearly communicate to the viewer what stage the artifact is in: is it a working draft, that’s not ready for feedback? Is it an experiment, with no connection to a project effort? Is it ready for review and specific feedback from others? Is it a source of truth for development?
-- Design artifacts shared for feedback should be tailored for asynchronous review. Figma files, for example, can communicate beyond the design itself: we can use annotations and other techniques to make assumptions tangible and visible in context, to specifically request feedback on a given topic, or to surface points of uncertainty.
-- Everyone learns best in different ways. When sharing design artifacts, consider adding extra ways of consuming the artifacts, such as a Loom video walkthrough of the artifact, or the RFC.
+- **Design artifacts should clearly communicate to the viewer what stage the artifact is in.** Is it a working draft, that’s not ready for feedback? Is it an experiment, with no connection to a project effort? Is it ready for review and specific feedback from others? Is it a source of truth for development?
+- **Design artifacts ready for feedback should be tailored for asynchronous review.** Figma files, for example, can communicate beyond the design itself: we can use annotations and other techniques to make assumptions tangible and visible in context, to specifically request feedback on a given topic, or to surface points of uncertainty.
+- **Everyone learns best in different ways.** When sharing design artifacts, consider adding extra ways of consuming the artifacts, such as a Loom video walkthrough of the artifact, or linking back and forth other documentation and artifacts.

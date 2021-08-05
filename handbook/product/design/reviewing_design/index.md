@@ -8,6 +8,8 @@ To help us do this, we explicitly indicate the state of our design work and what
 - **Feedback requested:** We’re specifically requesting feedback from others. We will likely have organized a specific section of the artifact to make it easy for others to review and understand asynchronously, where we’ve indicated specifically what kind of feedback we’re seeking. This is a lot like asking for feedback on a PR.
 - **Source of truth:** When we reach the end of a [Discovery phase](../index.md#design-process) and agree as a project team what we’ll bring forward into [Delivery](../index.md#design-process), we’ll often create a source of truth in the design artifact to be used as a reference for implementation.
 
-As a design team, it’s our responsibility [to make sure this status is communicated clearly](../artifacts/index.md) and to make it easy for you to review design asynchronously.
+As a design team, it’s our responsibility [to communicate expectations clearly](../artifacts/index.md) and to make it easy for you to review design asynchronously.
 
-As a teammate outside the design team, it’s your responsibility to understand what state design artifacts are in, and when and how your feedback will be most valuable. We have a [set of guidelines for how to seek and give great feedback](../../../communication/seeking-and-giving-feedback.md).
+As a teammate outside the design team, it’s your responsibility to understand [when and how your feedback will be most valuable](../../../communication/seeking-and-giving-feedback.md#giving-feedback).
+
+We have a [set of guidelines for how to seek and give great feedback](../../../communication/seeking-and-giving-feedback.md).
