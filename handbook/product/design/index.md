@@ -4,9 +4,9 @@
 
 ## Team
 
-- [Alicja Suska](../company/team/team#alicja-suska-she-her) (she/her)
-- [Rob Rhyne](../company/team/team#rob-rhyne)
-- [Quinn Keast](../company/team/team#quinn-keast-he-him) (he/him) – [ReadMe](https://quinnkeast.com/readme)
+- [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) (she/her)
+- [Rob Rhyne](../../company/team/index.md#rob-rhyne)
+- [Quinn Keast](../../company/team/index.md#quinn-keast-he-him) (he/him) – [ReadMe](https://quinnkeast.com/readme)
 - S.L. (joining in August)
 
 We’re hiring! [Check out our open roles](https://boards.greenhouse.io/sourcegraph91).
@@ -27,15 +27,15 @@ As a design team, we’re constantly reflecting and improving on how we work.
 
 ### Design principles
 
-Our [product design principles](../design_principles) are how we express our shared vision and values while designing for our product. We co-created these principles with members of the design, product, and engineering teams.
+Our [product design principles](../design_principles.md) are how we express our shared vision and values while designing for our product. We co-created these principles with members of the design, product, and engineering teams.
 
 ### Designing in the open
 
-At Sourcegraph, we design in the open. This is an important part of how we work as a design team, and is a key part of how we apply [our values](../company/values) to our work and thrive in our globally distributed, remote company.
+At Sourcegraph, we design in the open. This is an important part of how we work as a design team, and is a key part of how we apply [our values](../company/values.md) to our work and thrive in our globally distributed, remote company.
 
 Designing in the open means many things to us.
 
-- **Our work and process is [transparent by default](../../company/values#open-and-transparent)**. By making our work visible to anyone, it’s easy for us to collaborate with others while building trust within our [high agency](../../company/values#high-agency) environment.
+- **Our work and process is [transparent by default](../../company/values.md#open-and-transparent)**. By making our work visible to anyone, it’s easy for us to collaborate with others while building trust within our [high agency](../../company/values.md#high-agency) environment.
 - **We share early and often**. Our design process encourages collaboration with other teams at all stages of the product design process, and designing in the open reduces friction and [encourages feedback and shared understanding](./reviewing_design/index.md).
 
 Designing in the open is hard! As designers, it’s easy to want to hold back on sharing until we’re happy with what we have. It can be very uncomfortable for others to see the things we’re working on before we’re ready to share. But designing in the open also challenges us to improve our design communication and makes us better at collaborating asynchronously.
@@ -45,7 +45,7 @@ Designing in the open is hard! As designers, it’s easy to want to hold back on
 Product design at Sourcegraph is low-process and highly adaptive. Every project is a little bit different, but we usually follow the same general approach where cross-disciplinary project teams move together through **Discovery** and **Delivery** phases.
 
 
-- **The Discovery phase** provides space for the project team to collaborate on problem definition, [research](./user_research/index.md), ideation and experimentation, [testing](./user_research/index.md), and ultimately to converge on an outcome that the project team agrees to move forward into Delivery.
+- **The Discovery phase** provides space for the project team to collaborate on problem definition, [research](./researcg/index.md), ideation and experimentation, [testing](./research/index.md), and ultimately to converge on an outcome that the project team agrees to move forward into Delivery.
 
 - **The Delivery phase** is the tactical implementation of the outcome of the Discovery phase, usually by engineering, and results in shipping something that we can then [measure](./metrics/index.md) and evaluate.
 

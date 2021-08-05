@@ -41,7 +41,7 @@
     - Ensure spacing is consistent and matches the 8pt grid system
     - Ensure text, colors and other styles match existing styles, if possible.
         - Introduce new text styles only if really necessary.
-        - If adding new styles, ensure that they meet our [accessibility standards](./design-and-interaction-guidelines.md#accessibility-standards) and add them to the design system.
+        - If adding new styles, ensure that they meet our [accessibility standards](../design-and-interaction-guidelines.md#accessibility-standards) and add them to the design system.
     - Review designs for accessibility:
         - Color blind check
         - Contrast check should meet AA standard for small text
