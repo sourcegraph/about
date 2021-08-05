@@ -431,7 +431,7 @@ time, abbr[title] {
   line-height: 1.25;
 }
 
-.markdown-body :is(h1, h2, h3, h4, h5, h6):hover .anchor {
+.markdown-body :is(h1, h2, h3, h4, h5, h6, th):hover .anchor {
   text-decoration: none;
   opacity: 1;
 }
@@ -515,9 +515,15 @@ time, abbr[title] {
 }
 
 .markdown-body table {
-  display: block;
   width: 100%;
   overflow: auto;
+}
+
+/* Can be applied to <th> table header cells */
+.sticky {
+  position: sticky;
+  top: calc(var(--header-height) - 1px);
+  z-index: 2;
 }
 
 .markdown-body table th {
