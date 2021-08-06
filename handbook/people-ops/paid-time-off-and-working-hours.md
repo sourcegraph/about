@@ -20,8 +20,9 @@ Our company-wide policy is unlimited paid time off in exchange for achieving wor
 -  **Wellbeing leave**: we trust you to practice agency over your wellbeing, and provide wellbeing leave to take if you are ill or need time away from work to regulate your mental or physical wellbeing. Additional wellbeing leave is also warranted if you’ve been stretched in supporting your team through growth, so that you can recalibrate.
 - **Life leave**: we understand that sometimes “life happens” and you’ll need time off to do things that are not necessarily restful. This could include caring for a family member, immigration or legal appointments, taking a pet to the vet, or moving homes.
 
-If you need extended time that will impact your ability to deliver your work or may affect your teammates, seek guidance from your manager so we can understand how to support you.
+**Important**: please record all of your PTO (including public holidays) in [Roots](https://about.sourcegraph.com/handbook/people-ops/submitting-time-off) as far in advance as possible to notify your manager. If you have any questions about recording PTO in Roots, please contact people-ops@sourcegraph.com or drop your question in #people-ops on Slack.
 
+If you need extended time that will impact your ability to deliver your work or may affect your teammates, seek guidance from your manager so we can understand how to support you.
 
 ## Working hours
 -   At Sourcegraph, results matter more than the hours that you put in. We expect our teammates to apply personal agency over how many hours they can stay focused or are needed to achieve the results they want to achieve, and regulate their rest as they see fit.
