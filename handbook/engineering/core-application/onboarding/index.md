@@ -29,11 +29,20 @@ The core application team owns services that are fundamental to Sourcegraph's op
 - [Week 2](week-2.md)
 - [Week 3](week-3.md)
 - [Week 4](week-4.md)
+
 ## Service Tours
 
 - [How gitserver works](how-gitserver-works.md)
 - [How repo-updater works](how-repo-updater-works.md)
-- [How frontend works](#)
+- [How frontend works](#) _(tbd)_
+- [How UI layer works](#) _(tbd)_
+- [How cloud and on-premise deployment works](../../deployments)
+- [Where to search for logs and how to debug issues](#) _(tbd)_
+- [How authentication and authorization works](#)
+- [How site admin role works](#) _(tbd)_ 
+- [What is the difference between site configuration, global, organization, and user setting](#) _(tbd)_
+- [How licensing generation and enforcement work](#) _(tbd)_
+- [How organization works](#) _(tbd)_
 
 ## Extras
 
