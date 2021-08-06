@@ -1017,9 +1017,9 @@
         ]
       }
     },
-    { 
+    {
       "type": "Feature",
-      "properties": { 
+      "properties": {
         "name": "Justin Boyson"
       },
       "geometry": {
@@ -1027,6 +1027,32 @@
         "coordinates": [
           -97.743057,
           30.267153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "<Luke Taylor>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8758764564991,
+          52.353725318203985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yink Teo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41288661956786,
+          37.79099803764377
         ]
       }
     }
