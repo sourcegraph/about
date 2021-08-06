@@ -48,6 +48,7 @@ At the team level and at a very high level, we always want the following to be t
 * **No more than 10% of cases result in a request for help from engineering per month.** Requests for help are questions about how something works and/or troubleshooting assistance. This does not include defects or feature improvement requests. 10% may be the wrong target, but it’s a start and no matter what, the target will reflect the intention that the support team will strive to be as self-sufficient as possible. Performance available in summary updates (currently manually tallied).
 * **We complete any [FY22 OKRs](https://docs.google.com/document/d/18d3sX38O6ephNuoHqZT9BwU1m1_FGuRfsTwYbc8lMV8/edit#heading=h.obnaanj0svtb) (or quarterly) assigned to our team.**
 	* [FY22Q2 OKR plan](FY22Q2-OKR-Plan.md)
+	* [FY22Q3 OKR plan](FY22Q3-OKR-Plan.md)
 
 As an individual CSE, as I complete my first 90 days (if not sooner), I know I am successful in my day-to-day work helping customers when I am responsive, consistent, and reliable. I can measure that myself by confirming that all of the following is true:
 
