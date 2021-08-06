@@ -1,5 +1,5 @@
 # Core Application areas of ownership
-The areas of ownership are organized base on different work-streams that the Core Application team is currently focusing on.
+The areas of ownership are organized based on different work-streams that the Core Application team is currently focusing on.
 
 ## Code host connections and repositories management
 End-to-end experience managing code host connections and repositories for all supported version control systems, including database storage, back-end service, and UI layer.
