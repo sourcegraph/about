@@ -23,10 +23,10 @@ These includes:
 - Audit logs 
 
 ## Identity and access management
-- platform level authentication and authorization
-- end to end experience for login and sign up flow
-- security policies 
-- social and enterprise connection 
+- Platform level authentication and authorization
+- End to end experience for login and sign up flow
+- Security policies 
+- Social and enterprise connection 
 
 ### Developer enablement
 - API standards and rate-limiting
