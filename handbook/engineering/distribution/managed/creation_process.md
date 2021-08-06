@@ -3,7 +3,8 @@
 Creating a new managed instance involves following the steps below.
 
 1. Create a issue with the managed instance template in the `sourcegraph/customer` repository.
-1. Create a new GCP project `sourcegraph-managed-$COMPANY` under the "Managed instances" folder in the Sourcegraph GCP organization.
+1. Create a new GCP project for the instance by adding it to the [`managed_projects` tfvar in the infrastructure repo's `gcp/projects/terraform.tfvars`](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/infrastructure%24%40main+managed_projects+%3D+%7B+:%5B_%5D+%7D&patternType=structural)
+    - It will look something like `sourcegraph-managed-$COMPANY = { ... }` - refer to the existing variables for more details
 1. Create GCP service account credentials:
     - From console.cloud.google.com select the project > **APIs & Services** > **Credentials** > **Create credentials** > **Service account**
     - Service account name: `deploy`
@@ -18,6 +19,7 @@ Creating a new managed instance involves following the steps below.
     - **Add** > **Login** > enter **$COMPANY sourcegraph-admin** as the title
       - **User:** `managed+$COMPANY@sourcegraph.com`
       - **Password:** Change **length** to 40 and turn on symbols and digits > **Save**
+    - Note: for all of the above, if the company name differs (i.e. via abbreviation) from the name of the folder used in `sourcegraph/customer`, please include the abbreviation in the 1password as well for easier search
 1. In GCP, enable the **Compute Engine API**:
    - Under **APIs & Services** > **Library** search for "Compute"
    - Select **Compute Engine API** and choose **Enable**
@@ -69,14 +71,6 @@ Creating a new managed instance involves following the steps below.
 					"url": "$WEBHOOK_URL"
 				}
 			},
-			{
-				"level": "warning",
-				"notifier": {
-					"type": "slack",
-					"username": "$COMPANY",
-					"url": "$WEBHOOK_URL"
-				}
-			}
 		],
    ```
 1. Add an entry for the customer by adding their HubSpot link to the checklist in the [managed instances upgrade issue template](../../releases/upgrade_managed_issue_template.md).
@@ -90,7 +84,10 @@ To provide the customer access to the instance:
    1. If their instance should be protected by SSO only, or SSO + IP-restricted access. If the latter, what IP addresses / CIDR ranges should be allowed (e.g. the source IPs of their corporate VPN, usually their infrastructure or IT teams can provide this).
    1. Who should be the recipient of the initial site admin account creation link? This will let them configure the admin password, which they will need to store somewhere securely, and is used for them to set up SSO as well as for them to get access if at any point SSO is not working. They can create more password or SSO-based admin accounts later as desired.
 1. Create and apply the Terraform change that grants their IP/CIDR ranges access to the instance, or makes it public/SSO-only, by following the [operations guide](operations.md).
-1. Work with #ce to provide the initial site admin account creation link to the relevant person (do this securely in a private channel with only that one person).  Confirm that they are able to access the instance and sign in OK.
+1. Prepare the initial admin account for the customer:
+   1. Go to `/site-admin/users` and hit "Create user", and fill in the appropriate values.
+   1. Copy the generated link and send it to the customer. Managed instances usually won't have email set up, so a link will not be sent automatically.
+   1. Go to `/site-admin/users` and promote the created account to site admin.
 
 ## Configuring SSO and repositories
 

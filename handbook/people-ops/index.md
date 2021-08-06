@@ -37,6 +37,7 @@ WIP
 
 ## What we offer our teammates
 
+- [How we engage talent outside of the US](how-we-engage-talent-outside-the-us/index.md)
 - [How we structure compensation](compensation/index.md)
   - [How to create an offer](compensation/offers.md)
   - [Equity and stock options FAQ](compensation/equity-faq.md)
@@ -47,8 +48,7 @@ WIP
   - [Submitting time off](submitting-time-off.md)
 - [Bank and public holidays](holidays.md)
 - [Donations teammates can make](donations.md)
-- [Celebrating birthdays and anniversaries](celebrate.md)
-- [When we can sponsor United States visas](visa-sponsorship.md)
+- [Teammate Gatherings and Celebrations](celebrate.md)
 - [Employment verification](employment_verification.md)
 
 
@@ -60,7 +60,7 @@ WIP
 ## Wellbeing
 
 - [Mental health and wellness initiatives](mental-health.md)
-- Modern Health - *Program launching in August 2021*
+- [Modern Health: launching August 10th](modern-health.md)
 
 ## Other policies
 

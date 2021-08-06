@@ -21,10 +21,14 @@
     - [Digital Marketing Programs](digital_marketing_programs.md)
     - [Marketing operations](marketing_operations.md)
 
-- [Developer Education](education.md)
+- [Developer Education](education/index.md)
+    - [Learn Platform](education/learn-platform.md)
+    - [DevEd Council](education/dev-ed-council.md)
+
 - Community Relations
     - [Public projects using Sourcegraph](public_projects_using_sourcegraph.md)
     - [Adding a community landing page](oss_community_pages.md)
+    - [How to become a Sourcegraph Champion](becoming_a_sourcegraph_champion.md)
 
 - [Brand](brand/index.md)
     - [Building a Strong Brand](brand/building_a_strong_brand.md)
@@ -36,14 +40,13 @@
 - Marketing requests and feedback
     - [Make a request or share an idea](https://form.asana.com/?k=hNaq42PNshdQ1FjjEUKjLA&d=7195383522959)
     - [Sign up for Marketing office hours](https://docs.google.com/spreadsheets/d/1o8rHntP0j6-JFryhc0_g6MKEI6l3dZE7NTKasyQx46M/edit#gid=0)
-- [Marketing roles - open positions](https://sourcegraph.com/careers)
+    - [Marketing roles - open positions](https://sourcegraph.com/careers)
 
 ## Members
 
 - [Kacie Jenkins](../company/team/index.md#kacie-jenkins-she-her), VP of Marketing
     - [Andy Schumeister](../company/team/index.md#andy-schumeister-he-him), Director of Product Marketing
-        - [Julie Campagna](../company/team/index.md#julie-campagna-she-her), Senior Customer Advocacy Manager
-        - Product Marketing Manager, Emerging Products - starting in July
+        - [Alex Isken](../company/team/index.md#alex-isken-he-him), Product Marketing Manager, Emerging Products
         - Product Marketing Lead, Enterprise - starting in July
     - [Erica Lindberg](../company/team/index.md#erica-lindberg-she-her), Director of Content Strategy
         - [Rebecca Dodd](../company/team/index.md#rebecca-dodd-she-her), Senior Managing Editor
