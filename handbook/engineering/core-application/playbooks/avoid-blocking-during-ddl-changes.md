@@ -8,7 +8,7 @@ We can avoid these issues by performing the migration steps manually, with aggre
 
 Let's assume we have a pull request with an expensive migration named `1000000011_alter_repo.sql`. We first need to connect to the database and change `schema_migrations` to the match that value. This ensures that if the associated PR is merged, the migration will be skipped by the frontend.
 
-```sql
+```
 localhost sourcegraph@sourcegraph=# SELECT * FROM schema_migrations;
 ┌────────────┬───────┐
 │  version   │ dirty │
@@ -27,7 +27,7 @@ Time: 9.217 ms
 
 Next we'll configure an aggressive statement timeout, on the order of 50 to 100 milliseconds. This timeout applies only to our current session, and ensures that Postgres will rollback our operation promptly if it takes too long. Postgres sets this value to 0 by default, which means statements are permitted to execute indefinitely.
 
-```sql
+```
 localhost sourcegraph@sourcegraph=# SELECT current_setting('statement_timeout');
 ┌─────────────────┐
 │ current_setting │
@@ -58,7 +58,7 @@ Time: 120.526 ms
 
 Now we can proceed with the DDL operation. Depending on how many transactions are active on the affected table, we may see the operation fail many times in a row. This is normal — we must acquire an `AccessExclusiveLock` but we've set a low timeout value. We may have to retry the operation several times before it eventually succeeds.
 
-```sql
+```
 localhost sourcegraph@sourcegraph=# ALTER TABLE repo DROP COLUMN blocked;
 ERROR:  57014: canceling statement due to statement timeout
 LOCATION:  ProcessInterrupts, postgres.c:3106
