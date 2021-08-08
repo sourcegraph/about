@@ -1,4 +1,4 @@
-# Avoid blocking during DDL operations
+# Avoid blocking during DDL changes
 
 Many DDL operations, such as the majority of the `ALTER TABLE` subcommands, acquire an `AccessExclusiveLock` on the specified table before performing the change. Acquiring the lock can take a non-trivial amount of time, as Postgres must ensure that the holder is the _only_ active transaction associated with the table. If the operation then takes a long time to complete, customers may perceive timeouts and other errors while using the product as concurrent transactions block and timeout.
 
