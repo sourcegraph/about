@@ -6,7 +6,7 @@ Many DDL operations, such as the majority of the `ALTER TABLE` subcommands, acqu
 
 We can avoid these issues by performing the migration steps manually, with aggressive timeouts in place. This will mitigate the lock acquisition issue by allowing us to retry until we find an open slot, and mitigates the blocking issue by ensuring that the operation is not permitted to take an excessive amount of time to complete.
 
-Let's assume we have a pull request with an expensive migration named `1000000011_alter_repo.sql`. We first need to connect to the database and change `schema_migrations` to the match that value. This ensures that if the associated PR is merged, the migration will be skipped by the frontend.
+Let's assume we have a pull request with an expensive migration named `1000000011_alter_repo.sql`. We first need to connect to the database and change `schema_migrations` to match that value. This ensures that if the associated PR is merged, the migration will be skipped by the frontend.
 
 ```
 localhost sourcegraph@sourcegraph=# SELECT * FROM schema_migrations;
@@ -80,6 +80,6 @@ Once the operation has completed, there's nothing further to do. You can termina
 
 ### Failure
 
-If you're having trouble getting the operation to succeed, you may need to raise the timeout but a conservative amount. Try increments of +25 milliseconds, and remember that you may need to retry the operation multiple times regardless.
+If you're having trouble getting the operation to succeed, you may need to raise the timeout by a conservative amount. Try increments of +25 milliseconds, and remember that you may need to retry the operation multiple times regardless.
 
 If you cannot get the operation to succeed even with a substantial timeout, contact the distribution team for assistance. For example, operations that rewrite a large number of rows may require a maintenance window or other high-touch coordination.
