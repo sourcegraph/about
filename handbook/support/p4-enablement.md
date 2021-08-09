@@ -9,9 +9,9 @@ Perforce is a version control system like git, subversion, or mercurial. While g
 # .zshrc or .bashrc
 
 P4PORT=perforce.sgdev.org:1666 # This points the p4 cli at the dogfood server
-P4USER=admin # sets your user
-P4PASSWD=<login session ticket value explained below> # doesn't require string quotes
-P4EDITOR=/usr/bin/vim # specifies the editor opened by some p4 commands
+P4USER=admin                   # sets your user
+P4PASSWD=<session ticket>      # see details below, doesn't require string quotes
+P4EDITOR=/usr/bin/vim          # specifies the editor opened by some p4 commands
 ```
 ## Interacting with Perforce dogfood
 
