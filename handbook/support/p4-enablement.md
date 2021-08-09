@@ -16,17 +16,17 @@ P4EDITOR=/usr/bin/vim          # specifies the editor opened by some p4 commands
 ## Interacting with Perforce dogfood
 
 To add repos to the perforce dogfood server follow the following procedure:
-- [Dogfood Perforce Server](#dogfood-perforce-server)
-  - [Setting Up](#setting-up)
-  - [Interacting With Perforce Dogfood](#interacting-with-perforce-dogfood)
-    - [Generate A Session Ticket](#generate-a-session-ticket)
-    - [Create New Depot](#create-new-depot)
-    - [Create A Client](#create-a-client)
-    - [Add Files and Submit](#add-files-and-submit)
-    - [Configuring Sourcegraph To Sync Dogfood Depots](#configuring-sourcegraph-to-sync-dogfood-depots)
-- [Local Perforce Server](#local-perforce-server)
+- [Dogfood Perforce server](#dogfood-perforce-server)
+  - [Setting up](#setting-up)
+  - [Interacting with Perforce dogfood](#interacting-with-perforce-dogfood)
+    - [Generate a session ticket](#generate-a-session-ticket)
+    - [Create new depot](#create-new-depot)
+    - [Create a client](#create-a-client)
+    - [Add files and submit](#add-files-and-submit)
+    - [Configuring Sourcegraph to sync dogfood depots](#configuring-sourcegraph-to-sync-dogfood-depots)
+- [Local Perforce server](#local-perforce-server)
 
-### Generate A Session Ticket
+### Generate a session ticket
 Interaction with the dogfood server requires authentication. Once you've set up your shell environment you'll need to generate a session ticket. To do this you'll need your users password. You can find the [admin password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/fac6hoq3ujb3xpxtllbijzyxta), and others on our shared 1Password account.
 
 1. Once your environment is set run `p4 ping` this will prompt you for the admin password, and is a good way to test your connection to the server.
@@ -34,7 +34,7 @@ Interaction with the dogfood server requires authentication. Once you've set up 
 3. Set the ticket generated in step 2 to your `P4PASSWD` env variable
 4. You should now have a valid p4 session ticket, note that this ticket will expire, so you may occasionally need to regenerate it.
 
-### Create New Depot
+### Create new depot
 
 Perforce uses depots rather than repos, the concept is functionally equivalent. To see all the repos on the perforce server run `p4 depots`, to create a new depot on the server run `p4 depot <depot name>`, this will open a file like seen below:
 
@@ -61,7 +61,7 @@ Map:    support-tools/...
 
 Once a depot is created on the server, we can start to add files from our local client to it.
 
-### Create A Client
+### Create a client
 
 Perforce is different than git in that it utilizes a concept called client workspaces. This is a subset of files on your machine that mirrors files on the perforce server. The `p4 client <name>` command will open a client spec file with an editor specified by the `P4EDITOR` env variable. Below is an example:
 
@@ -106,7 +106,7 @@ Once you've created a depot on dogfood, map a local directory to it by adding an
 
 Note that the client name is mapped to your `Root:` setting in the client spec.
 
-### Add Files and Submit
+### Add files and submit
 
 Once you've created a depot on the server, and created a client spec, adding files is a lot like git. To add the files run `p4 add <relative path to files>/...` for example while in `/Users/warrengifford` I could run `p4 add ./LifeBox/...`. This will open a change spec for which you must provide a description:
 
@@ -136,14 +136,14 @@ You can see the files staged for adding with `p4 opened`.
 
 Finally run `p4 submit` to load the files to the depo on the server.
 
-### Configuring Sourcegraph To Sync Dogfood Depots
+### Configuring Sourcegraph to sync dogfood depots
 
 Our [documentation](https://docs.sourcegraph.com/admin/repo/perforce) covers the requirements to sync to Sourcegraph, however for convienience it should be noted we have a user called `buildkite` on our dogfood instance who session ticket will not expire. To generate the ticket for this account reference our shared [1Password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/lajspc6a5valfbsh3whpcb5bp4).
 
 To learn more about general p4 commands checkout this resource:
 [https://www.perforce.com/perforce/doc.973/cmdguide/html/quicksta.htm](https://www.perforce.com/perforce/doc.973/cmdguide/html/quicksta.htm)
 
-# Local Perforce Server
+# Local Perforce server
 
 Joe has also developed an awesome perforce server [image](https://github.com/sourcegraph/helix-docker/blob/main/helix-p4d/Dockerfile) that allows for local deployment of a perforce server.
  
