@@ -2,7 +2,7 @@
 
 Perforce is a version control system like git, subversion, or mercurial. While git is based on a distributed, decentralised model, Perforce is centralised. For testing purposes you may use our perforce dogfood server.
 
-## Setting Up
+## Setting up
 - To connect to the Perforce server, you'll need the Perforce cli installed locally. Use the command: `brew install --cask perforce`
 - The following environment variables configure your shell to point at the Perforce server. Set them to your `env` with the `export` command, or add them to your `.bashrc` or `.zshrc` file.
 ```
