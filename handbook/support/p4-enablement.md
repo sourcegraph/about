@@ -4,7 +4,7 @@ Perforce is a version control system like git, subversion, or mercurial. While g
 
 ## Setting Up
 - To connect to perforce you'll need the perforce cli installed locally. Use the command: `brew install --cask perforce`
-- The following environment variables configure your shell to point at the perforce server. Set them to your `env` with the `export` command, or add them to your `.bashrc` or `.zshrc` file.
+- The following environment variables configure your shell to point at the Perforce server. Set them to your `env` with the `export` command, or add them to your `.bashrc` or `.zshrc` file.
 ```
 # .zshrc or .bashrc
 
