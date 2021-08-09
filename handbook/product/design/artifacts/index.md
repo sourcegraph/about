@@ -4,7 +4,9 @@ In Sourcegraph’s globally distributed remote environment, design artifacts are
 
 We use Figma files, RFCs, Google Docs, GitHub issues, and more as artifacts. Artifacts give us a way to capture our ideas and thoughts, and then give us time to go away and give thoughtful consideration before providing feedback.
 
-Decisions are made in design artifacts. While we can talk about things in synchronous sessions like Slack conversations or video calls, by making decisions in artifacts, it helps others to understand the context around the decision and provide further feedback or ask questions in a self-contained space.
+Decisions are made in design artifacts. While we can talk about things in synchronous sessions like Slack conversations or video calls, making decisions in artifacts helps others to understand the context around the decision and provide further feedback or ask questions in a self-contained space.
+
+When a design artifact like a Figma file is a source of truth, designers are responsible for communicating this to their teams and for keeping those artifacts up to date.
 
 It’s our role as designers to [set expectations around our artifacts](../reviewing_design/index.md): what state they’re at, whether or not we’re ready for feedback, and what kind of feedback we’re seeking. [Seeking feedback](../../../communication/seeking-and-giving-feedback.md#giving-feedback) is a skill we're always working to improve.
 
