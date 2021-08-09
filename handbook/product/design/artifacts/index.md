@@ -1,6 +1,6 @@
 # Design artifacts
 
-In Sourcegraph’s globally distributed remote environment, design artifacts are crucial for sharing and collaborating on design—and a key part of how we [design in the open](../index.md#designing-in-the-open).
+In Sourcegraph’s globally distributed remote environment, design artifacts are crucial for sharing and collaborating on design and a key part of how we [design in the open](../index.md#designing-in-the-open).
 
 We use Figma files, RFCs, Google Docs, GitHub issues, and more as artifacts. Artifacts give us a way to capture our ideas and thoughts, and then give us time to go away and give thoughtful consideration before providing feedback.
 
@@ -14,6 +14,6 @@ That’s also why we don’t always create high-fidelity design artifacts. Somet
 
 ## Tips for better asynchronous design artifacts
 
-- **Design artifacts should clearly communicate to the viewer what stage the artifact is in.** Is it a working draft, that’s not ready for feedback? Is it an experiment, with no connection to a project effort? Is it ready for review and specific feedback from others? Is it a source of truth for development?
+- **Design artifacts should clearly communicate to the viewer what stage the artifact is in.** Is it a working draft, that’s not ready for feedback? Is it an experiment, with no connection to a project effort? Is it ready for review and specific feedback from others? Is it a source of truth for development? Some ways this might be expressed include in the title of the artifact, the Figma project cover, or labels within the content.
 - **Design artifacts ready for feedback should be tailored for asynchronous review.** Figma files, for example, can communicate beyond the design itself: we can use annotations and other techniques to make assumptions tangible and visible in context, to specifically request feedback on a given topic, or to surface points of uncertainty.
 - **Everyone learns best in different ways.** When sharing design artifacts, consider adding extra ways of consuming the artifacts, such as a Loom video walkthrough of the artifact, or linking back and forth other documentation and artifacts.

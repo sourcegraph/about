@@ -19,7 +19,7 @@ We know that we’re successful as a design team when we…
 - **Feel empowered to act with high agency to make our product, processes, and teams better.** Design is an inherently explorative and iterative process. We value high agency, and we have to actively create an environment of physiological safety, trust, and transparency.
 - **Advocate for and ship design outcomes that align with our [product design principles](../design_principles.md).**
 - **Improve Sourcegraph’s velocity by helping to ship more usable and delightful features in the first iteration.** Design often means more time up-front, but this reduces time-consuming rewrites, refactors, and technical and design debt that occurs when changes are made during development or after releases.
-- **Complete FY22 and quarterly OKRs owned by our teams.** We’re successful when each of us is able to complete our OKRs in a sustainable way, while also contributing to the design team culture and rituals.
+- **Complete OKRs owned by our teams.** We’re successful when each of us is able to complete our OKRs in a sustainable way, while also contributing to the design team culture and rituals.
 
 ## How we work
 
@@ -37,6 +37,7 @@ Designing in the open means many things to us.
 
 - **Our work and process is [transparent by default](../../company/values.md#open-and-transparent)**. By making our work visible to anyone, it’s easy for us to collaborate with others while building trust within our [high agency](../../company/values.md#high-agency) environment.
 - **We share early and often**. Our design process encourages collaboration with other teams at all stages of the product design process, and designing in the open reduces friction and [encourages feedback and shared understanding](./reviewing_design/index.md).
+- **We create shared understanding**. We proactively communicate with teammates from all disciplines and backgrounds. We don't use jargon and don't expect others to have a deep design-specific understanding, and we look for gaps in understanding where we can help provide clarity.
 
 Designing in the open is hard! As designers, it’s easy to want to hold back on sharing until we’re happy with what we have. It can be very uncomfortable for others to see the things we’re working on before we’re ready to share. But designing in the open also challenges us to improve our design communication and makes us better at collaborating asynchronously.
 
