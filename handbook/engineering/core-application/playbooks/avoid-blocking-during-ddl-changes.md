@@ -6,6 +6,8 @@ Many DDL operations, such as the majority of the `ALTER TABLE` subcommands, acqu
 
 We can avoid these issues by performing the migration steps manually, with aggressive timeouts in place. This will mitigate the lock acquisition issue by allowing us to retry until we find an open slot, and mitigates the blocking issue by ensuring that the operation is not permitted to take an excessive amount of time to complete.
 
+> Note: before executing this playbook, make an announcement in both the #dev-announce and #dev-ops channels. Other teams may have committed their own migrations, and this playbook could cause those them to be unexpectedly skipped.
+
 Let's assume we have a pull request with an expensive migration named `1000000011_alter_repo.sql`. We first need to connect to the database and change `schema_migrations` to match that value. This ensures that if the associated PR is merged, the migration will be skipped by the frontend.
 
 ```
