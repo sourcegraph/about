@@ -1,4 +1,4 @@
-# Dogfood Perforce Server
+# Dogfood Perforce server
 
 Perforce is a version control system like git, subversion, or mercurial. While git is based on a distributed, decentralised model, Perforce is centralised. For testing purposes you may use our perforce dogfood server.
 
