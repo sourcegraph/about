@@ -1,6 +1,6 @@
 # Dogfood Perforce server
 
-Perforce is a version control system like Git, subversion, or mercurial. While git is based on a distributed, decentralised model, Perforce is centralised. For testing purposes, you may use our Perforce dogfood server.
+Perforce is a version control system like Git, subversion, or mercurial. While git is based on a distributed, decentralised model, Perforce is centralised. For testing purposes, you may use our [Perforce dogfood server](https://k8s.sgdev.org/github.com/sourcegraph/infrastructure/-/tree/dogfood/kubernetes/tooling/perforce).
 
 ## Setting up
 - To connect to the Perforce server, you'll need the Perforce cli installed locally. Use the command: `brew install --cask perforce`
@@ -13,6 +13,8 @@ P4USER=admin                   # sets your user
 P4PASSWD=<session ticket>      # see details below, doesn't require string quotes
 P4EDITOR=/usr/bin/vim          # specifies the editor opened by some p4 commands
 ```
+Perforce dogfood is a service on our Sourcegraph dogfood cluster, for more info see its GCP [service details](https://console.cloud.google.com/kubernetes/service/us-central1-f/dogfood/tooling/perforce-server/overview?authuser=1&project=sourcegraph-dogfood).
+
 ## Interacting with Perforce dogfood
 
 To add repos to the perforce dogfood server follow the following procedure:
