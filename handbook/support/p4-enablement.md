@@ -27,12 +27,12 @@ To add repos to the perforce dogfood server follow the following procedure:
 - [Local Perforce server](#local-perforce-server)
 
 ### Generate a session ticket
-Interaction with the dogfood server requires authentication. Once you've set up your shell environment you'll need to generate a session ticket. To do this you'll need your users password. You can find the [admin password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/fac6hoq3ujb3xpxtllbijzyxta), and others on our shared 1Password account.
+Interaction with the dogfood server requires authentication. Once you've set up your shell environment you'll need to generate a session ticket with your users password. You can find the [admin password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/fac6hoq3ujb3xpxtllbijzyxta), and others on our shared 1Password account.
 
 1. Once your environment is set run `p4 ping` this will prompt you for the admin password, and is a good way to test your connection to the server.
 2. With your connection confirmed generate a session ticket with the following command: `p4 -u <p4.user> login -p -a` you'll be prompted for your user password, once you've entered it a session ticket will be printed to STDOUT
 3. Set the ticket generated in step 2 to your `P4PASSWD` env variable
-4. You should now have a valid p4 session ticket, note that this ticket will expire, so you may occasionally need to regenerate it.
+4. p4 commands should no longer require a password. Note this ticket expires every 12 hours unless configured to do otherwise.
 
 ### Create new depot
 
