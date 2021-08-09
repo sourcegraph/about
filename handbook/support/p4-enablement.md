@@ -13,7 +13,7 @@ P4USER=admin # sets your user
 P4PASSWD=<login session ticket value explained below> # doesn't require string quotes
 P4EDITOR=/usr/bin/vim # specifies the editor opened by some p4 commands
 ```
-## Interacting With Perforce Dogfood
+## Interacting with Perforce dogfood
 
 To add repos to the perforce dogfood server follow the following procedure:
 - [Dogfood Perforce Server](#dogfood-perforce-server)
