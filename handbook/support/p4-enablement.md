@@ -158,7 +158,7 @@ The following procedure runs the image:
 export P4PORT=:1666
 export P4USER=admin
 ```
-3. ping the server from a separate terminal with p4 ping and enter the password below:
+3. Ping the server from a separate terminal with p4 ping and enter the password below:
 ```
 pass12349ers
 ```
