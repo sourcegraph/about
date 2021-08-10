@@ -267,13 +267,6 @@ To add yourself to this page:
 - [stefan@sourcegraph.com](mailto:stefan@sourcegraph.com), [stefanhengl](https://github.com/stefanhengl)
 - Stefan lives in Berlin with his wife and two children. Prior to Sourcegraph, Stefan was a software engineer at Zalando and SAP, where he worked on data pipelines and low-latency, high-throughput microservices. He graduated in Physics but eventually realized that software engineering is his true passion. In his free time, Stefan enjoys cooking, plays chess with his daughter, and dreams about building a house in the wilderness of Norway.
 
-## Elizabeth Stirling (she/her)
-
-- Security Software Engineer
-- Seattle, WA, USA 🇺🇸
-- [elizabeth@sourcegraph.com](mailto:elizabeth@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/elizabeth-stirling-753b2779/)
-- Elizabeth is a Seattle area native who loves exploring the city. She has been interested in security ever since reading [Neal Stephenson's novel Reamde](https://www.amazon.com/Reamde-Novel-Neal-Stephenson/dp/0062191497) when she was a kid. Her spare time is spent hiking around the forests of the Pacific Northwest and working on whatever side project catches her fancy. She has spent far too much money on keyboards and pretty rocks - sometimes even forging her own Bismuth crystals. Elizabeth graduated with a B.S. in Computer Science from the University of Washington in Seattle.
-
 ## Quinn Keast (he/him)
 
 - Product Designer
@@ -1207,3 +1200,16 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Github: [anna-mikhova](https://github.com/anna-mmikhova), [anna@sourcegraph.com](mailto:anna@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tzvetanamikhov/), [@AnnaMikhova](https://twitter.com/annamikhova)
 - Anna currently resides in Utah with her husband and toddler boy.  She is originally from Bulgaria and has spent time in multiple countries and cities in and out of the US.  Anna has a diverse work background blending software engineering, UX, marketing and management, and has worked in various industries during her career.  She most recently comes from Pluralsight where she led the Platform Product team and helped scale data and platform capabilities.  She's super passionate about dev productivity and wants to help speed up technology innovation everywhere through challenging how we manage the ever growing complexity of big code.  In her free time Anna enjoys being out in nature with her fam, traveling to experience different cultures, keeping up with all things product and the occasional furniture restoration project.
 
+## Rami Hamdan (they/them)
+- Senior Customer Engineer
+- Albuquerque, NM from Palestine 🇵🇸
+- Github: [ZrnH](https://github.com/zrnh)
+- [rami@sourcegraph.com](mailto:rami@sourcegraph.com)
+- Rami is an experienced Technical Solutions Architect with a knack for solving complex problems using different tools and lots of jokes. In their spare time they love to take advantage of the beautiful NM outdoors with their very sweet doggie. Rami loves to cook traditional Palestinain food for their friends and family and spends lots of time perfecting recipes. They also love to exercise and cycle, and they're always looking for new climbing buddies. 
+
+## Yink Teo (he/him)
+- Director of Engineering, Global Code Graph
+- San Francisco, CA USA 🇺🇸
+- [yink@sourcegraph.com](mailto:yink@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/yinquanteo/), [@yinquanteo](https://twitter.com/yinquanteo), [GitHub](https://github.com/yinquanteo)
+- Start date: 2021-08-03
+- Yink is a Singapore🇸🇬 native and lives in San Francisco with his wife and [cat](http://instagram.com/maotheexplorer). He occassionally works on the road in his campervan. Before Sourcegraph, Yink held leadership roles at big and small tech companies and the Singapore military. Most recently, he led a product infrastructure org in Twitter Ads where he joined via an acquisition. He loves putting on sunblock to wakeboard, paddleboard, or kiteboard. If you come visit, he will probably make you a chirashi-don and matcha crème brûlée. Just bring some good 🍶/🍷/🧋. He dreams of the day Arsenal Football Club winning the Premier League. Yink has a B.S. in Electrical and Computer Engineering from Duke University.
