@@ -3,9 +3,11 @@
 Perforce is a version control system like Git, subversion, or mercurial. While git is based on a distributed, decentralised model, Perforce is centralised. For testing purposes, you may use our [Perforce dogfood server](https://k8s.sgdev.org/github.com/sourcegraph/infrastructure/-/tree/dogfood/kubernetes/tooling/perforce).
 
 ## Setting up
-  To connect to the Perforce server, you'll need the Perforce cli installed locally. Use the command: `brew install --cask perforce`
+
+To connect to the Perforce server, you'll need the Perforce cli installed locally. Use the command: `brew install --cask perforce`
   
-  The following environment variables configure your shell to point at the Perforce server. Set them to your `env` with the `export` command, or add them to your `.bashrc` or `.zshrc` file. <br>
+The following environment variables configure your shell to point at the Perforce server. Set them to your `env` with the `export` command, or add them to your `.bashrc` or `.zshrc` file. <br>
+
 
 
 ```
@@ -22,7 +24,9 @@ Perforce dogfood is a service on our Sourcegraph dogfood cluster, for more info 
 
 ## Interacting with Perforce dogfood
 
-To add repos to the Perforce dogfood server follow the following procedure:
+To add repos to the Perforce dogfood server follow the following procedure: <br />
+
+
 - [Dogfood Perforce server](#dogfood-perforce-server)
   - [Setting up](#setting-up)
   - [Interacting with Perforce dogfood](#interacting-with-perforce-dogfood)
@@ -37,7 +41,7 @@ To add repos to the Perforce dogfood server follow the following procedure:
 Interaction with the dogfood server requires authentication. Once you've set up your shell environment you'll need to generate a session ticket with your users password. You can find the [admin password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/fac6hoq3ujb3xpxtllbijzyxta), and others on our shared 1Password account.
 
 1. Once your environment is set run `p4 ping` this will prompt you for the admin password, and is a good way to test your connection to the server.
-2. With your connection confirmed generate a session ticket with the following command: `p4 -u <p4.user> login -p -a` you'll be prompted for your user password, once you've entered it a session ticket will be printed to STDOUT. You may also run `p4 -u <p4.user> login -a` to set the ticket in `~/.p4tickets`, this allows you to skip step 3. This method will only work if you have no `P4PASSWD` env set.
+2. With your connection confirmed generate a session ticket with the following command: `p4 -u <p4.user> login -p -a` you'll be prompted for your user password, once you've entered it a session ticket will be printed to STDOUT. You may also run `p4 -u <p4.user> login -a` to set the ticket in `~/.p4tickets`, this allows you to skip setting `P4PASSWD` in your env, and will only work if you have no `P4PASSWD` variable in your env.
 3. Set the ticket generated in step 2 to your `P4PASSWD` env variable 
 4. p4 commands should no longer require a password. Note this ticket expires every 12 hours unless configured to do otherwise.
 
