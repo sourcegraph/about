@@ -160,6 +160,6 @@ export P4USER=admin
 ```
 3. ping the server from a separate terminal with p4 ping and enter the password below:
 ```
-ARG P4PASSWD=pass12349ers
+pass12349ers
 ```
 (Note the value listed is from the dockerfile arg declaration)
