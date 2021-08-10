@@ -6,7 +6,7 @@ Perforce is a version control system like Git, subversion, or mercurial. While g
 - To connect to the Perforce server, you'll need the Perforce cli installed locally. Use the command: `brew install --cask perforce`
 - The following environment variables configure your shell to point at the Perforce server. Set them to your `env` with the `export` command, or add them to your `.bashrc` or `.zshrc` file.
 
-```
+```bash
 # .zshrc or .bashrc
 
 P4PORT=perforce.sgdev.org:1666 # This points the p4 cli at the dogfood server
@@ -43,7 +43,7 @@ Interaction with the dogfood server requires authentication. Once you've set up 
 
 Perforce uses depots rather than repos, the concept is functionally equivalent. To see all the repos on the perforce server run `p4 depots`, to create a new depot on the server run `p4 depot <depot name>`, this will open a file like seen below:
 
-```
+```bash
 Depot:  support-tools
 
 Owner:  admin
@@ -70,7 +70,7 @@ Once a depot is created on the server, we can start to add files from our local 
 
 Perforce is different than git in that it utilizes a concept called client workspaces. This is a subset of files on your machine that mirrors files on the Perforce server. The `p4 client <name>` command will open a client spec file with an editor specified by the `P4EDITOR` env variable. Below is an example:
 
-```
+```bash
 Client: warren
 
 Update: 2021/08/08 04:17:02
@@ -115,7 +115,7 @@ Note that the client name is mapped to your `Root:` setting in the client spec.
 
 Once you've created a depot on the server, and created a client spec, adding files is a lot like git. To add the files run `p4 add <relative path to files>/...` for example while in `/Users/warrengifford` I could run `p4 add ./LifeBox/...`. This will open a change spec for which you must provide a description:
 
-```
+```bash
 Change: new
 
 Client: warren
@@ -157,12 +157,12 @@ The following procedure runs the image:
 1. Start the server `docker run --publish 1666:1666 sourcegraph/helix-p4d:2020.2`
 
 2. Open a new terminal, configure the terminal session env:
-```
+```bash
 export P4PORT=:1666
 export P4USER=admin
 ```
 3. Ping the server from a separate terminal with p4 ping and enter the password below:
-```
+```bash
 pass12349ers
 ```
 (Note the value listed is from the dockerfile arg declaration)
