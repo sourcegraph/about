@@ -147,7 +147,7 @@ To learn more about general p4 commands checkout this resource:
 
 # Local Perforce server
 
-Joe has also developed an awesome perforce server [image](https://github.com/sourcegraph/helix-docker/blob/main/helix-p4d/Dockerfile) that allows for local deployment of a perforce server.
+Joe has also developed an awesome Perforce server [image](https://github.com/sourcegraph/helix-docker/blob/main/helix-p4d/Dockerfile) that allows for local deployment of a Perforce server.
  
 The following procedure runs the image:
 
