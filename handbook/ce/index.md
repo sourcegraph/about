@@ -36,7 +36,7 @@ This continuity means we give customers consistent and high-quality service from
 
 <!-- Alphabetically, by surname. -->
 
-- [Aimee Menne](../company/team/index.md#aimee-menne-she-her) (Director of Customer Engineering)
+- [Aimee Menne](../company/team/index.md#aimee-menne-she-her) (VP of Customer Engineering)
 - Customer Engineers (International/Non-US)
   - [Christy Haragan](../company/team/index.md#christy-haragan-she-her) (Director of Customer Engineering, International)
 - Customer Engineers (US West)
