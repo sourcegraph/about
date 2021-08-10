@@ -80,7 +80,7 @@ For candidates currently on a visa who prefer to keep their status in a particul
 
 For candidates in the US in need of sponsorship and who have an existing visa, we will accept a visa transfer from the former employer and sponsor the existing visa for the candidate so long as the visa is compatible with an all-remote work setting.
 
-For candidates in need of US sponsorship that require a new visa, we will agree to sponsor new visas for teammates so long as they have worked at Sourcegraph a minimum of 12 consecutive months prior to initiating a visa petition. 
+For candidates in need of US sponsorship, whether that requires initiating a new visa process or a permanent residency (green card) process, Sourcegraph will agree to initiate and sponsor a new visa or green card process for teammates so long as they have worked at Sourcegraph a minimum of 12 consecutive months prior to initiating a the visa or permanent residency petition. 
 
 Any visas sponsored by Sourcegraph must be compatible with an all-remote work setting.
 
