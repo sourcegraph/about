@@ -17,7 +17,7 @@ Perforce dogfood is a service on our Sourcegraph dogfood cluster, for more info 
 
 ## Interacting with Perforce dogfood
 
-To add repos to the perforce dogfood server follow the following procedure:
+To add repos to the Perforce dogfood server follow the following procedure:
 - [Dogfood Perforce server](#dogfood-perforce-server)
   - [Setting up](#setting-up)
   - [Interacting with Perforce dogfood](#interacting-with-perforce-dogfood)
@@ -32,8 +32,8 @@ To add repos to the perforce dogfood server follow the following procedure:
 Interaction with the dogfood server requires authentication. Once you've set up your shell environment you'll need to generate a session ticket with your users password. You can find the [admin password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/fac6hoq3ujb3xpxtllbijzyxta), and others on our shared 1Password account.
 
 1. Once your environment is set run `p4 ping` this will prompt you for the admin password, and is a good way to test your connection to the server.
-2. With your connection confirmed generate a session ticket with the following command: `p4 -u <p4.user> login -p -a` you'll be prompted for your user password, once you've entered it a session ticket will be printed to STDOUT
-3. Set the ticket generated in step 2 to your `P4PASSWD` env variable
+2. With your connection confirmed generate a session ticket with the following command: `p4 -u <p4.user> login -p -a` you'll be prompted for your user password, once you've entered it a session ticket will be printed to STDOUT. You may also run `p4 -u <p4.user> login -a` to set the ticket in `~/.p4tickets`, this allows you to skip step 3. This method will only work if you have no `P4PASSWD` env set.
+3. Set the ticket generated in step 2 to your `P4PASSWD` env variable 
 4. p4 commands should no longer require a password. Note this ticket expires every 12 hours unless configured to do otherwise.
 
 ### Create new depot
@@ -65,7 +65,7 @@ Once a depot is created on the server, we can start to add files from our local 
 
 ### Create a client
 
-Perforce is different than git in that it utilizes a concept called client workspaces. This is a subset of files on your machine that mirrors files on the perforce server. The `p4 client <name>` command will open a client spec file with an editor specified by the `P4EDITOR` env variable. Below is an example:
+Perforce is different than git in that it utilizes a concept called client workspaces. This is a subset of files on your machine that mirrors files on the Perforce server. The `p4 client <name>` command will open a client spec file with an editor specified by the `P4EDITOR` env variable. Below is an example:
 
 ```
 Client: warren
@@ -98,9 +98,9 @@ View:
         //LifeBox/... //warren/LifeBox/...
 ```
 
-You'll notice under `View:` a "perforce path" or *depot path* on the left, followed by a *client path* on the right. The *depot path* reflects the path to the depot on the perforce server, while the *client path* is the path to the directory on your local machine that you want to  map to the perforce depot. 
+You'll notice under `View:` a "Perforce path" or *depot path* on the left, followed by a *client path* on the right. The *depot path* reflects the path to the depot on the Perforce server, while the *client path* is the path to the directory on your local machine that you want to  map to the Perforce depot. 
 
-Specifying views in your client configuration allows you to declare which files from the perforce depot are relevant to you, or which files you want to be part of your *workspace*. You can learn more about this topic [here](https://www.perforce.com/perforce/doc.973/cmdguide/html/details.htm).
+Specifying views in your client configuration allows you to declare which files from the Perforce depot are relevant to you, or which files you want to be part of your *workspace*. You can learn more about this topic [here](https://www.perforce.com/perforce/doc.973/cmdguide/html/details.htm).
 
 Once you've created a depot on dogfood, map a local directory to it by adding an entry to your client spec under `Views:`
 
