@@ -837,7 +837,7 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 ## Nate Tang (he/him)
 
 - Tech Ops Analyst
-- San Clemente, California, USA 🇺🇸
+- Orange County, California, USA 🇺🇸
 - Nate grew up in Orange County, California but has traveled all across the world, most recently to Peru. In his free time, he likes to swim, practice yoga, and go on hikes.
 
 ## Cassie Melani (she/her)
