@@ -23,9 +23,13 @@ const Index: React.FunctionComponent = (props: any) => (
                                 root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
-                                <Link className="btn btn-primary m-3" to="/get-started">
+                                <a
+                                    className="btn btn-primary m-3"
+                                    href="https://sourcegraph.com/search"
+                                    title="Try Sourcegraph now"
+                                >
                                     Try Sourcegraph now <ArrowRightIcon className="ml-1" />
-                                </Link>
+                                </a>
                                 <Link className="btn btn-outline-primary" to="/contact/request-info/">
                                     Talk to a product specialist <ArrowRightIcon className="ml-1" />
                                 </Link>
@@ -87,7 +91,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <div className="card pt-0" style={{ background: "url('/customers-page-bg.svg') no-repeat" }}>
                             <strong className="card-header border-0 pb-0">Want to use Sourcegraph at work?</strong>
                             <p className="card-body mb-0 pt-1">
-                                <Link to="/get-started">Use it free</Link> for up to 10 developers. To get your company
+                                <a href="https://sourcegraph.com/search" title="Try Sourcegraph now">Use it free</a> for up to 10 developers. To get your company
                                 to upgrade to a <Link to="/pricing">paid plan</Link>, see the{' '}
                                 <Link to="/customers">customers page</Link> (to make the case). Or{' '}
                                 <a href="/contact/request-info">schedule time with us</a> for help.

@@ -111,13 +111,13 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             </a>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <Link
+                                            <a
                                                 className="header__nav-link nav-link btn btn-outline-primary"
-                                                to="/get-started"
+                                                href="https://sourcegraph.com/search"
                                                 title="Get started with Sourcegraph"
                                             >
                                                 Get started
-                                            </Link>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
