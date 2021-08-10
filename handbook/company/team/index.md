@@ -1213,3 +1213,12 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [yink@sourcegraph.com](mailto:yink@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/yinquanteo/), [@yinquanteo](https://twitter.com/yinquanteo), [GitHub](https://github.com/yinquanteo)
 - Start date: 2021-08-03
 - Yink is a Singapore🇸🇬 native and lives in San Francisco with his wife and [cat](http://instagram.com/maotheexplorer). He occassionally works on the road in his campervan. Before Sourcegraph, Yink held leadership roles at big and small tech companies and the Singapore military. Most recently, he led a product infrastructure org in Twitter Ads where he joined via an acquisition. He loves putting on sunblock to wakeboard, paddleboard, or kiteboard. If you come visit, he will probably make you a chirashi-don and matcha crème brûlée. Just bring some good 🍶/🍷/🧋. He dreams of the day Arsenal Football Club winning the Premier League. Yink has a B.S. in Electrical and Computer Engineering from Duke University.
+
+## David Rohnow (he/him)
+- Sr. Customer Engineer
+- San Diego, CA USA 🇺🇸
+- Github: (https://github.com/zrnh)
+- [Linkedin](https://www.linkedin.com/in/davidrohnow/)
+- [david.rohnow@sourcegraph.com](mailto:david.rohnow@sourcegraph.com)
+- Start date: 2021-08-03
+- David lives in San Diego with his Wife, Grace, and their three sons (Nathan, Cooper, and Fin).  David has carved out a twenty-five year career in the technology industry operating in various IT operational roles and over the last eleven years in either pre or post-sales roles for value-added-resellers and technology manufacturers.  David's passion is helping organizations "operate at the speed of business".  When David is not working he is tinkering in his home  lab working on some project, cycling around the greater San Diego area, or watching one of his three sons play soccer.
