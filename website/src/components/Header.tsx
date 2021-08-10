@@ -29,12 +29,12 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                {/* Temporary banner for 2021 Q2 launch */}
+                {/* Hello Bar - Banner for 2021 Q3 launch */}
                 {(this.props.isHome || this.props.isBlog) && (
                     <div className="d-flex align-items-center justify-content-center background-purple text-white font-weight-bold p-2">
-                        We just raised $125M (led by a16z) to bring really great code search to every developer
-                        <Link to="/blog/the-future-of-code-search/" className="ml-2 btn btn-sm btn-light">
-                            See how
+                        Sourcegraph is committed to indexing more than 5 million open source repositories
+                        <Link to="/blog/" className="ml-2 btn btn-sm btn-light">
+                            Read the blog
                         </Link>
                     </div>
                 )}
