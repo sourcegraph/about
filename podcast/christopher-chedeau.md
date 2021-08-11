@@ -5,3 +5,104 @@ tags: [podcast]
 slug: christopher-chedeau-podcast
 published: false
 ---
+
+<!-- START AUDIO -->
+<audio className="object-center" src="https://www.buzzsprout.com/1097978/3991271-introducing-the-sourcegraph-podcast.mp3" controls={true} preload="none"></audio>
+<!-- END AUDIO -->
+
+<!-- START GUESTS -->
+<span>
+Christopher Chedeau  
+Beyang Liu
+</span>
+<!-- END GUESTS -->
+
+<!-- START SUMMARY -->
+On the eve of the pandemic, Christopher Chedeau was procrastinating performance reviews at Facebook and decided to hack together a simple drawing app. That weekend project became Excalidraw, an open-source virtual whiteboard so popular that its users have basically demanded a startup form around it so that they can bring it to work. Christopher tells the backstory of Excalidraw's meteoric rise, as well as his story of joining Facebook and coming to America, and tales from the early days of React and how React Native was born.
+<!--END SUMMARY -->
+
+<!-- START SHOW NOTES -->
+
+Warcraft III World Editor: https://en.wikipedia.org/wiki/Warcraft_III_World_Editor
+
+Warcraft III JASS scripting language: https://wc3we.fandom.com/wiki/Jass_Coding
+
+EPITA, French university for computer science: https://www.epita.fr/en, https://en.wikipedia.org/wiki/%C3%89cole_pour_l%27informatique_et_les_techniques_avanc%C3%A9es
+
+Neural networks: https://en.wikipedia.org/wiki/Neural_network
+
+AI winter: https://en.wikipedia.org/wiki/AI_winter
+
+Bjarne Stroustrup: https://en.wikipedia.org/wiki/Bjarne_Stroustrup
+
+Christopher's "Morph C++ into Javascript" HN post: https://news.ycombinator.com/item?id=2478751
+
+Facebook Engineering Bootcamp: https://engineering.fb.com/2009/11/19/production-engineering/facebook-engineering-bootcamp
+
+Face.com acquisition: https://techcrunch.com/2012/06/18/facebook-scoops-up-face-com-for-100m-to-bolster-its-facial-recognition-tech
+
+Blog post describing AI-enabled face tagging feature: https://blog.vjeux.com/2012/facebook/project-tagging-improvement-using-face-detection.html
+
+React: https://reactjs.org
+
+Jordan Walke: https://twitter.com/jordwalke
+
+jQuery: https://en.wikipedia.org/wiki/JQuery
+
+Cassandra: https://en.wikipedia.org/wiki/Apache_Cassandra
+
+React HN launch post: https://news.ycombinator.com/item?id=5789055
+
+JSX: https://reactjs.org/docs/introducing-jsx.html
+
+Jim/Jeb Sloan? (23:32)
+
+David Nolen: https://github.com/swannodette
+
+Weekly React roundup: https://reactjs.org/blog/2013/06/12/community-roundup.html
+
+Thinking in React: https://reactjs.org/docs/thinking-in-react.html
+
+React Native: https://reactnative.dev
+
+Ashwin Bharambe: https://www.crunchbase.com/person/ashwin-bharambe
+
+Lin He
+
+React Native hackathon: https://www.techaheadcorp.com/blog/history-of-react-native
+
+React Native at Instagram: https://instagram-engineering.com/react-native-at-instagram-dd828a9a90c7
+
+Who's using React Native: https://reactnative.dev/showcase
+
+Facebook Marketplace: https://www.facebook.com/marketplace
+
+Excalidraw: https://excalidraw.com, https://github.com/excalidraw/excalidraw
+
+Zwibbler: https://zwibbler.com
+
+Code Sandbox: https://codesandbox.io
+
+Rough.js: https://roughjs.com
+
+Google Draw: https://docs.google.com/drawings
+
+Excalidraw+: https://blog.excalidraw.com/introducing-excalidraw-plus
+
+David Luzar: https://github.com/dwelle, https://twitter.com/dluzar
+
+Milos Vete: https://twitter.com/milosvete
+
+Casting Lines blog post: https://blog.vjeux.com/2021/analysis/casting-lines%EF%BB%BF.html
+
+Yoga: https://yogalayout.com
+
+Emil Sjölander: https://github.com/emilsjolander, https://twitter.com/emilsjolander
+
+CSS-in-JS: https://cssinjs.org
+
+<!-- END SHOW NOTES -->
+
+<!-- START TRANSCRIPT -->
+
+<!-- END TRANSCRIPT -->
