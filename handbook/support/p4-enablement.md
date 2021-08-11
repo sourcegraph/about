@@ -70,9 +70,15 @@ Map:    support-tools/...
 
 Once a depot is created on the server, we can start to add files from our local client to it.
 
-### Create a client
+While this new depot has been created, you still need to add it to "client/workspace" and have perforce track it.
+The easiest way to do this is in the `p4v` UI. Go to **Connection > Edit Current Workspace > Right-click on the depot you just created > Include Tree**.
 
-Perforce is different than git in that it utilizes a concept called client workspaces. This is a subset of files on your machine that mirrors files on the Perforce server. The `p4 client <name>` command will open a client spec file with an editor specified by the `P4EDITOR` env variable. Below is an example:
+You may see a warning about no files. Create a basic text file then run:
+`p4 add init-file.txt` then run `p4 submit -d "initial commit"`.
+
+### Create a client (workspace)
+
+Perforce is different than git in that it utilizes a concept called clients (or more recently, workspaces). This is a subset of files on your machine that mirrors files on the Perforce server. The `p4 client <name>` command will open a client spec file with an editor specified by the `P4EDITOR` env variable. Below is an example:
 
 ```
 Client: warren
@@ -155,6 +161,10 @@ Our [documentation](https://docs.sourcegraph.com/admin/repo/perforce) covers the
 
 To learn more about general p4 commands checkout this resource:
 [https://www.perforce.com/perforce/doc.973/cmdguide/html/quicksta.htm](https://www.perforce.com/perforce/doc.973/cmdguide/html/quicksta.htm)
+
+### Helpful p4 flags
+
+You can use `-c` in commands like `p4 add` to specify the client.
 
 # Local Perforce server
 
