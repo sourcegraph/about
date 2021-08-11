@@ -2,7 +2,7 @@
 
 ### Welcome to product design at Sourcegraph!
 
-The product design team exists to increase the value Sourcegraph delivers to its users.  We acheive this objective through thoughtful discovery, inspired design, careful validation, and close collaboration with all manner of roles throughout the company. 
+The product design team exists to increase the value Sourcegraph delivers to its users.  We achieve this objective through thoughtful discovery, inspired design, careful validation, and close collaboration with all manner of roles throughout the company. 
 
 We also seek to make it easier and more efficient to build Sourcegraph itself. Through the artifacts of our open process, we provide a forum where anyone in the company can provide valuable input that improves a project's outcome before a single line of code is written.
 
