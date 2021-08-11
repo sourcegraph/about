@@ -1,4 +1,4 @@
-## Modern Health
+# Modern Health
 
 Sourcegraph offers an Employee Assistance Program to all team members via [Modern Health](https://www.joinmodernhealth.com/). Modern Health provides technology and professional support to help reduce stress, feel more engaged, and be happier. Through Sourcegraph, you have access to 10 coaching sessions and 10 therapy sessions at no cost to you as well as 100+ digital programs & mediations and unlimited live provider-led group sessions or circles. You will also have the ability to give individual access to the Modern Health platform for up to 3 dependents.
 
@@ -45,7 +45,7 @@ Based on our Sourcegraph plan with Modern Health, you and 3 of your dependents h
 
 ### Are my dependents eligible?
 
-Yes, coverage for dependents is included in your benefit.
+Yes, coverage for up to 3 dependents is included in your benefit.
 
 Dependents have the following complimentary sessions: 10 coaching sessions and 10 therapy sessions which they will receive separately from your reserved sessions.  
   
