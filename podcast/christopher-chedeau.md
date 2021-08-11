@@ -21,7 +21,7 @@ Beyang Liu
 On the eve of the pandemic, Christopher Chedeau was procrastinating performance reviews at Facebook and decided to hack together a simple drawing app. That weekend project became Excalidraw, an open-source virtual whiteboard so popular that its users have basically demanded a startup form around it so that they can bring it to work. Christopher tells the backstory of Excalidraw's meteoric rise, as well as his story of joining Facebook and coming to America, and tales from the early days of React and how React Native was born.
 <!--END SUMMARY -->
 
-<!-- START SHOW NOTES -->
+<!-- START SHOWNOTES -->
 
 Warcraft III World Editor: https://en.wikipedia.org/wiki/Warcraft_III_World_Editor
 
@@ -101,7 +101,7 @@ Emil Sjölander: https://github.com/emilsjolander, https://twitter.com/emilsjola
 
 CSS-in-JS: https://cssinjs.org
 
-<!-- END SHOW NOTES -->
+<!-- END SHOWNOTES -->
 
 <!-- START TRANSCRIPT -->
 
