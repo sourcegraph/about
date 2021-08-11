@@ -211,7 +211,10 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
             <div className="card-body pt-3 text-center d-flex flex-column align-items-center">
                 {button}
                 {isFree ? <span className="w-100">{button2}</span> : null}
-                <div className="mt-4 mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
+                {isFree
+                    ? <div className="mt-3 mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
+                    : <div className="mt-4 mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
+                }
                 {planProperties}
             </div>
             <ol className="pricing-plan__features list-group list-group-flush py-3">

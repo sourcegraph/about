@@ -91,7 +91,7 @@ export default ((props: any) => (
                                             Self-hosted or cloud deployment
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            Community support on our public issue tracker<br />&nbsp;
+                                            Community support on our public issue tracker
                                         </PricingPlanProperty>
                                     </>
                                 }
@@ -121,7 +121,7 @@ export default ((props: any) => (
                                             Self-hosted or managed instance
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            SLA with dedicated customer engineer<br />and private Slack channel
+                                            SLA with dedicated customer engineer<br />and private Slack channel<br />&nbsp;
                                         </PricingPlanProperty>
                                     </>
                                 }

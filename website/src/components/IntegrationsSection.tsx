@@ -63,7 +63,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">Open source repos</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">500,000+ repositories</code>
+                        <code className="border rounded px-1">1,000,000+ repositories</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Any combo of these</code>
