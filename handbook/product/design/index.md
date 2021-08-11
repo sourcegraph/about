@@ -1,13 +1,20 @@
 # Product design
 
-(High-level overview about the product design team is coming soon!)
+### Welcome to product design at Sourcegraph!
+
+The product design team exists to increase the value Sourcegraph delivers to its users.  We acheive this objective through thoughtful discovery, inspired design, careful validation, and close collaboration with all manner of roles throughout the company. 
+
+We also seek to make it easier and more efficient to build Sourcegraph itself. Through the artifacts of our open process, we provide a forum where anyone in the company can provide valuable input that improves a project's outcome before a single line of code is written.
 
 ## Team
 
 - [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) (she/her)
-- [Rob Rhyne](../../company/team/index.md#rob-rhyne)
+- [Rob Rhyne](../../company/team/index.md#rob-rhyne) (he/him)
 - [Quinn Keast](../../company/team/index.md#quinn-keast-he-him) (he/him) – [ReadMe](https://quinnkeast.com/readme)
 - S.L. (joining in August)
+
+
+<img width="30%" height="30%" src="design-team-logo.jpg" alt="Sourcegraph Design team logo">
 
 We’re hiring! [Check out our open roles](https://boards.greenhouse.io/sourcegraph91).
 
