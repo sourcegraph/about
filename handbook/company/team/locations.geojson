@@ -1055,6 +1055,19 @@
           37.79099803764377
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+      "name": "Elzanne Wentzel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.87518310546875,
+          52.35715118125809
+        ]
+      }
     }
   ]
 }
