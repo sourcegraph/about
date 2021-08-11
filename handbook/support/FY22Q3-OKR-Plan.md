@@ -2,13 +2,13 @@
 
 In support of our product/engineering Q3 objective to *Make cloud and enterprise successful at massive scale*, one way we will measure our success in achieving this goal is for the **Customer Support team to maintain 100% support issue resolution within 7 days while only requiring help (filing a #rfh Github issue) on 10% (measured during last month of quarter)**. To accomplish this, we will…
 
-|#|Status|Responsible|Task|
+|#|Status|Responsible|Project|
 |---|---|---|---|
 |1|In-progress|Warren|Add `src debug` command to `src-cli`|
 |2|In-progress|All CSEs|Make at least 45 doc updates/additions across the team|
 |3|In-progress|Giselle|Retro all Q2 tickets that resulted in a #rfh for Distribution and Core App|
 |4|Not started|Adeola|Create cheat sheets of what logs are most needed in certain situations|
-|5|Not started|Beatrix|Make the [command generator](https://sourcegraph.github.io/support-tools/command-generator/beta/) customer-facing|
+|5|In-progress|Beatrix|Make the [command generator](https://sourcegraph.github.io/support-tools/command-generator/beta/) customer-facing and scalable|
 |6|Not started|Michael|Create database type solution to make it easy and reliable for CSEs to learn from past tickets|
 |7|Not started|Alex|Streamline key steps in CSE workflow|
 |8|In-progress|Carl|5 folks complete kubernetes certification|
@@ -22,19 +22,24 @@ In support of our product/engineering Q3 objective to *Make cloud and enterprise
 
 ### 2 Doc updates
 * Workgroup: All CSEs
+* Slack Channel: #wg-cse-tools
 * Details: Make at least 45 doc updates/additions across the team. These can be tied to cases or not. If not, be sure to link to the PR here:
 	* 
 
 ### 3 Retro key Q2 tickets
 * Workgroup: Giselle, Gabe, Alex
+* Channel: [#wg-q2-ticket-retro](https://sourcegraph.slack.com/archives/C02A8B3CEH1)
 * Details: The goal is to see what we can change within CS and/or if we have requests of any other teams
-  * Go through [sourcegraph/customer](https://github.com/sourcegraph/customer/issues) April 30 - ? `is:issue created:2021-04-30..2021-08-04 label:rfh` (double check the end date here) 
+  * Go through [sourcegraph/customer](https://github.com/sourcegraph/customer/issues) May 1, 2021 - July 31, 2021
+  * [Working notes document](https://docs.google.com/document/d/1cxjPXLxtwZ_TXy66Dv0fl-E96ko3WsY5ERVn9nXyNL0/edit)
+  * [Working sheets document](https://docs.google.com/spreadsheets/d/1Gmsa-ZgIsiXj6feXVl2rlepoQf8GEM-5H3tGMxersdY/edit#gid=0)
 
 ### 4 What logs, when cheat sheets
 * Workgroup: Adeola, Amber, Stompy
 
 ### 5 Command generator
 * Workgroup: Beatrix, Jason, Stompy, Adeola, Mariam, Kelvin
+* Details: Make the [command generator](https://sourcegraph.github.io/support-tools/command-generator/beta/) customer-facing and scalable. The goal is to develop a tool that can be later expanded to another tool seamlessly. 
 
 ### 6 CSE "database"
 * Workgroup: Michael, Jason, Ben, Gabe, Warren, Don
