@@ -18,7 +18,7 @@ We also seek to make it easier and more efficient to build Sourcegraph itself. T
 
 We’re hiring! [Check out our open roles](https://boards.greenhouse.io/sourcegraph91).
 
-## Defining success
+## Design team ethos
 
 We know that we’re successful as a design team when we…
 
