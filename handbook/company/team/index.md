@@ -1213,3 +1213,10 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [yink@sourcegraph.com](mailto:yink@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/yinquanteo/), [@yinquanteo](https://twitter.com/yinquanteo), [GitHub](https://github.com/yinquanteo)
 - Start date: 2021-08-03
 - Yink is a Singapore🇸🇬 native and lives in San Francisco with his wife and [cat](http://instagram.com/maotheexplorer). He occassionally works on the road in his campervan. Before Sourcegraph, Yink held leadership roles at big and small tech companies and the Singapore military. Most recently, he led a product infrastructure org in Twitter Ads where he joined via an acquisition. He loves putting on sunblock to wakeboard, paddleboard, or kiteboard. If you come visit, he will probably make you a chirashi-don and matcha crème brûlée. Just bring some good 🍶/🍷/🧋. He dreams of the day Arsenal Football Club winning the Premier League. Yink has a B.S. in Electrical and Computer Engineering from Duke University.
+
+## Elzanne Wentzel (she/her)
+- Customer Engineer 
+- Amsterdam, The Netherlands 🇳🇱
+- GitHub:[elzannewentzel](https://github.com/elzannewentzel)
+- [elzanne.wentzel@sourcegraph.com](mailto:elzanne.wentzel@sourcegraph.com)
+- Elzanne grew up in the winelands of Paarl and studied Digital Design in Cape Town. After a 2 year stint as a designer she taught herself to code ActionScript and never looked back. She crafted her development skills over the next 15 years at Stonewall+, Saatchi & Saatchi @Play and Quirk and then decided to join the land of cyclists and no mountains to pursue a career as Product Owner at Lobster Ink, an online learning company. She loves that Sourcegraph gives her the oppurtunity to combine all her skills! She also adores her cats and plants, enjoys a good thriller, loves arts and crafts and exploring the world with her partner. 
