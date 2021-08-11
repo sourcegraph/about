@@ -91,7 +91,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         <div className="card pt-0" style={{ background: "url('/customers-page-bg.svg') no-repeat" }}>
                             <strong className="card-header border-0 pb-0">Want to use Sourcegraph at work?</strong>
                             <p className="card-body mb-0 pt-1">
-                                <a href="https://sourcegraph.com/search" title="Try Sourcegraph now">Use it free</a> for up to 10 developers. To get your company
+                                <a href="#get-started" title="Try Sourcegraph now">Use it free</a> for up to 10 developers. To get your company
                                 to upgrade to a <Link to="/pricing">paid plan</Link>, see the{' '}
                                 <Link to="/customers">customers page</Link> (to make the case). Or{' '}
                                 <a href="/contact/request-info">schedule time with us</a> for help.
