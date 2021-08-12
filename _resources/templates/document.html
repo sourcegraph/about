@@ -41,7 +41,15 @@
 {{end}}
 
 {{define "index"}}
-	{{with (or (and (eq (len .Doc.Tree) 1) (index .Doc.Tree 0).Children) .Doc.Tree)}}
+	{{/* If the tree has exactly one element, we'll go down one level to use its children for the page index. */}}
+	{{$tree := .Doc.Tree}}
+	{{if (eq (len .Doc.Tree) 1)}}
+		{{if (index .Doc.Tree 0).Children}}
+			{{$tree = .Doc.Tree}}
+		{{end}}
+	{{end}}
+
+	{{with $tree}}
 		<h4 class="visible-sm">{{$.Doc.Title}}</h4>
 		<h4 class="visible-lg">On this page:</h4>
 		<ul>{{template "doc_nav" .}}</ul>
