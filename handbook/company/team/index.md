@@ -1222,3 +1222,28 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/milan-freml)
 - Name pronounciation - almost the same as the city in Italy
 - Milan lives in a [small town](https://goo.gl/maps/vRzGwscRW66tsNdr6) in Slovakia with his wife and 2 small kids. He spent 4 years in Dublin, Ireland, where they have nice beer and whiskey, but he was not enjoying the rain much. Milan previously worked in Auth0 as a senior full stack engineer and before that in AWS in a similar role. He loves reading books 📚 (nowadays mostly science fiction and fantasy), cycling 🚲 (when it's not raining), traveling 🌄. He also cooks 👨‍🍳 and bakes bread and when kids allow, also drinks some 🍺 and plays some 🎮. He's also building his house 🏠
+
+## David Rohnow (he/him)
+- Sr. Customer Engineer
+- San Diego, CA USA 🇺🇸
+- Github: (https://github.com/zrnh)
+- [Linkedin](https://www.linkedin.com/in/davidrohnow/)
+- [david.rohnow@sourcegraph.com](mailto:david.rohnow@sourcegraph.com)
+- Start date: 2021-08-03
+- David lives in San Diego with his Wife, Grace, and their three sons (Nathan, Cooper, and Fin).  David has carved out a twenty-five year career in the technology industry operating in various IT operational roles and over the last eleven years in either pre or post-sales roles for value-added-resellers and technology manufacturers.  David's passion is helping organizations "operate at the speed of business".  When David is not working he is tinkering in his home  lab working on some project, cycling around the greater San Diego area, or watching one of his three sons play soccer.
+
+
+## Scott Bailey (he/him)
+
+- Technical Content Marketing Manager
+- Raleigh, NC, USA 🇺🇸
+- GitHub: [csbailey5t](https://github.com/csbailey5t)
+- [scott.bailey@sourcegraph.com](mailto:scott.bailey@sourcegraph.com), [Twitter](https://twitter.com/csbailey5t), [LinkedIn](https://www.linkedin.com/in/scott-bailey-b04822175/)
+- Scott lives with his wife, son, and two senior dogs in Raleigh. He's lived on both coasts of the United States, and previously worked in academic research libraries, teaching and coding at the intersection of data science and the digital humanities. He loves to cook, try new hot sauces, read philosophy, and go out swing dancing. 
+
+## Ellie Dawson (she/her)
+- Sales Development Representative
+- Cincinnati, OH, USA  
+- Github: [elliedawson](https://github.com/elliedawson)
+- [ellie.dawson@sourcegraph.com](mailto:ellie.dawson@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/elliefathman/)
+- Ellie lives in Cincinnati, OH with her husband, Chase. After graduating from the University of Cincinnati, Ellie spent time as a technical recruiter working across a variety of skill sets. When she's not working, you can find her checking out the local restaurant scene, cycling and working out, reading, and playing with her pup, Holly!

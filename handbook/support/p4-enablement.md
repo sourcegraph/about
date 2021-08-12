@@ -11,10 +11,10 @@ Perforce is a version control system like Git, subversion, or mercurial. While g
 ```
     # .zshrc or .bashrc
 
-    P4PORT=perforce.sgdev.org:1666 # This points the p4 cli at the dogfood server
-    P4USER=admin                   # sets your user
-    P4PASSWD=<session ticket>      # optional, see details below, doesn't require string quotes
-    P4EDITOR=/usr/bin/vim          # specifies the editor opened by some p4 commands
+    export P4PORT=perforce.sgdev.org:1666 # This points the p4 cli at the dogfood server
+    export P4USER=admin                   # sets your user
+    export P4PASSWD=<session ticket>      # optional, see details below, doesn't require string quotes
+    export P4EDITOR=/usr/bin/vim          # specifies the editor opened by some p4 commands
 
 ```
 
@@ -147,7 +147,7 @@ Finally run `p4 submit` to load the files to the depo on the server.
 
 ### Configuring Sourcegraph to sync dogfood depots
 
-Our [documentation](https://docs.sourcegraph.com/admin/repo/perforce) covers the requirements to sync to Sourcegraph, however for convienience it should be noted we have a user called `buildkite` on our dogfood instance who session ticket will not expire. To generate the ticket for this account reference our shared [1Password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/lajspc6a5valfbsh3whpcb5bp4).
+Our [documentation](https://docs.sourcegraph.com/admin/repo/perforce) covers the requirements to sync to Sourcegraph, however for convienience it should be noted we have a user called `buildkite` on our dogfood instance whose session ticket will not expire. To generate the ticket for this account reference our shared [1Password](https://team-sourcegraph.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/lajspc6a5valfbsh3whpcb5bp4).
 
 To learn more about general p4 commands checkout this resource:
 [https://www.perforce.com/perforce/doc.973/cmdguide/html/quicksta.htm](https://www.perforce.com/perforce/doc.973/cmdguide/html/quicksta.htm)

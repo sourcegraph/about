@@ -18,11 +18,11 @@ A healthy mind and body is imperative to doing your best work and living a healt
 
 ### 👪 Family planning support
 
-We value and support teammates at all stages of life. We provide 16 weeks of paid parental leave for all new parents (details depend on location), in addition to any pregnancy-related disability leave, and a reimbursement of up to $25,000 USD for fertility services (including but not limited to IVF, egg/sperm freezing, surrogacy).
+We value and support teammates at all stages of life. We provide 16 weeks of paid parental leave for all new parents (details depend on location), in addition to any pregnancy-related disability leave, and a reimbursement of up to $25,000 USD for fertility services (including but not limited to IVF, egg/sperm freezing, surrogacy, fertility hormone testing).
 
 ### 📚 Professional development
 
-In addition to on-the-job training, we offer a $1,000 yearly stipend for education (e.g., classes, books, conferences, etc.). We also hold detailed, twice annual 360 degree [review and feedback cycles](review-cycles/index.md) for the entire team.
+In addition to on-the-job training, we offer a $1,000 yearly stipend for educational opportunities (such as courses, extended education, books, conferences, etc.). We also hold detailed, twice annual 360 degree [review and feedback cycles](review-cycles/index.md) for all teammates.
 
 ### ✈️ Travel
 
@@ -38,6 +38,9 @@ Your paycheck automatically includes a fixed reimbursement for $75 of mobile pho
 
 ### 🎧  Desk set-up 
 We want to ensure all teammates have a workspace that will make them comfortable and productive, so we offer a $2,000 [desk set-up budget](https://about.sourcegraph.com/handbook/people-ops/spending-company-money#desk-set-up) for all full-time teammates to provide them with any necessary equipment to make that possible.
+
+### 🏢 Co-working/office space 
+We understand that a designated work space can aid with productivity. We offer a $300-500 [monthly budget](https://about.sourcegraph.com/handbook/people-ops/spending-company-money#recurring-expenses) for renting a co-working space, including parking.
 
 ### 🚚 Moving
 
