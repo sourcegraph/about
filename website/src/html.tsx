@@ -20,6 +20,10 @@ export default class HTML extends React.Component<HtmlProps> {
                 <head>
                     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NV75KPZ"></script>
                     {this.props.headComponents}
+                    
+                    {/* So that Triblio (and other third-party scripts) can read the full URL. More details here: https://learning.triblio.com/article/212-understanding-site-referrer-policy */}
+                    <meta name="referrer" content="no-referrer-when-downgrade">
+
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
