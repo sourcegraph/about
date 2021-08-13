@@ -622,7 +622,7 @@ To add yourself to this page:
 - Jon aka Kish currently lives in San Francisco with his wife Lauren. He’s spent the last 14 years working in small to mid-size start-ups, helping them build their Enterprise GTM. Life outside of work is focused on family, good food, and staying active.
 
 ## Dudley Nostrand
-- Senior Manager, Value Engineering
+- Senior Manager, Value Engineering & Sales Enablement
 - Hamilton, Massachusetts USA
 - GitHub: [dnostrand](https://github.com/dnostrand)
 - dudley@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/dudleynostrand/)
