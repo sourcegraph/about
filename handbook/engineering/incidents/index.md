@@ -45,7 +45,7 @@ We currently have 3 severity levels:
 
 The goal of triage is to either quickly resolve the incident using basic procedures, or quickly identify the right owner.
 
-1. **Thank** the person who identified the indicident.
+1. **Thank** the person who identified the incident.
 1. **Acknowledge ownership** of the incident in the relevant Slack thread in the #dev-ops channel (i.e. "I'm on it").
 1. Attempt to resolve the incident by rolling back to a known good state instead of trying to identify and fix the exact issue. **Communicate your intentions in the incident chatroom.**
    - [Rollback sourcegraph.com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com/blob/release/README.info.md#how-to-rollback-sourcegraphcom)
@@ -66,7 +66,7 @@ The goal of triage is to either quickly resolve the incident using basic procedu
 
 The indicent lead is responsible for resolving the incident as quickly and safely as possible. They are the DRI coordinating the incident, tasked with driving it to resolution and ensuring clear internal and external communication with stalkholders and customers.
 
-1. **Thank** the person who identified the indicident.
+1. **Thank** the person who identified the incident.
 1. **Acknowledge ownership** of the incident in the relevant incident chatroom (i.e. "I'm on it").
 1. **Communicate** intended next steps (e.g. "I plan to...") and keep the incident status and summary up to date (e.g. "We tried ... which resulted in ...") in the incident chat room.
 
