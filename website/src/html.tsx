@@ -20,6 +20,10 @@ export default class HTML extends React.Component<HtmlProps> {
                 <head>
                     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NV75KPZ"></script>
                     {this.props.headComponents}
+                    
+                    {/* So that Triblio (and other third-party scripts) can read the full URL. More details here: https://learning.triblio.com/article/212-understanding-site-referrer-policy */}
+                    <meta name="referrer" content="no-referrer-when-downgrade" />
+
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,12 +38,12 @@ export default class HTML extends React.Component<HtmlProps> {
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
                     />
 
-                    {/* Adobe Soruce Sans Pro Fonts */}
+                    {/* Adobe Source Sans Pro Fonts */}
                     <link rel="stylesheet" href="https://use.typekit.net/ngk3rlb.css"/>
 
                     <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
                     
-                    {/* Add Triblio "Webpage Personalization Script" to support Sales/Markting goals */}
+                    {/* Add Triblio "Webpage Personalization Script" for Sales/Marketing */}
                     <script type='text/javascript' data-cfasync='false' src='https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8'></script>
 
                     <script data-cookieconsent="ignore" dangerouslySetInnerHTML={{
@@ -83,14 +87,14 @@ export default class HTML extends React.Component<HtmlProps> {
 
                 </head>
                 <body>
-                    {/*   Google Tag Manager (noscript) */}
+                    {/* Google Tag Manager (noscript) */}
                     <style dangerouslySetInnerHTML={{ __html: `.gtm-hide { display:none;visibility:hidden" 0 !important}` }} />
                     <noscript>
                         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB4NLS7" className="gtm-hide" height="0" width="0"></iframe>
                     </noscript>
                     {/*  End Google Tag Manager (noscript) */}
 
-                    {/* Add Triblio "Analytics and Overlay Cards script" to support Sales/Markting goals */}
+                    {/* Add Triblio "Analytics and Overlay Cards script" for Sales/Marketing */}
                     <script type='text/javascript' data-cfasync='false' src='https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8'></script>
 
                     <div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
