@@ -6,7 +6,7 @@ Async simply means that work doesn’t happen at the same time for everyone. Asy
 
 **Videos**
 
-- [Why async?](https://drive.google.com/file/d/16N4cfAKaKL0ynxRzzJ3FW3AegPCkosMK/view?usp=sharing).
+- [Why async?](https://drive.google.com/file/d/16N4cfAKaKL0ynxRzzJ3FW3AegPCkosMK/view?usp=sharing)
 - [How to work asynchronously](https://drive.google.com/file/d/1Uo0PPxT5EjuBJz9t6rHT__SeVh9VLPKo/view?usp=sharing)
 - [Tips for working async at Sourcegraph](https://drive.google.com/file/d/16tUvJXGlSm1gOA3B6vwXxl-BGMqvBpm_/view?usp=sharing)
 
@@ -79,6 +79,7 @@ One of the hardest things about async work is to be sure everyone who’s affect
 Use multimodal communication: Slack is busy and sometimes people miss meetings. If there’s something important to share, it’s better to default to over-communicating across multiple channels and platforms so that the message doesn’t slip through the cracks. For example, our new [PTO](https://about.sourcegraph.com/handbook/people-ops/submitting-time-off) policy was added to the handbook,  announced in the company meeting, the handbook page was shared in #general and #people-ops and managers were encouraged to share in team meetings or 1:1s to ensure everyone gets the message.  
 
 Get creative:
+
 - Experiment with different ways for async communication more often. It doesn't always have to be an RFC Google Doc. Sometimes, when you want to share high-level context, pitch an idea, etc, talking on video or giving a presentation can be the best, but that doesn't have to mean a synchronous meeting.
 - Record short videos with face cams (and captions) that don't need hours of production effort, we can create a little slide deck for such a video. 
 - Replace synchronous presentations with a recording, including slides and written context and provide a place where teammates can ask questions asynchronously. You can even include a time period for questions (for example: questions will be received and answered until Friday 4pm UTC)
@@ -97,7 +98,7 @@ You can also watch the video [here](https://drive.google.com/file/d/16tUvJXGlSm1
 - **Remove bias toward one time zone.** Use UTC to indicate time. Don’t expect everyone to know your timezone or convert theirs to yours. We use UTC to be as inclusive as possible.
 - **Provide context**. This takes time, but documentation is key. Hand off everything with as much context as possible so that your colleagues don’t need any more input for the next ~12+ hours. Are you working collaboratively with someone who wakes up in ~9 hours? Make it clear to them what you're missing, what you’ve done, what you haven’t and why. It doesn’t have to be extensive and detailed, it just needs to have the information the other person will need for them to collaborate with you and continue with their work. You can add a note that says for example: “I like your work! I added this section and suggested some changes here. I didn’t include xxx because of what we talked about in this thread _[link to thread]_ last week.”
 - **Over communicate**. Be detailed in how you explain your work to others. Also consider these:
-    - Don’t use acronyms: not everyone knows what they mean and not everyone is a native English speaker
+    - Don’t use acronyms: not everyone knows what they mean and not everyone speaks English as a first language
     - Include images and screenshots to complement your explanations
     - Always use exact days of the week (YYYY-MM-DD), times, and UTC timezone when mentioning dates
     - Make reference and link to related discussions as much as possible
@@ -121,7 +122,7 @@ Each team should also have a section to explain how they do x, y and z asyncly. 
 
 ## How to choose sync vs async?
 
-<img width="60%" height="60%" src="onepager-async.jpg">
+<img width="60%" height="60%" src="onepager-async.svg">
 
 Synchronous meetings are best for bonding and feeling connected to your teammates (even beyond your immediate team), sensitive discussions that are more likely to be emotionally sensitive, and fast decision making when speed necessarily outweighs the benefit of having marginal time/thoughtfulness. Our teammates generally simply enjoy synchronous meetings because they get to spend some quality time with the people they work with. 
 
