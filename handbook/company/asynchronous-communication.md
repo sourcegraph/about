@@ -122,7 +122,7 @@ Each team should also have a section to explain how they do x, y and z asyncly. 
 
 ## How to choose sync vs async?
 
-<img width="60%" height="60%" src="onepager-async.jpg">
+<img width="60%" height="60%" src="onepager-async.svg">
 
 Synchronous meetings are best for bonding and feeling connected to your teammates (even beyond your immediate team), sensitive discussions that are more likely to be emotionally sensitive, and fast decision making when speed necessarily outweighs the benefit of having marginal time/thoughtfulness. Our teammates generally simply enjoy synchronous meetings because they get to spend some quality time with the people they work with. 
 
