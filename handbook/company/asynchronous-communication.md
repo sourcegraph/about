@@ -6,7 +6,7 @@ Async simply means that work doesn’t happen at the same time for everyone. Asy
 
 **Videos**
 
-- [Why async?](https://drive.google.com/file/d/16N4cfAKaKL0ynxRzzJ3FW3AegPCkosMK/view?usp=sharing).
+- [Why async?](https://drive.google.com/file/d/16N4cfAKaKL0ynxRzzJ3FW3AegPCkosMK/view?usp=sharing)
 - [How to work asynchronously](https://drive.google.com/file/d/1Uo0PPxT5EjuBJz9t6rHT__SeVh9VLPKo/view?usp=sharing)
 - [Tips for working async at Sourcegraph](https://drive.google.com/file/d/16tUvJXGlSm1gOA3B6vwXxl-BGMqvBpm_/view?usp=sharing)
 
