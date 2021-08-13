@@ -12,7 +12,7 @@ Some examples of incidents:
 
 This document describes how we deal with operational incidents.
 
-<iframe src="https://drive.google.com/file/d/1kTZ-_N1ulx9Kf0vZyn5BWTrtipbvN9jH/preview" width="640" height="480"></iframe>
+<a href="https://drive.google.com/file/d/1kTZ-_N1ulx9Kf0vZyn5BWTrtipbvN9jH/preview"><img src="incident-flow-chart.png" alt="Incident flow chart"></a>
 
 ## Process
 
@@ -32,7 +32,7 @@ The first Sourcegraph teammate (regardless of their role) that becomes aware of 
      - You can find out who is on-call by typing `/genie whoisoncall` in Slack.
      - If you are not able to immediately get in contact with the on-call engineer, then manually create a new OpsGenie alert by typing `/genie <description of incident and link to Slack thread> with ops_team`.
    - Assign the Incident Lead in the incident chatroom with the following command `/incident lead @engineer`
- 
+
 ### Severity levels
 
 We currently have 3 severity levels:
@@ -40,10 +40,6 @@ We currently have 3 severity levels:
 1. **Critical** - Issues causing very high impact to customers. Immediate response is required. Examples include a full outage, or a data breach.
 2. **Major** - Issues causing significant impact. Immediate response is usually required. We might have some workarounds that mitigate the impact on customers. Examples include an important sub-system failing.
 3. **Minor** - Issues with low impact, which can usually be handled within working hours. Most customers are unlikely to notice any problems. Examples include a slight drop in application performance.
-
-### False positives
-
-Every incident is an opportunity for us to make Sourcegraph a higher quality product and to improve the processes that lead to or around an incident. Even if an incident turns out to be a false positive, we value that it was identified.
 
 ### Triage
 
@@ -78,6 +74,10 @@ The owner of the incident may delegate tasks to other available/working engineer
 
 If the issue can not be quickly resolved (via rollback or other means) and if it is a severe problem with sourcegraph.com, then create an issue on sourcegraph/sourcegraph and tweet from the Sourcegraph account (e.g. https://twitter.com/sourcegraph/status/1101603205203484672, https://twitter.com/sourcegraph/status/1101606401753792512, https://twitter.com/sourcegraph/status/1101621105620529153).
 
+### False positives
+
+Every incident is an opportunity for us to make Sourcegraph a higher quality product and to improve the processes that lead to or around an incident. Even if an incident turns out to be a false positive, we value that it was identified.
+
 ### Post-mortem
 
 After the incident is resolved:
@@ -89,9 +89,7 @@ After the incident is resolved:
 1. Create GitHub issues for any appropriate followup work.
 1. Schedule a [retrospective](../../retrospectives/index.md) if you think it would be valuable.
 
-## Situational incident resolution
-  
-### Go-to-market (license and subscription) issues
+## Go-to-market (license and subscription) issues
 
 If a customer is experiencing an issue related to their license key or subscription status, any member of the Sourcegraph team has authority to generate a new, valid license key for any customer for any number of users that is **valid for up to 7 days** in the [site-admin Subscriptions page on Sourcegraph.com](https://sourcegraph.com/site-admin/dotcom/product/subscriptions). This will prevent the initial incident responder from being bottlenecked on a member of the go-to-market team that can validate the customer's subscription status.
 
