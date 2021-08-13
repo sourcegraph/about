@@ -30,7 +30,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         href="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-overview.pdf"
                                         target="_blank"
                                     >
-                                        Sourcegraph overview (PDF)
+                                        Sourcegraph 1-pager
                                     </a>
                                 </li>
                                 <li className="nav-item">
@@ -39,6 +39,14 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         target="_blank"
                                     >
                                         Free stickers!
+                                    </a>
+                                </li>
+                                <li className="nav-item">
+                                    <a
+                                        href="https://sourcegraphstatus.com/"
+                                        target="_blank"
+                                    >
+                                        Status
                                     </a>
                                 </li>
                             </ul>
