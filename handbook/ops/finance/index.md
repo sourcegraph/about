@@ -121,6 +121,7 @@ Reach out to the [Finance team](#team) for an introduction if needed.
 
 ### Accounts Receivable
 - [AR Policy](https://docs.google.com/document/d/1tfAL68QSI-ZDqBIIALzY5tVcRk_B8jabpSSAyAK5iGk/edit)
+- [AR Policy] (ar)
 
 ### Fixed Assets
 - [Fixed Asset Policy](https://docs.google.com/document/d/155anVJgInRempR92LiiOwOIf2JJB5jj3b9ktrp8nznY/edit)
