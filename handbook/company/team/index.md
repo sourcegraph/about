@@ -1254,3 +1254,10 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Github: [elzannewentzel](https://github.com/elzannewentzel)
 - [elzanne.wentzel@sourcegraph.com](mailto:elzanne.wentzel@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/l-zanne-wentzel/)
 - Elzanne grew up in the wine lands of Paarl and studied Digital Design in Cape Town. After a 2 year stint as a designer she taught herself to code ActionScript and never looked back. She crafted her development skills over the next 15 years at Stonewall+, Saatchi & Saatchi @Play and Quirk and then decided to join the land of cyclists and no mountains to pursue a career as Product Owner at Lobster Ink, an online learning company. She loves that Sourcegraph gives her the oppurtunity to combine all her skills! She also adores her cats and plants, enjoys a good thriller, loves arts and crafts and exploring the world with her partner. 
+
+## Prakash Durgani (he/him)
+- GM, EMEA and APJ
+- San Francisco🇱  
+- Github: [durgani](https://github.com/durgani)
+- [durgani@sourcegraph.com](mailto:durgani@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/durgani/)
+
