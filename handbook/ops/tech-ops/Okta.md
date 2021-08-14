@@ -84,3 +84,7 @@ If you are having problems with being asked for multiple MFA authentications dur
 For Okta help, setup, and integration questions: #it-tech-ops Slack channel or <tech-ops-admin@sourcegraph.com>
 
 ### Who are the Okta Super Admins?
+
+[Nate Tang](https://about.sourcegraph.com/handbook/company/team#nate-tang-he-him), Tech Ops, nate@sourcegraph.com
+
+[Nicky Van Maanen](https://about.sourcegraph.com/handbook/company/team#nicky-van-maanen-she-her), Tech Ops, nicky@sourcegraph.com
