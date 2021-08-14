@@ -1,3 +1,7 @@
+---
+ignoreDisconnectedPageCheck: true
+---
+
 # What is Okta?
 
 From the Okta website:
