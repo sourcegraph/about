@@ -1257,8 +1257,8 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 
 ## Ajay Sridhar (He/Him)
 
-- Customer Engineer
+- Senior Customer Engineer
 - London, UK 🇬🇧
-- GitHub: ajaynz
+- Github: [ajaynz](https://github.com/ajaynz)
 - [ajay.sridhar@sourcegraph.com](mailto:ajay.sridhar@sourcegraph.com), [LinkedIn](https://linkedin.com/in/ajaysridhar/)
 - Ajay lives in the UK with his wife and daughter, he came over to Sourcegraph from prior sales roles at Puppe. He loves everything sports and cars, in his spare time you will either find him at the gym or doing somethign fun outdoor.
