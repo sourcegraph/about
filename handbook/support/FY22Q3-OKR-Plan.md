@@ -7,13 +7,15 @@ In support of our product/engineering Q3 objective to *Make cloud and enterprise
 |1|In-progress|Warren|Add `src debug` command to `src-cli`|
 |2|In-progress|All CSEs|Make at least 45 doc updates/additions across the team|
 |3|In-progress|Giselle|Retro all Q2 tickets that resulted in a #rfh for Distribution and Core App|
-|4|Not started|Adeola|Create cheat sheets of what logs are most needed in certain situations|
+|4|In-progress|Adeola|Create cheat sheets of what logs are most needed in certain situations|
 |5|In-progress|Beatrix|Make the [command generator](https://sourcegraph.github.io/support-tools/command-generator/beta/) customer-facing and scalable|
 |6|Not started|Michael|Create database type solution to make it easy and reliable for CSEs to learn from past tickets|
 |7|Not started|Alex|Streamline key steps in CSE workflow|
 |8|In-progress|Carl|5 folks complete kubernetes certification|
 |9|Not started|Virginia|Implement retro practice for all tickets that take longer than 7 days to solve|
 |10|Not started|Virginia|Provide enablement in how to navigate difficult conversations with customers|
+|11|In-progress|Adeola|CSE Onboarding updates V3|
+
 
 ## Task details
 ### 1 `src debug` command to `src-cli`
@@ -36,6 +38,9 @@ In support of our product/engineering Q3 objective to *Make cloud and enterprise
 
 ### 4 What logs, when cheat sheets
 * Workgroup: Adeola, Amber, Stompy
+* Channel: [#wg-cse-debug](https://sourcegraph.slack.com/archives/C02AV535N6Q/p1628549418000200)
+* Details: Create a more simplified and streamlined troubleshooting process by outlining common customer issues and highlighting what services and logs are related to certain issues and generalizing initial troubleshooting steps.
+  * [Working notes document](https://docs.google.com/document/d/13S8OH7Rm3xmxE8ttm6EJMV4bsPWRdWdv17VnBvuThUs/edit)  
 
 ### 5 Command generator
 * Workgroup: Beatrix, Jason, Stompy, Adeola, Mariam, Kelvin
@@ -64,6 +69,11 @@ In support of our product/engineering Q3 objective to *Make cloud and enterprise
 * Workgroup: Virginia
 * Details: Provide enablement in how to navigate difficult conversations with customers (delivering hard to hear news, keeping calls productive and on time, etc)
 
+### 11 CSE Onboarding updates V3 
+* Workgroup: Adeola, TBD
+* Channel: [#wg-cse-onboarding](https://sourcegraph.slack.com/archives/C02B63GLKKL/p1628884183000300)
+* Details: Make additions or subtractions to CSE onboarding based on retros with all teammates. 
+  * [Working notes document](https://docs.google.com/document/d/1EJyXAk5PptGjZKtCK-4PHoxS_bMVHlEJmYF9v8wRTk8/edit#)  
 
 ## Progress update
 Progress update on how we are tracking toward our OKR to be provided 2021-08-27 and 2021-09-30

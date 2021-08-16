@@ -332,7 +332,7 @@ To add yourself to this page:
 - Product Manager
 - Barcelona, Spain 🇪🇸 / Buenos Aires, Argentina 🇦🇷
 - [maria@sourcegraph.com](mailto:maria@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/mariaanacraig), [macraig](https://github.com/macraig), [pronounce my name 🔊](https://www.youtube.com/watch?v=-uVQtRQ-Khw)
-- María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she cofounded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and lead the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer or videogames with friends, attending live music shows, and watching animated movies and musicals.
+- María spends lots of time listening to old rock bands and hugging every dog she can find. Prior to Sourcegraph, she co-founded an EdTech startup in Argentina with the mission of closing the gap between traditional education and tech. She later joined another startup and led the development of a real-time IoT predictive monitoring platform to help predict machine failure in industrial plants in Latin America. In her free time, María enjoys playing soccer and video games with friends, attending live music shows, and watching animated movies and musicals.
 
 ## Chris Surdi
 
@@ -1213,3 +1213,44 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - [yink@sourcegraph.com](mailto:yink@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/yinquanteo/), [@yinquanteo](https://twitter.com/yinquanteo), [GitHub](https://github.com/yinquanteo)
 - Start date: 2021-08-03
 - Yink is a Singapore🇸🇬 native and lives in San Francisco with his wife and [cat](http://instagram.com/maotheexplorer). He occassionally works on the road in his campervan. Before Sourcegraph, Yink held leadership roles at big and small tech companies and the Singapore military. Most recently, he led a product infrastructure org in Twitter Ads where he joined via an acquisition. He loves putting on sunblock to wakeboard, paddleboard, or kiteboard. If you come visit, he will probably make you a chirashi-don and matcha crème brûlée. Just bring some good 🍶/🍷/🧋. He dreams of the day Arsenal Football Club winning the Premier League. Yink has a B.S. in Electrical and Computer Engineering from Duke University.
+
+## Milan Freml (He/Him)
+
+- Software Engineer
+- Ružomberok, Žilinský, Slovakia 🇸🇰
+- GitHub: [kopancek](https://github.com/kopancek)
+- [you@sourcegraph.com](mailto:you@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/milan-freml)
+- Name pronounciation - almost the same as the city in Italy
+- Milan lives in a [small town](https://goo.gl/maps/vRzGwscRW66tsNdr6) in Slovakia with his wife and 2 small kids. He spent 4 years in Dublin, Ireland, where they have nice beer and whiskey, but he was not enjoying the rain much. Milan previously worked in Auth0 as a senior full stack engineer and before that in AWS in a similar role. He loves reading books 📚 (nowadays mostly science fiction and fantasy), cycling 🚲 (when it's not raining), traveling 🌄. He also cooks 👨‍🍳 and bakes bread and when kids allow, also drinks some 🍺 and plays some 🎮. He's also building his house 🏠
+
+## David Rohnow (he/him)
+- Sr. Customer Engineer
+- San Diego, CA USA 🇺🇸
+- Github: (https://github.com/zrnh)
+- [Linkedin](https://www.linkedin.com/in/davidrohnow/)
+- [david.rohnow@sourcegraph.com](mailto:david.rohnow@sourcegraph.com)
+- Start date: 2021-08-03
+- David lives in San Diego with his Wife, Grace, and their three sons (Nathan, Cooper, and Fin).  David has carved out a twenty-five year career in the technology industry operating in various IT operational roles and over the last eleven years in either pre or post-sales roles for value-added-resellers and technology manufacturers.  David's passion is helping organizations "operate at the speed of business".  When David is not working he is tinkering in his home  lab working on some project, cycling around the greater San Diego area, or watching one of his three sons play soccer.
+
+
+## Scott Bailey (he/him)
+
+- Technical Content Marketing Manager
+- Raleigh, NC, USA 🇺🇸
+- GitHub: [csbailey5t](https://github.com/csbailey5t)
+- [scott.bailey@sourcegraph.com](mailto:scott.bailey@sourcegraph.com), [Twitter](https://twitter.com/csbailey5t), [LinkedIn](https://www.linkedin.com/in/scott-bailey-b04822175/)
+- Scott lives with his wife, son, and two senior dogs in Raleigh. He's lived on both coasts of the United States, and previously worked in academic research libraries, teaching and coding at the intersection of data science and the digital humanities. He loves to cook, try new hot sauces, read philosophy, and go out swing dancing. 
+
+## Ellie Dawson (she/her)
+- Sales Development Representative
+- Cincinnati, OH, USA  
+- Github: [elliedawson](https://github.com/elliedawson)
+- [ellie.dawson@sourcegraph.com](mailto:ellie.dawson@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/elliefathman/)
+- Ellie lives in Cincinnati, OH with her husband, Chase. After graduating from the University of Cincinnati, Ellie spent time as a technical recruiter working across a variety of skill sets. When she's not working, you can find her checking out the local restaurant scene, cycling and working out, reading, and playing with her pup, Holly!
+
+## Elzanne Wentzel (she/her)
+- Customer Engineer
+- Amsterdam, The Netherlands 🇳🇱  
+- Github: [elzannewentzel](https://github.com/elzannewentzel)
+- [elzanne.wentzel@sourcegraph.com](mailto:elzanne.wentzel@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/l-zanne-wentzel/)
+- Elzanne grew up in the wine lands of Paarl and studied Digital Design in Cape Town. After a 2 year stint as a designer she taught herself to code ActionScript and never looked back. She crafted her development skills over the next 15 years at Stonewall+, Saatchi & Saatchi @Play and Quirk and then decided to join the land of cyclists and no mountains to pursue a career as Product Owner at Lobster Ink, an online learning company. She loves that Sourcegraph gives her the oppurtunity to combine all her skills! She also adores her cats and plants, enjoys a good thriller, loves arts and crafts and exploring the world with her partner. 
