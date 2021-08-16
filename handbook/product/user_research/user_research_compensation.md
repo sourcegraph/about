@@ -32,3 +32,4 @@ Whoever is the DRI for the research initiative is accountable for making sure th
 
 - [Sourcegraph User Research Compensation spreadsheet (internal only)](https://docs.google.com/spreadsheets/d/1lQDF8_1XX372FhSE8gsE_XstpGPXrJl5ZhkBanc8dgQ/edit#gid=1160735453)
 - [One-Page Research Plan Template](https://docs.google.com/document/d/1frKMZIT3rPjsvT5w5rkUahR7KiZA8KWTOjAlqIWKnP0/edit#)
+- [RFC 334: Compensation for user research participation](https://docs.google.com/document/d/1-2Mw2rE53Tb9bLaSui9CLMW6IIPaVp5Kt8zXdeVcjrE/edit)
