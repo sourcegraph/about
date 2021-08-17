@@ -5,6 +5,7 @@
   - [Check what version of Sourcegraph is deployed](#check-what-version-of-sourcegraph-is-deployed)
 - [Sourcegraph.com](#sourcegraphcom)
   - [Deploying to sourcegraph.com](#deploying-to-sourcegraphcom)
+    - [Deploying during a code freeze](#deploying-during-a-code-freeze)
   - [Rolling back sourcegraph.com](#rolling-back-sourcegraphcom)
   - [Backing up & restoring a Cloud SQL instance (production databases)](#backing-up--restoring-a-cloud-sql-instance-production-databases)
   - [Invalidating all user sessions](#invalidating-all-user-sessions)
@@ -43,6 +44,10 @@ Every commit to the `release` branch (the default branch) on [deploy-sourcegraph
 Deploys on sourcegraph.com are currently [handled by Renovate](#renovate). The [Renovate dashboard](https://app.renovatebot.com/dashboard#github/sourcegraph/deploy-sourcegraph-dot-com) shows logs for previous runs and allows you to predict when the next run will happen.
 
 If you want to expedite a deploy, you can manually create and merge a PR that updates the Docker image tags in [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com). You can find the desired Docker image tags by looking at the output of the Docker build step in [CI on sourcegraph/sourcegraph `main` branch](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=main) or by looking at [Docker Hub](https://hub.docker.com/u/sourcegraph/).
+
+### Deploying during a code freeze
+
+During a code freeze, [Renovate](#renovate) will be disabled and no automatic updates to Kubernetes manifests will be made. To deploy your changes, you can manually create and merge a PR that updates the Docker image tags in [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com). You can find the desired Docker image tags by looking at the output of the Docker build step in [CI on sourcegraph/sourcegraph `main` branch](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=main) or by looking at [Docker Hub](https://hub.docker.com/u/sourcegraph/)
 
 
 ### Rolling back sourcegraph.com
