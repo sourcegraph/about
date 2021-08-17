@@ -155,11 +155,6 @@ interface Props {
     buttonClassName: string
     buttonOnClick?: () => void
     buttonHref: string
-
-    button2Label: string
-    button2ClassName: string
-    button2OnClick?: () => void
-    button2Href: string
 }
 
 /**
@@ -179,11 +174,6 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
     buttonClassName,
     buttonOnClick,
     buttonHref,
-
-    button2Label,
-    button2ClassName,
-    button2OnClick,
-    button2Href,
 }) => {
     const button = (
         <a
@@ -195,26 +185,12 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
         </a>
     )
 
-    const button2 = (
-        <a
-            className={`pricing-plan__button btn ${buttonClassName} w-100 mx-auto my-0 mt-3 justify-content-center text-center d-flex`}
-            href={button2Href}
-            onClick={button2OnClick}
-        >
-            {button2Label}
-        </a>
-    )
-
     return (
         <div className={`pricing-plan card ${className}`}>
             <h2 className="card-title mt-3 mb-1 text-center pricing-plan__title">{name}</h2>
             <div className="card-body pt-3 text-center d-flex flex-column align-items-center">
                 {button}
-                {isFree ? <span className="w-100">{button2}</span> : null}
-                {isFree
-                    ? <div className="mt-3 mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
-                    : <div className="mt-4 mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
-                }
+                <div className="mt-4 mb-2 pb-2 pricing-plan__price text-muted">{price}</div>
                 {planProperties}
             </div>
             <ol className="pricing-plan__features list-group list-group-flush py-3">

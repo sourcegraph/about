@@ -17,7 +17,7 @@ const STARTER_FEATURES: Features = {
     batchChanges: false,
     codeHostIntegration: true,
     api: true,
-    selfHosted: false,
+    selfHosted: true,
     userAndAdminRoles: false,
     singleSignOn: false,
     multipleCodeHosts: false,
@@ -73,7 +73,7 @@ export default ((props: any) => (
             <div className="pricing-page mt-2">
                 <ContentSection className="hero-section text-center py-5">
                     <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
-                    <h2>Universal Code Search</h2>
+                    <h2>Self-hosted Universal Code Search</h2>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">
                     <div className="row pt-4">
@@ -85,25 +85,18 @@ export default ((props: any) => (
                                 planProperties={
                                     <>
                                         <PricingPlanProperty>
-                                            Up to 10 users self-hosted | 1 user on cloud
+                                            Up to 10 users
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            Self-hosted or cloud deployment
-                                        </PricingPlanProperty>
-                                        <PricingPlanProperty className="mt-3">
-                                            Community support on our public issue tracker
+                                            Community support on our public issue tracker<br />&nbsp;
                                         </PricingPlanProperty>
                                     </>
                                 }
                                 features={STARTER_FEATURES}
                                 isFree={true}
-                                buttonLabel="Deploy (self-hosted)"
+                                buttonLabel="Deploy"
                                 buttonClassName="btn-outline-primary"
                                 buttonHref="https://docs.sourcegraph.com#quickstart-guide"
-
-                                button2Label="Sign up (cloud)"
-                                button2ClassName="btn-outline-primary"
-                                button2Href="/code-search"
                             />
                         </div>
 
@@ -118,10 +111,7 @@ export default ((props: any) => (
                                             Unlimited users
                                         </PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            Self-hosted or managed instance
-                                        </PricingPlanProperty>
-                                        <PricingPlanProperty className="mt-3">
-                                            SLA with dedicated customer engineer<br />and private Slack channel<br />&nbsp;
+                                            SLA with dedicated customer engineer<br />and private Slack channel
                                         </PricingPlanProperty>
                                     </>
                                 }
@@ -157,10 +147,10 @@ export default ((props: any) => (
 
                                 <div className="row">
                                     <div className="col-md-6 mx-auto mb-4 pr-5">
-                                        If you have more than 10 users, you can upgrade to the Team plan for $150/month. This includes all of the features of the Free plan, plus:
+                                        If you have more than 10 users, you can upgrade to the Team plan. This includes all of the features of the Free plan, plus:
                                     </div>
                                     <div className="col-md-6 mx-auto mb-4 pl-6">
-                                        If you have more than 25 users or need enterprise functionality, check out the Enterprise plan.
+                                        If you have more than 25 users or need enterprise functionality, check out the Enterprise plan. Contact us to learn more about the team plan.
                                     </div>
                                 </div>
                                 <div className="row">
@@ -192,9 +182,9 @@ export default ((props: any) => (
                                     <div className="col-md-6 mx-auto mb-4 pl-6">
                                         <a
                                             className={`pricing-plan__button btn btn-outline-primary w-100 mx-auto my-0`}
-                                            href="https://sourcegraph.com/subscriptions/new"
+                                            href="https://info.sourcegraph.com/team-pricing"
                                         >
-                                            Create a team
+                                            Contact us
                                         </a>
                                     </div>
                                 </div>

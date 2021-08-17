@@ -254,7 +254,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">npm</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">sonarcube/sonarcloud</code>
+                        <code className="border rounded px-1">sonarcube</code>
                     </li>
                     <li className="d-block">
                         <a href="https://docs.sourcegraph.com/integration" className="small text-muted">

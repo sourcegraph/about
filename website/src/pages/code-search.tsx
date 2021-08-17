@@ -8,6 +8,7 @@ import { TrySourcegraph } from '../components/TrySourcegraph'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import GetStarted from '../components/GetStarted'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
     <Layout
@@ -27,18 +28,24 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                         <h1 className="display-2 font-weight-bold mb-0">Search your code.</h1>
                         <h1 className="display-2 font-weight-bold mb-0">All of it.</h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
-                            Onboard to a new codebase, find answers faster, and identify security risks with universal code search.
+                            Onboard to a new codebase, find answers faster, and identify security risks with universal code search. Search across all the repositories you work with.
                         </p>
-                        <a
-                            className="btn btn-primary mr-5"
-                            href="https://sourcegraph.com/search"
-                            title="Try Sourcegraph now"
-                        >
-                            Try Sourcegraph now
-                        </a>
-                        <Link className="btn btn-outline-primary" to="/contact/request-info/">
-                            Talk to a product specialist
-                        </Link>
+                        <div className="pt-1">
+                            <Link
+                                className="btn btn-primary"
+                                to="#get-started"
+                                title="Use this if you want to search your (or your company's) code, invite teammates, and try all the features."
+                            >
+                                Deploy locally <ArrowRightIcon className="ml-1" />
+                            </Link>
+                            <a
+                                className="btn btn-outline-primary m-3"
+                                href="https://sourcegraph.com/search"
+                                title="Use this if you want to search across top open source repositories (or add your own projects)."
+                            >
+                                Search open source <ArrowRightIcon className="ml-1" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,7 +58,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 ">
                     <iframe
                         className="embed-responsive-item"
-                        src="https://www.youtube-nocookie.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                        src="https://www.youtube.com/watch?v=M4zlcZJ2fOA"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
@@ -63,7 +70,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                     <ul className="list-spaced">
                         <li>
                             <strong>Universal.</strong> Point Sourcegraph at the repositories you work with, stored in any code host, 
-                            or search across the entire open source universe.
+                            or search across the open source universe.
                         </li>
                         <li>
                             <strong>Powerful.</strong> Get answers quickly with literal, structural, and regular expression search, 
@@ -86,11 +93,12 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                     <h2 className="display-3 font-weight-bold mb-3">Move faster with Sourcegraph</h2>
                     <h5>Onboard 2.5x quicker</h5>
                     <p>
-                        Search across every repo and code host to get to know the repository structure, track down where code lives, 
-                        and learn from other developer's code.
+                        Search across every repo and code host to get to know the repository structure and learn from other developers' code.
                     </p>
+                    
                     <h5>Improve developer happiness and productivity</h5>
-                    <p>Get answers faster without switching between tools and breaking flow.</p>
+                    <p>Get answers faster without waiting for context from teammates or dealing with stale local clones.</p>
+                    
                     <h5>Mitigate security and compliance risks</h5>
                     <p>Get alerts for vulnerabilities and then automate security fixes across your entire codebase.</p>
                 </div>
@@ -147,7 +155,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 border">
                     <iframe
                         className="embed-responsive-item"
-                        src="https://www.youtube-nocookie.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                        src="https://www.youtube.com/watch?v=M4zlcZJ2fOA"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
@@ -160,10 +168,10 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                     </p>
                     <ul>
                         <li>
-                            Examples of <a target="_blank" href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp">installing packages in a Dockerfile</a>
+                            Places where a specific error is returned
                         </li>
                         <li>
-                            Places where a specific error is returned
+                            Examples of <a target="_blank" href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/+f:dockerfile+apt-get%7Capk&patternType=regexp">installing packages in a Dockerfile</a>
                         </li>
                         <li>
                             Recent TypeScript changes mentioning auth

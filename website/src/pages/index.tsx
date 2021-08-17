@@ -23,16 +23,20 @@ const Index: React.FunctionComponent = (props: any) => (
                                 root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
-                                <a
+                                <Link
                                     className="btn btn-primary m-3"
-                                    href="https://sourcegraph.com/search"
-                                    title="Try Sourcegraph now"
+                                    to="#get-started"
+                                    title="Use this if you want to search your (or your company's) code, invite teammates, and try all the features."
                                 >
-                                    Try Sourcegraph now <ArrowRightIcon className="ml-1" />
-                                </a>
-                                <Link className="btn btn-outline-primary" to="/contact/request-info/">
-                                    Talk to a product specialist <ArrowRightIcon className="ml-1" />
+                                    Deploy locally <ArrowRightIcon className="ml-1" />
                                 </Link>
+                                <a
+                                    className="btn btn-outline-primary m-3"
+                                    href="https://sourcegraph.com/search"
+                                    title="Use this if you want to search across top open source repositories (or add your own projects)."
+                                >
+                                    Search open source <ArrowRightIcon className="ml-1" />
+                                </a>
                             </div>
                         </div>
                     </div>
