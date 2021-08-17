@@ -1262,3 +1262,11 @@ He likes to travel, visit places off the beaten path, and trek in the mountains.
 - Github: [ajaynz](https://github.com/ajaynz)
 - [ajay.sridhar@sourcegraph.com](mailto:ajay.sridhar@sourcegraph.com), [LinkedIn](https://linkedin.com/in/ajaysridhar/)
 - Ajay lives in the UK with his wife and daughter, he came over to Sourcegraph from prior sales roles at Puppe. He loves everything sports and cars, in his spare time you will either find him at the gym or doing somethign fun outdoor.
+
+## Amarachi Azubuike (she/her)
+
+- Social Media Community Manager
+- Aba, Nigeria 🇳🇬
+- GitHub: [emmanuellar](https://github.com/emmanuellar)
+- [amarachi.azubuike@sourcegraph.com](mailto:amarachi.azubuike@sourcegraph.com), [@amarathelight](https://twitter.com/amarathelight)
+- Amarachi was born and raised in Aba, Nigeria. Amarachi previously worked as a Scratch programming language tutor for kids and loves to volunteer to build developer communities. She enjoys music, arts and craft and loves spending quality time with family.
