@@ -11,7 +11,7 @@ socialImage: https://about.sourcegraph.com/blog/optimizing-code-intelligence-com
 published: true
 ---
 
-As of September 1st, 2021, we will be [merging a change](https://github.com/sourcegraph/code-intel-extensions/pull/664) to the Sourcegraph language extensions that will drop support for querying Language Servers. This method of [code intelligence](https://docs.sourcegraph.com/code_intelligence) has not been actively supported for over a year.
+As of September 1st, 2021, we will be [merging a change](https://github.com/sourcegraph/code-intel-extensions/pull/664) to the Sourcegraph language extensions that drops support for querying Language Servers. This method of [code intelligence](https://docs.sourcegraph.com/code_intelligence) has not been actively supported for over a year.
 
 We believe this capability has been unused in the wild for some time. Removing the associated code paths will greatly reduce cognitive clutter around merging search-based and precise code intelligence results, and we'll become more able to iterate quickly to provide a great user experience.
 
@@ -19,6 +19,6 @@ Note that extensions published into Sourcegraph.com's public extension registry 
 
 ### Does this affect my private instance?
 
-If you haven't heard from us, probably not! We've been working with enterprise customers that we know were still using Language Server-based code intelligence to migrate to our LSIF-based precise code intelligence.
+If you haven't heard from us, probably not! We've been working with enterprise customers that we know were still using Language Server-based code intelligence to migrate to our [LSIF-based precise code intelligence](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
 
-If this does affect your instance, we can provide you with an older build of the Sourcegraph langauge extensions which you can load into your instance's private extension registry. Contact Sourcegraph support if this is the case.
+If this does affect your instance, we can provide you with an older build of the Sourcegraph langauge extensions which you can load into your instance's private extension registry. [Contact Sourcegraph support](https://about.sourcegraph.com/contact/) if this is the case.
