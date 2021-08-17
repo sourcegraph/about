@@ -125,37 +125,13 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
 
         <IntegrationsSection />
 
-        {/* Social Proof */}
-        <ContentSection>
-            <div className="row justify-content-center pt-md-4">
-                <div className="col-lg-12 text-center">
-                    <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
-                        <p>
-                            [Sourcegraph] allows us to constantly monitor code that manages personal data, organization wide, 
-                            before changes land in production.
-                        </p>
-                        <footer className="blockquote-footer">
-                            Simon Law, Staff Software Engineer, Quantcast
-                        </footer>
-                        <div className="d-flex justify-content-center my-2">
-                            <img src="/external-logos/quantcast-logo.svg" width="110px" alt="Quantcast" />
-                        </div>
-                        <Link to="/case-studies/quantcast-large-scale-refactoring/">
-                            Quantcast adopts Sourcegraph for large-scale refactoring{' '}
-                            <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
-                    </blockquote>
-                </div>
-            </div>
-        </ContentSection>
-
         <ContentSection>
             <h2 className="display-3 font-weight-bold mb-3">How developers are using Sourcegraph</h2>
             <div className="row">
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 border">
                     <iframe
                         className="embed-responsive-item"
-                        src="https://www.youtube.com/watch?v=M4zlcZJ2fOA"
+                        src="https://www.youtube.com/watch?v=r2CpLe1h89I"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
