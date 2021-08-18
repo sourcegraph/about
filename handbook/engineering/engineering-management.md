@@ -49,20 +49,52 @@ Here are some books that multiple people on the team have read and recommend. If
 - [The Five Dysfunctions of a Team](https://www.amazon.com/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756) - A model of how to think about what makes a highly effective team paired with a fictional story that illustrates the model.
 - [The Leader’s Guide to Unconscious Bias](https://www.amazon.com/Leaders-Guide-Unconscious-Bias-High-Performing/dp/1982144319) ([facilitated small group discussions](../support/support-values-enablement.md#part-2-deep-dive-on-be-welcoming-and-inclusive).
 
-## Temporary Management Positions
+## Promotion requests
 
-We create temporary management positions when there is an organizational need. These may be filled by someone who is transitioning into the role (Interim Manager), experimenting with the role as they work on determining their career path (Acting Manager) or, someone who is just filling in and who is not interested in pursuing an Engineering Manager role long term (Acting Manager). This difference should be made explicit with the individual and team members before the temporary role is assigned.
+To be documented.
 
-### Acting Manager
+## Compensation increase requests
 
-An Acting Manager occupies a role temporarily and will move back to their original position after a set amount of time or other conditions. An Acting Manager may be experimenting with the role as a part of determining their career development path or could be filling in for a vacant role while we hire.
+To be documented.
 
-### Interim Manager
+## Temporary management positions
 
-Interim Manager positions are for teammates pursuing an Engineering Manager role long term but lack the necessary people management experience. The requirement is that, before moving into the role full time, they will make at least one successful hire. The official transition to Engineering Manager will not occur before 30 days after that new hire's start date, so that we can assess whether the hire was truly successful. If the new hire's success is indeterminate at the 30-day mark, we will continue to review until a firm decision is made. If the new hire is not successful, that does not mean that the Interim Manager cannot eventually move into the full-time role.
+We create temporary management positions when there is an organizational need. Some examples:
 
-In some cases, it may not be practical, or headcount planning might not allow for the Interim Manager to make a new hire. In this case, the Interim Manager and the interim manager's manager should agree on success criteria based on the role's requirements.
+- A team has grown beyond the [maximum viable team guideline](eng_org.md#maximum-viable-team), and we decide to split the team.
+- An Engineering Manager is out on extended PTO.
+- We decide to form a new team from scratch. 
 
-Once the Interim Manager's first new hire has been at Sourcegraph for 30 days or other agreed success criteria have been met, their manager will formally review the Interim Manager.
+### Acting manager
 
-This process aims to have a determination made by the interim manager's manager about the promotion to a permanent manager role after the agreed success criteria have been satisfied. Generally, we aim to have the interim period not exceed four months before turning into a full-time position.
+An Acting Manager occupies a management role temporarily and will move back to their original position after a set amount of time or other conditions. An Acting Manager could be filling in for a vacant role while we hire or providing cover for another Engineering Manager on extended PTO.
+
+### Manager in training
+
+Manager in training positions are for teammates pursuing an Engineering Manager role long term but who lack the necessary people management experience. We want to allow teammates to consider if they would like to make the role switch and verify that they would be good in the role.
+
+#### Requirements for a manager in training role
+
+The following requirements are in place to ensure we set up the manager in training for success.
+
+1. The candidate's manager or another nominated manager must commit to providing extra support to the manager in training for the duration of the trial period. They become the sponsoring manager.
+1. The candidate should have a track record of good performance at Sourcegraph and should be employed at Sourcegraph for a minimum of 6 months before taking on the manager in training role.
+1. The candidate's existing team must be in a position for them not to be involved for the whole duration of the trial period. Managers in training should not fulfill a dual role.
+1. The managed team must comply with our [minimum viable team](eng_org.md#minimum-viable-team) criteria.
+1. The managed team must have a dedicated and established Product Manager assigned to it.
+
+#### Trial period
+
+1. The trial period will last a minimum of 6 weeks and a maximum of 12 weeks.
+1. The sponsoring manager will conduct bi-weekly 1-1s with the manager in training's direct reports to collect feedback and set them up for success.
+1. The manager in training will receive active coaching and feedback from the sponsoring manager during weekly 1-1s.
+1. The manager in training will receive an interim performance evaluation halfway through their trial period to help them identify strengths and shortcomings.
+1. The trial period can be canceled by the manager in training or the sponsoring manager if it is not working out.
+
+#### Responsibilities of the manager in training
+
+The manager in training will assume full Engineering Manager responsibility as outlined in the [Engineering Manager responsibilities](roles.md#engineering-manager).
+
+#### Promotion to Engineering Manager
+
+Suppose the trial period for the manager in training was determined to be successful, and they would like to commit to the role change. In that case, the sponsoring manager will submit a [promotion request](#promotion-requests) as per our standard process.
