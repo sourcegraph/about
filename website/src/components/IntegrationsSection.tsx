@@ -60,10 +60,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">Ridiculously big monorepos</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">1,000,000+ repositories</code>
-                    </li>
-                    <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">Open source repos</code>
+                        <code className="border rounded px-1">1,000,000+ open source repositories</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Any combo of these</code>

@@ -150,7 +150,7 @@ export default ((props: any) => (
                                         If you have more than 10 users, you can upgrade to the Team plan. This includes all of the features of the Free plan, plus:
                                     </div>
                                     <div className="col-md-6 mx-auto mb-4 pl-6">
-                                        Contact us to get started with the team plan.
+                                        Contact us to get started with the Team plan.
                                     </div>
                                 </div>
                                 <div className="row">
