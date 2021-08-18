@@ -14,9 +14,9 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Sourcegraph Code Search | ',
+            title: 'Sourcegraph | Code Search',
             description:
-                'Automate large-scale changes with Sourcegraph Batch Changes. Keep your code up to date and pay down tech debt across all repositories and code hosts.',
+                'Onboard to a new codebase, find answers faster, and identify security risks with universal code search. Search across all the repositories you work with.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png'
         }}
         heroAndHeaderClassName="code-search-page__hero-and-header"
@@ -28,7 +28,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                         <h1 className="display-2 font-weight-bold mb-0">Search your code.</h1>
                         <h1 className="display-2 font-weight-bold mb-0">All of it.</h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
-                            Onboard to a new codebase, find answers faster, and identify security risks with universal code search. Search across all the repositories you work with.
+                            Onboard to a new codebase, find answers faster, and identify security risks with universal code search.
                         </p>
                         <div className="pt-1">
                             <Link
@@ -58,7 +58,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 ">
                     <iframe
                         className="embed-responsive-item"
-                        src="https://www.youtube.com/watch?v=M4zlcZJ2fOA"
+                        src="https://www.youtube.com/watch?v=aDU4C9j-hYA"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
@@ -93,7 +93,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                     <h2 className="display-3 font-weight-bold mb-3">Move faster with Sourcegraph</h2>
                     <h5>Onboard 2.5x quicker</h5>
                     <p>
-                        Search across every repo and code host to get to know the repository structure and learn from other developers' code.
+                        Search across every repository and code host to get to know the repository structure and learn from other developers' code.
                     </p>
                     
                     <h5>Improve developer happiness and productivity</h5>

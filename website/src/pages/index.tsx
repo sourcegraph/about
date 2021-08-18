@@ -76,6 +76,37 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
+
+            <ContentSection className="mt-5 mb-6">
+                <div className="row">
+                    <div className="col-lg-5 mt-md-5">
+                        <img
+                            src="/code-search-illustrated.svg"
+                            className="home__diagram w-150"
+                            alt="Code search across multiple code hosts, including GitHub, GitLab, BitBucket, and Azure"
+                        />
+                    </div>
+                    <div className="col-lg-7 mt-5 pl-lg-4">
+                        <h2 className="display-3 font-weight-bold">Search open source code too.</h2>
+                        <p>
+                            Sourcegraph is indexing every open source repository with more than 1 star. 
+                            You'll be able to search across a universe of code — currently [dynamic number] 
+                            repositories and counting — in milliseconds. Explore, learn from, and reference the 
+                            best community-developed code out there.
+                        </p>
+                        <div className="pt-1">
+                            <a
+                                className="btn btn-primary"
+                                href="https://sourcegraph.com/search"
+                                title="Use this if you want to search across top open source repositories (or add your own projects)."
+                            >
+                                Search now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
+
             <IntegrationsSection />
 
             <div className="container">

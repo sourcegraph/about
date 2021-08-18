@@ -63,9 +63,6 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">Open source repos</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">1,000,000+ repositories</code>
-                    </li>
-                    <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Any combo of these</code>
                     </li>
                     <li className="d-block">
@@ -75,6 +72,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     </li>
                 </ul>
             </div>
+
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">All your languages</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">
@@ -208,7 +206,10 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     </li>
                 </ul>
             </div>
+
             <div className="col-lg-6">
+                <h3 className="h5 font-weight-bold pt-3">1,000,000+ repositories</h3>
+
                 <h3 className="h5 font-weight-bold pt-3">All your tools</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">
                     <li className="list-inline-item text-nowrap">
@@ -254,7 +255,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">npm</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">sonarcube</code>
+                        <code className="border rounded px-1">SonarQube</code>
                     </li>
                     <li className="d-block">
                         <a href="https://docs.sourcegraph.com/integration" className="small text-muted">
@@ -263,6 +264,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     </li>
                 </ul>
             </div>
+
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">Deployment options</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">

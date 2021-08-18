@@ -29,16 +29,6 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                {/* Hello Bar - Banner for 2021 Q3 launch */}
-                {(this.props.isHome || this.props.isBlog) && (
-                    <div className="d-flex align-items-center justify-content-center background-purple text-white font-weight-bold p-2">
-                        Sourcegraph is committed to indexing more than 5 million open source repositories
-                        <Link to="/blog/" className="ml-2 btn btn-sm btn-light">
-                            Read the blog
-                        </Link>
-                    </div>
-                )}
-
                 <nav className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container-lg px-0 px-lg-3">
                         <Link className="navbar-brand header__logo" to="/">
@@ -116,7 +106,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 href="https://sourcegraph.com/search"
                                                 title="Get started with Sourcegraph"
                                             >
-                                                Get started
+                                                Search Code
                                             </a>
                                         </li>
                                     </ul>
