@@ -2,7 +2,7 @@
 
 This playbook was created as a reference for the future. We expect there might be a need to track how many cloud users we have, how many have used the private repository feature, etc.
 
-This playbook contains SQL queries which should be run against the production Postgres in gcloud. To connect to the production Postgres in gcloud, please use [this guide](../../deployments/postgresql#sourcegraph-com-specific).
+This playbook contains SQL queries which should be run against the production Postgres in gcloud. To connect to the production Postgres in gcloud, please use [this guide](../../deployments/postgresql/index.md#sourcegraph-com-specific).
 
 # SQL queries
 
