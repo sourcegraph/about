@@ -18,8 +18,8 @@ We strive for consistency across all interviews.
   -  Technical interview, if applicable
   -  **Cross-team collaboration interview**
   -  **Peer interview**
-  -  **Values interview**
   -  Leadership interview
+  -  **Values interview**
 - Reference checks / offer
 
 ## Structured interview questions
@@ -82,6 +82,13 @@ All departments are likely to have some or all of the below universal interview 
   -  Tell us about a recent project you worked on where you collaborate with people outside of your department
   -  Tell me about a project where you or your team had a disagreement with someone in another function
 
+## Leadership interview 
+- Interviewer: a member of the leadership team for the department.
+- Duration: 30-45 minutes.
+- Details: during this stage in the interview process, a member of the leadership team for the department will ask questions to gain more insight into the following areas: your grit, curiosity, passion, growth mindset, intelligence, and values.  They will also answer any final questions you may have! This is generally the last stage in our interview process.
+- Example questions: 
+  -  Coming soon
+
 ## Values interview 
 Read more about our values interview [here](https://about.sourcegraph.com/handbook/talent/hiring/evaluating_values). 
 
@@ -90,13 +97,6 @@ Read more about our values interview [here](https://about.sourcegraph.com/handbo
 - Details: this interview is focused entirely on our values and how a candidate's views and experiences align with them. Our values are key to our success as individuals and as a company. You can read more about them [here](https://about.sourcegraph.com/handbook/company/values).
 - Example questions: 
   -  We will ask behavioral-based, open-ended questions directly related to our values. 
-
-## Leadership interview 
-- Interviewer: a member of the leadership team for the department.
-- Duration: 30-45 minutes.
-- Details: during this stage in the interview process, a member of the leadership team for the department will ask questions to gain more insight into the following areas: your grit, curiosity, passion, growth mindset, intelligence, and values.  They will also answer any final questions you may have! This is generally the last stage in our interview process.
-- Example questions: 
-  -  Coming soon
 
 # Department specific interviews 
 
@@ -154,6 +154,15 @@ In addition to the above interviews, some departments have department-specific i
     - 100K USD ACV
   - Will you respond to the redlines and include comments to the customer explaining your reasoning for any redlines that you reject or modify? Please accept any redlines that you suggest that we agree to with a brief comment explaining why. 
   - In addition, please draft a short, casual note with your assessment that you would send to the account executive. Include a short issues list, with the prioritization of issues made clear.
+
+- TechOps: Tech Ops IT Engineer take-home project / Technical Interview
+  - The technical interview should be approximately:
+    - 25 min for questions from Nicky and Dan M
+    - 10 min questions from you to us
+    - 10 min to discuss a short take-home project (3 min presentation and 7 min discussion)
+  - Project: 
+    - We have a fully remote team. Tech Ops wants to ensure that our Team Members are appropriately protected from security threats. As part of the onboarding process we want to provide all new hires with a Security Checklist. What would you put on this checklist? 
+    - Please be prepared to present this recommendation on a detailed level in 3 minutes.
 
 ## Customer Support
 - Customer Support Manager
