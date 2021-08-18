@@ -48,7 +48,7 @@ const Index: React.FunctionComponent = (props: any) => (
             </ContentSection>
 
             <ContentSection className="mt-5 mb-6">
-                <div className="row">
+                <div className="row flex-wrap-reverse">
                     <div className="col-lg-5 mt-md-5">
                         <h2 className="display-3 font-weight-bold">Search&nbsp;your&nbsp;code. All&nbsp;of&nbsp;it.</h2>
                         <p>
@@ -139,7 +139,7 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <p>CODE SEARCH</p>
+                        <div className="text-uppercase mb-3">Code Search</div>
                         <h2>Find anything in code, fast</h2>
                         <div>
                             Sourcegraph returns results in milliseconds, even across thousands of repositories, like:
@@ -202,7 +202,7 @@ const Index: React.FunctionComponent = (props: any) => (
                         </div>
                     </div>
                     <div className="col-lg-5">
-                        <p>CODE INTELLIGENCE</p>
+                        <div className="text-uppercase mb-3">Code Intelligence</div>
                         <h2>Navigate code, with definitions and references</h2>
                         <p>
                             Find definitions, references, usage examples, and anything else in code, across package,
@@ -224,7 +224,7 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="mt-6">
                 <div className="row">
                     <div className="col-lg-5">
-                        <p>BATCH CHANGES</p>
+                        <div className="text-uppercase mb-3">Batch Changes</div>
                         <h2>Make large-scale code changes</h2>
                         <p>
                             Remove legacy code, fix critical security issues, and pay down tech debt. Use Batch Changes to
