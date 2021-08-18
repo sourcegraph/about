@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
+import { Link } from 'gatsby'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import { Features, PricingPlan } from '../components/pricing/PricingPlan'
 import { PricingPlanFeature } from '../components/pricing/PricingPlanFeature'
 import { PricingPlanProperty } from '../components/pricing/PricingPlanProperty'
-import { TrySourcegraph } from '../components/TrySourcegraph'
 
 const DESCRIPTION =
     'Sourcegraph is always free for public and open source code. Start using it for private code with a paid plan.'
@@ -150,7 +150,7 @@ export default ((props: any) => (
                                         If you have more than 10 users, you can upgrade to the Team plan. This includes all of the features of the Free plan, plus:
                                     </div>
                                     <div className="col-md-6 mx-auto mb-4 pl-6">
-                                        If you have more than 25 users or need enterprise functionality, check out the Enterprise plan. Contact us to learn more about the team plan.
+                                        Contact us to get started with the team plan.
                                     </div>
                                 </div>
                                 <div className="row">
@@ -158,7 +158,7 @@ export default ((props: any) => (
                                         <ol className="pricing-plan__features list-group list-group-flush mr-5">
                                             <PricingPlanFeature
                                                 key="team-feature-1"
-                                                info={{ label: "15 additional users (25 total)", description: "" }}
+                                                info={{ label: "Up to 25 users", description: "" }}
                                                 value={true}
                                                 tag="li"
                                                 className="list-group-item bg-transparent border-0 px-0"
@@ -225,7 +225,27 @@ export default ((props: any) => (
 
                 </div>
             </div>
-            <TrySourcegraph className="my-6" demoFormURL="" />
+
+            <ContentSection className="my-6">
+                <div className="row">
+                    <div className="col-md-6 pr-md-5">
+                        <h3 className="display-4 font-weight-bold">Try Sourcegraph for free today</h3>
+                        <p>
+                            You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays
+                            local and secure).
+                        </p>
+                    </div>
+                    <div className="col-md-6 pt-3 align-self-center text-center">
+                        <Link
+                            className="btn btn-primary mx-2 mb-3"
+                            to="../#get-started"
+                            title="Try Sourcegraph now"
+                        >
+                            Try Sourcegraph now
+                        </Link>
+                    </div>
+                </div>
+            </ContentSection>
         </div>
     </Layout>
 )) as React.FunctionComponent<any>

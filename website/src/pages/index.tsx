@@ -26,14 +26,14 @@ const Index: React.FunctionComponent = (props: any) => (
                                 <Link
                                     className="btn btn-primary m-3"
                                     to="#get-started"
-                                    title="Use this if you want to search your (or your company's) code, invite teammates, and try all the features."
+                                    title="Search your (or your company's) code, invite teammates, and try all the features."
                                 >
                                     Deploy locally <ArrowRightIcon className="ml-1" />
                                 </Link>
                                 <a
                                     className="btn btn-outline-primary m-3"
                                     href="https://sourcegraph.com/search"
-                                    title="Use this if you want to search across top open source repositories (or add your own projects)."
+                                    title="Search across top open source repositories (or add your own projects)."
                                 >
                                     Search open source <ArrowRightIcon className="ml-1" />
                                 </a>
@@ -87,10 +87,10 @@ const Index: React.FunctionComponent = (props: any) => (
                         />
                     </div>
                     <div className="col-lg-7 mt-5 pl-lg-4">
-                        <h2 className="display-3 font-weight-bold">Search open source code too.</h2>
+                        <h2 className="display-3 font-weight-bold">Search open source code, too.</h2>
                         <p>
                             Sourcegraph is indexing every open source repository with more than 1 star. 
-                            You'll be able to search across a universe of code — currently [dynamic number] 
+                            You'll be able to search across a universe of code — currently over 1 million 
                             repositories and counting — in milliseconds. Explore, learn from, and reference the 
                             best community-developed code out there.
                         </p>
@@ -164,9 +164,12 @@ const Index: React.FunctionComponent = (props: any) => (
                             filter code in ways IDEs and code hosts can’t.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/code_search">
-                                Code search documentation <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </a>
+                            <Link
+                                className="d-flex align-items-center"
+                                to="/code-search"
+                            >
+                                Learn more about code search <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </Link>
                         </div>
                     </div>
                     <div className="col-lg-7 pl-lg-6 mt-3">

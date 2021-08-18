@@ -15,8 +15,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
         location={props.location}
         meta={{
             title: 'Sourcegraph | Code Search',
-            description:
-                'Onboard to a new codebase, find answers faster, and identify security risks with universal code search. Search across all the repositories you work with.',
+            description: 'Onboard to a new codebase, find answers faster, and identify security risks with Sourcegraph Code Search. Search across all the repositories you work with.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png'
         }}
         heroAndHeaderClassName="code-search-page__hero-and-header"
@@ -32,14 +31,14 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <div className="pt-1">
                             <Link
-                                className="btn btn-primary"
+                                className="btn btn-primary mr-3"
                                 to="#get-started"
                                 title="Use this if you want to search your (or your company's) code, invite teammates, and try all the features."
                             >
                                 Deploy locally <ArrowRightIcon className="ml-1" />
                             </Link>
                             <a
-                                className="btn btn-outline-primary m-3"
+                                className="btn btn-outline-primary my-3"
                                 href="https://sourcegraph.com/search"
                                 title="Use this if you want to search across top open source repositories (or add your own projects)."
                             >

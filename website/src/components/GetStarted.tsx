@@ -46,7 +46,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                     Deploy to a server or cluster <ArrowRightIcon className="ml-1" />
                                 </a>
                             </p>
-                            <h2 className="h5 d-inline-flex mt-4 mr-6">Want help?</h2>
+                            <h2 className="h5 d-inline-flex mt-4 mr-4">Want help?</h2>
                             <a
                                 className="btn btn-primary d-inline-flex"
                                 href="https://info.sourcegraph.com/talk-to-a-developer"
@@ -57,14 +57,14 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
 
                         <div className="col-lg-6 get-started__search">
                             <h2 className="get-started__search-headings">Why choose self-hosted?</h2>
-                            <ul>
+                            <ul className="font-size-medium">
                                 <li>Free for up to 10 users</li>
                                 <li>Collaborate with your team across infinite repositories</li>
                                 <li>Connect to private code hosts (and local installs)</li>
                                 <li>Free trial for enterprise features</li>
                             </ul>
                             <a
-                                className="d-inline-flex mt-5 font-weight-bold"
+                                className="d-inline-flex font-weight-bold"
                                 href="https://docs.sourcegraph.com" 
                             >
                                 Learn about self-hosted vs. cloud features <ArrowRightIcon className="ml-1" />
