@@ -1,8 +1,8 @@
 ---
-title: "'TBA': Dev Tool Time with Thorsten Ball"
-description: "TBA"
+title: "'I basically want my whole computing environment to be programmable': Dev Tool Time with Thorsten Ball"
+description: "Thorsten Ball, software engineer at Sourcegraph, shares how he uses tmux as a window manager for the terminal, and goes to bat for Vim."
 author: Rebecca Dodd
-authorUrl: 
+authorUrl: https://about.sourcegraph.com/handbook/company/team#rebecca-dodd-she-her
 publishDate: 2021-08-18T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-thorsten-ball
@@ -11,76 +11,86 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-thor
 published: true
 ---
 
-Our very first guest for Dev Tool Time was [Thorsten Ball](https://about.sourcegraph.com/handbook/company/team#thorsten-ball-he-him), a software engineer here at Sourcegraph. Thorsten works on the [Batch Changes](https://about.sourcegraph.com/handbook/engineering/batch-changes) team and prefers to work 
+Our very first guest for Dev Tool Time was [Thorsten Ball](https://about.sourcegraph.com/handbook/company/team#thorsten-ball-he-him), a software engineer here at Sourcegraph. Thorsten is on the [Batch Changes](https://about.sourcegraph.com/handbook/engineering/batch-changes) team and works in just two main applications throughout the day: a browser and the terminal, in which he uses tmux as a window manager. 
 
-We'll get to [Leah's preferred alternative to docs](#Dropbox-Paper), but a lot of Leah's developer setup is unconventional: she's mastered the art of a minimalistic workspace, working with a MacBook on her kitchen table with wired headphones/earpods and an iPhone cable to connect to iOS devices for development testing. 
+You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let's check out Thorsten's desk:
 
 ![Thorsten's hardware setup](https://sourcegraphstatic.com/blog/dev-tool-time/thorsten_ball_desk_setup.jpg)
 
-That’s it. She keeps her setup distraction free, easy to sync with her second MacBook, portable and travel friendly. This less-is-better theme can be seen throughout her choice of developer life tools:
+## Hardware setup 
 
-## [Dropbox](https://www.dropbox.com/) 
+> "If somebody is thinking about whether they should buy an expensive chair or not, they should. It's invaluable ... I'm embarrassed to say, but I guess it's like 12 hours a day [I spend in this chair] and I don't have any back pain or anything, I'm super comfortable." 
 
-> "As a developer, one of the things I love is using other people's tools. I don't want to think about code or work or tools or systems when I'm not at work."
+Thorsten's combo of Steelcase [height-adjustable desk](https://www.steelcase.com/products/height-adjustable-desks/ology/) and [chair](https://www.steelcase.com/products/office-chairs/gesture/) keep him comfortable even on long days starting with personal programming, followed by work, and then gaming in the evening. He bought the [gaming mouse](https://www.razer.com/gaming-mice/razer-deathadder-v2/RZ01-03210100-R3U1) on a whim and highly recommends it: "It's amazing how much it changes the feel of how you use a mouse." 
 
-Leah keeps all her files in the cloud, ensuring that everything is backed up and secured in case the hardware gets damaged. Setting up the environment again (if she gets a new laptop, for example) can also be done with ease. Having all her data in the cloud also allows her to keep her two MacBooks in sync with each other. 
+### Other hardware:
 
-## [GitHub](https://github.com)
+- MacBook Pro "16, 2020, 64GB, 16 core
+- Desktop computer under desk:
+  - OS: Dual booting Windows/Linux, mainly used for gaming on Windows
+  - CPU: AMD Ryzen 7 5800X, 8x 3.8GHz, 32MB L3 Cache
+  - GPU: NVIDIA GeForce RTX 3070, 8GB
+  - RAM: 64GB DDR4-3000 CL16, Corsair Vengeance LPX black
+  - SSD1: 1TB Samsung 970 Evo Plus, M.2 PCIe
+  - SSD2: 500GB Samsung 970 Evo Plus, M.2 PCIe
+- [HP Z27 4k monitor](https://www.hp.com/us-en/shop/pdp/hp-z27-27-inch-4k-uhd-display-2tb68a4-191628968732-partner)
+- [Shure BETA 87a microphone](https://www.shure.com/en-GB/products/microphones/beta_87a)
+- [Focusrite Scarlett 2i2 USB audio interface](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2)
+[Bose QuietComfort 35 Wireless noise-canceling headphones](https://www.bose.co.uk/en_gb/products/headphones/over_ear_headphones/quietcomfort-35-wireless-ii.html#v=qc35_ii_black)
+- [DURGOD TAURUS k320 Mechanical Keyboard (Cherry MX switches) in brown](https://www.durgodkeyboard.com/product/durgod-k320-taurus-mechanical-keyboard-cherry-mx-switches-nkro-87-key-gaming-keyboard/)
 
-Leah’s fondness of keeping all her data in the cloud also applies to her Git version control and coding projects, which she keeps in GitHub. She also prefers GitHub for project management, viewing it as a method of communication:
+## [Google Chrome](https://www.google.com/intl/en_uk/chrome/)
 
-> "I don't believe things like Slack or email are the best place to have conversations about work, but using a tool that everyone can access—it's more permanent. If you have a conversation somewhere else like a text message or on Slack, you can copy that info over to where the project lives."
+> "I have three pinned tabs in Chrome: my personal email, my other personal email, and my work email, and the rest of the tabs I close at the end of the day because I’m a good person."
 
-## [Tower](https://www.git-tower.com/)
+## [Kitty](https://sw.kovidgoyal.net/kitty/)
 
-> "I'm a big advocate of self-review."
+Thorsten's terminal app of choice for the moment is Kitty, which he sets to non-native full-screen mode. This makes it _actually_ full screen, so you don't see any other windows or distractions.
 
-Tower is Leah’s visual Git client of choice. She likes using a GUI over the command line as it lets her preview what she’s doing clearly before committing. For example, you can see the changes as they would appear in a pull request, which makes self-reviewing (which Leah values highly) much more pleasant. 
+## [tmux](https://github.com/tmux/tmux/wiki)
 
-Slightly more complex Git functionalities, such as cherry picking into other branches, can be easily accomplished through drag and drop.
+In the terminal everything happens inside tmux. Thorsten has dedicated sessions for different projects. He spawns **a lot** of
+windows and panes as he goes, often closing them after running a single
+command.
 
-## [Dropbox Paper](https://www.dropbox.com/paper)
+He essentially uses tmux as a window manager, since (as mentioned above) Kitty is always in non-native full screen mode, where it covers _everything_.
 
-<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">“If you’re still using Google docs, what are you doing!” 😂Questioning everything as <a href="https://twitter.com/leahculver?ref_src=twsrc%5Etfw">@leahculver</a> walks us through her workflow and favorite tools. <a href="https://t.co/1kYLl1QfZU">https://t.co/1kYLl1QfZU</a></p>&mdash; Kacie (@mskaciej) <a href="https://twitter.com/mskaciej/status/1387471457018515458?ref_src=twsrc%5Etfw">April 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Inside tmux Thorsten uses:
+* zsh
+* neovim (now also switched over to built-in LSP support)
+* fzf
+* z
+* riprep
 
-Leah loves the simplicity of Dropbox Paper for taking notes and appreciates how easy it is to include Markdown as well as the fun features like adding emoji. Despite its name, Dropbox Paper is not intended to be used to format something that will later be printed. It’s intended as a minimalistic note-taking app that allows the user to discover hidden features along the way instead of the traditional approach of cluttering all the options into hierarchical menus. One of the cooler hidden features is its rich [code syntax highlighting](https://youtu.be/QNYoOCLocAI?t=1187) (this blew our minds).
+## [Vim](https://www.vim.org/) and [Neovim](https://neovim.io/)
 
-<img src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-leah-culver-dropbox-paper.png" alt="Dropbox Paper code syntax highlighting" width="700" height="375">
+This is Thorsten's main editor thanks to our coworker [TJ](https://www.twitch.tv/teej_dv), a Neovim core contributor, who worked on bringing [built-in LSP support](https://github.com/neovim/nvim-lspconfig) to Neovim.
 
-## [1Password](https://1password.com/)
+<img src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-thorsten-neovim-lsp.png" alt="Neovim LSP" width="700" height="375">
 
-> "I'll put it in my public service announcement: Please be using a password manager, please be using 2FA!"
+> "Down here at the bottom there's a small X and a 1 which means you know there's one error in the file and you can jump to it from wherever you are in the file... that has been a source of joy in the past two weeks."
 
-Password managers aren't just useful to store secure passwords but also to write notes you want to keep private and protected. It also makes it easier to entrust someone to take care of all your accounts via the master password if you were to pass away. While this is something most people don’t like to think about, it’s important to keep this in mind and be prepared.
+Thorsten's also a big fan of Vim's modal editing: 
 
-## [Xcode](https://developer.apple.com/xcode/)
+> "Once you get used to it and you grok it, then you don't want to miss it. Editing text becomes fun and enjoyable."
 
-> "It's just straight-up Xcode—I don't even change the colors or anything, I'm really boring."
+## [Alfred](https://www.alfredapp.com/)
 
-Leah's one trick for Xcode is to use presentation mode (Preferences>Themes>Presentation) for a larger view. Otherwise, Leah keeps her configurations simple which makes it really easy to switch out laptops for work.
+A sort of predecessor to Spotlight, Alfred is a tool Thorsten uses for shortcuts when searching with [Sourcegraph](https://sourcegraph.com/) and handy helpers. 
 
-## [Acorn](https://flyingmeat.com/acorn/)
+## [GitHub](https://github.com/)
 
-> "All it is is a cheap Photoshop!"
+Our workflow at Sourcegraph is based on Git, so Thorsten uses the [GitHub CLI](https://github.com/cli/cli) to open PRs and view them.
 
-Acorn has everything a developer needs in an image editor, according to Leah, without the commitment of an expensive subscription. 
+## Other tools
 
-## [Superhuman](https://superhuman.com/)
+These weren't covered in the episode but are also key parts of Thorsten's stack:
 
-> "Nobody wants to talk about email but I'm like 'Let me tell you how I do email!'"
-
-Leah doesn't make use of notifications or badges with email, so she can get into deep focus when she's writing code. She checks her email several times a day, and says the key is to handle things quickly as they come in, using her system:
-
-- Spam -> archive or unsubscribe 
-- Newsletters -> skim quickly and archive
-- Notifications -> configure the tool to send only the notifications she wants to see, rather than filtering them
-- Emails that actually need attention -> deal with it right away, if possible. 
-
-If something requires a lengthy response, she will often ask to follow up on a call instead.
-
-One thing Superhuman does really well is to show you the context and profile for anyone in your inbox: your email history with that person, plus links to their social presence (even including recent tweets!)
-
-There are also features like labels and snooze to help locate and surface messages later. Leah uses the snooze function to bubble up context for upcoming meetings (like her Dev Tool Time session) at the time when she needs them.
+* [Todoist](https://todoist.com/) as a todo app, on second screen
+* [Fantastical](https://flexibits.com/fantastical) as a calendar, also second screen
+* Sometimes [VS Code](https://code.visualstudio.com/), if he does TypeScript
+* [Cleanshot X](https://cleanshot.com/)
+* [Monodraw](https://monodraw.helftone.com/)
 
 ## Watch the recording
 
