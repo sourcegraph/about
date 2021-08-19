@@ -28,10 +28,9 @@ Here’s how we achieved a 5x reduction in memory usage with no measurable laten
 
 As a first optimization step, a test corpus was created from one of the Zoekt backend servers, and a memory profile was collected to measure precisely how a server's RAM was being consumed. The corpus has 19,000 different repos, 2.6 billion lines of code, and takes 166GB on disk. Go has [built-in profiling tools](https://golang.org/doc/diagnostics#profiling) with deep runtime integrations that make it easy to collect this information. The memory profile below shows 22GB of live objects on one server. The actual RAM usage of a Go program depends on how aggressive the garbage collector is. By default, it can use roughly twice as much memory as the size of the live objects, but you can set the `GOGC` environment variable to more aggressively reduce the maximum overhead. We run Zoekt with `GOGC=50` to reduce the likelihood that it will exceed its available memory.
 
-<img src="/blog/22GB of live objects on one server.png" width="1200" alt="Sourcegraph Sign Up QR Code"/>
+<img src="/blog/22GB of live objects on one server.png" width="1200" alt="22GB of live objects on one server"/>
 
-<div style="text-align:center;">_22GB of live objects on one server_</div>
-<br />
+_22GB of live objects on one server_
 
 The memory profile shows which functions are responsible for allocating RAM, and it's immediately apparent that readNgrams is responsible for 67% of the memory usage. Digging into [the code](https://github.com/google/zoekt/blob/d5ee8b074530f291e1173f8e79f7fcdb4d972cc5/read.go#L256), this turned out to be a function that builds a map from trigrams to the location of a posting list on disk. It's building a big mapping from 64-bit trigrams (three 21-bit Unicode characters) to 32-bit offsets and lengths.
 
