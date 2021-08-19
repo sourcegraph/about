@@ -10,6 +10,8 @@ socialImage: https://about.sourcegraph.com/blog/blog_Reduce_RAM-01.jpg
 published: true
 ---
 
+![Zoekt memory optimizations graphic](/blog/blog_Reduce_RAM-01.jpg)
+
 _Sourcegraph universal code search enables you to explore, navigate, and better understand all your code, faster._
 
 Recently, we've been working to scale Sourcegraph cloud’s index to [1 million open source repositories and beyond](https://about.sourcegraph.com/blog/why-index-the-oss-universe/). Part of that effort has been reducing the RAM usage for the [Zoekt](https://github.com/google/zoekt) (pronounced "zooked") servers responsible for handling most of our code searches.
@@ -28,7 +30,7 @@ As a first optimization step, a test corpus was created from one of the Zoekt ba
 
 <img src="/blog/22GB of live objects on one server.png" width="1200" alt="Sourcegraph Sign Up QR Code"/>
 
-<div style="text-align:center;">*22GB of live objects on one server*</div>
+<div style="text-align:center;">_22GB of live objects on one server_</div>
 <br />
 
 The memory profile shows which functions are responsible for allocating RAM, and it's immediately apparent that readNgrams is responsible for 67% of the memory usage. Digging into [the code](https://github.com/google/zoekt/blob/d5ee8b074530f291e1173f8e79f7fcdb4d972cc5/read.go#L256), this turned out to be a function that builds a map from trigrams to the location of a posting list on disk. It's building a big mapping from 64-bit trigrams (three 21-bit Unicode characters) to 32-bit offsets and lengths.
