@@ -57,44 +57,35 @@ To be documented.
 
 To be documented.
 
-## Temporary management positions
+## Transitioning from Individual Contributor to Engineering Manager
 
-We create temporary management positions when there is an organizational need. Some examples:
+For teammates pursuing an Engineering Manager role but who lack the necessary people management experience we have defined the following transitioning guide that affords the candidate a "manager in training" opportunity to try out being an Engineering Manager for a trial period. The trial period will afford the teammate the opportunity to determine if this is something they want to commit to long term and for us to verify that they would be good in the role.
 
-- A team has grown beyond the [maximum viable team guideline](eng_org.md#maximum-viable-team), and we decide to split the team.
-- An Engineering Manager is out on extended PTO.
-- We decide to form a new team from scratch. 
+### Expressig interest in becoming an Engineering Manager
 
-### Acting manager
+Teammates who have reached the [IC3 level](career-development/framework.md#ic3) and have a track record of good performance at Sourcegraph, having been employed for at least 6 months, are elligible for a manager in training trial.
+The teammate should make their desire clear to their Engineering Manager so that when a relevant opportunity becomes available they may be considered.
 
-An Acting Manager occupies a management role temporarily and will move back to their original position after a set amount of time or other conditions. An Acting Manager could be filling in for a vacant role while we hire or providing cover for another Engineering Manager on extended PTO.
+Opportunities for a manager in training trial can came about through an existing Engineering Manager position becoming vacant, an existing team splitting into two, or an Engineering Manager going on long term PTO. 
+When an opportunity arises the teammates manager can nominate them for a manager in training trial.
 
-### Manager in training
+There are some considerations to keep in mind to ensure that the teammate is set up for success:
+- The teammate's existing team should be in a position for them not to be involved as an IC for the whole duration of the trial period. Managers in training should not fulfill a dual role.
+- The managed team should comply with our [minimum viable team](eng_org.md#minimum-viable-team) criteria.
+- The managed team should have a dedicated and established Product Manager assigned to it.
 
-Manager in training positions are for teammates pursuing an Engineering Manager role long term but who lack the necessary people management experience. We want to allow teammates to consider if they would like to make the role switch and verify that they would be good in the role.
+### Manager in training trial period
 
-#### Requirements for a manager in training role
+During the trial period the manager in training will assume full Engineering Manager responsibility as outlined in the [Engineering Manager responsibilities](roles.md#engineering-manager).
 
-The following requirements are in place to ensure we set up the manager in training for success.
+The teammate's manager or another nominated manager will become their sponsoring manager for the duration of the trial period. The sponsoring manager must commit to providing extra support to the manager in training during the trial period which will last 12 weeks. 
+The trial period may be extended if agreed to by the manager in training and the sponsoring manager, however, should not be extended to more than 16 weeks.
 
-1. The candidate's manager or another nominated manager will become the sponsoring manager. The sponsoring manager must commit to providing extra support to the manager in training for the duration of the trial period.
-1. The candidate should have a track record of good performance at Sourcegraph and should be employed at Sourcegraph for a minimum of 6 months before taking on the manager in training role.
-1. The candidate's existing team must be in a position for them not to be involved as an IC for the whole duration of the trial period. Managers in training should not fulfill a dual role.
-1. The managed team must comply with our [minimum viable team](eng_org.md#minimum-viable-team) criteria.
-1. The managed team must have a dedicated and established Product Manager assigned to it.
+The sponsoring manager will give the manager in training active coaching and feedback during weekly 1-1s and conduct bi-weekly 1-1s with the manager in training's direct reports to collect feedback, and set them up for success.
+Halfway through their trial period the manager in training will receive an interim performance evaluation to help them identify strengths and shortcomings as an engineering manager and give them an opportunity to adjust if needed.
 
-#### Trial period
+The trial period can be canceled by the manager in training or the sponsoring manager at any time if it is not working out.
 
-1. The trial period will last 12 weeks but may be extended if agreed to by the manager in training and the sponsoring manager. The trial period should not be extended to more than 16 weeks.
-1. The sponsoring manager will conduct bi-weekly 1-1s with the manager in training's direct reports to collect feedback and set them up for success.
-1. The manager in training will receive active coaching and feedback from the sponsoring manager during weekly 1-1s.
-1. The manager in training will receive an interim performance evaluation halfway through their trial period to help them identify strengths and shortcomings.
-1. The trial period can be canceled by the manager in training or the sponsoring manager if it is not working out.
-
-#### Responsibilities of the manager in training
-
-The manager in training will assume full Engineering Manager responsibility as outlined in the [Engineering Manager responsibilities](roles.md#engineering-manager).
-
-#### Promotion to Engineering Manager
+### Promotion to Engineering Manager
 
 Suppose the trial period for the manager in training was determined to be successful, and they would like to commit to the role change. In that case, the sponsoring manager will submit a [promotion request](#promotion-requests) as per our standard process.
