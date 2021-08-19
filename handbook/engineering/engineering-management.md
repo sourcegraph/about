@@ -85,7 +85,7 @@ The following requirements are in place to ensure we set up the manager in train
 
 #### Trial period
 
-1. The trial period will last a minimum of 6 weeks and a maximum of 12 weeks.
+1. The trial period will last 12 weeks but may be extended if agreed to by the manager in training and the sponsoring manager. The trial period should not be extended to more than 16 weeks.
 1. The sponsoring manager will conduct bi-weekly 1-1s with the manager in training's direct reports to collect feedback and set them up for success.
 1. The manager in training will receive active coaching and feedback from the sponsoring manager during weekly 1-1s.
 1. The manager in training will receive an interim performance evaluation halfway through their trial period to help them identify strengths and shortcomings.
