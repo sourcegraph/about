@@ -1,4 +1,4 @@
-## Accessing Managed Instances
+# Accessing Managed Instances
 In order to have good security and risk mitigation practices, only a subset of our CSE's have access to managed instances. If you need to access logs for these customers, post in our #customer-support-internal Slack channel and @ mention Don, Jason, and Mariam. One of them can help! 
 
 If you are a CSE being trained to work with managed instances, read ahead.
