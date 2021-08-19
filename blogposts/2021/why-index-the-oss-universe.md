@@ -10,9 +10,9 @@ socialImage: https://about.sourcegraph.com/blog/blogIndexing1200x627.jpg
 published: true
 ---
 
-We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub, GitLab, and other code hosts.
-
 ![Why we're indexing the OSS universe graphic](/blog/blogIndexing1200x627.jpg)
+
+We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub, GitLab, and other code hosts.
 
 Guido van Rossum, the creator of Python, once said:
 > "We compare mass ability to read and write software with mass literacy, and predict equally pervasive changes to society. Hardware is now sufficiently fast and cheap to make mass computer education possible: the next big change will happen when most computer users have the knowledge and power to create and modify software."
@@ -46,7 +46,7 @@ Indexing the open source universe doesn’t only benefit consumers of open sourc
 
 > “The modern world is built on open source software, most of the critical apps and products we use daily won't exist without it. Sourcegraph indexing the entire open source code on the web feels like the "Google" of open source. Its code search tool is a massive leap for collaboration in the open source community. It will allow more people to explore projects, walk through large codebases with ease, even discover dependent projects. This is such a huge step forward!" - Segun Adebayo, Creator of Chakra UI
 
-<div style="position: relative; width: 1000px; height: 900px;">
+<div style="position: relative;">
 	<blockquote class="twitter-tweet" align="center" data-conversation="none" cards="hidden"><p lang="en" dir="ltr">I actually start to share open source code in tickets and chat using links to sourcegraph. Its just a straight up better code browsing experience, only second to local IDE. That helps others navigate and understand issue a lot faster. Example <a href="https://t.co/baVKwWRgIb">https://t.co/baVKwWRgIb</a>.</p>&mdash; Son Luong (@sluongng) <a href="https://twitter.com/sluongng/status/1415667615100325889?ref_src=twsrc%5Etfw">July 15, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<blockquote class="twitter-tweet"  align="center" data-conversation="none" cards="hidden"><p lang="en" dir="ltr">I&#39;m biased, but <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a> is so useful for open source maintainers.<br><br>I want to deprecate a method in Ohm, and I&#39;m wondering how many people use it. A quick Sourcegraph tells me: not many.<a href="https://t.co/KHw3rx9nXi">https://t.co/KHw3rx9nXi</a></p>&mdash; Patrick Dubroy (@dubroy) <a href="https://twitter.com/dubroy/status/1420293649519230978?ref_src=twsrc%5Etfw">July 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
