@@ -10,9 +10,9 @@ socialImage: https://about.sourcegraph.com/blog/blogIndexing1200x627.jpg
 published: true
 ---
 
-We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub, GitLab, and other code hosts.
-
 ![Why we're indexing the OSS universe graphic](/blog/blogIndexing1200x627.jpg)
+
+We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub, GitLab, and other code hosts.
 
 Guido van Rossum, the creator of Python, once said:
 > "We compare mass ability to read and write software with mass literacy, and predict equally pervasive changes to society. Hardware is now sufficiently fast and cheap to make mass computer education possible: the next big change will happen when most computer users have the knowledge and power to create and modify software."
