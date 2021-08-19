@@ -559,6 +559,12 @@ time, abbr[title] {
   padding-right: 20px;
 }
 
+.markdown-body :is(video, object) {
+  aspect-ratio: attr(width) / attr(height);
+  width: 100%;
+  height: auto;
+}
+
 .markdown-body .drop-shadow {
   max-width: calc(100% - 10px);
   max-height: 100vh;

@@ -29,8 +29,8 @@ When you first start in support, the list of tools to set-up can feel like a lot
 
 There are some test environments created specifically for the Customer Support Engineers to run tests on when helping customers. They allow the team to reproduce and debug issues without affecting our production instances.
 
-* [Test instance deployed with Docker Compose](https://cse-aws-test.sgdev.org/)
-* [Test instance deployed with Kubernetes](https://cse-k8s.sgdev.org/)
+* [Test instance deployed with Docker Compose](https://cse-aws-test.sgdev.org/) ([*management doc*](managing-cse-aws.md))
+* [Test instance deployed with Kubernetes](https://cse-k8s.sgdev.org/) ([*management doc*](managing-cse-k8s.md))
 * [Single Docker for local testing](https://docs.sourcegraph.com/admin/install/docker)
 * [Installation guide for Local Development](https://docs.sourcegraph.com/dev)
 * [GitHub test instance ](https://github.sgdev.org)
@@ -38,7 +38,7 @@ There are some test environments created specifically for the Customer Support E
 * [Gerrit test instance ](https://gerrit.sgdev.org/)
 * [Bitbucket test instance ](https://bitbucket.sgdev.org/)
 * [Phabricator test instance ](https://phabricator.sgdev.org/)
-* [Dogfood Perforce](p4-enablement.md)
+* [Dogfood Perforce instance](p4-enablement.md)
 
 > NOTE: You can find all the login credentials for the test instances in your 1Password account.
 
