@@ -49,13 +49,9 @@ Here are some books that multiple people on the team have read and recommend. If
 - [The Five Dysfunctions of a Team](https://www.amazon.com/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756) - A model of how to think about what makes a highly effective team paired with a fictional story that illustrates the model.
 - [The Leader’s Guide to Unconscious Bias](https://www.amazon.com/Leaders-Guide-Unconscious-Bias-High-Performing/dp/1982144319) ([facilitated small group discussions](../support/support-values-enablement.md#part-2-deep-dive-on-be-welcoming-and-inclusive).
 
-## Promotion requests
+## Promotion and compensation increase requests  
 
-To be documented.
-
-## Compensation increase requests
-
-To be documented.
+Refer to the [promotion request](career-development/talent-review-process.md#promotion-requests) and [compensation increase](career-development/talent-review-process.md#compensation-increase-requests) process information.
 
 ## Transitioning from Individual Contributor to Engineering Manager
 
@@ -88,4 +84,4 @@ The trial period can be canceled by the manager in training or the sponsoring ma
 
 ### Promotion to Engineering Manager
 
-Suppose the trial period for the manager in training was determined to be successful, and they would like to commit to the role change. In that case, the sponsoring manager will submit a [promotion request](#promotion-requests) as per our standard process.
+Suppose the trial period for the manager in training was determined to be successful, and they would like to commit to the role change. In that case, the sponsoring manager will submit a [promotion request](career-development/talent-review-process.md#promotion-requests) as per our standard process.
