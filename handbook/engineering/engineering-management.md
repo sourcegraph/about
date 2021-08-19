@@ -67,7 +67,7 @@ Teammates who have reached the [IC3 level](career-development/framework.md#ic3) 
 The teammate should make their desire clear to their Engineering Manager so that when a relevant opportunity becomes available, they may be considered.
 
 Opportunities for a manager in training trial can come about through a current Engineering Manager position becoming vacant, an existing team splitting into two, or an Engineering Manager going on long-term PTO. 
-When an opportunity arises, the teammates manager can nominate them for a manager in training trial.
+When an opportunity arises, the teammate's manager can nominate them for a manager in training trial to the Director of Engineering for the relevant org.
 
 There are some considerations to keep in mind to ensure that the teammate is set up for success:
 - The teammate's existing team should be in a position for them not to be involved as an IC for the whole duration of the trial period. Managers in training should not fulfill a dual role.
