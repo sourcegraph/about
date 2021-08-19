@@ -1,12 +1,23 @@
-# How to get a list of Sourcegraph Cloud users
+# Listing Sourcegraph Cloud Users
 
-This playbook was created as a reference for the future. We expect there might be a need to track how many cloud users we have, how many have used the private repository feature, etc.
+This playbook was created as a reference for the future. We expect there might be a need to have a list of cloud users, cloud users with and without private repos. In case marketing wants to send emails to specific groups of customers for example.
 
 This playbook contains SQL queries which should be run against the production Postgres in gcloud. To connect to the production Postgres in gcloud, please use [this guide](../../deployments/postgresql/index.md#sourcegraph-com-specific).
 
 # SQL queries
 
-## Get a list of cloud users that connected a private repository
+## Listing All Cloud Users
+
+```sql
+SELECT DISTINCT user_emails.email, users.display_name, users.created_at
+FROM user_emails
+INNER JOIN users ON users.id = user_emails.user_id AND users.deleted_at IS NULL
+WHERE user_emails.is_primary = true;
+```
+
+## Private Repository Related Queries
+
+### Listing Cloud Users With Private Repository
 ```sql
 SELECT DISTINCT user_emails.email, users.display_name, users.created_at
 FROM user_emails
@@ -19,7 +30,7 @@ WHERE user_emails.is_primary = true;
 Note that we only get the distinct list of email, name and creation date. We also only check for primary email address and ignore deleted users and repositories.
 E.g. if a user has previously tried private repositories, but has since removed them from the DB, they will not be part of the list.
 
-## Get a list of cloud users that did not connect with a private repository
+### Listing Cloud Users Without Private Repository
 ```sql
 SELECT DISTINCT user_emails.email, users.display_name, users.created_at
 FROM user_emails
