@@ -79,7 +79,7 @@ The following requirements are in place to ensure we set up the manager in train
 
 1. The candidate's manager or another nominated manager must commit to providing extra support to the manager in training for the duration of the trial period. They become the sponsoring manager.
 1. The candidate should have a track record of good performance at Sourcegraph and should be employed at Sourcegraph for a minimum of 6 months before taking on the manager in training role.
-1. The candidate's existing team must be in a position for them not to be involved for the whole duration of the trial period. Managers in training should not fulfill a dual role.
+1. The candidate's existing team must be in a position for them not to be involved as an IC for the whole duration of the trial period. Managers in training should not fulfill a dual role.
 1. The managed team must comply with our [minimum viable team](eng_org.md#minimum-viable-team) criteria.
 1. The managed team must have a dedicated and established Product Manager assigned to it.
 
