@@ -21,9 +21,13 @@ export const TrySourcegraph: React.FunctionComponent<{ demoFormURL?: string; cla
                         Schedule a demo
                     </Link>
                 }
-                <Link className="btn btn-primary mx-2 mb-3" to="/get-started" title="Try Sourcegraph now">
+                <a
+                    className="btn btn-primary mx-2 mb-3"
+                    href="https://sourcegraph.com/search"
+                    title="Try Sourcegraph now"
+                >
                     Try Sourcegraph now
-                </Link>
+                </a>
             </div>
         </div>
     </ContentSection>
