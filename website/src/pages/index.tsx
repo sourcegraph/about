@@ -79,14 +79,14 @@ const Index: React.FunctionComponent = (props: any) => (
 
             <ContentSection className="mt-5 mb-6">
                 <div className="row">
-                    <div className="col-lg-5 mt-md-5">
+                    <div className="col-lg-7">
                         <img
-                            src="/code-search-illustrated.svg"
+                            src="/opensourcecode-lg.svg"
                             className="home__diagram w-150"
-                            alt="Code search across multiple code hosts, including GitHub, GitLab, BitBucket, and Azure"
+                            alt="Open Source Code"
                         />
                     </div>
-                    <div className="col-lg-7 mt-5 pl-lg-4">
+                    <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Search open source code, too.</h2>
                         <p>
                             Sourcegraph is indexing every open source repository with more than 1 star. 
