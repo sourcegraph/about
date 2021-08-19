@@ -67,7 +67,7 @@ Decisions regarding promotions are prioritized by the decision-makers, and made 
 
 Teammates are considered for promotion to a new level when their manager can make the case that they have had at least one quarter of high performance at their current level, and one quarter performing at the next level. We want to avoid situations where someone is promoted to a level in which they struggle to meet expectations.
 
-The [engineering levels](career-development/framework.md#) describe performance expectations in 3 categories. It will be extremely rare for an engineer to be exactly at the same level in all of these categories. Since the levels describe the minimum expectations for each level, an engineer must meet the expectations for all categories before they can be considered for promotion.
+The [engineering levels](framework.md#levels) describe performance expectations in 3 categories. It will be extremely rare for an engineer to be exactly at the same level in all of these categories. Since the levels describe the minimum expectations for each level, an engineer must meet the expectations for all categories before they can be considered for promotion.
 
 This does imply a distinction between _high performance at current level_ vs. _ready for promotion_. A level N engineer who is consistently exceeding level N expectations in some areas, but whom we do not feel would be able to meet level N+1 expectations, should not be promoted (despite their high performance in some areas).
 
