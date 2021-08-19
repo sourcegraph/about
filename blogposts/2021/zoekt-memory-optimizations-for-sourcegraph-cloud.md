@@ -28,9 +28,10 @@ Here’s how we achieved a 5x reduction in memory usage with no measurable laten
 
 As a first optimization step, a test corpus was created from one of the Zoekt backend servers, and a memory profile was collected to measure precisely how a server's RAM was being consumed. The corpus has 19,000 different repos, 2.6 billion lines of code, and takes 166GB on disk. Go has [built-in profiling tools](https://golang.org/doc/diagnostics#profiling) with deep runtime integrations that make it easy to collect this information. The memory profile below shows 22GB of live objects on one server. The actual RAM usage of a Go program depends on how aggressive the garbage collector is. By default, it can use roughly twice as much memory as the size of the live objects, but you can set the `GOGC` environment variable to more aggressively reduce the maximum overhead. We run Zoekt with `GOGC=50` to reduce the likelihood that it will exceed its available memory.
 
-<img src="/blog/22GB of live objects on one server.png" width="1200" alt="22GB of live objects on one server"/>
-
-_22GB of live objects on one server_
+<figure>
+  <img src="/blog/22GB of live objects on one server.png" alt="22GB of live objects on one server" class="no-shadow">
+  <figcaption>22GB of live objects on one server.</figcaption>
+</figure>
 
 The memory profile shows which functions are responsible for allocating RAM, and it's immediately apparent that readNgrams is responsible for 67% of the memory usage. Digging into [the code](https://github.com/google/zoekt/blob/d5ee8b074530f291e1173f8e79f7fcdb4d972cc5/read.go#L256), this turned out to be a function that builds a map from trigrams to the location of a posting list on disk. It's building a big mapping from 64-bit trigrams (three 21-bit Unicode characters) to 32-bit offsets and lengths.
 
@@ -127,12 +128,24 @@ func shrinkUint32Slice(a []uint32) []uint32 {
 
 ## Results and what’s next
 
-<img src="/blog/4GB of live objects after, with all optimizations applied.png" width="1200" alt="4GB of live objects after, with all optimizations applied"/>
-
-*4GB of live objects after, with all optimizations applied*
+<figure>
+  <img src="/blog/4GB of live objects after, with all optimizations applied.png" alt="22GB of live objects on one server" class="no-shadow">
+  <figcaption>4GB of live objects after, with all optimizations applied.</figcaption>
+</figure>
 
 Putting it all together, the new memory profile looks like this: a 5x reduction overall, which means we can serve search queries for five times more repositories without requiring any more servers. We went from 1400KB of RAM per repo to 310KB with no measurable latency changes.
 
 In the future, even more of what’s currently loaded into RAM can be placed back onto the disk, using memory mappings to let the OS cache pages as necessary. Larger-scale architectural changes, like having an index cover multiple repositories, or having one large inverted index for each server, will reduce RAM usage even further. These complex changes require more careful planning, coding, and testing than the simple, targeted optimizations described above, but are the best way to escape from the local minima that repeated micro-optimizations can reach.
 
 _Look out for Han-Wen Nienhuys, creator of Zoekt, in an upcoming episode of the [Sourcegraph podcast!](https://about.sourcegraph.com/podcast)_
+
+<style>
+  figure .no-shadow { box-shadow: none; }
+  .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
+
+  figcaption {
+    text-align: center;
+    margin-top: -2rem;
+    font-style: italic;
+  }
+</style>
