@@ -57,7 +57,7 @@ To be documented.
 
 To be documented.
 
-# Transitioning from Individual Contributor to Engineering Manager
+## Transitioning from Individual Contributor to Engineering Manager
 
 For teammates pursuing an Engineering Manager role but who lack the necessary people management experience, we have defined the following transitioning guide that affords the candidate a "manager in training" opportunity to try out being an Engineering Manager for a trial period. The trial period will allow the teammate to determine if they want to commit to it long-term and verify that they would be good in the role.
 
