@@ -54,6 +54,7 @@ This continuity means we give customers consistent and high-quality service from
     - [Alex Fogg](../company/team/index.md#alex-fogg-he-him)
     - [Bill Caplan](../company/team/index.md#bill-caplan-he-him)
     - [Christine Lovett](../company/team/index.md#christine-lovett-she-her)
+    - [Leo Abreu](../company/team#leo-abreu-he-him)
     - [Mike McLaughlin](../company/team/index.md#mike-mclaughlin-he-him)
     - [Shawn King](../company/team/index.md#shawn-king-he-him)
     - [FQ3 CE](https://boards.greenhouse.io/sourcegraph91/jobs/4003921004)
