@@ -99,11 +99,11 @@ export interface BlogTypeInfo {
 
 export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
     blog: {
-        title: 'strings',
+        title: 'strings: the Sourcegraph blog',
         baseUrl: '/blog',
         belowTitle: (
             <>
-                <p className="mb-1"><i>A collection of characters, stories, and other elements</i> <small>from Sourcegraph</small></p>
+                <p className="mb-1">A collection of characters, stories, and other elements</p>
             </>
         ),
         meta: {
