@@ -45,7 +45,7 @@ There is [exactly one instance](https://sourcegraph.com/github.com/sourcegraph/d
 
 Before `repo-updater` can begin accepting work, it needs to check that the following services are running and responsive to pings:
 1. [frontend](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/shared/main.go?L111-114) - implemented by the [internal API client](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/api/internal_client.go?L39-81)
-2. [gitserver instances](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/shared/main.go?L116-119) - implemented by the [gitserver client](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/gitserver/client.go?L445-458) respectively
+2. [gitserver instances](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/shared/main.go?L116-119) - implemented by the [gitserver client](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/gitserver/client.go?L445-458)
 
 > See ["How gitserver works: Production instances"](how-gitserver-works.md#production-instances) for more information.
 
