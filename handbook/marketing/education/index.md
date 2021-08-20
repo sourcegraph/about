@@ -15,10 +15,10 @@ The Developer Education team is dedicated to Sourcegraph’s long-term mission o
 
 ## Handbook links
 
- - [Learn Platform](education/learn-platform.md)
+ - [Learn Platform](learn-platform.md)
  - [Learn Platform Style](style.md)
- - [Team Process](education/process.md)
- - [DevEd Council](education/dev-ed-council.md)
+ - [Team Process](process.md)
+ - [DevEd Council](dev-ed-council.md)
 
 ## Get in touch
 

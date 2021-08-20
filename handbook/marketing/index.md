@@ -51,7 +51,7 @@ The table below breaks down the capabilities of each team within Marketing. Once
 
 - [Developer Education](education/index.md)
     - [Learn Platform](education/learn-platform.md)
-    - [Learn Platform Style](style.md)
+    - [Learn Platform Style](education/style.md)
     - [Team Process](education/process.md)
     - [DevEd Council](education/dev-ed-council.md)
 
