@@ -29,16 +29,6 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                {/* Temporary banner for 2021 Q2 launch */}
-                {(this.props.isHome || this.props.isBlog) && (
-                    <div className="d-flex align-items-center justify-content-center background-purple text-white font-weight-bold p-2">
-                        We just raised $125M (led by a16z) to bring really great code search to every developer
-                        <Link to="/blog/the-future-of-code-search/" className="ml-2 btn btn-sm btn-light">
-                            See how
-                        </Link>
-                    </div>
-                )}
-
                 <nav className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container-lg px-0 px-lg-3">
                         <Link className="navbar-brand header__logo" to="/">
@@ -111,13 +101,13 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             </a>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <Link
+                                            <a
                                                 className="header__nav-link nav-link btn btn-outline-primary"
-                                                to="/get-started"
+                                                href="https://sourcegraph.com/search"
                                                 title="Get started with Sourcegraph"
                                             >
-                                                Get started
-                                            </Link>
+                                                Search Code
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>

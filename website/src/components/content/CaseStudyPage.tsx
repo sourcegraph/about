@@ -44,7 +44,7 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
                 <div className="col-lg-9 ">
                     {quote && <div className="text-left">
                         <p className="text-light" dangerouslySetInnerHTML={{ __html: quote.quote }} />
-                        <footer className="blockquote-footer text-light mt-1">{quote.author}</footer>
+                        <p className="blockquote-footer text-light mt-1">{quote.author}</p>
                     </div>}
                 </div>
             </div>)}
