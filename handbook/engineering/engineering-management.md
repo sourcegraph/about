@@ -86,6 +86,6 @@ Halfway through their trial period, the manager in training will receive an inte
 
 The trial period can be canceled by the manager in training or the sponsoring manager at any time if it is not working out.
 
-### Promotion to Engineering Manager
+### Becoming an Engineering Manager
 
-Suppose the trial period for the manager in training was determined to be successful, and they would like to commit to the role change. In that case, the sponsoring manager will submit a [promotion request](#promotion-requests) as per our standard process.
+Suppose the trial period for the manager in training was determined to be successful, and they would like to commit to the role change. In that case, the sponsoring manager will submit a request for a formal role change using the [role change request template](https://docs.google.com/document/d/1nkRE5wxyYVIn8rVS2rOFDEZSlgs07eVJEfxxEu5hjuk/edit). Following approval from the relevant decision-makers (Director, VP), the role change request is forwarded to the relevant teammates in PeopleOps (refer to [People Ops Communications Matrix](https://docs.google.com/spreadsheets/d/1JItBWbfKV9lr-LAmE19I0JMvu3Cvh0AdrEHDv-r1E2w/edit#gid=0)) for confirmation. Once confirmed by PeopleOps the change can be communicated to the teammate and the company.
