@@ -59,7 +59,7 @@ Promotion requests are made immediately following the [talent review callibratio
 
 The Engineering Manager will complete a promotion request using the [promotion request template](https://docs.google.com/document/d/1DHyPtIooi0J2426iemzzTqLle9UBasrqLZPGET1O7Sc/edit) and submit it for approval.
 
-Following approval from to the relevant decision-makers (EM, Director, VP), the promotion request is forwarded to the relevant teammates in PeopleOps (refer to [People Ops Communications Matrix](https://docs.google.com/spreadsheets/d/1JItBWbfKV9lr-LAmE19I0JMvu3Cvh0AdrEHDv-r1E2w/edit#gid=0)) for confirmation. Once confirmed by PeopleOps the promotion can be communicated to the teammate.
+Following approval from the relevant decision-makers (EM, Director, VP), the promotion request is forwarded to the relevant teammates in PeopleOps (refer to [People Ops Communications Matrix](https://docs.google.com/spreadsheets/d/1JItBWbfKV9lr-LAmE19I0JMvu3Cvh0AdrEHDv-r1E2w/edit#gid=0)) for confirmation. Once confirmed by PeopleOps the promotion can be communicated to the teammate using the [promotion confirmation template](https://docs.google.com/document/d/1mkdJI6cSXWIHthSN_KQKBFSfxs9RQUg_4VCvwmk8FJQ/edit).
 
 Decisions regarding promotions are prioritized by the decision-makers, and made quickly. Promotions are communicated back to the ICs in a timely manner.
 
@@ -77,4 +77,4 @@ An in-band compensation increase (while staying at the same level) can happen at
 
 The Engineering Manager will complete a compensation increase request using the [compensation increase request template](https://docs.google.com/document/d/1nWFcPjCNALww3kwzl_1l6Gjhrpsl1QGZCHb0hTEkQxk/edit) and submit it for approval.
 
-Following approval from to the relevant decision-makers (EM, Director, VP), the compensation increase request is forwarded to the relevant teammates in PeopleOps (refer to [People Ops Communications Matrix](https://docs.google.com/spreadsheets/d/1JItBWbfKV9lr-LAmE19I0JMvu3Cvh0AdrEHDv-r1E2w/edit#gid=0)) for confirmation. Once confirmed by PeopleOps the promotion can be communicated to the teammate using the [compensation increase confirmation template](https://docs.google.com/document/d/1X76t_ZTbmlqp4i9rJHXesYSECxZn5f_MZcUNtpj5aGU/edit).
+Following approval from the relevant decision-makers (EM, Director, VP), the compensation increase request is forwarded to the relevant teammates in PeopleOps (refer to [People Ops Communications Matrix](https://docs.google.com/spreadsheets/d/1JItBWbfKV9lr-LAmE19I0JMvu3Cvh0AdrEHDv-r1E2w/edit#gid=0)) for confirmation. Once confirmed by PeopleOps the compensation increase can be communicated to the teammate using the [compensation increase confirmation template](https://docs.google.com/document/d/1X76t_ZTbmlqp4i9rJHXesYSECxZn5f_MZcUNtpj5aGU/edit).
