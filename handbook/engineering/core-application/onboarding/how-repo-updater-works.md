@@ -11,11 +11,11 @@
 
 ## Purpose
 
-Sourcegraph mirrors repositories from code hosts. Code hosts may be SaaS products, such as GitHub or AWS CodeCommit, or local installations that are private to a customer's environment. The repo-updater service schedules repository synchronization activities using gitserver and any configured code hosts.
+Sourcegraph mirrors repositories from code hosts. Code hosts may be SaaS products, such as GitHub or AWS CodeCommit, or local installations that are private to a customer's environment. The `repo-updater` service schedules repository synchronization activities using gitserver and any configured code hosts.
 
 ### Overview
 
-A repo-updater instance exposes an [HTTP server](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/repoupdater/server.go?L70-80) as its primary interface. This interface allows clients to schedule synchronization requests for the following:
+A `repo-updater` instance exposes an [HTTP server](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/repoupdater/server.go?L70-80) as its primary interface. This interface allows clients to schedule synchronization requests for the following:
 
 * Code host
 * Repository
@@ -37,13 +37,13 @@ The service's key data structure is a [priority queue](https://sourcegraph.com/g
 
 ### Production instances
 
-There is [exactly one instance](https://sourcegraph.com/github.com/sourcegraph/deploy-sourcegraph-dot-com@ec7effbc9491e3ee0c77c3d70ac3f2eb8cb34837/-/blob/base/repo-updater/repo-updater.Deployment.yaml?L17) of repo-updater running, by design. This allows us to:
+There is [exactly one instance](https://sourcegraph.com/github.com/sourcegraph/deploy-sourcegraph-dot-com@ec7effbc9491e3ee0c77c3d70ac3f2eb8cb34837/-/blob/base/repo-updater/repo-updater.Deployment.yaml?L17) of `repo-updater` running, by design. This allows us to:
 * Avoid expensive coordination issues
 * Respecting the aforementioned code host limits
 
 ### General dependencies
 
-Before repo-updater can begin accepting work, it needs to check that the following services are running and responsive to pings:
+Before `repo-updater` can begin accepting work, it needs to check that the following services are running and responsive to pings:
 1. [frontend](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/shared/main.go?L111-114) - implemented by the [internal API client](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/api/internal_client.go?L39-81)
 2. [gitserver instances](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/shared/main.go?L116-119) - implemented by the [gitserver client](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/gitserver/client.go?L445-458) respectively
 
@@ -51,11 +51,11 @@ Before repo-updater can begin accepting work, it needs to check that the followi
 
 ### Cloud-specific dependencies
 
-If repo-updater is running in [sourcegraph.com mode](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/shared/main.go?L188-231), it will verify that certain [code hosts](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/types/types.go?L452-466) (specifically GitHub and GitLab) are properly configured. This is a requirement for us to be able to [automatically add](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/frontend/backend/repos.go?L63-97) repositories from those code hosts when users browse to them.
+If `repo-updater` is running in [sourcegraph.com mode](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/repo-updater/shared/main.go?L188-231), it will verify that certain [code hosts](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/types/types.go?L452-466) (specifically GitHub and GitLab) are properly configured. This is a requirement for us to be able to [automatically add](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/cmd/frontend/backend/repos.go?L63-97) repositories from those code hosts when users browse to them.
 
 ### Useful metrics
 
-We track a variety of metrics in repo-updater that you'll want to familiarize yourself with. For example:
+We track a variety of metrics in `repo-updater` that you'll want to familiarize yourself with. For example:
 
 - [Repositories queued for update](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/metrics.go?L88-91)
 - [Errors encountered while updating](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@737e98fe5a1c329fd2b8f1366f931941042b5671/-/blob/internal/repos/metrics.go?L63-66)
