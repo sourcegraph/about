@@ -58,6 +58,7 @@
 /* CONTENT */
 #content {
     flex: 8 4;
+    min-width: 0;
     background-color: white;
     padding: var(--spacing) var(--spacing) calc(3 * var(--spacing));
     border-radius: 3px;
