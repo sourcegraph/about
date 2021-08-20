@@ -1,0 +1,39 @@
+name: Prettier
+
+# This action works with pull requests and pushes
+on:
+  - push
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          # Make sure the actual branch is checked out when running on pull requests
+          ref: ${{ github.head_ref }}
+
+      # Make sure @sourcegraph/prettierrc is installed
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: yarn
+        run: yarn
+
+      - name: Read package.json
+        id: read_package_json
+        run: |
+          JSON=$(cat package.json)
+          echo "::set-output name=packageJson::${JSON//'%'/'%25'}"
+
+      - name: Prettier
+        uses: creyD/prettier_action@v3.3
+        with:
+          # Take prettier version from package.json to stay in sync and support upgrades through Renovate
+          prettier_version: ${{fromJson(steps.read_package_json.outputs.packageJson).devDependencies.prettier}}
+          prettier_options: --write '**/*.{js,css,scss,ts,tsx,md,html,yml,yaml,json}'
+          commit_message: squash! Prettier
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
