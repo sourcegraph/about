@@ -11,7 +11,7 @@ This is a day dedicated to writing for the blog. If you've always wanted to cont
 
 Our blog is one of the most important channels for reaching people who don't know about Sourcegraph, and establishing us as a trusted, respected developer brand. 
 
-A third of our new business comes from website traffic, and we see the highest traffic coming from technical, developer-focused blog posts. When we announced [why we're indexing the OSS universe](https://about.sourcegraph.com/blog/why-index-the-oss-universe/) we had a nearly 1,700% increase in traffic to the blog. Views of [this technical post](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/), which made the top 5 on Hacker News, account for nearly 60% of that traffic increase (with 4,166 unique views). 
+A third of our new business comes from website traffic, and we see the highest traffic coming from technical, developer-focused blog posts. When we announced [why we're indexing the OSS universe](https://about.sourcegraph.com/blog/why-index-the-oss-universe/) we had a nearly 1,700% increase in traffic to the blog. Views of [A 5x reduction in RAM usage with Zoekt memory optimizations](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/), which made the top 5 on Hacker News, account for nearly 60% of that traffic increase (with 4,166 unique views). 
 
 Our other top-performing blog post from the past three months is [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/) (3,800 unique views). 
 
