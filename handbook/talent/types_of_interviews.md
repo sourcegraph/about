@@ -302,6 +302,11 @@ In addition to the above interviews, some departments have department-specific i
   -  Duration: 60-minutes.
   -  Details: during this stage in the interview process, we will get an understanding of the technical depth of your experience and how you would contribute to our engineering culture. We will ask you about your past work and accomplishments in depth, how you worked wiht others, decisions you made, and what you'd do differently today.
 
+- Architectural interview
+  -  Interviewers(s): two members of the engineering department
+  -  Duration: 45-minutes
+  -  Details: The interview consists of open-ended questions, in order to get you to describe your mental model of designing a new system from scratch. We want to understand if you are making the right decisions when designing system architectures. We want to assess how you deal with ambiguity and how do you deal with tradeoffs, how do you approach problems of different scale and how you are able to communicate your choices to others.
+
 - Working Session
   -  Interviewer(s): two members of the engineering department
   -  Duration: 60-minutes.
