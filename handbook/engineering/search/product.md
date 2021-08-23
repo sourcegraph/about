@@ -54,9 +54,7 @@ We use a [GitHub project](https://github.com/orgs/sourcegraph/projects/181) to p
 
 #### Planning a new iteration
 
-On the last Thursday of an iteration:
-    - The EM for the team creates a section for planning discussion in the [team sync meeting notes doc](https://docs.google.com/document/d/1fozHWMTKKbs_5ojE_i9xfCLDqac8CSb6XXgYTJI9_0I/edit#). The EM and the team add any questions on missing context.
-    - The team adds any relevant issues to the "next" column of the [planning board](https://github.com/orgs/sourcegraph/projects/181).
+On the last Thursday of an iteration: - The EM for the team creates a section for planning discussion in the [team sync meeting notes doc](https://docs.google.com/document/d/1fozHWMTKKbs_5ojE_i9xfCLDqac8CSb6XXgYTJI9_0I/edit#). The EM and the team add any questions on missing context. - The team adds any relevant issues to the "next" column of the [planning board](https://github.com/orgs/sourcegraph/projects/181).
 
 We have asynchronous discussion in the meeting notes document. On the first Monday of an iteration, during the team sync, we validate the current plan & the contents of the GitHub project together, thus officially starting the iteration.
 
