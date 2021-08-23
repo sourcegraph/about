@@ -39,10 +39,11 @@ The table below breaks down the capabilities of each team within Marketing. Once
   - [Release post process](release_post_process.md)
   - [Customer marketing](customer_marketing.md)
 - [Content Marketing](content/index.md)
-    - [Editorial](content/editorial.md)
-    - [Creating blog posts](content/creating_blog_posts.md)
-    - [Editing blog posts](content/creating_blog_posts.md#editing-blog-posts)
-    - [Blog Hackathon](content/blog_hackathon.md)
+
+  - [Editorial](content/editorial.md)
+  - [Creating blog posts](content/creating_blog_posts.md)
+  - [Editing blog posts](content/creating_blog_posts.md#editing-blog-posts)
+  - [Blog Hackathon](content/blog_hackathon.md)
 
 - [Demand Gen](demandgen.md)
 
