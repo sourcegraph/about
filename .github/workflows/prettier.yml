@@ -27,17 +27,18 @@ jobs:
       # Make sure @sourcegraph/prettierrc is installed
       - run: yarn
 
-      - name: Read package.json
-        id: read_package_json
-        run: |
-          JSON=$(cat package.json)
-          echo "::set-output name=packageJson::${JSON//'%'/'%25'}"
+      - name: Read prettier version
+        id: prettier_version
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: package.json
+          prop_path: devDependencies.prettier
 
       - name: Prettier
         uses: creyD/prettier_action@v3.3
         with:
           # Take prettier version from package.json to stay in sync and support upgrades through Renovate
-          prettier_version: ${{fromJson(steps.read_package_json.outputs.packageJson).devDependencies.prettier}}
+          prettier_version: ${{steps.prettier_version.outputs.prop}}
           prettier_options: --write '**/*.{js,css,scss,ts,tsx,md,html,yml,yaml,json}'
           commit_message: squash! Prettier
         env:
