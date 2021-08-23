@@ -27,7 +27,7 @@ In support of our product/engineering Q3 objective to _Make cloud and enterprise
 
 - Workgroup: All CSEs
 - Slack Channel: #wg-cse-tools
-- ## Details: Make at least 45 doc updates/additions across the team. These can be tied to cases or not. If not, be sure to link to the PR here:
+- Details: Make at least 45 doc updates/additions across the team. These can be tied to cases or not. If not, be sure to link to the PR here:
 
 ### 3 Retro key Q2 tickets
 
