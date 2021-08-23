@@ -69,12 +69,12 @@ If we decide to move forward, we will schedule interviews with team members.
 
 We designed this synchronous exercise to measure your approach to coding a small API client in a paired setting.
 
-* We will schedule a 45-minute timeframe to work with a Sourcegraph engineer.
-* In this exercise you write an API client that processes data from a public REST API.
-* The details of the assignment will be sent to you 15-minutes before the interview.
-* You may use the language of your choice.
-* You can use your own development environment, and look up documentation on the internet.
-* You can use any open-source libraries.
+- We will schedule a 45-minute timeframe to work with a Sourcegraph engineer.
+- In this exercise you write an API client that processes data from a public REST API.
+- The details of the assignment will be sent to you 15-minutes before the interview.
+- You may use the language of your choice.
+- You can use your own development environment, and look up documentation on the internet.
+- You can use any open-source libraries.
 
 If we decide to move forward, we will schedule interviews with team members.
 
