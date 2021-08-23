@@ -73,6 +73,7 @@ There are some considerations to keep in mind to ensure that the teammate is set
 - The teammate's existing team should be in a position for them not to be involved as an IC for the whole duration of the trial period. Managers in training should not fulfill a dual role.
 - The team to be managed should comply with our [minimum viable team](eng_org.md#minimum-viable-team) criteria.
 - The team to be managed should have a dedicated and established Product Manager assigned to it.
+- The team to be managed should preferably not be one that the manager in training was an IC on.
 
 ### Manager in training trial period
 
