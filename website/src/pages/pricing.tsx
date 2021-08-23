@@ -29,7 +29,7 @@ const STARTER_FEATURES: Features = {
     customBranding: false,
     onlineTraining: false,
     customContractLegalBillingTerms: false,
-    managedInstance: false
+    managedInstance: false,
 }
 
 /** The Team feature set. */
@@ -54,7 +54,7 @@ const ENTERPRISE_FEATURES: Features = {
     onlineTraining: true,
     customContractLegalBillingTerms: false,
     unlimitedCode: true,
-    managedInstance: true
+    managedInstance: true,
 }
 
 export default ((props: any) => (
@@ -84,11 +84,11 @@ export default ((props: any) => (
                                 price={<div className="text-center">$0/mo</div>}
                                 planProperties={
                                     <>
-                                        <PricingPlanProperty>
-                                            Up to 10 users
-                                        </PricingPlanProperty>
+                                        <PricingPlanProperty>Up to 10 users</PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            Community support on our public issue tracker<br />&nbsp;
+                                            Community support on our public issue tracker
+                                            <br />
+                                            &nbsp;
                                         </PricingPlanProperty>
                                     </>
                                 }
@@ -107,11 +107,11 @@ export default ((props: any) => (
                                 price={<div className="text-center">Custom pricing</div>}
                                 planProperties={
                                     <>
-                                        <PricingPlanProperty>
-                                            Unlimited users
-                                        </PricingPlanProperty>
+                                        <PricingPlanProperty>Unlimited users</PricingPlanProperty>
                                         <PricingPlanProperty className="mt-3">
-                                            SLA with dedicated customer engineer<br />and private Slack channel
+                                            SLA with dedicated customer engineer
+                                            <br />
+                                            and private Slack channel
                                         </PricingPlanProperty>
                                     </>
                                 }
@@ -126,12 +126,19 @@ export default ((props: any) => (
 
                     <div className="row justify-content-center pt-md-4">
                         <div className="col-lg-10">
-                            <a href="/case-studies/lyft-monolith-to-microservices/" className="pricing-page__quote-link">
+                            <a
+                                href="/case-studies/lyft-monolith-to-microservices/"
+                                className="pricing-page__quote-link"
+                            >
                                 <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
                                     <p>
-                                        Sourcegraph gives us the ability to search for and refactor references to deprecated services, libraries, URL patterns, and more across our 2000+ repositories, and the confidence that we're not leaving anyone behind.
-                                </p>
-                                    <footer className="blockquote-footer text-center">Aneesh Agrawal, Software Engineer, Lyft</footer>
+                                        Sourcegraph gives us the ability to search for and refactor references to
+                                        deprecated services, libraries, URL patterns, and more across our 2000+
+                                        repositories, and the confidence that we're not leaving anyone behind.
+                                    </p>
+                                    <footer className="blockquote-footer text-center">
+                                        Aneesh Agrawal, Software Engineer, Lyft
+                                    </footer>
                                     <div className="d-flex justify-content-center my-4">
                                         <img src="/external-logos/lyft-logo.svg" width="87px" alt="Lyft" />
                                     </div>
@@ -147,7 +154,8 @@ export default ((props: any) => (
 
                                 <div className="row">
                                     <div className="col-md-6 mx-auto mb-4 pr-5">
-                                        If you have more than 10 users, you can upgrade to the Team plan. This includes all of the features of the Free plan, plus:
+                                        If you have more than 10 users, you can upgrade to the Team plan. This includes
+                                        all of the features of the Free plan, plus:
                                     </div>
                                     <div className="col-md-6 mx-auto mb-4 pl-6">
                                         Contact us to get started with the Team plan.
@@ -158,21 +166,25 @@ export default ((props: any) => (
                                         <ol className="pricing-plan__features list-group list-group-flush mr-5">
                                             <PricingPlanFeature
                                                 key="team-feature-1"
-                                                info={{ label: "Up to 25 users", description: "" }}
+                                                info={{ label: 'Up to 25 users', description: '' }}
                                                 value={true}
                                                 tag="li"
                                                 className="list-group-item bg-transparent border-0 px-0"
                                             />
                                             <PricingPlanFeature
                                                 key="team-feature-2"
-                                                info={{ label: "User and admin roles", description: "Allow only certain users (site admins) to view and edit site configuration and repository/code host credentials" }}
+                                                info={{
+                                                    label: 'User and admin roles',
+                                                    description:
+                                                        'Allow only certain users (site admins) to view and edit site configuration and repository/code host credentials',
+                                                }}
                                                 value={true}
                                                 tag="li"
                                                 className="list-group-item bg-transparent border-0 px-0"
                                             />
                                             <PricingPlanFeature
                                                 key="team-feature-3"
-                                                info={{ label: "Email support", description: "" }}
+                                                info={{ label: 'Email support', description: '' }}
                                                 value={true}
                                                 tag="li"
                                                 className="list-group-item bg-transparent border-0 px-0"
@@ -188,7 +200,6 @@ export default ((props: any) => (
                                         </a>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -196,10 +207,12 @@ export default ((props: any) => (
                     <div className="py-3 text-center">
                         <h3>Education and nonprofit discounts</h3>
                         <p>
-                            Sourcegraph supports the work of educational organizations and nonprofits.<br />
-                            Please{' '}
-                            <a href="/contact/sales/?form_submission_source=pricing-nonprofit">contact us</a> about
-                            discounts for your development teams.
+                            Sourcegraph supports the work of educational organizations and nonprofits.
+                            <br />
+                            Please <a href="/contact/sales/?form_submission_source=pricing-nonprofit">
+                                contact us
+                            </a>{' '}
+                            about discounts for your development teams.
                         </p>
                     </div>
 
@@ -209,10 +222,10 @@ export default ((props: any) => (
                         <div className="col-lg-10">
                             <a href="/case-studies/criteo-tackles-big-code/" className="pricing-page__quote-link">
                                 <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
-                                    <p>
-                                        Sourcegraph pays for itself many times over—it’s a game changer.
-                                </p>
-                                    <footer className="blockquote-footer text-center">François Jehl, Senior Engineering Manager, Criteo</footer>
+                                    <p>Sourcegraph pays for itself many times over—it’s a game changer.</p>
+                                    <footer className="blockquote-footer text-center">
+                                        François Jehl, Senior Engineering Manager, Criteo
+                                    </footer>
                                     <div className="d-flex justify-content-center my-4">
                                         <img src="/external-logos/criteo-logo.svg" width="156px" alt="Criteo" />
                                     </div>
@@ -222,7 +235,6 @@ export default ((props: any) => (
                     </div>
 
                     <hr className="my-4" />
-
                 </div>
             </div>
 
@@ -231,16 +243,12 @@ export default ((props: any) => (
                     <div className="col-md-6 pr-md-5">
                         <h3 className="display-4 font-weight-bold">Try Sourcegraph for free today</h3>
                         <p>
-                            You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your code stays
-                            local and secure).
+                            You'll be searching your own code in 10 minutes. You can run it self-hosted (all of your
+                            code stays local and secure).
                         </p>
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
-                        <Link
-                            className="btn btn-primary mx-2 mb-3"
-                            to="../#get-started"
-                            title="Try Sourcegraph now"
-                        >
+                        <Link className="btn btn-primary mx-2 mb-3" to="../#get-started" title="Try Sourcegraph now">
                             Try Sourcegraph now
                         </Link>
                     </div>

@@ -37,22 +37,28 @@ export const CaseStudyPage: React.FunctionComponent<Props> = ({
 }) => (
     <div className={`${slugify(customer).toLowerCase()}-${className} ${className}`}>
         <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
-            {heroImage && (<div className="case-studies__quote row pt-3">
-                <div className="col-lg-3">
-                    <a href={heroLink} rel="nofollow"><img className="img-fluid mx-auto d-block" src={heroImage} alt={customer} /></a>
+            {heroImage && (
+                <div className="case-studies__quote row pt-3">
+                    <div className="col-lg-3">
+                        <a href={heroLink} rel="nofollow">
+                            <img className="img-fluid mx-auto d-block" src={heroImage} alt={customer} />
+                        </a>
+                    </div>
+                    <div className="col-lg-9 ">
+                        {quote && (
+                            <div className="text-left">
+                                <p className="text-light" dangerouslySetInnerHTML={{ __html: quote.quote }} />
+                                <p className="blockquote-footer text-light mt-1">{quote.author}</p>
+                            </div>
+                        )}
+                    </div>
                 </div>
-                <div className="col-lg-9 ">
-                    {quote && <div className="text-left">
-                        <p className="text-light" dangerouslySetInnerHTML={{ __html: quote.quote }} />
-                        <p className="blockquote-footer text-light mt-1">{quote.author}</p>
-                    </div>}
-                </div>
-            </div>)}
+            )}
             {quote && !heroImage && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
             {pdf && (
                 <a href={pdf} className="btn btn-primary mt-3" rel="nofollow" target="_blank">
                     <i className="fa fa-file-pdf pr-2" />
-                        Download PDF
+                    Download PDF
                 </a>
             )}
         </CaseStudyJumbotron>
@@ -138,13 +144,13 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
     description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
     demoFormURL = '/contact/request-demo',
 }) => (
-        <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
-            <div className="container text-center pt-6">
-                <h3 className="display-3 font-weight-bold">{title}</h3>
-                <p>{description}</p>
-                <Link className="btn btn-primary mx-2 mb-3" to={demoFormURL} title="Request a demo">
-                    Schedule a demo
-                </Link>
-            </div>
-        </ContentSection>
-    )
+    <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
+        <div className="container text-center pt-6">
+            <h3 className="display-3 font-weight-bold">{title}</h3>
+            <p>{description}</p>
+            <Link className="btn btn-primary mx-2 mb-3" to={demoFormURL} title="Request a demo">
+                Schedule a demo
+            </Link>
+        </div>
+    </ContentSection>
+)
