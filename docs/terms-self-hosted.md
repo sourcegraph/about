@@ -17,15 +17,15 @@ Thank you for using Sourcegraph! This page lays out the basic terms and conditio
 
 Are you interested in terms for...
 
-* **A self-hosted Sourcegraph instance**: You're in the right place! Read on.
+- **A self-hosted Sourcegraph instance**: You're in the right place! Read on.
 
-* **[Sourcegraph.com](https://about.sourcegraph.com/terms-dotcom)**: If you’d like to use Sourcegraph.com (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with sourcegraph.com, please see our Sourcegraph.com terms and conditions at https://about.sourcegraph.com/terms-dotcom.
+- **[Sourcegraph.com](https://about.sourcegraph.com/terms-dotcom)**: If you’d like to use Sourcegraph.com (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with sourcegraph.com, please see our Sourcegraph.com terms and conditions at https://about.sourcegraph.com/terms-dotcom.
 
-* **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache.
+- **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache.
 
-* **Sourcegraph extensions**: If you’d like to use any extensions made available via our [Extension Registry](https://sourcegraph.com/extensions), please understand that extensions made available by third-parties are not provided by us and are generally governed by separate terms and conditions. Extensions that are developed and distributed by us are governed by these terms and conditions.
+- **Sourcegraph extensions**: If you’d like to use any extensions made available via our [Extension Registry](https://sourcegraph.com/extensions), please understand that extensions made available by third-parties are not provided by us and are generally governed by separate terms and conditions. Extensions that are developed and distributed by us are governed by these terms and conditions.
 
-* **[Government](https://about.sourcegraph.com/terms-gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our Supplemental Terms for U.S. Government Users at https://about.sourcegraph.com/terms-gov apply. Those terms and conditions supplement these terms and conditions.</div>
+- **[Government](https://about.sourcegraph.com/terms-gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our Supplemental Terms for U.S. Government Users at https://about.sourcegraph.com/terms-gov apply. Those terms and conditions supplement these terms and conditions.</div>
 
 PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION. THE AGREEMENT CONTAINS A MANDATORY INDIVIDUAL ARBITRATION AND CLASS ACTION/JURY TRIAL WAIVER PROVISION THAT REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR CLASS ACTIONS.
 
@@ -35,23 +35,23 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 </span>
 
-|Section|Description|
-|-|-|
-|1. [Definitions](#1-definitions)|Definitions of specific terms used on this page|
-|2. [Account terms](#2-account-terms)|Your responsibilities to use Sourcegraph|
-|3. [Acceptable use](#3-acceptable-use)|Acceptable use of Sourcegraph|
-|4. [Usage data](#4-usage-data)|Aggregate and high-level data we collect from private and self-hosted Sourcegraph instances|
-|5. [Data protection](#5-data-protection)|Our policies for protecting your data|
-|6. [Confidentiality](#6-confidentiality)|Our mutual responsibilities to protect confidential data|
-|7. [Term; termination](#7-term-termination)|When and how your account can be terminated|
-|8. [Fees](#8-fees)|Rules for payment for paid and Enterprise features|
-|9. [Third party services and software](#9-third-party-services-and-software)|Our use of third party services and software|
-|10. [No warranties; disclaimer](#10-no-warranties-disclaimer)|We make no warranties about Sourcegraph|
-|11. [Limitation of liability](#11-limitation-of-liability)|Our liabilities are limited|
-|12. [Indemnification](#12-indemnification)|Your usage of Sourcegraph is at your own risk|
-|13. [Export controls](#13-export-controls)|Usage restrictions in embargoed locations|
-|14. [Governing law; arbitration; and class action/jury trial waiver](#14-governing-law-arbitration-and-class-actionjury-trial-waiver)|Where and how disputes would be handled|
-|15. [Miscellaneous](#15-miscellaneous)|Miscellaneous topics|
+| Section                                                                                                                               | Description                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 1. [Definitions](#1-definitions)                                                                                                      | Definitions of specific terms used on this page                                             |
+| 2. [Account terms](#2-account-terms)                                                                                                  | Your responsibilities to use Sourcegraph                                                    |
+| 3. [Acceptable use](#3-acceptable-use)                                                                                                | Acceptable use of Sourcegraph                                                               |
+| 4. [Usage data](#4-usage-data)                                                                                                        | Aggregate and high-level data we collect from private and self-hosted Sourcegraph instances |
+| 5. [Data protection](#5-data-protection)                                                                                              | Our policies for protecting your data                                                       |
+| 6. [Confidentiality](#6-confidentiality)                                                                                              | Our mutual responsibilities to protect confidential data                                    |
+| 7. [Term; termination](#7-term-termination)                                                                                           | When and how your account can be terminated                                                 |
+| 8. [Fees](#8-fees)                                                                                                                    | Rules for payment for paid and Enterprise features                                          |
+| 9. [Third party services and software](#9-third-party-services-and-software)                                                          | Our use of third party services and software                                                |
+| 10. [No warranties; disclaimer](#10-no-warranties-disclaimer)                                                                         | We make no warranties about Sourcegraph                                                     |
+| 11. [Limitation of liability](#11-limitation-of-liability)                                                                            | Our liabilities are limited                                                                 |
+| 12. [Indemnification](#12-indemnification)                                                                                            | Your usage of Sourcegraph is at your own risk                                               |
+| 13. [Export controls](#13-export-controls)                                                                                            | Usage restrictions in embargoed locations                                                   |
+| 14. [Governing law; arbitration; and class action/jury trial waiver](#14-governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled                                                     |
+| 15. [Miscellaneous](#15-miscellaneous)                                                                                                | Miscellaneous topics                                                                        |
 
 <br/>
 <span style="color:#b200f8;">
@@ -152,7 +152,7 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 <span style="color:#777777"><i>**Short version**: You and we will each protect the other party’s confidential information.</i></span>
 
-6.1 **Definition**.  **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
+6.1 **Definition**. **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
 
 6.2 **Exclusions.** Confidential Information does not include any information that
 
@@ -201,7 +201,6 @@ We have implemented, and the Software contains, commercially reasonable technica
 8.6 **Renewals**. Your subscription will be automatically renewed and your credit card account (or other payment method account) will be charged as follows without further authorization from you every month, year, or other period you subscribed to. You acknowledge that your subscription is subject to automatic renewals and you consent to and accept responsibility for all related recurring charges to your applicable payment method without further authorization from you and without further notice unless required by law. You acknowledge that the amount of the recurring charge may change if the applicable tax rates change or if there has been a change in the applicable fees.
 
 8.7 **Cancellation**. Unless otherwise required by applicable law, for annual subscriptions, you must provide us with written notice of your intention not to renew at least fifteen (15) days prior to the end of the current term of your subscription.
-
 
 <span style="color:#b200f8;">
 

@@ -6,7 +6,7 @@ import { ContentSection } from '../components/content/ContentSection'
 import GetStarted from '../components/GetStarted'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
-import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated';
+import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
@@ -80,19 +80,15 @@ const Index: React.FunctionComponent = (props: any) => (
             <ContentSection className="mt-5 mb-6">
                 <div className="row">
                     <div className="col-lg-7">
-                        <img
-                            src="/opensourcecode-lg.svg"
-                            className="home__diagram w-150"
-                            alt="Open Source Code"
-                        />
+                        <img src="/opensourcecode-lg.svg" className="home__diagram w-150" alt="Open Source Code" />
                     </div>
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Search open source code, too.</h2>
                         <p>
-                            Sourcegraph is indexing every open source repository with more than 1 star. 
-                            You'll be able to search across a universe of code — currently over 1 million 
-                            repositories and counting — in milliseconds. Explore, learn from, and reference the 
-                            best community-developed code out there.
+                            Sourcegraph is indexing every open source repository with more than 1 star. You'll be able
+                            to search across a universe of code — currently over 1 million repositories and counting —
+                            in milliseconds. Explore, learn from, and reference the best community-developed code out
+                            there.
                         </p>
                         <div className="pt-1">
                             <a
@@ -126,8 +122,11 @@ const Index: React.FunctionComponent = (props: any) => (
                         <div className="card pt-0" style={{ background: "url('/customers-page-bg.svg') no-repeat" }}>
                             <strong className="card-header border-0 pb-0">Want to use Sourcegraph at work?</strong>
                             <p className="card-body mb-0 pt-1">
-                                <a href="#get-started" title="Try Sourcegraph now">Use it free</a> for up to 10 developers. To get your company
-                                to upgrade to a <Link to="/pricing">paid plan</Link>, see the{' '}
+                                <a href="#get-started" title="Try Sourcegraph now">
+                                    Use it free
+                                </a>{' '}
+                                for up to 10 developers. To get your company to upgrade to a{' '}
+                                <Link to="/pricing">paid plan</Link>, see the{' '}
                                 <Link to="/customers">customers page</Link> (to make the case). Or{' '}
                                 <a href="/contact/request-info">schedule time with us</a> for help.
                             </p>
@@ -164,10 +163,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             filter code in ways IDEs and code hosts can’t.
                         </p>
                         <div className="pt-1">
-                            <Link
-                                className="d-flex align-items-center"
-                                to="/code-search"
-                            >
+                            <Link className="d-flex align-items-center" to="/code-search">
                                 Learn more about code search <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
@@ -227,8 +223,8 @@ const Index: React.FunctionComponent = (props: any) => (
                         <div className="text-uppercase mb-3">Batch Changes</div>
                         <h2>Make large-scale code changes</h2>
                         <p>
-                            Remove legacy code, fix critical security issues, and pay down tech debt. Use Batch Changes to
-                            compute diffs and create branches and pull requests across multiple repositories. With
+                            Remove legacy code, fix critical security issues, and pay down tech debt. Use Batch Changes
+                            to compute diffs and create branches and pull requests across multiple repositories. With
                             Sourcegraph, teams move fast and fix things, safely.
                         </p>
                         <div className="pt-1">

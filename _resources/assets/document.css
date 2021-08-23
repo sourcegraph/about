@@ -25,9 +25,9 @@
     overflow-y: auto;
 }
 @media (min-width: 900px) {
-  #index {
-    max-width: 17rem;
-  }
+    #index {
+        max-width: 17rem;
+    }
 }
 #index > h3.version {
     font-weight: bold;
@@ -54,7 +54,6 @@
     margin-bottom: 0.25rem;
 }
 
-
 /* CONTENT */
 #content {
     flex: 8 4;
@@ -67,7 +66,7 @@
 }
 
 #content > .breadcrumbs:empty {
-  display: none;
+    display: none;
 }
 
 #content > .breadcrumbs {

@@ -3,7 +3,7 @@ import * as React from 'react'
 import { PostComponentProps } from './postTypes'
 import { getHTMLParts } from '../../pages/podcast'
 
-interface Props extends PostComponentProps { }
+interface Props extends PostComponentProps {}
 
 /**
  * A podcast episode post.
@@ -31,11 +31,17 @@ export const PodcastPost: React.FunctionComponent<Props> = ({
                 {guestsHTML && <p className="text-muted mb-0" dangerouslySetInnerHTML={{ __html: guestsHTML }}></p>}
             </header>
             {summaryHTML && (
-                <div className="card-body podcast-post__body pt-0 pb-0" dangerouslySetInnerHTML={{ __html: summaryHTML }} />
+                <div
+                    className="card-body podcast-post__body pt-0 pb-0"
+                    dangerouslySetInnerHTML={{ __html: summaryHTML }}
+                />
             )}
             <div className="card-body">
                 {audioHTML && (
-                    <div className="podcast-post__body audio-container" dangerouslySetInnerHTML={{ __html: audioHTML }} />
+                    <div
+                        className="podcast-post__body audio-container"
+                        dangerouslySetInnerHTML={{ __html: audioHTML }}
+                    />
                 )}
 
                 <div className="flex-1" />
