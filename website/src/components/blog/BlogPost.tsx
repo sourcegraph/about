@@ -3,7 +3,7 @@ import truncate from 'lodash/truncate'
 import * as React from 'react'
 import { PostComponentProps } from './postTypes'
 
-interface Props extends PostComponentProps { }
+interface Props extends PostComponentProps {}
 
 /**
  * A blog post.
@@ -21,17 +21,17 @@ export const BlogPost: React.FunctionComponent<Props> = ({
     const body = full ? (
         <div className="blog-post__html" dangerouslySetInnerHTML={{ __html: post.html }} />
     ) : (
-            <>
-                <p className="blog-post__excerpt">
-                    {post.frontmatter.description
-                        ? truncate(post.frontmatter.description, { length: 300 })
-                        : truncate(post.excerpt, { length: 300 })}{' '}
-                </p>
-                <Link to={url} className="blog-post__read-more">
-                    Read more
+        <>
+            <p className="blog-post__excerpt">
+                {post.frontmatter.description
+                    ? truncate(post.frontmatter.description, { length: 300 })
+                    : truncate(post.excerpt, { length: 300 })}{' '}
+            </p>
+            <Link to={url} className="blog-post__read-more">
+                Read more
             </Link>
-            </>
-        )
+        </>
+    )
 
     return (
         <Tag className={`blog-post ${className}`}>
@@ -57,8 +57,8 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                     </Link>
                 </div>
             ) : (
-                    <div className="card-body">{body}</div>
-                )}
+                <div className="card-body">{body}</div>
+            )}
         </Tag>
     )
 }

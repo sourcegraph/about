@@ -20,7 +20,7 @@ export default class HTML extends React.Component<HtmlProps> {
                 <head>
                     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NV75KPZ"></script>
                     {this.props.headComponents}
-                    
+
                     {/* So that Triblio (and other third-party scripts) can read the full URL. More details here: https://learning.triblio.com/article/212-understanding-site-referrer-policy */}
                     <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -39,15 +39,21 @@ export default class HTML extends React.Component<HtmlProps> {
                     />
 
                     {/* Adobe Source Sans Pro Fonts */}
-                    <link rel="stylesheet" href="https://use.typekit.net/ngk3rlb.css"/>
+                    <link rel="stylesheet" href="https://use.typekit.net/ngk3rlb.css" />
 
                     <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
-                    
-                    {/* Add Triblio "Webpage Personalization Script" for Sales/Marketing */}
-                    <script type='text/javascript' data-cfasync='false' src='https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8'></script>
 
-                    <script data-cookieconsent="ignore" dangerouslySetInnerHTML={{
-                        __html: `window.dataLayer = window.dataLayer || [];
+                    {/* Add Triblio "Webpage Personalization Script" for Sales/Marketing */}
+                    <script
+                        type="text/javascript"
+                        data-cfasync="false"
+                        src="https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8"
+                    ></script>
+
+                    <script
+                        data-cookieconsent="ignore"
+                        dangerouslySetInnerHTML={{
+                            __html: `window.dataLayer = window.dataLayer || [];
                                 function gtag() {
                                     dataLayer.push(arguments);
                                 }
@@ -58,44 +64,69 @@ export default class HTML extends React.Component<HtmlProps> {
                                 });
                                 gtag("set", "ads_data_redaction", true);
                     `,
-                    }}
+                        }}
                     />
 
                     {/* Google Tag Manager */}
-                    <script data-cookieconsent="ignore" dangerouslySetInnerHTML={{
-                        __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    <script
+                        data-cookieconsent="ignore"
+                        dangerouslySetInnerHTML={{
+                            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                         })(window,document,'script','dataLayer','GTM-TB4NLS7');  
                     `,
-                    }}
+                        }}
                     />
 
                     {/* End Google Tag Manager */}
-                    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d" data-blockingmode="auto" type="text/javascript"></script>
+                    <script
+                        id="Cookiebot"
+                        src="https://consent.cookiebot.com/uc.js"
+                        data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d"
+                        data-blockingmode="auto"
+                        type="text/javascript"
+                    ></script>
 
                     {/* Add jQuery as a dependency for the Clearbit script - without this Clearbit doesn't work*/}
-                    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script
+                        type="text/javascript"
+                        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+                    ></script>
 
                     {/* Add Clearbit script for Hubspot form enrichment */}
-                    <script type="text/javascript" dangerouslySetInnerHTML={{
+                    <script
+                        type="text/javascript"
+                        dangerouslySetInnerHTML={{
                             __html: `!function(e){var o=document.getElementsByTagName("script")[0];if("object"==typeof e.ClearbitForHubspot)return console.log("Clearbit For HubSpot included more than once"),!1;e.ClearbitForHubspot={},e.ClearbitForHubspot.forms=[],e.ClearbitForHubspot.addForm=function(o){var t=o[0];"function"==typeof e.ClearbitForHubspot.onFormReady?e.ClearbitForHubspot.onFormReady(t):e.ClearbitForHubspot.forms.push(t)};var t=document.createElement("script");t.async=!0,t.src="https://hubspot.clearbit.com/v1/forms/pk_a66b9ed76e62c713c06aab39bfae7234/forms.js",o.parentNode.insertBefore(t,o),e.addEventListener("message",function(o){if("hsFormCallback"===o.data.type&&"onFormReady"===o.data.eventName)if(document.querySelectorAll('form[data-form-id="'+o.data.id+'"]').length>0)e.ClearbitForHubspot.addForm(document.querySelectorAll('form[data-form-id="'+o.data.id+'"]'));else if(document.querySelectorAll("iframe.hs-form-iframe").length>0){document.querySelectorAll("iframe.hs-form-iframe").forEach(function(t){t.contentWindow.document.querySelectorAll('form[data-form-id="'+o.data.id+'"]').length>0&&e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll('form[data-form-id="'+o.data.id+'"]'))})}})}(window);
                         `,
                         }}
                     />
-
                 </head>
                 <body>
                     {/* Google Tag Manager (noscript) */}
-                    <style dangerouslySetInnerHTML={{ __html: `.gtm-hide { display:none;visibility:hidden" 0 !important}` }} />
+                    <style
+                        dangerouslySetInnerHTML={{
+                            __html: `.gtm-hide { display:none;visibility:hidden" 0 !important}`,
+                        }}
+                    />
                     <noscript>
-                        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB4NLS7" className="gtm-hide" height="0" width="0"></iframe>
+                        <iframe
+                            src="https://www.googletagmanager.com/ns.html?id=GTM-TB4NLS7"
+                            className="gtm-hide"
+                            height="0"
+                            width="0"
+                        ></iframe>
                     </noscript>
                     {/*  End Google Tag Manager (noscript) */}
 
                     {/* Add Triblio "Analytics and Overlay Cards script" for Sales/Marketing */}
-                    <script type='text/javascript' data-cfasync='false' src='https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8'></script>
+                    <script
+                        type="text/javascript"
+                        data-cfasync="false"
+                        src="https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8"
+                    ></script>
 
                     <div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
                     {this.props.postBodyComponents}

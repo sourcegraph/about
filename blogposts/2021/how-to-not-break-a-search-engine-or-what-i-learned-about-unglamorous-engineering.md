@@ -15,17 +15,16 @@ published: true
 
 ![Unglamorous engineering](https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg)
 
->_"In 2020 I flipped the switch to use a completely rewritten parser for
-Sourcegraph search queries. It serves tens of thousands of users and processes
-millions of queries. And after flipping the switch... nothing remarkable
-happened. Nobody noticed. Zero reports of implementation bugs. Everything had
-gone as planned. I'd pulled off my greatest feat of unglamorous engineering."_
-
+> _"In 2020 I flipped the switch to use a completely rewritten parser for
+> Sourcegraph search queries. It serves tens of thousands of users and processes
+> millions of queries. And after flipping the switch... nothing remarkable
+> happened. Nobody noticed. Zero reports of implementation bugs. Everything had
+> gone as planned. I'd pulled off my greatest feat of unglamorous engineering."_
 
 Early last year I started rewriting the parser that processes search queries in
 Sourcegraph—the bit that users type into the search bar. This component
 processes every single input that goes into the search bar when users search
-for code: 
+for code:
 
 <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/search-bar.png" style="width: 660px" alt="Code search input bar">
 
@@ -173,7 +172,7 @@ instance. I then ran these through a utility that parses the input with both
 new and old parsers, converts the two outputs to a unified data structure that
 encodes the query properties, and then diffs the two outputs. Any difference
 implied that the query output was interpreted differently by the backend and a
-potential bug. 
+potential bug.
 
 I caught one good bug with differential testing, where the previous parser ran
 a heuristic step that escapes a trailing dangling parenthesis for regular
@@ -225,13 +224,13 @@ account of these feats. Technical media and blogs are prone to talk about
 features or intellectual explorations. The new and shiny is naturally engaging.
 But I also want to hear about that impressive engineering feat that no one
 noticed. The one where a developer or team pulled off some tectonic shift in a
-codebase, everyone oblivious except themselves. 
+codebase, everyone oblivious except themselves.
 
 ## New capabilities while steadily transitioning the old
 
 Sourcegraph supports more combinations of operators now. And nothing outright
 broke in order to get there. In hindsight, did I go overboard on some parts and
-would I have done things differently? In short, no.  New functionality was
+would I have done things differently? In short, no. New functionality was
 rolled out iteratively and quickly in phases that users could freely try along
 the way. I also enabled new implementations on our dogfood instance as things
 matured. The core implementation and testing probably took only one or two
@@ -265,7 +264,7 @@ there's more of it happening in software all around us:
 
 I empathize with the engineers who don't have an audience for their unglamorous
 work, who want to say, "I did A Thing, there's nothing to see, but more people
-should care. Let me tell you about it!"  I like my portion of showpiece
+should care. Let me tell you about it!" I like my portion of showpiece
 engineering, don't get me wrong. But shouldn't doing the necessary, unglamorous
 work be a marketable skill as well? Where's the signage that reads "Unglamorous
 engineers wanted. Will pay handsomely"? I hope you're encouraged to share what
@@ -286,7 +285,7 @@ well-known tech company who used this title on their business card.</small></a>
 **About the author**
 
 _[Rijnard](https://twitter.com/rvtond) is interested in developing new ways to
-search, manipulate, and fix code.  He holds a PhD in Computer Science from
+search, manipulate, and fix code. He holds a PhD in Computer Science from
 Carnegie Mellon University, where he researched automated bug fixing. He enjoys
 fundamental research but also wants to make research ideas a reality in
 practice. That's why he currently works at Sourcegraph, where he applies his
