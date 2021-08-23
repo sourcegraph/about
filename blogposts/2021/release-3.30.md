@@ -1,14 +1,14 @@
 ---
-title: "Sourcegraph 3.30 release"
+title: 'Sourcegraph 3.30 release'
 publishDate: 2021-07-20T10:00-07:00
-description: "Sourcegraph 3.30 introduces support for publishing batch changes from the UI, Code Insights dashboards, a new search reference in the search sidebar, and experimental API docs."
+description: 'Sourcegraph 3.30 introduces support for publishing batch changes from the UI, Code Insights dashboards, a new search reference in the search sidebar, and experimental API docs.'
 tags: [blog, release]
-slug: "release/3.30"
+slug: 'release/3.30'
 published: true
 heroImage: https://sourcegraphstatic.com/blog/3.30/sourcegraph-3-30-live.png
 socialImage: https://sourcegraphstatic.com/blog/3.30/sourcegraph-3-30-live.png
 changelogItems:
-  - description: "Batch Changes changesets can now be published from the Sourcegraph UI."
+  - description: 'Batch Changes changesets can now be published from the Sourcegraph UI.'
     url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
     category: Batch Changes
   - description: Code Insights can now be grouped into dashboards.
@@ -17,16 +17,16 @@ changelogItems:
   - description: Search References is a new search sidebar section to simplify learning about the available search filters directly where they are used.
     url: https://github.com/sourcegraph/sourcegraph/issues/21539
     category: Search
-  - description: "API docs is enabled by default in Sourcegraph 3.30.0. It can be disabled by adding `\"apiDocs\": false` to the `experimentalFeatures` section of user settings."
+  - description: 'API docs is enabled by default in Sourcegraph 3.30.0. It can be disabled by adding `"apiDocs": false` to the `experimentalFeatures` section of user settings.'
     url: https://about.sourcegraph.com/blog/api-documentation-for-all-your-code/
     category: API Docs
-  - description: "Repository syncing is now done in streaming mode by default. Customers with many repositories should notice code host updates much faster, with repo-updater consuming less memory. Using the previous batch mode can be done by setting the `ENABLE_STREAMING_REPOS_SYNCER` environment variable to `false` in `repo-updater`. That environment variable will be deleted in the next release."
+  - description: 'Repository syncing is now done in streaming mode by default. Customers with many repositories should notice code host updates much faster, with repo-updater consuming less memory. Using the previous batch mode can be done by setting the `ENABLE_STREAMING_REPOS_SYNCER` environment variable to `false` in `repo-updater`. That environment variable will be deleted in the next release.'
     url: https://github.com/sourcegraph/sourcegraph/pull/22756
     category: Performance
-  - description: "Added support for `select:file.directory` in search queries, which returns unique directory paths for results that satisfy the query."
+  - description: 'Added support for `select:file.directory` in search queries, which returns unique directory paths for results that satisfy the query.'
     url: https://github.com/sourcegraph/sourcegraph/pull/22449
     category: Search
-  - description: "Added `file:contains.content(regexp)` predicate, which filters only to files that contain matches of the given pattern."
+  - description: 'Added `file:contains.content(regexp)` predicate, which filters only to files that contain matches of the given pattern.'
     url: https://github.com/sourcegraph/sourcegraph/pull/22666
     category: Search
   - description: You can now use a new bulk operation to close many changesets at once in Batch Changes.
@@ -41,7 +41,7 @@ changelogItems:
   - description: The repository page now has a new button to view Batch Change changesets created in that specific repository, with a badge indicating how many changesets are currently open.
     url: https://github.com/sourcegraph/sourcegraph/pull/22804
     category: Batch Changes
-  - description: "Experimental: Search-based Code Insights can run over all repositories on the instance. To enable, use the feature flag `\"experimentalFeatures\": { \"codeInsightsAllRepos\": true }`."
+  - description: 'Experimental: Search-based Code Insights can run over all repositories on the instance. To enable, use the feature flag `"experimentalFeatures": { "codeInsightsAllRepos": true }`.'
     url: https://github.com/sourcegraph/sourcegraph/issues/22759
     category: Code Insights
   - description: "Search queries now disallow specifying `rev:` without `repo:`. Note that to search across potentially multiple revisions, a query like `repo:.* rev:\u003crevision\u003e` remains valid."
@@ -53,7 +53,7 @@ changelogItems:
   - description: Search queries now return up to 80 suggested filters. Previously we returned up to 24.
     url: https://github.com/sourcegraph/sourcegraph/pull/22863
     category: Search
-  - description: "The `lang:` filter suggestions now show all supported, matching languages as the user types a language name."
+  - description: 'The `lang:` filter suggestions now show all supported, matching languages as the user types a language name.'
     url: https://github.com/sourcegraph/sourcegraph/pull/22765
     category: Search
 ---

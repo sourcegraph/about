@@ -28,14 +28,14 @@ export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, on
                 // We polyfill jQuery in gatsby-browser.js to return the form element directly.
                 if ($form && $form[0]) {
                     // We want to populate hidden fields in the form with values stored in cookies when the form loads.
-                    const anonymousIdInput = $form[0].querySelector('input[name="anonymous_user_id"]');
+                    const anonymousIdInput = $form[0].querySelector('input[name="anonymous_user_id"]')
                     if (anonymousIdInput && anonymousIdInput.value === '') {
                         // Populate the hidden anonymous_user_id form field with the value from the sourcegraphAnonymousUid cookie.
                         anonymousIdInput.value = anonymousId || ''
                     }
 
-                    const firstSourceURLInput = $form[0].querySelector('input[name="first_source_url"]');
-                    const emailInput = $form[0].querySelector('input[name="email"]');
+                    const firstSourceURLInput = $form[0].querySelector('input[name="first_source_url"]')
+                    const emailInput = $form[0].querySelector('input[name="email"]')
                     if (
                         firstSourceURLInput &&
                         firstSourceURLInput.value === '' &&

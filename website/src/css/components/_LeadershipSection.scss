@@ -13,18 +13,18 @@
         &-title {
             margin-bottom: 0;
         }
-        &-social li{
+        &-social li {
             color: $dark-9;
             padding: 0.3rem;
         }
-        &-social a:hover{
+        &-social a:hover {
             color: #6c757d;
         }
-        &-social li:first-child{
+        &-social li:first-child {
             padding-left: 0;
         }
     }
-    &__item a{
+    &__item a {
         color: $dark-9;
     }
 }

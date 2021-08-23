@@ -11,19 +11,19 @@ published: true
 description: "As of Sourcegraph 3.27, we're updating the minimum supported version of Postgres from 9.6 to 12. Here's why."
 ---
 
-As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum supported version of Postgres from 9.6 to 12. 
+As of Sourcegraph 3.27 (releasing on April 20, 2021), we're updating the minimum supported version of Postgres from 9.6 to 12.
 
 **If you are maintaining an external database** and your Postgres version is older than Postgres 12, you will need to update your database instance prior to upgrading from Sourcegraph 3.26 to 3.27. See the [following instructions](https://docs.sourcegraph.com/admin/postgres#upgrading-postgresql) for a step-by-step guide.
 
 **If you are using the Sourcegraph maintained Docker images,** your instance is already using an appropriate Postgres version and no action is needed on your part.
 
-Read the [documentation guide](https://docs.sourcegraph.com/admin/postgres#upgrading-postgresql) for instructions on how to upgrade PostgreSQL. 
+Read the [documentation guide](https://docs.sourcegraph.com/admin/postgres#upgrading-postgresql) for instructions on how to upgrade PostgreSQL.
 
 ## Why does Sourcegraph 3.27 require Postgres 12?
 
 Sourcegraph 3.27 requires support for new and old table references in statement-level triggers, but Postgres 9.6 contains an explicit SQL standard compatibility exclusion and does not support this. As noted in the documentation for [creating triggers](https://www.postgresql.org/docs/9.6/sql-createtrigger.html#SQL-CREATETRIGGER-COMPATIBILITY):
 
-> *PostgreSQL does not allow the old and new tables to be referenced in statement-level triggers, i.e., the tables that contain all the old and/or new rows, which are referred to by the OLD TABLE and NEW TABLE clauses in the SQL standard.*
+> _PostgreSQL does not allow the old and new tables to be referenced in statement-level triggers, i.e., the tables that contain all the old and/or new rows, which are referred to by the OLD TABLE and NEW TABLE clauses in the SQL standard._
 
 We are requiring Postgres 12 because it supports new and old table references in statement-level triggers.
 
@@ -96,17 +96,17 @@ The **obvious approach** would be to migrate all rows in a table associated with
 
 The **approach we chose** tracks the minimum and maximum row versions for each index in a separate, _much_ smaller table.
 
-*lsif\_data\_definitions*:
+_lsif_data_definitions_:
 
-| index_id | scheme | identifier | data | version | 
-| -------- | ------ | ---------- | ---- | ------- | 
-| 1        | foo    | bar        | .... | 1       | 
-| 1        | bar    | baz        | .... | 2       | 
-| 2        | baz    | quux       | .... | 2       | 
+| index_id | scheme | identifier | data | version |
+| -------- | ------ | ---------- | ---- | ------- |
+| 1        | foo    | bar        | .... | 1       |
+| 1        | bar    | baz        | .... | 2       |
+| 2        | baz    | quux       | .... | 2       |
 | 2        | quux   | bonk       | .... | 2       |
 | 3        | bonk   | honk       | .... | 1       |
 
-*lsif\_data\_definitions\_schema\_versions*:
+_lsif_data_definitions_schema_versions_:
 
 | index_id | min_version | max_version |
 | -------- | ----------- | ----------- |
