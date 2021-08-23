@@ -14,13 +14,13 @@ We encourage you to understand [how decisions are made at Sourcegraph](../decisi
 
 Each RFC has a status that is in the title of the RFC (e.g. "RFC 1 WIP: Title"). The author is responsible for keeping the status updated.
 
-| Status      | Description |
-| - | - |
-| WIP         | The author is still drafting the RFC and it is not ready for review. |
-| REVIEW      | The RFC is ready to be reviewed. The RFC explicitly lists who the [decider](../decisions.md#decider) is, if any [approvals](../decisions.md#approvers) are required (and by whom), and a requested timeline for those approvals. |
-| APPROVED    | All comment threads are resolved, all required approvals have been received, and the decision has been made to implement the RFC. It is in the author's best interest to avoid surprises at code review time by ensuring the RFC has a sufficient level of detail and has approval from all relevant stakeholders. |
+| Status      | Description                                                                                                                                                                                                                                                                                                                                         |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| WIP         | The author is still drafting the RFC and it is not ready for review.                                                                                                                                                                                                                                                                                |
+| REVIEW      | The RFC is ready to be reviewed. The RFC explicitly lists who the [decider](../decisions.md#decider) is, if any [approvals](../decisions.md#approvers) are required (and by whom), and a requested timeline for those approvals.                                                                                                                    |
+| APPROVED    | All comment threads are resolved, all required approvals have been received, and the decision has been made to implement the RFC. It is in the author's best interest to avoid surprises at code review time by ensuring the RFC has a sufficient level of detail and has approval from all relevant stakeholders.                                  |
 | ABANDONED   | There are no plans to move forward with this RFC. The particular reason is communicated in the metadata section of the RFC. For example, the RFC may have failed to get the necessary approvals, it may be been superseded by another RFC, priorities may have changed, or we may not have resources to work on this RFC in the foreseeable future. |
-| IMPLEMENTED | This RFC has been implemented. |
+| IMPLEMENTED | This RFC has been implemented.                                                                                                                                                                                                                                                                                                                      |
 
 A prose description of the status appears in the [metadata](#RFC-structure) of an RFC.
 
