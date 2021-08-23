@@ -15,8 +15,6 @@ For expedited reviews, contact [Dan Mckean](../company/team/index.md#dan-mckean-
 > 3. Add a new one
 > 4. Name it "Search security questionnaires", give it shortcut you'll remember, and a URL of `https://drive.google.com/drive/search?q=parent:11X8xoX9lK7aHY-UqZQIwQl_aQ8NQFu1D%20%s`
 > 5. Open a new tab and type your shortcut, then a space, then the search term you want to find!
->
->
 
 ### Customer security questions
 

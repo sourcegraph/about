@@ -306,9 +306,9 @@ While Elastic shouldn't need too much debugging, occasionally it can get itself 
 
 If you run out of disk space and can't scale the cluster because shards aren't getting scheduled due to each node hitting the low or high watermarks
 
-1. Set ` cluster.routing.allocation.disk.watermark.low ` to `92%` and ` cluster.routing.allocation.disk.watermark.high ` to `94%`.
+1. Set `cluster.routing.allocation.disk.watermark.low` to `92%` and `cluster.routing.allocation.disk.watermark.high` to `94%`.
 2. Scale the cluster _immediately_ in extended maintenance mode. In this condition, it's also fine to skip making a new snapshot, since the cluster is in an extremely unhealthy status anyways.
-3. Once scaling succeeds, set ` cluster.routing.allocation.disk.watermark.low ` back to `85%` and ` cluster.routing.allocation.disk.watermark.high ` back to `90%`.
+3. Once scaling succeeds, set `cluster.routing.allocation.disk.watermark.low` back to `85%` and `cluster.routing.allocation.disk.watermark.high` back to `90%`.
 
 If Elastic runs out of disk, the [alias may be deleted](https://discuss.elastic.co/t/failed-to-connect-to-backoff-elasticsearch-http-es01-9200-connection-marked-as-failed-because-the-onconnect-callback-failed-resource-apm-7-5-2-error-exists-but-it-is-not-an-alias/236088/2), which leads to pubsubbeat being unable to write to Elastic. A workaround is identified in [this GitHub issue](https://github.com/elastic/apm-server/issues/3698#issuecomment-620882797). These commands can be run from the [API console](https://www.elastic.co/guide/en/cloud-enterprise/current/ece-api-console.html).
 
