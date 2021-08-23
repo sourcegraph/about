@@ -160,13 +160,13 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">JSON</code>
                     </li>
-                       <li className="list-inline-item text-nowrap">
+                    <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Jsonnet</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">R</code>
                     </li>
-                     <li className="list-inline-item text-nowrap">
+                    <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">PHP</code>
                     </li>
                     <li className="list-inline-item text-nowrap">

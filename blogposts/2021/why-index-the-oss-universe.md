@@ -1,6 +1,6 @@
 ---
 title: Why we’re indexing the OSS universe
-description: "We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people."
+description: 'We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people.'
 author: Beyang Liu
 publishDate: 2021-08-19T00:00-07:00
 tags: [blog]
@@ -15,6 +15,7 @@ published: true
 We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people. By the end of the year, we will have grown our index to include every open source repository with more than 1 star on GitHub, GitLab, and other code hosts.
 
 Guido van Rossum, the creator of Python, once said:
+
 > "We compare mass ability to read and write software with mass literacy, and predict equally pervasive changes to society. Hardware is now sufficiently fast and cheap to make mass computer education possible: the next big change will happen when most computer users have the knowledge and power to create and modify software."
 
 From the beginning, Sourcegraph set out to help more people understand code by making an intuitive and fast code search engine. Our ultimate [mission](https://about.sourcegraph.com/handbook/company/strategy#mission)—to make it so everyone can code—is driven by the conviction that coding should be a universal skill. To make it so, there needs to be a way to easily search, find, and learn from existing code. While the issue of mass code literacy is much bigger than Sourcegraph, we think that making the world of open source more accessible through universal code search can help lower the barrier to entry to programming, support open source maintainers, and help more people discover and interact with code.

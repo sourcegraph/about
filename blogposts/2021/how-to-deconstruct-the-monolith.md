@@ -1,7 +1,7 @@
 ---
 title: 'How to deconstruct the monolith'
 author: Marcelo Oliveira
-authorUrl: 
+authorUrl:
 description: 'Breaking a monolith down into microservices can seem daunting. We rounded up the tools, patterns, and field-tested methods to guide your efforts towards a successful migration.'
 heroImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
 socialImage: https://sourcegraphstatic.com/blog/deconstructing-the-monolith.gif
@@ -31,10 +31,9 @@ Instead, start by building new features as microservices. By starting small and 
 
 Examples of new features that would be suitable candidates to develop as microservices include:
 
-
-*   A digital notebook that allows students to keep notes, comments, and bookmarks in a learning management system (LMS)
-*   A gift card redemption service in an e-commerce application
-*   A corporate subscription management service for a video streaming platform
+- A digital notebook that allows students to keep notes, comments, and bookmarks in a learning management system (LMS)
+- A gift card redemption service in an e-commerce application
+- A corporate subscription management service for a video streaming platform
 
 If running in the cloud, consider building initial microservices using services such as [AWS Lambda](https://aws.amazon.com/lambda/), [Azure Functions](https://azure.microsoft.com/en-us/services/functions), or [Firebase Functions](https://firebase.google.com/products/functions). These products implement function as a service (FaaS), a type of serverless computing that allows applications to run in a cloud computing execution model without a need for server provisioning and management.
 
@@ -48,26 +47,24 @@ Developing distributed services requires different tools from developing monolit
 
 This is where distributed tracing comes in. While traditional tracing can deal with requests within a single-process monolith, distributed tracing can track a single request through multiple processes.
 
-
 ### Tracing tools
 
 We can use tracing and analysis tools like [Jaeger](https://www.jaegertracing.io/), [Prometheus](https://prometheus.io/), [OpenTelemetry](https://opentelemetry.io/), and [Grafana](https://grafana.com/) to identify the parts of our monolith that see the most use and traffic. These are ideal points to start splitting code out of our monolith to scale each service separately.
 
-
 1. **Jaeger** \
-Created by Uber, Jaeger is an open-source system for tracing transactions between distributed services. Jaeger components include an agent that listens for transactions between services in the network and sends the trace to another component called the collector. Using Jaeger’s user interface, we can find traces, monitor trace duration, and discover which requests generated errors. Jaeger helps us troubleshoot distributed systems by monitoring, discovering performance issues, and performing root cause analyses.
+   Created by Uber, Jaeger is an open-source system for tracing transactions between distributed services. Jaeger components include an agent that listens for transactions between services in the network and sends the trace to another component called the collector. Using Jaeger’s user interface, we can find traces, monitor trace duration, and discover which requests generated errors. Jaeger helps us troubleshoot distributed systems by monitoring, discovering performance issues, and performing root cause analyses.
 2. **Prometheus** \
-Developed by SoundCloud, Prometheus is an open-source service that works by scraping metrics from HTTP endpoints and building a time series database with the collected results. To help monitor your microservices, Prometheus generates real-time alerts based on the aggregate information whenever it matches user-defined triggers.
+   Developed by SoundCloud, Prometheus is an open-source service that works by scraping metrics from HTTP endpoints and building a time series database with the collected results. To help monitor your microservices, Prometheus generates real-time alerts based on the aggregate information whenever it matches user-defined triggers.
 3. **OpenTelemetry** \
-The open-source observability project OpenTelemetry integrates with Jaeger and Prometheus to capture telemetry automatically. It tracks app requests and observes and debugs our services. Using correlation, OpenTelemetry helps us find the save time in finding the root cause of our services’ problems.
+   The open-source observability project OpenTelemetry integrates with Jaeger and Prometheus to capture telemetry automatically. It tracks app requests and observes and debugs our services. Using correlation, OpenTelemetry helps us find the save time in finding the root cause of our services’ problems.
 4. **Grafana** \
-    With so many tools generating numbers and logs, sometimes it’s hard to make sense of them. To help with this, you can use a tool like Grafana, an open-source visualization and analysis software that works as a frontend for other data sources, including Prometheus. It allows you to create charts and dashboards and share them with others.
+   With so many tools generating numbers and logs, sometimes it’s hard to make sense of them. To help with this, you can use a tool like Grafana, an open-source visualization and analysis software that works as a frontend for other data sources, including Prometheus. It allows you to create charts and dashboards and share them with others.
 
 ## Step 3: Say goodbye to your monolith
 
 Once we split high-traffic and high-load parts of a monolith into microservices, we should split the rest of our monolith along functional lines. For example, this includes authentication, notification, and logging. To help with this task, let’s look at two beneficial microservices patterns: the [strangler pattern](https://martinfowler.com/bliki/StranglerFigApplication.html) and the [branch by abstraction pattern](https://martinfowler.com/bliki/BranchByAbstraction.html).
 
-### The strangler pattern 
+### The strangler pattern
 
 The strangler pattern allows us to migrate from a monolithic application to microservices incrementally. It does this by extracting parts of a monolith functionality and introducing them in the new service.
 
@@ -88,8 +85,8 @@ When we can’t easily intercept calls and create a proxy to reroute the request
 Branch by abstraction requires us to modify the existing monolith’s code. It works by implementing the next few steps:
 
 1. Identify the code within the monolith that composes the functionality. This means finding out classes, methods, and parameters without worrying about the actual implementation. Finding those functional lines in a vast monolith codebase is often an arduous task. To make the lives of your microservices developers easier, consider [universal code search](/get-started). It provides a search engine for code across all your repositories and branches, so you can find and filter algorithms, definitions, and references instantaneously.
-2. Create the interfaces that compose the functionality’s abstraction. This means creating a new code that defines a new “contract” for classes, methods, and parameters discovered in the previous step. 
-3. Refactor the old monolith’s code, ensuring it adheres to the interfaces defined by the new abstraction. Notice that this step doesn’t break or change the existing functionality in any way but decouples the identified functionality from the rest of the monolith. 
+2. Create the interfaces that compose the functionality’s abstraction. This means creating a new code that defines a new “contract” for classes, methods, and parameters discovered in the previous step.
+3. Refactor the old monolith’s code, ensuring it adheres to the interfaces defined by the new abstraction. Notice that this step doesn’t break or change the existing functionality in any way but decouples the identified functionality from the rest of the monolith.
 4. Implement the new service, ensuring the existing functionality behaves precisely as in the monolith.
 5. Create feature flags that allow you to easily switch between the old monolith functionality and the new implementation based on the same abstraction.
 

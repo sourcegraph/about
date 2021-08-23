@@ -44,8 +44,7 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
     },
     batchChanges: {
         label: 'Batch Changes (available add-on)',
-        description:
-            'Automate large-scale code changes across all of your repositories and code hosts.',
+        description: 'Automate large-scale code changes across all of your repositories and code hosts.',
     },
     codeHostIntegration: {
         label: '1 code host integration',
@@ -115,8 +114,9 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
     },
     managedInstance: {
         label: 'Managed instance (available add-on)',
-        description: "Managed instances are provisioned and managed by the Sourcegraph team so you can deploy Sourcegraph without having to worry about managing it.",
-    }
+        description:
+            'Managed instances are provisioned and managed by the Sourcegraph team so you can deploy Sourcegraph without having to worry about managing it.',
+    },
 }
 
 const FEATURE_ORDER: (keyof Features)[] = [
@@ -194,7 +194,11 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
                 {planProperties}
             </div>
             <ol className="pricing-plan__features list-group list-group-flush py-3">
-                {!isFree ? <li className="pricing-plan-feature list-group-item bg-transparent border-0 px-0">All of Free, plus:</li> : null}
+                {!isFree ? (
+                    <li className="pricing-plan-feature list-group-item bg-transparent border-0 px-0">
+                        All of Free, plus:
+                    </li>
+                ) : null}
                 {FEATURE_ORDER.map(feature => (
                     <>
                         <PricingPlanFeature

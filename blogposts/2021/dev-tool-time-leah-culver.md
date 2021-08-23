@@ -1,6 +1,6 @@
 ---
 title: "'I'm happy to represent the minimalist setup lifestyle': Dev Tool Time with Leah Culver"
-description: "Leah Culver, iOS Developer at Twitter, joined us to share some developer life hacks, her minimalist, no-config philosophy for tools, and her secret for reaching inbox zero."
+description: 'Leah Culver, iOS Developer at Twitter, joined us to share some developer life hacks, her minimalist, no-config philosophy for tools, and her secret for reaching inbox zero.'
 author: Vanesa Ortiz
 authorUrl: https://twitter.com/vanesacodes
 publishDate: 2021-07-15T10:00-07:00
@@ -11,19 +11,19 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-leah
 published: true
 ---
 
-When [Leah Culver](https://twitter.com/leahculver), iOS Developer at Twitter, joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on April 28, 2021, we weren't expecting her to make us question our Google Docs habit. 
+When [Leah Culver](https://twitter.com/leahculver), iOS Developer at Twitter, joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on April 28, 2021, we weren't expecting her to make us question our Google Docs habit.
 
-We'll get to [Leah's preferred alternative to docs](#Dropbox-Paper), but a lot of Leah's developer setup is unconventional: she's mastered the art of a minimalistic workspace, working with a MacBook on her kitchen table with wired headphones/earpods and an iPhone cable to connect to iOS devices for development testing. 
+We'll get to [Leah's preferred alternative to docs](#Dropbox-Paper), but a lot of Leah's developer setup is unconventional: she's mastered the art of a minimalistic workspace, working with a MacBook on her kitchen table with wired headphones/earpods and an iPhone cable to connect to iOS devices for development testing.
 
 ![Leah's desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-leah-culver-desk.jpeg)
 
 That’s it. She keeps her setup distraction free, easy to sync with her second MacBook, portable and travel friendly. This less-is-better theme can be seen throughout her choice of developer life tools:
 
-## [Dropbox](https://www.dropbox.com/) 
+## [Dropbox](https://www.dropbox.com/)
 
 > "As a developer, one of the things I love is using other people's tools. I don't want to think about code or work or tools or systems when I'm not at work."
 
-Leah keeps all her files in the cloud, ensuring that everything is backed up and secured in case the hardware gets damaged. Setting up the environment again (if she gets a new laptop, for example) can also be done with ease. Having all her data in the cloud also allows her to keep her two MacBooks in sync with each other. 
+Leah keeps all her files in the cloud, ensuring that everything is backed up and secured in case the hardware gets damaged. Setting up the environment again (if she gets a new laptop, for example) can also be done with ease. Having all her data in the cloud also allows her to keep her two MacBooks in sync with each other.
 
 ## [GitHub](https://github.com)
 
@@ -35,7 +35,7 @@ Leah’s fondness of keeping all her data in the cloud also applies to her Git v
 
 > "I'm a big advocate of self-review."
 
-Tower is Leah’s visual Git client of choice. She likes using a GUI over the command line as it lets her preview what she’s doing clearly before committing. For example, you can see the changes as they would appear in a pull request, which makes self-reviewing (which Leah values highly) much more pleasant. 
+Tower is Leah’s visual Git client of choice. She likes using a GUI over the command line as it lets her preview what she’s doing clearly before committing. For example, you can see the changes as they would appear in a pull request, which makes self-reviewing (which Leah values highly) much more pleasant.
 
 Slightly more complex Git functionalities, such as cherry picking into other branches, can be easily accomplished through drag and drop.
 
@@ -63,7 +63,7 @@ Leah's one trick for Xcode is to use presentation mode (Preferences>Themes>Prese
 
 > "All it is is a cheap Photoshop!"
 
-Acorn has everything a developer needs in an image editor, according to Leah, without the commitment of an expensive subscription. 
+Acorn has everything a developer needs in an image editor, according to Leah, without the commitment of an expensive subscription.
 
 ## [Superhuman](https://superhuman.com/)
 
@@ -71,10 +71,10 @@ Acorn has everything a developer needs in an image editor, according to Leah, wi
 
 Leah doesn't make use of notifications or badges with email, so she can get into deep focus when she's writing code. She checks her email several times a day, and says the key is to handle things quickly as they come in, using her system:
 
-- Spam -> archive or unsubscribe 
+- Spam -> archive or unsubscribe
 - Newsletters -> skim quickly and archive
 - Notifications -> configure the tool to send only the notifications she wants to see, rather than filtering them
-- Emails that actually need attention -> deal with it right away, if possible. 
+- Emails that actually need attention -> deal with it right away, if possible.
 
 If something requires a lengthy response, she will often ask to follow up on a call instead.
 
