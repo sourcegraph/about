@@ -69,12 +69,13 @@ There are some considerations to keep in mind to ensure that the teammate is set
 - The teammate's existing team should be in a position for them not to be involved as an IC for the whole duration of the trial period. Managers in training should not fulfill a dual role.
 - The team to be managed should comply with our [minimum viable team](eng_org.md#minimum-viable-team) criteria.
 - The team to be managed should have a dedicated and established Product Manager assigned to it.
+- The team to be managed should preferably not be one that the manager in training was an IC on.
 
 ### Manager in training trial period
 
 During the trial period, the manager in training will assume full Engineering Manager responsibility as outlined in the [Engineering Manager responsibilities](roles.md#engineering-manager).
 
-The teammate's manager or another nominated manager will become their sponsoring manager for the duration of the trial period. The sponsoring manager must commit to providing extra support to the manager in training during the trial period, which will last 12 weeks. 
+The teammate's manager, director, or another nominated manager/director will become their sponsoring manager for the duration of the trial period. The sponsoring manager must commit to providing extra support to the manager in training during the trial period, which will last 12 weeks. 
 The trial period may be extended if agreed to by the manager in training and the sponsoring manager. However, the trial period should not be extended to more than 16 weeks.
 
 The sponsoring manager will give the manager in training active coaching and feedback during weekly 1-1s and conduct bi-weekly 1-1s with the manager in training's direct reports to collect feedback and set them up for success.
