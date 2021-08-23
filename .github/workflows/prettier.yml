@@ -17,7 +17,8 @@ jobs:
           persist-credentials: false
 
       # Set up correct version of node from .nvmrc (upgraded by Renovate)
-      - id: nvmrc
+      - name: Read .nvmrc
+        id: nvmrc
         run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
 
       - uses: actions/setup-node@v2
