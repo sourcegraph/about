@@ -46,7 +46,7 @@ Sourcegraph is using Okta for a few key goals:
 
 All Sourcegraph team members will have an Okta account set up as part of their onboarding process. Okta activation emails are valid for 7 days.
 
-Expect the sign-up process to take around 10 minutes. You will need to create login credentials, and set up Okta Verify on your mobile and/or desktop device for MFA. Okta Verify is available on iOS, Android, and Windows devices. You can always use 1Password’s one-time passcode feature to host your MFA codes, if you would rather. 
+Expect the sign-up process to take around 10 minutes. You will need to create login credentials, and set up Okta Verify on your mobile and/or desktop device for MFA. Okta Verify is available on iOS, Android, and Windows devices. You can always use 1Password’s one-time passcode feature to host your MFA codes, if you would rather.
 
 Contact #it-tech-ops if you need assistance setting this up.
 
