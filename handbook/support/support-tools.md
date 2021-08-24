@@ -83,9 +83,9 @@ The [Command Line Generator](https://github.com/sourcegraph/support-generator) i
 
 ### Scripts
 
-Creating customized scripts can help automate a repetitive task for the team and the customers. You can find all the existing scripts in this [directory](https://github.com/sourcegraph/support-scripts) and are welcome to write and share your own custom scripts with the team. 
+Creating customized scripts can help automate a repetitive task for the team and the customers. You can find all the existing scripts in this [directory](https://github.com/sourcegraph/support-scripts) and are welcome to write and share your own custom scripts with the team.
 
-> WARNING: This is a **public** repository. Please **do not* add any private information to any part of the repository, including the names of our customers.
+> WARNING: This is a **public** repository. Please \*_do not_ add any private information to any part of the repository, including the names of our customers.
 
 [Link to GitHub Repository for Scripts](https://github.com/sourcegraph/support-scripts)
 
