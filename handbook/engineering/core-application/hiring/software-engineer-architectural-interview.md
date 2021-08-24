@@ -1,6 +1,6 @@
 # Architectural Interview
 
-This interview applies for engineers who apply to [Core Application](../core-application/index.md) team, but might be applicable to other teams. Ask your recruiter / Hiring Manager if it applies to you as well.
+[This interview](https://github.com/sourcegraph/interviews/blob/master/engineering/software-engineer/architecture/repo-management/README.md) only applies for engineers who apply to [Core Application](../index.md) team, 
 
 The interview consists of open-ended questions, in order to get you to describe your mental model of designing a new system from scratch. We want to understand if you are making the right decisions when designing system architectures. We expect you to ask clarifying questions as the requirements for the system are on purpose ambiguously defined.
 
