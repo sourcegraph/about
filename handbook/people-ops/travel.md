@@ -98,7 +98,7 @@ Each teammate has $1,000 to spend on professional development, which could inclu
 
 ## Hotel accomodations:
 
-We advise spending within reason for the location you are visiting, with a $300 USD per night maximum spend limit.
+We advise spending within reason for the location you are visiting, with a $300 USD per night maximum spend limit (including taxes, fees, and parking).
 
 > Spending over $300 USD per night requires additional approvals from  
 > Finance / People Ops.
