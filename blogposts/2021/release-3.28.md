@@ -1,30 +1,30 @@
 ---
-title: "Sourcegraph 3.28 release"
+title: 'Sourcegraph 3.28 release'
 publishDate: 2021-05-24T10:00-07:00
-description: "The Sourcegraph 3.28 release includes new security enhancements and the redesigned extensions registry."
+description: 'The Sourcegraph 3.28 release includes new security enhancements and the redesigned extensions registry.'
 tags: [blog, release]
-slug: "release/3.28"
+slug: 'release/3.28'
 published: true
 changelogItems:
-  - description: "Added security enhancements, including 1) only site admins can list users on an instance, 2) repository permissions can now be enabled for site admins via the `authz.enforceForSiteAdmins` setting, 3) site admins can no longer view user added code host configuration, and 4) site admins cannot add access tokens for any user by default."
-    url: "https://github.com/sourcegraph/sourcegraph/pull/20619"
+  - description: 'Added security enhancements, including 1) only site admins can list users on an instance, 2) repository permissions can now be enabled for site admins via the `authz.enforceForSiteAdmins` setting, 3) site admins can no longer view user added code host configuration, and 4) site admins cannot add access tokens for any user by default.'
+    url: 'https://github.com/sourcegraph/sourcegraph/pull/20619'
     category: Admin
-  - description: "Bulk comments on many changesets are now available in Batch Changes."
+  - description: 'Bulk comments on many changesets are now available in Batch Changes.'
     url: https://github.com/sourcegraph/sourcegraph/pull/20361
     category: Batch Changes
-  - description: "Steps in batch specs can now have an `if:` attribute to enable conditional execution of different steps."
+  - description: 'Steps in batch specs can now have an `if:` attribute to enable conditional execution of different steps.'
     url: https://github.com/sourcegraph/sourcegraph/pull/20701
     category: Batch Changes
-  - description: "Default reviewers are now added to Bitbucket Server PRs opened by Batch Changes."
+  - description: 'Default reviewers are now added to Bitbucket Server PRs opened by Batch Changes.'
     url: https://github.com/sourcegraph/sourcegraph/pull/20551
     category: Batch Changes
-  - description: "The extension registry main page has a new visual design that better conveys the most useful information about extensions, and individual extension pages have better information architecture."
+  - description: 'The extension registry main page has a new visual design that better conveys the most useful information about extensions, and individual extension pages have better information architecture.'
     url: https://github.com/sourcegraph/sourcegraph/pull/20822
-    category: Extensions  
-  - description: "Added `select:commit.diff.added` and `select:commit.diff.removed` for `type:diff` search queries. These selectors return commit diffs only if a pattern matches in `added` (respectively, `removed`) lines."
+    category: Extensions
+  - description: 'Added `select:commit.diff.added` and `select:commit.diff.removed` for `type:diff` search queries. These selectors return commit diffs only if a pattern matches in `added` (respectively, `removed`) lines.'
     url: https://github.com/sourcegraph/sourcegraph/pull/20328
     category: Search
-  - description: "Added 15 additional language autocompletions for the `lang:` filter in the search bar."
+  - description: 'Added 15 additional language autocompletions for the `lang:` filter in the search bar.'
     url: https://github.com/sourcegraph/sourcegraph/pull/20535
     category: Search
 ---
@@ -54,6 +54,7 @@ Code Insights answers high-level questions about your code by analyzing specific
 Managing large number of changesets requires a lot of manual work. Having to manually comment, close or merge hundreds of changesets takes time: spending 15 seconds adding a comment on 500 changesets manually would result in 2 hours of work (and killing your motivation for the day).
 
 Bulk actions allow users to automate taking an action on many changesets at a time. In this release, we are introducing a first bulk action: **comments**. Common use cases include:
+
 - nudge repository owners to merge starving changesets "This batch change is now 54% merged, consider merging yours!"
 - add links to docs, or add instructions to all the changesets in a batch change
 - [Read more](https://docs.sourcegraph.com/batch_changes/how-tos/bulk_operations_on_changesets)
@@ -71,6 +72,7 @@ Bulk actions makes Batch Changes very convenient for tracking and managing chang
 Our philosophy is that the easier it is to automate complex cases, the more the default behaviour will be to automate changes instead of defaulting to "it's too complex, I'll do it manually". By making things easy and clean, we encourage automation.
 
 Sometimes you need to run different batch changes steps depending on the repository, to take edge cases into account or make complex changes. For example:
+
 - step 1: do something on some repositories, do something else on others
 - step 2: run a linter, except on a specific repository
 

@@ -177,8 +177,8 @@ export default ((props: any) => (
                             time to recovery. Find breaking changes, with diff and commit search returning all matching
                             search results to identify everywhere a pattern, package, or API is used. Mitigate tech
                             security and compliance risks with saved searches to alert for known vulnerabilities and
-                            risky code changes. Then, use Batch Changes to automate the process of fixing, merging, and deploying
-                            the necessary changes across codebases.
+                            risky code changes. Then, use Batch Changes to automate the process of fixing, merging, and
+                            deploying the necessary changes across codebases.
                         </p>
                     </div>
                     <div className="col-lg-7 pl-lg-6">
@@ -327,5 +327,5 @@ export default ((props: any) => (
             </ContentSection>
             <TrySourcegraph />
         </div>
-    </Layout >
+    </Layout>
 )) as React.FunctionComponent<any>

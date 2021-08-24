@@ -9,40 +9,39 @@ interface GetStartedProps {
 
 export default class GetStarted extends React.PureComponent<GetStartedProps> {
     public copyText = () => {
-        const copyText = document.getElementById('installText').textContent;
-        const textArea = document.createElement('textarea');
-        document.getElementById('installText').style.backgroundColor = '#ccedff';
-        textArea.textContent = copyText;
-        document.body.append(textArea);
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
+        const copyText = document.getElementById('installText').textContent
+        const textArea = document.createElement('textarea')
+        document.getElementById('installText').style.backgroundColor = '#ccedff'
+        textArea.textContent = copyText
+        document.body.append(textArea)
+        textArea.select()
+        document.execCommand('copy')
+        document.body.removeChild(textArea)
     }
     public render(): JSX.Element | null {
         return (
             <div className={`get-started ${this.props.className || ''}`} id="get-started">
                 <div className="container">
-                    <h1 id="get-started" className="display-2 font-weight-bold mb-5">Self-hosted deployment</h1>
+                    <h1 id="get-started" className="display-2 font-weight-bold mb-5">
+                        Self-hosted deployment
+                    </h1>
                     <div className="row">
                         <div className="col-lg-6 get-started__local">
                             <h2 className="get-started__search-headings">Install Sourcegraph locally:</h2>
                             <div className="get-started__installtext border boxshadow" onClick={() => this.copyText()}>
-                                <span id="installText">docker run <br />
+                                <span id="installText">
+                                    docker run <br />
                                     --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                     --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                     --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                    sourcegraph/server:3.30.4</span>
+                                    sourcegraph/server:3.30.4
+                                </span>
                                 <span className="get-started__copytext">
-                                    <FileDocumentMultipleOutlineIcon
-                                        className="copytext icon-inline ml-1 medium"
-                                    />
+                                    <FileDocumentMultipleOutlineIcon className="copytext icon-inline ml-1 medium" />
                                 </span>
                             </div>
                             <p>
-                                <a
-                                    className="d-inline-flex mt-5 font-weight-bold"
-                                    href="https://docs.sourcegraph.com" 
-                                >
+                                <a className="d-inline-flex mt-5 font-weight-bold" href="https://docs.sourcegraph.com">
                                     Deploy to a server or cluster <ArrowRightIcon className="ml-1" />
                                 </a>
                             </p>
@@ -63,10 +62,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                 <li>Connect to private code hosts (and local installs)</li>
                                 <li>Free trial for enterprise features</li>
                             </ul>
-                            <a
-                                className="d-inline-flex font-weight-bold"
-                                href="https://docs.sourcegraph.com" 
-                            >
+                            <a className="d-inline-flex font-weight-bold" href="https://docs.sourcegraph.com">
                                 Learn about self-hosted vs. cloud features <ArrowRightIcon className="ml-1" />
                             </a>
                         </div>

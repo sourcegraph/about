@@ -20,6 +20,7 @@ Sourcegraph provides Universal Code Search, which enables developers to explore 
 Coding doesn’t have to be as complex as the solution Sourcegraph offers, however. It can be as simple as 'A is for App,' 'B is for Binary,' and 'C is for Code'. Get your little ones familiar with the basics of software development by downloading Our ABCs: Always Be Coding here: [https://bit.ly/3bxgeKq](https://bit.ly/3bxgeKq)
 
 ## What Kids Are Saying About 'Our ABCs: Always Be Coding'
+
 "I know my ABCs but this book helped me understand things I didn’t know before like what Debug and Open Source meant. One day, I might want to create my own app or be an engineer so this is cool for easy learning."
 &mdash; Kenslie, age 11
 

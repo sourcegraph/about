@@ -1,6 +1,6 @@
 ---
 title: "'I basically want my whole computing environment to be programmable': Dev Tool Time with Thorsten Ball"
-description: "Thorsten Ball, software engineer at Sourcegraph, shares how he uses tmux as a window manager for the terminal, and goes to bat for Vim."
+description: 'Thorsten Ball, software engineer at Sourcegraph, shares how he uses tmux as a window manager for the terminal, and goes to bat for Vim.'
 author: Rebecca Dodd
 authorUrl: https://about.sourcegraph.com/handbook/company/team#rebecca-dodd-she-her
 publishDate: 2021-08-18T10:00-07:00
@@ -11,17 +11,17 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-thor
 published: true
 ---
 
-Our very first guest for Dev Tool Time was [Thorsten Ball](https://about.sourcegraph.com/handbook/company/team#thorsten-ball-he-him), a software engineer here at Sourcegraph. Thorsten is on the [Batch Changes](https://about.sourcegraph.com/handbook/engineering/batch-changes) team and works in just two main applications throughout the day: a browser and the terminal, in which he uses tmux as a window manager. 
+Our very first guest for Dev Tool Time was [Thorsten Ball](https://about.sourcegraph.com/handbook/company/team#thorsten-ball-he-him), a software engineer here at Sourcegraph. Thorsten is on the [Batch Changes](https://about.sourcegraph.com/handbook/engineering/batch-changes) team and works in just two main applications throughout the day: a browser and the terminal, in which he uses tmux as a window manager.
 
 You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let's check out Thorsten's desk:
 
 ![Thorsten's hardware setup](https://sourcegraphstatic.com/blog/dev-tool-time/thorsten_ball_desk_setup.jpg)
 
-## Hardware setup 
+## Hardware setup
 
-> "If somebody is thinking about whether they should buy an expensive chair or not, they should. It's invaluable ... I'm embarrassed to say, but I guess it's like 12 hours a day [I spend in this chair] and I don't have any back pain or anything, I'm super comfortable." 
+> "If somebody is thinking about whether they should buy an expensive chair or not, they should. It's invaluable ... I'm embarrassed to say, but I guess it's like 12 hours a day [I spend in this chair] and I don't have any back pain or anything, I'm super comfortable."
 
-Thorsten's combo of Steelcase [height-adjustable desk](https://www.steelcase.com/products/height-adjustable-desks/ology/) and [chair](https://www.steelcase.com/products/office-chairs/gesture/) keep him comfortable even on long days starting with personal programming, followed by work, and then gaming in the evening. He bought the [gaming mouse](https://www.razer.com/gaming-mice/razer-deathadder-v2/RZ01-03210100-R3U1) on a whim and highly recommends it: "It's amazing how much it changes the feel of how you use a mouse." 
+Thorsten's combo of Steelcase [height-adjustable desk](https://www.steelcase.com/products/height-adjustable-desks/ology/) and [chair](https://www.steelcase.com/products/office-chairs/gesture/) keep him comfortable even on long days starting with personal programming, followed by work, and then gaming in the evening. He bought the [gaming mouse](https://www.razer.com/gaming-mice/razer-deathadder-v2/RZ01-03210100-R3U1) on a whim and highly recommends it: "It's amazing how much it changes the feel of how you use a mouse."
 
 ### Other hardware:
 
@@ -36,7 +36,7 @@ Thorsten's combo of Steelcase [height-adjustable desk](https://www.steelcase.com
 - [HP Z27 4k monitor](https://www.hp.com/us-en/shop/pdp/hp-z27-27-inch-4k-uhd-display-2tb68a4-191628968732-partner)
 - [Shure BETA 87a microphone](https://www.shure.com/en-GB/products/microphones/beta_87a)
 - [Focusrite Scarlett 2i2 USB audio interface](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2)
-[Bose QuietComfort 35 Wireless noise-canceling headphones](https://www.bose.co.uk/en_gb/products/headphones/over_ear_headphones/quietcomfort-35-wireless-ii.html#v=qc35_ii_black)
+  [Bose QuietComfort 35 Wireless noise-canceling headphones](https://www.bose.co.uk/en_gb/products/headphones/over_ear_headphones/quietcomfort-35-wireless-ii.html#v=qc35_ii_black)
 - [DURGOD TAURUS k320 Mechanical Keyboard (Cherry MX switches) in brown](https://www.durgodkeyboard.com/product/durgod-k320-taurus-mechanical-keyboard-cherry-mx-switches-nkro-87-key-gaming-keyboard/)
 
 ## [Google Chrome](https://www.google.com/intl/en_uk/chrome/)
@@ -56,11 +56,12 @@ command.
 He essentially uses tmux as a window manager, since (as mentioned above) Kitty is always in non-native full screen mode, where it covers _everything_.
 
 Inside tmux Thorsten uses:
-* zsh
-* neovim (now also switched over to built-in LSP support)
-* fzf
-* z
-* riprep
+
+- zsh
+- neovim (now also switched over to built-in LSP support)
+- fzf
+- z
+- riprep
 
 ## [Vim](https://www.vim.org/) and [Neovim](https://neovim.io/)
 
@@ -70,13 +71,13 @@ This is Thorsten's main editor thanks to our coworker [TJ](https://www.twitch.tv
 
 > "Down here at the bottom there's a small X and a 1 which means you know there's one error in the file and you can jump to it from wherever you are in the file... that has been a source of joy in the past two weeks."
 
-Thorsten's also a big fan of Vim's modal editing: 
+Thorsten's also a big fan of Vim's modal editing:
 
 > "Once you get used to it and you grok it, then you don't want to miss it. Editing text becomes fun and enjoyable."
 
 ## [Alfred](https://www.alfredapp.com/)
 
-A sort of predecessor to Spotlight, Alfred is a tool Thorsten uses for shortcuts when searching with [Sourcegraph](https://sourcegraph.com/) and handy helpers. 
+A sort of predecessor to Spotlight, Alfred is a tool Thorsten uses for shortcuts when searching with [Sourcegraph](https://sourcegraph.com/) and handy helpers.
 
 ## [GitHub](https://github.com/)
 
@@ -86,11 +87,11 @@ Our workflow at Sourcegraph is based on Git, so Thorsten uses the [GitHub CLI](h
 
 These weren't covered in the episode but are also key parts of Thorsten's stack:
 
-* [Todoist](https://todoist.com/) as a todo app, on second screen
-* [Fantastical](https://flexibits.com/fantastical) as a calendar, also second screen
-* Sometimes [VS Code](https://code.visualstudio.com/), if he does TypeScript
-* [Cleanshot X](https://cleanshot.com/)
-* [Monodraw](https://monodraw.helftone.com/)
+- [Todoist](https://todoist.com/) as a todo app, on second screen
+- [Fantastical](https://flexibits.com/fantastical) as a calendar, also second screen
+- Sometimes [VS Code](https://code.visualstudio.com/), if he does TypeScript
+- [Cleanshot X](https://cleanshot.com/)
+- [Monodraw](https://monodraw.helftone.com/)
 
 ## Watch the recording
 

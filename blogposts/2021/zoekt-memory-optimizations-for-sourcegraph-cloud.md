@@ -85,7 +85,7 @@ type arrayNgramOffset struct {
 For [slightly more complexity](https://github.com/sourcegraph/zoekt/commit/2602014e1fafa254900241b6f19b3c4e7da07ced), the 64-bit ngrams can be cut into 32-bit top and bottom pieces. Thanks to how the rune packing works, this is very similar to the top half representing the first character of the trigram, and the bottom half being the second two characters. This reduces memory usage even further to 3.5GB.
 
 ```go
-// arrayNgramOffset splits ngrams into two 32-bit parts and uses binary search. 
+// arrayNgramOffset splits ngrams into two 32-bit parts and uses binary search.
 type arrayNgramOffset struct {
        // tops specify where the bottom halves of ngrams with the 32-bit top half begin.
        // The offset of the next value is used to find where the bottom section ends.
