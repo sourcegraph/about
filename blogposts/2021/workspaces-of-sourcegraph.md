@@ -1,5 +1,5 @@
 ---
-title: "Improving code display: A look at 17 developer workspaces"
+title: 'Improving code display: A look at 17 developer workspaces'
 author: Rob Rhyne
 authorUrl: https://twitter.com/robrhyne
 publishDate: 2021-03-16T18:00+02:00
@@ -13,29 +13,33 @@ description: "We asked 17 Sourcegraph developers about their workspace preferenc
 
 ![Workspaces of Soucegraph graphic](/blog/workspaces-of-sourcegraph-final-compressed.jpg)
 
-Developers read *a lot*. We read books, blog posts, documentation, but mostly, we read code. We read so much code, that many of us have become quite particular about how it is displayed. 
+Developers read _a lot_. We read books, blog posts, documentation, but mostly, we read code. We read so much code, that many of us have become quite particular about how it is displayed.
 
 Since searching and reading code are intrinsically related, the Sourcegraph design team began to study how we could improve the display of code in Sourcegraph. Our goal is to make reading code easier, so it makes sense that we would study the place developers can decide exactly how their code should look: their editors.
 
 While our research is far from complete, we thought you might find a breakdown of the visual characteristics of where our team writes code of interest.
 
 ## Light/dark mode and contrast
-Three-quarters of our engineers preferred a dark theme over a light theme.  Curiously, the majority of our dark mode users chose a lower contrast between code and background than their light theme oriented peers. Background colors averaged 85% black and the primary code color to background contrast ratio averaged 9 to 1.  This seems to contradict the dark themes offered by many other developer tools, where dark is often interpreted as near 100% black and text is often 100% white. 
 
-Conversely, all light mode users at Sourcegraph prefer the maximum contrast with 100% white backgrounds and a black primary code color. 
+Three-quarters of our engineers preferred a dark theme over a light theme. Curiously, the majority of our dark mode users chose a lower contrast between code and background than their light theme oriented peers. Background colors averaged 85% black and the primary code color to background contrast ratio averaged 9 to 1. This seems to contradict the dark themes offered by many other developer tools, where dark is often interpreted as near 100% black and text is often 100% white.
+
+Conversely, all light mode users at Sourcegraph prefer the maximum contrast with 100% white backgrounds and a black primary code color.
 
 ![Representative contrast](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/workspace-contrast.png)
-*Contrast representative of typical dark and light modes.*
+_Contrast representative of typical dark and light modes._
 
 ## Information density
-There are clearly two camps: those who use an Integrated Developer Environment (IDE), which in this case is mainly VS Code, and terminal-based editors such as neovim/vim/emacs users. Editor users had around 96% of editor screen real estate dedicated to code. IDE users had from 80% to 90% of their screens dedicated to code or the terminal, with the rest occupied by file trees and other UIs such as menus and tabs. 
+
+There are clearly two camps: those who use an Integrated Developer Environment (IDE), which in this case is mainly VS Code, and terminal-based editors such as neovim/vim/emacs users. Editor users had around 96% of editor screen real estate dedicated to code. IDE users had from 80% to 90% of their screens dedicated to code or the terminal, with the rest occupied by file trees and other UIs such as menus and tabs.
 
 ## Fonts are commonly customized
-Over half of our engineers customize their programing font.  Among these users, [FiraCode](https://github.com/tonsky/FiraCode) was the most popular choice, followed by  [JetBrains Mono](https://www.jetbrains.com/lp/mono/). Other fonts include  [MonoStroom](https://github.com/Strum355/MonoStroom), [Cascadia Code](https://github.com/microsoft/cascadia-code),  and [Hack](https://sourcefoundry.org/hack/).
 
-Why customize your programming font? Glad you asked! Code, like no other language, can be dramatically altered by the slightest change. Programming fonts make it easier to distinguish characters and can render operators with [custom ligatures](https://github.com/tonsky/FiraCode#whats-in-the-box) to enhance readability. These traits can reduce errors and lead to better applications. 
+Over half of our engineers customize their programing font. Among these users, [FiraCode](https://github.com/tonsky/FiraCode) was the most popular choice, followed by [JetBrains Mono](https://www.jetbrains.com/lp/mono/). Other fonts include [MonoStroom](https://github.com/Strum355/MonoStroom), [Cascadia Code](https://github.com/microsoft/cascadia-code), and [Hack](https://sourcefoundry.org/hack/).
+
+Why customize your programming font? Glad you asked! Code, like no other language, can be dramatically altered by the slightest change. Programming fonts make it easier to distinguish characters and can render operators with [custom ligatures](https://github.com/tonsky/FiraCode#whats-in-the-box) to enhance readability. These traits can reduce errors and lead to better applications.
 
 ## What we learned
+
 While these results are not statistically significant, one trend does stand out: developers will customize their environments to improve the readability of code. Keep scrolling to check out some of the setups Sourcegraphers have deployed to help them create universal code search.
 
 **What editors, themes and fonts do you use? Tweet us at @sourcegraph to share your thoughts and images. Make sure to not include sensitive information in any screens you share!**
@@ -43,7 +47,6 @@ While these results are not statistically significant, one trend does stand out:
 ## Workspaces of Sourcegraph
 
 As part of our research, we asked Sourcegraph engineers to share their set up. Here's a look at 17 individual setups in greater detail.
-
 
 ## Rob Rhyne, Product Designer
 
@@ -196,10 +199,9 @@ In my editor I keep open every file (usually <60) that I have interacted with wh
 - Vim configuration: https://github.com/mrnugget/vimconfig
 - Dotfiles: https://github.com/mrnugget/dotfiles
 
-I basically do everything either in tmux or in the browser. In tmux I spawn lots of windows/shells as I need them, but have different sessions for work, private recreational programming, and other things.  In the browser I always have 3 pinned tabs (for gmail accounts and other email account). I also use Alfred a lot (to search Sourcegraph for example).
+I basically do everything either in tmux or in the browser. In tmux I spawn lots of windows/shells as I need them, but have different sessions for work, private recreational programming, and other things. In the browser I always have 3 pinned tabs (for gmail accounts and other email account). I also use Alfred a lot (to search Sourcegraph for example).
 
 ![Workspace of Thorsten Ball, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/thorsten.png)
-
 
 ## TJ Kandala, Software Engineer
 
@@ -210,7 +212,6 @@ I basically do everything either in tmux or in the browser. In tmux I spawn lots
 - Misc: Fira Code font, Tilix terminal emulator
 
 ![Workspace of TJ Kandala, Software Engineer](https://storage.googleapis.com/sourcegraph-assets/blog/workspaces-of-sourcegraph/tj.png)
-
 
 ## Quinn Keast, Product Designer
 
@@ -224,6 +225,6 @@ I'm experimenting with the Nova editor alongside VSCode, which replaced Sublime 
 ![Primary screen workspace organization of Quinn Keast, Product Designer](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/Quinn-Keast-1.png)
 ![Secondary screen workspace organization of Quinn Keast, Product Designer](https://sourcegraphstatic.com/blog/workspaces-of-sourcegraph/Quinn-Keast-2.png)
 
-# What does your editor look like? 
+# What does your editor look like?
 
 We want to see your setup too! Tweet it to us [@sourcegraph](https://twitter.com/sourcegraph).

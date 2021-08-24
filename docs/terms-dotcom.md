@@ -19,15 +19,15 @@ Thank you for using Sourcegraph! This page lays out the basic terms and conditio
 
 Are you interested in terms for...
 
-* **Sourcegraph.com**: You're in the right place! Read on.
+- **Sourcegraph.com**: You're in the right place! Read on.
 
-* **[A self-hosted Sourcegraph instance](https://about.sourcegraph.com/terms-self-hosted)**: If you’d like to use a self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your code, rather than the Sourcegraph.com instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your self-hosted instance, please see our terms and conditions at https://about.sourcegraph.com/terms-self-hosted.
+- **[A self-hosted Sourcegraph instance](https://about.sourcegraph.com/terms-self-hosted)**: If you’d like to use a self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your code, rather than the Sourcegraph.com instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your self-hosted instance, please see our terms and conditions at https://about.sourcegraph.com/terms-self-hosted.
 
-* **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache.
+- **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache.
 
-* **Sourcegraph extensions**: If you’d like to use any extensions made available via our [Extension Registry](https://sourcegraph.com/extensions), please understand that extensions made available by third-parties are not provided by us and are generally governed by separate terms and conditions. Extensions that are developed and distributed by us are governed by these terms and conditions.
+- **Sourcegraph extensions**: If you’d like to use any extensions made available via our [Extension Registry](https://sourcegraph.com/extensions), please understand that extensions made available by third-parties are not provided by us and are generally governed by separate terms and conditions. Extensions that are developed and distributed by us are governed by these terms and conditions.
 
-* **[Government](https://about.sourcegraph.com/terms-gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our Supplemental Terms for U.S. Government Users at https://about.sourcegraph.com/terms-gov apply. Those terms and conditions supplement these terms and conditions.</div>
+- **[Government](https://about.sourcegraph.com/terms-gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our Supplemental Terms for U.S. Government Users at https://about.sourcegraph.com/terms-gov apply. Those terms and conditions supplement these terms and conditions.</div>
 
 PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION. THE AGREEMENT CONTAINS A MANDATORY INDIVIDUAL ARBITRATION AND CLASS ACTION/JURY TRIAL WAIVER PROVISION THAT REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR CLASS ACTIONS.
 
@@ -37,23 +37,23 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 </span>
 
-|Section|Description|
-|-|-|
-|1. [Definitions](#1-definitions)|Definitions of specific terms used on this page|
-|2. [Account terms](#2-account-terms)|Your responsibilities to use Sourcegraph.com|
-|3. [Proprietary rights and licenses](#3-proprietary-rights-and-licenses)|Your rights and ours when you use Sourcegraph.com|
-|4. [Usage data](#4-usage-data)|Data we collect on Sourcegraph.com|
-|5. [Privacy and security](#5-privacy-and-security)|Our policies for protecting your data|
-|6. [Termination](#6-termination)|When and how your account can be terminated|
-|7. [No fees](#7-no-fees)|Sourcegraph.com is free|
-|8. [Third party services and software](#8-third-party-services-and-software)|Our use of third party services and software|
-|9. [Copyright infringement and DMCA policy](#9-copyright-infringement-and-DMCA-policy)|How we handle IP infringment|
-|10. [No warranties; disclaimer](#10-no-warranties-disclaimer)|We make no warranties about Sourcegraph.com|
-|11. [Limitation of liability](#11-limitation-of-liability)|Our liabilities are limited|
-|12. [Indemnification](#12-indemnification)|Your usage of Sourcegraph.com is at your own risk|
-|13. [Location of the Services; export controls](#13-location-of-the-services-export-controls)|Usage restrictions in embargoed locations|
-|14. [Governing law; arbitration; and class action/jury trial waiver](#14-governing-law-arbitration-and-class-actionjury-trial-waiver)|Where and how disputes would be handled|
-|15. [Miscellaneous](#15-miscellaneous)|Miscellaneous topics|
+| Section                                                                                                                               | Description                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| 1. [Definitions](#1-definitions)                                                                                                      | Definitions of specific terms used on this page   |
+| 2. [Account terms](#2-account-terms)                                                                                                  | Your responsibilities to use Sourcegraph.com      |
+| 3. [Proprietary rights and licenses](#3-proprietary-rights-and-licenses)                                                              | Your rights and ours when you use Sourcegraph.com |
+| 4. [Usage data](#4-usage-data)                                                                                                        | Data we collect on Sourcegraph.com                |
+| 5. [Privacy and security](#5-privacy-and-security)                                                                                    | Our policies for protecting your data             |
+| 6. [Termination](#6-termination)                                                                                                      | When and how your account can be terminated       |
+| 7. [No fees](#7-no-fees)                                                                                                              | Sourcegraph.com is free                           |
+| 8. [Third party services and software](#8-third-party-services-and-software)                                                          | Our use of third party services and software      |
+| 9. [Copyright infringement and DMCA policy](#9-copyright-infringement-and-DMCA-policy)                                                | How we handle IP infringment                      |
+| 10. [No warranties; disclaimer](#10-no-warranties-disclaimer)                                                                         | We make no warranties about Sourcegraph.com       |
+| 11. [Limitation of liability](#11-limitation-of-liability)                                                                            | Our liabilities are limited                       |
+| 12. [Indemnification](#12-indemnification)                                                                                            | Your usage of Sourcegraph.com is at your own risk |
+| 13. [Location of the Services; export controls](#13-location-of-the-services-export-controls)                                         | Usage restrictions in embargoed locations         |
+| 14. [Governing law; arbitration; and class action/jury trial waiver](#14-governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled           |
+| 15. [Miscellaneous](#15-miscellaneous)                                                                                                | Miscellaneous topics                              |
 
 <br/>
 <span style="color:#b200f8;">
@@ -100,13 +100,13 @@ As used on this page, the following terms have the following specific meanings:
 
 3. **Security**. You’re responsible for the security of your Account when using our Services. While we may offer tools to help you maintain your Account’s security, these are not guaranteed to work. Accordingly:
 
-    (i) you’re responsible for all Content posted under your Account (even if you didn't post it);
+   (i) you’re responsible for all Content posted under your Account (even if you didn't post it);
 
-    (ii) you’re responsible for maintaining the security of your Account and password and we have no liability of any kind for any loss or damage from your failure to secure them; and
+   (ii) you’re responsible for maintaining the security of your Account and password and we have no liability of any kind for any loss or damage from your failure to secure them; and
 
-    (iii) you must notify us immediately on becoming aware of any unauthorized use of or access to the Services through your Account.
+   (iii) you must notify us immediately on becoming aware of any unauthorized use of or access to the Services through your Account.
 
-2.2  **Required Information**. In order to register for an Account, you must provide all of the information we request during the onboarding process. We may use that information in accordance with our [Privacy Policy](/privacy).
+2.2 **Required Information**. In order to register for an Account, you must provide all of the information we request during the onboarding process. We may use that information in accordance with our [Privacy Policy](/privacy).
 
 <span style="color:#b200f8;">
 
@@ -116,9 +116,9 @@ As used on this page, the following terms have the following specific meanings:
 
 <span style="color:#777777"><i>**Short version**: You’re allowed to use the services for any reasonable purpose (e.g. don’t use it to host illegal content). Because the services are made available on a hosted basis, we – like most sites – will collect data about your use of the services (e.g., click rates and other metadata) and can use it to run our business. If you give us a great idea about how to improve our services, we can use it.</i></span>
 
-3.1  **License from Us to You**.
+3.1 **License from Us to You**.
 
-1. **Grant**.  Subject to the terms and conditions of the Agreement, we hereby grant to you a limited, revocable, non-transferable, non-sublicensable (except, with respect to Organizations, to your employees and contractors performing services for you or on your behalf) license to access and use the Services in order to review Code Data in the manner contemplated by the Agreement and the Documentation, solely for your internal business purposes. You may only use the Documentation to support your use of the Services. All rights in the Services and Code Data not expressly granted herein are hereby reserved by us.
+1. **Grant**. Subject to the terms and conditions of the Agreement, we hereby grant to you a limited, revocable, non-transferable, non-sublicensable (except, with respect to Organizations, to your employees and contractors performing services for you or on your behalf) license to access and use the Services in order to review Code Data in the manner contemplated by the Agreement and the Documentation, solely for your internal business purposes. You may only use the Documentation to support your use of the Services. All rights in the Services and Code Data not expressly granted herein are hereby reserved by us.
 
 2. **Restrictions**. You may not, and may not permit any third-party to redistribute, encumber, sell, rent, lease, sublicense, or otherwise transfer rights to all or any part of the Services or Code Data without our prior written approval. Your use of the Site and Services must not violate any applicable laws, including copyright or trademark laws, export control or sanctions laws, or other laws in your jurisdiction. You are responsible for making sure that your use of the Site and Services complies with laws and any applicable regulations.
 
@@ -128,21 +128,21 @@ As used on this page, the following terms have the following specific meanings:
 
 2. **Grant**. By posting UGC on or through the Services, you grant (and you represent and warrant that you have all rights necessary to grant) to Sourcegraph a royalty-free, sublicensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, modify, and publish all such UGC via the Services (including your name, voice, and/or likeness as contained in your UGC) for the limited purposes of:
 
-    (i) providing and improving the Services;
+   (i) providing and improving the Services;
 
-    (ii) protecting the Services to prevent abuse; 
+   (ii) protecting the Services to prevent abuse;
 
-    (iii) tailoring the Services to you; and
-    
-    (iv) marketing the Services.
-    
-We do not use any Content (including any UGC) in private repositories to market the Services. The license you give us is only for the above purposes. 
+   (iii) tailoring the Services to you; and
+
+   (iv) marketing the Services.
+
+We do not use any Content (including any UGC) in private repositories to market the Services. The license you give us is only for the above purposes.
 
 3. **Representations and Warranties Regarding UGC**. In connection with your UGC, you represent, warrant, and covenant that you have the right to post it, including written consent from anyone referenced or involved, it doesn't violate any laws (such as IP or privacy rights), and we won’t have to pay anybody else (including you) in order to host it and make it available to other users.
 
 4. **Responsibility for UGC**. We take no responsibility and assume no liability for any UGC that you or any other user or third-party posts. You’re solely responsible for your UGC and the consequences of posting it, and you agree that we’re only acting as a passive conduit for your online distribution and publication of your UGC. You understand and agree that you may be exposed to UGC that is inaccurate, objectionable, inappropriate for children, or otherwise unsuited to your purpose, and we’re not liable for any damages you allege to incur as a result.
 
-5. **Private Repositories**. Some Accounts have private repositories, which allow you to control access to Content. We consider the contents of private repositories to be confidential to you. Our personnel may only access the content of your private repositories in the situations described in our Privacy Policy. In addition, you may enable additional access to your private repositories to use certain services or features. We may also be compelled by law to disclose the contents of your private repositories, in which case we will provide notice regarding our access to private repository content to the extent permitted by law. 
+5. **Private Repositories**. Some Accounts have private repositories, which allow you to control access to Content. We consider the contents of private repositories to be confidential to you. Our personnel may only access the content of your private repositories in the situations described in our Privacy Policy. In addition, you may enable additional access to your private repositories to use certain services or features. We may also be compelled by law to disclose the contents of your private repositories, in which case we will provide notice regarding our access to private repository content to the extent permitted by law.
 
 3.3 **Ownership of the Services**. The Services are owned and operated by Sourcegraph. All Content made available via the Services is owned by us or our licensors (including you, with respect to UGC) and is protected by intellectual property and other applicable laws. All of our trademarks, service marks, and trade names are proprietary to us or our affiliates.
 
@@ -322,7 +322,7 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 
 </span>
 
-15.1  **Notices and Electronic Communications**. We may provide you with (and you hereby consent to our provision of) notices, including those regarding changes to our terms and conditions, by email, regular mail, or postings on the Services. Notice will be deemed given twenty-four hours after email is sent, unless we’re notified that the email address is invalid. Alternatively, we may give you legal notice by mail to a postal address, if provided by you through the Services. In such case, notice will be deemed given three days after the date of mailing. Notice posted on the Services is deemed given five (5) days following the initial posting. We reserve the right to determine the form and means of providing notifications to our users, provided that you may opt out of certain means of notification as described in the Agreement. We are not responsible for any automatic filtering you or your network provider may apply to email notifications we send to the email address you provide us.
+15.1 **Notices and Electronic Communications**. We may provide you with (and you hereby consent to our provision of) notices, including those regarding changes to our terms and conditions, by email, regular mail, or postings on the Services. Notice will be deemed given twenty-four hours after email is sent, unless we’re notified that the email address is invalid. Alternatively, we may give you legal notice by mail to a postal address, if provided by you through the Services. In such case, notice will be deemed given three days after the date of mailing. Notice posted on the Services is deemed given five (5) days following the initial posting. We reserve the right to determine the form and means of providing notifications to our users, provided that you may opt out of certain means of notification as described in the Agreement. We are not responsible for any automatic filtering you or your network provider may apply to email notifications we send to the email address you provide us.
 
 15.2 **Updates and Modifications**. We may, in our sole discretion, modify or update the Agreement (or any part thereof, including these Terms) from time to time, so you should review this page periodically. When we change the Agreement (or any part thereof, including these Terms) in a material manner, we will update the 'last modified' date at the top of this page and notify you that material changes have been made to the Agreement. Your continued use of the Services after any such change constitutes your acceptance of the new Terms of Service. If you do not agree to any of these terms or any future Terms of Service, do not use or access (or continue to access) the Services.
 
@@ -334,7 +334,7 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 
 15.6 **Assignment**. The Agreement and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by us without restriction.
 
-15.7  **Survival**. Upon termination of the Agreement, any provision which, by its nature or express terms should survive, shall survive such termination or expiration.
+15.7 **Survival**. Upon termination of the Agreement, any provision which, by its nature or express terms should survive, shall survive such termination or expiration.
 
 15.8 **Headings**. The heading references herein are for convenience only, do not constitute a part of the Agreement, and will not be deemed to limit or affect any of the provisions hereof.
 

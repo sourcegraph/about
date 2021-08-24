@@ -15,6 +15,7 @@ Some people assume that Sourcegraph competes with GitHub, GitLab, Bitbucket, and
 (For context: [Sourcegraph Universal Code Search](https://about.sourcegraph.com) is vendor-neutral code search. It helps developers search, understand, and automate code across all repositories and code hosts. You can [run it internally inside your company](https://docs.sourcegraph.com) or [use it for public code](https://sourcegraph.com/search). Many [well-known companies](https://about.sourcegraph.com/customers/) use Sourcegraph.)
 
 ## The state of the code host market
+
 First, some background on the state of the code host market.
 
 **Code hosting is a fragmented market.** No single code host has anywhere near a monopoly (except GitHub in open source). We see this market fragmentation first-hand across our customers at Sourcegraph. You can also see it in Stack Overflow's 2020 survey where [39% of professional devs say they use GitLab](https://insights.stackoverflow.com/survey/2020#technology-collaboration-tools-professional-developers2) (82% say they use GitHub, but that includes a large number of devs who use GitHub for open-source code and a different code host for their company's internal code).
@@ -31,6 +32,7 @@ These factors make it much harder and less valuable for a company to strictly en
 Other practical matters also factor in. After an acquisition, it can take months or years to merge codebases. Security or scalability might require spinning up multiple separate code host instances. Or sometimes a rogue dev team might just strongly prefer a different code host, and it's not worth stopping them.
 
 ## Why Sourcegraph won't become a code host
+
 Bringing Universal Code Search to every dev and company is very valuable by itself. Many devs have never used really good code search, but when they do, they find it impossible to live without. Multiply that impact by millions of devs, and that's enough to [build a big business](https://about.sourcegraph.com/blog/series-c-with-sequoia/) that keeps our [awesome team](https://about.sourcegraph.com/handbook/company/team) excited for many years to come. (For the purposes of this argument, you don't need to agree with our optimistic business outlook, just that we genuinely believe in it.) So, we don't want to build a code host because we're plenty satisfied by building Universal Code Search.
 
 And, thankfully, we don't need to build a code host. Many great code hosts already exist with nice APIs that Sourcegraph can integrate with, and, of course, the underlying repositories are in Git or other open-standards, open-source version control systems. We can build code search on top of code hosts and search across all of them instead of needing to reinvent a code host from the ground up just to add on a single feature. This may seem obvious, but it's actually quite rare in a world where most apps and platforms don't use open standards. The fiercely competitive nature of the code host market and the advocacy of devs deserve credit here for keeping code hosts open and interoperable.
@@ -40,6 +42,7 @@ If we ever did make Sourcegraph a code host, it would actually hurt us because m
 So, we'll stay focused on building Universal Code Search and have no reason to build yet another code host.
 
 ## Why code hosts don't compete with Sourcegraph
+
 Now, in the other direction: why wouldn't each code host just make really good built-in code search? For example, why doesn't GitHub code search crush Sourcegraph?
 
 Really good code search is tough to build. It needs to handle massive scale (and keep in mind that historical versions of code matter, so you can't just index the latest version). It needs to understand the structure and semantics of code. And it needs to deeply integrate with many other tools in the dev workflow, including code hosts, editors, runtime tools, user authn/authz directories, and more. All of this complexity needs to be hidden behind a super simple, Google-like search box so devs can find what they need in a few seconds. For code hosts, building really good code search is much harder than any other feature.

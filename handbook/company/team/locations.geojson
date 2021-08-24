@@ -1055,6 +1055,32 @@
           37.79099803764377
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Milan Freml"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.269504547119137,
+          49.08297374955618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+      "name": "Elzanne Wentzel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.877194762229919,
+          52.35879255268006
+        ]
+      }
     }
   ]
 }

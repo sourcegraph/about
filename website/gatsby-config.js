@@ -12,8 +12,8 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         sitemap: 'https://about.sourcegraph.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -123,7 +123,7 @@ module.exports = {
                   date: edge.node.frontmatter.publishDate,
                   url: site.siteMetadata.siteUrl + '/' + edge.node.fields.blogType + '/' + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + '/' + edge.node.fields.blogType + '/' + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               })
             },
@@ -147,15 +147,15 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
-            title: "Sourcegraph blog RSS feed",
+            output: '/rss.xml',
+            title: 'Sourcegraph blog RSS feed',
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
             // if not provided or `undefined`, all pages will have feed reference inserted
-            match: "^/blog/",
+            match: '^/blog/',
             // optional configuration to specify external rss feed, such as feedburner
-            link: "https://feeds.feedburner.com/sourcegraph/blog",
+            link: 'https://feeds.feedburner.com/sourcegraph/blog',
           },
         ],
       },
