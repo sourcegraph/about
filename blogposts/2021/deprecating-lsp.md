@@ -1,5 +1,5 @@
 ---
-title: "Deprecating Language Server support"
+title: 'Deprecating Language Server support'
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 description: "We're dropping support for Language Server-based code intelligence from our product effective on 2021-09-01. Note that this will affect all instances that are not running a private extension registry, not just those upgrading to the current version of Sourcegraph."
@@ -20,5 +20,5 @@ Removing the code paths associated with these unsupported and unmaintained featu
 Note that extensions published into Sourcegraph.com's public extension registry are made available **to all instances** (including your private Sourcegraph instance) **immediately** unless your Sourcegraph instance hosts a private extension registry.
 
 ### Does this affect my private instance?
- 
+
 If you haven't heard from us, probably not! We've been working with enterprise customers that we know were still using Language Server-based code intelligence. If this does affect your instance, we can provide assistance migrating you to LSIF-based precise code intelligence, or supply you with an older build of the Sourcegraph langauge extensions which you can load into your instance's private extension registry. [Contact Sourcegraph support](https://about.sourcegraph.com/contact/) if this is the case.
