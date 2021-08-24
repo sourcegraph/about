@@ -20,7 +20,8 @@ please immediately report it to @security-team. An example phishing attempt can 
 We want all teammates who have Sourcegraph **Apple devices** to have their devices set up on Jamf Now. This way, in cases where a device is lost/stolen, we would have ability to wipe it remotely. (Jamf Now will only be used in these types of emergency circumstances.)
 
 1. Set Jamf up on your computer: Visit https://sourcegraph.jamfcloud.com and use the following access code: 121200 to get it set up on your device
-2. Turn on FileVault: https://support.apple.com/en-us/HT204837
+2. Turn on FileVault: https://support.apple.com/en-us/HT204837 to help with accessibility issues.
+3. Additionally, in order to install JAMF on your Mac device, you may have to click the install button under System Preferences >> Profiles >> Install (JAMF). 
 
 ## PC Anti-Virus Policy
 
