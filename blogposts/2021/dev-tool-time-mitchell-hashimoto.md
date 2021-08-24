@@ -24,9 +24,10 @@ Mitchell's main computer is an [Apple iMac](https://www.apple.com/imac/), with a
 ### Other computers:
 
 In a stack on the left, he keeps three different Apple laptops of different ages and specs:
-  - One older laptop used for testing
-  - An official HashiCorp laptop for use on the go
-  - A [Macbook Air](https://www.apple.com/macbook-air/) with Apple's M1 silicon for personal use and testing
+
+- One older laptop used for testing
+- An official HashiCorp laptop for use on the go
+- A [Macbook Air](https://www.apple.com/macbook-air/) with Apple's M1 silicon for personal use and testing
 
 Mitchell also has a stack of [Raspberry Pi](https://www.raspberrypi.org/) computers to the right of his iMac, which together run a HashiCorp stack.
 
