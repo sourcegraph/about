@@ -72,7 +72,7 @@ Birds 👀
 
 ### Favorite quote
 
-> You're already changed when you've decided to change 
+> You're already changed when you've decided to change
 > -- random anime quote
 
 ### How I eat fries
