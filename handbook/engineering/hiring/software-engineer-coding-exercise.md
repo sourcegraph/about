@@ -69,13 +69,13 @@ If we decide to move forward, we will schedule interviews with team members.
 
 We designed [this synchronous](https://github.com/sourcegraph/interviews/blob/master/engineering/coding/api-client/README.md) exercise to measure your approach to coding a small API client in a paired setting.
 
-* We will schedule a 1 hour timeframe to work with a Sourcegraph engineer.
-* In this exercise you write an API client that processes data from a public, non-authenticated REST API with 1 route.
-* The details of the assignment will be sent to you 2 hours before the interview.
-* You may use the language of your choice.
-* You can use your own development environment, and look up documentation on the internet.
-* You can use any open-source libraries.
-* We will be working in a paried setting, as if you would work in pair with a fellow engineer. We do not expect you to single handedly do all the work.
+- We will schedule a 1 hour timeframe to work with a Sourcegraph engineer.
+- In this exercise you write an API client that processes data from a public, non-authenticated REST API with 1 route.
+- The details of the assignment will be sent to you 2 hours before the interview.
+- You may use the language of your choice.
+- You can use your own development environment, and look up documentation on the internet.
+- You can use any open-source libraries.
+- We will be working in a paried setting, as if you would work in pair with a fellow engineer. We do not expect you to single handedly do all the work.
 
 If we decide to move forward, we will schedule interviews with team members.
 

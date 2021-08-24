@@ -343,9 +343,9 @@ If we decide to move forward, we will schedule interviews with team members.
 
 - Core APP Technical interview
 
-  -  Interviewers(s): two members of the engineering department
-  -  Duration: 45-minutes
-  -  Details: This is a twist on the Technical interview in the Core APP team. It consists of open-ended questions, in order to get you to describe your mental model of designing a new system from scratch. We want to understand if you are making the right decisions when designing system architectures. We want to assess how you deal with ambiguity and how do you deal with tradeoffs, how do you approach problems of different scale and how you are able to communicate your choices to others.
+  - Interviewers(s): two members of the engineering department
+  - Duration: 45-minutes
+  - Details: This is a twist on the Technical interview in the Core APP team. It consists of open-ended questions, in order to get you to describe your mental model of designing a new system from scratch. We want to understand if you are making the right decisions when designing system architectures. We want to assess how you deal with ambiguity and how do you deal with tradeoffs, how do you approach problems of different scale and how you are able to communicate your choices to others.
 
 - Working Session
   - Interviewer(s): two members of the engineering department
