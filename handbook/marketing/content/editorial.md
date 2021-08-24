@@ -107,9 +107,9 @@ Below are some examples of the types of blog post that are usually popular (from
 
 - [An ex-Googler's guide to dev tools](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools/): This was one of our top blog posts of all time, and even now it still gets regular traffic. What worked?
   - It gives practical, actionable advice for engineers experiencing a common challenge after leaving Google (or any tech company that builds its own internal tools).
-  - It's written from the point of view of someone who has experienced this pain! This helps to build trust with readers. 
+  - It's written from the point of view of someone who has experienced this pain! This helps to build trust with readers.
   - It's not explictly selling Sourcegraph. Sure, code search is mentioned and the author is up front about being the CTO of a code search company, but it's not shoehorned in and there's far more to the blog post than promoting Sourcegraph.
-  - Even though the post is long, the author sets expectations at the beginning about what readers will get from the post, and breaks the content up into sections with subheadings, numbers, and bullets, to make it more digestible than a wall of text. 
+  - Even though the post is long, the author sets expectations at the beginning about what readers will get from the post, and breaks the content up into sections with subheadings, numbers, and bullets, to make it more digestible than a wall of text.
 - [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
 - [Optimizing a code intelligence commit graph](https://about.sourcegraph.com/blog/optimizing-a-code-intel-commit-graph/)
 - [Scaling monorepo maintenance](https://github.blog/2021-04-29-scaling-monorepo-maintenance/)
