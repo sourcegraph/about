@@ -29,8 +29,8 @@ com.apple.TimeMachine.2021-08-23-084026.local
 
 If there are snapshots, we can remove them using the `tmutil` tool's `thinlocalsnapshots` command. This command takes two arguments:
 
-- `purge_amount`: the amount of space in bytes that you'd like to reclaim (e.g. 100 GiB = 107374182400)
-- `urgency`: a number between 1 and 4 indicating priority over current backup processes (e.g. 1 is low urgency, 4 is high urgency)
+- `purge_amount` - the amount of space in bytes that you'd like to reclaim (e.g. 100 GiB = 107374182400)
+- `urgency` - a number between 1 and 4 indicating priority over current backup processes (e.g. 1 is low urgency, 4 is high urgency)
 
 ```
 $ tmutil thinlocalsnapshots / 107374182400 1
