@@ -13,7 +13,7 @@ published: true
 
 As of September 6th, 2021, we will be [merging a change](https://github.com/sourcegraph/code-intel-extensions/pull/664) to the Sourcegraph language extensions that drops support for querying Language Servers. This method of [code intelligence](https://docs.sourcegraph.com/code_intelligence) has not been actively supported for over a year, in which time we've solidified our code intelligence approach using [LSIF indexes](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence).
 
-We believe Language Servers have been unused (with Sourcegraph) in the wild for some time. Based on our analytics, enterprise usage was very low. We've helped the remaining one or two users migrate to our LSIF-based precise code intelligence.
+We believe Language Servers have been unused (with Sourcegraph) in the wild for some time. Based on our analytics, enterprise usage was minimal. We've helped the remaining one or two users migrate to our LSIF-based precise code intelligence.
 
 Removing the code paths associated with these unsupported and unmaintained features will greatly reduce cognitive clutter around how code intelligence results are determined. With less cruft, we'll become more able to iterate quickly on a single solution and provide a greater user experience.
 
