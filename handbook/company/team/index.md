@@ -1324,6 +1324,7 @@ To add yourself to this page:
 - Nick is a Content Editor who's passionate about creating content that appeals to developers, engineers, and other technical folks. He's worked in editorial and agency capacities, and has worked with small startups, large enterprises, and everything in between. He was born in New Hampshire, raised in Maine, and now lives in Massachusettes. Outside work, he enjoys reading books (especially horror novels), going on hikes, playing with his dog Finn, and listening to music (especially prog rock).
 
 ## Erica Freckelton (she/her)
+
 - Senior Digital Marketing Manager
 - San Diego, California, United States 🇺🇸
 - [erica.freckelton@sourcegraph.com](mailto:erica.freckelton@sourcegraph.com), Github: [efreckelton](https://github.com/efreckelton), [LinkedIn](https://www.linkedin.com/in/ericafreckelton/)
