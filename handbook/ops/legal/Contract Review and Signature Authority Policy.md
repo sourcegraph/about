@@ -147,7 +147,7 @@ Templates:
 - Sourcegraph Form - Standard Terms (no redlines)
 
   - Review: None
-  - Approve:  (a) VP Budget Owner and (b) Finance for any purchases outside of the team budget and contracts requiring Finance approval per [Paying Bills](https://about.sourcegraph.com/handbook/ops/finance/payables)
+  - Approve: (a) VP Budget Owner and (b) Finance for any purchases outside of the team budget and contracts requiring Finance approval per [Paying Bills](https://about.sourcegraph.com/handbook/ops/finance/payables)
   - Sign: VP Budget Owner
 
 - Sourcegraph Form - Non-standard Terms (redlined)
