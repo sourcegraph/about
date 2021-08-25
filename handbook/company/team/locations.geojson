@@ -1109,4 +1109,17 @@
       }
     }
   ]
+},
+    {
+      "type": "Feature",
+      "properties": {"Mary Belzer"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.92050647735596,
+          39.76873328671909
+        ]
+      }
+    }
+  ]
 }
