@@ -1347,3 +1347,12 @@ To add yourself to this page:
 - GitHub: [danryan621](https://github.com/danryan621)
 - [dan.ryan@sourcegraph.com](mailto:dan.ryan@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/ryandan/)
 - Dan has lived by the ocean (Hawaii, SoCal, Taiwan) most of his life but decided to mix things up a bit and currently resides in the mountains of Utah with his wife, daughter and dog/adventure buddy. After a couple years of managing a longboard skateboard company, he spent 8 years in Fintech working in business development, account management, project management, and solution engineering with the continuous goal of creating thorough solutions that have lasting impact with end users. Outside of work, Dan is usually building something on his house, prototyping some random idea, getting out into nature or experimenting with some new obscure hobby (currently learning wing surfing).
+
+
+## Greg Bouton (he/him/his)
+
+- Email & Automation Marketing Manager
+- S. Hamilton, MA, United States 🇺🇸
+- GitHub: [GregBouton](https://github.com/GregBouton)
+- [greg.bouton@sourcegraph.com](mailto:greg.bouton@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/gregbouton/)
+- Greg was born and raised in New York, moved up to Boston for college, and (much to the dismay of his family and friends) planted his roots on the North Shore of Massachusetts. He loves spending time with his wife and daughter (our two dogs and one cat too!). He also enjoys traveling, golfing, snowboarding, and pretty much all sports. Greg has been in the email, marketing automation, and demand generation spaces for over a decade where he's built effective customer and prospect-focused B2B and B2C campaigns. 
