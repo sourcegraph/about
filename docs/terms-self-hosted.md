@@ -180,7 +180,7 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 7.1 **Subscription Period**. This Agreement starts on the earlier of the date on which you: (a) agree to the terms and conditions of this Agreement; or (b) first set up an Instance and will continue in effect until either you or we terminate it (the **“Subscription Period”**).
 
-7.2 **Termination for Breach**. If a party fails to cure a material breach of the Agreement within thirty (30) days after receiving written notice of breach, the other party may then terminate the Agreement within the following thirty (30) days. We will refund you any prepaid, unused fees. 
+7.2 **Termination for Breach**. If a party fails to cure a material breach of the Agreement within thirty (30) days after receiving written notice of breach, the other party may then terminate the Agreement within the following thirty (30) days. We will refund you any prepaid, unused fees.
 
 7.3 **Termination for Convenience**. Either party may terminate this Agreement, for any reason or for no reason, provided that you are responsible for all prepaid fees and fees you commit to in an Order Form..
 
