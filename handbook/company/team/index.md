@@ -1351,7 +1351,7 @@ To add yourself to this page:
 ## Mary Belzer (she/her)
 
 - Handbook Product Manager
-- Denver, Colorado, United States 🇺🇸 
+- Denver, Colorado, United States 🇺🇸
 - GitHub: [marybelzer](https://github.com/marybelzer)
 - [mary.belzer@sourcegraph.com](mailto:mary.belzer@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/marybelzer/)
 - Mary grew up in the US Midwest and relocated to Denver, Colorado in 2014. She's a big baseball fan, mostly rooting for the Chicago White Sox, but the Rockies and the Cardinals get some love too. Mary is a serial hobbyist: she loves playing music, collecting vinyl, repairing old audio gear, going to shows now that they’re a thing again, making quilts, and sewing her own wardrobe. When she's not buried in a hobby, she's staying active with snowboarding, backpacking, aerial arts, yoga, and weightlifting. For the last several years she's been working in process improvement, product management, and program management at various eCommerce startups.
