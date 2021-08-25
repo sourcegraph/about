@@ -1,8 +1,9 @@
 # People Ops
 
 ## Team
+Example
 
-### People Ops team members
+### People Ops team 
 
 - [Debbie Johnstone](../company/team/index.md#debbie-johnstone-she-her), VP of People
 - [Noemi Mercado](../company/team/index.md#noemi-mercado-she-her), Head of People Operations
