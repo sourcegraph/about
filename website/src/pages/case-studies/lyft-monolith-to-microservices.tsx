@@ -20,8 +20,7 @@ export default ((props: any) => (
             title="Lyft ensures production stability during monolith to microservices transition"
             logo="/external-logos/lyft-logo.svg"
             quote={{
-                quote:
-                    'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition by verifying applications were no longer pointing at the monolith version of a service.',
+                quote: 'Sourcegraph code search helped ensure production stability throughout the monolith to microservices decomposition by verifying applications were no longer pointing at the monolith version of a service.',
                 author: justinPhilips,
                 image: '/case-studies/justin-phillips-lyft.jpg',
             }}
