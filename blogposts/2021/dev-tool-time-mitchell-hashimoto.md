@@ -47,7 +47,7 @@ Operating system and other software updates regularly break development environm
 
 > "My biggest criticism about Nix is that their learning is like a sheer cliff. It's the hardest learning curve of probably in tech I've ever learned."
 
- Despite its difficult learning curve, NixOS makes the entire development environment reproducible and easy to change, knowing that you can always roll back to previous versions.
+Despite its difficult learning curve, NixOS makes the entire development environment reproducible and easy to change, knowing that you can always roll back to previous versions.
 
 Within the NixOS VM, two other tools help Mitchell set and use packages and environment variables just for one session:
 
@@ -63,9 +63,7 @@ Neovim provides Mitchell with the straightforward editor experience he wants, an
 - [Neovim's LSP support](https://github.com/neovim/nvim-lspconfig) provides dignostic errors and other LSP features
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) provides exceptional syntax highlighting
 
-
 > "I just don't feel like I personally need an IDE experience ... I don't like things that write code for me; I want to do it myself."
-
 
 You can check out Mitchell's Vim config at [mitchell/vim-misc](https://github.com/mitchellh/vim-misc), and it's mostly agnostic between Neovim and Vim.
 
