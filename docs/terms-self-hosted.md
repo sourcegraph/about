@@ -3,7 +3,9 @@ layout: markdown
 title: Terms of Service for Self-hosted Sourcegraph Instances
 ---
 
-Last modified: June 24, 2021
+Last modified: August 25, 2021
+
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-self-hosted%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-self-hosted/2021-06-24/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives).
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of software, products, and services we make available at Sourcegraph.com.
 
@@ -62,17 +64,17 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 As used on this page, the following terms have the following specific meanings:
 
-1.1 **“Agreement”** means, collectively, the terms and conditions laid out on this page (these **“Terms”**), and all other applicable rules, policies, and procedures that we may publish from time to time on the Site, including but not limited to our [Privacy Policy](/privacy).
+1.1 **“Agreement”** means, collectively, the terms and conditions laid out on this page (these **“Terms”**), along with any order for Software (**“Order Form”**) and all other applicable rules, policies, and procedures that we may publish from time to time on the Site, including but not limited to our [Privacy Policy](/privacy).
 
 1.2 **“Content”** means any content made available through the Software, including but not limited to text (including Documentation), data, articles, images, photographs, videos, applications, software (including source code), and other materials, as well as the Software itself (with respect to us).
 
 1.3 **“Documentation”** means the documentation regarding the Software that we make available for use at https://docs.sourcegraph.com.
 
-1.4 **“Instance”** means the private instance of the Software that you create or use in order to analyze Your Code.
+1.4 **“Instance”** means the self-hosted instance of the Software that you create or use in order to analyze Your Code.
 
 1.5 **“Site”** means our website located at sourcegraph.com, and all content, services, and products provided by us at or through the Site (or any subdomain or successor site).
 
-1.6 **“Software”** means, collectively, the software provided by us for download via the Site and for installation on your equipment, including but not limited to the self-hosted or privately hosted Sourcegraph software and our browser and editor extensions (to the extent exclusively connected to a self-hosted or privately-hosted instance).
+1.6 **“Software”** means, collectively, the software provided by us for download via the Site and for installation on your equipment, including but not limited to the self-hosted Sourcegraph software and our browser and editor extensions (to the extent exclusively connected to a self-hosted instance).
 
 1.7 **“Sourcegraph”**, **“we”**, or **“us”** refers to Sourcegraph, Inc., as well as its affiliates.
 
@@ -110,9 +112,11 @@ As used on this page, the following terms have the following specific meanings:
 
 1. redistribute, encumber, sell, rent, lease, sublicense, or otherwise transfer rights to all or any part of the Software;
 
-2. permit a number of users of the Software more than permitted by us; or
+2. permit a number of users of the Software more than permitted by us;
 
-3. use the Software to analyze any source code or other Content that is not Your Code.
+3. use the Software to analyze any source code or other Content that is not Your Code; or
+
+4. use any release of the Software that is more than three (3) versions older than the then-most-current release of the Software.
 
 3.3 **Ownership of the Software**. The Software is owned and operated by Sourcegraph. All Content made available via the Software is owned by us or our licensors and is protected by intellectual property and other applicable laws. All of our trademarks, service marks, and trade names are proprietary to us or our affiliates.
 
@@ -126,9 +130,9 @@ As used on this page, the following terms have the following specific meanings:
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: We have the right to collect aggregate and high-level data from private Sourcegraph instances, as described in our [Privacy Policy](/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com/admin/pings).</i></span>
+<span style="color:#777777"><i>**Short version**: We have the right to collect aggregate and high-level data from self-hosted Sourcegraph instances, as described in our [Privacy Policy](/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com/admin/pings).</i></span>
 
-We may collect data derived from your use of the Software (**“Usage Data”**). A specific list of Usage Data that we receive from self-hosted and private instances is always available in our [Documentation](https://docs.sourcegraph.com/admin/pings) and in the site-admin area on your Instance. You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products.
+We may collect data derived from your use of the Software (**“Usage Data”**). A specific list of Usage Data that we receive from self-hosted instances is always available in our [Documentation](https://docs.sourcegraph.com/admin/pings) and in the site-admin area on your Instance. You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products.
 
 If we share or publicly disclose any information constituting or derived from Usage Data (e.g., in marketing materials), we will aggregate or anonymize that information to avoid identification.
 
@@ -176,9 +180,11 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 7.1 **Subscription Period**. This Agreement starts on the earlier of the date on which you: (a) agree to the terms and conditions of this Agreement; or (b) first set up an Instance and will continue in effect until either you or we terminate it (the **“Subscription Period”**).
 
-7.2 **Termination for Convenience**. Either party may terminate this Agreement, for any reason or for no reason.
+7.2 **Termination for Breach**. If a party fails to cure a material breach of the Agreement within thirty (30) days after receiving written notice of breach, the other party may then terminate the Agreement within the following thirty (30) days. We will refund you any prepaid, unused fees. 
 
-7.3 **Effect of Termination; Survival**. Upon termination of this Agreement, you may no longer use the Software, and if any fees were owed prior to termination, you must pay those fees immediately. Any provisions of this Agreement that, by their terms or their nature, should survive the termination of this Agreement shall so survive. For purposes of clarity, your right to use the Software will not survive any termination of this Agreement.
+7.3 **Termination for Convenience**. Either party may terminate this Agreement, for any reason or for no reason, provided that you are responsible for all prepaid fees and fees you commit to in an Order Form..
+
+7.4 **Effect of Termination; Survival**. Upon termination of this Agreement, you may no longer use the Software, and if any fees were owed prior to termination, you must pay those fees immediately. Any provisions of this Agreement that, by their terms or their nature, should survive the termination of this Agreement shall so survive. For purposes of clarity, your right to use the Software will not survive any termination of this Agreement.
 
 <span style="color:#b200f8;">
 
@@ -186,9 +192,9 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Pricing can change at any time, but you will receive notice at least seven days in advance. Your subscription will automatically renew.</i></span>
+<span style="color:#777777"><i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Pricing can change at any time, but you will receive notice at least seven days in advance. Your subscription will automatically renew, unless an Order Form states otherwise.</i></span>
 
-8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) and applicable taxes associated with the Software in a timely manner with a valid payment method. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
+8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) or in an Order Form and applicable taxes associated with the Software in a timely manner with a valid payment method. Unless otherwise stated in an Order Form, you will pay all invoices within thirty (30) days of receipt. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
 
 8.2 **Term**. Authorization to charge your chosen payment method account will remain in effect until you cancel or modify your preference. You agree that charges may be accumulated as incurred and may be submitted as one or more aggregate charges during or at the end of the applicable billing cycle.
 
@@ -198,7 +204,7 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 8.5 **Price Changes**. We reserve the right to change the amount of, or basis for determining, any fees or charges for the Software, and to institute new fees, charges, or terms effective upon prior notice. You will receive notice of any fee change at least seven (7) days before the scheduled date of the transaction and failure to cancel your subscription will constitute acceptance of such fee change.
 
-8.6 **Renewals**. Your subscription will be automatically renewed and your credit card account (or other payment method account) will be charged as follows without further authorization from you every month, year, or other period you subscribed to. You acknowledge that your subscription is subject to automatic renewals and you consent to and accept responsibility for all related recurring charges to your applicable payment method without further authorization from you and without further notice unless required by law. You acknowledge that the amount of the recurring charge may change if the applicable tax rates change or if there has been a change in the applicable fees.
+8.6 **Renewals**. Unless otherwise stated in an Order Form, your subscription will be automatically renewed and your credit card account (or other payment method account) will be charged as follows without further authorization from you every month, year, or other period you subscribed to. You acknowledge that your subscription is subject to automatic renewals and you consent to and accept responsibility for all related recurring charges to your applicable payment method without further authorization from you and without further notice unless required by law. You acknowledge that the amount of the recurring charge may change if the applicable tax rates change or if there has been a change in the applicable fees.
 
 8.7 **Cancellation**. Unless otherwise required by applicable law, for annual subscriptions, you must provide us with written notice of your intention not to renew at least fifteen (15) days prior to the end of the current term of your subscription.
 
@@ -211,7 +217,7 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 <span style="color:#777777"><i>**Short version**: Third party services and software may be necessary for Sourcegraph to work (examples include libraries Sourcegraph uses internally, code hosts, authentication providers, external code analyzers, monitoring and tracing tools, etc.). We’re not responsible for anything provided by a third party, and additional terms and conditions may apply.</i></span>
 
-The Software may call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk.
+You may enable the Software to call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We do not share Your Code with third-party services, unless you enable the integration or extension. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk.
 
 The Software may contain copyrighted software of our licensors (**“Third Party Software”**). The licensors retain all right, title, and interest in and to such Third Party Software and all copies thereof. Your use of any Third Party Software is subject to the terms and conditions of this Agreement, and any other terms and conditions in any Third Party Software documentation or printed materials (including EULAs).
 
@@ -235,13 +241,13 @@ CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCL
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Our liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us for access the software. Please read this section carefully.</i></span>
+<span style="color:#777777"><i>**Short version**: Each party's liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us to access the software. Please read this section carefully.</i></span>
 
-UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, WILL WE (OR OUR AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SOFTWARE, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+UNDER NO CIRCUMSTANCES WILL EITHER PARTY (OR ITS AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, COST OF REPLACEMENT SOFTWARE, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SOFTWARE, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
 APPLICABLE LAW MAY NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU. IN SUCH CASES, OUR LIABILITY WILL BE LIMITED TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW.
 
-IN NO EVENT WILL OUR (OR OUR AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS’) TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION ARISING OUT OF OR RELATING TO THESE TERMS OR YOUR USE OF THE SOFTWARE, INCLUDING WITHOUT LIMITATION YOUR INTERACTIONS WITH OTHER USERS, (WHETHER IN CONTRACT, TORT INCLUDING NEGLIGENCE, WARRANTY, OR OTHERWISE) EXCEED THE AMOUNT PAID BY YOU, IF ANY, FOR THE SOFTWARE DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE DAY THE ACT OR OMISSION OCCURRED THAT GAVE RISE TO YOUR CLAIM OR ONE HUNDRED DOLLARS ($100.00), WHICHEVER IS GREATER.
+IN NO EVENT WILL EACH PARTY'S (OR ITS AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS’) TOTAL LIABILITY FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION ARISING OUT OF OR RELATING TO THESE TERMS OR YOUR USE OF THE SOFTWARE, INCLUDING WITHOUT LIMITATION YOUR INTERACTIONS WITH OTHER USERS, (WHETHER IN CONTRACT, TORT INCLUDING NEGLIGENCE, WARRANTY, OR OTHERWISE) EXCEED THE AMOUNT PAID OR PAYABLE BY YOU, IF ANY, FOR THE SOFTWARE DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE DAY THE ACT OR OMISSION OCCURRED THAT GAVE RISE TO YOUR CLAIM OR ONE HUNDRED DOLLARS ($100.00), WHICHEVER IS GREATER.
 
 You acknowledge and agree that we have offered our products and services, set our prices, and entered into the Agreement in reliance upon the disclaimers of warranty and the limitations of liability set forth herein, that the disclaimers of warranty and the limitations of liability set forth herein reflect a reasonable and fair allocation of risk between the parties (including the risk that a contract remedy may fail of its essential purpose and cause consequential loss), and that the disclaimers of warranty and the limitations of liability set forth herein form an essential basis of the bargain between you and us.
 
@@ -251,16 +257,13 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Sourcegraph is provided at your own risk.</i></span>
+<span style="color:#777777"><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from our own fault.</i></span>
 
-You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiaries, agents, managers, and other affiliated companies, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from:
+12.1 **By You**. You agree to defend us and our affiliates, directors, officers, employees, and contractors from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Software in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any intellectual property or other right of any person or entity, or any other party's access and use of the Software with your unique username, password, or other appropriate security code.
 
-1. your use of the Software, including any data or work transmitted or received by you;
-2. your violation of any term of the Agreement, including without limitation, your breach of any of the representations and warranties above;
-3. your violation of any third-party right, including without limitation any right of privacy, publicity rights or intellectual property rights;
-4. your violation of any law, rule or regulation of the United States or any other country;
-5. any claim or damages that arise as a result of your use of the Software or any Content submitted via your account; or
-6. any other party's access and use of the Software with your unique username, password or other appropriate security code. We will have the right to control the defense, settlement, adjustment or compromise of any such claims, actions or proceedings by using counsel selected by us. We will use reasonable efforts to notify you of any such claims, actions, or proceedings upon becoming aware of the same.
+12.2 **By Sourcegraph**. We agree to defend you and your affiliates, directors, officers, employees, and contractors from and against any third-party claims, proceedings, demands, and investigations and indemnify you for damages, attorney’s fees, and costs arising from your use of the Software or Documentation in accordance with this Agreement that infringes or misappropriates such third-party’s intellectual property rights, except for claims arising from (a) Your Code or Content, (b) your use of the Software in violation of the Agreement, or (c) any modification, combination, or development of the Software not performed by us.
+
+12.3 **Procedure**. Each party must give the other prompt written notice of any defense or indemnity sought and reasonable cooperation in the defense. The defending party will have sole control of the defense and settlement, provided that neither party may enter into a settlement placing any material obligation of any kind, including any admission of liability or payment of any amount, on the other party without the other party’s prior written approval, not to be unreasonably withheld, conditioned, or delayed.
 
 <span style="color:#b200f8;">
 
@@ -294,7 +297,7 @@ The Software and the underlying information and technology may not be downloaded
 
 15.1 **Notices and Electronic Communications**. We may provide you with (and you hereby consent to our provision of) notices, including those regarding changes to our terms and conditions, by email, regular mail, or postings on the Site. Notice will be deemed given twenty-four hours after email is sent, unless we’re notified that the email address is invalid. Notice posted on the Site is deemed given five (5) days following the initial posting. We reserve the right to determine the form and means of providing notifications to our users, provided that you may opt out of certain means of notification as described in the Agreement. We are not responsible for any automatic filtering you or your network provider may apply to email notifications we send to the email address you provide us.
 
-15.2 **Updates and Modifications**. We may, in our sole discretion, modify or update the Agreement (or any part thereof, including these Terms) from time to time, so you should review this page periodically. When we change the Agreement (or any part thereof, including these Terms) in a material manner, we will update the 'last modified' date at the top of this page and notify you that material changes have been made to the Agreement. Your continued use of the Software after any such change constitutes your acceptance of the new Terms of Service. If you do not agree to any of these terms or any future Terms of Service, do not use or access (or continue to access) the Software.
+15.2 **Updates and Modifications**. We may update the Agreement (including these Terms) from time to time. When we change the Agreement (including these Terms) in a material manner, we will update the 'last modified' date at the top of this page and notify you that material changes have been made to the Agreement. Your continued use of the Software after any such change constitutes your acceptance of the new Terms of Service. If you have purchased a subscription to use the Software, any change to these Terms will be effective with respect to such Software upon the renewal of your subscription, unless otherwise stated in an Order Form.
 
 15.3 **U.S. Government End Users**. The Software and Documentation were developed by private financing and constitute a "Commercial Item," as that term is defined at 48 C.F.R. § 2.101. The Software and Documentation consist of "Commercial Computer Software" and "Commercial Computer Software Documentation," as such terms are used in 48 C.F.R. § 12.212. Consistent with 48 C.F.R. § 12.212 and 48 C.F.R. §§ 227.7202-1 through 227.7202-4, all U.S. Government End Users acquire only those rights in the Software and the Documentation that are specifically provided by this Agreement. Consistent with 48 C.F.R. § 12.211, all U.S. Government End Users acquire only technical data and the rights in that data customarily as specifically provided in this Agreement.
 
@@ -302,13 +305,13 @@ The Software and the underlying information and technology may not be downloaded
 
 15.5 **Severability**. If any provision of the Agreement is held to be unlawful, void, or for any reason unenforceable, then that provision will be limited or eliminated from the Agreement to the minimum extent necessary and will not affect the validity and enforceability of any remaining provisions; except that in the event of unenforceability of the universal Class Action/Jury Trial Waiver, the entire arbitration agreement shall be unenforceable.
 
-15.6 **Assignment**. The Agreement and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by us without restriction.
+15.6 **Assignment**. The Agreement and any rights and licenses granted hereunder, may not be transferred or assigned by either party without written consent, except in connection with a merger, acquisition, reorganization, or sale of substantially all assets.
 
 15.7 **Survival**. Upon termination of the Agreement, any provision which, by its nature or express terms should survive, shall survive such termination or expiration.
 
 15.8 **Headings**. The heading references herein are for convenience only, do not constitute a part of the Agreement, and will not be deemed to limit or affect any of the provisions hereof.
 
-15.9. **Marketing and Publicity**. We may freely refer to your Organization and your relationship with us in connection with publicizing and marketing our products and services, including the Software. For example, we may use your Organization’s name, logo, and other brand indicia to identify your Organization as a current or former customer, we may use product testimonials and quotes your Organization’s representatives may provide to us, and we may do any of the foregoing on our website, in social media, in media communications, and otherwise in advertising our products and services and in our marketing and promotional materials.
+15.9. **Marketing and Publicity**. We may freely refer to your Organization and your relationship with us in connection with publicizing and marketing our products and services, including using your Organization’s name and logo to identify your Organization as a customer and using product testimonials and quotes your Organization’s representatives may provide to us, unless otherwise stated in an Order Form.
 
 15.10 **Entire Agreement**. This, including the agreements incorporated by reference, constitutes the entire agreement between you and us relating to the subject matter herein and will not be modified except in writing, signed by both parties, or by a change made by us as set forth in the Agreement.
 
