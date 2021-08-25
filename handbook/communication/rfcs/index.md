@@ -77,7 +77,7 @@ Effective RFCs contain the following information:
 - Title that includes the RFC number.
   - The title is inlined in the Google Doc so that it is more visible and will not disappear if exported to a different format.
 - Metadata about the state of the RFC. Including but not limited to:
-  - **[Recommender](../decisions.md#recommneders):** The single person who is directly responsible for the content in the RFC. This individual also has the responsibility of being a [recommender](../decisions.md#recommenders) for the final decision.
+  - **[Recommender](../decisions.md#recommneders):** The single person who is directly responsible for the content in the RFC, including identifying who the decider, input providers, and approvers are. This individual also has the responsibility of being a [recommender](../decisions.md#recommenders) for the final decision.
     - The recommender ensures that:
       - The RFC is well written.
       - The right people review the RFC.
