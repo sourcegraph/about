@@ -15,6 +15,7 @@ We use third-party market data as a key input for each role and level within tha
 - [Employment versus contracting: compensation differences](#employment-versus-contracting-compensation-differences)
 - [How to create an offer](offers.md)
 - [Equity and stock options FAQ](equity-faq.md)
+- [How to notify People Ops of compensation changes](https://forms.gle/hzbHVCG1ZGmGRq1N6)
 
 ## Components of compensation
 
@@ -114,6 +115,6 @@ Reach out to the People Ops team if you have any questions about structuring.
 
 ## Logistics and timing
 
-Employees are paid twice per month (on the 15th and the last day of the month if those are weekdays, or the Fridays before those days if not), via Gusto. _We are in the process of transitioning off of Gusto to Rippling. This section will be updated soon_
+Employees are paid twice per month (on the 15th and the last day of the month if those are weekdays, or the Fridays before those days if not), via Rippling.
 
 All contractors [submit invoices monthly](../../ops/finance/invoices.md).
