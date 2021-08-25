@@ -82,7 +82,8 @@ The table below breaks down the capabilities of each team within Marketing. Once
   - [Erica Lindberg](../company/team/index.md#erica-lindberg-she-her), Director of Content Strategy
     - [Rebecca Dodd](../company/team/index.md#rebecca-dodd-she-her), Senior Managing Editor
     - [Jenny Bergen](../company/team/index.md#jenny-bergen-she-her), Manager, Content Marketing
-    - We will be hiring a Content Editor and Technical Content Marketing Manager
+    - [Scott Bailey](../company/team/index.md#scott-bailey-he-him), Technical Content Marketing Manager
+    - [Nick Moore](../company/team/index.md#nick-moore-he-him-his), Content Editor
   - [Lisa Tagliaferri](../company/team/index.md#lisa-tagliaferri-flexible), Director of Developer Education
     - [Marek Zaluski](../company/team/index.md#marek-zaluski), Developer Education Engineer
     - [Oluebube Princess Egbuna](../company/team/index.md#oluebube-princess-egbuna-she-her), Education Engineer
