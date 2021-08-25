@@ -42,7 +42,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 | 1. [Definitions](#1-definitions)                                                                                                      | Definitions of specific terms used on this page                                             |
 | 2. [Account terms](#2-account-terms)                                                                                                  | Your responsibilities to use Sourcegraph                                                    |
 | 3. [Acceptable use](#3-acceptable-use)                                                                                                | Acceptable use of Sourcegraph                                                               |
-| 4. [Usage data](#4-usage-data)                                                                                                        | Aggregate and high-level data we collect from private and self-hosted Sourcegraph instances |
+| 4. [Usage data](#4-usage-data)                                                                                                        | Aggregate and high-level data we collect from self-hosted Sourcegraph instances |
 | 5. [Data protection](#5-data-protection)                                                                                              | Our policies for protecting your data                                                       |
 | 6. [Confidentiality](#6-confidentiality)                                                                                              | Our mutual responsibilities to protect confidential data                                    |
 | 7. [Term; termination](#7-term-termination)                                                                                           | When and how your account can be terminated                                                 |
@@ -256,7 +256,7 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from our own fault.</i></span>
+<span style="color:#777777"><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.</i></span>
 
 12.1 **By You**. You agree to defend us and our affiliates, directors, officers, employees, and contractors from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Software in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any intellectual property or other right of any person or entity, or any other party's access and use of the Software with your unique username, password, or other appropriate security code.
 
