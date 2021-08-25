@@ -1334,7 +1334,7 @@ To add yourself to this page:
 ## Brannon Rouse
 
 - Sales Development Representative
-- Birmingham, AL, United States 🇺🇸 
+- Birmingham, AL, United States 🇺🇸
 - GitHub: [Brannon-Rouse](https://github.com/Brannon-Rouse)
 - [brannon.rouse@sourcegraph.com](mailto:brannon.rouse@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/brannon-rouse-1a106414b/)
-- Brannon grew up in Dallas, Texas and currently lives in Birmingham, Alabama with his wife, Emery. Brannon is an avid runner, a big Dallas sports fan, and a Taco Tuesday enthusiast. Before joining Sourcegraph he worked in the digital health startup space where he developed a passion for development, team-building, and bullet journaling. 
+- Brannon grew up in Dallas, Texas and currently lives in Birmingham, Alabama with his wife, Emery. Brannon is an avid runner, a big Dallas sports fan, and a Taco Tuesday enthusiast. Before joining Sourcegraph he worked in the digital health startup space where he developed a passion for development, team-building, and bullet journaling.
