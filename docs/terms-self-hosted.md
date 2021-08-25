@@ -37,23 +37,23 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 </span>
 
-| Section                                                                                                                               | Description                                                                                 |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| 1. [Definitions](#1-definitions)                                                                                                      | Definitions of specific terms used on this page                                             |
-| 2. [Account terms](#2-account-terms)                                                                                                  | Your responsibilities to use Sourcegraph                                                    |
-| 3. [Acceptable use](#3-acceptable-use)                                                                                                | Acceptable use of Sourcegraph                                                               |
-| 4. [Usage data](#4-usage-data)                                                                                                        | Aggregate and high-level data we collect from private and self-hosted Sourcegraph instances |
-| 5. [Data protection](#5-data-protection)                                                                                              | Our policies for protecting your data                                                       |
-| 6. [Confidentiality](#6-confidentiality)                                                                                              | Our mutual responsibilities to protect confidential data                                    |
-| 7. [Term; termination](#7-term-termination)                                                                                           | When and how your account can be terminated                                                 |
-| 8. [Fees](#8-fees)                                                                                                                    | Rules for payment for paid and Enterprise features                                          |
-| 9. [Third party services and software](#9-third-party-services-and-software)                                                          | Our use of third party services and software                                                |
-| 10. [No warranties; disclaimer](#10-no-warranties-disclaimer)                                                                         | We make no warranties about Sourcegraph                                                     |
-| 11. [Limitation of liability](#11-limitation-of-liability)                                                                            | Our liabilities are limited                                                                 |
-| 12. [Indemnification](#12-indemnification)                                                                                            | Your usage of Sourcegraph is at your own risk                                               |
-| 13. [Export controls](#13-export-controls)                                                                                            | Usage restrictions in embargoed locations                                                   |
-| 14. [Governing law; arbitration; and class action/jury trial waiver](#14-governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled                                                     |
-| 15. [Miscellaneous](#15-miscellaneous)                                                                                                | Miscellaneous topics                                                                        |
+| Section                                                                                                                               | Description                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| 1. [Definitions](#1-definitions)                                                                                                      | Definitions of specific terms used on this page                                 |
+| 2. [Account terms](#2-account-terms)                                                                                                  | Your responsibilities to use Sourcegraph                                        |
+| 3. [Acceptable use](#3-acceptable-use)                                                                                                | Acceptable use of Sourcegraph                                                   |
+| 4. [Usage data](#4-usage-data)                                                                                                        | Aggregate and high-level data we collect from self-hosted Sourcegraph instances |
+| 5. [Data protection](#5-data-protection)                                                                                              | Our policies for protecting your data                                           |
+| 6. [Confidentiality](#6-confidentiality)                                                                                              | Our mutual responsibilities to protect confidential data                        |
+| 7. [Term; termination](#7-term-termination)                                                                                           | When and how your account can be terminated                                     |
+| 8. [Fees](#8-fees)                                                                                                                    | Rules for payment for paid and Enterprise features                              |
+| 9. [Third party services and software](#9-third-party-services-and-software)                                                          | Our use of third party services and software                                    |
+| 10. [No warranties; disclaimer](#10-no-warranties-disclaimer)                                                                         | We make no warranties about Sourcegraph                                         |
+| 11. [Limitation of liability](#11-limitation-of-liability)                                                                            | Our liabilities are limited                                                     |
+| 12. [Indemnification](#12-indemnification)                                                                                            | Your usage of Sourcegraph is at your own risk                                   |
+| 13. [Export controls](#13-export-controls)                                                                                            | Usage restrictions in embargoed locations                                       |
+| 14. [Governing law; arbitration; and class action/jury trial waiver](#14-governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled                                         |
+| 15. [Miscellaneous](#15-miscellaneous)                                                                                                | Miscellaneous topics                                                            |
 
 <br/>
 <span style="color:#b200f8;">
@@ -256,7 +256,7 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from our own fault.</i></span>
+<span style="color:#777777"><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.</i></span>
 
 12.1 **By You**. You agree to defend us and our affiliates, directors, officers, employees, and contractors from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Software in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any intellectual property or other right of any person or entity, or any other party's access and use of the Software with your unique username, password, or other appropriate security code.
 
