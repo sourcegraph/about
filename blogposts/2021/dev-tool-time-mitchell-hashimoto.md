@@ -6,8 +6,8 @@ authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-h
 publishDate: 2021-08-25T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-mitchell-hashimoto
-heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-mitchell-hashimoto.jpg
-socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-mitchell-hashimoto.jpg
+heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-mitchell-hashimoto-cover.jpg
+socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-mitchell-hashimoto-cover.jpg
 published: true
 ---
 
