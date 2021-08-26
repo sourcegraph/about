@@ -1314,3 +1314,52 @@ To add yourself to this page:
 - GitHub: [erzhtor](https://github.com/erzhtor/)
 - [erzhan.torokulov@sourcegraph.com](mailto:erzhan.torokulov@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/erzhtor/), [erzhtor.com](https://erzhtor.com/), [Pronounce my name 🔊](https://www.name-coach.com/erzhan-torokulov?preview=on)
 - Erzhan is a Software Engineer with industry experience building high-quality software solutions with a passion for learning. He has experience working on backend, frontend as well as mobile development. Outside work, he enjoys traveling and trying new things/activities.
+
+## Nick Moore (he/him/his)
+
+- Content Editor
+- Weymouth, Massachusettes, United States 🇺🇸
+- GitHub: [nickmyyz](https://github.com/nickmyyz/)
+- [nick.moore@sourcegraph.com](mailto:nick.moore@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/nick-moore-b704a870/), [Twitter](https://twitter.com/nickwritesit)
+- Nick is a Content Editor who's passionate about creating content that appeals to developers, engineers, and other technical folks. He's worked in editorial and agency capacities, and has worked with small startups, large enterprises, and everything in between. He was born in New Hampshire, raised in Maine, and now lives in Massachusettes. Outside work, he enjoys reading books (especially horror novels), going on hikes, playing with his dog Finn, and listening to music (especially prog rock).
+
+## Erica Freckelton (she/her)
+
+- Senior Digital Marketing Manager
+- San Diego, California, United States 🇺🇸
+- [erica.freckelton@sourcegraph.com](mailto:erica.freckelton@sourcegraph.com), Github: [efreckelton](https://github.com/efreckelton), [LinkedIn](https://www.linkedin.com/in/ericafreckelton/)
+- Erica is a digital marketing strategist hailing from San Diego, CA. She and her trusty dog Zetty relocated from Nashville in 2020 to live with her boyfriend, Matt. You'll often catch her geeking out about digital consumer behavior, online trends, and search data. When not in front of a laptop, you'll probably find her in front of a book. Erica's one-third of the Real Friends Who Read Books, a biweekly book club podcast with her two oldest friends.
+
+## Serina Clark (her/she/hers)
+
+- Director of Product - Platform & Infrastructure
+- Erie, Colorado, United States 🇺🇸
+- GitHub: [serinadawn](https://github.com/serinadawn/)
+- [serina.clark@sourcegraph.com](mailto:serina.clark@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/serinaclark/)
+- Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
+- I was born and raised in Steamboat Springs, CO. I love all things outdoors (hiking, biking, camping, swimming, you name it).  
+  I am passionate about travel and learning as much as a I can about other cultures. A few of the places I have spent significant time include; Saudi Arabia, Finland, France, and Mexico. Enabling software engineering teams to kick ass at development is what I love to do for work!!!
+
+## Dan Ryan (he/him)
+
+- Senior Customer Engineer
+- Lehi, UT, United States 🇺🇸
+- GitHub: [danryan621](https://github.com/danryan621)
+- [dan.ryan@sourcegraph.com](mailto:dan.ryan@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/ryandan/)
+- Dan has lived by the ocean (Hawaii, SoCal, Taiwan) most of his life but decided to mix things up a bit and currently resides in the mountains of Utah with his wife, daughter and dog/adventure buddy. After a couple years of managing a longboard skateboard company, he spent 8 years in Fintech working in business development, account management, project management, and solution engineering with the continuous goal of creating thorough solutions that have lasting impact with end users. Outside of work, Dan is usually building something on his house, prototyping some random idea, getting out into nature or experimenting with some new obscure hobby (currently learning wing surfi
+
+## Mary Belzer (she/her)
+
+- Handbook Product Manager
+- Denver, Colorado, United States 🇺🇸
+- GitHub: [marybelzer](https://github.com/marybelzer)
+- [mary.belzer@sourcegraph.com](mailto:mary.belzer@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/marybelzer/)
+- Mary grew up in the US Midwest and relocated to Denver, Colorado in 2014. She's a big baseball fan, mostly rooting for the Chicago White Sox, but the Rockies and the Cardinals get some love too. Mary is a serial hobbyist: she loves playing music, collecting vinyl, repairing old audio gear, going to shows now that they’re a thing again, making quilts, and sewing her own wardrobe. When she's not buried in a hobby, she's staying active with snowboarding, backpacking, aerial arts, yoga, and weightlifting. For the last several years she's been working in process improvement, product management, and program management at various eCommerce startups.
+
+## Brannon Rouse
+
+- Sales Development Representative
+- Birmingham, AL, United States 🇺🇸
+- GitHub: [Brannon-Rouse](https://github.com/Brannon-Rouse)
+- [brannon.rouse@sourcegraph.com](mailto:brannon.rouse@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/brannon-rouse-1a106414b/)
+- Brannon grew up in Dallas, Texas and currently lives in Birmingham, Alabama with his wife, Emery. Brannon is an avid runner, a big Dallas sports fan, and a Taco Tuesday enthusiast. Before joining Sourcegraph he worked in the digital health startup space where he developed a passion for development, team-building, and bullet journaling.
