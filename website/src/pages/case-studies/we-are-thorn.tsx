@@ -19,8 +19,7 @@ export default ((props: any) => (
             title="Thorn deprecates legacy code safely"
             logo="/case-studies/thorn-logo.png"
             quote={{
-                quote:
-                    "Ensuring that changes to legacy systems didn't affect production stability was taking too long.",
+                quote: "Ensuring that changes to legacy systems didn't affect production stability was taking too long.",
                 author: 'Thorn Software Engineer Jacob Gillespie',
                 image: '/case-studies/jacob-gillespie-thorn-square.jpg',
             }}

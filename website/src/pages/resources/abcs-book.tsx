@@ -18,7 +18,12 @@ export default ((props: any) => (
             <div className="row justify-content-md-center">
                 <div className="col-small-12">
                     <p className="text-center">
-                        <img src="/other/abcs-book/our-abcs-hero.png" className="w-100 px-2 mb-3" role="presentation" alt="Our ABCs: Always Be Coding book" />
+                        <img
+                            src="/other/abcs-book/our-abcs-hero.png"
+                            className="w-100 px-2 mb-3"
+                            role="presentation"
+                            alt="Our ABCs: Always Be Coding book"
+                        />
                     </p>
                     <h1 className="text-center">Our ABCs: Always Be Coding children's book</h1>
                     <p className="text-center my-5">
@@ -121,11 +126,9 @@ export default ((props: any) => (
                 <div className="col-md-10">
                     <h3 className="text-center">About Sourcegraph</h3>
                     <p>
-                        Sourcegraph empowers all developers to explore, navigate and better understand all code, faster, with{' '}
-                        <a href="/universal-code-search">Universal Code Search</a>. 
-                        Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems.
-                        
-                      
+                        Sourcegraph empowers all developers to explore, navigate and better understand all code, faster,
+                        with <a href="/universal-code-search">Universal Code Search</a>. Sourcegraph’s mission is to
+                        make it easier and faster for developers to work on solving problems.
                     </p>
                     <p>
                         To learn more, get our ebook:{' '}
