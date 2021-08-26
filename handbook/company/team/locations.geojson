@@ -1094,6 +1094,32 @@
           59.92602795360136
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dan Ryan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.88030242919922,
+          40.44511813759635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+     "properties": {
+        "name": "Mary Belzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.92050647735596,
+          39.76873328671909
+        ]
+      }
     }
   ]
 }
