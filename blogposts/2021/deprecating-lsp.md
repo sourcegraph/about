@@ -2,7 +2,7 @@
 title: "We're deprecating Language Server support"
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
-description: "We're dropping support for Language Server-based code intelligence from our product, effective 2021-09-01. Note that this will affect all instances that are not running a private extension registry, not just those upgrading to the current version of Sourcegraph."
+description: "We're dropping support for Language Server-based code intelligence from our product, effective 2021-09-06. Note that this will affect all instances that are not running a private extension registry, not just those upgrading to the current version of Sourcegraph."
 publishDate: 2021-08-10T12:00-00:00
 tags: [blog]
 slug: deprecating-lsp
