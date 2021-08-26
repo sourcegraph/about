@@ -139,6 +139,12 @@ In the future, even more of what’s currently loaded into RAM can be placed bac
 
 _Look out for Han-Wen Nienhuys, creator of Zoekt, in an upcoming episode of the [Sourcegraph podcast!](https://about.sourcegraph.com/podcast)_
 
+### More posts like this
+
+- [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Optimizing a code intelligence commit graph](https://about.sourcegraph.com/blog/optimizing-a-code-intel-commit-graph/)
+- [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](https://about.sourcegraph.com/blog/avoiding-the-pitfalls-of-iteration-based-development/)
+
 <style>
   figure .no-shadow { box-shadow: none; }
   .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
