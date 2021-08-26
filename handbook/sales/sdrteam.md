@@ -13,6 +13,7 @@ The SDR Team (TBA)
     - [Sam Cregg](../company/team/index.md#sam-cregg)
     - [Jenna Pierre](https://about.sourcegraph.com/handbook/company/team#jenna-pierre-she-her)
     - [Zach Naidu](https://about.sourcegraph.com/handbook/company/team#zach-naidu)
+    - [Ellie Dawson](https://about.sourcegraph.com/handbook/company/team#ellie-dawson-she-her)
   - Inbound SDR
     - [Mark "Markie" Muldez](../company/team/index.md#mark-muldez-he-him)
 
