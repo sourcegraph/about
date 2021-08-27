@@ -206,6 +206,12 @@ still inspires and motivates me because I'd rather build and ship something
 that _is_ valuable and that _is_ good than to give customers something just
 because we built it.
 
+### More posts like this
+
+- [An ex-Googler's guide to dev tools](/blog/ex-googler-guide-dev-tools/)
+- [A 5x reduction in RAM usage with Zoekt memory optimizations](/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
+- [Optimizing a code intelligence commit graph](/blog/optimizing-a-code-intel-commit-graph/)
+
 [localmaximum]: https://elezea.com/2012/09/iphone-5-local-maximum/
 [sunkencost]: https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect
 [quinn]: https://about.sourcegraph.com/handbook/company/team#quinn-slack
