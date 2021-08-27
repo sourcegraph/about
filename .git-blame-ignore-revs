@@ -1,0 +1,7 @@
+# Note: you must add commit hashes to this file in a separate PR, with the squased commit hash from `main`.
+#
+# To always respect this file locally with git blame, run:
+# git config --global blame.ignoreRevsFile .git-blame-ignore-revs
+
+# Add Prettier to repo
+a76bd49373aac10eeb9c7e764ba30b95b6d86d8a

@@ -5,7 +5,7 @@ import remark from 'remark'
 import remarkHTML from 'remark-html'
 import { PostComponentProps } from './postTypes'
 
-interface Props extends PostComponentProps { }
+interface Props extends PostComponentProps {}
 
 /**
  * A post about a release.
@@ -29,7 +29,11 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
             <h3 className="card-body pb-2 pt-4 m-0 release-post__changelog-header">Changelog highlights</h3>
             <div className="release-post__items list-group list-group-flush">
                 {post.frontmatter.changelogItems?.map(({ url, category, description }, i) => (
-                    <a href={url} className="release-post__item d-md-flex list-group-item list-group-item-action" key={i}>
+                    <a
+                        href={url}
+                        className="release-post__item d-md-flex list-group-item list-group-item-action"
+                        key={i}
+                    >
                         <span className="release-post__item-category mb-2 mb-md-0">
                             <span className="release-post__item-category-badge">{category}</span>
                         </span>
@@ -57,7 +61,8 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 </li>
             </ul>
             <div className="card-body release-post__body">
-                * Please <a href="https://about.sourcegraph.com/contact/sales/">contact Sourcegraph</a> with any licensing questions.
+                * Please <a href="https://about.sourcegraph.com/contact/sales/">contact Sourcegraph</a> with any
+                licensing questions.
             </div>
         </>
     ) : (
@@ -95,8 +100,8 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                     </Link>
                 </div>
             ) : (
-                    <div className="card-body">{body}</div>
-                )}
+                <div className="card-body">{body}</div>
+            )}
         </Tag>
     )
 }

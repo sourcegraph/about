@@ -1,7 +1,6 @@
 .DS_Store
-yarn.lock
 .yarn-integrity
+node_modules
 docs/server/config/site.md
 .idea
 /.bin/
-.vscode/settings.json

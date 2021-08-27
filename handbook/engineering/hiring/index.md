@@ -6,6 +6,7 @@ Most of our process is documented in a private repository, but our goal is to mo
 
 - [Private interview documentation](https://github.com/sourcegraph/interviews/tree/master/engineering/software-engineer).
 - [Software engineer pairing exercise](software-engineer-pairing-exercise.md).
+- [Software engineer coding exercise](software-engineer-coding-exercise.md).
 - [Frontend Engineer (Extensibility) Interview](./frontend-engineer-extensibility.md)
 - [Engineering-leadership](engineering-leadership.md)
 - [Early-career engineers](early-career-engineers.md)
@@ -13,4 +14,3 @@ Most of our process is documented in a private repository, but our goal is to mo
 ## Open positions
 
 See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open positions and more info.
-
