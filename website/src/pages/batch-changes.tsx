@@ -34,7 +34,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
             title: 'Sourcegraph Batch Changes | Large-Scale Code Changes',
             description:
                 'Automate large-scale changes with Sourcegraph Batch Changes. Keep your code up to date and pay down tech debt across all repositories and code hosts.',
-            image: 'https://about.sourcegraph.com/sourcegraph-og.png'
+            image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
         heroAndHeaderClassName="batch-changes-page__hero-and-header"
         hero={
@@ -104,9 +104,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             </li>
                             <li>Programmatically define changes by creating a declarative specification file</li>
                             <li>Execute specifications via a lightweight CLI</li>
-                            <li>
-                                Track changeset lifecycle status across multiple code hosts via the Sourcegraph UI
-                            </li>
+                            <li>Track changeset lifecycle status across multiple code hosts via the Sourcegraph UI</li>
                         </ul>
                     </div>
                     <div className="col-lg-7">
