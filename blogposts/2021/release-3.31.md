@@ -21,9 +21,6 @@ changelogItems:
   - description: Reintroduced a revised version of the Search Types sidebar section.
     url: https://github.com/sourcegraph/sourcegraph/pull/23170
     category: Search
-  - description: Improved usability where filters followed by a space in the search query will warn users that the filter value is empty.
-    url: https://github.com/sourcegraph/sourcegraph/pull/23646
-    category: Search
   - description: "Perforce: [`git p4`'s `--use-client-spec` option](https://git-scm.com/docs/git-p4#Documentation/git-p4.txt---use-client-spec) can now be enabled by configuring the `p4.client` field. [#23833](https://github.com/sourcegraph/sourcegraph/pull/23833),"
     url: https://github.com/sourcegraph/sourcegraph/pull/23845
     category: 
