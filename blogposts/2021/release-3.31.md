@@ -37,15 +37,6 @@ changelogItems:
     url: https://github.com/sourcegraph/sourcegraph/issues/23186
     category: Code Insights
 # Changed
-  - description: Code Insights will now always backfill from the time the data series was created.
-    url: https://github.com/sourcegraph/sourcegraph/pull/23430
-    category: 
-  - description: Code Insights queries will now extract repository name out of the GraphQL response instead of going to the database.
-    url: https://github.com/sourcegraph/sourcegraph/pull/23388
-    category: API
-  - description: "Code Insights backend has moved from the `repo-updater` service to the `worker` service."
-    url: https://github.com/sourcegraph/sourcegraph/pull/23050
-    category: Repositories
   - description: "Code Insights feature flag `DISABLE_CODE_INSIGHTS` environment variable has moved from the `repo-updater` service to the `worker` service. Any users of this flag will need to update their `worker` service configuration to continue using it."
     url: https://github.com/sourcegraph/sourcegraph/pull/23050
     category: Repositories
