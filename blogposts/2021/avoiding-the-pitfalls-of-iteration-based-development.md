@@ -209,7 +209,7 @@ because we built it.
 ### More posts like this
 
 - [An ex-Googler's guide to dev tools
-](/blog/ex-googler-guide-dev-tools/)
+  ](/blog/ex-googler-guide-dev-tools/)
 - [A 5x reduction in RAM usage with Zoekt memory optimizations](/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
 - [Optimizing a code intelligence commit graph](/blog/optimizing-a-code-intel-commit-graph/)
 
