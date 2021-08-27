@@ -41,7 +41,7 @@ changelogItems:
     category: 
   - description: "Code Insights drill-down filters now allow filtering insights data on the dashboard page using repo: filters."
     url: https://github.com/sourcegraph/sourcegraph/issues/23186
-    category: Repositories
+    category: Code Insights
 # Changed
   - description: Code Insights will now always backfill from the time the data series was created.
     url: https://github.com/sourcegraph/sourcegraph/pull/23430
