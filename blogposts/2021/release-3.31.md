@@ -33,9 +33,6 @@ changelogItems:
   - description: "Batch Changes changesets can now be [set to published when previewing new or updated batch changes](https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui)."
     url: https://github.com/sourcegraph/sourcegraph/issues/22912
     category: Batch Changes
-  - description: "Added Python3 to server and gitserver images to enable git-p4 support."
-    url: https://github.com/sourcegraph/sourcegraph/pull/24204
-    category: 
   - description: "Code Insights drill-down filters now allow filtering insights data on the dashboard page using repo: filters."
     url: https://github.com/sourcegraph/sourcegraph/issues/23186
     category: Code Insights
