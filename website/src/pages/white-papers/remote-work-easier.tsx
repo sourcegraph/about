@@ -27,8 +27,7 @@ export default ((props: any) => (
         <WhitePaperPage
             title="Remote software development made easier"
             quote={{
-                quote:
-                    'Any tool that empowers you to find the answer to your own question is good for remote work, and Sourcegraph is such a tool.',
+                quote: 'Any tool that empowers you to find the answer to your own question is good for remote work, and Sourcegraph is such a tool.',
                 author: 'Nick Snyder, VP Engineering at Sourcegraph',
             }}
             pdf="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-remote-software-development-made-easier.pdf"
@@ -43,8 +42,8 @@ export default ((props: any) => (
                     </p>
                     <p>
                         We have compiled some excellent tips and tricks from fellow{' '}
-                        <a href="https://about.sourcegraph.com/handbook/company/team">teammates</a> on how to live your best
-                        distributed work life!
+                        <a href="https://about.sourcegraph.com/handbook/company/team">teammates</a> on how to live your
+                        best distributed work life!
                     </p>
                     <h2 className="pt-5 pb-1">Tips for working remotely</h2>
                     <h3 className="pt-5 pb-1">Home office and desk setup</h3>

@@ -2,21 +2,26 @@
 ignoreDisconnectedPageCheck: true
 ---
 
-# What is Okta?
+#OKTA
+
+## What is Okta?
 
 From the Okta website:
+
 > Okta is the foundation for secure connections between people and technology. It’s a service that gives employees, customers, and partners secure access to the tools they need to do their most important work.
+
 Okta is an Identity and Single Sign-On (SSO) solution for applications and Cloud entities. It allows Sourcegraph to consolidate authentication and authorization to applications we use daily through a single dashboard and ensure a consistent, secure, and auditable login experience for all our Sourcegraph team members.
 
-### Current implementation status
+#### Current implementation status
 
-Tech Ops is currently building out the integration with BambooHR as the source of truth for identity. Once this is active we will begin rolling out access to applications through Okta one by one, starting with Docusign, Google Workspace, and Slack. Because Google and Slack will impact every single Sourcegraph teammate we ask that you activate your account ASAP. 
+Tech Ops is currently building out the integration with BambooHR as the source of truth for identity. Once this is active we will begin rolling out access to applications through Okta one by one, starting with Docusign, Google Workspace, and Slack. Because Google and Slack will impact every single Sourcegraph teammate we ask that you activate your account ASAP.
 
 You should have received an activation email, if you haven’t please let #it-tech-ops know and we can resend the invite.
 
 ## How is Sourcegraph using Okta?
 
 Sourcegraph is using Okta for a few key goals:
+
 - Secure access to SaaS systems
 - Faster onboarding process
 - Consolidated & automated system access
@@ -39,14 +44,14 @@ Sourcegraph is using Okta for a few key goals:
 
 All Sourcegraph team members will have an Okta account set up as part of their onboarding process. Okta activation emails are valid for 7 days.
 
-Expect the sign-up process to take around 10 minutes. You will need to create login credentials, and set up Okta Verify on your mobile and/or desktop device for MFA. Okta Verify is available on iOS, Android, and Windows devices. You can always use 1Password’s one-time passcode feature to host your MFA codes, if you would rather. 
+Expect the sign-up process to take around 10 minutes. You will need to create login credentials, and set up Okta Verify on your mobile and/or desktop device for MFA. Okta Verify is available on iOS, Android, and Windows devices. You can always use 1Password’s one-time passcode feature to host your MFA codes, if you would rather.
 
 Contact #it-tech-ops if you need assistance setting this up.
 
 ## I forgot my password/my login doesn't work, what do I do?
 
-There is a "need help signing in?" button on the login screen. If you expand this there is a link to an automated password reset process via email. 
-We recommend that you store your Okta password in 1Password as well as your Security Questions there. 
+There is a "need help signing in?" button on the login screen. If you expand this there is a link to an automated password reset process via email.
+We recommend that you store your Okta password in 1Password as well as your Security Questions there.
 
 ## I forgot my Security Questions, how do I reset my password?
 
@@ -55,10 +60,11 @@ Ask #it-help-ops for a temporary password to be issued. You will be given a temp
 ## I changed my phone and now can't do MFA, what do I do?
 
 No worries! You can easily reset your own MFA code for Okta if you did not wipe/return your old phone yet.
-1. Sign in to your Okta webpage by going to *[sourcegraph.okta.com](https://www.sourcegraph.okta.com)* on your old phone
+
+1. Sign in to your Okta webpage by going to <https://www.sourcegraph.okta.com)> on your old phone
 2. Use your email, password, and the MFA code on your old phone
 3. Once you're on the Okta webpage click on your name and then click settings
-4. Scroll down until you see "Extra Verification", once you're there click "remove" to disable that instance of Okta Verify 
+4. Scroll down until you see "Extra Verification", once you're there click "remove" to disable that instance of Okta Verify
 5. Configure the new MFA code on your new phone
 
 Lost all your MFA Factors? Ask #it-tech-ops for an MFA Reset. Once your Factors have been reset, please set up Okta Verify again.
@@ -79,7 +85,7 @@ Yes you can! More on this later...
 
 The way we have Okta set-up should require you to authenticate once with MFA every 12 hours. It's recommended that you log in via the Okta dashboard at the beginning of your day, and then use either the dashboard or the Okta plugin for applications during your workday.
 
-For some applications, we will enforce an additional MFA step periodically because of the sensitivity of the data in them. 
+For some applications, we will enforce an additional MFA step periodically because of the sensitivity of the data in them.
 
 If you are having problems with being asked for multiple MFA authentications during the day, please contact #it-tech-ops and we can look into it.
 

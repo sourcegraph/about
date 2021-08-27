@@ -13,11 +13,11 @@ published: true
 
 ![Sourcegraph's new visual design and UI unveiled](https://sourcegraphstatic.com/blog/sourcegraph-new-visual-design-ui.jpg)
 
-Sourcegraph has grown rapidly in the last few years. We've made code search an indispensable tool at some of the world’s best-known companies. We've launched new features such as Code Monitoring and [Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes/), fixed hundreds of bugs, introduced powerful new search capabilities, and many, many other features. 
+Sourcegraph has grown rapidly in the last few years. We've made code search an indispensable tool at some of the world’s best-known companies. We've launched new features such as Code Monitoring and [Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes/), fixed hundreds of bugs, introduced powerful new search capabilities, and many, many other features.
 
-In the midst of all of this growth, we found that users were experiencing difficulties caused by our aging visual design language and that the design of major components was limiting our ability to advance Sourcegraph as a product. 
+In the midst of all of this growth, we found that users were experiencing difficulties caused by our aging visual design language and that the design of major components was limiting our ability to advance Sourcegraph as a product.
 
-As we attempted to modify and extend our design system to adjust to these challenges, it became clear that our current UI was not going to be able to support the next few years of Sourcegraph's product journey. 
+As we attempted to modify and extend our design system to adjust to these challenges, it became clear that our current UI was not going to be able to support the next few years of Sourcegraph's product journey.
 
 So with our users and the future in mind, we dove deep into Figma and Excalidraw and sketched concepts in notebooks and maybe on the odd napkin. We presented and reviewed and tested and refined. We searched Sourcegraph thousands of times to discover the scope of impending changes, review code, and answer questions like, "How often is border-color-1 used" or "Who altered this component last?" We created issues, wrote code, read code, deleted code, and merged changesets.
 
@@ -41,7 +41,7 @@ And now, today––a few short months after beginning the project––we are p
 
 ![improved diff view screenshot](https://sourcegraphstatic.com/blog/redesign/r_layouts.png)
 
-- Layout factors heavily in the usability of a design. We've improved pages like diff views to make them easier to use and to help users quickly find the information they need. 
+- Layout factors heavily in the usability of a design. We've improved pages like diff views to make them easier to use and to help users quickly find the information they need.
 - Segmentation improves focus. We've neatly wrapped sections of the UI in containers to help users focus on the most important elements.
 
 ## Consistent headers and navigation
@@ -59,6 +59,6 @@ Everything you know about your code can live in one place. We've brought the ext
 
 ## Try it for yourself
 
-These are some of the highlights, but we invite you to try it for yourself at [sourcegraph.com/search](http://sourcegraph.com/search). We think you'll find this new design improves your experience and sets the stage for some incredible features to come. 
+These are some of the highlights, but we invite you to try it for yourself at [sourcegraph.com/search](http://sourcegraph.com/search). We think you'll find this new design improves your experience and sets the stage for some incredible features to come.
 
 _The new Sourcegraph UI will ship to on-premise and enterprise customers in version 3.29._
