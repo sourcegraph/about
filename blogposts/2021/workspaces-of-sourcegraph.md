@@ -228,3 +228,9 @@ I'm experimenting with the Nova editor alongside VSCode, which replaced Sublime 
 # What does your editor look like?
 
 We want to see your setup too! Tweet it to us [@sourcegraph](https://twitter.com/sourcegraph).
+
+### More posts like this
+
+- ['I don't like things that write code for me': Dev Tool Time with Mitchell Hashimoto](/blog/dev-tool-time-mitchell-hashimoto/)
+- ['I basically want my whole computing environment to be programmable': Dev Tool Time with Thorsten Ball](/blog/dev-tool-time-thorsten-ball/)
+- ['I'm happy to represent the minimalist setup lifestyle': Dev Tool Time with Leah Culver](/blog/dev-tool-time-leah-culver/)

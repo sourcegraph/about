@@ -693,9 +693,10 @@ To add yourself to this page:
 ## Beatrix Woo (she/her)
 
 - Customer Support Engineer
-- San Diego, CA, USA
-- - [beatrix@sourcegraph.com](mailto:beatrix@sourcegraph.com), [GitHub](https://github.com/abeatrix), [LinkedIn](https://www.linkedin.com/in/wbeatrix/) , [Pronounce my name 🔊](https://www.youtube.com/watch?v=aZWHsV96NqY)
-- Originally from Hong Kong, Beatrix is now residing in the sunny San Diego with her husband and their Shiba Inu, Goku. She has recently made a career change from the Financial industry after working for Morgan Stanley and Uber to pick up her old passion in coding. She is currently working toward her Master’s Degree in Software Engineering. In her free time, Beatrix likes to spend time with her family, learn about different technologies, build mechanical keyboards, and play League of Legends with friends.
+- San Diego, CA, USA 🇺🇸 / Hong Kong 🇭🇰
+- GitHub: [abeatrix](https://github.com/abeatrix)
+- [beatrix@sourcegraph.com](mailto:beatrix@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/wbeatrix/) , [Pronounce my name 🔊](https://www.youtube.com/watch?v=aZWHsV96NqY), [@3eatrix](https://www.twitter.com/3eatrix/)
+- Originally from Hong Kong, Beatrix is now residing in the sunny San Diego with her husband and their Shiba Inu, Goku. She was working as an analyst and has worked for Morgan Stanley and Uber before she picked up her old passion in coding. In her free time, Beatrix likes to spend time with her family, learn about different technologies, build mechanical keyboards, and play [League of Legends](https://na.op.gg/summoner/userName=biues) with friends.
 
 ## Stompy Mwendwa
 
@@ -1371,3 +1372,11 @@ To add yourself to this page:
 - GitHub: [GregBouton](https://github.com/GregBouton)
 - [greg.bouton@sourcegraph.com](mailto:greg.bouton@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/gregbouton/)
 - Greg was born and raised in New York, moved up to Boston for college, and (much to the dismay of his family and friends) planted his roots on the North Shore of Massachusetts. He loves spending time with his wife and daughter (our two dogs and one cat too!). He also enjoys traveling, golfing, snowboarding, and pretty much all sports. Greg has been in the email, marketing automation, and demand generation spaces for over a decade where he's built effective customer and prospect-focused B2B and B2C campaigns.
+
+## Nonso Obiano
+
+- Customer Support Manager
+- Lagos, Nigeria 🇳🇬
+- GitHub: [Cyberwhiz5000](https://github.com/Cyberwhiz5000)
+- [nonso.obiano@sourcegraph.com](mailto:nonso.obiano@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/obianochukwunonso/)
+- Nonso lives in Lagos, Nigeria with his wife, Rita and they volunteer at their local church as pastors for the youth group. He loves a good sci-fi thriller, European soccer leagues, video games and works of fiction (Dean Koontz, Stephen King... you get the idea). Nonso has worked in customer support and contact centre operations the past decade and has led teams to deliver memorable experiences across various industries and customer segments.
