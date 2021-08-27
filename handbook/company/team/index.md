@@ -1380,3 +1380,11 @@ To add yourself to this page:
 - GitHub: [Cyberwhiz5000](https://github.com/Cyberwhiz5000)
 - [nonso.obiano@sourcegraph.com](mailto:nonso.obiano@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/obianochukwunonso/)
 - Nonso lives in Lagos, Nigeria with his wife, Rita and they volunteer at their local church as pastors for the youth group. He loves a good sci-fi thriller, European soccer leagues, video games and works of fiction (Dean Koontz, Stephen King... you get the idea). Nonso has worked in customer support and contact centre operations the past decade and has led teams to deliver memorable experiences across various industries and customer segments.
+
+
+Brielle Collins (she/her) 
+Customer Support Manager
+Chicago, Illinois. USA 🇺🇸
+GitHub: Brielle-c (https://github.com/Brielle-C) 
+brielle.collins@sourcegraph.com
+Brielle lives in Chicago, Illinois. She is the youngest of 3 siblings. Brielle loves to spend time with her family and friends, bbq's are her ultimate favorite. Brielle loves to cook, bake cookies, watch anime ,do yoga, and also read and write short shorties. Brielle has been working in customer support for  nearly a decade mostly with tech- start ups. Brielle does not have any pets yet, but plans on adopting or purchasing a GoldenDoodle to keep her company during team meetings.
