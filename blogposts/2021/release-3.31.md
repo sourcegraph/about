@@ -40,9 +40,6 @@ changelogItems:
   - description: "Code Insights feature flag `DISABLE_CODE_INSIGHTS` environment variable has moved from the `repo-updater` service to the `worker` service. Any users of this flag will need to update their `worker` service configuration to continue using it."
     url: https://github.com/sourcegraph/sourcegraph/pull/23050
     category: Repositories
-  - description: "Updated Docker-Compose Caddy Image to v2.0.0-alpine."
-    url: "https://github.com/sourcegraph/deploy-sourcegraph-docker/pull/468"
-    category: 
   - description: Code Insights historical samples will record using the timestamp of the commit that was searched.
     url: https://github.com/sourcegraph/sourcegraph/pull/23520
     category: Search
