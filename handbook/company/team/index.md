@@ -695,7 +695,7 @@ To add yourself to this page:
 - Customer Support Engineer
 - San Diego, CA, USA 🇺🇸 / Hong Kong 🇭🇰
 - GitHub: [abeatrix](https://github.com/abeatrix)
-- [beatrix@sourcegraph.com](mailto:beatrix@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/wbeatrix/) , [Pronounce my name 🔊](https://www.youtube.com/watch?v=aZWHsV96NqY), [@3eatrix](https://www.twitter.com/3eatrix/) 
+- [beatrix@sourcegraph.com](mailto:beatrix@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/wbeatrix/) , [Pronounce my name 🔊](https://www.youtube.com/watch?v=aZWHsV96NqY), [@3eatrix](https://www.twitter.com/3eatrix/)
 - Originally from Hong Kong, Beatrix is now residing in the sunny San Diego with her husband and their Shiba Inu, Goku. She was working as an analyst and has worked for Morgan Stanley and Uber before she picked up her old passion in coding. In her free time, Beatrix likes to spend time with her family, learn about different technologies, build mechanical keyboards, and play [League of Legends](https://na.op.gg/summoner/userName=biues) with friends.
 
 ## Stompy Mwendwa
