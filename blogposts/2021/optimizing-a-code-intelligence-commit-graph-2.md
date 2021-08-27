@@ -1,5 +1,5 @@
 ---
-title: "Optimizing a code intelligence commit graph (Part 2)"
+title: 'Optimizing a code intelligence commit graph (Part 2)'
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 description: "We enabled Sourcegraph to resolve code intelligence requests for commits missing an index, but ran into scalability challenges when dealing with large commit graphs. Here's how we unearthed and resolved the problem."
@@ -277,6 +277,7 @@ type UploadMeta struct {
 
 type CommitGraphView map[string][]UploadMeta // commit -> visible uploads
 ```
+
 Two commit graph views must be created per repository: one traversing the commit graph in each direction. Each instance of an `UploadMeta` struct occupies 56 bytes in memory (calculated via `unsafe.Sizeof(UploadMeta{})`). At the scale above, these structs occupy nearly 30GB of memory, which excludes the values in the `Root` and `Indexer` fields. The values of the root field, in particular, were quite large (file paths up to 200 characters, the average hovering around 75 characters) and repeated very frequently. This was by far the dominating factor, as confirmed by the customer's Go heap trace.
 
 We replaced the struct with the following set of data structures, which yields a much smaller yet semantically equivalent encoding to the commit graph view defined above.

@@ -12,13 +12,13 @@ These places are the source of truth for information at Sourcegraph. Information
   - [about.sourcegraph.com](https://about.sourcegraph.com)
   - [Sourcegraph handbook](../index.md)
   - [Sourcegraph blog](https://about.sourcegraph.com/blog)
-- [Decisions](decisions.md)
+- [Decision making](decisions.md)
+- [Creating a working group for cross-team projects](working-group.md)
 - [Roadmap](../product/roadmap.md)
 - [Issue tracker](https://github.com/sourcegraph/sourcegraph)
 - [productboard](https://sourcegraph.productboard.com/)
 - [HubSpot](https://app.hubspot.com) (only contacts, not companies and deals)
 - [Salesforce](https://sourcegraph2020.lightning.force.com/)
-- [JIRA Service Desk](https://sourcegraph.atlassian.net/jira/servicedesk/projects/SG)
 - [Looker](http://sourcegraph.looker.com/)
 - [Customer legal contracts](https://drive.google.com/drive/folders/1ePvVWcZYdd1_3ZlCP5A0lvMbBhBCVfSm)
 
@@ -48,12 +48,12 @@ The following places are not sources of truth. Treat documents and conversations
   - A meeting that would run over is a nudge that the meeting's agenda or duration was wrong, or that the meeting was led ineffectively.
 - Remind people of your role in cross-functional meetings (including company meeting) or any other meeting that has team members you haven't met yet. We're growing, and it's hard to remember everyone's role! (The [org chart](../company/team/org_chart.md) helps.)
 
-#### Scheduling meetings with Google Calendar 
+#### Scheduling meetings with Google Calendar
 
 Before you start, please make sure you've [configured your Google Calendar settings](../people-ops/onboarding/general_onboarding.md#configure-google-calendar) as described in the onboarding guidelines.
 
 - When creating the Google Calendar event:
-  - Use the "Find a Time" feature to see when you and other meeting attendees are all available. 
+  - Use the "Find a Time" feature to see when you and other meeting attendees are all available.
   - Add a [Zoom video call](#video-calls).
   - Add a Google Doc link to the event description for taking notes during the meeting.
     - If the meeting is recurring, use the same Google Doc for all meetings.
@@ -108,7 +108,6 @@ For example, this will redirect to our home page:
 
 We also use [srcgr.ph](http://srcgr.ph/) as our Bitly custom URL.
 It is also possible to customise specific sub-paths via Bitly. To do so we use our Bitly account, which is linked to our Twitter account. If you would like to request a shortened link, contact the [Marketing team](mailto:marketing-team@sourcegraph.com).
-
 
 ## Google Docs
 

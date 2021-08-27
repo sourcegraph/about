@@ -72,9 +72,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
 
         return (
             <Layout location={this.props.location} meta={meta} className="navbar-dark bg-black">
-                <Helmet>
-                    {canonical ? (<link rel="canonical" href={canonical} />) : ('')}
-                </Helmet>
+                <Helmet>{canonical ? <link rel="canonical" href={canonical} /> : ''}</Helmet>
                 <ContentPage
                     title="The Podcast🎙"
                     titleClassName="podcast__banner text-white"

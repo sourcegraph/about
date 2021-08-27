@@ -8,7 +8,11 @@ License keys are created and managed on Sourcegraph.com in the **Site-admin > Su
 
 ## How to create a license key for a renewal or upgrade
 
-If an existing company or customer needs a new license key for any reason (e.g., they purchase more seats, they upgrade product tiers, or they simply renew), you can add a new license key to an existing subscription.
+For a new trial, create a _new_ subscription. You will only use this for the trial. (Follow the instructions below from start to finish.)
+
+When the customer converts, create a _new_ subscription; do not reuse the trial subscription. (Follow the instructions below from start to finish.) This is to ensure data accuracy for the Sales Ops team.
+
+If an existing company or customer needs a new license key for any reason (e.g., they purchase more seats, they upgrade product tiers, or they simply renew), add a new license key to the _existing_ subscription. In that circumstnace, do not click **Create a product subscription**; find the existing subscription on that page and then once viewing it, click **Generate new license manually**.
 
 Visit the **Site-admin > Subscriptions** page, find the existing subscription, click into it, and follow the steps below (from the "Click **Generate new license manually**" step onwards).
 
@@ -44,14 +48,12 @@ Phrased another way:
 
 A typical email to send to a company is:
 
->Hi,
->I just created a new license key for you that you can find at ___! Just click **Reveal license key**, copy the key, and then save it to your Sourcegraph's site configuration in the `licenseKey` field.
+> Hi,
+> I just created a new license key for you that you can find at \_\_\_! Just click **Reveal license key**, copy the key, and then save it to your Sourcegraph's site configuration in the `licenseKey` field.
 
 ## Future state
 
-These tags are supported but not currently saleable:
-     - `branding`: Whether custom branding of this Sourcegraph instance has been purchased.
-     - `backup-and-restore`: Whether builtin backup and restore on this Sourcegraph instance has been purchased.
+These tags are supported but not currently saleable: - `branding`: Whether custom branding of this Sourcegraph instance has been purchased. - `backup-and-restore`: Whether builtin backup and restore on this Sourcegraph instance has been purchased.
 
 If no `plan:*` tag is supplied, the license will be treated as legacy enterprise tier which has unlimited access to all features.
 

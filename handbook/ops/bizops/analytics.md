@@ -49,6 +49,11 @@ Most "data pipelines" are SQL queries that turn raw ping data into clean dataset
 
 [Looker](https://sourcegraph.looker.com/) is a self-service tool with many pre-built reports and visualizations. The [onboarding doc](https://sourcegraph.looker.com/projects/sourcegraph_events/files/1_home.md) is located in Looker. Reach out in the #analytics Slack channel if you have any questions, we're happy to help!
 
+## How to
+
+- Add metrics on [Sourcegraph Cloud](https://about.sourcegraph.com/handbook/ops/bizops/amplitude#adding-events-to-amplitude)?
+- Add metrics on [Sourcegraph on-prem](https://docs.sourcegraph.com/dev/background-information/adding_ping_data)?
+
 ### Quick links
 
 - [Sales](https://sourcegraph.looker.com/browse/boards/2)
@@ -65,3 +70,10 @@ Most "data pipelines" are SQL queries that turn raw ping data into clean dataset
 - **Discoverability of data**: Bookmarking, favoriting or adding the sales/customer engineering board, product/engineering board and server instances overview look (or some combination of them) to your Looker instance is the best solution right now. These are all kept up-to-date with the most relevant data for all teams.
 - **Speed**: Looker’s UI makes it easy to analyze data, but the result really complex SQL query that take awhile to run (especially on dashboards that are compiled of many separate queries). Fixing the performance issues is not currently a priority, but is something that we’ll get to when we grow the team out.
 - **Naming conventions**: We’re slowly working on making naming conventions of dashboards, graphs, data points, etc... more obvious. If you come across anything that isn’t clear, let us know!
+
+### Looker administration
+
+When adding a user to Looker, they need to be in both the group and role:
+
+- Marketing, people ops, talent users = View
+- CE, sales, product users = ‘All internal users, view and edit’

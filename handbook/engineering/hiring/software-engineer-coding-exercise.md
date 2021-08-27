@@ -56,14 +56,28 @@ If we decide to move forward, we will schedule a 30-minute followup call to disc
 
 We designed [this synchronous exercise](https://github.com/sourcegraph/interviews/blob/master/engineering/coding/simple-polling/README.md) to measure your approach to coding a small application in a paired setting.
 
-* We will schedule a 90-minute timeframe to work with a Sourcegraph engineer.
-* In this exercise you write a command-line application that processes a data file and computes some simple metrics.
-* The data file will be emailed to you 10-minutes prior to the interview.
-* You may use the language of your choice.
-* You can use your own development environment, and look up documentation on the internet.
-* You are not prohibited from using open-source libraries.
+- We will schedule a 90-minute timeframe to work with a Sourcegraph engineer.
+- In this exercise you write a command-line application that processes a data file and computes some simple metrics.
+- The data file will be emailed to you 10-minutes prior to the interview.
+- You may use the language of your choice.
+- You can use your own development environment, and look up documentation on the internet.
+- You are not prohibited from using open-source libraries.
 
-If we device to move forward, we will schedule interviews with team members.
+If we decide to move forward, we will schedule interviews with team members.
+
+## Core APP team coding exercise
+
+We designed [this synchronous](https://github.com/sourcegraph/interviews/blob/master/engineering/coding/api-client/README.md) exercise to measure your approach to coding a small API client in a paired setting.
+
+- We will schedule a 1 hour timeframe to work with a Sourcegraph engineer.
+- In this exercise you write an API client that processes data from a public, non-authenticated REST API with 1 route.
+- The details of the assignment will be sent to you 2 hours before the interview.
+- You may use the language of your choice.
+- You can use your own development environment, and look up documentation on the internet.
+- You can use any open-source libraries.
+- We will be working in a paried setting, as if you would work in pair with a fellow engineer. We do not expect you to single handedly do all the work.
+
+If we decide to move forward, we will schedule interviews with team members.
 
 ## Distribution exercise
 

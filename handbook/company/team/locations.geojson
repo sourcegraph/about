@@ -1003,6 +1003,123 @@
           35.78408549932274
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beyang Liu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.39413261413574,
+          37.78726741375342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Justin Boyson"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.743057,
+          30.267153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "<Luke Taylor>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8758764564991,
+          52.353725318203985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yink Teo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41288661956786,
+          37.79099803764377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Milan Freml"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.269504547119137,
+          49.08297374955618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elzanne Wentzel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.877194762229919,
+          52.35879255268006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erzhan Torokulov"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.346255302429196,
+          59.92602795360136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dan Ryan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.88030242919922,
+          40.44511813759635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+     "properties": {
+        "name": "Mary Belzer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.92050647735596,
+          39.76873328671909
+        ]
+      }
     }
   ]
 }

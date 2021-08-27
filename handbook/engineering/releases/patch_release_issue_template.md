@@ -36,15 +36,15 @@ Ensure that all [patch request issues](https://github.com/sourcegraph/sourcegrap
 
 For each of the following repositories, cherry-pick (see snippet below) and check off commits listed above.
 
-- [ ] `sourcegraph/sourcegraph` ([`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/sourcegraph/tree/$MAJOR.$MINOR))
-- [ ] `sourcegraph/deploy-sourcegraph` ([`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/deploy-sourcegraph/tree/$MAJOR.$MINOR))
-- [ ] `sourcegraph/deploy-sourcegraph-docker` ([`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/deploy-sourcegraph-docker/tree/$MAJOR.$MINOR))
+- [ ] `sourcegraph/sourcegraph` ([`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/sourcegraph/tree/$MAJOR.$MINOR) [CI](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=$MAJOR.$MINOR))
+- [ ] `sourcegraph/deploy-sourcegraph` ([`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/deploy-sourcegraph/tree/$MAJOR.$MINOR) [CI](https://buildkite.com/sourcegraph/deploy-sourcegraph/builds?branch=$MAJOR.$MINOR))
+- [ ] `sourcegraph/deploy-sourcegraph-docker` ([`$MAJOR.$MINOR` release branch](https://github.com/sourcegraph/deploy-sourcegraph-docker/tree/$MAJOR.$MINOR) [CI](https://buildkite.com/sourcegraph/deploy-sourcegraph-docker/builds?branch=$MAJOR.$MINOR))
 
 ```sh
 git checkout $MAJOR.$MINOR
 git pull
 git cherry-pick <commit0> <commit1> ... # all relevant commits from the default branch
-git push $MAJOR.$MINOR
+git push origin $MAJOR.$MINOR
 ```
 
 - [ ] Ensure CI passes on all release branches listed above.
@@ -52,10 +52,11 @@ git push $MAJOR.$MINOR
 Create and test the first release candidate:
 
 - [ ] Push a release candidate tag:
-    ```sh
-    N=1 yarn release release:create-candidate $N
-    ```
+  ```sh
+  N=1 yarn release release:create-candidate $N
+  ```
 - [ ] Ensure that the following Buildkite pipelines all pass for the `v$MAJOR.$MINOR.$PATCH-rc.1` tag:
+
   - [ ] [Sourcegraph pipeline](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=v$MAJOR.$MINOR.$PATCH-rc.1)
   - [ ] [QA pipeline](https://buildkite.com/sourcegraph/qa/builds?branch=v$MAJOR.$MINOR.$PATCH-rc.1)
   - [ ] [E2E pipeline](https://buildkite.com/sourcegraph/e2e/builds?branch=v$MAJOR.$MINOR.$PATCH-rc.1)
@@ -74,9 +75,9 @@ Create and test the first release candidate:
 
 - [ ] Verify the [CHANGELOG](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md) on `main` and `$MAJOR.$MINOR` are accurate.
 - [ ] Tag the final release:
-    ```sh
-    yarn release release:create-candidate final
-    ```
+  ```sh
+  yarn release release:create-candidate final
+  ```
 - [ ] Ensure that the following pipelines all pass for the `v$MAJOR.$MINOR.$PATCH` tag:
   - [ ] [Sourcegraph pipeline](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=v$MAJOR.$MINOR.$PATCH)
   - [ ] [QA pipeline](https://buildkite.com/sourcegraph/qa/builds?branch=v$MAJOR.$MINOR.$PATCH)

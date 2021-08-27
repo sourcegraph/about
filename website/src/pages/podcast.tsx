@@ -66,8 +66,7 @@ export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>
         blogInfo={BLOG_TYPE_TO_INFO[BlogType.Podcast]}
         posts={data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
         location={location}
-    >
-    </PostsListPage>
+    ></PostsListPage>
 )
 const a = () => (
     <Layout

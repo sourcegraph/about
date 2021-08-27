@@ -1,30 +1,40 @@
 # Customer Support Triaging
-According to the Oxford dictionary, *triaging* or *triage* is the act of deciding the order of treatment. As customer support, we are the ‘doctors’ to our customers. We provide solutions to them when they have a problem. They are the ‘patients’.
 
-When a customer posts a question/issue/problem in our shared slack channel or email, they end up in the *triage tickets* view in Zendesk.
-What this means is that the customer issue needs to be understood before it’s assigned/picked up by a customer support engineer, which happens in the *Unassigned tickets* view.
+According to the Oxford dictionary, _triaging_ or _triage_ is the act of deciding the order of treatment. As customer support, we are the ‘doctors’ to our customers. We provide solutions to them when they have a problem. They are the ‘patients’.
+
+When a customer posts a question/issue/problem in our shared slack channel or email, they end up in the _triage tickets_ view in Zendesk.
+What this means is that the customer issue needs to be understood before it’s assigned/picked up by a customer support engineer, which happens in the _Unassigned tickets_ view.
+
+## The speed at which to triage
+
+In order to set-up the team for success meeting our internal 1-hour SLA, it is critical that the triage team triages every ticket that comes in within ~10 minutes of it coming in.
 
 ## How to triage like a pro
-Step 1:
-In the triage view, the first step is to open a ticket and understand the context of the message. Slow down and have a closer look at the content and the medium from which the message originated (emails tend to be rare). Is this related to another open issue? Is this a new issue? Is this not an issue at all?
 
-P.S: Internal notes are the default reply option in Zendesk.
+- **Step 1:** In the triage view, the first step is to open a ticket and understand the context of the message. Slow down and have a closer look at the content and the medium from which the message originated (emails tend to be rare). Is this related to another open issue? Is this a new issue? Is this not an issue at all?
 
-Step 2:
-Making an internal note for the rest of the team to understand what is required or what your decision was is really key. We are able to pick up context faster and jump in to pick up the ticket.
-Internal notes are considered reminders and guides about the customer issue. They’re visible in Salesforce and to everyone in the company who has access to Salesforce. Please make sure to remind each other to change the requestor so that we can have high data integrity in Zendesk.
+- **Step 2:** Identify if there is action for CS or not
 
-Step 3:
-On the left panel, under *Tags*, select, *triaged*. You’ll want to submit the ticket as open now before going to the next step.
+  - If there is an action for CS, go to step 3
+  - If there is no action for CS, go to step 8
 
-Step 4:
-On the left panel, under the *Select Assignee* tab, pick *Assign to this group* and submit the ticket as open one more time -- this will make sure the ticket lands in the *Unassigned queue* (which requires that ticket have the tag “triaged,” status of “open” and assignee of the Support group).
+- **Step 3:** If the case came in via Slack (whether or primary account and the support- or trial- channels, or our Community account and the #help channel), change the requestor to the person who requested it. This is not necessary if the ticket came in via email.
+
+- **Step 4:** Leave an internal note that says "In CS queue for helping" and share any other context for the team. This note also syncs to Salesforce so that CEs know our triaging decision.
+
+- **Step 5:** On the left panel, under _Tags_, select, _triaged_.
+
+- **Step 6:** On the left panel, under the _Select Assignee_ tab, pick _Assign to this group_ and submit the ticket as open -- this will make sure the ticket lands in the _Unassigned queue_ (which requires that ticket have the tag “triaged,” status of “open” and assignee of the Support group).
+
+- **Step 7:** If there is no action for CS, use the "no action for CS macro" and leave a reason why not -- remember, these internal notes sync to Salesforce so CEs know our decision making. This macro should also change the assignee to Virginia, which is important so these tickets don't count in the support metric data. You may then submit the ticket as solved.
+
+- **Step 8:** Create a post in our #customer-support-internal Slack channel altering the team that there is a new ticket available to take
 
 ## FAQs
 
 ### 1. Whose responsible for triaging?
 
-Virginia is responsible for triaging, and all CSEs are welcome to triage if they are ready to pick up and work a ticket and they see Virginia hasn't yet triaged the new tickets.
+Virginia, Stompy, and Carl are responsible for triaging. If needed, Adeola, Beatrix, and Warren can serve as back-up.
 
 ### 2. What should I do when I see a ticket originating from Slack with an internal user as the post owner?
 
@@ -35,9 +45,13 @@ The first step would be to open up the slack channel in which the Sourcegraph co
 If the other ticket is still open, merge the new ticket into it and alert our teammates who is responsible for the active ticket. This is easiest to see for tickets that originate from Slack. If you catch it for those that come in via email, that is great, but it can be harder to do.
 
 ### 4. Can I merge a ticket into one that I closed in the past?
+
 Short answer, No. Hopefully in the future, Zendesk will give us this feature; for now, we can link to the other ticket and be sure the requestor is correct.
 
 ### 5. Do we have anything to triage manually?
 
-Yes, we have a few customers listed in our [Customer Exception list](customer-exceptions.md) that we have to manually triage because we cannot automate the link from Slack to Zendesk. When a customer creates a support request in these channels, we have to manually create a Zendesk ticket and then triage that.	
-	
+Yes, we have a few customers listed in our [Customer Exception list](customer-exceptions.md) that we have to manually triage because we cannot automate the link from Slack to Zendesk. When a customer creates a support request in these channels, we have to manually create a Zendesk ticket and then triage that.
+
+### 6. What do I do when I see a company update in the triage queue?
+
+We sometimes get all company updates coming to the support mailbox. Company updates could be meeting updates etc. When you come across these updates, from a data integrity perspective, please go ahead and delete them.
