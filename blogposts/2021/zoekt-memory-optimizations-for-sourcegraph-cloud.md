@@ -137,13 +137,13 @@ Putting it all together, the new memory profile looks like this: a 5x reduction 
 
 In the future, even more of what’s currently loaded into RAM can be placed back onto the disk, using memory mappings to let the OS cache pages as necessary. Larger-scale architectural changes, like having an index cover multiple repositories, or having one large inverted index for each server, will reduce RAM usage even further. These complex changes require more careful planning, coding, and testing than the simple, targeted optimizations described above, but are the best way to escape from the local minima that repeated micro-optimizations can reach.
 
-_Look out for Han-Wen Nienhuys, creator of Zoekt, in an upcoming episode of the [Sourcegraph podcast!](https://about.sourcegraph.com/podcast)_
+_Look out for Han-Wen Nienhuys, creator of Zoekt, in an upcoming episode of the [Sourcegraph podcast!](/podcast)_
 
 ### More posts like this
 
-- [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
-- [Optimizing a code intelligence commit graph](https://about.sourcegraph.com/blog/optimizing-a-code-intel-commit-graph/)
-- [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](https://about.sourcegraph.com/blog/avoiding-the-pitfalls-of-iteration-based-development/)
+- [How not to break a search engine or: What I learned about unglamorous engineering](/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Optimizing a code intelligence commit graph](/blog/optimizing-a-code-intel-commit-graph/)
+- [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](/blog/avoiding-the-pitfalls-of-iteration-based-development/)
 
 <style>
   figure .no-shadow { box-shadow: none; }

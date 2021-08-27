@@ -293,3 +293,7 @@ research background to develop new tools and techniques for large-scale code
 search and automated refactoring._
 
 <small>Acks: Thanks [Rebecca Dodd](/company/team#rebecca-dodd-she-her) and [Camden Cheek](https://twitter.com/camdendcheek) for feedback on the content of this post.</small>
+
+- [A 5x reduction in RAM usage with Zoekt memory optimizations](/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
+- [Optimizing a code intelligence commit graph](/blog/optimizing-a-code-intel-commit-graph/)
+- [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](/blog/avoiding-the-pitfalls-of-iteration-based-development/)
