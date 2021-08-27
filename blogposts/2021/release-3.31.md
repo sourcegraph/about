@@ -12,9 +12,6 @@ changelogItems:
   - description: "Backend Code Insights GraphQL queries now support arguments `includeRepoRegex` and `excludeRepoRegex` to filter on repository names."
     url: https://github.com/sourcegraph/sourcegraph/pull/23256
     category: API
-  - description: Code Insights background queries now process in a priority order backwards through time. This will allow insights to populate concurrently.
-    url: https://github.com/sourcegraph/sourcegraph/pull/23101
-    category: 
   - description: Operator documentation has been added to the Search Reference sidebar section.
     url: https://github.com/sourcegraph/sourcegraph/pull/23116
     category: Search
