@@ -254,6 +254,12 @@ Another major takeaway is that the cliché holds: computers do what you tell the
 
 Check out [Part 2](/blog/optimizing-a-code-intel-commit-graph-part-2/), in which we tackle additional scalability challenges.
 
+### More posts like this
+
+- [A 5x reduction in RAM usage with Zoekt memory optimizations](/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
+- [How not to break a search engine or: What I learned about unglamorous engineering](/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](/blog/avoiding-the-pitfalls-of-iteration-based-development/)
+
 <style>
   figure .no-shadow { box-shadow: none; }
   .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
