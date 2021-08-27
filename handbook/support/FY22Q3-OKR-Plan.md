@@ -56,7 +56,7 @@ In support of our product/engineering Q3 objective to _Make cloud and enterprise
 - Channel: [#wg-post-aux](https://sourcegraph.slack.com/archives/C02B9HR49U6)
 - Details: Having a Guide/pool/database of all resolved tickets with specific keywords to easily identify what the troubleshooting steps are talking about, especially for frequent or complex cases where we can easily make reference to for faster customer resolution. Having a well documented case note( outlining thought process, and steps towards resolution) would really go a long way in achieving this.
   - Place for documenting known historic bugs indexed to versions (thinking an md file in our github page), I don’t think the changelog is sufficient for this nor the upgrade pages on Docs.
-  - Ensuring we have a framework in place that accounts for Data integrity and ensuring customer sensitive information are not exposed.
+  - Ensuring we have a framework in place that accounts for data integrity and ensuring customer sensitive information are not exposed.
   - It will be interesting to assess the pros/cons of the solution being customer-facing or not and/or what can be customer-facing vs not
 
 ### 7 Streamline key steps in CSE workflow
