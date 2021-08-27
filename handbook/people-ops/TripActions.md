@@ -11,9 +11,9 @@ Below are steps to help you get set up with your TripActions account.
   - Loyalty Program IDs (i.e. Hotel, Airline)
   - Carbon Footprint of travels-to-date
   - Calendar, Slack & Email sync
- 
- # Booking travel through TripActions 
-  
+
+# Booking travel through TripActions
+
 ## Flights
 
 All Company-sponsored flights will be booked through TripActions. The costs will be added to a Sourcegraph invoice, and no credit card is needed. While it is possible to find a cheaper flight outside of TripActions, we get overall better rates in the aggregate with the buying power of the whole company.
@@ -27,6 +27,7 @@ All Company-sponsored hotels & lodging (with the exception of Company-wide meetu
 All Company-sponsored car rentals will be booked through TripActions. The costs will be added to a Sourcegraph invoice, and no credit card is needed. Please note that in addition to car rentals, you can also book trains and rideshare trips (i.e. Uber/Lyft) via TripActions.
 
 ## Personal Bookings
+
 In TripActions, you can book personal travel. This benefit allows for teammates to have streamlined travel arrangements with business-preferred rates and 24/7 travel agent service. Note that when selecting this option, a personal credit card will be required at the time of booking. Personal trips cannot be added to the Sourcegraph invoice.
 
 ## How to book
@@ -52,14 +53,15 @@ Within TripActions, teammates global 24/7 access to live travel agents (via chat
 
 ### Using the Sherpa Integration for International Travel
 
-TripActions provides easy access to up-to-date information critical to booking international business travel. Through a partnership with Sherpa, they have eliminated the guesswork that can surround international travel, particularly when booking amidst COVID-19. 
- 
-Prior to booking, all travelers have the ability to review: 
+TripActions provides easy access to up-to-date information critical to booking international business travel. Through a partnership with Sherpa, they have eliminated the guesswork that can surround international travel, particularly when booking amidst COVID-19.
+
+Prior to booking, all travelers have the ability to review:
+
 - International travel restrictions, such as temporary entry bans
 - COVID-19 related quarantine and mask requirements, required health documents, and mandatory health screenings
 - Visa requirements, with the option to apply for and purchase a Visa directly within TripActions
- 
-Accessing this information: 
+
+Accessing this information:
 
 - Go to the booking search homepage
 - Click Check it out in the blue bar
@@ -67,4 +69,4 @@ Accessing this information:
 
 ### Travel Insurance
 
-This section is a work in progress. 
+This section is a work in progress.
