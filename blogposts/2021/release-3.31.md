@@ -171,9 +171,9 @@ changelogItems:
   - description: "Deprecated site configuration field `email.smtp.disableTLS` has been removed."
     url: https://github.com/sourcegraph/sourcegraph/pull/23639
     category: Admin
-  - description: "Deprecated language servers have been removed from `deploy-sourcegraph`. deploy-sourcegraph#3605"
+  - description: "Deprecated Language Servers have been removed from `deploy-sourcegraph`. [Learn more about deprecation for Language Server support](https://about.sourcegraph.com/blog/deprecating-lsp/)."
     url: "https://github.com/sourcegraph/deploy-sourcegraph/pull/3605"
-    category: 
+    category: Admin
   - description: "The experimental `codeInsightsAllRepos` feature flag has been removed."
     url: https://github.com/sourcegraph/sourcegraph/pull/23850
     category: Repositories
