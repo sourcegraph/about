@@ -98,10 +98,10 @@ This section captures our Zendesk protocol and configuration decisions.
 - CSEs have agent access
 - Virginia, Brielle, Nonso, Tamar, and Tech Ops have admin access
 - Only Virginia can modify billing related items
+- We have an admin level service account CSEs can use for integration work with Zendesk. If you want to do anything with this account, please check with @cs-leadership in our #customer-support-internal Slack channel first (they will help make sure what you want to do won't interrupt other workflow settings); similarly, this account should not used to make configuration changes without checking with the leadership team who is responsible for Zendesk configuration
 - The rest of the company will have visibility in a few ways (all of these items will be configured in 2021-03):
   - All new Zendesk tickets are linked to the #customer-support-issues-feed Slack channel
   - All Zendesk tickets (and the entire comment history) manifest in Salesforce on the customer's record (this needs to be implemented)
-  - When we create a Github issue from Zendesk, that also pulls in the conversation history in Github for engineering to see
 
 ### Web vs desktop vs mobile app
 
