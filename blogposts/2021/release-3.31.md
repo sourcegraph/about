@@ -8,7 +8,6 @@ published: false
 heroImage: 
 socialImage: 
 changelogItems:
-# Added
   - description: "Backend Code Insights GraphQL queries now support arguments `includeRepoRegex` and `excludeRepoRegex` to filter on repository names."
     url: https://github.com/sourcegraph/sourcegraph/pull/23256
     category: Code Insights
@@ -36,7 +35,6 @@ changelogItems:
   - description: "Code Insights drill-down filters now allow filtering insights data on the dashboard page using repo: filters."
     url: https://github.com/sourcegraph/sourcegraph/issues/23186
     category: Code Insights
-# Changed
   - description: "Code Insights feature flag `DISABLE_CODE_INSIGHTS` environment variable has moved from the `repo-updater` service to the `worker` service. Any users of this flag will need to update their `worker` service configuration to continue using it."
     url: https://github.com/sourcegraph/sourcegraph/pull/23050
     category: Repositories
@@ -106,7 +104,6 @@ changelogItems:
   - description: "In Kubernetes deployments an emptyDir (`/dev/shm`) is now mounted in the `pgsql` deployment to allow Postgres to access more than 64KB shared memory. This value should be configured to match the `shared_buffers` value in your Postgres configuration. deploy-sourcegraph#3784"
     url: "https://github.com/sourcegraph/deploy-sourcegraph/pull/3784/"
     category: 
-# Fixed
   - description: The search reference will now show matching entries when using the filter input.
     url: https://github.com/sourcegraph/sourcegraph/pull/23224
     category: Search
@@ -155,12 +152,6 @@ changelogItems:
     category: Search
   - description: "The `sg_service` Postgres role and `sg_repo_access_policy` policy on the `repo` table have been removed due to performance concerns."
     url: https://github.com/sourcegraph/sourcegraph/pull/23622
-    category: Repositories
-  - description: "Deprecated site configuration field `email.smtp.disableTLS` has been removed."
-    url: https://github.com/sourcegraph/sourcegraph/pull/23639
-    category: Admin
-  - description: "Deprecated Language Servers have been removed from `deploy-sourcegraph`. [Learn more about deprecation for Language Server support](https://about.sourcegraph.com/blog/deprecating-lsp/)."
-    url: "https://github.com/sourcegraph/deploy-sourcegraph/pull/3605"
     category: Admin
   - description: "The experimental `codeInsightsAllRepos` feature flag has been removed."
     url: https://github.com/sourcegraph/sourcegraph/pull/23850
