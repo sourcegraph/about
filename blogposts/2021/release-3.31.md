@@ -80,3 +80,9 @@ Once your code insights have backfilled your historical data, you can instantly 
 <div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
   <source src="https://sourcegraphstatic.com/blog/3.31/filter_code_insights.mp4" type="video/mp4">
 </video></div>
+
+## We're now indexing the open source universe for Sourcegraph cloud
+
+Sourcegraph is indexing every open source GitHub and GitLab repository with 1 or more stars. Users can search this index of open source code on [Sourcegraph cloud](www.sourcegraph.com), and you can read about why we're doing this [on our blog](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
+
+Also, if you'd like utilize this open source index with your Sourcegraph deployment, you can [set up federation for your instance](https://docs.sourcegraph.com/admin/federation/public_repositories). 
