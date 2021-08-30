@@ -79,7 +79,6 @@ During the trial period, the manager in training will assume full Engineering Ma
 
 The teammate's manager, director, or another nominated manager/director will become their sponsoring manager for the duration of the trial period. The sponsoring manager must commit to providing extra support to the manager in training during the trial period, which will last 12 weeks.
 
-
 The sponsoring manager will give the manager in training active coaching and feedback during weekly 1-1s and conduct bi-weekly 1-1s with the manager in training's direct reports to collect feedback and set them up for success.
 Halfway through their trial period, the manager in training will receive an interim performance evaluation to help them identify strengths and shortcomings as an engineering manager and allow them to adjust if needed.
 
