@@ -14,7 +14,7 @@ changelogItems:
   - description: Operator documentation has been added to the Search Reference sidebar section.
     url: https://github.com/sourcegraph/sourcegraph/pull/23116
     category: Search
-  - description: Syntax highlighting support for the Cue language.
+  - description: Syntax highlighting is now supported for CUE.
     url: https://cuelang.org
     category: Search
   - description: Reintroduced a revised version of the Search Types sidebar section.
