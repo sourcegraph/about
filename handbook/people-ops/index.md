@@ -56,7 +56,7 @@ WIP
 - [Teammate Gatherings and Celebrations](celebrate.md)
 - [Employment verification](employment_verification.md)
 
-## DEI
+## How we create an environment where everyone feels welcome and has equal opportunity
 
 - [Diversity, equity, and inclusion](../communication/dei.md)
 - [Personal Pronouns](personal-pronouns.md)
