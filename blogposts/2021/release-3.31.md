@@ -21,12 +21,12 @@ changelogItems:
   - description: Reintroduced a revised version of the Search Types sidebar section.
     url: https://github.com/sourcegraph/sourcegraph/pull/23170
     category: Search
-  - description: "Perforce: [`git p4`'s `--use-client-spec` option](https://git-scm.com/docs/git-p4#Documentation/git-p4.txt---use-client-spec) can now be enabled by configuring the `p4.client` field. [#23833](https://github.com/sourcegraph/sourcegraph/pull/23833),"
+  - description: "Added support for [`git p4`'s `--use-client-spec` option](https://git-scm.com/docs/git-p4#Documentation/git-p4.txt---use-client-spec) can now be enabled by configuring the `p4.client` field in the Perforce integration."
     url: https://github.com/sourcegraph/sourcegraph/pull/23845
-    category: 
-  - description: "Perforce: added basic support for Perforce permission table path wildcards."
+    category: Admin
+  - description: "Added basic support for Perforce permission table path wildcards in the Perforce integration."
     url: https://github.com/sourcegraph/sourcegraph/pull/23755
-    category: 
+    category: Admin
   - description: Added autocompletion and search filtering of branch/tag/commit revisions to the repository compare page.
     url: https://github.com/sourcegraph/sourcegraph/pull/23977
     category: Search
@@ -46,7 +46,7 @@ changelogItems:
   - description: Authorization checks are now handled using role based permissions instead of manually altering SQL statements. 23398
     url: https://github.com/sourcegraph/sourcegraph/pull/23398
     category: 
-  - description: "Docker Compose: the Jaeger container's `SAMPLING_STRATEGIES_FILE` now has a default value. If you are currently using a custom sampling strategies configuration, you may need to make sure your configuration is not overridden by the change when upgrading. sourcegraph/deploy-sourcegraph#489"
+  - description: "The Docker Compose Jaeger container's `SAMPLING_STRATEGIES_FILE` now has a default value. If you are currently using a custom sampling strategies configuration, you may need to make sure your configuration is not overridden by the change when upgrading."
     url: "https://github.com/sourcegraph/deploy-sourcegraph-docker/pull/489"
     category: Admin
   - description: Code Insights historical samples will record using the most recent commit to the start of the frame instead of the middle of the frame.
@@ -55,12 +55,6 @@ changelogItems:
   - description: The copy icon displayed next to files and repositories will now copy the file or repository path. Previously, this action copied the URL to clipboard.
     url: https://github.com/sourcegraph/sourcegraph/pull/23390
     category: Repositories
-  - description: "Sourcegraph's Prometheus dependency has been upgraded to v2.28.1. 23663"
-    url: https://github.com/sourcegraph/sourcegraph/pull/23663
-    category: 
-  - description: "Sourcegraph's Alertmanager dependency has been upgraded to v0.22.2. 23663"
-    url: https://github.com/sourcegraph/sourcegraph/pull/23714
-    category: 
   - description: Code Insights will now schedule sample recordings for the first of the next month after creation or a previous recording.
     url: https://github.com/sourcegraph/sourcegraph/pull/23799
     category: 
@@ -97,19 +91,16 @@ changelogItems:
   - description: Results are now streamed from searcher by default, improving memory usage and latency for large, unindexed searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/23754
     category: Search
-  - description: "[`deploy-sourcegraph` overlays](https://docs.sourcegraph.com/admin/install/kubernetes/configure#overlays) now use `resources:` instead of the [deprecated `bases:` field] -(https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/bases/) for referencing Kustomize bases. deploy-sourcegraph#3606"
+  - description: "[`deploy-sourcegraph` overlays](https://docs.sourcegraph.com/admin/install/kubernetes/configure#overlays) now use `resources:` instead of the [deprecated `bases:` field](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/bases/) for referencing Kustomize bases."
     url: "https://github.com/sourcegraph/deploy-sourcegraph/pull/3606"
     category: Admin
-  - description: "The `deploy-sourcegraph-docker` Pure Docker deployment scripts and configuration has been moved to the `./pure-docker` subdirectory. deploy-sourcegraph-docker#454"
-    url: "https://github.com/sourcegraph/deploy-sourcegraph-docker/pull/454"
-    category: 
   - description: "In Kubernetes deployments, setting the `SRC_GIT_SERVERS` environment variable explicitly is no longer needed. Addresses of the gitserver pods will be discovered automatically and in the same numerical order as with the static list. Unset the env var in your `frontend.Deployment.yaml` to make use of this feature."
     url: https://github.com/sourcegraph/sourcegraph/pull/24094
     category: 
   - description: "The consistent hashing scheme used to distribute repositories across indexed-search replicas has changed to improve distribution and reduce load discrepancies. In the next upgrade, indexed-search pods will re-index the majority of repositories since the repo to replica assignments will change. This can take a few hours in large instances, but searches should succeed during that time since a replica will only delete a repo once it has been indexed in the new replica that owns it. You can monitor this process in the Zoekt Index Server Grafana dashboard - the \"assigned\" repos in \"Total number of repos\" will spike and then reduce until it becomes the same as \"indexed\". As a fail-safe, the old consistent hashing scheme can be enabled by setting the `SRC_ENDPOINTS_CONSISTENT_HASH` env var to `consistent(crc32ieee)` in the `sourcegraph-frontend` deployment."
     url: https://github.com/sourcegraph/sourcegraph/pull/23921
     category: Search
-  - description: "GitHub repository permissions can now leverage caching of team and organization permissions for user permissions syncing. Caching behaviour can be enabled via the `authorization.groupsCacheTTL` field in the code host config. This can significantly reduce the amount of time it takes to perform a full permissions sync due to reduced instances of being rate limited by the code host."
+  - description: "GitHub repository permissions can now leverage caching of team and organization permissions for user permissions syncing. This experimental caching behaviour can be enabled via the `authorization.groupsCacheTTL` field in the code host config. This can significantly reduce the amount of time it takes to perform a full permissions sync due to reduced instances of being rate limited by the code host for very large deployments. [Learn more](https://docs.sourcegraph.com/admin/repo/permissions#teams-and-organizations-permissions-caching)."
     url: https://github.com/sourcegraph/sourcegraph/pull/23978
     category: Repositories
   - description: "In Kubernetes deployments an emptyDir (`/dev/shm`) is now mounted in the `pgsql` deployment to allow Postgres to access more than 64KB shared memory. This value should be configured to match the `shared_buffers` value in your Postgres configuration. deploy-sourcegraph#3784"
@@ -168,9 +159,9 @@ changelogItems:
   - description: "Deprecated site configuration field `email.smtp.disableTLS` has been removed."
     url: https://github.com/sourcegraph/sourcegraph/pull/23639
     category: Admin
-  - description: "Deprecated language servers have been removed from `deploy-sourcegraph`. deploy-sourcegraph#3605"
+  - description: "Deprecated Language Servers have been removed from `deploy-sourcegraph`. [Learn more about deprecation for Language Server support](https://about.sourcegraph.com/blog/deprecating-lsp/)."
     url: "https://github.com/sourcegraph/deploy-sourcegraph/pull/3605"
-    category: 
+    category: Admin
   - description: "The experimental `codeInsightsAllRepos` feature flag has been removed."
     url: https://github.com/sourcegraph/sourcegraph/pull/23850
     category: Repositories
