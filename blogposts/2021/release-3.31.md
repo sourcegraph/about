@@ -21,9 +21,9 @@ changelogItems:
     url: https://github.com/sourcegraph/sourcegraph/pull/23170
     category: Search
   - description: "Added support for [`git p4`'s `--use-client-spec` option](https://git-scm.com/docs/git-p4#Documentation/git-p4.txt---use-client-spec) can now be enabled by configuring the `p4.client` field in the Perforce integration."
-    url: https://github.com/sourcegraph/sourcegraph/pull/23845
+    url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
     category: Admin
-  - description: "Batch Changes changesets can now be [set to published when previewing new or updated batch changes](https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui)."
+  - description: "Batch Changes changesets can now be set to published when previewing new or updated batch changes."
     url: https://github.com/sourcegraph/sourcegraph/issues/22912
     category: Batch Changes
   - description: "Code Insights drill-down filters now allow filtering insights data on the dashboard page using repo: filters."
