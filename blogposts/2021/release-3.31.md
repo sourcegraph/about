@@ -47,17 +47,8 @@ changelogItems:
   - description: Fixed a result streaming throttling issue that was causing significantly increased latency for some searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/23736
     category: Search
-  - description: GitCredentials passwords stored in AWS CodeCommit configuration is now redacted.
-    url: https://github.com/sourcegraph/sourcegraph/pull/23832
-    category: Admin
-  - description: "Patched a vulnerability in `apk-tools`."
-    url: https://github.com/sourcegraph/sourcegraph/pull/23917
-    category: 
   - description: Updating draft merge requests on GitLab from batch changes no longer removes the draft status.
     url: https://github.com/sourcegraph/sourcegraph/issues/23944
-    category: Batch Changes
-  - description: "The old batch repository syncer was removed and can no longer be activated by setting `ENABLE_STREAMING_REPOS_SYNCER=false`."
-    url: https://github.com/sourcegraph/sourcegraph/pull/22949
     category: Batch Changes
   - description: Email notifications for saved searches are now deprecated in favor of Code Monitoring. Email notifications can no longer be enabled for saved searches. Saved searches that already have notifications enabled will continue to work, but there is now a button users can click to migrate to code monitors. Notifications for saved searches will be removed entirely in the future.
     url: https://github.com/sourcegraph/sourcegraph/pull/23275
