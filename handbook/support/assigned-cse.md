@@ -13,12 +13,10 @@ All customers with an assigned CSE (whether internal in nature only or communica
 - CSE attends regular and ad-hoc customer meetings to streamline communication (this should be discussed with CE for pre-sales assignments)
 - CSE updates the [technical design documentation](https://docs.google.com/document/d/19qcdFcFpqHNE6OTgO8SwdTF7FfB4AJH6Hlqeywgv6Yc/edit#) when they learn of new information/changes (and informs the CE of the update)
 - CSE has a recurring weekly check-in with the CE; some good standing questions:
-	- What is going well with the customer?
-	- What, if anything, is causing frustration for the customer?
-	- What are we currently trying to make happen with this customer (our goals)?
-	- What context would be useful to have for anything troubleshooting that may come up?
-
-
+  - What is going well with the customer?
+  - What, if anything, is causing frustration for the customer?
+  - What are we currently trying to make happen with this customer (our goals)?
+  - What context would be useful to have for anything troubleshooting that may come up?
 
 There are two differences between post-sales strategic customers and pre-sales that allow us to offer this benefit and maintain flexibility where we need it:
 
