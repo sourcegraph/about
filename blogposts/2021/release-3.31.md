@@ -17,14 +17,14 @@ changelogItems:
   - description: Syntax highlighting is now supported for CUE.
     url: https://cuelang.org
     category: Search
-  - description: Reintroduced a revised version of the Search Types sidebar section.
+  - description: Reintroduced a revised version of the Search Types sidebar section, making the quick links for search types (for example, diff searches) more intuitive to use.
     url: https://github.com/sourcegraph/sourcegraph/pull/23170
     category: Search
-  - description: "Added support for [`git p4`'s `--use-client-spec` option](https://git-scm.com/docs/git-p4#Documentation/git-p4.txt---use-client-spec) can now be enabled by configuring the `p4.client` field in the Perforce integration."
-    url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
+  - description: "Added support for git p4's `--use-client-spec` option, allowing Sourcegraph to avoid cloning unimportant files. This can now be enabled by configuring the `p4.client` field in the Perforce integration."
+    url: https://github.com/sourcegraph/sourcegraph/pull/23845
     category: Admin
   - description: "Batch Changes changesets can now be set to published when previewing new or updated batch changes."
-    url: https://github.com/sourcegraph/sourcegraph/issues/22912
+    url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
     category: Batch Changes
   - description: "Code Insights drill-down filters now allow filtering insights data on the dashboard page using repo: filters."
     url: https://github.com/sourcegraph/sourcegraph/issues/23186
@@ -40,11 +40,11 @@ changelogItems:
     category: Repositories
   - description: "For Docker-Compose and Kubernetes users, the built-in main Postgres and codeintel databases have switched to an alpine Docker image. This requires re-indexing the entire database. This process can take up to a few hours on systems with large datasets."
     url: https://github.com/sourcegraph/sourcegraph/pull/23697
-    category: Repositories
+    category: Admin
   - description: "All commit search results for `and`-expressions are now highlighted."
     url: https://github.com/sourcegraph/sourcegraph/pull/23336
     category: Search
-  - description: Fixed a result streaming throttling issue that was causing significantly increased latency for some searches.
+  - description: Fixed a result streaming throttling issue that was causing significantly increased latency for some searches. This should improve the time to first rendered results for those searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/23736
     category: Search
   - description: Updating draft merge requests on GitLab from batch changes no longer removes the draft status.
@@ -53,9 +53,6 @@ changelogItems:
   - description: Email notifications for saved searches are now deprecated in favor of Code Monitoring. Email notifications can no longer be enabled for saved searches. Saved searches that already have notifications enabled will continue to work, but there is now a button users can click to migrate to code monitors. Notifications for saved searches will be removed entirely in the future.
     url: https://github.com/sourcegraph/sourcegraph/pull/23275
     category: Search
-  - description: "The experimental `codeInsightsAllRepos` feature flag has been removed."
-    url: https://github.com/sourcegraph/sourcegraph/pull/23850
-    category: Repositories
   
 ---
 
@@ -81,7 +78,7 @@ Once your code insights have backfilled your historical data, you can instantly 
   <source src="https://sourcegraphstatic.com/blog/3.31/filter_code_insights.mp4" type="video/mp4">
 </video></div>
 
-## We're now indexing the open source universe for Sourcegraph cloud
+## We're now indexing the open source universe on Sourcegraph cloud
 
 Sourcegraph is indexing every open source GitHub and GitLab repository with 1 or more stars. Users can search this index of open source code on [Sourcegraph cloud](www.sourcegraph.com), and you can read about why we're doing this [on our blog](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
 
