@@ -49,7 +49,7 @@
       <text role="heading" aria-level="1" transform="matrix(381 0 0 381 16383 81534)" fill="var(--sg-sky-blue)">
         <tspan x="0" y="0">Working asynchronously</tspan>
       </text>
-      <path d="M248023 73066h170208v4968H248023z" id="path354" fill="var(--sg-sky-blue)" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+      <path d="M248023 73066h170208v4968H248023z" fill="var(--sg-sky-blue)" fill-opacity="1" fill-rule="evenodd" stroke="none" />
       <!--Monitor with a webcam showing three people on a video call-->
       <g transform="matrix(68989.13 0 0 -68988.01 328955 163030)">
         <image width="1" height="1" preserveAspectRatio="none" transform="matrix(1 0 0 -1 0 1)" href="https://sourcegraphstatic.com/handbook/async-communication/meeting.png" aria-label="Monitor with a webcam showing three people on a video call" />
@@ -81,7 +81,7 @@
       <text role="heading" aria-level="2" transform="matrix(381 0 0 381 16383 284988)" fill="var(--sg-vivid-violet)">
         <tspan x="0" y="0">Asynchronous communication</tspan>
       </text>
-      <path d="M237744 277614h180492v4968H237744z" id="path360" fill="var(--sg-vivid-violet)" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+      <path d="M237744 277614h180492v4968H237744z" fill="var(--sg-vivid-violet)" fill-opacity="1" fill-rule="evenodd" stroke="none" />
       <!--Graphic of two persons on different ends of the globe-->
       <g transform="matrix(86324.99 0 0 -86324.99 32502 410259)">
         <image width="1" height="1" preserveAspectRatio="none" transform="matrix(1 0 0 -1 0 1)" href="https://sourcegraphstatic.com/handbook/async-communication/across_the_world.png" aria-label="Graphic of two persons on different ends of the globe" />
@@ -92,8 +92,8 @@
         <tspan x="0" dy="48">communication that doesn’t happen in real-time –</tspan>
         <tspan x="0" dy="48">responses can occur intermittently.</tspan>
       </text>
-      <path d="M191072 367168l-54624-144" id="path614" fill="none" stroke="var(--sg-vivid-violet)" stroke-width="1524" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="8" />
-      <path d="M336850 367168l-54624-144" id="path624" fill="none" stroke="var(--sg-vivid-violet)" stroke-width="1524" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="8" />
+      <path d="M191072 367168l-54624-144" fill="none" stroke="var(--sg-vivid-violet)" stroke-width="1524" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="8" />
+      <path d="M336850 367168l-54624-144" fill="none" stroke="var(--sg-vivid-violet)" stroke-width="1524" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="8" />
       <!--When to use-->
       <g fill="#434343" role="group">
         <text role="heading" aria-level="3" transform="matrix(381 0 0 381 135255 392811)">
@@ -157,7 +157,7 @@
       <text role="heading" aria-level="2" transform="matrix(381 0 0 381 16383 502920)" fill="var(--sg-vermillion)">
         <tspan x="0" y="0">Synchronous communication</tspan>
       </text>
-      <path d="M227076 496668h192540v4968H227076z" id="path348" fill="var(--sg-vermillion)" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+      <path d="M227076 496668h192540v4968H227076z" fill="var(--sg-vermillion)" fill-opacity="1" fill-rule="evenodd" stroke="none" />
       <!--Graphic with three people close together, having an idea-->
       <g transform="matrix(82590 0 0 -82590 34369 621299)">
         <image width="1" height="1" preserveAspectRatio="none" transform="matrix(1 0 0 -1 0 1)" href="https://sourcegraphstatic.com/handbook/async-communication/collaborative_idea.png" aria-label="Graphic with three people close together, having an idea" />
@@ -168,8 +168,8 @@
         <tspan x="0" dy="48">communication that happens in real-time – responses occur</tspan>
         <tspan x="0" dy="48">immediately.</tspan>
       </text>
-      <path d="M192461 579840l-54624-144" id="path594" fill="none" stroke="var(--sg-vermillion)" stroke-width="1524" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="8" />
-      <path d="M338239 580076l-54624-144" id="path604" fill="none" stroke="var(--sg-vermillion)" stroke-width="1524" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="8" />
+      <path d="M192461 579840l-54624-144" fill="none" stroke="var(--sg-vermillion)" stroke-width="1524" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="8" />
+      <path d="M338239 580076l-54624-144" fill="none" stroke="var(--sg-vermillion)" stroke-width="1524" stroke-linecap="butt" stroke-linejoin="round" stroke-miterlimit="8" />
       <!--When to use-->
       <g fill="#434343" role="group">
         <text role="heading" aria-level="3" transform="matrix(381 0 0 381 136779 604266)">
