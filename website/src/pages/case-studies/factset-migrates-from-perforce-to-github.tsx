@@ -20,62 +20,62 @@ export default ((props: any) => (
             title='FactSet migrates from Perforce to GitHub'
             logo='/external-logos/factset-logo.svg'
             quote={{
-                quote: '',
+                quote: 'With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub',
                 author: derrickFaunce,
                 image: '/case-studies/',
             }}
         >
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
-                    <p>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Languages</td>
-                                    <td>C++, Javascript, and Python</td>
-                                </tr>
-                                <tr>
-                                    <td>Developers</td>
-                                    <td>500+</td>
-                                </tr>
-                                <tr>
-                                    <td>Code Host</td>
-                                    <td>Migration to GitHub</td>
-                                </tr>
-                                <tr>
-                                    <td># Repos</td>
-                                    <td>12,000</td>
-                                </tr>
-                                <tr>
-                                    <td>Extensions (other tools)</td>
-                                    <td>Lightstep, VS Code, Code Ownership</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </p>
+                    <div className="row">
+                        <div className="col">
+                            <h3 className="pt-5 pb-1">Before Sourcegraph</h3>
+                            <ul>
+                                <li>Inability to search across repositories after monolith to microservices migration</li>
+                                <li>Lack of understanding of existing code led to unnecessary or redundant code</li>
+                                <li>Difficult to ensure consistency across the organization</li>
+                            </ul>
 
-                    <h3 className="pt-5 pb-1">Before Sourcegraph</h3>
-                    <ul>
-                        <li>Inability to search across repositories after monolith to microservices migration</li>
-                        <li>Lack of understanding of existing code led to unnecessary or redundant code</li>
-                        <li>Difficult to ensure consistency across the organization</li>
-                    </ul>
+                            <h3 className="pt-5 pb-1">After Sourcegraph</h3>
+                            <ul>
+                                <li>Able to search all code in any language, including C++, across all 12,000+ repositories</li>
+                                <li>Eliminated duplicative efforts across the engineering team</li>
+                                <li>Able to find and reuse examples from codebase for increased consistency</li>
+                            </ul>
+                        </div>
 
-                    <h3 className="pt-5 pb-1">After Sourcegraph</h3>
-                    <ul>
-                        <li>Able to search all code in any language, including C++, across all 12,000+ repositories</li>
-                        <li>Eliminated duplicative efforts across the engineering team</li>
-                        <li>Able to find and reuse examples from codebase for increased consistency</li>
-                    </ul>
+                        <div className="col">
+                            <table className="mt-5">
+                                <tbody>
+                                    <tr>
+                                        <th className="bg-light">Languages</th>
+                                        <td>C++, Javascript, and Python</td>
+                                    </tr>
+                                    <tr>
+                                        <th className="bg-light">Developers</th>
+                                        <td>500+</td>
+                                    </tr>
+                                    <tr>
+                                        <th className="bg-light">Code Host</th>
+                                        <td>GitHub</td>
+                                    </tr>
+                                    <tr>
+                                        <th className="bg-light"># Repos</th>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <th className="bg-light">Extensions (other tools)</th>
+                                        <td>Lightstep, VS Code, Code Ownership</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
                     <InContentBlockquote
                         quote="With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub."
                         author={derrickFaunce}
                     />
-
-                    <p>
-                        FactSet provides financial data and software solutions for over 100,000 investment professionals around the world.
-                    </p>
 
                     <h2 className="pt-5 pb-1">Migrating from monolith to microservices</h2>
                     <p>
@@ -118,10 +118,10 @@ export default ((props: any) => (
                         given day,’” Faunce said. Now, over 500 FactSet developers use Sourcegraph.
                     </p>
 
-                    <p className="font-weight-bold">
-                        “For developers, Sourcegraph is a must-have tool一we need it at arm’s length at all times.” - 
-                        Derrick Faunce, Associate Director of Developer Services, at FactSet
-                    </p>
+                    <InContentBlockquote
+                        quote="For developers, Sourcegraph is a must-have tool一we need it at arm’s length at all times."
+                        author={derrickFaunce}
+                    />
 
                     <p>
                         For a large, fast-paced organization like FactSet, code search capabilities are essential to ensuring 
