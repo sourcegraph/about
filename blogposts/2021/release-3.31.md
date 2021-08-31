@@ -74,7 +74,9 @@ Once your code insights have backfilled your historical data, you can instantly 
 
 ## Saved search notifications are migrating to code monitoring
 
-Email notifications for saved searches are being deprecated in favor of code monitoring. There will no longer be an option to enable email notifications for new saved searches, and for any existing saved search with email notifications enabled, there is now a button to automatically migrate to code monitoring. Note that existing email notifications for saved searches will be removed in the future.
+Email notifications for saved searches are being deprecated in favor of code monitoring. Like email notifications for saved searches, code monitoring allows you to keep track of and get notified about changes in your code. Some use cases for code monitors include getting notifications for potential secrets, anti-patterns, or common typos committed to your codebase.
+
+If you are using email notifications for existing saved searches, there is now a button to automatically migrate to code monitoring. Note that existing email notifications for saved searches will be removed in the future.
 
 ## We're now indexing the open source universe on Sourcegraph cloud
 
