@@ -76,7 +76,7 @@ In the site admin panel, we have a Usage stats page that displays number of MAUs
 We track the following key metrics:
 
 - acquisition: number of visitors
-- activation: the percentage of users that had a successfull initial experience.
+- activation: the percentage of visitors that had a successful initial experience.
 - retention: the number of active users retained time period over time period
 
 #### Activation
