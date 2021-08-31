@@ -9,11 +9,12 @@ We think that security is an enabler for the business. Sourcegraph is committed 
 ## Members
 
 - [Dan Mckean](../../company/team/index.md#dan-mckean-he-him) (Product Manager)
-- FQ2 engineering manager hire, [Bill Creager](../../company/team/index.md#bill-creager) acting manager until then {#security-eng}
+- Diego Comas
   - [André Eleuterio](../../company/team/index.md#andré-eleuterio-hehim)
-  - FY2022 security engineer
-  - FY2022 security engineer
-  - FY2022 security engineer
+  - M.A. joining 2021-09-06
+  - L.C. joining 2021-10-16
+  - FY2022 [security engineer](https://boards.greenhouse.io/sourcegraph91/jobs/4003910004)
+  - FY2022 [security engineer](https://boards.greenhouse.io/sourcegraph91/jobs/4003910004)
 
 ## Contact
 

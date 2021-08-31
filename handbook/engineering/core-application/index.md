@@ -19,10 +19,12 @@ The Core Application team has broad [area ownership](areas-of-ownership.md) with
   - [Ryan Slade](../../company/team/index.md#ryan-slade-he-him)
   - [Alan Harris](../../company/team/index.md#alan-harris-he-him)
   - [Artem Ruts](../../company/team/index.md#artem-ruts-he-him)
-  - [Asdine El Hrychy](../../company/team/index.md#asdine-el-hrychy)
   - [Indradhanush Gupta](../../company/team/index.md#indradhanush-gupta-he-him)
   - [Milan Freml](../../company/team/index.md#milan-freml-he-him)
   - Rafal (Oct 11)
+  - FY22 Core Application Engineer
+  - FY22 Core Application Engineer
+  - FY22 Core Application Engineer
 
 ## How to contact the team and ask for help
 
