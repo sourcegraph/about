@@ -18,18 +18,16 @@ I love a face-to-face brainstorming session where we can ideate and determine a 
 
 ### How I approach problems
 
-The first few things I ask: 
+The first few things I ask:
 
-
-
-1. What is the impact of this problem? Does it require an immediate solution? 
+1. What is the impact of this problem? Does it require an immediate solution?
 2. Is this the root problem, or a symptom? I use the “5 Whys” method to drill down to the root issue. I want to make sure I’m solving the right problem.
 
 Then, I like to plan out a short, medium and long term solution.
 
 ### Preferred way to be recognized/appreciated
 
-One-on-one thanks via Slack/Email/mention in a meeting. Also feels good to be recognized in a public forum. 
+One-on-one thanks via Slack/Email/mention in a meeting. Also feels good to be recognized in a public forum.
 
 ### Thoughts/feelings/preferences when it comes to asking for help
 
