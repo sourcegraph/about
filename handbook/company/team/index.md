@@ -53,9 +53,9 @@ To add yourself to this page:
 ## Ryan Slade (he/him)
 
 - Software Engineer
-- Cape Town, South Africa 🇿🇦
+- Valencia, Spain 🇪🇸
 - [rslade@sourcegraph.com](mailto:rslade@sourcegraph.com), [@frefity](https://twitter.com/frefity), [LinkedIn](https://www.linkedin.com/in/ryan-slade-1bb36bb/)
-- Ryan enjoys spending time with his family, mountain biking and playing squash. Prior to Sourcegraph he helped develop a real time bidding system for online advertisers at Avocet and worked for a taxi hailing company in London, Hailo. He studied Computer Science at the University of Cape Town and has lived in the South Africa, the UK, Singapore and the US.
+- Ryan enjoys spending time with his family, mountain biking and playing squash. Prior to Sourcegraph he helped develop a real time bidding system for online advertisers at Avocet and worked for a taxi hailing company in London, Hailo. He studied Computer Science at the University of Cape Town and has lived in the South Africa, the UK, Singapore the US and Spain.
 
 ## Rijnard van Tonder
 
@@ -293,9 +293,9 @@ To add yourself to this page:
 
 - Engineering Manager, Batch Changes
 - Portland, OR, USA 🇺🇸
-- [chrispine@sourcegraph.com](mailto:chrispine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chris-pine-4b188272/), [chrispine](https://github.com/chrispine), [Twitter](https://twitter.com/OtherChrisPine)
+- [chrispine@sourcegraph.com](mailto:chrispine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/chris-pine-4b188272/), [Github](https://github.com/chrispine), [Twitter](https://twitter.com/OtherChrisPine)
 - Name pronunciation: /[kɹɪs paɪn](http://ipa-reader.xyz/?text=k%C9%B9%C9%AAs%20pa%C9%AAn&voice=Joanna)/
-- Chris started his career making games, working on Civilization III and Alpha Centauri. Chris also spent several years working at Opera Software in Norway, mainly on Opera's Ecmascript engine. Somewhere in there, Chris accidentally wrote a book, [Learn to Program](https://pragprog.com/titles/ltp2/). At New Relic, Chris moved into management, and (much to his surprise) loved it! Chris lives with his spouse (Katy), their three kids (C, Ruby, and Apl), two rats (Coffee and Bean), and an ancient grey cat (Wobbly). Hobbies include the boardgame Go, failing to play the guitar, and spiritual inquiry (mostly Tao, Zen, and Alan Watts). Chris really (like really) loves parentheses.
+- Chris started his career making games, working on Civilization III and Alpha Centauri. Chris also spent several years working at Opera Software in Norway, mainly on Opera's Ecmascript engine. Somewhere in there, Chris accidentally wrote a book, [Learn to Program](https://pragprog.com/titles/ltp3/learn-to-program-third-edition/). At New Relic, Chris moved into management, and (much to his surprise) loved it! Chris lives with his spouse (Katy), their three kids (C, Ruby, and Apl), three rats, a little dog, and an ancient grey cat. Hobbies include the boardgame Go, failing to play the guitar, and spiritual inquiry (mostly Tao, Zen, and Alan Watts). Chris really (like really) loves parentheses.
 
 ## Gregg Stone
 
@@ -469,11 +469,11 @@ To add yourself to this page:
 ## Emily Chapman (she/her)
 
 - Customer Engineer
-- Los Angeles, USA, 🇺🇸
+- Portland, OR, USA, 🇺🇸
 - GitHub: [emchap](https://github.com/emchap)
 - [emily@sourcegraph.com](mailto:emily@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/emchap/)
 - [Name pronunciation](https://www.name-coach.com/emily-chapman-ec13ee64-97e1-4eb4-978f-59d672131b50)
-- Emily grew up in Atlanta, GA but now lives in Los Angeles. She started her career at Mailchimp/Mandrill before stints at Trello/Atlassian, Healthify, and Help Scout. She is the creator of [Lana Ipsum](http://lanaipsum.com/), a Lana Del Rey lorem ipsum generator. She is obsessed with the .horse TLD, localization of the sweet potato emoji (🍠), and the ways in which SMTP can run into encoding issues. In her free time she can be found either cooking, or trying to convince her very loud cat to be less loud. She has an Anthropology degree and knows a lot about bog bodies.
+- Emily grew up in Atlanta, GA but now lives in Portland, OR. She started her career at Mailchimp/Mandrill before stints at Trello/Atlassian, Healthify, and Help Scout. She is the creator of [Lana Ipsum](http://lanaipsum.com/), a Lana Del Rey lorem ipsum generator. She is obsessed with the .horse TLD, localization of the sweet potato emoji (🍠), and the ways in which SMTP can run into encoding issues. In her free time she can be found either cooking, or trying to convince her very loud cat to be less loud. She has an Anthropology degree and knows a lot about bog bodies.
 
 ## Erica Lindberg (she/her)
 
@@ -1367,7 +1367,7 @@ To add yourself to this page:
 
 ## Greg Bouton (he/him/his)
 
-- Email & Automation Marketing Manager
+- Senior Email & Automation Marketing Manager
 - S. Hamilton, MA, United States 🇺🇸
 - GitHub: [GregBouton](https://github.com/GregBouton)
 - [greg.bouton@sourcegraph.com](mailto:greg.bouton@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/gregbouton/)
