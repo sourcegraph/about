@@ -21,7 +21,7 @@ export default ((props: any) => (
             title="FactSet migrates from Perforce to GitHub"
             logo="/external-logos/factset-logo.svg"
             quote={{
-                quote: 'With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub',
+                quote: 'With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub.',
                 author: derrickFaunce,
                 image: '/case-studies/',
             }}
@@ -70,7 +70,7 @@ export default ((props: any) => (
                                         <td>12,000</td>
                                     </tr>
                                     <tr>
-                                        <th className="bg-light">Extensions (other tools)</th>
+                                        <th className="bg-light">Extensions</th>
                                         <td>Lightstep, VS Code, Code Ownership</td>
                                     </tr>
                                 </tbody>
