@@ -11,8 +11,8 @@ We think that security is an enabler for the business. Sourcegraph is committed 
 - [Dan Mckean](../../company/team/index.md#dan-mckean-he-him) (Product Manager)
 - Diego Comas
   - [André Eleuterio](../../company/team/index.md#andré-eleuterio-hehim)
-  - M.A. joining 2021-09-06
-  - L.C. joining 2021-10-16
+  - M.A. joining 2021-09-07
+  - L.C. joining 2021-10-11
   - FY2022 [security engineer](https://boards.greenhouse.io/sourcegraph91/jobs/4003910004)
   - FY2022 [security engineer](https://boards.greenhouse.io/sourcegraph91/jobs/4003910004)
 
