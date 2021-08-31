@@ -28,10 +28,10 @@ Organic social promotion is sought after by many teams, programs, and campaigns 
 
 These channels are owned and operated by Sourcegraph as a company in the care of the Social Media Team under the Brand umbrella. They provide the company a mix of audiences and content opportunities. And sometimes the goals may differ depending on what we are trying to accomplish at a given moment.
 
-[Twitter] (https://twitter.com/sourcegraph)
-[LinkedIn] (https://www.linkedin.com/company/sourcegraph/)
+[Twitter](https://twitter.com/sourcegraph)
+[LinkedIn](https://www.linkedin.com/company/sourcegraph/)
 
-[Twitch] (https://www.twitch.tv/sourcegraph) and [YouTube] (https://www.youtube.com/c/sourcegraph) are a testament to building community. Community enthusiasts stream live on these platforms. And then the brand channels promote events like Dev Tool Time and the Sourcegraph podcast.
+[Twitch](https://www.twitch.tv/sourcegraph) and [YouTube](https://www.youtube.com/c/sourcegraph) are a testament to building community. Community enthusiasts stream live on these platforms. And then the brand channels promote events like Dev Tool Time and the Sourcegraph podcast.
 
 Although these channels have the company name as part of the profile page, they serve different purposes for us in our social media landscape. The core social media team will only partner with those who produce the content. The social media team can provide metrics of success. We can also amplify to expand the reach of this content. But the social media team will never actually produce the live streams. These are left to our developer advocates, team members, etc.
 
@@ -49,7 +49,7 @@ It is critical that Sourcegraph team members understand that there is a separati
 
 ## Shortening URLs
 
-The social media team is often asked to shorten URLs for team members. [You can learn more about that here.] (https://about.sourcegraph.com/handbook/communication#shortening-urls)
+The social media team is often asked to shorten URLs for team members. [You can learn more about that here.](https://about.sourcegraph.com/handbook/communication#shortening-urls)
 
 ## Social during an incident
 
