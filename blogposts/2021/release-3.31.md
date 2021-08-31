@@ -41,9 +41,6 @@ changelogItems:
   - description: "For Docker-Compose and Kubernetes users, the built-in main Postgres and codeintel databases have switched to an alpine Docker image. This requires re-indexing the entire database. This process can take up to a few hours on systems with large datasets."
     url: https://github.com/sourcegraph/sourcegraph/pull/23697
     category: Admin
-  - description: "All commit search results for `and`-expressions are now highlighted."
-    url: https://github.com/sourcegraph/sourcegraph/pull/23336
-    category: Search
   - description: Fixed a result streaming throttling issue that was causing significantly increased latency for some searches. This should improve the time to first rendered results for those searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/23736
     category: Search
