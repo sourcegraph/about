@@ -60,7 +60,7 @@ I struggle with anxiety and feel most anxious in the workplace:
 
 ### Areas of knowledge
 
-Work-wise: learning & development principles, employee recognition, mentorship, change management, communications strategy/crafting communications, synthesizing underlying themes in meetings to drive group progress, creating direction from ambiguity, moving ideas from ideation to execution.
+Work-wise: learning and development principles, employee recognition, mentorship, change management, communications strategy/crafting communications, synthesizing underlying themes in meetings to drive group progress, creating direction from ambiguity, moving ideas from ideation to execution.
 
 Life-wise: how to craft the perfect dynamic workout schedule for your week, anything and everything about spin bikes/spin classes (_in my previous corporate life I worked at SoulCycle and have since become a spin junkie._), indoor plants and outdoor gardening, how to care for two high maintenance cats, 2000’s pop culture, curating monthly Spotify playlists.
 
