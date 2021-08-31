@@ -54,23 +54,15 @@ Sourcegraph 3.31 is now available! For this release, we introduced:
 
 ## Code Insights is now in Private Beta
 
-Code Insights is the first tool ever that lets you to track the historical and future trends of anything in your codebase, from code migrations to API usage to linter overrides – or anything else you can run a Sourcegraph search for. Now in Private Beta, Code Insights can run across thousands of repositories, letting you then filter and explore your insights live. Reach out to your Account Executive for details.
-
-### Code Insights runs over all your repositories
-
-Code insights now runs over all repositories – we've removed the the ~50-70 repo limit.
+Code Insights enables you to track historical and future trends of anything in your codebase, from code migrations to API usage to linter overrides – or anything else you can run a Sourcegraph search for. Now in Private Beta, Code Insights can run across thousands of repositories, letting you then filter and explore your insights live. Reach out to your Account Executive for details. 
 
 <div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
-  <source src="https://sourcegraphstatic.com/blog/3.31/insight_all_repos.mp4" type="video/mp4">
+  <source src="https://sourcegraphstatic.com/blog/3.31/code_insights_3.31_beta.mp4" type="video/mp4">
 </video></div>
 
-### Filter Code Insights down to subsets of repositories 
-
-Once your code insights have backfilled your historical data, you can instantly explore and filter to just the repositories you care about using `repo:` and `-repo:` regular expressions, and even [save your filtered views](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters#filter-persistance-and-sharing). 
-
-<div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
-  <source src="https://sourcegraphstatic.com/blog/3.31/filter_code_insights.mp4" type="video/mp4">
-</video></div>
+* Code Insights can runs over all your repositories – we've removed the the ~50-70 repo limit.
+* [Instant filtering](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters) to explore insights using `repo:` and `-repo:` regular expressions.
+* [Save your filtered insights as new views](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters#filter-persistance-and-sharing). 
 
 ## Saved search notifications are migrating to code monitoring
 
