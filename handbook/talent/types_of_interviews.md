@@ -267,17 +267,17 @@ A summary of the 4 prompts are provided below:
 
 1. **Preparing for a customer call:** See below for some meeting notes taken by your Account Executive (AE) from an initial meeting with a prospect. The AE is requesting that you prepare a demo. Based on the notes provided: what would your demo agenda be, what would your talking points be during it, what questions do you still have for the AE and / or the customer, what additional information do you need, what would be your ideal next step after that meeting and how do you get there?
 2. **Discovery during a customer call:** See below for some high-level information about a prospect put together by a Sales Development Rep (SDR). They are requesting that you and an AE join them on a second conversation with the Director of Developer Productivity and several IC engineers. What are some things you’d want to uncover during that next meeting, what would you ask, what would you share, what in your mind is the overall goal of that meeting?
-3. **Dealing with detractors:** Your AE is asking you to join a meeting with a prospective customer. The AE has met with the prospect a couple times and the initial feedback you’re hearing from the AE is that the prospect isn’t seeing the value in Sourcegraph and does not feel like it’s compelling enough for them to consider at this time given other priorities they have. How do you handle this situation? What’s your game plan with your AE for that meeting?  
+3. **Dealing with detractors:** Your AE is asking you to join a meeting with a prospective customer. The AE has met with the prospect a couple times and the initial feedback you’re hearing from the AE is that the prospect isn’t seeing the value in Sourcegraph and does not feel like it’s compelling enough for them to consider at this time given other priorities they have. How do you handle this situation? What’s your game plan with your AE for that meeting?
 4. **Managing customer expectations and internal handling:** You are working with a customer during a trial and they are running into an issue trying to set up one of their code hosts. How would you handle this situation? What do you say to your customer? Who internally do you engage? What if you learn that what they are trying to do is actually a feature request; how does that change your approach?
 
 The agenda for the meeting will go as follows:
 
-* 0-2 mins: Intros and recap of this interview stage
-* 2-14 mins: Prompt 1
-* 14-26 mins: Prompt 2
-* 26-38 mins: Prompt 3
-* 38-50 mins: Prompt 4
-* 50-60 mins: Feedback and Q&A
+- 0-2 mins: Intros and recap of this interview stage
+- 2-14 mins: Prompt 1
+- 14-26 mins: Prompt 2
+- 26-38 mins: Prompt 3
+- 38-50 mins: Prompt 4
+- 50-60 mins: Feedback and Q&A
 
 **Important Note**: Keeping the timing of the interview will be your responsibility. If you’re running out of time on a prompt, it is better to wrap up the most salient points, and move on to the next prompt. It is important that 10 minutes be left at the end for feedback.
 
@@ -286,32 +286,31 @@ Finally, as you prepare for this it may be useful to read some of our customer c
 **<span style="text-decoration:underline;">Prompt #1: AE Notes</span>**
 
 1. Current team size:
-    * 200 engineers. Linkedin only shows 43 as many engineers are coming from acquired software companies. This will help accelerate their development, goal is to improve their customer experience of their betting platform.
-    * 100% growth in last year
-    * 50% growth next year
+   - 200 engineers. Linkedin only shows 43 as many engineers are coming from acquired software companies. This will help accelerate their development, goal is to improve their customer experience of their betting platform.
+   - 100% growth in last year
+   - 50% growth next year
 2. Why Anything (where is the need from)?
-    * They are acquiring companies to grow (new markets, products), this has resulted in them having to manage more code hosts and on  board devs at 100% growth rates. Cross repo changes are key as they grow. They now use local IDEs + GitHub and GitLab search, no cross host search
-    * Efficiency is poor, devs keep writing new code rather than reusing what they have access to - need to be more efficient
-    * Errors are creeping - i.e.they made a recent Redis configuration change and did not apply it to all the relevant files, it is difficult to see everywhere the changes are need to be made
+   - They are acquiring companies to grow (new markets, products), this has resulted in them having to manage more code hosts and on board devs at 100% growth rates. Cross repo changes are key as they grow. They now use local IDEs + GitHub and GitLab search, no cross host search
+   - Efficiency is poor, devs keep writing new code rather than reusing what they have access to - need to be more efficient
+   - Errors are creeping - i.e.they made a recent Redis configuration change and did not apply it to all the relevant files, it is difficult to see everywhere the changes are need to be made
 3. Why Sourcegraph and why now?
-    * They have lots of new engineers via acquisitions, they bring in new code on different hode costs. They need a tool for ensuring everyone understand the code across all code hosts 
-    * They have three code-hosts: 2 GitLabs, 1 GitHub
+   - They have lots of new engineers via acquisitions, they bring in new code on different hode costs. They need a tool for ensuring everyone understand the code across all code hosts
+   - They have three code-hosts: 2 GitLabs, 1 GitHub
 
 **<span style="text-decoration:underline;">Prompt #2: SDR Notes</span>**
 
-A prospect (Director of Developer Productivity) came in last year and talked to the previous VP of Sales. Her team was given a license key for trial but COVID hit and the trial was put on pause. They currently have a free version but need to scale their users. 
+A prospect (Director of Developer Productivity) came in last year and talked to the previous VP of Sales. Her team was given a license key for trial but COVID hit and the trial was put on pause. They currently have a free version but need to scale their users.
 
-* **Use case:** primary use case is search and then Batch Changes. She wants 2 sets of users. Power users group with Enterprise features mostly search and batch and 2nd group just for daily users using search and intel. Roughly around 250 devs
-* **Codehost**: Primarily GitLab but they have GitLab as well just for open source projects
-* **# of repos:** 1500 (most of them not active) 300 active. 350,000 LOC for 5 repos 
-* **LOC**: Roughly 3-4M 
-* **Lang**: Go (adding more Go into their coe base), Python 60%, JS 20% and PHP, Kotlin, and Swift rest 20%
-* **Architecture**: microservices. 
-* **Deployment setup**: Kubernetes
-* **Timeline**: no timeline but the sooner they can start a POC the better
+- **Use case:** primary use case is search and then Batch Changes. She wants 2 sets of users. Power users group with Enterprise features mostly search and batch and 2nd group just for daily users using search and intel. Roughly around 250 devs
+- **Codehost**: Primarily GitLab but they have GitLab as well just for open source projects
+- **# of repos:** 1500 (most of them not active) 300 active. 350,000 LOC for 5 repos
+- **LOC**: Roughly 3-4M
+- **Lang**: Go (adding more Go into their coe base), Python 60%, JS 20% and PHP, Kotlin, and Swift rest 20%
+- **Architecture**: microservices.
+- **Deployment setup**: Kubernetes
+- **Timeline**: no timeline but the sooner they can start a POC the better
 
 The technical champion said there aren’t any initiatives driving this re-engagement but they‘ve wanted this tool for the longest time. The biggest thing she wants to walk away with is that we can accommodate the 2 sets of user groups: power users, and daily users. She wants to understand pricing, and what next steps would be towards a more formal trial of our Enterprise product.
-
 
 ## Engineering
 
