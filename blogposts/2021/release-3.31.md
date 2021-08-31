@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph 3.31 release"
 publishDate: 2021-08-20T10:00-07:00
-description: "Sourcegraph 3.31 introduces UPDATE"
+description: "Sourcegraph 3.31 introduces the Private Beta release of Code Insights, complete with no repository limits plus repository-based filters. It also introduces automated migration of saved search notifications to code monitoring."
 tags: [blog, release]
 slug: "release/3.31"
 published: false
@@ -50,9 +50,6 @@ changelogItems:
   - description: Updating draft merge requests on GitLab from batch changes no longer removes the draft status.
     url: https://github.com/sourcegraph/sourcegraph/issues/23944
     category: Batch Changes
-  - description: Email notifications for saved searches are now deprecated in favor of Code Monitoring. Email notifications can no longer be enabled for saved searches. Saved searches that already have notifications enabled will continue to work, but there is now a button users can click to migrate to code monitors. Notifications for saved searches will be removed entirely in the future.
-    url: https://github.com/sourcegraph/sourcegraph/pull/23275
-    category: Search
   
 ---
 
@@ -77,6 +74,10 @@ Once your code insights have backfilled your historical data, you can instantly 
 <div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
   <source src="https://sourcegraphstatic.com/blog/3.31/filter_code_insights.mp4" type="video/mp4">
 </video></div>
+
+## Saved search notifications are migrating to code monitoring
+
+Email notifications for saved searches are being deprecated in favor of code monitoring. There will no longer be an option to enable email notifications for new saved searches, and for any existing saved search with email notifications enabled, there is now a button to automatically migrate to code monitoring. Note that existing email notifications for saved searches will be removed later in the future.
 
 ## We're now indexing the open source universe on Sourcegraph cloud
 
