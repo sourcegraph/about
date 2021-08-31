@@ -32,14 +32,19 @@ export default ((props: any) => (
                         <div className="col">
                             <h3 className="pt-5 pb-1">Before Sourcegraph</h3>
                             <ul>
-                                <li>Inability to search across repositories after monolith to microservices migration</li>
+                                <li>
+                                    Inability to search across repositories after monolith to microservices migration
+                                </li>
                                 <li>Lack of understanding of existing code led to unnecessary or redundant code</li>
                                 <li>Difficult to ensure consistency across the organization</li>
                             </ul>
 
                             <h3 className="pt-5 pb-1">After Sourcegraph</h3>
                             <ul>
-                                <li>Able to search all code in any language, including C++, across all 12,000+ repositories</li>
+                                <li>
+                                    Able to search all code in any language, including C++, across all 12,000+
+                                    repositories
+                                </li>
                                 <li>Eliminated duplicative efforts across the engineering team</li>
                                 <li>Able to find and reuse examples from codebase for increased consistency</li>
                             </ul>
