@@ -26,18 +26,18 @@ changelogItems:
   - description: "Batch Changes changesets can now be set to published when previewing new or updated batch changes."
     url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
     category: Batch Changes
-  - description: "Code Insights drill-down filters now allow filtering insights data on the dashboard page using repo: filters."
+  - description: "Code Insights drill-down filters now allow filtering insights data on the dashboard page using `repo:` filters."
     url: https://github.com/sourcegraph/sourcegraph/issues/23186
     category: Code Insights
   - description: "Code Insights feature flag `DISABLE_CODE_INSIGHTS` environment variable has moved from the `repo-updater` service to the `worker` service. Any users of this flag will need to update their `worker` service configuration to continue using it."
     url: https://github.com/sourcegraph/sourcegraph/pull/23050
-    category: Repositories
-  - description: "The Docker Compose Jaeger container's `SAMPLING_STRATEGIES_FILE` now has a default value. If you are currently using a custom sampling strategies configuration, you may need to make sure your configuration is not overridden by the change when upgrading."
+    category: Code Insights
+  - description: "The Docker Compose Jaeger container's `SAMPLING_STRATEGIES_FILE` now has a default value. If you are using a custom sampling strategies configuration, you may need to make sure your configuration is not overridden by the change when upgrading."
     url: "https://github.com/sourcegraph/deploy-sourcegraph-docker/pull/489"
     category: Admin
   - description: The copy icon displayed next to files and repositories will now copy the file or repository path. Previously, this action copied the URL to clipboard.
     url: https://github.com/sourcegraph/sourcegraph/pull/23390
-    category: Repositories
+    category: Search
   - description: "For Docker-Compose and Kubernetes users, the built-in main Postgres and codeintel databases have switched to an alpine Docker image. This requires re-indexing the entire database. This process can take up to a few hours on systems with large datasets."
     url: https://github.com/sourcegraph/sourcegraph/pull/23697
     category: Admin
@@ -77,7 +77,7 @@ Once your code insights have backfilled your historical data, you can instantly 
 
 ## Saved search notifications are migrating to code monitoring
 
-Email notifications for saved searches are being deprecated in favor of code monitoring. There will no longer be an option to enable email notifications for new saved searches, and for any existing saved search with email notifications enabled, there is now a button to automatically migrate to code monitoring. Note that existing email notifications for saved searches will be removed later in the future.
+Email notifications for saved searches are being deprecated in favor of code monitoring. There will no longer be an option to enable email notifications for new saved searches, and for any existing saved search with email notifications enabled, there is now a button to automatically migrate to code monitoring. Note that existing email notifications for saved searches will be removed in the future.
 
 ## We're now indexing the open source universe on Sourcegraph cloud
 
