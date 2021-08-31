@@ -57,7 +57,7 @@ Sourcegraph 3.31 is now available! For this release, we introduced:
 
 ## Code Insights is now in Private Beta
 
-Code Insights is the first tool ever that lets you to track the historical and future trends of anything in your codebase, from code migrations to API usage to linter overrides – or anything else you can run a Sourcegraph search for. Now in Private Beta, Code Insights can now run across thousands of repositories, letting you then filter and explore your insights live. Reach out to your Account Executive for details.
+Code Insights is the first tool ever that lets you to track the historical and future trends of anything in your codebase, from code migrations to API usage to linter overrides – or anything else you can run a Sourcegraph search for. Now in Private Beta, Code Insights can run across thousands of repositories, letting you then filter and explore your insights live. Reach out to your Account Executive for details.
 
 ### Code Insights runs over all your repositories
 
