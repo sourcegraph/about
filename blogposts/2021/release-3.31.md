@@ -5,8 +5,8 @@ description: 'Sourcegraph 3.31 introduces the Private Beta release of Code Insig
 tags: [blog, release]
 slug: 'release/3.31'
 published: false
-heroImage:
-socialImage:
+heroImage: https://sourcegraphstatic.com/blog/3.31/sourcegraph-3-31-release.png
+socialImage: https://sourcegraphstatic.com/blog/3.31/sourcegraph-3-31-release.png
 changelogItems:
   - description: 'Backend Code Insights GraphQL queries now support arguments `includeRepoRegex` and `excludeRepoRegex` to filter on repository names.'
     url: https://github.com/sourcegraph/sourcegraph/pull/23256
