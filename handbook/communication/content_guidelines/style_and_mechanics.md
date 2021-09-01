@@ -371,14 +371,22 @@ Use shorthand suffixes for shortening numbers in the thousands (`k`), millions (
 
 ### Telephone numbers
 
-Use dashes without spaces between numbers. Don’t use a country code.
+Use spaces between sets of numbers for readability. Use the country code, prefixed with `+`, without a space.
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>123-456-7890</li>
+<li>+1 123 456 7890</li>
 </ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>123 456 870</li>
+<li>1-123-456-789</li>
+</ul>
+</div>
 </div>
 </div>
 
