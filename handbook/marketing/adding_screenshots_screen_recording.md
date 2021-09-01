@@ -93,7 +93,7 @@ How to add a great voice-over is a huge topic that encompasses things such as:
 - Having a pleasant-sounding voice
 - Audio recording quality
 - Mixing voice-overs concerns such as equalization, compression, noise gates, and loudness metering
-- Adding captions to make the voice-over accessible to everyone, including people who are deaf or with hearing loss
+- Adding captions to make the voice-over accessible to everyone, including people who are deaf or with hearing loss, people who can't use their speakers or headphones in the moment, or people who have too much background noise.
 
 But to get you started, here are some essential tips:
 
