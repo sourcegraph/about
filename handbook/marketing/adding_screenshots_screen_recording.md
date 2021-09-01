@@ -127,15 +127,11 @@ Zoom Cloud recordings give you an automatically-transcribed WebVTT file when you
 
 Once you have your `.vtt` file, upload it to [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/?project=sourcegraph-de&folder=true&organizationId=true) next to the video with the same file name (but `.vtt` ending), then embed the video with a **captions track** like so:
 
+<!-- prettier-ignore -->
 ```html
 <video controls crossorigin>
   <source src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/my_video.mp4" />
-  <track
-    default
-    kind="captions"
-    label="Captions"
-    src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/my_video.vtt"
-  />
+  <track default kind="captions" label="Captions" src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/my_video.vtt" />
 </video>
 ```
 
