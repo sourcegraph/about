@@ -864,7 +864,7 @@ To add yourself to this page:
 - Teammate Success Manager
 - Seattle, Washington, USA 🇺🇸
 - [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/), [README](https://about.sourcegraph.com/handbook/people-ops/cassie-bio)
-- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (*professionally known as @sterlingandlola*). In her spare time, Cassie enjoys really difficult spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to not kill her new garden. 
+- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (_professionally known as @sterlingandlola_). In her spare time, Cassie enjoys really difficult spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to not kill her new garden.
 
 ## Rebecca Rissinger (she/her)
 
