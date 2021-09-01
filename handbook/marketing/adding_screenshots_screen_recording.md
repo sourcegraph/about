@@ -8,7 +8,7 @@
 - Keep GIF-like videos 15 seconds or less
 - Do not actually use real GIF images, record a GIF-like video and embed it in a way that behaves like a GIF.
 - GIF-like videos are typically great for short "check this out" recordings, where videos are better at "how-to" or promotional style content
-- Keep GIF and images as small as possible with no retina sizes (ratio of image size to intended display size is 1:1)
+- Keep GIF-like videos and images as small as possible with no retina sizes (ratio of image size to intended display size is 1:1)
 - If doing a full-screen recording, 1280x720 (720p) will produce easy to read results at default settings
 - If you’re producing visual content regularly, invest in paid apps (you can expense them too):
   - Chose [Cleanshot](https://getcleanshot.com/) if just doing screenshots and GIF-like videos.
