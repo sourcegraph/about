@@ -10,6 +10,12 @@ const CASESTUDIES: {
     external?: boolean
 }[] = [
     {
+        name: 'FactSet',
+        logo: '/external-logos/factset-logo.svg',
+        title: 'FactSet migrates from Perforce to GitHub',
+        url: '/case-studies/factset-migrates-from-perforce-to-github',
+    },
+    {
         name: 'Cloudflare',
         logo: '/external-logos/cloudflare-color-logo.svg',
         title: 'Cloudflare accelerates debugging and improves security',
