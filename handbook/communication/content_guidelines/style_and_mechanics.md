@@ -371,7 +371,7 @@ Use shorthand suffixes for shortening numbers in the thousands (`k`), millions (
 
 ### Telephone numbers
 
-Use spaces between sets of numbers for readability. Use the country code, prefixed with `+`, without a space.
+Use the country code, prefixed with `+`, without a space. Use spaces between sets of numbers for readability. The number of digits in each set of numbers may <a href="https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers" target="_blank">differ by country</a>.
 
 <div class="usage">
 <div class="item yes">
