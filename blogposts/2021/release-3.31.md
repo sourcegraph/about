@@ -48,15 +48,15 @@ changelogItems:
 
 Sourcegraph 3.31 is now available! For this release, we introduced:
 
-## Code Insights is now in Private Beta
+## Code Insights now in Private Beta
 
-Code Insights enables you to track historical and future trends of anything in your codebase, from code migrations to API usage to linter overrides – or anything else you can run a Sourcegraph search for. Now in Private Beta, Code Insights can run across thousands of repositories, letting you then filter and explore your insights live. Reach out to your Account Executive for details.
+Code Insights enables you to track historical and future trends of anything in your codebase, from code migrations to API usage to linter overrides—or anything else you can run a Sourcegraph search for. Now in Private Beta, Code Insights can run across thousands of repositories, letting you then filter and explore your insights live. Reach out to your Account Executive for details.
 
 <div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
   <source src="https://sourcegraphstatic.com/blog/3.31/code_insights_3.31_beta.mp4" type="video/mp4">
 </video></div>
 
-- Code Insights runs over all your repositories – we've removed the ~50-70 repo limit.
+- Code Insights runs over all your repositories—we've removed the ~50-70 repo limit.
 - [Instant filtering](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters) allows you to explore insights using `repo:` and `-repo:` regular expressions.
 - [Save your filtered insights as new views](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters#filter-persistance-and-sharing).
 
@@ -72,6 +72,6 @@ If you are using email notifications for existing saved searches, there is now a
 
 ## We're now indexing the open source universe on Sourcegraph cloud
 
-Sourcegraph is indexing every open source GitHub and GitLab repository with 1 or more stars. Users can search this index of open source code on [Sourcegraph cloud](www.sourcegraph.com), and you can read about why we're doing this [on our blog](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
+Sourcegraph is indexing every open source GitHub and GitLab repository with 1 or more stars. Users can search this index of open source code on [Sourcegraph cloud](https://www.sourcegraph.com), and you can read about [why we're doing this on our blog](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
 
 Also, if you'd like utilize this open source index with your Sourcegraph deployment, you can [set up federation for your instance](https://docs.sourcegraph.com/admin/federation/public_repositories).
