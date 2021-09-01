@@ -38,9 +38,6 @@ changelogItems:
   - description: The copy icon displayed next to files and repositories will now copy the file or repository path. Previously, this action copied the URL to clipboard.
     url: https://github.com/sourcegraph/sourcegraph/pull/23390
     category: Search
-  - description: 'For Docker-Compose and Kubernetes users, the built-in main Postgres and codeintel databases have switched to an alpine Docker image. This requires re-indexing the entire database. This process can take up to a few hours on systems with large datasets.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/23697
-    category: Admin
   - description: Fixed a result streaming throttling issue that was causing significantly increased latency for some searches. This should improve the time to first rendered results for those searches.
     url: https://github.com/sourcegraph/sourcegraph/pull/23736
     category: Search
@@ -62,6 +59,10 @@ Code Insights enables you to track historical and future trends of anything in y
 - Code Insights runs over all your repositories – we've removed the ~50-70 repo limit.
 - [Instant filtering](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters) allows you to explore insights using `repo:` and `-repo:` regular expressions.
 - [Save your filtered insights as new views](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters#filter-persistance-and-sharing).
+
+## We're moving to Alpine-based database images
+
+We've switched our built-in main Postgres and codeintel databases to an Alpine-based Docker image to resolve vulnerabilities found in Debian. This requires re-indexing the database when upgrading to 3.31, which can take up to a few hours on systems with large datasets. [Read more on how to prepare for the update here](https://docs.sourcegraph.com/admin/migration/3_31).
 
 ## Saved search notifications are migrating to code monitoring
 
