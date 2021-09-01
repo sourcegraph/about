@@ -60,8 +60,8 @@ Code Insights enables you to track historical and future trends of anything in y
   <source src="https://sourcegraphstatic.com/blog/3.31/code_insights_3.31_beta.mp4" type="video/mp4">
 </video></div>
 
-* Code Insights can runs over all your repositories – we've removed the the ~50-70 repo limit.
-* [Instant filtering](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters) to explore insights using `repo:` and `-repo:` regular expressions.
+* Code Insights runs over all your repositories – we've removed the ~50-70 repo limit.
+* [Instant filtering](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters) allows you to explore insights using `repo:` and `-repo:` regular expressions.
 * [Save your filtered insights as new views](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters#filter-persistance-and-sharing). 
 
 ## Saved search notifications are migrating to code monitoring
