@@ -23,7 +23,7 @@ export default ((props: any) => (
             quote={{
                 quote: 'With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub.',
                 author: derrickFaunce,
-                image: '/case-studies/',
+                image: '/case-studies/derrick-faunce.png',
             }}
         >
             <ContentSection color="white" className="col-md-6">
