@@ -1,10 +1,10 @@
 ---
 title: 'Sourcegraph 3.31 release'
-publishDate: 2021-08-20T10:00-07:00
+publishDate: 2021-09-01T10:00-07:00
 description: 'Sourcegraph 3.31 introduces the Private Beta release of Code Insights, complete with no repository limits plus repository-based filters. It also introduces automated migration of saved search notifications to code monitoring.'
 tags: [blog, release]
 slug: 'release/3.31'
-published: false
+published: true
 heroImage: https://sourcegraphstatic.com/blog/3.31/sourcegraph-3-31-release.png
 socialImage: https://sourcegraphstatic.com/blog/3.31/sourcegraph-3-31-release.png
 changelogItems:
