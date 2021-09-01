@@ -19,8 +19,7 @@ export default ((props: any) => (
             title="Convoy improves developer onboarding"
             logo="/external-logos/convoy-logo-white.svg"
             quote={{
-                quote:
-                    'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
+                quote: 'Sourcegraph increases the efficiency and confidence of our entry level developers when they build features that touch different parts of our code base.',
                 author: 'Brandon Bloom, Senior Software Engineer, Convoy',
                 image: '/case-studies/brandon-bloom-convoy.jpg',
             }}

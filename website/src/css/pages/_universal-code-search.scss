@@ -1,11 +1,10 @@
 .universal-code-search {
-    &--glow{
-        background-color: rgba(0,0,0,1);
-        box-shadow: rgba(255,255,255,0.5) 0 0 12px 6px;
+    &--glow {
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: rgba(255, 255, 255, 0.5) 0 0 12px 6px;
     }
 
-    &__btn{
-        background-color: $brand-cyan
+    &__btn {
+        background-color: $brand-cyan;
     }
-
 }

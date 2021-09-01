@@ -5,7 +5,7 @@ import { BlogHeader } from '../components/blog/BlogHeader'
 import { BLOG_TYPE_TO_INFO, Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '../components/blog/postTypes'
 import Layout from '../components/Layout'
 
-interface Props extends PageProps<{ markdownRemark: Post }> { }
+interface Props extends PageProps<{ markdownRemark: Post }> {}
 
 export const PostTemplate: React.FunctionComponent<Props> = ({ data, location }) => {
     const post = data.markdownRemark
@@ -31,13 +31,13 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
                 {socialImage ? (
                     <meta name="twitter:image" content={socialImage} />
                 ) : (
-                        <meta name="twitter:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />
-                    )}
+                    <meta name="twitter:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />
+                )}
                 {socialImage ? (
                     <meta property="og:image" content={socialImage} />
                 ) : (
-                        <meta property="og:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />
-                    )}
+                    <meta property="og:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />
+                )}
             </Helmet>
             <div className="">
                 <div className="container-lg">
