@@ -11,7 +11,7 @@
 - Keep GIF-like videos and images as small as possible with no retina sizes (ratio of image size to intended display size is 1:1)
 - If doing a full-screen recording, 1280x720 (720p) will produce easy to read results at default settings
 - If you’re producing visual content regularly, invest in paid apps (you can expense them too):
-  - Chose [Cleanshot](https://getcleanshot.com/) if just doing screenshots and GIF-like videos.
+  - Choose [Cleanshot](https://getcleanshot.com/) if just doing screenshots and GIF-like videos.
   - Add ScreenFlow to your list if you plan on doing videos frequently, as you will appreciate editing and clip speed-up capabilities.
 
 ## Don't add title slides to videos
