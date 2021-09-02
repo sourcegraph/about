@@ -9,7 +9,7 @@ The extensibility team owns our code host and third-party integrations (includin
 - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../../product/roles/index.md#product-manager)) is the acting PM for this team until we can hire a dedicated PM for it. Once that happens, Joel will focus entirely on code insights.
 - [Murat Sutunc](../../../company/team/index.md#murat-sutunc-he-him) ([Engineering Manager](../../roles.md#engineering-manager)) {#extensibility-eng}
   - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-  - [Erzhan Torokulov](../../../company/team#erzhan-torokulov-he-him)
+  - [Erzhan Torokulov](../../../company/team/index.md#erzhan-torokulov-he-him)
   - FY22 full-stack engineer hire
   - FY22 full-stack engineer hire
 
