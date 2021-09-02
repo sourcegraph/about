@@ -16,6 +16,7 @@ $headings-font-family: $font-family-base;
 $blue: #2c7ef6;
 $red: #dc3545;
 $purple: #5033e1;
+$white: #ffffff;
 $brand-purple: #b200f8;
 $brand-cyan: #00b4f2;
 $brand-orange: #f96316;
@@ -150,6 +151,7 @@ $grid-gutter-width: 2rem;
 @import 'node_modules/bootstrap/scss/utilities';
 @import 'node_modules/bootstrap/scss/alert';
 @import 'node_modules/bootstrap/scss/badge';
+@import 'node_modules/bootstrap/scss/dropdown';
 
 html,
 body,

@@ -28,6 +28,18 @@
             height: 26px;
         }
     }
+
+    // New Top Nav Customization
+    .nav-link {
+        color: $navbar-light-color;
+
+        &:hover {
+            color: $navbar-light-hover-color;
+        }
+        &.btn.btn-outline-primary:hover {
+            color: $white;
+        }
+    }
 }
 
 // Hello bar
@@ -39,5 +51,10 @@
     .navbar-dark .navbar-nav .btn,
     .navbar-light .navbar-nav .btn {
         padding: 0.25rem 0.75rem;
+    }
+
+    // New Top Nav Customization
+    .nav-link {
+        display: flex;
     }
 }
