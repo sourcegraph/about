@@ -61,9 +61,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     <span className="navbar-toggler-icon" />
                                 </button>
                                 <div
-                                    className={`collapse navbar-collapse ${
-                                        this.state.isOpen ? 'show' : 'hide'
-                                    }`}
+                                    className={`collapse navbar-collapse ${this.state.isOpen ? 'show' : 'hide'}`}
                                     id="navcol-1"
                                 >
                                     <Nav className="me-auto">
