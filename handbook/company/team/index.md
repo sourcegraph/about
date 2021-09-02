@@ -622,7 +622,7 @@ To add yourself to this page:
 ## Dudley Nostrand
 
 - Senior Manager, Value Engineering
-- Hamilton, Massachusetts USA
+- Hamilton, Massachusetts, USA
 - GitHub: [dnostrand](https://github.com/dnostrand)
 - dudley@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/dudleynostrand/)
 - Dudley lives in Hamilton, MA ( just north of Boston) with his wife Sasha and two kids Xander and Bennett (both in college in NC). Originally from Florida and Newport, Rhode Island, he moved to Hamilton 22 years ago. He spent 15 years at Fidelity Investments, before moving on to tech companies like BMC and Appdynamics/Cisco. He enjoys spending time boating, fishing, riding his motorcycle, and traveling with his family to tropical destinations to sit on the beach and swim in the ocean.
@@ -863,8 +863,8 @@ To add yourself to this page:
 
 - Teammate Success Manager
 - Seattle, Washington, USA 🇺🇸
-- [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/)
-- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (professionally known as @sterlingandlola). In her spare time, Cassie enjoys spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to garden.
+- [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/), [README](https://about.sourcegraph.com/handbook/people-ops/cassie-bio)
+- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (_professionally known as @sterlingandlola_). In her spare time, Cassie enjoys really difficult spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to not kill her new garden.
 
 ## Rebecca Rissinger (she/her)
 
@@ -1367,7 +1367,7 @@ To add yourself to this page:
 
 ## Greg Bouton (he/him/his)
 
-- Email & Automation Marketing Manager
+- Senior Email & Automation Marketing Manager
 - S. Hamilton, MA, United States 🇺🇸
 - GitHub: [GregBouton](https://github.com/GregBouton)
 - [greg.bouton@sourcegraph.com](mailto:greg.bouton@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/gregbouton/)
@@ -1380,3 +1380,11 @@ To add yourself to this page:
 - GitHub: [Cyberwhiz5000](https://github.com/Cyberwhiz5000)
 - [nonso.obiano@sourcegraph.com](mailto:nonso.obiano@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/obianochukwunonso/)
 - Nonso lives in Lagos, Nigeria with his wife, Rita and they volunteer at their local church as pastors for the youth group. He loves a good sci-fi thriller, European soccer leagues, video games and works of fiction (Dean Koontz, Stephen King... you get the idea). Nonso has worked in customer support and contact centre operations the past decade and has led teams to deliver memorable experiences across various industries and customer segments.
+
+## Brielle Collins
+
+- Customer Support Manager
+- Chicago, Illinois 🇺🇸
+- GitHub: [Brielle-C](https://github.com/Brielle-C)
+- [brielle.collins@sourcegraph.com](mailto:brielle.collins@sourcegraph.com)
+- Brielle Enjoys reading and occasionally writing short stories. She loves to binge-watch series and anime has a soft spot in her heart. She is the youngest of 4 and is a super aunt to all of her nieces and nephews. Brielle is very family-oriented and enjoys spending time at home with friends and family, although she was born in the Summer months Fall is her favorite season. She currently lives is searching for a dog to be a pet mom to. Brielle identifies as a Gryffindor and is a tea enthusiast, her favorite is David’s Tea Pomegranate blend.
