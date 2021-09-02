@@ -1385,7 +1385,6 @@ To add yourself to this page:
 
 - Customer Support Manager
 - Chicago, Illinois 🇺🇸
-- GitHub: [Brielle-C](https://github.com/Brielle-C) 
+- GitHub: [Brielle-C](https://github.com/Brielle-C)
 - [brielle.collins@sourcegraph.com](mailto:brielle.collins@sourcegraph.com)
-- Brielle Enjoys reading and occasionally writing short stories. She loves to binge-watch series and anime has a soft spot in her heart. She is the youngest of 4 and is a super aunt to all of her nieces and nephews. Brielle is very family-oriented and enjoys spending time at home with friends and family, although she was born in the Summer months Fall is her favorite season. She currently lives is searching for a dog to be a pet mom to. Brielle identifies as a Gryffindor and is a tea enthusiast, her favorite is David’s Tea Pomegranate blend. 
-
+- Brielle Enjoys reading and occasionally writing short stories. She loves to binge-watch series and anime has a soft spot in her heart. She is the youngest of 4 and is a super aunt to all of her nieces and nephews. Brielle is very family-oriented and enjoys spending time at home with friends and family, although she was born in the Summer months Fall is her favorite season. She currently lives is searching for a dog to be a pet mom to. Brielle identifies as a Gryffindor and is a tea enthusiast, her favorite is David’s Tea Pomegranate blend.
