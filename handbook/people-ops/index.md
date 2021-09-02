@@ -9,10 +9,15 @@
 - [Inés Roitman](../company/team/index.md#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
 - [Cassie Melani](../company/team/index.md#cassie-melani-she-her), Teammate Success Manager
 - [Cecily Black](../company/team/index.md#cecily-black-she-her), People Operations Coordinator
+- [Mary Belzer](../company/team/index.md#mary-belzer-she-her), Handbook Product Manager
 
 ### Roles
 
 See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open roles on the People Ops team.
+
+### READMEs
+
+[People Ops READMEs](people-ops-bios.md)
 
 ### How to reach the right member of the People Ops team
 

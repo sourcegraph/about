@@ -45,8 +45,8 @@ There are some test environments created specifically for the Customer Support E
 - [Test instance deployed with Kubernetes](https://cse-k8s.sgdev.org/) ([_management doc_](managing-cse-k8s.md))
 - [Single Docker for local testing](https://docs.sourcegraph.com/admin/install/docker)
 - [Installation guide for Local Development](https://docs.sourcegraph.com/dev)
-- [GitHub test instance ](https://github.sgdev.org)
-- [GitLab test instance ](https://gitlab.sgdev.org)
+- [GitHub Enterprise test instance ](https://ghe.sgdev.org/)
+- [GitLab Enterprise test instance ](https://gitlab.sgdev.org)
 - [Gerrit test instance ](https://gerrit.sgdev.org/)
 - [Bitbucket test instance ](https://bitbucket.sgdev.org/)
 - [Phabricator test instance ](https://phabricator.sgdev.org/)
@@ -96,11 +96,12 @@ This section captures our Zendesk protocol and configuration decisions.
 ### Access
 
 - CSEs have agent access
-- Virginia and Tech Ops have admin access
+- Virginia, Brielle, Nonso, Tamar, and Tech Ops have admin access
+- Only Virginia can modify billing related items
+- We have an admin level service account CSEs can use for integration work with Zendesk. If you want to do anything with this account, please check with @cs-leadership in our #customer-support-internal Slack channel first (they will help make sure what you want to do won't interrupt other workflow settings); similarly, this account should not used to make configuration changes without checking with the leadership team who is responsible for Zendesk configuration
 - The rest of the company will have visibility in a few ways (all of these items will be configured in 2021-03):
   - All new Zendesk tickets are linked to the #customer-support-issues-feed Slack channel
   - All Zendesk tickets (and the entire comment history) manifest in Salesforce on the customer's record (this needs to be implemented)
-  - When we create a Github issue from Zendesk, that also pulls in the conversation history in Github for engineering to see
 
 ### Web vs desktop vs mobile app
 
@@ -136,7 +137,6 @@ When you close a ticket, these are the required fields you must populate:
 
 - **Did I update customer data?** Designates whether you gathered important technical details about the customer and took the time to help out Distribution team and followed the steps outlined [here](https://about.sourcegraph.com/handbook/ops/bizops/customer_environment_questions) as noted in step 10 of our [workflow](support-workflow.md). _We will likely eventually remove this field._
 - **Did I make a docs update and put my PR link in an internal note on this ticket?** Designates how many updates we are making so we can demonstrated our contributions to our OKRs to improve our docs. _Note: temporarily for 2021-04 and 2021-05, it's okay to link to an Asana task you created to do the update instead of a PR update as we all get used to doing docs updates, continue to onboard._
-- **Is this ticket a good example for dev ed?** Designates whether the details of the ticket are good to share with our dev ed team on a monthly or quarterly cadence. _We will likely eventually remove this field._
 - **Did the customer indicate a positive sentiment with your work and did I share details in an internal note on this ticket?** Designates whether a customer expresses positive sentiment for your work. This replaces customer satisfaction (CSAT) measurement since we are not yet able to survey our customers in such a fashion.
 - **Did I go above and beyond what we support?** Designates whether we needed to go above and beyond what we want to support. This will help us understand how often this happens and usually looks like having to educate the customer on something we would want them to know already about their own infrastructure. _We will likely eventually remove this field._
 - **Lifecycle:** Designates whether the request is associated with a customer when they are in the pre-sales or post-sales part of their lifecycle with us
@@ -164,7 +164,7 @@ The schedule in Zendesk reflects our SLA hours and is set to 9-5 pacific, Monday
 
 Since we are global team, we do not add every holiday that everyone celebrates. We only add the holidays where the majority/all of the team is unavailable.
 
-The SLA timer reflects our most aggressive SLA and for many customers, we have more time to respond and invoke this latitude as necessary as outlined in our [prioritization guidelines](support-prioritization.md).
+We do not use the SLA function in Zendesk since it doesn't work with our Slack integration in an optimal way for the team (the team found the never ending counter stressful).
 
 ### Default to private/internal notes
 
@@ -176,7 +176,7 @@ We have a few automations set-up to streamline our workflow:
 
 - When you reply to a ticket, it auto-assigns to you, so you don't have to worry about remembering to click "take it" to assign it to yourself
 - The signature is built-in and is your name followed by Sourcegraph Support in the second line
-- 1 hour after you set a case to closed, an automated email is sent to the requestor asking to rate their experience
+- When triage sets the requestor and they are part of an organization where we have an assigned CSE, the CSE is automatically assigned via a trigger and their back-up (if there is one) is added as a follower via the same trigger; there is one trigger for each such customer (the list of which can be found in our [customer exceptions page](https://about.sourcegraph.com/handbook/support/customer-exceptions).
 
 ### Apps
 
@@ -204,4 +204,3 @@ We do not use guide for our documentation, but must have it activated so custome
 - Removed search bar
 - Modified text on home page
 - Modified error messages
-- Added type to the my activity table
