@@ -125,7 +125,12 @@ You may need to edit the captions afterwards to correct any mistakes, which you 
 
 Zoom Cloud recordings give you an automatically-transcribed WebVTT file when you click "Download" in the top right as one of the files being downloaded, which you can use directly as well.
 
-Once you have your `.vtt` file, upload it to [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/?project=sourcegraph-de&folder=true&organizationId=true) next to the video with the same file name (but `.vtt` ending), then embed the video with a **captions track** like so:
+Once you have your `.vtt` file, upload it to [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/?project=sourcegraph-de&folder=true&organizationId=true) next to the video with the same file name (but with a `.vtt` ending).
+
+Once the file uploaded, click the three dots menu on the right of the `.vtt` file's row, click "Edit metadata", paste `text/vtt; charset=UTF-8` into the "Content-Type" field (replacing any content was in the field before) and click "SAVE".
+The "Type" column should now say `text/vtt; charset=UTF-8` for the `.vtt` file.
+
+Now you can embed your video with a **captions track** that references the `.vtt` file, like so:
 
 <!-- prettier-ignore -->
 ```html
