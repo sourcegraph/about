@@ -10,8 +10,7 @@ export default ((props: any) => (
         location={props.location}
         meta={{
             title: 'FactSet migrates from Perforce to GitHub',
-            description:
-                'FactSet provides financial data and software solutions for over 100,000 investment professionals around the world.',
+            description: 'FactSet case study. Learn how FactSet uses Sourcegraph after migrating from Perforce to GitHub.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
         className="navbar-dark bg-black"
