@@ -192,15 +192,19 @@ For the fastest loading time in all browsers, convert your `.mp4` to a `.webm` u
 Before you go to upload your video, ensure someone from the marketing team has added you as an owner for the Sourcegraph brand account (shown below) as we want all Sourcegraph videos to be owned by the brand account.
 
 <div class="text-center">
-  <img src="https://sourcegraphstatic.com/handbook/make-sourcegraph-brand-owner.gif" class="drop-shadow" alt="uploading your videos to youtube"/>
+  <video loop autoplay muted playsinline class="drop-shadow" style="max-width: 500px; aspect-ratio: 556 / 416">
+    <source src="https://sourcegraphstatic.com/handbook/make-sourcegraph-brand-owner.webm" type="video/webm">
+    <source src="https://sourcegraphstatic.com/handbook/make-sourcegraph-brand-owner.mp4" type="video/mp4">
+  </video>
 </div>
 
-<br/>
 Once you’ve been added as an owner, switch to the Sourcegraph user account.
-<br/>
 
 <div class="text-center">
-  <img src="https://sourcegraphstatic.com/handbook/youtube-switch-account.gif"class="drop-shadow" alt="switch to Sourcegraph user account"/>
+  <video loop autoplay muted playsinline class="drop-shadow" style="max-width: 200px; aspect-ratio: 226 / 270">
+    <source src="https://sourcegraphstatic.com/handbook/youtube-switch-account.webm" type="video/webm">
+    <source src="https://sourcegraphstatic.com/handbook/youtube-switch-account.mp4" type="video/mp4">
+  </video>
 </div>
 
 Export your video in 16:9 ratio (should probably be 720p), then [upload your video to YouTube](https://studio.youtube.com/channel/UCOy2N25-AHqE43XupT9mwZQ):
