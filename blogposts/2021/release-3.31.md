@@ -67,8 +67,8 @@ Email notifications for saved searches are being deprecated in favor of code mon
 
 If you are using email notifications for existing saved searches, there is now a button to automatically migrate to code monitoring. Note that existing email notifications for saved searches will be removed in the future.
 
-## We're now indexing the open source universe on Sourcegraph cloud
+## We're working to index the open source universe on Sourcegraph cloud
 
-Sourcegraph is indexing every open source GitHub and GitLab repository with 1 or more stars. Users can search this index of open source code on [Sourcegraph cloud](https://www.sourcegraph.com), and you can read about [why we're doing this on our blog](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
+Sourcegraph is working to index every open source GitHub and GitLab repository with 1 or more stars. Users can search this index of open source code on [Sourcegraph cloud](https://www.sourcegraph.com), and you can read about [why we're doing this on our blog](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
 
 Also, if you'd like utilize this open source index with your Sourcegraph deployment, you can [set up federation for your instance](https://docs.sourcegraph.com/admin/federation/public_repositories).
