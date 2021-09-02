@@ -6,7 +6,7 @@ I believe that the relationships one has with the people in their life is the si
 
 ### Preferred learning styles
 
-I am definitely a hands-on learner. I learn best by doing a process myself or by watching someone do a process and trying it after. 
+I am definitely a hands-on learner. I learn best by doing a process myself or by watching someone do a process and trying it after.
 
 I also learn well through writing as long as the written format is digestible/organized, such as bullet points or an agenda (versus long paragraphs).
 
