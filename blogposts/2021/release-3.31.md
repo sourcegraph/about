@@ -1,16 +1,13 @@
 ---
 title: 'Sourcegraph 3.31 release'
 publishDate: 2021-09-01T10:00-07:00
-description: 'Sourcegraph 3.31 introduces the Private Beta release of Code Insights, complete with no repository limits plus repository-based filters. It also introduces automated migration of saved search notifications to code monitoring.'
+description: 'Sourcegraph 3.31 introduces the Private Beta release of Code Insights and the ability to automatically migrate saved search notifications to code monitors.'
 tags: [blog, release]
 slug: 'release/3.31'
 published: true
 heroImage: https://sourcegraphstatic.com/blog/3.31/sourcegraph-3-31-release.png
 socialImage: https://sourcegraphstatic.com/blog/3.31/sourcegraph-3-31-release.png
 changelogItems:
-  - description: 'Backend Code Insights GraphQL queries now support arguments `includeRepoRegex` and `excludeRepoRegex` to filter on repository names.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/23256
-    category: Code Insights
   - description: Operator documentation has been added to the Search Reference sidebar section.
     url: https://github.com/sourcegraph/sourcegraph/pull/23116
     category: Search
@@ -20,7 +17,7 @@ changelogItems:
   - description: Reintroduced a revised version of the Search Types sidebar section, making the quick links for search types (for example, diff searches) more intuitive to use.
     url: https://github.com/sourcegraph/sourcegraph/pull/23170
     category: Search
-  - description: "Added support for git p4's `--use-client-spec` option, allowing Sourcegraph to avoid cloning unimportant files. This can now be enabled by configuring the `p4.client` field in the Perforce integration."
+  - description: "The Perforce integration has a new `p4.client` field that can be used to avoid cloning unimportant files by using git p4's `--use-client-spec`."
     url: https://github.com/sourcegraph/sourcegraph/pull/23845
     category: Admin
   - description: 'Batch Changes changesets can now be set to published when previewing new or updated batch changes.'
@@ -46,7 +43,7 @@ changelogItems:
     category: Batch Changes
 ---
 
-Sourcegraph 3.31 is now available! For this release, we introduced:
+Sourcegraph 3.31 is now available! Here are some highlights from this release:
 
 ## Code Insights now in Private Beta
 
@@ -66,7 +63,7 @@ We've switched our built-in main Postgres and codeintel databases to an Alpine-b
 
 ## Saved search notifications are migrating to code monitoring
 
-Email notifications for saved searches are being deprecated in favor of code monitoring. Like email notifications for saved searches, code monitoring allows you to keep track of and get notified about changes in your code. Some use cases for code monitors include getting notifications for potential secrets, anti-patterns, or common typos committed to your codebase. Read more about [code monitoring](https://docs.sourcegraph.com/code_monitoring).
+Email notifications for saved searches are being deprecated in favor of code monitoring notifications. Similar to email notifications for saved searches, code monitoring allows you to keep track of and get notified about changes in your code. Some use cases for code monitors include getting notifications for potential secrets, anti-patterns, or common typos committed to your codebase. Read more about [code monitoring](https://docs.sourcegraph.com/code_monitoring).
 
 If you are using email notifications for existing saved searches, there is now a button to automatically migrate to code monitoring. Note that existing email notifications for saved searches will be removed in the future.
 
