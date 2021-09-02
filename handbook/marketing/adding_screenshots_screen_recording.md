@@ -186,7 +186,7 @@ For the fastest loading time in all browsers, convert your `.mp4` to a `.webm` u
 ### Uploading your video to YouTube
 
 > NOTE: If you just want to **embed** a video somewhere (in the handbook, on our marketing page, in our product, etc), prefer uploading the video to [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/?project=sourcegraph-de&folder=true&organizationId=true) on Google Cloud storage and [embedding it from there](#embedding-videos).
-> Self-hosted embedded videos make a better impression by providing higher quality and giving us greater control over how they are displayed.
+> Self-hosted embedded videos make a better impression by providing higher quality, having no YouTube branding, and giving us greater control over how they are displayed.
 > Use YouTube for distribution benefits, e.g. when a video is intended to be shared on social media.
 
 Before you go to upload your video, ensure someone from the marketing team has added you as an owner for the Sourcegraph brand account (shown below) as we want all Sourcegraph videos to be owned by the brand account.
