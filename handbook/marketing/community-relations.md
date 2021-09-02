@@ -6,7 +6,7 @@ At Sourcegraph, our mission is to make it so [everyone can code](https://about.s
 
 ### Developer Evangelism
 
-Helping to spread the Sourcegraph message and increasing the adoption rates of the product within the developer ecosystem.
+Spread the Sourcegraph message and increase the product's adoption rate within the developer ecosystem.
 
 ### Open Source Programs
 
