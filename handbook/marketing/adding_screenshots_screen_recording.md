@@ -152,7 +152,7 @@ It is recommended to show them by default, as many people even with good hearing
 
 ## Embedding videos
 
-The video should be uploaded to the [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/?project=sourcegraph-de&folder=true&organizationId=true) on Google Cloud storage and linked to from the URL `https://sourcegraphstatic.com/path/to/file`.
+The video should be uploaded to the [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/?project=sourcegraph-de&folder=true&organizationId=true) Google Cloud storage and linked to from the URL `https://sourcegraphstatic.com/path/to/file`.
 Use or create subfolders as appropiate, e.g. the `handbook` or `blog` folder.
 
 Videos are embedded in Markdown and HTML using the `<video>` tag:
