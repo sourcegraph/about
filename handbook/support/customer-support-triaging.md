@@ -20,12 +20,15 @@ In order to set-up the team for success meeting our internal 1-hour SLA, it is c
 
 - **Step 3:** Identify if there is action for CS or not
 
-  - If there is an action for CS, got to Step 4. There is an action for CS if the action is to:
+	If there is an action for CS, got to Step 4. There is an action for CS if the action is to:
+	
     - troubleshoot
     - explain how a feature works in the product/how to do something in the product
     - handle anything related to security for a customer without a CE
     - handle a feature request for a customer without a CE
-  - If there is no action for CS, go to step 8. There is no action for CS if the action is to:
+
+	If there is no action for CS, go to step 8. There is no action for CS if the action is to:
+	
     - handle anything related to licensing
     - handle anything related to security for a customer with a CE
     - handle a feature request for a customer with a CE
