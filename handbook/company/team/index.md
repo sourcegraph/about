@@ -1393,7 +1393,7 @@ To add yourself to this page:
 
 - Security Engineering Manager
 - Barcelona, Spain 🇪🇸
-- GitHub: [@dcomas](https://github.com/dcomas)
+- GitHub: [dcomas](https://github.com/dcomas)
 - [diego.coams@sourcegraph.com](mailto:diego.comas@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/diegocomas)
 - Diego lives in Barcelona, with his wife and two kids. He is passionate about technology, sci-fi movies and football(soccer).
 - In the last 10 years he lived in London (UK) and worked for tech startups and scale ups building teams and helping them improve their security posture.
