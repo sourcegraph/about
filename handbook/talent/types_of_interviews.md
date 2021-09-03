@@ -314,13 +314,16 @@ The technical champion said there aren’t any initiatives driving this re-engag
 
 ## Engineering
 
-- Assignment
+#### Technical Interview: Coding Skills
+- [60m]: An engineer from the team will pair with you to work on an API Client implementation. The goal is to work on the problem together like you would with a fellow engineer. We plan to use this interview to determine your coding ability and technical communication.
 
+### Technical Interview: Architecture
+- [45m]: Two engineers from the team will work with you by verbally discussing how you would design a repository management web application. We will work with you in this collaborative session to think about and design the system togethre, looking for your natural intuation about building web apps and problem-solving as we throw various wrenches into the system.
+
+### Assignments
   - Duration: max 3 hours.
   - Details: during this stage of the interview process, you will complete an asynchronous coding exercise. We will give you an overview of the exercise in advance. We will send you the details at a time of your choosing and you will have up to 3 hours to work on the exercise. You will be able to use your own development environment and look up documentation on the internet.
-
-- TypeScript coding exercise
-
+#### TypeScript coding exercise
   - Duration: 2 hours.
   - Details: We designed this exercise to measure your understanding of callbacks and asynchronous execution.
   - You will choose a two hour timeframe to independently work on the exercise. You can choose any day and time; we just schedule an email.
@@ -332,8 +335,7 @@ The technical champion said there aren’t any initiatives driving this re-engag
   - After two hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
   - If we decide to move forward, we will schedule a 30-minute followup call to discuss your code.
 
-- Frontend coding exercise
-
+#### Frontend coding exercise
   - Duration: 3 hours.
   - Details: We designed this exercise to measure your understanding of building web UIs.
   - You will choose a three hour timeframe to independently work on the exercise. You can choose any day and time; we just schedule an email.
@@ -350,8 +352,7 @@ The technical champion said there aren’t any initiatives driving this re-engag
   - Try to hand in a "well-rounded" submission that demonstrates your skills as well as possible.
   - If we decide to move forward, we schedule a one hour follow-up call to discuss your submission.
 
-- Go coding exercise
-
+#### Go coding exercise
   - Duration: 2 hours.
   - Details: We designed this exercise to measure your understanding of HTTP requests, concurrency, and error handling.
   - You will choose a two hour timeframe to independently work on the exercise. You can choose any day and time that works for you; there are no scheduling constraints.
@@ -362,8 +363,7 @@ The technical champion said there aren’t any initiatives driving this re-engag
   - After two hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
   - If we decide to move forward, we will schedule a 30-minute followup call to discuss your code.
 
-- CLI coding exercise
-
+#### CLI coding exercise
   - Duration: 90-minutes.
   - Details: We designed [this synchronous exercise](https://github.com/sourcegraph/interviews/blob/master/engineering/coding/simple-polling/README.md) to measure your approach to coding a small application in a paired setting.
   - We will schedule a 90-minute timeframe to work with a Sourcegraph engineer.
@@ -374,8 +374,7 @@ The technical champion said there aren’t any initiatives driving this re-engag
   - You are not prohibited from using open-source libraries.
   - If we decide to move forward, we will schedule interviews with team members.
 
-- Core APP team coding exercise
-
+#### Core APP team coding exercise
   - Duration: 1 hour
   - Details: We designed [this synchronous exercise](https://github.com/sourcegraph/interviews/blob/master/engineering/coding/api-client/README.md) to measure your approach to coding a small API client in a paired setting.
   - We will schedule a 60-minute timeframe to work with a Sourcegraph engineer.
@@ -385,11 +384,9 @@ The technical champion said there aren’t any initiatives driving this re-engag
   - You can use your own development environment, and look up documentation on the internet.
   - You can use any open-source libraries.
   - We will be working in a paried setting, as if you would work in pair with a fellow engineer. We do not expect you to single handedly do all the work.
+  - If we decide to move forward, we will schedule interviews with team members.
 
-If we decide to move forward, we will schedule interviews with team members.
-
-- Distribution exercise
-
+#### Distribution exercise
   - Duration: 3 hours.
   - Details: We designed this exercise to measure your skills at integrating build and deployment workflows into a development lifecycle, as well as your ability to code a simple HTTP service.
   - You will choose a three hour timeframe to independently work on the exercise. You can choose any day and time that works for you; there are no scheduling constraints.
@@ -400,8 +397,7 @@ If we decide to move forward, we will schedule interviews with team members.
   - After three hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
   - If we decide to move forward, we will schedule a 30-minute followup call to discuss your code.
 
-- Extensibility exercise
-
+#### Extensibility exercise
   - Duration: 2 hours.
   - Details: We designed this exercise to measure your ability to show logical thinking and apply that thinking towards a code implementation. There's no frontend UI work involved.
   - You will choose a two hour timeframe to independently work on the exercise. You can choose any day and time; we just schedule an email.
@@ -413,19 +409,12 @@ If we decide to move forward, we will schedule interviews with team members.
   - After two hours, you will email us your solution as a zip file and we will get back to you on next steps within 2 business days.
   - If we decide to move forward, we will schedule a followup call to discuss your code.
 
-- Technical interview
-
+#### Technical interview
   - Interviewer(s): two members of the engineering department
   - Duration: 60-minutes.
   - Details: during this stage in the interview process, we will get an understanding of the technical depth of your experience and how you would contribute to our engineering culture. We will ask you about your past work and accomplishments in depth, how you worked wiht others, decisions you made, and what you'd do differently today.
 
-- Core APP Technical interview
-
-  - Interviewers(s): two members of the engineering department
-  - Duration: 45 minutes
-  - Details: This is a twist on the Technical interview in the Core APP team. It consists of open-ended questions, in order to get you to describe your mental model of designing a new system from scratch. We want to understand if you are making the right decisions when designing system architectures. We want to assess how you deal with ambiguity and how do you deal with tradeoffs, how do you approach problems of different scale and how you are able to communicate your choices to others.
-
-- Working Session
+#### Working Session
   - Interviewer(s): two members of the engineering department
   - Duration: 60-minutes.
   - Details: during this stage in the interview process, we will give you an open problem statement and you will walk us through how you would solve the problem.
