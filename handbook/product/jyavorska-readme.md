@@ -1,6 +1,6 @@
 # Jason's README
 
-Hello, I’m Jason Yavorska and I’m the Product Director for Global Code Graph. You can also see my [bio on the team page](/handbook/company/team#jason-yavorska-he-him) for more info about me.
+Hello, I’m Jason Yavorska and I’m the Product Director for Global Code Graph. You can also see my [bio on the team page](../company/team/index.md#jason-yavorska-he-him) for more info about me.
 
 ## Logistics
 
@@ -23,7 +23,7 @@ We can change any of the above approaches if they don’t work for you in genera
 
 ## Personal Style
 
-![Insights Graph](personalstyle.png)
+![Insights Graph](./jyavorska-personalstyle.png)
 
 My [Enneagram type is 7](https://www.enneagraminstitute.com/type-7), and for the Insights personality test, I’m a “Creative Directing Motivator”. I tend to have a creative and intuitive way of working, which works really well with iteration. It also means that I really enjoy sharing my enthusiasm and passion for the problems I am working on, and that I excel in unstructured, fast-moving environments. I'm motivated by being appreciated and working on innovative solutions. This also means as a negative that I can make mistakes or have frequent changes in direction or focus due to my inclination to act on opinions, hunches, and intuitions versus facts and data, and so I try to be careful to avoid this by working iteratively rather than via sweeping changes. A sample motto for an expressive manager like me might be "I lean on the power of my vision, and trust in my persuasive power."
 

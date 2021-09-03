@@ -1394,6 +1394,6 @@ To add yourself to this page:
 - Product Director for Global Code Graph
 - Leiden, NL 🇳🇱 and part of the year in Odessa, UA 🇺🇦
 - GitHub: [jyavorska](https://github.com/jyavorska)
-- [README](/handbook/product/readmes/jyavorska/)
+- [README](../../product/jyavorska-readme.md)
 - [jason.yavorska@sourcegraph.com](mailto:jason.yavorska@sourcegraph.com), [Twitter](https://twitter.com/j4yav), [Lichess](https://lichess.org/@/j4yav), [LinkedIn](https://linkedin.com/in/jyavorska), [Personal Site](https://metaluna.io)
 - Jason was born in the United States, but moved to the Netherlands in 2015. A big part of that move was due to having a big interest in history and classical arts and music, and living here provides a nice base for exploration. He has an international family with most parts in the United States and Ukraine, so often is traveling between these places. He has two young children, a daughter and younger son, and enjoys food, travel, guitar, fantasy and science fiction books, and (retro) technology. His personal passion is [helping kids learn to code](https://metaluna.io/learn/).
