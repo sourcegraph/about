@@ -1388,3 +1388,13 @@ To add yourself to this page:
 - GitHub: [Brielle-C](https://github.com/Brielle-C)
 - [brielle.collins@sourcegraph.com](mailto:brielle.collins@sourcegraph.com)
 - Brielle Enjoys reading and occasionally writing short stories. She loves to binge-watch series and anime has a soft spot in her heart. She is the youngest of 4 and is a super aunt to all of her nieces and nephews. Brielle is very family-oriented and enjoys spending time at home with friends and family, although she was born in the Summer months Fall is her favorite season. She currently lives is searching for a dog to be a pet mom to. Brielle identifies as a Gryffindor and is a tea enthusiast, her favorite is David’s Tea Pomegranate blend.
+
+## Diego Comas (he/him/his)
+
+- Security Engineering Manager
+- Barcelona, Spain 🇪🇸
+- GitHub: [@dcomas](https://github.com/dcomas)
+- [diego.coams@sourcegraph.com](mailto:diego.comas@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/diegocomas)
+- Diego lives in Barcelona, with his wife and two kids. He is passionate about technology, sci-fi movies and football(soccer).
+- In the last 10 years he lived in London (UK) and worked for tech startups and scale ups building teams and helping them improve their security posture.
+- Diego never misses a game of his local team FC Barcelona 🏟. In his spare time (if kids allow!) he likes to play football ⚽️, other sports like padel tennis 🎾 and sailing ⛵️ in the Costa Brava.
