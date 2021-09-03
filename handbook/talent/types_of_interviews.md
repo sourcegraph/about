@@ -315,6 +315,7 @@ The technical champion said there aren’t any initiatives driving this re-engag
 ## Engineering
 
 ### Assignments
+
 - See more about coding exercises [here](https://about.sourcegraph.com/handbook/engineering/hiring/software-engineer-coding-exercise)
 
 ### Technical Interview: General
