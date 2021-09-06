@@ -2,8 +2,7 @@
 
 Welcome to Sourcegraph! We are so excited to have you on the team. This page outlines what you'll need to do to get started.
 
-
-### Links of interest 
+### Links of interest
 
 - [Onboarding process for Hiring Managers](onboarding-for-hiring-managers.md) page.
 - Cohort calendar ([2021](https://docs.google.com/spreadsheets/d/1jJY3E7j31ZD7J-ouf3Gf-uioHCAXxe-0bBVLEmdtVGQ/edit#gid=0) & [2022](https://docs.google.com/spreadsheets/d/1Q_h9I0CkppecPNbaMlhe7uafcNdfzWuiPApm0KxTaAA/edit#gid=0) start dates)
