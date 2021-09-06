@@ -1415,4 +1415,3 @@ To add yourself to this page:
 - Diego lives in Barcelona, with his wife and two kids. He is passionate about technology, sci-fi movies and football(soccer).
 - In the last 10 years he lived in London (UK) and worked for tech startups and scale ups building teams and helping them improve their security posture.
 - Diego never misses a game of his local team FC Barcelona 🏟. In his spare time (if kids allow!) he likes to play football ⚽️, other sports like padel tennis 🎾 and sailing ⛵️ in the Costa Brava.
-
