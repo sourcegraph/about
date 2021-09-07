@@ -1447,4 +1447,4 @@ To add yourself to this page:
 - Denver, CO 🇺🇸
 - GitHub: gracebohl
 - [grace.bohl@sourcegraph.com](mailto:you@sourcegraph.com)
-- Grace is a Chicago, IL native and moved to Denver over 4 years ago. Prior to Sourcegraph, Grace gained experience recruiting in high growth SaaS companies such as Xactly Corp and Slack. When not working, Grace enjoys taking advantage of everything Colorado has to offer such as hiking, camping and snowboarding. In her free time, she enjoys going on walks, cooking, traveling and hanging with family and friends. 
+- Grace is a Chicago, IL native and moved to Denver over 4 years ago. Prior to Sourcegraph, Grace gained experience recruiting in high growth SaaS companies such as Xactly Corp and Slack. When not working, Grace enjoys taking advantage of everything Colorado has to offer such as hiking, camping and snowboarding. In her free time, she enjoys going on walks, cooking, traveling and hanging with family and friends.
