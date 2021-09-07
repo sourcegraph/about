@@ -98,8 +98,8 @@ After day 90, your role expectations will then align to the pre-defined CE caree
 
 After day 90, your role expectations will then align to the pre-defined CE career ladders of your current level.
 
-
 ## CE Demo Certification
+
 Each CE is expected to receive certification. Certification means new CEs have demonstrated full proficiency in each criteria area and are prepared to be able to successfully conduct customer meetings on their own.
 
 For certification, a rubric exists to assess a new CE's demo competency as they onboard to Sourcegraph. Each time a new CE leads a demo session, a tenured CE or CE manager will shadow them and fill out a scorecard upon completion. This will help provide feedback and give the new CE specific areas of focus.
