@@ -6,7 +6,7 @@ At Sourcegraph, our mission is to make it so [everyone can code](https://about.s
 
 ### Developer Evangelism
 
-Spread the Sourcegraph message and increase the product's adoption rate within the developer ecosystem.
+Spread the Sourcegraph message and increase the product's adoption rate within the developer ecosystem. 
 
 ### Open Source Programs
 
@@ -21,16 +21,16 @@ Playing an active role in broadening our reach in the community, building authen
 - [Samson Goddy](https://about.sourcegraph.com/handbook/company/team#samson-goddy-he-him), Director of Community
 - [Prosper Otemuyiwa](https://about.sourcegraph.com/handbook/company/team#prosper-otemuyiwa-he-him), Staff Developer Evangelist
 - [Vanesa Ortiz](https://about.sourcegraph.com/handbook/company/team#vanesa-ortiz-she-her), Community Advocate
-- Amarachi Emmanuela Azubuike,Social Media Community Manager
+- Amarachi Emmanuela Azubuike, Social Media Community Manager
 
 ## Contact
 
-**Chat with us** in the [#community-relations](https://sourcegraph.slack.com/archives/C023BV511TR) Slack channel, or by tagging @community.
+**Chat with us** in the [#community-relations](https://sourcegraph.slack.com/archives/C023BV511TR) Slack channel, or by tagging @community. <br/>
 **Email us** at [community@sourcegraph.com](mailto:community@sourcegraph.com)
 
 ## Code of Conduct
 
-[Code of Conduct](https://about.sourcegraph.com/handbook/community/code_of_conduct)
+[Code of Conduct](community-code-of-conduct.md)
 
 ## Community calendars
 
