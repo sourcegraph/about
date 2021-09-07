@@ -849,7 +849,7 @@ To add yourself to this page:
 - Product Manager, Distribution & Security
 - Shaftesbury (Dorset), UK 🇬🇧
 - GitHub: [dan-mckean](https://github.com/dan-mckean)
-- [Readme!](../../product/dan-mckean-readme.md)
+- [Readme!](../../product/readmes/dan-mckean-readme.md)
 - [dan.mckean@sourcegraph.com](mailto:dan.mckean@sourcegraph.com)
 - Dan grew up in the South of England, and (with a detour via London) ended up in Dorset in the south west, a county with beautiful coast (but lives as far from the sea as it's possible to get – though not deliberately!) He lives with his wife (Emma), four kids (7y, 5y, 2x14m) and 3-legged springer spaniel (9y). His spare time is largely spent chasing his twin identical boys in an effort to prevent injury. Any (genuinely) spare time is spent trying to make things out of wood.
 
@@ -1388,3 +1388,55 @@ To add yourself to this page:
 - GitHub: [Brielle-C](https://github.com/Brielle-C)
 - [brielle.collins@sourcegraph.com](mailto:brielle.collins@sourcegraph.com)
 - Brielle Enjoys reading and occasionally writing short stories. She loves to binge-watch series and anime has a soft spot in her heart. She is the youngest of 4 and is a super aunt to all of her nieces and nephews. Brielle is very family-oriented and enjoys spending time at home with friends and family, although she was born in the Summer months Fall is her favorite season. She currently lives is searching for a dog to be a pet mom to. Brielle identifies as a Gryffindor and is a tea enthusiast, her favorite is David’s Tea Pomegranate blend.
+
+## Jason Yavorska (he/him)
+
+- Product Director for Global Code Graph
+- Leiden, NL 🇳🇱 and part of the year in Odessa, UA 🇺🇦
+- GitHub: [jyavorska](https://github.com/jyavorska)
+- [README](../../product/readmes/jyavorska-readme.md)
+- [jason.yavorska@sourcegraph.com](mailto:jason.yavorska@sourcegraph.com), [Twitter](https://twitter.com/j4yav), [Lichess](https://lichess.org/@/j4yav), [LinkedIn](https://linkedin.com/in/jyavorska), [Personal Site](https://metaluna.io)
+- Jason was born in the United States, but moved to the Netherlands in 2015. A big part of that move was due to having a big interest in history and classical arts and music, and living here provides a nice base for exploration. He has an international family with most parts in the United States and Ukraine, so often is traveling between these places. He has two young children, a daughter and younger son, and enjoys food, travel, guitar, fantasy and science fiction books, and (retro) technology. His personal passion is [helping kids learn to code](https://metaluna.io/learn/).
+
+## Tamar Joyeux
+
+- Customer Support Manager
+- Camas, WA, United States 🇺🇸
+- GitHub: [tamarj0y](https://github.com/tamarj0y)
+- [tamar.joyeux@sourcegraph.com](mailto:tamar.joyeux@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tamarj), [pronounce my name 🔊](https://www.name-coach.com/tamar-joyeux)
+- Tamar was born on the island of St. Lucia 🇱🇨. He then spent several years living and working in London, England. He recently (and somewhat reluctantly) settled in the PNW. Tamar currently lives with his wife and two kids in Camas, Washington. He enjoys running local trails, signing up for moderately lengthy ultramarathon races and a host of other outdoor themed activities. Tamar has spent most of his career in infrasturcture ops. Before Sourcegraph, he led an infrastructure and dev ops team at a US based fitness equipment manufacturer.
+
+## Diego Comas (he/him/his)
+
+- Security Engineering Manager
+- Barcelona, Spain 🇪🇸
+- GitHub: [dcomas](https://github.com/dcomas)
+- [diego.comas@sourcegraph.com](mailto:diego.comas@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/diegocomas)
+- Diego lives in Barcelona, with his wife and two kids. He is passionate about technology, sci-fi movies and football(soccer).
+- In the last 10 years he lived in London (UK) and worked for tech startups and scale ups building teams and helping them improve their security posture.
+- Diego never misses a game of his local team FC Barcelona 🏟. In his spare time (if kids allow!) he likes to play football ⚽️, other sports like padel tennis 🎾 and sailing ⛵️ in the Costa Brava.
+
+## Andrew Hsu (he/him)
+
+- Customer Engineer
+- Los Angeles, California, United States 🇺🇸
+- GitHub: [superhsu](https://github.com/superhsu)
+- [andrew.hsu@sourcegraph.com](mailto:andrew.hsu@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/andrewjhsu/)
+- Andrew lives in Los Angeles, California, with his partner and their grumpy cat, Ginger. He has a passion for technology and sales. Growing up at a young age, he helped his cousins build and sell computers. Andrew has spent most of his career as a Sales Engineer. Before Sourcegraph, he helped sell observability software at Splunk. Outside of work, he enjoys traveling ✈️, spending time with family & friends, watching movies, playing competitive sports & e-sports.
+
+## JH Chabran (he/him)
+
+- Software Engineer
+- Name Pronunciation: [/ʒiaʃ/](https://www.name-coach.com/jh-chabran)
+- Lyon, France 🇫🇷
+- Github: [jhchabran](https://github.com/jhchabran)
+- [jean-hadrien.chabran@sourcegraph.com](mailto:jean-hadrien.chabran@sourcegraph.com)
+- JH loves to learn new things all the time and to build software that helps other developers. He got into coding by learning how some developers managed to translate old video games through reverse engineering. In his free time, JH likes to experiment with new tools, play indie video games, take long walks with his (stubborn) Corgi and cook for his friends and family.
+
+## Chris Wendt
+
+- Software Engineer on Code Intelligence
+- Boulder, CO 🇺🇸
+- GitHub: [chrismwendt](https://github.com/chrismwendt)
+- [chris.wendt@sourcegraph.com](mailto:chris.wendt@sourcegraph.com), [Twitter](https://twitter.com/ChrisMWendt), [LinkedIn](https://www.linkedin.com/in/chrismwendt/)
+- Programming language enthusiast, speedcuber, SSBM player, guitar and piano player, and dog lover. He has worked on some solo projects ([CodeWing](https://codewing.dev/) and [CodeBook](https://codebook.page/)), a distributed data pipeline at Microsoft, search at GitHub, developer experience at ThoughtSpot, and earned his BS in Computer Science with a specialization in computer graphics from Purdue.
