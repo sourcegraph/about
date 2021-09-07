@@ -28,7 +28,7 @@ It also owns a subset of features built on top of Sourcegraph search:
   - [Juliana Peña](../../company/team/index.md#juliana-peña-she-her)
   - [Rok Novosel](../../company/team/index.md#rok-novosel-he-him)
   - [Camden Cheek](../../company/team/index.md#camden-cheek-hehim)
-  - F.K.
+  - [Felix Kling](https://app.slack.com/client/T02FSM7DL/C01CSS3TC75/user_profile/U0223UPMWLF)
 
 ## Processes
 
