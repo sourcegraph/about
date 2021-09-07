@@ -92,78 +92,53 @@ For teammates with business-related travel requirements, trips will be fully pai
 
 ## 5. Professional development stipend and educational travel
 
- 
 Each teammate has $1,000 per fiscal year to spend on professional development opportunities that will enhance the knowledge, human skills, and thinking required to fulfill the purpose of your role and advance your career at Sourcegraph.
 
-*This professional development budget includes:* 
- -   **Reading materials:** Books, magazines, and subscriptions (digital or printed)
-    
- -   **Role specific:** License fees / continuing education specific to your role
- 
- - **Educational experiences:**
-	 - Courses, workshops, and/or exhibitions, both digital or in-person
-   *(including transportation)*   
-	  - Extended educational degrees, university classes, and certifications
+_This professional development budget includes:_
 
-    
--   **Conferences**: Attending conferences relevant to your role (the attendance and travel fees associated with them
-    
--   **Leadership/professional coaching:** obtaining certified professional coaching outside of our organization or continuing to work with your Modern Health coach beyond our given 10 annual coaching credits
+- **Reading materials:** Books, magazines, and subscriptions (digital or printed)
 
-***Best practice tip:**  Request budget approval from your manager before booking any professional development opportunities.*
+- **Role specific:** License fees / continuing education specific to your role
 
-  
+- **Educational experiences:**
+  - Courses, workshops, and/or exhibitions, both digital or in-person
+    _(including transportation)_
+  - Extended educational degrees, university classes, and certifications
+- **Conferences**: Attending conferences relevant to your role (the attendance and travel fees associated with them
+- **Leadership/professional coaching:** obtaining certified professional coaching outside of our organization or continuing to work with your Modern Health coach beyond our given 10 annual coaching credits
+
+**\*Best practice tip:** Request budget approval from your manager before booking any professional development opportunities.\*
 
 If any of the above meet the guidelines for usage and fall within your $1,000 allowance, you do not need approval from Finance + People Ops. If you have your eye on something that exceeds the allowance but is important to your role and/or team, please first raise the request with your manager.
-
-  
 
 ### Obtaining Manager Approval:
 
 This section will inform you how to obtain manager approval and get sign-off for your professional development opportunity.
 
-
-
 **Information Needed:**
 
-*The applicant is responsible for collecting the information below (where applicable), and each cost must be estimated in USD:*
+_The applicant is responsible for collecting the information below (where applicable), and each cost must be estimated in USD:_
 
+- [ ] Event name and link to the website:
+- [ ] Event Location (city, country):
+- [ ] Duration of stay (days, nights):
 
- - [ ] Event name and link to the website:
-           
-  - [ ]  Event Location (city, country):
-           
- - [ ] Duration of stay (days, nights):
- 
- - [ ] Is quarantine required for travel? If so, for how long:
-                  
- - [ ] Registration fee:
-                  
- - [ ] Airfare:
-                  
- - [ ] Ground transportation:
-                  
- - [ ] Hotel and lodging:
-                  
- - [ ] Meals:
-                  
- - [ ]  Total cost:
+- [ ] Is quarantine required for travel? If so, for how long:
+- [ ] Registration fee:
+- [ ] Airfare:
+- [ ] Ground transportation:
+- [ ] Hotel and lodging:
+- [ ] Meals:
+- [ ] Total cost:
 
- - [ ] Additional information (if applicable):
-  
+- [ ] Additional information (if applicable):
 
 ### Approvals Process:
 
 1.  Applicant collects information as described above before any booking or reservation
-    
 2.  Applicant sends their manager the above information via email with the title [Approval for Professional Development Stipend on _insert date_]
-    
 3.  The manager works with the director to ensure that the budget is available
-    
 4.  The manager confirms with the applicant if the application is approved or not
-    
-
-
 
 For any anticipated spending over $1,000 USD, please follow the above steps and CC the travel@sourcegraph alias with a note included in the title as [Approval for Professional Development Stipend - Anticipated Spend over 1k].
 
