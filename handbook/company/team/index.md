@@ -1440,3 +1440,19 @@ To add yourself to this page:
 - GitHub: [chrismwendt](https://github.com/chrismwendt)
 - [chris.wendt@sourcegraph.com](mailto:chris.wendt@sourcegraph.com), [Twitter](https://twitter.com/ChrisMWendt), [LinkedIn](https://www.linkedin.com/in/chrismwendt/)
 - Programming language enthusiast, speedcuber, SSBM player, guitar and piano player, and dog lover. He has worked on some solo projects ([CodeWing](https://codewing.dev/) and [CodeBook](https://codebook.page/)), a distributed data pipeline at Microsoft, search at GitHub, developer experience at ThoughtSpot, and earned his BS in Computer Science with a specialization in computer graphics from Purdue.
+
+## Mohammad Umer Alam (he/him)
+
+- Security Engineer
+- Staten Island, NY 🇺🇸
+- GitHub: mohammadualam
+- [mohammad.alam@sourcegraph.com](mailto:mohammad.alam@sourcegraph.com), [LinkedIn](https://linkedin.com/in/mohammadalam/)
+- Mohammad is an avid tinkerer of gadgets and networks. He enjoys taking apart old electronics☎️ and see how they tick. So passion for technology and in relation to it, security, comes naturally to him. He is also very enthusiastic about driving his Jeep Wrangler, although he has yet to go offroading with it. Mohammad also enjoys staying active via outdoor activities and taking part in recreational sports leagues. He is a diehard Yankees⚾️ fan and hopes that they can win another championship soon so he can attend the ticker-tape parade in NYC.
+
+## Grace Bohl (she/her)
+
+- Corporate Recruiter
+- Denver, CO 🇺🇸
+- GitHub: gracebohl
+- [grace.bohl@sourcegraph.com](mailto:you@sourcegraph.com)
+- Grace is a Chicago, IL native and moved to Denver over 4 years ago. Prior to Sourcegraph, Grace gained experience recruiting in high growth SaaS companies such as Xactly Corp and Slack. When not working, Grace enjoys taking advantage of everything Colorado has to offer such as hiking, camping and snowboarding. In her free time, she enjoys going on walks, cooking, traveling and hanging with family and friends.
