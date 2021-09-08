@@ -36,9 +36,9 @@ The secondary function of the blog is to grow awareness of Sourcegraph’s brand
 
 ### Priority content
 
-The buckets outlined below are an internal reference.
+The buckets outlined below are an internal reference and guideline. Although there are three buckets here, content we may publish isn't limited to these, and we may publish more of one type of content than others.
 
-1. **Inside Sourcegraph engineering:** How we built X, scaled Y, debugged Z. These are meaty deep dives into the process of building and iterating on Sourcegraph the product and engineering org. Got code snippets? Graphs and charts? Links to PRs? We’ll take them all.
+1. **Inside Sourcegraph engineering:** How we built X, scaled Y, debugged Z. These are meaty deep dives into the process of building and iterating on Sourcegraph the product and engineering org. Got code snippets? Graphs and charts? Links to PRs? We’ll take them all. Even though we may talk about Sourcegraph as part of these stories, the focus is on the technical work behind the product rather than the product itself.
 1. **Tutorials/how tos:** These practical posts show readers how to solve a problem or improve on a skill. Better code reviews, communication and collaboration advice, and productivity tips are examples of topics we might tackle here.
 1. **Customer/user stories:** Stories highlighting cool things our customers and users are doing with or because of Sourcegraph. We’ll collaborate with customer marketing and community on these.
 
@@ -130,3 +130,24 @@ Dan Luu summarized some [common themes from his own blog](http://danluu.com/prog
 #### Brainstorm board
 
 There are a lot of ideas on our [Miro board](https://miro.com/app/board/o9J_l9gAUM4=/). Feel free to use it for inspiration or let us know if you'd like to write about one of the topics! (Note: You may be asked to request access to the board if you don't have Miro set up with your Sourcegraph email address yet.)
+
+## Blogs our devs trust
+
+According to a question asked in Slack, our devs would trust the information coming from the following company blogs if they saw a post in a Google search or on HackerNews.
+
+- [Fly.io](https://fly.io/blog/)
+- [Facebook Engineering](https://engineering.fb.com/)
+- [Netflix Tech Blog](https://netflixtechblog.com/)
+- [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/)
+- [Google Developers](https://developers.googleblog.com/)
+- [Uber Engineering](https://eng.uber.com/)
+- [Dropbox.Tech](https://dropbox.tech/)
+- [Cloudflare](https://blog.cloudflare.com/)
+- [LogRocket](https://blog.logrocket.com/)
+- [Hasura](https://hasura.io/blog/)
+- [Discord](https://blog.discord.com/tagged/engineering)
+- [Prometheus](https://prometheus.io/blog/)
+- [Grafana](https://grafana.com/blog/)
+- [Shopify Engineering](https://shopify.engineering/)
+
+### Learnings: TODO
