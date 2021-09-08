@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { BlogTypeInfo } from './postTypes'
 
-interface Props extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> { }
+interface Props extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> {}
 
 export const BlogHeader: React.FunctionComponent<Props> = ({ title, belowTitle, baseUrl }) => (
     <div>

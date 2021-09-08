@@ -33,10 +33,12 @@ Product at Sourcegraph consists of [product management](product_management/index
 - [Working with BizOps](../ops/bizops/index.md#how-to-work-with-us)
 - [User research](./user_research/index.md)
 - [Recommended reading](./onboarding/recommended_reading.md)
+- [Product licensing](licensing.md)
 
 ### Metrics
 
 - [Product metrics dashboard](https://sourcegraph.looker.com/dashboards/127)
+- [How to add metrics](../ops/bizops/analytics.md#How-to)
 
 ### Tools
 

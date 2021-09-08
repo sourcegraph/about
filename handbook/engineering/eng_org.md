@@ -13,11 +13,16 @@ A minimum viable team contains:
 - A product manager
 - An engineering manager
 - Appropriate product design support depending on the work of the team
-- The greater of:
-  - 2 engineers per necessary skillset (for example: if a team requires both backend and frontend engineers, then the minimum team is 2x frontend + 2x backend) for collaboration and redundancy
-  - 3 engineers total (for example: if a team only needs frontend engineers, then there can be a team of 3 frontend engineers)
+- Four engineers, with a minimum of two per skillset (examples: 2 backend + 2 frontend, 4 backend, 4 frontend)
 
-New teams will not be created until/unless we have committed headcount in the plan to staff them to a minimum viable team within a reasonable timeframe, or to whatever is necessary to make the new team successful, whichever is larger.
+New teams will not be created until/unless we have committed headcount in the plan to staff them to a minimum viable team within 3 months of forming the team, or to whatever is necessary to make the new team successful, whichever is larger.
+
+We want each team to have sufficient engineering capacity to not only be able to deliver on their roadmap but so that teammates feel:
+
+- they can take PTO without worrying about the team's commitments
+- teammates have ample time to experiment with new ideas or improvement that exist outside the team's roadmap.
+
+The number of teammates that allows teams to achieve these objectives should be considered their minimum team size.
 
 ### Optimal team size
 
@@ -33,25 +38,25 @@ When teams grow and divide, we prefer to grow the org horizontally, not vertical
 
 ## Transferring teams
 
-If you are already at Sourcegraph and see a current or future opportunity that you're interested in, please tell your manager. Your manager will chat with you to understand what you want and then propose next steps. Team transfers need to be approved by the [VP of Engineering](roles.md#vp-engineering).
+If you are already at Sourcegraph and see a current or future opportunity that you're interested in, please tell your manager. Your manager will chat with you to understand what you want and then propose next steps. See also [the process for switching teams](https://about.sourcegraph.com/handbook/people-ops/switching-teams).
 
 ## Current organization
 
 - [Nick Snyder](index.md#nick-snyder-he-him), [VP Engineering](../../handbook/engineering/roles.md#vp-engineering) (reports to [Beyang Liu](index.md#beyang-liu), CTO)
-    - Global code graph
-        - [Search core](../../handbook/engineering/search/core.md)
-        - [Search product](../../handbook/engineering/search/product.md)
-        - [Code intelligence](../../handbook/engineering/code-intelligence/index.md)
-        - [Batch Changes](../../handbook/engineering/batch-changes/index.md)
-    - [Developer Insights](../../handbook/engineering/developer-insights/index.md)
-        - [Frontend platform](../../handbook/engineering/developer-insights/frontend-platform/index.md)
-        - [Extensibility](../../handbook/engineering/developer-insights/extensibility/index.md)
-        - [Code insights](../../handbook/engineering/developer-insights/code-insights/index.md)
-        - [API docs](../../handbook/engineering/developer-insights/api-docs/index.md)
-    - Platform and infrastructure
-        - [Security](../../handbook/engineering/security/index.md)
-        - [Distribution](../../handbook/engineering/distribution/index.md)
-        - [Core application](../../handbook/engineering/core-application/index.md)
+  - Global code graph
+    - [Search core](../../handbook/engineering/search/core.md)
+    - [Search product](../../handbook/engineering/search/product.md)
+    - [Code intelligence](../../handbook/engineering/code-intelligence/index.md)
+    - [Batch Changes](../../handbook/engineering/batch-changes/index.md)
+  - [Developer Insights](../../handbook/engineering/developer-insights/index.md)
+    - [Frontend platform](../../handbook/engineering/developer-insights/frontend-platform/index.md)
+    - [Extensibility](../../handbook/engineering/developer-insights/extensibility/index.md)
+    - [Code insights](../../handbook/engineering/developer-insights/code-insights/index.md)
+    - [API docs](../../handbook/engineering/developer-insights/api-docs/index.md)
+  - Platform and infrastructure
+    - [Security](../../handbook/engineering/security/index.md)
+    - [Distribution](../../handbook/engineering/distribution/index.md)
+    - [Core application](../../handbook/engineering/core-application/index.md)
 
 ## Planned organization
 
@@ -60,34 +65,34 @@ This is the current plan for our engineering organization and growth.
 Plans can change given new information!
 
 - [Nick Snyder](../company/team/index.md#nick-snyder-he-him), [VP Engineering](roles.md#vp-engineering) (reports to [Beyang Liu](index.md#beyang-liu), CTO)
-    - Global code graph {#global-code-graph}
-        - Y.T. starting 2021-08-03. Nick acting director until then.
-        - [Search core](search/core.md)
-            - [Team: Search core](search/core.md#search-core-eng)
-        - [Search product](search/product.md)
-            - [Team: Search product](search/product.md#search-product-eng)
-        - [Code intelligence](code-intelligence/index.md)
-            - [Team: Code intelligence](code-intelligence/index.md#code-intelligence-eng)
-        - [Batch Changes](batch-changes/index.md)
-            - [Team: Batch Changes](batch-changes/index.md#batch-changes-eng)
-    - Developer Insights {#developer-insights}
-        - [Jean du Plessis](../company/team/index.md#jean-du-plessis-he-him) ([Director of Engineering](roles.md#director-of-engineering))
-        - [Code insights](developer-insights/code-insights/index.md)
-            - [Team: Code insights](developer-insights/code-insights/index.md#code-insights-eng)
-        - [Extensibility](developer-insights/extensibility/index.md)
-            - [Team: Extensibility](developer-insights/extensibility/index.md#extensibility-eng)
-        - [Frontend platform](developer-insights/frontend-platform/index.md)
-            - [Team: Frontend platform](developer-insights/frontend-platform/index.md#frontend-platform-eng)
-        - [API docs](developer-insights/api-docs/index.md)
-            - [Team: API docs](developer-insights/api-docs/index.md#api-docs-eng)
-    - Platform and infrastructure {#platform-and-infrastructure}
-        - [Bill Creager](../company/team/index.md#bill-creager) ([Director of Engineering](roles.md#director-of-engineering))
-        - [Security](security/index.md)
-            - [Team: Security](security/index.md#security-eng)
-        - [Distribution](distribution/index.md)
-            - [Team: Distribution](distribution/index.md#distribution-eng)
-        - [Core application](core-application/index.md)
-            - [Team: Core application](core-application/index.md#core-application-eng)
+  - Global code graph {#global-code-graph}
+    - [Yink Teo](../company/team/index.md#yink-teo-he-him) ([Director of Engineering](roles.md#director-of-engineering))
+    - [Search core](search/core.md)
+      - [Team: Search core](search/core.md#search-core-eng)
+    - [Search product](search/product.md)
+      - [Team: Search product](search/product.md#search-product-eng)
+    - [Code intelligence](code-intelligence/index.md)
+      - [Team: Code intelligence](code-intelligence/index.md#code-intelligence-eng)
+    - [Batch Changes](batch-changes/index.md)
+      - [Team: Batch Changes](batch-changes/index.md#batch-changes-eng)
+  - Developer Insights {#developer-insights}
+    - [Jean du Plessis](../company/team/index.md#jean-du-plessis-he-him) ([Director of Engineering](roles.md#director-of-engineering))
+    - [Code insights](developer-insights/code-insights/index.md)
+      - [Team: Code insights](developer-insights/code-insights/index.md#code-insights-eng)
+    - [Extensibility](developer-insights/extensibility/index.md)
+      - [Team: Extensibility](developer-insights/extensibility/index.md#extensibility-eng)
+    - [Frontend platform](developer-insights/frontend-platform/index.md)
+      - [Team: Frontend platform](developer-insights/frontend-platform/index.md#frontend-platform-eng)
+    - [API docs](developer-insights/api-docs/index.md)
+      - [Team: API docs](developer-insights/api-docs/index.md#api-docs-eng)
+  - Platform and infrastructure {#platform-and-infrastructure}
+    - [Bill Creager](../company/team/index.md#bill-creager) ([Director of Engineering](roles.md#director-of-engineering))
+    - [Security](security/index.md)
+      - [Team: Security](security/index.md#security-eng)
+    - [Distribution](distribution/index.md)
+      - [Team: Distribution](distribution/index.md#distribution-eng)
+    - [Core application](core-application/index.md)
+      - [Team: Core application](core-application/index.md#core-application-eng)
 
 [VP Eng team docs](vpe/index.md).
 

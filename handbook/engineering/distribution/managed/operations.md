@@ -58,9 +58,9 @@ gcloud compute start-iap-tunnel default-$DEPLOYMENT-instance $PORT --local-host-
 
 This will port-forward `localhost:4444` to port `80` on the VM instance. Some common ports:
 
-* `80`: Frontend (also see [accessing through the GCP load balancer](#access-through-the-gcp-load-balancer-as-a-user-would))
-* `3370`: Grafana
-* `16886`: Jaeger
+- `80`: Frontend (also see [accessing through the GCP load balancer](#access-through-the-gcp-load-balancer-as-a-user-would))
+- `3370`: Grafana
+- `16886`: Jaeger
 
 Note that other ports are prevented by the `allow-iap-tcp-ingress` firewall rule.
 
@@ -83,10 +83,10 @@ $ curl --proxy socks5://localhost:5000 https://$CUSTOMER.sourcegraph.com
 
 You can now reproduce the request using `curl`, or configure your OS or browser to use `socks5://localhost:5000`:
 
-* Windows: Follow the “using the SOCKS proxy” section in [this article](https://www.ocf.berkeley.edu/~xuanluo/sshproxywin.html) [[mirror]](https://web.archive.org/web/20160609073255/https://www.ocf.berkeley.edu/~xuanluo/sshproxywin.html) to enable it on Internet Explorer, Edge and Firefox.
-* macOS: System Preferences → Network → Advanced → Proxies → check “SOCKS proxy” and enter the host and the port.
-* Linux: Most browsers have proxy settings in their Settings/Preferences.
-* Command-line apps: Many CLIs accept http_proxy or https_proxy environment variables or arguments you can set the proxy. Consult the help or the manpage of the program.
+- Windows: Follow the “using the SOCKS proxy” section in [this article](https://www.ocf.berkeley.edu/~xuanluo/sshproxywin.html) [[mirror]](https://web.archive.org/web/20160609073255/https://www.ocf.berkeley.edu/~xuanluo/sshproxywin.html) to enable it on Internet Explorer, Edge and Firefox.
+- macOS: System Preferences → Network → Advanced → Proxies → check “SOCKS proxy” and enter the host and the port.
+- Linux: Most browsers have proxy settings in their Settings/Preferences.
+- Command-line apps: Many CLIs accept http_proxy or https_proxy environment variables or arguments you can set the proxy. Consult the help or the manpage of the program.
 
 **IMPORTANT**: Once you are finished, terminate the original `gcloud beta compute ssh` command so your machine's traffic is no longer going over the instance. The command above will automatically terminate after 10 minutes, to prevent this.
 
@@ -146,6 +146,7 @@ More details: https://cloud.google.com/compute/docs/startupscript
 
 ## Restarting for configuration updates
 
-SSH into the instance, cd to `/deployment/docker-compose` and run:
-
-`docker-compose restart sourcegraph-frontend-0 sourcegraph-frontend-internal`
+1. Navigate to the instance that you'd like to access in the `sourcegraph-managed-customer` project(the instance is either the `default-red-instance` or `default-black instance`
+2. SSH into the instance within GCP via the option provided.
+3. `cd` to the `deployment` folder and run:
+4. `docker compose restart sourcegraph-frontend-0 sourcegraph-frontend-internal`

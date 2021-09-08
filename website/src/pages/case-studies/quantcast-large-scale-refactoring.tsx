@@ -55,7 +55,7 @@ export default ((props: any) => (
                         <code className="language-text">"ip"</code> would return too many results.
                     </p>
 
-                    <p>
+                    <div>
                         Instead, Sourcegraph can search for fields within objects with:
                         <br />
                         <br />
@@ -74,7 +74,7 @@ export default ((props: any) => (
                                 dangerouslySetInnerHTML={{ __html: `\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b` }}
                             />
                         </pre>
-                    </p>
+                    </div>
 
                     <InContentBlockquote quote="Unlike other tools, Sourcegraph doesn’t just search for keywords, it searches for regular expressions. This familiar query language allowed us to zero-in on exactly what we wanted and filter out false matches." />
 

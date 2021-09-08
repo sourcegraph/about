@@ -4,32 +4,31 @@ This document explains how Sourcegraph handles user data and information.
 
 ## Product data
 
-| Source/platform | Sourcegraph Cloud | Self-hosted | How long is this data kept for? | Who has access? |
-|------------------------------------------------------------------|--------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| [Ping telemetry](https://docs.sourcegraph.com/admin/pings) | | ✔️ | Delete data for any instance that’s been offline for over 3 years. All active instance data are kept | All Sourcegraph teammates |
-| Monitoring and observabiltity tools (Sentry, Honeycomb) | ✔️ | | 90 days (Sentry) and 60 days (Honeycomb) | Engineering teams |
-| Sourcegraph Cloud Postgres database | ✔️ | | Retain indefinitely unless deletion request is received | Analytics and engineering teams |
-Sourcegraph.com event logs | ✔️ | | Retain data for 1 year | All Sourcegraph teammates |
-| Amplitude | ✔️ | | Retain indefinitely | All Sourcegraph teammates |
-| Google Analytics | ✔️ | | Retain indefinitely | All Sourcegraph teammates |
+| Source/platform                                            | Sourcegraph Cloud | Self-hosted | How long is this data kept for?                                                                      | Who has access?                 |
+| ---------------------------------------------------------- | ----------------- | ----------- | ---------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [Ping telemetry](https://docs.sourcegraph.com/admin/pings) |                   | ✔️          | Delete data for any instance that’s been offline for over 3 years. All active instance data are kept | All Sourcegraph teammates       |
+| Monitoring and observabiltity tools (Sentry, Honeycomb)    | ✔️                |             | 90 days (Sentry) and 60 days (Honeycomb)                                                             | Engineering teams               |
+| Sourcegraph Cloud Postgres database                        | ✔️                |             | Retain indefinitely unless deletion request is received                                              | Analytics and engineering teams |
+| Sourcegraph.com event logs                                 | ✔️                |             | Retain data for 1 year                                                                               | All Sourcegraph teammates       |
+| Amplitude                                                  | ✔️                |             | Retain indefinitely                                                                                  | All Sourcegraph teammates       |
+| Google Analytics                                           | ✔️                |             | Retain indefinitely                                                                                  | All Sourcegraph teammates       |
 
 ## Data pipelines
 
-| Source/platform | Sourcegraph Cloud | Self-hosted | How long is this data kept for? | Who has access? |
-|------------------------------------------------------------------|--------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| Google Cloud Platform data pipeline (Buckets, Dataflow, Pub/Sub) | ✔️ | ✔️ | These GCP services only manage the data pipelines for select data sources on this policy. GCP buckets follow the same rules as the data they backup (i.e. Sourcegraph.com data backed up in buckets is kept for a year) | Analytics and engineering teams |
-
+| Source/platform                                                  | Sourcegraph Cloud | Self-hosted | How long is this data kept for?                                                                                                                                                                                         | Who has access?                 |
+| ---------------------------------------------------------------- | ----------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| Google Cloud Platform data pipeline (Buckets, Dataflow, Pub/Sub) | ✔️                | ✔️          | These GCP services only manage the data pipelines for select data sources on this policy. GCP buckets follow the same rules as the data they backup (i.e. Sourcegraph.com data backed up in buckets is kept for a year) | Analytics and engineering teams |
 
 ## User communications
 
-| Source/platform | Sourcegraph Cloud | Self-hosted* | How long is this data kept for? | Who can access it? |
-|---------------------------------------------------|--------------------|---------------------|------------------------------------------------------------------------------------------------------|--------------------|
-| HubSpot and Salesforce (CRM/marketing automation) | ✔️ | ✔️ | Retain all customer information | All Sourcegraph teammates |
-| Communication tools (Jira, Productboard) | ✔️ | ✔️ | Retain all inbound customer communication | All Sourcegraph teammates |
-| Slack shared channels | ✔️ | ✔️ | Customer support channels and private messages are maintained indefinitely. See our full [Slack retention policy](../../communication/team_chat.md#retention) for more information | All Sourcegraph teammates |
-| View full [list of sales tools](../../sales/onboarding/index.md#getting-started) | ✔️ | ✔️ | Retain all outbound customer communication | All Sourcegraph teammates |
+| Source/platform                                                                  | Sourcegraph Cloud | Self-hosted\* | How long is this data kept for?                                                                                                                                                    | Who can access it?        |
+| -------------------------------------------------------------------------------- | ----------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| HubSpot and Salesforce (CRM/marketing automation)                                | ✔️                | ✔️            | Retain all customer information                                                                                                                                                    | All Sourcegraph teammates |
+| Communication tools (Jira, Productboard)                                         | ✔️                | ✔️            | Retain all inbound customer communication                                                                                                                                          | All Sourcegraph teammates |
+| Slack shared channels                                                            | ✔️                | ✔️            | Customer support channels and private messages are maintained indefinitely. See our full [Slack retention policy](../../communication/team_chat.md#retention) for more information | All Sourcegraph teammates |
+| View full [list of sales tools](../../sales/onboarding/index.md#getting-started) | ✔️                | ✔️            | Retain all outbound customer communication                                                                                                                                         | All Sourcegraph teammates |
 
-<b>*For self-hosted, Sourcegraph can only view instance admin and opted-in users' contact information.</b>
+<b>\*For self-hosted, Sourcegraph can only view instance admin and opted-in users' contact information.</b>
 
 ## FAQs
 
@@ -47,16 +46,13 @@ No. Only you can see or edit your private settings and Sourcegraph configuration
 
 ### Is my data encrypted?
 
-Yes, our dedicated security team follows best-practices for data encryption. We know that source code is one of your most sensitive assets. Every component of Sourcegraph was designed with security in mind. We've detailed our strict security guidelines for different deployment types below:
+Yes, our dedicated security team follows best-practices for data encryption, both at-rest and in-transit. The following documents outline our practices in details:
 
-- User credentials are encrypted in our database using 256-bit Advanced Encryption Standard (AES-256) keys in Galois Counter Mode (GCM). The keys are automatically rotated every 90 days.
-- All storage volumes are encrypted at rest, and data is encrypted in-cloud during transport.
-- We leverage IAM groups and rules to enforce the principle of least access across our cloud infrastructure.
-- The domain sourcegraph.com is managed through Cloudflare and uses its security capabilities, like Web Application Firewall and Rate Limiting.
-- We only log information crucial for security and support. Only restricted personnel have access to user data. Logs are stored in GCP and the information is retained for 180 days.
-- Our Incident Response plan is currently under review. It will be publicly available when finalized.
+- [Security Policy](https://about.sourcegraph.com/security/)
+- [Privacy Policy](https://about.sourcegraph.com/privacy/)
+- [Terms of Service](https://about.sourcegraph.com/terms-dotcom)
 
-Our full data policy is outlined in our [Terms of Service](https://about.sourcegraph.com/terms-dotcom) and our [Privacy Policy](https://about.sourcegraph.com/privacy/). If you have further questions, reach out to us at Security@sourcegraph.com.
+If you have further questions, reach out to us at [security@sourcegraph.com](mailto:security@sourcegraph.com).
 
 ### What is my private data used for?
 

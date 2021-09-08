@@ -2,6 +2,7 @@
 
 - [Onboarding](onboarding.md)
 - [Principles and practices](principles-and-practices.md)
+- [Engineering management](engineering-management.md)
 - RFCs (requests for comment)
   - [All RFC documents](https://drive.google.com/drive/folders/1zP3FxdDlcSQGC1qvM9lHZRaHH4I9Jwwa) (Google Drive)
   - [How we use RFCs](../communication/rfcs/index.md)
@@ -25,12 +26,14 @@
 - [Hiring](hiring/index.md)
   - [Open positions](hiring/index.md#open-positions)
   - [Early-career engineers](hiring/early-career-engineers.md)
+- [Career development](career-development/index.md)
+  - [Career development framework](career-development/framework.md)
+  - [Talent review process](career-development/talent-review-process.md)
 
 ## Org chart
 
 - [How engineering is organized](eng_org.md).
 - [Roles and responsibilities](roles.md)
-
 
 ## Communication
 
