@@ -173,7 +173,7 @@ Sourcegraph collects a small amount of high-level and aggregate data from each i
   <p style="text-align: center"><a href="https://vimeo.com/392761379" target="_blank">View on Vimeo</a></p>
 </p>
 
-In Sourcegraph 3.13, we introduced the smart search bar as an experimental feature. Many improvements have been made, but it will stay marked as experimental as we continue to solicit feedback. If you or your team are interested in trying this feature, add the following setting to your user, organization, or global settings on your Sourcegraph instance: `{ "experimentalFeatures": { "smartSearchField": true } }`. Tweet [@srcgraph](https://twitter.com/srcgraph) or email feedback@sourcegraph.com with your feedback.
+In Sourcegraph 3.13, we introduced the smart search bar as an experimental feature. Many improvements have been made, but it will stay marked as experimental as we continue to solicit feedback. If you or your team are interested in trying this feature, add the following setting to your user, organization, or global settings on your Sourcegraph instance: `{ "experimentalFeatures": { "smartSearchField": true } }`. Tweet [@sourcegraph](https://twitter.com/sourcegraph) or email feedback@sourcegraph.com with your feedback.
 
 ## Changelog
 
@@ -253,4 +253,4 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!
+From the entire Sourcegraph team ([@sourcegraph](https://twitter.com/sourcegraph)), happy coding!

@@ -22,6 +22,7 @@ Sourcegraph.com makes it easier than ever to connect your code repositories and 
 - User credentials are encrypted in our database using 256-bit Advanced Encryption Standard (AES-256) keys in Galois Counter Mode (GCM). The keys are automatically rotated every 90 days.
 
 #### Infrastructure
+
 - All infrastructure is hosted on Google Cloud Platform (https://cloud.google.com/security/) and managed through Terraform.
 - All storage volumes are encrypted at rest, and data is encrypted in-cloud during transport.
 - We leverage IAM groups and rules to enforce the principle of least access across our cloud infrastructure.
@@ -57,7 +58,7 @@ Sourcegraph on-premise allows you to have the most control over the deployment a
 [Managed Sourcegraph instances](https://docs.sourcegraph.com/admin/install/managed) are provisioned and managed by Sourcegraph and have special security features:
 
 - Sourcegraph provisions your instance in a completely isolated and secure cloud infrastructure. It will be restricted to only your organization through your enterprise VPN and/or SSO provider of choice.
-- As with Sourcegraph on-prem instances, authentication and authorization are configurable by the customer. 
+- As with Sourcegraph on-prem instances, authentication and authorization are configurable by the customer.
 - All communication to your Sourcegraph instance is encrypted using TLS 1.2 or greater. User credentials are encrypted at rest using 256-bit Advanced Encryption Standard (AES-256) keys in Galois Counter Mode (GCM). The keys are automatically rotated every 90 days.
 - Instances are updated monthly, and are actively maintained to keep the service up and healthy.
 - Managed instances are monitored 24x7 and incidents managed in the same way as our Sourcegraph Cloud deployment.
@@ -71,7 +72,7 @@ We maintain a Bug Bounty program rewarding security researchers that find vulner
 ### Development
 
 - Access to all internal systems is protected by multi-factor authentication. Access is restricted to those who require it to perform their job, and is regularly reviewed and revoked upon termination or when no longer needed.
-- Code reviews are mandatory for all code changes to our product. Security-sensitive changes are additionally reviewed by the security team before being released. 
+- Code reviews are mandatory for all code changes to our product. Security-sensitive changes are additionally reviewed by the security team before being released.
 - Furthermore, internally, we use our own product to provide critical context during code reviews (such as identifying dependencies of modified code).
 - End-to-end tests to validate authentication and other critical workflows (such as authorization and authentication).
 - We do not store sensitive keys and passwords in our code, instead relying on a secure secret vault.
@@ -79,6 +80,7 @@ We maintain a Bug Bounty program rewarding security researchers that find vulner
 - We follow commonly recognized best practices for updating software dependencies and upgrading our base Docker images.
 
 ### Code security
+
 We ensure Sourcegraph is secure by using security tooling and processes:
 
 - Containers are scanned for CVEs using GCP tooling.
@@ -89,3 +91,18 @@ We ensure Sourcegraph is secure by using security tooling and processes:
 ### Software Bill of Materials (SBOM) and OSS usage
 
 Sourcegraph is an OSS product licensed under Apache 2.0. We also make great use of open source components and ship them as part of our application. Full lists of tools and licenses can be found [here](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/tree/third-party-licenses)
+
+## Security Updates
+
+<p class="text-center">
+  <!--[if lte IE 8]>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+  <![endif]-->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+    portalId: "2762526",
+    formId: "0ff99031-7caf-433a-8aef-8c9345948288"
+  });
+  </script>
+</p>

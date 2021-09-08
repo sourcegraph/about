@@ -12,7 +12,7 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 
 [Future engineering org chart and hiring plan](../../engineering/eng_org.md#planned-organization)
 
-## [Product](../../product/index.md#members)
+## [Product](../../product/product_org.md#current-and-planned-organization)
 
 ## [Customer Support](../../support/index.md#the-team)
 
@@ -21,18 +21,30 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 ## [Marketing](../../marketing/index.md#members)
 
 ## Operations
+
 <!-- When updating the ops team list below, please also update handbook/index.md. -->
+
 ### [People Ops](../../people-ops/index.md#people-ops-team-members)
+
 ### [Business Operations & Strategy](../../ops/bizops/index.md#members)
+
 ### [Finance & Accounting](../../ops/finance/index.md#members)
+
 ### [Legal](../../ops/legal/index.md#members)
+
 ### [Tech Ops](../../ops/tech-ops/index.md#members)
 
 ## Sales
+
 <!-- When updating the engineering team list below, please also update handbook/index.md. -->
+
 ### [Sales team](../../sales/index.md#members)
+
 ### [SDR team](../../sales/sdrteam/index.md#members)
+
 ### [Sales strategy & operations](../../sales/sales-ops/index.md#members)
+
+### [Value Engineering & Sales Enablement](../../sales/sales-enablement.md#members)
 
 ## Other teams: TODO
 

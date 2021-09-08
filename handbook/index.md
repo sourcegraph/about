@@ -11,10 +11,12 @@ The handbook is a living document and we expect every teammate to propose improv
 ## [Company](company/index.md)
 
 - [All-remote](company/remote/index.md)
+- [Asynchronous communication](company/asynchronous-communication.md)
 - [Strategy](company/strategy.md)
 - [Goals](company/goals/index.md)
 - [Team](company/team/index.md)
   - [Org chart](company/team/org_chart.md)
+  - [Teammates](https://about.sourcegraph.com/handbook/company/team)
   - [Careers](https://boards.greenhouse.io/sourcegraph91)
 - [CEO](ceo/index.md)
 - [Communication](communication/index.md)
@@ -23,11 +25,11 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ## Teams at Sourcegraph
 
-### People Ops
+### [People Ops](people-ops/index.md)
 
 - [People Ops](people-ops/index.md)
-  - [Leadership](leadership/index.md)
-  - [1-1](leadership/1-1.md)
+  - [Team](people-ops/index.md#team)
+  - [Goals](people-ops/index.md#goals)
 
 ### [Product](product/index.md)
 
@@ -48,16 +50,25 @@ The handbook is a living document and we expect every teammate to propose improv
   - [Search](engineering/search/index.md)
   - [Security](engineering/security/index.md)
   - [Developer Insights](engineering/developer-insights/index.md)
-     - [Code insights](engineering/developer-insights/code-insights/index.md)
-     - [Extensibility](engineering/developer-insights/extensibility/index.md)
-     - [Frontend platform](engineering/developer-insights/frontend-platform/index.md)
-     - [API docs](engineering/developer-insights/api-docs/index.md)
+    - [Code insights](engineering/developer-insights/code-insights/index.md)
+    - [Extensibility](engineering/developer-insights/extensibility/index.md)
+    - [Frontend platform](engineering/developer-insights/frontend-platform/index.md)
+    - [API docs](engineering/developer-insights/api-docs/index.md)
 
 ### [Customer Support](support/index.md)
 
 ### [Customer Engineering](ce/index.md)
 
 ### [Marketing](marketing/index.md)
+
+- [Product Marketing](marketing/product_marketing.md)
+- [Content Marketing](marketing/content/index.md)
+  - [Editorial](marketing/content/editorial.md)
+  - [Creating and editing blog posts](marketing/content/creating_blog_posts.md)
+  - [Blog Hackathon](marketing/content/blog_hackathon.md)
+- [Demand Gen](marketing/demandgen.md)
+- [Developer Education](marketing/education.md)
+- [Brand](marketing/brand/index.md)
 
 ### [Sales](sales/index.md)
 
@@ -66,10 +77,10 @@ The handbook is a living document and we expect every teammate to propose improv
 ### [Talent](talent/index.md)
 
 - [Our open positions](careers.md)
-- [Resources for candidates](https://about.sourcegraph.com/handbook/talent)
-- [Resources for hiring managers](https://about.sourcegraph.com/handbook/talent)
-- [Resources for teammates](https://about.sourcegraph.com/handbook/talent)
-- [Resources for recruiters](https://about.sourcegraph.com/handbook/talent)
+- [Resources for candidates](https://about.sourcegraph.com/handbook/talent#resources-for-candidates)
+- [Resources for hiring managers](https://about.sourcegraph.com/handbook/talent#resources-for-hiring-managers)
+- [Resources for teammates](https://about.sourcegraph.com/handbook/talent#resources-for-teammates)
+- [Resources for recruiters](https://about.sourcegraph.com/handbook/talent#resources-for-recruiters)
 
 ### [Operations](ops/index.md)
 

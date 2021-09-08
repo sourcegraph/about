@@ -113,4 +113,4 @@ This is incredibly valuable to reveal why a test might have failed - for example
 
 So far, this new system works well for us - confidence in tests has increased, and engineers feel more responsible to fix failures quickly.
 
-Do you have interesting end-to-end testing stories? Tweet us [@srcgraph](https://twitter.com/srcgraph)!
+Do you have interesting end-to-end testing stories? Tweet us [@sourcegraph](https://twitter.com/sourcegraph)!

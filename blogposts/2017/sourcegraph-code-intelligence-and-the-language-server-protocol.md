@@ -81,4 +81,4 @@ I’d love to live in a world where it’s as easy to use the Eclipse IDE to wri
 
 We think the Language Server Protocol will enable both these dreams to become reality. Code intelligence is what makes the experience of using your IDE magical, and LSP makes that magic far more tractable to implement. We’ve used it to great success so far at [Sourcegraph](https://sourcegraph.com/) and we’d highly encourage you to check it out for your IDE and editor plugins.
 
-Questions, comments, or feedback about Sourcegraph or LSP? [Let us know](https://twitter.com/srcgraph)!
+Questions, comments, or feedback about Sourcegraph or LSP? [Let us know](https://twitter.com/sourcegraph)!

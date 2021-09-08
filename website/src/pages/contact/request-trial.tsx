@@ -31,7 +31,7 @@ export default class TrialPage extends React.Component<any, any> {
                     <title>Sourcegraph - Sign up for a free trial</title>
                     <meta name="twitter:title" content="Sign up for a free trial of Sourcegraph" />
                     <meta property="og:title" content="Sign up for a free trial of Sourcegraph" />
-                    <meta name="twitter:site" content="@srcgraph" />
+                    <meta name="twitter:site" content="@sourcegraph" />
                     <meta name="twitter:image" content="https://about.sourcegraph.com/favicon.png" />
                     <meta name="twitter:card" content="summary" />
                     <meta name="twitter:description" content={desc} />

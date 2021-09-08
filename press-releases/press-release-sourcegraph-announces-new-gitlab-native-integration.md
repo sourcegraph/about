@@ -9,7 +9,8 @@ description: 'GitLab collaboration emphasizes importance of code vavigation and 
 published: true
 ---
 
-**GitLab Collaboration Emphasizes Importance of Code Navigation and Intelligence in the Developer Workflow; Universal Code Search Solution Makes Elite Development Accessible for All; Company Momentum Fueled by Increasing Demand for Universal Developer Tools** 
+**GitLab Collaboration Emphasizes Importance of Code Navigation and Intelligence in the Developer Workflow; Universal Code Search Solution Makes Elite Development Accessible for All; Company Momentum Fueled by Increasing Demand for Universal Developer Tools**
+
 <p style="text-align: center">
   <img src="https://about.sourcegraph.com/blog/gitlab-integration-banner-dark.png" alt="GitLab plus Sourcegraph logo" />
 </p>
@@ -37,6 +38,7 @@ Sourcegraph’s universal source code search engine enables developers to search
 More information on Sourcegraph’s universal source code search is available [here](https://about.sourcegraph.com/product/code-search-navigation/#customers).
 
 ## Code Change Management Solution on the Horizon
+
 Code change management gives developers the power to perform large-scale code changes across their entire organization. Teams can remove deprecated code and legacy systems, triage and follow-through on critical security issues, and keep library dependencies up-to-date and consistent across all of an organization's code. Additional functionalities of Sourcegraph’s code change management solution will be made available in early 2020.
 
 ## Company Momentum Charges Ahead
@@ -60,14 +62,16 @@ Over 10,000 developers rely on the Sourcegraph platform to ship high-quality sof
 - [Sourcegraph Website](https://about.sourcegraph.com/)
 - [Sourcegraph Documentation](https://docs.sourcegraph.com/)
 - [Sourcegraph Blog](https://about.sourcegraph.com/blog/)
-- [Sourcegraph on Twitter](https://twitter.com/srcgraph)
+- [Sourcegraph on Twitter](https://twitter.com/sourcegraph)
 - [Sourcegraph on LinkedIn](https://www.linkedin.com/company/sourcegraph/)
 - [Sourcegraph on GitHub](https://github.com/sourcegraph)
 
 ## About Sourcegraph
-Sourcegraph empowers all developers with universal code search. Sourcegraph’s mission is to provide tools that let developers from any organization create quality products by leveraging the best technology available. Sourcegraph is built for companies of all sizes, from startups that need a solid foundation for growth, to the world’s largest enterprises with complex security, scaling, and deployment needs. The company is headquartered in San Francisco, CA, and is backed by Redpoint Ventures and Goldcrest Capital. Follow Sourcegraph on Twitter at [@srcgraph](https://twitter.com/srcgraph) or visit [www.sourcegraph.com](https://sourcegraph.com/).
+
+Sourcegraph empowers all developers with universal code search. Sourcegraph’s mission is to provide tools that let developers from any organization create quality products by leveraging the best technology available. Sourcegraph is built for companies of all sizes, from startups that need a solid foundation for growth, to the world’s largest enterprises with complex security, scaling, and deployment needs. The company is headquartered in San Francisco, CA, and is backed by Redpoint Ventures and Goldcrest Capital. Follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph) or visit [www.sourcegraph.com](https://sourcegraph.com/).
 
 ## Media Contact
+
 Tanya Carlsson<br>
 Offleash PR for Sourcegraph<br>
 [tanya@offleashpr.com](mailto:tanya@offleashpr.com) <br>

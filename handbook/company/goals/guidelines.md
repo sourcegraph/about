@@ -19,7 +19,7 @@ We believe:
 - Discarding a goal that turns out to be wrong is better than following through on the wrong goal. People know this intellectually but disregard it in practice.
 - Each problem we're solving has a different (and often unknown/unknowable) timeline and rate of progress.
 - Only people with skin in the game can set useful goals.
-- A goal is good if people think about it regularly and it helps them make decisions.
+- A goal is good if people think about it regularly and it helps them make [decisions](../../communication/decisions.md).
 - Goals are communication tools. A goal that people don't understand is a bad goal.
 
 ## How we set goals
@@ -79,4 +79,4 @@ Why are we using "OKRs" again, when we previously said OKRs were jargon? Because
 
 > This does not yet apply because our most recent OKRs are not yet public.
 
-Do not include any specific financial numbers, customer names, or any other sensitive information in the public goals. Instead, use placeholders (such as *N<sub>0</sub>*, *N<sub>1</sub>*, and so on) and link to the definitions in a Google Doc that is only visible to Sourcegraph team members.
+Do not include any specific financial numbers, customer names, or any other sensitive information in the public goals. Instead, use placeholders (such as _N<sub>0</sub>_, _N<sub>1</sub>_, and so on) and link to the definitions in a Google Doc that is only visible to Sourcegraph team members.

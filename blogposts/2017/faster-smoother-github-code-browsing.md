@@ -47,6 +47,6 @@ By clicking the "Sourcegraph" button on a repository homepage or while viewing a
 
 [Install the Sourcegraph browser extension for Chrome or Firefox](https://docs.sourcegraph.com/integration/browser_extension). If you've already installed it, your browser will automatically update the extension, so you’ll already have these new features.
 
-Feedback or questions? Tweet us [@srcgraph](https://twitter.com/srcgraph).
+Feedback or questions? Tweet us [@sourcegraph](https://twitter.com/sourcegraph).
 
 (If your company’s code is on GitHub Enterprise or some other code host, connect the browser extension to a [self-hosted Sourcegraph instance](https://docs.sourcegraph.com). The browser extension is also available for Firefox.)

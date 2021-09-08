@@ -85,7 +85,7 @@ To take advantage of of this feature, add a `versionContexts` block to the exper
 ]
 ```
 
-We are excited to hear your feedback as we continue to work on this feature! Get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
+We are excited to hear your feedback as we continue to work on this feature! Get in touch on Twitter [@sourcegraph](https://twitter.com/sourcegraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com).
 
 ## Smoother getting started experience for campaigns
 
@@ -217,8 +217,8 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 ## Share your feedback
 
-We want to hear what you think about Sourcegraph and the new updates in 3.16. Post on Twitter (remember to include ([@srcgraph](https://twitter.com/srcgraph)) and we'll send you Sourcegraph swag!
+We want to hear what you think about Sourcegraph and the new updates in 3.16. Post on Twitter (remember to include ([@sourcegraph](https://twitter.com/sourcegraph)) and we'll send you Sourcegraph swag!
 
-Any questions about Sourcegraph? Get in touch on Twitter [@srcgraph](https://twitter.com/srcgraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com). We look forward to hearing from you!
+Any questions about Sourcegraph? Get in touch on Twitter [@sourcegraph](https://twitter.com/sourcegraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com). We look forward to hearing from you!
 
 From the [entire Sourcegraph team](https://about.sourcegraph.com/handbook/company/team), happy coding!

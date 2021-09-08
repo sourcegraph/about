@@ -1,13 +1,13 @@
 ---
-title: "Optimizing a code intelligence commit graph (Part 1)"
+title: 'Optimizing a code intelligence commit graph (Part 1)'
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
-description: "We enabled Sourcegraph to respond to requests for commits missing a code intelligence index quickly and with precise results. Read about our journey."
+description: 'We enabled Sourcegraph to respond to requests for commits missing a code intelligence index quickly and with precise results. Read about our journey.'
 publishDate: 2021-05-26T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph
 heroImage: /blog/optimizing-code-intelligence-commit-graph.png
-socialImage: /blog/optimizing-code-intelligence-commit-graph.png
+socialImage: https://about.sourcegraph.com/blog/optimizing-code-intelligence-commit-graph.png
 published: true
 ---
 
@@ -124,7 +124,7 @@ The values of the tables above represent the following hypothetical commit graph
 Running the query above from the commit `313082` produces the following CTE results over 3 iterations before halting, and ultimately returns `d67b8d` as the nearest commit visible to the target query.
 
 | iteration | commit              | parent_commit       | distance | direction |
-| --------- |-------------------- | ------------------- | -------- | --------- |
+| --------- | ------------------- | ------------------- | -------- | --------- |
 | 1         | <code>313082</code> | <code>4c8d9d</code> | 0        | A         |
 | 1         | <code>313082</code> | <code>4c8d9d</code> | 0        | D         |
 | 2         | <code>4c8d9d</code> | <code>d67b8d</code> | 1        | A         |
@@ -160,9 +160,9 @@ The following query plan shows an execution trace that visited around 100 commit
 1. Evaluate the non-recursive term and **discard duplicate rows**
 1. Insert rows into result set as well as a temporary working table
 1. While the working table is not empty:
-    1. Evaluate the recursive term by substituting the recursive self-reference with the working table and **discard duplicate rows**
-    1. Insert rows into result set as well as a new temporary intermediate table
-    1. Replace the working table with the intermediate table and empty the intermediate table
+   1. Evaluate the recursive term by substituting the recursive self-reference with the working table and **discard duplicate rows**
+   1. Insert rows into result set as well as a new temporary intermediate table
+   1. Replace the working table with the intermediate table and empty the intermediate table
 
 A row is a duplicate of another row (from PostgreSQL's point of view) if they both contain the same set of values. However, from our point of view, a row is a duplicate of another row if only their commit values match. After all, we're running a breadth-first search over a graph and by the time we've seen a commit for the second time, we've already seen it via the shortest path. This mismatch in expectations don't cost us correctness, but it does cause performance problems and the pain that comes with it.
 
@@ -202,7 +202,7 @@ What we _wanted_ to happen was for the "duplicate rows" not to be inserted into 
 
 Our [first attempt to optimize this query](https://github.com/sourcegraph/sourcegraph/pull/5980) directly tackled the problem of duplicate rows in the worktable, as shown in the above example. This change simply removes the `distance` column from the lineage table expression. The "duplicates" that we now throw out are records for commits that have already been seen via a shorter path. This required that we move the limiting condition from table expression into the select, which changes the behavior very slightly (it now limits by working set size, not by distance, which was an acceptable trade-off for the performance increase).
 
-[Additional efforts to optimize this query](https://github.com/sourcegraph/sourcegraph/pull/5984) were highly successful. The following chart compares the query latency of the original query (_quadratic_, blue) and the optimized query (_fast linear_, green), and we've *very clearly* removed the term that was creating the quadratic behavior.
+[Additional efforts to optimize this query](https://github.com/sourcegraph/sourcegraph/pull/5984) were highly successful. The following chart compares the query latency of the original query (_quadratic_, blue) and the optimized query (_fast linear_, green), and we've _very clearly_ removed the term that was creating the quadratic behavior.
 
 <figure>
   <img src="https://user-images.githubusercontent.com/1387653/66709486-a9813900-ed22-11e9-9519-d9a9c098b37d.png" alt="Query latency comparison" class="no-shadow">
@@ -253,6 +253,12 @@ One major take away for us was the concrete reinforcement that databases are a h
 Another major takeaway is that the cliché holds: computers do what you tell them to and nothing more. When debugging correctness and performance issues, it's good to _shed_ your previous mental model and re-assess its correctness as you dive deeper into your stack.
 
 Check out [Part 2](/blog/optimizing-a-code-intel-commit-graph-part-2/), in which we tackle additional scalability challenges.
+
+### More posts like this
+
+- [A 5x reduction in RAM usage with Zoekt memory optimizations](/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
+- [How not to break a search engine or: What I learned about unglamorous engineering](/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](/blog/avoiding-the-pitfalls-of-iteration-based-development/)
 
 <style>
   figure .no-shadow { box-shadow: none; }

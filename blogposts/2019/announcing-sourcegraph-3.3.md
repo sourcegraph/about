@@ -155,7 +155,7 @@ The 3.2 release brought with it two new ways of deploying Sourcegraph to the clo
 
 They have been updated for 3.3 and now come pre-configured to use TLS with a self-signed certificate. Additional documentation now exists for getting the [self-signed certificate trusted by your browser](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx#5-getting-the-self-signed-certificate-to-be-trusted-valid-on-external-instances).
 
-Terraform plans for Google Cloud and Azure are being scheduled for upcoming releases. Let us know via [tweet](https://twittercom/srcgraph) or [GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=) which cloud provider you want support for next, along with any special instructions for that provider.
+Terraform plans for Google Cloud and Azure are being scheduled for upcoming releases. Let us know via [tweet](https://twitter.com/sourcegraph) or [GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=) which cloud provider you want support for next, along with any special instructions for that provider.
 -->
 
 ## Handle common search queries containing (unintended) invalid regexp
@@ -301,4 +301,4 @@ Upgrading from 2.x or 3.0? [See the migration guide](https://docs.sourcegraph.co
 
 ---
 
-From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!
+From the entire Sourcegraph team ([@sourcegraph](https://twitter.com/sourcegraph)), happy coding!

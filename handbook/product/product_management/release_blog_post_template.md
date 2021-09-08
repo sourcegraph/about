@@ -1,10 +1,8 @@
 ---
-title: "Sourcegraph {VERSION}: {TITLE}"
-author: {AUTHOR}
+title: 'Sourcegraph {VERSION}: {TITLE}'
+author: { AUTHOR }
 publishDate: 2020-MM-20T10:00-07:00
-tags: [
-  blog
-]
+tags: [blog]
 slug: sourcegraph-{VERSION}
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: false
@@ -71,4 +69,4 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 **Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
-From the entire Sourcegraph team ([@srcgraph](https://twitter.com/srcgraph)), happy coding!
+From the entire Sourcegraph team ([@sourcegraph](https://twitter.com/sourcegraph)), happy coding!

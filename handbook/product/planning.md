@@ -7,42 +7,43 @@ Planning is a continuous process of negotiation between product and engineering.
 Teams track the work they are doing in [GitHub Projects](https://github.com/orgs/sourcegraph/projects). Here are the direct links for each team:
 
 - Global code graph
-   - Code intelligence
-   - [Batch changes](https://github.com/orgs/sourcegraph/projects/119): If you would like a team to prioritize an issue, please add it to the "Needs prioritization" column in this board.
-   - Search core backend
-      - [Backlog](https://github.com/orgs/sourcegraph/projects/168)
-      - [Support](https://github.com/orgs/sourcegraph/projects/166)
-   - Search product
-      - The Search team creates a new project board for each iteration. It is named like: "Search product :: \<date> iteration"
-      - [Support](https://github.com/orgs/sourcegraph/projects/165)
-      - [Design refresh](https://github.com/orgs/sourcegraph/projects/159)
-      - [Search contexts](https://github.com/orgs/sourcegraph/projects/113)
-      - [Standalone issues backlog](https://github.com/orgs/sourcegraph/projects/99)
-      - [Streaming search](https://github.com/orgs/sourcegraph/projects/120)
-      - [Graphqlbackeng refactor](https://github.com/orgs/sourcegraph/projects/172)
-      - [Exhaustive](https://github.com/orgs/sourcegraph/projects/172)
-      - [Playground](https://github.com/orgs/sourcegraph/projects/173)
-      - [Code monitoring](https://github.com/orgs/sourcegraph/projects/121)
+  - Code intelligence
+  - [Batch changes](https://github.com/orgs/sourcegraph/projects/119): If you would like a team to prioritize an issue, please add it to the "Needs prioritization" column in this board.
+  - Search core backend
+    - [Backlog](https://github.com/orgs/sourcegraph/projects/168)
+    - [Support](https://github.com/orgs/sourcegraph/projects/166)
+  - Search product
+    - The Search team creates a new project board for each iteration. It is named like: "Search product :: \<date> iteration"
+    - [Support](https://github.com/orgs/sourcegraph/projects/165)
+    - [Design refresh](https://github.com/orgs/sourcegraph/projects/159)
+    - [Search contexts](https://github.com/orgs/sourcegraph/projects/113)
+    - [Standalone issues backlog](https://github.com/orgs/sourcegraph/projects/99)
+    - [Streaming search](https://github.com/orgs/sourcegraph/projects/120)
+    - [Graphqlbackeng refactor](https://github.com/orgs/sourcegraph/projects/172)
+    - [Exhaustive](https://github.com/orgs/sourcegraph/projects/172)
+    - [Playground](https://github.com/orgs/sourcegraph/projects/173)
+    - [Code monitoring](https://github.com/orgs/sourcegraph/projects/121)
 - Developer insights
-   - Code insights
-      - [Backend](https://github.com/orgs/sourcegraph/projects/122)
-      - [Current work](https://github.com/orgs/sourcegraph/projects/118)
-   - Front end platform
-   - Extensibility
-      - [Standalone issues backlog](https://github.com/orgs/sourcegraph/projects/116)
-      - [Current iteration](https://github.com/orgs/sourcegraph/projects/118)
+  - Code insights
+    - [Backend](https://github.com/orgs/sourcegraph/projects/122)
+    - [Current work](https://github.com/orgs/sourcegraph/projects/118)
+  - Front end platform
+  - Extensibility
+    - [Standalone issues backlog](https://github.com/orgs/sourcegraph/projects/116)
+    - [Current iteration](https://github.com/orgs/sourcegraph/projects/118)
 - Platform and infrastructure
-   - Security
-      - [Iterations](https://github.com/orgs/sourcegraph/projects/130)
-      - [Transparently and openly communicate a security positive stance and approach](https://github.com/orgs/sourcegraph/projects/89)
-      - [Secure Cloud resources](https://github.com/orgs/sourcegraph/projects/88)
-      - [Visibility into our exposures](https://github.com/orgs/sourcegraph/projects/88)
-   - Core application
-      - [Production testing of all authorization models](https://github.com/orgs/sourcegraph/projects/164)
-      - [Retro actions](https://github.com/orgs/sourcegraph/projects/162)
-      - [Support](https://github.com/orgs/sourcegraph/projects/153)
-      - [Planning board](https://github.com/orgs/sourcegraph/projects/148)
-   - Distribution
+  - Security
+    - Security aren't using boards for active work management - [instead we're using Jira](https://sourcegraph.atlassian.net/secure/RapidBoard.jspa?rapidView=4&projectKey=SECURITY&view=planning&selectedIssue=SECURITY-27&epics=visible&issueLimit=100)
+      - Note that other teams are not currently expected to have access to this, but future use of it or other tools is in discussion.
+    - [Security Support Board](https://github.com/orgs/sourcegraph/projects/178)
+  - Core application
+    - [Production testing of all authorization models](https://github.com/orgs/sourcegraph/projects/164)
+    - [Retro actions](https://github.com/orgs/sourcegraph/projects/162)
+    - [Support](https://github.com/orgs/sourcegraph/projects/153)
+    - [Planning board](https://github.com/orgs/sourcegraph/projects/148)
+  - Distribution
+    - [Distribution backlog board](https://github.com/orgs/sourcegraph/projects/68)
+    - [Find the latest Distribution sprint board](https://github.com/orgs/sourcegraph/projects?query=is%3Aopen+dist)
 
 ## Planning artifacts
 
@@ -50,13 +51,13 @@ Planning requires several artifacts for communicating. This section clarifies ho
 
 ### Goals
 
-[Goals](../company/goals/index.md) align teams with the company's goals. They should be used to make prioritization decisions and help to maintain team direction and focus.
+[Goals](../company/goals/index.md) align teams with the company's goals. They should be used to make prioritization [decisions](../communication/decisions.md) and help to maintain team direction and focus.
 
 ### Roadmap
 
 [The roadmap](roadmap.md) is where we track and prioritize larger projects that we intend to finish in the next 3-6 months.
 
-Engineering should feel empowered to add items to the roadmap that they feel strongly about, which will start conversations with product. We want to push decisions down to people closest to those problems. It is product's responsibility to help give insight into customer pains and feedback, strategic priorities, and to ensure consistency across the product.
+Engineering should feel empowered to add items to the roadmap that they feel strongly about, which will start conversations with product. [We want to push decisions down to people closest to those problems](../communication/decisions.md#what-makes-an-effective-decision). It is product's responsibility to help give insight into customer pains and feedback, strategic priorities, and to ensure consistency across the product.
 
 The project roadmap is NOT:
 

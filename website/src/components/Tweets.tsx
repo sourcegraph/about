@@ -5,8 +5,8 @@ export const Tweets: React.FunctionComponent<any> = props => (
         <div className="col-md-4">
             <blockquote className="twitter-tweet" data-lang="en">
                 <p lang="en" dir="ltr">
-                    Our engineers loved <a href="https://twitter.com/srcgraph?ref_src=twsrc%5Etfw">@srcgraph</a> so much
-                    that we decided to make it the singular supported tool at Yelp for{' '}
+                    Our engineers loved <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a>{' '}
+                    so much that we decided to make it the singular supported tool at Yelp for{' '}
                     <a href="https://twitter.com/hashtag/codesearch?src=hash&amp;ref_src=twsrc%5Etfw">#codesearch</a>{' '}
                     and viewing 🤩: <a href="https://bit.ly/2pEko0o">https://bit.ly/2pEko0o</a>
                 </p>
@@ -19,8 +19,9 @@ export const Tweets: React.FunctionComponent<any> = props => (
         <div className="col-md-4">
             <blockquote className="twitter-tweet" data-lang="en" data-cards="hidden">
                 <p lang="en" dir="ltr">
-                    Learning a new code base using @srcgraph <a href="https://twitter.com/srcgraph">@srcgraph</a> is
-                    extra dope! <a href="https://sourcegraph.com">{'https://sourcegraph.com'}</a>
+                    Learning a new code base using @sourcegraph{' '}
+                    <a href="https://twitter.com/sourcegraph">@sourcegraph</a> is extra dope!{' '}
+                    <a href="https://sourcegraph.com">{'https://sourcegraph.com'}</a>
                 </p>
                 &mdash; Kelsey Hightower (@kelseyhightower){' '}
                 <a href="https://twitter.com/kelseyhightower/status/791084672797122561/">October 25, 2016</a>
@@ -30,8 +31,8 @@ export const Tweets: React.FunctionComponent<any> = props => (
             <blockquote className="twitter-tweet">
                 <p lang="en" dir="ltr">
                     No code search tool I&#39;ve used can hold a candle to{' '}
-                    <a href="https://twitter.com/srcgraph?ref_src=twsrc%5Etfw">@srcgraph</a>. Makes jumping around code
-                    and sharing code references so easy. Blazing fast, even for{' '}
+                    <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a>. Makes jumping around
+                    code and sharing code references so easy. Blazing fast, even for{' '}
                     <a href="https://twitter.com/hashtag/Kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#Kubernetes</a>.
                 </p>
                 &mdash; Matt Kelly (@mattkellyeng){' '}

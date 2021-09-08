@@ -104,3 +104,9 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   to = "https://about-docsite.sourcegraph.com/handbook/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/terms-private"
+  to = "/terms-self-hosted"
+  status = 200
+  force = true

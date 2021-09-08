@@ -1,8 +1,8 @@
 # How we use Salesforce
 
-This document describes how the sales team is using Salesforce. 
+This document describes how the sales team is using Salesforce.
 
-Note: Please refer to it as Salesforce (instead of SF or SFDC) in accordance with our [content guidelines](../communication/content_guidelines/style_and_mechanics.md#abbreviations-acronyms-latinisms-jargon). 
+Note: Please refer to it as Salesforce (instead of SF or SFDC) in accordance with our [content guidelines](../communication/content_guidelines/style_and_mechanics.md#abbreviations-acronyms-latinisms-jargon).
 
 Jump to:
 
@@ -18,7 +18,7 @@ Jump to:
 
 ## Salesforce access
 
-Sales, marketing and finance teams have access to Salesforce. Access for those on other teams can be reviewed on a case-by-case basis, usually dependent on how frequently one needs to view customer communcation. To request access, tag @business-team in #sales. 
+Sales, marketing and finance teams have access to Salesforce. Access for those on other teams can be reviewed on a case-by-case basis, usually dependent on how frequently one needs to view customer communcation. To request access, tag @business-team in #sales.
 
 ## About Salesforce objects
 
@@ -55,7 +55,7 @@ First Touchpoint is a slightly more granular version of Lead Source and is set a
 
 First Touchpoint values include:
 
-- Private Instance/Install (leads will go into "PP-Private Instance Markie" sequence) 
+- Private Instance/Install (leads will go into "PP-Private Instance Markie" sequence)
 - Sourcegraph.com Account/Cloud Sign-ups (leads will go into "CC-Cloud Signup Markie" sequence)
 - Contact/Demo Form
 - Inbound Email (support, contact)
@@ -106,7 +106,7 @@ If an Outbound Lead meets the “Target Opportunity Profile” criteria, we use 
 - At this point, the Opportunity will be in Stage 1 - Interest
 - SDR schedules meeting with the Contact and the receiving AE.
 - SDR logs all pertinent information - call/email notes, research on contact/company, and any additional context that is helpful for the AE to be prepared for the initial call / understand the justification for creating an Opportunity
-SDR joins this initial call to make the AE intro and listen to the call for feedback
+  SDR joins this initial call to make the AE intro and listen to the call for feedback
 
 ### Inbound Lead-to-Opportunity Conversion Workflow
 
@@ -118,7 +118,7 @@ If a Lead meets the “Target Opportunity Profile” criteria, we use the follow
 - SDR creates the Opportunity in Salesforce by converting the lead to an Account/Contact/Opportunity (Note: be sure to convert into existing Account if one exists vs. creating a new)
 - At this point, the Opportunity will be in Stage 1 - Interest
 - SDR logs all pertinent information - call/email notes, research on contact/company, and any additional context that is helpful for the AE to be prepared for the initial call / understand the justification for creating an Opportunity
-SDR joins this initial call to make the AE intro and listen to the call for feedback
+  SDR joins this initial call to make the AE intro and listen to the call for feedback
 
 ### Rules of Engagement (ROE)
 
@@ -145,7 +145,7 @@ SDR joins this initial call to make the AE intro and listen to the call for feed
 5. The request has been submitted to your manager for approval. Click Finish.
 6. Once your manager approves the change, the Account will be added to your name and marked as a Target Account.
 
-- Add Account Video Example: https://screenrec.com/share/4NxOzujFbT
+- [Add Account Video Example](https://screenrec.com/share/4NxOzujFbT)
 
 ##### To remove an account to your Target Accounts:
 
@@ -156,7 +156,7 @@ SDR joins this initial call to make the AE intro and listen to the call for feed
 5. The request has been submitted to your manager for approval. Click Finish.
 6. Once your manager approves the change, the Account will be removed from your name and unmarked as a Target Account.
 
-- Remove Account  Video Example: https://screenrec.com/share/IMZG1ntb85
+- [Remove Account Video Example](https://screenrec.com/share/IMZG1ntb85)
 
 ##### To exchange an account from your Target Accounts (exchanging is only necessary if you are at your max of 25 accounts):
 
@@ -167,7 +167,7 @@ SDR joins this initial call to make the AE intro and listen to the call for feed
 5. The request has been submitted to your manager for approval. Click Finish.
 6. Once your manager approves the change, the surrendered Account will be removed from your name and unmarked as a Target Account while the new Account will be added to your name and marked as a Target Account.
 
-- Exchange Account Video Example: https://screenrec.com/share/dxoK5HG1iR
+- [Exchange Account Video Example](https://screenrec.com/share/dxoK5HG1iR)
 
 ## Opportunity Object
 
@@ -180,12 +180,15 @@ This ensures that all deal-related communication is visible within the deal time
 If a deal comes through a referral or introduction, tell [BizOps](../ops/bizops/index.md) so an adjustment can be made in the database to reflect this.
 
 ### When a deal is won
-1. Move the deal to ‘Closed Won’. 
-1. Mark the column ‘End of contract’ with the last day of the contract. Salesforce will [automatically create a renewal deal](#renewal-deals) based on this date. 
-1. Ensure the appropriate 'deal won reason' fields reflect the main factors that contributed to the opportunity being won. 
+
+1. On 'New Business', make sure you have added products to the Opportunity following the linked demo: [Add Products Demo](https://screenrec.com/share/5EQcvILwON)
+2. Move the deal to ‘Closed Won’.
+3. If you have added Products using Step 1, the Contract End Date will be set for you. If not, mark the ‘End of contract’ field with the last day of the contract. Salesforce will [automatically create a renewal deal](#renewal-deals) based on this date.
+4. Ensure the appropriate 'deal won reason' fields reflect the main factors that contributed to the opportunity being won.
 
 ### When a deal is lost
-1. Update the ‘Closed Lost Dropdown’ property to reflect the reason. If the reason doesn’t exist in the dropdown, you can talk to [BizOps](../ops/bizops/index.md) about adding one. 
+
+1. Update the ‘Closed Lost Dropdown’ property to reflect the reason. If the reason doesn’t exist in the dropdown, you can talk to [BizOps](../ops/bizops/index.md) about adding one.
 1. Expand upon the reason in the longform ‘Closed Lost Reason’ field.
 
 ### Recording outbound activity
@@ -208,19 +211,28 @@ Contacts are synced as Leads in Salesforce, and become Opportunity/Account/Conta
 
 ### Salesforce to HubSpot sync
 
-Any update on the lead/contact in Salesforce will sync back to HubSpot (name, email, MQL checkbox, etc...). Companies and opportunities will not be synced back; Salesforce is the source of truth for these objects. 
+Any update on the lead/contact in Salesforce will sync back to HubSpot (name, email, MQL checkbox, etc...). Companies and opportunities will not be synced back; Salesforce is the source of truth for these objects.
 
 ### What HubSpot still does
 
-- Everything marketing (email campaigns, workflows, lead capture/forms, including NPS scores)
+- Everything marketing (email campaigns, workflows, lead capture/forms, including NPS, MQL, and PQL scores)
 - Links to customers from RFCs, GitHub issues, etc. are still accessible. This will eventually be deprecated
 
-## Salesforce automation
+## Salesforce Automation
 
-### Leads to Opportunities
+### Leads to Accounts/Contacts/Opportunities
 
-Leads are put into a round robin process when either the MQL, SDR or Referral checkbox is checked. 
+- Leads created by Outbound efforts (not allocated to target Accounts) are put into an automated round robin process when they are cconverted.
+- Leads handled through our inbound queue (not allocated to target Accounts) are currently run through a manual round robin process prior to conversion.
 
 ## Renewal deals
 
-6 month before the end of a contract, a renewal deal with the Customer Engineer as owner is created in the Renewals pipeline.
+Upon "Close" of a new deal, a renewal Opportunity is created in the Renewals pipeline.
+
+### Forecast Generation
+
+Company Forecast and related records are generated automatically at 6pm Pacific every week.
+
+### AE/SDR Teams
+
+When the SDR field on the User is updated to a new SDR (or from blank), all Accounts owned by the User will have that SDR added to them.
