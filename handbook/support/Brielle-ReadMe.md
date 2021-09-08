@@ -8,18 +8,17 @@
 
 -I prefer to learn as I go (hands-on) with written docs to refer back to.
 
-
 ### Communication style
 
 -Direct- I prefer a quick slack.
 
 ### Collaboration style
 
-I am pretty flexible and am open to doing what is best for the larger group. 
+I am pretty flexible and am open to doing what is best for the larger group.
 
 ### Approach to problems
 
--I am analytical and a thinker so I tend to approach problems cautiously and with emotional intelligence. 
+-I am analytical and a thinker so I tend to approach problems cautiously and with emotional intelligence.
 
 ### Preferred way to be recognized
 
@@ -27,39 +26,35 @@ I am pretty flexible and am open to doing what is best for the larger group.
 
 ### What I enjoy at work
 
--CULTURE, I love networking and meeting new people. It is super cool because at Sourcegraph there are several regions where the team is located. 
+-CULTURE, I love networking and meeting new people. It is super cool because at Sourcegraph there are several regions where the team is located.
 
 ### Thoughts on asking for help
 
--I prefer to make sure I have done all that is within my personal realm of knowledge and power and then reach out to a colleague. 
+-I prefer to make sure I have done all that is within my personal realm of knowledge and power and then reach out to a colleague.
 
 ### Preferred time to work
 
--I find that I perform well and my brain is ready for meetings in the morning. 
+-I find that I perform well and my brain is ready for meetings in the morning.
 
 ### Feelings to receiving messages outside work hours
 
--I do not mind receiving messages outside of my working hours. If it is an emergency I would rather be notified on my personal phone. 
-
+-I do not mind receiving messages outside of my working hours. If it is an emergency I would rather be notified on my personal phone.
 
 ### How to show up when I'm feeling off
 
--I am a huge communicator and some would find me to be quite vulnerable, so a quick check-in would be awesome. 
+-I am a huge communicator and some would find me to be quite vulnerable, so a quick check-in would be awesome.
 
 ### Things that make me anxious
 
--Working really hard on a project and not receiving any feedback or recognition, not knowing if the project executed properly. 
-
+-Working really hard on a project and not receiving any feedback or recognition, not knowing if the project executed properly.
 
 ### Technical areas of knowledge
 
--Mostly all things Support related as far as platforms. 
+-Mostly all things Support related as far as platforms.
 
 ### Technical interests to learn
 
 - basic coding
-
-
 
 ### Current personal project
 
@@ -75,8 +70,8 @@ Mice
 
 ### How I eat fries
 
-I love crispy but soft fries, Ketchup on the side 
+I love crispy but soft fries, Ketchup on the side
 
 ### Sun, moon and rising signs
 
-Leo Sun ☀️, Cancer 🌙 , Pisces Rising ✨ 
+Leo Sun ☀️, Cancer 🌙 , Pisces Rising ✨
