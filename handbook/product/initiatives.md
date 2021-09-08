@@ -19,7 +19,7 @@ Our current [product goals pages](goals.md) are not always up to date so can't b
 
 There are a few other initiatives we will be tracking here soon:
 
-* Public facing roadmap
-* CE / Product communication and prioritization improvements on feedback
-* Consolidation and simplification of tooling
-* Experimentation and improvements to planning
+- Public facing roadmap
+- CE / Product communication and prioritization improvements on feedback
+- Consolidation and simplification of tooling
+- Experimentation and improvements to planning
