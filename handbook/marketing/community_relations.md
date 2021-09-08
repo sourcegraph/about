@@ -26,7 +26,8 @@ Playing an active role in broadening our reach in the community, building authen
 ## Contact
 
 **Chat with us** in the [#community-relations](https://sourcegraph.slack.com/archives/C023BV511TR) Slack channel, or by tagging @community.
-**Email us** at [community@sourcegraph.com](mailto:community@sourcegraph.com)
+
+**Email us** at [community@sourcegraph.com](mailto:community@sourcegraph.com).
 
 ## Code of Conduct
 
