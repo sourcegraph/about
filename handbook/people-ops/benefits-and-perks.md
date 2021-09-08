@@ -42,7 +42,7 @@ We want to ensure all teammates have a workspace that will make them comfortable
 
 ### 🏢 Co-working/office space 
 
-We understand that a designated work space can aid with productivity. We offer a $300-500 [monthly budget](https://about.sourcegraph.com/handbook/people-ops/spending-company-money#recurring-expenses) for renting a co-working space, including parking.
+We understand that some teammates cannot work from their homes productively, and we therefore offer a $300-500 [monthly budget](https://about.sourcegraph.com/handbook/people-ops/spending-company-money#recurring-expenses) to join a coworking space. With the wide variety of coworking spaces and options available throughout the world, we ask that teammates stick to options within this budget, including all amenities and parking. Should teammates wish to spend more for more expensive options, locations or amenities, the additional cost will be for their own accounts. 
 
 ### 🚚 Moving help
 
