@@ -47,7 +47,7 @@ This code of conduct applies to all spaces managed by Sourcegraph. This includes
 ### Protect your Personal Information
 
 - Protect your personal information and sensitive information. Keep in mind that your information is viewed by every member of the community.
-- Moderators try to keep the forum a safe environment to post, and may remove any posts that reveal sensitive information such as addresses, passwords, or other private information. 
+- Moderators try to keep the forum a safe environment to post, and may remove any posts that reveal sensitive information such as addresses, passwords, or other private information.
 
 For any other issues not covered here we encourage our community members to provide us with direct feedback by directly raising it as an issue, or sending a PR.
 
