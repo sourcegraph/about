@@ -88,6 +88,7 @@ After the incident is resolved:
 1. Schedule a [retrospective](../../retrospectives/index.md) if you think it would be valuable.
 
 ## Incident Post-mortems
+
 - [3.30 Postgres Index Incident](./330_incident_retro.md)
 
 ## Go-to-market (license and subscription) issues
