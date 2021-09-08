@@ -1,10 +1,17 @@
 # Onboarding
 
-Welcome to Sourcegraph! We are so excited to have you on the team. This page outlines what you'll need to do to get started.
+Welcome to Sourcegraph! We are so excited you are part of the team or considering it. This page outlines what you'll need to do to get started.
 
+In order for us to create a beter onboarding experience for new teammates we have defined dates for people to start. You can check out our [New Cohort calendar](https://calendar.google.com/calendar/u/0?cid=Y182OTdwMnZyMnA3cmJnYzNrMTRiODAwc2gxZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t). _If you are planning to join us and these dates don't work for you, please contact the Talent team and let them know your situation._
+
+New teammates are paired with someone to connect that can share their experiences and advice to help make their transition a little smoother. You can read more about the [Onboarding buddy program here](./buddy-program.md)
+
+### Links of interest
+
+- [Onboarding process for Hiring Managers](onboarding-for-hiring-managers.md) page.
+- Cohort calendar ([2021](https://docs.google.com/spreadsheets/d/1jJY3E7j31ZD7J-ouf3Gf-uioHCAXxe-0bBVLEmdtVGQ/edit#gid=0) & [2022](https://docs.google.com/spreadsheets/d/1Q_h9I0CkppecPNbaMlhe7uafcNdfzWuiPApm0KxTaAA/edit#gid=0) start dates)
 - [Onboarding buddy program](./buddy-program.md)
-
-For Hiring Managers, visit the [Onboarding process for Hiring Managers](onboarding-for-hiring-managers.md) page.
+- [Onboarding Feedback Milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-feedback-milestones)
 
 ## Guiding principles
 
@@ -70,8 +77,8 @@ Read about how we do this in [Onboarding Feedback Milestones](https://about.sour
 
 Hiring managers can refer to the [Onboarding process for Hiring Managers](onboarding-for-hiring-managers.md) page.
 
-1. One week prior to your first day, People Ops will send you a welcome email. Be sure to send them your address, phone number, shirt size, photo for your avatar, and for US teammates, the requested documentation.
-1. Order [your computer](../spending-company-money.md#computers).
+1. Once you sign your contract, the Talent team will send you a welcome email linking you to a pre-onboarding form. Be sure to complete the form in time.
+1. Order [your computer](../spending-company-money.md#computers) or talk to Inés Roitman, [ines@sourcegraph.com](mailto:ines@sourcegraph.com), if you need to get it with the company card.
 1. Order the [desk equipment](../spending-company-money.md#desk-set-up) you need to be productive working remotely.
 
 You will be able to submit an expense reimbursement for the computer and desk equipment when you start.
