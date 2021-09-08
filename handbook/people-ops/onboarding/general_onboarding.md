@@ -53,7 +53,7 @@ Expensify, Rippling, and Human Interest are managed by our back office, Officeng
 - Add yourself to the [team page](../../company/team/index.md).
 - Make sure you've been added to Sourcegraph's github org first!
   - If you aren't, you'll see this warning:
-  ![Fork Repository Warning](https://sourcegraphstatic.com/handbook/fork-repository-warning.png)
+    ![Fork Repository Warning](https://sourcegraphstatic.com/handbook/fork-repository-warning.png)
 - Add a link to your team page bio to your Slack profile.
 - Read Sourcegraph's [information security policy](https://about.sourcegraph.com/security) and acknowledge your acceptance: https://forms.gle/LUK1YtwAMJLhtRPi6.
 
