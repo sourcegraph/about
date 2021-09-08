@@ -28,31 +28,36 @@ A CE works with customers in a number of different ways throughout the customer 
 
 ### Discovery and Demo
 
-The initial conversation(s) with a customer can vary in length and scope, but always involve discovery and demoing. This could range from an abbreviated 30 minute intro call with a smaller prospect, or multiple hour-long calls across various stakeholders and teams at an enterprise organization.
+The initial conversation(s) with a customer can vary in length and scope, but always involve discovery, that is uncovering their needs and motivations, and demonstrating product capabilities. This could range from an abbreviated 30 minute intro call with a smaller prospect, or multiple hour-long calls across various stakeholders and teams at an enterprise organization.
 
 Resources
 
 - [Customer discovery playbook](#customer-discovery)
 - [Demo education resources](https://about.sourcegraph.com/handbook/ce/education#trainings-and-demos)
 
+### Capturing Techincal Requirements
+Early on in the process, we begin to understand the needs of our prospective customers. As we learn about them - their needs, their tech stack, etc. we begin to document both the product and technical requirements and the business context of the deal. For complex engagements, we have internal technical reviews with cross-functional teams to ensure we are aligned and that the customer is positioned for success.
+
+#### Resources
+
+- [Technical Design Document Template](https://docs.google.com/document/d/19qcdFcFpqHNE6OTgO8SwdTF7FfB4AJH6Hlqeywgv6Yc/edit) (work in progress)
+
 ### Trial / POC Planning
 
 Once a customer is interested in trialing Sourcegraph, we need to start planning to ensure success. Topics may include:
 
-- Documenting their technical landscape
-- Business use cases / metrics for success
-- Technical metrics for success
-- Business value assessment planning
-- User survey planning
-- Deployment support and checklist
-- Technical configuration review
-- Trial rollout plan
-- Communication and ongoing support
+- Documenting their technical landscape (CE-led)
+- Trial use cases / metrics for success (CE-led)
+- Business value assessment planning  (AE-led)
+- User survey planning (AE-led)
+- Deployment support and checklist (CE-led)
+- Technical configuration review (CE-led)
+- Trial rollout plan (CE-led)
+- Communication and ongoing support (CE-led)
 
 Resources
 
 - [Trial and Deployment Planning Template](https://docs.google.com/spreadsheets/d/1mi_540InPEs6_xmCE2gHzw6Vt9QHDx-IdGogQZN6Ezw/edit?usp=sharing)
-- [Technical Design Document Template](https://docs.google.com/document/d/19qcdFcFpqHNE6OTgO8SwdTF7FfB4AJH6Hlqeywgv6Yc/edit) (work in progress)
 
 ### Security Reviews
 
@@ -68,23 +73,28 @@ The current CE's in charge of security questionnaires are [Max Wiederholt](https
 
 ### License Keys
 
+CEs are the team responsible for generating and maintaining license keys for customers. Here's some useful resources on how to do that:
 - [Creating and maintaining license keys for customers](https://about.sourcegraph.com/handbook/ce/license_keys)
 - [Recording of creating a new key for demo.sourcegraph.com](https://drive.google.com/file/d/1fYsBqdzdBLd0mzAu2FJxrWznRX0k-iqr/view?usp=sharing)
 
 ### Trial / POC
 
-We run the trial with a customer. This is typically about a month. It is critical that you collaborate closely with your account executive here to ensure a successful experience for the customer.
+Trials are an important and strategic part of our sales cycles because when developers start to use Sourcegraph, they love it and want to use it forever. Seriously! Typically, our trials run for about a month but sometimes longer. Before, during and after, you collaborate closely with your account executive to ensure a successful experience for the customer.
+
+Before the trial, you're working with the AE to scope and plan. You consult on best practices for the customer as they deploy and configure Sourcegraph.
+
+During the trial, you're enabling and educating the customer on how to use Sourcegraph. You orient your activities during the trial against the defined use cases and metrics for success to ensure developers are set up for success.
 
 Resources
 
 - [Mid-trial check-in Q&A recording](https://chorus.ai/meeting/CEA97B5EA976491E97AED80A2EAE45D5)
 
-### Post-Sales Kickoffs
+### Post-Sales Engagement Kickoff
 
 Once a customer signs on with Sourcegraph, we need to:
 
 - Generate a full license key.
-- Plan a kickoff call with our main contact(s).
+- Plan a kickoff call with our main contact(s) to plan the engagement.
 
 On the kickoff call we plan our ongoing engagement with the customer. Different customers have different needs, so it's important to talk through topics such as:
 
@@ -133,13 +143,22 @@ Resources
 
 ### Expansions and Renewals
 
-Expanding Sourcegraph to a new team or unlocking new enterprise features could involve a full cycle of CE discovery and demos and value mapping. A basic renewal or seat expansion may not involve CE beyond generating a new license key.
+Expanding Sourcegraph to a new team or unlocking new enterprise features could involve a full cycle of CE discovery and demos and value mapping. It could also include a trial for a new user group or with that new feature. A basic renewal or seat expansion may not involve CE beyond generating a new license key.
 
-### Ongoing Support
+### Ongoing Customer Support
 
-While our CSE team is primarily responsible for technical support, keep an eye out on Slack for any questions or issues that come through.
+While our CSE team is primarily responsible for reactive technical support, we help keep an eye out on Slack for any questions or issues that come through. You can view any CSE support issues in Zendesk by using our SFDC <> Zendesk integration. Go to the Account page in Salesforce and click the "Zendesk" tab to view.
 
-You can view any CSE support issues in Zendesk by using our SFDC <> Zendesk integration. Go to the Account page in Salesforce and click the "Zendesk" tab to view.
+At times a customer may raise a feature request or provide product feedback. It is our responsibility as CEs to gather that feedback and share with the product teams.
+
+#### Resources
+- [Product Gaps Dashboard](https://sourcegraph2020.lightning.force.com/lightning/r/Dashboard/01Z3t000000p9TjEAI/view?queryScope=userFolders)
+
+### Account Management
+As CEs we are responsible for the technical success of our customers. Post-sales we nurture these relationships and manage the accounts by paying attention to customer health metrics. Usage, adoption, and customer sentiment are important indicators that we monitor and address.
+
+#### Resources
+- [Customer Health Dashboard](https://sourcegraph.looker.com/dashboards-next/194)
 
 ---
 
