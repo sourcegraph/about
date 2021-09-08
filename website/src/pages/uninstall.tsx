@@ -26,7 +26,7 @@ export default class Uninstall extends React.Component<any, any> {
                     <section className="uninstall__body bg-white text-dark">
                         <div className="measure-wide center">
                             <div className="uninstall__form">
-                                <h3>Why did you uninstall Sourcegraph for GitHub? </h3>
+                                <h3>Why did you uninstall the Sourcegraph browser extension? </h3>
                                 <p>Your feedback helps us improve the product for everyone.</p>
                                 <div id="hubspotEditorForm" />
                             </div>

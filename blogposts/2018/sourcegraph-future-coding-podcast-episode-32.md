@@ -18,4 +18,4 @@ Our CEO [@sqs (Quinn Slack)](https://twitter.com/sqs) was on the [Future of Codi
 
 > We're really building a brand new product that most developers do not have a ton of experience with, but that really clicks for them quickly.
 
-[Listen to the episode now](https://futureofcoding.org/episodes/32) and [share your feedback on Twitter](https://twitter.com/srcgraph).
+[Listen to the episode now](https://futureofcoding.org/episodes/32) and [share your feedback on Twitter](https://twitter.com/sourcegraph).

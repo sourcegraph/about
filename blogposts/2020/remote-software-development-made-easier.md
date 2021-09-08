@@ -1,7 +1,7 @@
 ---
 title: "Remote software development made easier"
 author: Stephen Gutekanst and Vanesa Ortiz
-authorUrl: https://twitter.com/srcgraph
+authorUrl: https://twitter.com/sourcegraph
 publishDate: 2020-04-14T17:59
 tags: [blog]
 slug: remote-software-development-made-easier

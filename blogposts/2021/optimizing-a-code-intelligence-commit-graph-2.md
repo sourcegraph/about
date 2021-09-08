@@ -1,5 +1,5 @@
 ---
-title: "Optimizing a code intelligence commit graph (Part 2)"
+title: 'Optimizing a code intelligence commit graph (Part 2)'
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 description: "We enabled Sourcegraph to resolve code intelligence requests for commits missing an index, but ran into scalability challenges when dealing with large commit graphs. Here's how we unearthed and resolved the problem."
@@ -7,7 +7,7 @@ publishDate: 2021-06-03T18:00-07:00
 tags: [blog]
 slug: optimizing-a-code-intel-commit-graph-part-2
 heroImage: /blog/optimizing-code-intelligence-commit-graph.png
-socialImage: /blog/optimizing-code-intelligence-commit-graph.png
+socialImage: https://about.sourcegraph.com/blog/optimizing-code-intelligence-commit-graph.png
 published: true
 ---
 
@@ -277,6 +277,7 @@ type UploadMeta struct {
 
 type CommitGraphView map[string][]UploadMeta // commit -> visible uploads
 ```
+
 Two commit graph views must be created per repository: one traversing the commit graph in each direction. Each instance of an `UploadMeta` struct occupies 56 bytes in memory (calculated via `unsafe.Sizeof(UploadMeta{})`). At the scale above, these structs occupy nearly 30GB of memory, which excludes the values in the `Root` and `Indexer` fields. The values of the root field, in particular, were quite large (file paths up to 200 characters, the average hovering around 75 characters) and repeated very frequently. This was by far the dominating factor, as confirmed by the customer's Go heap trace.
 
 We replaced the struct with the following set of data structures, which yields a much smaller yet semantically equivalent encoding to the commit graph view defined above.
@@ -431,6 +432,12 @@ And things _seem_ to be remaining calm...
 In [Part 1](/blog/optimizing-a-code-intel-commit-graph/#Lessons-learned) we pointed out that databases are a hugely deep subject and knowing your tools deeply can get you fairly far in terms of performance. Unfortunately, with the wrong data model, it doesn't matter how fast you can read or write it from the storage layer. You're optimizing the wrong thing and missing the forest for the trees.
 
 In Part 2, we presented a fantastic way to "optimize the database" by reducing the size of our data set. Taking a step back away from the nitty-gritty details of an existing implementation to determine the shape of the data surrounding a problem can reveal much more straightforward and efficient ways to analyze and manipulate that data. This is especially true in a world with changing assumptions.
+
+### More posts like this
+
+- [A 5x reduction in RAM usage with Zoekt memory optimizations](/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
+- [How not to break a search engine or: What I learned about unglamorous engineering](/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](/blog/avoiding-the-pitfalls-of-iteration-based-development/)
 
 <!--
 digraph G {

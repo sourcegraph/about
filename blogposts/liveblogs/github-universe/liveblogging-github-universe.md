@@ -21,9 +21,9 @@ This year, we’re excited to announce we’re liveblogging GitHub Universe!
 
 That’s right — we’ll be writing up concise technical summaries of all the talks we can manage. For folks tuning in from home, it’s a great way to stay on top of conference proceedings efficiently throughout the day. For folks at the conference, it’s a great way to remind yourself of the key takeaways of each talk.
 
-The task of liveblogging such a large conference will be a big undertaking, but we’ll do our best. If you’re interested in helping out, [please let us know](https://twitter.com/srcgraph) and we’ll send you instructions for contributing.
+The task of liveblogging such a large conference will be a big undertaking, but we’ll do our best. If you’re interested in helping out, [please let us know](https://twitter.com/sourcegraph) and we’ll send you instructions for contributing.
 
-For those of you lucky enough to be at the conference, stop by and say hello! Look for the people wearing (and handing out) “Sourcegraph” T-shirts. And for those of you who are tuning in from home, keep your social media antenna pointed to [twitter.com/srcgraph](https://twitter.com/srcgraph) and this blog post — we’ll link to all liveblog recaps here.
+For those of you lucky enough to be at the conference, stop by and say hello! Look for the people wearing (and handing out) “Sourcegraph” T-shirts. And for those of you who are tuning in from home, keep your social media antenna pointed to [@sourcegraph](https://twitter.com/sourcegraph) and this blog post — we’ll link to all liveblog recaps here.
 
 So stay tuned for a fantastic conference with some great new tools and processes for software development. Or in the words of Steve Ballmer, “Developers! Developers! Developers! Developers!”
 

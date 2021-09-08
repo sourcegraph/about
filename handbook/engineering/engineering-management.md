@@ -31,7 +31,7 @@ Please include the following content in your update:
 We're experimenting with showing short (<1m) demo videos (max 1 per week) during company meeting. If your team ships something that would make a great demo, send an update to engineering-team-status@ to let us know. Requirements:
 
 - 1 minute or less
-- Recorded 
+- Recorded
 - Voiceover that explains the problem that the feature solves and which specific customers had that problem
 - Just show a demo of the actual product as if you were showing a friend, you don't need to have slides or anything
 - Example:
@@ -47,28 +47,43 @@ Here are some books that multiple people on the team have read and recommend. If
 - [Radical Candor](https://www.radicalcandor.com/the-book/) - How to be a great leader by caring personally and challenging directly.
 - [An Elegant Puzzle](https://lethain.com/elegant-puzzle/) - A field manual on how to do engineering management. Reads like a well structured markdown file.
 - [The Five Dysfunctions of a Team](https://www.amazon.com/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756) - A model of how to think about what makes a highly effective team paired with a fictional story that illustrates the model.
-- A few members of the engineering management team will be reading [The Leader’s Guide to Unconscious Bias](https://www.amazon.com/Leaders-Guide-Unconscious-Bias-High-Performing/dp/1982144319) and doing some [facilitated small group discussions](../support/support-values-enablement.md#part-2-deep-dive-on-be-welcoming-and-inclusive). This is like a small scale beta test of [one step of our plan to invest in diversity, equity, and inclusion this year](../communication/dei.md#unconscious-bias). The tentative plan for the first cohort (can be adjusted based on availability of the actual people in the first cohort) would be: {#the-leaders-guide-to-unconscious-bias}
-  - Kickoff email week of May 17
-  - Session 1 week of May 24
-  - Session 2 week of June 7
-  - Session 3 week of June 21
-  - Session 4 week of July 5
-  - Session 5 week of July 19
+- [The Leader’s Guide to Unconscious Bias](https://www.amazon.com/Leaders-Guide-Unconscious-Bias-High-Performing/dp/1982144319) ([facilitated small group discussions](../support/support-values-enablement.md#part-2-deep-dive-on-be-welcoming-and-inclusive).
 
-## Temporary Management Positions
+## Promotion and compensation increase requests
 
-We create temporary management positions when there is an organizational need. These may be filled by someone who is transitioning into the role (Interim Manager), experimenting with the role as they work on determining their career path (Acting Manager) or, someone who is just filling in and who is not interested in pursuing an Engineering Manager role long term (Acting Manager). This difference should be made explicit with the individual and team members before the temporary role is assigned.
+Refer to the [promotion request](career-development/talent-review-process.md#promotion-requests) and [compensation increase](career-development/talent-review-process.md#compensation-increase-requests) process information.
 
-### Acting Manager
+## Transitioning from Individual Contributor to Engineering Manager
 
-An Acting Manager occupies a role temporarily and will move back to their original position after a set amount of time or other conditions. An Acting Manager may be experimenting with the role as a part of determining their career development path or could be filling in for a vacant role while we hire.
+For teammates interested in becoming Engineering Managers who do not have prior experience in people management, we have defined a transition framework that affords this candidate a "Manager in training" opportunity for a trial period. This trial period will allow the teammate to gain exposure to management principles, determine if they would excel as an Engineering Manager, and help them envision committing to this career path long-term.
 
-### Interim Manager
+### Expressing interest in becoming an Engineering Manager
 
-Interim Manager positions are for teammates pursuing an Engineering Manager role long term but lack the necessary people management experience. The requirement is that, before moving into the role full time, they will make at least one successful hire. The official transition to Engineering Manager will not occur before 30 days after that new hire's start date, so that we can assess whether the hire was truly successful. If the new hire's success is indeterminate at the 30-day mark, we will continue to review until a firm decision is made. If the new hire is not successful, that does not mean that the Interim Manager cannot eventually move into the full-time role.
+Prerequisites for a manager in training trial: Teammates who have reached the IC4 level, have a track record of good performance at Sourcegraph, and have been a teammate at Sourcegraph for at least six months.
 
-In some cases, it may not be practical, or headcount planning might not allow for the Interim Manager to make a new hire. In this case, the Interim Manager and the interim manager's manager should agree on success criteria based on the role's requirements.
+The teammate should make their desire clear to their Engineering Manager so that when a relevant opportunity becomes available, they may be considered.
 
-Once the Interim Manager's first new hire has been at Sourcegraph for 30 days or other agreed success criteria have been met, their manager will formally review the Interim Manager.
+Opportunities for a manager in training trial can come about through a current Engineering Manager position becoming vacant, an existing team splitting into two, or an Engineering Manager going on long-term PTO.
+When an opportunity arises, the teammate's manager can nominate them for a manager in training trial by having a conversation with the Director of Engineering for the relevant org.
 
-This process aims to have a determination made by the interim manager's manager about the promotion to a permanent manager role after the agreed success criteria have been satisfied. Generally, we aim to have the interim period not exceed four months before turning into a full-time position.
+There are some considerations to keep in mind to ensure that the teammate is set up for success:
+
+- The teammate's existing team should be in a position for them not to be involved as an IC for the whole duration of the trial period. Managers in training should not fulfill a dual role.
+- The team to be managed should comply with our [minimum viable team](eng_org.md#minimum-viable-team) criteria.
+- The team to be managed should have a dedicated and established Product Manager assigned to it.
+- The team to be managed should preferably not be one that the manager in training was an IC on.
+
+### Manager in training trial period
+
+During the trial period, the manager in training will assume full Engineering Manager responsibility as outlined in the [Engineering Manager responsibilities](roles.md#engineering-manager).
+
+The teammate's manager, director, or another nominated manager/director will become their sponsoring manager for the duration of the trial period. The sponsoring manager must commit to providing extra support to the manager in training during the trial period, which will last 12 weeks.
+
+The sponsoring manager will give the manager in training active coaching and feedback during weekly 1-1s and conduct bi-weekly 1-1s with the manager in training's direct reports to collect feedback and set them up for success.
+Halfway through their trial period, the manager in training will receive an interim performance evaluation to help them identify strengths and shortcomings as an engineering manager and allow them to adjust if needed.
+
+The trial period can be ended at any time by either the manager in training or the sponsoring manager if either party feels like being an Engineering Manager may not be the best role for the trainee. If either party decides to end it, both the trainer and trainee should formulate a transition plan for the trainee to resign their duties and resume working with their original teams.
+
+### Becoming an Engineering Manager
+
+Suppose the trial period for the manager in training was determined to be successful, and they would like to commit to the role change. In that case, the sponsoring manager will submit a request for a formal role change using the [role change request template](https://docs.google.com/document/d/1nkRE5wxyYVIn8rVS2rOFDEZSlgs07eVJEfxxEu5hjuk/edit). Following approval from the relevant decision-makers (Director, VP), the role change request is forwarded to the relevant teammates in PeopleOps (refer to [People Ops Communications Matrix](https://docs.google.com/spreadsheets/d/1JItBWbfKV9lr-LAmE19I0JMvu3Cvh0AdrEHDv-r1E2w/edit#gid=0)) for confirmation. Once confirmed by PeopleOps the change can be communicated to the teammate and the company.

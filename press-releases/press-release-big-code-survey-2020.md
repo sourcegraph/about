@@ -9,7 +9,7 @@ description: 'The Big Code survey shows 94% of software development professional
 published: true
 ---
 
-**Survey Shows 94% of Software Development Professionals Affected By Big Code** 
+**Survey Shows 94% of Software Development Professionals Affected By Big Code**
 
 SAN FRANCISCO, Oct. 01, 2020 (GLOBE NEWSWIRE) -- [Sourcegraph](https://about.sourcegraph.com), the leader in Universal Code Search, today released new data identifying the emergence of Big Code, and highlighting the unique problems it poses for development teams across all industries. Similar to how Big Data has disrupted data teams, Big Code is creating new hurdles for development teams as code rapidly grows in four major ways.
 
@@ -52,14 +52,16 @@ Sourcegraph empowers developers to explore and better understand all code, every
 - [Sourcegraph Website](https://about.sourcegraph.com/)
 - [Sourcegraph Documentation](https://docs.sourcegraph.com/)
 - [Sourcegraph Blog](https://about.sourcegraph.com/blog/)
-- [Sourcegraph on Twitter](https://twitter.com/srcgraph)
+- [Sourcegraph on Twitter](https://twitter.com/sourcegraph)
 - [Sourcegraph on LinkedIn](https://www.linkedin.com/company/sourcegraph/)
 - [Sourcegraph on GitHub](https://github.com/sourcegraph)
 
 ## About Sourcegraph
-Sourcegraph Universal Code Search empowers all developers to explore, navigate, and better understand all code, everywhere, faster. Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems. Sourcegraph is built for all companies, from startups needing a solid foundation for growth to enterprises with complex security, scaling, and deployment needs. The all-remote company is headquartered in San Francisco, CA and backed by Craft Ventures, Redpoint Ventures, and Goldcrest Capital – visit [sourcegraph.com/jobs](https://about.sourcegraph.com/jobs/) for career opportunities. Follow Sourcegraph on Twitter at [@srcgraph](https://twitter.com/srcgraph?lang=en) or visit [about.sourcegraph.com](https://about.sourcegraph.com/). 
+
+Sourcegraph Universal Code Search empowers all developers to explore, navigate, and better understand all code, everywhere, faster. Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems. Sourcegraph is built for all companies, from startups needing a solid foundation for growth to enterprises with complex security, scaling, and deployment needs. The all-remote company is headquartered in San Francisco, CA and backed by Craft Ventures, Redpoint Ventures, and Goldcrest Capital – visit [sourcegraph.com/jobs](https://about.sourcegraph.com/jobs/) for career opportunities. Follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph?lang=en) or visit [about.sourcegraph.com](https://about.sourcegraph.com/).
 
 ## Media Contact
+
 Tanya Carlsson<br>
 Offleash PR for Sourcegraph<br>
 [sourcegraph@offleashpr.com](mailto:sourcegraph@offleashpr.com)

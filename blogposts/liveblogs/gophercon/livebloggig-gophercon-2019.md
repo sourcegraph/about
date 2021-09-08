@@ -45,7 +45,7 @@ Steps to live blog:
 - Make a pull request.
 - After your pull request is merged, it will be live on the [Sourcegraph GopherCon liveblog](/go) in less than 5 minutes.
 
-Once live, your post will be promoted from the [GopherCon](https://twitter.com/gophercon) and [Sourcegraph](https://twitter.com/srcgraph) Twitter accounts, crediting you and raising your profile to over 28,000 followers.
+Once live, your post will be promoted from the [GopherCon](https://twitter.com/gophercon) and [Sourcegraph](https://twitter.com/sourcegraph) Twitter accounts, crediting you and raising your profile to over 28,000 followers.
 
 If possible, we provide access to the slides beforehand, making it easier to extract code snippets, images, and get familiar with the content.
 

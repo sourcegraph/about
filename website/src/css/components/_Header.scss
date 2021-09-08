@@ -30,6 +30,11 @@
     }
 }
 
+// Hello bar
+.background-purple {
+    background-color: $purple;
+}
+
 @media only screen and (max-width: 768px) {
     .navbar-dark .navbar-nav .btn,
     .navbar-light .navbar-nav .btn {

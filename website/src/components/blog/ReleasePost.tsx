@@ -5,7 +5,7 @@ import remark from 'remark'
 import remarkHTML from 'remark-html'
 import { PostComponentProps } from './postTypes'
 
-interface Props extends PostComponentProps { }
+interface Props extends PostComponentProps {}
 
 /**
  * A post about a release.
@@ -26,10 +26,14 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 <div className="card-body release-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
             )}
 
-            <h3 className="card-body pb-2 pt-0 m-0 release-post__changelog-header">Changelog</h3>
+            <h3 className="card-body pb-2 pt-4 m-0 release-post__changelog-header">Changelog highlights</h3>
             <div className="release-post__items list-group list-group-flush">
                 {post.frontmatter.changelogItems?.map(({ url, category, description }, i) => (
-                    <a href={url} className="release-post__item d-md-flex list-group-item list-group-item-action" key={i}>
+                    <a
+                        href={url}
+                        className="release-post__item d-md-flex list-group-item list-group-item-action"
+                        key={i}
+                    >
                         <span className="release-post__item-category mb-2 mb-md-0">
                             <span className="release-post__item-category-badge">{category}</span>
                         </span>
@@ -57,7 +61,8 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 </li>
             </ul>
             <div className="card-body release-post__body">
-                * Please <a href="https://about.sourcegraph.com/contact/sales/">contact Sourcegraph</a> with any licensing questions.
+                * Please <a href="https://about.sourcegraph.com/contact/sales/">contact Sourcegraph</a> with any
+                licensing questions.
             </div>
         </>
     ) : (
@@ -83,8 +88,20 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 </h1>
                 <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
             </header>
-
-            <div className="card-body">{body}</div>
+            {!full && post.frontmatter.heroImage ? (
+                <div className="card-body pt-0 d-flex">
+                    <div className="flex-1">{body}</div>
+                    <Link to={url} className="pl-3">
+                        <img
+                            className="blog-post__image"
+                            src={post.frontmatter.heroImage}
+                            alt={post.frontmatter.title}
+                        />
+                    </Link>
+                </div>
+            ) : (
+                <div className="card-body">{body}</div>
+            )}
         </Tag>
     )
 }

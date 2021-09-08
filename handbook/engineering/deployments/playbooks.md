@@ -1,17 +1,37 @@
 # Playbooks for deployments
 
-- [Playbooks for deployments](#playbooks-for-deployments)
-    - [Sourcegraph.com](#sourcegraphcom)
-        - [Deploying to sourcegraph.com](#deploying-to-sourcegraphcom)
-        - [Rolling back sourcegraph.com](#rolling-back-sourcegraphcom)
-        - [Invalidating all user sessions](#invalidating-all-user-sessions)
-        - [Accessing sourcegraph.com database](#accessing-sourcegraphcom-database)
-            - [Via the CLI](#via-the-cli)
-            - [Via BigQuery (for read-only operations)](#via-bigquery-for-read-only-operations)
-        - [Restarting docs.sourcegraph.com](#restarting-about-sourcegraph-com-and-docs-sourcegraph-com)
-    - [k8s.sgdev.org](#k8ssgdevorg)
-        - [Manage users in k8s.sgdev.org](#manage-users-in-k8ssgdevorg)
-    - [Cloudflare Configuration](#cloudflare-configuration)
+- [General](#general)
+- [Debugging](#debugging)
+  - [Check what version of Sourcegraph is deployed](#check-what-version-of-sourcegraph-is-deployed)
+- [Sourcegraph.com](#sourcegraphcom)
+  - [Deploying to sourcegraph.com](#deploying-to-sourcegraph-com)
+  - [Deploying to sourcegraph.com during 2021-08-19 code freeze](#deploying-to-sourcegraph-com-during-2021-08-19-code-freeze)
+  - [Rolling back sourcegraph.com](#rolling-back-sourcegraph-com)
+  - [Backing up & restoring a Cloud SQL instance (production databases)](#backing-up--restoring-a-cloud-sql-instance-production-databases)
+  - [Invalidating all user sessions](#invalidating-all-user-sessions)
+  - [Accessing sourcegraph.com database](#accessing-sourcegraph-com-database)
+    - [Via the CLI](#via-the-cli)
+    - [Via BigQuery (for read-only operations)](#via-bigquery-for-read-only-operations)
+  - [Restarting about.sourcegraph.com and docs.sourcegraph.com](#restarting-about-sourcegraph-com-and-docs-sourcegraph-com)
+  - [Creating banners for maintenance tasks](#creating-banners-for-maintenance-tasks)
+- [k8s.sgdev.org](#k8ssgdevorg)
+  - [Manage users in k8s.sgdev.org](#manage-users-in-k8s-sgdev-org)
+- [PostgreSQL](#postgresql)
+- [Cloudflare Configuration](#cloudflare-configuration)
+
+## General
+
+## Debugging
+
+See [debugging](./debugging/index.md).
+
+### Check what version of Sourcegraph is deployed
+
+[Install `sg`, the Sourcegraph developer tool](https://github.com/sourcegraph/sourcegraph/blob/main/dev/sg/README.md), and using the [`sg live` command](https://github.com/sourcegraph/sourcegraph/blob/main/dev/sg/README.md#sg-live---see-currently-deployed-version) you can see the version currently deployed for a specific environment:
+
+```sh
+sg live <environment|url>
+```
 
 ## Sourcegraph.com
 
@@ -25,6 +45,13 @@ Deploys on sourcegraph.com are currently [handled by Renovate](#renovate). The [
 
 If you want to expedite a deploy, you can manually create and merge a PR that updates the Docker image tags in [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com). You can find the desired Docker image tags by looking at the output of the Docker build step in [CI on sourcegraph/sourcegraph `main` branch](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=main) or by looking at [Docker Hub](https://hub.docker.com/u/sourcegraph/).
 
+### Deploying to sourcegraph.com during 2021-08-19 code freeze
+
+To ensure stability during a [code freeze](https://en.wikipedia.org/wiki/Freeze_(software_engineering), a separate `release/2021-08-19` branch will be created from `main`, with only approved commits to be `cherry-picked` onto this [branch](https://github.com/sourcegraph/sourcegraph/tree/release/2021-08-19) for release. To ensure any compability between the `main` and `release/2021-08-19` branches, **ALL** commits must first be merged to `main` and pass [CI](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=main) for being `cherry-picked`. All tests will be run on the `release/2021-08-19` branch and must pass before docker images are published to docker hub.
+
+During the code freeze, [Renovate](#renovate) will be disabled on **Wednesday 18 August 2021 at 12:00PM UTC** and no automatic updates to Kubernetes manifests will be made. To deploy your changes, you can manually create and merge a PR that updates the Docker image tags in [deploy-sourcegraph-dot-com](https://github.com/sourcegraph/deploy-sourcegraph-dot-com). You can find the desired Docker image tags by looking at the output of the Docker build step in [CI on sourcegraph/sourcegraph `release/2021-08-19` branch](https://buildkite.com/sourcegraph/sourcegraph/builds?branch=release%2F2021-08-19) or by looking at [Docker Hub](https://hub.docker.com/u/sourcegraph/).
+
+Once your PR has been merged, you can follow the deployment via [CI on the `release` branch](https://buildkite.com/sourcegraph/deploy-sourcegraph-dot-com/builds?branch=release).
 
 ### Rolling back sourcegraph.com
 
@@ -108,19 +135,36 @@ To restart the services powering about.sourcegraph.com and docs.sourcegraph.com:
 
 1. List the active pods with `kubectl get pods`. This should produce a list that includes items like the following:
 
-    ```
-    NAME                                     READY   STATUS      RESTARTS   AGE
-    about-sourcegraph-com-74f96c659b-t6lqp   1/1     Running     0          7m49s
-    docs-sourcegraph-com-5f97dd5db-7wrxm     1/1     Running     0          7m49s 
-    ```
+   ```
+   NAME                                     READY   STATUS      RESTARTS   AGE
+   about-sourcegraph-com-74f96c659b-t6lqp   1/1     Running     0          7m49s
+   docs-sourcegraph-com-5f97dd5db-7wrxm     1/1     Running     0          7m49s
+   ```
 
-    The exact names will differ, but the general format will be the same.
+   The exact names will differ, but the general format will be the same.
+
 1. Delete the pods, being careful to copy the exact names from the output in the previous step. For example, with that output, you would run:
 
-    ```
-    kubectl delete pod about-sourcegraph-com-74f96c659b-t6lqp docs-sourcegraph-com-5f97dd5db-7wrxm
-    ```
+   ```
+   kubectl delete pod about-sourcegraph-com-74f96c659b-t6lqp docs-sourcegraph-com-5f97dd5db-7wrxm
+   ```
+
 1. Wait a moment, and check https://about.sourcegraph.com/ and https://docs.sourcegraph.com/.
+
+### Creating banners for maintenance tasks
+
+For database upgrades or other tasks that might cause some aspects of Sourcegraph to be unavailable, we provide a banner across the top of the site. This can be done via editing **Global Settings** with the following snippet.
+
+```json
+"notices": [
+    {
+"dismissible": false,
+"location": "top",
+"message": "🚀 Sourcegraph is undergoing a scheduled upgrade.
+You may be unable to perform some write actions during this time, such as updating your user settings."
+    },
+]
+```
 
 ## k8s.sgdev.org
 
@@ -131,6 +175,10 @@ To learn more about this deployment, see [instances](./instances.md#k8s-sgdev-or
 To create an account on [k8s.sgdev.org](https://k8s.sgdev.org), log in with your Sourcegraph Google account via OpenID Connect.
 
 To promote a user to site admin (required to make configuration changes), use the admin user credentials available in 1password (titled `k8s.sgdev.org admin user`) to log in to [k8s.sgdev.org](https://k8s.sgdev.org), and go to the [users page](https://k8s.sgdev.org/site-admin/users) to promote the desired user.
+
+## PostgreSQL
+
+See [PostgreSQL](./postgresql.md)
 
 ## Cloudflare Configuration
 

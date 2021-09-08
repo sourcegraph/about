@@ -12,7 +12,7 @@ published: true
 
 This talk is about how Category Theory can help you write better code, but without using the words "Category" or "Theory" (or monad or functor or any of the scary terminology). We'll look at how the idea behind "Errors are Values" from the Go blog can be applied to different kinds of programming problems, and how we can make our code easier to compose by moving units of control flow into types. (That sounds a bit fancy, but it's much more straightforward than it sounds.)
 
-Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@srcgraph](https://twitter.com/srcgraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
+Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@sourcegraph](https://twitter.com/sourcegraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
 
 ## Part 1: Constant Interruptions
 

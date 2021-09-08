@@ -20,6 +20,7 @@ Sourcegraph provides Universal Code Search, which enables developers to explore 
 Coding doesn’t have to be as complex as the solution Sourcegraph offers, however. It can be as simple as 'A is for App,' 'B is for Binary,' and 'C is for Code'. Get your little ones familiar with the basics of software development by downloading Our ABCs: Always Be Coding here: [https://bit.ly/3bxgeKq](https://bit.ly/3bxgeKq)
 
 ## What Kids Are Saying About 'Our ABCs: Always Be Coding'
+
 "I know my ABCs but this book helped me understand things I didn’t know before like what Debug and Open Source meant. One day, I might want to create my own app or be an engineer so this is cool for easy learning."
 &mdash; Kenslie, age 11
 
@@ -34,13 +35,13 @@ Coding doesn’t have to be as complex as the solution Sourcegraph offers, howev
 - [Sourcegraph Website](https://about.sourcegraph.com/)
 - [Sourcegraph Documentation](https://docs.sourcegraph.com/)
 - [Sourcegraph Blog](https://about.sourcegraph.com/blog/)
-- [Sourcegraph on Twitter](https://twitter.com/srcgraph)
+- [Sourcegraph on Twitter](https://twitter.com/sourcegraph)
 - [Sourcegraph on LinkedIn](https://www.linkedin.com/company/sourcegraph/)
 - [Sourcegraph on GitHub](https://github.com/sourcegraph)
 
 ## About Sourcegraph
 
-Sourcegraph Universal Code Search empowers all developers to explore, navigate, and better understand all code, everywhere, faster. Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems. Sourcegraph is built for all companies, from startups needing a solid foundation for growth to enterprises with complex security, scaling, and deployment needs. The all-remote company is headquartered in San Francisco, CA and backed by Craft Ventures, Redpoint Ventures, and Goldcrest Capital – visit [sourcegraph.com/jobs](https://about.sourcegraph.com/jobs/) for career opportunities. Follow Sourcegraph on Twitter at [@srcgraph](https://twitter.com/srcgraph?lang=en) or visit [about.sourcegraph.com](https://about.sourcegraph.com/).
+Sourcegraph Universal Code Search empowers all developers to explore, navigate, and better understand all code, everywhere, faster. Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems. Sourcegraph is built for all companies, from startups needing a solid foundation for growth to enterprises with complex security, scaling, and deployment needs. The all-remote company is headquartered in San Francisco, CA and backed by Craft Ventures, Redpoint Ventures, and Goldcrest Capital – visit [sourcegraph.com/jobs](https://about.sourcegraph.com/jobs/) for career opportunities. Follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph?lang=en) or visit [about.sourcegraph.com](https://about.sourcegraph.com/).
 
 ## Media Contact
 

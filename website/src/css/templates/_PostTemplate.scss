@@ -2,7 +2,7 @@
     &__post {
         h1 {
             font-size: 2.25rem;
-            margin-bottom: .75rem;
+            margin-bottom: 0.75rem;
         }
 
         min-height: 60vh;
@@ -44,14 +44,15 @@
             margin-bottom: 1rem;
         }
 
-        ul, ol {
+        ul,
+        ol {
             line-height: 1.8;
             padding-left: 0;
 
             li {
                 margin-left: 1rem;
-                padding-left: .5rem;
-                margin-bottom: .5rem;
+                padding-left: 0.5rem;
+                margin-bottom: 0.5rem;
             }
         }
 

@@ -42,7 +42,7 @@ See [Goals](goals.md)
 - [Update various service tokens for sourcegraph.com](tokens.md)
 - [Rollbacks](rollbacks.md)
 
-### [FAQ](faq.md)
+#### [FAQ](faq.md)
 
 - [Why is there not a "stable" or "latest" Docker image tag?](faq.md#why-is-there-not-a-stable-or-latest-docker-image-tag)
 
@@ -53,8 +53,8 @@ See [Goals](goals.md)
   - [Geoffrey Gilmore](../../company/team/index.md#geoffrey-gilmore)
   - [Dave Try](../../company/team/index.md#dave-try)
   - [Dax McDonald](../../company/team/index.md#dax-mcdonald-he-him)
+  - [Robert Lin](../../company/team/index.md#robert-lin)
   - FQ1 [distribution engineer](https://boards.greenhouse.io/sourcegraph91/jobs/4003908004)
-  - FQ2 [Robert Lin](../../company/team/index.md#robert-lin) (early July)
   - FQ3 hire
 
 ## Getting help from the Distribution team
@@ -70,19 +70,19 @@ Find out [how we cover on-call](#on-call-Support).
 
 ### General questions
 
-  1. In [#distributioneers](https://sourcegraph.slack.com/archives/CJX299FGE), click the blue lightning bolt just below the Slack text field
-  2. At the top of the popup, select the type of request – "Ask a question"
-  3. Fill out the form!
-  4. Your responses will be posted in the channel, which is monitored by the member of the team on the support rotation ([see below](#how-we-cover-support-requests) for more info!)
-  5. We'll get back to you asap. But, if this is a **time sensitive question**, please tag `@distribution-support` in the thread in the channel.
+1. In [#distributioneers](https://sourcegraph.slack.com/archives/CJX299FGE), click the blue lightning bolt just below the Slack text field
+2. At the top of the popup, select the type of request – "Ask a question"
+3. Fill out the form!
+4. Your responses will be posted in the channel, which is monitored by the member of the team on the support rotation ([see below](#how-we-cover-support-requests) for more info!)
+5. We'll get back to you asap. But, if this is a **time sensitive question**, please tag `@distribution-support` in the thread in the channel.
 
 ### General support requests
 
-  1. In [#distributioneers](https://sourcegraph.slack.com/archives/CJX299FGE), click the blue lightning bolt just below the Slack text field
-  2. At the top of the popup, select the type of request – "Request support"
-  3. Fill out the form!
-  4. Your responses will be posted in the channel, which is monitored by the member of the team on the support rotation ([see below](#how-we-cover-support-requests) for more info!)
-  5. We'll get back to you asap. But, if this is a **time sensitive request**, please tag `@distribution-support` in the thread in the channel, or consider using the method outlined in ["Urgent customer incidents"](#urgent-customer-incidents) above if _really_ urgent.
+1. In [#distributioneers](https://sourcegraph.slack.com/archives/CJX299FGE), click the blue lightning bolt just below the Slack text field
+2. At the top of the popup, select the type of request – "Request support"
+3. Fill out the form!
+4. Your responses will be posted in the channel, which is monitored by the member of the team on the support rotation ([see below](#how-we-cover-support-requests) for more info!)
+5. We'll get back to you asap. But, if this is a **time sensitive request**, please tag `@distribution-support` in the thread in the channel, or consider using the method outlined in ["Urgent customer incidents"](#urgent-customer-incidents) above if _really_ urgent.
 
 ### How we cover support requests
 

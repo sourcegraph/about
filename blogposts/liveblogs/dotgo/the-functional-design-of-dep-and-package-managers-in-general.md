@@ -14,7 +14,7 @@ published: true
 
 Go isn't a functional language, but we can still use principles from functional programming when designing Go programs. In this talk, Sam demonstrates how these principles apply to dep, the Go package management tool, and all package managers in general. He discusses the concepts of memoization and immutability as applied to package management.
 
-Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@srcgraph](https://twitter.com/srcgraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
+Note: This post was live-blogged at [dotGo 2017](https://www.dotgo.eu/). Let us know on Twitter ([@sourcegraph](https://twitter.com/sourcegraph)) if we missed anything. All content is from the talk; any mistakes or misrepresentations are our fault, not the speaker's.
 
 ## Memoization
 

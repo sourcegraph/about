@@ -106,4 +106,4 @@ A most recent example of the change that was proposed using this process is an u
 
 ## What’s next?
 
-We are planning to stay on this path of improving consistency and learnability. In the nearest future, our efforts will be focused on two big areas of our product - Sourcegraph extensions and the browser extension. We are very excited about the upcoming months and we would love you to share your feedback about all the changes that we are making. If you have any suggestions, please reach out to us at [@srcgraph](https://twitter.com/srcgraph) or by [filing an issue](https://github.com/sourcegraph/sourcegraph).
+We are planning to stay on this path of improving consistency and learnability. In the nearest future, our efforts will be focused on two big areas of our product - Sourcegraph extensions and the browser extension. We are very excited about the upcoming months and we would love you to share your feedback about all the changes that we are making. If you have any suggestions, please reach out to us at [@sourcegraph](https://twitter.com/sourcegraph) or by [filing an issue](https://github.com/sourcegraph/sourcegraph).

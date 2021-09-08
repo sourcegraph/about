@@ -41,7 +41,7 @@ Because the work is all open source, you can check out [one of our new teammateâ
 
 We will always be learning and testing new ways to let great candidates show their skills. Our hope is that more choices helps us find more awesome teammatesâ€”and helps establish Sourcegraph as a company that's thoughtful about growing our team.
 
-We'd love to hear your thoughts on these questions. Reach us on Twitter at [@srcgraph](https://twitter.com/srcgraph)!
+We'd love to hear your thoughts on these questions. Reach us on Twitter at [@sourcegraph](https://twitter.com/sourcegraph)!
 
 
 ### For engineers:
