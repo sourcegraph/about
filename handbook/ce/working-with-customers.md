@@ -31,6 +31,7 @@ A CE works with customers in a number of different ways throughout the customer 
 The initial conversation(s) with a customer can vary in length and scope, but always involve discovery and demoing. This could range from an abbreviated 30 minute intro call with a smaller prospect, or multiple hour-long calls across various stakeholders and teams at an enterprise organization.
 
 Resources
+
 - [Customer discovery playbook](#customer-discovery)
 - [Demo education resources](https://about.sourcegraph.com/handbook/ce/education#trainings-and-demos)
 
@@ -49,6 +50,7 @@ Once a customer is interested in trialing Sourcegraph, we need to start planning
 - Communication and ongoing support
 
 Resources
+
 - [Trial and Deployment Planning Template](https://docs.google.com/spreadsheets/d/1mi_540InPEs6_xmCE2gHzw6Vt9QHDx-IdGogQZN6Ezw/edit?usp=sharing)
 - [Technical Design Document Template](https://docs.google.com/document/d/19qcdFcFpqHNE6OTgO8SwdTF7FfB4AJH6Hlqeywgv6Yc/edit) (work in progress)
 
@@ -74,6 +76,7 @@ The current CE's in charge of security questionnaires are [Max Wiederholt](https
 We run the trial with a customer. This is typically about a month. It is critical that you collaborate closely with your account executive here to ensure a successful experience for the customer.
 
 Resources
+
 - [Mid-trial check-in Q&A recording](https://chorus.ai/meeting/CEA97B5EA976491E97AED80A2EAE45D5)
 
 ### Post-Sales Kickoffs
@@ -91,10 +94,10 @@ On the kickoff call we plan our ongoing engagement with the customer. Different 
 - Anything else we can look to help them out with? Upcoming iniaitives they could use Sourcegraph for?
 
 Resources
+
 - [Post Sales Engagement Sheet Template](https://docs.google.com/spreadsheets/d/18DjSYXOnALOHYN-zrMhOGUWGFCaXYShqcKt477tj3LU/edit#gid=0)
 - [Post-Sales Kickoff Deck Template](https://docs.google.com/presentation/d/1eTis1XiS3U1M1M1a35wBw5qwTnJSMozXcz_gXJcGXhk/edit)
 - [Sample Chorus Recording](https://chorus.ai/meeting/066B000C659C4F1D83AA465576444924)
-
 
 ### Webinars / Trainings / Q&A Sessions
 
@@ -103,6 +106,7 @@ The webinar you will most-often run is a Sourcegraph 101/102 (basically a longer
 We may also hold specific topic trainings or Q&A sessions, depending on customer need.
 
 Resources
+
 - [Training Webinar Recording](https://chorus.ai/meeting/8FEAE02538644AA3ABB22149750E6308?)
 
 ### Check-in calls
@@ -115,6 +119,7 @@ Check-in calls may be weekly, bi-weekly, monthly, or as-needed. Going in to a ch
 - Any recent or active questions or support issues or feature requests from the customer
 
 Resources
+
 - [Chorus recording of a typical check-in call](https://chorus.ai/meeting/84885A7398C943A3AFD32327F06A3F12?)
 
 ### QBRs
@@ -122,8 +127,9 @@ Resources
 We often hold QBRs, or Quarterly Business Reviews (sometimes referred to as an Executive Business Review), with our customers which recaps how Sourcegraph has been integrated into and creating value for their organization over the past quarter. These QBRs are typically created and presented by the CE assigned to the account, in conjunction with the account’s AE. They are typically presented in a slide deck format to executive-level leadership, and highlight usage metrics and use cases for their org. Additionally, they are used to gather feedback and comments from leadership regarding Sourcegraph.
 
 Resources
-  - The [QBR Guide](https://docs.google.com/document/d/1gFRn2SkX19sU0GSMGndNkk-I9cFe7FlN3xlZ2UX3Frs/edit#) details how CEs should execute a QBR.
-  - [Sample QBR Recording on Chorus](https://chorus.ai/meeting/36928A0D99694DCB8E0AC9D028E44A1D?search=qbr&recordingsOnly=true&transcript=false)
+
+- The [QBR Guide](https://docs.google.com/document/d/1gFRn2SkX19sU0GSMGndNkk-I9cFe7FlN3xlZ2UX3Frs/edit#) details how CEs should execute a QBR.
+- [Sample QBR Recording on Chorus](https://chorus.ai/meeting/36928A0D99694DCB8E0AC9D028E44A1D?search=qbr&recordingsOnly=true&transcript=false)
 
 ### Expansions and Renewals
 
