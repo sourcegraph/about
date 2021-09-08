@@ -218,32 +218,33 @@ In addition to the above interviews, some departments have department-specific i
 
 During this interview you will meet with the hiring manager on the Customer Engineering team. They will seek to gain an understanding of your customer-facing experience. Specifically, what if any, is your experirence in a pre-sales and / or post-sales role as well as what your career aspirations are. You will have an opportunity to ask any questions about the team, role, company, or product.
 
-
 ### Take Home & Live Interview with a Customer Engineer
 
 For this interview we want to give candidates an opportunity to learn about our product and assess your capabilities working in the developer tooling ecosystem! Sourcegraph has a public version of our product available [here](https://sourcegraph.com/search) to let users get a sense of product capabilities - it’s connected to public Github repositories. We’ll use this instance to guide the project portion of the interview which will be conducted live, via Zoom, with a customer engineer on the team.
 
 There are two main concepts you should get familiar with in advance of the interview:
-* [Search](https://docs.sourcegraph.com/code_search)
-* [Intelligence](https://docs.sourcegraph.com/code_intelligence)
+
+- [Search](https://docs.sourcegraph.com/code_search)
+- [Intelligence](https://docs.sourcegraph.com/code_intelligence)
 
 Using search and our intelligence features we’ll emulate a customer use case with you and ask you to demonstrate it live for us. We don’t expect you to know everything, so if you get stuck during the interview, show us how you go about researching our docs to try and find the answer! This is as much about understanding how you approach and breakdown problems as it is getting to the correct answer.
 
 The live project demonstration will be followed by a short Q&A with the customer engineer to give you both a chance to get to know each other more, and you’ll discuss your take home questions (see below) and answers together.
 
 Finally, prior to this interview, we would like you to answer the following questions. Please submit your answers to these back to us. We will review your answers as part of the 15 minute Q&A in the interview:
+
 1. Explain how Sourcegraph can improve code review flows for dev teams. Explain the challenges of code-review and how Sourcegraph addresses those.
 2. What are 3 examples of something a developer can search for in sourcegraph that would help them make their code more secure
 3. How can Sourcegraph help reduce the time to onboard a new dev?
 
 We’ll conduct the interview in the following format:
-* 20 minutes: live use-case demonstration
-  * The customer engineer will ask you to perform a few basic search and intelligence functions
-  * You will be sharing your screen (both the Sourcegraph public instance and our docs)
-* 15 minutes: Q&A from customer engineer to learn more about you and your capabilities and discuss your take home answers
-* 10 minutes: general Q&A with customer engineer
-  * Ask anything you want! It’s your chance to learn about the team, the role, and the company from a peer!
 
+- 20 minutes: live use-case demonstration
+  - The customer engineer will ask you to perform a few basic search and intelligence functions
+  - You will be sharing your screen (both the Sourcegraph public instance and our docs)
+- 15 minutes: Q&A from customer engineer to learn more about you and your capabilities and discuss your take home answers
+- 10 minutes: general Q&A with customer engineer
+  - Ask anything you want! It’s your chance to learn about the team, the role, and the company from a peer!
 
 ### Working Session: Customer Scenarios Interview, Live Working Session Instructions
 
@@ -301,20 +302,20 @@ The technical champion said there aren’t any initiatives driving this re-engag
 ## Customer Engineering (Manager + Director)
 
 ### Hiring Manager Screen
+
 During this stage of the interview, you will meet with the hiring manager. During this conversation they'll seek to understand both your exposure to a technical product and audiences and how you lead in a fast-growth organization.
 
-
 ### Cross-Functional Collaboration with a Peer
+
 You'll meet with a potential peer in an adjacent team with whom we want to understand how you build relationships and partner with other leaders and how you manage across adjacent teams.
 
-
 ### Leadership & Team Management with 2 IC CEs
+
 You'll meet with two individual contributors on the CE team to learn about how you build relationships within a team and how you lead, mentor, and develop others.
 
-
 ### Working Session: Leadership Scenarios Interview, Live Working Session Instructions
-For this interview round, you will have an hour-long working session with the CE leadership team. This working session is intended to help us understand how you approach both organizational and customer scenarios. The working session will cover 4 prompts, approximately 10-12 minutes spent on each of them. Details will be provided in advance of the interview. 
 
+For this interview round, you will have an hour-long working session with the CE leadership team. This working session is intended to help us understand how you approach both organizational and customer scenarios. The working session will cover 4 prompts, approximately 10-12 minutes spent on each of them. Details will be provided in advance of the interview.
 
 ## Engineering
 
