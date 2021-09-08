@@ -42,7 +42,7 @@ This code of conduct applies to all spaces managed by Sourcegraph. This includes
   - Creating, modifying, or posting content regarding your competitors’ products or services.
   - Creating, modifying, or posting content in exchange for compensation of any kind (including free or discounted products, refunds, or reimbursements) or on behalf of anyone else.
   - Offering compensation or requesting compensation (including free or discounted products) in exchange for creating, modifying, or posting content.
-  - Posting advertisements or solicitations, including URLs with referrer tags or affiliate codes.
+  - Posting advertisements or solicitations, including URLs with referrer tags or affiliate codes. 
 
 ### Protect your Personal Information
 
