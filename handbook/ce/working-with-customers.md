@@ -36,6 +36,7 @@ Resources
 - [Demo education resources](https://about.sourcegraph.com/handbook/ce/education#trainings-and-demos)
 
 ### Capturing Techincal Requirements
+
 Early on in the process, we begin to understand the needs of our prospective customers. As we learn about them - their needs, their tech stack, etc. we begin to document both the product and technical requirements and the business context of the deal. For complex engagements, we have internal technical reviews with cross-functional teams to ensure we are aligned and that the customer is positioned for success.
 
 #### Resources
@@ -48,7 +49,7 @@ Once a customer is interested in trialing Sourcegraph, we need to start planning
 
 - Documenting their technical landscape (CE-led)
 - Trial use cases / metrics for success (CE-led)
-- Business value assessment planning  (AE-led)
+- Business value assessment planning (AE-led)
 - User survey planning (AE-led)
 - Deployment support and checklist (CE-led)
 - Technical configuration review (CE-led)
@@ -74,6 +75,7 @@ The current CE's in charge of security questionnaires are [Max Wiederholt](https
 ### License Keys
 
 CEs are the team responsible for generating and maintaining license keys for customers. Here's some useful resources on how to do that:
+
 - [Creating and maintaining license keys for customers](https://about.sourcegraph.com/handbook/ce/license_keys)
 - [Recording of creating a new key for demo.sourcegraph.com](https://drive.google.com/file/d/1fYsBqdzdBLd0mzAu2FJxrWznRX0k-iqr/view?usp=sharing)
 
@@ -152,12 +154,15 @@ While our CSE team is primarily responsible for reactive technical support, we h
 At times a customer may raise a feature request or provide product feedback. It is our responsibility as CEs to gather that feedback and share with the product teams.
 
 #### Resources
+
 - [Product Gaps Dashboard](https://sourcegraph2020.lightning.force.com/lightning/r/Dashboard/01Z3t000000p9TjEAI/view?queryScope=userFolders)
 
 ### Account Management
+
 As CEs we are responsible for the technical success of our customers. Post-sales we nurture these relationships and manage the accounts by paying attention to customer health metrics. Usage, adoption, and customer sentiment are important indicators that we monitor and address.
 
 #### Resources
+
 - [Customer Health Dashboard](https://sourcegraph.looker.com/dashboards-next/194)
 
 ---
