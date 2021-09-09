@@ -15,7 +15,7 @@ Hiring managers must have a clearly defined business case for opting into a temp
 
 In both cases, all contractor hires must be approved by the following teams prior to engaging specific contractors or starting a search process: [People Ops](../index.md), Legal, [Finance](../../ops/finance/index.md), and [Talent](../../talent/index.md) (if starting a search).
 
-To notify the above-mentioned teams, please submit an email to people-ops@sourcegraph.com and CC legal@sourcegraph.com and finance@sourcegraph.com with the following information:
+To notify the above-mentioned teams, please submit an email to people-ops@sourcegraph.com and CC legal@sourcegraph.com and finance@sourcegraph.com with the following information: 
 
 - Name of contractor and/or contracting business
 - Description of services
@@ -23,7 +23,7 @@ To notify the above-mentioned teams, please submit an email to people-ops@source
 - Contract duration
 - Payment details (rate, frequency)
 - Expected start date
-- Do they require that we sign their vendor contract or are they willing to sign our template service contract?
+- Do they require that we sign their vendor contract or are they willing to sign our [template service contract](https://about.sourcegraph.com/handbook/ops/legal/Contract%20Review%20and%20Signature%20Authority%20Policy#vendor-contracts-sourcegraph-pays-a-third-party-for-products-or-services)?
 - Confirmation that this has been approved by the head of department
 
 ### Talent and People Ops: First steps
