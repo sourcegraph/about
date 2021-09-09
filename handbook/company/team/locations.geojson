@@ -1163,7 +1163,7 @@
     { 
       "type": "Feature", 
       "properties": { 
-        "name": “Cesar Jimenez“ 
+        "name": "Cesar Jimenez"
       }, 
       "geometry": { 
         "type": "Point", 
