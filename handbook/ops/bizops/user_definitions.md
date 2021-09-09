@@ -2,7 +2,7 @@
 
 We use metrics to guide prioritization and planning. By defining metrics against the kinds of behaviors that we want to drive, we can plan features and measure results against the outcomes we're looking for. The three most important metrics we track are acquisition (of visitors), activation (turning them into active users), and retention (keeping them month to month).
 
-Specific targets for FY22 can be found on the [product home page](../../product/index.md#Goals).
+Specific targets for FY22 can be found on the [product home page](../../product/index.md#goals).
 
 ## User states
 
