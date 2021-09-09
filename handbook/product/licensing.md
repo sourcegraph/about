@@ -7,7 +7,6 @@ Licensing at Sourcegraph can be confusing: the word "license" (or "licence", for
 
 ## Software licensing
 
-
 Sourcegraph's software [license](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/LICENSE) has two parts. The core of Sourcegraph is [licensed under the Apache License, version 2.0](https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.apache). Some features and all our container images are licensed under our [enterprise license](https://github.com/sourcegraph/sourcegraph/blob/main/LICENSE.enterprise).
 
 ### Sourcegraph OSS
@@ -50,7 +49,6 @@ Customers on the Team and Enterprise plan of Sourcegraph Enterprise are provided
 
 > NOTE: Although it includes the word "license", a license key is _completely_ unrelated to the [software license](#software-licensing) described above.
 
-
 ## Talking about license, plans, users
 
 What is a "License"? What is a "Free user"? What is an "Enterprise user"?
@@ -70,9 +68,6 @@ To prevent confusion, avoid using "License" or "Free user". Instead, say:
 - **Sourcegraph Cloud** is a Saas offering of Sourcegraph Enterprise, one of the many ways to [deploy Sourcegraph](https://about.sourcegraph.com/handbook/ce/deployment-methods)
 
 The only case where "license" alone is appropriate is when someone asks "What's the license of Sourcegraph?". The answer to that is Apache 2.0 for Sourcegraph OSS, and the enteprise license for Sourcegraph Enterprise.
-
-
-
 
 ## Summary
 
