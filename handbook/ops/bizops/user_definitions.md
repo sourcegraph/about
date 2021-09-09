@@ -6,7 +6,7 @@ Specific targets for FY22 can be found on the [product home page](../product/ind
 
 ## User states
 
-Users can be in a number of different states. We track the following categories in pings for each month. The explanations are framed as though we're talking about the current month, but apply to any given month (or whatever period is being considered).
+Users can be in a number of different states. We track the following categories in pings for each month. The descriptions below are framed as though we're talking about MAU, but the same definitions apply to whatever period is being considered.
 
 | Metric      | Description                                                      |
 | ----------- | ---------------------------------------------------------------- |
