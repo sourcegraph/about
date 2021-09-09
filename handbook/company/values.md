@@ -109,13 +109,12 @@ Our code and PRs are public, so lack of transparency is only obfuscation, not se
 
 ### Continuously grow
 
-You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
+You strive to continuously grow and learn.
 
-We value growth at Sourcegraph in the form of continuous learning:
-
-- We actively seek out learning opportunities instead of avoiding them.
-- We identify gaps in our knowledge and share them openly and honestly.
-- We adopt a growth mindset.
+- You genuinely solicit feedback early and often.
+- You humbly reflect on past mistakes.
+- You actively seek out learning opportunities instead of avoiding them.
+- You identify gaps in knowledge and share them openly and honestly.
 
 Here are some ways that we support learning, teaching, and knowledge-sharing at Sourcegraph:
 
