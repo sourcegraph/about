@@ -248,7 +248,7 @@ To add yourself to this page:
 ## Christine Lovett (she/her)
 
 - Customer Engineer
-- New York, NY, USA 🇺🇸
+- Baltimore MD, USA 🇺🇸
 - [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [christinelovett](https://github.com/christinelovett)
 - Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT.
 
@@ -597,13 +597,13 @@ To add yourself to this page:
 
 ## Murat Sutunc (he/him)
 
-- Interim Engineering Manager, Extensibility
+- Engineering Manager, Extensibility
 - Redwood City, CA, USA 🇺🇸
 - Name pronunciation: [muˈɾat](http://ipa-reader.xyz/?text=mu%CB%88%C9%BEat&voice=Joey)
 - [@muratsu](https://github.com/muratsu), [murat@sourcegraph.com](mailto:murat@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/muratsutunc)
 - Murat started his career at Microsoft working on web standards. He worked on the JavaScript runtime engine and was a founding team member of the TypeScript language. After Microsoft, he founded a venture-backed company and eventually found his way to the Bay Area. Outside of work, Murat is passionate about cooking, finance, and video games.
 
-## Lisa Tagliaferri (flexible)
+## Lisa Tagliaferri (any)
 
 - Director of Developer Education
 - New York City 🗽
@@ -622,7 +622,7 @@ To add yourself to this page:
 ## Dudley Nostrand
 
 - Senior Manager, Value Engineering
-- Hamilton, Massachusetts USA
+- Hamilton, Massachusetts, USA
 - GitHub: [dnostrand](https://github.com/dnostrand)
 - dudley@sourcegraph.com, [LinkedIn](https://www.linkedin.com/in/dudleynostrand/)
 - Dudley lives in Hamilton, MA ( just north of Boston) with his wife Sasha and two kids Xander and Bennett (both in college in NC). Originally from Florida and Newport, Rhode Island, he moved to Hamilton 22 years ago. He spent 15 years at Fidelity Investments, before moving on to tech companies like BMC and Appdynamics/Cisco. He enjoys spending time boating, fishing, riding his motorcycle, and traveling with his family to tropical destinations to sit on the beach and swim in the ocean.
@@ -849,7 +849,7 @@ To add yourself to this page:
 - Product Manager, Distribution & Security
 - Shaftesbury (Dorset), UK 🇬🇧
 - GitHub: [dan-mckean](https://github.com/dan-mckean)
-- [Readme!](../../product/dan-mckean-readme.md)
+- [Readme!](../../product/readmes/dan-mckean-readme.md)
 - [dan.mckean@sourcegraph.com](mailto:dan.mckean@sourcegraph.com)
 - Dan grew up in the South of England, and (with a detour via London) ended up in Dorset in the south west, a county with beautiful coast (but lives as far from the sea as it's possible to get – though not deliberately!) He lives with his wife (Emma), four kids (7y, 5y, 2x14m) and 3-legged springer spaniel (9y). His spare time is largely spent chasing his twin identical boys in an effort to prevent injury. Any (genuinely) spare time is spent trying to make things out of wood.
 
@@ -863,8 +863,8 @@ To add yourself to this page:
 
 - Teammate Success Manager
 - Seattle, Washington, USA 🇺🇸
-- [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/)
-- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (professionally known as @sterlingandlola). In her spare time, Cassie enjoys spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to garden.
+- [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/), [README](https://about.sourcegraph.com/handbook/people-ops/cassie-bio)
+- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (_professionally known as @sterlingandlola_). In her spare time, Cassie enjoys really difficult spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to not kill her new garden.
 
 ## Rebecca Rissinger (she/her)
 
@@ -1020,14 +1020,6 @@ To add yourself to this page:
 - Minneapolis, MN USA :us:
 - GitHub: [kelseynagel] (https://github.com/kelseynagel)
 - Kelsey is a North Dakota native living in Minneapolis with her husband and two dogs, Crew and Nash. She is an avid Recruiter, bringing 5 years of talent acquisition experience in high growth companies before joining Sourcegraph. When not working, you'll find Kelsey travelling, spending time on lakes in Minnesota summers, and trying new Sushi restaurants.
-
-## Oluebube Princess Egbuna (She/Her)
-
-- Education Engineer
-- Lagos, Nigeria 🇳🇬
-- GitHub: [Princesso](https://github.com/Princesso)
-- [princess@sourcegraph.com](mailto:princess@sourcegraph.com)
-- Princess is Nigerian and lives in Lagos, Nigeria. She has worked as a software engineer using several technologies of which javascript is her favorite. She preaches open source and also leads a few tech communities. When she is not in the zone, she enjoys cooking, taking walks with her daughter and hosting friends.
 
 ## Gabe Torres (He/Him)
 
@@ -1338,7 +1330,7 @@ To add yourself to this page:
 - GitHub: [serinadawn](https://github.com/serinadawn/)
 - [serina.clark@sourcegraph.com](mailto:serina.clark@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/serinaclark/)
 - Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
-- I was born and raised in Steamboat Springs, CO. I love all things outdoors (hiking, biking, camping, swimming, you name it).  
+- I was born and raised in Steamboat Springs, CO. I love all things outdoors (hiking, biking, camping, swimming, you name it).
   I am passionate about travel and learning as much as a I can about other cultures. A few of the places I have spent significant time include; Saudi Arabia, Finland, France, and Mexico. Enabling software engineering teams to kick ass at development is what I love to do for work!!!
 
 ## Dan Ryan (he/him)
@@ -1380,3 +1372,79 @@ To add yourself to this page:
 - GitHub: [Cyberwhiz5000](https://github.com/Cyberwhiz5000)
 - [nonso.obiano@sourcegraph.com](mailto:nonso.obiano@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/obianochukwunonso/)
 - Nonso lives in Lagos, Nigeria with his wife, Rita and they volunteer at their local church as pastors for the youth group. He loves a good sci-fi thriller, European soccer leagues, video games and works of fiction (Dean Koontz, Stephen King... you get the idea). Nonso has worked in customer support and contact centre operations the past decade and has led teams to deliver memorable experiences across various industries and customer segments.
+
+## Brielle Collins
+
+- Customer Support Manager
+- Chicago, Illinois 🇺🇸
+- GitHub: [Brielle-C](https://github.com/Brielle-C)
+- [brielle.collins@sourcegraph.com](mailto:brielle.collins@sourcegraph.com)
+- Brielle Enjoys reading and occasionally writing short stories. She loves to binge-watch series and anime has a soft spot in her heart. She is the youngest of 4 and is a super aunt to all of her nieces and nephews. Brielle is very family-oriented and enjoys spending time at home with friends and family, although she was born in the Summer months Fall is her favorite season. She currently lives is searching for a dog to be a pet mom to. Brielle identifies as a Gryffindor and is a tea enthusiast, her favorite is David’s Tea Pomegranate blend.
+
+## Jason Yavorska (he/him)
+
+- Product Director for Global Code Graph
+- Leiden, NL 🇳🇱 and part of the year in Odessa, UA 🇺🇦
+- GitHub: [jyavorska](https://github.com/jyavorska)
+- [README](../../product/readmes/jyavorska-readme.md)
+- [jason.yavorska@sourcegraph.com](mailto:jason.yavorska@sourcegraph.com), [Twitter](https://twitter.com/j4yav), [Lichess](https://lichess.org/@/j4yav), [LinkedIn](https://linkedin.com/in/jyavorska), [Personal Site](https://metaluna.io)
+- Jason was born in the United States, but moved to the Netherlands in 2015. A big part of that move was due to having a big interest in history and classical arts and music, and living here provides a nice base for exploration. He has an international family with most parts in the United States and Ukraine, so often is traveling between these places. He has two young children, a daughter and younger son, and enjoys food, travel, guitar, fantasy and science fiction books, and (retro) technology. His personal passion is [helping kids learn to code](https://metaluna.io/learn/).
+
+## Tamar Joyeux
+
+- Customer Support Manager
+- Camas, WA, United States 🇺🇸
+- GitHub: [tamarj0y](https://github.com/tamarj0y)
+- [tamar.joyeux@sourcegraph.com](mailto:tamar.joyeux@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tamarj), [pronounce my name 🔊](https://www.name-coach.com/tamar-joyeux)
+- Tamar was born on the island of St. Lucia 🇱🇨. He then spent several years living and working in London, England. He recently (and somewhat reluctantly) settled in the PNW. Tamar currently lives with his wife and two kids in Camas, Washington. He enjoys running local trails, signing up for moderately lengthy ultramarathon races and a host of other outdoor themed activities. Tamar has spent most of his career in infrasturcture ops. Before Sourcegraph, he led an infrastructure and dev ops team at a US based fitness equipment manufacturer.
+
+## Diego Comas (he/him/his)
+
+- Security Engineering Manager
+- Barcelona, Spain 🇪🇸
+- GitHub: [dcomas](https://github.com/dcomas)
+- [diego.comas@sourcegraph.com](mailto:diego.comas@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/diegocomas)
+- Diego lives in Barcelona, with his wife and two kids. He is passionate about technology, sci-fi movies and football(soccer).
+- In the last 10 years he lived in London (UK) and worked for tech startups and scale ups building teams and helping them improve their security posture.
+- Diego never misses a game of his local team FC Barcelona 🏟. In his spare time (if kids allow!) he likes to play football ⚽️, other sports like padel tennis 🎾 and sailing ⛵️ in the Costa Brava.
+
+## Andrew Hsu (he/him)
+
+- Customer Engineer
+- Los Angeles, California, United States 🇺🇸
+- GitHub: [superhsu](https://github.com/superhsu)
+- [andrew.hsu@sourcegraph.com](mailto:andrew.hsu@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/andrewjhsu/)
+- Andrew lives in Los Angeles, California, with his partner and their grumpy cat, Ginger. He has a passion for technology and sales. Growing up at a young age, he helped his cousins build and sell computers. Andrew has spent most of his career as a Sales Engineer. Before Sourcegraph, he helped sell observability software at Splunk. Outside of work, he enjoys traveling ✈️, spending time with family & friends, watching movies, playing competitive sports & e-sports.
+
+## JH Chabran (he/him)
+
+- Software Engineer
+- Name Pronunciation: [/ʒiaʃ/](https://www.name-coach.com/jh-chabran)
+- Lyon, France 🇫🇷
+- Github: [jhchabran](https://github.com/jhchabran)
+- [jean-hadrien.chabran@sourcegraph.com](mailto:jean-hadrien.chabran@sourcegraph.com)
+- JH loves to learn new things all the time and to build software that helps other developers. He got into coding by learning how some developers managed to translate old video games through reverse engineering. In his free time, JH likes to experiment with new tools, play indie video games, take long walks with his (stubborn) Corgi and cook for his friends and family.
+
+## Chris Wendt
+
+- Software Engineer on Code Intelligence
+- Boulder, CO 🇺🇸
+- GitHub: [chrismwendt](https://github.com/chrismwendt)
+- [chris.wendt@sourcegraph.com](mailto:chris.wendt@sourcegraph.com), [Twitter](https://twitter.com/ChrisMWendt), [LinkedIn](https://www.linkedin.com/in/chrismwendt/)
+- Programming language enthusiast, speedcuber, SSBM player, guitar and piano player, and dog lover. He has worked on some solo projects ([CodeWing](https://codewing.dev/) and [CodeBook](https://codebook.page/)), a distributed data pipeline at Microsoft, search at GitHub, developer experience at ThoughtSpot, and earned his BS in Computer Science with a specialization in computer graphics from Purdue.
+
+## Mohammad Umer Alam (he/him)
+
+- Security Engineer
+- Staten Island, NY 🇺🇸
+- GitHub: mohammadualam
+- [mohammad.alam@sourcegraph.com](mailto:mohammad.alam@sourcegraph.com), [LinkedIn](https://linkedin.com/in/mohammadalam/)
+- Mohammad is an avid tinkerer of gadgets and networks. He enjoys taking apart old electronics☎️ and see how they tick. So passion for technology and in relation to it, security, comes naturally to him. He is also very enthusiastic about driving his Jeep Wrangler, although he has yet to go offroading with it. Mohammad also enjoys staying active via outdoor activities and taking part in recreational sports leagues. He is a diehard Yankees⚾️ fan and hopes that they can win another championship soon so he can attend the ticker-tape parade in NYC.
+
+## Grace Bohl (she/her)
+
+- Corporate Recruiter
+- Denver, CO 🇺🇸
+- GitHub: gracebohl
+- [grace.bohl@sourcegraph.com](mailto:you@sourcegraph.com)
+- Grace is a Chicago, IL native and moved to Denver over 4 years ago. Prior to Sourcegraph, Grace gained experience recruiting in high growth SaaS companies such as Xactly Corp and Slack. When not working, Grace enjoys taking advantage of everything Colorado has to offer such as hiking, camping and snowboarding. In her free time, she enjoys going on walks, cooking, traveling and hanging with family and friends.

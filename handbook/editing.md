@@ -18,6 +18,7 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 Here's the process for getting a change published to the handbook. For detailed step-by-step instructions (intended for people who are new to Git), see the sections below.
 
+1. Make sure you've been added to [Sourcegraph's Github Org](https://github.com/sourcegraph/about). If you need access, contact Tech Ops in the #it-tech-ops Slack channel.
 1. Propose the edits you want to make by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) on the Git repository at [github.com/sourcegraph/about](https://github.com/sourcegraph/about).
    - Because the [handbook is public](usage.md#why-make-this-handbook-public), anyone in the world can see your proposed edits.
 1. Make sure the [handbook checks pass](#handbook-checks).
@@ -178,6 +179,15 @@ Redirect rules follows a simply syntax of: `from-path to-path 308`
 E.g. `/handbook/ce/support/ /handbook/support/ 308`
 
 The page that's being redirected _from_ must be deleted, or the build will break.
+
+## Markdown Tips
+
+1. Spacing matters when it comes to tiered lists. To indent a line in a list, add two spaces before the dash or asterisk. Incorrect spacing still allow those bullets and indents to display, but spacing and sizing may look different from the rest of your document. See more under the "Lists" section under Examples [here](https://guides.github.com/features/mastering-markdown/).
+
+## Markdown Resources
+
+- [Docs to Markdown](https://workspace.google.com/marketplace/app/docs_to_markdown/700168918607) is a Google Docs Add-On that will convert your doc to Markdown for you.
+- [StackEdit](https://stackedit.io/app#) gives you a side-by-side view of your doc and the corresponding Markdown version.
 
 ## Running a local preview handbook site
 

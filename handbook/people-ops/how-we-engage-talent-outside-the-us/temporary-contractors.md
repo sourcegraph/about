@@ -13,7 +13,7 @@ Contracted for a specific period of time to cover a current but temporary busine
 Contracted as temporary contractors with the intention and possibility of converting to permanent full-time teammates.
 Hiring managers must have a clearly defined business case for opting into a temp-to-perm engagement vs. a permanent full-time teammate.
 
-In both cases, all contractor hires must be approved by the following teams prior to engaging specific contractors or starting a search process: [Talent](../../talent/index.md), [People Ops](../index.md), and [Finance](../../ops/finance/index.md).
+In both cases, all contractor hires must be approved by the following teams prior to engaging specific contractors or starting a search process: [People Ops](../index.md), Legal, [Finance](../../ops/finance/index.md), and [Talent](../../talent/index.md) (if starting a search).
 
 ### Talent and People Ops: First steps
 
@@ -23,7 +23,7 @@ Once Talent, People Ops, and Finance have approved of a contractor hire, have fi
 
 **Temp to perm contractors** will receive the same email as teammates do, with the exception of the budget section (as they are still expected to have all the necessary resources and devices to carry out the role prior to engagement).
 
-Keep in mind, temporary contractors’ start date should align with the [cohort calendar](https://docs.google.com/spreadsheets/d/1jJY3E7j31ZD7J-ouf3Gf-uioHCAXxe-0bBVLEmdtVGQ/edit#gid=0). If an exception needs to be made, notify PeopleOps and Talent.
+Keep in mind, temporary contractors’ start date should align with the cohort calendar ([2021](https://docs.google.com/spreadsheets/d/1jJY3E7j31ZD7J-ouf3Gf-uioHCAXxe-0bBVLEmdtVGQ/edit#gid=0) & [2022](https://docs.google.com/spreadsheets/d/1Q_h9I0CkppecPNbaMlhe7uafcNdfzWuiPApm0KxTaAA/edit#gid=0) ). If an exception needs to be made, notify PeopleOps and Talent.
 
 ### Onboarding
 
