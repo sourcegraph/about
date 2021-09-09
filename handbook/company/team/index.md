@@ -603,7 +603,7 @@ To add yourself to this page:
 - [@muratsu](https://github.com/muratsu), [murat@sourcegraph.com](mailto:murat@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/muratsutunc)
 - Murat started his career at Microsoft working on web standards. He worked on the JavaScript runtime engine and was a founding team member of the TypeScript language. After Microsoft, he founded a venture-backed company and eventually found his way to the Bay Area. Outside of work, Murat is passionate about cooking, finance, and video games.
 
-## Lisa Tagliaferri (flexible)
+## Lisa Tagliaferri (any)
 
 - Director of Developer Education
 - New York City 🗽
@@ -1021,14 +1021,6 @@ To add yourself to this page:
 - GitHub: [kelseynagel] (https://github.com/kelseynagel)
 - Kelsey is a North Dakota native living in Minneapolis with her husband and two dogs, Crew and Nash. She is an avid Recruiter, bringing 5 years of talent acquisition experience in high growth companies before joining Sourcegraph. When not working, you'll find Kelsey travelling, spending time on lakes in Minnesota summers, and trying new Sushi restaurants.
 
-## Oluebube Princess Egbuna (She/Her)
-
-- Education Engineer
-- Lagos, Nigeria 🇳🇬
-- GitHub: [Princesso](https://github.com/Princesso)
-- [princess@sourcegraph.com](mailto:princess@sourcegraph.com)
-- Princess is Nigerian and lives in Lagos, Nigeria. She has worked as a software engineer using several technologies of which javascript is her favorite. She preaches open source and also leads a few tech communities. When she is not in the zone, she enjoys cooking, taking walks with her daughter and hosting friends.
-
 ## Gabe Torres (He/Him)
 
 - Customer Support Engineer
@@ -1154,7 +1146,7 @@ To add yourself to this page:
 - Naples, FL USA 🇺🇸
 - GitHub: [marija.petrovic214](https://github.com/marija.petrovic214), [LinkedIn](https://www.linkedin.com/in/marija-petrovic-b49b9b38/)
 - [marija.petrovic@sourcegraph.com](mailto:marija.petrovic@sourcegraph.com)
-- Marija, pronounced "Maria", is a Serbian-American living in sunny Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida. Outside of work, she enjoys spending time with family & her son Luka, traveling, tennis, skiing, yoga, painting/art, and investing in anything self-care/self-improvement-oriented!
+- Marija, pronounced "Maria", is a Serbian-American living in Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida.
 
 ## Shawn King (He/Him)
 
@@ -1456,3 +1448,11 @@ To add yourself to this page:
 - GitHub: gracebohl
 - [grace.bohl@sourcegraph.com](mailto:you@sourcegraph.com)
 - Grace is a Chicago, IL native and moved to Denver over 4 years ago. Prior to Sourcegraph, Grace gained experience recruiting in high growth SaaS companies such as Xactly Corp and Slack. When not working, Grace enjoys taking advantage of everything Colorado has to offer such as hiking, camping and snowboarding. In her free time, she enjoys going on walks, cooking, traveling and hanging with family and friends.
+
+## Cesar Jimenez
+
+- Senior Software Engineer on Code Intelligence
+- Seattle, WA 🇺🇸
+- Github: [numbers88s](https://github.com/numbers88s)
+- [cesar.jimenez@sourcegraph.com](mailto:cesar.jimenez@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cesarrjimenez/)
+- Cesar loves running, hiking, playing board games, listening to music, and going for walks with his wife and baby boy Leo. Favorite video games includes SOCOM 2 and Super Smash Bros Melee too! Proudly on Team Fox/Falco. Cesar used to be a dev bootcamp instructor at Code Fellows and loves cooking, and his favorite thing to do is try out new restaurants.
