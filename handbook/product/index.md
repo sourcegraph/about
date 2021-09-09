@@ -18,12 +18,15 @@ You can reach us at the #product channel or @product-team on Slack. If you have 
 
 ## Metrics
 
+- [User metric definitions](../ops/bizops/user_definitions.md)
 - [Product metrics dashboard](https://sourcegraph.looker.com/dashboards/127)
 - [How to add metrics](../ops/bizops/analytics.md#How-to)
 
 ## Goals
 
-Within the product organization, individual product engineering teams set their own goals.
+We have a topline goal of 10k [monthly active users](../ops/bizops/user_definitions.md) on the cloud platform for FY22.
+
+Individual product engineering teams also set their own goals:
 
 - [Search core and Search product](../engineering/search/goals.md)
 - [Code Intelligence](../engineering/code-intelligence/goals.md)
