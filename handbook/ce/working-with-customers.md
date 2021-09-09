@@ -41,7 +41,7 @@ Early on in the process, we begin to understand the needs of our prospective cus
 
 #### Resources
 
-- [Technical Design Document Template](https://docs.google.com/document/d/19qcdFcFpqHNE6OTgO8SwdTF7FfB4AJH6Hlqeywgv6Yc/edit) (work in progress)
+- [Technical Design Document Template](https://docs.google.com/document/d/19qcdFcFpqHNE6OTgO8SwdTF7FfB4AJH6Hlqeywgv6Yc/edit) (work in progress, for accounts which may deviate from our standard technical landscape)
 
 ### Trial / POC Planning
 
