@@ -8,11 +8,11 @@ In support of our product/engineering Q3 objective to _Make cloud and enterprise
 | 2   | In-progress | All CSEs    | Make at least 45 doc updates/additions across the team                                                                         |
 | 3   | In-progress | Giselle     | Retro all Q2 tickets that resulted in a #rfh for Distribution and Core App                                                     |
 | 4   | In-progress | Adeola      | Create cheat sheets of what logs are most needed in certain situations                                                         |
-| 5   | In-progress | Beatrix     | Make the [command generator](https://sourcegraph.github.io/support-tools/command-generator/beta/) customer-facing and scalable |
+| 5   | In-progress | Beatrix     | Make the [command generator](https://command-generator.netlify.app/) customer-facing and scalable |
 | 6   | In-progress | Michael     | Create database type solution to make it easy and reliable for CSEs to learn from past tickets                                 |
 | 7   | In-progress | Alex        | Streamline key steps in CSE workflow                                                                                           |
 | 8   | In-progress | Carl        | 5 folks complete kubernetes certification                                                                                      |
-| 9   | Not started | Virginia    | Implement retro practice for all tickets that take longer than 7 days to solve                                                 |
+| 9   | In-progress | Virginia    | Implement retro practice for all tickets that take longer than 7 days to solve                                                 |
 | 10  | Not started | Virginia    | Provide enablement in how to navigate difficult conversations with customers                                                   |
 | 11  | In-progress | Adeola      | CSE Onboarding updates V3                                                                                                      |
 
@@ -75,7 +75,9 @@ In support of our product/engineering Q3 objective to _Make cloud and enterprise
 ### 9 Long running issue retros
 
 - Workgroup: Virginia, Alex
-- Details: Implement practice to have CS, CE, Eng retros on all cases that take longer than 7 days to resolve
+- Channel: #wg-cse-long-running-case-retro-practice
+- Details: Implement practice to have CS, CE, Eng retros on all cases that take longer than X days to resolve
+- [Working notes document](https://docs.google.com/document/d/1RG2phsY5Ql2XP8qqf08asPnXA7MtAyWq_LevPouoOtA/edit)
 
 ### 10 Hard convo enablement
 
