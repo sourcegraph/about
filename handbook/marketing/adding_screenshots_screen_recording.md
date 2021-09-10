@@ -6,7 +6,7 @@
 
 - Favor capturing only the part of the screen that’s required
 - Keep GIF-like videos 15 seconds or less
-- Do not actually use real GIF images, record a GIF-like video and embed it in a way that behaves like a GIF. Only use GIFs where this is not possible, e.g. on social media or in Google slides.
+- Do not actually use real GIF images. Record a GIF-like video and embed it in a way that it behaves like a GIF. Only use GIFs where this is not possible, e.g. on social media or in Google slides.
 - GIF-like videos are typically great for short "check this out" recordings, where videos are better at "how-to" or promotional style content
 - Keep GIF-like videos and images as small as possible with no retina sizes (ratio of image size to intended display size is 1:1)
 - If doing a full-screen recording, 1280x720 (720p) will produce easy to read results at default settings
@@ -54,17 +54,17 @@ Whether you need a dedicated screenshot application or not depends on how often 
 
 ## Adding a screen recording (screencast)
 
-A screen recording (screencast) is a great way to see a feature or flow in action, and we want everyone at Sourcegraph to feel capable of creating GIF-like videos and/or longer videos. This doesn’t mean though that you’re on your own, so if you need assistance of any kind, including something created entirely for you, just reach out to your mates on the marketing team and we’ll help you get it sorted!
+A screen recording (screencast) is a great way to see a feature or flow in action, and we want everyone at Sourcegraph to feel capable of creating GIF-like videos and/or longer videos. If you need assistance of any kind, including something created entirely for you, just reach out to your mates on the marketing team and we’ll help you get it sorted!
 
 ### Screen recording apps
 
 The reason to use a paid tool is more settings, export quality controls, and a nicer workflow for producing assets. If you’re planning on doing this more than once, it’s worth investing in a professional tool.
 
 - [QuickTime (videos and GIF-like videos)](https://support.apple.com/en-au/guide/quicktime-player/qtp97b08e666/mac)<br/>
-  Can capture a window, a selection of, or the entire screen, and in conjunction with the "Split Clip" functionality makes trimming the start and end easy. It’s a great tool that’s free on macOS.
+  Can capture a window, a selection of, or the entire screen, and in conjunction with the "Split Clip" functionality makes trimming the start and end easy. It’s a great tool, free on macOS.
 
 - [Cleanshot](https://getcleanshot.com/)<br/>
-  Export screen recordings to video and nice features such as hiding desktop icons and notifications during recordings automatically. It does not have any editing or annotation tools for screen recordings though.
+  Export screen recordings to video and nice features such as hiding desktop icons and notifications during recordings automatically. It does not have any editing or annotation tools for screen recordings.
 
 - [ScreenFlow](https://www.telestream.net/screenflow/overview.htm)<br/>
   Simply the best screen recording, editing, and production tool available. Designed primarily for video work (e.g. editing).
@@ -78,7 +78,7 @@ Recording a great screencast is a large topic, but here are some essentials to k
 - Only capture the part of the screen that is necessary. If the output is video, then aim for 16:9 ratio for YouTube
 - If the entire screen needs to be captured, then your resolution should be 1280x720 (720p), as that will make on-screen elements easy to read
 - Decide whether it should be standalone, or if it only makes sense when embedded with content
-- Ideally, GIF-like videos should less than 15-20 seconds in length, otherwise, it’s most likely better as a video
+- Ideally, GIF-like videos should be less than 15-20 seconds. Otherwise, it’s most likely better as a video.
 - Invest in learning a tool such as ScreenFlow if you need to annotate and/or edit your recordings
 - Does your video make sense without an accompanying explanation? If not, then a voice-over or text annotations can help a lot
 
@@ -127,7 +127,7 @@ Zoom Cloud recordings give you an automatically-transcribed WebVTT file when you
 
 Once you have your `.vtt` file, upload it to [sourcegraph-assets](https://console.cloud.google.com/storage/browser/sourcegraph-assets/?project=sourcegraph-de&folder=true&organizationId=true) next to the video with the same file name (but with a `.vtt` ending).
 
-Once the file uploaded, click the three dots menu on the right of the `.vtt` file's row, click "Edit metadata", paste `text/vtt; charset=UTF-8` into the "Content-Type" field (replacing any content was in the field before) and click "SAVE".
+Once the file is uploaded, click the three dots menu on the right of the `.vtt` file's row, click "Edit metadata", paste `text/vtt; charset=UTF-8` into the "Content-Type" field (replacing any content was in the field before) and click "SAVE".
 The "Type" column should now say `text/vtt; charset=UTF-8` for the `.vtt` file.
 
 Now you can embed your video with a **captions track** that references the `.vtt` file, like so:
