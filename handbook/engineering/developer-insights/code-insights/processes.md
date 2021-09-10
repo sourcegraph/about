@@ -63,7 +63,7 @@ Larger (usually multi-iteration) projects coming from our roadmap go through thr
 
 2. **Design and implementation planning** (usually 1-2 weeks)<br>
    For a UI project, our designer will create wireframes and designs which are reviewed and discussed by all teammates in Figma.
-   Similarly, engineers will make a proposal for the needed GraphQL APIs (e.g. in an RFC) and agree on the API shape, think the implementation through, and create concrete implementation sub-tasks with estimates, testing plans and a tracking issue collecting them.
+   Similarly, engineers will make a proposal for the needed GraphQL APIs (e.g. in an RFC) and agree on the API shape, think the implementation through, and create concrete implementation sub-tasks with estimates, testing plans, and a tracking issue collecting them.
    The goal of this phase is to be "ready to go" for the implementation phase – having a plan (with reasonable confidence) that only needs to be executed.
 
 3. **Implementation and testing** (usually 1-4 weeks)<br>
