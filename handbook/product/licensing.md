@@ -3,7 +3,7 @@
 Licensing at Sourcegraph can be confusing: the word "license" (or "licence", for the non-Americans in the crowd) is used in two overlapping contexts within Sourcegraph:
 
 1. The software license under which our users obtain and potentially modify our source code, and
-2. The [team or enterprise plan](https://about.sourcegraph.com/pricing) that users are on Sourcegraph Enterprise, which is controlled via a [license key](../ce/license_keys.md).
+2. The [team or enterprise plan](https://about.sourcegraph.com/pricing) that users are paying for on Sourcegraph Enterprise, which is controlled via a [license key](../ce/license_keys.md). (The Free plan does not have a license key.)
 
 ## Software licensing
 
