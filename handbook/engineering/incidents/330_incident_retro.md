@@ -2,7 +2,7 @@
 
 On Wednesday, July 21st, 2021, Sourcegraph released version 3.30 to customers. Within a few hours, several customers reported an inability to launch Sourcegraph utilizing the 3.30. Sourcegraph released updated changelogs requesting customers to stop any planned updates.
 
-Upon further investigation, our engineers identified that in 3.30 the base postgres container was updated from debian to alpine (due to still-unpatched vulnerabilities in the debian image), which changed the glibc version. This new glibc version contained a major update of its Unicode locale data with new collation information. This change also required indexes depending on these collations to be rebuilt immediately (more information here and here).
+Upon further investigation, our engineers identified that in 3.30 the base postgres container was updated from debian to alpine (due to still-unpatched vulnerabilities in the debian image), which changed the glibc version. This new glibc version contained a major update of its Unicode locale data with new collation information. This change also required indexes depending on these collations to be rebuilt immediately (more information [here](https://postgresql.verite.pro/blog/2018/08/27/glibc-upgrade.html) and [here](https://docs.sourcegraph.com/admin/migration/3_30)).
 
 ## Looking Forward:
 
