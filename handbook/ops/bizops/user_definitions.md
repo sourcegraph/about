@@ -20,7 +20,7 @@ Users can be in a number of different states. We track the following categories 
 
 ### What is a visitor?
 
-A visitor is a unique person who showed up on the site and did anything (or nothing at all, apart from viewing the page.) This is important to measure because each of these users is potentially an active user, but it's also important that we don't count anyone who lands on the site as an active user so that we can measure success of our features that are intended to convert them.
+A visitor is a unique person who showed up on the site and did anything (or nothing at all, apart from viewing the page.) This is important to measure because each of these users is potentially an active user, but it's also important that we don't count anyone who uses the product as an active user so that we can measure success of our features that are intended to convert them.
 
 ### What is an active user?
 
