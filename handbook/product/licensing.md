@@ -65,7 +65,7 @@ To prevent confusion, avoid using "License" or "Free user". Instead, say:
 - a **Sourcegraph Enterprise** user on a **Free plan**
 - a **Sourcegraph Enterprise** user on a **Team/Enterprise plan**
 - a **license key** for the **Team/Enterprise plan** of **Sourcegraph Enterprise**
-- **Sourcegraph Cloud** is a Saas offering of Sourcegraph Enterprise, one of the many ways to [deploy Sourcegraph](https://about.sourcegraph.com/handbook/ce/deployment-methods)
+- **Sourcegraph Cloud** is a SaaS offering of Sourcegraph Enterprise, one of the many ways to [deploy Sourcegraph](../ce/deployment-methods.md)
 
 The only case where "license" alone is appropriate is when someone asks "What's the license of Sourcegraph?". The answer to that is Apache 2.0 for Sourcegraph OSS, and the enteprise license for Sourcegraph Enterprise.
 
