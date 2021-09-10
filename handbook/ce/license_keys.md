@@ -26,22 +26,23 @@ First, the company's Sourcegraph administrator must create a Sourcegraph.com use
 2. If the customer does not have a license yet, navigate to the [users page](https://sourcegraph.com/site-admin/users) and create new user account.
 3. Create an account with the username `CompanyName-UniqueId`. Replace `CompanyName` with the company name, and use the Unique ID from the Unique Account ID field on the Account record in Salesforce.
 4. Navigate to the [subscriptions page](https://sourcegraph.com/site-admin/dotcom/product/subscriptions). If the user needs a new product subscription (new prospect doing a trial, or an existing prospect purchasing a production license for the first time), click **Create product subscription**. Search for the user you just created.
-5. Otherwise (renewals or expansions), just search for the user associated with the company, and click into the subscription ID (left-most column). 
+5. Otherwise (renewals or expansions), just search for the user associated with the company, and click into the subscription ID (left-most column).
 6. In either case, click **Generate new license manually**. Fill out the license end date, number of users, and tags. For tags, see [License Key Tags](#license-key-tags) for a list you can just copy. Tags should be separated by commas, with no spaces. You will need to include:
-  - `plan:enterprise-0` or `plan:team-0` for Enterprise or Teams customers, respectively.
-  - `true-up` to allow the company to go over the user limit on the license. No tag is needed for hard cap.
-  - `mau` to indicate that the company is on a monthly usage-based billing model.
-  - `trial` to show an indicate in Sourcegraph that the company is on a trial.
-  - `batch-changes` for Batch Changes (formerly `campaigns`)
-  - `acls` for external Permission syncing from the code host. (Add this to all licenses.)
-  - `private-extension-registry` to allow for a private Extension registry. All Enterprise licenses should have this added.
-  - `remote-extensions-allow-disallow` to allow for the admin to enable/disable remote extensions. All Enterprise licenses should have this added.
-  - `monitoring` - Monitoring. All licenses should have this added.
-  - `internal` for licenses used for internal sites (dotcom, k8s, etc.)
-  - `dev` for internal developer licenses
-  - The company's name (with dashes instead of spaces), to make it easy to search for a given license key in the future.
-  - Set the licensed number of users (note that if you added the `true-up` tag above, the company will be able to exceed this count, but administrators will see a warning) and the number of days that the license should be valid, and click **Generate license**.
-  - Finally, copy the license key, and share it with the company.
+
+- `plan:enterprise-0` or `plan:team-0` for Enterprise or Teams customers, respectively.
+- `true-up` to allow the company to go over the user limit on the license. No tag is needed for hard cap.
+- `mau` to indicate that the company is on a monthly usage-based billing model.
+- `trial` to show an indicate in Sourcegraph that the company is on a trial.
+- `batch-changes` for Batch Changes (formerly `campaigns`)
+- `acls` for external Permission syncing from the code host. (Add this to all licenses.)
+- `private-extension-registry` to allow for a private Extension registry. All Enterprise licenses should have this added.
+- `remote-extensions-allow-disallow` to allow for the admin to enable/disable remote extensions. All Enterprise licenses should have this added.
+- `monitoring` - Monitoring. All licenses should have this added.
+- `internal` for licenses used for internal sites (dotcom, k8s, etc.)
+- `dev` for internal developer licenses
+- The company's name (with dashes instead of spaces), to make it easy to search for a given license key in the future.
+- Set the licensed number of users (note that if you added the `true-up` tag above, the company will be able to exceed this count, but administrators will see a warning) and the number of days that the license should be valid, and click **Generate license**.
+- Finally, copy the license key, and share it with the company.
 
 ### License key tags
 
