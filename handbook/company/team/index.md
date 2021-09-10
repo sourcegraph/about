@@ -1146,7 +1146,7 @@ To add yourself to this page:
 - Naples, FL USA 🇺🇸
 - GitHub: [marija.petrovic214](https://github.com/marija.petrovic214), [LinkedIn](https://www.linkedin.com/in/marija-petrovic-b49b9b38/)
 - [marija.petrovic@sourcegraph.com](mailto:marija.petrovic@sourcegraph.com)
-- Marija, pronounced "Maria", is a Serbian-American living in sunny Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida. Outside of work, she enjoys spending time with family & her son Luka, traveling, tennis, skiing, yoga, painting/art, and investing in anything self-care/self-improvement-oriented!
+- Marija, pronounced "Maria", is a Serbian-American living in Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida.
 
 ## Shawn King (He/Him)
 
@@ -1448,3 +1448,19 @@ To add yourself to this page:
 - GitHub: gracebohl
 - [grace.bohl@sourcegraph.com](mailto:you@sourcegraph.com)
 - Grace is a Chicago, IL native and moved to Denver over 4 years ago. Prior to Sourcegraph, Grace gained experience recruiting in high growth SaaS companies such as Xactly Corp and Slack. When not working, Grace enjoys taking advantage of everything Colorado has to offer such as hiking, camping and snowboarding. In her free time, she enjoys going on walks, cooking, traveling and hanging with family and friends.
+
+## Cesar Jimenez
+
+- Senior Software Engineer on Code Intelligence
+- Seattle, WA 🇺🇸
+- Github: [numbers88s](https://github.com/numbers88s)
+- [cesar.jimenez@sourcegraph.com](mailto:cesar.jimenez@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cesarrjimenez/)
+- Cesar loves running, hiking, playing board games, listening to music, and going for walks with his wife and baby boy Leo. Favorite video games includes SOCOM 2 and Super Smash Bros Melee too! Proudly on Team Fox/Falco. Cesar used to be a dev bootcamp instructor at Code Fellows and loves cooking, and his favorite thing to do is try out new restaurants.
+
+## Trey Sizemore (he/him)
+
+- Enablement Manager
+- Various, USA 🇺🇸
+- Github: hjsizemore
+- [trey@sourcegraph.com](mailto:trey@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/treysizemore/)
+- Trey is currently living as a digital nomad, traveling the US in a 5th wheeler with his fiancée Paige and their 2 dogs Jack and Dash. He has 3 children (Sahara, Savannah, and Ethan) who he's immensely proud of and who are off on thier own adventures. Trey enjoys playing [pickleball] (https://www.usapa.org), tennis, and pretty much any gadget. He's always up for time at the beach 🏖, traveling to new destinations (and old favorites), and the occasional dad joke 😆
