@@ -375,7 +375,7 @@ Initialize the new production deployment (`NEW_DEPLOYMENT`) using the snapshot c
 ../util/init-deployment.ts $NEW_DEPLOYMENT upgrade-machine-$DATE
 ```
 
-We want to make sure our resource changes *only apply to our new machine*, not both machines.
+We want to make sure our resource changes _only apply to our new machine_, not both machines.
 Run the following to spin up the new machine instead:
 
 ```sh
