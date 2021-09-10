@@ -31,7 +31,7 @@ Benefits to the OSS option include:
 - No user limit
 - Some people prefer OSS ideologically
 
-If someone is talking to Sales or CE and says they’re using the OSS version, they are 99% of the time using the free tier of Enterprise Sourcegraph. If they say they’re hitting a user limit, they’re using the free version of Sourcegraph, not Sourcegraph OSS.
+If someone is talking to Sales or CE and says they’re using the OSS version, they are 99% of the time using the free tier of Sourcegraph Enterprise. If they say they’re hitting a user limit, they’re using the free version of Sourcegraph Enterprise, not Sourcegraph OSS.
 
 ### Sourcegraph Enterprise
 
