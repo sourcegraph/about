@@ -35,7 +35,7 @@ Mitchell also has a stack of [Raspberry Pi](https://www.raspberrypi.org/) comput
 
 > "I just like this form-factor of carrying something in my hand."
 
-<img src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-hashimoto-ipad.png" alt="iPad workflow on Mac" width="700" height="375">
+<img src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-hashimoto-ipad.png" alt="iPad workflow on Mac">
 
 Mitchell uses his iPad and Apple Pencil for a mix of personal and professional work. As a hobbyist pilot, he plots and checks flight paths. As an engineer, he uses the iPad for reading and reviewing code and long-form documents, such as RFCs, and writing handwritten notes with the Apple Pencil and [Goodnotes](https://www.goodnotes.com/). Goodnotes makes it easy to move text around, and reorganize content visually. When he's ready for long-form typing or document creation, Mitchell transfers his notes to his computer with Goodnotes for MacOS and iCloud before drafting in Google Docs, GitHub, or the appropriate app. This setup frees Mitchell from his desk, letting him do code reviews outside.
 

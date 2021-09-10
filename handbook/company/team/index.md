@@ -248,7 +248,7 @@ To add yourself to this page:
 ## Christine Lovett (she/her)
 
 - Customer Engineer
-- New York, NY, USA 🇺🇸
+- Baltimore MD, USA 🇺🇸
 - [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [christinelovett](https://github.com/christinelovett)
 - Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT.
 
@@ -603,7 +603,7 @@ To add yourself to this page:
 - [@muratsu](https://github.com/muratsu), [murat@sourcegraph.com](mailto:murat@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/muratsutunc)
 - Murat started his career at Microsoft working on web standards. He worked on the JavaScript runtime engine and was a founding team member of the TypeScript language. After Microsoft, he founded a venture-backed company and eventually found his way to the Bay Area. Outside of work, Murat is passionate about cooking, finance, and video games.
 
-## Lisa Tagliaferri (flexible)
+## Lisa Tagliaferri (any)
 
 - Director of Developer Education
 - New York City 🗽
@@ -1021,14 +1021,6 @@ To add yourself to this page:
 - GitHub: [kelseynagel] (https://github.com/kelseynagel)
 - Kelsey is a North Dakota native living in Minneapolis with her husband and two dogs, Crew and Nash. She is an avid Recruiter, bringing 5 years of talent acquisition experience in high growth companies before joining Sourcegraph. When not working, you'll find Kelsey travelling, spending time on lakes in Minnesota summers, and trying new Sushi restaurants.
 
-## Oluebube Princess Egbuna (She/Her)
-
-- Education Engineer
-- Lagos, Nigeria 🇳🇬
-- GitHub: [Princesso](https://github.com/Princesso)
-- [princess@sourcegraph.com](mailto:princess@sourcegraph.com)
-- Princess is Nigerian and lives in Lagos, Nigeria. She has worked as a software engineer using several technologies of which javascript is her favorite. She preaches open source and also leads a few tech communities. When she is not in the zone, she enjoys cooking, taking walks with her daughter and hosting friends.
-
 ## Gabe Torres (He/Him)
 
 - Customer Support Engineer
@@ -1154,7 +1146,7 @@ To add yourself to this page:
 - Naples, FL USA 🇺🇸
 - GitHub: [marija.petrovic214](https://github.com/marija.petrovic214), [LinkedIn](https://www.linkedin.com/in/marija-petrovic-b49b9b38/)
 - [marija.petrovic@sourcegraph.com](mailto:marija.petrovic@sourcegraph.com)
-- Marija, pronounced "Maria", is a Serbian-American living in sunny Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida. Outside of work, she enjoys spending time with family & her son Luka, traveling, tennis, skiing, yoga, painting/art, and investing in anything self-care/self-improvement-oriented!
+- Marija, pronounced "Maria", is a Serbian-American living in Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida.
 
 ## Shawn King (He/Him)
 
@@ -1440,3 +1432,35 @@ To add yourself to this page:
 - GitHub: [chrismwendt](https://github.com/chrismwendt)
 - [chris.wendt@sourcegraph.com](mailto:chris.wendt@sourcegraph.com), [Twitter](https://twitter.com/ChrisMWendt), [LinkedIn](https://www.linkedin.com/in/chrismwendt/)
 - Programming language enthusiast, speedcuber, SSBM player, guitar and piano player, and dog lover. He has worked on some solo projects ([CodeWing](https://codewing.dev/) and [CodeBook](https://codebook.page/)), a distributed data pipeline at Microsoft, search at GitHub, developer experience at ThoughtSpot, and earned his BS in Computer Science with a specialization in computer graphics from Purdue.
+
+## Mohammad Umer Alam (he/him)
+
+- Security Engineer
+- Staten Island, NY 🇺🇸
+- GitHub: mohammadualam
+- [mohammad.alam@sourcegraph.com](mailto:mohammad.alam@sourcegraph.com), [LinkedIn](https://linkedin.com/in/mohammadalam/)
+- Mohammad is an avid tinkerer of gadgets and networks. He enjoys taking apart old electronics☎️ and see how they tick. So passion for technology and in relation to it, security, comes naturally to him. He is also very enthusiastic about driving his Jeep Wrangler, although he has yet to go offroading with it. Mohammad also enjoys staying active via outdoor activities and taking part in recreational sports leagues. He is a diehard Yankees⚾️ fan and hopes that they can win another championship soon so he can attend the ticker-tape parade in NYC.
+
+## Grace Bohl (she/her)
+
+- Corporate Recruiter
+- Denver, CO 🇺🇸
+- GitHub: gracebohl
+- [grace.bohl@sourcegraph.com](mailto:you@sourcegraph.com)
+- Grace is a Chicago, IL native and moved to Denver over 4 years ago. Prior to Sourcegraph, Grace gained experience recruiting in high growth SaaS companies such as Xactly Corp and Slack. When not working, Grace enjoys taking advantage of everything Colorado has to offer such as hiking, camping and snowboarding. In her free time, she enjoys going on walks, cooking, traveling and hanging with family and friends.
+
+## Cesar Jimenez
+
+- Senior Software Engineer on Code Intelligence
+- Seattle, WA 🇺🇸
+- Github: [numbers88s](https://github.com/numbers88s)
+- [cesar.jimenez@sourcegraph.com](mailto:cesar.jimenez@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cesarrjimenez/)
+- Cesar loves running, hiking, playing board games, listening to music, and going for walks with his wife and baby boy Leo. Favorite video games includes SOCOM 2 and Super Smash Bros Melee too! Proudly on Team Fox/Falco. Cesar used to be a dev bootcamp instructor at Code Fellows and loves cooking, and his favorite thing to do is try out new restaurants.
+
+## Trey Sizemore (he/him)
+
+- Enablement Manager
+- Various, USA 🇺🇸
+- Github: hjsizemore
+- [trey@sourcegraph.com](mailto:trey@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/treysizemore/)
+- Trey is currently living as a digital nomad, traveling the US in a 5th wheeler with his fiancée Paige and their 2 dogs Jack and Dash. He has 3 children (Sahara, Savannah, and Ethan) who he's immensely proud of and who are off on thier own adventures. Trey enjoys playing [pickleball] (https://www.usapa.org), tennis, and pretty much any gadget. He's always up for time at the beach 🏖, traveling to new destinations (and old favorites), and the occasional dad joke 😆
