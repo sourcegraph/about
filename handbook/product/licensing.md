@@ -43,7 +43,7 @@ Because the code for all three pricing plans is the same, customers can subscrib
 
 ## Plans
 
-Sourcegraph Enterprise offers three **plans**: Free, Team and Enterprise as defined in [pricing](https://about.sourcegraph.com/pricing/). The Free plan is the default plan, it does not require a license key to run.
+Sourcegraph Enterprise offers three **plans**: Free, Team and Enterprise as defined in [pricing](https://about.sourcegraph.com/pricing/). The Free plan is the default plan. It does not require a license key to run.
 
 Customers on the Team and Enterprise plan of Sourcegraph Enterprise are provided with a [license key](../ce/license_keys.md), usually by a customer engineer. When a prebuilt image is configured with a license key, the functionality covered under the customer's plan is enabled.
 
