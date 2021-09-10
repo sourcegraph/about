@@ -248,7 +248,7 @@ To add yourself to this page:
 ## Christine Lovett (she/her)
 
 - Customer Engineer
-- New York, NY, USA 🇺🇸
+- Baltimore MD, USA 🇺🇸
 - [christine@sourcegraph.com](mailto:christine@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/lovettchristine/), [christinelovett](https://github.com/christinelovett)
 - Christine is a biking, music and general fun enthusiast who likes to balance her travels exploring nature and city. Before Sourcegraph, Christine spent a few years in sales, then software development- ultimately merging her skillset in customer engingeering roles at Docker and Google. She has a strong appreciation for modern development tools and reducing friction in IT.
 
@@ -603,7 +603,7 @@ To add yourself to this page:
 - [@muratsu](https://github.com/muratsu), [murat@sourcegraph.com](mailto:murat@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/muratsutunc)
 - Murat started his career at Microsoft working on web standards. He worked on the JavaScript runtime engine and was a founding team member of the TypeScript language. After Microsoft, he founded a venture-backed company and eventually found his way to the Bay Area. Outside of work, Murat is passionate about cooking, finance, and video games.
 
-## Lisa Tagliaferri (flexible)
+## Lisa Tagliaferri (any)
 
 - Director of Developer Education
 - New York City 🗽
@@ -849,7 +849,7 @@ To add yourself to this page:
 - Product Manager, Distribution & Security
 - Shaftesbury (Dorset), UK 🇬🇧
 - GitHub: [dan-mckean](https://github.com/dan-mckean)
-- [Readme!](../../product/dan-mckean-readme.md)
+- [Readme!](../../product/readmes/dan-mckean-readme.md)
 - [dan.mckean@sourcegraph.com](mailto:dan.mckean@sourcegraph.com)
 - Dan grew up in the South of England, and (with a detour via London) ended up in Dorset in the south west, a county with beautiful coast (but lives as far from the sea as it's possible to get – though not deliberately!) He lives with his wife (Emma), four kids (7y, 5y, 2x14m) and 3-legged springer spaniel (9y). His spare time is largely spent chasing his twin identical boys in an effort to prevent injury. Any (genuinely) spare time is spent trying to make things out of wood.
 
@@ -1021,14 +1021,6 @@ To add yourself to this page:
 - GitHub: [kelseynagel] (https://github.com/kelseynagel)
 - Kelsey is a North Dakota native living in Minneapolis with her husband and two dogs, Crew and Nash. She is an avid Recruiter, bringing 5 years of talent acquisition experience in high growth companies before joining Sourcegraph. When not working, you'll find Kelsey travelling, spending time on lakes in Minnesota summers, and trying new Sushi restaurants.
 
-## Oluebube Princess Egbuna (She/Her)
-
-- Education Engineer
-- Lagos, Nigeria 🇳🇬
-- GitHub: [Princesso](https://github.com/Princesso)
-- [princess@sourcegraph.com](mailto:princess@sourcegraph.com)
-- Princess is Nigerian and lives in Lagos, Nigeria. She has worked as a software engineer using several technologies of which javascript is her favorite. She preaches open source and also leads a few tech communities. When she is not in the zone, she enjoys cooking, taking walks with her daughter and hosting friends.
-
 ## Gabe Torres (He/Him)
 
 - Customer Support Engineer
@@ -1154,7 +1146,7 @@ To add yourself to this page:
 - Naples, FL USA 🇺🇸
 - GitHub: [marija.petrovic214](https://github.com/marija.petrovic214), [LinkedIn](https://www.linkedin.com/in/marija-petrovic-b49b9b38/)
 - [marija.petrovic@sourcegraph.com](mailto:marija.petrovic@sourcegraph.com)
-- Marija, pronounced "Maria", is a Serbian-American living in sunny Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida. Outside of work, she enjoys spending time with family & her son Luka, traveling, tennis, skiing, yoga, painting/art, and investing in anything self-care/self-improvement-oriented!
+- Marija, pronounced "Maria", is a Serbian-American living in Naples, Florida. She is passionate about helping people find their dream career while promoting the vision and values of the organization + all things People/HR/Analytics related. She is currently finishing her Master's in HR Analytics and Resource Management at American University and has a BS in Finance and Information Systems from the University of Florida.
 
 ## Shawn King (He/Him)
 
@@ -1388,3 +1380,87 @@ To add yourself to this page:
 - GitHub: [Brielle-C](https://github.com/Brielle-C)
 - [brielle.collins@sourcegraph.com](mailto:brielle.collins@sourcegraph.com)
 - Brielle Enjoys reading and occasionally writing short stories. She loves to binge-watch series and anime has a soft spot in her heart. She is the youngest of 4 and is a super aunt to all of her nieces and nephews. Brielle is very family-oriented and enjoys spending time at home with friends and family, although she was born in the Summer months Fall is her favorite season. She currently lives is searching for a dog to be a pet mom to. Brielle identifies as a Gryffindor and is a tea enthusiast, her favorite is David’s Tea Pomegranate blend.
+
+## Jason Yavorska (he/him)
+
+- Product Director for Global Code Graph
+- Leiden, NL 🇳🇱 and part of the year in Odessa, UA 🇺🇦
+- GitHub: [jyavorska](https://github.com/jyavorska)
+- [README](../../product/readmes/jyavorska-readme.md)
+- [jason.yavorska@sourcegraph.com](mailto:jason.yavorska@sourcegraph.com), [Twitter](https://twitter.com/j4yav), [Lichess](https://lichess.org/@/j4yav), [LinkedIn](https://linkedin.com/in/jyavorska), [Personal Site](https://metaluna.io)
+- Jason was born in the United States, but moved to the Netherlands in 2015. A big part of that move was due to having a big interest in history and classical arts and music, and living here provides a nice base for exploration. He has an international family with most parts in the United States and Ukraine, so often is traveling between these places. He has two young children, a daughter and younger son, and enjoys food, travel, guitar, fantasy and science fiction books, and (retro) technology. His personal passion is [helping kids learn to code](https://metaluna.io/learn/).
+
+## Tamar Joyeux
+
+- Customer Support Manager
+- Camas, WA, United States 🇺🇸
+- GitHub: [tamarj0y](https://github.com/tamarj0y)
+- [tamar.joyeux@sourcegraph.com](mailto:tamar.joyeux@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/tamarj), [pronounce my name 🔊](https://www.name-coach.com/tamar-joyeux)
+- Tamar was born on the island of St. Lucia 🇱🇨. He then spent several years living and working in London, England. He recently (and somewhat reluctantly) settled in the PNW. Tamar currently lives with his wife and two kids in Camas, Washington. He enjoys running local trails, signing up for moderately lengthy ultramarathon races and a host of other outdoor themed activities. Tamar has spent most of his career in infrasturcture ops. Before Sourcegraph, he led an infrastructure and dev ops team at a US based fitness equipment manufacturer.
+
+## Diego Comas (he/him/his)
+
+- Security Engineering Manager
+- Barcelona, Spain 🇪🇸
+- GitHub: [dcomas](https://github.com/dcomas)
+- [diego.comas@sourcegraph.com](mailto:diego.comas@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/diegocomas)
+- Diego lives in Barcelona, with his wife and two kids. He is passionate about technology, sci-fi movies and football(soccer).
+- In the last 10 years he lived in London (UK) and worked for tech startups and scale ups building teams and helping them improve their security posture.
+- Diego never misses a game of his local team FC Barcelona 🏟. In his spare time (if kids allow!) he likes to play football ⚽️, other sports like padel tennis 🎾 and sailing ⛵️ in the Costa Brava.
+
+## Andrew Hsu (he/him)
+
+- Customer Engineer
+- Los Angeles, California, United States 🇺🇸
+- GitHub: [superhsu](https://github.com/superhsu)
+- [andrew.hsu@sourcegraph.com](mailto:andrew.hsu@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/andrewjhsu/)
+- Andrew lives in Los Angeles, California, with his partner and their grumpy cat, Ginger. He has a passion for technology and sales. Growing up at a young age, he helped his cousins build and sell computers. Andrew has spent most of his career as a Sales Engineer. Before Sourcegraph, he helped sell observability software at Splunk. Outside of work, he enjoys traveling ✈️, spending time with family & friends, watching movies, playing competitive sports & e-sports.
+
+## JH Chabran (he/him)
+
+- Software Engineer
+- Name Pronunciation: [/ʒiaʃ/](https://www.name-coach.com/jh-chabran)
+- Lyon, France 🇫🇷
+- Github: [jhchabran](https://github.com/jhchabran)
+- [jean-hadrien.chabran@sourcegraph.com](mailto:jean-hadrien.chabran@sourcegraph.com)
+- JH loves to learn new things all the time and to build software that helps other developers. He got into coding by learning how some developers managed to translate old video games through reverse engineering. In his free time, JH likes to experiment with new tools, play indie video games, take long walks with his (stubborn) Corgi and cook for his friends and family.
+
+## Chris Wendt
+
+- Software Engineer on Code Intelligence
+- Boulder, CO 🇺🇸
+- GitHub: [chrismwendt](https://github.com/chrismwendt)
+- [chris.wendt@sourcegraph.com](mailto:chris.wendt@sourcegraph.com), [Twitter](https://twitter.com/ChrisMWendt), [LinkedIn](https://www.linkedin.com/in/chrismwendt/)
+- Programming language enthusiast, speedcuber, SSBM player, guitar and piano player, and dog lover. He has worked on some solo projects ([CodeWing](https://codewing.dev/) and [CodeBook](https://codebook.page/)), a distributed data pipeline at Microsoft, search at GitHub, developer experience at ThoughtSpot, and earned his BS in Computer Science with a specialization in computer graphics from Purdue.
+
+## Mohammad Umer Alam (he/him)
+
+- Security Engineer
+- Staten Island, NY 🇺🇸
+- GitHub: mohammadualam
+- [mohammad.alam@sourcegraph.com](mailto:mohammad.alam@sourcegraph.com), [LinkedIn](https://linkedin.com/in/mohammadalam/)
+- Mohammad is an avid tinkerer of gadgets and networks. He enjoys taking apart old electronics☎️ and see how they tick. So passion for technology and in relation to it, security, comes naturally to him. He is also very enthusiastic about driving his Jeep Wrangler, although he has yet to go offroading with it. Mohammad also enjoys staying active via outdoor activities and taking part in recreational sports leagues. He is a diehard Yankees⚾️ fan and hopes that they can win another championship soon so he can attend the ticker-tape parade in NYC.
+
+## Grace Bohl (she/her)
+
+- Corporate Recruiter
+- Denver, CO 🇺🇸
+- GitHub: gracebohl
+- [grace.bohl@sourcegraph.com](mailto:you@sourcegraph.com)
+- Grace is a Chicago, IL native and moved to Denver over 4 years ago. Prior to Sourcegraph, Grace gained experience recruiting in high growth SaaS companies such as Xactly Corp and Slack. When not working, Grace enjoys taking advantage of everything Colorado has to offer such as hiking, camping and snowboarding. In her free time, she enjoys going on walks, cooking, traveling and hanging with family and friends.
+
+## Cesar Jimenez
+
+- Senior Software Engineer on Code Intelligence
+- Seattle, WA 🇺🇸
+- Github: [numbers88s](https://github.com/numbers88s)
+- [cesar.jimenez@sourcegraph.com](mailto:cesar.jimenez@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cesarrjimenez/)
+- Cesar loves running, hiking, playing board games, listening to music, and going for walks with his wife and baby boy Leo. Favorite video games includes SOCOM 2 and Super Smash Bros Melee too! Proudly on Team Fox/Falco. Cesar used to be a dev bootcamp instructor at Code Fellows and loves cooking, and his favorite thing to do is try out new restaurants.
+
+## Trey Sizemore (he/him)
+
+- Enablement Manager
+- Various, USA 🇺🇸
+- Github: hjsizemore
+- [trey@sourcegraph.com](mailto:trey@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/treysizemore/)
+- Trey is currently living as a digital nomad, traveling the US in a 5th wheeler with his fiancée Paige and their 2 dogs Jack and Dash. He has 3 children (Sahara, Savannah, and Ethan) who he's immensely proud of and who are off on thier own adventures. Trey enjoys playing [pickleball] (https://www.usapa.org), tennis, and pretty much any gadget. He's always up for time at the beach 🏖, traveling to new destinations (and old favorites), and the occasional dad joke 😆

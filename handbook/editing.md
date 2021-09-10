@@ -18,6 +18,7 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 Here's the process for getting a change published to the handbook. For detailed step-by-step instructions (intended for people who are new to Git), see the sections below.
 
+1. Make sure you've been added to [Sourcegraph's Github Org](https://github.com/sourcegraph/about). If you need access, contact Tech Ops in the #it-tech-ops Slack channel.
 1. Propose the edits you want to make by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) on the Git repository at [github.com/sourcegraph/about](https://github.com/sourcegraph/about).
    - Because the [handbook is public](usage.md#why-make-this-handbook-public), anyone in the world can see your proposed edits.
 1. Make sure the [handbook checks pass](#handbook-checks).
@@ -88,10 +89,11 @@ If you're not sure what the error message means or can't determine how to fix it
   - **Note:** if there is an anchor tag in the link, the `.md` goes before the anchor tag, like `../support/support-workflow.md#support-workflow`.
 - **Disconnected page ([example](https://github.com/sourcegraph/about/runs/2975885844)):** `handbook/engineering/hiring/engineering-leadership.md: disconnected page (no inlinks from other pages)` means that the error is _not_ in the file `handbook/engineering/hiring/engineering-leadership.md`, but rather there are no pages in the handbook linking to this file page.
   - **Fix:** Determine if this page is still valuable, and if so, on which other handbook page to add a link to this page. If it's not obvious or you're not sure, you should post for help in #handbook and tag someone you think might know better (based on the content of the disconnected page).
+  - See [this section](#using-relative-paths-to-link-handbook-pages) to learn how to use relative paths to link Handbook pages. This helps us maintain links over time more easily than pasting a URL.
 
 ## Edit multiple files or add a new file
 
-To make edits to multiple files and submit all of the edits as a group to be reviewed together, you will follow a more complex process than when [editing a single file](#edit-a-single-file). This also is required for adding new files.
+To make edits to multiple files and submit all of the edits as a group to be reviewed together, you will follow a more complex process than when . This also is required for adding new files.
 
 > NOTE: These steps are not exhaustively documented. Please [ask for help](#how-to-get-help) as many times as you need to until you feel comfortable with this process.
 
@@ -182,6 +184,11 @@ The page that's being redirected _from_ must be deleted, or the build will break
 ## Markdown Tips
 
 1. Spacing matters when it comes to tiered lists. To indent a line in a list, add two spaces before the dash or asterisk. Incorrect spacing still allow those bullets and indents to display, but spacing and sizing may look different from the rest of your document. See more under the "Lists" section under Examples [here](https://guides.github.com/features/mastering-markdown/).
+
+## Markdown Resources
+
+- [Docs to Markdown](https://workspace.google.com/marketplace/app/docs_to_markdown/700168918607) is a Google Docs Add-On that will convert your doc to Markdown for you.
+- [StackEdit](https://stackedit.io/app#) gives you a side-by-side view of your doc and the corresponding Markdown version.
 
 ## Running a local preview handbook site
 
