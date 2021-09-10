@@ -30,7 +30,6 @@ An active user is differentiated from a visitor by performing a qualifying event
 | ------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- |
 | Searching for code        | `SearchSubmitted`                  | Submit a search                                                                                     |
 | Navigating the code graph | `findReferences`, `goToDefinition` | Click on go to definition or fin references. Hovering is excluded as it can be performed passively. |
-| Code Insight              | TBD                                | TBD at launch on cloud                                                                              |
 | Batch Changes             | TBD                                | TBD at launch on cloud                                                                              |
 | API docs                  | TBD                                | TBD                                                                                                 |
 
