@@ -39,7 +39,7 @@ Most users, however, will use our prebuilt images, which include code licensed u
 
 If someone follows the install instructions for our Docker, Docker Compose, or Kubernetes options ([reference](https://docs.sourcegraph.com/admin/install)), they will install Sourcegraph Enterprise.
 
-Because the code for all three pricing plans is the same, customers can subscribe to any plan in any of our [deployment methods](https://docs.sourcegraph.com/admin/install) except on Sourcegraph Cloud where packaging and pricing are not defined, and there are no plans yes. The deployment method a customer uses is unrelated to the pricing plan, generally (for exceptions, ping the CE team).
+Because the code for all three pricing plans is the same, customers can subscribe to any plan in any of our [deployment methods](https://docs.sourcegraph.com/admin/install) except on Sourcegraph Cloud, where packaging and pricing are not defined, and there are no plans yet. The deployment method a customer uses is unrelated to the pricing plan, generally (for exceptions, ping the CE team).
 
 ## Plans
 
