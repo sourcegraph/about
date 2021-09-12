@@ -78,7 +78,7 @@ All Handbook-related pull request information is automatically announced in the 
 1. Open your pull request
 1. Click the **Labels** section on the right side of the Github screen
 1. Search for "handbook-announce" and select it
-   - ![Announcing Handbook Changes](https://storage.googleapis.com/sourcegraph-assets/handbookannouncelabel.png)
+   - ![Announcing Handbook Changes](https://storage.googleapis.com/sourcegraph-assets/handbookannouncelabelimage.png)
 1. Merge your pull request
 
 ### Handbook checks
