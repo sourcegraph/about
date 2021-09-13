@@ -24,9 +24,10 @@ We allow users to focus on changing their code, without having to do any plumbin
 
 ### Low-effort usage patterns
 
-
 ---
+
 <!-- separate page -->
+
 # Q3 Direction
 
 ## Who are we focusing on?
