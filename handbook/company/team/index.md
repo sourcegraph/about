@@ -1463,7 +1463,7 @@ To add yourself to this page:
 - Various, USA 🇺🇸
 - Github: hjsizemore
 - [trey@sourcegraph.com](mailto:trey@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/treysizemore/)
-- Trey is currently living as a digital nomad, traveling the US in a 5th wheeler with his fiancée Paige and their 2 dogs Jack and Dash. He has 3 children (Sahara, Savannah, and Ethan) who he's immensely proud of and who are off on thier own adventures. Trey enjoys playing [pickleball] (https://www.usapa.org), tennis, and pretty much any gadget. He's always up for time at the beach 🏖, traveling to new destinations (and old favorites), and the occasional dad joke 😆
+- Trey is currently living as a digital nomad, traveling the US in a 5th wheeler with his fiancée Paige and their 2 dogs Dash and Jack. He has 3 children (Sahara, Savannah, and Ethan) who he's immensely proud of and who are off on thier own adventures. Trey enjoys playing [pickleball] (https://www.usapa.org), tennis, and pretty much any gadget. He's always up for time at the beach 🏖, traveling to new destinations (and old favorites), and the occasional dad joke 😆
 
 ## Cristina Birkel
 
