@@ -30,5 +30,4 @@ The **Operations group** is responsible for systems and analytics which support 
 - Erica Freckelton - Senior Digital Marketing Manager
 - (TBH) Program Marketing Manager
 
-
 For information about teammate preferences, check out our individual [READMEs](demand-gen-bios.md).
