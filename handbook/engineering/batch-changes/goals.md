@@ -10,11 +10,11 @@ This page outlines the vision, strategy and goals of the Batch Changes team.
 
 #### 10 year vision
 
-> Automate code changes are a common practice for all developers.
+> Automated code changes are a common practice for all developers.
 
 ## Mission
 
-We allow users to focus on changing their code, without having to do any plumbing. We help users drive changesets to completion without relying on spreadhseets and painful coordination. We also want to make writing and running code that changes code more accessible.
+We allow developers to focus on changing their code, without having to do any plumbing. We help users drive changesets to completion without relying on spreadhseets and painful coordination. Later on, we  want to make writing and running code that changes code more accessible.
 
 # Strategy
 
