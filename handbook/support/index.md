@@ -2,9 +2,7 @@
 
 ## Our ethos
 
-Customer Support at Sourcegraph exists to resolve technical issues and answer technical/product questions in a way that feels (reasonably) effortless for our customers. Support is the go-to technical team for the Customer Engineering team, helping customers both pre- and post-sales.
-
-We show up for our customers, open source users, and teammates by living up to our Sourcegraph values and handbook, as well as these additional guiding principles …
+Customer Support at Sourcegraph exists to resolve technical issues and answer technical/product questions in a way that feels (reasonably) effortless for our customers. We show up for our customers (pre-sales and post-sales), open source users, and teammates by living up to our Sourcegraph values and handbook, as well as these additional guiding principles …
 
 - Focusing on the impact we might have and aligning our decisions and actions to the impact we desire
 - Seeking/providing context so the why is clear
@@ -37,7 +35,7 @@ For additional context, check out [RFC 274](https://docs.google.com/document/d/1
   - [Giselle Northy](../company/team/index.md#giselle-northy-she-her)
   - [Jason Harris](../company/team/index.md#jason-harris-he-him)
   - [Stompy Mwendwa](../company/team/index.md#stompy-mwendwa)
-- Tamar Joyeux, Manager
+- [Tamar Joyeux](../company/team/index.md#tamar-joyeux), Manager
   - [Alex Jean-Baptiste](../company/team/index.md#alex-jean-baptiste-he-him)
   - [Beatrix Woo](../company/team/index.md#beatrix-woo-she-her)
   - [Ben Gordon](../company/team/index.md#team#ben-gordon-he-him)

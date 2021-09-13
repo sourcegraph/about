@@ -1,27 +1,83 @@
 # Product
 
-Product at Sourcegraph consists of [product management](product_management/index.md), [product design](design/index.md), and [technical writing](technical_writing/index.md)
+Product at Sourcegraph consists of [product management](product_management/index.md), [product design](design/index.md), and [technical writing](technical_writing/index.md). Each of these links will take you to a page with information on how that team works internally; this page contains information that is relevant to the whole company.
+
+The Product team strives to make the following true:
+
+- The team is working on the most important things (listed in the [project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit?usp=sharing)) to execute on [our strategy](../direction/index.md) that is moving us forward on [our vision](../company/strategy.md).
+- Each teammate has the customer and product context needed (about customer problems, likely future priorities, possible solutions, etc.) to perform their work effectively.
+- The product vision and roadmap are communicated well to teammates and everyone outside Sourcegraph.
+
+## Contact
+
+You can reach us at the #product channel or @product-team on Slack. If you have ideas you want to pass on to the product team, check out the [surfacing product feedback](surfacing_product_feedback.md) page.
+
+## Roadmap
+
+- [Roadmap](roadmap.md)
+
+## Metrics
+
+- [Product metrics dashboard](https://sourcegraph.looker.com/dashboards/127)
+- [How to add metrics](../ops/bizops/analytics.md#How-to)
+
+## Goals
+
+Within the product organization, individual product engineering teams set their own goals.
+
+- Code Graph
+  - [Search core and Search product](../engineering/search/goals.md)
+  - [Batch Changes](../engineering/batch-changes/goals.md)
+  - [Code Intelligence](../engineering/code-intelligence/goals.md)
+  - [Code Insights](../engineering/developer-insights/code-insights/goals.md)
+- Enablement
+  - Repository Management
+  - [Distribution](../engineering/distribution/goals.md)
+  - [Frontend Platform](../engineering/developer-insights/frontend-platform/goals.md)
+- Cloud
+  - [Core application](../engineering/core-application/goals.md)
+  - Cloud SaaS
+  - Growth
+    - [API docs](../engineering/developer-insights/api-docs/goals.md)
+  - [Security](../engineering/security/goals.md)
+  - DevOps/SRE
+  - [Extensibility](../engineering/developer-insights/extensibility/goals.md)
+
+## Product team initiatives
+
+Occasionally the product team takes on special initiatives that are not strictly tied to product delivery. Those are tracked here.
+
+### Product led metrics refinement
+
+In an effort to gain more clarity around product success and growth on Cloud, we aim to iterate and decide on the current Sourcegraph user metric definitions for On Premise. Targeting to have the new definition in place in FY21 Q3.
+
+- Owner: Anna (Jason covering during leave)
+- [Working Document](https://docs.google.com/document/d/1o0dLmdRRI6uWIuAg_8VQw25KnTM1CBDKKR2K91SxpAI/edit#)
+
+### Improve process for documentating product strategy
+
+Our current [product goals pages](index.md#goals) are not always up to date so can't be relied upon by the rest of the organization. They are also mixed in with other engineering team content so it can be hard to find the product direction components. We need to update and organize these pages, and then want to improve this process so that the goals pages are the always updated source of truth.
+
+- Owner: Jason
+
+### Other initiatives
+
+There are a few other initiatives we will be tracking here soon:
+
+- Public facing roadmap
+- CE / Product communication and prioritization improvements on feedback
+- Consolidation and simplification of tooling
+- Experimentation and improvements to planning
 
 ## Org chart
 
 - [How product is organized](product_org.md)
 - [Roles and responsibilities](roles/index.md) of the product team
 
-## Planning
+## References
 
-- [Product team goals](goals.md)
-- [Special initiatives](initiatives.md)
-- [Roadmap](roadmap.md)
-
-## Resources
-
-- [Sourcegraph's product design principles](./design_principles.md)
 - [Demo day](./demo_day.md)
-
-### References
-
 - [Beta and experimental feature labels](./beta_and_experimental_feature_labels.md)
-- [Onboarding to the product team](./onboarding/index.md)
 - [Personas](../marketing/personas.md)
 - The [Sourcegraph workflow](../workflow/index.md) describes how our product fits into the developer workflow.
 - Product documents (PDs)
@@ -30,27 +86,5 @@ Product at Sourcegraph consists of [product management](product_management/index
 - RFCs (requests for comment)
   - [All RFC documents](https://drive.google.com/drive/folders/1zP3FxdDlcSQGC1qvM9lHZRaHH4I9Jwwa) (Google Drive)
   - [How we use RFCs](../communication/rfcs/index.md)
-- [Product learnings](product_learning.md)
-- [Working with BizOps](../ops/bizops/index.md#how-to-work-with-us)
 - [User research](./user_research/index.md)
-- [Recommended reading](./onboarding/recommended_reading.md)
 - [Product licensing](licensing.md)
-
-### Metrics
-
-- [Product metrics dashboard](https://sourcegraph.looker.com/dashboards/127)
-- [How to add metrics](../ops/bizops/analytics.md#How-to)
-
-### Tools
-
-- [Figma](https://www.figma.com/files/team/438792081639669302/Sourcegraph)
-- [Productboard](https://sourcegraph.productboard.com/)
-- [Amplitude](../ops/bizops/amplitude.md)
-
-## Release early, release often
-
-Each project, no matter how long-running, needs to plan to ship _something_ in each release. The "something" depends on the project. We strongly prefer for it to be a minimal viable feature that is enabled by default. The next best thing is to ship something that is feature-flagged off by default. When possible, larger features should be merged mid-cycle to solicit feedback from the team and customers before the release is cut.
-
-The reason for this is to avoid going for too long without customer feedback (from customers trying it) or even technical/product feedback (from performing the diligent work of polishing it to be ready to release). Lacking these critical checks means we will end up building something that doesn't solve people's problems or that is over-built.
-
-When we have relaxed this in the past, the results have been bad and the overwhelming feedback from retrospectives has been to release regularly.
