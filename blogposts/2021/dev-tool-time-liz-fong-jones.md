@@ -37,11 +37,11 @@ In her terminal, which runs [Bash](https://www.gnu.org/software/bash/), she uses
 
 ## Observability
 
-Tools: Honeycomb, CircleCI, launchdarkly
+Liz's dev workflow follows a structure that might be familiar for many devs. She uses [Git](https://git-scm.com/) for version control, works on a local copy of a repo in her editor (GNU nano), and pushes to a remote that's hooked up with CircleCI to run a variety of actions. Differently from some devs, she doesn't rely on her local editor to run formatting steps or lint code. Instead, [CircleCI](https://circleci.com/) takes care of these steps, along with deployment and other actions. 
+
+This automation goes hand-in-hand with Liz's attention to [observability](https://www.honeycomb.io/what-is-observability/), which emphasizes the capacity to introspect a system and understand its internal state. Automated builds and infrastructure configuration, using tools such as [Chef](https://www.chef.io/) and [Terraform](https://www.terraform.io/), increase the transparency of the systems with which Liz regularly works. As part of her work for [Honeycomb](https://www.honeycomb.io/), Liz uses Honeycomb, and shifting into its interface to understand workflows, processes, and debug errors or failures is a key part of her workflow. 
 
 video: "Honeycomb Observability.mp4"
-
-Part of observability is automation of builds and configuration of infrastructue: Chef, Terraform
 
 ## Sustainability
 
