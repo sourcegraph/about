@@ -20,7 +20,7 @@ Sourcegraph currently uses three solutions for product analytics:
 
 Amplitude provides session-based event data of Sourcegraph cloud features. Designers can use Amplitude for both discovery and measurement of user retention, usage metrics, funnels, path journeys, and other quantitative analysis requirements.
 
-[Learn more about using Amplitude as a designer](./amplitude-for-designers)
+[Learn more about using Amplitude as a designer](./amplitude-for-designers.md)
 
 ### Looker
 

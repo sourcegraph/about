@@ -67,4 +67,4 @@ Often when exploring how a design impacts user actions, we need to determine if 
 
 > For example, if you would like to determine if users who viewed the homepage video are more likely to have view the sign-up page than those who do not, you would create two segments, one with 'who performed Home page video... >= 1 time' and one with 'who performed Home page video... = 0. Then change the type of chart from uniques to Active %.
 
-[View the example chart.](https://analytics.amplitude.com/sourcegraph/chart/6w426co?source=workspace)
+[View the example](https://analytics.amplitude.com/sourcegraph/chart/6w426co?source=workspace)
