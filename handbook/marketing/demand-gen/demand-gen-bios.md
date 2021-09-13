@@ -6,7 +6,7 @@ Our README expands on our profile in [the company team directory](https://about.
 - [](https://about.sourcegraph.com/handbook/demand-gen/demand-gen-bios#Greg-README '#Greg-README')Greg README
 - [](https://about.sourcegraph.com/handbook/demand-gen/demand-gen-bios#Jake-README '#Jake-README')Jake README
 - [](https://about.sourcegraph.com/handbook/demand-gen/demand-gen-bios#Rebecca-README '#Rebecca-README')Rebecca README
-- [](https://about.sourcegraph.com/handbook/demand-gen/demand-gen-bios#Sarah-README '#Sarah-README')Sarah [README](/sarah-readme.md)
+- [](https://about.sourcegraph.com/handbook/demand-gen/demand-gen-bios#Sarah-README '#Sarah-README')Sarah [README](./sarah-readme.md)
 
 ---
 
