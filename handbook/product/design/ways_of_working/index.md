@@ -1,4 +1,5 @@
 # Ways of working
+
 Sourcegraph’s product design team has a few different ways of working. Each designer may work in one or more ways at different times, depending on the company’s needs and priorities, the projects at hand, and the individual designer’s capacity and interests.
 
 Generally speaking, these can be described as working as embedded designers, and working as design consultants. We also work as a product design team, where our immediate peers are each other as designers.

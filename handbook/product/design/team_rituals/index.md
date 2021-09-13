@@ -1,4 +1,5 @@
 # Team rituals
+
 As an asynchronous-first, globally-distributed design team, our team rituals help bring us together as a design team and build stronger trust and connections.
 
 ## Design club
@@ -16,7 +17,7 @@ A typical design club includes:
 
 - An icebreaker activity
 - A few minutes of silent reading and adding any extra topics or comments to the agenda
--  Sharing current topics
+- Sharing current topics
 
 This design club is open to anyone, but is first for the product design team.
 
