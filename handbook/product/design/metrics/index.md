@@ -1,6 +1,5 @@
 # Analytics and product design
 
-
 Analytics is an important part of two critical phases of the design process: discovery and measurement.
 
 By reviewing analytics at the beginning of a project, we can discover areas of the product our design can impact goals.
@@ -14,10 +13,12 @@ A practical example of using discovery and measurement to improve an OKR:
 From this discovery, a designer could place greater importance on the video or include it in various segments of the onboarding flow to elicit more views and thus improve retention.
 
 ## Analytics tooling
+
 Sourcegraph currently uses three solutions for product analytics:
 
 ### Amplitude
-Amplitude provides session-based event data of Sourcegraph cloud features.  Designers can use Amplitude for both discovery and measurement of user retention, usage metrics, funnels, path journeys, and other quantitative analysis requirements.
+
+Amplitude provides session-based event data of Sourcegraph cloud features. Designers can use Amplitude for both discovery and measurement of user retention, usage metrics, funnels, path journeys, and other quantitative analysis requirements.
 
 [Learn more about using Amplitude as a designer](/test)
 
@@ -28,7 +29,6 @@ Looker provides access to all event log data across both on-premise installation
 ### Google Analytics
 
 Google Analytics provides session-based data that is useful for reviewing how users interact with the cloud product. Useful information which can be derived from Google Analytics includes frequency, technology (browser, mobile device, etc.), conversion against goals and behavior (content, flows, and events). Data is only available for users who have accepted the Sourcegraph cookies.
-
 
 ## Defining events
 
