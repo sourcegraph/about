@@ -8,7 +8,7 @@ This page documents our current org structure.
   - [Kylie Fligstein](../company/team/index.md#kylie-fligstein-she-her), Product operations specialist
   - [Product Management](roles/index.md#product-manager)
     - [Anna Mikhova](../company/team/index.md#anna-tzvetana-mikhova-she-her), Director of Product - Cloud
-      - [Ryan Phillips](../company/team#ryan-phillips-he-him), Product Manager - Cloud
+      - [Ryan Phillips](../company/team/index.md#ryan-phillips-he-him), Product Manager - Cloud
     - [Serina Clark](../company/team/index.md#serina-clark-her-she-hers), Director of Product - Enablement
       - [Dan Mckean](../company/team/index.md#dan-mckean-he-him), Product Manager - [Core application](../engineering/core-application/index.md) and [Distribution](../engineering/distribution/index.md). ([Dan's Readme!](./readmes/dan-mckean-readme.md))
     - [Jason Yavorska](../company/team/index.md#jason-yavorska-he-him), Director of Product - Code Graph
