@@ -1,6 +1,6 @@
 # Switching teams
 
-As Sourcegraph grows, we would like to support teammates who are interested in taking on new roles in other teams, if their skillset and aspirations are required in the team they wish to move to. 
+As Sourcegraph grows, we would like to support teammates who are interested in taking on new roles in other teams, if their skillset and aspirations are required in the team they wish to move to.
 
 This page focuses on the _process_ of moving from one team or department to another. Please reach out to your manager (or the [People Ops team](index.md)) to ask questions related to personal or career progress, how to evaluate such moves, resources, and more.
 
@@ -8,17 +8,18 @@ If you are interested in staying in the same department or team, or working for 
 
 ## Eligibility
 
-For now, any member of the Sourcegraph team is eligible to request to take on a new role in another team, however, support for the change will be subject to teammate's length of time and performance in their existing role, ongoing projects, and whether their skillset is a match for the new role. 
+For now, any member of the Sourcegraph team is eligible to request to take on a new role in another team, however, support for the change will be subject to teammate's length of time and performance in their existing role, ongoing projects, and whether their skillset is a match for the new role.
 
 ## Recommended process
 
-There is no fixed process for motivating to take on a new role, but we recommend you engage your current manager first and explain your motivation for applying for a move, including: 
-  - What value you can bring to the new role
-  - How the change new role aligns with your skillset and personal/career goals
-  - When it would be appropriate to make the move
+There is no fixed process for motivating to take on a new role, but we recommend you engage your current manager first and explain your motivation for applying for a move, including:
+
+- What value you can bring to the new role
+- How the change new role aligns with your skillset and personal/career goals
+- When it would be appropriate to make the move
 
 With your manager's support, contact the head of the team you're interested in moving to to discuss the thinking behind your application, as well as the details of the role and any compensation level.
-If your manager or the manager of the new team don't support your motivation to move, for reasons you find unreasonable, you can reach out to the People Ops team for their perspective. 
+If your manager or the manager of the new team don't support your motivation to move, for reasons you find unreasonable, you can reach out to the People Ops team for their perspective.
 If both team managers support the change in principle, you will go through a [short internal interview process](#requirements-for-the-new-manager) for the role, and if you are successful, the team move can be planned. Once the transition plan is approved and the impacted teams informed of the switch, the teammate's new manager should [post an announcement](../communication/announcements.md).
 
 ## Requirements for the new manager
