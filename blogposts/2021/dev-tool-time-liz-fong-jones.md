@@ -6,8 +6,8 @@ authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-h
 publishDate: 2021-09-15T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-liz-fong-jones
-heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/...jpg
-socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/...jpg
+heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-cover.jpg
+socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-cover.jpg
 published: false
 ---
 
@@ -41,17 +41,17 @@ Liz's dev workflow follows a structure that might be familiar for many devs. She
 
 This automation goes hand-in-hand with Liz's attention to [observability](https://www.honeycomb.io/what-is-observability/), which emphasizes the capacity to introspect a system and understand its internal state. Automated builds and infrastructure configuration, using tools such as [Chef](https://www.chef.io/) and [Terraform](https://www.terraform.io/), increase the transparency of the systems with which Liz regularly works. As part of her work for [Honeycomb](https://www.honeycomb.io/), Liz uses Honeycomb, and shifting into its interface to understand workflows, processes, and debug errors or failures is a key part of her workflow. 
 
-video: "Honeycomb Observability.mp4"
+<video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-observability.mp4"></video>
 
 ## Sustainability
 
 > “You heard it first at Dev Tool Time: 'The future is Linux on the desktop on top of ARM64.'”
 
-ARM64 as energy efficient, performant, and can be cheaper. Liz's local ARM64 CPU is only 25 watts, roughly a quarter of a standard AMD CPU.
+One of Liz's desktop machines has an ARM64 processor, and she notes that it runs on 25 watts, roughly a quarter of a comparable AMD64/Intel CPU. ARM64 processors are generally more energy efficient, very performant, and can be cheaper than alternatives. Honeycomb already runs part of its compute workflows on ARM64, despite the relative paucity of cloud providers. Liz's own ARM64 desktop makes it easy to run native builds locally, while CircleCI's support for ARM64 automates the process for other developers at Honeycomb. 
 
-video: "ARM64 Blog Post.mp4"
+The use of ARM64 is compelling, not just for the performance and cost. It's also part of a future of computing that attends to the sustainability of our environment given the ever expanding role of computing in society. This concern for sustainability isn't just business, but a commitment that shapes Liz's own choices in hardware.
 
-local ARM64 box allows Liz to build their binaries natively, though CircleCI lets any of the devs build ARM64 binaries without having a local box. 
+<video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-arm64.mp4"></video>
 
 ## Show notes
 
@@ -59,24 +59,22 @@ local ARM64 box allows Liz to build their binaries natively, though CircleCI let
 - [Bash](https://www.gnu.org/software/bash/)
 - [Chef](https://www.chef.io/)
 - [CircleCI](https://circleci.com/)
-- [Honeycomb](https://www.honeycomb.io/)
-- [Powerline](https://powerline.readthedocs.io/en/latest/index.html)
-- [Proton]()
-- [Terraform](https://www.terraform.io/)
-- [Yubikey](https://www.yubico.com/) - Honeycomb uses a lot of 2 factor authentication (2FA), and a physical key just makes it easier.
 - [Git](https://git-scm.com/)
-- [gofmt](https://pkg.go.dev/cmd/gofmt)
+- [Honeycomb](https://www.honeycomb.io/)
 - [Launchdarkly](https://launchdarkly.com/)
+- [Powerline](https://powerline.readthedocs.io/en/latest/index.html)
+- [Proton](https://github.com/ValveSoftware/Proton)
+- [Terraform](https://www.terraform.io/)
+- [Tilt](https://tilt.dev/)
+- [Yubikey](https://www.yubico.com/)
+- [gofmt](https://pkg.go.dev/cmd/gofmt)
 - [nano](https://www.nano-editor.org/)
 - [prettier](https://prettier.io/)
-- [Tilt](https://tilt.dev/)
 
-
-<!-- TODO: switch to correct youtube embed when ready -->
 ## Watch the recording
 
 Check out the recording of the episode below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/LA8KF9Fs2sk?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/QlR9jdj0sa4?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
