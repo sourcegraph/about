@@ -5,9 +5,8 @@ Amplitude provides session-based event data of Sourcegraph cloud features. This 
 ## Key concepts
 
 ### Events
+
 Events are recorded when a Sourcegraph EventLog action is triggered as defined in the product. Events include clicks against tracked elements, page views, and other interactions defined when building product features. All Sourcegraph EventLog events are ingested into Amplitude as soon as they are released.
-
-
 
 ### Segmentation
 
