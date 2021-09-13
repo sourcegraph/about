@@ -1,6 +1,6 @@
 ---
 title: "Accessibility, observability, and sustainability: Dev Tool Time with Liz Fong-Jones"
-description: 'Liz Fong-Jones, principle developer advocate at Honeycomb and long-time Site Reliability Engineer (SRE), shares how nano, Honeycomb, and ARM processors fit together into a moveable, minimal workflow for development.'
+description: 'Liz Fong-Jones, Principle Developer Advocate at Honeycomb and long-time Site Reliability Engineer (SRE), shares how nano, Honeycomb, and ARM processors fit together into a moveable, minimal workflow for development.'
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-09-15T10:00-07:00
@@ -11,22 +11,29 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/...jpg
 published: false
 ---
 
-Intro paragraph
+When Liz Fong-Jones, Principal Developer Advocate at Honeycomb and experienced Site Reliability Engineer (SRE), joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on September 1, 2021, she shared how her setup and workflow bridge the current state of development and the future that's already arriving. 
 
-## Primary desk setup
+You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let's check out Liz's main desk setup:
 
-ARM64 box
+## Hardware setup
+
+Liz's setup stresses ergnomics, and includes two monitors and a mechnical keyboard. Liz also uses a Blue Yeti mic and Logitech (?) webcam. On her desk are two computers: an AMD64 box and an ARM64 box with a 16 cores at 2.2GHz, 32 Gb ram. 
 
 ![Liz's main work desk]()
 
 ## Accessibility
 
-Acessibility in two senses:
-1. physical accessibility - Chronic fatigue, uses 2017 [Google Pixelbook](https://support.google.com/pixelbook/answer/7503982?hl=en) due to its light weight -> Makes it easy to use from bed, holding it up with a pinky. 
+Liz's desk isn't the only place she works, though. Despite an ergonomic setup, Liz's chronic fatigue condition makes it difficult to work at the desk for long periods of time. As an advocate for disability visibility, Liz is open about working from bed as needed. To make this more effective, Liz works on a 2017 [Google Pixelbook](https://support.google.com/pixelbook/answer/7503982?hl=en), which is lightweight enough to be balanced with a pinky finger. When she needs to, she can SSH in to her desktops to access further computing resources. 
 
 ![Liz's reclined work setup]()
 
-2. minimalism - tools that are accessible across devices with different levels of computing power - prime example is [nano editor](https://www.nano-editor.org/), but also default config powerline and use of Bash.
+Her approach to making work possible in different setups carries over to many of the development tools she uses.
+
+> "I live and die by my terminal...I don't use VS Code. I literally only use browser tabs and terminal."
+
+Liz aims to use tools that are accessible across devices with different levels of computer power, and regularly installed in most computing environments. For a text editor she uses [GNU nano](https://www.nano-editor.org/), which is installed everywhere, lightweight, and relatively easy to learn and use compared to other terminal editors like Vim and Emacs. 
+
+In her terminal, which runs [Bash](https://www.gnu.org/software/bash/), she uses [Powerline](https://powerline.readthedocs.io/en/latest/index.html) with the default config to manage complexity and add nice-to-have features, such as visiblity on current host and background jobs. Using this set of tools makes Liz's setup easily accessible in new computing environments.
 
 ## Observability
 
@@ -40,10 +47,11 @@ Part of observability is automation of builds and configuration of infrastructue
 
 > “You heard it first at Dev Tool Time: 'The future is Linux on the desktop on top of ARM64.'”
 
-ARM64 as energy efficient, performant 
+ARM64 as energy efficient, performant, and can be cheaper. Liz's local ARM64 CPU is only 25 watts, roughly a quarter of a standard AMD CPU.
 
 video: "ARM64 Blog Post.mp4"
 
+local ARM64 box allows Liz to build their binaries natively, though CircleCI lets any of the devs build ARM64 binaries without having a local box. 
 
 ## Show notes
 
