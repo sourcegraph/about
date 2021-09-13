@@ -1,6 +1,6 @@
 # Team rituals
 
-As an asynchronous-first, globally-distributed design team, our team rituals help bring us together as a design team and build stronger trust and connections.
+As an asynchronous-first, globally-distributed design team, our team rituals help bring us together as a design team and build stronger trust, physiological safety, and connections.
 
 ## Design club
 
