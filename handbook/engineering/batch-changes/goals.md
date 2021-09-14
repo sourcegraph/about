@@ -1,6 +1,6 @@
 # Batch Changes direction
 
-Batch Changes is a tool to dfind code that needs to be changed and change it at scale by running code. This page outlines the vision, strategy and goals of the Batch Changes team.
+Batch Changes is a tool to find code that needs to be changed and change it at scale by running code. This page outlines the vision, strategy and goals of the Batch Changes team.
 
 # Vision
 
@@ -32,10 +32,10 @@ We see three main learnings from the first year of Batch Changes:
 
 ## Strategy
 
-Over the next three years, we want to:
-- First, get adopted by the Sourcegraph customer base, including large enterprises. Target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use.
+To deliver our vision, we will:
+- First, get adopted by the Sourcegraph customer base, including large enterprises. We will target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use.
 - Concurrently, spread usage (MAUs) within our customer, and make sure we deliver on our success metric (changesets merged)
-- Then, create low-effort entrypoints into Batch Changes, and allow users unfamiliar with the practice of automating code changes to onboard with a smooth lerning curve. Make onboarding Batch Changes self-service for most users to help our customers be successfull and prepare for launching on Cloud.
+- Then, create low-effort entrypoints into Batch Changes, and allow users unfamiliar with the practice of automating code changes to onboard with a smooth lerning curve. Make onboarding Batch Changes self-service for most users, to help our customers be successfull and prepare for launching on Cloud.
 - Then, release Batch Changes on Sourcegraph Cloud, and test and learn how we can serve individuals and smaller teams
 - Eventually, address the problem end to end by becoming the go-to place for code change tools and recipes.
 
