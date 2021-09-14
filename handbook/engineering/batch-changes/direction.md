@@ -45,6 +45,12 @@ To deliver our vision, we will:
 
 To deliver the strategy, here are the themes we want to focus on for the next 3 years:
 
+- [Enterprise scale](#enterprise-scale.md)
+- [Discovery and onboarding](#discovery-and-onboarding.md)
+- [Adoption through low-effort usage patterns](#adoption-through-low-effort-usage-patterns.md)
+- [Cloud](cloud.md)
+- [Automate common code changes](automate-common-code-changes.md)
+
 ### Enterprise scale
 
 Batch Changes is succesfully adopted by very large companies, with 10,000s of repositories. While there is no technical limitation for Batch Changes to run at that scale, there are 2 limitations in practice:
