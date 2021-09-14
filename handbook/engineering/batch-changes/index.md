@@ -4,8 +4,8 @@
 
 ## Direction
 
-- vision, mission and strategy: [Batch Changes direction](direction.md).
-- [key metrics](metrics.md)
+- Vision, mission and strategy: [Batch Changes direction](direction.md).
+- [Key metrics](metrics.md)
 
 ## Contact
 
