@@ -26,6 +26,7 @@ Teams track the work they are doing in [GitHub Projects](https://github.com/orgs
   - [Code monitoring](https://github.com/orgs/sourcegraph/projects/121)
 
 #### Developer insights
+
 - Code insights
   - [Backend](https://github.com/orgs/sourcegraph/projects/122)
   - [Current work](https://github.com/orgs/sourcegraph/projects/118)
@@ -35,6 +36,7 @@ Teams track the work they are doing in [GitHub Projects](https://github.com/orgs
   - [Current iteration](https://github.com/orgs/sourcegraph/projects/118)
 
 #### Platform and infrastructure
+
 - Security
   - Security aren't using boards for active work management - [instead we're using Jira](https://sourcegraph.atlassian.net/secure/RapidBoard.jspa?rapidView=4&projectKey=SECURITY&view=planning&selectedIssue=SECURITY-27&epics=visible&issueLimit=100)
   - Note that other teams are not currently expected to have access to this, but future use of it or other tools is in discussion.
