@@ -33,6 +33,7 @@ We see three main learnings from the first year of Batch Changes:
 ## Strategy
 
 To deliver our vision, we will:
+
 - First, get adopted by the Sourcegraph customer base, including large enterprises. We will target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use.
 - Concurrently, spread usage (MAUs) within our customer, and make sure we deliver on our success metric (changesets merged)
 - Then, create low-effort entrypoints into Batch Changes, and allow users unfamiliar with the practice of automating code changes to onboard with a smooth lerning curve. Make onboarding Batch Changes self-service for most users, to help our customers be successfull and prepare for launching on Cloud.
