@@ -49,8 +49,8 @@ To drive enterprise success and stickiness, we need to:
 ### Automate common code changes
 
 
-
 ---
+
 <!-- separate page -->
 # Q3 2022 Direction
 
