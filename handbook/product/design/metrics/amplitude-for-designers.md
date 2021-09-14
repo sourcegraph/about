@@ -1,12 +1,12 @@
 # Amplitude for designers
 
-Amplitude provides session-based event data of Sourcegraph cloud features. This guide describes several key concepts and provides a tutorial on how designers can use Amplitude for both discovery and measurement of user activities.
+Amplitude provides session-based event data of Sourcegraph cloud features. This guide describes several key concepts and provides a tutorial on how designers can use Amplitude in the discovery process in addition to measuring results.
 
 ## Key concepts
 
 ### Events
 
-Events are recorded when a Sourcegraph EventLog action is triggered as defined in the product. Events include clicks against tracked elements, page views, and other interactions defined when building product features. All Sourcegraph EventLog events are ingested into Amplitude as soon as they are released.
+Events are recorded when a Sourcegraph EventLog action is triggered as defined in the product. Events include clicks against tracked elements, page views, and other interactions defined when building product features. All Sourcegraph events are ingested into Amplitude as soon as they are released.
 
 ### Segmentation
 
