@@ -76,22 +76,14 @@ We plan to drive usage (MAUs) by implementing low-effort, high-frequency use cas
 
 ### Cloud
 
-We plan to achieve feature parity on Sourcegraph Cloud, including Batch Changes. Today, the value of Batch Changes increases exponentially with the size of a customer's codebase and team. Improving on the "Adoption through low-effort usage patterns" and "Discovery and onboarding" themes are prerequisites for success on Sourcegraph Cloud,
+We plan to achieve feature parity on Sourcegraph Cloud, including Batch Changes. Today, the value of Batch Changes increases exponentially with the size of a customer's codebase and team but future efforts our [Adoption through low-effort usage patterns](#adoption-through-low-effort-usage-patterns) effort will change that. Improving [Discovery and onboarding](#discovery-and-onboarding) is a prerequisite for success on Sourcegraph Cloud.
 
 ### Automate common code changes
 
----
+The most frequent question that our customers ask when onboarding Batch Changes is "how do I write code to change x". Writing code to change code is not trivial, and although there are existing tools, most of them fail short either in usability or in expressivity. Having a way to find or write code that automates the change they want is the first critical step in our customer's job to be done, and is a prerequisite for automation.
+By solving that problem, we will:
+- solve for our customer's job to be done (JTBD) end to end
+- position ourselves to address competition specialized in one use case or language
+- create defensibility by allowing users to share their code in a registry
 
-<!-- separate page -->
-
-# Q3 2022 Direction
-
-## Q3 2022
-
-## Who are we focusing on?
-
-## Why?
-
-## Top customer issues
-
-## Market update
+This last step is on the critical path for achieving our 10 year vision, but might not be necessary to achieve our 3 year vision.
