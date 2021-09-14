@@ -1,27 +1,27 @@
 # FY22Q3 OKR Plan
 
-In support of our product/engineering Q3 objective to _Make cloud and enterprise successful at massive scale_, one way we will measure our success in achieving this goal is for the **Customer Support team to maintain 100% support issue resolution within 7 days while only requiring help (filing a #rfh Github issue) on 10% (measured during last month of quarter)**. To accomplish this, we will…
+In support of our product/engineering Q3 objective (see all OKRs [here](https://about.sourcegraph.com/handbook/company/goals/2022_q3) to _Make cloud and enterprise successful at massive scale_, one way we will measure our success in achieving this goal is for the **Customer Support team to maintain 100% support issue resolution within 7 days while only requiring help (filing a #rfh Github issue) on 10% (measured weekly looking at last 30 days)**. To accomplish this, we will…
 
-| #   | Status      | Responsible | Project                                                                                                                        |
-| --- | ----------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | In-progress | Warren      | Add `src debug` command to `src-cli`                                                                                           |
-| 2   | In-progress | All CSEs    | Make at least 45 doc updates/additions across the team                                                                         |
-| 3   | In-progress | Giselle     | Retro all Q2 tickets that resulted in a #rfh for Distribution and Core App                                                     |
-| 4   | In-progress | Adeola      | Create cheat sheets of what logs are most needed in certain situations                                                         |
-| 5   | In-progress | Beatrix     | Make the [command generator](https://sourcegraph.github.io/support-tools/command-generator/beta/) customer-facing and scalable |
-| 6   | Not started | Michael     | Create database type solution to make it easy and reliable for CSEs to learn from past tickets                                 |
-| 7   | In-progress | Alex        | Streamline key steps in CSE workflow                                                                                           |
-| 8   | In-progress | Carl        | 5 folks complete kubernetes certification                                                                                      |
-| 9   | Not started | Virginia    | Implement retro practice for all tickets that take longer than 7 days to solve                                                 |
-| 10  | Not started | Virginia    | Provide enablement in how to navigate difficult conversations with customers                                                   |
-| 11  | In-progress | Adeola      | CSE Onboarding updates V3                                                                                                      |
+| #   | Status      | Responsible | Project                                                                                           |
+| --- | ----------- | ----------- | ------------------------------------------------------------------------------------------------- |
+| 1   | In-progress | Warren      | Add `src debug` command to `src-cli`                                                              |
+| 2   | In-progress | All CSEs    | Make at least 45 doc updates/additions across the team                                            |
+| 3   | In-progress | Giselle     | Retro all Q2 tickets that resulted in a #rfh for Distribution and Core App                        |
+| 4   | In-progress | Adeola      | Create cheat sheets of what logs are most needed in certain situations                            |
+| 5   | In-progress | Beatrix     | Make the [command generator](https://command-generator.netlify.app/) customer-facing and scalable |
+| 6   | In-progress | Michael     | Create database type solution to make it easy and reliable for CSEs to learn from past tickets    |
+| 7   | In-progress | Alex        | Streamline key steps in CSE workflow                                                              |
+| 8   | In-progress | Carl        | 5 folks complete kubernetes certification                                                         |
+| 9   | In-progress | Virginia    | Implement retro practice for all tickets that take longer than 7 days to solve                    |
+| 10  | Not started | Virginia    | Provide enablement in how to navigate difficult conversations with customers                      |
+| 11  | In-progress | Adeola      | CSE Onboarding updates V3                                                                         |
 
 ## Task details
 
 ### 1 `src debug` command to `src-cli`
 
 - Workgroup: Warren, Tomas
-- Details: This command will create an archive (zip file) with the information we need most often in troubleshooting (values, logs, etc) so that we can ask for one thing and get the majority (if not all) the information we need while troubleshooting. We'll additionally need a way for customers to transfer us this file (it will probably be too big for slack). [This](https://github.com/sourcegraph/src-cli/blob/src-debugger/cmd/src/debug.go) is the repo.
+- Details: This command will create an archive (zip file) with the information we need most often in troubleshooting (values, logs, etc) so that we can ask for one thing and get the majority (if not all) the information we need while troubleshooting. We'll additionally need a way for customers to transfer us this file (it will probably be too big for slack). This is an MVP in accordance with the [observability RFC](https://docs.google.com/document/d/1KjV9pNkwCwqzV5ugW6Bn0eQDZw2L8lVuWaaf7IvVYgQ/edit#). Future plans involve encorperating grafana snapshots and jaeger tracing into this tool. You can see the code in the `src-cli` [src debugger](https://github.com/sourcegraph/src-cli/blob/src-debugger/cmd/src/debug.go) branch.
 
 ### 2 Doc updates
 
@@ -53,9 +53,10 @@ In support of our product/engineering Q3 objective to _Make cloud and enterprise
 ### 6 CSE "database"
 
 - Workgroup: Michael, Jason, Ben, Gabe, Warren, Don
-- Details: This is a big problem to tackle and will require agreeing to the problem statement, what needs to be true for the solution, and then brainstorming. A few things to consider already:
-  - Having a Guide/pool/database of all resolved tickets with specific keywords to easily identify what the troubleshooting steps are talking about, especially for frequent or complex cases where we can easily make reference to for faster customer resolution. Having a well documented case note( outlining thought process, and steps towards resolution) would really go a long way in achieving this.
+- Channel: [#wg-post-aux](https://sourcegraph.slack.com/archives/C02B9HR49U6)
+- Details: Having a Guide/pool/database of all resolved tickets with specific keywords to easily identify what the troubleshooting steps are talking about, especially for frequent or complex cases where we can easily make reference to for faster customer resolution. Having a well documented case note( outlining thought process, and steps towards resolution) would really go a long way in achieving this.
   - Place for documenting known historic bugs indexed to versions (thinking an md file in our github page), I don’t think the changelog is sufficient for this nor the upgrade pages on Docs.
+  - Ensuring we have a framework in place that accounts for data integrity and ensuring customer sensitive information are not exposed.
   - It will be interesting to assess the pros/cons of the solution being customer-facing or not and/or what can be customer-facing vs not
 
 ### 7 Streamline key steps in CSE workflow
@@ -74,7 +75,9 @@ In support of our product/engineering Q3 objective to _Make cloud and enterprise
 ### 9 Long running issue retros
 
 - Workgroup: Virginia, Alex
-- Details: Implement practice to have CS, CE, Eng retros on all cases that take longer than 7 days to resolve
+- Channel: #wg-cse-long-running-case-retro-practice
+- Details: Implement practice to have CS, CE, Eng retros on all cases that take longer than X days to resolve
+- [Working notes document](https://docs.google.com/document/d/1RG2phsY5Ql2XP8qqf08asPnXA7MtAyWq_LevPouoOtA/edit)
 
 ### 10 Hard convo enablement
 
@@ -90,7 +93,7 @@ In support of our product/engineering Q3 objective to _Make cloud and enterprise
 
 ## Progress update
 
-Progress update on how we are tracking toward our OKR to be provided 2021-08-27 and 2021-09-30
+Progress update on how we are tracking toward our OKR can be found [here](https://docs.google.com/spreadsheets/d/11SJb0KdkT0Kmp0epjSkJ1TnzuWilnLEhILGrjl9kFCU/edit#gid=0), which is also linked in [the product/engineering tracker](https://docs.google.com/spreadsheets/d/1M7xgQuKTkxhAlOU2bZgnp5EjJgptwxNJXBkOJaomm5w/edit?usp=sharing).
 
 ## Final summary
 
