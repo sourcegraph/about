@@ -78,7 +78,6 @@ The [Command Line Generator](https://github.com/sourcegraph/support-generator) i
 
 [Sourcegraph Debugging Sheet](https://sourcegraph.github.io/support-tools-internal/Debugging-Sheet/) is a cheatsheet designed to streamline the troubleshooting process by allowing CSE's to search for common topics discussed with our customers and first steps at troubleshoot them.
 
-
 #### How to use:
 
 1. Go to [Cors Demo](https://cors-anywhere.herokuapp.com/) to opt-in for temporary `Cors Anywhere` access by clicking on the Request temporary access to the demo server button
