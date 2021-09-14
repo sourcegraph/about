@@ -30,15 +30,16 @@ We see three main learnings from the first year of Batch Changes:
 - We have discovered that importing, tracking and managing existing changesets that were not created by Batch Changes, is perceived as very useful by customers. However, importing changesets today is clumsy, so this workflow is not very frequently used. We need to improve it and validate the value of this use case. If successfull, it could create a low-friction, low-effort entrypoint into Batch Changes for new users and increase usage frequency and stickiness.
 - Batch changes works great for teams with 1,000s repositories, but gets clumsy to use for companies with 10,000s repositories.
 
-Here are the themes we want to focus on for the next 3 years:
+## Strategy
 
-### Enterprise scale
+Over the next three years, we want to:
+- First, get adopted by the Sourcegraph customer base, including large enterprises. Target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use.
+- Concurrently, spread usage (MAUs) within our customer, and make sure we deliver on our success metric (changesets merged)
+- Then, create low-effort entrypoints into Batch Changes, and allow users unfamiliar with the practice of automating code changes to onboard with a smooth lerning curve. Make onboarding Batch Changes self-service for most users to help our customers be successfull and prepare for launching on Cloud.
+- Then, release Batch Changes on Sourcegraph Cloud, and test and learn how we can serve individuals and smaller teams
+- Eventually, address the problem end to end by becoming the go-to place for code change tools and recipes.
 
-Batch Changes is succesfully adopted by very large companies, with 10,000s of repositories. While there is no technical limitation for Batch Changes to run at that scale, there are 2 practical limitations:
-
-- Batch changes works great for teams with 1,000s repositories, but gets clumsy to use for companies with 10,000s repositories.
-- The key success metric for customers is the number of changesets opened by Batch Changes that eventually get merged. To be succesfull, we need to increase adoption, and the merge rate of changesets.
-- We have discovered that importing, tracking and managing existing changesets that were not created by Batch Changes, is perceived as very useful for customers. Importing changesets today is clumsy, so this workflow is not very frequently used. We need to improve it, and validate the value of this use case. If successfull, it could create a loew-friction, low-effort entrypoint into Batch Changes for new users and increase usage frequency and stickiness.
+To deliver the strategy, here are the themes we want to focus on for the next 3 years:
 
 ### Enterprise scale
 
