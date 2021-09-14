@@ -82,6 +82,7 @@ We plan to achieve feature parity on Sourcegraph Cloud, including Batch Changes.
 
 The most frequent question that our customers ask when onboarding Batch Changes is "how do I write code to change x". Writing code to change code is not trivial, and although there are existing tools, most of them fail short either in usability or in expressivity. Having a way to find or write code that automates the change they want is the first critical step in our customer's job to be done, and is a prerequisite for automation.
 By solving that problem, we will:
+
 - solve for our customer's job to be done (JTBD) end to end
 - position ourselves to address competition specialized in one use case or language
 - create defensibility by allowing users to share their code in a registry
