@@ -55,11 +55,29 @@ To drive enterprise success and stickiness, we need to:
 
 ### Discovery and onboarding
 
+As we go to market, our install base of customers with Batch Changes enabled is growing. Often, a few teams have adopted Batch Changes in a given company, because they were the one feeling the need at the time. That team is frequently used to making large scale code changes and building automation, so adopting Batch Changes is easier to them and they later on turn into evangelists inside the company. We want to make Batch Changes more discoverable, and self-serve to onboard for users, both as a way to drive adoption within customers and increase value and stickiness, but also to prepare for the self-service model of Batch Changes on Sourcegraph Cloud. We plan to:
+- make Batch Changes more discoverable within Sourcegraph
+- provide pathways from Search into Batch Changes
+- make onboarding self-servive and provide easy ways to get started
+
+
 ### Adoption through low-effort usage patterns
+
+The main use case for Batch Changes today is to automate creating a change at scale, then tracking it. This requires some time investment from users to get familiar with batch changes, and also to write the code required to automate code changes. This is greate for the platform engineer persona or users that feel the urgency to adopt, but it does not allow for less committed users to discover Batch Changes and form habits.
+
+We have heard from customers that tracking and managing changesets created outside of batch changes is very valuable as it replaces the same painful manual tracking and management tasks that for changes created automatically: track the status of changes across many teams, and make sure they get merged. We think there is an opportunity to offer a low-effort entrypoint into Batch Changes by allowing users to import changesets easily, and use the tracking and management functions.
+
+We also think we can deliver our vision by offering a way to change code across repositories, without writing code, and directly form the Sourcegraph navigation UI.
+
+We plan to drive usage (MAUs) by implementing low-effort, high-frequency use cases.
 
 ### Cloud
 
+We plan to achieve feature parity on Sourcegraph Cloud, including Batch Changes. Today, the value of Batch Changes increases exponentially with the size of a customer's codebase and team. Improving on the "Adoption through low-effort usage patterns" and "Discovery and onboarding" themes are prerequisites for success on Sourcegraph Cloud,
+
 ### Automate common code changes
+
+
 
 ---
 
