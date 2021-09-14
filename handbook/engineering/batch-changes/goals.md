@@ -34,12 +34,13 @@ We see three main learnings from the first year of Batch Changes:
 
 <<<<<<< HEAD
 To deliver our vision, we will:
-- First, get adopted by the Sourcegraph customer base, including large enterprises. We will target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use.
-=======
-Over the next three years, we want to:
+
+- # First, get adopted by the Sourcegraph customer base, including large enterprises. We will target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use.
+
+  Over the next three years, we want to:
 
 - First, get adopted by the Sourcegraph customer base, including large enterprises. Target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use.
->>>>>>> 21327c494ce66fdcb5788db3f7dc30ae031dfaf4
+  > > > > > > > 21327c494ce66fdcb5788db3f7dc30ae031dfaf4
 - Concurrently, spread usage (MAUs) within our customer, and make sure we deliver on our success metric (changesets merged)
 - Then, create low-effort entrypoints into Batch Changes, and allow users unfamiliar with the practice of automating code changes to onboard with a smooth lerning curve. Make onboarding Batch Changes self-service for most users, to help our customers be successfull and prepare for launching on Cloud.
 - Then, release Batch Changes on Sourcegraph Cloud, and test and learn how we can serve individuals and smaller teams
@@ -62,10 +63,10 @@ To drive enterprise success and stickiness, we need to:
 ### Discovery and onboarding
 
 As we go to market, our install base of customers with Batch Changes enabled is growing. Often, a few teams have adopted Batch Changes in a given company, because they were the one feeling the need at the time. That team is frequently used to making large scale code changes and building automation, so adopting Batch Changes is easier to them and they later on turn into evangelists inside the company. We want to make Batch Changes more discoverable, and self-serve to onboard for users, both as a way to drive adoption within customers and increase value and stickiness, but also to prepare for the self-service model of Batch Changes on Sourcegraph Cloud. We plan to:
+
 - make Batch Changes more discoverable within Sourcegraph
 - provide pathways from Search into Batch Changes
 - make onboarding self-servive and provide easy ways to get started
-
 
 ### Adoption through low-effort usage patterns
 
@@ -82,8 +83,6 @@ We plan to drive usage (MAUs) by implementing low-effort, high-frequency use cas
 We plan to achieve feature parity on Sourcegraph Cloud, including Batch Changes. Today, the value of Batch Changes increases exponentially with the size of a customer's codebase and team. Improving on the "Adoption through low-effort usage patterns" and "Discovery and onboarding" themes are prerequisites for success on Sourcegraph Cloud,
 
 ### Automate common code changes
-
-
 
 ---
 
