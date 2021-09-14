@@ -2,15 +2,14 @@
 
 Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 
-
 ## Quick start
 
-| What                                 | Command                                    |
-| ------------------------------------ | ------------------------------------------ |
-| Auto-preview about.sourcegraph.com   | `cd website && yarn install && yarn start` |
-| Final review about.sourcegraph.com   | `cd website && yarn install && yarn serve` |
-| Preview handbook                     | `make serve`                               |
-| Check for broken links               | `make docsite-check`                       |
+| What                               | Command                                    |
+| ---------------------------------- | ------------------------------------------ |
+| Auto-preview about.sourcegraph.com | `cd website && yarn install && yarn start` |
+| Final review about.sourcegraph.com | `cd website && yarn install && yarn serve` |
+| Preview handbook                   | `make serve`                               |
+| Check for broken links             | `make docsite-check`                       |
 
 ## Requirements
 

@@ -30,7 +30,7 @@ Credentials: [1Password](https://my.1password.com/vaults/dnrhbauihkhjs5ag6vszsme
 
 ### Gitolite
 
-Git URL: gitolite.sgdev.org
+Git URL: git@gitolite.sgdev.org
 
 Credentials: [1Password](https://my.1password.com/vaults/dnrhbauihkhjs5ag6vszsme45a/allitems/i5bm6syw45w2c33cvfrrlt4fhu)
 
@@ -50,9 +50,9 @@ We maintain separate AWS accounts with Sourcegraph instances and other infrastru
 
 To access this AWS account:
 
-1. Request an AWS user ID by asking a member of the `#distribution` team in slack. 
+1. Request an AWS user ID by asking a member of the `#distribution` team in slack.
 1. Once you have your credentials visit https://aws.amazon.com/console/.
-1. Sign into AWS using those details and Account ID `sourcegraph. 
+1. Sign into AWS using those details and Account ID `sourcegraph.
 
 ### Accessing customer environment replicas
 

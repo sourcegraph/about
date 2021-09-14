@@ -24,12 +24,7 @@ export default ((props: any) => (
             <meta name="description" content={desc} />
             <link rel="icon" type="image/png" href="/favicon.png" />
         </Helmet>
-        <ContentPage
-            title={title}
-            description={desc}
-            className="text-dark"
-            titleClassName="display-2 font-weight-bold"
-        >
+        <ContentPage title={title} description={desc} className="text-dark" titleClassName="display-2 font-weight-bold">
             <ContentSection className="pt-6 pb-2">
                 <div className="row">
                     <div className="col-md-6 mb-4 pb-1">
@@ -72,7 +67,10 @@ export default ((props: any) => (
                             <h5 className="card-header">Jobs</h5>
                             <div className="card-body">
                                 <p className="card-text">For information about joining our team:</p>
-                                <Link className="btn btn-outline-primary stretched-link" to="https://boards.greenhouse.io/sourcegraph91">
+                                <Link
+                                    className="btn btn-outline-primary stretched-link"
+                                    to="https://boards.greenhouse.io/sourcegraph91"
+                                >
                                     See career opportunities
                                 </Link>
                             </div>

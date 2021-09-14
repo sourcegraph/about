@@ -1,7 +1,7 @@
 // stylelint-disable declaration-property-unit-whitelist
 // stylelint-disable selector-max-id
 
-@use "sass:math";
+@use 'sass:math';
 
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/mixins';
@@ -284,7 +284,6 @@ table {
 @import 'pages/_white_papers';
 @import 'pages/content';
 @import 'pages/events';
-@import 'pages/get-started';
 @import 'pages/index';
 @import 'pages/jobs';
 @import 'pages/landing-page';
@@ -339,4 +338,9 @@ table {
     font-weight: 600;
     font-size: 1.25em;
     border-bottom-width: 1px;
+}
+
+.font-size-medium {
+    font-size: 1.2em;
+    line-height: 1.95em;
 }

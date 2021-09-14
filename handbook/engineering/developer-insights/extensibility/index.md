@@ -7,9 +7,10 @@ The extensibility team owns our code host and third-party integrations (includin
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
 
 - [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../../product/roles/index.md#product-manager)) is the acting PM for this team until we can hire a dedicated PM for it. Once that happens, Joel will focus entirely on code insights.
-- [Murat Sutunc](../../../company/team/index.md#murat-sutunc-he-him) (Interim [Engineering Manager](../../roles.md#engineering-manager)) {#extensibility-eng}
+- [Murat Sutunc](../../../company/team/index.md#murat-sutunc-he-him) ([Engineering Manager](../../roles.md#engineering-manager)) {#extensibility-eng}
   - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-  - E.T. starting 2021-08-23
+  - [Erzhan Torokulov](../../../company/team/index.md#erzhan-torokulov-he-him)
+  - FY22 full-stack engineer hire
   - FY22 full-stack engineer hire
 
 ## Mission
@@ -30,7 +31,7 @@ _The extensibility team has many ownership areas, but not all of them are under 
 
 1. Sourcegraph extensions
    - Providing a Sourcegraph extension API that enables developers to bring data from their favorite developer tools into their Sourcegraph workflow.
-   - Build and maintain useful Sourcegraph extensions.([Sourcegraph-maintained extensions](https://docs.sourcegraph.com/dev/background-information/sourcegraph_extensions)).
+   - Build and maintain useful Sourcegraph extensions.([Sourcegraph-maintained extensions](https://docs.sourcegraph.com/dev/background-information/sourcegraph_extensions); [video demos](https://www.youtube.com/watch?v=en9kmvPqpIU&list=PL6zLuuRVa1_gYlZ0H4O0MbJ0Pi7ugH63s)).
    - Documentation and tutorials that enable third-party developers to create actively useful extensions.
    - Building and maintaining the extensions registry, discovery paths, and extensions developer toolsets, to create an ecosystem around Sourcegraph extensions.
 1. Code host integrations
