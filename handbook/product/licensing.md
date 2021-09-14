@@ -22,7 +22,7 @@ This means you have the following limitations:
 
 - No path to upgrade to an Enterprise or Team plan down the line (you can’t change your mind without launching a new instance)
 - No external dependencies (means no extensions!)
-- No enterprise features (SSO, access control, Batch Changes, Code Insights, Code Monitoring)
+- No enterprise features (SSO, access control, Batch Changes, Code Insights (Beta), Code Monitoring)
 - Built as a single container (limited scalability)
 - No access to our extensions
 
