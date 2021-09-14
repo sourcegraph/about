@@ -19,7 +19,6 @@ These places are the source of truth for information at Sourcegraph. Information
 - [productboard](https://sourcegraph.productboard.com/)
 - [HubSpot](https://app.hubspot.com) (only contacts, not companies and deals)
 - [Salesforce](https://sourcegraph2020.lightning.force.com/)
-- [JIRA Service Desk](https://sourcegraph.atlassian.net/jira/servicedesk/projects/SG)
 - [Looker](http://sourcegraph.looker.com/)
 - [Customer legal contracts](https://drive.google.com/drive/folders/1ePvVWcZYdd1_3ZlCP5A0lvMbBhBCVfSm)
 
@@ -109,7 +108,6 @@ For example, this will redirect to our home page:
 
 We also use [srcgr.ph](http://srcgr.ph/) as our Bitly custom URL.
 It is also possible to customise specific sub-paths via Bitly. To do so we use our Bitly account, which is linked to our Twitter account. If you would like to request a shortened link, contact the [Marketing team](mailto:marketing-team@sourcegraph.com).
-
 
 ## Google Docs
 

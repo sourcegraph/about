@@ -11,108 +11,107 @@ const LEADERS: {
     github: string
     linkedin: string
     twitter: string
-
 }[] = [
-        {
-            name: 'Quinn Slack',
-            image: '/staff/avatar-quinn.jpg',
-            title: 'CEO and Cofounder',
-            bio: '/handbook/company/team#quinn-slack',
-            github: 'https://github.com/sqs',
-            linkedin: 'https://www.linkedin.com/in/quinnslack',
-            twitter: 'https://twitter.com/sqs'
-        },
-        {
-            name: 'Beyang Liu',
-            image: '/staff/avatar-beyang.jpg',
-            title: 'CTO and Cofounder',
-            bio: '/handbook/company/team#beyang-liu',
-            github: 'https://github.com/beyang',
-            linkedin: 'https://www.linkedin.com/in/beyang-liu',
-            twitter: 'https://twitter.com/beyang'
-        },
-        {
-            name: 'Christina Forney',
-            image: '/staff/avatar-christina.jpg',
-            title: 'VP Product',
-            bio: '/handbook/company/team#christina-forney-she-her',
-            github: 'https://github.com/christinaforney',
-            linkedin: 'https://www.linkedin.com/in/christinaforney',
-            twitter: 'https://twitter.com/christina4nee'
-        },
-        {
-            name: 'Dan Adler',
-            image: '/staff/avatar-dan.jpg',
-            title: 'VP Operations',
-            bio: '/handbook/company/team#dan-adler-he-him',
-            github: 'https://github.com/dadlerj',
-            linkedin: 'https://www.linkedin.com/in/danielnealadler',
-            twitter: 'https://twitter.com/DanielNealAdler'
-        },
-        {
-            name: 'Gregg Stone',
-            image: '/staff/avatar-gregg.jpg',
-            title: 'VP Sales',
-            bio: '/handbook/company/team#gregg-stone',
-            github: 'https://github.com/sourcegraph',
-            linkedin: 'https://www.linkedin.com/in/stonegregg',
-            twitter: 'https://twitter.com/sourcegraph'
-        },
-        {
-            name: 'Kacie Jenkins',
-            image: '/staff/avatar-kacie.jpg',
-            title: 'VP Marketing',
-            bio: '/handbook/company/team#kacie-jenkins-she-her',
-            github: 'https://github.com/sourcegraph',
-            linkedin: 'https://www.linkedin.com/in/kaciejenkins',
-            twitter: 'https://twitter.com/mskaciej'
-        },
-        {
-            name: 'Nick Snyder',
-            image: '/staff/avatar-nick.jpg',
-            title: 'VP Engineering',
-            bio: '/handbook/company/team#nick-snyder-he-him',
-            github: 'https://github.com/nicksnyder',
-            linkedin: 'https://www.linkedin.com/in/nickdsnyder',
-            twitter: 'https://twitter.com/nickdsnyder'
-        },
-        {
-            name: 'Carly Jones',
-            image: '/staff/avatar-carly.jpg',
-            title: 'VP Talent',
-            bio: '/handbook/company/team#carly-jones-she-her',
-            github: 'https://github.com/carlyj0nes',
-            linkedin: 'https://www.linkedin.com/in/carlycjones/',
-            twitter: 'https://twitter.com/sourcegraph'
-        },
-        {
-            name: 'Debbie Johnstone',
-            image: '/staff/avatar-debbie.jpg',
-            title: 'VP People',
-            bio: '/handbook/company/team#debbie-johnstone-she-her',
-            github: 'https://github.com/sourcegraph',
-            linkedin: 'https://www.linkedin.com/in/debbie-johnstone-58901a1b/',
-            twitter: 'https://twitter.com/sourcegraph'
-        },
-        {
-            name: 'Katerina Nikolova',
-            image: '/staff/avatar-katerina.jpg',
-            title: 'Chief of Staff',
-            bio: '/handbook/company/team#katerina-nikolova-she-her',
-            github: 'https://github.com/katerina-sourcegraph',
-            linkedin: 'https://www.linkedin.com/in/katerinanikolova/',
-            twitter: 'https://twitter.com/Katerin74625921'
-        },
-        {
-            name: 'Noemi Mercado',
-            image: '/staff/avatar-noemi.jpg',
-            title: 'Head of People Ops',
-            bio: '/handbook/company/team#noemi-mercado-she-her',
-            github: 'https://github.com/mercadon',
-            linkedin: 'https://www.linkedin.com/in/noemí-mercado-3aa92798',
-            twitter: 'https://twitter.com/sourcegraph'
-        },
-    ]
+    {
+        name: 'Quinn Slack',
+        image: '/staff/avatar-quinn.jpg',
+        title: 'CEO and Cofounder',
+        bio: '/handbook/company/team#quinn-slack',
+        github: 'https://github.com/sqs',
+        linkedin: 'https://www.linkedin.com/in/quinnslack',
+        twitter: 'https://twitter.com/sqs',
+    },
+    {
+        name: 'Beyang Liu',
+        image: '/staff/avatar-beyang.jpg',
+        title: 'CTO and Cofounder',
+        bio: '/handbook/company/team#beyang-liu',
+        github: 'https://github.com/beyang',
+        linkedin: 'https://www.linkedin.com/in/beyang-liu',
+        twitter: 'https://twitter.com/beyang',
+    },
+    {
+        name: 'Christina Forney',
+        image: '/staff/avatar-christina.jpg',
+        title: 'VP Product',
+        bio: '/handbook/company/team#christina-forney-she-her',
+        github: 'https://github.com/christinaforney',
+        linkedin: 'https://www.linkedin.com/in/christinaforney',
+        twitter: 'https://twitter.com/christina4nee',
+    },
+    {
+        name: 'Dan Adler',
+        image: '/staff/avatar-dan.jpg',
+        title: 'VP Operations',
+        bio: '/handbook/company/team#dan-adler-he-him',
+        github: 'https://github.com/dadlerj',
+        linkedin: 'https://www.linkedin.com/in/danielnealadler',
+        twitter: 'https://twitter.com/DanielNealAdler',
+    },
+    {
+        name: 'Gregg Stone',
+        image: '/staff/avatar-gregg.jpg',
+        title: 'VP Sales',
+        bio: '/handbook/company/team#gregg-stone',
+        github: 'https://github.com/sourcegraph',
+        linkedin: 'https://www.linkedin.com/in/stonegregg',
+        twitter: 'https://twitter.com/sourcegraph',
+    },
+    {
+        name: 'Kacie Jenkins',
+        image: '/staff/avatar-kacie.jpg',
+        title: 'VP Marketing',
+        bio: '/handbook/company/team#kacie-jenkins-she-her',
+        github: 'https://github.com/sourcegraph',
+        linkedin: 'https://www.linkedin.com/in/kaciejenkins',
+        twitter: 'https://twitter.com/mskaciej',
+    },
+    {
+        name: 'Nick Snyder',
+        image: '/staff/avatar-nick.jpg',
+        title: 'VP Engineering',
+        bio: '/handbook/company/team#nick-snyder-he-him',
+        github: 'https://github.com/nicksnyder',
+        linkedin: 'https://www.linkedin.com/in/nickdsnyder',
+        twitter: 'https://twitter.com/nickdsnyder',
+    },
+    {
+        name: 'Carly Jones',
+        image: '/staff/avatar-carly.jpg',
+        title: 'VP Talent',
+        bio: '/handbook/company/team#carly-jones-she-her',
+        github: 'https://github.com/carlyj0nes',
+        linkedin: 'https://www.linkedin.com/in/carlycjones/',
+        twitter: 'https://twitter.com/sourcegraph',
+    },
+    {
+        name: 'Debbie Johnstone',
+        image: '/staff/avatar-debbie.jpg',
+        title: 'VP People',
+        bio: '/handbook/company/team#debbie-johnstone-she-her',
+        github: 'https://github.com/sourcegraph',
+        linkedin: 'https://www.linkedin.com/in/debbie-johnstone-58901a1b/',
+        twitter: 'https://twitter.com/sourcegraph',
+    },
+    {
+        name: 'Katerina Nikolova',
+        image: '/staff/avatar-katerina.jpg',
+        title: 'Chief of Staff',
+        bio: '/handbook/company/team#katerina-nikolova-she-her',
+        github: 'https://github.com/katerina-sourcegraph',
+        linkedin: 'https://www.linkedin.com/in/katerinanikolova/',
+        twitter: 'https://twitter.com/Katerin74625921',
+    },
+    {
+        name: 'Noemi Mercado',
+        image: '/staff/avatar-noemi.jpg',
+        title: 'Head of People Ops',
+        bio: '/handbook/company/team#noemi-mercado-she-her',
+        github: 'https://github.com/mercadon',
+        linkedin: 'https://www.linkedin.com/in/noemí-mercado-3aa92798',
+        twitter: 'https://twitter.com/sourcegraph',
+    },
+]
 
 export const LeadershipSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="leadership" className={`leadership-section ${className}`}>
@@ -121,37 +120,30 @@ export const LeadershipSection: React.FunctionComponent<{ className?: string }> 
             {LEADERS.map((staff, i) => (
                 <div key={i} className="col-lg-4 mb-6">
                     <div className={`leadership-section__item ${staff.name.replace(' ', '-').toLowerCase()}`}>
-                        <a href={staff.bio}><img className="leadership-section__item-image" src={staff.image} alt={`Sourcegraph team: ${staff.name} - ${staff.title}`} /></a>
-                        <h5><a href={staff.bio}>{staff.name}</a></h5>
+                        <a href={staff.bio}>
+                            <img
+                                className="leadership-section__item-image"
+                                src={staff.image}
+                                alt={`Sourcegraph team: ${staff.name} - ${staff.title}`}
+                            />
+                        </a>
+                        <h5>
+                            <a href={staff.bio}>{staff.name}</a>
+                        </h5>
                         <p className="leadership-section__item-title">{staff.title}</p>
                         <ul className="nav leadership-section__item-social mt-1">
                             <li className="nav-item">
-                                <a
-                                    href={staff.github}
-                                    target="_blank"
-                                    rel="nofollow noopener"
-                                    aria-label="GitHub"
-                                >
+                                <a href={staff.github} target="_blank" rel="nofollow noopener" aria-label="GitHub">
                                     <GithubIcon />
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    href={staff.twitter}
-                                    target="_blank"
-                                    rel="nofollow noopener"
-                                    aria-label="Twitter"
-                                >
+                                <a href={staff.twitter} target="_blank" rel="nofollow noopener" aria-label="Twitter">
                                     <TwitterIcon />
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    href={staff.linkedin}
-                                    target="_blank"
-                                    rel="nofollow noopener"
-                                    aria-label="LinkedIn"
-                                >
+                                <a href={staff.linkedin} target="_blank" rel="nofollow noopener" aria-label="LinkedIn">
                                     <LinkedinIcon />
                                 </a>
                             </li>

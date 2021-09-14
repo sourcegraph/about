@@ -1,0 +1,15 @@
+website/.cache/
+website/public/
+
+# Prettier chokes on Go template syntax
+_resources/templates/
+
+# Old blog content
+blogposts/201?/
+blogposts/2020/
+blogposts/liveblogs/dotgo/
+blogposts/liveblogs/github-universe/
+blogposts/liveblogs/gophercon/
+blogposts/liveblogs/graphql-summit/
+blogposts/liveblogs/strange-loop/
+website/static/gophercon-2019/

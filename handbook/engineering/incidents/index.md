@@ -62,7 +62,7 @@ The goal of triage is to either quickly resolve the incident using basic procedu
 
 ### Incident Lead
 
-The indicent lead is responsible for resolving the incident as quickly and safely as possible. They are the DRI coordinating the incident, tasked with driving it to resolution and ensuring clear internal and external communication with stalkholders and customers.
+The incident lead is responsible for resolving the incident as quickly and safely as possible. They are the DRI coordinating the incident, tasked with driving it to resolution and ensuring clear internal and external communication with stalkholders and customers.
 
 1. **Thank** the person who identified the incident.
 1. **Acknowledge ownership** of the incident in the relevant incident chatroom (i.e. "I'm on it").
@@ -86,6 +86,10 @@ After the incident is resolved:
 1. [Generate a postmortem](https://docs.incident.io/generating-a-postmortem), documents details and publish in Incidents folder in Google Drive.
 1. Create GitHub issues for any appropriate followup work.
 1. Schedule a [retrospective](../../retrospectives/index.md) if you think it would be valuable.
+
+## Incident Post-mortems
+
+- [3.30 Postgres Index Incident](./330_incident_retro.md)
 
 ## Go-to-market (license and subscription) issues
 
