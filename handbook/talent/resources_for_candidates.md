@@ -116,5 +116,4 @@ Using BrightHire is optional for both our interviewers and our candidates. We wi
 
 - Q: Do you provide Visa sponsorship?
 
-   - A: You can learn more about our Visa policy [here](https://about.sourcegraph.com/handbook/people-ops/how-we-engage-talent-outside-the-us#work-visas).  If you have any questions, please email recruiting@sourcegraph.com.
-
+  - A: You can learn more about our Visa policy [here](https://about.sourcegraph.com/handbook/people-ops/how-we-engage-talent-outside-the-us#work-visas). If you have any questions, please email recruiting@sourcegraph.com.
