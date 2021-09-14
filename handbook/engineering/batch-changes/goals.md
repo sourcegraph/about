@@ -14,7 +14,7 @@ Batch Changes is a tool to dfind code that needs to be changed and change it at 
 
 ## Mission
 
-We allow developers to focus on changing their code, without having to do any plumbing. We help them drive changesets to completion without having to rely on spreadhseets and painful coordination. Later on, we  want to make writing and running code that changes code easier to learn and use.
+We allow developers to focus on changing their code, without having to do any plumbing. We help them drive changesets to completion without having to rely on spreadhseets and painful coordination. Later on, we want to make writing and running code that changes code easier to learn and use.
 
 # 3 year strategy and themes
 
@@ -26,6 +26,7 @@ Over the first year, we have discovered a repetable playbook: a platform enginee
 
 We see three main learnings from the first year of Batch Changes:
 <<<<<<< HEAD
+
 - The key success metric for customers is the number of changesets opened by Batch Changes that eventually get merged. To be succesfull, we need to increase adoption, and the merge rate of changesets.
 - We have discovered that importing, tracking and managing existing changesets that were not created by Batch Changes, is perceived as very useful by customers. However, importing changesets today is clumsy, so this workflow is not very frequently used. We need to improve it and validate the value of this use case. If successfull, it could create a low-friction, low-effort entrypoint into Batch Changes for new users and increase usage frequency and stickiness.
 - Batch changes works great for teams with 1,000s repositories, but gets clumsy to use for companies with 10,000s repositories.
@@ -34,8 +35,7 @@ Here are the themes we want to focus on for the next 3 years:
 
 ### Enterprise scale
 
-Batch Changes is succesfully adopted by very large companies, with 10,000s of repositories. While there is no technical limitation for Batch Changes to run at that scale, there are 2 practical limitations:
-=======
+# Batch Changes is succesfully adopted by very large companies, with 10,000s of repositories. While there is no technical limitation for Batch Changes to run at that scale, there are 2 practical limitations:
 
 - Batch changes works great for teams with 1,000s repositories, but gets clumsy to use for companies with 10,000s repositories.
 - The key success metric for customers is the number of changesets opened by Batch Changes that eventually get merged. To be succesfull, we need to increase adoption, and the merge rate of changesets.
@@ -44,7 +44,8 @@ Batch Changes is succesfully adopted by very large companies, with 10,000s of re
 ### Enterprise scale
 
 Batch Changes is succesfully adopted by very large companies, with 10,000s of repositories. While there is no technical limitation for Batch Changes to run at that scale, there are 2 limitations in practice:
->>>>>>> d50078222cc005cceffb633c0878fb9cc860aae1
+
+> > > > > > > d50078222cc005cceffb633c0878fb9cc860aae1
 
 - creating changesesets locally takes too long to be practical for very large scale changes
 - in companies with 10,000s of repositories, it is difficult for batch changes maintainers to understand what repositories they should target with a change, and to analyse progress of a batch change.
@@ -55,8 +56,6 @@ To drive enterprise success and stickiness, we need to:
 - allow users to find out where to create batch changes and and understand what to do to get changesets merged in batch changes with 1,000 of changesets. This will increase the number of changesets merged, our key success metric.
 
 ### Discovery and onboarding
-
-
 
 ### Adoption through low-effort usage patterns
 
