@@ -19,13 +19,15 @@ You can watch the recording of this episode at the [bottom of this blog post](#W
 
 Liz's setup stresses ergnomics, and includes two monitors and a mechnical keyboard. Liz also uses a Blue Yeti mic and Logitech (?) webcam. On her desk are two computers: an AMD64 box and an ARM64 box with a 16 cores at 2.2GHz, 32 Gb ram. 
 
-![Liz's main work desk]()
+![Liz's main work desk](https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-desk.jpg
+)
 
 ## Accessibility
 
 Liz's desk isn't the only place she works, though. Despite an ergonomic setup, Liz's chronic fatigue condition makes it difficult to work at the desk for long periods of time. As an advocate for disability visibility, Liz is open about working from bed as needed. To make this more effective, Liz works on a 2017 [Google Pixelbook](https://support.google.com/pixelbook/answer/7503982?hl=en), which is lightweight enough to be balanced with a pinky finger. When she needs to, she can SSH in to her desktops to access further computing resources. 
 
-![Liz's reclined work setup]()
+![Liz's reclined work setup](https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-bed.jpg
+)
 
 Her approach to making work possible in different setups carries over to many of the development tools she uses.
 
