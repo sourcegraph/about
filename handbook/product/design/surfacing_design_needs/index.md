@@ -2,7 +2,7 @@
 
 Product design at Sourcegraph is low-process and highly collaborative. Most design needs are defined in the context of cross-disciplinary project teams, where the team works together across discovery and delivery phases, or in consulting design efforts, where a designer supports and unblocks engineering teams without an embedded designer. These design needs are **intrinsically** driven.
 
-From time to time, we need to surface **extrinsic** design needs. This happens when someone spots something outside of the context of immediate design efforts that would benefit from some future attention from the product design team.
+From time to time, we need to surface **extrinsic** design needs. This happens when someone spots something outside of the context of immediate design efforts but would benefit from some future attention from the product design team.
 
 To surface something for the product design team:
 

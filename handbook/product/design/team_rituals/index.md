@@ -6,7 +6,7 @@ As an asynchronous-first, globally-distributed design team, our team rituals hel
 
 The design club is our weekly sync to help us keep the pulse of product design at Sourcegraph. We use this time to:
 
-- Share updates and highlights and request feedback on work in progress
+- Share updates and highlights, and request feedback on work in progress
 - Discuss design-related issues with peers
 - Reflect on how we work as a product design team
 - Stay inspired
