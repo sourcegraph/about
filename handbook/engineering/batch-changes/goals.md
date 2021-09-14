@@ -39,6 +39,8 @@ To deliver our vision, we will:
 - Then, release Batch Changes on Sourcegraph Cloud, and test and learn how we can serve individuals and smaller teams
 - Eventually, address the problem end to end by becoming the go-to place for code change tools and recipes.
 
+## Themes
+
 To deliver the strategy, here are the themes we want to focus on for the next 3 years:
 
 ### Enterprise scale
