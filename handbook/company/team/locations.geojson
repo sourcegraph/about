@@ -1160,6 +1160,7 @@
         ]
       }
     },
+
     { "type": "Feature",
       "properties": {
         "name": "Tamar Joyeux"
@@ -1171,6 +1172,33 @@
         45.585678
        ]
      }
-   }
- ]
+   },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cesar Jimenez"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.332069,
+          47.606209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cristina Birkel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.73553466796875,
+          41.38299120166604
+        ]
+      }
+    }
+  ]
+
 }
