@@ -40,13 +40,13 @@ Your paycheck automatically includes a fixed reimbursement for $75 of mobile pho
 
 We want to ensure all teammates have a workspace that will make them comfortable and productive, so we offer a $2,000 [desk set-up budget](https://about.sourcegraph.com/handbook/people-ops/spending-company-money#desk-set-up) for all full-time teammates to provide them with any necessary equipment to make that possible.
 
-### 🏢 Co-working/office space 
+### 🏢 Co-working space
 
-We understand that a designated work space can aid with productivity. We offer a $300-500 [monthly budget](https://about.sourcegraph.com/handbook/people-ops/spending-company-money#recurring-expenses) for renting a co-working space, including parking.
+We offer our teammates a $300-500 [monthly budget](https://about.sourcegraph.com/handbook/people-ops/spending-company-money#recurring-expenses) to join a coworking space. Our intention is not for teammates to use this budget to rent set/permanent office spaces, but rather to have an alternative, flexible space from which to work if and when they may not be able to work from their homes productively. With the wide variety of coworking spaces and options available throughout the world, we ask that teammates stick to options within this budget, including all amenities and parking. We ask that teammates carry an additonal cost for more expensive options, locations and/or amenities, such as private offices within coworking spaces, which are often not necessary. We also encourage teammates to consider coworking spaces where subscriptions include access to their spaces in various locations, particularly for teammates who enjoy travelling. If your circumstances are exceptional and require spend outside of this budget, feel free to reach out to the PeopleOps team.
 
-### 🚚 Moving
+### 🚚 Moving help
 
-Whether you are relocating to join us or just moving places after you have already joined, we give you a yearly $1,000 stipend for hiring professional movers to reduce the stress associated with moving.
+Whether you are relocating to join us or simply moving to a new place after you have already joined, we offer a yearly $1,000 stipend for hiring professional movers to reduce the stress associated with moving. Should you choose to move yourself, you may use this stipend for purchasing/renting moving boxes, packing materials, and if needed, a moving van/truck.
 
 ## Benefits
 

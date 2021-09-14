@@ -2,9 +2,7 @@
 
 ## Our ethos
 
-Customer Support at Sourcegraph exists to resolve technical issues and answer technical/product questions in a way that feels (reasonably) effortless for our customers. Support is the go-to technical team for the Customer Engineering team, helping customers both pre- and post-sales.
-
-We show up for our customers, open source users, and teammates by living up to our Sourcegraph values and handbook, as well as these additional guiding principles …
+Customer Support at Sourcegraph exists to resolve technical issues and answer technical/product questions in a way that feels (reasonably) effortless for our customers. We show up for our customers (pre-sales and post-sales), open source users, and teammates by living up to our Sourcegraph values and handbook, as well as these additional guiding principles …
 
 - Focusing on the impact we might have and aligning our decisions and actions to the impact we desire
 - Seeking/providing context so the why is clear
@@ -21,25 +19,28 @@ For additional context, check out [RFC 274](https://docs.google.com/document/d/1
 
 ## The team
 
-- [Adeola Akinsiku](../company/team/index.md#adeola-akinsiku)
-- [Alex Jean-Baptiste](../company/team/index.md#alex-jean-baptiste-he-him)
-- [Amber Furbush](../company/team/index.md#amber-furbush-she-her)
-- [Beatrix Woo](../company/team/index.md#beatrix-woo-she-her)
-- [Ben Gordon](../company/team/index.md#team#ben-gordon-he-him)
-- [Carl Hicks](../company/team/index.md#carl-hicks-he-him)
-- [Don Ellison](../company/team/index.md#donavon-ellison-he-him)
-- [Gabe Torres](../company/team/index.md#team#gabe-torres-he-him)
-- [Giselle Northy](../company/team/index.md#giselle-northy-she-her)
-- [Jason Harris](../company/team/index.md#jason-harris-he-him)
-- [Kelvin Lee](../company/team/index.md#kelvin-lee-he-him)
-- [Mariam Adedeji](../company/team/index.md#mariam-adedeji-she-her)
-- [Michael Bali](../company/team/index.md#michael-bali-hehim)
-- [Stompy Mwendwa](../company/team/index.md#stompy-mwendwa)
-- [Warren Gifford](../company/team/index.md#warren-gifford-he-him)
-- [Virginia Ulrich](../company/team/index.md#virginia-ulrich-she-her) (Head of Customer Support - reporting to Beyang Liu, CTO)
-- BC (Manager) starting 2021-08-23
-- NO (Manager) starting 2021-08-23
-- TJ (Manager) starting 2021-08-23
+[Virginia Ulrich](../company/team/index.md#virginia-ulrich-she-her), Head of Customer Support - reporting to Beyang Liu, CTO
+
+- [Brielle Collins](../company/team/index.md#brielle-collins), Manager
+
+  - [Adeola Akinsiku](../company/team/index.md#adeola-akinsiku)
+    - [Gabe Torres](../company/team/index.md#team#gabe-torres-he-him)
+    - [Mariam Adedeji](../company/team/index.md#mariam-adedeji-she-her)
+    - [Michael Bali](../company/team/index.md#michael-bali-hehim)
+    - [Warren Gifford](../company/team/index.md#warren-gifford-he-him)
+
+- [Nonso Obiano](../company/team/index.md#nonso-obiano), Manager
+  - [Amber Furbush](../company/team/index.md#amber-furbush-she-her)
+  - [Don Ellison](../company/team/index.md#donavon-ellison-he-him)
+  - [Giselle Northy](../company/team/index.md#giselle-northy-she-her)
+  - [Jason Harris](../company/team/index.md#jason-harris-he-him)
+  - [Stompy Mwendwa](../company/team/index.md#stompy-mwendwa)
+- [Tamar Joyeux](../company/team/index.md#tamar-joyeux), Manager
+  - [Alex Jean-Baptiste](../company/team/index.md#alex-jean-baptiste-he-him)
+  - [Beatrix Woo](../company/team/index.md#beatrix-woo-she-her)
+  - [Ben Gordon](../company/team/index.md#team#ben-gordon-he-him)
+  - [Carl Hicks](../company/team/index.md#carl-hicks-he-him)
+  - [Kelvin Lee](../company/team/index.md#kelvin-lee-he-him)
 
 More details about each team member in [our team READMEs](support-bios.md).
 
@@ -134,6 +135,7 @@ We rely mostly on our ethos to inform our decisions and actions, allowing for th
 - [Triaging](customer-support-triaging.md)
 - [Enablement](support-enablement.md)
 - [Tools](support-tools.md)
+- [Assigned CSEs](assigned-cse.md)
 
 ## SLAs
 

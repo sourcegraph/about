@@ -9,10 +9,15 @@
 - [Inés Roitman](../company/team/index.md#in%c3%a9s-roitman-she-her), Onboarding and Training Manager
 - [Cassie Melani](../company/team/index.md#cassie-melani-she-her), Teammate Success Manager
 - [Cecily Black](../company/team/index.md#cecily-black-she-her), People Operations Coordinator
+- [Mary Belzer](../company/team/index.md#mary-belzer-she-her), Handbook Product Manager
 
 ### Roles
 
 See our [careers page](https://boards.greenhouse.io/sourcegraph91) for open roles on the People Ops team.
+
+### READMEs
+
+[People Ops READMEs](people-ops-bios.md)
 
 ### How to reach the right member of the People Ops team
 
@@ -73,9 +78,9 @@ WIP
 
 ### Business address and contact information
 
-**Address (for mail and corporate card billing):** 548 Market St PMB 20739, San Francisco, CA 94104-5401
+**Address (for mail):** 548 Market St PMB 20739, San Francisco, CA 94104-5401
 
-**Address (for contracts and paperwork):** Trellis Coworking: 981 Mission St, San Francisco, CA 94103
+**Address (for contracts, paperwork, and corporate card billing):** Trellis Coworking: 981 Mission St, San Francisco, CA 94103
 
 **Phone Number:** (650) 273-5591
 
