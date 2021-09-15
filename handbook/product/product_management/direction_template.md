@@ -12,9 +12,9 @@ This page outlines the vision, strategy and goals of the MyProductArea team. You
 
 Quicklinks:
 
-- [MyProductArea Backlog](#TODO)
-- [Latest demo](#TODO)
-- [Documentation](#TODO)
+- [MyProductArea Backlog](https://about.sourcegraph.com/) <!-- Update links with your page -->
+- [Latest demo](https://about.sourcegraph.com/)
+- [Documentation](https://about.sourcegraph.com/)
 
 # Vision
 
