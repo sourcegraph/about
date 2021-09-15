@@ -49,7 +49,7 @@ Let’s track other associated events and improve the segmentation of users.
 
 We now have events on the screen that give us an idea of how many of the viewers could initiate sign up and how many actually do. We can segment this chart to only new users as well:
 
-- In the heading “…performed by Any user” change 'Any' to ‘New’ to segment to only new users.
+- In the heading “…performed by Any user” change “Any” to “New” to segment to only new users.
 
 [View the example](https://analytics.amplitude.com/sourcegraph/chart/528n3wq?source=redirect%3A+chart+saved)
 
