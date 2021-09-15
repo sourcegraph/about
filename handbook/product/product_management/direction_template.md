@@ -2,6 +2,11 @@
 
 This page outlines the vision, strategy and goals of the MyProductArea team. You can use this section to describe what your scope is, and where your product is today.
 
+Quicklinks:
+- [MyProductArea Backlog](#TODO)
+- [Latest demo](#TODO)
+- [Documentation](#TODO)
+
 # Vision
 
 #### 1 Year vision
