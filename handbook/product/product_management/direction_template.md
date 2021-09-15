@@ -4,6 +4,7 @@
 
 > As you write this document, keep in mind that focusing on problems to solve more than lists of features tends to be a better way to approach communicating with customers, as it leaves room for learning between what you know now and what you deliver in the end. This is not to say you never talk about features, but especially as you get [further out in planning](https://medium.com/@jobv/the-nearsighted-roadmap-57fa57b5906a) the blend of features vs. problems to solve should move more towards the latter.
 
+> Be sure also to include why something is part of your direction. What you are doing is interesting, but why you have chosen that of all the possibilities is often even more enlightening.
 ---
 
 # MyProductArea Direction
