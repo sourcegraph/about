@@ -1,6 +1,6 @@
-# <Product> direction
+# MyProductArea Direction
 
-This page outlines the vision, strategy and goals of the <Product> team.
+This page outlines the vision, strategy and goals of the MyProductArea team.
 
 # Vision
 
