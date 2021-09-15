@@ -18,9 +18,11 @@ Quicklinks:
 - [Latest demo](https://about.sourcegraph.com/)
 - [Documentation](https://about.sourcegraph.com/)
 
-# Mission
+# Mission & Strategy
 
 What is the team's reason for existing? What is the fundamental value they aim to provide?
+
+What is your strategy defined in a few steps?
 
 # Vision
 
@@ -35,6 +37,18 @@ What is the team's reason for existing? What is the fundamental value they aim t
 #### 10 year vision
 
 > A sentence or two on your ten year vision is where you can really go wild and describe the problems you want to solve and solutions you want to deliver unbound by limitations of technology or scope. Be inspiring and look to the our [10 and 30 year strategies](../../company/strategy.md#sourcegraph-strategy) for ideas.
+
+# Guiding principles
+
+Identify what key principles, insights, and decisions are important to the strategy or a set of key hypotheses and set of key questions to validate or invalidate them.
+Describe the target by which we prioritize:
+
+- Market or audience
+- Personas
+- Jobs or Use Cases
+- Industries
+- What matters to us when we prioritize products and features
+- Contextual things that matter to Sourcegraph or the product
 
 # Where we are now
 
@@ -58,33 +72,6 @@ What is the team's reason for existing? What is the fundamental value they aim t
 
 What are we going to do in the next quarter, and how does it accomplish company goals and the product vision?
 
-## Top customer, support, sales and marketing issues
-
-- What are the top issues from customers we are taking on this quarter?
-- What are the top requests from other teams at Sourcegraph we are taking on this quarter?
-
-## What we're not working on
-
-What are we explicitly not working on? Are there frequent requests from customers or other teams we are choosing not to take on? Making that explicit makes other teams understand the strategy and reduces back and forth.
-
-# 3 year strategy and themes
-
-## Strategy
-
-What is your strategy defined in a few steps?
-
-## Guiding principles
-
-Identify what key principles, insights, and decisions are important to the strategy or a set of key hypotheses and set of key questions to validate or invalidate them.
-Describe the target by which we prioritize:
-
-- Market or audience
-- Personas
-- Jobs or Use Cases
-- Industries
-- What matters to us when we prioritize products and features
-- Contextual things that matter to Sourcegraph or the product
-
 ## Themes
 
 What are high level themes or principles you are using to guide prioritization within your three year strategy, and why? What are the groupings of features/problems to solve that you are focusing on in that period?
@@ -102,3 +89,12 @@ TODO
 ### Theme 2
 
 TODO
+
+## Top customer, support, sales and marketing issues
+
+- What are the top issues from customers we are taking on this quarter?
+- What are the top requests from other teams at Sourcegraph we are taking on this quarter?
+
+## What we're not working on
+
+What are we explicitly not working on? Are there frequent requests from customers or other teams we are choosing not to take on? Making that explicit makes other teams understand the strategy and reduces back and forth.
