@@ -2,6 +2,9 @@
 title: '7 Engineers Share Their Creative Work Calendars'
 description: 'It’s time to reimagine work. Here, seven sourcegraph team members, all current or former software engineers, share how they have transformed their work calendars into dynamic, creative experiments. As work trends toward remote, asynchronous, and flexible, engineers are leading the way toward rethinking the 40 hour work week.'
 author: Nick Moore
+published: true
+publishDate: 2021-09-16T10:00-07:00
+slug: calendar-post
 ---
 
 Work is only one part of our lives but until remote work, it occupied a sacrosanct place in our schedules. You were to work between the hours of 9:00 and 5:00, not including your commute to and from the office, and the rest of your life had to flow around that block.
