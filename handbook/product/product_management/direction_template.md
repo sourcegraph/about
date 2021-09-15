@@ -60,7 +60,7 @@ What is your strategy defined in a few steps?
 
 ## Themes
 
-What are high level themes or principles we use to guide prioritisation? What are we focusing on in the next few years?
+What are high level themes or principles you are using to guide prioritization within your three year strategy, and why? What are the groupings of features/problems to solve that you are focusing on in that period?
 
 > Examples:
 >
