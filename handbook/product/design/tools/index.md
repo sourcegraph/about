@@ -12,6 +12,7 @@ Here’s what we use and how they fit together.
 - [ProductBoard](https://sourcegraph.productboard.com) is where product teams aggregate all user feedback.
 
 ## User research and data
+
 - [Usertesting.com](https://usertesting.com) is our tool for unmoderated user research, which includes participant sourcing.
 - [LookBack](https://lookback.io) is our tool for moderated user research and interviews.
 - [Calendly](https://calendly.com) is our tool for scheduling user interviews and sessions where it’s easier for the other participant to choose a time that works for them.
