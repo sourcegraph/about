@@ -4,6 +4,10 @@ Batch Changes is a tool to find code that needs to be changed and change it at s
 
 # Vision
 
+#### 1 Year vision
+
+> Enterprise **developers** can easily create changesets across many repositories and codehosts, and track them to completion.
+
 #### 3 Year vision
 
 > Developers can easily create changesets across many repositories and codehosts, and track them to completion.
@@ -18,7 +22,7 @@ We allow developers to focus on changing their code, without having to do any pl
 
 # Where we are now
 
-Batch Changes has just proved market fit and is adopted by a dozen customers. We see early adoption across a diverse set of companies, from public technology companies to startups with a few dozens engineers ([Batch Changes dashboard](https://sourcegraph.looker.com/dashboards-next/174))
+Batch Changes has just proved market fit and is adopted by a dozen customers. We see early adoption across a diverse set of companies, from public technology companies to startups with a few dozens engineers ([Batch Changes dashboard](https://sourcegraph.looker.com/dashboards-next/174)).
 
 Over the first year, we have discovered a repeatable playbook: a platform engineering team, sometimes supported by a developer experience team, adopts Batch Changes to make large scale code changes. Most of the use cases are relatively simple code changes, such as updating configuration files across many repositories. Some are more complex, such as changing API call sites to ship a breaking change in an internal library. The common denominator is those changes would take a very long time to create and track to completion using a manual approach. Adopting Batch Changes allows the platform team to automate manual work and save time, as well as transition from a model in which they are asking their customer teams to do some work, to a more proactive where they can propose a change themselves and leave customer teams to review and merge.
 
