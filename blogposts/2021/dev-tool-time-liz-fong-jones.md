@@ -25,7 +25,7 @@ Liz's setup stresses ergonomics, and includes two monitors and a mechnical keybo
 
 Liz's desk isn't the only place she works, though. Despite an ergonomic setup, Liz's chronic fatigue condition makes it difficult to work at the desk for long periods of time. As an advocate for disability visibility, Liz is open about working from bed as needed. To make this more effective, Liz works on a 2017 [Google Pixelbook](https://support.google.com/pixelbook/answer/7503982?hl=en), which is lightweight enough to be balanced with a pinky finger. When she needs to, she can SSH in to her desktops to access further computing resources.
 
-![Liz's reclined work setup](https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-bed.jpg)
+![Liz's reclined work setup](https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-bed-cropped.jpg)
 
 Her approach to making work possible in different setups carries over to many of the development tools she uses.
 
@@ -41,6 +41,8 @@ Liz's dev workflow follows a structure that might be familiar for many devs. She
 
 This automation goes hand in hand with Liz's attention to [observability](https://www.honeycomb.io/what-is-observability/), which emphasizes the capacity to introspect a system and understand its internal state. Automated builds and infrastructure configuration, using tools such as [Chef](https://www.chef.io/) and [Terraform](https://www.terraform.io/), increase the transparency of the systems with which Liz regularly works. As part of her work for [Honeycomb](https://www.honeycomb.io/), Liz uses Honeycomb, and shifting into its interface to understand workflows, processes, and debug errors or failures is a key part of her workflow.
 
+Watch below to see how Liz uses Honeycomb as part of her dev workflow. 
+
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
     <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-observability.mp4"></video>
 </div>
@@ -52,6 +54,8 @@ This automation goes hand in hand with Liz's attention to [observability](https:
 One of Liz's desktop machines has an ARM64 processor, and she notes that it runs on 25 watts, roughly a quarter of a comparable AMD64/Intel CPU. ARM64 processors are generally more energy efficient, very performant, and can be cheaper than alternatives. Honeycomb already runs part of its compute workflows on ARM64, despite the relative paucity of cloud providers. Liz's own ARM64 desktop makes it easy to run native builds locally, while CircleCI's support for ARM64 automates the process for other developers at Honeycomb.
 
 The use of ARM64 is compelling, not just for the performance and cost. It's also part of a future of computing that attends to the sustainability of our environment given the ever expanding role of computing in society. This concern for sustainability isn't just business, but a commitment that shapes Liz's own choices in hardware.
+
+Watch below to hear Liz discuss the benefits and limitations of ARM64 in the current development ecosystem. 
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
     <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-arm64.mp4"></video>
