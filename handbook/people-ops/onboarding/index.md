@@ -79,7 +79,7 @@ Hiring managers can refer to the [Onboarding process for Hiring Managers](onboar
 
 1. Once you sign your contract, the Talent team will send you a welcome email linking you to a pre-onboarding form. Be sure to complete the form in time.
 1. Order [your computer](../ops/finance/spending-company-money.md#computers) or talk to Inés Roitman, [ines@sourcegraph.com](mailto:ines@sourcegraph.com), if you need to get it with the company card.
-1. Order the [desk equipment](../ops/financespending-company-money.md#desk-set-up) you need to be productive working remotely.
+1. Order the [desk equipment](../ops/finance/spending-company-money.md#desk-set-up) you need to be productive working remotely.
 
 You will be able to submit an expense reimbursement for the computer and desk equipment when you start.
 
