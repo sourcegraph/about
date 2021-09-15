@@ -34,7 +34,6 @@ An active user is differentiated from a visitor by performing a qualifying event
 We are also looking at the following as possibilities:
 
 - Adding private code
-- TODO upgrade based on new data
 
 Qualifying events are not intended to be difficult, or prove that someone is a heavy user of the product. They are carefully selected to represent activities that are important to realizing the value of Sourcegraph.
 
