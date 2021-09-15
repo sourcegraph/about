@@ -2,7 +2,7 @@
 
 > ℹ️  The following is a template for use on the pages of specific product & engineering teams, used to record and share the vision, strategy, and roadmap.<br>Copy to your team's page and complete accordingly.
 
->As you write this document, keep in mind that focusing on problems to solve more than lists of features tends to be a better way to approach communicating with customers, as it leaves room for learning between what you know now and what you deliver in the end. This is not to say you never talk about features, but especially as you get [further out in planning](https://medium.com/@jobv/the-nearsighted-roadmap-57fa57b5906a) the blend of features vs. problems to solve should move more towards the latter.
+> As you write this document, keep in mind that focusing on problems to solve more than lists of features tends to be a better way to approach communicating with customers, as it leaves room for learning between what you know now and what you deliver in the end. This is not to say you never talk about features, but especially as you get [further out in planning](https://medium.com/@jobv/the-nearsighted-roadmap-57fa57b5906a) the blend of features vs. problems to solve should move more towards the latter.
 
 ---
 
@@ -33,7 +33,6 @@ Quicklinks:
 ## Mission
 
 What is the team's reason for existing? What is the fundamental value they aim to provide?
-
 
 # Where we are now
 
