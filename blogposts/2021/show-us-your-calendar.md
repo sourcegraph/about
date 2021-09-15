@@ -10,23 +10,23 @@ slug: remote-work-calendar
 
 # Async, remote, and flexible: How 7 engineers rethought their work calendars
 
-**Description**: Engineers are leading the way toward rethinking the 40 hour work week. Here, seven Sourcegraph team members, all current or former software engineers, share how and why they transformed their work calendars to support their preferred lifestyles. 
+**Description**: Engineers are leading the way toward rethinking the 40 hour work week. Here, seven Sourcegraph team members, all current or former software engineers, share how and why they transformed their work calendars to support their preferred lifestyles.
 
-Work is only one part of our lives but until remote work, it occupied a sacrosanct place in our schedules. You were to work between the hours of 9:00 am and 5:00 pm, not including your commute to and from the office, and the rest of your life had to flow around that block. 
+Work is only one part of our lives but until remote work, it occupied a sacrosanct place in our schedules. You were to work between the hours of 9:00 am and 5:00 pm, not including your commute to and from the office, and the rest of your life had to flow around that block.
 
-Remote work offers the opportunity to rethink work from first principles and ask ourselves: What does life look like when our jobs work for us, rather than the other way around? When you don’t have to commute, when no one is watching you work, when code shipped at 2 am is as valuable as code shipped at 10 am, what can your life become? 
+Remote work offers the opportunity to rethink work from first principles and ask ourselves: What does life look like when our jobs work for us, rather than the other way around? When you don’t have to commute, when no one is watching you work, when code shipped at 2 am is as valuable as code shipped at 10 am, what can your life become?
 
 This is [r/battlestations](https://www.reddit.com/r/battlestations/) by way of Google Calendar: When your calendar is a creative space, what will you make?
-
 
 ## Loïc Guychard, engineering manager, has a four-day work week
 
 [Loïc Guychard](https://about.sourcegraph.com/handbook/company/team#lo%C3%AFc-guychard), engineering manager at Sourcegraph, compares work-time to closet space: “If you have it, you’re going to use it. Whether you use it for things that matter, that’s a different story.”
 
-To compress his closet space, Loïc only works four days a week. He works from 10:00 am to 7:00 pm and takes Fridays off. The four-day work week constrains him in a creative way, forcing him to make better decisions with his time. 
+To compress his closet space, Loïc only works four days a week. He works from 10:00 am to 7:00 pm and takes Fridays off. The four-day work week constrains him in a creative way, forcing him to make better decisions with his time.
 
->“Time-spent-at-desk is the worst measure of efficiency in software engineering.”
->- Loïc Guychard, engineering manager
+> “Time-spent-at-desk is the worst measure of efficiency in software engineering.”
+>
+> - Loïc Guychard, engineering manager
 
 He’s able to make better decisions partially because his longer weekends give him more energy. “You get a very good reset out of a three day weekend,” he says. Plus, “when I do get to my holiday, I’m not crawling like I used to.”
 
@@ -34,28 +34,23 @@ Loïc extends his flexibility to his reports, arguing that “Input hours are a 
 
 For Loïc, the goal is to maximize output and minimize synchronous work. It’s up to the team to set a “minimum viable guaranteed availability”–outside of that window, he says, work should be entirely flexible.
 
-Loïc believes this so strongly that he’d refuse an offer from a company based on flexibility alone. I asked him to consider an inflexible dream job but he disagreed with the premise: “I doubt that it would be my dream job if it’s completely inflexible.” 
+Loïc believes this so strongly that he’d refuse an offer from a company based on flexibility alone. I asked him to consider an inflexible dream job but he disagreed with the premise: “I doubt that it would be my dream job if it’s completely inflexible.”
 
 Flexibility isn’t just a benefit to be tallied up against other benefits–it says something about your company. “In our industry,” Guychard argues, “if you’re inflexible, you’re ignoring how we actually work and how software actually gets produced. Software is not something that gets produced on an inflexible schedule.”
 
-
 ## Stephen Gutekanst, software engineer, takes “workations”
 
-[Stephen Gutekanst](https://about.sourcegraph.com/handbook/company/team#stephen-gutekanst), software engineer at Sourcegraph, gets bored during vacation. As much as he’d like to relax, his distance away from meetings creates the perfect headspace for inspiration. That unique headspace inspired him to make a change. 
+[Stephen Gutekanst](https://about.sourcegraph.com/handbook/company/team#stephen-gutekanst), software engineer at Sourcegraph, gets bored during vacation. As much as he’d like to relax, his distance away from meetings creates the perfect headspace for inspiration. That unique headspace inspired him to make a change.
 
-Every once in a while, on an ad hoc, as needed basis, Gutekanst marks a vacation in his calendar, turns off Slack and Zoom, and focuses entirely on coding–for as much as two weeks at a time. 
+Every once in a while, on an ad hoc, as needed basis, Gutekanst marks a vacation in his calendar, turns off Slack and Zoom, and focuses entirely on coding–for as much as two weeks at a time.
 
-The workplace can get noisy. For Gutekanst, it comes in waves. 
+The workplace can get noisy. For Gutekanst, it comes in waves.
 
-Over the course of two months, he says, half of his time might go toward helping other people: “It’s a weird conundrum because it’s a completely useful way to spend my time. On the other hand, it’s completely unrelated to what my focus area actually is, which is working on a product feature or something like that.” 
-
-
+Over the course of two months, he says, half of his time might go toward helping other people: “It’s a weird conundrum because it’s a completely useful way to spend my time. On the other hand, it’s completely unrelated to what my focus area actually is, which is working on a product feature or something like that.”
 
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image1.png "image_tooltip")
-
+![alt_text](images/image1.png 'image_tooltip')
 
 Part of the reason for that comes from working at a [high-growth startup](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/): “A lot of the time, we don’t have an owner for an area and I’m the person with the most context, so it’s useful for me to help out there.”
 
@@ -65,7 +60,6 @@ Workations are a way to combat distractions and regain focus. To make them work,
 
 He takes a workcation “whenever there’s a time where I’m like ‘hey, I’d love to just sit down and write this code for a while.’” The result is a situation “where you can completely focus and get a lot done.”
 
-
 ## Vanesa Ortiz, community advocate, works 32 hours per week
 
 “My code quality declined. My code reviews became longer. It was harder and harder for me to focus properly and reach my goals.”
@@ -74,59 +68,53 @@ He takes a workcation “whenever there’s a time where I’m like ‘hey, I’
 
 Vanesa was struggling to juggle a full time job, a new baby, and her portion of the household work. Weekends were no longer a space for recovery; they became stressful days for housework and childcare: “I was exhausted after the weekend.”
 
-Together, Vanesa and her then engineering manager decided to try a four day work week–it was an immediate success. Communicating the change to her team only required marking the time in Google Calendar and the occasional reminder that she was unavailable for a Friday meeting. The schedule served her during her time as an engineer and she’s maintained it since becoming a community advocate. 
+Together, Vanesa and her then engineering manager decided to try a four day work week–it was an immediate success. Communicating the change to her team only required marking the time in Google Calendar and the occasional reminder that she was unavailable for a Friday meeting. The schedule served her during her time as an engineer and she’s maintained it since becoming a community advocate.
 
 Now, she has the time she needs: “On the weekend I get to enjoy my children. It’s not like I’m trying to push them away as I deal with household chores.” The success of her new schedule has lasted through to her second child. “I can’t imagine going back,” she says, “especially with the second kid.”
 
 Vanesa recommends the four-day work week to everyone, but especially to primary caretakers: “If you are struggling with work/life balance, and you need that extra time to practice self care and to deal with all the messes in your life, then it should really be considered.”
 
-Vanesa is careful to note, however, that anyone considering changing their schedule needs to do a cost-benefit analysis. Vanesa works 32 hours across 4 days instead of 40, meaning she has to consider the consequences of working part-time. 
+Vanesa is careful to note, however, that anyone considering changing their schedule needs to do a cost-benefit analysis. Vanesa works 32 hours across 4 days instead of 40, meaning she has to consider the consequences of working part-time.
 
-As much as she loves her schedule, she recommends taking account of the costs: “Consider the fact that, realistically, it will slow down your career path a little bit.” Sacrificing one day a week may be the best choice for your life, but being ⅕ less available than your coworkers will affect your career “one way or another.” 
-
+As much as she loves her schedule, she recommends taking account of the costs: “Consider the fact that, realistically, it will slow down your career path a little bit.” Sacrificing one day a week may be the best choice for your life, but being ⅕ less available than your coworkers will affect your career “one way or another.”
 
 ## TJ DeVries, software engineer, streams on Fridays
 
-[TJ DeVries](https://about.sourcegraph.com/handbook/company/team#tj-devries), software engineer at Sourcegraph and core maintainer for open source Vim-based text editor [Neovim](https://neovim.io/), streams almost all day every Friday. How? He works four tens: four days a week, ten hours each. 
+[TJ DeVries](https://about.sourcegraph.com/handbook/company/team#tj-devries), software engineer at Sourcegraph and core maintainer for open source Vim-based text editor [Neovim](https://neovim.io/), streams almost all day every Friday. How? He works four tens: four days a week, ten hours each.
 
->“I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would care.”
->- TJ DeVries, software engineer
+> “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would care.”
+>
+> - TJ DeVries, software engineer
 
-TJ acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv). 
-
-
+TJ acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
 
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image2.png "image_tooltip")
-
+![alt_text](images/image2.png 'image_tooltip')
 
 Many would rightfully worry that lopping off one day a week wouldn’t sit well with a manager. TJ had the opposite experience: “No one cares about how you’re working as long as you’re getting done what you say you’re going to get done.” As long as his new schedule wasn’t a detriment to his team, TJ says, then he had his manager’s full support.
 
-TJ is frank: “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would care.” Though they might reach out about his health if it looked like he weren’t sleeping, otherwise, his manager and his team just care about output. 
+TJ is frank: “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would care.” Though they might reach out about his health if it looked like he weren’t sleeping, otherwise, his manager and his team just care about output.
 
-TJ recommends carrying over some software development principles over to your work calendar, namely: Don’t waterfall your calendar. “It’s unlikely that you’ll know the optimal schedule ahead of time,” DeVries warns. “That’s not usually how we find the best version of something. We iterate on it over time.” 
-
+TJ recommends carrying over some software development principles over to your work calendar, namely: Don’t waterfall your calendar. “It’s unlikely that you’ll know the optimal schedule ahead of time,” DeVries warns. “That’s not usually how we find the best version of something. We iterate on it over time.”
 
 ## Robert Lin, software engineer, has a split schedule
 
-[Robert Lin](https://about.sourcegraph.com/handbook/company/team#robert-lin), software engineer at Sourcegraph, likes bouldering and hates queues. 
+[Robert Lin](https://about.sourcegraph.com/handbook/company/team#robert-lin), software engineer at Sourcegraph, likes bouldering and hates queues.
 
-“For some activities,” he says, “you just can’t do them at night. And if you do it on weekends, then you’re competing with all these people who want to do the same thing on their two days off.” 
+“For some activities,” he says, “you just can’t do them at night. And if you do it on weekends, then you’re competing with all these people who want to do the same thing on their two days off.”
 
 Robert works a split schedule, meaning that for three days a week, he works from 8:00 am to 12:00 pm and 6:00 pm to 10:00 pm. On the other two days, he works a normal 9:00 am to 5:00 pm. Robert, who’s currently in the United States, usually lives and works from Taiwan. There, he maintains a similar schedule, the hours shifted only slightly to maximize overlap with his American teammates.
 
-Robert is used to some degree of flexibility. When he and his partner were students, they optimized their schedules for their primary hobbies–bouldering being number one. Robert decided he didn’t want to change that as he started working full time. 
+Robert is used to some degree of flexibility. When he and his partner were students, they optimized their schedules for their primary hobbies–bouldering being number one. Robert decided he didn’t want to change that as he started working full time.
 
-When he onboarded with Sourcegraph, there was nothing that said he had to be working from 9:00 am to 5:00 pm so he set his schedule how he wanted it. “I don’t think there was any particular response to it,” he said. 
+When he onboarded with Sourcegraph, there was nothing that said he had to be working from 9:00 am to 5:00 pm so he set his schedule how he wanted it. “I don’t think there was any particular response to it,” he said.
 
 Robert is wary of the exhaustion that can come with a traditional schedule. “There’s something about 9:00 am to 5:00 pm that’s kind of exhausting,” he said. “What would often happen is you’d charge through the day and then you’d get home at the end of the workday, maybe hit the gym for a while, come back and cook dinner–and that’s pretty much your whole day. There’s no room for anything else.”
 
 Work is important to Robert but it isn’t his life–it’s just part of it: “The key thing for me is being able to structure work around things I want to do. That is super liberating.”
 
 Robert recommends building a company culture that prizes independence. A company culture where everyone needs everyone else to do anything is one that can’t accommodate different schedules. Robert says the first step to experimenting with flexibility is to “build up a culture on your team where everyone isn’t tightly interdependent.” It needs to be a foregone conclusion that “you’re not 100% available all the time.”
-
 
 ## Jean du Plessis, director of engineering, has a nonlinear workday
 
@@ -136,20 +124,17 @@ The nonlinear workday, [according to GitLab](https://about.gitlab.com/company/cu
 
 For Jean, this means using the morning to take care of the chores that most would do after work, such as grocery shopping and walking the dog. From the late morning to the afternoon, he focuses on meetings with his teammates and completing work leftover from the previous day.
 
->“I’ve found myself playing video games in the afternoon and I’ve found myself meeting up with friends.”
->- Jean du Plessis, director of engineering
+> “I’ve found myself playing video games in the afternoon and I’ve found myself meeting up with friends.”
+>
+> - Jean du Plessis, director of engineering
 
-In the afternoon, Jean is frank: he might just nap. 3:00 pm (his time) is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, we read a story.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work. 
-
-
+In the afternoon, Jean is frank: he might just nap. 3:00 pm (his time) is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, we read a story.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
+![alt_text](images/image3.png 'image_tooltip')
 
-![alt_text](images/image3.png "image_tooltip")
-
-
-For Jean, the nonlinear work day isn’t merely a traditional workday, fragmented: “I’m picky about what I do in the evenings.” He tends to schedule meetings that he doesn’t have to lead during his evening sessions–meetings where he only has to listen or provide input. He optimizes his entire day based on what he does best when. 
+For Jean, the nonlinear work day isn’t merely a traditional workday, fragmented: “I’m picky about what I do in the evenings.” He tends to schedule meetings that he doesn’t have to lead during his evening sessions–meetings where he only has to listen or provide input. He optimizes his entire day based on what he does best when.
 
 And that includes rest: “Friday is my recovery day,” he says. “If I felt like I put in a lot of effort on the days leading up to Friday, I’ll take Friday easy. I’ve found myself playing video games in the afternoon and I’ve found myself meeting up with friends.”
 
@@ -157,13 +142,12 @@ One benefit of the traditional 9:00 to 5:00 is that some sense of work/life bala
 
 Not for Jean. “For me,” he says, “maintaining a healthy work/life balance isn’t about the time. It’s about how I feel: does my work let me focus on my personal life when I need to? Does my personal life allow me to focus on my work when I need to? Are the stakeholders in my life, my personal and my work life, feeling like their needs are met?”
 
-If the answers to these questions are “yes,” “yes,” and “yes,” then Jean feels balanced. And for him, a nonlinear workday makes it easier to keep answering “yes.” 
-
+If the answers to these questions are “yes,” “yes,” and “yes,” then Jean feels balanced. And for him, a nonlinear workday makes it easier to keep answering “yes.”
 
 ## Get creative with your calendar
 
-Whether you’ve worked remotely and flexibly for decades, or just started after this recent wave of remote work, now is the time to reconsider your calendar. 
+Whether you’ve worked remotely and flexibly for decades, or just started after this recent wave of remote work, now is the time to reconsider your calendar.
 
-The 40 hour work week is a [relic of the late 1800s](https://www.businessinsider.com/history-of-the-40-hour-workweek-2015-10), a right hard won by labor organizers but not a tradition we should hew to unthinkingly. Since then, we have moved from economies primarily defined by widgets produced to economies primarily defined by knowledge work. 
+The 40 hour work week is a [relic of the late 1800s](https://www.businessinsider.com/history-of-the-40-hour-workweek-2015-10), a right hard won by labor organizers but not a tradition we should hew to unthinkingly. Since then, we have moved from economies primarily defined by widgets produced to economies primarily defined by knowledge work.
 
 In this brave (not so new) world, time-input is not an effective way to measure productivity, nor an effective way to structure your life. If you have the privilege of remote, flexible work, take the time to rethink your calendar and see how best it can work for you, your family, and your life.
