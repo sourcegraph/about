@@ -14,7 +14,6 @@ This page outlines the vision, strategy and goals of the MyProductArea team. You
 
 Quicklinks:
 
-- [MyProductArea Roadmap](https://sourcegraph.productboard.com/roadmap/) <!-- Update links with your page -->
 - [MyProductArea Backlog](https://about.sourcegraph.com/) <!-- Update links with your page -->
 - [Latest demo](https://about.sourcegraph.com/)
 - [Documentation](https://about.sourcegraph.com/)
