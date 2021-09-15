@@ -28,12 +28,12 @@ TODO
 - What is on the critical path for growth?
 - How does the product fit within Sourcegrah as a whole?
 
-# Competitive landscape
+## Competitive landscape
 
 - Who is the competition for this product area?
 - What recent developments in competition is impacting sales, marketing and product strategy?
 
-# Analyst landscape
+## Analyst landscape
 
 - Are there analysts tracking this product area?
 - How are analysts positioning the product? What are areas of improvement?
@@ -48,6 +48,7 @@ What is wer strategy defined in a few steps?
 
 What are high level themes or principles we use to guide prioritisation? What are we focusing on in the next few years?
 Examples:
+
 - A product differentiator
 - Cloud-first
 - Adoption
