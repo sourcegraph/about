@@ -6,7 +6,7 @@ This page outlines the vision, strategy and goals of the MyProductArea team.
 
 #### 1 Year vision
 
-> Some vision
+> Add a sentence or two here indicating what the most important things you want to achieve/problems you want to solve in the next year are. These should in most cases move your three and ten year visions forward.
 
 #### 3 Year vision
 
