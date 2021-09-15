@@ -14,7 +14,7 @@ This page outlines the vision, strategy and goals of the MyProductArea team. You
 
 #### 10 year vision
 
-> A sentence or two on your ten year vision is where you can really go wild and describe the problems you want to solve and solutions you want to deliver unbound by limitations of technology or scope. Be inspiring and look to the our [10 and 30 year strategies](../../company/strategy#sourcegraph-strategy) for ideas.
+> A sentence or two on your ten year vision is where you can really go wild and describe the problems you want to solve and solutions you want to deliver unbound by limitations of technology or scope. Be inspiring and look to the our [10 and 30 year strategies](../../company/strategy.md#sourcegraph-strategy) for ideas.
 
 ## Mission
 
