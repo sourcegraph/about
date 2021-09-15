@@ -118,23 +118,23 @@ This quarter, our main goals is to ship an alpha version of [server side Batch C
 - it will shift the setup burden from the user to the site-admin. Once site-admins have setup SSBC, any user can run a batch change from the GUI in a few clicks. That will unlock improvements to [Discovery and onboarding](#discovery-and-onboarding) such as creating batch changes from a template directly from the GUI. Creating a guided, self-serve onboarding is a prerequisite for [Cloud](#cloud)
 - it unlocks [key vision items](https://docs.google.com/document/d/1MnfaA9P7mtur7aQbMvy2x96_zy_IrOhY-MbGUo5I5wk/edit#heading=h.25ypvomeex1g) that will make using Sourcegraph an incredible experience and delight our customers, as well as [low-effort usage patterns](#adoption-through-low-effort-usage-patterns)
 
-## Top customer, support, sales and marketing issues
+### Top customer, support, sales and marketing issues
 
 - We are planning to allow users to [Mount file on batch change steps containers](https://github.com/sourcegraph/sourcegraph/issues/14851) after many customer requests
 - We want to [nudge users to ask site-admins to setup webhooks](https://github.com/sourcegraph/sourcegraph/issues/24310). Most customers forget to setup [webhooks](https://docs.sourcegraph.com/batch_changes/references/requirements#batch-changes-effect-on-code-host-rate-limits), which degrades trial experience and creates a lot of support load.
 
-## What we are iterating on
+### What we are iterating on
 
 - We are iterating on [bulk actions](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Abulk-action), to move it from a minimal experience to something that customer love. We lack bandwidth to make radical improvements, but we plan to ship a small increment.
 
-## Non Batch Changes work
+### Non Batch Changes work
 
 This quarter, we are taking on some work outside the scope of Batch Changes to support key business needs.
 
 - Licensing and gating, see [FY22 Q3: Licensing and tier enforcement](https://docs.google.com/document/d/1o_glLsehadoQQa7bap7Ve5pW_KS30xDgcdq79Fcn4Ow/edit#heading=h.rrqx4mdnmg3q) (private).
 - Minimal [CVS support](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Acvs), to unblock an important [customer](https://github.com/sourcegraph/customers/issues/5)
 
-## What we're not working on
+### What we're not working on
 
 - **Windows support** ([#24849](https://github.com/sourcegraph/sourcegraph/issues/24849)): Reliably supporting creating batch changes locally in a windows environment is a very large amount of work, that is incompatible with our plan of delivering server side Batch Changes as fast as possible. Windows support has blocked one [prospect](https://github.com/sourcegraph/customers/issues/3) and slowed down adoption at a [customer](https://github.com/sourcegraph/customers/issues/2), and will likely be important in the Banking and Gaming industry. We plan to address these customers with server side Batch Changes. Server side Batch Changes will bypass the need to run the CLI locally, and instead allow customers to compute the batch changes on the Sourcegraph instance.
 
