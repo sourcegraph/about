@@ -33,6 +33,10 @@ We have four main learnings from the first year of Batch Changes:
 - Batch changes works great for teams with 1,000s repositories, but gets clumsy to use for companies with 10,000s repositories.
 - The job to be done (JTBD) for our customers is changing code at a large scale. To do so, they need to automate a code change, apply it, then track it to completion. Batch Changes today is adressing applying and tracking changes, but the first many customers ask is "how do I write code that makes change x". To solve for our customers JTBD, we will need to provide an answer to that question.
 
+# Competitive landscape
+
+# Analyst landscape
+
 # 3 year strategy and themes
 
 ## Strategy
@@ -99,3 +103,15 @@ By solving that problem, we will:
 - create defensibility by allowing users to share their code in a registry
 
 This last step is on the critical path for achieving our 10 year vision, but might not be necessary to achieve our 3 year vision.
+
+
+# What's next and why
+
+## FY 20222 Q3 goals
+
+## Top customer, support, sales and market issues
+
+## What we're not working on
+
+
+
