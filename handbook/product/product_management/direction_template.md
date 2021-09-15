@@ -42,7 +42,7 @@ TODO
 
 ## Strategy
 
-What is wer strategy defined in a few steps?
+What is your strategy defined in a few steps?
 
 ## Themes
 
