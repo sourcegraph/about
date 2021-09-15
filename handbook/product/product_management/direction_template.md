@@ -68,7 +68,6 @@ TODO
 
 TODO
 
-
 # Where we are now
 
 - Where is the team's area of ownership in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?
