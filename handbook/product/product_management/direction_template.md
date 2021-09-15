@@ -50,6 +50,25 @@ Describe the target by which we prioritize:
 - What matters to us when we prioritize products and features
 - Contextual things that matter to Sourcegraph or the product
 
+## Themes
+
+What are high level themes or principles you are using to guide prioritization within your three year strategy, and why? What are the groupings of features/problems to solve that you are focusing on in that period?
+
+> Examples:
+>
+> - A product differentiator
+> - Cloud-first
+> - Adoption
+
+### Theme 1
+
+TODO
+
+### Theme 2
+
+TODO
+
+
 # Where we are now
 
 - Where is the team's area of ownership in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?
@@ -71,24 +90,6 @@ Describe the target by which we prioritize:
 # What's next and why
 
 What are we going to do in the next quarter, and how does it accomplish company goals and the product vision?
-
-## Themes
-
-What are high level themes or principles you are using to guide prioritization within your three year strategy, and why? What are the groupings of features/problems to solve that you are focusing on in that period?
-
-> Examples:
->
-> - A product differentiator
-> - Cloud-first
-> - Adoption
-
-### Theme 1
-
-TODO
-
-### Theme 2
-
-TODO
 
 ## Top customer, support, sales and marketing issues
 
