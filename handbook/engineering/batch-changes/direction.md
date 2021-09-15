@@ -104,7 +104,6 @@ By solving that problem, we will:
 
 This last step is on the critical path for achieving our 10 year vision, but might not be necessary to achieve our 3 year vision.
 
-
 # What's next and why
 
 ## FY 20222 Q3 goals
@@ -112,6 +111,3 @@ This last step is on the critical path for achieving our 10 year vision, but mig
 ## Top customer, support, sales and market issues
 
 ## What we're not working on
-
-
-
