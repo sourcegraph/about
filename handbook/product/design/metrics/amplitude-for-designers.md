@@ -26,7 +26,9 @@ Amplitude’s dashboards are a handy way to save related charts for later refere
 
 ## Getting started with Amplitude
 
-Let’s start with asking the question, “How often do users view the sign-up page?“ and what events are correlated with this activity, then build a chart that tracks this data.
+Let’s start with asking the following questions and building a chart that tracks this data. 
+* How often do users view the sign-up page?
+* What events are correlated with this activity? 
 
 - Click + New in the sidebar and click chart
 - Under ‘Events’, click the blue event box and select “Sign-up viewed”
