@@ -1,5 +1,7 @@
 # Vision, Strategy, and Roadmap Template
+
 > ℹ️  The following is a template for use on the pages of specific product & engineering teams, used to record and share the vision, strategy, and roadmap.<br>Copy to your team's page and complete accordingly.
+
 <hr>
 
 # MyProductArea Direction
