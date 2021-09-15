@@ -18,7 +18,7 @@ To add yourself to this page:
 - City, region, country, country flag emoji (optional: add yourself to [the team locations map](locations.md)!)
 - GitHub: username
 - [you@sourcegraph.com](mailto:you@sourcegraph.com), other social media links (if any)
-- Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/))
+- Name pronunciation (record an audio file from your phone [here](https://www.name-coach.com/)
 - Bio (hobbies, work experience, family, pets, etc.)
 
 ## Quinn Slack
