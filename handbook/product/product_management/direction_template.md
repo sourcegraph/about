@@ -10,7 +10,7 @@ This page outlines the vision, strategy and goals of the MyProductArea team.
 
 #### 3 Year vision
 
-> Some vision
+> Add a sentence or two here describing what your product will be like in three years, also focusing on the problems you'll solve and the value you'll deliver. This should be grounded in reality, but three years is a lot of time - be ambitious!
 
 #### 10 year vision
 
