@@ -26,7 +26,7 @@ TODO
 - What did we achieve in the last few months?
 - What key learnings did we recently make?
 - What is on the critical path for growth?
-- How does the product fit within Sourcegrah as a whole?
+- How does the product fit within Sourcegraph as a whole?
 
 ## Competitive landscape
 
