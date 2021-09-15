@@ -5,7 +5,6 @@
 ## Direction
 
 - Vision, mission and strategy: [Batch Changes direction](direction.md)
-- [Q3 FY2022 direction](quarterly-direction.md)
 - [Key metrics](metrics.md)
 
 ## Contact

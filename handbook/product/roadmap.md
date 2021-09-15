@@ -16,7 +16,7 @@ NOTE: Dates and timelines below are not considered commitments, these roadmaps a
 
 ### [Search roadmap](../engineering/search/goals.md#roadmap)
 
-### [Batch Changes roadmap](../engineering/batch-changes/goals.md#roadmap)
+### [Batch Changes roadmap](../engineering/batch-changes/direction.md)
 
 ### [Code intel roadmap](../engineering/code-intelligence/goals.md#roadmap)
 

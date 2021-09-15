@@ -27,7 +27,7 @@ Within the product organization, individual product engineering teams set their 
 
 - Code Graph
   - [Search core and Search product](../engineering/search/goals.md)
-  - [Batch Changes](../engineering/batch-changes/goals.md)
+  - [Batch Changes](../engineering/batch-changes/direction.md)
   - [Code Intelligence](../engineering/code-intelligence/goals.md)
   - [Code Insights](../engineering/developer-insights/code-insights/goals.md)
 - Enablement
