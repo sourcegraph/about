@@ -4,7 +4,7 @@ We welcome requests and collaboration across teams.
 
 ## Ideas for tutorials, videos, and other educational content
 
-If you have an idea for educational content, and it is ok for that request to live publicly, please [file an issue on our repo](https://github.com/sourcegraph/learn/issues/new?assignees=&labels=&template=educational-content.md&title=Content). 
+If you have an idea for educational content, and it is ok for that request to live publicly, please [file an issue on our repo](https://github.com/sourcegraph/learn/issues/new?assignees=&labels=&template=educational-content.md&title=Content).
 
 If you would like to submit an idea internally, please fill out a document, as below, and share it with us in the [#developer-education](https://app.slack.com/client/T02FSM7DL/C026GJE9DDX?cdn_fallback=1) Slack channel.
 
@@ -15,9 +15,10 @@ For internal requests, please create a document, with the following outline fill
 ---
 
 **What topic are you requesting a piece of content on?**
-* Sourcegraph product related
-* Open source related (including programming languages)
-* Other (please explain)
+
+- Sourcegraph product related
+- Open source related (including programming languages)
+- Other (please explain)
 
 **Proposed title:**
 
@@ -40,7 +41,7 @@ and [process](process.md) guidelines. The [issue](https://github.com/sourcegraph
 
 ## Feature requests
 
-For features on the [Sourcegraph Learn](https://learn.sourcegraph.com) site, please feel free to file an [Feature request issue](https://github.com/sourcegraph/learn/issues/new?assignees=&labels=&template=feature_request.md&title=). All of our work is tracked on [Jira](https://sourcegraph.atlassian.net/jira/software/projects/DEVED/boards/9), please check to make sure your feature request is not currently in development. 
+For features on the [Sourcegraph Learn](https://learn.sourcegraph.com) site, please feel free to file an [Feature request issue](https://github.com/sourcegraph/learn/issues/new?assignees=&labels=&template=feature_request.md&title=). All of our work is tracked on [Jira](https://sourcegraph.atlassian.net/jira/software/projects/DEVED/boards/9), please check to make sure your feature request is not currently in development.
 
 If you would like to build a feature or otherwise contribute, feel free to start the conversation with us with an [issue](https://github.com/sourcegraph/learn/issues/new?assignees=&labels=&template=feature_request.md&title=) or on [Slack](https://app.slack.com/client/T02FSM7DL/C026GJE9DDX?cdn_fallback=1).
 
