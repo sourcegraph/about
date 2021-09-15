@@ -8,15 +8,16 @@ Specific targets for FY22 can be found on the [product home page](../../product/
 
 Users can be in a number of different states. We track the following categories for each month. The descriptions below are framed as though we're talking about MAU, but the same definitions apply to whatever period is being considered.
 
-| Metric      | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| Visitor     | Users who accessed the site                                      |
-| Active      | Users who performed a qualifying event (see below)               |
-| Retained    | Users who were active last month _and_ this month                |
-| Churned     | Users who were active last month but not this month              |
-| Resurrected | Users who were _not_ active last month but are active this month |
-| Created     | Users whose account was created this month                       |
-| Deleted     | Users whose account was deleted this month                       |
+| Metric      | Description                                                      | Cloud | On-prem |
+| ----------- | ---------------------------------------------------------------- | ----- | ------- |
+| Visitor     | Users who accessed the site                                      | ✔️     |         |
+| Activated   | Users who have established the core habit of the product         | ✔     |         |  
+| Active      | Users who performed a qualifying event (see below)               | ✔️     | ✔️       |
+| Retained    | Users who were active last month _and_ this month                | ✔️     | ✔️       |
+| Churned     | Users who were active last month but not this month              | ✔️     | ✔️       |
+| Resurrected | Users who were _not_ active last month but are active this month | ✔️     | ✔️       |
+| Created     | Users whose account was created this month                       | ✔️     | ✔️       |
+| Deleted     | Users whose account was deleted this month                       | ✔️     | ✔️       |
 
 ### What is a visitor?
 
