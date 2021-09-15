@@ -65,16 +65,17 @@ Our current [product goals pages](index.md#goals) are not always up to date so c
 
 ### Public facing roadmap
 
-We are missing a single source of truth for what is currently on the roadmap. Our customers as well as  Sales, Customer Engineering, Customer Support, and Marketing all need to know what is on the roadmap.  Today we use several methods to track our roadmap making any one source unreliable.  The end goal is to have a single source of truth that is referenced as needed.
+We are missing a single source of truth for what is currently on the roadmap. Our customers as well as Sales, Customer Engineering, Customer Support, and Marketing all need to know what is on the roadmap. Today we use several methods to track our roadmap making any one source unreliable. The end goal is to have a single source of truth that is referenced as needed.
 
 - Owner: Serina
 - [Working Document](https://docs.google.com/document/d/1dsJ_0aXyPTE-vUDR9fIwVYEq1UBYN-rtH75qtI91pdg/edit#)
 
 ### Defining our known product scale
 
-Customer Engineering needs is looking to better undrestand the known boundaries of our product to effectively interact with prospetive customers.  As a product team we are pulling together information of existing customer scale.  This information combined with our product knowledge will help us proactively identify potential scale challenges.  
+Customer Engineering needs is looking to better undrestand the known boundaries of our product to effectively interact with prospetive customers. As a product team we are pulling together information of existing customer scale. This information combined with our product knowledge will help us proactively identify potential scale challenges.
 
 -Owner: Christina
+
 - [Working Document](https://docs.google.com/spreadsheets/d/101JXaau2EPvi322AOFmNeoeuXSJqlruD8gBBsHl1fmI/edit#gid=0)
 
 ### Other initiatives
