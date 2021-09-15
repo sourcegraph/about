@@ -1,6 +1,6 @@
 # MyProductArea Direction
 
-This page outlines the vision, strategy and goals of the MyProductArea team.
+This page outlines the vision, strategy and goals of the MyProductArea team. You can use this section to describe what your scope is, and where your product is today.
 
 # Vision
 
