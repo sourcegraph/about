@@ -1,28 +1,18 @@
-# Support Team README
+# Demand Gen Team README
 
 Our README expands on our profile in [the company team directory](https://about.sourcegraph.com/handbook/company/team) and are meant to help us orient to one another.
 
-- Adeola [README](adeola-readme.md)
-- Alex [README](alex-readme.md)
-- Amber [README](amber-readme.md)
-- Beatrix [README](bee-readme.md)
-- Ben [README](ben-readme.md)
-- Carl [README](carl-readme.md)
-- Don [README](Don-readme.md)
-- Gabe [README](gabe-readme.md)
-- Giselle [README](giselle-readme.md)
-- Jason [README](jason-readme.md)
-- Kelvin Lee [README](kelvin-lee-readme.md)
-- Mariam [README](mariam-readme.md)
-- Michael [README] (michael-readme.md)
-- Stompy [README](stompy-readme.md)
-- Warren [README](warren-readme.md)
-- Virginia [README](virginia-readme.md)
-- Nonso [README](nonso-readme.md)
+- Erica README
+- Greg README
+- Jake [README](./jake-readme.md)
+- Rebecca README
+- Sarah [README](./sarah-readme.md)
+
+---
 
 The format, style, order, etc is up to each of us. Just make sure to include the following:
 
-- Individual view on customer service/support
+- Individual view on demand generation
 - Preferred learning styles
 - Communication style
 - Preferred way to collaborate
@@ -34,10 +24,14 @@ The format, style, order, etc is up to each of us. Just make sure to include the
 - How do you feel about getting messages after/outside of hours that are meant for you to see and respond to during active hours
 - How folks can best show up for us when we seem off (give space, ask if work is the right place for us to be today, etc)
 - Things you are aware of that trigger anxious feelings/feelings of less than at work
-- Technical areas of knowledge
-- Technical areas of interest to learn
+- Marketing areas of knowledge
+- Marketing areas of interest to learn
 - Current personal project
 - Something you fear
 - A quote you like
 - How you eat fries (with or without ketchup (ketchup on the fries or on the side), etc)
 - Your sun, moon, and rising signs
+
+---
+
+All credit for the idea of team READMEs, including the page layout and copy, goes to the [Customer Support](https://about.sourcegraph.com/handbook/support/support-bios) team
