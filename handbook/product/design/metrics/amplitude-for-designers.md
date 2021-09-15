@@ -30,7 +30,7 @@ Let’s start with asking the following questions and building a chart that trac
 * How often do users view the sign-up page?
 * What events are correlated with this activity? 
 
-- Click + New in the sidebar and click chart
+- Click “+ New” in the sidebar and click “Chart”
 - Under ‘Events’, click the blue event box and select “Sign-up viewed”
 - Under "...performed by Any user" > All, click the 'where' button, add the user property has_cloud_account and select ‘none’ from the resulting popup
 - Add another 'where' fitler by clicking '+ where' and select is_sourcegraph_teammate = none.
