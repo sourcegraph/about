@@ -12,9 +12,9 @@ The Product team strives to make the following true:
 
 You can reach us at the #product channel or @product-team on Slack. If you have ideas you want to pass on to the product team, check out the [surfacing product feedback](surfacing_product_feedback.md) page.
 
-## Product direction pages
+## Roadmap
 
-Within the product organization, individual product engineering teams set their own goals and roadmaps, and have a direction page with all the details of what they are working on next and why.
+Within the product organization, individual product engineering teams set their own goals and roadmaps, and each have a direction page with all the details of what they are working on next and why.
 
 - Code Graph
   - [Search core and Search product](../engineering/search/goals.md)
