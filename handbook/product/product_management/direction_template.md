@@ -6,15 +6,15 @@ This page outlines the vision, strategy and goals of the MyProductArea team. You
 
 #### 1 Year vision
 
-> Some vision
+> Add a sentence or two here indicating what the most important things you want to achieve/problems you want to solve in the next year are. These should in most cases move your three and ten year visions forward.
 
 #### 3 Year vision
 
-> Some vision
+> Add a sentence or two here describing what your product will be like in three years, also focusing on the problems you'll solve and the value you'll deliver. This should be grounded in reality, but three years is a lot of time - be ambitious!
 
 #### 10 year vision
 
-> Some vision
+> A sentence or two on your ten year vision is where you can really go wild and describe the problems you want to solve and solutions you want to deliver unbound by limitations of technology or scope. Be inspiring and look to the our [10 and 30 year strategies](../../company/strategy#sourcegraph-strategy) for ideas.
 
 ## Mission
 
@@ -22,7 +22,7 @@ TODO
 
 # Where we are now
 
-- Where is the product like in maturity?
+- Where is the product area in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?
 - What did we achieve in the last few months?
 - What key learnings did we recently make?
 - What is on the critical path for growth?
@@ -42,13 +42,14 @@ TODO
 
 ## Strategy
 
-What is wer strategy defined in a few steps?
+What is your strategy defined in a few steps?
 
 ## Themes
 
 What are high level themes or principles we use to guide prioritisation? What are we focusing on in the next few years?
 
 > Examples:
+>
 > - A product differentiator
 > - Cloud-first
 > - Adoption
