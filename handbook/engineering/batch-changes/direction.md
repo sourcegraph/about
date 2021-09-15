@@ -25,6 +25,7 @@ Batch Changes is a tool to find code that needs to be changed and change it at s
 ## Mission & Strategy
 
 ### Mission
+
 We allow developers to focus on changing their code, without having to do any plumbing. We help them drive changesets to completion without having to rely on spreadhseets and painful coordination. Later on, we want to make writing and running code that changes code easier to learn and use.
 
 ### Strategy
