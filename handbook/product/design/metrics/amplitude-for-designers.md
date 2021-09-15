@@ -67,7 +67,7 @@ The first bar represents all views of the sign-up page. The second bar represent
 
 Often when exploring how a design impacts user actions, we need to determine if users who performed one action are more likely to trigger a specific event than users who did not. To chart this, we can create a segment of users who experienced the feature ('and who performed' My feature >= 1) and a segment who did not experience the feature ('and who performed' My feature = 0).
 
-> For example, if you would like to determine if users who viewed the homepage video are more likely to have view the sign-up page than those who do not, you would create two segments, one with 'who performed Home page video... >= 1 time' and one with 'who performed Home page video... = 0. Then change the type of chart from uniques to Active %.
+> For example, if you would like to determine if users who viewed the homepage video are more likely to have view the sign-up page than those who do not, you would create two segments, one with "who performed Home page video... >= 1 time" and one with "who performed Home page video... = 0." Then change the type of chart from uniques to Active %.
 
 [View the example](https://analytics.amplitude.com/sourcegraph/chart/6w426co?source=workspace)
 
