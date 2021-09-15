@@ -77,8 +77,8 @@ As much as she loves her schedule, she recommends taking account of the costs: �
 
 [TJ DeVries](https://about.sourcegraph.com/handbook/company/team#tj-devries), software engineer at Sourcegraph and core maintainer for open source Vim-based text editor [Neovim](https://neovim.io/), streams almost all day every Friday. How? He works four tens: four days a week, ten hours each.
 
->“I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would care.”
->TJ DeVries, software engineer
+> “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would care.”
+> TJ DeVries, software engineer
 
 TJ acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
 
@@ -118,8 +118,8 @@ The nonlinear workday, [according to GitLab](https://about.gitlab.com/company/cu
 
 For Jean, this means using the morning to take care of the chores that most would do after work, such as grocery shopping and walking the dog. From the late morning to the afternoon, he focuses on meetings with his teammates and completing work leftover from the previous day.
 
->“I’ve found myself playing video games in the afternoon and I’ve found myself meeting up with friends.”
->Jean du Plessis, director of engineering
+> “I’ve found myself playing video games in the afternoon and I’ve found myself meeting up with friends.”
+> Jean du Plessis, director of engineering
 
 In the afternoon, Jean is frank: he might just nap. 3:00 pm (his time) is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, we read a story.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
