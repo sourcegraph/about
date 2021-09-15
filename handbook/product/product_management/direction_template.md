@@ -47,11 +47,11 @@ What is wer strategy defined in a few steps?
 ## Themes
 
 What are high level themes or principles we use to guide prioritisation? What are we focusing on in the next few years?
-Examples:
 
-- A product differentiator
-- Cloud-first
-- Adoption
+> Examples:
+> - A product differentiator
+> - Cloud-first
+> - Adoption
 
 ### Theme 1
 
