@@ -31,10 +31,6 @@ An active user is differentiated from a visitor by performing a qualifying event
 | Searching for code        | `SearchSubmitted`                  | Submit a search                                                                                     |
 | Navigating the code graph | `findReferences`, `goToDefinition` | Click on go to definition or fin references. Hovering is excluded as it can be performed passively. |
 
-We are also looking at the following as possibilities:
-
-- Adding private code
-
 Qualifying events are not intended to be difficult, or prove that someone is a heavy user of the product. They are carefully selected to represent activities that are important to realizing the value of Sourcegraph.
 
 Performing any single activity in the above list makes a user "active" for the time period being measured.
