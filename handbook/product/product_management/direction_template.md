@@ -22,7 +22,7 @@ TODO
 
 # Where we are now
 
-- Where is the product like in maturity?
+- Where is the product area in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?
 - What did we achieve in the last few months?
 - What key learnings did we recently make?
 - What is on the critical path for growth?
