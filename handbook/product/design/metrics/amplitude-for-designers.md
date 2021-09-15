@@ -26,14 +26,15 @@ Amplitude’s dashboards are a handy way to save related charts for later refere
 
 ## Getting started with Amplitude
 
-Let’s start with asking the following questions and building a chart that tracks this data. 
-* How often do users view the sign-up page?
-* What events are correlated with this activity? 
+Let’s start with asking the following questions and building a chart that tracks this data.
 
-- Click “+ New” in the sidebar and click “Chart”
-- Under “Events,” click the blue event box and select “Sign-up viewed”
-- Under “...performed by Any user” > All, click the “where” button, add the user property `has_cloud_account` and select “none” from the resulting popup
-- Add another “where” filter by clicking “+ where” and select `is_sourcegraph_teammate = none`.
+- How often do users view the sign-up page?
+- What events are correlated with this activity?
+
+* Click “+ New” in the sidebar and click “Chart”
+* Under “Events,” click the blue event box and select “Sign-up viewed”
+* Under “...performed by Any user” > All, click the “where” button, add the user property `has_cloud_account` and select “none” from the resulting popup
+* Add another “where” filter by clicking “+ where” and select `is_sourcegraph_teammate = none`.
 
 We now have a view that represents the counts of daily views of the sign-up page over the last month (events), by users who do not have a cloud account and are not teammates (segmentation).
 
