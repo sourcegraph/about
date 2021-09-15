@@ -16,11 +16,9 @@ Batch Changes is a tool to find code that needs to be changed and change it at s
 
 We allow developers to focus on changing their code, without having to do any plumbing. We help them drive changesets to completion without having to rely on spreadhseets and painful coordination. Later on, we want to make writing and running code that changes code easier to learn and use.
 
-# 3 year strategy and themes
+# Where we are now
 
-## Where we are now
-
-Batch Changes has just proved market fit and is adopted by a dozen customers. We see early adoption across a diverse set of companies, from public technology companies to startups with a few dozens engineers.
+Batch Changes has just proved market fit and is adopted by a dozen customers. We see early adoption across a diverse set of companies, from public technology companies to startups with a few dozens engineers ([Batch Changes dashboard](https://sourcegraph.looker.com/dashboards-next/174))
 
 Over the first year, we have discovered a repeatable playbook: a platform engineering team, sometimes supported by a developer experience team, adopts Batch Changes to make large scale code changes. Most of the use cases are relatively simple code changes, such as updating configuration files across many repositories. Some are more complex, such as changing API call sites to ship a breaking change in an internal library. The common denominator is those changes would take a very long time to create and track to completion using a manual approach. Adopting Batch Changes allows the platform team to automate manual work and save time, as well as transition from a model in which they are asking their customer teams to do some work, to a more proactive where they can propose a change themselves and leave customer teams to review and merge.
 
@@ -30,6 +28,8 @@ We have four main learnings from the first year of Batch Changes:
 - We have discovered that importing, tracking and managing existing changesets that were not created by Batch Changes, is perceived as very useful by customers. However, importing changesets today is clumsy, so this workflow is not very frequently used. We need to improve it and validate the value of this use case. If successfull, it could create a low-friction, low-effort entrypoint into Batch Changes for new users and increase usage frequency and stickiness.
 - Batch changes works great for teams with 1,000s repositories, but gets clumsy to use for companies with 10,000s repositories.
 - The job to be done (JTBD) for our customers is changing code at a large scale. To do so, they need to automate a code change, apply it, then track it to completion. Batch Changes today is adressing applying and tracking changes, but the first many customers ask is "how do I write code that makes change x". To solve for our customers JTBD, we will need to provide an answer to that question.
+
+# 3 year strategy and themes
 
 ## Strategy
 
