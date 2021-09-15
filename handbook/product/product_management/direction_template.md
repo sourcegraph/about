@@ -28,11 +28,12 @@ Quicklinks:
 
 ## Mission
 
-TODO
+What is the team's reason for existing? What is the fundamental value they aim to provide?
+
 
 # Where we are now
 
-- Where is the product area in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?
+- Where is the team's area of ownership in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?
 - What did we achieve in the last few months?
 - What key learnings did we recently make?
 - What is on the critical path for growth?
