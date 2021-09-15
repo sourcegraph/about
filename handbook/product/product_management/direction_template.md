@@ -49,6 +49,7 @@ What is your strategy defined in a few steps?
 What are high level themes or principles we use to guide prioritisation? What are we focusing on in the next few years?
 
 > Examples:
+>
 > - A product differentiator
 > - Cloud-first
 > - Adoption
