@@ -88,4 +88,4 @@ Using these simple charting methods, designers can quickly discover how often th
   - Use the [analytics-review](https://sourcegraph.slack.com/archives/C02BN1DQ30D/p1631562607012000) slack channel to get more eyes on your chart.
 - Make sure the data you are looking at has statistical significance
   - If we have 4 users who performed an event out of 10 sessions, we do not have enough sessions to say that users are 40% likely to perform this event.
-  - [More information here](https://about.sourcegraph.com/handbook/ops/bizops/ab-testing#volume-of-users-to-reach-statistical-significance)
+  - [Learn more in the handbook about reaching statistical significance](https://about.sourcegraph.com/handbook/ops/bizops/ab-testing#volume-of-users-to-reach-statistical-significance)
