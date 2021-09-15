@@ -52,11 +52,35 @@ What is the team's reason for existing? What is the fundamental value they aim t
 - Are there analysts tracking this product area?
 - How are analysts positioning the product? What are areas of improvement?
 
+# What's next and why
+
+What are we going to do in the next quarter, and how does it accomplish company goals and the product vision?
+
+## Top customer, support, sales and marketing issues
+
+- What are the top issues from customers we are taking on this quarter?
+- What are the top requests from other teams at Sourcegraph we are taking on this quarter?
+
+## What we're not working on
+
+What are we explicitly not working on? Are there frequent requests from customers or other teams we are choosing not to take on? Making that explicit makes other teams understand the strategy and reduces back and forth.
+
 # 3 year strategy and themes
 
 ## Strategy
 
 What is your strategy defined in a few steps?
+
+## Guiding principles
+
+Identify what key principles, insights, and decisions are important to the strategy or a set of key hypotheses and set of key questions to validate or invalidate them.
+Describe the target by which we prioritize:
+- Market or audience
+- Personas
+- Jobs or Use Cases
+- Industries
+- What matters to us when we prioritize products and features
+- Contextual things that matter to Sourcegraph or the product
 
 ## Themes
 
@@ -75,16 +99,3 @@ TODO
 ### Theme 2
 
 TODO
-
-# What's next and why
-
-What are we going to do in the next quarter, and how does it accomplish company goals and the product vision?
-
-## Top customer, support, sales and marketing issues
-
-- What are the top issues from customers we are taking on this quarter?
-- What are the top requests from other teams at Sourcegraph we are taking on this quarter?
-
-## What we're not working on
-
-What are we explicitly not working on? Are there frequent requests from customers or other teams we are choosing not to take on? Making that explicit makes other teams understand the strategy and reduces back and forth.
