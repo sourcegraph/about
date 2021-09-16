@@ -494,16 +494,24 @@ Prefer the Oxford or serial comma when writing a list.
 
 ### Dashes and hyphens
 
-Use a hyphen (-) without spaces before and after to link words into a single phrase.
+Use a hyphen (-) without spaces before and after to link words into a single phrase. This is only necessary where the phrase appears in front of a noun to describe it (acting as an adjective).
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>First-time resources</li>
+<li>Our short-term plan is to...
+</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>In the short-term, we will work on...</li>
 </ul>
 </div>
 </div>
+
 
 Use an en dash (–) to indicate a [range or span](#ranges-and-spans), without spaces.
 
