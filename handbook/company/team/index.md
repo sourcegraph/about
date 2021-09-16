@@ -1473,11 +1473,18 @@ To add yourself to this page:
 - [cristina.birkel@sourcegraph.com](mailto:cristina.birkel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cristina-birkel)
 - During her career in software Cristina has tried on a number of hats, but has always found her way back to writing code. She's passionate about becoming the best version of herself, and loves reading books that help her grow. She eats a mostly paleo diet, has lost the ability to wear shoes that aren't zero-drop, and swears by Kari Pearce Power Abs. Her longest standing hobby is making music, with video games coming in at a close second. She lives in Cleveland, OH with her Canadian wife, a talkative manx cat and an anxious german shepherd.
 
-
 ## Amber Smokowski
 
 - Executive Business Partner to VP of Sales and VP of Marketing
 - Digital Nomad 💻 Born in Longmont, CO, USA, currently living in Boston, MA, USA
 - GitHub: [ambersmo](https://github.com/ambersmo)
 - [amber.smokowski@sourcegraph.com](mailto:amber.smokowski@sourcegraph.com),[LinkedIn](https://www.linkedin.com/in/ambersmo/)
+
+## Sara Lee (she/her)
+
+- Product Designer
+- Chapel Hill, NC, United States 🇺🇸
+- Github: [jjinnii](https://github.com/jjinnii)
+- [sara.lee@sourcegraph.com](mailto:sara.lee@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sara-yoojin-lee/)
+- Sara is a Product Designer, aspiring artist 🎨, and simulation game enthusiast 🎮. She resides in Chicago, IL and Chapel Hill, NC for equal parts of the year. She is passionate about using design as a medium to make the complex more accessible to people. She is currently working on learning Javascript and drinking less cups of coffee ☕️.
 
