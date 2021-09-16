@@ -40,5 +40,5 @@ Tactically, here are the activities Product Marketing will drive and contribute 
 ## Resources
 
 - [Marketing launch tiers](marketing_launch_tiers.md)
-- [Product marketing hierarchy](product-marketing/product_marketing_hierarchy.md)
+- [Product marketing hierarchy](product_marketing_hierarchy.md)
 - [Batch Changes positioning](batch_changes_positioning.md)
