@@ -36,7 +36,7 @@ In many cases, questions can span multiple teams. For example, a question about 
 
 **Keywords**: `deploy`, `Docker`, `container`, `image`, `Kubernetes`/`k8s`, `cluster`, `AWS`, `Google Cloud`/`GCP`
 
-Any questions about deployment should be routed to the [Distribution team](../engineering/distribution/index.md).
+Any questions about deployment should be routed to the Delivery team (no handbook page yet).
 
 ### Monitoring, management, and performance optimization
 
@@ -44,18 +44,18 @@ Any questions about deployment should be routed to the [Distribution team](../en
 
 Questions about specific alerts and graph panels should be routed to the team that is responsible for the alert or panel, as indicated by relevant entry in [Alert solutions](https://docs.sourcegraph.com/admin/observability/alert_solutions) or the [Dashboards reference](https://docs.sourcegraph.com/admin/observability/dashboards) respectively.
 
-Any other questions about monitoring and performance should be routed to the [Distribution team](../engineering/distribution/index.md).
+Any other questions about monitoring and performance should be routed to the Delivery team.
 
 ### Code host connections
 
 **Keywords**: `code host`, `cloning`, `syncing`, `token`, `GitHub`, `GitLab`, `Bitbucket`, `Phabricator`, `Gerrit`, `repository`, `project`, `Perforce`, `src-expose`, `src serve-git`
 
-Any questions about code host connections and repository syncing should be routed to the [Core application team](../engineering/core-application/index.md).
+Any questions about code host connections and repository syncing should be routed to the Repository Management team.
 
 EXCEPTIONs FOR Q3FY22 (to be reassessed for Q4 by 2021-10-31):
 
-- `Perforce` should be routed to the [Distribution team](../engineering/distribution/index.md)
-- `permission syncing` should be routed to the [Distribution team](../engineering/distribution/index.md)
+- `Perforce` should be routed to the Delivery team
+- `permission syncing` should be routed to the Delivery team
 - `CVS` should be routed to the [Batch Changes team](../engineering/batch-changes/index.md)
 - `license enforcement/management` should be routed to the [Batch Changes team](../engineering/batch-changes/index.md) (though these should always go through the CE)
 
@@ -65,13 +65,13 @@ Note that this section applies to backend connections with code hosts, such as r
 
 **Keywords**: `permissions`, `ACLs`, `access`, `authorization`, `authz`
 
-Any questions about repository permissions should be routed to the [Core application team](../engineering/core-application/index.md).
+Any questions about repository permissions should be routed to the Repository Management team..
 
 ### User authentication (SSO)
 
 **Keywords**: `authentication`, `authn`, `SSO`, `SAML`, `OAuth`, `auth proxy`, `OpenIDConnect`, `OIDC`
 
-Any questions about user authentication should be routed to the [Core application team](../engineering/core-application/index.md).
+Any questions about user authentication should be routed to ??????.
 
 ### Code intelligence
 
@@ -143,9 +143,9 @@ Selecting priority is more of an art than a science. Start with the issue and it
 
 After you file the Github issue, alert the relevant engineering team you did so in Slack. Keep it simple and always provide 1) a brief description of what you need, 2) link to the Github issue, and 3) the context around timeline (for example: it's okay to look at this tomorrow or later in the week).
 
-- When posting in Distribution team's Slack channel, use @distribution-support to contact the the [on-call dev](../engineering/distribution/index.md#support-rotation) (not the team @distribution group -- while we use the @ group for all other engineering teams, most of our help requests go to Distribution, so they have a support rotation to help let the team have more focus time) -- be sure to also use the Slack template as described [here](https://about.sourcegraph.com/handbook/engineering/distribution#general-support-requests)
+- When posting in the Delivery team's Slack channel, use @distribution-support to contact the the on-call dev (if @delivery-support does not exist)
 - When posting in Batcher Changes team's Slack channel, use @batchers-support
-- When posting for Core App, be sure to do so in the #core-application-support channel and use @core-app-support
+- When posting for Repository Management, be sure to do so in the #repo-management channel and use @core-app-support (if @repo-management-support doesn't exist)
 - When posting for Search, use @search-core-support or @search-product-support ... depending which team within Search you need
 - Whenever we have more work than any one engineering team can handle via their support process, we prioritize issues holistically. We try to catch this before the engineering team has to alert us.
 
@@ -159,7 +159,9 @@ Ask the engineer helping you to see if they would like to work directly with the
 
 ### Resolution
 
-Even when engineering is helping, you are accountable for the work and it is your job to reach resolution as outlined in our [workflow](support-workflow.md).
+Even when engineering is helping, you are accountable for the work and it is your job to reach resolution as outlined in our [workflow](support-workflow.md). 
+
+And in some cases, the customer resolves the issue or you figure it out on your own, after all. Please be sure to share in the Github issue all the details so our engineering teammates can learn, too!
 
 ## And sometimes, we need help from teams outside of engineering ...
 
