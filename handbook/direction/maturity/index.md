@@ -12,7 +12,7 @@ Sourcegraph keeps track of how mature each of our feature areas are, to help you
 
 <script>
 
-  const harvey_balls = ["○", "◔", "◑", "◕", "●", "♥"]
+  const harvey_balls = ["○", "◔", "◑", "●", "♥"]
 
   page_content = document.getElementsByClassName('markdown-body')[0];
 
