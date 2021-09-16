@@ -8,6 +8,10 @@ Want to help us achieve these goals? [We're hiring!](https://github.com/sourcegr
 
 This is our strategy for realizing our [1-year vision](../company/strategy.md#1-year-vision).
 
+## Feature maturity
+
+We track maturity for individual features in our [maturity tracker](maturity/index.md)
+
 ### Build Sourcegraph into the development workflow
 
 #### Challenge to overcome
