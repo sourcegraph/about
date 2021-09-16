@@ -125,7 +125,7 @@ This quarter, our main goals is to ship an alpha version of [server side Batch C
 
 ### What we are iterating on
 
-- We are iterating on [bulk actions](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Abulk-action), to move it from a minimal experience to something that customer love. We lack bandwidth to make radical improvements, but we plan to ship a small increment.
+- We are iterating on [bulk actions](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Abulk-action), to move it from a minimal experience to something that customers love. We lack bandwidth to make radical improvements, but we plan to ship a small increment.
 
 ### Non Batch Changes work
 
