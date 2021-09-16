@@ -1,6 +1,6 @@
 # Customer Engineering Project Work
 
-CEs engage in project work to both enhance the go-to-market capabilities of the company, to enhance the customer experience through reusable assets, and to perform other customer centric work that, for example, may involve development of code.
+CEs engage in project work to both enhance the go-to-market capabilities of the company, to enhance the customer experience through reusable assets, and to perform other customer-centric work that, for example, may involve development of code, creation of educational assets, or development of new demo flows.
 
 This page describes the process CEs follow to propose and complete project work. We use Asana for management of the projects.
 
