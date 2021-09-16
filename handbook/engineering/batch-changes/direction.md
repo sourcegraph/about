@@ -12,7 +12,7 @@ Batch Changes is a tool to find code that needs to be changed and change it at s
 
 #### 1 Year vision
 
-> Enterprise **developers** can easily create changesets across many repositories and codehosts, and track them to completion.
+> Enterprise developers can easily create changesets across many repositories and codehosts, and track them to completion.
 
 #### 3 Year vision
 
@@ -20,7 +20,7 @@ Batch Changes is a tool to find code that needs to be changed and change it at s
 
 #### 10 year vision
 
-> Automated code changes are a common practice for all developers
+> Automated code changes are a common practice for all developers.
 
 ## Mission & Strategy
 
@@ -32,9 +32,15 @@ We allow developers to focus on changing their code, without having to do any pl
 
 To deliver our vision, we will:
 
+<<<<<<< HEAD
 - First, get adopted by the Sourcegraph customer base, including large enterprises. We will target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use. This is what we are doing today.
 - Concurrently, spread usage (MAUs) within our customer, and make sure we deliver on our success metric (changesets merged)
 - Then, create low-effort entrypoints into Batch Changes, and allow users unfamiliar with the practice of automating code changes to onboard with a smooth lerning curve. Make onboarding Batch Changes self-service for most users, to help our customers be successfull and prepare for launching on Cloud.
+=======
+- First, get adopted by the Sourcegraph customer base, including large enterprises. We will target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use.
+- Concurrently, spread usage (MAUs) within our customer base, and make sure we deliver on our success metric (changesets merged).
+- Then, create low-effort entrypoints into Batch Changes, and allow users unfamiliar with the practice of automating code changes to onboard with a smooth learning curve. Make onboarding Batch Changes self-service for most users, to help our customers be successful and prepare for launching on Cloud.
+>>>>>>> 6f63dc16a968b2a14e950adf85af82afd9dc5cbb
 - Then, release Batch Changes on Sourcegraph Cloud, and test and learn how we can serve individuals and smaller teams
 - Eventually, address the problem end to end by becoming the go-to place for code change tools and recipes.
 
@@ -60,7 +66,11 @@ Batch Changes is succesfully adopted by very large companies, with 10,000s of re
 To drive enterprise success and stickiness, we need to:
 
 - deliver a great experience in creating changesets at enterprise scale (10,000s reposiories), resulting in more users onboarding batch changes.
+<<<<<<< HEAD
 - allow users to find out where to create batch changes and and understand what to do to get changesets merged in batch changes with 1,000s of changesets. This will increase the number of changesets merged, our key success metric.
+=======
+- allow users to find out where to create batch changes and understand what to do to get changesets merged in batch changes with 1,000 of changesets. This will increase the number of changesets merged, our key success metric.
+>>>>>>> 6f63dc16a968b2a14e950adf85af82afd9dc5cbb
 
 ### Discovery and onboarding
 
@@ -116,7 +126,7 @@ We have four main learnings from the first year of Batch Changes:
 
 This quarter, our main goals is to ship an alpha version of [server side Batch Changes](https://github.com/sourcegraph/sourcegraph/issues/21018) (SSBC), and to onboard one customer into a POC. SSBC is our top priority because:
 
-- it is essential for Batch Changes to work at [Enterprise scale](#enterprise-scale). Enterprise customers with 10,000s of repositories have a degraded experience today, because they cannot create batch changes with 1,000s of changesets or resource-intensive batch changes in a reasonable amount of time. Server side batch changes will directly impact key customers and prospects such as [1](https://github.com/sourcegraph/customers/issues/1), [2](https://github.com/sourcegraph/customers/issues/3), [3](https://github.com/sourcegraph/customers/issues/2) and [4](https://github.com/sourcegraph/customers/issues/6)
+- it is essential for Batch Changes to work at [Enterprise scale](#enterprise-scale). Enterprise customers with 10,000s of repositories have a degraded experience today, because they cannot create batch changes with 1,000s of changesets or resource-intensive batch changes in a reasonable amount of time. Server side Batch Changes will directly impact key customers and prospects such as [1](https://github.com/sourcegraph/customers/issues/1), [2](https://github.com/sourcegraph/customers/issues/3), [3](https://github.com/sourcegraph/customers/issues/2) and [4](https://github.com/sourcegraph/customers/issues/6)
 - it will shift the setup burden from the user to the site-admin. Once site-admins have setup SSBC, any user can run a batch change from the GUI in a few clicks. That will unlock improvements to [Discovery and onboarding](#discovery-and-onboarding) such as creating batch changes from a template directly from the GUI. Creating a guided, self-serve onboarding is a prerequisite for [Cloud](#cloud)
 - it unlocks [key vision items](https://docs.google.com/document/d/1MnfaA9P7mtur7aQbMvy2x96_zy_IrOhY-MbGUo5I5wk/edit#heading=h.25ypvomeex1g) that will make using Sourcegraph an incredible experience and delight our customers, as well as [low-effort usage patterns](#adoption-through-low-effort-usage-patterns)
 
@@ -127,18 +137,18 @@ This quarter, our main goals is to ship an alpha version of [server side Batch C
 
 ### What we are iterating on
 
-- We are iterating on [bulk actions](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Abulk-action), to move it from a minimal experience to something that customer love. We lack bandwidth to make radical improvements, but we plan to ship a small increment.
+- We are iterating on [bulk actions](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Abulk-action), to move it from a minimal experience to something that customers love. We lack bandwidth to make radical improvements, but we plan to ship a small increment.
 
 ### Non Batch Changes work
 
 This quarter, we are taking on some work outside the scope of Batch Changes to support key business needs.
 
 - Licensing and gating, see [FY22 Q3: Licensing and tier enforcement](https://docs.google.com/document/d/1o_glLsehadoQQa7bap7Ve5pW_KS30xDgcdq79Fcn4Ow/edit#heading=h.rrqx4mdnmg3q) (private).
-- Minimal [CVS support](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Acvs), to unblock an important [customer](https://github.com/sourcegraph/customers/issues/5)
+- Minimal [CVS support](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Acvs), to unblock an important [customer](https://github.com/sourcegraph/customers/issues/5).
 
 
 - **Windows support** ([#24849](https://github.com/sourcegraph/sourcegraph/issues/24849)): Reliably supporting creating batch changes locally in a windows environment is a very large amount of work, that is incompatible with our plan of delivering server side Batch Changes as fast as possible. Windows support has blocked one [prospect](https://github.com/sourcegraph/customers/issues/3) and slowed down adoption at a [customer](https://github.com/sourcegraph/customers/issues/2), and will likely be important in the Banking and Gaming industry. We plan to address these customers with server side Batch Changes. Server side Batch Changes will bypass the need to run the CLI locally, and instead allow customers to compute the batch changes on the Sourcegraph instance.
 
-- **Adding a permission model**: Batch Changes currently only supports the site-admin and user roles. While finer-grained permissions will likely be needed to reach broad adoption in large companies, we are prioritising on building a product that support [enterprise scale](#enterprise-scale) before adding to the permission model. When server side Batch Changes is in beta and the user experience at a very large scale allows for broad adoption, we can reconsider adding more complex permissions and control over who uses Batch Changes.
+- **Adding a permission model**: Batch Changes currently only supports the site-admin and user roles. While finer-grained permissions will likely be needed to reach broad adoption in large companies, we are prioritising building a product that supports [Enterprise scale](#enterprise-scale) before adding to the permission model. When server side Batch Changes is in beta and the user experience at a very large scale allows for broad adoption, we can reconsider adding more complex permissions and control over who uses Batch Changes.
 
 - Education material about code change tools. Helping our customers find and select a code change tool that suits their needs is a very common ask, and something we think could drive adoption. We don’t have bandwidth for this this quarter though.

@@ -4,7 +4,7 @@ We track and report anonymous, non-specific, aggregate metrics from Sourcegraph 
 
 ## Key success metrics
 
-We track success metrics in a (private) [Looker dashboard](https://sourcegraph.looker.com/dashboards-next/174)
+We track success metrics in a (private) [Looker dashboard](https://sourcegraph.looker.com/dashboards-next/174).
 
 | Outcome                                            | Metric                                                                 |
 | -------------------------------------------------- | ---------------------------------------------------------------------- |
