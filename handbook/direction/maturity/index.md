@@ -13,7 +13,6 @@ If you do not see content below, check you have JavaScript enabled then contact 
 - ♥: a lovable, complete, and market leading experience
 
 <script>
-
   const harvey_balls = ["○", "◔", "◑", "●", "♥"]
 
   page_content = document.getElementsByClassName('markdown-body')[0];
