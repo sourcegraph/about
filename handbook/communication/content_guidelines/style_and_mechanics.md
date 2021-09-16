@@ -512,7 +512,6 @@ Use a hyphen (-) without spaces before and after to link words into a single phr
 </div>
 </div>
 
-
 Use an en dash (–) to indicate a [range or span](#ranges-and-spans), without spaces.
 
 <div class="usage">
