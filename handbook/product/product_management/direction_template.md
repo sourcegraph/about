@@ -18,13 +18,13 @@ Quicklinks:
 - [Latest demo](https://about.sourcegraph.com/)
 - [Documentation](https://about.sourcegraph.com/)
 
-# Mission & Strategy
+## Mission, Vision & Guiding Principles
+
+### Mission
 
 What is the team's reason for existing? What is the fundamental value they aim to provide?
 
-What is your strategy defined in a few steps?
-
-# Vision
+### Vision
 
 #### 1 Year vision
 
@@ -38,9 +38,10 @@ What is your strategy defined in a few steps?
 
 > A sentence or two on your ten year vision is where you can really go wild and describe the problems you want to solve and solutions you want to deliver unbound by limitations of technology or scope. Be inspiring and look to the our [10 and 30 year strategies](../../company/strategy.md#sourcegraph-strategy) for ideas.
 
-# Guiding principles
+### Guiding principles
 
 Identify what key principles, insights, and decisions are important to the strategy or a set of key hypotheses and set of key questions to validate or invalidate them.
+
 Describe the target by which we prioritize:
 
 - Market or audience
@@ -50,25 +51,7 @@ Describe the target by which we prioritize:
 - What matters to us when we prioritize products and features
 - Contextual things that matter to Sourcegraph or the product
 
-## Themes
-
-What are high level themes or principles you are using to guide prioritization within your three year strategy, and why? What are the groupings of features/problems to solve that you are focusing on in that period?
-
-> Examples:
->
-> - A product differentiator
-> - Cloud-first
-> - Adoption
-
-### Theme 1
-
-TODO
-
-### Theme 2
-
-TODO
-
-# Where we are now
+## Where we are now
 
 - Where is the team's area of ownership in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?
 - What did we achieve in the last few months?
@@ -76,26 +59,53 @@ TODO
 - What is on the critical path for growth?
 - How does the product fit within Sourcegraph as a whole?
 
-## Competitive landscape
+### Top customer, support, sales and marketing issues
+
+- What are the top issues customers are facing? (All, you can call out ones we're tackling (or not) in the Strategy & Plans section)
+- What are the top requests from other teams at Sourcegraph? (All, you can call out ones we're tackling (or not) in the Strategy & Plans section)
+
+### Competitive landscape
 
 - Who is the competition for this product area?
 - What recent developments in competition is impacting sales, marketing and product strategy?
 
-## Analyst landscape
+### Analyst landscape
 
 - If you are not currently involved with analyst discussions for your product area, you can reach out to Christine for context here and to stay in the loop in the future.
 - Are there analysts tracking this product area?
 - How are analysts positioning the product? What are areas of improvement?
 
-# What's next and why
+## Strategy and Plans
 
-What are we going to do in the next quarter, and how does it accomplish company goals and the product vision?
+Be sure to make the timeframe you choose to use clear, whether a quarter or rolling 12 months
 
-## Top customer, support, sales and marketing issues
+### Goals
 
-- What are the top issues from customers we are taking on this quarter?
-- What are the top requests from other teams at Sourcegraph we are taking on this quarter?
+What are the measurable goals this team is going after in the chosen time period.
 
-## What we're not working on
+### Themes
+
+What are high level themes, and why? What are the groupings of features/problems to solve that you are focusing on in that period? How do they relate to the goals you have
+
+> Examples:
+>
+> - A product differentiator
+> - Cloud-first
+> - Adoption
+
+- Theme
+    - Theme extra detail
+- Theme 
+    - Theme extra detail
+- Theme
+    - Theme extra detail
+
+### What's next and why
+
+More detailed plans related back to the themes and goals. If your time frame covers more than a quarter, it would be valuable to give some indication of time within the plans in this section, to help others appreciate the likely ETA of value.
+
+### What we're not working on & why
 
 What are we explicitly not working on? Are there frequent requests from customers or other teams we are choosing not to take on? Making that explicit makes other teams understand the strategy and reduces back and forth.
+
+If there is a time component (e.g. "We're not working on this this Q but likely to pick it up next Q"), call it out.
