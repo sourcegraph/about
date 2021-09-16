@@ -132,7 +132,7 @@ This quarter, our main goals is to ship an alpha version of [server side Batch C
 This quarter, we are taking on some work outside the scope of Batch Changes to support key business needs.
 
 - Licensing and gating, see [FY22 Q3: Licensing and tier enforcement](https://docs.google.com/document/d/1o_glLsehadoQQa7bap7Ve5pW_KS30xDgcdq79Fcn4Ow/edit#heading=h.rrqx4mdnmg3q) (private).
-- Minimal [CVS support](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Acvs), to unblock an important [customer](https://github.com/sourcegraph/customers/issues/5)
+- Minimal [CVS support](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Acvs), to unblock an important [customer](https://github.com/sourcegraph/customers/issues/5).
 
 ### What we're not working on
 
