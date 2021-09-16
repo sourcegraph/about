@@ -101,14 +101,14 @@ Our team is growing and to help our new teammates have the best onboarding exper
 ## Members
 
 - [María Craig](../../company/team/index.md#maría-craig-she-her) ([Product Manager](../../product/roles/index.md#product-manager))
-- [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
+- [Sara Lee](../../company/team/index.md#sara-lee-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
 - [Owen Convey](../../company/team/index.md#owen-convey-he-him) ([Engineering Manager](../roles.md#engineering-manager)) {#code-intelligence-eng}
   - [Eric Fritz](../../company/team/index.md#eric-fritz-he-him)
   - [Noah Santschi-Cooney](../../company/team/index.md#noah-santschi-cooney-he-him)
   - [Ólafur Páll Geirsson](../../company/team/index.md#olafurpg)
   - [TJ DeVries](../../company/team/index.md#tj-devries)
   - [Chris Wendt](../../company/team/index.md#chris-wendt)
-  - C.J. starting 2021-09-07
+  - [Cesar Jimenez](../../company/team/index.md#cesar-jimenez)
   - FQ3 hire
   - FQ4 hire
 

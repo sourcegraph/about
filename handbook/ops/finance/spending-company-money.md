@@ -6,7 +6,7 @@ We want to make sure you have what you need to be productive and happy in your r
 - You likely won't need every single item on this list—please use your best judgment and buy when you need them. Remember, Sourcegraph doesn't have unlimited funds—spend this money as if it was your own.
   - For example, if you intend to work out of a coworking space most of the time, you may not need a fully equipped home office as well.
 - If you spend more than $1,000 on any given physical item, it will be considered property of the company.
-- Please file an expense report within 60 days of an eligible purchase. See [submitting expenses](../ops/finance/expenses.md) for additional help.
+- Please file an expense report within 60 days of an eligible purchase. See [submitting expenses](expenses.md) for additional help.
 
 ## Desk set-up
 
@@ -20,7 +20,7 @@ If you don't spend all of your budget when you first join, it's ok to spend it l
 
 #### Team-specific totals
 
-- We expect new [Design team](../product/design/index.md) members to spend **$2,650** to allow for purchasing higher-resolution monitors or other design equipment.
+- We expect new [Design team](../../product/design/index.md) members to spend **$2,650** to allow for purchasing higher-resolution monitors or other design equipment.
 - Since they are customer-facing and need to deliver high-quality demos and support, [Customer Engineering](https://about.sourcegraph.com/handbook/ce) team members can exceed these limits (within reason) to allow for purchasing beefier-spec computers, additional monitors, mics, lighting, etc.
 
 ### Interns
@@ -67,13 +67,13 @@ Once your contract is signed, you will need to purchase and expense your Sourceg
 
 **Software/SaaS/cloud:** please check with the appropriate team and manager to ask if we already have a subscription or licenses to the software. If not, please get @sourcegraph/people-ops's approval for software or a subscription that would cost more than $500 per year.
 
-**[Internet, phone, and wellness](../ops/finance/expenses.md#internet-phone-and-wellness-benefits):** The following items are automatically added to your pay, and they don't need to be expensed.
+**[Internet, phone, and wellness](expenses.md#internet-phone-and-wellness-benefits):** The following items are automatically added to your pay, and they don't need to be expensed.
 
 - **Internet/WiFi plan:** $50/month
 - **Cell phone plan:** $75/month
 - **Wellness:** $100/month
 
-**Co-working/office space:** $300-500/month for renting your space, including parking while you are working from your designated co-working space.
+**Co-working/office space:** $300-500/month for renting your space, including parking up to $20 per day while you are working from your designated co-working space. This budget also includes public transportation and rideshare to and from co-working spaces up to $20 per day. Gas reimbursement is not included.
 
 You will not need permission for choosing which co-working space you’d like to sign up for. We trust that you will pick a co-working space which both benefits you and is within budgetary reason. Our only recommendation is that you pick a co-working space on a _day-to-day drop in basis_ or a _month-to-month basis_ for ease of monthly reimbursement. The Company will not cover the cost of a co-working space deposit or sign for coworking space contracts. Additionally, if you would like to setup a group co-working space with pooled teammate funds, please send a message to People Ops and Finance stating Name(s) and Team Role(s), Location of space, and estimated monthly cost. For group rentals, we recommend one person submit a monthly invoice and tag all attendees.
 
@@ -95,4 +95,4 @@ You will not need permission for choosing which co-working space you’d like to
 
 **Travel expenses:** please see our page on [travel budgets](https://about.sourcegraph.com/handbook/people-ops/travel).
 
-Find out how to submit your expenses [here](../ops/finance/expenses.md).
+Find out how to submit your expenses [here](expenses.md).

@@ -4,7 +4,7 @@ Product at Sourcegraph consists of [product management](product_management/index
 
 The Product team strives to make the following true:
 
-- The team is working on the most important things (listed in the [project roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit?usp=sharing)) to execute on [our strategy](../direction/index.md) that is moving us forward on [our vision](../company/strategy.md).
+- The team is working on the most important things (listed in the [product roadmap](https://docs.google.com/document/d/1cBsE9801DcBF9chZyMnxRdolqM_1c2pPyGQz15QAvYI/edit?usp=sharing)) to execute on [our strategy](../direction/index.md) that is moving us forward on [our vision](../company/strategy.md).
 - Each teammate has the customer and product context needed (about customer problems, likely future priorities, possible solutions, etc.) to perform their work effectively.
 - The product vision and roadmap are communicated well to teammates and everyone outside Sourcegraph.
 
@@ -28,16 +28,23 @@ We have a topline goal of 10k [monthly active users](../ops/bizops/user_definiti
 
 Individual product engineering teams also set their own goals:
 
-- [Search core and Search product](../engineering/search/goals.md)
-- [Code Intelligence](../engineering/code-intelligence/goals.md)
-- [Batch Changes](../engineering/batch-changes/goals.md)
-- [Frontend Platform](../engineering/developer-insights/frontend-platform/goals.md)
-- [Extensibility](../engineering/developer-insights/extensibility/goals.md)
-- [Code Insights](../engineering/developer-insights/code-insights/goals.md)
-- [API docs](../engineering/developer-insights/api-docs/goals.md)
-- [Security](../engineering/security/goals.md)
-- [Distribution](../engineering/distribution/goals.md)
-- [Core application](../engineering/core-application/goals.md)
+- Code Graph
+  - [Search core and Search product](../engineering/search/goals.md)
+  - [Batch Changes](../engineering/batch-changes/goals.md)
+  - [Code Intelligence](../engineering/code-intelligence/goals.md)
+  - [Code Insights](../engineering/developer-insights/code-insights/goals.md)
+- Enablement
+  - Repository Management
+  - [Distribution](../engineering/distribution/goals.md)
+  - [Frontend Platform](../engineering/developer-insights/frontend-platform/goals.md)
+- Cloud
+  - [Core application](../engineering/core-application/goals.md)
+  - Cloud SaaS
+  - Growth
+    - [API docs](../engineering/developer-insights/api-docs/goals.md)
+  - [Security](../engineering/security/goals.md)
+  - DevOps/SRE
+  - [Extensibility](../engineering/developer-insights/extensibility/goals.md)
 
 ## Product team initiatives
 
@@ -49,21 +56,39 @@ In an effort to gain more clarity around product success and growth on Cloud, we
 
 - Owner: Anna (Jason covering during leave)
 - [Working Document](https://docs.google.com/document/d/1o0dLmdRRI6uWIuAg_8VQw25KnTM1CBDKKR2K91SxpAI/edit#)
+- [Pull Request](https://github.com/sourcegraph/about/pull/4521)
 
 ### Improve process for documentating product strategy
 
 Our current [product goals pages](index.md#goals) are not always up to date so can't be relied upon by the rest of the organization. They are also mixed in with other engineering team content so it can be hard to find the product direction components. We need to update and organize these pages, and then want to improve this process so that the goals pages are the always updated source of truth.
 
 - Owner: Jason
+- [Working Document](https://docs.google.com/document/d/15H6PeCF9c890TqQBc3gaDSk-GDE42SPzhokAlU5Lu8M/edit?usp=sharing)
+- [Pull Request](https://github.com/sourcegraph/about/pull/4599/files)
+
+### Public facing roadmap
+
+We are missing a single source of truth for what is currently on the roadmap. Our customers as well as Sales, Customer Engineering, Customer Support, and Marketing all need to know what is on the roadmap. Today we use several methods to track our roadmap making any one source unreliable. The end goal is to have a single source of truth that is referenced as needed.
+
+- Owner: Serina
+- [Working Document](https://docs.google.com/document/d/1dsJ_0aXyPTE-vUDR9fIwVYEq1UBYN-rtH75qtI91pdg/edit#)
+
+### Defining our known product scale
+
+Customer Engineering needs is looking to better undrestand the known boundaries of our product to effectively interact with prospetive customers. As a product team we are pulling together information of existing customer scale. This information combined with our product knowledge will help us proactively identify potential scale challenges.
+
+-Owner: Christina
+
+- [Working Document](https://docs.google.com/spreadsheets/d/101JXaau2EPvi322AOFmNeoeuXSJqlruD8gBBsHl1fmI/edit#gid=0)
 
 ### Other initiatives
 
 There are a few other initiatives we will be tracking here soon:
 
-- Public facing roadmap
 - CE / Product communication and prioritization improvements on feedback
-- Consolidation and simplification of tooling
+- Make sure our current product process is documented
 - Experimentation and improvements to planning
+- Consolidation and simplification of tooling
 
 ## Org chart
 
