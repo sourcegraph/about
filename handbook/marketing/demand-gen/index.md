@@ -2,6 +2,11 @@
 
 The Demand Generation at Sourcegraph is focused on building engagement with our end users and customers. We exist to share the value of Sourcegraph, create interest in our products, and support a healthy pipeline for sales. We do this by partnering with marketing and sales to develop campaigns, activation strategies, and measurement plans to ensure we’re presenting the most valuable information to the right audience at the right time with demonstrable results.
 
+## Related pages
+
+- [Google Search Console guide](google-search-console-guide.md)
+- [Demand Gen team READMEs](demand-gen-bios.md)
+
 ## Our Strategy
 
 > **Be Delightful**
