@@ -17,7 +17,7 @@ You can watch the recording of this episode at the [bottom of this blog post](#W
 
 ## Hardware setup
 
-Liz's setup stresses ergonomics, and includes two monitors and a mechnical keyboard. Liz also uses a Blue Yeti mic and Logitech (?) webcam. On her desk are two computers: an AMD64 box and an ARM64 box with a 16 cores at 2.2GHz, 32 GB ram.
+Liz's setup stresses ergonomics, and includes two monitors and a mechnical keyboard. On her desk are two computers: an AMD64 box and an ARM64 box with a 16 cores at 2.2GHz, 32 GB ram.
 
 ![Liz's main work desk](https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-desk.jpg)
 
