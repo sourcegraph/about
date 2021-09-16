@@ -7,6 +7,7 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Editing the handbook](editing.md)
 - [Handbook usage](usage.md)
 - [Handbook feedback](https://docs.google.com/forms/d/e/1FAIpQLSfb0yU9xmnvK2namuUzUEKbB9IqZlNQF2IWw0OpLsGvBiW2oQ/viewform?usp=sf_link)
+- [What's new in the handbook](https://sourcegraph.com/github.com/sourcegraph/about/-/commits)
 
 ## [Company](company/index.md)
 
@@ -33,7 +34,7 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ### [Product](product/index.md)
 
-- [Direction (2020 product strategy)](direction/index.md)
+- [Direction](direction/index.md)
 - [Product](product/index.md)
   - [Product Management](product/product_management/index.md)
   - [Product Design](product/design/index.md)
