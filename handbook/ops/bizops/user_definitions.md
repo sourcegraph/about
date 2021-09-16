@@ -27,12 +27,7 @@ What is an activated user?
 An activated user is a user who has established the core habit of the product. This can be broken down further into the setup moment (actions done to set up for the core value prop, such as signing up and adding personal repositories), aha moment (experienced the core value prop the first time, such as a user's first search over their personal search context) and habit moment (when the habit around the core value proposition is finally established). Activation is this entire journey. Our current definition is the user performs a search or code intelligence action [as defined in Amplitude](https://analytics.amplitude.com/sourcegraph/govern/project/333976/events?filter=all&event=ce%3ABecome%20active), but this needs to be iterated on.
 ### What is an active user?
 
-An active user is differentiated from a visitor by performing a qualifying event, which are intended to represent someone who has actively **engaged with** and **received value** from the product; something that takes a user from their first Search to establishing a habit around the core value proposition of the app. Qualifying events are:
-
-| Product area              | Qualifying event                   | Description                                                                                         |
-| ------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Searching for code        | `SearchSubmitted`                  | Submit a search                                                                                     |
-| Navigating the code graph | `findReferences`, `goToDefinition` | Click on go to definition or fin references. Hovering is excluded as it can be performed passively. |
+An active user is differentiated from a visitor by performing a qualifying event, which are intended to represent someone who has actively **engaged with** and **received value** from the product; something that takes a user from their first Search to establishing a habit around the core value proposition of the app. Qualifying events are [listed as 'Active' in Amplitude](https://analytics.amplitude.com/sourcegraph/govern/project/333976/events?filter=live)
 
 Qualifying events are not intended to be difficult, or prove that someone is a heavy user of the product. They are carefully selected to represent activities that are important to realizing the value of Sourcegraph.
 
