@@ -20,7 +20,7 @@ Batch Changes is a tool to find code that needs to be changed and change it at s
 
 #### 10 year vision
 
-> Automated code changes are a common practice for all developers
+> Automated code changes are a common practice for all developers.
 
 ## Mission & Strategy
 
