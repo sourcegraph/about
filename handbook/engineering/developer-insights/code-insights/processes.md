@@ -56,9 +56,9 @@ We also intentionally plan so we can avoid merging significant work less than tw
 Larger (usually multi-iteration) projects coming from our roadmap go through three phases:
 
 1. **Product context and scope agreement** (usually 1-2 weeks)<br>
-   The PM creates a product-level RFC summarizing user desires from feedback and proposes a reasonable timeline to reach a scope agreement (mentioned in the RFC).
+   The PM (or other driving individual) creates a product-level RFC summarizing user desires from feedback and proposes a reasonable timeline to reach a scope agreement (mentioned in the RFC).
    Engineers, designer (as applicable), PM, and EM discuss the needs in the RFC and the feasibility/complexity of different options.
-   **The goal of this phase is to agree on a scope for the project**, which will generally be a _subset_ of the desires the PM outlined in the RFC based on the implementation complexity, how long it would roughly take to implement, and how much time we want to dedicate to the project.
+   **The goal of this phase is to agree on a scope for the project**, which will generally be a _subset_ of the desires the PM/driver outlined in the RFC based on the implementation complexity, how long it would roughly take to implement, and how much time we want to dedicate to the project.
    After discussion, the agreed-upon scope is recorded in a section at the bottom of the RFC.
 
 2. **Design and implementation planning** (usually 1-2 weeks)<br>
