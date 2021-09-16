@@ -8,7 +8,7 @@ If you do not see content below, check you have JavaScript enabled then contact 
 
 - ○: not yet available, but on our roadmap
 - ◔: available in the product, but may not be ready for production use yet
-- ◑: usable for primary jobs to be done, but may lack depth
+- ◑: usable for primary jobs to be done, but may lack depth and/or breadth
 - ●: a complete feature used extensively by our customers
 
 <script>
