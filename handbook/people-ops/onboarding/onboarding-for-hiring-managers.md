@@ -113,7 +113,7 @@ Having this done before day one will make it easier for the new hire and an over
    </td>
   </tr>
   <tr>
-   <td>On the teammates 6 month mark, and every six months after that, manager and teammate will be part of the <a href="../impact-reviews.md"> 360 Impact review cycle</a>.
+   <td>On the teammates 6 month mark, and every six months after that, manager and teammate will be part of the 360 Impact review cycle.
    </td>
    <td>Hiring Manager & Teammate
    </td>
