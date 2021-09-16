@@ -21,7 +21,7 @@ The project is separated into multiple views: **Current iteration**, **Next iter
 
 Our current process is as follows:
 
-- We work in **2-week iterations**. Every iteration as a GitHub milestone, which is created at least one iteration in advance.
+- We work in **2-week iterations**. Every iteration has a GitHub milestone, which is created at least one iteration in advance.
 
 - Incoming tickets (from team members or from other teams) are added to the [GitHub project](https://github.com/orgs/sourcegraph/projects/200/views/1) and will be visible in the "All iterations" view under "No milestone". This represents our **backlog** of _unscheduled_ work.
 
