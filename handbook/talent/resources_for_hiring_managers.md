@@ -104,7 +104,7 @@ Please put your written feedback into Greenhouse as soon as possible following t
 
 All feedback must be submitted in Greenhouse before discussing with anyone. This is required and ensures that bias does not impact your hiring recommendation.
 
-We want to ensure that teammates score candidates in a consistent fashion which is why we have [definitions](https://about.sourcegraph.com/handbook/talent/interview_process#providing-interview-feedback) for what the following ratings mean: 1. Strong yes 2. Yes 3. No 4. Strong no.
+We want to ensure that teammates score candidates in a consistent fashion which is why we have [definitions](https://about.sourcegraph.com/handbook/talent/interview_process#overall-recommendation) for what the following ratings mean: 1. Strong yes 2. Yes 3. No 4. Strong no.
 
 ## Interview debriefs
 
