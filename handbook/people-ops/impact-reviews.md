@@ -1,5 +1,5 @@
-# 360 Impact review cycles  
-  
+# 360 Impact review cycles
+
 At Sourcegraph, we aim for ongoing, real-time career conversations so you feel empowered to own your growth and development. Our bi-annual 360 Impact reviews, done through Lattice, are only one part of this cycle and should act as a summary of the various feedback conversations you've had in-between.
 
 ## Why call them Impact reviews?
@@ -16,21 +16,17 @@ Ultimately, these cycles are referred to as “Impact reviews” because they re
 
 Instead of running everyone's impact reviews synchronously twice a year, your Impact reviews will be launched automatically on your 6-month anniversary, and your one-year anniversary, setting you up for two review cycles per year, in accordance with your start date.
 
-*In these review cycles, you will be asked to give and receive the following reviews:*
+_In these review cycles, you will be asked to give and receive the following reviews:_
 
--   **Self-review:** reflect on your own contribution to your team and how you’ve made an impact.
-    
--   **Peer review**: select 2-3 stakeholders who you’ve collaborated with on projects to give feedback on the impact you’ve made and how you’ve lived our values while collaborating.
-    
--   **Upwards review:** review your manager, how they’ve supported your development, and what they can do to support you more effectively.
-    
--   **Your manager reviewing you:** your manager will reflect on your contribution to your team and how you’ve made an impact and lived our values.
-    
+- **Self-review:** reflect on your own contribution to your team and how you’ve made an impact.
+- **Peer review**: select 2-3 stakeholders who you’ve collaborated with on projects to give feedback on the impact you’ve made and how you’ve lived our values while collaborating.
+- **Upwards review:** review your manager, how they’ve supported your development, and what they can do to support you more effectively.
+- **Your manager reviewing you:** your manager will reflect on your contribution to your team and how you’ve made an impact and lived our values.
 
 ### Timing:
 
-Each review cycle will last two weeks from start to finish for each individual going through their 360. This means that reviews will be happening in real time, at different points for all of us during each calendar year.  
-  
+Each review cycle will last two weeks from start to finish for each individual going through their 360. This means that reviews will be happening in real time, at different points for all of us during each calendar year.
+
 We expect that all teammates will carve out time to put thought into writing out their reviews, and writing the reviews of their peers. We encourage all reviewers to designate around 30 minutes per review on their calendars as a calendar block called: “Writing peer reviews - do not book.” We encourage all teammates during this time to respect those review calendar blocks.
 
 Feedback is important, and we should be intentional about setting aside time to give it and give it well. In doing so, we can work together to elevate each other’s successes, share blind spots, and take the time to articulate feedback thoughtfully.
@@ -38,8 +34,9 @@ Feedback is important, and we should be intentional about setting aside time to 
 As the last step in this cycle, managers will write their own review for their direct report, have time to review their direct report’s feedback, and will release the feedback packets through Lattice once reviewed.
 
 ### A note on the "10%" questions:
-You may have noticed the question "Tell me what I can do 10% more of or better" in some of the reviews. The 10% metric centers around the idea that small, incremental changes are less daunting and seem more attainable, but actually often result in a larger impact. [People resist change for a variety of reasons.](https://hbr.org/2012/09/ten-reasons-people-resist-chang)  
-  
+
+You may have noticed the question "Tell me what I can do 10% more of or better" in some of the reviews. The 10% metric centers around the idea that small, incremental changes are less daunting and seem more attainable, but actually often result in a larger impact. [People resist change for a variety of reasons.](https://hbr.org/2012/09/ten-reasons-people-resist-chang)
+
 Stepping back from the bigger picture of your work and seeing where you can make slight changes can help empower you and will create gradual change at a pace that feels manageable.
 
 ### Continuous feedback:
@@ -48,28 +45,24 @@ We’re shifting how we think about feedback as a company and moving into the mi
 
 There are three different types of feedback: giving, receiving, and seeking feedback. In-between flexing your feedback muscle by giving it and learning how to pause when you receive it, you should also practice actively seeking out feedback from your peers. This can be as simple as sending a Slack message to ask how your presentation in a meeting went, or as thorough as setting aside time with an agenda of the situation to cover where you’d like feedback.
 
-To start this company-wide shift, we’d like all managers and their direct reports to include an element of feedback in their weekly or bi-weekly 1:1’s. These should be a safe space to give, receive and seek both positive and constructive feedback! As a best practice, we recommend keeping your 1:1’s with your managers/direct reports on a consistent cadence. The more you practice feedback and lead with radical candor, the easier it becomes to create an open, authentic, and transparent work environment.  
-  
+To start this company-wide shift, we’d like all managers and their direct reports to include an element of feedback in their weekly or bi-weekly 1:1’s. These should be a safe space to give, receive and seek both positive and constructive feedback! As a best practice, we recommend keeping your 1:1’s with your managers/direct reports on a consistent cadence. The more you practice feedback and lead with radical candor, the easier it becomes to create an open, authentic, and transparent work environment.
+
 To help get you started, we will be hosting an interactive Sourcegraph Fundamentals class called Feedback 101 in October 2021 to help you unpack, understand, and practice giving, receiving, and seeking feedback. Stay tuned for a sign-up link here and for the post-class recording to be posted on this page as well.
 
 [insert video 1]
 
-## Impact review stages  
-  
+## Impact review stages
+
 After you’ve moved through each of your three [Onboarding Feedback Milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-feedback-milestones) and you arrive at month six of your Sourcegraph journey, you will use your Sourcegraph login for [Lattice](https://lattice.com/) to conduct your 360 Impact review cycles! You will receive an email when your review cycle is set to begin prompting you to nominate your peer reviewers.
 
 The 360 Impact review process covers a few key types of feedback as mentioned above:
 
--   **Self-review:** you will review yourself
-    
--   **Peer review**: 2-3 stakeholders will review you
-    
--   **Upwards review:** you will review your manager
-    
--   **Manager review:** your manager will review you
-    
+- **Self-review:** you will review yourself
+- **Peer review**: 2-3 stakeholders will review you
+- **Upwards review:** you will review your manager
+- **Manager review:** your manager will review you
 
-*Best practice tip: We recognize that to make an impact, you must first develop goals that drive specific outcomes. Engaging in quarterly goal setting in tandem with your Impact reviews will give each teammate direction, certainty, and velocity in prioritizing their goals. If you’d like to create quarterly goals to align with your manager on, use our series of templates in our [Goal setting folder](https://drive.google.com/drive/folders/1EA0uJ5eroG8NMKtv315c5aumFNB1K7AD).*
+_Best practice tip: We recognize that to make an impact, you must first develop goals that drive specific outcomes. Engaging in quarterly goal setting in tandem with your Impact reviews will give each teammate direction, certainty, and velocity in prioritizing their goals. If you’d like to create quarterly goals to align with your manager on, use our series of templates in our [Goal setting folder](https://drive.google.com/drive/folders/1EA0uJ5eroG8NMKtv315c5aumFNB1K7AD)._
 
 These cycles will run concurrently with your [Onboarding Feedback Milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-feedback-milestones) on the following cadence:
 
@@ -81,17 +74,14 @@ These cycles will run concurrently with your [Onboarding Feedback Milestones](ht
 
 When you choose these 2-3 reviewers, you should consider:
 
--   Which peers can speak directly to my growth opportunities? Have I had a difficult conversation with someone and would like to include them as a reviewer to obtain constructive feedback?
-    
--   Who have I collaborated with recently who has had a direct line of vision into my work? Have we worked together recently on a project? You are encouraged to choose reviewers who have insight into your recent work, rather than people you simply talk to often at Sourcegraph.
-    
--   Include one reviewer whose review you’re scared to read! This is a best practice and will broaden your perspective and build self-awareness.
-    
+- Which peers can speak directly to my growth opportunities? Have I had a difficult conversation with someone and would like to include them as a reviewer to obtain constructive feedback?
+- Who have I collaborated with recently who has had a direct line of vision into my work? Have we worked together recently on a project? You are encouraged to choose reviewers who have insight into your recent work, rather than people you simply talk to often at Sourcegraph.
+- Include one reviewer whose review you’re scared to read! This is a best practice and will broaden your perspective and build self-awareness.
 
-*Pro tip: For more information on how to select peer reviewers, see [How to choose your peer reviewers](https://docs.google.com/document/d/1JDBYSs0u3rxykxW_SGj_Sf_fVBRFe5ml1Zn4sh8j77M/edit)! If you are chosen to be a peer reviewer but are not necessarily sure you have the bandwidth to contribute to their review, see [Opting out of being a peer reviewer.](https://docs.google.com/document/d/12oLL_rtlobVKaRLzdK3GkdrKvNsPL5sipFwLIMTUZNw/edit#)*
+_Pro tip: For more information on how to select peer reviewers, see [How to choose your peer reviewers](https://docs.google.com/document/d/1JDBYSs0u3rxykxW_SGj_Sf_fVBRFe5ml1Zn4sh8j77M/edit)! If you are chosen to be a peer reviewer but are not necessarily sure you have the bandwidth to contribute to their review, see [Opting out of being a peer reviewer.](https://docs.google.com/document/d/12oLL_rtlobVKaRLzdK3GkdrKvNsPL5sipFwLIMTUZNw/edit#)_
 
-Managers will have the ability to edit the reviewers after teammates submit their initial choices, with the total number of reviewers being capped at 3 teammates.  
-  
+Managers will have the ability to edit the reviewers after teammates submit their initial choices, with the total number of reviewers being capped at 3 teammates.
+
 As a best practice, all teammates are encouraged to share their reviewer’s names with their managers beforehand to align on their choices and rationale for choosing them.
 
 **Managers**: People managers will only need to select 1-2 peer reviewers for this upcoming cycle. The bulk of your time should be spent giving feedback to your direct report(s) and actively thinking through ways to help them grow.
@@ -112,26 +102,19 @@ As we move into a new cadence of 360 Impact review cycles, you may find that the
 
 In the event that you’d like to conduct an informal Impact review, [use this resource to learn about holding an informal cycle for yourself](https://docs.google.com/document/d/1YrsjivLAKZ4SQKvXNM0riZn7aiyJTupb0ce6UFRvIog/edit) and [use this resource as a template to document your reviews](https://docs.google.com/document/d/1VROO7iy8kUl7F5OyOGuGnD-2UQsU77_BsFy15wuT3dU/edit).
 
-*Note: your informal Impact review template has all of the questions mentioned in our regular Impact reviews - the only difference is where the information will be documented, and the fact that you will be driving these feedback conversations yourself.*  
-  
+_Note: your informal Impact review template has all of the questions mentioned in our regular Impact reviews - the only difference is where the information will be documented, and the fact that you will be driving these feedback conversations yourself._
+
 There are three components to feedback: giving it to others, receiving it yourself, and seeking it out. Keep in mind that feedback is a muscle, and works best when you regularly strengthen it by giving and receiving it often. The concept you will be using in this informal review process is around “seeking feedback” which will help you inform your own working style, positive trends, and areas for improvement.
 
-We recommend that you as the reviewee set time with your manager to discuss feedback between both parties. If you would like to conduct reviews with stakeholders (either in the event that you are seeking promotion, would like additional information on how you show up in your peer relationships, or are simply curious), it is recommended that you book time with at least 2-3 peers as 30-45 minute calendar invites. 
+We recommend that you as the reviewee set time with your manager to discuss feedback between both parties. If you would like to conduct reviews with stakeholders (either in the event that you are seeking promotion, would like additional information on how you show up in your peer relationships, or are simply curious), it is recommended that you book time with at least 2-3 peers as 30-45 minute calendar invites.
 
-In all instances, we recommend documenting these items in [this Informal Impact reviews template](https://docs.google.com/document/d/1VROO7iy8kUl7F5OyOGuGnD-2UQsU77_BsFy15wuT3dU/edit) or your 1:1 GoogleDoc which you share with your manager:  
-  
+In all instances, we recommend documenting these items in [this Informal Impact reviews template](https://docs.google.com/document/d/1VROO7iy8kUl7F5OyOGuGnD-2UQsU77_BsFy15wuT3dU/edit) or your 1:1 GoogleDoc which you share with your manager:
 
--   The questions you went over during your informal reviews
-    
--   A summary of the answers you have received to those questions
-    
--   Any reflections you may have based on the conversations  
-      
-    
+- The questions you went over during your informal reviews
+- A summary of the answers you have received to those questions
+- Any reflections you may have based on the conversations
 
 After you have documented your informal Impact review, this process will be complete. After you complete your informal review, a best practice is to share with any reviewers that you’d like to keep the door open for feedback and empower them to share feedback in the moment and often. The point of each review cycle is not to open the floodgates for feedback that you haven’t received yet, but more importantly to synthesize trends that you’ve already had conversations about and are aware of.
-
-  
 
 You can also use [the Informal Impact reviews template](https://docs.google.com/document/d/1VROO7iy8kUl7F5OyOGuGnD-2UQsU77_BsFy15wuT3dU/edit) to reference in promotion conversations, as a document you can share with any new managers or skip-level managers, you may have, sharing feedback with peers who can help you track your progress over time, or simply to keep in your own files for reference.
 
@@ -145,14 +128,14 @@ Log into Lattice using your Sourcegraph Google authenticator. You will be prompt
 
 We encourage all reviewers to use the SBI framework for giving feedback while filling out their reviews. SBI is a framework developed by the Center For Creative Leadership and is used all around the world. It works because it forces people to speak about feedback in a specific, actionable way. By using SBI, you will automatically counteract some of the neurological responses activated by the limbic system when giving feedback.
 
-Situation: the where and when (*shaping the context of the feedback*)
+Situation: the where and when (_shaping the context of the feedback_)
 
-Behavior: the observable action (*what you observed directly, not your interpretation*)
+Behavior: the observable action (_what you observed directly, not your interpretation_)
 
-Impact: the so-what (*effect on emotion and work*)
+Impact: the so-what (_effect on emotion and work_)
 
-The more specific you are in your responses, the more likely the feedback will be received and land in a helpful way for your teammate. Clear is kind!  
-  
+The more specific you are in your responses, the more likely the feedback will be received and land in a helpful way for your teammate. Clear is kind!
+
 In the spirit of openness and transparency, all feedback you give to others during their review cycles (and vice versa) will have names attached to them. To honor our value of being an [open company](https://about.sourcegraph.com/handbook/company/values#open-and-transparent), we’d like all feedback to be a dialogue between two teammates rather than a one-way conversation.
 
 For more information on how to use SBI and giving great feedback, [check out this resource](https://docs.google.com/document/d/1sT-eyNj7KnFQZyaJ7Uja6Hnqb1sXE-aq-Ayz4X_-8Zk/edit)!
@@ -161,81 +144,52 @@ For more information on how to use SBI and giving great feedback, [check out thi
 
 **Self-review:**
 
--   What are you most proud of in the past six months?
-    
--   In the past six months, how have you made an impact and contributed to your team’s success? Give specific examples.
-    
--   In the past six months, what company value have you embodied the most? Give specific examples.
-    
--   Over the next 6 months, what is something that can I do 10% better?
-    
--   In the next six months, what company value do you want to embody more? How do you plan on working towards embodying it more?
-    
--   What would you like to learn more about in the next 6 months to help you further succeed in your role? Describe what you’d like to learn.
-    
+- What are you most proud of in the past six months?
+- In the past six months, how have you made an impact and contributed to your team’s success? Give specific examples.
+- In the past six months, what company value have you embodied the most? Give specific examples.
+- Over the next 6 months, what is something that can I do 10% better?
+- In the next six months, what company value do you want to embody more? How do you plan on working towards embodying it more?
+- What would you like to learn more about in the next 6 months to help you further succeed in your role? Describe what you’d like to learn.
 
 **Direct report review of manager:**
 
--   Do you understand what your team’s goals are and how you contribute to those goals?
-    
--   Does your manager support you by giving meaningful feedback on your work (both what you do well and what can be done better)?
-    
--   How could your manager support you 10% more?
-    
--   How has your manager helped you grow in the past six months?
-    
+- Do you understand what your team’s goals are and how you contribute to those goals?
+- Does your manager support you by giving meaningful feedback on your work (both what you do well and what can be done better)?
+- How could your manager support you 10% more?
+- How has your manager helped you grow in the past six months?
 
 **Peer review:**
 
--   Describe how you’ve collaborated with this person in the last six months and the impact that they’ve had on your work.
-    
--   Which value has this teammate embodied the most over the past six months? Give specific examples.
-    
--   Which value can this teammate embody more of over the next six months? Give specific examples.
-    
--   What are this teammate’s biggest growth opportunities before their next review cycle?
-    
--   How can they continue to support the success of you and your team? (optional question)
-    
+- Describe how you’ve collaborated with this person in the last six months and the impact that they’ve had on your work.
+- Which value has this teammate embodied the most over the past six months? Give specific examples.
+- Which value can this teammate embody more of over the next six months? Give specific examples.
+- What are this teammate’s biggest growth opportunities before their next review cycle?
+- How can they continue to support the success of you and your team? (optional question)
 
 **Manager review of direct report:**
 
--   What has this teammate done that they should be most proud of? (Consider the purpose of their role and the team’s OKRs and give a summary of how they’ve made an impact on the team in the last six months.)
-    
--   Which value(s) does this teammate consistently embody in their work and in their interactions with others? Give specific examples.
-    
--   In the next six months, which value(s) would you like to see this teammate engage with more? Give specific examples.
-    
--   What are this teammate’s biggest growth opportunities (skills, knowledge, expertise) moving forward? How can you support them while they work on these areas?
-    
+- What has this teammate done that they should be most proud of? (Consider the purpose of their role and the team’s OKRs and give a summary of how they’ve made an impact on the team in the last six months.)
+- Which value(s) does this teammate consistently embody in their work and in their interactions with others? Give specific examples.
+- In the next six months, which value(s) would you like to see this teammate engage with more? Give specific examples.
+- What are this teammate’s biggest growth opportunities (skills, knowledge, expertise) moving forward? How can you support them while they work on these areas?
 
 # Resources for all teammates and managers:
 
- - Understanding 360 Impact review cycles
- - Demo of a manager and teammate going through the review cycle
--   [How to get the most out of review cycles](https://about.sourcegraph.com/handbook/people-ops/review-cycles/tips)
-    
--   [Resources and guides for reviewers](https://about.sourcegraph.com/handbook/people-ops/review-cycles/resources)
-    
--   [How to choose your peer reviewers](https://docs.google.com/document/d/1JDBYSs0u3rxykxW_SGj_Sf_fVBRFe5ml1Zn4sh8j77M/edit?usp=sharing)
-    
--   [Opting out of being a peer reviewer](https://docs.google.com/document/d/12oLL_rtlobVKaRLzdK3GkdrKvNsPL5sipFwLIMTUZNw/edit#)
-    
--   [SBI and how to give great feedback](https://docs.google.com/document/d/1sT-eyNj7KnFQZyaJ7Uja6Hnqb1sXE-aq-Ayz4X_-8Zk/edit?usp=sharing)
-    
+- Understanding 360 Impact review cycles
+- Demo of a manager and teammate going through the review cycle
+- [How to get the most out of review cycles](https://about.sourcegraph.com/handbook/people-ops/review-cycles/tips)
+- [Resources and guides for reviewers](https://about.sourcegraph.com/handbook/people-ops/review-cycles/resources)
+- [How to choose your peer reviewers](https://docs.google.com/document/d/1JDBYSs0u3rxykxW_SGj_Sf_fVBRFe5ml1Zn4sh8j77M/edit?usp=sharing)
+- [Opting out of being a peer reviewer](https://docs.google.com/document/d/12oLL_rtlobVKaRLzdK3GkdrKvNsPL5sipFwLIMTUZNw/edit#)
+- [SBI and how to give great feedback](https://docs.google.com/document/d/1sT-eyNj7KnFQZyaJ7Uja6Hnqb1sXE-aq-Ayz4X_-8Zk/edit?usp=sharing)
 
 ## Extra optional resources for teammates:
 
--   [Holding an informal Impact review cycle](https://docs.google.com/document/d/1YrsjivLAKZ4SQKvXNM0riZn7aiyJTupb0ce6UFRvIog/edit?usp=sharing)
-    
--   [Informal Impact review template](https://docs.google.com/document/d/1VROO7iy8kUl7F5OyOGuGnD-2UQsU77_BsFy15wuT3dU/edit)
-    
--   [How to have a developmental conversation with your manager](https://docs.google.com/document/d/1Wc_T4aXEjDlhKymeGeSFjqkM32l_hRFk6i0Bjm7BqE0/edit)
-    
--   [Quarterly goal setting 101](https://docs.google.com/document/d/1626uxUL40MbIvISNLL7DKNp7j2lEE9tvJN4X2oljeZU/edit?usp=sharing)
-    
--   [Brag document template](https://docs.google.com/document/d/1CBZYawlQedc7ef8uJmy2efb-mFebXlWhMery4BoUCFY/edit?usp=sharing)
-    
+- [Holding an informal Impact review cycle](https://docs.google.com/document/d/1YrsjivLAKZ4SQKvXNM0riZn7aiyJTupb0ce6UFRvIog/edit?usp=sharing)
+- [Informal Impact review template](https://docs.google.com/document/d/1VROO7iy8kUl7F5OyOGuGnD-2UQsU77_BsFy15wuT3dU/edit)
+- [How to have a developmental conversation with your manager](https://docs.google.com/document/d/1Wc_T4aXEjDlhKymeGeSFjqkM32l_hRFk6i0Bjm7BqE0/edit)
+- [Quarterly goal setting 101](https://docs.google.com/document/d/1626uxUL40MbIvISNLL7DKNp7j2lEE9tvJN4X2oljeZU/edit?usp=sharing)
+- [Brag document template](https://docs.google.com/document/d/1CBZYawlQedc7ef8uJmy2efb-mFebXlWhMery4BoUCFY/edit?usp=sharing)
 
 ## Questions?
 
