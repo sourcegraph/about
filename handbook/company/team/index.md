@@ -1245,7 +1245,7 @@ To add yourself to this page:
 - Software Engineer
 - Ružomberok, Žilinský, Slovakia 🇸🇰
 - GitHub: [kopancek](https://github.com/kopancek)
-- [you@sourcegraph.com](mailto:you@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/milan-freml)
+- [milan.freml@sourcegraph.com](mailto:milan.freml@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/milan-freml)
 - Name pronounciation - almost the same as the city in Italy
 - Milan lives in a [small town](https://goo.gl/maps/vRzGwscRW66tsNdr6) in Slovakia with his wife and 2 small kids. He spent 4 years in Dublin, Ireland, where they have nice beer and whiskey, but he was not enjoying the rain much. Milan previously worked in Auth0 as a senior full stack engineer and before that in AWS in a similar role. He loves reading books 📚 (nowadays mostly science fiction and fantasy), cycling 🚲 (when it's not raining), traveling 🌄. He also cooks 👨‍🍳 and bakes bread and when kids allow, also drinks some 🍺 and plays some 🎮. He's also building his house 🏠
 
