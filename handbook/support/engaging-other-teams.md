@@ -107,6 +107,14 @@ Any questions about Sourcegraph extensions should be routed to the [Extensibilit
 
 Any questions about Batch Changes should be routed to the [Batch Changes team](../engineering/batch-changes/index.md).
 
+### Cloud
+
+**Keywords**: `cloud`, `Open Source Search`, `sourcegraph.com`,
+
+The cloud team is a newly formed team at Sourcegraph focused on rapidly scaling our cloud presence. Today, the team is the DRI for all things cloud including DevOps/infra for cloud, new feature development, and early-access/waitlist programs for cloud.
+
+Any questions about Sourcegraph cloud should be routed to the [Cloud SaaS](../engineering/cloud/index.md) via the [#cloud-saas slack channel](https://sourcegraph.slack.com/archives/C025BKWFPDY).
+
 ## Step 4: File a Github issue
 
 It can seem duplicative, but it's just as important when we need help as it is when we file a defect to file a Github issue. This allows us to understand how we are doing toward our goal of being a self-sustaining team, as well as trends over time that impact the customer experience, engineering work load planning, and our team's experience.

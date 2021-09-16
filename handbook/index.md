@@ -45,6 +45,7 @@ The handbook is a living document and we expect every teammate to propose improv
 
 - [Engineering](engineering/index.md)
   - [Batch Changes](engineering/batch-changes/index.md)
+  - [Cloud](engineering/cloud/index.md)
   - [Core application](engineering/core-application/index.md)
   - [Code intelligence](engineering/code-intelligence/index.md)
   - [Distribution](engineering/distribution/index.md)
