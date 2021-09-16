@@ -7,7 +7,7 @@ If you do not see content below, check you have JavaScript enabled then contact 
 ## Maturity levels
 
 - ○: not yet available, but on our roadmap
-- ◔: available in the product, but may not be ready for production use yet
+- ◔: available in the product, but may not be ready for production use yet (i.e., [experimental or beta features](../../product/beta_and_experimental_feature_labels))
 - ◑: usable for primary jobs to be done, but may lack depth and/or breadth
 - ●: a complete feature used extensively by our customers
 
