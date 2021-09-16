@@ -102,6 +102,7 @@ Having this done before day one will make it easier for the new hire and an over
 </table>
 
 ## Impact reviews
+
 <table>
   <tr>
    <td>New teammates will go through their <a href="onboarding-feedback-milestones.md"> Onboarding Feedback Milestones</a> on their first, second and third month with us. Please read the handbook page that walks you through what they are and why we find them valuable. 
