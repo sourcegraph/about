@@ -2,6 +2,8 @@
 
 Sourcegraph keeps track of how mature each of our feature areas are, to help you make the best decisions about how to use our product. Clicking on the feature name will take you to its documentation.
 
+If you do not see content below, check you have JavaScript enabled then contact Product Management.
+
 ## Maturity levels
 
 - ○: not yet available, but on our roadmap
