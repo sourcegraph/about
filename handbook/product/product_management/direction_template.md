@@ -83,6 +83,7 @@ TODO
 
 ## Analyst landscape
 
+- If you are not currently involved with analyst discussions for your product area, you can reach out to Christine for context here and to stay in the loop in the future.
 - Are there analysts tracking this product area?
 - How are analysts positioning the product? What are areas of improvement?
 
