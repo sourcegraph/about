@@ -26,13 +26,13 @@ Batch Changes is a tool to find code that needs to be changed and change it at s
 
 ### Mission
 
-We allow developers to focus on changing their code, without having to do any plumbing. We help them drive changesets to completion without having to rely on spreadhseets and painful coordination. Later on, we want to make writing and running code that changes code easier to learn and use.
+We allow developers to focus on changing their code, without having to do any plumbing. We help them drive changesets to completion without having to rely on spreadhseets and painful coordination. Later on, we want to make it easier to write and run code that changes code.
 
 ### Strategy
 
 To deliver our vision, we will:
 
-- First, get adopted by the Sourcegraph customer base, including large enterprises. We will target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use.
+- First, get adopted by the Sourcegraph customer base, including large enterprises. We will target customers with advanced practices and workflow, and collaborate with them to build a category-defining product that all other companies will use. This is what we are doing today.
 - Concurrently, spread usage (MAUs) within our customer, and make sure we deliver on our success metric (changesets merged)
 - Then, create low-effort entrypoints into Batch Changes, and allow users unfamiliar with the practice of automating code changes to onboard with a smooth lerning curve. Make onboarding Batch Changes self-service for most users, to help our customers be successfull and prepare for launching on Cloud.
 - Then, release Batch Changes on Sourcegraph Cloud, and test and learn how we can serve individuals and smaller teams
@@ -60,11 +60,11 @@ Batch Changes is succesfully adopted by very large companies, with 10,000s of re
 To drive enterprise success and stickiness, we need to:
 
 - deliver a great experience in creating changesets at enterprise scale (10,000s reposiories), resulting in more users onboarding batch changes.
-- allow users to find out where to create batch changes and and understand what to do to get changesets merged in batch changes with 1,000 of changesets. This will increase the number of changesets merged, our key success metric.
+- allow users to find out where to create batch changes and and understand what to do to get changesets merged in batch changes with 1,000s of changesets. This will increase the number of changesets merged, our key success metric.
 
 ### Discovery and onboarding
 
-As we go to market, our install base of customers with Batch Changes enabled is growing. Often, a few teams have adopted Batch Changes in a given company, because they were the one feeling the need at the time. That team is frequently used to making large scale code changes and building automation, so adopting Batch Changes is easier to them and they later on turn into evangelists inside the company. In order to go beyong that beachhead user base within a company, we want to make Batch Changes more discoverable, and self-serve for new users, both as a way to drive adoption within customers and increase value and stickiness, but also to prepare for the self-service model of Batch Changes on Sourcegraph Cloud. We plan to:
+As we go to market, our install base of customers with Batch Changes enabled is growing. Often, a few teams have adopted Batch Changes in a given company, because they were the one feeling the need at the time. That team is frequently used to making large scale code changes and building automation, so adopting Batch Changes is easier to them and they later turn into evangelists inside the company. In order to go beyong that beachhead user base within a company, we want to make Batch Changes more discoverable, and self-serve for new users, both as a way to drive adoption within customers and increase value and stickiness, but also to prepare for the self-service model of Batch Changes on Sourcegraph Cloud. We plan to:
 
 - make Batch Changes more discoverable within Sourcegraph
 - provide pathways from Search into Batch Changes
@@ -82,7 +82,9 @@ We plan to drive usage (MAUs) by implementing low-effort, high-frequency use cas
 
 ### Cloud
 
-We plan to achieve feature parity on Sourcegraph Cloud, including Batch Changes. Today, the value of Batch Changes increases exponentially with the size of a customer's codebase and team but future efforts our [Adoption through low-effort usage patterns](#adoption-through-low-effort-usage-patterns) effort will change that. Improving [Discovery and onboarding](#discovery-and-onboarding) is a prerequisite for success on Sourcegraph Cloud.
+We plan to achieve feature parity on Sourcegraph Cloud, including Batch Changes. There are two prerequisites for Batch Changes on Sourcegraph Cloud to be successfull:
+- Reducing time to value. Sourcegraph Cloud's user base will be primarily individual and commercial customers, at least at the beginning. Today, the value of Batch Changes increases exponentially with the size of a customer's codebase and team. Most customers with a smaller team and codebase do not face a big enough pain to invest the time and effort required to adopt Batch Changes in its present state. To be successfull on Sourcegraph Cloud we need to make the time to value of Batch Changes shorter and drive [Adoption through low-effort usage patterns](#adoption-through-low-effort-usage-patterns).
+- Improving [Discovery and onboarding](#discovery-and-onboarding)
 
 ### Automate common code changes
 
@@ -134,7 +136,6 @@ This quarter, we are taking on some work outside the scope of Batch Changes to s
 - Licensing and gating, see [FY22 Q3: Licensing and tier enforcement](https://docs.google.com/document/d/1o_glLsehadoQQa7bap7Ve5pW_KS30xDgcdq79Fcn4Ow/edit#heading=h.rrqx4mdnmg3q) (private).
 - Minimal [CVS support](https://github.com/orgs/sourcegraph/projects/119?card_filter_query=label%3Acvs), to unblock an important [customer](https://github.com/sourcegraph/customers/issues/5)
 
-### What we're not working on
 
 - **Windows support** ([#24849](https://github.com/sourcegraph/sourcegraph/issues/24849)): Reliably supporting creating batch changes locally in a windows environment is a very large amount of work, that is incompatible with our plan of delivering server side Batch Changes as fast as possible. Windows support has blocked one [prospect](https://github.com/sourcegraph/customers/issues/3) and slowed down adoption at a [customer](https://github.com/sourcegraph/customers/issues/2), and will likely be important in the Banking and Gaming industry. We plan to address these customers with server side Batch Changes. Server side Batch Changes will bypass the need to run the CLI locally, and instead allow customers to compute the batch changes on the Sourcegraph instance.
 
