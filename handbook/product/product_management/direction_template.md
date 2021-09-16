@@ -1,6 +1,6 @@
 # Vision, Strategy, and Roadmap Template
 
-> ℹ️  The following is a template for use on the pages of specific product & engineering teams, used to record and share the vision, strategy, and roadmap.<br>Copy to your team's page and complete accordingly. Other sources of truth (such as Q3 one-pagers) should have their content integrated here and then be marked as deprecated.
+> ℹ️  The following is a template for use on the pages of specific product & engineering teams, used to record and share the vision, strategy, and roadmap.<br>Copy to your team's page and complete accordingly. Other sources of truth (such as Q3 one-pagers) should have their content integrated here and then be marked as deprecated. Be sure to also replace instances of `ProductArea` with your actual product area name.
 
 > As you write this document, keep in mind that focusing on problems to solve more than lists of features tends to be a better way to approach communicating with customers, as it leaves room for learning between what you know now and what you deliver in the end. This is not to say you never talk about features, but especially as you get [further out in planning](https://medium.com/@jobv/the-nearsighted-roadmap-57fa57b5906a) the blend of features vs. problems to solve should move more towards the latter.
 
@@ -8,13 +8,13 @@
 
 ---
 
-# OurProductArea Direction
+# ProductArea Direction
 
-This page outlines the vision, strategy and goals of the MyProductArea team. You can use this section to describe what your scope is, and where your product is today.
+This page outlines the vision, strategy and goals of the ProductArea team. You can use this section to describe what your scope is, and where your product is today.
 
 Quicklinks:
 
-- [MyProductArea Backlog](https://about.sourcegraph.com/) <!-- Update links with your page -->
+- [ProductArea Backlog](https://about.sourcegraph.com/) <!-- Update links with your page -->
 - [Latest demo](https://about.sourcegraph.com/)
 - [Documentation](https://about.sourcegraph.com/)
 
