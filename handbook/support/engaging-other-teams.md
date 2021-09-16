@@ -71,7 +71,7 @@ Any questions about repository permissions should be routed to the Repository Ma
 
 **Keywords**: `authentication`, `authn`, `SSO`, `SAML`, `OAuth`, `auth proxy`, `OpenIDConnect`, `OIDC`
 
-Any questions about user authentication should be routed to ??????
+Any questions about user authentication should be routed to the Repository Management team.
 
 ### Code intelligence
 
