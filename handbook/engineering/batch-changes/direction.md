@@ -60,7 +60,7 @@ Batch Changes is succesfully adopted by very large companies, with 10,000s of re
 To drive enterprise success and stickiness, we need to:
 
 - deliver a great experience in creating changesets at enterprise scale (10,000s reposiories), resulting in more users onboarding batch changes.
-- allow users to find out where to create batch changes and and understand what to do to get changesets merged in batch changes with 1,000 of changesets. This will increase the number of changesets merged, our key success metric.
+- allow users to find out where to create batch changes and understand what to do to get changesets merged in batch changes with 1,000 of changesets. This will increase the number of changesets merged, our key success metric.
 
 ### Discovery and onboarding
 
