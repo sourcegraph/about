@@ -50,7 +50,7 @@ WIP
 - [How we structure compensation](compensation/index.md)
   - [How to create an offer](compensation/offers.md)
   - [Equity and stock options FAQ](compensation/equity-faq.md)
-- [Expenses we cover](spending-company-money.md) (aka "Spending company money")
+- [Expenses we cover](../ops/finance/spending-company-money.md) (aka "Spending company money")
 - [Benefits and perks we offer](benefits-and-perks.md)
 - [Guidelines for travel](travel.md)
 - [Paid time off and working hours](paid-time-off-and-working-hours.md)
@@ -78,9 +78,9 @@ WIP
 
 ### Business address and contact information
 
-**Address (for mail and corporate card billing):** 548 Market St PMB 20739, San Francisco, CA 94104-5401
+**Address (for mail):** 548 Market St PMB 20739, San Francisco, CA 94104-5401
 
-**Address (for contracts and paperwork):** Trellis Coworking: 981 Mission St, San Francisco, CA 94103
+**Address (for contracts, paperwork, and corporate card billing):** Trellis Coworking: 981 Mission St, San Francisco, CA 94103
 
 **Phone Number:** (650) 273-5591
 
