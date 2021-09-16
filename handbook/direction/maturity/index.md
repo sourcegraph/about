@@ -10,7 +10,6 @@ If you do not see content below, check you have JavaScript enabled then contact 
 - ◔: available in the product, but may not be ready for production use yet
 - ◑: usable for primary jobs to be done, but may lack depth
 - ●: a complete feature used extensively by our customers
-- ♥: a lovable, complete, and market leading experience
 
 <script>
   const harvey_balls = ["○", "◔", "◑", "●", "♥"]
