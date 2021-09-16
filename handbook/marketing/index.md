@@ -32,10 +32,10 @@ The table below breaks down the capabilities of each team within Marketing. Once
   - [What problems does Sourcegraph solve?](messaging.md#what-problems-does-sourcegraph-solve)
   - [Batch Changes positioning](batch_changes_positioning.md)
 - [Product marketing](product-marketing/index.md)
-  - [Marketing launch tiers](marketing_launch_tiers.md)
-  - [Product marketing hierarchy](product_marketing_hierarchy.md)
+  - [Marketing launch tiers](product-marketing/marketing_launch_tiers.md)
+  - [Product marketing hierarchy](product-marketing/product_marketing_hierarchy.md)
   - [Product marketing roadmap](https://docs.google.com/spreadsheets/d/1268CYG4arbGT6F0Eyy4e-EY5CQgtopcS9OdAenkjtzY/edit#gid=0)
-  - [Release post process](release_post_process.md)
+  - [Release post process](product-marketing/release_post_process.md)
   - [Customer marketing](customer_marketing.md)
 - [Content Marketing](content/index.md)
 
