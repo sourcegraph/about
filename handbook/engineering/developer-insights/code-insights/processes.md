@@ -23,7 +23,7 @@ Our current process is as follows:
 
 - We work in **2-week iterations**. Every iteration has a GitHub milestone, which is created at least one iteration in advance.
 
-- Incoming tickets (from team members or from other teams) are added to the [GitHub project](https://github.com/orgs/sourcegraph/projects/200/views/1) automatically when they are labelled <span class="badge" style="background: var(--bs-teal)">team/code-insights</span> and will be visible in the "All iterations" view under "No milestone". This represents our **backlog** of _unscheduled_ work.
+- Incoming tickets (from team members or from other teams) are added to the [GitHub project](https://github.com/orgs/sourcegraph/projects/200/views/1) automatically when they are labelled <span class="badge" style="background: var(--bs-teal)">team/code-insights</span> and will be visible in the ["All issues" view](https://github.com/orgs/sourcegraph/projects/200/views/7) under "No milestone". This represents our **backlog** of _unscheduled_ work.
 
 - **While an iteration is ongoing, we plan the next iteration**. This is a mostly asynchronous process.
 
