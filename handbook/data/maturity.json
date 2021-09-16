@@ -1,0 +1,14 @@
+{
+  "Code Graph": {
+    "Batch Changes": {
+      "maturity": 0,
+      "description": "This is one of our great features.",
+      "documentation_link": "https://www.google.com"
+    },
+    "Batch Changes 2": {
+      "maturity": 1,
+      "description": "This is one of our great features.",
+      "documentation_link": "https://www.google.com"
+    }
+  }
+}
