@@ -12,7 +12,9 @@ published: true
 
 ![Zoekt memory optimizations graphic](/blog/blog_Reduce_RAM-01.jpg)
 
-_Sourcegraph universal code search enables you to explore, navigate, and better understand all your code, faster._
+<p class="lead" class="font-italic">
+  Sourcegraph universal code search enables you to explore, navigate, and better understand all your code, faster.
+</p>
 
 Recently, we've been working to scale Sourcegraph cloud’s index to [1 million open source repositories and beyond](https://about.sourcegraph.com/blog/why-index-the-oss-universe/). Part of that effort has been reducing the RAM usage for the [Zoekt](https://github.com/google/zoekt) (pronounced "zooked") servers responsible for handling most of our code searches.
 
