@@ -64,11 +64,7 @@ To drive enterprise success and stickiness, we need to:
 
 ### Discovery and onboarding
 
-<<<<<<< HEAD
 As we go to market, our install base of customers with Batch Changes enabled is growing. Often, a few teams have adopted Batch Changes in a given company, because they were the ones feeling the need at the time. That team is frequently used to making large-scale code changes and building automation, so adopting Batch Changes is easier for them  and they later turn into evangelists inside the company. In order to go beyond that beachhead user base within a company, we want to make Batch Changes more discoverable, and self-serve for new users, both as a way to drive adoption within customers and increase value and stickiness, but also to prepare for the self-serve model of Batch Changes on Sourcegraph Cloud. We plan to:
-=======
-As we go to market, our install base of customers with Batch Changes enabled is growing. Often, a few teams have adopted Batch Changes in a given company, because they were the ones feeling the need at the time. That team is frequently used to making large-scale code changes and building automation, so adopting Batch Changes is easier for them and they later turn into evangelists inside the company. In order to go beyond that beachhead user base within a company, we want to make Batch Changes more discoverable, and self-serve for new users, both as a way to drive adoption within customers and increase value and stickiness, but also to prepare for the self-service model of Batch Changes on Sourcegraph Cloud. We plan to:
->>>>>>> 400c3e7fde4d18d2b93f1249ae8b922d0faed394
 
 - Make Batch Changes more discoverable within Sourcegraph.
 - Provide pathways from Search into Batch Changes.
