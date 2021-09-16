@@ -1,6 +1,6 @@
 ---
 title: 'Accessibility, observability, and sustainability: Dev Tool Time with Liz Fong-Jones'
-description: 'Liz Fong-Jones, Principle Developer Advocate at Honeycomb and long-time Site Reliability Engineer (SRE), shares how nano, Honeycomb, and ARM processors fit together into a moveable, minimal workflow for development.'
+description: 'Liz Fong-Jones, Principal Developer Advocate at Honeycomb and long-time Site Reliability Engineer (SRE), shares how nano, Honeycomb, and ARM processors fit together into a moveable, minimal workflow for development.'
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-09-16T10:00-07:00
