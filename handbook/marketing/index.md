@@ -36,7 +36,7 @@ The table below breaks down the capabilities of each team within Marketing. Once
   - [Product marketing hierarchy](product-marketing/product_marketing_hierarchy.md)
   - [Product marketing roadmap](https://docs.google.com/spreadsheets/d/1268CYG4arbGT6F0Eyy4e-EY5CQgtopcS9OdAenkjtzY/edit#gid=0)
   - [Release post process](product-marketing/release_post_process.md)
-  - [Customer marketing](customer_marketing.md)
+  - [Customer marketing](product-marketing/customer_marketing.md)
 - [Content Marketing](content/index.md)
 
   - [Editorial](content/editorial.md)
