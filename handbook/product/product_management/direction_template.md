@@ -94,11 +94,11 @@ What are high level themes, and why? What are the groupings of features/problems
 > - Adoption
 
 - Theme
-    - Theme extra detail
-- Theme 
-    - Theme extra detail
+  - Theme extra detail
 - Theme
-    - Theme extra detail
+  - Theme extra detail
+- Theme
+  - Theme extra detail
 
 ### What's next and why
 
