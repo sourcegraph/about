@@ -12,7 +12,7 @@ Batch Changes is a tool to find code that needs to be changed and change it at s
 
 #### 1 Year vision
 
-> Enterprise **developers** can easily create changesets across many repositories and codehosts, and track them to completion.
+> Enterprise developers can easily create changesets across many repositories and codehosts, and track them to completion.
 
 #### 3 Year vision
 
