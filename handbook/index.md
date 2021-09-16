@@ -7,6 +7,7 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Editing the handbook](editing.md)
 - [Handbook usage](usage.md)
 - [Handbook feedback](https://docs.google.com/forms/d/e/1FAIpQLSfb0yU9xmnvK2namuUzUEKbB9IqZlNQF2IWw0OpLsGvBiW2oQ/viewform?usp=sf_link)
+- [What's new in the handbook](https://sourcegraph.com/github.com/sourcegraph/about/-/commits) (or [this search](https://sourcegraph.com/search?q=context:global+repo:^github.com/sourcegraph/about%24+type:diff+rev:main) if you'd like to see diffs)
 
 ## [Company](company/index.md)
 
@@ -33,7 +34,7 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ### [Product](product/index.md)
 
-- [Direction (2020 product strategy)](direction/index.md)
+- [Direction](direction/index.md)
 - [Product](product/index.md)
   - [Product Management](product/product_management/index.md)
   - [Product Design](product/design/index.md)
@@ -61,14 +62,15 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ### [Marketing](marketing/index.md)
 
-- [Product Marketing](marketing/product_marketing.md)
+- [Product Marketing](marketing/product-marketing/index.md)
 - [Content Marketing](marketing/content/index.md)
   - [Editorial](marketing/content/editorial.md)
   - [Creating and editing blog posts](marketing/content/creating_blog_posts.md)
   - [Blog Hackathon](marketing/content/blog_hackathon.md)
-- [Demand Gen](marketing/demandgen.md)
+- [Demand Gen](marketing/demand-gen/index.md)
 - [Developer Education](marketing/education.md)
 - [Brand](marketing/brand/index.md)
+- [Community Relations](marketing/community_relations.md)
 
 ### [Sales](sales/index.md)
 

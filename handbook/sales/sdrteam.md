@@ -9,6 +9,7 @@ The SDR Team (TBA)
     - [Quin "Q" Keough](../company/team/index.md#quin-keough)
     - [Kevin "Quigs" Quiqley](../company/team/index.md#kevin-quigley-he-him)
     - [Zach Naidu](https://about.sourcegraph.com/handbook/company/team#zach-naidu)
+    - [Brannon Rouse](https://about.sourcegraph.com/handbook/company/team#brannon-rouse)
   - East Outbound SDRs
     - [Sam Cregg](../company/team/index.md#sam-cregg)
     - [Jenna Pierre](https://about.sourcegraph.com/handbook/company/team#jenna-pierre-she-her)
@@ -25,6 +26,7 @@ More SDRs coming soon...
 - [SDR Handoff Guide](#sdr-to-ae-handoff)
 - [Best Practices](#best-practices)
 - [Tech Stack](#tech-stack)
+- [Team Resources Folder](https://drive.google.com/drive/folders/1iTg6RUucNXqRH_R8XAFcZjBJrVsKlosY?usp=sharing)
 
 ## Inbound Workflow
 
@@ -64,6 +66,7 @@ AE leads initial call and dispositions the opportunity accordingly:
 ## SDR to AE Handoff
 
 See [CEP - Pre-Sale Process](https://docs.google.com/spreadsheets/d/1z4LPeKmqCiIi92EchKBZMR8kVIGeTnOwhukYZCX2A0M/edit#gid=0) for more info.
+See [SDR/AE Meeting ROE](https://docs.google.com/document/d/1KP1ao_UBZS80s4o0lOM3xs9ldJkl_iD_0cAS3CoXxqc/edit?usp=sharing) for detailed guide on expectations for the AE/SDR roles Pre/During/Post meeting.
 
 **Before the first call with the prospect:**
 
@@ -114,4 +117,5 @@ See [CEP - Pre-Sale Process](https://docs.google.com/spreadsheets/d/1z4LPeKmqCiI
 - Linkedin Sales Navigator - Prospecting Tool
 - Zoominfo - Data Intelligence Tool
 - LeadiQ - Data Intelligence Tool
-  -Yesware-Data Intelligence Tool
+- Postal.Io - B2B Gifting Tool [link](https://drive.google.com/file/d/1qxd23iXgOiiHjAEHFbN5Z8Ojp119Lg4O/view?usp=sharing)
+-

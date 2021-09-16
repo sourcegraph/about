@@ -88,18 +88,65 @@ For teammates with business-related travel requirements, trips will be fully pai
 - Customer Champion meetups
 - Director to Executive level meetups (no approval required)
 - Marketing conferences
-- Mandatory team trainings
 - Regional Sales Kickoff (Sales, Sales Ops, CE included)
 
-## 5. Professional development and educational travel
+## 5. Professional development stipend and educational travel
 
-Each teammate has $1,000 to spend on professional development, which could include attendance fees and travel to conferences, educational trainings, university classes, etc. as outlined on our [benefits page](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks#professional-development).
+Each teammate has $1,000 per fiscal year to spend on professional development opportunities that will enhance the knowledge, human skills, and thinking required to fulfill the purpose of your role and advance your career at Sourcegraph.
+
+_This professional development budget includes:_
+
+- **Reading materials:** Books, magazines, and subscriptions (digital or printed)
+
+- **Role specific:** License fees / continuing education specific to your role
+
+- **Educational experiences:**
+  - Courses, workshops, and/or exhibitions, both digital or in-person
+    _(including transportation)_
+  - Extended educational degrees, university classes, and certifications
+- **Conferences**: Attending conferences relevant to your role (the attendance and travel fees associated with them
+- **Leadership/professional coaching:** obtaining certified professional coaching outside of our organization or continuing to work with your Modern Health coach beyond our given 10 annual coaching credits
+
+**\*Best practice tip:** Request budget approval from your manager before booking any professional development opportunities.\*
+
+If any of the above meet the guidelines for usage and fall within your $1,000 allowance, you do not need approval from Finance + People Ops. If you have your eye on something that exceeds the allowance but is important to your role and/or team, please first raise the request with your manager.
+
+### Obtaining Manager Approval:
+
+This section will inform you how to obtain manager approval and get sign-off for your professional development opportunity.
+
+**Information Needed:**
+
+_The applicant is responsible for collecting the information below (where applicable), and each cost must be estimated in USD:_
+
+- [ ] Event name and link to the website:
+- [ ] Event Location (city, country):
+- [ ] Duration of stay (days, nights):
+
+- [ ] Is quarantine required for travel? If so, for how long:
+- [ ] Registration fee:
+- [ ] Airfare:
+- [ ] Ground transportation:
+- [ ] Hotel and lodging:
+- [ ] Meals:
+- [ ] Total cost:
+
+- [ ] Additional information (if applicable):
+
+### Approvals Process:
+
+1.  Applicant collects information as described above before any booking or reservation
+2.  Applicant sends their manager the above information via email with the title [Approval for Professional Development Stipend on _insert date_]
+3.  The manager works with the director to ensure that the budget is available
+4.  The manager confirms with the applicant if the application is approved or not
+
+For any anticipated spending over $1,000 USD, please follow the above steps and CC the travel@sourcegraph alias with a note included in the title as [Approval for Professional Development Stipend - Anticipated Spend over 1k].
 
 # Budget best practices and additional spending categories
 
 ## Hotel accomodations:
 
-We advise spending within reason for the location you are visiting, with a $300 USD per night maximum spend limit.
+We advise spending within reason for the location you are visiting, with a $300 USD per night maximum spend limit (including taxes, fees, and parking).
 
 > Spending over $300 USD per night requires additional approvals from  
 > Finance / People Ops.
@@ -117,6 +164,7 @@ We advise spending within reason for the location you are visiting, with a $300 
 - Book from travel providers that offer flexible cancellation policies and refundable rates, should your plans change at any time.
 - We strongly encourage obtaining travel insurance, especially in the Covid environment.
 - Sourcegraph will pay for flight to and from locations. Any changes made to your itinerary to extend your trip and change your flight itinerary will be out of pocket expenses.
+- At this time, we do not reimburse airport traveler programs, such as TSA-Pre, Global Entry, or Clear.
 - Gas and parking would be considered reimbursable within the applicable budget (Category 2,3,5) travel.
 - When driving a personal vehicle to a company-sponsored event (Category 1, 4), the Company will reimburse based on current IRS standard mileage rate of $0.56 per mile for 2021. This reimbursement per mile incorporates not only the cost of the fuel, but also maintenance and wear and tear of the vehicle. Upon expense submission, please provide a calculation of miles driven to and from the event.
 - Ride-shares (Uber, Lyft, etc.) are encouraged whenever possible instead of renting a car.
@@ -155,6 +203,8 @@ For business critical travel or travel required for your role, we offer a budget
 - For any additional questions, please reach out to Finance and People Ops.
 
 # How to get your trip approved
+
+[TripActions](TripActions.md)
 
 Before booking trips, you must obtain budget approval by sending an email to travel@sourcegraph.com with your manager or director cc’d. If booking a trip with a group (i.e. team meet-up), we recommend group approval requests to reduce the number of requests required for each team member.
 _Please include the following for individual or group travel requests:_

@@ -307,13 +307,16 @@ An en dash is slightly wider than a hyphen (-) but narrower than an em dash (—
 
 ### Money
 
-When writing about US currency, use the dollar sign ($) before the amount. Omit the cents. Do not insert a space between the dollar sign and the number.
+When writing about US currency, use the dollar sign ($) before the amount. Prefer to omit the cents. Use commas to separate thousands, and when unavoidable, a period to separate the cents. Do not insert a space between the dollar sign and the number.
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
 <li>$10</li>
+<li>$42</li>
+<li>$1,500</li>
+<li>$149.99</li>
 </ul>
 </div>
 <div class="item no">
@@ -321,6 +324,8 @@ When writing about US currency, use the dollar sign ($) before the amount. Omit 
 <ul>
 <li>$10.00</li>
 <li>$ 42</li>
+<li>$1500</li>
+<li>$149,99</li>
 </ul>
 </div>
 </div>
@@ -366,13 +371,20 @@ Use shorthand suffixes for shortening numbers in the thousands (`k`), millions (
 
 ### Telephone numbers
 
-Use dashes without spaces between numbers. Don’t use a country code.
+Use the country code, prefixed with `+`, without a space. Use spaces between sets of numbers for readability. The number of digits in each set of numbers may <a href="https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers" target="_blank">differ by country</a>.
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>123-456-7890</li>
+<li>+1 123 456 7890</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>123 456 870</li>
+<li>1-123-456-789</li>
 </ul>
 </div>
 </div>
@@ -482,13 +494,20 @@ Prefer the Oxford or serial comma when writing a list.
 
 ### Dashes and hyphens
 
-Use a hyphen (-) without spaces before and after to link words into a single phrase.
+Use a hyphen (-) without spaces before and after to link words into a single phrase. This is only necessary where the phrase appears in front of a noun to describe it (acting as an adjective).
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>First-time resources</li>
+<li>Our short-term plan is to...
+</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>In the short-term, we will work on...</li>
 </ul>
 </div>
 </div>

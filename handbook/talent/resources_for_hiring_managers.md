@@ -57,7 +57,7 @@ Please reference the [hiring plan](https://docs.google.com/spreadsheets/d/1Dpf6a
   - Agenda: 1. the Hiring Manager kicks off the call to give the candidate feedback and tell why we’re excited about them 2. the Recruiter then shares their screen to display the offer summary document. The Recruiter then covers our compensation philosophy, the compensation specifics, perks, travel (and benefits, if applicable), and equity 3. the Hiring Manager and Recruiter answers any questions and asks how the candidate is feeling about the opportunity.
   - Before ending the call, be sure to 1) determine a potential start date (all start dates should fall on a cohort Monday and any exceptions to that rule require approval from VP of Talent, Noemi, and Inés) and 2) schedule a follow up call to answer any questions.
 - Following the offer call, Recruiter sends the offer summary to the candidate in an email.
-- To send an official offer, the Recruiter:
+- Once the candidate has verbally accepted, we will send an official offer, the Recruiter:
   - Updates the offer approval with the accurate start date
   - Tags the VP Talent and the Recruitment Operations Specialist in the notes section: "@Carly @Trevor please send this [US/Non-US] offer letter"
 - The official offer is sent to the candidate via Docusign.
@@ -67,12 +67,10 @@ Please reference the [hiring plan](https://docs.google.com/spreadsheets/d/1Dpf6a
 - After the candidate signs the offer, the Recruiter sends a welcome email to the candidate and Cc's the Hiring Manager.
 - The Hiring Manager posts an announcement of the candidate's acceptance in the Slack #Hiring channel.
 - The Recruiter takes the following steps:
-  - Declines all other candidates.
-  - Confirms that the start date and hired date are correct, ensuring accurate time-to-fill data.
-  - Marks the candidate as "Hired" in Greenhouse.
-  - Closes the job (if applicable).
-  - Sends a hire report to Inés, Noemi, VP of Talent, and Hiring Manager.
-  - Exports the candidate to Bamboo.
+  - 1 Declines all other candidates.
+  - 2 Confirms that the start date and hired date are correct, ensuring accurate time-to-fill data.
+  - 3 Confirms the candidate source information is accurate, ensuring accurate source data.
+  - 4 Click the "Mark Candidate as Hired" button found in the "Offer Details" section of the candidate's profile: 1. Select Close Reason 2. Click either "yes" or "no" in the "Keep Job Open" section" 3. Select "Yes" for "Make Candidate Private" 4. Selet "Yes" for "Export to BambooHR" 5. Email a summary of this candidate to: Inés, Noemi, VP of Talent, and Hiring Manager
 - The People Operations team then works with the candidate to onboard them and get them set up for their first day.
 
 ## Using external recruiting agencies

@@ -110,7 +110,7 @@ Here are some tips and things you should keep in mind when working at Sourcegrap
 - **Share things while they’re still in work-in-progress**. Aim for progress, not perfection. We all want to get things done first and then share, but so much feedback can be collected and comments can be made while you are offline. You can make notes on your work stating something is going to change or you are waiting for X to go on with a certain section to notify reviewers of the state of your work.
 - **Never assume.** It is best to include more context than to give room to misinterpretation.
 - **Share**. Don’t make others hunt for information.
-- **Communicate your work preferences.** We all work differently and have preferred ways of communication. Let your teammates know, this will help everyone be more empathetic and conscious about collaboration.: Create a rudimentary README that clarifies how you work. [The support team has some great examples](https://about.sourcegraph.com/handbook/support/support-bios).
+- **Communicate your work preferences.** We all work differently and have preferred ways of communication. Let your teammates know, this will help everyone be more empathetic and conscious about collaboration. Create a rudimentary README that clarifies how you work. [The support team has some great examples](https://about.sourcegraph.com/handbook/support/support-bios).
 - **Summarize**. If your documentation ends up being too long, consider adding a summary, in the beginning, to help people consider if this is what they are looking for.
 - **Consider which tool to use**. Think about what you are working on and which is the best tool to discuss it, iterate and communicate.
 - **Know when _not_ to meet**. Ask yourself: is this meeting necessary or could we work on it asynchronously?
@@ -127,7 +127,7 @@ Each team should also have a section to explain how they do x, y and z asyncly. 
 ## How to choose sync vs async?
 
 <center>
-<object role="document" width="1133" height="1889" title="One pager: Async versus sync communication" data="https://storage.googleapis.com/sourcegraph-assets/handbook/async-communication/one_pager_async_vs_sync_communication.svg" style="width: 80%"></object>
+<object role="document" width="1133" height="1889" title="One pager: Async versus sync communication" data="onepager-async.svg" style="width: 80%"></object>
 </center>
 
 Synchronous meetings are best for bonding and feeling connected to your teammates (even beyond your immediate team), sensitive discussions that are more likely to be emotionally sensitive, and fast decision making when speed necessarily outweighs the benefit of having marginal time/thoughtfulness. Our teammates generally simply enjoy synchronous meetings because they get to spend some quality time with the people they work with.
