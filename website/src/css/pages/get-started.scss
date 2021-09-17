@@ -1,0 +1,62 @@
+.get-started-page {
+    textarea {
+        font-family: $font-family-monospace;
+        font-size: 0.8rem;
+        width: 100%;
+        outline: none;
+        resize: none;
+        background-color: $light-11;
+        min-height: 150px;
+        padding: 1.5rem;
+    }
+    &__installtext {
+        position: relative;
+        font-family: $font-family-monospace;
+        font-size: 0.8rem;
+        width: 100%;
+        outline: none;
+        resize: none;
+        background-color: $light-11;
+        min-height: 150px;
+        padding: 1.5rem;
+    }
+    &__copytext {
+        position: absolute;
+        right: 0;
+        margin: 2px;
+    }
+    &__local {
+        border-right: 1px solid #dee2e6 !important;
+        padding-right: 1.5rem;
+    }
+    &__search {
+        padding-left: 1.5rem;
+    }
+    &__action {
+        background-color: $light-11;
+        border: 1px solid #dee2e6 !important;
+        padding: 0.75rem;
+        padding: 1.5rem;
+        min-height: 150px;
+    }
+    @media (max-width: 768px) {
+        &__local {
+            border-right: none;
+            padding-right: 15px;
+        }
+        &__search {
+            border-top: 1px solid #dee2e6 !important;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            padding-left: 1rem;
+        }
+        textarea {
+            padding: 0.75rem;
+        }
+    }
+}
+.customer-logos-section__header {
+    color: $dark-9 !important;
+    font-size: 1.5rem;
+    font-weight: 700 !important;
+}
