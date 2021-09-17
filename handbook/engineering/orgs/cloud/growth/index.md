@@ -1,6 +1,6 @@
 # Growth
 
-Currently the growth team is working on the API Doc workstream (as noted below).  As we hire out this team we will be working on other growth opportunities as well
+Currently the growth team is working on the API Doc workstream (as noted below). As we hire out this team we will be working on other growth opportunities as well
 
 ## API docs workstream
 
