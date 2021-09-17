@@ -37,7 +37,8 @@ Let’s start with asking the following questions and building a chart that trac
 * Add another “where” filter by clicking “+ where” and select `is_sourcegraph_teammate = none`.
 
 We now have a view that represents the counts of daily views of the sign-up page over the last month (events), by users who do not have a cloud account and are not teammates (segmentation).
-
+![image](https://user-images.githubusercontent.com/539268/133801585-df624c95-a3ec-456d-b815-c1707a569bfc.png)
+_A basic event segmentation chart with user segmentation_ 
 ### Extend the timeline
 
 Change the chart to weekly and extend the timeline to 12w with the button group on the top right of the chart. The chart now provides some data on how sign-up page views have grown over the last few months and compares the last week to the current week.
