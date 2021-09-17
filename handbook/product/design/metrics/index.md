@@ -31,6 +31,8 @@ Looker provides access to all event log data across both on-premise installation
 
 Google Analytics provides session-based data that is useful for reviewing how users interact with the cloud product. Useful information which can be derived from Google Analytics includes frequency, technology (browser, mobile device, etc.), conversion against goals and behavior (content, flows, and events). Data is only available for users who have accepted the Sourcegraph cookies.
 
+Google Analytics access can be provided by [#it-tech-ops](https://sourcegraph.slack.com/archives/C01CSS3TC75). It can be accessed at [analytics.google.com](https://analytics.google.com)
+
 ## Defining events
 
 Sourcegraph events are typically defined by product designers in design files. See the [defining metrics](./defining-metrics.md) page for more information.
