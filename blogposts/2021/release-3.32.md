@@ -25,6 +25,6 @@ In the left sidebar of your search results, you can now see both branches and ta
 We’re now caching search results so that when you click into a file from the search results page and then navigate back to the results, the search results will no longer be reordered.
 
 ## Compute API endpoint
-For Code Insights and API users, we’ve exposed a new compute endpoint that allows you to extract and aggregate data based on a regex. For example, you can search for react as a dependency in `package.json` and group your results by version number.
+For Code Insights and API users, we’ve exposed a new compute endpoint that allows you to extract and aggregate data based on a regex. For example, you can search for React as a dependency in `package.json` and group your results by version number.
 
 
