@@ -39,6 +39,7 @@
 /handbook/people-ops/hiring/reference_check_questions /handbook/talent/hiring/reference_check_questions 308
 /handbook/people-ops/invoices /handbook/ops/finances/invoices 308
 /handbook/people-ops/expenses /handbook/ops/finances/expenses 308
+/handbook/people-ops/spending-company-money /handbook/ops/finance/spending-company-money 308
 
 /handbook/product/delivery_plans /handbook/product/product_management/delivery_plans 308
 /handbook/product/deprecation_process /handbook/product/product_management/deprecation_process 308
@@ -58,3 +59,24 @@
 /handbook/ops/finance/arr handbook/ops/finance/ap 308
 
 /handbook/sales/license_keys /handbook/ce/license_keys 308
+
+# FY22Q3 reorg
+/handbook/engineering/batch-changes /handbook/engineering/code-graph/batch-changes 308
+/handbook/engineering/batch-changes/ce-onboarding /handbook/engineering/code-graph/batch-changes/ce-onboarding 308
+/handbook/engineering/batch-changes/direction /handbook/engineering/code-graph/batch-changes/direction 308
+/handbook/engineering/batch-changes/metrics /handbook/engineering/code-graph/batch-changes/metrics 308
+/handbook/engineering/batch-changes/onboarding /handbook/engineering/code-graph/batch-changes/onboarding 308
+/handbook/engineering/batch-changes/supporting-batch-changes /handbook/engineering/code-graph/batch-changes/supporting-batch-changes 308
+/handbook/engineering/code-intelligence /handbook/engineering/code-graph/code-intelligence 308
+/handbook/engineering/code-intelligence/code-walkthrough /handbook/engineering/code-graph/code-intelligence/code-walkthrough 308
+/handbook/engineering/code-intelligence/goals /handbook/engineering/code-graph/code-intelligence/goals 308
+/handbook/engineering/developer-insights/code-insights /handbook/engineering/code-graph/code-insights 308
+/handbook/engineering/developer-insights/code-insights/goals /handbook/engineering/code-graph/code-insights/goals 308
+/handbook/engineering/developer-insights/code-insights/processes /handbook/engineering/code-graph/code-insights/processes 308
+/handbook/engineering/search /handbook/engineering/code-graph/search 308
+/handbook/engineering/search/core /handbook/engineering/code-graph/search/core 308
+/handbook/engineering/search/goals /handbook/engineering/code-graph/search/goals 308
+/handbook/engineering/search/goals_completed /handbook/engineering/code-graph/search/goals_completed 308
+/handbook/engineering/search/iteration_log /handbook/engineering/code-graph/search/iteration_log 308
+/handbook/engineering/search/perf /handbook/engineering/code-graph/search/perf 308
+/handbook/engineering/search/product /handbook/engineering/code-graph/search/product 308
