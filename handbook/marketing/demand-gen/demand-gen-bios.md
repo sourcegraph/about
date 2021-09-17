@@ -4,9 +4,9 @@ Our README expands on our profile in [the company team directory](https://about.
 
 - Erica README
 - Greg README
-- Jake README
+- Jake [README](./jake-readme.md)
 - Rebecca README
-- Sarah README
+- Sarah [README](./sarah-readme.md)
 
 ---
 
