@@ -79,8 +79,3 @@ We maintain a list of accounts (customers, prospects and leads)  in the [account
 
 All issues linked to this account will automatically appear in the account issue.
 
-### Finding all requests from a given customer
-
-Visit the company's page on HubSpot, copy the unique identifier at the end of the URL, and search in GitHub. All issues filed on behalf of the company will appear.
-
-> NOTE: Pro tip: use the [HubSpot Sourcegraph extension](https://sourcegraph.com/extensions/sourcegraph/hubspot) for autocompleting names and adding customer names to your view!
