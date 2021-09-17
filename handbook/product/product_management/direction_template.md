@@ -45,7 +45,7 @@ Identify what key principles, insights, and decisions are important to the strat
 Describe the target by which we prioritize:
 
 - Market or audience
-- Personas
+- [Personas](../../marketing/personas.md)
 - Jobs or Use Cases
 - Industries
 - What matters to us when we prioritize products and features
