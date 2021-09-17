@@ -54,9 +54,10 @@ Contact #it-tech-ops if you need assistance setting this up.
 
 Yes, we will be enabling TOTP and YubiKeys in addition to Okta Verify as our three MFA options for Okta. Once we have successfully configured them you will see them listed when you set up 2FA. You can set up Okta Veify (or use 1Password's one-time passcode with Okta Verify) first and then once enable switch to TOTP or YubiKeys when they are ready.
 
-For YubiKey set up: 
-1. Follow [these instructions](https://support.yubico.com/hc/en-us/articles/360016614960-Programming-YubiKeys-for-Okta-Adaptive-Multi-Factor-Authentication)  
-2. Send #it-tech-ops the generated CSV 
+For YubiKey set up:
+
+1. Follow [these instructions](https://support.yubico.com/hc/en-us/articles/360016614960-Programming-YubiKeys-for-Okta-Adaptive-Multi-Factor-Authentication)
+2. Send #it-tech-ops the generated CSV
 
 ## I forgot my password/my login doesn't work, what do I do?
 
