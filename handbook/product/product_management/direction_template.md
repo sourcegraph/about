@@ -22,7 +22,7 @@ Quicklinks:
 
 ### Mission
 
-What is the team's reason for existing? What is the fundamental value they aim to provide?
+What is the team's reason for existing? What is the fundamental value they aim to provide? Who are your key customers/stakeholders and why, and are there any customers/stakeholders that you're explicitly choosing not to address that people might have expected you to?
 
 ### Vision
 
