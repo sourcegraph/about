@@ -24,7 +24,7 @@ Engineering managers lead, grow, and develop teams of software engineers.
 - Model, teach, and apply [our values](../company/values.md) and [our guiding engineering principles](../index.md#guiding-principles).
 - Ensure the team has clear incremental goals that are documented and are always up-to-date (example: [PM – EM partnership responsibilities](../product/roles/product_manager_engineering_manager_responsibilities.md)).
 - Regularly communicate the team's progress toward their goals as well as changes in team goals to appropriate stakeholders (examples: presenting a slide at [company meeting](../communication/company_meeting.md), sending [status updates](engineering-management.md#status-updates))
-- Support and coach teammates to grow in their careers and fulfill their responsibilities (examples: [1-1s](../leadership/1-1.md), [career levels](./career-development/framework.md), [retrospectives](../retrospectives/index.md), [review cycles](../people-ops/review-cycles/index.md), [compensation](../people-ops/compensation/index.md))
+- Support and coach teammates to grow in their careers and fulfill their responsibilities (examples: [1-1s](../leadership/1-1.md), [career levels](./career-development/framework.md), [retrospectives](../retrospectives/index.md), [Impact review cycles](../people-ops/impact-reviews.md), [compensation](../people-ops/compensation/index.md))
 - Participate in our [talent review](career-development/talent-review-process.md) sessions.
 - Grow the team in a sustainable way so that the team can accomplish more over time (examples: define open roles, maintain a hiring plan over time, source candidates with help from our talent org, define efficient and effective interview process, make hiring decisions).
 
@@ -54,4 +54,7 @@ The VP of Engineering ensures that we have an effective engineering organization
 
 Switching between an individual contributor role and a people management role (or vice versa) is a role change (not a promotion or a demotion). Each role requires a different set of skills. Generally we expect people managers to have experience doing the role of their direct reports. If you wish to change roles, start a conversation with your manager and they will help come up with a personalized plan that makes sense for you and the team's situation.
 
-Refer to the section on [Temporary Management Positions](engineering-management.md#temporary-management-positions) for more information.
+Refer to the section on [transitioning from individual contributor to engineering manager](engineering-management.md##transitioning-from-individual-contributor-to-engineering-manager) for more information.
+
+For switching to a role in another engineering team or other department, see the company-wide [Applying for a new role in a new team
+](../people-ops/switching-teams.md) page.

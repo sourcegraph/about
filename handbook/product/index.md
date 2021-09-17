@@ -14,7 +14,7 @@ You can reach us at the #product channel or @product-team on Slack. If you have 
 
 ## Roadmap
 
-Within the product organization, individual product engineering teams set their own goals and roadmaps, and each have a direction page with all the details of what they are working on next and why. There is also an [(currently internal only) presentation](https://docs.google.com/presentation/d/1o3R8WUIhzzRz0x5laTwVcizOzVWrMBe5MCAz74H45Ss/edit#slide=id.gd8d1ce5e98_0_164) with highlights of planned features from all teams.
+Within the product organization, individual product engineering teams set their own goals and roadmaps aligned to the [company OKRs](../company/goals/2022_q3.md), and each have a direction page with all the details of what they are working on next and why. There is also an [(currently internal only) presentation](https://docs.google.com/presentation/d/1o3R8WUIhzzRz0x5laTwVcizOzVWrMBe5MCAz74H45Ss/edit#slide=id.gd8d1ce5e98_0_164) with highlights of planned features from all teams.
 
 - Code Graph
   - [Search core and Search product](../engineering/search/goals.md)
@@ -66,13 +66,13 @@ We are missing a single source of truth for what is currently on the roadmap. Ou
 - Owner: Serina
 - [Working Document](https://docs.google.com/document/d/1dsJ_0aXyPTE-vUDR9fIwVYEq1UBYN-rtH75qtI91pdg/edit#)
 
-### Defining our known product scale
+### Defining our product maturity
 
-Customer Engineering needs is looking to better undrestand the known boundaries of our product to effectively interact with prospetive customers. As a product team we are pulling together information of existing customer scale. This information combined with our product knowledge will help us proactively identify potential scale challenges.
+Customer Engineering is looking to better undrestand the known boundaries of our product to effectively interact with prospetive customers. As a product team we are pulling together information of existing customer scale. This information combined with our product knowledge will help us proactively set expectations.
 
--Owner: Christina
-
+- Owner: Christina
 - [Working Document](https://docs.google.com/spreadsheets/d/101JXaau2EPvi322AOFmNeoeuXSJqlruD8gBBsHl1fmI/edit#gid=0)
+- [Pull Request](https://github.com/sourcegraph/about/pull/4617)
 
 ### Other initiatives
 
