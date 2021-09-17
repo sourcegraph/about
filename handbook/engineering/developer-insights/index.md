@@ -6,7 +6,6 @@
 
 ## Mission
 
-
 Bring Sourcegraph’s insights into your codebase ([Code Intel](../code-graph/code-intelligence/index.md), [Code Insights](../code-graph/code-insights/index.md), and [API docs](api-docs/index.md)), [extended](extensibility/index.md) with other dev tools’ information, to where developers interact with code ([sourcegraph.com](https://sourcegraph.com/search), code hosts, and IDEs)
 
 ## Teams
@@ -20,7 +19,9 @@ Bring Sourcegraph’s insights into your codebase ([Code Intel](../code-graph/co
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
 
 - [Jean du Plessis](../../company/team/index.md#jean-du-plessis-he-him) ([Director of Engineering](../roles.md#director-of-engineering))
+
   - [Frontend platform](../developer-insights/frontend-platform/index.md)
+
     - [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
     - [Patrick Dubroy](../../company/team/index.md#tom-ross-he-him) ([Engineering Manager](../roles.md#engineering-manager) and acting PM)
       - [Tom Ross](../../company/team/index.md#tom-ross-he-him)

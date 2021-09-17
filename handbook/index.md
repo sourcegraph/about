@@ -41,7 +41,6 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ### [Engineering](engineering/index.md)
 
-
 <!-- When updating the engineering team list below, please also update engineering/eng_org.md -->
 
 - [Engineering](./engineering/index.md)
