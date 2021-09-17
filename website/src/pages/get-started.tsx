@@ -21,7 +21,7 @@ export default class GetStarted1 extends React.Component<any, any> {
             >
                 <GetStarted />
                 <div className="col-lg-12 pt-5">
-                    <CustomerLogosSectionAnimated showButton={false} className="pt-5 pb-6 mb-2"/>
+                    <CustomerLogosSectionAnimated showButton={false} className="pt-5 pb-6 mb-2" />
                 </div>
             </Layout>
         )
