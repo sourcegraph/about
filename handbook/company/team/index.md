@@ -862,9 +862,9 @@ To add yourself to this page:
 ## Cassie Melani (she/her)
 
 - Teammate Success Manager
-- Seattle, Washington, USA 🇺🇸
+- Seattle, Washington, USA 🇺🇸🌲
 - [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/), [README](https://about.sourcegraph.com/handbook/people-ops/cassie-bio)
-- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (_professionally known as @sterlingandlola_). In her spare time, Cassie enjoys really difficult spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to not kill her new garden.
+- Cassie was born and raised in sunny southern California and moved up to the Bay Area for college, where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy and beautiful Pacific Northwest with her husband, Will. Together, they have two mischievous cats, Lola and Sterling, and a dashingly handsome puppy named Oliver. In her spare time, Cassie enjoys challenging spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how not to kill her new garden.
 
 ## Rebecca Rissinger (she/her)
 
@@ -1472,3 +1472,11 @@ To add yourself to this page:
 - Github: [CristinaBirkel](https://github.com/CristinaBirkel)
 - [cristina.birkel@sourcegraph.com](mailto:cristina.birkel@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cristina-birkel)
 - During her career in software Cristina has tried on a number of hats, but has always found her way back to writing code. She's passionate about becoming the best version of herself, and loves reading books that help her grow. She eats a mostly paleo diet, has lost the ability to wear shoes that aren't zero-drop, and swears by Kari Pearce Power Abs. Her longest standing hobby is making music, with video games coming in at a close second. She lives in Cleveland, OH with her Canadian wife, a talkative manx cat and an anxious german shepherd.
+
+## Sara Lee (she/her)
+
+- Product Designer
+- Chapel Hill, NC, United States 🇺🇸
+- Github: [jjinnii](https://github.com/jjinnii)
+- [sara.lee@sourcegraph.com](mailto:sara.lee@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sara-yoojin-lee/)
+- Sara is a Product Designer, aspiring artist 🎨, and simulation game enthusiast 🎮. She resides in Chicago, IL and Chapel Hill, NC for equal parts of the year. She is passionate about using design as a medium to make the complex more accessible to people. She is currently working on learning Javascript and drinking less cups of coffee ☕️.
