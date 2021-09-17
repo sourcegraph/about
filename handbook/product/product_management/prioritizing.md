@@ -73,9 +73,11 @@ Important questions to ask while re-prioritizing and proposing solutions for cri
 - Can we do it "right"? How long would that take?
 - Are we already planning on solving this? How long until we work on this? Is that timeline acceptable?
 
-## Customer requests
+## How to reference customer names in public tickets
 
-We maintain a list of accounts (customers, prospects and leads)  in the [accounts](https://github.com/sourcegraph/accounts) private GitHub repository. To reference an account in a public GitHub issue, just link to the issue that represents that account. The link will look like `https://github.com/sourcegraph/accounts/issues/1`, and will be private to anyone outside the Sourcegraph team on GitHub.
+Accounts (customer, prospect and lead) names are private, and should not be included in public GitHub tickets.
+
+To reference an account in a public GitHub issue, you can use the [accounts](https://github.com/sourcegraph/accounts) private GitHub repository. It contains a list of issues that each represent an account. Search for the issue that represents your account, then copy its issue link. The link will look like `https://github.com/sourcegraph/accounts/issues/1`, and will be private to anyone outside the Sourcegraph team on GitHub.
 
 All issues linked to this account will automatically appear in the account issue.
 
