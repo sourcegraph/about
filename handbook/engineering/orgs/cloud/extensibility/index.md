@@ -6,11 +6,11 @@ The extensibility team owns our code host and third-party integrations (includin
 
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
 
-- [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../../product/roles/index.md#product-manager)) is the acting PM for this team until we can hire a dedicated PM for it. Once that happens, Joel will focus entirely on code insights.
-- [Sara Lee](../../../company/team/index.md#sara-lee-she-her) ([Product Designer](../../../product/roles/index.md#product-designer))
-- [Murat Sutunc](../../../company/team/index.md#murat-sutunc-he-him) ([Engineering Manager](../../roles.md#engineering-manager)) {#extensibility-eng}
-  - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
-  - [Erzhan Torokulov](../../../company/team/index.md#erzhan-torokulov-he-him)
+- [Joel Kwartler](../../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../../../product/roles/index.md#product-manager)) is the acting PM for this team until we can hire a dedicated PM for it. Once that happens, Joel will focus entirely on code insights.
+- [Sara Lee](../../../../company/team/index.md#sara-lee-she-her) ([Product Designer](../../../../product/roles/index.md#product-designer))
+- [Murat Sutunc](../../../../company/team/index.md#murat-sutunc-he-him) ([Engineering Manager](../../../roles.md#engineering-manager)) {#extensibility-eng}
+  - [TJ Kandala](../../../../company/team/index.md#tharuntej-kandala-he-him)
+  - [Erzhan Torokulov](../../../../company/team/index.md#erzhan-torokulov-he-him)
   - FY22 full-stack engineer hire
   - FY22 full-stack engineer hire
 
@@ -145,7 +145,7 @@ Engineers will often need reviews from teammates from other functions. For examp
 
 ### Feature freeze
 
-We do not merge major features in the **last 3 days before the [release branch is cut](../../releases.md)**. We make sure that our changes keep `main` [continuously releasable](../../../continuous_releasability.md), but leave buffer time in the form of a [feature freeze](https://en.wikipedia.org/wiki/Freeze_(software_engineering\)) so that we can address any issues found on Sourcegraph Cloud.
+We do not merge major features in the **last 3 days before the [release branch is cut](../../../releases.md)**. We make sure that our changes keep `main` [continuously releasable](../../../continuous_releasability.md), but leave buffer time in the form of a [feature freeze](https://en.wikipedia.org/wiki/Freeze_(software_engineering\)) so that we can address any issues found on Sourcegraph Cloud.
 
 ### Extension audits
 

@@ -45,17 +45,17 @@ The handbook is a living document and we expect every teammate to propose improv
 
 - [Engineering](engineering/index.md)
   - [Batch Changes](engineering/batch-changes/index.md)
-  - [Cloud](engineering/cloud/index.md)
+  - [SaaS](engineering/orgs/cloud/saas/index.md)
   - [Core application](engineering/core-application/index.md)
   - [Code intelligence](engineering/code-intelligence/index.md)
   - [Distribution](engineering/distribution/index.md)
   - [Search](engineering/search/index.md)
-  - [Security](engineering/security/index.md)
+  - [Security](engineering/orgs/cloud/security/index.md)
+  - [Extensibility](engineering/orgs/cloud/extensibility/index.md)
+  - [API docs](engineering/orgs/cloud/growth/index.md)
   - [Developer Insights](engineering/developer-insights/index.md)
     - [Code insights](engineering/developer-insights/code-insights/index.md)
-    - [Extensibility](engineering/developer-insights/extensibility/index.md)
     - [Frontend platform](engineering/developer-insights/frontend-platform/index.md)
-    - [API docs](engineering/developer-insights/api-docs/index.md)
 
 ### [Customer Support](support/index.md)
 

@@ -13,8 +13,8 @@ This workstream focuses on providing API docs for code repositories that are inf
 
 ## Members
 
-- [Bill Creager](../../../company/team/index.md#bill-creager) (Acting [Engineering Manager](../../../roles.md#engineering-manager)) {#api-docs-eng}
-  - [Stephen Gutekanst](../../../company/team/index.md#stephen-gutekanst)
+- [Bill Creager](../../../../company/team/index.md#bill-creager) (Acting [Engineering Manager](../../../roles.md#engineering-manager)) {#api-docs-eng}
+  - [Stephen Gutekanst](../../../../company/team/index.md#stephen-gutekanst)
   - FQ3 full stack engineer
   - FQ3 full stack engineer
   - FQ3 full stack engineer

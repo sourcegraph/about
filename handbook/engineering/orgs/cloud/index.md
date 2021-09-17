@@ -8,8 +8,8 @@
 
 ## Teams
 
-- [SaaS](../../handbook/engineering/orgs/cloud/saas/index.md)
-- [Security](../../handbook/engineering/orgs/cloud/security/index.md)
-- [Growth](../../handbook/engineering/orgs/cloud/growth/index.md)
-- [Extensibility](../../handbook/engineering/orgs/cloud/extensibility/index.md)
-- [DevOps](../../handbook/engineering/orgs/cloud/devops/index.md)
+- [SaaS](./saas/index.md)
+- [Security](./security/index.md)
+- [Growth](./growth/index.md)
+- [Extensibility](./extensibility/index.md)
+- [DevOps](./devops/index.md)
