@@ -1,6 +1,6 @@
 # Business Operations & Strategy
 
-The Business Operations & Strategy (BizOps) team is made up of Business Operations, Data Operations, and Analytics. This page contains information that is relevant to the whole company, and each of the links below will take you to subteam-specific information. There are plans to split up the Business Operations and Data and Analytics teams, which will happen sometime after the [Director of Data and Analytics](https://boards.greenhouse.io/sourcegraph91/jobs/4084968004) position is filled. At this point, everything in this section applies to all functional areas. 
+The Business Operations & Strategy (BizOps) team is made up of Business Operations, Data Operations, and Analytics. This page contains information that is relevant to the whole company, and each of the links below will take you to subteam-specific information. There are plans to split up the Business Operations and Data and Analytics teams, which will happen sometime after the [Director of Data and Analytics](https://boards.greenhouse.io/sourcegraph91/jobs/4084968004) position is filled. At this point, everything in this section applies to all functional areas.
 
 ## Functional areas
 
@@ -78,5 +78,4 @@ We use [GitHub issues in the Sourcegraph analytics repository](https://github.co
 - **#business-ops** to interact with the Business Operations team (e.g. questions you know are specifically for us)
 - **#business-ops-internal** for internal BizOps communication
 - **#analytics** for anything related to analytics; not just the Business Operations team (e.g the impact on a shift from HubSpot to Marketo, sharing a deliverable that has cross-functional impact, or a question related to data you don’t know where to ask). This channel has previously been a catch-all for Business Operations, and we'll be pushing you all towards business-ops for those topics
-- **#analytics-review** for help with self-service and WIP data projects (questions about the data, requests for peer review). Although we do expect to be involved in this quite a bit, it’s not just meant to get feedback from Business Operations. We will also be using this channel to have our work peer reviewed and collaborate with other folks from different parts of the business! Anybody comfortable enough with data can be a peer reviewer or answer questions 
-
+- **#analytics-review** for help with self-service and WIP data projects (questions about the data, requests for peer review). Although we do expect to be involved in this quite a bit, it’s not just meant to get feedback from Business Operations. We will also be using this channel to have our work peer reviewed and collaborate with other folks from different parts of the business! Anybody comfortable enough with data can be a peer reviewer or answer questions
