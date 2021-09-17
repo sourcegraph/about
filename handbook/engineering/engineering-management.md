@@ -26,17 +26,9 @@ Please include the following content in your update:
 - Follow the [3Ps](https://en.wikipedia.org/wiki/Progress,_plans,_problems) approach to reporting on the _Progress_, ~~Problems~~ _Challenges_, and _Plans_ against the team's goals.
 - Managers should favor a prose style communication over a changelog style update.
 
-### Company meeting demos
+## Demos
 
-We're experimenting with showing short (<1m) demo videos (max 1 per week) during company meeting. If your team ships something that would make a great demo, send an update to engineering-team-status@ to let us know. Requirements:
-
-- 1 minute or less
-- Recorded
-- Voiceover that explains the problem that the feature solves and which specific customers had that problem
-- Just show a demo of the actual product as if you were showing a friend, you don't need to have slides or anything
-- Example:
-  - https://groups.google.com/a/sourcegraph.com/g/engineering-team-status/c/70Dr1h7Ixe4
-  - https://sourcegraph.slack.com/archives/CHEKCRWKV/p1615424478168600
+Encourage your engineers to participate in [demo days](../product/demo_day) to show off the impact they are having at Sourcegraph.
 
 ## Book recommendations
 
@@ -47,7 +39,7 @@ Here are some books that multiple people on the team have read and recommend. If
 - [Radical Candor](https://www.radicalcandor.com/the-book/) - How to be a great leader by caring personally and challenging directly.
 - [An Elegant Puzzle](https://lethain.com/elegant-puzzle/) - A field manual on how to do engineering management. Reads like a well structured markdown file.
 - [The Five Dysfunctions of a Team](https://www.amazon.com/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756) - A model of how to think about what makes a highly effective team paired with a fictional story that illustrates the model.
-- [The Leader’s Guide to Unconscious Bias](https://www.amazon.com/Leaders-Guide-Unconscious-Bias-High-Performing/dp/1982144319) ([facilitated small group discussions](../support/support-values-enablement.md#part-2-deep-dive-on-be-welcoming-and-inclusive).
+- [The Leader’s Guide to Unconscious Bias](https://www.amazon.com/Leaders-Guide-Unconscious-Bias-High-Performing/dp/1982144319) ([facilitated small group discussions](../support/support-values-enablement.md#part-2-deep-dive-on-be-welcoming-and-inclusive)).
 
 ## Promotion and compensation increase requests
 
