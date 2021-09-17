@@ -75,6 +75,8 @@ Important questions to ask while re-prioritizing and proposing solutions for cri
 
 ## Customer requests
 
-We maintain a list of accounts (customers, prospects and leads) in the [accounts](https://github.com/sourcegraph/accounts) private GitHub repository. To reference an account in a public GitHub issue, just link to the issue that represents that account. The link will look like `https://github.com/sourcegraph/accounts/issues/1`, and will be private to anyone outside the Sourcegraph team on GitHub.
+We maintain a list of accounts (customers, prospects and leads)  in the [accounts](https://github.com/sourcegraph/accounts) private GitHub repository. To reference an account in a public GitHub issue, just link to the issue that represents that account. The link will look like `https://github.com/sourcegraph/accounts/issues/1`, and will be private to anyone outside the Sourcegraph team on GitHub.
 
 All issues linked to this account will automatically appear in the account issue.
+
+<img width="1187" alt="account_issue" src="https://user-images.githubusercontent.com/25070988/133835706-8dbb1497-e94a-4e63-acab-40be36b2fdde.png">
