@@ -66,6 +66,9 @@ To create a funnel from our existing chart, simply change the chart type at the 
 
 The first bar represents all views of the sign-up page. The second bar represents all users who initiated signup.
 
+![image](https://user-images.githubusercontent.com/539268/133802143-688b8068-9558-4ee5-b30c-b8b90709d0ba.png)
+_A basic funnel chart displays conversions through multiple events_
+
 [View the example](https://analytics.amplitude.com/sourcegraph/chart/5ad7ri3?source=redirect%3A+chart+saved)
 
 ## Exploration via segments
