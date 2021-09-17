@@ -110,7 +110,7 @@ Our kanplan methodology gives us the ability to refine the backlog while continu
 
 ### Tracking Issues
 
-The team makes use of [tracking issues](../../tracking_issues.md) for tracking progress on the implementation of new features. The teammates should ensure that a tracking issue is created when starting work on features that are expected to take longer than a few days to deliver.
+The team makes use of [tracking issues](../../../tracking_issues.md) for tracking progress on the implementation of new features. The teammates should ensure that a tracking issue is created when starting work on features that are expected to take longer than a few days to deliver.
 
 ### Product Feedback
 
@@ -145,7 +145,7 @@ Engineers will often need reviews from teammates from other functions. For examp
 
 ### Feature freeze
 
-We do not merge major features in the **last 3 days before the [release branch is cut](../../releases.md)**. We make sure that our changes keep `main` [continuously releasable](../../continuous_releasability.md), but leave buffer time in the form of a [feature freeze](https://en.wikipedia.org/wiki/Freeze_(software_engineering\)) so that we can address any issues found on Sourcegraph Cloud.
+We do not merge major features in the **last 3 days before the [release branch is cut](../../releases.md)**. We make sure that our changes keep `main` [continuously releasable](../../../continuous_releasability.md), but leave buffer time in the form of a [feature freeze](https://en.wikipedia.org/wiki/Freeze_(software_engineering\)) so that we can address any issues found on Sourcegraph Cloud.
 
 ### Extension audits
 
