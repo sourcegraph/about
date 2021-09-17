@@ -6,7 +6,7 @@ TBA. More can be found in our [Cloud Vision](./cloud/index.md#vision)
 
 ## Areas of Ownership
 
-The Cloud DevOps team is responsible for the infrastructure used to host Sourcegraph.com.  This includes but is not limited to dashboard and observability, uptime and reliabliity, and managing our cloud provider resources.  This team works closely with the other teams in the Cloud org to ensure sourcegraph.com is available and functional for our users
+The Cloud DevOps team is responsible for the infrastructure used to host Sourcegraph.com. This includes but is not limited to dashboard and observability, uptime and reliabliity, and managing our cloud provider resources. This team works closely with the other teams in the Cloud org to ensure sourcegraph.com is available and functional for our users
 
 ## Members
 
