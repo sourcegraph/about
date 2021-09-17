@@ -75,9 +75,9 @@ Important questions to ask while re-prioritizing and proposing solutions for cri
 
 ## Customer requests
 
-Customer issues should reference the link to the company in HubSpot. **Note that the URL should never be hidden in a markdown link (such as `[company name](https://app.hubspot.com/contacts/XXXXXXX/company/XXXXXXX)`) as GitHub issue search doesn't search the full markdown, only the rendered text.**
+We maintain a list of accounts (customers, prospects and leads)  in the [accounts](https://github.com/sourcegraph/accounts) private GitHub repository. To reference an account in a public GitHub issue, just link to the issue that represents that account. The link will look like `https://github.com/sourcegraph/accounts/issues/1`, and will be private to anyone outside the Sourcegraph team on GitHub.
 
-Please make sure the URL looks like `https://app.hubspot.com/contacts/XXXXXXX/**company**/XXXXXXX`. If the link ends in `/**deal**/XXXXXXX` or `/**ticket**/XXXXXXX` searches for the company's id won't return the comprehensive set of issues.
+All issues linked to this account will automatically appear in the account issue.
 
 ### Finding all requests from a given customer
 
