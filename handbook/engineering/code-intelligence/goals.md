@@ -1,6 +1,5 @@
 # Code Intelligence goals and roadmap
 
-
 #### Quick links
 
 - [Planning board](https://github.com/orgs/sourcegraph/projects/100)
