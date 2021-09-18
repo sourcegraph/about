@@ -6,7 +6,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
         <h2 className="display-3 font-weight-bold mb-3">Works with your code, infrastructure, and tools</h2>
         <div className="row">
             <div className="col-lg-6">
-                <h3 className="h5 font-weight-bold pt-3">All your repositories + 1M open source (and counting)</h3>
+                <h3 className="h5 font-weight-bold pt-3">All your repositories + 2M open source (and counting)</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">GitHub</code>
@@ -60,7 +60,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">Ridiculously big monorepos</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">1,000,000+ open source repositories</code>
+                        <code className="border rounded px-1">2,000,000+ open source repositories</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Any combo of these</code>
