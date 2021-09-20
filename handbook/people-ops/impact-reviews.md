@@ -2,7 +2,10 @@
 
 At Sourcegraph, we aim for ongoing, real-time career conversations so you feel empowered to own your growth and development. Our bi-annual 360 Impact reviews, done through Lattice, are only one part of this cycle and should act as a summary of the various feedback conversations you've had in-between.
 
-Video: [Understanding 360 Impact review cycles](https://drive.google.com/file/d/1Xyq26Pf-2XelHajUVzB4WH_hpnU4ZwNo/view?usp=sharing)
+<video controls crossorigin>
+  <source src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/handbook/impact-reviews/understanding_360_impact_reviews.mp4" />
+  <track default kind="captions" label="Captions" src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/handbook/impact-reviews/understanding_360_impact_reviews.vtt" />
+</video>
 
 ## Why call them Impact reviews?
 
@@ -66,7 +69,7 @@ _Best practice tip: We recognize that to make an impact, you must first develop 
 
 These cycles will run concurrently with your [Onboarding Feedback Milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-feedback-milestones) on the following cadence:
 
-[insert diagram]
+<object role="image" data="./impact_review_infographic.svg" width="960" height="540" aria-label="Infographic describing cadence of Impact review cycle from start date to cycle launches"></object>
 
 ### Selecting a peer reviewer
 
@@ -122,7 +125,10 @@ You can also use [the Informal Impact reviews template](https://docs.google.com/
 
 Log into Lattice using your Sourcegraph Google authenticator. You will be prompted to write different types of reviews through qualitative and quantitative questions on your dashboard.
 
-Video: [Demo of a manager and teammate going through the review cycle in Lattice](https://drive.google.com/file/d/1iEh5YExCbZ_dxpyq4kPyce4i6U8r5AKi/view?usp=sharing)
+<video controls crossorigin>
+  <source src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/handbook/impact-reviews/lattice_demo.mp4" />
+  <track default kind="captions" label="Captions" src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/handbook/impact-reviews/lattice_demo.vtt" />
+</video>
 
 ### Writing your reviews using the SBI framework
 
