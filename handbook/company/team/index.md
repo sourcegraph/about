@@ -706,14 +706,6 @@ To add yourself to this page:
 - [stompy@sourcegraph.com](mailto:stompy@sourcegraph.com), [@stompy_amare](https://twitter.com/stompy-amare), [stompymwendwa.com](https://stompymwendwa.com), [LinkedIn](https://www.linkedin.com/in/stompy-mwendwa), [pronounce my name 🔊](https://www.name-coach.com/stompy-mwendwa)
 - Stompy is from the Pride of Africa and previously worked in customer success roles prior to joining Sourcegraph. He is a CS graduate and fell in with computers playing around with MS-DOS in the mid-90s. Stompy loves helping people achieve their goals and is a staunch believer of the Swahili proverb: "Kusaidia ni moyo wala si utajiri" - Helping is of the heart, not of the pocket. When he's not working, he loves hopping onto motorcycles and going on adventures, watching/playing basketball(Go Lakers!), playing video games, listening to hip-hop and going out to eat.
 
-## Nishil Patel (he/him)
-
-- Enterprise Account Executive
-- Brooklyn, NY, USA 🇺🇸
-- GitHub: [nishil-patel1](https://github.com/nishil-patel1)
-- [nishil@sourcegraph.com](mailto:nishil@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/nishilp)
-- Nishil (Nish) is a UK & US dual-citizen whom lives in Brooklyn's Clinton Hill neighborhood. Nish joins Sourcegraph from Sift, where he spent 4 years protecting digital businesses from fraud by building machine learning models. When not working, Nish can be found ranking NYC pizza joints, supporting Arsenal or competing with friends on Peloton. (Add me and let's ride! @ButtermilkCzar)
-
 ## Sam Cregg
 
 - Sales Development Rep
@@ -862,9 +854,9 @@ To add yourself to this page:
 ## Cassie Melani (she/her)
 
 - Teammate Success Manager
-- Seattle, Washington, USA 🇺🇸
+- Seattle, Washington, USA 🇺🇸🌲
 - [cassie@sourcegraph.com](mailto:cassie@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/cassandralira/), [README](https://about.sourcegraph.com/handbook/people-ops/cassie-bio)
-- Cassie was born and raised in sunny Irvine, California and moved up to Northern California for college where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy (yet delightful) Pacific Northwest and now lives in 🌲 Seattle with her husband Will. Together, they have two mischevious fur babies, Lola and Sterling (_professionally known as @sterlingandlola_). In her spare time, Cassie enjoys really difficult spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how to not kill her new garden.
+- Cassie was born and raised in sunny southern California and moved up to the Bay Area for college, where she found her love of microclimates. Experiencing four seasons in a day kept her happy in San Francisco for exactly five years, but then she decided she wanted gloomier weather. She recently moved up to the rainy and beautiful Pacific Northwest with her husband, Will. Together, they have two mischievous cats, Lola and Sterling, and a dashingly handsome puppy named Oliver. In her spare time, Cassie enjoys challenging spin classes, traveling to tropical locations, cooking Molly Baz recipes, and learning how not to kill her new garden.
 
 ## Rebecca Rissinger (she/her)
 
@@ -1069,14 +1061,6 @@ To add yourself to this page:
 - [jason.harris@sourcegraph.com](mailto:jason.harris@sourcegraph.com)
 - Jason is a musician and software engineer living in Los Angeles. He is married to a nurse practitioner named Ashley. He has two tabby cats, Pierre and Dmitri. They actively plan his demise. However, he suspects they'll never pull the trigger because they secretly love him, though they would never admit it.
 
-## Jenna Pierre (She/Her)
-
-- Sales Development Representative
-- Citizen of the world, currently based in Peru 🇵🇪
-- GitHub: [jennapierre](https://github.com/jennapierre), [LinkedIn](https://www.linkedin.com/in/jenna-pierre/)
-- [jenna@sourcegraph.com](mailto:jenna@sourcegraph.com)
-- Jenna is a wandering, global English teacher-turned Sales professional. She does not have any pets of her own because of her nomadic lifestyle, but she frequently wins the love of the foreign kitties she encounters with tuna and belly rubs. In her free time, Jenna enjoys reading on the beach, trying new recipes, and salsa dancing with whoever is close by.
-
 ## Michael Bali (He/Him)
 
 - Customer Support Engineer
@@ -1138,7 +1122,7 @@ To add yourself to this page:
 - Raleigh, NC USA 🇺🇸
 - GitHub: [billCaplan](https://github.com/billCaplan)
 - [bill.caplan@sourcegraph.com](mailto:bill.caplan@sourcegraph.com), [Linkedin](https://www.linkedin.com/in/caplanbill/)
-- Bill lives in Raleigh, NC with his wife Kristen and their son Grayson. After growing up in Pittsburgh and spending time at Ohio State (Go Bucks!), he spend seven years in San Francisco, working to help customers better understand and utilize the software that they buy. He recently moved back to the East Coast, now calling Raleigh home. In his free time he enjoys watching or playing sports (football, racing, hockey) and trying to become a backyard pizza chef.
+- Bill lives in Raleigh, NC with his wife Kristen and their son Grayson. After growing up in Pittsburgh and spending time at Ohio State (Go Bucks!), he spent seven years in San Francisco, working to help customers better understand and utilize the software that they buy. He recently moved back to the East Coast, now calling Raleigh home. In his free time he enjoys watching or playing sports (football, racing, hockey) and trying to become a backyard pizza chef.
 
 ## Marija Petrovic (She/Her)
 

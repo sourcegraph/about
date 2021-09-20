@@ -8,13 +8,13 @@ The search core team owns all parts of Sourcegraph that map an interpreted searc
 
 ## Team members
 
-- We're hiring a [Product Manager](../../product/roles/index.md#product-manager) ([apply here](https://boards.greenhouse.io/sourcegraph91/jobs/4013257004)) for this role. [Christina Forney](../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
-- [Rob Rhyne](../../company/team/index.md#rob-rhyne) ([Product Designer](../../product/roles/index.md#product-designer))
-- FQ3 [Engineering Manager](../roles.md#engineering-manager), [Loïc Guychard](../../company/team/index.md#loïc-guychard) acting manager until then. {#search-core-eng}
-  - [Keegan Carruthers-Smith](../../company/team/index.md#keegan-carruthers-smith)
-  - [Stefan Hengl](../../company/team/index.md#stefan-hengl-he-him)
-  - [Ryan Hitchman](../../company/team/index.md#ryan-hitchman)
-  - [Tomás Senart](../../company/team/index.md#tomás-senart)
+- We're hiring a [Product Manager](../../../product/roles/index.md#product-manager) ([apply here](https://boards.greenhouse.io/sourcegraph91/jobs/4013257004)) for this role. [Christina Forney](../../../company/team/index.md#christina-forney-she-her) is involved in the meantime.
+- [Rob Rhyne](../../../company/team/index.md#rob-rhyne) ([Product Designer](../../../product/roles/index.md#product-designer))
+- FQ3 [Engineering Manager](../../roles.md#engineering-manager), [Loïc Guychard](../../../company/team/index.md#loïc-guychard) acting manager until then. {#search-core-eng}
+  - [Keegan Carruthers-Smith](../../../company/team/index.md#keegan-carruthers-smith)
+  - [Stefan Hengl](../../../company/team/index.md#stefan-hengl-he-him)
+  - [Ryan Hitchman](../../../company/team/index.md#ryan-hitchman)
+  - [Tomás Senart](../../../company/team/index.md#tomás-senart)
 
 ## Contact
 
@@ -46,6 +46,11 @@ The search core team plans its work continuously (we don't do sprints/iterations
 
 We use a [backlog project board](https://github.com/orgs/sourcegraph/projects/204/views/3?layout=board) to capture work items we've identified.
 
+**Retrospective**
+
+The first Monday of every month we hold an informal retrospective. This is a time for us to look back at the last month and discuss progress and process.
+
 ## Misc
 
-[iteration log (deprecated)](./iteration_log.md)
+- [lab journal (private)](https://github.com/sourcegraph/search-scratch/blob/master/2021/journal.org)
+- [iteration log (deprecated)](./iteration_log.md)
