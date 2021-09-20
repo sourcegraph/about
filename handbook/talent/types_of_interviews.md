@@ -399,6 +399,29 @@ The [CE](https://about.sourcegraph.com/handbook/ce) organization is pre- and pos
   - How would you approach bridging these awareness activities with contact acquisition/product sign-ups?
   - NOTE: Please don't go overboard on preparation, plans, or detail. A Google Doc outline is how we'd do this kind of thing internally, so that's best. Doesn't have to be pretty. If you prefer slides, that's fine. This will be a casual back and forth conversation; not a formal presentation.
 
+- Program Manager, Demand Gen Campaigns working session
+  - Duration: 60-minutes.
+  - Part 1: Creativity & Collaboration (20 Minutes)
+      - Coming out of our conversations we’ve taken an action item to better understand your creative campaign planning and activation methodology. 
+      - Problem: We need a meeting maker campaign to support sales pipeline goals. Instead of using traditional activation methods, we want this to be a product-led initiative.
+        - Task: Create 3 product-led meeting maker campaigns to drive meetings to Sales
+        - Audience: Developer Team leads, leaders, and senior leadership
+    - Please include:
+      - Your create ideas and what inspired them
+      - Include your rough timeline for concept-to-execution
+      - What channels will you use to activate?
+      - Who will you collaborate with?
+      - Do you have any out-of-the-box ways to get these in-market?
+   - Part 2: Data-Driven (20 Minutes)
+      - Your meeting maker program is in-market and showing early signs that it’s going to be successful. The team is asking for data to understand how we’re measuring and planning to expand if it is successful.
+        - Choose one of your meeting makers and consider the following:
+        - What would a successful campaign look like?
+        - When will it be time to change strategies?
+        - How would you monitor and share results?
+        - Which metrics are most important and why?
+        - What are some key deliverables you’d expect to see?
+  - Part 3: Q&A
+
 ## People Operations
 
 - Coming soon
