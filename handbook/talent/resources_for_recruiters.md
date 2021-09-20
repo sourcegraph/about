@@ -11,46 +11,46 @@
 
 ## Intake Call Guidelines
 
-Hiring managers are required to have an intake meeting with their respective Recruiter before beginning the candidate search. In an ideal world, the intake meeting should be scheduled after the Hiring Manager has completed the [intake form](https://docs.google.com/forms/d/e/1FAIpQLSdYwWlI_4bKKSkhWq4FrLNE2MPEhRtiq91GtEC6RuFAt-mgfA/viewform) and the Recruiter has reviewed this information. 
+Hiring managers are required to have an intake meeting with their respective Recruiter before beginning the candidate search. In an ideal world, the intake meeting should be scheduled after the Hiring Manager has completed the [intake form](https://docs.google.com/forms/d/e/1FAIpQLSdYwWlI_4bKKSkhWq4FrLNE2MPEhRtiq91GtEC6RuFAt-mgfA/viewform) and the Recruiter has reviewed this information.
 
 The intake meeting is intended for the Hiring Manager and the Recruiter to get on the same page about job requirements, the ideal candidate, and the proposed interview process.
 
-**Step 1:** Please use the below checklist to ensure you cover the necessary topics during the intake meeting.  You can also review the [intake form response](https://docs.google.com/spreadsheets/d/1Dpf6aDw1ESJRYroJz6-ZtaACJxwjEu4my_xeYuB3a7E/edit#gid=2123710308) on our Open Job Report. 
+**Step 1:** Please use the below checklist to ensure you cover the necessary topics during the intake meeting. You can also review the [intake form response](https://docs.google.com/spreadsheets/d/1Dpf6aDw1ESJRYroJz6-ZtaACJxwjEu4my_xeYuB3a7E/edit#gid=2123710308) on our Open Job Report.
 
-* Job title
-* Reason for opening
-* Job level
-* Number of openings
-* Time zone/location restrictions
-* Ideal start date
-* Ideal candidate profile
-* 3 LinkedIn examples
-* Alternative titles
-* Required software/tools
-* Ideal companies
-* Screening questions
-* Selling points
-* Any additional information
-* Job description
+- Job title
+- Reason for opening
+- Job level
+- Number of openings
+- Time zone/location restrictions
+- Ideal start date
+- Ideal candidate profile
+- 3 LinkedIn examples
+- Alternative titles
+- Required software/tools
+- Ideal companies
+- Screening questions
+- Selling points
+- Any additional information
+- Job description
 
-**Step 2:** Please review the [interview plan](https://docs.google.com/spreadsheets/d/1pMG_K3pf_pP_AIvy8jjOKc-h6htDJ5QkvEMD3prAQ5Y/edit#gid=1808593536) and ensure all interview sections are completed and consistent with our [Types of Interviews](https://about.sourcegraph.com/handbook/talent/types_of_interviews). 
+**Step 2:** Please review the [interview plan](https://docs.google.com/spreadsheets/d/1pMG_K3pf_pP_AIvy8jjOKc-h6htDJ5QkvEMD3prAQ5Y/edit#gid=1808593536) and ensure all interview sections are completed and consistent with our [Types of Interviews](https://about.sourcegraph.com/handbook/talent/types_of_interviews).
 
 In addition to reviewing these topics during the intake meeting, the Recruiter and the Hiring Manager will select the [Values Interview](https://about.sourcegraph.com/handbook/talent/hiring/evaluating_values) Panel. Using [this document](https://docs.google.com/spreadsheets/d/1NUDEjzud_GxocjKkd__m0hTf21tN3OIgOwtk_OjhV20/edit?ts=60e4c3bd#gid=0), the Recruiter and the Hiring Manager select two people who are highlighted in green (indicating that they have been here for 3 months or longer). When choosing two people to be on the Values Interview, please keep in mind the following:
 
-* must have been here for 3+ months
-* must be two people from different departments
-* please keep diversity in mind when selecting teams
+- must have been here for 3+ months
+- must be two people from different departments
+- please keep diversity in mind when selecting teams
 
 Once the Recruiter and the Hiring Manager have identified the interviewers, the Recruiter will ensure they are trained & ready to go!
 
 ## **Slack Kick-Off Process**
 
-Once the Recruiter has conducted an intake call and the interview plan is complete, the Recruiter officially kicks off the role in Slack. 
+Once the Recruiter has conducted an intake call and the interview plan is complete, the Recruiter officially kicks off the role in Slack.
 
 1. Create a new channel slack channel named: “team-hiring_position_recruiter-name”
-    1. Example: “ops-hiring_handbook-product-manager_recruiter-kelsey”
+   1. Example: “ops-hiring_handbook-product-manager_recruiter-kelsey”
 2. Invite the entire interview panel plus VP Talent & Recruiting Coordinator to the channel
-3. Tag VP Talent  to make the channel private
+3. Tag VP Talent to make the channel private
 4. Once private, send kick off note using the below template:
 
 Hi team! We are excited to kick off our [hyperlink job description] opening and I appreciate all of you participating in the interview process. I thought it would be helpful to create a Slack channel to stay aligned as we begin interviewing candidates!
@@ -59,33 +59,33 @@ As a next step, please:
 
 1. Review the below interview process and qualifications
 2. Please share this post to social media to help drive applicants to the role
-3. Please review these pages in the handbook: 
-    1. [The interview process](https://about.sourcegraph.com/handbook/talent/interview_process)
-    2. [Resources for hiring managers](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers)
-    3. [Feedback definitions]https://about.sourcegraph.com/handbook/talent/interview_process#overall-recommendation
+3. Please review these pages in the handbook:
+   1. [The interview process](https://about.sourcegraph.com/handbook/talent/interview_process)
+   2. [Resources for hiring managers](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers)
+   3. [Feedback definitions]https://about.sourcegraph.com/handbook/talent/interview_process#overall-recommendation
 
 Interview process / hiring team:
 
-* [30m] [Recruiter screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#sts=Recruiter%20screen): ___________
-* [30-60m] [Hiring Manager screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#hiring-manager-screen): ___________
-* Assignment, if applicable: ___________
-* In-depth Interview Stage:
-    * [1h] [Resume Deep Dive](https://about.sourcegraph.com/handbook/talent/types_of_interviews#resume-deep-dive): ___________
-    * [30m] Assignment review/working session, if applicable: ___________
-    * [60-120m] Technical interview, if applicable: ___________
-    * [30-60m] [Cross-functional Team collaboration interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#cross-team-collaboration-interview): ___________
-    * [30m] [Peer interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#peer-interview): ___________
-* [30m] [Values interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#values-interview): ___________
-* [15-30m] [Leadership Interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#leadership-interview): ___________
+- [30m] [Recruiter screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#sts=Recruiter%20screen): ****\_\_\_****
+- [30-60m] [Hiring Manager screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#hiring-manager-screen): ****\_\_\_****
+- Assignment, if applicable: ****\_\_\_****
+- In-depth Interview Stage:
+  - [1h] [Resume Deep Dive](https://about.sourcegraph.com/handbook/talent/types_of_interviews#resume-deep-dive): ****\_\_\_****
+  - [30m] Assignment review/working session, if applicable: ****\_\_\_****
+  - [60-120m] Technical interview, if applicable: ****\_\_\_****
+  - [30-60m] [Cross-functional Team collaboration interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#cross-team-collaboration-interview): ****\_\_\_****
+  - [30m] [Peer interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#peer-interview): ****\_\_\_****
+- [30m] [Values interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#values-interview): ****\_\_\_****
+- [15-30m] [Leadership Interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#leadership-interview): ****\_\_\_****
 
-At a high level, here is an overview of what we’re looking for in this hire.  @hiringmanager, please add any additional insight that will be helpful for the hiring team to keep in mind as they interview candidates!
+At a high level, here is an overview of what we’re looking for in this hire. @hiringmanager, please add any additional insight that will be helpful for the hiring team to keep in mind as they interview candidates!
 
-* Why is this position open: 
-* The ideal candidate:
-* Level:
-* Deal breakers:
-* Selling points:
-* Target start date: 
+- Why is this position open:
+- The ideal candidate:
+- Level:
+- Deal breakers:
+- Selling points:
+- Target start date:
 
 ## Extending an offer
 
