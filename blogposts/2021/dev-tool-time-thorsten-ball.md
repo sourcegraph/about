@@ -1,5 +1,5 @@
 ---
-title: "\"I basically want my whole computing environment to be programmable\": Dev Tool Time with Thorsten Ball"
+title: '"I basically want my whole computing environment to be programmable": Dev Tool Time with Thorsten Ball'
 description: 'Thorsten Ball, software engineer at Sourcegraph, shares how he uses tmux as a window manager for the terminal, and goes to bat for Vim.'
 author: Rebecca Dodd
 authorUrl: https://about.sourcegraph.com/handbook/company/team#rebecca-dodd-she-her

@@ -1,5 +1,5 @@
 ---
-title: "\"I'm happy to represent the minimalist setup lifestyle\": Dev Tool Time with Leah Culver"
+title: '"I''m happy to represent the minimalist setup lifestyle": Dev Tool Time with Leah Culver'
 description: 'Leah Culver, iOS Developer at Twitter, joined us to share some developer life hacks, her minimalist, no-config philosophy for tools, and her secret for reaching inbox zero.'
 author: Vanesa Ortiz
 authorUrl: https://twitter.com/vanesacodes

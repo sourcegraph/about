@@ -1,5 +1,5 @@
 ---
-title: "\"I don't like things that write code for me\": Dev Tool Time with Mitchell Hashimoto"
+title: '"I don''t like things that write code for me": Dev Tool Time with Mitchell Hashimoto'
 description: 'Mitchell Hashimoto, co-founder, CTO, and now individual contributor at HashiCorp, shares how reproducible environments with NixOS and an iPad fit into his developer workflow, and his sentiments about IDEs.'
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
