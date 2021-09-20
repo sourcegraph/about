@@ -8,21 +8,21 @@ As of 2021-09-13 [we reorganized the product and engineering teams](https://docs
 
 - [Nick Snyder](index.md#nick-snyder-he-him), [VP Engineering](../../handbook/engineering/roles.md#vp-engineering) (reports to [Beyang Liu](index.md#beyang-liu), CTO)
   - [Code graph](./code-graph/index.md)
-      - [Search core](./code-graph/search/core.md)
-      - [Search product](./code-graph/search/product.md)
-      - [Code intelligence](./code-graph/code-intelligence/index.md)
-      - [Batch Changes](./code-graph/batch-changes/index.md)
-      - [Code insights](./code-graph/code-insights/index.md)
+    - [Search core](./code-graph/search/core.md)
+    - [Search product](./code-graph/search/product.md)
+    - [Code intelligence](./code-graph/code-intelligence/index.md)
+    - [Batch Changes](./code-graph/batch-changes/index.md)
+    - [Code insights](./code-graph/code-insights/index.md)
   - Enablement
-      - [Repo management](./enablement/repo-management/index.md)
-      - [Delivery](./enablement/delivery/index.md)
-      - [Dev experience](./enablement/dev-experience/index.md)
-      - [Frontend platform](./enablement/frontend-platform/index.md)
+    - [Repo management](./enablement/repo-management/index.md)
+    - [Delivery](./enablement/delivery/index.md)
+    - [Dev experience](./enablement/dev-experience/index.md)
+    - [Frontend platform](./enablement/frontend-platform/index.md)
   - Cloud
-      - Growth (includes [API docs](./developer-insights/api-docs/index.md))
-      - [Security](./security/index.md)
-      - DevOps
-      - Cloud SaaS
+    - Growth (includes [API docs](./developer-insights/api-docs/index.md))
+    - [Security](./security/index.md)
+    - DevOps
+    - Cloud SaaS
 
 [VP Eng team docs](vpe/index.md).
 
