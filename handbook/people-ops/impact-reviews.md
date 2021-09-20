@@ -3,6 +3,7 @@
 At Sourcegraph, we aim for ongoing, real-time career conversations so you feel empowered to own your growth and development. Our bi-annual 360 Impact reviews, done through Lattice, are only one part of this cycle and should act as a summary of the various feedback conversations you've had in-between.
 
 Video: [Understanding 360 Impact review cycles](https://drive.google.com/file/d/1Xyq26Pf-2XelHajUVzB4WH_hpnU4ZwNo/view?usp=sharing)
+<iframe src="https://drive.google.com/file/d/1Xyq26Pf-2XelHajUVzB4WH_hpnU4ZwNo/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ## Why call them Impact reviews?
 
@@ -123,6 +124,8 @@ You can also use [the Informal Impact reviews template](https://docs.google.com/
 Log into Lattice using your Sourcegraph Google authenticator. You will be prompted to write different types of reviews through qualitative and quantitative questions on your dashboard.
 
 Video: [Demo of a manager and teammate going through the review cycle in Lattice](https://drive.google.com/file/d/1iEh5YExCbZ_dxpyq4kPyce4i6U8r5AKi/view?usp=sharing)
+
+<iframe src="https://drive.google.com/file/d/1iEh5YExCbZ_dxpyq4kPyce4i6U8r5AKi/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ### Writing your reviews using the SBI framework
 
