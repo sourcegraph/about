@@ -3,6 +3,7 @@
 At Sourcegraph, we aim for ongoing, real-time career conversations so you feel empowered to own your growth and development. Our bi-annual 360 Impact reviews, done through Lattice, are only one part of this cycle and should act as a summary of the various feedback conversations you've had in-between.
 
 Video: [Understanding 360 Impact review cycles](https://drive.google.com/file/d/1Xyq26Pf-2XelHajUVzB4WH_hpnU4ZwNo/view?usp=sharing)
+
 <iframe src="https://drive.google.com/file/d/1Xyq26Pf-2XelHajUVzB4WH_hpnU4ZwNo/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ## Why call them Impact reviews?
