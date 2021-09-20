@@ -43,7 +43,6 @@ The handbook is a living document and we expect every teammate to propose improv
 
 <!-- When updating the engineering team list below, please also update engineering/eng_org.md -->
 
-
 - [Engineering](./engineering/index.md)
   - [Code graph](./engineering/code-graph/index.md)
     - [Search core](./engineering/code-graph/search/core.md)
@@ -61,7 +60,6 @@ The handbook is a living document and we expect every teammate to propose improv
     - [Security](./engineering/cloud/security/index.md)
     - [DevOps](./engineering/cloud/devops/index.md)
     - [SaaS](./engineering/cloud/saas/index.md)
-
 
 ### [Customer Support](support/index.md)
 
