@@ -16,30 +16,29 @@ TODO
 The org is lead by [Serina Clark](../../company/team/index.md#serina-clark-her-she-hers) ([Director of Product](../../product/roles/index.md#director-of-product)) and [Jean du Plessis](../../company/team/index.md#jean-du-plessis-he-him) ([Director of Engineering](../roles.md#director-of-engineering))
 
 - [Repo Management](repo-management/index.md)
-    - [Jean du Plessis](../../company/team/index.md#jean-du-plessis-he-him) (acting [Engineering Manager](../roles.md#engineering-manager))
-    - [Dan Mckeen](../../company/team/index.md#dan-mckeen-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
-    - [Alan Harris](../../company/team/index.md#alan-harris)
-    - [Ryan Slade](../../company/team/index.md#ryan-slade-he-him)
-    - [Indradhanush Gupta](../../company/team/index.md#indradhanush-gupta-he-him)
+  - [Jean du Plessis](../../company/team/index.md#jean-du-plessis-he-him) (acting [Engineering Manager](../roles.md#engineering-manager))
+  - [Dan Mckeen](../../company/team/index.md#dan-mckeen-he-him) ([Product Manager](../../product/roles/index.md#product-manager))
+  - [Alan Harris](../../company/team/index.md#alan-harris)
+  - [Ryan Slade](../../company/team/index.md#ryan-slade-he-him)
+  - [Indradhanush Gupta](../../company/team/index.md#indradhanush-gupta-he-him)
 - [Delivery](delivery/index.md)
-    - [Jean du Plessis](../../company/team/index.md#jean-du-plessis-he-him) (acting [Engineering Manager](../roles.md#engineering-manager))
-    - [Dan Mckeen](../../company/team/index.md#dan-mckeen-he-him) (acting [Product Manager](../../product/roles/index.md#product-manager))
-    - [Geoffrey Gilmore](../../company/team/index.md#geoffrey-gilmore)
-    - [Dave Try](../../company/team/index.md#dave-try)
-    - [Crystal Augustus](../../company/team/index.md#crystal-augustus)
+  - [Jean du Plessis](../../company/team/index.md#jean-du-plessis-he-him) (acting [Engineering Manager](../roles.md#engineering-manager))
+  - [Dan Mckeen](../../company/team/index.md#dan-mckeen-he-him) (acting [Product Manager](../../product/roles/index.md#product-manager))
+  - [Geoffrey Gilmore](../../company/team/index.md#geoffrey-gilmore)
+  - [Dave Try](../../company/team/index.md#dave-try)
+  - [Crystal Augustus](../../company/team/index.md#crystal-augustus)
 - [Dev Experience](dev-experience/index.md)
-    - [Patrick Dubroy](../../company/team/index.md#patrick-dubroy-he-him) (acting [Engineering Manager](../roles.md#engineering-manager))
-    - [Jean du Plessis](../../company/team/index.md#jean-du-plessis-he-him) (acting [Product Manager](../../product/roles/index.md#product-manager))
-    - [Asdine El Hrychy](../../company/team/index.md#asdine-el-hrychy)
-    - [JH Chabran](../../company/team/index.md#jh-chabran-he-him)
-    - [Robert Lin](../../company/team/index.md#robert-lin)
+  - [Patrick Dubroy](../../company/team/index.md#patrick-dubroy-he-him) (acting [Engineering Manager](../roles.md#engineering-manager))
+  - [Jean du Plessis](../../company/team/index.md#jean-du-plessis-he-him) (acting [Product Manager](../../product/roles/index.md#product-manager))
+  - [Asdine El Hrychy](../../company/team/index.md#asdine-el-hrychy)
+  - [JH Chabran](../../company/team/index.md#jh-chabran-he-him)
+  - [Robert Lin](../../company/team/index.md#robert-lin)
 - [Frontend Platform](frontend-platform/index.md)
-    - [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
-    - [Patrick Dubroy](../../company/team/index.md#patrick-dubroy-he-him) ([Engineering Manager](../roles.md#engineering-manager) and acting PM)
-    - [Tom Ross](../../company/team/index.md#tom-ross-he-him)
-    - [Felipe Janer](../../company/team/index.md#felipe-janer-he-him)
-    - [Valery Bugakov](../../company/team/index.md#valery-bugakov-he-him)
-
+  - [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
+  - [Patrick Dubroy](../../company/team/index.md#patrick-dubroy-he-him) ([Engineering Manager](../roles.md#engineering-manager) and acting PM)
+  - [Tom Ross](../../company/team/index.md#tom-ross-he-him)
+  - [Felipe Janer](../../company/team/index.md#felipe-janer-he-him)
+  - [Valery Bugakov](../../company/team/index.md#valery-bugakov-he-him)
 
 ## Principles and practices
 
@@ -49,7 +48,7 @@ In addition to the [engineering principles and practices](../principles-and-prac
 
 Suppose a teammate is blocked by you on a question, your approval, or a pull request review. In that case, your top priority is always to unblock them, either directly or by helping them find someone else who can, even if this takes time away from your own or your team's priorities. If you're the one who is blocked, be sure to communicate that so that others can prioritize appropriately.
 
-Typically, waiting for a PR review does not mean you are blocked: it's expected that you can start working on something else (e.g., a new PR that depends on the first one). However, it's important to get a review ASAP in some scenarios  — e.g., to fix a regression or a broken CI pipeline. In those cases, you should communicate the urgency and expect that your teammates will prioritize unblocking you.
+Typically, waiting for a PR review does not mean you are blocked: it's expected that you can start working on something else (e.g., a new PR that depends on the first one). However, it's important to get a review ASAP in some scenarios — e.g., to fix a regression or a broken CI pipeline. In those cases, you should communicate the urgency and expect that your teammates will prioritize unblocking you.
 
 Even when a teammate is not _blocked_ but _inconvenienced_ (because of follow-up work), please don't leave them hanging for extended periods. You should generally budget some amount of time every day for doing reviews.
 
@@ -118,7 +117,6 @@ _When acknowledging a statement:_
 _When acknowledging a question:_
 
 You should provide a written response unless it's a simple yes/no question, in which case `:thumbs-up:` (👍)/`:thumbs-down:` (👎) is acceptable.
-
 
 ### Weekly Slack check-ins
 

@@ -5,11 +5,12 @@ The Delivery team (part of the [Enablement](../index.md) org) TODO complete intr
 ## Members
 
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
+
 - [Dan Mckeen](../../../company/team/index.md#dan-mckeen-he-him) (acting [Product Manager](../../../product/roles/index.md#product-manager))
 - [Jean du Plessis](../../../company/team/index.md#jean-du-plessis-he-him) (acting [Engineering Manager](../../roles.md#engineering-manager))
-    - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
-    - [Dave Try](../../../company/team/index.md#dave-try)
-    - [Crystal Augustus](../../../company/team/index.md#crystal-augustus)
+  - [Geoffrey Gilmore](../../../company/team/index.md#geoffrey-gilmore)
+  - [Dave Try](../../../company/team/index.md#dave-try)
+  - [Crystal Augustus](../../../company/team/index.md#crystal-augustus)
 
 ## Mission
 
