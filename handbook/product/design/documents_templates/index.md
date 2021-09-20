@@ -5,6 +5,7 @@ We have several handy templates that we use to get going quick on new work.
 ## Figma
 
 [Helpers & Tooling](https://www.figma.com/files/project/12944215/Helpers-%26-Tooling?fuid=872030793297791611) project includes:
+
 - [Project Template](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/Project-Template), which you can duplicate and use for all new Figma files. It includes some pages we’ve found work well for supporting async work and Figma files as a source of truth:
   - [Cover:](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/?node-id=0%3A1) a project thumbnail used to recognising the files easier while browsing. Please, use the cover symbol for changing the stages (draft, in progress, done, deprecated) as the project progresses.
   - [Master:](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/?node-id=246%3A11) used for final, usually high-fidelity, mockups. The template showcased on this page can be used for grouping designs in bigger projects.
