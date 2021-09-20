@@ -19,7 +19,7 @@ We have several handy templates that we use to get going quick on new work.
   - [Archives:](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/?node-id=291%3A229) used for past designs, not needed in the review process.
   - [Research:](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/?node-id=246%3A13) used for research-related artifacts.
 - [Basic Project Template](https://www.figma.com/file/YYEGdPNU4zirLS0uWfoYWW/Basic-Project-Template?node-id=0%3A1), which you can duplicate and use for smaller issues. It includes only essential pages: cover, master, buddy review and playground.
-- Project card
+- [Project card](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/🛠Project-Tools?node-id=1%3A203), which is you can copy to every project you're working on and fill out information about the designer, issue, RFC, status and reviewers. It's important for providing necessary context for others. Place the card on the page with latest designs that are ready for review. Note: remember to keep the status on the card and in the file title updated as your project progresses.
 - [Figma Basics for Sourcegraphers](https://www.figma.com/file/JH7GVilasQ11c9DdjpZUIF/Figma-for-Sourcegraphers-Part-1) and [Intro to designing with Wildcard DS](https://www.figma.com/file/DrlzSZOwHqIgmpHwMqCWOs/Intro-to-designing-with-Wildcard-DS), which introduce Figma and how we use it in design to anyone who may not be familiar with it.
 
 ## Docs
