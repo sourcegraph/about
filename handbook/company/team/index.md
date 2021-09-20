@@ -1482,6 +1482,7 @@ To add yourself to this page:
 - Sara is a Product Designer, aspiring artist 🎨, and simulation game enthusiast 🎮. She resides in Chicago, IL and Chapel Hill, NC for equal parts of the year. She is passionate about using design as a medium to make the complex more accessible to people. She is currently working on learning Javascript and drinking less cups of coffee ☕️.
 
 ## Ben Venker
+
 - Product Manager - Search Product
 - St. Louis, MO, United States 🇺🇸
 - GitHub: [benvenker](https://github.com/benvenker)
