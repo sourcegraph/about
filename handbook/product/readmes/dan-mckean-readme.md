@@ -4,7 +4,7 @@
 
 ## What I do at Sourcegraph
 
-I'm the PM (Product Manager) for [Distribution](../../engineering/distribution/index.md) & [Security](../../engineering/orgs/cloud/security/index.md)
+I'm the PM (Product Manager) for [Distribution](../../engineering/distribution/index.md) & [Security](../../engineering/cloud/security/index.md)
 
 ## About me!
 

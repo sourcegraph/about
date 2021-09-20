@@ -59,7 +59,7 @@ EXCEPTIONs FOR Q3FY22 (to be reassessed for Q4 by 2021-10-31):
 - `CVS` should be routed to the [Batch Changes team](../engineering/code-graph/batch-changes/index.md)
 - `license enforcement/management` should be routed to the [Batch Changes team](../engineering/code-graph/batch-changes/index.md) (though these should always go through the CE)
 
-Note that this section applies to backend connections with code hosts, such as repository cloning and syncing. Questions about [frontend/UI integrations with code hosts](#browser-extensions-and-code-host-native-integrations) (e.g., getting code intelligence inside of a code host) should be rounted to the [Extensibility team](../engineering/orgs/cloud/extensibility/index.md).
+Note that this section applies to backend connections with code hosts, such as repository cloning and syncing. Questions about [frontend/UI integrations with code hosts](#browser-extensions-and-code-host-native-integrations) (e.g., getting code intelligence inside of a code host) should be rounted to the [Extensibility team](../engineering/cloud/extensibility/index.md).
 
 ### Repository permissions
 
@@ -93,13 +93,13 @@ In GitHub issues search-core and search-product should be flagged via team/searc
 
 **Keywords**: `browser extension`, `native integration`, `chrome`, `firefox`, `safari`, `Phabricator`, `Bitbucket`, `GitHub`, `GitLab`
 
-Any questions about the browser extension or code host native integrations should be routed to the [Extensibility team](../engineering/orgs/cloud/extensibility/index.md).
+Any questions about the browser extension or code host native integrations should be routed to the [Extensibility team](../engineering/cloud/extensibility/index.md).
 
 ### Sourcegraph extensions
 
 **Keywords**: `extensions`, `plugins`, `blame`, `git-extras`, `Codecov`
 
-Any questions about Sourcegraph extensions should be routed to the [Extensibility team](../engineering/orgs/cloud/extensibility/index.md).
+Any questions about Sourcegraph extensions should be routed to the [Extensibility team](../engineering/cloud/extensibility/index.md).
 
 ### Batch Changes
 
@@ -113,7 +113,7 @@ Any questions about Batch Changes should be routed to the [Batch Changes team](.
 
 The cloud team is a newly formed team at Sourcegraph focused on rapidly scaling our cloud presence. Today, the team is the DRI for all things cloud including DevOps/infra for cloud, new feature development, and early-access/waitlist programs for cloud.
 
-Any questions about Sourcegraph cloud should be routed to the [Cloud SaaS](../engineering/orgs/cloud/saas/index.md) via the [#cloud-saas slack channel](https://sourcegraph.slack.com/archives/C025BKWFPDY).
+Any questions about Sourcegraph cloud should be routed to the [Cloud SaaS](../engineering/cloud/saas/index.md) via the [#cloud-saas slack channel](https://sourcegraph.slack.com/archives/C025BKWFPDY).
 
 ## Step 4: File a Github issue
 

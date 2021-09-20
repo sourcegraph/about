@@ -56,10 +56,10 @@ The handbook is a living document and we expect every teammate to propose improv
     - Developer experience
     - [Frontend platform](./engineering/developer-insights/frontend-platform/index.md)
   - Cloud
-    - Growth (includes [API docs](./engineering/developer-insights/api-docs/index.md))
-    - [Security](./engineering/security/index.md)
-    - DevOps
-    - Cloud SaaS
+    - [Growth](./engineering/cloud/growth/index.md) (includes API docs)
+    - [Security](./engineering/cloud/security/index.md)
+    - [DevOps](./engineering/cloud/devops/index.md)
+    - [SaaS](./engineering/cloud/saas/index.md)
 
 ### [Customer Support](support/index.md)
 
