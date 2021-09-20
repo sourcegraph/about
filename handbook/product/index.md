@@ -17,14 +17,14 @@ You can reach us at the #product channel or @product-team on Slack. If you have 
 Within the product organization, individual product engineering teams set their own goals and roadmaps aligned to the [company OKRs](../company/goals/2022_q3.md), and each have a direction page with all the details of what they are working on next and why. There is also an [(currently internal only) presentation](https://docs.google.com/presentation/d/1o3R8WUIhzzRz0x5laTwVcizOzVWrMBe5MCAz74H45Ss/edit#slide=id.gd8d1ce5e98_0_164) with highlights of planned features from all teams.
 
 - Code Graph
-  - [Search core and Search product](../engineering/search/goals.md)
-  - [Batch Changes](../engineering/batch-changes/goals.md)
-  - [Code Intelligence](../engineering/code-intelligence/goals.md)
-  - [Code Insights](../engineering/developer-insights/code-insights/goals.md)
+  - [Search core and Search product](../engineering/code-graph/search/goals.md)
+  - [Batch Changes](../engineering/code-graph/batch-changes/direction.md)
+  - [Code Intelligence](../engineering/code-graph/code-intelligence/goals.md)
+  - [Code Insights](../engineering/code-graph/code-insights/goals.md)
 - Enablement
   - Repository Management
   - [Distribution](../engineering/distribution/goals.md)
-  - [Frontend Platform](../engineering/developer-insights/frontend-platform/goals.md)
+  - [Frontend Platform](../engineering/enablement/frontend-platform/goals.md)
 - Cloud
   - [Core application](../engineering/core-application/goals.md)
   - Cloud SaaS
@@ -51,7 +51,7 @@ In an effort to gain more clarity around product success and growth on Cloud, we
 - [Working Document](https://docs.google.com/document/d/1o0dLmdRRI6uWIuAg_8VQw25KnTM1CBDKKR2K91SxpAI/edit#)
 - [Pull Request](https://github.com/sourcegraph/about/pull/4521)
 
-### Improve process for documentating product strategy
+### Improve process for documenting product strategy
 
 Our current [product goals pages](index.md#roadmap) are not always up to date so can't be relied upon by the rest of the organization. They are also mixed in with other engineering team content so it can be hard to find the product direction components. We need to update and organize these pages, and then want to improve this process so that the goals pages are the always updated source of truth.
 
