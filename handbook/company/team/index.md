@@ -1487,4 +1487,4 @@ To add yourself to this page:
 - Adachi-ku, Tokyo, Japan 🇯🇵
 - GitHub: [Lordfriccofro](https://github.com/lordfriccofro)
 - [frey.andersson@sourcegraph.com](mailto:frey.andersson@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/frey-andersson-781a082a/)
-- Frey love his family, which includes his 3 dogs and wife (not including his parents and 5 siblings in Sweden). Been living in Tokyo for almost 10 years without watching any anime or reading any manga at all. Loves recruiting almost has he loves driving motorcycles. Served in the Swedish army, which taught him teamwork and discipline. 
+- Frey love his family, which includes his 3 dogs and wife (not including his parents and 5 siblings in Sweden). Been living in Tokyo for almost 10 years without watching any anime or reading any manga at all. Loves recruiting almost has he loves driving motorcycles. Served in the Swedish army, which taught him teamwork and discipline.
