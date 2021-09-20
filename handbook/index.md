@@ -54,7 +54,7 @@ The handbook is a living document and we expect every teammate to propose improv
     - Repository management
     - Delivery
     - Developer experience
-    - [Frontend platform](./engineering/developer-insights/frontend-platform/index.md)
+    - [Frontend platform](./engineering/enablement/frontend-platform/index.md)
   - Cloud
     - [Growth](./engineering/cloud/growth/index.md) (includes API docs)
     - [Security](./engineering/cloud/security/index.md)

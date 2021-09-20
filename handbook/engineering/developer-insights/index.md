@@ -10,14 +10,14 @@ Bring Sourcegraph’s insights into your codebase ([Code Intel](../code-graph/co
 
 ## Teams
 
-1. [Frontend Platform](frontend-platform/index.md): the maintenance and expansion of the Sourcegraph web application. We also define and maintain the standards and tooling for how we do web development at Sourcegraph.
+1. [Frontend Platform](../enablement/frontend-platform/index.md): the maintenance and expansion of the Sourcegraph web application. We also define and maintain the standards and tooling for how we do web development at Sourcegraph.
 
 ## Members
 
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
 
 - [Jean du Plessis](../../company/team/index.md#jean-du-plessis-he-him) ([Director of Engineering](../roles.md#director-of-engineering))
-  - [Frontend platform](../developer-insights/frontend-platform/index.md)
+  - [Frontend platform](../enablement/frontend-platform/index.md)
     - [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
     - [Patrick Dubroy](../../company/team/index.md#tom-ross-he-him) ([Engineering Manager](../roles.md#engineering-manager) and acting PM)
       - [Tom Ross](../../company/team/index.md#tom-ross-he-him)
