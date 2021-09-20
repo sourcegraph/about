@@ -7,6 +7,7 @@ Havng gone though [the general onboarding](https://about.sourcegraph.com/handboo
 Your perspective as both a new user of Sourcegraph and a new teammate is very valuable to us. Please keep notes on any issues you encounter as you are onboarding and learning the product. We’ll use those notes to improve the product and process.
 
 ## Designer checklist
+
 - Add your name to the [Project card](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/🛠Project-Tools?node-id=1%3A203) designer list
 - Create your first Figma project
   - Use the [Project Template](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/Project-Template?node-id=246%3A11) (read more in [Documents and Templates](https://about.sourcegraph.com/handbook/product/design/documents_templates))
