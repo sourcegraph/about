@@ -16,23 +16,28 @@ You can reach us at the #product channel or @product-team on Slack. If you have 
 
 Within the product organization, individual product engineering teams set their own goals and roadmaps aligned to the [company OKRs](../company/goals/2022_q3.md), and each have a direction page with all the details of what they are working on next and why. There is also an [(currently internal only) presentation](https://docs.google.com/presentation/d/1o3R8WUIhzzRz0x5laTwVcizOzVWrMBe5MCAz74H45Ss/edit#slide=id.gd8d1ce5e98_0_164) with highlights of planned features from all teams.
 
-- Code Graph
-  - [Search core and Search product](../engineering/code-graph/search/goals.md)
-  - [Batch Changes](../engineering/code-graph/batch-changes/direction.md)
-  - [Code Intelligence](../engineering/code-graph/code-intelligence/goals.md)
-  - [Code Insights](../engineering/code-graph/code-insights/goals.md)
-- Enablement
-  - Repository Management
-  - [Distribution](../engineering/distribution/goals.md)
-  - [Frontend Platform](../engineering/developer-insights/frontend-platform/goals.md)
-- Cloud
-  - [Core application](../engineering/core-application/goals.md)
-  - Cloud SaaS
-  - Growth
-    - [API docs](../engineering/developer-insights/api-docs/goals.md)
-  - [Security](../engineering/security/goals.md)
-  - DevOps/SRE
-  - [Extensibility](../engineering/developer-insights/extensibility/goals.md)
+### [Code Graph](../direction/code-graph/index.md)
+
+- [Search core and Search product](../engineering/code-graph/search/goals.md)
+- [Batch Changes](../engineering/code-graph/batch-changes/direction.md)
+- [Code Intelligence](../engineering/code-graph/code-intelligence/goals.md)
+- [Code Insights](../engineering/code-graph/code-insights/goals.md)
+
+### Enablement
+
+- Repository Management
+- [Distribution](../engineering/distribution/goals.md)
+- [Frontend Platform](../engineering/developer-insights/frontend-platform/goals.md)
+
+### Cloud
+
+- [Core application](../engineering/core-application/goals.md)
+- Cloud SaaS
+- Growth
+  - [API docs](../engineering/developer-insights/api-docs/goals.md)
+- [Security](../engineering/security/goals.md)
+- DevOps/SRE
+- [Extensibility](../engineering/developer-insights/extensibility/goals.md)
 
 ## Metrics
 
