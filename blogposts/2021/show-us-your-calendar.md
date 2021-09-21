@@ -6,6 +6,8 @@ authorUrl: https://twitter.com/nickwritesit
 published: true
 publishDate: 2021-09-16T10:00-07:00
 slug: remote-work-calendar
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png
 ---
 
 Work is only one part of our lives but until remote work, it occupied a sacrosanct place in our schedules. You were to work between the hours of 9:00 am and 5:00 pm, not including your commute to and from the office, and the rest of your life had to flow around that block.
