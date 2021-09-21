@@ -29,3 +29,9 @@ We’re now caching search results so that when you click into a file from the s
 ## Compute API endpoint
 
 For Code Insights and API users, we’ve exposed a new compute endpoint that allows you to extract and aggregate data based on a regex. For example, you can search for React as a dependency in `package.json` and group your results by version number.
+
+## LSIF data retention is now configurable via our UI
+
+We've changed the way we think about LSIF data retention. Previously, precise code intelligence data was capped by a maximum age configured by the PRECISE_CODE_INTEL_DATA_TTL environment variable. This means that, regardless of how important some data was, it would be removed after it passed its expiry.
+
+Now, site-admins can configure global and repository-specific data retention policies in the UI and can control the length of time LSIF uploads are considered fresh. You can read more about how to protect your precise code intelligence data in our [Configure precise code intelligence data retention policies](https://docs.sourcegraph.com/code_intelligence/how-to/configure_data_retention) documentation.
