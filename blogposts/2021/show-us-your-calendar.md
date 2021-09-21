@@ -84,9 +84,7 @@ As much as she loves her schedule, she recommends taking account of the costs: �
 
 TJ acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image2.png 'image_tooltip')
+![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4%20day.png)
 
 Many would rightfully worry that lopping off one day a week wouldn’t sit well with a manager. TJ had the opposite experience: “No one cares about how you’re working as long as you’re getting done what you say you’re going to get done.” As long as his new schedule wasn’t a detriment to his team, TJ says, then he had his manager’s full support.
 
