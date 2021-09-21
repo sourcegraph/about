@@ -27,7 +27,7 @@ In terms of hardware, Paul likes stability. The real magic, as we discovered lat
 
 ## Linux and VMware Fusion
 
-Like Mitchell Hashimoto, [who we hosted in August](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/), Paul does most of his development within Linux, which he runs within VMware Fusion. In terms of disk i/o, development within a VMware Fusion virtual machine, running on top of MacOS, is actually [faster than native Mac](https://www.google.com/url?q=https://github.com/golang/go/issues/28739&sa=D&source=editors&ust=1631903935728000&usg=AOvVaw3lB31d39lsuwMyfXtjHtph). 
+Like Mitchell Hashimoto, [who we hosted in August](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/), Paul does most of his development within Linux, which he runs within VMware Fusion. In terms of disk i/o, development within a VMware Fusion virtual machine, running on top of MacOS, is actually [faster than native Mac](https://www.google.com/url?q=https://github.com/golang/go/issues/28739&sa=D&source=editors&ust=1631903935728000&usg=AOvVaw3lB31d39lsuwMyfXtjHtph).
 
 Paul runs Ubuntu 21.04, though notes he is “very taken” by Mitchell’s [NixOS setup](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/#NixOS). Instead of Nix snapshots, he uses VMware Fusion snapshots, which he acknowledges are coarser. Paul is also a heavy user of [AwesomeWM](https://awesomewm.org/), though notes he might switch to [i3](https://i3wm.org/) one day.
 
@@ -35,7 +35,7 @@ Paul runs Ubuntu 21.04, though notes he is “very taken” by Mitchell’s [Nix
 
 Paul isn’t fancy when it comes to his terminal, using what he describes as a “very plain terminal.” He focuses instead on speed, using plain [xterm](https://xtermjs.org/).
 
-In terms of appearance, he uses a dark gray background theme (“I find it’s much easier on the eyes,” he said). 
+In terms of appearance, he uses a dark gray background theme (“I find it’s much easier on the eyes,” he said).
 
 ## Vim
 
