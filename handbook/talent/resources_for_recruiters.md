@@ -23,11 +23,11 @@ The intake meeting is intended for the Hiring Manager and the Recruiter to get o
 - Number of openings
 - Time zone/location restrictions
 - Ideal start date
-- Ideal candidate profile
+- Required skills/competencies 
 - 3 LinkedIn examples
 - Alternative titles
 - Required software/tools
-- Ideal companies
+- Preferred industry experience
 - Screening questions
 - Selling points
 - Any additional information
@@ -62,21 +62,21 @@ As a next step, please:
 3. Please review these pages in the handbook:
    1. [The interview process](https://about.sourcegraph.com/handbook/talent/interview_process)
    2. [Resources for hiring managers](https://about.sourcegraph.com/handbook/talent/resources_for_hiring_managers)
-   3. [Feedback definitions]https://about.sourcegraph.com/handbook/talent/interview_process#overall-recommendation
+   3. [Feedback definitions](https://about.sourcegraph.com/handbook/talent/interview_process#overall-recommendation)
 
 Interview process / hiring team:
 
-- [30m] [Recruiter screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#sts=Recruiter%20screen): \***\*\_\*\***
-- [30-60m] [Hiring Manager screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#hiring-manager-screen): \***\*\_\*\***
-- Assignment, if applicable: \***\*\_\*\***
+- [30m] [Recruiter screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#sts=Recruiter%20screen): ___
+- [30-60m] [Hiring Manager screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#hiring-manager-screen): ___
+- Assignment, if applicable: ___
 - In-depth Interview Stage:
-  - [1h] [Resume Deep Dive](https://about.sourcegraph.com/handbook/talent/types_of_interviews#resume-deep-dive): \***\*\_\*\***
-  - [30m] Assignment review/working session, if applicable: \***\*\_\*\***
-  - [60-120m] Technical interview, if applicable: \***\*\_\*\***
-  - [30-60m] [Cross-functional Team collaboration interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#cross-team-collaboration-interview): \***\*\_\*\***
-  - [30m] [Peer interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#peer-interview): \***\*\_\*\***
-- [30m] [Values interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#values-interview): \***\*\_\*\***
-- [15-30m] [Leadership Interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#leadership-interview): \***\*\_\*\***
+  - [1h] [Resume Deep Dive](https://about.sourcegraph.com/handbook/talent/types_of_interviews#resume-deep-dive): ___
+  - [30m] Assignment review/working session, if applicable: ___
+  - [60-120m] Technical interview, if applicable: ___
+  - [30-60m] [Cross-functional Team collaboration interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#cross-team-collaboration-interview): ___
+  - [30m] [Peer interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#peer-interview): ___
+- [30m] [Values interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#values-interview): ___
+- [15-30m] [Leadership Interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#leadership-interview): ___
 
 At a high level, here is an overview of what we’re looking for in this hire. @hiringmanager, please add any additional insight that will be helpful for the hiring team to keep in mind as they interview candidates!
 
