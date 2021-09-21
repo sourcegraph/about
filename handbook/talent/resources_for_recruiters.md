@@ -23,11 +23,11 @@ The intake meeting is intended for the Hiring Manager and the Recruiter to get o
 - Number of openings
 - Time zone/location restrictions
 - Ideal start date
-- Ideal candidate profile
+- Required skills and competencies
 - 3 LinkedIn examples
 - Alternative titles
 - Required software/tools
-- Ideal companies
+- Preferred industry experience
 - Screening questions
 - Selling points
 - Any additional information
