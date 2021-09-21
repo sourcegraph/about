@@ -14,10 +14,14 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
     const image = 'https://about.sourcegraph.com/sourcegraph-mark.png'
     const socialImage = post.frontmatter.socialImage
     const canonical = post.frontmatter.canonical
+    const seoTitle = post.frontmatter.seoTitle
+    const seoDescription = post.frontmatter.seoDescription
     const meta = {
         title,
         image,
         description,
+        seoTitle,
+        seoDescription
     }
 
     const C = POST_TYPE_TO_COMPONENT[postType(post)]
@@ -69,6 +73,8 @@ export const pageQuery = graphql`
             frontmatter {
                 title
                 description
+                seoTitle
+                seoDescription
                 heroImage
                 socialImage
                 author

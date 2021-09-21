@@ -18,6 +18,8 @@ export interface Post {
     frontmatter: {
         title: string
         description: string
+        seoTitle: string
+        seoDescription: string
         slug: string
         canonical: string
         publishDate: string
