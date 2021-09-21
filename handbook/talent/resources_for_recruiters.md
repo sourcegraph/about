@@ -66,17 +66,17 @@ As a next step, please:
 
 Interview process / hiring team:
 
-- [30m] [Recruiter screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#sts=Recruiter%20screen): _________
-- [30-60m] [Hiring Manager screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#hiring-manager-screen): _________
-- Assignment, if applicable: _________
+- [30m] [Recruiter screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#sts=Recruiter%20screen): ****\_****
+- [30-60m] [Hiring Manager screen](https://about.sourcegraph.com/handbook/talent/types_of_interviews#hiring-manager-screen): ****\_****
+- Assignment, if applicable: ****\_****
 - In-depth Interview Stage:
-  - [1h] [Resume Deep Dive](https://about.sourcegraph.com/handbook/talent/types_of_interviews#resume-deep-dive): _________
-  - [30m] Assignment review/working session, if applicable: _________
-  - [60-120m] Technical interview, if applicable: _________
-  - [30-60m] [Cross-functional Team collaboration interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#cross-team-collaboration-interview): _________
-  - [30m] [Peer interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#peer-interview): _________
-- [30m] [Values interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#values-interview): _________
-- [15-30m] [Leadership Interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#leadership-interview): _________
+  - [1h] [Resume Deep Dive](https://about.sourcegraph.com/handbook/talent/types_of_interviews#resume-deep-dive): ****\_****
+  - [30m] Assignment review/working session, if applicable: ****\_****
+  - [60-120m] Technical interview, if applicable: ****\_****
+  - [30-60m] [Cross-functional Team collaboration interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#cross-team-collaboration-interview): ****\_****
+  - [30m] [Peer interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#peer-interview): ****\_****
+- [30m] [Values interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#values-interview): ****\_****
+- [15-30m] [Leadership Interview](https://about.sourcegraph.com/handbook/talent/types_of_interviews#leadership-interview): ****\_****
 
 At a high level, here is an overview of what we’re looking for in this hire. @hiringmanager, please add any additional insight that will be helpful for the hiring team to keep in mind as they interview candidates!
 
