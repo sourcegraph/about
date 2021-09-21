@@ -129,7 +129,7 @@ For Jean, this means using the morning to take care of the chores that most woul
 
 In the afternoon, Jean is frank: he might just nap. 3:00 pm (his time) is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, we read a story.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
-![Slack message from Jean regarding his schedule](hhttps://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.20.11%20PM.png)
+![Slack message from Jean regarding his schedule](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.20.11%20PM.png)
 
 For Jean, the nonlinear work day isn’t merely a traditional workday, fragmented: “I’m picky about what I do in the evenings.” He tends to schedule meetings that he doesn’t have to lead during his evening sessions–meetings where he only has to listen or provide input. He optimizes his entire day based on what he does best when.
 
