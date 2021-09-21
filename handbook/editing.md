@@ -10,7 +10,7 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 - Any engineer at Sourcegraph can help. (The _code_ that engineers write at Sourcegraph also consists of files in a Git repository, so engineers are very familiar with making these kinds of edits.)
 - [Teammates who have already made a handbook change](https://sourcegraph.com/github.com/sourcegraph/about/-/stats/contributors?path=handbook%2F) can help.
-- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @eric, @aharvey, @virginia, @ines, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
+- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @eric, @aharvey, @virginia, @ines, @jyavorska, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
 - Ask in #handbook: `Who can screen-share with me to help me make an edit to the handbook?`
 - Don't be afraid of breaking anything! It is very easy for any engineer on the team to roll back to the previous version of the handbook if you make a mistake.
 
@@ -27,6 +27,7 @@ Here's the process for getting a change published to the handbook. For detailed 
    - For minor edits, you can skip review.
 1. Wait for the necessary teammates to review and approve your pull request.
 1. Merge the pull request.
+   - If you forget to merge your pull request, you'll be reminded about it after 14 days of inactivity on that pull request. If the pull request sees another 7 days of inactivity, it will be automatically closed.
 1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
 1. Use the #handbook-announce label to notify other people of important handbook updates on the #handbook-announce Slack channel.
 
@@ -69,6 +70,16 @@ If you just need to edit a single page, you can do it entirely on the web.
 1. Wait for teammates to review, comment on, and approve your pull request.
 1. When you're ready to publish the change and make it live, press the **Squash and merge** button, then press **Confirm squash and merge**.
 1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
+
+### Announcing Handbook Changes
+
+All Handbook-related pull request information is automatically announced in the #handbook-updates Slack channel. This channel can get a bit noisy, so you may want to announce an important update in the #handbook-announce channel. To do this:
+
+1. Open your pull request
+1. Click the **Labels** section on the right side of the Github screen
+1. Search for "handbook-announce" and select it
+   - ![Announcing Handbook Changes](https://storage.googleapis.com/sourcegraph-assets/handbookannouncelabelimage.png)
+1. Merge your pull request
 
 ### Handbook checks
 
@@ -145,7 +156,7 @@ Optional:
 
 ## Adding images
 
-Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](product/technical_writing/index.md#uploading-graphics) for instructions.
+Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](product/technical_writing/index.md#uploading-graphics) for instructions. Note that this is a two-step process: First, adding your image to Google Cloud Storage. Second, editing the Handbook to include your image.
 
 ## Uploading large files
 
