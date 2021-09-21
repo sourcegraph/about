@@ -1479,4 +1479,4 @@ To add yourself to this page:
 - Yangon, Burma
 - Github: [wysg](https://github.com/wysg)
 - [win.yu@sourcegraph.com](mailto:win.yu@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/winyuglobal/)
-- After graduating from Middlebury College with a B.A . in Economics and a minor in South Asian studies, he worked at a few companies and also co-founded two schools in Burma. When not working, he loves spending time with family and friends, traveling, and swimming. He also loves keeping up with healthy meals. 
+- After graduating from Middlebury College with a B.A . in Economics and a minor in South Asian studies, he worked at a few companies and also co-founded two schools in Burma. When not working, he loves spending time with family and friends, traveling, and swimming. He also loves keeping up with healthy meals.
