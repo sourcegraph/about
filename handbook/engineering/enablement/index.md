@@ -36,6 +36,7 @@ The org is lead by [Serina Clark](../../company/team/index.md#serina-clark-her-s
 - [Frontend Platform](frontend-platform/index.md)
   - [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) ([Product Designer](../../product/roles/index.md#product-designer))
   - [Patrick Dubroy](../../company/team/index.md#patrick-dubroy-he-him) ([Engineering Manager](../roles.md#engineering-manager) and acting PM)
+  - T.S. staring 2021-10-11 (Technical Product Manager)
   - [Tom Ross](../../company/team/index.md#tom-ross-he-him)
   - [Felipe Janer](../../company/team/index.md#felipe-janer-he-him)
   - [Valery Bugakov](../../company/team/index.md#valery-bugakov-he-him)
