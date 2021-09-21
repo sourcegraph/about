@@ -15,7 +15,7 @@ When Paul Jolly, CTO and founder at [myitcv.io](https://myitcv.io/), joined us f
 
 You can watch the recording of this episode at the bottom of this blog post, but first let's check out Paul’s desk:
 
-![Paul's work desk](https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/dev-tool-time-paul-jolly-desk.jpeg)
+![Paul's work desk](https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/dev-tool-time-paul-jolly-desk-big.jpeg)
 
 ## Hardware setup
 
