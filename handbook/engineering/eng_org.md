@@ -1,6 +1,32 @@
 # Engineering org
 
-This page documents our current and planned future engineering org structure. Plans can change!
+This page documents our current/planned engineering org structure. Plans can change!
+
+## Current organization
+
+As of 2021-09-13 [we reorganized the product and engineering teams](https://docs.google.com/document/d/1d8Z8zN6DjKHfXGaCQerKDeJo5qEVxBTku8RcZtw7Di4/edit#) (internal document) so some team pages are missing and need to be created. Until the handbook is updated, the source of truth for team assignments and hiring plans are in [this spreadsheet](https://docs.google.com/spreadsheets/d/1CIQYQDN2KFyHMmPEx3FqubapyXyapFp0B_DoDJtWvm8/edit#gid=0).
+
+<!-- Our markdown renderer is not spec-compliant and needs 4 spaces of indentation for nested lists, therefor we need to prettier-ignore. -->
+<!-- prettier-ignore -->
+- [Nick Snyder](index.md#nick-snyder-he-him), [VP Engineering](../../handbook/engineering/roles.md#vp-engineering) (reports to [Beyang Liu](index.md#beyang-liu), CTO)
+  - [Code graph](./code-graph/index.md)
+      - [Search core](./code-graph/search/core.md)
+      - [Search product](./code-graph/search/product.md)
+      - [Code intelligence](./code-graph/code-intelligence/index.md)
+      - [Batch Changes](./code-graph/batch-changes/index.md)
+      - [Code insights](./code-graph/code-insights/index.md)
+  - Enablement
+      - [Repo management](./enablement/repo-management/index.md)
+      - [Delivery](./enablement/delivery/index.md)
+      - [Dev experience](./enablement/dev-experience/index.md)
+      - [Frontend platform](./enablement/frontend-platform/index.md)
+  - Cloud
+     - [Growth](./cloud/growth/index.md) (includes API-Docs)
+     - [Security](./cloud/security/index.md)
+     - [DevOps](./cloud/devops/index.md)
+     - [Cloud SaaS](./cloud/saas/index.md)
+
+[VP Eng team docs](vpe/index.md).
 
 ## Philosophy
 
@@ -39,27 +65,3 @@ When teams grow and divide, we prefer to grow the org horizontally, not vertical
 ## Transferring teams
 
 If you are already at Sourcegraph and see a current or future opportunity that you're interested in, please tell your manager. Your manager will chat with you to understand what you want and then propose next steps. See also [the process for switching teams](https://about.sourcegraph.com/handbook/people-ops/switching-teams).
-
-## Current organization
-
-_As of 2021-09-13 [we reorganized the product and engineering teams](https://docs.google.com/document/d/1d8Z8zN6DjKHfXGaCQerKDeJo5qEVxBTku8RcZtw7Di4/edit#) (internal document) so some team pages are missing and need to be created. Until the handbook is updated, the source of truth for team assignments and hiring plans are in [this spreadsheet](https://docs.google.com/spreadsheets/d/1CIQYQDN2KFyHMmPEx3FqubapyXyapFp0B_DoDJtWvm8/edit#gid=0)._
-
-- [Nick Snyder](index.md#nick-snyder-he-him), [VP Engineering](../../handbook/engineering/roles.md#vp-engineering) (reports to [Beyang Liu](index.md#beyang-liu), CTO)
-  - Code graph
-    - [Search core](../../handbook/engineering/search/core.md)
-    - [Search product](../../handbook/engineering/search/product.md)
-    - [Code intelligence](../../handbook/engineering/code-intelligence/index.md)
-    - [Batch Changes](../../handbook/engineering/batch-changes/index.md)
-    - [Code insights](../../handbook/engineering/developer-insights/code-insights/index.md)
-  - Enablement
-    - Repository management
-    - Delivery
-    - Developer experience
-    - [Frontend platform](../../handbook/engineering/developer-insights/frontend-platform/index.md)
-  - Cloud
-    - Growth (includes [API docs](../../handbook/engineering/developer-insights/api-docs/index.md)
-    - [Security](../../handbook/engineering/security/index.md)
-    - DevOps
-    - Cloud SaaS
-
-[VP Eng team docs](vpe/index.md).
