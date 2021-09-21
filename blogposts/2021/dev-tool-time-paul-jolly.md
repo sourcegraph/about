@@ -27,7 +27,7 @@ In terms of hardware, Paul likes stability. The real magic, as we discovered lat
 
 ## Linux and VMware Fusion
 
-Like Mitchell Hashimoto, [who we hosted in August](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/), Paul does most of his development within Linux, which he runs within VMware Fusion. In terms of disk i/o, development within a VMware Fusion virtual machine, running on top of MacOS, is actually [faster than native Mac](https://www.google.com/url?q=https://github.com/golang/go/issues/28739&sa=D&source=editors&ust=1631903935728000&usg=AOvVaw3lB31d39lsuwMyfXtjHtph). “At least on my old setup!” Paul said.
+Like Mitchell Hashimoto, [who we hosted in August](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/), Paul does most of his development within Linux, which he runs within VMware Fusion. In terms of disk i/o, development within a VMware Fusion virtual machine, running on top of MacOS, is actually [faster than native Mac](https://www.google.com/url?q=https://github.com/golang/go/issues/28739&sa=D&source=editors&ust=1631903935728000&usg=AOvVaw3lB31d39lsuwMyfXtjHtph). 
 
 Paul runs Ubuntu 21.04, though notes he is “very taken” by Mitchell’s [NixOS setup](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/#NixOS). Instead of Nix snapshots, he uses VMware Fusion snapshots, which he acknowledges are coarser. Paul is also a heavy user of [AwesomeWM](https://awesomewm.org/), though notes he might switch to [i3](https://i3wm.org/) one day.
 
@@ -35,7 +35,7 @@ Paul runs Ubuntu 21.04, though notes he is “very taken” by Mitchell’s [Nix
 
 Paul isn’t fancy when it comes to his terminal, using what he describes as a “very plain terminal.” He focuses instead on speed, using plain [xterm](https://xtermjs.org/).
 
-In terms of appearance, he uses a dark gray background theme (“I find it’s much easier on the eyes,” he said). He also uses the Vim sahara color scheme and the Go font as the xterm font.
+In terms of appearance, he uses a dark gray background theme (“I find it’s much easier on the eyes,” he said). 
 
 ## Vim
 
@@ -43,26 +43,11 @@ In terms of appearance, he uses a dark gray background theme (“I find it’s m
 
 Paul uses Vim 8.2 and due to its speed and stability, has never felt the need to switch to anything else.
 
-Paul uses a variety of plugins, including:
+Paul uses a variety of plugins is a big fan of self-proclaimed VIM plugin artist [Tim Pope](https://github.com/tpope).
 
-- [Auto-pairs](https://github.com/jiangmiao/auto-pairs)
-- [Fzf.vim](https://github.com/junegunn/fzf.vim)
-- [Plan9 for vimspace](https://github.com/plan9-for-vimspace/plan9-for-vimspace)
-- [Local.vimrc](https://github.com/MarcWeber/vim-addon-local-vimrc)
-- [Vim airline](https://github.com/vim-airline/vim-airline)
-- [Syntax-range highlighting](https://github.com/inkarkat/vim-SyntaxRange)
+[Unimpaired](https://github.com/tpope/vim-unimpaired) was a particular favorite of Paul’s, which comes with “sensible defaults” for the common types of Vim actions you might take. “This has now become muscle memory for me,” Paul said.
 
-Paul is also a big fan of self-proclaimed VIM plugin artist [Tim Pope](https://github.com/tpope), using numerous plugins from him, including:
-
-- [Fugitive](https://github.com/tpope/vim-fugitive)
-- [Commentary](https://github.com/tpope/vim-commentary)
-- [Repeat](https://github.com/tpope/vim-repeat)
-- [Surround](https://github.com/tpope/vim-surround)
-- [Unimpaired](https://github.com/tpope/vim-unimpaired)
-
-Unimpaired was a particular favorite of Paul’s, which comes with “sensible defaults” for the common types of Vim actions you might take. “This has now become muscle memory for me,” Paul said.
-
-Commentary, which enables him to comment and un-comment things in a way that respects the language in use, is another favorite: “It’s just small things like that, when combined, that make your development experience that much more pleasant.”
+[Commentary](https://github.com/tpope/vim-commentary), which enables him to comment and un-comment things in a way that respects the language in use, is another favorite: “It’s just small things like that, when combined, that make your development experience that much more pleasant.”
 
 Paul took us through a Go-based project, showing off fzf and its ability to symbol search across his entire workspace, including the main module and all its dependencies.
 
