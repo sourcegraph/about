@@ -148,3 +148,7 @@ Whether you’ve worked remotely and flexibly for decades, or just started after
 The 40 hour work week is a [relic of the late 1800s](https://www.businessinsider.com/history-of-the-40-hour-workweek-2015-10), a right hard won by labor organizers but not a tradition we should hew to unthinkingly. Since then, we have moved from economies primarily defined by widgets produced to economies primarily defined by knowledge work.
 
 In this brave (not so new) world, time-input is not an effective way to measure productivity, nor an effective way to structure your life. If you have the privilege of remote, flexible work, take the time to rethink your calendar and see how best it can work for you, your family, and your life.
+
+## Looking for more dev perspectives?
+
+If you want to learn more about how your fellow developers work, tune into Dev Tool Time, which streams live on Twitch every other Wednesday. [![Dev Tool Time CTA](https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/DTT-general-CTA.png)](https://bit.ly/2XMhIir)
