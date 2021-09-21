@@ -25,5 +25,5 @@ Your perspective as both a new user of Sourcegraph and a new teammate is very va
 
 ## Creating your first Figma project
 
-  - Use the [Project Template](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/Project-Template?node-id=246%3A11) (read more in [Documents and Templates](https://about.sourcegraph.com/handbook/product/design/documents_templates))
-  - Remember to add the Project card
+- Use the [Project Template](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/Project-Template?node-id=246%3A11) (read more in [Documents and Templates](https://about.sourcegraph.com/handbook/product/design/documents_templates))
+- Remember to add the Project card
