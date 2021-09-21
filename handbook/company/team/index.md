@@ -1464,3 +1464,11 @@ To add yourself to this page:
 - Github: [jjinnii](https://github.com/jjinnii)
 - [sara.lee@sourcegraph.com](mailto:sara.lee@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sara-yoojin-lee/)
 - Sara is a Product Designer, aspiring artist 🎨, and simulation game enthusiast 🎮. She resides in Chicago, IL and Chapel Hill, NC for equal parts of the year. She is passionate about using design as a medium to make the complex more accessible to people. She is currently working on learning Javascript and drinking less cups of coffee ☕️.
+
+## Frey Andersson
+
+- Technical Recruiter
+- Adachi-ku, Tokyo, Japan 🇯🇵
+- Github: [Lordfriccofro](https://github.com/lordfriccofro)
+- [frey.andersson@sourcegraph.com](mailto:frey.andersson@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/frey-andersson-781a082a/)
+- Legend has it that he is a descendant of a great viking lord, those who know him know he made that up himself to look cool. What he actually is, a Swedish guy that has spent a lot of time in Japan working as a teacher and a recruiter. He loves his dogs and he loves motorcycles. Worked in the military where he learned to love spending time in nature and surviving (like sleeping outside in minus 25 degrees celsius without a tent and only a tiny fire). He loves what he does, which is helping people find their perfect job.
