@@ -17,7 +17,8 @@ Your perspective as both a new user of Sourcegraph and a new teammate is very va
   - product-design-internal
   - accessibility
   - analytics-review
-  - wildcard-components-library
+  - wildcard-components-library-wcl
+  - hallway-testing
 - Make sure that your Name is set to your First and Last name on GitHub so that other teammates can easily indentify you. Go to GitHub -> Your profile -> Edit profile -> Fill out the 'Name field' -> Save
 - Add yourself as a designer to the handbook pages of the teams you're working with. You can also add those teams to your Slack profile description, for ex. 'Product Designer (Code Insights)'
 - Get familiar with the products that we use as inspirations for reference in the developer tools industry:
