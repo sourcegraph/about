@@ -1,6 +1,6 @@
 # Planning
 
-Planning is a continuous process of negotiation between product and engineering. Teams should review the [roadmap](../index.md#roadmap) weekly with the [Product Manager](../roles/index.md#product-manager) and update it regularly.  The roadmap will become less specific and focus more on the problems we are looking to solve the further out it gets.  We expect to learn a lot between defining the problem and implementation. As implementation details change and we learn more about the solution to the problem we are aiming to solve, the product manager is responsible for communicating impacts to the overall coherency of a release. 
+Planning is a continuous process of negotiation between product and engineering. Teams should review the [roadmap](../index.md#roadmap) weekly with the [Product Manager](../roles/index.md#product-manager) and update it regularly. The roadmap will become less specific and focus more on the problems we are looking to solve the further out it gets. We expect to learn a lot between defining the problem and implementation. As implementation details change and we learn more about the solution to the problem we are aiming to solve, the product manager is responsible for communicating impacts to the overall coherency of a release.
 
 ## Product / eng team backlogs
 
@@ -39,7 +39,7 @@ We ask that teams leverage the [Direction page template](direction_template.md) 
 
 ### OKRs and One-pagers
 
-To ensure our team objectives are aligned with the company objectives at each fiscal quarter boundary the product and engineering organization collaborate with leadership on team [one pagers](https://docs.google.com/document/d/1iX7ytN8FztLXjl830XtNlI0KxfxFYFSOUUjtgSnmOPA/edit#heading=h.4nkrzeavd0fi).  Once the objectives in the one pagers are agreed on the content of the one pages should be reflect on the [roadmap](../index.md#roadmap).  This generally happens in the first week of the fiscal quarter.  As the quarter progresses the product manager is responsible for communicating progress towards our objectives in the [OKR tracker](https://docs.google.com/spreadsheets/d/1M7xgQuKTkxhAlOU2bZgnp5EjJgptwxNJXBkOJaomm5w/edit#gid=628032573) so that we can stay aligned.
+To ensure our team objectives are aligned with the company objectives at each fiscal quarter boundary the product and engineering organization collaborate with leadership on team [one pagers](https://docs.google.com/document/d/1iX7ytN8FztLXjl830XtNlI0KxfxFYFSOUUjtgSnmOPA/edit#heading=h.4nkrzeavd0fi). Once the objectives in the one pagers are agreed on the content of the one pages should be reflect on the [roadmap](../index.md#roadmap). This generally happens in the first week of the fiscal quarter. As the quarter progresses the product manager is responsible for communicating progress towards our objectives in the [OKR tracker](https://docs.google.com/spreadsheets/d/1M7xgQuKTkxhAlOU2bZgnp5EjJgptwxNJXBkOJaomm5w/edit#gid=628032573) so that we can stay aligned.
 
 ### RFCs
 
