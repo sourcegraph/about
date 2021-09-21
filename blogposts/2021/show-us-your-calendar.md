@@ -10,6 +10,8 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Yo
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png
 ---
 
+![Flexible work calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png)
+
 Work is only one part of our lives but until remote work, it occupied a sacrosanct place in our schedules. You were to work between the hours of 9:00 am and 5:00 pm, not including your commute to and from the office, and the rest of your life had to flow around that block.
 
 Remote work offers the opportunity to rethink work from first principles and ask ourselves: What does life look like when our jobs work for us, rather than the other way around? When you don’t have to commute, when no one is watching you work, when code shipped at 2 am is as valuable as code shipped at 10 am, what can your life become?
@@ -45,9 +47,7 @@ The workplace can get noisy. For Gutekanst, it comes in waves.
 
 Over the course of two months, he says, half of his time might go toward helping other people: “It’s a weird conundrum because it’s a completely useful way to spend my time. On the other hand, it’s completely unrelated to what my focus area actually is, which is working on a product feature or something like that.”
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png 'image_tooltip')
+![Slack message from Stephen regarding his workation](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.19.29%20PM.png)
 
 Part of the reason for that comes from working at a [high-growth startup](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/): “A lot of the time, we don’t have an owner for an area and I’m the person with the most context, so it’s useful for me to help out there.”
 
@@ -79,12 +79,14 @@ As much as she loves her schedule, she recommends taking account of the costs: �
 
 [TJ DeVries](https://about.sourcegraph.com/handbook/company/team#tj-devries), software engineer at Sourcegraph and core maintainer for open source Vim-based text editor [Neovim](https://neovim.io/), streams almost all day every Friday. How? He works four tens: four days a week, ten hours each.
 
+![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4%20day.png)
+
 > “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would care.”
 > TJ DeVries, software engineer
 
 TJ acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
 
-![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4%20day.png)
+![TJ coding live on Twitch](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%202.03.37%20PM.png)
 
 Many would rightfully worry that lopping off one day a week wouldn’t sit well with a manager. TJ had the opposite experience: “No one cares about how you’re working as long as you’re getting done what you say you’re going to get done.” As long as his new schedule wasn’t a detriment to his team, TJ says, then he had his manager’s full support.
 
@@ -99,6 +101,8 @@ TJ recommends carrying over some software development principles over to your wo
 “For some activities,” he says, “you just can’t do them at night. And if you do it on weekends, then you’re competing with all these people who want to do the same thing on their two days off.”
 
 Robert works a split schedule, meaning that for three days a week, he works from 8:00 am to 12:00 pm and 6:00 pm to 10:00 pm. On the other two days, he works a normal 9:00 am to 5:00 pm. Robert, who’s currently in the United States, usually lives and works from Taiwan. There, he maintains a similar schedule, the hours shifted only slightly to maximize overlap with his American teammates.
+
+![Split schedule graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Split.png)
 
 Robert is used to some degree of flexibility. When he and his partner were students, they optimized their schedules for their primary hobbies–bouldering being number one. Robert decided he didn’t want to change that as he started working full time.
 
@@ -116,6 +120,8 @@ Robert recommends building a company culture that prizes independence. A company
 
 The nonlinear workday, [according to GitLab](https://about.gitlab.com/company/culture/all-remote/non-linear-workday/), the company who popularized the term, “decouples time from work and acts as a forcing function to embrace asynchronous workflows.”
 
+![Nonlinear calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Nonlinear.png)
+
 For Jean, this means using the morning to take care of the chores that most would do after work, such as grocery shopping and walking the dog. From the late morning to the afternoon, he focuses on meetings with his teammates and completing work leftover from the previous day.
 
 > “I’ve found myself playing video games in the afternoon and I’ve found myself meeting up with friends.”
@@ -123,9 +129,7 @@ For Jean, this means using the morning to take care of the chores that most woul
 
 In the afternoon, Jean is frank: he might just nap. 3:00 pm (his time) is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, we read a story.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png 'image_tooltip')
+![Slack message from Jean regarding his schedule](hhttps://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.20.11%20PM.png)
 
 For Jean, the nonlinear work day isn’t merely a traditional workday, fragmented: “I’m picky about what I do in the evenings.” He tends to schedule meetings that he doesn’t have to lead during his evening sessions–meetings where he only has to listen or provide input. He optimizes his entire day based on what he does best when.
 
