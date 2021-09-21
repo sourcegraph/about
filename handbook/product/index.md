@@ -23,21 +23,21 @@ Within the product organization, individual product engineering teams set their 
 - [Code Intelligence](../engineering/code-graph/code-intelligence/goals.md)
 - [Code Insights](../engineering/code-graph/code-insights/goals.md)
 
-### Enablement
+### [Enablement](../engineering/enablement/index.md)
 
 - Repository Management
 - [Distribution](../engineering/distribution/goals.md)
-- [Frontend Platform](../engineering/developer-insights/frontend-platform/goals.md)
+- [Frontend Platform](../engineering/enablement/frontend-platform/goals.md)
 
 ### Cloud
 
 - [Core application](../engineering/core-application/goals.md)
 - Cloud SaaS
 - Growth
-  - [API docs](../engineering/developer-insights/api-docs/goals.md)
-- [Security](../engineering/security/goals.md)
+  - [API docs](../engineering/cloud/growth/goals.md)
+- [Security](../engineering/cloud/security/goals.md)
 - DevOps/SRE
-- [Extensibility](../engineering/developer-insights/extensibility/goals.md)
+- [Extensibility](../engineering/cloud/extensibility/goals.md)
 
 ## Metrics
 
