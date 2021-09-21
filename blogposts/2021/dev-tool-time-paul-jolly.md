@@ -65,7 +65,7 @@ In a future post, we’ll share a tutorial that explains more of what CUE can do
 
 CUE, in Paul’s words, “is an open source language for defining, generating and validating all kinds of data,” including configuration, APIs, database schemas, and code.
 
-[Marcel van Lohuizen](https://twitter.com/mpvl_), an [ex-Googler](https://www.semrush.com/analytics/organic/overview?db=us&q=https%3A%2F%2Fabout.sourcegraph.com%2Fblog%2Fex-googler-guide-dev-tools%2F&searchType=subfolder), started CUE in 2018. Marcel, Paul said, has a deep background in configuration management, having been part of the [initial Borg team](https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/) (Borg is a spiritual predecessor to Kubernetes).
+[Marcel van Lohuizen](https://twitter.com/mpvl_), an [ex-Googler](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools/), started CUE in 2018. Marcel, Paul said, has a deep background in configuration management, having been part of the [initial Borg team](https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/) (Borg is a spiritual predecessor to Kubernetes).
 
 CUE solves a number of pain points, such as dealing with white space in YAML or configuration templating. “If you ever find yourself fighting with white space in YAML,” Paul said, “that is an area that CUE can solve.” Essentially, CUE is trying to solve the problem of configurations at scale. Considering how often non-engineers are in charge of maintaining configuration, Paul explained, CUE is also designed to be approachable and accessible.
 
