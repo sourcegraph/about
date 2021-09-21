@@ -187,9 +187,8 @@ All of the following needs to occur within one pull request. See [this section](
 
 1. Rename the file to indicate its new location as described in [Github's documentation](https://docs.github.com/en/repositories/working-with-files/managing-files/moving-a-file-to-a-new-location)
 1. Address any errors in the [Handbook Checks](#handbook-checks). Since you are changing the location of a file, any existing links to that file will break. You may see errors like this:
-     ![Broken Link Errors](https://storage.googleapis.com/sourcegraph-assets/handbook/relocate-page-errors.png)
+   ![Broken Link Errors](https://storage.googleapis.com/sourcegraph-assets/handbook/relocate-page-errors.png)
 1. [Add redirects](#adding-redirects) to account for any instance where someone may be directed to the old URL.
-     
 
 ## Adding redirects
 
