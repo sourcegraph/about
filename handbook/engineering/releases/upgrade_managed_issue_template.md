@@ -14,6 +14,7 @@ Arguments:
 These [managed instances](https://about.sourcegraph.com/handbook/engineering/distribution/managed) upgrades are scheduled for **$ONE_WORKING_DAY_AFTER_RELEASE**.
 
 To perform these upgrades, follow the [managed instances upgrade process](https://about.sourcegraph.com/handbook/engineering/distribution/managed/upgrade_process).
+Make sure to upgrade internal instances before customer instances.
 
 ---
 
@@ -26,10 +27,9 @@ To perform these upgrades, follow the [managed instances upgrade process](https:
 
 <!-- DO NOT MENTION CUSTOMER NAMES on this list - use a Hubspot link instead. -->
 
-- [ ] Upgrade instance for [https://app.hubspot.com/contacts/2762526/company/1712860829](https://app.hubspot.com/contacts/2762526/company/1712860829/)
-- [ ] Upgrade instance for [https://app.hubspot.com/contacts/2762526/company/974657309/](https://app.hubspot.com/contacts/2762526/company/974657309/)
-- [ ] Upgrade instance for [https://app.hubspot.com/contacts/2762526/company/962613882/](https://app.hubspot.com/contacts/2762526/company/962613882/)
-- [ ] Upgrade instance for [https://app.hubspot.com/contacts/2762526/contact/37418051](https://app.hubspot.com/contacts/2762526/contact/37418051)
-- [ ] Upgrade instance for [https://app.hubspot.com/contacts/2762526/contact/31240401](https://app.hubspot.com/contacts/2762526/contact/31240401)
-- [ ] Upgrade instance for [https://app.hubspot.com/contacts/2762526/company/6301327782](https://app.hubspot.com/contacts/2762526/company/6301327782)
-- [ ] Upgrade instance for [https://app.hubspot.com/contacts/2762526/company/6284643600/](https://app.hubspot.com/contacts/2762526/company/6284643600/)
+- [ ] Upgrade instance for https://github.com/sourcegraph/accounts/issues/528
+- [ ] Upgrade instance for https://github.com/sourcegraph/accounts/issues/532
+- [ ] Upgrade instance for https://github.com/sourcegraph/accounts/issues/542
+- [ ] Upgrade instance for https://github.com/sourcegraph/customer/issues/252 <!-- instance is under a different name from account -->
+- [ ] Upgrade instance for https://github.com/sourcegraph/accounts/issues/547
+- [ ] Upgrade instance for https://github.com/sourcegraph/customer/issues/350 <!-- TODO can't find the account for this -->
