@@ -4,6 +4,10 @@ We use a hierarchy of feature labels to set expectations with our users and inte
 
 [GA ("General Availability")](https://www.productplan.com/glossary/general-availability/) has no in-product label and is the default user assumption for an unlabelled feature.
 
+## Relationship to In-Product Trials
+
+In-product trials refer to the ability to try Sourcegraph or a specific GA feature in either a limited capacity (eg 5 changesets per batch change) or a limited period of time (eg 30 day trial). This is separate from beta and experimental stages.
+
 ## Why we use these labels:
 
 Labelling features correctly lets us move quickly and release early in order to validate our direction. An `Experimental` or `Beta` label and its [corresponding user-facing documentation](https://docs.sourcegraph.com/admin/beta_and_prototype_features):
