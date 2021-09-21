@@ -9,9 +9,6 @@ Your perspective as both a new user of Sourcegraph and a new teammate is very va
 ## Designer checklist
 
 - Add your name to the [Project card](https://www.figma.com/file/8qNcDzOXLj1hcOM76WDPN9/🛠Project-Tools?node-id=1%3A203) designer list
-- Create your first Figma project
-  - Use the [Project Template](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/Project-Template?node-id=246%3A11) (read more in [Documents and Templates](https://about.sourcegraph.com/handbook/product/design/documents_templates))
-  - Remember to add the Project card
 - Check if you're added to the Design Team group on Slack. Join the design-related channels:
   - design
   - product-design-internal
@@ -25,3 +22,8 @@ Your perspective as both a new user of Sourcegraph and a new teammate is very va
   - code hosts: [GitHub](https://github.com/) and [GitLab] (https://gitlab.com/)
   - code editors: [VS Code](https://code.visualstudio.com/) (and other IDEs like [IntelliJ](https://www.jetbrains.com/idea/) and [Atom](https://atom.io/))
   - similar products: [grepp.app](https://grep.app/)
+
+## Creating your first Figma project
+
+  - Use the [Project Template](https://www.figma.com/file/JzufQnpTQtreyfnA3qpmfz/Project-Template?node-id=246%3A11) (read more in [Documents and Templates](https://about.sourcegraph.com/handbook/product/design/documents_templates))
+  - Remember to add the Project card
