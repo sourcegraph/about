@@ -24,7 +24,7 @@ What is the team's reason for existing? What is the fundamental value they aim t
 
 ## Themes
 
-### Make it easier to discover the value of the complete Code Graph
+### Provide value quickly to all developers via the Code Graph
 
 Learning what's possible and how to get the most out of Code Graph tends to be trial and error, especially for an individual developer who might have a unique set of use cases and interests that they would search for.
 
