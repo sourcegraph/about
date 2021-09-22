@@ -1,6 +1,6 @@
 ---
 title: '“It’s small things that, when combined, make your development experience that much more pleasant”: Dev Tool Time with Paul Jolly'
-description: 'Paul Jolly, CTO and founder at myitcv.io, shares how a minimalist desk setup, combined with the sophisticated programming language CUE, creates a streamlined development environment.'
+description: 'Paul Jolly, maintainer on the CUE project and co-creator of Play with Go, shares how a minimalist desk setup, combined with the sophisticated programming language CUE, creates a streamlined development environment.'
 author: Nick Moore
 authorUrl: https://twitter.com/nickwritesit
 publishDate: 2021-09-22T10:00-07:00
@@ -11,7 +11,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-tim
 published: true
 ---
 
-When Paul Jolly, CTO and founder at [myitcv.io](https://myitcv.io/), joined us for Dev Tool Time on September 15, 2021, he toured us through a workflow that included an eight-year-old laptop, excluded a chair, and involved extensive use of CUE, an open source data validation language.
+When Paul Jolly, maintainer on the CUE project and co-creator of Play with Go, joined us for Dev Tool Time on September 15, 2021, he toured us through a workflow that included an eight-year-old laptop, excluded a chair, and involved extensive use of CUE, an open source data validation language.
 
 We split the recording of this episode into two parts: the first focuses on Paul's desk setup and basic development environment; the second focuses on CUE.
 
