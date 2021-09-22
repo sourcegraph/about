@@ -23,6 +23,7 @@ Your perspective as both a new user of Sourcegraph and a new teammate is very va
   - code editors: [VS Code](https://code.visualstudio.com/) (and other IDEs like [IntelliJ](https://www.jetbrains.com/idea/) and [Atom](https://atom.io/))
   - similar products: [grepp.app](https://grep.app/)
 - Add yourself to the design club meeting on Tuesdays
+- Read the [Product Design team handbook](https://about.sourcegraph.com/handbook/product/design) content
 
 ## Creating your first Figma project
 
