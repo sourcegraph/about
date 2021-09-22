@@ -6,8 +6,8 @@ authorUrl: https://twitter.com/nickwritesit
 publishDate: 2021-09-22T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-paul-jolly
-heroImage:
-socialImage:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/dev-tool-time-paul-jolly-hero.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/dev-tool-time-paul-jolly-hero.jpg
 published: true
 ---
 
