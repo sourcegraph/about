@@ -1464,3 +1464,27 @@ To add yourself to this page:
 - Github: [jjinnii](https://github.com/jjinnii)
 - [sara.lee@sourcegraph.com](mailto:sara.lee@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/sara-yoojin-lee/)
 - Sara is a Product Designer, aspiring artist 🎨, and simulation game enthusiast 🎮. She resides in Chicago, IL and Chapel Hill, NC for equal parts of the year. She is passionate about using design as a medium to make the complex more accessible to people. She is currently working on learning Javascript and drinking less cups of coffee ☕️.
+
+## Ben Venker
+
+- Product Manager - Search Product
+- St. Louis, MO, United States 🇺🇸
+- GitHub: [benvenker](https://github.com/benvenker)
+- [ben.venker@sourcegraph.com](mailto:ben.venker@sourcegraph.com)
+- Ben socially engineered his way into his first product role and has been hooked ever since. He currently lives in St. Louis, MO, but has lived all over the country at various times. He enjoys hacking on personal dev projects, playing guitar, and getting completely engrossed in new, random pursuits.
+
+## Win Yu (he/his)
+
+- Technical Talent Sourcer
+- Yangon, Burma
+- Github: [wysg](https://github.com/wysg)
+- [win.yu@sourcegraph.com](mailto:win.yu@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/winyuglobal/)
+- After graduating from Middlebury College with a B.A . in Economics and a minor in South Asian studies, he worked at a few companies and also co-founded two schools in Burma. When not working, he loves spending time with family and friends, traveling, and swimming. He also loves keeping up with healthy meals.
+
+## Sam Jones
+
+- Senior Corporate & Commercial Counsel
+- Oakland, CA, United States 🇺🇸
+- GitHub: [srj427](https://github.com/srj427)
+- [sam.jones@sourcegraph.com](mailto:sam.jones@sourcegraph.com)
+- Sam is a San Francisco Bay Area native. Prior to joining Sourcegraph, Sam represented technology companies and investment firms in corporate transactional work including commercial contracts, M&A and corporate financings as both an in-house counsel and external advisor. He loves hiking and running with his dog Gigi, cooking and playing golf. Sam is also learning to brew beer and maintain a garden in his free time.

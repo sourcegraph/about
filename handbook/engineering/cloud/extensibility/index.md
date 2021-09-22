@@ -6,7 +6,6 @@ The extensibility team owns our code host and third-party integrations (includin
 
 <!-- Due to the markdown renderer that we use, the indentation here is sensitive. If you want to change the indentation, check that it renders correctly locally with `make serve` -->
 
-- [Joel Kwartler](../../../company/team/index.md#joel-kwartler-he-him) ([Product Manager](../../../product/roles/index.md#product-manager)) is the acting PM for this team until we can hire a dedicated PM for it. Once that happens, Joel will focus entirely on code insights.
 - [Sara Lee](../../../company/team/index.md#sara-lee-she-her) ([Product Designer](../../../product/roles/index.md#product-designer))
 - [Murat Sutunc](../../../company/team/index.md#murat-sutunc-he-him) ([Engineering Manager](../../roles.md#engineering-manager)) {#extensibility-eng}
   - [TJ Kandala](../../../company/team/index.md#tharuntej-kandala-he-him)
@@ -28,7 +27,7 @@ Sourcegraph powers your first stop for any information about your code, for any 
 
 ## Responsibilities
 
-_The extensibility team has many ownership areas, but not all of them are under active development at the same time. We nonetheless list them all here as a source of truth for deciding if an issue, feedback, or comment is relevant to the extensibility team. You can find our current priorities in our [goals page](goals.md)._
+_The extensibility team has many ownership areas, but not all of them are under active development at the same time. We nonetheless list them all here as a source of truth for deciding if an issue, feedback, or comment is relevant to the extensibility team. You can find our current priorities in our [goals page](../../../direction/cloud/extensibility/index.md)._
 
 1. Sourcegraph extensions
    - Providing a Sourcegraph extension API that enables developers to bring data from their favorite developer tools into their Sourcegraph workflow.
@@ -50,7 +49,7 @@ _The extensibility team has many ownership areas, but not all of them are under 
 
 ## Goals
 
-[Goals](goals.md)
+[Goals](../../../direction/cloud/extensibility/index.md)
 
 ## Growth plan
 
@@ -72,7 +71,7 @@ We use a modern, flexible tech stack. Here are some of the technologies we use t
 
 ### Planning, Prioritization, and Execution
 
-As a team, we’ve experimented with Scrum and Kanban and decided that our team operates much more efficiently when we focus on continuous delivery with changing priorities. We use our [Github Project Board](https://github.com/orgs/sourcegraph/projects/145?fullscreen=true) to track individual tasks and their status.
+As a team, we’ve experimented with Scrum and Kanban and decided that our team operates much more efficiently when we focus on continuous delivery with changing priorities. We use our [Github Project Board](https://github.com/orgs/sourcegraph/projects/213/) to track individual tasks and their status.
 We have the following standard scrum columns on our task board:
 
 #### Column: To Do
