@@ -26,7 +26,7 @@ If you need to create an issue with more specific customer information, you shou
 
 ### What happens to GitHub issues next?
 
-Each product/engineering team will triage the issues adn explaining the decision: prioritize it, move it to the backlog, close it, ask for clarification. Each team's PM (EM for teams without a PM) is ultimately responsible for responding to an issue.
+Each product/engineering team will triage the issues and explain the reason for their decision: prioritize it, move it to the backlog, close it, ask for clarification. Each team's PM (EM for teams without a PM) is ultimately responsible for responding to an issue.
 
 ## What if the feedback is [a possible exception]?
 
