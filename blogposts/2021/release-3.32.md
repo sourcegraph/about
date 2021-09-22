@@ -1,6 +1,6 @@
 ---
 title: 'Sourcegraph 3.32 release'
-publishDate: 2021-09-20T10:00-07:00
+publishDate: 2021-09-23T10:00-07:00
 description: 'Sourcegraph 3.32 introduces UPDATE'
 tags: [blog, release]
 slug: 'release/3.32'
@@ -8,61 +8,28 @@ published: false
 heroImage:
 socialImage:
 changelogItems:
-  # Added
-  - description: The search sidebar shows a revisions section if all search results are from a single repository. This makes it easier to search in and switch between different revisions.
+  - description: The search sidebar now shows a revisions section when all search results are from a single repository. This makes it easier to search in and switch between different revisions.
     url: https://github.com/sourcegraph/sourcegraph/pull/23835
     category: Search
   - description: The various alerts overview panels in Grafana can now be clicked to go directly to the relevant panels and dashboards.
     url: https://github.com/sourcegraph/sourcegraph/pull/24920
-    category:
-  - description: 'Added a `Documentation` tab to the Site Admin Maintenance panel that links to the official Sourcegraph documentation.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/24917
     category: Admin
-  - description: Code Insights that run over all repositories now generate a moving daily snapshot between time points.
-    url: https://github.com/sourcegraph/sourcegraph/pull/24804
-    category: Repositories
-  - description: The Code Insights GraphQL API now restricts the results to user, org, and globally scoped insights. Insights will be synced to the database with access associated to the user or org setting containing the insight definition.
-    url: https://github.com/sourcegraph/sourcegraph/pull/25017
-    category: API
-  # Changed
   - description: '`allowGroupsPermissionsSync` in the GitHub authorization provider is now required to enable the experimental GitHub teams and organization permissions caching.'
     url: https://github.com/sourcegraph/sourcegraph/pull/24561
     category:
   - description: GitHub external code hosts now validate if a corresponding authorization provider is set, and emits a warning if not.
     url: https://github.com/sourcegraph/sourcegraph/pull/24526
-    category:
-  - description: Sourcegraph is now built with Go 1.17.
-    url: https://github.com/sourcegraph/sourcegraph/pull/24566
-    category:
-  - description: Code Insights is now available only in the Sourcegraph enterprise.
-    url: https://github.com/sourcegraph/sourcegraph/pull/24741
-    category:
-  - description: 'Prometheus in Sourcegraph with Docker Compose now scrapes Postgres and Redis instances for metrics. deploy-sourcegraph-docker#580'
-    url: 'https://github.com/sourcegraph/deploy-sourcegraph-docker/pull/580'
-    category:
-  - description: Symbol suggestions now leverage optimizations for global searches.
-    url: https://github.com/sourcegraph/sourcegraph/pull/24943
-    category: Search
-  # Fixed
-  - description: 'Fixed a number of issues where repository permissions sync may fail for instances with very large numbers of repositories. [#24852](https://github.com/sourcegraph/sourcegraph/pull/24852),'
+    category: Admin
+  - description: Fixed a number of issues where repository permissions sync may fail for instances with very large numbers of repositories.
     url: https://github.com/sourcegraph/sourcegraph/pull/24972
     category: Repositories
-  - description: 'Fixed excessive re-rendering of the whole web application on every keypress in the search query input.'
+  - description: 'Fixed excessive re-rendering of the web application on every keypress in the search query input.'
     url: https://github.com/sourcegraph/sourcegraph/pull/24844
     category: Search
-  - description: 'Code Insights line chart now supports different timelines for each data series (lines).'
-    url: https://github.com/sourcegraph/sourcegraph/pull/25005
-    category:
-  - description: Postgres exporter now exposes pg_stat_activity account to show the number of active DB connections.
-    url: https://github.com/sourcegraph/sourcegraph/pull/25086
-    category:
-  # Removed
   - description: 'The `PRECISE_CODE_INTEL_DATA_TTL` environment variable is no longer read by the worker service. Instead, global and repository-specific data retention policies configurable in the UI by site-admins will control the length of time LSIF uploads are considered _fresh_.'
     url: https://github.com/sourcegraph/sourcegraph/pull/24793
     category: Admin
-  - description: 'The `repo.cloned` column was removed as it was deprecated in 3.26.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/25066
-    category: Repositories
+
 ---
 
 Sourcegraph 3.32 is now available! For this release, we introduced:
