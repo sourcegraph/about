@@ -27,9 +27,11 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
     public render(): JSX.Element | null {
         const md = this.props.data.markdownRemark
         const title = md.frontmatter.title
+        const seoTitle = md.frontmatter.seoTitle
         const publishDate = md.frontmatter.publishDate
         let slug = md.frontmatter.slug
         const description = md.frontmatter.description ? md.frontmatter.description : md.excerpt
+        const seoDescription = md.frontmatter.seoDescription
         const content = md.html
         const image = md.frontmatter.heroImage
             ? `${md.frontmatter.heroImage}`
@@ -38,6 +40,8 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
             title,
             image,
             description,
+            seoTitle,
+            seoDescription
         }
 
         const { guestsHTML, audioHTML, summaryHTML, transcriptHTML, showNotesHTML } = getHTMLParts(content)
@@ -137,6 +141,8 @@ export const pageQuery = graphql`
                 tags
                 publishDate(formatString: "MMMM D, YYYY")
                 slug
+                seoTitle
+                seoDescription
             }
             html
             excerpt
