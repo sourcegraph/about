@@ -13,7 +13,7 @@ published: true
 
 When Paul Jolly, CTO and founder at [myitcv.io](https://myitcv.io/), joined us for Dev Tool Time on September 15, 2021, he toured us through a workflow that included an eight-year-old laptop, excluded a chair, and involved extensive use of CUE, an open source data validation language.
 
-We split the recording of this episode into two parts: the first focuses on Paul's desk setup and basic development environment; the second focuses on CUE. 
+We split the recording of this episode into two parts: the first focuses on Paul's desk setup and basic development environment; the second focuses on CUE.
 
 Check out the first recording below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
