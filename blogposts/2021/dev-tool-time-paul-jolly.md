@@ -13,7 +13,15 @@ published: true
 
 When Paul Jolly, CTO and founder at [myitcv.io](https://myitcv.io/), joined us for Dev Tool Time on September 15, 2021, he toured us through a workflow that included an eight-year-old laptop, excluded a chair, and involved extensive use of CUE, an open source data validation language.
 
-You can watch the recording of this episode at the bottom of this blog post, but first let’s check out Paul’s desk:
+We split the recording of this episode into two parts: the first focuses on Paul's desk setup and basic development environment; the second focuses on CUE. 
+
+Check out the first recording below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
+
+<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IBHjKNnEM1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Let’s check out Paul’s desk:
 
 ![Paul’s work desk](https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/dev-tool-time-paul-jolly-desk-big.jpeg)
 
@@ -79,6 +87,10 @@ In a third example, Paul used the [Sourcegraph deploy repo](https://github.com/s
 
 By the end of his CUE tour, Paul said “We’ve barely scratched the surface.” He pointed viewers toward the [CUE repository](https://github.com/cuelang/cue) to learn more.
 
-## Watch the recording
+## Watch Paul explain CUE
 
-Check out the recording of the episode below, and be sure to sign up for upcoming events!
+Check out the recording of the CUE tour below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
+
+<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mU-lEszuht0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
