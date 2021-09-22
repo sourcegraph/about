@@ -14,27 +14,7 @@ You can reach us at the #product channel or @product-team on Slack. If you have 
 
 ## Roadmap
 
-Within the product organization, individual product engineering teams set their own goals and roadmaps aligned to the [company OKRs](../company/goals/2022_q3.md), and each have a direction page with all the details of what they are working on next and why. There is also an [(currently internal only) presentation](https://docs.google.com/presentation/d/1o3R8WUIhzzRz0x5laTwVcizOzVWrMBe5MCAz74H45Ss/edit#slide=id.gd8d1ce5e98_0_164) with highlights of planned features from all teams.
-
-Maturity for different product areas is tracked in our [maturity tracker](../direction/maturity/index.md).
-
-- Code Graph
-  - [Search core and Search product](../engineering/search/goals.md)
-  - [Batch Changes](../engineering/batch-changes/goals.md)
-  - [Code Intelligence](../engineering/code-intelligence/goals.md)
-  - [Code Insights](../engineering/developer-insights/code-insights/goals.md)
-- Enablement
-  - Repository Management
-  - [Distribution](../engineering/distribution/goals.md)
-  - [Frontend Platform](../engineering/developer-insights/frontend-platform/goals.md)
-- Cloud
-  - [Core application](../engineering/core-application/goals.md)
-  - Cloud SaaS
-  - Growth
-    - [API docs](../engineering/developer-insights/api-docs/goals.md)
-  - [Security](../engineering/security/goals.md)
-  - DevOps/SRE
-  - [Extensibility](../engineering/developer-insights/extensibility/goals.md)
+The roadmap for the product organization as well as individual teams can be found on the [Sourcegraph direction page](../direction/index.md). Feature-level maturity can be tracked in the [maturity tracker](../direction/maturity/index.md).
 
 ## Metrics
 
@@ -53,7 +33,7 @@ In an effort to gain more clarity around product success and growth on Cloud, we
 - [Working Document](https://docs.google.com/document/d/1o0dLmdRRI6uWIuAg_8VQw25KnTM1CBDKKR2K91SxpAI/edit#)
 - [Pull Request](https://github.com/sourcegraph/about/pull/4521)
 
-### Improve process for documentating product strategy
+### Improve process for documenting product strategy
 
 Our current [product goals pages](index.md#roadmap) are not always up to date so can't be relied upon by the rest of the organization. They are also mixed in with other engineering team content so it can be hard to find the product direction components. We need to update and organize these pages, and then want to improve this process so that the goals pages are the always updated source of truth.
 
@@ -76,6 +56,16 @@ Customer Engineering is looking to better undrestand the known boundaries of our
 - [Working Document](https://docs.google.com/spreadsheets/d/101JXaau2EPvi322AOFmNeoeuXSJqlruD8gBBsHl1fmI/edit#gid=0)
 - [Pull Request](https://github.com/sourcegraph/about/pull/4617)
 
+### Improving how we communicate pre-release features
+
+We are working with the marketing and corporate communication teams to make sure that how we talk about features is clear leading up to release, especially when they are available early, and how we communicate when they become fully live.
+
+- Owner: Jason
+- [RFC 479: Communicating about product features that are not launched, and also not pre-released](https://docs.google.com/document/d/1_FFnKPBKgGI6fkAoxQUonjgoR6UcagclHqJakYJadRY/edit#)
+- [RFC 481: Should we convert formerly free preview features into paid ones at GA](https://docs.google.com/document/d/10r7fG-qton1uFlwHqRvgj12DD5AgsaF8yGiOf2JNQWQ/edit#heading=h.trqab8y0kufp)
+- [RFC 473: Decouple product and marketing launches/milestones for features that are available early](https://docs.google.com/document/d/1aZcalAUXZGl3GVEBBrUhNtbhMc4hQWy1_8UWHN6q4ys/edit#heading=h.trqab8y0kufp)
+- [RFC 480: Beta and experimental feature definitions/entry and exit criteria](https://docs.google.com/document/d/1T605IS77xwXjyHpCRYY9NBwTIlV9jmkZL3qwrDeTpog/edit#heading=h.trqab8y0kufp)
+
 ### Other initiatives
 
 There are a few other initiatives we will be tracking here soon:
@@ -84,6 +74,8 @@ There are a few other initiatives we will be tracking here soon:
 - Make sure our current product process is documented
 - Experimentation and improvements to planning
 - Consolidation and simplification of tooling
+
+In the meantime, we are using a [tracking document](https://docs.google.com/document/d/1ezjeAV2wnUKfXQjHE-Cy9eZ7i4HX2mty1zuE4VcGGGo/edit#) for these.
 
 ## Org chart
 
