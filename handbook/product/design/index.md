@@ -11,7 +11,7 @@ We also seek to make it easier and more efficient to build Sourcegraph itself. T
 - [Alicja Suska](../../company/team/index.md#alicja-suska-she-her) (she/her)
 - [Rob Rhyne](../../company/team/index.md#rob-rhyne) (he/him)
 - [Quinn Keast](../../company/team/index.md#quinn-keast-he-him) (he/him) – [ReadMe](https://quinnkeast.com/readme)
-- Sara Lee (she/her)
+- [Sara Lee](../../company/team/index.md#sara-lee-she-her) (she/her)
 
 <img width="30%" height="30%" src="design-team-logo.jpg" alt="Sourcegraph Design team logo">
 
@@ -62,7 +62,7 @@ We avoid siloed work as much as possible. Instead of design and development phas
 - [Ways of working](./ways_of_working/index.md)
 - [Design artifacts](./artifacts/index.md)
 - [Visual design](./visual_design/index.md)
-- [Metrics](./metrics/index.md)
+- [Analytics and product design](./metrics/index.md)
 - [Design critiques](./design_critiques/index.md) (Coming soon)
 - [Reviewing design](./reviewing_design/index.md)
 - [Research](./research/index.md)
