@@ -143,7 +143,7 @@ _This is just one path for creating a new page in the Handbook. These steps can 
 1. In a new tab, navigate to the page where you want to create a link to your new page.
    -You can do this in the same tab if you'd like, but it may be easier to keep your PR up in its own tab while you do this part.
 1. Click on the branch dropdown on the upper left side of your screen (it probably says "main"). Search for the branch you named when creating your first change, and select it.
-    ![Update Branch](https://storage.googleapis.com/sourcegraph-assets/handbook/update-branch.png)
+   ![Update Branch](https://storage.googleapis.com/sourcegraph-assets/handbook/update-branch.png)
 1. Click the pencil icon to edit your file.
 1. Create a [link using a relative path](#using-relative-paths-to-link-handbook-pages) in the appropriate location on your page.
 1. Commit your changes.
