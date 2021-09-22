@@ -27,9 +27,9 @@ In terms of hardware, Paul likes stability. The real magic, as we discovered lat
 
 ## Linux and VMware Fusion
 
-Like Mitchell Hashimoto, [who we hosted in August](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/), Paul does most of his development within Linux, which he runs within VMware Fusion. In terms of disk i/o, development within a VMware Fusion virtual machine, running on top of MacOS, is actually [faster than native Mac](https://www.google.com/url?q=https://github.com/golang/go/issues/28739&sa=D&source=editors&ust=1631903935728000&usg=AOvVaw3lB31d39lsuwMyfXtjHtph).
+Like Mitchell Hashimoto, [who we hosted in August](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/), Paul does most of his development within Linux, which he runs within VMware Fusion. In terms of disk I/O, development within a VMware Fusion virtual machine, running on top of MacOS, is actually [faster than native Mac](https://www.google.com/url?q=https://github.com/golang/go/issues/28739&sa=D&source=editors&ust=1631903935728000&usg=AOvVaw3lB31d39lsuwMyfXtjHtph).
 
-Paul runs Ubuntu 21.04, though notes he is “very taken” by Mitchell’s [NixOS setup](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/#NixOS). Instead of Nix snapshots, he uses VMware Fusion snapshots, which he acknowledges are coarser. Paul is also a heavy user of [AwesomeWM](https://awesomewm.org/), though notes he might switch to [i3](https://i3wm.org/) one day.
+Paul runs Ubuntu 21.04, though notes he is “very taken” by Mitchell’s [NixOS setup](https://about.sourcegraph.com/blog/dev-tool-time-mitchell-hashimoto/#NixOS). Instead of Nix snapshots, he uses VMware Fusion snapshots, which he acknowledges are coarser. Paul is also a heavy user of [AwesomeWM](https://awesomewm.org/), though said he might switch to [i3](https://i3wm.org/) one day.
 
 ## Xterm
 
@@ -73,11 +73,11 @@ The end result is the ability to have a “unified view of your configuration ac
 
 ### What can CUE do?
 
-In one example, Paul showed how, with CUE, you can have data and schema sitting alongside each other. You can also easily translate between different data and schema encodings. CUE can translate between different formats and create a single source of truth that works nicely: “All of your tooling can then hang off that,” Paul said.
+In one example, Paul showed how, with CUE, you can have data and schema sitting alongside each other. CUE can translate between different formats and create a single source of truth that works nicely: “All of your tooling can then hang off that,” Paul said.
 
 In another example, Paul used CUE to validate a YAML file to ensure it obeys the schema. Validation is powerful when you’re trying to “move as early as possible into your configuration pipeline,” he explained. Instead of leaving configuration to the last minute or trying to quickly work it out when your configuration fails, CUE enables you to figure it out early.
 
-In a third example, Paul used a fork of Sourcegraph to show a base directory of the YAML specification of all the Kubernetes objects. Paul noted the different services that form part of the Sourcegraph configuration, explaining how maintaining all the regularity between different services and objects can become a headache. Paul showed how you can use CUE to “view things as a unified configuration.” With CUE, Paul was able to remove boilerplate and move things that are common between configurations to the top.
+In a third example, Paul used the [Sourcegraph deploy repo](https://github.com/sourcegraph/deploy-sourcegraph) to show a base directory of the YAML specification of all the Kubernetes objects. Paul noted the different services that form part of the Sourcegraph configuration, explaining how maintaining all the regularity between different services and objects can become a headache. Paul showed how you can use CUE to “view things as a unified configuration.” With CUE, Paul was able to remove boilerplate and move things that are common between configurations to the top.
 
 By the end of his CUE tour, Paul said “We’ve barely scratched the surface.” He pointed viewers toward the [CUE repository](https://github.com/cuelang/cue) to learn more.
 
