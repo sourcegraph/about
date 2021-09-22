@@ -52,6 +52,17 @@
 /handbook/product/product_management/product_process /handbook/product/product_management 308
 /handbook/product/roadmap /handbook/product 308
 
+/handbook/engineering/cloud/extensibility/goals /handbook/direction/cloud/extensibility 308
+/handbook/engineering/cloud/growth/goals /handbook/direction/cloud/growth 308
+/handbook/engineering/cloud/security/goals /handbook/direction/cloud/security 308
+/handbook/engineering/code-graph/batch-changes/direction /handbook/direction/code-graph/batch-changes 308
+/handbook/engineering/code-graph/code-insights/goals /handbook/direction/code-graph/code-insights 308
+/handbook/engineering/code-graph/code-intelligence/goals /handbook/direction/code-graph/code-intelligence 308
+/handbook/engineering/code-graph/search/goals /handbook/direction/code-graph/search 308
+/handbook/engineering/core-application/goals /handbook/direction/cloud/core-application 308
+/handbook/engineering/distribution/goals /handbook/direction/enablement/distribution 308
+/handbook/engineering/enablement/frontend-platform/goals /handbook/direction/enablement/frontend-platform 308
+
 /handbook/values /handbook/company/values 308
 
 /handbook/ce/support /handbook/support 308
