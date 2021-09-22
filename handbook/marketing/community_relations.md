@@ -30,7 +30,7 @@ Playing an active role in broadening our reach in the community, building authen
 
 ## Code of Conduct
 
-[Code of Conduct](community-code-of-conduct.md)
+Code of Conduct - WIP
 
 ## Community calendars
 
