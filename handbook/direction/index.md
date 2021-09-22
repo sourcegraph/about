@@ -1,10 +1,12 @@
 # Sourcegraph direction
 
-Product strategy is the bridge (how we're going to get there) between our [vision](../company/strategy.md) (where we're going) and the [roadmap](../product/roadmap.md) (what we need to do).
+Product strategy is the bridge (how we're going to get there) between our [vision](../company/strategy.md) (where we're going) and the [roadmap](../product/index.md#roadmap) (what we need to do).
+
+This page speaks to the company-wide direction, but individual orgs and teams produce their own direction pages as well. You can find an index on the [product home page](../product/index.md#roadmap)
 
 Want to help us achieve these goals? [We're hiring!](https://github.com/sourcegraph/careers)
 
-## 2020 Product strategy
+## Product strategy
 
 This is our strategy for realizing our [1-year vision](../company/strategy.md#1-year-vision).
 
@@ -58,3 +60,30 @@ Sourcegraph has access to the low level data needed to build insights that are h
 
 - Do research to understand what questions engineering leaders want to answer about their organization's code.
 - Add features to Sourcegraph that provide insights that are valuable to both leaders and developers.
+
+## Per-area direction pages
+
+Within this overall product direction, individual product areas set their own goals and roadmaps aligned to the [company OKRs](../company/goals/2022_q3.md), [Sourcegraph direction](../direction/index.md) and each have a direction page with all the details of what they are working on next and why. There is also an [(currently internal only) presentation](https://docs.google.com/presentation/d/1o3R8WUIhzzRz0x5laTwVcizOzVWrMBe5MCAz74H45Ss/edit#slide=id.gd8d1ce5e98_0_164) with highlights of planned features from all teams.
+
+### Code Graph
+
+- [Search core and Search product](code-graph/search/index.md)
+- [Batch Changes](code-graph/batch-changes/index.md)
+- [Code Intelligence](code-graph/code-intelligence/index.md)
+- [Code Insights](code-graph/code-insights/index.md)
+
+### Enablement
+
+- Repository Management
+- [Distribution](enablement/distribution/index.md)
+- [Frontend Platform](enablement/frontend-platform/index.md)
+
+### Cloud
+
+- [Core application](cloud/core-application/index.md)
+- Cloud SaaS
+- Growth
+  - [API docs](cloud/growth/index.md)
+- [Security](cloud/security/index.md)
+- DevOps/SRE
+- [Extensibility](cloud/extensibility/index.md)

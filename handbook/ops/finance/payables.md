@@ -2,9 +2,9 @@
 
 ## Limits
 
-Generally, you should feel free to spend in ways that are in the best interest of the business (see our philosophy in [spending company money](../../people-ops/spending-company-money.md)).
+Generally, you should feel free to spend in ways that are in the best interest of the business (see our philosophy in [spending company money](spending-company-money.md)).
 
-Specific categories of purchases that are listed on the [spending company money page](../../people-ops/spending-company-money.md) (e.g. laptops, home office setup, etc.) do not need to follow the approval process below. They are pre-approved and can be [submitted for reimbursement](expenses.md) directly.
+Specific categories of purchases that are listed on the [spending company money page](spending-company-money.md) (e.g. laptops, home office setup, etc.) do not need to follow the approval process below. They are pre-approved and can be [submitted for reimbursement](expenses.md) directly.
 
 However, if you intend to make any other purchase that falls above the limits below, please refer to our [Company accounts payable policy](ap.md).
 
@@ -27,7 +27,7 @@ Just [contact the finance team](index.md#contact) if you believe you are eligibl
 | Managers and Directors                     | $1,000                       |
 | Analyst and Senior Analyst (with approval) | $500                         |
 
-It is not required to provide receipts for corporate purchases on Brex cards (i.e. vendor payments). For purchase of personal purchases above $50, (i.e. laptops, food, travel expenses), please upload a receipt.
+For corporate purchases on Brex cards (i.e. vendor payments) above $150, please provide receipts. For purchase of personal purchases above $50, (i.e. laptops, food, travel expenses), please upload a receipt. [Here](https://support.brex.com/how-do-i-attach-receipts-to-brex-transactions/) is guidance for the receipt upload process.
 
 If you have a purchase that you’d like to explain/clarify post about it in the `#finance` Slack channel (e.g. if it's some new system for the team) or email `finance@sourcegraph.com` (e.g. if it's a personal reimbursable expense).
 

@@ -12,7 +12,7 @@ Considering the Onboarding checklist lives in Process St., this page contains an
 - **[Greenhouse](https://www.greenhouse.io/):** Our recruiting tool for tracking candidates in the hiring pipeline.
 - **[Slack](https://slack.com/)**: Our team communication tool. For consistency, use `First Name (or preferred name) Preferred Last Name` as your display name on Slack.
 - **[GitHub](https://github.com/sourcegraph/)**: Access to our code and our handbook.
-- **[Lattice](https://sourcegraph.latticehq.com/)**: We use this tool for our [teammate feedback cycles](../review-cycles/index.md) (takes place twice a year– Noemi will send out details) and the [Onboarding feedback milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding#onboarding-feedback-milestones) (these take place every month for three months).
+- **[Lattice](https://sourcegraph.latticehq.com/)**: We use this tool for our [Impact review cycles](../impact-reviews.md) (takes place every six months based on your start date) and the [Onboarding feedback milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding#onboarding-feedback-milestones) (these take place every month for three months).
 - **[1Password](https://1password.com/)**: Tool we use to share team passwords and store your own passwords.
 - **[Zoom](https://zoom.us/signin):** Our video communication tool. Set up your Zoom account and follow the [recommended settings](../../communication.md#video-calls).
 - **[Jamf Now](https://sourcegraph.jamfcloud.com/)**: Enroll your **Apple** device in our MDM and in FileVault (ask [Tech Ops](https://about.sourcegraph.com/handbook/ops/tech-ops) for instructions and your access code).
@@ -48,11 +48,13 @@ Expensify, Rippling, and Human Interest are managed by our back office, Officeng
 ## Learn how to contribute to the handbook
 
 - [Create an account on GitHub.com](https://github.com/join) if you don't already have one.
-  - Share your username with Inés so she can add you to the Sourcegraph GitHub account and appropriate teams. This step is required to make edits to the Handbook.
+  - Share your username with Nate Tang so he can add you to the Sourcegraph GitHub account and appropriate teams. This step is required to make edits to the Handbook.
 - If you are not familiar with Git, complete the [Git introduction](git_intro.md).
 - Add yourself to the [team page](../../company/team/index.md).
-  - Make sure you've been added to Sourcegraph's github org first!
-  - Add a link to your team page bio to your Slack profile.
+- Make sure you've been added to Sourcegraph's github org first!
+  - If you aren't, you'll see this warning:
+    ![Fork Repository Warning](https://sourcegraphstatic.com/handbook/fork-repository-warning.png)
+- Add a link to your team page bio to your Slack profile.
 - Read Sourcegraph's [information security policy](https://about.sourcegraph.com/security) and acknowledge your acceptance: https://forms.gle/LUK1YtwAMJLhtRPi6.
 
 ## Learn about Sourcegraph

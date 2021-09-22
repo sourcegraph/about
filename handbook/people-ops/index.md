@@ -41,7 +41,7 @@ WIP
 - [Are you switching teams?](switching-teams.md)
 - [Are you leaving us?](leaving.md)
 - [How we manage remote work](../company/remote/index.md)
-- [How our Performance review cycles work](review-cycles/index.md)
+- [Impact review cycles](impact-reviews.md)
 - Hackathons: We don't have any company-wide hackathons planned. If you want to do one for your team, just propose it and find the right time. (See related "[Innovation time](../engineering/index.md#innovation-time)" for engineering, which could apply to any team if you think it would be good.)
 
 ## What we offer our teammates
@@ -50,13 +50,12 @@ WIP
 - [How we structure compensation](compensation/index.md)
   - [How to create an offer](compensation/offers.md)
   - [Equity and stock options FAQ](compensation/equity-faq.md)
-- [Expenses we cover](spending-company-money.md) (aka "Spending company money")
+- [Expenses we cover](../ops/finance/spending-company-money.md) (aka "Spending company money")
 - [Benefits and perks we offer](benefits-and-perks.md)
 - [Guidelines for travel](travel.md)
 - [Paid time off and working hours](paid-time-off-and-working-hours.md)
   - [Submitting time off](submitting-time-off.md)
 - [Bank and public holidays](holidays.md)
-- [Donations teammates can make](donations.md)
 - [Teammate Gatherings and Celebrations](celebrate.md)
 - [Employment verification](employment_verification.md)
 
@@ -78,9 +77,9 @@ WIP
 
 ### Business address and contact information
 
-**Address (for mail and corporate card billing):** 548 Market St PMB 20739, San Francisco, CA 94104-5401
+**Address (for mail):** 548 Market St PMB 20739, San Francisco, CA 94104-5401
 
-**Address (for contracts and paperwork):** Trellis Coworking: 981 Mission St, San Francisco, CA 94103
+**Address (for contracts, paperwork, and corporate card billing):** Trellis Coworking: 981 Mission St, San Francisco, CA 94103
 
 **Phone Number:** (650) 273-5591
 
