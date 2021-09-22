@@ -50,4 +50,4 @@ For Code Insights and API users, we’ve exposed a new compute endpoint that all
 
 We've changed the way we think about LSIF data retention. Previously, precise code intelligence data was capped by a maximum age configured by the PRECISE_CODE_INTEL_DATA_TTL environment variable. This means that, regardless of how important some data was, it would be removed after it passed its expiry.
 
-Now, site-admins can configure global and repository-specific data retention policies in the UI and can control the length of time LSIF uploads are considered fresh. You can read more about how to protect your precise code intelligence data in our [Configure precise code intelligence data retention policies](https://docs.sourcegraph.com/code_intelligence/how-to/configure_data_retention) documentation.
+Now, site-admins can configure global and repository-specific data retention policies in the UI and can control the length of time LSIF uploads are considered fresh. Read more about how to [configure precise code intelligence data retention policies](https://docs.sourcegraph.com/code_intelligence/how-to/configure_data_retention) in our docs.
