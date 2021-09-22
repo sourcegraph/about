@@ -15,7 +15,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20
 
 Work is only one part of our lives, but until remote work, it occupied a sacrosanct place in our schedules. You were to work between the hours of 9 am and 5 pm, not including your commute to and from the office, and the rest of your life had to flow around that block.
 
-Remote work offers the opportunity to rethink work from first principles and ask ourselves: What does life look like when our jobs work for us, rather than the other way around? When you don’t have to commute, when no one is watching you work, when code shipped at 2 am is as valuable as code shipped at 10 am, what can your life become?
+Remote work offers the opportunity to rethink work from first principles and ask ourselves: What does life look like when our jobs work for us, rather than the other way around? When you don’t have to commute, when no one is watching you work, when code shipped at 2 am is as valuable as code shipped at 10 am, what can your life become? Maybe your day will become nonlinear; maybe you'll split your workday in two; or maybe you'll work 4 days instead of 5.
 
 This is [r/battlestations](https://www.reddit.com/r/battlestations/) by way of Google Calendar: When your calendar is a creative space, what will you make?
 
@@ -133,7 +133,7 @@ For Jean, this means using the morning to take care of the chores that most woul
 
 > “I’ve found myself playing video games in the afternoon and I’ve found myself meeting up with friends.” - Jean du Plessis, director of engineering
 
-In the afternoon, Jean is frank: he might just nap. 3 pm (his time) is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, we read a story.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
+In the afternoon, Jean is frank: he might just nap. After, around 3 pm (his time), is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, we read a story.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
 ![Slack message from Jean regarding his schedule](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.20.11%20PM.png)
 
