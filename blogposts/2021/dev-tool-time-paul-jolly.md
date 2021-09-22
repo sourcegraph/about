@@ -43,9 +43,9 @@ In terms of appearance, he uses a dark gray background theme (“I find it’s m
 
 Paul uses Vim 8.2 and due to its speed and stability, has never felt the need to switch to anything else.
 
-Paul uses a variety of plugins is a big fan of self-proclaimed VIM plugin artist [Tim Pope](https://github.com/tpope).
+Paul uses a variety of plugins, and is a big fan of self-proclaimed Vim plugin artist [Tim Pope](https://github.com/tpope).
 
-[Unimpaired](https://github.com/tpope/vim-unimpaired) was a particular favorite of Paul’s, which comes with “sensible defaults” for the common types of Vim actions you might take. “This has now become muscle memory for me,” Paul said.
+[Unimpaired](https://github.com/tpope/vim-unimpaired) is a particular favorite of Paul’s, which comes with “sensible defaults” for the common types of Vim actions you might take. “This has now become muscle memory for me,” Paul said.
 
 [Commentary](https://github.com/tpope/vim-commentary), which enables him to comment and un-comment things in a way that respects the language in use, is another favorite: “It’s just small things like that, when combined, that make your development experience that much more pleasant.”
 
