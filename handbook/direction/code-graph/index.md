@@ -2,7 +2,7 @@
 
 Code Graph is responsible for search (the user experience as well as performance), insights, code intelligence, and batch changes. This page describes overarching initiatives that tie multiple teams and milestones within Code Graph together.
 
-Individual team direction pages can be found on our [product home page](../../product/index.md#code-graph). For details on how the themes here become reality, as well as what each team is working on next for their individual visions, take a look there.
+Individual team direction pages can be found on our [direction home page](../index.md#code-graph). For details on how the themes here become reality, as well as what each team is working on next for their individual visions, take a look there.
 
 ## Mission
 
