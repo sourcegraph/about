@@ -59,8 +59,6 @@ As he wrapped up his examples, Paul said that speed was his most important value
 
 Paul is a core contributor to the [CUE project](https://github.com/cuelang/cue) and his passion for it enchanted the audience. He spent the bulk of this episode showing us some of what it could do.
 
-In a future post, we’ll share a tutorial that explains more of what CUE can do. For now, consider this a quick tour of some of Paul’s favorite features.
-
 ### What is CUE?
 
 CUE, in Paul’s words, “is an open source language for defining, generating and validating all kinds of data,” including configuration, APIs, database schemas, and code.
