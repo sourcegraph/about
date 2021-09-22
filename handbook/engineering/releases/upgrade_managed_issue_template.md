@@ -32,4 +32,4 @@ Make sure to upgrade internal instances before customer instances.
 - [ ] Upgrade instance for https://github.com/sourcegraph/accounts/issues/542
 - [ ] Upgrade instance for https://github.com/sourcegraph/customer/issues/252 <!-- instance is under a different name from account -->
 - [ ] Upgrade instance for https://github.com/sourcegraph/accounts/issues/547
-- [ ] Upgrade instance for https://github.com/sourcegraph/customer/issues/350 <!-- TODO can't find the account for this -->
+- [ ] Upgrade instance for https://github.com/sourcegraph/accounts/issues/8195
