@@ -16,9 +16,6 @@ changelogItems:
     category: Admin
   - description: '`allowGroupsPermissionsSync` in the GitHub authorization provider is now required to enable the experimental GitHub teams and organization permissions caching.'
     url: https://github.com/sourcegraph/sourcegraph/pull/24561
-    category:
-  - description: GitHub external code hosts now validate if a corresponding authorization provider is set, and emits a warning if not.
-    url: https://github.com/sourcegraph/sourcegraph/pull/24526
     category: Admin
   - description: Fixed a number of issues where repository permissions sync may fail for instances with very large numbers of repositories.
     url: https://github.com/sourcegraph/sourcegraph/pull/24972
@@ -29,7 +26,6 @@ changelogItems:
   - description: 'The `PRECISE_CODE_INTEL_DATA_TTL` environment variable is no longer read by the worker service. Instead, global and repository-specific data retention policies configurable in the UI by site-admins will control the length of time LSIF uploads are considered _fresh_.'
     url: https://github.com/sourcegraph/sourcegraph/pull/24793
     category: Admin
-
 ---
 
 Sourcegraph 3.32 is now available! For this release, we introduced:
