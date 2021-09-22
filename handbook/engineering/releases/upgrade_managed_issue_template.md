@@ -25,7 +25,10 @@ Make sure to upgrade internal instances before customer instances.
 
 ## Upgrade customer managed instances
 
-<!-- DO NOT MENTION CUSTOMER NAMES on this list - use a Hubspot link instead. -->
+<!--
+  DO NOT MENTION CUSTOMER NAMES on this list or your commits!
+  Use a https://github.com/sourcegraph/accounts link instead.
+-->
 
 - [ ] Upgrade instance for https://github.com/sourcegraph/accounts/issues/528
 - [ ] Upgrade instance for https://github.com/sourcegraph/accounts/issues/532
