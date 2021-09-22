@@ -110,3 +110,9 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   to = "/terms-self-hosted"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/get-started"
+  to = "/#get-started"
+  status = 200
+  force = true

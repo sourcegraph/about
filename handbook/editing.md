@@ -156,7 +156,7 @@ Optional:
 
 ## Adding images
 
-Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](product/technical_writing/index.md#uploading-graphics) for instructions.
+Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](product/technical_writing/index.md#uploading-graphics) for instructions. Note that this is a two-step process: First, adding your image to Google Cloud Storage. Second, editing the Handbook to include your image.
 
 ## Uploading large files
 
@@ -180,6 +180,15 @@ However, if we want to link the Buddy program handbook page to Engineering onboa
 While it is possible to use absolute URLs (ones that include the domain e.g. https://about.sourcegraph.com/handbook) to link to pages, if the domain changes, it is more difficult to update the URLs compared to using relative URLs.
 
 _Remember that if the .md file name changes or the directory changes (because you’ve moved the file to another team’s page, for example) you will need to update the path._
+
+## Moving a Page (Web Interface)
+
+All of the following needs to occur within one pull request. See [this section](#multiple-changes-in-a-single-pr) for help on making multiple edits at once.
+
+1. Rename the file to indicate its new location as described in [Github's documentation](https://docs.github.com/en/repositories/working-with-files/managing-files/moving-a-file-to-a-new-location)
+1. Address any errors in the [Handbook Checks](#handbook-checks). Since you are changing the location of a file, any existing links to that file will break. You may see errors like this:
+   ![Broken Link Errors](https://storage.googleapis.com/sourcegraph-assets/handbook/relocate-page-errors.png)
+1. [Add redirects](#adding-redirects) to account for any instance where someone may be directed to the old URL.
 
 ## Adding redirects
 

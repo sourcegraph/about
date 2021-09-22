@@ -2,6 +2,11 @@
 
 At Sourcegraph, we aim for ongoing, real-time career conversations so you feel empowered to own your growth and development. Our bi-annual 360 Impact reviews, done through Lattice, are only one part of this cycle and should act as a summary of the various feedback conversations you've had in-between.
 
+<video controls crossorigin>
+  <source src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/handbook/impact-reviews/understanding_360_impact_reviews.mp4" />
+  <track default kind="captions" label="Captions" src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/handbook/impact-reviews/understanding_360_impact_reviews.vtt" />
+</video>
+
 ## Why call them Impact reviews?
 
 [High agency](https://about.sourcegraph.com/handbook/company/values#high-agency), [high quality](https://about.sourcegraph.com/handbook/company/values#high-quality), and [continuous growth](https://about.sourcegraph.com/handbook/company/values#continuously-grow) are three of our Sourcegraph values that speak to the intent of our Impact reviews. By using your high agency, each teammate should take the initiative to move the needle for their teams and produce high-quality work which will contribute to Sourcegraph’s mission and success - all resulting in continuous growth for each individual.
@@ -49,8 +54,6 @@ To start this company-wide shift, we’d like all managers and their direct repo
 
 To help get you started, we will be hosting an interactive Sourcegraph Fundamentals class called Feedback 101 in October 2021 to help you unpack, understand, and practice giving, receiving, and seeking feedback. Stay tuned for a sign-up link here and for the post-class recording to be posted on this page as well.
 
-[insert video 1]
-
 ## Impact review stages
 
 After you’ve moved through each of your three [Onboarding Feedback Milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-feedback-milestones) and you arrive at month six of your Sourcegraph journey, you will use your Sourcegraph login for [Lattice](https://lattice.com/) to conduct your 360 Impact review cycles! You will receive an email when your review cycle is set to begin prompting you to nominate your peer reviewers.
@@ -66,7 +69,7 @@ _Best practice tip: We recognize that to make an impact, you must first develop 
 
 These cycles will run concurrently with your [Onboarding Feedback Milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-feedback-milestones) on the following cadence:
 
-[insert diagram]
+<object role="image" data="./impact_review_infographic.svg" width="960" height="540" aria-label="Infographic describing cadence of Impact review cycle from start date to cycle launches"></object>
 
 ### Selecting a peer reviewer
 
@@ -122,11 +125,14 @@ You can also use [the Informal Impact reviews template](https://docs.google.com/
 
 Log into Lattice using your Sourcegraph Google authenticator. You will be prompted to write different types of reviews through qualitative and quantitative questions on your dashboard.
 
-[insert video 2]
+<video controls crossorigin>
+  <source src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/handbook/impact-reviews/lattice_demo.mp4" />
+  <track default kind="captions" label="Captions" src="https://cors-anywhere.sgdev.org/https://sourcegraphstatic.com/handbook/impact-reviews/lattice_demo.vtt" />
+</video>
 
 ### Writing your reviews using the SBI framework
 
-We encourage all reviewers to use the SBI framework for giving feedback while filling out their reviews. SBI is a framework developed by the Center For Creative Leadership and is used all around the world. It works because it forces people to speak about feedback in a specific, actionable way. By using SBI, you will automatically counteract some of the neurological responses activated by the limbic system when giving feedback.
+We encourage all reviewers to use the [SBI framework](https://medium.com/pm101/the-situation-behavior-impact-feedback-framework-e20ce52c9357) for giving feedback while filling out their reviews. SBI is a framework developed by the Center For Creative Leadership and is used all around the world. It works because it forces people to speak about feedback in a specific, actionable way. By using SBI, you will automatically counteract some of the neurological responses activated by the limbic system when giving feedback.
 
 Situation: the where and when (_shaping the context of the feedback_)
 
@@ -175,10 +181,9 @@ For more information on how to use SBI and giving great feedback, [check out thi
 
 # Resources for all teammates and managers:
 
-- Understanding 360 Impact review cycles
-- Demo of a manager and teammate going through the review cycle
-- [How to get the most out of review cycles](https://about.sourcegraph.com/handbook/people-ops/review-cycles/tips)
-- [Resources and guides for reviewers](https://about.sourcegraph.com/handbook/people-ops/review-cycles/resources)
+- Video: [Understanding 360 Impact review cycles](https://drive.google.com/file/d/1Xyq26Pf-2XelHajUVzB4WH_hpnU4ZwNo/view?usp=sharing)
+- Video: [Demo of a manager and teammate going through the review cycle](https://drive.google.com/file/d/1iEh5YExCbZ_dxpyq4kPyce4i6U8r5AKi/view?usp=sharing)
+- [Resources and guides for reviewers](https://drive.google.com/drive/folders/1Sd74Qp68U_eb9Yy91ThZDNfX5FJprw7j?usp=sharing)
 - [How to choose your peer reviewers](https://docs.google.com/document/d/1JDBYSs0u3rxykxW_SGj_Sf_fVBRFe5ml1Zn4sh8j77M/edit?usp=sharing)
 - [Opting out of being a peer reviewer](https://docs.google.com/document/d/12oLL_rtlobVKaRLzdK3GkdrKvNsPL5sipFwLIMTUZNw/edit#)
 - [SBI and how to give great feedback](https://docs.google.com/document/d/1sT-eyNj7KnFQZyaJ7Uja6Hnqb1sXE-aq-Ayz4X_-8Zk/edit?usp=sharing)
