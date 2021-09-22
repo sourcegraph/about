@@ -111,9 +111,9 @@ Robert works a split schedule, meaning that for three days a week, he works from
 
 ![Split schedule graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Split.png)
 
-Robert is used to some degree of flexibility. When he and his partner were students, they optimized their schedules for their primary hobbies–bouldering being number one. Robert decided he didn’t want to change that as he started working full time.
+Robert is used to some degree of flexibility. When he was a student, he optimized his schedule for his primary hobbies–taking advantage of daylight hours to be out and about. Robert decided he didn’t want to change that as he started working full time.
 
-When he onboarded with Sourcegraph, there was nothing that said he had to be working from 9 am to 5 pm so he set his schedule how he wanted it. “I don’t think there was any particular response to it,” he said.
+When he onboarded with Sourcegraph, there was nothing that said he had to be working from 9 am to 5 pm so he set his schedule how he wanted it. “I don’t think there was any particular response to it." The team was supportive when he communicated his preferences.
 
 Robert is wary of the exhaustion that can come with a traditional schedule. “There’s something about 9 am to 5 pm that’s kind of exhausting,” he said. “What would often happen is you’d charge through the day and then you’d get home at the end of the workday, maybe hit the gym for a while, come back and cook dinner–and that’s pretty much your whole day. There’s no room for anything else.”
 
