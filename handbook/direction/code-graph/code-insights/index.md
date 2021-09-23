@@ -155,7 +155,7 @@ The next six months are focused on building a product that can quickly prove out
 - KR 1: We have qualitative/anecdotal evidence that at least 3 customers have a manager/director/VP who is using code insights
 - KR 2: 50% of customers on 3.31+ make 10 code insights per customer, and have at least 5 weekly unique viewers of insights ([Looker dashboard](https://sourcegraph.looker.com/dashboards-next/209?Latest+Version=))
 
-*See also [completed goals](../../../engineering/code-graph/code-insights/goals_completed.md)*
+_See also [completed goals](../../../engineering/code-graph/code-insights/goals_completed.md)_
 
 ### Themes (and What's next and why)
 
