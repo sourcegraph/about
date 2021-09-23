@@ -4,7 +4,9 @@ The Repo Management team is part of the [Enablement](../index.md) org.
 
 ## Mission
 
-Our mission is to provide and maintain the mechanisms for connecting Sourcegraph to code hosts, in a way that supports all required functionality while maximizing performance, reliability, and ease of use.
+Our mission is to maintain and evolve the methods by which code is pulled into Sourcegraph from code hosts, in a way that supports all required functionality while maximizing performance, reliability, and ease of use.
+
+We also have temporary custody of Authentication, with the aspiration being to split the team to give auth a dedicated team to own it.
 
 ## Members
 
@@ -22,7 +24,15 @@ Our mission is to provide and maintain the mechanisms for connecting Sourcegraph
 
 ## Responsibilities
 
-TODO
+- Maintain, develop, support and advise on:
+    - Code host connections
+    - Code replication into Sourcegraph
+    - Code storage within Sourcegraph
+    - Repository permission syncing
+    - Permission caching
+    - Explicit permissions API
+- Temporary custody of authentication, efforts large limited to:
+    - Support and maintenance
 
 ## Contact
 
@@ -40,6 +50,8 @@ TODO
 ## Principles
 
 We inherit Sourcegraph's [engineering principles and practices](../../principles-and-practices.md) and [Enablement org's principles and practices](../index.md#principles-and-practices).
+
+We also have a set of [guiding principles](direction.md#guiding-principles) that help inform our decision making about our stretegic and prioritization choices.
 
 ## Processes
 
