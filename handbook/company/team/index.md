@@ -1495,4 +1495,4 @@ To add yourself to this page:
 - Brooklyn, NY, United States 🇺🇸
 - GitHub: [stephzabala](https://github.com/stephzabala)
 - [steph.zabala@sourcegraph.com](mailto:steph.zabala@sourcegraph.com)
-- Steph is a designer based in NYC, originally from WA. She has a deep appreciation for creative work that is authentic, expressive, and artistic, along with a  deep appreciation for butter, typography, and breakfast.
+- Steph is a designer based in NYC, originally from WA. She has a deep appreciation for creative work that is authentic, expressive, and artistic, along with a deep appreciation for butter, typography, and breakfast.
