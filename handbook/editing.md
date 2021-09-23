@@ -10,7 +10,7 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 - Any engineer at Sourcegraph can help. (The _code_ that engineers write at Sourcegraph also consists of files in a Git repository, so engineers are very familiar with making these kinds of edits.)
 - [Teammates who have already made a handbook change](https://sourcegraph.com/github.com/sourcegraph/about/-/stats/contributors?path=handbook%2F) can help.
-- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @eric, @aharvey, @virginia, @ines, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
+- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @aharvey, @virginia, @ines, @jyavorska, @marybelzer, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
 - Ask in #handbook: `Who can screen-share with me to help me make an edit to the handbook?`
 - Don't be afraid of breaking anything! It is very easy for any engineer on the team to roll back to the previous version of the handbook if you make a mistake.
 
@@ -27,6 +27,7 @@ Here's the process for getting a change published to the handbook. For detailed 
    - For minor edits, you can skip review.
 1. Wait for the necessary teammates to review and approve your pull request.
 1. Merge the pull request.
+   - If you forget to merge your pull request, you'll be reminded about it after 14 days of inactivity on that pull request. If the pull request sees another 7 days of inactivity, it will be automatically closed.
 1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
 1. Use the #handbook-announce label to notify other people of important handbook updates on the #handbook-announce Slack channel.
 
@@ -70,6 +71,16 @@ If you just need to edit a single page, you can do it entirely on the web.
 1. When you're ready to publish the change and make it live, press the **Squash and merge** button, then press **Confirm squash and merge**.
 1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
 
+### Announcing Handbook Changes
+
+All Handbook-related pull request information is automatically announced in the #handbook-updates Slack channel. This channel can get a bit noisy, so you may want to announce an important update in the #handbook-announce channel. To do this:
+
+1. Open your pull request
+1. Click the **Labels** section on the right side of the Github screen
+1. Search for "handbook-announce" and select it
+   - ![Announcing Handbook Changes](https://storage.googleapis.com/sourcegraph-assets/handbookannouncelabelimage.png)
+1. Merge your pull request
+
 ### Handbook checks
 
 > If you are running the handbook locally, you can run these checks before you push your commit, [explained in the readme](https://github.com/sourcegraph/about#handbook).
@@ -89,10 +100,11 @@ If you're not sure what the error message means or can't determine how to fix it
   - **Note:** if there is an anchor tag in the link, the `.md` goes before the anchor tag, like `../support/support-workflow.md#support-workflow`.
 - **Disconnected page ([example](https://github.com/sourcegraph/about/runs/2975885844)):** `handbook/engineering/hiring/engineering-leadership.md: disconnected page (no inlinks from other pages)` means that the error is _not_ in the file `handbook/engineering/hiring/engineering-leadership.md`, but rather there are no pages in the handbook linking to this file page.
   - **Fix:** Determine if this page is still valuable, and if so, on which other handbook page to add a link to this page. If it's not obvious or you're not sure, you should post for help in #handbook and tag someone you think might know better (based on the content of the disconnected page).
+  - See [this section](#using-relative-paths-to-link-handbook-pages) to learn how to use relative paths to link Handbook pages. This helps us maintain links over time more easily than pasting a URL.
 
 ## Edit multiple files or add a new file
 
-To make edits to multiple files and submit all of the edits as a group to be reviewed together, you will follow a more complex process than when [editing a single file](#edit-a-single-file). This also is required for adding new files.
+To make edits to multiple files and submit all of the edits as a group to be reviewed together, you will follow a more complex process than when . This also is required for adding new files.
 
 > NOTE: These steps are not exhaustively documented. Please [ask for help](#how-to-get-help) as many times as you need to until you feel comfortable with this process.
 
@@ -109,6 +121,33 @@ A screen recording of how to make multiple changes in a single PR in the web int
 A screen recording of how to make a new file and include it for review in the web interface for GitHub:
 
 <iframe src="https://drive.google.com/file/d/16iYS-idCL5FEGwoldF7rOQElcidgzo8i/preview" width="560" height="315"></iframe>
+
+##### Steps:
+
+_This is just one path for creating a new page in the Handbook. These steps can be completed in a different order, or outside of the Github web interface._
+
+1. Navigate to the directory where you want to create your new page.
+
+   - If you aren't sure how to get there in Github, click "Edit This Page" on the Handbook page where you'd like to add your new page. Then, look for the file path towards the top of your Github page to click up into the directory:
+
+   ![Navigate to Directory](https://storage.googleapis.com/sourcegraph-assets/handbook/navigate-to-directory.png)
+
+1. Click Add File > Create New File
+1. Name your file.
+   -Make sure the name ends with ".md". This makes it a Markdown file. For example: editing.md
+1. Enter your content in Markdown. See [Markdown Resources](#markdown-resources) for help with formatting.
+1. Name your commit and your branch. Make note of your branch name, you'll need it in next steps.
+1. Click "Commit New File"
+1. Click on the dropdown arrow on the "Create Pull Request" button, and choose "Create Draft Pull Request". This will keep your PR from auto-notifying code owners or reviewers before it's ready. Then, click "Draft Pull Request".
+1. You'll likely see that the docsite check has failed. Click "Details" on the docsite check line to see more information. If your error says "disconnected page (no inlinks from other pages)", this means you need to create a link into this page. For other failures, see [Handbook Checks](#handbook-checks).
+1. In a new tab, navigate to the page where you want to create a link to your new page.
+   -You can do this in the same tab if you'd like, but it may be easier to keep your PR up in its own tab while you do this part.
+1. Click on the branch dropdown on the upper left side of your screen (it probably says "main"). Search for the branch you named when creating your first change, and select it.
+   ![Update Branch](https://storage.googleapis.com/sourcegraph-assets/handbook/update-branch.png)
+1. Click the pencil icon to edit your file.
+1. Create a [link using a relative path](#using-relative-paths-to-link-handbook-pages) in the appropriate location on your page.
+1. Commit your changes.
+1. Return to your PR, and the checks should rerun. Once checks pass, merge your changes.
 
 ### macOS
 
@@ -144,7 +183,7 @@ Optional:
 
 ## Adding images
 
-Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](product/technical_writing/index.md#uploading-graphics) for instructions.
+Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](product/technical_writing/index.md#uploading-graphics) for instructions. Note that this is a two-step process: First, adding your image to Google Cloud Storage. Second, editing the Handbook to include your image.
 
 ## Uploading large files
 
@@ -168,6 +207,20 @@ However, if we want to link the Buddy program handbook page to Engineering onboa
 While it is possible to use absolute URLs (ones that include the domain e.g. https://about.sourcegraph.com/handbook) to link to pages, if the domain changes, it is more difficult to update the URLs compared to using relative URLs.
 
 _Remember that if the .md file name changes or the directory changes (because you’ve moved the file to another team’s page, for example) you will need to update the path._
+
+## Moving a Page (Web Interface)
+
+All of the following needs to occur within one pull request. See [this section](#multiple-changes-in-a-single-pr) for help on making multiple edits at once.
+
+1. Rename the file to indicate its new location as described in [Github's documentation](https://docs.github.com/en/repositories/working-with-files/managing-files/moving-a-file-to-a-new-location)
+1. Address any errors in the [Handbook Checks](#handbook-checks). Since you are changing the location of a file, any existing links to that file will break. You may see errors like this:
+   ![Broken Link Errors](https://storage.googleapis.com/sourcegraph-assets/handbook/relocate-page-errors.png)
+1. [Add redirects](#adding-redirects) to account for any instance where someone may be directed to the old URL.
+
+## Deleting a Page (Web Interface)
+
+See [this Github documentation](https://docs.github.com/en/repositories/working-with-files/managing-files/deleting-files-in-a-repository#deleting-a-file) for deleting a file or directory through the web interface. You may encounter Handbook checks errors. Since you are changing the location of a file, any existing links to that file will break. You may see errors like this, which are explained in the [Handbook Checks](#handbook-checks) section of this page:
+![Broken Link Errors](https://storage.googleapis.com/sourcegraph-assets/handbook/relocate-page-errors.png)
 
 ## Adding redirects
 

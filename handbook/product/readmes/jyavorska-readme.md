@@ -4,7 +4,9 @@ Hello, I’m Jason Yavorska and I’m the Product Director for Global Code Graph
 
 ## Logistics
 
+- I love thinking about technology, processes, personalities, and efficiency, but what really drives me is what Marc Andreessen described as [the one thing that matters](https://pmarchive.com/guide_to_startups_part4.html): the journey of finding and growing product market fit
 - I like to follow the [reasonable person principle](http://www.cs.cmu.edu/~weigand/staff/)
+- I have learned that working on things [iteratively](https://about.gitlab.com/handbook/values/#iteration) tends to get the best results
 - I always appreciate direct feedback, so don't worry about upsetting me and share bad news early
 - I'm more likely to be optimistic than not, so feel free bring me back to reality
 - I like to debate to solve problems, if that puts you off that's fine - tell me and we’ll use another approach
