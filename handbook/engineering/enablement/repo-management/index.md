@@ -1,6 +1,10 @@
 # Repo Management team
 
-The Repo Management team (part of the [Enablement](../index.md) org)
+The Repo Management team is part of the [Enablement](../index.md) org.
+
+## Mission
+
+Our mission is to provide and maintain the mechanisms for connecting Sourcegraph to code hosts, in a way that supports all required functionality while maximizing performance, reliability, and ease of use.
 
 ## Members
 
@@ -11,10 +15,6 @@ The Repo Management team (part of the [Enablement](../index.md) org)
   - [Alan Harris](../../../company/team/index.md#alan-harris)
   - [Ryan Slade](../../../company/team/index.md#ryan-slade-he-him)
   - [Indradhanush Gupta](../../../company/team/index.md#indradhanush-gupta-he-him)
-
-## Mission
-
-Our mission is to provide and maintain the mechanisms for connecting Sourcegraph to code hosts, in a way that supports all required functionality while maximizing performance, reliability, and ease of use.
 
 ## Direction
 
