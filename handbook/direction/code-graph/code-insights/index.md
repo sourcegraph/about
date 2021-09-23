@@ -6,7 +6,7 @@ This page outlines the vision, strategy, and goals of the Code Insights team.
 
 Quick links:
 
-- [Code Insights Backlog](https://github.com/orgs/sourcegraph/projects/200/) <!-- Update links with your page -->
+- [Code Insights Backlog](https://github.com/orgs/sourcegraph/projects/200/views/13) 
 - Latest demo – **TODO check with marketing if we're allowed to share a demo here**
 - [Documentation](https://docs.sourcegraph.com/code_insights)
 
@@ -20,7 +20,7 @@ We bring **the best practices of big data to challenges of big code**, turning a
 
 **We help engineering leaders** set and measure quantitative engineering goals, whether they be related to a migration, deprecation, vulnerability, code smell, or high level understanding. We also help engineering leaders understand the shape of their code and how it changes over time. Then we help them tie trends and metrics to _owners_ on their engineering teams.
 
-**We help individual engineers** measure the day-to-day goals of their teams: how they are progressing on an individual initiative, or how quickly other teams are adopting their code. We also help them get a historical usage view of functions, changes, or other patterns. Happily, we've heard that Code Insights has even helped some engineers get promotions or bonuses, because they use code insights to quantify the impact and spread of their work.
+**We help individual engineers** measure the day-to-day goals of their teams – how they are progressing on an individual initiative, how quickly other teams are adopting their code – as well as quantify tech debt problems to justify to leaders why certain work is important. We also help them get a historical usage view of functions, changes, or other patterns. Happily, we've heard that Code Insights has even helped some engineers get promotions or bonuses, because they use code insights to quantify the impact and spread of their work.
 
 ### Strategy
 
@@ -106,7 +106,7 @@ For Code Insights to be valuable, it must be precise, exact, and performant. Whe
 
 ### Code Insights builds on top of Sourcegraph's other features
 
-Users do not need to learn a new query language or format to use Code Insights. Nor will Code Insights introduce features that function differently than those "same" features in other areas of the product, confusing users. Code Insights is built atop Sourcegraph Search and will build with Sourcegraph's other features rather than implement its own versions of any functionalit.
+Users do not need to learn a new query language or format to use Code Insights. Nor will Code Insights introduce features that function differently than those "same" features in other areas of the product, confusing users. Code Insights is built atop Sourcegraph Search and will build with Sourcegraph's other features rather than implement its own versions of any functionality.
 
 **What this looks like:**
 
@@ -125,7 +125,7 @@ This means that the Code Insights team is singularly focused on bringing Code In
 
 During the Beta, we are also evaluating pricing and packaging options. It is likely Code Insights will be a standalone feature with its own pricing.
 
-For what we have learned so far and how we are operationalizing those learnings, see [Strategy](#Strategy-and-plans).
+For what we have learned so far and how we are operationalizing those learnings, see [Strategy](#strategy-and-plans).
 
 ### Top customer, support, sales and marketing issues
 
@@ -152,8 +152,8 @@ The next six months are focused on building a product that can quickly prove out
 
 #### FY22Q3
 
-- OKR 1: We have qualitative/anecdotal evidence that at least 3 customers have a manager/director/VP who is using code insights
-- OKR 2: 50% of customers on 3.31+ make 10 code insights per customer, and have at least 5 weekly unique viewers of insights ([Looker dashboard](https://sourcegraph.looker.com/dashboards-next/209?Latest+Version=))
+- KR 1: We have qualitative/anecdotal evidence that at least 3 customers have a manager/director/VP who is using code insights
+- KR 2: 50% of customers on 3.31+ make 10 code insights per customer, and have at least 5 weekly unique viewers of insights ([Looker dashboard](https://sourcegraph.looker.com/dashboards-next/209?Latest+Version=))
 
 *See also [completed goals](../../../engineering/code-graph/code-insights/goals_completed.md)*
 
@@ -213,7 +213,7 @@ We will:
 
 In order to focus and have a successful initial launch, the Code Insights team is explicitly not working on any of the following until FY23:
 
-- Code Insights Fully GA on Cloud: due to the multi-tenant nature of cloud, there's additional backend work we'll do in FY23 to make Insights GA on Cloud. Optimizations we plan to make in FY22H2 will help us quickly plan and support Code Insights on Cloud, but we won't have time for that until FY23H1.
+- Code Insights is GA on Cloud: due to the multi-tenant nature of cloud, there's additional backend work we'll do in FY23 to make Insights GA on Cloud. Optimizations we plan to make in FY22H2 will help us quickly plan and support Code Insights on Cloud, but we won't have time for that until FY23H1.
 - Custom Insights Data Import: it's worth exploring what importing data mixed with Code Insights can do, but we first need to stabilize and grow our core product features before adding that complexity. We'll explore this in FY23H1.
 - Custom Extension Insights: while some Sourcegraph extensions do and can contribute Code Insights, we're not focused on third-party contributed insights because of the limited excitement initial users had for them. We _may_ explore this in FY23H1.
 - Integration with Batch changes: some customers want to visualize batch changes progress in Insights. While valuable, Batch changes is also new, so only a subset of customers will get value immediately and we've chosen to delay this work and focus on features that benefit all Code Insights users first.
