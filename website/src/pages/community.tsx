@@ -22,7 +22,8 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         <div className="text-uppercase">Join us</div>
                         <h1 className="display-2 font-weight-bold mb-0">Welcome to Sourcegraph community</h1>
                         <p className="home__semiwide-paragraph my-5 display-4">
-                            Sourcegraph is so much more than a universal code search engine. It's the story of new gen-developers who renaissance'ed the way we work, live, and collaborate.
+                            Sourcegraph is so much more than a universal code search engine. It's the story of new
+                            gen-developers who renaissance'ed the way we work, live, and collaborate.
                         </p>
                         <a
                             className="btn btn-primary"
@@ -80,9 +81,9 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
             <div className="row">
                 <div className="col-lg-5">
                     <h1 className="mb-3">Sourcegraph Champions Program</h1>
-                    The Sourcegraph Champion program offers FREE code knowledge for everyone. With new contextual 
-                    code intelligence skills, your productivity will thrive even if you’re dealing with complex 
-                    automated large-scale code changes.
+                    The Sourcegraph Champion program offers FREE code knowledge for everyone. With new contextual code
+                    intelligence skills, your productivity will thrive even if you’re dealing with complex automated
+                    large-scale code changes.
                     <br />
                     <a
                         className="btn btn-primary m-4"
@@ -108,16 +109,31 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
                             <p>
-                                Keynote speakers. Job opportunities and partnerships. You can find us in every 
-                                major industry event. Give us an air-hug if you see us.
+                                Keynote speakers. Job opportunities and partnerships. You can find us in every major
+                                industry event. Give us an air-hug if you see us.
                             </p>
                             <ul>
-                                <li><a href="https://events.linuxfoundation.org/open-source-summit-north-america/register/">Open Source Summit</a> - 9/27 - 9/30</li>
-                                <li><a href="https://reactadvanced.com/">React Advanced London</a> - 10/22</li>
-                                <li><a href="https://africa.jsworldconference.com/">JSWorld Africa</a> - 10/30</li>
-                                <li><a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13</li>
-                                <li><a href="https://reinvent.awsevents.com/">AWS re:Invent</a> - 11/29 - 12/03</li>
-                                <li><a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8</li>
+                                <li>
+                                    <a href="https://events.linuxfoundation.org/open-source-summit-north-america/register/">
+                                        Open Source Summit
+                                    </a>{' '}
+                                    - 9/27 - 9/30
+                                </li>
+                                <li>
+                                    <a href="https://reactadvanced.com/">React Advanced London</a> - 10/22
+                                </li>
+                                <li>
+                                    <a href="https://africa.jsworldconference.com/">JSWorld Africa</a> - 10/30
+                                </li>
+                                <li>
+                                    <a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13
+                                </li>
+                                <li>
+                                    <a href="https://reinvent.awsevents.com/">AWS re:Invent</a> - 11/29 - 12/03
+                                </li>
+                                <li>
+                                    <a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -126,7 +142,8 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
                             <p>
-                                Cool hardware. Most wanted guests. And hot topics. Check out our YouTube Channel: Dev Tool Time to keep up with what’s next.
+                                Cool hardware. Most wanted guests. And hot topics. Check out our YouTube Channel: Dev
+                                Tool Time to keep up with what’s next.
                             </p>
                             <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF">
                                 <img
@@ -144,7 +161,8 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
                             <p>
-                                Tune into our developer convos wherever you listen to your favorite podcasts. Every episode is an inspiration.
+                                Tune into our developer convos wherever you listen to your favorite podcasts. Every
+                                episode is an inspiration.
                             </p>
                             <img
                                 className="w-100 h-auto mt-4"
