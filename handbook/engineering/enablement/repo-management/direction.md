@@ -6,7 +6,9 @@ This page outlines the vision, strategy, and goals of the [Repository Management
 
 ### Mission
 
-Our mission is to provide and maintain the mechanisms for connecting Sourcegraph to code hosts, in a way that supports all required functionality while maximizing performance, reliability, and ease of use.
+Our mission is to maintain and evolve the methods by which code is pulled into Sourcegraph from code hosts, in a way that supports all required functionality while maximizing performance, reliability, and ease of use.
+
+We also have temporary custody of Authentication, with the aspiration being to split the team to give auth a dedicated team to own it. As a result, unless otherwise specified, the rest of this page relates to Repo Management and code host work.
 
 ### Vision
 
@@ -40,27 +42,44 @@ Sourcegraph is easily set up to access any code management system, regardless of
 
 ## Where we are now
 
-> - Where is the team's area of ownership in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?<br>- What did we achieve in the last few months?<br>- What key learnings did we recently make?<br>- What is on the critical path for growth?<br>- How does the product fit within Sourcegraph as a whole?
+> - Where is the team's area of ownership in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?
+> - What did we achieve in the last few months?
+> - What key learnings did we recently make?
+> - What is on the critical path for growth?
+> - How does the product fit within Sourcegraph as a whole?
 
 ### Top customer, support, sales and marketing issues
 
-> - What are the top issues from customers we are taking on this quarter?<br>- What are the top requests from other teams at Sourcegraph we are taking on this quarter?
+> ⚠️ Please see below in [Strategy and plans](#strategy-and-plans) for more information on which problems are actually in scope of the team.
+
+- Monorepo support
+  - **Problem:** A major priority is to start supporting repositories that are massive in scale. Today, this does not work simply because the machines take too long to process unindexed searches, even with a MASSIVE machine.
+- Phabricator support
+  - **Problem:** Phabricator support within Sourcegraph was never properly implemented, resulting in limited support.
+- Bitbucket Cloud permission syncing
+  - **Problem:** Atlassian are ending support for BitBucket Server and staring moving all customers to the Cloud. But Sourcegraph doesn't currently support native permission syncing for BitBucket Cloud.
+- 
 
 ### Competitive landscape
 
-> - Who is the competition for this product area?<br>- What recent developments in competition is impacting sales, marketing and product strategy?
+> - Who is the competition for this product area?
+> - What recent developments in competition is impacting sales, marketing and product strategy?
 
 ### Analyst landscape
 
-> - If you are not currently involved with analyst discussions for your product area, you can reach out to Christine for context here and to stay in the loop in the future.<br>- Are there analysts tracking this product area?<br>- How are analysts positioning the product? What are areas of improvement?
+> - If you are not currently involved with analyst discussions for your product area, you can reach out to Christine for context here and to stay in the loop in the future.
+> - Are there analysts tracking this product area?
+> - How are analysts positioning the product? What are areas of improvement?
 
 ## Strategy and plans
 
 ### Goals
 
-🎯 ...
-  🎯 ...
-  🎯 ...
+ 🎯 Goal 1
+ 
+ 🎯 Goal 2
+ 
+ 🎯 Goal 3
 
 ### Themes
 
