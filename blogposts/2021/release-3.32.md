@@ -36,7 +36,7 @@ Code Insights is a new analytics tool that lets you track and understand what’
 
 ## Revisions sidebar
 
-In the left sidebar of your search results, you can now see both branches and tags associated with a repository you’re viewing. When you add a search literal, such as “auth”, the search term will persist across searches, allowing you to quickly search between branches or tags for that search term.
+In the left sidebar of your search results, you can now see both branches and tags associated with a repository you’re viewing. When you add a search literal, such as “auth,” the search term will persist across searches, allowing you to quickly search between branches or tags for that search term.
 
 ## Search caching and improved back button behavior
 
