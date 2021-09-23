@@ -30,7 +30,7 @@ Learning what's possible and how to get the most out of Code Graph tends to be t
 
 We're introducing a new feature called Insights that brings interesting things to the forefront, and serve as a jumping off point for easily using more advanced features. For example, we could offer an insight that tells you that you have repositories using out of date versions of libraries that you create. This could have a jumping off point to search, allowing the user to learn more about how and where it is being used, as well as a jumping off point for batch changes, if they want to go ahead and update all of them. We could provide a one-click button to subscribe to an alert when they become out of date again in the future.
 
-Insights like these can also be a way to help people learn that features exist and how to use them, allowing them to adapt something that's already set up to their other use cases. This should help people onboard and see the value of the Code Graph more quickly than just showing them a search bar with syntax and hoping they'll make the leaps.
+Insights like these can also be a way to help people learn that features exist and how to use them, allowing them to adapt something that's already set up to their other use cases. This should [help people onboard](https://docs.google.com/document/d/1xF1Fp2y0hxY_CrXMsRbJlWCOI8XHBceiUdivNmh8SlQ/edit#) and see the value of the Code Graph more quickly than just showing them a search bar with syntax and hoping they'll make the leaps.
 
 ### Grow product maturity for the unified Code Graph experience
 
