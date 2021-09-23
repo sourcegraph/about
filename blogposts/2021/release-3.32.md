@@ -5,8 +5,8 @@ description: 'Sourcegraph 3.32 introduces Code Insights in Public Beta, a new se
 tags: [blog, release]
 slug: 'release/3.32'
 published: false
-heroImage:
-socialImage:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.32/sourcegraph-3-32-release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.32/sourcegraph-3-32-release.png
 changelogItems:
   - description: The search sidebar now shows a revisions section when all search results are from a single repository. This makes it easier to search in and switch between different revisions.
     url: https://github.com/sourcegraph/sourcegraph/pull/23835
