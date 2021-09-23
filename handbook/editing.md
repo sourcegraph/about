@@ -122,6 +122,33 @@ A screen recording of how to make a new file and include it for review in the we
 
 <iframe src="https://drive.google.com/file/d/16iYS-idCL5FEGwoldF7rOQElcidgzo8i/preview" width="560" height="315"></iframe>
 
+##### Steps:
+
+_This is just one path for creating a new page in the Handbook. These steps can be completed in a different order, or outside of the Github web interface._
+
+1. Navigate to the directory where you want to create your new page.
+
+   - If you aren't sure how to get there in Github, click "Edit This Page" on the Handbook page where you'd like to add your new page. Then, look for the file path towards the top of your Github page to click up into the directory:
+
+   ![Navigate to Directory](https://storage.googleapis.com/sourcegraph-assets/handbook/navigate-to-directory.png)
+
+1. Click Add File > Create New File
+1. Name your file.
+   -Make sure the name ends with ".md". This makes it a Markdown file. For example: editing.md
+1. Enter your content in Markdown. See [Markdown Resources](#markdown-resources) for help with formatting.
+1. Name your commit and your branch. Make note of your branch name, you'll need it in next steps.
+1. Click "Commit New File"
+1. Click on the dropdown arrow on the "Create Pull Request" button, and choose "Create Draft Pull Request". This will keep your PR from auto-notifying code owners or reviewers before it's ready. Then, click "Draft Pull Request".
+1. You'll likely see that the docsite check has failed. Click "Details" on the docsite check line to see more information. If your error says "disconnected page (no inlinks from other pages)", this means you need to create a link into this page. For other failures, see [Handbook Checks](#handbook-checks).
+1. In a new tab, navigate to the page where you want to create a link to your new page.
+   -You can do this in the same tab if you'd like, but it may be easier to keep your PR up in its own tab while you do this part.
+1. Click on the branch dropdown on the upper left side of your screen (it probably says "main"). Search for the branch you named when creating your first change, and select it.
+   ![Update Branch](https://storage.googleapis.com/sourcegraph-assets/handbook/update-branch.png)
+1. Click the pencil icon to edit your file.
+1. Create a [link using a relative path](#using-relative-paths-to-link-handbook-pages) in the appropriate location on your page.
+1. Commit your changes.
+1. Return to your PR, and the checks should rerun. Once checks pass, merge your changes.
+
 ### macOS
 
 ### Github Desktop version
@@ -156,7 +183,7 @@ Optional:
 
 ## Adding images
 
-Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](product/technical_writing/index.md#uploading-graphics) for instructions.
+Pictures, images, and graphics must be uploaded to Google Cloud Storage to be added to a handbook or documentation page. See the [Technical Writing page](product/technical_writing/index.md#uploading-graphics) for instructions. Note that this is a two-step process: First, adding your image to Google Cloud Storage. Second, editing the Handbook to include your image.
 
 ## Uploading large files
 
@@ -180,6 +207,20 @@ However, if we want to link the Buddy program handbook page to Engineering onboa
 While it is possible to use absolute URLs (ones that include the domain e.g. https://about.sourcegraph.com/handbook) to link to pages, if the domain changes, it is more difficult to update the URLs compared to using relative URLs.
 
 _Remember that if the .md file name changes or the directory changes (because you’ve moved the file to another team’s page, for example) you will need to update the path._
+
+## Moving a Page (Web Interface)
+
+All of the following needs to occur within one pull request. See [this section](#multiple-changes-in-a-single-pr) for help on making multiple edits at once.
+
+1. Rename the file to indicate its new location as described in [Github's documentation](https://docs.github.com/en/repositories/working-with-files/managing-files/moving-a-file-to-a-new-location)
+1. Address any errors in the [Handbook Checks](#handbook-checks). Since you are changing the location of a file, any existing links to that file will break. You may see errors like this:
+   ![Broken Link Errors](https://storage.googleapis.com/sourcegraph-assets/handbook/relocate-page-errors.png)
+1. [Add redirects](#adding-redirects) to account for any instance where someone may be directed to the old URL.
+
+## Deleting a Page (Web Interface)
+
+See [this Github documentation](https://docs.github.com/en/repositories/working-with-files/managing-files/deleting-files-in-a-repository#deleting-a-file) for deleting a file or directory through the web interface. You may encounter Handbook checks errors. Since you are changing the location of a file, any existing links to that file will break. You may see errors like this, which are explained in the [Handbook Checks](#handbook-checks) section of this page:
+![Broken Link Errors](https://storage.googleapis.com/sourcegraph-assets/handbook/relocate-page-errors.png)
 
 ## Adding redirects
 
