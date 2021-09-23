@@ -32,7 +32,7 @@ Sourcegraph 3.32 is now available! Here are some highlights from this release:
 
 ## Code Insights is available in Public Beta
 
-Code Insights is a new analytics tool that lets you track and understand what’s in your code and how it changes over time. You can find it via “Insights” in the main nav bar. It is free while in beta through 2021. When Code Insights is officially released, we may disable your use of it or charge for using it. We're still polishing Code Insights, so we appreciate if you [share any bugs or feedback about your experience](mailto:feedback@sourcegraph.com).
+Code Insights is a new analytics tool that lets you track and understand what’s in your code and how it changes over time. You can find it via “Insights” in the main navigation bar. It is available for all Sourcegraph users for free while in beta. When Code Insights is officially released, we may disable your use of it or charge for continued use. We're still polishing Code Insights, so we appreciate it if you [share any bugs or feedback about your experience](mailto:feedback@sourcegraph.com).
 
 ## Revisions sidebar
 
