@@ -13,6 +13,8 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20
 
 ![Flexible work calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png)
 
+_Sourcegraph provides universal code search: a navigation engine for understanding your code. We're also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://about.sourcegraph.com/handbook/company/team)._
+
 Work is only one part of our lives, but until remote work, it occupied a sacrosanct place in our schedules. You were to work between the hours of 9 am and 5 pm, not including your commute to and from the office, and the rest of your life had to flow around that block.
 
 Remote work offers the opportunity to rethink work from first principles and ask ourselves: What does life look like when our jobs work for us, rather than the other way around? When you don’t have to commute, when no one is watching you work, when code shipped at 2 am is as valuable as code shipped at 10 am, what can your life become? Maybe your day will become nonlinear; maybe you'll split your workday in two; or maybe you'll work 4 days instead of 5.
@@ -37,7 +39,7 @@ For Loïc, the goal is to maximize output and minimize synchronous work. It’s 
 
 Loïc believes this so strongly that he’d refuse an offer from a company based on flexibility alone. I asked him to consider an inflexible dream job but he disagreed with the premise: “I doubt that it would be my dream job if it’s completely inflexible.”
 
-Flexibility isn’t just a benefit to be tallied up against other benefits–it says something about your company. ”In our industry,” Guychard argues, ”if you’re inflexible, you’re ignoring how we actually work and how software actually gets produced. Software is not something that gets produced on an inflexible schedule.”
+Flexibility isn’t just a benefit to be tallied up against other benefits–it says something about your company. “In our industry,” Guychard argues, “if you’re inflexible, you’re ignoring how we actually work and how software actually gets produced. Software is not something that gets produced on an inflexible schedule.”
 
 ## Stephen Gutekanst, software engineer, takes “workations”
 
@@ -85,7 +87,7 @@ As much as she loves her schedule, she recommends taking account of the costs: �
 
 [TJ DeVries](https://about.sourcegraph.com/handbook/company/team#tj-devries), software engineer at Sourcegraph and core maintainer for open source text editor [Neovim](https://neovim.io/), streams almost all day every Friday. How? He works four tens: four days a week, ten hours each.
 
-> “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would mind. - TJ DeVries, software engineer
+> “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would mind.” - TJ DeVries, software engineer
 
 TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
 
@@ -113,7 +115,7 @@ Robert works a split schedule, meaning that for three days a week, he works from
 
 Robert is used to some degree of flexibility. When he was a student, he optimized his schedule for his primary hobbies–taking advantage of daylight hours to be out and about. Robert decided he didn’t want to change that as he started working full time.
 
-When he onboarded with Sourcegraph, there was nothing that said he had to be working from 9 am to 5 pm so he set his schedule how he wanted it. “I don’t think there was any particular response to it." The team was supportive when he communicated his preferences.
+When he onboarded with Sourcegraph, there was nothing that said he had to be working from 9 am to 5 pm so he set his schedule how he wanted it. “I don’t think there was any particular response to it.” The team was supportive when he communicated his preferences.
 
 Robert is wary of the exhaustion that can come with a traditional schedule. “There’s something about 9 am to 5 pm that’s kind of exhausting,” he said. “What would often happen is you’d charge through the day and then you’d get home at the end of the workday, maybe hit the gym for a while, come back and cook dinner–and that’s pretty much your whole day. There’s no room for anything else.”
 
