@@ -58,7 +58,7 @@ Sourcegraph is easily set up to access any code management system, regardless of
   - **Problem:** Phabricator support within Sourcegraph was never properly implemented, resulting in limited support.
 - Bitbucket Cloud permission syncing
   - **Problem:** Atlassian are ending support for BitBucket Server and staring moving all customers to the Cloud. But Sourcegraph doesn't currently support native permission syncing for BitBucket Cloud.
-- 
+-
 
 ### Competitive landscape
 
@@ -75,11 +75,11 @@ Sourcegraph is easily set up to access any code management system, regardless of
 
 ### Goals
 
- 🎯 Goal 1
- 
- 🎯 Goal 2
- 
- 🎯 Goal 3
+🎯 Goal 1
+
+🎯 Goal 2
+
+🎯 Goal 3
 
 ### Themes
 

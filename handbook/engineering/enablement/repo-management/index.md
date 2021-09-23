@@ -25,14 +25,14 @@ We also have temporary custody of Authentication, with the aspiration being to s
 ## Responsibilities
 
 - Maintain, develop, support and advise on:
-    - Code host connections
-    - Code replication into Sourcegraph
-    - Code storage within Sourcegraph
-    - Repository permission syncing
-    - Permission caching
-    - Explicit permissions API
+  - Code host connections
+  - Code replication into Sourcegraph
+  - Code storage within Sourcegraph
+  - Repository permission syncing
+  - Permission caching
+  - Explicit permissions API
 - Temporary custody of authentication, efforts large limited to:
-    - Support and maintenance
+  - Support and maintenance
 
 ## Contact
 
