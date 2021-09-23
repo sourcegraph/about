@@ -133,7 +133,7 @@ For Jean, this means using the morning to take care of the chores that most woul
 
 > “I’ve found myself playing video games in the afternoon and I’ve found myself meeting up with friends.” - Jean du Plessis, director of engineering
 
-In the afternoon, Jean is frank: he might just nap. After, around 3 pm (his time), is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, we read a story.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
+In the afternoon, Jean is frank: he might just nap. After, around 3 pm (his time), is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, and I put them to bed.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
 ![Slack message from Jean regarding his schedule](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.20.11%20PM.png)
 
