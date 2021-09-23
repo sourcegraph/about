@@ -354,7 +354,8 @@ The [CE](https://about.sourcegraph.com/handbook/ce) organization is pre- and pos
 - Details: during this stage in the interview process, we will get an understanding of the technical depth of your experience and how you would contribute to our engineering culture. We will ask you about your past work and accomplishments in depth, how you worked with others, decisions you made, and what you'd do differently today.
 
 ### Technical Interview: Code Walkthrough (Code Intelligence Team)
- - More details can be found [here](https://about.sourcegraph.com/handbook/engineering/code-graph/code-intelligence/code-walkthrough)
+
+- More details can be found [here](https://about.sourcegraph.com/handbook/engineering/code-graph/code-intelligence/code-walkthrough)
 
 ### Technical Interview: Coding Skills (Repository Management Team)
 
