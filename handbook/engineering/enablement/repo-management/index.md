@@ -1,6 +1,6 @@
 # Repo Management team
 
-The Repo Management team (part of the [Enablement](../index.md) org) TODO complete intro.
+The Repo Management team (part of the [Enablement](../index.md) org)
 
 ## Members
 
@@ -16,9 +16,9 @@ The Repo Management team (part of the [Enablement](../index.md) org) TODO comple
 
 TODO
 
-## Vision
+## Direction
 
-TODO
+[Find out about the Repo Management team's vision, guiding principles, current status quo, and strategic plans](direction.md)
 
 ## Responsibilities
 
@@ -28,10 +28,6 @@ TODO
 
 - [#repo-management](https://sourcegraph.slack.com/archives/C01N83PS4TU) channel or @repo-management-team in Slack.
 - [team/repo-management](https://github.com/sourcegraph/sourcegraph/labels/team%2Frepo-management) label and [@sourcegraph/repo-management](https://github.com/orgs/sourcegraph/teams/repo-management) team on GitHub.
-
-## Goals
-
-TODO
 
 ## Growth plan
 
@@ -43,7 +39,7 @@ TODO
 
 ## Principles
 
-We inherit Sourcegraph's [engineering principles and practices](../../principles-and-practices.md) and [Enablement org's principles and practices](../index.md#principles-and-practices). In addition, we have a few processes and practices specific to our team, as detailed below.
+We inherit Sourcegraph's [engineering principles and practices](../../principles-and-practices.md) and [Enablement org's principles and practices](../index.md#principles-and-practices). 
 
 ## Processes
 
