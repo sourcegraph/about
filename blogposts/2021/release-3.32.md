@@ -14,7 +14,7 @@ changelogItems:
   - description: The various alerts overview panels in Grafana can now be clicked to go directly to the relevant panels and dashboards.
     url: https://github.com/sourcegraph/sourcegraph/pull/24920
     category: Admin
-  - description: '`allowGroupsPermissionsSync` in the GitHub authorization provider is now required to enable the experimental GitHub teams and organization permissions caching.'
+  - description: '`allowGroupsPermissionsSync` in the GitHub authorization provider is now required to enable the experimental GitHub teams and organizations permissions caching. Permissions caching can significantly reduce the amount of time it takes to perform a full permissions sync.'
     url: https://docs.sourcegraph.com/admin/repo/permissions#teams-and-organizations-permissions-caching
     category: Admin
   - description: Fixed a number of issues where repository permissions sync may fail for instances with very large numbers of repositories.
