@@ -39,7 +39,7 @@ TODO
 
 ## Principles
 
-We inherit Sourcegraph's [engineering principles and practices](../../principles-and-practices.md) and [Enablement org's principles and practices](../index.md#principles-and-practices). 
+We inherit Sourcegraph's [engineering principles and practices](../../principles-and-practices.md) and [Enablement org's principles and practices](../index.md#principles-and-practices).
 
 ## Processes
 
