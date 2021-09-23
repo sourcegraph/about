@@ -7,7 +7,6 @@ This page contains information that is relevant for how to do well at your job a
 ### Product planning
 
 - [Planning](planning.md) - how we do planning and the artifacts we use to plan.
-- [Delivery plans](delivery_plans.md) - how we validate the things we build solve user problems.
 - [Tracking issues](../../engineering/tracking_issues.md) - how we keep track of planned and on-going work.
 - [Prioritizing](prioritizing.md) - how we prioritize work, and how to get things prioritized.
 - [Tracking user feedback](user_feedback.md) - sources of feedback and how we keep track of that feedback.
@@ -75,6 +74,7 @@ Our principles were [co-created](https://docs.google.com/document/d/1zRbtZR68ZIT
 
 ## Tools/Templates
 
+- [Direction page template](https://github.com/sourcegraph/about/blob/main/handbook/product/product_management/direction_template.md) - a template for a product direction page, covering vision, strategy and short term direction ([example](direction_template.md))
 - [Figma](https://www.figma.com/files/team/438792081639669302/Sourcegraph)
 - [Productboard](https://sourcegraph.productboard.com/)
 - [Amplitude](../../ops/bizops/amplitude.md)
