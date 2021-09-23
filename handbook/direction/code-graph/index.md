@@ -1,8 +1,8 @@
 # Code Graph
 
-Code Graph is responsible for search (the user experience as well as performance), insights, code intelligence, and batch changes. This page describes overarching initiatives that tie multiple teams and milestones within Code Graph together.
+The Code Graph org’s builds and scales the Code Graph and how our users interact with it. We are responsible for search (the user experience as well as performance), insights, code intelligence, and batch changes. This page describes overarching initiatives that tie multiple teams and milestones within Code Graph together.
 
-Individual team direction pages can be found on our [direction home page](../index.md#code-graph). For details on how the themes here become reality, as well as what each team is working on next for their individual visions, take a look there.
+Individual team direction pages within Code Graph can be found on our [direction home page](../index.md#code-graph). For details on how the themes here become reality, as well as what each team is working on next for their individual visions, take a look there.
 
 ## Mission
 
@@ -42,3 +42,15 @@ The Code Graph solves real problems today, and beyond getting quickly to value, 
 - Structural search does not function at scale
 - Contexts are not yet discoverable
 - Notebooks show great promise but require polish
+
+### Unlock opportunities and win in the enterprise market via improving the Code Graph and how our users interact with it
+
+- Move batch changes functionality server-side to simplify editing the Code Graph
+- Invest in differentiated features in searching and navigating the Code Graph. e.g. Better hover navigation, Search contexts, Code Monitoring, Advanced Search, ...
+- Improve onboarding and collaboration working on the Code Graph. e.g. Notebooks
+- Bring the experience of tracking insights on the Code Graph into beta
+
+### Scale the Code Graph to ultimately meet the scale needs of our enterprise customers
+
+- Scale our search index to 5.5M repos in OSS
+- Enable auto-indexed code intelligence on the Code Graph at scale
