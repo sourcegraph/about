@@ -15,7 +15,7 @@ changelogItems:
     url: https://github.com/sourcegraph/sourcegraph/pull/24920
     category: Admin
   - description: '`allowGroupsPermissionsSync` in the GitHub authorization provider is now required to enable the experimental GitHub teams and organization permissions caching.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/24561
+    url: https://docs.sourcegraph.com/admin/repo/permissions#teams-and-organizations-permissions-caching
     category: Admin
   - description: Fixed a number of issues where repository permissions sync may fail for instances with very large numbers of repositories.
     url: https://github.com/sourcegraph/sourcegraph/pull/24972
