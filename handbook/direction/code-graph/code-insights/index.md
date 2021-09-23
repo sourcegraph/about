@@ -6,7 +6,7 @@ This page outlines the vision, strategy, and goals of the Code Insights team.
 
 Quick links:
 
-- [Code Insights Backlog](https://github.com/orgs/sourcegraph/projects/200/views/13) 
+- [Code Insights Backlog](https://github.com/orgs/sourcegraph/projects/200/views/13)
 - Latest demo – **TODO check with marketing if we're allowed to share a demo here**
 - [Documentation](https://docs.sourcegraph.com/code_insights)
 
