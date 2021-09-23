@@ -42,10 +42,6 @@ In the left sidebar of your search results, you can now see both branches and ta
 
 We’re now caching search results for an improved user experience. When you click into a file from the search results page and then navigate back, the results will now always appear in the same order they appeared previously.
 
-## Compute API endpoint
-
-For Code Insights (Beta) and API users, we’ve exposed a new compute endpoint that allows you to extract and aggregate data based on a regex. For example, you can search for React as a dependency in `package.json` and group your results by version number.
-
 ## LSIF data retention is now configurable via our UI
 
 We've changed the way we think about LSIF data retention. Previously, precise Code Intelligence data was capped by a maximum age configured by the PRECISE_CODE_INTEL_DATA_TTL environment variable. This means that, regardless of how important some data was, it would be removed after it passed its expiry.
