@@ -23,7 +23,7 @@ changelogItems:
   - description: 'Fixed excessive re-rendering of the web application on every keypress in the search query input.'
     url: https://github.com/sourcegraph/sourcegraph/pull/24844
     category: Search
-  - description: 'The `PRECISE_CODE_INTEL_DATA_TTL` environment variable is no longer read by the worker service. Instead, global and repository-specific data retention policies configurable in the UI by site-admins will control the length of time LSIF uploads are considered _fresh_.'
+  - description: 'The `PRECISE_CODE_INTEL_DATA_TTL` environment variable is no longer read by the worker service. Instead, site admins can configure global and repository-specific data retention policies in the UI to control the length of time LSIF uploads are considered _fresh_.'
     url: https://github.com/sourcegraph/sourcegraph/pull/24793
     category: Admin
 ---
@@ -44,10 +44,10 @@ We’re now caching search results for an improved user experience. When you cli
 
 ## Compute API endpoint
 
-For Code Insights and API users, we’ve exposed a new compute endpoint that allows you to extract and aggregate data based on a regex. For example, you can search for React as a dependency in `package.json` and group your results by version number.
+For Code Insights (Beta) and API users, we’ve exposed a new compute endpoint that allows you to extract and aggregate data based on a regex. For example, you can search for React as a dependency in `package.json` and group your results by version number.
 
 ## LSIF data retention is now configurable via our UI
 
-We've changed the way we think about LSIF data retention. Previously, precise code intelligence data was capped by a maximum age configured by the PRECISE_CODE_INTEL_DATA_TTL environment variable. This means that, regardless of how important some data was, it would be removed after it passed its expiry.
+We've changed the way we think about LSIF data retention. Previously, precise Code Intelligence data was capped by a maximum age configured by the PRECISE_CODE_INTEL_DATA_TTL environment variable. This means that, regardless of how important some data was, it would be removed after it passed its expiry.
 
-Now, site-admins can configure global and repository-specific data retention policies in the UI and can control the length of time LSIF uploads are considered fresh. Read more about how to [configure precise code intelligence data retention policies](https://docs.sourcegraph.com/code_intelligence/how-to/configure_data_retention) in our docs.
+Now, site-admins can configure global and repository-specific data retention policies in the UI and can control the length of time LSIF uploads are considered fresh. Read more about how to [configure precise Code Intelligence data retention policies](https://docs.sourcegraph.com/code_intelligence/how-to/configure_data_retention) in our docs.
