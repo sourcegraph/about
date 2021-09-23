@@ -10,7 +10,7 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 - Any engineer at Sourcegraph can help. (The _code_ that engineers write at Sourcegraph also consists of files in a Git repository, so engineers are very familiar with making these kinds of edits.)
 - [Teammates who have already made a handbook change](https://sourcegraph.com/github.com/sourcegraph/about/-/stats/contributors?path=handbook%2F) can help.
-- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @eric, @aharvey, @virginia, @ines, @jyavorska, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
+- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @aharvey, @virginia, @ines, @jyavorska, @marybelzer, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
 - Ask in #handbook: `Who can screen-share with me to help me make an edit to the handbook?`
 - Don't be afraid of breaking anything! It is very easy for any engineer on the team to roll back to the previous version of the handbook if you make a mistake.
 
@@ -132,22 +132,22 @@ _This is just one path for creating a new page in the Handbook. These steps can 
 
    ![Navigate to Directory](https://storage.googleapis.com/sourcegraph-assets/handbook/navigate-to-directory.png)
 
-2. Click Add File > Create New File
-3. Name your file.
+1. Click Add File > Create New File
+1. Name your file.
    -Make sure the name ends with ".md". This makes it a Markdown file. For example: editing.md
-4. Enter your content in Markdown. See [Markdown Resources](#markdown-resources) for help with formatting.
-5. Name your commit and your branch. Make note of your branch name, you'll need it in next steps.
-6. Click "Commit New File"
-7. Click on the dropdown arrow on the "Create Pull Request" button, and choose "Create Draft Pull Request". This will keep your PR from auto-notifying code owners or reviewers before it's ready. Then, click "Draft Pull Request".
-8. You'll likely see that the docsite check has failed. Click "Details" on the docsite check line to see more information. If your error says "disconnected page (no inlinks from other pages)", this means you need to create a link into this page. For other failures, see [Handbook Checks](#handbook-checks).
-9. In a new tab, navigate to the page where you want to create a link to your new page.
+1. Enter your content in Markdown. See [Markdown Resources](#markdown-resources) for help with formatting.
+1. Name your commit and your branch. Make note of your branch name, you'll need it in next steps.
+1. Click "Commit New File"
+1. Click on the dropdown arrow on the "Create Pull Request" button, and choose "Create Draft Pull Request". This will keep your PR from auto-notifying code owners or reviewers before it's ready. Then, click "Draft Pull Request".
+1. You'll likely see that the docsite check has failed. Click "Details" on the docsite check line to see more information. If your error says "disconnected page (no inlinks from other pages)", this means you need to create a link into this page. For other failures, see [Handbook Checks](#handbook-checks).
+1. In a new tab, navigate to the page where you want to create a link to your new page.
    -You can do this in the same tab if you'd like, but it may be easier to keep your PR up in its own tab while you do this part.
-10. Click on the branch dropdown on the upper left side of your screen (it probably says "main"). Search for the branch you named when creating your first change, and select it.
-    ![Update Branch](https://storage.googleapis.com/sourcegraph-assets/handbook/update-branch.png)
-11. Click the pencil icon to edit your file.
-12. Create a [link using a relative path](#using-relative-paths-to-link-handbook-pages) in the appropriate location on your page.
-13. Commit your changes.
-14. Return to your PR, and the checks should rerun. Once checks pass, merge your changes.
+1. Click on the branch dropdown on the upper left side of your screen (it probably says "main"). Search for the branch you named when creating your first change, and select it.
+   ![Update Branch](https://storage.googleapis.com/sourcegraph-assets/handbook/update-branch.png)
+1. Click the pencil icon to edit your file.
+1. Create a [link using a relative path](#using-relative-paths-to-link-handbook-pages) in the appropriate location on your page.
+1. Commit your changes.
+1. Return to your PR, and the checks should rerun. Once checks pass, merge your changes.
 
 ### macOS
 
