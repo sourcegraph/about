@@ -57,7 +57,7 @@ Stephen’s message to the team about his workation.
 
 Part of the reason for that comes from working at a [high-growth startup](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/): “A lot of the time, we don’t have an owner for an area and I’m the person with the most context, so it’s useful for me to help out there.”
 
-It’s useful, he says, but also a dangerous temptation: “It’s really tempting, as an engineer, to say ‘Yeah, this is the main thing I’m working on but oh, this person needs help or someone has a question, let me jump in and help them.’ You can end up losing context a lot of the time.”
+Being able to contribute everywhere is useful, he says, but also a dangerous temptation: “It’s really tempting, as an engineer, to say ‘Yeah, this is the main thing I’m working on but oh, this person needs help or someone has a question, let me jump in and help them.’ You can end up losing context a lot of the time.”
 
 Workations are a way to combat distractions and regain focus. To make them work, Stephen builds a clear consensus about what he’s doing and about what others expect him to do. “I know what I need to work on, I just need the time to go and do it. In those situations, detaching from everything else can be really powerful.”
 
