@@ -65,11 +65,11 @@ Workations are a way to combat distractions and regain focus. To make them work,
 
 He takes a workation “whenever there’s a time where I’m like ‘Hey, I’d love to just sit down and write this code for a while.’” The result is a situation “where you can completely focus and get a lot done.”
 
-## Vanesa Ortiz, community advocate, works 32 hours per week
+## Vanesa Ortiz, community advocate, works 4 days per week
 
-“My code quality declined. My code reviews became longer. It was harder and harder for me to focus properly and reach my goals.”
+“Switching to a 4-day work week was the best decision as the primary caretaker of two small children.”
 
-[Vanesa Ortiz](https://about.sourcegraph.com/handbook/company/team#vanesa-ortiz-she-her), community advocate at Sourcegraph and former co-host of [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), had brain fog. When she came back from maternity leave, she struggled to code the way she used to be able to. “I couldn’t focus correctly,” she said. “I felt like I was constantly deprived, which is literally what happens when you’re a milk factory 24/7.”
+[Vanesa Ortiz](https://about.sourcegraph.com/handbook/company/team#vanesa-ortiz-she-her), community advocate at Sourcegraph and former co-host of [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), had brain fog after her first child. When she came back from maternity leave, she struggled to code the way she used to be able to. “I couldn’t focus correctly,” she said. “I felt like I was constantly deprived, which is literally what happens when you’re a milk factory 24/7.”
 
 Vanesa was struggling to juggle a full-time job, a new baby, and her portion of the household work. Weekends were no longer a space for recovery; they became stressful days for housework and childcare: “I was exhausted after the weekend.”
 
@@ -78,10 +78,6 @@ Together, Vanesa and her then engineering manager decided to try a four-day work
 Now, she has the time she needs: “On the weekend I get to enjoy my children. It’s not like I’m trying to push them away as I deal with household chores.” The success of her new schedule has lasted through to her second child. “I can’t imagine going back,” she says, “especially with the second kid.”
 
 Vanesa recommends the four-day work week to everyone, but especially to primary caretakers: “If you are struggling with work/life balance, and you need that extra time to practice self care and to deal with all the messes in your life, then it should really be considered.”
-
-Vanesa is careful to note, however, that anyone considering changing their schedule needs to do a cost-benefit analysis. Vanesa works 32 hours across four days instead of 40 across 5, meaning she has to consider the consequences of working part time.
-
-As much as she loves her schedule, she recommends taking account of the costs: “Consider the fact that, realistically, it will slow down your career path a little bit.” Sacrificing one day a week may be the best choice for your life, but being ⅕ less available than your coworkers will affect your career “one way or another.”
 
 ## TJ DeVries, software engineer, streams on Fridays
 
