@@ -83,11 +83,11 @@ As much as she loves her schedule, she recommends taking account of the costs: �
 
 ## TJ DeVries, software engineer, streams on Fridays
 
-[TJ DeVries](https://about.sourcegraph.com/handbook/company/team#tj-devries), software engineer at Sourcegraph and core maintainer for open source Vim-based text editor [Neovim](https://neovim.io/), streams almost all day every Friday. How? He works four tens: four days a week, ten hours each.
+[TJ DeVries](https://about.sourcegraph.com/handbook/company/team#tj-devries), software engineer at Sourcegraph and core maintainer for open source text editor [Neovim](https://neovim.io/), streams almost all day every Friday. How? He works four tens: four days a week, ten hours each.
 
-> “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would care. - TJ DeVries, software engineer
+> “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would mind. - TJ DeVries, software engineer
 
-TJ acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
+TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
 
 ![TJ coding live on Twitch](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%202.03.37%20PM.png)
 
@@ -95,11 +95,11 @@ TJ acknowledges it’s not his _ideal_ schedule. “My preferred hours would be 
 TJ coding live on Twitch.
 </p>
 
-Many would rightfully worry that lopping off one day a week wouldn’t sit well with a manager. TJ had the opposite experience: “No one cares about how you’re working as long as you’re getting done what you say you’re going to get done.” As long as his new schedule wasn’t a detriment to his team, TJ says, then he had his manager’s full support.
+Many would rightfully worry that lopping off one day a week wouldn’t sit well with a manager. TJ had the opposite experience: "No one minds how you’re working as long as you’re getting done what you say you’re going to get done and staying healthy." As long as his new schedule wasn’t a detriment to his team, TJ says, then he had his manager’s full support.
 
-TJ is frank: “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would care.” Though they might reach out about his health if it looked like he weren't sleeping, otherwise, his manager and his team just care about output.
+TJ is frank: “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would mind.” Though they might reach out about his health if it looked like he weren't sleeping, otherwise, his manager and his team just care about output.
 
-TJ recommends carrying over some software development principles over to your work calendar, namely: Don’t waterfall your calendar. “It’s unlikely that you’ll know the optimal schedule ahead of time,” TJ warns. “That’s not usually how we find the best version of something. We iterate on it over time.”
+When considering how to build your own work schedule, TJ recommends carrying over some software development principles over to your work calendar, namely: Don’t waterfall your calendar. “It’s unlikely that you’ll know the optimal schedule ahead of time,” TJ warns. “That’s not usually how we find the best version of something. We iterate on it over time.”
 
 ## Robert Lin, software engineer, has a split schedule
 
