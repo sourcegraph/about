@@ -69,7 +69,7 @@ He takes a workation “whenever there’s a time where I’m like ‘Hey, I’d
 
 “Switching to a 4-day work week was the best decision as the primary caretaker of two small children.”
 
-[Vanesa Ortiz](https://about.sourcegraph.com/handbook/company/team#vanesa-ortiz-she-her), community advocate at Sourcegraph and former co-host of [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), had brain fog after her first child. When she came back from maternity leave, she struggled to code the way she used to be able to. “I couldn’t focus correctly,” she said. “I felt like I was constantly deprived, which is literally what happens when you’re a milk factory 24/7.”
+[Vanesa Ortiz](https://about.sourcegraph.com/handbook/company/team#vanesa-ortiz-she-her), community advocate at Sourcegraph and co-host of [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), had brain fog after her first child. When she came back from maternity leave, she struggled to code the way she used to be able to. “I couldn’t focus correctly,” she said. “I felt like I was constantly deprived, which is literally what happens when you’re a milk factory 24/7.”
 
 Vanesa was struggling to juggle a full-time job, a new baby, and her portion of the household work. Weekends were no longer a space for recovery; they became stressful days for housework and childcare: “I was exhausted after the weekend.”
 
