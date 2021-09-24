@@ -4,17 +4,21 @@ Hello, I’m Jason Yavorska and I’m the Product Director for Global Code Graph
 
 ## Logistics
 
-- I love thinking about technology, processes, personalities, and efficiency, but what really drives me is what Marc Andreessen described as [the one thing that matters](https://pmarchive.com/guide_to_startups_part4.html): the journey of finding and growing product market fit
-- I like to follow the [reasonable person principle](http://www.cs.cmu.edu/~weigand/staff/)
-- I have learned that working on things [iteratively](https://about.gitlab.com/handbook/values/#iteration) tends to get the best results
-- Talking to customers in a way where they tell you the truth about what they actually are willing to pay for is a subtle skill. This [video](https://www.youtube.com/watch?v=MT4Ig2uqjTc) and [book](http://momtestbook.com/) can help you learn to do that better.
 - I always appreciate direct feedback, so don't worry about upsetting me and share bad news early
 - I'm more likely to be optimistic than not, so feel free bring me back to reality
 - I like to debate to solve problems, if that puts you off that's fine - tell me and we’ll use another approach
 
+## Resources
+
+- I love thinking about technology, processes, personalities, and efficiency, but what really drives me is what Marc Andreessen described as [the one thing that matters](https://pmarchive.com/guide_to_startups_part4.html): the journey of finding and growing product market fit
+- I like to follow the [reasonable person principle](http://www.cs.cmu.edu/~weigand/staff/)
+- I have learned that working on things [iteratively](https://about.gitlab.com/handbook/values/#iteration) tends to get the best results
+- Talking to customers in a way where they tell you the truth about what they actually are willing to pay for is a subtle skill. This [video](https://www.youtube.com/watch?v=MT4Ig2uqjTc) and [book](http://momtestbook.com/) can help you learn to do that better.
+- The idea that you should lead with why is a good one - features are fine, but what we're really doing is adding value about solving problems. Whenever you're talking about features, try to talk about why first. This [video](https://www.youtube.com/watch?v=2Ss78LfY3nE) and [book](https://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591846447) are really great
+
 ## Management Style
 
-My own default approach to management is:
+My default approach to management is:
 
 - Non-hierarchical: the best way to solve a conflict is by getting the people together who have the problem, rather than finding the common manager of them and having them make a decision. The people with the issue know the most about it and can make the best decision. One exception is conflicts of prioritization between teams, which I can help. If you’re used to more heirarchical structures, I can help you develop your skills on how to solve problems without escalating.
 - Trust based: My direct reports are all in senior leadership roles so I won’t check in on you to make sure that your work is on track, that you are at your desk, and so on. My expectation is that you’ll raise any concerns that are relevant to me as needed, that you’re working towards results, and if you need any help (which I’m happy to provide!) you’ll let me know. If you are used to lower trust environments, please don’t mistake low micromanagement for not wanting to help.
