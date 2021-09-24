@@ -26,8 +26,16 @@
 
 ## How to Submit an Invoice:
 
-- All invoices should be sent via email to our accounting team, <a href="mailto:Sourcegraph@Bill.com?cc=finance@sourcegraph.com">Sourcegraph@Bill.com, with finance@sourcegraph.com copied</a> on all emails. All invoices will be paid through [Veem](https://www.veem.com/). You should have received an invite to your personal email for a Veem account as part of onboarding.
+- All invoices should be sent via email to our accounting team, <a href="mailto:Sourcegraph@Bill.com?cc=finance@sourcegraph.com">Sourcegraph@Bill.com, with finance@sourcegraph.com copied</a> on all emails. Invoices will be paid through [Veem](https://www.veem.com/). You should have received an invite to your personal email for a Veem account as part of onboarding.
 - Please note: You do not need to submit an invoice via Veem.
+- If your country does not support Veem, please send an email notifying the Finance team [finance@sourcegraph.com](mailto:finance@sourcegraph.com) with CC to [sourcegraph@officengine.com](mailto:sourcegraph@officengine.com) explaining your situation and provide the following bank information:
+  - Beneficiary bank
+  - Beneficiary bank full address
+  - SWIFT Code
+  - Beneficiary Full Name
+  - Account number
+  - Beneficiary home address 
+- Please note: if you do not get paid via Veem, you still have to submit your invoice as mentiones in the beginning of this section.
 
 ## Invoice Submission Timing
 
