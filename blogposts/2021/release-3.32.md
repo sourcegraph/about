@@ -1,17 +1,17 @@
 ---
 title: 'Sourcegraph 3.32 release'
-publishDate: 2021-09-23T10:00-07:00
+publishDate: 2021-09-24T10:00-07:00
 description: 'Sourcegraph 3.32 introduces Code Insights in Public Beta, a new search sidebar for navigating revisions, improved search results caching, and custom LSIF data retention policies.'
 tags: [blog, release]
 slug: 'release/3.32'
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.32/sourcegraph-3-32-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.32/sourcegraph-3-32-release.png
 changelogItems:
   - description: The search sidebar now shows a revisions section when all search results are from a single repository. This makes it easier to search in and switch between different revisions.
     url: https://github.com/sourcegraph/sourcegraph/pull/23835
     category: Search
-  - description: The various alerts overview panels in Grafana can now be clicked to go directly to the relevant panels and dashboards.
+  - description: The various alerts overview panels in Grafana can now be clicked on to go directly to the relevant panels and dashboards.
     url: https://github.com/sourcegraph/sourcegraph/pull/24920
     category: Admin
   - description: '`allowGroupsPermissionsSync` in the GitHub authorization provider is now required to enable the experimental GitHub teams and organizations permissions caching. Permissions caching can significantly reduce the amount of time it takes to perform a full permissions sync.'
@@ -36,7 +36,7 @@ Code Insights is a new analytics tool that lets you track and understand what’
 
 ## Revisions sidebar
 
-In the left sidebar of your search results, you can now see both branches and tags associated with a repository you’re viewing. When you add a search literal, such as “auth,” the search term will persist across searches, allowing you to quickly search between branches or tags for that search term.
+In the left sidebar of your search results, you can now see both branches and tags associated with a repository you’re viewing. When you add a search literal, such as “auth,” the search term will persist across searches, allowing you to search quickly between branches or tags for that search term.
 
 <div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.32/search_revisions_sidebar.mp4" type="video/mp4">
