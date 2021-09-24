@@ -162,3 +162,9 @@ In this brave (not so new) world, time-input is not an effective way to measure 
 If you want to learn more about how your fellow developers work, tune into Dev Tool Time, which streams live on Twitch every other Wednesday.
 
 [![Dev Tool Time CTA](https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/DTT-general-CTA.png)](https://bit.ly/2XMhIir)
+
+## More posts like this
+
+* [Improving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
+* [Can you hear me? No, but we read you—an experiment with video calls](https://about.sourcegraph.com/blog/can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls/)
+* [Software engineer career paths](https://about.sourcegraph.com/blog/software-engineer-career-paths/)
