@@ -6,8 +6,8 @@ authorUrl: https://about.sourcegraph.com/handbook/company/team#andr%c3%a9-eleute
 publishDate: 2021-09-27T10:00-07:00
 tags: [blog]
 slug: eliminate-secrets-from-codebase-with-universal-code-search
-heroImage: https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.webm
-socialImage: https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.mp4
+heroImage: https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png
+socialImage: https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png
 published: true
 ---
 
