@@ -34,7 +34,7 @@
   - SWIFT Code
   - Beneficiary Full Name
   - Account number
-  - Beneficiary home address 
+  - Beneficiary home address
 - Please note: if you do not get paid via Veem, you still have to submit your invoice as mentiones in the beginning of this section.
 
 ## Invoice Submission Timing
