@@ -165,6 +165,6 @@ If you want to learn more about how your fellow developers work, tune into Dev T
 
 ## More posts like this
 
-* [Improving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
-* [Can you hear me? No, but we read you—an experiment with video calls](https://about.sourcegraph.com/blog/can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls/)
-* [Software engineer career paths](https://about.sourcegraph.com/blog/software-engineer-career-paths/)
+- [Improving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
+- [Can you hear me? No, but we read you—an experiment with video calls](https://about.sourcegraph.com/blog/can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls/)
+- [Software engineer career paths](https://about.sourcegraph.com/blog/software-engineer-career-paths/)
