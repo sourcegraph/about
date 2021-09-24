@@ -1,6 +1,6 @@
 ---
-title: "The Nine Circles of Dependency Hell (and a roadmap out)"
-description: "Spending more time on dependency issues than writing code—we’ve all been there, but it doesn’t have to be a one-way ticket."
+title: 'The Nine Circles of Dependency Hell (and a roadmap out)'
+description: 'Spending more time on dependency issues than writing code—we’ve all been there, but it doesn’t have to be a one-way ticket.'
 author: Matt Rickard
 authorUrl: https://matt-rickard.com/
 publishDate: 2021-09-28T10:00-07:00
@@ -34,7 +34,7 @@ All 16 lines of the left-pad library (comments removed) from GitHub
 
 One more dependency won't hurt until it does. Slow builds and massive repositories are symptoms of too many dependencies.
 
-Instead of eating more dependencies, try to snack on the low-hanging fruit of removing unused dependencies (First Circle) as a good starting point. Then, use static code analysis tools to determine where your most significant dependencies come from and determine whether or not you can slim them down or remove them. One example is to only import what you need from the code (e.g., no star (*) imports)). Importing only what you need might not always reduce your bundle size but will almost certainly clear up your global namespace so that you avoid potential conflicts.
+Instead of eating more dependencies, try to snack on the low-hanging fruit of removing unused dependencies (First Circle) as a good starting point. Then, use static code analysis tools to determine where your most significant dependencies come from and determine whether or not you can slim them down or remove them. One example is to only import what you need from the code (e.g., no star (\*) imports)). Importing only what you need might not always reduce your bundle size but will almost certainly clear up your global namespace so that you avoid potential conflicts.
 
 ## The Fourth Circle: _Greed_. Multiple package managers.
 
@@ -73,6 +73,7 @@ Version is open to interpretation—a popular Python package, html5lib, previous
 
 A screenshot of htmlib5 on PyPi, which now uses a more sane versioning scheme. Link.
 What is semantic versioning? From the [Semantic Versioning documentation](https://semver.org/):
+
 ```
 Given a version number MAJOR.MINOR.PATCH, increment the:
 MAJOR version when you make incompatible API changes,
@@ -113,10 +114,7 @@ If you’ve made it this far, you have seen the darkest circles of Dependency He
 - Understand how your package manager resolves the diamond dependency problem.
 
 ### About the author
+
 Matt was previously a software engineer at Google working on Kubernetes. Currently, he’s working on a new startup. He writes daily posts on engineering and startups on his blog, [matt-rickard.com](https://matt-rickard.com/), where [a version of this post](https://matt-rickard.com/nine-circles-of-dependency-hell/) originally appeared.
 
 ### Related posts
-
-
-
-
