@@ -134,7 +134,7 @@ For what we have learned so far and how we are operationalizing those learnings,
 
 ### Competitive landscape
 
-While there are many devtool products that use some version of the word "Insights," and a handful of others that do "high level information about code," there are **no known direct compeitors to Code Insights**.
+While there are many devtool products that use some version of the word "Insights," and a handful of others that do "high level information about code," there are **no known direct competitors to Code Insights**.
 
 There are no other products that can efficiently and effectively provide the deep historical and realtime analysis that Code Insights can provide, largely because any product that wanted to compete with Sourcegraph Code Insights would first have to catch up to the product moat of Sourcegraph Search (which powers Code Insights), and then also build out a Code Insights-like product.
 
