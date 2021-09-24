@@ -22,19 +22,32 @@ What is the team's reason for existing? What is the fundamental value they aim t
 
 > A sentence or two on your ten year vision is where you can really go wild and describe the problems you want to solve and solutions you want to deliver unbound by limitations of technology or scope. Be inspiring and look to the our [10 and 30 year strategies](../../company/strategy.md#sourcegraph-strategy) for ideas.
 
-## Themes
+## Focuses
+
+There are several areas where we are focused at the moment. The examples listed in each focus is illustrative, but not meant to be a commitment of delivering that specific feature within a specific time period.
+
+### Unlock opportunities and win in the enterprise market via improving the Code Graph and how our users interact with it
+
+Our customers give us great feedback on the kinds of product features that are important to them, and that really make a difference when using Sourcegraph compared to the alternatives. Our sales teams also share what's working and what's not in our sales cycles. And finally, we have product innovation/R&D efforts going on that identify new paid features that are likely to help our enterprise customers get even more value out of the product. One of our biggest focuses at the moment is delivering on these possibilities for our customers.
+
+For example:
+
+- Move batch changes functionality server-side to simplify editing the Code Graph
+- Invest in differentiated features in searching and navigating the Code Graph. e.g. Better hover navigation, Search contexts, Code Monitoring, Advanced Search, ...
+- Improve onboarding and collaboration working on the Code Graph. e.g. Notebooks
+- Bring the experience of tracking insights on the Code Graph into beta
 
 ### Provide value quickly to all developers via the Code Graph
 
-Learning what's possible and how to get the most out of Code Graph tends to be trial and error, especially for an individual developer who might have a unique set of use cases and interests that they would search for.
+Learning what's possible and how to get the most out of Code Graph tends to be trial and error, especially for an individual developer who might have a unique set of use cases and interests that they would search for. This helps our users as well as sales teams to discover or show the value of our product more quickly than is possible today We're introducing features that make the value of different product areas more discoverable, and can serve as a jumping off point for easily finding and using more advanced features.
 
-We're introducing a new feature called Insights that brings interesting things to the forefront, and serve as a jumping off point for easily using more advanced features. For example, we could offer an insight that tells you that you have repositories using out of date versions of libraries that you create. This could have a jumping off point to search, allowing the user to learn more about how and where it is being used, as well as a jumping off point for batch changes, if they want to go ahead and update all of them. We could provide a one-click button to subscribe to an alert when they become out of date again in the future.
+For example:
 
-Insights like these can also be a way to help people learn that features exist and how to use them, allowing them to adapt something that's already set up to their other use cases. This should [help people onboard](https://docs.google.com/document/d/1xF1Fp2y0hxY_CrXMsRbJlWCOI8XHBceiUdivNmh8SlQ/edit#) and see the value of the Code Graph more quickly than just showing them a search bar with syntax and hoping they'll make the leaps.
+- TBD
 
 ### Grow product maturity for the unified Code Graph experience
 
-The Code Graph solves real problems today, and beyond getting quickly to value, we can invest in the polish, user experience, and cross-feature functionality within our product area to really make the experience lovable. Some examples of improvements here are:
+The Code Graph solves real problems today, and beyond getting quickly to value, we can invest in the polish, user experience, and cross-feature functionality within our product area to really make the experience lovable, and deliver solutions that are more than the sum of the parts from the individual product areas. Some examples of improvements here are:
 
 - Commit and diff search remain un-indexed, thus:
   - performance suffers
@@ -43,14 +56,11 @@ The Code Graph solves real problems today, and beyond getting quickly to value, 
 - Contexts are not yet discoverable
 - Notebooks show great promise but require polish
 
-### Unlock opportunities and win in the enterprise market via improving the Code Graph and how our users interact with it
-
-- Move batch changes functionality server-side to simplify editing the Code Graph
-- Invest in differentiated features in searching and navigating the Code Graph. e.g. Better hover navigation, Search contexts, Code Monitoring, Advanced Search, ...
-- Improve onboarding and collaboration working on the Code Graph. e.g. Notebooks
-- Bring the experience of tracking insights on the Code Graph into beta
-
 ### Scale the Code Graph to ultimately meet the scale needs of our enterprise customers
+
+We have more and more very large customers, solving very complex Big Code problems. It's critically important that our platform can meet the needs of these kinds of customers, not just in terms of search performance, but in providing solutions that allow you to explore and understand complex networks of source code, at the worlds largest scale.
+
+For example:
 
 - Scale our search index to 5.5M repos in OSS
 - Enable auto-indexed code intelligence on the Code Graph at scale
