@@ -85,6 +85,7 @@ Recent key learnings:
 These tie back to [FY22 Q3 Product/Engineering OKRs](../../../company/goals/2022_q3.md#product-engineering)
 
 **Objective: Make cloud and enterprise successful at massive scale**
+
 - **KR:** Increase the amount of LSIF indexed repos and dependencies on Cloud by 5x (Target: 50k).
 - **KR:** 1 customer successfully enables auto-indexing and dependency navigation on their instance.
 - **KR:** Add Scala and Kotlin support to increase JVM ecosystem coverage.
@@ -92,11 +93,13 @@ These tie back to [FY22 Q3 Product/Engineering OKRs](../../../company/goals/2022
 **Why?** During Q2 we validated our approach for cross-dependency navigation and slowly started building towards the Global Code Graph. For Q3, we want to double down on scaling the number of repositories and dependencies we index on Cloud while making sure we optimize the way we handle LSIF data and uploads. We also want to make sure we’re able to deliver the same top-notch navigation experience to our enterprise customers and will invest in making our approach scalable and performant for on-prem instances.
 
 **Objective: Build a delightful personalized product that devs love**
+
 - **KR:** Solve at least 3 long-standing code navigation UX issues from our papercuts backlog.
 
 **Why?** Code navigation is a key part of a developer’s workflow, we want that experience to feel smooth and snappy, similar to the one you’d get in your favorite IDE. While we build up our code navigation team, we want to take a first stab at improving the current code navigation experience by tackling some long-standing UX papercuts.
 
 **Objective: Happy, effective, async team**
+
 - **KR:** Hire and successfully onboard 3 engineers.
 
 **Why?** Our goal is to own the end-to-end code navigation experience, which will result in clear ownership in some historically grey areas and faster iteration in code navigation-related issues and features. We want to build out the team skillset to own the vertical product slice.
