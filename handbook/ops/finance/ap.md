@@ -122,7 +122,7 @@ Contract management should include:
 
 Once a vendor agreement is signed, please create a new folder for the vendor in the [Suppliers drive](https://drive.google.com/drive/u/0/folders/1hO7wFuvix3QcIDgM6OLNyjfElOUv-s0k) and upload the agreement.
 
-Furthermore, the Sourcegraph Finance department will maintain a contract register to record expenditures valued at greater than $10,000 (annualized amount). 
+Furthermore, the Sourcegraph Finance department will maintain a contract register to record expenditures valued at greater than $10,000 (annualized amount).
 
 ##### Contract Renewals
 
