@@ -1,6 +1,6 @@
 # Code Graph
 
-The Code Graph org’s builds and scales the Code Graph and how our users interact with it. We are responsible for search (the user experience as well as performance), insights, code intelligence, and batch changes. This page describes overarching initiatives that tie multiple teams and milestones within Code Graph together.
+The Code Graph org builds and scales the Code Graph and how our users interact with it. We are responsible for search (the user experience as well as performance), insights, code intelligence, and batch changes. This page describes overarching initiatives that tie multiple teams and milestones within Code Graph together.
 
 Individual team direction pages within Code Graph can be found on our [direction home page](../index.md#code-graph). For details on how the themes here become reality, as well as what each team is working on next for their individual visions, take a look there.
 
