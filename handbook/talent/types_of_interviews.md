@@ -16,7 +16,7 @@ We strive for consistency across all interviews.
   - Resume deep dive
   - Assignment review/working session, if applicable
   - Technical interview, if applicable
-  - **Cross-team collaboration interview**
+  - **Cross-functional team collaboration interview**
   - **Peer interview**
   - Leadership interview
   - **Values interview**
@@ -53,7 +53,7 @@ All departments are likely to have some or all of the below universal interview 
 - Details: during this stage in the interview process, the Hiring Manager will introduce themself, get to know you, and answer any initial questions you may have. This stage is meant to be conversational and informative for both us and the candidate.
 - Example questions:
   - What did you do to prepare for this conversation?
-  - Why do want to be a [role title]? What are your longterm goals?
+  - Why do you want to be a [role title]? What are your longterm goals?
   - How would you explain what Sourcegraph does to a friend?
 
 ## Resume deep dive
@@ -79,10 +79,10 @@ All departments are likely to have some or all of the below universal interview 
   - Tell us about the best team you've ever been a part of.
   - Tell us about a time when you had to put your team's interests above your own.
 
-## Cross-team collaboration interview
+## Cross-functional team collaboration interview
 
 - Interviewer(s): people outside of your respective department who you would cross-collaborate with regularly.
-- Duration: 30-45 minutes.
+- Duration: 30-60 minutes.
 - Details: during this stage of the interview process, you will meet with members of another team with whom you would partner regularly. The goal of this interview is to understand how you communicate and collaborate with cross-functional partners within Sourcegraph.
 - Example questions:
   - Tell us about a recent project you worked on where you collaborate with people outside of your department
@@ -351,15 +351,15 @@ The [CE](https://about.sourcegraph.com/handbook/ce) organization is pre- and pos
 
 - Interviewers: two members of the engineering department
 - Duration: 60-minutes.
-- Details: during this stage in the interview process, we will get an understanding of the technical depth of your experience and how you would contribute to our engineering culture. We will ask you about your past work and accomplishments in depth, how you worked wiht others, decisions you made, and what you'd do differently today.
+- Details: during this stage in the interview process, we will get an understanding of the technical depth of your experience and how you would contribute to our engineering culture. We will ask you about your past work and accomplishments in depth, how you worked with others, decisions you made, and what you'd do differently today.
 
-### Technical Interview: Coding Skills (Core Application Team)
+### Technical Interview: Coding Skills (Repository Management Team)
 
 - Interviewers: two members of the Core Application team
 - Duration: 60-minutes.
 - Details: An engineer from the team will pair with you to work on an API Client implementation. The goal is to work on the problem together like you would with a fellow engineer. We plan to use this interview to determine your coding ability and technical communication.
 
-### Technical Interview: Architecture (Core Application Team)
+### Technical Interview: Architecture (Repository Management Team)
 
 - Interviewers: two members of the Core Application team
 - Duration: 45-minutes.
@@ -385,6 +385,7 @@ The [CE](https://about.sourcegraph.com/handbook/ce) organization is pre- and pos
   - Details: during this stage in the interview process, we try to get a sense of how you think about content. You will be given (2) pieces of content to read through for the first 30 minutes of the session, after which, you and the hiring manager will take the last 30 minutes to go through what you liked, disliked, and what you would change about each piece and why.
 
 - Senior Digital Marketing Manager working session
+
   - Duration: 60-minutes.
   - The Goal: The purpose of this working session is to give us all a sense of what it'd be like to work together and make sure we have a shared understanding of the role and goals. This is not meant to be stressful or require a lot of preparation.
     Part 1: Methodology & Planning (20 Minutes)
@@ -398,6 +399,29 @@ The [CE](https://about.sourcegraph.com/handbook/ce) organization is pre- and pos
   - Who will you collaborate with and why?
   - How would you approach bridging these awareness activities with contact acquisition/product sign-ups?
   - NOTE: Please don't go overboard on preparation, plans, or detail. A Google Doc outline is how we'd do this kind of thing internally, so that's best. Doesn't have to be pretty. If you prefer slides, that's fine. This will be a casual back and forth conversation; not a formal presentation.
+
+- Program Manager, Demand Gen Campaigns working session
+  - Duration: 60-minutes.
+  - Part 1: Creativity & Collaboration (20 Minutes)
+    - Coming out of our conversations we’ve taken an action item to better understand your creative campaign planning and activation methodology.
+    - Problem: We need a meeting maker campaign to support sales pipeline goals. Instead of using traditional activation methods, we want this to be a product-led initiative.
+      - Task: Create 3 product-led meeting maker campaigns to drive meetings to Sales
+      - Audience: Developer Team leads, leaders, and senior leadership
+    - Please include:
+      - Your create ideas and what inspired them
+      - Include your rough timeline for concept-to-execution
+      - What channels will you use to activate?
+      - Who will you collaborate with?
+      - Do you have any out-of-the-box ways to get these in-market?
+  - Part 2: Data-Driven (20 Minutes)
+    - Your meeting maker program is in-market and showing early signs that it’s going to be successful. The team is asking for data to understand how we’re measuring and planning to expand if it is successful.
+      - Choose one of your meeting makers and consider the following:
+      - What would a successful campaign look like?
+      - When will it be time to change strategies?
+      - How would you monitor and share results?
+      - Which metrics are most important and why?
+      - What are some key deliverables you’d expect to see?
+  - Part 3: Q&A
 
 ## People Operations
 
