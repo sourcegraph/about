@@ -106,7 +106,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <h1 className="mt-5 mb-3">DM us on Slack. We're here.</h1>
                     What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
                     <ul className="list-spaced">
-                        <li>Ask questions - any questions: hat is the best sit-stand desk?</li>
+                        <li>Ask questions - any questions: what is the best sit-stand desk?</li>
                         <li>Reach out to the community, discover new ideas &#38; seek or give mentorship</li>
                         <li>Share the road less traveled so that everyone can learn</li>
                     </ul>
