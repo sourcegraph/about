@@ -18,12 +18,13 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
         hero={
             <div className="container pb-4">
                 <div className="row">
-                    <div className="col-lg-7 mb-lg-6 mt-6">
+                    <div className="col-lg-6 col-md-5 mb-lg-5 mt-6">
                         <div className="text-uppercase">Join us</div>
-                        <h1 className="display-2 font-weight-bold mb-0">Welcome to Sourcegraph community</h1>
-                        <p className="home__semiwide-paragraph my-5 display-4">
-                            Sourcegraph is so much more than a universal code search engine. It's the story of new
-                            gen-developers who renaissance'ed the way we work, live, and collaborate.
+                        <h1 className="display-2 font-weight-bold mb-0 text-uppercase">Welcome to Sourcegraph community</h1>
+                        <p className="home__semiwide-paragraph my-5 display-5">
+                            Seek guidance. Share best practices. Ask questions. Sourcegraph Community is your new platform to connect 
+                            with one of the world's most talented developer communities. Here, we encourage everyone to learn from each 
+                            other and share everything they know. Because when we collaborate, we grow faster, better, and stronger.
                         </p>
                         <a
                             className="btn btn-primary"
@@ -43,7 +44,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
             <h1 className="mt-5 mb-3">Get up to speed</h1>
             <div className="row justify-content-center">
                 <p className="col-md-8">
-                    We can’t give you a 25-hour day but here is a <a href="http://srcgr.ph/cheatsheet">spreadsheet</a>{' '}
+                    We can’t give you a 25-hour day but here is a <a href="http://srcgr.ph/cheatsheet">speed sheet</a>{' '}
                     with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive
                     into our curated
                     <a href="https://learn.sourcegraph.com/tags/sourcegraph"> tutorials</a> &#38; other{' '}
@@ -63,10 +64,46 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-green-blue py-4 py-md-7">
-            <ContentSection className="py-5 text-center">
-                <h1 className="mt-5 mb-3">DM us on Slack. We're here.</h1>
-                <div className="row justify-content-center">
+        <div className="bg-gradient-green-blue py-5">
+            <ContentSection className="py-5">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <h1 className="mb-3">Sourcegraph Champions Program</h1>
+                        <p>In the spirit of collaboration, we created Sourcegraph Champions Program to serve the developer community, 
+                        create a friendly networking space and share knowledge among each other.</p>
+                        <p>We believe that if we create the right environment and provide equal resources for all, everyone can learn how to code. 
+                        This is our mission. And if you share the same idea you are a "champion" in our eyes.</p>
+                        <p>We can't wait to meet you!
+                            <br />
+                            <a
+                                className="btn btn-primary mt-3"
+                                href="https://about.sourcegraph.com/handbook/marketing/becoming_a_sourcegraph_champion"
+                            >
+                                Become a Sourcegraph Champion
+                            </a>
+                        </p>
+                        <p>
+                            Or if you know someone that should be a Sourcegraph Champion, please{' '}
+                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them. The Sourcegraph Champion program offers FREE code knowledge 
+                            for everyone. With new contextual code intelligence skills, your productivity will thrive even if you’re dealing with 
+                            complex automated large-scale code changes. Find out how to become a Sourcegraph Champion.</a>.
+                        </p>
+                    </div>
+                    <div className="col-lg-6">
+                        <img
+                            className="sg_champion_img mt-6"
+                            src="/community/SG_Robots_Trophy.png"
+                            alt="Become a Sourcegraph Champion!"
+                        />
+                    </div>
+                </div>
+            </ContentSection>
+        </div>
+
+        <ContentSection className="py-6">
+            <div className="row">
+                <div className="col-lg-6">
+                    <h1 className="mt-5 mb-3">DM us on Slack. We're here.</h1>
                     What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
                     <ul className="list-spaced">
                         <li>Ask questions - any questions: hat is the best sit-stand desk?</li>
@@ -74,35 +111,17 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         <li>Share the road less traveled so that everyone can learn</li>
                     </ul>
                 </div>
-            </ContentSection>
-        </div>
-
-        <ContentSection className="py-5">
-            <div className="row">
                 <div className="col-lg-5">
-                    <h1 className="mb-3">Sourcegraph Champions Program</h1>
-                    The Sourcegraph Champion program offers FREE code knowledge for everyone. With new contextual code
-                    intelligence skills, your productivity will thrive even if you’re dealing with complex automated
-                    large-scale code changes.
-                    <br />
-                    <a
-                        className="btn btn-primary m-4"
-                        href="https://about.sourcegraph.com/handbook/marketing/becoming_a_sourcegraph_champion"
-                    >
-                        Find out how to become a Sourcegraph Champion
-                    </a>
-                </div>
-                <div className="col-lg-7">
                     <img
-                        className="sg_champion_img"
-                        src="/community/SG_Robots_Trophy.png"
-                        alt="Become a Sourcegraph Champion!"
+                        className="sg_champion_img mt-6"
+                        src="/community/SG_DM_us_on_slack.png"
+                        alt="DM us on Slack!"
                     />
                 </div>
             </div>
         </ContentSection>
 
-        <ContentSection className="py-4 py-md-7">
+        <ContentSection className="py-4">
             <h1 className="mb-5 text-center">What's next?</h1>
             <Tabs defaultActiveKey="configuration" id="use-cases" className="justify-content-center">
                 <Tab eventKey="configuration" title="Events">
@@ -142,10 +161,11 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
                             <p>
-                                Cool hardware. Most wanted guests. And hot topics. Check out our YouTube Channel: Dev
-                                Tool Time to keep up with what’s next.
+                                Cool hardware. Most wanted guests. And hot topics. Check out our YouTube Channel:{' '}
+                                <a href="https://srcgr.ph/dev-tool-time-playlist">Dev Tool Time</a> to{' '}
+                                <a href="https://srcgr.ph/dev-tool-time">keep up with what’s next</a>.
                             </p>
-                            <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF">
+                            <a href="https://info.sourcegraph.com/dev-tool-time">
                                 <img
                                     className="w-100 h-auto mt-4"
                                     width="850"
@@ -164,13 +184,15 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                                 Tune into our developer convos wherever you listen to your favorite podcasts. Every
                                 episode is an inspiration.
                             </p>
-                            <img
-                                className="w-100 h-auto mt-4"
-                                width="750"
-                                height="472"
-                                src="/community/Podcast_module.png"
-                                alt="Podcasts"
-                            />
+                            <a href="https://about.sourcegraph.com/podcast">
+                                <img
+                                    className="w-100 h-auto mt-4"
+                                    width="750"
+                                    height="472"
+                                    src="/community/Podcast_module.png"
+                                    alt="Podcasts"
+                                />
+                            </a>
                         </div>
                     </div>
                 </Tab>
