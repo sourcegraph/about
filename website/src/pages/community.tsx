@@ -20,11 +20,14 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                 <div className="row">
                     <div className="col-lg-6 col-md-5 mb-lg-5 mt-6">
                         <div className="text-uppercase">Join us</div>
-                        <h1 className="display-2 font-weight-bold mb-0 text-uppercase">Welcome to Sourcegraph community</h1>
+                        <h1 className="display-2 font-weight-bold mb-0 text-uppercase">
+                            Welcome to Sourcegraph community
+                        </h1>
                         <p className="home__semiwide-paragraph my-5 display-5">
-                            Seek guidance. Share best practices. Ask questions. Sourcegraph Community is your new platform to connect 
-                            with one of the world's most talented developer communities. Here, we encourage everyone to learn from each 
-                            other and share everything they know. Because when we collaborate, we grow faster, better, and stronger.
+                            Seek guidance. Share best practices. Ask questions. Sourcegraph Community is your new
+                            platform to connect with one of the world's most talented developer communities. Here, we
+                            encourage everyone to learn from each other and share everything they know. Because when we
+                            collaborate, we grow faster, better, and stronger.
                         </p>
                         <a
                             className="btn btn-primary"
@@ -69,11 +72,18 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                 <div className="row">
                     <div className="col-lg-6">
                         <h1 className="mb-3">Sourcegraph Champions Program</h1>
-                        <p>In the spirit of collaboration, we created Sourcegraph Champions Program to serve the developer community, 
-                        create a friendly networking space and share knowledge among each other.</p>
-                        <p>We believe that if we create the right environment and provide equal resources for all, everyone can learn how to code. 
-                        This is our mission. And if you share the same idea you are a "champion" in our eyes.</p>
-                        <p>We can't wait to meet you!
+                        <p>
+                            In the spirit of collaboration, we created Sourcegraph Champions Program to serve the
+                            developer community, create a friendly networking space and share knowledge among each
+                            other.
+                        </p>
+                        <p>
+                            We believe that if we create the right environment and provide equal resources for all,
+                            everyone can learn how to code. This is our mission. And if you share the same idea you are
+                            a "champion" in our eyes.
+                        </p>
+                        <p>
+                            We can't wait to meet you!
                             <br />
                             <a
                                 className="btn btn-primary mt-3"
@@ -84,9 +94,13 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <p>
                             Or if you know someone that should be a Sourcegraph Champion, please{' '}
-                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them. The Sourcegraph Champion program offers FREE code knowledge 
-                            for everyone. With new contextual code intelligence skills, your productivity will thrive even if you’re dealing with 
-                            complex automated large-scale code changes. Find out how to become a Sourcegraph Champion.</a>.
+                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">
+                                nominate them. The Sourcegraph Champion program offers FREE code knowledge for everyone.
+                                With new contextual code intelligence skills, your productivity will thrive even if
+                                you’re dealing with complex automated large-scale code changes. Find out how to become a
+                                Sourcegraph Champion.
+                            </a>
+                            .
                         </p>
                     </div>
                     <div className="col-lg-6">
