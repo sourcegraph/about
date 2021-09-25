@@ -7,7 +7,7 @@ This page outlines the vision, strategy, and goals of the Code Insights team.
 Quick links:
 
 - [Code Insights Backlog](https://github.com/orgs/sourcegraph/projects/200/views/13)
-- Latest demo – private since the product is in beta; slack the  #code-insights team or email feedback@sourcegraph.com if you're curious! 
+- Latest demo – private since the product is in beta; slack the #code-insights team or email feedback@sourcegraph.com if you're curious!
 - [Documentation](https://docs.sourcegraph.com/code_insights)
 
 ## Mission, Vision, and Guiding Principles
