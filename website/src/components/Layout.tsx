@@ -42,7 +42,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         return (
             <div className={`flex flex-column fill-height ${this.props.className || ''}`}>
                 <Helmet>
-                    {metaProps.seoTitle ? <title>{metaProps.seoTitle}</title> : <title>{metaProps.title}</title>}
+                    <title>{metaProps.seoTitle || metaProps.title}</title>
 
                     <meta name="twitter:title" content={metaProps.title} />
                     <meta name="twitter:site" content="@sourcegraph" />
@@ -55,11 +55,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                     <meta property="og:image" content={metaProps.image} />
                     <meta property="og:description" content={metaProps.description} />
 
-                    {metaProps.seoDescription ? (
-                        <meta name="description" content={metaProps.seoDescription} />
-                    ) : (
-                        <meta name="description" content={metaProps.description} />
-                    )}
+                    <meta name="description" content={metaProps.seoDescription || metaProps.description} />
 
                     <link rel="icon" type="image/png" href={metaProps.icon} />
                     <link rel="icon" type="image/png" href={metaProps.image} />

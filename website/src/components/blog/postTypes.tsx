@@ -18,8 +18,10 @@ export interface Post {
     frontmatter: {
         title: string
         description: string
-        seoTitle: string
-        seoDescription: string
+        /** Controls the page's `<title>` for SEO and the browser tab label. Defaults to {@link title}. */
+        seoTitle?: string
+        /** Controls the page's `<meta name="description">` for SEO. Defaults to {@link description}. */
+        seoDescription?: string
         slug: string
         canonical: string
         publishDate: string
