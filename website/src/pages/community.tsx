@@ -93,10 +93,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         <p>
                             Or if you know someone that should be a Sourcegraph Champion, please{' '}
                             <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">
-                                nominate them. The Sourcegraph Champion program offers FREE code knowledge for everyone.
-                                With new contextual code intelligence skills, your productivity will thrive even if
-                                you’re dealing with complex automated large-scale code changes. Find out how to become a
-                                Sourcegraph Champion.
+                                nominate them.
                             </a>
                             .
                         </p>
