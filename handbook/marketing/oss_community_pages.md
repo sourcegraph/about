@@ -20,8 +20,8 @@ First, create the search context:
 Second, create the corresponding community search context page in the main sourcegraph repository. This is a temporary measure and will be automated in the future.
 Steps:
 
-- Copy an existing page config (e.g. [Stanford](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/client/web/src/communitySearchContexts/Stanford.tsx)) and adjust the necessary data
+- Copy an existing page config (e.g. [Stanford](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@675e5129031b75998ffa2823782f5e354390edfb/-/blob/client/web/src/communitySearchContexts/Stanford.tsx)) and adjust the necessary data
   - **Important**: The `spec` property should match the search context name you created in the first step
-- Add the corresponding route [to the client router](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/client/web/src/communitySearchContexts/routes.tsx?L31)
-- Add the same route [to the backend router as well](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/internal/app/ui/router.go?L173)
+- Add the corresponding route [to the client router](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@675e5129031b75998ffa2823782f5e354390edfb/-/blob/client/web/src/communitySearchContexts/routes.tsx?L31)
+- Add the same route [to the backend router as well](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@675e5129031b75998ffa2823782f5e354390edfb/-/blob/cmd/frontend/internal/app/ui/router.go?L173)
 - Tag the search-product team to review & approve the changes (or if you need help adding the page)
