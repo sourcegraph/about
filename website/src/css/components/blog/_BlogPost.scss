@@ -18,13 +18,17 @@
     }
 
     &__html {
-        img {
-            max-width: 75%;
+        img,
+        // Gif-like videos
+        video[autoplay][loop][muted]:not([controls]) {
+            width: 75%;
             max-height: 100vh;
             box-shadow: 0 2px 18px 0 #0000001a, 0 6px 20px 0 #00000017;
             margin: 3rem auto;
             display: block;
             border-style: none;
+            height: auto; // Allow providing the media width and height as HTML attributes for aspect-ratio calculation to avoid layout shift
+            aspect-ratio: attr(width) / attr(height);
         }
 
         table,
