@@ -1,6 +1,6 @@
 # Marketing Operations
 
-The Marketing Operations Team at Sourcegraph is focused on the mechanics of how we find and track our end users and customers. We are a subset of the Demand Generation team that oversees the MartTech stack, corporate email marketing strategy, lead management, and marketing analytics. We take on the technical work of maintaining systems across the marketing department to ensure our results are scalable and repeatable. Our goal is to make sure the systems support the strategy! For any questions related to marketing operations, reach out to [Rebecca Rissinger](mailto:rebecca.rissinger@sourcegraph.com).
+The Marketing Operations Team at Sourcegraph is focused on the mechanics of how we find and track our end users and customers. We are a subset of the Demand Generation team that oversees the MartTech stack, corporate email marketing strategy, lead management, and marketing analytics. We take on the technical work of maintaining systems across the marketing department to ensure our results are scalable and repeatable. Our goal is to make sure the systems support the strategy! For any questions related to marketing operations, reach out to [Greg Bouton](mailto:greg.bouton@sourcegraph.com).
 
 ## MarTech Stack
 
