@@ -1,6 +1,6 @@
 # Code review exercise
 
-We ask candidates to complete a time bound asynchronous code-review exercise so we can evaluate you on certain skills that we think are relevant to being successful at Sourcegraph.
+We ask candidates to complete a time-bound asynchronous code-review exercise so we can evaluate you on certain skills that we think are relevant to being successful at Sourcegraph.
 
 Why? Read the [FAQ](#FAQ).
 
@@ -22,7 +22,7 @@ A significant part of your job as a software engineer is to read and understand 
 
 An asynchronous code-review exercise provides the most realistic environment for measuring how you would work at Sourcegraph on a daily basis.
 
-- You can use the programming environment that you are most familiar with (i.e. your own laptop with your own editor with all the keyboard shortcuts and extensions/tools that you like, and with access to documentation on the internet).
+- You can use the programming environment that you are most familiar with (i.e., your laptop with your editor with all the keyboard shortcuts and extensions/tools that you like, and with access to documentation on the internet).
 - You don't have the extra pressure of explaining your thoughts and reasoning while someone else is watching.
 - You can schedule our asynchronous code-review exercise for the best time that works for you.
 
