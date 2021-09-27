@@ -21,7 +21,7 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
         image,
         description,
         seoTitle,
-        seoDescription
+        seoDescription,
     }
 
     const C = POST_TYPE_TO_COMPONENT[postType(post)]

@@ -42,11 +42,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         return (
             <div className={`flex flex-column fill-height ${this.props.className || ''}`}>
                 <Helmet>
-                    {metaProps.seoTitle ? (
-                        <title>{metaProps.seoTitle}</title>
-                    ) : (
-                        <title>{metaProps.title}</title>
-                    )}
+                    {metaProps.seoTitle ? <title>{metaProps.seoTitle}</title> : <title>{metaProps.title}</title>}
 
                     <meta name="twitter:title" content={metaProps.title} />
                     <meta name="twitter:site" content="@sourcegraph" />

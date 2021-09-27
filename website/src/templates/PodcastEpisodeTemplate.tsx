@@ -41,7 +41,7 @@ export default class PodcastEpisodeTemplate extends React.Component<any, any> {
             image,
             description,
             seoTitle,
-            seoDescription
+            seoDescription,
         }
 
         const { guestsHTML, audioHTML, summaryHTML, transcriptHTML, showNotesHTML } = getHTMLParts(content)
