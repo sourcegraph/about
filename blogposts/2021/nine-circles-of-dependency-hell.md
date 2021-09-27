@@ -6,10 +6,12 @@ authorUrl: https://matt-rickard.com/
 publishDate: 2021-09-28T10:00-07:00
 tags: [blog]
 slug: nine-circles-of-dependency-hell
-heroImage: https://sourcegraphstatic.com/blog/
-socialImage: https://sourcegraphstatic.com/blog/
+heroImage: https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg
+socialImage: https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg
 published: true
 ---
+
+![Nine circles of dependency hell](https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg)
 
 Your project has been overwhelmed by the complex web of its software dependencies to the point of stoppage. We spend more time fixing these dependency issues than writing code most of the time. Every developer has been there.
 
