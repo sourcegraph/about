@@ -16,7 +16,7 @@ If you have gotten a specific feedback requests that a customer(s) would like to
 
 1. Check if an issue for the feedback [already exists](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aissue). If there is already an issue with similar feedback, add a comment to that issue. If the issue is closed, read why and if it makes sense, re-open it with a comment.
 2. If there is no issue with your feedback, create a [new feedback issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=feedback&template=customer_feedback.md&title=) or a [new bug issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=bug_report.md&title=) to share with the customer.
-3. If you know which team(s) owns the product area(s) involved, you can add the right team label (prefixed with `team/`) so that the issue gets [automatically](https://github.com/sourcegraph/sourcegraph/blob/main/.github/workflows/label-move.yml) added to the team's board for triage. If you do not know, that's okay! GitHub issues with the `feedback` label will also automatically post to the #feedback Slack channel on creation and product teammates will help route them. 
+3. If you know which team(s) owns the product area(s) involved, you can add the right team label (prefixed with `team/`) so that the issue gets [automatically](https://github.com/sourcegraph/sourcegraph/blob/main/.github/workflows/label-move.yml) added to the team's board for triage. If you do not know, that's okay! GitHub issues with the `feedback` label will also automatically post to the #feedback Slack channel on creation and product teammates will help route them.
 
 ### Private customer information
 
