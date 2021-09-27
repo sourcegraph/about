@@ -31,7 +31,7 @@ To compress his closet space, Loïc only works four days a week. He works from 1
 
 He's able to make better decisions partially because his longer weekends give him more energy. “You get a very good reset out of a three-day weekend,” he says. Plus, “when I do get to my holiday, I’m not crawling like I used to.”
 
-![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4%20day.png)
+![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4_day_work_week_highres.png)
 
 Loïc extends his flexibility to his reports, arguing that “Input hours are a bad metric for any sort of efficiency.” According to him, “Time-spent-at-desk is the worst measure of efficiency in software engineering. I literally don’t care what hours my reports are working. I just care about output.”
 
@@ -107,7 +107,7 @@ When considering how to build your own work schedule, TJ recommends carrying ove
 
 Robert works a split schedule, meaning that for three days a week, he works from 8 am to 12 pm and 6 pm to 10 pm. On the other two days, he works a normal 9 am to 5 pm. Robert, who’s currently in the United States, usually lives and works from Taiwan. There, he maintains a similar schedule, the hours shifted only slightly to maximize overlap with his American teammates.
 
-![Split schedule graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Split.png)
+![Split schedule graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/split_schedule_highres.png)
 
 Robert is used to some degree of flexibility. When he was a student, he optimized his schedule for his primary hobbies–taking advantage of daylight hours to be out and about. Robert decided he didn’t want to change that as he started working full time.
 
@@ -125,7 +125,7 @@ Robert recommends building a company culture that prizes independence. A company
 
 The nonlinear workday, [according to GitLab](https://about.gitlab.com/company/culture/all-remote/non-linear-workday/), the company that popularized the term, “decouples time from work and acts as a forcing function to embrace asynchronous workflows.”
 
-![Nonlinear calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Nonlinear.png)
+![Nonlinear calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/nonlinear%E2%80%93highres.png)
 
 For Jean, this means using the morning to take care of the chores that most would do after work, such as grocery shopping and walking the dog. From the late morning to the afternoon, he focuses on meetings with his teammates and completing work leftover from the previous day.
 
@@ -162,3 +162,9 @@ In this brave (not so new) world, time-input is not an effective way to measure 
 If you want to learn more about how your fellow developers work, tune into Dev Tool Time, which streams live on Twitch every other Wednesday.
 
 [![Dev Tool Time CTA](https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/DTT-general-CTA.png)](https://bit.ly/2XMhIir)
+
+## More posts like this
+
+- [Improving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
+- [Can you hear me? No, but we read you—an experiment with video calls](https://about.sourcegraph.com/blog/can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls/)
+- [Software engineer career paths](https://about.sourcegraph.com/blog/software-engineer-career-paths/)
