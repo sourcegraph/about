@@ -8,8 +8,8 @@ interface LayoutProps {
     meta?: {
         title?: string
         description?: string
-        seoTitle?: string
-        seoDescription?: string
+        externalTitle?: string
+        externalDescription?: string
         image?: string
         icon?: string
     }
@@ -42,7 +42,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         return (
             <div className={`flex flex-column fill-height ${this.props.className || ''}`}>
                 <Helmet>
-                    <title>{metaProps.seoTitle || metaProps.title}</title>
+                    <title>{metaProps.externalTitle || metaProps.title}</title>
 
                     <meta name="twitter:title" content={metaProps.title} />
                     <meta name="twitter:site" content="@sourcegraph" />
@@ -55,7 +55,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                     <meta property="og:image" content={metaProps.image} />
                     <meta property="og:description" content={metaProps.description} />
 
-                    <meta name="description" content={metaProps.seoDescription || metaProps.description} />
+                    <meta name="description" content={metaProps.externalDescription || metaProps.description} />
 
                     <link rel="icon" type="image/png" href={metaProps.icon} />
                     <link rel="icon" type="image/png" href={metaProps.image} />

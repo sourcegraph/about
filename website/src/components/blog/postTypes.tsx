@@ -19,9 +19,9 @@ export interface Post {
         title: string
         description: string
         /** Controls the page's `<title>` for SEO and the browser tab label. Defaults to {@link title}. */
-        seoTitle?: string
+        externalTitle?: string
         /** Controls the page's `<meta name="description">` for SEO. Defaults to {@link description}. */
-        seoDescription?: string
+        externalDescription?: string
         slug: string
         canonical: string
         publishDate: string

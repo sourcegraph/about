@@ -36,11 +36,11 @@ published: boolean
 ---
 ```
 
-There are two optional frontmatter fields used to specify meta-specific title and description:
+There are two optional frontmatter fields used to specify meta-specific title and description for external consumers, such as search engines:
 
 ```
-seoTitle: Example title
-seoDescription: Example description
+externalTitle: Example title
+externalDescription: Example description
 ```
 
 If these are not present, the `title` and `description` are used for these meta tags.
