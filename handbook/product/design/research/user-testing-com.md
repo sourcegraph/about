@@ -4,7 +4,7 @@
 
 Usertesting.com is _“a video-first platform where you can see and hear the experiences of real people as they engage with your products, designs, apps, processes, concepts, or brands.”_
 
-We utilize this platform to test prototypes, existing product features and perform surveys with users who are typically unfamiliar with Sourcegraph.
+We use this platform to test prototypes, existing product features, and perform surveys with users who are typically unfamiliar with Sourcegraph.
 
 ## Test participants
 
