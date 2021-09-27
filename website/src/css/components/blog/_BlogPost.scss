@@ -19,6 +19,7 @@
 
     &__html {
         img,
+        object,
         // Gif-like videos
         video[autoplay][loop][muted]:not([controls]) {
             width: 75%;
@@ -35,6 +36,20 @@
         video-embed,
         .gatsby-highlight {
             margin: 3rem auto;
+        }
+
+        figcaption {
+            margin-top: 2rem;
+            text-align: center;
+            font-style: italic;
+        }
+
+        // Make sure margin for figures with caption is applied after the caption, not before.
+        figure > :is(img, object, video) {
+            margin-bottom: 0;
+        }
+        figure {
+            margin-bottom: 3rem;
         }
     }
 }
