@@ -53,10 +53,10 @@ We have a set of status labels we’ve found helpful in the past:
 #### Status / Description
 
 - **WIP**: The author is still drafting the RFC and it’s not ready for review.
-- **REVIEW**: The Review label is used when the RFC is ready for comments and feedback. - **APPROVED**: When the RFC is for the purpose of making a decision, the Approved label indicates that the decision has been made.
-- **ABANDONED**: When the RFC is for the purpose of making a decision, and there are no plans to move forward with the RFC’s proposal, the Abandoned label indicates that the RFC has been purposefully set aside.
-- **IMPLEMENTED**: When the RFC is for the purpose of making a decision, the Implemented label indicates that the RFC’s proposal has been implemented.
-- **CLOSED**: When the RFC is for the purpose of collaboration or discussion but not necessarily to make a decision or propose a specific outcome that will eventually become Implemented, the Closed label indicates that the RFC is no longer an active collaborative artifact.
+- **Review**: The Review label is used when the RFC is ready for comments and feedback. - **Approved**: When the RFC is for the purpose of making a decision, the Approved label indicates that the decision has been made.
+- **Implemented**: When the RFC is for the purpose of making a decision, the Implemented label indicates that the RFC’s proposal has been implemented.
+- **Closed**: When the RFC is for the purpose of collaboration or discussion but not necessarily to make a decision or propose a specific outcome that will eventually become Implemented, the Closed label indicates that the RFC is no longer an active collaborative artifact.
+- **Abandoned**: When the RFC is for the purpose of making a decision, and there are no plans to move forward with the RFC’s proposal, the Abandoned label indicates that the RFC has been purposefully set aside.
 
 While these labels suggest that RFCs move through series of prescribed stages, this isn’t always the case. RFCs are low-process and can be used for all kinds of purposes that may not have an explicit, actionable outcome.
 
