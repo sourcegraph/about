@@ -51,11 +51,10 @@ The workplace can get noisy. For Gutekanst, it comes in waves.
 
 Over the course of two months, he says, half of his time might go toward helping other people: “It’s a weird conundrum because it’s a completely useful way to spend my time. On the other hand, it’s completely unrelated to what my focus area actually is, which is working on a product feature or something like that.”
 
-![Slack message from Stephen regarding his workation](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.19.29%20PM.png)
-
-<p class="font-italic text-center">
-Stephen’s message to the team about his workation.
-</p>
+<figure>
+  <object role="image" data="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/stephen-gutekanst-workation.svg" width="791" height="426"></object>
+  <figcaption>Stephen’s message to the team about his workation.</figcaption>
+</figure>
 
 Part of the reason for that comes from working at a [high-growth startup](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/): “A lot of the time, we don’t have an owner for an area and I’m the person with the most context, so it’s useful for me to help out there.”
 
@@ -87,11 +86,12 @@ Vanesa recommends the four-day work week to everyone, but especially to primary 
 
 TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
 
+<figure>
+
 ![TJ coding live on Twitch](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%202.03.37%20PM.png)
 
-<p class="font-italic text-center">
-TJ coding live on Twitch.
-</p>
+  <figcaption>TJ coding live on Twitch.</figcaption>
+</figure>
 
 Many would rightfully worry that lopping off one day a week wouldn’t sit well with a manager. TJ had the opposite experience: "No one minds how you’re working as long as you’re getting done what you say you’re going to get done and staying healthy." As long as his new schedule wasn’t a detriment to his team, TJ says, then he had his manager’s full support.
 
@@ -133,11 +133,10 @@ For Jean, this means using the morning to take care of the chores that most woul
 
 In the afternoon, Jean is frank: he might just nap. After, around 3 pm (his time), is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, and I put them to bed.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
-![Slack message from Jean regarding his schedule](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.20.11%20PM.png)
-
-<p class="font-italic text-center">
-Jean's message to the team about his work schedule.
-</p>
+<figure>
+  <object role="image" data="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/jean-du-plessis-slack.svg" width="859" height="480"></object>
+  <figcaption>Jean's message to the team about his work schedule.</figcaption>
+</figure>
 
 For Jean, the nonlinear work day isn’t merely a traditional workday, fragmented: “I’m picky about what I do in the evenings.” He tends to schedule meetings that he doesn’t have to lead during his evening sessions–meetings where he only has to listen or provide input. He optimizes his entire day based on what he does best when.
 
