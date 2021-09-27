@@ -14,7 +14,7 @@ Generally, our tests will use the pre-configured panel titled ‘General Audienc
 
 > For instance, a test administrator testing concepts related to precise code intelligence may wish to exclude users who do not use typed languages to ensure results are relevant to the users of the feature.
 
-The platform also allows test administrators to provide participants, though we generally use [lookback](https://lookback.io/) for this purpose. This is because usertesting.com requires a software download many of our users do not wish to install.
+The platform also allows test administrators to provide participants, though we generally use [Lookback](https://lookback.io/) for this purpose, because usertesting.com requires a software download many of our users do not wish to install.
 
 Note: the maximum number of participants in a test is 10. Consider running multiple tests and combining the results to reduce uncertainty.
 
