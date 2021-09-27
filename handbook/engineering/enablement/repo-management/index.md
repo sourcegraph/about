@@ -27,6 +27,7 @@ We also have temporary custody of Authentication, with the aspiration being to s
 ### Code host / repository management
 
 Including maintainance, development, support and advice for:
+
 - Code host connections
 - Code replication into Sourcegraph
 - Code storage within Sourcegraph
@@ -35,6 +36,7 @@ Including maintainance, development, support and advice for:
 - Explicit permissions API
 
 ### Authentication
+
 Temporary custody of authentication, efforts largely limited to support and maintenance
 
 ## Contact
