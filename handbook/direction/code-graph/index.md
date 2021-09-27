@@ -18,7 +18,7 @@ We build the Code Graph to make working with code easier, regardless of how much
 
 ### Ten year vision
 
-> At the ten year mark, we want to make using Sourcegraph to understand and modify code so easy that anyone can do it, including people not traditionally considered developers. We want to [democratize coding](../../company/strategy.md##10-year-vision) by making it so that everyone in the company can engage with the organization's code, safely making changes to implement their department's priorities and interests, without need for an intermediary to do it for them.
+> At the ten year mark, we want to make using Sourcegraph to understand and modify code so easy that anyone can do it, including people not traditionally considered developers. We want to [democratize coding](../../company/strategy.md#10-year-vision) by making it so that everyone in the company can engage with the organization's code, safely making changes to implement their department's priorities and interests, without need for an intermediary to do it for them.
 
 ## Focus Areas
 
