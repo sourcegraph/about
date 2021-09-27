@@ -38,4 +38,4 @@ Code Graph solves real problems today, but investing in the polish, user experie
 
 ### Scale the Code Graph for Big Code
 
-We have more and more large customers dealing with a lot of code and complexity at scale. It's important that our platform meets their needs, not just in terms of search performance, but in allowing you to explore and understand complex interrelationships of meaning in source code, at the [worlds largest scale](../../press-release/big-code-survey-2020/index.md).
+We have more and more large customers dealing with a lot of code and complexity at scale. It's important that our platform meets their needs, not just in terms of search performance, but in allowing you to explore and understand complex interrelationships of meaning in source code, at the [worlds largest scale](../../company/strategy/index.md#big-code).
