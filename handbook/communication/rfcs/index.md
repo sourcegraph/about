@@ -93,11 +93,17 @@ Often, the ideas and proposals within RFCs progress into other collaborative art
 
 ## RFC formats we’ve found helpful in the past
 
-While RFCs are just documents with a few attributes, we’ve found a few different formats to be helpful in achieving specific outcomes with RFCs.
+The default RFC template is minimal and contains just the attributes you need to get started on a new RFC. However, we’ve found a few different structured formats and workflows to be helpful in achieving specific outcomes with RFCs.
 
-Instead of providing these formats in the template, we document the RFC formats and workflows we’ve found helpful in the handbook. This way, we keep RFCs lightweight and flexible, but can also keep iterating and improving on formats that work well for specific needs.
+Instead of providing these formats in the default template, we document the RFC formats and workflows we’ve found helpful in the handbook. This way, we keep RFCs lightweight and flexible, but can also keep iterating and improving on formats that work well for specific needs.
 
 If you find that a new format works well for achieving a distinct goal and could be of use in the future, please add it to our list of formats.
+
+### The default format
+
+The default format has just the required attributes and can be used as the starting point for any RFC.
+
+[Get the template](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/edit?usp=sharing) →
 
 ### Goal: Framing problems, proposing solutions, and making decisions
 
