@@ -36,6 +36,15 @@ published: boolean
 ---
 ```
 
+There are two optional frontmatter fields used to specify meta-specific title and description for external consumers, such as search engines:
+
+```
+externalTitle: Example title
+externalDescription: Example description
+```
+
+If these are not present, the `title` and `description` are used for these meta tags.
+
 Blog posts are visible on if published is set to `true`.
 
 **Important:** when creating hyperlinks to pages within https://about.sourcegraph.com, never link with the base URL https://about.sourcegraph.com.
