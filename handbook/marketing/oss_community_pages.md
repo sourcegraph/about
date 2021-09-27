@@ -5,6 +5,7 @@ Sourcegraph hosts community landing pages to help open source community members 
 ## How to create a community landing page on Sourcegraph Cloud
 
 First, create the search context:
+
 - Make sure you are a site-admin on Cloud
 - Identify the requirements for the community search contexts page. What repos should be included in the search context? What examples would be worth highlighting?
 - Create a new search context: [Create page](https://sourcegraph.com/contexts/new)
@@ -18,6 +19,7 @@ First, create the search context:
 
 Second, create the corresponding community search context page in the main sourcegraph repository. This is a temporary measure and will be automated in the future.
 Steps:
+
 - Copy an existing page config (e.g. [Stanford](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/client/web/src/communitySearchContexts/Stanford.tsx)) and adjust the necessary data
   - **Important**: The `spec` property should match the search context name you created in the first step
 - Add the corresponding route [to the client router](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/client/web/src/communitySearchContexts/routes.tsx?L31)
