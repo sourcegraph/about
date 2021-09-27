@@ -48,8 +48,6 @@ These status labels help to provide more context for readers. They’re most hel
 
 We have a set of status labels we’ve found helpful in the past:
 
-#### Status / Description
-
 - **WIP**: The author is still drafting the RFC and it’s not ready for review.
 - **Review**: The Review label is used when the RFC is ready for comments and feedback. - **Approved**: When the RFC is for the purpose of making a decision, the Approved label indicates that the decision has been made.
 - **Implemented**: When the RFC is for the purpose of making a decision, the Implemented label indicates that the RFC’s proposal has been implemented.
