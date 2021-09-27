@@ -1,4 +1,4 @@
-# Requests for comments (RFCs)
+# Requests for Comments (RFCs)
 
 We use RFCs to collaborate successfully as an [all-remote](../../company/remote/index.md) team.
 
@@ -49,7 +49,8 @@ These status labels help to provide more context for readers. They’re most hel
 We have a set of status labels we’ve found helpful in the past:
 
 - **WIP**: The author is still drafting the RFC and it’s not ready for review.
-- **Review**: The Review label is used when the RFC is ready for comments and feedback. - **Approved**: When the RFC is for the purpose of making a decision, the Approved label indicates that the decision has been made.
+- **Review**: The Review label is used when the RFC is ready for comments and feedback.
+- **Approved**: When the RFC is for the purpose of making a decision, the Approved label indicates that the decision has been made.
 - **Implemented**: When the RFC is for the purpose of making a decision, the Implemented label indicates that the RFC’s proposal has been implemented.
 - **Closed**: When the RFC is for the purpose of collaboration or discussion but not necessarily to make a decision or propose a specific outcome that will eventually become Implemented, the Closed label indicates that the RFC is no longer an active collaborative artifact.
 - **Abandoned**: When the RFC is for the purpose of making a decision, and there are no plans to move forward with the RFC’s proposal, the Abandoned label indicates that the RFC has been purposefully set aside.
