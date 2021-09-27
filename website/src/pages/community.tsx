@@ -20,9 +20,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                 <div className="row">
                     <div className="col-lg-6 col-md-5 mb-lg-5 mt-6">
                         <div className="text-uppercase">Join us</div>
-                        <h1 className="display-2 font-weight-bold mb-0">
-                            Welcome to Sourcegraph community
-                        </h1>
+                        <h1 className="display-2 font-weight-bold mb-0">Welcome to Sourcegraph community</h1>
                         <p className="home__semiwide-paragraph my-5 display-5">
                             Seek guidance. Share best practices. Ask questions. Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
