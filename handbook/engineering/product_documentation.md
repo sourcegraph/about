@@ -90,19 +90,18 @@ YAML front matter is optional and is used for adding page metadata that can be u
 
 ### SEO
 
-Similarly, SEO metadata can provided individually for every document, which will help our documentation page to raise its search rank. Every one of them are totally optional. 
+Similarly, SEO metadata can provided individually for every document, which will help our documentation page to raise its search rank. Every one of them are totally optional.
 
 ```yaml
 ---
-title: "Deploying with Kubernetes"
-description: "A step by step guide to deploying in a Kubernetes environment"
-category: "Deployment"
-type: "article"
-imageURL: "https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png"
-tags: 
+title: 'Deploying with Kubernetes'
+description: 'A step by step guide to deploying in a Kubernetes environment'
+category: 'Deployment'
+type: 'article'
+imageURL: 'https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png'
+tags:
   - Kubernetes
   - Deployments
   - How to
 ---
 ```
-
