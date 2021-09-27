@@ -1,6 +1,6 @@
 # Code Graph
 
-The Code Graph comprises teams working on search, insights, code intelligence, and batch changes, and this page describes the overarching mission and strategy that ties them together. Each one also has an individual direction page, indexed from our [direction home page](../index.md#code-graph), that describes what they are working on and why in more detail.
+The Code Graph organization comprises teams working on search, insights, code intelligence, and batch changes, and this page describes the overarching mission and strategy that ties them together. Each one also has an individual direction page, indexed from our [direction home page](../index.md#code-graph), that describes what they are working on and why in more detail.
 
 ## Mission
 
