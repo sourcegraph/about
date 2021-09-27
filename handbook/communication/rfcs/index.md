@@ -39,7 +39,7 @@ Our goal is for RFCs to be lightweight, low-process, and effortless to create an
 
 ### RFCs are sequentially numbered
 
-Each RFC has a unique, sequential number that appears in the title (e.g. “RFC 227: RFCs are Broken.”) This makes it easier to quickly reference specific RFCs and easier for readers to quickly find that document in Google Drive. The sequential numbers also provide valuable context about the order in which RFCs were created.
+Each RFC has a unique, sequential number that appears in the title (e.g. “RFC 485 Review: Rethinking RFCs.”) This makes it easier to quickly reference specific RFCs and easier for readers to quickly find that document in Google Drive. The sequential numbers also provide valuable context about the order in which RFCs were created.
 
 ### RFCs have a status
 
