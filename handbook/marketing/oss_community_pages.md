@@ -16,5 +16,5 @@ Sourcegraph hosts community landing pages to help open source community members 
   - Finally, you can create the search context
 
 <!-- - Create the page ([example](https://github.com/sourcegraph/sourcegraph/commit/576318e4dff2a3ecc8002ebea2b490b8ee99fc31)) and open a PR. Tag the search-product team for review. -->
-- TODO: Creating a page
 
+- TODO: Creating a page
