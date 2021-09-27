@@ -21,8 +21,6 @@ Our goal is for RFCs to be lightweight, low-process, and effortless to create an
 - RFCs are easily searchable and referable.
 - RFCs are retained indefinitely.
 
-(Quick link to create an RFC)
-
 ## When to use an RFC
 
 ### Use an RFC when…
