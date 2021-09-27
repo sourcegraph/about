@@ -1,7 +1,5 @@
 # Creating & editing blog posts with markdown and GitHub
 
-We want and encourage everyone at Sourcegraph to contribute to the blog. If you'd like to write for the blog, please check out how to [propose a blog post](editorial.md#editorial-process) in the Editorial handbook.
-
 ## Table of contents
 
 1. [Process overview](#process-overview)
@@ -14,15 +12,12 @@ We want and encourage everyone at Sourcegraph to contribute to the blog. If you'
 
 ## Process overview
 
-The process for publishing a blog post is:
+> NOTE: This documentation covers only the mechanics of adding a blog post, not considerations such as who needs to approve your post or when it should be published. Please start by proposing your blog post idea to the Editorial team. The process is outlined in [the Editorial handbook](editorial.md#editorial-process). When your draft has been reviewed by an editor you can start adding your blog post as follows:
 
 1. Create the blog post file
 1. Create a pull request
 1. Confirm via the preview deployment site that everything is looking good (the `deploy/netlify — Deploy preview ready!` link in the checks section)
-1. Get your pull request approved (preferably by someone on the marketing team)
-1. Merge your pull request which will trigger an automatic production build and deploy
-
-> NOTE: This documentation covers only the mechanics of adding a blog post, not considerations such as who needs to approve your post or when it should be published. Please start by proposing your blog post idea to the Editorial team. The process is outlined in [the Editorial handbook](editorial.md#editorial-process).
+1. Request a review from the editor who reviewed your draft
 
 ## Adding a blog post
 
@@ -70,6 +65,22 @@ The data between the `---` is called front matter and is used to provide post me
 - Small images can be placed in the `website/static/blog` directory and have the url of `/blog/example-image.jpg` in your markdown.
 - Large images, GIFs, and other binary assets should be uploaded to the `sourcegraph-assets` Google Cloud Storage bucket. You can use the UI uploader at [https://console.cloud.google.com/storage/browser/sourcegraph-assets/blog](https://console.cloud.google.com/storage/browser/sourcegraph-assets/blog) or you can use the CLI with `gsutil cp local/path/to/myasset.png gs://sourcegraph-assets/`, with the image `src` being `https://sourcegraphstatic.com/blog/myasset.png`.
   - Note: You may need to request permission to upload files to the GCP bucket. If you see an error message that additional permissions are required, you can ask for help in #it-tech-ops on Slack.
+- Please use lower case letters and hyphens instead of spaces in folder and image names:
+
+<div class="usage">
+<div class="item yes">
+<h5>Yes</h5>
+<ul>
+<li>api-docs-hero.png</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>API docs hero.png</li>
+</ul>
+</div>
+</div>
 
 ### YouTube video embed code
 

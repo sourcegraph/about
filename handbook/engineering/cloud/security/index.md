@@ -8,10 +8,10 @@ We think that security is an enabler for the business. Sourcegraph is committed 
 
 ## Members
 
-- [Diego Comas](../../company/team/index.md#diego-comas-he-him-his)
-  - [André Eleuterio](../../company/team/index.md#andré-eleuterio-hehim)
-  - [Mohammad Umer Alam](../../company/team/index.md#mohammad-umer-alam-he-him)
-  - FY2022 security engineer
+- [Diego Comas](../../../company/team/index.md#diego-comas-he-him-his)
+  - [André Eleuterio](../../../company/team/index.md#andré-eleuterio-hehim)
+  - [Mohammad Umer Alam](../../../company/team/index.md#mohammad-umer-alam-he-him)
+  - LC (joining 2021-10-15)
   - FY2022 security engineer
 
 ## Contact
@@ -23,7 +23,7 @@ We think that security is an enabler for the business. Sourcegraph is committed 
 
 ## Goals and priorities
 
-See [security goals and priorities](goals.md)
+See [security goals and priorities](../../../direction/cloud/security/index.md)
 
 ---
 
