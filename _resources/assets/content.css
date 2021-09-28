@@ -734,7 +734,6 @@ abbr[title] {
 .markdown-body img {
     max-width: 100%;
     box-sizing: content-box;
-    background-color: #fff;
 }
 
 .markdown-body img[align='right'] {
@@ -918,4 +917,46 @@ body:not(.is-docsite) .visible-product {
 
 .markdown-body .tone-sample h3 {
     margin-top: 0;
+}
+
+.bg-light-gray {
+    background: var(--sg-light-gray);
+}
+
+.bg-dark-gray {
+    background: var(--sg-dark-gray);
+}
+
+.bg-gradient-aurora {
+    background: var(--gradient-aurora);
+}
+
+.bg-gradient-venus {
+    background: var(--gradient-venus);
+}
+
+.text-vivid-violet {
+    color: var(--sg-vivid-violet);
+}
+
+.text-sky-blue {
+    color: var(--sg-sky-blue);
+}
+
+.text-vermillion {
+    color: var(--sg-vermillion);
+}
+
+.text-larger {
+    font-size: larger;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
