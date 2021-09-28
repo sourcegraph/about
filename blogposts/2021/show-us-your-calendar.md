@@ -31,8 +31,6 @@ To compress his closet space, Loïc only works four days a week. He works from 1
 
 He's able to make better decisions partially because his longer weekends give him more energy. “You get a very good reset out of a three-day weekend,” he says. Plus, “when I do get to my holiday, I’m not crawling like I used to.”
 
-![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4_day_work_week_highres.png)
-
 Loïc extends his flexibility to his reports, arguing that “Input hours are a bad metric for any sort of efficiency.” According to him, “Time-spent-at-desk is the worst measure of efficiency in software engineering. I literally don’t care what hours my reports are working. I just care about output.”
 
 For Loïc, the goal is to maximize output and minimize synchronous work. It’s up to the team to set a “minimum viable guaranteed availability”–outside of that window, he says, work should be entirely flexible.
@@ -84,7 +82,11 @@ Vanesa recommends the four-day work week to everyone, but especially to primary 
 
 > “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would mind.” - TJ DeVries, software engineer
 
-TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
+TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. 
+
+![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4_day_work_week_highres.png)
+
+Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
 
 <figure>
 
