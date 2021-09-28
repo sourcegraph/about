@@ -31,8 +31,6 @@ To compress his closet space, Loïc only works four days a week. He works from 1
 
 He's able to make better decisions partially because his longer weekends give him more energy. “You get a very good reset out of a three-day weekend,” he says. Plus, “when I do get to my holiday, I’m not crawling like I used to.”
 
-![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4%20day.png)
-
 Loïc extends his flexibility to his reports, arguing that “Input hours are a bad metric for any sort of efficiency.” According to him, “Time-spent-at-desk is the worst measure of efficiency in software engineering. I literally don’t care what hours my reports are working. I just care about output.”
 
 For Loïc, the goal is to maximize output and minimize synchronous work. It’s up to the team to set a “minimum viable guaranteed availability”–outside of that window, he says, work should be entirely flexible.
@@ -51,11 +49,10 @@ The workplace can get noisy. For Gutekanst, it comes in waves.
 
 Over the course of two months, he says, half of his time might go toward helping other people: “It’s a weird conundrum because it’s a completely useful way to spend my time. On the other hand, it’s completely unrelated to what my focus area actually is, which is working on a product feature or something like that.”
 
-![Slack message from Stephen regarding his workation](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.19.29%20PM.png)
-
-<p class="font-italic text-center">
-Stephen’s message to the team about his workation.
-</p>
+<figure>
+  <object role="image" data="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/stephen-gutekanst-workation.svg" width="791" height="426"></object>
+  <figcaption>Stephen’s message to the team about his workation.</figcaption>
+</figure>
 
 Part of the reason for that comes from working at a [high-growth startup](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/): “A lot of the time, we don’t have an owner for an area and I’m the person with the most context, so it’s useful for me to help out there.”
 
@@ -85,13 +82,18 @@ Vanesa recommends the four-day work week to everyone, but especially to primary 
 
 > “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would mind.” - TJ DeVries, software engineer
 
-TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
+TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy.
+
+![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4_day_work_week_highres.png)
+
+Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
+
+<figure>
 
 ![TJ coding live on Twitch](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%202.03.37%20PM.png)
 
-<p class="font-italic text-center">
-TJ coding live on Twitch.
-</p>
+  <figcaption>TJ coding live on Twitch.</figcaption>
+</figure>
 
 Many would rightfully worry that lopping off one day a week wouldn’t sit well with a manager. TJ had the opposite experience: "No one minds how you’re working as long as you’re getting done what you say you’re going to get done and staying healthy." As long as his new schedule wasn’t a detriment to his team, TJ says, then he had his manager’s full support.
 
@@ -107,7 +109,7 @@ When considering how to build your own work schedule, TJ recommends carrying ove
 
 Robert works a split schedule, meaning that for three days a week, he works from 8 am to 12 pm and 6 pm to 10 pm. On the other two days, he works a normal 9 am to 5 pm. Robert, who’s currently in the United States, usually lives and works from Taiwan. There, he maintains a similar schedule, the hours shifted only slightly to maximize overlap with his American teammates.
 
-![Split schedule graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Split.png)
+![Split schedule graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/split_schedule_highres.png)
 
 Robert is used to some degree of flexibility. When he was a student, he optimized his schedule for his primary hobbies–taking advantage of daylight hours to be out and about. Robert decided he didn’t want to change that as he started working full time.
 
@@ -125,7 +127,7 @@ Robert recommends building a company culture that prizes independence. A company
 
 The nonlinear workday, [according to GitLab](https://about.gitlab.com/company/culture/all-remote/non-linear-workday/), the company that popularized the term, “decouples time from work and acts as a forcing function to embrace asynchronous workflows.”
 
-![Nonlinear calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Nonlinear.png)
+![Nonlinear calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/nonlinear%E2%80%93highres.png)
 
 For Jean, this means using the morning to take care of the chores that most would do after work, such as grocery shopping and walking the dog. From the late morning to the afternoon, he focuses on meetings with his teammates and completing work leftover from the previous day.
 
@@ -133,11 +135,10 @@ For Jean, this means using the morning to take care of the chores that most woul
 
 In the afternoon, Jean is frank: he might just nap. After, around 3 pm (his time), is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, and I put them to bed.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
-![Slack message from Jean regarding his schedule](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.20.11%20PM.png)
-
-<p class="font-italic text-center">
-Jean's message to the team about his work schedule.
-</p>
+<figure>
+  <object role="image" data="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/jean-du-plessis-slack.svg" width="859" height="480"></object>
+  <figcaption>Jean's message to the team about his work schedule.</figcaption>
+</figure>
 
 For Jean, the nonlinear work day isn’t merely a traditional workday, fragmented: “I’m picky about what I do in the evenings.” He tends to schedule meetings that he doesn’t have to lead during his evening sessions–meetings where he only has to listen or provide input. He optimizes his entire day based on what he does best when.
 
@@ -162,3 +163,9 @@ In this brave (not so new) world, time-input is not an effective way to measure 
 If you want to learn more about how your fellow developers work, tune into Dev Tool Time, which streams live on Twitch every other Wednesday.
 
 [![Dev Tool Time CTA](https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/DTT-general-CTA.png)](https://bit.ly/2XMhIir)
+
+## More posts like this
+
+- [Improving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
+- [Can you hear me? No, but we read you—an experiment with video calls](https://about.sourcegraph.com/blog/can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls/)
+- [Software engineer career paths](https://about.sourcegraph.com/blog/software-engineer-career-paths/)
