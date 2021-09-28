@@ -18,6 +18,8 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 Here's the process for getting a change published to the handbook. For detailed step-by-step instructions (intended for people who are new to Git), see the sections below.
 
+![Editing the Handbook Flow](https://storage.googleapis.com/sourcegraph-assets/handbook/Editing%20the%20Handbook.jpg)
+
 1. Make sure you've been added to [Sourcegraph's Github Org](https://github.com/sourcegraph/about). If you need access, contact Tech Ops in the #it-tech-ops Slack channel.
 1. Propose the edits you want to make by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) on the Git repository at [github.com/sourcegraph/about](https://github.com/sourcegraph/about).
    - Because the [handbook is public](usage.md#why-make-this-handbook-public), anyone in the world can see your proposed edits.
@@ -42,6 +44,14 @@ Frequently used links:
 - [Proposed handbook changes submitted by you](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+author%3A%40me)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Q8tUXKU66Sk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### How do I know if I'm being asked to review someone's proposal?
+
+If someone has selected you as a reviewer or an approver, you will receive a notification from Github. You can also visit [this link](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+review-requested%3A%40me) to see proposed Handbook changes waiting on a review from you.
+
+#### Can I review and comment on a proposal, even if I wasn't asked?
+
+Yes! Our repo is public, and you can see new Handbook proposals in the #handbook-updates Slack channel. If something looks interesting to you, you're welcome to review and give feedback. In alignment with our [values](company/values.md) to work as a team, act with high agency, and be open and transparent, teammates are encouraged to review and comment on proposals where they feel they can add value.
 
 ## Edit a single file
 
@@ -75,11 +85,12 @@ If you just need to edit a single page, you can do it entirely on the web.
 
 All Handbook-related pull request information is automatically announced in the #handbook-updates Slack channel. This channel can get a bit noisy, so you may want to announce an important update in the #handbook-announce channel. To do this:
 
-1. Open your pull request
+1. Open your pull request. Since you're planning to announce this change, it will be helpful to add context about your change as a comment when creating your pull request.
 1. Click the **Labels** section on the right side of the Github screen
 1. Search for "handbook-announce" and select it
    - ![Announcing Handbook Changes](https://storage.googleapis.com/sourcegraph-assets/handbookannouncelabelimage.png)
-1. Merge your pull request
+1. Merge your pull request.
+1. See your pull request appear in #handbook-announce.
 
 ### Handbook checks
 
