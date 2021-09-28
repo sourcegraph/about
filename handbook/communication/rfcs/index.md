@@ -141,7 +141,7 @@ This format is helpful for surfacing a tension. A tension is somewhere between a
 
 Tensions are good, because they highlight where things might not be working so well, whether it’s an inefficiency or a blocker. They give us a way to identify them, and then we can then address them and make improvements. Tensions aren’t “problems,” but rather opportunities to grow.
 
-Many organizations wait until tensions are “big.” But if we identify Tensions early, while they’re still small, they’re not only easier to address, they help us stay healthy and grow well.
+Many organizations wait until tensions are “big.” But if we identify tensions early, while they’re still small, they’re not only easier to address, they help us stay healthy and grow well.
 
 In this format, we find it helpful to include:
 
