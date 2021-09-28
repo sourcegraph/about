@@ -116,7 +116,7 @@ If you find that a new format works well for achieving a distinct goal and could
 
 The default format has just the required attributes and can be used as the starting point for any RFC.
 
-[Get the template](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/edit) • [Duplicate](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/copy)
+[View the template](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/edit) • [Duplicate](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/copy)
 
 ### Goal: Framing problems, proposing solutions, and making decisions
 
@@ -133,7 +133,7 @@ In this format, we find it helpful to include:
 - **Proposed solution** (optional): A description of how to solve the problem. It’s okay to skip this section if you just want to define a problem. Otherwise, it can be helpful for thinking of solutions or to hand off ownership to someone else.
 - **Definition of success**: How do we know if this proposal was successful? Are there any metrics we need to start tracking?
 
-[Get the template](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/edit) • [Duplicate](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/copy)
+[View the template](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/edit) • [Duplicate](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/copy)
 
 ### Goal: Surfacing a tension
 
@@ -164,7 +164,7 @@ In this format, we include:
   - The exact questions you’re trying to answer with this new data, and why existing data can’t answer those questions
   - What the JSON payload looks like once those data fields are added
 
-[Get the template](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/edit) • [Duplicate](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/copy)
+[View the template](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/edit) • [Duplicate](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/copy)
 
 ### Goal: Proposing process / handbook changes
 
@@ -180,7 +180,7 @@ In this format, we find it helpful to include:
 
 This format helps us to keep the handbook our source of truth and makes the next step after approval very clear: just merge the PR.
 
-[Get the template](https://docs.google.com/document/d/1zInJ9mn_SePKjS8dLHS1EDt2_gUEkCKD544bDDSuJek/edit) • [Duplicate](https://docs.google.com/document/d/1zInJ9mn_SePKjS8dLHS1EDt2_gUEkCKD544bDDSuJek/copy)
+[View the template](https://docs.google.com/document/d/1zInJ9mn_SePKjS8dLHS1EDt2_gUEkCKD544bDDSuJek/edit) • [Duplicate](https://docs.google.com/document/d/1zInJ9mn_SePKjS8dLHS1EDt2_gUEkCKD544bDDSuJek/copy)
 
 ## External contributors
 
