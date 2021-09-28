@@ -3,7 +3,9 @@
 This page outlines the vision, strategy, and goals of the [Repository Management team](index.md).
 
 ---
+
 # Mission & Vision
+
 ## Mission
 
 Our mission is to maintain and evolve the methods by which code is pulled into Sourcegraph from code hosts, in a way that supports all required functionality while maximizing performance, reliability, and ease of use.
@@ -43,6 +45,7 @@ TODO
 - As a result, we aim to make sure that the support of code hosts is as consistent as the different code hosts allow in terms of facilitating the functionality Sourcegraph offers
 
 ---
+
 # Where we are now
 
 > - Where is the team's area of ownership in terms of its maturity? Is it new and basic, or complete and lovable? Are different features at different levels?
@@ -63,9 +66,8 @@ TODO
   - **Problem:** Phabricator support within Sourcegraph was never properly implemented, resulting in limited support.
 - Bitbucket Cloud permission syncing
   - **Problem:** Atlassian are ending support for BitBucket Server and staring moving all customers to the Cloud. But Sourcegraph doesn't currently support native permission syncing for BitBucket Cloud.
--
+- ***
 
----
 # Strategy and plans
 
 ## Goals
@@ -92,12 +94,14 @@ Note that the time periods are rolling time periods and the plans here are revie
 
 ### Short term (3m)
 
-#### Monorepo support 
+#### Monorepo support
+
 - **Current status:** In progress
-- **Expected effort:** <5% team time 
+- **Expected effort:** <5% team time
 - Most of the previously considered work actually resides with other teams, so our role in this will largely be support.|
 
-#### GitServer HA 
+#### GitServer HA
+
 - **Current status:** In progress
 - **Expected effort:** ~50% team time
 - This is partially in aid of monorepo support, and partly system resilience.
@@ -108,16 +112,17 @@ Note that the time periods are rolling time periods and the plans here are revie
 3. After that, making control of the replication factor customer editable (likely not in Q3)
 4. Future work (Not within Q3) - sharding monorepos across multiple Gitservers
 
-#### Perforce support 
+#### Perforce support
+
 - **Current status:** In progress
 - **Expected effort:** ~10% team time
 
 - [x] Support Perforce wildcard permission syncing (completed by the Distribution team - [docs](https://docs.sourcegraph.com/admin/repo/perforce#wildcards))
 - [ ] Improved git-p4 repo syncing performance
-    - Close collaboration between Distribution team and [large customer](https://github.com/sourcegraph/accounts/issues/6716)
-    - Were able to make massive headway updating git-p4, but the customer have produced an even faster C++ version
-    - Aim is for us to take over responsibility
-                             
+  - Close collaboration between Distribution team and [large customer](https://github.com/sourcegraph/accounts/issues/6716)
+  - Were able to make massive headway updating git-p4, but the customer have produced an even faster C++ version
+  - Aim is for us to take over responsibility
+
 ### Mid term (6m)
 
 TODO
@@ -132,7 +137,8 @@ TODO
 
 TODO
 
-#### Phabricator support 
+#### Phabricator support
+
 - **Current status:** Under investigation
 - **Expected effort:** TBD
 - Currently under investigation to try and ID customer need in light of upcoming Phabricator deprication.
