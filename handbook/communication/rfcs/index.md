@@ -11,7 +11,7 @@
 - [View all public RFCs](https://drive.google.com/drive/folders/1zP3FxdDlcSQGC1qvM9lHZRaHH4I9Jwwa)
 - [View all private RFCs](https://drive.google.com/drive/folders/1KCq4tMLnVlC0a1rwGuU5OSCw6mdDxLuv)
 
-----
+---
 
 We use RFCs to collaborate successfully as an [all-remote](../../company/remote/index.md) team.
 
