@@ -42,7 +42,7 @@ Our goal is for RFCs to be lightweight, low-process, and effortless to create an
 - You want thoughtful feedback from team members on our globally-distributed remote team.
 - You want to surface an idea, tension, or feedback.
 - You want to define a project or design brief to drive project collaboration.
-- You need to surface and communicate around a highly cross-functional decision [formal decision-making process](../decisions.md).
+- You need to surface and communicate around a highly cross-functional decision with our [formal decision-making process](../decisions.md).
 
 ### Don’t use an RFC when…
 
