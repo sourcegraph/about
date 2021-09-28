@@ -10,7 +10,7 @@ We build the Code Graph to make working with code easier, regardless of how much
 
 ### One year vision
 
-> Within the next year, we want to ensure that we are solving the most critical problems for our enterprise users, focusing on retaining existing and acquiring new enterprise customers. By providing as much value as possible to them, we can grow the business while solving the hardest scaling and complexity problems for everyone.
+> We want to ensure that we are solving the most critical problems for our enterprise users, focusing on retaining existing and acquiring new enterprise customers. By providing as much value as possible to them, we can grow the business while solving the hardest scaling and complexity problems for everyone.
 
 ### Three year vision
 
