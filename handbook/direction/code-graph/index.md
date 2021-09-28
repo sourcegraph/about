@@ -14,11 +14,11 @@ We build the Code Graph to make working with code easier, regardless of how much
 
 ### Three year vision
 
-> Within three years, we imagine a much more connected Code Graph experience, not just in terms of the kinds of searching that you're able to do, but in how we can offer suggestions for interesting searches and what you can do with the results. Expanding on capabilities we've introduced recently, such as semantic search, insights, and batch changes, we will offer an unparalleled solution for searching and making decisions across branches, repositories, and even code hosts, beyond even what's possible today.
+> We imagine a much more connected Code Graph experience, not just in terms of the kinds of searching that you're able to do, but in how we can offer suggestions for interesting searches and what you can do with the results. Expanding on capabilities we've introduced recently, such as semantic search, insights, and batch changes, we will offer an unparalleled solution for searching and making decisions across branches, repositories, and even code hosts, beyond even what's possible today.
 
 ### Ten year vision
 
-> At the ten year mark, we want to make using Sourcegraph to understand and modify code so easy that anyone can do it, including people not traditionally considered developers. We want to [democratize coding](../../company/strategy.md#10-year-vision) by making it so that everyone in the company can engage with the organization's code, safely making changes to implement their department's priorities and interests, without need for an intermediary to do it for them.
+> We want to make using Sourcegraph to understand and modify code so easy that anyone can do it, including people not traditionally considered developers. We want to [democratize coding](../../company/strategy.md#10-year-vision) by making it so that everyone in the company can engage with the organization's code, safely making changes to implement their department's priorities and interests, without need for an intermediary to do it for them.
 
 ## Focus Areas
 
