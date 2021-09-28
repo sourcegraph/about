@@ -10,6 +10,8 @@ Some specific methods we use:
 
 When we want to test our ideas using interactive prototypes or even in the product itself, our own team members make great participants. (However, we need to remember that our own team members are generally very experienced in the area of code search, which results in implicit bias that we must account for in synthesis.)
 
+There is a #hallway-testing Slack channel to share information and scout participants for hallway tests. 
+
 ### Unmoderated user testing
 
 When unmoderated user testing is valuable we use [usertesting.com](../tools/index.md#product-design-and-research) to conduct unmoderated user research with a pool of participants sourced by usertesting.com.
