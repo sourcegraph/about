@@ -30,6 +30,7 @@ Enable any Sourcegraph customer or user to trial or run (in production) Sourcegr
 - Deployment configuration and configuration orchestration (Kustomize)
 
 Specifically not included:
+
 - The release pipeline that serves sourcegraph.com
 
 ## Contact
@@ -47,7 +48,7 @@ TODO
 
 ## Principles
 
-We inherit Sourcegraph's [engineering principles and practices](https://about.sourcegraph.com/handbook/engineering/principles-and-practices) and [Enablement org's principles and practices](https://about.sourcegraph.com/handbook/engineering/developer-insights#principles-and-practices). 
+We inherit Sourcegraph's [engineering principles and practices](https://about.sourcegraph.com/handbook/engineering/principles-and-practices) and [Enablement org's principles and practices](https://about.sourcegraph.com/handbook/engineering/developer-insights#principles-and-practices).
 
 We also have a set of [guiding principles](direction#guiding-principles) that help inform our decision making about our stretegic and prioritization choices.
 

@@ -14,7 +14,7 @@ Enable any Sourcegraph customer or user to trial or run (in production) Sourcegr
 
 ### 1 Year vision
 
-Sourcegraph can be run by any user with a standard engineering background, at any scale, with ease. Configurations to the deployment are simple, easily made, easily updated, and do not complicate upgrades. Sourcegraph is regularly upgraded by the majority of our customers who appreciate the ease of upgrades and are keen to access Sourcegraphs latest updates. Customers are able to self-serve for deploying, upgrading, and troubleshooting deployments of Sourcegraph. 
+Sourcegraph can be run by any user with a standard engineering background, at any scale, with ease. Configurations to the deployment are simple, easily made, easily updated, and do not complicate upgrades. Sourcegraph is regularly upgraded by the majority of our customers who appreciate the ease of upgrades and are keen to access Sourcegraphs latest updates. Customers are able to self-serve for deploying, upgrading, and troubleshooting deployments of Sourcegraph.
 
 ### 3 Year vision
 
