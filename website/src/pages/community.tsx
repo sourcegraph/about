@@ -154,9 +154,6 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                                     <a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13
                                 </li>
                                 <li>
-                                    <a href="https://reinvent.awsevents.com/">AWS re:Invent</a> - 11/29 - 12/03
-                                </li>
-                                <li>
                                     <a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8
                                 </li>
                             </ul>
