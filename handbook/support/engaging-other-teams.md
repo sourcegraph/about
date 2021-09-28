@@ -4,9 +4,9 @@ Our goal as Customer Support is to need help from engineering no more than 10% o
 
 When we need help, we seek it consistently, following the steps outlined here. We created these steps to ensure we:
 
-* Take the work as far as we can
-* Exhaust our collective expertise
-* Minimize the time added to the customer experience whilst they wait for help
+- Take the work as far as we can
+- Exhaust our collective expertise
+- Minimize the time added to the customer experience whilst they wait for help
 
 At no point are we meant to be gate keepers or go-betweens. Generally, when a CE needs help, they will come to us. They may also still go directly to engineering for other questions they have. And when we engage engineering, if the CE wants to be included, be sure to do so. This is especially relevant for customers still in the pre-sales process where everything is just a bit more sensitive.
 
@@ -14,11 +14,11 @@ At no point are we meant to be gate keepers or go-betweens. Generally, when a CE
 
 The more we know, the easier it will be to find the answer. For example:
 
-* Do we have updated details about the customer's environment?
-* Do we have the steps to be able to reproduce the issue and relevant screenshots and logs?
-* Do we know if the customer made any other changes to their environment recently (this could be anything, not just related to Sourcegraph)?
-* Do we have a few examples of users who are impacted and those who are not if the issue is not impacting all of their users?
-* Do we have an understanding of the level of urgency the customer and/or our CE/Sales counterparts are feeling to resolve the issue?
+- Do we have updated details about the customer's environment?
+- Do we have the steps to be able to reproduce the issue and relevant screenshots and logs?
+- Do we know if the customer made any other changes to their environment recently (this could be anything, not just related to Sourcegraph)?
+- Do we have a few examples of users who are impacted and those who are not if the issue is not impacting all of their users?
+- Do we have an understanding of the level of urgency the customer and/or our CE/Sales counterparts are feeling to resolve the issue?
 
 Never say "I need to ask engineering" or anything that can erode trust with the customer in your ability. It's okay that you need help! Instead say things like: "I want to talk to some of my teammates about this one..."
 
@@ -32,12 +32,11 @@ When you need help, post in our #customer-support-internal Slack channel first t
 
 In many cases, questions can span multiple teams. For example, a question about how to scale up indexed search to serve a large set of repositories could cover the Distribution, Cloud, and Search teams. In such cases, start where you think is best and our teammates in engineering will help us figure out if we need to go to another engineering team.
 
-
 ### Deployment
 
 **Keywords**: `deploy`, `Docker`, `container`, `image`, `Kubernetes`/`k8s`, `cluster`, `AWS`, `Google Cloud`/`GCP`
 
-Any questions about deployment should be routed to the [Distribution team](../engineering/distribution/index.md).
+Any questions about deployment should be routed to the [Delivery team](../engineering/enablement/delivery/index.md).
 
 ### Monitoring, management, and performance optimization
 
@@ -45,34 +44,40 @@ Any questions about deployment should be routed to the [Distribution team](../en
 
 Questions about specific alerts and graph panels should be routed to the team that is responsible for the alert or panel, as indicated by relevant entry in [Alert solutions](https://docs.sourcegraph.com/admin/observability/alert_solutions) or the [Dashboards reference](https://docs.sourcegraph.com/admin/observability/dashboards) respectively.
 
-Any other questions about monitoring and performance should be routed to the [Distribution team](../engineering/distribution/index.md).
-
+Any other questions about monitoring and performance should be routed to the [Delivery team](../engineering/enablement/delivery/index.md).
 
 ### Code host connections
 
 **Keywords**: `code host`, `cloning`, `syncing`, `token`, `GitHub`, `GitLab`, `Bitbucket`, `Phabricator`, `Gerrit`, `repository`, `project`, `Perforce`, `src-expose`, `src serve-git`
 
-Any questions about code host connections and repository syncing should be routed to the [Core application team](../engineering/core-application/index.md).
+Any questions about code host connections and repository syncing should be routed to the Repository Management team.
 
-Note that this section applies to backend connections with code hosts, such as repository cloning and syncing. Questions about [frontend/UI integrations with code hosts](#browser-extensions-and-code-host-native-integrations) (e.g., getting code intelligence inside of a code host) should be rounted to the [Extensibility team](../engineering/developer-insights/extensibility/index.md).
+EXCEPTIONs FOR Q3FY22 (to be reassessed for Q4 by 2021-10-31):
+
+- `Perforce` should be routed to the [Repo Management](../engineering/enablement/repo-management/index.md)
+- `permission syncing` should be routed to the [Repo Management](../engineering/enablement/repo-management/index.md)
+- `CVS` should be routed to the [Batch Changes team](../engineering/code-graph/batch-changes/index.md)
+- `license enforcement/management` should be routed to the [Batch Changes team](../engineering/code-graph/batch-changes/index.md) (though these should always go through the CE)
+
+Note that this section applies to backend connections with code hosts, such as repository cloning and syncing. Questions about [frontend/UI integrations with code hosts](#browser-extensions-and-code-host-native-integrations) (e.g., getting code intelligence inside of a code host) should be rounted to the [Extensibility team](../engineering/cloud/extensibility/index.md).
 
 ### Repository permissions
 
 **Keywords**: `permissions`, `ACLs`, `access`, `authorization`, `authz`
 
-Any questions about repository permissions should be routed to the [Core application team](../engineering/core-application/index.md).
+Any questions about repository permissions should be routed to the Repository Management team.
 
 ### User authentication (SSO)
 
 **Keywords**: `authentication`, `authn`, `SSO`, `SAML`, `OAuth`, `auth proxy`, `OpenIDConnect`, `OIDC`
 
-Any questions about user authentication should be routed to the [Core application team](../engineering/core-application/index.md).
+Any questions about user authentication should be routed to the Repository Management team.
 
 ### Code intelligence
 
 **Keywords**: `code intelligence`, `precise`, `navigation`, `LSIF`, `language server`/`LSP`, `go to definition`, `hover`, `find references`, `ctags`, any programming language names (e.g. `Go`, `Java`, `Python`, `COBOL`, etc.)
 
-Any questions about code intelligence and navigation should be routed to the [Code Intelligence team](../engineering/code-intelligence/index.md).
+Any questions about code intelligence and navigation should be routed to the [Code Intelligence team](../engineering/code-graph/code-intelligence/index.md).
 
 ### Search
 
@@ -80,7 +85,7 @@ Any questions about code intelligence and navigation should be routed to the [Co
 
 The search team is divided into two sub-teams, search-product, and search-core. Search-product is focused on delivering features such as search contexts, and search predicates for Cloud and Enterprise alike, as well as driving retention for search in public code. Search-core is focused on growing the global index on Sourcegraph Cloud.
 
-Any questions about search should be routed to the [Search team](../engineering/search/index.md), via the #search slack channel. Teams should be flagged appropriately via @search-product or @search-core. The search team will also assign a dedicated team member for support inquiries via the @search-core-support and @search-product-support tags.
+Any questions about search should be routed to the [Search team](../engineering/code-graph/search/index.md), via the #search slack channel. Teams should be flagged appropriately via @search-product or @search-core. The search team will also assign a dedicated team member for support inquiries via the @search-core-support and @search-product-support tags.
 
 In GitHub issues search-core and search-product should be flagged via team/search-core and team/search-product respectively.
 
@@ -88,20 +93,27 @@ In GitHub issues search-core and search-product should be flagged via team/searc
 
 **Keywords**: `browser extension`, `native integration`, `chrome`, `firefox`, `safari`, `Phabricator`, `Bitbucket`, `GitHub`, `GitLab`
 
-Any questions about the browser extension or code host native integrations should be routed to the [Extensibility team](../engineering/developer-insights/extensibility/index.md).
+Any questions about the browser extension or code host native integrations should be routed to the [Extensibility team](../engineering/cloud/extensibility/index.md).
 
 ### Sourcegraph extensions
 
 **Keywords**: `extensions`, `plugins`, `blame`, `git-extras`, `Codecov`
 
-Any questions about Sourcegraph extensions should be routed to the [Extensibility team](../engineering/developer-insights/extensibility/index.md).
+Any questions about Sourcegraph extensions should be routed to the [Extensibility team](../engineering/cloud/extensibility/index.md).
 
 ### Batch Changes
 
 **Keywords**: `campaigns`, `large scale code changes`, `refactoring`, `src-cli`, `automation`, `batch changes`
 
-Any questions about Batch Changes should be routed to the [Batch Changes team](../engineering/batch-changes/index.md).
+Any questions about Batch Changes should be routed to the [Batch Changes team](../engineering/code-graph/batch-changes/index.md).
 
+### Cloud
+
+**Keywords**: `cloud`, `Open Source Search`, `sourcegraph.com`,
+
+The cloud team is a newly formed team at Sourcegraph focused on rapidly scaling our cloud presence. Today, the team is the DRI for all things cloud including DevOps/infra for cloud, new feature development, and early-access/waitlist programs for cloud.
+
+Any questions about Sourcegraph cloud should be routed to the [Cloud SaaS](../engineering/cloud/saas/index.md) via the [#cloud-saas slack channel](https://sourcegraph.slack.com/archives/C025BKWFPDY).
 
 ## Step 4: File a Github issue
 
@@ -116,19 +128,20 @@ We maintain two issue trackers:
 
 When in doubt, file in the private repo—issues can be moved over to the public repo if needed. And remember, a customer includes those we are working with during the sales process (not just those who have already signed a contract with us).
 
-* Navigate to the correct issue repo from the links above; once there, click the "new issue" button (if you are using the private repo, this will show you some templates -- use the CSE New Issue template
-* Provide all information required for troubleshooting that you gathered in the previous steps, including the customer deployment doc and/or the account doc, if available
-* Include customer quotes in mark down using a quote block. For example, `> quote goes here.`
-* Label it with `customer/$name` and `rfh`.
-* Assign the issue to the appropriate team you identified in the previous step.
+- Navigate to the correct issue repo from the links above; once there, click the "new issue" button (if you are using the private repo, this will show you some templates -- use the CSE New Issue template
+- Provide all information required for troubleshooting that you gathered in the previous steps, including the customer deployment doc and/or the account doc, if available
+- Include customer quotes in mark down using a quote block. For example, `> quote goes here.`
+- Label it with `customer/$name` and `rfh`.
+- Assign the issue to the appropriate team you identified in the previous step by adding the team via their team label.
 
 If it turns our to be a general issue affecting multiple deployments, create an issue in the [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues/new/choose). The issue must not include any private information. It is okay to link any relevant private, customer specific issues. If not already linked to the relevant Zendesk tickets, do so.
 
 ### Add the priority label
+
 Add a prioritization label to the Github issue based on a combination of (1) the severity of the issue and (2) any relevant context that translates to level of urgency (for example, if a customer is in the sales process, issues have a higher degree of urgency):
 
-* `cs/p1`: All customer reported issues per our contractual p1 service level agreement definition [here](../support/index.md#our-service-level-agreements-slas).
-* `cs/p2`: All customer reported issues per our contractual p2 service level agreement definition [here](../support/index.md#our-service-level-agreements-slas), including all feature requests.
+- `cs/p1`: All customer reported issues per our contractual p1 service level agreement definition [here](../support/index.md#our-service-level-agreements-slas).
+- `cs/p2`: All customer reported issues per our contractual p2 service level agreement definition [here](../support/index.md#our-service-level-agreements-slas), including all feature requests.
 
 Selecting priority is more of an art than a science. Start with the issue and its severity and then move it up based on all relevant context (again, for example, are we in the sales process? does the customer have something happening that requires more immediate attention?)
 
@@ -138,11 +151,12 @@ Selecting priority is more of an art than a science. Start with the issue and it
 
 After you file the Github issue, alert the relevant engineering team you did so in Slack. Keep it simple and always provide 1) a brief description of what you need, 2) link to the Github issue, and 3) the context around timeline (for example: it's okay to look at this tomorrow or later in the week).
 
-* When posting in Distribution team's Slack channel, use @distribution-support to contact the the [on-call dev](../engineering/distribution/index.md#support-rotation) (not the team @distribution group -- while we use the @ group for all other engineering teams, most of our help requests go to Distribution, so they have a support rotation to help let the team have more focus time) -- be sure to also use the Slack template as described [here](https://about.sourcegraph.com/handbook/engineering/distribution#general-support-requests)
-* When posting in Batcher Changes team's Slack channel, use @batchers-support
-* When posting for Core App, be sure to do so in the #core-application-support channel and use @core-app-support
-* When posting for Search, use @search-core-support or @search-product-support ... depending which team within Search you need
-* Whenever we have more work than any one engineering team can handle via their support process, we prioritize issues holistically. We try to catch this before the engineering team has to alert us.
+- When posting in the Delivery team's Slack channel, use @distribution-support to contact the on-call dev (if @delivery-support does not exist)
+- When posting in Batcher Changes team's Slack channel, use @batchers-support
+- When posting for Repository Management, be sure to do so in the #repo-management channel and use @core-app-support (if @repo-management-support doesn't exist)
+- When posting for Cloud/SaaS, be sure to do so in the #cloud-saas channel and use @cloud-saas
+- When posting for Search, use @search-core-support or @search-product-support ... depending which team within Search you need
+- Whenever we have more work than any one engineering team can handle via their support process, we prioritize issues holistically. We try to catch this before the engineering team has to alert us.
 
 ### Defects
 
@@ -155,6 +169,8 @@ Ask the engineer helping you to see if they would like to work directly with the
 ### Resolution
 
 Even when engineering is helping, you are accountable for the work and it is your job to reach resolution as outlined in our [workflow](support-workflow.md).
+
+And in some cases, the customer resolves the issue or you figure it out on your own, after all. Please be sure to share in the Github issue all the details so our engineering teammates can learn, too!
 
 ## And sometimes, we need help from teams outside of engineering ...
 

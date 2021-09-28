@@ -9,6 +9,7 @@ This page lists the roles on the product team.
 ## Product Manager
 
 Product Managers work with engineering, sales, marketing, and design to plan, ship, and grow usage and engagement in specific areas of our product.
+
 ### Responsibilities
 
 You will **own an area of the product**\* and:
@@ -50,31 +51,36 @@ Technical Writers plan, create, revise, and maintain developer documents and edu
 - Plan, research, write, revise, and maintain technical documentation for internal or external engineering audiences.
 - Edit, clarify, and proofread documents written by others, and coach non-writers on ways to improve their writing skills.
 - Own docs.sourcegraph.com:
-   - Make Sourcegraph documentation top-tier
-   - Own the backlog of issues with the documentation
-   - Assess quality of existing documentation:
-      - It is clear and easy to read?
-      - It is correct?
-      - It is organized?
-      - Are there great examples?
+  - Make Sourcegraph documentation top-tier
+  - Own the backlog of issues with the documentation
+  - Assess quality of existing documentation:
+    - It is clear and easy to read?
+    - It is correct?
+    - It is organized?
+    - Are there great examples?
 - Support creation of videos
-   - Surface needed topics
-   - Write scripts for the videos
+  - Surface needed topics
+  - Write scripts for the videos
 - Support developers in creating documentation and technical blog posts based on their comfort level:
-   - Interview a developer and create a draft, or
-   - Edit copy written by the developer
+  - Interview a developer and create a draft, or
+  - Edit copy written by the developer
 - Be a resource for other teams to create copy for:
-   - Social media posts
-   - Marketing blogs
-   - Release blog post(s)
-   - Website copy
-   - Design and engineering copy
+  - Social media posts
+  - Marketing blogs
+  - Release blog post(s)
+  - Website copy
+  - Design and engineering copy
 
 ## Director of Product
 
+Directors lead, grow, and develop Product Managers.
+
 ### Responsibilities
 
-TO DO
+- Lead and support the work of multiple Product Managers who are focused on defining and leading key initiatives critical to the success of Sourcegraph.
+- Recruit, hire, and grow excellent Product Managers.
+- Model, teach, and apply [our values](../../company/values.md) in everyday interactions.
+- Facilitate and sustain a healthy, inclusive team culture where everyone is set up to do their best work
 
 ## Director of Technical Writing
 

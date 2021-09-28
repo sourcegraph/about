@@ -1,39 +1,39 @@
 ---
-title: "Sourcegraph 3.27 release"
+title: 'Sourcegraph 3.27 release'
 publishDate: 2021-04-27T10:00-07:00
-description: "Sourcegraph 3.27 release includes Batch Changes updates, changes to the minimum required version of Postgres, and added a new seach feature."
+description: 'Sourcegraph 3.27 release includes Batch Changes updates, changes to the minimum required version of Postgres, and added a new seach feature.'
 tags: [blog, release]
-slug: "release/3.27"
+slug: 'release/3.27'
 published: true
 changelogItems:
-  - description: "Batch Changes now ignore repositories that contain a `.batchignore` file."
-    url: "https://github.com/sourcegraph/src-cli/pull/509"
+  - description: 'Batch Changes now ignore repositories that contain a `.batchignore` file.'
+    url: 'https://github.com/sourcegraph/src-cli/pull/509'
     category: Batch Changes
-  - description: "The diff view commit visualization now supports both split and unified views, including hovers, go-to-definition, and find-references."
+  - description: 'The diff view commit visualization now supports both split and unified views, including hovers, go-to-definition, and find-references.'
     url: https://github.com/sourcegraph/sourcegraph/pull/19553
     category: Application UX
-  - description: "The site configuration now supports defining batch change rollout windows, which can be used to slow or disable pushing changesets at particular times of day or days of the week."
+  - description: 'The site configuration now supports defining batch change rollout windows, which can be used to slow or disable pushing changesets at particular times of day or days of the week.'
     url: https://github.com/sourcegraph/sourcegraph/pull/19951
     category: Batch Changes
-  - description: "Bumped the minimum supported version of Postgres from `9.6` to `12`. The upgrade procedure is mostly automated for existing deployments, but may require action if using the single-container deployment or an external database. See the upgrade documentation for your deployment type for detailed instructions."
+  - description: 'Bumped the minimum supported version of Postgres from `9.6` to `12`. The upgrade procedure is mostly automated for existing deployments, but may require action if using the single-container deployment or an external database. See the upgrade documentation for your deployment type for detailed instructions.'
     url: https://docs.sourcegraph.com/admin/updates
     category: Admin
   - description: "Changesets in batch changes will now be marked as archived instead of being detached when a new batch spec that doesn't include the changesets is applied. Once they're archived users can manually detach them in the UI."
     url: https://github.com/sourcegraph/sourcegraph/pull/19527
     category: Batch Changes
-  - description: "Creating changesets through Batch Changes as a site-admin without configured Batch Changes credentials has been deprecated. To avoid any interruptions in changeset creation, please configure user or global credentials before Sourcegraph 3.29."
+  - description: 'Creating changesets through Batch Changes as a site-admin without configured Batch Changes credentials has been deprecated. To avoid any interruptions in changeset creation, please configure user or global credentials before Sourcegraph 3.29.'
     url: https://github.com/sourcegraph/sourcegraph/pull/20143
     category: Admin
-  - description: "New changes of a Perforce depot will now be reflected in `master` branch after the initial clone."
+  - description: 'New changes of a Perforce depot will now be reflected in `master` branch after the initial clone.'
     url: https://github.com/sourcegraph/sourcegraph/pull/19718
     category: Admin
-  - description: "You can now search for repos containing multiple patterns using the built-in `contains` predicate: `repo:contains(...)`, `repo:contains.file(...)`, `repo:contains.content(...)`, and `repo:contains.commit.after(...)`."
+  - description: 'You can now search for repos containing multiple patterns using the built-in `contains` predicate: `repo:contains(...)`, `repo:contains.file(...)`, `repo:contains.content(...)`, and `repo:contains.commit.after(...)`.'
     url: https://github.com/sourcegraph/sourcegraph/issues/18584
     category: Search
-  - description: "User auth data can now be encrypted in the database using the `encryption.keys` config."
+  - description: 'User auth data can now be encrypted in the database using the `encryption.keys` config.'
     url: https://docs.sourcegraph.com/admin/encryption
     category: Admin
-  - description: "We now respect the `disableAutoGitUpdates` setting when cloning or fetching repos on demand and during cleanup tasks that may re-clone old repos."
+  - description: 'We now respect the `disableAutoGitUpdates` setting when cloning or fetching repos on demand and during cleanup tasks that may re-clone old repos.'
     url: https://github.com/sourcegraph/sourcegraph/pull/20194
     category: Repositories
 ---

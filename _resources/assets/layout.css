@@ -5,24 +5,24 @@
     --sg-dark-gray: #6c757d;
     --sg-space-black: #000000;
 
-    --sg-yellow-1: #FFF2CF;
-    --sg-yellow-2: #FFDB45;
-    --sg-yellow-3: #FFC247;
-    --sg-yellow-4: #FF9933;
+    --sg-yellow-1: #fff2cf;
+    --sg-yellow-2: #ffdb45;
+    --sg-yellow-3: #ffc247;
+    --sg-yellow-4: #ff9933;
 
-    --sg-violet-1: #E8D1FF;
-    --sg-violet-2: #A112FF;
-    --sg-violet-3: #820DDE;
-    --sg-violet-4: #6112A3;
+    --sg-violet-1: #e8d1ff;
+    --sg-violet-2: #a112ff;
+    --sg-violet-3: #820dde;
+    --sg-violet-4: #6112a3;
 
-    --sg-red-1: #FFC9C9;
-    --sg-red-2: #FF5543;
-    --sg-red-3: #ED2E20;
-    --sg-red-4: #C22626;
+    --sg-red-1: #ffc9c9;
+    --sg-red-2: #ff5543;
+    --sg-red-3: #ed2e20;
+    --sg-red-4: #c22626;
 
-    --sg-blue-1: #C7FFFF;
+    --sg-blue-1: #c7ffff;
     --sg-blue-2: #00cbec;
-    --sg-blue-3: #00A1C7;
+    --sg-blue-3: #00a1c7;
     --sg-blue-4: #005482;
 
     --sg-plum-1: #bfbfff;
@@ -37,8 +37,17 @@
 
     --sg-lemon: var(--sg-yellow-2);
     --sg-blurple: var(--sg-plum-3);
-    --sg-action-green: #17AB52;
+    --sg-action-green: #17ab52;
     --sg-alert-red: var(--sg-red-3);
+
+    /* Gradients */
+    --sg-gradient-aurora: linear-gradient(var(--sg-sky-blue), var(--sg-vivid-violet));
+    --sg-gradient-aquamarine: linear-gradient(var(--sg-sky-blue), var(--sg-blurple));
+    --sg-gradient-infrared: linear-gradient(var(--sg-vivid-violet), var(--sg-vermillion));
+
+    --sg-gradient-mars: linear-gradient(#ffc9c9, #e8d1ff);
+    --sg-gradient-saturn: linear-gradient(#e8d1ff, #c7ffff);
+    --sg-gradient-venus: linear-gradient(#c7ffff, #c4ffe8);
 
     --font-family: 'Source Sans Pro', sans-serif;
     --font-family-code: 'Source Code', monospace;
@@ -60,7 +69,7 @@
 }
 body {
     margin: 0;
-    font-family:  var(--font-family);
+    font-family: var(--font-family);
     background-color: var(--body-bg);
     color: var(--text-color);
     text-rendering: optimizeLegibility;
@@ -207,25 +216,25 @@ footer a {
 }
 
 @media (max-width: 465px) {
-  #search-input {
-    width: 15rem;
-  }
+    #search-input {
+        width: 15rem;
+    }
 
-  #header nav div {
-    margin-top: 1rem;
-  }
+    #header nav div {
+        margin-top: 1rem;
+    }
 }
 
 /* Account for wrapping nav */
 @media (max-width: 1029px) {
-  :root {
-    --header-height: 4.5rem;
-  }
+    :root {
+        --header-height: 4.5rem;
+    }
 }
 @media (max-width: 754px) {
-  :root {
-    --header-height: 6.5rem;
-  }
+    :root {
+        --header-height: 6.5rem;
+    }
 }
 
 #search-button {

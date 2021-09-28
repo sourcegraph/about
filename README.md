@@ -2,15 +2,14 @@
 
 Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 
-
 ## Quick start
 
-| What                                 | Command                                    |
-| ------------------------------------ | ------------------------------------------ |
-| Auto-preview about.sourcegraph.com   | `cd website && yarn install && yarn start` |
-| Final review about.sourcegraph.com   | `cd website && yarn install && yarn serve` |
-| Preview handbook                     | `make serve`                               |
-| Check for broken links               | `make docsite-check`                       |
+| What                               | Command                                    |
+| ---------------------------------- | ------------------------------------------ |
+| Auto-preview about.sourcegraph.com | `cd website && yarn install && yarn start` |
+| Final review about.sourcegraph.com | `cd website && yarn install && yarn serve` |
+| Preview handbook                   | `make serve`                               |
+| Check for broken links             | `make docsite-check`                       |
 
 ## Requirements
 
@@ -42,9 +41,7 @@ yarn start
 
 ## Publishing a blog post
 
-We want and encourage everyone at Sourcegraph to contribute to the blog and publishing a blog post is as simple as merging an approved pull request with your blog content.
-
-Learn how to [create and publish a blog post](https://about.sourcegraph.com/handbook/marketing/creating_blog_posts).
+We want and encourage everyone at Sourcegraph to contribute to the blog. If you'd like to write for the blog, please check out how to [propose a blog post](https://about.sourcegraph.com/handbook/marketing/content/editorial#editorial-process) in the Editorial handbook.
 
 ## Handbook
 
@@ -52,6 +49,6 @@ The [Sourcegraph handbook](https://about.sourcegraph.com/handbook) also lives in
 
 The handbook uses [docsite](https://github.com/sourcegraph/docsite).
 
-- To preview changes to handbook content locally, run `make serve` from the root of the handbook repository (/about), and open http://localhost:5082.
+- To preview changes to handbook content locally, run `make serve` from the root of the about repository (`/about`), and open http://localhost:5082.
 - To check for broken links and other lint problems, run `make docsite-check`.
 - See [detailed `docsite` instructions](handbook/editing.md#running-a-local-handbook-site).

@@ -21,18 +21,6 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
   force = true
 
 [[redirects]]
-  from = "/community"
-  to = "/handbook/community"
-  status = 308
-  force = true
-
-[[redirects]]
-  from = "/community/*"
-  to = "/handbook/community/:splat"
-  status = 308
-  force = true
-
-[[redirects]]
   from = "/direction"
   to = "/handbook/direction"
   status = 308
@@ -108,5 +96,11 @@ command = "curl -sSL -o /tmp/docsite https://github.com/sourcegraph/docsite/rele
 [[redirects]]
   from = "/terms-private"
   to = "/terms-self-hosted"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/get-started"
+  to = "/#get-started"
   status = 200
   force = true

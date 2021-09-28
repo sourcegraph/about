@@ -22,7 +22,7 @@ These projects contain per-project permissions.
 
 Contains projects used by individual engineers. Engineers are expected to remove all their resources once they are done testing. All projects must be prefixed with `$name-` (the name of the owner).
 
-Generally, these projects should be short-lived and shutdown by the engineer when it is no longer needed (this will delete all resources in the project). Longer lived projects should be put in another folder and distribution should be contacted for review. 
+Generally, these projects should be short-lived and shutdown by the engineer when it is no longer needed (this will delete all resources in the project). Longer lived projects should be put in another folder and distribution should be contacted for review.
 
 #### Sourcegraph Cloud
 
@@ -35,10 +35,10 @@ Sourcegraph Cloud projects.
 
 #### Sourcegraph Security
 
-[Sourcegraph Security projects](./security/infrastructure/index.md#projects).
+[Sourcegraph Security projects](./cloud/security/infrastructure/index.md#projects).
 
-- **[sourcegraph-security-logging](./security/infrastructure/index.md#logging)**: Infrastructure required for centralized security logging.
-- **[sourcegraph-security-logging-stage](./security/infrastructure/index.md#logging-stage)**: Staging environment for logging infrastructure.
+- **[sourcegraph-security-logging](./cloud/security/infrastructure/index.md#logging)**: Infrastructure required for centralized security logging.
+- **[sourcegraph-security-logging-stage](./cloud/security/infrastructure/index.md#logging-stage)**: Staging environment for logging infrastructure.
 
 #### Other Projects
 

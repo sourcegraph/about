@@ -19,8 +19,7 @@ export default ((props: any) => (
             title="SoFi manages hundreds of microservices"
             logo="/external-logos/sofi-logo-white.png"
             quote={{
-                quote:
-                    'Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
+                quote: 'Sourcegraph is an ingrained part of my daily process at SoFi. With Sourcegraph, our engineers can understand all of the repercussions of committing a change to a service that is exposed to other services.',
                 author: 'Ursula Robertson, Engineering Manager, SoFi',
                 image: '/case-studies/ursula-robertson-sofi.jpg',
             }}

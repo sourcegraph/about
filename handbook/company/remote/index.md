@@ -4,7 +4,7 @@ Sourcegraph is an all-remote company, which means:
 
 - All teammates are encouraged to work remotely. Sourcegraph provides a budget for home offices or office spaces to teammates as needed.
 - We use our business office address in San Francisco to provide a mailing address, for corporate filings, and on-site workplaces as legally required.
-- We work asynchronously across time zones and continents.
+- We work [asynchronously](../asynchronous-communication.md) across time zones and continents.
   - You choose when you want to work. (Most people work the normal working hours for their timezone.)
   - You don't need to ask permission or tell anyone if you need to step out.
   - We try to limit the number of synchronous meetings, but there are some [company](../../communication/company_meeting.md) and team meetings that you need to attend which might be outside of your normal working hours. We do our best to optimize meeting times for all involved participants.
@@ -19,10 +19,10 @@ With an all-remote team, there are a few things to be extra mindful of.
 
 All-remote teams like ours rely heavily on written communication. Nothing else works when you want to communicate and coordinate work across many timezones. Unfortunately written communication lacks some valuable cues that in-person communication provides.
 
-  - The speaker's non-verbal cues (e.g., tone, facial expression, posture) modulate how the listener perceives the words being said.
-    - Without this context that people are used to, written communication can feel cold and negative by default, unless the writer makes a conscious effort to lead with positivity (e.g., "Great!", "Thanks!", "I agree!"). This becomes less of a risk if the speaker and listener already have a good working relationship.
-  - The speaker can adapt their message based on the listener's non-verbal cues (e.g., if the listener looks confused then the speaker can ask what is confusing and clarify the confusion before moving on).
-    - Written communication is most effective when the writer thinks about what questions readers will have and preemptively answers those questions in the original communication.
+- The speaker's non-verbal cues (e.g., tone, facial expression, posture) modulate how the listener perceives the words being said.
+  - Without this context that people are used to, written communication can feel cold and negative by default, unless the writer makes a conscious effort to lead with positivity (e.g., "Great!", "Thanks!", "I agree!"). This becomes less of a risk if the speaker and listener already have a good working relationship.
+- The speaker can adapt their message based on the listener's non-verbal cues (e.g., if the listener looks confused then the speaker can ask what is confusing and clarify the confusion before moving on).
+  - Written communication is most effective when the writer thinks about what questions readers will have and preemptively answers those questions in the original communication.
 
 All-remote teams can't rely as much on the spontaneous interactions and conversations that might happen in an office (e.g., in a break room, in the hallway, at lunch). These kinds of interactions are valuable for building interpersonal relationships, so all-remote teams need to explicitly make space for these things to happen.
 
@@ -53,6 +53,7 @@ After that it is just a matter of not checking your work email (or Slack) at tim
 
 - [Our journey to all-remote](https://about.sourcegraph.com/blog/our-journey-to-all-remote)
 - [Tips for working remotely](tips.md)
+- [Asynchronous communication at Sourcegraph](../asynchronous-communication.md)
 - [Teammate-recommended productivity hacks](teammate-recommended_productivity_hacks.md)
 - [Social calendar](social_calendar.md)
 - [GitLab handbook: All-remote](https://about.gitlab.com/company/culture/all-remote)

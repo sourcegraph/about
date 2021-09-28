@@ -2,7 +2,7 @@
 
 ## Approvals
 
-Generally, you should feel free to spend in ways that are in the best interest of the business (see our philosophy in [spending company money](../../people-ops/spending-company-money.md)). However, if you intend to spend >$500 on a single purchase (or, depending on your position, above higher limits), please see our [spending limits](payables.md#limits). For all expense related questions, feel free to email us at ap@sourcegraph.com or post in Slack at #expense-inquiries.
+Generally, you should feel free to spend in ways that are in the best interest of the business (see our philosophy in [spending company money](spending-company-money.md)). However, if you intend to spend >$500 on a single purchase (or, depending on your position, above higher limits), please see our [spending limits](payables.md#limits). For all expense related questions, feel free to email us at ap@sourcegraph.com or post in Slack at #expense-inquiries.
 
 ## Submit expenses every month
 
@@ -16,9 +16,13 @@ Any expenses more than 90 days old require approval by People Ops and Finance.
 
 You will receive an invitation via email to our Expensify organization during your first week, please sign up using that link. (Please do not sign up manually, this will create an account but it will not be associated with the proper organization or expense policy and will result in delayed reimbursements). If you do not have an invite to Expensify within your first week, please contact People Ops. You will need to link a bank account to Expensify.
 
+## Teammates using Velocity Global
+
+Team members using Velocity Global will receive an email invitation to our Expensify organization during your first week. Please sign up using that link and do not sign up manually, this will create an account but it will not be associated with the proper organization or expense policy and will result in delayed reimbursements. Reimbursement via Velocity Global will not be paid upon approval as it is aligned with payroll cycles.
+
 ### When submitting an expense via Expensify
 
-- Create a report for the entire month, and add individual expenses to that report.
+- Create a report and add individual expenses to that report.
 - Upload receipts for each expense (required for all expenses above $25).
 - Ensure the date and description fields are properly filled out.
   - The date listed on your expense should be the date of purchase (not the date of submission).
@@ -38,6 +42,7 @@ You will receive an invitation via email to our Expensify organization during yo
 Contractors should also submit expense reports promptly at the end of each month, and include the expenses in their [monthly invoices](invoices.md). Once the expenses are approved, the full invoice can be paid.
 
 ## Internet, phone, and wellness benefits
+
 - For US based teammates: these fringe benefits are automatically added to your paycheck (the total amount is split up over both paychecks for the month), there is no need to submit them via Expensify.
 - For teammates based outside the US: you can have have these as fixed line items on your invoices and you will be paid for the full amount every month (receipts are not required for these fixed line items).
 - Fringe benefit amount (per month):

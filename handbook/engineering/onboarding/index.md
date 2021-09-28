@@ -15,7 +15,7 @@ You'll have to get some basics set up in your first few days:
 - Complete the onboarding for your role:
   - [Software engineer onboarding](software-engineer-onboarding.md)
   - [Engineering manager onboarding](engineering-manager-onboarding.md)
-- If you need access to Percy for visual testing, create an account by going to https://percy.io/invite-login and looging in with your GitHub account. Then ask on `#dev-chat` for an email invitation to our Percy org. **Do not create an account on Browserstack as this is not supported for our organization.**
+- If you need access to Percy for visual testing, ask on `#dev-chat` for an invitation to our org.
 
 ## Manager checklist
 
@@ -31,10 +31,11 @@ Your manager should complete the following steps when you join:
   - [Figma](https://figma.com)
   - Add the user to the `gcp-engineering` [group](https://console.cloud.google.com/iam-admin/groups?orgonly=true&project=&folder=&organizationId=1006954638239&supportedpurview=organizationId) so they have access to our [Google Cloud Platform](../environments.md).
 - Grant access to necessary services.
+
   - [Sourcegraph organization on Sourcegraph.com](https://sourcegraph.com/organizations/sourcegraph/members)
   - [LSIF organization on GitHub](https://github.com/orgs/lsif/people) (optional; recommended for Code Intelligence team members)
   - [Buildkite](https://buildkite.com/organizations/sourcegraph/users/new)
   - [Opsgenie](https://sourcegraph.app.opsgenie.com/settings/users/)
-  
+
   - [Site24x7](https://www.site24x7.com) (optional; recommended for Distribution team members)
   - [HoneyComb.io](https://www.honeycomb.io/)

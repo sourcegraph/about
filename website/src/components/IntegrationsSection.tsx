@@ -3,10 +3,10 @@ import { ContentSection } from './content/ContentSection'
 
 export const IntegrationsSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <ContentSection className={className}>
-        <h2 className="display-3 font-weight-bold">Works with your code, infrastructure, and tools</h2>
+        <h2 className="display-3 font-weight-bold mb-3">Works with your code, infrastructure, and tools</h2>
         <div className="row">
             <div className="col-lg-6">
-                <h3 className="h5 font-weight-bold pt-3">All your repositories</h3>
+                <h3 className="h5 font-weight-bold pt-3">All your repositories + 2M open source (and counting)</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">GitHub</code>
@@ -60,7 +60,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                         <code className="border rounded px-1">Ridiculously big monorepos</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
-                        <code className="border rounded px-1">500,000+ repositories</code>
+                        <code className="border rounded px-1">2,000,000+ open source repositories</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Any combo of these</code>
@@ -72,6 +72,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     </li>
                 </ul>
             </div>
+
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">All your languages</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">
@@ -159,13 +160,13 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">JSON</code>
                     </li>
-                       <li className="list-inline-item text-nowrap">
+                    <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">Jsonnet</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">R</code>
                     </li>
-                     <li className="list-inline-item text-nowrap">
+                    <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">PHP</code>
                     </li>
                     <li className="list-inline-item text-nowrap">
@@ -205,6 +206,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     </li>
                 </ul>
             </div>
+
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">All your tools</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">
@@ -250,6 +252,9 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     <li className="list-inline-item text-nowrap">
                         <code className="border rounded px-1">npm</code>
                     </li>
+                    <li className="list-inline-item text-nowrap">
+                        <code className="border rounded px-1">SonarQube</code>
+                    </li>
                     <li className="d-block">
                         <a href="https://docs.sourcegraph.com/integration" className="small text-muted">
                             See all integrations or build your own
@@ -257,6 +262,7 @@ export const IntegrationsSection: React.FunctionComponent<{ className?: string }
                     </li>
                 </ul>
             </div>
+
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">Deployment options</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">

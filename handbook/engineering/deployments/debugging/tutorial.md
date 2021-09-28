@@ -1,11 +1,13 @@
 # Gain access to the cluster
 
-We use GCP to provide cluster access.  Install the `gcloud` cli tool from here: <https://cloud.google.com/sdk/gcloud>. Ensure that the cli install folder is on your path. It installs other tools like `kubectl` that we use.
+We use GCP to provide cluster access. Install the `gcloud` cli tool from here: <https://cloud.google.com/sdk/gcloud>. Ensure that the cli install folder is on your path. It installs other tools like `kubectl` that we use.
 
 Next, open a new terminal and set two environment variables for ergonomics for this tutorial.
 
 ```
-export CLOUDSDK_CORE_PROJECT=sourcegraph-dogfood && export CLOUDSDK_COMPUTE_REGION=us-central1 && CLOUDSDK_COMPUTE_REGION=us-central1-f;
+export CLOUDSDK_CORE_PROJECT=sourcegraph-dogfood
+export CLOUDSDK_COMPUTE_REGION=us-central1
+export CLOUDSDK_COMPUTE_REGION=us-central1-f
 ```
 
 Now, use `gcloud container clusters get-credentials dogfood` to gain cluster access for `kubectl`
@@ -42,17 +44,20 @@ Note: You do not need to switch the namespace to access workloads in other names
 ## Describe a pod
 
 First, describe one of the running pods to see some basic information about the workload
+
 ```
 $ kubectl describe pod sourcegraph-frontend-XXX-XXXX
 ```
+
 (Note: to the exact name of the pod you can either use tab autocomplete with kubectl, assuming it has been enabled, or do a kubectl get pods to get the name of any frontend pod)
-![output](carbon.svg "Describe output")
+![output](carbon.svg 'Describe output')
 
 This contains information on the current state of all containers currently running on the pod.
 
 ## Get the logs of one of the containers
 
 Next, lets get the `frontend` container logs
+
 ```
 $ kubectl logs sourcegraph-frontend-XXXX -c frontend
 ```
@@ -63,11 +68,13 @@ Also, all our our pods fall back to logs on error so you should be able to see t
 ## Exec into a running pod
 
 Finally, you may need to exec into a pod to debug some problems. You can use
+
 ```
 $ kubectl exec -it sourcegraph-frontend-XXX -c frontend -- sh
 ```
 
 See if you can use the describe output to find where the default service account token can be found inside the container.
+
 <details>
   <summary>Location</summary>
   You can find the token in at `/run/secrets/kubernetes.io/serviceaccount`

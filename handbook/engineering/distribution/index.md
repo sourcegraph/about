@@ -14,9 +14,9 @@ The distribution team is responsible for making Sourcegraph easy to deploy, scal
 
 Our team has two Slack channels, one public (#distributioneers) and one private (#distribution-team). **Our default is to use the public channel**. The #distribution-team channel will only be used for discussing internal team topics, like scheduling, retrospectives, how we do updates, etc.
 
-## [Goals](goals.md)
+## [Goals](../../direction/enablement/distribution/index.md)
 
-See [Goals](goals.md)
+See [Goals](../../direction/enablement/distribution/index.md)
 
 ## Details
 
@@ -52,7 +52,6 @@ See [Goals](goals.md)
 - FQ2 [Engineering Manager](../roles.md#engineering-manager) hire, [Bill Creager](../../company/team/index.md#bill-creager) acting manager until then {#distribution-eng}
   - [Geoffrey Gilmore](../../company/team/index.md#geoffrey-gilmore)
   - [Dave Try](../../company/team/index.md#dave-try)
-  - [Dax McDonald](../../company/team/index.md#dax-mcdonald-he-him)
   - [Robert Lin](../../company/team/index.md#robert-lin)
   - FQ1 [distribution engineer](https://boards.greenhouse.io/sourcegraph91/jobs/4003908004)
   - FQ3 hire
@@ -61,28 +60,33 @@ See [Goals](goals.md)
 
 ### Urgent customer incidents
 
-You can send an urgent notification to the engineer directly from Slack utilizing the following command: `/genie alert "ce/p1: Customer XYZ systems are impaired #12345" for distribution-support`.
-If the engineer is unable, a message will be send to the rest of the team.
+If you think that an incident might be impacting more than just one customer, please follow the guidance in the [incident process](https://about.sourcegraph.com/handbook/engineering/incidents).
 
-Please provide a link to an [issue](https://about.sourcegraph.com/handbook/ce/customer_issues) in the message.
+Otherwise, if the incident is isolated to one customer (whether that be a managed instance or a self-hosted deployment) please proceed as follows.
+
+For out of hours (or if in doubt and in need of urgent Distribution support) you can send an urgent notification to the engineer directly from Slack utilizing the following command: `/genie alert "ce/p1: Customer XYZ systems are impaired #12345" for distribution-support`.
+If the engineer is unable, a message will be send to the rest of the team. Please provide a link to an [issue](https://about.sourcegraph.com/handbook/ce/customer_issues) in any message.
+
+During hours, please message us in Slack in the [Distributioneers channel](https://sourcegraph.slack.com/archives/CJX299FGE) and tag `@distribution-support`. Please provide a link to an [issue](https://about.sourcegraph.com/handbook/ce/customer_issues) in any message.
 
 Find out [how we cover on-call](#on-call-Support).
 
 ### General questions
 
-  1. In [#distributioneers](https://sourcegraph.slack.com/archives/CJX299FGE), click the blue lightning bolt just below the Slack text field
-  2. At the top of the popup, select the type of request – "Ask a question"
-  3. Fill out the form!
-  4. Your responses will be posted in the channel, which is monitored by the member of the team on the support rotation ([see below](#how-we-cover-support-requests) for more info!)
-  5. We'll get back to you asap. But, if this is a **time sensitive question**, please tag `@distribution-support` in the thread in the channel.
+1. In [#distributioneers](https://sourcegraph.slack.com/archives/CJX299FGE), click the blue lightning bolt just below the Slack text field
+2. At the top of the popup, select the type of request – "Ask a question"
+3. Fill out the form!
+4. Your responses will be posted in the channel, which is monitored by the member of the team on the support rotation ([see below](#how-we-cover-support-requests) for more info!)
+5. We'll get back to you asap. But, if this is a **time sensitive question**, please tag `@distribution-support` in the thread in the channel.
 
-### General support requests
+### General (non-urgent) support requests
 
-  1. In [#distributioneers](https://sourcegraph.slack.com/archives/CJX299FGE), click the blue lightning bolt just below the Slack text field
-  2. At the top of the popup, select the type of request – "Request support"
-  3. Fill out the form!
-  4. Your responses will be posted in the channel, which is monitored by the member of the team on the support rotation ([see below](#how-we-cover-support-requests) for more info!)
-  5. We'll get back to you asap. But, if this is a **time sensitive request**, please tag `@distribution-support` in the thread in the channel, or consider using the method outlined in ["Urgent customer incidents"](#urgent-customer-incidents) above if _really_ urgent.
+1. Ensure there is an GitHub issue logged for the problem
+2. In [#distributioneers](https://sourcegraph.slack.com/archives/CJX299FGE), click the blue lightning bolt just below the Slack text field
+3. At the top of the popup, select the type of request – "Request support"
+4. Fill out the form!
+5. Your responses will be posted in the channel, which is monitored by the member of the team on the support rotation ([see below](#how-we-cover-support-requests) for more info!)
+6. We'll get back to you asap. But, if this is a **time sensitive request**, please tag `@distribution-support` in the thread in the channel, or consider using the method outlined in ["Urgent customer incidents"](#urgent-customer-incidents) above if _really_ urgent.
 
 ### How we cover support requests
 

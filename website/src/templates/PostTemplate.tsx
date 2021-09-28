@@ -5,7 +5,7 @@ import { BlogHeader } from '../components/blog/BlogHeader'
 import { BLOG_TYPE_TO_INFO, Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '../components/blog/postTypes'
 import Layout from '../components/Layout'
 
-interface Props extends PageProps<{ markdownRemark: Post }> { }
+interface Props extends PageProps<{ markdownRemark: Post }> {}
 
 export const PostTemplate: React.FunctionComponent<Props> = ({ data, location }) => {
     const post = data.markdownRemark
@@ -14,10 +14,14 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
     const image = 'https://about.sourcegraph.com/sourcegraph-mark.png'
     const socialImage = post.frontmatter.socialImage
     const canonical = post.frontmatter.canonical
+    const externalTitle = post.frontmatter.externalTitle
+    const externalDescription = post.frontmatter.externalDescription
     const meta = {
         title,
         image,
         description,
+        externalTitle,
+        externalDescription,
     }
 
     const C = POST_TYPE_TO_COMPONENT[postType(post)]
@@ -31,13 +35,13 @@ export const PostTemplate: React.FunctionComponent<Props> = ({ data, location })
                 {socialImage ? (
                     <meta name="twitter:image" content={socialImage} />
                 ) : (
-                        <meta name="twitter:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />
-                    )}
+                    <meta name="twitter:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />
+                )}
                 {socialImage ? (
                     <meta property="og:image" content={socialImage} />
                 ) : (
-                        <meta property="og:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />
-                    )}
+                    <meta property="og:image" content="https://about.sourcegraph.com/sourcegraph-mark.png" />
+                )}
             </Helmet>
             <div className="">
                 <div className="container-lg">
@@ -69,6 +73,8 @@ export const pageQuery = graphql`
             frontmatter {
                 title
                 description
+                externalTitle
+                externalDescription
                 heroImage
                 socialImage
                 author

@@ -1,8 +1,8 @@
 # How we use Salesforce
 
-This document describes how the sales team is using Salesforce. 
+This document describes how the sales team is using Salesforce.
 
-Note: Please refer to it as Salesforce (instead of SF or SFDC) in accordance with our [content guidelines](../communication/content_guidelines/style_and_mechanics.md#abbreviations-acronyms-latinisms-jargon). 
+Note: Please refer to it as Salesforce (instead of SF or SFDC) in accordance with our [content guidelines](../communication/content_guidelines/style_and_mechanics.md#abbreviations-acronyms-latinisms-jargon).
 
 Jump to:
 
@@ -18,7 +18,7 @@ Jump to:
 
 ## Salesforce access
 
-Sales, marketing and finance teams have access to Salesforce. Access for those on other teams can be reviewed on a case-by-case basis, usually dependent on how frequently one needs to view customer communcation. To request access, tag @business-team in #sales. 
+Sales, marketing and finance teams have access to Salesforce. Access for those on other teams can be reviewed on a case-by-case basis, usually dependent on how frequently one needs to view customer communcation. To request access, tag @business-team in #sales.
 
 ## About Salesforce objects
 
@@ -55,7 +55,7 @@ First Touchpoint is a slightly more granular version of Lead Source and is set a
 
 First Touchpoint values include:
 
-- Private Instance/Install (leads will go into "PP-Private Instance Markie" sequence) 
+- Private Instance/Install (leads will go into "PP-Private Instance Markie" sequence)
 - Sourcegraph.com Account/Cloud Sign-ups (leads will go into "CC-Cloud Signup Markie" sequence)
 - Contact/Demo Form
 - Inbound Email (support, contact)
@@ -106,7 +106,7 @@ If an Outbound Lead meets the “Target Opportunity Profile” criteria, we use 
 - At this point, the Opportunity will be in Stage 1 - Interest
 - SDR schedules meeting with the Contact and the receiving AE.
 - SDR logs all pertinent information - call/email notes, research on contact/company, and any additional context that is helpful for the AE to be prepared for the initial call / understand the justification for creating an Opportunity
-SDR joins this initial call to make the AE intro and listen to the call for feedback
+  SDR joins this initial call to make the AE intro and listen to the call for feedback
 
 ### Inbound Lead-to-Opportunity Conversion Workflow
 
@@ -118,7 +118,7 @@ If a Lead meets the “Target Opportunity Profile” criteria, we use the follow
 - SDR creates the Opportunity in Salesforce by converting the lead to an Account/Contact/Opportunity (Note: be sure to convert into existing Account if one exists vs. creating a new)
 - At this point, the Opportunity will be in Stage 1 - Interest
 - SDR logs all pertinent information - call/email notes, research on contact/company, and any additional context that is helpful for the AE to be prepared for the initial call / understand the justification for creating an Opportunity
-SDR joins this initial call to make the AE intro and listen to the call for feedback
+  SDR joins this initial call to make the AE intro and listen to the call for feedback
 
 ### Rules of Engagement (ROE)
 
@@ -156,7 +156,7 @@ SDR joins this initial call to make the AE intro and listen to the call for feed
 5. The request has been submitted to your manager for approval. Click Finish.
 6. Once your manager approves the change, the Account will be removed from your name and unmarked as a Target Account.
 
-- [Remove Account  Video Example](https://screenrec.com/share/IMZG1ntb85)
+- [Remove Account Video Example](https://screenrec.com/share/IMZG1ntb85)
 
 ##### To exchange an account from your Target Accounts (exchanging is only necessary if you are at your max of 25 accounts):
 
@@ -171,6 +171,20 @@ SDR joins this initial call to make the AE intro and listen to the call for feed
 
 ## Opportunity Object
 
+### New Business Meetings
+
+An important metric for tracking Sales performance is "New Business Meetings" or NBMs. The target for NBMs is 7 a month for a ramped AE.
+
+New Business Meetings are considered to be the initial meeting for a new business opportunity -- these can be net new customers or expansions on existing customers, but there can only be 1 NBM for a given sales opportunity. That means that every opportunity at Stage 1 or beyond counts as a New Business Meeting for tracking purposes in Salesforce.
+
+This also means that if a meeting is held, but no Opportunity is created, it doesn't count as a new NBM. For reporting and tracking purposes, the date of the NBM is not the date the actual meeting took place, but the date when an opportunty reached (or was created in) stage 1 or beyond.
+
+### Qualified Pipeline
+
+Any opportunity in Salesforce that reaches stage 2 or beyond is considered to be a Qualified Opportunity. Our pipeline metrics and reporting only consider Qualified Opportunities -- opportunities in Stage 0 or 1 do not count in our pipeline metrics.
+
+The date an opportunity becomes qualified is the date it moves into Stage 2 or beyond -- this date, and not the create date of the opportunity, is the date that is used for cycle time and other pipeline analysis.
+
 ### Associating contacts to opportunities
 
 All of the contacts important to an opportunity should be linked. This should include the technical decision-maker, the economic decision-maker (if they are different) and the original member who introduced Sourcegraph to the organization.
@@ -180,13 +194,15 @@ This ensures that all deal-related communication is visible within the deal time
 If a deal comes through a referral or introduction, tell [BizOps](../ops/bizops/index.md) so an adjustment can be made in the database to reflect this.
 
 ### When a deal is won
+
 1. On 'New Business', make sure you have added products to the Opportunity following the linked demo: [Add Products Demo](https://screenrec.com/share/5EQcvILwON)
-2. Move the deal to ‘Closed Won’. 
-3. If you have added Products using Step 1, the Contract End Date will be set for you. If not, mark the ‘End of contract’ field with the last day of the contract. Salesforce will [automatically create a renewal deal](#renewal-deals) based on this date. 
-4. Ensure the appropriate 'deal won reason' fields reflect the main factors that contributed to the opportunity being won. 
+2. Move the deal to ‘Closed Won’.
+3. If you have added Products using Step 1, the Contract End Date will be set for you. If not, mark the ‘End of contract’ field with the last day of the contract. Salesforce will [automatically create a renewal deal](#renewal-deals) based on this date.
+4. Ensure the appropriate 'deal won reason' fields reflect the main factors that contributed to the opportunity being won.
 
 ### When a deal is lost
-1. Update the ‘Closed Lost Dropdown’ property to reflect the reason. If the reason doesn’t exist in the dropdown, you can talk to [BizOps](../ops/bizops/index.md) about adding one. 
+
+1. Update the ‘Closed Lost Dropdown’ property to reflect the reason. If the reason doesn’t exist in the dropdown, you can talk to [BizOps](../ops/bizops/index.md) about adding one.
 1. Expand upon the reason in the longform ‘Closed Lost Reason’ field.
 
 ### Recording outbound activity
@@ -209,11 +225,11 @@ Contacts are synced as Leads in Salesforce, and become Opportunity/Account/Conta
 
 ### Salesforce to HubSpot sync
 
-Any update on the lead/contact in Salesforce will sync back to HubSpot (name, email, MQL checkbox, etc...). Companies and opportunities will not be synced back; Salesforce is the source of truth for these objects. 
+Any update on the lead/contact in Salesforce will sync back to HubSpot (name, email, MQL checkbox, etc...). Companies and opportunities will not be synced back; Salesforce is the source of truth for these objects.
 
 ### What HubSpot still does
 
-- Everything marketing (email campaigns, workflows, lead capture/forms, including NPS scores)
+- Everything marketing (email campaigns, workflows, lead capture/forms, including NPS, MQL, and PQL scores)
 - Links to customers from RFCs, GitHub issues, etc. are still accessible. This will eventually be deprecated
 
 ## Salesforce Automation

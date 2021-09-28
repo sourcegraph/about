@@ -6,10 +6,10 @@ Seeking and acting on feedback is crucial for making good decisions and deliveri
 
 When seeking feedback at Sourcegraph, it's important to:
 
-- Specifically say what *kind* of feedback you're seeking. A thumbs-up, thumbs-down? A gut call on the better of two approaches? A detailed critique?
-- Ask *specific questions* that you want feedback about.
-- Provide *context*. Make sure the specific problem and goal is clear.
-- State *where* you want the feedback, if that's not where you're requesting it. Example: you're requesting feedback in Slack but state that you want comments in a Figma rather than a threaded Slack reply. 
+- Specifically say what _kind_ of feedback you're seeking. A thumbs-up, thumbs-down? A gut call on the better of two approaches? A detailed critique?
+- Ask _specific questions_ that you want feedback about.
+- Provide _context_. Make sure the specific problem and goal is clear.
+- State _where_ you want the feedback, if that's not where you're requesting it. Example: you're requesting feedback in Slack but state that you want comments in a Figma rather than a threaded Slack reply.
 - Seek feedback according to [project roles](#project-roles).
 - After receiving feedback, follow up. Recognize contributions and share how you will move forward.
 
@@ -32,19 +32,6 @@ Keep in mind that providing ongoing feedback is distinct from [disagreeing with 
 ### Great examples of providing feedback
 
 (To be added!)
-
-## Project roles
-
-When a project has multiple stakeholders, it's useful to identify specific levels of participation through project roles. Each project should clearly state who is:
-
-1. **Responsible:** Those who do the work to get things done.
-2. **Accountable:** The individual who is ultimately responsible for the project outcome. There must only be one person in this role.
-3. **Consulted:** Those who are subject matter experts, who are consulted throughout the project through feedback cycles.
-4. **Informed:** Those who are kept up-to-date on the project, but aren't involved in providing feedback while the project is underway.
-
-One person can have multiple roles: someone may be both responsible for delivering on a project, and accountable for its outcome.
-
-By identifying these roles up-front, before a project is underway, the team will have clarity on who to get input from when [making decisions](decisions.md) and what level of participation is expected from each stakeholder.
 
 ## Create a positive environment
 

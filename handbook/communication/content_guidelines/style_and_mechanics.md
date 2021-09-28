@@ -186,7 +186,7 @@ Avoid any instructions or language that requires the user to see the layout or d
 ## Numbers
 
 - Spell out numbers 1-9 except for percentages and ranges.
-- Use numerals for 10 upwards. 
+- Use numerals for 10 upwards.
 - Always use the numeral for ordinals (numbers that tell the position of something in a list).
 
 <div class="usage">
@@ -307,13 +307,16 @@ An en dash is slightly wider than a hyphen (-) but narrower than an em dash (—
 
 ### Money
 
-When writing about US currency, use the dollar sign ($) before the amount. Omit the cents. Do not insert a space between the dollar sign and the number.
+When writing about US currency, use the dollar sign ($) before the amount. Prefer to omit the cents. Use commas to separate thousands, and when unavoidable, a period to separate the cents. Do not insert a space between the dollar sign and the number.
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
 <li>$10</li>
+<li>$42</li>
+<li>$1,500</li>
+<li>$149.99</li>
 </ul>
 </div>
 <div class="item no">
@@ -321,6 +324,8 @@ When writing about US currency, use the dollar sign ($) before the amount. Omit 
 <ul>
 <li>$10.00</li>
 <li>$ 42</li>
+<li>$1500</li>
+<li>$149,99</li>
 </ul>
 </div>
 </div>
@@ -366,13 +371,20 @@ Use shorthand suffixes for shortening numbers in the thousands (`k`), millions (
 
 ### Telephone numbers
 
-Use dashes without spaces between numbers. Don’t use a country code.
+Use the country code, prefixed with `+`, without a space. Use spaces between sets of numbers for readability. The number of digits in each set of numbers may <a href="https://en.wikipedia.org/wiki/National_conventions_for_writing_telephone_numbers" target="_blank">differ by country</a>.
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>123-456-7890</li>
+<li>+1 123 456 7890</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>123 456 870</li>
+<li>1-123-456-789</li>
 </ul>
 </div>
 </div>
@@ -482,13 +494,20 @@ Prefer the Oxford or serial comma when writing a list.
 
 ### Dashes and hyphens
 
-Use a hyphen (-) without spaces before and after to link words into a single phrase.
+Use a hyphen (-) without spaces before and after to link words into a single phrase. This is only necessary where the phrase appears in front of a noun to describe it (acting as an adjective).
 
 <div class="usage">
 <div class="item yes">
 <h5>Yes</h5>
 <ul>
-<li>First-time resources</li>
+<li>Our short-term plan is to...
+</li>
+</ul>
+</div>
+<div class="item no">
+<h5>No</h5>
+<ul>
+<li>In the short-term, we will work on...</li>
 </ul>
 </div>
 </div>
@@ -698,16 +717,16 @@ A common error when writing questions is not constructing the sentence as a ques
 
 We describe ourselves with a few different names depending on context, and we should use the right term at the right time.
 
-- **Sourcegraph**: Main product. Prefer using this name unless you need to be more precise.
-- **Self-hosted Sourcegraph instance or Sourcegraph Server**: The self-hosted Sourcegraph instance maintained by customers. Only if clarification between Sourcegraph Cloud, managed instances, and on-premises instances is required.
-- **Managed Sourcegraph instance**: A fully isolated Sourcegraph Server deployment maintained by the Sourcegraph team for a customer. Only use if clarification between the Sourcegraph Cloud instance, self-hosted instances, and managed instances is required.
-- **Sourcegraph Cloud**: The public instance of Sourcegraph for open source code at [sourcegraph.com](https://sourcegraph.com).
+- **Sourcegraph**: Main product. This name is always preferred unless you need to clarify between the 3 deployment methods for Sourcegraph below.
+- **Sourcegraph self-hosted**: On-premises and self-managed version of Sourcegraph.
+- **Sourcegraph cloud**: This is the cloud instance of Sourcegraph at [sourcegraph.com](https://sourcegraph.com), used both for open source search as well as individual accounts for connecting public or private code.
+- **Managed Sourcegraph instance**: Private Sourcegraph instances managed and provisioned by the Sourcegraph team.
 - **Sourcegraph integrations**: The general term for our integrations. When referencing specific integrations:
-    - Sourcegraph(’s) Phabricator integration
-    - Sourcegraph(’s) GitHub integration
-    - Sourcegraph(’s) browser extensions
-    - Sourcegraph(’s) Chrome extension
-    - Sourcegraph(’s) Firefox add-on
+  - Sourcegraph(’s) Phabricator integration
+  - Sourcegraph(’s) GitHub integration
+  - Sourcegraph(’s) browser extensions
+  - Sourcegraph(’s) Chrome extension
+  - Sourcegraph(’s) Firefox add-on
 - **Sourcegraph OSS**: When referring to the build result of the open source repository.
 
 You don't need to use the full name of the product each time you refer to it, but don't use a shortened name that could be confused with an official name.
@@ -749,9 +768,9 @@ Only use _we_ and _our_ (as in “our GitHub integration”) in informal documen
 
 ### Product names
 
-We capitalize product names. Qualify product names with `Sourcegraph $FEATURE` on first reference. Don't capitalize product names when referencing them generically or in context of taking an action. 
+We capitalize product names. Qualify product names with `Sourcegraph $FEATURE` on first reference. Don't capitalize product names when referencing them generically or in context of taking an action.
 
-List of product names: 
+List of product names:
 
 - Batch Changes
 - Code Insights
@@ -781,7 +800,7 @@ List of product names:
 
 ### Feature names
 
-We don't capitalize features or integrations. 
+We don't capitalize features or integrations.
 
 <div class="usage">
 <div class="item yes">
@@ -835,7 +854,6 @@ Refer to the natural noun of the product or feature directly.
 </ul>
 </div>
 </div>
-
 
 ## Writing about people
 

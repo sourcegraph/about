@@ -36,7 +36,7 @@ Everyone at Sourcegraph has the power and the responsibility to improve Sourcegr
 
 A few examples of how we encourage high agency are by being a [handbook-first](https://about.sourcegraph.com/handbook/usage#why-handbook-first) company, which allows anyone to change how the business operates, and by empowering engineers to spend time on projects they believe in through our policy of [innovation time](https://about.sourcegraph.com/handbook/engineering#innovation-time).
 
-With agency comes responsibility; teammates are expected to take initiative and engage in collaboration when exercising their agency. If you feel that something is important, then advocate for it or [make a decision](../communication/decisions.md)! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team. Do not ever assume or wait for top-down change. If something is broken for you or your team, then fix it for you or your team, and then share  that fix in case other individuals or teams have the same problem.
+With agency comes responsibility; teammates are expected to take initiative and engage in collaboration when exercising their agency. If you feel that something is important, then advocate for it or [make a decision](../communication/decisions.md)! If you feel like you're using the wrong tools for the job or doing the wrong thing, then you're responsible for quickly voicing that concern, and engaging with your teammates to find the solution that is the best for the team. Do not ever assume or wait for top-down change. If something is broken for you or your team, then fix it for you or your team, and then share that fix in case other individuals or teams have the same problem.
 
 While [decisions should be made eagerly](../communication/decisions.md), this doesn't mean that you should make unilateral decisions when others should be involved. As an [open company](index.md#open-company), we value open discussion on important topics, and think that collaboration should be a large part of making things better. It is not a bad outcome if your proposal is not accepted or replaced with a better solution, because you took the initiative, started the conversation, and either reaffirmed that our current solution is good, or implemented an even better one! We're a startup, and if we take the safe path, we will most likely fail.
 
@@ -77,11 +77,11 @@ Being open and transparent builds trust with our customers and within our team. 
 
 We favor transparency by default. There are multiple levels of transparency, and we always strive to be the most transparent that we can be for a given piece of information.
 
-| Level of transparency | Description | Channels | Examples |
-|---|---|---|---|
-| Public | Anyone outside of Sourcegraph can access this information. **This is the default level of transparency.** | [Handbook](../index.md), [code](https://github.com/sourcegraph/sourcegraph), [issues](https://github.com/sourcegraph/sourcegraph/issues), public Google Docs such as [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs) | Goals, plans, all code, product docs, dev docs, company docs |
-| Internal to Sourcegraph | Information that is not public for specific reasons, but is shared with Sourcegraph teammates. | Public Slack channels, Google Docs accessible to everyone at Sourcegraph, internal [Google Groups](https://groups.google.com/all-groups) | Board slides, company financial info, customer information, open security investigations |
-| Private | Information that is neither public nor internal to Sourcegraph for specific reasons, but is shared only with a specific set of people. | Private Slack channels or DMs, private Google Docs, private emails | Feedback, compensation, and personal information of teammates and candidates |
+| Level of transparency   | Description                                                                                                                            | Channels                                                                                                                                                                                                                               | Examples                                                                                 |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Public                  | Anyone outside of Sourcegraph can access this information. **This is the default level of transparency.**                              | [Handbook](../index.md), [code](https://github.com/sourcegraph/sourcegraph), [issues](https://github.com/sourcegraph/sourcegraph/issues), public Google Docs such as [RFCs](https://about.sourcegraph.com/handbook/communication/rfcs) | Goals, plans, all code, product docs, dev docs, company docs                             |
+| Internal to Sourcegraph | Information that is not public for specific reasons, but is shared with Sourcegraph teammates.                                         | Public Slack channels, Google Docs accessible to everyone at Sourcegraph, internal [Google Groups](https://groups.google.com/all-groups)                                                                                               | Board slides, company financial info, customer information, open security investigations |
+| Private                 | Information that is neither public nor internal to Sourcegraph for specific reasons, but is shared only with a specific set of people. | Private Slack channels or DMs, private Google Docs, private emails                                                                                                                                                                     | Feedback, compensation, and personal information of teammates and candidates             |
 
 Being transparent by default is hard.
 
@@ -109,5 +109,20 @@ Our code and PRs are public, so lack of transparency is only obfuscation, not se
 
 ### Continuously grow
 
-You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
+You strive to continuously grow and learn.
 
+- You genuinely solicit feedback early and often.
+- You humbly reflect on past mistakes.
+- You actively seek out learning opportunities instead of avoiding them.
+- You identify gaps in knowledge and share them openly and honestly.
+
+Here are some ways that we support learning, teaching, and knowledge-sharing at Sourcegraph:
+
+- We aim to provide a high-quality [onboarding experience](../people-ops/onboarding/index.md) for new teammates by providing them with the learning materials and guidance they need to get started.
+- We have an [education budget](../people-ops/travel.md#professional-development-and-education) for professional development. This budget is dedicated to helping teammates expand their knowledge, whether it's through books, courses, training, or other resources.
+- We organize occasional hackathons internally, which are opportunities to learn, experiment, and share knowledge.
+- Product and Engineering teams host regular [Demo days](../product/demo_day.md) in which we share progress and learn from each other.
+- We teach each other new things in [Brain food sessions](../communication/index.md#brain-food)
+- We encourage self-directed growth.
+- We strive to support teammates who are interested in making career changes by [switching teams or roles.](../people-ops/switching-teams.md)
+- We have a framework for supporting [early-career engineers](../engineering/hiring/early-career-engineers.md).

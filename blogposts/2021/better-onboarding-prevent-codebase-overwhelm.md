@@ -1,6 +1,6 @@
 ---
-title: "Better onboarding: How to prevent codebase overwhelm"
-description: "A data-driven look at how the rise in code complexity affects new developers joining a team, and how engineering managers can support new hires with better onboarding."
+title: 'Better onboarding: How to prevent codebase overwhelm'
+description: 'A data-driven look at how the rise in code complexity affects new developers joining a team, and how engineering managers can support new hires with better onboarding.'
 author: Patricia No
 authorUrl:
 publishDate: 2021-04-29T18:00+02:00

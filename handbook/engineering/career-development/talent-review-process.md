@@ -22,7 +22,7 @@ Less frequent than quarterly raises the stakes too high: “I just started this 
 
 Prior to the calibration meeting, each <a href="../roles#engineering-manager"><abbr title="Engineering Manager">EM</abbr></a> should evaluate each <a href="../roles#software-engineer"><abbr title="Individual Contributor">IC</abbr></a> reporting to them using the [level descriptions](framework.md#levels) and determine if they are meeting/exceeding/struggling-to-meet the expectations of their given level. EMs should prepare a _short_ statement to justify this, which they will share during the calibration meeting. If they believe the IC to be performing at a higher level, they should also ensure that the IC is meeting the expectations for that higher level, as well as write up a brief promotion pitch. (Note that compensation increases within a level, such as from the start of the compensation band to the midpoint, do not need to go through this process; those can happen any time and are between the EM and their <a href="../roles#director-of-engineering">director</a> to decide.)
 
-This pre-work is greatly aided by [360º feedback](../../people-ops/review-cycles/index.md), so we schedule the talent review accordingly. (Since we do 360º feedback every 6 months, it would only be available for every other talent review.)
+This pre-work is greatly aided by [Impact review cycles](../../people-ops/impact-reviews.md), so we schedule the talent review accordingly. (Since we do 360º feedback every 6 months, it would only be available for every other talent review.)
 
 Because of the quarterly cadence, it’s important that this be as light-weight as possible. The pre-work should take an EM less than an hour per IC not being pitched for a promotion. (For ICs being pitched, the cadence isn’t a consideration: an EM will have the same number of promotion pitches to make regardless of cadence. More frequent evaluations means fewer pitches per talent review.)
 
@@ -42,52 +42,39 @@ This is done for each of our engineering levels.
 
 ## After the meeting
 
-Decisions regarding promotions are prioritized by the relevant decision-makers (EM, Director, VP), and made quickly. Promotions are communicated back to the ICs in a timely manner. Regardless of promotions, any qualitative feedback for an IC that came out of talent review is shared with them in their next one-on-one (if not sooner).
+Any qualitative feedback for an IC that came out of talent review is shared with them in their next one-on-one (if not sooner).
 
+For ICs being considered for promotion their manager will complete a [promotion request](#promotion-requests).
 It’s important that this process moves quickly! If we leave people wondering for a month or more if they will be getting a promotion, we’re creating needless anxiety and uncertainty.
 
 Finally, we should have a [retrospective](../../retrospectives/index.md) after each of these, so we can continue iterating and improving upon this process. We should also consider changes/clarifications to the [level descriptions](framework.md#levels) at this time, in case any of the existing definitions were cause for confusion.
 
 ## Levels
 
-#### Structure of the levels
+Our [career development framework](framework.md) defines the levels that exist at Sourcegraph. Compensation for each of these levels is derived from Option Impact, a startup compensation tool that Sourcegraph and many other companies use to determine their compensation bands.
 
-We have 7 levels for software engineers at Sourcegraph, derived from Option Impact, a startup compensation tool that Sourcegraph and many other companies use to determine their compensation bands. For each of these, we have a corresponding level description.
+## Promotion requests
 
-The structure of a level description is in three parts, for each of our evaluation categories (listed below). For each category, we include a summary statement and several _examples_ of the kinds of behaviors we expect of someone at that level. (Note that these are neither necessary nor sufficient for promotion: these are not checkboxes. Rather, they serve to illustrate the magnitude of impact that we are looking for in each of the categories.)
+Promotion requests are made immediately following the [talent review callibration meeting](#calibration-meeting).
 
-The level descriptions correspond to the start of the level, so that if an IC has a level N impact in all categories, they should then be promoted to level N (and not before). Or to put it another way, the level descriptions state the minimum expectations.
+The Engineering Manager will complete a promotion request using the [promotion request template](https://docs.google.com/document/d/1DHyPtIooi0J2426iemzzTqLle9UBasrqLZPGET1O7Sc/edit) and submit it for approval.
 
-#### Research
+Following approval from the relevant decision-makers (EM, Director, VP), the promotion request is forwarded to the relevant teammates in PeopleOps (refer to [People Ops Communications Matrix](https://docs.google.com/spreadsheets/d/1JItBWbfKV9lr-LAmE19I0JMvu3Cvh0AdrEHDv-r1E2w/edit#gid=0)) for confirmation. Once confirmed by PeopleOps the promotion can be communicated to the teammate using the [promotion confirmation template](https://docs.google.com/document/d/1mkdJI6cSXWIHthSN_KQKBFSfxs9RQUg_4VCvwmk8FJQ/edit).
 
-We consulted a variety of sources to determine our levels, and [summarized our findings here](https://docs.google.com/document/d/1Vqpks_iZLalGwbcTFHQcQs3xnjZtGxX_azH063aulOg/edit#).
+Decisions regarding promotions are prioritized by the decision-makers, and made quickly. Promotions are communicated back to the ICs in a timely manner.
 
-#### Evaluation categories
-
-Each level definition is composed of three categories, each with a summary statement and several example behaviors.
-
-The categories we use are:
-
-- Proficiency
-- Execution
-- Teamwork
-
-#### Level descriptions
-
-The levels are [defined in our career development framework](framework.md). In most cases, a level builds on the criteria from the preceding level: someone at level 2 must also meet the criteria for level 1.
-
-In addition to what is listed there, we expect engineers at all levels to exhibit [our values](../../company/values.md).
-
-These are the expectations for ICs _after they have completed their onboarding_. Some of these expectations (such as around communication) would start on day 1, but others (such as expertise in the codebase) would not be expected until they are fully ramped up.
-
-Rather than precede each bullet point in the level descriptions with “Consistently”, we leave it as implicit.
-
-In line with our ["Continuously grow" company value](../../company/values.md), we expect every engineer to eventually reach at least level 3, spending no more than 2 years at any previous level. It is the responsibility of the EM to track this, and to ensure that ICs are given the support and opportunities needed for career growth.
-
-#### Considerations for promotion
+### Considerations for promotion
 
 Teammates are considered for promotion to a new level when their manager can make the case that they have had at least one quarter of high performance at their current level, and one quarter performing at the next level. We want to avoid situations where someone is promoted to a level in which they struggle to meet expectations.
 
-The engineering levels describe performance expectations in 3 categories. It will be extremely rare for an engineer to be exactly at the same level in all of these categories. Since the levels describe the minimum expectations for each level, an engineer must meet the expectations for all categories before they can be considered for promotion.
+The [engineering levels](framework.md#levels) describe performance expectations in 3 categories. It will be extremely rare for an engineer to be exactly at the same level in all of these categories. Since the levels describe the minimum expectations for each level, an engineer must meet the expectations for all categories before they can be considered for promotion.
 
 This does imply a distinction between _high performance at current level_ vs. _ready for promotion_. A level N engineer who is consistently exceeding level N expectations in some areas, but whom we do not feel would be able to meet level N+1 expectations, should not be promoted (despite their high performance in some areas).
+
+## Compensation increase requests
+
+An in-band compensation increase (while staying at the same level) can happen at any time, in recognition of a teammate exceeding expectations in their current level.
+
+The Engineering Manager will complete a compensation increase request using the [compensation increase request template](https://docs.google.com/document/d/1nWFcPjCNALww3kwzl_1l6Gjhrpsl1QGZCHb0hTEkQxk/edit) and submit it for approval.
+
+After approval from the relevant decision-makers (EM, Director, VP), the compensation increase request is submitted to PeopleOps using the [compensation change form](https://docs.google.com/forms/d/e/1FAIpQLSfeY2P0Fw0vc8HlIa6wDJNKV8AckSLFdKVFdtsS3b2Lw7dPcA/viewform). PeopleOps will confirm to the manager once the compensation increase has been processed and the manager can then proceed with communicating the increase to the teammate using the [compensation increase confirmation template](https://docs.google.com/document/d/1LcAhLAd0irJChW2YGmt7Utikh5Y2W2k949WlCz2p5AE/edit).

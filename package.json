@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "prettier": "prettier --write '**/*.{js,css,scss,ts,tsx,md,html,yml,yaml,json}' --list-different",
+    "prettier-check": "yarn run prettier --write=false"
+  },
+  "devDependencies": {
+    "@sourcegraph/prettierrc": "^3.0.3",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "gatsby": "^3.13.1"
+  }
+}

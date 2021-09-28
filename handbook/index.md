@@ -7,10 +7,12 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Editing the handbook](editing.md)
 - [Handbook usage](usage.md)
 - [Handbook feedback](https://docs.google.com/forms/d/e/1FAIpQLSfb0yU9xmnvK2namuUzUEKbB9IqZlNQF2IWw0OpLsGvBiW2oQ/viewform?usp=sf_link)
+- [What's new in the handbook](https://sourcegraph.com/github.com/sourcegraph/about/-/commits) (or [this search](https://sourcegraph.com/search?q=context:global+repo:^github.com/sourcegraph/about%24+type:diff+rev:main) if you'd like to see diffs)
 
 ## [Company](company/index.md)
 
 - [All-remote](company/remote/index.md)
+- [Asynchronous communication](company/asynchronous-communication.md)
 - [Strategy](company/strategy.md)
 - [Goals](company/goals/index.md)
 - [Team](company/team/index.md)
@@ -32,38 +34,50 @@ The handbook is a living document and we expect every teammate to propose improv
 
 ### [Product](product/index.md)
 
-- [Direction (2020 product strategy)](direction/index.md)
+- [Direction](direction/index.md)
 - [Product](product/index.md)
   - [Product Management](product/product_management/index.md)
   - [Product Design](product/design/index.md)
 
 ### [Engineering](engineering/index.md)
 
-<!-- When updating the engineering team list below, please also update company/team/org_chart.md. -->
+<!-- When updating the engineering team list below, please also update engineering/eng_org.md -->
 
-- [Engineering](engineering/index.md)
-  - [Batch Changes](engineering/batch-changes/index.md)
-  - [Core application](engineering/core-application/index.md)
-  - [Code intelligence](engineering/code-intelligence/index.md)
-  - [Distribution](engineering/distribution/index.md)
-  - [Search](engineering/search/index.md)
-  - [Security](engineering/security/index.md)
-  - [Developer Insights](engineering/developer-insights/index.md)
-     - [Code insights](engineering/developer-insights/code-insights/index.md)
-     - [Extensibility](engineering/developer-insights/extensibility/index.md)
-     - [Frontend platform](engineering/developer-insights/frontend-platform/index.md)
-     - [API docs](engineering/developer-insights/api-docs/index.md)
+<!-- Our markdown renderer is not spec-compliant and needs 4 spaces of indentation for nested lists, therefor we need to prettier-ignore. -->
+<!-- prettier-ignore -->
+- [Engineering](./engineering/index.md)
+    - [Code graph](./engineering/code-graph/index.md)
+      - [Search core](./engineering/code-graph/search/core.md)
+      - [Search product](./engineering/code-graph/search/product.md)
+      - [Code intelligence](./engineering/code-graph/code-intelligence/index.md)
+      - [Batch Changes](./engineering/code-graph/batch-changes/index.md)
+      - [Code insights](./engineering/code-graph/code-insights/index.md)
+    - Enablement
+      - Repository management
+      - Delivery
+      - Developer experience
+      - [Frontend platform](./engineering/enablement/frontend-platform/index.md)
+    - Cloud
+      - [Growth](./engineering/cloud/growth/index.md) (includes API docs)
+      - [Security](./engineering/cloud/security/index.md)
+      - [DevOps](./engineering/cloud/devops/index.md)
+      - [SaaS](./engineering/cloud/saas/index.md)
 
 ### [Customer Support](support/index.md)
 
 ### [Customer Engineering](ce/index.md)
 
 ### [Marketing](marketing/index.md)
-- [Product Marketing](marketing/product_marketing.md)
+
+- [Product Marketing](marketing/product-marketing/index.md)
 - [Content Marketing](marketing/content/index.md)
-- [Demand Gen](marketing/demandgen.md)
+  - [Editorial](marketing/content/editorial.md)
+  - [Creating and editing blog posts](marketing/content/creating_blog_posts.md)
+  - [Blog Hackathon](marketing/content/blog_hackathon.md)
+- [Demand Gen](marketing/demand-gen/index.md)
 - [Developer Education](marketing/education.md)
 - [Brand](marketing/brand/index.md)
+- [Community Relations](marketing/community_relations.md)
 
 ### [Sales](sales/index.md)
 

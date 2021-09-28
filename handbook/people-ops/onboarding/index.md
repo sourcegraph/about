@@ -1,10 +1,17 @@
 # Onboarding
 
-Welcome to Sourcegraph! We are so excited to have you on the team. This page outlines what you'll need to do to get started.
+Welcome to Sourcegraph! We are so excited you are part of the team or considering it. This page outlines what you'll need to do to get started.
 
+In order for us to create a beter onboarding experience for new teammates we have defined dates for people to start. You can check out our [New Cohort calendar](https://calendar.google.com/calendar/u/0?cid=Y182OTdwMnZyMnA3cmJnYzNrMTRiODAwc2gxZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t). _If you are planning to join us and these dates don't work for you, please contact the Talent team and let them know your situation._
+
+New teammates are paired with someone to connect that can share their experiences and advice to help make their transition a little smoother. You can read more about the [Onboarding buddy program here](./buddy-program.md)
+
+### Links of interest
+
+- [Onboarding process for Hiring Managers](onboarding-for-hiring-managers.md) page.
+- Cohort calendar ([2021](https://docs.google.com/spreadsheets/d/1jJY3E7j31ZD7J-ouf3Gf-uioHCAXxe-0bBVLEmdtVGQ/edit#gid=0) & [2022](https://docs.google.com/spreadsheets/d/1Q_h9I0CkppecPNbaMlhe7uafcNdfzWuiPApm0KxTaAA/edit#gid=0) start dates)
 - [Onboarding buddy program](./buddy-program.md)
-
-For Hiring Managers, visit the [Onboarding process for Hiring Managers](onboarding-for-hiring-managers.md) page.
+- [Onboarding Feedback Milestones](https://about.sourcegraph.com/handbook/people-ops/onboarding/onboarding-feedback-milestones)
 
 ## Guiding principles
 
@@ -23,19 +30,22 @@ Never assume that a problem is somebody else's to fix!
 ## Onboarding standards and success
 
 ### Onboarding expectations
+
 This is a basic breakdown of our expectations for providing a smooth onboarding process:
 
 - New teammate has the tools and resources they need to navigate their day to day (accounts, software...)
 - New teammate has the necessary support from their peers, manager, and People team (regular 1-1s, shadowing...)
-- New teammate knows where to find answers to their questions 
+- New teammate knows where to find answers to their questions
 - New teammate experiences no logistical challenges (payroll, expenses, benefits, setting up accounts or other systems...)
 - The onboarding checklist is manageable and easy to navigate by new teammates
 - New teammate has the necessary understanding of Sourcegraph's values, products, value proposition, and internal processes to be able to conduct their role's responsibilities
 
 ### Onboarding experience
-Surveys are conducted at the 3-month mark to collect feedback from all new teammates to make sure that their onboarding experience is properly equipping them with the support and resources necessary for them to be successful in their new role. 
+
+Surveys are conducted at the 3-month mark to collect feedback from all new teammates to make sure that their onboarding experience is properly equipping them with the support and resources necessary for them to be successful in their new role.
 
 #### Onboarding content
+
 Survey questions:
 
 - Was there anything that was not provided in your onboarding that you think should have been?
@@ -44,6 +54,7 @@ Survey questions:
 - Did you have the necessary check-ins with your manager and teammates to ask questions, have shadowing sessions, etc?
 
 #### Onboarding format and presentation
+
 Survey questions:
 
 - Was the onboarding platform (Process.st) intuitive and easy to follow?
@@ -51,11 +62,12 @@ Survey questions:
 - Was each task and its purpose communicated clearly?
 
 #### Mid-onboarding check-in
+
 People Ops sets up individual meetings to collect live feedback and address any questions or concerns from every new teammate at the 1-month mark.
 
 ## Onboarding Feedback Milestones
 
-The People Ops team wants to help managers support their teammates better, in order for them to avoid burnout, better clarify expectations, give feedback on progress and stimulate confidence in new teammates in the first few months, thereby enhancing performance and wellbeing. 
+The People Ops team wants to help managers support their teammates better, in order for them to avoid burnout, better clarify expectations, give feedback on progress and stimulate confidence in new teammates in the first few months, thereby enhancing performance and wellbeing.
 
 We also want to support managers in gathering insight of their teammate’s progress and development.
 
@@ -65,9 +77,9 @@ Read about how we do this in [Onboarding Feedback Milestones](https://about.sour
 
 Hiring managers can refer to the [Onboarding process for Hiring Managers](onboarding-for-hiring-managers.md) page.
 
-1. One week prior to your first day, People Ops will send you a welcome email. Be sure to send them your address, phone number, shirt size, photo for your avatar, and for US teammates, the requested documentation.
-1. Order [your computer](../spending-company-money.md#computers).
-1. Order the [desk equipment](../spending-company-money.md#desk-set-up) you need to be productive working remotely.
+1. Once you sign your contract, the Talent team will send you a welcome email linking you to a pre-onboarding form. Be sure to complete the form in time.
+1. Order [your computer](../../ops/finance/spending-company-money.md#computers) or talk to Inés Roitman, [ines@sourcegraph.com](mailto:ines@sourcegraph.com), if you need to get it with the company card.
+1. Order the [desk equipment](../../ops/finance/spending-company-money.md#desk-set-up) you need to be productive working remotely.
 
 You will be able to submit an expense reimbursement for the computer and desk equipment when you start.
 
@@ -80,6 +92,7 @@ See [General onboarding checklist](general_onboarding.md).
 - [Engineers](../../engineering/onboarding.md)
 - [Customer Engineers](../../ce/onboarding.md)
 - [Customer Support Engineers](../../support/customer-support-onboarding.md)
+- [Customer Support Managers](../../support/customer-support-manager-onboarding.md)
 - [Sales team](../../sales/onboarding/index.md)
 - [Product team](../../product/onboarding/index.md)
 - [Business Operations & Strategy](../../ops/bizops/onboarding.md)
