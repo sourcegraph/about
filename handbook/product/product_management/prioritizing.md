@@ -31,7 +31,10 @@ Revenue is important to us as a company because, without revenue, we don't have 
 - How does this feature fit into our pricing model? Are parts of it free and paid and, if so, what is the upgrade path?
 - Are there other things we should consider doing that would have a bigger impact on the business instead?
 
-All of this is not to say that we don't prioritize features that drive monthly active users, or that we are myopically focused on driving revenue up. It's just that we are stewards of the business, and none of us would be here without building a solid, profitable business. To do so we mindfully balance revenue growth with user growth and features users immediately need with innovation in the future, and by ensuring that considering revenue implications is part of our prioritization process.
+All of this is not to say that we don't prioritize features that drive monthly active users, or that we are myopically focused on driving revenue up. It's just that we are stewards of the business, and we want to build a long-term sustainable business and this requires making investments, experiments, and bets that we think will drive future revenue. Not all bets and experiments will be successful, and that is ok! What is important is that:
+
+1. We continue making bets like these
+1. These bets are prioritized and staffed proportionally to the opportunity (they shouldn't disproportionally take resources away from other things that are more likely/guaranteed to yield revenue on shorter time horizons).
 
 ## Prioritizing bug fixes and small tasks
 
