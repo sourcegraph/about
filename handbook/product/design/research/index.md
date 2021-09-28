@@ -26,7 +26,7 @@ When moderated user testing is valuable, we use [LookBack](../tools/index.md#pro
 
 It can be beneficial to see how other tools and platforms are solving parallel problems. We usually collect and store screenshots and references in artifacts like RFCs and the Research layer in Figma projects. We also have [Styleboards in Figma](https://www.figma.com/files/project/10712517/Styleboards?fuid=1011662758768504201) for collecting inspiration for product areas.
 
-### Existing user research
+### Existing user feedback
 
 Our users are passionate and provide excellent, regular feedback that we keep in tools like [Productboard](https://sourcegraph.productboard.com/).
 
