@@ -82,7 +82,7 @@ Vanesa recommends the four-day work week to everyone, but especially to primary 
 
 > “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would mind.” - TJ DeVries, software engineer
 
-TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. 
+TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy.
 
 ![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4_day_work_week_highres.png)
 
