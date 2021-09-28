@@ -2,12 +2,12 @@
 
 **Quickstart**
 
-- Create a new RFC
-  - **The default format** — [View](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/edit) or [Duplicate](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/copy)
-  - **Framing problems, proposing solutions, and making decisions** — [View](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/edit) or [Duplicate](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/copy)
-  - **Surfacing a tension** — [View](https://docs.google.com/document/d/1__E9bzW9eV7pnzhGfs4f_bOqWefYZKzI-m0rWrZ8nF4/edit) or [Duplicate](https://docs.google.com/document/d/1__E9bzW9eV7pnzhGfs4f_bOqWefYZKzI-m0rWrZ8nF4/copy)
-  - **Proposal for adding data to pings** — [View](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/edit) or [Duplicate](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/copy)
-  - **Proposing process / handbook changes** — [View](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/edit) or [Duplicate](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/copy)
+- Create a new RFC:
+  - The default format — [View](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/edit) or [Duplicate](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/copy)
+  - Framing problems, proposing solutions, and making decisions — [View](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/edit) or [Duplicate](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/copy)
+  - Surfacing a tension — [View](https://docs.google.com/document/d/1__E9bzW9eV7pnzhGfs4f_bOqWefYZKzI-m0rWrZ8nF4/edit) or [Duplicate](https://docs.google.com/document/d/1__E9bzW9eV7pnzhGfs4f_bOqWefYZKzI-m0rWrZ8nF4/copy)
+  - Proposal for adding data to pings — [View](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/edit) or [Duplicate](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/copy)
+  - Proposing process / handbook changes — [View](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/edit) or [Duplicate](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/copy)
 - [View all public RFCs](https://drive.google.com/drive/folders/1zP3FxdDlcSQGC1qvM9lHZRaHH4I9Jwwa)
 - [View all private RFCs](https://drive.google.com/drive/folders/1KCq4tMLnVlC0a1rwGuU5OSCw6mdDxLuv)
 
@@ -38,11 +38,11 @@ Our goal is for RFCs to be lightweight, low-process, and effortless to create an
 
 ### Use an RFC when…
 
-- You need to surface and communicate around a highly cross-functional decision [formal decision-making process](../decisions.md).
 - You want to frame a problem and propose a solution.
 - You want thoughtful feedback from team members on our globally-distributed remote team.
 - You want to surface an idea, tension, or feedback.
 - You want to define a project or design brief to drive project collaboration.
+- You need to surface and communicate around a highly cross-functional decision [formal decision-making process](../decisions.md).
 
 ### Don’t use an RFC when…
 
@@ -116,7 +116,7 @@ If you find that a new format works well for achieving a distinct goal and could
 
 The default format has just the required attributes and can be used as the starting point for any RFC.
 
-[Get the template](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/edit?usp=sharing) →
+[Get the template](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/edit) • [Duplicate](https://docs.google.com/document/d/1VV0ddLmMrcU2IWo_s4xm8Q8UtGnreyuhIRPJY0Dh5NI/copy)
 
 ### Goal: Framing problems, proposing solutions, and making decisions
 
@@ -133,7 +133,7 @@ In this format, we find it helpful to include:
 - **Proposed solution** (optional): A description of how to solve the problem. It’s okay to skip this section if you just want to define a problem. Otherwise, it can be helpful for thinking of solutions or to hand off ownership to someone else.
 - **Definition of success**: How do we know if this proposal was successful? Are there any metrics we need to start tracking?
 
-[Get the template](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/edit?usp=sharing) →
+[Get the template](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/edit) • [Duplicate](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/copy)
 
 ### Goal: Surfacing a tension
 
@@ -149,7 +149,7 @@ In this format, we find it helpful to include:
 - **My Proposal**: Make it actionable—small as a first step, as specific as how you will do it and who helps you. Make it good enough for now, and safe enough to try.
 - **What Happens if We Do Nothing**: How might this become “big” if we do nothing, and what consequences will that have?
 
-[Get the template](https://docs.google.com/document/d/1__E9bzW9eV7pnzhGfs4f_bOqWefYZKzI-m0rWrZ8nF4/edit?usp=sharing) →
+[View the template](https://docs.google.com/document/d/1__E9bzW9eV7pnzhGfs4f_bOqWefYZKzI-m0rWrZ8nF4/edit) • [Duplicate](https://docs.google.com/document/d/1__E9bzW9eV7pnzhGfs4f_bOqWefYZKzI-m0rWrZ8nF4/copy)
 
 ### Goal: Proposal for adding data to pings
 
@@ -164,7 +164,7 @@ In this format, we include:
   - The exact questions you’re trying to answer with this new data, and why existing data can’t answer those questions
   - What the JSON payload looks like once those data fields are added
 
-[Get the template](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/edit?usp=sharing) →
+[Get the template](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/edit) • [Duplicate](https://docs.google.com/document/d/1dbR2ir-gKmpGRgnNphk6SxOkt1DNSCX2pjbOiPtcFBw/copy)
 
 ### Goal: Proposing process / handbook changes
 
@@ -180,7 +180,7 @@ In this format, we find it helpful to include:
 
 This format helps us to keep the handbook our source of truth and makes the next step after approval very clear: just merge the PR.
 
-[Get the template](https://docs.google.com/document/d/1zInJ9mn_SePKjS8dLHS1EDt2_gUEkCKD544bDDSuJek/edit?usp=sharing) →
+[Get the template](https://docs.google.com/document/d/1zInJ9mn_SePKjS8dLHS1EDt2_gUEkCKD544bDDSuJek/edit) • [Duplicate](https://docs.google.com/document/d/1zInJ9mn_SePKjS8dLHS1EDt2_gUEkCKD544bDDSuJek/copy)
 
 ## External contributors
 
