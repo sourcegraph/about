@@ -1,0 +1,22 @@
+.community-page {
+    &__hero-and-header {
+        background-image: url('/community/hero_illustration.svg'), url('/community/hero_background.png');
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto 35%, 100% 100%;
+        background-position: center right 5%, top left;
+        /* Landscape phones and portrait tablets */
+        @media (max-width: 767px) {
+            background-image: url('/community/hero_background.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: top left;
+        }
+    }
+}
+.cheatsheet_img {
+    max-width: 75%;
+}
+
+.sg_champion_img {
+    width: 100%;
+}
