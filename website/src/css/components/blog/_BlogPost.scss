@@ -19,6 +19,7 @@
 
     &__html {
         img,
+        object,
         // Gif-like videos
         video[autoplay][loop][muted]:not([controls]) {
             width: 75%;
@@ -29,12 +30,30 @@
             border-style: none;
             height: auto; // Allow providing the media width and height as HTML attributes for aspect-ratio calculation to avoid layout shift
             aspect-ratio: attr(width) / attr(height);
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
         }
 
         table,
         video-embed,
         .gatsby-highlight {
             margin: 3rem auto;
+        }
+
+        figcaption {
+            margin-top: 2rem;
+            text-align: center;
+            font-style: italic;
+        }
+
+        // Make sure margin for figures with caption is applied after the caption, not before.
+        figure > :is(img, object, video) {
+            margin-bottom: 0;
+        }
+        figure {
+            margin-bottom: 3rem;
         }
     }
 }
