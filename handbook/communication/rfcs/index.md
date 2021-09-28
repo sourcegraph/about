@@ -1,4 +1,4 @@
-# Requests for Comments (RFCs)
+# Requests for comments (RFCs)
 
 We use RFCs to collaborate successfully as an [all-remote](../../company/remote/index.md) team.
 
@@ -25,7 +25,7 @@ Our goal is for RFCs to be lightweight, low-process, and effortless to create an
 
 ### Use an RFC when…
 
-- You want to drive a decision using our [formal decision-making process](../decisions.md).
+- You need to surface and communicate around a highly cross-functional decision [formal decision-making process](../decisions.md).
 - You want to frame a problem and propose a solution.
 - You want thoughtful feedback from team members on our globally-distributed remote team.
 - You want to surface an idea, tension, or feedback.
@@ -34,6 +34,7 @@ Our goal is for RFCs to be lightweight, low-process, and effortless to create an
 ### Don’t use an RFC when…
 
 - You want to discuss personal or sensitive topics one-on-one with another team member.
+- You want to [make a decision](../decisions.md) to change something where you are the decider. In the vast majority of cases, creating an RFC to explain yourself will be overkill. RFCs should only be used if a decision explicitly requires one of the bullets in the section above.
 
 ## How we craft RFCs
 
@@ -55,7 +56,7 @@ We have a set of status labels we’ve found helpful in the past:
 - **Closed**: When the RFC is for the purpose of collaboration or discussion but not necessarily to make a decision or propose a specific outcome that will eventually become Implemented, the Closed label indicates that the RFC is no longer an active collaborative artifact.
 - **Abandoned**: When the RFC is for the purpose of making a decision, and there are no plans to move forward with the RFC’s proposal, the Abandoned label indicates that the RFC has been purposefully set aside.
 
-While these labels suggest that RFCs move through series of prescribed stages, this isn’t always the case. RFCs are low-process and can be used for all kinds of purposes that may not have an explicit, actionable outcome.
+While these labels suggest that RFCs move through series of prescribed stages, this isn’t always the case. RFCs are low-process and can be used for all kinds of purposes that may not have an explicit, actionable outcome. Ultimately, the RFC itself should make it clear what the status and planned process is.
 
 If in doubt about the current status of an RFC, check the update history and contact the author.
 
@@ -121,9 +122,9 @@ In this format, we find it helpful to include:
 
 [Get the template](https://docs.google.com/document/d/1FJ6AhHmVInSE22EHcDZnzvvAd9KfwOkKvFpx7e346z4/edit?usp=sharing) →
 
-### Goal: Surfacing a Tension
+### Goal: Surfacing a tension
 
-This format is helpful for surfacing a Tension. A Tension is somewhere between a problem, a feeling (of unease), and a person’s (unmet) needs. When Tensions come up, they describe a sense there’s a gap between the current reality and an ideal potential future.
+This format is helpful for surfacing a tension. A tension is somewhere between a problem, a feeling (of unease), and a person’s (unmet) needs. When tensions come up, they describe a sense there’s a gap between the current reality and an ideal potential future.
 
 Tensions are good, because they highlight where things might not be working so well, whether it’s an inefficiency or a blocker. They give us a way to identify them, and then we can then address them and make improvements. Tensions aren’t “problems,” but rather opportunities to grow.
 
