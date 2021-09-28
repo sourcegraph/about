@@ -56,17 +56,16 @@ We believe code search should be universal–meaning it should make the entire u
 - Index the open source code universe
 - Provide access to that universe through our own open source code search software
 
-
 #### Code search should be easy to use
 
-Currently, our search UX has powerful functionality but a high learning curve. Code can be complicated and we'll strive to make the search experience as painless and intuitive as possible so code is approachable for everyone. 
+Currently, our search UX has powerful functionality but a high learning curve. Code can be complicated and we'll strive to make the search experience as painless and intuitive as possible so code is approachable for everyone.
 
 - We must develop and grow a capable, but intuitive, search interface
 
 #### Code search should be accessible
 
 Everyone deserves access to high quality code search; as such, our code search interface should be accessible.
- 
+
 - Ensure this interface is accessible to all skill levels and WCAG compliant
 
 #### Code search should be relevant
@@ -109,8 +108,7 @@ Finally, in continuity with our work in FQ2, and with the goal of making cloud s
 **Search Core**
 
 - 5.5M most popular GitHub.com repos in the Sourcegraph Cloud global index (current: 2.1M)
-- P75 1h literal_* under 1s
-
+- P75 1h literal\_\* under 1s
 
 **Search Product**
 
@@ -122,6 +120,7 @@ Finally, in continuity with our work in FQ2, and with the goal of making cloud s
 ##### Search Contexts
 
 We plan on:
+
 - Sunsetting version contexts as soon as existing customers using them have migrated over to search contexts.
 - Sunsetting repogroups in favour of search contexts.
 
