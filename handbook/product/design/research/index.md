@@ -10,7 +10,7 @@ Some specific methods we use:
 
 When we want to test our ideas using interactive prototypes or even in the product itself, our own team members make great participants. (However, we need to remember that our own team members are generally very experienced in the area of code search, which results in implicit bias that we must account for in synthesis.)
 
-There is a #hallway-testing Slack channel to share information and scout participants for hallway tests. 
+There is a #hallway-testing Slack channel to share information and scout participants for hallway tests.
 
 ### Unmoderated user testing
 
@@ -24,7 +24,7 @@ When moderated user testing is valuable, we use [LookBack](../tools/index.md#pro
 
 ### Competitive and analogous research
 
-It can be beneficial to see how other tools and platforms are solving parallel problems. We usually collect and store screenshots and references in artifacts like RFCs and the Research layer in Figma projects. We also have [Styleboards in Figma](https://www.figma.com/files/project/10712517/Styleboards?fuid=1011662758768504201) for collecting inspiration for product areas. 
+It can be beneficial to see how other tools and platforms are solving parallel problems. We usually collect and store screenshots and references in artifacts like RFCs and the Research layer in Figma projects. We also have [Styleboards in Figma](https://www.figma.com/files/project/10712517/Styleboards?fuid=1011662758768504201) for collecting inspiration for product areas.
 
 ### Existing artifact analysis.
 
