@@ -13,7 +13,8 @@ Each team within our org implements a different _verb_ on the code graph:
 - The [Code Insights team](./code-insights/index.md) enables _measuring_ and _tracking_ the code graph
 - The [Batch Changes team](./batch-changes/index.md) enables _changing_ the code graph
 
-## Useful links 
+## Useful links
+
 - [Product Strategy](../../direction/code-graph)
 
 ## Contact
