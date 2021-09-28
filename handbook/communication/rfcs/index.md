@@ -145,9 +145,9 @@ Many organizations wait until tensions are “big.” But if we identify tension
 
 In this format, we find it helpful to include:
 
-- **My Tension**: Make it personal—share your personal tension and how it affects you in your day-to-day work.
-- **My Proposal**: Make it actionable—small as a first step, as specific as how you will do it and who helps you. Make it good enough for now, and safe enough to try.
-- **What Happens if We Do Nothing**: How might this become “big” if we do nothing, and what consequences will that have?
+- **My tension**: Make it personal—share your personal tension and how it affects you in your day-to-day work.
+- **My proposal**: Make it actionable—small as a first step, as specific as how you will do it and who helps you. Make it good enough for now, and safe enough to try.
+- **What happens if we do nothing**: How might this become “big” if we do nothing, and what consequences will that have?
 
 [View the template](https://docs.google.com/document/d/1__E9bzW9eV7pnzhGfs4f_bOqWefYZKzI-m0rWrZ8nF4/edit) • [Duplicate](https://docs.google.com/document/d/1__E9bzW9eV7pnzhGfs4f_bOqWefYZKzI-m0rWrZ8nF4/copy)
 
