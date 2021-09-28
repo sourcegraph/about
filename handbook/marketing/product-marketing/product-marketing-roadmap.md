@@ -2,7 +2,7 @@
 
 ## What is the product marketing roadmap?
 
-Sourcegraph's Product and Product Marketing teams collaborated on building a roadmap deck that communicates rolling releases in a 6-month outlook. [This resource is available here for Sourcegraph team members](https://docs.google.com/presentation/d/1o3R8WUIhzzRz0x5laTwVcizOzVWrMBe5MCAz74H45Ss/edit?usp=sharing) and covers the new product releases that are coming in the foreseeable future, as well as the value each provides to Sourcegaph customers. **In essence, the product marketing roadmap provides a higher-level perspective for customers on the big problems Souregraph is solving and why and as such, it potentially doesn't cover every specific release Sourcegraph is working on**. 
+Sourcegraph's Product and Product Marketing teams collaborated on building a roadmap deck that communicates rolling releases in a 6-month outlook. [This resource is available here for Sourcegraph team members](https://docs.google.com/presentation/d/1o3R8WUIhzzRz0x5laTwVcizOzVWrMBe5MCAz74H45Ss/edit?usp=sharing) and covers the new product releases that are coming in the foreseeable future, as well as the value each provides to Sourcegaph customers. **In essence, the product marketing roadmap provides a higher-level perspective for customers on the big problems Souregraph is solving and why and as such, it potentially doesn't cover every specific release Sourcegraph is working on**.
 
 Sourcegraph Product teams' direction pages are a public, detailed resource you can look into [here](https://about.sourcegraph.com/handbook/direction#per-area-direction-pages). These pages outline individual product areas' goals and roadmaps that are aligned to the company OKRs, Sourcegraph direction, and overall product strategy.
 
