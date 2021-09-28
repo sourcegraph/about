@@ -92,7 +92,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <p>
                             Or if you know someone that should be a Sourcegraph Champion, please{' '}
-                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them.</a>.
+                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them</a>.
                         </p>
                     </div>
                     <div className="col-lg-6">
@@ -152,9 +152,6 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                                 </li>
                                 <li>
                                     <a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13
-                                </li>
-                                <li>
-                                    <a href="https://reinvent.awsevents.com/">AWS re:Invent</a> - 11/29 - 12/03
                                 </li>
                                 <li>
                                     <a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8
