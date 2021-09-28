@@ -92,7 +92,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <p>
                             Or if you know someone that should be a Sourcegraph Champion, please{' '}
-                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them.</a>.
+                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them</a>.
                         </p>
                     </div>
                     <div className="col-lg-6">
