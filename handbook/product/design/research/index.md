@@ -24,20 +24,13 @@ When moderated user testing is valuable, we use [LookBack](../tools/index.md#pro
 
 It's worthwhile to see how other tools and platforms are solving parallel problems. We usually keep screenshots and references in artifacts like RFCs and in project Figma files.
 
-### Existing artifact analysis.
+### Existing user research
 
 Our users are passionate and provide excellent, regular feedback that we keep in tools like [Productboard](https://sourcegraph.productboard.com/).
 
 ### Surveys
 
-Qualitative surveys can help designers ask questions at a scale of thousands of respnodants. This can help designers be confident about the results.
-
-# Tools
-
-- Usertesting.com
-- Lookback.io
-- Productboard.com
-- Surveymonkey.com
+Surveys allow researchers to ask questions at a scale that isn't possible with other research methods. Surveys are very useful in validating qualitative findings at much larger scales.
 
 # Publishing results
 
