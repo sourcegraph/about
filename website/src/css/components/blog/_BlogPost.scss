@@ -30,6 +30,10 @@
             border-style: none;
             height: auto; // Allow providing the media width and height as HTML attributes for aspect-ratio calculation to avoid layout shift
             aspect-ratio: attr(width) / attr(height);
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
         }
 
         table,
