@@ -56,16 +56,22 @@ We believe code search should be universal–meaning it should make the entire u
 - Index the open source code universe
 - Provide access to that universe through our own open source code search software
 
-#### Code search should be accessible
 
-Everyone deserves access to high quality code search and quality code search means accessible, easy to use code search. Code can be complicated and we'll strive to make the search experience as painless and intuitive as possible so code is approachable for everyone. Currently, our search UX has powerful functionality but a high learning curve.
+#### Code search should be easy to use
+
+Currently, our search UX has powerful functionality but a high learning curve. Code can be complicated and we'll strive to make the search experience as painless and intuitive as possible so code is approachable for everyone. 
 
 - We must develop and grow a capable, but intuitive, search interface
+
+#### Code search should be accessible
+
+Everyone deserves access to high quality code search; as such, our code search interface should be accessible.
+ 
 - Ensure this interface is accessible to all skill levels and WCAG compliant
 
 #### Code search should be relevant
 
-In order to be useful, search results need to be relevant. Our search results will be the most accurate, relevant, and informative results possible. Our current results ranking is a first pass at ranking and there is room for improvement.
+In order to be useful, search results need to be relevant. Our search results will be the most accurate, relevant, and informative results possible. Our current results ranking is a first pass specifically targeting Cloud. Future work on ranking should also take into account the needs of Enterprise users.
 
 - Develop relevance and ranking capabilities that are accurate, innovative, and market leading
 - ???
@@ -100,18 +106,26 @@ Finally, in continuity with our work in FQ2, and with the goal of making cloud s
 
 #### Goals
 
-Zero enterprise users of version contexts
-Internal & external consumers can rely on advanced search features (predicates, post-processing)
+**Search Core**
+
+- 5.5M most popular GitHub.com repos in the Sourcegraph Cloud global index (current: 2.1M)
+- P75 1h literal_* under 1s
+
+
+**Search Product**
+
+- Zero enterprise users of version contexts
+- Internal & external consumers can rely on advanced search features (predicates, post-processing)
 
 #### Details
 
 ##### Search Contexts
 
-We need to sunset version contexts as soon as existing customers using them have migrated over to search contexts.
-Search contexts replace repogroups.
+We plan on:
+- Sunsetting version contexts as soon as existing customers using them have migrated over to search contexts.
+- Sunsetting repogroups in favour of search contexts.
+
 This cleans up long-standing feature debt in the product.
-It enables us to get rid of legacy repogroup pages on Cloud, possibly in favour of org search contexts (which would be a better fit for communities).
-As a result, this also ties into “Cloud for small teams”, which the Core Application team is planning to work on in Q3.
 
 ##### Code monitoring
 
@@ -122,7 +136,7 @@ Diff/commit search performance is also a pain point for customers on monorepos.
 
 ##### Advanced Search Functionality
 
-We want to extend advanced search functionality, both to service other teams’ needs (RegEx search capture groups, requested by the Code insights team) and to expand the use cases that are uniquely served by Sourcegraph (export results, more convenience search built-ins based on a proven record of delighted users).
+We want to extend advanced search functionality, both to service other teams’ needs (RegEx search capture groups, requested by the Code insights team) and to expand the use cases that are uniquely served by Sourcegraph (export results, more convenient search built-ins based on a proven record of delighted users).
 
 ### Top customer, support, sales and marketing issues
 
@@ -132,6 +146,6 @@ We are planning Slack and webhook integration for Code Monitoring, allowing user
 
 ### What we're not working on & why
 
-- **Slack integration and webhooks:** We’ve had many requests for webhooks to provide notifications when a Code Monitor is triggered. Early research indicates that this may be best provided via a Slack integration (Slack App) for many users, in addition to a webhook for others, but we do not plan to address this directly in Q3.
+- **Slack integration and webhooks for code monitoring:** We’ve had many requests for webhooks to provide notifications when a Code Monitor is triggered. Early research indicates that this may be best provided via a Slack integration (Slack App) for many users, in addition to a webhook for others, but we do not plan to address this directly in Q3.
 - **Better search performance on monorepos:** we are not planning any specific work around search performance on monorepos for Q3.
 - **Improvements to search results ranking:** in Q2 we shipped star ranking, with an escape hatch allowing enterprise customers to specify ranking for (sets of) repositories via a configuration file. We do not anticipate going further with search results ranking in Q3.
