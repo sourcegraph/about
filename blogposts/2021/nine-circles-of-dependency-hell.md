@@ -86,12 +86,11 @@ Version is open to interpretation—a popular Python package, html5lib, previous
 
 What is semantic versioning? From the [Semantic Versioning documentation](https://semver.org/):
 
-
->Given a version number MAJOR.MINOR.PATCH, increment the:
-MAJOR version when you make incompatible API changes,
-MINOR version when you add functionality in a backward-compatible manner, and
-PATCH version when you make backward-compatible bug fixes.
-Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+> Given a version number MAJOR.MINOR.PATCH, increment the:
+> MAJOR version when you make incompatible API changes,
+> MINOR version when you add functionality in a backward-compatible manner, and
+> PATCH version when you make backward-compatible bug fixes.
+> Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
 It’s hard to follow semantic versioning—it takes significant effort to make backward-compatible changes, backward-compatible bug fixes, and to backport security patches to old release numbers. However, following semantic versioning is the best way to spread joy to your downstream users.
 
