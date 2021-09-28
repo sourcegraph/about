@@ -43,8 +43,8 @@ As the last step in this cycle, managers will write their own review for their d
 With any type of review cycle, we know that no cycle is perfect. You may find that the timing intersects with formal upcoming leave that you may have planned. If you have any of these types of leave that you know will intersect with your 2-week Impact review cycle, please email people-ops@sourcegraph.com for an exception:
 
 - Paid time off (PTO)
-- Parental bonding leave 
-- Bereavement leave 
+- Parental bonding leave
+- Bereavement leave
 - A medical leave of absence
 
 ### A note on the "10%" questions:
@@ -71,7 +71,7 @@ The 360 Impact review process covers a few key types of feedback as mentioned ab
 
 - **Self-review:** you will review yourself (during duration of review)
 - **Peer review**: 2-3 stakeholders will review you (2 business days)
-- **Upwards review:** you will review your manager (during duration of review) 
+- **Upwards review:** you will review your manager (during duration of review)
 - **Manager review:** your manager will review you (5 business days)
 
 _Best practice tip: We recognize that to make an impact, you must first develop goals that drive specific outcomes. Engaging in quarterly goal setting in tandem with your Impact reviews will give each teammate direction, certainty, and velocity in prioritizing their goals. If you’d like to create quarterly goals to align with your manager on, use our series of templates in our [Goal setting folder](https://drive.google.com/drive/folders/1EA0uJ5eroG8NMKtv315c5aumFNB1K7AD)._
