@@ -4,7 +4,7 @@ The Delivery team (part of the [Enablement](../index.md) org).
 
 ## Mission
 
-Sourcegraph can be run by any user with a standard engineering background, at any scale, with ease. Configurations to the deployment are simple, easily made, easily updated, and do not complicate upgrades. Sourcegraph is regularly upgraded by the majority of our customers who appreciate the ease of upgrades and are keen to access Sourcegraphs latest updates. Customers are able to self-serve for deploying, upgrading, and troubleshooting deployments of Sourcegraph.
+Enable any Sourcegraph customer or user to trial or run (in production) Sourcegraph in a way fits within their environment, supports their level of technical expertise and allows them to easily access the value that our product provides. Make it as easy as possible to access this value, and to maintain it going forwards by easily staying up to date with Sourcegraph's latest developments.
 
 ## Members
 
@@ -30,7 +30,6 @@ Sourcegraph can be run by any user with a standard engineering background, at an
 - Deployment configuration and configuration orchestration (Kustomize)
 
 Specifically not included:
-
 - The release pipeline that serves sourcegraph.com
 
 ## Contact
@@ -48,7 +47,7 @@ TODO
 
 ## Principles
 
-We inherit Sourcegraph's [engineering principles and practices](https://about.sourcegraph.com/handbook/engineering/principles-and-practices) and [Enablement org's principles and practices](https://about.sourcegraph.com/handbook/engineering/developer-insights#principles-and-practices).
+We inherit Sourcegraph's [engineering principles and practices](https://about.sourcegraph.com/handbook/engineering/principles-and-practices) and [Enablement org's principles and practices](https://about.sourcegraph.com/handbook/engineering/developer-insights#principles-and-practices). 
 
 We also have a set of [guiding principles](direction#guiding-principles) that help inform our decision making about our stretegic and prioritization choices.
 
