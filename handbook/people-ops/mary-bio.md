@@ -4,7 +4,7 @@
 
 I believe that all people are inherently creative, and capable of much more than we think. Our differences are what allows us to work together, and they should be discussed and embraced. I also believe I can learn something from everyone - everybody is a nerd about something, and everybody has something they can talk about for hours, and that’s really cool.
 
-I’m fascinated by how people learn and work differently. I firmly believe that we can all be working smarter, more efficiently, and with more purpose. I like helping people become more efficient, so they can spend more time focusing on their area of expertise.
+I’m fascinated by how people learn and work differently. I firmly believe that we can all be working smarter, more efficiently, and with more purpose. I like helping people become more efficient, so they can spend more time focusing on their areas of expertise.
 
 ### Preferred learning styles
 
