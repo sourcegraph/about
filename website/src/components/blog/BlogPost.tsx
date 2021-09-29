@@ -37,9 +37,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
         <Tag className={`blog-post ${className}`}>
             <header className={headerClassName}>
                 <h1 className={titleClassName}>
-                    <Link to={url} className={`d-block ${titleLinkClassName}`}>
                         {post.frontmatter.title}
-                    </Link>
                 </h1>
                 <p className="blog-post__byline mb-0">
                     {post.frontmatter.author} on {post.frontmatter.publishDate}
