@@ -9,7 +9,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Welcome to Sourcegraph Community',
+            title: 'Welcome to the Sourcegraph Community',
             description:
                 "Sourcegraph is so much more than a universal code search engine. It's the story of new gen-developers who renaissance-d the way we work, live, and collaborate. It's our unparalleled thinking that creates endless possibilities, to rebuild, to disrupt and to innovate relentlessly despite all the complexities of the big code. But we're just getting started. Imagine the road ahead if we take this journey together.",
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
@@ -20,9 +20,9 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                 <div className="row">
                     <div className="col-lg-6 col-md-5 mb-lg-5 mt-6">
                         <div className="text-uppercase">Join us</div>
-                        <h1 className="display-2 font-weight-bold mb-0">Welcome to Sourcegraph community</h1>
+                        <h1 className="display-2 font-weight-bold mb-0">Welcome to the Sourcegraph community</h1>
                         <p className="home__semiwide-paragraph my-5 display-5">
-                            Seek guidance. Share best practices. Ask questions. Sourcegraph Community is your new
+                            Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
                             encourage everyone to learn from each other and share everything they know. Because when we
                             collaborate, we grow faster, better, and stronger.
@@ -71,7 +71,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <div className="col-lg-6">
                         <h1 className="mb-3">Sourcegraph Champions Program</h1>
                         <p>
-                            In the spirit of collaboration, we created Sourcegraph Champions Program to serve the
+                            In the spirit of collaboration, we created the Sourcegraph Champions Program to serve the
                             developer community, create a friendly networking space and share knowledge among each
                             other.
                         </p>
@@ -92,7 +92,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <p>
                             Or if you know someone that should be a Sourcegraph Champion, please{' '}
-                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them.</a>.
+                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them</a>.
                         </p>
                     </div>
                     <div className="col-lg-6">
@@ -152,9 +152,6 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                                 </li>
                                 <li>
                                     <a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13
-                                </li>
-                                <li>
-                                    <a href="https://reinvent.awsevents.com/">AWS re:Invent</a> - 11/29 - 12/03
                                 </li>
                                 <li>
                                     <a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8

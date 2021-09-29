@@ -30,6 +30,8 @@ Revenue is important to us as a company because, without revenue, we don't have 
 - Who is the likely buyer of this feature, and how well does it correlate with our ideal customer profile?
 - How does this feature fit into our pricing model? Are parts of it free and paid and, if so, what is the upgrade path?
 - Are there other things we should consider doing that would have a bigger impact on the business instead?
+- How will the feature convert visitors to users, and what is those user's path to generating revenue?
+- How will you track this funnel?
 
 All of this is not to say that we don't prioritize features that drive monthly active users, or that we are myopically focused on driving revenue up. It's just that we are stewards of the business, and we want to build a long-term sustainable business and this requires making investments, experiments, and bets that we think will drive future revenue. Not all bets and experiments will be successful, and that is ok! What is important is that:
 
@@ -42,11 +44,11 @@ Bugs and issues from customers come up regularly and need to be prioritized. Man
 
 Each team may decide how they would like to keep track of the backlog of issues, whether that is in a kanban board, google doc, etc. Similarly, teams can decide how they would like to allocate resources to this, whether it is having one person working down the backlog each week, or assigning a set of issues to be accomplished within an iteration.
 
-## Prioritizing requests that impact the project roadmap
+## Prioritizing requests that impact the product roadmap
 
 Sometimes, we need to prioritize changes to our product on short notice due to new information we have. This change could be to benefit [customers](../../sales/index.md#customer) or [prospects](../../sales/index.md#prospect), or could be a strategic initiative.
 
-If the requested change is large enough that it would impact the planned [project roadmap](../index.md#roadmap) of one or several [engineering teams](../../engineering/index.md#teams), we should handle its prioritization as follows:
+If the requested change is large enough that it would impact the planned [product roadmap](../index.md#roadmap) of one or several [engineering teams](../../engineering/index.md#teams), we should handle its prioritization as follows:
 
 1. The product manager should contact all relevant [engineering managers](../../engineering/roles.md#engineering_manager), providing the following information in the form of an [RFC](../../communication/rfcs/index.md):
    - Description of the desired functionality.
