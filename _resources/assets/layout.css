@@ -40,6 +40,15 @@
     --sg-action-green: #17ab52;
     --sg-alert-red: var(--sg-red-3);
 
+    /* Gradients */
+    --sg-gradient-aurora: linear-gradient(var(--sg-sky-blue), var(--sg-vivid-violet));
+    --sg-gradient-aquamarine: linear-gradient(var(--sg-sky-blue), var(--sg-blurple));
+    --sg-gradient-infrared: linear-gradient(var(--sg-vivid-violet), var(--sg-vermillion));
+
+    --sg-gradient-mars: linear-gradient(#ffc9c9, #e8d1ff);
+    --sg-gradient-saturn: linear-gradient(#e8d1ff, #c7ffff);
+    --sg-gradient-venus: linear-gradient(#c7ffff, #c4ffe8);
+
     --font-family: 'Source Sans Pro', sans-serif;
     --font-family-code: 'Source Code', monospace;
 

@@ -8,11 +8,15 @@ When I think of demand gen, our job is to amplify a compelling brand and high-va
 
 ### Preferred learning styles
 
-I prefer to take in information verbally (through written or spoken word), process information for myself visually (love a whiteboard or blank sheet of printer paper), and master information physically (by doing or teaching).
+I learn best through repetitive observation. Fun fact: I tie my shoes upside down. I learned to mimic the movements of the folks who tied my shoes for me as a little kid. But, given my vantage point, I learned to repeat them but... backwards. As a learn by observing and doing now, I'm quick to ask clarifying questions and practice reflective listening so I make sure I'm interpreting what I'm seeing and hearing accurately.
 
 ### Communication style
 
 I default to open, direct conversation. It's guaranteed I have a point of view in most situations and I will often share freely. I am conscious of creating space for others to weigh in first as I can easily be the person who is quick to volunteer an answer or opinion. I can be a bit of a Hermione Granger, if you know what I mean.
+
+### How I manage my calendar
+
+A nonlinear workday works best for me. I keep my calendar open for meetings between 11a and 5:30P EST Monday, Tuesday and Thursday and I block my calendar from recurring/pre-scheduled meetings on Wednesdays and Fridays. Beyond dedicated meeting time, I allow my work to flow based on my energy levels, what I feel inspired to do, and (of course) deadlines. If you see me online early or late, please don't interpret that to mean you should be online or repsonsive as well.
 
 ### Preferred way to collaborate
 
