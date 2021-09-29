@@ -151,10 +151,10 @@ _This is just one path for creating a new page in the Handbook. These steps can 
    - Type a short, one-line summary of your change in the first text field (instead of the default `Create filename.md` text).
    - Type a more detailed explanation of your change in the larger text field.
    - Select the **Create a new branch for this commit and start a pull request** option (if it's not already selected).
-    - Name your branch something memorable. You'll need to search for this branch in a future step.
+   - Name your branch something memorable. You'll need to search for this branch in a future step.
    - Press the **Commit changes** button.
 1. Click on the dropdown arrow on the "Create Pull Request" button, and choose "Create Draft Pull Request". This will keep your PR from auto-notifying code owners or reviewers before it's ready. Then, click "Draft Pull Request".
-    -You don't have to create a Draft Pull Request at this point, you can create a regular one. A Draft PR just indicates that you're still working on this change.
+   -You don't have to create a Draft Pull Request at this point, you can create a regular one. A Draft PR just indicates that you're still working on this change.
 1. You'll likely see that the docsite check has failed. Click "Details" on the docsite check line to see more information. If your error says "disconnected page (no inlinks from other pages)", this means you need to create a link into this page. For other failures, see [Handbook Checks](#handbook-checks).
 1. In a new tab, navigate to the page where you want to create a link to your new page.
    -You can do this in the same tab if you'd like, but it may be easier to keep your PR up in its own tab while you do this part.
