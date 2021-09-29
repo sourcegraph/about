@@ -36,9 +36,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
     return (
         <Tag className={`blog-post ${className}`}>
             <header className={headerClassName}>
-                <h1 className={titleClassName}>
-                        {post.frontmatter.title}
-                </h1>
+                <h1 className={titleClassName}>{post.frontmatter.title}</h1>
                 <p className="blog-post__byline mb-0">
                     {post.frontmatter.author} on {post.frontmatter.publishDate}
                 </p>
