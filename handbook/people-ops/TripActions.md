@@ -20,7 +20,7 @@ All Company-sponsored flights will be booked through TripActions. The costs will
 
 ## Hotel Accomodations
 
-All Company-sponsored hotels & lodging (with the exception of Company-wide meetups) will be booked through TripActions. The costs will be added to a Sourcegraph invoice, and no credit card is needed. 
+All Company-sponsored hotels & lodging (with the exception of Company-wide meetups) will be booked through TripActions. The costs will be added to a Sourcegraph invoice, and no credit card is needed.
 
 ## Modes of Transportation
 
