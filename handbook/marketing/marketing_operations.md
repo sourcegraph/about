@@ -56,11 +56,11 @@ Most everyone at the organization has access to Hubspot. If you do not and you w
 
 ### Hubspot Roles
 
-Hubspot Roles have been created to standardize company-wide access, as well as to ensure that all users have appropriate access to Hubspot. Below is an overview of the Roles. Please reach out to [Greg Bouton](mailto:greg.bouton@sourcegraph.com) if you think your role needs to be changed.   
+Hubspot Roles have been created to standardize company-wide access, as well as to ensure that all users have appropriate access to Hubspot. Below is an overview of the Roles. Please reach out to [Greg Bouton](mailto:greg.bouton@sourcegraph.com) if you think your role needs to be changed.
 
 - Super Admin: Unlimited access to our Hubspot instance.
 - Standard Admin: Pared-down admin access to our Hubspot instance. Ability to change Hubspot settings, import data, bulk delete, and edit/delete workflows has been disabled.
-- User - Edit Access: Basic access to our Hubspot instance with added ability to edit objects, export data, create forms/lists/files, read/write ads, campaigns, blogs, landing pages, and URL redirects, and create/edit reports. 
+- User - Edit Access: Basic access to our Hubspot instance with added ability to edit objects, export data, create forms/lists/files, read/write ads, campaigns, blogs, landing pages, and URL redirects, and create/edit reports.
 - User - Read Access: Basic 'read only' access to our Hubspot instance.
 
 As we continue to grow, users will also be added to our Hubspot instance. In order to keep a level of consistency, roles will be automatically assigned to teams. If a member of the team needs to have upgraded access, please reach out to [Greg Bouton](mailto:greg.bouton@sourcegraph.com).
