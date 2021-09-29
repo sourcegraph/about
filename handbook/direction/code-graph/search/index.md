@@ -45,7 +45,7 @@ To deliver on our vision, we will:
 ### Guiding principles
 
 - Code search should be universal
-- Coee search shoudl be easy to use
+- Code search should be easy to use
 - Code search should be accessible
 - Code search should be fast
 - Code search should be relevant
