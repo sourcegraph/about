@@ -30,7 +30,7 @@ Playing an active role in broadening our reach in the community, building authen
 
 ## Code of Conduct
 
-[Code of Conduct](community-code-of-conduct.md)
+[Code of Conduct](https://about.sourcegraph.com/handbook/marketing/community_code_of_conduct.md)
 
 ## Community calendars
 
