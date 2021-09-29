@@ -6,7 +6,8 @@ Quicklinks:
 
 - [Search Product backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fsearch-product/) <!-- Update links with your page -->
 - [Search Core backlog](https://github.com/sourcegraph/sourcegraph/issues?q=is%3Aopen+is%3Aissue+label%3Ateam%2Fsearch-core)
-- [Latest demo](https://about.sourcegraph.com/)
+- [Completed goals](../../../engineering/code-graph/search/goals_completed.md))
+- [Latest demo](https://www.youtube.com/watch?v=XLfE2YuRwvw)
 - [Documentation](https://docs.sourcegraph.com/code_search/)
 
 ## Mission, Vision & Guiding Principles
@@ -44,10 +45,11 @@ To deliver on our vision, we will:
 ### Guiding principles
 
 - Code search should be universal
+- Coee search shoudl be easy to use
 - Code search should be accessible
+- Code search should be fast
 - Code search should be relevant
 - Code search should be educational
-- Code search should be fast
 
 #### Code search should be universal
 
@@ -56,25 +58,29 @@ We believe code search should be universal–meaning it should make the entire u
 - Index the open source code universe
 - Provide access to that universe through our own open source code search software
 
-
 #### Code search should be easy to use
 
-Currently, our search UX has powerful functionality but a high learning curve. Code can be complicated and we'll strive to make the search experience as painless and intuitive as possible so code is approachable for everyone. 
+Currently, our search UX has powerful functionality but a high learning curve. Code can be complicated and we'll strive to make the search experience as painless and intuitive as possible so code is approachable for everyone.
 
 - We must develop and grow a capable, but intuitive, search interface
 
 #### Code search should be accessible
 
 Everyone deserves access to high quality code search; as such, our code search interface should be accessible.
- 
+
 - Ensure this interface is accessible to all skill levels and WCAG compliant
+
+#### Code search shold be fast
+
+For any search product to be effectively used, in addition to the above, it must be fast. We will continually improve our search performance so users get results back fast regardless of the the size of data we index.
+
+- Maintain our focus on–and high standards for–search query performance
 
 #### Code search should be relevant
 
 In order to be useful, search results need to be relevant. Our search results will be the most accurate, relevant, and informative results possible. Our current results ranking is a first pass specifically targeting Cloud. Future work on ranking should also take into account the needs of Enterprise users.
 
 - Develop relevance and ranking capabilities that are accurate, innovative, and market leading
-- ???
 
 #### Code search should be educational
 
@@ -100,7 +106,7 @@ There are also existing open source projects that may be “good enough” for m
 
 Over the past year, we built the initial version of Search Contexts and Code monitoring. These differentiated features have shown promise, but we need to iterate on them in order for them to reach their full potential, which will help make cloud and enterprise successful at massive scale.
 
-Similarly, we introduced a framework for higher-order search functionality (predicates), and made the necessary engineering investments to allow rapid iteration on advanced search functionality (see existing advanced search usage highlights). This opens the opportunity to better support other teams that build on top of search (Code Insights, Batch Changes), as well as extend the use cases that are uniquely served by Sourcegraph search.
+Similarly, we introduced a framework for higher-order search functionality ([predicates](https://docs.google.com/document/d/1_m63fsBMAtqaq3GA_aMzKUPxD3yxTy8d12lJE6qN6PU/edit?usp=sharing)), and made the necessary engineering investments to allow rapid iteration on advanced search functionality (see existing [advanced search usage highlights](https://docs.google.com/document/d/1GpyrFPwiOuUEytHt5TKnLZ0QqUq1dDtBAZZZ62CkEPo/edit?usp=sharing)). This opens the opportunity to better support other teams that build on top of search (Code Insights, Batch Changes), as well as extend the use cases that are uniquely served by Sourcegraph search.
 
 Finally, in continuity with our work in FQ2, and with the goal of making cloud successful at massive scale, we’ll keep our focus on growing the Sourcegraph Cloud global index. Since Sourcegraph cloud is the largest deployment of Sourcegraph, we expect this work to have trickle-down benefits for all customer instances as well, regarding performance and resource utilization of search at scale.
 
@@ -109,8 +115,7 @@ Finally, in continuity with our work in FQ2, and with the goal of making cloud s
 **Search Core**
 
 - 5.5M most popular GitHub.com repos in the Sourcegraph Cloud global index (current: 2.1M)
-- P75 1h literal_* under 1s
-
+- P75 1h literal\_\* under 1s
 
 **Search Product**
 
@@ -122,6 +127,7 @@ Finally, in continuity with our work in FQ2, and with the goal of making cloud s
 ##### Search Contexts
 
 We plan on:
+
 - Sunsetting version contexts as soon as existing customers using them have migrated over to search contexts.
 - Sunsetting repogroups in favour of search contexts.
 
@@ -140,9 +146,9 @@ We want to extend advanced search functionality, both to service other teams’ 
 
 ### Top customer, support, sales and marketing issues
 
-We want to improve onboarding and education of new users on using Sourcegraph in both enterprise and cloud offerings
-We are actively working on search UX and making searching more intuitive and inline with users’ expectations
-We are planning Slack and webhook integration for Code Monitoring, allowing users to disseminate communication when significant changes occur across an organization’s codebase
+- Improve onboarding and education of new users on using Sourcegraph in both enterprise and cloud offerings
+- Search UX and making searching more intuitive and inline with users’ expectations
+- Slack and webhook integration for Code Monitoring, allowing users to disseminate communication when significant changes occur across an organization’s codebase
 
 ### What we're not working on & why
 
