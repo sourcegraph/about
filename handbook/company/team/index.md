@@ -1504,3 +1504,11 @@ This page contains brief bios of our team. Teammates may also have a personal do
 - GitHub: [caugustus-sourcegraph](https://github.com/caugustus-sourcegraph)
 - [crystal.augustus@sourcegraph.com](mailto:crystal.augustus@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/crystalaugustus/)
 - Crystal has a strong love for books and puns. Originally from Texas, she still misses the thunderstorms and breakfast tacos, but fall in New England more than makes up for it.
+
+## Mary Belzer (she/her)
+
+- Handbook Product manager
+- Denver, CO, United States 🇺🇸
+- GitHub: [marybelzer](https://github.com/marybelzer)
+- [mary.belzer@sourcegraph.com](mailto:mary.belzer@sourcegraph.com), [LinkedIn](https://www.linkedin.com/in/marybelzer/)
+- This is Mary's bio! Nice to meet you!
