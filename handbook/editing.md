@@ -291,9 +291,9 @@ To add a redirect rule:
 
 1. Edit the following file: [`/_resources/assets/redirects`](https://github.com/sourcegraph/about/blob/main/_resources/assets/redirects)
 1. Add your redirect rule. Redirect rules follows a simply syntax of: `from-path to-path 308`
-    - E.g. `/handbook/ce/support/ /handbook/support/ 308`
+   - E.g. `/handbook/ce/support/ /handbook/support/ 308`
 1. Commit your changes, create a pull request, and merge as normal.
-    - **Tip:** The page that's being redirected _from_ must be deleted, or the build will break.
+   - **Tip:** The page that's being redirected _from_ must be deleted, or the build will break.
 
 ## Markdown Tips
 
