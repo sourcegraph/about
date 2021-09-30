@@ -10,13 +10,15 @@ We don't expect everyone on the team to figure this out on their own. Other team
 
 - Any engineer at Sourcegraph can help. (The _code_ that engineers write at Sourcegraph also consists of files in a Git repository, so engineers are very familiar with making these kinds of edits.)
 - [Teammates who have already made a handbook change](https://sourcegraph.com/github.com/sourcegraph/about/-/stats/contributors?path=handbook%2F) can help.
-- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @eric, @aharvey, @virginia, @ines, @jyavorska, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
+- **Handbook support**: Ask the @handbook-support group in Slack (formerly called "handbook heroes"), including @aharvey, @virginia, @ines, @jyavorska, @marybelzer, and @jean, for handbook help (via DM, #handbook, or #any-question). They volunteered to help anyone with anything handbook-related! _If you too want to be part of handbook support, simply edit this page, add your name to the list and ping @handbook-support in the #handbook channel to inform them_
 - Ask in #handbook: `Who can screen-share with me to help me make an edit to the handbook?`
 - Don't be afraid of breaking anything! It is very easy for any engineer on the team to roll back to the previous version of the handbook if you make a mistake.
 
 ## Overview
 
 Here's the process for getting a change published to the handbook. For detailed step-by-step instructions (intended for people who are new to Git), see the sections below.
+
+![Editing the Handbook Flow](https://storage.googleapis.com/sourcegraph-assets/handbook/Editing%20the%20Handbook.jpg)
 
 1. Make sure you've been added to [Sourcegraph's Github Org](https://github.com/sourcegraph/about). If you need access, contact Tech Ops in the #it-tech-ops Slack channel.
 1. Propose the edits you want to make by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) on the Git repository at [github.com/sourcegraph/about](https://github.com/sourcegraph/about).
@@ -42,6 +44,14 @@ Frequently used links:
 - [Proposed handbook changes submitted by you](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+author%3A%40me)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Q8tUXKU66Sk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### How do I know if I'm being asked to review someone's proposal?
+
+If someone has selected you as a reviewer or an approver, you will receive a notification from Github. You can also visit [this link](https://github.com/sourcegraph/about/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc+review-requested%3A%40me) to see proposed Handbook changes waiting on a review from you.
+
+#### Can I review and comment on a proposal, even if I wasn't asked?
+
+Yes! Our repo is public, and you can see new Handbook proposals in the #handbook-updates Slack channel. If something looks interesting to you, you're welcome to review and give feedback. In alignment with our [values](company/values.md) to work as a team, act with high agency, and be open and transparent, teammates are encouraged to review and comment on proposals where they feel they can add value.
 
 ## Edit a single file
 
@@ -69,17 +79,18 @@ If you just need to edit a single page, you can do it entirely on the web.
 1. Select teammates to review using the **Reviewers** button on the right side of the pull request page.
 1. Wait for teammates to review, comment on, and approve your pull request.
 1. When you're ready to publish the change and make it live, press the **Squash and merge** button, then press **Confirm squash and merge**.
-1. Wait up to 5 minutes for your change to be live on about.sourcegraph.com.
+1. Wait for your change to be live on about.sourcegraph.com. This can take anywhere from a few minutes to a few hours.
 
 ### Announcing Handbook Changes
 
 All Handbook-related pull request information is automatically announced in the #handbook-updates Slack channel. This channel can get a bit noisy, so you may want to announce an important update in the #handbook-announce channel. To do this:
 
-1. Open your pull request
+1. Open your pull request. Since you're planning to announce this change, it will be helpful to add context about your change as a comment when creating your pull request.
 1. Click the **Labels** section on the right side of the Github screen
 1. Search for "handbook-announce" and select it
    - ![Announcing Handbook Changes](https://storage.googleapis.com/sourcegraph-assets/handbookannouncelabelimage.png)
-1. Merge your pull request
+1. Merge your pull request.
+1. See your pull request appear in #handbook-announce.
 
 ### Handbook checks
 
@@ -116,6 +127,38 @@ A screen recording of how to make multiple changes in a single PR in the web int
 
 <iframe src="https://drive.google.com/file/d/1UL3JqbXEGLaVXEkk4G81wGO69z8J_Cbw/preview" width="560" height="315"></iframe>
 
+##### Steps:
+
+This is just one path for making multiple changes in a single PR in the Handbook. These steps can be completed in a different order, or outside of the Github web interface.
+
+1. Visit the first handbook page you want to edit on about.sourcegraph.com.
+1. Press the **Edit this page** button in the sidebar.
+   - If you don't see it, you may be viewing a page on about.sourcegraph.com that is not part of the handbook. Handbook pages all have the same design as the [main handbook page](https://about.sourcegraph.com/handbook). If it has a different design, [ask for help](#how-to-get-help).
+1. In the text editor, make your edits.
+   - The document is in a format called Markdown that lets you use headings, links, bold, lists, etc., in a plain text file. See "[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)" and feel free to [ask for help](#how-to-get-help).
+1. Switch back and forth to the **Preview changes** tab at the top of the editor to see the nicely rendered page with your edits applied.
+   - Deletions are shown in red, changes are shown in orange, and additions are shown in green.
+1. When you're happy with your edits, scroll to the bottom of the page to the **Commit changes** box.
+   - Type a short, one-line summary of your change in the first text field (instead of the default `Update filename.md` text).
+   - Type a more detailed explanation of your change in the larger text field.
+   - Select the **Create a new branch for this commit and start a pull request** option (if it's not already selected).
+   - Press the **Commit changes** button.
+1. On the next page, click on the dropdown arrow on the “Create Pull Request” button, and choose “Create Draft Pull Request”. This will keep your PR from auto-notifying code owners or reviewers before it’s ready. Then, click “Draft Pull Request”.
+   - You don't have to create a Draft Pull Request, and can create a regular one if you prefer. A Draft PR just indicates that you're still working on your changes.
+1. In a new tab, navigate to the next page where you want to make changes.
+   -You can do this in the same tab if you’d like, but it may be easier to keep your PR up in its own tab while you do this part.
+1. Press the **Edit this page** button in the sidebar.
+   - If you don't see it, you may be viewing a page on about.sourcegraph.com that is not part of the handbook. Handbook pages all have the same design as the [main handbook page](https://about.sourcegraph.com/handbook). If it has a different design, [ask for help](#how-to-get-help).
+1. Click "Cancel Changes" in the github window. This is because you want to make sure you're working in the branch you've already started.
+1. Click on the branch dropdown on the upper left side of your screen (it probably says “main”). Search for the branch you named when creating your first change, and select it. Update Branch
+1. Click the pencil icon to edit your file.
+1. When you're happy with your edits, scroll to the bottom of the page to the **Commit changes** box.
+   - Type a short, one-line summary of your change in the first text field (instead of the default `Update filename.md` text).
+   - Type a more detailed explanation of your change in the larger text field.
+   - Select the **Commit directly to the "branch name" branch** option (if it's not already selected).
+   - Press the **Commit changes** button.
+1. Return to your PR, and the checks should rerun. Once checks pass, merge your changes.
+
 #### Making a new page
 
 A screen recording of how to make a new file and include it for review in the web interface for GitHub:
@@ -136,9 +179,14 @@ _This is just one path for creating a new page in the Handbook. These steps can 
 1. Name your file.
    -Make sure the name ends with ".md". This makes it a Markdown file. For example: editing.md
 1. Enter your content in Markdown. See [Markdown Resources](#markdown-resources) for help with formatting.
-1. Name your commit and your branch. Make note of your branch name, you'll need it in next steps.
-1. Click "Commit New File"
+1. When you're happy with your new page, scroll to the bottom of the page to the **Commit changes** box.
+   - Type a short, one-line summary of your change in the first text field (instead of the default `Create filename.md` text).
+   - Type a more detailed explanation of your change in the larger text field.
+   - Select the **Create a new branch for this commit and start a pull request** option (if it's not already selected).
+   - Name your branch something memorable. You'll need to search for this branch in a future step.
+   - Press the **Commit changes** button.
 1. Click on the dropdown arrow on the "Create Pull Request" button, and choose "Create Draft Pull Request". This will keep your PR from auto-notifying code owners or reviewers before it's ready. Then, click "Draft Pull Request".
+   -You don't have to create a Draft Pull Request at this point, you can create a regular one. A Draft PR just indicates that you're still working on this change.
 1. You'll likely see that the docsite check has failed. Click "Details" on the docsite check line to see more information. If your error says "disconnected page (no inlinks from other pages)", this means you need to create a link into this page. For other failures, see [Handbook Checks](#handbook-checks).
 1. In a new tab, navigate to the page where you want to create a link to your new page.
    -You can do this in the same tab if you'd like, but it may be easier to keep your PR up in its own tab while you do this part.
@@ -147,7 +195,7 @@ _This is just one path for creating a new page in the Handbook. These steps can 
 1. Click the pencil icon to edit your file.
 1. Create a [link using a relative path](#using-relative-paths-to-link-handbook-pages) in the appropriate location on your page.
 1. Commit your changes.
-1. Return to your PR, and the checks should rerun. Once checks pass, merge your changes.
+1. Return to your PR, and the checks should rerun. Click "Ready for Review" to turn your Draft PR into a regular PR. Once checks pass, merge your changes.
 
 ### macOS
 
@@ -180,6 +228,19 @@ Optional:
 1. Press the **Publish branch** button.
 1. Press the **Create Pull Request** button.
 1. On the pull request page in your web browser, select reviewers and wait for reviews/approvals, then merge to make the changes live.
+
+## Making additional edits on a file after opening a PR
+
+<div style="position: relative; padding-bottom: 42.1875%; height: 0;"><iframe src="https://www.loom.com/embed/ee1e8f704ffe4da196c09c141bd1a509" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+#### Steps:
+
+1. Viewing your PR in Github, click the "Files Changed" tab.
+1. Click the three dots in the top right corner of the editor and select "Edit this file"
+1. Make your edits.
+1. Scroll to the bottom of the page, and commit your changes directly to your branch. You'll be directed back to your PR.
+1. Click on the "Conversation" tab on your PR.
+1. Wait for checks to pass and merge.
 
 ## Adding images
 
@@ -226,12 +287,13 @@ See [this Github documentation](https://docs.github.com/en/repositories/working-
 
 When you change the location of content in the handbook it's important to add a redirect rule so that old URL to the content will automatically take users to the new URL.
 
-To add a redirect rule edit edit the following file: `/_resources/assets/redirects`
+To add a redirect rule:
 
-Redirect rules follows a simply syntax of: `from-path to-path 308`
-E.g. `/handbook/ce/support/ /handbook/support/ 308`
-
-The page that's being redirected _from_ must be deleted, or the build will break.
+1. Edit the following file: [`/_resources/assets/redirects`](https://github.com/sourcegraph/about/blob/main/_resources/assets/redirects)
+1. Add your redirect rule. Redirect rules follows a simply syntax of: `from-path to-path 308`
+   - E.g. `/handbook/ce/support/ /handbook/support/ 308`
+1. Commit your changes, create a pull request, and merge as normal.
+   - **Tip:** The page that's being redirected _from_ must be deleted, or the build will break.
 
 ## Markdown Tips
 

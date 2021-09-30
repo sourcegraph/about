@@ -20,7 +20,7 @@ All Company-sponsored flights will be booked through TripActions. The costs will
 
 ## Hotel Accomodations
 
-All Company-sponsored hotels & lodging (with the exception of Company-wide meetups) will be booked through TripActions. The costs will be added to a Sourcegraph invoice, and no credit card is needed. Please note that in addition to hotels, you can also book Airbnb stays via TripActions.
+All Company-sponsored hotels & lodging (with the exception of Company-wide meetups) will be booked through TripActions. The costs will be added to a Sourcegraph invoice, and no credit card is needed.
 
 ## Modes of Transportation
 
@@ -44,6 +44,12 @@ If you receive an out-of-policy notification upon booking, an email will be sent
 We understand that there may be a time when there is no way around booking a flight or hotel that is out of policy. Please provide detail to make approval easier and faster.
 After 24 hours without any manual action (approved/denied), the booking will automatically be accepted.
 Please note all out-of-policy related questions can be sent to travel@sourcegraph.com and #expense-inquiries in Slack.
+
+## Do I need to use TripActions for booking my travel?
+
+Moving forward, TripActions will be our source of truth for booking travel. All teammate travel must be booked through this platform to be considered within your travel budgets. Any travel booked outside of TripActions unfortunately will not be reimbursed.
+
+Our shift to this platform is for ease of tracking budgets both for teammates on an individual level, and for managers on a team level. We are also able to use this platform to track the locations of teammates as they travel throughout the world so we can monitor their safety and the changing conditions of Covid-19 through their tool [_Sherpa_](https://tripactions.com/blog/tripactions-introduces-sherpa-integration-for-safer-travels).
 
 ## Travel Assistance
 

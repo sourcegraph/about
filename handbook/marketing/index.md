@@ -34,7 +34,7 @@ The table below breaks down the capabilities of each team within Marketing. Once
 - [Product marketing](product-marketing/index.md)
   - [Marketing launch tiers](product-marketing/marketing_launch_tiers.md)
   - [Product marketing hierarchy](product-marketing/product_marketing_hierarchy.md)
-  - [Product marketing roadmap](https://docs.google.com/spreadsheets/d/1268CYG4arbGT6F0Eyy4e-EY5CQgtopcS9OdAenkjtzY/edit#gid=0)
+  - [Product marketing roadmap](product-marketing/product-marketing-roadmap.md)
   - [Release post process](product-marketing/release_post_process.md)
   - [Customer marketing](product-marketing/customer_marketing.md)
 - [Content Marketing](content/index.md)
@@ -103,7 +103,7 @@ The table below breaks down the capabilities of each team within Marketing. Once
         - Mate Gyorffy, Web Developer (contractor)
         - _We are building a brand team_
     - [Samson Goddy](../company/team/index.md#samson-goddy-he-him), Director of Community
-        - [Vanesa Ortiz](../company/team/index.md#vanesa-ortiz-she-her), Content Engineer
+        - [Vanesa Ortiz](../company/team/index.md#vanesa-ortiz-she-her), Community Advocate
         - [Prosper Otemuyiwa](../company/team/index.md#prosper-otemuyiwa-he-him), Staff Developer Evangelist
         - Amarachi Emmanuela Azubuike, Social Media Community Manager (contractor)
         - We will be hiring developer advocates
