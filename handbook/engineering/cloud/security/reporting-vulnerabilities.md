@@ -92,7 +92,7 @@ When we receive [a report of a security vulnerability](#submission-requirements)
 
 ## How we disclose security vulnerabilities
 
-*_This policy is currently under review and will be updated by 31/10/2021_*
+_*This policy is currently under review and will be updated by 31/10/2021*_
 
 For every confirmed vulnerability in Sourcegraph or its products, regardless of severity, the Security team will:
 
