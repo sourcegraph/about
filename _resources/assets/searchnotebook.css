@@ -4,10 +4,11 @@ a.language-sourcegraph-link {
     color: blue;
 }
 
-pre.language-sourcegraph {
+pre.chroma.sourcegraph {
     border: 1px solid green;
+    white-space: normal;
 }
 
-pre.language-sourcegraph code.language-sourcegraph {
+pre.chroma.sourcegraph pre.chroma {
     white-space: normal;
 }

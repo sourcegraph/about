@@ -4,6 +4,15 @@
 //    - `data-rendered-width`: specify fixed width vs chart scrolling
 //    - `data-scroll-right`: don't scroll all the way to the beginning of time in the chart
 window.addEventListener('load', () => {
+  var sg_codefences = document.querySelectorAll('pre.language-sourcegraph, pre.sourcegraph')
+  sg_codefences.forEach(element => {
+    var sg_codeblock = element.querySelectorAll('code.language-sourcegraph, pre.chroma')
+    var link = document.createElement('a')
+    link.href = 'https://sourcegraph.com?q=' + encodeURIComponent(sg_codeblock[0].innerText)
+    link.innerText = 'Open on Sourcegraph: '
+    link.className = 'language-sourcegraph-link'
+    element.prepend(link)
+  })
   if (document.querySelector('pre.mermaid')) {
     const element = document.createElement('script')
     element.src = 'https://unpkg.com/mermaid@8.0.0-alpha.6/dist/mermaid.min.js'
