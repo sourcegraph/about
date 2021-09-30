@@ -52,6 +52,8 @@
 /handbook/product/product_management/product_process /handbook/product/product_management 308
 /handbook/product/roadmap /handbook/product 308
 
+/handbook/product/product_management/release_post_blog_template https://github.com/sourcegraph/about/blob/main/handbook/product/product_management/release_blog_post_template.md 308
+
 /handbook/engineering/cloud/extensibility/goals /handbook/direction/cloud/extensibility 308
 /handbook/engineering/cloud/growth/goals /handbook/direction/cloud/growth 308
 /handbook/engineering/cloud/security/goals /handbook/direction/cloud/security 308
