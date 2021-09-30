@@ -22,7 +22,7 @@ We build the Code Graph to make working with code easier, regardless of how much
 
 ## Focus Areas
 
-We are focused on several themes to help make our one year vision a reality. They are not listed in priority order, as we are pursuing all of them. To see how these play into what any particular product area is delivering, take a look at the individual team direction pages, as indexed on our [direction home page](../index.md#code-graph)
+We are focused on several themes to help make our one year vision a reality. They are not listed in priority order, as we are pursuing all of them. To see how these play into what any particular product area is delivering, take a look at the individual team direction pages linked at the [top of this page](#code-graph).
 
 ### Make the power of the Code Graph easier to find and use
 
