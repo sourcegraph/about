@@ -20,9 +20,9 @@ You can use whatever tools work for you—I’ve used physical whiteboards, Miro
 
 Ahead of the workshop, be sure to:
 
-- Have a working space ready to go, with the warmup activity and basic skeleton of a user story map already in place.
-- Make sure everyone has access to the working space.
-- Share the workshop invite with the agenda included.
+- Have a working space ready to go, with the warmup activity and basic skeleton of a user story map already in place
+- Make sure everyone has access to the working space
+- Share the workshop invite with the agenda included
 
 ### Template
 
