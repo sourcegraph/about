@@ -8,3 +8,5 @@ require (
 	github.com/sourcegraph/docsite v1.6.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
 )
+
+replace github.com/sourcegraph/docsite => github.com/jyavorska/docsite v1.8.3-0.20210930071952-c6a6c94c17fe

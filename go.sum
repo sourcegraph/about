@@ -43,6 +43,9 @@ github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2z
 github.com/gorilla/securecookie v1.1.1/go.mod h1:ra0sb63/xPlUeL+yeDciTfxMRAA+MP+HVt/4epWDjd4=
 github.com/hashicorp/hcl v1.0.0/go.mod h1:E5yfLk+7swimpb2L/Alb/PJmXilQ/rhwaUYs4T20WEQ=
 github.com/jessevdk/go-flags v1.4.0/go.mod h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=
+github.com/jyavorska/docsite v1.6.0 h1:ysc05N/rhz/ua2tQ9FheBvfHxMy7pZUi7x2qGB7rySo=
+github.com/jyavorska/docsite v1.8.3-0.20210930071952-c6a6c94c17fe h1:wQwzuxEimVHon234zA7EnzfUcVLuni5Ty4I3RmsiwKo=
+github.com/jyavorska/docsite v1.8.3-0.20210930071952-c6a6c94c17fe/go.mod h1:kjJkXtOvE73420loAfP6QMow59IeLun9EnktIpq6Gp0=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
