@@ -79,7 +79,7 @@ As Sourcegraph becomes an increasingly powerful developer tool, Code Insights wi
 
 ### Code Insights is NOT for "tracking individual developers"
 
-Code Insights is not built for trying to track an individual's output and whether or not someone is a "good" engineer or "high performing" employee. There are (unfortunately) other tools that exist that have made the mistake of tracking easy-to-find, pointless-to-measure metrics like "number of commits" or "number of lines of code" an individual contributes.
+Code Insights is not for trying to track an individual's output and whether or not someone is a "good" engineer or "high performing" employee. We believe it is low-signal to track metrics like like "number of commits" or "number of lines of code" an individual contributes.
 
 **What this looks like:**
 
