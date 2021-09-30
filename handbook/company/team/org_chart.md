@@ -22,13 +22,13 @@ The org chart is generated automatically. [Need to edit it?](#how-to-edit)
 
 ## [People Ops](../../people-ops/index.md#people-ops-team-members)
 
-## [Business Operations & Strategy](../../ops/bizops/index.md#members)
+## [Business Operations & Strategy](../../bizops/index.md#members)
 
-## [Finance & Accounting](../../ops/finance/index.md#members)
+## [Finance & Accounting](../../finance/index.md#members)
 
-## [Legal](../../ops/legal/index.md#members)
+## [Legal](../../legal/index.md#members)
 
-## [Tech Ops](../../ops/tech-ops/index.md#members)
+## [Tech Ops](../../tech-ops/index.md#members)
 
 ## Sales
 

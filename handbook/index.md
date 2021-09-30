@@ -91,19 +91,19 @@ The handbook is a living document and we expect every teammate to propose improv
 - [Resources for teammates](https://about.sourcegraph.com/handbook/talent#resources-for-teammates)
 - [Resources for recruiters](https://about.sourcegraph.com/handbook/talent#resources-for-recruiters)
 
-### [Business Operations & Strategy](ops/bizops/index.md)
-- [How to work with us](ops/bizops/index.md#how-to-work-with-us)
+### [Business Operations & Strategy](bizops/index.md)
+- [How to work with us](bizops/index.md#how-to-work-with-us)
 - [Analytics issue tracker](https://github.com/sourcegraph/analytics/issues)
 - Teams
-  - [Data operations](ops/bizops/data_operations.md)
-  - [Analytics](ops/bizops/analytics.md)
+  - [Data operations](bizops/data_operations.md)
+  - [Analytics](bizops/analytics.md)
 
-### [Finance & Accounting](ops/finance/index.md)
-- [Financial terms and definitions](ops/finance/index.md#definitions)
-- [Accounting](ops/finance/index.md#accounting)
+### [Finance & Accounting](finance/index.md)
+- [Financial terms and definitions](finance/index.md#definitions)
+- [Accounting](finance/index.md#accounting)
 
-### [Legal](ops/legal/index.md)
+### [Legal](legal/index.md)
 
-### [Tech Ops](ops/tech-ops/index.md)
-- [Internal security](ops/tech-ops/internal_security.md)
-- [Single sign on (Okta)](ops/tech-ops/Okta.md)
+### [Tech Ops](tech-ops/index.md)
+- [Internal security](tech-ops/internal_security.md)
+- [Single sign on (Okta)](tech-ops/Okta.md)
