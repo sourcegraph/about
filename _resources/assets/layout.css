@@ -276,3 +276,8 @@ button#CybotCookiebotDialogBodyButtonDetails {
 .container-md {
     max-width: 1140px;
 }
+
+/* Fix so that turning off outer pre does not impact styling */
+pre.chroma {
+    padding: 0.5rem !important;
+}
