@@ -7,13 +7,14 @@ CEs, CSEs, Sales, Marketing, Engineering, and other teammates that interact dire
 We deeply value this feedback, so we make this process as frictionless for teammates as possible:
 
 ## Create a Product Gap and a Submission in Salesforce
-If you have gotten a specific feedback requests that a customer(s) would like to track the progress of you should log that feedback as a Product Gap in Salesforce. Doing so allows full transparency to CEs and Product Eng on how many customers are impacted by an issue and what teams are responsible. 
 
-To create a Product Gap, navigate to the impacted customer(s) most recent open Opportunity, whether it's a net new opp or a renewal. When viewing the Opportunity, you should see a related list labeled "Product Gap Submissions". Create a new Submission, and search in the field Product Gap to see if a gap already exists for what you wish to log. If no gap exists, create one, and then continue creating your submission that will tie your customer to the Product Gap. Be sure to include relevant information like what workarounds your customer must employ (if any), and the severity of what this issue blocks for them. 
+If you have gotten a specific feedback requests that a customer(s) would like to track the progress of you should log that feedback as a Product Gap in Salesforce. Doing so allows full transparency to CEs and Product Eng on how many customers are impacted by an issue and what teams are responsible.
+
+To create a Product Gap, navigate to the impacted customer(s) most recent open Opportunity, whether it's a net new opp or a renewal. When viewing the Opportunity, you should see a related list labeled "Product Gap Submissions". Create a new Submission, and search in the field Product Gap to see if a gap already exists for what you wish to log. If no gap exists, create one, and then continue creating your submission that will tie your customer to the Product Gap. Be sure to include relevant information like what workarounds your customer must employ (if any), and the severity of what this issue blocks for them.
 
 ## Creating GitHub Issues
 
-Customer Engineers should no longer be creating GitHub Issues for their Customers. Instead, Product Eng will manage the process of extracting Product Gaps from Salesforce to add to GitHub. 
+Customer Engineers should no longer be creating GitHub Issues for their Customers. Instead, Product Eng will manage the process of extracting Product Gaps from Salesforce to add to GitHub.
 
 Note: while this will currently be a manual process, we intend to automate the creation of GH issues upon creating of a new Product Gap in Salesforce.
 
