@@ -8,6 +8,10 @@ The Product team strives to make the following true:
 - Each teammate has the customer and product context needed (about customer problems, likely future priorities, possible solutions, etc.) to perform their work effectively.
 - The product vision and roadmap are communicated well to teammates and everyone outside Sourcegraph.
 
+## Test page, please remove
+
+[test page](./test.md)
+
 ## Contact
 
 You can reach us at the #product channel or @product-team on Slack. If you have ideas you want to pass on to the product team, check out the [surfacing product feedback](surfacing_product_feedback.md) page.
