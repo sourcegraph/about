@@ -2,26 +2,6 @@ name: Build
 on:
   - push
 jobs:
-  docsite:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-go@v2
-        with:
-          go-version: '1.14.6'
-      - name: docsite check
-        run: |
-          go install github.com/sourcegraph/docsite/cmd/docsite
-          docsite check
-  geojson:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - name: install geojsonhint
-        run: yarn add @mapbox/geojsonhint@3.0.0
-      - name: geojsonhint
-        run: node_modules/.bin/geojsonhint < ./handbook/company/team/locations.geojson
   website:
     runs-on: ubuntu-latest
     steps:

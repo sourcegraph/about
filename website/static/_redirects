@@ -124,3 +124,5 @@
 /solutions/developer-workflow-tooling-integrations /product 301!
 /solutions/incident-response / 301!
 /universal-code-search / 301!
+
+/handbook/* https://handbook.sourcegraph.com/:splat 301
