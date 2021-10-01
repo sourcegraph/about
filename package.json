@@ -9,6 +9,6 @@
     "prettier": "^2.3.2"
   },
   "dependencies": {
-    "gatsby": "^3.13.1"
+    "gatsby": "^3.14.1"
   }
 }
