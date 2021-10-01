@@ -1849,10 +1849,10 @@
   resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.1.tgz#78b5433344e2f92e8b306c06a5622c50c245bf6b"
   integrity sha512-S6oPal772qJZHoRZLFc/XoZW2gFvwXusYUmXPXkgxJLuEk2vOt7jc4Yo6z/vtI0EBkbPBVrJJ0B+prLIKiWqHg==
 
-"@types/bootstrap@5.0.15":
-  version "5.0.15"
-  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-5.0.15.tgz#d20ef52f025d4af75dbe36cc0b3287241ff947e0"
-  integrity sha512-ETmmPf2DvCfNvemlgbX/dCbxVufCU0PrGT0YQ8gjOCgKYR5AfV9lVjBmWdA7L6mJIGvKFFJr0ZmZKP4Dp1k+5g==
+"@types/bootstrap@5.1.6":
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-5.1.6.tgz#669a0cd7fb37bca12424e0d68f1f4704cfcdb780"
+  integrity sha512-3L6IvOCKyoVd3e4bgQTH7VBPbuYEOG8IQbRcuZ0AbjfwPdRX+kVf5L/7mVt1EVM+D/BVw4+71rtp7Z8yYROlpQ==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/jquery" "*"
@@ -3471,10 +3471,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.0.tgz#97b9f29ac98f98dfa43bf7468262d84392552fd7"
-  integrity sha512-Io55IuQY3kydzHtbGvQya3H+KorS/M9rSNyfCGCg9WZ4pyT/lCxIlpJgG1GXW/PswzC84Tr2fBYi+7+jFVQQBw==
+bootstrap@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.1.1.tgz#9d6eed81e08feaccedf3adaca51fe4b73a2871df"
+  integrity sha512-/jUa4sSuDZWlDLQ1gwQQR8uoYSvLJzDd8m5o6bPKh3asLAMYVZKdRCjb1joUd5WXf0WwCNzd2EjwQQhupou0dA==
 
 boxen@^4.2.0:
   version "4.2.0"
