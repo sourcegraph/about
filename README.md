@@ -39,7 +39,7 @@ yarn start
 
 ## Publishing a blog post
 
-We want and encourage everyone at Sourcegraph to contribute to the blog. If you'd like to write for the blog, please check out how to [propose a blog post](https://about.sourcegraph.com/handbook/marketing/content/editorial#editorial-process) in the Editorial handbook.
+We want and encourage everyone at Sourcegraph to contribute to the blog. If you'd like to write for the blog, please check out how to [propose a blog post](https://handbook.sourcegraph.com/marketing/content/editorial#editorial-process) in the Editorial handbook.
 
 ## Handbook
 

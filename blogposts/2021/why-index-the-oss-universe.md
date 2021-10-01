@@ -18,7 +18,7 @@ Guido van Rossum, the creator of Python, once said:
 
 > "We compare mass ability to read and write software with mass literacy, and predict equally pervasive changes to society. Hardware is now sufficiently fast and cheap to make mass computer education possible: the next big change will happen when most computer users have the knowledge and power to create and modify software."
 
-From the beginning, Sourcegraph set out to help more people understand code by making an intuitive and fast code search engine. Our ultimate [mission](https://about.sourcegraph.com/handbook/company/strategy#mission)—to make it so everyone can code—is driven by the conviction that coding should be a universal skill. To make it so, there needs to be a way to easily search, find, and learn from existing code. While the issue of mass code literacy is much bigger than Sourcegraph, we think that making the world of open source more accessible through universal code search can help lower the barrier to entry to programming, support open source maintainers, and help more people discover and interact with code.
+From the beginning, Sourcegraph set out to help more people understand code by making an intuitive and fast code search engine. Our ultimate [mission](https://handbook.sourcegraph.com/company/strategy#mission)—to make it so everyone can code—is driven by the conviction that coding should be a universal skill. To make it so, there needs to be a way to easily search, find, and learn from existing code. While the issue of mass code literacy is much bigger than Sourcegraph, we think that making the world of open source more accessible through universal code search can help lower the barrier to entry to programming, support open source maintainers, and help more people discover and interact with code.
 
 Our starting point is to make code easier to read for a wider set of developers. With the announcement of our [Series D funding](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/) last month, we promised to bring code search to every company building software and every dev in the world.
 
@@ -29,7 +29,7 @@ We’re also making it easier for developers to search and understand their own 
 - [How to add open source to Sourcegraph.com](https://learn.sourcegraph.com/how-to-add-open-source-software-projects-to-sourcegraph)
 - [How to add private projects to Sourcegraph.com](https://learn.sourcegraph.com/how-to-add-private-code-repositories-to-sourcegraph)
 
-While we’re focused on creating the best search experience for devs in the near-term, we’re looking forward to our [5-year vision](https://about.sourcegraph.com/handbook/company/strategy#5-year-vision) to make the universal code graph accessible to everyone.
+While we’re focused on creating the best search experience for devs in the near-term, we’re looking forward to our [5-year vision](https://handbook.sourcegraph.com/company/strategy#5-year-vision) to make the universal code graph accessible to everyone.
 
 ## Expanding code literacy
 

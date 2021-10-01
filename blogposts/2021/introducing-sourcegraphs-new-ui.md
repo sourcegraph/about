@@ -2,7 +2,7 @@
 title: Meet the new Sourcegraph UI
 description: "We're launching an entirely new visual design for the Sourcegraph UI today! We've added so many features to Sourcegraph in the last few years, that we needed an entirely new visual design to keep up with our advancements. Let's take a look at some of the new designs and how they will help users navigate, understand, and make changes to code more efficiently."
 author: Rob Rhyne
-authorUrl: /handbook/company/team#rob-rhyne
+authorUrl: https://handbook.sourcegraph.com/company/team#rob-rhyne
 publishDate: 2021-06-09T10:00-07:00
 tags: [blog]
 slug: introducing-sourcegraphs-new-ui

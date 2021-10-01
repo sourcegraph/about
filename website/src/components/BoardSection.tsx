@@ -6,49 +6,49 @@ const BOARD: {
     title: string
     bio: string
 }[] = [
-    {
-        name: 'Sarah Wang',
-        image: '/board/sarah-wang.png',
-        title: 'Andreessen Horowitz',
-        bio: '/handbook/company/team#',
-    },
-    {
-        name: 'David Sacks',
-        image: '/board/david-sacks.jpg',
-        title: 'Craft Ventures',
-        bio: '/handbook/company/team#',
-    },
-    {
-        name: 'Adam Ross',
-        image: '/board/adam-ross.jpg',
-        title: 'Goldcrest Capital',
-        bio: '/handbook/company/team#',
-    },
-    {
-        name: 'Andrew Reed',
-        image: '/board/andrew-reed.jpg',
-        title: 'Sequoia Capital',
-        bio: '/handbook/company/team#',
-    },
-    {
-        name: 'Scott Raney',
-        image: '/board/scott-raney.jpg',
-        title: 'Redpoint Ventures',
-        bio: '/handbook/company/team#',
-    },
-    {
-        name: 'Brian Murray',
-        image: '/board/brian-murray.jpg',
-        title: 'Craft Ventures',
-        bio: '/handbook/company/team#',
-    },
-    {
-        name: 'Dan Friedland',
-        image: '/board/dan-friedland.jpg',
-        title: 'Goldcrest Capital',
-        bio: '/handbook/company/team#',
-    },
-]
+        {
+            name: 'Sarah Wang',
+            image: '/board/sarah-wang.png',
+            title: 'Andreessen Horowitz',
+            bio: 'https://handbook.sourcegraph.com/company/team',
+        },
+        {
+            name: 'David Sacks',
+            image: '/board/david-sacks.jpg',
+            title: 'Craft Ventures',
+            bio: 'https://handbook.sourcegraph.com/company/team',
+        },
+        {
+            name: 'Adam Ross',
+            image: '/board/adam-ross.jpg',
+            title: 'Goldcrest Capital',
+            bio: 'https://handbook.sourcegraph.com/company/team',
+        },
+        {
+            name: 'Andrew Reed',
+            image: '/board/andrew-reed.jpg',
+            title: 'Sequoia Capital',
+            bio: 'https://handbook.sourcegraph.com/company/team',
+        },
+        {
+            name: 'Scott Raney',
+            image: '/board/scott-raney.jpg',
+            title: 'Redpoint Ventures',
+            bio: 'https://handbook.sourcegraph.com/company/team',
+        },
+        {
+            name: 'Brian Murray',
+            image: '/board/brian-murray.jpg',
+            title: 'Craft Ventures',
+            bio: 'https://handbook.sourcegraph.com/company/team',
+        },
+        {
+            name: 'Dan Friedland',
+            image: '/board/dan-friedland.jpg',
+            title: 'Goldcrest Capital',
+            bio: 'https://handbook.sourcegraph.com/company/team',
+        },
+    ]
 
 export const BoardSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="board" className={`leadership-section board-section`}>

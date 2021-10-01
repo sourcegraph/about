@@ -15,7 +15,7 @@ published: true
 
 As code continues to grow in complexity, legacy methods for predicting system failures are no longer enough. You need modern observability and monitoring tools designed for highly distributed systems and microservices architectures to bring development and operation teams together more effectively.
 
-During a recent [Sourcegraph podcast episode](/podcast/charity-majors/), [Charity Majors](https://www.linkedin.com/in/charity-majors/), Founder and CTO of [Honeycomb](https://www.honeycomb.io/) spoke with Sourcegraph Cofounder and CTO [Beyang Liu](/handbook/company/team#beyang-liu) about the impact of observability and monitoring on development teams.
+During a recent [Sourcegraph podcast episode](/podcast/charity-majors/), [Charity Majors](https://www.linkedin.com/in/charity-majors/), Founder and CTO of [Honeycomb](https://www.honeycomb.io/) spoke with Sourcegraph Cofounder and CTO [Beyang Liu](https://handbook.sourcegraph.com/company/team#beyang-liu) about the impact of observability and monitoring on development teams.
 
 ## Why monitoring alone is no longer enough
 

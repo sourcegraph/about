@@ -42,7 +42,7 @@ export default ((props: any) => (
                     </p>
                     <p>
                         We have compiled some excellent tips and tricks from fellow{' '}
-                        <a href="https://about.sourcegraph.com/handbook/company/team">teammates</a> on how to live your
+                        <a href="https://handbook.sourcegraph.com/company/team">teammates</a> on how to live your
                         best distributed work life!
                     </p>
                     <h2 className="pt-5 pb-1">Tips for working remotely</h2>
@@ -174,7 +174,7 @@ export default ((props: any) => (
                         stored inside your repositories but outside your code. This increases traffic to documentation
                         and leads to people relying on it more, which in turn causes people to improve it. We have seen
                         this extensively in the{' '}
-                        <a href="https://about.sourcegraph.com/handbook">Sourcegraph handbook</a>.
+                        <a href="https://handbook.sourcegraph.com">Sourcegraph handbook</a>.
                     </p>
                     <h3 className="pt-5 pb-1">Share code more easily</h3>
                     <p>

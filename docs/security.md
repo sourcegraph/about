@@ -9,7 +9,7 @@ We don't stop at keeping your code safe. When your team's developers use Sourceg
 
 If you have specific questions or concerns, contact us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>.
 
-If you think you have discovered a security vulnerability in our product, please follow our instructions on [how to report a security vulnerability](https://about.sourcegraph.com/handbook/engineering/security#how-to-report-a-security-vulnerability).
+If you think you have discovered a security vulnerability in our product, please follow our instructions on [how to report a security vulnerability](https://handbook.sourcegraph.com/engineering/security#how-to-report-a-security-vulnerability).
 
 ## Sourcegraph.com
 
@@ -67,7 +67,7 @@ Sourcegraph on-premise allows you to have the most control over the deployment a
 
 ### Bug Bounty Program and Vulnerability Disclosure
 
-We maintain a Bug Bounty program rewarding security researchers that find vulnerabilities in our code or infrastructure and disclose it responsibly. More information about Sourcegraph's Bug Bounty Program and our Vulnerability Disclosure policy can be found [here](https://about.sourcegraph.com/handbook/engineering/security/reporting-vulnerabilities).
+We maintain a Bug Bounty program rewarding security researchers that find vulnerabilities in our code or infrastructure and disclose it responsibly. More information about Sourcegraph's Bug Bounty Program and our Vulnerability Disclosure policy can be found [here](https://handbook.sourcegraph.com/engineering/security/reporting-vulnerabilities).
 
 ### Development
 

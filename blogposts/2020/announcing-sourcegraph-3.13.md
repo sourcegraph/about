@@ -152,7 +152,7 @@ Sourcegraph 3.13 introduces two new customization settings:
 
 ## Code intelligence and campaigns data added to Sourcegraph pings
 
-Sourcegraph collects a small amount of high-level and aggregate data from each instance. See the complete list of the [data we collect](https://docs.sourcegraph.com/admin/pings), and our [ping philosophy and rules](https://about.sourcegraph.com/handbook/engineering/adding_ping_data#ping-philosophy). New usage statistics—specifically, aggregate counts of the numbers of hover, go to definition, and find references actions, aggregated 50th, 95th, and 99th percentile latencies for the same actions, and a total count of code change campaigns created, will be sent to Sourcegraph via pings by default. The aggregated event count metrics can be disabled via the site admin flag `disableNonCriticalTelemetry`.
+Sourcegraph collects a small amount of high-level and aggregate data from each instance. See the complete list of the [data we collect](https://docs.sourcegraph.com/admin/pings), and our [ping philosophy and rules](https://handbook.sourcegraph.com/engineering/adding_ping_data#ping-philosophy). New usage statistics—specifically, aggregate counts of the numbers of hover, go to definition, and find references actions, aggregated 50th, 95th, and 99th percentile latencies for the same actions, and a total count of code change campaigns created, will be sent to Sourcegraph via pings by default. The aggregated event count metrics can be disabled via the site admin flag `disableNonCriticalTelemetry`.
 
 ## Experimental features
 
