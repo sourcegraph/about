@@ -8,8 +8,6 @@ Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 | ---------------------------------- | ------------------------------------------ |
 | Auto-preview about.sourcegraph.com | `cd website && yarn install && yarn start` |
 | Final review about.sourcegraph.com | `cd website && yarn install && yarn serve` |
-| Preview handbook                   | `make serve`                               |
-| Check for broken links             | `make docsite-check`                       |
 
 ## Requirements
 
@@ -45,10 +43,4 @@ We want and encourage everyone at Sourcegraph to contribute to the blog. If you'
 
 ## Handbook
 
-The [Sourcegraph handbook](https://about.sourcegraph.com/handbook) also lives in this repository. This is currently deployed in GCP.
-
-The handbook uses [docsite](https://github.com/sourcegraph/docsite).
-
-- To preview changes to handbook content locally, run `make serve` from the root of the about repository (`/about`), and open http://localhost:5082.
-- To check for broken links and other lint problems, run `make docsite-check`.
-- See [detailed `docsite` instructions](handbook/editing.md#running-a-local-handbook-site).
+The Sourcegraph handbook now lives in https://github.com/sourcegraph/handbook and is hosted under https://handbook.sourcegraph.com.
