@@ -80,6 +80,6 @@
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.20.1",
     "typescript": "^4.3.2",
-    "webpack": "^5.38.1"
+    "webpack": "^5.56.0"
   }
 }
