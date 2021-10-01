@@ -1,4 +1,4 @@
-# Manager resources: team information
+# Manager accounts guide
 
 As a manager, you will have manager-specific permissions for several different accounts, which will allow you to access specific information about your team in order to better support them. This page is intended to be a resource for managers to help them navigate these different accounts and systems. In these systems you will be able to find information on your team’s compensation, compensation bands, impact reviews, birthdays, PTO history, and more.
 
