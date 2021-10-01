@@ -8,7 +8,7 @@ heroImage: https://sourcegraphstatic.com/blog/transparent-security-tomorrow.png
 published: true
 ---
 
-One of the things that comes with being an open source company is a commitment to transparency.  As an industry, we mostly think about this in terms of [source code](http://github.com/sourcegraph/), and at Sourcegraph we think of this in terms of the [company itself](https://about.sourcegraph.com/handbook/company), including [product direction](https://about.sourcegraph.com/handbook/direction). I’d like to extend that to security.  In the ideal world, security would be as open as our codebase, even if that ideal is a difficult reality. It might be an audacious idea, but it’s one that’s worth striving for.
+One of the things that comes with being an open source company is a commitment to transparency.  As an industry, we mostly think about this in terms of [source code](http://github.com/sourcegraph/), and at Sourcegraph we think of this in terms of the [company itself](https://handbook.sourcegraph.com/company), including [product direction](https://handbook.sourcegraph.com/direction). I’d like to extend that to security.  In the ideal world, security would be as open as our codebase, even if that ideal is a difficult reality. It might be an audacious idea, but it’s one that’s worth striving for.
 
 ## Background: Where is the industry today
 
@@ -32,4 +32,4 @@ Security should never be focused solely on responsible disclosure and responding
 
 ## So how can you help?
 
-There are plenty of great ways to help us make a better, more secure product.  You can [report a vulnerability](https://about.sourcegraph.com/handbook/engineering/security#reporting-a-vulnerability), or review the code, or even [contribute to Sourcegraph](https://www.github.com/sourcegraph/sourcegraph). Maybe you’d like to share your thoughts on security with us by emailing security@sourcegraph.com, or even [join the team](https://boards.greenhouse.io/sourcegraph91)!
+There are plenty of great ways to help us make a better, more secure product.  You can [report a vulnerability](https://handbook.sourcegraph.com/engineering/security#reporting-a-vulnerability), or review the code, or even [contribute to Sourcegraph](https://www.github.com/sourcegraph/sourcegraph). Maybe you’d like to share your thoughts on security with us by emailing security@sourcegraph.com, or even [join the team](https://boards.greenhouse.io/sourcegraph91)!

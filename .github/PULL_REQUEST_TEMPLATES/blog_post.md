@@ -1,4 +1,4 @@
-<!-- PLEASE READ: See https://about.sourcegraph.com/handbook/marketing/content/editorial#editorial-process for details on the blog process before you get started. -->
+<!-- PLEASE READ: See https://handbook.sourcegraph.com/marketing/content/editorial#editorial-process for details on the blog process before you get started. -->
 
 ### Checklist
 

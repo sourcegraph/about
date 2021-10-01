@@ -85,7 +85,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                             <br />
                             <a
                                 className="btn btn-primary mt-3"
-                                href="https://about.sourcegraph.com/handbook/marketing/becoming_a_sourcegraph_champion"
+                                href="https://handbook.sourcegraph.com/marketing/becoming_a_sourcegraph_champion"
                             >
                                 Become a Sourcegraph Champion
                             </a>

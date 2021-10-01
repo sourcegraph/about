@@ -2,7 +2,7 @@
 title: How we used universal code search to eliminate secrets from our codebase
 description: 'We used to store secrets in our source code. Here’s how we used code search to help us find, remove, and rotate all secrets in our codebase.'
 author: André Eleuterio
-authorUrl: https://about.sourcegraph.com/handbook/company/team#andr%c3%a9-eleuterio-he-him
+authorUrl: https://handbook.sourcegraph.com/company/team#andr%c3%a9-eleuterio-he-him
 publishDate: 2021-09-27T10:00-07:00
 tags: [blog]
 slug: eliminate-secrets-from-codebase-with-universal-code-search

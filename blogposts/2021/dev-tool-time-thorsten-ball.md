@@ -2,7 +2,7 @@
 title: '“I basically want my whole computing environment to be programmable”: Dev Tool Time with Thorsten Ball'
 description: 'Thorsten Ball, software engineer at Sourcegraph, shares how he uses tmux as a window manager for the terminal, and goes to bat for Vim.'
 author: Rebecca Dodd
-authorUrl: https://about.sourcegraph.com/handbook/company/team#rebecca-dodd-she-her
+authorUrl: https://handbook.sourcegraph.com/company/team#rebecca-dodd-she-her
 publishDate: 2021-08-18T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-thorsten-ball
@@ -11,7 +11,7 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-thor
 published: true
 ---
 
-Our very first guest for Dev Tool Time was [Thorsten Ball](https://about.sourcegraph.com/handbook/company/team#thorsten-ball-he-him), a software engineer here at Sourcegraph. Thorsten is on the [Batch Changes](https://about.sourcegraph.com/handbook/engineering/batch-changes) team and works in just two main applications throughout the day: a browser and the terminal, in which he uses tmux as a window manager.
+Our very first guest for Dev Tool Time was [Thorsten Ball](https://handbook.sourcegraph.com/company/team#thorsten-ball-he-him), a software engineer here at Sourcegraph. Thorsten is on the [Batch Changes](https://handbook.sourcegraph.com/engineering/batch-changes) team and works in just two main applications throughout the day: a browser and the terminal, in which he uses tmux as a window manager.
 
 You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Thorsten’s desk:
 

@@ -83,13 +83,13 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/contact">Contact</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="/handbook">Handbook</a>
+                                    <a href="https://handbook.sourcegraph.com">Handbook</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/news">News</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="/handbook/company/strategy">Sourcegraph strategy</a>
+                                    <a href="https://handbook.sourcegraph.com/company/strategy">Sourcegraph strategy</a>
                                 </li>
                             </ul>
                         </div>
