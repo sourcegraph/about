@@ -69,6 +69,10 @@ WIP
 - [Mental health and wellness initiatives](mental-health.md)
 - [Modern Health](modern-health.md)
 
+## Manager training and development
+
+- [Manager accounts guide](manager-directory.md)
+
 ## Other policies
 
 - [Anti-corruption/anti-bribery](anti-corruption.md)
