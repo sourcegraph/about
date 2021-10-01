@@ -52,7 +52,7 @@ export default class About extends React.Component<any, any> {
                             <div className="container py-6">
                                 <h2>Learn all about Sourcegraph</h2>
                                 <p>
-                                    The <Link to="/handbook">Sourcegraph handbook</Link> has everything from our
+                                    The <Link to="https://handbook.sourcegraph.com">Sourcegraph handbook</Link> has everything from our
                                     high-level <Link to="https://handbook.sourcegraph.com/company/strategy">strategy</Link>,{' '}
                                     <Link to="https://handbook.sourcegraph.com/direction">product direction</Link>, and{' '}
                                     <Link to="https://handbook.sourcegraph.com/company/values">values</Link>, to documentation of business
