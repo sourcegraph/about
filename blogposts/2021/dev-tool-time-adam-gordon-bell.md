@@ -11,9 +11,6 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/l
 published: true
 ---
 
-<!-- TODO: add captions to video embeds -->
-<!-- TODO: weave in short video clips -->
-
 As a developer advocate, [Adam Gordon Bell](https://twitter.com/adamgordonbell) writes prose as a central part of his work. As a programmer, he wants the same experience writing prose that he has writing code, where linters and build pipelines help with consistency, formatting, and error checking. When Adam joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on September 29, 2021, he shared his favorite dev tools for writing and how Earthly helps keep his published writing high-quality.
 
 You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Adam’s desk setup:
@@ -38,11 +35,25 @@ Missing from Adam's current setup is the custom-built and programmed split keybo
 
 ![Adam's 2016 desk setup with custom keyboard](https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/2016-computer-ergodox.png)
 
+<figure>
+    <figcaption style="text-align: center; font-style: italic;">Adam's custom keyboard and struggle</figcaption>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/custom-keyboard-struggle.mp4"></video>
+    </div>
+</figure>
+
 ## Writing as a developer
 
 > When I started doing writing ... I want this kind of experience I was used to as a developer, where you have linting, compilers, and a build pipeline that tells you whether things work or not."
 
 Adam's main writing environment isn't a word processor, or even a speciality Markdown app. It's [VS Code](https://code.visualstudio.com/), configured with a few plugins and with easy access to a terminal to use command line utilities. Two tools are at the core of his workflow for writing Markdown, the markup language he regularly uses. [`markdownlint`](https://github.com/DavidAnson/markdownlint) analyzes Markdown files according to configurable rules to ensure consistent and well-formed Markdown. It also can automatically fix some common errors. [Vale](https://github.com/errata-ai/vale) provides grammar checking according to custom rules. While Adam uses some of his own rules, the Vale community, which includes large corporations, sources a large number of rules, including those to detect "corporate speak!"
+
+<figure>
+    <figcaption style="text-align: center; font-style: italic;">See Vale in action detecting "corporate speak"</figcaption>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/corporate-speak.mp4"></video>
+    </div>
+</figure>
 
 Working with these tools locally makes it easier for a single writer to avoid formatting and grammatical errors, but integrating them into a build pipeline is the real mark of a durable workflow for Adam. 
 
@@ -50,20 +61,18 @@ Working with these tools locally makes it easier for a single writer to avoid fo
 
 He uses [Earthly](https://earthly.dev/), which he describes as a Makefile and Dockerfile combined together, to set up and run the build. In this instance of his company blog, Earthly runs the [Jekyll](http://jekyllrb.com/) build step, tests against multiple versions of Ruby, and runs the `markdownlint` and `vale` checks according to Adam's configured rules. Depending on configuration, the build really will fail if you don't use the Oxford comma.
  
+<figure>
+    <figcaption style="text-align: center; font-style: italic;">Listen to Adam talk about two approaches to build pipelines</figcaption>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/Earthly.mp4"></video>
+    </div>
+</figure>
+
 Used together, this set of tools let's anyone programmatically implement a style guide that anyone contributing writing to a shared blog or set of docs can follow, and provides the guarantees you want in professional writing. 
 
 ## Changing configurations
 
 Customization is a running thread in Adam's setup over time. What's changed is the focus and nature of that customization. Several years ago, having a keyboard with highly configured keybindings made development more efficient. Now, with his focus on writing prose, he puts his drive to customize into a well-configured writing environment that's built to facilitate his writing workflow. Like those still using his keyboard code, we'll look forward to learning from and using whichever hardware and dev tools Adam turns his efforts toward next.
-
-
-<figure>
-    <figcaption style="text-align: center; font-style: italic;">Watch ...</figcaption>
-    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/...mp4"></video>
-    </div>
-</figure>
-
 
 ## Show notes
  
