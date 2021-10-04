@@ -17,10 +17,10 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
         heroAndHeaderClassName="community-page__hero-and-header"
         hero={
             <div className="container pb-4">
-                <div className="row">
-                    <div className="col-lg-6 col-md-5 mb-lg-5 mt-6">
+                <div className="row p-5">
+                    <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
-                        <h1 className="display-2 font-weight-bold mb-0">Welcome to the Sourcegraph community</h1>
+                        <h1 className="display-2 font-weight-bold mb-0">Welcome to the Sourcegraph Community</h1>
                         <p className="home__semiwide-paragraph my-5 display-5">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
@@ -37,15 +37,24 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                             Join our Slack
                         </a>
                     </div>
+                    <div className="col-lg-6">
+                        <figure>
+                            <img
+                                className="hero_img"
+                                src="/community/hero_illustration.svg"
+                                alt="Sourcegraph Hero Image"
+                            />
+                        </figure>
+                    </div>
                 </div>
             </div>
         }
     >
         <ContentSection className="py-5 text-center">
-            <h1 className="mt-5 mb-3">Get up to speed</h1>
+            <h2 className="display-3 font-weight-bold mt-5 mb-3">Get up to speed</h2>
             <div className="row justify-content-center">
                 <p className="col-md-8">
-                    We can’t give you a 25-hour day but here is a <a href="http://srcgr.ph/cheatsheet">speed sheet</a>{' '}
+                    We can’t give you a 25-hour day, but here is a <a href="http://srcgr.ph/cheatsheet">speed sheet</a>{' '}
                     with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive
                     into our curated
                     <a href="https://learn.sourcegraph.com/tags/sourcegraph"> tutorials</a> &#38; other{' '}
@@ -54,13 +63,15 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
             </div>
             <div className="row">
                 <div className="col-12 mt-4">
-                    <figure>
-                        <img
-                            className="cheatsheet_img"
-                            src="/community/cheatsheet_top.png"
-                            alt="Sourcegraph cheatsheet"
-                        />
-                    </figure>
+                    <a href="http://srcgr.ph/cheatsheet">
+                        <figure>
+                            <img
+                                className="cheatsheet_img"
+                                src="/community/cheatsheet_top.png"
+                                alt="Sourcegraph cheatsheet"
+                            />
+                        </figure>
+                    </a>
                 </div>
             </div>
         </ContentSection>
@@ -69,7 +80,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
             <ContentSection className="py-5">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h1 className="mb-3">Sourcegraph Champions Program</h1>
+                        <h2 className="display-3 font-weight-bold mb-3">Sourcegraph Champions Program</h2>
                         <p>
                             In the spirit of collaboration, we created the Sourcegraph Champions Program to serve the
                             developer community, create a friendly networking space and share knowledge among each
@@ -81,7 +92,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                             a "champion" in our eyes.
                         </p>
                         <p>
-                            We can't wait to meet you!
+                            We can't wait to meet you! And send you really cool custom swag ;)
                             <br />
                             <a
                                 className="btn btn-primary mt-3"
@@ -109,13 +120,22 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
         <ContentSection className="py-6">
             <div className="row">
                 <div className="col-lg-6">
-                    <h1 className="mt-5 mb-3">DM us on Slack. We're here.</h1>
+                    <h2 className="display-3 font-weight-bold mt-5 mb-3">DM us on Slack. We're here.</h2>
                     What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
                     <ul className="list-spaced">
                         <li>Ask questions - any questions: what is the best sit-stand desk?</li>
                         <li>Reach out to the community, discover new ideas &#38; seek or give mentorship</li>
                         <li>Share the road less traveled so that everyone can learn</li>
                     </ul>
+                    <a
+                        className="btn btn-primary"
+                        href={
+                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-usq3n1z4-PcDNPcN46aWSPrLxYR1z4g'
+                        }
+                        title="Join us on Slack"
+                    >
+                        Join us on Slack
+                    </a>
                 </div>
                 <div className="col-lg-5">
                     <img
@@ -128,7 +148,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
         </ContentSection>
 
         <ContentSection className="py-4">
-            <h1 className="mb-5 text-center">What's next?</h1>
+            <h2 className="display-3 font-weight-bold mb-5 text-center">What's next?</h2>
             <Tabs defaultActiveKey="configuration" id="use-cases" className="justify-content-center">
                 <Tab eventKey="configuration" title="Events">
                     <div className="row mt-5 justify-content-center">
@@ -164,11 +184,9 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
                             <p>
-                                Cool hardware. Most wanted guests. And hot topics. Check out our YouTube Channel:{' '}
-                                <a href="https://srcgr.ph/dev-tool-time-playlist">Dev Tool Time</a> to{' '}
-                                <a href="https://srcgr.ph/dev-tool-time">keep up with what’s next</a>.
+                                Cool hardware. Most-wanted guests. And hot topics. Check our <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to keep up with new episodes.
                             </p>
-                            <a href="https://info.sourcegraph.com/dev-tool-time">
+                            <a href="https://srcgr.ph/dev-tool-time-playlist">
                                 <img
                                     className="w-100 h-auto mt-4"
                                     width="850"
@@ -205,12 +223,12 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
         <ContentSection className="py-5">
             <div className="row">
                 <div className="col-lg-7">
-                    <h1 className="mb-3">We’d love to hear from you!</h1>
+                    <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
                     <br />
-                    Connect with us on the Sourcegraph Community Slack group, direct message us on Twitter, LinkedIn or
-                    email us at community@sourcegraph.com
+                    Connect with us on the Sourcegraph Community Slack group, direct message us on Twitter, LinkedIn, or
+                    email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
                 </div>
-                <div className="col-lg-5">
+                <div className="col-lg-5 mt-3">
                     <a
                         className="btn btn-secondary"
                         href={
