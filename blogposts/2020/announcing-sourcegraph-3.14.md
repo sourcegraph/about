@@ -162,7 +162,7 @@ Some organizations do not want to include any forks or archived repositories in 
 
 ## Aggregated search data added to Sourcegraph pings
 
-Sourcegraph collects a small amount of high-level and aggregate data from each instance – you can see the complete list of the [data we collect](https://docs.sourcegraph.com/admin/pings), and our [ping philosophy and rules](https://about.sourcegraph.com/handbook/engineering/adding_ping_data#ping-philosophy). New usage statistics –  specifically, aggregate search latencies, aggregated counts of users and searches for search mode types, and aggregated counts of search filter usage – will be sent to Sourcegraph via pings by default. The aggregated event count metrics can be disabled via the site admin flag `disableNonCriticalTelemetry`.
+Sourcegraph collects a small amount of high-level and aggregate data from each instance – you can see the complete list of the [data we collect](https://docs.sourcegraph.com/admin/pings), and our [ping philosophy and rules](https://handbook.sourcegraph.com/engineering/adding_ping_data#ping-philosophy). New usage statistics –  specifically, aggregate search latencies, aggregated counts of users and searches for search mode types, and aggregated counts of search filter usage – will be sent to Sourcegraph via pings by default. The aggregated event count metrics can be disabled via the site admin flag `disableNonCriticalTelemetry`.
 
 ## Experimental smart search bar
 

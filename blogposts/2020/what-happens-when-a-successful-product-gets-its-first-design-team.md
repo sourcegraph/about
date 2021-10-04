@@ -24,7 +24,7 @@ Here are our key initiatives:
 - Improve the overall consistency of our product
 - Increase the visibility and discoverability of core features
 
-You can visit our [handbook](https://about.sourcegraph.com/handbook/product/goals) to see all these goals documented in more detail.
+You can visit our [handbook](https://handbook.sourcegraph.com/product/goals) to see all these goals documented in more detail.
 
 ## Design debt
 
