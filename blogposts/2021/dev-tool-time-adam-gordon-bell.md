@@ -44,9 +44,10 @@ Missing from Adam's current setup is the custom-built and programmed split keybo
 
 
 
-## final section: the focus of configuration changes over time
+## Changing configurations
 
-from keyboards to writing environments
+Customization is a running thread in Adam's setup over time. What's changed is the focus and nature of that customization. Several years ago, having a keyboard with highly configured keybindings made development more efficient. Now, with his focus on writing prose, he puts his drive to customize into a well-configured writing environment that's built to facilitate his writing workflow. Like those still using his keyboard code, we'll look forward to learning from and using whichever hardware and dev tools Adam turns his efforts toward next.
+
 
 <figure>
     <figcaption style="text-align: center; font-style: italic;">Watch ...</figcaption>
@@ -55,7 +56,6 @@ from keyboards to writing environments
     </div>
 </figure>
 
-## Section 3
 
 ## Show notes
  
