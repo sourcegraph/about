@@ -14,7 +14,7 @@ published: true
 <!-- TODO: add captions to video embeds -->
 <!-- TODO: weave in short video clips -->
 
-As a developer advocate, [Adam Gordon Bell]() writes prose as a central part of his work. As a programmer, he wants the same experience writing prose that he has writing code, where linters and build pipelines help with consistency, formatting, and error checking. When Adam joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on September 29, 2021, he shared his favorite dev tools for writing and how Earthly helps keep his published writing high-quality.
+As a developer advocate, [Adam Gordon Bell](https://twitter.com/adamgordonbell) writes prose as a central part of his work. As a programmer, he wants the same experience writing prose that he has writing code, where linters and build pipelines help with consistency, formatting, and error checking. When Adam joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on September 29, 2021, he shared his favorite dev tools for writing and how Earthly helps keep his published writing high-quality.
 
 You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Adam’s desk setup:
 
@@ -40,9 +40,17 @@ Missing from Adam's current setup is the custom-built and programmed split keybo
 
 ## Writing as a developer
 
-> blockquote
+> When I started doing writing ... I want this kind of experience I was used to as a developer, where you have linting, compilers, and a build pipeline that tells you whether things work or not."
 
+Adam's main writing environment isn't a word processor, or even a speciality Markdown app. It's [VS Code](https://code.visualstudio.com/), configured with a few plugins and with easy access to a terminal to use command line utilities. Two tools are at the core of his workflow for writing Markdown, the markup language he regularly uses. [`markdownlint`](https://github.com/DavidAnson/markdownlint) analyzes Markdown files according to configurable rules to ensure consistent and well-formed Markdown. It also can automatically fix some common errors. [Vale](https://github.com/errata-ai/vale) provides grammar checking according to custom rules. While Adam uses some of his own rules, the Vale community, which includes large corporations, sources a large number of rules, including those to detect "corporate speak!"
 
+Working with these tools locally makes it easier for a single writer to avoid formatting and grammatical errors, but integrating them into a build pipeline is the real mark of a durable workflow for Adam. 
+
+> "If you don't use the Oxford comma, it will fail to build."
+
+He uses [Earthly](https://earthly.dev/), which he describes as a Makefile and Dockerfile combined together, to set up and run the build. In this instance of his company blog, Earthly runs the [Jekyll](http://jekyllrb.com/) build step, tests against multiple versions of Ruby, and runs the `markdownlint` and `vale` checks according to Adam's configured rules. Depending on configuration, the build really will fail if you don't use the Oxford comma.
+ 
+Used together, this set of tools let's anyone programmatically implement a style guide that anyone contributing writing to a shared blog or set of docs can follow, and provides the guarantees you want in professional writing. 
 
 ## Changing configurations
 
