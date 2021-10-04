@@ -1,6 +1,6 @@
 ---
 title: 'Writing prose like code: Dev Tool Time with Adam Gordon Bell'
-description: 'Adam Gordon Bell, Developer Advocate at Earthly, shares how he leverages dev tools to write consistent, high-quality technical prose.' 
+description: 'Adam Gordon Bell, Developer Advocate at Earthly, shares how he leverages dev tools to write consistent, high-quality technical prose.'
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-10-06T10:00-07:00
@@ -15,17 +15,17 @@ As a developer advocate, [Adam Gordon Bell](https://twitter.com/adamgordonbell) 
 
 You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Adam’s desk setup:
 
-## Hardware 
+## Hardware
 
 Adam drives two monitors with a 16" Macbook Pro hooked into a CalDigit Thunderbolt dock. He uses a Logitech gaming mouse, whose thumb buttons ease browser navigation.
 
 ![Adam's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/current-computer.jpeg)
 
-Notably, Adam uses a 45lb iron weight, directly under his Macbook, as a heatsink. Impressively, his sit/stand barely notices the weight, even when it's joined by Adam's one-eyed shelter cat, Griswald. 
+Notably, Adam uses a 45lb iron weight, directly under his Macbook, as a heatsink. Impressively, his sit/stand barely notices the weight, even when it's joined by Adam's one-eyed shelter cat, Griswald.
 
 ![Adam's 45lb weight heatsink](https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/heatsink.jpeg)
 
-As the host of the popular tech podcast [CoRecursive](https://corecursive.com/), Adam uses a [MixPre-6 audio interface](https://www.sounddevices.com/product/mixpre-6-ii/) and the popular [Electro-Voice RE20 microphone](https://products.electrovoice.com/na/en/re20), and has acoustic paneling in his office. 
+As the host of the popular tech podcast [CoRecursive](https://corecursive.com/), Adam uses a [MixPre-6 audio interface](https://www.sounddevices.com/product/mixpre-6-ii/) and the popular [Electro-Voice RE20 microphone](https://products.electrovoice.com/na/en/re20), and has acoustic paneling in his office.
 
 ## The cost of customization
 
@@ -55,12 +55,12 @@ Adam's main writing environment isn't a word processor, or even a speciality Mar
     </div>
 </figure>
 
-Working with these tools locally makes it easier for a single writer to avoid formatting and grammatical errors, but integrating them into a build pipeline is the real mark of a durable workflow for Adam. 
+Working with these tools locally makes it easier for a single writer to avoid formatting and grammatical errors, but integrating them into a build pipeline is the real mark of a durable workflow for Adam.
 
 > "If you don't use the Oxford comma, it will fail to build."
 
 He uses [Earthly](https://earthly.dev/), which he describes as a Makefile and Dockerfile combined together, to set up and run the build. In this instance of his company blog, Earthly runs the [Jekyll](http://jekyllrb.com/) build step, tests against multiple versions of Ruby, and runs the `markdownlint` and `vale` checks according to Adam's configured rules. Depending on configuration, the build really will fail if you don't use the Oxford comma.
- 
+
 <figure>
     <figcaption style="text-align: center; font-style: italic;">Listen to Adam talk about two approaches to build pipelines</figcaption>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
@@ -68,14 +68,14 @@ He uses [Earthly](https://earthly.dev/), which he describes as a Makefile and Do
     </div>
 </figure>
 
-Used together, this set of tools let's anyone programmatically implement a style guide that anyone contributing writing to a shared blog or set of docs can follow, and provides the guarantees you want in professional writing. 
+Used together, this set of tools let's anyone programmatically implement a style guide that anyone contributing writing to a shared blog or set of docs can follow, and provides the guarantees you want in professional writing.
 
 ## Changing configurations
 
 Customization is a running thread in Adam's setup over time. What's changed is the focus and nature of that customization. Several years ago, having a keyboard with highly configured keybindings made development more efficient. Now, with his focus on writing prose, he puts his drive to customize into a well-configured writing environment that's built to facilitate his writing workflow. Like those still using his keyboard code, we'll look forward to learning from and using whichever hardware and dev tools Adam turns his efforts toward next.
 
 ## Show notes
- 
+
 - [Docker](https://www.docker.com/)
 - [Earthly](https://earthly.dev/)
 - [Funky](https://github.com/bbugyi200/funky)
