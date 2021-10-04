@@ -90,7 +90,9 @@ Customization is a running thread in Adam's setup over time. What's changed is t
 
 ### Articles from Adam
 
-- [Modern CLI tools]()
+- [6 Command Line Tools for Productive Programmers](https://earthly.dev/blog/command-line-tools/)
+- [Understanding Awk](https://earthly.dev/blog/awk-examples/)
+- [Linting Markdown and Documentation](https://earthly.dev/blog/markdown-lint/)
 
 ## Watch the recording
 
