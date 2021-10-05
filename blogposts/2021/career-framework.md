@@ -1,5 +1,5 @@
 ---
-title: 'Async, remote, and flexible: How 7 engineers rethought their work calendars'
+title: 'How we built our software engineering career framework'
 description: 'Engineering managers and ICs at Sourcegraph once lacked a common language for growth. Here’s the story of how we developed the first version of our first engineering career framework.'
 author: Nick Moore
 authorUrl: https://twitter.com/nickwritesit
@@ -11,13 +11,11 @@ heroImage:
 socialImage:
 ---
 
-# How we built our software engineering career framework
-
-_Sourcegraph provides universal code search: a navigation engine for understanding your code. We're also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://about.sourcegraph.com/handbook/company/team). See our [careers page](https://boards.greenhouse.io/sourcegraph91) for current openings._
+_Sourcegraph provides universal code search: a navigation engine for understanding your code. We’re also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://about.sourcegraph.com/handbook/company/team). See our [careers page](https://boards.greenhouse.io/sourcegraph91) for current openings._
 
 Engineering managers felt empowered but unconfident. It was the summer of 2020 and the company was seven years old and about 50 people strong (about half of whom were engineers). In the year to come, we would grow, rapidly hiring more engineers.
 
-But scale revealed problems with the way we facilitated career growth. Before 2021, growth happened through individual conversations and high-impact work. When the engineering team numbers in the 20s, this worked. As we added engineers, however, engineering managers felt empowered to promote individual contributors (ICs) but unconfident they were calibrated with other engineering managers.
+But scale revealed problems with the way we facilitated career growth. Before 2021, growth happened through individual conversations and high-impact work. When the engineering team numbered in the 20s, this worked. As we added engineers, however, engineering managers felt empowered to promote individual contributors (ICs) but unconfident they were calibrated with other engineering managers.
 
 Individually, engineering managers and ICs cared about career growth but the conversation around growth was unclear and at times uneven. We didn’t have a common language and without a shared understanding of growth, misunderstanding and bias would eventually be inevitable.
 
@@ -59,11 +57,11 @@ The pressure increased when we realized these challenges would only get worse ov
 
 Some engineers didn’t know what their options were or what our expectations were. More and more engineering managers were reporting this confusion, finding that there were engineers who didn’t understand how career progression worked at Sourcegraph.
 
-### Engineering managers wanted to fairly level incoming hires
+### Engineering managers wanted to level incoming hires fairly
 
 Without a framework, engineering managers struggled to identify which levels incoming hires might occupy. As we scale and make more and more offers, we found we needed the ability to evaluate an ever wider spectrum of hires. We needed to know we were consistently making fair offers.
 
-Fairness was hard to ensure. How, for instance, could we know that hiring manager A was making an offer that's consistent with what hiring manager B would make? How, too, do we level someone who's coming in if we don't have a good sense of who the IC2s or IC3 are? The need for a framework only became more apparent.
+Fairness was hard to ensure. How, for instance, could we know that hiring manager A was making an offer that’s consistent with what hiring manager B would make? How, too, do we level someone who’s coming in if we don’t have a good sense of who the IC2s or IC3s are? The need for a framework only became more apparent.
 
 ### Bias was inevitable without objectivity
 
@@ -73,7 +71,7 @@ There was a lack of built-in fairness in the previous system. The system was not
 
 A framework forces managers to compare their assessment of how someone is doing and compare that to an objective list of expectations. Cultural differences, for example, can produce different assessments.
 
-Our working group, based on their own experiences, noted that what's considered a positive statement in Germany, for example, might be different from what's considered a positive statement in the U.S. (Patrick, who lives in Germany, pointed out this particular dynamic). In other words, what might feel like the straight reporting of facts in one culture might feel like bragging in another culture.
+Our working group, based on their own experiences, noted that what’s considered a positive statement in Germany, for example, might be different from what’s considered a positive statement in the U.S. (Patrick, who lives in Germany, pointed out this particular dynamic). In other words, what might feel like the straight reporting of facts in one culture might feel like bragging in another culture.
 
 The framework provided concreteness, which shifted the evaluation process closer to objectivity. With a set of example behaviors, managers can check their subjective opinions against specific, concrete models.
 
@@ -81,7 +79,7 @@ The framework provided concreteness, which shifted the evaluation process closer
 
 We didn’t start from a blank page. Many companies, Soucegraph now among them, have published their career development frameworks online for anyone to see and borrow from (examples of which we link to below).
 
-We didn’t want Sourcegraph to be a place where we unthinkingly copy what someone else did. The career framework posed an opportunity for us to innovate and to produce something new for the industry.
+We didn’t want Sourcegraph to be a place where we unthinkingly copy what someone else did. The career framework was an opportunity for us to innovate and to produce something new for the industry.
 
 And so, we carefully studied available frameworks, identified the differences between the frameworks, and determined which aspects we felt fit Sourcegraph.
 
@@ -149,7 +147,7 @@ Generally, the expectation is that as an IC advances, their impact increases in 
 
 The career development framework process was transparent from day one but up until the end of the project, most of the responses we got were variations of “LGTM!”
 
-It wasn't until the end, when the work was mostly done, that more substantive feedback started to come in.
+It wasn’t until the end, when the work was mostly done, that more substantive feedback started to come in.
 
 Even so, it wasn’t as much engagement as we would have liked. We reached out to engineering managers and asked for their feedback directly. We also paid special attention to engineers who had been at Sourcegraph a long time so as to make sure there were no concerns from the people who knew Sourcegraph best.
 
@@ -164,12 +162,12 @@ With a thumbs up (some of the thumbs being cautious and some enthusiastic), we f
 The resulting career development framework, based on our research as well as feedback from the wider organization, prioritized a few aspects:
 
 - **Simplicity**: where other frameworks were overly complex, with multiple different categories and levels, ours was simple. We wanted ICs to be able to reference it easily and efficiently as they went about their work. There was a tradeoff–other companies’ frameworks may indeed be more comprehensive–but we felt it was worth it. Better, we thought, to focus on the practical, real-world value released by something easier to use.
-- **Clarity**: where other frameworks were long, having ten or more categories and complex point systems, ours was short and clear. We wanted ICs to be able to grasp the framework intuitively and avoid getting lost in the weeds.
-- **Impact**: where other frameworks emphasized scope, ours emphasized impact. At all times, we wanted engineer managers to be asking their ICs, and ICs to be asking themselves, “what is the impact you’re having?” That impact might be cross-team and that impact might be on one team, but it needs to be significant.
+- **Clarity**: where other frameworks were long, having 10 or more categories and complex point systems, ours was short and clear. We wanted ICs to be able to grasp the framework intuitively and avoid getting lost in the weeds.
+- **Impact**: where other frameworks emphasized scope, ours emphasized impact. At all times, we wanted engineering managers to be asking their ICs, and ICs to be asking themselves, “What is the impact you’re having?” That impact might be cross-team and that impact might be on one team, but it needs to be significant.
 - **Example-driven**: where other frameworks provided checklists of items to be completed, ours provided illustrative examples and models. We wanted to design a system that couldn’t be hacked or gamed, a system where ICs have to consistently demonstrate a certain level of impact.
 - **Bias-resistant**: where the lack of a framework opens a company up to promoting different people for different (often unfair or unjust) reasons, ours provided objective criteria by which engineering managers could evaluate team members.
 
-Below, we highlight some especially important aspects of the resulting career development framework, all of which you can [read about in detail in our handbook](https://about.sourcegraph.com/handbook/engineering/career-development).
+Below, we highlight some especially important aspects of the resulting career development framework, all of which you can [read about in detail in our handbook](https://handbook.sourcegraph.com/engineering/career-development).
 
 ### Expectations
 
@@ -195,7 +193,7 @@ Promotions happen, according to our framework, “when your manager can make the
 
 Our framework notes too that it takes time to demonstrate the consistent meeting of expectations. This is important because no one wants to promote someone to a level they’d struggle in.
 
-In-band compensation increases can happen at any time but promotions are considered during [quarterly talent reviews](https://about.sourcegraph.com/handbook/engineering/career-development/talent-review-process).
+In-band compensation increases can happen at any time but promotions are considered during [quarterly talent reviews](https://handbook.sourcegraph.com/engineering/career-development/talent-review-process).
 
 ### Talent reviews
 
@@ -209,23 +207,23 @@ Our framework values efficiency. Any qualitative feedback for an IC “should be
 
 ### Levels
 
-[IC1](https://about.sourcegraph.com/handbook/engineering/career-development/framework#ic1) describes “An engineer focused on learning, growth, and establishing themselves as a contributing teammate.”
+[IC1](https://handbook.sourcegraph.com/engineering/career-development/framework#ic1) describes “An engineer focused on learning, growth, and establishing themselves as a contributing teammate.”
 
-[IC2](https://about.sourcegraph.com/handbook/engineering/career-development/framework#ic2) describes “A solid and autonomous contributor, executor, and collaborator.”
+[IC2](https://handbook.sourcegraph.com/engineering/career-development/framework#ic2) describes “A solid and autonomous contributor, executor, and collaborator.”
 
-[IC3](https://about.sourcegraph.com/handbook/engineering/career-development/framework#ic3) describes “An experienced, strong individual contributor (Senior equivalent).”
+[IC3](https://handbook.sourcegraph.com/engineering/career-development/framework#ic3) describes “An experienced, strong individual contributor (Senior equivalent).”
 
-[IC4](https://about.sourcegraph.com/handbook/engineering/career-development/framework#ic4) describes “A particularly experienced, impactful contributor.”
+[IC4](https://handbook.sourcegraph.com/engineering/career-development/framework#ic4) describes “A particularly experienced, impactful contributor.”
 
-[IC5](https://about.sourcegraph.com/handbook/engineering/career-development/framework#ic5) describes “A different IC role from levels 1-4, with a focus on technical leadership.”
+[IC5](https://handbook.sourcegraph.com/engineering/career-development/framework#ic5) describes “A different IC role from levels 1-4, with a focus on technical leadership.”
 
-[IC6](https://about.sourcegraph.com/handbook/engineering/career-development/framework#ic6) and [IC7](https://about.sourcegraph.com/handbook/engineering/career-development/framework#ic7) are deliberately left without bullet points, having not yet been finalized.
+[IC6](https://handbook.sourcegraph.com/engineering/career-development/framework#ic6) and [IC7](https://handbook.sourcegraph.com/engineering/career-development/framework#ic7) are deliberately left without bullet points, having not yet been finalized.
 
 Titles were of particular concern to us as we designed these levels. In other companies, we found during our research, ICs might get titles like “Team Lead” or “Tech Lead” as they advanced.
 
 We were influenced by the book _Turn The Ship Around!: A True Story of Building Leaders by Breaking the Rules_ by L. David Marquet, and wanted to design a “leader-leader” model, not a “leader-follower” model. Instead of having one person lead and dictate, and a team who implements, we wanted a company composed of leaders.
 
-We don’t have a history of assigning specific leads to projects. Anyone can, for instance, write a [Request For Comment (RFC)](https://about.sourcegraph.com/handbook/communication/rfcs), and anyone can shepherd or drive an initiative.
+We don’t have a history of assigning specific leads to projects. Anyone can, for instance, write a [Request For Comment (RFC)](https://handbook.sourcegraph.com/communication/rfcs), and anyone can shepherd or drive an initiative.
 
 Levels are better associated with the complexity of the project. A more senior IC will drive a more complex project.
 
@@ -245,7 +243,7 @@ IC5 was our biggest struggle. This showed through when IC5 got the most feedback
 
 These roles tend to be better defined in bigger companies. We’re just starting to get to the size where an IC5 or staff engineer role can be well-defined.
 
-Our struggle is parallel to that of a 10-person startup trying to define a VP of Engineering. Are you actually a VP? Or are you really just a manager? It's hard to define higher levels when your company is small and the problem ladders up as you grow.
+Our struggle is parallel to that of a 10-person startup trying to define a VP of Engineering. Are you actually a VP? Or are you really just a manager? It’s hard to define higher levels when your company is small and the problem ladders up as you grow.
 
 As such, IC5 and above are the most likely to change during calibration.
 
@@ -261,7 +259,7 @@ It’s hard, then, to write a description that encompasses two very different ki
 
 A framework enables us to step back and take an objective view of demographic distributions. With a framework, we can ask, for example, what the distributions of women or people of color in the organization is.
 
-No process, however, is perfect. Concrete criteria help but a manager is always involved in growth discussions. The framework depends on our managers’ abilities to use it and their willingness to [be welcoming and inclusive](https://about.sourcegraph.com/handbook/company/values#be-welcoming-and-inclusive). To help further reduce the chance of bias, a representative from People Ops will attend every talent review.
+No process, however, is perfect. Concrete criteria help but a manager is always involved in growth discussions. The framework depends on our managers’ abilities to use it and their willingness to [be welcoming and inclusive](https://handbook.sourcegraph.com/company/values#be-welcoming-and-inclusive). To help further reduce the chance of bias, a representative from People Ops will attend every talent review.
 
 ## Recommendations
 
@@ -271,7 +269,7 @@ We came away from the process with numerous takeaways that companies, especially
 
 Our number one piece of advice? Hurry up and do it. On the way, get lots and lots of feedback.
 
-You might, however, be concerned about timing. Too late and bias, among other flaws, has time to fester; too early and you might not get the feedback you need. If you're getting friction from people then it's probably not the right time. A framework is supposed to aid engineering managers and ICs alike. If you're getting resistance there, then it's too soon.
+You might, however, be concerned about timing. Too late, and bias, among other flaws, has time to fester; too early, and you might not get the feedback you need. If you’re getting friction from people then it’s probably not the right time. A framework is supposed to aid engineering managers and ICs alike. If you’re getting resistance there, then it’s too soon.
 
 We had considered and rejected the idea of a framework once before, when engineers at Sourcegraph numbered in the 20s and the company as a whole was hardly 40 strong. At the time, we biased toward hiring experienced engineers and giving them high-impact work, so we didn’t need a lot of explicit coaching. Nick, our VP of engineering, was the single source of truth. It was only when we scaled that we realized a framework had become necessary.
 
