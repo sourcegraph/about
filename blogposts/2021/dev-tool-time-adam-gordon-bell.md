@@ -23,8 +23,6 @@ Adam drives two monitors with a 16" Macbook Pro hooked into a CalDigit Thunderbo
 
 Notably, Adam uses a 45lb iron weight, directly under his Macbook, as a heatsink. Impressively, his sit/stand barely notices the weight, even when it’s joined by Adam’s one-eyed shelter cat, Griswald.
 
-![Adam’s 45lb weight heatsink](https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/heatsink.jpeg)
-
 As the host of the popular tech podcast [CoRecursive](https://corecursive.com/), Adam uses a [MixPre-6 audio interface](https://www.sounddevices.com/product/mixpre-6-ii/) and the popular [Electro-Voice RE20 microphone](https://products.electrovoice.com/na/en/re20), and has acoustic paneling in his office.
 
 ## The cost of customization
@@ -33,13 +31,11 @@ As the host of the popular tech podcast [CoRecursive](https://corecursive.com/),
 
 Missing from Adam’s current setup is the custom-built and programmed split keyboard he used several years ago. In his focus on configuration, he had even contributed code to the keyboard’s software, code that people are still using today. After his keyboard broke, though, Adam discovered the unpleasantness of no longer being able to comfortably and easily use a standard keyboard, and so switched to using a regular Apple keyboard to avoid the same pain in the future.
 
-![Adam’s 2016 desk setup with custom keyboard](https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/2016-computer-ergodox.png)
-
 <figure>
-    <figcaption style="text-align: center; font-style: italic;">Adam’s custom keyboard and struggle</figcaption>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/custom-keyboard-struggle.mp4"></video>
     </div>
+    <figcaption style="text-align: center; font-style: italic;">Adam’s custom keyboard and struggle</figcaption>
 </figure>
 
 ## Writing as a developer
@@ -49,10 +45,10 @@ Missing from Adam’s current setup is the custom-built and programmed split key
 Adam’s main writing environment isn’t a word processor, or even a speciality Markdown app. It’s [VS Code](https://code.visualstudio.com/), configured with a few plugins and with easy access to a terminal to use command line utilities. Two tools are at the core of his workflow for writing Markdown, the markup language he regularly uses. [`markdownlint`](https://github.com/DavidAnson/markdownlint) analyzes Markdown files according to configurable rules to ensure consistent and well-formed Markdown. It also can automatically fix some common errors. [Vale](https://github.com/errata-ai/vale) provides grammar checking according to custom rules. While Adam uses some of his own rules, the Vale community, which includes large corporations, sources a large number of rules, including those to detect “corporate speak!”
 
 <figure>
-    <figcaption style="text-align: center; font-style: italic;">See Vale in action detecting “corporate speak”</figcaption>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/corporate-speak.mp4"></video>
     </div>
+    <figcaption style="text-align: center; font-style: italic;">See Vale in action detecting “corporate speak”</figcaption>
 </figure>
 
 Working with these tools locally makes it easier for a single writer to avoid formatting and grammatical errors, but integrating them into a build pipeline is the real mark of a durable workflow for Adam.
@@ -62,10 +58,10 @@ Working with these tools locally makes it easier for a single writer to avoid fo
 He uses [Earthly](https://earthly.dev/), which he describes as a Makefile and Dockerfile combined together, to set up and run the build. In this instance of his company blog, Earthly runs the [Jekyll](http://jekyllrb.com/) build step, tests against multiple versions of Ruby, and runs the `markdownlint` and `vale` checks according to Adam’s configured rules. Depending on configuration, the build really will fail if you don’t use the Oxford comma.
 
 <figure>
-    <figcaption style="text-align: center; font-style: italic;">Listen to Adam talk about two approaches to build pipelines</figcaption>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/Earthly.mp4"></video>
     </div>
+    <figcaption style="text-align: center; font-style: italic;">Listen to Adam talk about two approaches to build pipelines</figcaption>
 </figure>
 
 Used together, this set of tools lets anyone programmatically implement a style guide that anyone contributing writing to a shared blog or set of docs can follow, and provides the guarantees you want in professional writing.
