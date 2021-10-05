@@ -21,7 +21,7 @@ Individually, engineering managers and ICs cared about career growth but the con
 
 The solution? A framework that would align the entire engineering organization and create consistent, fair, and scalalabe conversations about growth. This is the story of how we collaborated to form an engineering career development framework.
 
-If you want to skip to the results, you can [read the handbook page](https://about.sourcegraph.com/handbook/engineering/career-development) or read the summary in this post. But if you want the story, and to see how you can apply our learnings at your company, read on.
+If you want to skip to the results, you can [read the handbook page](https://handbook.sourcegraph.com/engineering/career-development) or read the summary in this post. But if you want the story, and to see how you can apply our learnings at your company, read on.
 
 ## Engineering managers, assemble!
 
@@ -35,9 +35,9 @@ The working group consisted of four people:
 
 Everyone else in engineering was to be informed of the project’s progress and results.
 
-The team, sans Nick, met once a week for half an hour each. We did most of the work [asynchronously](https://about.sourcegraph.com/handbook/company/asynchronous-communication) and reported, weekly, to engineering leadership.
+The team, sans Nick, met once a week for half an hour each. We did most of the work [asynchronously](https://handbook.sourcegraph.com/company/asynchronous-communication) and reported, weekly, to engineering leadership.
 
-In accordance with our [transparency value](https://www.google.com/url?q=https://about.sourcegraph.com/handbook/company/values%23open-and-transparent&sa=D&source=editors&ust=1633036256480000&usg=AOvVaw1CtjufBG3pXsNohoNQ25Wa), we worked in the open. All proposals were in Google Docs that we shared with the entire company. We also asked engineering managers to bring it up in their one-one-ones. If people weren’t comfortable with that directness, we also created an anonymous feedback form.
+In accordance with our [transparency value](https://handbook.sourcegraph.com/company/values#open-and-transparent), we worked in the open. All proposals were in Google Docs that we shared with the entire company. We also asked engineering managers to bring it up in their one-one-ones. If people weren’t comfortable with that directness, we also created an anonymous feedback form.
 
 Even candidates got a peek at the framework:
 
