@@ -49,7 +49,7 @@ Missing from Adam’s current setup is the custom-built and programmed split key
 Adam’s main writing environment isn’t a word processor, or even a speciality Markdown app. It’s [VS Code](https://code.visualstudio.com/), configured with a few plugins and with easy access to a terminal to use command line utilities. Two tools are at the core of his workflow for writing Markdown, the markup language he regularly uses. [`markdownlint`](https://github.com/DavidAnson/markdownlint) analyzes Markdown files according to configurable rules to ensure consistent and well-formed Markdown. It also can automatically fix some common errors. [Vale](https://github.com/errata-ai/vale) provides grammar checking according to custom rules. While Adam uses some of his own rules, the Vale community, which includes large corporations, sources a large number of rules, including those to detect “corporate speak!”
 
 <figure>
-    <figcaption style="text-align: center; font-style: italic;">See Vale in action detecting "corporate speak"</figcaption>
+    <figcaption style="text-align: center; font-style: italic;">See Vale in action detecting “corporate speak”</figcaption>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/corporate-speak.mp4"></video>
     </div>
