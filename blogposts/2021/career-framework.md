@@ -1,8 +1,7 @@
 ---
 title: 'How we built our software engineering career framework'
 description: 'Engineering managers and ICs at Sourcegraph once lacked a common language for growth. Here’s the story of how we developed the first version of our first engineering career framework.'
-author: Nick Moore
-authorUrl: https://twitter.com/nickwritesit
+author: Nick Moore, Chris Pine, Nick Snyder, Felix Becker, Patrick Dubroy
 published: true
 publishDate: 2021-10-07T10:00-07:00
 tags: [blog]
@@ -19,9 +18,9 @@ But scale revealed problems with the way we facilitated career growth. Before 20
 
 Individually, engineering managers and ICs cared about career growth but the conversation around growth was unclear and at times uneven. We didn’t have a common language and without a shared understanding of growth, misunderstanding and bias would eventually be inevitable.
 
-The solution? A framework that would align the entire engineering organization and create consistent, fair, and scalalabe conversations about growth. This is the story of how we collaborated to form an engineering career development framework.
+The solution? A framework that would align the entire engineering organization and create consistent, fair, and scalalabe conversations about growth. This is the deep dive, behind the scenes story of how we collaborated to form an engineering career development framework.
 
-If you want to skip to the results, you can [read the handbook page](https://handbook.sourcegraph.com/engineering/career-development) or read the summary in this post. But if you want the story, and to see how you can apply our learnings at your company, read on.
+If you want to skip to the results, you can [read the handbook page](https://handbook.sourcegraph.com/engineering/career-development) or [read the summary](#the-sourcegraph-career-development-framework) in this post. But if you want the story, and to see how you can apply our learnings at your company, read on.
 
 ## Engineering managers, assemble!
 
@@ -151,7 +150,7 @@ It wasn’t until the end, when the work was mostly done, that more substantive 
 
 Even so, it wasn’t as much engagement as we would have liked. We reached out to engineering managers and asked for their feedback directly. We also paid special attention to engineers who had been at Sourcegraph a long time so as to make sure there were no concerns from the people who knew Sourcegraph best.
 
-In some cases, those feedback requests resulted in a cautious thumbs-up. Engineers liked the idea of a framework, and wanted to try what the working group had produced, but also wanted to remain open to changing the framework if it didn’t work. Luckily for them, that was the plan all along (see the **Calibration to come** section below).
+In some cases, those feedback requests resulted in a cautious thumbs-up. Engineers liked the idea of a framework, and wanted to try what the working group had produced, but also wanted to remain open to changing the framework if it didn’t work. Luckily for them, that was the plan all along (see the [calibration to come](#calibration-to-come) section below).
 
 We found it surprisingly easy to get buy-in. A potential cause of this is how much time we invested into the effort. We always took the time to hash out different situations and possibilities. Our detailed discussions ensured that most eventualities were built into the framework by the time the rest of the team saw it.
 
