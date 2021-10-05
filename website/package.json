@@ -25,6 +25,7 @@
     "gatsby-remark-images": "^3.11.0",
     "gatsby-remark-prismjs": "^3.13.0",
     "gatsby-remark-responsive-image": "^1.0.0-beta.5-alpha.fb30fcd6",
+    "gatsby-remark-smartypants": "^2.3.0",
     "gatsby-remark-unwrap-images": "^1.0.2",
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-json": "^2.11.0",
