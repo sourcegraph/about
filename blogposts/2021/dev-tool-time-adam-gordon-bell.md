@@ -29,7 +29,7 @@ As the host of the popular tech podcast [CoRecursive](https://corecursive.com/),
 
 > “If you’re out there and you have a crazy custom keyboard and you’re using the permissive hold feature, just remember that I built that and then gave up on the whole thing.”
 
-Missing from Adam’s current setup is the custom-built and programmed split keyboard he used several years ago. In his focus on configuration, he had even contributed code to the keyboard’s software, code that people are still using today. After his keyboard broke, though, Adam discovered the unpleasantness of no longer being able to comfortably and easily use a standard keyboard, and so switched to using a regular Apple keyboard to avoid the same pain in the future.
+Missing from Adam’s current setup is the custom-built and programmed split keyboard he used several years ago. Building his own configuration led him to contribute code to the keyboard’s software—code that people are still using today. After his keyboard broke, though, Adam discovered the unpleasantness of no longer being able to comfortably and easily use a standard keyboard, and so switched to using a regular Apple keyboard to avoid the same pain in the future.
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
@@ -42,7 +42,7 @@ Missing from Adam’s current setup is the custom-built and programmed split key
 
 > “When I started doing writing ... I want this kind of experience I was used to as a developer, where you have linting, compilers, and a build pipeline that tells you whether things work or not.”
 
-Adam’s main writing environment isn’t a word processor, or even a speciality Markdown app. It’s [VS Code](https://code.visualstudio.com/), configured with a few plugins and with easy access to a terminal to use command line utilities. Two tools are at the core of his workflow for writing Markdown, the markup language he regularly uses. [`markdownlint`](https://github.com/DavidAnson/markdownlint) analyzes Markdown files according to configurable rules to ensure consistent and well-formed Markdown. It also can automatically fix some common errors. [Vale](https://github.com/errata-ai/vale) provides grammar checking according to custom rules. While Adam uses some of his own rules, the Vale community, which includes large corporations, sources a large number of rules, including those to detect “corporate speak!”
+Adam’s main writing environment isn’t a word processor, or even a speciality Markdown app. It’s [VS Code](https://code.visualstudio.com/), configured with a few plugins and with easy access to a terminal to use command line utilities. Two tools are at the core of his workflow for writing Markdown, the markup language he regularly uses. [`markdownlint`](https://github.com/DavidAnson/markdownlint) analyzes Markdown files according to configurable rules to ensure consistent and well-formed Markdown. It also can automatically fix some common errors. [Vale](https://github.com/errata-ai/vale) provides grammar checking according to custom rules. While Adam uses some of his own rules, the Vale community, which includes companies like Gitlab and Linode, sources a large number of rules, including those to detect “corporate speak!”
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
@@ -51,7 +51,7 @@ Adam’s main writing environment isn’t a word processor, or even a speciality
     <figcaption style="text-align: center; font-style: italic;">See Vale in action detecting “corporate speak”</figcaption>
 </figure>
 
-Working with these tools locally makes it easier for a single writer to avoid formatting and grammatical errors, but integrating them into a build pipeline is the real mark of a durable workflow for Adam.
+Working with these tools locally makes it easier for a single writer to avoid formatting and grammatical errors, but integrating them into a build pipeline, as Adam demonstrates, is the real mark of a durable workflow.
 
 > “If you don’t use the Oxford comma, it will fail to build.”
 
