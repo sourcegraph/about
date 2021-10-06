@@ -33,8 +33,6 @@ Sourcegraph helps companies solve [Big Code problems](https://about.sourcegraph.
 
 Visit [sourcegraph.com/jobs](https://handbook.sourcegraph.com/company/careers) for career opportunities, follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph), or visit [about.sourcegraph.com](https://about.sourcegraph.com/).
 
-## Media Contact
+## Media contact
 
-Tanya Carlsson<br />
-Offleash PR for Sourcegraph<br />
-[sourcegraph@offleashpr.com ](mailto:sourcegraph@offleashpr.com)
+[press@sourcegraph.com](mailto:press@sourcegraph.com)
