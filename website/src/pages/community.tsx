@@ -184,7 +184,9 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
                             <p>
-                                Cool hardware. Most-wanted guests. And hot topics. Check our <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to keep up with new episodes.
+                                Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
+                                <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
+                                keep up with new episodes.
                             </p>
                             <a href="https://srcgr.ph/dev-tool-time-playlist">
                                 <img
