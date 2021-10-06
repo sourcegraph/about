@@ -46,11 +46,11 @@ We united around a passion for career growth. We often spent time talking about 
 
 ## Sourcegraph prior to the framework
 
-Prior to the framework, engineering managers didn’t know how to talk to their reports about career progression. Without a career framework, engineering managers and their reports were left without a shared language.
+Prior to the framework, engineering managers weren't confident they were talking about career development in a way that was consistent with other engineering managers. Without a career framework, engineering managers and their reports were left without a shared language.
 
 This worked when we were small but threatened to become dysfunctional as we scaled. As we added teams, we worried engineering managers were having, or would start having, completely different conversations about what growth looked like.
 
-The pressure increased when we realized these challenges would only get worse over time. If we were to continue scaling, and we certainly [wanted to scale](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/), then we needed to start solving these problems for the future. But first, we had to identify them.
+It was clear these challenges were only going to increase over time. If we were to continue scaling, and we certainly [wanted to scale](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/), then we needed to start solving these problems for the future. But first, we had to identify them.
 
 ### Some engineers (and engineering managers) felt lost
 
@@ -58,7 +58,7 @@ Some engineers didn’t know what their options were or what our expectations we
 
 ### Engineering managers wanted to level incoming hires fairly
 
-Without a framework, engineering managers struggled to identify which levels incoming hires might occupy. As we scale and make more and more offers, we found we needed the ability to evaluate an ever wider spectrum of hires. We needed to know we were consistently making fair offers.
+Without a framework, engineering managers had to spend time leveling candidates on a case-by-case basis. As we scaled and made more and more offers, we found we needed the ability to evaluate an ever wider spectrum of hires. We needed to know we were consistently making fair offers.
 
 Fairness was hard to ensure. How, for instance, could we know that hiring manager A was making an offer that’s consistent with what hiring manager B would make? How, too, do we level someone who’s coming in if we don’t have a good sense of who the IC2s or IC3s are? The need for a framework only became more apparent.
 
