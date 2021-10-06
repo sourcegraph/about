@@ -45,6 +45,4 @@ Visit [sourcegraph.com/jobs](https://handbook.sourcegraph.com/company/careers) f
 
 ## Media contact
 
-Kelly Hall<br>
-Offleash PR for Sourcegraph<br>
-[sourcegraph@offleashpr.com](mailto:sourcegraph@offleashpr.com)
+[press@sourcegraph.com](mailto:press@sourcegraph.com)
