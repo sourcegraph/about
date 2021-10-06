@@ -34,7 +34,7 @@ Plus, there are several new and improved [Sourcegraph extensions](https://docs.s
 - [Go language support](https://sourcegraph.com/extensions/sourcegraph/go)
 - [Python language support](https://sourcegraph.com/extensions/sourcegraph/python)
 
-Also, in case you missed it, [Sourcegraph is now open source](/handbook/community/faq) (Apache-licensed).
+Also, in case you missed it, [Sourcegraph is now open source](https://handbook.sourcegraph.com/community/faq) (Apache-licensed).
 
 Want to hear about new features and releases as soon as they're available? Follow [@sourcegraph](https://twitter.com/sourcegraph).
 

@@ -3,6 +3,27 @@
     "year": 2021,
     "articles": [
       {
+        "newsSource": "Business Insider",
+        "newsTitle": "The cofounder of hot $2.6 billion startup Sourcegraph explains how its ambitious master plan to index all the open source code in the world will help developers manage burnout",
+        "newsDate": "September 26, 2021",
+        "newsLink": "https://www.businessinsider.com/sourcegraph-ceo-on-indexing-all-open-source-code-2021-8",
+        "newsImage": "/external-logos/business-insider-logo.png"
+      },
+      {
+        "newsSource": "VentureBeat",
+        "newsTitle": "Sourcegraph plans to index the entire open source web",
+        "newsDate": "August 19, 2021",
+        "newsLink": "https://venturebeat.com/2021/08/19/sourcegraph-plans-to-index-the-entire-open-source-web/",
+        "newsImage": "/external-logos/venturebeat-logo.png"
+      },
+      {
+        "newsSource": "Techcrunch",
+        "newsTitle": "Sourcegraph raises $125M Series D on $2.6B valuation for universal code search tool",
+        "newsDate": "July 13, 2021",
+        "newsLink": "https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/",
+        "newsImage": "/external-logos/techcrunch-logo.png"
+      },
+      {
         "newsSource": "VentureBeat",
         "newsTitle": "Sourcegraph now lets enterprises automate large-scale code changes across repositories",
         "newsDate": "March 24, 2021",

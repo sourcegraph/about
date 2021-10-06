@@ -9,7 +9,7 @@ heroImage: https://sourcegraphstatic.com/blog/lsif-go/lsif-go-improvements.png
 published: true
 ---
 
-We (Sourcegraph's [code intelligence team](https://about.sourcegraph.com/handbook/engineering/code-intelligence)) recently made Go [code intelligence](https://docs.sourcegraph.com/code_intelligence) faster, especially on very large repositories. For example, we cut the indexing time by 95% for the huge [Go AWS SDK](https://sourcegraph.com/github.com/aws/aws-sdk-go) repository, from 8 minutes to 24 seconds. Here's how we did it.
+We (Sourcegraph's [code intelligence team](https://handbook.sourcegraph.com/engineering/code-intelligence)) recently made Go [code intelligence](https://docs.sourcegraph.com/code_intelligence) faster, especially on very large repositories. For example, we cut the indexing time by 95% for the huge [Go AWS SDK](https://sourcegraph.com/github.com/aws/aws-sdk-go) repository, from 8 minutes to 24 seconds. Here's how we did it.
 
 ## Background: what is code intelligence?
 
@@ -149,7 +149,7 @@ Each shared datastructure has its own mutex so that contention from one resource
 
 Instead, we can protect the inner map with a [striped mutex](https://guava.dev/releases/19.0/api/docs/com/google/common/util/concurrent/Striped.html). A striped mutex is basically an array of shared mutexes, where a resource `r` is locked if the mutex at index `hash(r)` is locked (modulo the configured number of mutexes). This is a good middle-ground between having one mutex for a highly contended resource, and having `n` distinct mutexes for a map with `n` keys.
 
-**Work must be scheduled around data dependencies.** Previously, lsif-go was set up as a simple pipeline for readability. Some (but not all) of these pipeline steps are a prerequisite for some future step. For example, we assume that our map of definitions is already populated by the time we start to index references. 
+**Work must be scheduled around data dependencies.** Previously, lsif-go was set up as a simple pipeline for readability. Some (but not all) of these pipeline steps are a prerequisite for some future step. For example, we assume that our map of definitions is already populated by the time we start to index references.
 
 Due to such data dependencies, it would be an obviously incorrect solution to run all of the pipeline steps in parallel. Our solution is to parallelize the workload in distinct steps (first index all definitions, then index all references), where each step can rely on data calculated by the previous step which was parallelized individually.
 

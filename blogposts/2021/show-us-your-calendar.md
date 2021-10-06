@@ -13,7 +13,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20
 
 ![Flexible work calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png)
 
-_Sourcegraph provides universal code search: a navigation engine for understanding your code. We're also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://about.sourcegraph.com/handbook/company/team)._
+_Sourcegraph provides universal code search: a navigation engine for understanding your code. We're also an [all-remote](https://handbook.sourcegraph.com/company/remote) company with a global [team](https://handbook.sourcegraph.com/company/team)._
 
 Work is only one part of our lives, but until remote work, it occupied a sacrosanct place in our schedules. You were to work between the hours of 9 am and 5 pm, not including your commute to and from the office, and the rest of your life had to flow around that block.
 
@@ -23,15 +23,13 @@ This is [r/battlestations](https://www.reddit.com/r/battlestations/) by way of G
 
 ## Loïc Guychard, engineering manager, has a four-day work week
 
-[Loïc Guychard](https://about.sourcegraph.com/handbook/company/team#lo%C3%AFc-guychard), engineering manager at Sourcegraph, compares work time to closet space: “If you have it, you’re going to use it. Whether you use it for things that matter, that’s a different story.”
+[Loïc Guychard](https://handbook.sourcegraph.com/company/team#lo%C3%AFc-guychard), engineering manager at Sourcegraph, compares work time to closet space: “If you have it, you’re going to use it. Whether you use it for things that matter, that’s a different story.”
 
 To compress his closet space, Loïc only works four days a week. He works from 10 am to 7 pm and takes Fridays off. The four-day work week constrains him in a creative way, forcing him to make better decisions with his time.
 
 > “Time-spent-at-desk is the worst measure of efficiency in software engineering.” - Loïc Guychard, engineering manager
 
 He's able to make better decisions partially because his longer weekends give him more energy. “You get a very good reset out of a three-day weekend,” he says. Plus, “when I do get to my holiday, I’m not crawling like I used to.”
-
-![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4_day_work_week_highres.png)
 
 Loïc extends his flexibility to his reports, arguing that “Input hours are a bad metric for any sort of efficiency.” According to him, “Time-spent-at-desk is the worst measure of efficiency in software engineering. I literally don’t care what hours my reports are working. I just care about output.”
 
@@ -43,7 +41,7 @@ Flexibility isn’t just a benefit to be tallied up against other benefits–it 
 
 ## Stephen Gutekanst, software engineer, takes “workations”
 
-[Stephen Gutekanst](https://about.sourcegraph.com/handbook/company/team#stephen-gutekanst), software engineer at Sourcegraph, gets bored during vacation. As much as he’d like to relax, his distance away from meetings creates the perfect headspace for inspiration. That unique headspace inspired him to make a change.
+[Stephen Gutekanst](https://handbook.sourcegraph.com/company/team#stephen-gutekanst), software engineer at Sourcegraph, gets bored during vacation. As much as he’d like to relax, his distance away from meetings creates the perfect headspace for inspiration. That unique headspace inspired him to make a change.
 
 Every once in a while, on an ad hoc, as-needed basis, Gutekanst marks a vacation in his calendar, turns off Slack and Zoom, and focuses entirely on coding–for as much as two weeks at a time.
 
@@ -51,11 +49,10 @@ The workplace can get noisy. For Gutekanst, it comes in waves.
 
 Over the course of two months, he says, half of his time might go toward helping other people: “It’s a weird conundrum because it’s a completely useful way to spend my time. On the other hand, it’s completely unrelated to what my focus area actually is, which is working on a product feature or something like that.”
 
-![Slack message from Stephen regarding his workation](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.19.29%20PM.png)
-
-<p class="font-italic text-center">
-Stephen’s message to the team about his workation.
-</p>
+<figure>
+  <object role="image" data="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/stephen-gutekanst-workation.svg" width="791" height="426"></object>
+  <figcaption>Stephen’s message to the team about his workation.</figcaption>
+</figure>
 
 Part of the reason for that comes from working at a [high-growth startup](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/): “A lot of the time, we don’t have an owner for an area and I’m the person with the most context, so it’s useful for me to help out there.”
 
@@ -69,7 +66,7 @@ He takes a workation “whenever there’s a time where I’m like ‘Hey, I’d
 
 “Switching to a 4-day work week was the best decision as the primary caretaker of two small children.”
 
-[Vanesa Ortiz](https://about.sourcegraph.com/handbook/company/team#vanesa-ortiz-she-her), community advocate at Sourcegraph and co-host of [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), had brain fog after her first child. When she came back from maternity leave, she struggled to code the way she used to be able to. “I couldn’t focus correctly,” she said. “I felt like I was constantly deprived, which is literally what happens when you’re a milk factory 24/7.”
+[Vanesa Ortiz](https://handbook.sourcegraph.com/company/team#vanesa-ortiz-she-her), community advocate at Sourcegraph and co-host of [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), had brain fog after her first child. When she came back from maternity leave, she struggled to code the way she used to be able to. “I couldn’t focus correctly,” she said. “I felt like I was constantly deprived, which is literally what happens when you’re a milk factory 24/7.”
 
 Vanesa was struggling to juggle a full-time job, a new baby, and her portion of the household work. Weekends were no longer a space for recovery; they became stressful days for housework and childcare: “I was exhausted after the weekend.”
 
@@ -81,17 +78,22 @@ Vanesa recommends the four-day work week to everyone, but especially to primary 
 
 ## TJ DeVries, software engineer, streams on Fridays
 
-[TJ DeVries](https://about.sourcegraph.com/handbook/company/team#tj-devries), software engineer at Sourcegraph and core maintainer for open source text editor [Neovim](https://neovim.io/), streams almost all day every Friday. How? He works four tens: four days a week, ten hours each.
+[TJ DeVries](https://handbook.sourcegraph.com/company/team#tj-devries), software engineer at Sourcegraph and core maintainer for open source text editor [Neovim](https://neovim.io/), streams almost all day every Friday. How? He works four tens: four days a week, ten hours each.
 
 > “I could work in the middle of the night for two nights a week and if I ship all the same amount of stuff, I don’t think people would mind.” - TJ DeVries, software engineer
 
-TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy. Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
+TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy.
+
+![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4_day_work_week_highres.png)
+
+Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
+
+<figure>
 
 ![TJ coding live on Twitch](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%202.03.37%20PM.png)
 
-<p class="font-italic text-center">
-TJ coding live on Twitch.
-</p>
+  <figcaption>TJ coding live on Twitch.</figcaption>
+</figure>
 
 Many would rightfully worry that lopping off one day a week wouldn’t sit well with a manager. TJ had the opposite experience: "No one minds how you’re working as long as you’re getting done what you say you’re going to get done and staying healthy." As long as his new schedule wasn’t a detriment to his team, TJ says, then he had his manager’s full support.
 
@@ -101,7 +103,7 @@ When considering how to build your own work schedule, TJ recommends carrying ove
 
 ## Robert Lin, software engineer, has a split schedule
 
-[Robert Lin](https://about.sourcegraph.com/handbook/company/team#robert-lin), software engineer at Sourcegraph, likes bouldering and hates queues.
+[Robert Lin](https://handbook.sourcegraph.com/company/team#robert-lin), software engineer at Sourcegraph, likes bouldering and hates queues.
 
 “For some activities,” he says, “you just can’t do them at night. And if you do it on weekends, then you’re competing with all these people who want to do the same thing on their two days off.”
 
@@ -121,7 +123,7 @@ Robert recommends building a company culture that prizes independence. A company
 
 ## Jean du Plessis, director of engineering, has a nonlinear workday
 
-[Jean du Plessis](https://about.sourcegraph.com/handbook/company/team#jean-du-plessis-he-him), a director of engineering at Sourcegraph, considers his calendar “an experimentation over a long period of time.” Located in South Africa, Jean has reports all over Europe, Asia, and both coasts of North America. “I have a big time frame to cover,” he says.
+[Jean du Plessis](https://handbook.sourcegraph.com/company/team#jean-du-plessis-he-him), a director of engineering at Sourcegraph, considers his calendar “an experimentation over a long period of time.” Located in South Africa, Jean has reports all over Europe, Asia, and both coasts of North America. “I have a big time frame to cover,” he says.
 
 The nonlinear workday, [according to GitLab](https://about.gitlab.com/company/culture/all-remote/non-linear-workday/), the company that popularized the term, “decouples time from work and acts as a forcing function to embrace asynchronous workflows.”
 
@@ -133,11 +135,10 @@ For Jean, this means using the morning to take care of the chores that most woul
 
 In the afternoon, Jean is frank: he might just nap. After, around 3 pm (his time), is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, and I put them to bed.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
-![Slack message from Jean regarding his schedule](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%201.20.11%20PM.png)
-
-<p class="font-italic text-center">
-Jean's message to the team about his work schedule.
-</p>
+<figure>
+  <object role="image" data="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/jean-du-plessis-slack.svg" width="859" height="480"></object>
+  <figcaption>Jean's message to the team about his work schedule.</figcaption>
+</figure>
 
 For Jean, the nonlinear work day isn’t merely a traditional workday, fragmented: “I’m picky about what I do in the evenings.” He tends to schedule meetings that he doesn’t have to lead during his evening sessions–meetings where he only has to listen or provide input. He optimizes his entire day based on what he does best when.
 

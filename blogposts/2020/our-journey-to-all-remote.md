@@ -13,7 +13,7 @@ published: true
 
 ![Sourcegraph San Francisco office mural](/blog/sf-office-mural.jpg)
 
-On February 20, 2020, we officially moved out of our amazing San Francisco office and became an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company. Few people have worked at an all-remote company before, and I frequently get questions—especially from candidates—about what led to this decision. This blog post documents our journey to all-remote.
+On February 20, 2020, we officially moved out of our amazing San Francisco office and became an [all-remote](https://handbook.sourcegraph.com/company/remote) company. Few people have worked at an all-remote company before, and I frequently get questions—especially from candidates—about what led to this decision. This blog post documents our journey to all-remote.
 
 ## Remote-friendly engineering
 
@@ -65,10 +65,10 @@ Near the end of 2019, we decided to become an all-remote company and get rid of 
 
 Once this decision was made, we needed to:
 
-- Update our [benefits and perks](https://about.sourcegraph.com/handbook/people-ops/benefits-and-perks) so they made sense for an all-remote team (e.g., we removed our lunch benefit for San Francisco teammates and paid for every teammate's home internet instead).
-- Give everyone [a budget to set up their home office and/or work from a coworking space](https://about.sourcegraph.com/handbook/people-ops/spending-company-money) so everyone would have a productive place to work (as we had discovered was important during our distributed days). Check out some of [our home offices](https://about.sourcegraph.com/blog/home-offices-of-sourcegraph)!
-- Create [explicit travel budgets](https://about.sourcegraph.com/handbook/people-ops/travel) so teammates could meet up regularly (we supported travel before this transition but the budgets weren't well defined).
-- Update our [employee handbook](https://about.sourcegraph.com/handbook) to codify all of the [communication tactics](https://about.sourcegraph.com/handbook/communication) we had learned as a remote-first team.
+- Update our [benefits and perks](https://handbook.sourcegraph.com/people-ops/benefits-and-perks) so they made sense for an all-remote team (e.g., we removed our lunch benefit for San Francisco teammates and paid for every teammate's home internet instead).
+- Give everyone [a budget to set up their home office and/or work from a coworking space](https://handbook.sourcegraph.com/people-ops/spending-company-money) so everyone would have a productive place to work (as we had discovered was important during our distributed days). Check out some of [our home offices](https://about.sourcegraph.com/blog/home-offices-of-sourcegraph)!
+- Create [explicit travel budgets](https://handbook.sourcegraph.com/people-ops/travel) so teammates could meet up regularly (we supported travel before this transition but the budgets weren't well defined).
+- Update our [employee handbook](https://handbook.sourcegraph.com) to codify all of the [communication tactics](https://handbook.sourcegraph.com/communication) we had learned as a remote-first team.
 - List, show, and negotiate a sublease for our existing office space, and get a new minimal office address for mail, as well as state and federal paperwork (we chose to get a desk at a coworking space near our old office).
 - Pack up all our stuff (office supplies, company swag, banners for events, furniture, art and wall accessories, spare electronic equipment and cables, food, and everything in between) and decide whether we should try to store it (and if so, where), sell it, or distribute it to team members.
 - Update all our financial and legal accounts, contracts, and more.
@@ -77,6 +77,6 @@ Once this decision was made, we needed to:
 
 We love all-remote, but it doesn't work for everyone (just like an open-office floor plan doesn't work for everyone). Working remotely gives you extra freedom and flexibility, but also requires extra discipline and personal responsibility. Certain things that happen organically in an office environment (e.g., informal conversations at lunch), need to be explicitly planned (e.g., by scheduling small "water cooler" meetings with no agenda, or scheduling 1:1s between random teammates using a tool like donut.com).
 
-We are committed to supporting all our teammates to help them be successful. Check out our [tips for working remotely](https://about.sourcegraph.com/handbook/company/remote/tips).
+We are committed to supporting all our teammates to help them be successful. Check out our [tips for working remotely](https://handbook.sourcegraph.com/company/remote/tips).
 
 If you have any questions about all-remote teams, join us during [our Developer Meetup on Tuesday, May 7 2020 at 10:00 AM PDT](https://info.sourcegraph.com/online-meetup-may-7?utm_source=blog), and I will be happy to answer them.

@@ -143,7 +143,7 @@ Enable this feature by adding ` "permissions.backgroundSync": {"enabled": true}`
 
 ![usage-activity-histogram](/blog/3-16-activity-histogram.png "usage activity histogram")
 
-We want to better understand the activity of users on a Sourcegraph instance while still upholding our commitment to only collecting anonymized, aggregated, and non-specific information (see our [ping philosophy](https://about.sourcegraph.com/handbook/engineering/adding_ping_data#ping-philosophy)). Many admins have asked to better understand the engagement of users on their instances, and in Sourcegraph 3.16 we provide a way to export this data. We will be adding an activity histogram and other visualizations to the admin area in future releases. You may also opt to share this data with Sourcegraph to help us make product decisions that make Sourcegraph even better, and we’ll share the results with you.
+We want to better understand the activity of users on a Sourcegraph instance while still upholding our commitment to only collecting anonymized, aggregated, and non-specific information (see our [ping philosophy](https://handbook.sourcegraph.com/engineering/adding_ping_data#ping-philosophy)). Many admins have asked to better understand the engagement of users on their instances, and in Sourcegraph 3.16 we provide a way to export this data. We will be adding an activity histogram and other visualizations to the admin area in future releases. You may also opt to share this data with Sourcegraph to help us make product decisions that make Sourcegraph even better, and we’ll share the results with you.
 
 ## Improvements to basic code intelligence for several languages
 
@@ -221,4 +221,4 @@ We want to hear what you think about Sourcegraph and the new updates in 3.16. Po
 
 Any questions about Sourcegraph? Get in touch on Twitter [@sourcegraph](https://twitter.com/sourcegraph), file an issue in our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues), or email [feedback@sourcegraph.com](mailto:feedback@sourcegraph.com). We look forward to hearing from you!
 
-From the [entire Sourcegraph team](https://about.sourcegraph.com/handbook/company/team), happy coding!
+From the [entire Sourcegraph team](https://handbook.sourcegraph.com/company/team), happy coding!
