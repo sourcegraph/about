@@ -311,3 +311,9 @@ We’re proud of our progress and so far, ICs seem happy with the results, but i
 The career development framework is a living document. We’re a startup and change is inevitable. Our needs and values are going to change and the career development framework is going to need to adapt to those changes. Our framework is always going to be a fluid work in progress and it’s never going to be perfect.
 
 But we’re going to keep chasing perfection.
+
+## More posts like these
+
+- [Software engineer career paths](https://about.sourcegraph.com/blog/software-engineer-career-paths/)
+- [Async, remote, and flexible: How 7 engineers rethought their work calendars](https://about.sourcegraph.com/blog/remote-work-calendar/)
+- [How To Support Your Employee Through Pregnancy, Maternity Leave and the Transition Back To Work](https://about.sourcegraph.com/blog/how-to-support-your-employee-through-pregnancy-maternity-leave-and-the/)
