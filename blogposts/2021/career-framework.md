@@ -316,7 +316,7 @@ The career development framework is a living document. We’re a startup and cha
 
 But we’re going to keep chasing perfection.
 
-## More posts like these
+## More posts like this
 
 - [Software engineer career paths](https://about.sourcegraph.com/blog/software-engineer-career-paths/)
 - [Async, remote, and flexible: How 7 engineers rethought their work calendars](https://about.sourcegraph.com/blog/remote-work-calendar/)
