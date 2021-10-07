@@ -60,8 +60,6 @@ Sourcegraph empowers developers to explore and better understand all code, every
 
 Sourcegraph Universal Code Search empowers all developers to explore, navigate, and better understand all code, everywhere, faster. Sourcegraph’s mission is to make it easier and faster for developers to work on solving problems. Sourcegraph is built for all companies, from startups needing a solid foundation for growth to enterprises with complex security, scaling, and deployment needs. The all-remote company is headquartered in San Francisco, CA and backed by Craft Ventures, Redpoint Ventures, and Goldcrest Capital – visit [sourcegraph.com/jobs](https://about.sourcegraph.com/jobs/) for career opportunities. Follow Sourcegraph on Twitter at [@sourcegraph](https://twitter.com/sourcegraph?lang=en) or visit [about.sourcegraph.com](https://about.sourcegraph.com/).
 
-## Media Contact
+## Media contact
 
-Tanya Carlsson<br>
-Offleash PR for Sourcegraph<br>
-[sourcegraph@offleashpr.com](mailto:sourcegraph@offleashpr.com)
+[press@sourcegraph.com](mailto:press@sourcegraph.com)

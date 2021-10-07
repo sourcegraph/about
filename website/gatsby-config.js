@@ -82,6 +82,13 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          {
+            resolve: 'gatsby-remark-smartypants',
+            options: {
+              dashes: 'oldschool',
+              backticks: false,
+            },
+          },
         ],
       },
     },

@@ -14,17 +14,7 @@ export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>
             <div className="row justify-content-md-center">
                 <div className="col mt-5">
                     <h3>Media contact</h3>
-                    <p>
-                        Tanya Carlsson
-                        <br />
-                        Offleash PR for Sourcegraph
-                        <br />
-                        <a href="mailto:tanya@offleashpr.com">tanya@offleashpr.com</a>
-                        <br />
-                        <a href="tel:+17075296139">+1 707-529-6139</a>
-                        <br />
-                        &nbsp;
-                    </p>
+                    press@sourcegraph.com
                 </div>
             </div>
         </div>
