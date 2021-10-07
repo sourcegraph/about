@@ -88,9 +88,9 @@ This means the [Git extras Sourcegraph extension](https://sourcegraph.com/extens
 
 Since shipping version 2.4 in January 2018, we've released 11 versions of Sourcegraph. Shipping regularly means progress is constant and predictable.
 
-We're constantly looking for ways to improve our release process. Inspired by [GitLab's fixed monthly release cycle](https://about.gitlab.com/2018/11/21/why-gitlab-uses-a-monthly-release-cycle/), Sourcegraph is now [released on the 20th of each month](https://about.sourcegraph.com/handbook/engineering/releases).
+We're constantly looking for ways to improve our release process. Inspired by [GitLab's fixed monthly release cycle](https://about.gitlab.com/2018/11/21/why-gitlab-uses-a-monthly-release-cycle/), Sourcegraph is now [released on the 20th of each month](https://handbook.sourcegraph.com/engineering/releases).
 
-We encourage feedback as early as possible so we can incorporate it into our product planning. View the [product roadmap](https://about.sourcegraph.com/handbook/direction) to track what features are slated for the next release.
+We encourage feedback as early as possible so we can incorporate it into our product planning. View the [product roadmap](https://handbook.sourcegraph.com/direction) to track what features are slated for the next release.
 
 ## Changelog
 

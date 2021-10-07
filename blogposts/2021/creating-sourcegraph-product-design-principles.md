@@ -78,7 +78,7 @@ Once we all felt strongly that our product design principles captured our team�
   Sourcegraph is a powerful yet personal tool that exists within a larger workflow. Design for familiar patterns with thoughtful defaults, while embracing personalization and adaptability.
 
 - **Made for everyone**<br />
-  Our purpose is to make it so [everyone can code](/handbook/company/strategy#purpose). This demands we make Sourcegraph accessible and useful for all developers through universal, inclusive design.
+  Our purpose is to make it so [everyone can code](https://handbook.sourcegraph.com/company/strategy#purpose). This demands we make Sourcegraph accessible and useful for all developers through universal, inclusive design.
 
 - **Gracefully manage complexity**<br />
   Sourcegraph supports complex product requirements, but also empowers users to manage this complexity for their individual needs.
@@ -92,7 +92,7 @@ Once we all felt strongly that our product design principles captured our team�
 - **Create momentum**<br />
   Help developers create and maintain flow. To do this, Sourcegraph must be fast in every way. We design purposefully to help users iterate and build momentum.
 
-We’ve published our [product design principles](https://about.sourcegraph.com/handbook/product/design_principles) in our open handbook.
+We’ve published our [product design principles](https://handbook.sourcegraph.com/product/design_principles) in our open handbook.
 
 ## The path forward
 
@@ -106,4 +106,4 @@ Sourcegraph is an open company, and so our process, artifacts, and resources are
 - [Design principles planning and workshop document](https://docs.google.com/document/d/10Ko8z1ozVaUStuPG2-cM_EJUVJvcgabv8qZYNAJXn24/edit#)
 - [Miro board](https://miro.com/app/board/o9J_lT0O5TU=/)
 - [RFC 342: Sourcegraph Design Principles](https://docs.google.com/document/d/1zRbtZR68ZITYypSAJJ63Ir_fFPxJfTtidJmsrxUXW7o/edit#)
-- [Sourcegraph’s design principles in our handbook](https://about.sourcegraph.com/handbook/product/design_principles)
+- [Sourcegraph’s design principles in our handbook](https://handbook.sourcegraph.com/product/design_principles)

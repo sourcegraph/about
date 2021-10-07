@@ -1,3 +1,0 @@
-# Team rituals
-
-(Coming soon!)
