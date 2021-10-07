@@ -22,7 +22,7 @@ Individually, engineering managers and ICs cared about career growth but the con
 
 The solution? A framework that would align the entire engineering organization and create consistent, fair, and scalalabe conversations about growth. This is the deep dive, behind the scenes story of how we collaborated to form an engineering career development framework.
 
-If you want to skip to the results, you can [read the handbook page](https://handbook.sourcegraph.com/engineering/career-development) or [read the summary](#the-sourcegraph-career-development-framework) in this post. But if you want the story, and to see how you can apply our learnings at your company, read on.
+If you want to skip to the results, you can [read the handbook page](https://handbook.sourcegraph.com/engineering/career-development) or [read the summary](https://about.sourcegraph.com/blog/software-engineer-career-ladder/#The-Sourcegraph-career-development-framework) in this post. But if you want the story, and to see how you can apply our learnings at your company, read on.
 
 ## Engineering managers, assemble!
 
@@ -154,7 +154,7 @@ It wasn’t until the end, when the work was mostly done, that more substantive 
 
 Even so, it wasn’t as much engagement as we would have liked. We reached out to engineering managers and asked for their feedback directly. We also paid special attention to engineers who had been at Sourcegraph a long time so as to make sure there were no concerns from the people who knew Sourcegraph best.
 
-In some cases, those feedback requests resulted in a cautious thumbs-up. Engineers liked the idea of a framework, and wanted to try what the working group had produced, but also wanted to remain open to changing the framework if it didn’t work. Luckily for them, that was the plan all along (see the [calibration to come](#calibration-to-come) section below).
+In some cases, those feedback requests resulted in a cautious thumbs-up. Engineers liked the idea of a framework, and wanted to try what the working group had produced, but also wanted to remain open to changing the framework if it didn’t work. Luckily for them, that was the plan all along (see the [calibration to come](https://about.sourcegraph.com/blog/software-engineer-career-ladder/#Calibration-to-come) section below).
 
 We found it surprisingly easy to get buy-in. A potential cause of this is how much time we invested into the effort. We always took the time to hash out different situations and possibilities. Our detailed discussions ensured that most eventualities were built into the framework by the time the rest of the team saw it.
 
