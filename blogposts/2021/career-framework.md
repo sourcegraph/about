@@ -6,9 +6,11 @@ published: true
 publishDate: 2021-10-07T10:00-07:00
 tags: [blog]
 slug: software-engineer-career-ladder
-heroImage:
-socialImage:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/21_1004_SG_Blog-illustrations_building-an-engineering-career-02.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/21_1004_SG_Blog-illustrations_building-an-engineering-career-02.png
 ---
+
+![Software engineer career framework graphic](https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/21_1004_SG_Blog-illustrations_building-an-engineering-career-02.png)
 
 _Sourcegraph provides universal code search: a navigation engine for understanding your code. We’re also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://about.sourcegraph.com/handbook/company/team). See our [careers page](https://boards.greenhouse.io/sourcegraph91) for current openings._
 
@@ -40,7 +42,8 @@ In accordance with our [transparency value](https://handbook.sourcegraph.com/com
 
 Even candidates got a peek at the framework:
 
-![Nick, informing the working group via Slack, that he shared our work with a candidate.](IMAGE TK)
+![Nick, informing the working group via Slack, that he shared our work with a candidate.](https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Screen%20Shot%202021-09-20%20at%203.45.44%20PM.png)
+<div class="sr-only">Nick: I was just on a call with a candidate who asked about career development for ICs, and it was great to be able to share our proposal live on the call to give the candidate confidence we're thinking about it.</div>
 
 We united around a passion for career growth. We often spent time talking about the specific, minute wordings of different sentences and bullet points. We considered every sentence and bullet point from multiple angles, asking questions like “What if someone takes this too literally?” and “How do we word this in a way that we don’t encourage the wrong sort of behavior?”
 
