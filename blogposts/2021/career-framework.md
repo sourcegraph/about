@@ -10,7 +10,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-fr
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineer%20career%20framework%20hero.png
 ---
 
-![Software engineer career framework graphic](https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/21_1004_SG_Blog-illustrations_building-an-engineering-career-02.png)
+![Software engineer career framework graphic](https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineer%20career%20framework%20hero.png)
 
 _Sourcegraph provides universal code search: a navigation engine for understanding your code. We’re also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://about.sourcegraph.com/handbook/company/team). See our [careers page](https://boards.greenhouse.io/sourcegraph91) for current openings._
 
