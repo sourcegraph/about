@@ -6,11 +6,11 @@ published: true
 publishDate: 2021-10-07T10:00-07:00
 tags: [blog]
 slug: software-engineer-career-ladder
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineer%20career%20framework%20hero.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineer%20career%20framework%20hero.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png
 ---
 
-![Software engineer career framework graphic](https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineer%20career%20framework%20hero.png)
+![Software engineer career framework graphic](https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png)
 
 _Sourcegraph provides universal code search: a navigation engine for understanding your code. We’re also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://about.sourcegraph.com/handbook/company/team). See our [careers page](https://boards.greenhouse.io/sourcegraph91) for current openings._
 
