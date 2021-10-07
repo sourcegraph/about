@@ -6,8 +6,8 @@ published: true
 publishDate: 2021-10-07T10:00-07:00
 tags: [blog]
 slug: software-engineer-career-ladder
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/21_1007_SG_Blog-illustrations_building-an-engineering-career-02.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/21_1007_SG_Blog-illustrations_building-an-engineering-career-02.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineer%20career%20framework%20hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineer%20career%20framework%20hero.png
 ---
 
 ![Software engineer career framework graphic](https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/21_1004_SG_Blog-illustrations_building-an-engineering-career-02.png)
