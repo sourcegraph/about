@@ -68,7 +68,8 @@
         .dropdown-toggle::after {
             margin-top: 0.6em;
         }
-        .me-auto.nav, .right-nav {
+        .me-auto.nav,
+        .right-nav {
             display: none !important;
         }
         .small-menu {
