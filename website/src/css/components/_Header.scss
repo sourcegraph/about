@@ -13,7 +13,6 @@
     }
 
     &__nav-item {
-        display: flex;
         align-items: center;
     }
     &__nav-link.btn:hover {
@@ -40,21 +39,53 @@
             color: $white;
         }
     }
+
+    // Desktop
+    @media only screen and (min-width: 768px) {
+        #mobile-navbar {
+            display: none !important;
+        }
+        .me-auto {
+            min-width: 500px;
+        }
+        .right-nav {
+            min-width: 200px;
+        }
+    }
+
+    // Mobile & Tablet
+    @media only screen and (max-width: 767px) {
+        // New Top Nav Customization
+        .btn-outline-primary {
+            border: 0 none;
+            font-weight: normal;
+            &:hover {
+                color: $navbar-light-hover-color !important;
+                background-color: $nav-bg-color !important;
+            }
+        }
+        // Adjust dropdown arrow positioning
+        .dropdown-toggle::after {
+            margin-top: 0.6em;
+        }
+        .me-auto.nav, .right-nav {
+            display: none !important;
+        }
+        .small-menu {
+            list-style: none;
+            padding-inline-start: 0;
+            a {
+                color: $navbar-light-color;
+            }
+            a:hover {
+                text-decoration: none;
+                color: $navbar-light-hover-color;
+            }
+        }
+    }
 }
 
 // Hello bar
 .background-purple {
     background-color: $purple;
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar-dark .navbar-nav .btn,
-    .navbar-light .navbar-nav .btn {
-        padding: 0.25rem 0.75rem;
-    }
-
-    // New Top Nav Customization
-    .nav-link {
-        display: flex;
-    }
 }
