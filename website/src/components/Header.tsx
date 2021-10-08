@@ -122,7 +122,10 @@ export default class Header extends React.Component<HeaderProps, any> {
                                 </Nav>
 
                                 {/* Mobile Navbar */}
-                                <div id="mobile-navbar" className={`collapse navbar-collapse ${this.state.isOpen ? 'show' : 'hide'}`}>
+                                <div
+                                    id="mobile-navbar"
+                                    className={`collapse navbar-collapse ${this.state.isOpen ? 'show' : 'hide'}`}
+                                >
                                     <ul className="nav navbar-nav">
                                         <li className="header__nav-item nav-item" role="presentation">
                                             <span
@@ -135,7 +138,12 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Product
                                                 <ChevronDownIcon className="icon-inline ml-1" />
                                             </span>
-                                            <ul id="product-menu" className={`small-menu collapse navbar-collapse ${this.state.productMenuOpen ? 'show' : 'hide'}`}>
+                                            <ul
+                                                id="product-menu"
+                                                className={`small-menu collapse navbar-collapse ${
+                                                    this.state.productMenuOpen ? 'show' : 'hide'
+                                                }`}
+                                            >
                                                 <li className="nav-link" role="presentation">
                                                     <a href="/code-search">Code Search</a>
                                                 </li>
@@ -143,7 +151,9 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                     <a href="/batch-changes">Batch Changes</a>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
-                                                    <a href="https://docs.sourcegraph.com/code_intelligence">Code Intelligence</a>
+                                                    <a href="https://docs.sourcegraph.com/code_intelligence">
+                                                        Code Intelligence
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -158,22 +168,22 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Resources
                                                 <ChevronDownIcon className="icon-inline ml-1" />
                                             </span>
-                                            <ul id="resources-menu" className={`small-menu collapse navbar-collapse ${this.state.resourcesMenuOpen ? 'show' : 'hide'}`}>
+                                            <ul
+                                                id="resources-menu"
+                                                className={`small-menu collapse navbar-collapse ${
+                                                    this.state.resourcesMenuOpen ? 'show' : 'hide'
+                                                }`}
+                                            >
                                                 <li className="nav-link" role="presentation">
                                                     <a href="/blog">Blog</a>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
-                                                    <a
-                                                        href="https://learn.sourcegraph.com/"
-                                                        target="_blank"
-                                                    >
+                                                    <a href="https://learn.sourcegraph.com/" target="_blank">
                                                         Learn
                                                     </a>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
-                                                    <a
-                                                        href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF"
-                                                    >
+                                                    <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF">
                                                         Dev Tool Time
                                                     </a>
                                                 </li>
@@ -193,7 +203,12 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Customers
                                                 <ChevronDownIcon className="icon-inline ml-1" />
                                             </span>
-                                            <ul id="customer-menu" className={`small-menu collapse navbar-collapse ${this.state.customerMenuOpen ? 'show' : 'hide'}`}>
+                                            <ul
+                                                id="customer-menu"
+                                                className={`small-menu collapse navbar-collapse ${
+                                                    this.state.customerMenuOpen ? 'show' : 'hide'
+                                                }`}
+                                            >
                                                 <li className="nav-link" role="presentation">
                                                     <a href="/case-studies">Case studies</a>
                                                 </li>
@@ -215,27 +230,17 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             </Link>
                                         </li>
                                         <li className="nav-item" role="presentation">
-                                            <a
-                                                className="nav-link"
-                                                href="https://docs.sourcegraph.com"
-                                                target="_blank"
-                                            >
+                                            <a className="nav-link" href="https://docs.sourcegraph.com" target="_blank">
                                                 Docs
                                             </a>
                                         </li>
                                         <li className="nav-item" role="presentation">
-                                            <a
-                                                className="nav-link"
-                                                href="https://sourcegraph.com/sign-in"
-                                            >
+                                            <a className="nav-link" href="https://sourcegraph.com/sign-in">
                                                 Sign in
                                             </a>
                                         </li>
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <a
-                                                className="nav-link"
-                                                href="https://sourcegraph.com/search"
-                                            >
+                                            <a className="nav-link" href="https://sourcegraph.com/search">
                                                 Search Code
                                             </a>
                                         </li>
