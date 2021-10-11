@@ -59,7 +59,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                     expand="lg"
                     className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}
                 >
-                    <div className="container-lg px-0 px-lg-3">
+                    <div className="container-lg">
                         <Navbar.Brand className="navbar-brand header__logo" href="/">
                             <span role="img" aria-label="Sourcegraph - Universal code search">
                                 {' '}
@@ -105,7 +105,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         Docs
                                     </Nav.Link>
                                 </Nav>
-                                <Nav className="right-nav ml-lg-3 justify-content-lg-end">
+                                <Nav className="right-nav ml-lg-8 justify-content-lg-end">
                                     <Nav.Link
                                         href="https://sourcegraph.com/sign-in"
                                         title="Search public code with Sourcegraph Cloud"
