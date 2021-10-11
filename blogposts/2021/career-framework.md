@@ -42,7 +42,9 @@ In accordance with our [transparency value](https://handbook.sourcegraph.com/com
 
 Even candidates got a peek at the framework:
 
+<div>
 <object role="image" data="https://sourcegraphstatic.com/blog/engineering-framework-images/nick-slack-message-career-framework.svg" aria-label="Nick, informing the working group via Slack, that he shared our work with a candidate."></object>
+</div>
 
 We united around a passion for career growth. We often spent time talking about the specific, minute wordings of different sentences and bullet points. We considered every sentence and bullet point from multiple angles, asking questions like “What if someone takes this too literally?” and “How do we word this in a way that we don’t encourage the wrong sort of behavior?”
 
