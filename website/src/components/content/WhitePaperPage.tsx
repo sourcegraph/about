@@ -21,10 +21,9 @@ interface Props {
 
 export const WhitePaperJumbotron: React.FunctionComponent<{
     className?: string
-    color?: keyof typeof COLORS
     children?: React.ReactNode
-}> = ({ className = '', color = 'dark', children }) => (
-    <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
+}> = ({ className = '', children }) => (
+    <div className={`jumbotron rounded-0 ${className}`}>
         <div className="container text-center pt-5 pb-3">
             <span className="white-papers__label d-block mt-1">white paper</span>
             {children}
@@ -46,7 +45,7 @@ export const WhitePaperPage: React.FunctionComponent<Props> = ({
         // tslint:disable-next-line: jsx-ban-props
         style={bgImage ? { backgroundImage: `url(${bgImage})`, backgroundRepeat: `no-repeat` } : undefined}
     >
-        <WhitePaperJumbotron className="mb-5">
+        <WhitePaperJumbotron className="text-light mb-5">
             <h1 className={`${titleClassName}`}>{title}</h1>
             {pdf && (
                 <a href={pdf} className="btn btn-primary mt-4" rel="nofollow" target="_blank">
