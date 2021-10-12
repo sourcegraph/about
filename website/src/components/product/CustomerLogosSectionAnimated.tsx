@@ -100,8 +100,8 @@ const ITEMS: {
         url: '/external-logos/convoy-logo.svg',
     },
     {
-        name: 'Outreach',
-        url: '/external-logos/outreach-logo.svg',
+        name: 'Eventbrite',
+        url: '/external-logos/eventbrite.png',
     },
     {
         name: 'Cornerstone OnDemand',
@@ -112,16 +112,8 @@ const ITEMS: {
         url: '/external-logos/skelter-labs-logo.svg',
     },
     {
-        name: 'Expanse',
-        url: '/external-logos/expanse-logo.svg',
-    },
-    {
         name: 'Factset',
         url: '/external-logos/factset-logo.svg',
-    },
-    {
-        name: 'Button',
-        url: '/external-logos/use-button-logo.svg',
     },
     {
         name: 'Cambridge University Press',
@@ -136,24 +128,32 @@ const ITEMS: {
         url: '/external-logos/apex-clearing-logo.png',
     },
     {
-        name: 'AppLovin',
-        url: '/external-logos/applovin-logo.svg',
+        name: 'Blend',
+        url: '/external-logos/blend.svg',
     },
     {
-        name: 'Thorn',
-        url: '/external-logos/thorn-logo.svg',
+        name: 'AppLovin',
+        url: '/external-logos/applovin-logo.svg',
     },
     {
         name: 'TripActions',
         url: '/external-logos/tripactions-logo.svg',
     },
     {
+        name: 'Mercari',
+        url: '/external-logos/mercari.svg',
+    },
+    {
         name: 'Handy',
         url: '/external-logos/handy-logo.svg',
     },
     {
-        name: 'GetYourGuide',
-        url: '/external-logos/gyg.svg',
+        name: 'Capella Space',
+        url: '/external-logos/capella_space.svg',
+    },
+    {
+        name: 'Motley Fool',
+        url: '/external-logos/motley_fool.svg',
     },
     {
         name: 'Twilio',
