@@ -124,7 +124,6 @@ Still, many people who’ve never used such a tool before will search for specif
 
 ![Graphic: Sourcegraph search over API docs, a search begins by locating the best 1-3 results. These are relevant results due to searching over symbols not entire code files, fuzzier so you chuck in what you know and we try to match it, logical so e.g. "go package net/" shows all net/ packages. You get desired results right out of the gate.](https://user-images.githubusercontent.com/3173176/137226418-8b0fbf66-fcf6-42ff-9166-e3d4c9f54351.png)
 
-
 ## The need for balancing time and result relevance
 
 As I build this system for Sourcegraph–integrating the code analysis data we have for generating API docs for your code into our search backend–I’ve chosen to use Postgres.
