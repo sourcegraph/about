@@ -48,6 +48,10 @@ const ITEMS: {
         url: '/external-logos/lyft-logo.svg',
     },
     {
+        name: 'Unity',
+        url: '/external-logos/unity.svg',
+    },
+    {
         name: 'Collective Health',
         url: '/external-logos/collective-health-logo.svg',
     },
