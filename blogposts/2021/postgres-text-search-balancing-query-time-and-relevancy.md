@@ -120,7 +120,10 @@ If you’ve worked with code search tools like Sourcegraph, Zoekt, OpenGrok befo
 
 Still, many people who’ve never used such a tool before will search for specific code, such as a repository name, a function name, or a class in hopes of finding that specific code so they can explore it further. In these cases, it would be nice to be able to accurately answer these types of queries. Think of it as the “I’m feeling lucky” of code search:
 
-![Graphic: Sourcegraph search over API docs, a search begins by locating the best 1-3 results. These are relevant results based on trigram similarity, fuzzy so typos are no problem, and logically match tags so e.g. "go package net/" should show all net/ packages. You get desired results right out of the gate.](https://user-images.githubusercontent.com/3173176/137213893-a6b59610-6f7d-4423-b94e-2e099e14cb26.png)
+![](https://user-images.githubusercontent.com/3173176/137213893-a6b59610-6f7d-4423-b94e-2e099e14cb26.png)
+
+![Graphic: Sourcegraph search over API docs, a search begins by locating the best 1-3 results. These are relevant results due to searching over symbols not entire code files, fuzzier so you chuck in what you know and we try to match it, logical so e.g. "go package net/" shows all net/ packages. You get desired results right out of the gate.](https://user-images.githubusercontent.com/3173176/137226418-8b0fbf66-fcf6-42ff-9166-e3d4c9f54351.png)
+
 
 ## The need for balancing time and result relevance
 
