@@ -1,6 +1,6 @@
 ---
 title: 'Postgres text search: balancing query time and relevancy'
-description: "How to balance query time and relevance with Postgres text search, an insightful article by @slimsag working on Sourcegraph’s API docs feature, stirring code analysis with search indexing"
+description: 'How to balance query time and relevance with Postgres text search, an insightful article by @slimsag working on Sourcegraph’s API docs feature, stirring code analysis with search indexing'
 author: Stephen Gutekanst
 authorUrl: https://slimsag.com
 publishDate: 2021-10-13T10:00-07:00
@@ -25,7 +25,7 @@ I enjoy Postgres quite a lot: it’s great software, and the pg_trgm extension f
 
 Trigram indexes are great for implementing text search, and they’re the backbone of Sourcegraph’s indexed search (although we use Zoekt, not Postgres, for reasons I’ll get into below.)
 
-The difference between pg_trgm (Trigram indexing) and FTS (Full Text Search, tsvector) is that the former is an index over all characters, while the latter is an index over _words_. **If you can get away with indexing words and only matching whole words (or prefixes of words), FTS / tsvector is usually much faster because it is indexing far less data.** When searching for code, though, we care a lot about punctuation symbols, for example–each character matters.
+The difference between pg*trgm (Trigram indexing) and FTS (Full Text Search, tsvector) is that the former is an index over all characters, while the latter is an index over \_words*. **If you can get away with indexing words and only matching whole words (or prefixes of words), FTS / tsvector is usually much faster because it is indexing far less data.** When searching for code, though, we care a lot about punctuation symbols, for example–each character matters.
 
 One particularly nice property of trigram indexes is that they can partially index regular expression searches–a property code search engines like to utilize:
 
@@ -81,7 +81,7 @@ Using this search, we get better matches that are more relevant to our query ter
 
 ## The problem: performance
 
-One major problem with using pg_trgm’s relevancy ordering– i.e. `ORDER BY` with a trigram match distance–is that it often _substantially_ harms query time. We’ve traded our ultra-fast search results, which were often completely irrelevant, for very relevant results suffering from super slow query times:
+One major problem with using pg*trgm’s relevancy ordering– i.e. `ORDER BY` with a trigram match distance–is that it often \_substantially* harms query time. We’ve traded our ultra-fast search results, which were often completely irrelevant, for very relevant results suffering from super slow query times:
 
 ```
 sg=> SELECT label FROM lsif_data_documentation_search_public WHERE label <<% 'Package json' LIMIT 1;
@@ -106,7 +106,7 @@ Time: 6926.863 ms (00:06.927)
 
 The difference between 80ms and 6.9 _seconds_ is shown on a quite small data set of just 54 MB of text across 1 million rows. With larger data sets, the difference is _far worse_.
 
-And that’s where things get tricky: pg_trgm really can’t know how similar our query `Package json` is to potential matches unless it actually calculates that for each match in the trigram index–and there can be _many_ matching rows. For some query terms, you could match nearly all trigrams in the entire index and devolve into a full table scan–super slow!
+And that’s where things get tricky: pg*trgm really can’t know how similar our query `Package json` is to potential matches unless it actually calculates that for each match in the trigram index–and there can be \_many* matching rows. For some query terms, you could match nearly all trigrams in the entire index and devolve into a full table scan–super slow!
 
 ## Why is relevance important in code search?
 
@@ -116,7 +116,7 @@ Sourcegraph does something similar (although we apply some ranking at higher lev
 
 ![Graphic: Sourcegraph search today, a search begins by getting lots of results. These results match your literal query, or regexp query, etc. but you get too many results. There is a lack of relevance. Then you apply advanced filtering, more filtering, etc. to get to a desired result.](https://user-images.githubusercontent.com/3173176/137213957-d163e6ca-674f-49a6-8185-cbf1b680b3e0.png)
 
-If you’ve worked with code search tools like Sourcegraph, Zoekt, OpenGrok before then this workflow can make _a lot of sense._There is a great deal of power that comes with the filtering capabilities in these systems. In many situations, the filtering capabilities are better than having a Google-esque “we think this result is most relevant to you” decision being made for you–a decision you cannot change.
+If you’ve worked with code search tools like Sourcegraph, Zoekt, OpenGrok before then this workflow can make \_a lot of sense.\_There is a great deal of power that comes with the filtering capabilities in these systems. In many situations, the filtering capabilities are better than having a Google-esque “we think this result is most relevant to you” decision being made for you–a decision you cannot change.
 
 Still, many people who’ve never used such a tool before will search for specific code, such as a repository name, a function name, or a class in hopes of finding that specific code so they can explore it further. In these cases, it would be nice to be able to accurately answer these types of queries. Think of it as the “I’m feeling lucky” of code search:
 
@@ -181,11 +181,12 @@ If results are completely irrelevant (say, under the default threshold of 0.5 si
 With a stricter similarity threshold comes more work for Postgres: although vastly cheaper than ORDER BY similarity, there is always a chance that the terms we’re searching for only has a few similar matching rows.That means pg_trgm is going to spend a lot of time searching for those. Some queries could return in milliseconds and others could take minutes.
 
 An application-side solution for this might be to execute multiple queries in parallel, each with different similarity thresholds (such as 1.0, 0.9, 0.75, 0.5) and then, after your maximum query time return the results from the “best” threshold, it can cancel any requests that have not yet completed. The benefit of this is that you get pretty relevant results in a reasonable amount of query time; the downside is that you’re issuing 4x queries against your DB.
+
 ## What’s the solution?
 
 Really, there isn’t a perfect solution.
 
-It would be nice if Postgres had some sort of `LIMIT BY INTERVAL '00:00:05'` functionality to indicate “find as many rows as you can, until you exceed this duration of time”.  could use that functionality in a subquery to find candidates and then `ORDER BY` similarity on the candidate matches that we managed to find in our limited amount of time. But alas, this does not exist. Maybe one day?
+It would be nice if Postgres had some sort of `LIMIT BY INTERVAL '00:00:05'` functionality to indicate “find as many rows as you can, until you exceed this duration of time”. could use that functionality in a subquery to find candidates and then `ORDER BY` similarity on the candidate matches that we managed to find in our limited amount of time. But alas, this does not exist. Maybe one day?
 
 Issuing multiple queries in parallel with different similarity thresholds, as previously mentioned, is not a bad approach. And issuing 4x queries against your DB, while it sounds bad, is in practice (1) cheaper than `ORDER BY` similarity by a long shot and (2) may be handled quite efficiently in terms of memory caching because they’re queries against the same table and rows.
 
