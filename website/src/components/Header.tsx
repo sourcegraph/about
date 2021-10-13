@@ -69,7 +69,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                         {!this.props.minimal && (
                             <>
                                 <button
-                                    className="navbar-toggler"
+                                    className="navbar-toggler justify-content-end"
                                     data-toggle="collapse"
                                     data-target="#mobile-navbar"
                                     onClick={this.toggle}
@@ -105,7 +105,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         Docs
                                     </Nav.Link>
                                 </Nav>
-                                <Nav className="right-nav ml-lg-8 justify-content-lg-end">
+                                <Nav className="right-nav justify-content-lg-end">
                                     <Nav.Link
                                         href="https://sourcegraph.com/sign-in"
                                         title="Search public code with Sourcegraph Cloud"
