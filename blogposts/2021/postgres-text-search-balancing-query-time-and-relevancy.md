@@ -133,8 +133,8 @@ The challenge, as mentioned previously, is that we have to decide between query 
 
 I’m certainly not the only one facing that–just a bit of Googling will reveal this is a common problem:
 
-[“Slow query times for similarity searches with pg_trgm indices”](https://dba.stackexchange.com/questions/208346/slow-query-times-for-similarity-searches-with-pg-trgm-indices)
-[“Optimizing ORDER BY in a full text search query”](https://dba.stackexchange.com/questions/16437/optimizing-order-by-in-a-full-text-search-query?rq=1)
+* [“Slow query times for similarity searches with pg_trgm indices”](https://dba.stackexchange.com/questions/208346/slow-query-times-for-similarity-searches-with-pg-trgm-indices)
+* [“Optimizing ORDER BY in a full text search query”](https://dba.stackexchange.com/questions/16437/optimizing-order-by-in-a-full-text-search-query?rq=1)
 
 There are lots of things you can do to try improving the performance here, such as reconsidering a GIN vs GIST index, [altering work_mem configuration](https://stackoverflow.com/a/44853236) and [my recommendations here for using pg_trgm](https://devlog.hexops.com/2021/postgres-regex-search-over-10000-github-repositories#conclusions) such as [enabling parallel querying and parallel indexing of Trigram indexes via table splitting](https://devlog.hexops.com/2021/postgres-regex-search-over-10000-github-repositories#table-splitting)
 
