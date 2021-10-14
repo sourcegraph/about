@@ -156,11 +156,13 @@ A query for `github.com/foo/bar` against such a table will find the first three 
 
 Also, imagine a table of email addresses with a common `@gmail.com` suffix, and then searching for an email `anything@gmail.com`. You can imagine almost all rows being similar enough to need ordering. This is what I mean when I say “trigram index poisoning”: we’ve very nearly rendered our trigram index useless.
 
-You can avoid trigram index poisoning by ensuring that entries don’t have common/shared substrings, but in practice, trigram indexing is hard to avoid and is often just an artifact of using trigram indexes that one must live with and work around.
+You can avoid trigram index poisoning by ensuring that entries don’t have common/shared substrings, but in practice, trigram index poisoning is hard to avoid and is often just an artifact of using trigram indexes altogether that one must live with and work around.
 
 ## Limiting query time
 
-One option for preventing queries from taking a long time is to keep our `ORDER BY` similarity–which is expensive–and apply [a statement timeout](https://blog.crunchydata.com/blog/control-runaway-postgres-queries-with-statement-timeout). A statement timeout protects our database against runaway poison-pill queries: If the trigram index finds few enough results to complete within the statement timeout, you get good results. The downside, of course, is that if the statement timeout is hit, you don’t just get worse results–you get _no results at all_. Bummer. What other options do we have?
+One option for preventing queries from taking a long time is to keep our `ORDER BY` similarity–which is expensive–and apply [a statement timeout](https://blog.crunchydata.com/blog/control-runaway-postgres-queries-with-statement-timeout). A statement timeout protects our database against runaway poison-pill queries: If the trigram index finds few enough results to complete within the statement timeout, you get good results. The downside, of course, is that if the statement timeout is hit, you don’t just get worse results–you get _no results at all_. Bummer.
+
+What other options do we have?
 
 ## Choosing a similarity threshold
 
