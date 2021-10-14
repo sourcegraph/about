@@ -6,12 +6,12 @@ authorUrl: https://slimsag.com
 publishDate: 2021-10-13T10:00-07:00
 tags: [blog, code, search, software, engineering, postgres, trigrams, ranking, relevance]
 slug: postgres-text-search-balancing-query-time-and-relevancy
-heroImage: https://user-images.githubusercontent.com/3173176/137213468-1ce8c486-f2fa-46b2-8a8a-2308f3f89de4.png
-socialImage: https://user-images.githubusercontent.com/3173176/137213468-1ce8c486-f2fa-46b2-8a8a-2308f3f89de4.png
+heroImage: https://user-images.githubusercontent.com/3173176/137389515-bc672c66-e7f6-4cbb-9ef9-0e060177c9bf.png
+socialImage: https://user-images.githubusercontent.com/3173176/137389515-bc672c66-e7f6-4cbb-9ef9-0e060177c9bf.png
 published: true
 ---
 
-![Graphic: Postgres text search, balancing query time and relevancy. Code analysis + Postgres = love](https://user-images.githubusercontent.com/3173176/137213468-1ce8c486-f2fa-46b2-8a8a-2308f3f89de4.png)
+![Graphic: Postgres text search, balancing query time and relevancy. Code analysis + Postgres = love](https://user-images.githubusercontent.com/3173176/137389515-bc672c66-e7f6-4cbb-9ef9-0e060177c9bf.png)
 
 I’ve worked at Sourcegraph for nearly 7 years, and during that time I’ve worked with various search backends, such as Google’s [Zoekt](https://github.com/google/zoekt/) (“Fast trigram code search”), Postgres search, and a slew of other homegrown search backends. Outside of Sourcegraph, I [also research and develop search engines](https://github.com/slimsag).
 
