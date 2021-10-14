@@ -114,13 +114,11 @@ Systems like Google’s [Zoekt](https://github.com/google/zoekt/) (“Fast trigr
 
 Sourcegraph does something similar (although we apply some ranking at higher level units of code based on things like repo stars and offer `repo:`, `file:`, and more filtering capabilities to get around this.)
 
-![Graphic: Sourcegraph search today, a search begins by getting lots of results. These results match your literal query, or regexp query, etc. but you get too many results. There is a lack of relevance. Then you apply advanced filtering, more filtering, etc. to get to a desired result.](https://user-images.githubusercontent.com/3173176/137213957-d163e6ca-674f-49a6-8185-cbf1b680b3e0.png)
+![Graphic: Sourcegraph search today, a search begins by getting lots of results. These results match your literal query, or regexp query, etc. but you get too many results. There is a lack of relevance. Then you apply advanced filtering, more filtering, etc. to get to a desired result.](https://user-images.githubusercontent.com/3173176/137390361-145c8315-b4c6-4ee9-a45a-223e93f424db.png)
 
 If you’ve worked with code search tools like Sourcegraph, Zoekt, OpenGrok before then this workflow can make _a lot of sense._ There is a great deal of power that comes with the filtering capabilities in these systems. In many situations, the filtering capabilities are better than having a Google-esque “we think this result is most relevant to you” decision being made for you–a decision you cannot change.
 
 Still, many people who’ve never used such a tool before will search for specific code, such as a repository name, a function name, or a class in hopes of finding that specific code so they can explore it further. In these cases, it would be nice to be able to accurately answer these types of queries. Think of it as the “I’m feeling lucky” of code search:
-
-![](https://user-images.githubusercontent.com/3173176/137213893-a6b59610-6f7d-4423-b94e-2e099e14cb26.png)
 
 ![Graphic: Sourcegraph search over API docs, a search begins by locating the best 1-3 results. These are relevant results due to searching over symbols not entire code files, fuzzier so you chuck in what you know and we try to match it, logical so e.g. "go package net/" shows all net/ packages. You get desired results right out of the gate.](https://user-images.githubusercontent.com/3173176/137226418-8b0fbf66-fcf6-42ff-9166-e3d4c9f54351.png)
 
