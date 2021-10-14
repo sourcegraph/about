@@ -15,11 +15,11 @@ published: true
 
 I’ve worked at Sourcegraph for nearly 7 years, and during that time I’ve worked with various search backends, such as Google’s [Zoekt](https://github.com/google/zoekt/) (“Fast trigram code search”), Postgres search, and a slew of other homegrown search backends. Outside of Sourcegraph, I [also research and develop search engines](https://github.com/slimsag).
 
-I enjoy Postgres quite a lot: it’s great software, and the pg_trgm extension for it, which provides trigram search indexing, is something that I love playing around with. In my spare time, I regularly experiment with [pushing it to its limits](https://devlog.hexops.com/2021/postgres-regex-search-over-10000-github-repositories).
+I enjoy Postgres quite a lot: it’s great software, and the pg\_trgm extension for it, which provides trigram search indexing, is something that I love playing around with. In my spare time, I regularly experiment with [pushing it to its limits](https://devlog.hexops.com/2021/postgres-regex-search-over-10000-github-repositories).
 
-## What is pg_trgm?
+## What is pg\_trgm?
 
-[pg_trgm](https://www.postgresql.org/docs/current/pgtrgm.html) is an official extension to Postgres. pg_trgm enables trigram indexing and search over Postgres text columns.
+[pg\_trgm](https://www.postgresql.org/docs/current/pgtrgm.html) is an official extension to Postgres. pg\_trgm enables trigram indexing and search over Postgres text columns.
 
 > A trigram is a group of three consecutive characters taken from a string. We can measure the similarity of two strings by counting the number of trigrams they share. This simple idea turns out to be very effective for measuring the similarity of words in many natural languages.
 
@@ -35,7 +35,7 @@ SELECT * FROM test_trgm WHERE t ~ '(foo|bar)';
 
 The more trigrams that can be extracted from the regexp’s terms, the more effective the index is. In the worst case (e.g. `.*`) it would result in a full table scan.
 
-## Search result relevance in the pg_trgm world
+## Search result relevance in the pg\_trgm world
 
 Another nice property of Postgres trigram search is the ability to order results by similarity to the actual search terms, i.e. to get relevant results. For example, we can go beyond getting back results that are similar but not relevant to our search terms `Package json`:
 
@@ -131,10 +131,10 @@ The challenge, as mentioned previously, is that we have to decide between query 
 
 I’m certainly not the only one facing that–just a bit of Googling will reveal this is a common problem:
 
-- [“Slow query times for similarity searches with pg_trgm indices”](https://dba.stackexchange.com/questions/208346/slow-query-times-for-similarity-searches-with-pg-trgm-indices)
+- [“Slow query times for similarity searches with pg\_trgm indices”](https://dba.stackexchange.com/questions/208346/slow-query-times-for-similarity-searches-with-pg-trgm-indices)
 - [“Optimizing ORDER BY in a full text search query”](https://dba.stackexchange.com/questions/16437/optimizing-order-by-in-a-full-text-search-query?rq=1)
 
-There are lots of things you can do to try improving the performance here, such as reconsidering a GIN vs GIST index, [altering work_mem configuration](https://stackoverflow.com/a/44853236) and [my recommendations here for using pg_trgm](https://devlog.hexops.com/2021/postgres-regex-search-over-10000-github-repositories#conclusions) such as [enabling parallel querying and parallel indexing of Trigram indexes via table splitting](https://devlog.hexops.com/2021/postgres-regex-search-over-10000-github-repositories#table-splitting)
+There are lots of things you can do to try improving the performance here, such as reconsidering a GIN vs GIST index, [altering work_mem configuration](https://stackoverflow.com/a/44853236) and [my recommendations here for using pg\_trgm](https://devlog.hexops.com/2021/postgres-regex-search-over-10000-github-repositories#conclusions) such as [enabling parallel querying and parallel indexing of Trigram indexes via table splitting](https://devlog.hexops.com/2021/postgres-regex-search-over-10000-github-repositories#table-splitting)
 
 But none of these will fully eliminate the possibility of `ORDER BY` similarity devolving into a slow query. Why does that happen, and can we prevent that?
 
@@ -144,7 +144,7 @@ The reason `ORDER BY` with trigram similarity ordering can often devolve into a 
 
 This usually isn’t all rows in the table, but it can be a significant portion of them. The reason this happens is because of trigram index poisoning.
 
-Consider this: you have a table of GitHub repository names (or email addresses) with a pg_trgm index for the column. If every row in the table has a common set of trigrams (a shared string of characters):
+Consider this: you have a table of GitHub repository names (or email addresses) with a pg\_trgm index for the column. If every row in the table has a common set of trigrams (a shared string of characters):
 
 **github.com/**sourcegraph/sourcegraph
 **github.com/**golang/go
@@ -164,7 +164,7 @@ One option for preventing queries from taking a long time is to keep our `ORDER 
 
 ## Choosing a similarity threshold
 
-pg_trgm provides the ability for us to replace our `WHERE <<% ‘query terms’` condition, which defaults to a strict word similarity threshold of 0.5, with our own threshold value. In effect, instead of using `ORDER BY` similarity we can just ask Postgres to only give us more similar results–don’t include the others.–his can be much faster because it doesn’t need to sort so many results while still giving good relevance. Swapping the default 0.5 with 0.9 gives us what we’d expect:
+pg\_trgm provides the ability for us to replace our `WHERE <<% ‘query terms’` condition, which defaults to a strict word similarity threshold of 0.5, with our own threshold value. In effect, instead of using `ORDER BY` similarity we can just ask Postgres to only give us more similar results–don’t include the others.–his can be much faster because it doesn’t need to sort so many results while still giving good relevance. Swapping the default 0.5 with 0.9 gives us what we’d expect:
 
 ```
 sourcegraph=# select label, label <<<-> 'Package json' as label_dist from lsif_data_documentation_search_public WHERE strict_word_similarity(label, 'Package json') > 0.9 LIMIT 10;
@@ -178,7 +178,7 @@ sourcegraph=# select label, label <<<-> 'Package json' as label_dist from lsif_d
 But this isn’t a silver bullet either: how do we know which threshold value to choose? There are a couple of problems:
 
 If results are completely irrelevant (say, under the default threshold of 0.5 similarity) then we’d like to discard the results. That’s easy. But what if we use a similarity threshold of 0.9, or even 1.0,and find no results because our matching threshold is too strict? It’d be nice to fall back to a less strict threshold and give the user some results.
-With a stricter similarity threshold comes more work for Postgres: although vastly cheaper than ORDER BY similarity, there is always a chance that the terms we’re searching for only has a few similar matching rows.That means pg_trgm is going to spend a lot of time searching for those. Some queries could return in milliseconds and others could take minutes.
+With a stricter similarity threshold comes more work for Postgres: although vastly cheaper than ORDER BY similarity, there is always a chance that the terms we’re searching for only has a few similar matching rows.That means pg\_trgm is going to spend a lot of time searching for those. Some queries could return in milliseconds and others could take minutes.
 
 An application-side solution for this might be to execute multiple queries in parallel, each with different similarity thresholds (such as 1.0, 0.9, 0.75, 0.5) and then, after your maximum query time return the results from the “best” threshold, it can cancel any requests that have not yet completed. The benefit of this is that you get pretty relevant results in a reasonable amount of query time; the downside is that you’re issuing 4x queries against your DB.
 
@@ -194,7 +194,7 @@ It would be nice if Postgres had some sort of `LIMIT BY INTERVAL '00:00:05'` fun
 
 Issuing multiple queries in parallel with different similarity thresholds, as previously mentioned, is not a bad approach. And issuing 4x queries against your DB, while it sounds bad, is in practice (1) cheaper than `ORDER BY` similarity by a long shot and (2) may be handled quite efficiently in terms of in-memory caching because they’re queries against the same table and rows and these queries are often I/O bound.
 
-If you can get away with whole word (or prefix of words) matching in your use case, you can ditch pg_trgm entirely and instead use the FTS / tsvector functionality, which is far faster as it indexes much less data. One should also be mindful of the fact that with that better performance you can locate many more candidate matches to perform an `ORDER BY` on, potentially ending up with better results than if you'd stuck with pg_trgm similarity matching. It's all a game of tradeoffs.
+If you can get away with whole word (or prefix of words) matching in your use case, you can ditch pg\_trgm entirely and instead use the FTS / tsvector functionality, which is far faster as it indexes much less data. One should also be mindful of the fact that with that better performance you can locate many more candidate matches to perform an `ORDER BY` on, potentially ending up with better results than if you'd stuck with pg\_trgm similarity matching. It's all a game of tradeoffs.
 
 ## Thanks for reading
 
