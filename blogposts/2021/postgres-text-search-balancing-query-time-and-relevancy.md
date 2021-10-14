@@ -188,11 +188,15 @@ An application-side solution for this might be to execute multiple queries in pa
 
 Really, there isn’t a perfect solution.
 
-It would be nice if Postgres had some sort of `LIMIT BY INTERVAL '00:00:05'` functionality to indicate “find as many rows as you can, until you exceed this duration of time”. could use that functionality in a subquery to find candidates and then `ORDER BY` similarity on the candidate matches that we managed to find in our limited amount of time. But alas, this does not exist. Maybe one day?
+The Postgres docs also acknowledge this is a tricky issue: in section ["12.3.3. Ranking Search Results"](https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-RANKING) which talks about tsvector search, it says:
 
-Issuing multiple queries in parallel with different similarity thresholds, as previously mentioned, is not a bad approach. And issuing 4x queries against your DB, while it sounds bad, is in practice (1) cheaper than `ORDER BY` similarity by a long shot and (2) may be handled quite efficiently in terms of memory caching because they’re queries against the same table and rows.
+> Ranking can be expensive since it requires consulting the tsvector of each matching document, which can be I/O bound and therefore slow. Unfortunately, it is almost impossible to avoid since practical queries often result in large numbers of matches.
 
-If you can get away with whole word (or prefix of words) matching in your use case, you can ditch pg_trgm entirely and instead use the FTS / tsvector functionality, which is far faster as it indexes much less data.
+It would be nice if Postgres had some sort of `LIMIT BY INTERVAL '00:00:05'` functionality to indicate “find as many rows as you can, until you exceed this duration of time”. We could use that functionality in a subquery to find candidates and then `ORDER BY` similarity on the candidate matches that we managed to find in our budgeted amount of query time. But alas, this does not exist. Maybe one day?
+
+Issuing multiple queries in parallel with different similarity thresholds, as previously mentioned, is not a bad approach. And issuing 4x queries against your DB, while it sounds bad, is in practice (1) cheaper than `ORDER BY` similarity by a long shot and (2) may be handled quite efficiently in terms of in-memory caching because they’re queries against the same table and rows and these queries are often I/O bound.
+
+If you can get away with whole word (or prefix of words) matching in your use case, you can ditch pg_trgm entirely and instead use the FTS / tsvector functionality, which is far faster as it indexes much less data. One should also be mindful of the fact that with that better performance you can locate many more candidate matches to perform an `ORDER BY` on, potentially ending up with better results than if you'd stuck with pg_trgm similarity matching. It's all a game of tradeoffs.
 
 ## Thanks for reading
 
