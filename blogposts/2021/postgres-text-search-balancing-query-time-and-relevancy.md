@@ -146,11 +146,11 @@ This usually isn’t all rows in the table, but it can be a significant portion 
 
 Consider this: you have a table of GitHub repository names (or email addresses) with a pg_trgm index for the column. If every row in the table has a common set of trigrams (a shared string of characters):
 
-**github.com/**sourcegraph/sourcegraph
-**github.com/**golang/go
-**github.com/**kubernetes/kubernetes
-stash.company.com/foo/bar
-...
+0. **github.com/**sourcegraph/sourcegraph
+1. **github.com/**golang/go
+2. **github.com/**kubernetes/kubernetes
+3. stash.company.com/foo/bar
+4. ...
 
 A query for `github.com/foo/bar` against such a table will find the first three entries because the shared `github.com/` prefixes are similar. If they’re similar enough to pass your query’s `WHERE <<% ‘query terms’` clause, then all such rows need to have their similarity compared and ordered–even if you plan to just `LIMIT` the result set in the end. This can end up being quite a lot of rows.
 
