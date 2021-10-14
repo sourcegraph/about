@@ -209,6 +209,7 @@ Also consider trying my work on generating [API docs for your code](https://docs
 Stephen Gutekanst is one of Sourcegraph’s earliest engineers, and has authored many parts of Sourcegraph including the src CLI, monitoring architecture, managed instances, and editor extensions to name a few. Stephen has worked with most of Sourcegraph’s largest customers, and enjoys solving the most critical and technically challenging issues users face in our effort to
 
 ## More posts like this
+
 - [A 5x reduction in RAM usage with Zoekt memory optimizations](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
 - [How we used universal code search to eliminate secrets from our codebase](https://about.sourcegraph.com/blog/eliminate-secrets-from-codebase-with-universal-code-search/)
 - [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
