@@ -25,7 +25,7 @@ I enjoy Postgres quite a lot: it’s great software, and the pg_trgm extension f
 
 Trigram indexes are great for implementing text search, and they’re the backbone of Sourcegraph’s indexed search (although we use Zoekt, not Postgres, for reasons I’ll get into below.)
 
-The difference between pg*trgm (Trigram indexing) and FTS (Full Text Search, tsvector) is that the former is an index over all characters, while the latter is an index over _words_. **If you can get away with indexing words and only matching whole words (or prefixes of words), FTS / tsvector is usually much faster because it is indexing far less data.** When searching for code, though, we care a lot about punctuation symbols, for example–each character matters.
+The difference between pg\*trgm (Trigram indexing) and FTS (Full Text Search, tsvector) is that the former is an index over all characters, while the latter is an index over _words_. **If you can get away with indexing words and only matching whole words (or prefixes of words), FTS / tsvector is usually much faster because it is indexing far less data.** When searching for code, though, we care a lot about punctuation symbols, for example–each character matters.
 
 One particularly nice property of trigram indexes is that they can partially index regular expression searches–a property code search engines like to utilize:
 
@@ -81,7 +81,7 @@ Using this search, we get better matches that are more relevant to our query ter
 
 ## The problem: performance
 
-One major problem with using pg*trgm’s relevancy ordering– i.e. `ORDER BY` with a trigram match distance–is that it often _substantially_ harms query time. We’ve traded our ultra-fast search results, which were often completely irrelevant, for very relevant results suffering from super slow query times:
+One major problem with using pg\*trgm’s relevancy ordering– i.e. `ORDER BY` with a trigram match distance–is that it often _substantially_ harms query time. We’ve traded our ultra-fast search results, which were often completely irrelevant, for very relevant results suffering from super slow query times:
 
 ```
 sg=> SELECT label FROM lsif_data_documentation_search_public WHERE label <<% 'Package json' LIMIT 1;
@@ -106,7 +106,7 @@ Time: 6926.863 ms (00:06.927)
 
 The difference between 80ms and 6.9 _seconds_ is shown on a quite small data set of just 54 MB of text across 1 million rows. With larger data sets, the difference is _far worse_.
 
-And that’s where things get tricky: pg*trgm really can’t know how similar our query `Package json` is to potential matches unless it actually calculates that for each match in the trigram index–and there can be _many_ matching rows. For some query terms, you could match nearly all trigrams in the entire index and devolve into a full table scan–super slow!
+And that’s where things get tricky: pg\*trgm really can’t know how similar our query `Package json` is to potential matches unless it actually calculates that for each match in the trigram index–and there can be _many_ matching rows. For some query terms, you could match nearly all trigrams in the entire index and devolve into a full table scan–super slow!
 
 ## Why is relevance important in code search?
 
