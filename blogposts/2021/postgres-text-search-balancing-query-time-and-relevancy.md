@@ -110,9 +110,9 @@ And that’s where things get tricky: pg\*trgm really can’t know how similar o
 
 ## Why is relevance important in code search?
 
-Systems like Google’s [Zoekt](https://github.com/google/zoekt/) (“Fast trigram code search”) make explicit tradeoffs that address the performance issue mentioned previously: they choose to prioritize getting results fast, with out ranking the results, and then “bail out” after the search has found enough results or a time limit has passed.
+Systems like Google’s [Zoekt](https://github.com/google/zoekt/) (“Fast trigram code search”) work around this performance issue by ranking results using [various signals at indexing time](https://github.com/google/zoekt/blob/f7d54faa261b31f7258a2d1291531ebd89ce8ee5/doc/design.md#ranking) to order documents in shards so that the more important documents are searched first, also locating a larger number of candidate results and then sorting those candidates to match the query before returning a subset of those candidates. A partial consideration of ranking.
 
-Sourcegraph does something similar (although we apply some ranking at higher level units of code based on things like repo stars and offer `repo:`, `file:`, and more filtering capabilities to get around this.)
+Sourcegraph does something similar to Zoekt, but we apply some ranking on top at higher level units of code based on things like repo stars and offer `repo:`, `file:`, and more filtering capabilities. In general, most code search systems rely on query-time filtering syntax to work around the issue of relevance being costly. A typical workflow in Sourcegraph looks like:
 
 ![Graphic: Sourcegraph search today, a search begins by getting lots of results. These results match your literal query, or regexp query, etc. but you get too many results. There is a lack of relevance. Then you apply advanced filtering, more filtering, etc. to get to a desired result.](https://user-images.githubusercontent.com/3173176/137390361-145c8315-b4c6-4ee9-a45a-223e93f424db.png)
 
