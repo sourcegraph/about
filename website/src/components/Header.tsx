@@ -56,8 +56,9 @@ export default class Header extends React.Component<HeaderProps, any> {
 
     public handleRightClick(e) {
         if (e.nativeEvent.which === 3) {
-            e.preventDefault();
-            window.location.href = 'https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/Sourcegraph%20Brand%20Kit%202.2%20-%20May%202021.zip'
+            e.preventDefault()
+            window.location.href =
+                'https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/Sourcegraph%20Brand%20Kit%202.2%20-%20May%202021.zip'
         }
     }
 
@@ -69,11 +70,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                     className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}
                 >
                     <div className="container-lg">
-                        <Navbar.Brand
-                            className="header__logo"
-                            href="/"
-                            onContextMenu={this.handleRightClick}
-                        >
+                        <Navbar.Brand className="header__logo" href="/" onContextMenu={this.handleRightClick}>
                             <span role="img" aria-label="Sourcegraph - Universal code search">
                                 {' '}
                             </span>
