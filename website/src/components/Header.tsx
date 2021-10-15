@@ -23,6 +23,8 @@ export default class Header extends React.Component<HeaderProps, any> {
         this.productMenuToggle = this.productMenuToggle.bind(this)
         this.resourcesMenuToggle = this.resourcesMenuToggle.bind(this)
         this.customerMenuToggle = this.customerMenuToggle.bind(this)
+        this.handleRightClick = this.handleRightClick.bind(this)
+
         this.state = {
             isOpen: false,
             menuOpen: false,
@@ -52,6 +54,14 @@ export default class Header extends React.Component<HeaderProps, any> {
         this.setState({ customerMenuOpen: !this.state.customerMenuOpen })
     }
 
+    public handleRightClick(e) {
+        if (e.nativeEvent.which === 3) {
+            e.preventDefault()
+            window.location.href =
+                'https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/Sourcegraph%20Brand%20Kit%202.2%20-%20May%202021.zip'
+        }
+    }
+
     public render(): JSX.Element | null {
         return (
             <>
@@ -60,7 +70,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                     className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}
                 >
                     <div className="container-lg">
-                        <Navbar.Brand className="navbar-brand header__logo" href="/">
+                        <Navbar.Brand className="header__logo" href="/" onContextMenu={this.handleRightClick}>
                             <span role="img" aria-label="Sourcegraph - Universal code search">
                                 {' '}
                             </span>
@@ -77,7 +87,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     <span className="sr-only">Toggle navigation</span>
                                     <span className="navbar-toggler-icon" />
                                 </button>
-                                <Nav className="me-auto">
+                                <Nav className="me-auto ml-md-2">
                                     <NavDropdown onToggle={val => this.dropdownToggle(val)} title="Product">
                                         <NavDropdown.Item href="/code-search">Code Search</NavDropdown.Item>
                                         <NavDropdown.Item href="/batch-changes">Batch Changes</NavDropdown.Item>
@@ -105,7 +115,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         Docs
                                     </Nav.Link>
                                 </Nav>
-                                <Nav className="right-nav justify-content-lg-end">
+                                <Nav className="right-nav justify-content-lg-end ml-lg-8">
                                     <Nav.Link
                                         href="https://sourcegraph.com/sign-in"
                                         title="Search public code with Sourcegraph Cloud"
