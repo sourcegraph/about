@@ -5,6 +5,7 @@
         background-size: 150px;
         min-width: 150px;
         height: 26px;
+        margin-right: 0;
 
         &-image {
             height: 26px;
@@ -30,7 +31,7 @@
     // New Top Nav Customization
     .nav-link {
         color: $navbar-light-color;
-        padding: 0.7rem;
+        padding: 0.7rem 0.4rem;
 
         &:hover {
             color: $navbar-light-hover-color;
@@ -38,10 +39,6 @@
         &.btn.btn-outline-primary:hover {
             color: $white;
         }
-    }
-
-    .navbar-brand {
-        margin-right: 0;
     }
 
     &.navbar-dark {
@@ -57,10 +54,15 @@
             display: none !important;
         }
         .me-auto {
-            min-width: 400px;
+            min-width: 415px;
+            flex-grow: 1;
         }
         .right-nav {
-            min-width: 200px;
+            min-width: 178px;
+        }
+        .container-lg {
+            max-width: 1400px;
+            justify-content: left;
         }
     }
 
