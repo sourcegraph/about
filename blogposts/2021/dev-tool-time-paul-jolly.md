@@ -4,7 +4,7 @@ description: 'Paul Jolly, maintainer on the CUE project and co-creator of Play w
 author: Nick Moore
 authorUrl: https://twitter.com/nickwritesit
 publishDate: 2021-09-22T10:00-07:00
-tags: [blog]
+tags: [blog, dtt]
 slug: dev-tool-time-paul-jolly
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/dev-tool-time-paul-jolly-hero.jpg
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/dev-tool-time-paul-jolly-hero.jpg
