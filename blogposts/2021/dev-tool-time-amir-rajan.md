@@ -32,12 +32,6 @@ First rig post
     <blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Will be streaming on Twitch today using my new rig. Got eye tracking working so you’ll see exactly where I’m looking when I code. <a href="https://t.co/Toc6h1XB7M">pic.twitter.com/Toc6h1XB7M</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1008041824911536128?ref_src=twsrc%5Etfw">June 16, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 </div>
 
-A midway point
-
-<div style="width:40rem;margin-left:auto;margin-right:auto;">
-    <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">About to start streaming. I’m serious about this stuff. What my game dev/Twitch streaming setup looks like: <a href="https://t.co/IVQ28rlqO8">pic.twitter.com/IVQ28rlqO8</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1090668384688136192?ref_src=twsrc%5Etfw">January 30, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-</div>
-
 The current setup
 
 <div style="width:40rem;margin-left:auto;margin-right:auto;">
@@ -45,6 +39,10 @@ The current setup
 </div>
 
 ## Developing ergonomically
+
+Amir's hardware setup has developed over time to increase his efficiency and improve his workflows, even as it decreases the physical stress on his body. His software development environment has done much the same. While Amir used Vim and modal editing, he wanted a configuration language better than Vimscript. Emacs, with [`evil-mode`](https://github.com/emacs-evil/evil) for modal editing and keybindings, provides a profoundly moldable development environment. To keep it lightweight and responsive, and inheriting from his time with Vim, Amir uses Emacs in the terminal, [Alacritty](https://github.com/alacritty/alacritty) in his case.
+
+DragonRuby Game Toolkit emerged from a desire for a game engine with a fast feedback loop, and Ruby proved exceptional as a powerful language, whose dynamic character keeps open the possible futures of any given game Amir works on. The foundation of a game, here its programming language, needs to be flexible enough to not restrict it.
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
@@ -55,13 +53,15 @@ The current setup
 
 ## The ergonomic long-game
 
+In designing and adapting for comfort, health, and efficiency, Amir isn't focused just on today, next week, or even next year.
+
 > "Philosophically, the whole journey I'm taking is based on the idea that I'm going to be programming the rest of my life. Every iteration, every improvement I make, every dive into the bowels of Emacs comes at that upfront investment to learn and deal with these pains so that over time this environment becomes home to me."
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Setup_ROI.mp4"></video>
     </div>
-    <figcaption style="text-align: center; font-style: italic;">Listen to Amir talk about the long-game of egonomics</figcaption>
+    <figcaption style="text-align: center; font-style: italic;">Listen to Amir talk about the long-game of ergonomics</figcaption>
 </figure>
 
 ## Show notes
