@@ -1,13 +1,13 @@
 ---
 title: 'Down the ergonomic rabbit hole: Dev Tool Time with Amir Rajan'
-description: ''
+description: 'Amir Rajan, acclaimed indie game dev and co-creator of DragonRuby Game Toolkit, shares the many stages of his hardware setup over the years, and how he uses Emacs as a game dev.'
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-10-20T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-amir-rajan
-heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/linkedin.jpg
-socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/linkedin.jpg
+heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/amir-rajan.jpg
+socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/amir-rajan.jpg
 published: true
 ---
 
@@ -15,14 +15,34 @@ Intro
 
 You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Amir’s desk setup:
 
-## Hardware
+## Developing ergonomics
 
-Embed Amir's tweets at 3 different stages
+First rig post
 
-## section
+<div style="width:40rem;margin-left:auto;margin-right:auto;">
+    <blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Will be streaming on Twitch today using my new rig. Got eye tracking working so you’ll see exactly where I’m looking when I code. <a href="https://t.co/Toc6h1XB7M">pic.twitter.com/Toc6h1XB7M</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1008041824911536128?ref_src=twsrc%5Etfw">June 16, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</div>
+
+A midway point
+
+<div style="width:40rem;margin-left:auto;margin-right:auto;">
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Also, shameless sharing of endgame keyboard, failed experiments, and rig: <a href="https://t.co/k4EQ1evQF6">pic.twitter.com/k4EQ1evQF6</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1172565179806224384?ref_src=twsrc%5Etfw">September 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+The current setup
+
+<div style="width:40rem;margin-left:auto;margin-right:auto;">
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Iteration 16 of my dev setup: <a href="https://t.co/xwtMJE32hc">pic.twitter.com/xwtMJE32hc</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1441174275386449921?ref_src=twsrc%5Etfw">September 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+## Developing ergonomically
 
 ## Show notes
 
+- [A Dark Room Android](https://play.google.com/store/apps/details?id=com.yourcompany.adarkroom&hl=en_US)
+- [A Dark Room Nintendo Switch](https://www.nintendo.com/games/detail/a-dark-room-switch/)
+- [A Dark Room iOS](https://apps.apple.com/us/app/a-dark-room/id736683061)
+- [A Dark Room](https://adarkroom.doublespeakgames.com/)
 - [Alacritty](https://github.com/alacritty/alacritty)
 - [Apple Pro Display XDR 32" monitor](https://www.apple.com/pro-display-xdr/)
 - [Bfo-9000 keyboard](https://keeb.io/products/bfo-9000-keyboard-customizable-full-size-split-ortholinear)
@@ -31,7 +51,6 @@ Embed Amir's tweets at 3 different stages
 - [CherryMX Speed Silver switches](https://www.cherrymx.de/en/cherry-mx/mx-original/mx-speed-silver.html)
 - [Ctags](http://ctags.sourceforge.net/)
 - [Dank Mono font](https://philpl.gumroad.com/l/dank-mono)
-- [Dark Room game](https://adarkroom.doublespeakgames.com/)
 - [Dell 38" curved monitor](https://www.dell.com/en-us/work/shop/dell-ultrasharp-38-curved-usb-c-hub-monitor-u3821dw/apd/210-ayle/monitors-monitor-accessories)
 - [Dell 49" UltraSharp curved monitor](https://www.dell.com/en-us/work/shop/dell-ultrasharp-49-curved-monitor-u4919dw/apd/210-arnw/monitors-monitor-accessories)
 - [DragonRuby Game Toolkit](https://dragonruby.org/toolkit/game)
@@ -40,17 +59,18 @@ Embed Amir's tweets at 3 different stages
 - [Ergodox keyboard](https://ergodox-ez.com/)
 - [Evil for Emacs](https://github.com/emacs-evil/evil)
 - [Evil-surround for Emacs](https://github.com/emacs-evil/evil-surround)
-- [Eye tracking hardware]()
 - [Havit low-profile keyboard](https://www.prohavit.com/products/hv-kb390l-low-profile-mechanical-keyboard?_pos=1&_sid=1898c765a&_ss=r)
 - [Herman Miller chairs](https://www.hermanmiller.com/products/seating/)
 - [Human scale chairs](https://www.humanscale.com/products/seating)
 - [Kailh boxwhite switches](https://switches.mx/kailh-box-white)
+- [Nyquist Keymap File](https://github.com/amirrajan/qmk_firmware/blob/b34da133fd0f4b26cd5ca2e62a7038dc53f750b6/keyboards/keebio/nyquist/keymaps/amirrajan/config.h)
 - [Nyquist keyboard](https://keeb.io/collections/nyquist-keyboard-collection)
 - [Odyssey G9 49" monitor](https://www.samsung.com/us/computing/monitors/gaming/49-odyssey-g9-gaming-monitor-lc49g97tssnxdc/)
 - [QMK keyboard firmware](https://qmk.fm/)
 - [ReMarkable 2 e-ink tablet](https://remarkable.com/store/remarkable-2)
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Tmux](https://github.com/tmux/tmux)
+- [Tobii EyeTracker](https://gaming.tobii.com/product/eye-tracker-5/)
 - [Topre switches](https://deskthority.net/wiki/Topre_switch)
 - [Zilent v2 switches](https://zealpc.net/products/zilent?variant=5894817710118)
 
