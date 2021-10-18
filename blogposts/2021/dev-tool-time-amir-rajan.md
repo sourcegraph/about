@@ -11,9 +11,9 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/amir-ra
 published: true
 ---
 
-Intro
+Wrist pain and fatigue were the start of indie gave developer Amir Rajan's journey in ergonomic hardware setups. As a dev and the co-creator of DragonRuby Game Toolkit, Amir needed to find a way to write code week to week, for years to come. When Amir joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), he shared his setups over the years, the motivations between different pieces of hardware, and the software he uses to build games.
 
-You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Amir’s desk setup:
+You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but let's take a first step with Amir down the ergonomic rabbit hole.
 
 ## Developing ergonomics
 
@@ -26,13 +26,13 @@ First rig post
 A midway point
 
 <div style="width:40rem;margin-left:auto;margin-right:auto;">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Also, shameless sharing of endgame keyboard, failed experiments, and rig: <a href="https://t.co/k4EQ1evQF6">pic.twitter.com/k4EQ1evQF6</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1172565179806224384?ref_src=twsrc%5Etfw">September 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">About to start streaming. I’m serious about this stuff. What my game dev/Twitch streaming setup looks like: <a href="https://t.co/IVQ28rlqO8">pic.twitter.com/IVQ28rlqO8</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1090668384688136192?ref_src=twsrc%5Etfw">January 30, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 </div>
 
 The current setup
 
 <div style="width:40rem;margin-left:auto;margin-right:auto;">
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Iteration 16 of my dev setup: <a href="https://t.co/xwtMJE32hc">pic.twitter.com/xwtMJE32hc</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1441174275386449921?ref_src=twsrc%5Etfw">September 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Iteration 16 of my dev setup: <a href="https://t.co/xwtMJE32hc">pic.twitter.com/xwtMJE32hc</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1441174275386449921?ref_src=twsrc%5Etfw">September 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
 ## Developing ergonomically
