@@ -11,11 +11,20 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/amir-ra
 published: true
 ---
 
-Wrist pain and fatigue were the start of indie gave developer Amir Rajan's journey in ergonomic hardware setups. As a dev and the co-creator of DragonRuby Game Toolkit, Amir needed to find a way to write code week to week, for years to come. When Amir joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), he shared his setups over the years, the motivations between different pieces of hardware, and the software he uses to build games.
+Wrist pain and fatigue were the start of indie gave developer [Amir Rajan's](https://twitter.com/amirrajan/) journey in ergonomic hardware setups. As a dev and the co-creator of DragonRuby Game Toolkit, Amir needed to find a way to write code week to week, for years to come. When Amir joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), he shared his setups over the years, the motivations between different pieces of hardware, and the software he uses to build games.
 
 You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but let's take a first step with Amir down the ergonomic rabbit hole.
 
 ## Developing ergonomics
+
+[Evolution of Amir's battle stage](https://gist.github.com/amirrajan/926cb51ee49a661abdfa6656662c07ca)
+
+<figure>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Setup_Evolution.mp4"></video>
+    </div>
+    <figcaption style="text-align: center; font-style: italic;"> See Amir's setup over the years</figcaption>
+</figure>
 
 First rig post
 
@@ -36,6 +45,24 @@ The current setup
 </div>
 
 ## Developing ergonomically
+
+<figure>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Why_Ruby.mp4"></video>
+    </div>
+    <figcaption style="text-align: center; font-style: italic;">Hear Amir explain why he started writing games in Ruby</figcaption>
+</figure>
+
+## The ergonomic long-game
+
+> "Philosophically, the whole journey I'm taking is based on the idea that I'm going to be programming the rest of my life. Every iteration, every improvement I make, every dive into the bowels of Emacs comes at that upfront investment to learn and deal with these pains so that over time this environment becomes home to me."
+
+<figure>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Setup_ROI.mp4"></video>
+    </div>
+    <figcaption style="text-align: center; font-style: italic;">Listen to Amir talk about the long-game of egonomics</figcaption>
+</figure>
 
 ## Show notes
 
