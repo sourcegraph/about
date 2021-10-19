@@ -1,6 +1,6 @@
 ---
 title: 'Introducing search contexts'
-description: (TBD)
+description: 'Version contexts and repogroups are a powerful way to search across multiople repositories. To expand this functionality, we're releasing search contexts in Sourcegraph 3.33.'
 author: Rok Novosel, Ben Venker
 publishDate: 2021-10-21T10:00-07:00
 tags: [blog]
@@ -53,7 +53,7 @@ To help you migrate from version contexts to search contexts, we’ve created an
 
 To migrate from repogroups to search contexts, you can follow the migration steps in [repogroups to search contexts migration guide](https://docs.sourcegraph.com/code_search/how-to/convert_repository_groups_to_search_contexts).
 
-Version contexts and repogroups will be fully deprecated on October 20, 2021 in release 3.34, so we recommend migrating your repogroups and version contexts before upgrading to 3.35, to be released on November 20, 2021. You will still be able to manually migrate version contexts and repogroups to search contexts after that point, but the automatic conversion page will not be available.
+Version contexts and repogroups will be removed in Sourcegraph 3.34, to be released on October 20, 2021, so we recommend migrating to search contexts before then. You will still be able to manually migrate version contexts and repogroups to search contexts after that point, but the automatic conversion page will not be available.
 
 You will not lose any data stored in the configuration as a result of the deprecation, so manual migration will still be possible.
 
