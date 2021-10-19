@@ -12,6 +12,7 @@ export enum PostType {
     PressReleasePost,
     ReleasePost,
     PodcastPost,
+    DTTPost,
 }
 
 export interface Post {
@@ -71,18 +72,19 @@ export const POST_TYPE_TO_COMPONENT: Record<PostType, React.FunctionComponent<Po
     [PostType.ReleasePost]: ReleasePost,
     [PostType.PressReleasePost]: PressReleasePost,
     [PostType.PodcastPost]: PodcastPost,
+    [PostType.DTTPost]: BlogPost,
 }
 
 export const postType = (post: Post): PostType =>
     post.frontmatter.tags?.includes('release')
         ? PostType.ReleasePost
         : post.frontmatter.tags?.includes('press')
-        ? PostType.PressReleasePost
-        : post.frontmatter.tags?.includes('podcast')
-        ? PostType.PodcastPost
-        : post.frontmatter.style === 'short-inline-title'
-        ? PostType.LinkPost
-        : PostType.BlogPost
+            ? PostType.PressReleasePost
+            : post.frontmatter.tags?.includes('podcast')
+                ? PostType.PodcastPost
+                : post.frontmatter.style === 'short-inline-title'
+                    ? PostType.LinkPost
+                    : PostType.BlogPost
 
 export enum BlogType {
     GopherCon = 'go',
@@ -115,6 +117,20 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
             title: 'strings: the Sourcegraph blog',
             description:
                 "News from Sourcegraph: our changelog, announcements, tech blog posts, and anything else we think you'll find interesting.",
+        },
+    },
+    dtt: {
+        title: 'Dev Tool Time',
+        baseUrl: '/dev-tool-time',
+        belowTitle: (
+            <>
+                <p className="mb-1">Engineers talking to other engineers about their tools.</p>
+            </>
+        ),
+        meta: {
+            title: 'Dev Tool Time',
+            description:
+                "Engineers talking to other engineers",
         },
     },
     press: {
