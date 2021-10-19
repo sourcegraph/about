@@ -16,7 +16,7 @@ One of Sourcegraph's most powerful capabilities is being able to search across m
 
 Although cross-repo search is powerful on its own, when you have hundreds or thousands of repos across dozens of teams, it's not enough. We created version contexts to address some of those limitations, allowing site admins to create groups of repositories and revisions to search through, simplifying their code search landscape. For example, enterprise users created bundles of repositories and revisions that were included in a particular release, enabling quicker bug trackdown in specific versions.
 
-With the release of Sourcegraph 3.33, we're officially launching [search contexts](https://docs.sourcegraph.com/code_search/how-to/search_contexts), which maintain those functionalities but make them available to all users–not just site admins–in a convenient management UI. 
+With the release of Sourcegraph 3.33, we're officially launching [search contexts](https://docs.sourcegraph.com/code_search/how-to/search_contexts), which maintain those functionalities but make them available to all users–not just site admins–in a convenient management UI.
 
 ## Why search contexts, and deprecation of version contexts and repogroups
 
@@ -29,6 +29,7 @@ Additionally, we created repogroups to allow organizations such as [Stanford](ht
 The one big drawback was that individual users wanted to be able to scope their version contexts on their own, and limiting version contexts to admins created a bottleneck — so we decided to take the features and upgrade them, making them broadly available for all Sourcegraph users and configurable with a friendly UI.
 
 ## What changes for you
+
 With the launch of search contexts, all users (not just admins) can create and view their own search contexts as well as use public contexts created by admins, their organization, or other users. Why is this useful? For teams, creating search contexts makes it easier to focus your searches on repos you care about. For example, maybe you work on internal tools and have a set of repositories you primarily work in. By creating a search context with those repos, you can have your searches scoped to the repos relevant to your work, ensuring the most relevant search results.
 
 If you’re a team lead or manager, you can create contexts and share them with the team. For companies with a large collection of repositories, this can simplify the search experience and speed up developer workflows.
@@ -47,7 +48,7 @@ You can access search contexts in two ways. First, after you create a context, i
   <figcaption>Using the "context:" filter</figcaption>
 </figure>
 
-## Performing the migration to search contexts 
+## Performing the migration to search contexts
 
 To help you migrate from version contexts to search contexts, we’ve created an automatic migration that allows you to selectively migrate your version contexts [with the click of a button](https://docs.sourcegraph.com/admin/how-to/converting-version-contexts-to-search-contexts).
 
@@ -59,9 +60,10 @@ You will not lose any data stored in the configuration as a result of the deprec
 
 ## Conclusion
 
-Give search contexts a try and we think you’ll love them. You can learn how to create your own search contexts [here](https://docs.sourcegraph.com/code_search/how-to/search_contexts). 
+Give search contexts a try and we think you’ll love them. You can learn how to create your own search contexts [here](https://docs.sourcegraph.com/code_search/how-to/search_contexts).
 
 Below are some contexts and ideas to get you started. Remember to take a look at the context filter to see the context you’re in.
+
 - [The latest Facebook Android SDK version](https://sourcegraph.com/search?q=context:%40benvenker/fb-android-sdk-v12.0.1+&patternType=literal_)
 - [Auth0’s .Net Core authentication library at main](https://sourcegraph.com/search?q=context:%40benvenker/auth0/asp.net-core-auth+&patternType=literal)
 - [Search only PHP, Kotlin, and PHP repos](https://sourcegraph.com/search?q=context:%40benvenker/langs+&patternType=literal)
