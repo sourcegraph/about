@@ -12,29 +12,29 @@ published: false
 
 ## Introducing search contexts
 
-One of Sourcegraph's most powerful capabilities is being able to search across multiple repositories. Our customers can have tens of thousands of repositories, and searching across them all was painful or impossible before Sourcegraph.
+One of Sourcegraph's most powerful capabilities is being able to search across multiple repositories. Our customers can have tens of thousands of repositories, and before Sourcegraph, searching across them all was painful or impossible.
 
-Although cross-repo search is powerful on its own, when you have hundreds or thousands of repos across dozens of teams, it's not enough. We created version contexts to address some of those limitations, allowing site admins to create groups of repositories and revisions to search through, simplifying their code search landscape. For example, enterprise users created bundles of repositories and revisions that were included in a particular release, enabling quicker bug trackdown in specific versions.
+Although cross-repo search is powerful on its own, when you have hundreds or thousands of repos across dozens of teams, it's not enough. We created version contexts to address some of those limitations. Version contexts enables site admins to create groups of repositories and revisions to search through, which simplifies their code search landscape. For example, enterprise users created bundles of repositories and revisions that were included in a particular release, enabling quicker bug trackdown in specific versions.
 
 With the release of Sourcegraph 3.33, we're officially launching [search contexts](https://docs.sourcegraph.com/code_search/how-to/search_contexts), which maintain those functionalities but make them available to all users–not just site admins–in a convenient management UI.
 
 ## Why search contexts, and deprecation of version contexts and repogroups
 
-Version contexts have always been an experimental feature and with the launch of search contexts in GA in version 3.33, we're also officially deprecating version contexts and repogroups. In our next release, version 3.34, they will be removed completely.
+Version contexts have always been an experimental feature. With the launch of search contexts in GA in version 3.33, we're officially deprecating version contexts and repogroups. In our next release, version 3.34, they will be removed completely.
 
-Over time, we saw a ton of value in the way that version contexts and repogroups were being used in large organizations. For example, admins used them to segment large code bases by teams and focus areas, allowing users to search only the code they needed and make code search faster.
+Over time, we saw a ton of value in the way that large organizations were using version contexts and repogroups. For example, admins used them to segment large codebases by teams and focus areas, allowing users to search only the code they needed–making code search faster.
 
 Additionally, we created repogroups to allow organizations such as [Stanford](https://sourcegraph.com/stanford) and the [Kubernetes](https://sourcegraph.com/kubernetes) project to highlight repositories of interest.
 
-The one big drawback was that individual users wanted to be able to scope their version contexts on their own, and limiting version contexts to admins created a bottleneck — so we decided to take the features and upgrade them, making them broadly available for all Sourcegraph users and configurable with a friendly UI.
+The one big drawback was that individual users wanted to be able to scope their version contexts on their own, and limiting version contexts to admins created a bottleneck. We decided to take the features, upgrade them, and make them broadly available for all Sourcegraph users and configurable with a friendly UI.
 
 ## What changes for you
 
-With the launch of search contexts, all users (not just admins) can create and view their own search contexts as well as use public contexts created by admins, their organization, or other users. Why is this useful? For teams, creating search contexts makes it easier to focus your searches on repos you care about. For example, maybe you work on internal tools and have a set of repositories you primarily work in. By creating a search context with those repos, you can have your searches scoped to the repos relevant to your work, ensuring the most relevant search results.
+With the launch of search contexts, all users (not just admins) can create and view their own search contexts as well as use public contexts created by admins, their organization, or other users. Why is this useful? For teams, creating search contexts makes it easier to focus your searches on repos you care about. Let's say, for example, that you work on internal tools and have a set of repositories you primarily work in. By creating a search context with those repos, you can have your searches scoped to the repos relevant to your work, ensuring the most relevant search results.
 
 If you’re a team lead or manager, you can create contexts and share them with the team. For companies with a large collection of repositories, this can simplify the search experience and speed up developer workflows.
 
-For individual developers, you can create contexts out of sets of repositories you use often.
+If you're an individual developer, you can create contexts out of sets of repositories you use often.
 
 You can access search contexts in two ways. First, after you create a context, it will be available in the context dropdown on the left side of the search bar. Second, you can use the `context:` filter anywhere search queries are used to utilize any context available to you.
 
