@@ -28,10 +28,21 @@ export const pageQuery = graphql`
                 node {
                     frontmatter {
                         title
+                        description
+                        heroImage
+                        author
+                        authorUrl
+                        canonical
                         tags
                         publishDate(formatString: "MMMM D, YYYY")
                         slug
                         published
+                        changelogItems {
+                            url
+                            category
+                            description
+                        }
+                        style
                     }
                     html
                     excerpt(pruneLength: 300)
@@ -40,6 +51,7 @@ export const pageQuery = graphql`
                         permalink
                         blogType
                     }
+                    fileAbsolutePath
                 }
             }
         }
