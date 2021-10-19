@@ -5,8 +5,8 @@ author: Rok Novosel, Ben Venker
 publishDate: 2021-10-21T10:00-07:00
 tags: [blog]
 slug: introducing-search-contexts
-heroImage: (TBD)
-socialImage: (TBD)
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-example.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-example.png
 published: false
 ---
 
