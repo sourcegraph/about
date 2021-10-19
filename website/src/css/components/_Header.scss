@@ -3,8 +3,9 @@
     &__logo {
         background: url(/sourcegraph-logo.svg) no-repeat;
         background-size: 150px;
-        width: 150px;
+        min-width: 150px;
         height: 26px;
+        margin-right: 0;
 
         &-image {
             height: 26px;
@@ -23,7 +24,6 @@
         &__logo {
             background: url(/sourcegraph-reverse-logo.svg) no-repeat;
             background-size: 150px;
-            width: 150px;
             height: 26px;
         }
     }
@@ -31,6 +31,7 @@
     // New Top Nav Customization
     .nav-link {
         color: $navbar-light-color;
+        padding: 0.7rem 0.4rem;
 
         &:hover {
             color: $navbar-light-hover-color;
@@ -39,8 +40,12 @@
             color: $white;
         }
     }
-    .container-lg {
-        justify-content: flex-start !important;
+
+    &.navbar-dark {
+        // Make sure top nav font color is visible (light) on dark background
+        .nav .nav-link {
+            color: $white;
+        }
     }
 
     // Desktop
@@ -49,10 +54,15 @@
             display: none !important;
         }
         .me-auto {
-            min-width: 500px;
+            min-width: 415px;
+            flex-grow: 1;
         }
         .right-nav {
-            min-width: 200px;
+            min-width: 178px;
+        }
+        .container-lg {
+            max-width: 1400px;
+            justify-content: left;
         }
     }
 
@@ -84,6 +94,16 @@
             a:hover {
                 text-decoration: none;
                 color: $navbar-light-hover-color;
+            }
+        }
+        &.navbar-dark {
+            // Make sure top nav font color is visible (light) on dark background
+            .nav .nav-link a {
+                color: $light-5;
+            }
+            .navbar-toggler {
+                border-color: $light-5;
+                color: $light-5;
             }
         }
     }
