@@ -45,7 +45,7 @@ You can access search contexts in two ways. First, after you create a context, i
 
 <figure>
   <object role="image" data="https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/manual-search-context.png"></object>
-  <figcaption>Using the "context:" filter</figcaption>
+  <figcaption>Using the `context:` filter</figcaption>
 </figure>
 
 ## Performing the migration to search contexts
@@ -75,6 +75,6 @@ For questions about or support with upgrading to search contexts, please reach o
 
 ---
 
-<a id="footnote-1"><sup>1</sup><small>Although public contexts created by other users are searchable, they will not show up in the search contexts dropdown. Users will need to use the context filter, like so: 'context:other-context'</small></a>
+<a id="footnote-1"><sup>1</sup><small>Although public contexts created by other users are searchable, they will not show up in the search contexts dropdown. Users will need to use the context filter, like so: `context:other-context`</small></a>
 
 ---
