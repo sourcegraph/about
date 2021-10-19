@@ -30,7 +30,7 @@ The one big drawback was that individual users wanted to be able to scope their 
 
 ## What changes for you
 
-With the launch of search contexts, all users (not just admins) can create and view their own search contexts as well as use public contexts created by admins, their organization, or other users. Why is this useful? For teams, creating search contexts makes it easier to focus your searches on repos you care about. Let's say, for example, that you work on internal tools and have a set of repositories you primarily work in. By creating a search context with those repos, you can have your searches scoped to the repos relevant to your work, ensuring the most relevant search results.
+With the launch of search contexts, all users (not just admins) can create and view their own search contexts as well as use public contexts created by admins, their organization, or other users.<a href="#footnote-1"><sup>1</sup></a> Why is this useful? For teams, creating search contexts makes it easier to focus your searches on repos you care about. Let's say, for example, that you work on internal tools and have a set of repositories you primarily work in. By creating a search context with those repos, you can have your searches scoped to the repos relevant to your work, ensuring the most relevant search results.
 
 If you’re a team lead or manager, you can create contexts and share them with the team. For companies with a large collection of repositories, this can simplify the search experience and speed up developer workflows.
 
@@ -72,3 +72,9 @@ Below are some contexts and ideas to get you started. Remember to take a look at
 The list goes on! You can add multiple repositories easily to each search context, so get creative.
 
 For questions about or support with upgrading to search contexts, please reach out to your CE or [support@sourcegraph.com](mailto:support@sourcegraph.com).
+
+---
+
+<a id="footnote-1"><sup>1</sup><small>Although public contexts created by other users are searchable, they will not show up in the search contexts dropdown. Users will need to use the context filter, like so: 'context:other-context'</small></a>
+
+---
