@@ -23,7 +23,7 @@ A few years ago, Amir was hunched over his laptop. When he realized he needed to
     <blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Will be streaming on Twitch today using my new rig. Got eye tracking working so you’ll see exactly where I’m looking when I code. <a href="https://t.co/Toc6h1XB7M">pic.twitter.com/Toc6h1XB7M</a></p>&mdash; Amir Rajan (@amirrajan) <a href="https://twitter.com/amirrajan/status/1008041824911536128?ref_src=twsrc%5Etfw">June 16, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 </div>
 
-Over the next few years, he evolved his hardware to keep refining for comfort, work needs, and more efficient layouts. He built new keyboards, trying out different mechanical switches (check out the [show notes](#Show-notes) below for some of them), and developed muscle memory with a phonetic mapping for some keys and operators, set up with [QMK](https://qmk.fm/). He went back to a traditional desk, tried different task chairs, and fine-tuned their height to keep his knees and feet in the right places.
+Over the next few years, he refined his hardware for comfort, work, and more efficient layouts. He built new keyboards, trying out different mechanical switches (check out the [show notes](#Show-notes) below for some of them), and developed muscle memory with a phonetic mapping for some keys and operators, set up with [QMK](https://qmk.fm/). He went back to a traditional desk, tried different task chairs, and fine-tuned their height to keep his knees and feet in the right places.
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
@@ -42,9 +42,9 @@ Amir keeps an updated gist with links to his setups since 2018. Check them all o
 
 ## Developing ergonomically
 
-Amir's hardware setup has developed over time to increase his efficiency and improve his workflows, even as it decreases the physical stress on his body. His software development environment has done much the same. While Amir used Vim and modal editing, he wanted a configuration language better than Vimscript. Emacs, with [`evil-mode`](https://github.com/emacs-evil/evil) for modal editing and keybindings, provides a profoundly moldable development environment. To keep it lightweight and responsive, and inheriting from his time with Vim, Amir uses Emacs in the terminal, [Alacritty](https://github.com/alacritty/alacritty) in his case.
+Amir's hardware setup has developed over time to increase his efficiency and improve his workflows, even as it decreases the physical stress on his body. His software development environment has done much the same. Though Amir uses Vim and modal editing, he wanted a configuration language better than Vimscript. Emacs, with [`evil-mode`](https://github.com/emacs-evil/evil) for modal editing and keybindings, provides a profoundly moldable development environment. To keep it lightweight and responsive, and inheriting from his time with Vim, Amir uses Emacs in the terminal–[Alacritty](https://github.com/alacritty/alacritty), in his case.
 
-DragonRuby Game Toolkit emerged from a desire for a game engine with a fast feedback loop, and Ruby proved exceptional as a powerful language, whose dynamic character keeps open the possible futures of any given game Amir works on. The foundation of a game, here its programming language, needs to be flexible enough to not restrict it.
+DragonRuby Game Toolkit emerged from a desire for a game engine with a fast feedback loop. Ruby proved to be a powerful language and its dynamic character keeps open the possible futures of any game Amir works on. The foundation of a game–its programming language–needs to be flexible enough to not restrict it.
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
