@@ -4,7 +4,7 @@ description: 'Liz Fong-Jones, Principal Developer Advocate at Honeycomb and long
 author: Scott Bailey
 authorUrl: https://handbook.sourcegraph.com/company/team#scott-bailey-he-him
 publishDate: 2021-09-16T10:00-07:00
-tags: [blog]
+tags: [blog, dtt]
 slug: dev-tool-time-liz-fong-jones
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-cover.jpg
 socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-cover.jpg

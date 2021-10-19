@@ -4,7 +4,7 @@ description: 'Adam Gordon Bell, Developer Advocate at Earthly, shares how he lev
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-10-06T10:00-07:00
-tags: [blog]
+tags: [blog, dtt]
 slug: dev-tool-time-adam-gordon-bell
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/linkedin.jpg
 socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/linkedin.jpg

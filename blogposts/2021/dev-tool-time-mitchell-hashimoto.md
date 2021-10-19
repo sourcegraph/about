@@ -4,7 +4,7 @@ description: 'Mitchell Hashimoto, co-founder, CTO, and now individual contributo
 author: Scott Bailey
 authorUrl: https://handbook.sourcegraph.com/company/team#scott-bailey-he-him
 publishDate: 2021-08-25T10:00-07:00
-tags: [blog]
+tags: [blog, dtt]
 slug: dev-tool-time-mitchell-hashimoto
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-mitchell-hashimoto-cover.jpg
 socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-mitchell-hashimoto-cover.jpg

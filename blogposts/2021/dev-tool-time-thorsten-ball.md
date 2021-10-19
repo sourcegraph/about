@@ -4,7 +4,7 @@ description: 'Thorsten Ball, software engineer at Sourcegraph, shares how he use
 author: Rebecca Dodd
 authorUrl: https://handbook.sourcegraph.com/company/team#rebecca-dodd-she-her
 publishDate: 2021-08-18T10:00-07:00
-tags: [blog]
+tags: [blog, dtt]
 slug: dev-tool-time-thorsten-ball
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-thorsten-ball.jpg
 socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-thorsten-ball.jpg

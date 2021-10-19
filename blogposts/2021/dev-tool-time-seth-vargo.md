@@ -6,7 +6,7 @@ externalDescription: We’re talking about setting up a new computer in record t
 author: Vanesa Ortiz
 authorUrl: https://twitter.com/vanesacodes
 publishDate: 2021-04-28T10:00-07:00
-tags: [blog]
+tags: [blog, dtt]
 slug: dev-tool-time-seth-vargo
 heroImage: https://sourcegraphstatic.com/Twitter-Feed-Seth-Vargo-WS.png
 socialImage: https://sourcegraphstatic.com/Twitter-Feed-Seth-Vargo-WS.png

@@ -95,6 +95,7 @@ export enum BlogType {
     PressRelease = 'press',
     Podcast = 'podcast',
     Blog = 'blog',
+    DTT = 'dtt'
 }
 
 export interface BlogTypeInfo {
@@ -124,13 +125,14 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         baseUrl: '/dev-tool-time',
         belowTitle: (
             <>
-                <p className="mb-1">Engineers talking to other engineers about their tools.</p>
+                <p className="mb-1">Sourcegraph engineers interview other devs in the community about their desk set up, favorite dev tools, productivity hacks, and more.</p>
+                <img src="dtt_landing_page.jpg" alt="Dev Tool Time logo" style={{ maxWidth: "100%" }} />
             </>
         ),
         meta: {
             title: 'Dev Tool Time',
             description:
-                "Engineers talking to other engineers",
+                "Sourcegraph engineers interview other devs in the community about their desk set up, favorite dev tools, productivity hacks, and more.",
         },
     },
     press: {
