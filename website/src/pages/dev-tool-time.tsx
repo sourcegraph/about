@@ -21,7 +21,7 @@ export default Page
 export const pageQuery = graphql`
     query DTTEpisodes {
         allMarkdownRemark(
-            filter: {frontmatter: {tags: {in: "dtt"}}},
+            filter: { frontmatter: { tags: { in: "dtt" } } }
             sort: { fields: [frontmatter___publishDate], order: DESC }
         ) {
             edges {

@@ -79,12 +79,12 @@ export const postType = (post: Post): PostType =>
     post.frontmatter.tags?.includes('release')
         ? PostType.ReleasePost
         : post.frontmatter.tags?.includes('press')
-            ? PostType.PressReleasePost
-            : post.frontmatter.tags?.includes('podcast')
-                ? PostType.PodcastPost
-                : post.frontmatter.style === 'short-inline-title'
-                    ? PostType.LinkPost
-                    : PostType.BlogPost
+        ? PostType.PressReleasePost
+        : post.frontmatter.tags?.includes('podcast')
+        ? PostType.PodcastPost
+        : post.frontmatter.style === 'short-inline-title'
+        ? PostType.LinkPost
+        : PostType.BlogPost
 
 export enum BlogType {
     GopherCon = 'go',
@@ -95,7 +95,7 @@ export enum BlogType {
     PressRelease = 'press',
     Podcast = 'podcast',
     Blog = 'blog',
-    DTT = 'dtt'
+    DTT = 'dtt',
 }
 
 export interface BlogTypeInfo {
@@ -125,14 +125,17 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         baseUrl: '/dev-tool-time',
         belowTitle: (
             <>
-                <p className="mb-1">Sourcegraph engineers interview other devs in the community about their desk set up, favorite dev tools, productivity hacks, and more.</p>
-                <img src="dtt_landing_page.jpg" alt="Dev Tool Time logo" style={{ maxWidth: "100%" }} />
+                <p className="mb-1">
+                    Sourcegraph engineers interview other devs in the community about their desk set up, favorite dev
+                    tools, productivity hacks, and more.
+                </p>
+                <img src="dtt_landing_page.jpg" alt="Dev Tool Time logo" style={{ maxWidth: '100%' }} />
             </>
         ),
         meta: {
             title: 'Dev Tool Time',
             description:
-                "Sourcegraph engineers interview other devs in the community about their desk set up, favorite dev tools, productivity hacks, and more.",
+                'Sourcegraph engineers interview other devs in the community about their desk set up, favorite dev tools, productivity hacks, and more.',
         },
     },
     press: {
