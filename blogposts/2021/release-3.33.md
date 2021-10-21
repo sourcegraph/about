@@ -8,20 +8,14 @@ published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.33/sourcegraph-3-33-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.33/sourcegraph-3-33-release.png
 changelogItems:
+  - description: Search contexts are now enabled by default in Sourcegraph Enterprise.
+    url: https://github.com/sourcegraph/sourcegraph/pull/25674
+    category: Search
   - description: Search query validation has been improved for various search types and filters so that users get faster feedback on issues within their query.
     url: https://github.com/sourcegraph/sourcegraph/pull/24747
     category: Search
   - description: For short search queries containing the name of a supported programming language, the UI now automatically provides suggestions to run the query with a language filter.
     url: https://github.com/sourcegraph/sourcegraph/pull/25792
-    category: Search
-  - description: The API scope used by GitLab OAuth can now optionally be configured in the provider.
-    url: https://github.com/sourcegraph/sourcegraph/pull/26152
-    category: Admin
-  - description: Search context management pages are now only available in the Sourcegraph enterprise version. Search context dropdown is disabled in the OSS version.
-    url: https://github.com/sourcegraph/sourcegraph/pull/25147
-    category: Search
-  - description: Search contexts GQL API is now only available in the Sourcegraph enterprise version.
-    url: https://github.com/sourcegraph/sourcegraph/pull/25281
     category: Search
   - description: "Fixed an issue where clicking on a link in the 'Revisions' search sidebar would result in an invalid query if the query didn't already contain a 'repo:' filter."
     url: https://github.com/sourcegraph/sourcegraph/pull/25076
