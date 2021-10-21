@@ -42,7 +42,7 @@ Search contexts allow any users to create custom groupings of repositories and r
 
 Search contexts can be used in all kinds of situations to scope searches. For example, you may want to [search only PHP, Kotlin, and Python repos](https://sourcegraph.com/search?q=context:%40benvenker/langs+&patternType=literal) to scope search results to specific services. You can also create search contexts specific to your team or business unit to narrow search results to relevant repositories.
 
-You can read more about this change and how to migrate your version contexts to search contexts in [this blog post](https://about.sourcegraph.com/blog/introducing-search-contexts/).
+You can read more about this change and how to migrate your version contexts to search contexts in [this blog post](https://about.sourcegraph.com/blog/introducing-search-contexts/). Going forward, search contexts will only be available for enterprise customers; if you are currently using Sourcegraph OSS, you will need to become an enterprise customer to use this feature.
 
 <figure>
   <object role="image" data="https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-dropdown.png"></object>
