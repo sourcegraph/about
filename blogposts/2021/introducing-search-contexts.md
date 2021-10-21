@@ -71,7 +71,7 @@ Below are some contexts and ideas to get you started. Remember to take a look at
 
 The list goes on! You can add multiple repositories easily to each search context, so get creative.
 
-For questions about or support with upgrading to search contexts, please reach out to your CE or [support@sourcegraph.com](mailto:support@sourcegraph.com).
+For questions about or support with upgrading to search contexts, please reach out to your CE or [support@sourcegraph.com](mailto:support@sourcegraph.com). Also not that going forward, search contexts will only be available for enterprise customers; if you are currently using Sourcegraph OSS, you will need to become an enterprise customer to use this feature.
 
 ---
 
