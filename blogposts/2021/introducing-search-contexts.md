@@ -66,7 +66,7 @@ Below are some contexts and ideas to get you started. Remember to take a look at
 
 - [The latest Facebook Android SDK version](https://sourcegraph.com/search?q=context:%40benvenker/fb-android-sdk-v12.0.1+&patternType=literal_)
 - [Auth0’s .Net Core authentication library at main](https://sourcegraph.com/search?q=context:%40benvenker/auth0/asp.net-core-auth+&patternType=literal)
-- [Search only PHP, Kotlin, and PHP repos](https://sourcegraph.com/search?q=context:%40benvenker/langs+&patternType=literal)
+- [Search only PHP, Kotlin, and Python repos](https://sourcegraph.com/search?q=context:%40benvenker/langs+&patternType=literal)
 - A search context for your team, division, or business unit
 
 The list goes on! You can add multiple repositories easily to each search context, so get creative.
