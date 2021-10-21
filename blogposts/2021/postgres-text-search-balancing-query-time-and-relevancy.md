@@ -198,6 +198,22 @@ Issuing multiple queries in parallel with different similarity thresholds, as pr
 
 If you can get away with whole word (or prefix of words) matching in your use case, you can ditch pg_trgm entirely and instead use the FTS / tsvector functionality, which is far faster as it indexes much less data. One should also be mindful of the fact that with that better performance you can locate many more candidate matches to perform an `ORDER BY` on, potentially ending up with better results than if you'd stuck with pg_trgm similarity matching. It's all a game of tradeoffs.
 
+## Extensions that may solve this
+
+(amendment Oct 21, 2021) [Adrien Nayrat](https://twitter.com/Adrien_nayrat), PostgreSQL Expert & Freelancer, reached out to suggest the Rum index extension may help with this:
+
+> Hello,
+> I read your article https://about.sourcegraph.com/blog/postgres-text-search-balancing-query-time-and-relevancy/
+> Indeed, ranking is a known issue.
+> Did you consider using Rum indexes? This kind of index will be much larger but are designed to be fast for ranking.
+> More sources on this:
+>
+> - slides 62-63 https://www.postgresql.eu/events/pgconfeu2018/sessions/session/2116/slides/137/pgconf.eu-2018-fts.pdf
+> - https://postgrespro.com/blog/pgsql/4262305
+> - https://github.com/postgrespro/rum
+
+This looks super promising and may well address many of the reasons I / others at Sourcegraph have not used Postgres FTS, so will definitely be investigating this more in the future. One challenge is AWS/GCP Postgres offerrings not supporting this extension currently, though. Thanks for sharing!
+
 ## Thanks for reading
 
 If you got this far, thanks for reading! The search backend I describe here has not yet made its way into a full production rollout, but will soon. If you’re interested in trying it out, please follow the [Sourcegraph Twitter account](https://twitter.com/sourcegraph) for updates.
