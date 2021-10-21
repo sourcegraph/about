@@ -29,13 +29,6 @@ changelogItems:
   - description: "Fixed an issue where links to jump to Bitbucket Cloud wouldn't render in the UI."
     url: https://github.com/sourcegraph/sourcegraph/pull/25533
     category: Search
-
-  - description: 'Code insights running over all repositories using a commit search (`type:commit` or `type:diff`) would fail to deserialize and produce no results.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/25928
-    category: Search
-  - description: 'Fixed an issue where code insights queries could produce a panic on queued records that did not include a `record_time`'
-    url: https://github.com/sourcegraph/sourcegraph/pull/25929
-    category:
   - description: Fixed an issue where Batch Change changeset diffs would sometimes render incorrectly when previewed from the UI if they contained deleted empty lines.
     url: https://github.com/sourcegraph/sourcegraph/pull/25866
     category: Batch Changes
