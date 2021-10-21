@@ -11,7 +11,7 @@ changelogItems:
   - description: Search query validation has been improved for various search types and filters so that users get faster feedback on issues within their query.
     url: https://github.com/sourcegraph/sourcegraph/pull/24747
     category: Search
-  - description: For short search queries containing no filters but the name of a supported programming language we are now suggesting to run the query with a language filter.
+  - description: For short search queries containing the name of a supported programming language, the UI now automatically provides suggestions to run the query with a language filter.
     url: https://github.com/sourcegraph/sourcegraph/pull/25792
     category: Search
   - description: The API scope used by GitLab OAuth can now optionally be configured in the provider.
@@ -36,7 +36,7 @@ changelogItems:
 
 Sourcegraph 3.33 is now available! Here are some highlights from this release:
 
-## Search contexts are now GA for everyone
+## Search only the code you care about with search contexts
 
 Search contexts allows any users to create custom groupings of repositories and revisions for scoped, cross-repository searching. This expands on the functionality of version contexts and repogroups, which functioned similarly but could only be created by admins. As a result, we have deprecated version contexts and repogroups in Sourcegraph 3.33, and we will be removing them in Sourcegraph 3.34. You can read more about this change and how to migrate your version contexts to search contexts in [this blog post](https://about.sourcegraph.com/blog/introducing-search-contexts/).
 
