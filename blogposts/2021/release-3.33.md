@@ -1,12 +1,12 @@
 ---
 title: 'Sourcegraph 3.33 release'
 publishDate: 2021-10-22T10:00-07:00
-description: 'Sourcegraph 3.33 introduces UPDATE'
+description: 'Sourcegraph 3.33 introduces general availability for search contexts as well as code intelligence status data for all non-admin users.'
 tags: [blog, release]
 slug: 'release/3.33'
 published: false
-heroImage:
-socialImage:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.33/sourcegraph-3-33-release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.33/sourcegraph-3-33-release.png
 changelogItems:
   - description: Search query validation has been improved for various search types and filters so that user get faster feedback on issues within their query.
     url: https://github.com/sourcegraph/sourcegraph/pull/24747
