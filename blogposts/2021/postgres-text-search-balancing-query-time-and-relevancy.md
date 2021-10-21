@@ -205,12 +205,12 @@ If you can get away with whole word (or prefix of words) matching in your use ca
 > Hello,
 > I read your article https://about.sourcegraph.com/blog/postgres-text-search-balancing-query-time-and-relevancy/
 > Indeed, ranking is a known issue.
-> Did you consider using Rum indexes? This kind of index will be much larger but are designed to be fast for ranking. 
+> Did you consider using Rum indexes? This kind of index will be much larger but are designed to be fast for ranking.
 > More sources on this:
 >
-> * slides 62-63 https://www.postgresql.eu/events/pgconfeu2018/sessions/session/2116/slides/137/pgconf.eu-2018-fts.pdf
-> * https://postgrespro.com/blog/pgsql/4262305
-> * https://github.com/postgrespro/rum
+> - slides 62-63 https://www.postgresql.eu/events/pgconfeu2018/sessions/session/2116/slides/137/pgconf.eu-2018-fts.pdf
+> - https://postgrespro.com/blog/pgsql/4262305
+> - https://github.com/postgrespro/rum
 
 This looks super promising and may well address many of the reasons I / others at Sourcegraph have not used Postgres FTS, so will definitely be investigating this more in the future. One challenge is AWS/GCP Postgres offerrings not supporting this extension currently, though. Thanks for sharing!
 
