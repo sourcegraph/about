@@ -38,10 +38,22 @@ Sourcegraph 3.33 is now available! Here are some highlights from this release:
 
 ## Search only the code you care about with search contexts
 
-Search contexts allows any users to create custom groupings of repositories and revisions for scoped, cross-repository searching. This expands on the functionality of version contexts and repogroups, which functioned similarly but could only be created by admins. As a result, we have deprecated version contexts and repogroups in Sourcegraph 3.33, and we will be removing them in Sourcegraph 3.34. You can read more about this change and how to migrate your version contexts to search contexts in [this blog post](https://about.sourcegraph.com/blog/introducing-search-contexts/).
+Search contexts allow any users to create custom groupings of repositories and revisions for scoped, cross-repository searching. This expands on the functionality of version contexts and repogroups, which functioned similarly but could only be created by admins. As a result, we have deprecated version contexts and repogroups in Sourcegraph 3.33, and we will be removing them in Sourcegraph 3.34.
+
+Search contexts can be used in all kinds of situations to scope searches. For example, you may want to [search only PHP, Kotlin, and Python repos](https://sourcegraph.com/search?q=context:%40benvenker/langs+&patternType=literal) to scope search results to specific services. You can also create search contexts specific to your team or business unit to narrow search results to relevant repositories.
+
+You can read more about this change and how to migrate your version contexts to search contexts in [this blog post](https://about.sourcegraph.com/blog/introducing-search-contexts/).
+
+<figure>
+  <object role="image" data="https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-dropdown.png"></object>
+  <figcaption>The search context dropdown embedded in the search bar</figcaption>
+</figure>
 
 ## All users can now visualize and track the status of their LSIF data
 
 Previously, the Code Intelligence UI was only available to site-admins (except for hovers and reference panels). This conflicted with our users' need to add precise Code Intelligence to their own repositories. They could upload LSIF data and get precise Code Intelligence results, but couldn't visualize the status of that data. We now allow users to see uploads and indexes for repositories they have access to, helping them easily keep track of the status of all their LSIF data.
 
-<img width="1148" alt="Code intelligence uploads page" src="https://user-images.githubusercontent.com/1657213/137551018-de2aaa21-7afe-46ed-9040-f62af536d53c.png">
+<figure>
+  <object role="image" width="1148" data="https://user-images.githubusercontent.com/1657213/137551018-de2aaa21-7afe-46ed-9040-f62af536d53c.png"></object>
+  <figcaption>The Code Intelligence uploads UI</figcaption>
+</figure>
