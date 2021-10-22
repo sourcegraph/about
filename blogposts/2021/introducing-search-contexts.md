@@ -1,13 +1,13 @@
 ---
 title: 'Introducing search contexts'
-description: 'Version contexts and repogroups are a powerful way to search across multiople repositories. To expand this functionality, we're releasing search contexts in Sourcegraph 3.33.'
+description: 'Version contexts and repogroups are a powerful way to search across multiple repositories. To expand this functionality, we're releasing search contexts in Sourcegraph 3.33.'
 author: Rok Novosel, Ben Venker
-publishDate: 2021-10-21T10:00-07:00
+publishDate: 2021-10-22T10:00-07:00
 tags: [blog]
 slug: introducing-search-contexts
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-example.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-example.png
-published: false
+published: true
 ---
 
 ## Introducing search contexts
@@ -71,7 +71,7 @@ Below are some contexts and ideas to get you started. Remember to take a look at
 
 The list goes on! You can add multiple repositories easily to each search context, so get creative.
 
-For questions about or support with upgrading to search contexts, please reach out to your CE or [support@sourcegraph.com](mailto:support@sourcegraph.com). Also not that going forward, search contexts will only be available for enterprise customers; if you are currently using Sourcegraph OSS, you will need to become an enterprise customer to use this feature.
+For questions about or support with upgrading to search contexts, please reach out to your CE or [support@sourcegraph.com](mailto:support@sourcegraph.com). Also note that going forward, search contexts will only be available for enterprise customers; if you are currently using Sourcegraph OSS, you will need to become an enterprise customer to use this feature.
 
 ---
 
