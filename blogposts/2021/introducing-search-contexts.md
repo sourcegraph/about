@@ -10,8 +10,6 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/introducing-
 published: true
 ---
 
-## Introducing search contexts
-
 One of Sourcegraph's most powerful capabilities is being able to search across multiple repositories. Our customers can have tens of thousands of repositories, and before Sourcegraph, searching across them all was painful or impossible.
 
 Although cross-repo search is powerful on its own, when you have hundreds or thousands of repos across dozens of teams, it's not enough. We created version contexts to address some of those limitations. Version contexts enables site admins to create groups of repositories and revisions to search through, which simplifies their code search landscape. For example, enterprise users created bundles of repositories and revisions that were included in a particular release, enabling quicker bug trackdown in specific versions.
