@@ -1,6 +1,6 @@
 ---
 title: 'Sourcegraph 3.33 release'
-publishDate: 2021-10-22T10:00-07:00
+publishDate: 2021-10-25T10:00-07:00
 description: 'Sourcegraph 3.33 introduces general availability for search contexts as well as Code Intelligence status data for all non-admin users.'
 tags: [blog, release]
 slug: 'release/3.33'
