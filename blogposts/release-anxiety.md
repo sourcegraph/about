@@ -1,6 +1,6 @@
 ---
 title: 'Why the antidote to release anxiety is a continuous delivery mindset'
-description: 'Release anxiety can't be cured but you can alleviate it. Learn how a continuous delivery mindset can help you break features into smaller iterations and keep your code in a secure and releaseable state.'
+description: 'Release anxiety cannott be cured but you can alleviate it. Learn how a continuous delivery mindset can help you break features into smaller iterations and keep your code in a secure and releaseable state.'
 author: Nick Moore
 authorUrl: https://twitter.com/nickwritesit
 published: true
