@@ -1,6 +1,6 @@
 ---
 title: 'Why the antidote to release anxiety is a continuous delivery mindset'
-description: '.'
+description: 'Release anxiety can't be cured but you can alleviate it. Learn how a continuous delivery mindset can help you break features into smaller iterations and keep your code in a secure and releaseable state.'
 author: Nick Moore
 authorUrl: https://twitter.com/nickwritesit
 published: true
@@ -96,16 +96,13 @@ And yet, there are limitations.
 
 Continuous deployment is not a new idea. In a [2009 essay](http://timothyfitz.com/2009/02/08/continuous-deployment/)–in one of the first instances of the concept–Timothy Fitz introduced the idea with an all too recognizable narrative:
 
-        _Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature._
+>Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature._
 
+>When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up._
 
-        _When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up._
+>Alex curses luck, blames human infallibility, inevitable cost of software engineering and moves on to the next task._
 
-
-        _Alex curses luck, blames human infallibility, inevitable cost of software engineering and moves on to the next task._
-
-
-        _This story is the day-to-day of most startups I know. It sucks. Alex has a problem and she doesn’t even know it. Her development practices are unsustainable. “Stupid mistakes” like the one she made happen more frequently as the product grows more complex and as the team gets larger. Alex needs to switch to a **scalable** solution._ (Emphasis added).
+>This story is the day-to-day of most startups I know. It sucks. Alex has a problem and she doesn’t even know it. Her development practices are unsustainable. “Stupid mistakes” like the one she made happen more frequently as the product grows more complex and as the team gets larger. Alex needs to switch to a **scalable** solution._ (Emphasis added).
 
 The purpose of continuous deployment, then, in Fitz’s definition and the current definition, is to make deployment scalable.
 
@@ -139,7 +136,7 @@ The same Replicated and Dimensional Research report shows that over 50% of respo
 
 In other words, take Twitter discourse with a grain of salt. SaaS might be a hotter topic, as the Google Trends screenshot below proves, but on-premises is very much still alive.
 
-![Google Trends report on SaaS, on-prem, and self-hosted searches](/https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/Screen%20Shot%202021-10-14%20at%201.47.59%20PM.png)
+![Google Trends report on SaaS, on-prem, and self-hosted searches](https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/Screen%20Shot%202021-10-14%20at%201.47.59%20PM.png)
 
 And if on-premises is alive, then fully continuous deployment cannot be a universal solution.
 
@@ -209,7 +206,7 @@ One mental model through which you can look at this is one that both [GitLab](ht
 
 Releases should be a true snapshot of your current work. Shift from “Will X be merged?” to “Is X merged?” As Jez Humble, SRE at Google, [tweeted](https://twitter.com/jezhumble/status/1448318922713821186?s=21), continuous delivery is not about “taking whatever crap you have in version control & shipping it into prod as fast as possible so you can test in prod” but is about “making it SAFE to ship your code into prod quickly.”
 
-[EMBED: [https://twitter.com/jezhumble/status/1448318922713821186?s=21](https://twitter.com/jezhumble/status/1448318922713821186?s=21)]
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It’s come to my attention that many people think continuous delivery/deployment is about taking whatever crap you have in version control &amp; shipping it into prod as fast as possible so you can test in prod<br><br>NO<br><br>CD is about making it SAFE to ship your code into prod quickly by:</p>&mdash; Jez Humble (@jezhumble) <a href="https://twitter.com/jezhumble/status/1448318922713821186?ref_src=twsrc%5Etfw">October 13, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Your ultimate metric of success won’t be a poll of emotions among your teammates but will be how often your customers upgrade. An uneventful release for you is one that’s uneventful for your customers, too. If your customers are regularly upgrading and consistently keeping up with new releases, then you can trust you’ve reached a point where your releases are uneventful.
 
@@ -233,7 +230,7 @@ Automation gives you the confidence you need to build a continuous delivery mind
 
 Throughout this post, we’ve written about release anxiety as something you can _relieve, alleviate, \_and \_reduce_, not something you can _cure_.
 
-The existentialist philosopher Søren Kiergaard argued that anxiety is a result of human nature, writing in \_[The Concept of Anxiety](https://www.amazon.com/dp/B00BNY0RYG/) \_that you have to “[learn] to be anxious so as not to be ruined either by never having been in anxiety or by sinking into it. Whoever has learned to be anxious in the right way has learned the ultimate.”
+The existentialist philosopher Søren Kiergaard argued that anxiety is a result of human nature, writing in \[The Concept of Anxiety](https://www.amazon.com/dp/B00BNY0RYG/) \ that you have to “[learn] to be anxious so as not to be ruined either by never having been in anxiety or by sinking into it. Whoever has learned to be anxious in the right way has learned the ultimate.”
 
 Who knew a 19th century Danish philosopher had something to teach us about software? But his point is right: don’t try to eliminate anxiety; learn to be anxious in the right way, to the right degree, about the right things.
 
