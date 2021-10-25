@@ -96,9 +96,9 @@ And yet, there are limitations.
 
 Continuous deployment is not a new idea. In a [2009 essay](http://timothyfitz.com/2009/02/08/continuous-deployment/)–in one of the first instances of the concept–Timothy Fitz introduced the idea with an all too recognizable narrative:
 
-> _Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature.\_
+> \_Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature.\_
 
-> When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up._
+> When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up.\_
 
 > _Alex curses luck, blames human infallibility, inevitable cost of software engineering and moves on to the next task._
 
@@ -146,7 +146,7 @@ When you control the platform and the environment, as we do with Search (or as a
 
 Upgrading enterprise software isn’t like upgrading your laptop’s OS–it’s much more tedious and much more involved. Apple works in a closed ecosystem, whereas companies like Microsoft and Sourcegraph work in an open ecosystem. In an open ecosystem, people deploy their software in specific ways with specific configurations. We, unlike Apple, don’t control the environment our software runs in.
 
-In an on-premises or self-hosted environment, continuous deployment would mean asking customers to pull and test a commit from an arbitrary point in time. The result would be different customers running many different variations of your product, making it hard to replicate versions in which customers might be encountering a bug (and hard to warn other customers about a particular version). 
+In an on-premises or self-hosted environment, continuous deployment would mean asking customers to pull and test a commit from an arbitrary point in time. The result would be different customers running many different variations of your product, making it hard to replicate versions in which customers might be encountering a bug (and hard to warn other customers about a particular version).
 
 Your customers have, at times, an uncomfortable amount of agency. That release you’re particularly excited for? The one you rushed those changes into? Your customers might not actually upgrade to it for months. If you rushed in a bug along with a fix, that also means that bug might remain in their codebase long past your next release.
 
@@ -241,6 +241,7 @@ Anxiety is a sign you care. And ideally, we all care about what we produce every
 _With thanks to [Jean du Plessis](https://handbook.sourcegraph.com/company/team#jean-du-plessis-hehim), [Dax McDonald](https://handbook.sourcegraph.com/company/team#dax-mcdonald-hehim), [Joel Kwartler](https://handbook.sourcegraph.com/company/team#joel-kwartler-hehim), and [Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey-hehim) for contributing insights to this post._
 
 ## More posts like this
+
 - [Monitoring is not enough: For high-performing development teams you need observability tools](https://about.sourcegraph.com/blog/role-of-observability-tools-high-performing-development-teams/)
 - [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](https://about.sourcegraph.com/blog/avoiding-the-pitfalls-of-iteration-based-development/)
 - [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
