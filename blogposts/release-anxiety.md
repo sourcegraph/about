@@ -96,13 +96,13 @@ And yet, there are limitations.
 
 Continuous deployment is not a new idea. In a [2009 essay](http://timothyfitz.com/2009/02/08/continuous-deployment/)–in one of the first instances of the concept–Timothy Fitz introduced the idea with an all too recognizable narrative:
 
->Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature._
+> Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature.\_
 
->When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up._
+> When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up.\_
 
->Alex curses luck, blames human infallibility, inevitable cost of software engineering and moves on to the next task._
+> Alex curses luck, blames human infallibility, inevitable cost of software engineering and moves on to the next task.\_
 
->This story is the day-to-day of most startups I know. It sucks. Alex has a problem and she doesn’t even know it. Her development practices are unsustainable. “Stupid mistakes” like the one she made happen more frequently as the product grows more complex and as the team gets larger. Alex needs to switch to a **scalable** solution._ (Emphasis added).
+> This story is the day-to-day of most startups I know. It sucks. Alex has a problem and she doesn’t even know it. Her development practices are unsustainable. “Stupid mistakes” like the one she made happen more frequently as the product grows more complex and as the team gets larger. Alex needs to switch to a **scalable** solution.\_ (Emphasis added).
 
 The purpose of continuous deployment, then, in Fitz’s definition and the current definition, is to make deployment scalable.
 
