@@ -9,7 +9,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.33/sourcegra
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.33/sourcegraph-3-33-release.png
 changelogItems:
   - description: Search contexts are now enabled by default in Sourcegraph Enterprise. Search contexts allow users to build custom groups of repositories and revisions for efficient cross-repository searching.
-    url: https://github.com/sourcegraph/sourcegraph/pull/25674
+    url: https://about.sourcegraph.com/blog/introducing-search-contexts/
     category: Search
   - description: Search query validation has been improved for various search types and filters so that users get faster feedback on issues within their query.
     url: https://github.com/sourcegraph/sourcegraph/pull/24747
