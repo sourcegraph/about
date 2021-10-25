@@ -4,7 +4,7 @@ publishDate: 2021-10-22T10:00-07:00
 description: 'Sourcegraph 3.33 introduces general availability for search contexts as well as Code Intelligence status data for all non-admin users.'
 tags: [blog, release]
 slug: 'release/3.33'
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.33/sourcegraph-3-33-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.33/sourcegraph-3-33-release.png
 changelogItems:
