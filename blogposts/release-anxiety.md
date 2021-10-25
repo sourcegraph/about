@@ -96,13 +96,13 @@ And yet, there are limitations.
 
 Continuous deployment is not a new idea. In a [2009 essay](http://timothyfitz.com/2009/02/08/continuous-deployment/)–in one of the first instances of the concept–Timothy Fitz introduced the idea with an all too recognizable narrative:
 
-> Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature.\_
+> _Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature.\_
 
-> When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up.\_
+> When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up._
 
-> Alex curses luck, blames human infallibility, inevitable cost of software engineering and moves on to the next task.\_
+> _Alex curses luck, blames human infallibility, inevitable cost of software engineering and moves on to the next task._
 
-> This story is the day-to-day of most startups I know. It sucks. Alex has a problem and she doesn’t even know it. Her development practices are unsustainable. “Stupid mistakes” like the one she made happen more frequently as the product grows more complex and as the team gets larger. Alex needs to switch to a **scalable** solution.\_ (Emphasis added).
+> _This story is the day-to-day of most startups I know. It sucks. Alex has a problem and she doesn’t even know it. Her development practices are unsustainable. “Stupid mistakes” like the one she made happen more frequently as the product grows more complex and as the team gets larger. Alex needs to switch to a **scalable** solution._ (Emphasis added).
 
 The purpose of continuous deployment, then, in Fitz’s definition and the current definition, is to make deployment scalable.
 
@@ -146,7 +146,7 @@ When you control the platform and the environment, as we do with Search (or as a
 
 Upgrading enterprise software isn’t like upgrading your laptop’s OS–it’s much more tedious and much more involved. Apple works in a closed ecosystem, whereas companies like Microsoft and Sourcegraph work in an open ecosystem. In an open ecosystem, people deploy their software in specific ways with specific configurations. We, unlike Apple, don’t control the environment our software runs in.
 
-In an on-premises or self-hosted environment, continuous deployment would mean asking customers to pull and test an arbitrary point in time commit or tag. It means asking your customers to do the same, tedious upgrade process over and over again. It means increasing the diversity of environments that are being run.
+In an on-premises or self-hosted environment, continuous deployment would mean asking customers to pull and test a commit from an arbitrary point in time. The result would be different customers running many different variations of your product, making it hard to replicate versions in which customers might be encountering a bug (and hard to warn other customers about a particular version). 
 
 Your customers have, at times, an uncomfortable amount of agency. That release you’re particularly excited for? The one you rushed those changes into? Your customers might not actually upgrade to it for months. If you rushed in a bug along with a fix, that also means that bug might remain in their codebase long past your next release.
 
@@ -206,7 +206,9 @@ One mental model through which you can look at this is one that both [GitLab](ht
 
 Releases should be a true snapshot of your current work. Shift from “Will X be merged?” to “Is X merged?” As Jez Humble, SRE at Google, [tweeted](https://twitter.com/jezhumble/status/1448318922713821186?s=21), continuous delivery is not about “taking whatever crap you have in version control & shipping it into prod as fast as possible so you can test in prod” but is about “making it SAFE to ship your code into prod quickly.”
 
+<p align="center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">It’s come to my attention that many people think continuous delivery/deployment is about taking whatever crap you have in version control &amp; shipping it into prod as fast as possible so you can test in prod<br><br>NO<br><br>CD is about making it SAFE to ship your code into prod quickly by:</p>&mdash; Jez Humble (@jezhumble) <a href="https://twitter.com/jezhumble/status/1448318922713821186?ref_src=twsrc%5Etfw">October 13, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
 
 Your ultimate metric of success won’t be a poll of emotions among your teammates but will be how often your customers upgrade. An uneventful release for you is one that’s uneventful for your customers, too. If your customers are regularly upgrading and consistently keeping up with new releases, then you can trust you’ve reached a point where your releases are uneventful.
 
@@ -235,3 +237,8 @@ The existentialist philosopher Søren Kiergaard argued that anxiety is a result 
 Who knew a 19th century Danish philosopher had something to teach us about software? But his point is right: don’t try to eliminate anxiety; learn to be anxious in the right way, to the right degree, about the right things.
 
 Anxiety is a sign you care. And ideally, we all care about what we produce every day. Anxiety is healthy in the right proportions, and with the right mindset, tooling, and practices, we might even be able to ship to prod on Fridays.
+
+## More posts like this
+- [Monitoring is not enough: For high-performing development teams you need observability tools](https://about.sourcegraph.com/blog/role-of-observability-tools-high-performing-development-teams/)
+- [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](https://about.sourcegraph.com/blog/avoiding-the-pitfalls-of-iteration-based-development/)
+- [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
