@@ -89,11 +89,11 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
             </header>
             {!full && post.frontmatter.heroImage ? (
-                <div className="card-body pt-0 d-flex">
+                <div className="card-body pt-0 d-flex flex-card">
                     <div className="flex-1">{body}</div>
-                    <Link to={url} className="pl-3">
+                    <Link to={url}>
                         <img
-                            className="blog-post__image"
+                            className="blog-post__image flex-1"
                             src={post.frontmatter.heroImage}
                             alt={post.frontmatter.title}
                         />
