@@ -96,9 +96,9 @@ And yet, there are limitations.
 
 Continuous deployment is not a new idea. In a [2009 essay](http://timothyfitz.com/2009/02/08/continuous-deployment/)–in one of the first instances of the concept–Timothy Fitz introduced the idea with an all too recognizable narrative:
 
-> \_Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature.\_
+> _Alex has just written a refactoring of some website backend code. Since it was a small task, it’s committed and Alex moves on to the next feature._
 
-> When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up.\_
+> _When the code is deployed in production two weeks later it causes the entire site to go down. A one-character typo which was missed by automated tests caused a failure cascade reminiscent of the bad-old-days at twitter. It takes eight hours of downtime to isolate the problem, produce a one character fix, deploy it and bring production back up._
 
 > _Alex curses luck, blames human infallibility, inevitable cost of software engineering and moves on to the next task._
 
@@ -230,9 +230,9 @@ Automation gives you the confidence you need to build a continuous delivery mind
 
 ## Pursue the right amount of release anxiety
 
-Throughout this post, we’ve written about release anxiety as something you can _relieve, alleviate, \_and \_reduce_, not something you can _cure_.
+Throughout this post, we’ve written about release anxiety as something you can _relieve_, _alleviate_, and _reduce_, not something you can _cure_.
 
-The existentialist philosopher Søren Kiergaard argued that anxiety is a result of human nature, writing in \[The Concept of Anxiety](https://www.amazon.com/dp/B00BNY0RYG/) \ that you have to “[learn] to be anxious so as not to be ruined either by never having been in anxiety or by sinking into it. Whoever has learned to be anxious in the right way has learned the ultimate.”
+The existentialist philosopher Søren Kiergaard argued that anxiety is a result of human nature, writing in _[The Concept of Anxiety]_(https://www.amazon.com/dp/B00BNY0RYG/) that you have to “[learn] to be anxious so as not to be ruined either by never having been in anxiety or by sinking into it. Whoever has learned to be anxious in the right way has learned the ultimate.”
 
 Who knew a 19th century Danish philosopher had something to teach us about software? But his point is right: don’t try to eliminate anxiety; learn to be anxious in the right way, to the right degree, about the right things.
 
