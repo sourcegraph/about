@@ -56,7 +56,10 @@ export default ((props: any) => (
                             <h5 className="card-header">Sales</h5>
                             <div className="card-body">
                                 <p className="card-text">For information about products and purchasing:</p>
-                                <Link className="btn btn-outline-primary stretched-link" to="/contact/product-specialist">
+                                <Link
+                                    className="btn btn-outline-primary stretched-link"
+                                    to="/contact/product-specialist"
+                                >
                                     Contact sales
                                 </Link>
                             </div>
