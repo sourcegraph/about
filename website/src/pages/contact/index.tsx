@@ -56,7 +56,7 @@ export default ((props: any) => (
                             <h5 className="card-header">Sales</h5>
                             <div className="card-body">
                                 <p className="card-text">For information about products and purchasing:</p>
-                                <Link className="btn btn-outline-primary stretched-link" to="/contact/sales">
+                                <Link className="btn btn-outline-primary stretched-link" to="/contact/product-specialist">
                                     Contact sales
                                 </Link>
                             </div>
@@ -138,7 +138,7 @@ export default ((props: any) => (
 
 ## Plans, pricing, sales
 
-For enterprise accounts or any questions about getting Sourcegraph for your private code, <a href="/contact/sales">submit our contact form</a>, or email us at <a href="mailto:sales@sourcegraph.com">sales@sourcegraph.com</a>.
+For enterprise accounts or any questions about getting Sourcegraph for your private code, <a href="/contact/product-specialist">submit our contact form</a>, or email us at <a href="mailto:sales@sourcegraph.com">sales@sourcegraph.com</a>.
 
 ## In the real world
 
