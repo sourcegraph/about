@@ -13,7 +13,7 @@ socialImage:
 
 “Don’t release to prod on Fridays”–a saying that might as well be sticky-noted to every engineer’s monitor. It’s a joke that masks something pretty serious: engineers don’t feel confident in their ability to deploy and walk away from their desks.
 
-The authors of \_[The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290/ref=asc_df_1942788290/) \_compared this fear to the instinct animals have to avoid danger, writing that “everyone is moving their changes as far away from Friday as possible, like woodland creatures running away from a forest fire.”
+The authors of _[The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290/ref=asc_df_1942788290/)_ compared this fear to the instinct animals have to avoid danger, writing that “everyone is moving their changes as far away from Friday as possible, like woodland creatures running away from a forest fire.”
 
 But our workplaces should, ideally, never resemble forest fires. The result of impending fire is release anxiety–when engineers feel vigilant, nervous, and wary of upcoming releases and the release process in general.
 
@@ -232,7 +232,7 @@ Automation gives you the confidence you need to build a continuous delivery mind
 
 Throughout this post, we’ve written about release anxiety as something you can _relieve_, _alleviate_, and _reduce_, not something you can _cure_.
 
-The existentialist philosopher Søren Kiergaard argued that anxiety is a result of human nature, writing in _[The Concept of Anxiety]_(https://www.amazon.com/dp/B00BNY0RYG/) that you have to “[learn] to be anxious so as not to be ruined either by never having been in anxiety or by sinking into it. Whoever has learned to be anxious in the right way has learned the ultimate.”
+The existentialist philosopher Søren Kiergaard argued that anxiety is a result of human nature, writing in _[The Concept of Anxiety](https://www.amazon.com/dp/B00BNY0RYG/)_ that you have to “[learn] to be anxious so as not to be ruined either by never having been in anxiety or by sinking into it. Whoever has learned to be anxious in the right way has learned the ultimate.”
 
 Who knew a 19th century Danish philosopher had something to teach us about software? But his point is right: don’t try to eliminate anxiety; learn to be anxious in the right way, to the right degree, about the right things.
 
