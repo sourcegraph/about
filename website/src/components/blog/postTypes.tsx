@@ -64,9 +64,6 @@ export interface PostComponentProps {
     tag?: 'li' | 'div'
 
     renderTitleAsLink: boolean
-
-
-
 }
 
 export const POST_TYPE_TO_COMPONENT: Record<PostType, React.FunctionComponent<PostComponentProps>> = {
