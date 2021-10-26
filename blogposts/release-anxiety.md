@@ -13,7 +13,7 @@ socialImage:
 
 “Don’t release to prod on Fridays”–a saying that might as well be sticky-noted to every engineer’s monitor. It’s a joke that masks something pretty serious: engineers don’t feel confident in their ability to deploy and walk away from their desks.
 
-The authors of _[The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290/ref=asc_df_1942788290/)_ compared this fear to the instinct animals have to avoid danger, writing that “everyone is moving their changes as far away from Friday as possible, like woodland creatures running away from a forest fire.”
+The authors of _[The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290/)_ compared this fear to the instinct animals have to avoid danger, writing that “everyone is moving their changes as far away from Friday as possible, like woodland creatures running away from a forest fire.”
 
 But our workplaces should, ideally, never resemble forest fires. The result of impending fire is release anxiety–when engineers feel vigilant, nervous, and wary of upcoming releases and the release process in general.
 
