@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import truncate from 'lodash/truncate'
 import * as React from 'react'
-import { PostComponentProps } from './postTypes'
+import { Post, PostComponentProps } from './postTypes'
 
 interface Props extends PostComponentProps {}
 
@@ -17,6 +17,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
     titleClassName = '',
     titleLinkClassName = '',
     tag: Tag = 'div',
+    renderTitleAsLink = false,
 }) => {
     const body = full ? (
         <div className="blog-post__html" dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -37,9 +38,11 @@ export const BlogPost: React.FunctionComponent<Props> = ({
         <Tag className={`blog-post ${className}`}>
             <header className={headerClassName}>
                 <h1 className={titleClassName}>
-                    <Link to={url} className={`d-block ${titleLinkClassName}`}>
-                        {post.frontmatter.title}
-                    </Link>
+                    {renderTitleAsLink === true ? (
+                        <Link to={url} className={`d-block ${titleLinkClassName}`}>
+                            {post.frontmatter.title}
+                        </Link>
+                    ) : post.frontmatter.title}
                 </h1>
                 <p className="blog-post__byline mb-0">
                     {post.frontmatter.author} on {post.frontmatter.publishDate}
