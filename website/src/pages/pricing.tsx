@@ -209,7 +209,8 @@ export default ((props: any) => (
                         <p>
                             Sourcegraph supports the work of educational organizations and nonprofits.
                             <br />
-                            Please <a href="/contact/sales/?form_submission_source=pricing-nonprofit">
+                            Please{' '}
+                            <a href="/contact/product-specialist/?form_submission_source=pricing-nonprofit">
                                 contact us
                             </a>{' '}
                             about discounts for your development teams.

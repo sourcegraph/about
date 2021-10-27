@@ -24,6 +24,7 @@ export const PostsList: React.FunctionComponent<Props> = ({ posts, blogInfo }) =
                         post={post.node}
                         url={urlToPost(post.node, blogInfo)}
                         key={post.node.frontmatter.slug}
+                        renderTitleAsLink={true}
                         {...postProps}
                     />
                 )
