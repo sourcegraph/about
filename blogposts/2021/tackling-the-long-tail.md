@@ -15,12 +15,14 @@ repositories by introducing shard merging to Zoekt, in our [quest to index the
 OSS universe](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
 
 ## What is Zoekt?
+
 Zoekt is a code search engine originally created by Han-Wen Niehuys that
 performs trigram-based regex search. It is fast, easy to deploy and easy to
 maintain, which makes it a great choice for our self-hosted customer
 deployments.
 
 ## Why not just scale out?
+
 Naturally, Zoekt's size of the index scales with the size of the input data.
 Zoekt’s index has an overhead of about 2-3 compared to the input. A lot of that
 data, like the trigrams, is kept in memory. At the scale of the open source
@@ -36,18 +38,20 @@ repositories into more efficient, larger representations on disk. To motivate
 this idea we have to first understand Zoekt's data model.
 
 ## Zoekt’s data model
+
 Zoekt's data model has two core constructs, documents and shards. When we index
 a repository, its [documents are added, one at a time, to an index
 builder](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda25a6c5a7c6612e309249420102c587b4d/-/blob/gitindex/index.go?L498-505).
 Once we cross a threshold, currently configured to be 100 MiB, of input data,
 the builder [flushes the index to a file on
 disk](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda25a6c5a7c6612e309249420102c587b4d/-/blob/build/builder.go?L455-457).
-This file is called a shard.  For small repositories, there is a 1:1
-relationship between the repository and its shard.  Larger repositories, such as
+This file is called a shard. For small repositories, there is a 1:1
+relationship between the repository and its shard. Larger repositories, such as
 Kubernetes map to several shards. At query time, shards are treated
 independently.
 
 ## The long tail
+
 Most repositories are tiny and fit within a single shard. The following
 histogram shows the distribution of shard sizes on one of our production
 instances.
@@ -65,7 +69,6 @@ representation.
 The two charts below show the number of trigrams in a shard vs. the shard's
 size. Plot A shows that most shards have less than 500k trigrams. Plot B shows a
 subset of the data in A (red box).
-
 
 ![Number of trigrams vs. shard size](/blog/tackling-long-tail-trigrams)
 
@@ -95,13 +98,10 @@ The distance between the two curves is a measure of the compression we can
 achieve.
 
 ## What’s next?
+
 We are currently working on adding support for compound shards to Zoekt. First
 experiments in production have shown that we can expect an overall reduction in
 memory of about 50% for a target compound shard size of 2 GiB. We will make sure
 to follow up with a blog post and the final numbers once our project concludes.
 Other blog posts
 https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/
-
-
-
-
