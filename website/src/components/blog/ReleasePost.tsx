@@ -19,6 +19,7 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
     titleClassName = '',
     titleLinkClassName = '',
     tag: Tag = 'div',
+    renderTitleAsLink = false,
 }) => {
     const body = full ? (
         <>
@@ -61,8 +62,7 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 </li>
             </ul>
             <div className="card-body release-post__body">
-                * Please <a href="https://about.sourcegraph.com/contact/sales/">contact Sourcegraph</a> with any
-                licensing questions.
+                * Please <a href="/contact/product-specialist/">contact Sourcegraph</a> with any licensing questions.
             </div>
         </>
     ) : (
@@ -82,9 +82,13 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
         <Tag className={`release-post ${className}`}>
             <header className={`release-post__header ${headerClassName}`}>
                 <h1 className={titleClassName}>
-                    <Link to={url} className={`d-block ${titleLinkClassName}`}>
-                        {post.frontmatter.title}
-                    </Link>
+                    {renderTitleAsLink === true ? (
+                        <Link to={url} className={`d-block ${titleLinkClassName}`}>
+                            {post.frontmatter.title}
+                        </Link>
+                    ) : (
+                        post.frontmatter.title
+                    )}
                 </h1>
                 <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
             </header>
