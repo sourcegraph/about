@@ -14,7 +14,7 @@ export const PressReleasePost: React.FunctionComponent<Props> = ({
     titleClassName = '',
     titleLinkClassName = '',
     tag: Tag = 'div',
-    renderTitleAsLink = false
+    renderTitleAsLink = false,
 }) => {
     const body = full ? (
         <div className="blog-post__html" dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -33,12 +33,14 @@ export const PressReleasePost: React.FunctionComponent<Props> = ({
     return (
         <Tag className={`blog-post ${className}`}>
             <header className={headerClassName}>
-            <h1 className={titleClassName}>
+                <h1 className={titleClassName}>
                     {renderTitleAsLink === true ? (
                         <Link to={url} className={`d-block ${titleLinkClassName}`}>
                             {post.frontmatter.title}
                         </Link>
-                    ) : post.frontmatter.title}
+                    ) : (
+                        post.frontmatter.title
+                    )}
                 </h1>
                 <p className="blog-post__byline mb-0">{post.frontmatter.publishDate}</p>
             </header>
