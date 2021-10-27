@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import truncate from 'lodash/truncate'
 import * as React from 'react'
-import { Post, PostComponentProps } from './postTypes'
+import { PostComponentProps } from './postTypes'
 
 interface Props extends PostComponentProps {}
 
