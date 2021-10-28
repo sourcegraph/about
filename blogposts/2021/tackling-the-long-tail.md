@@ -56,7 +56,7 @@ Most repositories are tiny and fit within a single shard. The following
 histogram shows the distribution of shard sizes on one of our production
 instances.
 
-![Distribution of shard sizes](/blog/tackling-long-tail-histogram)
+![Distribution of shard sizes](https://storage.googleapis.com/sourcegraph-assets/blog/tackling-long-tail/tackling-long-tail-histogram.png)
 
 75% of the shards are smaller than 2.1 MiB. Each shard contains, among other
 data, the trigrams we created during indexing. On startup, [Zoekt loads those
@@ -70,7 +70,7 @@ The two charts below show the number of trigrams in a shard vs. the shard's
 size. Plot A shows that most shards have less than 500k trigrams. Plot B shows a
 subset of the data in A (red box).
 
-![Number of trigrams vs. shard size](/blog/tackling-long-tail-trigrams)
+![Number of trigrams vs. shard size](https://storage.googleapis.com/sourcegraph-assets/blog/tackling-long-tail/tackling-long-tail-trigrams.png)
 
 We can see that even tiny shards can have a lot of trigrams. As is to be
 expected, there is a positive correlation (the spearman correlation is 0.94) but
@@ -92,7 +92,7 @@ accessed and rarely updated.
 The following diagram shows how the number of trigrams in a shard changes
 depending on how many repositories we merge into a compound shard.
 
-![Number of trigrams vs. size of compound shard](/blog/tackling-long-tail-compression)
+![Number of trigrams vs. size of compound shard](https://storage.googleapis.com/sourcegraph-assets/blog/tackling-long-tail/tackling-long-tail-compression.png)
 
 The distance between the two curves is a measure of the compression we can
 achieve.
