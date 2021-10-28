@@ -34,21 +34,18 @@ Ryan Hitchman explained how we changed one of Zoekt's core data structures to
 reduce memory by 5x.
 
 The core idea of this project is to merge the long tail of small, stale
-repositories into more efficient, larger representations on disk. To motivate
-this idea we have to first understand Zoekt's data model.
+repositories into more efficient representations on disk and in memory. To
+motivate this idea we have to first understand Zoekt's data model.
 
 ## Zoekt’s data model
 
-Zoekt's data model has two core constructs, documents and shards. When we index
-a repository, its [documents are added, one at a time, to an index
-builder](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda25a6c5a7c6612e309249420102c587b4d/-/blob/gitindex/index.go?L498-505).
-Once we cross a threshold, currently configured to be 100 MiB, of input data,
-the builder [flushes the index to a file on
-disk](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda25a6c5a7c6612e309249420102c587b4d/-/blob/build/builder.go?L455-457).
-This file is called a shard. For small repositories, there is a 1:1
-relationship between the repository and its shard. Larger repositories, such as
-Kubernetes map to several shards. At query time, shards are treated
-independently.
+Zoekt indexes repositories and stores the index in one or more files on disk. A repository contains a hierarchy of
+documents, such as source code, binaries, text files and so forth. At index
+time [documents are added, one at a time, to the index builder](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda25a6c5a7c6612e309249420102c587b4d/-/blob/gitindex/index.go?L498-505)
+. Once we cross a threshold, currently configured to be 100 MiB, of input data, the
+builder [flushes the index to a file on disk](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda25a6c5a7c6612e309249420102c587b4d/-/blob/build/builder.go?L455-457)
+. This file is called a shard. For small repositories, there is a 1:1 relationship between the repository and its shard.
+Larger repositories, such as Kubernetes map to several shards. At query time, shards are treated independently.
 
 ## The long tail
 
