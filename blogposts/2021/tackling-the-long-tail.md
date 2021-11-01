@@ -55,7 +55,7 @@ instances.
 during indexing. On
 startup, [Zoekt loads those trigrams into memory](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda/-/blob/read.go?L210)
 . Trigrams for content and file names make up more than 70% of the heap of Zoekt’s web server. The more trigrams a shard
-has, the more costly is its in-memory representation.
+has, the more costly its in-memory representation is.
 
 The two charts below show the number of trigrams in a shard vs. the shard's
 size. Plot A shows that most shards have less than 500k trigrams. Plot B shows a
