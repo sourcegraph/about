@@ -1,0 +1,181 @@
+.careers {
+    font-family: $font-family-monospace !important;
+
+    h3, .benefits span {
+        font-weight: 300;
+    }
+
+    h1 {
+        font-weight: 400;
+    }
+
+    .values {
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+    }
+
+    p.font-size-large {
+        font-weight: 300;
+        line-height: 1em;
+    }
+
+    .scrollable-container {
+        height: 450px;
+        overflow-y: auto;
+    }
+
+    .job-link {
+        color: $black;
+        text-decoration: underline;
+        display: inline-block;
+    }
+
+    .bg-image {
+        background: no-repeat center url('/BenefitsAndPerks.png');
+        height: 800px;
+
+    }
+
+    .bg-dark {
+        background-color: $dark-115;
+        color: $white;
+    }
+
+    .bg-light-yellow {
+        background-color: $yellow-2;
+    }
+
+    .subtle-text-input {
+        border-width: 0 0 1px 0 !important;
+        width: 100%;
+        background-color: $yellow-2;
+        font-size: 1.5em;
+    }
+
+    /*** Animated Banner Text ***/
+    #animated-container {
+        overflow: hidden;
+        h2 {
+            font-weight: 300;
+        }
+    }
+    #animated-text {
+        width: 4700px;
+        height: 110px;
+        /* animation properties */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: slide-in 20s linear infinite;
+        -webkit-animation: slide-in 20s linear infinite;
+        animation: slide-in 20s linear infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+
+        .carouselItem {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+                color: $red-2;
+            }
+            .icon {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+    /* for Firefox */
+    @-moz-keyframes slide-in {
+        from { -moz-transform: translateX(0%); }
+        to { -moz-transform: translateX(-50%); }
+    }
+    /* for Chrome */
+    @-webkit-keyframes slide-in {
+        from { -webkit-transform: translateX(0%); }
+        to { -webkit-transform: translateX(-50%); }
+    }
+    @keyframes slide-in {
+        from {
+            -moz-transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+        }
+        to {
+            -moz-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    }
+    /*** END - Animated Banner Text ***/
+
+    .flyout {
+        font-family: $font-family-sans-serif;
+        display: none;
+        border: 1px solid $black;
+        width: 458px;
+        position: absolute;
+        background-color: $pink-2;
+        color: $black;
+        z-index: 100;
+        .flyoutHeader {
+            font-size: 1.25em;
+            .icon {
+                width: 18px;
+                height: 20px;
+            }
+            .flyoutTitle {
+                text-decoration: underline;
+            }
+            .closeIcon {
+                font-size: 2em;
+                cursor: pointer;
+            }
+        }
+        .flyoutBody {
+            p {
+                font-size: 2em;
+            }
+        }
+    }
+
+    #AllRemote {
+        top: 0px;
+        left: 0px;
+    }
+    #FlexiblePTO {
+        top: -50px;
+        left: 125px;
+    }
+    #Wellness {
+        top: 50px;
+        left: 250px;
+    }
+    #FamilyPlanningSupport {
+        top: -100px;
+        left: 375px;
+    }
+    #ProfessionalDevelopment {
+        top: 100px;
+        left: 500px;
+    }
+    #Travel {
+        top: -125px;
+        left: 625px;
+    }
+
+    button {
+        background-color: $white;
+    }
+    .nav-bottom {
+        &div {
+            width: 100px;
+        }
+    }
+    .seeds {
+        width: 100px;
+        height: 100px;
+    }
+}

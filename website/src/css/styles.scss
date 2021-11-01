@@ -147,11 +147,11 @@ $grid-gutter-width: 2rem;
 @import 'node_modules/bootstrap/scss/list-group';
 @import 'node_modules/bootstrap/scss/tooltip';
 @import 'node_modules/bootstrap/scss/popover';
-@import 'node_modules/bootstrap/scss/carousel';
 @import 'node_modules/bootstrap/scss/utilities';
 @import 'node_modules/bootstrap/scss/alert';
 @import 'node_modules/bootstrap/scss/badge';
 @import 'node_modules/bootstrap/scss/dropdown';
+@import 'node_modules/bootstrap/scss/carousel';
 
 html,
 body,
@@ -282,6 +282,7 @@ table {
 @import 'pages/404';
 @import 'pages/about';
 @import 'pages/batch-changes';
+@import 'pages/careers';
 @import 'pages/community';
 @import 'pages/customers';
 @import 'pages/_case_studies';
@@ -347,4 +348,14 @@ table {
 .font-size-medium {
     font-size: 1.2em;
     line-height: 1.95em;
+}
+
+.font-size-large {
+    font-size: 4.5em; // 72px
+    line-height: 1.25em; // 90px
+}
+
+.font-size-extra-large {
+    font-size: 6em; // 96px
+    line-height: 1.25em; // 120px
 }
