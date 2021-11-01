@@ -157,9 +157,9 @@ Automation gives you the confidence you need to build a continuous delivery mind
 
 ## Embrace a continuous delivery mindset
 
-Continuous deployment and delivery are hot topics, and Twitter feeds and Hacker News comment sections light up with the discussions of the most cutting-edge startups deploying every day, every minute, every second. But the reality for most companies, and most engineers, is more complex. 
+Continuous deployment and delivery are hot topics, and Twitter feeds and Hacker News comment sections light up with the discussions of the most cutting-edge startups deploying every day, every minute, every second. But the reality for most companies, and most engineers, is more complex.
 
-In most cases, real-world engineering practices will always lag behind their ideal state. Back on Earth, we still have to deal with on-prem environments, upgrade cycles, and release anxiety. Reality can be harsh, and even disappointing, but that doesn't mean those on the frontier have nothing to teach us. Even if you can't pursue true continuous deployment and delivery, you can still apply ideas those working on the frontier helped forge. 
+In most cases, real-world engineering practices will always lag behind their ideal state. Back on Earth, we still have to deal with on-prem environments, upgrade cycles, and release anxiety. Reality can be harsh, and even disappointing, but that doesn't mean those on the frontier have nothing to teach us. Even if you can't pursue true continuous deployment and delivery, you can still apply ideas those working on the frontier helped forge.
 
 Even if continuous deployment and delivery isn't within your grasp, a continuous delivery mindset is.
 
