@@ -94,7 +94,7 @@ Who knew a 19th century Danish philosopher had something to teach us about softw
 
 Anxiety is a sign you care. And ideally, we all care about what we produce every day. Anxiety is healthy in the right proportions, and with the right mindset, tooling, and practices, we might even be able to ship to prod on Fridays.
 
-In part two, we'll explore solutions to anxiety, including continuous deployment and delivery. 
+In part two, we'll explore solutions to anxiety, including continuous deployment and delivery.
 
 _With thanks to [Jean du Plessis](https://handbook.sourcegraph.com/company/team#jean-du-plessis-hehim), [Dax McDonald](https://handbook.sourcegraph.com/company/team#dax-mcdonald-hehim), [Joel Kwartler](https://handbook.sourcegraph.com/company/team#joel-kwartler-hehim), and [Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey-hehim) for contributing insights to this post._
 
