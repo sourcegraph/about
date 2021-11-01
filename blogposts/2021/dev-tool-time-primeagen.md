@@ -19,18 +19,11 @@ You can watch the recording of this episode at the [bottom of this blog post](#W
 
 ![ThePrimeagen's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/hardware.jpg)
 
-## First section
+ThePrimeagen's desk setup is doubly determined by his work as a developer and his position as a streamer. While he prefers coding on a single, relatively normal-sized monitor, he has two on his desk. The [Acer Predator](https://www.acer.com/ac/en/US/content/predator-models/monitors) is his primary monitor, attached to his [System76](https://system76.com/) laptop running Ubuntu. The second monitor is hooked up to a Windows machine used for running his Twitch stream, since some of his hardware, such as the [Streamdeck](https://www.elgato.com/en/stream-deck) and [GoXLR](https://www.tc-helicon.com/product.html?modelCode=P0CQK), don't yet have Linux drivers. [Kinesis](https://kinesis-ergo.com/) keyboards, notably the [Advantage 2](https://kinesis-ergo.com/shop/advantage2/) take up a chunk of desk space. As part of his drive to make typing more efficient, ThePrimeagen uses the Dvorak keyboard layout, which optimizes for alternating keypresses between the two hands and a focus on the home row among other efficiencies.
 
-Not everything needs to be customized. On his Ubuntu machine, ThePrimeagen uses the default font and terminal.
+## Configuration and cognitive overhead
 
-> quote on people expecting a fancy terminal and font from an expert
-
-<figure>
-    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/milliseconds.mp4"></video>
-    </div>
-    <figcaption style="text-align: center; font-style: italic;">Even milliseconds matter to ThePrimeagen</figcaption>
-</figure>
+ThePrimeagen is known for his Vim mastery, which he demonstrates on stream with speed and smoothness. His approach isn't driven purely by speed or efficiency, though. As much as possible, ThePrimeagen tries to reduce thinking about steps he shouldn't have to think about, such as which keybinding will take him to the window with his terminal (Mod+3) or to his always-open [GIMP](https://www.gimp.org/) window (Mod+6).
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
@@ -39,12 +32,20 @@ Not everything needs to be customized. On his Ubuntu machine, ThePrimeagen uses 
     <figcaption style="text-align: center; font-style: italic;">Watch ThePrimeagen demonstrate his setup for navigating windows consistently</figcaption>
 </figure>
 
+By consistently organizing keybindings for actions, and building muscle memory, ThePrimeagen cuts down on the small pauses needed to figure out how to perform the next intended action. This approach carries through to his main text editor, [Neovim](https://neovim.io/), for which he, and co-contributors, built [Harpoon](https://github.com/ThePrimeagen/harpoon), a plugin for file and terminal navigation.
+
+Configuration is personal, though, and while ThePrimeagen's [dotfiles](https://github.com/ThePrimeagen/.dotfiles) are a source of inspiration for many, his own keybindings and preferences are optimized for him. Others might need to take different approaches, or fine-tune the same combination of core apps (i3, tmux, and Neovim) differently. Following ThePrimeagen's approach is about finding problematically complex aspects of your current setup, even if that complexity comes from seemingly ergonomic approaches like mnemonics, and simplifying in a way that works with your own mental model and habits.
+
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/thinking.mp4"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Listen to ThePrimeagen discuss the importance of reducing complexity to reduce unnecessary thinking</figcaption>
 </figure>
+
+## `git worktree` so you don't have to `git stash`
+
+Reducing cognitive overhead is as much about taking advantage of existing tools and workflows as it is extensive configuration. One of ThePrimagen's examples of this is his relatively recent switch to using Git worktrees, which allow you to concurrently checkout multiple branches of a repository. Rather than going through the steps of stashing changes, switching branches, and later on figuring out what to pop, worktrees are an interface to a simpler model of navigating branches.
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
@@ -53,12 +54,23 @@ Not everything needs to be customized. On his Ubuntu machine, ThePrimeagen uses 
     <figcaption style="text-align: center; font-style: italic;">Watch ThePrimeagen demonstrate one of his favorite Git features: worktrees</figcaption>
 </figure>
 
+## Even milliseconds matter (to ThePrimeagen)
+
+In his VimConf 2020 talk, ["Vim Speed and Excellence"](https://www.youtube.com/watch?v=tCktGgPQ3D0&list=PLcTu2VkAIIWzD2kicFNHN2c35XQCeZdsv), ThePrimeagen examines the ways that using particular commands in Vim can be faster or slower for himself, and, by extension, for other individuals. It comes down to milliseconds of gain, but that's worth it for someone who is perpetually evolving a development environment for speed, efficiency, and, unobtrusiveness. ThePrimeagen thinks a lot about his setup sometimes, so that the rest of the time, when he's using it, he doesn't really have to think about it at all. Instead, he just codes.
+
+<figure>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/milliseconds.mp4"></video>
+    </div>
+    <figcaption style="text-align: center; font-style: italic;">Listen to ThePrimeagen's deep dive on Vim keybindings and time</figcaption>
+</figure>
+
 ## Show notes
 
-- [microphone?]()
 - [AKG K712 headphones](https://www.akg.com/Headphones/Professional%20Headphones/K712PRO.html?dwvar_K712PRO_color=Black-GLOBAL-Current&cgid=Professional%20Headphones)
 - [Acer Predator monitor](https://www.acer.com/ac/en/US/content/predator-models/monitors)
 - [Ansible](https://www.ansible.com/)
+- [Audio Technica microphones](https://www.audio-technica.com/en-us/microphones/wired)
 - [Dvorak keyboard layout](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout)
 - [Elgato capture card](https://www.elgato.com/en/game-capture-4k60-s-plus) - is this the right one?
 - [GIMP](https://www.gimp.org/)
@@ -73,6 +85,7 @@ Not everything needs to be customized. On his Ubuntu machine, ThePrimeagen uses 
 - [Streamdeck](https://www.elgato.com/en/stream-deck)
 - [System76 laptop](https://system76.com/)
 - [Telescope Neovim plugin](https://github.com/nvim-telescope/telescope.nvim)
+- [Tldr CLI tool](https://tldr.sh/)
 - [Tmux](https://github.com/tmux/tmux)
 - [Vim Speed and Excellence - the Primeagen's VimConf 2020 talk](https://www.youtube.com/watch?v=tCktGgPQ3D0&list=PLcTu2VkAIIWzD2kicFNHN2c35XQCeZdsv)
 
