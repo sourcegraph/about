@@ -1,7 +1,7 @@
 title: 'Continuous delivery: A cure for release anxiety?'
-description: 'Engineers are anxious and continuous deliveyr promises to help. But how practicial is it, really? In this post, we explore the limitations of continuous delivery as well as the lessons we can learn from it.'
+description: 'Engineers are anxious and continuous delivery promises to help. But how practicial is it, really? In this post, we explore the limitations of continuous delivery as well as the lessons we can learn from it.'
 externalTitle: 'A continuous delivery mindset is the antidote to release anxiety'
-externalDescription: 'Continuous delivery appears to be a solution to release anxiety but the reality is more complex. With a mindset change, however, even companies locked into on-prem business models can learn from continuous delivery.'
+externalDescription: 'Continuous delivery appears to be a solution to release anxiety but the reality is more complex. With a mindset change, however, even companies using on-prem business models can learn from continuous delivery.'
 author: Nick Moore
 authorUrl: https://twitter.com/nickwritesit
 published: true
@@ -157,7 +157,7 @@ Automation gives you the confidence you need to build a continuous delivery mind
 
 ## Embrace a continuous delivery mindset
 
-Continuous deployment and delivery are hot topics, and Twitter feeds and Hacker News comment sections light up with the discussions of the most cutting-edge startups deploying every day, every minute, every second. But the reality for most companies, and most engineers, is more complex.
+Continuous deployment and delivery are hot topics, and Twitter feeds and Hacker News comment sections light up with discussions of the most cutting-edge startups deploying every day, every minute, every second. But the reality for most companies, and most engineers, is more complex.
 
 In most cases, real-world engineering practices will always lag behind their ideal state. Back on Earth, we still have to deal with on-prem environments, upgrade cycles, and release anxiety. Reality can be harsh, and even disappointing, but that doesn't mean those on the frontier have nothing to teach us. Even if you can't pursue true continuous deployment and delivery, you can still apply ideas those working on the frontier helped forge.
 
