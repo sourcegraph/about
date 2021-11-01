@@ -66,10 +66,10 @@ slope is very small. Effectively, we are paying a premium for small shards as th
 input data.
 
 The key insight is that there is a non-zero overlap between sets of trigrams from different shards. This presents a huge
-opportunity to save memory by merging small shards into much larger compound shards. The median
-[intersection-over-union](https://en.wikipedia.org/wiki/Jaccard_index) for two random shards in our sample is 0.13.
-which is a lower bound on the overlap between a random shard and a compound shard. This means, the more shards we merge
-the larger is the overlap between the compound shard and any unmerged shard.
+opportunity to save memory by merging small shards into much larger compound shards. Although the median
+[intersection-over-union](https://en.wikipedia.org/wiki/Jaccard_index) of two random shards in our sample is small (
+0.13), the overlap between a compound shard and a another shard grows with every shard we merge. In other words, the
+larger a compound is, the cheaper it is, in terms of memory, to merge it with a another shard.
 
 By merging several smaller shards, we are trading a smaller memory footprint for a potentially higher latency during
 search. We can fine-tune this trade-off with merge policies, for example by adjusting the target size of the compound
