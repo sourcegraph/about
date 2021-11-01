@@ -38,7 +38,7 @@ motivate this idea we have to first understand Zoekt's data model.
 Zoekt indexes repositories and stores the index in one or more files on disk. A repository contains a hierarchy of
 documents, such as source code, binaries, text files and so forth. At
 index-time [documents are added, one at a time, to the index builder](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda25a6c5a7c6612e309249420102c587b4d/-/blob/gitindex/index.go?L498-505)
-. Once we cross a threshold, currently configured to be 100 MiB, of input data, the
+. Once we cross a threshold of input data, currently configured to be 100 MiB, the
 builder [flushes the index to a file on disk](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda25a6c5a7c6612e309249420102c587b4d/-/blob/build/builder.go?L455-457)
 . This file is called a shard. For small repositories, there is a 1:1 relationship between the repository and its shard.
 Larger repositories, such as Kubernetes map to several shards. At query time, shards are treated independently.
