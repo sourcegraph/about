@@ -41,7 +41,7 @@ index-time [documents are added, one at a time, to the index builder](https://so
 . Once we cross a threshold of input data, currently configured to be 100 MiB, the
 builder [flushes the index to a file on disk](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda25a6c5a7c6612e309249420102c587b4d/-/blob/build/builder.go?L455-457)
 . This file is called a shard. For small repositories, there is a 1:1 relationship between the repository and its shard.
-Larger repositories, such as Kubernetes map to several shards. At query time, shards are treated independently.
+Larger repositories, such as [Kubernetes](https://sourcegraph.com/github.com/kubernetes/kubernetes) or the [Linux Kernel](https://sourcegraph.com/github.com/torvalds/linux) map to several shards. At query time, shards are treated independently.
 
 ## The long tail
 
