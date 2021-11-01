@@ -17,15 +17,20 @@ export const PodcastPost: React.FunctionComponent<Props> = ({
     titleClassName = '',
     titleLinkClassName = '',
     tag: Tag = 'div',
+    renderTitleAsLink = false,
 }) => {
     const { guestsHTML, summaryHTML, audioHTML, showNotesHTML, transcriptHTML } = getHTMLParts(post.html)
     return (
         <Tag className={`podcast-post ${className}`}>
             <header className={`podcast-post__header ${headerClassName}`}>
                 <h1 className={titleClassName}>
-                    <Link to={url} className={`d-block ${titleLinkClassName}`}>
-                        {post.frontmatter.title}
-                    </Link>
+                    {renderTitleAsLink === true ? (
+                        <Link to={url} className={`d-block ${titleLinkClassName}`}>
+                            {post.frontmatter.title}
+                        </Link>
+                    ) : (
+                        post.frontmatter.title
+                    )}
                 </h1>
                 <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
                 {guestsHTML && <p className="text-muted mb-0" dangerouslySetInnerHTML={{ __html: guestsHTML }}></p>}
