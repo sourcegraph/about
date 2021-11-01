@@ -74,7 +74,7 @@ lower bound on the overlap between a random shard and a compound shard.
 
 By merging several smaller shards, we are trading a smaller memory footprint for a potentially higher latency during
 search. We can fine-tune this trade-off with merge policies, for example by adjusting the target size of the compound
-shard and excluding some repositories from merging based on characteristics such as update frequency, ranking and
+shard and excluding some repositories from merging based on characteristics such as update frequency, rank and
 repository size. An obvious first choice is to merge those shards that are small, rarely accessed and rarely updated.
 
 The following diagram shows how the number of trigrams in a shard changes
