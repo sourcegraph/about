@@ -1,6 +1,6 @@
 ---
 title: How we tackle the long tail of tiny repos with shard merging
-description: Sourcegraph is on track to index 5 million repositories by the end of 2021. Here’s how we’re merging the long tail of small, stale, infrequently searched repositories into more efficient, larger representations on disk.
+description: Sourcegraph is on track to grow its index of open source repositories significantly, with the aim of indexing the OSS universe. Here’s how we’re merging the long tail of small, stale, infrequently searched repositories into more efficient, larger representations on disk.
 author: Stefan Hengl
 publishDate: 2021-11-02T10:00-07:00
 tags: [blog]
