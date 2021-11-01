@@ -1,7 +1,8 @@
 .careers {
     font-family: $font-family-monospace !important;
 
-    h3, .benefits span {
+    h3,
+    .benefits span {
         font-weight: 300;
     }
 
@@ -35,7 +36,6 @@
     .bg-image {
         background: no-repeat center url('/BenefitsAndPerks.png');
         height: 800px;
-
     }
 
     .bg-dark {
@@ -89,13 +89,21 @@
     }
     /* for Firefox */
     @-moz-keyframes slide-in {
-        from { -moz-transform: translateX(0%); }
-        to { -moz-transform: translateX(-50%); }
+        from {
+            -moz-transform: translateX(0%);
+        }
+        to {
+            -moz-transform: translateX(-50%);
+        }
     }
     /* for Chrome */
     @-webkit-keyframes slide-in {
-        from { -webkit-transform: translateX(0%); }
-        to { -webkit-transform: translateX(-50%); }
+        from {
+            -webkit-transform: translateX(0%);
+        }
+        to {
+            -webkit-transform: translateX(-50%);
+        }
     }
     @keyframes slide-in {
         from {
