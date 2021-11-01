@@ -22,8 +22,7 @@ our self-hosted customer deployments.
 
 ## Why not just scale out?
 
-Naturally, Zoekt's size of the index scales with the size of the input data. Zoekt’s index has an overhead of about 2-3
-compared to the input. Some of that data, like the trigrams, is kept in memory. At the scale of the open source
+Naturally, Zoekt's size of the index scales with the size of the input data. Zoekt’s index is about 2 to 3 times larger than the input data. Some of that data, like the trigrams, is kept in memory. At the scale of the open source
 universe, it quickly becomes too costly to just scale out. Luckily, Zoekt still has a lot of untapped potential when it
 comes to more efficient data structures. For example, in
 a [previous post](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/), Ryan Hitchman
