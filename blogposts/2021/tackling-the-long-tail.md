@@ -10,9 +10,9 @@ socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 published: true
 ---
 
-In this post we give you a brief overview of how we tackle the long tail of tiny
-repositories by introducing shard merging to Zoekt, in our [quest to index the
-OSS universe](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
+In this post we give you a brief overview of how we tackle the long tail of tiny repositories by introducing shard
+merging to Zoekt, in
+our [quest to index the OSS universe](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
 
 ## What is Zoekt?
 
@@ -22,9 +22,10 @@ our self-hosted customer deployments.
 
 ## Why not just scale out?
 
-Naturally, Zoekt's size of the index scales with the size of the input data. Zoekt’s index is about 2 to 3 times larger than the input data. Some of that data, like the trigrams, is kept in memory. At the scale of the open source
-universe, it quickly becomes too costly to just scale out. Luckily, Zoekt still has a lot of untapped potential when it
-comes to more efficient data structures. For example, in
+Naturally, Zoekt's size of the index scales with the size of the input data. Zoekt’s index is about 2 to 3 times larger
+than the input data. Some of that data, like the trigrams, is kept in memory. At the scale of the open source universe,
+it quickly becomes too costly to just scale out. Luckily, Zoekt still has a lot of untapped potential when it comes to
+more efficient data structures. For example, in
 a [previous post](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/), Ryan Hitchman
 explained how we changed one of Zoekt's core data structures to reduce memory by 5x.
 
@@ -43,9 +44,8 @@ Larger repositories, such as [Kubernetes](https://sourcegraph.com/github.com/kub
 
 ## The long tail
 
-Most repositories are tiny and fit within a single shard. The following
-histogram shows the distribution of shard sizes on one of our production
-instances.
+Most repositories are tiny and fit within a single shard. The following histogram shows the distribution of shard sizes
+on one of our production instances.
 
 ![Distribution of shard sizes](https://storage.googleapis.com/sourcegraph-assets/blog/tackling-long-tail/tackling-long-tail-histogram.png)
 
@@ -55,16 +55,15 @@ startup, [Zoekt loads those trigrams into memory](https://sourcegraph.com/github
 . Trigrams for content and file names make up more than 70% of the heap of Zoekt’s web server. The more unique trigrams a shard
 has, the more costly its in-memory representation is.
 
-The two charts below show the number of trigrams in a shard vs. the shard's
-size. Plot A shows that most shards have less than 500k trigrams. Plot B shows a
-subset of the data in A (red box).
+The two charts below show the number of trigrams in a shard vs. the shard's size. Plot A shows that most shards have
+less than 500k trigrams. Plot B shows a subset of the data in A (red box).
 
 ![Number of trigrams vs. shard size](https://storage.googleapis.com/sourcegraph-assets/blog/tackling-long-tail/tackling-long-tail-trigrams.png)
 
-We can see that even tiny shards can have a lot of trigrams. As is to be
-expected, there is a positive correlation (the [spearman correlation](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient) is 0.94) but
-the slope is very small. Effectively, we are paying a premium for small shards
-as they take up a lot of memory per byte of input data.
+We can see that even tiny shards can have a lot of trigrams. As is to be expected, there is a positive correlation (
+the [spearman correlation](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient) is 0.94) but the
+slope is very small. Effectively, we are paying a premium for small shards as they take up a lot of memory per byte of
+input data.
 
 The key insight is that there is a non-zero overlap between sets of trigrams from different shards. This presents a huge
 opportunity to save memory by merging small shards into much larger compound shards. The median
@@ -77,13 +76,12 @@ search. We can fine-tune this trade-off with merge policies, for example by adju
 shard and excluding some repositories from merging based on characteristics such as update frequency, rank and
 repository size. An obvious first choice is to merge those shards that are small, rarely accessed and rarely updated.
 
-The following diagram shows how the number of trigrams in a shard changes
-depending on how many repositories we merge into a compound shard.
+The following diagram shows how the number of trigrams in a shard changes depending on how many repositories we merge
+into a compound shard.
 
 ![Number of trigrams vs. size of compound shard](https://storage.googleapis.com/sourcegraph-assets/blog/tackling-long-tail/tackling-long-tail-compression.png)
 
-The distance between the two curves is a measure of the compression we can
-achieve.
+The distance between the two curves is a measure of the compression we can achieve.
 
 ## What’s next?
 
