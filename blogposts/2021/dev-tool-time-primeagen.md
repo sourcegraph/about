@@ -1,25 +1,57 @@
 ---
-title: ''
-description: ''
+title: 'Thinking less to do more: Dev Tool Time with ThePrimeagen'
+description: 'ThePrimeagen, Senior Software Engineer at Netflix and Twitch Partner tech streamer, shares how he reduces cognitive overhead with tmux, i3, and Neovim to write code more effectively.'
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-11-03T10:00-07:00
 tags: [blog]
-slug: dev-tool-time-the-primeagen
+slug: dev-tool-time-theprimeagen
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/linkedin.jpg
 socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/linkedin.jpg
 published: true
 ---
 
-Description
+As a popular Twitch streamer and Vim enthusiast, ThePrimeagen is known for his fast-paced tmux and Neovim focused workflow, shifting quickly between windows, buffers, and code chunks. When he joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on October 27, 2021, he shared his approach to reducing cognitive overhead in his dev workflow, and showed how his custom configurations make it easier to think less and do more.
 
-You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Adam’s desk setup:
+You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out ThePrimeagen’s desk setup:
 
 ## Hardware
 
-![The Primeagen's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/current-computer.jpeg)
+![ThePrimeagen's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/hardware.jpg)
 
 ## First section
+
+Not everything needs to be customized. On his Ubuntu machine, ThePrimeagen uses the default font and terminal.
+
+> quote on people expecting a fancy terminal and font from an expert
+
+<figure>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/milliseconds.mp4"></video>
+    </div>
+    <figcaption style="text-align: center; font-style: italic;">Even milliseconds matter to ThePrimeagen</figcaption>
+</figure>
+
+<figure>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/navigating.mp4"></video>
+    </div>
+    <figcaption style="text-align: center; font-style: italic;">Watch ThePrimeagen demonstrate his setup for navigating windows consistently</figcaption>
+</figure>
+
+<figure>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/thinking.mp4"></video>
+    </div>
+    <figcaption style="text-align: center; font-style: italic;">Listen to ThePrimeagen discuss the importance of reducing complexity to reduce unnecessary thinking</figcaption>
+</figure>
+
+<figure>
+    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/worktree.mp4"></video>
+    </div>
+    <figcaption style="text-align: center; font-style: italic;">Watch ThePrimeagen demonstrate one of his favorite Git features: worktrees</figcaption>
+</figure>
 
 ## Show notes
 
