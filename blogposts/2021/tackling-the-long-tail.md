@@ -28,9 +28,8 @@ comes to more efficient data structures. For example, in
 a [previous post](https://about.sourcegraph.com/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/), Ryan Hitchman
 explained how we changed one of Zoekt's core data structures to reduce memory by 5x.
 
-The core idea of this project is to merge the long tail of small, stale
-repositories into more efficient representations on disk and in memory. To
-motivate this idea we have to first understand Zoekt's data model.
+The core idea of this project is to merge the long tail of small, stale repositories into more efficient representations
+on disk and in memory. To understand the motivation behind this idea we have to first dive into Zoekt's data model.
 
 ## Zoekt’s data model
 
