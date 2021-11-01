@@ -64,7 +64,7 @@ subset of the data in A (red box).
 ![Number of trigrams vs. shard size](https://storage.googleapis.com/sourcegraph-assets/blog/tackling-long-tail/tackling-long-tail-trigrams.png)
 
 We can see that even tiny shards can have a lot of trigrams. As is to be
-expected, there is a positive correlation (the spearman correlation is 0.94) but
+expected, there is a positive correlation (the [spearman correlation](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient) is 0.94) but
 the slope is very small. Effectively, we are paying a premium for small shards
 as they take up a lot of memory per byte of input data.
 
