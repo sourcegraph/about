@@ -70,7 +70,7 @@ In engineering, deadlines often create a sense of impending doom–a sense that 
 
 While some engineers are rushing to make and submit changes, other engineers (often the same ones, on different days) are diving in front of changes, trying to protect the codebase.
 
-Meanwhile, a metric rings in their heads: MTTR, or Mean Time To Recovery. MTTR measures how quickly you can rollback to a previous instance. The better your MTTR, the less your pressure will be to protect. MTTR, however, depends almost entirely on your tooling and how tedious the rollout and upgrade process is.
+Meanwhile, a metric rings in their heads: MTTR, or Mean Time To Recovery. MTTR measures how quickly you can roll back to a previous instance. The better your MTTR, the less your pressure will be to protect. MTTR, however, depends almost entirely on your tooling and how tedious the rollout and upgrade process is.
 
 These engineers have experienced the moments where different chunks of code start interacting in new, unforeseen ways. When you tested that change 30 commits ago, it worked perfectly but now, 30 commits later, a new feature or a toggled feature flag means your change isn’t working as expected.
 
