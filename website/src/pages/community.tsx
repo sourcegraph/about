@@ -130,7 +130,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <a
                         className="btn btn-primary"
                         href={
-                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-usq3n1z4-PcDNPcN46aWSPrLxYR1z4g'
+                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
                         }
                         title="Join us on Slack"
                     >
@@ -234,7 +234,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <a
                         className="btn btn-secondary"
                         href={
-                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-usq3n1z4-PcDNPcN46aWSPrLxYR1z4g'
+                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
                         }
                         title="Join us on Slack"
                     >

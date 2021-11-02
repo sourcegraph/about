@@ -17,6 +17,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
     titleClassName = '',
     titleLinkClassName = '',
     tag: Tag = 'div',
+    renderTitleAsLink = false,
 }) => {
     const body = full ? (
         <div className="blog-post__html" dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -37,20 +38,24 @@ export const BlogPost: React.FunctionComponent<Props> = ({
         <Tag className={`blog-post ${className}`}>
             <header className={headerClassName}>
                 <h1 className={titleClassName}>
-                    <Link to={url} className={`d-block ${titleLinkClassName}`}>
-                        {post.frontmatter.title}
-                    </Link>
+                    {renderTitleAsLink === true ? (
+                        <Link to={url} className={`d-block ${titleLinkClassName}`}>
+                            {post.frontmatter.title}
+                        </Link>
+                    ) : (
+                        post.frontmatter.title
+                    )}
                 </h1>
                 <p className="blog-post__byline mb-0">
                     {post.frontmatter.author} on {post.frontmatter.publishDate}
                 </p>
             </header>
             {!full && post.frontmatter.heroImage ? (
-                <div className="card-body pt-0 d-flex">
+                <div className="card-body pt-0 d-flex flex-card">
                     <div className="flex-1">{body}</div>
-                    <Link to={url} className="pl-3">
+                    <Link to={url}>
                         <img
-                            className="blog-post__image"
+                            className="blog-post__image flex-1"
                             src={post.frontmatter.heroImage}
                             alt={post.frontmatter.title}
                         />

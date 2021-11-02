@@ -104,3 +104,9 @@ command = "yarn run build"
   to = "/#get-started"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/contact/sales"
+  to = "/contact/product-specialist"
+  status = 200
+  force = true
