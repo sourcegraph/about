@@ -2,7 +2,7 @@
 title: "Let's talk about release anxiety"
 description: 'Engineers are caught in a vise between two pressures: the pressure to get code changes into the next release and to protect the release from bugs. The result? Release anxiety.'
 externalTitle: 'Release anxiety: What it is and how to address it'
-externalDescription: 'Release anxiety plagues many engineers. Can you squeeze in this last code change? Will this last code change break production? Let's talk about ways to deal with the anxiety.'
+externalDescription: "Release anxiety plagues many engineers. Can you squeeze in this last code change? Will this last code change break production? Let's talk about ways to deal with the anxiety."
 author: Nick Moore
 authorUrl: https://twitter.com/nickwritesit
 published: true
