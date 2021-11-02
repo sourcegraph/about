@@ -1,6 +1,6 @@
 ---
 title: "How we’re tackling the long tail of tiny repos with shard merging"
-description: "Sourcegraph is on track to grow its index of open source repositories significantly, with the aim of indexing the OSS universe. This post motivates why we are introducing shard merging to our search backend."
+description: "Sourcegraph is on track to grow its index of open source repositories significantly, with the aim of indexing the OSS universe. This post dives into the motivations behind introducing shard merging to our search backend."
 author: Stefan Hengl
 publishDate: 2021-11-02T10:00-07:00
 tags: [blog]
@@ -12,14 +12,14 @@ published: true
 
 ![Tackling the long tail of tiny repos with shard merging](https://storage.googleapis.com/sourcegraph-assets/blog/tackling-long-tail/tackling-the-long-tail-hero.png)
 
-In this post we give you a brief overview of how we tackle the long tail of tiny repositories by introducing shard
+In this post we give you a brief overview of how we're tackling the long tail of tiny repositories by introducing shard
 merging to Zoekt, in
 our [quest to index the OSS universe](https://about.sourcegraph.com/blog/why-index-the-oss-universe/).
 
 ## What is Zoekt?
 
 [Zoekt](https://github.com/sourcegraph/zoekt) is a code search engine that
-performs trigram-based regex search. Originally created by Han-Wen Niehuys, Zoekt is fast, easy to deploy and easy to maintain, which makes it a great choice for
+performs trigram-based regex search. Originally created by Han-Wen Niehuys, Zoekt is fast, easy to deploy, and easy to maintain, which makes it a great choice for
 our self-hosted customer deployments. [Sourcegraph is actually taking on maintainership of Zoekt, which you can read about here](ADD LINK).
 
 ## Why not just scale out?
@@ -53,8 +53,7 @@ on one of our production instances.
 
 75% of the shards in our sample are smaller than 2.1 MiB. Each shard contains, among other data, the trigrams we created
 during indexing. On
-startup, [Zoekt loads those trigrams into memory](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda/-/blob/read.go?L210)
-. Trigrams for content and file names make up more than 70% of the heap of Zoekt’s web server. The more unique trigrams a shard
+startup, [Zoekt loads those trigrams into memory](https://sourcegraph.com/github.com/sourcegraph/zoekt@6a4adda/-/blob/read.go?L210). Trigrams for content and file names make up more than 70% of the heap of Zoekt’s web server. The more unique trigrams a shard
 has, the more costly its in-memory representation is.
 
 The two charts below show the number of trigrams in a shard vs. the shard's size. Plot A shows that most shards have
@@ -65,15 +64,13 @@ less than 500k trigrams. Plot B shows a subset of the data in A (red box).
   <figcaption>Number of trigrams vs. shard size.</figcaption>
 </figure>
 
-We can see that even tiny shards can have a lot of trigrams. As is to be expected, there is a positive correlation (
-the [spearman correlation](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient) is 0.94) but the
+We can see that even tiny shards can have a lot of trigrams. As is to be expected, there is a positive correlation (the [spearman correlation](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient) is 0.94) but the
 slope is very small. Effectively, we are paying a premium for small shards as they take up a lot of memory per byte of
 input data.
 
 The key insight is that there is a non-zero overlap between sets of trigrams from different shards. This presents a huge
 opportunity to save memory by merging small shards into much larger compound shards. Although the median
-[intersection-over-union](https://en.wikipedia.org/wiki/Jaccard_index) of two random shards in our sample is small (
-0.13), the overlap between a compound shard and a another shard grows with every shard we merge. In other words, the
+[intersection-over-union](https://en.wikipedia.org/wiki/Jaccard_index) of two random shards in our sample is small (0.13), the overlap between a compound shard and another shard grows with every shard we merge. In other words, the
 larger a compound is, the cheaper it is, in terms of memory, to merge it with a another shard.
 
 By merging several smaller shards, we are trading a smaller memory footprint for a potentially higher latency during
@@ -81,8 +78,7 @@ search. We can fine-tune this trade-off with merge policies, for example by adju
 shard and excluding some repositories from merging based on characteristics such as update frequency, rank, and
 repository size. An obvious first choice is to merge those shards that are small, rarely accessed and rarely updated.
 
-The following diagram shows how the number of trigrams in a shard changes depending on how many repositories we merge
-into a compound shard.
+The following diagram shows how the number of trigrams in a shard changes depending on how many repositories we merge into a compound shard.
 
 <figure>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/tackling-long-tail/tackling-long-tail-compression.png" alt="Number of trigrams vs. size of compound shard" class="no-shadow">
