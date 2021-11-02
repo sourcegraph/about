@@ -11,7 +11,7 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/linkedin
 published: true
 ---
 
-As a popular Twitch streamer and Vim enthusiast, ThePrimeagen is known for his fast-paced tmux and Neovim focused workflow, shifting quickly between windows, buffers, and code chunks. When he joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on October 27, 2021, he shared his approach to reducing cognitive overhead in his dev workflow, and showed how his custom configurations make it easier to think less and do more.
+As a popular Twitch streamer and Vim enthusiast, ThePrimeagen is known for his fast-paced tmux and Neovim-focused workflow, shifting quickly between windows, buffers, and code chunks. When he joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on October 27, 2021, he shared his approach to reducing cognitive overhead in his dev workflow and showed how his custom configurations make it easier to think less and do more.
 
 You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out ThePrimeagen’s desk setup:
 
@@ -19,7 +19,9 @@ You can watch the recording of this episode at the [bottom of this blog post](#W
 
 ![ThePrimeagen's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/hardware.jpg)
 
-ThePrimeagen's desk setup is doubly determined by his work as a developer and his position as a streamer. While he prefers coding on a single, relatively normal-sized monitor, he has two on his desk. The [Acer Predator](https://www.acer.com/ac/en/US/content/predator-models/monitors) is his primary monitor, attached to his [System76](https://system76.com/) laptop running Ubuntu. The second monitor is hooked up to a Windows machine used for running his Twitch stream, since some of his hardware, such as the [Streamdeck](https://www.elgato.com/en/stream-deck) and [GoXLR](https://www.tc-helicon.com/product.html?modelCode=P0CQK), don't yet have Linux drivers. [Kinesis](https://kinesis-ergo.com/) keyboards, notably the [Advantage 2](https://kinesis-ergo.com/shop/advantage2/) take up a chunk of desk space. As part of his drive to make typing more efficient, ThePrimeagen uses the Dvorak keyboard layout, which optimizes for alternating keypresses between the two hands and a focus on the home row among other efficiencies.
+ThePrimeagen's desk setup is doubly determined by his work as a developer and his position as a streamer. While he prefers coding on a single, relatively normal-sized monitor, he has two on his desk. The [Acer Predator](https://www.acer.com/ac/en/US/content/predator-models/monitors) is his primary monitor, which is attached to his [System76](https://system76.com/) laptop running Ubuntu. The second monitor is hooked up to a Windows machine that runs his Twitch stream, since some of his hardware, such as the [Streamdeck](https://www.elgato.com/en/stream-deck) and [GoXLR](https://www.tc-helicon.com/product.html?modelCode=P0CQK), don't yet have Linux drivers. [Kinesis](https://kinesis-ergo.com/) keyboards, notably the [Advantage 2](https://kinesis-ergo.com/shop/advantage2/) take up a chunk of desk space. 
+
+As part of his drive to make typing more efficient, ThePrimeagen uses the Dvorak keyboard layout, which optimizes for alternating keypresses between two hands and focuses on the home row among other efficiencies.
 
 ## Configuration and cognitive overhead
 
@@ -32,7 +34,7 @@ ThePrimeagen is known for his Vim mastery, which he demonstrates on stream with 
     <figcaption style="text-align: center; font-style: italic;">Watch ThePrimeagen demonstrate his setup for navigating windows consistently</figcaption>
 </figure>
 
-By consistently organizing keybindings for actions, and building muscle memory, ThePrimeagen cuts down on the small pauses needed to figure out how to perform the next intended action. This approach carries through to his main text editor, [Neovim](https://neovim.io/), for which he, and co-contributors, built [Harpoon](https://github.com/ThePrimeagen/harpoon), a plugin for file and terminal navigation.
+By consistently organizing keybindings for actions, and building muscle memory, ThePrimeagen cuts down on the small pauses needed to figure out how to perform the next intended action. This approach carries through to his main text editor, [Neovim](https://neovim.io/), for which he, and his co-contributors, built [Harpoon](https://github.com/ThePrimeagen/harpoon), a plugin for file and terminal navigation.
 
 Configuration is personal, though, and while ThePrimeagen's [dotfiles](https://github.com/ThePrimeagen/.dotfiles) are a source of inspiration for many, his own keybindings and preferences are optimized for him. Others might need to take different approaches, or fine-tune the same combination of core apps (i3, tmux, and Neovim) differently. Following ThePrimeagen's approach is about finding problematically complex aspects of your current setup, even if that complexity comes from seemingly ergonomic approaches like mnemonics, and simplifying in a way that works with your own mental model and habits.
 
@@ -56,7 +58,7 @@ Reducing cognitive overhead is as much about taking advantage of existing tools 
 
 ## Even milliseconds matter (to ThePrimeagen)
 
-In his VimConf 2020 talk, ["Vim Speed and Excellence"](https://www.youtube.com/watch?v=tCktGgPQ3D0&list=PLcTu2VkAIIWzD2kicFNHN2c35XQCeZdsv), ThePrimeagen examines the ways that using particular commands in Vim can be faster or slower for himself, and, by extension, for other individuals. It comes down to milliseconds of gain, but that's worth it for someone who is perpetually evolving a development environment for speed, efficiency, and, unobtrusiveness. ThePrimeagen thinks a lot about his setup sometimes, so that the rest of the time, when he's using it, he doesn't really have to think about it at all. Instead, he just codes.
+In his VimConf 2020 talk, ["Vim Speed and Excellence"](https://www.youtube.com/watch?v=tCktGgPQ3D0&list=PLcTu2VkAIIWzD2kicFNHN2c35XQCeZdsv), ThePrimeagen examines the ways that using particular commands in Vim can be faster or slower for himself and, by extension, for other individuals. It comes down to milliseconds of gain, but that's worth it for someone who is perpetually evolving a development environment for speed, efficiency, and unobtrusiveness. ThePrimeagen thinks a lot about his setup sometimes, so that the rest of the time, when he's using it, he doesn't really have to think about it at all. Instead, he just codes.
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
