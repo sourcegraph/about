@@ -1,8 +1,8 @@
 ---
-title: An ex-Googler's guide to dev tools
-externalTitle: Dev tools: The ex-Googler guide
-description:  After leaving Google, many engineers miss the developer tools. Here's one ex-Googler's guide to navigating the dev tools landscape outside of Google, finding the ones that fill the gaps you're feeling, and introducing these to your new team.
-externalDescription: An ex-Googler, or Xoogler, shows how you can replicate Google’s internal tools and development environment outside of Google. 
+title: "An ex-Googler's guide to dev tools"
+externalTitle: 'Dev tools: The ex-Googler guide'
+description:  "After leaving Google, many engineers miss the developer tools. Here's one ex-Googler's guide to navigating the dev tools landscape outside of Google, finding the ones that fill the gaps you're feeling, and introducing these to your new team."
+externalDescription: 'An ex-Googler, or Xoogler, shows how you can replicate Google’s internal tools and development environment outside of Google.'
 author: Beyang Liu
 authorUrl: https://twitter.com/beyang
 publishDate: 2020-11-24
