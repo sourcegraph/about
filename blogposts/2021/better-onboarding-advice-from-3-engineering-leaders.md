@@ -8,7 +8,7 @@ socialImage: https://sourcegraphstatic.com/blog/better-onboarding-tips-from-engi
 publishDate: 2021-05-27T18:00-07:00
 tags: [blog]
 slug: better-onboarding-advice-from-engineering-leaders
-published: true
+published: false
 ---
 
 ![Better onboarding video game graphic](/blog/better-onboarding-advice-from-engineering-leaders.gif)
