@@ -13,7 +13,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiet
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png
 ---
 
-![Release anxiety graphic]https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png
+![Release anxiety graphic](https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png)
 
 “Don’t release to prod on Fridays”–a saying that might as well be sticky-noted to every engineer’s monitor. It’s a joke that masks something pretty serious: engineers don’t feel confident in their ability to deploy and walk away from their desks.
 
