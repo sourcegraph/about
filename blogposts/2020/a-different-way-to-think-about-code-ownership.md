@@ -84,3 +84,9 @@ After I had a working prototype of Codenotify, it was time to actually experimen
 [We deleted our CODEOWNERS file on September 16, 2020](https://github.com/sourcegraph/sourcegraph/pull/13838), and teammates have been [adding CODENOTIFY files](https://sourcegraph.com/search?q=r%3A%5Egithub.com%2Fsourcegraph%2F%28sourcegraph%7Cabout%29%24+f%3ACODENOTIFY+count%3A1000&patternType=literal) ever since.
 
 At the end of October I will check in with the team to see how they are feeling about this code ownership experiment after having lived with the change for over a month. The exciting thing is that no matter what the outcome is, we will have learned something new.
+
+## More posts like this
+
+- [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
+- [How we used universal code search to eliminate secrets from our codebase](https://about.sourcegraph.com/blog/eliminate-secrets-from-codebase-with-universal-code-search/)
+- [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
