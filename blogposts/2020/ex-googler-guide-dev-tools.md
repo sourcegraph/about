@@ -1,6 +1,8 @@
 ---
 title: An ex-Googler's guide to dev tools
+externalTitle: Dev tools: The ex-Googler guide
 description:  After leaving Google, many engineers miss the developer tools. Here's one ex-Googler's guide to navigating the dev tools landscape outside of Google, finding the ones that fill the gaps you're feeling, and introducing these to your new team.
+externalDescription: An ex-Googler, or Xoogler, shows how you can replicate Google’s internal tools and development environment outside of Google. 
 author: Beyang Liu
 authorUrl: https://twitter.com/beyang
 publishDate: 2020-11-24
@@ -11,21 +13,21 @@ socialImage: /blog/exgoogler-campfire.jpg
 published: true
 ---
 
-Many years ago, I did a brief stint at Google. A lot has changed since then, but even that brief exposure to Google's internal developer tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
+Many years ago, I did a brief stint at Google–yes, I’m an ex-Googler or Xoogler. A lot has changed since then, but even that brief exposure to Google's internal tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
 
 <div style="margin: 2em;">
 <img src="/blog/exgoogler-campfire.jpg" style="max-width: 600px" alt="Ex-Googler's guide to dev tools" />
 </div>
 
-In other ways, however, Google's internal tools are awfully limited. In particular, nearly all of them are tightly coupled with Google's unique internal ecosystem. Unfortunately, that means you can't take them with you when you leave.
+In other ways, however, Google's internal tools are awfully limited. In particular, nearly all of them are tightly coupled with Google's internal environment. Unfortunately, that means you can't take them with you when you leave.
 
 The Google diaspora has seeded so many other organizations with amazing talented people who bring lessons learned from working inside one of the world's leading technology organizations. But adapting to programming outside of Google can be tough, especially when you've come to rely on tools you no longer have at your disposal.
 
-Over the years, I've learned from my own experience and the experience of lots of others who have left Google. Many of Sourcegraph's early customers began with an ex-Googler missing code search after leaving Google. I worked closely with these people to understand the gap they were trying to fill, so that we could build Sourcegraph to meet their needs. Over time, patterns emerged in terms of how ex-Googlers sought to introduce new dev tools into their organizations, inspired by their experience with dev tools at Google. Some were successful and others were not.
+Over the years, I've learned from my own experience and the experience of lots of others who have left Google. Many of Sourcegraph's early customers began with an Xoogler missing code search after leaving Google. I worked closely with these people to understand the gap they were trying to fill, so that we could build Sourcegraph to meet their needs. Over time, patterns emerged in terms of how ex-Googlers sought to introduce new dev tools into their organizations, inspired by their experience with dev tools at Google. Some were successful and others were not.
 
-I thought it would be helpful to write a guide to dev tools outside of Google for the ex-Googler, written with an eye toward pragmatism and practicality. No doubt many ex-Googlers wish they could simply clone the dev tools ecosystem inside of Google to their new company, but you can't boil the ocean. Here is my take on where you should start and a general path I think ex-Googlers can take to find the tools that will make them—and their new teams—as productive as possible
+I thought it would be helpful to write a guide to dev tools outside of Google for the ex-Googler, written with an eye toward pragmatism and practicality. No doubt many ex-Googlers wish they could simply clone the Google internal environment to their new company, but you can't boil the ocean. Here is my take on where you should start and a general path I think ex-Googlers can take to find the tools that will make them—and their new teams—as productive as possible
 
-## The software development lifecycle
+## The software development lifecycle with and without Google internal tools
 
 If you recently left Google to join another company, you probably have this overall sense of frustration that you're not as productive as you used to be. You feel you need to change *something*, but what is it? As a first step, you should think about what you do day to day and identify where the pain is coming from.
 
@@ -57,7 +59,7 @@ To improve your productivity, you need to find better tools. There's a useful Gi
 
 In your first month, don't try to change anything. Just listen and learn the ropes.
 
-As a new member of the team, you likely don't have the influence or authority to change *all* the tools your team uses. Moreover, you also lack knowledge—knowledge of how and why your new team behaves the way it does and why it uses its current set of tools. Simply copy-pasting whatever worked for Google is not necessarily going to work for your new team. So learn what *is* working for your new team along with what isn't.
+As a new member of the team, you likely don't have the influence or authority to change *all* the tools your team uses. Moreover, you also lack knowledge—knowledge of how and why your new team behaves the way it does and why it uses its current set of tools. Simply copy-pasting Google internal tools is not necessarily going to work for your new team. So learn what *is* working for your new team along with what isn't.
 
 ## Low-hanging fruit
 
@@ -144,7 +146,7 @@ Once you're ready to slay the dragon, you should understand there are a number o
 
 There's also <a href="https://yourbase.io/" rel="nofollow" target="_blank">YourBase</a>, which is not a build tool, but a CI service started by ex-Googler Yves Junqueira to bring super-fast and scalable builds to the world outside of Google, independent of what underlying build tool is used.
 
-## What it's all about
+## Operating like a Xoogler
 
 Google prioritizes developer experience and developer tools in a way unlike most other companies. Googlers and ex-Googlers have the benefit of firsthand experience of using first-class dev tools that add a huge amount of leverage to their natural talents and abilities.
 
