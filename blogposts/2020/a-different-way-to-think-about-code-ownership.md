@@ -1,7 +1,10 @@
 ---
-title: "A different way to think about code ownership"
+title: "Code ownership: Why we built a new tool for subscribing to file changes"
+externalTitle: 'Code ownership: A new perspective'
 author: Nick Snyder
 authorUrl: https://twitter.com/nickdsnyder
+description: "We’re rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
+externalDescription: "We’re rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
 publishDate: 2020-10-05
 tags: [blog]
 slug: a-different-way-to-think-about-code-ownership
@@ -11,11 +14,11 @@ published: true
 
 We’re [experimenting](https://github.com/sourcegraph/sourcegraph/pull/13838) with a new way to think about code ownership, and have built a new tool called [Codenotify](https://github.com/sourcegraph/codenotify). Codenotify enables developers to easily subscribe to file changes in a Git repository without creating the expectation that changes to those files are blocked on the subscriber’s review.
 
-## Defining the problem
+## Defining the code ownership problem
 
 We host all of [our code on GitHub](https://github.com/sourcegraph/), so up until now we have been using a GitHub [CODEOWNERS](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/about-code-owners) file in each repository. When someone opens a pull request, GitHub will look at the CODEOWNERS file to determine which reviewers to automatically add.
 
-As our team has grown over the past year, I started to observe patterns that made me think that the way we assigned code reviewers was flawed.
+As our team has grown over the past year, I started to observe patterns in code ownership problems that made me think that the way we assigned code reviewers was flawed.
 
 - Pull requests that touched multiple files of different kinds and in multiple places would sometimes end up with a large list of automatically added reviews.
 - Reviewers wouldn’t review all the changes they were notified about because it wasn’t clear if their personal review was relevant (for example: they may have gotten notified because they are on the team that owns the code, but aren’t the best reviewer for that particular change).
@@ -28,7 +31,7 @@ My diagnosis was that there were two problems:
 
 ## Validation
 
-I had a hypothesis—that we needed something other than CODEOWNERS—but it needed validation. Was the team feeling the same pains and observing the same patterns as I was? Was continuing to use CODEOWNERS a viable solution moving forward?
+I had a hypothesis—that we needed something other than CODEOWNERS to create code ownership—but it needed validation. Was the team feeling the same pains and observing the same patterns as I was? Was continuing to use CODEOWNERS a viable solution moving forward?
 
 To get the sentiment of the team, [I opened a pull request that proposed deleting CODEOWNERS with my reasons](https://github.com/sourcegraph/sourcegraph/pull/11718) and asked the entire team to submit anonymous feedback. Here were the results:
 
@@ -48,7 +51,7 @@ It was clear we needed _something_, but CODEOWNERS didn’t do exactly what we n
 
 ## Exploring alternatives
 
-There was enough evidence that a problem existed to justify exploring alternatives.
+There was enough evidence that a code ownership problem existed to justify exploring alternatives.
 
 I found [Fullstory’s blog post about how they ran into similar problems with CODEOWNERS and ended up creating a bot](https://bionic.fullstory.com/taming-github-codeowners-with-bots/). I would have loved to experiment with using their bot, but unfortunately it was not open source.
 
@@ -74,10 +77,10 @@ Codenotify rules and files are familiar in syntax to CODEOWNERS, but simpler to 
 If you want to learn more about Codenotify or try it out for yourself, then the project's <a href="https://sourcegraph.com/github.com/sourcegraph/codenotify/-/blob/README.md">README</a> has everything you need to know!
 </p>
 
-## Starting our experiment
+## Starting our code ownership experiment
 
 After I had a working prototype of Codenotify, it was time to actually experiment. Experimentation is a great way to discover unforeseen costs and benefits, and learn whether hypothetical problems are problems in practice.
 
 [We deleted our CODEOWNERS file on September 16, 2020](https://github.com/sourcegraph/sourcegraph/pull/13838), and teammates have been [adding CODENOTIFY files](https://sourcegraph.com/search?q=r%3A%5Egithub.com%2Fsourcegraph%2F%28sourcegraph%7Cabout%29%24+f%3ACODENOTIFY+count%3A1000&patternType=literal) ever since.
 
-At the end of October I will check in with the team to see how they are feeling about this experiment after having lived with the change for over a month. The exciting thing is that no matter what the outcome is, we will have learned something new.
+At the end of October I will check in with the team to see how they are feeling about this code ownership experiment after having lived with the change for over a month. The exciting thing is that no matter what the outcome is, we will have learned something new.
