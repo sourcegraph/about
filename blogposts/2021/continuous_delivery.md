@@ -109,11 +109,11 @@ At Sourcegraph, one way we make this easier is by using [feature flags](https://
 
 The name of the game is compactness: you want a short feedback loop and a small scope of work. If something goes wrong after you ship a small change, then it’s easier to diagnose and fix. If you only ship big chunks of code, which could contain hundreds of files, then repair will be harder.
 
-We’ve had the privilege of being able to model this on cloud Search. We release continuously to our cloud Search product, meaning the engineers working on the self-hosted version can see and use cloud Search’s tight feedback loop. They can get the benefits of continuous delivery before deploying those changes to the self-hosted version.
+We’ve had the privilege of being able to model this on Sourcegraph Cloud. We release continuously to Cloud, meaning the engineers working on the self-hosted version can see and use Cloud's tight feedback loop. They can get the benefits of continuous delivery before deploying those changes to the self-hosted version.
 
 Not every company will be able to replicate this system–cloud services are costly after all, and your business model might not facilitate a cloud version. It’s worth considering, however, because engineers expect and benefit from a fast feedback loop.
 
-If you can’t, you can at least build a dog food environment; we have one that’s a staging environment for cloud Search. We deploy to it constantly, and give engineers permission to let it be unstable and offer no guarantees for uptime. Our engineers basically have free reign over this environment and can test anything they want.
+If you can’t, you can at least build a dog food environment; we have one that’s a staging environment for Sourcegraph Cloud. We deploy to it constantly, and give engineers permission to let it be unstable and offer no guarantees for uptime. Our engineers basically have free reign over this environment and can test anything they want.
 
 ### Principle 2: Releases should be uneventful
 
