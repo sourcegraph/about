@@ -15,9 +15,9 @@ socialImage:
 
 In part one, we talked about release anxiety and the twin pressures that create it: the pressure to improve and the pressure to protect. By the end of the post, you likely had a solution in mind, or at least you thought you did: continuous deployment and/or delivery.
 
-Continuous deployment is when engineering teams deploy code changes frequently via automated tools; continuous delivery, something a little different, is when engineering teams build software such that it is always in a releasable state.
+Continuous deployment is when engineering teams deploy code changes frequently via automated tools; continuous delivery, something a little different, is when engineering teams build software so that it's always in a releasable state.
 
-Continuity is the dream: if deadlines cause anxiety, then why not get rid of deadlines? By releasing software continuously, you both ensure each code change can make it in and ensure each code will have the time to get tested and inspected.
+Continuity is the dream: if deadlines cause anxiety, then why not get rid of deadlines? By releasing software continuously, you both ensure each code change can make it in and ensure each code change will have the time to get tested and inspected.
 
 And yet, there are limitations.
 
@@ -83,7 +83,7 @@ You’re on their schedule. Released does not equal fixed.
 
 That doubly applies when you consider how many different customers have customized their deployments and environments. While you can make it somewhat easier by building those variations into your test matrix, as a general rule, the more variations and customizations a customer has, the harder the upgrade process will be.
 
-Keep in mind that release anxiety doesn’t only apply to you–it applies to your customers. If your releases cause anxiety among your team–the people who know the product best–then the release and upgrade process probably causes anxiety amongst your customers, too. They might have to rely on customer support and otherwise take a lot of time to upgrade.
+Keep in mind that release anxiety doesn’t only apply to you–it applies to your customers. If your releases cause anxiety among your team–the people who know the product best–then the release and upgrade process probably causes anxiety amongst your customers, too. They might have to rely on your customer support team and otherwise take a lot of time to upgrade.
 
 If it’s too costly, both in terms of anxiety and effort, they might think twice about upgrading to the next release. One solution to this is a [managed instance plan](https://docs.sourcegraph.com/admin/install/managed).
 
@@ -103,9 +103,9 @@ Even if you can’t deploy continuously, you can still embrace the idea that cod
 
 Main should always be releasable but that doesn’t mean every “releasable” PR is polished. Break feature work into multiple PRs that your team can then review and merge over days or weeks.
 
-The goal is to deliver continuous pieces of improvement rather than big chunks of functionality. Regularly sk yourself: “Can this work be broken down into smaller pieces?” The smaller the iteration, the better.
+The goal is to deliver continuous pieces of improvement rather than big chunks of functionality. Regularly ask yourself: “Can this work be broken down into smaller pieces?” The smaller the iteration, the better.
 
-At Sourcegraph, one way we make this easier is by using feature flags. Feature flags determine whether a piece of functionality is active or not. You can put work behind a feature flag that hides it until it’s ready for release. That way, it goes through your continuous integration pipeline that runs all your tests. You can continuously ship value without risking unnecessary exposure.
+At Sourcegraph, one way we make this easier is by using [feature flags](https://about.sourcegraph.com/podcast/ivar-egil-osthus/). Feature flags determine whether a piece of functionality is active or not. You can put work behind a feature flag that hides it until it’s ready for release. That way, it goes through your continuous integration pipeline that runs all your tests. You can continuously ship value without risking unnecessary exposure.
 
 The name of the game is compactness: you want a short feedback loop and a small scope of work. If something goes wrong after you ship a small change, then it’s easier to diagnose and fix. If you only ship big chunks of code, which could contain hundreds of files, then repair will be harder.
 
@@ -143,7 +143,7 @@ Your ultimate metric of success won’t be a poll of emotions among your teammat
 
 A key aspect of continuous deployment and delivery that’s just as available to on-prem and self-hosted environments as SaaS is automation and testing. Even if you release once a month, manual work should still be seen as a nuisance to reduce or eliminate. Without automation, you’re reliant on the heroics of individual engineers, which isn’t scalable.
 
-The process of introducing automation is an investment with a high upfront cost and higher sum of returns. At Sourcegraph, in 2019, it took a person an entire week or two to handle a release; now, thanks to our [developer experience team](https://handbook.sourcegraph.com/engineering/enablement/dev-experience), automation takes care of it in just a few hours.
+The process of introducing automation is an investment with a high upfront cost and higher sum of returns. At Sourcegraph, in 2019, it took a person an entire week or two to handle a release; thanks to what was then called the Distribution team (and has since split into Delivery and Developer Experience), automation takes care of it in just a few hours.
 
 Automation, however, has its limitations. As Fitz writes in his essay on continuous deployment, “no automated tests are as brutal, random, malicious, ignorant or aggressive as the sum of all your users will be.”
 
