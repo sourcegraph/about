@@ -55,7 +55,7 @@ These metrics, when combined with a wide dataset and observability tools, can ma
 
 _Want to learn more about facilitating high-performance teams? [Listen to the full podcast](/podcast/charity-majors/)._
 
-## More posts like this 
+## More posts like this
 
 - [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
 - [How we used universal code search to eliminate secrets from our codebase](https://about.sourcegraph.com/blog/eliminate-secrets-from-codebase-with-universal-code-search/)
