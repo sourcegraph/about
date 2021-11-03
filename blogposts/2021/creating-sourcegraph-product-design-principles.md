@@ -19,7 +19,7 @@ As we’ve grown over the last few months, the Sourcegraph design and product te
 
 The design and product teams were at an inflection point. That’s why we decided it was time to come together to define our product design principles. I’m going to go into how we did this and what principles we settled on, but first I’ll cover some basics:
 
-## What are product design principles? 
+## What are product design principles?
 
 Product design principles are a set of statements co-created by the team to express a shared vision and values for the product.
 
