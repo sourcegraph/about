@@ -1,8 +1,10 @@
 ---
 title: 'Monitoring is not enough: For high-performing development teams you need observability tools'
+externalTitle: 'Observability tools for high-performing development'
 author: Kevin Graham
 authorUrl:
 description: "Observability and tracking the right metrics are critical to development teams' success. We chatted to Charity Majors of Honeycomb about bridging the gap between dev and ops, and making software more comprehensible to everyone."
+externalDescription: 'Observability tools, designed for distributed systems and microservices architectures, are necessary for modern software development: here’s why.'
 publishDate: 2021-06-04T18:00-07:00
 tags: [blog]
 slug: role-of-observability-tools-high-performing-development-teams
@@ -13,7 +15,7 @@ published: true
 
 ![Facilitating high-performing teams](https://sourcegraphstatic.com/blog/high-performing-development-teams-observability.gif)
 
-As code continues to grow in complexity, legacy methods for predicting system failures are no longer enough. You need modern observability and monitoring tools designed for highly distributed systems and microservices architectures to bring development and operation teams together more effectively.
+As code continues to grow in complexity, legacy methods for predicting system failures are no longer enough. You need modern monitoring and observability tools designed for highly distributed systems and microservices architectures to bring development and operation teams together more effectively.
 
 During a recent [Sourcegraph podcast episode](/podcast/charity-majors/), [Charity Majors](https://www.linkedin.com/in/charity-majors/), Founder and CTO of [Honeycomb](https://www.honeycomb.io/) spoke with Sourcegraph Cofounder and CTO [Beyang Liu](https://handbook.sourcegraph.com/company/team#beyang-liu) about the impact of observability and monitoring on development teams.
 
@@ -23,7 +25,7 @@ Orgs have historically relied on telemetry and monitoring tools to predict and s
 
 > "Many times, when an app is down and you have to figure out what's going on, it’s a very manual process. You've got your top lists of metrics and your defined questions to monitor, but if those don't indicate the problem, you're looking for a needle in a haystack." – Charity
 
-Enter observability tools: A way to deal with unknown unknowns or the situations you cannot predict beforehand. While most monitoring tools measure specific data points to know when something is wrong, observability tools can track hundreds of different data points to provide more context and help surface the reason behind failures. Furthermore, by shifting away from the emphasis on the system itself when collecting data towards the user experience, it's far easier to trace issues back to their source.
+Enter observability tools: A way to deal with unknown unknowns or the situations you cannot predict beforehand. While most monitoring tools measure specific data points to know when something is wrong, observability tools can track hundreds of different data points to provide more context and help surface the reason behind failures. Furthermore, by shifting away from the emphasis on the system itself when collecting data towards the user experience, observability tools make it far easier to trace issues back to their source.
 
 > "At a high level, observability is being able to ask any question of your systems and understanding any state that the system has gotten itself into, without having any prior knowledge of it, without having seen a break before, and without shipping any custom code to handle the question you're trying to ask." – Charity
 
@@ -49,6 +51,12 @@ The metrics Charity finds most important are:
 - The time from merging code until the build reaches production
 - The time to recover from outages
 
-These metrics, when combined with a wide dataset, can make complex systems much more comprehensible for new and experienced developers alike. This leads to more effective teams because it's easier to write and debug software when the feedback loop for developers is significantly shorter.
+These metrics, when combined with a wide dataset and observability tools, can make complex systems much more comprehensible for new and experienced developers alike. This leads to more effective teams because it's easier to write and debug software when the feedback loop for developers is significantly shorter.
 
 _Want to learn more about facilitating high-performance teams? [Listen to the full podcast](/podcast/charity-majors/)._
+
+## More posts like this 
+
+- [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
+- [How we used universal code search to eliminate secrets from our codebase](https://about.sourcegraph.com/blog/eliminate-secrets-from-codebase-with-universal-code-search/)
+- [Accessibility, observability, and sustainability: Dev Tool Time with Liz Fong-Jones](https://about.sourcegraph.com/blog/dev-tool-time-liz-fong-jones/)
