@@ -74,7 +74,7 @@ In his VimConf 2020 talk, ["Vim Speed and Excellence"](https://www.youtube.com/w
 - [Ansible](https://www.ansible.com/)
 - [Audio Technica microphones](https://www.audio-technica.com/en-us/microphones/wired)
 - [Dvorak keyboard layout](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout)
-- [Elgato capture card](https://www.elgato.com/en/game-capture-4k60-s-plus) - is this the right one?
+- [Elgato capture card](https://www.elgato.com/en/game-capture-4k60-s-plus)
 - [GIMP](https://www.gimp.org/)
 - [GNU Stow](https://www.gnu.org/software/stow/)
 - [Git worktrees](https://git-scm.com/docs/git-worktree)
