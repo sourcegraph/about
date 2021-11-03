@@ -15,13 +15,13 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxi
 
 ![Release anxiety graphic](https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png)
 
-“Don’t release to prod on Fridays”–a saying that might as well be sticky-noted to every engineer’s monitor. It’s a joke that masks something pretty serious: engineers don’t feel confident in their ability to deploy and walk away from their desks.
+“Don’t release to prod on Fridays” is a saying that might as well be sticky-noted to every engineer’s monitor. It’s a joke that masks something pretty serious: engineers don’t feel confident in their ability to deploy and walk away from their desks.
 
 The authors of _[The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/1942788290/)_ compared this fear to the instinct animals have to avoid danger, writing that “everyone is moving their changes as far away from Friday as possible, like woodland creatures running away from a forest fire.”
 
 But our workplaces should, ideally, never resemble forest fires. The result of impending fire is release anxiety–when engineers feel vigilant, nervous, and wary of upcoming releases and the release process in general.
 
-Sourcegraph, at least in this way, is not unique. Our engineers get anxious, too (one of our engineers, [Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey-hehim), wrote an entire [RFC](https://handbook.sourcegraph.com/communication/rfcs) on the subject). Where we are unique, however, is our concurrent release strategies and our methods for handling them. For our self-hosted product, we have a monthly release schedule; for our cloud product on sourcegraph.com, we release continuously.
+Sourcegraph, at least in this way, is not unique. Our engineers get anxious, too (one of our engineers, [Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey-hehim), wrote an entire [RFC](https://handbook.sourcegraph.com/communication/rfcs) on the subject). Where we are unique, however, is our concurrent release strategies and our methods for handling them. For our [self-hosted product](https://about.sourcegraph.com/#get-started), we have a monthly release schedule; for our cloud product on [sourcegraph.com](https://sourcegraph.com/), we release continuously.
 
 We experience the benefits and the drawbacks of both setups and the unique anxieties of each–lucky us! In this post, we’ll share our philosophy for releases and explain how you can relieve release anxiety.
 
@@ -42,7 +42,7 @@ In software, especially if you’re in a startup environment, there’s a consta
 
 This pressure comes both from the external expectations of your market and your customers as well as internal expectations from your company’s leadership. Often, your ability to develop and submit code changes is one of your, or one of your team’s, OKRs, meaning your [career progression](https://about.sourcegraph.com/blog/software-engineer-career-ladder/) can become dependent, in part, on the release cycle.
 
-Downstream, that push results in a pressure applied to every release. Release anxiety is likely to get out of hand if every release carries the weight of the product’s future. In one sense, this anxiety is neurotic–one release isn’t going to kill your company; in another sense, it’s all too real–an important customer may very well be on the other end of a release, waiting for the change they asked for.
+Downstream, that push results in a pressure applied to every release. Release anxiety is likely to get out of hand if every release carries the weight of the product’s future. In one sense, this anxiety is neurotic–one release isn’t going to kill your company. In another sense, it’s all too real–an important customer may very well be on the other end of a release, waiting for the change they asked for.
 
 For engineers working on our [Batch Changes](https://about.sourcegraph.com/batch-changes/) and [Code Insights](https://docs.sourcegraph.com/code_insights#code-insights-beta) features, feedback is only available after a monthly release because these features are only available in the self-hosted product.
 
