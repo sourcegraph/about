@@ -1,19 +1,20 @@
 import { graphql, PageProps } from 'gatsby'
 import * as React from 'react'
-import BlogHeadLinks from '../components/blog/BlogHeadLinks'
-import { PostsListPage } from '../components/blog/PostsListPage'
 import { BLOG_TYPE_TO_INFO, BlogType } from '../components/blog/postTypes'
+import { PostsListPage } from '../components/blog/PostsListPage'
+
+// TODOS:
+// -[] Replace PostListPage w / subcomponents
+// -[] Add featured video that is most recent
+// -[] Add hubspot form
+// -[] Add list of all guests, even without recaps
 
 export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
     <PostsListPage
         blogInfo={BLOG_TYPE_TO_INFO[BlogType.DTT]}
         posts={props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)}
         location={props.location}
-    >
-        <div className="d-flex flex-column align-items-center">
-            <BlogHeadLinks />
-        </div>
-    </PostsListPage>
+    />
 )
 
 export default Page
