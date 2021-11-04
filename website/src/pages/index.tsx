@@ -42,7 +42,7 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </div>
-            <CustomerLogosSectionAnimated showButton={true} className="pt-5" />
+            <CustomerLogosSectionAnimated showButton={true} showSection={true} className="pt-5" />
             <ContentSection className="pt-6 mt-3 d-none d-sm-block">
                 <div className="home__screenshot"></div>
             </ContentSection>

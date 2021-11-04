@@ -11,16 +11,12 @@ const CareersPage = props => {
     const chevronWidth = 20
 
     function openFlyout(benefit) {
-        console.log('#' + benefit)
         const flyout = document.querySelector('#' + benefit)
-        console.log('open ', flyout)
         flyout.style.display = 'block'
     }
 
     function closeFlyout(benefit) {
-        console.log(close + '#' + benefit)
         const flyout = document.querySelector('#' + benefit)
-        console.log('close ', flyout)
         flyout.style.display = 'none'
     }
 
@@ -140,7 +136,7 @@ const CareersPage = props => {
                                 You will solve thrilling problems as a member of the world's most-wanted engineering
                                 teams. And grow your roots in an all-remote diverse ecosystem.
                             </p>
-                            <Link className="btn btn-dark my-2" to="#" title="Talent grows here">
+                            <Link className="btn btn-primary my-2" to="#" title="Talent grows here">
                                 Explore all jobs
                                 <ArrowRightIcon />
                             </Link>
@@ -203,7 +199,7 @@ const CareersPage = props => {
                     </div>
                 </ContentSection>
 
-                <div className="mt-8 bg-dark">
+                <div className="mt-8 py-6 bg-dark">
                     <ContentSection className="benefits">
                         <div className="row">
                             <div className="col-lg-12">
@@ -385,20 +381,20 @@ const CareersPage = props => {
 
                 <ContentSection className="values mt-8 mb-6">
                     <div className="row">
-                        <div className="col-lg-9">
+                        <div className="col-lg-8">
                             <h1 className="font-size-extra-large">Values</h1>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-9">
+                        <div className="col-lg-8">
                             <h1 className="font-size-extra-large">&</h1>
                         </div>
-                        <div className="col-lg-2">
+                        <div className="col-lg-2 ml-7">
                             <img src="../Culture1.png" />
                         </div>
                     </div>
                     <div className="row mt-2">
-                        <div className="col-lg-5">
+                        <div className="col-lg-4">
                             <h3 className="font-weight-bold">Be Customer Driven</h3>
                             <p className="mt-4">
                                 You proactively work on the right things by continuously orienting your goals around
@@ -412,7 +408,7 @@ const CareersPage = props => {
                                 create shared success, trust, and belonging.
                             </p>
                         </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-2 ml-7">
                             <img src="../Culture2.png" />
                         </div>
                     </div>
@@ -423,7 +419,7 @@ const CareersPage = props => {
                         <div className="col-lg-4 mt-8">
                             <h1 className="font-size-extra-large">Culture</h1>
                         </div>
-                        <div className="col-lg-4 mt-4">
+                        <div className="col-lg-4 mt-4 pl-6">
                             <h3 className="font-weight-bold">High Agency</h3>
                             <p className="mt-4">
                                 You have the power and the responsibility to improve Sourcegraph as a company and as a
@@ -446,7 +442,7 @@ const CareersPage = props => {
                                 and community.
                             </p>
                         </div>
-                        <div className="col-lg-4 mt-4">
+                        <div className="col-lg-4 mt-4 pl-6">
                             <h3 className="font-weight-bold">Open and transparent</h3>
                             <p className="mt-4">You proactively communicate in an open and transparent way.</p>
                         </div>
@@ -507,7 +503,7 @@ const CareersPage = props => {
                                 enim nulla aliquet porttitor.
                             </p>
                         </div>
-                        <CustomerLogosSectionAnimated showButton={true} className="pt-5" />
+                        <CustomerLogosSectionAnimated showButton={true} showSection={false} className="pt-5" />
                     </div>
                 </ContentSection>
 

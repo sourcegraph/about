@@ -25,6 +25,14 @@
     .scrollable-container {
         height: 450px;
         overflow-y: auto;
+        /* Hide scrollbar for IE, Edge and Firefox */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
     }
 
     .job-link {
@@ -39,7 +47,7 @@
     }
 
     .bg-dark {
-        background-color: $dark-115;
+        background-color: $dark-13;
         color: $white;
     }
 
@@ -79,6 +87,7 @@
             cursor: pointer;
             &:hover {
                 text-decoration: underline;
+                text-decoration-thickness: from-font;
                 color: $red-2;
             }
             .icon {
@@ -122,7 +131,6 @@
     .flyout {
         font-family: $font-family-sans-serif;
         display: none;
-        border: 1px solid $black;
         width: 458px;
         position: absolute;
         background-color: $pink-2;
