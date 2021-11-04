@@ -9,6 +9,7 @@ slug: dev-tool-time-paul-jolly
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/dev-tool-time-paul-jolly-hero.jpg
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/dev-tool-time/dev-tool-time-paul-jolly-hero.jpg
 published: true
+youtube: 'IBHjKNnEM1Q'
 ---
 
 When Paul Jolly, maintainer on the CUE project and co-creator of Play with Go, joined us for Dev Tool Time on September 15, 2021, he toured us through a workflow that included an eight-year-old laptop, excluded a chair, and involved extensive use of CUE, an open source data validation language.

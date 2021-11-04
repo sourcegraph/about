@@ -30,6 +30,8 @@ export interface Post {
         author?: string
         authorUrl?: string
         tags?: string[]
+        /* A Youtube id for a video to be embedded in the post. */
+        youtube?: string
         changelogItems?: {
             url: string
             category: string

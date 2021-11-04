@@ -1,0 +1,29 @@
+.featured-episode {
+}
+
+.featured-episode-container {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.dtt-updates {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.upcoming-episode {
+    background-color: lime;
+    flex: 1;
+    min-height: 10em;
+}
+
+.hubspot-form {
+    background-color: orange;
+    flex: 1;
+    min-height: 10em;
+}

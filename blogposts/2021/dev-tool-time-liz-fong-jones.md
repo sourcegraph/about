@@ -9,6 +9,7 @@ slug: dev-tool-time-liz-fong-jones
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-cover.jpg
 socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-cover.jpg
 published: true
+youtube: 'QlR9jdj0sa4'
 ---
 
 When [Liz Fong-Jones](https://www.lizthegrey.com/), Principal Developer Advocate at Honeycomb and experienced Site Reliability Engineer (SRE), joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on September 1, 2021, she shared how her setup and workflow bridge the current state of development and the future that’s already arriving.

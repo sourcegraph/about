@@ -9,6 +9,7 @@ slug: dev-tool-time-adam-gordon-bell
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/linkedin.jpg
 socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/linkedin.jpg
 published: true
+youtube: 'oPaPhFX7SeM'
 ---
 
 As a developer advocate, [Adam Gordon Bell](https://twitter.com/adamgordonbell) writes prose as a central part of his work. As a programmer, he wants the same experience writing prose that he has writing code, where linters and build pipelines help with consistency, formatting, and error checking. When Adam joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on September 29, 2021, he shared his favorite dev tools for writing and how Earthly helps keep his published writing high quality.
