@@ -5,11 +5,11 @@ externalDescription: 'Continuous delivery appears to be a solution to release an
 author: Nick Moore
 authorUrl: https://twitter.com/nickwritesit
 published: true
-publishDate: 2021-11-11T10:00-07:00
+publishDate: 2021-11-08T10:00-07:00
 tags: [blog]
 slug: continuous-delivery-mindset
-heroImage:
-socialImage:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png
 
 ## Continuous deployment: a solution with limitations
 
