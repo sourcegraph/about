@@ -23,7 +23,7 @@ But our workplaces should, ideally, never resemble forest fires. The result of i
 
 Sourcegraph, at least in this way, is not unique. Our engineers get anxious, too (one of our engineers, [Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey-hehim), wrote an entire [RFC](https://handbook.sourcegraph.com/communication/rfcs) on the subject). Where we are unique, however, is our concurrent release strategies and our methods for handling them. For our [self-hosted product](https://about.sourcegraph.com/#get-started), we have a monthly release schedule; for our cloud product on [sourcegraph.com](https://sourcegraph.com/), we release continuously.
 
-We experience the benefits and the drawbacks of both setups and the unique anxieties of each–lucky us! In this post, we’ll share our philosophy for releases and explain how you can relieve release anxiety.
+We experience the benefits and the drawbacks of both setups and the unique anxieties of each–lucky us! In this post, part one, we’ll explain the causes of release anxiety and in part two, we'll explain how to relieve release anxiety.
 
 ## The two-pronged cause of release anxiety
 
@@ -90,7 +90,7 @@ With these possibilities in mind, tension between those pushing for changes and 
 
 The existentialist philosopher Søren Kiergaard argued that anxiety is a result of human nature, writing in _[The Concept of Anxiety](https://www.amazon.com/dp/B00BNY0RYG/)_ that you have to “[learn] to be anxious so as not to be ruined either by never having been in anxiety or by sinking into it. Whoever has learned to be anxious in the right way has learned the ultimate.”
 
-Who knew a 19th century Danish philosopher had something to teach us about software? But his point is right: don’t try to eliminate anxiety; learn to be anxious in the right way, to the right degree, about the right things.
+Who knew a 19th century Danish philosopher had something to teach us about software development? But his point is right: don’t try to eliminate anxiety; learn to be anxious in the right way, to the right degree, about the right things.
 
 Anxiety is a sign you care. And ideally, we all care about what we produce every day. Anxiety is healthy in the right proportions, and with the right mindset, tooling, and practices, we might even be able to ship to prod on Fridays.
 
