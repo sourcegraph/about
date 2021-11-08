@@ -13,9 +13,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiet
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png
 ---
 
-## Continuous deployment: a solution with limitations
-
-In part one, we talked about release anxiety and the twin pressures that create it: the pressure to improve and the pressure to protect. By the end of the post, you likely had a solution in mind, or at least you thought you did: continuous deployment and/or delivery.
+In [part one](https://about.sourcegraph.com/blog/release-anxiety/), we talked about release anxiety and the twin pressures that create it: the pressure to improve and the pressure to protect. By the end of the post, you likely had a solution in mind, or at least you thought you did: continuous deployment and/or delivery.
 
 Continuous deployment is when engineering teams deploy code changes frequently via automated tools; continuous delivery, something a little different, is when engineering teams build software so that it's always in a releasable state.
 
@@ -54,12 +52,6 @@ The problem with continuous deployment is that it requires a SaaS environment. I
 But that’s not the reality for most companies. Despite the seeming dominance of SaaS, on-prem and self-hosted environments are not only still alive but thriving.
 
 According to a [Replicated and Dimensional Research study](https://www.replicated.com/blog/on-prem-sales-and-demand-are-rising/): 92% of companies indicate on-premises software sales are growing. That’s right, not declining or stabilizing–_growing_. In fact, their research shows customer demand for on-premises software actually equals that for public cloud. Not only is on-premises growing, but according to their research, 91% of customers report being satisfied with their on-premises software.
-
-So, let’s restate that:
-
-- More and more companies are selling and deploying on-premises software;
-- Demand for on-premises software matches demand for the seemingly much hotter market of cloud-based software; and
-- Most companies are happy with their on-premises software.
 
 This narrative violation isn’t the result of split camps, either. It’s not as though we have one camp using the public cloud and one camp sticking with on-prem. (Sourcegraph, alone, disproves this with our products being split among self-hosted and cloud environments).
 
