@@ -6,6 +6,7 @@ import { BlogType, BLOG_TYPE_TO_INFO, urlToPost } from '../components/blog/postT
 import { BlogHeader } from '../components/blog/BlogHeader'
 import { FeaturedEpisode } from '../components/blog/FeaturedEpisode'
 import { ContentSection } from '../components/content/ContentSection'
+import HubspotForm from '../components/HubspotForm'
 
 export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => {
     const posts = props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)
@@ -33,9 +34,11 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                 <div>
                     <p className="mb-1">
                         Sourcegraph engineers interview other devs in the community about their desk set up, favorite
-                        dev tools, productivity hacks, and more.
+                        dev tools, productivity hacks, and more. Episodes stream on Twitch every other Wednesday at 11AM
+                        PT//2PM ET//8PM CEST.
                     </p>
-                    <img src="/dtt_landing_page.jpg" alt="Dev Tool Time logo" style={{ maxWidth: '100%' }} />
+                    {/* Given the profusion dtt logos, we may want to remove this banner. */}
+                    {/* <img src="/dtt_landing_page.jpg" alt="Dev Tool Time logo" style={{ maxWidth: '100%' }} /> */}
                 </div>
                 <ContentSection className="py-5">
                     {' '}
@@ -53,19 +56,19 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                             key={posts[1].node.frontmatter.slug}
                             {...postDefaultProps}
                         />
-                        <FeaturedEpisode
-                            post={posts[2].node}
-                            url={urlToPost(posts[2].node, BLOG_TYPE_TO_INFO[BlogType.DTT])}
-                            key={posts[2].node.frontmatter.slug}
-                            {...postDefaultProps}
-                        />
+                        <div className="card p-4 hubspot-form">
+                            <HubspotForm
+                                portalId="2762526"
+                                formId="d59f5947-8f58-467b-8609-d095e9d8c9c7"
+                                campaignId="013t0000022mdYAAQ"
+                            />
+                        </div>
                     </div>
                 </ContentSection>
-                <section className="dtt-updates mb-6">
-                    <div className="upcoming-episode">Join us for ...</div>
-                    <div className="hubspot-form">Hubspot form</div>
+                <section>
+                    <h2>Other episodes:</h2>
+                    <PostsList blogInfo={BLOG_TYPE_TO_INFO[BlogType.DTT]} posts={posts.slice(2, -1)} />
                 </section>
-                <PostsList blogInfo={BLOG_TYPE_TO_INFO[BlogType.DTT]} posts={posts.slice(3, -1)} />
             </div>
         </Layout>
     )
