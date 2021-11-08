@@ -4,11 +4,12 @@ description: 'Amir Rajan, acclaimed indie game dev and co-creator of DragonRuby 
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-10-20T10:00-07:00
-tags: [blog]
+tags: [blog, dtt]
 slug: dev-tool-time-amir-rajan
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/amir-rajan.jpg
 socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/amir-rajan.jpg
 published: true
+youtube: 'au_rC39QyzM'
 ---
 
 Wrist pain and fatigue were the start of indie gave developer [Amir Rajan's](https://twitter.com/amirrajan/) journey in ergonomic hardware setups. As a dev and the co-creator of DragonRuby Game Toolkit, Amir needed to find a way to write code week to week, for years to come. When Amir joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time), he shared his setups over the years, the motivations between different pieces of hardware, and the software he uses to build games.

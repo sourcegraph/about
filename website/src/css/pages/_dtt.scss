@@ -1,15 +1,16 @@
-.featured-episode {
-}
-
 .featured-episode-container {
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
 
     @include media-breakpoint-down(sm) {
         flex-flow: column;
     }
+}
+
+.featured-episode {
+    flex: 1;
 }
 
 .dtt-updates {

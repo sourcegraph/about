@@ -17,6 +17,7 @@ export const FeaturedEpisode: React.FunctionComponent<Props> = ({
     titleClassName = '',
     titleLinkClassName = '',
     tag: Tag = 'div',
+    renderTitleAsLink = true,
 }) => {
     console.log(post.frontmatter.youtube)
     return (

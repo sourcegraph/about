@@ -11,11 +11,12 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
     const posts = props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)
     const postDefaultProps = {
         full: false,
-        className: 'posts-list__post card',
+        className: 'posts-list__post card featured-episode',
         headerClassName: 'card-header bg-white border-bottom-0 text-center',
         titleClassName: 'posts-list__post-title',
         titleLinkClassName: 'posts-list__post-title-link',
         tag: 'li',
+        renderTitleAsLink: true,
     }
     return (
         <Layout
@@ -45,7 +46,7 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                         key={posts[0].node.frontmatter.slug}
                         {...postDefaultProps}
                     />
-                    <div className="d-flex featured-episode-container">
+                    <div className="featured-episode-container">
                         <FeaturedEpisode
                             post={posts[1].node}
                             url={urlToPost(posts[1].node, BLOG_TYPE_TO_INFO[BlogType.DTT])}

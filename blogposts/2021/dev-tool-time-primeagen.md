@@ -4,11 +4,12 @@ description: 'ThePrimeagen, Senior Software Engineer at Netflix and Twitch Partn
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-11-03T10:00-07:00
-tags: [blog]
+tags: [blog, dtt]
 slug: dev-tool-time-theprimeagen
 heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/linkedin.jpg
 socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/linkedin.jpg
 published: true
+youtube: 'GXxvxSlzJdI'
 ---
 
 As a popular Twitch streamer and Vim enthusiast, ThePrimeagen is known for his fast-paced tmux and Neovim-focused workflow, shifting quickly between windows, buffers, and code chunks. When he joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on October 27, 2021, he shared his approach to reducing cognitive overhead in his dev workflow and showed how his custom configurations make it easier to think less and do more.
