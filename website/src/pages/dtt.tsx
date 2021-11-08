@@ -34,8 +34,9 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                 <div>
                     <p className="mb-1">
                         Sourcegraph engineers interview other devs in the community about their desk set up, favorite
-                        dev tools, productivity hacks, and more. Episodes stream on Twitch every other Wednesday at 11AM
-                        PT//2PM ET//8PM CEST.
+                        dev tools, productivity hacks, and more. Episodes stream on{' '}
+                        <a href="https://www.twitch.tv/sourcegraph">Twitch</a> every other Wednesday at 11AM PT//2PM
+                        ET//8PM CEST.
                     </p>
                     {/* Given the profusion dtt logos, we may want to remove this banner. */}
                     {/* <img src="/dtt_landing_page.jpg" alt="Dev Tool Time logo" style={{ maxWidth: '100%' }} /> */}
@@ -68,6 +69,10 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                 <section>
                     <h2>Other episodes:</h2>
                     <PostsList blogInfo={BLOG_TYPE_TO_INFO[BlogType.DTT]} posts={posts.slice(2, -1)} />
+                    <p>
+                        You can view the full archive of Dev Tool Time episodes on{' '}
+                        <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF">Youtube</a>.
+                    </p>
                 </section>
             </div>
         </Layout>
