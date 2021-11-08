@@ -9,9 +9,11 @@ published: true
 publishDate: 2021-11-08T10:00-07:00
 tags: [blog]
 slug: continuous-delivery-mindset
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/Hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/Hero.png
 ---
+
+!(Continuous delivery mindset graphic)[https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/Hero.png]
 
 In [part one](https://about.sourcegraph.com/blog/release-anxiety/), we talked about release anxiety and the twin pressures that create it: the pressure to improve and the pressure to protect. By the end of the post, you likely had a solution in mind, or at least you thought you did: continuous deployment and/or delivery.
 
