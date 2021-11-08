@@ -1,3 +1,4 @@
+---
 title: 'Continuous delivery: A cure for release anxiety?'
 description: 'Engineers are anxious and continuous delivery promises to help. But how practicial is it, really? In this post, we explore the limitations of continuous delivery as well as the lessons we can learn from it.'
 externalTitle: 'A continuous delivery mindset is the antidote to release anxiety'
@@ -10,6 +11,7 @@ tags: [blog]
 slug: continuous-delivery-mindset
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-anxiety-images/release-anxiety-hero.png
+---
 
 ## Continuous deployment: a solution with limitations
 
