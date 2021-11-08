@@ -23,7 +23,7 @@ But our workplaces should, ideally, never resemble forest fires. The result of i
 
 Sourcegraph, at least in this way, is not unique. Our engineers get anxious, too (one of our engineers, [Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey-hehim), wrote an entire [RFC](https://handbook.sourcegraph.com/communication/rfcs) on the subject). Where we are unique, however, is our concurrent release strategies and our methods for handling them. For our [self-hosted product](https://about.sourcegraph.com/#get-started), we have a monthly release schedule; for our cloud product on [sourcegraph.com](https://sourcegraph.com/), we release continuously.
 
-We experience the benefits and the drawbacks of both setups and the unique anxieties of each–lucky us! In this post, part one, we’ll explain the causes of release anxiety and in part two, we'll explain how to relieve release anxiety.
+We experience the benefits and the drawbacks of both setups and the unique anxieties of each–lucky us! In this post, part one, we’ll explain the causes of release anxiety and in [part two](https://about.sourcegraph.com/blog/continuous-delivery-mindset/), we'll explain how to relieve release anxiety.
 
 ## The two-pronged cause of release anxiety
 
@@ -94,7 +94,7 @@ Who knew a 19th century Danish philosopher had something to teach us about softw
 
 Anxiety is a sign you care. And ideally, we all care about what we produce every day. Anxiety is healthy in the right proportions, and with the right mindset, tooling, and practices, we might even be able to ship to prod on Fridays.
 
-In part two, we'll explore solutions to anxiety, including continuous deployment and delivery.
+In [part two](https://about.sourcegraph.com/blog/continuous-delivery-mindset/), we'll explore solutions to anxiety, including continuous deployment and delivery.
 
 _With thanks to [Jean du Plessis](https://handbook.sourcegraph.com/company/team#jean-du-plessis-hehim), [Dax McDonald](https://handbook.sourcegraph.com/company/team#dax-mcdonald-hehim), [Joel Kwartler](https://handbook.sourcegraph.com/company/team#joel-kwartler-hehim), and [Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey-hehim) for contributing insights to this post._
 
