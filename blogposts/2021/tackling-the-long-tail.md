@@ -20,7 +20,7 @@ our [quest to index the OSS universe](https://about.sourcegraph.com/blog/why-ind
 
 [Zoekt](https://github.com/sourcegraph/zoekt) is a code search engine that
 performs trigram-based regex search. Originally created by Han-Wen Niehuys, Zoekt is fast, easy to deploy, and easy to maintain, which makes it a great choice for
-our self-hosted customer deployments. [Sourcegraph is actually taking on maintainership of Zoekt, which you can read about here](ADD LINK).
+our self-hosted customer deployments. [Sourcegraph is actually taking on maintainership of Zoekt, which you can read about here](https://about.sourcegraph.com/blog/sourcegraph-accepting-zoekt-maintainership/).
 
 ## Why not just scale out?
 
