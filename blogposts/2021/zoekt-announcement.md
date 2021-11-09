@@ -1,6 +1,6 @@
 ---
-title: "Sourcegraph is accepting maintainership of Zoekt"
-description: "Today, we’re announcing that Sourcegraph is accepting maintainership of Zoekt, the prominent open source code search engine, from its creator, Han-Wen Nienhuys. This commitment ties directly into our mission of bringing code search to every developer in the world."
+title: 'Sourcegraph is accepting maintainership of Zoekt'
+description: 'Today, we’re announcing that Sourcegraph is accepting maintainership of Zoekt, the prominent open source code search engine, from its creator, Han-Wen Nienhuys. This commitment ties directly into our mission of bringing code search to every developer in the world.'
 author: Beyang Liu
 publishDate: 2021-11-09T00:00-07:00
 tags: [blog]
@@ -29,6 +29,7 @@ On this occasion, readers might appreciate a quick backstory on how Zoekt was cr
 You can hear Han-Wen tell more of the backstory in the [latest episode of the Sourcegraph Podcast](https://about.sourcegraph.com/podcast/han-wen-nienhuys/).
 
 As of today, [github.com/sourcegraph/zoekt](https://github.com/sourcegraph/zoekt) will become the active main repository for Zoekt development. In the spirit of code search and open source, we suggest every reader do two things:
+
 - Do a [regex search for zoekt\.\w+ lang:go on Sourcegraph](https://sourcegraph.com/search?q=context:global+zoekt%5C.%5Cw%2B+lang:go+count:1000&patternType=regexp). This conducts a regular expression search across the top 1 million open source repositories—using Zoekt trigram indexes—for usages of Zoekt as a package dependency.
 - Go to [github.com/sourcegraph/zoekt](https://github.com/google/zoekt) and spin up an instance of Zoekt yourself.
 
