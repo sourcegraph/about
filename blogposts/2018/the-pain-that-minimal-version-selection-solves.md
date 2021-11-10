@@ -118,4 +118,4 @@ Special thanks to Felix ([@felixfbecker](https://twitter.com/felixfbecker)) for 
 
 - [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
 - [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
-- [Optimizing a code intelligence commit graph (Part 1)](https://about.sourcegraph.com/blog/optimizing-a-code-intel-commit-graph/)
+- [Optimizing a code intelligence commit graph](https://about.sourcegraph.com/blog/optimizing-a-code-intel-commit-graph/)
