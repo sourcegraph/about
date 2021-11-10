@@ -93,4 +93,4 @@ So what will your path look like? Think about what brought you to tech and what 
 
 - [How we built our software engineering career framework](https://about.sourcegraph.com/blog/software-engineer-career-ladder/)
 - [Async, remote, and flexible: How 7 engineers rethought their work calendars](https://about.sourcegraph.com/blog/software-engineer-career-ladder/)
-- [mproving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
+- [Improving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
