@@ -13,7 +13,7 @@ published: true
 ---
 
 It doesn't matter whether you call it _Agile_, _Sprint_, _Shape Up_, or something
-else. he premise of iterative software development is this: until you've built the
+else. The premise of iterative software development is this: until you've built the
 product, you don't really know what it should look like or how to best build
 it. You've never used it, so how would you know how it works best? You also
 haven't built it yet, which means you don't have experience building it. Chances
