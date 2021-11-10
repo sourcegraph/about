@@ -1,7 +1,10 @@
 ---
 title: 'How we run end-to-end tests in Buildkite CI'
+externalTitle: 'End to end tests in Buildkite CI'
 author: 'Felix Becker'
 publishDate: 2018-09-14T09:00-07:00
+description: Here’s how we run end-to-end tests, an important part of Sourcegraph’s testing infrastructure, in Buildkite CI. 
+externalDescription: Here’s how we run end-to-end tests, an important part of Sourcegraph’s testing infrastructure, in Buildkite CI. 
 tags: [
   "blog"
 ]
@@ -10,7 +13,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/2z90IVNXxWqQgGggq4sOeO/3995
 published: true
 ---
 
-End-to-end tests are an important part of our testing infrastructure at Sourcegraph. At the top of the [testing pyramid](https://docs.google.com/presentation/d/15gNk21rjer3xo-b1ZqyQVGebOp_aPvHU3YH7YnOMxtE/edit#slide=id.g437663ce1_53_98), their job is to ensure key user flows work properly from the user interacting with the browser all the way to backend services that work behind the scenes. However, they pose a couple of unique challenges. If not done right, these lead to flakiness and developers learn not to trust test failures when they happen - resulting in real bugs going unfixed. How do we prevent this?
+End-to-end tests are an important part of our testing infrastructure at Sourcegraph. At the top of the [testing pyramid](https://docs.google.com/presentation/d/15gNk21rjer3xo-b1ZqyQVGebOp_aPvHU3YH7YnOMxtE/edit#slide=id.g437663ce1_53_98), end-to-end testing ensures key user flows work properly from the user interacting with the browser all the way to backend services that work behind the scenes. However, end-to-end tests pose a couple of unique challenges. If not done right, these lead to flakiness and developers learn not to trust test failures when they happen - resulting in real bugs going unfixed. How do we prevent this?
 
 ## A good end-to-end testing system
 
@@ -111,6 +114,12 @@ This is incredibly valuable to reveal why a test might have failed - for example
 
 ## Conclusion
 
-So far, this new system works well for us - confidence in tests has increased, and engineers feel more responsible to fix failures quickly.
+So far, this new end-to-end testing system works well for us - confidence in tests has increased, and engineers feel more responsible to fix failures quickly.
 
 Do you have interesting end-to-end testing stories? Tweet us [@sourcegraph](https://twitter.com/sourcegraph)!
+
+## More posts like this
+
+- [How we used universal code search to eliminate secrets from our codebase](https://about.sourcegraph.com/blog/eliminate-secrets-from-codebase-with-universal-code-search/)
+- [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Monitoring is not enough: For high-performing development teams you need observability tools](https://about.sourcegraph.com/blog/role-of-observability-tools-high-performing-development-teams/)
