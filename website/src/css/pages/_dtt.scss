@@ -1,3 +1,47 @@
+.dtt-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: center;
+    margin: auto;
+
+    @include media-breakpoint-down(sm) {
+        flex-flow: column-reverse;
+    }
+}
+
+.dtt-brand {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    max-width: 80%;
+}
+
+.dtt-logo {
+    flex: 1;
+    max-width: 10rem;
+    // max-width: 50%;
+}
+
+.dtt-description {
+    flex: 1;
+
+    p {
+        font-size: larger;
+    }
+
+    .upcoming-guest {
+        font-weight: bold;
+    }
+}
+
+.dtt-upcoming {
+    flex: 1;
+}
+
 .featured-episode-container {
     display: flex;
     flex-direction: row;

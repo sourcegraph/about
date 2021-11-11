@@ -7,6 +7,8 @@ import { BlogHeader } from '../components/blog/BlogHeader'
 import { FeaturedEpisode } from '../components/blog/FeaturedEpisode'
 import HubspotForm from '../components/HubspotForm'
 
+import Logo from '../../public/DevToolTimeLogo.svg'
+
 export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => {
     const posts = props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)
     const postDefaultProps = {
@@ -29,14 +31,28 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
             }}
         >
             <div className="container-lg">
-                <BlogHeader title={'Dev Tool Time'} baseUrl={'/dtt'} />
-                <div>
-                    <p className="mb-1">
-                        Sourcegraph engineers interview other devs in the community about their desk set up, favorite
-                        dev tools, productivity hacks, and more. Episodes stream on{' '}
-                        <a href="https://www.twitch.tv/sourcegraph">Twitch</a> every other Wednesday at 11AM PT//2PM
-                        ET//8PM CEST.
-                    </p>
+                <div className="dtt-header mt-4">
+                    <div className="dtt-brand">
+                        {/* <BlogHeader title={'Dev Tool Time'} baseUrl={'/dtt'} /> */}
+                        <p className="dtt-description mb-1">
+                            <p>
+                                Sourcegraph engineers interview other devs in the community about their desk set up,
+                                favorite dev tools, productivity hacks, and more. Episodes stream on{' '}
+                                <a href="https://www.twitch.tv/sourcegraph">Twitch</a> every other Wednesday at 11AM PT//2PM
+                                ET//8PM CEST.
+                            </p>
+                            <p className="upcoming-guest">Join us for a conversation with Roger Peppé, Software Engineer at InfluxData, on November 10, 2021</p>
+                        </p>
+                    </div>
+                    <img src={Logo} alt="Dev Tool Time Logo" className="dtt-logo" />
+                    {/* <div className="dtt-upcoming card">
+                        <h2 className="dtt-upcoming-title">Upcoming episodes</h2>
+                        <p>Join us for a conversation with Roger Peppé, Software Engineer at InfluxData, on November 10, 2021</p>
+                    </div> */}
+                    {/* <img
+                        className=""
+                        src="https://info.sourcegraph.com/hs-fs/hubfs/roger-peppe-Landing%20page.png?width=975&name=roger-peppe-Landing%20page.png"
+                    /> */}
                     {/* Given the profusion dtt logos, we may want to remove this banner. */}
                     {/* <img src="/dtt_landing_page.jpg" alt="Dev Tool Time logo" style={{ maxWidth: '100%' }} /> */}
                 </div>

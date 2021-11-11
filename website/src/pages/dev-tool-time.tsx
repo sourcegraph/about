@@ -4,10 +4,10 @@ import { BLOG_TYPE_TO_INFO, BlogType } from '../components/blog/postTypes'
 import { PostsListPage } from '../components/blog/PostsListPage'
 
 // TODOS:
-// -[] Replace PostListPage w / subcomponents
-// -[] Add featured video that is most recent
-// -[] Add hubspot form
-// -[] Add list of all guests, even without recaps
+// -[x] Replace PostListPage w / subcomponents
+// -[x] Add featured video that is most recent
+// -[x] Add hubspot form
+// -[x] Add list of all guests, even without recaps
 
 export const Page: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => (
     <PostsListPage
