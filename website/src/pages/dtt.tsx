@@ -38,10 +38,13 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                             <p>
                                 Sourcegraph engineers interview other devs in the community about their desk set up,
                                 favorite dev tools, productivity hacks, and more. Episodes stream on{' '}
-                                <a href="https://www.twitch.tv/sourcegraph">Twitch</a> every other Wednesday at 11AM PT//2PM
-                                ET//8PM CEST.
+                                <a href="https://www.twitch.tv/sourcegraph">Twitch</a> every other Wednesday at 11AM
+                                PT//2PM ET//8PM CEST.
                             </p>
-                            <p className="upcoming-guest">Join us for a conversation with Roger Peppé, Software Engineer at InfluxData, on November 10, 2021</p>
+                            <p className="upcoming-guest">
+                                Join us for a conversation with Roger Peppé, Software Engineer at InfluxData, on
+                                November 10, 2021
+                            </p>
                         </p>
                     </div>
                     <img src={Logo} alt="Dev Tool Time Logo" className="dtt-logo" />
