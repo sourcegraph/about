@@ -1,13 +1,13 @@
 ---
-title: ''
+title: 'Simplicity is worth paying for: Dev Tool Time with Roger Peppé'
 description: ''
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-11-17T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-roger-peppe
-heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/peppe/linkedin.jpg
-socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/peppe/linkedin.jpg
+heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/linkedin.png
+socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/linkedin.png
 published: true
 ---
 
@@ -17,7 +17,9 @@ You can watch the recording of this episode at the [bottom of this blog post](#W
 
 ## Hardware
 
-![Rog's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/peppe/hardware.jpg)
+![Rog's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/hardware.jpg)
+
+![Rog working outside](https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/working-outside2.jpg)
 
 ## Show notes
 
