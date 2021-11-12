@@ -1,6 +1,6 @@
 ---
 title: 'Simplicity is worth paying for: Dev Tool Time with Roger Peppé'
-description: ''
+description: 'Roger Peppé, Software Engineer at InfluxData, shares his standing desk setup, and how the Acme text editor and mouse chording drive his coding workflow.'
 author: Scott Bailey
 authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
 publishDate: 2021-11-17T10:00-07:00
@@ -11,15 +11,19 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/linked
 published: true
 ---
 
-Intro
+Many devs, especially those who love Vim and Emacs, carefully fine-tune their editor, terminal, and even OS configurations so that their hands rarely leave the keyboard. Roger Peppé, Software Engineer at InfluxData, took a different path, driven by the simplicity and power of the [Acme text editor](http://acme.cat-v.org/) and mouse chording. When Rog joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on November 10, 2021, he powerfully demonstrated a different model of text editing, which will seem at once familiar yet strange.
 
-You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Rog’s desk setup:
+You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Rog’s fully standing desk setup:
 
 ## Hardware
 
 ![Rog's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/hardware.jpg)
 
 ![Rog working outside](https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/working-outside2.jpg)
+
+## The simplicity of Acme
+
+## Between familiarity and strangeness
 
 ## Show notes
 
