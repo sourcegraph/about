@@ -35,13 +35,17 @@ As Rog shows, these patterns are remarkably powerful in Acme. In every window, t
 
 ## The simplicity of Acme
 
-For Rog, the driving benefit of Acme is its simplicity. As he notes, in Acme, everything is text and text is powerful. Any text could be executable, and you can type text almost anywhere in Acme. You aren't constrained to toolbars.
+For Rog, the driving benefit of Acme is its simplicity. As he notes, in Acme, everything is text and text is powerful. Any text could be executable, and you can type text almost anywhere in Acme. You aren't constrained to toolbars or a single command line, or even the mental model of there being a narrow area of UI that's interactive and command focused.
 
-TODO: EMBED A VIDEO OR BLOCKQUOTE OF ROG ON TEXT IS POWERFUL
+TODO: EMBED A VIDEO OR BLOCKQUOTE OF ROG ON TEXT IS POWERFUL OR CLIP OF ROG "TALKING TO EDITOR"
 
-Price - trade-off - no syntax highlighting, graphics, rich text, etc...
+You also aren't bound to memorize a plethora of keybindings to make you more efficient. While many people talk about keybindings being efficient, Rog finds his mouse just as efficient, and, perhaps, simpler to use. Three buttons are far fewer than the keys on a keyboard, and the combinations (chords) more limited.
 
-- Note the efficiency of mouse movements, as Roger says around 33:25.
+TODO: ROG'S STATEMENT ON MOUSE EFFICIENCY IS AROUND 33:25
+
+There are trade-offs though, and Rog notes that there is a price to pay for simplicity. Acme doesn't support syntax highlighting, graphics, or any sort of rich text. When asked what he might change with a magic wand, Rog mentions that making Acme work coherently with rich text would be great. He doesn't need syntax highlighting or an LSP, but bold would be nice if it made sense.
+
+Given his answer, we can go only guess that Acme feels like a gift, which has continued to give to him, year after year.
 
 ## Show notes
 
