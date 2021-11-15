@@ -1,7 +1,10 @@
 ---
-title: 'The pain that minimal version selection solves'
+title: 'Resolve Go dependencies with minimal version selection'
+externalTitle: 'How to resolve Go dependencies'
 author: 'Nick Snyder'
 publishDate: 2018-08-30T17:00-07:00
+description: 'Minimal version selection can help resolve Go dependencies. Learn how to use this methodology to produce high-fidelity builds by default.'
+externalDescription: 'Minimal version selection can help resolve Go dependencies. Learn how to use this methodology to produce high-fidelity builds by default.'
 tags: [
   "blog"
 ]
@@ -16,13 +19,13 @@ Minimal version selection has a lot of nice properties:
 
 - It is simple to understand and implement.
 - It is fast to compute because it avoids solving [Version-SAT](https://research.swtch.com/version-sat), which is [NP-Complete](https://en.wikipedia.org/wiki/NP-completeness).
-- It produces high-fidelity builds by default because the dependencies that a user builds are as close as possible to the ones the author developed against.
+- It produces high-fidelity builds by default because the Go dependencies that a user builds are as close as possible to the ones the author developed against.
 
 Many other popular dependency managers, like NPM, prefer to install the _latest_ version of dependencies by default. I will share a recent real-world example of the kind of pain that minimal version selection prevents.
 
 ## Background
 
-Sourcegraph recently [open sourced our browser extensions](/blog/sourcegraph-browser-extensions-are-now-open-source), but before we could, I needed to remove a transitive dependency on our private icons NPM package that contains licensed assets.
+Sourcegraph recently [open sourced our browser extensions](/blog/sourcegraph-browser-extensions-are-now-open-source), but before we could, I needed to remove a transitive Go dependency on our private icons NPM package that contains licensed assets.
 
 Before:
 
@@ -105,8 +108,14 @@ This experience was the most benign manifestation of this problem. It would have
 - NPM had updated more than one unrelated package.
 - Tests didn't catch the regression and my change was deployed to production.
 
-I am happy that this class of problem won't exist with Go modules, and I hope that other package managers evolve to solve these problems.
+I am happy that this class of dependency problem won't exist with Go modules, and I hope that other package managers evolve to solve these problems.
 
 ## Thanks
 
 Special thanks to Felix ([@felixfbecker](https://twitter.com/felixfbecker)) for ensuring that end-to-end tests must pass on staging before deploying to sourcegraph.com, discussing minimal version selection with me, authoring [a tool to create new NPM packages with the right boilerplate](https://github.com/sourcegraph/create), searching for workarounds to get the behavior I want out of npm, and ultimately filing detailed issues to drive change in the ecosystem ([#1156](https://npm.community/t/impossible-to-update-single-package-without-updating-its-dependencies/1156), [#2348](https://github.com/renovatebot/renovate/issues/2348)).
+
+## More posts like this 
+
+- [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
+- [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Optimizing a code intelligence commit graph](https://about.sourcegraph.com/blog/optimizing-a-code-intel-commit-graph/)
