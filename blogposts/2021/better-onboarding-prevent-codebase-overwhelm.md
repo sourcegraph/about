@@ -89,7 +89,7 @@ Adam added, “A huge part of onboarding into a Big Code environment is how we i
 
 ### Make sure everyone is using the same resources and tools
 
-Marek stated, “Sometimes when you’re reaching for a particular tool or library, you don’t even know if you have something in-house already or if you need to look externally. Code search makes it easier to look through your list of repositories to find what others have done.” 
+Marek stated, “Sometimes when you’re reaching for a particular tool or library, you don’t even know if you have something in-house already or if you need to look externally. Code search makes it easier to look through your list of repositories to find what others have done.”
 
 Ensuring it’s clear which tools are available and in use helps new developers quickly find their footing, familiarizing themselves with codebases and coding conventions and eliminating the need to start from scratch every time.
 
@@ -99,9 +99,10 @@ Solving for the issues inherent with the emergence of Big Code, together, is a v
 ## 3 engineering leaders on software engineer onboarding
 
 Now, we'll learn directly from engineering managers how best to onboard software engineers. Our interviews include:
+
 - [Limor Bergman](https://www.linkedin.com/in/limorbergman/), who is a former Director of Engineering at Digital Ocean, where she led the organizations responsible for Droplets, Kubernetes, Kernel, Performance, Systems, and Orchestration. She's now Director of Mentorship at PowerToFly, where she helps women grow their careers.
 - [Ryan Djurovich](https://www.linkedin.com/in/ryandjurovich/), who is a DevOps Manager at Xero, Australia's largest accounting software company.
-He leads the team responsible for developer infrastructure, experience, and tooling.
+  He leads the team responsible for developer infrastructure, experience, and tooling.
 - [Jean du Plessis](https://www.linkedin.com/in/jeandp/), who is a Director of Engineering at Sourcegraph, where he leads the Developer Insights organization, which includes the frontend platform, extensibility, code insights, and API docs teams.
 
 ## Help new hires see the bigger picture with multi-tiered onboarding
@@ -119,9 +120,9 @@ Individual teams should also think about how to onboard new members to the thing
 
 High-level context is the hardest to transfer. It’s difficult to document, because grokking the overall architecture means understanding how the pieces fit together and knowing what the core assumptions and tension points are. Even if you do a reasonable job with the documentation, chances are it will fall out of date.
 
-However, it's important to transfer such knowledge, including historical knowledge. Otherwise you can get into a position where no one is left on the team who feels confident making big changes, not just small, incremental ones. 
+However, it's important to transfer such knowledge, including historical knowledge. Otherwise you can get into a position where no one is left on the team who feels confident making big changes, not just small, incremental ones.
 
-Having a source of truth that captures not just code changes, but high-level discussions about the motivation behind changes is important, because it preserves the "why" for new members of the team who may need to understand it at some point down the road. 
+Having a source of truth that captures not just code changes, but high-level discussions about the motivation behind changes is important, because it preserves the "why" for new members of the team who may need to understand it at some point down the road.
 
 Jean shared: "This exact scenario played out for a new engineer recently. They love context and understanding the history behind decisions. Thankfully, Sourcegraph has this practice of putting [Requests for Comments (RFCs)](https://handbook.sourcegraph.com/communication/rfcs) together when we want to introduce any changes or make architectural decisions. We were able to refer to this document, which even predates my time, that gave context on these decisions. Because even the people who worked on it at the time eventually forget about it."
 
