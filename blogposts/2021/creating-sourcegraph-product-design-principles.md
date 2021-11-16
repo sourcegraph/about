@@ -1,8 +1,10 @@
 ---
-title: 'When gut instinct doesn’t scale: Creating Sourcegraph’s product design principles'
+title: 'How we created Sourcegraph’s product design principles'
+externalTitle: 'Product design principles at Sourcegraph'
 author: Quinn Keast
 authorUrl: https://quinnkeast.com
-description: 'Here’s how our rapidly growing all-remote product and design teams collaborated asynchronously to define Sourcegraph’s inclusive product design principles to help us scale consistently.'
+description: 'Gut instinct doesn’t scale. Here’s how our rapidly growing all-remote product and design teams collaborated asynchronously to define Sourcegraph’s inclusive product design principles to help us scale consistently.'
+externalDescription: 'Gut instinct doesn’t scale. Learn how an asynchronous, fully remote company built its product design principles.'
 heroImage: /blog/product-design-principles-hero.jpg
 socialImage: https://about.sourcegraph.com/blog/product-design-principles-hero.jpg
 publishDate: 2021-05-17T18:00-07:00
@@ -17,15 +19,15 @@ As we’ve grown over the last few months, the Sourcegraph design and product te
 
 The design and product teams were at an inflection point. That’s why we decided it was time to come together to define our product design principles. I’m going to go into how we did this and what principles we settled on, but first I’ll cover some basics:
 
-## What are design principles?
+## What are product design principles?
 
-Design principles are a set of statements co-created by the team to express a **shared vision and values** for the product.
+Product design principles are a set of statements co-created by the team to express a shared vision and values for the product.
 
-A strong set of design principles gives the team a way to make **consistent decisions** based on a shared idea of what we’re trying to achieve. They **introduce constraints** that help reduce ambiguity, particularly when there’s more than one possible solution to a given problem. They also give us a way to **capture our commitment to inclusion** at every step of the design process.
+A strong set of product design principles gives the team a way to make **consistent decisions** based on a shared idea of what we’re trying to achieve. They **introduce constraints** that help reduce ambiguity, particularly when there’s more than one possible solution to a given problem. They also give us a way to **capture our commitment to inclusion** at every step of the design process.
 
-## Who uses design principles?
+## Who uses product design principles?
 
-While they might be called design principles, they’re for everyone in the organization.
+While they might be called product design principles, they’re for everyone in the organization.
 
 Designers use design principles to guide their explorations and outcomes. Product managers use design principles to shape priorities and features. Developers use design principles as a lens to collaborate on design, from discovery to delivery.
 
@@ -35,7 +37,7 @@ Design principles and design patterns are often conflated. Where design principl
 
 Design principles don’t change often, as they reflect a core truth of who we are. Design patterns change over time to meet new needs, technology, and trends.
 
-## How we defined our design principles
+## How we defined our product design principles
 
 At Sourcegraph, we’re fully remote and globally distributed. Our product and design teams span 13 time zones.
 That’s why we prioritize asynchronous collaboration together with thoughtful moments of real-time collaboration.

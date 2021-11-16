@@ -63,7 +63,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                 <li>Free trial for enterprise features</li>
                             </ul>
                             <a className="d-inline-flex font-weight-bold" href="https://docs.sourcegraph.com">
-                                Learn about self-hosted vs. cloud features <ArrowRightIcon className="ml-1" />
+                                Learn about self-hosted vs. Cloud features <ArrowRightIcon className="ml-1" />
                             </a>
                         </div>
                     </div>

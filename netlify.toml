@@ -110,3 +110,9 @@ command = "yarn run build"
   to = "/contact/product-specialist"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/blog/better-onboarding-advice-from-engineering-leaders/"
+  to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm/"
+  status = 200
+  force = true

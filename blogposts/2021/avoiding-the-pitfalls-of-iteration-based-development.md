@@ -1,6 +1,8 @@
 ---
-title: 'Avoiding the pitfalls of iteration-based development, explained in 5 pull requests'
+title: 'How to avoid iterative software development mistakes, explained in 5 pull requests'
+externalTitle: 'Iterative software development and how to do it better'
 description: From "Automation" to "Campaigns" to "Batch Changes", this is the story of how we built (and rebuilt) our latest code search product, Batch Changes, and the lessons we learned along the way.
+externalDescription: Iterative software development is full of pitfalls but by examining a few illustrative pull requests, you can learn to avoid some of the most common mistakes.
 author: Thorsten Ball
 authorUrl: https://twitter.com/thorstenball
 publishDate: 2021-04-15T18:00+02:00
@@ -11,7 +13,7 @@ published: true
 ---
 
 It doesn't matter whether you call it _Agile_, _Sprint_, _Shape Up_, or something
-else. The premise of iteration-based work is this: until you've built the
+else. The premise of iterative software development is this: until you've built the
 product, you don't really know what it should look like or how to best build
 it. You've never used it, so how would you know how it works best? You also
 haven't built it yet, which means you don't have experience building it. Chances
@@ -51,8 +53,7 @@ to believe we built and shipped Batch Changes the way we did: building it
 twice, renaming it twice. But it is one of the most rewarding and
 customer-focused processes I've been a part of.
 
-The following five pull requests tell the story of how we avoided these two
-dangers — local maximums and the sunk cost fallacy — to build Batch Changes.
+The following five pull requests tell the story of how we embraced iterative software development and avoided these two dangers — local maximums and the sunk cost fallacy — to build Batch Changes.
 
 ## Pull request #1: Build one to throw away
 
@@ -122,8 +123,7 @@ gone with the old name for the feature (Automation), we decided to rename it.
 Take a look at [PR #3][pr3] for the first of many PRs in February 2020 that changed
 "[Aa]utomation" to "[Cc]ampaigns" in our codebase.
 
-What followed were months of fine-tuning, user testing, shipping, tweaking,
-_iterating_. We added more features, fixed a lot of bugs, and made things go faster.
+What followed were months of fine-tuning, user testing, shipping, tweaking–i.e. iterative software development. We added more features, fixed a lot of bugs, and made things go faster.
 
 ## Pull request #4: Switching to a declarative system
 
@@ -189,10 +189,11 @@ So, [rename it we did][pr5] and followed it up with the first official,
 non-alpha, non-beta, download-it-now-and-try-it launch of [Batch
 Changes][launch].
 
+## Commitment is the key to iterative software development
+
 Looking back over these five pull requests and at the past 1.5 years now, I'm
 still surprised. I know how easy it is to say, "but this is what we said we
-wanted to build," or "but we invested all that time!" I've worked in iterations
-all my life. Two week sprints, four weeks, Agile, Scrum, even (ugh) [SAFe][safe].
+wanted to build," or "but we invested all that time!" I've worked in iterative software development all my life. Two week sprints, four weeks, Agile, Scrum, even (ugh) [SAFe][safe].
 The danger of getting stuck and not knowing how to get out of it is always there.
 I'm still not quite sure how we avoided that trap. My best guess (and this
 _will_ sound cheesy) is commitment. Commitment to building an excellent
