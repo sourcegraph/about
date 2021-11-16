@@ -73,6 +73,16 @@ Our developers say that setting timers for new hires can help: if they aren’t 
 
 And that they know this is welcomed and okay. Because we’re fully remote at Sourcegraph, we also employ an onboarding buddy system, pairing people who usually aren’t in the same department, which can help measure how your team dynamic fits into the rest of the company.
 
+Safety extends beyond new engineers. Even senior engineers can suffer from impostor syndrome. Nearly everyone feels intimidated when diving into a new large codebase.
+
+Finding the right balance between past experience and new territory is crucial, and organizations that value this should go out of their way to create a welcoming culture and environment.
+
+For new hires, having a marker for "am I living up to expectations" in the first couple of weeks can ease their worries. It's often better to err on the side of having an easier onramp, due to all the pitfalls of onboarding.
+
+Remember, you hired someone because you thought they were excellent. So if they are struggling, you should figure out what might be throwing them off, or revisit your hiring processes if this is happening often.
+
+It's common for fast-growing startups to experience some churn and attrition, but if this is happening a lot, it's important for someone in the org to be asking these questions and sharing as much learning as they can while respecting individual privacy.
+
 ### Have a single source of truth
 
 Ongoing documentation, shared resources, open access, and keeping everything a new developer needs to know in a single source of truth (such as your company handbook or project management tool) helps address the complexity and volume of your org’s codebases.
@@ -96,27 +106,17 @@ Ensuring it’s clear which tools are available and in use helps new developers 
 Successful software engineer onboarding doesn’t just affect the quality of the work, but pushes a company forward by integrating new hires as an essential, valuable part of a team, significantly decreasing the time for new developers to be productive, motivated, and feel fulfilled in their work.
 Solving for the issues inherent with the emergence of Big Code, together, is a vital part of it.
 
-## 3 engineering leaders on software engineer onboarding
-
-Now, we'll learn directly from engineering managers how best to onboard software engineers. Our interviews include:
-
-- [Limor Bergman](https://www.linkedin.com/in/limorbergman/), who is a former Director of Engineering at Digital Ocean, where she led the organizations responsible for Droplets, Kubernetes, Kernel, Performance, Systems, and Orchestration. She's now Director of Mentorship at PowerToFly, where she helps women grow their careers.
-- [Ryan Djurovich](https://www.linkedin.com/in/ryandjurovich/), who is a DevOps Manager at Xero, Australia's largest accounting software company.
-  He leads the team responsible for developer infrastructure, experience, and tooling.
-- [Jean du Plessis](https://www.linkedin.com/in/jeandp/), who is a Director of Engineering at Sourcegraph, where he leads the Developer Insights organization, which includes the frontend platform, extensibility, code insights, and API docs teams.
-
-## Help new hires see the bigger picture with multi-tiered onboarding
+### Help new hires see the bigger picture with multi-tiered onboarding
 
 Multi-tiered onboarding provides a layered, holistic view of the organization.
 
-All 3 engineering leaders described a multi-tier onboarding process with steps common across the organization and ones specific to the new hire's immediate team.
 Some things should be standard across the organization: setting up and familiarizing oneself with shared collaboration tools (email, chat, issue tracker, code review, CI/CD) and understanding the "big picture" of what the company does and how the various organizations interact with each other.
 
-At Digital Ocean, department heads would give recurring presentations attended by every batch of new hires about how each department operated.
+At Digital Ocean, says [Limor Bergman](https://www.linkedin.com/in/limorbergman/), former Director of Engineering at Digital Ocean and current Director of Mentorship at PowerToFly, department heads would give recurring presentations attended by every batch of new hires about how each department operated.
 
 Individual teams should also think about how to onboard new members to the things that are specific to the team, such as setting up the development environment that members of the team use, meeting and establishing relationships with teammates, and understanding what’s necessary to ship that first bug fix or feature enhancement.
 
-## Share high-level context
+### Share high-level context
 
 High-level context is the hardest to transfer. It’s difficult to document, because grokking the overall architecture means understanding how the pieces fit together and knowing what the core assumptions and tension points are. Even if you do a reasonable job with the documentation, chances are it will fall out of date.
 
@@ -124,11 +124,11 @@ However, it's important to transfer such knowledge, including historical knowled
 
 Having a source of truth that captures not just code changes, but high-level discussions about the motivation behind changes is important, because it preserves the "why" for new members of the team who may need to understand it at some point down the road.
 
-Jean shared: "This exact scenario played out for a new engineer recently. They love context and understanding the history behind decisions. Thankfully, Sourcegraph has this practice of putting [Requests for Comments (RFCs)](https://handbook.sourcegraph.com/communication/rfcs) together when we want to introduce any changes or make architectural decisions. We were able to refer to this document, which even predates my time, that gave context on these decisions. Because even the people who worked on it at the time eventually forget about it."
+[Jean du Plessis](https://www.linkedin.com/in/jeandp/), a Director of Engineering at Sourcegraph, shared: "This exact scenario played out for a new engineer recently. They love context and understanding the history behind decisions. Thankfully, Sourcegraph has this practice of putting [Requests for Comments (RFCs)](https://handbook.sourcegraph.com/communication/rfcs) together when we want to introduce any changes or make architectural decisions. We were able to refer to this document, which even predates my time, that gave context on these decisions. Because even the people who worked on it at the time eventually forget about it."
 
 Limor shared that putting new hires into an on-call rotation can also help them get oriented, because diagnosing and addressing outages will require them to understand the system end to end. During on-call, when they're not resolving an issue, they should be updating the docs based on the last thing they just resolved.
 
-## Avoid one-size-fits all software engineer onboarding
+### Avoid one-size-fits all software engineer onboarding
 
 Good software engineer onboarding often requires tailoring the experience to a new hire's specific strengths, experience, and personality.
 
@@ -148,7 +148,7 @@ Some new hires may also feel intimidated to ask questions to a wide forum.
 
 The engineering manager plays a crucial role here. Jean said one engineering spent an hour daily with a new hire to answer high-level questions. This led to one of the fastest onboardings he has seen, where the new engineer was able to drive a significant change in their first month on the job.
 
-Ryan puts this time on the calendar, but leaves people the option to cancel at their discretion:
+[Ryan Djurovich](https://www.linkedin.com/in/ryandjurovich/), a DevOps Manager at Xero, Australia's largest accounting software company, puts this time on the calendar, but leaves people the option to cancel at their discretion:
 
 > "Sometimes we set the expectation that we're going to meet every time. But at other times it's, 'Hey, this is us making our time available to you, but you choose if you want to have this or not.'
 > Some people have opted for a lot of sessions, and come with a list of questions, and that's how they prefer to learn.
@@ -157,19 +157,7 @@ Ryan puts this time on the calendar, but leaves people the option to cancel at t
 Experience level also affects how new hires onboard. Junior engineers likely need more guidance and also reassurance about what is a "normal pace" of onboarding.
 That's not to discount the benefit of reassurance for senior engineers, as well, but it's customary to expect a senior engineer starts directing their own onboarding after getting through the standard stuff.
 
-## Offer emotional support
-
-Even senior engineers can suffer from impostor syndrome. Nearly everyone feels intimidated when diving into a new large codebase.
-
-Finding the right balance between past experience and new territory is crucial, and organizations that value this should go out of their way to create a welcoming culture and environment.
-
-For new hires, having a marker for "am I living up to expectations" in the first couple of weeks can ease their worries. It's often better to err on the side of having an easier onramp, due to all the pitfalls of onboarding.
-
-Remember, you hired someone because you thought they were excellent. So if they are struggling, you should figure out what might be throwing them off, or revisit your hiring processes if this is happening often.
-
-It's common for fast-growing startups to experience some churn and attrition, but if this is happening a lot, it's important for someone in the org to be asking these questions and sharing as much learning as they can while respecting individual privacy.
-
-## Embrace continuous onboarding
+### Embrace continuous onboarding
 
 > "I think most people look at onboarding in the same way we look at education: you go to school, you graduate, and you're done with learning.
 > But the reality is you should never be done with learning. And in the same way, when it comes to onboarding onto codebases and infrastructure and that kind of thing, you should never be done with learning there because those systems aren't in a consistent state; they're evolving over time as the business evolves." – Ryan
