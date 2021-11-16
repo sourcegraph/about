@@ -2,7 +2,7 @@
 title: 'Software engineering onboarding: How the best engineering leaders prevent codebase overwhelm'
 externalTitle: How to improve software engineer onboarding
 description: 'A data-driven look at how the rise in code complexity affects new developers joining a team, and how engineering managers can support new hires with better onboarding.'
-externalDescription: Worried you’re onboarding software engineers to an overwhelming codebase? Learn how to onboard better from leading engineers.
+externalDescription: "Worried you’re onboarding software engineers to an overwhelming codebase? Learn how to onboard better from leading engineers."
 author: Patricia No
 authorUrl:
 publishDate: 2021-04-29T18:00+02:00
