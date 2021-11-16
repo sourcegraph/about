@@ -41,7 +41,7 @@ Not only does being thrown in the deep end result in wasted time and productivit
 
 Even when they’re well qualified for the job, new developers will have moments of self-doubt and impostor syndrome. “In the past, I’ve been in situations where I’m thrown into a new project and expected to figure it out.
 It’s stressful, and the bigger the codebase, the more anxiety I have. It’s hard to even know where to start,” said Marek.
-[Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey-he-him), another developer here at Sourcegraph said, “Culture becomes important. You want the space to make mistakes when you’re coming into a new environment. You want a combination of psychological safety (knowing that your team won’t throw you under the bus) and technical safety (guardrails to know that you won’t make a huge mistake for a customer).”
+[Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey), another developer here at Sourcegraph said, “Culture becomes important. You want the space to make mistakes when you’re coming into a new environment. You want a combination of psychological safety (knowing that your team won’t throw you under the bus) and technical safety (guardrails to know that you won’t make a huge mistake for a customer).”
 Marek agreed, saying “Part of psychological safety is knowing that asking questions is encouraged. You can start to feel isolated if you’re worried about bothering your fellow engineers by asking questions that seem too simple.”
 
 ## How engineering managers can implement better onboarding
