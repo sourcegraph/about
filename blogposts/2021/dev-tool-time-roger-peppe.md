@@ -11,7 +11,7 @@ socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/linked
 published: true
 ---
 
-Many devs, especially those who love Vim and Emacs, carefully fine-tune their editor, terminal, and even OS configurations so that their hands rarely leave the keyboard. Roger Peppé, Software Engineer at InfluxData, took a different path, driven by the simplicity and power of the [Acme text editor](http://acme.cat-v.org/) and mouse chording. When Rog joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on November 10, 2021, he powerfully demonstrated a different model of text editing, which will seem at once familiar yet strange.
+Many devs, especially those who love Vim and Emacs, carefully fine-tune their editor, terminal, and even OS configurations so that their hands rarely leave the keyboard. Roger Peppé, Software Engineer at InfluxData, took a different path, driven by the simplicity and power of the [Acme text editor](http://acme.cat-v.org/) and mouse chording. When Rog joined us for [Dev Tool Time](https://info.sourcegraph.com/dev-tool-time) on November 10, 2021, he demonstrated a different model of text editing, which will seem at once familiar and strange.
 
 You can watch the recording of this episode at the [bottom of this blog post](#Watch-the-recording), but first let’s check out Rog’s fully standing desk setup:
 
@@ -21,31 +21,31 @@ Physical ergonomics guide much of Rog's desk setup, in part due to shoulder pain
 
 ![Rog's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/hardware.jpg)
 
-While Rog types on a highly-regarded [Realforce keyboard](https://www.realforce.co.jp/en/), his aversion to throwing away hardware has kept him using an aging 24" HP monitor with lower resolution, paired with a newer high-resolution monitor. These are all hooked up to a [7th Gen Lenovo Thinkpad Carbon X1](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/x1-carbon-gen-7/22tp2txx17g) running Ubuntu.
+While Rog types on a highly-regarded [Realforce keyboard](https://www.realforce.co.jp/en/), his aversion to throwing away hardware has kept him using an aging 24" HP monitor with relatively low resolution, paired with a newer high-resolution monitor. He hooks all these up to a [7th Gen Lenovo Thinkpad Carbon X1](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/x1-carbon-gen-7/22tp2txx17g) running Ubuntu.
 
 With Acme as his primary dev environment, though, Rog needs a three button mouse, and while he's tried the [Logitech MX Master mouse](https://www.logitech.com/en-us/products/mice/mx-master-3.html), he prefers older, sturdier versions from Logitech.
 
 ## Between familiarity and strangeness
 
-The quality of mouse, and it's reliability through heavy use, is important for Rog. Acme's interaction model is focused on mouse movements, clicks, and chords (combination clicks). While Vim, Emacs, and many other editors have focused on typing, key presses, and key chords for selections, movement around the editor, and actions, Acme presents a different model of engagement, one that is, in many ways familiar. Need to move your cursor to text in another Acme window? Just click there. Want to select text? Just drag while holding a mouse button, the way you do in so many other applications. Acme coheres with common mouse interactions. Yet, Acme is also a bit strange. Clicking with the right button doesn't open a contextual menu; it performs a contextual search that can be used for actions like opening files, finding the next instance of a word, or running a regex search. Clicking with the center button, the click-wheel on Rog's mouse, executes selected text.
+The quality of mouse, and its reliability after heavy use, is important to Rog. Acme's interaction model is focused on mouse movements, clicks, and chords (combination clicks). While Vim, Emacs, and many other editors have focused on typing, key presses, and key chords for selections, movement around the editor, and actions, Acme presents a different model of engagement–one that is, in many ways, familiar. Need to move your cursor to text in another Acme window? Just click there. Want to select text? Just drag while holding a mouse button, the way you do in so many other applications. Acme coheres with common mouse interactions. Yet, Acme is also a bit strange. Clicking with the right button doesn't open a contextual menu; it performs a contextual search that can be used for actions like opening files, finding the next instance of a word, or running a regex search. Clicking with the center button, the click-wheel on Rog's mouse, executes selected text.
 
 TODO: VIDEO EMBED
 
-As Rog shows, these patterns are remarkably powerful in Acme. In every window, there are sets of commands in what we might recognize as a menu- or toolbars. Yet, in Acme, you can write text anywhere and that text is executable. When Rog needs a new command, he writes the script, in Go, the rc shell, or another language, and can execute it easily just by typing the command name and clicking. Imagine working in Google Docs, opening an edit menu, and clicking on the custom command you wrote. This is strangeness and familiarity of Acme, which, originally part of the [Plan9 operating system](http://9p.io/plan9/), indicated a different way forward from our contemporary mainstream computing practices.
+As Rog shows, these patterns are remarkably powerful in Acme. In every window, there are sets of commands in what we might recognize as a menu or toolbars. Yet, in Acme, you can write text anywhere and that text is executable. When Rog needs a new command, he writes the script, in Go, the rc shell, or another language, and can execute it just by typing the command name and clicking. Imagine working in Google Docs, opening an edit menu, and clicking on the custom command you wrote. This is the strangeness and familiarity of Acme, which, originally part of the [Plan9 operating system](http://9p.io/plan9/), indicated a different way forward from our contemporary mainstream computing practices.
 
 ## The simplicity of Acme
 
-For Rog, the driving benefit of Acme is its simplicity. As he notes, in Acme, everything is text and text is powerful. Any text could be executable, and you can type text almost anywhere in Acme. You aren't constrained to toolbars or a single command line, or even the mental model of there being a narrow area of UI that's interactive and command focused.
+For Rog, the driving benefit of Acme is its simplicity. As he notes, in Acme, everything is text and text is powerful. Any text can be executable, and you can type text almost anywhere in Acme. You aren't constrained to toolbars or a single command line, or even the mental model of there being a narrow area of UI that's interactive and command-focused.
 
 TODO: EMBED A VIDEO OR BLOCKQUOTE OF ROG ON TEXT IS POWERFUL OR CLIP OF ROG "TALKING TO EDITOR"
 
-You also aren't bound to memorize a plethora of keybindings to make you more efficient. While many people talk about keybindings being efficient, Rog finds his mouse just as efficient, and, perhaps, simpler to use. Three buttons are far fewer than the keys on a keyboard, and the combinations (chords) more limited.
+You also don't have to memorize a plethora of keybindings to make you more efficient. While many people talk about keybindings being efficient, Rog finds his mouse is just as efficient and simpler to use. Three buttons are far fewer than the keys on a keyboard and the combinations (chords) are more limited.
 
 TODO: ROG'S STATEMENT ON MOUSE EFFICIENCY IS AROUND 33:25
 
 There are trade-offs though, and Rog notes that there is a price to pay for simplicity. Acme doesn't support syntax highlighting, graphics, or any sort of rich text. When asked what he might change with a magic wand, Rog mentions that making Acme work coherently with rich text would be great. He doesn't need syntax highlighting or an LSP, but bold would be nice if it made sense.
 
-Given his answer, we can go only guess that Acme feels like a gift, which has continued to give to him, year after year.
+Given his answer, we can go only guess that Acme feels like a gift that has continued to give to him year after year.
 
 ## Show notes
 
