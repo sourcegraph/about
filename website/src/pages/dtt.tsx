@@ -8,6 +8,7 @@ import { FeaturedEpisode } from '../components/blog/FeaturedEpisode'
 import HubspotForm from '../components/HubspotForm'
 
 import Logo from '../../public/DevToolTimeLogo.svg'
+import upcomingProfile from '../../static/blog/rog-peppe.jpeg'
 
 export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => {
     const posts = props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)
@@ -48,17 +49,25 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                         </p>
                     </div>
                     {/* The mt class below is just to match the bulit-styling on the Blog Header */}
-                    <img src={Logo} alt="Dev Tool Time Logo" className="dtt-logo mt-3" />
+                    {/* <img src={Logo} alt="Dev Tool Time Logo" className="dtt-logo mt-3" /> */}
                 </div>
                 <div className="dtt-upcoming card mt-3">
-                    {/* <p className="card-header upcoming-guest">
-                        Join us for a conversation with Roger Peppé, Software Engineer at InfluxData, on November 10, 2021.
-                    </p> */}
                     <h2 className="card-header">Join us for our next episode!</h2>
-                    <img
-                        className=""
-                        src="https://info.sourcegraph.com/hs-fs/hubfs/roger-peppe-Landing%20page.png?width=975&name=roger-peppe-Landing%20page.png"
-                    />
+                    <div className="card-body upcoming-content">
+                        <div className="upcoming-description">
+                            <p className="upcoming-details">Roger Peppé - Software Engineer at InfluxData</p>
+                            <p className="upcoming-date">November 10, 2021 | 11am PT / 2pm ET / 8pm CEST</p>
+                            <p>
+                                Fatally corrupted early on by the utopian influence of the original Bell Labs Unix, Plan
+                                9, and Inferno systems, Roger is forever looking for that same spark of simplicity and
+                                power. Luckily, Go came along at just the right time and he's been actively involved in
+                                the community and as a contributor ever since. He works at InfluxData on their InfluxDB
+                                cloud service. In his spare time, he likes to grow vegetables, play trad fiddle, and
+                                climb rocks.
+                            </p>
+                        </div>
+                        <img src={upcomingProfile} alt="Rog Peppe profile image" className="upcoming-profile" />
+                    </div>
                 </div>
                 <section className="py-5">
                     {' '}

@@ -13,7 +13,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .dtt-logo {
@@ -21,22 +21,24 @@
     max-width: 10rem;
 }
 
-@media (max-width: 576px) {
-    .dtt-header {
-        flex-direction: column-reverse;
-        flex-wrap: nowrap;
-        gap: 1rem;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
+// styles targeting mobile portrait view
+@media (max-width: 568px) {
     .dtt-brand {
         max-width: 100%;
     }
 
     .dtt-logo {
-        max-width: 100%;
+        display: none;
     }
+
+    .upcoming-content {
+        flex-direction: column-reverse;
+    }
+
+    // .upcomning-profile {
+    //     max-width: 80%;
+    //     margin: auto;
+    // }
 }
 
 .dtt-description {
@@ -49,6 +51,28 @@
 
 .dtt-upcoming h2 {
     font-size: 1.5rem;
+}
+
+.upcoming-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.upcoming-description {
+    flex: 1;
+}
+
+.upcoming-details {
+    font-weight: bold;
+}
+
+.upcoming-profile {
+    flex: 1;
+    border-radius: 50%;
+    max-width: 25%;
 }
 
 .featured-episode-container {
