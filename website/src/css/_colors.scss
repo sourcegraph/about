@@ -1,113 +1,50 @@
+/* Official Sourcegraph Brand colors */
+$sg-space-black: #000000;
+
+/* Colors */
+
+$blue: #2c7ef6;
+$red: #dc3545;
+$purple: #5033e1;
+$white: #ffffff;
+$brand-purple: #b200f8;
+$brand-cyan: #00b4f2;
+$brand-orange: #f96316;
+$brand-primary-blue: #2a66e2;
+
+$body-bg: #f9f9f9;
+$body-color: #222233;
+
 $nav-bg-color: #f9f9f9;
 
-$dark-12: #07090d;
-$dark-11: #0e121b;
-$dark-10: #151c28;
 $dark-9: #1d2535;
 $dark-8: #242e42;
-$dark-7: #2b3750;
-$dark-6: #32405d;
 $dark-5: #39496a;
-$dark-4: #405377;
 $dark-3: #475c85;
-$dark-2: #4f6592;
-$dark-1: #566e9f;
-$dark-0: #6078a9;
 
-$light-0: #6078a9;
 $light-1: #6d84b0;
 $light-2: #7a8fb8;
-$light-3: #889abf;
-$light-4: #95a5c6;
 $light-5: #a2b0cd;
 $light-6: #afbcd4;
-$light-7: #bdc7db;
 $light-8: #cad2e2;
 $light-9: #d7ddea;
+$light-gray-0: #ddd;
+$light-gray-1: #dee2e6;
 $light-10: #e4e9f1;
 $light-11: #f2f4f8;
-$light-12: #ffffff;
 
-$red-0: #fff5f5;
-$red-1: #ffe3e3;
-$red-3: #ffa8a8;
-$red-5: #ff6b6b;
 $red-7: #f03e3e;
-$red-9: #c92a2a;
 
-$pink-0: #fff0f6;
-$pink-1: #ffdeeb;
-$pink-3: #faa2c1;
-$pink-5: #f06595;
-$pink-7: #d6336c;
-$pink-9: #a61e4d;
-
-$grape-0: #f8f0fc;
-$grape-1: #f3d9fa;
-$grape-3: #e599f7;
-$grape-5: #cc5de8;
-$grape-7: #ae3ec9;
-$grape-9: #862e9c;
-
-$violet-0: #f3f0ff;
-$violet-1: #e5dbff;
-$violet-3: #b197fc;
-$violet-5: #845ef7;
-$violet-7: #7048e8;
-$violet-9: #5f3dc4;
-
-$indigo-0: #edf2ff;
-$indigo-1: #dbe4ff;
-$indigo-3: #91a7ff;
 $indigo-5: #5c7cfa;
-$indigo-7: #4263eb;
-$indigo-9: #364fc7;
 
-$blue-0: #e8f7ff;
-$blue-1: #ccedff;
 $blue-3: #72c3fc;
-$blue-5: #329af0;
 $blue-7: #1c7cd6;
-$blue-9: #1862ab;
 
-$cyan-0: #e3fafc;
-$cyan-1: #c5f6fa;
 $cyan-3: #66d9e8;
-$cyan-5: #22b8cf;
-$cyan-7: #1098ad;
-$cyan-9: #0b7285;
 
-$teal-0: #e6fcf5;
-$teal-1: #c3fae8;
-$teal-3: #63e6be;
-$teal-5: #20c997;
 $teal-7: #0ca678;
-$teal-9: #087f5b;
 
-$green-0: #ebfbee;
 $green-1: #d3f9d8;
-$green-3: #8ce99a;
 $green-5: #51cf66;
 $green-7: #37b24d;
 $green-9: #2b8a3e;
-
-$lime-0: #f4fce3;
-$lime-1: #e9fac8;
-$lime-3: #c0eb75;
-$lime-5: #94d82d;
-$lime-7: #74b816;
-$lime-9: #5c940d;
-
-$yellow-0: #fff9db;
-$yellow-1: #fff3bf;
-$yellow-3: #ffe066;
-$yellow-5: #fcc419;
-$yellow-7: #f59f00;
-$yellow-9: #e67700;
-
-$orange-0: #fff4e6;
-$orange-1: #ffe8cc;
-$orange-3: #ffc078;
-$orange-5: #ff922b;
-$orange-7: #f76707;
-$orange-9: #d9480f;

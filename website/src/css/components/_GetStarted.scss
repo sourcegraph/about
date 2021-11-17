@@ -24,7 +24,7 @@
         width: 100%;
         outline: none;
         resize: none;
-        background-color: $light-12;
+        background-color: $white;
         min-height: 150px;
         padding: 1.5rem;
     }
@@ -39,7 +39,7 @@
         color: #0745a1;
     }
     &__local {
-        border-right: 1px solid #dee2e6 !important;
+        border-right: 1px solid $light-gray-1 !important;
         padding-right: 1.5rem;
     }
     &__search {
@@ -47,7 +47,7 @@
     }
     &__action {
         background-color: $light-11;
-        border: 1px solid #dee2e6 !important;
+        border: 1px solid $light-gray-1 !important;
         padding: 1.5rem;
         min-height: 150px;
         resize: none;
@@ -58,7 +58,7 @@
             padding-right: 15px;
         }
         &__search {
-            border-top: 1px solid #dee2e6 !important;
+            border-top: 1px solid $light-gray-1 !important;
             margin-top: 1.5rem;
             padding-top: 1.5rem;
             padding-left: 1rem;
@@ -90,10 +90,10 @@
     .btn-outline-primary,
     .get-started__action,
     textarea {
-        background-color: $light-12;
+        background-color: $white;
     }
     .get-started__local {
-        border-right: 1px solid $light-12 !important;
+        border-right: 1px solid $white !important;
     }
     .btn-outline-primary:hover {
         background-color: #0745a1;
