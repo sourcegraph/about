@@ -17,7 +17,7 @@ You can watch the recording of this episode at the [bottom of this blog post](#W
 
 ## Standing, rocking, clicking
 
-Physical ergonomics guide much of Rog's desk setup, in part due to shoulder pain. Working at a standing desk alleviated that pain, and over time he's transitioned to working entirely standing at his [Fully Jarvis desk](https://www.fully.com/standing-desks/jarvis-adjustable-height-desk-bamboo.html), often rocking with the help of the [Tic Tock Stand Balance Board]() for comfort during longer hours standing. When he does sit, he has a [Varier Balans kneeling chair](https://varierchairs.com/kneeling-chairs/variable-balans/) that also encourages movement.
+Physical ergonomics guide much of Rog's desk setup, in part due to his shoulder pain. Working at a standing desk alleviates that pain, and over time, he's transitioned to working entirely standing at his [Fully Jarvis desk](https://www.fully.com/standing-desks/jarvis-adjustable-height-desk-bamboo.html), often rocking with the help of the [Tic Tock Stand Balance Board]() for comfort during longer hours standing. When he does sit, he has a [Varier Balans kneeling chair](https://varierchairs.com/kneeling-chairs/variable-balans/) that also encourages movement.
 
 ![Rog's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/hardware.jpg)
 
