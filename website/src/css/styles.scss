@@ -13,33 +13,6 @@ $font-family-monospace: source-code-pro, monospace; // Adobe Source Code Pro for
 $font-family-base: $font-family-sans-serif;
 $headings-font-family: $font-family-base;
 
-$blue: #2c7ef6;
-$red: #dc3545;
-$purple: #5033e1;
-$white: #ffffff;
-$brand-purple: #b200f8;
-$brand-cyan: #00b4f2;
-$brand-orange: #f96316;
-$colors: (
-    'blue': $blue,
-    'brand-purple': $brand-purple,
-    'brand-cyan': $brand-cyan,
-    'brand-orange': $brand-orange,
-);
-
-$theme-colors: (
-    'primary': #2a66e2,
-    'dark': $dark-9,
-    'light': $light-11,
-    'purple': $brand-purple,
-    'gray': #dddddd,
-    'pink': lighten($red, 35%),
-    'light-orange': lighten($brand-orange, 35%),
-    'orange': $brand-orange,
-);
-
-$brand-primary: $brand-purple;
-
 $border-radius: 0.3125rem;
 $border-radius-lg: 0.25rem;
 $border-radius-sm: 0.1rem;
@@ -82,9 +55,6 @@ $spacers: (
     ),
 );
 
-$body-bg: #f9f9f9;
-$body-color: #222233;
-
 $border-color: $gray-300;
 
 $display1-size: 4rem;
@@ -106,7 +76,7 @@ $btn-font-weight: 600;
 $input-bg: transparent;
 $input-color: $body-color;
 $input-box-shadow: none;
-$input-border-color: map-get($theme-colors, 'primary');
+$input-border-color: $brand-primary-blue;
 $input-border-width: 3px;
 $input-focus-bg: $input-bg;
 $input-focus-color: $body-color;
@@ -225,7 +195,7 @@ img.icon-inline,
 }
 
 code.border {
-    background-color: #f2f4f8;
+    background-color: $light-11;
     font-size: 80%;
 }
 
@@ -235,24 +205,24 @@ table {
     margin-bottom: 1rem;
     background-color: transparent;
     border-collapse: collapse;
-    border: 1px solid #ddd;
+    border: 1px solid $light-gray-0;
 }
 table td,
 table th {
     padding: 0.75rem;
     vertical-align: top;
-    border: 1px solid #dee2e6;
-    background-color: #fff;
+    border: 1px solid $light-gray-1;
+    background-color: $white;
 }
 table thead th {
     vertical-align: bottom;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid $light-gray-1;
 }
 table tbody + tbody {
-    border-top: 2px solid #dee2e6;
+    border-top: 2px solid $light-gray-1;
 }
 table {
-    background-color: #fff;
+    background-color: $white;
 }
 
 @import 'components/blog/BlogPost';
@@ -319,7 +289,7 @@ table {
         linear-gradient(180deg, rgba(0, 155, 242, 0.2) 0%, rgba(156, 229, 254, 0.2) 100%);
 }
 .bg-black {
-    background-color: #000;
+    background-color: $sg-space-black;
 }
 .bg-light-transparent {
     background-color: transparentize($light-11, 0.3);
