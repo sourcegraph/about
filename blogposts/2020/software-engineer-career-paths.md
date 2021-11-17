@@ -1,14 +1,17 @@
 ---
-title: "Software engineer career paths"
+title: "Let’s rethink the software engineer career path"
+externalTitle: Rethinking the software engineer career path
 author: Chris Pine
 publishDate: 2020-09-30
+description: The software engineer career path is rarely clear, linear, or universal. It’s time engineers rethink the different career paths they can take.
+externalDescription: The software engineer career path is rarely clear, linear, or universal. It’s time engineers rethink the different career paths they can take.
 tags: [blog]
 slug: software-engineer-career-paths
 heroImage: https://sourcegraphstatic.com/blog/career/Impact.jpg
 published: true
 ---
 
-When I first began my career as a software engineer, I thought I knew where I wanted to go (become a Senior Software Engineer) and how to get there (write better code faster). I was wrong on both accounts.
+When I first started on the software engineer career path, I thought I knew where I wanted to go (become a Senior Software Engineer) and how to get there (write better code faster). I was wrong on both accounts.
 
 First, by focusing on a generic career ladder instead of _my individual career path_, I was losing sight of my own development as an engineer. I was like a student who is focused on getting an A instead of on their education: the former is only a symbol of the latter. Career ladders are useful tools, and can be instrumental in ensuring equity of promotions across an organization. But they are a poor substitute for a person’s career path. Or to put it another way, [titles are metrics, not targets](https://en.wikipedia.org/wiki/Goodhart%27s_law).
 
@@ -20,9 +23,11 @@ What I ultimately came to realize was that _the real measure of my career growth
   <img src="https://sourcegraphstatic.com/blog/career/Impact.jpg" width="70%" alt="Advancing in my career illustration">
 </div>
 
-You can increase your impact, and thus grow in your career, in a number of different ways. You could expand the depth and breadth of your skills, to have a greater direct impact in more areas. You could increase the scope of your concerns to encompass the performance of your team, and eventually of your entire organization. You could work with, influence, and support a broader range of people. Each of these paths will come with a different set of titles, but chasing those titles is putting the cart before the horse.
+## Impact is the north star for a software engineer career path
 
-I’m not saying titles don’t matter. They do, depending on where you work. Having a title starting with Senior or Lead can affect how deeply people consider your input, or what projects and opportunities are available to you. If you are doing the same kind/quality/quantity of work as someone else, of course you will care if you don’t have the same title. But it is still a mistake to treat a string of titles as being identical to your career path.
+You can increase your impact, and thus grow in your career, in a number of different ways. You could expand the depth and breadth of your skills, to have a greater direct impact in more areas. You could increase the scope of your concerns to encompass the performance of your team, and eventually of your entire organization. You could work with, influence, and support a broader range of people. Each of these software engineer career paths will come with a different set of titles, but chasing those titles is putting the cart before the horse.
+
+I’m not saying titles don’t matter. They do, depending on where you work. Having a title starting with Senior or Lead can affect how deeply people consider your input, or what projects and opportunities are available to you. If you are doing the same kind/quality/quantity of work as someone else, of course you will care if you don’t have the same title. But it is still a mistake to treat a string of titles as being identical to your software engineer career path.
 
 (One thing I love about working at Sourcegraph is that we don’t have those title prefixes. I “lost” my Senior title when I came here, and I wasn’t sure how I would feel about that. But right away I could see how it put early career engineers on a more equal footing with more experienced engineers, which raises the quality of conversations and designs. That’s definitely worth more to me than a title.)
 
@@ -80,6 +85,12 @@ As an engineering manager, Jan had the influence and authority to enhance the da
 
 ## You, gentle reader
 
-Maria, Theo, and Jan followed different paths in their careers. But they all succeeded by increasing the magnitude and scope of their impact.
+Maria, Theo, and Jan followed different software engineer career paths. But they all succeeded by increasing the magnitude and scope of their impact.
 
 So what will your path look like? Think about what brought you to tech and what drives you. Identify your superpower. Then use these to guide your professional growth and steer you on your own path toward ever increasing impact.
+
+## More posts like these
+
+- [How we built our software engineering career framework](https://about.sourcegraph.com/blog/software-engineer-career-ladder/)
+- [Async, remote, and flexible: How 7 engineers rethought their work calendars](https://about.sourcegraph.com/blog/software-engineer-career-ladder/)
+- [Improving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
