@@ -21,6 +21,24 @@
     max-width: 10rem;
 }
 
+@media (max-width: 576px) {
+    .dtt-header {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .dtt-brand {
+        max-width: 100%;
+    }
+
+    .dtt-logo {
+        max-width: 100%;
+    }
+}
+
 .dtt-description {
     flex: 1;
 
