@@ -5,12 +5,22 @@ description: "Sourcegraph 3.34 introduces UPDATE"
 tags: [blog, release]
 slug: "release/3.34"
 published: false
-heroImage: 
-socialImage: 
+heroImage:
+socialImage:
 changelogItems:
 
 ---
 
 Sourcegraph 3.34 is now available! For this release, we introduced:
 
-## Feature
+## Server side Batch Changes (Experimental)
+
+By default, Batch Changes uses a command line interface in your local environment to compute batch changes. This can be impractical for creating batch changes affecting hundreds or thousands of repositories or if the batch change steps require CPU, memory, or disk resources that are not locally.
+
+In this release, we are introducing server-side Batch Changes. Computing batch changes can now be offloaded to [executors](https://docs.sourcegraph.com/admin/deploy_executors), allowing users to:
+
+- run large-scale batch changes that would be impractical to compute locally
+- speed up batch change creation time by distributing batch change computing over several executors
+- reduce the setup time required to onboard new users to Batch Changes
+
+This is a bleeding-edge, experimental feature that comes with [limitations](https://docs.sourcegraph.com/batch_changes/explanations/server-side).
