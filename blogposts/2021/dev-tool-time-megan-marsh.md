@@ -8,11 +8,15 @@ authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-h
 publishDate: 2021-08-06T10:00-07:00
 tags: [blog, dtt]
 slug: dev-tool-time-megan-marsh
-# heroImage:
-# socialImage:
+heroImage: https://sourcegraphstatic.com/blog/dev-tool-time/megan-marsh/linkedin.jpg
+socialImage: https://sourcegraphstatic.com/blog/dev-tool-time/megan-marsh/linkedin.jpg
 published: true
 youtube: 'zEjERq2Pm5s'
 ---
+
+Megan Marsh is a senior engineer at HashiCorp, and the engineering lead for the Packer open source tool. Prior to working on Packer, she used Packer in her role as a cloud engineer at Sauce Labs, and prior to that she researched biomechanics at UCSF. She lives in Oregon with her husband, daughter, and dog. Her hobbies include quilting and indoor gardening.
+
+Megan will be sharing her healthy, ergonomic work environment and a few of her favorite tools such as the cli tool ack , triage party, and her favorite text editor Sublime.
 
 ## Watch the recording
 

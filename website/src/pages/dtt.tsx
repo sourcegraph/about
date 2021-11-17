@@ -33,31 +33,32 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
             <div className="container-lg">
                 <div className="dtt-header mt-4">
                     <div className="dtt-brand">
-                        {/* <BlogHeader title={'Dev Tool Time'} baseUrl={'/dtt'} /> */}
                         <p className="dtt-description mb-1">
+                            <BlogHeader title={'Dev Tool Time'} baseUrl={'/dtt'} />
                             <p>
                                 Sourcegraph engineers interview other devs in the community about their desk set up,
                                 favorite dev tools, productivity hacks, and more. Episodes stream on{' '}
                                 <a href="https://www.twitch.tv/sourcegraph">Twitch</a> every other Wednesday at 11AM
                                 PT//2PM ET//8PM CEST.
                             </p>
-                            <p className="upcoming-guest">
-                                Join us for a conversation with Roger Peppé, Software Engineer at InfluxData, on
-                                November 10, 2021
+                            <p>
+                                Hosted by <a href="https://twitter.com/TeejDeVries">TJ DeVries</a> and{' '}
+                                <a href="https://twitter.com/thorstenball">Thorsten Ball.</a>
                             </p>
                         </p>
                     </div>
-                    <img src={Logo} alt="Dev Tool Time Logo" className="dtt-logo" />
-                    {/* <div className="dtt-upcoming card">
-                        <h2 className="dtt-upcoming-title">Upcoming episodes</h2>
-                        <p>Join us for a conversation with Roger Peppé, Software Engineer at InfluxData, on November 10, 2021</p>
-                    </div> */}
-                    {/* <img
+                    {/* The mt class below is just to match the bulit-styling on the Blog Header */}
+                    <img src={Logo} alt="Dev Tool Time Logo" className="dtt-logo mt-3" />
+                </div>
+                <div className="dtt-upcoming card mt-3">
+                    {/* <p className="card-header upcoming-guest">
+                        Join us for a conversation with Roger Peppé, Software Engineer at InfluxData, on November 10, 2021.
+                    </p> */}
+                    <h2 className="card-header">Join us for our next episode!</h2>
+                    <img
                         className=""
                         src="https://info.sourcegraph.com/hs-fs/hubfs/roger-peppe-Landing%20page.png?width=975&name=roger-peppe-Landing%20page.png"
-                    /> */}
-                    {/* Given the profusion dtt logos, we may want to remove this banner. */}
-                    {/* <img src="/dtt_landing_page.jpg" alt="Dev Tool Time logo" style={{ maxWidth: '100%' }} /> */}
+                    />
                 </div>
                 <section className="py-5">
                     {' '}
