@@ -21,7 +21,7 @@
         &-button {
             margin: auto auto;
             background: $teal-7;
-            color: $light-12;
+            color: $white;
         }
     }
 
@@ -81,7 +81,7 @@
 
     &__work {
         background: $light-10;
-        color: #000000;
+        color: $sg-space-black;
 
         @media only screen and (max-width: 768px) {
             .jobs__container {
@@ -94,7 +94,7 @@
 
     &__positions {
         background: $light-11;
-        color: #000000;
+        color: $sg-space-black;
 
         &--title {
             margin: auto auto;
@@ -107,12 +107,12 @@
             border-top: 1px solid $light-10;
             border-right: 1px solid $light-10;
             border-radius: 0.25rem;
-            background: $light-12;
+            background: $white;
             margin-top: 1rem;
 
             &-container {
                 padding: 1rem;
-                background: $light-12;
+                background: $white;
                 border-bottom: 1px solid $light-10;
                 border-top-left-radius: 1rem;
                 border-top-right-radius: 1rem;
@@ -132,7 +132,7 @@
                 text-decoration: none;
                 transition: opacity 0.15s ease-in;
                 padding: 0.5rem 1rem;
-                color: $light-12;
+                color: $white;
                 background: $blue-7;
                 border-radius: 0.25rem;
                 height: 50%;
