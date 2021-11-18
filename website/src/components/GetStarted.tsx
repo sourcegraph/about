@@ -34,7 +34,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                     --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                     --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                     --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                    sourcegraph/server:3.33.0
+                                    sourcegraph/server:3.33.1
                                 </span>
                                 <span className="get-started__copytext">
                                     <FileDocumentMultipleOutlineIcon className="copytext icon-inline ml-1 medium" />
@@ -63,7 +63,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                 <li>Free trial for enterprise features</li>
                             </ul>
                             <a className="d-inline-flex font-weight-bold" href="https://docs.sourcegraph.com">
-                                Learn about self-hosted vs. cloud features <ArrowRightIcon className="ml-1" />
+                                Learn about self-hosted vs. Cloud features <ArrowRightIcon className="ml-1" />
                             </a>
                         </div>
                     </div>
