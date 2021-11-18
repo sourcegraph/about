@@ -19,7 +19,7 @@ You can watch the recording of this episode at the [bottom of this blog post](#W
 
 Physical ergonomics guide much of Rog's desk setup, in part due to his shoulder pain. Working at a standing desk alleviates that pain, and over time, he's transitioned to working entirely standing at his [Fully Jarvis desk](https://www.fully.com/standing-desks/jarvis-adjustable-height-desk-bamboo.html), often rocking with the help of the [Tic Tock Stand Balance Board]() for comfort during longer hours standing. When he does sit, he has a [Varier Balans kneeling chair](https://varierchairs.com/kneeling-chairs/variable-balans/) that also encourages movement.
 
-![Rog's current desk setup](https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/hardware.jpg)
+<img src="https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/hardware_cropped.jpg" alt="Rog's current desk setup" style="max-width:40rem;max-height:none;" />
 
 While Rog types on a highly-regarded [Realforce keyboard](https://www.realforce.co.jp/en/), his aversion to throwing away hardware has kept him using an aging 24" HP monitor with relatively low resolution, paired with a newer high-resolution monitor. He hooks all these up to a [7th Gen Lenovo Thinkpad Carbon X1](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/x1-carbon-gen-7/22tp2txx17g) running Ubuntu.
 
@@ -45,7 +45,7 @@ As Rog shows, these patterns are remarkably powerful in Acme. In every window, t
     <figcaption style="text-align: center; font-style: italic;">Watch Rog demonstrate structural regular expressions.</figcaption>
 </figure>
 
-## The simplicity of Acme
+## The simplicity of the Acme text editor
 
 For Rog, the driving benefit of Acme is its simplicity. As he notes, in Acme, everything is text and text is powerful. Any text can be executable, and you can type text almost anywhere in Acme. You aren't constrained to toolbars or a single command line, or even the mental model of there being a narrow area of UI that's interactive and command-focused.
 
