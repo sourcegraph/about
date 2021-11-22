@@ -20,6 +20,7 @@ When your search has no results, we will now display helpful tips on how to use 
 Navigating to implementations is now available for Go! If you have precise code intelligence enabled for your Go repositories, you can now click on Find Implementations to navigate to a symbol's interface definition. If you're at the interface definition itself, clicking on Find Implementations will show all the places where the interface is being implemented, allowing you to explore how it's being used by other users across repositories. It will also show you which interfaces a struct implements. 
 <img width="1193" alt="Screenshot 2021-11-22 at 18 28 39" src="https://user-images.githubusercontent.com/1657213/142938393-7aed0c41-28b8-4cab-bf0d-2f9fd7f1078c.png">
 <img width="1193" alt="Screenshot 2021-11-22 at 18 29 03" src="https://user-images.githubusercontent.com/1657213/142938404-3b845bec-5da2-4ec7-bf17-0e273ff38dcd.png">
+
 # 3.34.0
 # Added
   - description: "Added documentation for merging site-config files. Available since 3.32"
