@@ -20,7 +20,7 @@ Joseph Nelson, Beyang Liu
 
 <!-- START SUMMARY -->
 
-When, and how, will computer vision and machine learning revolutionize the world? In this episode, Joseph Nelson, CEO and co-founder of Roboflow, joins Beyang Liu, co-founder and CTO of Sourcegraph, to discuss how Joseph got started in programming (developing a joke generator for a graphing calculator), to share his experience working as a human Google alert for the United States congress, and to explain why he finds building developer tools so empowering. Along the way, Joseph explains why he thinks machine learning and computer vision will have greater effects than the Internet and the mobile phone, and shows how Roboflow will accelerate our progress toward that future. And at the end, Joseph tours Beyang through Roboflow, showing him a raccoon detector and chess piece identifier. 
+When, and how, will computer vision and machine learning revolutionize the world? In this episode, Joseph Nelson, CEO and co-founder of Roboflow, joins Beyang Liu, co-founder and CTO of Sourcegraph, to discuss how Joseph got started in programming (developing a joke generator for a graphing calculator), to share his experience working as a human Google alert for the United States Congress, and to explain why he finds building developer tools so empowering. Along the way, Joseph explains why he thinks machine learning and computer vision will have greater effects than the Internet and the mobile phone, and shows how Roboflow will accelerate our progress toward that future. And at the end, Joseph tours Beyang through Roboflow, showing him a raccoon detector and chess piece identifier. 
 
 Click the audio player below to listen, or [click here to watch the video](https://youtu.be/VQCI6GPKMGY).
 
@@ -76,7 +76,7 @@ Thanks so much for having me.
 
 **Beyang Liu:**
 
-Awesome. So we'd like to kick things off by diving into guests’ personal backgrounds. And the thing I'm always curious to learn is, for you, what was your entry point into the world of computers and code?
+Awesome. So we like to kick things off by diving into guests’ personal backgrounds. And the thing I'm always curious to learn is, for you, what was your entry point into the world of computers and code?
 
 **Joseph Nelson:**
 
@@ -106,7 +106,7 @@ Wow. I'm surprised that you were able to... Did you tell any of your friends or 
 
 I kept it to myself. I actually did a similar thing. One of the first entrepreneurial things that I did once I got to college was, I arrived at school right when Uber was just becoming kind of a thing. My first year, it was just coming to campus and I ran a satirical newspaper so I went to a school that had something called the GW Hatchet–George Washington Hatchet was the name of the paper. So I ran a satirical paper called the GW Axe. And I ran that on Google Sites because, again, I wasn't very proficient as a programmer. And that provided enough of an accessible on-ramp for me to learn a little bit of HTML and CSS so I just kind of hacked together a basic word editor, slotted in some images, and things like that.
 
-And I ran the satirical paper, which again, I told no one else at my school was me, and it was really challenging because it was like the coolest thing I'd ever done and I couldn't tell people the key thing, which is like, "Oh no, no, it was actually me." And I'd hear people talking about it on campus, like, "Did you hear that GW Axe article about George Washington's campus starting construction on construction?" The GW President at one point was the highest paid president of all the universities. And so he sent out this email to the student body that was like, have a happy holiday and things like that. And I identified what the font was and I still remember it was avenir font, and then got this specific pixel color. And then I added to the bottom of it, I'll be thinking about you all while I'm in The Bahamas. And re-sent that email to the student body and that went pretty viral too.
+And I ran the satirical paper, which again, I told no one else at my school was me, and it was really challenging because it was like the coolest thing I'd ever done and I couldn't tell people the key thing, which is like, "Oh no, no, it was actually me." And I'd hear people talking about it on campus, like, "Did you hear that GW Axe article about George Washington's campus starting construction on construction?" The GW President at one point was the highest paid president of all the universities. And so he sent out this email to the student body that was like, have a happy holiday and things like that. And I identified what the font was and I still remember it was Avenir font, and then got this specific pixel color. And then I added to the bottom of it, I'll be thinking about you all while I'm in The Bahamas. And re-sent that email to the student body and that went pretty viral too.
 
 And I monetized that by–when Uber came to campus, circling back to why that's relevant–the ads on the site were like, try Uber. And I had a custom, and still do, Uber referral code because I didn't want to use my name and early on, they actually just used short alphanumeric strings. And I had free Uber rides for a year. So, that was another kind of early programming experience.
 
@@ -136,7 +136,7 @@ I liked it quite a bit. I mean the bad joke I kind of make is that economics is 
 
 Take rent, for example. If you build more housing, despite what they think in San Francisco, prices will generally go down. And we could probably build an equation that roughly approximates that if we build 100 more units, then we might expect rent to drop even a little bit and that's going to be a very brutal, imperfect representation, but it's directionally correct. And then we can take that formula and optimize it. So, pretty soon, you start to get into econometrics, and I realized it was like, okay, this is all just applied statistics. That’s all this economics stuff is.
 
-And then the deeper I got into the applied statistics side of things, the more I realized that programming is where the action happens. It's like, what model are you using? How can you make sure that things run efficiently? And I guess keeping with my streak now of getting in trouble. I turned in my thesis in Python instead of Stata, which apparently you weren't supposed to do. The argument was it was less reproducible and I was like, are you kidding me? No one has to pay to reproduce my code–here's everything that you need to reproduce my senior thesis and all that sort of stuff. I took a couple of CS classes here and there, but yeah, my degree is economics and lots of stats.
+And then the deeper I got into the applied statistics side of things, the more I realized that programming is where the action happens. It's like, what model are you using? How can you make sure that things run efficiently? And I guess keeping with my streak now of getting in trouble, I turned in my thesis in Python instead of Stata, which apparently you weren't supposed to do. The argument was it was less reproducible and I was like, are you kidding me? No one has to pay to reproduce my code–here's everything that you need to reproduce my senior thesis and all that sort of stuff. I took a couple of CS classes here and there, but yeah, my degree is economics and lots of stats.
 
 **Beyang Liu:**
 
@@ -152,7 +152,7 @@ Oh, awesome. We're getting scoops on scoops.
 
 **Joseph Nelson:**
 
-So, during my first year of undergraduate, the university I went to was George Washington in DC. And so they, to kind of flaunt that, attracted prominent professors and people that were in the area. The World Bank, actually, one of the buildings actually happens to rent from George Washington University, like GW owns it and they pay rent to the university. And the chief economist of the world bank at the time, Dr. Kaushik Basu was asked to teach a game theory class in conjunction with another professor at GW, Dr. James Foster. And the game theory class was meant to make headlines because there's this kind of fantastical exploration of all sorts of schema and understanding and things like that.
+So, during my first year of undergraduate, the university I went to was George Washington in DC. And so they, to kind of flaunt that, attracted prominent professors and people that were in the area. The World Bank, actually, one of the buildings actually happens to rent from George Washington University, like GW owns it and they pay rent to the university. And the chief economist of the World Bank at the time, Dr. Kaushik Basu, was asked to teach a game theory class in conjunction with another professor at GW, Dr. James Foster. And the game theory class was meant to make headlines because there's this kind of fantastical exploration of all sorts of schema and understanding and things like that.
 
 And what's funny actually, I mean, to the point of the dual personality of both being a good student, but also trying to kind of find these crevices, I guess. Dr. Foster's wife also taught at the university, Dr. Irene Foster, and she and I were pretty good friends and I tutored for her classes and she actually advised some of my research work. And then here I was in Dr. James Foster's class. 
 
@@ -164,11 +164,11 @@ And so I stir up this controversy. I'm like, okay, everyone, to be clear and I w
 
 And so my pitch was that it's a no-risk option to play the game. Worst-case scenario, you take the exam just as you planned. Pretty good pitch. Pretty good pitch. But not a good enough pitch. So I put this out there and I draw the payoff matrix and I'm socializing this around. And I learned that there's international students who weren't on Facebook and I go individually visit them and try to lobby. And it's like I'm whipping votes up to try to get people to do this. 
 
-And on the eve of the exam, we get an email from Dr. Foster that's sent to the entirety of the class, but it might as well just said, “Dear, Joseph,” but it was addressed “Dear class.” And it's something along the lines of, “It should be known that if someone were orchestrating a broad scale…” They didn't say the word boycott, but “broad scale disruption to the way the exam is meant to be administered, that person should know that that's grounds for expulsion and academic misconduct. They would lose their scholarships.” And that's how I was even able  to attend this insane university.
+And on the eve of the exam, we get an email from Dr. Foster that's sent to the entirety of the class, but it might as well just said, “Dear, Joseph,” but it was addressed “Dear class.” And it's something along the lines of, “It should be known that if someone were orchestrating a broad scale…” They didn't say the word boycott, but “broad scale disruption to the way the exam is meant to be administered, that person should know that that's grounds for expulsion and academic misconduct. They would lose their scholarships.” And that's how I was even able to attend this insane university.
 
 And it was meant to be a chilling effect. Are you actually going to play this game or not? And so everyone just immediately texts me, emails me, posts on Facebook–people are going nuts. They're like, what are we going to do? Like, what's going on? I'm like, this is the perfect piece. I couldn't have been served a better platter because I was able to screenshot the email, drop into the Facebook group and say, in writing, “Everyone, you can say it's me. Everyone can point and say that this was Joseph's idea and Joseph's doing, and here's the screenshot you need to show in the Facebook group to prove it to them. And so I'll fall on the sword and that's kind of what we'll do.” I was full steam ahead. And so we showed up for the exam the next day and it was a very strange exam day because everyone’s chattering–it's on a Thursday.
 
-And at first, the first five minutes actually, no one entered the room, but then finally someone goes in, so we're like, ah, okay, it's over. So we all went inside and no one was there to administer the exam. The professor wasn't there and we're kind of like, what's what's going on here?
+And at first, the first five minutes actually, no one entered the room, but then finally someone goes in, so we're like, ah, okay, it's over. So we all went inside and no one was there to administer the exam. The professor wasn't there and we're kind of like, what's going on here?
 
 Then, I remember the TAs came in from the back of the classroom in this large lecture hall and mind you, I didn't share this, but the class was 70+ kids–this wasn't organizing like 20 people. This was a massive class. And so the professors come in from the back and, kind of out of nowhere, 15 minutes late, and administer all the exams. Then, we're taking it as normal and we're doing our thing. The last question on the exam is: “Hypothetically, a student in your class organizes a boycott of the game theory exam. Draw the payoff matrix for what you should do in this situation.” And then the second question, which I think is absolutely brilliant, was “What would you do in this situation? Note, the amount of points you get for this question will be equal to the proportion of the class that also selects your answer.”
 
@@ -232,7 +232,7 @@ He's got Twitter figured out to a T.
 
 **Joseph Nelson:**
 
-He really does, he really does.And then folks that take Twitter too seriously are in his replies. 
+He really does, he really does. And then folks that take Twitter too seriously are in his replies. 
 
 Yeah, so I was actually a press intern, which meant that I was like a human Google alert for the office. Whenever the senator is mentioned, you cut out the clippings and then package it on a daily basis.
 
@@ -244,7 +244,7 @@ So you were quite far from the House of Cards power struggles.
 
 So, back when I was passing the Bush tax cuts, yeah.
 
-No, honestly, I actually set up a Google alert and it did my job better than I did. So that was demoralizing. But there was one day where I worked as a legislative intern, and I was sorting mail, and it just stood out to me how inefficient the process was. And not for any fault of the offices. In fact, Grass's office is famous for doing a pretty good job of being really specific and responsive to constituents.
+No, honestly, I actually set up a Google alert and it did my job better than I did. So that was demoralizing. But there was one day where I worked as a legislative intern, and I was sorting mail, and it just stood out to me how inefficient the process was. And not for any fault of the offices. In fact, Grassley's office is famous for doing a pretty good job of being really specific and responsive to constituents.
 
 Some offices will have just one mail they send to everyone. It's like, “Thanks for contacting us. We'll take your thing into consideration.” And then there's a sliding scale, a gradient of how specific you could be. You could actually address the issue that someone wrote in about, and then give the office's position back. And everyone who writes to their member of Congress should expect at least a response, and you'd hope for a pretty tailored response. But when you view it from the other side, from the institutional side, and you're so understaffed and there are such high volumes, you can understand why you get somewhat form-letter-type responses. Absent that, there's just no response possible.
 
@@ -358,7 +358,7 @@ Yeah, yeah.
 
 No, meanwhile, Doc Nelson, my dad, doesn't even know how to use Facebook. We're a pretty humble operation.
 
-But to be clear, I'm a fake farmer. I grew up in west Des Moines but my family would go to the farm with some frequency. But this came from one of my older brothers, who was at a farm auction one day. At this farm auction, they were auctioning off four 80 acre plots, which are called sections. And these four 80 acre sections were adjacent to one another, and the Southeastern most plot had a river running through it. And there is somewhat of a debate about how to value that plot because of how much of the land was tillable, arable land that you could use for productive agriculture purposes.
+But to be clear, I'm a fake farmer. I grew up in west Des Moines but my family would go to the farm with some frequency. But this came from one of my older brothers, who was at a farm auction one day. At this farm auction, they were auctioning off four 80 acre plots, which are called sections. And these four 80 acre sections were adjacent to one another, and the southeastern most plot had a river running through it. And there is somewhat of a debate about how to value that plot because of how much of the land was tillable, arable land that you could use for productive agriculture purposes.
 
 And he phoned me and I was in DC. And I was like, "I don't know. You're at the auction, man. What do you want me to do about this?"
 
@@ -446,7 +446,7 @@ That's awesome.
 
 **Joseph Nelson:**
 
-So it's a win-win
+So it's a win-win.
 
 **Beyang Liu:**
 
@@ -512,7 +512,7 @@ Yeah. It wasn't like, give me a hint to solve this puzzle. It was like, I'm goin
 
 Boggle is the four-by-four word game where you try to find word combinations among adjacent letter tiles. Humans will find some subset of the total possible words, but an algorithm, like a breadth-first search, would check against a dictionary, if it's given the inputs, and find all of the potential words. And then we could use augmented reality to overlay that on the board and show you and you could get better and play.
 
-The process by which we had to put things together to do that is that we had to capture a ton of images of Boggle boards and there's variations of Boggle, I learned. There's Big Boggle, there's Little Boggle, there's four-by-four, five-by-five, there's different lighting conditions that someone could be playing boggle in from different distances. So you have to account for all those things. Great. Now you've got your data set and now you have to label it. So you have to annotate all those dang individual tiles with the letters that you want.
+The process by which we had to put things together to do that is that we had to capture a ton of images of Boggle boards and there's variations of Boggle, I learned. There's Big Boggle, there's Little Boggle, there's four-by-four, five-by-five, there's different lighting conditions that someone could be playing Boggle in from different distances. So you have to account for all those things. Great. Now you've got your data set and now you have to label it. So you have to annotate all those dang individual tiles with the letters that you want.
 
 **Beyang Liu:**
 
@@ -770,7 +770,7 @@ Cool.
 
 **Joseph Nelson:**
 
-And one thing that is pretty cool is you can actually have a model automatically label these images for you. Instead of manually drawing all these images or drawing all these bounding boxes, a model could automatically apply them. Or you could farm them out to a third party annotation tool. There's plenty of companies that will take your images, label them for you and send them back to you. And that's a common workflow we see when people will do to get quite a few images that they need to have annotated and ready.
+And one thing that is pretty cool is you can actually have a model automatically label these images for you. Instead of manually drawing all these images or drawing all these bounding boxes, a model could automatically apply them. Or you could farm them out to a third party annotation tool. There's plenty of companies that will take your images, label them for you and send them back to you. And that's a common workflow we see that people will do to get quite a few images that they need to have annotated and ready.
 
 And then, from there, the standard things that you do are create a dataset version. So you have a locked-in-time example image and data set. And we can train a model. And once we have a model trained, everything that we see on Universe is live. I have an API I can use, or a model I can call in the browser. 
 
@@ -866,7 +866,7 @@ One of the big things is this community that we launched is actually relatively 
 
 What we've been surprised by is the amount of the community that does treat this like the open source movement. And basically, enabling folks to benefit from one another's creations. And I think that we're so much in the first innings of what that looks like. So we at Roboflow, have seen this wide, diverse array of use cases, of folks working on things that accelerate medical packaging, like for Pfizer, which has been an extremely important problem in the last year.
 
-So actually, we had another company that was creating chest scan models for identifying if the presence of COVID: was it there or not. In the very early pandemic, it was tough to find tests and people were using traditional chest scans to see how cloudy it looked in someone's lungs. And if it was particularly cloudy, then they would be administered a COVID test. And if they weren't, then they would use the COVID test for someone that might be more needy.
+So actually, we had another company that was creating chest scan models for identifying the presence of COVID: was it there or not. In the very early pandemic, it was tough to find tests and people were using traditional chest scans to see how cloudy it looked in someone's lungs. And if it was particularly cloudy, then they would be administered a COVID test. And if they weren't, then they would use the COVID test for someone that might be more needy.
 
 And it's small things like that, which stretch the imagination of what's possible. And so it's like, both the broad swath and excitement of these things that we see at Roboflow, but other people seeing all the ways vision is going to be useful. And then ushering that in to be easier. Right. There is the ability for folks to, if a hospital in Boston makes this better COVID-scanning identification product, allow that to be used everywhere else more quickly.
 
