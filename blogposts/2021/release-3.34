@@ -13,6 +13,10 @@ changelogItems:
 
 Sourcegraph 3.34 is now available! For this release, we introduced:
 
+## No results page
+When your search has no results, we will now display helpful tips on how to use Sourcegraph search, examples of how to solve common query issuses, and links to help videos addressing common search use cases.
+
+
 # 3.34.0
 # Added
   - description: "Added documentation for merging site-config files. Available since 3.32"
