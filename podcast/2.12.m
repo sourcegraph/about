@@ -264,9 +264,9 @@ And Facebook.
 
 **Joseph Nelson:**
 
-But anyway, so, the annual Facebook congressional hackathon, and by annual, I think it happened twice every other year. And I was re-confronted with this problem, but the difference was that offices showed up and came to say things about the types of issues they were facing and solutions they were hoping to see to their problems. And I was re-confronted with the same thing that I felt as an intern, except this time I felt like I had some level of programming skills to change that.
+But anyway, so, the annual Facebook Congressional Hackathon, and by annual, I think it happened twice every other year. And I was re-confronted with this problem, but the difference was that offices showed up and came to say things about the types of issues they were facing and solutions they were hoping to see to their problems. And I was re-confronted with the same thing that I felt as an intern, except this time I felt like I had some level of programming skills to change that.
 
-So, we hacked together. I don't know if you know the open source library spaCy–it's an NLP library. It's pretty good. Burton would probably outpace it today, but at the time... I guess you can use Burton spaCy, but anyway. SpaCy was pretty good for building an off-the-shelf topic model and tokenizing text in an efficient way for identifying when messages were about similar content.
+So, we hacked together. I don't know if you know the open source library spaCy–it's an NLP library. It's pretty good. BERT would probably outpace it today, but at the time... I guess you can use BERT in spaCy, but anyway. SpaCy was pretty good for building an off-the-shelf topic model and tokenizing text in an efficient way for identifying when messages were about similar content.
 
 And we demoed this to some of the offices, and what's cool about serving institutions is that it's pretty apolitical. Improving the institution independent of what the issue is just generally feels good. Being able to make it so that offices can be more responsive regardless of what the issue is about is pretty agreeable territory. And so I found that to be pretty cool in that Seth Moulton's, Kathy McMorris Roger's office, Darrell Issa's office-
 
@@ -288,7 +288,7 @@ Your market size is 538 approximately, plus 100 senators.
 
 We didn't raise any funding, shockingly, for a market size of 538 and never growing–unless, I guess, DC becomes a state. So that's a pretty good market to tackle. No, so we didn't ever want to raise funding and knew it wasn't the market. It's more about solving this important problem.
 
-But it taught me, actually, a lot about doing enterprise-based deployments, because the entire product had to run on-prem. Basically, if you want to sell your product to the House, you have to comply with the very specific IT Schedule 70. Well, not exactly IT Schedule 70, the Congress has exempted themselves from that, conveniently, but you still have to deploy to the Ford house office building where they basically give you an empty Linux box and they're like, "Go." 
+But it taught me, actually, a lot about doing enterprise-based deployments, because the entire product had to run on-prem. Basically, if you want to sell your product to the House, you have to comply with the very specific IT Schedule 70. Well, not exactly IT Schedule 70, the Congress has exempted themselves from that, conveniently, but you still have to deploy to the Ford House office building where they basically give you an empty Linux box and they're like, "Go." 
 
 **Beyang Liu:**
 
@@ -456,7 +456,7 @@ Cool. So it seems like you had so much experience applying statistical analysis 
 
 The backstory is that a childhood friend of mine from Iowa and now my co-founder Brad Dwyer, in 2017... So when I was working on Represently, he was running a company in the social game space called Hatchlings, which is a Facebook game in the Zynga-era. And Brad and I are surprisingly similar. His company started out of a hackathon. He didn't really mean to build a business but ended up building this large, bootstrap thing.
 
-But he phoned me, and you say there's no computer vision background. In fact, in 2017, when AR Kit had come out, Brad had this great idea where he was like, "What if we built an application that solved Sudoku puzzles for you?"
+But he phoned me, and you say there's no computer vision background. In fact, in 2017, when ARKit had come out, Brad had this great idea where he was like, "What if we built an application that solved Sudoku puzzles for you?"
 
 So on your iPhone, you'll hold it up over the top of a Sudoku puzzle and then it relays all the solutions in augmented reality so you can see it being solved live–right before your eyes sort of thing. And Brad's a super talented developer, and at the time, he was relatively novice to machine learning stuff.
 
@@ -464,7 +464,7 @@ And he was like, "Oh, who do I know that does machine learning stuff in my life?
 
 And so he phoned me up and he was like, "Hey, what do you think about this idea?" And I was like, "Man, the digit recognition is the hello world of computer vision. Like MNIST dataset, reading digits, no problem at all."
 
-The AR Kit side of stuff, I don't know a whole lot about, but he took the opposite route. He's like, "The ARKit stuff is the easy part. The computer vision stuff is going to be the hard part.” So basically, 30 days later, we have this thing thrown together that Brad builds and releases and calls it Magic Sudoku, and it wins Product Hunt's AR app of the year, catches a lot of people's imagination and had a really, really great user experience and exposed what was possible.
+The ARKit side of stuff, I don't know a whole lot about, but he took the opposite route. He's like, "The ARKit stuff is the easy part. The computer vision stuff is going to be the hard part.” So basically, 30 days later, we have this thing thrown together that Brad builds and releases and calls it Magic Sudoku, and it wins Product Hunt's AR app of the year, catches a lot of people's imagination and had a really, really great user experience and exposed what was possible.
 
 We carry around these pocket supercomputers. Our cameras are better than the digital professional cameras that you'd buy even five years ago, and it's just in your pocket. The processing power of a phone, even a TI-84 calculator, is better than we used to land on the moon. And the intersection of all those things hasn't really changed the way we interact with the world around us, and so we figured that this would be a small glimmer of what's possible when we threw together this computer vision AR thing.
 
@@ -604,7 +604,7 @@ It's like Emacs versus Vim.
 
 **Joseph Nelson:**
 
-Yeah, a little bit. Are you on Efficientdet? Are you using YOLOv4, YOLOv3, Yor OLOv5S? Where are you at? And that's fun. But the truth is that at the end of the day, for your business application, what you care about is one that's within the performance expectations you expect both in terms of speed, latency, size, the model, the fit, and whether it runs wherever you want to run it. There's not a uniform one-is-best-for-all situation–the same is true. Models come with trade-offs, too–of the size of the model and some of those sorts of things.
+Yeah, a little bit. Are you on Efficientdet? Are you using YOLOv4, YOLOv3, YOLOv5? Where are you at? And that's fun. But the truth is that at the end of the day, for your business application, what you care about is one that's within the performance expectations you expect both in terms of speed, latency, size, the model, the fit, and whether it runs wherever you want to run it. There's not a uniform one-is-best-for-all situation–the same is true. Models come with trade-offs, too–of the size of the model and some of those sorts of things.
 
 So, we often encourage users to think deploy-centric. What are your deployment conditions? Are you able to run at server side or does it need to run at the edge? All these sorts of things factor into consideration. And then we actually try to make that be even less of a concern for the end-developer. So, tell us where you're going to run your model, then we'll help you optimize to find the best performance for that given deployment target.
 
@@ -705,7 +705,6 @@ But this is now an example web app where I could just include this on the source
 Oh, wow. That's awesome.
 
 **Joseph Nelson:**
-
 Yeah, well raccoons are sort of like the example we find to be pretty fun. Over time, there's thousands of projects that people are making. And then, we curate the best ones and list them publicly for users to get going.
 
 **Beyang Liu:**
@@ -717,8 +716,6 @@ Is there a backstory to why the raccoon has become the unofficial mascot of Robo
 Here, let me stop my share. I wish there were a more fun story, but there’s a couple of different origins. One is that for one of the most famous data sets that someone used for custom object detection in TensorFlow, they actually hosted a bunch of raccoon images. Someone named Dat Tran. And so, we adapted that.
 
 But then over time, we've back propagated reasons for why the raccoon makes sense. For example, Roboflow cleans up your trash data and raccoons eat trash or raccoons are these animals that are very curious and don't like to be in cages.
-
-**Joseph Nelson:**
 
 At Roboflow, we have a very curious culture. And so, it's become an unofficial company value of saying, "We are raccoons." And it's silly, but it hits on these points of the importance of thinking a little bit differently and maybe being a healthy amount of curious.
 
@@ -803,8 +800,6 @@ That's cool. For those listening at home, there's this neat little UI that autom
 So, all these variants are things that I can apply. And then when we go to generate stuff, that's when you can choose how many image versions you want to generate. An example: one image could become three images where one image turns into three variants. One of those variants could be a little bit brighter. One of those variants could be zoomed in a little bit–those sorts of ideas.
 
 But then once I have my dataset randomly messed up, once I’ve deliberately perturbed my data a little bit, that’s when I can train. And so, there's a couple of different ways I could train. I could ask Roboflow to pick a model and train for me, like an AutoML solution. And I could train either from scratch or from a checkpoint. Or I could train this with my own infrastructure. And we have a model zoo that users can use to basically select any of these architectures that play nicely with Roboflow.
-
-**Joseph Nelson:**
 
 And you could use the workflow pip package to then pull those up.
 
