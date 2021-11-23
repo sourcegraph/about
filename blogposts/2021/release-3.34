@@ -1,25 +1,45 @@
 ---
 title: "Sourcegraph 3.34 release"
 publishDate: 2021-11-24T10:00-07:00
-description: "Sourcegraph 3.34 introduces UPDATE"
+description: "Sourcegraph 3.34 introduces a new page with search tips for searches that return no results along with Find Implementations functionality for Go."
 tags: [blog, release]
 slug: "release/3.34"
 published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.34/sourcegraph-3-34-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.34/sourcegraph-3-34-release.png
 changelogItems:
-
+  - description: "Added the \"no results page\", a help page providing search tips if a search returns no results."
+    url: https://github.com/sourcegraph/sourcegraph/pull/26154
+    category: Search
+  - description: "The search indexer only polls repositories that have been marked as changed. This significantly reduces load on the Git server in installations with many repositories. If you notice index staleness, you can try disabling by setting the environment variable `SRC_SEARCH_INDEXER_EFFICIENT_POLLING_DISABLED` on `sourcegraph-frontend`."
+    url: https://github.com/sourcegraph/sourcegraph/issues/27058
+    category: Search
+  - description: "Added logging of incoming Batch Changes webhooks to help site admins debug issues with webhook delivery. By default, sites without encryption will log webhooks for three days and sites with encryption will not log webhooks."
+    url: https://docs.sourcegraph.com/admin/config/batch_changes#incoming-webhooks
+    category: Admin
+  - description: "Batch Changes now requests `workflow` scope on GitHub personal access tokens to allow writing to the `.github` directory in repositories. If you have already configured a GitHub PAT for Batch Changes, we suggest adding this scope."
+    url: https://docs.sourcegraph.com/batch_changes/how-tos/configuring_credentials
+    category: Batch Changes
+  - description: "The search UI's repositories count as well as the GraphQL API's `search().repositories` and `search().repositoriesCount` have changed semantics from the set of searchable repositories to the set of repositories with matches. This results in increased search speed, and in a future release, we'll introduce separate fields for searchable repositories."
+    url: https://github.com/sourcegraph/sourcegraph/issues/26995
+    category: Search
+  - description: "Version contexts and `repogroup` filters (deprecated in v3.33) have been removed in favor of search contexts."
+    url: https://about.sourcegraph.com/blog/introducing-search-contexts/
+    category: Search
+  - description: "Saved search notifications (deprecated in v3.31.0) have been removed in favor of code monitoring."
+    url: https://docs.sourcegraph.com/code_monitoring
+    category: Search
 ---
 
-Sourcegraph 3.34 is now available! For this release, we introduced:
+Sourcegraph 3.34 is now available! Here are some highlights from this release:
 
 ## No results page
-When your search comes back with no results it can sometimes be hard to know why. We now display helpful tips on how to use search, examples of how to solve common query issues, and links to help videos addressing common use cases.
+When your search comes back with no results it can sometimes be hard to understand why. We now display helpful tips on how to use search, examples of how to solve common query issues, and links to help videos addressing common use cases.
 
 ## Find Implementations for Go
 Navigating to implementations is now available for Go! If you have precise code intelligence enabled for your Go repositories, you can now click on Find Implementations to navigate to a symbol's interface definition. If you're at the interface definition itself, clicking on Find Implementations will show all the places where the interface is being implemented, allowing you to explore how it's being used by other users across repositories. It will also show you which interfaces a struct implements.
-<img width="1193" alt="Screenshot 2021-11-22 at 18 28 39" src="https://user-images.githubusercontent.com/1657213/142938393-7aed0c41-28b8-4cab-bf0d-2f9fd7f1078c.png">
-<img width="1193" alt="Screenshot 2021-11-22 at 18 29 03" src="https://user-images.githubusercontent.com/1657213/142938404-3b845bec-5da2-4ec7-bf17-0e273ff38dcd.png">
+<img width="1193" alt="Find implementations for Go" src="https://user-images.githubusercontent.com/1657213/142938393-7aed0c41-28b8-4cab-bf0d-2f9fd7f1078c.png">
+<img width="1193" alt="Find implementations for Go 2" src="https://user-images.githubusercontent.com/1657213/142938404-3b845bec-5da2-4ec7-bf17-0e273ff38dcd.png">
 
 # 3.34.0
 # Added
