@@ -1,12 +1,12 @@
 ---
 title: "Sourcegraph 3.34 release"
-publishDate: 2021-11-23T10:00-07:00
+publishDate: 2021-11-24T10:00-07:00
 description: "Sourcegraph 3.34 introduces UPDATE"
 tags: [blog, release]
 slug: "release/3.34"
 published: false
-heroImage:
-socialImage:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.34/sourcegraph-3-34-release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.34/sourcegraph-3-34-release.png
 changelogItems:
 
 ---
@@ -17,59 +17,38 @@ Sourcegraph 3.34 is now available! For this release, we introduced:
 When your search comes back with no results it can sometimes be hard to know why. We now display helpful tips on how to use search, examples of how to solve common query issues, and links to help videos addressing common use cases.
 
 ## Find Implementations for Go
-Navigating to implementations is now available for Go! If you have precise code intelligence enabled for your Go repositories, you can now click on Find Implementations to navigate to a symbol's interface definition. If you're at the interface definition itself, clicking on Find Implementations will show all the places where the interface is being implemented, allowing you to explore how it's being used by other users across repositories. It will also show you which interfaces a struct implements. 
+Navigating to implementations is now available for Go! If you have precise code intelligence enabled for your Go repositories, you can now click on Find Implementations to navigate to a symbol's interface definition. If you're at the interface definition itself, clicking on Find Implementations will show all the places where the interface is being implemented, allowing you to explore how it's being used by other users across repositories. It will also show you which interfaces a struct implements.
 <img width="1193" alt="Screenshot 2021-11-22 at 18 28 39" src="https://user-images.githubusercontent.com/1657213/142938393-7aed0c41-28b8-4cab-bf0d-2f9fd7f1078c.png">
 <img width="1193" alt="Screenshot 2021-11-22 at 18 29 03" src="https://user-images.githubusercontent.com/1657213/142938404-3b845bec-5da2-4ec7-bf17-0e273ff38dcd.png">
 
 # 3.34.0
 # Added
-  - description: "Added documentation for merging site-config files. Available since 3.32"
-    url: https://github.com/sourcegraph/sourcegraph/issues/21220
-    category: 
-  - description: "Added site config variable `cloneProgressLog` to optionally enable logging of clone progress to temporary files for debugging. Disabled by default."
-    url: https://github.com/sourcegraph/sourcegraph/pull/26568
-    category: 
-  - description: "GNU's `wget` has been added to all `sourcegraph/*` Docker images that use `sourcegraph/alpine` as its base"
-    url: https://github.com/sourcegraph/sourcegraph/pull/26823
-    category: 
-  - description: "Added the \"no results page\", a help page shown if a search doesn't return any results"
+  - description: "Added the \"no results page\", a help page providing search tips if a search returns no results."
     url: https://github.com/sourcegraph/sourcegraph/pull/26154
     category: Search
-  - description: Added monitoring page for Redis databases
-    url: https://github.com/sourcegraph/sourcegraph/issues/26967
-    category: 
-  - description: "The search indexer only polls repositories that have been marked as changed. This reduces a large source of load in installations with a large number of repositories. If you notice index staleness, you can try disabling by setting the environment variable `SRC_SEARCH_INDEXER_EFFICIENT_POLLING_DISABLED` on `sourcegraph-frontend`."
+  - description: "The search indexer only polls repositories that have been marked as changed. This significantly reduces load on the Git server in installations with many repositories. If you notice index staleness, you can try disabling by setting the environment variable `SRC_SEARCH_INDEXER_EFFICIENT_POLLING_DISABLED` on `sourcegraph-frontend`."
     url: https://github.com/sourcegraph/sourcegraph/issues/27058
     category: Search
-  - description: "Pings include instance wide total counts of Code Insights grouped by presentation type, series type, and presentation-series type."
-    url: https://github.com/sourcegraph/sourcegraph/pull/27602
-    category: 
-  - description: "Added logging of incoming Batch Changes webhooks, which can be viewed by site admins. By default, sites without encryption will log webhooks for three days, while sites with encryption will not log webhooks without explicit configuration. [See the documentation for more details](https://docs.sourcegraph.com/admin/config/batch_changes#incoming-webhooks)."
-    url: https://github.com/sourcegraph/sourcegraph/issues/26669
+  - description: "Added logging of incoming Batch Changes webhooks to help site admins debug issues with webhook delivery. By default, sites without encryption will log webhooks for three days and sites with encryption will not log webhooks.
+    url: https://docs.sourcegraph.com/admin/config/batch_changes#incoming-webhooks
     category: Admin
 # Changed
-  - description: Removed liveness probes from Kubernetes Prometheus deployment
-    url: "https://github.com/sourcegraph/deploy-sourcegraph/pull/2970"
-    category: 
   - description: "Batch Changes now requests the `workflow` scope on GitHub personal access tokens to allow batch changes to write to the `.github` directory in repositories. If you have already configured a GitHub PAT for use with Batch Changes, we suggest adding the scope to the others already granted."
     url: https://github.com/sourcegraph/sourcegraph/issues/26606
     category: Batch Changes
-  - description: "Sourcegraph's Prometheus and Alertmanager dependency has been upgraded to v2.31.1 and v0.23.0 respectively."
-    url: https://github.com/sourcegraph/sourcegraph/pull/27336
-    category: 
   - description: "The search UI's repositories count as well as the GraphQL API's `search().repositories` and `search().repositoriesCount` have changed semantics from the set of searchable repositories to the set of repositories with matches. In a future release, we'll introduce separate fields for the set of searchable repositories backed by a [scalable implementation](https://github.com/sourcegraph/sourcegraph/issues/27274)."
     url: https://github.com/sourcegraph/sourcegraph/issues/26995
     category: Search
 # Fixed
   - description: An issue that causes the server to panic when performing a structural search via the GQL API for a query that also
-    url: 
+    url:
     category: Search
   - description: "Improve detection for Docker running in non-linux"
-    url: 
-    category: 
+    url:
+    category:
   - description: "Fixed the cache size calculation used for Kubernetes deployments. Previously, the calculated value was too high and would exceed the ephemeral storage request limit. #26283"
     url: https://github.com/sourcegraph/sourcegraph/issues/26283
-    category: 
+    category:
   - description: "Fixed a regression that was introduced in 3.27 and broke SSH-based authentication for managing Batch Changes changesets on code hosts. SSH keys generated by Sourcegraph were not used for authentication and authenticating with the code host would fail if no SSH key with write-access had been added to `gitserver`."
     url: https://github.com/sourcegraph/sourcegraph/pull/27491
     category: Batch Changes
@@ -77,12 +56,9 @@ Navigating to implementations is now available for Go! If you have precise code 
     url: https://github.com/sourcegraph/sourcegraph/issues/27044
     category: Repositories
 # Removed
-  - description: "All version contexts functionality (deprecated in 3.33) is now removed."
-    url: https://github.com/sourcegraph/sourcegraph/issues/26267
-    category: 
-  - description: "Query filter `repogroup` (deprecated in 3.33) is now removed."
-    url: https://github.com/sourcegraph/sourcegraph/issues/24277
-    category: Repositories
-  - description: "Notifications for saved searches (deprecated in v3.31.0) have been removed"
-    url: https://github.com/sourcegraph/sourcegraph/pull/27912/files
+  - description: "Version contexts and `repogroup` filters (deprecated in v3.33) have been removed in favor of search contexts."
+    url: https://about.sourcegraph.com/blog/introducing-search-contexts/
+    category: Search
+  - description: "Saved search notifications (deprecated in v3.31.0) have been removed in favor of code monitoring."
+    url: https://docs.sourcegraph.com/code_monitoring
     category: Search
