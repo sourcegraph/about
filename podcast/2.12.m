@@ -8,7 +8,7 @@ published: true
 
 <!-- START AUDIO -->
 
-<audio className="object-center" src="https://www.buzzsprout.com/1097978/9593278.mp3?download=true" controls preload="none"></audio>
+<audio className="object-center" src="https://www.buzzsprout.com/1097978/9593278-arming-the-rebels-of-the-metaverse-with-joseph-nelson-ceo-and-co-founder-of-roboflow.mp3?download=true" controls preload="none"></audio>
 
 <!-- END AUDIO -->
 
@@ -22,7 +22,7 @@ Joseph Nelson, Beyang Liu
 
 When, and how, will computer vision and machine learning revolutionize the world? In this episode, Joseph Nelson, CEO and co-founder of Roboflow, joins Beyang Liu, co-founder and CTO of Sourcegraph, to discuss how Joseph got started in programming (developing a joke generator for a graphing calculator), to share his experience working as a human Google alert for the United States Congress, and to explain why he finds building developer tools so empowering. Along the way, Joseph explains why he thinks machine learning and computer vision will have greater effects than the Internet and the mobile phone, and shows how Roboflow will accelerate our progress toward that future. And at the end, Joseph tours Beyang through Roboflow, showing him a raccoon detector and chess piece identifier. 
 
-Click the audio player below to listen, or [click here to watch the video](https://youtu.be/VQCI6GPKMGY).
+Click the audio player below to listen, or [click here to watch the video](https://youtu.be/AEX7F-HhorA).
 
 <!-- END SUMMARY -->
 
