@@ -14,7 +14,7 @@ changelogItems:
 Sourcegraph 3.34 is now available! For this release, we introduced:
 
 ## No results page
-When your search has no results, we will now display helpful tips on how to use Sourcegraph search, examples of how to solve common query issuses, and links to help videos addressing common search use cases.
+When your search comes back with no results it can sometimes be hard to know why. We now display helpful tips on how to use search, examples of how to solve common query issues, and links to help videos addressing common use cases.
 
 ## Find Implementations for Go
 Navigating to implementations is now available for Go! If you have precise code intelligence enabled for your Go repositories, you can now click on Find Implementations to navigate to a symbol's interface definition. If you're at the interface definition itself, clicking on Find Implementations will show all the places where the interface is being implemented, allowing you to explore how it's being used by other users across repositories. It will also show you which interfaces a struct implements. 
