@@ -17,10 +17,10 @@ changelogItems:
   - description: 'To help site admins debug issues with webhook delivery, we have added logging of incoming Batch Changes webhooks. By default, sites without encryption will log webhooks for three days and sites with encryption will not log webhooks.'
     url: https://docs.sourcegraph.com/admin/config/batch_changes#incoming-webhooks
     category: Admin
-  - description: 'In order to allow writing to the `.github` directory in repositories, Batch Changes now requests the `workflow` scope on GitHub personal access tokens. If you have already configured a GitHub PAT for Batch Changes, we suggest adding this scope.'
+  - description: 'To allow writing to the `.github` directory in repositories, Batch Changes now requests the `workflow` scope on GitHub personal access tokens. If you have already configured a GitHub PAT for Batch Changes, we suggest adding this scope.'
     url: https://docs.sourcegraph.com/batch_changes/how-tos/configuring_credentials
     category: Batch Changes
-  - description: "In order to increase search speed, the search UI's repository count and the GraphQL API's `search().repositories`/`search().repositoriesCount` have changed semantics from being the set of searchable repositories to the set of repositories with matches. In a future release, we'll introduce separate fields for searchable repositories."
+  - description: "To increase search speed, the search UI's repository count and the GraphQL API's `search().repositories`/`search().repositoriesCount` have changed semantics from being the set of searchable repositories to the set of repositories with matches. In a future release, we’ll introduce separate fields for searchable repositories."
     url: https://github.com/sourcegraph/sourcegraph/issues/26995
     category: Search
   - description: 'Version contexts and `repogroup` filters (deprecated in v3.33) have been removed in favor of search contexts.'
