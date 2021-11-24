@@ -4,7 +4,7 @@ publishDate: 2021-11-24T10:00-07:00
 description: "Sourcegraph 3.34 introduces helpful search tips when no results are returned, along with 'Find Implementations' support for Go."
 tags: [blog, release]
 slug: "release/3.34"
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.34/sourcegraph-3-34-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.34/sourcegraph-3-34-release.png
 changelogItems:
