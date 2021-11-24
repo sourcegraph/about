@@ -42,4 +42,3 @@ Searches that return no results can result in a confusing experience. When this 
 
 If you have precise code intelligence enabled for your Go repositories, you can now click on "Find Implementations" to navigate to a symbol's interface definition. If you're at the interface definition itself, clicking on the same button will show all the places where the interface is being implemented, allowing you to explore how it's being used by other users across repositories. It can also show you which interfaces a struct implements.
 <img class="blog-image" title="Find implementations for Go" alt="Find implementations for Go" src="https://user-images.githubusercontent.com/1657213/142938393-7aed0c41-28b8-4cab-bf0d-2f9fd7f1078c.png">
-<img class="blog-image" title="Find implementations for Go" alt="Find implementations for Go 2" src="https://user-images.githubusercontent.com/1657213/142938404-3b845bec-5da2-4ec7-bf17-0e273ff38dcd.png">
