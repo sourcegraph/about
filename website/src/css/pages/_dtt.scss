@@ -59,20 +59,31 @@
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column-reverse;
+    }
 }
 
 .upcoming-description {
     flex: 1;
+    max-width: 66.66%;
 }
 
 .upcoming-details {
     font-weight: bold;
 }
 
-.upcoming-profile {
-    flex: 1;
+.upcoming-profile-container {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    max-width: 25%;
+    overflow: hidden;
+}
+
+.upcoming-profile {
+    height: 100%;
+    margin-left: -25%;
 }
 
 .featured-episode-container {
@@ -92,4 +103,8 @@
 
 .hubspot-form {
     margin-bottom: 2rem;
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }

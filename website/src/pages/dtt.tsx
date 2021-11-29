@@ -7,8 +7,8 @@ import { BlogHeader } from '../components/blog/BlogHeader'
 import { FeaturedEpisode } from '../components/blog/FeaturedEpisode'
 import HubspotForm from '../components/HubspotForm'
 
-import Logo from '../../public/DevToolTimeLogo.svg'
-import upcomingProfile from '../../static/blog/rog-peppe.jpeg'
+// import Logo from '../../public/DevToolTimeLogo.svg'
+import upcomingProfile from '../../static/blog/lorna-jane-michell-profile.jpg'
 
 export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => {
     const posts = props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)
@@ -55,18 +55,17 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                     <h2 className="card-header">Join us for our next episode!</h2>
                     <div className="card-body upcoming-content">
                         <div className="upcoming-description">
-                            <p className="upcoming-details">Roger Peppé - Software Engineer at InfluxData</p>
-                            <p className="upcoming-date">November 10, 2021 | 11am PT / 2pm ET / 8pm CEST</p>
-                            <p>
-                                Fatally corrupted early on by the utopian influence of the original Bell Labs Unix, Plan
-                                9, and Inferno systems, Roger is forever looking for that same spark of simplicity and
-                                power. Luckily, Go came along at just the right time and he's been actively involved in
-                                the community and as a contributor ever since. He works at InfluxData on their InfluxDB
-                                cloud service. In his spare time, he likes to grow vegetables, play trad fiddle, and
-                                climb rocks.
-                            </p>
+                            <p className="upcoming-details">Lorna Jane Michell- Developer Advocate at Aiven</p>
+                            <p className="upcoming-date">December 8, 2021 | 11am PT / 2pm ET / 8pm CEST</p>
+                            <p>Fill in content.</p>
                         </div>
-                        <img src={upcomingProfile} alt="Rog Peppe profile image" className="upcoming-profile" />
+                        <div className="upcoming-profile-container">
+                            <img
+                                src={upcomingProfile}
+                                alt="Lorna Jane Michell profile image"
+                                className="upcoming-profile"
+                            />
+                        </div>
                     </div>
                 </div>
                 <section className="py-5">
@@ -86,6 +85,7 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                             {...postDefaultProps}
                         />
                         <div className="card p-4 hubspot-form">
+                            <h2>Sign up for reminders</h2>
                             <HubspotForm
                                 portalId="2762526"
                                 formId="d59f5947-8f58-467b-8609-d095e9d8c9c7"
