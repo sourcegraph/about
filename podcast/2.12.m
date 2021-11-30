@@ -1,6 +1,6 @@
 ---
 title: 'Arming the rebels of the metaverse, with Joseph Nelson, CEO and co-founder of Roboflow'
-publishDate: 2021-11-30T10:00-07:00
+publishDate: 2021-11-29T10:00-07:00
 tags: [podcast]
 slug: joseph-nelson
 published: true
