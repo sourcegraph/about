@@ -8,7 +8,7 @@ import { FeaturedEpisode } from '../components/blog/FeaturedEpisode'
 import HubspotForm from '../components/HubspotForm'
 
 // import Logo from '../../public/DevToolTimeLogo.svg'
-import upcomingProfile from '../../static/blog/lorna-jane-michell-profile.jpg'
+import upcomingProfile from '../../static/blog/lorna-jane-mitchell-profile.jpg'
 
 export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => {
     const posts = props.data.allMarkdownRemark.edges.filter((post: any) => post.node.frontmatter.published === true)
@@ -55,14 +55,20 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                     <h2 className="card-header">Join us for our next episode!</h2>
                     <div className="card-body upcoming-content">
                         <div className="upcoming-description">
-                            <p className="upcoming-details">Lorna Jane Michell- Developer Advocate at Aiven</p>
+                            <p className="upcoming-details">Lorna Jane Mitchell- Developer Advocate at Aiven</p>
                             <p className="upcoming-date">December 8, 2021 | 11am PT / 2pm ET / 8pm CEST</p>
-                            <p>Fill in content.</p>
+                            <p>
+                                Lorna Jane Mitchell, known by many of her online colleagues and peers as lornajane, is a
+                                Developer Advocate for Aiven and is based in Huddersfield in northern England. She
+                                supports developers doing amazing things with open source data platforms. Lorna is the
+                                author of "Git Workbook", "PHP Web Services" and "PHP Master" as well as being a regular
+                                conference speaker and writer for a number of outlets.
+                            </p>
                         </div>
                         <div className="upcoming-profile-container">
                             <img
                                 src={upcomingProfile}
-                                alt="Lorna Jane Michell profile image"
+                                alt="Lorna Jane Mitchell profile image"
                                 className="upcoming-profile"
                             />
                         </div>
