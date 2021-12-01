@@ -33,7 +33,7 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
             <div className="container-lg">
                 <div className="dtt-header mt-4">
                     <div className="dtt-brand">
-                        <p className="dtt-description mb-1">
+                        <div className="dtt-description mb-1">
                             <BlogHeader title={'Dev Tool Time'} baseUrl={'/dtt'} />
                             <p>
                                 Sourcegraph engineers interview other devs in the community about their desk set up,
@@ -45,7 +45,7 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                                 Hosted by <a href="https://twitter.com/TeejDeVries">TJ DeVries</a> and{' '}
                                 <a href="https://twitter.com/thorstenball">Thorsten Ball.</a>
                             </p>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div className="dtt-upcoming card mt-3">
