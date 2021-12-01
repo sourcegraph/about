@@ -19,7 +19,6 @@ export const FeaturedEpisode: React.FunctionComponent<Props> = ({
     tag: Tag = 'div',
     renderTitleAsLink = true,
 }) => {
-    console.log(post.frontmatter.youtube)
     return (
         <Tag className={`blog-post ${className}`}>
             <div className="card-body pt-0 d-flex">

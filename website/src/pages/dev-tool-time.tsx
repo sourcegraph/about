@@ -7,7 +7,6 @@ import { BlogHeader } from '../components/blog/BlogHeader'
 import { FeaturedEpisode } from '../components/blog/FeaturedEpisode'
 import HubspotForm from '../components/HubspotForm'
 
-// import Logo from '../../public/DevToolTimeLogo.svg'
 import upcomingProfile from '../../static/blog/lorna-jane-mitchell-profile.jpg'
 
 export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any }>> = props => {
@@ -28,7 +27,7 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                 title: 'Dev Tool Time',
                 description:
                     'Sourcegraph engineers interview other devs in the community about their desk set up, favorite dev tools, productivity hacks, and more.',
-                image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+                image: 'https://about.sourcegraph.com/DTT-social-image.png',
             }}
         >
             <div className="container-lg">
@@ -48,8 +47,6 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                             </p>
                         </p>
                     </div>
-                    {/* The mt class below is just to match the bulit-styling on the Blog Header */}
-                    {/* <img src={Logo} alt="Dev Tool Time Logo" className="dtt-logo mt-3" /> */}
                 </div>
                 <div className="dtt-upcoming card mt-3">
                     <h2 className="card-header">Join us for our next episode!</h2>
@@ -94,8 +91,8 @@ export const DttPage: React.FunctionComponent<PageProps<{ allMarkdownRemark: any
                             <h2>Sign up for reminders</h2>
                             <HubspotForm
                                 portalId="2762526"
-                                formId="d59f5947-8f58-467b-8609-d095e9d8c9c7"
-                                campaignId="013t0000022mdYAAQ"
+                                formId="cbc1b817-2ab7-4d73-b504-2467b93d3b67"
+                                campaignId="7013t0000022mdYAAQ"
                             />
                         </div>
                     </div>
