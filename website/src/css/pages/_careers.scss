@@ -1,115 +1,55 @@
 .careers {
     h1 {
-        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 2.8rem;
     }
 
     .heroImage {
+        width: 100%;
+        max-width: 1500px;
+    }
+
+    h2 {
+        font-size: 3rem;
+        line-height: 3.75rem;
+        font-weight: bold;
+    }
+
+    .benefits {
+        h3 {
+            font-size: 1.15rem;
+            line-height: 1.4rem;    
+        }
+        p {
+            line-height: 1.25rem;
+        }
+    }
+
+    .handbook-benefits-link {
+        text-decoration: underline;
+        color: $sg-space-black;
     }
 
     .icon {
-        width: 32px;
-        height: 32px;
-    }
-    /* New stlyes above this line */
-
-    .values {
-        h3 {
-            text-transform: uppercase;
-            font-size: 1.5em;
-        }
+        width: 45px;
+        height: 45px;
     }
 
-    p.font-size-large {
-        font-weight: 300;
-        line-height: 1em;
+    .culture {
+        width: 100%;
+        max-width: 1500px;
     }
 
-    .scrollable-container {
-        height: 450px;
-        overflow-y: auto;
-        /* Hide scrollbar for IE, Edge and Firefox */
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        &::-webkit-scrollbar {
-            display: none;
-        }
+    .aligned {
+        margin-top: 400px;
     }
 
-    .job-link {
-        color: $black;
-        text-decoration: underline;
-        display: inline-block;
+    .v-aligned {
+        margin-top: 340px;
     }
 
-    .bg-dark {
-        background-color: $dark-13;
-        color: $white;
+    .contact p {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
     }
-
-    /*** Animated Banner Text ***/
-    #animated-container {
-        overflow: hidden;
-        h2 {
-            font-weight: 300;
-        }
-    }
-    #animated-text {
-        width: 4700px;
-        height: 110px;
-        /* animation properties */
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-        -moz-animation: slide-in 20s linear infinite;
-        -webkit-animation: slide-in 20s linear infinite;
-        animation: slide-in 20s linear infinite;
-        &:hover {
-            animation-play-state: paused;
-        }
-
-        .carouselItem {
-            cursor: pointer;
-            &:hover {
-                text-decoration: underline;
-                text-decoration-thickness: from-font;
-                color: red;
-            }
-            .icon {
-                width: 60px;
-                height: 60px;
-            }
-        }
-    }
-    /* for Firefox */
-    @-moz-keyframes slide-in {
-        from {
-            -moz-transform: translateX(0%);
-        }
-        to {
-            -moz-transform: translateX(-50%);
-        }
-    }
-    /* for Chrome */
-    @-webkit-keyframes slide-in {
-        from {
-            -webkit-transform: translateX(0%);
-        }
-        to {
-            -webkit-transform: translateX(-50%);
-        }
-    }
-    @keyframes slide-in {
-        from {
-            -moz-transform: translateX(0%);
-            -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-        }
-        to {
-            -moz-transform: translateX(-50%);
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-        }
-    }
-    /*** END - Animated Banner Text ***/
 }
