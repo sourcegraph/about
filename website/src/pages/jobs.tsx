@@ -10,13 +10,62 @@ import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogo
 
 const CareersPage = props => {
     let items = [
-        { id: 1, buttonLabel: "Being Customer-First", imageUrl: "../careers_hero_img.png", text: "0", className: "active", itemClassName: "d-block"},
-        { id: 2, buttonLabel: "Work as a Team", imageUrl: "../careers_hero_img.png", text: "1", className: "", itemClassName: "d-none"},
-        { id: 3, buttonLabel: "High Quality", imageUrl: "../careers_hero_img.png", text: "You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.", className: "", itemClassName: "d-none"},
-        { id: 4, buttonLabel: "High Agency", imageUrl: "../careers_hero_img.png", text: "3", className: "", itemClassName: "d-none"},
-        { id: 5, buttonLabel: "Welcoming & Inclusive", imageUrl: "../careers_hero_img.png", text: "4", className: "", itemClassName: "d-none"},
-        { id: 6, buttonLabel: "Open & Transparent", imageUrl: "../careers_hero_img.png", text: "5", className: "", itemClassName: "d-none"},
-        { id: 7, buttonLabel: "Continuos Growth", imageUrl: "../careers_hero_img.png", text: "6", className: "", itemClassName: "d-none"}
+        {
+            id: 1,
+            buttonLabel: 'Being Customer-First',
+            imageUrl: '../careers_hero_img.png',
+            text: '0',
+            className: 'active',
+            itemClassName: 'd-block',
+        },
+        {
+            id: 2,
+            buttonLabel: 'Work as a Team',
+            imageUrl: '../careers_hero_img.png',
+            text: '1',
+            className: '',
+            itemClassName: 'd-none',
+        },
+        {
+            id: 3,
+            buttonLabel: 'High Quality',
+            imageUrl: '../careers_hero_img.png',
+            text: 'You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.',
+            className: '',
+            itemClassName: 'd-none',
+        },
+        {
+            id: 4,
+            buttonLabel: 'High Agency',
+            imageUrl: '../careers_hero_img.png',
+            text: '3',
+            className: '',
+            itemClassName: 'd-none',
+        },
+        {
+            id: 5,
+            buttonLabel: 'Welcoming & Inclusive',
+            imageUrl: '../careers_hero_img.png',
+            text: '4',
+            className: '',
+            itemClassName: 'd-none',
+        },
+        {
+            id: 6,
+            buttonLabel: 'Open & Transparent',
+            imageUrl: '../careers_hero_img.png',
+            text: '5',
+            className: '',
+            itemClassName: 'd-none',
+        },
+        {
+            id: 7,
+            buttonLabel: 'Continuos Growth',
+            imageUrl: '../careers_hero_img.png',
+            text: '6',
+            className: '',
+            itemClassName: 'd-none',
+        },
     ]
 
     return (
@@ -25,11 +74,10 @@ const CareersPage = props => {
                 <ContentSection className="py-7">
                     <div className="row">
                         <div className="col-lg-11">
-                            <h1 className="display-2 font-weight-bold">
-                                Let’s build the future together.
-                            </h1>
+                            <h1 className="display-2 font-weight-bold">Let’s build the future together.</h1>
                             <h1 className="display-2 font-weight-normal">
-                                We're developing the world's most advanced code search navigation platform with brilliant dreamers around the globe.
+                                We're developing the world's most advanced code search navigation platform with
+                                brilliant dreamers around the globe.
                             </h1>
                         </div>
                     </div>
@@ -51,7 +99,17 @@ const CareersPage = props => {
                     <div className="row mb-6">
                         <div className="col-lg-10 m-auto">
                             <h2 className="display-2 text-center">Happy, healthy, and always in the flow.</h2>
-                            <p className="text-center">You can view all benefits and details in <a target="_blank" className="handbook-benefits-link" href="https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks">our handbook</a>.</p>
+                            <p className="text-center">
+                                You can view all benefits and details in{' '}
+                                <a
+                                    target="_blank"
+                                    className="handbook-benefits-link"
+                                    href="https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks"
+                                >
+                                    our handbook
+                                </a>
+                                .
+                            </p>
                         </div>
                     </div>
                     <div className="row my-6">
@@ -128,10 +186,7 @@ const CareersPage = props => {
                     </div>
                 </div>
 
-                <Carousel
-                    className="my-8 mx-7"
-                    items={items}
-                />
+                <Carousel className="my-8 mx-7" items={items} />
 
                 <div className="row my-3">
                     <img src="../careers/Culture_8.png" className="culture mx-auto" />
