@@ -174,7 +174,7 @@ const CareersPage = props => {
                                     <p className="v-aligned">Start your developer/influencer career with us.</p>
                                 </h1>
                                 <div className="col-lg-5">
-                                    <img src="../careers/culture1.png"/>
+                                    <img src="../careers/culture1.png" />
                                 </div>
                                 <div className="col-lg-1"></div>
                             </div>
@@ -184,10 +184,13 @@ const CareersPage = props => {
                             <div className="row p-8">
                                 <div className="col-lg-1"></div>
                                 <h1 className="col-lg-5">
-                                    <p className="v-aligned">This pic is taken by a great bartender in Berlin who spelled Sourcegraph correctly on his first try. He also gave us free shots.</p>
+                                    <p className="v-aligned">
+                                        This pic is taken by a great bartender in Berlin who spelled Sourcegraph
+                                        correctly on his first try. He also gave us free shots.
+                                    </p>
                                 </h1>
                                 <div className="col-lg-5">
-                                    <img src="../careers/culture2.png"/>
+                                    <img src="../careers/culture2.png" />
                                 </div>
                                 <div className="col-lg-1"></div>
                             </div>
@@ -200,7 +203,7 @@ const CareersPage = props => {
                                     <p className="v-aligned">When we say fast, we don't play...</p>
                                 </h1>
                                 <div className="col-lg-5">
-                                    <img src="../careers/culture3.png"/>
+                                    <img src="../careers/culture3.png" />
                                 </div>
                                 <div className="col-lg-1"></div>
                             </div>
@@ -210,7 +213,9 @@ const CareersPage = props => {
                             <div className="row p-8">
                                 <div className="col-lg-1"></div>
                                 <h1 className="col-lg-5">
-                                    <p className="v-aligned">Nothing is more valuable than this feeling in the world. That’s it.</p>
+                                    <p className="v-aligned">
+                                        Nothing is more valuable than this feeling in the world. That’s it.
+                                    </p>
                                 </h1>
                                 <div className="col-lg-5">
                                     <img src="../careers/culture4.png" className="landscape" />
@@ -223,10 +228,12 @@ const CareersPage = props => {
                             <div className="row p-8">
                                 <div className="col-lg-1"></div>
                                 <h1 className="col-lg-5">
-                                    <p className="v-aligned">Cats. Cats. Cats. Cats. Cats. And more cats. Somebody, please stop us.</p>
+                                    <p className="v-aligned">
+                                        Cats. Cats. Cats. Cats. Cats. And more cats. Somebody, please stop us.
+                                    </p>
                                 </h1>
                                 <div className="col-lg-5">
-                                    <img src="../careers/culture5.png"/>
+                                    <img src="../careers/culture5.png" />
                                 </div>
                                 <div className="col-lg-1"></div>
                             </div>
@@ -252,7 +259,7 @@ const CareersPage = props => {
                 </div>
 
                 {/*<HoriztonalCarousel className="my-8 mx-7" items={items} />
-*/}
+                 */}
                 <ContentSection className="py-7 contact">
                     <div className="row">
                         <div className="col-lg-12">
