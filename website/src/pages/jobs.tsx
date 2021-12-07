@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import ArrowDownIcon from 'mdi-react/ArrowDownIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import Layout from '../components/Layout'
-import Carousel from '../components/Carousel'
+//import HoriztonalCarousel from '../components/Carousel'
+import Carousel from 'react-bootstrap/Carousel'
 import { ContentSection } from '../components/content/ContentSection'
 import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
 
@@ -165,33 +165,94 @@ const CareersPage = props => {
                     </div>
                 </ContentSection>
 
-                <div className="bg-gradient-green-blue p-8">
-                    <div className="row">
-                        <div className="col-lg-1">
-                            <div className="aligned">
-                                <ArrowLeftIcon />
+                <div className="carousel-slider row w-100">
+                    <Carousel variant="dark" className="w-100">
+                        <Carousel.Item className="w-100 bg-gradient-green-blue">
+                            <div className="row p-8">
+                                <div className="col-lg-1"></div>
+                                <h1 className="col-lg-5">
+                                    <p className="v-aligned">Start your developer/influencer career with us.</p>
+                                </h1>
+                                <div className="col-lg-5">
+                                    <img src="../careers/culture1.png"/>
+                                </div>
+                                <div className="col-lg-1"></div>
                             </div>
-                        </div>
-                        <h1 className="col-lg-5">
-                            <p className="v-aligned">“Lorem ipsum dolor sit amet, consectetur adipiscing elit”</p>
-                        </h1>
-                        <div className="col-lg-5">
-                            <img src="../careers/careers_culture_img.png" className="heroImage" />
-                        </div>
-                        <div className="col-lg-1">
-                            <div className="aligned">
-                                <ArrowRightIcon />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        </Carousel.Item>
 
-                <Carousel className="my-8 mx-7" items={items} />
+                        <Carousel.Item className="w-100 bg-gradient-green-blue">
+                            <div className="row p-8">
+                                <div className="col-lg-1"></div>
+                                <h1 className="col-lg-5">
+                                    <p className="v-aligned">This pic is taken by a great bartender in Berlin who spelled Sourcegraph correctly on his first try. He also gave us free shots.</p>
+                                </h1>
+                                <div className="col-lg-5">
+                                    <img src="../careers/culture2.png"/>
+                                </div>
+                                <div className="col-lg-1"></div>
+                            </div>
+                        </Carousel.Item>
+
+                        <Carousel.Item className="w-100 bg-gradient-green-blue">
+                            <div className="row p-8">
+                                <div className="col-lg-1"></div>
+                                <h1 className="col-lg-5">
+                                    <p className="v-aligned">When we say fast, we don't play...</p>
+                                </h1>
+                                <div className="col-lg-5">
+                                    <img src="../careers/culture3.png"/>
+                                </div>
+                                <div className="col-lg-1"></div>
+                            </div>
+                        </Carousel.Item>
+
+                        <Carousel.Item className="w-100 bg-gradient-green-blue">
+                            <div className="row p-8">
+                                <div className="col-lg-1"></div>
+                                <h1 className="col-lg-5">
+                                    <p className="v-aligned">Nothing is more valuable than this feeling in the world. That’s it.</p>
+                                </h1>
+                                <div className="col-lg-5">
+                                    <img src="../careers/culture4.png" className="landscape" />
+                                </div>
+                                <div className="col-lg-1"></div>
+                            </div>
+                        </Carousel.Item>
+
+                        <Carousel.Item className="w-100 bg-gradient-green-blue">
+                            <div className="row p-8">
+                                <div className="col-lg-1"></div>
+                                <h1 className="col-lg-5">
+                                    <p className="v-aligned">Cats. Cats. Cats. Cats. Cats. And more cats. Somebody, please stop us.</p>
+                                </h1>
+                                <div className="col-lg-5">
+                                    <img src="../careers/culture5.png"/>
+                                </div>
+                                <div className="col-lg-1"></div>
+                            </div>
+                        </Carousel.Item>
+
+                        <Carousel.Item className="w-100 bg-gradient-green-blue">
+                            <div className="row p-8">
+                                <div className="col-lg-1"></div>
+                                <h1 className="col-lg-5">
+                                    <p className="v-aligned">That time we coined the hashtag: #van(code)life</p>
+                                </h1>
+                                <div className="col-lg-5">
+                                    <img src="../careers/culture6.png" className="landscape" />
+                                </div>
+                                <div className="col-lg-1"></div>
+                            </div>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
 
                 <div className="row my-3">
                     <img src="../careers/Culture_8.png" className="culture mx-auto" />
                 </div>
 
+                {/*<HoriztonalCarousel className="my-8 mx-7" items={items} />
+*/}
                 <ContentSection className="py-7 contact">
                     <div className="row">
                         <div className="col-lg-12">

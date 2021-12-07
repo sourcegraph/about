@@ -40,16 +40,26 @@
         max-width: 1500px;
     }
 
-    .aligned {
-        margin-top: 400px;
-    }
-
     .v-aligned {
-        margin-top: 340px;
+        margin-top: 290px;
     }
 
     .contact p {
         font-size: 1.5rem;
         line-height: 1.9rem;
+    }
+
+    .carousel-slider {
+        margin-right: 0 !important;
+    }
+
+    .carousel-item img {
+        width: 458px;
+        height: 611px;
+    }
+
+    .carousel-item img.landscape {
+        width: 577px;
+        height: 433px;
     }
 }
