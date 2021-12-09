@@ -9,6 +9,7 @@ heroImage: /blog/cloud-beta-launch-post.png
 socialImage: https://about.sourcegraph.com/blog/cloud-beta-launch-post.png
 published: true
 ---
+
 ![Sourcegraph Cloud for teams now in private beta/](/blog/cloud-beta-launch-post.png)
 
 Sign up to get instant access to code navigation and intelligence across your team’s private code and 2M open source repositories. Sourcegraph Cloud for teams brings enterprise advantages to small teams. Not ready to bring your team along? You can use [Sourcegraph.com](sourcegraph.com) to search your personal repos and the open source universe today.

@@ -9,6 +9,7 @@ heroImage: /blog/technical-post.png
 socialImage: https://about.sourcegraph.com/blog/technical-post.png
 published: true
 ---
+
 ![Expanding Sourcegraph from on premise to Saas/](/blog/technical-post.png)
 
 We’ve just [launched a private beta for small teams and organizations on Sourcegraph Cloud](/blog/sourcegraph-cloud-for-teams-now-in-private-beta). With this milestone, we wanted to take a moment to reflect on this effort and what we’ve learned.
