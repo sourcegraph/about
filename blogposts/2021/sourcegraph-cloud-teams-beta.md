@@ -34,7 +34,7 @@ We [recently announced](/blog/why-index-the-oss-universe/) a public beta for pri
 
 <div class="alert alert-primary" role="alert" style="text-align: center">
   <a href="/cloud-beta/">
-      Join the waitlist to get free access for a limited time during private beta.
+      Join the waitlist to get free access for a limited time during private beta
 </div>
 
 ## Code search for small teams
