@@ -323,3 +323,10 @@ table {
     font-size: 1.2em;
     line-height: 1.95em;
 }
+
+.blog-image {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    max-width: 100%;
+}
