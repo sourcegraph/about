@@ -73,7 +73,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                     <div className="container video-embed embed-responsive embed-responsive-16by9 border">
                         <iframe
                             className="embed-responsive-item"
-                            src="https://www.youtube.com/watch?v=0DPXTB_Gzbw"
+                            src="https://www.youtube.com/embed/0DPXTB_Gzbw"
                             allowFullScreen={true}
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             frameBorder={0}
