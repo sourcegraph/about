@@ -41,6 +41,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                 'Maximize developer productivity and stay focused on the work you love doing. Sourcegraph Cloud is now available in beta for small teams.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
+        className="page-cloud-beta"
         heroAndHeaderClassName="cloud-beta-page__hero-and-header"
         hero={
             <div className="container pb-4">

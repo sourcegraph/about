@@ -1,49 +1,51 @@
-h1.title {
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 3.75rem;
+.page-cloud-beta {
+    h1.title {
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 3.75rem;
 
-    /* Mobile */
-    @media only screen and (max-width: 768px) {
-        font-size: 2.25rem;
-        line-height: 2.825rem;
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            font-size: 2.25rem;
+            line-height: 2.825rem;
+        }
     }
-}
 
-.subTitle {
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 1.875rem;
+    .subTitle {
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
 
-    /* Mobile */
-    @media only screen and (max-width: 768px) {
-        font-size: 1.15rem;
-        line-height: 1.375rem;
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            font-size: 1.15rem;
+            line-height: 1.375rem;
+        }
     }
-}
 
-p {
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
 
-    /* Mobile */
-    @media only screen and (max-width: 768px) {
-        font-size: 1rem;
-        line-height: 1.625rem;
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            font-size: 1rem;
+            line-height: 1.625rem;
+        }
     }
-}
 
-ul {
-    list-style-position: inside;
-}
+    ul {
+        list-style-position: inside;
+    }
 
-li {
-    font-size: 0.875rem;
+    li {
+        font-size: 0.875rem;
 
-    /* Mobile */
-    @media only screen and (max-width: 768px) {
-        line-height: 1.5rem;
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            line-height: 1.5rem;
+        }
     }
 }
 
