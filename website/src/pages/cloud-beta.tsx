@@ -17,8 +17,8 @@ const items = [
     {
         id: 1,
         backgroundClass: 'bg-gradient-blue-purple',
-        buttonLabel: 'Accelarate velocity',
-        text: 'Streamline collaboration across teams, even while apart: find and reuse code, search for best practices for unfamiliar libraries or APIs, share links to code with teammates, and catch more bugs through better code reviews —and fix them faster, too.',
+        buttonLabel: 'Accelerate velocity',
+        text: 'Streamline collaboration across teams, even while apart: find and reuse code, search for best practices for unfamiliar libraries or APIs, share links to code with teammates, and catch more bugs through better code reviews—and fix them faster, too.',
         headerClass: '',
         itemClass: 'd-none',
     },
@@ -50,7 +50,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="col-lg-6">
                         <p className="subTitle my-4">
-                            Introducing team access to Sourcegraph Cloud  <br />
+                            Introducing team access for Sourcegraph Cloud  <br />
                             (Private Beta)
                         </p>
                         <p className="my-4">
@@ -58,9 +58,9 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                             everyone in flow. Teams can now use Sourcegraph Cloud in beta for up to 25 users without
                             having to manage software on-prem. Join the waitlist today to get exclusive early access.
                         </p>
-                        <Link className="btn btn-primary" to="#" title="Request a demo">
+                        <a className="btn btn-primary" href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku">
                             Join the waitlist <ArrowRightIcon className="ml-1" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -100,9 +100,9 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                             <li>Are ready to experience the power of code search</li>
                         </ul>
                     </div>
-                    <Link className="btn btn-primary" to="#" title="Request a demo">
+                    <a className="btn btn-primary" href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku">
                         Join the waitlist <ArrowRightIcon className="ml-1" />
-                    </Link>
+                    </a>
                 </div>
             </div>
         </ContentSection>
