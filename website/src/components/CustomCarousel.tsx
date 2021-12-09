@@ -35,10 +35,10 @@ export default class CustomCarousel extends React.Component<CarouselProps> {
         }
     }
 
-    public showCurrentValue = (currentItem) => {
+    public showCurrentValue = currentItem => {
         // If the user clicked on the currently selected item then do nothing.
         if (currentItem == this.state.currentItem) {
-            return;
+            return
         }
 
         // Change backgroundClass
@@ -86,9 +86,7 @@ export default class CustomCarousel extends React.Component<CarouselProps> {
 
     public render(): JSX.Element | null {
         return (
-            <div
-                className={this.getBoxClassNames()}
-            >
+            <div className={this.getBoxClassNames()}>
                 <div className="carousel-nav col-lg-3 col-md-2 ml-lg-7 ml-md-5">
                     <ArrowUpIcon
                         className="ml-lg-6 mb-4"
@@ -119,9 +117,7 @@ export default class CustomCarousel extends React.Component<CarouselProps> {
                 <div className="col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6">
                     {this.props.items.map(item => (
                         <div key={item.id} className={item.itemClass}>
-                            <h1 className="display-2 mb-lg-4">
-                                {item.buttonLabel}
-                            </h1>
+                            <h1 className="display-2 mb-lg-4">{item.buttonLabel}</h1>
                             <p>{item.text}</p>
                         </div>
                     ))}
