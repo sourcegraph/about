@@ -14,11 +14,11 @@ published: true
 
 Sign up to get instant access to code navigation and intelligence across your team’s private code and 2M open source repositories. Sourcegraph Cloud for teams brings enterprise advantages to small teams. Not ready to bring your team along? You can use [Sourcegraph.com](https://sourcegraph.com) to search your personal repos and the open source universe today.
 
-<div class="alert alert-primary" role="alert" style="text-align: center">
-  <a href="/cloud-beta/" >
-      Sign up for private beta access
-      </a>
-</div>
+<p style="text-align: center">
+    <a href="https://about.sourcegraph.com/cloud-beta">
+        Sign up for private beta access
+    </a>
+</p>
 
 The tools you have access to matter. A lot. According to a recent [McKinsey study](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance), “best-in-class tools are the primary driver of developer velocity... The ability to access relevant tools for each stage of the software lifecycle contributes to developer satisfaction and retention rates that are 47 percent higher for top-quartile companies compared to bottom-quartile performers.”
 
@@ -32,10 +32,11 @@ While code search isn’t new, access to its advantages has been limited to comp
 
 We [recently announced](/blog/why-index-the-oss-universe/) a public beta for private code on Sourcegraph Cloud and we’re expanding access to small teams. With this release of Sourcegraph Cloud for teams, teams of up to 25 developers who use GitHub.com and GitLab.com can adopt Sourcegraph and gain the benefits of universal code search in minutes without needing to self-host.
 
-<div class="alert alert-primary" role="alert" style="text-align: center">
-  <a href="/cloud-beta/">
-      Join the waitlist to get free access for a limited time during private beta
-</div>
+<p>
+    <a href="https://about.sourcegraph.com/cloud-beta">
+        Join the waitlist to get free access for a limited time during private beta.
+    </a>
+</p>
 
 ## Code search for small teams
 
