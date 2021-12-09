@@ -241,6 +241,7 @@ table {
 @import 'components/product/IntegratesWithSection';
 @import 'components/product/UseCasesTable';
 @import 'components/Cookiebot';
+@import 'components/CustomCarousel';
 @import 'components/Events';
 @import 'components/GetStarted';
 @import 'components/Header';
@@ -252,6 +253,7 @@ table {
 @import 'pages/404';
 @import 'pages/about';
 @import 'pages/batch-changes';
+@import 'pages/cloud-beta';
 @import 'pages/community';
 @import 'pages/customers';
 @import 'pages/_case_studies';
@@ -276,17 +278,23 @@ table {
 .virtual-br::before {
     content: '\A';
 }
+/* Gradient backgrounds */
 .bg-gradient-primary {
     background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
 }
 .bg-gradient-green-blue {
-    background: linear-gradient(
-            90deg,
-            rgba(108, 255, 212, 0.4) 10%,
-            rgba(105, 255, 211, 0.1) 50%,
-            rgba(255, 255, 255, 0) 100%
-        ),
-        linear-gradient(180deg, rgba(0, 155, 242, 0.2) 0%, rgba(156, 229, 254, 0.2) 100%);
+    background: linear-gradient(90deg, $light-green 0%, $light-blue 100%);
+}
+.bg-gradient-blue-purple {
+    background: linear-gradient(90deg, $light-blue 0%, $light-purple 100%);
+}
+.bg-gradient-purple-yellow {
+    background: linear-gradient(90deg, $light-purple 0%, $light-yellow 100%);
+}
+/* END Gradient backgrounds */
+
+.bg-light-gray {
+    background-color: $light-gray-2;
 }
 .bg-black {
     background-color: $sg-space-black;
