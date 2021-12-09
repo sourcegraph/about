@@ -1,5 +1,5 @@
 ---
-title: "There, here, and back again: Expanding Sourcegraph from an on-premise product into a cloud offering"
+title: 'There, here, and back again: Expanding Sourcegraph from an on-premise product into a cloud offering'
 description: Bringing organizations to Sourcegraph Cloud meant taking an on-premise, enterprise-focused product, and evolving it into also a cloud software-as-a-service product. Here’s how we took this big vision and turned it into incremental action.
 author: Quinn Keast
 publishDate: 2021-12-09T00:00-07:00
@@ -9,6 +9,7 @@ heroImage: /blog/technical-post.png
 socialImage: https://about.sourcegraph.com/blog/technical-post.png
 published: true
 ---
+
 We’ve just [launched a private beta for small teams and organizations on Sourcegraph Cloud](/blog/sourcegraph-cloud-for-teams-now-in-private-beta). With this milestone, we wanted to take a moment to reflect on this effort and what we’ve learned.
 
 Bringing organizations to Sourcegraph Cloud was a unique challenge for our team because it meant taking an on-premise, enterprise-focused product, and turning it into a cloud software-as-a-service (SaaS) product as well.
@@ -33,7 +34,7 @@ Building an on-premise product involves a lot of assumptions that break when tur
 - Running a global search on Sourcegraph will search across only your company’s repositories.
 - All users on the Sourcegraph instance belong to the same company.
 - A URL to a search result copied and pasted to someone else will “just work,” because everyone has access to the same code.
--There’s a high-touch, multi-stage sales process tailored for each customer.
+  -There’s a high-touch, multi-stage sales process tailored for each customer.
 
 The extent of this list of assumptions gave us an idea of just how big this challenge was, especially when we knew we wanted to keep one Sourcegraph—we didn’t want to split out into separate “Cloud” and “Self-hosted” products.
 
@@ -50,6 +51,7 @@ Our big vision was to make Sourcegraph Cloud the easiest way for organizations t
 Instead of orienting around action items or tactical steps, we oriented our efforts around problems that, when solved, would represent the “minimum lovable product” at each iteration.
 
 At the highest level, these problems looked something like:
+
 ```
 Sourcegraph Cloud is the easiest way for organizations to get started with Sourcegraph.
 └── Small-to-medium organizations can search across their code together on Sourcegraph Cloud.
@@ -63,7 +65,7 @@ Each problem was inherently cross-disciplinary and revealed a set of sub-problem
 And each problem we solved would support each incremental step forward, all in a low-risk, high-confidence way that would help us to build momentum rather than rehashing the same problems again and again.
 
 > <strong>Sidebar</strong>
-A big sub-problem we spotted: after an individual user adds their repositories to Sourcegraph Cloud, they then need to be able to effortlessly search across those repositories within the 2.2 million other repositories on Sourcegraph Cloud. This led to proposing and building search contexts, an entirely new product feature, to solve this problem.
+> A big sub-problem we spotted: after an individual user adds their repositories to Sourcegraph Cloud, they then need to be able to effortlessly search across those repositories within the 2.2 million other repositories on Sourcegraph Cloud. This led to proposing and building search contexts, an entirely new product feature, to solve this problem.
 
 Our RFCs are public to the world by default in line with our [open and transparent values]
 (https://handbook.sourcegraph.com/company/values#open-and-transparent). Take a look for yourself how this feature unfolded in [RFC 261: Search Contexts](https://docs.google.com/document/d/1mlxy7Fy19Q2yua7Fjg0xCda1c07f9RoR8rXxU22Ni60/edit#).
@@ -93,6 +95,6 @@ Launching early access for organizations reflects a lot of work, and perfectly h
 We have lots more to do and we’re excited for the opportunities ahead, but we’re also celebrating what we’ve achieved and learned along the way:
 
 1. Have a big vision. Take an incremental path to get there.
-2. Orient the iterative path around problems. It makes it easier to see how one effort leads to the next without being prescriptive, and creates clear milestones that help the team celebrate their progress even when there’s a long way to go towards the big vision.  (And, it helps learn faster by getting things in customer’s hands sooner!)
+2. Orient the iterative path around problems. It makes it easier to see how one effort leads to the next without being prescriptive, and creates clear milestones that help the team celebrate their progress even when there’s a long way to go towards the big vision. (And, it helps learn faster by getting things in customer’s hands sooner!)
 3. Identify the “foundations.” It accelerates all future efforts.
 4. Be really clear about what you need now, and what you can do later, and keep revisiting these decisions.
