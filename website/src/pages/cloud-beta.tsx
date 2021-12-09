@@ -59,7 +59,10 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                             everyone in flow. Teams can now use Sourcegraph Cloud in beta for up to 25 users without
                             having to manage software on-prem. Join the waitlist today to get exclusive early access.
                         </p>
-                        <a className="btn btn-primary join-the-watilist-hero-btn" href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku">
+                        <a
+                            className="btn btn-primary join-the-watilist-hero-btn"
+                            href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku"
+                        >
                             Join the waitlist <ArrowRightIcon className="ml-1" />
                         </a>
                     </div>
