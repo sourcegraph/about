@@ -29,7 +29,7 @@ const items = [
         text: 'Identify and mitigate issues across your entire codebase: monitor the introduction of vulnerable dependencies, hunt down outdated practices and patterns, and reduce the time it takes to search for bugs and security concerns.',
         headerClass: '',
         itemClass: 'd-none',
-    }
+    },
 ]
 
 export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
@@ -50,14 +50,13 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="col-lg-6">
                         <p className="subTitle my-4">
-                            Introducing team access to Sourcegraph Cloud  <br/>
+                            Introducing team access to Sourcegraph Cloud  <br />
                             (Private Beta)
                         </p>
                         <p className="my-4">
-                            Sourcegraph now empowers you and your team to boost developer productivity while 
-                            keeping everyone in flow. Teams can now use Sourcegraph Cloud in beta for up to 
-                            25 users without having to manage software on-prem. Join the waitlist today to 
-                            get exclusive early access.
+                            Sourcegraph now empowers you and your team to boost developer productivity while keeping
+                            everyone in flow. Teams can now use Sourcegraph Cloud in beta for up to 25 users without
+                            having to manage software on-prem. Join the waitlist today to get exclusive early access.
                         </p>
                         <Link className="btn btn-primary" to="#" title="Request a demo">
                             Join the waitlist <ArrowRightIcon className="ml-1" />
@@ -83,23 +82,16 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                 </div>
             </div>
         </ContentSection>
-        
-        <CustomCarousel
-            items={items}
-            backgroundClass="bg-gradient-green-blue"
-        />
+
+        <CustomCarousel items={items} backgroundClass="bg-gradient-green-blue" />
 
         <ContentSection className="py-4 py-md-7 text-center">
             <div className="row">
                 <div className="col-lg-12">
                     <img src="../join-the-waitlist.svg" className="mb-5" />
                     <h1 className="display-2 mb-0 title">Join the waitlist.</h1>
-                    <p className="mt-3 mb-lg-6">
-                        Access Sourcegraph Cloud for free during the beta
-                    </p>
-                    <p className="mt-5 font-weight-bold">
-                        We’re looking for teams that:
-                    </p>
+                    <p className="mt-3 mb-lg-6">Access Sourcegraph Cloud for free during the beta</p>
+                    <p className="mt-5 font-weight-bold">We’re looking for teams that:</p>
                     <div className="mb-5">
                         <ul>
                             <li>Have 5 to 25 engineers</li>
