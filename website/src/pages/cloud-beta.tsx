@@ -41,19 +41,20 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                 'Maximize developer productivity and stay focused on the work you love doing. Sourcegraph Cloud is now available in beta for small teams.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
+        className="cloud-beta-page"
         heroAndHeaderClassName="cloud-beta-page__hero-and-header"
         hero={
             <div className="container pb-4">
                 <div className="row">
-                    <div className="col-lg-9 mt-6">
-                        <h1 className="title display-2 mb-0">Change your workflow forever.</h1>
+                    <div className="col-lg-9">
+                        <h1 className="title display-2 mb-4">Change your workflow forever.</h1>
                     </div>
                     <div className="col-lg-6">
-                        <p className="subTitle my-4">
+                        <p className="subTitle">
                             Introducing team access for Sourcegraph Cloud  <br />
                             (Private Beta)
                         </p>
-                        <p className="my-4">
+                        <p>
                             Sourcegraph now empowers you and your team to boost developer productivity while keeping
                             everyone in flow. Teams can now use Sourcegraph Cloud in beta for up to 25 users without
                             having to manage software on-prem. Join the waitlist today to get exclusive early access.
@@ -66,7 +67,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
             </div>
         }
     >
-        <ContentSection className="py-4 py-md-7">
+        <ContentSection className="py-4 py-md-7 bg-light-gray">
             <div className="row">
                 <div className="col-lg-12">
                     <div className="container video-embed embed-responsive embed-responsive-16by9 border">
@@ -85,7 +86,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
 
         <CustomCarousel items={items} backgroundClass="bg-gradient-green-blue" />
 
-        <ContentSection className="py-4 py-md-7 text-center">
+        <ContentSection className="join-the-waitlist text-center">
             <div className="row">
                 <div className="col-lg-12">
                     <img src="../join-the-waitlist.svg" className="mb-5" />
