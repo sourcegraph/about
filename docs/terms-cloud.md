@@ -3,7 +3,7 @@ layout: markdown
 title: Terms of Service for Sourcegraph Cloud
 ---
 
-Last modified: December 3, 2021
+Last modified: December 9, 2021
 
 See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-dotcom%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-cloud/2021-06-25/)
 
@@ -21,7 +21,7 @@ Are you interested in terms for...
 
 - **Sourcegraph Cloud**: You're in the right place! Read on.
 
-- **[A self-hosted Sourcegraph instance](https://about.sourcegraph.com/terms-self-hosted)**: If you’d like to use a self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your code, rather than the Sourcegraph.com instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your self-hosted instance, please see our terms and conditions at https://about.sourcegraph.com/terms-self-hosted.
+- **[A self-hosted Sourcegraph instance](https://about.sourcegraph.com/terms-self-hosted)**: If you’d like to use a self-hosted Sourcegraph instance (e.g. one deployed via the `docker run` command in our [Quickstart](https://docs.sourcegraph.com)) to search, navigate, and analyze your code, rather than the Sourcegraph Cloud instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with your self-hosted instance, please see our terms and conditions at https://about.sourcegraph.com/terms-self-hosted.
 
 - **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache.
 
@@ -40,9 +40,9 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 | Section                                                                                                                               | Description                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 | 1. [Definitions](#1-Definitions)                                                                                                      | Definitions of specific terms used on this page   |
-| 2. [Account terms](#2-Account-terms)                                                                                                  | Your responsibilities to use Sourcegraph.com      |
-| 3. [Proprietary rights and licenses](#3-Proprietary-rights-and-licenses)                                                              | Your rights and ours when you use Sourcegraph.com |
-| 4. [Usage data](#4-Usage-data)                                                                                                        | Data we collect on Sourcegraph.com                |
+| 2. [Account terms](#2-Account-terms)                                                                                                  | Your responsibilities to use Sourcegraph      |
+| 3. [Proprietary rights and licenses](#3-Proprietary-rights-and-licenses)                                                              | Your rights and ours when you use Sourcegraph |
+| 4. [Usage data](#4-Usage-data)                                                                                                        | Data we collect on Sourcegraph                |
 | 5. [Privacy and security](#5-Privacy-and-security)                                                                                    | Our policies for protecting your data             |
 | 6. [Term; termination](#6-Term-termination)                                                                                           | When and how your account can be terminated       |
 | 7. [Fees](#7-Fees)                                                                                                                    | Rules for payment for paid features               |
@@ -82,7 +82,7 @@ As used on this page, the following terms have the following specific meanings:
 
 1.9 **“Sourcegraph”**, **“we”**, or **“us”** refers to Sourcegraph, Inc., as well as its affiliates.
 
-1.10 **“You”** refers to the individual person, company, or organization that has visited or is using the Site or Services, that accesses an Account, or that directs the use of the Account. If you’re entering into the Agreement on behalf of your company or organization (your **“Organization”**), you represent and warrant that you’re authorized to bind that company or organization to the Agreement and that you've read, understood, and agree to be bound by the Agreement on that company or organization’s behalf, in which case references to “you” will mean the Organization.
+1.10 **“You”** refers to the individual person, company, or organization that has visited or is using the Site or Services, that accesses an Account, or that directs the use of the Account. If you’re entering into the Agreement on behalf of your company or organization (your **“Organization”**), then (i) the Agreement is an agreement between us and you and us and that Organization and your acceptance of this Agreement binds that Organization, (ii) you represent and warrant that you’re authorized to bind that Organization to the Agreement and that you've read, understood, and agree to be bound by the Agreement on that Organization’s behalf, and (iii) references to "you" herein will mean you and that Organization.
 
 <span style="color:#b200f8;">
 
@@ -158,7 +158,7 @@ We do not use any Content (including any UGC) in private repositories to market 
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: We have the right to collect usage data from Sourcegraph.com, as described in our [Privacy Policy](/privacy).</i></span>
+<span style="color:#777777"><i>**Short version**: We have the right to collect usage data from Sourcegraph, as described in our [Privacy Policy](/privacy).</i></span>
 
 In the course of your use of the Services, we may collect certain information about your use, including aggregated data derived from you and other users’ access and use of the Services (**“Usage Data”**). You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products and services.
 
@@ -183,6 +183,8 @@ If you are an Organization established in the European Economic Area, the United
 ## 6. Confidentiality
 
 </span>
+
+<span style="color:#777777"><i>**Short version**: We will each protect the other party's confidential information.</i></span>
 
 6.1 **Definition**. **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
 
@@ -209,7 +211,7 @@ If you are an Organization established in the European Economic Area, the United
 
 7.3 **Termination for Convenience**. Either party may terminate this Agreement, for any reason or for no reason, provided that you are responsible for all prepaid fees and fees you commit to in an Order Form. If we terminate the Agreement under this section, we will refund you for all prepaid fees for the remainder of the Subscription Period.
 
-7.4 **Effect of Termination; Survival**. Upon termination of this Agreement, you may no longer use the Services, and if any fees were owed prior to termination, you must pay those fees immediately. Any provisions of this Agreement that, by their terms or their nature, should survive the termination of this Agreement shall so survive. For purposes of clarity, your right to use the Services will not survive any termination of this Agreement. Upon termination of this Agreement, Sourcegraph will remove your Content from the Services within thirty (30) days.
+7.4 **Effect of Termination; Survival**. Upon termination of this Agreement, you may no longer use the Services, and if any fees were owed prior to termination, you must pay those fees immediately. Any provisions of this Agreement that, by their terms or their nature, should survive the termination of this Agreement shall so survive. For purposes of clarity, your right to use the Services will not survive any termination of this Agreement. Following termination of this Agreement, Sourcegraph will remove your Content from the Services.
 
 <span style="color:#b200f8;">
 
@@ -369,8 +371,10 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 
 16.8 **Headings**. The heading references herein are for convenience only, do not constitute a part of the Agreement, and will not be deemed to limit or affect any of the provisions hereof.
 
-16.9 **Entire Agreement**. This, including the agreements incorporated by reference, constitutes the entire agreement between you and us relating to the subject matter herein and will not be modified except in writing, signed by both parties, or by a change made by us as set forth in the Agreement.
+16.9 **Marketing and Publicity**. If you are an Organization, we may use your name and logo to identify you as a customer and use product testimonials and quotes your representatives may provide us.
 
-16.10 **Claims**. To the extent permissible under applicable law, you and we agree that any cause of action you may have arising out of or related to the Services or Code Data must commence within one (1) year after the cause of action accrues. Otherwise, such cause of action is permanently barred.
+16.10 **Entire Agreement**. This, including the agreements incorporated by reference, constitutes the entire agreement between you and us relating to the subject matter herein and will not be modified except in writing, signed by both parties, or by a change made by us as set forth in the Agreement.
 
-16.11 **Disclosures**. The Services are offered by Sourcegraph, Inc., located at 548 Market St PMB 20739, San Francisco, CA 94104-5401, and can be reached via email at support@sourcegraph.com or telephone at (650) 273-5591. If you are a California resident, (a) you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information; and (b) in accordance with Cal. Civ. Code § 1789.3, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by contacting them in writing at 1625 North Market Blvd., Suite N 112 Sacramento, CA 95834, or by telephone at (800) 952-5210 or (916) 445-1254.
+16.11 **Claims**. To the extent permissible under applicable law, you and we agree that any cause of action you may have arising out of or related to the Services or Code Data must commence within one (1) year after the cause of action accrues. Otherwise, such cause of action is permanently barred.
+
+16.12 **Disclosures**. The Services are offered by Sourcegraph, Inc., located at 548 Market St PMB 20739, San Francisco, CA 94104-5401, and can be reached via email at support@sourcegraph.com or telephone at (650) 273-5591. If you are a California resident, (a) you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information; and (b) in accordance with Cal. Civ. Code § 1789.3, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by contacting them in writing at 1625 North Market Blvd., Suite N 112 Sacramento, CA 95834, or by telephone at (800) 952-5210 or (916) 445-1254.
