@@ -12,19 +12,19 @@ published: true
 
 ![Sourcegraph Cloud for teams now in private beta/](/blog/cloud-beta-launch-post.png)
 
-Sign up to get instant access to code navigation and intelligence across your team’s private code and 2M open source repositories. Sourcegraph Cloud for teams brings enterprise advantages to small teams. Not ready to bring your team along? You can use [Sourcegraph.com](sourcegraph.com) to search your personal repos and the open source universe today.
+Sign up to get instant access to code navigation and intelligence across your team’s private code and 2M open source repositories. Sourcegraph Cloud for teams brings enterprise advantages to small teams. Not ready to bring your team along? You can use [Sourcegraph.com](https://sourcegraph.com) to search your personal repos and the open source universe today.
 
-<p style="text-align: center">
-    <a href="https://about.sourcegraph.com/cloud-beta">
-        Sign up for private beta access
-    </a>
-</p>
+<div class="alert alert-primary" role="alert" style="text-align: center">
+  <a href="/cloud-beta/" >
+      Sign up for private beta access
+      </a>
+</div>
 
 The tools you have access to matter. A lot. According to a recent [McKinsey study](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance), “best-in-class tools are the primary driver of developer velocity... The ability to access relevant tools for each stage of the software lifecycle contributes to developer satisfaction and retention rates that are 47 percent higher for top-quartile companies compared to bottom-quartile performers.”
 
 When we think about developer happiness and productivity at Sourcegraph, we think about great onboarding experiences, efficient code reviews, and knowledge sharing. We think about saved time, better code quality, and improved system integrity. We think about how fast, reliable code search makes it easier to find, read, understand, and share code.
 
-Findings from GitHub’s [2021 State of the Octoverse](https://octoverse.github.com/writing-code-faster/#search-improves-software-development) report confirms code search is an essential element to improving developer productivity:
+Findings from GitHub’s [2021 State of the Octoverse](https://octoverse.github.com/writing-code-faster/#search-improves-software-development) report confirm code search is an essential element to improving developer productivity:
 
 > "Developers are almost 60% more likely to feel equipped to do their job when they can easily find what they need. Plus, they can get an 11% productivity boost simply by having a team repo that is easy to search."
 
@@ -32,13 +32,12 @@ While code search isn’t new, access to its advantages has been limited to comp
 
 We [recently announced](/blog/why-index-the-oss-universe/) a public beta for private code on Sourcegraph Cloud and we’re expanding access to small teams. With this release of Sourcegraph Cloud for teams, teams of up to 25 developers who use GitHub.com and GitLab.com can adopt Sourcegraph and gain the benefits of universal code search in minutes without needing to self-host.
 
-<p>
-    <a href="https://about.sourcegraph.com/cloud-beta">
-        Join the waitlist to get free access for a limited time during private beta.
-    </a>
-</p>
+<div class="alert alert-primary" role="alert" style="text-align: center">
+  <a href="/cloud-beta/">
+      Join the waitlist to get free access for a limited time during private beta.
+</div>
 
-##Code search for small teams
+## Code search for small teams
 
 Access to advanced code search gives teams a massive productivity boost. For small teams, these gains can have a huge impact on scale, velocity, and team morale: it facilitates faster code discovery, streamlines collaboration, and helps to mitigate risks. We designed Sourcegraph Cloud for teams specifically for small engineering teams so you can understand, share, and navigate code without needing to invest time and effort into setting up and maintaining a self-hosted tool.
 
@@ -51,7 +50,7 @@ Code search is especially helpful for small teams that:
 
 Sourcegraph Cloud allows you to do many things you do today, but faster. Code reviews, sharing code for discussion and documentation, and simply finding answers within code are all easier and more efficient with Sourcegraph.
 
-<h3>Faster code discovery</h3>
+### Faster code discovery
 
 We know from talking with hundreds of developers that devs spend more time reading code than writing code, but understanding and navigating code at scale can be difficult, especially when you need to learn a new codebase, make changes, or conduct code reviews. For small startups, the need to pivot quickly and familiarize yourself with a new part of the codebase can be especially difficult: information isn’t written down or knowledge about legacy code is lost when engineers leave.
 
@@ -63,20 +62,20 @@ Sourcegraph Cloud provides a way to traverse your entire codebase so you can qui
 
 For small teams who are growing quickly, Sourcegraph helps orient developers to new code faster.
 
-<h3>Streamline collaboration</h3>
+### Streamline collaboration
 
 Engineers frequently need to discuss code with teammates, which can be a tricky task without a rich code exploration interface.
 
 Sourcegraph allows you to share links back to code across your entire codebase (or within old commits) to support these discussions. Code is often shared through chat, emails, docs, code reviews, and issue trackers; Sourcegraph makes that sharing possible.
 
-Sourcegraph Cloud encourages sharing of code snippets as part of an “async world”. By copy and pasting a link and sharing via Slack, developers can communicate more effectively when not together.
+Sourcegraph Cloud encourages sharing of code snippets as part of an “async world.” By copy and pasting a link and sharing via Slack, developers can communicate more effectively when not together.
 
-<h3>Faster code reviews</h3>
+### Faster code reviews
 
-A large part of speeding up code reviews — and even writing code — is quickly pinpointing dependencies within code and cascading effects of changes. Sourcegraph’s precise Code Intelligence—along with features like “find references” and “jump to definitions”—is a powerful tool in accomplishing this. Precise Code Intelligence also unlocks unique possibilities such as cross-repository dependency tracking.
+A large part of speeding up code reviews—and even writing code—is quickly pinpointing dependencies within code and cascading effects of changes. Sourcegraph’s precise Code Intelligence—along with features like “find references” and “jump to definitions”—is a powerful tool in accomplishing this. Precise Code Intelligence also unlocks unique possibilities such as cross-repository dependency tracking.
 
 For teams leveraging open source projects and packages, the ability to track dependencies and find outdated practices and patterns can be a game-changer for small teams who may not have dedicated security resources.
 
 With Sourcegraph, you and your team can perform your best work. Understanding new code, collaboration, and code reviews are faster and more efficient when you can search your entire graph of code for answers. Sourcegraph allows you to never miss anything when understanding your code, so you can do your best work.
 
-Interested in Sourcegraph Cloud for your team? You can read more and sign up [here](http://about.sourcegraph.com/cloud-beta). You can also learn more about [how we approached expanding an on-premise product to SaaS here](/blog/expanding-sourcegraph-from-on-premise-to-saas/).
+Interested in Sourcegraph Cloud for your team? You can [read more and sign up here](/cloud-beta/). You can also learn more about [how we approached expanding an on-premise product to SaaS here](/blog/expanding-sourcegraph-from-on-premise-to-saas/).
