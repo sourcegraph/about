@@ -1,0 +1,40 @@
+.custom-carousel {
+    /* Mobile */
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+    }
+
+    .carousel-nav {
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .carousel-nav-mobile {
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        cursor: pointer;
+        color: $sg-space-black;
+        margin: 30px 0;
+    }
+
+    li.active {
+        font-weight: bold;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    .mdi-icon {
+        cursor: pointer;
+    }
+}
