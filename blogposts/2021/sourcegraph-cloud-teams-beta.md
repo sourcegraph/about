@@ -9,6 +9,7 @@ heroImage: /blog/cloud-beta-launch-post.png
 socialImage: https://about.sourcegraph.com/blog/cloud-beta-launch-post.png
 published: true
 ---
+
 Sign up to get instant access to code navigation and intelligence across your team’s private code and 2M open source repositories. Sourcegraph Cloud for teams brings enterprise advantages to small teams. Not ready to bring your team along? You can use [Sourcegraph.com](sourcegraph.com) to search your personal repos and the open source universe today.
 
 <p style="text-align: center">
@@ -17,7 +18,7 @@ Sign up to get instant access to code navigation and intelligence across your te
     </a>
 </p>
 
-The tools you have access to matter. A lot. According to a recent [McKinsey study](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance), “best-in-class tools are the primary driver of developer velocity... The ability to access relevant tools for each stage of the software lifecycle contributes to developer satisfaction and retention rates that are 47 percent higher for top-quartile companies compared to bottom-quartile performers.” 
+The tools you have access to matter. A lot. According to a recent [McKinsey study](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance), “best-in-class tools are the primary driver of developer velocity... The ability to access relevant tools for each stage of the software lifecycle contributes to developer satisfaction and retention rates that are 47 percent higher for top-quartile companies compared to bottom-quartile performers.”
 
 When we think about developer happiness and productivity at Sourcegraph, we think about great onboarding experiences, efficient code reviews, and knowledge sharing. We think about saved time, better code quality, and improved system integrity. We think about how fast, reliable code search makes it easier to find, read, understand, and share code.
 
@@ -40,6 +41,7 @@ We [recently announced](/blog/why-index-the-oss-universe/) a public beta for pri
 Access to advanced code search gives teams a massive productivity boost. For small teams, these gains can have a huge impact on scale, velocity, and team morale: it facilitates faster code discovery, streamlines collaboration, and helps to mitigate risks. We designed Sourcegraph Cloud for teams specifically for small engineering teams so you can understand, share, and navigate code without needing to invest time and effort into setting up and maintaining a self-hosted tool.
 
 Code search is especially helpful for small teams that:
+
 - Need to collaborate constantly and operate at high speed
 - Pivot frequently and need to read new code often
 - Re-architect systems to scale
