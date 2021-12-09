@@ -43,6 +43,19 @@
         }
     }
 
+    ul {
+        list-style-position: inside;
+    }
+
+    li {
+        font-size: 0.875rem;
+
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            line-height: 1.5rem;
+        }
+    }
+
     .join-the-waitlist {
         margin-top: 170px;
     }
