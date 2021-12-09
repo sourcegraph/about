@@ -1,6 +1,6 @@
 ---
-title: 'There, here, and back again: Expanding Sourcegraph from an on-premise product into a cloud offering'
-description: Bringing organizations to Sourcegraph Cloud meant taking an on-premise, enterprise-focused product, and evolving it into also a cloud software-as-a-service product. Here’s how we took this big vision and turned it into incremental action.
+title: 'There, here, and back again: Expanding Sourcegraph from an on-premises product into a cloud offering'
+description: Bringing organizations to Sourcegraph Cloud meant taking an on-premises, enterprise-focused product, and evolving it into also a cloud software-as-a-service product. Here’s how we took this big vision and turned it into incremental action.
 author: Quinn Keast
 publishDate: 2021-12-09T00:00-07:00
 tags: [blog, announcement, cloud, beta]
@@ -14,9 +14,9 @@ published: true
 
 We’ve just [launched a private beta for small teams and organizations on Sourcegraph Cloud](/blog/sourcegraph-cloud-for-teams-now-in-private-beta/). With this milestone, we wanted to take a moment to reflect on this effort and what we’ve learned.
 
-Bringing organizations to Sourcegraph Cloud was a unique challenge for our team because it meant taking an on-premise, enterprise-focused product, and turning it into a cloud software-as-a-service (SaaS) product as well.
+Bringing organizations to Sourcegraph Cloud was a unique challenge for our team because it meant taking an on-premises, enterprise-focused product, and turning it into a cloud software-as-a-service (SaaS) product as well.
 
-Sourcegraph helps companies to understand their code. All of it. No matter where it’s hosted. As an early-stage startup, Sourcegraph actually started as a cloud SaaS product before we realized that we needed to do more to earn trust with companies’ private code. This led us to pivot towards making Sourcegraph open source and on-premise. Companies could look at Sourcegraph source code for themselves and run their Sourcegraph instance in their own trusted environment.
+Sourcegraph helps companies to understand their code. All of it. No matter where it’s hosted. As an early-stage startup, Sourcegraph actually started as a cloud SaaS product before we realized that we needed to do more to earn trust with companies’ private code. This led us to pivot towards making Sourcegraph open source and on-premises. Companies could look at Sourcegraph source code for themselves and run their Sourcegraph instance in their own trusted environment.
 
 This early decision was crucial to our success. Today, many of the world’s largest and most technologically advanced companies like Dropbox, General Electric, PayPal, [and many more](/case-studies) trust Sourcegraph with their private code, and we recently closed [a $125M Series D funding](/blog/announcing-sourcegraphs-series-d-round/) round to bring universal code search to every dev at every company of every size and scale.
 
@@ -24,11 +24,11 @@ But we’ve heard again and again: for smaller companies with lean engineering t
 
 That’s where we saw an opportunity. We already had Sourcegraph Cloud, which helps developers to search the universe of open source software. Sourcegraph Cloud is the largest Sourcegraph instance in the world—it’s the same Sourcegraph, just bigger.
 
-We decided to make a big bet on Sourcegraph Cloud. And that meant figuring out how to get from on-premise to also on cloud. <strong>We were there, came here, and now we wanted to go back again.</strong>
+We decided to make a big bet on Sourcegraph Cloud. And that meant figuring out how to get from on-premises to also on cloud. <strong>We were there, came here, and now we wanted to go back again.</strong>
 
 ## Breaking assumptions
 
-Building an on-premise product involves a lot of assumptions that break when turning it into a cloud SaaS:
+Building an on-premises product involves a lot of assumptions that break when turning it into a cloud SaaS:
 
 - All code on the instance belongs to the same organization.
 - There is a person or team who can set up, orchestrate, and administrate Sourcegraph on the organization’s own stack and network.
