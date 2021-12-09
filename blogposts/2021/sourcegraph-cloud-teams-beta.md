@@ -4,7 +4,7 @@ description: Get instant access to code navigation and intelligence across your 
 author: Sourcegraph
 publishDate: 2021-12-09T00:00-07:00
 tags: [blog, announcement, cloud, beta]
-slug: sourcegraph-cloud-teams-beta
+slug: sourcegraph-cloud-for-teams-now-in-private-beta
 heroImage: /blog/cloud-beta-launch-post.png
 socialImage: https://about.sourcegraph.com/blog/cloud-beta-launch-post.png
 published: true
@@ -47,7 +47,7 @@ Code search is especially helpful for small teams that:
 
 Sourcegraph Cloud allows you to do many things you do today, but faster. Code reviews, sharing code for discussion and documentation, and simply finding answers within code are all easier and more efficient with Sourcegraph.
 
-##Faster code discovery
+<h3>Faster code discovery</h3>
 
 We know from talking with hundreds of developers that devs spend more time reading code than writing code, but understanding and navigating code at scale can be difficult, especially when you need to learn a new codebase, make changes, or conduct code reviews. For small startups, the need to pivot quickly and familiarize yourself with a new part of the codebase can be especially difficult: information isn’t written down or knowledge about legacy code is lost when engineers leave.
 
@@ -59,7 +59,7 @@ Sourcegraph Cloud provides a way to traverse your entire codebase so you can qui
 
 For small teams who are growing quickly, Sourcegraph helps orient developers to new code faster.
 
-##Streamline collaboration
+<h3>Streamline collaboration</h3>
 
 Engineers frequently need to discuss code with teammates, which can be a tricky task without a rich code exploration interface.
 
@@ -67,7 +67,7 @@ Sourcegraph allows you to share links back to code across your entire codebase (
 
 Sourcegraph Cloud encourages sharing of code snippets as part of an “async world”. By copy and pasting a link and sharing via Slack, developers can communicate more effectively when not together.
 
-##Faster code reviews
+<h3>Faster code reviews</h3>
 
 A large part of speeding up code reviews — and even writing code — is quickly pinpointing dependencies within code and cascading effects of changes. Sourcegraph’s precise Code Intelligence—along with features like “find references” and “jump to definitions”—is a powerful tool in accomplishing this. Precise Code Intelligence also unlocks unique possibilities such as cross-repository dependency tracking.
 
