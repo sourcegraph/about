@@ -59,7 +59,10 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                             everyone in flow. Teams can now use Sourcegraph Cloud in beta for up to 25 users without
                             having to manage software on-prem. Join the waitlist today to get exclusive early access.
                         </p>
-                        <a className="btn btn-primary" href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku">
+                        <a
+                            className="btn btn-primary join-the-watilist-hero-btn"
+                            href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku"
+                        >
                             Join the waitlist <ArrowRightIcon className="ml-1" />
                         </a>
                     </div>
@@ -73,7 +76,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                     <div className="container video-embed embed-responsive embed-responsive-16by9 border">
                         <iframe
                             className="embed-responsive-item"
-                            src="https://www.youtube.com/watch?v=0DPXTB_Gzbw"
+                            src="https://www.youtube.com/embed/0DPXTB_Gzbw"
                             allowFullScreen={true}
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             frameBorder={0}
