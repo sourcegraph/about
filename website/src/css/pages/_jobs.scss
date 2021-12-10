@@ -96,7 +96,7 @@
                 padding: 128px;
 
                 @media only screen and (max-width: 768px) {
-                    padding: 62px;
+                    padding: 40px 60px;
                 }
             }
             p {
@@ -105,7 +105,7 @@
                     line-height: 2.5rem;
                     margin-bottom: 30px;
                     text-align: center;
-                    height: 200px;
+                    height: 220px;
                 }
             }
             .img-container {
