@@ -1,4 +1,4 @@
-import { Link, PageProps } from 'gatsby'
+import { PageProps } from 'gatsby'
 import * as React from 'react'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import { ContentSection } from '../components/content/ContentSection'
@@ -25,7 +25,7 @@ const items = [
     {
         id: 2,
         backgroundClass: 'bg-gradient-purple-yellow',
-        buttonLabel: 'Mitigate risk',
+        buttonLabel: 'Mitigate risks',
         text: 'Identify and mitigate issues across your entire codebase: monitor the introduction of vulnerable dependencies, hunt down outdated practices and patterns, and reduce the time it takes to search for bugs and security concerns.',
         headerClass: '',
         itemClass: 'd-none',
