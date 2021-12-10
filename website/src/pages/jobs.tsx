@@ -37,7 +37,7 @@ const CareersPage = props => {
                     <img src="../careers/careers_hero_img_mobile.jpg" className="mx-auto hero-image-mobile" />
                 </div>
 
-                <ContentSection className="benefits">
+                <div className="benefits">
                     <div className="row">
                         <div className="col-lg-10 m-auto">
                             <h2 className="display-2 text-center">Happy, healthy, and always in the flow.</h2>
@@ -105,7 +105,7 @@ const CareersPage = props => {
                             <p>$25k, because family comes first</p>
                         </div>
                     </div>
-                </ContentSection>
+                </div>
 
                 <Carousel className="culture-carousel row">
                     <Carousel.Item className="bg-gradient-blue2-blue">

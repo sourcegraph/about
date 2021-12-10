@@ -35,12 +35,13 @@
     }
 
     .hero-image-mobile {
-        width: 100%;
-        max-width: 500px;
+        display: none;
 
         /* Mobile */
         @media only screen and (max-width: 768px) {
             display: block;
+            width: 100%;
+            max-width: 500px;
         }
     }
 
@@ -72,7 +73,7 @@
         }
         .benefit {
             /* Mobile */
-            @media only screen and (max-width: 576px) {
+            @media only screen and (max-width: 768px) {
                 width: 40%;
             }
         }
