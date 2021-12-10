@@ -1,143 +1,228 @@
-// stylelint-disable declaration-property-unit-whitelist
-.jobs {
-    -webkit-font-smoothing: antialiased;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.jobs-page {
+    .hero-section {
+        padding: 100px 0;
 
-    &__container {
-        margin: auto auto;
-        padding: 2rem 1rem;
-        text-align: center;
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            padding: 50px 50px 25px;
+        }
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        line-height: 2.815rem;
+
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    .title {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .hero-image {
         width: 100%;
-    }
+        max-width: 1500px;
 
-    &__head {
-        &-description {
-            max-width: 30em;
-            margin: 2rem auto;
-        }
-
-        &-button {
-            margin: auto auto;
-            background: $teal-7;
-            color: $white;
-        }
-    }
-
-    &__benefits {
-        background: $dark-8;
-        color: #ffffff;
-
-        &-list {
-            display: flex;
-            max-width: 64rem;
-            margin-left: auto;
-            margin-right: auto;
-
-            &-item {
-                display: flex;
-                padding: 0.5rem 1rem;
-                margin: 0.5rem;
-                flex-grow: 1;
-                text-align: left;
-                font-size: 0.875rem;
-
-                &-icon {
-                    margin-right: 1rem;
-                    align-self: baseline;
-                }
-
-                &-title {
-                    font-size: 0.875rem;
-                    margin: 0;
-                }
-
-                &-description {
-                    font-size: 0.875rem;
-                    margin: 0 auto;
-                    margin-right: auto;
-                    margin-left: auto;
-                    max-width: 20em;
-                }
-            }
-        }
+        /* Mobile */
         @media only screen and (max-width: 768px) {
-            &-list {
-                flex-direction: column;
-                align-items: center;
-                &-item {
-                    font-size: 1rem;
-                    &-title {
-                        font-size: 1rem;
-                    }
-                    &-description {
-                        font-size: 1rem;
-                    }
-                }
-            }
+            display: none;
         }
     }
 
-    &__work {
-        background: $light-10;
-        color: $sg-space-black;
+    .hero-image-mobile {
+        width: 100%;
+        max-width: 500px;
 
+        /* Mobile */
         @media only screen and (max-width: 768px) {
-            .jobs__container {
-                p {
-                    line-height: 30px;
-                }
+            display: block;
+        }
+    }
+
+    h2 {
+        font-size: 3rem;
+        line-height: 3.75rem;
+        font-weight: bold;
+
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    .benefits {
+        margin: 100px 0;
+        /* Mobile */
+        @media only screen and (max-width: 576px) {
+            margin: 70px 0;
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            line-height: 1.4375rem;
+        }
+        p {
+            line-height: 1.25rem;
+        }
+        .benefit {
+            /* Mobile */
+            @media only screen and (max-width: 576px) {
+                width: 40%;
             }
         }
     }
 
-    &__positions {
-        background: $light-11;
+    .handbook-benefits-link {
+        text-decoration: underline;
         color: $sg-space-black;
+    }
 
-        &--title {
-            margin: auto auto;
-            max-width: 30rem;
-            text-align: left;
+    .icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Styling for both carousels */
+    .carousel {
+        h1 {
+            font-size: 3rem;
+            line-height: 3.75rem;
         }
-        &--dept {
-            max-width: 30em;
-            border-left: 1px solid $light-10;
-            border-top: 1px solid $light-10;
-            border-right: 1px solid $light-10;
-            border-radius: 0.25rem;
-            background: $white;
-            margin-top: 1rem;
+    }
 
-            &-container {
-                padding: 1rem;
-                background: $white;
-                border-bottom: 1px solid $light-10;
-                border-top-left-radius: 1rem;
-                border-top-right-radius: 1rem;
+    .culture-carousel {
+        .carousel-item {
+            p {
+                /* Mobile */
+                @media only screen and (max-width: 768px) {
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+            }
+            .landscape-container {
+                height: 611px;
+            }
+            img {
+                width: 100%;
+                max-width: 458px;
+                margin-left: 10%;
+
+                /* Mobile */
+                @media only screen and (max-width: 768px) {
+                    margin-left: 0;
+                }
+            }
+            img.landscape {
+                margin-top: 89px;
+                max-width: 577px;
             }
         }
+        .carousel-control-prev,
+        .carousel-control-next {
+            display: none;
+        }
+    }
 
-        &--entry {
-            display: flex;
-            flex-wrap: nowrap;
-            padding: 1rem;
-            justify-content: space-between;
-            color: $blue-7;
-            border-bottom: 1px solid $light-10;
-            align-items: center;
+    .culture {
+        width: 100%;
+        max-width: 1500px;
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            padding: 100px 0;
+            margin-bottom: 70px;
+            display: none;
+        }
+    }
 
-            &-button {
-                text-decoration: none;
-                transition: opacity 0.15s ease-in;
-                padding: 0.5rem 1rem;
-                color: $white;
-                background: $blue-7;
-                border-radius: 0.25rem;
-                height: 50%;
-                margin-left: 0.5rem;
+    .culture-mobile {
+        display: none;
+
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            display: block;
+
+            img {
+                width: 45%;
             }
+        }
+    }
+
+    .values-carousel {
+        padding: 128px 0;
+        margin-bottom: 128px;
+
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            padding: 100px 0;
+            margin-bottom: 70px;
+        }
+
+        .subTitle {
+            line-height: 1.25rem;
+            margin-bottom: 20px;
+            /* Mobile */
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 10px;
+            }
+        }
+        h1 {
+            margin-bottom: 20px;
+            /* Mobile */
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 10px;
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+        img {
+            margin-top: 50px;
+            width: 100%;
+            max-width: 500px;
+            /* Mobile */
+            @media only screen and (max-width: 768px) {
+                max-width: 300px;
+                margin-top: 25px;
+            }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            margin-top: 200px;
+        }
+        .paragraph {
+            height: 40px; /* hardcoding height so that it doesn't jump up and down in between slides */
+            font-size: 1.125rem;
+            line-height: 1.375rem;
+            /* Mobile */
+            @media only screen and (max-width: 768px) {
+                width: 85%;
+                margin: 0 auto;
+            }
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: $sg-space-black;
+        }
+        .carousel-indicators li {
+            background-color: $sg-space-black;
+        }
+    }
+
+    .contact p {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+
+        /* Mobile */
+        @media only screen and (max-width: 768px) {
+            font-size: 1.125rem;
+            line-height: 1.42rem;
         }
     }
 }

@@ -1,80 +1,21 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import ArrowDownIcon from 'mdi-react/ArrowDownIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Layout from '../components/Layout'
-//import HoriztonalCarousel from '../components/Carousel'
 import Carousel from 'react-bootstrap/Carousel'
 import { ContentSection } from '../components/content/ContentSection'
-import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
 
 const CareersPage = props => {
-    let items = [
-        {
-            id: 1,
-            buttonLabel: 'Being Customer-First',
-            imageUrl: '../careers_hero_img.png',
-            text: '0',
-            className: 'active',
-            itemClassName: 'd-block',
-        },
-        {
-            id: 2,
-            buttonLabel: 'Work as a Team',
-            imageUrl: '../careers_hero_img.png',
-            text: '1',
-            className: '',
-            itemClassName: 'd-none',
-        },
-        {
-            id: 3,
-            buttonLabel: 'High Quality',
-            imageUrl: '../careers_hero_img.png',
-            text: 'You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.',
-            className: '',
-            itemClassName: 'd-none',
-        },
-        {
-            id: 4,
-            buttonLabel: 'High Agency',
-            imageUrl: '../careers_hero_img.png',
-            text: '3',
-            className: '',
-            itemClassName: 'd-none',
-        },
-        {
-            id: 5,
-            buttonLabel: 'Welcoming & Inclusive',
-            imageUrl: '../careers_hero_img.png',
-            text: '4',
-            className: '',
-            itemClassName: 'd-none',
-        },
-        {
-            id: 6,
-            buttonLabel: 'Open & Transparent',
-            imageUrl: '../careers_hero_img.png',
-            text: '5',
-            className: '',
-            itemClassName: 'd-none',
-        },
-        {
-            id: 7,
-            buttonLabel: 'Continuos Growth',
-            imageUrl: '../careers_hero_img.png',
-            text: '6',
-            className: '',
-            itemClassName: 'd-none',
-        },
-    ]
-
     return (
-        <Layout location={props.location}>
-            <div className="careers">
-                <ContentSection className="py-7">
+        <Layout
+            location={props.location}
+            className="jobs-page"
+        >
+            <div>
+                <ContentSection className="hero-section">
                     <div className="row">
                         <div className="col-lg-11">
-                            <h1 className="display-2 font-weight-bold">Let’s build the future together.</h1>
+                            <h1 className="display-2 title">Let’s build the future together.</h1>
                             <h1 className="display-2 font-weight-normal">
                                 We're developing the world's most advanced code search navigation platform with
                                 brilliant dreamers around the globe.
@@ -82,25 +23,30 @@ const CareersPage = props => {
                         </div>
                     </div>
                     <Link
-                        className="btn btn-primary my-4"
+                        className="btn btn-primary mt-4"
                         to="https://boards.greenhouse.io/sourcegraph91"
-                        title="Explore all jobs"
+                        title="Explore our jobs"
                     >
-                        Explore all jobs
+                        Explore our jobs
                         <ArrowRightIcon className="ml-3" />
                     </Link>
                 </ContentSection>
 
                 <div className="row">
-                    <img src="../careers_hero_img.png" className="mx-auto heroImage" />
+                    <img src="../careers/careers_hero_img.png" className="mx-auto hero-image" />
+                    <img src="../careers/careers_hero_img_mobile.jpg" className="mx-auto hero-image-mobile" />
                 </div>
 
-                <ContentSection className="my-8 benefits">
-                    <div className="row mb-6">
+                <ContentSection className="benefits">
+                    <div className="row">
                         <div className="col-lg-10 m-auto">
                             <h2 className="display-2 text-center">Happy, healthy, and always in the flow.</h2>
-                            <p className="text-center">
-                                You can view all benefits and details in{' '}
+                            <p className="text-center mx-6">
+                                Our Teammates are our most valuable resource. That’s why we provide total rewards that are 
+                                highly competitive and allow you to thrive both personally and professionally.
+                            </p>
+                            <p className="text-center mx-6 mt-3">
+                                Learn more in {' '}
                                 <a
                                     target="_blank"
                                     className="handbook-benefits-link"
@@ -112,154 +58,246 @@ const CareersPage = props => {
                             </p>
                         </div>
                     </div>
-                    <div className="row my-6">
-                        <div className="col-lg-4 text-center">
+                    <div className="row my-3">
+                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Remote.svg" />
                             <h3 className="my-2">Work fully Remote</h3>
-                            <p>The world is your oyster-desk</p>
+                            <p>Anywhere and at anytime</p>
                         </div>
-                        <div className="col-lg-4 text-center">
+                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/PTO.svg" />
                             <h3 className="my-2">Unlimited PTO</h3>
-                            <p>... with a 30-day minimum</p>
+                            <p>...with a 30-day minimum</p>
                         </div>
-                        <div className="col-lg-4 text-center">
+                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Travel.svg" />
                             <h3 className="my-2">Generous travel budgets</h3>
-                            <p>Break free from the zoom screen</p>
+                            <p>Meet your team across the globe</p>
                         </div>
-                    </div>
-                    <div className="row my-6">
-                        <div className="col-lg-4 text-center">
+                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Salary.svg" />
                             <h3 className="my-2">Competitive pay + equity</h3>
-                            <p>Dance on payday</p>
+                            <p>So you can live your best life</p>
                         </div>
-                        <div className="col-lg-4 text-center">
+                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Medical.svg" />
-                            <h3 className="my-2">Medical and dental benefits</h3>
-                            <p>Got you covered 100%</p>
+                            <h3 className="my-2">Medical, dental, and vision benefits</h3>
+                            <p>Got you covered 100% (US only)</p>
                         </div>
-                        <div className="col-lg-4 text-center">
+                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/ProfessionalDevelopment.svg" />
                             <h3 className="my-2">Professional development</h3>
                             <p>Find your thing and we pay for it</p>
                         </div>
-                    </div>
-                    <div className="row my-6">
-                        <div className="col-lg-4 text-center">
+                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/OfficeBudget.svg" />
                             <h3 className="my-2">Office budget</h3>
-                            <p>Get rid of chair and back pain</p>
+                            <p>Create a space where you thrive</p>
                         </div>
-                        <div className="col-lg-4 text-center">
+                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Wellness.svg" />
                             <h3 className="my-2">Wellness budget</h3>
-                            <p>Take care of yourself</p>
+                            <p>Take care of yourself on our dime</p>
                         </div>
-                        <div className="col-lg-4 text-center">
+                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/FamilyPlanning.svg" />
-                            <h3 className="my-2">Family planning</h3>
-                            <p>Fertility benefits for all</p>
+                            <h3 className="my-2">Fertility benefits</h3>
+                            <p>$25k, because family comes first</p>
                         </div>
                     </div>
                 </ContentSection>
 
-                <div className="carousel-slider row w-100">
-                    <Carousel variant="dark" className="w-100">
-                        <Carousel.Item className="w-100 bg-gradient-green-blue">
-                            <div className="row p-8">
-                                <div className="col-lg-1"></div>
-                                <h1 className="col-lg-5">
-                                    <p className="v-aligned">Start your developer/influencer career with us.</p>
-                                </h1>
-                                <div className="col-lg-5">
-                                    <img src="../careers/culture1.png" />
-                                </div>
-                                <div className="col-lg-1"></div>
+                <Carousel className="culture-carousel row">
+                    <Carousel.Item className="bg-gradient-blue2-blue">
+                        <div className="row p-8">
+                            <h1 className="col-lg-6 my-auto">
+                                <p>
+                                    Whether you're early in your career or have written a few books on coding, we have a spot for you
+                                </p>
+                            </h1>
+                            <div className="col-lg-6">
+                                <img src="../careers/culture1.png" className="portrait" />
                             </div>
-                        </Carousel.Item>
-
-                        <Carousel.Item className="w-100 bg-gradient-green-blue">
-                            <div className="row p-8">
-                                <div className="col-lg-1"></div>
-                                <h1 className="col-lg-5">
-                                    <p className="v-aligned">
-                                        This pic is taken by a great bartender in Berlin who spelled Sourcegraph
-                                        correctly on his first try. He also gave us free shots.
-                                    </p>
-                                </h1>
-                                <div className="col-lg-5">
-                                    <img src="../careers/culture2.png" />
-                                </div>
-                                <div className="col-lg-1"></div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100 bg-gradient-blue-purple">
+                        <div className="row p-8">
+                            <h1 className="col-lg-6 my-auto">
+                                <p>
+                                    Just because we’re remote doesn’t mean we’re apart #life-at-sourcegraph
+                                </p>
+                            </h1>
+                            <div className="col-lg-6">
+                                <img src="../careers/culture2.png" className="portrait" />
                             </div>
-                        </Carousel.Item>
-
-                        <Carousel.Item className="w-100 bg-gradient-green-blue">
-                            <div className="row p-8">
-                                <div className="col-lg-1"></div>
-                                <h1 className="col-lg-5">
-                                    <p className="v-aligned">When we say fast, we don't play...</p>
-                                </h1>
-                                <div className="col-lg-5">
-                                    <img src="../careers/culture3.png" />
-                                </div>
-                                <div className="col-lg-1"></div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100 bg-gradient-purple-yellow">
+                        <div className="row p-8">
+                            <h1 className="col-lg-6 my-auto">
+                                <p>
+                                    We’re moving <i>fast</i> to create a world in which everyone can code
+                                </p>
+                            </h1>
+                            <div className="col-lg-6">
+                                <img src="../careers/culture3.png" className="portrait" />
                             </div>
-                        </Carousel.Item>
-
-                        <Carousel.Item className="w-100 bg-gradient-green-blue">
-                            <div className="row p-8">
-                                <div className="col-lg-1"></div>
-                                <h1 className="col-lg-5">
-                                    <p className="v-aligned">
-                                        Nothing is more valuable than this feeling in the world. That’s it.
-                                    </p>
-                                </h1>
-                                <div className="col-lg-5">
-                                    <img src="../careers/culture4.png" className="landscape" />
-                                </div>
-                                <div className="col-lg-1"></div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100 bg-gradient-yellow-green2">
+                        <div className="row p-8">
+                            <h1 className="col-lg-6 my-auto">
+                                <p>
+                                    Work whenever and wherever #life-is-beachy
+                                </p>
+                            </h1>
+                            <div className="col-lg-6 mx-auto">
+                                <img src="../careers/culture4.png" className="landscape" />
                             </div>
-                        </Carousel.Item>
-
-                        <Carousel.Item className="w-100 bg-gradient-green-blue">
-                            <div className="row p-8">
-                                <div className="col-lg-1"></div>
-                                <h1 className="col-lg-5">
-                                    <p className="v-aligned">
-                                        Cats. Cats. Cats. Cats. Cats. And more cats. Somebody, please stop us.
-                                    </p>
-                                </h1>
-                                <div className="col-lg-5">
-                                    <img src="../careers/culture5.png" />
-                                </div>
-                                <div className="col-lg-1"></div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100 bg-gradient-green2-red">
+                        <div className="row p-8">
+                            <h1 className="col-lg-6 my-auto">
+                                <p>
+                                    Our pets are Sourcegraph Teammates, too #pets-of-sourcegraph
+                                </p>
+                            </h1>
+                            <div className="col-lg-6">
+                                <img src="../careers/culture5.png" className="portrait" />
                             </div>
-                        </Carousel.Item>
-
-                        <Carousel.Item className="w-100 bg-gradient-green-blue">
-                            <div className="row p-8">
-                                <div className="col-lg-1"></div>
-                                <h1 className="col-lg-5">
-                                    <p className="v-aligned">That time we coined the hashtag: #van(code)life</p>
-                                </h1>
-                                <div className="col-lg-5">
-                                    <img src="../careers/culture6.png" className="landscape" />
-                                </div>
-                                <div className="col-lg-1"></div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100 bg-gradient-red-blue2">
+                        <div className="row p-8">
+                            <h1 className="col-lg-6 my-auto">
+                                <p>
+                                    We have fun inside and outside of work
+                                </p>
+                                <p>
+                                    This pic was taken at a team meetup in Berlin
+                                </p>
+                            </h1>
+                            <div className="col-lg-6">
+                                <img src="../careers/culture6.jpg" className="landscape" />
                             </div>
-                        </Carousel.Item>
-                    </Carousel>
-                </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100 bg-gradient-blue2-blue">
+                        <div className="row p-8">
+                            <h1 className="col-lg-6 my-auto">
+                                <p>
+                                    Creating the next generation of Sourcegraph coders, one baby at a time
+                                </p>
+                            </h1>
+                            <div className="col-lg-6">
+                                <img src="../careers/culture7.png" className="portrait" />
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                </Carousel>
 
                 <div className="row my-3">
                     <img src="../careers/Culture_8.png" className="culture mx-auto" />
+                    <div className="culture-mobile mx-auto">
+                        <img src="../careers/01-Zoom.png" className="m-2" />
+                        <img src="../careers/02-Zoom.png" className="m-2" />
+                        <img src="../careers/03-Zoom.png" className="m-2" />
+                        <img src="../careers/04-Zoom.png" className="m-2" />
+                        <img src="../careers/05-Zoom.png" className="m-2" />
+                        <img src="../careers/06-Zoom.png" className="m-2" />
+                        <img src="../careers/07-Zoom.png" className="m-2" />
+                        <img src="../careers/08-Zoom.png" className="m-2" />
+                    </div>
                 </div>
 
-                {/*<HoriztonalCarousel className="my-8 mx-7" items={items} />
-                 */}
+                <Carousel className="w-100 values-carousel row">
+                    <Carousel.Item className="w-100">
+                        <div className="row">
+                            <div className="col-lg-6 text-center mx-auto">
+                                <p className="subTitle text-uppercase">We value:</p>
+                                <h1>High quality work</h1>
+                                <p className="paragraph">
+                                    You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.
+                                </p>
+                                <img src="../careers/1highquality.svg"/>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100">
+                        <div className="row">
+                            <div className="col-lg-6 text-center mx-auto">
+                                <p className="subTitle text-uppercase">We value:</p>
+                                <h1>Being customer-first</h1>
+                                <p className="paragraph">
+                                    You earn and keep the trust of our customers by putting their interests first.
+                                </p>
+                                <img src="../careers/2customerdriven.svg"/>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100">
+                        <div className="row">
+                            <div className="col-lg-6 text-center mx-auto">
+                                <p className="subTitle text-uppercase">We value:</p>
+                                <h1>Working as a team</h1>
+                                <p className="paragraph">
+                                    You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.
+                                </p>
+                                <img src="../careers/3team.svg"/>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100">
+                        <div className="row">
+                            <div className="col-lg-6 text-center mx-auto">
+                                <p className="subTitle text-uppercase">We value:</p>
+                                <h1>High agency</h1>
+                                <p className="paragraph">
+                                    You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.
+                                </p>
+                                <img src="../careers/4highagency.svg"/>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100">
+                        <div className="row">
+                            <div className="col-lg-6 text-center mx-auto">
+                                <p className="subTitle text-uppercase">We value:</p>
+                                <h1>Being welcoming & inclusive</h1>
+                                <p className="paragraph">
+                                    You make people from all groups and backgrounds feel comfortable belonging to our team and community.
+                                </p>
+                                <img src="../careers/5welcoming.svg"/>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100">
+                        <div className="row">
+                            <div className="col-lg-6 text-center mx-auto">
+                                <p className="subTitle text-uppercase">We value:</p>
+                                <h1>Being open & transparent</h1>
+                                <p className="paragraph">
+                                    You proactively communicate in an open and transparent way.
+                                </p>
+                                <img src="../careers/6open.svg"/>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item className="w-100">
+                        <div className="row">
+                            <div className="col-lg-6 text-center mx-auto">
+                                <p className="subTitle text-uppercase">We value:</p>
+                                <h1>Continuous growth</h1>
+                                <p className="paragraph">
+                                    You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.
+                                </p>
+                                <img src="../careers/7growth.svg"/>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                </Carousel>
+
                 <ContentSection className="py-7 contact">
                     <div className="row">
                         <div className="col-lg-12">
@@ -270,9 +308,9 @@ const CareersPage = props => {
                     <Link
                         className="btn btn-primary my-2"
                         to="https://boards.greenhouse.io/sourcegraph91"
-                        title="Explore all jobs"
+                        title="Explore our jobs"
                     >
-                        Explore all jobs
+                        Explore our jobs
                         <ArrowRightIcon className="ml-3" />
                     </Link>
                 </ContentSection>

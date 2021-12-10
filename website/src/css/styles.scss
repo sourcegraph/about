@@ -240,7 +240,6 @@ table {
 @import 'components/product/GitLabIntegrationSection';
 @import 'components/product/IntegratesWithSection';
 @import 'components/product/UseCasesTable';
-@import 'components/Carousel';
 @import 'components/Cookiebot';
 @import 'components/CustomCarousel';
 @import 'components/Events';
@@ -249,12 +248,12 @@ table {
 @import 'components/IconItem';
 @import 'components/Footer';
 @import 'components/LeadershipSection';
+@import 'components/PrismTheme';
 @import 'components/TestimonialCarousel';
 @import 'components/Tweets';
 @import 'pages/404';
 @import 'pages/about';
 @import 'pages/batch-changes';
-@import 'pages/careers';
 @import 'pages/cloud-beta';
 @import 'pages/community';
 @import 'pages/customers';
@@ -275,7 +274,6 @@ table {
 @import 'pages/uninstall';
 @import 'pages/universal-code-search';
 @import 'templates/PostTemplate';
-@import 'components/PrismTheme';
 
 .virtual-br::before {
     content: '\A';
@@ -292,6 +290,21 @@ table {
 }
 .bg-gradient-purple-yellow {
     background: linear-gradient(90deg, $light-purple 0%, $light-yellow 100%);
+}
+.bg-gradient-purple-blue2 {
+    background: linear-gradient(90deg, $light-purple 0%, $light-blue2 100%);
+}
+.bg-gradient-yellow-green2 {
+    background: linear-gradient(90deg, $light-yellow 0%, $light-green2 100%);
+}
+.bg-gradient-green2-red {
+    background: linear-gradient(90deg, $light-green 0%, $light-red 100%);
+}
+.bg-gradient-red-blue2 {
+    background: linear-gradient(90deg, $light-red 0%, $light-blue2 100%);
+}
+.bg-gradient-blue2-blue {
+    background: linear-gradient(90deg, $light-blue2 0%, $light-blue 100%);
 }
 /* END Gradient backgrounds */
 
