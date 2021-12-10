@@ -8,8 +8,8 @@
 
 @import 'colors';
 
-$font-family-sans-serif: source-sans-pro, sans-serif; // Adobe Source Sans Pro
-$font-family-monospace: source-code-pro, monospace; // Adobe Source Code Pro for code
+$font-family-sans-serif: source-sans-pro, sans-serif; /* Adobe Source Sans Pro */
+$font-family-monospace: source-code-pro, monospace; /* Adobe Source Code Pro for code */
 $font-family-base: $font-family-sans-serif;
 $headings-font-family: $font-family-base;
 
@@ -18,16 +18,16 @@ $border-radius-lg: 0.25rem;
 $border-radius-sm: 0.1rem;
 
 $font-weight-semibold: 600;
-$font-weight-bold: $font-weight-semibold; // uses Adobe Sans Pro Semi-bold
-$font-weight-bolder: 700; // uses Adobe Sans Pro Bold
+$font-weight-bold: $font-weight-semibold; /* uses Adobe Sans Pro Semi-bold */
+$font-weight-bolder: 700; /* uses Adobe Sans Pro Bold */
 
-$headings-font-weight: 700; // uses Adobe Sans Pro Bold
+$headings-font-weight: 700; /* uses Adobe Sans Pro Bold */
 
 $input-btn-padding-y: 0.55rem;
 
 @import 'node_modules/bootstrap/scss/variables';
 
-// Set variables that rely on Bootstrap variables.
+/* Set variables that rely on Bootstrap variables. */
 $spacer: 1rem;
 $spacers: (
     0: 0,
@@ -145,9 +145,8 @@ body {
 }
 
 .popover {
-    // Prevent a child element with non-rounded corners from extruding.
-    // overflow: hidden;
-
+    /* Prevent a child element with non-rounded corners from extruding.
+     overflow: hidden; */
     border: 0;
 }
 
@@ -161,11 +160,10 @@ body {
     background-color: white;
 }
 
-// Formats an icon so that it appears inline in the text
-// with height matching the text
+/* Formats an icon so that it appears inline in the text with height matching the text */
 .icon-inline {
-    // SVGs already include padding to account for text baseline,
-    // so align with the bottom of the text
+    /* SVGs already include padding to account for text baseline,
+     so align with the bottom of the text */
     vertical-align: bottom;
     display: inline-flex;
     align-items: center;
@@ -174,13 +172,13 @@ svg.icon-inline,
 img.icon-inline,
 .icon-inline svg,
 .icon-inline img {
-    // TODO find a better way to scale icons that is not proportional to the font size
-    // 14px font size -> 20px icon size
+    /* TODO find a better way to scale icons that is not proportional to the font size
+     14px font size -> 20px icon size */
     // stylelint-disable-next-line declaration-property-unit-whitelist
     width: (20em / 14);
     // stylelint-disable-next-line declaration-property-unit-whitelist
     height: (20em / 14);
-    // Match color of the text
+    /* Match color of the text */
     fill: currentColor;
 }
 
@@ -343,13 +341,13 @@ table {
 }
 
 .font-size-large {
-    font-size: 4.5em; // 72px
-    line-height: 1.25em; // 90px
+    font-size: 4.5em;
+    line-height: 1.25em;
 }
 
 .font-size-extra-large {
-    font-size: 6em; // 96px
-    line-height: 1.25em; // 120px
+    font-size: 6em;
+    line-height: 1.25em;
 }
 
 .blog-image {

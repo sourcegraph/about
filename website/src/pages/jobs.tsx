@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Layout from '../components/Layout'
 import Carousel from 'react-bootstrap/Carousel'
@@ -7,7 +6,10 @@ import { ContentSection } from '../components/content/ContentSection'
 
 const CareersPage = props => {
     return (
-        <Layout location={props.location} className="jobs-page">
+        <Layout
+            location={props.location}
+            className="jobs-page"
+        >
             <div>
                 <ContentSection className="hero-section">
                     <div className="row">
@@ -19,17 +21,18 @@ const CareersPage = props => {
                             </h1>
                         </div>
                     </div>
-                    <Link
+                    <a
                         className="btn btn-primary mt-4"
-                        to="https://boards.greenhouse.io/sourcegraph91"
+                        href="https://boards.greenhouse.io/sourcegraph91"
                         title="Explore our jobs"
+                        target="_blank"
                     >
                         Explore our jobs
                         <ArrowRightIcon className="ml-3" />
-                    </Link>
+                    </a>
                 </ContentSection>
 
-                <div className="row">
+                <div>
                     <img src="../careers/careers_hero_img.png" className="mx-auto hero-image" />
                     <img src="../careers/careers_hero_img_mobile.jpg" className="mx-auto hero-image-mobile" />
                 </div>
@@ -58,7 +61,7 @@ const CareersPage = props => {
                     <div className="row my-3">
                         <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Remote.svg" />
-                            <h3 className="my-2">Work fully Remote</h3>
+                            <h3 className="my-2">Work fully remote</h3>
                             <p>Anywhere and at anytime</p>
                         </div>
                         <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
@@ -99,93 +102,87 @@ const CareersPage = props => {
                         <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
                             <img className="icon my-2 mx-auto" src="../careers/FamilyPlanning.svg" />
                             <h3 className="my-2">Fertility benefits</h3>
-                            <p>$25k, because family comes first</p>
+                            <p>$25K, because family comes first</p>
                         </div>
                     </div>
                 </div>
 
-                <Carousel className="culture-carousel row">
+                <Carousel className="culture-carousel">
                     <Carousel.Item className="bg-gradient-blue2-blue">
-                        <div className="row p-8">
+                        <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    Whether you're early in your career or have written a few books on coding, we have a
-                                    spot for you
-                                </p>
+                                <p>Whether you're early in your career or have written a few books on coding, we have a spot for you</p>
                             </h1>
-                            <div className="col-lg-6">
-                                <img src="../careers/culture1.png" className="portrait" />
+                            <div className="col-lg-6 img-container">
+                                <img src="../careers/culture1.png" />
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100 bg-gradient-blue-purple">
-                        <div className="row p-8">
+                    <Carousel.Item className="bg-gradient-blue-purple">
+                        <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>Just because we’re remote doesn’t mean we’re apart #life-at-sourcegraph</p>
+                                <p>Just because we’re remote doesn’t mean we’re apart <br />#life-at-sourcegraph</p>
                             </h1>
-                            <div className="col-lg-6">
-                                <img src="../careers/culture2.png" className="portrait" />
+                            <div className="col-lg-6 img-container">
+                                <img src="../careers/culture2.png" />
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100 bg-gradient-purple-yellow">
-                        <div className="row p-8">
+                    <Carousel.Item className="bg-gradient-purple-yellow">
+                        <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    We’re moving <i>fast</i> to create a world in which everyone can code
-                                </p>
+                                <p>We’re moving <i>fast</i> to create a world in which everyone can code</p>
                             </h1>
-                            <div className="col-lg-6">
-                                <img src="../careers/culture3.png" className="portrait" />
+                            <div className="col-lg-6 img-container">
+                                <img src="../careers/culture3.png" />
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100 bg-gradient-yellow-green2">
-                        <div className="row p-8">
+                    <Carousel.Item className="bg-gradient-yellow-green2">
+                        <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>Work whenever and wherever #life-is-beachy</p>
+                                <p>Work whenever and wherever <br />#life-is-beachy</p>
                             </h1>
-                            <div className="col-lg-6 mx-auto">
+                            <div className="col-lg-6 img-container">
                                 <img src="../careers/culture4.png" className="landscape" />
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100 bg-gradient-green2-red">
-                        <div className="row p-8">
+                    <Carousel.Item className="bg-gradient-green2-red">
+                        <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>Our pets are Sourcegraph Teammates, too #pets-of-sourcegraph</p>
+                                <p>Our pets are Sourcegraph Teammates, too <br />#pets-of-sourcegraph</p>
                             </h1>
-                            <div className="col-lg-6">
-                                <img src="../careers/culture5.png" className="portrait" />
+                            <div className="col-lg-6 img-container">
+                                <img src="../careers/culture5.png" />
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100 bg-gradient-red-blue2">
-                        <div className="row p-8">
+                    <Carousel.Item className="bg-gradient-red-blue2">
+                        <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>We have fun inside and outside of work</p>
-                                <p>This pic was taken at a team meetup in Berlin</p>
+                                <p>We have fun inside and outside of work <br />This pic was taken at a team meetup in Berlin</p>
                             </h1>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 img-container">
                                 <img src="../careers/culture6.jpg" className="landscape" />
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100 bg-gradient-blue2-blue">
-                        <div className="row p-8">
+                    <Carousel.Item className="bg-gradient-blue2-blue">
+                        <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
                             </h1>
-                            <div className="col-lg-6">
-                                <img src="../careers/culture7.png" className="portrait" />
+                            <div className="col-lg-6 img-container">
+                                <img src="../careers/culture7.png" />
                             </div>
                         </div>
                     </Carousel.Item>
                 </Carousel>
 
-                <div className="row my-3">
-                    <img src="../careers/Culture_8.png" className="culture mx-auto" />
-                    <div className="culture-mobile mx-auto">
+                <div className="my-3">
+                    <img src="../careers/Culture_8.png" className="culture-section mx-auto" />
+                    <div className="culture-section-mobile mx-auto">
                         <img src="../careers/01-Zoom.png" className="m-2" />
                         <img src="../careers/02-Zoom.png" className="m-2" />
                         <img src="../careers/03-Zoom.png" className="m-2" />
@@ -197,11 +194,11 @@ const CareersPage = props => {
                     </div>
                 </div>
 
-                <Carousel className="w-100 values-carousel row">
-                    <Carousel.Item className="w-100">
+                <Carousel className="values-carousel">
+                    <Carousel.Item>
                         <div className="row">
-                            <div className="col-lg-6 text-center mx-auto">
-                                <p className="subTitle text-uppercase">We value:</p>
+                            <div className="col-md-8">
+                                <p className="subTitle">We value:</p>
                                 <h1>High quality work</h1>
                                 <p className="paragraph">
                                     You are responsible for finding out what high-quality work looks like and producing
@@ -211,10 +208,10 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100">
+                    <Carousel.Item>
                         <div className="row">
-                            <div className="col-lg-6 text-center mx-auto">
-                                <p className="subTitle text-uppercase">We value:</p>
+                            <div className="col-md-8">
+                                <p className="subTitle">We value:</p>
                                 <h1>Being customer-first</h1>
                                 <p className="paragraph">
                                     You earn and keep the trust of our customers by putting their interests first.
@@ -223,10 +220,10 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100">
+                    <Carousel.Item>
                         <div className="row">
-                            <div className="col-lg-6 text-center mx-auto">
-                                <p className="subTitle text-uppercase">We value:</p>
+                            <div className="col-md-8">
+                                <p className="subTitle">We value:</p>
                                 <h1>Working as a team</h1>
                                 <p className="paragraph">
                                     You work collaboratively with your peers, cross-functional teammates, and leadership
@@ -236,10 +233,10 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100">
+                    <Carousel.Item>
                         <div className="row">
-                            <div className="col-lg-6 text-center mx-auto">
-                                <p className="subTitle text-uppercase">We value:</p>
+                            <div className="col-md-8">
+                                <p className="subTitle">We value:</p>
                                 <h1>High agency</h1>
                                 <p className="paragraph">
                                     You have the power and the responsibility to improve Sourcegraph as a company and as
@@ -249,10 +246,10 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100">
+                    <Carousel.Item>
                         <div className="row">
-                            <div className="col-lg-6 text-center mx-auto">
-                                <p className="subTitle text-uppercase">We value:</p>
+                            <div className="col-md-8">
+                                <p className="subTitle">We value:</p>
                                 <h1>Being welcoming & inclusive</h1>
                                 <p className="paragraph">
                                     You make people from all groups and backgrounds feel comfortable belonging to our
@@ -262,20 +259,20 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100">
+                    <Carousel.Item>
                         <div className="row">
-                            <div className="col-lg-6 text-center mx-auto">
-                                <p className="subTitle text-uppercase">We value:</p>
+                            <div className="col-md-8">
+                                <p className="subTitle">We value:</p>
                                 <h1>Being open & transparent</h1>
                                 <p className="paragraph">You proactively communicate in an open and transparent way.</p>
                                 <img src="../careers/6open.svg" />
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100">
+                    <Carousel.Item>
                         <div className="row">
-                            <div className="col-lg-6 text-center mx-auto">
-                                <p className="subTitle text-uppercase">We value:</p>
+                            <div className="col-md-8">
+                                <p className="subTitle">We value:</p>
                                 <h1>Continuous growth</h1>
                                 <p className="paragraph">
                                     You strive to continuously grow and learn by genuinely soliciting feedback early and
@@ -294,14 +291,15 @@ const CareersPage = props => {
                             <p>We're looking forward to remind you that "you're on mute" ;)</p>
                         </div>
                     </div>
-                    <Link
+                    <a
                         className="btn btn-primary my-2"
-                        to="https://boards.greenhouse.io/sourcegraph91"
+                        href="https://boards.greenhouse.io/sourcegraph91"
                         title="Explore our jobs"
+                        target="_blank"
                     >
                         Explore our jobs
                         <ArrowRightIcon className="ml-3" />
-                    </Link>
+                    </a>
                 </ContentSection>
             </div>
         </Layout>
