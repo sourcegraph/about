@@ -6,10 +6,7 @@ import { ContentSection } from '../components/content/ContentSection'
 
 const CareersPage = props => {
     return (
-        <Layout
-            location={props.location}
-            className="jobs-page"
-        >
+        <Layout location={props.location} className="jobs-page">
             <div>
                 <ContentSection className="hero-section">
                     <div className="row">
@@ -111,7 +108,10 @@ const CareersPage = props => {
                     <Carousel.Item className="bg-gradient-blue2-blue">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>Whether you're early in your career or have written a few books on coding, we have a spot for you</p>
+                                <p>
+                                    Whether you're early in your career or have written a few books on coding, we have a
+                                    spot for you
+                                </p>
                             </h1>
                             <div className="col-lg-6 img-container">
                                 <img src="../careers/culture1.png" />
@@ -121,7 +121,10 @@ const CareersPage = props => {
                     <Carousel.Item className="bg-gradient-blue-purple">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>Just because we’re remote doesn’t mean we’re apart <br />#life-at-sourcegraph</p>
+                                <p>
+                                    Just because we’re remote doesn’t mean we’re apart <br />
+                                    #life-at-sourcegraph
+                                </p>
                             </h1>
                             <div className="col-lg-6 img-container">
                                 <img src="../careers/culture2.png" />
@@ -131,7 +134,9 @@ const CareersPage = props => {
                     <Carousel.Item className="bg-gradient-purple-yellow">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>We’re moving <i>fast</i> to create a world in which everyone can code</p>
+                                <p>
+                                    We’re moving <i>fast</i> to create a world in which everyone can code
+                                </p>
                             </h1>
                             <div className="col-lg-6 img-container">
                                 <img src="../careers/culture3.png" />
@@ -141,7 +146,10 @@ const CareersPage = props => {
                     <Carousel.Item className="bg-gradient-yellow-green2">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>Work whenever and wherever <br />#life-is-beachy</p>
+                                <p>
+                                    Work whenever and wherever <br />
+                                    #life-is-beachy
+                                </p>
                             </h1>
                             <div className="col-lg-6 img-container">
                                 <img src="../careers/culture4.png" className="landscape" />
@@ -151,7 +159,10 @@ const CareersPage = props => {
                     <Carousel.Item className="bg-gradient-green2-red">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>Our pets are Sourcegraph Teammates, too <br />#pets-of-sourcegraph</p>
+                                <p>
+                                    Our pets are Sourcegraph Teammates, too <br />
+                                    #pets-of-sourcegraph
+                                </p>
                             </h1>
                             <div className="col-lg-6 img-container">
                                 <img src="../careers/culture5.png" />
@@ -161,7 +172,10 @@ const CareersPage = props => {
                     <Carousel.Item className="bg-gradient-red-blue2">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
-                                <p>We have fun inside and outside of work <br />This pic was taken at a team meetup in Berlin</p>
+                                <p>
+                                    We have fun inside and outside of work <br />
+                                    This pic was taken at a team meetup in Berlin
+                                </p>
                             </h1>
                             <div className="col-lg-6 img-container">
                                 <img src="../careers/culture6.jpg" className="landscape" />
