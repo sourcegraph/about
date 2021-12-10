@@ -5,7 +5,6 @@
         line-height: 3.75rem;
         margin-bottom: 30px;
 
-        /* Mobile */
         @media only screen and (max-width: 768px) {
             font-size: 2.25rem;
             line-height: 2.825rem;
@@ -18,7 +17,6 @@
         line-height: 1.875rem;
         margin-bottom: 10px;
 
-        /* Mobile */
         @media only screen and (max-width: 768px) {
             font-size: 1.15rem;
             line-height: 1.375rem;
@@ -31,7 +29,6 @@
         line-height: 1.75rem;
         margin-bottom: 0;
 
-        /* Mobile */
         @media only screen and (max-width: 768px) {
             font-size: 1rem;
             line-height: 1.625rem;
@@ -48,7 +45,6 @@
     li {
         font-size: 0.875rem;
 
-        /* Mobile */
         @media only screen and (max-width: 768px) {
             line-height: 1.5rem;
         }
@@ -65,16 +61,15 @@
     li {
         font-size: 0.875rem;
 
-        /* Mobile */
         @media only screen and (max-width: 768px) {
             line-height: 1.5rem;
         }
     }
 
     .custom-carousel {
+        transition: background-color 0.5s ease;
         padding: 16rem 0;
 
-        /* Mobile */
         @media only screen and (max-width: 768px) {
             padding: 6rem;
         }
@@ -88,7 +83,6 @@
             font-size: 4rem;
             line-height: 5rem;
 
-            /* Mobile */
             @media only screen and (max-width: 768px) {
                 font-size: 2.25rem;
                 line-height: 2.8rem;
