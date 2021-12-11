@@ -168,9 +168,10 @@ const ITEMS: {
 interface Props {
     showButton: boolean
     className: String
+    showSection: boolean
 }
 
-export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, className }) => {
+export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, className, showSection }) => {
     const [buttonClass, setButtonClass] = useState('')
     const [windowWidth, setWindowWidth] = useState(0)
     const [imagesWidth, setImagesWidth] = useState(0)
@@ -383,9 +384,11 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
 
     return (
         <div id="customers" className={`container customer-logos-section ${className}`}>
-            <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
-                Our customers use Sourcegraph every day to build software you rely on.
-            </h3>
+            {showSection && (
+                <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
+                    Our customers use Sourcegraph every day to build software you rely on.
+                </h3>
+            )}
             {!showButton && (
                 <div className="row justify-content-center">
                     <div className="col-lg-6 text-center mt-2">
