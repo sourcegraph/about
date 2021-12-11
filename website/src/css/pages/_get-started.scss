@@ -1,0 +1,50 @@
+.get-started-page {
+    .column {
+        padding: 40px 127px 0;
+    }
+
+    &__hero-and-header {
+        h1 {
+            font-weight: bold
+        }
+        .subTitle {
+            font-size: 1.125rem;
+            line-height: 1.4125rem;
+            margin-bottom: 195px;
+
+            @media only screen and (max-width: 768px) {
+                
+            }
+        }
+    }
+
+    .cta-container {
+        .title {
+            font-size: 2.25rem;
+            line-height: 2.815rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .badge {
+            text-transform: uppercase;
+            background-color: $purple-2;
+            padding: 7px 10px 5px;
+            color: $white;
+            font-weight: bold;
+            font-size: 0.65rem;
+            line-height: 0.815rem;
+            margin-bottom: 15px;
+            img {
+                margin: -2px 5px 0 0;
+            }
+        }
+        p {
+            font-size: 1.125rem;
+            line-height: 1.375rem;
+            margin-bottom: 259px;
+        }
+        .right-column p {
+            margin-bottom: 297px;
+        }
+    }
+}

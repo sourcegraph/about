@@ -3,7 +3,6 @@ import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
-import GetStarted from '../components/GetStarted'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
@@ -15,8 +14,8 @@ const Index: React.FunctionComponent = (props: any) => (
                 <div className="home__intro container">
                     <div className="row">
                         <div className="col mt-6 mb-6 mb-lg-0 text-center">
-                            <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
-                            <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
+                            <h1 className="display-1 font-weight-bold mb-0">Your workflow wonderland</h1>
+                            <h2 className="display-2 mb-0">No codebase too big (or too small).</h2>
                             <p className="my-5 col-9 mx-auto">
                                 Find and fix things across all of your code faster with Sourcegraph. Onboard to a new
                                 codebase, make large-scale refactors, increase efficiency, address security risks,
@@ -25,19 +24,28 @@ const Index: React.FunctionComponent = (props: any) => (
                             <div className="pt-1">
                                 <Link
                                     className="btn btn-primary m-3"
-                                    to="#get-started"
-                                    title="Search your (or your company's) code, invite teammates, and try all the features."
+                                    to="/get-started"
+                                    title="Get started"
                                 >
-                                    Deploy locally <ArrowRightIcon className="ml-1" />
+                                    Get started <ArrowRightIcon className="ml-1" />
                                 </Link>
-                                <a
+                                <Link
                                     className="btn btn-outline-primary m-3"
-                                    href="https://sourcegraph.com/search"
-                                    title="Search across top open source repositories (or add your own projects)."
+                                    to=""
+                                    title="Request a demo"
                                 >
-                                    Search open source <ArrowRightIcon className="ml-1" />
-                                </a>
+                                    Request a demo <ArrowRightIcon className="ml-1" />
+                                </Link>
                             </div>
+                            <p className="my-3 col-9 mx-auto">
+                                Product or installation questions? {' '}
+                                <Link
+                                    to=""
+                                    title=""
+                                >
+                                    Talk to an expert
+                                </Link>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -247,8 +255,6 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
-
-            <GetStarted className="bg-gradient-green-blue mt-6" />
         </div>
     </Layout>
 )

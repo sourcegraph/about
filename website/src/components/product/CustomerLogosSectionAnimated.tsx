@@ -385,8 +385,8 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
     return (
         <div id="customers" className={`container customer-logos-section ${className}`}>
             {showSection && (
-                <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
-                    Our customers use Sourcegraph every day to build software you rely on.
+                <h3 className="customer-logos-section__header text-center font-weight-normal">
+                    Relied on every day by the world's fastest-moving companies.
                 </h3>
             )}
             {!showButton && (
