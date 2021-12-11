@@ -33,7 +33,8 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => (
                         <span>Most Popular</span>
                     </span>
                     <p>
-                        Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.
+                        Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get
+                        started for free.
                     </p>
                 </div>
                 <div className="col-lg-6 column right-column bg-gradient-blue-green">
@@ -44,7 +45,6 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => (
                 </div>
             </div>
         </div>
-
     </Layout>
 )
 

@@ -22,27 +22,16 @@ const Index: React.FunctionComponent = (props: any) => (
                                 root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
-                                <Link
-                                    className="btn btn-primary m-3"
-                                    to="/get-started"
-                                    title="Get started"
-                                >
+                                <Link className="btn btn-primary m-3" to="/get-started" title="Get started">
                                     Get started <ArrowRightIcon className="ml-1" />
                                 </Link>
-                                <Link
-                                    className="btn btn-outline-primary m-3"
-                                    to=""
-                                    title="Request a demo"
-                                >
+                                <Link className="btn btn-outline-primary m-3" to="" title="Request a demo">
                                     Request a demo <ArrowRightIcon className="ml-1" />
                                 </Link>
                             </div>
                             <p className="my-3 col-9 mx-auto">
-                                Product or installation questions? {' '}
-                                <Link
-                                    to=""
-                                    title=""
-                                >
+                                Product or installation questions?{' '}
+                                <Link to="" title="">
                                     Talk to an expert
                                 </Link>
                             </p>

@@ -5,7 +5,7 @@
 
     &__hero-and-header {
         h1 {
-            font-weight: bold
+            font-weight: bold;
         }
         .subTitle {
             font-size: 1.125rem;
@@ -13,7 +13,6 @@
             margin-bottom: 195px;
 
             @media only screen and (max-width: 768px) {
-                
             }
         }
     }
