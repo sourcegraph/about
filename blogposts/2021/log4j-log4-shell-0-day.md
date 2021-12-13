@@ -1,6 +1,6 @@
 ---
 title: 'Log4j Log4Shell 0-day: find, fix, and track affected code with code search'
-description: 'Find everywhere vulnerable log4j versions are used, automate the creation of pull requests to patch the vulnerability across all your code, and track the progress of the fixes/mitigations.'
+description: "The steps to identify and fix/mitigate the log4j Log4Shell 0-day (CVE-2021-44228) in your code have been widely reported. But they're manual and tedious, and it's hard to track the progress of fixes/mitigations across all your code. Here's how code search can help find, fix, and track code affected by the log4j 0-day."
 author: Quinn Slack
 authorUrl: https://twitter.com/sqs
 publishDate: 2021-12-13T10:00-07:00
@@ -11,7 +11,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/log4j/log4j-
 published: true
 ---
 
-The steps to identify and fix/mitigate the [log4j 0-day (CVE-2021-44228)](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) in your code have been widely reported ([1](https://www.lunasec.io/docs/blog/log4j-zero-day/) [2](https://logging.apache.org/log4j/2.x/security.html) [3](https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/)). But the steps are manual and tedious, and it's hard to track the progress of fixes/mitigations across all your code. To help, we're publishing queries, scripts, and instructions for using code search to:
+The steps to identify and fix/mitigate the [log4j 0-day (CVE-2021-44228)](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) ("Log4Shell") in your code have been widely reported ([1](https://www.lunasec.io/docs/blog/log4j-zero-day/) [2](https://logging.apache.org/log4j/2.x/security.html) [3](https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/)). But the steps are manual and tedious, and it's hard to track the progress of fixes/mitigations across all your code. To help, we're publishing queries, scripts, and instructions for using code search to:
 
 - Find everywhere log4j is used across all your code
 - Automate PRs to fix/mitigate the log4j 0-day across all your code
@@ -37,7 +37,7 @@ Run these queries on Sourcegraph to quickly determine which projects directly de
 
 ### To search across your organization's private code:
 
-- On [Sourcegraph Cloud](https://sourcegraph.com), run the queries linked above in your user search context (`context:@username`), after you've synced all of the org repositories you want to search (in Settings > Account > Your repositories) **OR**
+- On [Sourcegraph Cloud](https://sourcegraph.com), run the queries linked above in your user search context (<code>context:<i>@username</i></code>), after you've synced all of the org repositories you want to search (in **Settings > Account > Your repositories**).
 - On a [self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#quick-install), copy and paste those queries above into the search box on your instance. After pasting, ensure the `.*` (regexp search) button is on for queries that contain regular expressions.
 
 Once you've found where vulnerable log4j dependency versions are used, you can:
@@ -83,17 +83,17 @@ Given any search query (such as the ones linked at the top of the post), you can
 ### To get this code insight on your organization's private code:
 
 1. This feature requires [a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started) and is usually part of an enterprise plan. We’re giving out temporary license keys to use Code Insights for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
-1. Go to Insights > Create new insight > Create search insight.
+1. Go to **Insights > Create new insight > Create search insight**.
 1. Select the specific repositories in which to measure progress (or all repositories).
 1. Add the 3 data series shown in the screenshot above. The queries used above are defined as follows, but you can customize them as needed (using the query links at the start of this post for inspiration):
-1. Vulnerable log4j versions = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14)(\.[0-9]+) patterntype:regexp`
-1. Upgraded log4j versions = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(15)(\.[0-9]+) patterntype:regexp`
-1. formatMsgNoLookups = `-Dlog4j2.formatMsgNoLookups=true`
+   - **Vulnerable log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14)(\.[0-9]+) patterntype:regexp`
+   - **Upgraded log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(15)(\.[0-9]+) patterntype:regexp`
+   - **formatMsgNoLookups** = `-Dlog4j2.formatMsgNoLookups=true`
 1. Give the insight a name and save it.
 
 ## Getting started with Sourcegraph
 
-Free accounts on [Sourcegraph Cloud](https://sourcegraph.com) allow you to search your org private code from GitHub.com and GitLab.com. You can choose which orgs and repositories to sync when signing up or later by visiting Settings > Account > Your repositories.
+Free accounts on [Sourcegraph Cloud](https://sourcegraph.com) allow you to search your org private code from GitHub.com and GitLab.com. You can choose which orgs and repositories to sync when signing up or later by visiting **Settings > Account > Your repositories**.
 
 To use Batch Changes and Code Insights to apply mass fixes and track progress, or if you want to run it on your own laptop or infrastructure, [set up a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started). These features are usually part of an enterprise plan, but we're giving out temporary license keys to use these features for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
 
