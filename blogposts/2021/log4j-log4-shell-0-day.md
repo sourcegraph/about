@@ -33,6 +33,7 @@ Run these queries on Sourcegraph to quickly determine which projects directly de
   - [Any file containing `org.apache.logging.log4j` followed by a vulnerable version number](https://sourcegraph.com/search?q=context:global+org%5C.apache%5C.logging%5C.log4j+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
   - [All files](https://sourcegraph.com/search?q=context:global+org.apache.logging.log4j&patternType=regexp&case=yes) or [all repositories](https://sourcegraph.com/search?q=context:global+org.apache.logging.log4j+select:repo&patternType=regexp&case=yes) that contain `org.apache.logging.log4j`
   - [All files](https://sourcegraph.com/search?q=context:global+log4j&patternType=literal) or [all repositories](https://sourcegraph.com/search?q=context:global+log4j+select:repo&patternType=literal) that contain `log4j`
+- [This search notebook includes the search queries for locating log4j dependencies across all your code](https://sourcegraph.com/github.com/sourcegraph/notebooks/-/blob/log4j.snb.md)
 
 ### To search across your organization's private code:
 
@@ -94,7 +95,7 @@ Given any search query (such as the ones linked at the top of the post), you can
 
 Free accounts on [Sourcegraph Cloud](https://sourcegraph.com) allow you to search your org private code from GitHub.com and GitLab.com. You can choose which orgs and repositories to sync when signing up or later by visiting Settings > Account > Your repositories.
 
-To use Batch Changes and Code Insights to apply mass fixes and track progress, or if you want to run it on your own laptop or infrastructure, [set up a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started). These features are usually part of an enterprise plan, but we're giving out temporary license keys to use these features for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
+To use Batch Changes and Code Insights to apply mass fixes and track progress, or if you want to run it on your own laptop or infrastructure, [set up a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started). These features are usually part of an enterprise plan, but we're giving out temporary license keys to use these features for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key. For any other questions please email [support@sourcegraph.com](mailto:support@sourcegraph.com).
 
 ---
 
