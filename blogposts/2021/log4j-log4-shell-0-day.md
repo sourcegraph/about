@@ -8,7 +8,7 @@ publishDate: 2021-12-13T10:00-07:00
 tags: [blog]
 slug: log4j-log4shell-0-day
 heroImage:
-socialImage:
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/log4j/log4j-track-progress-prs.png
 published: true
 ---
 
