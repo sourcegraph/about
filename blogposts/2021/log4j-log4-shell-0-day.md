@@ -38,7 +38,7 @@ Run these queries on Sourcegraph to quickly determine which projects directly de
 ### To search across your organization's private code:
 
 - On [Sourcegraph Cloud](https://sourcegraph.com), run the queries linked above in your user search context (`context:@username`), after you've synced all of the org repositories you want to search (in Settings > Account > Your repositories) **OR**
-- On a [self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#quick-install), copy and paste those queries above into the search box on your instance.
+- On a [self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#quick-install), copy and paste those queries above into the search box on your instance. After pasting, ensure the `.*` (regexp search) button is on for queries that contain regular expressions.
 
 Once you've found where vulnerable log4j dependency versions are used, you can:
 
