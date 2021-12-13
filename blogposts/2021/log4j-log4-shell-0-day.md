@@ -3,7 +3,7 @@ title: 'Log4j Log4Shell 0-day: find, fix, and track affected code with code sear
 description: "The steps to identify and fix/mitigate the log4j Log4Shell 0-day (CVE-2021-44228) in your code have been widely reported. But they're manual and tedious, and it's hard to track the progress of fixes/mitigations across all your code. Here's how code search can help find, fix, and track code affected by the log4j 0-day."
 author: Quinn Slack
 authorUrl: https://twitter.com/sqs
-publishDate: 2021-12-13T10:00-07:00
+publishDate: 2021-12-13T11:25-07:00
 tags: [blog]
 slug: log4j-log4shell-0-day
 heroImage:
