@@ -54,13 +54,15 @@ Instead of orienting around action items or tactical steps, we oriented our effo
 
 At the highest level, these problems looked something like:
 
-```
+<pre class="language-markdown">
+<code class="language-markdown" style="white-space: pre-wrap;">
 Sourcegraph Cloud is the easiest way for organizations to get started with Sourcegraph.
 └── Small-to-medium organizations can search across their code together on Sourcegraph Cloud.
    └── Individual users can search across their private code on Sourcegraph Cloud.
        └── Sourcegraph team members can search across their private code on Sourcegraph Cloud.
            └── Individual users can search across their public code on Sourcegraph Cloud.
-```
+</code>
+</pre>
 
 Each problem was inherently cross-disciplinary and revealed a set of sub-problems we’d have to solve.
 
@@ -68,8 +70,8 @@ And each problem we solved would support each incremental step forward, all in a
 
 > <strong>Sidebar:</strong>
 > A big sub-problem we spotted: after an individual user adds their repositories to Sourcegraph Cloud, they then need to be able to effortlessly search across those repositories within the 2.2 million other repositories on Sourcegraph Cloud. This led to proposing and building [search contexts](/blog/introducing-search-contexts/), an entirely new product feature, to solve this problem.
-
-Our RFCs are public to the world by default in line with our [open and transparent values](https://handbook.sourcegraph.com/company/values#open-and-transparent). Take a look for yourself how this feature unfolded in [RFC 261: Search Contexts](https://docs.google.com/document/d/1mlxy7Fy19Q2yua7Fjg0xCda1c07f9RoR8rXxU22Ni60/edit#).
+>
+> Our RFCs are public to the world by default in line with our [open and transparent values](https://handbook.sourcegraph.com/company/values#open-and-transparent). Take a look for yourself how this feature unfolded in [RFC 261: Search Contexts](https://docs.google.com/document/d/1mlxy7Fy19Q2yua7Fjg0xCda1c07f9RoR8rXxU22Ni60/edit#).
 
 ### Identify foundations
 
