@@ -95,7 +95,7 @@ Given any search query (such as the ones linked at the top of the post), you can
 
 Free accounts on [Sourcegraph Cloud](https://sourcegraph.com) allow you to search your org private code from GitHub.com and GitLab.com. You can choose which orgs and repositories to sync when signing up or later by visiting Settings > Account > Your repositories.
 
-To use Batch Changes and Code Insights to apply mass fixes and track progress, or if you want to run it on your own laptop or infrastructure, [set up a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started). These features are usually part of an enterprise plan, but we're giving out temporary license keys to use these features for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key. For any other questions please email [support@sourcegraph.com](mailto:support@sourcegraph.com).
+To use Batch Changes and Code Insights to apply mass fixes and track progress, or if you want to run it on your own laptop or infrastructure, [set up a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started). These features are usually part of an enterprise plan, but we're giving out temporary license keys to use these features for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
 
 ---
 
