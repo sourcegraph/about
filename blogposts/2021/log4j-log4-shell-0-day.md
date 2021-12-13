@@ -41,6 +41,7 @@ Run these queries on Sourcegraph to quickly determine which projects directly de
 1. On a [self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#quick-install), copy and paste those queries above into the search box on your instance.
 
 Once you've found where vulnerable log4j dependency versions are used, you can:
+
 - Automate the creation of pull requests to fix/mitigate the issues (see the next section).
 - Share the search URLs with your team to work on eliminating all unsafe deps (getting to "0 results"). With Code Insights, you also get line charts of the progress.
 - Get the raw dataset of all results: export the results to CSV or a spreadsheet with the [sourcegraph/search-export extension](https://sourcegraph.com/extensions/sourcegraph/search-export), or use the [Sourcegraph GraphQL API](https://docs.sourcegraph.com/api/graphql) or [`src` CLI](https://github.com/sourcegraph/src-cli#readme).
@@ -53,6 +54,7 @@ Although code search is a fast and versatile tool for assessing the impact of a 
 ## Automate PRs to fix/mitigate the log4j 0-day across all your code
 
 Use the following [batch change](https://docs.sourcegraph.com/batch_changes) specs to programmatically create GitHub pull requests (or GitLab merge requests) to apply the following fixes/mitigations across all of your code:
+
 - [upgrade-log4j-gradle](https://github.com/sourcegraph/log4j-cve-code-search-resources/tree/main/batch-changes): Force usage of safe log4j dependency versions (including for transitive dependencies) in all Gradle projects that use affected log4j dependency versions.
 - [detect-log4j-gradle](https://github.com/sourcegraph/log4j-cve-code-search-resources/tree/main/batch-changes): Detect Gradle projects (using `build.gradle` files) that use affected log4j dependency versions and open a pull request with a `fixme` file.
 - [detect-log4j-maven](https://github.com/sourcegraph/log4j-cve-code-search-resources/tree/main/batch-changes): Detect Maven projects (using `pom.xml` files) that use affected log4j dependency versions and and open a pull request with a `fixme` file.
@@ -67,7 +69,9 @@ After you preview and create a batch change, you can see all of the pull request
 This feature requires [a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started) and is usually part of an enterprise plan. We’re giving out temporary license keys to use Batch Changes for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
 
 ## Track progress of applying fixes/mitigations for the log4j 0-day across all your code
+
 If you have a lot of projects that need to be patched, and a lot of people working in parallel to apply patches, it's important to know:
+
 - Which projects are still vulnerable?
 - How many applications have been patched so far?
 - Who's applying the patches, and what are the actual diffs?
@@ -82,9 +86,9 @@ Given any search query (such as the ones linked at the top of the post), you can
 1. Go to Insights > Create new insight > Create search insight.
 1. Select the specific repositories in which to measure progress (or all repositories).
 1. Add the 3 data series shown in the screenshot above. The queries used above are defined as follows, but you can customize them as needed (using the query links at the start of this post for inspiration):
-  1. Vulnerable log4j versions = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14)(\.[0-9]+) patterntype:regexp`
-  1. Upgraded log4j versions = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(15)(\.[0-9]+) patterntype:regexp`
-  1. formatMsgNoLookups = `-Dlog4j2.formatMsgNoLookups=true`
+1. Vulnerable log4j versions = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14)(\.[0-9]+) patterntype:regexp`
+1. Upgraded log4j versions = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(15)(\.[0-9]+) patterntype:regexp`
+1. formatMsgNoLookups = `-Dlog4j2.formatMsgNoLookups=true`
 1. Give the insight a name and save it.
 
 ## Getting started with Sourcegraph
@@ -96,4 +100,3 @@ To use Batch Changes and Code Insights to apply mass fixes and track progress, o
 ---
 
 _Thanks to the following people for helping with this post: Olaf Geirsson, Rebecca Dodd, Thorsten Ball, Erica Lindberg, Malo Marrec, Victoria Yunger, Beyang Liu. We welcome [edits to this post](TODO) by pull request._
-
