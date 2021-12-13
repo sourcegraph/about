@@ -1,7 +1,6 @@
 ---
 title: "Log4j Log4Shell 0-day: find, fix, and track affected code with code search"
-description: "How code search helps you deal with log4j CVE-2021-44228:
-find everywhere vulnerable log4j versions are used, automate the creation of pull requests to patch the vulnerability across all your code, and track the progress of the fixes/mitigations."
+description: "Find everywhere vulnerable log4j versions are used, automate the creation of pull requests to patch the vulnerability across all your code, and track the progress of the fixes/mitigations."
 author: Quinn Slack
 authorUrl: https://twitter.com/sqs
 publishDate: 2021-12-13T10:00-07:00
