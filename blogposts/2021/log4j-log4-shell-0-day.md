@@ -99,4 +99,4 @@ To use Batch Changes and Code Insights to apply mass fixes and track progress, o
 
 ---
 
-_Thanks to the following people for helping with this post: Olaf Geirsson, Rebecca Dodd, Thorsten Ball, Erica Lindberg, Malo Marrec, Victoria Yunger, Beyang Liu. We welcome [edits to this post](TODO) by pull request._
+_Thanks to the following people for helping with this post: Olaf Geirsson, Rebecca Dodd, Thorsten Ball, Erica Lindberg, Malo Marrec, Victoria Yunger, Beyang Liu. We welcome [edits to this post](https://github.com/sourcegraph/about/tree/main/blogposts/2021/log4j-log4-shell-0-day.md) by pull request._
