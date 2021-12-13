@@ -33,7 +33,6 @@ Run these queries on Sourcegraph to quickly determine which projects directly de
   - [Any file containing `org.apache.logging.log4j` followed by a vulnerable version number](https://sourcegraph.com/search?q=context:global+org%5C.apache%5C.logging%5C.log4j+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
   - [All files](https://sourcegraph.com/search?q=context:global+org.apache.logging.log4j&patternType=regexp&case=yes) or [all repositories](https://sourcegraph.com/search?q=context:global+org.apache.logging.log4j+select:repo&patternType=regexp&case=yes) that contain `org.apache.logging.log4j`
   - [All files](https://sourcegraph.com/search?q=context:global+log4j&patternType=literal) or [all repositories](https://sourcegraph.com/search?q=context:global+log4j+select:repo&patternType=literal) that contain `log4j`
-- [This search notebook includes the search queries for locating log4j dependencies across all your code](https://sourcegraph.com/github.com/sourcegraph/notebooks/-/blob/log4j.snb.md)
 
 ### To search across your organization's private code:
 
@@ -43,8 +42,9 @@ Run these queries on Sourcegraph to quickly determine which projects directly de
 Once you've found where vulnerable log4j dependency versions are used, you can:
 
 - Automate the creation of pull requests to fix/mitigate the issues (see the next section).
-- Share the search URLs with your team to work on eliminating all unsafe deps (getting to "0 results"). With Code Insights, you also get line charts of the progress.
+- Share the search URLs with your team to work on eliminating all unsafe deps (getting to "0 results"). With Code Insights, you also get line charts of the progress (see below).
 - Get the raw dataset of all results: export the results to CSV or a spreadsheet with the [sourcegraph/search-export extension](https://sourcegraph.com/extensions/sourcegraph/search-export), or use the [Sourcegraph GraphQL API](https://docs.sourcegraph.com/api/graphql) or [`src` CLI](https://github.com/sourcegraph/src-cli#readme).
+- Use a [search notebook](https://sourcegraph.com/github.com/sourcegraph/notebooks/-/blob/log4j.snb.md) to compile all of the queries your team is using to identify potentially vulnerable code.
 
 Although code search is a fast and versatile tool for assessing the impact of a novel vulnerability, it's not perfect. Here are some limitations:
 
