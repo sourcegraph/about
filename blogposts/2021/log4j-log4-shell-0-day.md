@@ -11,7 +11,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/log4j/log4j-
 published: true
 ---
 
-<div class="alert alert-primary" role="alert" style="text-align: center">
+<div class="alert alert-primary" role="alert" style="max-width:650px; align-items: center; margin: auto auto 20px auto">
   <a href="https://logging.apache.org/log4j/2.x/security.html#CVE-2021-45046" >
       Update as of Tuesday, Dec 14: The latest advice is to patch all the way up to v2.16. We have updated all queries and configurations in this post to reflect this recommendation.
       </a>
