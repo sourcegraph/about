@@ -91,8 +91,8 @@ Given any search query (such as the ones linked at the top of the post), you can
 1. Go to **Insights > Create new insight > Create search insight**.
 1. Select the specific repositories in which to measure progress (or all repositories).
 1. Add the 3 data series shown in the screenshot above. The queries used above are defined as follows, but you can customize them as needed (using the query links at the start of this post for inspiration):
-   - **Vulnerable log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14)(\.[0-9]+) patterntype:regexp`
-   - **Upgraded log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(15)(\.[0-9]+) patterntype:regexp`
+   - **Vulnerable log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15)(\.[0-9]+) patterntype:regexp`
+   - **Upgraded log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(16)(\.[0-9]+) patterntype:regexp`
    - **formatMsgNoLookups** = `-Dlog4j2.formatMsgNoLookups=true`
 1. Give the insight a name and save it.
 
