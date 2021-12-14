@@ -58,6 +58,7 @@ Use the following [batch change](https://docs.sourcegraph.com/batch_changes) spe
 - [upgrade-log4j-gradle](https://github.com/sourcegraph/log4j-cve-code-search-resources/tree/main/batch-changes): Force usage of safe log4j dependency versions (including for transitive dependencies) in all Gradle projects that use affected log4j dependency versions.
 - [detect-log4j-gradle](https://github.com/sourcegraph/log4j-cve-code-search-resources/tree/main/batch-changes): Detect Gradle projects (using `build.gradle` files) that use affected log4j dependency versions and open a pull request with a `fixme` file.
 - [detect-log4j-maven](https://github.com/sourcegraph/log4j-cve-code-search-resources/tree/main/batch-changes): Detect Maven projects (using `pom.xml` files) that use affected log4j dependency versions and and open a pull request with a `fixme` file.
+- [patternlayout-fix](https://github.com/sourcegraph/log4j-cve-code-search-resources/tree/main/batch-changes): Replace the `%m` message converter with `%m{nolookups}` in `PatternLayout`, for those who can't upgrade to 2.15.0 and are on log4j releases >=2.7 and <=2.14.1.
 - We'll be adding more (and let us know if you have specific requests). You can also customize the existing specs for your needs, or [write your own batch change spec](https://docs.sourcegraph.com/batch_changes).
 
 After you preview and create a batch change, you can see all of the pull requests and track their progress:
