@@ -56,6 +56,12 @@
             }
         }
 
+        // Fixes uneven or excessive spacing in lists (we only want the li's padding, not the p's
+        // also).
+        ul > li > p:only-of-type {
+            margin-bottom: 0;
+        }
+
         blockquote {
             line-height: 1.8;
             padding-left: 2rem;
