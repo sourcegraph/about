@@ -65,6 +65,10 @@ After you preview and create a batch change, you can see all of the pull request
 
 ![Track progress of pull requests](https://storage.googleapis.com/sourcegraph-assets/blog/log4j/log4j-track-progress-prs.png)
 
+Here's a video walkthrough of how to use Batch Changes to fix/mitigate log4j vulnerabilities in your code:
+
+<div style="position: relative; padding-bottom: 45.18828451882845%; height: 0;"><iframe src="https://www.loom.com/embed/84807e1388ce4a5383df7fe5174ed2d7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 ### To use Batch Changes on your organization's private code:
 
 This feature requires [a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started) and is usually part of an enterprise plan. We’re giving out temporary license keys to use Batch Changes for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
