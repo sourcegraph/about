@@ -12,7 +12,7 @@ published: true
 ---
 
 <div class="alert alert-primary" role="alert" style="max-width:650px; align-items: center; margin: auto auto 20px auto">
-      <strong>Update as of Tuesday, Dec 14:</strong> The  <a href="https://logging.apache.org/log4j/2.x/security.html#CVE-2021-45046">latest advice is to patch all the way up to v2.16</a>. We have updated all queries and configurations in this post to reflect this recommendation.
+      <strong>Update as of 23:30 UTC on Dec 14:</strong> The  <a href="https://logging.apache.org/log4j/2.x/security.html#CVE-2021-45046">latest advice is to patch all the way up to v2.16</a>. We have updated all queries and configurations in this post to reflect this recommendation.
 </div>
 
 The steps to identify and fix/mitigate the [log4j 0-day (CVE-2021-44228)](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) ("Log4Shell") in your code have been widely reported ([1](https://www.lunasec.io/docs/blog/log4j-zero-day/) [2](https://logging.apache.org/log4j/2.x/security.html) [3](https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/)). But the steps are manual and tedious, and it's hard to track the progress of fixes/mitigations across all your code. To help, we're publishing queries, scripts, and instructions for using code search to:
