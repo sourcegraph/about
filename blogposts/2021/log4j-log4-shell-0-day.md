@@ -24,13 +24,13 @@ We've documented how to do these things in Sourcegraph below and will be adding 
 Run these queries on Sourcegraph to quickly determine which projects directly depend on vulnerable versions of log4j. The following links show results on Sourcegraph Cloud across 2M public repositories.
 
 - Direct dependencies on vulnerable log4j versions specified in common build systems:
-  - [Gradle](https://sourcegraph.com/search?q=context:global+lang:gradle+org%5C.apache%5C.logging%5C.log4j%5B%27%22%5D+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
-  - [Maven](https://sourcegraph.com/search?q=context:global+file:pom.xml+%3Clog4j%5C.version%3E2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29%3C/log4j%5C.version%3E&patternType=regexp)
-  - [Ivy](https://sourcegraph.com/search?q=context:global+file:ivy.xml+org%3D%22org%5C.apache%5C.logging%5C.log4j%22+rev%3D%222%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29%22&patternType=regexp)
-  - [sbt (Scala)](https://sourcegraph.com/search?q=context:global+file:%5C.sbt%24+%22org.apache.logging.log4j%22+%25+%222%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
-  - [Bazel](https://sourcegraph.com/search?q=context:global+lang:bazel+org%5C.apache%5C.logging%5C.log4j:+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
+  - [Gradle](https://sourcegraph.com/search?q=context:global+lang:gradle+org%5C.apache%5C.logging%5C.log4j%5B%27%22%5D+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
+  - [Maven](https://sourcegraph.com/search?q=context:global+file:pom.xml+%3Clog4j%5C.version%3E2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%29%28%5C.%5B0-9%5D%2B%29%3C/log4j%5C.version%3E&patternType=regexp)
+  - [Ivy](https://sourcegraph.com/search?q=context:global+file:ivy.xml+org%3D%22org%5C.apache%5C.logging%5C.log4j%22+rev%3D%222%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%29%28%5C.%5B0-9%5D%2B%29%22&patternType=regexp)
+  - [sbt (Scala)](https://sourcegraph.com/search?q=context:global+file:%5C.sbt%24+%22org.apache.logging.log4j%22+%25+%222%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
+  - [Bazel](https://sourcegraph.com/search?q=context:global+lang:bazel+org%5C.apache%5C.logging%5C.log4j:+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
 - Broader queries (with more false positives):
-  - [Any file containing `org.apache.logging.log4j` followed by a vulnerable version number](https://sourcegraph.com/search?q=context:global+org%5C.apache%5C.logging%5C.log4j+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
+  - [Any file containing `org.apache.logging.log4j` followed by a vulnerable version number](https://sourcegraph.com/search?q=context:global+org%5C.apache%5C.logging%5C.log4j+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
   - [All files](https://sourcegraph.com/search?q=context:global+org.apache.logging.log4j&patternType=regexp&case=yes) or [all repositories](https://sourcegraph.com/search?q=context:global+org.apache.logging.log4j+select:repo&patternType=regexp&case=yes) that contain `org.apache.logging.log4j`
   - [All files](https://sourcegraph.com/search?q=context:global+log4j&patternType=literal) or [all repositories](https://sourcegraph.com/search?q=context:global+log4j+select:repo&patternType=literal) that contain `log4j`
 
