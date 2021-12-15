@@ -302,7 +302,7 @@ const CareersPage = props => {
                     <div className="row">
                         <div className="col-lg-12">
                             <h2 className="display-2">What you seek is seeking you</h2>
-                            <p>We're looking forward to remind you that "you're on mute" ;)</p>
+                            <p>We're looking forward to reminding you that "you're on mute" ;)</p>
                         </div>
                     </div>
                     <a
