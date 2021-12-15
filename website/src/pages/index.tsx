@@ -22,11 +22,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 ddress security risks, root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
-                                <Link
-                                    className="btn btn-primary m-3"
-                                    to="/get-started"
-                                    title="Get started"
-                                >
+                                <Link className="btn btn-primary m-3" to="/get-started" title="Get started">
                                     Get started <ArrowRightIcon className="ml-1" />
                                 </Link>
                                 <a
