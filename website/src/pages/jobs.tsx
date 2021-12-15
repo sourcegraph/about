@@ -105,7 +105,7 @@ const CareersPage = props => {
                 </div>
 
                 <Carousel className="culture-carousel">
-                {/*
+                    {/*
                     <Carousel.Item className="bg-gradient-blue2-blue">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
@@ -171,7 +171,7 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                {/*
+                    {/*
                     <Carousel.Item className="bg-gradient-red-blue2">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
