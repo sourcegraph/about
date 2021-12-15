@@ -14,12 +14,12 @@ const Index: React.FunctionComponent = (props: any) => (
                 <div className="home__intro container">
                     <div className="row">
                         <div className="col mt-6 mb-6 mb-lg-0 text-center">
-                            <h1 className="display-1 font-weight-bold mb-0">Your workflow wonderland</h1>
-                            <h2 className="display-2 mb-0">No codebase too big (or too small).</h2>
+                            <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
+                            <h2 className="display-2 mb-0">Move fast, even in big codebases.</h2>
                             <p className="my-5 col-9 mx-auto">
-                                Find and fix things across all of your code faster with Sourcegraph. Onboard to a new
-                                codebase, make large-scale refactors, increase efficiency, address security risks,
-                                root-cause incidents, and more.
+                                Find and fix things across all of your code faster with Sourcegraph. Onboard 
+                                to a new codebase, make large-scale refactors, reuse code, increase efficiency, 
+                                ddress security risks, root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
                                 <Link
@@ -29,22 +29,22 @@ const Index: React.FunctionComponent = (props: any) => (
                                 >
                                     Get started <ArrowRightIcon className="ml-1" />
                                 </Link>
-                                <Link
+                                <a
                                     className="btn btn-outline-primary m-3"
-                                    to=""
+                                    href="https://info.sourcegraph.com/demo-request"
                                     title="Request a demo"
                                 >
                                     Request a demo <ArrowRightIcon className="ml-1" />
-                                </Link>
+                                </a>
                             </div>
                             <p className="my-3 col-9 mx-auto">
                                 Product or installation questions? {' '}
-                                <Link
-                                    to=""
-                                    title=""
+                                <a
+                                    href="https://info.sourcegraph.com/talk-to-a-developer?_ga=2.230825183.1399262176.1639413453-1178026362.1636406090"
+                                    title="Talk to an expert"
                                 >
                                     Talk to an expert
-                                </Link>
+                                </a>
                             </p>
                         </div>
                     </div>

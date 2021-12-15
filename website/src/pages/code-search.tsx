@@ -163,8 +163,6 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
                 </div>
             </div>
         </ContentSection>
-
-        <GetStarted className="bg-gradient-green-blue mt-6" />
     </Layout>
 )
 

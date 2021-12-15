@@ -1,29 +1,113 @@
 .get-started-page {
-    .column {
-        padding: 40px 127px 0;
-    }
-
     &__hero-and-header {
+        .column {
+            padding: 40px 0 0 127px;
+        }
         h1 {
-            font-weight: bold
+            font-weight: bold;
+            font-size: 4.5rem;
+            line-height: 4.625rem;
+            margin-bottom: 11px;
         }
         .subTitle {
             font-size: 1.125rem;
             line-height: 1.4125rem;
             margin-bottom: 195px;
-
-            @media only screen and (max-width: 768px) {
-                
-            }
         }
     }
 
+    &__local {
+        border-right: 1px solid $light-gray-1 !important;
+        padding-right: 1.5rem;
+
+        .btn {
+            color: $blue;
+            font-size: 1.125rem;
+            line-height: 1.375rem;
+            padding: 0;
+            margin-top: 25px;
+
+            .mdi-icon {
+                margin-left: 20px;
+            }
+        }
+    }
+    &__search-headings {
+        font-family: $font-family-sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+    &__installtext {
+        padding: 2.5rem;
+        position: relative;
+        font-family: $font-family-monospace;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        width: 100%;
+        outline: none;
+        resize: none;
+        background-color: $white;
+        min-height: 150px;
+        width: 696px;
+    }
+    &__copytext {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 2px;
+        color: #0a65ea;
+    }
+    &__copytext:hover {
+        color: #0745a1;
+    }
+
     .cta-container {
+        .row {
+            position: relative;
+        }
+        .column {
+            height: 438px;
+            padding: 40px 53px 0 127px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            .small-font a {
+                text-decoration: underline;
+                color: $sg-space-black;
+            }
+            .column-hover-content {
+                display: block;
+            }
+            .column-hover-content-temporary {
+                display: inline;
+            }
+            .small-font {
+                font-size: 1rem;
+                line-height: 1.25rem;
+            }
+        }
         .title {
             font-size: 2.25rem;
-            line-height: 2.815rem;
+            line-height: 3.25rem;
             font-weight: bold;
             margin-bottom: 10px;
+            img {
+                margin-left: 114px;
+                cursor: pointer;
+            }
+        }
+        #sg-self-hosted {
+            width: 760px;
+        }
+        #sg-cloud {
+            left: 760px;
+
+            .title img {
+                margin-left: 205px;
+            }
         }
         .badge {
             text-transform: uppercase;
@@ -41,10 +125,63 @@
         p {
             font-size: 1.125rem;
             line-height: 1.375rem;
-            margin-bottom: 259px;
+            margin-bottom: 25px;
+            width: 460px;
         }
-        .right-column p {
-            margin-bottom: 297px;
+        .small-title {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            margin-bottom: 5px;
+        }
+        .original-container {
+            width: 558px;
+            display: inline-block;
+        }
+        .new-container {
+            width: 730px;
+            margin-left: 40px;
+        }
+        .back-link {
+            display: none;
+            text-transform: uppercase;
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 15px;
+            padding: 0;
+
+            .mdi-icon {
+                margin: -4px 12px 0 0;
+            }
+        }
+        /* When showing more content */
+        .expanded {
+            height: 706px;
+            width: 100%;
+            max-width: 100%;
+            transition: max-width 2s;
+            top: -275px;
+            transition: top 2s;
+
+            &#sg-self-hosted {
+                width: 100%;
+            }
+            &#sg-cloud {
+                left: 0;
+                transition: left 2s;
+            }
+            .column-hover-content-temporary {
+                display: none !important;
+            }
+            .title {
+                font-size: 4rem;
+                line-height: 4.625rem;
+            }
+            .back-link {
+                display: inline-block;
+            }
         }
     }
 }
