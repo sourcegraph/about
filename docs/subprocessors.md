@@ -6,9 +6,9 @@ description: This page lists the subsprocessors that Sourcegraph may use
 
 Last modified: December 3, 2021
 
-Sourcegraph, Inc. (“Sourcegraph”) uses certain third party sub-processors (“Sub-processors”) to assist in providing the Services described in the Sourcegraph Terms of Service available at https://about.sourcegraph.com/terms/ and/or as set forth in an applicable Order Form. Capitalized terms used but not otherwise defined herein shall have the meanings ascribed to them in the applicable Sourcegraph Terms of Service.
+Sourcegraph, Inc. (“Sourcegraph”) uses certain third party sub-processors (“Sub-processors”) to assist in providing the Services described in the Sourcegraph Terms of Service available at [https://about.sourcegraph.com/terms/](https://about.sourcegraph.com/terms/) and/or as set forth in an applicable Order Form. Capitalized terms used but not otherwise defined herein shall have the meanings ascribed to them in the applicable Sourcegraph Terms of Service.
 
-Sourcegraph will update this page when engaging a new Sub-processor, and if you subscribe for updates, Sourcegraph will notify you by email of changes to this page.
+Sourcegraph will update this page when engaging a new Sub-processor, and if you [subscribe for updates](#sign-up), Sourcegraph will notify you by email of changes to this page.
 
 Sourcegraph engages Sub-processors to perform the functions described in the table below. For Sourcegraph’s On Prem product, personal data will only be processed by Sub-processors to the extent such data is shared by Customer with Sourcegraph for the purpose of delivering support services.
 
@@ -28,6 +28,9 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 | Slack Technologies       | USA            | Processes customer support communication                                                                       | Sourcegraph Cloud Managed Instance On Prem |
 | Zapier                   | USA            | Processes information needed to enable integrations between Sourcegraph and a third-party product              | Sourcegraph Cloud Managed Instance On Prem |
 | Zendesk                  | USA            | Processes customer support communication                                                                       | Sourcegraph Cloud Managed Instance On Prem |
+
+#Sign Up
+Complete this form to be notified of changes to our sub-processors.
 
 <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
