@@ -28,6 +28,10 @@ const ITEMS: {
         url: '/external-logos/general-electric-logo.svg',
     },
     {
+        name: 'Reddit',
+        url: '/external-logos/reddit-logo.png',
+    },
+    {
         name: 'Paypal',
         url: '/external-logos/paypal-logo.svg',
     },
