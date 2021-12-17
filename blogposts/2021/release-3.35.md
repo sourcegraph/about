@@ -8,16 +8,10 @@ published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.35/sourcegraph-3-35-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.35/sourcegraph-3-35-release.png
 changelogItems:
-  # Added
   - description: 'Individual batch changes can publish multiple changesets to the same repository by specifying multiple target branches using the [`on.branches`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on-repository) attribute.'
     url: https://github.com/sourcegraph/sourcegraph/issues/25228
     category: Batch Changes
-  - description: "The `SRC_GIT_SERVICE_MAX_EGRESS_BYTES_PER_SECOND` environment variable to control the egress throughput of gitserver's git service (e.g. used by zoekt-index-server to clone repos to index). Set to -1 for no limit."
-    url: https://github.com/sourcegraph/sourcegraph/pull/29197
-    category: Repositories
-
-  # Changed
-  - description: External services will stop syncing if they exceed the user / site level limit for total number of repositories added. It will only continue syncing if the extra repositories are removed or the corresponding limit is increased, otherwise it will stop syncing for the very first repository each time the syncer attempts to sync the external service again.
+  - description: External services will now stop syncing if they exceed the user / site level limit for total number of repositories added. They will only continue syncing if the extra repositories are removed or the corresponding limit is increased.
     url: https://github.com/sourcegraph/sourcegraph/pull/28674
     category: Repositories
   - description: 'Non-bare repositories found on gitserver will now be removed by a janitor job.'
@@ -26,9 +20,6 @@ changelogItems:
   - description: "The search bar is no longer auto-focused when navigating between files. This allows you to utilize the keyboard shortcut Cmd+LeftArrow (or Ctrl-LeftArrow) to go back to the browser's previous page instead of moving the cursor to the first position of the search bar."
     url: https://github.com/sourcegraph/sourcegraph/pull/28943
     category: Search
-  - description: 'Minio service upgraded to RELEASE.2021-12-10T23-03-39Z.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/29188
-    category:
   - description: 'Using `select:repo` in search queries will now stream results incrementally, greatly improving speed and reducing time-to-first-result.'
     url: https://github.com/sourcegraph/sourcegraph/pull/28920
     category: Search
