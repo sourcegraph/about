@@ -5,8 +5,8 @@ description: 'Sourcegraph 3.35 introduces...'
 tags: [blog, release]
 slug: 'release/3.35'
 published: false
-heroImage: (insert)
-socialImage: (insert)
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.35/sourcegraph-3-35-release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.35/sourcegraph-3-35-release.png
 changelogItems:
 ---
 
