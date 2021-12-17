@@ -25,7 +25,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             buttonRef.current.classList.toggle('d-none')
             // Toggle other column
             document.querySelector('#sg-cloud').classList.toggle('d-none')
-        }/* else {
+        } /* else {
             // Toggle sg-cloud column
             column.classList.remove('d-none')
             column.classList.add('expanded')
@@ -64,7 +64,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             buttonRef.current.classList.toggle('d-none')
             // Toggle other column
             document.querySelector('#sg-cloud').classList.toggle('d-none')
-        }/*else {
+        } /*else {
             // Toggle sg-cloud column
             column.classList.remove('expanded')
             column.classList.replace('col-lg-12', 'col-lg-6')
@@ -116,9 +116,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 <ArrowLeftIcon />
                                 <span>Deployment Options</span>
                             </div>
-                            <h1 className="display-2 title">
-                                Sourcegraph Self-Hosted
-                            </h1>
+                            <h1 className="display-2 title">Sourcegraph Self-Hosted</h1>
                             <span className="badge">
                                 <img src="../star.svg" />
                                 <span>Most Popular</span>
@@ -179,18 +177,14 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 <ArrowLeftIcon />
                                 <span>Deployment Options</span>
                             </div>
-                            <h1 className="display-2 title">
-                                Sourcegraph Cloud
-                            </h1>
+                            <h1 className="display-2 title">Sourcegraph Cloud</h1>
                             <p>
                                 Sync your code from GitHub.com or GitLab.com. No technical setup is required. Sign up
                                 for free.
                             </p>
                             <div className="small-title">Best For</div>
                             <p>Individual developers (small teams coming soon)</p>
-                            <p>
-                                Search across your repositories and the open-source universe.
-                            </p>
+                            <p>Search across your repositories and the open-source universe.</p>
                             <p className="small-font">
                                 Already have a Sourcegraph Cloud account?{' '}
                                 <a

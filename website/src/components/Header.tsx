@@ -133,7 +133,9 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         className="btn btn-outline-primary ml-3 px-5 py-2"
                                         href="https://info.sourcegraph.com/demo-request"
                                         title="Request a demo"
-                                    >Request a demo</Nav.Link>
+                                    >
+                                        Request a demo
+                                    </Nav.Link>
 
                                     {!this.props.hideGetStartedButton && (
                                         <Nav.Link
@@ -266,28 +268,19 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         </li>
                                         {!this.props.hideGetStartedButton && (
                                             <li className="header__nav-item nav-item" role="presentation">
-                                                <a
-                                                    className="nav-link"
-                                                    href="https://sourcegraph.com/search"
-                                                >
+                                                <a className="nav-link" href="https://sourcegraph.com/search">
                                                     Search Code
                                                 </a>
                                             </li>
                                         )}
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <a
-                                                className="nav-link"
-                                                href="https://info.sourcegraph.com/demo-request"
-                                            >
+                                            <a className="nav-link" href="https://info.sourcegraph.com/demo-request">
                                                 Request a demo
                                             </a>
                                         </li>
                                         {!this.props.hideGetStartedButton && (
                                             <li className="header__nav-item nav-item" role="presentation">
-                                                <a
-                                                    className="nav-link"
-                                                    href="/get-started"
-                                                >
+                                                <a className="nav-link" href="/get-started">
                                                     Get started
                                                 </a>
                                             </li>
