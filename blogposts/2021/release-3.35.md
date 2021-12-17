@@ -12,15 +12,6 @@ changelogItems:
   - description: 'Individual batch changes can publish multiple changesets to the same repository by specifying multiple target branches using the [`on.branches`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on-repository) attribute.'
     url: https://github.com/sourcegraph/sourcegraph/issues/25228
     category: Batch Changes
-  - description: 'Code Insights has a new insight `Detect and Track` which will generate unique time series from the matches of a pattern specified as a regular expression capture group. This is currently limited to insights scoped to specific repositories. docs'
-    url: https://docs.sourcegraph.com/code_insights/explanations/automatically_generated_data_series
-    category: Repositories
-  - description: 'Code Insights is persisted entirely in the `codeinsights-db` database. A migration will automatically be performed to move any defined insights and dashboards from your user, org, or global settings files.'
-    url:
-    category: Admin
-  - description: The GraphQL API for Code Insights has entered beta. docs
-    url: https://docs.sourcegraph.com/code_insights/explanations/code_insights_graphql_api
-    category: API
   - description: "The `SRC_GIT_SERVICE_MAX_EGRESS_BYTES_PER_SECOND` environment variable to control the egress throughput of gitserver's git service (e.g. used by zoekt-index-server to clone repos to index). Set to -1 for no limit."
     url: https://github.com/sourcegraph/sourcegraph/pull/29197
     category: Repositories
@@ -35,17 +26,8 @@ changelogItems:
   - description: "The search bar is no longer auto-focused when navigating between files. This allows you to utilize the keyboard shortcut Cmd+LeftArrow (or Ctrl-LeftArrow) to go back to the browser's previous page instead of moving the cursor to the first position of the search bar."
     url: https://github.com/sourcegraph/sourcegraph/pull/28943
     category: Search
-  - description: Code Insights series over all repositories can now be edited
-    url:
-    category: Repositories
-  - description: Code Insights series over all repositories now support a custom time interval and will calculate with 12 points starting at the moment the series is created and working backwards.
-    url:
-    category: Repositories
   - description: 'Minio service upgraded to RELEASE.2021-12-10T23-03-39Z.'
     url: https://github.com/sourcegraph/sourcegraph/pull/29188
-    category:
-  - description: Code insights creation UI form query field now supports suggestions and syntax highlighting.
-    url: https://github.com/sourcegraph/sourcegraph/pull/28130
     category:
   - description: 'Using `select:repo` in search queries will now stream results incrementally, greatly improving speed and reducing time-to-first-result.'
     url: https://github.com/sourcegraph/sourcegraph/pull/28920
