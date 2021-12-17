@@ -25,6 +25,8 @@ interface LayoutProps {
     className?: string
 
     hideFooter?: false
+
+    hideGetStartedButton?: boolean
 }
 
 export default class Layout extends React.PureComponent<LayoutProps> {
@@ -76,6 +78,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                         isProductPage={isProductPage}
                         minimal={this.props.minimal}
                         className={`${this.props.className || ''}`}
+                        hideGetStartedButton={this.props.hideGetStartedButton}
                     />
                     {this.props.hero}
                 </div>

@@ -28,7 +28,7 @@
         }
     }
 
-    // New Top Nav Customization
+    /* New Top Nav Customization */
     .nav-link {
         color: $navbar-light-color;
         padding: 0.7rem 0.4rem;
@@ -36,19 +36,39 @@
         &:hover {
             color: $navbar-light-hover-color;
         }
-        &.btn.btn-outline-primary:hover {
+        &.btn-primary {
             color: $white;
+        }
+        &.btn-outline-primary {
+            color: $blue;
+
+            &:hover {
+                background-color: $blue;
+                color: $white;
+            }
+        }
+    }
+
+    .right-nav {
+        .nav-link.btn-simple {
+            color: $blue;
+        }
+        .nav-link.btn {
+            font-weight: bold;
+        }
+        .btn-outline-primary {
+            background-color: $white;
         }
     }
 
     &.navbar-dark {
-        // Make sure top nav font color is visible (light) on dark background
+        /* Make sure top nav font color is visible (light) on dark background */
         .nav .nav-link {
             color: $white;
         }
     }
 
-    // Desktop
+    /* Desktop */
     @media only screen and (min-width: 768px) {
         #mobile-navbar {
             display: none !important;
@@ -66,9 +86,9 @@
         }
     }
 
-    // Mobile & Tablet
+    /* Mobile & Tablet */
     @media only screen and (max-width: 767px) {
-        // New Top Nav Customization
+        /* New Top Nav Customization */
         .btn-outline-primary {
             border: 0 none;
             font-weight: normal;
@@ -77,7 +97,7 @@
                 background-color: $nav-bg-color !important;
             }
         }
-        // Adjust dropdown arrow positioning
+        /* Adjust dropdown arrow positioning */
         .dropdown-toggle::after {
             margin-top: 0.6em;
         }
@@ -97,7 +117,7 @@
             }
         }
         &.navbar-dark {
-            // Make sure top nav font color is visible (light) on dark background
+            /* Make sure top nav font color is visible (light) on dark background */
             .nav .nav-link a {
                 color: $light-5;
             }
@@ -109,7 +129,7 @@
     }
 }
 
-// Hello bar
+/* Hello bar */
 .background-purple {
     background-color: $purple;
 }

@@ -17,9 +17,6 @@
     }
 
     &__local {
-        border-right: 1px solid $light-gray-1 !important;
-        padding-right: 1.5rem;
-
         .btn {
             color: $blue;
             font-size: 1.125rem;
@@ -50,7 +47,7 @@
         resize: none;
         background-color: $white;
         min-height: 150px;
-        width: 696px;
+        min-width: 500px;
     }
     &__copytext {
         position: absolute;
@@ -63,7 +60,7 @@
         color: #0745a1;
     }
 
-    .cta-container {
+    &.cta-container {
         .row {
             position: relative;
         }
@@ -78,12 +75,6 @@
                 text-decoration: underline;
                 color: $sg-space-black;
             }
-            .column-hover-content {
-                display: block;
-            }
-            .column-hover-content-temporary {
-                display: inline;
-            }
             .small-font {
                 font-size: 1rem;
                 line-height: 1.25rem;
@@ -94,20 +85,12 @@
             line-height: 3.25rem;
             font-weight: bold;
             margin-bottom: 10px;
-            img {
-                margin-left: 114px;
-                cursor: pointer;
-            }
         }
         #sg-self-hosted {
-            width: 760px;
+            width: 50%;
         }
         #sg-cloud {
-            left: 760px;
-
-            .title img {
-                margin-left: 205px;
-            }
+            left: 50%;
         }
         .badge {
             text-transform: uppercase;
@@ -138,10 +121,10 @@
         .original-container {
             width: 558px;
             display: inline-block;
+            margin-right: 40px;
         }
         .new-container {
-            width: 730px;
-            margin-left: 40px;
+            
         }
         .back-link {
             display: none;
@@ -158,7 +141,7 @@
         }
         /* When showing more content */
         .expanded {
-            height: 706px;
+            min-height: 706px;
             width: 100%;
             max-width: 100%;
             transition: max-width 2s;
@@ -172,7 +155,7 @@
                 left: 0;
                 transition: left 2s;
             }
-            .column-hover-content-temporary {
+            .temporary {
                 display: none !important;
             }
             .title {

@@ -6,13 +6,12 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 
 export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
-    const imageRef = React.useRef()
+    const buttonRef = React.useRef()
     const newContainerLeftRef = React.useRef()
-    const newContainerRightRef = React.useRef()
     const backBtn = React.useRef()
 
     const expandColumn = e => {
-        const column = e.target.parentNode.parentNode.parentNode
+        const column = e.target.parentNode.parentNode
         const id = column.getAttribute('id')
 
         if (id == 'sg-self-hosted') {
@@ -23,21 +22,19 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             // Toggle New container
             newContainerLeftRef.current.classList.replace('d-none', 'd-inline-block')
             // Toggle arrow image
-            imageRef.current.classList.toggle('d-none')
+            buttonRef.current.classList.toggle('d-none')
             // Toggle other column
             document.querySelector('#sg-cloud').classList.toggle('d-none')
-        } else {
+        }/* else {
             // Toggle sg-cloud column
             column.classList.remove('d-none')
             column.classList.add('expanded')
             column.classList.replace('col-lg-6', 'col-lg-12')
-            // Toggle New container
-            newContainerRightRef.current.classList.replace('d-none', 'd-inline-block')
             // Toggle arrow image
-            imageRef.current.classList.toggle('d-none')
+            buttonRef.current.classList.toggle('d-none')
             // Toggle other column
             document.querySelector('#sg-self-hosted').classList.toggle('d-none')
-        }
+        }*/
     }
 
     const goBack = e => {
@@ -64,20 +61,18 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             // Toggle New container
             newContainerLeftRef.current.classList.replace('d-inline-block', 'd-none')
             // Toggle arrow image
-            imageRef.current.classList.toggle('d-none')
+            buttonRef.current.classList.toggle('d-none')
             // Toggle other column
             document.querySelector('#sg-cloud').classList.toggle('d-none')
-        } else {
+        }/*else {
             // Toggle sg-cloud column
             column.classList.remove('expanded')
             column.classList.replace('col-lg-12', 'col-lg-6')
-            // Toggle New container
-            newContainerRightRef.current.classList.replace('d-inline-block', 'd-none')
             // Toggle arrow image
-            imageRef.current.classList.toggle('d-none')
+            buttonRef.current.classList.toggle('d-none')
             // Toggle other column
             document.querySelector('#sg-self-hosted').classList.toggle('d-none')
-        }
+        }*/
     }
 
     const copyText = () => {
@@ -99,7 +94,6 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                 description: '',
                 image: 'https://about.sourcegraph.com/sourcegraph-og.png',
             }}
-            className="get-started-page"
             heroAndHeaderClassName="get-started-page__hero-and-header"
             hero={
                 <div className="row">
@@ -112,8 +106,9 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                 </div>
             }
             hideFooter={true}
+            hideGetStartedButton={true}
         >
-            <div className="cta-container">
+            <div className="cta-container get-started-page">
                 <div className="row">
                     <div id="sg-self-hosted" className="col-lg-6 column bg-gradient-blue-purple">
                         <div className="original-container">
@@ -123,12 +118,6 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                             </div>
                             <h1 className="display-2 title">
                                 Sourcegraph Self-Hosted
-                                <img
-                                    src="../white-arrow-black-bg-circle.svg"
-                                    className="column-hover-content-temporary"
-                                    onClick={expandColumn}
-                                    ref={node => (imageRef.current = node)}
-                                />
                             </h1>
                             <span className="badge">
                                 <img src="../star.svg" />
@@ -138,16 +127,23 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
                                 locally. Get started for free.
                             </p>
-                            <div className="small-title column-hover-content">Best For</div>
-                            <p className="column-hover-content">Teams and enterprises</p>
-                            <p className="column-hover-content">
+                            <div className="small-title">Best For</div>
+                            <p>Teams and enterprises</p>
+                            <p>
                                 Collaborate with your team(s) on any code host (including private hosts) and access
                                 advanced security functionality.
                             </p>
+                            <span
+                                className="btn btn-primary temporary mt-2"
+                                onClick={expandColumn}
+                                ref={node => (buttonRef.current = node)}
+                            >
+                                Get started for free
+                            </span>
                         </div>
 
                         <div className="new-container d-none" ref={node => (newContainerLeftRef.current = node)}>
-                            <div className="col-lg-6 get-started-page__local">
+                            <div className="col-lg-5 get-started-page__local">
                                 <div className="get-started-page__installtext" onClick={copyText}>
                                     <h2 className="get-started-page__search-headings">Install Sourcegraph locally</h2>
                                     <span id="installText">
@@ -155,7 +151,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                         --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                         --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                         --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                        sourcegraph/server:3.34.2
+                                        sourcegraph/server:3.35.2
                                     </span>
                                     <span className="get-started-page__copytext">
                                         <FileDocumentMultipleOutlineIcon className="copytext icon-inline ml-1 medium" />
@@ -185,24 +181,17 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                             </div>
                             <h1 className="display-2 title">
                                 Sourcegraph Cloud
-                                <img
-                                    src="../white-arrow-black-bg-circle.svg"
-                                    className="column-hover-content-temporary"
-                                    onClick={expandColumn}
-                                    ref={node => (imageRef.current = node)}
-                                />
                             </h1>
                             <p>
                                 Sync your code from GitHub.com or GitLab.com. No technical setup is required. Sign up
                                 for free.
                             </p>
-                            <div className="small-title column-hover-content">Best For</div>
-                            <br />
-                            <p className="column-hover-content">Individual developers.</p>
-                            <p className="column-hover-content">
+                            <div className="small-title">Best For</div>
+                            <p>Individual developers (small teams coming soon)</p>
+                            <p>
                                 Search across your repositories and the open-source universe.
                             </p>
-                            <p className="column-hover-content small-font">
+                            <p className="small-font">
                                 Already have a Sourcegraph Cloud account?{' '}
                                 <a
                                     href="https://sourcegraph.com/sign-in"
@@ -212,9 +201,13 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                     Sign in
                                 </a>
                             </p>
-                        </div>
-                        <div className="new-container d-none" ref={node => (newContainerRightRef.current = node)}>
-                            <div className="col-lg-6">...</div>
+                            <a
+                                className="btn btn-primary temporary mt-2"
+                                href="https://sourcegraph.com/search"
+                                ref={node => (buttonRef.current = node)}
+                            >
+                                Get started for free
+                            </a>
                         </div>
                     </div>
                 </div>
