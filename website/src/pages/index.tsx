@@ -6,6 +6,7 @@ import { ContentSection } from '../components/content/ContentSection'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
+import GetStarted from '../components/GetStarted'
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
@@ -251,6 +252,8 @@ const Index: React.FunctionComponent = (props: any) => (
                     </div>
                 </div>
             </ContentSection>
+
+            <GetStarted className="bg-gradient-green-blue mt-6" />
         </div>
     </Layout>
 )
