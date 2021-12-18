@@ -37,7 +37,9 @@ const CareersPage = props => {
                 <div className="benefits">
                     <div className="row">
                         <div className="m-auto">
-                            <h2 className="col-lg-10 display-2 text-center mx-auto">Happy, healthy, and always in the flow.</h2>
+                            <h2 className="col-lg-10 display-2 text-center mx-auto">
+                                Happy, healthy, and always in the flow.
+                            </h2>
                             <p className="col-lg-6 text-center mx-auto">
                                 Our Teammates are our most valuable resource. That’s why we provide total rewards that
                                 are highly competitive and allow you to thrive both personally and professionally.
@@ -214,8 +216,16 @@ const CareersPage = props => {
 
                 <Carousel
                     className="values-carousel"
-                    prevIcon={<span aria-hidden="true"><img src="../ArrowLeft.svg" /></span>}
-                    nextIcon={<span aria-hidden="true"><img src="../ArrowRight.svg" /></span>}
+                    prevIcon={
+                        <span aria-hidden="true">
+                            <img src="../ArrowLeft.svg" />
+                        </span>
+                    }
+                    nextIcon={
+                        <span aria-hidden="true">
+                            <img src="../ArrowRight.svg" />
+                        </span>
+                    }
                 >
                     <Carousel.Item>
                         <div className="row">
@@ -311,7 +321,10 @@ const CareersPage = props => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <h2 className="display-2">What you seek is seeking you</h2>
-                                <p>We're looking forward to reminding you that "you're on mute" <img src="../SmileyWink.svg" /></p>
+                                <p>
+                                    We're looking forward to reminding you that "you're on mute"{' '}
+                                    <img src="../SmileyWink.svg" />
+                                </p>
                             </div>
                         </div>
                         <a
