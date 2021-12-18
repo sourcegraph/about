@@ -10,7 +10,7 @@ const CareersPage = props => {
             <div>
                 <ContentSection className="hero-section">
                     <div className="row">
-                        <div className="col-lg-11">
+                        <div className="col-lg-10">
                             <h1 className="display-2 title">Let’s build the future together.</h1>
                             <h1 className="display-2 font-weight-normal">
                                 We're developing the world's most advanced code search navigation platform with
@@ -36,13 +36,13 @@ const CareersPage = props => {
 
                 <div className="benefits">
                     <div className="row">
-                        <div className="col-lg-10 m-auto">
-                            <h2 className="display-2 text-center">Happy, healthy, and always in the flow.</h2>
-                            <p className="text-center mx-6">
+                        <div className="m-auto">
+                            <h2 className="col-lg-10 display-2 text-center mx-auto">Happy, healthy, and always in the flow.</h2>
+                            <p className="col-lg-6 text-center mx-auto">
                                 Our Teammates are our most valuable resource. That’s why we provide total rewards that
                                 are highly competitive and allow you to thrive both personally and professionally.
                             </p>
-                            <p className="text-center mx-6 mt-3">
+                            <p className="text-center mt-3">
                                 Learn more in{' '}
                                 <a
                                     target="_blank"
@@ -55,50 +55,50 @@ const CareersPage = props => {
                             </p>
                         </div>
                     </div>
-                    <div className="row my-3">
-                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
+                    <div className="row benefits-row">
+                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Remote.svg" />
                             <h3 className="my-2">Work fully remote</h3>
                             <p>Anywhere and at anytime</p>
                         </div>
-                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
+                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
                             <img className="icon my-2 mx-auto" src="../careers/PTO.svg" />
                             <h3 className="my-2">Unlimited PTO</h3>
                             <p>...with a 30-day minimum</p>
                         </div>
-                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
+                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Travel.svg" />
                             <h3 className="my-2">Generous travel budgets</h3>
                             <p>Meet your team across the globe</p>
                         </div>
-                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
+                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Salary.svg" />
                             <h3 className="my-2">Competitive pay + equity</h3>
                             <p>So you can live your best life</p>
                         </div>
-                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
+                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Medical.svg" />
-                            <h3 className="my-2">Medical, dental, and vision benefits</h3>
+                            <h3 className="my-2">Medical, dental, and vision</h3>
                             <p>Got you covered 100% (US only)</p>
                         </div>
-                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
+                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
                             <img className="icon my-2 mx-auto" src="../careers/ProfessionalDevelopment.svg" />
                             <h3 className="my-2">Professional development</h3>
                             <p>Find your thing and we pay for it</p>
                         </div>
-                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
+                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
                             <img className="icon my-2 mx-auto" src="../careers/OfficeBudget.svg" />
                             <h3 className="my-2">Office budget</h3>
                             <p>Create a space where you thrive</p>
                         </div>
-                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
+                        <div className="benefit col-lg-3 col-md-5 my-3 text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Wellness.svg" />
                             <h3 className="my-2">Wellness budget</h3>
                             <p>Take care of yourself on our dime</p>
                         </div>
-                        <div className="benefit col-lg-4 col-md-6 my-3 mx-auto text-center">
+                        <div className="benefit col-lg-3 col-md-5 my-3 text-center mx-auto">
                             <img className="icon my-2 mx-auto" src="../careers/FamilyPlanning.svg" />
-                            <h3 className="my-2">Fertility benefits</h3>
+                            <h3 className="my-2">Family Planning benefits</h3>
                             <p>$25K, because family comes first</p>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ const CareersPage = props => {
                         </div>
                     </Carousel.Item>
                 */}
-                    <Carousel.Item className="bg-gradient-blue2-blue">
+                    <Carousel.Item className="bg-gradient-red-blue2">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
@@ -198,7 +198,7 @@ const CareersPage = props => {
                     </Carousel.Item>
                 </Carousel>
 
-                <div className="my-3">
+                <div>
                     <img src="../careers/Culture_8.png" className="culture-section mx-auto" />
                     <div className="culture-section-mobile mx-auto">
                         <img src="../careers/01-Zoom.png" className="m-2" />
@@ -212,10 +212,14 @@ const CareersPage = props => {
                     </div>
                 </div>
 
-                <Carousel className="values-carousel">
+                <Carousel
+                    className="values-carousel"
+                    prevIcon={<span aria-hidden="true"><img src="../ArrowLeft.svg" /></span>}
+                    nextIcon={<span aria-hidden="true"><img src="../ArrowRight.svg" /></span>}
+                >
                     <Carousel.Item>
                         <div className="row">
-                            <div className="col-md-8">
+                            <div>
                                 <p className="subTitle">We value:</p>
                                 <h1>High quality work</h1>
                                 <p className="paragraph">
@@ -228,7 +232,7 @@ const CareersPage = props => {
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="row">
-                            <div className="col-md-8">
+                            <div>
                                 <p className="subTitle">We value:</p>
                                 <h1>Being customer-first</h1>
                                 <p className="paragraph">
@@ -240,7 +244,7 @@ const CareersPage = props => {
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="row">
-                            <div className="col-md-8">
+                            <div>
                                 <p className="subTitle">We value:</p>
                                 <h1>Working as a team</h1>
                                 <p className="paragraph">
@@ -253,7 +257,7 @@ const CareersPage = props => {
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="row">
-                            <div className="col-md-8">
+                            <div>
                                 <p className="subTitle">We value:</p>
                                 <h1>High agency</h1>
                                 <p className="paragraph">
@@ -266,7 +270,7 @@ const CareersPage = props => {
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="row">
-                            <div className="col-md-8">
+                            <div>
                                 <p className="subTitle">We value:</p>
                                 <h1>Being welcoming & inclusive</h1>
                                 <p className="paragraph">
@@ -279,7 +283,7 @@ const CareersPage = props => {
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="row">
-                            <div className="col-md-8">
+                            <div>
                                 <p className="subTitle">We value:</p>
                                 <h1>Being open & transparent</h1>
                                 <p className="paragraph">You proactively communicate in an open and transparent way.</p>
@@ -289,7 +293,7 @@ const CareersPage = props => {
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="row">
-                            <div className="col-md-8">
+                            <div>
                                 <p className="subTitle">We value:</p>
                                 <h1>Continuous growth</h1>
                                 <p className="paragraph">
@@ -302,23 +306,25 @@ const CareersPage = props => {
                     </Carousel.Item>
                 </Carousel>
 
-                <ContentSection className="py-7 contact">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <h2 className="display-2">What you seek is seeking you</h2>
-                            <p>We're looking forward to reminding you that "you're on mute" ;)</p>
+                <div className="bg-white contact-us">
+                    <ContentSection>
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <h2 className="display-2">What you seek is seeking you</h2>
+                                <p>We're looking forward to reminding you that "you're on mute" <img src="../SmileyWink.svg" /></p>
+                            </div>
                         </div>
-                    </div>
-                    <a
-                        className="btn btn-primary my-2"
-                        href="https://boards.greenhouse.io/sourcegraph91"
-                        title="Explore our jobs"
-                        target="_blank"
-                    >
-                        Explore our jobs
-                        <ArrowRightIcon className="ml-3" />
-                    </a>
-                </ContentSection>
+                        <a
+                            className="btn btn-primary my-2"
+                            href="https://boards.greenhouse.io/sourcegraph91"
+                            title="Explore our jobs"
+                            target="_blank"
+                        >
+                            Explore our jobs
+                            <ArrowRightIcon className="ml-3" />
+                        </a>
+                    </ContentSection>
+                </div>
             </div>
         </Layout>
     )

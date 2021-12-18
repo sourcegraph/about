@@ -53,11 +53,8 @@
     }
 
     .benefits {
-        margin: 100px 0;
+        padding: 170px 0;
 
-        @media only screen and (max-width: 576px) {
-            margin: 70px 0;
-        }
         h3 {
             font-size: 1.125rem;
             line-height: 1.4375rem;
@@ -65,7 +62,13 @@
         p {
             line-height: 1.25rem;
         }
+        .benefits-row {
+            padding: 16px 8.33% 0 8.33%;
+        }
         .benefit {
+            padding: 0;
+            margin: 0 4.16%;
+
             @media only screen and (max-width: 768px) {
                 width: 40%;
             }
@@ -88,6 +91,28 @@
             font-size: 3rem;
             line-height: 3.75rem;
         }
+        .carousel-indicators {
+            bottom: 40px;
+
+            @media only screen and (max-width: 768px) {
+                bottom: 0;
+            }
+
+            li {
+                background-color: $sg-space-black;
+                width: 10px;
+                height: 10px;
+                border-radius: 5px;
+                border: 0 none;
+                margin: 0 8px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none;
+            }
+        }
     }
 
     .culture-carousel {
@@ -105,7 +130,7 @@
                     line-height: 2.5rem;
                     margin-bottom: 30px;
                     text-align: center;
-                    height: 220px;
+                    height: 130px;
                 }
             }
             .img-container {
@@ -157,11 +182,10 @@
     }
 
     .values-carousel {
-        padding: 128px 0;
-        margin-bottom: 128px;
+        padding: 170px 0;
 
         @media only screen and (max-width: 768px) {
-            padding: 100px 0;
+            padding: 120px 0;
             margin-bottom: 70px;
         }
 
@@ -171,7 +195,9 @@
         }
 
         .subTitle {
-            line-height: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            font-weight: 600;
             margin-bottom: 20px;
             text-transform: uppercase;
 
@@ -183,10 +209,8 @@
             margin-bottom: 20px;
 
             @media only screen and (max-width: 768px) {
-                margin-bottom: 0;
                 font-size: 2rem;
                 line-height: 2.5rem;
-                height: 80px;
             }
         }
         img {
@@ -200,9 +224,11 @@
             }
         }
         .paragraph {
-            height: 40px; /* hardcoding height so that it doesn't jump up and down in between slides */
+            height: 64px;/* hardcoding height so that it doesn't jump up and down in between slides */
             font-size: 1.125rem;
             line-height: 1.375rem;
+            width: 50%;
+            margin: 0 auto;
 
             @media only screen and (max-width: 768px) {
                 width: 85%;
@@ -220,13 +246,21 @@
         }
     }
 
-    .contact p {
-        font-size: 1.5rem;
-        line-height: 1.9rem;
+    .contact-us {
+        padding: 170px 0 390px 0;
 
         @media only screen and (max-width: 768px) {
-            font-size: 1.125rem;
-            line-height: 1.42rem;
+            padding: 170px 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 1.9rem;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 1.125rem;
+                line-height: 1.42rem;
+            }
         }
     }
 }
