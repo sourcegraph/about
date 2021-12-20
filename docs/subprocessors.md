@@ -29,7 +29,8 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 | Zapier                   | USA            | Processes information needed to enable integrations between Sourcegraph and a third-party product              | Sourcegraph Cloud Managed Instance On Prem |
 | Zendesk                  | USA            | Processes customer support communication                                                                       | Sourcegraph Cloud Managed Instance On Prem |
 
-#Sign Up
+<h2 id='sign-up'>Sign Up</h2>
+
 Complete this form to be notified of changes to our sub-processors.
 
 <!--[if lte IE 8]>
