@@ -28,7 +28,7 @@ docker run -v $(pwd):/home/gradle sourcegraph/lsif-java lsif-java index
 src lsif upload
 ```
 
-For optimal performance, we recommend using the Java-based launcher with a pre-populated build cache to minimize the overhead from downloading dependencies. Check out the [lsif-java website](https://sourcegraph.github.io/lsif-java) for more detailed installation instructions. Note that it’s possible to integrate lsif-java with other build tools like Bazel but doing so requires manual configuration.
+For optimal performance, we recommend using the Java-based launcher with a pre-populated build cache to minimize the overhead from downloading dependencies. Check out the [lsif-java website](https://sourcegraph.github.io/lsif-java) for more detailed installation instructions. Note that it’s possible to integrate lsif-java with other build tools like Bazel, but doing so requires manual configuration.
 
 Don’t hesitate to open an issue or start a discussion at [sourcegraph/lsif-java](https://github.com/sourcegraph/lsif-java/) to get help with using lsif-java.
 
