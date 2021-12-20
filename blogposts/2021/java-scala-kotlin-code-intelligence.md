@@ -1,6 +1,6 @@
 ---
 title: 'Precise code intelligence for Java, Scala, and Kotlin'
-description: 'We are excited to announce that Sourcegraph now supports precise code intelligence for Java, Scala, and Kotlin.'
+description: 'We are excited to announce that Sourcegraph now supports precise code intelligence for Java, Scala, and Kotlin, enabling compiler-accurate “Go to definition” and “Find references” within a Git repository and all transitive dependencies of your codebase.'
 author: Ólafur Páll Geirsson
 publishDate: 2021-12-17T00:00-07:00
 tags: [blog]
