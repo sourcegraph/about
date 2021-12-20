@@ -20,7 +20,7 @@ changelogItems:
   - description: External services will now stop syncing if they exceed the user or site level limit for total number of repositories added. They will only continue syncing if the extra repositories are removed or the corresponding limit is increased. Previously, they attempted to retry syncing indefinitely.
     url: https://github.com/sourcegraph/sourcegraph/pull/28674
     category: Repositories
-  - description: Non-bare repositories found on Gitserver will now be removed by a janitor job. Since non-bare repositories fail to fetch when you have a working copy, this will prevent clutter from repositories that are unable to update. 
+  - description: Non-bare repositories found on Gitserver will now be removed by a janitor job. Since non-bare repositories fail to fetch when you have a working copy, this will prevent clutter from repositories that are unable to update.
     url: https://github.com/sourcegraph/sourcegraph/pull/28895
     category: Repositories
   - description: Fixed a bug where moving a changeset from draft state into published state did not work on GitLab repositories.
