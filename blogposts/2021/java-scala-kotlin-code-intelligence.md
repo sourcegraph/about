@@ -11,7 +11,7 @@ published: true
 ---
 
 We are excited to announce that Sourcegraph now supports precise code intelligence for Java, Scala, and Kotlin.
-More precisely, this means you can get compiler-accurate “Go to definition” and “Find references” within a git repository and all transitive dependencies of your codebase. Dependencies can come from any Maven repository, such as Maven Central, Artifactory or Sonatype Nexus. The versions Java 8, Java 11, Java 17, Scala 2, Scala 3, and Kotlin 1.x are supported.
+More precisely, this means you can get compiler-accurate “Go to definition” and “Find references” within a Git repository and all transitive dependencies of your codebase. Dependencies can come from any Maven repository, such as Maven Central, Artifactory or Sonatype Nexus. The versions Java 8, Java 11, Java 17, Scala 2, Scala 3, and Kotlin 1.x are supported.
 
 Cross-repository navigation on Sourcegraph makes it possible to find usages of symbols across thousands of repositories–unlike a local IDE that only shows usages in your own project. For example, in the image below, we find usages of the `java.util.Iterator.forEachRemaining()` method in the repositories apache/kafka and quarkus/quarkus ([try it yourself](https://sourcegraph.com/jdk@v11/-/blob/java.base/java/util/Iterator.java?L130:18#tab=references)).
 
