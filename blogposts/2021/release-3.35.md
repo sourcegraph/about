@@ -38,7 +38,7 @@ Sourcegraph 3.35 is now available! Here are some highlights from this release:
 
 ## Publish changesets to multiple branches in a repository
 
-Bumping up a dependency or changing boilerplate in several branches of the same repository is painful, repetitive work that's a great candidate for a batch change. Batch Changes now allows you to publish changesets to [several branches in the same repository](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on-repository), rather than a single branch per repository. This is particularly useful, for example, when long-lived branches are used to define versions or releases. 
+Bumping up a dependency or changing boilerplate in several branches of the same repository is painful, repetitive work that's a great candidate for a batch change. Batch Changes now allows you to publish changesets to [several branches in the same repository](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on-repository), rather than a single branch per repository. This is particularly useful, for example, when long-lived branches are used to define versions or releases.
 
 ## Precise Code Intelligence for Java, Scala, and Kotlin
 
