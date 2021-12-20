@@ -1,5 +1,5 @@
 ---
-title: 'Log4j Log4Shell 0-day: find, fix, and track affected code with code search'
+title: 'Log4j Log4Shell 0-day: find, fix, and track affected code'
 description: "The steps to identify and fix/mitigate the log4j Log4Shell 0-day (CVE-2021-44228) in your code have been widely reported. But they're manual and tedious, and it's hard to track the progress of fixes/mitigations across all your code. Here's how code search can help find, fix, and track code affected by the log4j 0-day."
 author: Quinn Slack
 authorUrl: https://twitter.com/sqs
@@ -10,6 +10,12 @@ heroImage:
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/log4j/log4j-track-progress-prs.png
 published: true
 ---
+
+<div class="alert alert-primary" role="alert" style="max-width:650px; align-items: center; margin: auto auto 20px auto">
+      <strong>Update as of 17:20 UTC on Dec 18:</strong> The  <a href="https://logging.apache.org/log4j/2.x/security.html#CVE-2021-45105">latest advice is to patch all the way up to 2.17.0</a>. We have updated all queries and configurations in this post to reflect this recommendation.
+      <br>
+      <span style="text-decoration: line-through;"><strong>Update as of 23:30 UTC on Dec 14:</strong> The  <a href="https://logging.apache.org/log4j/2.x/security.html#CVE-2021-45046">latest advice is to patch all the way up to 2.16.0</a>. We have updated all queries and configurations in this post to reflect this recommendation.</span>
+</div>
 
 The steps to identify and fix/mitigate the [log4j 0-day (CVE-2021-44228)](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) ("Log4Shell") in your code have been widely reported ([1](https://www.lunasec.io/docs/blog/log4j-zero-day/) [2](https://logging.apache.org/log4j/2.x/security.html) [3](https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/)). But the steps are manual and tedious, and it's hard to track the progress of fixes/mitigations across all your code. To help, we're publishing queries, scripts, and instructions for using code search to:
 
@@ -24,13 +30,13 @@ We've documented how to do these things in Sourcegraph below and will be adding 
 Run these queries on Sourcegraph to quickly determine which projects directly depend on vulnerable versions of log4j. The following links show results on Sourcegraph Cloud across 2M public repositories.
 
 - Direct dependencies on vulnerable log4j versions specified in common build systems:
-  - [Gradle](https://sourcegraph.com/search?q=context:global+lang:gradle+org%5C.apache%5C.logging%5C.log4j%5B%27%22%5D+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
-  - [Maven](https://sourcegraph.com/search?q=context:global+file:pom.xml+%3Clog4j%5C.version%3E2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29%3C/log4j%5C.version%3E&patternType=regexp)
-  - [Ivy](https://sourcegraph.com/search?q=context:global+file:ivy.xml+org%3D%22org%5C.apache%5C.logging%5C.log4j%22+rev%3D%222%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29%22&patternType=regexp)
-  - [sbt (Scala)](https://sourcegraph.com/search?q=context:global+file:%5C.sbt%24+%22org.apache.logging.log4j%22+%25+%222%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
-  - [Bazel](https://sourcegraph.com/search?q=context:global+lang:bazel+org%5C.apache%5C.logging%5C.log4j:+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
+  - [Gradle](https://sourcegraph.com/search?q=context:global+lang:gradle+org%5C.apache%5C.logging%5C.log4j%5B%27%22%5D+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%7C16%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
+  - [Maven](https://sourcegraph.com/search?q=context:global+file:pom.xml+%3Clog4j%5C.version%3E2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%7C16%29%28%5C.%5B0-9%5D%2B%29%3C/log4j%5C.version%3E&patternType=regexp)
+  - [Ivy](https://sourcegraph.com/search?q=context:global+file:ivy.xml+org%3D%22org%5C.apache%5C.logging%5C.log4j%22+rev%3D%222%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%7C16%29%28%5C.%5B0-9%5D%2B%29%22&patternType=regexp)
+  - [sbt (Scala)](https://sourcegraph.com/search?q=context:global+file:%5C.sbt%24+%22org.apache.logging.log4j%22+%25+%222%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%7C16%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
+  - [Bazel](https://sourcegraph.com/search?q=context:global+lang:bazel+org%5C.apache%5C.logging%5C.log4j:+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%7C16%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
 - Broader queries (with more false positives):
-  - [Any file containing `org.apache.logging.log4j` followed by a vulnerable version number](https://sourcegraph.com/search?q=context:global+org%5C.apache%5C.logging%5C.log4j+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
+  - [Any file containing `org.apache.logging.log4j` followed by a vulnerable version number](https://sourcegraph.com/search?q=context:global+org%5C.apache%5C.logging%5C.log4j+2%5C.%280%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%7C16%29%28%5C.%5B0-9%5D%2B%29&patternType=regexp)
   - [All files](https://sourcegraph.com/search?q=context:global+org.apache.logging.log4j&patternType=regexp&case=yes) or [all repositories](https://sourcegraph.com/search?q=context:global+org.apache.logging.log4j+select:repo&patternType=regexp&case=yes) that contain `org.apache.logging.log4j`
   - [All files](https://sourcegraph.com/search?q=context:global+log4j&patternType=literal) or [all repositories](https://sourcegraph.com/search?q=context:global+log4j+select:repo&patternType=literal) that contain `log4j`
 
@@ -64,6 +70,10 @@ After you preview and create a batch change, you can see all of the pull request
 
 ![Track progress of pull requests](https://storage.googleapis.com/sourcegraph-assets/blog/log4j/log4j-track-progress-prs.png)
 
+Here's a video walkthrough of how to use Batch Changes to fix/mitigate log4j vulnerabilities in your code:
+
+<div style="position: relative; padding-bottom: 45.18828451882845%; height: 0;"><iframe src="https://www.loom.com/embed/84807e1388ce4a5383df7fe5174ed2d7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 ### To use Batch Changes on your organization's private code:
 
 This feature requires [a self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#getting-started) and is usually part of an enterprise plan. We’re giving out temporary license keys to use Batch Changes for log4j-related fixes. Email [log4j-incident-response-help@sourcegraph.com](mailto:log4j-incident-response-help@sourcegraph.com) and we'll reply quickly with a temporary key.
@@ -86,8 +96,8 @@ Given any search query (such as the ones linked at the top of the post), you can
 1. Go to **Insights > Create new insight > Create search insight**.
 1. Select the specific repositories in which to measure progress (or all repositories).
 1. Add the 3 data series shown in the screenshot above. The queries used above are defined as follows, but you can customize them as needed (using the query links at the start of this post for inspiration):
-   - **Vulnerable log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14)(\.[0-9]+) patterntype:regexp`
-   - **Upgraded log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(15)(\.[0-9]+) patterntype:regexp`
+   - **Vulnerable log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\.[0-9]+) patterntype:regexp`
+   - **Upgraded log4j versions** = `lang:gradle org\.apache\.logging\.log4j['"] 2\.(17)(\.[0-9]+) patterntype:regexp`
    - **formatMsgNoLookups** = `-Dlog4j2.formatMsgNoLookups=true`
 1. Give the insight a name and save it.
 
