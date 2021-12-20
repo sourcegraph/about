@@ -17,7 +17,7 @@ Cross-repository navigation on Sourcegraph makes it possible to find usages of s
 
 ![](/blog/java-cross-repo-example.png)
 
-Cross-language navigation between Java, Scala, and Kotlin languages works as you would expect: You can find Kotlin or Scala usages from Java code and vice-versa. For example, below we find usages of `java.util.concurrent.atomic.AtomicBoolean.get()` in a Kotlin file from the kotest/kotest repo and get Scala examples in the apache/kafka repository ([try it yourself](https://sourcegraph.com/github.com/kotest/kotest@7ccb6ef/-/blob/kotest-assertions/kotest-assertions-core/src/jvmMain/kotlin/io/kotest/matchers/atomic/AtomicBooleanMatchers.kt?L77:40#tab=references)).
+Cross-language navigation between Java, Scala, and Kotlin languages works as you would expect: You can find Kotlin or Scala usages from Java code and vice versa. For example, below we find usages of `java.util.concurrent.atomic.AtomicBoolean.get()` in a Kotlin file from the kotest/kotest repo and get Scala examples in the apache/kafka repository ([try it yourself](https://sourcegraph.com/github.com/kotest/kotest@7ccb6ef/-/blob/kotest-assertions/kotest-assertions-core/src/jvmMain/kotlin/io/kotest/matchers/atomic/AtomicBooleanMatchers.kt?L77:40#tab=references)).
 
 ![](/blog/java-cross-language-example.png)
 
