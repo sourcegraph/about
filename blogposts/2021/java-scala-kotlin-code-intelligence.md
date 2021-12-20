@@ -6,7 +6,7 @@ publishDate: 2021-12-17T00:00-07:00
 tags: [blog]
 slug: java-scala-kotlin-code-intelligence
 heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
-socialImage: /blog/java-cross-language-example.png
+socialImage: https://about.sourcegraph.com/blog/java-cross-language-example.png
 published: true
 ---
 
