@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 3.35 release'
 publishDate: 2021-12-21T10:00-07:00
-description: 'Sourcegraph 3.35 introduces the ability to publish changesets to multiple branches of a repository with a single batch change, plus precise code intelligence for Java, Scala, and Kotlin.'
+description: 'Sourcegraph 3.35 introduces the ability to publish changesets to multiple branches of a repository with a single batch change, plus precise Code Intelligence for Java, Scala, and Kotlin.'
 tags: [blog, release]
 slug: 'release/3.35'
 published: false
@@ -38,9 +38,9 @@ Sourcegraph 3.35 is now available! Here are some highlights from this release:
 
 ## Publish changesets to multiple branches in a repository
 
-Batch Changes now allow you to publish changesets to [several branches in the same repository](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on-repository), rather than a single branch per repository. This is particularly useful, for example, when long-lived branches are used to define versions or releases. Bumping up a dependency or changing boilerplate in several branches of the same repository is painful, repetitive work that's a great candidate for a batch change.
+Bumping up a dependency or changing boilerplate in several branches of the same repository is painful, repetitive work that's a great candidate for a batch change. Batch Changes now allows you to publish changesets to [several branches in the same repository](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#on-repository), rather than a single branch per repository. This is particularly useful, for example, when long-lived branches are used to define versions or releases. 
 
-## Precise code intelligence for Java, Scala, and Kotlin
+## Precise Code Intelligence for Java, Scala, and Kotlin
 
-Sourcegraph now provides precise code navigation for Java, Scala, and Kotlin! You can now get compiler-accurate “Go to definition” and “Find references” within a git repository and all transitive dependencies of your codebase. You can find Kotlin or Scala usages from Java code and vice-versa, which is particularly useful for mixed language repositories. Read more about this functionality [in our blog](https://about.sourcegraph.com/blog/java-scala-kotlin-code-intelligence/), and check our [lsif-java documentation](https://sourcegraph.github.io/lsif-java/) for detailed setup instructions and build-tooling compatibility.
+Sourcegraph now provides precise Code Intelligence for Java, Scala, and Kotlin. You can now get compiler-accurate “Go to definition” and “Find references” within a git repository and all transitive dependencies of your codebase. You can find Kotlin or Scala usages from Java code and vice-versa, which is particularly useful for mixed-language repositories. Read more about this functionality [in our blog](https://about.sourcegraph.com/blog/java-scala-kotlin-code-intelligence/), and check out our [lsif-java documentation](https://sourcegraph.github.io/lsif-java/) for detailed setup instructions and build-tooling compatibility.
 <img class="blog-image" title="JVM precise code intelligence" alt="An example of the find references feature being used in a Kotlin source file and returning examples in Scala." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.35/preciseJVMintelligence.png">
