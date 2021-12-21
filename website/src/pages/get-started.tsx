@@ -142,7 +142,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 onClick={expandColumn}
                                 ref={node => (buttonRef.current = node)}
                             >
-                                Get started for free
+                                Get started for free <ArrowRightIcon className="mobileIcon" />
                             </span>
                         </div>
 
@@ -208,7 +208,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 href="https://sourcegraph.com/search"
                                 ref={node => (buttonRef.current = node)}
                             >
-                                Try it for free
+                                Try it for free <ArrowRightIcon className="mobileIcon" />
                             </a>
                         </div>
                     </div>

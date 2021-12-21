@@ -2,17 +2,25 @@
     &__hero-and-header {
         .column {
             padding: 40px 0 0 127px;
+
+            @media only screen and (max-width: 768px) {
+                padding: 20px 16px 20px 34px;
+            }
         }
         h1 {
             font-weight: bold;
             font-size: 4.5rem;
             line-height: 4.625rem;
             margin-bottom: 11px;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
         }
         .subTitle {
             font-size: 1.125rem;
             line-height: 1.4125rem;
-            margin-bottom: 195px;
         }
     }
 
@@ -38,6 +46,11 @@
         line-height: 1.875rem;
         font-weight: bold;
         padding-bottom: 1rem;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 1.125rem;
+            line-height: 1.4375rem;
+        }
     }
     &__installtext {
         padding: 2.5rem;
@@ -50,7 +63,12 @@
         resize: none;
         background-color: $white;
         min-height: 150px;
-        min-width: 600px;
+        width: 600px;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            padding: 1rem;
+        }
     }
     &__copytext {
         margin-left: 20px;
@@ -60,15 +78,41 @@
     }
 
     &.cta-container {
+        width: 100%;
         position: fixed;
         bottom: 0;
-        width: 100%;
+
+        @media only screen and (max-width: 768px) {
+            position: static;
+            bottom: auto;
+        }
+
+        .row {
+            @media only screen and (max-width: 768px) {
+                display: block;
+            }
+        }
 
         .column {
             width: 50%;
             height: 438px;
             padding: 40px 53px 0 127px;
             transition: height 2s, width 2s;
+
+            @media (min-width: 1024px) and (max-width: 1199px) {
+                padding: 40px 0 0 40px;
+            }
+            @media (min-width: 769px) and (max-width: 1023px) {
+                padding: 30px 0 0 40px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                height: auto;
+                padding: 20px 32px 0 32px;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
 
             .small-font a {
                 text-decoration: underline;
@@ -79,13 +123,16 @@
                 line-height: 1.25rem;
             }
         }
-        #sg-cloud {
-        }
-        .title {
+        h1.title {
             font-size: 2.25rem;
             line-height: 3.25rem;
             font-weight: bold;
             margin-bottom: 10px;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 1.5rem;
+                line-height: 1.875rem;
+            }
         }
         .badge {
             text-transform: uppercase;
@@ -96,6 +143,10 @@
             font-size: 0.65rem;
             line-height: 0.815rem;
             margin-bottom: 15px;
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+
             img {
                 margin: -2px 5px 0 0;
             }
@@ -105,6 +156,10 @@
             line-height: 1.375rem;
             margin-bottom: 25px;
             width: 460px;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 14px;
+            }
         }
         .small-title {
             text-transform: uppercase;
@@ -117,6 +172,41 @@
             width: 558px;
             display: inline-block;
             margin-right: 40px;
+
+            @media only screen and (max-width: 1023px) {
+                width: auto;
+                margin-right: 0;
+
+                p {
+                    width: 95%;
+                    margin-bottom: 16px;
+                }
+
+                .badge {
+                    display: none;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+                .btn {
+                    color: $blue;
+                    background-color: transparent;
+                    border: 0 none;
+                    padding: 0;
+                    font-size: 1.125rem;
+                    margin-bottom: 20px;
+
+                    .mobileIcon {
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+
+            .mobileIcon {
+                display: none;
+            }
         }
         .back-link {
             display: none;
@@ -127,6 +217,15 @@
             margin-bottom: 15px;
             padding: 0;
 
+            @media only screen and (max-width: 768px) {
+                span {
+                    display: none;
+                }
+                .mdi-icon {
+                    color: $sg-space-black;
+                }
+            }
+
             .mdi-icon {
                 margin: -4px 12px 0 0;
             }
@@ -136,6 +235,14 @@
             height: 706px;
             width: 100%;
 
+            @media only screen and (max-width: 768px) {
+                height: 100%;
+
+                .btn {
+                    margin: 10px 0;
+                }
+            }
+
             .temporary {
                 display: none !important;
             }
@@ -143,6 +250,11 @@
                 font-size: 4rem;
                 line-height: 4.625rem;
                 transition: font-size 2s, line-height 2s;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 2.5rem;
+                    line-height: 2.5rem;
+                }
             }
             .back-link {
                 display: inline-block;
