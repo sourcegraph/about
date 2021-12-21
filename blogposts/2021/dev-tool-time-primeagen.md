@@ -2,7 +2,7 @@
 title: 'Thinking less to do more: Dev Tool Time with ThePrimeagen'
 description: 'ThePrimeagen, Senior Software Engineer at Netflix and Twitch Partner tech streamer, shares how he reduces cognitive overhead with tmux, i3, and Neovim to write code more effectively.'
 author: Scott Bailey
-authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
+authorUrl: https://handbook.sourcegraph.com/team#scott-bailey
 publishDate: 2021-11-03T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-theprimeagen
