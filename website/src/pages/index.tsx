@@ -3,10 +3,10 @@ import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
-import GetStarted from '../components/GetStarted'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
+import GetStarted from '../components/GetStarted'
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
@@ -16,28 +16,31 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="row">
                         <div className="col mt-6 mb-6 mb-lg-0 text-center">
                             <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
-                            <h2 className="display-2 mb-0">Move fast, even in big codebases. </h2>
+                            <h2 className="display-2 mb-0">Move fast, even in big codebases.</h2>
                             <p className="my-5 col-9 mx-auto">
                                 Find and fix things across all of your code faster with Sourcegraph. Onboard to a new
-                                codebase, make large-scale refactors, increase efficiency, address security risks,
-                                root-cause incidents, and more.
+                                codebase, make large-scale refactors, promote code reuse, increase efficiency, address
+                                security risks, root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
-                                <Link
-                                    className="btn btn-primary m-3"
-                                    to="#get-started"
-                                    title="Search your (or your company's) code, invite teammates, and try all the features."
-                                >
-                                    Deploy locally <ArrowRightIcon className="ml-1" />
+                                <Link className="btn btn-primary m-3" to="/get-started" title="Get started">
+                                    Get started <ArrowRightIcon className="ml-1" />
                                 </Link>
                                 <a
                                     className="btn btn-outline-primary m-3"
-                                    href="https://sourcegraph.com/search"
-                                    title="Search across top open source repositories (or add your own projects)."
+                                    href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
+                                    title="Request a demo"
                                 >
-                                    Search open source <ArrowRightIcon className="ml-1" />
+                                    Request a demo <ArrowRightIcon className="ml-1" />
                                 </a>
                             </div>
+                            <p className="my-3 col-9 mx-auto">
+                                Product or installation questions?{' '}
+                                <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
+                                    Talk to an expert
+                                </a>
+                                .
+                            </p>
                         </div>
                     </div>
                 </div>
