@@ -36,10 +36,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             </div>
                             <p className="my-3 col-9 mx-auto">
                                 Product or installation questions?{' '}
-                                <a
-                                    href="https://info.sourcegraph.com/talk-to-a-developer"
-                                    title="Talk to an expert"
-                                >
+                                <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
                                     Talk to an expert
                                 </a>
                                 .

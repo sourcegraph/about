@@ -170,10 +170,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 <a className="btn" href="https://info.sourcegraph.com/talk-to-a-developer">
                                     Talk to an engineer <ArrowRightIcon />
                                 </a>
-                                <a
-                                    className="btn"
-                                    href="https://docs.sourcegraph.com/"
-                                >
+                                <a className="btn" href="https://docs.sourcegraph.com/">
                                     Deploy to a server or cluster <ArrowRightIcon />
                                 </a>
                             </div>
