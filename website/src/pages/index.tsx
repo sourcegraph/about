@@ -37,7 +37,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             <p className="my-3 col-9 mx-auto">
                                 Product or installation questions?{' '}
                                 <a
-                                    href="https://info.sourcegraph.com/talk-to-a-developer?_ga=2.230825183.1399262176.1639413453-1178026362.1636406090"
+                                    href="https://info.sourcegraph.com/talk-to-a-developer"
                                     title="Talk to an expert"
                                 >
                                     Talk to an expert

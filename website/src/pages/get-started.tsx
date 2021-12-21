@@ -172,7 +172,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 </a>
                                 <a
                                     className="btn"
-                                    href="https://docs.sourcegraph.com/?_ga=2.201374673.1399262176.1639413453-1178026362.1636406090"
+                                    href="https://docs.sourcegraph.com/"
                                 >
                                     Deploy to a server or cluster <ArrowRightIcon />
                                 </a>
