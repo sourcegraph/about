@@ -273,7 +273,10 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             </li>
                                         )}
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <a className="nav-link" href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku">
+                                            <a
+                                                className="nav-link"
+                                                href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
+                                            >
                                                 Request a demo
                                             </a>
                                         </li>
