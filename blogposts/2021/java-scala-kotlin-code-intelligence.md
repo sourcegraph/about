@@ -1,6 +1,6 @@
 ---
-title: 'Precise code intelligence for Java, Scala, and Kotlin'
-description: 'We are excited to announce that Sourcegraph now supports precise code intelligence for Java, Scala, and Kotlin, enabling compiler-accurate “Go to definition” and “Find references” within a Git repository and all transitive dependencies of your codebase.'
+title: 'Precise Code Intelligence for Java, Scala, and Kotlin'
+description: 'We are excited to announce that Sourcegraph now supports precise Code Intelligence for Java, Scala, and Kotlin, enabling compiler-accurate “Go to definition” and “Find references” within a Git repository and all transitive dependencies of your codebase.'
 author: Ólafur Páll Geirsson
 publishDate: 2021-12-20T00:00-07:00
 tags: [blog]
@@ -10,7 +10,7 @@ socialImage: https://about.sourcegraph.com/blog/java-cross-language-example.png
 published: true
 ---
 
-We are excited to announce that Sourcegraph now supports precise code intelligence for Java, Scala, and Kotlin.
+We are excited to announce that Sourcegraph now supports precise Code Intelligence for Java, Scala, and Kotlin.
 More precisely, this means you can get compiler-accurate “Go to definition” and “Find references” within a Git repository and all transitive dependencies of your codebase. Dependencies can come from any Maven repository, such as Maven Central, Artifactory or Sonatype Nexus. The versions Java 8, Java 11, Java 17, Scala 2, Scala 3, and Kotlin 1.x are supported.
 
 Cross-repository navigation on Sourcegraph makes it possible to find usages of symbols across thousands of repositories–unlike a local IDE that only shows usages in your own project. For example, in the image below, we find usages of the `java.util.Iterator.forEachRemaining()` method in the repositories apache/kafka and quarkus/quarkus ([try it yourself](https://sourcegraph.com/jdk@v11/-/blob/java.base/java/util/Iterator.java?L130:18#tab=references)).
@@ -32,6 +32,6 @@ For optimal performance, we recommend using the Java-based launcher with a pre-p
 
 Don’t hesitate to open an issue or start a discussion at [sourcegraph/lsif-java](https://github.com/sourcegraph/lsif-java/) to get help with using lsif-java.
 
-For now, you need to manually configure your CI to run the indexing step to benefit from precise code intelligence for Java, Scala, and Kotlin. We recommend running the indexing step on every commit so that you get precise code intelligence even during code review. For large codebases, it might make sense to index less frequently. We’re working on a new auto-indexing system to reduce the need for manual CI configuration.
+For now, you need to manually configure your CI to run the indexing step to benefit from precise Code Intelligence for Java, Scala, and Kotlin. We recommend running the indexing step on every commit so that you get precise Code Intelligence even during code review. For large codebases, it might make sense to index less frequently. We’re working on a new auto-indexing system to reduce the need for manual CI configuration.
 
-This milestone is only the beginning of expanding our robust code intelligence support for JVM languages. In the near future, we plan to add support for “Find implementations” to navigate class hierarchies. We also plan to support Protobuf so that you can navigate to the Protobuf source instead of auto-generated code. There is so much valuable information that we can surface from the compiler, your build tool, and your dependencies, and we’re excited to make this code intelligence available for all Sourcegraph users.
+This milestone is only the beginning of expanding our robust Code Intelligence support for JVM languages. In the near future, we plan to add support for “Find implementations” to navigate class hierarchies. We also plan to support Protobuf so that you can navigate to the Protobuf source instead of auto-generated code. There is so much valuable information that we can surface from the compiler, your build tool, and your dependencies, and we’re excited to make this Code Intelligence available for all Sourcegraph users.
