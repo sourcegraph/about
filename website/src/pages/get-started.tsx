@@ -23,7 +23,9 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             // Toggle arrow image
             buttonRef.current.classList.toggle('d-none')
             // Toggle other column
-            document.querySelector('#sg-cloud').classList.toggle('d-none')
+            const cloudSection = document.querySelector('#sg-cloud')
+            cloudSection.classList.toggle('d-none')
+            cloudSection.classList.add('high')
         } /* else {
             // Toggle sg-cloud column
             column.classList.remove('d-none')
@@ -62,7 +64,12 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             // Toggle arrow image
             buttonRef.current.classList.toggle('d-none')
             // Toggle other column
-            document.querySelector('#sg-cloud').classList.toggle('d-none')
+            const cloudSection = document.querySelector('#sg-cloud')
+            cloudSection.classList.toggle('d-none')
+            // To fix issue that the sg-cloud section is not high enough when it gets visible when going back to the delpoyment methods
+            setTimeout(() => {
+                cloudSection.classList.remove('high')
+            }, 0)
         } /*else {
             // Toggle sg-cloud column
             column.classList.remove('expanded')
