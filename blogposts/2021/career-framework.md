@@ -30,9 +30,9 @@ To create the career development framework, our VP of Engineering Nick Snyder fo
 
 The working group consisted of four people:
 
-- [Chris Pine](https://about.sourcegraph.com/handbook/company/team#chris-pine-he-she-they-chris), engineering manager, was the driver.
-- [Nick Snyder](https://about.sourcegraph.com/handbook/company/team#nick-snyder-he-him), VP of Engineering, was the approver.
-- [Felix Becker](https://about.sourcegraph.com/handbook/company/team#felix-becker) and [Patrick Dubroy](https://about.sourcegraph.com/handbook/company/team#patrick-dubroy-he-him), both engineering managers, were contributors.
+- [Chris Pine](https://handbook.sourcegraph.com/team#chris-pine), engineering manager, was the driver.
+- [Nick Snyder](https://handbook.sourcegraph.com/team#nick-snyder), VP of Engineering, was the approver.
+- [Felix Becker](https://handbook.sourcegraph.com/team#felix-becker) and [Patrick Dubroy](https://about.sourcegraph.com/handbook/company/team#patrick-dubroy-he-him), both engineering managers, were contributors.
 
 Everyone else in engineering was to be informed of the project’s progress and results.
 
