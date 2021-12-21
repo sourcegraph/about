@@ -66,9 +66,7 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                <nav
-                    className={`header navbar py-3 ${this.props.className || 'navbar-light'}`}
-                >
+                <nav className={`header navbar py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container-lg">
                         <Navbar.Brand className="header__logo" href="/" onContextMenu={this.handleRightClick}>
                             <span role="img" aria-label="Sourcegraph - Universal code search">
