@@ -4,7 +4,7 @@ publishDate: 2021-12-21T10:00-07:00
 description: 'Sourcegraph 3.35 introduces the ability to publish changesets to multiple branches of a repository with a single batch change, plus precise Code Intelligence for Java, Scala, and Kotlin.'
 tags: [blog, release]
 slug: 'release/3.35'
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.35/sourcegraph-3-35-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.35/sourcegraph-3-35-release.png
 changelogItems:
