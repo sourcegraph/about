@@ -2,7 +2,7 @@
 title: 'Writing prose like code: Dev Tool Time with Adam Gordon Bell'
 description: 'Adam Gordon Bell, Developer Advocate at Earthly, shares how he leverages dev tools to write consistent, high-quality technical prose.'
 author: Scott Bailey
-authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
+authorUrl: https://handbook.sourcegraph.com/team#scott-bailey
 publishDate: 2021-10-06T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-adam-gordon-bell

@@ -2,7 +2,7 @@
 title: 'Simplicity is worth paying for: Dev Tool Time with Roger Peppé'
 description: 'Roger Peppé, Software Engineer at InfluxData, shares his standing desk setup, and how the Acme text editor and mouse chording drive his coding workflow.'
 author: Scott Bailey
-authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
+authorUrl: https://handbook.sourcegraph.com/team#scott-bailey
 publishDate: 2021-11-17T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-roger-peppe
