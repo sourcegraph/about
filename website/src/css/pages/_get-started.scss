@@ -140,6 +140,7 @@
             .title {
                 font-size: 4rem;
                 line-height: 4.625rem;
+                transition: font-size 2s, line-height 2s;
             }
             .back-link {
                 display: inline-block;
