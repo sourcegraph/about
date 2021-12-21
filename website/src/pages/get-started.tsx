@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
-import FileDocumentMultipleOutlineIcon from 'mdi-react/FileDocumentMultipleOutlineIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 
@@ -128,7 +127,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                             <div className="small-title">Best For</div>
                             <p>Teams and enterprises</p>
                             <p>
-                                Collaborate with your team(s) on any code host (including private hosts) and access
+                                Collaborate with your team on any code host (including private hosts) and access
                                 advanced security functionality.
                             </p>
                             <span
@@ -141,28 +140,30 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                         </div>
 
                         <div className="new-container d-none" ref={node => (newContainerLeftRef.current = node)}>
-                            <div className="col-lg-5 get-started-page__local">
+                            <div className="get-started-page__local">
                                 <div className="get-started-page__installtext" onClick={copyText}>
-                                    <h2 className="get-started-page__search-headings">Install Sourcegraph locally</h2>
+                                    <h2 className="get-started-page__search-headings">
+                                        Install Sourcegraph locally
+                                        <span className="get-started-page__copytext">
+                                            <img src="../copy-text-icon.svg" className="copytext icon-inline ml-1 medium" />
+                                        </span>
+                                    </h2>
                                     <span id="installText">
                                         docker run <br />
                                         --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                         --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                         --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                        sourcegraph/server:3.35.2
-                                    </span>
-                                    <span className="get-started-page__copytext">
-                                        <FileDocumentMultipleOutlineIcon className="copytext icon-inline ml-1 medium" />
+                                        sourcegraph/server:3.34.2
                                     </span>
                                 </div>
                                 <a
-                                    className="btn d-inline-flex"
+                                    className="btn"
                                     href="https://info.sourcegraph.com/talk-to-a-developer"
                                 >
                                     Talk to an engineer <ArrowRightIcon />
                                 </a>
                                 <a
-                                    className="btn d-inline-flex"
+                                    className="btn"
                                     href="https://docs.sourcegraph.com/?_ga=2.201374673.1399262176.1639413453-1178026362.1636406090"
                                 >
                                     Deploy to a server or cluster <ArrowRightIcon />
@@ -200,7 +201,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 href="https://sourcegraph.com/search"
                                 ref={node => (buttonRef.current = node)}
                             >
-                                Get started for free
+                                Try it for free
                             </a>
                         </div>
                     </div>

@@ -23,6 +23,9 @@
             line-height: 1.375rem;
             padding: 0;
             margin-top: 25px;
+            text-align: left;
+            display: block;
+            width: 300px;
 
             .mdi-icon {
                 margin-left: 20px;
@@ -47,29 +50,25 @@
         resize: none;
         background-color: $white;
         min-height: 150px;
-        min-width: 500px;
+        min-width: 600px;
     }
     &__copytext {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 2px;
-        color: #0a65ea;
+        margin-left: 20px;
     }
     &__copytext:hover {
         color: #0745a1;
     }
 
     &.cta-container {
-        .row {
-            position: relative;
-        }
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
         .column {
+            width: 50%;
             height: 438px;
             padding: 40px 53px 0 127px;
-            position: absolute;
-            top: 0;
-            left: 0;
+            transition: height 2s, width 2s;
 
             .small-font a {
                 text-decoration: underline;
@@ -85,12 +84,6 @@
             line-height: 3.25rem;
             font-weight: bold;
             margin-bottom: 10px;
-        }
-        #sg-self-hosted {
-            width: 50%;
-        }
-        #sg-cloud {
-            left: 50%;
         }
         .badge {
             text-transform: uppercase;
@@ -140,20 +133,9 @@
         }
         /* When showing more content */
         .expanded {
-            min-height: 706px;
+            height: 706px;
             width: 100%;
-            max-width: 100%;
-            transition: max-width 2s;
-            top: -275px;
-            transition: top 2s;
 
-            &#sg-self-hosted {
-                width: 100%;
-            }
-            &#sg-cloud {
-                left: 0;
-                transition: left 2s;
-            }
             .temporary {
                 display: none !important;
             }

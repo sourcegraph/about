@@ -19,7 +19,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             <h2 className="display-2 mb-0">Move fast, even in big codebases.</h2>
                             <p className="my-5 col-9 mx-auto">
                                 Find and fix things across all of your code faster with Sourcegraph. Onboard to a new
-                                codebase, make large-scale refactors, reuse code, increase efficiency, ddress security
+                                codebase, make large-scale refactors, promote code reuse, increase efficiency, address security
                                 risks, root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
@@ -28,7 +28,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 </Link>
                                 <a
                                     className="btn btn-outline-primary m-3"
-                                    href="https://info.sourcegraph.com/demo-request"
+                                    href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
                                     title="Request a demo"
                                 >
                                     Request a demo <ArrowRightIcon className="ml-1" />
@@ -41,7 +41,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                     title="Talk to an expert"
                                 >
                                     Talk to an expert
-                                </a>
+                                </a>.
                             </p>
                         </div>
                     </div>

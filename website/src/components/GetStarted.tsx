@@ -62,7 +62,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
                                 <li>Connect to private code hosts (and local installs)</li>
                                 <li>Free trial for enterprise features</li>
                             </ul>
-                            <a className="d-inline-flex font-weight-bold" href="https://docs.sourcegraph.com">
+                            <a className="d-inline-flex font-weight-bold" href="/get-started">
                                 Learn about self-hosted vs. Cloud features <ArrowRightIcon className="ml-1" />
                             </a>
                         </div>

@@ -123,15 +123,15 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <Nav.Link
                                             className="btn btn-simple px-2 py-2"
                                             href="https://sourcegraph.com/search"
-                                            title="Search Code"
+                                            title="Search code"
                                         >
-                                            Search Code
+                                            Search code
                                         </Nav.Link>
                                     )}
 
                                     <Nav.Link
                                         className="btn btn-outline-primary ml-3 px-5 py-2"
-                                        href="https://info.sourcegraph.com/demo-request"
+                                        href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
                                         title="Request a demo"
                                     >
                                         Request a demo
@@ -269,7 +269,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         {!this.props.hideGetStartedButton && (
                                             <li className="header__nav-item nav-item" role="presentation">
                                                 <a className="nav-link" href="https://sourcegraph.com/search">
-                                                    Search Code
+                                                    Search code
                                                 </a>
                                             </li>
                                         )}
