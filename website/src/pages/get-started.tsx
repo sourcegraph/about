@@ -145,7 +145,10 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                     <h2 className="get-started-page__search-headings">
                                         Install Sourcegraph locally
                                         <span className="get-started-page__copytext">
-                                            <img src="../copy-text-icon.svg" className="copytext icon-inline ml-1 medium" />
+                                            <img
+                                                src="../copy-text-icon.svg"
+                                                className="copytext icon-inline ml-1 medium"
+                                            />
                                         </span>
                                     </h2>
                                     <span id="installText">
@@ -156,10 +159,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                         sourcegraph/server:3.34.2
                                     </span>
                                 </div>
-                                <a
-                                    className="btn"
-                                    href="https://info.sourcegraph.com/talk-to-a-developer"
-                                >
+                                <a className="btn" href="https://info.sourcegraph.com/talk-to-a-developer">
                                     Talk to an engineer <ArrowRightIcon />
                                 </a>
                                 <a
