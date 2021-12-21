@@ -96,8 +96,8 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
         <Layout
             location={props.location}
             meta={{
-                title: 'Sourcegraph | Sourcegraph Get started',
-                description: '',
+                title: 'Choose Your Deployment Model | Get Started with Sourcegraph',
+                description: 'From Sourcegraph Self-hosted to Sourcegraph Cloud, choose the deployment model that\'s best for you and get started for free today. ',
                 image: 'https://about.sourcegraph.com/sourcegraph-og.png',
             }}
             heroAndHeaderClassName="get-started-page__hero-and-header"
