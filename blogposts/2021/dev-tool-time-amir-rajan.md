@@ -2,7 +2,7 @@
 title: 'Down the ergonomic rabbit hole: Dev Tool Time with Amir Rajan'
 description: 'Amir Rajan, acclaimed indie game dev and co-creator of DragonRuby Game Toolkit, shares the many stages of his hardware setup over the years, and how he uses Emacs as a game dev.'
 author: Scott Bailey
-authorUrl: https://about.sourcegraph.com/handbook/company/team#scott-bailey-he-him
+authorUrl: https://handbook.sourcegraph.com/team#scott-bailey
 publishDate: 2021-10-20T10:00-07:00
 tags: [blog]
 slug: dev-tool-time-amir-rajan

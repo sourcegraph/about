@@ -28,6 +28,10 @@ const ITEMS: {
         url: '/external-logos/general-electric-logo.svg',
     },
     {
+        name: 'Reddit',
+        url: '/external-logos/reddit-logo.png',
+    },
+    {
         name: 'Paypal',
         url: '/external-logos/paypal-logo.svg',
     },
@@ -385,7 +389,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
     return (
         <div id="customers" className={`container customer-logos-section ${className}`}>
             {showSection && (
-                <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
+                <h3 className="customer-logos-section__header text-center font-weight-normal">
                     Our customers use Sourcegraph every day to build software you rely on.
                 </h3>
             )}

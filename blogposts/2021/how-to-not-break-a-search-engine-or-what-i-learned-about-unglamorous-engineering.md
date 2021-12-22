@@ -292,7 +292,7 @@ practice. That's why he currently works at Sourcegraph, where he applies his
 research background to develop new tools and techniques for large-scale code
 search and automated refactoring._
 
-<small>Acks: Thanks [Rebecca Dodd](/company/team#rebecca-dodd-she-her) and [Camden Cheek](https://twitter.com/camdendcheek) for feedback on the content of this post.</small>
+<small>Acks: Thanks [Rebecca Dodd](https://handbook.sourcegraph.com/team#rebecca-dodd) and [Camden Cheek](https://twitter.com/camdendcheek) for feedback on the content of this post.</small>
 
 ### More posts like this
 

@@ -12,6 +12,7 @@ interface HeaderProps {
     isProductPage?: boolean
     minimal?: boolean
     className?: string
+    hideGetStartedButton?: boolean
 }
 
 export default class Header extends React.Component<HeaderProps, any> {
@@ -65,10 +66,7 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                <nav
-                    expand="lg"
-                    className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}
-                >
+                <nav className={`header navbar py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container-lg">
                         <Navbar.Brand className="header__logo" href="/" onContextMenu={this.handleRightClick}>
                             <span role="img" aria-label="Sourcegraph - Universal code search">
@@ -87,7 +85,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     <span className="sr-only">Toggle navigation</span>
                                     <span className="navbar-toggler-icon" />
                                 </button>
-                                <Nav className="me-auto ml-md-2">
+                                <Nav className="left-nav me-auto ml-md-2">
                                     <NavDropdown onToggle={val => this.dropdownToggle(val)} title="Product">
                                         <NavDropdown.Item href="/code-search">Code Search</NavDropdown.Item>
                                         <NavDropdown.Item href="/batch-changes">Batch Changes</NavDropdown.Item>
@@ -117,20 +115,34 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         Docs
                                     </Nav.Link>
                                 </Nav>
-                                <Nav className="right-nav justify-content-lg-end ml-lg-8">
+                                <Nav className="right-nav justify-content-lg-end">
+                                    {!this.props.hideGetStartedButton && (
+                                        <Nav.Link
+                                            className="btn btn-simple px-2 py-2"
+                                            href="https://sourcegraph.com/search"
+                                            title="Search code"
+                                        >
+                                            Search code
+                                        </Nav.Link>
+                                    )}
+
                                     <Nav.Link
-                                        href="https://sourcegraph.com/sign-in"
-                                        title="Search public code with Sourcegraph Cloud"
+                                        className="btn btn-outline-primary ml-3 px-5 py-2"
+                                        href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
+                                        title="Request a demo"
                                     >
-                                        Sign in
+                                        Request a demo
                                     </Nav.Link>
-                                    <Nav.Link
-                                        className="btn btn-outline-primary"
-                                        href="https://sourcegraph.com/search"
-                                        title="Get started with Sourcegraph"
-                                    >
-                                        Search Code
-                                    </Nav.Link>
+
+                                    {!this.props.hideGetStartedButton && (
+                                        <Nav.Link
+                                            className="btn btn-primary ml-3 px-5 py-2"
+                                            href="/get-started"
+                                            title="Get started"
+                                        >
+                                            Get started
+                                        </Nav.Link>
+                                    )}
                                 </Nav>
 
                                 {/* Mobile Navbar */}
@@ -251,11 +263,28 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Sign in
                                             </a>
                                         </li>
+                                        {!this.props.hideGetStartedButton && (
+                                            <li className="header__nav-item nav-item" role="presentation">
+                                                <a className="nav-link" href="https://sourcegraph.com/search">
+                                                    Search code
+                                                </a>
+                                            </li>
+                                        )}
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <a className="nav-link" href="https://sourcegraph.com/search">
-                                                Search Code
+                                            <a
+                                                className="nav-link"
+                                                href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
+                                            >
+                                                Request a demo
                                             </a>
                                         </li>
+                                        {!this.props.hideGetStartedButton && (
+                                            <li className="header__nav-item nav-item" role="presentation">
+                                                <a className="nav-link" href="/get-started">
+                                                    Get started
+                                                </a>
+                                            </li>
+                                        )}
                                     </ul>
                                 </div>
                             </>
