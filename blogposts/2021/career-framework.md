@@ -12,7 +12,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-
 
 ![Software engineer career framework graphic](https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png)
 
-_Sourcegraph provides universal code search: a navigation engine for understanding your code. We’re also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://about.sourcegraph.com/handbook/company/team). See our [careers page](https://boards.greenhouse.io/sourcegraph91) for current openings._
+_Sourcegraph provides universal code search: a navigation engine for understanding your code. We’re also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://handbook.sourcegraph.com/team). See our [careers page](https://boards.greenhouse.io/sourcegraph91) for current openings._
 
 Engineering managers felt empowered but unconfident. It was the summer of 2020 and the company was seven years old and about 50 people strong (about half of whom were engineers). In the year to come, we would grow, rapidly hiring more engineers.
 
@@ -30,9 +30,9 @@ To create the career development framework, our VP of Engineering Nick Snyder fo
 
 The working group consisted of four people:
 
-- [Chris Pine](https://about.sourcegraph.com/handbook/company/team#chris-pine-he-she-they-chris), engineering manager, was the driver.
-- [Nick Snyder](https://about.sourcegraph.com/handbook/company/team#nick-snyder-he-him), VP of Engineering, was the approver.
-- [Felix Becker](https://about.sourcegraph.com/handbook/company/team#felix-becker) and [Patrick Dubroy](https://about.sourcegraph.com/handbook/company/team#patrick-dubroy-he-him), both engineering managers, were contributors.
+- [Chris Pine](https://handbook.sourcegraph.com/team#chris-pine), engineering manager, was the driver.
+- [Nick Snyder](https://handbook.sourcegraph.com/team#nick-snyder), VP of Engineering, was the approver.
+- [Felix Becker](https://handbook.sourcegraph.com/team#felix-becker) and [Patrick Dubroy](https://handbook.sourcegraph.com/team#patrick-dubroy), both engineering managers, were contributors.
 
 Everyone else in engineering was to be informed of the project’s progress and results.
 
