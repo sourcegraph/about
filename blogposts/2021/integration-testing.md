@@ -13,13 +13,11 @@ published: true
 
 ![Unglamorous engineering graphic](https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg)
 
-# How we added backend integration testing to our CI pipeline
+My name is Joe Chen and I was on the Core Application team at Sourcegraph (before it split into Repo Management and Cloud SaaS––I'm on the latter at the time of writing). Our responsibility was to build and maintain the infrastructure of the Sourcegraph application for other teams. Some of our previous work includes licensing enforcement, background permissions syncing, and explicit permissions APIs.
 
-My name is Joe Chen and I was on the Core Application team at Sourcegraph (before it splitted into Repo Management and Cloud SaaS, and I'm on the latter at the time of writing). Our responsibility was to build and maintain the infrastructure of the Sourcegraph application for other teams. Some of our previous work includes licensing enforcement, background permissions syncing, and explicit permissions APIs.
+In April of 2020, we decided to tackle integration testing. Although integration testing wasn’t something any single team could own, it involved code-based infrastructure and naturally fell on the Core Application team.
 
-In April of 2020, we decided to tackle integration testing. Although the integration testing isn’t something any single team could own, it involves code-based infrastructure and naturally fell on the Core Application team.
-
-The goal was to remove all existing backend-related end-to-end tests and reliably run their corresponding unit and/or integration tests as part of our CI pipeline on all branches, the end result being a more reliable, less flaky testing suite.
+The goal was to remove all existing backend-related end-to-end tests and reliably run their corresponding unit and/or integration tests as part of our CI pipeline on all branches––the end result being a more reliable, less flaky testing suite.
 
 Integration testing isn't glamorous work, but it's necessary and, most importantly, impactful. Inspired by a previous post, [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/), I wanted to share another piece of unglamorous engineering that, despite its lack of glamor, made a big impact.
 
@@ -29,9 +27,9 @@ Our work started with an [RFC](https://handbook.sourcegraph.com/company-info-and
 
 Before having the backend integration testing, we were relying entirely on end-to-end tests written in JavaScript. These tests would boot up a virtual browser, move the cursor, and click buttons to simulate a real user using the Sourcegraph application.
 
-The problem with this approach is that it's not always stable and it's easy to either time out or miss the button. The CI pipeline ends up becoming undependable, incurring a loss of trust in the end-to-end tests. Instead, we wanted to remove the browser manipulation layer and hit the APIs directly for the most parts of the tests in the end-to-end test suite.
+The problem with this approach is that it's not always stable and it's easy to either time out or miss the button. The CI pipeline ends up becoming undependable, incurring a loss of trust in the end-to-end tests. Instead, we wanted to remove the browser manipulation layer and hit the APIs directly for most parts of the tests in the end-to-end test suite.
 
-Instead of booting up a virtual browser, moving cursor around and clicking buttons that are hard to predict when to be available, our backend intergration testing gets rid of the UI and hitting the same GraphQL API endpoints that our web app would. Integration tests pretend our client is the browser and the user, and do all the steps necessary to simulate what a user does. They can then verify that a function is working as expected.
+Instead of booting up a virtual browser, moving the cursor around and clicking buttons that are hard to predict when will be available, our backend intergration testing gets rid of the UI and hits the same GraphQL API endpoints that our web app would. Integration tests pretend our client is the browser and the user, and do all the steps necessary to simulate what a user does. They can then verify that a function is working as expected.
 
 ## Discovery process
 
@@ -72,7 +70,7 @@ The migration process is as much about shared consensus as sheer migration. Make
 
 ### Stage four: Remove migrated tests from the end-to-end test suite
 
-Remove the corresponding unit tests or backend integration tests from the end-to-end test suite–but only when we've proven them to be working and stable first. Although the end-to-end test suite may be slow or sometimes flaky, it's still a valuable part of our CI because it helps us validate the correctness of our application that can't be done in any other ways.
+Remove the corresponding unit tests or backend integration tests from the end-to-end test suite–but only when we've first proven them to be working and stable. Although the end-to-end test suite may be slow or sometimes flaky, it's still a valuable part of our CI because it helps us validate the correctness of our application that can't be done in any other ways.
 
 Reducing the total number of end-to-end tests greatly reduces the chances our test suite will be flaky and also reduces the time necessary for a single run of the test suite.
 
