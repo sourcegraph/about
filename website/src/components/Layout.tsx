@@ -23,6 +23,10 @@ interface LayoutProps {
     heroAndHeaderClassName?: string
 
     className?: string
+
+    hideFooter?: false
+
+    hideGetStartedButton?: boolean
 }
 
 export default class Layout extends React.PureComponent<LayoutProps> {
@@ -74,11 +78,14 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                         isProductPage={isProductPage}
                         minimal={this.props.minimal}
                         className={`${this.props.className || ''}`}
+                        hideGetStartedButton={this.props.hideGetStartedButton}
                     />
                     {this.props.hero}
                 </div>
                 <section className="d-flex flex-column fill-height">{this.props.children}</section>
-                <Footer className={`pt-4 ${this.props.className || ''}`} minimal={this.props.minimal} />
+                {!this.props.hideFooter && (
+                    <Footer className={`pt-4 ${this.props.className || ''}`} minimal={this.props.minimal} />
+                )}
             </div>
         )
     }
