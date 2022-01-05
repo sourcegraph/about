@@ -164,7 +164,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                         --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                         --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                         --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                        sourcegraph/server:3.35.0
+                                        sourcegraph/server:3.35.1
                                     </span>
                                 </div>
                                 <a className="btn" href="https://info.sourcegraph.com/talk-to-a-developer">
