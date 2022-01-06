@@ -8,6 +8,7 @@ publishDate: 2021-12-22T18:00+02:00
 tags: [blog]
 slug: integration-testing
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
 published: true
 ---
 
