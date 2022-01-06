@@ -54,7 +54,8 @@ export default class About extends React.Component<any, any> {
                                 <p>
                                     The <Link to="https://handbook.sourcegraph.com">Sourcegraph handbook</Link> has
                                     everything from our high-level{' '}
-                                    <Link to="https://handbook.sourcegraph.com/strategy-goals/strategy">strategy</Link> and{` `}
+                                    <Link to="https://handbook.sourcegraph.com/strategy-goals/strategy">strategy</Link>{' '}
+                                    and{` `}
                                     <Link to="https://handbook.sourcegraph.com/company/values">values</Link>, to
                                     documentation of business processes including{' '}
                                     <Link to="https://handbook.sourcegraph.com/marketing/messaging">messaging</Link> and{' '}
