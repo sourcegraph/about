@@ -1,6 +1,6 @@
 ---
-title: "Redefining the OSS universe: Why we’re broadening our index to include more code hosts"
-description: "Rather than further growing our global index with more repositories from GitHub.com and GitLab.com, we’ll be focusing on broadening the set of code hosts Sourcegraph Cloud indexes from."
+title: 'Redefining the OSS universe: Why we’re broadening our index to include more code hosts'
+description: 'Rather than further growing our global index with more repositories from GitHub.com and GitLab.com, we’ll be focusing on broadening the set of code hosts Sourcegraph Cloud indexes from.'
 author: Loïc Guychard and Jeff Warner
 publishDate: 2022-01-10T00:00-07:00
 tags: [blog]
