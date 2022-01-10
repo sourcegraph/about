@@ -24,9 +24,9 @@ We’re incredibly excited by the possibilities opened by indexing code from man
 - As a developer searching for code, you are able to use this single, unified code search engine to find the projects and code examples most relevant to you across code hosts.
 - With the ability to sync your private code on Sourcegraph Cloud, you can also seamlessly search your own code alongside all of its open source dependencies, across code host boundaries.
 
-Not only that, but we are also making progress on Sourcegraph Cloud’s support for private code. Last month we also [opened a beta for teams access to Sourcegraph Cloud](https://about.sourcegraph.com/blog/sourcegraph-cloud-for-teams-now-in-private-beta).
+Not only that, but we are also making progress on Sourcegraph Cloud’s support for private code. Last month we [opened a beta for teams access to Sourcegraph Cloud](https://about.sourcegraph.com/blog/sourcegraph-cloud-for-teams-now-in-private-beta).
 
-In short, with this focus on breadth in addition to depth, Sourcegraph Cloud is on the path to becoming _the_ search engine for the universe of open source code along with your private code—a cornerstone for a world where [everyone can code](https://handbook.sourcegraph.com/company/strategy#purpose).
+In short, with this focus on breadth in addition to depth, Sourcegraph Cloud is on the path to becoming _the_ search engine for the universe of open source code along with your private code—a cornerstone for a world where [everyone can code](https://handbook.sourcegraph.com/company/strategy#purpose). You can also use Sourcegraph Self-hosted to search, understand, and automate large-scale changes across all of your private code, wherever it's hosted.
 
 ## Lessons learned
 
