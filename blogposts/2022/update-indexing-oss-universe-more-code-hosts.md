@@ -1,6 +1,6 @@
 ---
 title: "Redefining the OSS universe: Why we’re broadening our index to include more code hosts"
-description: We raised a $125M Series D to bring really great code search to every developer in the world. With this new funding, we’re prioritizing innovations that will push the frontier of developer experience.
+description: "Rather than further growing our global index with more repositories from GitHub.com and GitLab.com, we’ll be focusing on broadening the set of code hosts Sourcegraph Cloud indexes from."
 author: Loïc Guychard and Jeff Warner
 publishDate: 2022-01-10T00:00-07:00
 tags: [blog]
