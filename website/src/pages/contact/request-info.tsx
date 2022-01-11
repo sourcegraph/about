@@ -38,6 +38,27 @@ export default class TrialPage extends React.Component<any, any> {
                     <meta name="twitter:description" content={desc} />
                     <meta property="og:description" content={desc} />
                     <meta name="description" content={desc} />
+                    <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
+                    <script>
+                        const cpTenantDomain = 'sourcegraph'; // REPLACE and remove square brackets
+                        const cpRouterName = 'contact-sales'; // REPLACE and remove square brackets
+                        //
+                        // NO CHANGES NEEDED BELOW THIS POINT
+                        //
+                        // Listen for form submitted message
+                        function listener (event) {
+                          if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmit") {
+                            var lead = event.data.data.reduce((obj, item) => Object.assign(obj, { [item.name]: item.value }), {});
+                            console.log(lead);
+                            ChiliPiper.submit(cpTenantDomain, cpRouterName, {
+                              map: true,
+                              lead: lead,
+                            });
+                          }
+                        }
+
+                        window.addEventListener("message", listener, false);
+                    </script>
                 </Helmet>
                 <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
                 <div className="form-page bg-white text-dark">
