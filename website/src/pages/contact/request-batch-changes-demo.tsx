@@ -13,12 +13,12 @@ export const RequestBatchChangesDemo: React.FunctionComponent = (props: any) => 
         })
 
         // Chili Piper script
-        const cpTenantDomain = 'sourcegraph';
-        const cpRouterName = 'contact-sales';
-        window.addEventListener("message", (event) => {
-            if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmit") {
-                var lead = event.data.data.reduce((obj, item) => Object.assign(obj, { [item.name]: item.value }), {});
-                console.log(lead);
+        const cpTenantDomain = 'sourcegraph'
+        const cpRouterName = 'contact-sales'
+        window.addEventListener('message', event => {
+            if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
+                var lead = event.data.data.reduce((obj, item) => Object.assign(obj, { [item.name]: item.value }), {})
+                console.log(lead)
                 ChiliPiper.submit(cpTenantDomain, cpRouterName, {
                     map: true,
                     lead: lead,
