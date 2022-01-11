@@ -14,6 +14,7 @@ export default class SalesPage extends React.Component<any, any> {
             events: [],
         }
     }
+
     public componentDidMount(): void {
         createHubSpotForm({
             portalId: '2762526',
@@ -23,7 +24,22 @@ export default class SalesPage extends React.Component<any, any> {
         if (document) {
             document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
         }
+
+        // Chili Piper script
+        const cpTenantDomain = 'sourcegraph';
+        const cpRouterName = 'contact-sales';
+        window.addEventListener("message", (event) => {
+            if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmit") {
+                var lead = event.data.data.reduce((obj, item) => Object.assign(obj, { [item.name]: item.value }), {});
+                console.log(lead);
+                ChiliPiper.submit(cpTenantDomain, cpRouterName, {
+                    map: true,
+                    lead: lead,
+                })
+            }
+        })
     }
+
     public render(): JSX.Element | null {
         return (
             <Layout className="pt-0" location={this.props.location} minimal={true}>
@@ -35,6 +51,7 @@ export default class SalesPage extends React.Component<any, any> {
                     <meta property="og:description" content={desc} />
                     <meta name="description" content={desc} />
                     <link rel="icon" type="image/png" href="/favicon.png" />
+                    <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
                 </Helmet>
                 <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
                 <div className="form-page bg-white text-dark">

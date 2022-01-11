@@ -23,7 +23,22 @@ export default class TrialPage extends React.Component<any, any> {
         if (document) {
             document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
         }
+
+        // Chili Piper script
+        const cpTenantDomain = 'sourcegraph';
+        const cpRouterName = 'contact-sales';
+        window.addEventListener("message", (event) => {
+            if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmit") {
+                var lead = event.data.data.reduce((obj, item) => Object.assign(obj, { [item.name]: item.value }), {});
+                console.log(lead);
+                ChiliPiper.submit(cpTenantDomain, cpRouterName, {
+                    map: true,
+                    lead: lead,
+                })
+            }
+        })
     }
+
     public render(): JSX.Element | null {
         const desc = 'Contact us to learn more about Sourcegraph enterprise.'
         return (
@@ -39,26 +54,6 @@ export default class TrialPage extends React.Component<any, any> {
                     <meta property="og:description" content={desc} />
                     <meta name="description" content={desc} />
                     <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
-                    <script>
-                        const cpTenantDomain = 'sourcegraph'; // REPLACE and remove square brackets
-                        const cpRouterName = 'contact-sales'; // REPLACE and remove square brackets
-                        //
-                        // NO CHANGES NEEDED BELOW THIS POINT
-                        //
-                        // Listen for form submitted message
-                        function listener (event) {
-                          if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmit") {
-                            var lead = event.data.data.reduce((obj, item) => Object.assign(obj, { [item.name]: item.value }), {});
-                            console.log(lead);
-                            ChiliPiper.submit(cpTenantDomain, cpRouterName, {
-                              map: true,
-                              lead: lead,
-                            });
-                          }
-                        }
-
-                        window.addEventListener("message", listener, false);
-                    </script>
                 </Helmet>
                 <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
                 <div className="form-page bg-white text-dark">

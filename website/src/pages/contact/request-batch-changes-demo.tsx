@@ -11,6 +11,20 @@ export const RequestBatchChangesDemo: React.FunctionComponent = (props: any) => 
             formId: 'c98d6435-f0fc-4b34-8cff-cfe7633121c8',
             targetId: 'hubspotRequestBatchChangesDemo',
         })
+
+        // Chili Piper script
+        const cpTenantDomain = 'sourcegraph';
+        const cpRouterName = 'contact-sales';
+        window.addEventListener("message", (event) => {
+            if (event.data.type === "hsFormCallback" && event.data.eventName === "onFormSubmit") {
+                var lead = event.data.data.reduce((obj, item) => Object.assign(obj, { [item.name]: item.value }), {});
+                console.log(lead);
+                ChiliPiper.submit(cpTenantDomain, cpRouterName, {
+                    map: true,
+                    lead: lead,
+                })
+            }
+        })
     }, [])
     const title = 'Sourcegraph - Schedule a Batch Changes demo.'
     const desc = 'Learn how you can automate large-scale code changes with Sourcegraph Batch Changes.'
@@ -26,6 +40,7 @@ export const RequestBatchChangesDemo: React.FunctionComponent = (props: any) => 
                 <meta name="twitter:description" content={desc} />
                 <meta property="og:description" content={desc} />
                 <meta name="description" content={desc} />
+                <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
             </Helmet>
             <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
             <div className="form-page bg-white text-dark">
