@@ -228,7 +228,7 @@
         }
         /* When showing more content */
         .expanded {
-            height: 740px;
+            height: 550px;
             width: 100%;
 
             @media only screen and (max-width: 768px) {
@@ -257,7 +257,7 @@
             }
         }
         .high {
-            height: 740px;
+            height: 550px;
         }
     }
 }
