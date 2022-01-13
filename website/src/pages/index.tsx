@@ -88,10 +88,10 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Search open source code, too.</h2>
                         <p>
-                            Sourcegraph is indexing millions of open source repositories from public code hosts. You'll be able
-                            to search across a universe of code — currently over 2 million repositories and counting —
-                            in milliseconds. Explore, learn from, and reference the best community-developed code out
-                            there.
+                            Sourcegraph is indexing millions of open source repositories from public code hosts. You'll
+                            be able to search across a universe of code — currently over 2 million repositories and
+                            counting — in milliseconds. Explore, learn from, and reference the best community-developed
+                            code out there.
                         </p>
                         <div className="pt-1">
                             <a
