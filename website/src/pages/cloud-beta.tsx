@@ -46,7 +46,9 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
             <div className="container py-4">
                 <div className="row">
                     <div className="col-lg-9">
-                        <h1 className="title display-2 mb-4">Speed up your team’s workflow with Universal Code Search.</h1>
+                        <h1 className="title display-2 mb-4">
+                            Speed up your team’s workflow with Universal Code Search.
+                        </h1>
                         <div className="col-lg-9">
                             <p className="subTitle">
                                 Introducing team access to Sourcegraph Cloud
@@ -54,9 +56,10 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                                 (Private Beta)
                             </p>
                             <p>
-                                Teams of up to 25 users can now add their private repositories to Sourcegraph Cloud to experience great 
-                                code search together. Find & fix vulnerabilities, resolve incidents, and onboard engineers to new 
-                                codebases fast. Join the waitlist today to get exclusive early access.
+                                Teams of up to 25 users can now add their private repositories to Sourcegraph Cloud to
+                                experience great code search together. Find & fix vulnerabilities, resolve incidents,
+                                and onboard engineers to new codebases fast. Join the waitlist today to get exclusive
+                                early access.
                             </p>
                             <a
                                 className="btn btn-primary join-the-watilist-hero-btn"
@@ -67,7 +70,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                         </div>
                     </div>
                     <div className="col-lg-3">
-                        <img src="/external-logos/anyscale-logo.png" className="anyscale-logo"/>
+                        <img src="/external-logos/anyscale-logo.png" className="anyscale-logo" />
                     </div>
                 </div>
             </div>
