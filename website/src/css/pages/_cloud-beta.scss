@@ -42,6 +42,10 @@
     .anyscale-logo {
         max-width: 250px;
         width: 100%;
+
+        @media only screen and (max-width: 992px) {
+            display: none;
+        }
     }
 
     ul {
