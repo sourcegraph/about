@@ -19,22 +19,23 @@ export const DevToolsQuizPage: React.FunctionComponent<PageProps> = props => (
             <div className="container pb-4">
                 <div className="row">
                     <div className="col-lg-9">
-                        <h1 className="title display-2 mb-4">New Year, New Dev Tools: Evaluating Your Current Workflow in 5 Minutes or Less</h1>
+                        <h1 className="title display-2 mb-4">
+                            New Year, New Dev Tools: Evaluating Your Current Workflow in 5 Minutes or Less
+                        </h1>
                     </div>
                     <div className="col-lg-6">
                         <p>
-                            Developer tools have made huge strides over the last decade, and useful new tools appear almost weekly. While 
-                            devs are still productive with a terminal and an editor, contemporary tools can make it easier to search, read, 
-                            and understand code, regardless of experience levels.
+                            Developer tools have made huge strides over the last decade, and useful new tools appear
+                            almost weekly. While devs are still productive with a terminal and an editor, contemporary
+                            tools can make it easier to search, read, and understand code, regardless of experience
+                            levels.
                         </p>
                         <p>
-                            This quiz isn't a test or evaluation. It's a chance to think about your go-to workflows and tools for searching, 
-                            reading, and understanding code – and discover some new ones along the way.
+                            This quiz isn't a test or evaluation. It's a chance to think about your go-to workflows and
+                            tools for searching, reading, and understanding code – and discover some new ones along the
+                            way.
                         </p>
-                        <a
-                            className="btn btn-primary"
-                            href="https://form.typeform.com/to/bSiNOCmx"
-                        >
+                        <a className="btn btn-primary" href="https://form.typeform.com/to/bSiNOCmx">
                             Take the quiz <ArrowRightIcon className="ml-1" />
                         </a>
                     </div>
@@ -43,10 +44,14 @@ export const DevToolsQuizPage: React.FunctionComponent<PageProps> = props => (
         }
     >
         <Helmet>
-            <script src="//embed.typeform.com/next/embed.js"></script>    
+            <script src="//embed.typeform.com/next/embed.js"></script>
         </Helmet>
         <ContentSection className="text-center">
-            <div data-tf-widget="bSiNOCmx" data-tf-iframe-props="title=Dev Tools Quiz" data-tf-hidden="utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx"></div>
+            <div
+                data-tf-widget="bSiNOCmx"
+                data-tf-iframe-props="title=Dev Tools Quiz"
+                data-tf-hidden="utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx"
+            ></div>
         </ContentSection>
     </Layout>
 )
