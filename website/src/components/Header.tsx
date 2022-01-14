@@ -128,7 +128,7 @@ export default class Header extends React.Component<HeaderProps, any> {
 
                                     <Nav.Link
                                         className="btn btn-outline-primary ml-3 px-5 py-2"
-                                        href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
+                                        href="https://info.sourcegraph.com/demo-request"
                                         title="Request a demo"
                                     >
                                         Request a demo
@@ -273,7 +273,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <li className="header__nav-item nav-item" role="presentation">
                                             <a
                                                 className="nav-link"
-                                                href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
+                                                href="https://info.sourcegraph.com/demo-request"
                                             >
                                                 Request a demo
                                             </a>
