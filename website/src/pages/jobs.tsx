@@ -20,7 +20,7 @@ const CareersPage = props => {
                     </div>
                     <a
                         className="btn btn-primary mt-4"
-                        href="https://boards.greenhouse.io/sourcegraph91"
+                        href="https://grnh.se/c685479c4us"
                         title="Explore our jobs"
                         target="_blank"
                     >
@@ -329,7 +329,7 @@ const CareersPage = props => {
                         </div>
                         <a
                             className="btn btn-primary my-2"
-                            href="https://boards.greenhouse.io/sourcegraph91"
+                            href="https://grnh.se/c685479c4us"
                             title="Explore our jobs"
                             target="_blank"
                         >
