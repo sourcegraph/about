@@ -28,7 +28,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 </Link>
                                 <a
                                     className="btn btn-outline-primary m-3"
-                                    href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
+                                    href="https://info.sourcegraph.com/demo-request"
                                     title="Request a demo"
                                 >
                                     Request a demo <ArrowRightIcon className="ml-1" />
