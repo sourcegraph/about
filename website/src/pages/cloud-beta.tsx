@@ -51,7 +51,8 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="col-lg-6">
                         <p className="subTitle">
-                            Introducing team access for Sourcegraph Cloud  <br />
+                            Introducing team access for Sourcegraph Cloud
+                            <br />
                             (Private Beta)
                         </p>
                         <p>
