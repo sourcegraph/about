@@ -110,3 +110,8 @@ When we initiated this project, we realized we had needed to make the shift from
 It's easy to talk a big game, to talk about writing clean code or writing code that is easy to fix or delete, but it's harder to put these ideas into practice. It's especially hard to do so in a CI environment.
 
 Integration testing is a major step toward better reliability and one that teams and users at Sourcegraph will benefit from for a long time. If you're wondering whether it's time to improve reliability, scope the effort needed to implement integration testing. We found it worthwhile.
+
+## More posts like this
+- [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
+- [Continuous delivery: A cure for release anxiety?](https://about.sourcegraph.com/blog/continuous-delivery-mindset/)
+- [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
