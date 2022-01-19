@@ -37,6 +37,7 @@ Once you have Notebooks enabled, go ahead and [explore](https://sourcegraph.com/
 ## Query-based search contexts in beta
 
 Search contexts can now be defined with a restricted search query as an alternative to a specific list of repositories and revisions.
+
 What does this mean for users? First, this provides search context support for monorepos. Second, and just as impactful, users with thousands of repositories and different teams or sub-organizations can easily define dynamic search contexts with a query. No more specifying dozens or hundreds (or more!) repositories and keeping the list up to date.
 
 You can also now create new search contexts right from the search results page. Once you've enabled query-based search contexts, you'll see a Create context button above the search results.
