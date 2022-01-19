@@ -16,7 +16,7 @@ Sourcegraph 3.36 is now available! Here are some highlights from this release:
 
 Before this release, creating a batch change required you (or your service-account) to have write-access to every target repository. This was incompatible with having tight repository access control, and was impractical at a large scale; you want all users to be able to create batch changes on all repositories, but also not grant them overly broad write permissions.
 
-That's why we are introducing [batch changes on forks](https://docs.sourcegraph.com/admin/config/batch_changes), which makes it possible for branches created by Batch Changes to be pushed to a fork of the repository instead of a branch. This solves those access control challenges and lets you safely enable Batch Changes for everyone. In this version, this is an instance setting that is either on for all users, or off.
+That's why we are introducing [batch changes on forks](https://docs.sourcegraph.com/admin/config/batch_changes), which makes it possible for branches created by Batch Changes to be pushed to a fork of the repository instead of a branch. This solves those access control challenges and lets you safely enable Batch Changes for everyone. In this version, this is an instance setting that is either on for all users, or off (default).
 
 ## Find repo files faster with fuzzy finder
 
