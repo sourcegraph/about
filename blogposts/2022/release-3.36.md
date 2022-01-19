@@ -16,7 +16,7 @@ Sourcegraph 3.36 is now available! Here are some highlights from this release:
 
 Before this release, creating a batch change required you (or your service-account) to have write-access to every target repository. This was incompatible with having tight repository access control, and was impractical at a large scale; you want all users to be able to create batch changes on all repositories, but also not grant them overly broad write permissions.
 
-That's why we are introducing [batch changes on forks](https://docs.sourcegraph.com/admin/config/batch_changes), which makes it possible for branches created by Batch Changes to be pushed to a fork of the repository instead of a branch. This solves those access control challenges and lets you safely enable Batch Changes for everyone. In Sourcegraph 3.36, this is an instance setting that can be turned either on or off for all users, and is off by default.
+That's why we are introducing [batch changes on forks](https://docs.sourcegraph.com/admin/config/batch_changes), which makes it possible for branches created by Batch Changes to be pushed to a fork of the repository rather than the repository itself. This solves those access control challenges and lets you safely enable Batch Changes for everyone. In Sourcegraph 3.36, this is an instance setting that can be turned either on or off for all users, and is off by default.
 
 ## Find repo files faster with fuzzy finder
 
@@ -26,7 +26,7 @@ We're excited to introduce a new fuzzy file finder which can help you quickly op
 
 ## Document your code searches with Notebooks
 
-We're excited to announce that [Notebooks](https://sourcegraph.com/notebooks) have moved out of Experimental and into Beta! Notebooks are a great way to document code and codebases to onboard new team members or contributors, or keep track of bug resolutions, and more. Recently, we made a [Notebook](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) to identify log4j dependencies. Notebooks are shareable, and you can star ones you find useful to keep track of them or to help others find useful Notebooks.
+We're excited to announce that [Notebooks](https://sourcegraph.com/notebooks) have moved out of Experimental and into Beta! Notebooks are a great way to document code and codebases to onboard new team members, keep track of bug resolutions, or record search examples to share with teammates. Recently, we published a public [Notebook](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) to identify log4j dependencies. Notebooks are shareable, and you can star ones you find useful to keep track of them or to help others find useful Notebooks.
 
 To try them out, make sure Notebooks are enabled in your settings (by setting `showSearchNotebook` to `true` under the `experimentalFeatures` property.) Once you have Notebooks enabled, go ahead and [explore](https://sourcegraph.com/notebooks?tab=explore) some public notebooks.
 
