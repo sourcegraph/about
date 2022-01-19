@@ -30,7 +30,7 @@ We're excited to announce that [Notebooks](https://sourcegraph.com/notebooks) ha
 
 To try them out, make sure Notebooks are enabled in your settings (by setting `showSearchNotebook` to `true` under the `experimentalFeatures` property.) Once you have Notebooks enabled, go ahead and [explore](https://sourcegraph.com/notebooks?tab=explore) some public notebooks.
 
-## Scope searches on monorepos and large codebases with query-based search contexts 
+## Scope searches on monorepos and large codebases with query-based search contexts
 
 Search contexts can now be defined with a restricted search query as an alternative to a specific list of repositories and revisions, a new feature we're launching in Beta.
 
