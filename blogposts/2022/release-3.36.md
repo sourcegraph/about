@@ -8,7 +8,6 @@ published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.36/sourcegraph-3-36-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.36/sourcegraph-3-36-release.png
 changelogItems:
-  # Added
   - description: 'Search contexts can now be defined with a restricted search query, allowing them to be used for subsections of monorepos or selective groupings of repos. Allowed filters: `repo`, `rev`, `file`, `lang`, `case`, `fork`, `visibility`. `OR`, `AND` expressions are also allowed. This is a `Beta` feature and may change in following releases.'
     url: https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts
     category: Search
