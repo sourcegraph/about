@@ -15,11 +15,14 @@ changelogItems:
   - description: 'Batch changes will be created on forks of the upstream repository if the new `batchChanges.enforceForks` site setting is enabled, allowing users with restricted repository access to take advantage of Batch Changes.'
     url: https://github.com/sourcegraph/sourcegraph/issues/17879
     category: Batch Changes
-  - description: 'Symbolic links are now searchable to make files easier to find. Previously it was possible to navigate to symbolic links in the repository tree view, however the symbolic links were ignored during searches.'
-    url: https://github.com/sourcegraph/zoekt/pull/237
-    category: Search
   - description: 'Notebooks are now fully persistable and can be shared via a unique URL. We support two visibility modes: private (only the creator can view the notebook) and public (everyone can view the notebook). This is a `Beta` feature and may change in following releases.'
     url: https://github.com/sourcegraph/sourcegraph/issues/27384
+    category: Search
+  - description: 'Search results across repositories are now ordered by repository rank to make results more relevant. By default the rank is the number of stars a repository has. An administrator can inflate the rank of a repository via `experimentalFeatures.ranking.repoScores`. If you notice increased latency in results, you can disable this feature by setting `experimentalFeatures.ranking.maxReorderQueueSize` to 0.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/29856
+    category: Search
+  - description: 'Symbolic links are now searchable to make files easier to find. Previously it was possible to navigate to symbolic links in the repository tree view, however the symbolic links were ignored during searches.'
+    url: https://github.com/sourcegraph/zoekt/pull/237
     category: Search
   - description: "Sourcegraph's API (streaming search, GraphQL, etc.) may now be used from any domain when using an access token for authentication, or with no authentication in the case of Sourcegraph.com."
     url: https://github.com/sourcegraph/sourcegraph/pull/28775
@@ -27,12 +30,6 @@ changelogItems:
   - description: 'The endpoint `/search/stream` will be retired in favor of `/.api/search/stream`. This requires no action unless you have developed custom code against `/search/stream`. We will support both endpoints for a short period of time before removing `/search/stream`. Please refer to the documentation for more information.'
     url: https://docs.sourcegraph.com/api/stream_api
     category: API
-  - description: 'Search results across repositories are now ordered by repository rank by default. By default the rank is the number of stars a repository has. An administrator can inflate the rank of a repository via `experimentalFeatures.ranking.repoScores`. If you notice increased latency in results, you can disable this feature by setting `experimentalFeatures.ranking.maxReorderQueueSize` to 0.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/29856
-    category: Search
-  - description: 'Fixed an issue preventing searches from completing when certain patterns contained `@`.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/29489
-    category: Search
 ---
 
 Sourcegraph 3.36 is now available! Here are some highlights from this release:
