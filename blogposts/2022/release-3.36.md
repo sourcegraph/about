@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 3.36 release'
 publishDate: 2022-01-21T10:00-07:00
-description: 'Sourcegraph 3.36 introduces...'
+description: 'Sourcegraph 3.36 introduces Notebooks and query-based search contexts in Beta, a new file fuzzy finder, and the ability to push branches from batch changes to forks.'
 tags: [blog, release]
 slug: 'release/3.36'
 published: false
