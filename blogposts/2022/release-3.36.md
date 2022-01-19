@@ -25,6 +25,7 @@ We're excited to introduce a new fuzzy file finder which can help you quickly op
 <img class="blog-image" title="Fuzzy finder" alt="An example of using fuzzy finder to navigate to test files within the sourcegraph/sourcegraph repo." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.36/fuzzyfinder.gif">
 
 ## Notebooks in beta
+
 We're excited to announce that Notebooks have moved out of Experimental and into Beta! Notebooks are a great way to document code and codebases to onboard new team members or contributors, or keep track of bug resolutions, and more. Recently, we made a [Notebook](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) to identify log4j dependencies!
 
 To try them out, make sure Notebooks are enabled in your settings by setting showSearchNotebook to true under the experimentalFeatures property in your settings.
@@ -32,6 +33,7 @@ To try them out, make sure Notebooks are enabled in your settings by setting sho
 Once you have Notebooks enabled, go ahead and [explore](https://sourcegraph.com/notebooks?tab=explore) some public notebooks!
 
 ## Query-based search contexts in beta
+
 Search contexts can now be defined with a restricted search query as an alternative to a specific list of repositories and revisions.
 What does this mean for users? First, this provides search context support for monorepos. Second, and just as impactful, users with thousands of repositories and different teams or sub-organizations can easily define dynamic search contexts with a query. No more specifying dozens or hundreds (or more!) repositories and keeping the list up to date.
 
