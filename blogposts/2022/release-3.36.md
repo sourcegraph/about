@@ -23,3 +23,18 @@ That's why we are introducing [batch changes on forks](https://docs.sourcegraph.
 We're excited to introduce a new fuzzy file finder which can help you quickly open a file from your repository. The keyboard shortcut to activate it is Cmd+K on macOS, or Ctrl+K on Linux/Windows. Note that it will not activate in non-repository related pages, such as search results for example.
 
 <img class="blog-image" title="Fuzzy finder" alt="An example of using fuzzy finder to navigate to test files within the sourcegraph/sourcegraph repo." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.36/fuzzyfinder.gif">
+
+## Notebooks in beta
+We're excited to announce that Notebooks have moved out of Experimental and into Beta! Notebooks are a great way to document code and codebases to onboard new team members or contributors, or keep track of bug resolutions, and more. Recently, we made a [Notebook](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) to identify log4j dependencies!
+
+To try them out, make sure Notebooks are enabled in your settings by setting showSearchNotebook to true under the experimentalFeatures property in your settings.
+
+Once you have Notebooks enabled, go ahead and [explore](https://sourcegraph.com/notebooks?tab=explore) some public notebooks!
+
+## Query-based search contexts in beta
+Search contexts can now be defined with a restricted search query as an alternative to a specific list of repositories and revisions.
+What does this mean for users? First, this provides search context support for monorepos. Second, and just as impactful, users with thousands of repositories and different teams or sub-organizations can easily define dynamic search contexts with a query. No more specifying dozens or hundreds (or more!) repositories and keeping the list up to date.
+
+You can also now create new search contexts right from the search results page. Once you've enabled query-based search contexts, you'll see a Create context button above the search results.
+
+Check the [docs](https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts) to learn more about how to enable and use query-based search contexts.
