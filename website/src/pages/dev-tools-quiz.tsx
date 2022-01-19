@@ -17,7 +17,11 @@ export const DevToolsQuizPage: React.FunctionComponent<PageProps> = props => (
         <Helmet>
             <script src="//embed.typeform.com/next/embed.js"></script>
         </Helmet>
-        <body data-tf-widget="bSiNOCmx" data-tf-iframe-props="title=Dev Tools Quiz" data-tf-hidden="utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx"></body>
+        <body
+            data-tf-widget="bSiNOCmx"
+            data-tf-iframe-props="title=Dev Tools Quiz"
+            data-tf-hidden="utm_source=xxxxx,utm_medium=xxxxx,utm_campaign=xxxxx,utm_term=xxxxx,utm_content=xxxxx"
+        ></body>
     </Layout>
 )
 
