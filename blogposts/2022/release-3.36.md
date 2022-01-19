@@ -21,4 +21,5 @@ That's why we are introducing [batch changes on forks](https://docs.sourcegraph.
 ## Find repo files faster with fuzzy finder
 
 Use the new fuzzy file finder to quickly open a file from a repository. The keyboard shortcut to activate the fuzzy file finder is Cmd+K on macOS and Ctrl+K on Linux/Windows. Note that the fuzzy finder does not activate in non-repository related pages like search results.
+
 <img class="blog-image" title="Fuzzy finder" alt="An example of using fuzzy finder to navigate to test files within the sourcegraph/sourcegraph repo." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.36/fuzzyfinder.gif">
