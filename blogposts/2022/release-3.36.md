@@ -30,7 +30,7 @@ We're excited to announce that [Notebooks](https://sourcegraph.com/notebooks) ha
 
 Notebooks are shareable, and you can star ones you found useful and help others find useful Notebooks.
 
-To try them out, make sure Notebooks are enabled in your settings by setting showSearchNotebook to true under the experimentalFeatures property in your settings.
+To try them out, make sure Notebooks are enabled in your settings (by setting `showSearchNotebook` to `true` under the `experimentalFeatures` property.)
 
 Once you have Notebooks enabled, go ahead and [explore](https://sourcegraph.com/notebooks?tab=explore) some public notebooks!
 
