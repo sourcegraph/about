@@ -26,7 +26,9 @@ We're excited to introduce a new fuzzy file finder which can help you quickly op
 
 ## Notebooks in beta
 
-We're excited to announce that Notebooks have moved out of Experimental and into Beta! Notebooks are a great way to document code and codebases to onboard new team members or contributors, or keep track of bug resolutions, and more. Recently, we made a [Notebook](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) to identify log4j dependencies!
+We're excited to announce that [Notebooks](https://sourcegraph.com/notebooks) have moved out of Experimental and into Beta! Notebooks are a great way to document code and codebases to onboard new team members or contributors, or keep track of bug resolutions, and more. Recently, we made a [Notebook](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) to identify log4j dependencies!
+
+Notebooks are shareable, and you can star ones you found useful and help others find useful Notebooks.
 
 To try them out, make sure Notebooks are enabled in your settings by setting showSearchNotebook to true under the experimentalFeatures property in your settings.
 
