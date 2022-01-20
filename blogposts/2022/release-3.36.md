@@ -23,6 +23,9 @@ changelogItems:
   - description: 'Symbolic links are now searchable to make files easier to find. Previously it was possible to navigate to symbolic links in the repository tree view, however the symbolic links were ignored during searches.'
     url: https://github.com/sourcegraph/zoekt/pull/237
     category: Search
+  - description: "Sourcegraph's API (streaming search, GraphQL, etc.) may now be used from any domain when using an access token for authentication, or with no authentication in the case of Sourcegraph.com. This enables customers to use their Sourcegraph instance's APIs in new ways, such as calling them via web applications."
+    url: https://github.com/sourcegraph/sourcegraph/pull/28775
+    category: API
   - description: 'The endpoint `/search/stream` will be retired in favor of `/.api/search/stream`. This requires no action unless you have developed custom code against `/search/stream`. We will support both endpoints for a short period of time before removing `/search/stream`. Please refer to the documentation for more information.'
     url: https://docs.sourcegraph.com/api/stream_api
     category: API
