@@ -23,9 +23,6 @@ changelogItems:
   - description: 'Symbolic links are now searchable to make files easier to find. Previously it was possible to navigate to symbolic links in the repository tree view, however the symbolic links were ignored during searches.'
     url: https://github.com/sourcegraph/zoekt/pull/237
     category: Search
-  - description: "Sourcegraph's API (streaming search, GraphQL, etc.) may now be used from any domain when using an access token for authentication, or with no authentication in the case of Sourcegraph.com."
-    url: https://github.com/sourcegraph/sourcegraph/pull/28775
-    category: API
   - description: 'The endpoint `/search/stream` will be retired in favor of `/.api/search/stream`. This requires no action unless you have developed custom code against `/search/stream`. We will support both endpoints for a short period of time before removing `/search/stream`. Please refer to the documentation for more information.'
     url: https://docs.sourcegraph.com/api/stream_api
     category: API
@@ -35,7 +32,7 @@ Sourcegraph 3.36 is now available! Here are some highlights from this release:
 
 ## Push new branches from Batch Changes to forks
 
-Before this release, creating a batch change required you (or your service-account) to have write-access to every target repository. This was incompatible with having tight repository access control, and was impractical at a large scale. We heard from customers that they wanted all users to be able to create batch changes on all repositories, but also not grant them overly broad write permissions.
+Before this release, creating a batch change required you (or your service-account) to have write-access to every target repository. This was incompatible with having tight repository access control, and was impractical at a large scale. We heard from customers that they wanted all users to be able to create batch changes on all repositories, without them needing overly broad write permissions.
 
 That's why we are introducing [Batch Changes on forks](https://docs.sourcegraph.com/admin/config/batch_changes#forks), which makes it possible for branches created by Batch Changes to be pushed to a fork of the repository rather than the repository itself. This solves those access control challenges and lets you safely enable Batch Changes for everyone. In Sourcegraph 3.36, this is an instance setting that can be turned either on or off for all users, and is off by default.
 
@@ -49,12 +46,12 @@ We're excited to introduce a new fuzzy file finder which can help you quickly op
 
 We're excited to announce that [Notebooks](https://sourcegraph.com/notebooks) have moved out of Experimental and into Beta! Notebooks are a great way to document code and codebases to onboard new team members, keep track of bug resolutions, or record search examples to share with teammates. Recently, we published a public [Notebook](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) to identify log4j dependencies. Notebooks are shareable, and you can star ones you find useful to keep track of them or to help others find useful Notebooks.
 
-To try them out, make sure Notebooks are enabled in your settings (by setting `showSearchNotebook` to `true` under the `experimentalFeatures` property.) Once you have Notebooks enabled, go ahead and [explore](https://sourcegraph.com/notebooks?tab=explore) some public Notebooks.
+To try them out, make sure Notebooks are enabled in your settings (by setting `showSearchNotebook` to `true` under the `experimentalFeatures` property). Once you have Notebooks enabled, go ahead and [explore](https://sourcegraph.com/notebooks?tab=explore) some public Notebooks.
 
 ## Scope searches on monorepos and large codebases with query-based search contexts
 
 Search contexts can now be defined with a restricted search query as an alternative to a specific list of repositories and revisions, a new feature we're launching in Beta.
 
-What does this mean for users? First, this provides search context support for monorepos. Second, and just as impactful, users with thousands of repositories and different teams or sub-organizations can easily define dynamic search contexts with a query. No more specifying dozens or hundreds (or more!) repositories and keeping the list up to date.
+What does this mean for users? First, this provides search context support for monorepos. Second, and just as impactful, users with thousands of repositories and different teams or sub-organizations can easily define dynamic search contexts with a query. No more specifying dozens or hundreds of repositories and keeping the list up to date.
 
 You can also now create new search contexts right from the search results page. Once you've enabled query-based search contexts, you can run a search and click the "Create context" button to turn that query into a search context. Check the [docs](https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts) to learn more about how to enable and use query-based search contexts.
