@@ -39,8 +39,8 @@ export default ((props: any) => (
                             <Link to="#find-and-fix-security-vulnerabilities" className="list-group-item list-group-item-action">
                                 Find and fix security vulnerabilities <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#enhance-developer-onboarding" className="list-group-item list-group-item-action">
-                                Enhance developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
+                            <Link to="#accelerate-developer-onboarding" className="list-group-item list-group-item-action">
+                                Accelerate developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#resolve-incidents-faster" className="list-group-item list-group-item-action">
                                 Resolve incidents faster <ArrowRightIcon className="icon-inline ml-1" />
@@ -80,7 +80,7 @@ export default ((props: any) => (
                             </li>
                             <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -92,7 +92,9 @@ export default ((props: any) => (
                             </p>
                             <footer className="blockquote-footer">David Haynes, Security Engineer at Cloudflare</footer>
                             <div className="d-flex justify-content-center my-4">
-                                <img src="/external-logos/cloudflare-logo.svg" width="110px" alt="Cloudflare" />
+                                <a href="/case-studies/cloudflare-accelerates-debugging-and-improves-security" className="btn">
+                                    <img src="/external-logos/cloudflare-color-logo.svg" width="110px" alt="Cloudflare" />
+                                </a>
                             </div>
                         </blockquote>
                     </div>
@@ -101,16 +103,30 @@ export default ((props: any) => (
 
             <hr className="mt-8 mb-6" />
 
-            <ContentSection id="enhance-developer-onboarding" className="py-4">
+            <ContentSection id="accelerate-developer-onboarding" className="py-4">
                 <div className="row justify-content-center pt-md-4">
+                    <div className="col-lg-6 text-center">
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-8">
+                            <p>
+                                For our new developers, Sourcegraph has been invaluable to get to know the repository
+                                structure, to track down where code lives, and self-service during their investigations.
+                            </p>
+                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
+                            <div className="d-flex justify-content-center my-4">
+                                <a href="/case-studies/convoy-improved-on-boarding" className="btn">
+                                    <img src="/external-logos/convoy-logo.svg" width="110px" alt="Convoy" />
+                                </a>
+                            </div>
+                        </blockquote>
+                    </div>
                     <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Enhance developer onboarding</h2>
+                        <h2 className="display-3 font-weight-bold mb-3">Accelerate developer onboarding</h2>
                         <h5>
                             Decrease time to first commit with self-serve onboarding, codebase exploration, and
                             knowledge sharing.
                         </h5>
                         <p>
-                            Onboard new teammates faster and improve dev velocity by making it easy to search and find
+                            Onboard teammates faster and improve dev velocity by making it easy to search and find
                             code and context. Unlike splintered tooling and knowledge management systems that require
                             manual interaction and upkeep, Sourcegraph helps devs self-serve.
                         </p>
@@ -124,21 +140,9 @@ export default ((props: any) => (
                             </li>
                             <li>Get answers faster with shareable links to specific code</li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
-                    </div>
-                    <div className="col-lg-6 text-center">
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-8">
-                            <p>
-                                For our new developers, Sourcegraph has been invaluable to get to know the repository
-                                structure, to track down where code lives, and self-service during their investigations.
-                            </p>
-                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
-                            <div className="d-flex justify-content-center my-4">
-                                <img src="/external-logos/convoy-logo.svg" width="110px" alt="Cloudflare" />
-                            </div>
-                        </blockquote>
                     </div>
                 </div>
             </ContentSection>
@@ -158,7 +162,7 @@ export default ((props: any) => (
                         </p>
                         <ul>
                             <li>
-                                Quickly understand all context & dependencies around the code to self-serve or involve
+                                Quickly understand all context & dependencies around the codebase to self-serve or involve
                                 relevant teams
                             </li>
                             <li>
@@ -170,7 +174,7 @@ export default ((props: any) => (
                                 search notebook
                             </li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -182,7 +186,9 @@ export default ((props: any) => (
                             </p>
                             <footer className="blockquote-footer">Simon Law, Staff Software Engineer, Quantcast</footer>
                             <div className="d-flex justify-content-center my-4">
-                                <img src="/external-logos/quantcast-logo.svg" width="110px" alt="Cloudflare" />
+                                <a href="/case-studies/quantcast-large-scale-refactoring" className="btn">
+                                    <img src="/external-logos/quantcast-logo.svg" width="110px" alt="Quantcast" />
+                                </a>
                             </div>
                         </blockquote>
                     </div>
@@ -193,6 +199,22 @@ export default ((props: any) => (
 
             <ContentSection id="streamline-code-reuse" className="py-4">
                 <div className="row justify-content-center pt-md-4">
+                    <div className="col-lg-6 text-center">
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
+                            <p>
+                                If I’m developing code for a library that might draw charts, for example, we don’t want
+                                30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
+                                find other chart examples, and simply copy the code. This saves us time and ensures
+                                consistency.
+                            </p>
+                            <footer className="blockquote-footer">Joseph Majesky, Software Engineer, FactSet</footer>
+                            <div className="d-flex justify-content-center my-4">
+                                <a href="/case-studies/factset-migrates-from-perforce-to-github" className="btn">
+                                    <img src="/external-logos/factset-logo.svg" width="110px" alt="FactSet" />
+                                </a>
+                            </div>
+                        </blockquote>
+                    </div>
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Streamline code reuse</h2>
                         <h5>Stop wasting time rewriting code.</h5>
@@ -215,23 +237,9 @@ export default ((props: any) => (
                             </li>
                             <li>Add a code monitor to alert you of commits using an out-of-date library</li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
-                    </div>
-                    <div className="col-lg-6 text-center">
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
-                            <p>
-                                If I’m developing code for a library that might draw charts, for example, we don’t want
-                                30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
-                                find other chart examples, and simply copy the code. This saves us time and ensures
-                                consistency.
-                            </p>
-                            <footer className="blockquote-footer">Joseph Majesky, Software Engineer, FactSet</footer>
-                            <div className="d-flex justify-content-center my-4">
-                                <img src="/external-logos/factset-logo.svg" width="110px" alt="Cloudflare" />
-                            </div>
-                        </blockquote>
                     </div>
                 </div>
             </ContentSection>
@@ -262,7 +270,7 @@ export default ((props: any) => (
                             </li>
                             <li>Efficiently tackle tech debt from legacy systems and acquisitions</li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -275,7 +283,9 @@ export default ((props: any) => (
                             </p>
                             <footer className="blockquote-footer">Justin Phillips, Software Engineer, Lyft</footer>
                             <div className="d-flex justify-content-center my-4">
-                                <img src="/external-logos/lyft-logo.svg" width="110px" alt="Cloudflare" />
+                                <a href="/case-studies/lyft-monolith-to-microservices" className="btn">
+                                    <img src="/external-logos/lyft-logo.svg" width="110px" alt="Lyft" />
+                                </a>
                             </div>
                         </blockquote>
                     </div>
