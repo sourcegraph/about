@@ -72,7 +72,7 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
                                 <p className="small-font">
                                     Or,{' '}
                                     <a
-                                        href="https://sourcegraph.com/sign-up"
+                                        href="https://sourcegraph.com/sign-up?_ga=2.155066808.1628120401.1642532503-600077800.1642532503&showEmail=true"
                                         title="continue with email"
                                         className="btn"
                                     >
