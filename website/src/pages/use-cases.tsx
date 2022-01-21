@@ -36,7 +36,10 @@ export default ((props: any) => (
                             See how customers use Sourcegraph to
                         </h2>
                         <div className="list-group">
-                            <Link to="#find-and-fix-security-vulnerabilities" className="list-group-item list-group-item-action">
+                            <Link
+                                to="#find-and-fix-security-vulnerabilities"
+                                className="list-group-item list-group-item-action"
+                            >
                                 Find and fix security vulnerabilities <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#enhance-developer-onboarding" className="list-group-item list-group-item-action">
