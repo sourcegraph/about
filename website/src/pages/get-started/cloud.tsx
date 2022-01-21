@@ -10,19 +10,17 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
             location={props.location}
             meta={{
                 title: 'Get Started with Sourcegraph Cloud',
-                description: 'Search across your repositories and the open-source search with Sourcegraph Cloud. No technical setup is required. Sign up for free.',
+                description:
+                    'Search across your repositories and the open-source search with Sourcegraph Cloud. No technical setup is required. Sign up for free.',
             }}
             hideFooter={true}
             hideGetStartedButton={true}
         >
-        	<div className="cloud-page">
+            <div className="cloud-page">
                 <div className="row bg-gradient-blue-green">
                     <div className="col-lg-6 column">
                         <div className="original-container">
-                            <a
-                                className="btn back-link"
-                                href="/get-started"
-                            >
+                            <a className="btn back-link" href="/get-started">
                                 <ArrowLeftIcon />
                                 <span>Deployment Options</span>
                             </a>
@@ -34,7 +32,7 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
                         </div>
                     </div>
 
-                	<div className="col-lg-6 column">
+                    <div className="col-lg-6 column">
                         <div className="new-container">
                             <div className="bg-white login-section">
                                 <h2 className="get-started-page__search-headings">Search open source code</h2>
@@ -97,7 +95,7 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
                     </div>
                 </div>
             </div>
-		</Layout>
+        </Layout>
     )
 }
 

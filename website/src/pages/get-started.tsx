@@ -37,9 +37,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             column = targetNode
         } else if (targetNode.parentNode.id == 'sg-self-hosted') {
             column = targetNode.parentNode
-        } else if (
-            targetNode.parentNode.parentNode.id == 'sg-self-hosted'
-        ) {
+        } else if (targetNode.parentNode.parentNode.id == 'sg-self-hosted') {
             column = targetNode.parentNode.parentNode
         }
 
@@ -180,10 +178,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                     Sign in
                                 </a>
                             </p>
-                            <a
-                                className="btn btn-primary temporary my-2"
-                                href="/get-started/cloud"
-                            >
+                            <a className="btn btn-primary temporary my-2" href="/get-started/cloud">
                                 Get started for free <ArrowRightIcon className="mobileIcon" />
                             </a>
                         </div>
