@@ -43,7 +43,10 @@ That's why we are introducing [Batch Changes on forks](https://docs.sourcegraph.
 
 We're excited to introduce a new fuzzy file finder which can help you quickly open a file from your repository. The keyboard shortcut to activate it is Cmd+K on macOS, or Ctrl+K on Linux/Windows. Note that it will only activate when you're on repository-related pages, such as the repository overview page for example.
 
-<img class="blog-image" title="Fuzzy finder" alt="An example of using fuzzy finder to navigate to test files within the sourcegraph/sourcegraph repo." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.36/fuzzyfinder.gif">
+<video class="blog-image" title="Fuzzy finder" alt="An example of using fuzzy finder to navigate to test files within the sourcegraph/sourcegraph repo." autoplay muted playsinline>
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.36/fuzzy-file-finder.webm" type="video/webm">
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.36/fuzzy-file-finder.mp4" type="video/mp4">
+</video>
 
 ## Document your code searches with Notebooks
 
