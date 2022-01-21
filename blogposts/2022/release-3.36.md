@@ -47,14 +47,14 @@ We're excited to introduce a new fuzzy file finder which can help you quickly op
 
 ## Document your code searches with Notebooks
 
-We're excited to announce that [Notebooks](https://sourcegraph.com/notebooks) have moved out of Experimental and into Beta! Notebooks are a great way to document code and codebases to onboard new team members, keep track of bug resolutions, or record search examples to share with teammates. Recently, we published a public [Notebook](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) to identify log4j dependencies. Notebooks are shareable, and you can star ones you find useful to keep track of them or to help others find useful Notebooks.
+We're excited to announce that [Notebooks](https://sourcegraph.com/notebooks) have progressed from Experimental to Beta! Notebooks are a great way to document code and codebases to onboard new team members, keep track of bug resolutions, or record search examples to share with teammates. Recently, we published a public [Notebook](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) to identify [log4j dependencies](https://about.sourcegraph.com/blog/log4j-log4shell-0-day/). Notebooks are shareable, and you can star ones you find useful to keep track of them or to help others find useful Notebooks.
 
-To try them out, make sure Notebooks are enabled in your settings (by setting `showSearchNotebook` to `true` under the `experimentalFeatures` property). Once you have Notebooks enabled, go ahead and [explore](https://sourcegraph.com/notebooks?tab=explore) some public Notebooks.
+To try them out, make sure Notebooks are enabled in your settings by setting `showSearchNotebook` to `true` under the `experimentalFeatures` property. Once you have Notebooks enabled, go ahead and [explore some public Notebooks](https://sourcegraph.com/notebooks?tab=explore).
 
 ## Scope searches on monorepos and large codebases with query-based search contexts
 
-Search contexts can now be defined with a restricted search query as an alternative to a specific list of repositories and revisions, a new feature we're launching in Beta.
+Search contexts can now be defined with a restricted search query as an alternative to a specific list of repositories and revisions; a new feature we're launching in Beta.
 
 What does this mean for users? First, this provides search context support for monorepos. Second, and just as impactful, users with thousands of repositories and different teams or sub-organizations can easily define dynamic search contexts with a query. No more specifying dozens or hundreds of repositories and keeping the list up to date.
 
-You can also now create new search contexts right from the search results page. Once you've enabled query-based search contexts, you can run a search and click the "Create context" button to turn that query into a search context. Check the [docs](https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts) to learn more about how to enable and use query-based search contexts.
+You can also now create new search contexts right from the search results page. Once you've enabled query-based search contexts, you can run a search and click the "Create context" button to turn that query into a search context. Check the [search contexts docs](https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts) to learn more about how to enable and use query-based search contexts.
