@@ -42,7 +42,10 @@ export default ((props: any) => (
                             >
                                 Find and fix security vulnerabilities <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#accelerate-developer-onboarding" className="list-group-item list-group-item-action">
+                            <Link
+                                to="#accelerate-developer-onboarding"
+                                className="list-group-item list-group-item-action"
+                            >
                                 Accelerate developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#resolve-incidents-faster" className="list-group-item list-group-item-action">
@@ -83,7 +86,11 @@ export default ((props: any) => (
                             </li>
                             <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
+                        <Link
+                            to="https://info.sourcegraph.com/demo-request"
+                            title="Request a demo"
+                            className="btn btn-outline-primary"
+                        >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -95,8 +102,15 @@ export default ((props: any) => (
                             </p>
                             <footer className="blockquote-footer">David Haynes, Security Engineer at Cloudflare</footer>
                             <div className="d-flex justify-content-center my-4">
-                                <a href="/case-studies/cloudflare-accelerates-debugging-and-improves-security" className="btn">
-                                    <img src="/external-logos/cloudflare-color-logo.svg" width="110px" alt="Cloudflare" />
+                                <a
+                                    href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
+                                    className="btn"
+                                >
+                                    <img
+                                        src="/external-logos/cloudflare-color-logo.svg"
+                                        width="110px"
+                                        alt="Cloudflare"
+                                    />
                                 </a>
                             </div>
                         </blockquote>
@@ -129,9 +143,9 @@ export default ((props: any) => (
                             knowledge sharing.
                         </h5>
                         <p>
-                            Onboard teammates faster and improve dev velocity by making it easy to search and find
-                            code and context. Unlike splintered tooling and knowledge management systems that require
-                            manual interaction and upkeep, Sourcegraph helps devs self-serve.
+                            Onboard teammates faster and improve dev velocity by making it easy to search and find code
+                            and context. Unlike splintered tooling and knowledge management systems that require manual
+                            interaction and upkeep, Sourcegraph helps devs self-serve.
                         </p>
                         <ul>
                             <li>
@@ -143,7 +157,11 @@ export default ((props: any) => (
                             </li>
                             <li>Get answers faster with shareable links to specific code</li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
+                        <Link
+                            to="https://info.sourcegraph.com/demo-request"
+                            title="Request a demo"
+                            className="btn btn-outline-primary"
+                        >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -165,8 +183,8 @@ export default ((props: any) => (
                         </p>
                         <ul>
                             <li>
-                                Quickly understand all context & dependencies around the codebase to self-serve or involve
-                                relevant teams
+                                Quickly understand all context & dependencies around the codebase to self-serve or
+                                involve relevant teams
                             </li>
                             <li>
                                 Refactor code to replace insecure functions, update vulnerable packages, or modify
@@ -177,7 +195,11 @@ export default ((props: any) => (
                                 search notebook
                             </li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
+                        <Link
+                            to="https://info.sourcegraph.com/demo-request"
+                            title="Request a demo"
+                            className="btn btn-outline-primary"
+                        >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -240,7 +262,11 @@ export default ((props: any) => (
                             </li>
                             <li>Add a code monitor to alert you of commits using an out-of-date library</li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
+                        <Link
+                            to="https://info.sourcegraph.com/demo-request"
+                            title="Request a demo"
+                            className="btn btn-outline-primary"
+                        >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -273,7 +299,11 @@ export default ((props: any) => (
                             </li>
                             <li>Efficiently tackle tech debt from legacy systems and acquisitions</li>
                         </ul>
-                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo" className="btn btn-outline-primary">
+                        <Link
+                            to="https://info.sourcegraph.com/demo-request"
+                            title="Request a demo"
+                            className="btn btn-outline-primary"
+                        >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
