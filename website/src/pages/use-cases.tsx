@@ -2,7 +2,6 @@ import { Link } from 'gatsby'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
-import { Helmet } from 'react-helmet'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
@@ -16,9 +15,9 @@ export default ((props: any) => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Sourcegraph - Customers',
-            description: 'See how our customers use Sourcegraph to solve big problems',
-            image: '/favicon.png',
+            title: 'Use Cases | Sourcegraph',
+            description: 'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
+            image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
         heroAndHeaderClassName="use-cases-page__header-and-hero"
         hero={
@@ -39,14 +38,14 @@ export default ((props: any) => (
                             <Link to="#remediate-vulnerabilities" className="list-group-item list-group-item-action">
                                 Remediate vulnerabilities <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
+                            <Link to="#enhance-developer-onboarding" className="list-group-item list-group-item-action">
+                                Enhance developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
+                            </Link>
                             <Link to="#fix-incidents-faster" className="list-group-item list-group-item-action">
                                 Fix incidents faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#streamline-code-reuse" className="list-group-item list-group-item-action">
                                 Streamline code reuse <ArrowRightIcon className="icon-inline ml-1" />
-                            </Link>
-                            <Link to="#accelerate-developer-productivity" className="list-group-item list-group-item-action">
-                                Accelerate developer productivity <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#boost-code-health" className="list-group-item list-group-item-action">
                                 Boost code health <ArrowRightIcon className="icon-inline ml-1" />
@@ -57,16 +56,6 @@ export default ((props: any) => (
             </div>
         }
     >
-        <Helmet>
-            <title>{title}</title>
-            <meta name="twitter:title" content={title} />
-            <meta property="og:title" content={title} />
-            <meta name="twitter:description" content={desc} />
-            <meta property="og:description" content={desc} />
-            <meta name="description" content={desc} />
-            <link rel="icon" type="image/png" href="/favicon.png" />
-        </Helmet>
-
         <div className="use-cases-page">
             <CustomerLogosSectionAnimated showButton={false} showSection={true} className="pt-5" />
 
@@ -79,7 +68,7 @@ export default ((props: any) => (
                         <h5>Find, fix, and track vulnerable code quickly across your entire codebase.</h5>
                         <p>
                             You can’t fix what you can’t find. Remediate vulnerabilities with confidence knowing you 
-                            ound every instance of affected code. Track your remediation initiatives to completion 
+                            found every instance of affected code. Track your remediation initiatives to completion 
                             with automated fixes and pull requests. With Sourcegraph, timely resolution is a search away.
                         </p>
                         <ul>
@@ -93,10 +82,10 @@ export default ((props: any) => (
                                 </Link>
                             </li>
                             <li>
-                                Alert for known vulnerabilities and risky code changes with Code Monitoring
+                                Alert for known vulnerabilities and risky code changes with code monitoring
                             </li>
                         </ul>
-                        <Link to="/contact/request-demo" title="Request a demo">
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -109,6 +98,48 @@ export default ((props: any) => (
                             <footer className="blockquote-footer">David Haynes, Security Engineer at Cloudflare</footer>
                             <div className="d-flex justify-content-center my-4">
                                 <img src="/external-logos/cloudflare-logo.svg" width="110px" alt="Cloudflare" />
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </ContentSection>
+
+            <hr className="mt-8 mb-6" />
+
+            <ContentSection id="enhance-developer-onboarding" className="py-4">
+                <div className="row justify-content-center pt-md-4">
+                    <div className="col-lg-6">
+                        <h2 className="display-3 font-weight-bold mb-3">Enhance developer onboarding</h2>
+                        <h5>Decrease time to first commit with self-serve onboarding, codebase exploration, and knowledge sharing.</h5>
+                        <p>
+                            Onboard new teammates faster and improve dev velocity by making it easy to search and find code and context. 
+                            Unlike splintered tooling and knowledge management systems that require manual interaction and upkeep, 
+                            Sourcegraph helps devs self-serve.
+                        </p>
+                        <ul>
+                            <li>
+                                Search across all repositories and multiple branches to find answers in staging, dev, and production environments
+                            </li>
+                            <li>
+                                Navigate large codebases with definitions and references with advanced Code Intelligence
+                            </li>
+                            <li>
+                                Get answers faster with shareable links to specific code
+                            </li>
+                        </ul>
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
+                            Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                        </Link>
+                    </div>
+                    <div className="col-lg-6 text-center">
+                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-8">
+                            <p>
+                                For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track 
+                                down where code lives, and self-service during their investigations.
+                            </p>
+                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
+                            <div className="d-flex justify-content-center my-4">
+                                <img src="/external-logos/convoy-logo.svg" width="110px" alt="Cloudflare" />
                             </div>
                         </blockquote>
                     </div>
@@ -133,13 +164,13 @@ export default ((props: any) => (
                                 Quickly understand all context & dependencies around the code to self-serve or involve relevant teams
                             </li>
                             <li>
-                                Refactor code to replace insecure functions, update vulnerable packages, or modify container configurations across hundreds of repositories.
+                                Refactor code to replace insecure functions, update vulnerable packages, or modify container configurations across hundreds of repositories
                             </li>
                             <li>
                                 Document your solution by sharing links to searches and files and recording work in a search notebook
                             </li>
                         </ul>
-                        <Link to="/contact/request-demo" title="Request a demo">
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -187,7 +218,7 @@ export default ((props: any) => (
                                 Add a code monitor to alert you of commits using an out-of-date library
                             </li>
                         </ul>
-                        <Link to="/contact/request-demo" title="Request a demo">
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -209,48 +240,6 @@ export default ((props: any) => (
 
             <hr className="mt-8 mb-6" />
 
-            <ContentSection id="accelerate-developer-productivity" className="py-4">
-                <div className="row justify-content-center pt-md-4">
-                    <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Accelerate developer productivity</h2>
-                        <h5>Decrease time to first commit with self-serve onboarding, codebase exploration, and knowledge sharing.</h5>
-                        <p>
-                            Onboard new teammates faster and improve dev velocity by making it easy to search and find code and context. 
-                            Unlike splintered tooling and knowledge management systems that require manual interaction and upkeep, 
-                            Sourcegraph helps devs self-serve.
-                        </p>
-                        <ul>
-                            <li>
-                                Search across all repositories, multiple branches to find answers in staging, dev, and production environments
-                            </li>
-                            <li>
-                                Navigate large codebases with definitions and references with advanced Code Intelligence
-                            </li>
-                            <li>
-                                Get answers faster with shareable links to specific code
-                            </li>
-                        </ul>
-                        <Link to="/contact/request-demo" title="Request a demo">
-                            Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
-                    </div>
-                    <div className="col-lg-6 text-center">
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-8">
-                            <p>
-                                For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track 
-                                down where code lives, and self-service during their investigations.
-                            </p>
-                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
-                            <div className="d-flex justify-content-center my-4">
-                                <img src="/external-logos/convoy-logo.svg" width="110px" alt="Cloudflare" />
-                            </div>
-                        </blockquote>
-                    </div>
-                </div>
-            </ContentSection>
-
-            <hr className="mt-8 mb-6" />
-
             <ContentSection id="boost-code-health" className="py-4">
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6">
@@ -259,7 +248,7 @@ export default ((props: any) => (
                         <p>
                             Engineering teams need to monitor code health across their entire codebase to track and measure code quality 
                             consistently. Sourcegraph helps teams figure out the components of code health they have all agreed on and work 
-                            towards a healthier code.
+                            towards a healthier codebase.
                         </p>
                         <ul>
                             <li>
@@ -273,7 +262,7 @@ export default ((props: any) => (
                                 Efficiently tackle tech debt from legacy systems and acquisitions
                             </li>
                         </ul>
-                        <Link to="/contact/request-demo" title="Request a demo">
+                        <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
                     </div>
@@ -294,7 +283,7 @@ export default ((props: any) => (
 
             <hr className="my-8"/>
 
-            <TrySourcegraph className="mb-5"/>/>
+            <TrySourcegraph className="mb-5" />
         </div>
     </Layout>
 )) as React.FunctionComponent<any>
