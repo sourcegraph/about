@@ -35,14 +35,14 @@ export default ((props: any) => (
                             See how customers use Sourcegraph to
                         </h2>
                         <div className="list-group">
-                            <Link to="#remediate-vulnerabilities" className="list-group-item list-group-item-action">
-                                Remediate vulnerabilities <ArrowRightIcon className="icon-inline ml-1" />
+                            <Link to="#find-and-fix-security-vulnerabilities" className="list-group-item list-group-item-action">
+                                Find and fix security vulnerabilities <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#enhance-developer-onboarding" className="list-group-item list-group-item-action">
                                 Enhance developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#fix-incidents-faster" className="list-group-item list-group-item-action">
-                                Fix incidents faster <ArrowRightIcon className="icon-inline ml-1" />
+                            <Link to="#resolve-incidents-faster" className="list-group-item list-group-item-action">
+                                Resolve incidents faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link to="#streamline-code-reuse" className="list-group-item list-group-item-action">
                                 Streamline code reuse <ArrowRightIcon className="icon-inline ml-1" />
@@ -61,10 +61,10 @@ export default ((props: any) => (
 
             <hr className="mt-8 mb-6" />
 
-            <ContentSection id="remediate-vulnerabilities" className="py-4">
+            <ContentSection id="find-and-fix-security-vulnerabilities" className="py-4">
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Remediate vulnerabilities</h2>
+                        <h2 className="display-3 font-weight-bold mb-3">Find and fix security vulnerabilities</h2>
                         <h5>Find, fix, and track vulnerable code quickly across your entire codebase.</h5>
                         <p>
                             You can’t fix what you can’t find. Remediate vulnerabilities with confidence knowing you 
@@ -148,10 +148,10 @@ export default ((props: any) => (
 
             <hr className="mt-8 mb-6" />
 
-            <ContentSection id="fix-incidents-faster" className="py-4">
+            <ContentSection id="resolve-incidents-faster" className="py-4">
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Fix incidents faster</h2>
+                        <h2 className="display-3 font-weight-bold mb-3">Resolve incidents faster</h2>
                         <h5>Identify the root cause in code and fix the issue everywhere.</h5>
                         <p>
                             Every minute matters when responding to a business-critical incident. Downtime = revenue lost. 
