@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 3.36 release'
 publishDate: 2022-01-21T10:00-07:00
-description: 'Sourcegraph 3.36 introduces Notebooks and query-based search contexts in Beta, a new file fuzzy finder, and the ability to push branches from Batch Changes to forks.'
+description: 'Sourcegraph 3.36 introduces the ability to push branches from Batch Changes to forks, a new file fuzzy finder, Notebooks for code search documentation, and query-based search contexts.'
 tags: [blog, release]
 slug: 'release/3.36'
 published: true
@@ -33,7 +33,7 @@ changelogItems:
 
 Sourcegraph 3.36 is now available! Here are some highlights from this release:
 
-## Push new branches from Batch Changes to forks
+## Users with restricted repository access can now push new branches from Batch Changes to forks
 
 Before this release, creating a batch change required you (or your service-account) to have write-access to every target repository. This was incompatible with having tight repository access control, and was impractical at a large scale. We heard from customers that they wanted all users to be able to create batch changes on all repositories, without them needing overly broad write permissions.
 
