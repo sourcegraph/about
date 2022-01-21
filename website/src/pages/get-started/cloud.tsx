@@ -1,34 +1,40 @@
 import * as React from 'react'
-import { ContentSection } from '../components/content/ContentSection'
-import Layout from '../components/Layout'
+import Layout from '../../components/Layout'
+import { ContentSection } from '../../components/content/ContentSection'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 
-export const CloudPage: React.FunctionComponent PageProps> = props => {
-	return (
+export const CloudPage: React.FunctionComponent<PageProps> = props => {
+    return (
         <Layout
             location={props.location}
             meta={{
-                title: 'Choose Your Deployment Model | Get Started with Sourcegraph',
-                description:
-                    "From Sourcegraph Self-hosted to Sourcegraph Cloud, choose the deployment model that's best for you and get started for free today. ",
-                image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+                title: 'Get Started with Sourcegraph Cloud',
+                description: 'Search across your repositories and the open-source search with Sourcegraph Cloud. No technical setup is required. Sign up for free.',
             }}
-            heroAndHeaderClassName="get-started-page__hero-and-header"
-            hero={
-                <div className="row">
-                    <div className="col-lg-9 column">
-                        <h1 className="display-1">What's best for you?</h1>
-                        <p className="subTitle">
-                            From Amazon to Uber, the world’s best developers use Sourcegraph every day.
-                        </p>
-                    </div>
-                </div>
-            }
             hideFooter={true}
             hideGetStartedButton={true}
         >
-        	<div className="cta-container cloud-page">
-                <div className="row">
-                	<div className="col-lg-6 column bg-gradient-blue-green">
+        	<div className="cloud-page">
+                <div className="row bg-gradient-blue-green">
+                    <div className="col-lg-6 column">
+                        <div className="original-container">
+                            <a
+                                className="btn back-link"
+                                href="/get-started"
+                            >
+                                <ArrowLeftIcon />
+                                <span>Deployment Options</span>
+                            </a>
+                            <h1 className="title">Sourcegraph Cloud</h1>
+                            <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
+                            <div className="small-title">Best For</div>
+                            <p>Individual developers (small teams coming soon)</p>
+                            <p>Search across your repositories and the open-source universe.</p>
+                        </div>
+                    </div>
+
+                	<div className="col-lg-6 column">
                         <div className="new-container">
                             <div className="bg-white login-section">
                                 <h2 className="get-started-page__search-headings">Search open source code</h2>
@@ -43,7 +49,7 @@ export const CloudPage: React.FunctionComponent PageProps> = props => {
                                 </h2>
                                 <a
                                     href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=%2Fwelcome"
-                                    className="btn github"
+                                    className="btn github custom-btn"
                                 >
                                     <img
                                         src="../external-logos/GitHub-Mark-Light-32px.png"
@@ -55,7 +61,7 @@ export const CloudPage: React.FunctionComponent PageProps> = props => {
                                 </a>
                                 <a
                                     href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A013395a61a639f4c3eb3668b89c96039637a86ebb6831f1e141627df3d55384d&redirect=%2Fwelcome"
-                                    className="btn gitlab"
+                                    className="btn gitlab custom-btn"
                                 >
                                     <img
                                         src="../external-logos/gitlab-mark.svg"

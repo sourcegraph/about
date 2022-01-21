@@ -7,7 +7,6 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
     const buttonRef = React.useRef()
     const newContainerLeftRef = React.useRef()
-    const newContainerRightRef = React.useRef()
     const backBtn = React.useRef()
 
     const expandColumn = e => {
@@ -27,19 +26,6 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             const cloudSection = document.querySelector('#sg-cloud')
             cloudSection.classList.toggle('d-none')
             cloudSection.classList.add('high')
-        } else {
-            // Toggle sg-cloud column
-            column.classList.remove('d-none')
-            column.classList.add('expanded')
-            column.classList.replace('col-lg-6', 'col-lg-12')
-            // Toggle New container
-            newContainerRightRef.current.classList.replace('d-none', 'd-inline-block')
-            // Toggle arrow image
-            buttonRef.current.classList.toggle('d-none')
-            // Toggle other column
-            const selfHostedSection = document.querySelector('#sg-self-hosted')
-            selfHostedSection.classList.toggle('d-none')
-            selfHostedSection.classList.add('high')
         }
     }
 
@@ -47,13 +33,12 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
         const targetNode = e.target.parentNode.parentNode
         let column
 
-        if (targetNode.id == 'sg-self-hosted' || targetNode.id == 'sg-cloud') {
+        if (targetNode.id == 'sg-self-hosted') {
             column = targetNode
-        } else if (targetNode.parentNode.id == 'sg-self-hosted' || targetNode.parentNode.id == 'sg-cloud') {
+        } else if (targetNode.parentNode.id == 'sg-self-hosted') {
             column = targetNode.parentNode
         } else if (
-            targetNode.parentNode.parentNode.id == 'sg-self-hosted' ||
-            targetNode.parentNode.parentNode.id == 'sg-cloud'
+            targetNode.parentNode.parentNode.id == 'sg-self-hosted'
         ) {
             column = targetNode.parentNode.parentNode
         }
@@ -74,21 +59,6 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             // To fix issue that the sg-cloud section is not high enough when it gets visible when going back to the delpoyment methods
             setTimeout(() => {
                 cloudSection.classList.remove('high')
-            }, 0)
-        } else {
-            // Toggle sg-cloud column
-            column.classList.remove('expanded')
-            column.classList.replace('col-lg-12', 'col-lg-6')
-            // Toggle New container
-            newContainerRightRef.current.classList.replace('d-inline-block', 'd-none')
-            // Toggle arrow image
-            buttonRef.current.classList.toggle('d-none')
-            // Toggle other column
-            const selfHostedSection = document.querySelector('#sg-self-hosted')
-            selfHostedSection.classList.toggle('d-none')
-            // To fix issue that the sg-cloud section is not high enough when it gets visible when going back to the delpoyment methods
-            setTimeout(() => {
-                selfHostedSection.classList.remove('high')
             }, 0)
         }
     }
@@ -135,7 +105,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 <ArrowLeftIcon />
                                 <span>Deployment Options</span>
                             </div>
-                            <h1 className="display-2 title">Sourcegraph Self-Hosted</h1>
+                            <h1 className="title">Sourcegraph Self-Hosted</h1>
                             <span className="badge">
                                 <img src="../star.svg" />
                                 <span>Most Popular</span>
@@ -210,73 +180,12 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                     Sign in
                                 </a>
                             </p>
-                            <span
+                            <a
                                 className="btn btn-primary temporary my-2"
-                                onClick={expandColumn}
-                                ref={node => (buttonRef.current = node)}
+                                href="/get-started/cloud"
                             >
                                 Get started for free <ArrowRightIcon className="mobileIcon" />
-                            </span>
-                        </div>
-
-                        <div className="new-container d-none" ref={node => (newContainerRightRef.current = node)}>
-                            <div className="bg-white login-section">
-                                <h2 className="get-started-page__search-headings">Search open source code</h2>
-                                <p>No account required.</p>
-                                <a href="https://sourcegraph.com/search" className="btn btn-primary">
-                                    Start searching now <ArrowRightIcon />
-                                </a>
-                            </div>
-                            <div className="bg-white mt-5 login-section">
-                                <h2 className="get-started-page__search-headings">
-                                    Create a free Cloud account to search your private code
-                                </h2>
-                                <a
-                                    href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=%2Fwelcome"
-                                    className="btn github"
-                                >
-                                    <img
-                                        src="../external-logos/GitHub-Mark-Light-32px.png"
-                                        width="30"
-                                        height="30"
-                                        className="mr-3"
-                                    />
-                                    Continue with GitHub
-                                </a>
-                                <a
-                                    href="https://sourcegraph.com/.auth/gitlab/login?pc=https%3A%2F%2Fgitlab.com%2F%3A%3A013395a61a639f4c3eb3668b89c96039637a86ebb6831f1e141627df3d55384d&redirect=%2Fwelcome"
-                                    className="btn gitlab"
-                                >
-                                    <img
-                                        src="../external-logos/gitlab-mark.svg"
-                                        width="32"
-                                        height="32"
-                                        className="mr-3"
-                                    />
-                                    Continue with GitLab
-                                </a>
-                                <p className="small-font">
-                                    Or,{' '}
-                                    <a
-                                        href="https://sourcegraph.com/sign-up"
-                                        title="continue with email"
-                                        className="btn"
-                                    >
-                                        continue with email
-                                    </a>
-                                </p>
-                                <hr />
-                                <p className="small-font">
-                                    Already have an account?{' '}
-                                    <a
-                                        href="https://sourcegraph.com/sign-in"
-                                        title="Search public code with Sourcegraph Cloud"
-                                        className="btn"
-                                    >
-                                        Log in
-                                    </a>
-                                </p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
