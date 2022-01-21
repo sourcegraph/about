@@ -16,7 +16,8 @@ export default ((props: any) => (
         location={props.location}
         meta={{
             title: 'Use Cases | Sourcegraph',
-            description: 'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
+            description:
+                'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
         heroAndHeaderClassName="use-cases-page__header-and-hero"
@@ -67,23 +68,17 @@ export default ((props: any) => (
                         <h2 className="display-3 font-weight-bold mb-3">Remediate vulnerabilities</h2>
                         <h5>Find, fix, and track vulnerable code quickly across your entire codebase.</h5>
                         <p>
-                            You can’t fix what you can’t find. Remediate vulnerabilities with confidence knowing you 
-                            found every instance of affected code. Track your remediation initiatives to completion 
-                            with automated fixes and pull requests. With Sourcegraph, timely resolution is a search away.
+                            You can’t fix what you can’t find. Remediate vulnerabilities with confidence knowing you
+                            found every instance of affected code. Track your remediation initiatives to completion with
+                            automated fixes and pull requests. With Sourcegraph, timely resolution is a search away.
                         </p>
                         <ul>
-                            <li>
-                                Reduce time to recovery with a single search
-                            </li>
+                            <li>Reduce time to recovery with a single search</li>
                             <li>
                                 Automate fixing, merging, and deploying changes with{' '}
-                                <Link to="/batch-changes/">
-                                    Batch Changes
-                                </Link>
+                                <Link to="/batch-changes/">Batch Changes</Link>
                             </li>
-                            <li>
-                                Alert for known vulnerabilities and risky code changes with code monitoring
-                            </li>
+                            <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                         </ul>
                         <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
@@ -92,8 +87,8 @@ export default ((props: any) => (
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
                             <p>
-                                [Sourcegraph] is the best way to prove we’re not vulnerable to a particular CVE, if and when we get 
-                                asked by an auditor.
+                                [Sourcegraph] is the best way to prove we’re not vulnerable to a particular CVE, if and
+                                when we get asked by an auditor.
                             </p>
                             <footer className="blockquote-footer">David Haynes, Security Engineer at Cloudflare</footer>
                             <div className="d-flex justify-content-center my-4">
@@ -110,22 +105,24 @@ export default ((props: any) => (
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Enhance developer onboarding</h2>
-                        <h5>Decrease time to first commit with self-serve onboarding, codebase exploration, and knowledge sharing.</h5>
+                        <h5>
+                            Decrease time to first commit with self-serve onboarding, codebase exploration, and
+                            knowledge sharing.
+                        </h5>
                         <p>
-                            Onboard new teammates faster and improve dev velocity by making it easy to search and find code and context. 
-                            Unlike splintered tooling and knowledge management systems that require manual interaction and upkeep, 
-                            Sourcegraph helps devs self-serve.
+                            Onboard new teammates faster and improve dev velocity by making it easy to search and find
+                            code and context. Unlike splintered tooling and knowledge management systems that require
+                            manual interaction and upkeep, Sourcegraph helps devs self-serve.
                         </p>
                         <ul>
                             <li>
-                                Search across all repositories and multiple branches to find answers in staging, dev, and production environments
+                                Search across all repositories and multiple branches to find answers in staging, dev,
+                                and production environments
                             </li>
                             <li>
                                 Navigate large codebases with definitions and references with advanced Code Intelligence
                             </li>
-                            <li>
-                                Get answers faster with shareable links to specific code
-                            </li>
+                            <li>Get answers faster with shareable links to specific code</li>
                         </ul>
                         <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
@@ -134,8 +131,8 @@ export default ((props: any) => (
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-8">
                             <p>
-                                For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track 
-                                down where code lives, and self-service during their investigations.
+                                For our new developers, Sourcegraph has been invaluable to get to know the repository
+                                structure, to track down where code lives, and self-service during their investigations.
                             </p>
                             <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
                             <div className="d-flex justify-content-center my-4">
@@ -154,20 +151,23 @@ export default ((props: any) => (
                         <h2 className="display-3 font-weight-bold mb-3">Fix incidents faster</h2>
                         <h5>Identify the root cause in code and fix the issue everywhere.</h5>
                         <p>
-                            Every minute matters when responding to a business-critical incident. Downtime = revenue lost. 
-                            Sourcegraph helps development teams identify the root cause in code, understand why the problem 
-                            occurred and its potential impact on other services, fix the issue everywhere so it won't reoccur, 
-                            and assure incident responders that all holes are plugged.
+                            Every minute matters when responding to a business-critical incident. Downtime = revenue
+                            lost. Sourcegraph helps development teams identify the root cause in code, understand why
+                            the problem occurred and its potential impact on other services, fix the issue everywhere so
+                            it won't reoccur, and assure incident responders that all holes are plugged.
                         </p>
                         <ul>
                             <li>
-                                Quickly understand all context & dependencies around the code to self-serve or involve relevant teams
+                                Quickly understand all context & dependencies around the code to self-serve or involve
+                                relevant teams
                             </li>
                             <li>
-                                Refactor code to replace insecure functions, update vulnerable packages, or modify container configurations across hundreds of repositories
+                                Refactor code to replace insecure functions, update vulnerable packages, or modify
+                                container configurations across hundreds of repositories
                             </li>
                             <li>
-                                Document your solution by sharing links to searches and files and recording work in a search notebook
+                                Document your solution by sharing links to searches and files and recording work in a
+                                search notebook
                             </li>
                         </ul>
                         <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
@@ -177,8 +177,8 @@ export default ((props: any) => (
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
                             <p>
-                                Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph 
-                                returns all search results, it doesn’t drop or elide them.
+                                Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything:
+                                Sourcegraph returns all search results, it doesn’t drop or elide them.
                             </p>
                             <footer className="blockquote-footer">Simon Law, Staff Software Engineer, Quantcast</footer>
                             <div className="d-flex justify-content-center my-4">
@@ -197,26 +197,23 @@ export default ((props: any) => (
                         <h2 className="display-3 font-weight-bold mb-3">Streamline code reuse</h2>
                         <h5>Stop wasting time rewriting code.</h5>
                         <p>
-                            With Sourcegraph, you can find existing code libraries for reuse and avoid spending time on problems 
-                            you know a teammate already solved. This means a more secure and coherent codebase and more time for 
-                            you to spend on more interesting work. Sourcegraph makes it easy to:
+                            With Sourcegraph, you can find existing code libraries for reuse and avoid spending time on
+                            problems you know a teammate already solved. This means a more secure and coherent codebase
+                            and more time for you to spend on more interesting work. Sourcegraph makes it easy to:
                         </p>
                         <ul>
                             <li>
                                 Quickly discover code you can trust for reuse by typing your query and getting an answer
                             </li>
                             <li>
-                                Evaluate signals from multiple sources and tools to help you assess if you should use the code
+                                Evaluate signals from multiple sources and tools to help you assess if you should use
+                                the code
                             </li>
                             <li>
-                                Safely and efficiently maintain code that is being reused and easily make changes everywhere with{' '}
-                                <Link to="/batch-changes/">
-                                    Batch Changes
-                                </Link>
+                                Safely and efficiently maintain code that is being reused and easily make changes
+                                everywhere with <Link to="/batch-changes/">Batch Changes</Link>
                             </li>
-                            <li>
-                                Add a code monitor to alert you of commits using an out-of-date library
-                            </li>
+                            <li>Add a code monitor to alert you of commits using an out-of-date library</li>
                         </ul>
                         <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
@@ -225,9 +222,10 @@ export default ((props: any) => (
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
                             <p>
-                                If I’m developing code for a library that might draw charts, for example, we don’t want 30 different 
-                                ways to draw a chart at FactSet. With Sourcegraph, I can search the code to find other chart examples, 
-                                and simply copy the code. This saves us time and ensures consistency.
+                                If I’m developing code for a library that might draw charts, for example, we don’t want
+                                30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
+                                find other chart examples, and simply copy the code. This saves us time and ensures
+                                consistency.
                             </p>
                             <footer className="blockquote-footer">Joseph Majesky, Software Engineer, FactSet</footer>
                             <div className="d-flex justify-content-center my-4">
@@ -244,23 +242,25 @@ export default ((props: any) => (
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Boost code health</h2>
-                        <h5>Improve code posture with large-scale changes and track code health initiatives towards completion.</h5>
+                        <h5>
+                            Improve code posture with large-scale changes and track code health initiatives towards
+                            completion.
+                        </h5>
                         <p>
-                            Engineering teams need to monitor code health across their entire codebase to track and measure code quality 
-                            consistently. Sourcegraph helps teams figure out the components of code health they have all agreed on and work 
-                            towards a healthier codebase.
+                            Engineering teams need to monitor code health across their entire codebase to track and
+                            measure code quality consistently. Sourcegraph helps teams figure out the components of code
+                            health they have all agreed on and work towards a healthier codebase.
                         </p>
                         <ul>
                             <li>
-                                Search for and refactor references to deprecated services, libraries, URL patterns, and more across all your 
-                                repositories with confidence
+                                Search for and refactor references to deprecated services, libraries, URL patterns, and
+                                more across all your repositories with confidence
                             </li>
                             <li>
-                                Understand the impact of changes on health and find interventions for improving code health
+                                Understand the impact of changes on health and find interventions for improving code
+                                health
                             </li>
-                            <li>
-                                Efficiently tackle tech debt from legacy systems and acquisitions
-                            </li>
+                            <li>Efficiently tackle tech debt from legacy systems and acquisitions</li>
                         </ul>
                         <Link to="https://info.sourcegraph.com/demo-request" title="Request a demo">
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
@@ -269,8 +269,9 @@ export default ((props: any) => (
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-6">
                             <p>
-                                With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes 
-                                that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time.
+                                With the help of Sourcegraph, we were able to quickly look at all clients of an API and
+                                remove unused attributes that lived in different repositories, ultimately simplifying
+                                our APIs and speeding up developer iteration time.
                             </p>
                             <footer className="blockquote-footer">Justin Phillips, Software Engineer, Lyft</footer>
                             <div className="d-flex justify-content-center my-4">
@@ -281,7 +282,7 @@ export default ((props: any) => (
                 </div>
             </ContentSection>
 
-            <hr className="my-8"/>
+            <hr className="my-8" />
 
             <TrySourcegraph className="mb-5" />
         </div>
