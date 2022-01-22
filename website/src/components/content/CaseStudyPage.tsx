@@ -142,7 +142,7 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
 }> = ({
     title = 'See Sourcegraph in action.',
     description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
-    demoFormURL = '/contact/request-demo',
+    demoFormURL = 'https://info.sourcegraph.com/demo-request',
 }) => (
     <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
         <div className="container text-center pt-6">

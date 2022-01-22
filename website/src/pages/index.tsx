@@ -130,7 +130,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 </a>{' '}
                                 for up to 10 developers. To get your company to upgrade to a{' '}
                                 <Link to="/pricing">paid plan</Link>, see the{' '}
-                                <Link to="/customers">customers page</Link> (to make the case). Or{' '}
+                                <Link to="/use-cases">use cases page</Link> (to make the case). Or{' '}
                                 <a href="/contact/request-info">schedule time with us</a> for help.
                             </p>
                         </div>
