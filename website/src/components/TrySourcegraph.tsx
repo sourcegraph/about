@@ -3,7 +3,7 @@ import React from 'react'
 import { ContentSection } from './content/ContentSection'
 
 export const TrySourcegraph: React.FunctionComponent<{ demoFormURL?: string; className?: string }> = ({
-    demoFormURL = '/contact/request-demo',
+    demoFormURL = 'https://info.sourcegraph.com/demo-request',
     className = '',
 }) => (
     <ContentSection className={className}>
