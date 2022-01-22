@@ -7,10 +7,6 @@ import Layout from '../components/Layout'
 import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
 import { TrySourcegraph } from '../components/TrySourcegraph'
 
-const title = 'Sourcegraph - Customers'
-const desc =
-    'Sourcegraph helps companies of all sizes in all industries to move fast, fix things, and address security risks when building software.'
-
 export default ((props: any) => (
     <Layout
         location={props.location}
