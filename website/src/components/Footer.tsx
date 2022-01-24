@@ -33,11 +33,6 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         Sourcegraph overview (PDF)
                                     </a>
                                 </li>
-                                <li className="nav-item">
-                                    <a href="https://share.hsforms.com/1P0DMMkj6REGkZ__9GyVjxA1n7ku" target="_blank">
-                                        Free stickers!
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                         <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-3">
@@ -61,8 +56,8 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/podcast">Podcast</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://info.sourcegraph.com/emergence-of-big-code-2020-survey">
-                                        Big code survey
+                                    <a href="/dev-tools-quiz">
+                                        Dev tools quiz
                                     </a>
                                 </li>
                                 <li className="nav-item">
