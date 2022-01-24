@@ -11,7 +11,7 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
             meta={{
                 title: 'Get Started with Sourcegraph Cloud',
                 description:
-                    'Search across your repositories and the open-source search with Sourcegraph Cloud. No technical setup is required. Sign up for free.',
+                    'Search across your repositories and the open-source universe with Sourcegraph Cloud. No technical setup is required. Sign up for free.',
             }}
             hideFooter={true}
             hideGetStartedButton={true}
@@ -43,7 +43,7 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
                             </div>
                             <div className="bg-white mt-5 login-section">
                                 <h2 className="get-started-page__search-headings">
-                                    Create a free Cloud account to search your private code
+                                    Create a free Sourcegraph Cloud account to search your private code
                                 </h2>
                                 <a
                                     href="https://sourcegraph.com/.auth/github/login?pc=https%3A%2F%2Fgithub.com%2F%3A%3Ae917b2b7fa9040e1edd4&redirect=%2Fwelcome"
@@ -69,7 +69,7 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
                                     />
                                     Continue with GitLab
                                 </a>
-                                <p className="small-font">
+                                <p className="small-font my-3">
                                     Or,{' '}
                                     <a
                                         href="https://sourcegraph.com/sign-up?_ga=2.155066808.1628120401.1642532503-600077800.1642532503&showEmail=true"
@@ -78,6 +78,18 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
                                     >
                                         continue with email
                                     </a>
+                                </p>
+                                <p className="small-font my-3">
+                                    By registering, you agree to our{' '}
+                                    <a
+                                        href="/terms"
+                                        className="btn"
+                                    >Terms of Service</a>
+                                    {' '}and{' '}
+                                    <a
+                                        href="/privacy"
+                                        className="btn"
+                                    >Privacy Policy</a>.
                                 </p>
                                 <hr />
                                 <p className="small-font">

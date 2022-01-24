@@ -22,8 +22,9 @@
         .small-font a {
             text-decoration: underline;
             color: $sg-space-black;
+            margin: 0 0 4px 0;
         }
-        .small-font {
+        .small-font, .small-font a {
             font-size: 1rem;
             line-height: 1.25rem;
         }
