@@ -116,3 +116,9 @@ command = "yarn run build"
   to = "/use-cases"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/dpa"
+  to = "/dpa.pdf"
+  status = 200
+  force = true
