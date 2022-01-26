@@ -53,12 +53,11 @@
         }
     }
     &__installtext {
-        padding: 2.5rem;
+        padding: 2rem;
         position: relative;
         font-family: $font-family-monospace;
         font-size: 1rem;
         line-height: 1.25rem;
-        width: 100%;
         outline: none;
         resize: none;
         background-color: $white;
@@ -77,18 +76,56 @@
         color: #0745a1;
     }
 
+    #sg-cloud {
+        .new-container .login-section {
+            padding: 20px 20px 26px 38px;
+            border-radius: 5px;
+            max-width: 458px;
+        }
+        .get-started-page__search-headings {
+            padding-bottom: 0.25rem;
+        }
+        .github {
+            background-color: $sg-space-black;
+            color: $white;
+        }
+        .gitlab {
+            background-color: $purple;
+            color: $white;
+        }
+        a {
+            margin: 8px 0;
+        }
+        hr {
+            color: $sg-space-black;
+            opacity: 0.5;
+        }
+        .small-font {
+            font-size: 1.125rem;
+            line-height: 1.375rem;
+            margin-bottom: 0;
+
+            .btn {
+                font-size: 1.125rem;
+                font-weight: normal;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
     &.cta-container {
         width: 100%;
         position: fixed;
         bottom: 0;
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 992px) {
             position: static;
             bottom: auto;
         }
 
         .row {
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 992px) {
                 display: block;
             }
         }
@@ -103,7 +140,7 @@
                 padding: 30px 0 0 30px;
             }
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 992px) {
                 width: 100%;
                 height: auto;
                 padding: 20px 32px 0 32px;
@@ -150,12 +187,13 @@
             }
         }
         p {
+            width: 460px;
+            margin-bottom: 25px;
             font-size: 1.125rem;
             line-height: 1.375rem;
-            margin-bottom: 25px;
-            width: 460px;
 
             @media only screen and (max-width: 768px) {
+                width: auto;
                 margin-bottom: 14px;
             }
         }
@@ -167,14 +205,11 @@
             margin-bottom: 5px;
         }
         .original-container {
-            width: 558px;
+            vertical-align: top;
             display: inline-block;
 
             @media only screen and (max-width: 1023px) {
-                width: auto;
-
                 p {
-                    width: 95%;
                     margin-bottom: 16px;
                 }
 
@@ -228,10 +263,10 @@
         }
         /* When showing more content */
         .expanded {
-            height: 550px;
+            height: 650px;
             width: 100%;
 
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 992px) {
                 height: 100%;
 
                 .btn {
@@ -257,7 +292,7 @@
             }
         }
         .high {
-            height: 550px;
+            height: 650px;
         }
     }
 }

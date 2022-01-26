@@ -1,0 +1,192 @@
+.cloud-page {
+    .row {
+        @media only screen and (max-width: 992px) {
+            display: block;
+        }
+    }
+    .column {
+        padding: 40px 0 0 135px;
+
+        @media only screen and (max-width: 1199px) {
+            padding-left: 60px;
+        }
+
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            padding: 30px 0 0 40px;
+        }
+
+        .small-font a {
+            text-decoration: underline;
+            color: $sg-space-black;
+            margin: 0 0 4px 0;
+        }
+        .small-font,
+        .small-font a {
+            font-size: 1rem;
+            line-height: 1.25rem;
+        }
+    }
+    .title {
+        width: 500px;
+        font-size: 4rem;
+        line-height: 4.625rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 3rem;
+            line-height: 3.75rem;
+            width: 350px;
+        }
+    }
+    .badge {
+        text-transform: uppercase;
+        background-color: $purple-2;
+        padding: 7px 10px 5px;
+        color: $white;
+        font-weight: bold;
+        font-size: 0.65rem;
+        line-height: 0.815rem;
+        margin-bottom: 15px;
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+
+        img {
+            margin: -2px 5px 0 0;
+        }
+    }
+    p {
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        margin-bottom: 25px;
+
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 14px;
+            padding-right: 10%;
+            font-size: 1rem;
+            line-height: 1.25rem;
+        }
+    }
+    .small-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        margin-bottom: 5px;
+    }
+    .original-container {
+        @media only screen and (max-width: 1023px) {
+            p {
+                margin-bottom: 16px;
+            }
+            .badge {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .btn {
+                color: $blue;
+                background-color: transparent;
+                border: 0 none;
+                padding: 0;
+                font-size: 1.125rem;
+                margin-bottom: 20px;
+
+                .mobileIcon {
+                    display: inline-block;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+
+        .mobileIcon {
+            display: none;
+        }
+    }
+    .back-link {
+        margin: 30px 0 15px 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        font-weight: normal;
+
+        @media only screen and (max-width: 768px) {
+            margin: 0;
+            span {
+                display: none;
+            }
+            .mdi-icon {
+                color: $sg-space-black;
+            }
+        }
+
+        .mdi-icon {
+            margin: -4px 12px 0 0;
+        }
+    }
+
+    .new-container {
+        padding: 100px 0;
+
+        @media only screen and (max-width: 1024px) {
+            padding: 20px 0;
+        }
+
+        .login-section {
+            padding: 20px 20px 26px 38px;
+            border-radius: 5px;
+            max-width: 458px;
+
+            @media only screen and (max-width: 1024px) {
+                width: 87%;
+            }
+        }
+    }
+    .get-started-page__search-headings {
+        padding-bottom: 0.25rem;
+    }
+    .custom-btn {
+        width: 330px;
+        padding-right: 30px;
+        color: $white;
+        text-align: left;
+
+        @media only screen and (max-width: 1024px) {
+            width: auto;
+        }
+    }
+    .github {
+        background-color: $sg-space-black;
+    }
+    .gitlab {
+        background-color: $purple;
+    }
+    a {
+        margin: 8px 0;
+    }
+    hr {
+        color: $sg-space-black;
+        opacity: 0.5;
+    }
+    .small-font {
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        margin-bottom: 0;
+
+        .btn {
+            font-size: 1.125rem;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
