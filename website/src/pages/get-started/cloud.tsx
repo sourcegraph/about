@@ -81,15 +81,14 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
                                 </p>
                                 <p className="small-font my-3">
                                     By registering, you agree to our{' '}
-                                    <a
-                                        href="/terms"
-                                        className="btn"
-                                    >Terms of Service</a>
-                                    {' '}and{' '}
-                                    <a
-                                        href="/privacy"
-                                        className="btn"
-                                    >Privacy Policy</a>.
+                                    <a href="/terms" className="btn">
+                                        Terms of Service
+                                    </a>{' '}
+                                    and{' '}
+                                    <a href="/privacy" className="btn">
+                                        Privacy Policy
+                                    </a>
+                                    .
                                 </p>
                                 <hr />
                                 <p className="small-font">
