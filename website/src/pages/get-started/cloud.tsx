@@ -50,7 +50,7 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
                                     className="btn github custom-btn"
                                 >
                                     <img
-                                        src="../external-logos/GitHub-Mark-Light-32px.png"
+                                        src="/external-logos/GitHub-Mark-Light-32px.png"
                                         width="30"
                                         height="30"
                                         className="mr-3"
@@ -62,7 +62,7 @@ export const CloudPage: React.FunctionComponent<PageProps> = props => {
                                     className="btn gitlab custom-btn"
                                 >
                                     <img
-                                        src="../external-logos/gitlab-mark.svg"
+                                        src="/external-logos/gitlab-mark.svg"
                                         width="32"
                                         height="32"
                                         className="mr-3"
