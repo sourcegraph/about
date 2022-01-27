@@ -49,7 +49,8 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
     },
     batchChangesTrial: {
         label: 'Batch Changes (limited trial)',
-        description: 'Apply and track large-scale code changes across all of your repositories and code hosts (limited to 5 changesets per batch change).',
+        description:
+            'Apply and track large-scale code changes across all of your repositories and code hosts (limited to 5 changesets per batch change).',
     },
     codeHostIntegration: {
         label: '1 code host integration',
