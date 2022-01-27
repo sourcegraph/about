@@ -8,6 +8,7 @@ export interface Features {
     codeSearch: boolean
     codeIntelligence: boolean
     batchChanges: boolean
+    batchChangesTrial: boolean
     codeHostIntegration: boolean
     api: boolean
     selfHosted: boolean
@@ -44,7 +45,11 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
     },
     batchChanges: {
         label: 'Batch Changes (available add-on)',
-        description: 'Automate large-scale code changes across all of your repositories and code hosts.',
+        description: 'Apply and track large-scale code changes across all of your repositories and code hosts.',
+    },
+    batchChangesTrial: {
+        label: 'Batch Changes (limited trial)',
+        description: 'Apply and track large-scale code changes across all of your repositories and code hosts (limited to 5 changesets per batch change).',
     },
     codeHostIntegration: {
         label: '1 code host integration',
@@ -125,11 +130,12 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'codeHostIntegration',
     'api',
     'selfHosted',
-    'batchChanges',
     'multipleCodeHosts',
     'unlimitedCode',
     'repositoryPermissions',
     'userAndAdminRoles',
+    'batchChanges',
+    'batchChangesTrial',
     'singleSignOn',
     'optimizedRepositoryUpdates',
     'deploymentMetricsAndMonitoring',
