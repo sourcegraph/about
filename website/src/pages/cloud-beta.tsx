@@ -84,6 +84,24 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
+        <ContentSection className="py-4 text-center anyscale">
+            <blockquote>
+                <p>
+                    Sourcegraph makes it so much easier to onboard to large codebases. It's an absolute 
+                    game changer when it comes to navigating around an ecosystem with hundreds of 
+                    repositories or even multiple organizations.
+                </p>
+                <footer className="blockquote-footer">Anyscale</footer>
+                <div className="my-4">
+                    <img
+                        src="/external-logos/anyscale-logo.svg"
+                        width="110px"
+                        alt="anyscale"
+                    />
+                </div>
+            </blockquote>
+        </ContentSection>
+
         <CustomCarousel items={items} backgroundClass="bg-gradient-green-blue" />
 
         <ContentSection className="join-the-waitlist text-center">
@@ -92,7 +110,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                     <img src="../join-the-waitlist.svg" className="mb-5" />
                     <h1 className="display-2 mb-0 title">Join the waitlist.</h1>
                     <p className="mt-3 mb-lg-6">Access Sourcegraph Cloud for free during the beta</p>
-                    <p className="mt-5 font-weight-bold">We’re looking for teams that:</p>
+                    <p className="mt-5 font-weight-bold">We're looking for teams that:</p>
                     <div className="mb-5">
                         <ul>
                             <li>Have 5 to 25 engineers</li>
