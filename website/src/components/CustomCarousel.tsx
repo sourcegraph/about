@@ -57,7 +57,7 @@ export default class CustomCarousel extends React.Component<CarouselProps> {
     }
 
     public getBoxClassNames = () => {
-        return `custom-carousel row ${this.state.backgroundClass || ''}`
+        return `custom-carousel d-flex flex-wrap ${this.state.backgroundClass || ''}`
     }
 
     public decrementList = () => {
