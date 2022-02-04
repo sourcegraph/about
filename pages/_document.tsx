@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
                     {/* Google Tag Manager (noscript) */}
                     <style
                         dangerouslySetInnerHTML={{
-                            __html: `.gtm-hide { display:none;visibility:hidden" 0 !important}`,
+                            __html: '.gtm-hide { "display:none;visibility:hidden" 0 !important}',
                         }}
                     />
                     <noscript>
@@ -37,7 +37,8 @@ export default class MyDocument extends Document {
                             className="gtm-hide"
                             height="0"
                             width="0"
-                        ></iframe>
+                            title="GTM"
+                        />
                     </noscript>
                     {/*  End Google Tag Manager (noscript) */}
                     <Main />

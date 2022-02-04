@@ -14,7 +14,7 @@
     "prettier:check": "yarn -s run prettier --write=false"
   },
   "eslintConfig": {
-    "extends": "@sourcegraph/eslint-config",
+    "extends": ["@sourcegraph/eslint-config", "next/core-web-vitals"],
     "parserOptions": {
       "project": "tsconfig.json"
     },
