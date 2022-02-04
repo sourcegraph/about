@@ -26,7 +26,7 @@ export default class MyDocument extends Document {
                 </Head>
                 <body>
                     {/* Google Tag Manager (noscript) */}
-                                       <style
+                    <style
                         dangerouslySetInnerHTML={{
                             __html: `.gtm-hide { display:none;visibility:hidden" 0 !important}`,
                         }}
@@ -43,9 +43,7 @@ export default class MyDocument extends Document {
                     <Main />
                     <NextScript />
                 </body>
-
             </Html>
         )
-    }   
+    }
 }
-
