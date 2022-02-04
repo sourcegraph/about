@@ -47,18 +47,14 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
             <div className="container pb-4">
                 <div className="row">
                     <div className="col-lg-9">
-                        <h1 className="title display-2 mb-4">Change your workflow forever.</h1>
+                        <h1 className="title display-2 mb-4">Speed up your team's workflow with Universal Code Search.</h1>
                     </div>
                     <div className="col-lg-6">
-                        <p className="subTitle">
-                            Introducing team access for Sourcegraph Cloud
-                            <br />
-                            (Private Beta)
-                        </p>
+                        <p className="subTitle">Introducing team access to Sourcegraph Cloud (Private Beta)</p>
                         <p>
-                            Sourcegraph now empowers you and your team to boost developer productivity while keeping
-                            everyone in flow. Teams can now use Sourcegraph Cloud in beta for up to 25 users without
-                            having to manage software on-prem. Join the waitlist today to get exclusive early access.
+                            Teams of up to 25 users can now add their private repositories to Sourcegraph Cloud 
+                            to experience great code search together. Find & fix vulnerabilities, resolve incidents, 
+                            and onboard engineers to new codebases fast. Join the waitlist today to get exclusive early access.
                         </p>
                         <a
                             className="btn btn-primary join-the-watilist-hero-btn"
