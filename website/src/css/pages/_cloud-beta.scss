@@ -60,13 +60,13 @@
 
             &::before {
                 text-indent: -0.4em;
-                content: "\201C";
+                content: '\201C';
                 position: absolute;
                 margin-left: -2px;
             }
 
             &::after {
-                content: "\201D";
+                content: '\201D';
             }
         }
 
@@ -75,7 +75,6 @@
             font-weight: 400;
         }
     }
-    
 
     .join-the-waitlist {
         margin-top: 170px;
