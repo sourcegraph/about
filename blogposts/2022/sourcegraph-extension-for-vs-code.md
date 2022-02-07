@@ -24,7 +24,6 @@ When working on a plugin issue, I first start with the repository that the issue
 
 I ran the following search query to find all Sourcegraph extensions we have (repository name pattern is sourcegraph-extension-name) which make use of the rxjs library:
 
-
 ```
 repo:^github\.com/sourcegraph/sourcegraph-.+$  /import .+ from 'rxjs'/
 ```
@@ -36,16 +35,13 @@ repo:^github\.com/sourcegraph/sourcegraph-.+$  /import .+ from 'rxjs'/
 
 Using this regex and the Sourcegraph Extension, I was able to find the code I’m looking for without leaving my IDE and get distracted by tons of other tabs that I have open in Chrome.
 
-
 ### Researching an error
 
 Code search is really useful for error researching as well. You might have heard of the [log4j vulnerability](/blog/log4j-log4shell-0-day/) that was recently in the news. In such widely impactful security vulnerabilities, it’s really important to move as fast as possible. Luckily, in our case, the security team was able to identify the packages that were potentially affected. All we had to do was to build a search query. In this case, we used the language filter to make sure we searched for gradle files and made sure to include the log4j import statement along with the affected versions:
 
-
 ```
 gradle org\.apache\.logging\.log4j ['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\.[0-9]+)
 ```
-
 
 As you can see in the video below, the global search returns several repositories that require further investigation. I finally changed the search context to Sourcegraph to narrow down my search scope to find all the repositories affecting our organization.
 
@@ -54,6 +50,4 @@ As you can see in the video below, the global search returns several repositorie
   <source src="https://sourcegraphstatic.com//vs-code-extension/vscode-log4j.mp4" type="video/mp4" />
 </video>
 
-
 I hope that you find these workflows useful. If you have questions or suggestions, you can reach out to me on Twitter ([@muratsutunc](http://twitter.com/muratsutunc)). You can [download the Sourcegraph VS Code extension from this link](https://marketplace.visualstudio.com/items?itemName=sourcegraph.sourcegraph). Happy hacking!
-
