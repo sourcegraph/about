@@ -1,0 +1,1 @@
+export { getAllPages } from './getAllPages'

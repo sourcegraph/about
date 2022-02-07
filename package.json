@@ -19,7 +19,8 @@
       "project": "tsconfig.json"
     },
     "rules": {
-      "import/no-default-export": "off"
+      "import/no-default-export": "off",
+      "@next/next/no-img-element": "off"
     }
   },
   "dependencies": {
