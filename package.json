@@ -6,12 +6,12 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "yarn run eslint && yarn run typecheck",
+    "lint": "yarn eslint && yarn typecheck",
     "typecheck": "tsc -p .",
     "eslint": "eslint '**/*.{ts,tsx}'",
     "ci": "yarn install --immutable --immutable-cache --check-cache",
     "prettier": "prettier '**/{*.{js?(on),ts?(x),md,scss},.*.js?(on)}' --write --list-different",
-    "prettier:check": "yarn -s run prettier --write=false"
+    "prettier:check": "yarn -s prettier --write=false"
   },
   "eslintConfig": {
     "extends": ["@sourcegraph/eslint-config", "next/core-web-vitals"],
