@@ -18,7 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "@hooks/*": ["hooks/*"],
-      "@lib/*": ["lib/*"],
+      "@lib": ["lib"],
       "@util": ["util"],
     },
   },

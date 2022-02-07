@@ -34,4 +34,3 @@ export const CaseStudy: FunctionComponent = () => (
 )
 
 export default CaseStudy
-
