@@ -18,9 +18,9 @@ My name is [Murat Sutunc](https://handbook.sourcegraph.com/team#murat-sutunc), a
       <span>TL;DR 👉 The Sourcegraph VS Code extension is a really powerful tool that lets you search your code and 2M+ open source repositories, all from your IDE! It’s available on <a = href="https://marketplace.visualstudio.com/items?itemName=sourcegraph.sourcegraph">the marketplace</a>—no account needed, give it a try!</span>
 </div>
 
-### Finding examples to fix issues
+### Finding reusable code to fix issues
 
-Now and then, I jump in to help our team with some issues that are not on the critical path. For those unfamiliar, I think it's fair to say Sourcegraph's codebase is sizeable. It still fits on my laptop hard drive, but it’s large enough to tire IDEs when indexing. On top of our large main repository, we have several hundred additional repositories, and quickly finding what I'm looking for can be challenging.
+Now and then, I jump in to help our team with some issues that are not on the critical path. For those unfamiliar, I think it's fair to say [Sourcegraph's codebase is sizeable](https://github.com/sourcegraph). It still fits on my laptop hard drive, but it’s large enough to tire IDEs when indexing. On top of our large main repository, we have several hundred additional repositories, and quickly finding what I'm looking for can be challenging.
 
 When working on a plugin issue, I first start with the repository that the issue is filed against. Once I familiarize myself with the issue, I tend to fire up VS Code to work on my solution. Frequently I run into cases where I remember solving a similar issue before but cannot remember how I solved it at the time. One such example is when I needed to write some code involving the [rxjs](https://rxjs.dev/) library but forgot the exact syntax because I’m not very familiar with the library.
 
@@ -35,7 +35,7 @@ repo:^github\.com/sourcegraph/sourcegraph-.+$  /import .+ from 'rxjs'/
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/vs-code-extension/vs-code-regex-usecase.mp4" type="video/mp4" />
 </video>
 
-Using this regex and the Sourcegraph Extension, I was able to find the code I’m looking for without leaving my IDE and get distracted by tons of other tabs that I have open in Chrome.
+Using this regex and the Sourcegraph Extension, I was able to find the code I was looking for without leaving my IDE and get distracted by tons of other tabs that I have open in Chrome. I can quickly reuse that code to solve my issue without reinventing the wheel, too.
 
 ### Researching and fixing vulnerabilities
 
@@ -52,4 +52,7 @@ As you can see in the video below, the global search returns several repositorie
   <source src="https://storage.cloud.google.com/sourcegraph-assets/blog/vs-code-extension/vscode-log4j.mp4" type="video/mp4" />
 </video>
 
-I hope that you find these workflows useful. If you have questions or suggestions, you can reach out to me on Twitter ([@muratsutunc](http://twitter.com/muratsutunc)). You can [download the Sourcegraph VS Code extension from this link](https://marketplace.visualstudio.com/items?itemName=sourcegraph.sourcegraph). Happy hacking!
+I hope that you find these workflows useful. The extension has become a handy part of my day-to-day to stay in flow without leaving my IDE, especially for finding code to reuse or to quickly find and resolve vulnerabilities. Plus, the extension allows you to search Sourcegraph's index of millions of OSS repositories (without needing an account), so you can search for code examples, libraries, and best practices without ever leaving your IDE.
+
+
+If you have questions or suggestions, you can reach out to me on Twitter ([@muratsutunc](http://twitter.com/muratsutunc)). You can [download the Sourcegraph VS Code extension from this link](https://marketplace.visualstudio.com/items?itemName=sourcegraph.sourcegraph). Happy hacking!
