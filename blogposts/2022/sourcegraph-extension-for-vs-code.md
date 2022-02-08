@@ -54,5 +54,4 @@ As you can see in the video below, the global search returns several repositorie
 
 I hope that you find these workflows useful. The extension has become a handy part of my day-to-day to stay in flow without leaving my IDE, especially for finding code to reuse or to quickly find and resolve vulnerabilities. Plus, the extension allows you to search Sourcegraph's index of millions of OSS repositories (without needing an account), so you can search for code examples, libraries, and best practices without ever leaving your IDE.
 
-
 If you have questions or suggestions, you can reach out to me on Twitter ([@muratsutunc](http://twitter.com/muratsutunc)). You can [download the Sourcegraph VS Code extension from this link](https://marketplace.visualstudio.com/items?itemName=sourcegraph.sourcegraph). Happy hacking!
