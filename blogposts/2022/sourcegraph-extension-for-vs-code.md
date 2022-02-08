@@ -1,6 +1,6 @@
 ---
 title: 'How I use the Sourcegraph extension for VS Code'
-description: 'Sourcegraph’s extension for Visual Studio Code allows you to search millions of open source repositories without cloning them to your local machine or leaving your IDE. Here’s how one engineer integrates it into his workflow.'
+description: 'Sourcegraph’s extension for Visual Studio Code allows you to search millions of open source repositories without cloning them to your local machine or leaving your IDE. Here’s how one engineering manager integrates it into his workflow.'
 author: Murat Sutunc
 publishDate: 2022-02-08T00:00-07:00
 tags: [blog]
@@ -52,6 +52,6 @@ As you can see in the video below, the global search returns several repositorie
   <source src="https://storage.cloud.google.com/sourcegraph-assets/blog/vs-code-extension/vscode-log4j.mp4" type="video/mp4" />
 </video>
 
-I hope that you find these workflows useful. The extension has become a handy part of my day-to-day to stay in flow without leaving my IDE, especially for finding code to reuse or to quickly find and resolve vulnerabilities. Plus, the extension allows you to search Sourcegraph's index of millions of OSS repositories (without needing an account), so you can search for code examples, libraries, and best practices without ever leaving your IDE.
+I hope you find these workflows useful. The extension has become a handy part of my day-to-day flow, especially for finding code to reuse or to quickly find and resolve vulnerabilities without leaving my IDE. Plus, the extension allows you to search Sourcegraph's index of millions of OSS repositories (without needing an account), so you can search for code examples, libraries, and best practices without ever leaving your IDE.
 
 If you have questions or suggestions, you can reach out to me on Twitter ([@muratsutunc](http://twitter.com/muratsutunc)). You can [download the Sourcegraph VS Code extension from this link](https://marketplace.visualstudio.com/items?itemName=sourcegraph.sourcegraph). Happy hacking!
