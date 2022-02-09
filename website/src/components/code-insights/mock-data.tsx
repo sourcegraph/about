@@ -101,7 +101,7 @@ export const CAPTURE_INSIGHT_TERRAFORM_EXAMPLES_DATA: CaptureGroupInsightData = 
             stroke: DATA_SERIES_COLORS.CYAN,
         },
         {
-            dataKey: 'e',
+            dataKey: 'f',
             name: '17.0.1',
             stroke: DATA_SERIES_COLORS.GRAPE,
         },
