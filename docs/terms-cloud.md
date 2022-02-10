@@ -49,7 +49,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 | 8. [Fees](#8-Fees)                                                                                                                    | Rules for payment for paid features                 |
 | 9. [Third party services and software](#9-Third-party-services-and-software)                                                          | Our use of third party services and software        |
 | 10. [Copyright infringement and DMCA policy](#10-Copyright-infringement-and-DMCA-policy)                                              | How we handle IP infringment                        |
-| 11. [Warranties; disclaimer](#11-No-warranties-disclaimer)                                                                            | Our warranties about Sourcegraph             |
+| 11. [Warranties; disclaimer](#11-No-warranties-disclaimer)                                                                            | Our warranties about Sourcegraph                    |
 | 12. [Limitation of liability](#12-Limitation-of-liability)                                                                            | Our liabilities are limited                         |
 | 13. [Indemnification](#13-Indemnification)                                                                                            | The parties’ respective indemnification obligations |
 | 14. [Location of the Services; export controls](#14-Location-of-the-services-export-controls)                                         | Usage restrictions in embargoed locations           |
