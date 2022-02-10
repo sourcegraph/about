@@ -3,11 +3,11 @@ layout: markdown
 title: Terms of Service for Self-hosted Sourcegraph Instances
 ---
 
-Last modified: October 11, 2021
+Last modified: February 10, 2022
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-self-hosted%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-self-hosted/2021-08-25/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives).
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-self-hosted%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-self-hosted/2021-10-11/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives).
 
-Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of software, products, and services we make available at Sourcegraph.com.
+Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of self-hosted Sourcegraph instances.
 
 <div class="p-3" style="background: #f2f4f8; word-wrap: break-word;">
 
@@ -21,7 +21,7 @@ Are you interested in terms for...
 
 - **A self-hosted Sourcegraph instance**: You're in the right place! Read on.
 
-- **[Sourcegraph.com](https://about.sourcegraph.com/terms-dotcom)**: If you’d like to use Sourcegraph.com (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with sourcegraph.com, please see our Sourcegraph.com terms and conditions at https://about.sourcegraph.com/terms-dotcom.
+- **[Sourcegraph Cloud](https://about.sourcegraph.com/terms-dotcom)**: If you’d like to use Sourcegraph Cloud (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with Sourcegraph Cloud, please see our Sourcegraph Cloud terms and conditions at https://about.sourcegraph.com/terms-cloud.
 
 - **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache.
 
@@ -48,9 +48,9 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 | 7. [Term; termination](#7-Term-termination)                                                                                           | When and how your account can be terminated                                     |
 | 8. [Fees](#8-Fees)                                                                                                                    | Rules for payment for paid and Enterprise features                              |
 | 9. [Third party services and software](#9-Third-party-services-and-software)                                                          | Our use of third party services and software                                    |
-| 10. [No warranties; disclaimer](#10-No-warranties-disclaimer)                                                                         | We make no warranties about Sourcegraph                                         |
+| 10. [Warranties; disclaimer](#10-Warranties-disclaimer)                                                                               | Our warranties about Sourcegraph                                                |
 | 11. [Limitation of liability](#11-Limitation-of-liability)                                                                            | Our liabilities are limited                                                     |
-| 12. [Indemnification](#12-Indemnification)                                                                                            | Your usage of Sourcegraph is at your own risk                                   |
+| 12. [Indemnification](#12-Indemnification)                                                                                            | The parties’ respective indemnification obligations                             |
 | 13. [Export controls](#13-Export-controls)                                                                                            | Usage restrictions in embargoed locations                                       |
 | 14. [Governing law; arbitration; and class action/jury trial waiver](#14-Governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled                                         |
 | 15. [Miscellaneous](#15-Miscellaneous)                                                                                                | Miscellaneous topics                                                            |
@@ -118,13 +118,15 @@ As used on this page, the following terms have the following specific meanings:
 
 4. use any release of the Software that is more than three (3) versions older than the then-most-current release of the Software.
 
-3.3 **Ownership of the Software**. The Software is owned and operated by Sourcegraph. All Content made available via the Software is owned by us or our licensors and is protected by intellectual property and other applicable laws. All of our trademarks, service marks, and trade names are proprietary to us or our affiliates.
+3.3 **No Sensitive Data**. You acknowledge and agree that, (i) the Software is not designed to store Sensitive Data (as defined below), and (ii) you will not use the Software to store Sensitive Data. “Sensitive Data” means: (i) special categories of data enumerated in European Union Regulation 2016/679, Article 9(1) or any successor legislation; (ii) protected health information as defined in HIPAA; (iii) payment cardholder information or financial account information, including bank account numbers or other personally identifiable financial information; (iv) social security numbers, driver’s license numbers, or other government identification numbers; (v) other information subject to regulation or protection under specific laws such as the Children’s Online Privacy Protection Act or Gramm-Leach-Bliley Act (“GLBA”) or related rules or regulations; or (vi) any data similar to the above protected under applicable laws. You acknowledge that the Software and related features are not intended to meet any legal obligations for these uses, including HIPAA and GLBA requirements and that we are not a Business Associate as defined under HIPAA. Therefore, notwithstanding anything else in this Agreement, we have no liability for Sensitive Data processed in connection with your use of the Software.
 
-3.4 **Ideas**. You may submit comments or ideas about the Software, such as how to improve it. By submitting a comment or idea, you agree that your disclosure is gratuitous, unsolicited and without restriction and will not place us under any fiduciary or other obligation, and that we are free to use the comment or idea without any additional compensation to you. By acceptance of your submission, we do not waive any rights to use similar ideas we already had or obtained from other sources.
+3.4 **Ownership of the Software**. The Software is owned and operated by Sourcegraph. All Content made available via the Software is owned by us or our licensors and is protected by intellectual property and other applicable laws. All of our trademarks, service marks, and trade names are proprietary to us or our affiliates.
 
-3.5 **Extensions**. As described above, certain features of the Software may allow you to download software packages from the Extension Registry. These packages may be offered by us or by third-party providers. Packages made available by third-party providers are subject to separate terms and conditions and are not governed by these Terms.
+3.5 **Ideas**. You may submit comments or ideas about the Software, such as how to improve it. By submitting a comment or idea, you agree that your disclosure is gratuitous, unsolicited and without restriction and will not place us under any fiduciary or other obligation, and that we are free to use the comment or idea without any additional compensation to you. By acceptance of your submission, we do not waive any rights to use similar ideas we already had or obtained from other sources.
 
-3.6 **Beta Software**. We may make beta and experimental products, features, and Documentation available to you on an early access basis (“Beta Software”). Beta Software is not generally available and may contain bugs, defects, and errors. We provide Beta Software “as is,” without warranties, and may discontinue the Beta Software at any time. Our service level agreements do not apply to Beta Software. If and when the Beta Software becomes generally available, you will have the option to pay for the software or discontinue its use. We may use your feedback about Beta Software.
+3.6 **Extensions**. As described above, certain features of the Software may allow you to download software packages from the Extension Registry. These packages may be offered by us or by third-party providers. Packages made available by third-party providers are subject to separate terms and conditions and are not governed by these Terms.
+
+3.7 **Beta Software**. We may make beta and experimental products, features, and Documentation available to you on an early access basis (“Beta Software”). Beta Software is not generally available and may contain bugs, defects, and errors. We provide Beta Software “as is,” without warranties, and may discontinue the Beta Software at any time. Our service level agreements do not apply to Beta Software. If and when the Beta Software becomes generally available, you will have the option to pay for the software or discontinue its use. We may use your feedback about Beta Software.
 
 <span style="color:#b200f8;">
 
@@ -148,7 +150,7 @@ If we share or publicly disclose any information constituting or derived from Us
 
 Data security and user privacy are very, VERY important to us. Please read our [Privacy Policy](/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us in connection with your use of the Software.
 
-We have implemented, and the Software contains, commercially reasonable technical and organizational measures designed to secure Your Code and any other information you provide that is stored on your Instance (which we do not have access to), and any information that we do have access to (such as support emails you send to us, Usage Data, etc.), from accidental loss and from unauthorized access, use, alteration or disclosure. However, we cannot guarantee that unauthorized third parties will never be able to defeat those measures or use your information for improper purposes. You understand that internet technologies have the inherent potential for disclosure. You acknowledge that you store sensitive information on your Instance, or provide any sensitive information to us at your own risk.
+As the Software is provided in the form of a self-hosted Instance, Sourcegraph will not have access to any of Your Code unless you include Your Code via email or other support channels to Sourcegraph. We have implemented, and the Software contains, commercially reasonable technical and organizational measures designed to secure Your Code and any other information you provide that is stored on your Instance (which we do not have access to), and any information that we do have access to (such as support emails you send to us, Usage Data, etc.), from accidental loss and from unauthorized access, use, alteration or disclosure. However, we cannot guarantee that unauthorized third parties will never be able to defeat those measures or use your information for improper purposes. You understand that internet technologies have the inherent potential for disclosure. You acknowledge that you store sensitive information on your Instance, or provide any sensitive information to us at your own risk.
 
 <span style="color:#b200f8;">
 
@@ -156,7 +158,7 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: You and we will each protect the other party’s confidential information.</i></span>
+<span style="color:#777777"><i>**Short version**: We will each protect the other party’s confidential information.</i></span>
 
 6.1 **Definition**. **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
 
@@ -194,7 +196,7 @@ We have implemented, and the Software contains, commercially reasonable technica
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Pricing can change at any time, but you will receive notice at least seven days in advance. Your subscription will automatically renew, unless an Order Form states otherwise.</i></span>
+<span style="color:#777777"><i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.</i></span>
 
 8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) or in an Order Form and applicable taxes associated with the Software in a timely manner with a valid payment method. Unless otherwise stated in an Order Form, you will pay all invoices within thirty (30) days of receipt. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
 
@@ -222,13 +224,15 @@ If there's ever a conflict between the terms of this Agreement and the terms app
 
 <span style="color:#b200f8;">
 
-## 10. No warranties; disclaimer
+## 10. Warranties; disclaimer
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Sourcegraph is provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span>
+<span style="color:#777777"><i>**Short version**: Other than the warranties explicitly set forth in this section, Sourcegraph is provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span>
 
-THE SOFTWARE, AND ANY OTHER SOFTWARE, APPLICATIONS, PRODUCTS, AND SOFTWARE MADE AVAILABLE ON OR IN CONNECTION WITH THE SOFTWARE ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR OTHERWISE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, SOURCEGRAPH DISCLAIMS, ON BEHALF OF ITSELF AND ITS LICENSORS, ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. FURTHER, WE DO NOT WARRANT THAT THE SOFTWARE OR ANY PART THEREOF (OR YOUR ACCESS THERETO) WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS, WILL MEET YOUR REQUIREMENTS, OR THAT DEFECTS WILL BE CORRECTED.
+We warrant that (1) the Software will perform materially in accordance with the applicable Documentation when accessed and used as recommended in the Documentation and in accordance with the Agreement and (2) to the best of our knowledge, the Software is free from, and we will not knowingly introduce, software viruses, worms, Trojan horses or other code, files, scripts, or agents intended to do harm. Your sole and exclusive remedy for breach of the warranties in this section is set forth in Section 7.2.
+
+OTHER THAN THE WARRANTIES EXPLICITLY SET FORTH IN THIS SECTION 10, THE SOFTWARE, AND ANY OTHER SOFTWARE, APPLICATIONS, PRODUCTS, AND SOFTWARE MADE AVAILABLE ON OR IN CONNECTION WITH THE SOFTWARE ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR OTHERWISE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, SOURCEGRAPH DISCLAIMS, ON BEHALF OF ITSELF AND ITS LICENSORS, ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. FURTHER, WE DO NOT WARRANT THAT THE SOFTWARE OR ANY PART THEREOF (OR YOUR ACCESS THERETO) WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS, WILL MEET YOUR REQUIREMENTS, OR THAT DEFECTS WILL BE CORRECTED.
 
 CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS AS PROVIDED BY LAW.
 
@@ -298,7 +302,7 @@ The Software and the underlying information and technology may not be downloaded
 
 15.3 **U.S. Government End Users**. The Software and Documentation were developed by private financing and constitute a "Commercial Item," as that term is defined at 48 C.F.R. § 2.101. The Software and Documentation consist of "Commercial Computer Software" and "Commercial Computer Software Documentation," as such terms are used in 48 C.F.R. § 12.212. Consistent with 48 C.F.R. § 12.212 and 48 C.F.R. §§ 227.7202-1 through 227.7202-4, all U.S. Government End Users acquire only those rights in the Software and the Documentation that are specifically provided by this Agreement. Consistent with 48 C.F.R. § 12.211, all U.S. Government End Users acquire only technical data and the rights in that data customarily as specifically provided in this Agreement.
 
-15.4 **Waiver**. Our failure to exercise or enforce any right or provision of the Agreement will not constitute a waiver of such right or provision. Any waiver of any provision of the Agreement will be effective only if in writing and signed by us.
+15.4 **Waiver**. A party's failure to exercise or enforce any right or provision of the Agreement will not constitute a waiver of such right or provision. Any waiver of any provision of the Agreement will be effective only if in writing and signed by the waiving party.
 
 15.5 **Severability**. If any provision of the Agreement is held to be unlawful, void, or for any reason unenforceable, then that provision will be limited or eliminated from the Agreement to the minimum extent necessary and will not affect the validity and enforceability of any remaining provisions; except that in the event of unenforceability of the universal Class Action/Jury Trial Waiver, the entire arbitration agreement shall be unenforceable.
 
@@ -312,4 +316,4 @@ The Software and the underlying information and technology may not be downloaded
 
 15.10 **Entire Agreement**. This, including the agreements incorporated by reference, constitutes the entire agreement between you and us relating to the subject matter herein and will not be modified except in writing, signed by both parties, or by a change made by us as set forth in the Agreement.
 
-15.11 **Disclosures**. The Software is offered by Sourcegraph, Inc., located at 981 Mission St, San Francisco, CA 94103, and can be reached via email at support@sourcegraph.com or telephone at (650) 318-3480. If you are a California resident, (a) you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information; and (b) in accordance with Cal. Civ. Code § 1789.3, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by contacting them in writing at 1625 North Market Blvd., Suite N 112 Sacramento, CA 95834, or by telephone at (800) 952-5210 or (916) 445-1254.
+15.11 **Disclosures**. The Software is offered by Sourcegraph, Inc., located at 548 Market St PMB 20739, San Francisco, CA 94104-5401, and can be reached via email at support@sourcegraph.com or telephone at (650) 318-3480. If you are a California resident, (a) you may have this same information emailed to you by sending a letter to the foregoing address with your email address and a request for this information; and (b) in accordance with Cal. Civ. Code § 1789.3, you may report complaints to the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by contacting them in writing at 1625 North Market Blvd., Suite N 112 Sacramento, CA 95834, or by telephone at (800) 952-5210 or (916) 445-1254.
