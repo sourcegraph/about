@@ -48,31 +48,33 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </div>
         }
     >
-        <ContentSection className="py-5 text-center">
-            <h2 className="display-3 font-weight-bold mt-5 mb-3">Get up to speed</h2>
-            <div className="row justify-content-center">
-                <p className="col-md-8">
-                    We can't give you a 25-hour day, but here is a <a href="http://srcgr.ph/cheatsheet">speed sheet</a>{' '}
-                    with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive
-                    into our curated
-                    <a href="https://learn.sourcegraph.com/tags/sourcegraph"> tutorials</a> &#38; other{' '}
-                    <a href="https://docs.sourcegraph.com/">tip documents</a>.
-                </p>
-            </div>
+           
+        <ContentSection>
             <div className="row">
-                <div className="col-12 mt-4">
-                    <a href="http://srcgr.ph/cheatsheet">
-                        <figure>
-                            <img
-                                className="cheatsheet_img"
-                                src="/community/cheatsheet_top.png"
-                                alt="Sourcegraph cheatsheet"
-                            />
-                        </figure>
-                    </a>
+                {/* Placeholder */}
+                <div className="col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-7">
+                    <iframe
+                        className="embed-responsive-item"
+                        src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                        allowFullScreen={true}
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        frameBorder={0}
+                        title="Sourcegraph Batch Changes demo"
+                    ></iframe>
+                </div>
+                <div className="col-lg-5 my-7">
+                    <h2 className="mb-3">Finally, useful engineering metrics that{' '}
+                    <span style={{fontStyle: "italic"}}>you</span> get to define.</h2>
+                    <p>
+                    Forget about inaccurate spreadsheets, manual processes, and missing historical data. 
+                    Now, you can track everything in your codebase, from migrations to code smells, in a 
+                    seamless and precise way. We've combined the power and accuracy of Sourcegraph Code 
+                    Search with beautiful visualizations so you can make truly data-driven decisions.
+                    </p>
                 </div>
             </div>
         </ContentSection>
+        
 
         <div className="bg-gradient-green-blue py-5">
             <ContentSection className="py-5">
