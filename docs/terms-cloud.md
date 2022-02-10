@@ -3,9 +3,9 @@ layout: markdown
 title: Terms of Service for Sourcegraph Cloud
 ---
 
-Last modified: December 9, 2021
+Last modified: February 9, 2022
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-dotcom%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-cloud/2021-06-25/)
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-dotcom%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-cloud/2021-12-09/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives).
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of Sourcegraph Cloud.
 
@@ -37,23 +37,24 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 </span>
 
-| Section                                                                                                                               | Description                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| 1. [Definitions](#1-Definitions)                                                                                                      | Definitions of specific terms used on this page |
-| 2. [Account terms](#2-Account-terms)                                                                                                  | Your responsibilities to use Sourcegraph        |
-| 3. [Proprietary rights and licenses](#3-Proprietary-rights-and-licenses)                                                              | Your rights and ours when you use Sourcegraph   |
-| 4. [Usage data](#4-Usage-data)                                                                                                        | Data we collect on Sourcegraph                  |
-| 5. [Privacy and security](#5-Privacy-and-security)                                                                                    | Our policies for protecting your data           |
-| 6. [Term; termination](#6-Term-termination)                                                                                           | When and how your account can be terminated     |
-| 7. [Fees](#7-Fees)                                                                                                                    | Rules for payment for paid features             |
-| 8. [Third party services and software](#8-Third-party-services-and-software)                                                          | Our use of third party services and software    |
-| 9. [Copyright infringement and DMCA policy](#9-Copyright-infringement-and-DMCA-policy)                                                | How we handle IP infringment                    |
-| 10. [No warranties; disclaimer](#10-No-warranties-disclaimer)                                                                         | We make no warranties about Sourcegraph         |
-| 11. [Limitation of liability](#11-Limitation-of-liability)                                                                            | Our liabilities are limited                     |
-| 12. [Indemnification](#12-Indemnification)                                                                                            | Your usage of Sourcegraph is at your own risk   |
-| 13. [Location of the Services; export controls](#13-Location-of-the-services-export-controls)                                         | Usage restrictions in embargoed locations       |
-| 14. [Governing law; arbitration; and class action/jury trial waiver](#14-Governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled         |
-| 15. [Miscellaneous](#15-Miscellaneous)                                                                                                | Miscellaneous topics                            |
+| Section                                                                                                                               | Description                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| 1. [Definitions](#1-Definitions)                                                                                                      | Definitions of specific terms used on this page     |
+| 2. [Account terms](#2-Account-terms)                                                                                                  | Your responsibilities to use Sourcegraph            |
+| 3. [Proprietary rights and licenses](#3-Proprietary-rights-and-licenses)                                                              | Your rights and ours when you use Sourcegraph       |
+| 4. [Usage data](#4-Usage-data)                                                                                                        | Data we collect on Sourcegraph                      |
+| 5. [Privacy and security](#5-Privacy-and-security)                                                                                    | Our policies for protecting your data               |
+| 6. [Confidentiality](#6-Confidentiality)                                                                                              | The parties’ respective confidentiality obligations |
+| 7. [Term; termination](#7-Term-termination)                                                                                           | When and how your account can be terminated         |
+| 8. [Fees](#8-Fees)                                                                                                                    | Rules for payment for paid features                 |
+| 9. [Third party services and software](#9-Third-party-services-and-software)                                                          | Our use of third party services and software        |
+| 10. [Copyright infringement and DMCA policy](#10-Copyright-infringement-and-DMCA-policy)                                              | How we handle IP infringment                        |
+| 11. [Warranties; disclaimer](#11-No-warranties-disclaimer)                                                                            | Our warranties about Sourcegraph                    |
+| 12. [Limitation of liability](#12-Limitation-of-liability)                                                                            | Our liabilities are limited                         |
+| 13. [Indemnification](#13-Indemnification)                                                                                            | The parties’ respective indemnification obligations |
+| 14. [Location of the Services; export controls](#14-Location-of-the-services-export-controls)                                         | Usage restrictions in embargoed locations           |
+| 15. [Governing law; arbitration; and class action/jury trial waiver](#15-Governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled             |
+| 16. [Miscellaneous](#16-Miscellaneous)                                                                                                | Miscellaneous topics                                |
 
 <br/>
 <span style="color:#b200f8;">
@@ -122,21 +123,18 @@ As used on this page, the following terms have the following specific meanings:
 
 2. **Restrictions**. You may not, and may not permit any third-party to redistribute, encumber, sell, rent, lease, sublicense, or otherwise transfer rights to all or any part of the Services or Code Data without our prior written approval. Your use of the Site and Services must not violate any applicable laws, including copyright or trademark laws, export control or sanctions laws, or other laws in your jurisdiction. You are responsible for making sure that your use of the Site and Services complies with laws and any applicable regulations.
 
+3. **No Sensitive Data**. You acknowledge and agree that, (i) the Services are not designed to store Sensitive Data (as defined below), and (ii) you will not use the Services to store Sensitive Data. “Sensitive Data” means: (i) special categories of data enumerated in European Union Regulation 2016/679, Article 9(1) or any successor legislation; (ii) protected health information as defined in HIPAA; (iii) payment cardholder information or financial account information, including bank account numbers or other personally identifiable financial information; (iv) social security numbers, driver’s license numbers, or other government identification numbers; (v) other information subject to regulation or protection under specific laws such as the Children’s Online Privacy Protection Act or Gramm-Leach-Bliley Act (“GLBA”) or related rules or regulations; or (vi) any data similar to the above protected under applicable laws. You acknowledge that the Services and related features are not intended to meet any legal obligations for these uses, including HIPAA and GLBA requirements and that we are not a Business Associate as defined under HIPAA. Therefore, notwithstanding anything else in this Agreement, we have no liability for Sensitive Data processed in connection with your use of the Services.
+
 3.2 **License Grant from You to Us**.
 
 1. **User-Generated Content**. Some areas of the Services allow users to post Content such as profile information, proprietary Code, comments, reviews, etc. (**“User-Generated Content”** or **“UGC”**) (for clarity, this does not include open source Code as defined by the Open Source Initiative at https://opensource.org/osd). WE CLAIM NO OWNERSHIP OF YOUR UGC. However, you understand that other users may view and interact with your UGC in accordance with your Account settings, and you grant us rights reasonably necessary to do so. We have the right (but not the obligation) to remove any UGC at any time and for any reason.
 
 2. **Grant**. By posting UGC on or through the Services, you grant (and you represent and warrant that you have all rights necessary to grant) to Sourcegraph a royalty-free, sublicensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, modify, and publish all such UGC via the Services (including your name, voice, and/or likeness as contained in your UGC) for the limited purposes of:
-
    (i) providing and improving the Services;
-
    (ii) protecting the Services to prevent abuse;
-
    (iii) tailoring the Services to you; and
-
    (iv) marketing the Services.
-
-We do not use any Content (including any UGC) in private repositories to market the Services. The license you give us is only for the above purposes.
+   We do not use any Content (including any UGC) in private repositories to market the Services. The license you give us is only for the above purposes.
 
 3. **Representations and Warranties Regarding UGC**. In connection with your UGC, you represent, warrant, and covenant that you have the right to post it, including written consent from anyone referenced or involved, it doesn't violate any laws (such as IP or privacy rights), and we won’t have to pay anybody else (including you) in order to host it and make it available to other users. You’re responsible for obtaining all necessary consents and permissions for any UGC, including Code, that you provide or make accessible to the Services.
 
@@ -237,9 +235,9 @@ If you are an Organization established in the European Economic Area, the United
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Third party services and software may be necessary for Sourcegraph.com to work (examples include libraries Sourcegraph uses internally, code hosts, authentication providers, external code analyzers, monitoring and tracing tools, etc.). We’re not responsible for anything provided by a third party, and additional terms and conditions may apply.</i></span>
+<span style="color:#777777"><i>**Short version**: Third party services and software may be necessary for Sourcegraph Cloud to work (examples include libraries Sourcegraph uses internally, code hosts, authentication providers, external code analyzers, monitoring and tracing tools, etc.). We’re not responsible for anything provided by a third party, and additional terms and conditions may apply.</i></span>
 
-The Services may call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk.
+You may enable the Services to call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We do not share Your Code with third-party services, unless you enable the integration or extension. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk.
 
 The Services may contain copyrighted software of our licensors (**“Third Party Software”**). The licensors retain all right, title, and interest in and to such Third Party Software and all copies thereof. Your use of any Third Party Software is subject to the terms and conditions of this Agreement, and any other terms and conditions in any Third Party Software documentation or printed materials (including EULAs).
 
@@ -280,13 +278,15 @@ In accordance with the DMCA and other applicable law, we have adopted a policy o
 
 <span style="color:#b200f8;">
 
-## 11. No warranties; disclaimer
+## 11. Warranties; disclaimer
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: The Services and Code Data are provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span>
+<span style="color:#777777"><i>**Short version**: Other than the warranties explicitly described in this Section, the Services and Code Data are provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span>
 
-THE SERVICES AND CODE DATA, AND ANY OTHER SOFTWARE, APPLICATIONS, PRODUCTS, AND SERVICES MADE AVAILABLE ON OR IN CONNECTION WITH THE SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR OTHERWISE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, SOURCEGRAPH DISCLAIMS, ON BEHALF OF ITSELF AND ITS LICENSORS, ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. FURTHER, WE DO NOT WARRANT THAT THE SERVICES OR CODE DATA OR ANY PART THEREOF (OR YOUR ACCESS THERETO) WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS, WILL MEET YOUR REQUIREMENTS, OR THAT DEFECTS WILL BE CORRECTED.
+We warrant that (1) the Services will perform materially in accordance with the applicable Documentation when accessed and used as recommended in the Documentation and in accordance with the Agreement and (2) to the best of our knowledge, the Services are free from, and we will not knowingly introduce, software viruses, worms, Trojan horses or other code, files, scripts, or agents intended to do harm. Your sole and exclusive remedy for breach of the warranties in this section is set forth in Section 7.2.
+
+OTHER THAN THE WARRANTIES EXPLICITLY SET FORTH IN THIS SECTION 11, THE SERVICES AND CODE DATA, AND ANY OTHER SOFTWARE, APPLICATIONS, PRODUCTS, AND SERVICES MADE AVAILABLE ON OR IN CONNECTION WITH THE SERVICES ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE” BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR OTHERWISE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, SOURCEGRAPH DISCLAIMS, ON BEHALF OF ITSELF AND ITS LICENSORS, ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. FURTHER, WE DO NOT WARRANT THAT THE SERVICES OR CODE DATA OR ANY PART THEREOF (OR YOUR ACCESS THERETO) WILL BE UNINTERRUPTED OR ERROR-FREE, WILL MEET YOUR REQUIREMENTS, OR THAT DEFECTS WILL BE CORRECTED.
 
 CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS AS PROVIDED BY LAW.
 
@@ -298,7 +298,7 @@ CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCL
 
 <span style="color:#777777"><i>**Short version**: Our liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us for access to the services. Please read this section carefully.</i></span>
 
-UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, WILL EITHER PARTY (OR ITS AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SERVICES, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+UNDER NO CIRCUMSTANCES WILL EITHER PARTY (OR ITS AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SERVICES, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
 APPLICABLE LAW MAY NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY. IN SUCH CASES, EACH PARTY'S LIABILITY WILL BE LIMITED TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW.
 
@@ -312,16 +312,13 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: The Services and Code Data are provided at your own risk.</i></span>
+<span style="color:#777777"><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.</i></span>
 
-You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiaries, agents, managers, and other affiliated companies, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from:
+13.1 **By You**. You agree to defend us and our affiliates, directors, officers, employees, and contractors from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Services in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any third-party intellectual property or other right of any person or entity, or any other party’s access and use of the Services with your unique username, password, or other appropriate security code.
 
-1. your use of and access to the Services, including any data or work transmitted or received by you;
-2. your violation of any term of the Agreement, including without limitation, your breach of any of the representations and warranties above;
-3. your violation of any third-party right, including without limitation any right of privacy, publicity rights or intellectual property rights;
-4. your violation of any law, rule or regulation of the United States or any other country;
-5. any claim or damages that arise as a result of your use of the Code Data or any Content submitted via your account (including UGC); or
-6. any other party's access and use of the Services with your unique username, password or other appropriate security code. We will have the right to control the defense, settlement, adjustment or compromise of any such claims, actions or proceedings by using counsel selected by us. We will use reasonable efforts to notify you of any such claims, actions, or proceedings upon becoming aware of the same.
+13.2 **By Sourcegraph**. We agree to defend you and your affiliates, directors, officers, employees, and contractors from and against any third-party claims, proceedings, demands, and investigations and indemnify you for damages, attorney’s fees, and costs arising from your use of the Services or Documentation in accordance with this Agreement that infringes or misappropriates such third-party’s intellectual property rights, except for claims arising from (a) Your Code or Content, (b) your use of the Services in violation of the Agreement, or (c) any modification, combination, or development of the Services not performed by us.
+
+13.3 **Procedure**. Each party must give the other prompt written notice of any defense or indemnity sought and reasonable cooperation in the defense. The defending party will have sole control of the defense and settlement, provided that neither party may enter into a settlement placing any material obligation of any kind, including any admission of liability or payment of any amount, on the other party without the other party’s prior written approval, not to be unreasonably withheld, conditioned, or delayed.
 
 <span style="color:#b200f8;">
 
@@ -361,11 +358,11 @@ You agree to defend, indemnify and hold harmless Sourcegraph and its subsidiarie
 
 16.3 **U.S. Government End Users**. The Services were developed by private financing and constitute a "Commercial Item," as that term is defined at 48 C.F.R. § 2.101. The Services and Documentation consist of "Commercial Computer Software" and "Commercial Computer Software Documentation," as such terms are used in 48 C.F.R. § 12.212. Consistent with 48 C.F.R. § 12.212 and 48 C.F.R. §§ 227.7202-1 through 227.7202-4, all U.S. Government End Users acquire only those rights in the Services and the documentation that are specifically provided by this Agreement. Consistent with 48 C.F.R. § 12.211, all U.S. Government End Users acquire only technical data and the rights in that data customarily as specifically provided in this Agreement.
 
-16.4 **Waiver**. Our failure to exercise or enforce any right or provision of the Agreement will not constitute a waiver of such right or provision. Any waiver of any provision of the Agreement will be effective only if in writing and signed by us.
+16.4 **Waiver**. A party's failure to exercise or enforce any right or provision of the Agreement will not constitute a waiver of such right or provision. Any waiver of any provision of the Agreement will be effective only if in writing and signed by the waiving party.
 
 16.5 **Severability**. If any provision of the Agreement is held to be unlawful, void, or for any reason unenforceable, then that provision will be limited or eliminated from the Agreement to the minimum extent necessary and will not affect the validity and enforceability of any remaining provisions; except that in the event of unenforceability of the universal Class Action/Jury Trial Waiver, the entire arbitration agreement shall be unenforceable.
 
-16.6 **Assignment**. The Agreement and any rights and licenses granted hereunder, may not be transferred or assigned by you, but may be assigned by us without restriction.
+16.6 **Assignment**. The Agreement and any rights and licenses granted hereunder, may not be transferred or assigned by either party without written consent, except in connection with a merger, acquisition, reorganization, or sale of substantially all assets.
 
 16.7 **Survival**. Upon termination of the Agreement, any provision which, by its nature or express terms should survive, shall survive such termination or expiration.
 

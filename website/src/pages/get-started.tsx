@@ -105,7 +105,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                             </div>
                             <h1 className="title">Sourcegraph Self-Hosted</h1>
                             <span className="badge">
-                                <img src="../star.svg" />
+                                <img src="/star.svg" />
                                 <span>Most Popular</span>
                             </span>
                             <p>
@@ -134,7 +134,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                         Install Sourcegraph locally
                                         <span className="get-started-page__copytext">
                                             <img
-                                                src="../copy-text-icon.svg"
+                                                src="/copy-text-icon.svg"
                                                 className="copytext icon-inline ml-1 medium"
                                             />
                                         </span>
@@ -144,7 +144,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                         --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                         --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                         --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                        sourcegraph/server:3.36.2
+                                        sourcegraph/server:3.36.3
                                     </span>
                                 </div>
                                 <a className="btn" href="https://info.sourcegraph.com/talk-to-a-developer">
