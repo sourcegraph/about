@@ -94,7 +94,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                     when it comes to navigating around an ecosystem with hundreds of repositories or even multiple
                     organizations.
                 </p>
-                <footer className="blockquote-footer">Anyscale</footer>
+                <footer className="blockquote-footer">Alex Wu, Software Engineer at Anyscale</footer>
                 <div className="my-4">
                     <img src="/external-logos/anyscale-logo.svg" width="110px" alt="anyscale" />
                 </div>
