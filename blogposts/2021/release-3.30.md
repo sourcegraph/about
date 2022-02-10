@@ -11,6 +11,7 @@ changelogItems:
   - description: 'Batch Changes changesets can now be published from the Sourcegraph UI.'
     url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
     category: Batch Changes
+  - description: Search References is a new search sidebar section to simplify learning about the available search filters directly where they are used.
     url: https://github.com/sourcegraph/sourcegraph/issues/21539
     category: Search
   - description: 'API docs is enabled by default in Sourcegraph 3.30.0. It can be disabled by adding `"apiDocs": false` to the `experimentalFeatures` section of user settings.'
