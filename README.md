@@ -22,6 +22,7 @@ In a terminal, change into the `website` directory, and run the install script:
 ```shell
 ./script/install.sh
 ```
+
 This will check that you have the correct version of Node installed, and install the dependeny versions pinned in the lockfile.
 
 Then to serve the site, you have two options:
