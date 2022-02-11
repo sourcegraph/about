@@ -17,6 +17,6 @@ if [ ! -x "$YARN" ]; then
     exit 1
 fi
 
-echo "Install dependencies from the lock file"
+echo "Installing dependencies from the lock file"
 
 yarn install --immutable --immutable-cache --check-cache
