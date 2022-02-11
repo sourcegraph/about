@@ -17,11 +17,12 @@ Gatsby requires Node.js, and we recommend using [yarn](https://yarnpkg.com/en/) 
 
 Developing the static site locally is separate from developing the handbook. [Read the Handbook section](#Handbook) to learn how to develop the handbook locally.
 
-In a terminal, change into the `website` directory, and run:
+In a terminal, change into the `website` directory, and run the install script:
 
 ```shell
-yarn install
+./script/install.sh
 ```
+This will check that you have the correct version of Node installed, and install the dependeny versions pinned in the lockfile.
 
 Then to serve the site, you have two options:
 
