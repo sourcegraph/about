@@ -16,7 +16,7 @@ const styles = {
         gap: 1rem;
         margin: 1rem;
     `,
-    insight: ''
+    insight: '',
 }
 
 const CodeInsights: React.FunctionComponent<PageProps> = props => (
