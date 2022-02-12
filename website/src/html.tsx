@@ -104,12 +104,11 @@ export default class HTML extends React.Component<HtmlProps> {
                         }}
                     />
 
-                    {
-                        /* Add Sourcegraph tracker */ <script
-                            type="text/javascript"
-                            src="https://storage.googleapis.com/sourcegraph-assets/analytics/eventlogger.bundle.js"
-                        />
-                    }
+                    {/* Add Sourcegraph tracker */}
+                    <script
+                        type="text/javascript"
+                        src="https://storage.googleapis.com/sourcegraph-assets/analytics/main.js"
+                    />
                 </head>
                 <body>
                     {/* Google Tag Manager (noscript) */}
