@@ -16,9 +16,9 @@ const CaseStudiesHome: FunctionComponent<CaseStudiesHomeProps> = ({ slugs }) => 
         <div>
             <div>
                 {slugs.map((slug: string) => (
-                    <div key={slug} >
-                        <Link href={`/case-studies/${slug}`} passHref={true}>
-                            {slugToTitleCase(slug)}   
+                    <div key={slug}>
+                        <Link href={`/case-studies/${slug}`}>
+                            <a>{slugToTitleCase(slug)}</a>
                         </Link>
                     </div>
                 ))}
@@ -28,7 +28,7 @@ const CaseStudiesHome: FunctionComponent<CaseStudiesHomeProps> = ({ slugs }) => 
 )
 
 export const getStaticProps: GetStaticProps<CaseStudiesHomeProps> = async ({ preview = false }) => {
-    const slugs = await getAllPages(path.join(process.cwd(), 'pages/case-studies'))
+    const slugs = await getAllPages(path.join(process.cwd(), 'src/pages/case-studies'))
 
     return {
         props: {

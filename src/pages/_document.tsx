@@ -10,10 +10,13 @@ export default class MyDocument extends Document {
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-
-                    {/* {css} */}
+                    
                     <link rel="icon" type="image/png" href="/favicon.png" />
-                    <link rel="alternate" type="application/rss+xml" title="Sourcegraph – Universal Code Search" href="/rss.xml" />
+
+                    {/* TODO Implement RSS Feed */}
+                    {/* <link rel="alternate" type="application/rss+xml" title="Universal Code Search | Sourcegraph" href="/rss.xml" /> */}
+                    
+                    {/* Sourcegraph Chrome Extension */}
                     <link
                         rel="chrome-webstore-item"
                         href="https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack"
@@ -21,6 +24,14 @@ export default class MyDocument extends Document {
 
                     {/* Adobe Source Sans Pro Fonts */}
                     <link rel="stylesheet" href="https://use.typekit.net/ngk3rlb.css" />
+
+                    {/* Google Fonts */}
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&family=PT+Sans:wght@400;700&display=swap"
+                        rel="stylesheet"
+                    />
 
                     <meta name="google-site-verification" content="vRPkjcQnrXKgId0IyxVPHp0CGp3B7zaEFiTpyb8kPSQ" />
                 </Head>
@@ -41,6 +52,7 @@ export default class MyDocument extends Document {
                         />
                     </noscript>
                     {/*  End Google Tag Manager (noscript) */}
+
                     <Main />
                     <NextScript />
                 </body>

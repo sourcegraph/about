@@ -8,7 +8,9 @@ export const CaseStudy: FunctionComponent = () => (
             their money. With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds
             of microservices.
         </p>
+
         <h2 className="pt-5 pb-1">The need for cross-repository code search</h2>
+
         <p>
             When SoFi decided to switch their code host from Bitbucket to GitLab they quickly realized they
             would need a more powerful code search tool to search over their hundreds of repositories. They
@@ -16,21 +18,24 @@ export const CaseStudy: FunctionComponent = () => (
             committed their code changes. The need for fast and accurate code search and cross-repository
             code navigation led the engineering team to install Sourcegraph. As a FinTech company that
             contains highly sensitive data from their customers, SoFi emphasizes on security and appreciated
-            Sourcegraph’s <a href="/blog/from-saas-to-on-premises">on-prem solution</a>.
+            Sourcegraph's <a href="/blog/from-saas-to-on-premises">on-prem solution</a>.
         </p>
-        <h2 className="pt-5 pb-1">Move fast and don’t break things</h2>
+
+        <h2 className="pt-5 pb-1">Move fast and don't break things</h2>
+
         <p>
             As a financial institution, SoFi needs to avoid downtime—but they also need to continuously
             innovate to compete. SoFi runs hundreds of microservices. Their fast growth makes it difficult
             to maintain a complete list of the published APIs showing the interdependencies of their
             services. A common use case for Sourcegraph is to find which microservice is referenced by
             another. This ability safeguards against breaking production with code changes and avoids code
-            duplications. SoFi’s codebase is updated hundreds of times a day making Sourcegraph’s real time
+            duplications. SoFi's codebase is updated hundreds of times a day making Sourcegraph's real time
             code investigation features with “go to definition” and “find all references” across all
-            microservices indispensable for SoFi engineers’ daily coding activities, mentoring and stack
+            microservices indispensable for SoFi engineers' daily coding activities, mentoring and stack
             trace investigations. With Sourcegraph, SoFi engineers fully understand the scope and breadth of
             how their code changes impact other microservices.
         </p>
+
         <br />
     </div>
 )

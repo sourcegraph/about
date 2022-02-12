@@ -8,15 +8,17 @@ export const CaseStudy: FunctionComponent = () => (
             and navigation enables data scientists to analyze and verify data transformation code
             independently, and at any time.
         </p>
+
         <p>
-            With Sourcegraph, Convoy’s data scientists can trace back how and when data is written to the
-            databases and model endpoints are invoked. They can keep track of Convoy’s ever-transforming
+            With Sourcegraph, Convoy's data scientists can trace back how and when data is written to the
+            databases and model endpoints are invoked. They can keep track of Convoy's ever-transforming
             data warehouse.
         </p>
  
         <h2 className="pt-5 pb-1">Avoiding expensive mistakes</h2>
+
         <p>
-            Prior to using Sourcegraph, Convoy’s engineers had to clone repos locally in order to find
+            Prior to using Sourcegraph, Convoy's engineers had to clone repos locally in order to find
             necessary data. This would cause problems, as Owen, a Senior Software Engineer, recalls:
         </p>
 

@@ -10,14 +10,16 @@ export const CaseStudy: FunctionComponent = () => (
             zones. This project will live for 10+ years, and the code will inevitably grow by orders of
             magnitude during that time.
         </p>
+
         <h2 className="pt-5 pb-1">Knocking down silos</h2>
         
         <p>
-            Sourcegraph supports collaboration across F5’s teams by indexing code so that developers can
-            easily find what they’re looking for across the entire codebase.
+            Sourcegraph supports collaboration across F5's teams by indexing code so that developers can
+            easily find what they're looking for across the entire codebase.
         </p>
         
         <h2 className="pt-5 pb-1">Overcoming API boundaries</h2>
+
         <p>
             Sourcegraph empowers teams across different API boundaries to communicate and work together more
             effectively. Developers at F5 now have a common way to discuss their code, understand
@@ -25,9 +27,10 @@ export const CaseStudy: FunctionComponent = () => (
         </p>
         
         <h2 className="pt-5 pb-1">Bringing teams together</h2>
+
         <p>
             F5 is comprised of teams that work more than 12 hours apart in different time zones. Sourcegraph
-            makes communication simple by enabling developers to read and understand each others’ code.
+            makes communication simple by enabling developers to read and understand each others' code.
         </p>
         
         <p>

@@ -13,18 +13,18 @@ export const CaseStudy: FunctionComponent = () => (
         <p>
             The Client Platform Team at Workiva is responsible for developing and maintaining the frameworks
             and shared libraries that all other products are built on. This includes a shared UI widget
-            library and maintaining dozens of Dart packages to support Workiva’s entire engineering team.
+            library and maintaining dozens of Dart packages to support Workiva's entire engineering team.
         </p>
 
         <p>
-            Any time they shipped a release for one of their packages, they’d also have to propagate it
+            Any time they shipped a release for one of their packages, they'd also have to propagate it
             across 70+ repositories used by other teams to avoid breaking changes. While they developed
             their own internal tool to automate these changes, it required ongoing maintenance and didn't
             provide end-to-end visibility into the path to completion.
         </p>
 
         <p>
-            Whenever a new version of a library came out, they’d either have to manually make the change
+            Whenever a new version of a library came out, they'd either have to manually make the change
             across dozens of repositories, spend time improving their internal tool to help automate the
             process, or add the update to their backlog.
         </p>
@@ -32,7 +32,7 @@ export const CaseStudy: FunctionComponent = () => (
         <h2 className="pt-5 pb-1">Automating large-scale updates with Batch Changes</h2>
 
         <p>
-            As an organization that values paying down tech debt, Workiva’s Client Platform team started
+            As an organization that values paying down tech debt, Workiva's Client Platform team started
             using Sourcegraph <a href="/batch-changes">Batch Changes</a> to help them efficiently propagate
             updates to dependencies across all of their repositories without any ongoing maintenance. The
             team has already used Batch Changes to:

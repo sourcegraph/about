@@ -53,11 +53,12 @@ export const CaseStudy: FunctionComponent = () => (
         </div>
 
         <h2 className="pt-5 pb-1">Migrating from monolith to microservices</h2>
+
         <p>
-            In 2019, FactSet’s engineering team started a huge code migration project to transition from a
+            In 2019, FactSet's engineering team started a huge code migration project to transition from a
             monolithic code repository in Perforce to microservices in GitHub. Part of the reason for
-            migrating involved recruiting and onboarding—new developers often hadn’t even heard of Perforce
-            and didn’t know how to use it. In addition, moving to a git-based system had technical benefits
+            migrating involved recruiting and onboarding—new developers often hadn't even heard of Perforce
+            and didn't know how to use it. In addition, moving to a git-based system had technical benefits
             for FactSet, including increased code stability, fewer failed deployments and broken builds, and
             a more agile, incremental approach to software engineering.
         </p>
@@ -65,7 +66,7 @@ export const CaseStudy: FunctionComponent = () => (
         <p>
             The developer services team spearheaded the transition to GitHub and met weekly with developers
             to provide updates and address issues. Soon after migrating the first 20+ repositories, the team
-            responsible for FactSet’s market data platform, which ingests a huge amount of data from
+            responsible for FactSet's market data platform, which ingests a huge amount of data from
             different stock exchanges, brought a major problem to their attention: the team could no longer
             search the code.
         </p>
@@ -84,6 +85,7 @@ export const CaseStudy: FunctionComponent = () => (
         </p>
 
         <h2 className="pt-5 pb-1">Expanding throughout the organization</h2>
+
         <p>
             Initially, the developer services team deployed Sourcegraph to the engineers responsible for the
             real-time news and quotes engine. But after receiving positive feedback, the team gave another
@@ -92,8 +94,8 @@ export const CaseStudy: FunctionComponent = () => (
         </p>
 
         <p>
-            “The responses were heavily biased towards, ‘I’m using this every day, or even multiple times in
-            any given day,’” Faunce said. Now, over 500 FactSet developers use Sourcegraph.
+            “The responses were heavily biased towards, ‘I'm using this every day, or even multiple times in
+            any given day,'” Faunce said. Now, over 500 FactSet developers use Sourcegraph.
         </p>
 
         <p>
@@ -102,7 +104,7 @@ export const CaseStudy: FunctionComponent = () => (
         </p>
 
         <p>
-            “If I’m developing code for a library that might draw charts, for example, we don’t want 30
+            “If I'm developing code for a library that might draw charts, for example, we don't want 30
             different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to find other
             chart examples, and simply copy the code. This saves us time and ensures consistency.”
         </p>

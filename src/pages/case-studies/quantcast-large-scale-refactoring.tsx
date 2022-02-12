@@ -10,12 +10,13 @@ export const CaseStudy: FunctionComponent = () => (
         </p>
 
         <p>
-            Founded in 2006, Quantcast’s engineering team had amassed thousands of repositories. This growth
+            Founded in 2006, Quantcast's engineering team had amassed thousands of repositories. This growth
             made refactoring a difficult and time-consuming task for an unaided engineer to tackle. After
             discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.
         </p>
 
         <h2 className="pt-5 pb-1">GDPR readiness though organization-wide code search</h2>
+
         <p>
             May 2018 was the deadline for the EU General Data Protection Regulation, a law that provides
             widespread protections for users and their personal data. Quantcast saw it as an opportunity to
@@ -26,7 +27,7 @@ export const CaseStudy: FunctionComponent = () => (
             Quantcast created a tiger-team to not only meet GDPR compliance, but exceed the requirements.
             They analyzed what services ought to handle GDPR-defined personal data, and used Sourcegraph to
             discover which actually did. Personal data, such as IP addresses, can be identified within
-            source code by using Sourcegraph’s regular expression search. Searching for{' '}
+            source code by using Sourcegraph's regular expression search. Searching for{' '}
             <code className="language-text">"ip"</code> would return too many results.
         </p>
 
@@ -69,8 +70,8 @@ export const CaseStudy: FunctionComponent = () => (
         <h2 className="pt-5 pb-1">Preventing future issues with code monitoring and notifications</h2>
 
         <p>
-            With more data privacy laws on the horizon (such as California’s Consumer Privacy Act),
-            Quantcast can navigate the shifting regulatory landscape. Using Sourcegraph’s saved searches,
+            With more data privacy laws on the horizon (such as California's Consumer Privacy Act),
+            Quantcast can navigate the shifting regulatory landscape. Using Sourcegraph's saved searches,
             senior engineers have an easy way to define patterns, set up ownership, and get early warning
             alerts before any changes that affect personal data are merged.
         </p>

@@ -4,7 +4,7 @@ export const CaseStudy: FunctionComponent = () => (
     <div className="container">
         <p>
             Indeed is a multinational job search website with over 11,000 employees and approximately 2,000
-            engineers. Indeed’s employment search features are available in 28 languages and 60 countries.
+            engineers. Indeed's employment search features are available in 28 languages and 60 countries.
         </p>
 
         <h2 className="pt-5 pb-1">Finding and fixing problematic code</h2>
@@ -17,7 +17,7 @@ export const CaseStudy: FunctionComponent = () => (
         </p>
 
         <p>
-            Whether it is five or 500 instances, these aren’t frivolous requests: they are changes that need
+            Whether it is five or 500 instances, these aren't frivolous requests: they are changes that need
             to happen. One of the most common — and often most urgent — reasons is for security. If a CVE or
             potential privacy issue is discovered in a particular library, the team needs to not only find
             out quickly where the issue is but also make sure that service owners act on that information.
@@ -28,19 +28,19 @@ export const CaseStudy: FunctionComponent = () => (
             the engineering organization, his team would send a generic email broadcast with the hope that
             the relevant engineers would take action. “We had an older change mechanism, where we just sent
             out a broadcast email to everybody in product and engineering who is potentially interested in
-            these things,” Hodge said. “Inevitably, a few people don’t get to it,” Hodge said. “There’s a
+            these things,” Hodge said. “Inevitably, a few people don't get to it,” Hodge said. “There's a
             lot of manual work to herding cats.”
         </p>
 
         <p>
-            After adopting Sourcegraph Universal Code Search, Hodge’s team was able to quickly identify
+            After adopting Sourcegraph Universal Code Search, Hodge's team was able to quickly identify
             every instance that needed to be updated. Instead of sending a generic request, such as ‘please
-            update this library to the latest version,’ his team was able to include a link to a Sourcegraph
+            update this library to the latest version,' his team was able to include a link to a Sourcegraph
             search to enable product and engineering to see what needed to be updated.
         </p>
 
         <p>
-            “We’re the source of a lot of these requests. Before, we didn’t really have any idea how much
+            “We're the source of a lot of these requests. Before, we didn't really have any idea how much
             work we were injecting to the product teams,” Hodge said. Once they started using Sourcegraph
             Universal Code Search, the internal platforms team would at least know if there were five
             instances or 500 and if the work would take a few minutes or a few days to accomplish.
@@ -53,7 +53,7 @@ export const CaseStudy: FunctionComponent = () => (
             be changed, but the internal platforms team had no real power to ensure the changes happened or
             to even nudge them towards completion. “I actually did a bit of prototyping to see if I could
             create JIRA issues based on the code searches,” Hodge said, as part of a search for a way to
-            help other team members actually make the changes that need to happen. When Sourcegraph’s{' '}
+            help other team members actually make the changes that need to happen. When Sourcegraph's{' '}
             <a href="/blog/introducing-batch-changes/">Batch Changes</a> came out, Hodge immediately saw the
             value in further removing friction by letting one person update all versions of a library across
             the codebase and then notify all the service owners so they could review.
@@ -67,7 +67,7 @@ export const CaseStudy: FunctionComponent = () => (
         <h3 className="pt-5 pb-1">Saving engineering time</h3>
 
         <p>
-            There’s quite a bit of variability in the amount of work required to remove every instance of a
+            There's quite a bit of variability in the amount of work required to remove every instance of a
             library or code pattern. In some cases it would only take a few minutes but in others it would
             take days.
         </p>
@@ -75,9 +75,9 @@ export const CaseStudy: FunctionComponent = () => (
         <h3 className="pt-5 pb-1">Reducing invisible taxes</h3>
 
         <p>
-            “There’s all these little hidden things that tax the velocity of the teams,” Hodge said.
+            “There's all these little hidden things that tax the velocity of the teams,” Hodge said.
             “Earlier this month I was using Sourcegraph to find code and things we needed to replace,
-            related to updating our build system, and we’ve seen an improvement in the build times as a
+            related to updating our build system, and we've seen an improvement in the build times as a
             result. But I feel like the summation of all these little things actually adds up to way more
             than just speeding up the build time.”
         </p>
