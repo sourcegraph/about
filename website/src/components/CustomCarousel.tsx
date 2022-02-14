@@ -76,7 +76,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     }, [carouselItems.currentItemIndex])
 
     return (
-        <div className={`custom-carousel row ${carouselItems.currentItem?.backgroundClass ?? ''}`}>
+        <div className={`custom-carousel d-flex flex-wrap ${carouselItems.currentItem?.backgroundClass ?? ''}`}>
             <div className="carousel-nav col-lg-4 col-md-2 ml-lg-7 ml-md-5">
                 <ArrowUpIcon
                     className="ml-lg-6 mb-4"

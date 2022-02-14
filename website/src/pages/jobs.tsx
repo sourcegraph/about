@@ -29,13 +29,13 @@ const CareersPage = props => {
                     </a>
                 </ContentSection>
 
-                <div>
-                    <img src="../careers/careers_hero_img.png" className="mx-auto hero-image" />
-                    <img src="../careers/careers_hero_img_mobile.jpg" className="mx-auto hero-image-mobile" />
+                <div className="text-center">
+                    <img src="../careers/careers_hero_img.png" className="hero-image" />
+                    <img src="../careers/careers_hero_img_mobile.jpg" className="hero-image-mobile" />
                 </div>
 
                 <div className="benefits">
-                    <div className="row">
+                    <div className="d-flex flex-wrap">
                         <div className="m-auto">
                             <h2 className="col-lg-10 display-2 text-center mx-auto">
                                 Happy, healthy, and always in the flow.
@@ -57,7 +57,7 @@ const CareersPage = props => {
                             </p>
                         </div>
                     </div>
-                    <div className="row benefits-row">
+                    <div className="d-flex flex-wrap benefits-row">
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
                             <img className="icon my-2 mx-auto" src="../careers/Remote.svg" />
                             <h3 className="my-2">Work fully remote</h3>
