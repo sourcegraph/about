@@ -4,8 +4,8 @@ import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { FunctionComponent } from 'react'
 
-import { getAllPages } from '@lib'
-import { slugToTitleCase } from '@util'
+import { getAllPages } from '@lib/index'
+import { slugToTitleCase } from '@util/index'
 
 interface CaseStudiesHomeProps {
     slugs: string[]

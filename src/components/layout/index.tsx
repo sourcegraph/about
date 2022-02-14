@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import React, { FunctionComponent, ReactNode, ReactFragment } from 'react'
 
-import Footer from './footer'
-import Header from './header'
+import Footer from './Footer'
+import Header from './Header'
 
 interface LayoutProps {
     meta?: {
@@ -12,9 +13,6 @@ interface LayoutProps {
         externalDescription?: string
         image?: string
         icon?: string
-    }
-    location: {
-        pathname: string
     }
     children: ReactNode | ReactFragment
     minimal?: boolean
@@ -27,12 +25,21 @@ interface LayoutProps {
     hideGetStartedButton?: boolean
 }
 
-const Layout: FunctionComponent<LayoutProps> = props => {
-    const pathname = '' // TODO
+export const Layout: FunctionComponent<LayoutProps> = props => {
+    const router = useRouter()
+    const { pathname } = router
+
     const isHome = pathname === '/'
     const isBlog = pathname === '/blog'
-    const isProductPage = ''
-    const meta = props.meta
+    const isProductPage = pathname.startsWith('/product/')
+
+    const meta: LayoutProps['meta'] = {
+        ...props.meta,
+        title: props.meta.title || 'Sourcegraph - Universal Code Search',
+        description: props.meta.description || 'Find and fix things across all of your code with Sourcegraph universal code search.',
+        image: props.meta.image || 'https://about.sourcegraph.com/sourcegraph-mark.png',
+        icon: props.meta.icon || 'https://about.sourcegraph.com/favicon.png',
+    }
 
     return (
         <div className={`flex flex-column fill-height ${props.className}`}>
@@ -59,7 +66,7 @@ const Layout: FunctionComponent<LayoutProps> = props => {
                 <Header
                     isHome={isHome}
                     isBlog={isBlog}
-                    // isProductPage={isProductPage}
+                    isProductPage={isProductPage}
                     minimal={props.minimal}
                     className={props.className}
                     hideGetStartedButton={props.hideGetStartedButton}
@@ -78,15 +85,3 @@ const Layout: FunctionComponent<LayoutProps> = props => {
         </div>
     )
 }
-
-Layout.defaultProps = {
-    meta: {
-        title: 'Sourcegraph - Universal Code Search',
-        description: 'Find and fix things across all of your code with Sourcegraph universal code search.',
-        image: 'https://about.sourcegraph.com/sourcegraph-mark.png',
-        icon: 'https://about.sourcegraph.com/favicon.png',
-    },
-    hideFooter: false
-}
-
-export default Layout
