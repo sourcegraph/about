@@ -26,30 +26,18 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             const cloudSection = document.querySelector('#sg-cloud')
             cloudSection.classList.toggle('d-none')
             cloudSection.classList.add('high')
-        } /* else {
-            // Toggle sg-cloud column
-            column.classList.remove('d-none')
-            column.classList.add('expanded')
-            column.classList.replace('col-lg-6', 'col-lg-12')
-            // Toggle arrow image
-            buttonRef.current.classList.toggle('d-none')
-            // Toggle other column
-            document.querySelector('#sg-self-hosted').classList.toggle('d-none')
-        }*/
+        }
     }
 
     const goBack = e => {
         const targetNode = e.target.parentNode.parentNode
         let column
 
-        if (targetNode.id == 'sg-self-hosted' || targetNode.id == 'sg-cloud') {
+        if (targetNode.id == 'sg-self-hosted') {
             column = targetNode
-        } else if (targetNode.parentNode.id == 'sg-self-hosted' || targetNode.parentNode.id == 'sg-cloud') {
+        } else if (targetNode.parentNode.id == 'sg-self-hosted') {
             column = targetNode.parentNode
-        } else if (
-            targetNode.parentNode.parentNode.id == 'sg-self-hosted' ||
-            targetNode.parentNode.parentNode.id == 'sg-cloud'
-        ) {
+        } else if (targetNode.parentNode.parentNode.id == 'sg-self-hosted') {
             column = targetNode.parentNode.parentNode
         }
 
@@ -70,15 +58,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
             setTimeout(() => {
                 cloudSection.classList.remove('high')
             }, 0)
-        } /*else {
-            // Toggle sg-cloud column
-            column.classList.remove('expanded')
-            column.classList.replace('col-lg-12', 'col-lg-6')
-            // Toggle arrow image
-            buttonRef.current.classList.toggle('d-none')
-            // Toggle other column
-            document.querySelector('#sg-self-hosted').classList.toggle('d-none')
-        }*/
+        }
     }
 
     const copyText = () => {
@@ -123,9 +103,9 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 <ArrowLeftIcon />
                                 <span>Deployment Options</span>
                             </div>
-                            <h1 className="display-2 title">Sourcegraph Self-Hosted</h1>
+                            <h1 className="title">Sourcegraph Self-Hosted</h1>
                             <span className="badge">
-                                <img src="../star.svg" />
+                                <img src="/star.svg" />
                                 <span>Most Popular</span>
                             </span>
                             <p>
@@ -139,7 +119,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 advanced security functionality.
                             </p>
                             <span
-                                className="btn btn-primary temporary mt-2"
+                                className="btn btn-primary temporary my-2"
                                 onClick={expandColumn}
                                 ref={node => (buttonRef.current = node)}
                             >
@@ -154,7 +134,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                         Install Sourcegraph locally
                                         <span className="get-started-page__copytext">
                                             <img
-                                                src="../copy-text-icon.svg"
+                                                src="/copy-text-icon.svg"
                                                 className="copytext icon-inline ml-1 medium"
                                             />
                                         </span>
@@ -164,7 +144,7 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                         --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                         --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                         --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                        sourcegraph/server:3.35.1
+                                        sourcegraph/server:3.36.3
                                     </span>
                                 </div>
                                 <a className="btn" href="https://info.sourcegraph.com/talk-to-a-developer">
@@ -184,29 +164,22 @@ export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
                                 <span>Deployment Options</span>
                             </div>
                             <h1 className="display-2 title">Sourcegraph Cloud</h1>
-                            <p>
-                                Sync your code from GitHub.com or GitLab.com. No technical setup is required. Sign up
-                                for free.
-                            </p>
+                            <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
                             <div className="small-title">Best For</div>
                             <p>Individual developers (small teams coming soon)</p>
                             <p>Search across your repositories and the open-source universe.</p>
-                            <p className="small-font">
+                            <p className="small-font temporary">
                                 Already have a Sourcegraph Cloud account?{' '}
                                 <a
                                     href="https://sourcegraph.com/sign-in"
                                     title="Search public code with Sourcegraph Cloud"
-                                    className="sign-in-link"
+                                    className="btn sign-in-link"
                                 >
                                     Sign in
                                 </a>
                             </p>
-                            <a
-                                className="btn btn-primary temporary mt-2"
-                                href="https://sourcegraph.com/search"
-                                ref={node => (buttonRef.current = node)}
-                            >
-                                Try it for free <ArrowRightIcon className="mobileIcon" />
+                            <a className="btn btn-primary temporary my-2" href="/get-started/cloud">
+                                Get started for free <ArrowRightIcon className="mobileIcon" />
                             </a>
                         </div>
                     </div>

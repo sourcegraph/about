@@ -28,7 +28,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 </Link>
                                 <a
                                     className="btn btn-outline-primary m-3"
-                                    href="https://share.hsforms.com/1m5LwDsRFSead4_2EAVTNEw1n7ku"
+                                    href="https://info.sourcegraph.com/demo-request"
                                     title="Request a demo"
                                 >
                                     Request a demo <ArrowRightIcon className="ml-1" />
@@ -88,10 +88,10 @@ const Index: React.FunctionComponent = (props: any) => (
                     <div className="col-lg-5">
                         <h2 className="display-3 font-weight-bold">Search open source code, too.</h2>
                         <p>
-                            Sourcegraph is indexing every open source repository with more than 1 star. You'll be able
-                            to search across a universe of code — currently over 1 million repositories and counting —
-                            in milliseconds. Explore, learn from, and reference the best community-developed code out
-                            there.
+                            Sourcegraph is indexing millions of open source repositories across several code hosts. With
+                            Sourcegraph, you can search the universe of open source code — currently over 2 million
+                            repositories and counting — in milliseconds. Explore, learn from, and reference the best
+                            community-developed code out there.
                         </p>
                         <div className="pt-1">
                             <a
@@ -130,7 +130,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                 </a>{' '}
                                 for up to 10 developers. To get your company to upgrade to a{' '}
                                 <Link to="/pricing">paid plan</Link>, see the{' '}
-                                <Link to="/customers">customers page</Link> (to make the case). Or{' '}
+                                <Link to="/use-cases">use cases page</Link> (to make the case). Or{' '}
                                 <a href="/contact/request-info">schedule time with us</a> for help.
                             </p>
                         </div>

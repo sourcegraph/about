@@ -20,7 +20,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/case-studies">Case studies</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/customers">Customers</Link>
+                                    <Link to="/use-cases">Use cases</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/pricing">Pricing</Link>
@@ -31,11 +31,6 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                         target="_blank"
                                     >
                                         Sourcegraph overview (PDF)
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="https://share.hsforms.com/1P0DMMkj6REGkZ__9GyVjxA1n7ku" target="_blank">
-                                        Free stickers!
                                     </a>
                                 </li>
                             </ul>
@@ -61,9 +56,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/podcast">Podcast</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://info.sourcegraph.com/emergence-of-big-code-2020-survey">
-                                        Big code survey
-                                    </a>
+                                    <a href="/dev-tools-quiz">Dev tools quiz</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/community">Community</Link>

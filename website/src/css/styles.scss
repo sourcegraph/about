@@ -254,12 +254,12 @@ table {
 @import 'pages/batch-changes';
 @import 'pages/cloud-beta';
 @import 'pages/community';
-@import 'pages/customers';
 @import 'pages/_case_studies';
 @import 'pages/_white_papers';
 @import 'pages/content';
 @import 'pages/events';
 @import 'pages/get-started';
+@import 'pages/get-started/cloud';
 @import 'pages/index';
 @import 'pages/jobs';
 @import 'pages/landing-page';
@@ -272,7 +272,9 @@ table {
 @import 'pages/support';
 @import 'pages/uninstall';
 @import 'pages/universal-code-search';
+@import 'pages/use-cases';
 @import 'templates/PostTemplate';
+@import 'pages/dev-tools-quiz';
 
 .virtual-br::before {
     content: '\A';

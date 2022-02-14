@@ -1,0 +1,29 @@
+.legend-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    // Reset ul styles (bullets, paddings, margins)
+    list-style: none;
+    padding: 0;
+    line-height: 1.2;
+
+    &--horizontal {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+
+.legend-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.legend-mark {
+    align-self: baseline;
+    width: 0.5rem;
+    height: 0.5rem;
+    flex-shrink: 0;
+    margin-right: 0.25rem;
+    border-radius: 50%;
+}

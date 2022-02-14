@@ -50,12 +50,38 @@
         }
     }
 
-    .join-the-waitlist {
-        margin-top: 170px;
+    .anyscale {
+        p {
+            padding-left: 1rem;
+            border-left: 3px solid #234999;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 1.5;
+
+            &::before {
+                text-indent: -0.4em;
+                content: '\201C';
+                position: absolute;
+                margin-left: -2px;
+            }
+
+            &::after {
+                content: '\201D';
+            }
+        }
+
+        footer {
+            font-size: 1rem;
+            font-weight: 400;
+        }
     }
 
-    ul {
-        list-style-position: inside;
+    .join-the-waitlist {
+        margin-top: 170px;
+
+        ul {
+            margin-left: -40px;
+        }
     }
 
     li {

@@ -110,3 +110,15 @@ command = "yarn run build"
   to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm/"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/customers"
+  to = "/use-cases"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/dpa"
+  to = "/dpa.pdf"
+  status = 200
+  force = true
