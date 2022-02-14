@@ -1,0 +1,61 @@
+.gitlab-integration-section {
+    $max-width: 135px;
+    background-color: #111111;
+
+    &__title {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    &__new-badge {
+        color: $light-11;
+        background-color: #dc3545;
+        border: 1px solid transparent;
+        padding: 0.15rem 0.75rem;
+        border-radius: 0.25rem;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__quote {
+        margin: 0 auto;
+        padding: 2.5rem 0;
+        font-size: 1.35rem;
+
+        p {
+            border-left: 3px solid $brand-cyan;
+            padding-left: 1rem;
+
+            text-indent: 0.4em;
+            line-height: 1.2;
+            letter-spacing: -0.015em;
+
+            &::before {
+                text-indent: -0.4em;
+                content: '"';
+                position: absolute;
+                margin-left: -2px;
+            }
+
+            &::after {
+                content: '"';
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1.9rem;
+            }
+        }
+
+        footer {
+            font-size: 1.4rem;
+            font-weight: 400;
+            opacity: 0.6;
+
+            &::before {
+                content: '—';
+            }
+        }
+    }
+}
