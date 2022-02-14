@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph for non-devs'
 description: 'Sourcegraph isn't just for software developers. Learn how product managers and analytics/business operations teammates use Sourcegraph as a powerful timesaver and cheat sheet that saves them 20-60 minutes multiple times per week.'
-author: 'Eric Brody-Moore, Joel Kwartler'
+author: Eric Brody-Moore and Joel Kwartler
 publishDate: 2022-17-08T00:00-07:00
 tags: [blog]
 slug: sourcegraph-for-non-devs
