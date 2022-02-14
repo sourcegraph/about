@@ -1,9 +1,49 @@
 import { Link, PageProps } from 'gatsby'
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
+import { CodeInsightExample } from '../components/code-insights/CodeInsightsExamples'
+import { CodeInsightExampleType } from '../components/code-insights/types'
+import {
+    CAPTURE_INSIGHT_TERRAFORM_EXAMPLES_DATA,
+    SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
+} from '../components/code-insights/mock-data'
 import Layout from '../components/Layout'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
+import CustomCarousel from '../components/CustomCarousel'
+import BullsEyeArrowIcon from 'mdi-react/BullseyeArrowIcon'
+import RocketLaunchOutlineIcon from 'mdi-react/RocketLaunchOutlineIcon'
+import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
+import LighteningBoltOutlineIcon from 'mdi-react/LightningBoltOutlineIcon'
+
+const items = [
+    {
+        id: 0,
+        backgroundClass: '',
+        buttonLabel: 'Track migrations, adoption, and deprecations',
+        text: 
+            <CodeInsightExample
+                type={CodeInsightExampleType.Search}
+                data={SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA}
+                className=''
+            />,
+        headerClass: 'active',
+        itemClass: 'd-block',
+    },
+    {
+        id: 1,
+        backgroundClass: '',
+        buttonLabel: 'Delete and track versions of languages or packages',
+        text: 
+            <CodeInsightExample
+                type={CodeInsightExampleType.Capture}
+                data={CAPTURE_INSIGHT_TERRAFORM_EXAMPLES_DATA}
+                className=''
+            />,
+        headerClass: '',
+        itemClass: 'd-none',
+    },
+]
 
 export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
     <Layout
@@ -14,6 +54,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                 'Draw insights from your codebase about how different initiatives are tracking over time. Code Insights is now generally available for teams of all sizes.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
+        className="code-insights-page"
         heroAndHeaderClassName="code-insights-page__hero-and-header"
         hero={
             <div className="container pb-4">
@@ -49,7 +90,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         }
     >
            
-        <ContentSection>
+        <div className="p-8">
             <div className="row">
                 {/* Placeholder */}
                 <div className="col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-7">
@@ -73,45 +114,53 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     </p>
                 </div>
             </div>
-        </ContentSection>
+            <CustomCarousel items={items} autoAdvance={true} />
+        </div>
         
 
-        <div className="bg-gradient-green-blue py-5">
+        <div className="bg-gradient-blue-mist py-5">
             <ContentSection className="py-5">
-                <div className="row">
+                <div className="d-flex flex-wrap">
+                    <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">Benefits for VP of Engineering</h2>
                     <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Sourcegraph Champions Program</h2>
-                        <p>
-                            In the spirit of collaboration, we created the Sourcegraph Champions Program to serve the
-                            developer community, create a friendly networking space and share knowledge among each
-                            other.
-                        </p>
-                        <p>
-                            We believe that if we create the right environment and provide equal resources for all,
-                            everyone can learn how to code. This is our mission. And if you share the same idea you are
-                            a "champion" in our eyes.
-                        </p>
-                        <p>
-                            We can't wait to meet you! And send you really cool custom swag ;)
-                            <br />
-                            <a
-                                className="btn btn-primary mt-3"
-                                href="https://handbook.sourcegraph.com/marketing/becoming_a_sourcegraph_champion"
-                            >
-                                Become a Sourcegraph Champion
-                            </a>
-                        </p>
-                        <p>
-                            Or if you know someone that should be a Sourcegraph Champion, please{' '}
-                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them</a>.
-                        </p>
+                        <div className="d-flex">
+                            <div className="mr-4"><BullsEyeArrowIcon size={50} /></div>
+                            <div className="d-flex flex-column">
+                                <h3>Goal setting</h3>
+                                <p>
+                                    Set and measure goals around progress in your codebase.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="d-flex">
+                        <div className="mr-4"><RocketLaunchOutlineIcon size={50} /></div>
+                            <div className="d-flex flex-column">
+                                <h3>One step ahead</h3>
+                                <p>
+                                    Be on the pulse of engineering initiatives.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-lg-6">
-                        <img
-                            className="sg_champion_img mt-6"
-                            src="/community/SG_Robots_Trophy.png"
-                            alt="Become a Sourcegraph Champion!"
-                        />
+                        <div className="d-flex">
+                            <div className="mr-4"><TrendingUpIcon size={50} /></div>
+                            <div className="d-flex flex-column">
+                                <h3>{'Ownership & trends'}</h3>
+                                <p>
+                                    Tie trends and metrics to owners on the teams.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="d-flex">
+                            <div className="mr-4"><LighteningBoltOutlineIcon size={50} /></div>
+                            <div className="d-flex flex-column">
+                                <h3>Be proactive</h3>
+                                <p>
+                                    Get on top of issues before they escalate.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </ContentSection>

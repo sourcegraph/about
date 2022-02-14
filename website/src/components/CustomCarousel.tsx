@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState, useEffect, useCallback } from 'react'
+import React, { FunctionComponent, useState, useEffect, useCallback, ReactNode } from 'react'
 import ArrowUpIcon from 'mdi-react/ArrowUpIcon'
 import ArrowDownIcon from 'mdi-react/ArrowDownIcon'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
@@ -17,7 +17,7 @@ interface CarouselItem {
     backgroundClass: string
     buttonLabel: string
     headerClass: string
-    text: string
+    text: string | ReactNode
     itemClass: string
 }
 
@@ -102,7 +102,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 {carouselItems.items.map(item => (
                     <div key={item.id} className={item === carouselItems.currentItem ? 'd-block' : 'd-none'}>
                         <h1 className="display-2 mb-lg-4">{item.buttonLabel}</h1>
-                        <p>{item.text}</p>
+                        <div>{item.text}</div>
                     </div>
                 ))}
             </div>

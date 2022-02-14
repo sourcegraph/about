@@ -290,6 +290,9 @@ table {
 .bg-gradient-blue-green {
     background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
 }
+.bg-gradient-blue-mist {
+    background: linear-gradient(90deg, $white 0%, $blue-mist, $light-green2 100%);
+}
 .bg-gradient-blue-purple {
     background: linear-gradient(90deg, $light-blue 0%, $light-purple 100%);
 }
