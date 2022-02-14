@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph for non-devs'
-description: 'Sourcegraph isn't just for software developers. Learn how product managers and analytics/business operations teammates use Sourcegraph as a powerful timesaver and cheat sheet that saves them 20-60 minutes multiple times per week.'
-author: Eric Brody-Moore and Joel Kwartler
+description: "Sourcegraph isn't just for software developers. Learn how product managers and analytics/business operations teammates use Sourcegraph as a powerful timesaver and cheat sheet that saves them 20-60 minutes multiple times per week."
+author: Eric Brody-Moore, Joel Kwartler
 publishDate: 2022-17-08T00:00-07:00
 tags: [blog]
 slug: sourcegraph-for-non-devs
@@ -13,10 +13,6 @@ published: true
 # Notebook
 
 <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MQ==?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-
-<!-- Output copied to clipboard! -->
-
-<!-----
 
 Sourcegraph is an extremely powerful developer tool used by engineers at top companies, from Uber and Lyft to Amazon and SoFi. But we’ve also discovered it’s a powerful timesaver and cheat sheet for teams across an organization, such as Product Management, Business Operations, Analytics, and Marketing.
 
@@ -31,12 +27,13 @@ _This section is written by, the Product Manager for Code Insights. He’s a bri
 
 As a product manager at a fast growing startup, I frequently need to know how our features interact, which analytics metrics other teammates have already built, and which product team processes or standards exist versus those that haven’t been built out yet. I use Sourcegraph to help me quickly answer these types of questions.
 
-
 ### What actions do our metrics track?
 
 I’d just joined Sourcegraph in September 2020 as the first PM for the extensibility team. I went through our Business Intelligence platform but didn’t know what “ViewRegistryExtensionManage” meant or how it was different than “ViewRegistryExtensionContributions.” I turned to Sourcegraph.
 
 **Search:** First, I [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+viewRegistryExtensionManage&patternType=regexp), got no results, [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+view+RegistryExtensionManage&patternType=regexp), got results, and then [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27RegistryExtension&patternType=literal), which gave me a quick reference for the pages all the events fired on. From there, I could glance through the strings and comments on the page to map them back to states in our app.
+
+<iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc3==?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
 **Impact:** I didn’t need to ask a teammate or pull the repo(s) and search it locally. The latter means I also didn’t have to clutter my desktop with yet another open application window.
 
