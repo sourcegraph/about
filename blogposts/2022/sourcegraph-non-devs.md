@@ -20,7 +20,6 @@ Sourcegraph saves our Product Managers and Analytics/Business Operations teammat
 
 The difference between “I can figure this out in five minutes with a Sourcegraph search” versus “I can ask someone on another team in another timezone, and if they don’t know, follow up with a third person in a third timezone” is often the difference between taking care of something versus letting that task die on a todo list backlog.
 
-
 ## Product Managers
 
 _This section is written by, the Product Manager for Code Insights. He’s a brilliant, genuinely kind human being who’s being played by Brad Pitt in an upcoming HBO biopic._
@@ -41,7 +40,6 @@ I’d just joined Sourcegraph in September 2020 as the first PM for the extensib
 
 **Follow-up situation:** We can quickly see the names of all of our view analytics events and be able to go to what page they’re triggered on with [this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27...%27%29+count:all&patternType=structural). (Bonus: with the [Open-in-Figma extension](https://sourcegraph.com/extensions/Joelkw/open-in-figma) I can then 1-click open a mockup of the page to get an immediate understanding of “what page fires this event” without reading the code to figure out what page it renders.)
 
-
 ### I’m mid-conversation with a customer. Is another team’s feature affecting our feature?
 
 A customer was seeing incomplete result counts for the search results returned for a Code Insights feature, making it impossible to reason about their code based on these incomplete results.
@@ -52,7 +50,6 @@ A customer was seeing incomplete result counts for the search results returned f
 
 **Time Saved:** 18 hours waiting for a teammate to answer my question – hours that were especially important given we were actively working with a customer
 
-
 ### What's the Sourcegraph standard for error message syntax?
 
 I needed to finish writing the error messages that display to users for a major new feature. We have [error message guidelines](https://about.sourcegraph.com/handbook/communication/content_guidelines/actionable_language#error-messages) in our handbook, but it’s easier to quickly learn something with an example.
@@ -61,8 +58,7 @@ I needed to finish writing the error messages that display to users for a major 
 
 **Impact:** I was able to produce more unified product messaging.
 
-**Time Saved:** I saved 10 minutes I would have spent clicking through the product and avoided causing errors I would have otherwise needed to cause so I could  find live examples.
-
+**Time Saved:** I saved 10 minutes I would have spent clicking through the product and avoided causing errors I would have otherwise needed to cause so I could find live examples.
 
 ### Situation: Determine the different [blank]@sourcegraph emails we direct users to across our entire user-facing codebase
 
@@ -75,7 +71,6 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 **Time Saved:** We saved hours or even days. The alternative solution would have involved searching every single repository or asking every long-tenured teammate to list what emails they recall seeing used.
 
 **Follow-up situation:** What anchor text do we generally use for the email link, or do we display the direct email? Search: [https://sourcegraph.com/search?q=context:global+r:sourcegraph/+mailto:feedback%40sourcegraph.com&patternType=literal](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+mailto:feedback%40sourcegraph.com&patternType=literal)
-
 
 ### Should we use “prototype” or “experimental” for early-stage product features?
 
@@ -101,10 +96,10 @@ The architecture of our internally-facing data is ever-changing, so it’s criti
 
 **Searches:**
 
-* [context:@ericbm repo:^github\.com/sourcegraph/sourcegraph$ file:^internal/database/schema\.md type:diff patternType:literal](https://sourcegraph.com/search?q=context:%40ericbm+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:%5Einternal/database/schema%5C.md+type:diff&patternType=literal)** **shows how our Postgres db structure changes over time.
-* [context:global repo:^github\.com/sourcegraph/sourcegraph eventLogger.log( type:diff patternType:literal](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph+eventLogger.log%28+type:diff&patternType=literal) helps us stay on top of which events. Our Data team has [code monitors](https://docs.sourcegraph.com/code_monitoring/how-tos/starting_points) set up so we get real-time notifications when individual events are added or removed.
+- [context:@ericbm repo:^github\.com/sourcegraph/sourcegraph$ file:^internal/database/schema\.md type:diff patternType:literal](https://sourcegraph.com/search?q=context:%40ericbm+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:%5Einternal/database/schema%5C.md+type:diff&patternType=literal)\*\* \*\*shows how our Postgres db structure changes over time.
+- [context:global repo:^github\.com/sourcegraph/sourcegraph eventLogger.log( type:diff patternType:literal](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph+eventLogger.log%28+type:diff&patternType=literal) helps us stay on top of which events. Our Data team has [code monitors](https://docs.sourcegraph.com/code_monitoring/how-tos/starting_points) set up so we get real-time notifications when individual events are added or removed.
 
-**Impact:** These searches put the information that analysts need in their hands so that they can  understand our backend data structures when they create reports. We can click through the PRs that make these changes to understand the full context behind why a change was made and what it means.
+**Impact:** These searches put the information that analysts need in their hands so that they can understand our backend data structures when they create reports. We can click through the PRs that make these changes to understand the full context behind why a change was made and what it means.
 
 **Time saved:** In most cases, these searches remove the need to talk to the teams who maintain our database schemas, a process that can take days, especially in an asynchronous environment.
 
@@ -144,13 +139,13 @@ We use HubSpot forms for all of our opt-in form submissions. These forms are cod
 
 **Searches**:
 
-* [https://sourcegraph.com/search?q=context:%40sourcegraph/all+hubspot&patternType=literal](https://sourcegraph.com/search?q=context:%40sourcegraph/all+hubspot&patternType=literal) to start the process, then:
-* HubSpot -> Find references on [hubspot util](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:12#tab=references) or [SubmitForm](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:33#tab=references)
-* [This link](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go#L107:20) to figure out which fields we’re sending back and the data type
-* Send this to a dev to understand how we implement forms and who to talk to if needed
-* Give [this link](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L112:20) example to developers when understanding how to implement a new in-product survey
-* We were wondering if is_server_admin in HubSpot was populating from our code or HubSpot workflow, so I searched [this](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24%4004a9ed2+isServerAdmin&patternType=literal)
+- [https://sourcegraph.com/search?q=context:%40sourcegraph/all+hubspot&patternType=literal](https://sourcegraph.com/search?q=context:%40sourcegraph/all+hubspot&patternType=literal) to start the process, then:
+- HubSpot -> Find references on [hubspot util](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:12#tab=references) or [SubmitForm](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:33#tab=references)
+- [This link](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go#L107:20) to figure out which fields we’re sending back and the data type
+- Send this to a dev to understand how we implement forms and who to talk to if needed
+- Give [this link](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L112:20) example to developers when understanding how to implement a new in-product survey
+- We were wondering if is_server_admin in HubSpot was populating from our code or HubSpot workflow, so I searched [this](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24%4004a9ed2+isServerAdmin&patternType=literal)
 
-**Impact**: I was able to give our software engineers a clear requirements document on which fields they should pull from when implementing a new HubSpot field. I was also able to  include best practices for adding HubSpot forms in our code based on previous PRs we had committed.
+**Impact**: I was able to give our software engineers a clear requirements document on which fields they should pull from when implementing a new HubSpot field. I was also able to include best practices for adding HubSpot forms in our code based on previous PRs we had committed.
 
 **Time saved**: I saved a few async hours going back and forth with a software engineer to answer a question from our marketing team, and saved any time I would’ve gone back and forth with our software engineering team on building new forms into product.
