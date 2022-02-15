@@ -40,14 +40,14 @@ export const CaseStudy: FunctionComponent = () => (
                     <div className="row justify-content-md-center pt-3">
                         <div className="col-md-4">
                             <img
-                                src='/assets/case-studies/francois-jehl-criteo.jpg'
+                                src='/case-studies/francois-jehl-criteo.jpg'
                                 alt="François Jehl, Senior Engineering Manager, Criteo"
                                 className="case-studies__img rounded-circle img-fluid mx-auto d-block mb-3"
                             />
                         </div>
                         <div className="col-md-4">
                             <img
-                                src='/assets/case-studies/loic-teikiteetini-vaysse-criteo.jpg'
+                                src='/case-studies/loic-teikiteetini-vaysse-criteo.jpg'
                                 alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
                                 className="case-studies__img rounded-circle img-fluid mx-auto d-block mb-3"
                             />
