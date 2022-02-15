@@ -182,110 +182,85 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <ContentSection className="py-4">
-            <h2 className="display-3 font-weight-bold mb-5 text-center">What's next?</h2>
+        {/* Use Cases */}
+        <ContentSection className="py-4 py-md-7">
+            <h1 className="mb-5 text-center">How developers are using Batch Changes </h1>
             <Tabs defaultActiveKey="configuration" id="use-cases" className="justify-content-center">
-                <Tab eventKey="configuration" title="Events">
+                <Tab eventKey="configuration" title="Configuration">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
                             <p>
-                                Keynote speakers. Job opportunities and partnerships. You can find us in every major
-                                industry event. Give us an air-hug if you see us.
+                                Quickly edit every CI, build, and other configuration files to make changes such as
+                                altering steps, migrating versions, or changing base images.
                             </p>
-                            <ul>
-                                <li>
-                                    <a href="https://events.linuxfoundation.org/open-source-summit-north-america/register/">
-                                        Open Source Summit
-                                    </a>{' '}
-                                    - 9/27 - 9/30
-                                </li>
-                                <li>
-                                    <a href="https://reactadvanced.com/">React Advanced London</a> - 10/22
-                                </li>
-                                <li>
-                                    <a href="https://africa.jsworldconference.com/">JSWorld Africa</a> - 10/30
-                                </li>
-                                <li>
-                                    <a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13
-                                </li>
-                                <li>
-                                    <a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8
-                                </li>
-                            </ul>
+                            <img
+                                className="w-100 h-auto mt-4"
+                                width="750"
+                                height="400"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/update-circle-ci-username.png"
+                                alt="Batch spec for updating the username in Circle CI configurations"
+                            />
                         </div>
                     </div>
                 </Tab>
-                <Tab eventKey="refactoring" title="Dev Tool Time">
+                <Tab eventKey="refactoring" title="Refactoring">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
                             <p>
-                                Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
-                                <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
-                                keep up with new episodes.
+                                Use language-aware tooling of your choice to perform complex refactors like updating an
+                                API and its function calls or replacing libraries entirely.
                             </p>
-                            <a href="https://srcgr.ph/dev-tool-time-playlist">
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="850"
-                                    height="380"
-                                    src="/community/DTT_module.jpg"
-                                    alt="Dev Tool Time"
-                                />
-                            </a>
+                            <img
+                                className="w-100 h-auto mt-4"
+                                width="850"
+                                height="380"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
+                                alt="Batch spec for using Comby to refactor Go code"
+                            />
                         </div>
                     </div>
                 </Tab>
-                <Tab eventKey="security" title="Podcast">
+                <Tab eventKey="security" title="Security">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
                             <p>
-                                Tune into our developer convos wherever you listen to your favorite podcasts. Every
-                                episode is an inspiration.
+                                Refactor code to replace insecure functions, update vulnerable packages, or modify
+                                container configurations across hundreds of repositories.
                             </p>
-                            <a href="https://about.sourcegraph.com/podcast">
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="750"
-                                    height="472"
-                                    src="/community/Podcast_module.png"
-                                    alt="Podcasts"
-                                />
-                            </a>
+                            <img
+                                className="w-100 h-auto mt-4"
+                                width="750"
+                                height="472"
+                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"
+                                alt="Batch spec for pinning Docker base images to specific versions"
+                            />
                         </div>
                     </div>
                 </Tab>
             </Tabs>
         </ContentSection>
 
-        <ContentSection className="py-5">
-            <div className="row">
-                <div className="col-lg-7">
-                    <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
-                    <br />
-                    Connect with us on the Sourcegraph Community Slack group, direct message us on Twitter, LinkedIn, or
-                    email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
+        <div className="bg-light-gray">
+            <ContentSection>
+                <div className="row d-flex flex-column justify-content-start p-7">
+                    <div className="col-md-6 pr-md-5 d-flex flex-column justify-content-start">
+                        <h3 className="display-4 font-weight-bold">Get started with Code Insights</h3>
+                        <p>
+                            Code Insights transforms your entire codebase into a queryable database so you can create customizable, 
+                            visual dashboards in seconds and get real-time results. 
+                        </p>
+                    </div>
+                    <div className="col-md-6 pt-3 d-flex justify-content-start text-center">
+                        <Link className="btn btn-primary mx-2 mb-3" to="/#get-started" title="Try Sourcegraph now">
+                            Request a demo
+                        </Link>
+                        <Link className="btn btn-outline-secondary mx-2 mb-3" to={"/get-started"} title="Request a demo">
+                            Try it on Sourcegraph
+                        </Link>
+                    </div>
                 </div>
-                <div className="col-lg-5 mt-3">
-                    <a
-                        className="btn btn-secondary"
-                        href={
-                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
-                        }
-                        title="Join us on Slack"
-                    >
-                        Join us on Slack
-                    </a>
-                    <br />
-                    <a
-                        className="btn btn-primary mt-3"
-                        href={'mailto:community@sourcegraph.com'}
-                        title="Send us an email"
-                    >
-                        Send us an email
-                    </a>
-                </div>
-            </div>
-        </ContentSection>
+            </ContentSection>
+        </div>
     </Layout>
 )
 
