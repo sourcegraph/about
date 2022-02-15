@@ -1,5 +1,6 @@
 import { Link, PageProps } from 'gatsby'
 import * as React from 'react'
+import { Blockquote } from '../components/Blockquote'
 import { ContentSection } from '../components/content/ContentSection'
 import { CodeInsightExample } from '../components/code-insights/CodeInsightsExamples'
 import { CodeInsightExampleType } from '../components/code-insights/types'
@@ -90,7 +91,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         }
     >
            
-        <div className="p-8">
+        <div className="p-7">
             <div className="row">
                 {/* Placeholder */}
                 <div className="col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-7">
@@ -118,12 +119,12 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         </div>
         
 
-        <div className="bg-gradient-blue-mist py-5">
+        <div className="bg-gradient-blue-mist py-7">
             <ContentSection className="py-5">
                 <div className="d-flex flex-wrap">
                     <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">Benefits for VP of Engineering</h2>
-                    <div className="col-lg-6">
-                        <div className="d-flex">
+                    <div className="d-flex flex-column col-lg-6 px-6 justify-content-around">
+                        <div className="d-flex py-5">
                             <div className="mr-4"><BullsEyeArrowIcon size={50} /></div>
                             <div className="d-flex flex-column">
                                 <h3>Goal setting</h3>
@@ -132,7 +133,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                                 </p>
                             </div>
                         </div>
-                        <div className="d-flex">
+                        <div className="d-flex py-5">
                         <div className="mr-4"><RocketLaunchOutlineIcon size={50} /></div>
                             <div className="d-flex flex-column">
                                 <h3>One step ahead</h3>
@@ -142,8 +143,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <div className="d-flex">
+                    <div className="d-flex flex-column col-lg-6 px-6 justify-content-around">
+                        <div className="d-flex py-5">
                             <div className="mr-4"><TrendingUpIcon size={50} /></div>
                             <div className="d-flex flex-column">
                                 <h3>{'Ownership & trends'}</h3>
@@ -152,7 +153,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                                 </p>
                             </div>
                         </div>
-                        <div className="d-flex">
+                        <div className="d-flex py-5">
                             <div className="mr-4"><LighteningBoltOutlineIcon size={50} /></div>
                             <div className="d-flex flex-column">
                                 <h3>Be proactive</h3>
@@ -167,32 +168,17 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         </div>
 
         <ContentSection className="py-6">
-            <div className="row">
-                <div className="col-lg-6">
-                    <h2 className="display-3 font-weight-bold mt-5 mb-3">DM us on Slack. We're here.</h2>
-                    What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
-                    <ul className="list-spaced">
-                        <li>Ask questions - any questions: what is the best sit-stand desk?</li>
-                        <li>Reach out to the community, discover new ideas &#38; seek or give mentorship</li>
-                        <li>Share the road less traveled so that everyone can learn</li>
-                    </ul>
-                    <a
-                        className="btn btn-primary"
-                        href={
-                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
-                        }
-                        title="Join us on Slack"
-                    >
-                        Join us on Slack
-                    </a>
+            <div className="row d-flex text-center justify-content-center px-8 py-6">
+                <div className="w-100">
+                    <h2>Trusted by leading engineering teams around the world</h2>
                 </div>
-                <div className="col-lg-5">
-                    <img
-                        className="sg_champion_img mt-6"
-                        src="/community/SG_DM_us_on_slack.png"
-                        alt="DM us on Slack!"
-                    />
-                </div>
+                <Blockquote quote={`Code insights enables our team to move away from manual spreadsheets 
+                    and point-in-time documentation and provides us with a holistic view of our codebase 
+                    when we undergo complex projects such as migrations and major platform-related changes.`}
+                    by="Jane Doe, Engineering Leader"
+                    flex={true}
+                    logo="/external-logos/prezi-logo.svg"
+                    href="https://prezi.com" />
             </div>
         </ContentSection>
 
