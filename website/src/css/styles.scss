@@ -291,7 +291,8 @@ table {
     background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
 }
 .bg-gradient-blue-mist {
-    background: linear-gradient(90deg, $white 0%, $blue-mist, $light-green2 100%);
+    background: radial-gradient(ellipse at bottom right, rgba($blue-mist, 0.5), transparent),
+    radial-gradient(ellipse at bottom left, rgba($light-green2, 0.5), transparent);
 }
 .bg-gradient-blue-purple {
     background: linear-gradient(90deg, $light-blue 0%, $light-purple 100%);
