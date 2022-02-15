@@ -35,7 +35,7 @@ I’d just joined Sourcegraph in September 2020 as the first PM for the extensib
 **Search:** First, I [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+viewRegistryExtensionManage&patternType=regexp), got no results, [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+view+RegistryExtensionManage&patternType=regexp), got results, and then [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27RegistryExtension&patternType=literal), which gave me a quick reference for the pages all the events fired on. From there, I could glance through the strings and comments on the page to map them back to states in our app.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MQ==?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MQ==?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 250px;"></iframe>
 </p>
 
 **Impact:** I didn’t need to ask a teammate or pull the repo(s) and search it locally. The latter means I also didn’t have to clutter my desktop with yet another open application window.
