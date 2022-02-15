@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 3.32 release'
 publishDate: 2021-09-24T10:00-07:00
-description: 'Sourcegraph 3.32 introduces Code Insights in Public Beta, a new search sidebar for navigating revisions, improved search results caching, and custom LSIF data retention policies.'
+description: 'Sourcegraph 3.32 introduces a new search sidebar for navigating revisions, improved search results caching, and custom LSIF data retention policies.'
 tags: [blog, release]
 slug: 'release/3.32'
 published: true
@@ -29,10 +29,6 @@ changelogItems:
 ---
 
 Sourcegraph 3.32 is now available! Here are some highlights from this release:
-
-## Code Insights is available in Public Beta
-
-Code Insights is a new analytics tool that lets you track and understand what’s in your code and how it changes over time. You can find it via “Insights” in the main navigation bar. It is available for all Sourcegraph users for free while in beta. When Code Insights is officially released, we may disable your use of it or charge for continued use. We're still polishing Code Insights, so we appreciate it if you [share any bugs or feedback about your experience](mailto:feedback@sourcegraph.com).
 
 ## Revisions sidebar
 
