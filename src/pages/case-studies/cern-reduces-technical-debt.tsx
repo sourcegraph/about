@@ -18,7 +18,7 @@ export const CaseStudy: FunctionComponent = () => (
             heroImage="/external-logos/cern-supplier-logo.svg"
             heroLink="https://procurement.web.cern.ch"
             quote={{
-                quote: 'Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks and costs of our APIs’ evolution.',
+                quote: 'Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks and costs of our APIs\' evolution.',
                 author: 'Vito Baggiolini, Senior Software Engineer, CERN',
             }}
         >
