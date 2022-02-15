@@ -1,6 +1,7 @@
-import { stringToDashCase } from '@util/index'
 import Link from 'next/link'
 import React, { FunctionComponent } from 'react'
+
+import { stringToDashCase } from '@util'
 
 import { ContentSection } from './ContentSection'
 import { COLORS } from './Jumbotron'
