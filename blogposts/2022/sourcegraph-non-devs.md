@@ -205,7 +205,7 @@ We used [this search](https://sourcegraph.com/search?q=context:%40sourcegraph/al
 - We were wondering if is_server_admin in HubSpot was populating from our code or HubSpot workflow, so I searched [this](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24%4004a9ed2+isServerAdmin&patternType=literal)
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTky?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTky?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 800px;"></iframe>
 </p>
 
 **Impact**: I was able to give our software engineers a clear requirements document on which fields they should pull from when implementing a new HubSpot field. I was also able to include best practices for adding HubSpot forms in our code based on previous PRs we had committed.
