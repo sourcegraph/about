@@ -35,7 +35,7 @@ I’d just joined Sourcegraph in September 2020 as the first PM for the extensib
 **Search:** First, I [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+viewRegistryExtensionManage&patternType=regexp), got no results, [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+view+RegistryExtensionManage&patternType=regexp), got results, and then [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27RegistryExtension&patternType=literal), which gave me a quick reference for the pages all the events fired on. From there, I could glance through the strings and comments on the page to map them back to states in our app.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjAz=?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjAz?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 **Impact:** I didn’t need to ask a teammate or pull the repo(s) and search it locally. The latter means I also didn’t have to clutter my desktop with yet another open application window.
@@ -55,13 +55,13 @@ A customer was seeing incomplete result counts for the search results returned f
 **Search:** A term like “limit 5000” is likely to bring up many hits throughout our codebase, so I used [a diff search with a timeframe](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+type:diff+limit+5000+after:%22five+months+ago%22&patternType=regexp) to scope my search to the time the behavior started appearing.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 I quickly found [our search team had changed a limit](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/commit/326d250079b789ca716878c6d2e5bc694b4ea97a?visible=1) that affected one of my team’s features. I was able to understand who made the change and why they made it in a few seconds.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgw?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgw?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 **Impact:** We could immediately respond to the customer and confirm the behavior as well as provide more context for the estimated time to fix.
@@ -75,7 +75,7 @@ I needed to finish writing the error messages that display to users for a major 
 **Search:** [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+error+try&patternType=regexp) quickly gave me dozens of in-product examples.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 **Impact:** I was able to produce more unified product messaging.
@@ -89,7 +89,7 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 **Search:** [This search](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+mailto:...%40sourcegraph.com+-file:test+count:all&patternType=structural) showed me what email addresses were already in use.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgy?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgy?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 **Impact:** We learned we have a “feedback@sourcegraph” email that was better than the “support@” email I was about to use.
@@ -99,7 +99,7 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 **Follow-up situation:** What anchor text do we generally use for the email link, or do we display the direct email? [Search](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+mailto:feedback%40sourcegraph.com&patternType=literal):
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg0?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg0?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 ### Should we use “prototype” or “experimental” for early-stage product features?
@@ -111,13 +111,13 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 [Search one](https://sourcegraph.com/search?q=context:global+r:sourcegraph/sourcegraph%24+experimental+count:all&patternType=regexp)
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg1?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg1?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 [Search two](https://sourcegraph.com/search?q=context:global+r:sourcegraph/sourcegraph%24+prototype+count:all&patternType=regexp)
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg2?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg2?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 **Impact:** In 60 seconds, we determined we used “experimental” fives times as often as “prototype.” Given that already existing, informal tendency, we [codified “experimental” in our handbook](https://handbook.sourcegraph.com/departments/product-engineering/product/process/beta_and_experimental_feature_labels) as the official Sourcegraph label.
@@ -135,13 +135,13 @@ The architecture of our internally-facing data is ever-changing, so it’s criti
 [This search](https://sourcegraph.com/search?q=context:%40ericbm+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:%5Einternal/database/schema%5C.md+type:diff&patternType=literal) shows how our Postgres db structure changes over time.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg3?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg3?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph+eventLogger.log%28+type:diff&patternType=literal) helps us stay on top of which events. Our Data team has [code monitors](https://docs.sourcegraph.com/code_monitoring/how-tos/starting_points) set up so we get real-time notifications when individual events are added or removed.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg4?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg4?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 **Impact:** These searches put the information that analysts need in their hands so that they can understand our backend data structures when they create reports. We can click through the PRs that make these changes to understand the full context behind why a change was made and what it means.
@@ -155,7 +155,7 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
 **Search**: [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24+file:%5Ecmd/frontend/internal/app/updatecheck/handler%5C.go+json+type:diff&patternType=literal) checks for schema mirroring.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 **Impact:** Telemetry sometimes breaks – this is a reality for most data teams. At Sourcegraph, it used to take days to realize something was broken. It then took hours to search through logs to determine which change was made to our telemetry and how to fix it. Now, Sourcegraph code monitoring immediately alerts us when a change goes in and what it was, so we can minimize data loss.
@@ -169,7 +169,7 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
 **Search**: [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about+UA-40540747-20+type:diff&patternType=literal) finds which Google Analytics tags were in use on our site.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTkw?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTkw?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 **Impact:** Our Google Analytics had inconsistent data from historical changes in our web properties and nobody quite knew which web property to use within Google Analytics because they all had different numbers. I did a diff search for which tags were actually on our site and the history of changes and the search above came back with results. I was able to see which tag was in production, [when it was added](https://sourcegraph.com/github.com/sourcegraph/about/-/commit/2b60ef75c86b97bd27c8901c7ff55aadafc55d42), and who to talk to about the history of our Google Tag Manager (spoiler: it was our CEO @sqs – I decided not to bother him with it and just move forward!)
@@ -183,7 +183,7 @@ When Sourcegraph decided to go [fully remote](https://about.sourcegraph.com/blog
 **Search**: [This search](https://sourcegraph.com/search?q=context:%40sourcegraph/all+142+Minna&patternType=literal) helped us update our web properties when we went fully remote.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTkx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 400px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTkx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
 </p>
 
 **Impact:** We were able to maintain consistency among documents and information required by law to keep us out of trouble.
