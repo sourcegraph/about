@@ -1,16 +1,20 @@
-import { FunctionComponent } from 'react'
+import React from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection } from '@components'
+import {
+    Layout,
+    CaseStudyLayout,
+    ContentSection,
+    InContentBlockquote
+} from '@components'
 
-export const CaseStudy: FunctionComponent = () => {
+export const CaseStudy: React.FunctionComponent = () => {
     const jaredHodge = 'Jared Hodge, Senior Manager, Developer Experience'
     
     return (
         <Layout
             meta={{
                 title: 'Indeed keeps code up to date and accelerates development velocity',
-                description:
-                    'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
+                description: 'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
                 image: 'https://about.sourcegraph.com/sourcegraph-og.png',
             }}
             className="navbar-dark bg-black"
@@ -84,6 +88,11 @@ export const CaseStudy: FunctionComponent = () => {
                             the codebase and then notify all the service owners so they could review.
                         </p>
 
+                        <InContentBlockquote
+                            quote="If I can reduce the amount of work a product team has to do by 90%, that is a huge win. Not only do they have to do less work — we're asking them to spend 10 minutes on a code review as opposed to spending the next six hours doing this change — they also don't have to spend time figuring out how to prioritize the different requests they're getting."
+                            author={jaredHodge}
+                        />
+
                         <p>
                             While Batch Changes still requires service owners to review the code, that process is much
                             easier and faster than making the change manually.
@@ -96,6 +105,11 @@ export const CaseStudy: FunctionComponent = () => {
                             library or code pattern. In some cases it would only take a few minutes but in others it would
                             take days.
                         </p>
+
+                        <InContentBlockquote
+                            quote="On average, I'd say that for every automated merge request that we're able to merge we save an hour. That's a rough but conservative estimate. It shows, though, that if we are doing several thousand automated merges in a year, we're saving several employee's worth of time."
+                            author={jaredHodge}
+                        />
 
                         <h3 className="pt-5 pb-1">Reducing invisible taxes</h3>
 

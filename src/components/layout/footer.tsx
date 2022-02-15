@@ -7,7 +7,11 @@ import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import Link from 'next/link'
 import React, { FunctionComponent } from 'react'
 
-const Footer: FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
+interface Props {
+    minimal?: boolean
+}
+
+const Footer: FunctionComponent<Props> = ({ minimal }) => (
     <footer className={`${minimal ? '' : 'pt-6 pb-2'}`}>
         <div className="footer__container container">
             {!minimal && (

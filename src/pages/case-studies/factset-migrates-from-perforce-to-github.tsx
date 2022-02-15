@@ -1,16 +1,20 @@
-import { FunctionComponent } from 'react'
+import React from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection } from '@components'
+import {
+    Layout,
+    CaseStudyLayout,
+    ContentSection,
+    InContentBlockquote
+} from '@components'
 
-export const CaseStudy: FunctionComponent = () => {
+export const CaseStudy: React.FunctionComponent = () => {
     const derrickFaunce = 'Derrick Faunce, Associate Director of Developer Services'
 
     return (
         <Layout
             meta={{
                 title: 'FactSet migrates from Perforce to GitHub',
-                description:
-                    'FactSet case study. Learn how FactSet uses Sourcegraph after migrating from Perforce to GitHub.',
+                description: 'FactSet case study. Learn how FactSet uses Sourcegraph after migrating from Perforce to GitHub.',
                 image: 'https://about.sourcegraph.com/sourcegraph-og.png',
             }}
             className="navbar-dark bg-black"
@@ -77,8 +81,12 @@ export const CaseStudy: FunctionComponent = () => {
                             </div>
                         </div>
 
-                        <h2 className="pt-5 pb-1">Migrating from monolith to microservices</h2>
+                        <InContentBlockquote
+                            quote="With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub."
+                            author={derrickFaunce}
+                        />
 
+                        <h2 className="pt-5 pb-1">Migrating from monolith to microservices</h2>
                         <p>
                             In 2019, FactSet's engineering team started a huge code migration project to transition from a
                             monolithic code repository in Perforce to microservices in GitHub. Part of the reason for
@@ -110,7 +118,6 @@ export const CaseStudy: FunctionComponent = () => {
                         </p>
 
                         <h2 className="pt-5 pb-1">Expanding throughout the organization</h2>
-
                         <p>
                             Initially, the developer services team deployed Sourcegraph to the engineers responsible for the
                             real-time news and quotes engine. But after receiving positive feedback, the team gave another
@@ -122,6 +129,11 @@ export const CaseStudy: FunctionComponent = () => {
                             “The responses were heavily biased towards, ‘I'm using this every day, or even multiple times in
                             any given day,'” Faunce said. Now, over 500 FactSet developers use Sourcegraph.
                         </p>
+
+                        <InContentBlockquote
+                            quote="For developers, Sourcegraph is a must-have tool一we need it at arm's length at all times."
+                            author={derrickFaunce}
+                        />
 
                         <p>
                             For a large, fast-paced organization like FactSet, code search capabilities are essential to

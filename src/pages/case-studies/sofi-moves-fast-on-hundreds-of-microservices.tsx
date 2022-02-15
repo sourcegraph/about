@@ -1,13 +1,12 @@
-import { FunctionComponent } from 'react'
+import React from 'react'
 
 import { Layout, CaseStudyLayout, ContentSection } from '@components'
 
-export const CaseStudy: FunctionComponent = () => (
+export const CaseStudy: React.FunctionComponent = () => (
     <Layout
         meta={{
             title: 'SoFi manages hundreds of microservices',
-            description:
-                'Sourcegraph case study: With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices.',
+            description: 'Sourcegraph case study: With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds of microservices.',
             image: '/case-studies/sofi-sourcegraph-case-study-og-embed.png',
         }}
         className="navbar-dark bg-black"
@@ -31,9 +30,7 @@ export const CaseStudy: FunctionComponent = () => (
                         their money. With Sourcegraph, SoFi can innovate and move quickly while keeping up with hundreds
                         of microservices.
                     </p>
-
                     <h2 className="pt-5 pb-1">The need for cross-repository code search</h2>
-
                     <p>
                         When SoFi decided to switch their code host from Bitbucket to GitLab they quickly realized they
                         would need a more powerful code search tool to search over their hundreds of repositories. They
@@ -43,9 +40,7 @@ export const CaseStudy: FunctionComponent = () => (
                         contains highly sensitive data from their customers, SoFi emphasizes on security and appreciated
                         Sourcegraph's <a href="/blog/from-saas-to-on-premises">on-prem solution</a>.
                     </p>
-
                     <h2 className="pt-5 pb-1">Move fast and don't break things</h2>
-
                     <p>
                         As a financial institution, SoFi needs to avoid downtime—but they also need to continuously
                         innovate to compete. SoFi runs hundreds of microservices. Their fast growth makes it difficult
@@ -58,7 +53,6 @@ export const CaseStudy: FunctionComponent = () => (
                         trace investigations. With Sourcegraph, SoFi engineers fully understand the scope and breadth of
                         how their code changes impact other microservices.
                     </p>
-
                     <br />
                 </div>
             </ContentSection>

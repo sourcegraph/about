@@ -1,16 +1,20 @@
-import { FunctionComponent } from 'react'
+import React from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection } from '@components'
+import {
+    Layout,
+    CaseStudyLayout,
+    ContentSection,
+    InContentBlockquote
+} from '@components'
 
-export const CaseStudy: FunctionComponent = () => {
+export const CaseStudy: React.FunctionComponent = () => {
     const trentGrover = 'Trent Grover, Director of Architecture, Workiva'
 
     return (
         <Layout
             meta={{
                 title: 'Workiva reduces the time it takes to make large-scale code changes by 80%',
-                description:
-                    'Workiva case study. Learn how Workiva uses Sourcegraph Batch Changes to reduce the time it takes to make large-scale code updates by 80%.',
+                description: 'Workiva case study. Learn how Workiva uses Sourcegraph Batch Changes to reduce the time it takes to make large-scale code updates by 80%.',
                 image: 'https://about.sourcegraph.com/sourcegraph-og.png',
             }}
             className="navbar-dark bg-black"
@@ -48,11 +52,21 @@ export const CaseStudy: FunctionComponent = () => {
                             provide end-to-end visibility into the path to completion.
                         </p>
 
+                        <InContentBlockquote
+                            quote="Every time I used [our internal tool], I had to fiddle with something just to get it to work."
+                            author="Corwin Sheahan, Senior Software Engineer, Workiva"
+                        />
+
                         <p>
                             Whenever a new version of a library came out, they'd either have to manually make the change
                             across dozens of repositories, spend time improving their internal tool to help automate the
                             process, or add the update to their backlog.
                         </p>
+
+                        <InContentBlockquote
+                            quote="We fell into the habit of letting tech debt accumulate to the point where all of the sudden we'd have to bring everything to a screeching halt and do nothing for a month or sprint or even a quarter and clean up tech debt around a certain area. The easier the tooling, the faster we can release breaking changes."
+                            author={trentGrover}
+                        />
 
                         <h2 className="pt-5 pb-1">Automating large-scale updates with Batch Changes</h2>
 
@@ -74,6 +88,11 @@ export const CaseStudy: FunctionComponent = () => {
                             </li>
                         </ul>
 
+                        <InContentBlockquote
+                            quote="The fact that Batch Changes runs each step via Docker is super powerful. As long as there's a tool out there that does what you need, you can incorporate it into Batch Changes with minimal effort, and that's been awesome for us."
+                            author="Evan Weible, Staff Software Engineer, Workiva"
+                        />
+
                         <h2 className="pt-5 pb-1">
                             Workiva reduces the time it takes to make large-scale code changes by 80%
                         </h2>
@@ -84,11 +103,20 @@ export const CaseStudy: FunctionComponent = () => {
                             these changes, Batch Changes reduces the time it takes to make large-scale code changes by 80%.
                         </p>
 
+                        <InContentBlockquote
+                            quote="Updating all of our repositories with Batch Changes saves time, is less error-prone, and gives us confidence that everything is going to plan."
+                            author="Joe Bingham, Software Engineer, Workiva"
+                        />
+
                         <p>
                             Instead of spending time maintaining their internal tool, the Workiva team will be using Batch
                             Changes going forward.
                         </p>
 
+                        <InContentBlockquote
+                            quote="Using a tool that isn't maintained by us saves us time and drives better adoption. In comparison to the tool we built internally, it's much easier to work with, more feature complete, and well documented."
+                            author="Evan Weible, Staff Software Engineer, Workiva"
+                        />
                         <br />
                     </div>
                 </ContentSection>

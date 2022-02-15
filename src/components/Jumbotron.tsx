@@ -6,7 +6,7 @@ export const COLORS = {
     purple: 'bg-purple text-light',
 }
 
-export const Jumbotron: React.FunctionComponent<{
+interface Props {
     className?: string
     color?: keyof typeof COLORS
     logomark?: boolean
@@ -14,7 +14,9 @@ export const Jumbotron: React.FunctionComponent<{
     titleClassName?: string
     description?: string
     children: React.ReactNode
-}> = ({
+}
+
+export const Jumbotron: React.FunctionComponent<Props> = ({
     className = '',
     color = 'white',
     logomark = true,

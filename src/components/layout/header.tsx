@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 
-interface HeaderProps {
+interface Props {
     isHome?: boolean
     isBlog?: boolean
     isProductPage?: boolean
@@ -23,7 +23,7 @@ const onRightClickLogo = (event: React.MouseEvent): void => {
     }
 }
 
-const Header = (props: HeaderProps): JSX.Element => {
+const Header = (props: Props): JSX.Element => {
 
     const [isOpen, setIsOpen] = useState(false)
     const [productMenuOpen, setProductMenuOpen] = useState(false)

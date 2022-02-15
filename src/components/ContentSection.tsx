@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactNode } from 'react'
+import React from 'react'
 
 const COLORS = {
     none: '',
@@ -12,14 +12,14 @@ const COLORS = {
     orange: 'bg-orange text-light',
 }
 
-interface ContentSectionProps {
+interface Props {
     id?: string
     color?: keyof typeof COLORS
     className?: string
-    children: ReactNode
+    children: React.ReactNode
 }
 
-export const ContentSection: FunctionComponent<ContentSectionProps> = ({
+export const ContentSection: React.FunctionComponent<Props> = ({
     id = '',
     color = 'none',
     className = '',

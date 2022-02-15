@@ -2,7 +2,7 @@ import path from 'path'
 
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
-import { FunctionComponent } from 'react'
+import React from 'react'
 
 import { getAllPages } from '@lib'
 import { slugToTitleCase } from '@util'

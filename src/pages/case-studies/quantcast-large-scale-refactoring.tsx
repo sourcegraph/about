@@ -1,13 +1,17 @@
-import { FunctionComponent } from 'react'
+import React from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection } from '@components'
+import {
+    Layout,
+    CaseStudyLayout,
+    ContentSection,
+    InContentBlockquote
+} from '@components'
 
-export const CaseStudy: FunctionComponent = () => (
+export const CaseStudy: React.FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring',
-            description:
-                'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
+            description: 'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
             image: 'https://about.sourcegraph.com/case-studies/quantcast-sourcegraph-case-study-og-embed.jpg',
         }}
         className="navbar-dark bg-black"
@@ -17,7 +21,7 @@ export const CaseStudy: FunctionComponent = () => (
             title="Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring"
             logo="/external-logos/quantcast-logo-white.svg"
             quote={{
-                quote: "Sourcegraph’s search gave us confidence because we knew we wouldn't overlook anything.",
+                quote: "Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything.",
                 author: 'Simon Law, Staff Software Engineer, Quantcast',
                 image: '/case-studies/simon-law-quantcast.jpg',
             }}
@@ -39,7 +43,6 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
 
                     <h2 className="pt-5 pb-1">GDPR readiness though organization-wide code search</h2>
-
                     <p>
                         May 2018 was the deadline for the EU General Data Protection Regulation, a law that provides
                         widespread protections for users and their personal data. Quantcast saw it as an opportunity to
@@ -61,7 +64,7 @@ export const CaseStudy: FunctionComponent = () => (
                         <pre className="language-regex">
                             <code
                                 className="language-regex"
-                                dangerouslySetInnerHTML={{ __html: '\\w+\\.ip(addr)?\\b' }}
+                                dangerouslySetInnerHTML={{ __html: `\\w+\\.ip(addr)?\\b` }}
                             />
                         </pre>
                         or addresses themselves with:
@@ -70,10 +73,12 @@ export const CaseStudy: FunctionComponent = () => (
                         <pre className="language-regex">
                             <code
                                 className="language-regex"
-                                dangerouslySetInnerHTML={{ __html: '\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b' }}
+                                dangerouslySetInnerHTML={{ __html: `\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b` }}
                             />
                         </pre>
                     </div>
+
+                    <InContentBlockquote quote="Unlike other tools, Sourcegraph doesn't just search for keywords, it searches for regular expressions. This familiar query language allowed us to zero-in on exactly what we wanted and filter out false matches." />
 
                     <p>
                         For every project, the team created a burndown list of issues and provided links to Sourcegraph
@@ -81,6 +86,8 @@ export const CaseStudy: FunctionComponent = () => (
                         engineer took only a few days to analyze thousands of them, which would have taken months if
                         they were each examined individually.
                     </p>
+
+                    <InContentBlockquote quote="Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph returns all search results, it doesn't drop or elide them, unlike GitHub Enterprise." />
 
                     <p>
                         Each team was able to use the Sourcegraph searches to confirm that all of their outstanding
@@ -98,6 +105,8 @@ export const CaseStudy: FunctionComponent = () => (
                         senior engineers have an easy way to define patterns, set up ownership, and get early warning
                         alerts before any changes that affect personal data are merged.
                     </p>
+
+                    <InContentBlockquote quote="Saved searches allow us to constantly monitor code that manages personal data, organization wide, before changes land in production." />
 
                     <h2 className="pt-5 pb-1">
                         Large scale refactoring is now possible without risking production stability

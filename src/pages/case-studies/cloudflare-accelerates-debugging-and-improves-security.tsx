@@ -1,10 +1,14 @@
-import { FunctionComponent } from 'react'
+import React from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection } from '@components'
+import {
+    Layout,
+    CaseStudyLayout,
+    ContentSection,
+    InContentBlockquote
+} from '@components'
 
-export const CaseStudy: FunctionComponent = () => {
+export const CaseStudy: React.FunctionComponent = () => {
     const terinStock = 'Terin Stock, Systems Engineer'
-    const davidHaynes = 'David Haynes, Security Engineer'
 
     return (
         <Layout
@@ -47,6 +51,11 @@ export const CaseStudy: FunctionComponent = () => {
                             spaces, were completely ignored and there was no way to filter results based on file types,
                             folder names, or code logic.
                         </p>
+                        <InContentBlockquote
+                            quote="We were trying to answer questions like who was using specific dependencies and different libraries and where are 
+                            these lines of code or log lines coming from. We needed to be able to search thousands of repos to find them."
+                            author={terinStock}
+                        />
 
                         <p>
                             For a while, the team worked around this by cloning all the repos onto their machines and using
@@ -104,6 +113,14 @@ export const CaseStudy: FunctionComponent = () => {
                             security risks and root-cause incidents.
                         </p>
 
+                        <InContentBlockquote
+                            quote="When a potential security issue comes up, I often have to go into another engineer's project to quickly 
+                                    understand how the code works to understand the critical functions, where the data is flowing, what sort
+                                    of controls or checks are happening. With Sourcegraph, I can jump into another engineer's project and 
+                                    quickly explore and better understand the code faster."
+                            author="David Haynes, Security Engineer"
+                        />
+
                         <p>
                             Another plus, according to Haynes, “it's the best way to prove we're not vulnerable to a
                             particular CVE, if and when we get asked by an auditor.”
@@ -114,7 +131,7 @@ export const CaseStudy: FunctionComponent = () => {
                         <p>
                             Whether searching for instances of a library or refactoring an entire application, it's hard to
                             put exact numbers on how much time the organization saves as a result of using Sourcegraph,
-                            because it's a ‘death by a thousand paper cuts' scenario.
+                            because it's a 'death by a thousand paper cuts' scenario.
                         </p>
 
                         <p>
