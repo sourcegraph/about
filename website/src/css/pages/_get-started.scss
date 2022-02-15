@@ -117,7 +117,7 @@
     &.cta-container {
         width: 100%;
         position: fixed;
-        bottom: 0;
+        margin-top: 30px;
 
         @media only screen and (max-width: 992px) {
             position: static;
