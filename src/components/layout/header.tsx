@@ -26,7 +26,6 @@ const onRightClickLogo = (event: React.MouseEvent): void => {
 const Header = (props: HeaderProps): JSX.Element => {
 
     const [isOpen, setIsOpen] = useState(false)
-    const [menuOpen, setMenuOpen] = useState(false)
     const [productMenuOpen, setProductMenuOpen] = useState(false)
     const [resourcesMenuOpen, setResourcesMenuOpen] = useState(false)
     const [customerMenuOpen, setCustomerMenuOpen] = useState(false)
@@ -54,7 +53,7 @@ const Header = (props: HeaderProps): JSX.Element => {
                         </button>
 
                         <Nav className="left-nav me-auto ml-md-2">
-                            <NavDropdown onToggle={value => setMenuOpen(value)} title="Product">
+                            <NavDropdown id="productDropdown" title="Product">
                                 <NavDropdown.Item href="/code-search">Code Search</NavDropdown.Item>
                                 <NavDropdown.Item href="/batch-changes">Batch Changes</NavDropdown.Item>
                                 <NavDropdown.Item href="https://docs.sourcegraph.com/code_intelligence">
@@ -62,7 +61,7 @@ const Header = (props: HeaderProps): JSX.Element => {
                                 </NavDropdown.Item>
                             </NavDropdown>
 
-                            <NavDropdown title="Resources" onToggle={setMenuOpen}>
+                            <NavDropdown id="resourcesDropdown" title="Resources">
                                 <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
                                 <NavDropdown.Item href="https://learn.sourcegraph.com/" target="_blank">
                                     Learn
@@ -73,7 +72,7 @@ const Header = (props: HeaderProps): JSX.Element => {
                                 <NavDropdown.Item href="/podcast/">Sourcegraph Podcast</NavDropdown.Item>
                             </NavDropdown>
                             
-                            <NavDropdown title="Customers" onToggle={setMenuOpen}>
+                            <NavDropdown id="customersDropdown" title="Customers">
                                 <NavDropdown.Item href="/case-studies">Case studies</NavDropdown.Item>
                                 <NavDropdown.Item href="/use-cases">Use cases</NavDropdown.Item>
                                 <NavDropdown.Item href="/contact/product-specialist">
