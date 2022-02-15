@@ -129,7 +129,7 @@ The architecture of our internally-facing data is ever-changing, so it’s criti
 [This search](https://sourcegraph.com/search?q=context:%40ericbm+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:%5Einternal/database/schema%5C.md+type:diff&patternType=literal) shows how our Postgres db structure changes over time.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg3?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 175px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg3?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 190px;"></iframe>
 </p>
 
 [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph+eventLogger.log%28+type:diff&patternType=literal) helps us stay on top of which events. Our Data team has [code monitors](https://docs.sourcegraph.com/code_monitoring/how-tos/starting_points) set up so we get real-time notifications when individual events are added or removed.
