@@ -46,7 +46,9 @@ const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExample
             className={classNames(className, styles.card)}
         >
             <div className={styles.chart}>
-                <ParentSize className={styles.searchChart}>{({ width, height }) => <LineChart {...data} width={width} height={height} />}</ParentSize>
+                <ParentSize className={styles.searchChart}>
+                    {({ width, height }) => <LineChart {...data} width={width} height={height} />}
+                </ParentSize>
             </div>
 
             <LegendBlock className={styles.legend}>
