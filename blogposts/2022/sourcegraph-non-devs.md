@@ -49,7 +49,7 @@ A customer was seeing incomplete result counts for the search results returned f
 **Search:** A term like “limit 5000” is likely to bring up many hits throughout our codebase, so I used [a diff search with a timeframe](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+type:diff+limit+5000+after:%22five+months+ago%22&patternType=regexp) to scope my search to the time the behavior started appearing.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 175px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 190px;"></iframe>
 </p>
 
 I quickly found [our search team had changed a limit](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/commit/326d250079b789ca716878c6d2e5bc694b4ea97a?visible=1) that affected one of my team’s features. I was able to understand who made the change and why they made it in a few seconds.
@@ -83,7 +83,7 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 **Search:** [This search](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+mailto:...%40sourcegraph.com+-file:test+count:all&patternType=structural) showed me what email addresses were already in use.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgy?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 175px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgy?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 190px;"></iframe>
 </p>
 
 **Impact:** We learned we have a “feedback@sourcegraph” email that was better than the “support@” email I was about to use.
@@ -149,7 +149,7 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
 **Search**: [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24+file:%5Ecmd/frontend/internal/app/updatecheck/handler%5C.go+json+type:diff&patternType=literal) checks for schema mirroring.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 175px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 190px;"></iframe>
 </p>
 
 **Impact:** Telemetry sometimes breaks – this is a reality for most data teams. At Sourcegraph, it used to take days to realize something was broken. It then took hours to search through logs to determine which change was made to our telemetry and how to fix it. Now, Sourcegraph code monitoring immediately alerts us when a change goes in and what it was, so we can minimize data loss.
