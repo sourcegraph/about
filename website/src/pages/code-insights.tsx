@@ -88,7 +88,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         }
     >
            
-        <div className="p-7">
+        <div className="mx-8">
             <div className="row">
                 {/* Placeholder */}
                 <div className="col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-7">
@@ -112,9 +112,11 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     </p>
                 </div>
             </div>
-            <CustomCarousel items={items} autoAdvance={true} />
         </div>
         
+        <div className="mb-5">
+            <CustomCarousel items={items} autoAdvance={true} />
+        </div>
 
         <div className="bg-gradient-blue-mist py-7">
             <ContentSection className="py-5">

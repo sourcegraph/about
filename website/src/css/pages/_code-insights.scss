@@ -14,10 +14,9 @@
 
     .custom-carousel {
         transition: background-color 0.5s ease;
-        padding: 0 0 4rem;
 
         @media only screen and (max-width: 768px) {
-            padding: 6rem;
+            flex-direction: column;
         }
 
         li {
@@ -28,6 +27,18 @@
         p {
             font-size: 1.125em;
             line-height: 1.75rem;
+        }
+
+        .panel {
+            flex: 0 0 50%;
+        }
+
+        &.set-height {
+            height: 900px;
+
+            @media only screen and (max-width: 768px) {
+                height: auto;
+            }
         }
     }
 }
