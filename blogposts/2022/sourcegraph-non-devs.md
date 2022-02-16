@@ -1,6 +1,6 @@
 ---
-title: 'Sourcegraph for non-devs'
-description: "Sourcegraph isn't just for software developers. Learn how product managers and analytics/business operations teammates use Sourcegraph as a powerful timesaver and cheat sheet that saves them 20-60 minutes multiple times per week."
+title: 'How Sourcegraph can save non-developers time and effort every day'
+description: "Sourcegraph isn't just for software developers. Learn how product managers and analytics/business operations teammates use Sourcegraph as a powerful timesaver and cheat sheet that saves them 20-60 minutes multiple times per week. Everyone needs to navigate code and Sourcegraph makes codebases accessible to all."
 author: Eric Brody-Moore, Joel Kwartler
 publishDate: 2022-02-17T00:00-07:00
 tags: [blog]
@@ -10,15 +10,17 @@ socialImage:
 published: true
 ---
 
-Sourcegraph is an extremely powerful developer tool used by engineers at top companies, from Uber and Lyft to Amazon and SoFi. But we’ve also discovered it’s a powerful timesaver and cheat sheet for teams across an organization, such as Product Management, Business Operations, Analytics, and Marketing.
+The difference between “I can figure this out in five minutes with a Sourcegraph search” versus “I can ask someone on another team in another timezone, and if they don’t know, follow up with a third person in a third timezone” is often the difference between taking care of something versus letting that task die on a todo list backlog.
+
+Sourcegraph is a powerful developer tool used by engineers at top companies, from Uber and Lyft to Amazon and SoFi. But as we've dogfooded our own product, we’ve also discovered it’s a powerful timesaver and cheat sheet for teams across an organization, such as Product Management, Business Operations, Analytics, and Marketing.
 
 Sourcegraph saves our Product Managers and Analytics/Business Operations teammates 20-60 minutes a few times a week, and provides definitive answers to a surprising range of questions.
 
-The difference between “I can figure this out in five minutes with a Sourcegraph search” versus “I can ask someone on another team in another timezone, and if they don’t know, follow up with a third person in a third timezone” is often the difference between taking care of something versus letting that task die on a todo list backlog.
+In this post, we'll be using a feature called [search notebooks](https://about.sourcegraph.com/blog/release/3.36/), which debuted in our [3.36 release](https://about.sourcegraph.com/blog/release/3.36/). Notebooks enable Sourcegraph users to document and share Sourcegraph searches and in this post, we'll use them to share the precise searches our team members used.  
 
 ## Product Managers
 
-_This section is written by, the Product Manager for Code Insights. He’s a brilliant, genuinely kind human being who’s being played by Brad Pitt in an upcoming HBO biopic._
+_This section is written by Joel Kwartler, the Product Manager for Code Insights. He’s a brilliant, genuinely kind human being who’s being played by Brad Pitt in an upcoming HBO biopic._
 
 As a product manager at a fast growing startup, I frequently need to know how our features interact, which analytics metrics other teammates have already built, and which product team processes or standards exist versus those that haven’t been built out yet. I use Sourcegraph to help me quickly answer these types of questions.
 
@@ -118,7 +120,7 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 
 ## Analytics and Business Operations
 
-_This section was written by a member of the Business Operations team. He can give other teammates demos of Sourcegraph, but they’re generally prefaced with “Joel can do this better than me.”_
+_This section was written by Eric-Brody Moore, a member of the Business Operations team. He can give other teammates demos of Sourcegraph, but they’re generally prefaced with “Joel can do this better than me.”_
 
 ### How has the Sourcegraph product data architecture changed over time?
 
@@ -132,7 +134,7 @@ The architecture of our internally-facing data is ever-changing, so it’s criti
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg3?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 190px;"></iframe>
 </p>
 
-[This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph+eventLogger.log%28+type:diff&patternType=literal) helps us stay on top of which events. Our Data team has [code monitors](https://docs.sourcegraph.com/code_monitoring/how-tos/starting_points) set up so we get real-time notifications when individual events are added or removed.
+[This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph+eventLogger.log%28+type:diff&patternType=literal) helps us stay on top of changing events. Our Data team has [code monitors](https://docs.sourcegraph.com/code_monitoring/how-tos/starting_points) set up so we get real-time notifications when individual events are added or removed.
 
 <p>
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg4?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 175px;"></iframe>
@@ -205,3 +207,5 @@ We used [this search](https://sourcegraph.com/search?q=context:%40sourcegraph/al
 **Impact**: I was able to give our software engineers a clear requirements document on which fields they should pull from when implementing a new HubSpot field. I was also able to include best practices for adding HubSpot forms in our code based on previous PRs we had committed.
 
 **Time saved**: I saved a few async hours going back and forth with a software engineer to answer a question from our marketing team, and saved any time I would’ve gone back and forth with our software engineering team on building new forms into product.
+
+If you're interested in trying Sourcegraph search for yourself, you can [sign up for an account](https://sourcegraph.com/search) and get started searching your codebase and the [OSS universe](https://about.sourcegraph.com/blog/indexing-the-oss-universe-update-more-code-hosts/) in seconds. If you're interested in Search Notebooks, you can create a Sourcegraph account and [start documenting your searches today](https://sourcegraph.com/notebooks).
