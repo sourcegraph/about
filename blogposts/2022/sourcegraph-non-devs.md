@@ -16,7 +16,7 @@ Sourcegraph is a powerful developer tool used by engineers at top companies, fro
 
 Sourcegraph saves our Product Managers and Analytics/Business Operations teammates 20-60 minutes a few times a week, and provides definitive answers to a surprising range of questions.
 
-In this post, we'll be using a feature called [search notebooks](https://about.sourcegraph.com/blog/release/3.36/), which debuted in our [3.36 release](https://about.sourcegraph.com/blog/release/3.36/). Notebooks enable Sourcegraph users to document and share Sourcegraph searches and in this post, we'll use them to share the precise searches our team members used.  
+In this post, we'll be using a feature called [search notebooks](https://about.sourcegraph.com/blog/release/3.36/), which debuted in our [3.36 release](https://about.sourcegraph.com/blog/release/3.36/). Notebooks enable Sourcegraph users to document and share Sourcegraph searches and in this post, we'll use them to share the precise searches our team members used.
 
 ## Product Managers
 
