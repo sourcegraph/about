@@ -8,7 +8,7 @@ const styles = {
     inner: `
         backgroundColor: 'rgba(0,0,0,1)',
         boxShadow: 'rgba(255,255,255,0.3) 0 0 30px 20px'
-    `
+    `,
 }
 
 export const GetSourcegraphNowActions: React.FunctionComponent = () => (

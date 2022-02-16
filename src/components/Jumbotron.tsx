@@ -20,7 +20,7 @@ const styles = {
     logo: `
         width: 2rem;
         height: 2rem;
-    `
+    `,
 }
 
 export const Jumbotron: React.FunctionComponent<Props> = ({

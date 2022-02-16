@@ -174,7 +174,11 @@ const Header = (props: Props): JSX.Element => {
                                             <a href="/blog">Blog</a>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <a href="https://learn.sourcegraph.com/" target="_blank" rel="noopener nofollow noreferrer">
+                                            <a
+                                                href="https://learn.sourcegraph.com/"
+                                                target="_blank"
+                                                rel="noopener nofollow noreferrer"
+                                            >
                                                 Learn
                                             </a>
                                         </li>
@@ -209,25 +213,21 @@ const Header = (props: Props): JSX.Element => {
                                         }`}
                                     >
                                         <li className="nav-link" role="presentation">
-                                            <Link href="/case-studies">
-                                                Case studies
-                                            </Link>
+                                            <Link href="/case-studies">Case studies</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <Link href="/use-cases">
-                                                Use cases
-                                            </Link>
+                                            <Link href="/use-cases">Use cases</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <Link href="/contact/product-specialist">
-                                                Become one
-                                            </Link>
+                                            <Link href="/contact/product-specialist">Become one</Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li className="nav-item" role="presentation">
                                     <Link href="/pricing" passHref={true}>
-                                        <a href="#none" className="nav-link">Pricing</a>
+                                        <a href="#none" className="nav-link">
+                                            Pricing
+                                        </a>
                                     </Link>
                                 </li>
                                 <li className="nav-item" role="presentation">

@@ -21,19 +21,13 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                             <h3 className="footer__nav-header">About Sourcegraph</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
-                                    <Link href="/case-studies">
-                                        Case studies
-                                    </Link>
+                                    <Link href="/case-studies">Case studies</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/use-cases">
-                                        Use cases
-                                    </Link>
+                                    <Link href="/use-cases">Use cases</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/pricing">
-                                        Pricing
-                                    </Link>
+                                    <Link href="/pricing">Pricing</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a
@@ -51,9 +45,7 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                             <h3 className="footer__nav-header">Resources</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
-                                    <Link href="/blog">
-                                        Blog
-                                    </Link>
+                                    <Link href="/blog">Blog</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md">
@@ -67,19 +59,13 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                                     <a href="https://learn.sourcegraph.com">Learn</a>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/podcast">
-                                        Podcast
-                                    </Link>
+                                    <Link href="/podcast">Podcast</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/dev-tools-quiz">
-                                        Dev tools quiz
-                                    </Link>
+                                    <Link href="/dev-tools-quiz">Dev tools quiz</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/community">
-                                        Community
-                                    </Link>
+                                    <Link href="/community">Community</Link>
                                 </li>
                             </ul>
                         </div>
@@ -88,27 +74,19 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                             <h3 className="footer__nav-header">Company</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
-                                    <Link href="/about">
-                                        About
-                                    </Link>
+                                    <Link href="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/jobs">
-                                        Careers - We're Hiring!
-                                    </Link>
+                                    <Link href="/jobs">Careers - We're Hiring!</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/contact">
-                                        Contact
-                                    </Link>
+                                    <Link href="/contact">Contact</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a href="https://handbook.sourcegraph.com">Handbook</a>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/news">
-                                        News
-                                    </Link>
+                                    <Link href="/news">News</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a href="https://handbook.sourcegraph.com/company/strategy">Sourcegraph strategy</a>
@@ -197,17 +175,23 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                     <li className="nav-item text-muted mr-3">&copy; 2021 Sourcegraph</li>
                     <li className="nav-item">
                         <Link href="/terms" passHref={true}>
-                            <a href="#none" className="nav-link">Terms</a>
+                            <a href="#none" className="nav-link">
+                                Terms
+                            </a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/security" passHref={true}>
-                            <a href="#none" className="nav-link">Security</a>
+                            <a href="#none" className="nav-link">
+                                Security
+                            </a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/privacy" passHref={true}>
-                            <a href="#none" className="nav-link">Privacy</a>
+                            <a href="#none" className="nav-link">
+                                Privacy
+                            </a>
                         </Link>
                     </li>
                 </ul>

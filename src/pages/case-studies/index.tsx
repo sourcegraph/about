@@ -17,9 +17,7 @@ const CaseStudiesHome: React.FunctionComponent<CaseStudiesHomeProps> = ({ slugs 
             <div>
                 {slugs.map((slug: string) => (
                     <div key={slug}>
-                        <Link href={`/case-studies/${slug}`}>
-                            {slugToTitleCase(slug)}
-                        </Link>
+                        <Link href={`/case-studies/${slug}`}>{slugToTitleCase(slug)}</Link>
                     </div>
                 ))}
             </div>
