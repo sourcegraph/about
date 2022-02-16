@@ -1,18 +1,13 @@
 import React from 'react'
 
-import {
-    Layout,
-    CaseStudyLayout,
-    ContentSection,
-    InContentImage,
-    InContentBlockquote
-} from '@components'
+import { Layout, CaseStudyLayout, ContentSection, InContentImage, InContentBlockquote } from '@components'
 
 export const CaseStudy: React.FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph empowers CERN to tackle code reuse and code changes in mission-critical applications',
-            description: 'Sourcegraph empowers developers at CERN to reuse existing code and manage mission-critical code changes with ease',
+            description:
+                'Sourcegraph empowers developers at CERN to reuse existing code and manage mission-critical code changes with ease',
             image: 'https://about.sourcegraph.com/external-logos/cern-name-reverse-logo.svg',
         }}
         className="navbar-dark bg-black"
@@ -23,7 +18,7 @@ export const CaseStudy: React.FunctionComponent = () => (
             heroImage="/external-logos/cern-supplier-logo.svg"
             heroLink="https://procurement.web.cern.ch"
             quote={{
-                quote: 'Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks and costs of our APIs\' evolution.',
+                quote: "Sourcegraph is extremely valuable for what we do. It enables us to easily clean up deprecated APIs and estimate the risks and costs of our APIs' evolution.",
                 author: 'Vito Baggiolini, Senior Software Engineer, CERN',
             }}
         >

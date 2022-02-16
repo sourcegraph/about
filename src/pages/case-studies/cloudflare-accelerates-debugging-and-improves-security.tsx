@@ -1,11 +1,6 @@
 import React from 'react'
 
-import {
-    Layout,
-    CaseStudyLayout,
-    ContentSection,
-    InContentBlockquote
-} from '@components'
+import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
 
 export const CaseStudy: React.FunctionComponent = () => {
     const terinStock = 'Terin Stock, Systems Engineer'
@@ -33,8 +28,8 @@ export const CaseStudy: React.FunctionComponent = () => {
                     <div className="container">
                         <p>
                             A web performance and security company, Cloudflare offers CDN, DNS, DDoS protection, and
-                            security products and services to millions of customers worldwide. The company has approximately
-                            2,000 employees, a quarter of which are engineers.
+                            security products and services to millions of customers worldwide. The company has
+                            approximately 2,000 employees, a quarter of which are engineers.
                         </p>
 
                         <h2 className="pt-5 pb-1">Looking for a new code search tool</h2>
@@ -46,10 +41,10 @@ export const CaseStudy: React.FunctionComponent = () => {
                         </p>
 
                         <p>
-                            But using their code host's native code search functionality wasn't cutting it. For example, it
-                            would take ASCII characters and run them through ElasticSearch. Special characters, including
-                            spaces, were completely ignored and there was no way to filter results based on file types,
-                            folder names, or code logic.
+                            But using their code host's native code search functionality wasn't cutting it. For example,
+                            it would take ASCII characters and run them through ElasticSearch. Special characters,
+                            including spaces, were completely ignored and there was no way to filter results based on
+                            file types, folder names, or code logic.
                         </p>
                         <InContentBlockquote
                             quote="We were trying to answer questions like who was using specific dependencies and different libraries and where are 
@@ -58,24 +53,24 @@ export const CaseStudy: React.FunctionComponent = () => {
                         />
 
                         <p>
-                            For a while, the team worked around this by cloning all the repos onto their machines and using
-                            their local system's search functionality. But with over 2,600 repositories, the process proved
-                            slow and unwieldy.
+                            For a while, the team worked around this by cloning all the repos onto their machines and
+                            using their local system's search functionality. But with over 2,600 repositories, the
+                            process proved slow and unwieldy.
                         </p>
 
                         <p>
                             “It would take two days just to copy the repos onto a laptop, so I could search them,” said
-                            Stock. Meanwhile, if the code base was updated during the time it took to copy the repos, then
-                            the engineer wouldn't be searching the latest codebase. Further, once team members cloned the
-                            repos, they wouldn't have space left on their machine for other work.
+                            Stock. Meanwhile, if the code base was updated during the time it took to copy the repos,
+                            then the engineer wouldn't be searching the latest codebase. Further, once team members
+                            cloned the repos, they wouldn't have space left on their machine for other work.
                         </p>
 
                         <h2 className="pt-5 pb-1">Finding Sourcegraph</h2>
 
                         <p>
-                            Stock, who was then on the Dev Tools team, and has since moved to Service Automation, knew there
-                            had to be a better solution. He discovered the open source version of Sourcegraph, a universal
-                            code search and intelligence tool for developers.
+                            Stock, who was then on the Dev Tools team, and has since moved to Service Automation, knew
+                            there had to be a better solution. He discovered the open source version of Sourcegraph, a
+                            universal code search and intelligence tool for developers.
                         </p>
 
                         <p>
@@ -85,32 +80,32 @@ export const CaseStudy: React.FunctionComponent = () => {
                         </p>
 
                         <p>
-                            "Sourcegraph is the only code search tool that natively integrates with our code and understands
-                            how our code works," said Stock.
+                            "Sourcegraph is the only code search tool that natively integrates with our code and
+                            understands how our code works," said Stock.
                         </p>
 
                         <h3 className="pt-5 pb-1">Expanding throughout the team</h3>
 
                         <p>
-                            Once Stock downloaded and began using the open source version of Sourcegraph, he started sharing
-                            search result URLs with engineers. Soon, Sourcegraph spread organically throughout the
-                            organization and the internal DevOps team decided to deploy Sourcegraph for all Cloudflare
-                            engineers.
+                            Once Stock downloaded and began using the open source version of Sourcegraph, he started
+                            sharing search result URLs with engineers. Soon, Sourcegraph spread organically throughout
+                            the organization and the internal DevOps team decided to deploy Sourcegraph for all
+                            Cloudflare engineers.
                         </p>
 
                         <p>
                             Now, with Sourcegraph universal code search, Cloudflare engineers can solve the big code
                             problems they face every day. For example, engineers can quickly identify out-of-date code
-                            libraries by only searching certain repositories, while excluding specific file types. And it's
-                            easier to search for error logs. As a result, the team can refactor and debug faster and feel
-                            confident they've addressed each issue.
+                            libraries by only searching certain repositories, while excluding specific file types. And
+                            it's easier to search for error logs. As a result, the team can refactor and debug faster
+                            and feel confident they've addressed each issue.
                         </p>
 
                         <h3 className="pt-5 pb-1">Finding and addressing security risks</h3>
 
                         <p>
-                            Sourcegraph has also become essential to how the Cloudflare security team can quickly address
-                            security risks and root-cause incidents.
+                            Sourcegraph has also become essential to how the Cloudflare security team can quickly
+                            address security risks and root-cause incidents.
                         </p>
 
                         <InContentBlockquote
@@ -129,15 +124,16 @@ export const CaseStudy: React.FunctionComponent = () => {
                         <h3 className="pt-5 pb-1">Saving time, from days to minutes</h3>
 
                         <p>
-                            Whether searching for instances of a library or refactoring an entire application, it's hard to
-                            put exact numbers on how much time the organization saves as a result of using Sourcegraph,
-                            because it's a 'death by a thousand paper cuts' scenario.
+                            Whether searching for instances of a library or refactoring an entire application, it's hard
+                            to put exact numbers on how much time the organization saves as a result of using
+                            Sourcegraph, because it's a 'death by a thousand paper cuts' scenario.
                         </p>
 
                         <p>
-                            Each time an engineer uses the tool to search and understand code, instead of cloning the repo,
-                            he or she saves time and feels more confident in the results. When you have 500 engineers
-                            searching code repos, multiple times a day, throughout each day, that's a huge time savings.
+                            Each time an engineer uses the tool to search and understand code, instead of cloning the
+                            repo, he or she saves time and feels more confident in the results. When you have 500
+                            engineers searching code repos, multiple times a day, throughout each day, that's a huge
+                            time savings.
                         </p>
 
                         <p>In the end, it all adds up to increased developer productivity -- and better code.</p>

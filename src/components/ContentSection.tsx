@@ -23,11 +23,9 @@ export const ContentSection: React.FunctionComponent<Props> = ({
     id = '',
     color = 'none',
     className = '',
-    children
+    children,
 }): JSX.Element => (
     <div id={id} className={COLORS[color]}>
-        <section className={`content-section container ${className}`}>
-            {children}
-        </section>
+        <section className={`content-section container ${className}`}>{children}</section>
     </div>
 )

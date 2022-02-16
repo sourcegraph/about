@@ -1,17 +1,13 @@
 import React from 'react'
 
-import {
-    Layout,
-    CaseStudyLayout,
-    ContentSection,
-    InContentBlockquote
-} from '@components'
+import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
 
 export const CaseStudy: React.FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Convoy improves developer onboarding',
-            description: 'Sourcegraph case study: At Convoy, Sourcegraph helps improves the developer on-boarding process.',
+            description:
+                'Sourcegraph case study: At Convoy, Sourcegraph helps improves the developer on-boarding process.',
             image: 'https://about.sourcegraph.com/case-studies/convoy1-sourcegraph-case-study-og-embed.jpg',
         }}
         className="navbar-dark bg-black"

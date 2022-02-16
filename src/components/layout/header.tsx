@@ -24,7 +24,6 @@ const onRightClickLogo = (event: React.MouseEvent): void => {
 }
 
 const Header = (props: Props): JSX.Element => {
-
     const [isOpen, setIsOpen] = useState(false)
     const [productMenuOpen, setProductMenuOpen] = useState(false)
     const [resourcesMenuOpen, setResourcesMenuOpen] = useState(false)
@@ -71,17 +70,15 @@ const Header = (props: Props): JSX.Element => {
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="/podcast/">Sourcegraph Podcast</NavDropdown.Item>
                             </NavDropdown>
-                            
+
                             <NavDropdown id="customersDropdown" title="Customers">
                                 <NavDropdown.Item href="/case-studies">Case studies</NavDropdown.Item>
                                 <NavDropdown.Item href="/use-cases">Use cases</NavDropdown.Item>
-                                <NavDropdown.Item href="/contact/product-specialist">
-                                    Become one
-                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/contact/product-specialist">Become one</NavDropdown.Item>
                             </NavDropdown>
-                            
+
                             <Nav.Link href="/pricing">Pricing</Nav.Link>
-                            
+
                             <Nav.Link href="https://docs.sourcegraph.com" target="_blank">
                                 Docs
                             </Nav.Link>
@@ -118,10 +115,7 @@ const Header = (props: Props): JSX.Element => {
                         </Nav>
 
                         {/* Mobile Navbar */}
-                        <div
-                            id="mobile-navbar"
-                            className={`collapse navbar-collapse ${isOpen ? 'show' : 'hide'}`}
-                        >
+                        <div id="mobile-navbar" className={`collapse navbar-collapse ${isOpen ? 'show' : 'hide'}`}>
                             <ul className="nav navbar-nav">
                                 <li className="header__nav-item nav-item" role="presentation">
                                     <span

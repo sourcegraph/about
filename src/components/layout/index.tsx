@@ -36,7 +36,9 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     const meta: LayoutProps['meta'] = {
         ...props.meta,
         title: props.meta.title || 'Sourcegraph - Universal Code Search',
-        description: props.meta.description || 'Find and fix things across all of your code with Sourcegraph universal code search.',
+        description:
+            props.meta.description ||
+            'Find and fix things across all of your code with Sourcegraph universal code search.',
         image: props.meta.image || 'https://about.sourcegraph.com/sourcegraph-mark.png',
         icon: props.meta.icon || 'https://about.sourcegraph.com/favicon.png',
     }
@@ -60,7 +62,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
                 <link rel="icon" type="image/png" href={meta.icon} />
                 <link rel="icon" type="image/png" href={meta.image} />
-            </Head> 
+            </Head>
 
             <div className={props.heroAndHeaderClassName}>
                 <Header
@@ -75,13 +77,9 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 {props.hero}
             </div>
 
-            <section className="d-flex flex-column fill-height">
-                {props.children}
-            </section>
-            
-            {!props.hideFooter && (
-                <Footer className={`pt-4 ${props.className}`} minimal={props.minimal} />
-            )}
+            <section className="d-flex flex-column fill-height">{props.children}</section>
+
+            {!props.hideFooter && <Footer className={`pt-4 ${props.className}`} minimal={props.minimal} />}
         </div>
     )
 }

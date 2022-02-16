@@ -1,17 +1,13 @@
 import React from 'react'
 
-import {
-    Layout,
-    CaseStudyLayout,
-    ContentSection,
-    InContentBlockquote
-} from '@components'
+import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
 
 export const CaseStudy: React.FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring',
-            description: 'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
+            description:
+                'Learn how after discovering and deploying Sourcegraph, Quantcast was able to do major refactors with confidence.',
             image: 'https://about.sourcegraph.com/case-studies/quantcast-sourcegraph-case-study-og-embed.jpg',
         }}
         className="navbar-dark bg-black"

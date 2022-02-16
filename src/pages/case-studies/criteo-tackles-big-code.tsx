@@ -1,18 +1,13 @@
 import React from 'react'
 
-import {
-    Layout,
-    CaseStudyLayout,
-    ContentSection,
-    InContentImage,
-    InContentBlockquote
-} from '@components'
+import { Layout, CaseStudyLayout, ContentSection, InContentImage, InContentBlockquote } from '@components'
 
 export const CaseStudy: React.FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Criteo uses Sourcegraph universal code search to tackle Big Code',
-            description: 'Sourcegraph provides Criteo the ability to cross boundaries of different codebases and languages authored by different people with different tools.',
+            description:
+                'Sourcegraph provides Criteo the ability to cross boundaries of different codebases and languages authored by different people with different tools.',
             image: 'https://about.sourcegraph.com/external-logos/criteo-logo.svg',
         }}
         className="navbar-dark bg-black"
@@ -22,7 +17,7 @@ export const CaseStudy: React.FunctionComponent = () => (
             title="Criteo uses Sourcegraph universal code search to tackle Big Code"
             logo="/external-logos/criteo-white-logo.svg"
             quote={{
-                quote: 'Sourcegraph pays for itself many times over—it\'s a game changer.',
+                quote: "Sourcegraph pays for itself many times over—it's a game changer.",
                 author: 'François Jehl, Senior Engineering Manager, Criteo',
             }}
         >

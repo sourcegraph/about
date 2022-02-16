@@ -10,12 +10,12 @@ export default class MyDocument extends Document {
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-                    
+
                     <link rel="icon" type="image/png" href="/favicon.png" />
 
                     {/* TODO Implement RSS Feed */}
                     {/* <link rel="alternate" type="application/rss+xml" title="Universal Code Search | Sourcegraph" href="/rss.xml" /> */}
-                    
+
                     {/* Sourcegraph Chrome Extension */}
                     <link
                         rel="chrome-webstore-item"

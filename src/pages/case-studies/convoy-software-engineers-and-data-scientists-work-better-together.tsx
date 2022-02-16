@@ -1,17 +1,13 @@
 import React from 'react'
 
-import {
-    Layout,
-    CaseStudyLayout,
-    ContentSection,
-    InContentBlockquote
-} from '@components'
+import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
 
 export const CaseStudy: React.FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together',
-            description: 'Sourcegraph case study: At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
+            description:
+                'Sourcegraph case study: At Convoy, Sourcegraph is transforming how engineers and data scientists collaborate, resulting in greater efficiency and improved data integrity.',
             image: 'https://about.sourcegraph.com/case-studies/convoy2-sourcegraph-case-study-og-embed.jpg',
         }}
         className="navbar-dark bg-black"
@@ -21,7 +17,7 @@ export const CaseStudy: React.FunctionComponent = () => (
             title="Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together"
             logo="/external-logos/convoy-logo-white.svg"
             quote={{
-                quote: 'Now that we are using Sourcegraph, we don\'t need to worry about data being out of date.',
+                quote: "Now that we are using Sourcegraph, we don't need to worry about data being out of date.",
                 author: 'Owen Kim, Senior Software Engineer, Convoy',
                 image: '/case-studies/owen-kim-convoy.jpg',
             }}

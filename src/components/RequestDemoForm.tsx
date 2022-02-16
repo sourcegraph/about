@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import { ContentSection } from './ContentSection';
+import { ContentSection } from './ContentSection'
 
 interface Props {
-    title?: string;
-    description?: string;
-    demoFormURL?: string;
+    title?: string
+    description?: string
+    demoFormURL?: string
 }
 
 export const RequestDemoForm: React.FunctionComponent<Props> = ({
@@ -13,13 +13,13 @@ export const RequestDemoForm: React.FunctionComponent<Props> = ({
     description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
     demoFormURL = 'https://info.sourcegraph.com/demo-request',
 }) => (
-        <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
-            <div className="container text-center pt-6">
-                <h3 className="display-3 font-weight-bold">{title}</h3>
-                <p>{description}</p>
-                <a href={demoFormURL} className="btn btn-primary mx-2 mb-3" title="Request a demo">
-                    Schedule a demo
-                </a>
-            </div>
-        </ContentSection>
-    );
+    <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
+        <div className="container text-center pt-6">
+            <h3 className="display-3 font-weight-bold">{title}</h3>
+            <p>{description}</p>
+            <a href={demoFormURL} className="btn btn-primary mx-2 mb-3" title="Request a demo">
+                Schedule a demo
+            </a>
+        </div>
+    </ContentSection>
+)

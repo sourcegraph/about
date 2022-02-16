@@ -11,7 +11,7 @@ interface CaseStudiesHomeProps {
     slugs: string[]
 }
 
-const CaseStudiesHome: FunctionComponent<CaseStudiesHomeProps> = ({ slugs }) => (
+const CaseStudiesHome: React.FunctionComponent<CaseStudiesHomeProps> = ({ slugs }) => (
     <>
         <div>
             <div>

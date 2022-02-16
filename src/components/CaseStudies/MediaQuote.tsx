@@ -6,11 +6,7 @@ interface Props {
     author: string
 }
 
-export const MediaQuote: React.FunctionComponent<Props> = ({
-    image,
-    quote,
-    author
-}) => (
+export const MediaQuote: React.FunctionComponent<Props> = ({ image, quote, author }) => (
     <div className="container pt-3">
         <div className="case-studies__quote row justify-content-center">
             {image && (
