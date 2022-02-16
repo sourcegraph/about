@@ -176,7 +176,7 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
 
 When Sourcegraph decided to go [fully remote](https://about.sourcegraph.com/blog/our-journey-to-all-remote/), we changed our permanent office location. Doing this had legal and HR ramifications, so we had to update all our web properties to stay in compliance.
 
-**Search**: [This search](https://sourcegraph.com/search?q=context:%40sourcegraph/all+142+Minna&patternType=literal) helped us update our web properties when we went fully remote.
+**Search**: [This search](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+142+Minna+archived:yes+&patternType=literal) helped us update our web properties when we went fully remote.  8x6r45rt7
 
 <p>
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTkx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 175px;"></iframe>
