@@ -1,0 +1,136 @@
+.podcast {
+    &__banner {
+        font-size: 4rem;
+        font-weight: normal;
+    }
+    &__subbanner {
+        font-size: 1.25rem;
+    }
+
+    background-color: black;
+    border-bottom: 3px solid $dark-5;
+
+    a {
+        color: $light-1;
+    }
+
+    padding-bottom: 5em;
+
+    &__subscribe {
+        text-align: center;
+        border-top: 1px solid $dark-5;
+        border-bottom: 1px solid $dark-5;
+        color: black;
+        background-color: $blue-3;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        &-highlight {
+            font-weight: bold;
+        }
+        &-option {
+            margin-top: 0.25em;
+            margin-bottom: 0.25em;
+            display: inline-block;
+            margin-left: 0.85em;
+        }
+        a {
+            color: $black;
+        }
+    }
+
+    &__subscribe-top {
+        border-top: 1px solid $dark-5;
+        &__subscribe {
+            border-top: 0;
+        }
+    }
+
+    &__subscribe-episode {
+        margin-bottom: 1em;
+    }
+
+    &__content-option {
+        margin: 1.5em 0 1.5em 0;
+        color: $blue-3;
+        a {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-right: 1em;
+            padding-left: 1em;
+            color: $blue-3;
+
+            &:first-child {
+                margin-left: -1em;
+            }
+            border: 1px solid transparent;
+            border-radius: 0.5em;
+        }
+        a.podcast__content-option-selected {
+            text-shadow: 0 0 0.9px $blue-3, 0 0 0.9px $blue-3;
+            border: 1px solid $blue-3;
+            box-sizing: border-box;
+        }
+    }
+
+    &__episode {
+        margin: auto auto 7em auto;
+        border-top: 1px solid $dark-5;
+    }
+
+    &__icon {
+        height: 1em;
+    }
+
+    &__backtoall {
+        margin-bottom: 1em;
+        a {
+            color: $dark-3;
+        }
+    }
+
+    &__title {
+        font-size: 2.5em;
+        margin: 0.75em auto 0.75em auto;
+        font-weight: 100;
+        color: $blue-3;
+        a {
+            color: $blue-3;
+        }
+        a:hover {
+            text-decoration: none;
+            border-bottom: 2px solid $blue-3;
+        }
+    }
+
+    &__people {
+        text-transform: uppercase;
+        color: $light-1;
+    }
+
+    &__date {
+        color: $dark-3;
+    }
+
+    &__player {
+        margin: 3em auto;
+        audio {
+            filter: saturate(100%) invert(90%);
+        }
+    }
+
+    &__description {
+        color: $light-6;
+        margin-top: 1em;
+        line-height: 1.5;
+
+        &-emphasis {
+            font-weight: bold;
+        }
+    }
+
+    &__acknowledgements {
+        h2 {
+            font-size: 1.75rem;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+// stylelint-disable declaration-property-unit-whitelist
+.header {
+    &__logo {
+        background: url(/sourcegraph-logo.svg) no-repeat;
+        background-size: 150px;
+        min-width: 150px;
+        height: 26px;
+        margin-right: 0;
+
+        &-image {
+            height: 26px;
+            margin-bottom: 0.125rem;
+        }
+    }
+
+    &__nav-item {
+        align-items: center;
+    }
+    &__nav-link.btn:hover {
+        color: $light !important;
+    }
+
+    &.navbar-dark .header {
+        &__logo {
+            background: url(/sourcegraph-reverse-logo.svg) no-repeat;
+            background-size: 150px;
+            height: 26px;
+        }
+    }
+
+    /* New Top Nav Customization */
+    .nav-link {
+        color: $navbar-light-color;
+        padding: 0.7rem 0.4rem;
+
+        &:hover {
+            color: $navbar-light-hover-color;
+        }
+        &.btn-primary {
+            color: $white;
+        }
+        &.btn-outline-primary {
+            color: $blue;
+
+            &:hover {
+                background-color: $blue;
+                color: $white;
+            }
+        }
+    }
+
+    .right-nav {
+        .nav-link.btn-simple {
+            color: $blue;
+        }
+        .nav-link.btn {
+            font-weight: bold;
+        }
+    }
+
+    &.navbar-dark {
+        /* Make sure top nav font color is visible (light) on dark background */
+        .nav .nav-link {
+            color: $white;
+        }
+    }
+
+    /* Desktop */
+    @media only screen and (min-width: 1100px) {
+        #mobile-navbar,
+        .navbar-toggler {
+            display: none !important;
+        }
+        .me-auto {
+            min-width: 415px;
+            flex-grow: 1;
+        }
+        .right-nav {
+            min-width: 178px;
+        }
+        .container-lg {
+            max-width: 1400px;
+            justify-content: left;
+        }
+    }
+
+    /* Mobile & Tablet */
+    @media only screen and (max-width: 1099px) {
+        /* New Top Nav Customization */
+        .btn-outline-primary {
+            border: 0 none;
+            font-weight: normal;
+            &:hover {
+                color: $navbar-light-hover-color !important;
+                background-color: $nav-bg-color !important;
+            }
+        }
+        /* Adjust dropdown arrow positioning */
+        .dropdown-toggle::after {
+            margin-top: 0.6em;
+        }
+        .me-auto.nav,
+        .right-nav {
+            display: none !important;
+        }
+        .small-menu {
+            list-style: none;
+            padding-inline-start: 0;
+            a {
+                color: $navbar-light-color;
+            }
+            a:hover {
+                text-decoration: none;
+                color: $navbar-light-hover-color;
+            }
+        }
+        &.navbar-dark {
+            /* Make sure top nav font color is visible (light) on dark background */
+            .nav .nav-link a {
+                color: $light-5;
+            }
+            .navbar-toggler {
+                border-color: $light-5;
+                color: $light-5;
+            }
+        }
+    }
+}
+
+/* Hello bar */
+.background-purple {
+    background-color: $purple;
+}

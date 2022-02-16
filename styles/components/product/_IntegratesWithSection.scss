@@ -1,0 +1,16 @@
+.integrates-with-section {
+    max-width: var(--breakpoint-lg);
+    &__logo {
+        max-width: 150px;
+        height: auto;
+    }
+}
+
+.integration-entries-row {
+    border-color: $gray-200 !important;
+    &__text {
+        @include media-breakpoint-up(md) {
+            text-align: right;
+        }
+    }
+}

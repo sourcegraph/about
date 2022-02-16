@@ -1,4 +1,3 @@
-import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Script from 'next/script' // import all top-level scripts here: https://nextjs.org/docs/messages/no-script-in-document-page
 

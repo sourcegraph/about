@@ -1,0 +1,10 @@
+// stylelint-disable declaration-property-unit-whitelist
+.tweets {
+    max-width: var(--breakpoint-lg);
+    margin: 0 auto;
+    padding: 2rem 0;
+    .twitter-tweet {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
