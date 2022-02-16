@@ -60,7 +60,7 @@ export const CaseStudy: React.FunctionComponent = () => (
                         <pre className="language-regex">
                             <code
                                 className="language-regex"
-                                dangerouslySetInnerHTML={{ __html: `\\w+\\.ip(addr)?\\b` }}
+                                dangerouslySetInnerHTML={{ __html: '\\w+\\.ip(addr)?\\b' }}
                             />
                         </pre>
                         or addresses themselves with:
@@ -69,7 +69,7 @@ export const CaseStudy: React.FunctionComponent = () => (
                         <pre className="language-regex">
                             <code
                                 className="language-regex"
-                                dangerouslySetInnerHTML={{ __html: `\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b` }}
+                                dangerouslySetInnerHTML={{ __html: '\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b' }}
                             />
                         </pre>
                     </div>

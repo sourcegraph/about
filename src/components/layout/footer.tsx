@@ -22,17 +22,17 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link href="/case-studies">
-                                        <a>Case studies</a>
+                                        Case studies
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link href="/use-cases">
-                                        <a>Use cases</a>
+                                        Use cases
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link href="/pricing">
-                                        <a>Pricing</a>
+                                        Pricing
                                     </Link>
                                 </li>
                                 <li className="nav-item">
@@ -52,7 +52,7 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link href="/blog">
-                                        <a>Blog</a>
+                                        Blog
                                     </Link>
                                 </li>
                                 <li className="nav-item">
@@ -68,17 +68,17 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                                 </li>
                                 <li className="nav-item">
                                     <Link href="/podcast">
-                                        <a>Podcast</a>
+                                        Podcast
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link href="/dev-tools-quiz">
-                                        <a>Dev tools quiz</a>
+                                        Dev tools quiz
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link href="/community">
-                                        <a>Community</a>
+                                        Community
                                     </Link>
                                 </li>
                             </ul>
@@ -89,17 +89,17 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link href="/about">
-                                        <a>About</a>
+                                        About
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link href="/jobs">
-                                        <a>Careers - We're Hiring!</a>
+                                        Careers - We're Hiring!
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link href="/contact">
-                                        <a>Contact</a>
+                                        Contact
                                     </Link>
                                 </li>
                                 <li className="nav-item">
@@ -107,7 +107,7 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                                 </li>
                                 <li className="nav-item">
                                     <Link href="/news">
-                                        <a>News</a>
+                                        News
                                     </Link>
                                 </li>
                                 <li className="nav-item">
@@ -117,8 +117,8 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                         </div>
 
                         <div className="col-12 col-lg-3 mb-5 order-md-1">
-                            <Link href="/">
-                                <a className="row footer__logo ml-1">
+                            <Link href="/" passHref={true}>
+                                <a href="#none" className="row footer__logo ml-1 ">
                                     <span role="img" aria-label="Sourcegraph - Universal code search">
                                         {' '}
                                     </span>
@@ -196,18 +196,18 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
                 <ul className="nav">
                     <li className="nav-item text-muted mr-3">&copy; 2021 Sourcegraph</li>
                     <li className="nav-item">
-                        <Link href="/terms">
-                            <a className="nav-link">Terms</a>
+                        <Link href="/terms" passHref={true}>
+                            <a href="#none" className="nav-link">Terms</a>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/security">
-                            <a className="nav-link">Security</a>
+                        <Link href="/security" passHref={true}>
+                            <a href="#none" className="nav-link">Security</a>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/privacy">
-                            <a className="nav-link">Privacy</a>
+                        <Link href="/privacy" passHref={true}>
+                            <a href="#none" className="nav-link">Privacy</a>
                         </Link>
                     </li>
                 </ul>

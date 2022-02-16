@@ -79,7 +79,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
             <section className="d-flex flex-column fill-height">{props.children}</section>
 
-            {!props.hideFooter && <Footer className={`pt-4 ${props.className}`} minimal={props.minimal} />}
+            {!props.hideFooter && <Footer minimal={props.minimal} />}
         </div>
     )
 }

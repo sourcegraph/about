@@ -174,7 +174,7 @@ const Header = (props: Props): JSX.Element => {
                                             <a href="/blog">Blog</a>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <a href="https://learn.sourcegraph.com/" target="_blank">
+                                            <a href="https://learn.sourcegraph.com/" target="_blank" rel="noopener nofollow noreferrer">
                                                 Learn
                                             </a>
                                         </li>
@@ -210,28 +210,24 @@ const Header = (props: Props): JSX.Element => {
                                     >
                                         <li className="nav-link" role="presentation">
                                             <Link href="/case-studies">
-                                                <a>Case studies</a>
+                                                Case studies
                                             </Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
                                             <Link href="/use-cases">
-                                                <a>Use cases</a>
+                                                Use cases
                                             </Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
                                             <Link href="/contact/product-specialist">
-                                                <a>Become one</a>
+                                                Become one
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li className="nav-item" role="presentation">
-                                    <Link
-                                        href="/pricing"
-                                        className="nav-link"
-                                        activeClassName="header__nav-link-active"
-                                    >
-                                        <a>Pricing</a>
+                                    <Link href="/pricing" passHref={true}>
+                                        <a href="#none" className="nav-link">Pricing</a>
                                     </Link>
                                 </li>
                                 <li className="nav-item" role="presentation">
