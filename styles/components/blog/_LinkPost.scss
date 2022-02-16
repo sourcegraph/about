@@ -1,0 +1,17 @@
+.link-post {
+    overflow: hidden;
+
+    &__html {
+        // Allow title to be the first sentence of the post.
+        p:nth-child(1),
+        p:nth-child(2) {
+            display: inline;
+        }
+        code {
+            background-color: $light;
+            border: solid 1px $border-color;
+            padding: 2px;
+            margin: -2px 0;
+        }
+    }
+}
