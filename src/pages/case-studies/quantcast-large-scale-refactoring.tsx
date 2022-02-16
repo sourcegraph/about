@@ -58,17 +58,13 @@ export const CaseStudy: React.FunctionComponent = () => (
                         <br />
                         <br />
                         <pre className="language-regex">
-                            <code className="language-regex">
-                                {'\\w+\\.ip(addr)?\\b'}
-                            </code>
+                            <code className="language-regex">{'\\w+\\.ip(addr)?\\b'}</code>
                         </pre>
                         or addresses themselves with:
                         <br />
                         <br />
                         <pre className="language-regex">
-                            <code className="language-regex">
-                                {'\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b'}
-                            </code>
+                            <code className="language-regex">{'\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b'}</code>
                         </pre>
                     </div>
 

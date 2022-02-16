@@ -1,7 +1,7 @@
 // Common
 export { Layout } from './Layout'
 export { ContentSection } from './ContentSection'
-export { Jumbotron, COLORS } from './Jumbotron'
+export { Jumbotron } from './Jumbotron'
 export { RequestDemoForm } from './RequestDemoForm'
 
 // Actions
