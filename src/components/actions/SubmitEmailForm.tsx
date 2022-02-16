@@ -1,10 +1,12 @@
 import React from 'react'
 
-export const SubmitEmailForm: React.FunctionComponent<{
+interface Props {
     formAction: string
     buttonText: string
     className?: string
-}> = ({ formAction, buttonText, className = '' }) => (
+}
+
+export const SubmitEmailForm: React.FunctionComponent<Props> = ({ formAction, buttonText, className = '' }) => (
     <div>
         <form
             className={`form form-inline input-group mb-2 d-inline-flex w-auto ${className}`}
@@ -23,7 +25,7 @@ export const SubmitEmailForm: React.FunctionComponent<{
                 autoComplete="email"
             />
             <div className="input-group-append">
-                <button type="submit" role="button" className="btn btn-primary">
+                <button type="submit" className="btn btn-primary">
                     {buttonText}
                 </button>
             </div>
