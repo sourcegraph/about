@@ -180,7 +180,7 @@ We used [this search](https://sourcegraph.com/search?q=context:global+repo:sourc
 - [This file](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go#L107:20) to figure out which fields we’re sending back and the data type
 - Send this to a dev to understand how we implement forms and who to talk to if needed
 - Give [this link](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L112:20) example to developers when understanding how to implement a new in-product survey
-- We were wondering if <code class="language-text">is_server_admin</code> in HubSpot was populating from our code or HubSpot workflow, so I searched [this](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24%4004a9ed2+isServerAdmin&patternType=literal)
+- We were wondering if <code class="language-text">`is_server_admin`</code> in HubSpot was populating from our code or HubSpot workflow, so I searched [this](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24%4004a9ed2+isServerAdmin&patternType=literal)
 
 <p>
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTky?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 750px;"></iframe>
