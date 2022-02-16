@@ -12,6 +12,13 @@
         }
     }
 
+    .mdi-icon {
+        border-radius: 40%;
+        padding: 1rem;
+        background-color: $white;
+        color: $cyan-2;
+    }
+
     .custom-carousel {
         transition: background-color 0.5s ease;
 

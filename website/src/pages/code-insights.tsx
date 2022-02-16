@@ -1,6 +1,5 @@
 import { Link, PageProps } from 'gatsby'
 import * as React from 'react'
-import { Blockquote } from '../components/Blockquote'
 import { ContentSection } from '../components/content/ContentSection'
 import { CodeInsightExample } from '../components/code-insights/CodeInsightsExamples'
 import { CodeInsightExampleType } from '../components/code-insights/types'
@@ -118,46 +117,76 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             <CustomCarousel items={items} autoAdvance={true} />
         </div>
 
-        <div className="bg-gradient-blue-mist py-7">
-            <ContentSection className="py-5">
+        <div className="bg-gradient-blue-mist py-4">
+            <ContentSection className="py-6">
+                <div className="row d-flex text-center justify-content-center px-8 py-6">
+                    <div className="w-100">
+                        <p className="font-weight-bold display-3">Trusted by leading engineering teams around the world</p>
+                    </div>
+                    <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
+                        <div className="display-3">
+                        &ldquo;Code insights enables our team to move away from manual spreadsheets 
+                        and point-in-time documentation and provides us with a holistic view of our codebase 
+                        when we undergo complex projects such as migrations and major platform-related changes.&rdquo;
+                        </div>
+                        <br />
+                        <div className="pt-3 text-muted text-center">&mdash; Jane Doe, Engineering Leader</div>
+                    </blockquote>
+                    <div className="d-flex justify-content-center">
+                        <a href="https://prezi.com" className="btn">
+                            <img src="/external-logos/prezi-logo.svg" width="110px" alt="Prezi" />
+                        </a>
+                    </div>
+                </div>
+            </ContentSection>
+        </div>
+
+        
+        <div className="bg-light-gray">
+            <ContentSection className="py-7">
                 <div className="d-flex flex-wrap">
-                    <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">Benefits for VP of Engineering</h2>
+                    <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">Engineering leadership with superpowers</h2>
+                    <p className="w-100 text-center">
+                        Code Insights provides reliable real-time reporting directly
+                        from the codebase, making engineering leaders and their teams
+                        more effective.
+                    </p>
                     <div className="d-flex flex-column col-lg-6 px-6 justify-content-around">
                         <div className="d-flex py-5">
-                            <div className="mr-4"><BullsEyeArrowIcon size={50} /></div>
+                            <div className="mr-4"><BullsEyeArrowIcon size={70} /></div>
                             <div className="d-flex flex-column">
-                                <h3>Goal setting</h3>
+                                <h3>Set goals</h3>
                                 <p>
-                                    Set and measure goals around progress in your codebase.
+                                    Set and measure goals around progress in your codebase
                                 </p>
                             </div>
                         </div>
                         <div className="d-flex py-5">
-                        <div className="mr-4"><RocketLaunchOutlineIcon size={50} /></div>
+                        <div className="icon mr-4"><RocketLaunchOutlineIcon size={70} /></div>
                             <div className="d-flex flex-column">
-                                <h3>One step ahead</h3>
+                                <h3>Plan proactively</h3>
                                 <p>
-                                    Be on the pulse of engineering initiatives.
+                                    Stay on top of engineering initiatives and catch issues before they escalate
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="d-flex flex-column col-lg-6 px-6 justify-content-around">
                         <div className="d-flex py-5">
-                            <div className="mr-4"><TrendingUpIcon size={50} /></div>
+                            <div className="mr-4"><TrendingUpIcon size={70} /></div>
                             <div className="d-flex flex-column">
-                                <h3>{'Ownership & trends'}</h3>
+                                <h3>{'Track ownership & trends'}</h3>
                                 <p>
-                                    Tie trends and metrics to owners on the teams.
+                                    Tie trends and metrics to owners on the teams
                                 </p>
                             </div>
                         </div>
                         <div className="d-flex py-5">
-                            <div className="mr-4"><LighteningBoltOutlineIcon size={50} /></div>
+                            <div className="mr-4"><LighteningBoltOutlineIcon size={70} /></div>
                             <div className="d-flex flex-column">
-                                <h3>Be proactive</h3>
+                                <h3>Celebrate progress</h3>
                                 <p>
-                                    Get on top of issues before they escalate.
+                                    Visualize the momentum and motivate your teammates
                                 </p>
                             </div>
                         </div>
@@ -165,21 +194,6 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                 </div>
             </ContentSection>
         </div>
-
-        <ContentSection className="py-6">
-            <div className="row d-flex text-center justify-content-center px-8 py-6">
-                <div className="w-100">
-                    <h2>Trusted by leading engineering teams around the world</h2>
-                </div>
-                <Blockquote quote={`Code insights enables our team to move away from manual spreadsheets 
-                    and point-in-time documentation and provides us with a holistic view of our codebase 
-                    when we undergo complex projects such as migrations and major platform-related changes.`}
-                    by="Jane Doe, Engineering Leader"
-                    flex={true}
-                    logo="/external-logos/prezi-logo.svg"
-                    href="https://prezi.com" />
-            </div>
-        </ContentSection>
 
         {/* Use Cases */}
         <ContentSection className="py-4 py-md-7">
