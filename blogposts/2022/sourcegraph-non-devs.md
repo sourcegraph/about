@@ -168,20 +168,6 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
 
 **Time saved:** Exploring Google Analytics with Sourcegraph saved us a couple hours we’d have otherwise spent tracking down who might have historical knowledge of our Google Tag Manager configuration. It likely saved us even more time too, since we needed to investigate past changes in Google Analytics.
 
-### Where do we need to update our contact information and address on our web properties?
-
-When Sourcegraph decided to go [fully remote](https://about.sourcegraph.com/blog/our-journey-to-all-remote/), we changed our permanent office location. Doing this had legal and HR ramifications, so we had to update all our web properties to stay in compliance.
-
-**Search**: [This search](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+142+Minna+archived:yes+&patternType=literal) helped us update our web properties when we went fully remote. 8x6r45rt7
-
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTkx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
-</p>
-
-**Impact:** We were able to maintain consistency among documents and information required by law to keep us out of trouble.
-
-**Time saved:** We saved 10 minutes (and a lot of stress). The alternative would have been searching repo by repo and hoping we found everything.
-
 ### Where do fields in HubSpot forms come from and how should we implement new ones?
 
 We use HubSpot forms for all of our opt-in form submissions. These forms are coded into our web properties by the software engineering teams, so it’s essential that the communication about what is being collected is seamless between the marketing, data, and engineering teams.
@@ -191,7 +177,7 @@ We use HubSpot forms for all of our opt-in form submissions. These forms are cod
 We used [this search](https://sourcegraph.com/search?q=context:global+repo:sourcegraph/sourcegraph+hubspot&patternType=literal) to start the process, then:
 
 - HubSpot -> Find references on [hubspot util](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:12#tab=references) or [SubmitForm](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:33#tab=references)
-- [This search ](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go#L107:20) to figure out which fields we’re sending back and the data type
+- [This file](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go#L107:20) to figure out which fields we’re sending back and the data type
 - Send this to a dev to understand how we implement forms and who to talk to if needed
 - Give [this link](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L112:20) example to developers when understanding how to implement a new in-product survey
 - We were wondering if is_server_admin in HubSpot was populating from our code or HubSpot workflow, so I searched [this](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24%4004a9ed2+isServerAdmin&patternType=literal)
