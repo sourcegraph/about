@@ -185,7 +185,7 @@ Then:
 HubSpot -> Find references on [hubspot util](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:12#tab=references) or [SubmitForm](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:33#tab=references)
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjA5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjA5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 250px;"></iframe>
 </p>
 
 [This file](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go#L107:20) to figure out which fields we’re sending back and the data type.
