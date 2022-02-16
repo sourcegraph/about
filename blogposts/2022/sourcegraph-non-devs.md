@@ -22,7 +22,7 @@ In this post, we'll be using a feature called [search notebooks](https://about.s
 
 _This section is written by Joel Kwartler, the Product Manager for Code Insights. He’s a brilliant, genuinely kind human being who’s being played by Brad Pitt in an upcoming HBO biopic._
 
-As a product manager at a fast growing startup, I frequently need to know how our features interact, which analytics metrics other teammates have already built, and which product team processes or standards exist versus those that haven’t been built out yet. I use Sourcegraph to help me quickly answer these types of questions.
+As a product manager at a fast-growing startup, I frequently need to know how our features interact, which analytics metrics other teammates have already built, and which product team processes or standards exist versus those that haven’t been built out yet. I use Sourcegraph to help me quickly answer these types of questions.
 
 ### What actions do our metrics track?
 
@@ -62,7 +62,7 @@ I quickly found [our search team had changed a limit](https://sourcegraph.com/gi
 
 **Impact:** We could immediately respond to the customer and confirm the behavior as well as provide more context for the estimated time to fix.
 
-**Time Saved:** 18 hours waiting for a teammate to answer my question – hours that were especially important given we were actively working with a customer
+**Time Saved:** 18 hours waiting for a teammate to answer my question—hours that were especially important given we were actively working with a customer.
 
 ### What's the Sourcegraph standard for error message syntax?
 
@@ -124,11 +124,11 @@ _This section was written by Eric-Brody Moore, a member of the Business Operatio
 
 ### How has the Sourcegraph product data architecture changed over time?
 
-The architecture of our internally-facing data is ever-changing, so it’s critical we’re able to keep up with it so our data models are up-to-date and accurate.
+The architecture of our internally facing data is ever changing, so it’s critical we’re able to keep up with it so our data models are up-to-date and accurate.
 
 **Searches:**
 
-[This search](https://sourcegraph.com/search?q=context:%40ericbm+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:%5Einternal/database/schema%5C.md+type:diff&patternType=literal) shows how our Postgres db structure changes over time.
+[This search](https://sourcegraph.com/search?q=context:%40ericbm+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:%5Einternal/database/schema%5C.md+type:diff&patternType=literal) shows how our PostgreSQL database structure changes over time.
 
 <p>
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg3?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 190px;"></iframe>
@@ -154,7 +154,7 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 190px;"></iframe>
 </p>
 
-**Impact:** Telemetry sometimes breaks – this is a reality for most data teams. At Sourcegraph, it used to take days to realize something was broken. It then took hours to search through logs to determine which change was made to our telemetry and how to fix it. Now, Sourcegraph code monitoring immediately alerts us when a change goes in and what it was, so we can minimize data loss.
+**Impact:** Telemetry sometimes breaks—this is a reality for most data teams. At Sourcegraph, it used to take days to realize something was broken. It then took hours to search through logs to determine which change was made to our telemetry and how to fix it. Now, Sourcegraph code monitoring immediately alerts us when a change goes in and what it was, so we can minimize data loss.
 
 **Time saved:** Code monitoring saves us the 30 minutes required to get up to speed on what is leading to broken data pipelines, and saves us even more time and resources we’d otherwise spend minimizing data loss (and explaining to the company why data was lost and what the consequences of that loss will be).
 
@@ -168,13 +168,13 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTkw?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 175px;"></iframe>
 </p>
 
-**Impact:** Our Google Analytics had inconsistent data from historical changes in our web properties and nobody quite knew which web property to use within Google Analytics because they all had different numbers. I did a diff search for which tags were actually on our site and the history of changes and the search above came back with results. I was able to see which tag was in production, [when it was added](https://sourcegraph.com/github.com/sourcegraph/about/-/commit/2b60ef75c86b97bd27c8901c7ff55aadafc55d42), and who to talk to about the history of our Google Tag Manager (spoiler: it was our CEO @sqs – I decided not to bother him with it and just move forward!)
+**Impact:** Our Google Analytics had inconsistent data from historical changes in our web properties and nobody quite knew which web property to use within Google Analytics because they all had different numbers. I did a diff search for which tags were actually on our site and the history of changes and the search above came back with results. I was able to see which tag was in production, [when it was added](https://sourcegraph.com/github.com/sourcegraph/about/-/commit/2b60ef75c86b97bd27c8901c7ff55aadafc55d42), and who to talk to about the history of our Google Tag Manager (spoiler: it was our CEO [Quinn Slack](https://handbook.sourcegraph.com/team/#quinn-slack) – I decided not to bother him with it and just move forward!)
 
 **Time saved:** Exploring Google Analytics with Sourcegraph saved us a couple hours we’d have otherwise spent tracking down who might have historical knowledge of our Google Tag Manager configuration. It likely saved us even more time too, since we needed to investigate past changes in Google Analytics.
 
 ### Where do we need to update our contact information and address on our web properties?
 
-When Sourcegraph decided to go [fully remote](https://about.sourcegraph.com/blog/our-journey-to-all-remote/), we changed our permanent office location. Doing this has legal and HR ramifications, so we had to update all our web properties to stay in compliance.
+When Sourcegraph decided to go [fully remote](https://about.sourcegraph.com/blog/our-journey-to-all-remote/), we changed our permanent office location. Doing this had legal and HR ramifications, so we had to update all our web properties to stay in compliance.
 
 **Search**: [This search](https://sourcegraph.com/search?q=context:%40sourcegraph/all+142+Minna&patternType=literal) helped us update our web properties when we went fully remote.
 
@@ -184,7 +184,7 @@ When Sourcegraph decided to go [fully remote](https://about.sourcegraph.com/blog
 
 **Impact:** We were able to maintain consistency among documents and information required by law to keep us out of trouble.
 
-**Time saved:** We saved 10 minutes (and a lot of stress). The alternative would have been searching repo-by-repo and hoping we found everything.
+**Time saved:** We saved 10 minutes (and a lot of stress). The alternative would have been searching repo by repo and hoping we found everything.
 
 ### Where do fields in HubSpot forms come from and how should we implement new ones?
 
