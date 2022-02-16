@@ -1,2 +1,2 @@
 export { slugToTitleCase } from './slugToTitleCase'
-export { stringToDashCase } from './stringToDashCase'
+export { stringToKebabCase } from './stringToKebabCase'

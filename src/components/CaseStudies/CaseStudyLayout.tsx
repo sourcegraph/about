@@ -1,8 +1,7 @@
 import React from 'react'
 
-import { stringToDashCase } from '@util'
-
-import { ContentSection, RequestDemoForm, MediaQuote } from '..'
+import { ContentSection, RequestDemoForm, MediaQuote } from '@components'
+import { stringToKebabCase } from '@util'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
 
@@ -38,7 +37,7 @@ export const CaseStudyLayout: React.FunctionComponent<Props> = ({
     children,
 }) => (
     <>
-        <div className={`${stringToDashCase(customer)}-${className} ${className}`}>
+        <div className={`${stringToKebabCase(customer)}-${className} ${className}`}>
             <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
                 {heroImage && (
                     <div className="case-studies__quote row pt-3">
