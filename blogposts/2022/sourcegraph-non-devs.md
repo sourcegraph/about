@@ -120,7 +120,7 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 
 ## Analytics and Business Operations
 
-_This section was written by Eric-Brody Moore, a member of the Business Operations team. He can give other teammates demos of Sourcegraph, but they’re generally prefaced with “Joel can do this better than me.”_
+_This section was written by Eric-Brody Moore, a member of the Business Operations team. HBO only had room for one Sourcegrapher biopic and they unfortunately chose Joel despite Eric also being a brilliant and kind human being.”_
 
 ### How has the Sourcegraph product data architecture changed over time?
 
@@ -128,7 +128,7 @@ The architecture of our internally facing data is ever changing, so it’s criti
 
 **Searches:**
 
-[This search](https://sourcegraph.com/search?q=context:%40ericbm+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:%5Einternal/database/schema%5C.md+type:diff&patternType=literal) shows how our PostgreSQL database structure changes over time.
+[This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:%5Einternal/database/schema%5C.md+type:diff&patternType=literal) shows how our PostgreSQL database structure changes over time.
 
 <p>
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg3?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 190px;"></iframe>
@@ -154,7 +154,7 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 190px;"></iframe>
 </p>
 
-**Impact:** Telemetry sometimes breaks—this is a reality for most data teams. At Sourcegraph, it used to take days to realize something was broken. It then took hours to search through logs to determine which change was made to our telemetry and how to fix it. Now, Sourcegraph code monitoring immediately alerts us when a change goes in and what it was, so we can minimize data loss.
+**Impact:** A reality for most data teams is that telemetry sometimes breaks. At Sourcegraph, it used to take days to realize something was broken. It then took hours to search through logs to determine which change was made to our telemetry and how to fix it. Now, Sourcegraph code monitoring immediately alerts us when a change goes in and what it was, so we can minimize data loss.
 
 **Time saved:** Code monitoring saves us the 30 minutes required to get up to speed on what is leading to broken data pipelines, and saves us even more time and resources we’d otherwise spend minimizing data loss (and explaining to the company why data was lost and what the consequences of that loss will be).
 
@@ -192,7 +192,7 @@ We use HubSpot forms for all of our opt-in form submissions. These forms are cod
 
 **Searches**:
 
-We used [this search](https://sourcegraph.com/search?q=context:%40sourcegraph/all+hubspot&patternType=literal) to start the process, then:
+We used [this search](https://sourcegraph.com/search?q=context:global+repo:sourcegraph/sourcegraph+hubspot&patternType=literal) to start the process, then:
 
 - HubSpot -> Find references on [hubspot util](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:12#tab=references) or [SubmitForm](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:33#tab=references)
 - [This search ](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go#L107:20) to figure out which fields we’re sending back and the data type
