@@ -35,12 +35,12 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
     const meta: LayoutProps['meta'] = {
         ...props.meta,
-        title: props.meta.title || 'Sourcegraph - Universal Code Search',
+        title: props.meta?.title || 'Sourcegraph - Universal Code Search',
         description:
-            props.meta.description ||
+            props.meta?.description ||
             'Find and fix things across all of your code with Sourcegraph universal code search.',
-        image: props.meta.image || 'https://about.sourcegraph.com/sourcegraph-mark.png',
-        icon: props.meta.icon || 'https://about.sourcegraph.com/favicon.png',
+        image: props.meta?.image || 'https://about.sourcegraph.com/sourcegraph-mark.png',
+        icon: props.meta?.icon || 'https://about.sourcegraph.com/favicon.png',
     }
 
     return (
