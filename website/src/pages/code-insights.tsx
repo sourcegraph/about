@@ -61,28 +61,25 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             <div className="container pb-4">
                 <div className="row">
                     <div className="col-lg-6 mb-lg-6 mt-6">
-                        <h6 className="text-uppercase mb-2">Code Insights</h6>
+                        <div className="text-uppercase mb-2">Code Insights</div>
                         <h1 className="display-3 font-weight-bold mb-5">Track what really matters to you and your team.</h1>
-                        <h6>Effortlessly track and visualize trends in your entire codebase — kept automatically up to date.</h6>
-                        <p className="mb-3 display-5">
-                            Code Insights transforms your entire codebase into a queryable database so you can create customizable, visual dashboards in seconds
-                            and get real-time results. Accurately understand how different initiatives are progressing over time and answer questions that used 
-                            to be difficult or impossible to answer.
-                        </p>
-                        <div className="pt-1">
+                        <h4 className="mb-3">
+                            Effortlessly track and visualize trends in your entire codebase — kept automatically up to date.
+                        </h4>
+                        <div className="d-flex flex-column pt-1">
                             <Link
-                                className="btn btn-primary mr-3"
+                                className="btn btn-primary col-4 mr-3"
                                 to="/contact/request-demo"
                                 title="Request a Demo of Code Insights."
                             >
                                 Request a demo
                             </Link>
                             <a
-                                className="btn btn-outline-primary my-3"
+                                className="btn btn-link px-0 py-4 text-left col-7"
                                 href="/get-started"
                                 title="Use this if you want to search your (or your company's) code, invite teammates, and try all the features."
                             >
-                                Try it on Sourcegraph
+                                Try it on Sourcegraph via Docker Compose
                             </a>
                         </div>
                     </div>
