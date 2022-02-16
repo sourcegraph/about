@@ -17,7 +17,7 @@ export const CaseStudy: React.FunctionComponent = () => (
             title="Convoy adopts Sourcegraph Universal Code Search so software engineers and data scientists work better together"
             logo="/external-logos/convoy-logo-white.svg"
             quote={{
-                quote: "Now that we are using Sourcegraph, we don't need to worry about data being out of date.",
+                text: "Now that we are using Sourcegraph, we don't need to worry about data being out of date.",
                 author: 'Owen Kim, Senior Software Engineer, Convoy',
                 image: '/case-studies/owen-kim-convoy.jpg',
             }}

@@ -16,7 +16,7 @@ export const MediaQuote: React.FunctionComponent<Props> = ({ image, quote, autho
             )}
             <div className="col-12 col-lg-9">
                 <blockquote className="blockquote">
-                    <p className="text-light" dangerouslySetInnerHTML={{ __html: quote }} />
+                    <p className="text-light">{quote}</p>
                     <footer className="blockquote-footer text-light mt-1">{author}</footer>
                 </blockquote>
             </div>

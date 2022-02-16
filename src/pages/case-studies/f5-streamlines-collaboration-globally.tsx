@@ -17,7 +17,7 @@ export const CaseStudy: React.FunctionComponent = () => (
             title="F5 streamlines collaboration for global and distributed software teams"
             logo="/external-logos/f5-logo-white.svg"
             quote={{
-                quote: 'Sourcegraph is our answer for sharing information and facilitating easy collaboration across teams, despite the boundaries of distance and time.',
+                text: 'Sourcegraph is our answer for sharing information and facilitating easy collaboration across teams, despite the boundaries of distance and time.',
                 author: 'Satish Surapaneni, Senior Manager, Engineering, F5',
                 image: '/case-studies/satish-surapaneni-f5.jpg',
             }}

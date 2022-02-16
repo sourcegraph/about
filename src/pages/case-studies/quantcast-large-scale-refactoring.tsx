@@ -17,7 +17,7 @@ export const CaseStudy: React.FunctionComponent = () => (
             title="Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring"
             logo="/external-logos/quantcast-logo-white.svg"
             quote={{
-                quote: "Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything.",
+                text: "Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything.",
                 author: 'Simon Law, Staff Software Engineer, Quantcast',
                 image: '/case-studies/simon-law-quantcast.jpg',
             }}
@@ -58,19 +58,17 @@ export const CaseStudy: React.FunctionComponent = () => (
                         <br />
                         <br />
                         <pre className="language-regex">
-                            <code
-                                className="language-regex"
-                                dangerouslySetInnerHTML={{ __html: '\\w+\\.ip(addr)?\\b' }}
-                            />
+                            <code className="language-regex">
+                                {'\\w+\\.ip(addr)?\\b'}
+                            </code>
                         </pre>
                         or addresses themselves with:
                         <br />
                         <br />
                         <pre className="language-regex">
-                            <code
-                                className="language-regex"
-                                dangerouslySetInnerHTML={{ __html: '\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b' }}
-                            />
+                            <code className="language-regex">
+                                {'\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b'}
+                            </code>
                         </pre>
                     </div>
 

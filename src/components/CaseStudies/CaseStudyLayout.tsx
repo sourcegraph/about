@@ -7,7 +7,7 @@ import { ContentSection, RequestDemoForm, MediaQuote } from '..'
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
 
 interface Quote {
-    quote: string
+    text: string
     author: string
     image?: string
 }
@@ -50,14 +50,14 @@ export const CaseStudyLayout: React.FunctionComponent<Props> = ({
                         <div className="col-lg-9 ">
                             {quote && (
                                 <div className="text-left">
-                                    <p className="text-light" dangerouslySetInnerHTML={{ __html: quote.quote }} />
+                                    <p className="text-light">{quote.text}</p>
                                     <p className="blockquote-footer text-light mt-1">{quote.author}</p>
                                 </div>
                             )}
                         </div>
                     </div>
                 )}
-                {quote && !heroImage && <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} />}
+                {quote && !heroImage && <MediaQuote quote={quote.text} author={quote.author} image={quote.image} />}
                 {pdf && (
                     <a href={pdf} className="btn btn-primary mt-3" rel="nofollow noreferrer noopener" target="_blank">
                         <i className="fa fa-file-pdf pr-2" />

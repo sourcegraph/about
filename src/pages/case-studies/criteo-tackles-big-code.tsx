@@ -17,7 +17,7 @@ export const CaseStudy: React.FunctionComponent = () => (
             title="Criteo uses Sourcegraph universal code search to tackle Big Code"
             logo="/external-logos/criteo-white-logo.svg"
             quote={{
-                quote: "Sourcegraph pays for itself many times over—it's a game changer.",
+                text: "Sourcegraph pays for itself many times over—it's a game changer.",
                 author: 'François Jehl, Senior Engineering Manager, Criteo',
             }}
         >
