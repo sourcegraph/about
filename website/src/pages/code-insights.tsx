@@ -8,6 +8,7 @@ import {
     SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
 } from '../components/code-insights/mock-data'
 import Layout from '../components/Layout'
+import { TemplateCodeBlock } from '../components/TemplateCodeBlock'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import CustomCarousel from '../components/CustomCarousel'
@@ -153,7 +154,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     </p>
                     <div className="d-flex flex-column col-lg-6 px-6 justify-content-around">
                         <div className="d-flex py-5">
-                            <div className="mr-4"><BullsEyeArrowIcon size={70} /></div>
+                            <div className="mr-4"><BullsEyeArrowIcon className="icon" size={70} /></div>
                             <div className="d-flex flex-column">
                                 <h3>Set goals</h3>
                                 <p>
@@ -162,7 +163,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             </div>
                         </div>
                         <div className="d-flex py-5">
-                        <div className="icon mr-4"><RocketLaunchOutlineIcon size={70} /></div>
+                        <div className="icon mr-4"><RocketLaunchOutlineIcon className="icon" size={70} /></div>
                             <div className="d-flex flex-column">
                                 <h3>Plan proactively</h3>
                                 <p>
@@ -173,7 +174,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="d-flex flex-column col-lg-6 px-6 justify-content-around">
                         <div className="d-flex py-5">
-                            <div className="mr-4"><TrendingUpIcon size={70} /></div>
+                            <div className="mr-4"><TrendingUpIcon className="icon" size={70} /></div>
                             <div className="d-flex flex-column">
                                 <h3>{'Track ownership & trends'}</h3>
                                 <p>
@@ -182,7 +183,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             </div>
                         </div>
                         <div className="d-flex py-5">
-                            <div className="mr-4"><LighteningBoltOutlineIcon size={70} /></div>
+                            <div className="mr-4"><LighteningBoltOutlineIcon className="icon" size={70} /></div>
                             <div className="d-flex flex-column">
                                 <h3>Celebrate progress</h3>
                                 <p>
@@ -195,63 +196,95 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        {/* Use Cases */}
+        {/* Demo */}
         <ContentSection className="py-4 py-md-7">
-            <h1 className="mb-5 text-center">How developers are using Batch Changes </h1>
-            <Tabs defaultActiveKey="configuration" id="use-cases" className="justify-content-center">
-                <Tab eventKey="configuration" title="Configuration">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
-                            <p>
-                                Quickly edit every CI, build, and other configuration files to make changes such as
-                                altering steps, migrating versions, or changing base images.
-                            </p>
-                            <img
-                                className="w-100 h-auto mt-4"
-                                width="750"
-                                height="400"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/update-circle-ci-username.png"
-                                alt="Batch spec for updating the username in Circle CI configurations"
-                            />
-                        </div>
-                    </div>
-                </Tab>
-                <Tab eventKey="refactoring" title="Refactoring">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
-                            <p>
-                                Use language-aware tooling of your choice to perform complex refactors like updating an
-                                API and its function calls or replacing libraries entirely.
-                            </p>
-                            <img
-                                className="w-100 h-auto mt-4"
-                                width="850"
-                                height="380"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
-                                alt="Batch spec for using Comby to refactor Go code"
-                            />
-                        </div>
-                    </div>
-                </Tab>
-                <Tab eventKey="security" title="Security">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
-                            <p>
-                                Refactor code to replace insecure functions, update vulnerable packages, or modify
-                                container configurations across hundreds of repositories.
-                            </p>
-                            <img
-                                className="w-100 h-auto mt-4"
-                                width="750"
-                                height="472"
-                                src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"
-                                alt="Batch spec for pinning Docker base images to specific versions"
-                            />
-                        </div>
-                    </div>
-                </Tab>
-            </Tabs>
+            <h1 className="mb-3 text-center">See Code Insights in action</h1>
+            <div className="row justify-content-center pt-md-4">
+                <div className="col-lg-8 container video-embed embed-responsive embed-responsive-16by9 ">
+                    <iframe
+                        className="embed-responsive-item"
+                        src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                        allowFullScreen={true}
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        frameBorder={0}
+                        title="Sourcegraph Batch Changes demo"
+                    ></iframe>
+                </div>
+            </div>
         </ContentSection>
+
+        {/* Use Cases */}
+        <div className="bg-gradient-blue-mist py-4">
+            <ContentSection className="py-4 py-md-7">
+                <h1 className="mb-5 text-center">Popular Code Insights templates</h1>
+                <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
+                    <Tab eventKey="migrations" title="Migrations">
+                        <div className="row mt-5 justify-content-center">
+                            <div className="col-lg-8">
+                                <TemplateCodeBlock
+                                    header='CSS modules'
+                                    description='Tracking migration from global CSS to CSS modules'
+                                    queries={[
+                                        (
+                                            <>
+                                                //series 1, decreasing{' '}
+                                                <span className="keyword">select:</span>file{' '}<span className="keyword">lang:</span>SCSS{' '}
+                                                <span className="keyword">file:</span>module{' '}
+                                                <span className="keyword">patterntype:</span>regexp{' '}
+                                                <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                                            </>
+                                        ),
+                                        (
+                                            <>
+                                                <span className="keyword">type:</span>file <span className="keyword">lang:</span>scss
+                                                <span className="keyword">-file:</span>module
+                                                <span className="keyword">patterntype:</span>regexp
+                                                <span className="keyword">archived:</span>no{' '}
+                                                <span className="keyword">fork:</span>no
+                                            </>
+                                        )
+                                    ]}
+                                />
+                            </div>
+                        </div>
+                    </Tab>
+                    <Tab eventKey="refactoring" title="Refactoring">
+                        <div className="row mt-5 justify-content-center">
+                            <div className="col-lg-8">
+                                <p>
+                                    Use language-aware tooling of your choice to perform complex refactors like updating an
+                                    API and its function calls or replacing libraries entirely.
+                                </p>
+                                <img
+                                    className="w-100 h-auto mt-4"
+                                    width="850"
+                                    height="380"
+                                    src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
+                                    alt="Batch spec for using Comby to refactor Go code"
+                                />
+                            </div>
+                        </div>
+                    </Tab>
+                    <Tab eventKey="security" title="Security">
+                        <div className="row mt-5 justify-content-center">
+                            <div className="col-lg-8">
+                                <p>
+                                    Refactor code to replace insecure functions, update vulnerable packages, or modify
+                                    container configurations across hundreds of repositories.
+                                </p>
+                                <img
+                                    className="w-100 h-auto mt-4"
+                                    width="750"
+                                    height="472"
+                                    src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"
+                                    alt="Batch spec for pinning Docker base images to specific versions"
+                                />
+                            </div>
+                        </div>
+                    </Tab>
+                </Tabs>
+            </ContentSection>
+        </div>
 
         <div className="bg-light-gray">
             <ContentSection>
