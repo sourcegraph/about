@@ -23,11 +23,17 @@ We're pleased to announce that LSIF index processing and the symbols sidebar jus
 The symbols sidebar also got a significant performance boost. Previously, the symbols sidebar would search for symbols in the whole directory tree even if you were only looking at a subdirectory or file, which would cause it to time out and show an error message on big monorepos. Now prefix queries like `^src/app` are better optimized and subdirectory searches are much faster and less likely to time out.
 
 ## Notebooks
+
 ### Sharing
+
 Notebooks are now shareable within Sourcegraph orgs, not just your instance (or all of Cloud if you're using sourcegraph.com). Organizations with shared notebooks will show up in their own tabs on the [Notebooks home page](https://sourcegraph.com/notebooks).
 <img class="blog-image" title="Notebooks sharing" alt="Image of Notebooks sharing modal." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/notebooks/notebook_sharing.png">
+
 ### Import and export
+
 Notebooks can now be created by uploading a markdown file and can also be exported to a markdown file.
+
 ## Search contexts
+
 Search contexts' creation UI has gotten some UI tweaks that make it easier to understand if you're using queries or JSON to define your contexts, and make it clearer how to use a search query for context creation.
 <img class="blog-image" title="Search contexts type selection" alt="Screenshot of search contexts configuration UI." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/search_contexts/select_context_type.png">
