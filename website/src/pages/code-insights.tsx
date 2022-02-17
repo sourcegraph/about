@@ -1,5 +1,6 @@
 import { Link, PageProps } from 'gatsby'
 import * as React from 'react'
+import { BlogListItem } from '../components/BlogListItem'
 import { ContentSection } from '../components/content/ContentSection'
 import { CodeInsightExample } from '../components/code-insights/CodeInsightsExamples'
 import { CodeInsightExampleType } from '../components/code-insights/types'
@@ -287,6 +288,30 @@ const templates = {
     ]
 }
 
+const blogListItems = [
+    {
+        title: 'How I use the Sourcegraph extension for VS Code',
+        description: 'Explore why we built this in the announcement post.',
+        type: 'Blog',
+        image: 'https://sourcegraphstatic.com/blog/vs-code-extension/sourcegraph-vs-code-extension.png',
+        href: '/blog/ways-to-use-sourcegraph-extension-for-vs-code'
+    },
+    {
+        title: `Redefining the OSS universe: Why we're broadening our index to include more code hosts`,
+        description: 'Sourcegraph Engineering’s take on everything Code Insights.',
+        type: 'Blog',
+        image: 'https://sourcegraphstatic.com/blog/indexing-the-oss-universe-update.png',
+        href: '/blog/indexing-the-oss-universe-update-more-code-hosts'
+    },
+    {
+        title: 'Dive into documentation',
+        description: 'Learn everything you need to know about Code Insights.',
+        type: 'Docs',
+        image: 'https://sourcegraphstatic.com/blog/indexing-the-oss-universe-update.png',
+        href: 'https://docs.sourcegraph.com'
+    }
+]
+
 export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
@@ -502,25 +527,44 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
 
         <div className="bg-light-gray">
             <ContentSection>
-                <div className="row d-flex flex-column justify-content-start p-7">
-                    <div className="col-md-6 pr-md-5 d-flex flex-column justify-content-start">
-                        <h3 className="display-4 font-weight-bold">Get started with Code Insights</h3>
+                <div className="row d-flex flex-column justify-content-start py-7">
+                    <div className="col-lg-8 d-flex flex-column justify-content-start">
+                        <h1>Get started with Code Insights</h1>
                         <p>
-                            Code Insights transforms your entire codebase into a queryable database so you can create customizable, 
-                            visual dashboards in seconds and get real-time results. 
+                        Create a Code Insight in 60 seconds, then get historical data for metrics you never tracked until today 
+                        without needing a time machine — data backfills automatically.
                         </p>
                     </div>
-                    <div className="col-md-6 pt-3 d-flex justify-content-start text-center">
-                        <Link className="btn btn-primary mx-2 mb-3" to="/#get-started" title="Try Sourcegraph now">
+                    <div className="col-lg-7 d-flex flex-column pt-1">
+                        <Link
+                            className="btn btn-primary col-4 mr-3"
+                            to="/contact/request-demo"
+                            title="Request a Demo of Code Insights."
+                        >
                             Request a demo
                         </Link>
-                        <Link className="btn btn-outline-secondary mx-2 mb-3" to={"/get-started"} title="Request a demo">
-                            Try it on Sourcegraph
+                        <Link
+                            className="btn btn-link px-0 py-4 text-left col-7"
+                            to="/get-started"
+                            title="Get started with Code Insights."
+                        >
+                            Try it on Sourcegraph via Docker Compose
                         </Link>
                     </div>
                 </div>
             </ContentSection>
         </div>
+
+        <ContentSection>
+            <div className="row d-flex">
+                <div className="col-lg-6">
+                    <h1 className="mb-5">Learn more</h1>
+                </div>
+                {blogListItems.map(item => (
+                    <BlogListItem blog={item} />
+                ))}
+            </div>
+        </ContentSection>
     </Layout>
 )
 

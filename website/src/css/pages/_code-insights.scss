@@ -25,9 +25,14 @@
         background-color: transparent !important;
     }
 
-    .docs-cta {
+    .btn-link {
         color: $brand-primary-blue;
         text-decoration: none;
+    }
+
+    .btn-primary {
+        color: $white;
+        background-color: $brand-primary-blue;
     }
 
     .custom-carousel {
