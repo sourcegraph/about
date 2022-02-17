@@ -24,7 +24,7 @@ interface LayoutProps {
 
     className?: string
 
-    hideFooter?: false
+    hideFooter?: boolean
 
     hideGetStartedButton?: boolean
 }
