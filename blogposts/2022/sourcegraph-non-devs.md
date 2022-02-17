@@ -20,7 +20,7 @@ In this post, we'll be using a feature called [Search Notebooks](https://about.s
 
 ## Product Managers
 
-_This section is written by Joel Kwartler, the Product Manager for Code Insights. He’s a brilliant, genuinely kind human being who’s being played by Brad Pitt in an upcoming HBO biopic._
+_This section is written by [Joel Kwartler](https://handbook.sourcegraph.com/team/#joel-kwartler), the Product Manager for Code Insights. He’s a brilliant, genuinely kind human being who’s being played by Brad Pitt in an upcoming HBO biopic._
 
 As a product manager at a fast-growing startup, I frequently need to know how our features interact, which analytics metrics other teammates have already built, and which product team processes or standards exist versus those that haven’t been built out yet. I use Sourcegraph to help me quickly answer these types of questions.
 
@@ -116,7 +116,7 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 
 ## Analytics and Business Operations
 
-_This section was written by Eric-Brody Moore, a member of the Business Operations team. HBO only had room for one Sourcegrapher biopic and they unfortunately chose Joel despite Eric also being a brilliant and kind human being.”_
+_This section was written by [Eric-Brody Moore](https://handbook.sourcegraph.com/team/#eric-brody-moore), a member of the Business Operations team. HBO only had room for one Sourcegrapher biopic and they unfortunately chose Joel despite Eric also being a brilliant and kind human being.”_
 
 ### How has the Sourcegraph product data architecture changed over time?
 
