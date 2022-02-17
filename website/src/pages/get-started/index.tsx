@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { ContentSection } from '../components/content/ContentSection'
-import Layout from '../components/Layout'
+// import { ContentSection } from '../../components/content/ContentSection'
+import Layout from '../../components/Layout'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 
-export const GetStartedPage: React.FunctionComponent<PageProps> = props => {
+export const GetStartedPage: React.FunctionComponent = props => {
     const buttonRef = React.useRef()
     const newContainerLeftRef = React.useRef()
     const backBtn = React.useRef()
