@@ -4,6 +4,7 @@ import ArrowUpIcon from 'mdi-react/ArrowUpIcon'
 import ArrowDownIcon from 'mdi-react/ArrowDownIcon'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
 interface CarouselProps {
     items: CarouselItem[]
@@ -34,6 +35,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     })
     const backgroundClass = carouselItems.currentItem?.backgroundClass ?? ''
     const [isRunning, setIsRunning] = useState<boolean>(autoAdvance ?? false)
+    const [isAdvancing, setIsAdvancing] = useState<boolean>(true)
     let intervalId: number | undefined = undefined
     const updateCurrentItem = (index: number): void => {
         setCarouselItems(prevState => ({
@@ -45,10 +47,12 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const setCurrentIndex = (action?: string): void => {
         let index = carouselItems.currentItemIndex ?? 0
         if (action === 'decrement') {
+            setIsAdvancing(false)
             index = index === 0
                 ? carouselItems.items.length - 1
                 : index -= 1
         } else {
+            setIsAdvancing(true)
             index = index >= carouselItems.items.length - 1
                 ? 0
                 : index += 1
@@ -60,7 +64,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
         setIsRunning(false)
         clearInterval(intervalId)
     }
-    const advanceCarousel = (itemOrDirection?: number | string): void => {
+    const moveCarousel = (itemOrDirection?: number | string): void => {
         stopCarousel()
         typeof itemOrDirection === 'number'
             ? updateCurrentItem(itemOrDirection)
@@ -85,14 +89,15 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             <div className={autoAdvance ? classNames(carouselLeftPanelStyles, 'm-0 col-lg-5') : classNames(carouselLeftPanelStyles, 'ml-lg-7 col-lg-4 ml-md-5')}>
                 <ArrowUpIcon
                     className="ml-lg-6 mb-4"
-                    onClick={() => advanceCarousel('decrement')}
+                    onClick={() => moveCarousel('decrement')}
+                    color={isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <ul className="ml-lg-3">
                     {carouselItems.items.map(item => (
                         <li
                             className={item === carouselItems.currentItem ? 'active' : ''}
                             key={item.id}
-                            onClick={() => advanceCarousel(item.id)}
+                            onClick={() => moveCarousel(item.id)}
                         >
                             {item.buttonLabel}
                         </li>
@@ -100,7 +105,8 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 </ul>
                 <ArrowDownIcon
                     className="ml-lg-6 mt-4"
-                    onClick={() => advanceCarousel()}
+                    onClick={() => moveCarousel()}
+                    color={isAdvancing ? '#000' :'#D0D0D0'}
                 />
             </div>
             <div className={autoAdvance ? classNames(carouselRightPanelStyles, 'panel'): classNames(carouselRightPanelStyles)}>
@@ -115,11 +121,18 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             <div className="carousel-nav-mobile mx-auto my-4">
                 <ArrowLeftIcon
                     className="mr-4"
-                    onClick={() => advanceCarousel('decrement')}
+                    onClick={() => moveCarousel('decrement')}
+                    color={isAdvancing ? '#D0D0D0' : '#000'}
                 />
+                <div>
+                    {carouselItems.items.map(item => (
+                        <CircleSmallIcon color={item === carouselItems.currentItem ? '#000' : '#D0D0D0'} key={item.id} />
+                    ))}
+                </div>
                 <ArrowRightIcon
                     className="ml-4"
-                    onClick={() => advanceCarousel()}
+                    onClick={() => moveCarousel()}
+                    color={isAdvancing ? '#000' :'#D0D0D0'}
                 />
             </div>
         </div>       
