@@ -6,8 +6,8 @@ Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 
 | What                               | Command                                    |
 | ---------------------------------- | ------------------------------------------ |
-| Auto-preview about.sourcegraph.com | `cd website && yarn install && yarn start` |
-| Final review about.sourcegraph.com | `cd website && yarn install && yarn serve` |
+| Auto-preview about.sourcegraph.com | `cd website && yarn && yarn dev` |
+| Final review about.sourcegraph.com | `cd website && yarn && yarn build && yarn serve` |
 
 ## Requirements
 
@@ -36,7 +36,7 @@ yarn serve
 2. To serve the site using the development server with auto-compiling and page reloading:
 
 ```shell
-yarn start
+yarn dev
 ```
 
 ## Publishing a blog post

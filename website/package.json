@@ -1,8 +1,24 @@
 {
-  "name": "website",
-  "description": "Sourcegraph",
-  "version": "1.0.0",
-  "author": "Farhan Attamimi <farhan@sourcegraph.com>",
+  "name": "sourcegraph-about-website",
+  "description": "Sourcegraph About Website",
+  "license": "MIT",
+  "bugs": {
+    "url" : "https://github.com/sourcegraph/about/issues",
+    "email" : "content-platform-team@sourcegraph.com"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "build": "rm -rf .cache && gatsby build",
+    "start": "gatsby develop",
+    "dev": "gatsby develop",
+    "serve": "yarn run build && gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "stylelint": "stylelint --quiet 'src/**/*.scss'",
+    "deploy": "yarn run build && firebase deploy"
+  },
   "dependencies": {
     "@types/js-cookie": "2.2.7",
     "@types/react-helmet": "6.1.2",
@@ -57,20 +73,6 @@
     "d3-format": "^3.1.0",
     "d3-time-format": "^4.1.0",
     "react-spring": "^9.4.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "build": "rm -rf .cache && gatsby build",
-    "start": "gatsby develop",
-    "serve": "yarn run build && gatsby serve",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
-    "stylelint": "stylelint --quiet 'src/**/*.scss'",
-    "deploy": "yarn run build && firebase deploy"
   },
   "devDependencies": {
     "@sourcegraph/eslint-config": "^0.25.1",
