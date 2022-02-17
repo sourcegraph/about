@@ -334,7 +334,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         </h4>
                         <div className="d-flex flex-column pt-1">
                             <Link
-                                className="btn btn-primary col-4 mr-3"
+                                className="btn btn-primary md-col-6 col-4 mr-3"
                                 to="/contact/request-demo"
                                 title="Request a Demo of Code Insights."
                             >
@@ -354,7 +354,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         }
     >
            
-        <div className="mx-8">
+        <ContentSection>
             <div className="row">
                 {/* Placeholder */}
                 <div className="col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-7">
@@ -378,25 +378,24 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     </p>
                 </div>
             </div>
-        </div>
+        </ContentSection>
         
-        <div className="mb-5">
+        <ContentSection>
             <CustomCarousel items={items} autoAdvance={true} />
-        </div>
+        </ContentSection>
 
         <div className="bg-gradient-blue-mist py-4">
             <ContentSection className="py-6">
-                <div className="row d-flex text-center justify-content-center px-8 py-6">
+                <div className="row d-flex text-center justify-content-center px-3 py-6">
                     <div className="w-100">
                         <p className="font-weight-bold display-3">Trusted by leading engineering teams around the world</p>
                     </div>
                     <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
-                        <div className="display-3">
+                        <h3 className="font-weight-normal">
                         &ldquo;Code insights enables our team to move away from manual spreadsheets 
                         and point-in-time documentation and provides us with a holistic view of our codebase 
                         when we undergo complex projects such as migrations and major platform-related changes.&rdquo;
-                        </div>
-                        <br />
+                        </h3>
                         <div className="pt-3 text-muted text-center">&mdash; Jane Doe, Engineering Leader</div>
                     </blockquote>
                     <div className="d-flex justify-content-center">

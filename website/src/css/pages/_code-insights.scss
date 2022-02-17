@@ -25,6 +25,14 @@
         background-color: transparent !important;
     }
 
+    .btn-link,
+    .btn-primary {
+        @media only screen and (max-width: 768px) {
+            flex: unset;
+            max-width: unset;
+        }
+    }
+
     .btn-link {
         color: $brand-primary-blue;
         text-decoration: none;
@@ -53,11 +61,12 @@
         }
 
         .panel {
-            flex: 0 0 50%;
+            flex: 0 0 75%;
         }
 
         &.set-height {
-            height: 900px;
+            height: 1000px;
+            justify-content: space-between;
 
             @media only screen and (max-width: 768px) {
                 height: auto;

@@ -17,6 +17,10 @@
 .legend-item {
     display: flex;
     align-items: baseline;
+
+    @media only screen and (max-width: 768px) {
+        width: 50%;
+    }
 }
 
 .legend-mark {
