@@ -315,13 +315,13 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             >
                                 Request a demo
                             </Link>
-                            <a
+                            <Link
                                 className="btn btn-link px-0 py-4 text-left col-7"
-                                href="/get-started"
-                                title="Use this if you want to search your (or your company's) code, invite teammates, and try all the features."
+                                to="/get-started"
+                                title="Get started with Code Insights."
                             >
                                 Try it on Sourcegraph via Docker Compose
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -488,6 +488,15 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         </div>
                     </Tab>
                 </Tabs>
+                <div className="w-100 d-flex justify-content-center">
+                    <a
+                        className="btn btn-link px-0 py-4 col-7 docs-cta font-weight-bold"
+                        href="https://docs.sourcegraph.com/batch_changes"
+                        title="Code Insights on docs."
+                    >
+                    See Docs for more use cases
+                    </a>
+                </div>
             </ContentSection>
         </div>
 
