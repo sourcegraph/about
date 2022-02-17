@@ -25,6 +25,8 @@ export interface Features {
     customContractLegalBillingTerms: boolean
     unlimitedCode: boolean
     managedInstance: boolean
+    codeInsights: boolean
+    codeInsightsTrial: boolean
 }
 
 export interface FeatureInfo {
@@ -123,6 +125,15 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
         description:
             'Managed instances are provisioned and managed by the Sourcegraph team so you can deploy Sourcegraph without having to worry about managing it.',
     },
+    codeInsights: {
+        label: 'Code Insights (available add-on)',
+        description: 'Track and visualize trends in your entire codebase — kept automatically up to date.',
+    },
+    codeInsightsTrial: {
+        label: 'Code Insights (limited trial)',
+        description: `Track and visualize trends in your entire codebase — with visualizations that are kept automatically up to date 
+        (limited to maximum of two global code insights insights without a license).`,
+    },
 }
 
 const FEATURE_ORDER: (keyof Features)[] = [
@@ -137,6 +148,8 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'userAndAdminRoles',
     'batchChanges',
     'batchChangesTrial',
+    'codeInsights',
+    'codeInsightsTrial',
     'singleSignOn',
     'optimizedRepositoryUpdates',
     'deploymentMetricsAndMonitoring',
@@ -146,6 +159,7 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'managedInstance',
     'customBranding',
     'customContractLegalBillingTerms',
+    'codeInsights',
 ]
 
 interface Props {
@@ -203,7 +217,7 @@ export const PricingPlan: React.FunctionComponent<Props> = ({
             <ol className="pricing-plan__features list-group list-group-flush py-3">
                 {!isFree ? (
                     <li className="pricing-plan-feature list-group-item bg-transparent border-0 px-0">
-                        All of Free, plus:
+                        Everything in the Free tier, plus:
                     </li>
                 ) : null}
                 {FEATURE_ORDER.map(feature => (
