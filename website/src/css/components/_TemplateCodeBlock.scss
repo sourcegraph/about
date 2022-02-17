@@ -1,5 +1,9 @@
 .template-code-block {
-    background-color: $white;
+    .template {
+        background-color: $white;
+        flex: 1 0 48%;
+        max-width: 50%;
+    }
 
     .code {
         background-color: $light-11;

@@ -1,18 +1,26 @@
 import React, { FunctionComponent, ReactNode } from 'react'
 
 interface Props {
+    queryTemplates: Template[]
+}
+
+interface Template {
     header: string
     description: string
     queries: ReactNode[]
 }
 
-export const TemplateCodeBlock: FunctionComponent<Props> = ({ header, description, queries }) => (
-    <div className="p-5 template-code-block d-flex flex-column">
-        <div className="font-weight-bold">{header}</div>
-        <p>{description}</p>
-        {queries.map(query => (
-            <div className="code mb-2 p-2 border border-light rounded" key={Math.random()}>
-                {query}
+export const TemplateCodeBlock: FunctionComponent<Props> = ({ queryTemplates }) => (
+    <div className="template-code-block d-flex flex-wrap">
+        {queryTemplates.map(template => (
+            <div className="template p-3 mx-2 mb-3" key={template.header}>
+                <div className="font-weight-bold">{template.header}</div>
+                    <p>{template.description}</p>
+                    {template.queries.map(query => (
+                        <div className="code my-2 p-2 border border-light rounded" key={Math.random()}>
+                            {query}
+                        </div>
+                    ))}
             </div>
         ))}
     </div>

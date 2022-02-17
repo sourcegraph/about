@@ -46,6 +46,247 @@ const items = [
     },
 ]
 
+const templates = {
+    migrations: [
+        {
+            header: 'CSS modules',
+            description: 'Tracking migration from global CSS to CSS modules.',
+            queries: [
+                (
+                    <>
+                        //series 1, decreasing{' '}
+                        <span className="keyword">select:</span>file{' '}<span className="keyword">lang:</span>SCSS{' '}
+                        <span className="keyword">file:</span>module{' '}
+                        <span className="keyword">patterntype:</span>regexp{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                ),
+                (
+                    <>
+                        <span className="keyword">type:</span>file{' '}<span className="keyword">lang:</span>scss
+                        <span className="keyword">-file:</span>module{' '}
+                        <span className="keyword">patterntype:</span>regexp{' '}
+                        <span className="keyword">archived:</span>no{' '}
+                        <span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'Python 2 to Python 3',
+            description: 'How far along is the Python major version migration.',
+            queries: [
+                (
+                    <>
+                        // series 1: #!/usr/bin/env python3{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                ),
+                (
+                    <>
+                        // series 2: #!/usr/bin/env python2{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'React Class to Function Components',
+            description: `What's the status of migrating to React function components from class components.`,
+            queries: [
+                (
+                    <>
+                        // series 1:{' '}<span className="keyword">patterntype:</span>regexp{' '}
+                        const\s\w+:\s(React\.)?FunctionComponent{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                ),
+                (
+                    <>
+                        // series 2:{' '}<span className="keyword">patterntype:</span>regexp{' '}
+                        extends\s(React\.)?(Pure)?Component{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'Config or docs file',
+            description: 'How many repos contain a config or docs file in a specific directory.',
+            queries: [
+                (
+                    <>
+                        <span className="keyword">select:</span>repo{' '}
+                        <span className="keyword">file:</span>docs/*/new_config_filename{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+
+            ]
+        }
+    ],
+    versionTracking: [
+        {
+            header: 'Java versions',
+            description: 'Detect and track which Java versions are present or most popular in your code base.',
+            queries: [
+                (
+                    <>
+                        {'<java\.version>(.*)</java\.version>'}{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'All log4j versions',
+            description: 'Which log4j versions are present, including vulnerable versions.',
+            queries: [
+                (
+                    <>
+                        <span className="keyword">lang:</span>gradle{' '}
+                        org\.apache\.logging\.log4j['"] 2\.([0-9]+)\.{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'License types in the codebase',
+            description: 'See the breakdown of licenses from package.json files.',
+            queries: [
+                (
+                    <>
+                        <span className="keyword">file:</span>package.json{' '}
+                        "license":\s"(.*)"{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'Python versions',
+            description: `Which python versions are in use or haven't been updated.`,
+            queries: [
+                (
+                    <>
+                        #!/usr/bin/env python([0-9]\.[0-9]+){' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        }
+    ],
+    security: [
+        {
+            header: 'Vulnerable open source library',
+            description: 'Confirm that a vulnerable open source library has been fully removed, or the speed of the deprecation.',
+            queries: [
+                (
+                    <>
+                        vulnerableLibrary@14.3.9{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'How many tests are skipped',
+            description: 'See how many tests have skip conditions.',
+            queries: [
+                (
+                    <>
+                        this.skip(){' '}
+                        <span className="keyword">patterntype:</span>literal{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'Vulnerable log4j versions',
+            description: 'What vulnerable log4j versions are present.',
+            queries: [
+                (
+                    <>
+                        <span className="keyword">lang:</span>gradle{' '}
+                        org\.apache\.logging\.log4j['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\.[0-9]+){' '}
+                        <span className="keyword">patterntype:</span>regexp{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'API keys',
+            description: 'How quickly we notice and remove API keys when they are committed.',
+            queries: [
+                (
+                    <>
+                        regexMatchingAPIKey{' '}
+                        <span className="keyword">patterntype:</span>regexp{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        }
+    ],
+    codeHealth: [
+        {
+            header: 'TODOs',
+            description: 'How many TODOs are in a specific part of the codebase (or all of it).',
+            queries: [
+                (
+                    <>
+                        TODO{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'Commits with "revert"',
+            description: 'How frequently there are commits with “revert” in the commit message.',
+            queries: [
+                (
+                    <>
+                        <span className="keyword">type:</span>commit{' '}
+                        revert{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'Linter override rules',
+            description: 'How many linter override rules exist.',
+            queries: [
+                (
+                    <>
+                        <span className="keyword">file:</span>\.eslintignore{' '}
+                        .\n{' '}
+                        <span className="keyword">patterntype:</span>regexp{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        },
+        {
+            header: 'Deprecated calls',
+            description: 'How many times deprecated calls are used.',
+            queries: [
+                (
+                    <>
+                        <span className="keyword">lang:</span>java{' '}
+                        @deprecated{' '}
+                        <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
+                    </>
+                )
+            ]
+        }
+    ]
+}
+
 export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
@@ -218,67 +459,31 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             <ContentSection className="py-4 py-md-7">
                 <h1 className="mb-5 text-center">Popular Code Insights templates</h1>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
-                    <Tab eventKey="migrations" title="Migrations">
+                    <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                         <div className="row mt-5 justify-content-center">
-                            <div className="col-lg-8">
-                                <TemplateCodeBlock
-                                    header='CSS modules'
-                                    description='Tracking migration from global CSS to CSS modules'
-                                    queries={[
-                                        (
-                                            <>
-                                                //series 1, decreasing{' '}
-                                                <span className="keyword">select:</span>file{' '}<span className="keyword">lang:</span>SCSS{' '}
-                                                <span className="keyword">file:</span>module{' '}
-                                                <span className="keyword">patterntype:</span>regexp{' '}
-                                                <span className="keyword">archived:</span>no{' '}<span className="keyword">fork:</span>no
-                                            </>
-                                        ),
-                                        (
-                                            <>
-                                                <span className="keyword">type:</span>file <span className="keyword">lang:</span>scss
-                                                <span className="keyword">-file:</span>module
-                                                <span className="keyword">patterntype:</span>regexp
-                                                <span className="keyword">archived:</span>no{' '}
-                                                <span className="keyword">fork:</span>no
-                                            </>
-                                        )
-                                    ]}
-                                />
+                            <div className="w-100">
+                                <TemplateCodeBlock queryTemplates={templates.migrations} />
                             </div>
                         </div>
                     </Tab>
-                    <Tab eventKey="refactoring" title="Refactoring">
+                    <Tab eventKey="version-tracking" title="Version Tracking" tabClassName="tab-header">
                         <div className="row mt-5 justify-content-center">
-                            <div className="col-lg-8">
-                                <p>
-                                    Use language-aware tooling of your choice to perform complex refactors like updating an
-                                    API and its function calls or replacing libraries entirely.
-                                </p>
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="850"
-                                    height="380"
-                                    src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/comby-sprintf-to-itoa.png"
-                                    alt="Batch spec for using Comby to refactor Go code"
-                                />
+                            <div className="w-100">
+                                <TemplateCodeBlock queryTemplates={templates.versionTracking} />
                             </div>
                         </div>
                     </Tab>
-                    <Tab eventKey="security" title="Security">
+                    <Tab eventKey="security" title="Security" tabClassName="tab-header">
                         <div className="row mt-5 justify-content-center">
-                            <div className="col-lg-8">
-                                <p>
-                                    Refactor code to replace insecure functions, update vulnerable packages, or modify
-                                    container configurations across hundreds of repositories.
-                                </p>
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="750"
-                                    height="472"
-                                    src="https://storage.googleapis.com/sourcegraph-assets/batch-changes/pin-docker-images.png"
-                                    alt="Batch spec for pinning Docker base images to specific versions"
-                                />
+                            <div className="w-100">
+                                <TemplateCodeBlock queryTemplates={templates.security} />
+                            </div>
+                        </div>
+                    </Tab>
+                    <Tab eventKey="code-health" title="Code Health" tabClassName="tab-header">
+                        <div className="row mt-5 justify-content-center">
+                            <div className="w-100">
+                                <TemplateCodeBlock queryTemplates={templates.codeHealth} />
                             </div>
                         </div>
                     </Tab>
