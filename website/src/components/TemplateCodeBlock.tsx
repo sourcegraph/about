@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react'
 
 interface Props {
-    queryTemplates: Template[]
+    template: Template
 }
 
 interface Template {
@@ -10,9 +10,9 @@ interface Template {
     queries: ReactNode[]
 }
 
-export const TemplateCodeBlock: FunctionComponent<Props> = ({ queryTemplates }) => (
-    <div className="template-code-block d-flex flex-wrap">
-        {queryTemplates.map(template => (
+export const TemplateCodeBlock: FunctionComponent<Props> = ({ template }) => (
+    <div className="template-code-block d-flex flex-wrap justify-content-center">
+       
             <div className="template p-3 mx-2 mb-3" key={template.header}>
                 <div className="font-weight-bold">{template.header}</div>
                     <p>{template.description}</p>
@@ -22,6 +22,6 @@ export const TemplateCodeBlock: FunctionComponent<Props> = ({ queryTemplates }) 
                         </div>
                     ))}
             </div>
-        ))}
+        
     </div>
 )

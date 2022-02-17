@@ -12,6 +12,7 @@
         }
     }
 
+    /* Icon overrides */
     .mdi-icon {
         &.icon {
             border-radius: 40%;
@@ -21,6 +22,7 @@
         }
     }
 
+    /* Bootstrap overrides */
     .tab-header {
         background-color: transparent !important;
     }
@@ -43,8 +45,22 @@
         background-color: $brand-primary-blue;
     }
 
+    /* Handle the different code insights chart sizes */
+    .set-height {
+        height: 900px;
+
+        @media only screen and (max-width: 768px) {
+            height: auto;
+        }
+    }
+
+    .tab-carousel {
+        transition: background-color 0.5s ease;
+    }
+
     .custom-carousel {
         transition: background-color 0.5s ease;
+        justify-content: space-between;
 
         @media only screen and (max-width: 768px) {
             flex-direction: column;
@@ -62,15 +78,6 @@
 
         .panel {
             flex: 0 0 75%;
-        }
-
-        &.set-height {
-            height: 1000px;
-            justify-content: space-between;
-
-            @media only screen and (max-width: 768px) {
-                height: auto;
-            }
         }
     }
 }

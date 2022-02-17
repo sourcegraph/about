@@ -23,7 +23,7 @@ interface CarouselItem {
 }
 
 const CustomCarousel: FunctionComponent<CarouselProps> = props => {
-    const carouselLeftPanelStyles ='carousel-nav col-lg-4 col-md-2 ml-md-5'
+    const carouselLeftPanelStyles ='carousel-nav col-md-2'
     const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6'
     const carouselMainStyles = 'custom-carousel d-flex flex-wrap'
     const { items, autoAdvance } = props
@@ -81,8 +81,8 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     }, [carouselItems.currentItemIndex])
 
     return (
-        <div className={autoAdvance ? classNames(carouselMainStyles, backgroundClass, 'set-height') : classNames(carouselMainStyles, backgroundClass)}>
-            <div className={autoAdvance ? classNames(carouselLeftPanelStyles, 'm-0') : classNames(carouselLeftPanelStyles, 'ml-lg-7')}>
+        <div className={classNames(carouselMainStyles, backgroundClass)}>
+            <div className={autoAdvance ? classNames(carouselLeftPanelStyles, 'm-0 col-lg-5') : classNames(carouselLeftPanelStyles, 'ml-lg-7 col-lg-4 ml-md-5')}>
                 <ArrowUpIcon
                     className="ml-lg-6 mb-4"
                     onClick={() => advanceCarousel('decrement')}
@@ -106,7 +106,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             <div className={autoAdvance ? classNames(carouselRightPanelStyles, 'panel'): classNames(carouselRightPanelStyles)}>
                 {carouselItems.items.map(item => (
                     <div key={item.id} className={item === carouselItems.currentItem ? 'd-block' : 'd-none'}>
-                        <h1 className="display-2 mb-lg-4">{item.buttonLabel}</h1>
+                        <h1 className={autoAdvance ? "mb-lg-4" : "display-2 mb-lg-4"}>{item.buttonLabel}</h1>
                         <div>{item.text}</div>
                     </div>
                 ))}

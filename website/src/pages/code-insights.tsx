@@ -9,6 +9,7 @@ import {
     SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
 } from '../components/code-insights/mock-data'
 import Layout from '../components/Layout'
+import { TabCarousel } from '../components/TabCarousel'
 import { TemplateCodeBlock } from '../components/TemplateCodeBlock'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
@@ -380,7 +381,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
         
-        <ContentSection>
+        <ContentSection className="set-height">
             <CustomCarousel items={items} autoAdvance={true} />
         </ContentSection>
 
@@ -486,28 +487,28 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                         <div className="row mt-5 justify-content-center">
                             <div className="w-100">
-                                <TemplateCodeBlock queryTemplates={templates.migrations} />
+                                <TabCarousel items={templates.migrations} autoAdvance={true} />
                             </div>
                         </div>
                     </Tab>
                     <Tab eventKey="version-tracking" title="Version Tracking" tabClassName="tab-header">
                         <div className="row mt-5 justify-content-center">
                             <div className="w-100">
-                                <TemplateCodeBlock queryTemplates={templates.versionTracking} />
+                                <TabCarousel items={templates.versionTracking} autoAdvance={true} />
                             </div>
                         </div>
                     </Tab>
                     <Tab eventKey="security" title="Security" tabClassName="tab-header">
                         <div className="row mt-5 justify-content-center">
                             <div className="w-100">
-                                <TemplateCodeBlock queryTemplates={templates.security} />
+                                <TabCarousel items={templates.security} autoAdvance={true} />
                             </div>
                         </div>
                     </Tab>
                     <Tab eventKey="code-health" title="Code Health" tabClassName="tab-header">
                         <div className="row mt-5 justify-content-center">
                             <div className="w-100">
-                                <TemplateCodeBlock queryTemplates={templates.codeHealth} />
+                                <TabCarousel items={templates.codeHealth} autoAdvance={true} />
                             </div>
                         </div>
                     </Tab>
