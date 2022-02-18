@@ -17,7 +17,7 @@ We have recently identified the root cause of a frequent, insidious pain-point r
 ERROR: Failed to migrate the DB. Please contact support@sourcegraph.com for further assistance: Dirty database version 1528395797. Fix and force version.
 ```
 
-This error message is the bane of any engineer in our customer support org, any engineer in our #opsgenie Slack channel, and a growing number of site administrators.
+This error message is the bane of a growing number of site administrators as well as any engineer in our customer support org or any engineer in our #opsgenie Slack channel.
 
 As of Sourcegraph 3.37, we no longer spuriously mark the database as dirty during common upgrade scenarios. We have decoupled database migrations from the application startup sequence to better control database schema upgrade conditions.
 
