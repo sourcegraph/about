@@ -21,7 +21,7 @@ This error message is the bane of a growing number of site administrators as wel
 
 As of Sourcegraph 3.37, we no longer spuriously mark the database as dirty during common upgrade scenarios. We have decoupled database migrations from the application startup sequence to better control database schema upgrade conditions.
 
-This release brings:
+This release adds:
 
 - [New tools](https://docs.sourcegraph.com/admin/how-to/manual_database_migrations) that allow site administrators to run database migrations independently from an upgrade. Large instance upgrades can be upgraded ahead-of-time of an upgrade to reduce the possibility of downtime due to migrations taking longer than the healthcheck timeout.
 - Better error messages and [a better recovery process](https://docs.sourcegraph.com/admin/how-to/dirty_database) in the (now appropriately rare) case of a real database migration failure.
