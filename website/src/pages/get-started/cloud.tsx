@@ -1,10 +1,9 @@
 import * as React from 'react'
 import Layout from '../../components/Layout'
-import { ContentSection } from '../../components/content/ContentSection'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 
-export const CloudPage: React.FunctionComponent<PageProps> = props => {
+export const CloudPage: React.FunctionComponent = props => {
     return (
         <Layout
             location={props.location}
