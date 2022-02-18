@@ -343,7 +343,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-blue-mist py-4">
             <ContentSection className="py-6">
-                <div className="row d-flex text-center justify-content-center px-3 py-6">
+                <div className="row d-flex text-center justify-content-center px-lg-7 py-6">
                     <div className="w-100">
                         <p className="font-weight-bold display-3">
                             Trusted by leading engineering teams around the world
