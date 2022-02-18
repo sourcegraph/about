@@ -159,7 +159,6 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'managedInstance',
     'customBranding',
     'customContractLegalBillingTerms',
-    'codeInsights',
 ]
 
 interface Props {
