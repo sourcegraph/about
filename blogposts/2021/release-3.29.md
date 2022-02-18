@@ -1,26 +1,14 @@
 ---
 title: 'Sourcegraph 3.29 release'
 publishDate: 2021-06-23T10:00-07:00
-description: 'The Sourcegraph 3.29 release introduces improved search results ranking, makes it easier to create Code Insights, and includes support for bulk actions with Batch Changes.'
+description: 'The Sourcegraph 3.29 release introduces improved search results ranking and includes support for bulk actions with Batch Changes.'
 tags: [blog, release]
 slug: 'release/3.29'
 published: true
 changelogItems:
-  - description: 'Code Insights queries can now run concurrently up to a limit set by the `insights.query.worker.concurrency` site config.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/21219
-    category: Code Insights
-  - description: 'Code Insights workers now support a rate limit for query execution and historical data frame analysis using the `insights.query.worker.rateLimit` and `insights.historical.worker.rateLimit` site configurations.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/21533
-    category: Code Insights
   - description: 'The GraphQL `Site` `SettingsSubject` type now has an `allowSiteSettingsEdits` field to allow clients to determine whether the instance uses the `GLOBAL_SETTINGS_FILE` environment variable.'
     url: https://github.com/sourcegraph/sourcegraph/pull/21827
     category: API
-  - description: 'Code Insights creation UI now has autosave logic and clear all fields functionality.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/21744
-    category: Code Insights
-  - description: Code Insights creation UI now has suggestions support for the repository fields.
-    url: https://github.com/sourcegraph/sourcegraph/pull/21699
-    category: Repositories
   - description: A new bulk operation to retry many changesets at once has been added to Batch Changes.
     url: https://github.com/sourcegraph/sourcegraph/pull/21173
     category: Batch Changes
@@ -36,9 +24,6 @@ changelogItems:
   - description: A new bulk operation to merge many changesets at once has been added to Batch Changes.
     url: https://github.com/sourcegraph/sourcegraph/pull/21959
     category: Batch Changes
-  - description: 'Search-based insight creation UI now supports `count:` filter in data series query input.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/22049
-    category: Code Insights
   - description: SSH public keys generated to access code hosts with batch changes now include a comment indicating they originated from Sourcegraph.
     url: https://github.com/sourcegraph/sourcegraph/issues/20523
     category: Batch Changes
@@ -57,9 +42,6 @@ changelogItems:
   - description: Batch changeset specs that are not attached to changesets will no longer prematurely expire before the batch specs that they are associated with.
     url: https://github.com/sourcegraph/sourcegraph/pull/21678
     category: Batch Changes
-  - description: Code insights line chart no longer has a negative quadrant.
-    url: https://github.com/sourcegraph/sourcegraph/pull/22018
-    category: Code Insights
   - description: 'Correctly handle field aliases in the query (like `r:` versus `repo:`) when used with `contains` predicates.'
     url: https://github.com/sourcegraph/sourcegraph/pull/22105
     category: Repositories
@@ -71,7 +53,7 @@ changelogItems:
     category: Admin
 ---
 
-Sourcegraph 3.29 is now available! For this release, we introduced search results ranking, made it easier to create Code Insights, and added support for bulk actions with Batch Changes.
+Sourcegraph 3.29 is now available! For this release, we introduced search results ranking and added support for bulk actions with Batch Changes.
 
 ## Search results ranking
 
@@ -82,24 +64,6 @@ We're making search results more relevant, starting with better prioritization o
 We are proud to bring you an entirely new visual design for the Sourcegraph UI. The new visual design was developed to help users find references, troubleshoot errors, gain insight, make changes on a massive scale, and read code. Check out our recent blog post to [learn more about the new Sourcegraph UI](/blog/introducing-sourcegraphs-new-ui/).
 
 <img src="https://sourcegraphstatic.com/blog/redesign/r_search_results.png" alt="refined search results design screenshot" class="blog-image"/>
-
-## Code Insights
-
-### One-click Code Insights creation from your search
-
-<p><video autoplay loop muted playsinline style="width:600px">
-  <source src="https://sourcegraphstatic.com/blog/3.29/one_click_create_insight.mp4" type="video/mp4">
- </video></p>
-
-You can now create code insights with one click, right from the search query view. Take your search query and turn it into a visualization of your results count in your code over time, to see if your usage of an API, function, or other target is growing or shrinking.
-
-### Improved creation forms for Code Insights
-
-<p><video autoplay loop muted playsinline style="width:600px">
-  <source src="https://sourcegraphstatic.com/blog/3.29/autosuggest_autosave_code_insights.mp4" type="video/mp4">
- </video></p>
-
-We now autosuggest and autocomplete the repository field in the correct format. The forms also now autosave your configuration, in case you navigate away before you hit "create." (You can clear your existing autosave if you want to start fresh, with the "clear all fields" button.)
 
 ## Batch Changes
 
