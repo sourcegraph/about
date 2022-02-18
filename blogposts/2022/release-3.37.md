@@ -35,7 +35,7 @@ Sourcegraph 3.37 is now available! For this release, we introduced:
 
 ## Code intelligence just got a whole lot faster
 
-We're pleased to announce that LSIF index processing and the symbols sidebar just got a whole lot faster! Earlier, certain LSIF indexes, especially for Javascript and Typescript, could take over 30 minutes to process. This meant that a long queue would build up with frequent uploads, such as those from a CI job that runs on every commit on a development branch. Now, most indices should be processed in a few seconds instead of minutes so that you can access precise code intelligence soon after uploading an index.
+We're pleased to announce that LSIF index processing and the symbols sidebar just got a whole lot faster! Earlier, certain LSIF indexes, especially for Javascript and Typescript, could take over 30 minutes to process. This meant that a long queue would build up with frequent uploads, such as those from a CI job that runs on every commit on a development branch. Now, most indexes should be processed in a few seconds instead of minutes so that you can access precise code intelligence soon after uploading an index.
 
 <img class="blog-image" title="LSIF upload speedup" alt="Comparative chart before and after processing improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/lsif-upload-speedup.png">
 
