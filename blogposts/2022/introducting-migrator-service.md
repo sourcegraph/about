@@ -11,7 +11,7 @@ published: true
 description: "We have identified and solved a huge source of pain during upgrades for Sourcegraph administrators. Here's how."
 ---
 
-We have recently identified the root cause of a very frequent and insidious pain related to database migrations during Sourcegraph version upgrades. Many users handling the installation and upgrade of their Sourcegraph instance can likely attest to seeing an error similar to the following mid-way through an upgrade from one minor release to the next.
+We have recently identified the root cause of a frequent, insidious pain-point related to database migrations during Sourcegraph version upgrades. Many users handling the installation and upgrade of their Sourcegraph instance can likely attest to seeing an error similar to the following mid-way through an upgrade from one minor release to the next.
 
 ```log
 ERROR: Failed to migrate the DB. Please contact support@sourcegraph.com for further assistance: Dirty database version 1528395797. Fix and force version.
