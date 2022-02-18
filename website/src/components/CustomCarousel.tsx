@@ -9,6 +9,7 @@ import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
 interface CarouselProps {
     items: CarouselItem[]
+    title?: string
     backgroundClass?: string
     currentItem?: CarouselItem
     previousItem?: CarouselItem
@@ -29,7 +30,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const carouselLeftPanelStyles = 'carousel-nav col-md-2'
     const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6'
     const carouselMainStyles = 'custom-carousel d-flex flex-wrap'
-    const { items, autoAdvance } = props
+    const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
     const currentCarousel = carouselHook.carouselItems as CarouselProps
@@ -43,6 +44,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         : classNames(carouselLeftPanelStyles, 'ml-lg-7 col-lg-4 ml-md-5')
                 }
             >
+                {title && <h2 className="ml-lg-6 mb-5">{title}</h2>}
                 <ArrowUpIcon
                     className={carouselHook.isAdvancing ? 'ml-lg-6 mb-4 opaque' : 'ml-lg-6 mb-4'}
                     onClick={() => carouselHook.moveCarousel('decrement')}
@@ -69,7 +71,9 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         key={item.id}
                         className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
                     >
-                        <h1 className={autoAdvance ? 'mb-lg-4' : 'display-2 mb-lg-4'}>{item.buttonLabel}</h1>
+                        {!autoAdvance && (
+                            <h1 className={autoAdvance ? 'mb-lg-4' : 'display-2 mb-lg-4'}>{item.buttonLabel}</h1>
+                        )}
                         <div>{item.text}</div>
                     </div>
                 ))}

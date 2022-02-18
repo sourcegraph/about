@@ -281,10 +281,10 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                 <div className="row">
                     <div className="col-lg-6 mb-lg-6 mt-6">
                         <div className="text-uppercase mb-2">Code Insights</div>
-                        <h1 className="display-3 font-weight-bold mb-5">
+                        <h1 className="display-3 font-weight-bold mb-4">
                             Track what really matters to you and your team.
                         </h1>
-                        <h4 className="mb-3">
+                        <h4 className="mb-6">
                             Effortlessly track and visualize trends in your entire codebase — kept automatically up to
                             date.
                         </h4>
@@ -338,7 +338,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         </ContentSection>
 
         <ContentSection className="set-height">
-            <CustomCarousel items={items} autoAdvance={true} />
+            <CustomCarousel items={items} autoAdvance={true} title="How engineering teams use Code Insights" />
         </ContentSection>
 
         <div className="bg-gradient-blue-mist py-4">
