@@ -1,6 +1,7 @@
 .code-insights-page {
     &__hero-and-header {
-        background-image: url('/code-insights/code-insights-illustration.svg'), url('/code-insights/code-insights-page-bg.svg'),
+        background-image: url('/code-insights/code-insights-illustration.svg'),
+            url('/code-insights/code-insights-page-bg.svg'),
             // Fallback while the SVGs are loading
             radial-gradient(ellipse at bottom right, rgba($blue-mist, 0.5), transparent),
             radial-gradient(ellipse at bottom left, rgba($light-green2, 0.5), transparent);
@@ -59,7 +60,7 @@
             display: none;
         }
     }
-    
+
     .tab-carousel-section {
         @media only screen and (min-width: 768px) {
             display: none;

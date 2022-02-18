@@ -30,8 +30,10 @@ interface CarouselHookObject {
     carouselItems: CarouselItems
 }
 
-
-export const useCarousel = (initialItems: CarouselItem[] | Template[], iniitialAutoAdvance: boolean): CarouselHookObject => {
+export const useCarousel = (
+    initialItems: CarouselItem[] | Template[],
+    iniitialAutoAdvance: boolean
+): CarouselHookObject => {
     const [carouselItems, setCarouselItems] = useState<CarouselItems>({
         currentItemIndex: 0,
         currentItem: initialItems[0],
@@ -53,14 +55,10 @@ export const useCarousel = (initialItems: CarouselItem[] | Template[], iniitialA
         let index = carouselItems.currentItemIndex ?? 0
         if (action === 'decrement') {
             setIsAdvancing(false)
-            index = index === 0
-                ? carouselItems.items.length - 1
-                : index -= 1
+            index = index === 0 ? carouselItems.items.length - 1 : (index -= 1)
         } else {
             setIsAdvancing(true)
-            index = index >= carouselItems.items.length - 1
-                ? 0
-                : index += 1
+            index = index >= carouselItems.items.length - 1 ? 0 : (index += 1)
         }
 
         updateCurrentItem(index)
@@ -85,7 +83,7 @@ export const useCarousel = (initialItems: CarouselItem[] | Template[], iniitialA
         if (isRunning) {
             startCarouselInterval()
         }
-        
+
         return () => clearInterval(intervalId)
     }, [carouselItems.currentItemIndex])
 
