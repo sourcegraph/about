@@ -45,7 +45,7 @@ Requiring site administrators to directly modify database contents is not a dist
 
 In our original effort to erradicate this class of error, we incorrectly attributed the Docker container health check period as the primary cause. Our intuition was built from two observations:
 
-1. We never see this issue in local development which are usually operate over relatively small sets of data.
+1. We never saw this issue in local development, which usually operates over relatively small sets of data.
 2. We saw this issue frequently in our Cloud environment, but exclusively on objects over a particular (but undetermined) size, such as our repository or code intelligence data tables.
 
 We believed that the issue occurred if and only if the set of migrations running on application startup could not finish within the parent container's health check timeout. If the migration took longer to perform than the configured timeout, Kubernetes would declare the pod dead and restart it. Killing a pod _during_ an active migration marks the database as dirty until the site administrator manually resolves the issue.
