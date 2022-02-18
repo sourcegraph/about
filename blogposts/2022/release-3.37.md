@@ -13,34 +13,31 @@ changelogItems:
   - description: "Code in search results is now selectable (e.g. for copying). Just clicking on the code continues to open the corresponding file as it did before."
     url: https://github.com/sourcegraph/sourcegraph/pull/30033
     category: Search
+ - description: "Query-based search contexts are now enabled by default as a beta feature, making it easier to scope queries for monorepos or large codebases."
+    url: https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts
+    category: Search
   - description: "Search Notebooks now support importing and exporting Markdown-formatted files."
     url: https://github.com/sourcegraph/sourcegraph/issues/28586
     category: Search
   - description: "GraphQL API: The order of events returned by `MonitorTriggerEventConnection` has been reversed so newer events are returned first. The `after` parameter has been modified accordingly to return events older the one specified, to allow for pagination. TODO"
     url: https://github.com/sourcegraph/sourcegraph/pull/
     category: API
-  - description: "Query-based search contexts are now enabled by default as a beta feature, making it easier to scope queries for monorepos or large codebases."
-    url: https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts
-    category: Search
   - description: Fixed a race condition in the precise code intel upload expirer process that prematurely expired new uploads.
     url: https://github.com/sourcegraph/sourcegraph/pull/30546
-    category:
-  - description: "Fixed performance issue in LSIF upload processing, reducing the latency between uploading an LSIF index and accessing precise code intel in the UI. ([#30978](https://github.com/sourcegraph/sourcegraph/pull/30978), #31143)"
+    category: Code Intelligence
+  - description: "Fixed performance issue in LSIF upload processing, reducing the latency between uploading an LSIF index and accessing precise code intel in the UI."
     url: https://github.com/sourcegraph/sourcegraph/pull/31143
-    category:
-# Removed
+    category: Code Intelligence
   - description: "Removed `experimentalFeature.showCodeMonitoringTestEmailButton`. Test emails can still be sent by editing the code monitor and expanding the \"Send email notification\" section."
     url: https://github.com/sourcegraph/sourcegraph/pull/29953
-    category:
+    category: Code Monitors
 ---
 
 Sourcegraph 3.37 is now available! For this release, we introduced:
 
-## Feature
+## Code intelligence just got a whole lot faster!
 
-### Code intelligence just got a whole lot faster!
-
-We're pleased to announce that LSIF index processing and the symbols sidebar just got a whole lot faster! Earlier, certain LSIF indexes, especially for Javascript and Typescript, could take over 30 minutes to process. This meant that a long queue would build up with frequent uploads, such as those from a CI job that runs on every commit on a development branch. Now, that's no longer the case! Most indices should be processed in a few seconds instead of minutes so that you can access precise code intelligence soon after uploading an index.
+We're pleased to announce that LSIF index processing and the symbols sidebar just got a whole lot faster! Earlier, certain LSIF indexes, especially for Javascript and Typescript, could take over 30 minutes to process. This meant that a long queue would build up with frequent uploads, such as those from a CI job that runs on every commit on a development branch. Now, most indices should be processed in a few seconds instead of minutes so that you can access precise code intelligence soon after uploading an index.
 
 <img class="blog-image" title="LSIF upload speedup" alt="Comparative chart before and after processing improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/lsif-upload-speedup.png">
 
