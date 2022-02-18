@@ -52,7 +52,7 @@ We believed that the issue occurred if and only if the set of migrations running
 
 And this is exactly the behavior we see.
 
-Our original solution, simply "decoupling" the database from application upgrades, targeted the Kubernetes health check as the primary problem. By performing the migrations separately from the application deployment, the migration process no longer has to complete within a configured healthcheck timeout of a downstream application. By having a separate component performing the migrations, and by moving away from our dependency on a [third-party](https://github.com/golang-migrate/migrate) migration library, we can better inspect the health of the migrator and the progress of its migration attempts.
+Our original solution, simply "decoupling" the database from application upgrades, targeted the Kubernetes health check as the primary problem. By performing the migrations separately from the application deployment, the migration process no longer has to complete within a configured healthcheck timeout of a downstream application. By having a separate component perform the migrations, and by moving away from our dependency on a [third-party](https://github.com/golang-migrate/migrate) migration library, we can better inspect the health of the migrator and the progress of its migration attempts.
 
 The first draft of the `migrator` service kept all other behavior the same. We explicitly kept the new migration behavior as close to the previous migration behavior as possible - just running in a different container - to avoid turning too many knobs at once. Part of the behavior we explicitly did _not_ change was how we handle concurrent migration attempts.
 
