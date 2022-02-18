@@ -29,12 +29,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const carouselLeftPanelStyles = 'carousel-nav col-md-2'
     const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6'
     const carouselMainStyles = 'custom-carousel d-flex flex-wrap'
-    const { items, autoAdvance, backgroundClass } = props
+    const { items, autoAdvance } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
+    const currentCarousel = carouselHook.carouselItems as CarouselProps
 
     return (
-        <div className={classNames(carouselMainStyles, backgroundClass ?? '')}>
+        <div className={classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass)}>
             <div
                 className={
                     carouselHook.autoAdvance
@@ -43,9 +44,8 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 }
             >
                 <ArrowUpIcon
-                    className="ml-lg-6 mb-4"
+                    className={carouselHook.isAdvancing ? 'ml-lg-6 mb-4 opaque' : 'ml-lg-6 mb-4'}
                     onClick={() => carouselHook.moveCarousel('decrement')}
-                    color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <ul className="ml-lg-3">
                     {carouselItems.map(item => (
@@ -59,9 +59,8 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     ))}
                 </ul>
                 <ArrowDownIcon
-                    className="ml-lg-6 mt-4"
+                    className={carouselHook.isAdvancing ? 'ml-lg-6 mt-4' : 'ml-lg-6 mt-4 opaque'}
                     onClick={() => carouselHook.moveCarousel()}
-                    color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}
                 />
             </div>
             <div className={classNames(carouselRightPanelStyles)}>
@@ -78,22 +77,20 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
 
             <div className="carousel-nav-mobile mx-auto my-4">
                 <ArrowLeftIcon
-                    className="mr-4"
+                    className={carouselHook.isAdvancing ? 'mr-4 opaque' : 'mr-4'}
                     onClick={() => carouselHook.moveCarousel('decrement')}
-                    color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <div>
                     {carouselItems.map(item => (
                         <CircleSmallIcon
-                            color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
+                            className={item === carouselHook.carouselItems.currentItem ? '' : 'opaque'}
                             key={item.id}
                         />
                     ))}
                 </div>
                 <ArrowRightIcon
-                    className="ml-4"
+                    className={carouselHook.isAdvancing ? 'ml-4' : 'ml-4 opaque'}
                     onClick={() => carouselHook.moveCarousel()}
-                    color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}
                 />
             </div>
         </div>
