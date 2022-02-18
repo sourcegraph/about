@@ -8,28 +8,28 @@ published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.37/sourcegraph-3-37-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.37/sourcegraph-3-37-release.png
 changelogItems:
-# 3.37.0
-# Added
-  - description: "Code in search results is now selectable (e.g. for copying). Just clicking on the code continues to open the corresponding file as it did before."
+  # 3.37.0
+  # Added
+  - description: 'Code in search results is now selectable (e.g. for copying). Just clicking on the code continues to open the corresponding file as it did before.'
     url: https://github.com/sourcegraph/sourcegraph/pull/30033
     category: Search
-  - description: "Search Notebooks now support importing and exporting Markdown-formatted files."
+  - description: 'Search Notebooks now support importing and exporting Markdown-formatted files.'
     url: https://github.com/sourcegraph/sourcegraph/issues/28586
     category: Search
-  - description: "GraphQL API: The order of events returned by `MonitorTriggerEventConnection` has been reversed so newer events are returned first. The `after` parameter has been modified accordingly to return events older the one specified, to allow for pagination. TODO"
+  - description: 'GraphQL API: The order of events returned by `MonitorTriggerEventConnection` has been reversed so newer events are returned first. The `after` parameter has been modified accordingly to return events older the one specified, to allow for pagination. TODO'
     url: https://github.com/sourcegraph/sourcegraph/pull/
     category: API
-  - description: "Query-based search contexts are now enabled by default as a beta feature, making it easier to scope queries for monorepos or large codebases."
+  - description: 'Query-based search contexts are now enabled by default as a beta feature, making it easier to scope queries for monorepos or large codebases.'
     url: https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts
     category: Search
   - description: Fixed a race condition in the precise code intel upload expirer process that prematurely expired new uploads.
     url: https://github.com/sourcegraph/sourcegraph/pull/30546
     category:
-  - description: "Fixed performance issue in LSIF upload processing, reducing the latency between uploading an LSIF index and accessing precise code intel in the UI. ([#30978](https://github.com/sourcegraph/sourcegraph/pull/30978), #31143)"
+  - description: 'Fixed performance issue in LSIF upload processing, reducing the latency between uploading an LSIF index and accessing precise code intel in the UI. ([#30978](https://github.com/sourcegraph/sourcegraph/pull/30978), #31143)'
     url: https://github.com/sourcegraph/sourcegraph/pull/31143
     category:
-# Removed
-  - description: "Removed `experimentalFeature.showCodeMonitoringTestEmailButton`. Test emails can still be sent by editing the code monitor and expanding the \"Send email notification\" section."
+  # Removed
+  - description: 'Removed `experimentalFeature.showCodeMonitoringTestEmailButton`. Test emails can still be sent by editing the code monitor and expanding the "Send email notification" section.'
     url: https://github.com/sourcegraph/sourcegraph/pull/29953
     category:
 ---
