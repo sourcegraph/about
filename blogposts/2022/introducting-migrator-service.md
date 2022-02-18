@@ -35,7 +35,7 @@ But, if you'd like to see how the sausage is debugged, read on.
 
 Upgrades of Sourcegraph instances, including on-premise deployments and our [Cloud](https://sourcegraph.com/search) environment, would often fail with a dreaded "dirty database" error. This class of error left the Sourcegraph instance in a broken state that required manual intervention to resolve.
 
-On the customer side, the resolution is very inelegant. A new container will come online and attempt to migrate the database. When this attempt fails, the database is marked as dirty and the container will restart. New instances will see the dirty flag set and also restart. Site-administrators will notice rapidly restarting containers (that, or a wonky Sourcegraph experience) and eventually might find a log message asking them to contact support for assistance.
+On the customer side, the resolution was inelegant. A new container would come online and attempt to migrate the database. When this attempt failed, the database was marked as dirty and the container would restart. New instances would see the dirty flag set and also restart. Site-administrators would notice rapidly restarting containers (that, or a wonky Sourcegraph experience) and would sometimes find a log message asking them to contact support for assistance.
 
 In our Cloud environment, Sourcegraph engineers are subjected to the same manual process.
 
