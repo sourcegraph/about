@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState, useEffect, useCallback, ReactNode }
 import { TemplateCodeBlock } from './TemplateCodeBlock'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
 interface TabCarouselProps {
     items: Template[]
@@ -24,6 +25,7 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
         items,
     })
     const [isRunning, setIsRunning] = useState<boolean>(autoAdvance ?? false)
+    const [isAdvancing, setIsAdvancing] = useState<boolean>(true)
     let intervalId: number | undefined = undefined
     const updateCurrentItem = (index: number): void => {
         setCarouselItems(prevState => ({
@@ -35,10 +37,12 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
     const setCurrentIndex = (action?: string): void => {
         let index = carouselItems.currentItemIndex ?? 0
         if (action === 'decrement') {
+            setIsAdvancing(false)
             index = index === 0
                 ? carouselItems.items.length - 1
                 : index -= 1
         } else {
+            setIsAdvancing(true)
             index = index >= carouselItems.items.length - 1
                 ? 0
                 : index += 1
@@ -84,10 +88,17 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
                 <ArrowLeftIcon
                     className="mr-4"
                     onClick={() => advanceCarousel('decrement')}
+                    color={isAdvancing ? '#D0D0D0' : '#000'}
                 />
+                <div>
+                    {carouselItems.items.map(item => (
+                        <CircleSmallIcon color={item === carouselItems.currentItem ? '#000' : '#D0D0D0'} key={item.header} />
+                    ))}
+                </div>
                 <ArrowRightIcon
                     className="ml-4"
                     onClick={() => advanceCarousel()}
+                    color={isAdvancing ? '#000' :'#D0D0D0'}
                 />
             </div>
         </div>       
