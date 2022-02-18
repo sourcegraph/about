@@ -37,7 +37,7 @@ Upgrades of Sourcegraph instances, including on-premise deployments and our [Clo
 
 On the customer side, the resolution was inelegant. A new container would come online and attempt to migrate the database. When this attempt failed, the database was marked as dirty and the container would restart. New instances would see the dirty flag set and also restart. Site-administrators would notice rapidly restarting containers (that, or a wonky Sourcegraph experience) and would sometimes find a log message asking them to contact support for assistance.
 
-In our Cloud environment, Sourcegraph engineers are subjected to the same manual process.
+In our Cloud environment, Sourcegraph engineers endured the same manual process.
 
 Requiring site administrators to directly modify database contents is not a distribution practice we should encourage. The frequency of these errors and the rising burden put on users and application/product engineers made this a pressing issue to resolve.
 
