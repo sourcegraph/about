@@ -131,7 +131,7 @@ After another round of testing, migrations finally behave according to intuition
 
 ## Conclusion
 
-We've long since outgrown the way in which we run database migrations. We've known for a while that there _was_ a problem, and felt the pain along with our users for an embarrassingly long time. After digging a bit deeper, better understand the problem space, and breaking a bit of our ossified code and deployment process along the way, I hope we're delivering a quality of life improvement to Sourcegraphers and our users.
+We've long since outgrown the way in which we run database migrations. We've known for a while that there _was_ a problem, and felt the pain along with our users for an embarrassingly long time. After digging a bit deeper, better understanding the problem space, and breaking a bit of our ossified code and deployment process along the way, we can now deliver a significant quality of life improvement to our users and Sourcegraphers alike.
 
 If your next upgrade does **not** crash, please tweet me at [@ericfritz](https://twitter.com/ericfritz).
 
