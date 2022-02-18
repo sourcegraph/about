@@ -70,7 +70,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                     <div className="d-flex align-items-center justify-content-center bg-purple text-white font-weight-bold p-2">
                         Track what really matters to you and your team.
                         <Link to="/code-insights" className="ml-2 rounded btn btn-sm btn-light">
-                            🎉 <span className="mx-2">Show me Code Insights!</span>
+                            👀 <span className="mx-2">Show me Code Insights!</span>
                         </Link>
                     </div>
                 )}
