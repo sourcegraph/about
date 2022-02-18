@@ -62,7 +62,7 @@ After some initial testing, we discovered that the frequency of "dirty database"
 
 ## A deeper contributing factor
 
-Over time, our engineering organization formed some tribal knowledge regarding ways to avoid "taking down production" with poorly defined migrations. Of particular hesitation was creating indexes on tables that can have a large number of rows. Normal index creation operations take an exclusive write lock on the table, creating the new index from the existing table data synchronously. During this time no inserts, updates, or deletes can be made to the table. You basically incur write downtime (along with a blip of failed requests in your metrics dashboards and alerting systems, and a slice of failed jobs that failed in the background) for the table, which can take tens of minutes for large tables.
+Over time, our engineering organization formed some tribal knowledge regarding ways to avoid "taking down production" with poorly defined migrations. Creating indexes on tables that can have a large number of rows caused many to hesitate. Normal index creation operations take an exclusive write lock on the table, creating the new index from the existing table data synchronously. During this time no inserts, updates, or deletes can be made to the table. You basically incur write downtime (along with a blip of failed requests in your metrics dashboards and alerting systems, and a slice of failed jobs that failed in the background) for the table, which can take tens of minutes for large tables.
 
 For our use case, `CREATE INDEX CONCURRENTLY` was received as a hero.
 
