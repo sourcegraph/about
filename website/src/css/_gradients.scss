@@ -1,0 +1,30 @@
+@mixin BgGradientPrimary {
+    background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
+}
+@mixin BgGradientGreenBlue {
+    background: linear-gradient(90deg, $light-green 0%, $light-blue 100%);
+}
+@mixin BgGradientBlueGreen {
+    background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
+}
+@mixin BgGradientBluePurple {
+    background: linear-gradient(90deg, $light-blue 0%, $light-purple 100%);
+}
+@mixin BgGradientPurpleYellow {
+    background: linear-gradient(90deg, $light-purple 0%, $light-yellow 100%);
+}
+@mixin BgGradientPurpleBlue2 {
+    background: linear-gradient(90deg, $light-purple 0%, $light-blue2 100%);
+}
+@mixin BgGradientYellowGreen2 {
+    background: linear-gradient(90deg, $light-yellow 0%, $light-green2 100%);
+}
+@mixin BgGradientGreen2Red {
+    background: linear-gradient(90deg, $light-green 0%, $light-red 100%);
+}
+@mixin BgGradientRedBlue2 {
+    background: linear-gradient(90deg, $light-red 0%, $light-blue2 100%);
+}
+@mixin BgGradientBlue2Blue {
+    background: linear-gradient(90deg, $light-blue2 0%, $light-blue 100%);
+}
