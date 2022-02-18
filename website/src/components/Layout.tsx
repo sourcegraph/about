@@ -41,10 +41,13 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         const isHome = pathname === '/'
         const isBlog = pathname === '/blog'
         const isProductPage = pathname.startsWith('/product/')
+        const isCaseStudyPage = 
+            pathname.startsWith('/case-studies/') &&
+            pathname.split('/')[2] !== ''
         const metaProps = { ...defaultMetaProps, ...this.props.meta }
 
         return (
-            <div className={`flex flex-column fill-height ${this.props.className || ''}`}>
+            <>
                 <Helmet>
                     <title>{metaProps.externalTitle || metaProps.title}</title>
 
@@ -71,22 +74,26 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                         rel="stylesheet"
                     />
                 </Helmet>
-                <div className={this.props.heroAndHeaderClassName}>
-                    <Header
-                        isHome={isHome}
-                        isBlog={isBlog}
-                        isProductPage={isProductPage}
-                        minimal={this.props.minimal}
-                        className={`${this.props.className || ''}`}
-                        hideGetStartedButton={this.props.hideGetStartedButton}
-                    />
-                    {this.props.hero}
+                
+                <div className={`layout ${this.props.className || ''}`}>
+                    <div className={this.props.heroAndHeaderClassName}>
+                        <Header
+                            isHome={isHome}
+                            isBlog={isBlog}
+                            isProductPage={isProductPage}
+                            minimal={this.props.minimal}
+                            className={`${this.props.className || ''}`}
+                            hideGetStartedButton={this.props.hideGetStartedButton}
+                        />
+                        {this.props.hero}
+                    </div>
+                    <section className="d-flex flex-column fill-height">{this.props.children}</section>
                 </div>
-                <section className="d-flex flex-column fill-height">{this.props.children}</section>
+
                 {!this.props.hideFooter && (
-                    <Footer className={`pt-4 ${this.props.className || ''}`} minimal={this.props.minimal} />
+                    <Footer className={`pt-4 ${this.props.className || ''} ${isCaseStudyPage && 'bg-black'}`} minimal={this.props.minimal} />
                 )}
-            </div>
+            </>
         )
     }
 }

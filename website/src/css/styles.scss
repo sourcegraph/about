@@ -130,6 +130,18 @@ body,
     -webkit-overflow-scrolling: touch;
 }
 
+// Inner target container
+#gatsby-focus-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+// Global layout
+.layout {
+    flex: 1 0 auto;
+}
+
 .flex-1 {
     flex: 1;
 }

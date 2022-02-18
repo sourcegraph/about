@@ -1,5 +1,4 @@
 import { Link } from 'gatsby'
-import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import * as React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -67,7 +66,7 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <>
                 <nav className={`header navbar py-3 ${this.props.className || 'navbar-light'}`}>
-                    <div className="container-lg">
+                    <div className="container-xl">
                         <Navbar.Brand className="header__logo" href="/" onContextMenu={this.handleRightClick}>
                             <span role="img" aria-label="Sourcegraph - Universal code search">
                                 {' '}

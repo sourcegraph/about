@@ -7,9 +7,14 @@ import TwitchIcon from 'mdi-react/TwitchIcon'
 import SpotifyIcon from 'mdi-react/SpotifyIcon'
 import * as React from 'react'
 
-export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
-    <footer className={`${minimal ? '' : 'pt-6 pb-2'}`}>
-        <div className="footer__container container">
+interface Props {
+    minimal?: boolean
+    className?: string
+}
+
+export const Footer: React.FunctionComponent<Props> = ({ minimal, className }) => (
+    <footer className={`flex-shrink-0 ${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
+        <div className="container-xl">
             {!minimal && (
                 <React.Fragment>
                     <div className="row footer__nav-sections">
