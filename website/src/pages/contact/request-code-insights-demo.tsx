@@ -9,7 +9,7 @@ export const RequestCodeInsightsDemo: React.FunctionComponent = (props: any) => 
         createHubSpotForm({
             portalId: '2762526',
             formId: 'a58be17d-86ad-4a6e-8c97-83818aafd2ab',
-            targetId: 'hubspotRequestBatchChangesDemo',
+            targetId: 'hubspotRequestCodeInsightsDemo',
         })
 
         // Chili Piper script
@@ -50,7 +50,7 @@ export const RequestCodeInsightsDemo: React.FunctionComponent = (props: any) => 
                             <h1 className="display-3 font-weight-bold">Request a demo</h1>
                             <h3 className="font-weight-light">{desc}</h3>
                             <div className="form mt-5">
-                                <div id="hubspotRequestBatchChangesDemo" className="d-flex justify-center" />
+                                <div id="hubspotRequestCodeInsightsDemo" className="d-flex justify-center" />
                             </div>
                         </div>
                         <div className="col-md-6">
