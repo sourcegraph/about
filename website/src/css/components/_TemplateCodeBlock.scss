@@ -1,13 +1,16 @@
 .template-code-block {
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: row;
+        width: 100%;
+    }
+
     .template {
         background-color: $white;
-        flex: 1 0 48%;
-        max-width: 50%;
-
-        @media only screen and (max-width: 768px) {
-            width: 100%;
-            max-width: 100%;
-        }
+        min-height: 220px;
     }
 
     .code {

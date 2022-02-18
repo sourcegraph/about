@@ -479,8 +479,63 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
+
         {/* Use Cases */}
-        <div className="bg-gradient-blue-mist py-4">
+        <div className="bg-gradient-blue-mist py-4 tab-section">
+            <ContentSection className="py-4 py-md-7">
+                <h1 className="mb-5 text-center">Popular Code Insights templates</h1>
+                <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
+                    <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
+                        <div className="row mt-5">
+                            <div className="w-100 d-flex flex-wrap">
+                                {templates.migrations.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
+                            </div>
+                        </div>
+                    </Tab>
+                    <Tab eventKey="version-tracking" title="Version Tracking" tabClassName="tab-header">
+                        <div className="row mt-5 justify-content-center">
+                            <div className="w-100 d-flex flex-wrap">
+                                {templates.versionTracking.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
+                            </div>
+                        </div>
+                    </Tab>
+                    <Tab eventKey="security" title="Security" tabClassName="tab-header">
+                        <div className="row mt-5 justify-content-center">
+                            <div className="w-100 d-flex flex-wrap">
+                                {templates.security.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
+                            </div>
+                        </div>
+                    </Tab>
+                    <Tab eventKey="code-health" title="Code Health" tabClassName="tab-header">
+                        <div className="row mt-5 justify-content-center">
+                            <div className="w-100 d-flex flex-wrap">
+                                {templates.codeHealth.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
+                            </div>
+                        </div>
+                    </Tab>
+                </Tabs>
+                <div className="w-100 d-flex justify-content-center">
+                    <a
+                        className="btn btn-link px-0 py-4 col-7 docs-cta font-weight-bold"
+                        href="https://docs.sourcegraph.com/batch_changes"
+                        title="Code Insights on docs."
+                    >
+                    See Docs for more use cases
+                    </a>
+                </div>
+            </ContentSection>
+        </div>
+
+        {/* Use Cases Carousel */}
+        <div className="bg-gradient-blue-mist py-4 tab-carousel-section">
             <ContentSection className="py-4 py-md-7">
                 <h1 className="mb-5 text-center">Popular Code Insights templates</h1>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
@@ -561,7 +616,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     <h1 className="mb-5">Learn more</h1>
                 </div>
                 {blogListItems.map(item => (
-                    <BlogListItem blog={item} />
+                    <BlogListItem key={item.title} blog={item} />
                 ))}
             </div>
         </ContentSection>

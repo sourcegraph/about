@@ -54,6 +54,18 @@
         }
     }
 
+    .tab-section {
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    
+    .tab-carousel-section {
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
     .tab-carousel {
         transition: background-color 0.5s ease;
     }

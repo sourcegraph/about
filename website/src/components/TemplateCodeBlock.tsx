@@ -11,7 +11,7 @@ interface Template {
 }
 
 export const TemplateCodeBlock: FunctionComponent<Props> = ({ template }) => (
-    <div className="template-code-block d-flex flex-wrap justify-content-center">
+    <div className="template-code-block d-flex flex-wrap">
        
             <div className="template p-3 mx-2 mb-3" key={template.header}>
                 <div className="font-weight-bold">{template.header}</div>
