@@ -100,6 +100,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         <NavDropdown.Item href="https://docs.sourcegraph.com/code_intelligence">
                                             Code Intelligence
                                         </NavDropdown.Item>
+                                        <NavDropdown.Item href="/code-insights">Code Insights</NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title="Resources" onToggle={this.dropdownToggle}>
                                         <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
@@ -186,6 +187,9 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                     <a href="https://docs.sourcegraph.com/code_intelligence">
                                                         Code Intelligence
                                                     </a>
+                                                </li>
+                                                <li className="nav-link" role="presentation">
+                                                    <a href="/code-insights">Code Insights</a>
                                                 </li>
                                             </ul>
                                         </li>
