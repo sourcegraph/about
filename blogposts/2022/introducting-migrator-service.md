@@ -24,7 +24,7 @@ As of Sourcegraph 3.37, we no longer spuriously mark the database as dirty durin
 This release adds:
 
 - [New tools](https://docs.sourcegraph.com/admin/how-to/manual_database_migrations) that allow site administrators to run database migrations independently from an upgrade. Large instance upgrades can be upgraded ahead-of-time of an upgrade to reduce the possibility of downtime due to migrations taking longer than the healthcheck timeout.
-- Better error messages and [a better recovery process](https://docs.sourcegraph.com/admin/how-to/dirty_database) in the (now appropriately rare) case of a real database migration failure.
+- Better error messages and [a better recovery process](https://docs.sourcegraph.com/admin/how-to/dirty_database) in the (now rare) case of a real database migration failure.
 - A general pruning of [now-irrelevant troubleshooting documentation](https://docs.sourcegraph.com/admin/how-to/dirty_database_pre_3_37).
 
 We've tried to make this transition as seamless as possible, and there should be no manual steps required to proceed to Sourcegraph 3.37.0 and beyond. If we've done everything right, you'll notice no differences.
