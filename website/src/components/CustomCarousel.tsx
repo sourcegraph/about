@@ -52,8 +52,9 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             >
                 {title && <h2 className="font-weight-bold ml-lg-6 mb-5">{title}</h2>}
                 <ArrowUpIcon
-                    className={carouselHook.isAdvancing ? 'ml-lg-6 mb-4 opaque' : 'ml-lg-6 mb-4'}
+                    className="ml-lg-6 mb-4"
                     onClick={() => carouselHook.moveCarousel('decrement')}
+                    color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <ul className="ml-lg-3">
                     {carouselItems.map(item => (
@@ -67,8 +68,9 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     ))}
                 </ul>
                 <ArrowDownIcon
-                    className={carouselHook.isAdvancing ? 'ml-lg-6 mt-4' : 'ml-lg-6 mt-4 opaque'}
+                    className="ml-lg-6 mt-4"
                     onClick={() => carouselHook.moveCarousel()}
+                    color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}
                 />
             </div>
             <div
@@ -93,20 +95,22 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
 
             <div className="carousel-nav-mobile mx-auto my-4">
                 <ArrowLeftIcon
-                    className={carouselHook.isAdvancing ? 'mr-4 opaque' : 'mr-4'}
+                    className="mr-4"
                     onClick={() => carouselHook.moveCarousel('decrement')}
+                    color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <div>
                     {carouselItems.map(item => (
                         <CircleSmallIcon
-                            className={item === carouselHook.carouselItems.currentItem ? '' : 'opaque'}
+                            color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
                             key={item.id}
                         />
                     ))}
                 </div>
                 <ArrowRightIcon
-                    className={carouselHook.isAdvancing ? 'ml-4' : 'ml-4 opaque'}
+                    className="ml-4"
                     onClick={() => carouselHook.moveCarousel()}
+                    color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}
                 />
             </div>
         </div>

@@ -38,20 +38,22 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
 
             <div className="d-flex justify-content-center">
                 <ArrowLeftIcon
-                    className={carouselHook.isAdvancing ? 'mr-4 opaque' : 'mr-4'}
+                    className="mr-4"
                     onClick={() => carouselHook.moveCarousel('decrement')}
+                    color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <div>
                     {carouselItems.map(item => (
                         <CircleSmallIcon
-                            className={item === carouselHook.carouselItems.currentItem ? '' : 'opaque'}
+                            color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
                             key={item.header}
                         />
                     ))}
                 </div>
                 <ArrowRightIcon
-                    className={carouselHook.isAdvancing ? 'ml-4' : 'ml-4 opaque'}
+                    className="ml-4"
                     onClick={() => carouselHook.moveCarousel()}
+                    color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}
                 />
             </div>
         </div>
