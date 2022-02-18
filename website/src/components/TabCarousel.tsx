@@ -14,7 +14,6 @@ interface TabCarouselProps {
 }
 
 interface Template {
-    id: number
     header: string
     description: string
     queries: ReactNode[]
