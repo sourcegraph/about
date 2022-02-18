@@ -36,7 +36,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const currentCarousel = carouselHook.carouselItems as CarouselProps
 
     return (
-        <div className={classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass)}>
+        <div
+            className={
+                autoAdvance
+                    ? classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'set-height')
+                    : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass)
+            }
+        >
             <div
                 className={
                     carouselHook.autoAdvance
@@ -65,7 +71,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     onClick={() => carouselHook.moveCarousel()}
                 />
             </div>
-            <div className={classNames(carouselRightPanelStyles)}>
+            <div
+                className={
+                    autoAdvance
+                        ? classNames(carouselRightPanelStyles, 'set-height-panel')
+                        : classNames(carouselRightPanelStyles)
+                }
+            >
                 {carouselItems.map(item => (
                     <div
                         key={item.id}

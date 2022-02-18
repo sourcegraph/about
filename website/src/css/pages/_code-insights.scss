@@ -51,11 +51,19 @@
     }
 
     /* Handle the different code insights chart sizes */
-    .set-height {
-        height: 800px;
+    .set-height-panel {
+        height: 750px;
 
         @media only screen and (max-width: 768px) {
             height: auto;
+        }
+    }
+
+    .set-height {
+        height: auto;
+
+        @media only screen and (max-width: 768px) {
+            height: 900px;
         }
     }
 
