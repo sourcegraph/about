@@ -74,7 +74,7 @@ Using concurrent index creation also introduced a footgun and plenty of friendly
 - **Phase 2**: Wait for all transactions starting before the end of **Phase 1** to finish. Then, perform a full-table scan and write the content of each row to the new index structure. Open the new index structure up to writes.
 - **Phase 3**: Wait for all transactions starting before the end of **Phase 2** to finish. Then, perform another full-table scan and write the content of each row inserted during **Phase 2** to the new index structure. The old index structure can now be closed to writes.
 
-There's a particular detail here that deserves special attention in hindsight: concurrent index creation operations block until **all transactions started before them** have either committed or rolled back. Mixed with long-held advisory locks, we encounter this rather nasty situation.
+There's a particular detail here that deserves special attention in hindsight: concurrent index creation operations block until **all transactions started before them** have either committed or rolled back. Mixed with long-held advisory locks, we encounter the rather nasty situation below.
 
 Observe! In `psql` **Process A**, we acquire an advisory lock:
 
