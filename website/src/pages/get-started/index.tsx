@@ -16,7 +16,7 @@ export const GetStartedPage: React.FunctionComponent = props => {
             }}
             hero={
                 <div className="container-xl py-5">
-                    <h1>What's best for you?</h1>
+                    <h1><strong>What's best for you?</strong></h1>
                     <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
                 </div>
             }
@@ -26,13 +26,14 @@ export const GetStartedPage: React.FunctionComponent = props => {
             <div className={styles.getStartedPage}>
                 <div className="container-xl">
                     <div className="row">
+                        
                         <section id="sg-self-hosted" className="col-lg-6 column p-5">
-                            <h1>Sourcegraph Self-Hosted</h1>
-
-                            <span className={`${styles.badge} badge`}>
-                                <img src="/star.svg" />
-                                <span>Most Popular</span>
-                            </span>
+                            <h1>
+                                Sourcegraph Self-Hosted
+                                <span className={`${styles.badge} badge align-top`}>
+                                    <span>Most Popular</span>
+                                </span>
+                            </h1>
 
                             <p>
                                 Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
@@ -60,9 +61,13 @@ export const GetStartedPage: React.FunctionComponent = props => {
                             <div className={styles.smallTitle}>Best For</div>
                             <p>Individual developers (small teams coming soon)</p>
 
-                            <p>Search across your repositories and the open-source universe.</p>
+                            <p>Search across your repositories and the open-source universe. No technical setup is required.</p>
 
-                            <p>
+                            <a className="btn btn-primary my-2" href="/get-started/cloud">
+                                Get started for free <ArrowRightIcon />
+                            </a>
+                            
+                            <p className="mt-3">
                                 Already have a Sourcegraph Cloud account?{' '}
                                 <a
                                     href="https://sourcegraph.com/sign-in"
@@ -72,11 +77,8 @@ export const GetStartedPage: React.FunctionComponent = props => {
                                     Sign in
                                 </a>
                             </p>
-
-                            <a className="btn btn-primary my-2" href="/get-started/cloud">
-                                Get started for free <ArrowRightIcon />
-                            </a>
                         </section>
+
                     </div>
                 </div>
             </div>

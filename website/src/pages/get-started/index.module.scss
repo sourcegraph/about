@@ -33,7 +33,6 @@
 
 .hero {
     h1 {
-        font-weight: bold;
         font-size: 4.5rem;
         line-height: 4.625rem;
         margin-bottom: 11px;
@@ -53,18 +52,12 @@
 .badge {
     background: $brand-purple;
     text-transform: uppercase;
-    padding: 7px 10px 5px;
+    padding: 7px 10px;
     color: #fff;
     font-weight: 700;
     font-size: 0.65rem;
     line-height: 0.815rem;
-    margin-bottom: 15px;
-    display: inline-flex;
-    align-items: center;
-
-    span {
-        margin-left: 5px;
-    }
+    margin-left: 5px;
 }
 
 .smallTitle {
