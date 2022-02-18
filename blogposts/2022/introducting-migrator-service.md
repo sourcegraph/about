@@ -95,7 +95,7 @@ In `psql` **Process B**, we attempt to acquire an advisory lock:
 
 ```
 
-As this lock is already held by another process, this command blocks indefinitely - or until the user gets bored and aborts their session.
+Because this lock is already held by another process, this command blocks indefinitely–or until the user gets bored and aborts their session.
 
 Back in `psql` **Process A**, we attempt to create an index concurrently on _literally any table_:
 
