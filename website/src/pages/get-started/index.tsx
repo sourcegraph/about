@@ -1,77 +1,10 @@
 import * as React from 'react'
-// import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
+
+import styles from './index.module.scss'
 
 export const GetStartedPage: React.FunctionComponent = props => {
-    const buttonRef = React.useRef()
-    const newContainerLeftRef = React.useRef()
-    const backBtn = React.useRef()
-
-    const expandColumn = e => {
-        const column = e.target.parentNode.parentNode
-        const id = column.getAttribute('id')
-
-        if (id == 'sg-self-hosted') {
-            // Toggle sg-self-hosted column
-            column.classList.remove('d-none')
-            column.classList.add('expanded')
-            column.classList.replace('col-lg-6', 'col-lg-12')
-            // Toggle New container
-            newContainerLeftRef.current.classList.replace('d-none', 'd-inline-block')
-            // Toggle arrow image
-            buttonRef.current.classList.toggle('d-none')
-            // Toggle other column
-            const cloudSection = document.querySelector('#sg-cloud')
-            cloudSection.classList.toggle('d-none')
-            cloudSection.classList.add('high')
-        }
-    }
-
-    const goBack = e => {
-        const targetNode = e.target.parentNode.parentNode
-        let column
-
-        if (targetNode.id == 'sg-self-hosted') {
-            column = targetNode
-        } else if (targetNode.parentNode.id == 'sg-self-hosted') {
-            column = targetNode.parentNode
-        } else if (targetNode.parentNode.parentNode.id == 'sg-self-hosted') {
-            column = targetNode.parentNode.parentNode
-        }
-
-        const id = column.getAttribute('id')
-
-        if (id == 'sg-self-hosted') {
-            // Toggle sg-self-hosted column
-            column.classList.remove('expanded')
-            column.classList.replace('col-lg-12', 'col-lg-6')
-            // Toggle New container
-            newContainerLeftRef.current.classList.replace('d-inline-block', 'd-none')
-            // Toggle arrow image
-            buttonRef.current.classList.toggle('d-none')
-            // Toggle other column
-            const cloudSection = document.querySelector('#sg-cloud')
-            cloudSection.classList.toggle('d-none')
-            // To fix issue that the sg-cloud section is not high enough when it gets visible when going back to the delpoyment methods
-            setTimeout(() => {
-                cloudSection.classList.remove('high')
-            }, 0)
-        }
-    }
-
-    const copyText = () => {
-        const copyText = document.getElementById('installText').textContent
-        const textArea = document.createElement('textarea')
-        document.getElementById('installText').style.backgroundColor = '#ccedff'
-        textArea.textContent = copyText
-        document.body.append(textArea)
-        textArea.select()
-        document.execCommand('copy')
-        document.body.removeChild(textArea)
-    }
-
     return (
         <Layout
             location={props.location}
@@ -81,107 +14,71 @@ export const GetStartedPage: React.FunctionComponent = props => {
                     "From Sourcegraph Self-hosted to Sourcegraph Cloud, choose the deployment model that's best for you and get started for free today. ",
                 image: 'https://about.sourcegraph.com/sourcegraph-og.png',
             }}
-            heroAndHeaderClassName="get-started-page__hero-and-header"
             hero={
-                <div className="row">
-                    <div className="col-lg-9 column">
-                        <h1 className="display-1">What's best for you?</h1>
-                        <p className="subTitle">
-                            From Amazon to Uber, the world’s best developers use Sourcegraph every day.
-                        </p>
-                    </div>
+                <div className="container-xl py-5">
+                    <h1 className="display-1">What's best for you?</h1>
+                    <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
                 </div>
             }
-            hideFooter={true}
+            heroAndHeaderClassName={styles.hero}
             hideGetStartedButton={true}
         >
-            <div className="cta-container get-started-page">
-                <div className="row">
-                    <div id="sg-self-hosted" className="col-lg-6 column bg-gradient-blue-purple">
-                        <div className="original-container">
-                            <div className="btn back-link" onClick={goBack} ref={node => (backBtn.current = node)}>
-                                <ArrowLeftIcon />
-                                <span>Deployment Options</span>
-                            </div>
+            <div className={styles.getStartedPage}>
+                <div className="container-xl">
+                    <div className="row">
+                        
+                        <section id="sg-self-hosted" className="col-lg-6 column p-5">
                             <h1 className="title">Sourcegraph Self-Hosted</h1>
-                            <span className="badge">
+
+                            <span className={`${styles.badge} badge`}>
                                 <img src="/star.svg" />
                                 <span>Most Popular</span>
                             </span>
+
                             <p>
                                 Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
                                 locally. Get started for free.
                             </p>
-                            <div className="small-title">Best For</div>
+
+                            <div className={styles.smallTitle}>Best For</div>
                             <p>Teams and enterprises</p>
+
                             <p>
                                 Collaborate with your team on any code host (including private hosts) and access
                                 advanced security functionality.
                             </p>
-                            <span
-                                className="btn btn-primary temporary my-2"
-                                onClick={expandColumn}
-                                ref={node => (buttonRef.current = node)}
-                            >
-                                Get started for free <ArrowRightIcon className="mobileIcon" />
-                            </span>
-                        </div>
 
-                        <div className="new-container d-none" ref={node => (newContainerLeftRef.current = node)}>
-                            <div className="get-started-page__local">
-                                <div className="get-started-page__installtext" onClick={copyText}>
-                                    <h2 className="get-started-page__search-headings">
-                                        Install Sourcegraph locally
-                                        <span className="get-started-page__copytext">
-                                            <img
-                                                src="/copy-text-icon.svg"
-                                                className="copytext icon-inline ml-1 medium"
-                                            />
-                                        </span>
-                                    </h2>
-                                    <span id="installText">
-                                        docker run <br />
-                                        --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
-                                        --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
-                                        --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                        sourcegraph/server:3.36.3
-                                    </span>
-                                </div>
-                                <a className="btn" href="https://info.sourcegraph.com/talk-to-a-developer">
-                                    Talk to an engineer <ArrowRightIcon />
-                                </a>
-                                <a className="btn" href="https://docs.sourcegraph.com/">
-                                    Deploy to a server or cluster <ArrowRightIcon />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                            <a className="btn btn-primary my-2" href="/get-started/self-hosted">
+                                Get started for free <ArrowRightIcon />
+                            </a>
+                        </section>
 
-                    <div id="sg-cloud" className="col-lg-6 column bg-gradient-blue-green">
-                        <div className="original-container">
-                            <div className="btn back-link" onClick={goBack} ref={node => (backBtn.current = node)}>
-                                <ArrowLeftIcon />
-                                <span>Deployment Options</span>
-                            </div>
-                            <h1 className="display-2 title">Sourcegraph Cloud</h1>
+                        <section id="sg-cloud" className="col-lg-6 column p-5">
+                            <h1 className="title">Sourcegraph Cloud</h1>
+
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
-                            <div className="small-title">Best For</div>
+
+                            <div className={styles.smallTitle}>Best For</div>
                             <p>Individual developers (small teams coming soon)</p>
+
                             <p>Search across your repositories and the open-source universe.</p>
-                            <p className="small-font temporary">
+
+                            <p className="small-font">
                                 Already have a Sourcegraph Cloud account?{' '}
                                 <a
                                     href="https://sourcegraph.com/sign-in"
                                     title="Search public code with Sourcegraph Cloud"
-                                    className="btn sign-in-link"
+                                    className={styles.signInLink}
                                 >
                                     Sign in
                                 </a>
                             </p>
-                            <a className="btn btn-primary temporary my-2" href="/get-started/cloud">
-                                Get started for free <ArrowRightIcon className="mobileIcon" />
+
+                            <a className="btn btn-primary my-2" href="/get-started/cloud">
+                                Get started for free <ArrowRightIcon />
                             </a>
-                        </div>
+                        </section>
+
                     </div>
                 </div>
             </div>
