@@ -4,9 +4,9 @@ Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 
 ## Quick start
 
-| What                               | Command                                    |
-| ---------------------------------- | ------------------------------------------ |
-| Auto-preview about.sourcegraph.com | `cd website && yarn && yarn dev` |
+| What                               | Command                                          |
+| ---------------------------------- | ------------------------------------------------ |
+| Auto-preview about.sourcegraph.com | `cd website && yarn && yarn dev`                 |
 | Final review about.sourcegraph.com | `cd website && yarn && yarn build && yarn serve` |
 
 ## Requirements

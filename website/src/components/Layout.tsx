@@ -41,9 +41,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         const isHome = pathname === '/'
         const isBlog = pathname === '/blog'
         const isProductPage = pathname.startsWith('/product/')
-        const isCaseStudyPage = 
-            pathname.startsWith('/case-studies/') &&
-            pathname.split('/')[2] !== ''
+        const isCaseStudyPage = pathname.startsWith('/case-studies/') && pathname.split('/')[2] !== ''
         const metaProps = { ...defaultMetaProps, ...this.props.meta }
 
         return (
@@ -74,7 +72,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                         rel="stylesheet"
                     />
                 </Helmet>
-                
+
                 <div className={`layout ${this.props.className || ''}`}>
                     <div className={this.props.heroAndHeaderClassName}>
                         <Header
@@ -91,7 +89,10 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                 </div>
 
                 {!this.props.hideFooter && (
-                    <Footer className={`pt-4 ${this.props.className || ''} ${isCaseStudyPage && 'bg-black'}`} minimal={this.props.minimal} />
+                    <Footer
+                        className={`pt-4 ${this.props.className || ''} ${isCaseStudyPage && 'bg-black'}`}
+                        minimal={this.props.minimal}
+                    />
                 )}
             </>
         )
