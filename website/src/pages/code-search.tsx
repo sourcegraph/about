@@ -2,11 +2,8 @@ import { Link, PageProps } from 'gatsby'
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
-import Tab from 'react-bootstrap/Tab'
-import Tabs from 'react-bootstrap/Tabs'
-import { TrySourcegraph } from '../components/TrySourcegraph'
 import { IntegrationsSection } from '../components/IntegrationsSection'
-import GetStarted from '../components/GetStarted'
+import SelfHostedSection from '../components/SelfHostedSection'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
@@ -164,7 +161,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <GetStarted className="bg-gradient-green-blue mt-6" />
+        <SelfHostedSection className="bg-gradient-green-blue mt-6" />
     </Layout>
 )
 

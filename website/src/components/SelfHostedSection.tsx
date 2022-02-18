@@ -1,13 +1,12 @@
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import FileDocumentMultipleOutlineIcon from 'mdi-react/FileDocumentMultipleOutlineIcon'
-import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import React from 'react'
 
-interface GetStartedProps {
+interface Props {
     className?: string
 }
 
-export default class GetStarted extends React.PureComponent<GetStartedProps> {
+export default class SelfHostedSection extends React.PureComponent<Props> {
     public copyText = () => {
         const copyText = document.getElementById('installText').textContent
         const textArea = document.createElement('textarea')
@@ -20,7 +19,7 @@ export default class GetStarted extends React.PureComponent<GetStartedProps> {
     }
     public render(): JSX.Element | null {
         return (
-            <div className={`get-started ${this.props.className || ''}`} id="get-started">
+            <div className={`self-hosted ${this.props.className || ''}`} id="self-hosted">
                 <div className="container">
                     <h1 id="get-started" className="display-2 font-weight-bold mb-5">
                         Self-hosted deployment
