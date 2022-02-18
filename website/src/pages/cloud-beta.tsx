@@ -101,7 +101,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
             </blockquote>
         </ContentSection>
 
-        <CustomCarousel items={items} />
+        <CustomCarousel items={items} backgroundClass="bg-gradient-green-blue" />
 
         <ContentSection className="join-the-waitlist text-center">
             <div className="row">
