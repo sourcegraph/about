@@ -68,7 +68,7 @@ For our use case, `CREATE INDEX CONCURRENTLY` was received as a hero.
 
 Using concurrent index creation reduced downtime incidents in our Cloud environment related to heavy database contention triggered by continuous deployment.
 
-Using concurrent index creation also introduced a footgun and plenty of friendly fire that we didn't recognize until recently. [Concurrent index creation](https://www.postgresql.org/docs/12/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY) is performed in three distinct phases to ensure that a full table lock is never required, thus readers nor writers are not blocked for long stretches of time.
+Using concurrent index creation also introduced a footgun and plenty of friendly fire that we didn't recognize until recently. [Concurrent index creation](https://www.postgresql.org/docs/12/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY) is performed in three distinct phases to ensure that a full table lock is never required. That way, neither readers nor writers are not blocked for long stretches of time.
 
 - **Phase 1**: Create new catalog structures for the index, but do not begin to populate them yet. Transactions that started before the completion of this phase will only see (and therefore only write to) the old catalog structures.
 - **Phase 2**: Wait for all transactions starting before the end of **Phase 1** to finish. Then, perform a full-table scan and write the content of each row to the new index structure. Open the new index structure up to writes.
