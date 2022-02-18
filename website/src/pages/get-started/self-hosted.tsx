@@ -22,7 +22,8 @@ export const SelfHostedPage: React.FunctionComponent = props => {
             location={props.location}
             meta={{
                 title: 'Get Started with Sourcegraph Self-Hosted',
-                description: 'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
+                description:
+                    'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
             }}
             hideFooter={true}
             hideGetStartedButton={true}
@@ -35,15 +36,21 @@ export const SelfHostedPage: React.FunctionComponent = props => {
                                 <ArrowLeftIcon />
                                 <span>Deployment Options</span>
                             </a>
-                            
+
                             <h1 className="title">Sourcegraph Self-Hosted</h1>
-                            
-                            <p>Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.</p>
-                            
+
+                            <p>
+                                Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
+                                locally. Get started for free.
+                            </p>
+
                             <div className="small-title">Best For</div>
                             <p>Teams and enterprises</p>
 
-                            <p>Collaborate with your team on any code host (including private hosts) and access advanced security functionality.</p>
+                            <p>
+                                Collaborate with your team on any code host (including private hosts) and access
+                                advanced security functionality.
+                            </p>
                         </div>
                     </div>
 
