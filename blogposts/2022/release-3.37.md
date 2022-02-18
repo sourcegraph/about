@@ -54,5 +54,5 @@ Notebooks can now be created by uploading a markdown file and can also be export
 
 ## Search contexts
 
-Search contexts' creation UI has gotten some UI tweaks that make it easier to understand if you're using queries or JSON to define your contexts, and make it clearer how to use a search query for context creation.
+The search contexts creation UI has received visual tweaks, making it easier to understand if you're using search queries or JSON to define your contexts. We've also added guidance on valid expressions for query-based contexts to make the creation process clearer.
 <img class="blog-image" title="Search contexts type selection" alt="Screenshot of search contexts configuration UI." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/search_contexts/select_context_type.png">
