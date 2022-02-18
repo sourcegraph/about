@@ -16,7 +16,7 @@ export const GetStartedPage: React.FunctionComponent = props => {
             }}
             hero={
                 <div className="container-xl py-5">
-                    <h1 className="display-1">What's best for you?</h1>
+                    <h1>What's best for you?</h1>
                     <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
                 </div>
             }
@@ -28,7 +28,7 @@ export const GetStartedPage: React.FunctionComponent = props => {
                     <div className="row">
                         
                         <section id="sg-self-hosted" className="col-lg-6 column p-5">
-                            <h1 className="title">Sourcegraph Self-Hosted</h1>
+                            <h1>Sourcegraph Self-Hosted</h1>
 
                             <span className={`${styles.badge} badge`}>
                                 <img src="/star.svg" />
@@ -54,7 +54,7 @@ export const GetStartedPage: React.FunctionComponent = props => {
                         </section>
 
                         <section id="sg-cloud" className="col-lg-6 column p-5">
-                            <h1 className="title">Sourcegraph Cloud</h1>
+                            <h1>Sourcegraph Cloud</h1>
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
 
@@ -63,7 +63,7 @@ export const GetStartedPage: React.FunctionComponent = props => {
 
                             <p>Search across your repositories and the open-source universe.</p>
 
-                            <p className="small-font">
+                            <p>
                                 Already have a Sourcegraph Cloud account?{' '}
                                 <a
                                     href="https://sourcegraph.com/sign-in"
