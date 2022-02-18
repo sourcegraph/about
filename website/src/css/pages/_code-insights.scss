@@ -85,6 +85,10 @@
         li {
             font-size: 1.5rem;
             line-height: 1.4rem;
+
+            &.active {
+                font-weight: 600;
+            }
         }
 
         p {

@@ -44,7 +44,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         : classNames(carouselLeftPanelStyles, 'ml-lg-7 col-lg-4 ml-md-5')
                 }
             >
-                {title && <h2 className="ml-lg-6 mb-5">{title}</h2>}
+                {title && <h2 className="font-weight-bold ml-lg-6 mb-5">{title}</h2>}
                 <ArrowUpIcon
                     className={carouselHook.isAdvancing ? 'ml-lg-6 mb-4 opaque' : 'ml-lg-6 mb-4'}
                     onClick={() => carouselHook.moveCarousel('decrement')}

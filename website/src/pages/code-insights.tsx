@@ -323,7 +323,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     ></iframe>
                 </div>
                 <div className="col-lg-5 my-7">
-                    <h2 className="mb-3">
+                    <h2 className="mb-3 font-weight-bold">
                         Finally, useful engineering metrics that <span style={{ fontStyle: 'italic' }}>you</span> get to
                         define.
                     </h2>
@@ -382,7 +382,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                                 <BullsEyeArrowIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
-                                <h3>Set goals</h3>
+                                <h3 className="font-weight-bold">Set goals</h3>
                                 <p>Set and measure goals around progress in your codebase</p>
                             </div>
                         </div>
@@ -391,7 +391,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                                 <RocketLaunchOutlineIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
-                                <h3>Plan proactively</h3>
+                                <h3 className="font-weight-bold">Plan proactively</h3>
                                 <p>Stay on top of engineering initiatives and catch issues before they escalate</p>
                             </div>
                         </div>
@@ -402,7 +402,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                                 <TrendingUpIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
-                                <h3>{'Track ownership & trends'}</h3>
+                                <h3 className="font-weight-bold">{'Track ownership & trends'}</h3>
                                 <p>Tie trends and metrics to owners on the teams</p>
                             </div>
                         </div>
@@ -411,7 +411,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                                 <LighteningBoltOutlineIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
-                                <h3>Celebrate progress</h3>
+                                <h3 className="font-weight-bold">Celebrate progress</h3>
                                 <p>Visualize the momentum and motivate your teammates</p>
                             </div>
                         </div>
@@ -422,7 +422,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
 
         {/* Demo */}
         <ContentSection className="py-4 py-md-7">
-            <h1 className="mb-3 text-center">See Code Insights in action</h1>
+            <h1 className="mb-3 text-center font-weight-bold">See Code Insights in action</h1>
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-8 container video-embed embed-responsive embed-responsive-16by9 ">
                     <iframe
@@ -440,7 +440,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         {/* Use Cases */}
         <div className="bg-gradient-blue-mist py-4 tab-section">
             <ContentSection className="py-4 py-md-7">
-                <h1 className="mb-5 text-center">Popular Code Insights templates</h1>
+                <h1 className="mb-5 text-center font-weight-bold">Popular Code Insights templates</h1>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                         <div className="row mt-5">
@@ -541,7 +541,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             <ContentSection>
                 <div className="row d-flex flex-column justify-content-start py-7">
                     <div className="col-lg-8 d-flex flex-column justify-content-start">
-                        <h1>Get started with Code Insights</h1>
+                        <h1 className="font-weight-bold">Get started with Code Insights</h1>
                         <p>
                             Create a Code Insight in 60 seconds, then get historical data for metrics you never tracked
                             until today without needing a time machine — data backfills automatically.
@@ -570,7 +570,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5">Learn more</h1>
+                    <h1 className="mb-5 font-weight-bold">Learn more</h1>
                 </div>
                 {blogListItems.map(item => (
                     <BlogListItem key={item.title} blog={item} />
