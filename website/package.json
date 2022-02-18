@@ -3,8 +3,8 @@
   "description": "Sourcegraph About Website",
   "license": "MIT",
   "bugs": {
-    "url" : "https://github.com/sourcegraph/about/issues",
-    "email" : "content-platform-team@sourcegraph.com"
+    "url": "https://github.com/sourcegraph/about/issues",
+    "email": "content-platform-team@sourcegraph.com"
   },
   "keywords": [
     "gatsby"

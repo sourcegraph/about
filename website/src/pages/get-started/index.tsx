@@ -26,7 +26,6 @@ export const GetStartedPage: React.FunctionComponent = props => {
             <div className={styles.getStartedPage}>
                 <div className="container-xl">
                     <div className="row">
-                        
                         <section id="sg-self-hosted" className="col-lg-6 column p-5">
                             <h1 className="title">Sourcegraph Self-Hosted</h1>
 
@@ -78,7 +77,6 @@ export const GetStartedPage: React.FunctionComponent = props => {
                                 Get started for free <ArrowRightIcon />
                             </a>
                         </section>
-
                     </div>
                 </div>
             </div>

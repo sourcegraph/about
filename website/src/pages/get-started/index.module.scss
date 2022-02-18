@@ -1,5 +1,5 @@
-@import "@styles/colors";
-@import "@styles/gradients";
+@import '@styles/colors';
+@import '@styles/gradients';
 
 .getStartedPage {
     background: linear-gradient(90deg, $light-blue 0%, $light-purple 50%, $light-blue 50%, $light-green 100%);
@@ -56,8 +56,8 @@
     padding: 7px 10px 5px;
     color: #fff;
     font-weight: 700;
-    font-size: .65rem;
-    line-height: .815rem;
+    font-size: 0.65rem;
+    line-height: 0.815rem;
     margin-bottom: 15px;
     display: inline-flex;
     align-items: center;
