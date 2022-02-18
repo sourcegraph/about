@@ -54,7 +54,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <ArrowUpIcon
                     className="ml-lg-6 mb-4"
                     onClick={() => carouselHook.moveCarousel('decrement')}
-                    color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
+                    color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <ul className="ml-lg-3">
                     {carouselItems.map(item => (
@@ -70,7 +70,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <ArrowDownIcon
                     className="ml-lg-6 mt-4"
                     onClick={() => carouselHook.moveCarousel()}
-                    color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}
+                    color={
+                        carouselHook.autoAdvance && carouselHook.isAdvancing
+                            ? '#000'
+                            : carouselHook.autoAdvance && !carouselHook.isAdvancing
+                            ? '#D0D0D0'
+                            : '#000'
+                    }
                 />
             </div>
             <div
@@ -97,7 +103,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <ArrowLeftIcon
                     className="mr-4"
                     onClick={() => carouselHook.moveCarousel('decrement')}
-                    color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
+                    color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <div>
                     {carouselItems.map(item => (
@@ -110,7 +116,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <ArrowRightIcon
                     className="ml-4"
                     onClick={() => carouselHook.moveCarousel()}
-                    color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}
+                    color={
+                        carouselHook.autoAdvance && carouselHook.isAdvancing
+                            ? '#000'
+                            : carouselHook.autoAdvance && !carouselHook.isAdvancing
+                            ? '#D0D0D0'
+                            : '#000'
+                    }
                 />
             </div>
         </div>
