@@ -291,7 +291,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         <div className="d-flex flex-column pt-1">
                             <Link
                                 className="btn btn-primary md-col-6 col-4 mr-3"
-                                to="/contact/request-demo"
+                                to="/contact/request-code-insights-demo"
                                 title="Request a Demo of Code Insights."
                             >
                                 Request a demo
@@ -550,7 +550,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     <div className="col-lg-7 d-flex flex-column pt-1">
                         <Link
                             className="btn btn-primary col-4 mr-3"
-                            to="/contact/request-demo"
+                            to="/contact/request-code-insights-demo"
                             title="Request a Demo of Code Insights."
                         >
                             Request a demo
