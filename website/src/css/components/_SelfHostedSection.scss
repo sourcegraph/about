@@ -1,4 +1,4 @@
-.self-hosted {
+.self-hosted-section {
     padding: 3rem 0;
     textarea {
         font-family: $font-family-monospace;
@@ -83,7 +83,7 @@
     }
 }
 
-.self-hosted.bg-gradient-green-blue {
+.self-hosted-section.bg-gradient-green-blue {
     .boxshadow {
         box-shadow: 0px 4px 29px rgba(0, 0, 0, 0.25);
     }
