@@ -13,7 +13,7 @@ export const SelfHostedSection: FunctionComponent = () => {
         document.execCommand('copy')
         document.body.removeChild(textArea)
     }
-    
+
     return (
         <div className="self-hosted-section bg-gradient-green-blue" id="self-hosted-section">
             <div className="container">
