@@ -1,3 +1,5 @@
+@import '@styles/colors';
+
 @mixin BgGradientPrimary {
     background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
 }
@@ -27,4 +29,35 @@
 }
 @mixin BgGradientBlue2Blue {
     background: linear-gradient(90deg, $light-blue2 0%, $light-blue 100%);
+}
+
+.bg-gradient-primary {
+    @include BgGradientPrimary;
+}
+.bg-gradient-green-blue {
+    @include BgGradientGreenBlue;
+}
+.bg-gradient-blue-green {
+    @include BgGradientBlueGreen;
+}
+.bg-gradient-blue-purple {
+    @include BgGradientBluePurple;
+}
+.bg-gradient-purple-yellow {
+    @include BgGradientPurpleYellow;
+}
+.bg-gradient-purple-blue2 {
+    @include BgGradientPurpleBlue2;
+}
+.bg-gradient-yellow-green2 {
+    @include BgGradientYellowGreen2;
+}
+.bg-gradient-green2-red {
+    @include BgGradientGreen2Red;
+}
+.bg-gradient-red-blue2 {
+    @include BgGradientRedBlue2;
+}
+.bg-gradient-blue2-blue {
+    @include BgGradientBlue2Blue;
 }

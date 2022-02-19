@@ -285,45 +285,11 @@ table {
 @import 'pages/use-cases';
 @import 'templates/PostTemplate';
 @import 'pages/dev-tools-quiz';
+@import './gradients';
 
 .virtual-br::before {
     content: '\A';
 }
-
-// Gradient backgrounds
-@import './gradients';
-
-.bg-gradient-primary {
-    @include BgGradientPrimary;
-}
-.bg-gradient-green-blue {
-    @include BgGradientGreenBlue;
-}
-.bg-gradient-blue-green {
-    @include BgGradientBlueGreen;
-}
-.bg-gradient-blue-purple {
-    @include BgGradientBluePurple;
-}
-.bg-gradient-purple-yellow {
-    @include BgGradientPurpleYellow;
-}
-.bg-gradient-purple-blue2 {
-    @include BgGradientPurpleBlue2;
-}
-.bg-gradient-yellow-green2 {
-    @include BgGradientYellowGreen2;
-}
-.bg-gradient-green2-red {
-    @include BgGradientGreen2Red;
-}
-.bg-gradient-red-blue2 {
-    @include BgGradientRedBlue2;
-}
-.bg-gradient-blue2-blue {
-    @include BgGradientBlue2Blue;
-}
-// End Gradient Backgrounds
 
 .bg-light-gray {
     background-color: $light-gray-2;
@@ -374,4 +340,11 @@ table {
     margin-bottom: 1rem;
     border: 1px solid var(--border-color);
     max-width: 100%;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
 }
