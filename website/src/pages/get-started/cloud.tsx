@@ -8,7 +8,6 @@ import { BestForTitle } from '.'
 import styles from './getStarted.module.scss'
 
 export const CloudPage: FunctionComponent = props => {
-
     const [navigatedFromProduct, setNavigatedFromProduct] = useState(false)
 
     useEffect(() => {
@@ -22,12 +21,14 @@ export const CloudPage: FunctionComponent = props => {
             location={props.location}
             meta={{
                 title: 'Get Started with Sourcegraph Cloud',
-                description: 
+                description:
                     'Search across your repositories and the open-source universe with Sourcegraph Cloud. No technical setup is required. Sign up for free.',
             }}
             hero={
                 <div className="container-xl py-5">
-                    <h1 className="display-1 mb-2"><strong>What's best for you?</strong></h1>
+                    <h1 className="display-1 mb-2">
+                        <strong>What's best for you?</strong>
+                    </h1>
                     <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
                 </div>
             }
@@ -39,9 +40,7 @@ export const CloudPage: FunctionComponent = props => {
                     <div className="col-lg-6">
                         <div>
                             <DeploymentOptions />
-                            <h1 className="display-2 font-weight-bolder mb-4">
-                                Sourcegraph Cloud
-                            </h1>
+                            <h1 className="display-2 font-weight-bolder mb-4">Sourcegraph Cloud</h1>
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
 
@@ -55,7 +54,6 @@ export const CloudPage: FunctionComponent = props => {
 
                     <div className="col-lg-6">
                         <div className={navigatedFromProduct ? 'd-flex flex-column-reverse' : ''}>
-
                             <div className={`bg-white rounded p-5 ${navigatedFromProduct ? 'mt-5' : 'mb-5'}`}>
                                 <h3 className="mb-3">Search open source code</h3>
                                 <p className="mb-5">No account required.</p>
@@ -133,7 +131,6 @@ export const CloudPage: FunctionComponent = props => {
                                     </a>
                                 </p>
                             </div>
-
                         </div>
                     </div>
                 </div>

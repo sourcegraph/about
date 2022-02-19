@@ -14,7 +14,6 @@ export const DeploymentOptions: FunctionComponent = () => (
     </a>
 )
 
-
 export const SelfHostedPage: FunctionComponent = props => {
     const copyText = () => {
         const copyText = document.getElementById('installText').textContent
@@ -32,11 +31,14 @@ export const SelfHostedPage: FunctionComponent = props => {
             location={props.location}
             meta={{
                 title: 'Get Started with Sourcegraph Self-Hosted',
-                description: 'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
+                description:
+                    'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
             }}
             hero={
                 <div className="container-xl py-5">
-                    <h1 className="display-1 mb-2"><strong>What's best for you?</strong></h1>
+                    <h1 className="display-1 mb-2">
+                        <strong>What's best for you?</strong>
+                    </h1>
                     <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
                 </div>
             }
@@ -50,7 +52,8 @@ export const SelfHostedPage: FunctionComponent = props => {
                             <DeploymentOptions />
 
                             <h1 className="display-2 font-weight-bolder mb-4">
-                                Sourcegraph <br />Self-Hosted
+                                Sourcegraph <br />
+                                Self-Hosted
                                 <MostPopularBadge />
                             </h1>
 
@@ -74,10 +77,7 @@ export const SelfHostedPage: FunctionComponent = props => {
                             <h4>
                                 Install Sourcegraph locally
                                 <span onClick={copyText}>
-                                    <img
-                                        src="/copy-text-icon.svg"
-                                        className="icon-inline ml-4"
-                                    />
+                                    <img src="/copy-text-icon.svg" className="icon-inline ml-4" />
                                 </span>
                             </h4>
                             <code>
@@ -92,7 +92,10 @@ export const SelfHostedPage: FunctionComponent = props => {
                         </div>
 
                         <div className="d-flex flex-column align-items-start">
-                            <a className="btn p-0 my-4 text-primary" href="https://info.sourcegraph.com/talk-to-a-developer">
+                            <a
+                                className="btn p-0 my-4 text-primary"
+                                href="https://info.sourcegraph.com/talk-to-a-developer"
+                            >
                                 Talk to an engineer <ArrowRightIcon />
                             </a>
 
