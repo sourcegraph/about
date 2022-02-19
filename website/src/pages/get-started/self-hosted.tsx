@@ -1,11 +1,21 @@
-import * as React from 'react'
-import Layout from '../../components/Layout'
+import React, { FunctionComponent } from 'react'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
-import styles from './self-hosted.module.scss'
+import Layout from '../../components/Layout'
+import { BestForTitle, MostPopularBadge } from '.'
 
-export const SelfHostedPage: React.FunctionComponent = props => {
+import styles from './getStarted.module.scss'
+
+export const DeploymentOptions: FunctionComponent = () => (
+    <a className="btn p-0 text-uppercase mb-3 font-weight-normal" href="/get-started">
+        <ArrowLeftIcon className="mb-1" />
+        <span className="h6 font-weight-normal ml-3">Deployment Options</span>
+    </a>
+)
+
+
+export const SelfHostedPage: FunctionComponent = props => {
     const copyText = () => {
         const copyText = document.getElementById('installText').textContent
         const textArea = document.createElement('textarea')
@@ -22,29 +32,34 @@ export const SelfHostedPage: React.FunctionComponent = props => {
             location={props.location}
             meta={{
                 title: 'Get Started with Sourcegraph Self-Hosted',
-                description:
-                    'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
+                description: 'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
             }}
-            hideFooter={true}
+            hero={
+                <div className="container-xl py-5">
+                    <h1 className="display-1 mb-2"><strong>What's best for you?</strong></h1>
+                    <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
+                </div>
+            }
+            heroAndHeaderClassName={styles.hero}
             hideGetStartedButton={true}
         >
-            <div className={styles.selfHosted}>
+            <div className={`${styles.root} bg-gradient-blue-purple py-5`}>
                 <div className="row container-xl mx-auto py-5">
-                    <div className="col-lg-6 column">
-                        <div className="original-container">
-                            <a className="btn back-link" href="/get-started">
-                                <ArrowLeftIcon />
-                                <span>Deployment Options</span>
-                            </a>
+                    <div className="col-lg-6">
+                        <div>
+                            <DeploymentOptions />
 
-                            <h1 className="title">Sourcegraph Self-Hosted</h1>
+                            <h1 className="display-2 font-weight-bolder mb-4">
+                                Sourcegraph <br />Self-Hosted
+                                <MostPopularBadge />
+                            </h1>
 
                             <p>
                                 Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
                                 locally. Get started for free.
                             </p>
 
-                            <div className="small-title">Best For</div>
+                            <BestForTitle />
                             <p>Teams and enterprises</p>
 
                             <p>
@@ -54,34 +69,36 @@ export const SelfHostedPage: React.FunctionComponent = props => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 column">
-                        <div className="new-container">
-                            <div className="get-started-page__local">
-                                <div className="get-started-page__installtext" onClick={copyText}>
-                                    <h2 className="get-started-page__search-headings">
-                                        Install Sourcegraph locally
-                                        <span className="get-started-page__copytext">
-                                            <img
-                                                src="/copy-text-icon.svg"
-                                                className="copytext icon-inline ml-1 medium"
-                                            />
-                                        </span>
-                                    </h2>
-                                    <span id="installText">
-                                        docker run <br />
-                                        --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
-                                        --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
-                                        --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                        sourcegraph/server:3.36.3
-                                    </span>
-                                </div>
-                                <a className="btn" href="https://info.sourcegraph.com/talk-to-a-developer">
-                                    Talk to an engineer <ArrowRightIcon />
-                                </a>
-                                <a className="btn" href="https://docs.sourcegraph.com/">
-                                    Deploy to a server or cluster <ArrowRightIcon />
-                                </a>
-                            </div>
+                    <div className="col-lg-6">
+                        <div className="bg-white p-5">
+                            <h4>
+                                Install Sourcegraph locally
+                                <span onClick={copyText}>
+                                    <img
+                                        src="/copy-text-icon.svg"
+                                        className="icon-inline ml-4"
+                                    />
+                                </span>
+                            </h4>
+                            <code>
+                                <small id="installText">
+                                    docker run <br />
+                                    --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
+                                    --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
+                                    --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
+                                    sourcegraph/server:3.36.3
+                                </small>
+                            </code>
+                        </div>
+
+                        <div className="d-flex flex-column align-items-start">
+                            <a className="btn p-0 my-4 text-primary" href="https://info.sourcegraph.com/talk-to-a-developer">
+                                Talk to an engineer <ArrowRightIcon />
+                            </a>
+
+                            <a className="btn p-0 text-primary" href="https://docs.sourcegraph.com/">
+                                Deploy to a server or cluster <ArrowRightIcon />
+                            </a>
                         </div>
                     </div>
                 </div>
