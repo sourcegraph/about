@@ -39,7 +39,7 @@ The symbols sidebar also got a significant performance boost. Previously, the sy
 
 ## Share Notebooks with your organization
 
-Notebooks are now shareable within organizations. Previously, you could only share Notebooks with your entire instance (or share them publicly, in the case of Sourcegraph Cloud). This update allows you to create Notebooks with specific relevance to your organization, such as documentation of preferred engineering patterns or anti-patterns. Organizations' shared notebooks will now show up in their own tabs on the [Notebooks home page](https://sourcegraph.com/notebooks).
+Notebooks are now shareable within organizations. Previously, you could only share Notebooks with your entire instance (or share them publicly, in the case of Sourcegraph Cloud). This update allows you to create Notebooks with specific relevance to your organization, such as documentation of preferred engineering patterns or anti-patterns. Your organization's shared Notebooks will now show up in their own tabs on the [Notebooks home page](https://sourcegraph.com/notebooks).
 
 <img class="blog-image" title="Notebooks sharing" alt="Image of Notebooks sharing modal." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/notebooks/notebook_sharing.png">
 
