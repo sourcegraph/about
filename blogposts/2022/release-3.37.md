@@ -47,9 +47,9 @@ Notebooks are now shareable within organizations. Previously, you could only sha
 
 <img class="blog-image" title="Notebooks sharing" alt="Image of Notebooks sharing modal." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/notebooks/notebook_sharing.png">
 
-## Import and export
+## Import and export Notebooks as markdown
 
-Notebooks can now be created by uploading a markdown file and can also be exported to a markdown file.
+Notebooks can now be created by uploading a markdown file, so if you're already working with markdown documentation files, you can simply upload those files to add Sourcegraph snippets and turn them into full-fledged Notebooks. You can also export Notebooks to markdown, allowing you to turn Sourcegraph Notebooks into repo-based markdown files.
 
 ## Create search contexts with the new UI
 
