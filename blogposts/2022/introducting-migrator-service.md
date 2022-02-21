@@ -125,7 +125,7 @@ The second observation implies that we never actually check the _error message_ 
 
 With a new theory in hand, we can finally attack the problem in a focused manner.
 
-We changed the migration process to gracefully deal with concurrent index creation by dropping the advisory lock and instead coordinating with concurrent migration attempts within the Postgres catalog itself. Of particular interest is the `pg_stat_progress_create_index` system view, which [reports index creation progress](https://www.postgresql.org/docs/12/progress-reporting.html). The migrator is also intelligent enough to detect invalid indexes and repair them rather than flagging a human to hold its hand.
+We changed the migration process to gracefully deal with concurrent index creation by dropping the advisory lock and instead coordinating with concurrent migration attempts within the PostgreSQL catalog itself. Of particular interest is the `pg_stat_progress_create_index` system view, which [reports index creation progress](https://www.postgresql.org/docs/12/progress-reporting.html). The migrator is also intelligent enough to detect invalid indexes and repair them rather than flagging a human to hold its hand.
 
 After another round of testing, migrations finally behave according to intuition.
 
