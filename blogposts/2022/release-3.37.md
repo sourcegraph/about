@@ -14,9 +14,6 @@ changelogItems:
   - description: 'Query-based search contexts are now enabled by default as a beta feature, making it easier to scope queries for monorepos or large codebases.'
     url: https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts
     category: Search
-  - description: 'Search Notebooks now support importing and exporting Markdown-formatted files.'
-    url: https://github.com/sourcegraph/sourcegraph/issues/28586
-    category: Search
   - description: 'GraphQL API: The order of events returned by `MonitorTriggerEventConnection` has been reversed so newer events are returned first. The `after` parameter has been modified accordingly to return events older the one specified, to allow for pagination. TODO'
     url: https://github.com/sourcegraph/sourcegraph/pull/
     category: API
@@ -26,9 +23,6 @@ changelogItems:
   - description: 'Fixed performance issue in LSIF upload processing, reducing the latency between uploading an LSIF index and accessing precise Code Intelligence in the UI.'
     url: https://github.com/sourcegraph/sourcegraph/pull/31143
     category: Code Intelligence
-  - description: 'Removed `experimentalFeature.showCodeMonitoringTestEmailButton`. Test emails can still be sent by editing the code monitor and expanding the "Send email notification" section.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/29953
-    category: Code Monitors
 ---
 
 Sourcegraph 3.37 is now available! For this release, we introduced:
