@@ -11,7 +11,7 @@ changelogItems:
   - description: "Code in search results is now selectable (e.g. for copying). Just clicking on the code continues to open the corresponding file as it did before."
     url: https://github.com/sourcegraph/sourcegraph/pull/30033
     category: Search
- - description: "Query-based search contexts are now enabled by default as a beta feature, making it easier to scope queries for monorepos or large codebases."
+  - description: "Query-based search contexts are now enabled by default as a beta feature, making it easier to scope queries for monorepos or large codebases."
     url: https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts
     category: Search
   - description: "Search Notebooks now support importing and exporting Markdown-formatted files."
