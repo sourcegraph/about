@@ -41,6 +41,8 @@ LSIF index processing just got a whole lot faster, so you can upload your indexe
 
 The symbols sidebar also got a significant performance boost. Previously, the symbols sidebar would search for symbols in the whole directory tree even if you were only looking at a subdirectory or file, which would cause it to time out and show an error message on big monorepos. Now prefix queries like `^src/app` are better optimized and subdirectory searches are much faster and less likely to time out.
 
+<img class="blog-image" title="Symbol's sidebar improvement" alt="Comparative chart before and after symbol improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/symbols-sidebar-improvement.png">
+
 ## Share Notebooks with your organization
 
 Notebooks are now shareable within organizations. Previously, you could only share Notebooks with your entire instance (or share them publicly, in the case of Sourcegraph Cloud). This update allows you to create Notebooks with specific relevance to your organization, such as documentation of preferred engineering patterns or anti-patterns. Organizations' shared notebooks will now show up in their own tabs on the [Notebooks home page](https://sourcegraph.com/notebooks).
