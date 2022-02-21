@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 3.37 release'
 publishDate: 2022-02-22T10:00-07:00
-description: 'Sourcegraph 3.37 introduces performance improvements for Code Intellgience, sharing functionality for Notebooks, and a new UI for creating search contexts.'
+description: 'Sourcegraph 3.37 introduces performance improvements for Code Intelligence, sharing for Notebooks, and a new UI for creating search contexts.'
 tags: [blog, release]
 slug: 'release/3.37'
 published: false
@@ -20,7 +20,7 @@ changelogItems:
   - description: 'GraphQL API: The order of events returned by `MonitorTriggerEventConnection` has been reversed so newer events are returned first. The `after` parameter has been modified accordingly to return events older the one specified, to allow for pagination. TODO'
     url: https://github.com/sourcegraph/sourcegraph/pull/
     category: API
-  - description: Fixed a race condition in the precise code intel upload expirer process that prematurely expired new uploads.
+  - description: Fixed a race condition in the precise code intel upload expiry process that prematurely expired new uploads.
     url: https://github.com/sourcegraph/sourcegraph/pull/30546
     category: Code Intelligence
   - description: 'Fixed performance issue in LSIF upload processing, reducing the latency between uploading an LSIF index and accessing precise code intel in the UI.'
@@ -35,7 +35,7 @@ Sourcegraph 3.37 is now available! For this release, we introduced:
 
 ## Code intelligence just got a whole lot faster
 
-We're pleased to announce that LSIF index processing and the symbols sidebar just got a whole lot faster! Earlier, certain LSIF indexes, especially for Javascript and Typescript, could take over 30 minutes to process. This meant that a long queue would build up with frequent uploads, such as those from a CI job that runs on every commit on a development branch. Now, most indexes should be processed in a few seconds instead of minutes so that you can access precise code intelligence soon after uploading an index.
+We're pleased to announce that LSIF index processing just got a whole lot faster! Earlier, certain LSIF indexes, especially for Javascript and Typescript, could take over 30 minutes to process. This meant that a long queue would build up with frequent uploads, such as those from a CI job that runs on every commit on a development branch. Now, most indexes should be processed in a few seconds instead of minutes so that you can access precise code intelligence soon after uploading an index.
 
 <img class="blog-image" title="LSIF upload speedup" alt="Comparative chart before and after processing improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/lsif-upload-speedup.png">
 
@@ -43,7 +43,7 @@ The symbols sidebar also got a significant performance boost. Previously, the sy
 
 ## Share Notebooks with your organization
 
-Notebooks are now shareable within Sourcegraph organizations. Previously, you could only share Notebooks with your entire instance (or share them publicly in the case of Sourcegraph Cloud). This update allows you to create Notebooks for organizational knowledge within your team, such as documentation of preferred engineering patterns or anti-patterns. Organizations' shared notebooks will now show up in their own tabs on the [Notebooks home page](https://sourcegraph.com/notebooks).
+Notebooks are now shareable within organizations. Previously, you could only share Notebooks with your entire instance (or share them publicly, in the case of Sourcegraph Cloud). This update allows you to create Notebooks with specific relevance to your organization, such as documentation of preferred engineering patterns or anti-patterns. Organizations' shared notebooks will now show up in their own tabs on the [Notebooks home page](https://sourcegraph.com/notebooks).
 
 <img class="blog-image" title="Notebooks sharing" alt="Image of Notebooks sharing modal." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/notebooks/notebook_sharing.png">
 
