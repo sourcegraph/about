@@ -109,7 +109,7 @@ LOCATION:  DeadLockReport, deadlock.c:1153
 Time: 1107.901 ms (00:01.108)
 ```
 
-After a second or so, the Postgres deadlock detector kicks in, notices two processes vying for each other's locks, and cancels the deadlocked index creation operation. This error is a bit dense, but states that the index creation operation is waiting for **Process B**'s attempt to acquire the advisory lock to finish, but the advisory lock acquisition is blocked on **Process A**'s ownership of that lock.
+After a second or so, the PostgreSQL deadlock detector kicks in, notices two processes vying for each other's locks, and cancels the deadlocked index creation operation. This error is a bit dense, but states that the index creation operation is waiting for **Process B**'s attempt to acquire the advisory lock to finish, but the advisory lock acquisition is blocked on **Process A**'s ownership of that lock.
 
 Concurrent index creation failures are also a particularly nasty failure mode, because they leave the database with a _partially created_ index that exists in the system catalog but is accessible to reads or writes. To resolve this database state, the invalid index has to be dropped and re-created. This is an easy step to forget because you need to do it manually, and forgetting the step can have severe performance penalties if you don't detect it.
 
