@@ -141,7 +141,7 @@ We've updated several documentation pages which are worth a look for existing si
 
 - [How to run `migrator` operations](https://docs.sourcegraph.com/admin/how-to/manual_database_migrations)
 - [How to troubleshoot a dirty database](https://docs.sourcegraph.com/admin/how-to/dirty_database) (replacing the [legacy documentation](https://docs.sourcegraph.com/admin/how-to/dirty_database_pre_3_37))
-- [Rolling back a Postgres database](https://docs.sourcegraph.com/admin/how-to/rollback_database)
+- [Rolling back a PostgresSQL database](https://docs.sourcegraph.com/admin/how-to/rollback_database)
 
 We are open source! Check out some of the higher-scope code changes that made this change possible:
 
