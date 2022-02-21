@@ -14,8 +14,8 @@ changelogItems:
   - description: 'Query-based search contexts are now enabled by default as a beta feature, making it easier to scope queries for monorepos or large codebases.'
     url: https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts
     category: Search
-  - description: 'GraphQL API: The order of events returned by `MonitorTriggerEventConnection` has been reversed so newer events are returned first. The `after` parameter has been modified accordingly to return events older the one specified, to allow for pagination. TODO'
-    url: https://github.com/sourcegraph/sourcegraph/pull/
+  - description: 'GraphQL API: The order of events returned by `MonitorTriggerEventConnection` has been reversed so newer events are returned first. The `after` parameter has been modified accordingly to return events older the one specified, to allow for pagination.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/31219
     category: API
   - description: Fixed a race condition in the precise Code Intelligence upload expiry process that prematurely expired new uploads.
     url: https://github.com/sourcegraph/sourcegraph/pull/30546
