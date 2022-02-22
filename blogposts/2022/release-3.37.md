@@ -56,3 +56,7 @@ The search contexts creation UI has received visual tweaks, making it easier to 
 <div style="text-align:center">
 <img class="blog-image" title="Search contexts type selection" alt="Screenshot of search contexts configuration UI." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/search_contexts/select_context_type.png">
 </div>
+
+## Upgrading Sourcegraph is now easier with the new migrator service
+
+Previously, failed database migrations were a common cause of pain when upgrading Sourcegraph. We've introduced a new `migrator` service and made several changes to make these database failures far less common. [You can read more here](https://about.sourcegraph.com/blog/introducing-migrator-service/).
