@@ -5,7 +5,7 @@
             // Fallback while the SVGs are loading
             radial-gradient(ellipse at bottom right, rgba($blue-mist, 0.5), transparent),
             radial-gradient(ellipse at bottom left, rgba($light-green2, 0.5), transparent);
-        background-repeat: no-repeat, no-repeat;
+        background-repeat: no-repeat;
         background-position: center right, top left;
         background-size: cover;
 
