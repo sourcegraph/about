@@ -1,5 +1,5 @@
 ---
-title: 'Introducing the migrator service'
+title: 'Broken database migrations: How we finally fixed an embarrassing problem'
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
 publishDate: 2022-02-15T12:00-00:00
