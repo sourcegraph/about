@@ -366,7 +366,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">
                         Engineering leadership with superpowers
                     </h2>
-                    <p className="w-100 text-center">
+                    <p className="icon-subheader w-100 text-center">
                         Code Insights provides reliable real-time reporting directly from the codebase, making
                         engineering leaders and their teams more effective.
                     </p>
