@@ -38,7 +38,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             <div
                 className={
                     carouselHook.autoAdvance
-                        ? 'col-md-2 m-0 my-lg-3 my-5 col-lg-5'
+                        ? 'col-md-2 m-0 px-0 my-lg-3 my-5 col-lg-5'
                         : 'carousel-nav ml-lg-7 col-lg-4 ml-md-5'
                 }
             >
@@ -75,7 +75,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     }
                 />
             </div>
-            <div className="col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6">
+            <div className="col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6 px-0">
                 {carouselItems.map(item => (
                     <div
                         key={item.id}
