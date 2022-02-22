@@ -4,7 +4,7 @@ publishDate: 2022-02-22T10:00-07:00
 description: 'Sourcegraph 3.37 introduces performance improvements for Code Intelligence, sharing for Notebooks, and a new UI for creating search contexts.'
 tags: [blog, release]
 slug: 'release/3.37'
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.37/sourcegraph-3-37-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.37/sourcegraph-3-37-release.png
 changelogItems:
