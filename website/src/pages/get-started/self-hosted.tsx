@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { Link } from 'gatsby'
+import { Link, PageProps } from 'gatsby'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
@@ -8,14 +8,17 @@ import { BestForTitle, MostPopularBadge } from '.'
 
 import styles from './getStarted.module.scss'
 
-export const DeploymentOptions: FunctionComponent = () => (
-    <Link className="btn p-0 text-uppercase mb-3 font-weight-normal" to="/get-started">
+export const BackButton: FunctionComponent<{search: string}> = ({search}) => (
+    <Link
+        className="btn p-0 text-uppercase mb-3 font-weight-normal"
+        to={`/get-started${search}`}
+    >
         <ArrowLeftIcon className="mb-1" />
         <span className="h6 font-weight-normal ml-3">Deployment Options</span>
     </Link>
 )
 
-export const SelfHostedPage: FunctionComponent = props => {
+export const SelfHostedPage: FunctionComponent<PageProps> = props => {
     const copyText = () => {
         const copyText = document.getElementById('installText').textContent
         const textArea = document.createElement('textarea')
@@ -25,7 +28,7 @@ export const SelfHostedPage: FunctionComponent = props => {
         textArea.select()
         document.execCommand('copy')
         document.body.removeChild(textArea)
-    }
+    }    
 
     return (
         <Layout
@@ -50,7 +53,7 @@ export const SelfHostedPage: FunctionComponent = props => {
                 <div className="row container-xl mx-auto py-5">
                     <div className="col-lg-6">
                         <div>
-                            <DeploymentOptions />
+                            <BackButton search={props.location.search} />
 
                             <h1 className="display-2 font-weight-bolder mb-4">
                                 Sourcegraph <br />

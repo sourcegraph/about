@@ -1,14 +1,14 @@
 import React, { FunctionComponent, useEffect, useState } from 'react'
-import { Link } from 'gatsby'
+import { Link, PageProps } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
-import { DeploymentOptions } from './self-hosted'
+import { BackButton } from './self-hosted'
 import { BestForTitle } from '.'
 
 import styles from './getStarted.module.scss'
 
-export const CloudPage: FunctionComponent = props => {
+export const CloudPage: FunctionComponent<PageProps> = props => {
     const [navigatedFromProduct, setNavigatedFromProduct] = useState(false)
 
     useEffect(() => {
@@ -40,7 +40,8 @@ export const CloudPage: FunctionComponent = props => {
                 <div className="row container-xl mx-auto py-5">
                     <div className="col-lg-6">
                         <div>
-                            <DeploymentOptions />
+                            <BackButton search={props.location.search} />
+                            
                             <h1 className="display-2 font-weight-bolder mb-4">Sourcegraph Cloud</h1>
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
