@@ -302,7 +302,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </div>
         }
     >
-        <ContentSection>
+        <ContentSection className="py-lg-5">
             <div className="row">
                 {/* Placeholder */}
                 <div className="col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-6 my-lg-7">
@@ -341,12 +341,12 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         <p className="font-weight-bold display-3">Trusted by engineering teams worldwide</p>
                     </div>
                     <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
-                        <h3 className="font-weight-normal">
+                        <h4 className="font-weight-normal">
                             &ldquo;As we've grown, so has the need to better track and communicate our progress and
                             goals across the engineering team and broader company. With Code Insights, our data and
                             migration tracking is accurate across our entire codebase, and our engineers and managers
                             can shift out of manual spreadsheets and spend more time working on code.&rdquo;
-                        </h3>
+                        </h4>
                         <div className="pt-3 text-muted text-center">
                             &mdash; Balázs Tóthfalussy, Engineering Manager, Prezir
                         </div>
@@ -539,7 +539,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
 
         <div className="bg-light-gray">
             <ContentSection>
-                <div className="row d-flex flex-column justify-content-start py-7">
+                <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
                     <div className="col-lg-8 d-flex flex-column justify-content-start">
                         <h1 className="font-weight-bold">Get started with Code Insights</h1>
                         <p>

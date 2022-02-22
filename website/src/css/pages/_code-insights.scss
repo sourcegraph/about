@@ -85,7 +85,7 @@
             cursor: pointer;
             color: $sg-space-black;
             display: block;
-            margin: 20px 0 0 10px;
+            margin: 10px 0 10px 10px;
             font-size: 18px;
 
             &.active {
@@ -95,7 +95,7 @@
 
             @media only screen and (max-width: 768px) {
                 padding: 0;
-                margin: 10px 0;
+                margin: 20px 0;
                 display: none;
                 font-size: 36px;
                 line-height: 2.5rem;
