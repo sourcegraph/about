@@ -27,7 +27,7 @@ changelogItems:
 
 Sourcegraph 3.37 is now available! For this release, we introduced:
 
-## Code Intelligence LSIF indexing time has been reduced over 90%
+## Code Intelligence LSIF indexing time has improved 30x (from 15m to 30s)
 
 LSIF index processing just got a whole lot faster, so you can upload your indexes and start utilizing precise Code Intelligence immediately. Previously, certain LSIF indexes, especially for Javascript and Typescript, could take over 30 minutes to process. This meant that a long queue would build up with frequent uploads, such as those from a CI job that runs on every commit on a development branch. Now, most indexes should be processed in a few seconds instead of minutes so that you can access precise Code Intelligence soon after uploading an index.
 
