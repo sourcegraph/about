@@ -132,7 +132,7 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
     codeInsightsTrial: {
         label: 'Code Insights (limited trial)',
         description: `Track and visualize trends in your entire codebase — with visualizations that are kept automatically up to date 
-        (limited to maximum of two global code insights insights without a license).`,
+        (limited to maximum of two global insights without a license).`,
     },
 }
 
