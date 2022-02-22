@@ -144,7 +144,7 @@ We've updated several documentation pages which are worth a look for existing si
 - [How to troubleshoot a dirty database](https://docs.sourcegraph.com/admin/how-to/dirty_database) (replacing the [legacy documentation](https://docs.sourcegraph.com/admin/how-to/dirty_database_pre_3_37))
 - [Rolling back a PostgresSQL database](https://docs.sourcegraph.com/admin/how-to/rollback_database)
 
-We are open source! Check out some of the higher-scope code changes that made this change possible:
+Check out some of the higher-scope code changes that made this change possible:
 
 - [experiment: non-sequential migrations (_#29831_)](https://github.com/sourcegraph/sourcegraph/pull/29831)
 - [migrations: Poll for advisory locks in the runner (_#30602_)](https://github.com/sourcegraph/sourcegraph/pull/30602)
