@@ -275,10 +275,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             and more with visualizations that are easy to customize and kept automatically up to date.
                         </p>
                         <div className="pt-1">
-                            <a
-                                className="d-flex align-items-center"
-                                href="https://docs.sourcegraph.com/code_intelligence"
-                            >
+                            <a className="d-flex align-items-center" href="/code-insights">
                                 Learn more about Code Insights <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </div>
