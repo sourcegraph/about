@@ -2,11 +2,9 @@
 title: 'Broken database migrations: How we finally fixed an embarrassing problem'
 author: Eric Fritz
 authorUrl: https://eric-fritz.com
-publishDate: 2022-02-15T12:00-00:00
+publishDate: 2022-02-22T12:00-00:00
 tags: [blog]
 slug: introducing-migrator-service
-heroImage:
-socialImage:
 published: true
 description: |
   Upgrades of Sourcegraph instances would often fail with a dreaded "dirty database" error, leaving the the instance in a broken state that required manual intervention to resolve. Here's how we identified and solved a huge source of pain during upgrades for administrators.
