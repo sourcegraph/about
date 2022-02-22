@@ -37,7 +37,7 @@ const items = [
     {
         id: 1,
         backgroundClass: '',
-        buttonLabel: 'Delete and track versions of languages or packages',
+        buttonLabel: 'Detect and track versions of languages or packages',
         text: (
             <CodeInsightExample
                 type={CodeInsightExampleType.Capture}
@@ -53,7 +53,7 @@ const items = [
 const templates = {
     migrations: [
         {
-            header: 'CSS modules',
+            header: 'Global CSS to CSS modules',
             description: 'Tracking migration from global CSS to CSS modules.',
             queries: [
                 <>
@@ -344,7 +344,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                 <div className="row d-flex text-center justify-content-center px-lg-7 py-6">
                     <div className="w-100">
                         <p className="font-weight-bold display-3">
-                            Trusted by leading engineering teams around the world
+                            Trusted by engineering teams worldwide
                         </p>
                     </div>
                     <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">

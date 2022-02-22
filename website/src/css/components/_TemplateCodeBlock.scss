@@ -11,11 +11,13 @@
 
     .template {
         background-color: $white;
-        min-height: 220px;
     }
 
     .code {
         background-color: $light-11;
+        font-family: sfmono-regular, consolas, menlo, dejavu sans mono, monospace;
+        font-size: 11px;
+        border: 1px solid #dfe2e6;
     }
 
     .keyword {
