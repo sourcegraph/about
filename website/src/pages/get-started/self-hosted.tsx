@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react'
+import { Link } from 'gatsby'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
@@ -8,10 +9,10 @@ import { BestForTitle, MostPopularBadge } from '.'
 import styles from './getStarted.module.scss'
 
 export const DeploymentOptions: FunctionComponent = () => (
-    <a className="btn p-0 text-uppercase mb-3 font-weight-normal" href="/get-started">
+    <Link className="btn p-0 text-uppercase mb-3 font-weight-normal" to="/get-started">
         <ArrowLeftIcon className="mb-1" />
         <span className="h6 font-weight-normal ml-3">Deployment Options</span>
-    </a>
+    </Link>
 )
 
 export const SelfHostedPage: FunctionComponent = props => {

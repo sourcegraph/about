@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react'
+import { Link } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
@@ -16,9 +17,9 @@ export const BestForTitle: FunctionComponent = () => (
 )
 
 export const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
-    <a className="btn btn-primary my-2" href={href}>
+    <Link className="btn btn-primary my-2" to={href}>
         Get started for free <ArrowRightIcon />
-    </a>
+    </Link>
 )
 
 export const GetStartedPage: FunctionComponent = props => (

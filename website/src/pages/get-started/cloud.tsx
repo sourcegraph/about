@@ -1,4 +1,5 @@
 import React, { FunctionComponent, useEffect, useState } from 'react'
+import { Link } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
@@ -107,13 +108,13 @@ export const CloudPage: FunctionComponent = props => {
                                 <p className="my-3">
                                     <small>
                                         By registering, you agree to our{' '}
-                                        <a href="/terms" className="text-reset text-black text-decoration-underline">
+                                        <Link to="/terms" className="text-reset text-black text-decoration-underline">
                                             Terms of Service
-                                        </a>{' '}
+                                        </Link>{' '}
                                         and{' '}
-                                        <a href="/privacy" className="text-reset text-black text-decoration-underline">
+                                        <Link to="/privacy" className="text-reset text-black text-decoration-underline">
                                             Privacy Policy
-                                        </a>
+                                        </Link>
                                         .
                                     </small>
                                 </p>
