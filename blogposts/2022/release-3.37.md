@@ -14,7 +14,7 @@ changelogItems:
   - description: 'Query-based search contexts are now enabled by default as a beta feature, making it easier to scope queries for monorepos or large codebases.'
     url: https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts
     category: Search
-  - description: 'GraphQL API: The order of events returned by `MonitorTriggerEventConnection` has been reversed so newer events are returned first. The `after` parameter has been modified accordingly to return events older the one specified, to allow for pagination.'
+  - description: 'GraphQL API: The order of events returned by `MonitorTriggerEventConnection` has been reversed so newer events are returned first. The `after` parameter has been modified accordingly to return events older than the one specified, to allow for pagination.'
     url: https://github.com/sourcegraph/sourcegraph/pull/31219
     category: API
   - description: Fixed a race condition in the precise Code Intelligence upload expiry process that prematurely expired new uploads.
@@ -33,7 +33,7 @@ LSIF index processing just got a whole lot faster, so you can upload your indexe
 
 <img class="blog-image" title="LSIF upload speedup" alt="Comparative chart before and after processing improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/lsif-upload-speedup.png">
 
-The symbols sidebar also got a significant performance boost. Previously, the symbols sidebar would search for symbols in the whole directory tree even if you were only looking at a subdirectory or file, which would cause it to time out and show an error message on big monorepos. Now prefix queries like `^src/app` are better optimized and subdirectory searches are much faster and less likely to time out.
+The symbols sidebar also got a significant performance boost. Previously, the symbols sidebar would search for symbols in the whole directory tree, even if you were only looking at a subdirectory or file, which would cause it to time out and show an error message on big monorepos. Now prefix queries like `^src/app` are better optimized and subdirectory searches are much faster and less likely to time out.
 
 <img class="blog-image" title="Symbol's sidebar improvement" alt="Comparative chart before and after symbol improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/symbols-sidebar-improvement.png">
 
@@ -41,14 +41,18 @@ The symbols sidebar also got a significant performance boost. Previously, the sy
 
 Notebooks are now shareable within organizations. Previously, you could only share Notebooks with your entire instance (or share them publicly, in the case of Sourcegraph Cloud). This update allows you to create Notebooks with specific relevance to your organization, such as documentation of preferred engineering patterns or anti-patterns. Your organization's shared Notebooks will now show up in their own tabs on the [Notebooks home page](https://sourcegraph.com/notebooks).
 
+<div style="text-align:center">
 <img class="blog-image" title="Notebooks sharing" alt="Image of Notebooks sharing modal." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/notebooks/notebook_sharing.png">
+</div>
 
-## Import and export Notebooks as markdown
+## Import and export Notebooks as Markdown
 
-Notebooks can now be created by uploading a markdown file, so if you're already working with markdown documentation files, you can simply upload those files to add Sourcegraph snippets and turn them into full-fledged Notebooks. You can also export Notebooks to markdown, allowing you to turn Sourcegraph Notebooks into repo-based markdown files.
+Notebooks can now be created by uploading a Markdown file, so if you're already working with Markdown documentation files, you can simply upload those files to add Sourcegraph snippets and turn them into full-fledged Notebooks. You can also export Notebooks to Markdown, allowing you to turn Sourcegraph Notebooks into repo-based Markdown files.
 
 ## Create search contexts with the new UI
 
 The search contexts creation UI has received visual tweaks, making it easier to understand if you're using search queries or JSON to define your contexts. We've also added guidance on valid expressions for query-based contexts to make the creation process clearer.
 
+<div style="text-align:center">
 <img class="blog-image" title="Search contexts type selection" alt="Screenshot of search contexts configuration UI." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/search_contexts/select_context_type.png">
+</div>
