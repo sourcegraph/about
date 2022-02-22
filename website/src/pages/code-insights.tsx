@@ -261,7 +261,7 @@ const blogListItems = [
         description: 'Learn everything you need to know about Code Insights.',
         type: 'Docs',
         image: 'https://sourcegraphstatic.com/blog/indexing-the-oss-universe-update.png',
-        href: 'https://docs.sourcegraph.com',
+        href: 'https://docs.sourcegraph.com/code_insights',
     },
 ]
 
@@ -482,7 +482,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                 <div className="w-100 d-flex justify-content-center">
                     <a
                         className="btn btn-link px-0 py-4 col-7 docs-cta font-weight-bold"
-                        href="https://docs.sourcegraph.com/batch_changes"
+                        href="https://docs.sourcegraph.com/code_insights"
                         title="Code Insights on docs."
                     >
                         See Docs for more use cases
