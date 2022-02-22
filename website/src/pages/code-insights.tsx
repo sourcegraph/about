@@ -360,7 +360,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray">
+        <div className="bg-light-gray2">
             <ContentSection className="py-7">
                 <div className="d-flex flex-wrap">
                     <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">
@@ -415,7 +415,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         </div>
 
         {/* Demo */}
-        <ContentSection className="py-4 py-md-7">
+        <ContentSection className="py-7">
             <h1 className="mb-3 text-center font-weight-bold">See Code Insights in action</h1>
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-8 container video-embed embed-responsive embed-responsive-16by9 ">
@@ -537,7 +537,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray">
+        <div className="bg-light-gray2">
             <ContentSection>
                 <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
                     <div className="col-lg-8 d-flex flex-column justify-content-start">
@@ -560,7 +560,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <ContentSection>
+        <ContentSection className="py-lg-7 py-5">
             <div className="row d-flex">
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Learn more</h1>
