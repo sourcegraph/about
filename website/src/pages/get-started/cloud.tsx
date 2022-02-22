@@ -41,7 +41,7 @@ export const CloudPage: FunctionComponent<PageProps> = props => {
                     <div className="col-lg-6">
                         <div>
                             <BackButton search={props.location.search} />
-                            
+
                             <h1 className="display-2 font-weight-bolder mb-4">Sourcegraph Cloud</h1>
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>

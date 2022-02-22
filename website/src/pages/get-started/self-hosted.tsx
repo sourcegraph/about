@@ -8,11 +8,8 @@ import { BestForTitle, MostPopularBadge } from '.'
 
 import styles from './getStarted.module.scss'
 
-export const BackButton: FunctionComponent<{search: string}> = ({search}) => (
-    <Link
-        className="btn p-0 text-uppercase mb-3 font-weight-normal"
-        to={`/get-started${search}`}
-    >
+export const BackButton: FunctionComponent<{ search: string }> = ({ search }) => (
+    <Link className="btn p-0 text-uppercase mb-3 font-weight-normal" to={`/get-started${search}`}>
         <ArrowLeftIcon className="mb-1" />
         <span className="h6 font-weight-normal ml-3">Deployment Options</span>
     </Link>
@@ -28,7 +25,7 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => {
         textArea.select()
         document.execCommand('copy')
         document.body.removeChild(textArea)
-    }    
+    }
 
     return (
         <Layout
