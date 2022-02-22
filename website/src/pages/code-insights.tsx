@@ -296,13 +296,6 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             >
                                 Request a demo
                             </Link>
-                            <a
-                                className="btn btn-link px-0 py-4 text-left col-7"
-                                href="https://docs.sourcegraph.com/admin/install/docker-compose#installation"
-                                title="Get started with Code Insights."
-                            >
-                                Try it on Sourcegraph via Docker Compose
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -562,13 +555,6 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         >
                             Request a demo
                         </Link>
-                        <a
-                            className="btn btn-link px-0 py-4 text-left col-7"
-                            href="https://docs.sourcegraph.com/admin/install/docker-compose#installation"
-                            title="Get started with Code Insights."
-                        >
-                            Try it on Sourcegraph via Docker Compose
-                        </a>
                     </div>
                 </div>
             </ContentSection>

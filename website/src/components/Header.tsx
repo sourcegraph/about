@@ -97,10 +97,10 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     <NavDropdown onToggle={val => this.dropdownToggle(val)} title="Product">
                                         <NavDropdown.Item href="/code-search">Code Search</NavDropdown.Item>
                                         <NavDropdown.Item href="/batch-changes">Batch Changes</NavDropdown.Item>
+                                        <NavDropdown.Item href="/code-insights">Code Insights</NavDropdown.Item>
                                         <NavDropdown.Item href="https://docs.sourcegraph.com/code_intelligence">
                                             Code Intelligence
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item href="/code-insights">Code Insights</NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title="Resources" onToggle={this.dropdownToggle}>
                                         <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
@@ -184,12 +184,12 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                     <a href="/batch-changes">Batch Changes</a>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
+                                                    <a href="/code-insights">Code Insights</a>
+                                                </li>
+                                                <li className="nav-link" role="presentation">
                                                     <a href="https://docs.sourcegraph.com/code_intelligence">
                                                         Code Intelligence
                                                     </a>
-                                                </li>
-                                                <li className="nav-link" role="presentation">
-                                                    <a href="/code-insights">Code Insights</a>
                                                 </li>
                                             </ul>
                                         </li>
