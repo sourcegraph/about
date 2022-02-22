@@ -243,15 +243,15 @@ const templates = {
 
 const blogListItems = [
     {
-        title: 'How I use the Sourcegraph extension for VS Code',
+        title: 'The new way with Code Insights',
         description: 'Explore why we built this in the announcement post.',
         type: 'Blog',
         image: 'https://sourcegraphstatic.com/blog/vs-code-extension/sourcegraph-vs-code-extension.png',
         href: '/blog/ways-to-use-sourcegraph-extension-for-vs-code',
     },
     {
-        title: `Redefining the OSS universe: Why we're broadening our index to include more code hosts`,
-        description: 'Sourcegraph Engineering’s take on everything Code Insights.',
+        title: 'Under the hood of Code Insights',
+        description: `Sourcegraph Engineering's take on everything Code Insights.`,
         type: 'Blog',
         image: 'https://sourcegraphstatic.com/blog/indexing-the-oss-universe-update.png',
         href: '/blog/indexing-the-oss-universe-update-more-code-hosts',
@@ -285,8 +285,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             Track what really matters to you and your team.
                         </h1>
                         <h4 className="mb-6">
-                            Effortlessly track and visualize trends in your entire codebase — kept automatically up to
-                            date.
+                            Transform your code into a queryable database to create customizable, visual dashboards in seconds.
                         </h4>
                         <div className="d-flex flex-column pt-1">
                             <Link
@@ -324,14 +323,13 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                 </div>
                 <div className="col-lg-5 my-7">
                     <h2 className="mb-3 font-weight-bold">
-                        Finally, useful engineering metrics that <span style={{ fontStyle: 'italic' }}>you</span> get to
-                        define.
+                        Finally, useful engineering metrics <span style={{ fontStyle: 'italic' }}>you</span>{' '}define.
                     </h2>
                     <p>
-                        Forget about inaccurate spreadsheets, manual processes, and missing historical data. Now, you
-                        can track everything in your codebase, from migrations to code smells, in a seamless and precise
-                        way. We've combined the power and accuracy of Sourcegraph Code Search with beautiful
-                        visualizations so you can make truly data-driven decisions.
+                        Forget about inaccurate spreadsheets, manual processes, and missing historical data. You
+                        can <strong>track everything in your codebase</strong>, from migrations to code smells, 
+                        in a seamless and precise way. We've combined the <strong>power and accuracy of Sourcegraph 
+                        Code Search </strong>with beautiful visualizations so you can make data-driven decisions.
                     </p>
                 </div>
             </div>
@@ -351,11 +349,12 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     </div>
                     <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
                         <h3 className="font-weight-normal">
-                            &ldquo;Code insights enables our team to move away from manual spreadsheets and
-                            point-in-time documentation and provides us with a holistic view of our codebase when we
-                            undergo complex projects such as migrations and major platform-related changes.&rdquo;
+                            &ldquo;As we've grown, so has the need to better track and communicate our progress 
+                            and goals across the engineering team and broader company. With Code Insights, our 
+                            data and migration tracking is accurate across our entire codebase, and our engineers 
+                            and managers can shift out of manual spreadsheets and spend more time working on code.&rdquo;
                         </h3>
-                        <div className="pt-3 text-muted text-center">&mdash; Jane Doe, Engineering Leader</div>
+                        <div className="pt-3 text-muted text-center">&mdash; Balázs Tóthfalussy, Engineering Manager, Prezir</div>
                     </blockquote>
                     <div className="d-flex justify-content-center">
                         <a href="https://prezi.com" className="btn">
@@ -440,7 +439,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         {/* Use Cases */}
         <div className="bg-gradient-blue-mist py-4 tab-section">
             <ContentSection className="py-4 py-md-7">
-                <h1 className="mb-5 text-center font-weight-bold">Popular Code Insights templates</h1>
+                <h1 className="mb-2 text-center font-weight-bold">Popular Code Insights templates</h1>
+                <p className="text-center">Start levering Code Insights quickly and easily with these pre-built templates:</p>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                         <div className="row mt-5">
@@ -494,7 +494,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         {/* Use Cases Carousel */}
         <div className="bg-gradient-blue-mist py-4 tab-carousel-section">
             <ContentSection className="py-4 py-md-7">
-                <h1 className="mb-5 text-center">Popular Code Insights templates</h1>
+                <h1 className="mb-2 text-center">Popular Code Insights templates</h1>
+                <p className="text-center">Start levering Code Insights quickly and easily with these pre-built templates:</p>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                         <div className="row mt-5 justify-content-center">
@@ -543,8 +544,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     <div className="col-lg-8 d-flex flex-column justify-content-start">
                         <h1 className="font-weight-bold">Get started with Code Insights</h1>
                         <p>
-                            Create a Code Insight in 60 seconds, then get historical data for metrics you never tracked
-                            until today without needing a time machine — data backfills automatically.
+                        Create a Code Insight in 60 seconds, then get historical data for metrics 
+                        you never tracked until today without needing a time machine — data backfills automatically.
                         </p>
                     </div>
                     <div className="col-lg-7 d-flex flex-column pt-1">
