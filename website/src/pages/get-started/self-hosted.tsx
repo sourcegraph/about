@@ -52,13 +52,14 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => {
                         <div>
                             <BackButton search={props.location.search} />
 
-                            <h1 className="display-2 font-weight-bolder mb-4">
+                            <h1 className="display-2 font-weight-bolder mb-2">
                                 Sourcegraph <br />
                                 Self-Hosted
-                                <MostPopularBadge />
                             </h1>
+                            
+                            <MostPopularBadge />
 
-                            <p>
+                            <p className="mt-4">
                                 Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
                                 locally. Get started for free.
                             </p>
