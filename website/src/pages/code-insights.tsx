@@ -345,9 +345,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             <ContentSection className="py-6">
                 <div className="row d-flex text-center justify-content-center px-lg-7 py-6">
                     <div className="w-100">
-                        <p className="font-weight-bold display-3">
-                            Trusted by engineering teams worldwide
-                        </p>
+                        <p className="font-weight-bold display-3">Trusted by engineering teams worldwide</p>
                     </div>
                     <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
                         <h3 className="font-weight-normal">
