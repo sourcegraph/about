@@ -16,8 +16,7 @@ export const BestForTitle: FunctionComponent = () => (
     <div className={`text-uppercase font-weight-bolder mb-1 ${styles.bestForTitle}`}>Best For</div>
 )
 
-export const GetStartedPage: FunctionComponent<PageProps> = props => {    
-
+export const GetStartedPage: FunctionComponent<PageProps> = props => {
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
         <Link className="btn btn-primary my-2" to={`${href}${props.location.search}`}>
             Get started for free <ArrowRightIcon />
@@ -29,15 +28,18 @@ export const GetStartedPage: FunctionComponent<PageProps> = props => {
             location={props.location}
             meta={{
                 title: 'Choose Your Deployment Model | Get Started with Sourcegraph',
-                description: "From Sourcegraph Self-hosted to Sourcegraph Cloud, choose the deployment model that's best for you and get started for free today.",
+                description:
+                    "From Sourcegraph Self-hosted to Sourcegraph Cloud, choose the deployment model that's best for you and get started for free today.",
                 image: 'https://about.sourcegraph.com/sourcegraph-og.png',
             }}
-            hero={<div className="container-xl py-5">
-                <h1 className="display-1 mb-2">
-                    <strong>What's best for you?</strong>
-                </h1>
-                <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
-            </div>}
+            hero={
+                <div className="container-xl py-5">
+                    <h1 className="display-1 mb-2">
+                        <strong>What's best for you?</strong>
+                    </h1>
+                    <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
+                </div>
+            }
             heroAndHeaderClassName={styles.hero}
             hideGetStartedButton={true}
         >
@@ -51,16 +53,16 @@ export const GetStartedPage: FunctionComponent<PageProps> = props => {
                             </h1>
 
                             <p>
-                                Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally.
-                                Get started for free.
+                                Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
+                                locally. Get started for free.
                             </p>
 
                             <BestForTitle />
                             <p>Teams and enterprises</p>
 
                             <p>
-                                Collaborate with your team on any code host (including private hosts) and access advanced
-                                security functionality.
+                                Collaborate with your team on any code host (including private hosts) and access
+                                advanced security functionality.
                             </p>
 
                             <GetStartedCTA href="/get-started/self-hosted" />
