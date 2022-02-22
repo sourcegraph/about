@@ -86,7 +86,7 @@ export const SelfHostedPage: FunctionComponent = props => {
                                     --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
                                     --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
                                     --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                    sourcegraph/server:3.36.3
+                                    sourcegraph/server:3.37.0
                                 </small>
                             </code>
                         </div>
