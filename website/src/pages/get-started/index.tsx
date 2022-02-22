@@ -7,7 +7,8 @@ import Layout from '../../components/Layout'
 import styles from './getStarted.module.scss'
 
 export const MostPopularBadge: FunctionComponent = () => (
-    <span className={`${styles.mostPopularBadge} badge align-top text-white text-uppercase font-weight-bolder ml-1`}>
+    <span className={`${styles.mostPopularBadge} badge text-white text-uppercase font-weight-bolder mb-3`}>
+        <img src="/star.svg" className="mr-1" />
         <span>Most Popular</span>
     </span>
 )
@@ -45,10 +46,9 @@ export const GetStartedPage: FunctionComponent<PageProps> = props => {
                 <div className="container-xl">
                     <div className="row">
                         <section id="sg-self-hosted" className="col-lg-6 p-5">
-                            <h1>
-                                Sourcegraph Self-Hosted
-                                <MostPopularBadge />
-                            </h1>
+                            <h1>Sourcegraph Self-Hosted</h1>
+                            
+                            <MostPopularBadge />
 
                             <p>
                                 Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally.
@@ -75,7 +75,6 @@ export const GetStartedPage: FunctionComponent<PageProps> = props => {
                             <p>Individual developers (small teams coming soon)</p>
 
                             <p>Search across your repositories and the open-source universe.</p>
-                            <br />
 
                             <GetStartedCTA href="/get-started/cloud" />
 
