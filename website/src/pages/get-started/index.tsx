@@ -49,7 +49,7 @@ export const GetStartedPage: FunctionComponent<PageProps> = props => {
                     <div className="row">
                         <section id="sg-self-hosted" className="col-lg-6 p-5">
                             <h1>Sourcegraph Self-Hosted</h1>
-                            
+
                             <MostPopularBadge />
 
                             <p>
