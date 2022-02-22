@@ -47,15 +47,6 @@
         background-color: $brand-primary-blue;
     }
 
-    /* Handle the different code insights chart sizes */
-    .set-height {
-        height: 800px;
-
-        @media only screen and (max-width: 768px) {
-            height: auto;
-        }
-    }
-
     .tab-section {
         @media only screen and (max-width: 768px) {
             display: none;
@@ -80,13 +71,21 @@
             flex-direction: row;
         }
 
-        li {
+        .carousel-item {
             font-size: 1.5rem;
             line-height: 1.4rem;
+            cursor: pointer;
+            color: $sg-space-black;
+            display: block;
+            margin: 20px 0 0 10px;
 
             &.active {
                 font-weight: 600;
             }
+        }
+
+        li {
+            margin: 0;
         }
 
         p {

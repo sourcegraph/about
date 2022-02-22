@@ -5,22 +5,14 @@
 
     // Reset ul styles (bullets, paddings, margins)
     list-style: none;
+    margin: 0;
     padding: 0;
     line-height: 1.2;
-
-    &--horizontal {
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
 }
 
 .legend-item {
     display: flex;
     align-items: baseline;
-
-    @media only screen and (max-width: 768px) {
-        width: 50%;
-    }
 }
 
 .legend-mark {

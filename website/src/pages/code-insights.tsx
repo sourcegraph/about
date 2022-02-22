@@ -312,7 +312,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="row">
                 {/* Placeholder */}
-                <div className="col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-7">
+                <div className="col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-6 my-lg-7">
                     <iframe
                         className="embed-responsive-item"
                         src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -322,7 +322,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         title="Sourcegraph Batch Changes demo"
                     ></iframe>
                 </div>
-                <div className="col-lg-5 my-7">
+                <div className="col-lg-5 my-lg-7 my-5">
                     <h2 className="mb-3 font-weight-bold">
                         Finally, useful engineering metrics <span style={{ fontStyle: 'italic' }}>you</span> define.
                     </h2>
@@ -377,7 +377,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         Code Insights provides reliable real-time reporting directly from the codebase, making
                         engineering leaders and their teams more effective.
                     </p>
-                    <div className="d-flex flex-column col-lg-6 px-6 justify-content-around">
+                    <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                         <div className="d-flex py-5">
                             <div className="mr-4">
                                 <BullsEyeArrowIcon className="icon" size={70} />
@@ -397,7 +397,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex flex-column col-lg-6 px-6 justify-content-around">
+                    <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                         <div className="d-flex py-5">
                             <div className="mr-4">
                                 <TrendingUpIcon className="icon" size={70} />

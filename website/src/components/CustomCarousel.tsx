@@ -27,27 +27,19 @@ interface CarouselItem {
 }
 
 const CustomCarousel: FunctionComponent<CarouselProps> = props => {
-    const carouselLeftPanelStyles = 'col-md-2'
-    const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6'
-    const carouselMainStyles = 'custom-carousel d-flex flex-wrap'
+    const carouselMainStyles = 'custom-carousel d-flex flex-wrap py-lg-6'
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
     const currentCarousel = carouselHook.carouselItems as CarouselProps
 
     return (
-        <div
-            className={
-                autoAdvance
-                    ? classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'set-height')
-                    : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass)
-            }
-        >
+        <div className={classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass)}>
             <div
                 className={
                     carouselHook.autoAdvance
-                        ? classNames(carouselLeftPanelStyles, 'm-0 col-lg-5')
-                        : classNames(carouselLeftPanelStyles, 'carousel-nav ml-lg-7 col-lg-4 ml-md-5')
+                        ? 'col-md-2 m-0 my-lg-3 my-5 col-lg-5'
+                        : 'carousel-nav ml-lg-7 col-lg-4 ml-md-5'
                 }
             >
                 {title && <h2 className="carousel-title font-weight-bold ml-lg-6 mb-5">{title}</h2>}
@@ -59,7 +51,11 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <ul className="ml-lg-3">
                     {carouselItems.map(item => (
                         <li
-                            className={item === carouselHook.carouselItems.currentItem ? 'active' : ''}
+                            className={
+                                item === carouselHook.carouselItems.currentItem
+                                    ? 'carousel-item active'
+                                    : 'carousel-item'
+                            }
                             key={item.id}
                             onClick={() => carouselHook.moveCarousel(item.id)}
                         >
@@ -79,13 +75,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     }
                 />
             </div>
-            <div
-                className={
-                    autoAdvance
-                        ? classNames(carouselRightPanelStyles, 'set-height-panel')
-                        : classNames(carouselRightPanelStyles)
-                }
-            >
+            <div className="col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6">
                 {carouselItems.map(item => (
                     <div
                         key={item.id}
