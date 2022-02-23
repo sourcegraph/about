@@ -1,7 +1,7 @@
 ---
-title: "How we migrated entirely to CSS Modules using codemods and Sourcegraph Code Insights"
+title: 'How we migrated entirely to CSS Modules using codemods and Sourcegraph Code Insights'
 author: Valery Bugakov
-description: "How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress."
+description: 'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.'
 publishDate: 2022-02-24T00:00-07:00
 tags: [blog]
 slug: migrating-to-css-modules-with-codemods-and-code-insights
@@ -104,15 +104,18 @@ To programmatically migrate global styles to CSS modules, codemod script does th
 Finding a React component file with the corresponding global-styles file is easy in the Sourcegraph codebase because React components have colocated styles with a predictable filename. E.g., styles for `Button.tsx` are defined in `Button.scss` in the same folder.
 
 ### 2. Convert global styles file into a CSS module.
+
 It’s a multistep operation:
-* First, get rid of the BEM notation used for CSS selectors and remove redundant nesting required to ensure selector uniqueness.
+
+- First, get rid of the BEM notation used for CSS selectors and remove redundant nesting required to ensure selector uniqueness.
+
 ```css
 .insights-dashboard {
-    flex: none;
+  flex: none;
 
-    &__wrapper {
-      display: flex;
-    }
+  &__wrapper {
+    display: flex;
+  }
 }
 ```
 
@@ -120,24 +123,24 @@ It’s a multistep operation:
 
 ```css
 .insights-dashboard {
-    flex: none;
+  flex: none;
 }
 
-    .wrapper {
-        display: flex;
+.wrapper {
+  display: flex;
 }
 ```
-* To achieve this, we used [PostCSS](https://github.com/postcss/postcss)—a ​tool for transforming styles with JS plugins. The resulting script is similar to [the postcss-nested plugin](https://github.com/postcss/postcss-nested), with some adjustments to remove the BEM notation.
-* Save a list of CSS Module classes in memory for later reference in the React component. It is done by using utility functions provided by [the css-modules-loader-core package](https://github.com/css-modules/css-modules-loader-core). They give us a list of classes available in a CSS Module that we can map ourselves to global CSS classes that we just transformed. For our toy example, it would look like this:
+
+- To achieve this, we used [PostCSS](https://github.com/postcss/postcss)—a ​tool for transforming styles with JS plugins. The resulting script is similar to [the postcss-nested plugin](https://github.com/postcss/postcss-nested), with some adjustments to remove the BEM notation.
+- Save a list of CSS Module classes in memory for later reference in the React component. It is done by using utility functions provided by [the css-modules-loader-core package](https://github.com/css-modules/css-modules-loader-core). They give us a list of classes available in a CSS Module that we can map ourselves to global CSS classes that we just transformed. For our toy example, it would look like this:
 
 ```css
 const classMapping = {
-    'insights-dashboard' : 'insights-dashboard',
-    'insights-dashboard__wrapper' : 'wrapper',
+  'insights-dashboard':'insights-dashboard','insights-dashboard__wrapper' : 'wrapper';
 }
 ```
 
-* As a final touch, add `.module.scss` to the filename required for build-tools to interpret this file as a CSS Module.
+- As a final touch, add `.module.scss` to the filename required for build-tools to interpret this file as a CSS Module.
 
 ### 3. Replace references to global classes in the React component using a list of CSS Modules classes preserved from the previous step.
 
@@ -145,11 +148,9 @@ To manipulate Typescript AST, we used [ts-morph](https://github.com/dsherret/ts-
 
 Here’s the AST generated for our small example. Explore it yourself using [astexplorer](https://astexplorer.net/#/gist/eca630c9f5464e6b027ec13aac91711a/4295e325b8cdad474f9d4f559248f534e709356e).
 
-
 <figure>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/insights-dashboard-ast.png" alt="Insights dashboard AST"
 </figure>
-
 
 Codemod replaces every string literal match with reference to the corresponding CSS Module class.
 
@@ -162,7 +163,6 @@ Codemod replaces every string literal match with reference to the corresponding 
 ```css
 <div className={styles.wrapper} />
 ```
-
 
 At this point, the transformation is complete, and the script outputs information about CSS classes not used in the React component. It allowed us to remove dead code in the migration process.
 
@@ -197,7 +197,6 @@ We successfully migrated to CSS Modules behind the scenes, delivering on the “
 We're relying on the same combination of Code Insights and codemods in our subsequent significant migration from global Bootstrap classes to our new Wildcard design system. We find this approach is more than just automating some simple tasks and speeding up the development work, as it helps keep engineers happy by reducing manual labor when upgrading their projects' dependencies, refactoring legacy patterns, or fixing bugs if the next version of a public API has breaking changes. As a next step, we plan to make codemods useful for engineers outside of the Frontend Platform team by developing [a higher-level toolkit for creating codemods](https://github.com/sourcegraph/codemod) that will eventually make it as simple as writing a regex find-and-replace.
 
 We hope you found this account of our migration useful and will consider trying codemods and Code Insights in your work.
-
 
 <style>
   figure .no-shadow { box-shadow: none; }
