@@ -270,8 +270,8 @@ const Index: React.FunctionComponent = (props: any) => (
                         <h2>Track what really matters to you and your team</h2>
                         <p>
                             With Code Insights, you can accurately understand how different initiatives are progressing
-                            over time and answer questions that used to be difficult or impossible to answer before. By
-                            relying on the code as the source of truth, you can track migrations, code smells, versions,
+                            over time and answer questions that used to be difficult or impossible to answer before.
+                            Using the codebase as the source of truth, you can track migrations, code smells, versions,
                             and more with visualizations that are easy to customize and kept automatically up to date.
                         </p>
                         <div className="pt-1">

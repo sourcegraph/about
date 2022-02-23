@@ -273,11 +273,11 @@ const templates = {
 
 const blogListItems = [
     {
-        title: 'The new way with Code Insights',
-        description: 'Explore why we built this in the announcement post.',
+        title: 'How we migrated entirely to CSS Modules using codemods and Sourcegraph Code Insights',
+        description: ' Learn about why we built Code Insights from our CEO.',
         type: 'Blog',
-        image: 'https://sourcegraphstatic.com/blog/vs-code-extension/sourcegraph-vs-code-extension.png',
-        href: '/blog/ways-to-use-sourcegraph-extension-for-vs-code',
+        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
+        href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
         title: 'Under the hood of Code Insights',
