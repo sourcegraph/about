@@ -20,14 +20,13 @@
         .bg {
             &::before,
             &::after {
-                content: "";
+                content: '';
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-    
+
             &::before {
-                background-image:
-                    url('/code-insights/code-insights-page-bg.svg'),
+                background-image: url('/code-insights/code-insights-page-bg.svg'),
                     // Fallback while the SVGs are loading
                     radial-gradient(ellipse at bottom left, rgba($light-green2, 0.5), transparent);
                 background-position: top left;
@@ -36,11 +35,11 @@
                     background-position: bottom left;
                 }
             }
-    
+
             &::after {
                 background-image: url('/code-insights/code-insights-illustration.svg'),
-                // Fallback while the SVGs are loading
-                radial-gradient(ellipse at bottom right, rgba($blue-mist, 0.5), transparent);
+                    // Fallback while the SVGs are loading
+                    radial-gradient(ellipse at bottom right, rgba($blue-mist, 0.5), transparent);
                 background-position: bottom right;
                 @media only screen and (max-width: 990px) {
                     background-size: 150%;

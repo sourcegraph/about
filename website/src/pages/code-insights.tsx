@@ -335,8 +335,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                                 Track what really matters to you and your team.
                             </h1>
                             <h4 className="mb-5">
-                                Transform your code into a queryable database to create customizable, visual dashboards in
-                                seconds.
+                                Transform your code into a queryable database to create customizable, visual dashboards
+                                in seconds.
                             </h4>
                             <div className="d-flex flex-column pt-1">
                                 <Link
