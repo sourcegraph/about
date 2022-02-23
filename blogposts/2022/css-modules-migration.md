@@ -136,7 +136,7 @@ It’s a multistep operation:
 
 ```css
 const classMapping = {
-  'insights-dashboard':'insights-dashboard','insights-dashboard__wrapper' : 'wrapper';
+  'insights-dashboard':'insights-dashboard','insights-dashboard__wrapper': 'wrapper';
 }
 ```
 
