@@ -40,7 +40,11 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             <div
                 className={
                     autoAdvance
-                        ? classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'set-height')
+                        ? classNames(
+                              carouselMainStyles,
+                              currentCarousel.currentItem?.backgroundClass,
+                              'flex-column set-height'
+                          )
                         : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-lg-8')
                 }
             >
