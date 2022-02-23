@@ -294,6 +294,25 @@ const blogListItems = [
     },
 ]
 
+const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
+    <video
+        className="w-100 h-auto shadow"
+        width={1280}
+        height={720}
+        autoPlay={true}
+        muted={true}
+        loop={true}
+        playsInline={true}
+        controls={false}
+    >
+        <source
+            type="video/webm"
+            src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.webm`}
+        />
+        <source type="video/mp4" src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`} />
+    </video>
+)
+
 export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
@@ -335,19 +354,29 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         }
     >
         <ContentSection className="py-lg-5">
-            <div className="row">
+            <div className="row mx-lg-5">
                 {/* Placeholder */}
-                <div className="video-container col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-6 my-lg-7">
-                    <iframe
-                        className="embed-responsive-item"
-                        src="https://www.youtube-nocookie.com/embed/fMCUJQHfbUA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                        allowFullScreen={true}
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        frameBorder={0}
-                        title="Sourcegraph Code Insights demo"
-                    ></iframe>
+                <div className="col-lg-6">
+                    <video
+                        className="w-100 h-100 shadow"
+                        width={1280}
+                        autoPlay={true}
+                        muted={true}
+                        loop={true}
+                        playsInline={true}
+                        controls={false}
+                    >
+                        <source
+                            type="video/webm"
+                            src="https://storage.googleapis.com/sourcegraph-assets/code_insights/code-insights-720.webm"
+                        />
+                        <source
+                            type="video/mp4"
+                            src="https://storage.googleapis.com/sourcegraph-assets/code_insights/code-insights-720.mp4"
+                        />
+                    </video>
                 </div>
-                <div className="col-lg-5 my-lg-7 mt-6">
+                <div className="col-lg-6 my-lg-7 mt-6">
                     <h2 className="mb-3 font-weight-bold">
                         Finally, useful engineering metrics <span style={{ fontStyle: 'italic' }}>you</span> define.
                     </h2>
