@@ -86,7 +86,7 @@ const templates = {
     migrations: [
         {
             header: 'Global CSS to CSS modules',
-            description: 'Tracking migration from global CSS to CSS modules.',
+            description: 'Track migration from global CSS to CSS modules.',
             queries: [
                 <>
                     <span className="keyword">select:</span>file <span className="keyword">lang:</span>SCSS{' '}
@@ -102,7 +102,7 @@ const templates = {
         },
         {
             header: 'Python 2 to Python 3',
-            description: 'How far along is the Python major version migration.',
+            description: 'How far along is the Python major version migration?',
             queries: [
                 <>
                     #!/usr/bin/env python3 <span className="keyword">archived:</span>no{' '}
@@ -116,7 +116,7 @@ const templates = {
         },
         {
             header: 'React Class to Function Components',
-            description: `What's the status of migrating to React function components from class components.`,
+            description: `What's the status of migrating to React function components from class components?`,
             queries: [
                 <>
                     <span className="keyword">patterntype:</span>regexp const\s\w+:\s(React\.)?FunctionComponent{' '}
@@ -130,7 +130,7 @@ const templates = {
         },
         {
             header: 'Config or docs file',
-            description: 'How many repos contain a config or docs file in a specific directory.',
+            description: 'How many repos contain a config or docs file in a specific directory?',
             queries: [
                 <>
                     <span className="keyword">select:</span>repo <span className="keyword">file:</span>
@@ -153,7 +153,7 @@ const templates = {
         },
         {
             header: 'All log4j versions',
-            description: 'Which log4j versions are present, including vulnerable versions.',
+            description: 'Which log4j versions are present, including vulnerable versions?',
             queries: [
                 <>
                     <span className="keyword">lang:</span>gradle org\.apache\.logging\.log4j['"] 2\.([0-9]+)\.{' '}
@@ -173,7 +173,7 @@ const templates = {
         },
         {
             header: 'Python versions',
-            description: `Which python versions are in use or haven't been updated.`,
+            description: `Which python versions are in use or haven't been updated?`,
             queries: [
                 <>
                     #!/usr/bin/env python([0-9]\.[0-9]+) <span className="keyword">archived:</span>no{' '}
@@ -206,7 +206,7 @@ const templates = {
         },
         {
             header: 'Vulnerable log4j versions',
-            description: 'What vulnerable log4j versions are present.',
+            description: 'What vulnerable log4j versions are present?',
             queries: [
                 <>
                     <span className="keyword">lang:</span>gradle org\.apache\.logging\.log4j['"]
@@ -218,7 +218,7 @@ const templates = {
         },
         {
             header: 'API keys',
-            description: 'How quickly we notice and remove API keys when they are committed.',
+            description: 'How quickly do we notice and remove API keys when they are committed?',
             queries: [
                 <>
                     regexMatchingAPIKey <span className="keyword">patterntype:</span>regexp{' '}
@@ -230,7 +230,7 @@ const templates = {
     codeHealth: [
         {
             header: 'TODOs',
-            description: 'How many TODOs are in a specific part of the codebase (or all of it).',
+            description: 'How many TODOs are in a specific part of the codebase (or all of it)?',
             queries: [
                 <>
                     TODO <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
@@ -239,7 +239,7 @@ const templates = {
         },
         {
             header: 'Commits with "revert"',
-            description: 'How frequently there are commits with “revert” in the commit message.',
+            description: 'How frequently are there commits with “revert” in the commit message?',
             queries: [
                 <>
                     <span className="keyword">type:</span>commit revert <span className="keyword">archived:</span>no{' '}
@@ -249,7 +249,7 @@ const templates = {
         },
         {
             header: 'Linter override rules',
-            description: 'How many linter override rules exist.',
+            description: 'How many linter override rules exist?',
             queries: [
                 <>
                     <span className="keyword">file:</span>\.eslintignore .\n{' '}
@@ -260,7 +260,7 @@ const templates = {
         },
         {
             header: 'Deprecated calls',
-            description: 'How many times deprecated calls are used.',
+            description: 'How many times are deprecated calls used?',
             queries: [
                 <>
                     <span className="keyword">lang:</span>java @deprecated <span className="keyword">archived:</span>no{' '}
