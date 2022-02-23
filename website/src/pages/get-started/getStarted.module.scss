@@ -52,6 +52,13 @@
     font-size: 0.875rem;
     line-height: 1.125rem;
 }
+
+// For layout/copy alignment on desktop
+.sgCloudHeading {
+    @media only screen and (min-width: 990px) {
+        margin-bottom: 51px;
+    }
+}
 // End get started page index specific
 
 // Cloud page specific

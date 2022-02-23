@@ -47,10 +47,9 @@ export const CloudPage: FunctionComponent<PageProps> = props => {
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
 
                             <BestForTitle />
+                            <p>Individual developers and small teams (Beta)</p>
 
-                            <p>Individual developers (small teams coming soon)</p>
-
-                            <p>Search across your repositories and the open-source universe.</p>
+                            <p>Search all your repositories, team's repositories, and the open source universe without having to install or manage a deployment.</p>
                         </div>
                     </div>
 

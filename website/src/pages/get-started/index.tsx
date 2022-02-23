@@ -69,14 +69,14 @@ export const GetStartedPage: FunctionComponent<PageProps> = props => {
                         </section>
 
                         <section id="sg-cloud" className="col-lg-6 p-5">
-                            <h1>Sourcegraph Cloud</h1>
+                            <h1 className={styles.sgCloudHeading}>Sourcegraph Cloud</h1>
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
 
                             <BestForTitle />
-                            <p>Individual developers (small teams coming soon)</p>
+                            <p>Individual developers and small teams (Beta)</p>
 
-                            <p>Search across your repositories and the open-source universe.</p>
+                            <p>Search all your repositories, team's repositories, and the open source universe without having to install or manage a deployment.</p>
 
                             <GetStartedCTA href="/get-started/cloud" />
 
