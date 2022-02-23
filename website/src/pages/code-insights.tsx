@@ -280,11 +280,12 @@ const blogListItems = [
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
-        title: 'Under the hood of Code Insights',
-        description: `Sourcegraph Engineering's take on everything Code Insights.`,
+        title: 'Announcing Code Insights',
+        description:
+            'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.',
         type: 'Blog',
-        image: 'https://sourcegraphstatic.com/blog/indexing-the-oss-universe-update.png',
-        href: '/blog/indexing-the-oss-universe-update-more-code-hosts',
+        image: 'https://sourcegraphstatic.com/blog/code-insights-ga-blogs/announcement-header.png',
+        href: '/blog/announcing-code-insights',
     },
     {
         title: 'Dive into documentation',
