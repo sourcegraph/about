@@ -5,8 +5,12 @@ import { ContentSection } from '../components/content/ContentSection'
 import { CodeInsightExample } from '../components/code-insights/CodeInsightsExamples'
 import { CodeInsightExampleType } from '../components/code-insights/types'
 import {
-    CAPTURE_INSIGHT_TERRAFORM_EXAMPLES_DATA,
     SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
+    ALPINE_VERSIONS_INSIGHT,
+    LOG_4_J_INCIDENT_INSIGHT,
+    DEPRECATED_API_USAGE_BY_TEAM,
+    LINTER_OVERRIDES,
+    REPOS_WITH_CI_SYSTEM,
 } from '../components/code-insights/mock-data'
 import Layout from '../components/Layout'
 import { TabCarousel } from '../components/TabCarousel'
@@ -38,13 +42,41 @@ const items = [
         id: 1,
         backgroundClass: '',
         buttonLabel: 'Detect and track versions of languages or packages',
+        text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} className="" />,
+        headerClass: '',
+        itemClass: 'd-none',
+    },
+    {
+        id: 2,
+        backgroundClass: '',
+        buttonLabel: 'Ensure removal of security vulnerabilities',
+        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} className="" />,
+        headerClass: '',
+        itemClass: 'd-none',
+    },
+    {
+        id: 3,
+        backgroundClass: '',
+        buttonLabel: 'Understand code by team',
         text: (
-            <CodeInsightExample
-                type={CodeInsightExampleType.Capture}
-                data={CAPTURE_INSIGHT_TERRAFORM_EXAMPLES_DATA}
-                className=""
-            />
+            <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} className="" />
         ),
+        headerClass: '',
+        itemClass: 'd-none',
+    },
+    {
+        id: 4,
+        backgroundClass: '',
+        buttonLabel: 'Track code smells and health',
+        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} className="" />,
+        headerClass: '',
+        itemClass: 'd-none',
+    },
+    {
+        id: 5,
+        backgroundClass: '',
+        buttonLabel: 'Visualize configurations and services',
+        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} className="" />,
         headerClass: '',
         itemClass: 'd-none',
     },

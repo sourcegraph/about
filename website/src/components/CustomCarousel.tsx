@@ -28,7 +28,7 @@ interface CarouselItem {
 
 const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const carouselMainStyles = 'd-flex flex-wrap'
-    const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6 px-0'
+    const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6 px-lg-0'
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]

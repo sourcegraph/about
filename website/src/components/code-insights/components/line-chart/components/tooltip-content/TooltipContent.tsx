@@ -62,7 +62,7 @@ export function TooltipContent<Datum extends object>(props: TooltipContentProps<
 
     return (
         <>
-            <h5 className="font-weight-normal">{dateString}</h5>
+            <div className="date-time mb-2">{dateString}</div>
 
             <ul className={styles.tooltipList}>
                 {lines.leftRemaining > 0 && <li className={styles.item}>... and {lines.leftRemaining} more</li>}
