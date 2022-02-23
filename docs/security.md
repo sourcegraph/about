@@ -63,6 +63,11 @@ Sourcegraph on-premise allows you to have the most control over the deployment a
 - Instances are updated monthly, and are actively maintained to keep the service up and healthy.
 - Managed instances are monitored 24x7 and incidents managed in the same way as our Sourcegraph Cloud deployment.
 
+## Shared security responsibility model for sourcegraph.com and managed instances.
+
+- Sourcegraph handles the security of the applications, the systems they run on, and the environments those systems are hosted within.
+- As a customer you are responsible for the proper management of information on your account. You have to control the users, access to your data, and what extensions you install and trust. Finally, you are responsible for ensuring your company is meeting compliance requirements.
+
 ## General Practices
 
 ### Bug Bounty Program and Vulnerability Disclosure
