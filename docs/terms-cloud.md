@@ -5,7 +5,7 @@ title: Terms of Service for Sourcegraph Cloud
 
 Last modified: February 22, 2022
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-dotcom%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-cloud/2021-02-09/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives).
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-dotcom%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-cloud/2022-02-09/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives).
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of Sourcegraph Cloud.
 
