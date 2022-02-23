@@ -596,8 +596,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
                         <h1 className="font-weight-bold">Get started with Code Insights</h1>
                         <p>
-                            Create a Code Insight in 60 seconds <strong>and</strong> get historical data for previously
-                            untracked metrics — data backfills automatically.
+                            Create a code insight in 60 seconds and get historical data for previously untracked metrics
+                            — data backfills automatically.
                         </p>
                     </div>
                     <div className="col-lg-7 d-flex flex-column pt-1">
