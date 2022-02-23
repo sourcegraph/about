@@ -280,7 +280,7 @@ const blogListItems = [
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
-        title: 'Announcing Code Insights',
+        title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
         description:
             'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.',
         type: 'Blog',
