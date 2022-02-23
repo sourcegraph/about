@@ -294,25 +294,6 @@ const blogListItems = [
     },
 ]
 
-const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
-    <video
-        className="w-100 h-auto shadow"
-        width={1280}
-        height={720}
-        autoPlay={true}
-        muted={true}
-        loop={true}
-        playsInline={true}
-        controls={false}
-    >
-        <source
-            type="video/webm"
-            src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.webm`}
-        />
-        <source type="video/mp4" src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`} />
-    </video>
-)
-
 export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
