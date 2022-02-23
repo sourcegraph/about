@@ -49,7 +49,10 @@ export const CloudPage: FunctionComponent<PageProps> = props => {
                             <BestForTitle />
                             <p>Individual developers and small teams (Beta)</p>
 
-                            <p>Search all your repositories, team's repositories, and the open source universe without having to install or manage a deployment.</p>
+                            <p>
+                                Search all your repositories, team's repositories, and the open source universe without
+                                having to install or manage a deployment.
+                            </p>
                         </div>
                     </div>
 
