@@ -304,31 +304,34 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
         className="code-insights-page"
-        heroAndHeaderClassName="code-insights-page__hero-and-header"
+        heroAndHeaderClassName="code-insights-page__hero-and-header navbar-light"
         hero={
-            <div className="container pb-4">
-                <div className="row">
-                    <div className="col-lg-6 mb-lg-6 mt-6">
-                        <div className="text-uppercase mb-2">Code Insights</div>
-                        <h1 className="display-3 font-weight-bold mb-4">
-                            Track what really matters to you and your team.
-                        </h1>
-                        <h4 className="mb-6">
-                            Transform your code into a queryable database to create customizable, visual dashboards in
-                            seconds.
-                        </h4>
-                        <div className="d-flex flex-column pt-1">
-                            <Link
-                                className="btn btn-primary md-col-6 col-4 mr-3"
-                                to="/contact/request-code-insights-demo"
-                                title="Request a Demo of Code Insights."
-                            >
-                                Request a demo
-                            </Link>
+            <>
+                <div className="bg" />
+                <div className="container pb-4">
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="text-uppercase mb-2">Code Insights</div>
+                            <h1 className="display-3 font-weight-bold mb-4">
+                                Track what really matters to you and your team.
+                            </h1>
+                            <h4 className="mb-5">
+                                Transform your code into a queryable database to create customizable, visual dashboards in
+                                seconds.
+                            </h4>
+                            <div className="d-flex flex-column pt-1">
+                                <Link
+                                    className="btn btn-primary md-col-5 col-5"
+                                    to="/contact/request-code-insights-demo"
+                                    title="Request a Demo of Code Insights."
+                                >
+                                    Request a demo
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </>
         }
     >
         <ContentSection className="py-lg-5">
