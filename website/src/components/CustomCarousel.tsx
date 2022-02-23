@@ -94,6 +94,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         <div
                             key={item.id}
                             className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
+                            onMouseOver={() => carouselHook.moveCarousel(item.id)}
                         >
                             {!autoAdvance && (
                                 <h1 className={autoAdvance ? 'mb-lg-4' : 'display-2 mb-lg-4'}>{item.buttonLabel}</h1>
