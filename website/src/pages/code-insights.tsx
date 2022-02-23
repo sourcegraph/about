@@ -57,10 +57,9 @@ const templates = {
             description: 'Tracking migration from global CSS to CSS modules.',
             queries: [
                 <>
-                    //series 1, decreasing <span className="keyword">select:</span>file{' '}
-                    <span className="keyword">lang:</span>SCSS <span className="keyword">file:</span>module{' '}
-                    <span className="keyword">patterntype:</span>regexp <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    <span className="keyword">select:</span>file <span className="keyword">lang:</span>SCSS{' '}
+                    <span className="keyword">file:</span>module <span className="keyword">patterntype:</span>regexp{' '}
+                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
                 </>,
                 <>
                     <span className="keyword">type:</span>file <span className="keyword">lang:</span>scss
@@ -74,11 +73,11 @@ const templates = {
             description: 'How far along is the Python major version migration.',
             queries: [
                 <>
-                    // series 1: #!/usr/bin/env python3 <span className="keyword">archived:</span>no{' '}
+                    #!/usr/bin/env python3 <span className="keyword">archived:</span>no{' '}
                     <span className="keyword">fork:</span>no
                 </>,
                 <>
-                    // series 2: #!/usr/bin/env python2 <span className="keyword">archived:</span>no{' '}
+                    #!/usr/bin/env python2 <span className="keyword">archived:</span>no{' '}
                     <span className="keyword">fork:</span>no
                 </>,
             ],
@@ -88,12 +87,11 @@ const templates = {
             description: `What's the status of migrating to React function components from class components.`,
             queries: [
                 <>
-                    // series 1: <span className="keyword">patterntype:</span>regexp{' '}
-                    const\s\w+:\s(React\.)?FunctionComponent <span className="keyword">archived:</span>no{' '}
-                    <span className="keyword">fork:</span>no
+                    <span className="keyword">patterntype:</span>regexp const\s\w+:\s(React\.)?FunctionComponent{' '}
+                    <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
                 </>,
                 <>
-                    // series 2: <span className="keyword">patterntype:</span>regexp extends\s(React\.)?(Pure)?Component{' '}
+                    <span className="keyword">patterntype:</span>regexp extends\s(React\.)?(Pure)?Component{' '}
                     <span className="keyword">archived:</span>no <span className="keyword">fork:</span>no
                 </>,
             ],
@@ -260,7 +258,6 @@ const blogListItems = [
         title: 'Dive into documentation',
         description: 'Learn everything you need to know about Code Insights.',
         type: 'Docs',
-        image: 'https://sourcegraphstatic.com/blog/indexing-the-oss-universe-update.png',
         href: 'https://docs.sourcegraph.com/code_insights',
     },
 ]
@@ -305,17 +302,17 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         <ContentSection className="py-lg-5">
             <div className="row">
                 {/* Placeholder */}
-                <div className="col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-6 my-lg-7">
+                <div className="video-container col-lg-5 container video-embed embed-responsive embed-responsive-16by9 my-6 my-lg-7">
                     <iframe
                         className="embed-responsive-item"
-                        src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                        src="https://www.youtube-nocookie.com/embed/fMCUJQHfbUA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
-                        title="Sourcegraph Batch Changes demo"
+                        title="Sourcegraph Code Insights demo"
                     ></iframe>
                 </div>
-                <div className="col-lg-5 my-lg-7 my-5">
+                <div className="col-lg-5 my-lg-7 mt-6">
                     <h2 className="mb-3 font-weight-bold">
                         Finally, useful engineering metrics <span style={{ fontStyle: 'italic' }}>you</span> define.
                     </h2>
@@ -348,7 +345,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             can shift out of manual spreadsheets and spend more time working on code.&rdquo;
                         </h4>
                         <div className="pt-3 text-muted text-center">
-                            &mdash; Balázs Tóthfalussy, Engineering Manager, Prezir
+                            &mdash; Balázs Tóthfalussy, Engineering Manager, Prezi
                         </div>
                     </blockquote>
                     <div className="d-flex justify-content-center">
@@ -371,42 +368,44 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         engineering leaders and their teams more effective.
                     </p>
                     <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
-                        <div className="d-flex py-5">
+                        <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
                                 <BullsEyeArrowIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
-                                <h3 className="font-weight-bold">Set goals</h3>
-                                <p>Set and measure goals around progress in your codebase</p>
+                                <div className="display-lg-3 font-weight-bold">Set goals</div>
+                                <p className="icon-paragraph">Measure goals and progress in your codebase.</p>
                             </div>
                         </div>
-                        <div className="d-flex py-5">
+                        <div className="d-flex py-lg-5 py-3">
                             <div className="icon mr-4">
                                 <RocketLaunchOutlineIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
-                                <h3 className="font-weight-bold">Plan proactively</h3>
-                                <p>Stay on top of engineering initiatives and catch issues before they escalate</p>
+                                <div className="display-lg-3 font-weight-bold">Plan proactively</div>
+                                <p className="icon-paragraph">
+                                    Stay on top of engineering initiatives and catch issues before they escalate
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
-                        <div className="d-flex py-5">
+                        <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
                                 <TrendingUpIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
-                                <h3 className="font-weight-bold">{'Track ownership & trends'}</h3>
-                                <p>Tie trends and metrics to owners on the teams</p>
+                                <div className="display-lg-3 font-weight-bold">{'Track ownership & trends'}</div>
+                                <p className="icon-paragraph">Tie trends and metrics to owners on the teams</p>
                             </div>
                         </div>
-                        <div className="d-flex py-5">
+                        <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
                                 <LighteningBoltOutlineIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
-                                <h3 className="font-weight-bold">Celebrate progress</h3>
-                                <p>Visualize the momentum and motivate your teammates</p>
+                                <div className="display-lg-3 font-weight-bold">Celebrate progress</div>
+                                <p className="icon-paragraph">Visualize the momentum and motivate your teammates</p>
                             </div>
                         </div>
                     </div>
@@ -421,11 +420,11 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-8 container video-embed embed-responsive embed-responsive-16by9 ">
                     <iframe
                         className="embed-responsive-item"
-                        src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                        src="https://www.youtube-nocookie.com/embed/fMCUJQHfbUA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
-                        title="Sourcegraph Batch Changes demo"
+                        title="Sourcegraph Code Insights demo"
                     ></iframe>
                 </div>
             </div>
@@ -435,9 +434,6 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         <div className="bg-gradient-blue-mist py-4 tab-section">
             <ContentSection className="py-4 py-md-7">
                 <h1 className="mb-2 text-center font-weight-bold">Popular Code Insights templates</h1>
-                <p className="text-center">
-                    Start levering Code Insights quickly and easily with these pre-built templates:
-                </p>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                         <div className="row mt-5">
@@ -492,9 +488,6 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         <div className="bg-gradient-blue-mist py-4 tab-carousel-section">
             <ContentSection className="py-4 py-md-7">
                 <h1 className="mb-2 text-center">Popular Code Insights templates</h1>
-                <p className="text-center">
-                    Start levering Code Insights quickly and easily with these pre-built templates:
-                </p>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                         <div className="row mt-5 justify-content-center">
@@ -540,11 +533,11 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         <div className="bg-light-gray2">
             <ContentSection>
                 <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
-                    <div className="col-lg-8 d-flex flex-column justify-content-start">
+                    <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
                         <h1 className="font-weight-bold">Get started with Code Insights</h1>
                         <p>
-                            Create a Code Insight in 60 seconds, then get historical data for metrics you never tracked
-                            until today without needing a time machine — data backfills automatically.
+                            Create a Code Insight in 60 seconds <strong>and</strong> get historical data for previously
+                            untracked metrics — data backfills automatically.
                         </p>
                     </div>
                     <div className="col-lg-7 d-flex flex-column pt-1">

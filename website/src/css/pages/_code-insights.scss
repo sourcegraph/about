@@ -9,15 +9,25 @@
         background-position: center right, top left;
         background-size: cover;
 
+        @media only screen and (max-width: 768px) {
+            padding: 50px 0 200px;
+        }
+
         h4 {
             font-weight: 400;
+        }
+    }
+
+    .video-container {
+        @media only screen and (max-width: 768px) {
+            order: 1;
         }
     }
 
     /* Icon overrides */
     .mdi-icon {
         &.icon {
-            border-radius: 40%;
+            border-radius: 45%;
             padding: 1rem;
             background-color: $white;
             color: $cyan-2;
@@ -68,6 +78,29 @@
 
         @media only screen and (max-width: 768px) {
             padding: 0;
+        }
+    }
+
+    /* Handle the different code insights chart sizes */
+    .set-height {
+        height: 425px;
+
+        @media only screen and (max-width: 768px) {
+            height: auto;
+        }
+    }
+
+    .set-height-panel {
+        height: auto;
+
+        @media only screen and (max-width: 768px) {
+            height: 450px;
+        }
+    }
+
+    .icon-paragraph {
+        @media only screen and (max-width: 768px) {
+            font-size: 14px;
         }
     }
 

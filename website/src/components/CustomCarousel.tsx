@@ -28,6 +28,7 @@ interface CarouselItem {
 
 const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const carouselMainStyles = 'd-flex flex-wrap'
+    const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6 px-0'
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
@@ -36,7 +37,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     return (
         <div className="custom-carousel py-lg-8">
             {title && <h2 className="carousel-title w-50 font-weight-bold ml-lg-6 mb-5">{title}</h2>}
-            <div className={classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass)}>
+            <div
+                className={
+                    autoAdvance
+                        ? classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'set-height')
+                        : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-lg-8')
+                }
+            >
                 <div
                     className={
                         carouselHook.autoAdvance
@@ -76,7 +83,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         }
                     />
                 </div>
-                <div className="col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6 px-0">
+                <div
+                    className={
+                        autoAdvance
+                            ? classNames(carouselRightPanelStyles, 'set-height-panel')
+                            : classNames(carouselRightPanelStyles)
+                    }
+                >
                     {carouselItems.map(item => (
                         <div
                             key={item.id}

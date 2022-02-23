@@ -8,7 +8,7 @@ export const SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA: SearchInsightData = {
     title: 'Migration to CSS modules',
     repositories: (
         <>
-            <span className={styles.keyword}>repo:</span>github.com/awesomeOrg/examplerepo
+            <span className={styles.keyword}>repo:</span>https://github.com/wildcard-org/wc-repo
         </>
     ),
     data: [
