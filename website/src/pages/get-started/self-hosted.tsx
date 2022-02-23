@@ -56,7 +56,7 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => {
                                 Sourcegraph <br />
                                 Self-Hosted
                             </h1>
-                            
+
                             <MostPopularBadge />
 
                             <p className="mt-4">
