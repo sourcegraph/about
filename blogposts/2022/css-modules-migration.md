@@ -134,7 +134,7 @@ It’s a multistep operation:
 - To achieve this, we used [PostCSS](https://github.com/postcss/postcss)—a ​tool for transforming styles with JS plugins. The resulting script is similar to [the postcss-nested plugin](https://github.com/postcss/postcss-nested), with some adjustments to remove the BEM notation.
 - Save a list of CSS Module classes in memory for later reference in the React component. It is done by using utility functions provided by [the css-modules-loader-core package](https://github.com/css-modules/css-modules-loader-core). They give us a list of classes available in a CSS Module that we can map ourselves to global CSS classes that we just transformed. For our toy example, it would look like this:
 
-```js
+````js
 const classMapping = {
   'insights-dashboard': 'insights-dashboard',
   'insights-dashboard__wrapper': 'wrapper',
@@ -207,3 +207,4 @@ We hope you found this account of our migration useful and will consider trying 
     font-style: italic;
   }
 </style>
+````
