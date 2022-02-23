@@ -353,7 +353,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         <ContentSection className="py-lg-5">
             <div className="row mx-lg-5">
                 {/* Placeholder */}
-                <div className="col-lg-7">
+                <div className="col-lg-6">
                     <video
                         className="w-100 h-100 shadow"
                         width={1280}
@@ -373,7 +373,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         />
                     </video>
                 </div>
-                <div className="col-lg-5 my-lg-7 mt-6">
+                <div className="col-lg-6 my-lg-7 mt-6">
                     <h2 className="mb-3 font-weight-bold">
                         Finally, useful engineering metrics <span style={{ fontStyle: 'italic' }}>you</span> define.
                     </h2>
