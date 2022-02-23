@@ -25,13 +25,26 @@ export const LOG_4_J_INCIDENT_INSIGHT: SearchInsightData = {
             dataKey: 'a',
             name: 'Updated log4j',
             stroke: DATA_SERIES_COLORS.GREEN,
-            query: 'lang:gradle org\\.apache\\.logging\\.log4j[\'"] 2\\.(17)(\\.[0-9]+) patterntype:regexp archived:no fork:no',
+            query: (
+                <>
+                    <span className={styles.keyword}>lang:</span>gradle org\\.apache\\.logging\\.log4j[\'"]
+                    2\\.(17)(\\.[0-9]+) <span className={styles.keyword}>patterntype:</span>regexp{' '}
+                    <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
+                </>
+            ),
         },
         {
             dataKey: 'b',
             name: 'Vulnerable log4j',
             stroke: DATA_SERIES_COLORS.RED,
-            query: 'lang:gradle org\\.apache\\.logging\\.log4j[\'"] 2\\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\\.[0-9]+) patterntype:regexp archived:no fork:no',
+            query: (
+                <>
+                    <span className={styles.keyword}>lang:</span>gradle org\\.apache\\.logging\\.log4j[\'"]
+                    2\\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\\.[0-9]+){' '}
+                    <span className={styles.keyword}>patterntype:</span>regexp{' '}
+                    <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
+                </>
+            ),
         },
     ],
     xAxis: {
@@ -171,19 +184,34 @@ export const DEPRECATED_API_USAGE_BY_TEAM: SearchInsightData = {
             dataKey: 'a',
             name: 'Cloud',
             stroke: DATA_SERIES_COLORS.ORANGE,
-            query: 'problemAPI file:CloudDirectory archived:no fork:no',
+            query: (
+                <>
+                    problemAPI <span className={styles.keyword}>file:</span>CloudDirectory{' '}
+                    <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork</span>:no
+                </>
+            ),
         },
         {
             dataKey: 'b',
             name: 'Core App',
             stroke: DATA_SERIES_COLORS.CYAN,
-            query: 'problemAPI file:CoreDirectory archived:no fork:no',
+            query: (
+                <>
+                    problemAPI <span className={styles.keyword}>file:</span>CoreDirectory{' '}
+                    <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
+                </>
+            ),
         },
         {
             dataKey: 'c',
             name: 'Extensibility',
             stroke: DATA_SERIES_COLORS.GRAPE,
-            query: 'problemAPI file:ExtnDirectory archived:no fork:no',
+            query: (
+                <>
+                    problemAPI <span className={styles.keyword}>file:</span>ExtnDirectory{' '}
+                    <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
+                </>
+            ),
         },
     ],
     xAxis: {
@@ -210,7 +238,13 @@ export const LINTER_OVERRIDES: SearchInsightData = {
             dataKey: 'a',
             name: 'Linter overrides',
             stroke: DATA_SERIES_COLORS.RED,
-            query: 'file:\\.eslintignore .\\n patternType:regexp archived:no fork:no',
+            query: (
+                <>
+                    <span className={styles.keyword}>file:</span>\\.eslintignore .\\n{' '}
+                    <span className={styles.keyword}>patternType:</span>regexp{' '}
+                    <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
+                </>
+            ),
         },
     ],
     xAxis: {
@@ -237,7 +271,13 @@ export const REPOS_WITH_CI_SYSTEM: SearchInsightData = {
             dataKey: 'a',
             name: 'Connected repos',
             stroke: DATA_SERIES_COLORS.GREEN,
-            query: 'file:\\.circleci/config.yml select:repo fork:no archived:no',
+            query: (
+                <>
+                    <span className={styles.keyword}>file:</span>\\.circleci/config.yml{' '}
+                    <span className={styles.keyword}>select:</span>repo{' '}
+                    <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
+                </>
+            ),
         },
     ],
     xAxis: {
