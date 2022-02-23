@@ -135,6 +135,8 @@
 
         @media only screen and (max-width: 768px) {
             height: 600px;
+            display: flex;
+            align-items: center;
         }
     }
 
@@ -164,6 +166,10 @@
             &.active {
                 font-weight: 600;
                 display: block;
+
+                @media only screen and (max-width: 768px) {
+                    margin: 10px 20px;
+                }
             }
 
             @media only screen and (max-width: 768px) {
