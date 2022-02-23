@@ -351,9 +351,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     <p>
                         Forget about inaccurate spreadsheets, manual processes, and missing historical data. You can{' '}
                         <strong>track everything in your codebase</strong>, from migrations to code smells, in a
-                        seamless and precise way. We've combined the{' '}
-                        <strong>power and accuracy of Sourcegraph Code Search </strong>with beautiful visualizations so
-                        you can make data-driven decisions.
+                        seamless and precise way. Make data-driven decisions using visualizations based on the power and
+                        accuracy of Sourcegraph Code Search.
                     </p>
                 </div>
             </div>
