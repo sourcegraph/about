@@ -16,7 +16,7 @@ Devs, engineering managers, and leadership across all companies and industries a
 
 And to do that, they need to answer common questions like: "How's the progress of that migration to &lt;the new GraphQL library|faster tests|the new Terraform version|the new CI tool|AWS RDS|etc.>?"
 
-Unfortunately, the common answer usually looks something like: “&lt;Feeling good!|Going well!|It's going.|Working on it.|Not sure, let me ping other teams.| _¯\_(ツ)_/¯ |_etc.>" Not exactly helpful or specific.
+Unfortunately, the common answer usually looks something like: “&lt;Feeling good!|Going well!|It's going.|Working on it.|Not sure, let me ping other teams.| _¯\_(ツ)_/¯ |\_etc.>" Not exactly helpful or specific.
 
 Sourcegraph’s mission has always been to make it so everyone can code, and that begins with making it easier for developers to do their jobs. Today we're shipping [Code Insights](/code-insights/), a new analytics product helping engineering teams be more data-driven in their decisions and communications.
 
@@ -46,25 +46,25 @@ _**For a real-world example, check out this blog post from our Frontend Platform
 
 How we’re seeing organizations use Code Insights so far:
 
-* _Track and finish major migrations and refactors_: know when microservice, platform, or language migrations will track to completion and celebrate progress.
-* _Unlock dev productivity_: track which areas of the code are lagging on a migration, upgrade, or standard to surface possible follow-up by team or repository.
-* _Get the full picture of an incident like log4j_: see how long the vulnerable code has been in a codebase and how quickly it’s being removed.
-* _Quantify and prioritize tech debt_: track specific code smells like deprecated version useage or linter overrides over time so teams can prioritize fixes to rising problems.
-* _Give new teammates a better onboarding experience_: track if code is well documented—does it have readmes, are there CODEOWNERS or customer ownership annotations, are there a lot of TODOs?
+- _Track and finish major migrations and refactors_: know when microservice, platform, or language migrations will track to completion and celebrate progress.
+- _Unlock dev productivity_: track which areas of the code are lagging on a migration, upgrade, or standard to surface possible follow-up by team or repository.
+- _Get the full picture of an incident like log4j_: see how long the vulnerable code has been in a codebase and how quickly it’s being removed.
+- _Quantify and prioritize tech debt_: track specific code smells like deprecated version useage or linter overrides over time so teams can prioritize fixes to rising problems.
+- _Give new teammates a better onboarding experience_: track if code is well documented—does it have readmes, are there CODEOWNERS or customer ownership annotations, are there a lot of TODOs?
 
 What we've heard from organizations using Code Insights in Beta:
 
-* A greater number of meaningful codebase improvements get started _and_ finished.
-* Engineers are better recognized and rewarded for important progress that was previously hard to quantify.
-* Teams are more motivated to finish projects—visualizing their progress with Code Insights makes that progress more tangible and easier to communicate to leadership and other teams.
+- A greater number of meaningful codebase improvements get started _and_ finished.
+- Engineers are better recognized and rewarded for important progress that was previously hard to quantify.
+- Teams are more motivated to finish projects—visualizing their progress with Code Insights makes that progress more tangible and easier to communicate to leadership and other teams.
 
 ## Why we had to build Code Insights
 
 Eng teams and leaders are a sophisticated bunch, but the current toolbox is failing them. There’s nothing out there with the visibility they need—because before you can even begin thinking about historical trends, you need a reliably exhaustive code search tool. So what they do today is try to source the information and visibility in a variety of hodgepodge, expensive ways that do not scale:
 
-* Asking a million people to provide status reports (and getting answers like the above)
-* Manually running brittle scripts that don't scale
-* Building workaround solutions in-house is limited to specific areas and only work if you remember to set them up at the very start of an initiative
+- Asking a million people to provide status reports (and getting answers like the above)
+- Manually running brittle scripts that don't scale
+- Building workaround solutions in-house is limited to specific areas and only work if you remember to set them up at the very start of an initiative
 
 See? Lots of time, resources, and frustration, and the outcome just isn’t great.
 
@@ -81,4 +81,3 @@ Then, as we built from concept to prototype to Beta to General Availability toda
 Code Insights has huge momentum after an incredible year of growth at Sourcegraph. More than 1.275 million devs used Sourcegraph over the last 12 months, including many of the world's leading engineering teams, like 3/5 FAANG, Reddit, Uber, GE, PayPal, and Dropbox. Those teams first came to Sourcegraph for Code Search, which remains foundational to everything we do as we’ve expanded our product with Code Insights and [Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes/).
 
 As we look ahead in 2022, we’re working on more ways to leverage search across Sourcegraph and give developers a more complete understanding of their codebase—so they can secure vulnerabilities, resolve incidents faster, automate key workflows, and ultimately do their best work.
-
