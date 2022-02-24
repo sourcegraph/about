@@ -4,7 +4,7 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
-import {Install} from '@components'
+import { Install } from '@components'
 import { BestForTitle, MostPopularBadge } from '.'
 
 import styles from './getStarted.module.scss'
@@ -21,14 +21,17 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => (
         location={props.location}
         meta={{
             title: 'Get Started with Sourcegraph Self-Hosted',
-            description: 'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
+            description:
+                'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
         }}
-        hero={<div className="container-xl py-5">
-            <h1 className="display-1 mb-2">
-                <strong>What's best for you?</strong>
-            </h1>
-            <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
-        </div>}
+        hero={
+            <div className="container-xl py-5">
+                <h1 className="display-1 mb-2">
+                    <strong>What's best for you?</strong>
+                </h1>
+                <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
+            </div>
+        }
         heroAndHeaderClassName={styles.hero}
         hideGetStartedButton={true}
     >
@@ -46,16 +49,16 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => (
                         <MostPopularBadge />
 
                         <p className="mt-4">
-                            Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
-                            locally. Get started for free.
+                            Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally.
+                            Get started for free.
                         </p>
 
                         <BestForTitle />
                         <p>Teams and enterprises</p>
 
                         <p>
-                            Collaborate with your team on any code host (including private hosts) and access
-                            advanced security functionality.
+                            Collaborate with your team on any code host (including private hosts) and access advanced
+                            security functionality.
                         </p>
                     </div>
                 </div>
