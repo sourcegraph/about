@@ -275,9 +275,9 @@ const Index: React.FunctionComponent = (props: any) => (
                             and more with visualizations that are easy to customize and kept automatically up to date.
                         </p>
                         <div className="pt-1">
-                            <a className="d-flex align-items-center" href="/code-insights">
+                            <Link className="d-flex align-items-center" to="/code-insights">
                                 Learn more about Code Insights <ArrowRightBoxIcon className="icon-inline ml-1" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

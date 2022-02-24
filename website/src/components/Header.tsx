@@ -184,7 +184,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                     <a href="/batch-changes">Batch Changes</a>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
-                                                    <a href="/code-insights">Code Insights</a>
+                                                    <Link to="/code-insights">Code Insights</Link>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
                                                     <a href="https://docs.sourcegraph.com/code_intelligence">
