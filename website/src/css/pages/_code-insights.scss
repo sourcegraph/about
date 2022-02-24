@@ -138,7 +138,7 @@
         height: auto;
 
         @media only screen and (max-width: 768px) {
-            height: 600px;
+            height: 550px;
             display: flex;
             align-items: center;
         }
@@ -173,6 +173,7 @@
 
                 @media only screen and (max-width: 768px) {
                     margin: 10px 20px;
+                    height: 120px;
                 }
             }
 
@@ -180,7 +181,7 @@
                 padding: 0;
                 margin: 20px 0;
                 display: none;
-                font-size: 36px;
+                font-size: 34px;
                 line-height: 2.5rem;
             }
         }
