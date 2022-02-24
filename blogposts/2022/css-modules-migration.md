@@ -56,7 +56,7 @@ We knew we could search the codebase manually for relevant files and make conclu
 
 “Code Insights reveals high-level information about your codebase, based on both how your code changes over time and its current state.” – [source](https://docs.sourcegraph.com/code_insights).
 
-Code Insights entered Beta in August 2021, and we happily started using it to track the migration progress. As of today, [Code Insights is now Generally Available](LINK TO ANNOUNCEMENT).
+Code Insights entered Beta in August 2021, and we happily started using it to track the migration progress. As of today, [Code Insights is now Generally Available](/blog/announcing-code-insights/).
 
 <figure>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-css-modules-insight.png" alt="Abstract syntax tree">
