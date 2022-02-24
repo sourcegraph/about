@@ -34,15 +34,15 @@ exports.onInitialClientRender = function () {
  * Strip provided URL parameters and update window history
  */
 function stripURLParameters(url, parametersToRemove) {
-    const parsedUrl = new URL(url)
-    for (const key of parametersToRemove) {
-        if (parsedUrl.searchParams.has(key)) {
-            parsedUrl.searchParams.delete(key)
-        }
+  const parsedUrl = new URL(url)
+  for (const key of parametersToRemove) {
+    if (parsedUrl.searchParams.has(key)) {
+      parsedUrl.searchParams.delete(key)
     }
-    window.history.replaceState(window.history.state, window.document.title, parsedUrl.href)
+  }
+  window.history.replaceState(window.history.state, window.document.title, parsedUrl.href)
 }
-const UTM_PARAMETER_KEYS = ["utm_source", "utm_campaign", "utm_medium", "utm_term", "utm_content"]
+const UTM_PARAMETER_KEYS = ['utm_source', 'utm_campaign', 'utm_medium', 'utm_term', 'utm_content']
 
 exports.onRouteUpdate = function ({ location }) {
   // TODO: @attfarhan fix condition to ensure "tracker is configured"
