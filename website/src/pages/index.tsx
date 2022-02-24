@@ -6,7 +6,7 @@ import { ContentSection } from '../components/content/ContentSection'
 import { IntegrationsSection } from '../components/IntegrationsSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
-import GetStarted from '../components/GetStarted'
+import { SelfHostedSection } from '../components/SelfHostedSection'
 
 const Index: React.FunctionComponent = (props: any) => (
     <Layout location={props.location}>
@@ -220,7 +220,7 @@ const Index: React.FunctionComponent = (props: any) => (
                 </div>
             </ContentSection>
 
-            <ContentSection className="mt-6">
+            <ContentSection className="my-6">
                 <div className="row">
                     <div className="col-lg-5">
                         <div className="text-uppercase mb-3">Batch Changes</div>
@@ -283,7 +283,7 @@ const Index: React.FunctionComponent = (props: any) => (
                 </div>
             </ContentSection>
 
-            <GetStarted className="bg-gradient-green-blue mt-6" />
+            <SelfHostedSection />
         </div>
     </Layout>
 )

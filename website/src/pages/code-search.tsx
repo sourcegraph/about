@@ -1,16 +1,13 @@
 import { Link, PageProps } from 'gatsby'
-import * as React from 'react'
+import React, { FunctionComponent } from 'react'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
-import Tab from 'react-bootstrap/Tab'
-import Tabs from 'react-bootstrap/Tabs'
-import { TrySourcegraph } from '../components/TrySourcegraph'
 import { IntegrationsSection } from '../components/IntegrationsSection'
-import GetStarted from '../components/GetStarted'
+import { SelfHostedSection } from '../components/SelfHostedSection'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
-export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
+export const CodeSearchPage: FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
         meta={{
@@ -128,7 +125,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
 
         <IntegrationsSection />
 
-        <ContentSection>
+        <ContentSection className="mb-6">
             <h2 className="display-3 font-weight-bold mt-5 mb-4">How developers are using Sourcegraph</h2>
             <div className="row">
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 border">
@@ -164,7 +161,7 @@ export const CodeSearchPage: React.FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <GetStarted className="bg-gradient-green-blue mt-6" />
+        <SelfHostedSection />
     </Layout>
 )
 

@@ -1,0 +1,70 @@
+@import '@styles/colors';
+
+@mixin BgGradientPrimary {
+    background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
+}
+@mixin BgGradientGreenBlue {
+    background: linear-gradient(90deg, $light-green 0%, $light-blue 100%);
+}
+@mixin BgGradientBlueGreen {
+    background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
+}
+@mixin BgGradientBluePurple {
+    background: linear-gradient(90deg, $light-blue 0%, $light-purple 100%);
+}
+@mixin BgGradientPurpleYellow {
+    background: linear-gradient(90deg, $light-purple 0%, $light-yellow 100%);
+}
+@mixin BgGradientPurpleBlue2 {
+    background: linear-gradient(90deg, $light-purple 0%, $light-blue2 100%);
+}
+@mixin BgGradientYellowGreen2 {
+    background: linear-gradient(90deg, $light-yellow 0%, $light-green2 100%);
+}
+@mixin BgGradientGreen2Red {
+    background: linear-gradient(90deg, $light-green 0%, $light-red 100%);
+}
+@mixin BgGradientRedBlue2 {
+    background: linear-gradient(90deg, $light-red 0%, $light-blue2 100%);
+}
+@mixin BgGradientBlue2Blue {
+    background: linear-gradient(90deg, $light-blue2 0%, $light-blue 100%);
+}
+@mixin BgGradientBlueMist {
+    background: radial-gradient(ellipse at top left, rgba($blue-mist, 0.5), transparent),
+        radial-gradient(ellipse at bottom right, rgba($light-green2, 0.5), transparent);
+}
+
+.bg-gradient-primary {
+    @include BgGradientPrimary;
+}
+.bg-gradient-green-blue {
+    @include BgGradientGreenBlue;
+}
+.bg-gradient-blue-green {
+    @include BgGradientBlueGreen;
+}
+.bg-gradient-blue-purple {
+    @include BgGradientBluePurple;
+}
+.bg-gradient-purple-yellow {
+    @include BgGradientPurpleYellow;
+}
+.bg-gradient-purple-blue2 {
+    @include BgGradientPurpleBlue2;
+}
+.bg-gradient-yellow-green2 {
+    @include BgGradientYellowGreen2;
+}
+.bg-gradient-green2-red {
+    @include BgGradientGreen2Red;
+}
+.bg-gradient-red-blue2 {
+    @include BgGradientRedBlue2;
+}
+.bg-gradient-blue2-blue {
+    @include BgGradientBlue2Blue;
+}
+.bg-gradient-blue-mist {
+    @include BgGradientBlueMist;
+}
