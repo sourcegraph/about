@@ -4,7 +4,7 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
-import {Install} from '@components'
+import { Install } from '../../components/Install'
 import { BestForTitle, MostPopularBadge } from '.'
 
 import styles from './getStarted.module.scss'
