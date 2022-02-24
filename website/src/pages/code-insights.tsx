@@ -417,7 +417,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Set goals</div>
-                                <p className="icon-paragraph">Measure goals and progress in your codebase.</p>
+                                <p className="icon-paragraph">Measure goals and progress in your codebase</p>
                             </div>
                         </div>
                         <div className="d-flex py-lg-5 py-3">
