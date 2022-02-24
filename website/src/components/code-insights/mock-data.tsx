@@ -255,7 +255,7 @@ export const LINTER_OVERRIDES: SearchInsightData = {
 }
 
 export const REPOS_WITH_CI_SYSTEM: SearchInsightData = {
-    title: '# of repos connected tp the CI system',
+    title: '# of repos connected to the CI system',
     repositories: 'All repositories',
     data: [
         { x: new Date('August 1, 2021'), a: 60 },
