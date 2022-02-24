@@ -274,15 +274,15 @@ const templates = {
 const blogListItems = [
     {
         title: 'How we migrated entirely to CSS Modules using codemods and Sourcegraph Code Insights',
-        description: ' Learn about why we built Code Insights from our CEO.',
+        description:
+            'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.',
         type: 'Blog',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
         title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
-        description:
-            'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.',
+        description: 'Learn about why we built Code Insights from our CEO.',
         type: 'Blog',
         image: 'https://sourcegraphstatic.com/blog/code-insights-ga-blogs/announcement-header.png',
         href: '/blog/announcing-code-insights',
