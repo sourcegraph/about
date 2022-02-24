@@ -1,7 +1,7 @@
 ---
 title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time'
 author: Quinn Slack
-description:
+description: "Devs, engineering managers, and leadership across all companies and industries are looking for a better understanding of their codebase. Code Insights allows you to create insights for anything you can search for in seconds."
 publishDate: 2022-02-24T12:00-00:00
 tags: [blog]
 slug: announcing-code-insights
