@@ -11,12 +11,11 @@ sourcegraph/server:3.37.0
 `
 
 export const Install: React.FunctionComponent = () => {
-
     const [copied, setCopied] = useState(false)
 
     const copy = async () => {
         if (navigator.clipboard) {
-            await navigator.clipboard.writeText(installText)            
+            await navigator.clipboard.writeText(installText)
         } else {
             /**
              * Warning: execCommand is deprecated but we use it as a fallback.
@@ -43,11 +42,7 @@ export const Install: React.FunctionComponent = () => {
             <h4>
                 Install Sourcegraph locally
                 <span onClick={copy} role="button">
-                    <img
-                        src="/copy-text-icon.svg"
-                        alt="copy script to clipboard"
-                        className="icon-inline ml-4"
-                    />
+                    <img src="/copy-text-icon.svg" alt="copy script to clipboard" className="icon-inline ml-4" />
                 </span>
             </h4>
 
@@ -56,5 +51,4 @@ export const Install: React.FunctionComponent = () => {
             </code>
         </div>
     )
-
 }
