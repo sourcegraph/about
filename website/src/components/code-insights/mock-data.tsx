@@ -27,8 +27,8 @@ export const LOG_4_J_INCIDENT_INSIGHT: SearchInsightData = {
             stroke: DATA_SERIES_COLORS.GREEN,
             query: (
                 <>
-                    <span className={styles.keyword}>lang:</span>gradle org\\.apache\\.logging\\.log4j[\'"]
-                    2\\.(17)(\\.[0-9]+) <span className={styles.keyword}>patterntype:</span>regexp{' '}
+                    <span className={styles.keyword}>lang:</span>gradle org\.apache\.logging\.log4j[\'"]
+                    2\.(17)(\.[0-9]+) <span className={styles.keyword}>patterntype:</span>regexp{' '}
                     <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
                 </>
             ),
@@ -39,8 +39,8 @@ export const LOG_4_J_INCIDENT_INSIGHT: SearchInsightData = {
             stroke: DATA_SERIES_COLORS.RED,
             query: (
                 <>
-                    <span className={styles.keyword}>lang:</span>gradle org\\.apache\\.logging\\.log4j[\'"]
-                    2\\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\\.[0-9]+){' '}
+                    <span className={styles.keyword}>lang:</span>gradle org\.apache\.logging\.log4j[\'"]
+                    2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\.[0-9]+){' '}
                     <span className={styles.keyword}>patterntype:</span>regexp{' '}
                     <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
                 </>
@@ -110,7 +110,7 @@ export const ALPINE_VERSIONS_INSIGHT: CaptureGroupInsightData = {
     repositories: 'All repositories',
     query: (
         <>
-            <span className={styles.keyword}>patterntype:</span>regexp FROM\\s+alpine:([\\d\\.]+){' '}
+            <span className={styles.keyword}>patterntype:</span>regexp FROM\s+alpine:([\d\.]+){' '}
             <span className={styles.keyword}>file:</span>Dockerfile
         </>
     ),
@@ -240,7 +240,7 @@ export const LINTER_OVERRIDES: SearchInsightData = {
             stroke: DATA_SERIES_COLORS.RED,
             query: (
                 <>
-                    <span className={styles.keyword}>file:</span>\\.eslintignore .\\n{' '}
+                    <span className={styles.keyword}>file:</span>\.eslintignore .\n{' '}
                     <span className={styles.keyword}>patternType:</span>regexp{' '}
                     <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
                 </>
@@ -273,7 +273,7 @@ export const REPOS_WITH_CI_SYSTEM: SearchInsightData = {
             stroke: DATA_SERIES_COLORS.GREEN,
             query: (
                 <>
-                    <span className={styles.keyword}>file:</span>\\.circleci/config.yml{' '}
+                    <span className={styles.keyword}>file:</span>\.circleci/config.yml{' '}
                     <span className={styles.keyword}>select:</span>repo{' '}
                     <span className={styles.keyword}>archived:</span>no <span className={styles.keyword}>fork:</span>no
                 </>
