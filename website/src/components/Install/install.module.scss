@@ -1,0 +1,14 @@
+@import "@styles/colors";
+
+@keyframes flashBackground {
+    0% {
+        background: $light-yellow;
+    }
+    100% {
+        background-color: none;
+    }
+}
+
+.flashBackground {
+    animation: flashBackground 1s ease-out;
+}

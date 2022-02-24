@@ -4,6 +4,7 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
+import {Install} from '@components'
 import { BestForTitle, MostPopularBadge } from '.'
 
 import styles from './getStarted.module.scss'
@@ -15,101 +16,69 @@ export const BackButton: FunctionComponent<{ search: string }> = ({ search }) =>
     </Link>
 )
 
-export const SelfHostedPage: FunctionComponent<PageProps> = props => {
-    const copyText = () => {
-        const copyText = document.getElementById('installText').textContent
-        const textArea = document.createElement('textarea')
-        document.getElementById('installText').style.backgroundColor = '#ccedff'
-        textArea.textContent = copyText
-        document.body.append(textArea)
-        textArea.select()
-        document.execCommand('copy')
-        document.body.removeChild(textArea)
-    }
+export const SelfHostedPage: FunctionComponent<PageProps> = props => (
+    <Layout
+        location={props.location}
+        meta={{
+            title: 'Get Started with Sourcegraph Self-Hosted',
+            description: 'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
+        }}
+        hero={<div className="container-xl py-5">
+            <h1 className="display-1 mb-2">
+                <strong>What's best for you?</strong>
+            </h1>
+            <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
+        </div>}
+        heroAndHeaderClassName={styles.hero}
+        hideGetStartedButton={true}
+    >
+        <div className={`${styles.root} bg-gradient-blue-purple py-5`}>
+            <div className="row container-xl mx-auto py-5">
+                <div className="col-lg-6">
+                    <div>
+                        <BackButton search={props.location.search} />
 
-    return (
-        <Layout
-            location={props.location}
-            meta={{
-                title: 'Get Started with Sourcegraph Self-Hosted',
-                description:
-                    'Deploy and control Sourcegraph in your own infrastructure, or use Docker to install locally. Get started for free.',
-            }}
-            hero={
-                <div className="container-xl py-5">
-                    <h1 className="display-1 mb-2">
-                        <strong>What's best for you?</strong>
-                    </h1>
-                    <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
-                </div>
-            }
-            heroAndHeaderClassName={styles.hero}
-            hideGetStartedButton={true}
-        >
-            <div className={`${styles.root} bg-gradient-blue-purple py-5`}>
-                <div className="row container-xl mx-auto py-5">
-                    <div className="col-lg-6">
-                        <div>
-                            <BackButton search={props.location.search} />
+                        <h1 className="display-2 font-weight-bolder mb-2">
+                            Sourcegraph <br />
+                            Self-Hosted
+                        </h1>
 
-                            <h1 className="display-2 font-weight-bolder mb-2">
-                                Sourcegraph <br />
-                                Self-Hosted
-                            </h1>
+                        <MostPopularBadge />
 
-                            <MostPopularBadge />
+                        <p className="mt-4">
+                            Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
+                            locally. Get started for free.
+                        </p>
 
-                            <p className="mt-4">
-                                Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
-                                locally. Get started for free.
-                            </p>
+                        <BestForTitle />
+                        <p>Teams and enterprises</p>
 
-                            <BestForTitle />
-                            <p>Teams and enterprises</p>
-
-                            <p>
-                                Collaborate with your team on any code host (including private hosts) and access
-                                advanced security functionality.
-                            </p>
-                        </div>
+                        <p>
+                            Collaborate with your team on any code host (including private hosts) and access
+                            advanced security functionality.
+                        </p>
                     </div>
+                </div>
 
-                    <div className="col-lg-6">
-                        <div className="bg-white p-5">
-                            <h4>
-                                Install Sourcegraph locally
-                                <span onClick={copyText}>
-                                    <img src="/copy-text-icon.svg" className="icon-inline ml-4" />
-                                </span>
-                            </h4>
-                            <code>
-                                <small id="installText">
-                                    docker run <br />
-                                    --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm <br />
-                                    --volume ~/.sourcegraph/config:/etc/sourcegraph <br />
-                                    --volume ~/.sourcegraph/data:/var/opt/sourcegraph <br />
-                                    sourcegraph/server:3.37.0
-                                </small>
-                            </code>
-                        </div>
+                <div className="col-lg-6">
+                    <Install />
 
-                        <div className="d-flex flex-column align-items-start">
-                            <a
-                                className="btn p-0 my-4 text-primary"
-                                href="https://info.sourcegraph.com/talk-to-a-developer"
-                            >
-                                Talk to an engineer <ArrowRightIcon />
-                            </a>
+                    <div className="d-flex flex-column align-items-start">
+                        <a
+                            className="btn p-0 my-4 text-primary"
+                            href="https://info.sourcegraph.com/talk-to-a-developer"
+                        >
+                            Talk to an engineer <ArrowRightIcon />
+                        </a>
 
-                            <a className="btn p-0 text-primary" href="https://docs.sourcegraph.com/">
-                                Deploy to a server or cluster <ArrowRightIcon />
-                            </a>
-                        </div>
+                        <a className="btn p-0 text-primary" href="https://docs.sourcegraph.com/">
+                            Deploy to a server or cluster <ArrowRightIcon />
+                        </a>
                     </div>
                 </div>
             </div>
-        </Layout>
-    )
-}
+        </div>
+    </Layout>
+)
 
 export default SelfHostedPage
