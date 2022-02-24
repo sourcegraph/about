@@ -45,7 +45,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                               currentCarousel.currentItem?.backgroundClass,
                               'flex-column set-height'
                           )
-                        : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-lg-8')
+                        : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-8 py-lg-8')
                 }
             >
                 <div

@@ -96,10 +96,6 @@
         transition: background-color 0.5s ease;
         padding: 16rem 0;
 
-        @media only screen and (max-width: 768px) {
-            padding: 6rem;
-        }
-
         li {
             font-size: 1.5rem;
             line-height: 1.4rem;
