@@ -8,8 +8,8 @@ interface Props {
 }
 
 export const InContentImage: FunctionComponent<Props> = ({ src, caption, alt, className }) => (
-    <p>
+    <figure>
         <img src={src} className={className} alt={alt} />
-        {caption && <footer className="blockquote-footer">{caption}</footer>}
-    </p>
+        {caption && <figcaption className="blockquote-footer">{caption}</figcaption>}
+    </figure>
 )
