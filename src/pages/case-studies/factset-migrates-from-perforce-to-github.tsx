@@ -20,7 +20,7 @@ export const CaseStudy: FunctionComponent = () => {
                 title="FactSet migrates from Perforce to GitHub"
                 logo="/external-logos/factset-logo.svg"
                 quote={{
-                    quote: 'With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub.',
+                    text: 'With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub.',
                     author: derrickFaunce,
                     image: '/case-studies/derrick-faunce.png',
                 }}
