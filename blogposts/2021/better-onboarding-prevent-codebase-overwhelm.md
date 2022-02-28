@@ -103,6 +103,10 @@ Marek stated, “Sometimes when you’re reaching for a particular tool or libra
 
 Ensuring it’s clear which tools are available and in use helps new developers quickly find their footing, familiarizing themselves with codebases and coding conventions and eliminating the need to start from scratch every time.
 
+<div class="alert alert-primary" role="alert" style="max-width:650px; text-align: center; margin: auto auto 20px auto">
+Read about how robust, universal code search<a href = "/case-studies/convoy-improved-on-boarding"> enables developers at Convoy to onboard faster by quickly getting to know the repository structure, tracking down where code lives, and self-servicing during investigations</a>.
+</div>
+
 Successful software engineer onboarding doesn’t just affect the quality of the work, but pushes a company forward by integrating new hires as an essential, valuable part of a team, significantly decreasing the time for new developers to be productive, motivated, and feel fulfilled in their work.
 Solving for the issues inherent with the emergence of Big Code, together, is a vital part of it.
 
@@ -111,6 +115,10 @@ Solving for the issues inherent with the emergence of Big Code, together, is a v
 Multi-tiered onboarding provides a layered, holistic view of the organization.
 
 Some things should be standard across the organization: setting up and familiarizing oneself with shared collaboration tools (email, chat, issue tracker, code review, CI/CD) and understanding the "big picture" of what the company does and how the various organizations interact with each other.
+
+<div class="alert alert-primary" role="alert" style="max-width:650px; text-align: center; margin: auto auto 20px auto">
+Keep reading: <a href = "/blog/ex-googler-guide-dev-tools">An ex-Googler’s guide to dev tools</a>
+</div>
 
 At Digital Ocean, says [Limor Bergman](https://www.linkedin.com/in/limorbergman/), former Director of Engineering at Digital Ocean and current Director of Mentorship at PowerToFly, department heads would give recurring presentations attended by every batch of new hires about how each department operated.
 
