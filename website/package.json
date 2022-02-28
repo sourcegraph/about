@@ -20,7 +20,7 @@
     "deploy": "yarn run build && firebase deploy"
   },
   "dependencies": {
-    "@sourcegraph/event-logger": "^2.0.0",
+    "@sourcegraph/event-logger": "^2.0.1",
     "@types/js-cookie": "2.2.7",
     "@types/react-helmet": "6.1.2",
     "@visx/grid": "^2.6.0",
