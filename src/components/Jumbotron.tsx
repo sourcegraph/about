@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 export const COLORS = {
     white: '',
@@ -23,7 +23,7 @@ const styles = {
     `,
 }
 
-export const Jumbotron: React.FunctionComponent<Props> = ({
+export const Jumbotron: FunctionComponent<Props> = ({
     className = '',
     color = 'white',
     logomark = true,

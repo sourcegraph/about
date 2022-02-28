@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 interface Props {
     formAction: string
@@ -6,7 +6,7 @@ interface Props {
     className?: string
 }
 
-export const SubmitEmailForm: React.FunctionComponent<Props> = ({ formAction, buttonText, className = '' }) => (
+export const SubmitEmailForm: FunctionComponent<Props> = ({ formAction, buttonText, className = '' }) => (
     <div>
         <form
             className={`form form-inline input-group mb-2 d-inline-flex w-auto ${className}`}

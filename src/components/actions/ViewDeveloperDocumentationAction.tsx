@@ -1,5 +1,5 @@
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 interface Props {
     className?: string
@@ -7,7 +7,7 @@ interface Props {
     children?: React.ReactNode
 }
 
-export const ViewDeveloperDocumentationAction: React.FunctionComponent<Props> = ({
+export const ViewDeveloperDocumentationAction: FunctionComponent<Props> = ({
     className = '',
     url = 'https://docs.sourcegraph.com/',
     children = 'Read the docs and install',

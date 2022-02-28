@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { Layout, CaseStudyLayout, ContentSection, InContentImage, InContentBlockquote } from '@components'
 
-export const CaseStudy: React.FunctionComponent = () => (
+export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph empowers CERN to tackle code reuse and code changes in mission-critical applications',

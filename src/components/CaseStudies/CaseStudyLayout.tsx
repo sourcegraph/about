@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { ContentSection, RequestDemoForm, MediaQuote } from '@components'
 import { stringToKebabCase } from '@util'
@@ -24,7 +24,7 @@ interface Props {
     children?: React.ReactNode
 }
 
-export const CaseStudyLayout: React.FunctionComponent<Props> = ({
+export const CaseStudyLayout: FunctionComponent<Props> = ({
     customer,
     title,
     logo,

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { SubmitEmailForm } from './SubmitEmailForm'
 
@@ -7,7 +7,7 @@ interface Props {
     now?: boolean
 }
 
-export const RequestCodeChangeManagementDemoAction: React.FunctionComponent<Props> = ({
+export const RequestCodeChangeManagementDemoAction: FunctionComponent<Props> = ({
     className = '',
     now = false,
 }): JSX.Element => {

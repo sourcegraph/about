@@ -1,6 +1,6 @@
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
@@ -23,7 +23,7 @@ const onRightClickLogo = (event: React.MouseEvent): void => {
     }
 }
 
-const Header = (props: Props): JSX.Element => {
+const Header: FunctionComponent<Props> = props => {
     const [isOpen, setIsOpen] = useState(false)
     const [productMenuOpen, setProductMenuOpen] = useState(false)
     const [resourcesMenuOpen, setResourcesMenuOpen] = useState(false)

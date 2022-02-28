@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
 
-export const CaseStudy: React.FunctionComponent = () => {
+export const CaseStudy: FunctionComponent = () => {
     const derrickFaunce = 'Derrick Faunce, Associate Director of Developer Services'
 
     return (

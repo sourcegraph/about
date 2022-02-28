@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { SubmitEmailForm } from './SubmitEmailForm'
 
@@ -7,7 +7,7 @@ interface Props {
     buttonText?: string
 }
 
-export const RequestDemoAction: React.FunctionComponent<Props> = ({
+export const RequestDemoAction: FunctionComponent<Props> = ({
     className = '',
     buttonText = 'Request a demo',
 }) => <SubmitEmailForm formAction="/contact/request-demo" buttonText={buttonText} className={className} />

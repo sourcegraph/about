@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
 
-export const CaseStudy: React.FunctionComponent = () => {
+export const CaseStudy: FunctionComponent = () => {
     const trentGrover = 'Trent Grover, Director of Architecture, Workiva'
 
     return (
@@ -20,7 +20,7 @@ export const CaseStudy: React.FunctionComponent = () => {
                 title="Workiva reduces the time it takes to make large-scale code changes by 80%"
                 logo="/external-logos/workiva-logo.svg"
                 quote={{
-                    quote: 'Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of large-scale code changes before we make them. This enables the entire team to make more impactful decisions more often.',
+                    text: 'Sourcegraph Batch Changes gives us the confidence we need to understand the total impact of large-scale code changes before we make them. This enables the entire team to make more impactful decisions more often.',
                     author: trentGrover,
                     image: '/case-studies/trent-grover-workiva.jpg',
                 }}

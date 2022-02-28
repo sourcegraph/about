@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
 
-export const CaseStudy: React.FunctionComponent = () => (
+export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Quantcast adopts Sourcegraph Universal Code Search for large scale refactoring',

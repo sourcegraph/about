@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { ContactPresalesSupportAction } from './ContactPresalesSupportAction'
 import { RequestDemoAction } from './RequestDemoAction'
@@ -11,7 +11,7 @@ const styles = {
     `,
 }
 
-export const GetSourcegraphNowActions: React.FunctionComponent = () => (
+export const GetSourcegraphNowActions: FunctionComponent = () => (
     <div className="d-flex justify-content-center w-100 pt-2 my-3">
         <div className={`flex-0 rounded rounded-lg py-4 px-6 ${styles.inner}`}>
             <RequestDemoAction className="mt-4" />

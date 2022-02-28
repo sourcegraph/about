@@ -2,7 +2,7 @@ import path from 'path'
 
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { getAllPages } from '@lib'
 import { slugToTitleCase } from '@util'
@@ -11,7 +11,7 @@ interface CaseStudiesHomeProps {
     slugs: string[]
 }
 
-const CaseStudiesHome: React.FunctionComponent<CaseStudiesHomeProps> = ({ slugs }) => (
+const CaseStudiesHome: FunctionComponent<CaseStudiesHomeProps> = ({ slugs }) => (
     <>
         <div>
             <div>

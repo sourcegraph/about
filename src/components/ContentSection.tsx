@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 const COLORS = {
     none: '',
@@ -19,7 +19,7 @@ interface Props {
     children: React.ReactNode
 }
 
-export const ContentSection: React.FunctionComponent<Props> = ({
+export const ContentSection: FunctionComponent<Props> = ({
     id = '',
     color = 'none',
     className = '',

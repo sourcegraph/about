@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { Layout, CaseStudyLayout, ContentSection, InContentImage, InContentBlockquote } from '@components'
 
-export const CaseStudy: React.FunctionComponent = () => (
+export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Criteo uses Sourcegraph universal code search to tackle Big Code',

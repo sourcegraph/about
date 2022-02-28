@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { ContentSection } from './ContentSection'
 
@@ -8,7 +8,7 @@ interface Props {
     demoFormURL?: string
 }
 
-export const RequestDemoForm: React.FunctionComponent<Props> = ({
+export const RequestDemoForm: FunctionComponent<Props> = ({
     title = 'See Sourcegraph in action.',
     description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
     demoFormURL = 'https://info.sourcegraph.com/demo-request',

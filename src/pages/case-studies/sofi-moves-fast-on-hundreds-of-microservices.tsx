@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import { Layout, CaseStudyLayout, ContentSection } from '@components'
 
-export const CaseStudy: React.FunctionComponent = () => (
+export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'SoFi manages hundreds of microservices',
