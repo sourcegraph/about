@@ -335,9 +335,9 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </>
         }
     >
-        <ContentSection className="py-6">
+        <ContentSection className="py-8">
             <div className="row justify-content-between">
-                <div className="col-lg-6 ml-lg-6 d-flex align-items-center video-container">
+                <div className="col-lg-7 ml-lg-6 d-flex align-items-center video-container">
                     <video
                         className="w-100 h-auto shadow"
                         autoPlay={true}
@@ -356,7 +356,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         />
                     </video>
                 </div>
-                <div className="col-lg-5 my-lg-7 mt-6">
+                <div className="col-lg-4 pl-lg-0">
                     <h2 className="mb-3 font-weight-bold">
                         Finally, useful engineering metrics <span style={{ fontStyle: 'italic' }}>you</span> define.
                     </h2>

@@ -107,14 +107,17 @@
         @media only screen and (min-width: 768px) {
             display: none;
         }
-
-        @media only screen and (max-width: 768px) {
-            height: 650px;
-        }
     }
 
     .tab-carousel {
         transition: background-color 0.5s ease;
+
+        .d-block,
+        .d-none {
+            @media only screen and (max-width: 768px) {
+                height: 355px;
+            }
+        }
     }
 
     .icon-subheader {
@@ -158,7 +161,7 @@
             flex-direction: row;
         }
 
-        .carousel-item {
+        .custom-carousel-item {
             font-size: 1.5rem;
             line-height: 1.4rem;
             cursor: pointer;
@@ -166,6 +169,8 @@
             display: block;
             margin: 10px 0 10px 10px;
             font-size: 18px;
+            float: left;
+            width: 100%;
 
             &.active {
                 font-weight: 600;
@@ -183,6 +188,7 @@
                 display: none;
                 font-size: 34px;
                 line-height: 2.5rem;
+                width: auto;
             }
         }
 

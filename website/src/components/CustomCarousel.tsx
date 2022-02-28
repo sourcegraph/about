@@ -35,15 +35,15 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const currentCarousel = carouselHook.carouselItems as CarouselProps
 
     return (
-        <div className="custom-carousel py-lg-8">
-            {title && <h2 className="carousel-title w-50 font-weight-bold ml-lg-6 mb-5">{title}</h2>}
+        <div className="custom-carousel pb-lg-8 pb-6">
+            {title && <h2 className="carousel-title w-50 font-weight-bold mt-lg-3 ml-lg-6 mb-5">{title}</h2>}
             <div
                 className={
                     autoAdvance
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'flex-column set-height'
+                              'justify-content-between set-height'
                           )
                         : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-8 py-lg-8')
                 }
@@ -65,8 +65,8 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             <li
                                 className={
                                     item === carouselHook.carouselItems.currentItem
-                                        ? 'carousel-item active'
-                                        : 'carousel-item'
+                                        ? 'custom-carousel-item active'
+                                        : 'custom-carousel-item'
                                 }
                                 key={item.id}
                                 onClick={() => carouselHook.moveCarousel(item.id)}
