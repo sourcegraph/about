@@ -20,7 +20,7 @@ export const CaseStudy: FunctionComponent = () => {
                 title="Indeed keeps code up to date and accelerates development velocity"
                 logo="/external-logos/indeed-logo.svg"
                 quote={{
-                    quote: 'The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key capability for reducing the hidden burden of updates pushed across teams and enabling us to increase our engineering velocity.',
+                    text: 'The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key capability for reducing the hidden burden of updates pushed across teams and enabling us to increase our engineering velocity.',
                     author: jaredHodge,
                     image: '/case-studies/jared-hodge-indeed.jpg',
                 }}

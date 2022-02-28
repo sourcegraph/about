@@ -19,7 +19,7 @@ export const CaseStudy: FunctionComponent = () => {
                 title="Cloudflare accelerates debugging and improves security"
                 logo="/external-logos/cloudflare-white-logo.png"
                 quote={{
-                    quote: 'Sourcegraph is the only code search tool that natively integrates with our code and understands how our code works.',
+                    text: 'Sourcegraph is the only code search tool that natively integrates with our code and understands how our code works.',
                     author: terinStock,
                     image: '/case-studies/terin-stock-cloudflare.jpg',
                 }}
