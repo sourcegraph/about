@@ -119,7 +119,7 @@ It’s a multistep operation:
 }
 ```
 
-⬇
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" class="snippet-arrow" xml:space="preserve"><path fill="#223" d="M44.78.03 24.511 20.516 4.241.03.066 4.253l24.446 24.71L48.957 4.251 44.78.029zM1.685 4.39l2.626-2.79 20.2 20.764L44.85 1.532l2.555 2.65-22.961 23.21-22.758-23z"></path></svg>
 
 ```css
 .insights-dashboard {
@@ -159,7 +159,7 @@ Codemod replaces every string literal match with reference to the corresponding 
 <div className="insights-dashboard__wrapper" />
 ```
 
-⬇
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" class="snippet-arrow" xml:space="preserve"><path fill="#223" d="M44.78.03 24.511 20.516 4.241.03.066 4.253l24.446 24.71L48.957 4.251 44.78.029zM1.685 4.39l2.626-2.79 20.2 20.764L44.85 1.532l2.555 2.65-22.961 23.21-22.758-23z"></path></svg>
 
 ```jsx
 <div className={styles.wrapper} />
@@ -187,7 +187,7 @@ Another challenge we faced was that we kept breaking our own rules: In quite a f
 
 To keep executing the migration behind the scenes, we started working with contractors to help us handle cases that the codemod could not address. It was another productivity lever akin to the codemod that immensely helped us to focus on critical problems while keeping the migration process going in the background.
 
-<blockquote class="twitter-tweet" tw-align-center"><p lang="en" dir="ltr">Nothing like using <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a> to build <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a>—we&#39;re migrating from global CSS to CSS Modules and our frontend platform team is using Code Insights to track migration progress: <a href="https://t.co/1lRqYjLiwz">pic.twitter.com/1lRqYjLiwz</a></p>&mdash; Beyang Liu (@beyang) <a href="https://twitter.com/beyang/status/1454937232368832522?ref_src=twsrc%5Etfw">October 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Nothing like using <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a> to build <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a>—we&#39;re migrating from global CSS to CSS Modules and our frontend platform team is using Code Insights to track migration progress: <a href="https://t.co/1lRqYjLiwz">pic.twitter.com/1lRqYjLiwz</a></p>&mdash; Beyang Liu (@beyang) <a href="https://twitter.com/beyang/status/1454937232368832522?ref_src=twsrc%5Etfw">October 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Overview of the outcome
 
@@ -202,12 +202,27 @@ We're relying on the same combination of Code Insights and codemods in our subse
 We hope you found this account of our migration useful and will consider trying codemods and Code Insights in your work.
 
 <style>
-  figure .no-shadow { box-shadow: none; }
-  .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
+  figure .no-shadow {
+     box-shadow: none;
+  }
+
+  .workingtable-highlight td {
+     color: #ffffff;
+     background-color: #005cb9;
+  }
 
   figcaption {
     text-align: center;
     margin-top: -2rem;
     font-style: italic;
+  }
+
+  .blog-post__html .gatsby-highlight {
+    margin: 1.25rem auto;
+  }
+
+  .snippet-arrow {
+    display: block;
+    margin: 2rem auto;
   }
 </style>
