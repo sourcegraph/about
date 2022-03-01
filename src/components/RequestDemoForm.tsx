@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import { ContentSection } from './ContentSection'
+import { ContentSection } from '@components'
 
 interface Props {
     title?: string

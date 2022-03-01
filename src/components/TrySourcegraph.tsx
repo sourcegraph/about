@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { FunctionComponent } from 'react'
 
-import { ContentSection } from '.'
+import { ContentSection } from '@components'
 
 interface Props {
     demoFormURL?: string
