@@ -17,4 +17,11 @@ export {
 } from './actions'
 
 // Page Specific
-export { CaseStudyJumbotron, CaseStudyLayout, CaseStudyCard, InContentBlockquote, InContentImage, MediaQuote } from './CaseStudies'
+export {
+    CaseStudyJumbotron,
+    CaseStudyLayout,
+    CaseStudyCard,
+    InContentBlockquote,
+    InContentImage,
+    MediaQuote,
+} from './CaseStudies'

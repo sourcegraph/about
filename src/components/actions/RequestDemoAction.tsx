@@ -7,7 +7,6 @@ interface Props {
     buttonText?: string
 }
 
-export const RequestDemoAction: FunctionComponent<Props> = ({
-    className = '',
-    buttonText = 'Request a demo',
-}) => <SubmitEmailForm formAction="/contact/request-demo" buttonText={buttonText} className={className} />
+export const RequestDemoAction: FunctionComponent<Props> = ({ className = '', buttonText = 'Request a demo' }) => (
+    <SubmitEmailForm formAction="/contact/request-demo" buttonText={buttonText} className={className} />
+)

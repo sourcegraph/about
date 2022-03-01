@@ -113,16 +113,16 @@ const CaseStudiesHome: FunctionComponent<CaseStudiesHomeProps> = () => (
                 <ContentSection>
                     <div className="container">
                         <div className="d-flex flex-wrap">
-                        {CASESTUDIES.map(study => (
-                            <div className="d-flex col-lg-4 mb-6" key={study.name}>
-                                <CaseStudyCard
-                                    name={study.name}
-                                    logo={study.logo}
-                                    title={study.title}
-                                    url={study.url}
-                                />
-                            </div>
-                        ))}
+                            {CASESTUDIES.map(study => (
+                                <div className="d-flex col-lg-4 mb-6" key={study.name}>
+                                    <CaseStudyCard
+                                        name={study.name}
+                                        logo={study.logo}
+                                        title={study.title}
+                                        url={study.url}
+                                    />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </ContentSection>
