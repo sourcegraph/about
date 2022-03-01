@@ -14,7 +14,7 @@ published: true
 
 In Spring 2021, the Sourcegraph team [overhauled the design system and UI of our web application](/blog/introducing-sourcegraphs-new-ui/). It was an ambitious project because, along with improving the UX, we strove to make web interfaces more consistent, which required the collaboration of most product teams. The task was also challenging from a technical perspective because the application styles were implemented using global CSS rules with Bootstrap as a foundation. Our UI components were typically styled in three different ways:
 
-1. Using a combination of Bootstrap utility classes.
+1. Using a combination of [Bootstrap utility classes](https://getbootstrap.com/docs/4.0/layout/utilities-for-layout/).
 2. Using a custom class specific to the element.
 3. Using global styles inherited from the global scope.
 
@@ -32,7 +32,7 @@ To overcome these issues, we decided that, before diving into the redesign, we s
 
 ## CSS Modules solution
 
-We researched popular solutions available in the open source universe: trade-offs between CSS in JS, regular CSS, and hybrid solutions. Some offered more powerful features, but we decided to use a solution that we knew we could easily adopt—CSS modules.
+We researched popular solutions available in the open source universe: trade-offs between CSS in JS, regular CSS, and hybrid solutions. Some offered more powerful features, but we decided to use a solution that we knew we could easily adopt — CSS modules.
 
 ### What are CSS Modules?
 
@@ -46,7 +46,7 @@ This approach is designed to fix the problem of the global scope in CSS. Enginee
 
 ## Migration tracking challenges
 
-The Frontend Platform team started the migration by manually converting global styles to CSS modules for a single, recently developed feature. We quickly noticed that despite some initial progress, we had some questions that slowed us down:
+[The Frontend Platform team](https://handbook.sourcegraph.com/departments/product-engineering/engineering/enablement/frontend-platform/) started the migration by manually converting global styles to CSS modules for a single, recently developed feature. We quickly noticed that despite some initial progress, we had some questions that slowed us down:
 
 1. How can we know whether CSS Modules are continuously used for new features added to the project?
 2. What’s our current progress? What percentage of global styles have already been converted to CSS Modules?
@@ -59,7 +59,7 @@ We knew we could search the codebase manually for relevant files and make conclu
 Code Insights entered Beta in August 2021, and we happily started using it to track the migration progress. As of today, [Code Insights is now Generally Available](/blog/announcing-code-insights/).
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-css-modules-insight.png" alt="Abstract syntax tree">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-css-modules-insight.png" alt="Count of CSS files that are global vs module files." style="width: 60%;">
   <figcaption>Count of CSS files that are global vs module files.</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ A codemod is an automated change to source code, which helps platform teams exec
 4. Regenerate the source file based on the new AST.
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/abstract-syntax-tree.svg" alt="Abstract syntax tree" class="no-shadow">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/abstract-syntax-tree.svg" alt="High-level visual representation of the codemod." class="no-shadow">
   <figcaption>High-level visual representation of the codemod.</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ It’s a multistep operation:
 }
 ```
 
-- To achieve this, we used [PostCSS](https://github.com/postcss/postcss)—a ​tool for transforming styles with JS plugins. The resulting script is similar to [the postcss-nested plugin](https://github.com/postcss/postcss-nested), with some adjustments to remove the BEM notation.
+- To achieve this, we used [PostCSS](https://github.com/postcss/postcss) — a ​tool for transforming styles with JS plugins. The resulting script is similar to [the postcss-nested plugin](https://github.com/postcss/postcss-nested), with some adjustments to remove the BEM notation.
 - Save a list of CSS Module classes in memory for later reference in the React component. It is done by using utility functions provided by [the css-modules-loader-core package](https://github.com/css-modules/css-modules-loader-core). They give us a list of classes available in a CSS Module that we can map ourselves to global CSS classes that we just transformed. For our toy example, it would look like this:
 
 ```js
@@ -141,13 +141,13 @@ const classMapping = {
 }
 ```
 
-- As a final touch, add `.module.scss` to the filename required for build-tools to interpret this file as a CSS Module.
+- As a final touch, add `.module.scss` to the filename required for [build-tools to interpret this file as a CSS Module](https://webpack.js.org/loaders/css-loader/#modules).
 
 ### 3. Replace references to global classes in the React component using a list of CSS Modules classes preserved from the previous step.
 
-To manipulate Typescript AST, we used [ts-morph](https://github.com/dsherret/ts-morph) —TypeScript Compiler API wrapper for static analysis and programmatic code changes. Relying on this package API, the codemod script iterates over all string literals in the React component AST and searches for global classes processed in the previous step.
+To manipulate Typescript AST, we used [ts-morph](https://github.com/dsherret/ts-morph) — TypeScript Compiler API wrapper for static analysis and programmatic code changes. Relying on this package API, the codemod script iterates over all string literals in the React component AST and searches for global classes processed in the previous step.
 
-Here’s the AST generated for our small example. Explore it yourself using [astexplorer](https://astexplorer.net/#/gist/eca630c9f5464e6b027ec13aac91711a/4295e325b8cdad474f9d4f559248f534e709356e).
+Here’s the AST generated for our small example. Explore it yourself using [AST Explorer](https://astexplorer.net/#/gist/eca630c9f5464e6b027ec13aac91711a/4295e325b8cdad474f9d4f559248f534e709356e).
 
 <figure>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/insights-dashboard-ast.png" alt="Insights dashboard AST"
@@ -170,7 +170,7 @@ At this point, the transformation is complete, and the script outputs informatio
 The codemod script can be used as a CLI tool by supplying a list of files to transform:
 
 ```sh
-$ yarn transform --write --transform ./globalCsstoCssModule.ts ./sourcegraph/**/*.tsx
+$ yarn transform --transform ./globalCssToCssModule.ts ./sourcegraph/**/*.tsx
 ```
 
 ## First codemod results
@@ -199,7 +199,7 @@ We successfully migrated to CSS Modules behind the scenes, delivering on the “
 
 We're relying on the same combination of Code Insights and codemods in our subsequent significant migration from global Bootstrap classes to our new Wildcard design system. We find this approach is more than just automating some simple tasks and speeding up the development work, as it helps keep engineers happy by reducing manual labor when upgrading their projects' dependencies, refactoring legacy patterns, or fixing bugs if the next version of a public API has breaking changes. As a next step, we plan to make codemods useful for engineers outside of the Frontend Platform team by developing [a higher-level toolkit for creating codemods](https://github.com/sourcegraph/codemod) that will eventually make it as simple as writing a regex find-and-replace.
 
-We hope you found this account of our migration useful and will consider trying codemods and Code Insights in your work.
+We hope you found this account of our migration useful and will consider trying codemods and [Code Insights](/blog/announcing-code-insights/) in your work.
 
 <style>
   figure .no-shadow {
