@@ -225,4 +225,10 @@ We hope you found this account of our migration useful and will consider trying 
     display: block;
     margin: 2rem auto;
   }
+
+  div.gatsby-highlight > pre {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>
