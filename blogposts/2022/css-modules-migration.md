@@ -59,7 +59,7 @@ We knew we could search the codebase manually for relevant files and make conclu
 Code Insights entered Beta in August 2021, and we happily started using it to track the migration progress. As of today, [Code Insights is now Generally Available](/blog/announcing-code-insights/).
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-css-modules-insight.png" alt="Count of CSS files that are global vs module files." style="width: 50%;">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-css-modules-insight.png" alt="Count of CSS files that are global vs module files." style="width: 32rem;">
   <figcaption>Count of CSS files that are global vs module files.</figcaption>
 </figure>
 
@@ -227,7 +227,7 @@ We hope you found this account of our migration useful and will consider trying 
   }
 
   div.gatsby-highlight > pre {
-    width: 75%;
+    width: 40rem;
     margin-left: auto;
     margin-right: auto;
   }
