@@ -3,6 +3,7 @@ export { Layout } from './Layout'
 export { ContentSection } from './ContentSection'
 export { Jumbotron } from './Jumbotron'
 export { RequestDemoForm } from './RequestDemoForm'
+export { TrySourcegraph } from './TrySourcegraph'
 
 // Actions
 export {
@@ -16,4 +17,4 @@ export {
 } from './actions'
 
 // Page Specific
-export { CaseStudyJumbotron, CaseStudyLayout, InContentBlockquote, InContentImage, MediaQuote } from './CaseStudies'
+export { CaseStudyJumbotron, CaseStudyLayout, CaseStudyCard, InContentBlockquote, InContentImage, MediaQuote } from './CaseStudies'

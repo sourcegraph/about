@@ -14,7 +14,7 @@ interface LayoutProps {
         image?: string
         icon?: string
     }
-    children: ReactNode | ReactFragment
+    children: ReactNode
     minimal?: boolean
 
     hero?: ReactFragment
