@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import Link from 'next/link'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import React from 'react'
 
