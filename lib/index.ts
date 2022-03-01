@@ -1,1 +1,1 @@
-export { getAllPages } from './getAllPages'
+export { getPages, getMarkdownPages } from './api'
