@@ -5,9 +5,9 @@ import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 import { getMarkdownPages, loadMarkdownFile, serializeMdxSource } from '@lib'
 
-interface PageProps {
-    page: Page
-    content: MDXRemoteSerializeResult
+export interface PageProps {
+    page?: Page
+    content?: MDXRemoteSerializeResult
 }
 
 interface FrontMatter {
@@ -24,26 +24,26 @@ interface FrontMatter {
 
 }
 
-interface Page {
+export interface Page {
     content: string
     frontMatter: FrontMatter
 }
 
 const CONTENT_PARENT_DIRECTORY = './content/terms'
 
-const Page: NextPage<PageProps> = ({ page, content }) => (
+export const Page: NextPage<PageProps> = ({ page, content }) => (
     <div>
-        <h1>{page.frontMatter.title}</h1>
-        <MDXRemote {...content} />
+        {page && (<h1>{page.frontMatter.title}</h1>)}
+        {content && (<MDXRemote {...content} />)}
     </div>
 )
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = await getMarkdownPages(path.join(process.cwd(), CONTENT_PARENT_DIRECTORY))
-    const slugs = paths.map(path => path.slugPath)
+    const slugs = paths.map(path => path.slugPath.split('/'))
 
     return {
-        paths: slugs.map((slug: string) => ({ params: { slug } })),
+        paths: slugs.map(slug => ({ params: { slug } })),
         fallback: false,
     }
 }
@@ -53,8 +53,7 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false }
         throw new Error('Missing slug')
     }
 
-    console.log(path.resolve('./content', 'terms'))
-    const page = await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, `${params.slug as string}.md`)) as Page
+    const page = await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, `${(params.slug as string[]).join('/')}.md`)) as Page
     const content = await serializeMdxSource(page.content)
 
     return {
@@ -65,5 +64,3 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false }
         }
     }
 }
-
-export default Page

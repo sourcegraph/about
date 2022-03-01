@@ -9,9 +9,7 @@ See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of Sourcegraph Cloud.
 
-<div class="p-3" style="background: #f2f4f8; word-wrap: break-word;">
-
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Is this the right Terms of Service for me?
 
@@ -27,11 +25,11 @@ Are you interested in terms for...
 
 - **Sourcegraph extensions**: If you’d like to use any extensions made available via our [Extension Registry](https://sourcegraph.com/extensions), please understand that extensions made available by third-parties are not provided by us and are generally governed by separate terms and conditions. Extensions that are developed and distributed by us are governed by these terms and conditions.
 
-- **[Government](https://about.sourcegraph.com/terms-gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our Supplemental Terms for U.S. Government Users at https://about.sourcegraph.com/terms-gov apply. Those terms and conditions supplement these terms and conditions.</div>
+- **[Government](https://about.sourcegraph.com/terms-gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our Supplemental Terms for U.S. Government Users at https://about.sourcegraph.com/terms-gov apply. Those terms and conditions supplement these terms and conditions.
 
 PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION. THE AGREEMENT CONTAINS A MANDATORY INDIVIDUAL ARBITRATION AND CLASS ACTION/JURY TRIAL WAIVER PROVISION THAT REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR CLASS ACTIONS.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 0. Table of contents
 
@@ -57,7 +55,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 | 16. [Miscellaneous](#16-Miscellaneous)                                                                                                | Miscellaneous topics                                |
 
 <br/>
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 1. Definitions
 
@@ -85,13 +83,13 @@ As used on this page, the following terms have the following specific meanings:
 
 1.10 **“You”** refers to the individual person, company, or organization that has visited or is using the Site or Services, that accesses an Account, or that directs the use of the Account. If you’re entering into the Agreement on behalf of your company or organization (your **“Organization”**), then (i) the Agreement is an agreement between us and you and us and that Organization and your acceptance of this Agreement binds that Organization, (ii) you represent and warrant that you’re authorized to bind that Organization to the Agreement and that you've read, understood, and agree to be bound by the Agreement on that Organization’s behalf, and (iii) references to "you" herein will mean you and that Organization.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 2. Account terms
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: You are responsible for your account and its security, as well as everything posted on it. You must be 18 or over to use our services.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: You are responsible for your account and its security, as well as everything posted on it. You must be 18 or over to use our services.</i></span>
 
 2.1 **Account Responsibility and Security.**
 
@@ -109,13 +107,13 @@ As used on this page, the following terms have the following specific meanings:
 
 2.2 **Required Information**. In order to register for an Account, you must provide all of the information we request during the onboarding process. We may use that information in accordance with our [Privacy Policy](/privacy).
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 3. Proprietary rights and licenses
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: You’re allowed to use the services for any reasonable purpose (e.g. don’t use it to host illegal content). Because the services are made available on a hosted basis, we – like most sites – will collect data about your use of the services (e.g., click rates and other metadata) and can use it to run our business. If you give us a great idea about how to improve our services, we can use it.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: You’re allowed to use the services for any reasonable purpose (e.g. don’t use it to host illegal content). Because the services are made available on a hosted basis, we – like most sites – will collect data about your use of the services (e.g., click rates and other metadata) and can use it to run our business. If you give us a great idea about how to improve our services, we can use it.</i></span>
 
 3.1 **License from Us to You**.
 
@@ -150,25 +148,25 @@ As used on this page, the following terms have the following specific meanings:
 
 3.6 **Beta Services**. We may make beta and experimental products, features, and Documentation available to you on an early access basis (**“Beta Services”**). Beta Services are not generally available and may contain bugs, defects, and errors. We provide Beta Services “as is,” without warranties, and may discontinue the Beta Services at any time. Our service level agreements do not apply to Beta Services. If and when the Beta Services become generally available, you will have the option to pay for the software or discontinue its use. We may use your feedback about Beta Services.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 4. Usage data
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: We have the right to collect usage data from Sourcegraph, as described in our [Privacy Policy](/privacy).</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: We have the right to collect usage data from Sourcegraph, as described in our [Privacy Policy](/privacy).</i></span>
 
 In the course of your use of the Services, we may collect certain information about your use, including aggregated data derived from you and other users’ access and use of the Services (**“Usage Data”**). You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products and services.
 
 If we share or publicly disclose any information constituting or derived from Usage Data (e.g., in marketing materials), we will aggregate or anonymize that information to avoid identifying you or any other individual.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 5. Privacy and security
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.</i></span>
 
 User privacy is important to us. Please read our [Privacy Policy](/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us.
 
@@ -176,13 +174,13 @@ We have implemented commercially reasonable technical and organizational measure
 
 If you are an Organization established in the European Economic Area, the United Kingdom or Switzerland, or otherwise obliged to comply with the General Data Protection Regulation, we will process any information relating to identified or identifiable natural persons in accordance with our [Data Processing Addendum](/dpa), which will be incorporated by reference into the terms of this Agreement.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 6. Confidentiality
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: We will each protect the other party's confidential information.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: We will each protect the other party's confidential information.</i></span>
 
 6.1 **Definition**. **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
 
@@ -195,13 +193,13 @@ If you are an Organization established in the European Economic Area, the United
 
 6.3 **Restrictions on Use and Disclosure**. Neither party will use the other party’s Confidential Information except as permitted under this Agreement. Each party agrees to maintain in confidence and protect the other party’s Confidential Information using at least the same degree of care as it uses for its own information of a similar nature, but in any event at least a reasonable degree of care. Each party agrees to take all reasonable precautions to prevent any unauthorized disclosure of the other party’s Confidential Information, including, without limitation, disclosing such Confidential Information only to its employees, independent contractors, consultants, and legal and financial advisors (collectively, **“Representatives”**) who (i) have a need to know such information, and (ii) are subject to confidentiality obligations at least as protective of the Confidential Information as the terms of this Agreement. Each party is responsible for all acts and omissions of its Representatives. The foregoing obligations will not restrict either party from disclosing Confidential Information of the other party if required by any governmental body, so long as, to the extent allowed under applicable law, the party required to make the disclosure gives reasonable notice to the other party to enable it to contest the requirement. The restrictions set forth in this Section will survive the termination or expiration of this Agreement.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 7. Term; termination
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: You may shut down your Account any time. We may terminate the agreement at any time, at which point your right to use the Services will immediately expire.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: You may shut down your Account any time. We may terminate the agreement at any time, at which point your right to use the Services will immediately expire.</i></span>
 
 7.1 **Subscription Period**. Unless otherwise stated in an Order Form, this Agreement starts on the earlier of the date on which you: (a) agree to the terms and conditions of this Agreement; or (b) first register for an Account and will continue in effect until either you or we terminate it (the “Subscription Period” or “Term”).
 
@@ -211,13 +209,13 @@ If you are an Organization established in the European Economic Area, the United
 
 7.4 **Effect of Termination; Survival**. Upon termination of this Agreement, you may no longer use the Services, and if any fees were owed prior to termination, you must pay those fees immediately. Any provisions of this Agreement that, by their terms or their nature, should survive the termination of this Agreement shall so survive. For purposes of clarity, your right to use the Services will not survive any termination of this Agreement. Following termination of this Agreement, Sourcegraph will remove your Content from the Services.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 8. Fees
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.</i></span>
 
 8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) or in an Order Form and applicable taxes associated with the Services in a timely manner with a valid payment method. Unless otherwise stated in an Order Form, you will pay all invoices within thirty (30) days of receipt. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
 
@@ -229,13 +227,13 @@ If you are an Organization established in the European Economic Area, the United
 
 8.5 **Renewals**. Unless otherwise stated in an Order Form, your subscription will be automatically renew for one (1) year terms at the then-current fees and your credit card account (or other payment method account) will be charged without further authorization from you, absent sixty (60) day written notice of non-renewal prior to the end of your current subscription term.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 9. Third party services and software
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Third party services and software may be necessary for Sourcegraph Cloud to work (examples include libraries Sourcegraph uses internally, code hosts, authentication providers, external code analyzers, monitoring and tracing tools, etc.). We’re not responsible for anything provided by a third party, and additional terms and conditions may apply.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: Third party services and software may be necessary for Sourcegraph Cloud to work (examples include libraries Sourcegraph uses internally, code hosts, authentication providers, external code analyzers, monitoring and tracing tools, etc.). We’re not responsible for anything provided by a third party, and additional terms and conditions may apply.</i></span>
 
 You may enable the Services to call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We do not share Your Code with third-party services, unless you enable the integration or extension. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk.
 
@@ -243,13 +241,13 @@ The Services may contain copyrighted software of our licensors (**“Third Party
 
 If there's ever a conflict between the terms of this Agreement and the terms applicable to any Third Party Software, and the conflict relates to the use of that Third Party Software, their terms and conditions will govern the conflict.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 10. Copyright infringement and DMCA policy
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: If you think we (or a user of the services) is infringing your copyrights, let us know and we’ll handle it in compliance with law.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: If you think we (or a user of the services) is infringing your copyrights, let us know and we’ll handle it in compliance with law.</i></span>
 
 We respect the intellectual property of others and ask that you do too. We reserve the right to delete or disable content alleged to be infringing and terminate accounts of repeat infringers. If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible via the Services, please notify our copyright agent as set forth in the DMCA. For your complaint to be valid under the DMCA, you must provide the following information in writing:
 
@@ -276,13 +274,13 @@ Please note that this procedure is exclusively for notifying us that your copyri
 
 In accordance with the DMCA and other applicable law, we have adopted a policy of terminating, in appropriate circumstances, users who are deemed to be repeat infringers. We may also at our sole discretion limit access to the Services and/or terminate the Accounts of any users who infringe any intellectual property rights of others, whether or not there is any repeat infringement.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 11. Warranties; disclaimer
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Other than the warranties explicitly described in this Section, the Services and Code Data are provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: Other than the warranties explicitly described in this Section, the Services and Code Data are provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span>
 
 We warrant that (1) the Services will perform materially in accordance with the applicable Documentation when accessed and used as recommended in the Documentation and in accordance with the Agreement and (2) to the best of our knowledge, the Services are free from, and we will not knowingly introduce, software viruses, worms, Trojan horses or other code, files, scripts, or agents intended to do harm. Your sole and exclusive remedy for breach of the warranties in this section is set forth in Section 7.2.
 
@@ -290,13 +288,13 @@ OTHER THAN THE WARRANTIES EXPLICITLY SET FORTH IN THIS SECTION 11, THE SERVICES 
 
 CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS AS PROVIDED BY LAW.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 12. Limitation of liability
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Our liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us for access to the services. Please read this section carefully.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: Our liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us for access to the services. Please read this section carefully.</i></span>
 
 UNDER NO CIRCUMSTANCES WILL EITHER PARTY (OR ITS AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SERVICES, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
@@ -306,13 +304,13 @@ IN NO EVENT WILL EACH PARTY'S (OR ITS AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, 
 
 You acknowledge and agree that we have offered our products and services, set our prices, and entered into the Agreement in reliance upon the disclaimers of warranty and the limitations of liability set forth herein, that the disclaimers of warranty and the limitations of liability set forth herein reflect a reasonable and fair allocation of risk between the parties (including the risk that a contract remedy may fail of its essential purpose and cause consequential loss), and that the disclaimers of warranty and the limitations of liability set forth herein form an essential basis of the bargain between you and us.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 13. Indemnification
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.</i></span>
 
 13.1 **By You**. You agree to defend us and our affiliates, directors, officers, employees, and contractors from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Services in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any third-party intellectual property or other right of any person or entity, or any other party’s access and use of the Services with your unique username, password, or other appropriate security code.
 
@@ -320,25 +318,25 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 13.3 **Procedure**. Each party must give the other prompt written notice of any defense or indemnity sought and reasonable cooperation in the defense. The defending party will have sole control of the defense and settlement, provided that neither party may enter into a settlement placing any material obligation of any kind, including any admission of liability or payment of any amount, on the other party without the other party’s prior written approval, not to be unreasonably withheld, conditioned, or delayed.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 14. Location of the Services; export controls
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: The services are located in the US (where we’re located). Don’t use them if you’re located in an embargoed country.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: The services are located in the US (where we’re located). Don’t use them if you’re located in an embargoed country.</i></span>
 
 14.1 **Location of the Services**. The Services are controlled and operated from our facilities in the United States. We make no representations that the Services is appropriate or available for use in other locations. Those who access or use the Services from other jurisdictions do so at their own volition and are entirely responsible for compliance with local law, including but not limited to export and import regulations. You may not use the Services if you are a resident of a country embargoed by the United States, or are a foreign person or entity blocked or denied by the United States government. Unless otherwise explicitly stated, all materials found on the Services are solely directed to individuals, companies, or other entities located in the U.S. By using the Services, you are consenting to have your personal data transferred to and processed in the United States.
 
 14.2 **Export Controls**. The Services and the underlying information and technology may not be downloaded or otherwise exported or re-exported (a) into (or to a national or resident of) any country to which the U.S. has embargoed goods; or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Commerce Department's Table of Deny Orders. By downloading or using the Services, you are agreeing to the foregoing and you represent and warrant that you are not located in, under the control of, or a national or resident of any such country or on any such list and you agree to comply with all export laws and other applicable laws.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 15. Governing law; arbitration; and class action/jury trial waiver
 
 </span>
 
-<span style="color:#777777"><i>**Short version**: We’re based in California, so the agreement is governed by California law, and all disputes must be brought there. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: We’re based in California, so the agreement is governed by California law, and all disputes must be brought there. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.</i></span>
 
 15.1 **Governing Law**. The Agreement shall be governed by the internal substantive laws of the State of California, without respect to its conflict of laws principles. Notwithstanding the preceding sentence with respect to the substantive law, any arbitration conducted pursuant to the terms of these Terms shall be governed by the Federal Arbitration Act (9 U.S.C. §§ 1-16). The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. You agree to submit to the personal jurisdiction of the federal and state courts located in Santa Clara County, California for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a our copyrights, trademarks, trade secrets, patents, or other intellectual property or proprietary rights, as set forth in the Arbitration provision below, including any provisional relief required to prevent irreparable harm. You agree that Santa Clara County, California is the proper forum for any appeals of an arbitration award or for trial court proceedings if the arbitration provision below is found to be unenforceable.
 
@@ -346,7 +344,7 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 15.3 **Class Action/Jury Trial Waiver**. WITH RESPECT TO ALL PERSONS AND ENTITIES, REGARDLESS OF WHETHER THEY HAVE OBTAINED OR USED THE SERVICES FOR PERSONAL, COMMERCIAL OR OTHER PURPOSES, ALL CLAIMS MUST BE BROUGHT IN THE PARTIES' INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION OR OTHER REPRESENTATIVE PROCEEDING. THIS WAIVER APPLIES TO CLASS ARBITRATION, AND, UNLESS WE AGREE OTHERWISE, THE ARBITRATOR MAY NOT CONSOLIDATE MORE THAN ONE PERSON'S CLAIMS. YOU AGREE THAT, BY ENTERING INTO THE AGREEMENT, WE ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION, COLLECTIVE ACTION, PRIVATE ATTORNEY GENERAL ACTION, OR OTHER REPRESENTATIVE PROCEEDING OF ANY KIND.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## 16. Miscellaneous
 

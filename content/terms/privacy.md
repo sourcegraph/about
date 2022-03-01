@@ -9,7 +9,7 @@ Sourcegraph, Inc. (**"Sourcegraph," "we," "our,"** or **"us"**) understands that
 
 Capitalized terms that are not defined in this Privacy Policy have the meaning given them in our <a href="/terms">Terms of Service</a>.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Data controller
 
@@ -19,7 +19,7 @@ The Data Controller for Sourcegraph and our Services is:
 
 Sourcegraph, Inc. <br/>981 Mission St, San Francisco, CA 94103
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## What types of information do we collect, and for what purpose
 
@@ -33,7 +33,7 @@ The categories of information we collect can include:
 
 We use this information to operate, maintain, and provide to you the features of the Services. We may use this information to communicate with you, such as to send you email messages, and to follow up with you to offer news and information about our Services. We may also send you Service-related emails or messages (e.g., account verification, change or updates to features of the Services, technical and security notices). For more information about your communication preferences, see "Your Choices About Your Information" below.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## How we use cookies and other tracking technology to collect information
 
@@ -43,7 +43,7 @@ We use this information to operate, maintain, and provide to you the features of
 
 Sourcegraph collects aggregate and high-level information about usage from self-hosted Sourcegraph instances through a server ping. The server ping sends a payload containing data such as total number of users and whether certain features are enabled or in use.
 
-<div class="mt-4 mb-4 p-3" style="background: #f2f4f8; word-wrap: break-word;">For more information about the specific information we have access to, see our <a href="https://docs.sourcegraph.com/admin/pings">server pings documentation</a>. Customers can contact Sourcegraph at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a> to opt out of server pings.</div>
+<div class="mt-4 mb-4 p-3" style={{background: '#f2f4f8'}}>For more information about the specific information we have access to, see our <a href="https://docs.sourcegraph.com/admin/pings">server pings documentation</a>. Customers can contact Sourcegraph at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a> to opt out of server pings.</div>
 
 The only personal information collected is the email address of the initial Sourcegraph installer and site admin (or, if that user is deleted or demoted to not be an admin, the first such active site admin). This information allows us to contact the technical administrator of the Sourcegraph instance to deliver information about product updates and policy changes, and for customer development purposes. Other than the initial site admin email address, only aggregates of usage data are sent: no usernames, user emails, user personal information, code, repository names, file names, URLs, or other such private content is sent to Sourcegraph.
 
@@ -84,7 +84,7 @@ We use third-party applications such as Stripe and Xero to manage corporate bill
 
 We and our third-party partners may also use cookies and tracking technologies for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. on Sourcegraph.com (never on private or self-hosted instances). For more information about tracking technologies, please see [“Third-party tracking and online advertising”](#Third-party-tracking-and-online-advertising) below.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Bases for processing your information
 
@@ -96,7 +96,7 @@ We and our third-party partners may also use cookies and tracking technologies f
 
 **Consent:** We may rely on your consent to use your personal information for certain direct marketing purposes, such as sending you newsletter updates about Sourcegraph products. You may withdraw your consent at any time through the unsubscribe feature provided with each marketing email or by contacting us at the addresses given at the end of this Privacy Policy.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Sharing your information
 
@@ -118,7 +118,7 @@ We may also aggregate or otherwise strip data of all personally identifying char
 
 Any information or content that you voluntarily disclose for posting to the Website becomes available to the public, as controlled by any applicable privacy settings. If you remove information or content that you posted to the Website, copies may remain viewable in cached and archived pages of the Website, or if other Users have copied or saved that information.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Third-party tracking and online advertising
 
@@ -132,7 +132,7 @@ You may also be able to limit certain interest-based mobile advertising through 
 
 **Google Analytics and Advertising**. We may also utilize certain forms of display advertising and other advanced features through Google Analytics, such as Remarketing with Google Analytics, Google Display Network Impression Reporting, the DoubleClick Campaign Manager Integration, and Google Analytics Demographics and Interest Reporting. These features enable us to use first-party cookies (such as the Google Analytics cookie) and third-party cookies (such as the DoubleClick advertising cookie) or other third-party cookies together to inform, optimize, and display ads based on your past visits to the Sites. You may control your advertising preferences or opt-out of certain Google advertising products by visiting the Google Ads Preferences Manager, currently available at https://google.com/ads/preferences, or by vising NAI’s online resources at http://www.networkadvertising.org/choices.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Global privacy practices
 
@@ -162,7 +162,7 @@ Additional rights that may apply to you in certain instances:
 
 To exercise your privacy rights, you can contact us directly at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Your choices about your information
 
@@ -178,7 +178,7 @@ We will delete inactive accounts and any personal information in them after a pe
 
 If you have any questions about reviewing, modifying or deleting your account information, you can contact us directly at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## How we store and protect your information
 
@@ -188,7 +188,7 @@ If you have any questions about reviewing, modifying or deleting your account in
 
 **Keeping your information safe:** Sourcegraph cares about the security of your information, and uses commercially reasonable physical, administrative, and technological safeguards to preserve the integrity and security of all information collected through the Service. However, no security system is impenetrable and we cannot guarantee the security of our systems 100%. In the event that any information under our control is compromised as a result of a breach of security, Sourcegraph will take reasonable steps to investigate the situation and where appropriate, notify those individuals whose information may have been compromised and take other steps, in accordance with any applicable laws and regulations.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Usage data
 
@@ -196,7 +196,7 @@ If you have any questions about reviewing, modifying or deleting your account in
 
 Sourcegraph's collection, storage, and use of Usage Data, and our responsibilities with respect to such Usage Data, are set forth in our <a href="/terms">Terms of Service</a> and are not covered by this Privacy Policy.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Children's privacy
 
@@ -204,7 +204,7 @@ Sourcegraph's collection, storage, and use of Usage Data, and our responsibiliti
 
 Sourcegraph does not knowingly collect or solicit any information from anyone under the age of 13 or knowingly allow such persons to register as Users. If you are based in the European Union, we will not knowingly collect your information if you are under the age of 16. In the event that we learn that we have collected personal information from a child under age 13, we will delete that information as quickly as possible. If you believe that we might have any information from a child under 13 or child in the European Union under 16, please contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Links to other web sites and services
 
@@ -212,7 +212,7 @@ Sourcegraph does not knowingly collect or solicit any information from anyone un
 
 Our Service may integrate with or contain links to other third-party sites and services. We are not responsible for the practices employed by third-party websites or services embedded in, linked to, or linked from the Service and your interactions with any third-party website or service are subject to that third-party's own rules and policies.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## How to contact us
 
@@ -220,7 +220,7 @@ Our Service may integrate with or contain links to other third-party sites and s
 
 If you have any questions about this Privacy Policy or the Service, please contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-<span style="color:#b200f8;">
+<span style={{color: '#b200f8'}}>
 
 ## Changes to our privacy policy
 
