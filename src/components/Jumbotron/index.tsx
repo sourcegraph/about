@@ -1,5 +1,7 @@
 import React, { FunctionComponent } from 'react'
 
+import styles from './jumbotron.module.scss'
+
 export const COLORS = {
     white: '',
     dark: 'bg-black text-light',
@@ -14,13 +16,6 @@ interface Props {
     titleClassName?: string
     description?: string
     children: React.ReactNode
-}
-
-const styles = {
-    logo: `
-        width: 2rem;
-        height: 2rem;
-    `,
 }
 
 export const Jumbotron: FunctionComponent<Props> = ({
