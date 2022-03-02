@@ -62,7 +62,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 As used on this page, the following terms have the following specific meanings:
 
-1.1 **“Agreement”** means, collectively, the terms and conditions laid out on this page (these **“Terms”**), along with any order for Software (**“Order Form”**) and all other applicable rules, policies, and procedures that we may publish from time to time on the Site, including but not limited to our [Privacy Policy](/privacy).
+1.1 **“Agreement”** means, collectively, the terms and conditions laid out on this page (these **“Terms”**), along with any order for Software (**“Order Form”**) and all other applicable rules, policies, and procedures that we may publish from time to time on the Site, including but not limited to our [Privacy Policy](/terms/privacy).
 
 1.2 **“Content”** means any content made available through the Software, including but not limited to text (including Documentation), data, articles, images, photographs, videos, applications, software (including source code), and other materials, as well as the Software itself (with respect to us).
 

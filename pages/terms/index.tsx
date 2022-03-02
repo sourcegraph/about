@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next'
 
-import { Page, PageProps, getStaticProps as getStaticPropsForSlug } from './[...slug]'
+import TermPage, { PageProps, getStaticProps as getStaticPropsForSlug } from './[...slug]'
 
 /**
  * Render the root index page with content from `index.md`. It renders using the
@@ -10,4 +10,4 @@ import { Page, PageProps, getStaticProps as getStaticPropsForSlug } from './[...
 export const getStaticProps: GetStaticProps<PageProps> = async context =>
     getStaticPropsForSlug({ ...context, params: { slug: [ 'index' ] } })
 
-export default Page
+export default TermPage

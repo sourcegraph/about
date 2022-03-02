@@ -31,12 +31,14 @@ export interface Page {
 
 const CONTENT_PARENT_DIRECTORY = './content/terms'
 
-export const Page: NextPage<PageProps> = ({ page, content }) => (
+const TermPage: NextPage<PageProps> = ({ page, content }) => (
     <div>
         {page && (<h1>{page.frontMatter.title}</h1>)}
         {content && (<MDXRemote {...content} />)}
     </div>
 )
+
+export default TermPage
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = await getMarkdownPages(path.join(process.cwd(), CONTENT_PARENT_DIRECTORY))
