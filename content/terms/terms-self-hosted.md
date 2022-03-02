@@ -132,7 +132,7 @@ As used on this page, the following terms have the following specific meanings:
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: We have the right to collect aggregate and high-level data from self-hosted Sourcegraph instances, as described in our [Privacy Policy](/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com/admin/pings).</i></span>
+<span style={{color: '#777777'}}><i>**Short version**: We have the right to collect aggregate and high-level data from self-hosted Sourcegraph instances, as described in our [Privacy Policy](/terms/privacy) and specifically listed in our [product documentation](https://docs.sourcegraph.com/admin/pings).</i></span>
 
 We may collect data derived from your use of the Software (**“Usage Data”**). A specific list of Usage Data that we receive from self-hosted instances is always available in our [Documentation](https://docs.sourcegraph.com/admin/pings) and in the site-admin area on your Instance. You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products.
 
@@ -146,7 +146,7 @@ If we share or publicly disclose any information constituting or derived from Us
 
 <span style={{color: '#777777'}}><i>**Short version**: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.</i></span>
 
-Data security and user privacy are very, VERY important to us. Please read our [Privacy Policy](/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us in connection with your use of the Software.
+Data security and user privacy are very, VERY important to us. Please read our [Privacy Policy](/terms/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us in connection with your use of the Software.
 
 As the Software is provided in the form of a self-hosted Instance, Sourcegraph will not have access to any of Your Code unless you include Your Code via email or other support channels to Sourcegraph. We have implemented, and the Software contains, commercially reasonable technical and organizational measures designed to secure Your Code and any other information you provide that is stored on your Instance (which we do not have access to), and any information that we do have access to (such as support emails you send to us, Usage Data, etc.), from accidental loss and from unauthorized access, use, alteration or disclosure. However, we cannot guarantee that unauthorized third parties will never be able to defeat those measures or use your information for improper purposes. You understand that internet technologies have the inherent potential for disclosure. You acknowledge that you store sensitive information on your Instance, or provide any sensitive information to us at your own risk.
 
