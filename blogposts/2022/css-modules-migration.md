@@ -45,9 +45,7 @@ With CSS modules, CSS classes should be referenced in JavaScript file via explic
 ```jsx
 import styles from './styles.css'
 
-const Title = () => (
-   <h1 class={styles.title}>Heading!</h1>
-)
+const Title = () => <h1 class={styles.title}>Heading!</h1>
 ```
 
 The compiler would update the CSS file during the build step by replacing the CSS selector class referenced in the markup with a unique character set. And the JavaScript file would be updated by replacing the CSS class with the new inlined string. The final HTML markup might look like this:
