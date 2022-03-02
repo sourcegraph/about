@@ -44,7 +44,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     }
 
     return (
-        <div className={`flex flex-column fill-height ${props.className}`}>
+        <div className={`flex flex-column fill-height ${props.className || ''}`}>
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />

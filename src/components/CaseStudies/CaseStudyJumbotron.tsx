@@ -4,7 +4,7 @@ import { COLORS } from '../Jumbotron'
 
 interface Props {
     customer: string
-    logo: string
+    logo?: string
     className?: string
     color?: keyof typeof COLORS
     children?: React.ReactNode
