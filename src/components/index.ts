@@ -14,7 +14,7 @@ export {
     StartAFreeTrialAction,
     SubmitEmailForm,
     ViewDeveloperDocumentationAction,
-} from './actions'
+} from './Actions'
 
 // Page Specific
 export {
