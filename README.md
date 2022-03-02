@@ -12,7 +12,7 @@ nvm install
 
 Alternatively, you can use [`n`](https://www.npmjs.com/package/n) to manage your Node versions. Use the following command to install the version of Node specified in the `.nvmrc` file:
 
-```sh 
+```sh
 n <node version>
 ```
 
