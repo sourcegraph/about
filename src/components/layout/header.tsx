@@ -138,10 +138,10 @@ const Header: FunctionComponent<Props> = props => {
                                         }`}
                                     >
                                         <li className="nav-link" role="presentation">
-                                            <a href="/code-search">Code Search</a>
+                                            <Link href="/code-search">Code Search</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <a href="/batch-changes">Batch Changes</a>
+                                            <Link href="/batch-changes">Batch Changes</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
                                             <a href="https://docs.sourcegraph.com/code_intelligence">
@@ -171,7 +171,7 @@ const Header: FunctionComponent<Props> = props => {
                                         }`}
                                     >
                                         <li className="nav-link" role="presentation">
-                                            <a href="/blog">Blog</a>
+                                            <Link href="/blog">Blog</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
                                             <a
@@ -188,7 +188,7 @@ const Header: FunctionComponent<Props> = props => {
                                             </a>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <a href="/podcast">Podcast</a>
+                                            <Link href="/podcast">Podcast</Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -258,9 +258,11 @@ const Header: FunctionComponent<Props> = props => {
                                 </li>
                                 {!props.hideGetStartedButton && (
                                     <li className="header__nav-item nav-item" role="presentation">
-                                        <a className="nav-link" href="/get-started">
-                                            Get started
-                                        </a>
+                                        <Link href="/get-started" passHref={true}>
+                                            <a href="#none" className="nav-link">
+                                                Get started
+                                            </a>
+                                        </Link>
                                     </li>
                                 )}
                             </ul>

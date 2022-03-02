@@ -13,7 +13,7 @@ interface CaseStudies {
     url: string
 }
 
-// TODO: This data will eventually live in CMS
+// TODO: This data will eventually live in our CMS
 const CASESTUDIES: CaseStudies[] = [
     {
         name: 'FactSet',
