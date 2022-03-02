@@ -59,7 +59,7 @@ We knew we could search the codebase manually for relevant files and make conclu
 Code Insights entered Beta in August 2021, and we happily started using it to track the migration progress. As of today, [Code Insights is now Generally Available](/blog/announcing-code-insights/).
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-css-modules-insight.png" alt="Count of CSS files that are global vs module files." style="width: 32rem;">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-css-modules-insight.png" alt="Count of CSS files that are global vs module files." class="css-modules-insight">
   <figcaption>Count of CSS files that are global vs module files.</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ A codemod is an automated change to source code, which helps platform teams exec
 4. Regenerate the source file based on the new AST.
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/abstract-syntax-tree.svg" alt="High-level visual representation of the codemod." class="no-shadow">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/abstract-syntax-tree.svg" alt="High-level visual representation of the codemod." class="no-shadow" style="margin-top: 0;">
   <figcaption>High-level visual representation of the codemod.</figcaption>
 </figure>
 
@@ -211,10 +211,8 @@ We hope you found this account of our migration useful and will consider trying 
      background-color: #005cb9;
   }
 
-  figcaption {
-    text-align: center;
-    margin-top: -2rem;
-    font-style: italic;
+  .blog-post__html figure {
+    margin-bottom: 2rem;
   }
 
   .blog-post__html .gatsby-highlight {
@@ -227,8 +225,19 @@ We hope you found this account of our migration useful and will consider trying 
   }
 
   div.gatsby-highlight > pre {
-    width: 40rem;
+    max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .blog-post__html .css-modules-insight {
+    width: 32rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .blog-post__html .css-modules-insight {
+      width: 100%;
+    }
+  }
+
 </style>
