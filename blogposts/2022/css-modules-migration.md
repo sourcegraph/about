@@ -40,7 +40,21 @@ CSS modules are great because they help you write reusable components with isola
 
 “CSS files in which all class names and animation names are scoped locally by default.”
 
-_TODO: describe CSS modules application on a simple example with one CSS file and one HTML file._
+With CSS modules, CSS classes should be referenced in JavaScript file via explicit binding to the styles file:
+
+```jsx
+import styles from './styles.css'
+
+const Title = () => (
+   <h1 class={styles.title}>Heading!</h1>
+)
+```
+
+The compiler would update the CSS file during the build step by replacing the CSS selector class referenced in the markup with a unique character set. And the JavaScript file would be updated by replacing the CSS class with the new inlined string. The final HTML markup might look like this:
+
+```html
+<h1 class="module__title__2QcnY">Heading!</h1>
+```
 
 This approach is designed to fix the problem of the global scope in CSS. Engineers can happily name their CSS selectors whatever they want, without worrying about unintended consequences in other areas of the code. Creating a CSS module is ultimately very similar to creating a typical CSS file. Maintaining this flow ensured we could easily start adopting this approach without interfering with our developer experience too much. After we updated documentation on how to use CSS modules, teams adopted this approach for new features immediately.
 
