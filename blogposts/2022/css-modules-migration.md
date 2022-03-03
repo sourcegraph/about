@@ -32,7 +32,7 @@ To overcome these issues, we decided that, before diving into the redesign, we s
 
 ## CSS Modules solution
 
-We researched popular solutions available in the open source universe: trade-offs between CSS in JS, regular CSS, and hybrid solutions. Some offered more powerful features, but we decided to use a solution that we knew we could easily adopt — CSS modules.
+We researched popular solutions available in the open source universe: trade-offs between CSS in JS, regular CSS, and hybrid solutions. Some offered more powerful features, but we decided to use a solution that we knew we could easily adopt—CSS modules.
 
 ### What are CSS Modules?
 
