@@ -35,7 +35,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const currentCarousel = carouselHook.carouselItems as CarouselProps
 
     return (
-        <div className="custom-carousel pb-lg-8 pb-6">
+        <div className="custom-carousel pb-lg-7 pb-6">
             {title && <h2 className="carousel-title w-50 font-weight-bold mt-lg-3 ml-lg-6 mb-5">{title}</h2>}
             <div
                 className={

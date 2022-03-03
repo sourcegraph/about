@@ -335,7 +335,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </>
         }
     >
-        <ContentSection className="py-8">
+        <ContentSection className="py-lg-8 py-7">
             <div className="row justify-content-between">
                 <div className="col-lg-7 ml-lg-6 d-flex align-items-center video-container">
                     <video
@@ -422,7 +422,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         </div>
                         <div className="d-flex py-lg-5 py-3">
                             <div className="icon mr-4">
-                                <RocketLaunchOutlineIcon className="icon" size={70} />
+                                <LighteningBoltOutlineIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Plan proactively</div>
@@ -444,7 +444,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         </div>
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <LighteningBoltOutlineIcon className="icon" size={70} />
+                                <RocketLaunchOutlineIcon className="icon" size={70} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Celebrate progress</div>
