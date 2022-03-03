@@ -3,6 +3,7 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
+import { Layout } from '@components'
 import { getMarkdownPages, loadMarkdownFile, serializeMdxSource } from '@lib'
 
 export interface PageProps {
@@ -32,10 +33,14 @@ export interface Page {
 const CONTENT_PARENT_DIRECTORY = './content/terms'
 
 const TermPage: NextPage<PageProps> = ({ page, content }) => (
-    <div>
-        {page && (<h1>{page.frontMatter.title}</h1>)}
-        {content && (<MDXRemote {...content} />)}
-    </div>
+    <Layout>
+        <section className="content-page__title">
+            {page && (<h1>{page.frontMatter.title}</h1>)}
+        </section>
+        <section className="content-page__body">
+            {content && (<MDXRemote {...content} />)}
+        </section>
+    </Layout>
 )
 
 export default TermPage

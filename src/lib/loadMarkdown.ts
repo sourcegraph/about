@@ -47,10 +47,11 @@ export const serializeMdxSource = async (markdownContent: string): Promise<MDXRe
                     rehypeAutolinkHeadings,
                     {
                         properties: {
-                            className: 'link-hover',
+                            className: 'anchor',
+                            ariaHidden: true, 
+                            tabIndex: -1,
                         },
-                        behavior: 'append',
-                        content: { type: 'text', value: '#' },
+                        behavior: 'prepend',
                     },
                 ],
             ],
