@@ -9,6 +9,7 @@ See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of Sourcegraph Cloud.
 
+<div class="p-3 my-3" style={{backgroundColor: '#f2f4f8'}}>
 <span style={{color: '#b200f8'}}>
 
 ## Is this the right Terms of Service for me?
@@ -26,6 +27,7 @@ Are you interested in terms for...
 - **Sourcegraph extensions**: If you’d like to use any extensions made available via our [Extension Registry](https://sourcegraph.com/extensions), please understand that extensions made available by third-parties are not provided by us and are generally governed by separate terms and conditions. Extensions that are developed and distributed by us are governed by these terms and conditions.
 
 - **[Government](https://about.sourcegraph.com/terms-gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our Supplemental Terms for U.S. Government Users at https://about.sourcegraph.com/terms-gov apply. Those terms and conditions supplement these terms and conditions.
+</div>
 
 PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION. THE AGREEMENT CONTAINS A MANDATORY INDIVIDUAL ARBITRATION AND CLASS ACTION/JURY TRIAL WAIVER PROVISION THAT REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR CLASS ACTIONS.
 
@@ -89,7 +91,7 @@ As used on this page, the following terms have the following specific meanings:
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: You are responsible for your account and its security, as well as everything posted on it. You must be 18 or over to use our services.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: You are responsible for your account and its security, as well as everything posted on it. You must be 18 or over to use our services.</i></span></p>
 
 2.1 **Account Responsibility and Security.**
 
@@ -113,7 +115,7 @@ As used on this page, the following terms have the following specific meanings:
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: You’re allowed to use the services for any reasonable purpose (e.g. don’t use it to host illegal content). Because the services are made available on a hosted basis, we – like most sites – will collect data about your use of the services (e.g., click rates and other metadata) and can use it to run our business. If you give us a great idea about how to improve our services, we can use it.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: You’re allowed to use the services for any reasonable purpose (e.g. don’t use it to host illegal content). Because the services are made available on a hosted basis, we – like most sites – will collect data about your use of the services (e.g., click rates and other metadata) and can use it to run our business. If you give us a great idea about how to improve our services, we can use it.</i></span></p>
 
 3.1 **License from Us to You**.
 
@@ -154,7 +156,7 @@ As used on this page, the following terms have the following specific meanings:
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: We have the right to collect usage data from Sourcegraph, as described in our [Privacy Policy](/terms/privacy).</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: We have the right to collect usage data from Sourcegraph, as described in our [Privacy Policy](/terms/privacy).</i></span></p>
 
 In the course of your use of the Services, we may collect certain information about your use, including aggregated data derived from you and other users’ access and use of the Services (**“Usage Data”**). You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we may use it for any legal purpose, including for purposes of operating, analyzing, improving, or marketing our products and services.
 
@@ -166,7 +168,7 @@ If we share or publicly disclose any information constituting or derived from Us
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: Our privacy policy tells you what you need to know about how we use any personal information you provide to us. The internet is a dangerous place and, while we’ve instituted safeguards to protect your information, you understand that data breaches happen and we can’t guarantee perfect security.</i></span></p>
 
 User privacy is important to us. Please read our [Privacy Policy](/terms/privacy) carefully for details relating to how we collect, use, and disclose personal information you provide to us.
 
@@ -180,7 +182,7 @@ If you are an Organization established in the European Economic Area, the United
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: We will each protect the other party's confidential information.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: We will each protect the other party's confidential information.</i></span></p>
 
 6.1 **Definition**. **"Confidential Information"** means all non-public information disclosed by us to you, or vice-versa, that is designated by the discloser as confidential or that reasonably should be considered confidential given the nature of the information or circumstances of its disclosure.
 
@@ -199,7 +201,7 @@ If you are an Organization established in the European Economic Area, the United
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: You may shut down your Account any time. We may terminate the agreement at any time, at which point your right to use the Services will immediately expire.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: You may shut down your Account any time. We may terminate the agreement at any time, at which point your right to use the Services will immediately expire.</i></span></p>
 
 7.1 **Subscription Period**. Unless otherwise stated in an Order Form, this Agreement starts on the earlier of the date on which you: (a) agree to the terms and conditions of this Agreement; or (b) first register for an Account and will continue in effect until either you or we terminate it (the “Subscription Period” or “Term”).
 
@@ -215,7 +217,7 @@ If you are an Organization established in the European Economic Area, the United
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: You’re responsible for any fees associated with your use of Sourcegraph. Your subscription will automatically renew, unless an Order Form states otherwise.</i></span></p>
 
 8.1 **Pricing**. You are responsible for paying any applicable fees as set forth on our [Pricing and Payment Terms](/pricing) or in an Order Form and applicable taxes associated with the Services in a timely manner with a valid payment method. Unless otherwise stated in an Order Form, you will pay all invoices within thirty (30) days of receipt. You agree that we may charge for any such fees owed. You are required to keep your billing information current.
 
@@ -233,7 +235,7 @@ If you are an Organization established in the European Economic Area, the United
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: Third party services and software may be necessary for Sourcegraph Cloud to work (examples include libraries Sourcegraph uses internally, code hosts, authentication providers, external code analyzers, monitoring and tracing tools, etc.). We’re not responsible for anything provided by a third party, and additional terms and conditions may apply.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: Third party services and software may be necessary for Sourcegraph Cloud to work (examples include libraries Sourcegraph uses internally, code hosts, authentication providers, external code analyzers, monitoring and tracing tools, etc.). We’re not responsible for anything provided by a third party, and additional terms and conditions may apply.</i></span></p>
 
 You may enable the Services to call the servers of other websites or services (**“Third Party Services”**) in order to help you analyze Your Code. We do not share Your Code with third-party services, unless you enable the integration or extension. We make no warranties of any kind with regard to anything that is contained on or accessible through them. Access and use of Third Party Services is solely at your own risk.
 
@@ -247,7 +249,7 @@ If there's ever a conflict between the terms of this Agreement and the terms app
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: If you think we (or a user of the services) is infringing your copyrights, let us know and we’ll handle it in compliance with law.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: If you think we (or a user of the services) is infringing your copyrights, let us know and we’ll handle it in compliance with law.</i></span></p>
 
 We respect the intellectual property of others and ask that you do too. We reserve the right to delete or disable content alleged to be infringing and terminate accounts of repeat infringers. If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible via the Services, please notify our copyright agent as set forth in the DMCA. For your complaint to be valid under the DMCA, you must provide the following information in writing:
 
@@ -280,7 +282,7 @@ In accordance with the DMCA and other applicable law, we have adopted a policy o
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: Other than the warranties explicitly described in this Section, the Services and Code Data are provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: Other than the warranties explicitly described in this Section, the Services and Code Data are provided “as is” with no guarantees of any kind (unless applicable law provides you additional mandatory rights). Please read this section carefully.</i></span></p>
 
 We warrant that (1) the Services will perform materially in accordance with the applicable Documentation when accessed and used as recommended in the Documentation and in accordance with the Agreement and (2) to the best of our knowledge, the Services are free from, and we will not knowingly introduce, software viruses, worms, Trojan horses or other code, files, scripts, or agents intended to do harm. Your sole and exclusive remedy for breach of the warranties in this section is set forth in Section 7.2.
 
@@ -294,7 +296,7 @@ CERTAIN JURISDICTIONS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCL
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: Our liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us for access to the services. Please read this section carefully.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: Our liability is limited to direct damages wherever possible, and to no more than $100 or the amount you paid us for access to the services. Please read this section carefully.</i></span></p>
 
 UNDER NO CIRCUMSTANCES WILL EITHER PARTY (OR ITS AFFILIATES, EMPLOYEES, AGENTS, LICENSORS, SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY RESULTING FROM LOSS OF DATA, LOSS OF REVENUE, ANTICIPATED PROFITS, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR INABILITY TO USE THE SERVICES, OR ANY OTHER INTERACTIONS WITH US, EVEN IF WE OR A SOURCEGRAPH-AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
@@ -310,7 +312,7 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: Each of us agrees to defend the other against third-party lawsuits that result from matters under our respective responsibility.</i></span></p>
 
 13.1 **By You**. You agree to defend us and our affiliates, directors, officers, employees, and contractors from and against any third-party claims, proceedings, demands, and investigations and indemnify us for damages, attorney’s fees, and costs arising from Your Code or Content, your use of the Services in violation of the Agreement including any data or work transmitted or received by you, your violation of the Agreement or applicable laws, your infringement of any third-party intellectual property or other right of any person or entity, or any other party’s access and use of the Services with your unique username, password, or other appropriate security code.
 
@@ -324,7 +326,7 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: The services are located in the US (where we’re located). Don’t use them if you’re located in an embargoed country.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: The services are located in the US (where we’re located). Don’t use them if you’re located in an embargoed country.</i></span></p>
 
 14.1 **Location of the Services**. The Services are controlled and operated from our facilities in the United States. We make no representations that the Services is appropriate or available for use in other locations. Those who access or use the Services from other jurisdictions do so at their own volition and are entirely responsible for compliance with local law, including but not limited to export and import regulations. You may not use the Services if you are a resident of a country embargoed by the United States, or are a foreign person or entity blocked or denied by the United States government. Unless otherwise explicitly stated, all materials found on the Services are solely directed to individuals, companies, or other entities located in the U.S. By using the Services, you are consenting to have your personal data transferred to and processed in the United States.
 
@@ -336,7 +338,7 @@ You acknowledge and agree that we have offered our products and services, set ou
 
 </span>
 
-<span style={{color: '#777777'}}><i>**Short version**: We’re based in California, so the agreement is governed by California law, and all disputes must be brought there. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.</i></span>
+<p><span style={{color: '#777777'}}><i>**Short version**: We’re based in California, so the agreement is governed by California law, and all disputes must be brought there. If you have a claim against us, you’ll work with us to arbitrate it on an individual basis instead of via class action or jury trial.</i></span></p>
 
 15.1 **Governing Law**. The Agreement shall be governed by the internal substantive laws of the State of California, without respect to its conflict of laws principles. Notwithstanding the preceding sentence with respect to the substantive law, any arbitration conducted pursuant to the terms of these Terms shall be governed by the Federal Arbitration Act (9 U.S.C. §§ 1-16). The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. You agree to submit to the personal jurisdiction of the federal and state courts located in Santa Clara County, California for any actions for which we retain the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a our copyrights, trademarks, trade secrets, patents, or other intellectual property or proprietary rights, as set forth in the Arbitration provision below, including any provisional relief required to prevent irreparable harm. You agree that Santa Clara County, California is the proper forum for any appeals of an arbitration award or for trial court proceedings if the arbitration provision below is found to be unenforceable.
 

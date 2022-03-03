@@ -82,7 +82,7 @@ We use third-party applications such as Google Cloud Platform, Honeycomb, and mo
 
 We use third-party applications such as Stripe and Xero to manage corporate billing and invoicing. These companies provide further information about their own privacy practices on their websites.
 
-We and our third-party partners may also use cookies and tracking technologies for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. on Sourcegraph.com (never on private or self-hosted instances). For more information about tracking technologies, please see [“Third-party tracking and online advertising”](#Third-party-tracking-and-online-advertising) below.
+We and our third-party partners may also use cookies and tracking technologies for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. on Sourcegraph.com (never on private or self-hosted instances). For more information about tracking technologies, please see [“Third-party tracking and online advertising”](#third-party-tracking-and-online-advertising) below.
 
 <span style={{color: '#b200f8'}}>
 
