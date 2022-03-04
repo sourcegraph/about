@@ -5,6 +5,7 @@ import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
+import gfm from 'remark-gfm'
 
 interface Page {
     frontMatter: FrontMatter
@@ -39,6 +40,7 @@ export const loadMarkdownFile = async (filename: string): Promise<Page | Error> 
 export const serializeMdxSource = async (markdownContent: string): Promise<MDXRemoteSerializeResult> => {
     const serializeResult = await serialize(markdownContent, {
         mdxOptions: {
+            remarkPlugins: [gfm],
             rehypePlugins: [
                 // Add "slug" IDs to each heading, for links and table of contents.
                 rehypeSlug,

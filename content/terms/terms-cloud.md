@@ -39,22 +39,22 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 | Section                                                                                                                               | Description                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| 1. [Definitions](#1-Definitions)                                                                                                      | Definitions of specific terms used on this page     |
-| 2. [Account terms](#2-Account-terms)                                                                                                  | Your responsibilities to use Sourcegraph            |
-| 3. [Proprietary rights and licenses](#3-Proprietary-rights-and-licenses)                                                              | Your rights and ours when you use Sourcegraph       |
-| 4. [Usage data](#4-Usage-data)                                                                                                        | Data we collect on Sourcegraph                      |
-| 5. [Privacy and security](#5-Privacy-and-security)                                                                                    | Our policies for protecting your data               |
-| 6. [Confidentiality](#6-Confidentiality)                                                                                              | The parties’ respective confidentiality obligations |
-| 7. [Term; termination](#7-Term-termination)                                                                                           | When and how your account can be terminated         |
-| 8. [Fees](#8-Fees)                                                                                                                    | Rules for payment for paid features                 |
-| 9. [Third party services and software](#9-Third-party-services-and-software)                                                          | Our use of third party services and software        |
-| 10. [Copyright infringement and DMCA policy](#10-Copyright-infringement-and-DMCA-policy)                                              | How we handle IP infringment                        |
-| 11. [Warranties; disclaimer](#11-No-warranties-disclaimer)                                                                            | Our warranties about Sourcegraph                    |
-| 12. [Limitation of liability](#12-Limitation-of-liability)                                                                            | Our liabilities are limited                         |
-| 13. [Indemnification](#13-Indemnification)                                                                                            | The parties’ respective indemnification obligations |
-| 14. [Location of the Services; export controls](#14-Location-of-the-services-export-controls)                                         | Usage restrictions in embargoed locations           |
-| 15. [Governing law; arbitration; and class action/jury trial waiver](#15-Governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled             |
-| 16. [Miscellaneous](#16-Miscellaneous)                                                                                                | Miscellaneous topics                                |
+| 1. [Definitions](#1-definitions)                                                                                                      | Definitions of specific terms used on this page     |
+| 2. [Account terms](#2-account-terms)                                                                                                  | Your responsibilities to use Sourcegraph            |
+| 3. [Proprietary rights and licenses](#3-proprietary-rights-and-licenses)                                                              | Your rights and ours when you use Sourcegraph       |
+| 4. [Usage data](#4-usage-data)                                                                                                        | Data we collect on Sourcegraph                      |
+| 5. [Privacy and security](#5-privacy-and-security)                                                                                    | Our policies for protecting your data               |
+| 6. [Confidentiality](#6-confidentiality)                                                                                              | The parties’ respective confidentiality obligations |
+| 7. [Term; termination](#7-term-termination)                                                                                           | When and how your account can be terminated         |
+| 8. [Fees](#8-fees)                                                                                                                    | Rules for payment for paid features                 |
+| 9. [Third party services and software](#9-third-party-services-and-software)                                                          | Our use of third party services and software        |
+| 10. [Copyright infringement and DMCA policy](#10-copyright-infringement-and-dmca-policy)                                              | How we handle IP infringment                        |
+| 11. [Warranties; disclaimer](#11-no-warranties-disclaimer)                                                                            | Our warranties about Sourcegraph                    |
+| 12. [Limitation of liability](#12-limitation-of-liability)                                                                            | Our liabilities are limited                         |
+| 13. [Indemnification](#13-indemnification)                                                                                            | The parties’ respective indemnification obligations |
+| 14. [Location of the Services; export controls](#14-location-of-the-services-export-controls)                                         | Usage restrictions in embargoed locations           |
+| 15. [Governing law; arbitration; and class action/jury trial waiver](#15-governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled             |
+| 16. [Miscellaneous](#16-miscellaneous)                                                                                                | Miscellaneous topics                                |
 
 <br/>
 <span style={{color: '#b200f8'}}>
