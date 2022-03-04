@@ -164,5 +164,13 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.el\.svg$/
+        }
+      }
+    },
   ],
 }
