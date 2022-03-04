@@ -48,6 +48,9 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => (
             type="text/javascript"
         />
 
+        {/* HubSpot */}
+        <Script strategy="beforeInteractive" src="//js.hsforms.net/forms/v2.js" />
+
         {/* Add jQuery as a dependency for the Clearbit script - without this Clearbit doesn't work*/}
         <Script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
 

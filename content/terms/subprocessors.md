@@ -28,18 +28,9 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 | Zapier                   | USA            | Processes information needed to enable integrations<br/> between Sourcegraph and a third-party product                                                             | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
 | Zendesk                  | USA            | Processes customer support communication                                                                                                                           | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
 
-<h2 id='sign-up'>Sign Up</h2>
+<h2>Sign Up</h2>
 
-Complete this form to be notified of changes to our sub-processors.
+<p id='sign-up'>Complete this form to be notified of changes to our sub-processors.</p>
 
-<!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-<script>
-hbspt.forms.create({
-	region: "na1",
-	portalId: "2762526",
-	formId: "08e6c442-0e7c-4892-a262-76dae55ab497"
-});
-</script>
+<EmbeddedHubSpot portalId='2762526' formId='08e6c442-0e7c-4892-a262-76dae55ab497' targetId='#sign-up' region='na1' />
+

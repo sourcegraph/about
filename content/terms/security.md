@@ -99,15 +99,4 @@ Sourcegraph is an OSS product licensed under Apache 2.0. We also make great use 
 
 ## Security Updates
 
-<p class="text-center">
-  <!--[if lte IE 8]>
-  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-  <![endif]-->
-  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-  <script>
-    hbspt.forms.create({
-    portalId: "2762526",
-    formId: "0ff99031-7caf-433a-8aef-8c9345948288"
-  });
-  </script>
-</p>
+<EmbeddedHubSpot portalId='2762526' formId='0ff99031-7caf-433a-8aef-8c9345948288' targetId='#security-updates' />

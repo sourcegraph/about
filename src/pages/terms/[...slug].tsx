@@ -2,9 +2,15 @@ import path from 'path'
 
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
+import dynamic from 'next/dynamic'
 
 import { Layout } from '@components'
 import { getMarkdownPages, loadMarkdownFile, serializeMdxSource } from '@lib'
+
+const EmbeddedHubSpot = dynamic(
+    () => import('../../components/HubSpot'),
+    { ssr: false }
+)
 
 export interface PageProps {
     page?: Page
@@ -32,13 +38,15 @@ export interface Page {
 
 const CONTENT_PARENT_DIRECTORY = './content/terms'
 
+const components = { EmbeddedHubSpot }
+
 const TermPage: NextPage<PageProps> = ({ page, content }) => (
     <Layout>
         <section className="content-page__title">
             {page && (<h1>{page.frontMatter.title}</h1>)}
         </section>
         <section className="content-page__body">
-            {content && (<MDXRemote {...content} />)}
+            {content && (<MDXRemote {...content} components={components} />)}
         </section>
     </Layout>
 )
