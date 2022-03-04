@@ -90,7 +90,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
 
                 {!this.props.hideFooter && (
                     <Footer
-                        className={`pt-4 ${this.props.className || ''} ${isCaseStudyPage && 'bg-black'}`}
+                        className={`${this.props.className || ''} ${isCaseStudyPage && 'bg-black'}`}
                         minimal={this.props.minimal}
                     />
                 )}

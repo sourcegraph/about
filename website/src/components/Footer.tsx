@@ -16,7 +16,7 @@ export const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
     <footer className={`flex-shrink-0 ${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
         <div className="container-xl">
             {!minimal && (
-                <React.Fragment>
+                <>
                     <div className="row footer__nav-sections">
                         <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-2">
                             <h3 className="footer__nav-header">About Sourcegraph</h3>
@@ -161,9 +161,9 @@ export const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             </ul>
                         </div>
                     </div>
-                </React.Fragment>
+                </>
             )}
-            <div className="footer__postscript d-flex justify-content-between pt-4 pb-2 small">
+            <div className="footer__postscript d-flex justify-content-between py-3 small">
                 <ul className="nav">
                     <li className="nav-item text-muted mr-3">&copy; 2021 Sourcegraph</li>
                     <li className="nav-item">
