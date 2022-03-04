@@ -7,6 +7,8 @@ import dynamic from 'next/dynamic'
 import { Layout } from '@components'
 import { getMarkdownPages, loadMarkdownFile, serializeMdxSource } from '@lib'
 
+export type Components = import('mdx/types').MDXComponents
+
 const EmbeddedHubSpot = dynamic(
     () => import('../../components/HubSpot'),
     { ssr: false }
@@ -46,7 +48,7 @@ const TermPage: NextPage<PageProps> = ({ page, content }) => (
             {page && (<h1>{page.frontMatter.title}</h1>)}
         </section>
         <section className="content-page__body">
-            {content && (<MDXRemote {...content} components={components} />)}
+            {content && (<MDXRemote {...content} components={components as Components} />)}
         </section>
     </Layout>
 )

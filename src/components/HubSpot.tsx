@@ -1,8 +1,6 @@
 import Script from 'next/script'
 import { FunctionComponent } from 'react'
 
-export type Components = import('mdx/types').MDXComponents
-
 interface EmbeddedHubSpotProps {
     portalId: string
     formId: string
@@ -17,7 +15,7 @@ const EmbeddedHubSpot: FunctionComponent<EmbeddedHubSpotProps> = ({ portalId, fo
             portalId: '${portalId}',
             formId: '${formId}',
             target: '${targetId}',
-            region: '${region}',
+            region: '${region ?? ''}',
         })
     `}</Script>
 )
