@@ -1,0 +1,132 @@
+@import "../../css/colors";
+
+.headerContainer {
+    nav {
+        margin-top: 50px;
+    }
+
+    a[class*="header__logo"] {
+        height: 52px !important;
+        max-width: 300px !important;
+        width: 100% !important;
+        background-size: contain !important;
+        z-index: 1;
+    }
+}
+
+.btn {
+    background: #4b36dc;
+}
+
+.form {
+    // TODO: This height is temporary until demio form is provided
+    height: 700px;
+    background-color: #f5f5f5;   
+}
+
+.avatar {
+    background: linear-gradient(
+        150deg, 
+        $brand-cyan 13.39%,
+        #8E27FD 46.34%,
+        $brand-purple 50%,
+        $brand-orange 86.61%
+    );
+    max-width: 340px;
+    max-height: 340px;
+    width: 100%;
+    position: relative;
+
+    img {
+        width: 100%;
+        padding: 5%;
+    }
+}
+
+// Dark section
+.topRightTriangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 498px;
+    height: 234px;
+}
+
+.leftTriangleSmall {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 167px;
+    height: 170px;
+}
+
+.leftTriangleSmallMobile {
+    top: -125px;
+    left: 0;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+}
+
+.smallRectangle {
+    position: absolute;
+    top: -10%;
+    right: -200px;
+    width: 408px;
+    height: 150px;
+    @media only screen and (min-width: 990px) {
+        top: unset;
+        bottom: 15%;
+        right: 30%;
+    }
+    @media only screen and (min-width: 1200px) {
+        right: 45%;
+    }
+}
+
+// Light section
+.leftTriangleLarge {
+    position: absolute;
+    top: -5%;
+    left: -10%;
+    width: 329px;
+    height: 329px;
+}
+
+.largeRectangle {
+    position: absolute;
+    width: 390px;
+    height: 130px;
+    right: 0;
+    left: 0;
+    bottom: -10px;
+    margin-left: 10%;
+    @media only screen and (min-width: 576px) {
+        margin-left: 15%;
+    }
+    @media only screen and (min-width: 768px) {
+        margin-left: 25%;
+    }
+    @media only screen and (min-width: 990px) {
+        margin-left: -10%;
+        width: 613px;
+        height: 203px;
+    }
+}
+
+// Bottom of page
+.bottomLeftTriangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 177px;
+    height: 154px;
+}
+
+.bottomRightTriangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 203px;
+}
