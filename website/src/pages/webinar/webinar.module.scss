@@ -1,11 +1,11 @@
-@import "../../css/colors";
+@import '../../css/colors';
 
 .headerContainer {
     nav {
         margin-top: 50px;
     }
 
-    a[class*="header__logo"] {
+    a[class*='header__logo'] {
         height: 52px !important;
         max-width: 300px !important;
         width: 100% !important;
@@ -21,17 +21,11 @@
 .form {
     // TODO: This height is temporary until demio form is provided
     height: 700px;
-    background-color: #f5f5f5;   
+    background-color: #f5f5f5;
 }
 
 .avatar {
-    background: linear-gradient(
-        150deg, 
-        $brand-cyan 13.39%,
-        #8E27FD 46.34%,
-        $brand-purple 50%,
-        $brand-orange 86.61%
-    );
+    background: linear-gradient(150deg, $brand-cyan 13.39%, #8e27fd 46.34%, $brand-purple 50%, $brand-orange 86.61%);
     max-width: 340px;
     max-height: 340px;
     width: 100%;

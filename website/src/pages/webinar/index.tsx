@@ -15,7 +15,7 @@ import Presenter1 from './assets/presenter-1.png'
 
 import styles from './webinar.module.scss'
 
-const Avatar: FunctionComponent<{src: string, alt: string}> = ({ src, alt }) => (
+const Avatar: FunctionComponent<{ src: string; alt: string }> = ({ src, alt }) => (
     <div className={`${styles.avatar} d-flex align-items-center justify-content-center rounded-circle mx-auto mb-5`}>
         <img src={src} alt={alt} />
     </div>
@@ -47,7 +47,7 @@ const Webinar: FunctionComponent<PageProps> = props => (
         meta={{
             // TODO: Marketing will provide meta
             title: '',
-            description: ''
+            description: '',
         }}
         minimal={true}
         heroAndHeaderClassName={styles.headerContainer}
@@ -74,7 +74,13 @@ const Webinar: FunctionComponent<PageProps> = props => (
 
                         <h3 className="display-3 mt-6">About:</h3>
                         {/* TODO: Marketing will provide copy */}
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                        </p>
 
                         <h3 className="display-3 mt-6">You'll Learn:</h3>
                         {/* TODO: Marketing will provide copy */}
@@ -87,7 +93,6 @@ const Webinar: FunctionComponent<PageProps> = props => (
                         </ul>
                     </div>
 
-                    
                     <div className="col-lg-6 mt-8 mt-lg-0 px-0 px-lg-3 position-relative">
                         <LeftTriangleSmall className={`${styles.leftTriangleSmallMobile} d-block d-lg-none`} />
                         <SmallRectangle className={styles.smallRectangle} />
