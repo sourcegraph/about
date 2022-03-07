@@ -6,6 +6,11 @@ import React, { FunctionComponent, ReactNode, ReactFragment } from 'react'
 import Footer from './Footer'
 import Header from './Header'
 
+interface LayoutScript {
+    src: string
+    strategy: 'afterInteractive' | 'lazyOnload' | 'beforeInteractive' | undefined
+}
+
 interface LayoutProps {
     meta?: {
         title?: string
@@ -25,8 +30,7 @@ interface LayoutProps {
     hideFooter?: boolean
     hideGetStartedButton?: boolean
 
-    src?: string
-    strategy?: 'afterInteractive' | 'lazyOnload' | 'beforeInteractive' | undefined
+    scripts?: LayoutScript[]
 }
 
 export const Layout: FunctionComponent<LayoutProps> = props => {
@@ -84,7 +88,9 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
             <section className="d-flex flex-column fill-height">{props.children}</section>
 
             {!props.hideFooter && <Footer minimal={props.minimal} />}
-            <Script src={props.src} strategy={props.strategy} />
+            {props.scripts?.map(script => (
+                <Script key={script.src} src={script.src} strategy={script.strategy} />
+            ))}
         </div>
     )
 }
