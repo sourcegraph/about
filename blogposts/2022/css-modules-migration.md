@@ -40,7 +40,7 @@ CSS modules are great because they help you write reusable components with isola
 
 “CSS files in which all class names and animation names are scoped locally by default.”
 
-With CSS modules, CSS classes should be referenced in JavaScript file via explicit binding to the styles file:
+With CSS modules, CSS classes should be referenced in the JavaScript file via explicit binding to the styles file:
 
 ```jsx
 import styles from './styles.css'
