@@ -2,10 +2,6 @@ import React, { FunctionComponent } from 'react'
 
 import { Layout, ContentSection, CaseStudyCard, TrySourcegraph } from '@components'
 
-interface CaseStudiesHomeProps {
-    slugs: string[]
-}
-
 interface CaseStudies {
     name: string
     logo: string
@@ -95,7 +91,7 @@ const CASESTUDIES: CaseStudies[] = [
     },
 ]
 
-const CaseStudiesHome: FunctionComponent<CaseStudiesHomeProps> = () => (
+const CaseStudiesHome: FunctionComponent = () => (
     <>
         <Layout
             meta={{
