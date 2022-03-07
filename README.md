@@ -35,3 +35,11 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Configure the `pre-commit` Githook
+
+To enable our pre-commit hook, update the following git config setting in the project:
+
+```sh
+git config core.hooksPath .githooks
+```
