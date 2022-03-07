@@ -43,7 +43,7 @@ const CONTENT_PARENT_DIRECTORY = './content/terms'
 const components = { EmbeddedHubSpot }
 
 const TermPage: NextPage<PageProps> = ({ page, content }) => (
-    <Layout>
+    <Layout src='//js.hsforms.net/forms/v2.js' strategy='beforeInteractive'>
         <section className="content-page__title">
             {page && (<h1>{page.frontMatter.title}</h1>)}
         </section>
