@@ -25,13 +25,13 @@
     );
 }
 @mixin BgGradientBluePurple {
-    background: linear-gradient(90deg, $light-blue 0%, $light-purple 100%);
+    background: linear-gradient(90deg, $light-blue 0%, $brand-fog 100%);
 }
 @mixin BgGradientPurpleYellow {
-    background: linear-gradient(90deg, $light-purple 0%, $light-yellow 100%);
+    background: linear-gradient(90deg, $brand-fog 0%, $light-yellow 100%);
 }
-@mixin BgGradientPurpleBlue2 {
-    background: linear-gradient(90deg, $light-purple 0%, $light-blue2 100%);
+@mixin BgGradientFogBlue2 {
+    background: linear-gradient(90deg, $brand-fog 0%, $light-blue2 100%);
 }
 @mixin BgGradientYellowGreen2 {
     background: linear-gradient(90deg, $light-yellow 0%, $light-green2 100%);
@@ -67,8 +67,8 @@
 .bg-gradient-purple-yellow {
     @include BgGradientPurpleYellow;
 }
-.bg-gradient-purple-blue2 {
-    @include BgGradientPurpleBlue2;
+.bg-gradient-fog-blue2 {
+    @include BgGradientFogBlue2;
 }
 .bg-gradient-yellow-green2 {
     @include BgGradientYellowGreen2;
