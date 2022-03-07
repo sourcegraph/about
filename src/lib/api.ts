@@ -2,9 +2,8 @@ import { promises as fs } from 'fs'
 
 import globby from 'globby'
 
-const filterFiles = (files: string[], fileRegex: RegExp): string[] => files
-    .filter(file => file.match(fileRegex) && !file.startsWith('index'))
-    .map(file => file.replace(fileRegex, ''))
+const filterFiles = (files: string[], fileRegex: RegExp): string[] =>
+    files.filter(file => file.match(fileRegex) && !file.startsWith('index')).map(file => file.replace(fileRegex, ''))
 
 export const getPages = async (baseDirectory: string): Promise<string[]> => {
     const fileRegex = /\.tsx$/gi

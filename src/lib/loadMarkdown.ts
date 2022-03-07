@@ -23,18 +23,20 @@ interface FrontMatter {
     heroImage?: string
     socialImage?: string
     tags?: string[]
-
 }
 
 export const loadMarkdownFile = async (filename: string): Promise<Page | Error> => {
-    const page = await fs.readFile(filename, 'utf8')
+    const page = await fs
+        .readFile(filename, 'utf8')
         .then(page => {
             const { data, content } = matter(page)
             return { frontMatter: data, content }
         })
-        .catch(error => { throw new Error(error) })
+        .catch(error => {
+            throw new Error(error)
+        })
 
-        return page
+    return page
 }
 
 export const serializeMdxSource = async (markdownContent: string): Promise<MDXRemoteSerializeResult> => {
@@ -50,7 +52,7 @@ export const serializeMdxSource = async (markdownContent: string): Promise<MDXRe
                     {
                         properties: {
                             className: 'anchor',
-                            ariaHidden: true, 
+                            ariaHidden: true,
                             tabIndex: -1,
                         },
                         behavior: 'prepend',

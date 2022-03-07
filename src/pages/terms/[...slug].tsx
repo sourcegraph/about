@@ -9,10 +9,7 @@ import { getMarkdownPages, loadMarkdownFile, serializeMdxSource } from '@lib'
 
 export type Components = import('mdx/types').MDXComponents
 
-const EmbeddedHubSpot = dynamic(
-    () => import('../../components/HubSpot'),
-    { ssr: false }
-)
+const EmbeddedHubSpot = dynamic(() => import('../../components/HubSpot'), { ssr: false })
 
 export interface PageProps {
     page?: Page
@@ -30,7 +27,6 @@ interface FrontMatter {
     heroImage?: string
     socialImage?: string
     tags?: string[]
-
 }
 
 export interface Page {
@@ -43,12 +39,10 @@ const CONTENT_PARENT_DIRECTORY = './content/terms'
 const components = { EmbeddedHubSpot }
 
 const TermPage: NextPage<PageProps> = ({ page, content }) => (
-    <Layout scripts={[ { src:'//js.hsforms.net/forms/v2.js', strategy:'beforeInteractive' } ]}>
-        <section className="content-page__title">
-            {page && (<h1>{page.frontMatter.title}</h1>)}
-        </section>
+    <Layout scripts={[{ src: '//js.hsforms.net/forms/v2.js', strategy: 'beforeInteractive' }]}>
+        <section className="content-page__title">{page && <h1>{page.frontMatter.title}</h1>}</section>
         <section className="content-page__body">
-            {content && (<MDXRemote {...content} components={components as Components} />)}
+            {content && <MDXRemote {...content} components={components as Components} />}
         </section>
     </Layout>
 )
@@ -70,14 +64,16 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false }
         throw new Error('Missing slug')
     }
 
-    const page = await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, `${(params.slug as string[]).join('/')}.md`)) as Page
+    const page = (await loadMarkdownFile(
+        path.resolve(CONTENT_PARENT_DIRECTORY, `${(params.slug as string[]).join('/')}.md`)
+    )) as Page
     const content = await serializeMdxSource(page.content)
 
     return {
         props: {
             page,
             content,
-            preview
-        }
+            preview,
+        },
     }
 }

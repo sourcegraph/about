@@ -33,4 +33,3 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 <p id='sign-up'>Complete this form to be notified of changes to our sub-processors.</p>
 
 <EmbeddedHubSpot portalId='2762526' formId='08e6c442-0e7c-4892-a262-76dae55ab497' targetId='#sign-up' region='na1' />
-
