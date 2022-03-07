@@ -63,15 +63,15 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-onahau-mint text-center">
             <div className="container col-lg-6 py-6">
-                <h1 className="mb-4 font-weight-bold">Indeed merges code at scale</h1>
+                <h2 className="mb-4 font-weight-bold">Indeed merges code at scale</h2>
                 <blockquote>
-                    <p className="mb-4">
+                    <p>
                         &ldquo;On average, I'd say that for every automated merge request that we're able to merge we
                         save an hour. That's a rough but conservative estimate. It shows, though, that if we are doing
                         several thousand automated merges in a year, we're saving several employee's worth of
                         time.&rdquo;
                     </p>
-                    <figcaption className="text-muted">
+                    <figcaption className="text-muted mt-4">
                         —Jared Hodge, Senior Manager, Developer Experience at Indeed
                     </figcaption>
                 </blockquote>
@@ -90,9 +90,9 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => (
 
         <div className="text-center">
             <div className="container col-lg-8 py-8">
-                <h1 className="font-weight-bold">
+                <h2 className="font-weight-bold">
                     Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk!
-                </h1>
+                </h2>
 
                 <div className="mt-5">
                     <TempForm />

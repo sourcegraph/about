@@ -32,7 +32,7 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => (
     >
         <div className="container py-6">
             <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6 pr-lg-5">
                     <h1 className="mb-4 font-weight-bold">
                         Accelerate developer onboarding and decrease time to first commit
                     </h1>
@@ -67,15 +67,15 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-onahau-fog text-center">
             <div className="container col-lg-6 py-6">
-                <h1 className="mb-4 font-weight-bold">
+                <h2 className="mb-4 font-weight-bold">
                     See how Convoy increases the efficiency and confidence of entry level developers
-                </h1>
+                </h2>
                 <blockquote>
-                    <p className="mb-4">
+                    <p>
                         &ldquo;For our new developers, Sourcegraph has been invaluable to get to know the repository
                         structure, to track down where code lives, and self-service during their investigations.&rdquo;
                     </p>
-                    <figcaption className="text-muted">—Owen Kim, Senior Software Engineer at Convoy</figcaption>
+                    <figcaption className="text-muted mt-4">—Owen Kim, Senior Software Engineer at Convoy</figcaption>
                 </blockquote>
 
                 <img src="/external-logos/convoy-logo.svg" alt="Convoy logo" width={130} className="mt-4" />
@@ -88,9 +88,9 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => (
 
         <div className="text-center">
             <div className="container col-lg-8 py-8">
-                <h1 className="font-weight-bold">
-                    Time to think about your developer onboarding workflow? Let's talk!{' '}
-                </h1>
+                <h2 className="font-weight-bold">
+                    Time to think about your developer onboarding workflow? Let's talk!
+                </h2>
 
                 <div className="mt-5">
                     <TempForm />
