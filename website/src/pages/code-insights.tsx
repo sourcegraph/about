@@ -284,13 +284,14 @@ const blogListItems = [
         title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
         description: 'Learn about why we built Code Insights from our CEO.',
         type: 'Blog',
-        image: 'https://sourcegraphstatic.com/blog/code-insights-ga-blogs/announcement-header.png',
+        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
         href: '/blog/announcing-code-insights',
     },
     {
         title: 'Dive into documentation',
         description: 'Learn everything you need to know about Code Insights.',
         type: 'Docs',
+        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
         href: 'https://docs.sourcegraph.com/code_insights',
     },
 ]
