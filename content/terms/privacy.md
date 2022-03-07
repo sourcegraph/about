@@ -43,7 +43,7 @@ We use this information to operate, maintain, and provide to you the features of
 
 Sourcegraph collects aggregate and high-level information about usage from self-hosted Sourcegraph instances through a server ping. The server ping sends a payload containing data such as total number of users and whether certain features are enabled or in use.
 
-<div class="mt-4 mb-4 p-3" style={{background: '#f2f4f8'}}>For more information about the specific information we have access to, see our <a href="https://docs.sourcegraph.com/admin/pings">server pings documentation</a>. Customers can contact Sourcegraph at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a> to opt out of server pings.</div>
+<div className="mt-4 mb-4 p-3" style={{background: '#f2f4f8'}}>For more information about the specific information we have access to, see our <a href="https://docs.sourcegraph.com/admin/pings">server pings documentation</a>. Customers can contact Sourcegraph at support@sourcegraph.com to opt out of server pings.</div>
 
 The only personal information collected is the email address of the initial Sourcegraph installer and site admin (or, if that user is deleted or demoted to not be an admin, the first such active site admin). This information allows us to contact the technical administrator of the Sourcegraph instance to deliver information about product updates and policy changes, and for customer development purposes. Other than the initial site admin email address, only aggregates of usage data are sent: no usernames, user emails, user personal information, code, repository names, file names, URLs, or other such private content is sent to Sourcegraph.
 
@@ -74,7 +74,7 @@ For more information on what cookies are used, visit our <a href="https://about.
 
 ### Third-party services and data processors
 
-We use third-party automated devices and applications, such as Google Analytics, to evaluate usage of our Website. Google Analytics is a Web-based analysis tool provided by the Google Inc., 1600 Amphitheatre Pkwy, Mountain View, CA 94043-1351, USA. Google provides further information about its own privacy practices and offers a browser add-on to opt out of Google Analytics tracking at <a href="https://tools.google.com/dlpage/gaoptout">https://tools.google.com/dlpage/gaoptout</a>.
+We use third-party automated devices and applications, such as Google Analytics, to evaluate usage of our Website. Google Analytics is a Web-based analysis tool provided by the Google Inc., 1600 Amphitheatre Pkwy, Mountain View, CA 94043-1351, USA. Google provides further information about its own privacy practices and offers a browser add-on to opt out of Google Analytics tracking at https://tools.google.com/dlpage/gaoptout.
 
 We use third-party applications such as Google Apps, HubSpot, GitHub, Slack, DocuSign, and more to track and manage conversations, chats, or email exchanges with our users and customers. These products and companies provide further information about their own privacy practices on their websites.
 
@@ -160,7 +160,7 @@ Additional rights that may apply to you in certain instances:
 - Right to object to processing of personal data for direct marketing purposes
 - Right of erasure of your personal data from our system (“right to be forgotten”) if certain grounds are met
 
-To exercise your privacy rights, you can contact us directly at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
+To exercise your privacy rights, you can contact us directly at support@sourcegraph.com.
 
 <span style={{color: '#b200f8'}}>
 
@@ -176,7 +176,7 @@ Sourcegraph will retain your information for as long as your account is active o
 
 We will delete inactive accounts and any personal information in them after a period of eighteen (18) months.
 
-If you have any questions about reviewing, modifying or deleting your account information, you can contact us directly at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
+If you have any questions about reviewing, modifying or deleting your account information, you can contact us directly at support@sourcegraph.com.
 
 <span style={{color: '#b200f8'}}>
 
@@ -202,7 +202,7 @@ Sourcegraph's collection, storage, and use of Usage Data, and our responsibiliti
 
 </span>
 
-Sourcegraph does not knowingly collect or solicit any information from anyone under the age of 13 or knowingly allow such persons to register as Users. If you are based in the European Union, we will not knowingly collect your information if you are under the age of 16. In the event that we learn that we have collected personal information from a child under age 13, we will delete that information as quickly as possible. If you believe that we might have any information from a child under 13 or child in the European Union under 16, please contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
+Sourcegraph does not knowingly collect or solicit any information from anyone under the age of 13 or knowingly allow such persons to register as Users. If you are based in the European Union, we will not knowingly collect your information if you are under the age of 16. In the event that we learn that we have collected personal information from a child under age 13, we will delete that information as quickly as possible. If you believe that we might have any information from a child under 13 or child in the European Union under 16, please contact us at support@sourcegraph.com.
 
 <span style={{color: '#b200f8'}}>
 
@@ -218,7 +218,7 @@ Our Service may integrate with or contain links to other third-party sites and s
 
 </span>
 
-If you have any questions about this Privacy Policy or the Service, please contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
+If you have any questions about this Privacy Policy or the Service, please contact us at support@sourcegraph.com.
 
 <span style={{color: '#b200f8'}}>
 

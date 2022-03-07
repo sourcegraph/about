@@ -9,7 +9,7 @@ See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of Sourcegraph Cloud.
 
-<div class="p-3 my-3" style={{backgroundColor: '#f2f4f8'}}>
+<div className="p-3 my-3" style={{backgroundColor: '#f2f4f8'}}>
 <span style={{color: '#b200f8'}}>
 
 ## Is this the right Terms of Service for me?

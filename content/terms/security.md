@@ -7,7 +7,7 @@ title: Security is core to everything we do
 
 We don't stop at keeping your code safe. When your team's developers use Sourcegraph, they can discover and use your own security best practices much more easily in your own code. Your team can also more easily enforce security standards during code review.
 
-If you have specific questions or concerns, contact us at <a href="mailto:security@sourcegraph.com">security@sourcegraph.com</a>.
+If you have specific questions or concerns, contact us at security@sourcegraph.com.
 
 If you think you have discovered a security vulnerability in our product, please follow our instructions on [how to report a security vulnerability](https://handbook.sourcegraph.com/product-engineering/engineering/cloud/security/reporting-vulnerabilities).
 

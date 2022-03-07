@@ -10,6 +10,10 @@
         max-width: 64em;
         padding: 2rem 1rem;
         margin: auto;
+
+        @media only screen and (max-width: 768px) {
+            margin: unset;
+        }
         h2 {
             margin-top: 0.5rem;
         }
@@ -22,6 +26,9 @@
             p {
                 margin-bottom: 0;
             }
+        }
+        a {
+            word-break: break-word;
         }
         a.anchor {
             opacity: 0;
