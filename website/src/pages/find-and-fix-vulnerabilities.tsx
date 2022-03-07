@@ -49,7 +49,7 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => (
 
                 <div className="col-lg-6 mt-4 mt-lg-0">
                     <div className="embed-responsive embed-responsive-16by9">
-                        <iframe 
+                        <iframe
                             src="https://www.youtube.com/embed/13OqKPXqZXo"
                             title="Finding and fixing vulnerabilities with Sourcegraph"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
