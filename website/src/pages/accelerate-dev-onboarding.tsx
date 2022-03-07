@@ -33,7 +33,15 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => (
                 </div>
 
                 <div className="col-lg-6 mt-4 mt-lg-0">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DgwvhRW1Cbc" title="Accelerate developer onboarding with Sourcegraph" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <div className="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            src="https://www.youtube.com/embed/DgwvhRW1Cbc"
+                            title="Accelerate developer onboarding with Sourcegraph"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="embed-responsive-item"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
