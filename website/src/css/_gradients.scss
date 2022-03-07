@@ -11,13 +11,17 @@
     background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
 }
 @mixin BgGradientOnahauMint {
-    $firstStop: color.adjust($brand-onahau, $alpha: -0.7);
-    $lastStop: color.adjust($brand-mint, $alpha: -0.7);
-
     background: linear-gradient(
         90deg,
-        $firstStop 14.33%,
-        $lastStop 81.79%
+        color.adjust($brand-onahau, $alpha: -0.7) 14.33%,
+        color.adjust($brand-mint, $alpha: -0.7) 81.79%
+    );
+}
+@mixin BgGradientOnahauFog {
+    background: linear-gradient(
+        90deg,
+        color.adjust($brand-onahau, $alpha: -0.7) 14.33%,
+        color.adjust($brand-fog, $alpha: -0.7) 81.79%
     );
 }
 @mixin BgGradientBluePurple {
@@ -53,6 +57,9 @@
 }
 .bg-gradient-onahau-mint {
     @include BgGradientOnahauMint;
+}
+.bg-gradient-onahau-fog {
+    @include BgGradientOnahauFog;
 }
 .bg-gradient-blue-purple {
     @include BgGradientBluePurple;
