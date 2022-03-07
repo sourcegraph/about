@@ -8,7 +8,7 @@ import Header from './Header'
 
 interface LayoutScript {
     src: string
-    strategy: 'afterInteractive' | 'lazyOnload' | 'beforeInteractive' | undefined
+    strategy?: 'afterInteractive' | 'lazyOnload' | 'beforeInteractive' | undefined
 }
 
 interface LayoutProps {
