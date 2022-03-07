@@ -1,3 +1,4 @@
+@use "sass:color";
 @import '@styles/colors';
 
 @mixin BgGradientPrimary {
@@ -8,6 +9,16 @@
 }
 @mixin BgGradientBlueGreen {
     background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
+}
+@mixin BgGradientOnahauMint {
+    $firstStop: color.adjust($brand-onahau, $alpha: -0.7);
+    $lastStop: color.adjust($brand-mint, $alpha: -0.7);
+
+    background: linear-gradient(
+        90deg,
+        $firstStop 14.33%,
+        $lastStop 81.79%
+    );
 }
 @mixin BgGradientBluePurple {
     background: linear-gradient(90deg, $light-blue 0%, $light-purple 100%);
@@ -39,6 +50,9 @@
 }
 .bg-gradient-blue-green {
     @include BgGradientBlueGreen;
+}
+.bg-gradient-onahau-mint {
+    @include BgGradientOnahauMint;
 }
 .bg-gradient-blue-purple {
     @include BgGradientBluePurple;
