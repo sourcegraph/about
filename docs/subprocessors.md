@@ -4,7 +4,9 @@ title: Sourcegraph Subprocessors
 description: This page lists the subsprocessors that Sourcegraph may use
 ---
 
-Last modified: December 3, 2021
+Last modified: March 8, 2022 
+
+See the [previous version](https://about.sourcegraph.com/archives/subprocessors/2021-12-31/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives)
 
 Sourcegraph, Inc. (“Sourcegraph”) uses certain third party sub-processors (“Sub-processors”) to assist in providing the Services described in the Sourcegraph Terms of Service available at [https://about.sourcegraph.com/terms/](https://about.sourcegraph.com/terms/) and/or as set forth in an applicable Order Form. Capitalized terms used but not otherwise defined herein shall have the meanings ascribed to them in the applicable Sourcegraph Terms of Service.
 
@@ -15,6 +17,7 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 | Third-party Subprocessor | Location       | Service Provided                                                                                                                                                   | Applicable product                                 |
 | ------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------- |
 | Amazon Web Services      | USA            | Provides cloud hosting for Sourcegraph Cloud services                                                                                                              | Sourcegraph Cloud<br/>Managed Instance             |
+| Amplitude                | USA            | Processes customer logs                                                                                                             | Sourcegraph Cloud |
 | Atlassian                | Australia      | Processes support tickets and tracks bugs                                                                                                                          | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
 | Cloudflare               | USA            | Processes customer request data such as IP addresses to<br/> optimize security and performance of Sourcegraph Cloud                                                | Sourcegraph Cloud<br/>Managed Instance             |
 | GitHub                   | USA            | Tracks customer support issues                                                                                                                                     | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
