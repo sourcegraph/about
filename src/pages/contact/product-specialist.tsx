@@ -10,6 +10,7 @@ const Contact: FunctionComponent = () => {
     const hubSpot = useHubSpot('2762526', '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9', 'hubspotContactForm', true)
 
     return (
+        <div
         <Layout
             className="pt-0"
             minimal={true}
