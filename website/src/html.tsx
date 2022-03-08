@@ -103,6 +103,9 @@ export default class HTML extends React.Component<HtmlProps> {
                         `,
                         }}
                     />
+
+                    {/* Drift Integration */}
+                    {/* TODO: Add our Drift unique code snippet here */}
                 </head>
                 <body>
                     {/* Google Tag Manager (noscript) */}
