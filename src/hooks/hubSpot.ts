@@ -98,7 +98,12 @@ function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, onFormRea
     })
 }
 
-export const useHubSpot = (initialPortalId: string, initialFormId: string, initialTargetId: string, initialChiliPiper: boolean): void => {
+export const useHubSpot = (
+    initialPortalId: string,
+    initialFormId: string,
+    initialTargetId: string,
+    initialChiliPiper: boolean
+): void => {
     const [portalId, setPortalId] = useState<string>(initialPortalId)
     const [formId, setFormId] = useState<string>(initialFormId)
     const [targetId, setTargetId] = useState<string>(initialTargetId)
@@ -118,7 +123,10 @@ export const useHubSpot = (initialPortalId: string, initialFormId: string, initi
             window.addEventListener('message', event => {
                 const data = event.data as MessageEventData
                 if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
-                    const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
+                    const lead = data.data.reduce(
+                        (object, item) => Object.assign(object, { [item.name]: item.value }),
+                        {}
+                    )
                     const chilipiper = window.ChiliPiper
                     chilipiper?.submit(cpTenantDomain, cpRouterName, {
                         map: true,

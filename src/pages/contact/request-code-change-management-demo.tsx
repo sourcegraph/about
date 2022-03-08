@@ -4,10 +4,15 @@ import { Layout } from '@components'
 import { useHubSpot } from '@hooks'
 
 const title = 'Request a code change management demo'
-const description = 'We\'ll reach out to discuss a demo and to learn more about your needs.'
+const description = "We'll reach out to discuss a demo and to learn more about your needs."
 
 const Contact: FunctionComponent = () => {
-    const hubSpot = useHubSpot('2762526', 'fd64c0d5-627e-4176-b6f4-289571f9f212', 'hubspotRequestCodeChangeManagementDemoForm', false)
+    const hubSpot = useHubSpot(
+        '2762526',
+        'fd64c0d5-627e-4176-b6f4-289571f9f212',
+        'hubspotRequestCodeChangeManagementDemoForm',
+        false
+    )
 
     return (
         <Layout
@@ -17,9 +22,7 @@ const Contact: FunctionComponent = () => {
                 title,
                 description,
             }}
-            scripts={[
-                { src: '//js.hsforms.net/forms/v2.js', strategy: 'beforeInteractive' },
-            ]}
+            scripts={[{ src: '//js.hsforms.net/forms/v2.js', strategy: 'beforeInteractive' }]}
         >
             <div className="bg-white text-dark">
                 <div className="container-lg py-6 px-5">
@@ -30,9 +33,9 @@ const Contact: FunctionComponent = () => {
                                 We'll reach out to discuss a demo and to learn more about your needs.
                             </h3>
                             <div className="form mt-5">
-                                <div 
-                                    id="hubspotRequestCodeChangeManagementDemoForm" 
-                                    className="d-flex justify-center" 
+                                <div
+                                    id="hubspotRequestCodeChangeManagementDemoForm"
+                                    className="d-flex justify-center"
                                 />
                             </div>
                         </div>
