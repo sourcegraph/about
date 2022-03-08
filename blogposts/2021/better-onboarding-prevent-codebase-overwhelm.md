@@ -19,7 +19,6 @@ A newly hired developer arrives, eager to get started on exploring the team’s 
 
 We spoke to engineering leaders and engineers to learn their secrets for successful, repeatable, and scalable onboarding.
 
-
 ## 1. Get every department involved
 
 To implement an organization-wide, holistic onboarding process, you need to design a plan that involves every department—from HR and IT on up to the software org and individual teams. Everyone through the chain contributes to a great onboarding experience.
