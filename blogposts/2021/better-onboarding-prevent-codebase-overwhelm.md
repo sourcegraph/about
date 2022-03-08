@@ -1,9 +1,9 @@
 ---
-title: 'Software engineering onboarding: How the best engineering leaders prevent codebase overwhelm'
+title: '8 Ways to implement better onboarding'
 externalTitle: How to improve software engineer onboarding
-description: 'A data-driven look at how the rise in code complexity affects new developers joining a team, and how engineering managers can support new hires with better onboarding.'
+description: 'Engineering leaders and engineers share their most effective approaches to help new hires onboard faster and build confidence.'
 externalDescription: 'Worried you’re onboarding software engineers to an overwhelming codebase? Learn how to onboard better from leading engineers.'
-author: Patricia No
+author: Beyang Liu, Patricia No
 authorUrl:
 publishDate: 2021-04-29T18:00+02:00
 tags: [blog, remote]
@@ -15,178 +15,102 @@ published: true
 
 ![Better onboarding video game graphic](/blog/better-onboarding-prevent-codebase-overwhelm.png)
 
-Joining a new team is pretty exhilarating: tackling new codebases, learning interdependencies and systems, and collaborating with new teammates to bring different products to life.
+A newly hired developer arrives, eager to get started on exploring the team’s codebases and systems–and to make a positive impact. If only it were that easy. Increasingly complex codebases have made software engineering onboarding a jumbled gauntlet, but it doesn’t have to feel that way.
 
-But the learning curve can be daunting, confusing, and even debilitating, not only undermining developers’ skills and ambitions as new team members, but delaying their ability to contribute to the bigger picture.
+We spoke to engineering leaders and engineers to learn their secrets for successful, repeatable, and scalable onboarding.
 
-We’re taking a deep dive into best practices for software engineer onboarding and, as a critical point of entry, we want to know what’s working to get new developers feeling productive, safe, and able to contribute meaningfully and quickly.
 
-## How Big Code creates big problems for software engineer onboarding
+## 1. Get every department involved
 
-With the rise of Big Code—that is, how code is growing in volume, variety, velocity, and value—in all industries, new developers are feeling its influence across the board.
+To implement an organization-wide, holistic onboarding process, you need to design a plan that involves every department—from HR and IT on up to the software org and individual teams. Everyone through the chain contributes to a great onboarding experience.
 
-In a 2020 survey of software professionals, the top-cited challenge due to the dramatic rise in code complexity was the time and effort for new hires to be productive.
+[Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey), a developer at Sourcegraph observes, “The philosophy is that we’re all on one team, which requires buy-in from everyone to put in the time and effort to support each other. Our new hires are told by the CEO that we’ll drop everything to [answer] any questions they have. This [policy] sets a strong signal across the company that it’s not just platitudes, but a priority.”
 
-But why does the emergence of these sprawling, complex codebases create big problems for new software developers? And what’s a better path forward?
+## 2. Make it safe to ask for help
 
-If we think of the era of Big Code in terms of the massive growth in the volume and complexity of code that teams are required to manage in the hyper-specific, and possibly imperfect, systems within any organization, this creates an ad hoc environment for us to navigate—without guidance, standards, and tools to keep things in sync with our new teams and leadership.
+You’ll want to set an open tone at the outset. Doing so from the very beginning of onboarding is key to creating a culture that makes it safe to ask for help. By maintaining that tone and open communication throughout a new developer’s ramp-up and tenure, you’ll set your developers up for success. Adam says “Culture becomes important. You want the space to make mistakes when you’re coming into a new environment. You want a combination of psychological safety–knowing that your team won’t throw you under the bus–and technical safety, the guardrails to know that you won’t make a huge mistake for a customer.”
 
-But every new workplace is different, and code overload can mean different things in different environments.
+Notes [Marek Zaluski](https://handbook.sourcegraph.com/company/team#marek-zaluski), another software engineer at Sourcegraph, “The biggest challenge [for new devs] is getting familiar with what’s already there. The bigger [the codebase] is, the more difficult it is.”
 
-Not only are new team members just trying to understand the code, they’re trying to learn how the company uniquely structures and thinks about its code.
+When questions inevitably arise with a complex codebase, it helps to have a culture that welcomes questions. “Part of psychological safety is knowing that asking questions is encouraged,” adds Marek. “You can start to feel isolated if you’re worried about bothering your fellow engineers by asking questions that seem too simple.”
 
-[Marek Zaluski](https://handbook.sourcegraph.com/company/team#marek-zaluski), a developer education engineer here at Sourcegraph, noted, “The biggest challenges are getting familiar with what’s already there. The bigger it is, the more difficulty there is.”
+Our managers encourage developers to seek help sooner rather than later by setting a 15-minute timer while working on code. When those 15 minutes are up, the developer can quickly assess their progress and acknowledge code that’s presenting a challenge before overwhelm hits. If the developer hits a roadblock, the culture is designed to encourage them to consult a teammate to solve the problem. This helps the developer get back on track faster than if they were puzzling over something alone. This practice is encouraged long after the onboarding period ends, and is useful even for senior engineers.
 
-And without effective code search or support, you end up dividing your hours into learning and researching new codebases, and then actually implementing them.
+Recalls Marek, “In the past, I’ve been in situations where I’m thrown into a new project and expected to figure it out. It’s stressful. The bigger the codebase, the more anxiety I have. It’s hard to even know where to start.”
+Ultimately, to make onboarding work, you need to include cultural onboarding. If you do find a new developer struggling, help them find them their way–and then use what you learn from your interactions to revisit your onboarding procedures and culture and find ways to improve things for the next hire.
 
-## Codebase overwhelm can lead to anxiety and self-doubt
+## 3. Establish regular check-ins
 
-A whopping 94% of survey respondents report that their organization is affected by Big Code, regardless of industry or the number of developers on their team, with a variety of challenges getting new developers up to speed.
+A big part of fostering a supportive environment is scheduling check-ins with your developers. Such scheduled meetings have the dual benefit of helping managers uncover areas that devs find troublesome, and helping developers work through the blockages that keep them from progressing with their code.
 
-Almost everyone is now onboarding into a Big Code environment, and under its umbrella falls increasing testing metrics, incident handling, operational monitoring...
+By keeping a consistent and open channel of communication and feedback, developers don’t have to expend energy wondering if they’re living up to expectations.
 
-But the consequences of Big Code on onboarding software engineers are two-fold: it requires both technical onboarding, as well as a cultural one.
+## 4. Have a single source of truth
 
-Not only does being thrown in the deep end result in wasted time and productivity, but it also [instills anxiety](https://about.sourcegraph.com/blog/release-anxiety/) and fear—which cycles back to mistakes, searching code in silo with personally resourced tools, distressed work environments, and piecemeal feedback that doesn’t lead to structural change.
+As you scale up your engineering team, it becomes ever more important for everyone to be on the same page. Literally. You need to consolidate your resources to provide a single source of truth shared with the entire team–especially new hires.
 
-Even when they’re well qualified for the job, new developers will have moments of self-doubt and impostor syndrome. “In the past, I’ve been in situations where I’m thrown into a new project and expected to figure it out. It’s stressful, and the bigger the codebase, the more anxiety I have. It’s hard to even know where to start,” said Marek.
+A centralized system with clear documentation helps distribute knowledge equally. “Once you’re knowledgeable about a codebase, it’s difficult to put yourself in the shoes of a new developer–[who’s first figuring out] where to start, identifying interdependencies, connections and managing libraries,” says Marek.
 
-[Adam Harvey](https://handbook.sourcegraph.com/company/team#adam-harvey), another developer here at Sourcegraph said, “Culture becomes important. You want the space to make mistakes when you’re coming into a new environment. You want a combination of psychological safety (knowing that your team won’t throw you under the bus) and technical safety (guardrails to know that you won’t make a huge mistake for a customer).”
+The solution: Maintain and update a central resource to create a single source of truth. By consolidating your knowledge base, you’ll have everything a new developer needs to know in a single place–such as a handbook, a wiki, or a project management tool. That, in turn, lets developers swiftly learn, communicate, and execute against the team’s goals.
 
-Marek agreed, saying “Part of psychological safety is knowing that asking questions is encouraged. You can start to feel isolated if you’re worried about bothering your fellow engineers by asking questions that seem too simple.”
+A consolidated resource also helps the entire engineering team navigate the complexity and volume of the org’s codebases, while reducing team anxiety over not knowing where to find everything. Sometimes being lost isn’t just a discovery problem, but a social one. If you asked a group of engineers which databases to use, you might get multiple answers. Once you have documentation that outlines when to use specific databases, everyone gets the answer from the same source.
 
-## How engineering managers can implement better onboarding
+Clear communications and standardized guidance together build a transparent and safe environment for new developers to find answers so they can fully participate and contribute.
 
-Repeatable, scalable onboarding that continually raises the curve is an ongoing and collaborative effort. Here's how to go about it:
+## 5. Standardize resources and tools
 
-### Get everyone involved
+Ensuring new developers are clear on what tools are available helps them familiarize themselves with complex codebases and coding conventions more quickly. And it eliminates the need to start from scratch every time.
 
-Everyone, not just recruiters and HR, contributes to a great onboarding experience. Adam noted, “The philosophy is that we’re all on one team, which requires buy-in from everyone to put in the time and effort to support each other.
+As Marek notes, “Sometimes when you’re reaching for a particular tool or library, you don’t even know if you have something in-house already or if you need to look externally. Code search makes it easier to look through your list of repositories to find what others have done.”
 
-Our new hires are told by the CEO that we’ll drop everything to help with any questions they have. This sets a strong signal across the company that it’s not just platitudes, but a priority.”
-
-But he added that setting the tone is not enough, and pointed to implementing set meetings to help unblock people, regardless of whether they’re new to the team or just stuck.
-
-### Make it safe to ask for help
-
-Our developers say that setting timers for new hires can help: if they aren’t making progress in 15 minutes, encourage them to ask a teammate so they’re not taking a full day trying to figure out how to do something.
-
-And that they know this is welcomed and okay. Because we’re fully remote at Sourcegraph, we also employ an onboarding buddy system, pairing people who usually aren’t in the same department, which can help measure how your team dynamic fits into the rest of the company.
-
-Safety extends beyond new engineers. Even senior engineers can suffer from impostor syndrome. Nearly everyone feels intimidated when diving into a new large codebase.
-
-Finding the right balance between past experience and new territory is crucial, and organizations that value this should go out of their way to create a welcoming culture and environment.
-
-For new hires, having a marker for "am I living up to expectations" in the first couple of weeks can ease their worries. It's often better to err on the side of having an easier onramp, due to all the pitfalls of onboarding.
-
-Remember, you hired someone because you thought they were excellent. So if they are struggling, you should figure out what might be throwing them off, or revisit your hiring processes if this is happening often.
-
-It's common for fast-growing startups to experience some churn and attrition, but if this is happening a lot, it's important for someone in the org to be asking these questions and sharing as much learning as they can while respecting individual privacy.
-
-### Have a single source of truth
-
-Ongoing documentation, shared resources, open access, and keeping everything a new developer needs to know in a single source of truth (such as your company handbook or project management tool) helps address the complexity and volume of your org’s codebases.
-
-Having all the information in one place reduces the anxiety of not knowing where to find everything, and lets new developers swiftly learn, communicate, and execute against clear goals.
-
-“Once you’re knowledgeable of a codebase, it’s difficult to put yourself in the shoes of a new developer, knowing where to start, identifying interdependencies, connections and managing libraries,” says Marek.
-
-Having a centralized system with clear documentation helps distribute knowledge equally.
-
-Sometimes being lost isn’t just a discovery problem, but a social one. If you asked a group of engineers which databases to use, you might get multiple answers. Clear communication, guidance, and standards builds a transparent and safe environment to know how much knowledge you’re still missing before you can fully participate and contribute.
-
-Adam added, “A huge part of onboarding into a Big Code environment is how we interact with each other, and learn how to navigate through systems like operational monitoring, testing, or incident handling with reasonable confidence.
-
-### Make sure everyone is using the same resources and tools
-
-Marek stated, “Sometimes when you’re reaching for a particular tool or library, you don’t even know if you have something in-house already or if you need to look externally. Code search makes it easier to look through your list of repositories to find what others have done.”
-
-Ensuring it’s clear which tools are available and in use helps new developers quickly find their footing, familiarizing themselves with codebases and coding conventions and eliminating the need to start from scratch every time.
+Introduce new hires to the tools and processes that are specific to the team. For example, demonstrate how to set up the team’s development environment, and introduce new hires to what needs to happen to ship that first bug fix or feature enhancement. Such info may not reside in a department-wide resource, even if it should. After all, the more information that is codified for all team members to see, the better it is for the entire team.
 
 <div class="alert alert-primary" role="alert" style="max-width:650px; text-align: center; margin: auto auto 20px auto">
 Read about how robust, universal code search<a href = "/case-studies/convoy-improved-on-boarding"> enables developers at Convoy to onboard faster by quickly getting to know the repository structure, tracking down where code lives, and self-servicing during investigations</a>.
 </div>
 
-Successful software engineer onboarding doesn’t just affect the quality of the work, but pushes a company forward by integrating new hires as an essential, valuable part of a team, significantly decreasing the time for new developers to be productive, motivated, and feel fulfilled in their work.
-Solving for the issues inherent with the emergence of Big Code, together, is a vital part of it.
+## 6. Keep the bigger picture in sight
 
-### Help new hires see the bigger picture with multi-tiered onboarding
+When a new developer comes on board, they’ll go through some of the same rituals as any other hire, including handling paperwork with HR and getting a computer with email and chat accounts from IT. The engineering team may handle the team-specific shared collaboration tools, including issue tracker, code review, and CI/CD.
 
-Multi-tiered onboarding provides a layered, holistic view of the organization.
-
-Some things should be standard across the organization: setting up and familiarizing oneself with shared collaboration tools (email, chat, issue tracker, code review, CI/CD) and understanding the "big picture" of what the company does and how the various organizations interact with each other.
+All of those steps are important table-setters to jumpstart a new hire in the organization. But onboarding can extend beyond these basics through a multi-tiered process that provides a layered, holistic view of the business. By providing such a holistic view, new hires can better understand the big picture of what the company does and how the various organizations interact with each other to serve the needs and goals of the business. This way a new hire understands their role as a piece of the greater puzzle that it is the business.
 
 <div class="alert alert-primary" role="alert" style="max-width:650px; text-align: center; margin: auto auto 20px auto">
 Keep reading: <a href = "/blog/ex-googler-guide-dev-tools">An ex-Googler’s guide to dev tools</a>
 </div>
 
-At Digital Ocean, says [Limor Bergman](https://www.linkedin.com/in/limorbergman/), former Director of Engineering at Digital Ocean and current Director of Mentorship at PowerToFly, department heads would give recurring presentations attended by every batch of new hires about how each department operated.
+For example, [Limor Bergman](https://www.linkedin.com/in/limorbergman/), former Director of Engineering at Digital Ocean and current Director of Mentorship at PowerToFly, suggests having department heads give recurring presentations to new hires about how each department operates. This was a tactic employed during her time at Digital Ocean.
 
-Individual teams should also think about how to onboard new members to the things that are specific to the team, such as setting up the development environment that members of the team use, meeting and establishing relationships with teammates, and understanding what’s necessary to ship that first bug fix or feature enhancement.
+At Sourcegraph, the onboarding process includes a buddy system where we pair people who usually aren’t in the same department together. This helps managers gauge their fully-remote team dynamic and how it fits with the rest of the company.
 
-### Share high-level context
+## 7. Share high-level context
 
-High-level context is the hardest to transfer. It’s difficult to document, because grokking the overall architecture means understanding how the pieces fit together and knowing what the core assumptions and tension points are. Even if you do a reasonable job with the documentation, chances are it will fall out of date.
+High-level context in the software engineering org represents the hardest knowledge to transfer. It’s difficult to document because understanding the overall architecture means understanding how the pieces fit together and knowing what the core assumptions and tension points are. Even if you do a reasonable job with the documentation, chances are the high-level context will fall out of date because of the rapid pace of changes.
+However, it’s important to transfer such knowledge, including historical knowledge. Otherwise you can get into a position where no one is left on the team who feels confident making big changes.
 
-However, it's important to transfer such knowledge, including historical knowledge. Otherwise you can get into a position where no one is left on the team who feels confident making big changes, not just small, incremental ones.
+Having a source of truth that captures both code changes and high-level discussions about the motivation behind changes is important because it preserves the “why.” This information will be useful for new members of the team who may need to understand the context at some point down the road.
 
-Having a source of truth that captures not just code changes, but high-level discussions about the motivation behind changes is important, because it preserves the "why" for new members of the team who may need to understand it at some point down the road.
+“This exact scenario played out [once] for a new engineer, who loved context and understanding the history behind decisions,” recalls [Jean du Plessis](https://handbook.sourcegraph.com/team/#jean-du-plessis), a director of engineering at Sourcegraph. “We call these [Requests for Comments (RFCs)](https://handbook.sourcegraph.com/communication/rfcs) and put them together when we want to introduce any changes or make architectural decisions. This way we can refer to this document–which even predates my time–and [have the] context to these decisions. Even the people who worked on it at the time eventually forget about it.”
 
-[Jean du Plessis](https://www.linkedin.com/in/jeandp/), a Director of Engineering at Sourcegraph, shared: "This exact scenario played out for a new engineer recently. They love context and understanding the history behind decisions. Thankfully, Sourcegraph has this practice of putting [Requests for Comments (RFCs)](https://handbook.sourcegraph.com/communication/rfcs) together when we want to introduce any changes or make architectural decisions. We were able to refer to this document, which even predates my time, that gave context on these decisions. Because even the people who worked on it at the time eventually forget about it."
+Another trick Limor uses is to have new hires update the docs as they experience things for themselves. For example, she suggests putting new hires into an on-call rotation to get them oriented, since diagnosing and addressing outages will require them to understand the system end to end. During this on-call period, when the developer is not resolving an issue, they should be updating the docs based on the last thing they just resolved.
 
-Limor shared that putting new hires into an on-call rotation can also help them get oriented, because diagnosing and addressing outages will require them to understand the system end to end. During on-call, when they're not resolving an issue, they should be updating the docs based on the last thing they just resolved.
+## 8. Customize your onboarding for each employee
 
-### Avoid one-size-fits all software engineer onboarding
+Great software engineer onboarding often requires tailoring the experience to a new hire’s specific strengths, experience, and personality.
 
-Good software engineer onboarding often requires tailoring the experience to a new hire's specific strengths, experience, and personality.
+“As a new engineer onboarding, you’re a little bit of an adventurer,” says Jean. “You’re going into uncharted territory. What you want to do as a manager is allow them some freedom to explore because that process leads to learning and discovery, but you also want to set them up for success.”
 
-> "I think as a new engineer onboarding, you're a little bit of an adventurer; you're going into uncharted territory.
-> What you want to do as a manager is allow them some freedom to explore because that process leads to learning and discovery, but you also want to set them up for success.
-> So you want to give them a map—that could be your architecture documents. You want to make sure they have the right gear, so that could be making sure they have the right software and a laptop and all of that.
-> And you would probably give them a satellite phone as well if they really get stuck out in the wilderness, so they can call for help.
-> That might be the team that is there to support them or an onboarding buddy who gives them guidance along the way.
-> Something that means they can call a friend if they really get stuck." – Jean
+What might that look like? According to Jean, tailoring the experience incorporates elements of what we’ve outlined in points one through seven. “You want to give them a map—that could be your architecture documents. You want to make sure they have the right gear.” And, you’d want to be sure the developer knows that someone on the team has their back, such as “an onboarding buddy who gives them guidance along the way. So they can call a friend if they really get stuck.”
 
-Standardization and automation should take place for the common things, mostly in the form of checklists and documentation, but it's also important to leave room for the "satellite phone" so a new hire can call in for help from a more experienced teammate.
+Standardization and automation should take place for the common things, mostly in the form of checklists and documentation. But it’s also important to leave room for a new hire to ask for tailored help from a more experienced teammate.
 
-You don’t want to waste long-time engineers’ time answering questions that can be linked to a doc, but you must be careful not to reinforce a culture over time where people don't make themselves available to new hires when they _do_ need facetime with an experienced human.
+Some developers do better with written instructions, while others learn better when face-to-face, talking over video chat with an experienced human. Still others may feel intimidated to ask questions in a wide forum such as Slack, but they’ll thrive with more one-on-one time. The wide variance means managers need to pay attention to employees and tailor their approach accordingly.
 
-Onboarding Slack channels can help reveal gaps in onboarding knowledge to everyone, but be wary of everyone spending time to address simple questions.
-Some new hires may also feel intimidated to ask questions to a wide forum.
+The engineering manager’s initiative plays a crucial role in tailoring onboarding to the employee. Jean recalls one engineering manager who spent an hour daily with a new hire to answer high-level questions. This hands-on, open communication led to one of the fastest onboardings he has seen, where the new engineer was able to drive a significant change in their first month on the job.
 
-The engineering manager plays a crucial role here. Jean said one engineering spent an hour daily with a new hire to answer high-level questions. This led to one of the fastest onboardings he has seen, where the new engineer was able to drive a significant change in their first month on the job.
+Ryan Djurovich, a DevOps Manager at Xero, Australia’s largest accounting software company, takes a different tactic. He puts time on the calendar for a one-on-one, but leaves the option for individuals to cancel at their discretion. “Some people opt for a lot of sessions and come with a list of questions, and that’s how they prefer to learn. Others prefer to find information asynchronously through [services like] Slack or Confluence.”
 
-[Ryan Djurovich](https://www.linkedin.com/in/ryandjurovich/), a DevOps Manager at Xero, Australia's largest accounting software company, puts this time on the calendar, but leaves people the option to cancel at their discretion:
-
-> "Sometimes we set the expectation that we're going to meet every time. But at other times it's, 'Hey, this is us making our time available to you, but you choose if you want to have this or not.'
-> Some people have opted for a lot of sessions, and come with a list of questions, and that's how they prefer to learn.
-> Others prefer to find information asynchronously through Slack or Confluence or whatnot."
-
-Experience level also affects how new hires onboard. Junior engineers likely need more guidance and also reassurance about what is a "normal pace" of onboarding.
-That's not to discount the benefit of reassurance for senior engineers, as well, but it's customary to expect a senior engineer starts directing their own onboarding after getting through the standard stuff.
-
-### Embrace continuous onboarding
-
-> "I think most people look at onboarding in the same way we look at education: you go to school, you graduate, and you're done with learning.
-> But the reality is you should never be done with learning. And in the same way, when it comes to onboarding onto codebases and infrastructure and that kind of thing, you should never be done with learning there because those systems aren't in a consistent state; they're evolving over time as the business evolves." – Ryan
-
-Onboarding isn't just something that happens when a developer joins a new company. Our job as developers entails continually diving into new areas of code and learning what makes things tick, so in some sense, we never stop onboarding. This is especially true when we switch teams or start a new project on a very unfamiliar part of the codebase.
-
-There are some things they already know and don't need to repeat—for example, they likely already have the dev environment set up and have the big picture of the overall company—but there is still a lot of context to acquire.
-
-Therefore, investing in good software engineer onboarding can be an investment in the overall velocity of development, because in some sense, devs are continuously onboarding to new domains of knowledge.
-
-## Onboarding now and then
-
-In talking to engineering leaders who have been in the industry for awhile, it becomes apparent that many things have become more complex about software development over time. Software systems are serving more users, dealing with greater volumes of data, and provide more integrations and pieces of functionality than ever before. The amount of code in the world is increasing, and so has the size of the average codebase.
-
-It can sometimes be tempting to yearn for the way things were when codebases were smaller and less interconnected—before the advent of distributed systems, of big complex web applications, of software permeating every company.
-
-Tooling has gotten much better and more advanced over time, but it feels like it's just catching up with the challenges of developing software at scale. You can no longer just attach a debugger to a single process to figure out what's going on in production, and you can no longer rely on local search to cover all the code that makes up your application.
-
-Having a robust onboarding process, that is both standard/automated and human/supportive is as important as ever. This is especially true when you consider how quickly the number of developers in the world is growing. If we truly want to create a world where the vast majority of people contribute to the code economy, we are going to do it one onboarding at a time.
-
-Curious to learn more about [the emergence of Big Code](https://info.sourcegraph.com/emergence-of-big-code-2020-survey?_ga=2.177852646.2139915911.1619599995-1170923504.1619599995)? Read the full report.
+Experience level also affects how new hires onboard. Junior engineers generally need more guidance and also reassurance about what is a “normal pace.” Typically senior engineers will direct their own onboarding after getting through the standard introductions.
 
 ## More posts like this
 
