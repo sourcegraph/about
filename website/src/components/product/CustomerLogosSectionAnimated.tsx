@@ -132,8 +132,8 @@ const ITEMS: {
         url: '/external-logos/workiva-vector-logo.svg',
     },
     {
-        name: 'Apex Clearing',
-        url: '/external-logos/apex-clearing-logo.png',
+        name: 'Mercado Libre',
+        url: '/external-logos/mercado-libre.svg',
     },
     {
         name: 'Blend',
@@ -166,6 +166,10 @@ const ITEMS: {
     {
         name: 'Twilio',
         url: '/external-logos/twilio-segment-horizontal-darkacai-logo.svg',
+    },
+    {
+        name: 'Apex Clearing',
+        url: '/external-logos/apex-clearing-logo.png',
     },
 ]
 
