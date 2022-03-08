@@ -3,11 +3,11 @@ import { FunctionComponent } from 'react'
 import { Layout } from '@components'
 import { useHubSpot } from '@hooks'
 
-const title = 'Request a code change management demo'
-const description = 'We\'ll reach out to discuss a demo and to learn more about your needs.'
+const title = 'Sourcegraph - Schedule a Sourcegraph demo.'
+const description = 'Schedule a Sourcegraph demo.'
 
 const Contact: FunctionComponent = () => {
-    const hubSpot = useHubSpot('2762526', 'fd64c0d5-627e-4176-b6f4-289571f9f212', 'hubspotRequestCodeChangeManagementDemoForm', false)
+    const hubSpot = useHubSpot('2762526', '310000a0-2b6b-4da2-89e9-2be930a8a298', 'hubspotRequestDemoForm', false)
 
     return (
         <Layout
@@ -21,19 +21,16 @@ const Contact: FunctionComponent = () => {
                 { src: '//js.hsforms.net/forms/v2.js', strategy: 'beforeInteractive' },
             ]}
         >
-            <div className="bg-white text-dark">
-                <div className="container-lg py-6 px-5">
-                    <div className="row flex-wrap-reverse">
+            <div className="form-page bg-white text-dark">
+                <div className="container-xl pt-5 px-5">
+                    <div className="row">
                         <div className="col-md-6">
-                            <h1 className="display-4">Request a code change management demo</h1>
-                            <h3 className="font-weight-light text-sans-serif">
-                                We'll reach out to discuss a demo and to learn more about your needs.
+                            <h1 className="display-3 font-weight-bold">Request a demo</h1>
+                            <h3 className="font-weight-light">
+                                To schedule a demo with a product specialist, tell us a bit about yourself.
                             </h3>
                             <div className="form mt-5">
-                                <div 
-                                    id="hubspotRequestCodeChangeManagementDemoForm" 
-                                    className="d-flex justify-center" 
-                                />
+                                <div id="hubspotRequestDemoForm" className="d-flex justify-center" />
                             </div>
                         </div>
                         <div className="col-md-6">
