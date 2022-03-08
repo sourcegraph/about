@@ -32,8 +32,9 @@ export const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                 </li>
                                 <li className="nav-item">
                                     <a
-                                        href="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-overview.pdf"
+                                        href="/handouts/Sourcegraph-Overview.pdf"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         Sourcegraph overview (PDF)
                                     </a>
