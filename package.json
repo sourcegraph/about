@@ -23,7 +23,13 @@
     },
     "rules": {
       "import/no-default-export": "off",
-      "@next/next/no-img-element": "off"
+      "@next/next/no-img-element": "off",
+      "no-console": [
+        "error",
+        {
+          "allow": ["warn", "error"]
+        }
+      ]
     }
   },
   "dependencies": {
