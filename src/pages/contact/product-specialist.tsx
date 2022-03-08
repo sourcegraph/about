@@ -1,76 +1,13 @@
-import { FunctionComponent, useEffect } from 'react'
+import { FunctionComponent } from 'react'
 
-import { Layout, createHubSpotForm } from '@components'
-
-declare global {
-    interface Window {
-        ChiliPiper?: IChiliPiper
-    }
-}
-
-export interface MessageEventData {
-    type: string
-    eventName: string
-    data: { name: string; value: string }[]
-}
-
-interface IChiliPiper {
-    submit: (
-        domain: string,
-        router: string,
-        options?: {
-            lead: { [key: string]: string | number }
-            handleSubmit?: boolean
-            formId?: string
-            debug?: boolean
-            map?: boolean
-            domain?: string
-            router?: string
-            title?: string
-            titleStyle?: string
-            onSuccess?: () => void
-            onError?: () => void
-            onClose?: () => void
-            onRouted?: () => void
-            closeOnOutside?: boolean
-            dynamicRedirectLink?: string
-            mobileRedirectLink?: string
-            injectRootCss?: boolean
-            locale?: string
-            webHook?: string
-        }
-    ) => void
-}
+import { Layout } from '@components'
+import { useHubSpot } from '@hooks'
 
 const title = 'Sourcegraph - Talk to a product specialist'
 const description = 'Talk to a Sourcegraph product specialist. Let us know how we can help.'
 
 const Contact: FunctionComponent = () => {
-    useEffect(() => {
-        createHubSpotForm({
-            portalId: '2762526',
-            formId: '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9',
-            targetId: 'hubspotContactForm',
-        })
-        if (document) {
-            document.querySelectorAll('body')[0].setAttribute('style', 'background-image:none;')
-        }
-
-        // Chili Piper script
-        const cpTenantDomain = 'sourcegraph'
-        const cpRouterName = 'contact-sales'
-        window.addEventListener('message', event => {
-            const data = event.data as MessageEventData
-            if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
-                const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
-                const chilipiper = window.ChiliPiper
-                chilipiper?.submit(cpTenantDomain, cpRouterName, {
-                    map: true,
-                    lead,
-                })
-            }
-        })
-    }, [])
+    const hubSpot = useHubSpot('2762526', '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9', 'hubspotContactForm', true)
 
     return (
         <Layout

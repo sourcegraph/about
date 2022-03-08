@@ -5,7 +5,6 @@ export { ContentSection } from './ContentSection'
 export { Jumbotron } from './Jumbotron'
 export { RequestDemoForm } from './RequestDemoForm'
 export { TrySourcegraph } from './TrySourcegraph'
-export { createHubSpotForm } from './HubSpot'
 
 // Actions
 export {
