@@ -3,8 +3,6 @@ import { FunctionComponent } from 'react'
 import { Layout } from '@components'
 import { useHubSpot } from '@hooks'
 
-const description = 'Get your team started with a free trial of Sourcegraph.'
-
 const Contact: FunctionComponent = () => {
     useHubSpot('2762526', '202906aa-b46d-4657-86c4-30fbfda2413f', 'hubspotRequestTrialForm', false)
 
@@ -13,7 +11,7 @@ const Contact: FunctionComponent = () => {
             className="pt-0"
             minimal={true}
             meta={{
-                description,
+                description: 'Get your team started with a free trial of Sourcegraph.',
             }}
             scripts={[{ src: '//js.hsforms.net/forms/v2.js', strategy: 'beforeInteractive' }]}
         >
