@@ -14,8 +14,8 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <Install />
 
                     <p>
-                        <a 
-                            className="d-inline-flex mt-5 font-weight-bold" 
+                        <a
+                            className="d-inline-flex mt-5 font-weight-bold"
                             href="https://docs.sourcegraph.com"
                             data-button-style="3"
                             data-button-location="4"
@@ -46,8 +46,8 @@ export const SelfHostedSection: FunctionComponent = () => (
                         <li>Free trial for enterprise features</li>
                     </ul>
 
-                    <a 
-                        className="d-inline-flex font-weight-bold" 
+                    <a
+                        className="d-inline-flex font-weight-bold"
                         href="/get-started"
                         data-button-style="3"
                         data-button-location="4"

@@ -251,11 +251,11 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
-                        <Link 
+                        <Link
                             className="btn btn-primary mx-2 mb-3"
                             data-button-style="1"
                             data-button-location="4"
-                            to="../#get-started" 
+                            to="../#get-started"
                             title="Try Sourcegraph now"
                         >
                             Try Sourcegraph now

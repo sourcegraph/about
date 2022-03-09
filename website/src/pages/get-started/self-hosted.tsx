@@ -76,8 +76,8 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => (
                             Talk to an engineer <ArrowRightIcon />
                         </a>
 
-                        <a 
-                            className="btn p-0 text-primary" 
+                        <a
+                            className="btn p-0 text-primary"
                             data-button-style="3"
                             data-button-location="2"
                             href="https://docs.sourcegraph.com/"

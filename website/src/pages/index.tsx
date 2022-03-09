@@ -23,9 +23,9 @@ const Index: React.FunctionComponent = (props: any) => (
                                 security risks, root-cause incidents, and more.
                             </p>
                             <div className="pt-1">
-                                <Link 
-                                    className="btn btn-primary m-3" 
-                                    to="/get-started" 
+                                <Link
+                                    className="btn btn-primary m-3"
+                                    to="/get-started"
                                     title="Get started"
                                     data-button-style="1"
                                     data-button-location="2"

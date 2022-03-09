@@ -19,7 +19,7 @@ export const BestForTitle: FunctionComponent = () => (
 
 export const GetStartedPage: FunctionComponent<PageProps> = props => {
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
-        <Link 
+        <Link
             className="btn btn-primary my-2"
             data-button-style="1"
             data-button-location="2"

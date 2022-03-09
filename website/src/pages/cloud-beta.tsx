@@ -120,7 +120,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                             <li>Are ready to experience the power of code search</li>
                         </ul>
                     </div>
-                    <a 
+                    <a
                         className="btn btn-primary"
                         data-button-style="1"
                         data-button-location="4"

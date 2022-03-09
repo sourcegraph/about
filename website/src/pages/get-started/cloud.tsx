@@ -61,8 +61,8 @@ export const CloudPage: FunctionComponent<PageProps> = props => {
                             <div className={`bg-white rounded p-5 ${navigatedFromProduct ? 'mt-5' : 'mb-5'}`}>
                                 <h3 className="mb-3">Search open source code</h3>
                                 <p className="mb-5">No account required.</p>
-                                <a 
-                                    href="https://sourcegraph.com/search" 
+                                <a
+                                    href="https://sourcegraph.com/search"
                                     className="btn btn-primary"
                                     data-button-style="1"
                                     data-button-location="2"

@@ -48,24 +48,24 @@ export default ((props: any) => (
                             >
                                 Accelerate developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link 
-                                to="#resolve-incidents-faster" 
+                            <Link
+                                to="#resolve-incidents-faster"
                                 className="list-group-item list-group-item-action"
                                 data-button-style="3"
                                 data-button-location="2"
                             >
                                 Resolve incidents faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link 
-                                to="#streamline-code-reuse" 
+                            <Link
+                                to="#streamline-code-reuse"
                                 className="list-group-item list-group-item-action"
                                 data-button-style="3"
                                 data-button-location="2"
                             >
                                 Streamline code reuse <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link 
-                                to="#boost-code-health" 
+                            <Link
+                                to="#boost-code-health"
                                 className="list-group-item list-group-item-action"
                                 data-button-style="3"
                                 data-button-location="2"

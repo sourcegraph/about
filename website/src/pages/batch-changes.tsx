@@ -47,9 +47,9 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             Keep your code up to date, fix critical security issues, and pay down tech debt across all
                             of your repositories with Batch Changes.
                         </p>
-                        <Link 
-                            className="btn btn-primary" 
-                            to={batchChangesDemoFormURL} 
+                        <Link
+                            className="btn btn-primary"
+                            to={batchChangesDemoFormURL}
                             title="Request a demo"
                             data-button-style="1"
                             data-button-location="2"
