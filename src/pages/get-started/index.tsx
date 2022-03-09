@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { FunctionComponent, useEffect, useState } from 'react'
 
 import { Layout } from '@components'
+import { useQueryString } from '@hooks'
 
 import styles from './getStarted.module.scss'
 
@@ -19,17 +20,10 @@ export const BestForTitle: FunctionComponent = () => (
 )
 
 export const GetStartedPage: FunctionComponent = () => {
-    const router = useRouter()
-    const [queryString, setQueryString] = useState<string>('')
-    useEffect(() => {
-        if (!router.isReady) {
-            return
-        }
-        const query = router.query
-        setQueryString(Object.entries(query)[0].join('='))
-    }, [router.isReady, router.query])
+    const queryHook = useQueryString()
+
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
-        <Link href={`${href}?${queryString}`}>
+        <Link href={`${href}?${queryHook.queryString}`}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="btn btn-primary my-2">
                 Get started for free <ArrowRightIcon />
