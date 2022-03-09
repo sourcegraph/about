@@ -10,7 +10,7 @@ interface EmbeddedHubSpotProps {
 }
 
 const EmbeddedHubSpot: FunctionComponent<EmbeddedHubSpotProps> = ({ portalId, formId, targetId, region }) => (
-    <Script id={formId}>{`
+    <Script id={targetId}>{`
         window.hbspt.forms.create({
             portalId: '${portalId}',
             formId: '${formId}',
