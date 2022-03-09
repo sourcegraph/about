@@ -251,7 +251,7 @@ const Index: React.FunctionComponent = (props: any) => (
                 </div>
             </ContentSection>
 
-            <ContentSection className="mt-6">
+            <ContentSection className="my-6">
                 <div className="row flex-wrap-reverse">
                     <div className="col-lg-7 pr-lg-6 mt-3">
                         <div className="container video-embed embed-responsive embed-responsive-16by9 ">
