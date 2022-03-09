@@ -2,7 +2,7 @@
 title: 'How we migrated entirely to CSS Modules using codemods and Sourcegraph Code Insights'
 author: Valery Bugakov
 description: 'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.'
-publishDate: 2022-02-24T00:00-07:00
+publishDate: 2022-03-10T00:00-07:00
 tags: [blog]
 slug: migrating-to-css-modules-with-codemods-and-code-insights
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png
