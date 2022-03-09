@@ -69,12 +69,19 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => (
                     <div className="d-flex flex-column align-items-start">
                         <a
                             className="btn p-0 my-4 text-primary"
+                            data-button-style="3"
+                            data-button-location="2"
                             href="https://info.sourcegraph.com/talk-to-a-developer"
                         >
                             Talk to an engineer <ArrowRightIcon />
                         </a>
 
-                        <a className="btn p-0 text-primary" href="https://docs.sourcegraph.com/">
+                        <a 
+                            className="btn p-0 text-primary" 
+                            data-button-style="3"
+                            data-button-location="2"
+                            href="https://docs.sourcegraph.com/"
+                        >
                             Deploy to a server or cluster <ArrowRightIcon />
                         </a>
                     </div>
