@@ -1,7 +1,7 @@
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { FunctionComponent, useEffect, useState } from 'react'
+import { FunctionComponent } from 'react'
 
 import { Layout } from '@components'
 import { useQueryString } from '@hooks'
@@ -20,10 +20,10 @@ export const BestForTitle: FunctionComponent = () => (
 )
 
 export const GetStartedPage: FunctionComponent = () => {
-    const queryHook = useQueryString()
+    const routerHook = useQueryString()
 
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
-        <Link href={`${href}?${queryHook.queryString}`}>
+        <Link href={`${href}?${routerHook.queryString}`}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="btn btn-primary my-2">
                 Get started for free <ArrowRightIcon />
