@@ -15,7 +15,7 @@ export const SelfHostedSection: FunctionComponent = () => (
 
                     <p>
                         <a 
-                            className="d-inline-flex mt-5 font-weight-bold" 
+                            className="d-inline-flex mt-5 font-weight-bold cta-btn" 
                             href="https://docs.sourcegraph.com"
                             data-button-style="3"
                             data-button-location="4"
@@ -27,7 +27,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <h2 className="h5 d-inline-flex mt-4 mr-4">Want help?</h2>
 
                     <a
-                        className="btn btn-primary d-inline-flex"
+                        className="btn btn-primary d-inline-flex cta-btn"
                         href="https://info.sourcegraph.com/talk-to-a-developer"
                         data-button-style="1"
                         data-button-location="4"
@@ -47,7 +47,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                     </ul>
 
                     <a 
-                        className="d-inline-flex font-weight-bold" 
+                        className="d-inline-flex font-weight-bold cta-btn" 
                         href="/get-started"
                         data-button-style="3"
                         data-button-location="4"

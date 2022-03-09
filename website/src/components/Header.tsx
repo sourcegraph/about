@@ -137,7 +137,7 @@ export default class Header extends React.Component<HeaderProps, any> {
 
                                     {!this.props.hideGetStartedButton && (
                                         <Nav.Link
-                                            className="btn btn-primary ml-3 px-5 py-2"
+                                            className="btn btn-primary ml-3 px-5 py-2 cta-btn"
                                             data-button-style="1"
                                             data-button-location="1"
                                             href="/get-started"

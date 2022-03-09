@@ -252,7 +252,7 @@ export default ((props: any) => (
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
                         <Link 
-                            className="btn btn-primary mx-2 mb-3"
+                            className="btn btn-primary mx-2 mb-3 cta-btn"
                             data-button-style="1"
                             data-button-location="4"
                             to="../#get-started" 

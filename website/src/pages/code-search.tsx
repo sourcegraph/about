@@ -30,7 +30,7 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                         </p>
                         <div className="pt-1">
                             <Link
-                                className="btn btn-primary mr-3"
+                                className="btn btn-primary mr-3 cta-btn"
                                 data-button-style="1"
                                 data-button-location="2"
                                 to="#get-started"
@@ -39,7 +39,7 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                                 Deploy locally <ArrowRightIcon className="ml-1" />
                             </Link>
                             <a
-                                className="btn btn-outline-primary my-3"
+                                className="btn btn-outline-primary my-3 cta-btn"
                                 data-button-style="2"
                                 data-button-location="2"
                                 href="https://sourcegraph.com/search"

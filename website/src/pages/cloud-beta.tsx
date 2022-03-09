@@ -60,7 +60,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                             access.
                         </p>
                         <a
-                            className="btn btn-primary join-the-watilist-hero-btn"
+                            className="btn btn-primary join-the-watilist-hero-btn cta-btn"
                             data-button-style="1"
                             data-button-location="2"
                             href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku"
@@ -121,7 +121,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                         </ul>
                     </div>
                     <a 
-                        className="btn btn-primary"
+                        className="btn btn-primary cta-btn"
                         data-button-style="1"
                         data-button-location="4"
                         href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku"

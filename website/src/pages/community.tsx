@@ -28,7 +28,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                             collaborate, we grow faster, better, and stronger.
                         </p>
                         <a
-                            className="btn btn-primary"
+                            className="btn btn-primary cta-btn"
                             data-button-style="1"
                             data-button-location="2"
                             href={
@@ -234,7 +234,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                 </div>
                 <div className="col-lg-5 mt-3">
                     <a
-                        className="btn btn-secondary"
+                        className="btn btn-secondary cta-btn"
                         data-button-style="1"
                         data-button-location="4"
                         href={
@@ -246,7 +246,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     </a>
                     <br />
                     <a
-                        className="btn btn-primary mt-3"
+                        className="btn btn-primary mt-3 cta-btn"
                         data-button-style="1"
                         data-button-location="4"
                         href={'mailto:community@sourcegraph.com'}

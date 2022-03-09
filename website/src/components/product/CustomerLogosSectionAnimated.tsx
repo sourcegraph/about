@@ -402,7 +402,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
                     <div className="col-lg-6 text-center mt-2">
                         <a 
                             href="https://info.sourcegraph.com/demo-request" 
-                            className="btn btn-outline-primary"
+                            className="btn btn-outline-primary cta-btn"
                             data-button-style="5"
                             data-button-location="3"
                         >

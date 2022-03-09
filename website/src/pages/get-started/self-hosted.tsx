@@ -68,7 +68,7 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => (
 
                     <div className="d-flex flex-column align-items-start">
                         <a
-                            className="btn p-0 my-4 text-primary"
+                            className="btn p-0 my-4 text-primary cta-btn"
                             data-button-style="3"
                             data-button-location="2"
                             href="https://info.sourcegraph.com/talk-to-a-developer"
@@ -77,7 +77,7 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => (
                         </a>
 
                         <a 
-                            className="btn p-0 text-primary" 
+                            className="btn p-0 text-primary cta-btn" 
                             data-button-style="3"
                             data-button-location="2"
                             href="https://docs.sourcegraph.com/"

@@ -24,7 +24,7 @@ const Index: React.FunctionComponent = (props: any) => (
                             </p>
                             <div className="pt-1">
                                 <Link 
-                                    className="btn btn-primary m-3" 
+                                    className="btn btn-primary m-3 cta-btn" 
                                     to="/get-started" 
                                     title="Get started"
                                     data-button-style="1"
@@ -33,7 +33,7 @@ const Index: React.FunctionComponent = (props: any) => (
                                     Get started <ArrowRightIcon className="ml-1" />
                                 </Link>
                                 <a
-                                    className="btn btn-outline-primary m-3"
+                                    className="btn btn-outline-primary m-3 cta-btn"
                                     data-button-style="2"
                                     data-button-location="2"
                                     href="https://info.sourcegraph.com/demo-request"

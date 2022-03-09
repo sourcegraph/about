@@ -34,7 +34,7 @@ export default ((props: any) => (
                         <div className="list-group">
                             <Link
                                 to="#find-and-fix-security-vulnerabilities"
-                                className="list-group-item list-group-item-action"
+                                className="list-group-item list-group-item-action cta-btn"
                                 data-button-style="3"
                                 data-button-location="2"
                             >
@@ -42,7 +42,7 @@ export default ((props: any) => (
                             </Link>
                             <Link
                                 to="#accelerate-developer-onboarding"
-                                className="list-group-item list-group-item-action"
+                                className="list-group-item list-group-item-action cta-btn"
                                 data-button-style="3"
                                 data-button-location="2"
                             >
@@ -50,7 +50,7 @@ export default ((props: any) => (
                             </Link>
                             <Link 
                                 to="#resolve-incidents-faster" 
-                                className="list-group-item list-group-item-action"
+                                className="list-group-item list-group-item-action cta-btn"
                                 data-button-style="3"
                                 data-button-location="2"
                             >
@@ -58,7 +58,7 @@ export default ((props: any) => (
                             </Link>
                             <Link 
                                 to="#streamline-code-reuse" 
-                                className="list-group-item list-group-item-action"
+                                className="list-group-item list-group-item-action cta-btn"
                                 data-button-style="3"
                                 data-button-location="2"
                             >
@@ -66,7 +66,7 @@ export default ((props: any) => (
                             </Link>
                             <Link 
                                 to="#boost-code-health" 
-                                className="list-group-item list-group-item-action"
+                                className="list-group-item list-group-item-action cta-btn"
                                 data-button-style="3"
                                 data-button-location="2"
                             >
@@ -104,7 +104,7 @@ export default ((props: any) => (
                         <Link
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
-                            className="btn btn-outline-primary"
+                            className="btn btn-outline-primary cta-btn"
                             data-button-style="5"
                             data-button-location="3"
                         >
@@ -177,7 +177,7 @@ export default ((props: any) => (
                         <Link
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
-                            className="btn btn-outline-primary"
+                            className="btn btn-outline-primary cta-btn"
                             data-button-style="5"
                             data-button-location="3"
                         >
@@ -217,7 +217,7 @@ export default ((props: any) => (
                         <Link
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
-                            className="btn btn-outline-primary"
+                            className="btn btn-outline-primary cta-btn"
                             data-button-style="5"
                             data-button-location="3"
                         >
@@ -286,7 +286,7 @@ export default ((props: any) => (
                         <Link
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
-                            className="btn btn-outline-primary"
+                            className="btn btn-outline-primary cta-btn"
                             data-button-style="5"
                             data-button-location="3"
                         >
@@ -325,7 +325,7 @@ export default ((props: any) => (
                         <Link
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
-                            className="btn btn-outline-primary"
+                            className="btn btn-outline-primary cta-btn"
                             data-button-style="5"
                             data-button-location="3"
                         >
