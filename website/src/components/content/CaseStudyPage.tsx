@@ -148,7 +148,13 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
         <div className="container text-center pt-6">
             <h3 className="display-3 font-weight-bold">{title}</h3>
             <p>{description}</p>
-            <Link className="btn btn-primary mx-2 mb-3" to={demoFormURL} title="Request a demo">
+            <Link 
+                className="btn btn-primary mx-2 mb-3"
+                data-button-style="1"
+                data-button-location="4"
+                to={demoFormURL} 
+                title="Request a demo"
+            >
                 Schedule a demo
             </Link>
         </div>
