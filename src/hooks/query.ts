@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 
-export const useQueryString = (): { queryString: string, navigatedFromProduct: boolean } => {
+export const useQueryString = (): { queryString: string; navigatedFromProduct: boolean } => {
     const router = useRouter()
     const [navigatedFromProduct, setNavigatedFromProduct] = useState<boolean>(false)
     const [queryString, setQueryString] = useState<string>('')
