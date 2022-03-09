@@ -14,7 +14,12 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <Install />
 
                     <p>
-                        <a className="d-inline-flex mt-5 font-weight-bold" href="https://docs.sourcegraph.com">
+                        <a 
+                            className="d-inline-flex mt-5 font-weight-bold" 
+                            href="https://docs.sourcegraph.com"
+                            data-button-style="3"
+                            data-button-location="4"
+                        >
                             Deploy to a server or cluster <ArrowRightIcon className="ml-1" />
                         </a>
                     </p>
@@ -24,6 +29,8 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <a
                         className="btn btn-primary d-inline-flex"
                         href="https://info.sourcegraph.com/talk-to-a-developer"
+                        data-button-style="1"
+                        data-button-location="4"
                     >
                         Talk to an engineer <ArrowRightIcon className="ml-1" />
                     </a>
@@ -39,7 +46,12 @@ export const SelfHostedSection: FunctionComponent = () => (
                         <li>Free trial for enterprise features</li>
                     </ul>
 
-                    <a className="d-inline-flex font-weight-bold" href="/get-started">
+                    <a 
+                        className="d-inline-flex font-weight-bold" 
+                        href="/get-started"
+                        data-button-style="3"
+                        data-button-location="4"
+                    >
                         Learn about self-hosted vs.Cloud features <ArrowRightIcon className="ml-1" />
                     </a>
                 </div>
