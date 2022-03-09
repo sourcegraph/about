@@ -1,9 +1,15 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import Script from 'next/script'
 import React, { FunctionComponent, ReactNode, ReactFragment } from 'react'
 
 import Footer from './Footer'
 import Header from './Header'
+
+interface LayoutScript {
+    src: string
+    strategy?: 'afterInteractive' | 'lazyOnload' | 'beforeInteractive' | undefined
+}
 
 interface LayoutProps {
     meta?: {
@@ -23,6 +29,8 @@ interface LayoutProps {
     className?: string
     hideFooter?: boolean
     hideGetStartedButton?: boolean
+
+    scripts?: LayoutScript[]
 }
 
 export const Layout: FunctionComponent<LayoutProps> = props => {
@@ -80,6 +88,9 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
             <section className="d-flex flex-column fill-height">{props.children}</section>
 
             {!props.hideFooter && <Footer minimal={props.minimal} />}
+            {props.scripts?.map(script => (
+                <Script key={script.src} src={script.src} strategy={script.strategy} />
+            ))}
         </div>
     )
 }
