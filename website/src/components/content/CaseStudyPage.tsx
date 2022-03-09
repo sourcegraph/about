@@ -148,13 +148,8 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
         <div className="container text-center pt-6">
             <h3 className="display-3 font-weight-bold">{title}</h3>
             <p>{description}</p>
-<<<<<<< HEAD
-            <Link 
-                className="btn btn-primary mx-2 mb-3 cta-btn"
-=======
             <Link
-                className="btn btn-primary mx-2 mb-3"
->>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
+                className="btn btn-primary mx-2 mb-3 cta-btn"
                 data-button-style="1"
                 data-button-location="4"
                 to={demoFormURL}

@@ -14,13 +14,8 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <Install />
 
                     <p>
-<<<<<<< HEAD
-                        <a 
-                            className="d-inline-flex mt-5 font-weight-bold cta-btn" 
-=======
                         <a
-                            className="d-inline-flex mt-5 font-weight-bold"
->>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
+                            className="d-inline-flex mt-5 font-weight-bold cta-btn"
                             href="https://docs.sourcegraph.com"
                             data-button-style="3"
                             data-button-location="4"
@@ -51,13 +46,8 @@ export const SelfHostedSection: FunctionComponent = () => (
                         <li>Free trial for enterprise features</li>
                     </ul>
 
-<<<<<<< HEAD
-                    <a 
-                        className="d-inline-flex font-weight-bold cta-btn" 
-=======
                     <a
-                        className="d-inline-flex font-weight-bold"
->>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
+                        className="d-inline-flex font-weight-bold cta-btn"
                         href="/get-started"
                         data-button-style="3"
                         data-button-location="4"

@@ -251,13 +251,8 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
-<<<<<<< HEAD
-                        <Link 
-                            className="btn btn-primary mx-2 mb-3 cta-btn"
-=======
                         <Link
-                            className="btn btn-primary mx-2 mb-3"
->>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
+                            className="btn btn-primary mx-2 mb-3 cta-btn"
                             data-button-style="1"
                             data-button-location="4"
                             to="../#get-started"

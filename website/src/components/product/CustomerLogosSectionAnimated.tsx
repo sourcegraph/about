@@ -400,15 +400,9 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
             {!showButton && (
                 <div className="row justify-content-center">
                     <div className="col-lg-6 text-center mt-2">
-<<<<<<< HEAD
-                        <a 
-                            href="https://info.sourcegraph.com/demo-request" 
-                            className="btn btn-outline-primary cta-btn"
-=======
                         <a
                             href="https://info.sourcegraph.com/demo-request"
-                            className="btn btn-outline-primary"
->>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
+                            className="btn btn-outline-primary cta-btn"
                             data-button-style="5"
                             data-button-location="3"
                         >
