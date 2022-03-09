@@ -120,8 +120,13 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                             <li>Are ready to experience the power of code search</li>
                         </ul>
                     </div>
+<<<<<<< HEAD
                     <a 
                         className="btn btn-primary cta-btn"
+=======
+                    <a
+                        className="btn btn-primary"
+>>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
                         data-button-style="1"
                         data-button-location="4"
                         href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku"

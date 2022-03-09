@@ -48,25 +48,43 @@ export default ((props: any) => (
                             >
                                 Accelerate developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
+<<<<<<< HEAD
                             <Link 
                                 to="#resolve-incidents-faster" 
                                 className="list-group-item list-group-item-action cta-btn"
+=======
+                            <Link
+                                to="#resolve-incidents-faster"
+                                className="list-group-item list-group-item-action"
+>>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
                                 data-button-style="3"
                                 data-button-location="2"
                             >
                                 Resolve incidents faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
+<<<<<<< HEAD
                             <Link 
                                 to="#streamline-code-reuse" 
                                 className="list-group-item list-group-item-action cta-btn"
+=======
+                            <Link
+                                to="#streamline-code-reuse"
+                                className="list-group-item list-group-item-action"
+>>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
                                 data-button-style="3"
                                 data-button-location="2"
                             >
                                 Streamline code reuse <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
+<<<<<<< HEAD
                             <Link 
                                 to="#boost-code-health" 
                                 className="list-group-item list-group-item-action cta-btn"
+=======
+                            <Link
+                                to="#boost-code-health"
+                                className="list-group-item list-group-item-action"
+>>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
                                 data-button-style="3"
                                 data-button-location="2"
                             >

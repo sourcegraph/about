@@ -19,8 +19,13 @@ export const BestForTitle: FunctionComponent = () => (
 
 export const GetStartedPage: FunctionComponent<PageProps> = props => {
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
+<<<<<<< HEAD
         <Link 
             className="btn btn-primary my-2 cta-btn"
+=======
+        <Link
+            className="btn btn-primary my-2"
+>>>>>>> d924c788177aa170e30a67e4ae90ec7b6111b7d0
             data-button-style="1"
             data-button-location="2"
             to={`${href}${props.location.search}`}
