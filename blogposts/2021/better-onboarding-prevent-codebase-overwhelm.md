@@ -1,5 +1,5 @@
 ---
-title: '8 Ways to implement better onboarding'
+title: '8 ways to implement better onboarding'
 externalTitle: How to improve software engineer onboarding
 description: 'Engineering leaders and engineers share their most effective approaches to help new hires onboard faster and build confidence.'
 externalDescription: 'Worried you’re onboarding software engineers to an overwhelming codebase? Learn how to onboard better from leading engineers.'
@@ -15,7 +15,7 @@ published: true
 
 ![Better onboarding video game graphic](/blog/better-onboarding-prevent-codebase-overwhelm.png)
 
-A newly hired developer arrives, eager to get started on exploring the team’s codebases and systems–and to make a positive impact. If only it were that easy. Increasingly complex codebases have made software engineering onboarding a jumbled gauntlet, but it doesn’t have to feel that way.
+A newly hired developer arrives, eager to get started on exploring the team’s codebase and systems–and to make a positive impact. If only it were that easy. Increasingly complex codebases have made software engineering onboarding a jumbled gauntlet, but it doesn’t have to feel that way.
 
 We spoke to engineering leaders and engineers to learn their secrets for successful, repeatable, and scalable onboarding.
 
@@ -52,7 +52,7 @@ A centralized system with clear documentation helps distribute knowledge equally
 
 The solution: Maintain and update a central resource to create a single source of truth. By consolidating your knowledge base, you’ll have everything a new developer needs to know in a single place–such as a handbook, a wiki, or a project management tool. That, in turn, lets developers swiftly learn, communicate, and execute against the team’s goals.
 
-A consolidated resource also helps the entire engineering team navigate the complexity and volume of the org’s codebases, while reducing team anxiety over not knowing where to find everything. Sometimes being lost isn’t just a discovery problem, but a social one. If you asked a group of engineers which databases to use, you might get multiple answers. Once you have documentation that outlines when to use specific databases, everyone gets the answer from the same source.
+A consolidated resource also helps the entire engineering team navigate the complexity and volume of the org’s codebase, while reducing team anxiety over not knowing where to find everything. Sometimes being lost isn’t just a discovery problem, but a social one. If you asked a group of engineers which databases to use, you might get multiple answers. Once you have documentation that outlines when to use specific databases, everyone gets the answer from the same source.
 
 Clear communications and standardized guidance together build a transparent and safe environment for new developers to find answers so they can fully participate and contribute.
 
@@ -69,7 +69,7 @@ Another trick [Limor Bergman](https://www.linkedin.com/in/limorbergman/), former
 
 ## 6. Standardize resources and tools
 
-Ensuring new developers are clear on what tools are available helps them familiarize themselves with complex codebases and coding conventions more quickly. And it eliminates the need to start from scratch every time.
+Ensuring new developers are clear on what tools are available helps them familiarize themselves with a complex codebase and coding conventions more quickly. And it eliminates the need to start from scratch every time.
 
 As Marek notes, “Sometimes when you’re reaching for a particular tool or library, you don’t even know if you have something in-house already or if you need to look externally. Code search makes it easier to look through your list of repositories to find what others have done.”
 
