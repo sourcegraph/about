@@ -29,6 +29,8 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <a
                             className="btn btn-primary"
+                            data-button-style="1"
+                            data-button-location="2"
                             href={
                                 'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
                             }
@@ -233,6 +235,8 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-5 mt-3">
                     <a
                         className="btn btn-secondary"
+                        data-button-style="1"
+                        data-button-location="4"
                         href={
                             'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
                         }
@@ -243,6 +247,8 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <br />
                     <a
                         className="btn btn-primary mt-3"
+                        data-button-style="1"
+                        data-button-location="4"
                         href={'mailto:community@sourcegraph.com'}
                         title="Send us an email"
                     >
