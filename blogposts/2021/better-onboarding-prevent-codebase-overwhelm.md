@@ -56,7 +56,18 @@ A consolidated resource also helps the entire engineering team navigate the comp
 
 Clear communications and standardized guidance together build a transparent and safe environment for new developers to find answers so they can fully participate and contribute.
 
-## 5. Standardize resources and tools
+## 5. Share high-level context
+
+High-level context in the software engineering org represents the hardest knowledge to transfer. It’s difficult to document because understanding the overall architecture means understanding how the pieces fit together and knowing what the core assumptions and tension points are. Even if you do a reasonable job with the documentation, chances are the high-level context will fall out of date because of the rapid pace of changes.
+However, it’s important to transfer such knowledge, including historical knowledge. Otherwise you can get into a position where no one is left on the team who feels confident making big changes.
+
+Having a source of truth that captures both code changes and high-level discussions about the motivation behind changes is important because it preserves the “why.” This information will be useful for new members of the team who may need to understand the context at some point down the road.
+
+“This exact scenario played out [once] for a new engineer, who loved context and understanding the history behind decisions,” recalls [Jean du Plessis](https://handbook.sourcegraph.com/team/#jean-du-plessis), a director of engineering at Sourcegraph. “We call these [Requests for Comments (RFCs)](https://handbook.sourcegraph.com/communication/rfcs) and put them together when we want to introduce any changes or make architectural decisions. This way we can refer to this document–which even predates my time–and [have the] context to these decisions. Even the people who worked on it at the time eventually forget about it.”
+
+Another trick [Limor Bergman](https://www.linkedin.com/in/limorbergman/), former Director of Engineering at Digital Ocean and current Director of Mentorship at PowerToFly, uses is to have new hires update the docs as they experience things for themselves. For example, she suggests putting new hires into an on-call rotation to get them oriented, since diagnosing and addressing outages will require them to understand the system end to end. During this on-call period, when the developer is not resolving an issue, they should be updating the docs based on the last thing they just resolved.
+
+## 6. Standardize resources and tools
 
 Ensuring new developers are clear on what tools are available helps them familiarize themselves with complex codebases and coding conventions more quickly. And it eliminates the need to start from scratch every time.
 
@@ -68,7 +79,7 @@ Introduce new hires to the tools and processes that are specific to the team. Fo
 Read about how robust, universal code search<a href = "/case-studies/convoy-improved-on-boarding"> enables developers at Convoy to onboard faster by quickly getting to know the repository structure, tracking down where code lives, and self-servicing during investigations</a>.
 </div>
 
-## 6. Keep the bigger picture in sight
+## 7. Keep the bigger picture in sight
 
 When a new developer comes on board, they’ll go through some of the same rituals as any other hire, including handling paperwork with HR and getting a computer with email and chat accounts from IT. The engineering team may handle the team-specific shared collaboration tools, including issue tracker, code review, and CI/CD.
 
@@ -78,20 +89,9 @@ All of those steps are important table-setters to jumpstart a new hire in the or
 Keep reading: <a href = "/blog/ex-googler-guide-dev-tools">An ex-Googler’s guide to dev tools</a>
 </div>
 
-For example, [Limor Bergman](https://www.linkedin.com/in/limorbergman/), former Director of Engineering at Digital Ocean and current Director of Mentorship at PowerToFly, suggests having department heads give recurring presentations to new hires about how each department operates. This was a tactic employed during her time at Digital Ocean.
+For example, Limor suggests having department heads give recurring presentations to new hires about how each department operates. This was a tactic employed during her time at Digital Ocean.
 
-At Sourcegraph, the onboarding process includes a buddy system where we pair people who usually aren’t in the same department together. This helps managers gauge their fully-remote team dynamic and how it fits with the rest of the company.
-
-## 7. Share high-level context
-
-High-level context in the software engineering org represents the hardest knowledge to transfer. It’s difficult to document because understanding the overall architecture means understanding how the pieces fit together and knowing what the core assumptions and tension points are. Even if you do a reasonable job with the documentation, chances are the high-level context will fall out of date because of the rapid pace of changes.
-However, it’s important to transfer such knowledge, including historical knowledge. Otherwise you can get into a position where no one is left on the team who feels confident making big changes.
-
-Having a source of truth that captures both code changes and high-level discussions about the motivation behind changes is important because it preserves the “why.” This information will be useful for new members of the team who may need to understand the context at some point down the road.
-
-“This exact scenario played out [once] for a new engineer, who loved context and understanding the history behind decisions,” recalls [Jean du Plessis](https://handbook.sourcegraph.com/team/#jean-du-plessis), a director of engineering at Sourcegraph. “We call these [Requests for Comments (RFCs)](https://handbook.sourcegraph.com/communication/rfcs) and put them together when we want to introduce any changes or make architectural decisions. This way we can refer to this document–which even predates my time–and [have the] context to these decisions. Even the people who worked on it at the time eventually forget about it.”
-
-Another trick Limor uses is to have new hires update the docs as they experience things for themselves. For example, she suggests putting new hires into an on-call rotation to get them oriented, since diagnosing and addressing outages will require them to understand the system end to end. During this on-call period, when the developer is not resolving an issue, they should be updating the docs based on the last thing they just resolved.
+At Sourcegraph, the onboarding process includes a buddy system where we pair people who usually aren’t in the same department together. This helps managers gauge their fully remote team dynamic and how it fits with the rest of the company.
 
 ## 8. Customize your onboarding for each employee
 
@@ -111,8 +111,10 @@ Ryan Djurovich, a DevOps Manager at Xero, Australia’s largest accounting softw
 
 Experience level also affects how new hires onboard. Junior engineers generally need more guidance and also reassurance about what is a “normal pace.” Typically senior engineers will direct their own onboarding after getting through the standard introductions.
 
+There's a lot more to successful developer onboarding than setting up a local dev environment. We hope this advice has been helpful!
+
 ## More posts like this
 
 - [How we built our software engineering career framework](https://about.sourcegraph.com/blog/software-engineer-career-ladder/)
-- [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
+- [Async, remote, and flexible: How 7 engineers rethought their work calendars)](https://about.sourcegraph.com/blog/remote-work-calendar/)
 - [Improving code display: A look at 17 developer workspaces](https://about.sourcegraph.com/blog/workspaces-of-sourcegraph/)
