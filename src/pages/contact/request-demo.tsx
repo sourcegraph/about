@@ -7,7 +7,7 @@ const title = 'Sourcegraph - Schedule a Sourcegraph demo.'
 const description = 'Schedule a Sourcegraph demo.'
 
 const Contact: FunctionComponent = () => {
-    const hubSpot = useHubSpot('2762526', '310000a0-2b6b-4da2-89e9-2be930a8a298', 'hubspotRequestDemoForm', false)
+    useHubSpot('2762526', '310000a0-2b6b-4da2-89e9-2be930a8a298', 'hubspotRequestDemoForm', false)
 
     return (
         <Layout

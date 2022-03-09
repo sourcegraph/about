@@ -7,7 +7,7 @@ const title = 'Sourcegraph - Talk to a product specialist'
 const description = 'Talk to a Sourcegraph product specialist. Let us know how we can help.'
 
 const Contact: FunctionComponent = () => {
-    const hubSpot = useHubSpot('2762526', '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9', 'hubspotContactForm', true)
+    useHubSpot('2762526', '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9', 'hubspotContactForm', true)
 
     return (
         <Layout

@@ -7,7 +7,7 @@ const title = 'Request a code change management demo'
 const description = "We'll reach out to discuss a demo and to learn more about your needs."
 
 const Contact: FunctionComponent = () => {
-    const hubSpot = useHubSpot(
+    useHubSpot(
         '2762526',
         'fd64c0d5-627e-4176-b6f4-289571f9f212',
         'hubspotRequestCodeChangeManagementDemoForm',

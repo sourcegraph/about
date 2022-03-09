@@ -6,7 +6,7 @@ import { useHubSpot } from '@hooks'
 const description = 'Contact us to learn more about Sourcegraph enterprise.'
 
 const Contact: FunctionComponent = () => {
-    const hubSpot = useHubSpot('2762526', '202906aa-b46d-4657-86c4-30fbfda2413f', 'hubspotRequestTrialForm', true)
+    useHubSpot('2762526', '202906aa-b46d-4657-86c4-30fbfda2413f', 'hubspotRequestTrialForm', true)
 
     return (
         <Layout
