@@ -133,7 +133,7 @@ export default class HTML extends React.Component<HtmlProps> {
                                 }();
                                 drift.SNIPPET_VERSION = '0.3.1';
                                 drift.load('bgv3pp29xsp9');
-                            `
+                            `,
                         }}
                     />
                 </head>
