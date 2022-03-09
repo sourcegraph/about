@@ -111,7 +111,7 @@ Ryan Djurovich, a DevOps Manager at Xero, Australia’s largest accounting softw
 
 Experience level also affects how new hires onboard. Junior engineers generally need more guidance and also reassurance about what is a “normal pace.” Typically senior engineers will direct their own onboarding after getting through the standard introductions. This makes it all the more important to tailor the process to each new hire so you set the right pace and level of guidance.
 
-___
+---
 
 There's a lot more to successful developer onboarding than setting up a local dev environment. We hope this advice has been helpful!
 
