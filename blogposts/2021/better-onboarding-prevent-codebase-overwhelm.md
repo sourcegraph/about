@@ -5,7 +5,7 @@ description: 'Engineering leaders and engineers share their most effective appro
 externalDescription: 'Worried you’re onboarding software engineers to an overwhelming codebase? Learn how to onboard better from leading engineers.'
 author: Beyang Liu, Patricia No
 authorUrl:
-publishDate: 2021-04-29T18:00+02:00
+publishDate: 2022-03-09T18:00+02:00
 tags: [blog, remote]
 slug: better-onboarding-how-to-prevent-codebase-overwhelm
 heroImage: /blog/better-onboarding-prevent-codebase-overwhelm.png
@@ -109,9 +109,13 @@ The engineering manager’s initiative plays a crucial role in tailoring onboard
 
 Ryan Djurovich, a DevOps Manager at Xero, Australia’s largest accounting software company, takes a different tactic. He puts time on the calendar for a one-on-one, but leaves the option for individuals to cancel at their discretion. “Some people opt for a lot of sessions and come with a list of questions, and that’s how they prefer to learn. Others prefer to find information asynchronously through [services like] Slack or Confluence.”
 
-Experience level also affects how new hires onboard. Junior engineers generally need more guidance and also reassurance about what is a “normal pace.” Typically senior engineers will direct their own onboarding after getting through the standard introductions.
+Experience level also affects how new hires onboard. Junior engineers generally need more guidance and also reassurance about what is a “normal pace.” Typically senior engineers will direct their own onboarding after getting through the standard introductions. This makes it all the more important to tailor the process to each new hire so you set the right pace and level of guidance.
+
+___
 
 There's a lot more to successful developer onboarding than setting up a local dev environment. We hope this advice has been helpful!
+
+_This post was originally published in April 2020. It has been revised and updated as of March 9, 2022._
 
 ## More posts like this
 
