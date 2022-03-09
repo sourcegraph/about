@@ -73,26 +73,24 @@ function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, onFormRea
         formId,
         target: `#${targetId}`,
         onFormSubmit,
-        onFormReady: ($form: HubSpotForm) => {
-            // The `form` parameter is normally a jQuery wrapper around a form element.
-            // We polyfill jQuery in gatsby-browser.js to return the form element directly.
-            if ($form) {
+        onFormReady: (form: HubSpotForm) => {
+            if (form) {
                 // We want to populate hidden fields in the form with values stored in cookies when the form loads.
-                const anonymousIdInput = $form[0].querySelector('input[name="anonymous_user_id"]') as HTMLInputElement
+                const anonymousIdInput = form[0].querySelector('input[name="anonymous_user_id"]') as HTMLInputElement
                 if (anonymousIdInput && anonymousIdInput.value === '') {
                     // Populate the hidden anonymous_user_id form field with the value from the sourcegraphAnonymousUid cookie.
                     anonymousIdInput.value = anonymousId || ''
                 }
 
-                const firstSourceURLInput = $form[0].querySelector('input[name="first_source_url"]') as HTMLInputElement
-                const emailInput = $form[0].querySelector('input[name="email"]') as HTMLInputElement
+                const firstSourceURLInput = form[0].querySelector('input[name="first_source_url"]') as HTMLInputElement
+                const emailInput = form[0].querySelector('input[name="email"]') as HTMLInputElement
                 if (firstSourceURLInput && firstSourceURLInput.value === '' && emailInput && emailInput.value === '') {
                     // Populate the hidden first_source_url form field with the value from the sourcegraphSourceUrl cookie.
                     firstSourceURLInput.value = firstSourceURL || ''
                 }
             }
             if (onFormReady) {
-                onFormReady($form[0])
+                onFormReady(form[0])
             }
         },
     })
