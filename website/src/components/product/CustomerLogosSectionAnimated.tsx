@@ -400,7 +400,12 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
             {!showButton && (
                 <div className="row justify-content-center">
                     <div className="col-lg-6 text-center mt-2">
-                        <a href="https://info.sourcegraph.com/demo-request" className="btn btn-outline-primary">
+                        <a 
+                            href="https://info.sourcegraph.com/demo-request" 
+                            className="btn btn-outline-primary"
+                            data-button-style="5"
+                            data-button-location="3"
+                        >
                             Schedule a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </a>
                     </div>

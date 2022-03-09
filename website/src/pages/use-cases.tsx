@@ -35,22 +35,41 @@ export default ((props: any) => (
                             <Link
                                 to="#find-and-fix-security-vulnerabilities"
                                 className="list-group-item list-group-item-action"
+                                data-button-style="3"
+                                data-button-location="2"
                             >
                                 Find and fix security vulnerabilities <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link
                                 to="#accelerate-developer-onboarding"
                                 className="list-group-item list-group-item-action"
+                                data-button-style="3"
+                                data-button-location="2"
                             >
                                 Accelerate developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#resolve-incidents-faster" className="list-group-item list-group-item-action">
+                            <Link 
+                                to="#resolve-incidents-faster" 
+                                className="list-group-item list-group-item-action"
+                                data-button-style="3"
+                                data-button-location="2"
+                            >
                                 Resolve incidents faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#streamline-code-reuse" className="list-group-item list-group-item-action">
+                            <Link 
+                                to="#streamline-code-reuse" 
+                                className="list-group-item list-group-item-action"
+                                data-button-style="3"
+                                data-button-location="2"
+                            >
                                 Streamline code reuse <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#boost-code-health" className="list-group-item list-group-item-action">
+                            <Link 
+                                to="#boost-code-health" 
+                                className="list-group-item list-group-item-action"
+                                data-button-style="3"
+                                data-button-location="2"
+                            >
                                 Boost code health <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
@@ -86,6 +105,8 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style="5"
+                            data-button-location="3"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
@@ -157,6 +178,8 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style="5"
+                            data-button-location="3"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
@@ -195,6 +218,8 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style="5"
+                            data-button-location="3"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
@@ -262,6 +287,8 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style="5"
+                            data-button-location="3"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
@@ -299,6 +326,8 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style="5"
+                            data-button-location="3"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
