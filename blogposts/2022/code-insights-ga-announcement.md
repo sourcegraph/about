@@ -2,7 +2,7 @@
 title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time'
 author: Quinn Slack
 description: 'Devs, engineering managers, and leadership across all companies and industries are looking for a better understanding of their codebase. Code Insights allows you to create insights for anything you can search for in seconds.'
-publishDate: 2022-02-24T12:00-00:00
+publishDate: 2022-03-10T12:00-00:00
 tags: [blog]
 slug: announcing-code-insights
 published: true
@@ -78,7 +78,7 @@ Then, as we built from concept to prototype to Beta to General Availability toda
 
 ## Beyond code search
 
-Code Insights has huge momentum after an incredible year of growth at Sourcegraph. More than 1.275 million devs used Sourcegraph over the last 12 months, including many of the world's leading engineering teams, like 3/5 FAANG, Reddit, Uber, GE, PayPal, and Dropbox. Those teams first came to Sourcegraph for Code Search, which remains foundational to everything we do as we’ve expanded our product with Code Insights and [Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes/).
+Code Insights is a core part of our growth this year. More than 1.275 million devs used Sourcegraph over the last 12 months, including many of the world's leading engineering teams, like 3/5 FAANG, Reddit, Uber, GE, PayPal, and Dropbox. Those teams first came to Sourcegraph for Code Search, which remains foundational to everything we do as we’ve expanded our product with Code Insights and [Batch Changes](https://about.sourcegraph.com/blog/introducing-batch-changes/).
 
 As we look ahead in 2022, we’re working on more ways to leverage search across Sourcegraph and give developers a more complete understanding of their codebase—so they can secure vulnerabilities, resolve incidents faster, automate key workflows, and ultimately do their best work.
 
