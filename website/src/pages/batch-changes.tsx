@@ -22,8 +22,13 @@ const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
         <source
             type="video/webm"
             src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.webm`}
+            data-cookieconsent="ignore"
         />
-        <source type="video/mp4" src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`} />
+        <source
+            type="video/mp4"
+            src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`}
+            data-cookieconsent="ignore"
+        />
     </video>
 )
 
