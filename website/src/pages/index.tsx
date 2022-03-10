@@ -251,6 +251,38 @@ const Index: React.FunctionComponent = (props: any) => (
                 </div>
             </ContentSection>
 
+            <ContentSection className="my-6">
+                <div className="row flex-wrap-reverse">
+                    <div className="col-lg-7 pr-lg-6 mt-3">
+                        <div className="container video-embed embed-responsive embed-responsive-16by9 ">
+                            <iframe
+                                className="embed-responsive-item"
+                                src="https://www.youtube-nocookie.com/embed/fMCUJQHfbUA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                                allowFullScreen={true}
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                frameBorder={0}
+                                title="Sourcegraph Code Insights"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="col-lg-5">
+                        <div className="text-uppercase mb-3">Code Insights</div>
+                        <h2>Track what really matters to you and your team</h2>
+                        <p>
+                            With Code Insights, you can accurately understand how different initiatives are progressing
+                            over time and answer questions that used to be difficult or impossible to answer before.
+                            Using the codebase as the source of truth, you can track migrations, code smells, versions,
+                            and more with visualizations that are easy to customize and kept automatically up to date.
+                        </p>
+                        <div className="pt-1">
+                            <Link className="d-flex align-items-center" to="/code-insights">
+                                Learn more about Code Insights <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
+
             <SelfHostedSection />
         </div>
     </Layout>
