@@ -31,7 +31,7 @@ The quality of mouse, and its reliability after heavy use, is important to Rog. 
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/opening-files-right-click.mov"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/opening-files-right-click.mov" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Opening files feels like magic.</figcaption>
 </figure>
@@ -40,7 +40,7 @@ As Rog shows, these patterns are remarkably powerful in Acme. In every window, t
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/Regex-Demo.mov"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/Regex-Demo.mov" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Watch Rog demonstrate structural regular expressions.</figcaption>
 </figure>
@@ -51,7 +51,7 @@ For Rog, the driving benefit of Acme is its simplicity. As he notes, in Acme, ev
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/Text-is-powerful-longer.mov"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/roger-peppe/Text-is-powerful-longer.mov" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Listen to Rog talk about the power of text.</figcaption>
 </figure>

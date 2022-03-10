@@ -44,7 +44,7 @@ This automation goes hand in hand with Liz’s attention to [observability](http
 <figure>
     <figcaption style="text-align: center; font-style: italic;">Watch Liz use Honeycomb as part of her dev workflow.</figcaption>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-observability.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-observability.mp4" data-cookieconsent="ignore"></video>
     </div>
 </figure>
 
@@ -59,7 +59,7 @@ The use of ARM64 is compelling, not just for the performance and cost. It’s al
 <figure>
     <figcaption style="text-align: center; font-style: italic;">Hear Liz discuss the benefits and limitations of ARM64 in the current development ecosystem.</figcaption>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-arm64.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-arm64.mp4" data-cookieconsent="ignore"></video>
     </div>
 </figure>
 

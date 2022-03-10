@@ -27,7 +27,7 @@ Over the next few years, he refined his hardware for comfort, work, and more eff
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Setup_Evolution.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Setup_Evolution.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;"> See Amir's setup over the years</figcaption>
 </figure>
@@ -48,7 +48,7 @@ DragonRuby Game Toolkit emerged from a desire for a game engine with a fast feed
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Why_Ruby.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Why_Ruby.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Hear Amir explain why he started writing games in Ruby</figcaption>
 </figure>
@@ -61,7 +61,7 @@ In designing and adapting for comfort, health, and efficiency, Amir isn't focuse
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Setup_ROI.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/amir-rajan/Setup_ROI.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Listen to Amir talk about the long-game of ergonomics</figcaption>
 </figure>
