@@ -10,8 +10,10 @@ export const useQueryString = (): { queryString: string; navigatedFromProduct: b
             return
         }
         const query = router.query
-        setQueryString(Object.entries(query)[0].join('='))
-        setNavigatedFromProduct(query.utm_medium === 'inproduct')
+        if (Object.keys(query).length !== 0) {
+            setQueryString(Object.entries(query)[0].join('='))
+            setNavigatedFromProduct(query.utm_medium === 'inproduct')
+        }   
     }, [router.isReady, router.query])
 
     return {

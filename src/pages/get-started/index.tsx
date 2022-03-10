@@ -10,7 +10,7 @@ import styles from './getStarted.module.scss'
 
 export const MostPopularBadge: FunctionComponent = () => (
     <span className={`${styles.mostPopularBadge} badge text-white text-uppercase font-weight-bolder mb-3`}>
-        <img alt="star" src="/star.svg" className="mr-2" />
+        <img alt="star" src="/Star.svg" className="mr-2" />
         <span>Most Popular</span>
     </span>
 )
