@@ -29,10 +29,7 @@ const items = [
         backgroundClass: '',
         buttonLabel: 'Track migrations, adoption, and deprecations',
         text: (
-            <CodeInsightExample
-                type={CodeInsightExampleType.Search}
-                data={SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA}
-            />
+            <CodeInsightExample type={CodeInsightExampleType.Search} data={SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA} />
         ),
         headerClass: 'active',
         itemClass: 'd-block',
@@ -57,9 +54,7 @@ const items = [
         id: 3,
         backgroundClass: '',
         buttonLabel: 'Understand code by team',
-        text: (
-            <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />
-        ),
+        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />,
         headerClass: '',
         itemClass: 'd-none',
     },
