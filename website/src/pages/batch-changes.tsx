@@ -19,9 +19,9 @@ const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
     >
         <source
             type="video/webm"
-            src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.webm`}
+            src='/batch-changes/batch-changes-how-it-works.webm'
         />
-        <source type="video/mp4" src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`} />
+        <source type="video/mp4" src='/batch-changes/batch-changes-how-it-works.mp4' />
     </video>
 )
 
