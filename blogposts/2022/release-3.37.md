@@ -39,7 +39,7 @@ If you’re already using Sourcegraph, upgrade to 3.37 for a limited trial of Co
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
   <iframe
     class="embed-responsive-item"
-    src="https://www.youtube.com/watch?v=fMCUJQHfbUA"
+    src="https://www.youtube-nocookie.com/embed/fMCUJQHfbUA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
     allowfullscreen=""
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     frameborder="0"
