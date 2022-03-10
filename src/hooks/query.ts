@@ -13,7 +13,7 @@ export const useQueryString = (): { queryString: string; navigatedFromProduct: b
         if (Object.keys(query).length !== 0) {
             setQueryString(Object.entries(query)[0].join('='))
             setNavigatedFromProduct(query.utm_medium === 'inproduct')
-        }   
+        }
     }, [router.isReady, router.query])
 
     return {
