@@ -5,6 +5,8 @@ authorUrl: https://eric-fritz.com
 publishDate: 2022-02-22T12:00-00:00
 tags: [blog]
 slug: introducing-migrator-service
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/Migrator%20service%20post/migrator-service-hero.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Migrator%20service%20post/migrator-service-hero.png
 published: true
 description: |
   Upgrades of Sourcegraph instances would often fail with a dreaded "dirty database" error, leaving the the instance in a broken state that required manual intervention to resolve. Here's how we identified and solved a huge source of pain during upgrades for administrators.
