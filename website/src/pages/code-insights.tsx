@@ -338,7 +338,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
     >
         <ContentSection className="py-lg-8 py-7">
             <div className="row justify-content-between">
-                <div className="col-lg-7 ml-lg-6 d-flex align-items-center video-container">
+                <div className="col-lg-7 ml-lg-6 mb-md-4 d-flex align-items-center video-container">
                     <video
                         className="w-100 h-auto shadow"
                         autoPlay={true}
