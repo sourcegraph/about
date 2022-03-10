@@ -32,7 +32,6 @@ const items = [
             <CodeInsightExample
                 type={CodeInsightExampleType.Search}
                 data={SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA}
-                className=""
             />
         ),
         headerClass: 'active',
@@ -42,7 +41,7 @@ const items = [
         id: 1,
         backgroundClass: '',
         buttonLabel: 'Detect and track versions of languages or packages',
-        text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} className="" />,
+        text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} />,
         headerClass: '',
         itemClass: 'd-none',
     },
@@ -50,7 +49,7 @@ const items = [
         id: 2,
         backgroundClass: '',
         buttonLabel: 'Ensure removal of security vulnerabilities',
-        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} className="" />,
+        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
         headerClass: '',
         itemClass: 'd-none',
     },
@@ -59,7 +58,7 @@ const items = [
         backgroundClass: '',
         buttonLabel: 'Understand code by team',
         text: (
-            <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} className="" />
+            <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />
         ),
         headerClass: '',
         itemClass: 'd-none',
@@ -68,7 +67,7 @@ const items = [
         id: 4,
         backgroundClass: '',
         buttonLabel: 'Track code smells and health',
-        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} className="" />,
+        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} />,
         headerClass: '',
         itemClass: 'd-none',
     },
@@ -76,7 +75,7 @@ const items = [
         id: 5,
         backgroundClass: '',
         buttonLabel: 'Visualize configurations and services',
-        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} className="" />,
+        text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
         headerClass: '',
         itemClass: 'd-none',
     },
