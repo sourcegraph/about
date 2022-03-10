@@ -17,11 +17,8 @@ const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
         playsInline={true}
         controls={false}
     >
-        <source
-            type="video/webm"
-            src='/batch-changes/batch-changes-how-it-works.webm'
-        />
-        <source type="video/mp4" src='/batch-changes/batch-changes-how-it-works.mp4' />
+        <source type="video/webm" src="/batch-changes/batch-changes-how-it-works.webm" />
+        <source type="video/mp4" src="/batch-changes/batch-changes-how-it-works.mp4" />
     </video>
 )
 
