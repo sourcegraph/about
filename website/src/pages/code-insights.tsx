@@ -341,14 +341,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         playsInline={true}
                         controls={false}
                     >
-                        <source
-                            type="video/webm"
-                            src="/code-insights/code-insights-website.webm"
-                        />
-                        <source
-                            type="video/mp4"
-                            src="/code-insights/code-insights-website.mp4"
-                        />
+                        <source type="video/webm" src="/code-insights/code-insights-website.webm" />
+                        <source type="video/mp4" src="/code-insights/code-insights-website.mp4" />
                     </video>
                 </div>
                 <div className="col-lg-4 pl-lg-0">
