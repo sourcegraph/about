@@ -1,5 +1,6 @@
 // Common
 export { Layout } from './Layout'
+export { ContentPage } from './ContentPage'
 export { ContentSection } from './ContentSection'
 export { Jumbotron } from './Jumbotron'
 export { RequestDemoForm } from './RequestDemoForm'
