@@ -29,7 +29,7 @@ ThePrimeagen is known for his Vim mastery, which he demonstrates on stream with 
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/navigating.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/navigating.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Watch ThePrimeagen demonstrate his setup for navigating windows consistently</figcaption>
 </figure>
@@ -40,7 +40,7 @@ Configuration is personal, though, and while ThePrimeagen's [dotfiles](https://g
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/thinking.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/thinking.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Listen to ThePrimeagen discuss the importance of reducing complexity to reduce unnecessary thinking</figcaption>
 </figure>
@@ -51,7 +51,7 @@ Reducing cognitive overhead is as much about taking advantage of existing tools 
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/worktree.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/worktree.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Watch ThePrimeagen demonstrate one of his favorite Git features: worktrees</figcaption>
 </figure>
@@ -62,7 +62,7 @@ In his VimConf 2020 talk, ["Vim Speed and Excellence"](https://www.youtube.com/w
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/milliseconds.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/milliseconds.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Listen to ThePrimeagen's deep dive on Vim keybindings and time</figcaption>
 </figure>
@@ -102,5 +102,5 @@ In his VimConf 2020 talk, ["Vim Speed and Excellence"](https://www.youtube.com/w
 Check out the recording of the episode below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/GXxvxSlzJdI?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+    <iframe class="embed-responsive-item" data-cookieconsent="ignore" src="https://www.youtube-nocookie.com/embed/GXxvxSlzJdI?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>

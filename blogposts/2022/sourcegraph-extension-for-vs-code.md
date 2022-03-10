@@ -31,8 +31,8 @@ repo:^github\.com/sourcegraph/sourcegraph-.+$  /import .+ from 'rxjs'/
 ```
 
 <video loop autoplay muted playsinline>
-  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/vs-code-extension/vs-code-regex-usecase.webm" type="video/webm" />
-  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/vs-code-extension/vs-code-regex-usecase.mp4" type="video/mp4" />
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/vs-code-extension/vs-code-regex-usecase.webm" type="video/webm" data-cookieconsent="ignore" />
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/vs-code-extension/vs-code-regex-usecase.mp4" type="video/mp4" data-cookieconsent="ignore" />
 </video>
 
 Using this regex and the Sourcegraph Extension, I was able to find the code I was looking for without leaving my IDE and get distracted by tons of other tabs that I have open in Chrome. I can quickly reuse that code to solve my issue without reinventing the wheel, too.
@@ -48,8 +48,8 @@ gradle org\.apache\.logging\.log4j ['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|1
 As you can see in the video below, the global search returns several repositories that require further investigation. I finally changed the search context to Sourcegraph to narrow down my search scope to find all the repositories affecting our organization.
 
 <video loop autoplay muted playsinline>
-  <source src="https://storage.cloud.google.com/sourcegraph-assets/blog/vs-code-extension/vscode-log4j.webm" type="video/webm" />
-  <source src="https://storage.cloud.google.com/sourcegraph-assets/blog/vs-code-extension/vscode-log4j.mp4" type="video/mp4" />
+  <source src="https://storage.cloud.google.com/sourcegraph-assets/blog/vs-code-extension/vscode-log4j.webm" type="video/webm" data-cookieconsent="ignore" />
+  <source src="https://storage.cloud.google.com/sourcegraph-assets/blog/vs-code-extension/vscode-log4j.mp4" type="video/mp4" data-cookieconsent="ignore" />
 </video>
 
 I hope you find these workflows useful. The extension has become a handy part of my day-to-day flow, especially for finding code to reuse or to quickly find and resolve vulnerabilities without leaving my IDE. Plus, the extension allows you to search Sourcegraph's index of millions of OSS repositories (without needing an account), so you can search for code examples, libraries, and best practices without ever leaving your IDE.
