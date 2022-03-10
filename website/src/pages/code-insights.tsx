@@ -468,7 +468,6 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
                         title="Sourcegraph Code Insights demo"
-                        data-cookieconsent="ignore"
                     ></iframe>
                 </div>
             </div>

@@ -98,5 +98,5 @@ These weren’t covered in the episode but are also key parts of Thorsten's stac
 Check out the recording of the episode below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" data-cookieconsent="ignore" src="https://www.youtube-nocookie.com/embed/ZaQLiHdybX4?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" data-cookieconsent="ignore"></iframe>
+    <iframe class="embed-responsive-item" data-cookieconsent="ignore" src="https://www.youtube-nocookie.com/embed/ZaQLiHdybX4?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
 </div>
