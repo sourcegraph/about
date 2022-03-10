@@ -16,6 +16,8 @@ const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
         loop={true}
         playsInline={true}
         controls={false}
+        // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
+        data-cookieconsent="ignore"
     >
         <source
             type="video/webm"
