@@ -346,10 +346,12 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         <source
                             type="video/webm"
                             src="https://storage.googleapis.com/sourcegraph-assets/code_insights/code-insights-720.webm"
+                            data-cookieconsent="ignore"
                         />
                         <source
                             type="video/mp4"
                             src="https://storage.googleapis.com/sourcegraph-assets/code_insights/code-insights-720.mp4"
+                            data-cookieconsent="ignore"
                         />
                     </video>
                 </div>
