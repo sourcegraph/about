@@ -1,13 +1,16 @@
 ---
 title: 'Sourcegraph 3.37 release'
 publishDate: 2022-02-22T10:00-07:00
-description: 'Sourcegraph 3.37 introduces performance improvements for Code Intelligence, sharing for Notebooks, and a new UI for creating search contexts.'
+description: 'Sourcegraph 3.37 introduces Code Insights, performance improvements for Code Intelligence, sharing for Notebooks, and a new UI for creating search contexts.'
 tags: [blog, release]
 slug: 'release/3.37'
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.37/sourcegraph-3-37-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.37/sourcegraph-3-37-release.png
 changelogItems:
+  - description: 'Code Insights is now Generally Available. Track anything that can be expressed with a Sourcegraph search query: migrations, package use, version adoption, code smells, codebase size, and much more, across 1,000s of repositories.'
+    url: https://docs.sourcegraph.com/code_insights
+    category: Code Insights
   - description: 'Code in search results is now selectable for easier copying and reuse. You can still click on the code to open the corresponding file.'
     url: https://github.com/sourcegraph/sourcegraph/pull/30033
     category: Search
@@ -26,6 +29,22 @@ changelogItems:
 ---
 
 Sourcegraph 3.37 is now available! For this release, we introduced:
+
+## Track what really matters to you and your team with Code Insights
+
+[Code Insights](https://docs.sourcegraph.com/code_insights) is now generally available. Code Insights transforms any search query into customizable, visual dashboards in seconds. Code Insights reveals high-level information about your codebase, based on both how your code changes over time and its current state.
+
+If you’re already using Sourcegraph, upgrade to 3.37 for a limited trial of Code Insights or reach out to your account team to purchase access to the full version.
+
+<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+  <iframe
+    class="embed-responsive-item"
+    src="https://www.youtube.com/watch?v=fMCUJQHfbUA"
+    allowfullscreen=""
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    frameborder="0"
+  ></iframe>
+</div>
 
 ## Code Intelligence LSIF indexing time has improved 30x (from 15m to 30s)
 
