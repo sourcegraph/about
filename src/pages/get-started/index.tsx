@@ -23,7 +23,7 @@ export const GetStartedPage: FunctionComponent = () => {
     const routerHook = useQueryString()
 
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
-        <Link href={`${href}?${routerHook.queryString}`}>
+        <Link href={routerHook.queryString ? `${href}?${routerHook.queryString}` : href}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="btn btn-primary my-2">
                 Get started for free <ArrowRightIcon />
