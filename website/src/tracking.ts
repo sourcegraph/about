@@ -3,7 +3,7 @@ export const buttonStyle = {
     outline: 2,
     arrowWithText: 3,
     arrowBoxWithText: 4,
-    arrowBoxOutlineButton: 5,
+    arrowBoxOutlined: 5,
 }
 
 export const buttonLocation = {
