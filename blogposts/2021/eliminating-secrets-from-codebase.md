@@ -12,8 +12,8 @@ published: true
 ---
 
 <video loop autoplay muted playsinline width="1200" height="626">
-  <source src="https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.webm" type="video/webm" />
-  <source src="https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.mp4" type="video/mp4" />
+  <source src="https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.webm" type="video/webm" data-cookieconsent="ignore" />
+  <source src="https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.mp4" type="video/mp4" data-cookieconsent="ignore" />
 </video>
 
 _Sourcegraph provides universal code search: a navigation engine for understanding your code._

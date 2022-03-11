@@ -17,12 +17,19 @@ const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
         loop={true}
         playsInline={true}
         controls={false}
+        // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
+        data-cookieconsent="ignore"
     >
         <source
             type="video/webm"
             src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.webm`}
+            data-cookieconsent="ignore"
         />
-        <source type="video/mp4" src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`} />
+        <source
+            type="video/mp4"
+            src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`}
+            data-cookieconsent="ignore"
+        />
     </video>
 )
 
@@ -250,6 +257,7 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-8 container video-embed embed-responsive embed-responsive-16by9 ">
                     <iframe
                         className="embed-responsive-item"
+                        data-cookieconsent="ignore"
                         src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

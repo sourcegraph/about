@@ -66,6 +66,14 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
+                {this.props.isHome && (
+                    <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center bg-purple text-white font-weight-bold p-2">
+                        Track what really matters to you and your team.
+                        <Link to="/code-insights" className="ml-2 rounded btn btn-sm btn-light">
+                            🎉 <span className="mx-2">Show me Code Insights!</span>
+                        </Link>
+                    </div>
+                )}
                 <nav className={`header navbar py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container-xl">
                         <Navbar.Brand className="header__logo" href="/" onContextMenu={this.handleRightClick}>
@@ -89,6 +97,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     <NavDropdown onToggle={val => this.dropdownToggle(val)} title="Product">
                                         <NavDropdown.Item href="/code-search">Code Search</NavDropdown.Item>
                                         <NavDropdown.Item href="/batch-changes">Batch Changes</NavDropdown.Item>
+                                        <NavDropdown.Item href="/code-insights">Code Insights</NavDropdown.Item>
                                         <NavDropdown.Item href="https://docs.sourcegraph.com/code_intelligence">
                                             Code Intelligence
                                         </NavDropdown.Item>
@@ -177,6 +186,9 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 </li>
                                                 <li className="nav-link" role="presentation">
                                                     <a href="/batch-changes">Batch Changes</a>
+                                                </li>
+                                                <li className="nav-link" role="presentation">
+                                                    <Link to="/code-insights">Code Insights</Link>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
                                                     <a href="https://docs.sourcegraph.com/code_intelligence">

@@ -17,7 +17,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "stylelint": "stylelint --quiet 'src/**/*.scss'",
-    "deploy": "yarn run build && firebase deploy"
+    "deploy": "yarn run build && firebase deploy",
+    "prettier": "prettier '**/{*.{?(m)[tj]s?(x),json,md,scss},.*.js?(on)}' --write --list-different",
+    "prettier:check": "prettier '**/{*.{?(m)[tj]s?(x),json,md,scss},.*.js?(on)}' --check"
   },
   "dependencies": {
     "@sourcegraph/event-logger": "^2.0.1",

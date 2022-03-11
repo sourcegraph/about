@@ -259,6 +259,7 @@ table {
 @import 'components/Footer';
 @import 'components/LeadershipSection';
 @import 'components/PrismTheme';
+@import 'components/TemplateCodeBlock';
 @import 'components/TestimonialCarousel';
 @import 'components/Tweets';
 @import 'pages/404';
@@ -285,6 +286,7 @@ table {
 @import 'pages/use-cases';
 @import 'templates/PostTemplate';
 @import 'pages/dev-tools-quiz';
+@import 'pages/code-insights';
 @import './gradients';
 
 .virtual-br::before {
@@ -294,8 +296,14 @@ table {
 .bg-light-gray {
     background-color: $light-gray-2;
 }
+.bg-light-gray2 {
+    background-color: $light-11;
+}
 .bg-black {
     background-color: $sg-space-black;
+}
+.bg-purple {
+    background-color: $logo-purple;
 }
 .bg-light-transparent {
     background-color: transparentize($light-11, 0.3);

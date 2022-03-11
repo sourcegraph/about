@@ -1,0 +1,27 @@
+.template-code-block {
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .template {
+        background-color: $white;
+        flex-grow: 1;
+    }
+
+    .code {
+        background-color: $light-11;
+        font-family: sfmono-regular, consolas, menlo, dejavu sans mono, monospace;
+        font-size: 11px;
+        border: 1px solid #dfe2e6;
+    }
+
+    .keyword {
+        color: $blue;
+    }
+}
