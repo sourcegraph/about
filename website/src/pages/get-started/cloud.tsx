@@ -3,7 +3,7 @@ import { Link, PageProps } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
-import { BackButton } from './self-hosted'
+import { BackButton } from '../../components/BackButton'
 import { BestForTitle } from '.'
 
 import styles from './getStarted.module.scss'
@@ -40,7 +40,7 @@ export const CloudPage: FunctionComponent<PageProps> = props => {
                 <div className="row container-xl mx-auto py-5">
                     <div className="col-lg-6">
                         <div>
-                            <BackButton search={props.location.search} />
+                            <BackButton href={`/get-started${props.location.search}`} text="Deployment Options" />
 
                             <h1 className="display-2 font-weight-bolder mb-4">Sourcegraph Cloud</h1>
 
