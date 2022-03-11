@@ -151,8 +151,8 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
             <p>{description}</p>
             <Link
                 className="btn btn-primary mx-2 mb-3 cta-btn"
-                 data-button-style={buttonStyle.primary}
-                 data-button-location={buttonLocation.trySourcegraph}
+                data-button-style={buttonStyle.primary}
+                data-button-location={buttonLocation.trySourcegraph}
                 to={demoFormURL}
                 title="Request a demo"
             >

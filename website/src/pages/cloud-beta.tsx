@@ -62,8 +62,8 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <a
                             className="btn btn-primary join-the-watilist-hero-btn cta-btn"
-                             data-button-style={buttonStyle.primary}
-                             data-button-location={buttonLocation.hero}
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.hero}
                             href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku"
                         >
                             Join the waitlist <ArrowRightIcon className="ml-1" />
@@ -124,8 +124,8 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                     </div>
                     <a
                         className="btn btn-primary cta-btn"
-                         data-button-style={buttonStyle.primary}
-                         data-button-location={buttonLocation.trySourcegraph}
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
                         href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku"
                     >
                         Join the waitlist <ArrowRightIcon className="ml-1" />

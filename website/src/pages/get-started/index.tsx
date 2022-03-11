@@ -22,8 +22,8 @@ export const GetStartedPage: FunctionComponent<PageProps> = props => {
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
         <Link
             className="btn btn-primary my-2 cta-btn"
-             data-button-style={buttonStyle.primary}
-             data-button-location={buttonLocation.hero}
+            data-button-style={buttonStyle.primary}
+            data-button-location={buttonLocation.hero}
             to={`${href}${props.location.search}`}
         >
             Get started for free <ArrowRightIcon />

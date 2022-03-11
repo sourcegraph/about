@@ -59,8 +59,8 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             className="btn btn-primary cta-btn"
                             to={batchChangesDemoFormURL}
                             title="Request a demo"
-                             data-button-style={buttonStyle.primary}
-                             data-button-location={buttonLocation.hero}
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.hero}
                         >
                             Request a demo
                         </Link>

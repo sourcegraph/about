@@ -65,8 +65,8 @@ export const CloudPage: FunctionComponent<PageProps> = props => {
                                 <a
                                     href="https://sourcegraph.com/search"
                                     className="btn btn-primary cta-btn"
-                                     data-button-style={buttonStyle.primary}
-                                     data-button-location={buttonLocation.hero}
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
                                 >
                                     Start searching now <ArrowRightIcon />
                                 </a>

@@ -28,15 +28,15 @@ const Index: React.FunctionComponent = (props: any) => (
                                     className="btn btn-primary m-3 cta-btn"
                                     to="/get-started"
                                     title="Get started"
-                                     data-button-style={buttonStyle.primary}
-                                     data-button-location={buttonLocation.hero}
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
                                 >
                                     Get started <ArrowRightIcon className="ml-1" />
                                 </Link>
                                 <a
                                     className="btn btn-outline-primary m-3 cta-btn"
-                                     data-button-style={buttonStyle.outline}
-                                     data-button-location={buttonLocation.hero}
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.hero}
                                     href="https://info.sourcegraph.com/demo-request"
                                     title="Request a demo"
                                 >

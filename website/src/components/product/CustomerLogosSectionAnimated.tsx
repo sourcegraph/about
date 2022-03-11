@@ -404,8 +404,8 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
                         <a
                             href="https://info.sourcegraph.com/demo-request"
                             className="btn btn-outline-primary cta-btn"
-                             data-button-style={buttonStyle.arrowBoxOutlineButton}
-                             data-button-location={buttonLocation.bodyDemo}
+                            data-button-style={buttonStyle.arrowBoxOutlineButton}
+                            data-button-location={buttonLocation.bodyDemo}
                         >
                             Schedule a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </a>
