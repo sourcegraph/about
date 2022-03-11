@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 interface HeaderProps {
     isHome?: boolean
@@ -127,8 +128,8 @@ export default class Header extends React.Component<HeaderProps, any> {
 
                                     <Nav.Link
                                         className="btn btn-outline-primary ml-3 px-5 py-2 cta-btn"
-                                        data-button-style="2"
-                                        data-button-location="1"
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.nav}
                                         href="https://info.sourcegraph.com/demo-request"
                                         title="Request a demo"
                                     >
@@ -138,8 +139,8 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     {!this.props.hideGetStartedButton && (
                                         <Nav.Link
                                             className="btn btn-primary ml-3 px-5 py-2 cta-btn"
-                                            data-button-style="1"
-                                            data-button-location="1"
+                                            data-button-style={buttonStyle.primary}
+                                            data-button-location={buttonLocation.nav}
                                             href="/get-started"
                                             title="Get started"
                                         >

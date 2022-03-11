@@ -3,6 +3,7 @@ import { Link, PageProps } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
+import { buttonStyle, buttonLocation } from '../../tracking'
 
 import styles from './getStarted.module.scss'
 
@@ -21,8 +22,8 @@ export const GetStartedPage: FunctionComponent<PageProps> = props => {
     const GetStartedCTA: FunctionComponent<{ href: string }> = ({ href }) => (
         <Link
             className="btn btn-primary my-2 cta-btn"
-            data-button-style="1"
-            data-button-location="2"
+             data-button-style={buttonStyle.primary}
+             data-button-location={buttonLocation.hero}
             to={`${href}${props.location.search}`}
         >
             Get started for free <ArrowRightIcon />

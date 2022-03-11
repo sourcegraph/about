@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import { TrySourcegraph } from '../components/TrySourcegraph'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
     <video
@@ -51,8 +52,8 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             className="btn btn-primary cta-btn"
                             to={batchChangesDemoFormURL}
                             title="Request a demo"
-                            data-button-style="1"
-                            data-button-location="2"
+                             data-button-style={buttonStyle.primary}
+                             data-button-location={buttonLocation.hero}
                         >
                             Request a demo
                         </Link>

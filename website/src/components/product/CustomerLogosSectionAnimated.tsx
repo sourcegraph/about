@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { useSpring, animated } from 'react-spring'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
+import { buttonStyle, buttonLocation } from '../../tracking'
 
 const ITEMS: {
     name: string
@@ -403,8 +404,8 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
                         <a
                             href="https://info.sourcegraph.com/demo-request"
                             className="btn btn-outline-primary cta-btn"
-                            data-button-style="5"
-                            data-button-location="3"
+                             data-button-style={buttonStyle.arrowBoxOutlineButton}
+                             data-button-location={buttonLocation.bodyDemo}
                         >
                             Schedule a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </a>

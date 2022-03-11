@@ -1,6 +1,7 @@
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import React, { FunctionComponent } from 'react'
 import { Install } from './Install'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 export const SelfHostedSection: FunctionComponent = () => (
     <div className="self-hosted-section bg-gradient-green-blue" id="self-hosted-section">
@@ -17,8 +18,8 @@ export const SelfHostedSection: FunctionComponent = () => (
                         <a
                             className="d-inline-flex mt-5 font-weight-bold cta-btn"
                             href="https://docs.sourcegraph.com"
-                            data-button-style="3"
-                            data-button-location="4"
+                            data-button-style={buttonStyle.arrowWithText}
+                            data-button-location={buttonLocation.trySourcegraph}
                         >
                             Deploy to a server or cluster <ArrowRightIcon className="ml-1" />
                         </a>
@@ -29,8 +30,8 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <a
                         className="btn btn-primary d-inline-flex cta-btn"
                         href="https://info.sourcegraph.com/talk-to-a-developer"
-                        data-button-style="1"
-                        data-button-location="4"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
                     >
                         Talk to an engineer <ArrowRightIcon className="ml-1" />
                     </a>
@@ -49,8 +50,8 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <a
                         className="d-inline-flex font-weight-bold cta-btn"
                         href="/get-started"
-                        data-button-style="3"
-                        data-button-location="4"
+                        data-button-style={buttonStyle.arrowWithText}
+                        data-button-location={buttonLocation.trySourcegraph}
                     >
                         Learn about self-hosted vs.Cloud features <ArrowRightIcon className="ml-1" />
                     </a>
