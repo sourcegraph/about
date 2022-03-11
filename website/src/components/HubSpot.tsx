@@ -2,7 +2,9 @@ import cookies from 'js-cookie'
 
 export const SOURCEGRAPH_ANONYMOUS_ID_KEY = 'sourcegraphAnonymousUid'
 export const SOURCEGRAPH_SOURCE_URL_KEY = 'sourcegraphSourceUrl'
+
 export interface HubSpotForm {
+    region?: string
     portalId: string
     formId: string
     targetId: string
@@ -10,7 +12,7 @@ export interface HubSpotForm {
     onFormReady?: ($form: any) => void
 }
 
-export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
+export function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
     const script = document.createElement('script')
     script.src = '//js.hsforms.net/forms/v2.js'
     const hubspot = document.getElementById(targetId)
@@ -19,6 +21,7 @@ export function createHubSpotForm({ portalId, formId, targetId, onFormSubmit, on
     const firstSourceURL = cookies.get(SOURCEGRAPH_SOURCE_URL_KEY)
     script.addEventListener('load', () => {
         ;(window as any).hbspt.forms.create({
+            region,
             portalId,
             formId,
             target: `#${targetId}`,
