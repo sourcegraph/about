@@ -5,14 +5,13 @@ import Layout from '../components/Layout'
 import { createHubSpotForm } from '../components/HubSpot'
 
 const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => {
-
     useEffect(() => {
-        for (let n=0; n<2; n++) {
+        for (let n = 0; n < 2; n++) {
             createHubSpotForm({
                 region: 'na1',
                 portalId: '2762526',
                 formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
-                targetId: `form-${n}`
+                targetId: `form-${n}`,
             })
         }
     }, [])
@@ -22,7 +21,8 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => {
             location={props.location}
             meta={{
                 title: 'Fixing Security Vulnerabilities | Sourcegraph',
-                description: "Search within and across repositories to find and fix vulnerabilities in minutes, and deploy fixes with confidence knowing you've found every instance of affected code.",
+                description:
+                    "Search within and across repositories to find and fix vulnerabilities in minutes, and deploy fixes with confidence knowing you've found every instance of affected code.",
             }}
         >
             <div className="container py-6">
@@ -49,7 +49,8 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => {
                                 title="Finding and fixing vulnerabilities with Sourcegraph"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
-                                className="embed-responsive-item" />
+                                className="embed-responsive-item"
+                            />
                         </div>
                     </div>
                 </div>
@@ -60,9 +61,9 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => {
                     <h2 className="mb-4 font-weight-bold">Indeed merges code at scale</h2>
                     <blockquote>
                         <p>
-                            &ldquo;On average, I'd say that for every automated merge request that we're able to merge we
-                            save an hour. That's a rough but conservative estimate. It shows, though, that if we are doing
-                            several thousand automated merges in a year, we're saving several employee's worth of
+                            &ldquo;On average, I'd say that for every automated merge request that we're able to merge
+                            we save an hour. That's a rough but conservative estimate. It shows, though, that if we are
+                            doing several thousand automated merges in a year, we're saving several employee's worth of
                             time.&rdquo;
                         </p>
                         <figcaption className="text-muted mt-4">

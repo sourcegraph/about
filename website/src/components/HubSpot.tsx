@@ -12,7 +12,14 @@ export interface HubSpotForm {
     onFormReady?: ($form: any) => void
 }
 
-export function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
+export function createHubSpotForm({
+    region,
+    portalId,
+    formId,
+    targetId,
+    onFormSubmit,
+    onFormReady,
+}: HubSpotForm): void {
     const script = document.createElement('script')
     script.src = '//js.hsforms.net/forms/v2.js'
     const hubspot = document.getElementById(targetId)
