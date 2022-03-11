@@ -2,10 +2,10 @@ import { Link } from 'gatsby'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
-import { ContentSection } from '../components/content/ContentSection'
-import Layout from '../components/Layout'
-import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
-import { TrySourcegraph } from '../components/TrySourcegraph'
+import { ContentSection } from '../../components/content/ContentSection'
+import Layout from '../../components/Layout'
+import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
+import { TrySourcegraph } from '../../components/TrySourcegraph'
 
 export default ((props: any) => (
     <Layout
