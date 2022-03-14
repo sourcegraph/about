@@ -19,7 +19,7 @@ interface CarouselProps {
 
 interface CarouselItem {
     id: number
-    backgroundClass: string
+    backgroundClass?: string
     buttonLabel: string
     headerClass: string
     text: string | ReactNode
