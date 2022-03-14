@@ -51,7 +51,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'col-md-2 m-0 px-0 my-lg-3 col-lg-5'
+                            ? 'autoadvance-carousel-nav col-md-2 m-0 px-0 my-lg-3 col-lg-5'
                             : 'carousel-nav ml-lg-7 col-lg-4 ml-md-5'
                     }
                 >

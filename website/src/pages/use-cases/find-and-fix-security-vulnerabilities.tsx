@@ -179,12 +179,12 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
     >
         <ContentSection className="my-lg-7">
             <div className="row d-flex justify-content-center">
-                <div className="d-flex text-center w-50 mt-lg-7 mb-4">
+                <div className="d-flex text-center w-lg-50 w-100 mt-7 mb-lg-4 mb-0">
                     <h1 className="font-weight-bold">
                         Identify, resolve, and monitor with confidence
                     </h1>
                 </div>
-                <div className="d-flex my-6">
+                <div className="d-flex flex-column flex-lg-row my-6">
                     <div className="text-center">
                         <TimerOutlineIcon className="icon mb-4" size={40} />
                         <h3 className="font-weight-bold">
@@ -225,8 +225,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-blue-mist">
             <ContentSection className="my-7">
-                <div className="row align-items-center justify-content-between">
-                    <div className="p-0 col-6">
+                <div className="row flex-column flex-lg-row align-items-center justify-content-between">
+                    <div className="p-lg-0 col-lg-6 px-4">
                         <h1 className="mb-4 font-weight-bold">
                             Identifying & resolving security vulnerabilities is painful
                         </h1>
@@ -257,7 +257,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             *Source: <a href="https://securityintelligence.com/news/news-vulnerabilities-25-days-remediate/">Security Intelligence</a>
                         </p>
                     </div>
-                    <div className="col-5">
+                    <div className="col-lg-5">
                         <div className="bg-white p-5">
                             <h4>Log4j was the tip of the iceberg</h4>
                             <p>
@@ -284,7 +284,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <ContentSection>
             <div className="row my-6 justify-content-center">
-                <div className="d-flex flex-column w-75 p-7">
+                <div className="d-flex flex-column w-lg-75 p-lg-7 mx-3 my-5">
                     <h1 className="font-weight-bold text-center">
                         How Sourcegraph helps you find and fix vulnerabilities
                     </h1>
@@ -307,8 +307,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-light-gray">
             <ContentSection>
-                <CustomerLogosSectionAnimated showButton={true} showSection={false} className="pt-5" />
-                <div className="row d-flex flex-column py-lg-8 py-7 align-items-center">
+                <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="pt-5" />
+                <div className="row d-flex flex-column mx-4 mx-lg-0 py-lg-8 py-7 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>
@@ -324,10 +324,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             Request a demo
                         </Link>
                         <Link to='/use-cases' className="d-flex justify-content-center mt-4">
-                           
-                                <p className="font-weight-bold">Explore other use cases</p>
-                                <ArrowRightIcon className="icon-inline ml-1" />
-                           
+                            <p className="font-weight-bold">Explore other use cases</p>
                         </Link>
                     </div>
                 </div>

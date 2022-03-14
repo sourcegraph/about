@@ -177,9 +177,10 @@ interface Props {
     showButton: boolean
     className: String
     showSection: boolean
+    noCta?: boolean
 }
 
-export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, className, showSection }) => {
+export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, className, showSection, noCta }) => {
     const [buttonClass, setButtonClass] = useState('')
     const [windowWidth, setWindowWidth] = useState(0)
     const [imagesWidth, setImagesWidth] = useState(0)
@@ -463,7 +464,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
                     })}
                 </div>
             </div>
-            {windowWidth < minDeviceWidth && showButton && (
+            {windowWidth < minDeviceWidth && showButton && !noCta && (
                 <div className={'sourcegraph-cta-bottom-container'}>
                     <a href="/case-studies" className={'sourcegraph-cta-link-bottom'}>
                         <div className={'sourcegraph-cta-button-bottom'}>
