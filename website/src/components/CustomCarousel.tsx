@@ -28,7 +28,7 @@ interface CarouselItem {
 
 const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const carouselMainStyles = 'd-flex flex-wrap'
-    const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-5 ml-md-6 px-lg-0'
+    const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-6 ml-md-6 px-lg-0'
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
@@ -60,7 +60,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
-                    <ul className="ml-lg-3">
+                    <ul className="ml-lg-4">
                         {carouselItems.map(item => (
                             <li
                                 className={

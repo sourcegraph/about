@@ -1,9 +1,73 @@
 import { Link, PageProps } from 'gatsby'
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
 import { BackButton } from '../../components/BackButton'
+import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
+
+const CarouselItem: FunctionComponent<{header: string, text: ReactNode}> = ({ header, text }) => (
+    <>
+        <h2>{header}</h2>
+        {text}
+    </>
+)
+
+const items = [
+    {
+        id: 0,
+        backgroundClass: '',
+        buttonLabel: 'Find vulnerabilities',
+        text:
+            <CarouselItem header='Find vulnerabilities' text={<p>Vulnerabilities are inevitable, but they don't have to be disruptive. 
+                With <Link to='/code-search'>Code Search</Link>, you can find vulnerabilities across your repositories in a single search. Relieve your engineers from manual 
+                work, get a headstart on remediation, and act confidently knowing that you've located all affected code.</p>} 
+            />,
+        headerClass: 'active',
+        itemClass: 'd-block',
+    },
+    {
+        id: 1,
+        backgroundClass: '',
+        buttonLabel: 'Automatically merge and deploy fixes',
+        text:
+            <CarouselItem header='Automatically merge and deploy fixes' text={<p>Deploy fixes at scale. Don't let the size and complexity of your 
+                codebase hold you back. With <Link to='/batch-changes'>Batch Changes</Link>, you can automate the merging and deployment of fixes. 
+                Move faster than your competitors, free up your engineers, and return your codebase to a healthy state.</p>} 
+            />,
+        headerClass: '',
+        itemClass: 'd-none',
+    },
+    {
+        id: 2,
+        backgroundClass: '',
+        buttonLabel: 'Proactively monitor for the presence of vulnerable code',
+        text: <CarouselItem header='Proactively monitor for the presence of vulnerable code' text={<p>Get ahead of vulnerabilities. With 
+        <a href=' https://docs.sourcegraph.com/code_monitoring'>code monitoring</a>, get alerts whenever specified patterns enter your codebase. 
+        Monitors ensure new occurrences are detected immediately and allow you to catch them before merging—and before customers have reason to worry.</p>} />,
+        headerClass: '',
+        itemClass: 'd-none',
+    },
+    {
+        id: 3,
+        backgroundClass: '',
+        buttonLabel: 'Ensure removal of security vulnerabilities',
+        text: <CarouselItem header='Ensure removal of security vulnerabilities' text={<p>Get the full picture of an incident. Track how long the vulnerable code has 
+            been in your codebase and how quickly you're removing it. With <Link to='/code-insights'>Code Insights</Link>, you can measure the progress of applying 
+            longer-term fixes for vulnerabilities and incidents across all your code.</p>} />,
+        headerClass: '',
+        itemClass: 'd-none',
+    },
+    {
+        id: 4,
+        backgroundClass: '',
+        buttonLabel: 'Bring peace of mind to customers',
+        text: <CarouselItem header='Bring peace of mind to customers' text={<p>The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can 
+        know you'll find every instance of affected code, be able to fix it at scale, monitor for its presence long-term, and ensure your customers that your code is safe.</p>} />,
+        headerClass: '',
+        itemClass: 'd-none',
+    }
+]
 
 const UseCasePage: FunctionComponent<PageProps> = props => (
     <Layout
@@ -99,7 +163,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             <ContentSection className="my-7">
                 <div className="row align-items-center justify-content-between">
                     <div className="p-0 col-6">
-                        <h1 className="w-50 font-weight-bold">
+                        <h1 className="w-75 mb-3 font-weight-bold">
                             Identifying & resolving security vulnerabilities is painful
                         </h1>
                         <p>
@@ -153,6 +217,23 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 </div>
             </ContentSection>
         </div>
+
+        <ContentSection>
+            <div className="row my-6 justify-content-center">
+                <div className="d-flex flex-column w-75 p-7">
+                    <h1 className="font-weight-bold text-center">
+                        How Sourcegraph helps you find and fix vulnerabilities
+                    </h1>
+                    <p className="mt-3">
+                        With Sourcegraph, engineers can find all instances of a vulnerability, 
+                        remediate it across their entire codebase, monitor for future occurrences, 
+                        and visualize their impact. No more manual hunting for affected code through 
+                        repository after repository, while regulators and customers demand speed.
+                    </p>
+                </div>
+                <CustomCarousel items={items} autoAdvance={true} />
+            </div>
+        </ContentSection>
     </Layout>
 )
 
