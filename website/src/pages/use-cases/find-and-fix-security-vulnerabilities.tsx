@@ -1,5 +1,8 @@
 import { Link, PageProps } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import AutoFixIcon from 'mdi-react/AutoFixIcon'
+import ShieldAlertOutlineIcon from 'mdi-react/ShieldAlertOutlineIcon'
+import TimerOutlineIcon from 'mdi-react/TimerOutlineIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
@@ -183,6 +186,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 </div>
                 <div className="d-flex my-6">
                     <div className="text-center">
+                        <TimerOutlineIcon className="icon mb-4" size={40} />
                         <h3 className="font-weight-bold">
                             Reduce time to discovery and resolution
                         </h3>
@@ -194,6 +198,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="mx-6 text-center">
+                        <AutoFixIcon className="icon mb-4" size={40} />
                         <h3 className="font-weight-bold">
                             Automate fixing, merging, and deploying fixes
                         </h3>
@@ -204,6 +209,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="text-center">
+                        <ShieldAlertOutlineIcon className="icon mb-4" size={40} />
                         <h3 className="font-weight-bold">
                             Alert for risky code changes & known vulnerabilities
                         </h3>

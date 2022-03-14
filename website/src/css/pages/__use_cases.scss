@@ -24,4 +24,11 @@
     .set-height {
         height: 360px;
     }
+
+    /* Icon overrides */
+    .mdi-icon {
+        &.icon {
+            color: $cyan-2;
+        }
+    }
 }
