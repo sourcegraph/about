@@ -29,6 +29,9 @@ changelogItems:
   - description: 'Saved search notifications (deprecated in v3.31.0) have been removed in favor of code monitoring.'
     url: https://docs.sourcegraph.com/code_monitoring
     category: Search
+  - description: 'Added support for finding implementations of interfaces and methods.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/24854
+    category: Code Intelligence
 ---
 
 Sourcegraph 3.34 is now available! Here are some highlights from this release:

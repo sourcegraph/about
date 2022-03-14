@@ -32,6 +32,9 @@ changelogItems:
   - description: Fixed a bug introduced in 3.34 where certain regexp syntax for repository searches caused the entire search, including non-repository searches, to fail.
     url: https://github.com/sourcegraph/sourcegraph/pull/28826
     category: Search
+  - description: Search-based code intelligence and the symbol sidebar are much faster now that the symbols service incrementally processes files that changed.
+    url: https://github.com/sourcegraph/sourcegraph/pull/27932
+    category: Code Intelligence
 ---
 
 Sourcegraph 3.35 is now available! Here are some highlights from this release:
