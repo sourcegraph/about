@@ -94,6 +94,65 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 </div>
             </div>
         </ContentSection>
+
+        <div className="bg-gradient-blue-mist">
+            <ContentSection className="my-7">
+                <div className="row align-items-center justify-content-between">
+                    <div className="p-0 col-6">
+                        <h1 className="w-50 font-weight-bold">
+                            Identifying & resolving security vulnerabilities is painful
+                        </h1>
+                        <p>
+                            <strong>Major vulnerabilities become all-hands-on-deck situations quickly</strong>, and understanding how to mitigate 
+                            them is intimidating for many development teams. <strong>High-severity vulnerabilities now take nearly 250 
+                            days to remediate,*</strong> and every hour that goes by increases your exposure and incident risk dramatically.
+                        </p>
+                        <p>
+                            Existing tooling doesn't enable teams to be agile and effective when responding to security vulnerabilities. What does 
+                            that mean for you?
+                        </p>
+                        <ul>
+                            <li>
+                                Finding vulnerabilities scattered across codebases takes extra time and resources
+                            </li>
+                            <li>
+                                Following dependencies across your codebase is inefficient with IDEs that aren't connected to all code or up to date
+                            </li>
+                            <li>
+                                Whether you're making changes to 50 or 5,000 repositories, tracking and managing PRs to completion is a manual and spreadsheet-heavy process
+                            </li>
+                            <li>
+                                The vulnerability management and remediation process remains cumbersome, unclear, and stressful for all involved
+                            </li>
+                        </ul>
+                        <p className="text-muted">
+                            *Source: <a href="https://securityintelligence.com/news/news-vulnerabilities-25-days-remediate/">Security Intelligence</a>
+                        </p>
+                    </div>
+                    <div className="col-5">
+                        <div className="bg-white p-5">
+                            <h4>Log4j was the tip of the iceberg</h4>
+                            <p>
+                                Log4j is a prime example of how challenging it is to create a cohesive response across multiple teams in an org. 
+                                Most organizations struggled to find the vulnerability or understand how it impacted their entire codebase.
+                            </p>
+                            <p>
+                                Meanwhile, Sourcegraph enabled companies like Nutanix to completely remediate log4j vulnerabilities across multiple 
+                                build and artifact management systems, as well as a large monorepo with many component branches and hundreds of git 
+                                repositories, in under four days, and with 100% certainty.
+                            </p>
+                            <p className="font-weight-extra-bold">
+                                Learn how to use Sourcegraph to identify and resolve every instance of log4j. 
+                                <Link to="/blog/">
+                                    {' '}Read the blog post.
+                                </Link>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
+        </div>
     </Layout>
 )
 
