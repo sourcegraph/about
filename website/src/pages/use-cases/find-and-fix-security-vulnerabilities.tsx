@@ -52,7 +52,48 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </>
         }
     >
-        <ContentSection></ContentSection>
+        <ContentSection className="my-lg-7">
+            <div className="row d-flex justify-content-center">
+                <div className="d-flex text-center w-50 mt-lg-7 mb-4">
+                    <h1 className="font-weight-bold">
+                        Identify, resolve, and monitor with confidence
+                    </h1>
+                </div>
+                <div className="d-flex my-6">
+                    <div className="text-center">
+                        <h3 className="font-weight-bold">
+                            Reduce time to discovery and resolution
+                        </h3>
+                        <p>
+                            Find every instance of a vulnerability and start remediating in minutes 
+                            instead of days or weeks. Use that head start to communicate a remediation 
+                            plan to your customers faster and deploy fixes sooner. Reassure your customers 
+                            that you've fixed all affected code.
+                        </p>
+                    </div>
+                    <div className="mx-6 text-center">
+                        <h3 className="font-weight-bold">
+                            Automate fixing, merging, and deploying fixes
+                        </h3>
+                        <p>
+                            Automate PRs to fix vulnerabilities across your entire codebase. Define changes 
+                            programmatically, track and manage changesets before merging, and monitor the 
+                            progress of your changes so you can be 100% confident you resolved every vulnerability.
+                        </p>
+                    </div>
+                    <div className="text-center">
+                        <h3 className="font-weight-bold">
+                            Alert for risky code changes & known vulnerabilities
+                        </h3>
+                        <p>
+                            Get on top of vulnerabilities by monitoring your repositories for commits with risky patterns 
+                            and other known vulnerabilities. Close the loop with alerts to notify responsible individuals 
+                            when those events occur, ensuring your codebase remains healthy.
+                        </p>
+                    </div>              
+                </div>
+            </div>
+        </ContentSection>
     </Layout>
 )
 
