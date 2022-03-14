@@ -10,12 +10,12 @@ tags: [blog, remote]
 slug: better-onboarding-how-to-prevent-codebase-overwhelm
 heroImage: /blog/better-onboarding-prevent-codebase-overwhelm.png
 socialImage: https://sourcegraphstatic.com/better-onboarding-prevent-codebase-overwhelm.png
-published: true
+published: false
 ---
 
 ![Better onboarding video game graphic](/blog/better-onboarding-prevent-codebase-overwhelm.png)
 
-A newly hired developer arrives, eager to get started on exploring the team’s codebase and systems–and to make a positive impact. If only it were that easy. Increasingly complex codebases have made software engineering onboarding a jumbled gauntlet, but it doesn’t have to feel that way.
+A newly hired developer arrives, eager to get started on exploring the team’s codebase and systems–and to make a positive impact. If only it were that easy. Increasingly complex codebases make software engineering onboarding a jumbled gauntlet for developers and managers alike, but it doesn’t have to feel that way.
 
 We spoke to engineering leaders and engineers to learn their secrets for successful, repeatable, and scalable onboarding.
 
@@ -27,7 +27,7 @@ To implement an organization-wide, holistic onboarding process, you need to desi
 
 ## 2. Make it safe to ask for help
 
-You’ll want to set an open tone at the outset. Doing so from the very beginning of onboarding is key to creating a culture that makes it safe to ask for help. By maintaining that tone and open communication throughout a new developer’s ramp-up and tenure, you’ll set your developers up for success. Adam says “Culture becomes important. You want the space to make mistakes when you’re coming into a new environment. You want a combination of psychological safety–knowing that your team won’t throw you under the bus–and technical safety, the guardrails to know that you won’t make a huge mistake for a customer.”
+You’ll want to set an open tone at the outset. Doing so from the very beginning of onboarding is key to creating a culture that makes it safe to ask for help. If you maintain that tone and open communication throughout a new developer’s ramp-up and tenure, you’ll be setting the tone for the team's culture. “Culture becomes important. You want the space to make mistakes when you’re coming into a new environment," Adam says. "You want a combination of psychological safety–knowing that your team won’t throw you under the bus–and technical safety, the guardrails to know that you won’t make a huge mistake for a customer.”
 
 Notes [Marek Zaluski](https://handbook.sourcegraph.com/company/team#marek-zaluski), another software engineer at Sourcegraph, “The biggest challenge [for new devs] is getting familiar with what’s already there. The bigger [the codebase] is, the more difficult it is.”
 
@@ -95,7 +95,7 @@ At Sourcegraph, the onboarding process includes a buddy system where we pair peo
 
 ## 8. Customize your onboarding for each employee
 
-Great software engineer onboarding often requires tailoring the experience to a new hire’s specific strengths, experience, and personality.
+Great software engineer onboarding takes the human element into account. This often requires tailoring the experience to a new hire’s specific strengths, experience, and personality.
 
 “As a new engineer onboarding, you’re a little bit of an adventurer,” says Jean. “You’re going into uncharted territory. What you want to do as a manager is allow them some freedom to explore because that process leads to learning and discovery, but you also want to set them up for success.”
 
@@ -113,7 +113,7 @@ Experience level also affects how new hires onboard. Junior engineers generally 
 
 ---
 
-There's a lot more to successful developer onboarding than setting up a local dev environment. We hope this advice has been helpful!
+There's a lot more to successful developer onboarding than setting up a local dev environment. The value of cohesive onboarding practices becomes especially clear as an organization scales up its developer team, enabling your developers to get up to speed quickly while building confidence and knowledge around your codebase.
 
 _This post was originally published in April 2020. It has been revised and updated as of March 9, 2022._
 
