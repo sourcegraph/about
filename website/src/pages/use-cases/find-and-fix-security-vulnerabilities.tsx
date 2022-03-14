@@ -3,6 +3,8 @@ import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
 import { BackButton } from '../../components/BackButton'
+import { BlockquoteWithLogo } from '../../components/Blockquote'
+import { QuoteCarousel } from '../../components/QuoteCarousel'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 
@@ -66,6 +68,35 @@ const items = [
         know you'll find every instance of affected code, be able to fix it at scale, monitor for its presence long-term, and ensure your customers that your code is safe.</p>} />,
         headerClass: '',
         itemClass: 'd-none',
+    }
+]
+
+const quoteCarouselItems = [
+    {
+        header: 'Nutanix fixed log4j in days',
+        quote: 'The more we dug, the more we realized [Log4Shell] was everywhere and nowhere at the same time… Sourcegraph was the right product at the right time.',
+        by: 'Jon Kohler, Technical Director of Solution Engineering at Nutanix',
+        logoHref: 'https://www.nutanix.com/',
+        logoImage: '/external-logos/nutanix-logo.svg',
+    },
+    {
+        header: `Cloudflare proves to auditors that its code isn't vulnerable`,
+        quote: `[Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and when we get asked by an auditor.`,
+        by: 'David Haynes, Security Engineer at Cloudflare',
+        logoHref: 'https://www.cloudflare.com/',
+        logoImage: '/external-logos/cloudflare-color-logo.svg',
+        linkText: 'Read the case study',
+        link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security'
+    },
+    {
+        header: 'Indeed merges code at scale',
+        quote: `On average, I'd say that for every automated merge request that we're able to merge we save an hour. That's a rough but conservative estimate. It shows, 
+        though, that if we are doing several thousand automated merges in a year, we're saving several employee's worth of time.`,
+        by: 'Jared Hodge, Senior Manager, Developer Experience at Indeed',
+        logoHref: 'https://www.indeed.com/',
+        logoImage: '/external-logos/indeed-logo.svg',
+        linkText: 'Read the case study',
+        link: '/case-studies//indeed-accelerates-development-velocity'
     }
 ]
 
@@ -234,6 +265,12 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <CustomCarousel items={items} autoAdvance={true} />
             </div>
         </ContentSection>
+
+        <div className="bg-gradient-violet-mist py-8">
+            <ContentSection>
+                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} className='set-height' />
+            </ContentSection>
+        </div>
     </Layout>
 )
 
