@@ -227,7 +227,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             <ContentSection className="my-7">
                 <div className="row align-items-center justify-content-between">
                     <div className="p-0 col-6">
-                        <h1 className="w-75 mb-3 font-weight-bold">
+                        <h1 className="mb-4 font-weight-bold">
                             Identifying & resolving security vulnerabilities is painful
                         </h1>
                         <p>
@@ -342,6 +342,14 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 {blogListItems.map(item => (
                     <BlogListItem key={item.title} blog={item} />
                 ))}
+            </div>
+        </ContentSection>
+
+        <ContentSection>
+            <div className="d-flex justify-content-center">
+                <Link to="/get-started" className="btn btn-primary">
+                    Ready to get started?
+                </Link>
             </div>
         </ContentSection>
 
