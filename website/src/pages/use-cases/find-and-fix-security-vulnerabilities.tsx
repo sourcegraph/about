@@ -4,6 +4,7 @@ import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
 import { BackButton } from '../../components/BackButton'
+import { BlogListItem } from '../../components/BlogListItem'
 import { QuoteCarousel } from '../../components/QuoteCarousel'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -99,6 +100,31 @@ const quoteCarouselItems = [
         linkText: 'Read the case study',
         link: '/case-studies//indeed-accelerates-development-velocity'
     }
+]
+
+const blogListItems = [
+    {
+        title: 'Log4j Log4Shell 0-day: find, fix, and track affected code',
+        description:
+            'In December 2021, the Log4j vulnerability shook the world. In this post, Sourcegraph founder and CEO Quinn Slack explains how to find the vulnerability using Sourcegraph.',
+        type: 'Blog post',
+        image: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
+        href: '/blog/log4j-log4shell-0-day',
+    },
+    {
+        title: 'The Nine Circles of Dependency Hell (and a roadmap out)',
+        description: 'A complex web of software dependencies can stop software development in its tracks. In this post, former Google software engineer Matt Rickard explains how to handle dependencies so engineers can spend more time coding.',
+        type: 'Blog post',
+        image: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
+        href: '/blog/nine-circles-of-dependency-hell',
+    },
+    {
+        title: 'How to remove secrets from your codebase',
+        description: 'In early 2021, many Sourcegraph infrastructure and service account passwords were stored in private repositories. With Sourcegraph code search, security engineer André Eleuterio was able to ensure he moved every secret to a secure vault.',
+        type: 'Blog post',
+        image: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
+        href: '/blog/eliminate-secrets-from-codebase-with-universal-code-search',
+    },
 ]
 
 const UseCasePage: FunctionComponent<PageProps> = props => (
@@ -301,6 +327,17 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 </div>
             </ContentSection>
         </div>
+
+        <ContentSection className="py-lg-7 py-5">
+            <div className="row d-flex">
+                <div className="col-lg-6">
+                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                </div>
+                {blogListItems.map(item => (
+                    <BlogListItem key={item.title} blog={item} />
+                ))}
+            </div>
+        </ContentSection>
 
     </Layout>
 )
