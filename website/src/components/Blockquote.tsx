@@ -45,7 +45,7 @@ export const BlockquoteWithLogo: FunctionComponent<{
             )}
             {linkText && link && (
                 <Link to={link} className="d-flex justify-content-center mt-3">
-                    <p>{linkText}</p>
+                    <p className="font-weight-bold">{linkText}</p>
                     <ArrowRightIcon className="icon-inline ml-1" />
                 </Link>
             )}

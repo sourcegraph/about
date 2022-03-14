@@ -1,12 +1,13 @@
 import { Link, PageProps } from 'gatsby'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
 import { BackButton } from '../../components/BackButton'
-import { BlockquoteWithLogo } from '../../components/Blockquote'
 import { QuoteCarousel } from '../../components/QuoteCarousel'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
+import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
 
 const CarouselItem: FunctionComponent<{header: string, text: ReactNode}> = ({ header, text }) => (
     <>
@@ -271,6 +272,36 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} className='set-height' />
             </ContentSection>
         </div>
+
+        <div className="bg-light-gray">
+            <ContentSection>
+                <CustomerLogosSectionAnimated showButton={true} showSection={false} className="pt-5" />
+                <div className="row d-flex flex-column py-lg-8 py-7 align-items-center">
+                    <div className="mb-5 d-flex flex-column">
+                        <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
+                        <p>
+                            Find, fix, and track vulnerable code quickly across your entire codebase. 
+                        </p>
+                    </div>
+                    <div className="d-flex flex-column">
+                        <Link
+                            className="btn btn-primary"
+                            to="/contact/request-code-insights-demo"
+                            title="Request a Demo of Code Insights."
+                        >
+                            Request a demo
+                        </Link>
+                        <Link to='/use-cases' className="d-flex justify-content-center mt-4">
+                           
+                                <p className="font-weight-bold">Explore other use cases</p>
+                                <ArrowRightIcon className="icon-inline ml-1" />
+                           
+                        </Link>
+                    </div>
+                </div>
+            </ContentSection>
+        </div>
+
     </Layout>
 )
 
