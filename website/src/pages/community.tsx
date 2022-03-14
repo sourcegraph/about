@@ -29,9 +29,10 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                             collaborate, we grow faster, better, and stronger.
                         </p>
                         <a
-                            className="btn btn-primary cta-btn"
+                            className="btn btn-primary"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
                             href={
                                 'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
                             }
@@ -235,9 +236,10 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                 </div>
                 <div className="col-lg-5 mt-3">
                     <a
-                        className="btn btn-secondary cta-btn"
+                        className="btn btn-secondary"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
                         href={
                             'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
                         }
@@ -247,9 +249,10 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     </a>
                     <br />
                     <a
-                        className="btn btn-primary mt-3 cta-btn"
+                        className="btn btn-primary mt-3"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
                         href={'mailto:community@sourcegraph.com'}
                         title="Send us an email"
                     >

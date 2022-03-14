@@ -19,9 +19,10 @@ export const TrySourcegraph: React.FunctionComponent<{ demoFormURL?: string; cla
             <div className="col-md-6 pt-3 align-self-center text-center">
                 {demoFormURL !== '' && (
                     <Link
-                        className="btn btn-outline-secondary mx-2 mb-3 cta-btn"
+                        className="btn btn-outline-secondary mx-2 mb-3"
                         data-button-style={buttonStyle.outline}
                         data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
                         to={demoFormURL}
                         title="Request a demo"
                     >
@@ -29,9 +30,10 @@ export const TrySourcegraph: React.FunctionComponent<{ demoFormURL?: string; cla
                     </Link>
                 )}
                 <Link
-                    className="btn btn-primary mx-2 mb-3 cta-btn"
+                    className="btn btn-primary mx-2 mb-3"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.trySourcegraph}
+                    data-button-type="cta"
                     to="/#get-started"
                     title="Try Sourcegraph now"
                 >

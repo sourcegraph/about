@@ -16,10 +16,11 @@ export const SelfHostedSection: FunctionComponent = () => (
 
                     <p>
                         <a
-                            className="d-inline-flex mt-5 font-weight-bold cta-btn"
+                            className="d-inline-flex mt-5 font-weight-bold"
                             href="https://docs.sourcegraph.com"
                             data-button-style={buttonStyle.arrowWithText}
                             data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
                         >
                             Deploy to a server or cluster <ArrowRightIcon className="ml-1" />
                         </a>
@@ -28,10 +29,11 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <h2 className="h5 d-inline-flex mt-4 mr-4">Want help?</h2>
 
                     <a
-                        className="btn btn-primary d-inline-flex cta-btn"
+                        className="btn btn-primary d-inline-flex"
                         href="https://info.sourcegraph.com/talk-to-a-developer"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
                     >
                         Talk to an engineer <ArrowRightIcon className="ml-1" />
                     </a>
@@ -48,10 +50,11 @@ export const SelfHostedSection: FunctionComponent = () => (
                     </ul>
 
                     <a
-                        className="d-inline-flex font-weight-bold cta-btn"
+                        className="d-inline-flex font-weight-bold"
                         href="/get-started"
                         data-button-style={buttonStyle.arrowWithText}
                         data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
                     >
                         Learn about self-hosted vs.Cloud features <ArrowRightIcon className="ml-1" />
                     </a>

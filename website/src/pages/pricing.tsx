@@ -257,9 +257,10 @@ export default ((props: any) => (
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
                         <Link
-                            className="btn btn-primary mx-2 mb-3 cta-btn"
+                            className="btn btn-primary mx-2 mb-3"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
                             to="../#get-started"
                             title="Try Sourcegraph now"
                         >

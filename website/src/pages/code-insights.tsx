@@ -323,6 +323,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                                     title="Request a Demo of Code Insights."
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation.nav}
+                                    data-button-type="cta"
                                 >
                                     Request a demo
                                 </Link>
@@ -593,6 +594,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             title="Request a Demo of Code Insights."
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
                         >
                             Request a demo
                         </Link>

@@ -64,9 +64,10 @@ export const CloudPage: FunctionComponent<PageProps> = props => {
                                 <p className="mb-5">No account required.</p>
                                 <a
                                     href="https://sourcegraph.com/search"
-                                    className="btn btn-primary cta-btn"
+                                    className="btn btn-primary"
                                     data-button-style={buttonStyle.primary}
                                     data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
                                 >
                                     Start searching now <ArrowRightIcon />
                                 </a>
