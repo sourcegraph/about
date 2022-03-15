@@ -4,7 +4,7 @@ import { Link, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import { createHubSpotForm } from '../components/HubSpot'
 
-const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => {
+const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
 
     useEffect(() => {
         for (let n=0; n<2; n++) {
@@ -97,4 +97,4 @@ const FindAndFixVulnerabilities: FunctionComponent<PageProps> = props => {
     )
 }
 
-export default FindAndFixVulnerabilities
+export default FixingVulnerabilities
