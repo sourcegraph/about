@@ -50,7 +50,7 @@ const items = [
         backgroundClass: '',
         buttonLabel: 'Proactively monitor for the presence of vulnerable code',
         text: <CarouselItem header='Proactively monitor for the presence of vulnerable code' text={<p>Get ahead of vulnerabilities. With 
-        <a href=' https://docs.sourcegraph.com/code_monitoring'>code monitoring</a>, get alerts whenever specified patterns enter your codebase. 
+        <a href='https://docs.sourcegraph.com/code_monitoring'>{' '}code monitoring</a>, get alerts whenever specified patterns enter your codebase. 
         Monitors ensure new occurrences are detected immediately and allow you to catch them before merging—and before customers have reason to worry.</p>} />,
         headerClass: '',
         itemClass: 'd-none',
@@ -101,7 +101,7 @@ const quoteCarouselItems = [
         logoHref: 'https://www.indeed.com/',
         logoImage: '/external-logos/indeed-logo.svg',
         linkText: 'Read the case study',
-        link: '/case-studies//indeed-accelerates-development-velocity'
+        link: '/case-studies/indeed-accelerates-development-velocity'
     }
 ]
 
@@ -146,7 +146,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="bg" />
                 <div className="container pb-4">
                     <div className="row">
-                        <div className="col-lg-8 mb-8 mt-7">
+                        <div className="col-lg-7 mb-8 mt-7">
                             <BackButton href="/use-cases" text="USE CASES" bold={true} />
                             <h1 className="display-2 font-weight-bold mb-4">Find and fix security vulnerabilities</h1>
                             <div className="display-5 mb-5">
@@ -187,9 +187,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="d-flex flex-column flex-lg-row my-6">
                     <div className="text-center">
                         <TimerOutlineIcon className="icon mb-4" size={40} />
-                        <h3 className="font-weight-bold">
+                        <h4 className="font-weight-bold">
                             Reduce time to discovery and resolution
-                        </h3>
+                        </h4>
                         <p>
                             Find every instance of a vulnerability and start remediating in minutes 
                             instead of days or weeks. Use that head start to communicate a remediation 
@@ -197,11 +197,11 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             that you've fixed all affected code.
                         </p>
                     </div>
-                    <div className="mx-lg-6 text-center">
+                    <div className="mx-lg-7 text-center">
                         <AutoFixIcon className="icon mb-4" size={40} />
-                        <h3 className="font-weight-bold">
+                        <h4 className="font-weight-bold">
                             Automate fixing, merging, and deploying fixes
-                        </h3>
+                        </h4>
                         <p>
                             Automate PRs to fix vulnerabilities across your entire codebase. Define changes 
                             programmatically, track and manage changesets before merging, and monitor the 
@@ -210,9 +210,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="text-center">
                         <ShieldAlertOutlineIcon className="icon mb-4" size={40} />
-                        <h3 className="font-weight-bold">
+                        <h4 className="font-weight-bold">
                             Alert for risky code changes & known vulnerabilities
-                        </h3>
+                        </h4>
                         <p>
                             Get on top of vulnerabilities by monitoring your repositories for commits with risky patterns 
                             and other known vulnerabilities. Close the loop with alerts to notify responsible individuals 
@@ -271,7 +271,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             </p>
                             <p className="font-weight-extra-bold">
                                 Learn how to use Sourcegraph to identify and resolve every instance of log4j. 
-                                <Link to="/blog/">
+                                <Link to="/blog/log4j-log4shell-0-day">
                                     {' '}Read the blog post.
                                 </Link>
                             </p>
@@ -283,9 +283,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         </div>
 
         <ContentSection>
-            <div className="row my-lg-6 my-4 justify-content-center">
+            <div className="row mb-lg-6 mt-lg-0 mt-5 justify-content-center">
                 <div className="d-flex flex-column w-lg-75 p-lg-7 mx-lg-3 mx-2 my-5">
-                    <h1 className="font-weight-bold text-center">
+                    <h1 className="font-weight-bold text-lg-center text-left">
                         How Sourcegraph helps you find and fix vulnerabilities
                     </h1>
                     <p className="mt-3">
@@ -316,13 +316,13 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="d-flex flex-column">
-                        <Link
+                        <a
                             className="btn btn-primary"
-                            to="/contact/request-code-insights-demo"
-                            title="Request a Demo of Code Insights."
+                            href="https://info.sourcegraph.com/demo-request"
+                            title="Request a Demo."
                         >
                             Request a demo
-                        </Link>
+                        </a>
                         <Link to='/use-cases' className="d-flex justify-content-center mt-4">
                             <p className="font-weight-bold">Explore other use cases</p>
                         </Link>
