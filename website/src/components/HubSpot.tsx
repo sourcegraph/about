@@ -1,3 +1,5 @@
+// This is deprecated. Please use the hubSpot hook instead.
+
 import cookies from 'js-cookie'
 
 export const SOURCEGRAPH_ANONYMOUS_ID_KEY = 'sourcegraphAnonymousUid'

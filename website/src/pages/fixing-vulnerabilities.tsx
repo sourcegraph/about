@@ -1,8 +1,8 @@
-import React, { FunctionComponent, useEffect } from 'react'
+import React, { FunctionComponent } from 'react'
 import { Link, PageProps } from 'gatsby'
 
 import Layout from '../components/Layout'
-import { createHubSpotForm } from '../components/HubSpot'
+import { useHubSpot } from '../hooks/hubSpot'
 
 export const FormLegal: FunctionComponent = () => (
     <p>
@@ -15,16 +15,15 @@ export const FormLegal: FunctionComponent = () => (
 )
 
 const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
-    useEffect(() => {
-        for (let n = 0; n < 2; n++) {
-            createHubSpotForm({
-                region: 'na1',
-                portalId: '2762526',
-                formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
-                targetId: `form-${n}`,
-            })
-        }
-    }, [])
+    for (let n = 0; n < 2; n++) {
+        useHubSpot(
+            'na1',
+            '2762526',
+            '721ac3eb-d213-45b1-858a-2df8743ad143',
+            `form-${n}`,
+            true
+        )
+    }
 
     return (
         <Layout
