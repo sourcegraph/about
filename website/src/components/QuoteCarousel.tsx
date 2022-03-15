@@ -30,12 +30,9 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
     const carouselStyles = 'd-flex flex-lg-row flex-column justify-content-center text-center'
 
     return (
-        <div className={className? classNames(carouselStyles, className) : classNames(carouselStyles)}>
+        <div className={className ? classNames(carouselStyles, className) : classNames(carouselStyles)}>
             <div className="d-lg-flex d-none align-items-center">
-                <ArrowLeftIcon
-                    className="mr-4"
-                    onClick={() => carouselHook.moveCarousel('decrement')}
-                />
+                <ArrowLeftIcon className="mr-4" onClick={() => carouselHook.moveCarousel('decrement')} />
             </div>
             <div className="px-lg-7">
                 {carouselItems.map(item => (
@@ -43,23 +40,20 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
                         key={item.quote}
                         className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
                     >
-                        <BlockquoteWithLogo 
+                        <BlockquoteWithLogo
                             quote={item.quote}
                             header={item.header}
-                            by={item.by} 
+                            by={item.by}
                             logoHref={item.logoHref}
                             logoImage={item.logoImage}
                             linkText={item.linkText}
-                            link={item.link} 
+                            link={item.link}
                         />
                     </div>
                 ))}
             </div>
             <div className="d-lg-flex d-none align-items-center">
-                <ArrowRightIcon
-                    className="ml-4"
-                    onClick={() => carouselHook.moveCarousel()}
-                />
+                <ArrowRightIcon className="ml-4" onClick={() => carouselHook.moveCarousel()} />
             </div>
         </div>
     )

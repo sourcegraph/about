@@ -13,7 +13,7 @@ import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
 
-const CarouselItem: FunctionComponent<{header: string, text: ReactNode}> = ({ header, text }) => (
+const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
         <h2>{header}</h2>
         {text}
@@ -25,11 +25,19 @@ const items = [
         id: 0,
         backgroundClass: '',
         buttonLabel: 'Find vulnerabilities',
-        text:
-            <CarouselItem header='Find vulnerabilities' text={<p>Vulnerabilities are inevitable, but they don't have to be disruptive. 
-                With <Link to='/code-search'>Code Search</Link>, you can find vulnerabilities across your repositories in a single search. Relieve your engineers from manual 
-                work, get a headstart on remediation, and act confidently knowing that you've located all affected code.</p>} 
-            />,
+        text: (
+            <CarouselItem
+                header="Find vulnerabilities"
+                text={
+                    <p>
+                        Vulnerabilities are inevitable, but they don't have to be disruptive. With{' '}
+                        <Link to="/code-search">Code Search</Link>, you can find vulnerabilities across your
+                        repositories in a single search. Relieve your engineers from manual work, get a headstart on
+                        remediation, and act confidently knowing that you've located all affected code.
+                    </p>
+                }
+            />
+        ),
         headerClass: 'active',
         itemClass: 'd-block',
     },
@@ -37,11 +45,19 @@ const items = [
         id: 1,
         backgroundClass: '',
         buttonLabel: 'Automatically merge and deploy fixes',
-        text:
-            <CarouselItem header='Automatically merge and deploy fixes' text={<p>Deploy fixes at scale. Don't let the size and complexity of your 
-                codebase hold you back. With <Link to='/batch-changes'>Batch Changes</Link>, you can automate the merging and deployment of fixes. 
-                Move faster than your competitors, free up your engineers, and return your codebase to a healthy state.</p>} 
-            />,
+        text: (
+            <CarouselItem
+                header="Automatically merge and deploy fixes"
+                text={
+                    <p>
+                        Deploy fixes at scale. Don't let the size and complexity of your codebase hold you back. With{' '}
+                        <Link to="/batch-changes">Batch Changes</Link>, you can automate the merging and deployment of
+                        fixes. Move faster than your competitors, free up your engineers, and return your codebase to a
+                        healthy state.
+                    </p>
+                }
+            />
+        ),
         headerClass: '',
         itemClass: 'd-none',
     },
@@ -49,9 +65,19 @@ const items = [
         id: 2,
         backgroundClass: '',
         buttonLabel: 'Proactively monitor for the presence of vulnerable code',
-        text: <CarouselItem header='Proactively monitor for the presence of vulnerable code' text={<p>Get ahead of vulnerabilities. With 
-        <a href='https://docs.sourcegraph.com/code_monitoring'>{' '}code monitoring</a>, get alerts whenever specified patterns enter your codebase. 
-        Monitors ensure new occurrences are detected immediately and allow you to catch them before merging—and before customers have reason to worry.</p>} />,
+        text: (
+            <CarouselItem
+                header="Proactively monitor for the presence of vulnerable code"
+                text={
+                    <p>
+                        Get ahead of vulnerabilities. With
+                        <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>, get alerts whenever
+                        specified patterns enter your codebase. Monitors ensure new occurrences are detected immediately
+                        and allow you to catch them before merging—and before customers have reason to worry.
+                    </p>
+                }
+            />
+        ),
         headerClass: '',
         itemClass: 'd-none',
     },
@@ -59,9 +85,19 @@ const items = [
         id: 3,
         backgroundClass: '',
         buttonLabel: 'Ensure removal of security vulnerabilities',
-        text: <CarouselItem header='Ensure removal of security vulnerabilities' text={<p>Get the full picture of an incident. Track how long the vulnerable code has 
-            been in your codebase and how quickly you're removing it. With <Link to='/code-insights'>Code Insights</Link>, you can measure the progress of applying 
-            longer-term fixes for vulnerabilities and incidents across all your code.</p>} />,
+        text: (
+            <CarouselItem
+                header="Ensure removal of security vulnerabilities"
+                text={
+                    <p>
+                        Get the full picture of an incident. Track how long the vulnerable code has been in your
+                        codebase and how quickly you're removing it. With <Link to="/code-insights">Code Insights</Link>
+                        , you can measure the progress of applying longer-term fixes for vulnerabilities and incidents
+                        across all your code.
+                    </p>
+                }
+            />
+        ),
         headerClass: '',
         itemClass: 'd-none',
     },
@@ -69,11 +105,21 @@ const items = [
         id: 4,
         backgroundClass: '',
         buttonLabel: 'Bring peace of mind to customers',
-        text: <CarouselItem header='Bring peace of mind to customers' text={<p>The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can 
-        know you'll find every instance of affected code, be able to fix it at scale, monitor for its presence long-term, and ensure your customers that your code is safe.</p>} />,
+        text: (
+            <CarouselItem
+                header="Bring peace of mind to customers"
+                text={
+                    <p>
+                        The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can know
+                        you'll find every instance of affected code, be able to fix it at scale, monitor for its
+                        presence long-term, and ensure your customers that your code is safe.
+                    </p>
+                }
+            />
+        ),
         headerClass: '',
         itemClass: 'd-none',
-    }
+    },
 ]
 
 const quoteCarouselItems = [
@@ -91,7 +137,7 @@ const quoteCarouselItems = [
         logoHref: 'https://www.cloudflare.com/',
         logoImage: '/external-logos/cloudflare-color-logo.svg',
         linkText: 'Read the case study',
-        link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security'
+        link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
     },
     {
         header: 'Indeed merges code at scale',
@@ -101,8 +147,8 @@ const quoteCarouselItems = [
         logoHref: 'https://www.indeed.com/',
         logoImage: '/external-logos/indeed-logo.svg',
         linkText: 'Read the case study',
-        link: '/case-studies/indeed-accelerates-development-velocity'
-    }
+        link: '/case-studies/indeed-accelerates-development-velocity',
+    },
 ]
 
 const blogListItems = [
@@ -116,14 +162,16 @@ const blogListItems = [
     },
     {
         title: 'The Nine Circles of Dependency Hell (and a roadmap out)',
-        description: 'A complex web of software dependencies can stop software development in its tracks. In this post, former Google software engineer Matt Rickard explains how to handle dependencies so engineers can spend more time coding.',
+        description:
+            'A complex web of software dependencies can stop software development in its tracks. In this post, former Google software engineer Matt Rickard explains how to handle dependencies so engineers can spend more time coding.',
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
         href: '/blog/nine-circles-of-dependency-hell',
     },
     {
         title: 'How to remove secrets from your codebase',
-        description: 'In early 2021, many Sourcegraph infrastructure and service account passwords were stored in private repositories. With Sourcegraph code search, security engineer André Eleuterio was able to ensure he moved every secret to a secure vault.',
+        description:
+            'In early 2021, many Sourcegraph infrastructure and service account passwords were stored in private repositories. With Sourcegraph code search, security engineer André Eleuterio was able to ensure he moved every secret to a secure vault.',
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
         href: '/blog/eliminate-secrets-from-codebase-with-universal-code-search',
@@ -180,45 +228,36 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection className="my-lg-7">
             <div className="row mx-lg-0 mx-4">
                 <div className="d-flex justify-content-center w-lg-50 w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="font-weight-bold">
-                        Identify, resolve, and monitor with confidence
-                    </h1>
+                    <h1 className="font-weight-bold">Identify, resolve, and monitor with confidence</h1>
                 </div>
                 <div className="d-flex flex-column flex-lg-row my-6">
                     <div className="text-center">
                         <TimerOutlineIcon className="icon mb-4" size={40} />
-                        <h4 className="font-weight-bold">
-                            Reduce time to discovery and resolution
-                        </h4>
+                        <h4 className="font-weight-bold">Reduce time to discovery and resolution</h4>
                         <p>
-                            Find every instance of a vulnerability and start remediating in minutes 
-                            instead of days or weeks. Use that head start to communicate a remediation 
-                            plan to your customers faster and deploy fixes sooner. Reassure your customers 
-                            that you've fixed all affected code.
+                            Find every instance of a vulnerability and start remediating in minutes instead of days or
+                            weeks. Use that head start to communicate a remediation plan to your customers faster and
+                            deploy fixes sooner. Reassure your customers that you've fixed all affected code.
                         </p>
                     </div>
                     <div className="mx-lg-7 text-center">
                         <AutoFixIcon className="icon mb-4" size={40} />
-                        <h4 className="font-weight-bold">
-                            Automate fixing, merging, and deploying fixes
-                        </h4>
+                        <h4 className="font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
                         <p>
-                            Automate PRs to fix vulnerabilities across your entire codebase. Define changes 
-                            programmatically, track and manage changesets before merging, and monitor the 
-                            progress of your changes so you can be 100% confident you resolved every vulnerability.
+                            Automate PRs to fix vulnerabilities across your entire codebase. Define changes
+                            programmatically, track and manage changesets before merging, and monitor the progress of
+                            your changes so you can be 100% confident you resolved every vulnerability.
                         </p>
                     </div>
                     <div className="text-center">
                         <ShieldAlertOutlineIcon className="icon mb-4" size={40} />
-                        <h4 className="font-weight-bold">
-                            Alert for risky code changes & known vulnerabilities
-                        </h4>
+                        <h4 className="font-weight-bold">Alert for risky code changes & known vulnerabilities</h4>
                         <p>
-                            Get on top of vulnerabilities by monitoring your repositories for commits with risky patterns 
-                            and other known vulnerabilities. Close the loop with alerts to notify responsible individuals 
-                            when those events occur, ensuring your codebase remains healthy.
+                            Get on top of vulnerabilities by monitoring your repositories for commits with risky
+                            patterns and other known vulnerabilities. Close the loop with alerts to notify responsible
+                            individuals when those events occur, ensuring your codebase remains healthy.
                         </p>
-                    </div>              
+                    </div>
                 </div>
             </div>
         </ContentSection>
@@ -231,51 +270,55 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             Identifying & resolving security vulnerabilities is painful
                         </h1>
                         <p>
-                            <strong>Major vulnerabilities become all-hands-on-deck situations quickly</strong>, and understanding how to mitigate 
-                            them is intimidating for many development teams. <strong>High-severity vulnerabilities now take nearly 250 
-                            days to remediate,*</strong> and every hour that goes by increases your exposure and incident risk dramatically.
+                            <strong>Major vulnerabilities become all-hands-on-deck situations quickly</strong>, and
+                            understanding how to mitigate them is intimidating for many development teams.{' '}
+                            <strong>High-severity vulnerabilities now take nearly 250 days to remediate,*</strong> and
+                            every hour that goes by increases your exposure and incident risk dramatically.
                         </p>
                         <p>
-                            Existing tooling doesn't enable teams to be agile and effective when responding to security vulnerabilities. What does 
-                            that mean for you?
+                            Existing tooling doesn't enable teams to be agile and effective when responding to security
+                            vulnerabilities. What does that mean for you?
                         </p>
                         <ul>
+                            <li>Finding vulnerabilities scattered across codebases takes extra time and resources</li>
                             <li>
-                                Finding vulnerabilities scattered across codebases takes extra time and resources
+                                Following dependencies across your codebase is inefficient with IDEs that aren't
+                                connected to all code or up to date
                             </li>
                             <li>
-                                Following dependencies across your codebase is inefficient with IDEs that aren't connected to all code or up to date
+                                Whether you're making changes to 50 or 5,000 repositories, tracking and managing PRs to
+                                completion is a manual and spreadsheet-heavy process
                             </li>
                             <li>
-                                Whether you're making changes to 50 or 5,000 repositories, tracking and managing PRs to completion is a manual and spreadsheet-heavy process
-                            </li>
-                            <li>
-                                The vulnerability management and remediation process remains cumbersome, unclear, and stressful for all involved
+                                The vulnerability management and remediation process remains cumbersome, unclear, and
+                                stressful for all involved
                             </li>
                         </ul>
                         <p className="text-muted">
-                            *Source: <a href="https://securityintelligence.com/news/news-vulnerabilities-25-days-remediate/">Security Intelligence</a>
+                            *Source:{' '}
+                            <a href="https://securityintelligence.com/news/news-vulnerabilities-25-days-remediate/">
+                                Security Intelligence
+                            </a>
                         </p>
                     </div>
                     <div className="col-lg-5">
                         <div className="bg-white p-5">
                             <h4>Log4j was the tip of the iceberg</h4>
                             <p>
-                                Log4j is a prime example of how challenging it is to create a cohesive response across multiple teams in an org. 
-                                Most organizations struggled to find the vulnerability or understand how it impacted their entire codebase.
+                                Log4j is a prime example of how challenging it is to create a cohesive response across
+                                multiple teams in an org. Most organizations struggled to find the vulnerability or
+                                understand how it impacted their entire codebase.
                             </p>
                             <p>
-                                Meanwhile, Sourcegraph enabled companies like Nutanix to completely remediate log4j vulnerabilities across multiple 
-                                build and artifact management systems, as well as a large monorepo with many component branches and hundreds of git 
-                                repositories, in under four days, and with 100% certainty.
+                                Meanwhile, Sourcegraph enabled companies like Nutanix to completely remediate log4j
+                                vulnerabilities across multiple build and artifact management systems, as well as a
+                                large monorepo with many component branches and hundreds of git repositories, in under
+                                four days, and with 100% certainty.
                             </p>
                             <p className="font-weight-extra-bold">
-                                Learn how to use Sourcegraph to identify and resolve every instance of log4j. 
-                                <Link to="/blog/log4j-log4shell-0-day">
-                                    {' '}Read the blog post.
-                                </Link>
+                                Learn how to use Sourcegraph to identify and resolve every instance of log4j.
+                                <Link to="/blog/log4j-log4shell-0-day"> Read the blog post.</Link>
                             </p>
-
                         </div>
                     </div>
                 </div>
@@ -289,10 +332,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         How Sourcegraph helps you find and fix vulnerabilities
                     </h1>
                     <p className="mt-3">
-                        With Sourcegraph, engineers can find all instances of a vulnerability, 
-                        remediate it across their entire codebase, monitor for future occurrences, 
-                        and visualize their impact. No more manual hunting for affected code through 
-                        repository after repository, while regulators and customers demand speed.
+                        With Sourcegraph, engineers can find all instances of a vulnerability, remediate it across their
+                        entire codebase, monitor for future occurrences, and visualize their impact. No more manual
+                        hunting for affected code through repository after repository, while regulators and customers
+                        demand speed.
                     </p>
                 </div>
                 <CustomCarousel items={items} autoAdvance={true} />
@@ -301,7 +344,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-onahau-fog py-8">
             <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} className='set-height' />
+                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} className="set-height" />
             </ContentSection>
         </div>
 
@@ -311,9 +354,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-lg-8 py-7 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
-                        <p>
-                            Find, fix, and track vulnerable code quickly across your entire codebase. 
-                        </p>
+                        <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
                     </div>
                     <div className="d-flex flex-column">
                         <a
@@ -323,7 +364,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         >
                             Request a demo
                         </a>
-                        <Link to='/use-cases' className="d-flex justify-content-center mt-4">
+                        <Link to="/use-cases" className="d-flex justify-content-center mt-4">
                             <p className="font-weight-bold">Explore other use cases</p>
                         </Link>
                     </div>
@@ -349,7 +390,6 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 </Link>
             </div>
         </ContentSection>
-
     </Layout>
 )
 
