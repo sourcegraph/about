@@ -5,7 +5,6 @@ import Layout from '../components/Layout'
 import { createHubSpotForm } from '../components/HubSpot'
 
 const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
-    
     useEffect(() => {
         for (let n = 0; n < 2; n++) {
             createHubSpotForm({
