@@ -7,13 +7,7 @@ import { FormLegal } from './fixing-vulnerabilities'
 
 const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
     for (let n = 0; n < 2; n++) {
-        useHubSpot(
-            'na1',
-            '2762526',
-            '98187d3b-d8a9-43e2-bb95-d93dd029c688',
-            `form-${n}`,
-            true
-        )
+        useHubSpot('na1', '2762526', '98187d3b-d8a9-43e2-bb95-d93dd029c688', `form-${n}`, true)
     }
 
     return (
