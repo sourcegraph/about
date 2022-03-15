@@ -3,6 +3,7 @@ import { Link, PageProps } from 'gatsby'
 
 import Layout from '../components/Layout'
 import { createHubSpotForm } from '../components/HubSpot'
+import { FormLegal } from './fixing-vulnerabilities'
 
 const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
     useEffect(() => {
@@ -43,6 +44,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
 
                         <div className="mt-5 mw-400">
                             <div id="form-0" />
+                            <FormLegal />
                         </div>
                     </div>
 
@@ -92,6 +94,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
 
                     <div className="mt-5 mw-400 mx-auto">
                         <div id="form-1" />
+                        <FormLegal />
                     </div>
                 </div>
             </div>

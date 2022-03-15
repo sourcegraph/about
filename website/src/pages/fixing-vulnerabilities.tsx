@@ -4,6 +4,16 @@ import { Link, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import { createHubSpotForm } from '../components/HubSpot'
 
+export const FormLegal: FunctionComponent = () => (
+    <p>
+        <small>
+            By submitting, I agree to Sourcegraph's{` `}
+            <Link to="/terms">Terms of Service</Link> and{` `}
+            <Link to="/privacy">Privacy Policy</Link>.
+        </small>
+    </p>
+)
+
 const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
     useEffect(() => {
         for (let n = 0; n < 2; n++) {
@@ -39,6 +49,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
 
                         <div className="mt-5 mw-400">
                             <div id="form-0" />
+                            <FormLegal />
                         </div>
                     </div>
 
@@ -91,6 +102,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
 
                     <div className="mt-5 mw-400 mx-auto">
                         <div id="form-1" />
+                        <FormLegal />
                     </div>
                 </div>
             </div>
