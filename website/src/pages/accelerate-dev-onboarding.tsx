@@ -41,7 +41,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                             of running local searches for specific bits of code.
                         </p>
 
-                        <div className="mt-5">
+                        <div className="mt-5 mw-400">
                             <div id="form-0" />
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="bg-gradient-onahau-fog text-center">
-                <div className="container py-6 mw-650">
+                <div className="container py-6 mw-700">
                     <h2 className="mb-4 font-weight-bold">
                         See how Convoy increases the efficiency and confidence of entry level developers
                     </h2>
@@ -85,12 +85,12 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="text-center">
-                <div className="container py-8 mw-650">
+                <div className="container py-8 mw-700">
                     <h2 className="font-weight-bold">
                         Time to think about your developer onboarding workflow? Let's talk!
                     </h2>
 
-                    <div className="mt-5">
+                    <div className="mt-5 mw-400 mx-auto">
                         <div id="form-1" />
                     </div>
                 </div>

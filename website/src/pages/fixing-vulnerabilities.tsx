@@ -37,7 +37,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                             vulnerability-free.
                         </p>
 
-                        <div className="mt-5">
+                        <div className="mt-5 mw-400">
                             <div id="form-0" />
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="bg-gradient-onahau-mint text-center">
-                <div className="container py-6 mw-650">
+                <div className="container py-6 mw-700">
                     <h2 className="mb-4 font-weight-bold">Indeed merges code at scale</h2>
                     <blockquote>
                         <p>
@@ -84,12 +84,12 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="text-center">
-                <div className="container py-8 mw-650">
+                <div className="container py-8 mw-700">
                     <h2 className="font-weight-bold">
                         Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk!
                     </h2>
 
-                    <div className="mt-5">
+                    <div className="mt-5 mw-400 mx-auto">
                         <div id="form-1" />
                     </div>
                 </div>
