@@ -1,3 +1,4 @@
+@use 'sass:color';
 @import '@styles/colors';
 
 @mixin BgGradientPrimary {
@@ -34,9 +35,12 @@
     background: radial-gradient(ellipse at top left, rgba($blue-mist, 0.5), transparent),
         radial-gradient(ellipse at bottom right, rgba($light-green2, 0.5), transparent);
 }
-@mixin BgGradientVioletMist {
-    background: radial-gradient(ellipse at top left, rgba($light-purple, 0.5), transparent),
-        radial-gradient(ellipse at top right, rgba($blue-mist, 0.5), transparent);
+@mixin BgGradientOnahauFog {
+    background: linear-gradient(
+        90deg,
+        color.adjust($brand-onahau, $alpha: -0.7) 14.33%,
+        color.adjust($brand-fog, $alpha: -0.7) 81.79%
+    );
 }
 
 .bg-gradient-primary {
@@ -47,6 +51,9 @@
 }
 .bg-gradient-blue-green {
     @include BgGradientBlueGreen;
+}
+.bg-gradient-onahau-fog {
+    @include BgGradientOnahauFog;
 }
 .bg-gradient-blue-purple {
     @include BgGradientBluePurple;
@@ -71,7 +78,4 @@
 }
 .bg-gradient-blue-mist {
     @include BgGradientBlueMist;
-}
-.bg-gradient-violet-mist {
-    @include BgGradientVioletMist;
 }

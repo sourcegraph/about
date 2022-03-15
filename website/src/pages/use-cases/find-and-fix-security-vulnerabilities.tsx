@@ -178,8 +178,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         }
     >
         <ContentSection className="my-lg-7">
-            <div className="row d-flex justify-content-center">
-                <div className="d-flex text-center w-lg-50 w-100 mt-7 mb-lg-4 mb-0">
+            <div className="row mx-lg-0 mx-4">
+                <div className="d-flex justify-content-center w-lg-50 w-100 mt-7 mb-lg-4 mb-0">
                     <h1 className="font-weight-bold">
                         Identify, resolve, and monitor with confidence
                     </h1>
@@ -197,7 +197,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             that you've fixed all affected code.
                         </p>
                     </div>
-                    <div className="mx-6 text-center">
+                    <div className="mx-lg-6 text-center">
                         <AutoFixIcon className="icon mb-4" size={40} />
                         <h3 className="font-weight-bold">
                             Automate fixing, merging, and deploying fixes
@@ -283,8 +283,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         </div>
 
         <ContentSection>
-            <div className="row my-6 justify-content-center">
-                <div className="d-flex flex-column w-lg-75 p-lg-7 mx-3 my-5">
+            <div className="row my-lg-6 my-4 justify-content-center">
+                <div className="d-flex flex-column w-lg-75 p-lg-7 mx-lg-3 mx-2 my-5">
                     <h1 className="font-weight-bold text-center">
                         How Sourcegraph helps you find and fix vulnerabilities
                     </h1>
@@ -299,13 +299,13 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-violet-mist py-8">
+        <div className="bg-gradient-onahau-fog py-8">
             <ContentSection>
                 <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} className='set-height' />
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray">
+        <div className="bg-light-gray2">
             <ContentSection>
                 <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="pt-5" />
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-lg-8 py-7 align-items-lg-center align-items-left">
