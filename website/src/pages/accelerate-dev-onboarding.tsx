@@ -62,7 +62,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="bg-gradient-onahau-fog text-center">
-                <div className="container col-lg-6 py-6">
+                <div className="container py-6" style={{ maxWidth: 650 }}>
                     <h2 className="mb-4 font-weight-bold">
                         See how Convoy increases the efficiency and confidence of entry level developers
                     </h2>
@@ -86,7 +86,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="text-center">
-                <div className="container col-lg-8 py-8">
+                <div className="container py-8" style={{ maxWidth: 650 }}>
                     <h2 className="font-weight-bold">
                         Time to think about your developer onboarding workflow? Let's talk!
                     </h2>
