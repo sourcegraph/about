@@ -261,7 +261,7 @@ export default ((props: any) => (
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.trySourcegraph}
                             data-button-type="cta"
-                            to="../#get-started"
+                            to="/get-started"
                             title="Try Sourcegraph now"
                         >
                             Try Sourcegraph now
