@@ -15,9 +15,13 @@ changelogItems:
 
 Sourcegraph 3.38 is now available! For this release, we introduced:
 
-## Feature
+## Rockskip
 
-Description
+Rockskip is a new backend for search-based code intelligence, the symbol sidebar, and symbol search. Rockskip was architected with monorepos in mind, and it can index new commits much faster than the existing SQLite backend.
+
+From 3.38 onwards, Rockskip can be turned on for specific repositories and it will make the symbol sidebar and search-based code intelligence much faster. If you're interested in turning this on for your repos, read more in the [docs](https://docs.sourcegraph.com/code_intelligence/explanations/rockskip) or [contact us](mailto:support@sourcegraph.com).
+
+![Rockskip chart](https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/rockskip-chart.png)
 
 ## Feature
 
