@@ -82,13 +82,18 @@ export default ((props: any) => (
                             </li>
                             <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
-                            title="Request a demo"
-                            className="btn btn-outline-primary"
-                        >
-                            Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                        <div className="d-flex">
+                            <a
+                                href="https://info.sourcegraph.com/demo-request"
+                                title="Request a demo"
+                                className="btn btn-outline-primary"
+                            >
+                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                            </a>
+                            <Link to="/use-cases/vulnerabilities" className="btn btn-link font-weight-bold">
+                                Learn more
+                            </Link>
+                        </div>
                     </div>
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
@@ -153,13 +158,13 @@ export default ((props: any) => (
                             </li>
                             <li>Get answers faster with shareable links to specific code</li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
+                        <a
+                            href="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </ContentSection>
@@ -191,13 +196,13 @@ export default ((props: any) => (
                                 search notebook
                             </li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
+                        <a
+                            href="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                        </a>
                     </div>
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
@@ -258,13 +263,13 @@ export default ((props: any) => (
                             </li>
                             <li>Add a code monitor to alert you of commits using an out-of-date library</li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
+                        <a
+                            href="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </ContentSection>
@@ -295,13 +300,13 @@ export default ((props: any) => (
                             </li>
                             <li>Efficiently tackle tech debt from legacy systems and acquisitions</li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
+                        <a
+                            href="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                        </a>
                     </div>
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-6">
