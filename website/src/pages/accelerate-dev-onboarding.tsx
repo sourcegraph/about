@@ -7,12 +7,12 @@ import { createHubSpotForm } from '../components/HubSpot'
 const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
     
     useEffect(() => {
-        for (let n=0; n<2; n++) {
+        for (let n = 0; n < 2; n++) {
             createHubSpotForm({
                 region: 'na1',
                 portalId: '2762526',
                 formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
-                targetId: `form-${n}`
+                targetId: `form-${n}`,
             })
         }
     }, [])
@@ -22,7 +22,8 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             location={props.location}
             meta={{
                 title: 'Accelerating Developer Onboarding | Sourcegraph',
-                description: 'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
+                description:
+                    'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
             }}
         >
             <div className="container py-6">
@@ -36,9 +37,9 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                         </h4>
                         <p>
                             With Sourcegraph, developers can find their own answers without waiting for someone to point
-                            them to the relevant code. Get sharable links to help new developers ask specific questions with
-                            context included, and enable senior devs to share their knowledge without the friction of
-                            running local searches for specific bits of code.
+                            them to the relevant code. Get sharable links to help new developers ask specific questions
+                            with context included, and enable senior devs to share their knowledge without the friction
+                            of running local searches for specific bits of code.
                         </p>
 
                         <div className="mt-5">
@@ -53,7 +54,8 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                                 title="Accelerate developer onboarding with Sourcegraph"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
-                                className="embed-responsive-item" />
+                                className="embed-responsive-item"
+                            />
                         </div>
                     </div>
                 </div>
@@ -67,9 +69,12 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                     <blockquote>
                         <p>
                             &ldquo;For our new developers, Sourcegraph has been invaluable to get to know the repository
-                            structure, to track down where code lives, and self-service during their investigations.&rdquo;
+                            structure, to track down where code lives, and self-service during their
+                            investigations.&rdquo;
                         </p>
-                        <figcaption className="text-muted mt-4">—Owen Kim, Senior Software Engineer at Convoy</figcaption>
+                        <figcaption className="text-muted mt-4">
+                            —Owen Kim, Senior Software Engineer at Convoy
+                        </figcaption>
                     </blockquote>
 
                     <img src="/external-logos/convoy-logo.svg" alt="Convoy logo" width={130} className="mt-4" />
