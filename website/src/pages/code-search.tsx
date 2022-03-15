@@ -55,7 +55,6 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 ">
                     <iframe
                         className="embed-responsive-item"
-                        data-cookieconsent="ignore"
                         src="https://www.youtube-nocookie.com/embed/aDU4C9j-hYA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -132,7 +131,6 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 border">
                     <iframe
                         className="embed-responsive-item"
-                        data-cookieconsent="ignore"
                         src="https://www.youtube-nocookie.com/embed/r2CpLe1h89I?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
