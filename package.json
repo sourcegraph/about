@@ -56,6 +56,7 @@
     "mdi-react": "^8.2.0",
     "prettier": "^2.5.1",
     "react-bootstrap": "1.6.1",
+    "react-spring": "9.4.2",
     "sass": "^1.49.7",
     "typescript": "4.5.5"
   }
