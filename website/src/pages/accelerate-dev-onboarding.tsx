@@ -2,8 +2,8 @@ import React, { FunctionComponent } from 'react'
 import { Link, PageProps } from 'gatsby'
 
 import Layout from '../components/Layout'
+import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
-import { FormLegal } from './fixing-vulnerabilities'
 
 const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
     for (let n = 0; n < 2; n++) {
@@ -35,10 +35,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                             Self-serve onboarding, codebase exploration, and knowledge sharing
                         </h4>
                         <p>
-                            With Sourcegraph, developers can find their own answers without waiting for someone to point
-                            them to the relevant code. Get sharable links to help new developers ask specific questions
-                            with context included, and enable senior devs to share their knowledge without the friction
-                            of running local searches for specific bits of code.
+                            With Sourcegraph, developers can find their own answers without waiting for someone to point them to the relevant code. Get sharable links to help developers ask specific questions with context included, and enable senior devs to share their knowledge at scale.
                         </p>
 
                         <div className="mt-5 mw-400">
@@ -62,18 +59,16 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="bg-gradient-onahau-fog text-center">
-                <div className="container py-6 mw-700">
+                <div className="container py-6 mw-650">
                     <h2 className="mb-4 font-weight-bold">
-                        See how Convoy increases the efficiency and confidence of entry level developers
+                        Learn how Convoy increases the efficiency and confidence of entry level developers
                     </h2>
                     <blockquote>
                         <p>
-                            &ldquo;For our new developers, Sourcegraph has been invaluable to get to know the repository
-                            structure, to track down where code lives, and self-service during their
-                            investigations.&rdquo;
+                            &ldquo;For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations.&rdquo;
                         </p>
                         <figcaption className="text-muted mt-4">
-                            —Owen Kim, Senior Software Engineer at Convoy
+                            &mdash; Owen Kim, Senior Software Engineer at Convoy
                         </figcaption>
                     </blockquote>
 
@@ -86,9 +81,9 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="text-center">
-                <div className="container py-8 mw-700">
+                <div className="container py-8 mw-650">
                     <h2 className="font-weight-bold">
-                        Time to think about your developer onboarding workflow? Let's talk!
+                        Ready to accelerate developer onboarding? Let's talk.
                     </h2>
 
                     <div className="mt-5 mw-400 mx-auto">

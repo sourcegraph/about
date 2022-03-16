@@ -2,17 +2,8 @@ import React, { FunctionComponent } from 'react'
 import { Link, PageProps } from 'gatsby'
 
 import Layout from '../components/Layout'
+import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
-
-export const FormLegal: FunctionComponent = () => (
-    <p>
-        <small>
-            By submitting, I agree to Sourcegraph's{` `}
-            <Link to="/terms">Terms of Service</Link> and{` `}
-            <Link to="/privacy">Privacy Policy</Link>.
-        </small>
-    </p>
-)
 
 const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
     for (let n = 0; n < 2; n++) {
@@ -40,10 +31,9 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                         <h1 className="mb-4 font-weight-bold">Find and fix security vulnerabilities faster</h1>
                         <h4 className="font-weight-bold">You can't fix what you can't find</h4>
                         <p>
-                            Search within and across your repositories to find and fix vulnerabilities in minutes, not
-                            weeks. Deploy fixes with confidence, knowing you've found and remediated every instance of
-                            affected code. Monitor your code long-term and ensure your customers that you're
-                            vulnerability-free.
+                            Search within and across your repositories to find and fix vulnerabilities in minutes, not 
+                            weeks. Deploy fixes with confidence, knowing you've found and remediated every instance of 
+                            affected code. Monitor your code long-term and ensure your customers that you're vulnerability-free. 
                         </p>
 
                         <div className="mt-5 mw-400">
@@ -67,25 +57,22 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="bg-gradient-onahau-mint text-center">
-                <div className="container py-6 mw-700">
-                    <h2 className="mb-4 font-weight-bold">Indeed merges code at scale</h2>
+                <div className="container py-6 mw-650">
+                    <h2 className="mb-4 font-weight-bold">Cloudflare proves to auditors that its code isn't vulnerable</h2>
                     <blockquote>
                         <p>
-                            &ldquo;On average, I'd say that for every automated merge request that we're able to merge
-                            we save an hour. That's a rough but conservative estimate. It shows, though, that if we are
-                            doing several thousand automated merges in a year, we're saving several employee's worth of
-                            time.&rdquo;
+                            &ldquo;“[Sourcegraph] is the best way to prove that we're not vulnerable to a particular CVE, 
+                            if and when we get asked by an auditor.&rdquo;
                         </p>
                         <figcaption className="text-muted mt-4">
-                            —Jared Hodge, Senior Manager, Developer Experience at Indeed
+                            &mdash; David Haynes, Security Engineer at Cloudflare
                         </figcaption>
                     </blockquote>
 
-                    {/* TODO: replace with SVG Component when #5177 is merged */}
-                    <img src="/external-logos/indeed-logo.svg" alt="Indeed logo" width={130} className="mt-4" />
+                    <img src="/external-logos/cloudflare-color-logo.svg" alt="Cloudflare logo" width={130} className="mt-4" />
 
                     <Link
-                        to="/case-studies/indeed-accelerates-development-velocity"
+                        to="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
                         className="d-block mt-5 font-weight-bold"
                     >
                         Read the full case study
@@ -94,7 +81,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="text-center">
-                <div className="container py-8 mw-700">
+                <div className="container py-8 mw-650">
                     <h2 className="font-weight-bold">
                         Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk!
                     </h2>
