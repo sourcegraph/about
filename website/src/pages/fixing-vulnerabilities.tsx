@@ -25,9 +25,10 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                         <h1 className="mb-4 font-weight-bold">Find and fix security vulnerabilities faster</h1>
                         <h4 className="font-weight-bold">You can't fix what you can't find</h4>
                         <p>
-                            Search within and across your repositories to find and fix vulnerabilities in minutes, not 
-                            weeks. Deploy fixes with confidence, knowing you've found and remediated every instance of 
-                            affected code. Monitor your code long-term and ensure your customers that you're vulnerability-free. 
+                            Search within and across your repositories to find and fix vulnerabilities in minutes, not
+                            weeks. Deploy fixes with confidence, knowing you've found and remediated every instance of
+                            affected code. Monitor your code long-term and ensure your customers that you're
+                            vulnerability-free.
                         </p>
 
                         <div className="mt-5 mw-400">
@@ -52,18 +53,25 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
 
             <div className="bg-gradient-onahau-mint text-center">
                 <div className="container py-6 mw-650">
-                    <h2 className="mb-4 font-weight-bold">Cloudflare proves to auditors that its code isn't vulnerable</h2>
+                    <h2 className="mb-4 font-weight-bold">
+                        Cloudflare proves to auditors that its code isn't vulnerable
+                    </h2>
                     <blockquote>
                         <p>
-                            &ldquo;“[Sourcegraph] is the best way to prove that we're not vulnerable to a particular CVE, 
-                            if and when we get asked by an auditor.&rdquo;
+                            &ldquo;“[Sourcegraph] is the best way to prove that we're not vulnerable to a particular
+                            CVE, if and when we get asked by an auditor.&rdquo;
                         </p>
                         <figcaption className="text-muted mt-4">
                             &mdash; David Haynes, Security Engineer at Cloudflare
                         </figcaption>
                     </blockquote>
 
-                    <img src="/external-logos/cloudflare-color-logo.svg" alt="Cloudflare logo" width={130} className="mt-4" />
+                    <img
+                        src="/external-logos/cloudflare-color-logo.svg"
+                        alt="Cloudflare logo"
+                        width={130}
+                        className="mt-4"
+                    />
 
                     <Link
                         to="/case-studies/cloudflare-accelerates-debugging-and-improves-security"

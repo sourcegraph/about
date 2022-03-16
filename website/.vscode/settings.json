@@ -1,5 +1,5 @@
 {
   "search.exclude": {
-    ".cache/**": true,
-  },
+    ".cache/**": true
+  }
 }

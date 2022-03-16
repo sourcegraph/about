@@ -29,7 +29,9 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                             Self-serve onboarding, codebase exploration, and knowledge sharing
                         </h4>
                         <p>
-                            With Sourcegraph, developers can find their own answers without waiting for someone to point them to the relevant code. Get sharable links to help developers ask specific questions with context included, and enable senior devs to share their knowledge at scale.
+                            With Sourcegraph, developers can find their own answers without waiting for someone to point
+                            them to the relevant code. Get sharable links to help developers ask specific questions with
+                            context included, and enable senior devs to share their knowledge at scale.
                         </p>
 
                         <div className="mt-5 mw-400">
@@ -59,7 +61,9 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                     </h2>
                     <blockquote>
                         <p>
-                            &ldquo;For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations.&rdquo;
+                            &ldquo;For our new developers, Sourcegraph has been invaluable to get to know the repository
+                            structure, to track down where code lives, and self-service during their
+                            investigations.&rdquo;
                         </p>
                         <figcaption className="text-muted mt-4">
                             &mdash; Owen Kim, Senior Software Engineer at Convoy
@@ -76,9 +80,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
 
             <div className="text-center">
                 <div className="container py-8 mw-650">
-                    <h2 className="font-weight-bold">
-                        Ready to accelerate developer onboarding? Let's talk.
-                    </h2>
+                    <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
 
                     <div className="mt-5 mw-400 mx-auto">
                         <div id="form-1" />
