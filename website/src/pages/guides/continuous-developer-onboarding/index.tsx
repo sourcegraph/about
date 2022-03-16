@@ -4,7 +4,7 @@ import { PageProps } from 'gatsby'
 import Layout from '../../../components/Layout'
 // TODO: Add when #5179 is merged
 // import { useHubSpot } from '../../../hooks/hubSpot'
-import styles from './guides.module.scss'
+import styles from './index.module.scss'
 
 const ContinuousDevOnboarding: FunctionComponent<PageProps> = props => {
     // TODO: Add when #5179 is merged
