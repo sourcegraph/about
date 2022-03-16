@@ -1,0 +1,11 @@
+.hero {
+    background-image: url("/guides/dev-onboarding-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 352px;
+    @media only screen and (min-width: 576px) {
+        background-image: url("/guides/dev-onboarding-hero.png");
+        height: 433px;
+    }
+}
