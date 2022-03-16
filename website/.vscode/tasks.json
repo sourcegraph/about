@@ -7,15 +7,15 @@
       "label": "Build Website",
       "group": "build",
       "presentation": {
-        "reveal": "never",
+        "reveal": "never"
       },
       "isBackground": true,
-      "problemMatcher": [],
+      "problemMatcher": []
     },
     {
       "type": "npm",
       "script": "lint",
-      "problemMatcher": ["$tslint5"],
-    },
-  ],
+      "problemMatcher": ["$tslint5"]
+    }
+  ]
 }
