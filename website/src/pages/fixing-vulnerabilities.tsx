@@ -58,8 +58,8 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                     </h2>
                     <blockquote>
                         <p>
-                            &ldquo;[Sourcegraph] is the best way to prove that we're not vulnerable to a particular
-                            CVE, if and when we get asked by an auditor.&rdquo;
+                            &ldquo;[Sourcegraph] is the best way to prove that we're not vulnerable to a particular CVE,
+                            if and when we get asked by an auditor.&rdquo;
                         </p>
                         <figcaption className="text-muted mt-4">
                             &mdash; David Haynes, Security Engineer at Cloudflare
