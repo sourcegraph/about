@@ -7,13 +7,7 @@ import { useHubSpot } from '../hooks/hubSpot'
 
 const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
     for (let n = 0; n < 2; n++) {
-        useHubSpot(
-            'na1',
-            '2762526',
-            '721ac3eb-d213-45b1-858a-2df8743ad143',
-            `form-${n}`,
-            true
-        )
+        useHubSpot('na1', '2762526', '721ac3eb-d213-45b1-858a-2df8743ad143', `form-${n}`, true)
     }
 
     return (
