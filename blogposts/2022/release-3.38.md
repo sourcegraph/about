@@ -1,10 +1,10 @@
 ---
 title: 'Sourcegraph 3.38 release'
 publishDate: 2022-03-21T10:00-07:00
-description: 'Sourcegraph 3.38 introduces...'
+description: 'Sourcegraph 3.38 introduces improved Notebooks, faster Code Intelligence for large repos, dependencies search, and custom file syntax highlighting.'
 tags: [blog, release]
 slug: 'release/3.38'
-published: false
+published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-38-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-38-release.png
 changelogItems:
