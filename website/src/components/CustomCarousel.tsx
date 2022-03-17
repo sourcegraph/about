@@ -21,7 +21,7 @@ interface CarouselItem {
     id: number
     backgroundClass?: string
     buttonLabel: string
-    headerClass: string
+    headerClass?: string
     text: string | ReactNode
     itemClass: string
 }
