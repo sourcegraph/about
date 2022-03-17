@@ -30,14 +30,6 @@ changelogItems:
 
 Sourcegraph 3.38 is now available! For this release, we introduced:
 
-## Improved Code Intelligence performance for large repositories
-
-We're introducing a new backend service, Rockskip, for search-based Code Intelligence, the symbol sidebar, and symbol search. Rockskip was architected with monorepos in mind, and it can index new commits much faster than the existing SQLite backend.
-
-From 3.38 onwards, Rockskip can be turned on for specific repositories and it will make the symbol sidebar and search-based code intelligence much faster. If you're interested in turning this on for your repos, read more in the [docs](https://docs.sourcegraph.com/code_intelligence/explanations/rockskip) or [contact us](mailto:support@sourcegraph.com).
-
-<img class="blog-image" title="Rockskip performance improvement" alt="Comparative chart showing impact of incremental indexing" src="https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/rockskip-chart.png">
-
 ## Code Insights is generally available
 
 [Code Insights](https://docs.sourcegraph.com/code_insights) became generally available on March 10th. Code Insights reveals high-level information about your codebase, based on both how your code changes over time and its current state. You can learn more about why we built Code Insights in [the announcement from our CEO](https://about.sourcegraph.com/blog/announcing-code-insights/).
@@ -55,15 +47,25 @@ Any Sourcegraph instance can create up to two code insights, even without a tria
   ></iframe>
 </div>
 
-## Notebooks (Beta)
+## Notebooks are improved with a host of new features
 
-Notebooks continue their rapid beta evolution with some exciting new features:
+Notebooks have several new features in 3.38 to help your team better understand your codebase.
 
-- Copy any existing Notebook to your own Notebooks and modify it
-- A new symbol block type that lets you find any symbol in a repository and create a block that will display it no matter where it moves within its file
-- Code Intelligence is now available in Notebook blocks, making Notebooks even more valuable for onboarding and learning about your codebase
-- Embedding Notebooks is here. You can easily embed Notebooks from Sourcegraph.com or your on-prem instance by embedding an iFrame anywhere, and setting the `src` to https://sourcegraph.com/notebooks/embed/<notebook_uuid/>
+- You can now copy any existing Notebook to your own collection of Notebooks.
+- We've created a new symbol block type. This block lets you find any symbol in a repository, and the block will display that symbol no matter where it moves within a file.
+- Code Intelligence is now available in Notebook blocks, making Notebooks more intuitive to be used for onboarding and learning about your codebase.
+- Embedding Notebooks is here. You can easily embed Notebooks from any Sourcegraph instance by embedding an iFrame anywhere, and setting `src` to `https://sourcegraph.com/notebooks/embed/<notebook_uuid/>`.
 
-## Code mmonitoring
+## Improved Code Intelligence performance for large repositories
 
-- Code monitoring has a new logs page (in Beta for all users) which shows the history and successes (or errors) of your code monitors
+We're introducing a new backend service, Rockskip, for search-based Code Intelligence, the symbol sidebar, and symbol search. Rockskip was architected with monorepos in mind, and it can index new commits much faster than the existing SQLite backend.
+
+From 3.38 onwards, Rockskip can be turned on for specific repositories and it will make the symbol sidebar and search-based code intelligence much faster. If you're interested in turning this on for your repos, read more in the [docs](https://docs.sourcegraph.com/code_intelligence/explanations/rockskip) or [contact us](mailto:support@sourcegraph.com).
+
+<img class="blog-image" title="Rockskip performance improvement" alt="Comparative chart showing impact of incremental indexing" src="https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/rockskip-chart.png">
+
+## Search your project dependencies for better incident resolution
+
+[Dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search) is a new beta feature that lets you search through the dependency packages of your repositories, and it is available for all users on 3.38. Looking into the code of your dependencies is particularly useful when you're trying to resolve incidents as fast as possible.
+
+Dependencies search currently supports NPM, and more dependency repositories are coming soon.
