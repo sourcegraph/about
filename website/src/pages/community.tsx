@@ -2,6 +2,7 @@ import { Link, PageProps } from 'gatsby'
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
+import { buttonStyle, buttonLocation } from '../tracking'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
@@ -29,6 +30,9 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <a
                             className="btn btn-primary"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
                             href={
                                 'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
                             }
@@ -233,6 +237,9 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-5 mt-3">
                     <a
                         className="btn btn-secondary"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
                         href={
                             'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
                         }
@@ -243,6 +250,9 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <br />
                     <a
                         className="btn btn-primary mt-3"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
                         href={'mailto:community@sourcegraph.com'}
                         title="Send us an email"
                     >

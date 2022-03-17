@@ -3,6 +3,7 @@ import React from 'react'
 import slugify from 'slugify'
 import { COLORS } from '../Jumbotron'
 import { ContentSection } from './ContentSection'
+import { buttonStyle, buttonLocation } from '../../tracking'
 
 interface Quote {
     quote: string
@@ -148,7 +149,14 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
         <div className="container text-center pt-6">
             <h3 className="display-3 font-weight-bold">{title}</h3>
             <p>{description}</p>
-            <Link className="btn btn-primary mx-2 mb-3" to={demoFormURL} title="Request a demo">
+            <Link
+                className="btn btn-primary mx-2 mb-3"
+                data-button-style={buttonStyle.primary}
+                data-button-location={buttonLocation.trySourcegraph}
+                data-button-type="cta"
+                to={demoFormURL}
+                title="Request a demo"
+            >
                 Schedule a demo
             </Link>
         </div>

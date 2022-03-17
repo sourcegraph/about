@@ -18,6 +18,7 @@ import { TemplateCodeBlock } from '../components/TemplateCodeBlock'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import CustomCarousel from '../components/CustomCarousel'
+import { buttonStyle, buttonLocation } from '../tracking'
 import BullsEyeArrowIcon from 'mdi-react/BullseyeArrowIcon'
 import RocketLaunchOutlineIcon from 'mdi-react/RocketLaunchOutlineIcon'
 import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
@@ -320,6 +321,9 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                                     className="btn btn-primary md-col-5 col-5"
                                     to="/contact/request-code-insights-demo"
                                     title="Request a Demo of Code Insights."
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.nav}
+                                    data-button-type="cta"
                                 >
                                     Request a demo
                                 </Link>
@@ -587,6 +591,9 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                             className="btn btn-primary col-4 mr-3"
                             to="/contact/request-code-insights-demo"
                             title="Request a Demo of Code Insights."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
                         >
                             Request a demo
                         </Link>

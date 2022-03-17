@@ -1,6 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { ContentSection } from './content/ContentSection'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 export const TrySourcegraph: React.FunctionComponent<{ demoFormURL?: string; className?: string }> = ({
     demoFormURL = 'https://info.sourcegraph.com/demo-request',
@@ -17,11 +18,25 @@ export const TrySourcegraph: React.FunctionComponent<{ demoFormURL?: string; cla
             </div>
             <div className="col-md-6 pt-3 align-self-center text-center">
                 {demoFormURL !== '' && (
-                    <Link className="btn btn-outline-secondary mx-2 mb-3" to={demoFormURL} title="Request a demo">
+                    <Link
+                        className="btn btn-outline-secondary mx-2 mb-3"
+                        data-button-style={buttonStyle.outline}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                        to={demoFormURL}
+                        title="Request a demo"
+                    >
                         Schedule a demo
                     </Link>
                 )}
-                <Link className="btn btn-primary mx-2 mb-3" to="/#get-started" title="Try Sourcegraph now">
+                <Link
+                    className="btn btn-primary mx-2 mb-3"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.trySourcegraph}
+                    data-button-type="cta"
+                    to="/get-started"
+                    title="Try Sourcegraph now"
+                >
                     Try Sourcegraph now
                 </Link>
             </div>

@@ -5,6 +5,7 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Layout from '../../components/Layout'
 import { BackButton } from '../../components/BackButton'
 import { Install } from '../../components/Install'
+import { buttonStyle, buttonLocation } from '../../tracking'
 import { BestForTitle, MostPopularBadge } from '.'
 
 import styles from './getStarted.module.scss'
@@ -62,12 +63,21 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => (
                     <div className="d-flex flex-column align-items-start">
                         <a
                             className="btn p-0 my-4 text-primary"
+                            data-button-style={buttonStyle.arrowWithText}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
                             href="https://info.sourcegraph.com/talk-to-a-developer"
                         >
                             Talk to an engineer <ArrowRightIcon />
                         </a>
 
-                        <a className="btn p-0 text-primary" href="https://docs.sourcegraph.com/">
+                        <a
+                            className="btn p-0 text-primary"
+                            data-button-style={buttonStyle.arrowWithText}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                            href="https://docs.sourcegraph.com/"
+                        >
                             Deploy to a server or cluster <ArrowRightIcon />
                         </a>
                     </div>
