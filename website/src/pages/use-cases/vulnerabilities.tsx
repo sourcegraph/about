@@ -220,7 +220,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 </div>
                 <div className="d-flex flex-column flex-lg-row my-6">
                     <div className="text-center">
-                        <TimerOutlineIcon className="mb-4" color='#00a1c7' size={40} />
+                        <TimerOutlineIcon className="mb-4" color="#00a1c7" size={40} />
                         <h4 className="font-weight-bold">Reduce time to discovery and resolution</h4>
                         <p>
                             Find every instance of a vulnerability and start remediating in minutes instead of days or
@@ -229,7 +229,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="mx-lg-7 text-center">
-                        <AutoFixIcon className="mb-4" color='#00a1c7' size={40} />
+                        <AutoFixIcon className="mb-4" color="#00a1c7" size={40} />
                         <h4 className="font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
                         <p>
                             Automate PRs to fix vulnerabilities across your entire codebase. Define changes
@@ -238,7 +238,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="text-center">
-                        <ShieldAlertOutlineIcon className="mb-4" color='#00a1c7' size={40} />
+                        <ShieldAlertOutlineIcon className="mb-4" color="#00a1c7" size={40} />
                         <h4 className="font-weight-bold">Alert for risky code changes & known vulnerabilities</h4>
                         <p>
                             Get on top of vulnerabilities by monitoring your repositories for commits with risky

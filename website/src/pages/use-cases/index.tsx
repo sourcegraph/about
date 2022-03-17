@@ -31,9 +31,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h5 className="font-weight-normal">
-                            See how customers use Sourcegraph to
-                        </h5>
+                        <h5 className="font-weight-normal">See how customers use Sourcegraph to</h5>
                         <div className="list-group">
                             <Link
                                 to="#find-and-fix-security-vulnerabilities"
