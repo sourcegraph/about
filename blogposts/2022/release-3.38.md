@@ -69,3 +69,9 @@ From 3.38 onwards, Rockskip can be turned on for specific repositories and it wi
 [Dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search) is a new beta feature that lets you search through the dependency packages of your repositories, and it is available for all users on 3.38. Looking into the code of your dependencies is particularly useful when you're trying to resolve incidents as fast as possible.
 
 Dependencies search currently supports NPM, and more dependency repositories are coming soon.
+
+## Configure custom language highlighting for file & extensions
+
+In the past, it was not possible to configure what language a file was highlighted as without sending a Pull Request to Sourcegraph to update our global configuration for language detection. Now, if you have specific extensions or files that you want highlighted as a particular language, you can easily configure that in the site settings. This allows you to get accurate highlighting for custom languages, for example.
+
+To learn more and set up custom language highlight, see our [documentation](https://docs.sourcegraph.com/dev/how-to/add_support_for_a_language#syntax-highlighting-support ).
