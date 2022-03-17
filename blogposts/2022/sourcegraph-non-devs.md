@@ -10,6 +10,8 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/non-devs/sou
 published: true
 ---
 
+![Search Notebooks in use](https://storage.googleapis.com/sourcegraph-assets/blog/non-devs/sourcegraph-non-devs.png)
+
 The difference between “I can figure this out in five minutes with a Sourcegraph search” versus “I can ask someone on another team in another timezone, and if they don’t know, follow up with a third person in a third timezone” is often the difference between taking care of something versus letting that task die on a todo list backlog.
 
 Sourcegraph is a powerful developer tool used by engineers at top companies, from Uber and Lyft to Amazon and SoFi. But as we've dogfooded our own product, we’ve also discovered it’s a powerful timesaver and cheat sheet for teams across an organization, such as Product Management, Business Operations, Analytics, and Marketing.
