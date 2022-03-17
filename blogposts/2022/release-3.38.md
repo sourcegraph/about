@@ -40,6 +40,13 @@ Any Sourcegraph instance can create up to two code insights, even without a tria
   ></iframe>
 </div>
 
-## Feature
+## Notebooks (Beta)
 
-Description
+Notebooks continue their rapid beta evolution with some exciting new features:
+- Copy any existing Notebook to your own Notebooks and modify it
+- A new symbol block type that lets you find any symbol in a repository and create a block that will display it no matter where it moves within its file
+- Code Intelligence is now available in Notebook blocks, making Notebooks even more valuable for onboarding and learning about your codebase
+- Embedding Notebooks is here. You can easily embed Notebooks from Sourcegraph.com or your on-prem instance by embedding an iFrame anywhere, and setting the `src` to https://sourcegraph.com/notebooks/embed/<notebook_uuid/>
+
+## Code mmonitoring
+- Code monitoring has a new logs page (in Beta for all users) which shows the history and successes (or errors) of your code monitors
