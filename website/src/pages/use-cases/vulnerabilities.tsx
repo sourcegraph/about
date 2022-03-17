@@ -24,7 +24,6 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        id: 0,
         buttonLabel: 'Find vulnerabilities',
         text: (
             <CarouselItem
@@ -43,7 +42,6 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        id: 1,
         buttonLabel: 'Automatically merge and deploy fixes',
         text: (
             <CarouselItem
@@ -61,7 +59,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 2,
         buttonLabel: 'Proactively monitor for the presence of vulnerable code',
         text: (
             <CarouselItem
@@ -79,7 +76,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 3,
         buttonLabel: 'Ensure removal of security vulnerabilities',
         text: (
             <CarouselItem
@@ -97,7 +93,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 4,
         buttonLabel: 'Bring peace of mind to customers',
         text: (
             <CarouselItem

@@ -9,7 +9,6 @@ interface CarouselItems {
 }
 
 interface CarouselItem {
-    id: number
     backgroundClass?: string
     buttonLabel: string
     headerClass: string

@@ -18,7 +18,6 @@ interface CarouselProps {
 }
 
 interface CarouselItem {
-    id: number
     backgroundClass?: string
     buttonLabel: string
     headerClass?: string
@@ -61,15 +60,15 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                     <ul className="ml-lg-4">
-                        {carouselItems.map(item => (
+                        {carouselItems.map((item, index) => (
                             <li
                                 className={
                                     item === carouselHook.carouselItems.currentItem
                                         ? 'custom-carousel-item active'
                                         : 'custom-carousel-item'
                                 }
-                                key={item.id}
-                                onClick={() => carouselHook.moveCarousel(item.id)}
+                                key={index}
+                                onClick={() => carouselHook.moveCarousel(index)}
                             >
                                 {item.buttonLabel}
                             </li>
@@ -94,11 +93,11 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             : classNames(carouselRightPanelStyles)
                     }
                 >
-                    {carouselItems.map(item => (
+                    {carouselItems.map((item, index) => (
                         <div
-                            key={item.id}
+                            key={index}
                             className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
-                            onMouseOver={() => carouselHook.moveCarousel(item.id)}
+                            onMouseOver={() => carouselHook.moveCarousel(index)}
                         >
                             {!autoAdvance && (
                                 <h1 className={autoAdvance ? 'mb-lg-4' : 'display-2 mb-lg-4'}>{item.buttonLabel}</h1>
@@ -115,10 +114,10 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                     <div>
-                        {carouselItems.map(item => (
+                        {carouselItems.map((item, index) => (
                             <CircleSmallIcon
                                 color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
-                                key={item.id}
+                                key={index}
                             />
                         ))}
                     </div>

@@ -26,7 +26,6 @@ import LighteningBoltOutlineIcon from 'mdi-react/LightningBoltOutlineIcon'
 
 const items = [
     {
-        id: 0,
         backgroundClass: '',
         buttonLabel: 'Track migrations, adoption, and deprecations',
         text: (
@@ -36,7 +35,6 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        id: 1,
         backgroundClass: '',
         buttonLabel: 'Detect and track versions of languages or packages',
         text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} />,
@@ -44,7 +42,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 2,
         backgroundClass: '',
         buttonLabel: 'Ensure removal of security vulnerabilities',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
@@ -52,7 +49,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 3,
         backgroundClass: '',
         buttonLabel: 'Understand code by team',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />,
@@ -60,7 +56,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 4,
         backgroundClass: '',
         buttonLabel: 'Track code smells and health',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} />,
@@ -68,7 +63,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 5,
         backgroundClass: '',
         buttonLabel: 'Visualize configurations and services',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
