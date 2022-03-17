@@ -13,6 +13,8 @@ import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
 
+import styles from './useCases.module.scss'
+
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
         <h2>{header}</h2>
@@ -188,7 +190,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
         className="use-cases-page"
-        heroAndHeaderClassName="use-cases-page__use-case-header navbar-light"
+        heroAndHeaderClassName={`${styles.useCaseHeader} navbar-light`}
         hero={
             <>
                 <div className="bg" />
@@ -232,7 +234,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 </div>
                 <div className="d-flex flex-column flex-lg-row my-6">
                     <div className="text-center">
-                        <TimerOutlineIcon className="icon mb-4" size={40} />
+                        <TimerOutlineIcon className="mb-4" color='#00a1c7' size={40} />
                         <h4 className="font-weight-bold">Reduce time to discovery and resolution</h4>
                         <p>
                             Find every instance of a vulnerability and start remediating in minutes instead of days or
@@ -241,7 +243,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="mx-lg-7 text-center">
-                        <AutoFixIcon className="icon mb-4" size={40} />
+                        <AutoFixIcon className="mb-4" color='#00a1c7' size={40} />
                         <h4 className="font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
                         <p>
                             Automate PRs to fix vulnerabilities across your entire codebase. Define changes
@@ -250,7 +252,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="text-center">
-                        <ShieldAlertOutlineIcon className="icon mb-4" size={40} />
+                        <ShieldAlertOutlineIcon className="mb-4" color='#00a1c7' size={40} />
                         <h4 className="font-weight-bold">Alert for risky code changes & known vulnerabilities</h4>
                         <p>
                             Get on top of vulnerabilities by monitoring your repositories for commits with risky
@@ -344,7 +346,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-onahau-fog py-8">
             <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} className="set-height" />
+                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} className={`${styles.setHeight}`} />
             </ContentSection>
         </div>
 

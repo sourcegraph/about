@@ -8,6 +8,8 @@ import { CustomerLogosSectionAnimated } from '../../components/product/CustomerL
 import { TrySourcegraph } from '../../components/TrySourcegraph'
 import { buttonStyle, buttonLocation } from '../../tracking'
 
+import styles from './useCases.module.scss'
+
 export default ((props: any) => (
     <Layout
         location={props.location}
@@ -17,9 +19,9 @@ export default ((props: any) => (
                 'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
-        heroAndHeaderClassName="use-cases-page__header-and-hero"
+        heroAndHeaderClassName={`${styles.headerAndHero}`}
         hero={
-            <div className="use-cases-page use-cases-page__hero container">
+            <div className="container">
                 <div className="row">
                     <div className="col-lg-7 mb-lg-6 mt-6">
                         <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
@@ -29,9 +31,9 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h2 className="font-weight-normal use-cases-page__see-how">
+                        <h5 className="font-weight-normal">
                             See how customers use Sourcegraph to
-                        </h2>
+                        </h5>
                         <div className="list-group">
                             <Link
                                 to="#find-and-fix-security-vulnerabilities"
