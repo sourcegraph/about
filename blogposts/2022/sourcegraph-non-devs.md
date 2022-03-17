@@ -5,8 +5,8 @@ author: Eric Brody-Moore, Joel Kwartler
 publishDate: 2022-02-17T00:00-07:00
 tags: [blog]
 slug: sourcegraph-for-non-devs
-heroImage:
-socialImage:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/non-devs/sourcegraph-non-devs.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/non-devs/sourcegraph-non-devs.png
 published: true
 ---
 
