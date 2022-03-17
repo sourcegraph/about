@@ -3,6 +3,7 @@ import { Link, PageProps } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
+import { buttonStyle, buttonLocation } from '../../tracking'
 import { BackButton } from './self-hosted'
 import { BestForTitle } from '.'
 
@@ -61,7 +62,13 @@ export const CloudPage: FunctionComponent<PageProps> = props => {
                             <div className={`bg-white rounded p-5 ${navigatedFromProduct ? 'mt-5' : 'mb-5'}`}>
                                 <h3 className="mb-3">Search open source code</h3>
                                 <p className="mb-5">No account required.</p>
-                                <a href="https://sourcegraph.com/search" className="btn btn-primary">
+                                <a
+                                    href="https://sourcegraph.com/search"
+                                    className="btn btn-primary"
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
                                     Start searching now <ArrowRightIcon />
                                 </a>
                             </div>

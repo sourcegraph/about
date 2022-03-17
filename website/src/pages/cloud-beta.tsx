@@ -4,6 +4,7 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import CustomCarousel from '../components/CustomCarousel'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 const items = [
     {
@@ -61,6 +62,9 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <a
                             className="btn btn-primary join-the-watilist-hero-btn"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
                             href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku"
                         >
                             Join the waitlist <ArrowRightIcon className="ml-1" />
@@ -118,7 +122,12 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
                             <li>Are ready to experience the power of code search</li>
                         </ul>
                     </div>
-                    <a className="btn btn-primary" href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku">
+                    <a
+                        className="btn btn-primary  "
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        href="https://share.hsforms.com/14OQ3RoPpQTOXvZlUpgx6-A1n7ku"
+                    >
                         Join the waitlist <ArrowRightIcon className="ml-1" />
                     </a>
                 </div>
