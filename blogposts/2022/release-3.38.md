@@ -23,6 +23,23 @@ From 3.38 onwards, Rockskip can be turned on for specific repositories and it wi
 
 ![Rockskip chart](https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/rockskip-chart.png)
 
+## Code Insights is generally available
+
+[Code Insights](https://docs.sourcegraph.com/code_insights) became generally available on March 10th. Code Insights reveals high-level information about your codebase, based on both how your code changes over time and its current state. You can learn more about why we built Code Insights in [the announcement from our CEO](https://about.sourcegraph.com/blog/announcing-code-insights/). 
+
+Any Sourcegraph instance can create up to two code insights, even without a trial or license. 
+
+<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+  <iframe
+    class="embed-responsive-item"
+    src="https://www.youtube-nocookie.com/embed/fMCUJQHfbUA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+    allowfullscreen="true"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    frameborder="0"
+    title="Sourcegraph Code Insights demo"
+  ></iframe>
+</div>
+
 ## Feature
 
 Description
