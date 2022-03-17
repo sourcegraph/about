@@ -6,10 +6,12 @@ authorUrl: https://handbook.sourcegraph.com/team/#andr%C3%A9-eleuterio
 publishDate: 2022-03-17T18:00+02:00
 tags: [blog]
 slug: real-weakest-link-in-software-supply-chain-security
-heroImage:
-socialImage:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png
 published: false
 ---
+
+![Vulnerabilities in open source packages](https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png)
 
 Open source code is both treasure chest and Pandora’s Box. Instead of starting from scratch when building an application or program, software developers can draw from third-party libraries and packages to jump-start development. These shortcuts come with risk though, as packages often contain yet more packages within, and these dependencies could harbor malicious code planted by bad actors, or vulnerabilities that leave your code open to exploitation. The [Lodash](https://dev.to/jmimoni/lodash-understanding-the-recent-vulnerability-and-how-we-can-rally-behind-packages-48kc) and [log4j](https://about.sourcegraph.com/blog/log4j-log4shell-0-day/) vulnerabilities are two examples from recent memory. According to the [2021 Open Source Security and Risk Analysis report](https://www.synopsys.com/blogs/software-security/open-source-trends-ossra-report/), “An alarming 91% of the codebases contained open source dependencies that had no development activity in the last two years—meaning no code improvements and no security fixes.” 85% of audited codebases contained open source dependencies more than _four years_ out of date.
 
@@ -52,8 +54,6 @@ Vulnerabilities in third-party code are inevitable, but stripping your codebase 
 ### How to fix it
 
 You can proactively reduce your dependencies by committing to a culture of code reuse in your engineering organization. Code reuse doesn’t just narrow the scope of your dependencies, but reduces time spent on writing duplicative code and streamlines maintenance of shared code. Code search can help engineers discover reliable, reusable code already in your codebase. Using code notebooks to document how and where code is used in your organization also makes it easier for developers to reuse shared libraries confidently, reducing your overall dependency burden.
-
-_TODO: Add summary with link to fixing vulnerabilities with Nutanix webinar when landing page is live_
 
 ### More posts like this
 
