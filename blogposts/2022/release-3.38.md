@@ -11,19 +11,19 @@ changelogItems:
   - description: Code Insights will now periodically clean up data series that are not in use. There is a 1 hour grace period where the series can be reattached to a view, after which all of the time series data and metadata will be deleted.
     url: https://github.com/sourcegraph/sourcegraph/pull/32094
     category: Code Insights
-  - description: "Code Insights critical telemetry total count now only includes insights that are not frozen (limited by trial mode restrictions)."
+  - description: 'Code Insights critical telemetry total count now only includes insights that are not frozen (limited by trial mode restrictions).'
     url: https://github.com/sourcegraph/sourcegraph/pull/32529
     category: Code Insights
-  - description: "Notebooks from private enterprise instances can now be embedded in external sites by enabling the `enable-embed-route` feature flag."
+  - description: 'Notebooks from private enterprise instances can now be embedded in external sites by enabling the `enable-embed-route` feature flag.'
     url: https://docs.sourcegraph.com/notebooks/notebook-embedding
     category: Notebooks
   - description: LSIF upload pages now include a section listing the reasons and retention policies resulting in an upload being retained and not expired.
     url: https://github.com/sourcegraph/sourcegraph/pull/30864
     category: Code Intelligence
-  - description: "Code monitoring now has a Logs tab enabled as a [Beta feature](https://docs.sourcegraph.com/admin/beta_and_experimental_features). This lets you see recent runs of your code monitors and determine if any notifications were sent or if there were any errors during the run."
+  - description: 'Code monitoring now has a Logs tab enabled as a [Beta feature](https://docs.sourcegraph.com/admin/beta_and_experimental_features). This lets you see recent runs of your code monitors and determine if any notifications were sent or if there were any errors during the run.'
     url: https://github.com/sourcegraph/sourcegraph/pull/32292
     category: Admin
-  - description: "Searching for the pattern `//` with regular expression search is now interpreted literally and will search for `//`. Previously, the `//` pattern was interpreted as our regular expression syntax `/<regexp>/` which would in turn be intrpreted as the empty string. Since searching for an empty string offers little practical utility, we now instead interpret `//` to search for its literal meaning in regular expression search."
+  - description: 'Searching for the pattern `//` with regular expression search is now interpreted literally and will search for `//`. Previously, the `//` pattern was interpreted as our regular expression syntax `/<regexp>/` which would in turn be intrpreted as the empty string. Since searching for an empty string offers little practical utility, we now instead interpret `//` to search for its literal meaning in regular expression search.'
     url: https://github.com/sourcegraph/sourcegraph/pull/31520
     category: Search
 ---
