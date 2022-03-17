@@ -74,4 +74,4 @@ Dependencies search currently supports NPM, and more dependency repositories are
 
 In the past, it was not possible to configure what language a file was highlighted as without sending a Pull Request to Sourcegraph to update our global configuration for language detection. Now, if you have specific extensions or files that you want highlighted as a particular language, you can easily configure that in the site settings. This allows you to get accurate highlighting for custom languages, for example.
 
-To learn more and set up custom language highlight, see our [documentation](https://docs.sourcegraph.com/dev/how-to/add_support_for_a_language#syntax-highlighting-support ).
+To learn more and set up custom language highlight, see our [documentation](https://docs.sourcegraph.com/dev/how-to/add_support_for_a_language#syntax-highlighting-support).
