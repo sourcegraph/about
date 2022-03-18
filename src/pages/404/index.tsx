@@ -13,7 +13,7 @@ const Custom404: React.FunctionComponent = () => (
                     <SignDirectionIcon />
                 </div>
             </div>
-            
+
             <h1>404: Not Found</h1>
             <p>Sorry, the requested URL was not found.</p>
         </div>

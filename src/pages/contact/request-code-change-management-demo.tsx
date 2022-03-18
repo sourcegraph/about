@@ -17,7 +17,6 @@ const Contact: FunctionComponent = () => {
                 title,
                 description,
             }}
-            scripts={[{ src: '//js.hsforms.net/forms/v2.js', strategy: 'beforeInteractive' }]}
         >
             <div className="bg-white text-dark">
                 <div className="container-lg py-6 px-5">

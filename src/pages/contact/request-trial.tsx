@@ -13,7 +13,6 @@ const Contact: FunctionComponent = () => {
             meta={{
                 description: 'Get your team started with a free trial of Sourcegraph.',
             }}
-            scripts={[{ src: '//js.hsforms.net/forms/v2.js', strategy: 'beforeInteractive' }]}
         >
             <div className="form-page bg-white text-dark">
                 <div className="container-xl pt-5 px-5">

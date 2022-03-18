@@ -6,6 +6,7 @@ export { Jumbotron } from './Jumbotron'
 export { RequestDemoForm } from './RequestDemoForm'
 export { TrySourcegraph } from './TrySourcegraph'
 export { Install } from './Install'
+export { EmbeddedHubSpot } from './HubSpot'
 
 // Actions
 export {

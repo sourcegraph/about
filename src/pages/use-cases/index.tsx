@@ -37,9 +37,7 @@ const UseCases: React.FunctionComponent = () => (
                     </div>
 
                     <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h2 className={`${styles.seeHow} font-weight-normal`}>
-                            See how customers use Sourcegraph to
-                        </h2>
+                        <h2 className={`${styles.seeHow} font-weight-normal`}>See how customers use Sourcegraph to</h2>
 
                         <div className="list-group">
                             {features.map((feature: string) => (
@@ -75,9 +73,7 @@ const UseCases: React.FunctionComponent = () => (
                             <li>Reduce time to recovery with a single search</li>
                             <li>
                                 Automate fixing, merging, and deploying changes with{' '}
-                                <Link href="/batch-changes/">
-                                    Batch Changes
-                                </Link>
+                                <Link href="/batch-changes/">Batch Changes</Link>
                             </li>
                             <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                         </ul>
@@ -97,7 +93,10 @@ const UseCases: React.FunctionComponent = () => (
                             </p>
                             <footer className="blockquote-footer">David Haynes, Security Engineer at Cloudflare</footer>
                             <div className="d-flex justify-content-center my-4">
-                                <Link href="/case-studies/cloudflare-accelerates-debugging-and-improves-security" passHref={true}>
+                                <Link
+                                    href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
+                                    passHref={true}
+                                >
                                     <a href="#none" className="btn">
                                         <img
                                             src="/external-logos/cloudflare-color-logo.svg"

@@ -9,15 +9,18 @@ interface EmbeddedHubSpotProps {
     [index: string]: string
 }
 
-const EmbeddedHubSpot: FunctionComponent<EmbeddedHubSpotProps> = ({ portalId, formId, targetId, region }) => (
+export const EmbeddedHubSpot: FunctionComponent<EmbeddedHubSpotProps> = ({ portalId, formId, targetId, region }) => (
     <Script id={targetId}>{`
-        window.hbspt.forms.create({
-            portalId: '${portalId}',
-            formId: '${formId}',
-            target: '${targetId}',
-            region: '${region ?? ''}',
+        const script = document.createElement('script')
+        script.src = '//js.hsforms.net/forms/v2.js'
+        document.head.append(script)
+        script.addEventListener('load', () => {
+            window.hbspt.forms.create({
+                portalId: '${portalId}',
+                formId: '${formId}',
+                target: '${targetId}',
+                region: '${region ?? ''}',
+            })
         })
     `}</Script>
 )
-
-export default EmbeddedHubSpot
