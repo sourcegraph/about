@@ -2,13 +2,11 @@ import React, { FunctionComponent } from 'react'
 import { PageProps } from 'gatsby'
 
 import Layout from '../../../components/Layout'
-// TODO: Add when #5179 is merged
-// import { useHubSpot } from '../../../hooks/hubSpot'
+import { useHubSpot } from '../../../hooks/hubSpot'
 import styles from './index.module.scss'
 
 const ContinuousDevOnboarding: FunctionComponent<PageProps> = props => {
-    // TODO: Add when #5179 is merged
-    // useHubSpot('na1', '2762526', '35e18409-5be7-4fcb-aa57-8152b34eef66', `form`, true)
+    useHubSpot('na1', '2762526', '35e18409-5be7-4fcb-aa57-8152b34eef66', `form`, true)
 
     return (
         <Layout
@@ -19,6 +17,7 @@ const ContinuousDevOnboarding: FunctionComponent<PageProps> = props => {
                     'Continuous onboarding shifts traditional onboarding practices to cultivate an environment that enables developers to build themselves as flexible and resilient engineers.',
             }}
             hero={<div className={styles.hero} />}
+            className="bg-white"
         >
             <div className="container py-lg-6 py-4">
                 <div className="row">
@@ -60,12 +59,7 @@ const ContinuousDevOnboarding: FunctionComponent<PageProps> = props => {
                         </ul>
                     </div>
 
-                    <div
-                        className="col-lg-6"
-                        // TODO: This is temporary as a visual guide.
-                        // Remove when #5179 is merged
-                        style={{ height: 725, backgroundColor: '#eee' }}
-                    >
+                    <div className={`${styles.formContainer} col-lg-6 p-6 mt-5 mt-lg-0`}>
                         <div id="form" />
                     </div>
                 </div>

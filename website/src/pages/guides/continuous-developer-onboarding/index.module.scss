@@ -1,3 +1,5 @@
+@import '@styles/colors';
+
 .hero {
     background-image: url('/guides/dev-onboarding-hero-mobile.png');
     background-repeat: no-repeat;
@@ -8,4 +10,8 @@
         background-image: url('/guides/dev-onboarding-hero.png');
         height: 433px;
     }
+}
+
+.formContainer {
+    background: $wild-sand;
 }
