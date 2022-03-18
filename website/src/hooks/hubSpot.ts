@@ -65,7 +65,6 @@ interface HubSpotForm {
 }
 
 function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
-
     // Load HubSpot script
     const script = document.createElement('script')
     script.src = '//js.hsforms.net/forms/v2.js'
