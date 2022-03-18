@@ -1,5 +1,4 @@
 import { Link, PageProps } from 'gatsby'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import AutoFixIcon from 'mdi-react/AutoFixIcon'
 import ShieldAlertOutlineIcon from 'mdi-react/ShieldAlertOutlineIcon'
 import TimerOutlineIcon from 'mdi-react/TimerOutlineIcon'
@@ -314,29 +313,17 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         </div>
 
         <ContentSection>
-            <div className="row mb-lg-6 mt-lg-0 mt-5 justify-content-center">
-                <div className="d-flex flex-column w-lg-75 p-lg-7 mx-lg-3 mx-2 my-5">
-                    <h1 className="font-weight-bold text-lg-center text-left">
-                        How Sourcegraph helps you find and fix vulnerabilities
-                    </h1>
-                    <p className="mt-3">
-                        With Sourcegraph, engineers can find all instances of a vulnerability, remediate it across their
-                        entire codebase, monitor for future occurrences, and visualize their impact. No more manual
-                        hunting for affected code through repository after repository, while regulators and customers
-                        demand speed.
-                    </p>
+            <div className="row mt-lg-0 mt-5 justify-content-center">
+                <div className="d-flex flex-column mt-lg-7 mt-4 w-100 mx-3">
+                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6">How Sourcegraph helps</h1>
                 </div>
-                <CustomCarousel items={items} autoAdvance={true} />
+                <CustomCarousel items={items} autoAdvance={true} hideCarouselNav={true} smallPanel={true} />
             </div>
         </ContentSection>
 
         <div className="bg-gradient-onahau-fog py-8">
             <ContentSection>
-                <QuoteCarousel
-                    items={quoteCarouselItems}
-                    autoAdvance={true}
-                    className="height-lg-450 height-md-450 height-sm-400"
-                />
+                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} />
             </ContentSection>
         </div>
 

@@ -15,6 +15,8 @@ interface CarouselProps {
     previousItem?: CarouselItem
     currentItemIndex?: number
     autoAdvance?: boolean
+    hideCarouselNav?: boolean
+    smallPanel?: boolean
 }
 
 interface CarouselItem {
@@ -27,7 +29,9 @@ interface CarouselItem {
 
 const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const carouselMainStyles = 'd-flex flex-wrap'
-    const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-6 ml-md-6 px-lg-0 d-flex align-items-center'
+    const carouselRightPanelStyles =
+        'col-lg-6 col-md-8 col-sm-12 mt-lg-6 ml-md-6 px-lg-0 d-flex align-items-center align-items-lg-start'
+    const autoAdvanceCarouselNavStyles = 'col-md-2 m-0 px-0 my-lg-3 col-lg-5'
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
@@ -38,19 +42,27 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             {title && <h2 className="carousel-title w-50 font-weight-bold mt-lg-3 ml-lg-6 mb-5">{title}</h2>}
             <div
                 className={
-                    autoAdvance
+                    autoAdvance && props.smallPanel
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between height-lg-450 height-md-750 height-sm-auto'
+                              'justify-content-between height-lg-450 height-md-700 height-sm-auto'
+                          )
+                        : autoAdvance
+                        ? classNames(
+                              carouselMainStyles,
+                              currentCarousel.currentItem?.backgroundClass,
+                              'justify-content-between height-lg-450 height-md-800 height-sm-auto'
                           )
                         : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-8 py-lg-8')
                 }
             >
                 <div
                     className={
-                        carouselHook.autoAdvance
-                            ? 'carousel-nav col-md-2 m-0 px-0 my-lg-3 col-lg-5'
+                        carouselHook.autoAdvance && props.hideCarouselNav
+                            ? classNames(autoAdvanceCarouselNavStyles, 'carousel-nav')
+                            : autoAdvance
+                            ? classNames(autoAdvanceCarouselNavStyles)
                             : 'carousel-nav ml-lg-7 col-lg-4 ml-md-5'
                     }
                 >
@@ -88,8 +100,10 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 </div>
                 <div
                     className={
-                        autoAdvance
-                            ? classNames(carouselRightPanelStyles, 'height-lg-auto height-md-auto height-sm-500')
+                        autoAdvance && props.smallPanel
+                            ? classNames(carouselRightPanelStyles, 'height-lg-500 height-md-auto height-sm-350')
+                            : autoAdvance
+                            ? classNames(carouselRightPanelStyles, 'height-lg-500 height-md-auto height-sm-550')
                             : classNames(carouselRightPanelStyles)
                     }
                 >

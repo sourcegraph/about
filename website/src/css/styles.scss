@@ -364,6 +364,11 @@ $heights: 100, 200, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800;
     .height-#{$height} {
         height: #{$height}px;
     }
+    @media (min-width: 1024px) {
+        .height-lg-#{$height} {
+            height: #{$height}px;
+        }
+    }
     @media (min-width: 768px) {
         .height-md-#{$height} {
             height: #{$height}px;
@@ -386,6 +391,11 @@ $heights: 100, 200, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800;
 }
 @media (max-width: 550px) {
     .height-sm-auto {
+        height: auto;
+    }
+}
+@media (min-width: 1024px) {
+    .height-lg-auto {
         height: auto;
     }
 }

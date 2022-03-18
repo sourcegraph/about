@@ -1,9 +1,10 @@
-import { useCarousel } from '../hooks/carousel'
-import classNames from 'classnames'
+import { useCarousel } from '../../hooks/carousel'
 import React, { FunctionComponent, ReactFragment, ReactNode } from 'react'
-import { BlockquoteWithLogo } from './Blockquote'
+import { BlockquoteWithLogo } from '../Blockquote'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+
+import styles from './QuoteCarousel.module.scss'
 
 interface Blockquote {
     quote: string
@@ -21,16 +22,14 @@ interface QuoteCarouselProps {
     previousItem?: ReactNode
     currentItemIndex?: number
     autoAdvance?: boolean
-    className?: string
 }
 
-export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, autoAdvance, className }) => {
+export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, autoAdvance }) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as Blockquote[]
-    const carouselStyles = 'd-flex flex-lg-row flex-column justify-content-center text-center'
 
     return (
-        <div className="d-flex flex-lg-row flex-column justify-content-center text-center height-lg-450 height-md-450 height-sm-400">
+        <div className="d-flex flex-lg-row flex-column justify-content-center text-center height-lg-450 height-md-450 height-sm-550 position-relative">
             <div className="d-lg-flex d-none align-items-center">
                 <ArrowLeftIcon className="mr-4" onClick={() => carouselHook.moveCarousel('decrement')} />
             </div>
@@ -55,7 +54,9 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
             <div className="d-lg-flex d-none align-items-center">
                 <ArrowRightIcon className="ml-4" onClick={() => carouselHook.moveCarousel()} />
             </div>
-            <div className="d-lg-none d-flex justify-content-center mt-4">
+            <div
+                className={`d-lg-none d-flex justify-content-center mt-4 w-100 position-absolute ${styles.positionNav}`}
+            >
                 <div>
                     <ArrowLeftIcon className="mr-4" onClick={() => carouselHook.moveCarousel('decrement')} />
                 </div>
