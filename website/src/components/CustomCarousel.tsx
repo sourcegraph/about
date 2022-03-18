@@ -31,7 +31,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const carouselMainStyles = 'd-flex flex-wrap'
     const carouselRightPanelStyles =
         'col-lg-6 col-md-8 col-sm-12 mt-lg-6 ml-md-6 px-lg-0 d-flex align-items-center align-items-lg-start'
-    const autoAdvanceCarouselNavStyles = 'col-md-2 m-0 px-0 my-lg-3 col-lg-5'
+    const autoAdvanceCarouselNavStyles = 'col-md-2 m-0 px-0 my-lg-3 col-lg-5 d-flex flex-column'
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
@@ -46,13 +46,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between height-lg-450 height-md-700 height-sm-auto'
+                              'justify-content-between height-x-lg-450 height-lg-700 height-md-700 height-sm-auto'
                           )
                         : autoAdvance
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between height-lg-450 height-md-800 height-sm-auto'
+                              'justify-content-between height-x-lg-450 height-lg-850 height-md-850 height-sm-auto'
                           )
                         : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-8 py-lg-8')
                 }
@@ -71,7 +71,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
-                    <ul className="ml-lg-4">
+                    <ul className="ml-lg-5 mb-0">
                         {carouselItems.map((item, index) => (
                             <li
                                 className={
@@ -101,9 +101,15 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <div
                     className={
                         autoAdvance && props.smallPanel
-                            ? classNames(carouselRightPanelStyles, 'height-lg-500 height-md-auto height-sm-350')
+                            ? classNames(
+                                  carouselRightPanelStyles,
+                                  'height-x-lg-500 height-lg-500 height-md-350 height-sm-350'
+                              )
                             : autoAdvance
-                            ? classNames(carouselRightPanelStyles, 'height-lg-500 height-md-auto height-sm-550')
+                            ? classNames(
+                                  carouselRightPanelStyles,
+                                  'height-x-lg-500 height-lg-500 height-md-500 height-sm-550'
+                              )
                             : classNames(carouselRightPanelStyles)
                     }
                 >
