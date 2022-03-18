@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import { TrySourcegraph } from '../components/TrySourcegraph'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
     <video
@@ -54,7 +55,14 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             Keep your code up to date, fix critical security issues, and pay down tech debt across all
                             of your repositories with Batch Changes.
                         </p>
-                        <Link className="btn btn-primary" to={batchChangesDemoFormURL} title="Request a demo">
+                        <Link
+                            className="btn btn-primary"
+                            to={batchChangesDemoFormURL}
+                            title="Request a demo"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                        >
                             Request a demo
                         </Link>
                     </div>

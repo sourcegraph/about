@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import { Features, PricingPlan } from '../components/pricing/PricingPlan'
 import { PricingPlanFeature } from '../components/pricing/PricingPlanFeature'
 import { PricingPlanProperty } from '../components/pricing/PricingPlanProperty'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 const DESCRIPTION =
     'Sourcegraph is always free for public and open source code. Start using it for private code with a paid plan.'
@@ -255,7 +256,14 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
-                        <Link className="btn btn-primary mx-2 mb-3" to="../#get-started" title="Try Sourcegraph now">
+                        <Link
+                            className="btn btn-primary mx-2 mb-3"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
+                            to="/get-started"
+                            title="Try Sourcegraph now"
+                        >
                             Try Sourcegraph now
                         </Link>
                     </div>

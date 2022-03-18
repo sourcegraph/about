@@ -1,6 +1,7 @@
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import React, { FunctionComponent } from 'react'
 import { Install } from './Install'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 export const SelfHostedSection: FunctionComponent = () => (
     <div className="self-hosted-section bg-gradient-green-blue" id="self-hosted-section">
@@ -14,7 +15,13 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <Install />
 
                     <p>
-                        <a className="d-inline-flex mt-5 font-weight-bold" href="https://docs.sourcegraph.com">
+                        <a
+                            className="d-inline-flex mt-5 font-weight-bold"
+                            href="https://docs.sourcegraph.com"
+                            data-button-style={buttonStyle.arrowWithText}
+                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
+                        >
                             Deploy to a server or cluster <ArrowRightIcon className="ml-1" />
                         </a>
                     </p>
@@ -24,6 +31,9 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <a
                         className="btn btn-primary d-inline-flex"
                         href="https://info.sourcegraph.com/talk-to-a-developer"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
                     >
                         Talk to an engineer <ArrowRightIcon className="ml-1" />
                     </a>
@@ -39,7 +49,13 @@ export const SelfHostedSection: FunctionComponent = () => (
                         <li>Free trial for enterprise features</li>
                     </ul>
 
-                    <a className="d-inline-flex font-weight-bold" href="/get-started">
+                    <a
+                        className="d-inline-flex font-weight-bold"
+                        href="/get-started"
+                        data-button-style={buttonStyle.arrowWithText}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                    >
                         Learn about self-hosted vs.Cloud features <ArrowRightIcon className="ml-1" />
                     </a>
                 </div>

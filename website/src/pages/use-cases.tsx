@@ -6,6 +6,7 @@ import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
 import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
 import { TrySourcegraph } from '../components/TrySourcegraph'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 export default ((props: any) => (
     <Layout
@@ -35,22 +36,46 @@ export default ((props: any) => (
                             <Link
                                 to="#find-and-fix-security-vulnerabilities"
                                 className="list-group-item list-group-item-action"
+                                data-button-style={buttonStyle.arrowWithText}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
                             >
                                 Find and fix security vulnerabilities <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                             <Link
                                 to="#accelerate-developer-onboarding"
                                 className="list-group-item list-group-item-action"
+                                data-button-style={buttonStyle.arrowWithText}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
                             >
                                 Accelerate developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#resolve-incidents-faster" className="list-group-item list-group-item-action">
+                            <Link
+                                to="#resolve-incidents-faster"
+                                className="list-group-item list-group-item-action"
+                                data-button-style={buttonStyle.arrowWithText}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
                                 Resolve incidents faster <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#streamline-code-reuse" className="list-group-item list-group-item-action">
+                            <Link
+                                to="#streamline-code-reuse"
+                                className="list-group-item list-group-item-action"
+                                data-button-style={buttonStyle.arrowWithText}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
                                 Streamline code reuse <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
-                            <Link to="#boost-code-health" className="list-group-item list-group-item-action">
+                            <Link
+                                to="#boost-code-health"
+                                className="list-group-item list-group-item-action"
+                                data-button-style={buttonStyle.arrowWithText}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
                                 Boost code health <ArrowRightIcon className="icon-inline ml-1" />
                             </Link>
                         </div>
@@ -86,6 +111,9 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
@@ -157,6 +185,9 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
@@ -195,6 +226,9 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
@@ -262,6 +296,9 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
@@ -299,6 +336,9 @@ export default ((props: any) => (
                             to="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
+                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
