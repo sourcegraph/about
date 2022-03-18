@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 declare global {
     interface Window {
@@ -65,10 +65,12 @@ interface HubSpotForm {
 }
 
 function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
+
+    // Load HubSpot script
     const script = document.createElement('script')
     script.src = '//js.hsforms.net/forms/v2.js'
     const hubspot = document.getElementById(targetId)
-    hubspot!.appendChild(script)
+    hubspot?.appendChild(script)
 
     const getAllCookies: { [index: string]: string } = document.cookie
         .split(';')
@@ -117,18 +119,12 @@ function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, o
 }
 
 export const useHubSpot = (
-    initialRegion: string,
-    initialPortalId: string,
-    initialFormId: string,
-    initialTargetId: string,
-    initialChiliPiper: boolean
+    region: string,
+    portalId: string,
+    formId: string,
+    targetId: string,
+    chiliPiper: boolean
 ): void => {
-    const [region, setRegion] = useState<string>(initialRegion)
-    const [portalId, setPortalId] = useState<string>(initialPortalId)
-    const [formId, setFormId] = useState<string>(initialFormId)
-    const [targetId, setTargetId] = useState<string>(initialTargetId)
-    const [chiliPiper, setChiliPiper] = useState<boolean>(initialChiliPiper)
-
     useEffect(() => {
         createHubSpotForm({
             region,
@@ -138,7 +134,12 @@ export const useHubSpot = (
         })
 
         if (chiliPiper) {
-            // Chili Piper script
+            // Load Chili Piper script
+            const script = document.createElement('script')
+            script.src = '//js.chilipiper.com/marketing.js'
+            const chiliScript = document.getElementById(targetId)
+            chiliScript?.appendChild(script)
+
             const cpTenantDomain = 'sourcegraph'
             const cpRouterName = 'contact-sales'
             window.addEventListener('message', event => {
