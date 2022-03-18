@@ -250,7 +250,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             <ContentSection className="my-7">
                 <div className="row flex-column flex-lg-row align-items-center justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 font-weight-bold">
+                        <h1 className="mb-4 font-weight-light">
                             Identifying & resolving security vulnerabilities is painful
                         </h1>
                         <p>
@@ -287,7 +287,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                 100% certainty.
                             </p>
                             <h6>Learn how to use Sourcegraph to identify and resolve every instance of log4j.</h6>
-                            <Link to="/blog/log4j-log4shell-0-day">Read the blog post.</Link>
+                            <Link className="font-weight-bold" to="/blog/log4j-log4shell-0-day">
+                                Read the blog post.
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -297,7 +299,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="row mt-lg-0 mt-5 justify-content-center">
                 <div className="d-flex flex-column mt-lg-7 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6">How Sourcegraph helps</h1>
+                    <h1 className="font-weight-light text-lg-center text-left mb-lg-6 mb-md-6">
+                        How Sourcegraph helps
+                    </h1>
                 </div>
                 <CustomCarousel items={items} autoAdvance={true} hideCarouselNav={true} smallPanel={true} />
             </div>
