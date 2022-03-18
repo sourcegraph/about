@@ -85,7 +85,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
             <div className="text-center">
                 <div className="container py-8 mw-650">
                     <h2 className="font-weight-bold">
-                        Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk!
+                        Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.
                     </h2>
 
                     <div className="mt-5 mw-400 mx-auto">
