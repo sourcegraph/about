@@ -356,3 +356,13 @@ table {
         text-decoration: none;
     }
 }
+
+// Custom max widths
+$maxWidths: 100, 200, 300, 350, 400, 450, 500, 550, 600, 650, 700;
+
+// Custom max-width utility classes
+@each $maxWidth in $maxWidths {
+    .mw-#{$maxWidth} {
+        max-width: #{$maxWidth}px;
+    }
+}
