@@ -26,8 +26,8 @@ interface CarouselItem {
 }
 
 const CustomCarousel: FunctionComponent<CarouselProps> = props => {
-    const carouselMainStyles = 'd-flex flex-wrap flex-lg-row flex-column'
-    const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-6 ml-md-6 px-lg-0'
+    const carouselMainStyles = 'd-flex flex-wrap'
+    const carouselRightPanelStyles = 'col-lg-6 col-md-8 col-sm-12 mt-lg-6 ml-md-6 px-lg-0 d-flex align-items-center'
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
@@ -42,7 +42,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between set-height'
+                              'justify-content-between height-lg-450 height-md-750 height-sm-auto'
                           )
                         : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-8 py-lg-8')
                 }
@@ -55,7 +55,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     }
                 >
                     <ArrowUpIcon
-                        className="carousel-nav ml-lg-6 mb-4"
+                        className="ml-lg-6 mb-4 d-lg-flex d-md-flex d-none"
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
@@ -75,7 +75,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         ))}
                     </ul>
                     <ArrowDownIcon
-                        className="carousel-nav ml-lg-6 mt-4"
+                        className="ml-lg-6 mt-4 d-lg-flex d-md-flex d-none"
                         onClick={() => carouselHook.moveCarousel()}
                         color={
                             carouselHook.autoAdvance && carouselHook.isAdvancing
@@ -89,7 +89,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <div
                     className={
                         autoAdvance
-                            ? classNames(carouselRightPanelStyles, 'set-height-panel')
+                            ? classNames(carouselRightPanelStyles, 'height-lg-auto height-md-auto height-sm-500')
                             : classNames(carouselRightPanelStyles)
                     }
                 >

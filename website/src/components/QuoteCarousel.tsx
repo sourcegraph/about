@@ -30,7 +30,7 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
     const carouselStyles = 'd-flex flex-lg-row flex-column justify-content-center text-center'
 
     return (
-        <div className={className ? classNames(carouselStyles, className) : classNames(carouselStyles)}>
+        <div className="d-flex flex-lg-row flex-column justify-content-center text-center height-lg-450 height-md-450 height-sm-400">
             <div className="d-lg-flex d-none align-items-center">
                 <ArrowLeftIcon className="mr-4" onClick={() => carouselHook.moveCarousel('decrement')} />
             </div>

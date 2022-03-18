@@ -14,10 +14,3 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.set-height {
-    height: 360px;
-
-    @media only screen and (max-width: 768px) {
-        height: 450px;
-    }
-}

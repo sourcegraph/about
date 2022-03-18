@@ -332,7 +332,11 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-onahau-fog py-8">
             <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} className={`${styles.setHeight}`} />
+                <QuoteCarousel
+                    items={quoteCarouselItems}
+                    autoAdvance={true}
+                    className="height-lg-450 height-md-450 height-sm-400"
+                />
             </ContentSection>
         </div>
 
