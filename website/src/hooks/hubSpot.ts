@@ -64,20 +64,39 @@ interface HubSpotForm {
     onFormReady?: ($form: HTMLFormElement) => void
 }
 
-function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
-    // Load HubSpot script
-    const script = document.createElement('script')
-    script.src = '//js.hsforms.net/forms/v2.js'
-    const hubspot = document.getElementById(targetId)
-    hubspot?.appendChild(script)
+const loadHubSpotScript = (): HTMLScriptElement => {
+    const hubSpotScript = '//js.hsforms.net/forms/v2.js'
+    const script = document.querySelector(`script[src="${hubSpotScript}"]`)
+    const scriptElement = document.createElement('script')
+    scriptElement.src = hubSpotScript
+    if (!script) {        
+        document.head.append(scriptElement)
+        return scriptElement
+    } else {        
+        return script
+    }
+}
 
+const loadChiliPiperScript = (cb: Function): void => {
+    const chiliPiperScript = '//js.chilipiper.com/marketing.js'
+    const script = document.querySelector(`script[src="${chiliPiperScript}"]`)
+    const scriptElement = document.createElement('script')
+    scriptElement.src = chiliPiperScript
+    if (!script) {
+        document.head.append(scriptElement)
+        cb()
+    }
+}
+
+function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
     const getAllCookies: { [index: string]: string } = document.cookie
-        .split(';')
-        .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
+    .split(';')
+    .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
     const anonymousId = getAllCookies.sourcegraphAnonymousUid
     const firstSourceURL = getAllCookies.sourcegraphSourceUrl
-
-    script.addEventListener('load', () => {
+    
+    const script = loadHubSpotScript()
+    script?.addEventListener('load', () => {
         ;(window as Window).hbspt?.forms.create({
             region,
             portalId,
@@ -133,27 +152,23 @@ export const useHubSpot = (
         })
 
         if (chiliPiper) {
-            // Load Chili Piper script
-            const script = document.createElement('script')
-            script.src = '//js.chilipiper.com/marketing.js'
-            const chiliScript = document.getElementById(targetId)
-            chiliScript?.appendChild(script)
-
-            const cpTenantDomain = 'sourcegraph'
-            const cpRouterName = 'contact-sales'
-            window.addEventListener('message', event => {
-                const data = event.data as MessageEventData
-                if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
-                    const lead = data.data.reduce(
-                        (object, item) => Object.assign(object, { [item.name]: item.value }),
-                        {}
-                    )
-                    const chilipiper = window.ChiliPiper
-                    chilipiper?.submit(cpTenantDomain, cpRouterName, {
-                        map: true,
-                        lead,
-                    })
-                }
+            loadChiliPiperScript(() => {
+                const cpTenantDomain = 'sourcegraph'
+                const cpRouterName = 'contact-sales'
+                window.addEventListener('message', event => {
+                    const data = event.data as MessageEventData
+                    if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
+                        const lead = data.data.reduce(
+                            (object, item) => Object.assign(object, { [item.name]: item.value }),
+                            {}
+                        )
+                        const chilipiper = window.ChiliPiper
+                        chilipiper?.submit(cpTenantDomain, cpRouterName, {
+                            map: true,
+                            lead,
+                        })
+                    }
+                })
             })
         }
     }, [chiliPiper, portalId, formId, targetId])
