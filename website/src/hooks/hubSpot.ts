@@ -69,10 +69,10 @@ const loadHubSpotScript = (): HTMLScriptElement => {
     const script = document.querySelector(`script[src="${hubSpotScript}"]`)
     const scriptElement = document.createElement('script')
     scriptElement.src = hubSpotScript
-    if (!script) {        
+    if (!script) {
         document.head.append(scriptElement)
         return scriptElement
-    } else {        
+    } else {
         return script
     }
 }
@@ -90,11 +90,11 @@ const loadChiliPiperScript = (cb: Function): void => {
 
 function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
     const getAllCookies: { [index: string]: string } = document.cookie
-    .split(';')
-    .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
+        .split(';')
+        .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
     const anonymousId = getAllCookies.sourcegraphAnonymousUid
     const firstSourceURL = getAllCookies.sourcegraphSourceUrl
-    
+
     const script = loadHubSpotScript()
     script?.addEventListener('load', () => {
         ;(window as Window).hbspt?.forms.create({
