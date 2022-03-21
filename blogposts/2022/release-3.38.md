@@ -59,8 +59,6 @@ We're introducing a new backend service, Rockskip, for search-based Code Intelli
 
 From 3.38 onwards, Rockskip can be turned on for specific repositories and it will make the symbol sidebar and search-based Code Intelligence much faster. If you're interested in turning this on for your repositories, read more in the [Rockslip docs](https://docs.sourcegraph.com/code_intelligence/explanations/rockskip) or [contact us](mailto:support@sourcegraph.com).
 
-<img class="blog-image" title="Rockskip performance improvement" alt="Comparative chart showing impact of incremental indexing" src="https://storage.googleapis.com/sourcegraph-assets/docs/images/code-intelligence/rockskip-chart.png">
-
 ## Search your project dependencies for better incident resolution
 
 [Dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search) is a new beta feature that lets you search through the dependency packages of your repositories. Looking into the code of your dependencies is particularly useful when you're trying to resolve incidents as fast as possible.
