@@ -20,7 +20,7 @@ changelogItems:
   - description: 'Code monitoring now has a Logs tab enabled as a Beta feature. This lets you see recent runs of your code monitors and determine if any notifications were sent or if there were any errors during the run.'
     url: https://github.com/sourcegraph/sourcegraph/pull/32292
     category: Admin
-  - description: 'Searching for the pattern `//` with regular expression search is now interpreted literally and will search for `//`. Previously, the `//` pattern was interpreted as our regular expression syntax `/<regexp>/` which would in turn be interpreted as the empty string. Since searching for an empty string isn't very useful, we now instead interpret `//` as searching for its literal meaning in regular expression search.'
+  - description: 'Searching for the pattern `//` with regular expression search is now interpreted literally and will search for `//`. Previously, the `//` pattern was interpreted as our regular expression syntax `/<regexp>/` which would in turn be interpreted as the empty string. Since searching for an empty string is not very useful, we now instead interpret `//` as searching for its literal meaning in regular expression search.'
     url: https://github.com/sourcegraph/sourcegraph/pull/31520
     category: Search
 ---
