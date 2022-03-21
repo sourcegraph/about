@@ -315,8 +315,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-light-gray2">
             <ContentSection>
-                <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="pt-5" />
-                <div className="row d-flex flex-column mx-4 mx-lg-0 py-lg-8 py-7 align-items-lg-center align-items-left">
+                <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
@@ -335,6 +334,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                 </div>
             </ContentSection>
+            <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="py-6" />
         </div>
 
         <ContentSection className="py-lg-7 py-5">
