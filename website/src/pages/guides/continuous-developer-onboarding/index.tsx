@@ -22,12 +22,12 @@ const ContinuousDevOnboarding: FunctionComponent<PageProps> = props => {
             <div className="container py-lg-6 py-4">
                 <div className="row">
                     <div className="col-lg-6 pr-lg-6">
-                        <h3 className="display-3">
+                        <h3 className="display-3 mb-5">
                             Continuous developer onboarding: A guide to cultivating a culture of professional growth in
                             your engineering organization
                         </h3>
 
-                        <p>
+                        <p className="mb-4">
                             Companies often define developer onboarding as a process exclusive to new hires. But
                             developer onboarding continues far past a developer's first few months. Engineers want to
                             explore new parts of a codebase, learn new skills, and build new things as they switch
@@ -36,7 +36,7 @@ const ContinuousDevOnboarding: FunctionComponent<PageProps> = props => {
                             continuously onboard.
                         </p>
 
-                        <p>
+                        <p className="mb-4">
                             How do companies set developers up to continuously onboard though? This guide describes one
                             approach that focuses on onboarding processes and an engineering culture that nourishes
                             engineers, and provides them with the flexible, supported room to develop their own learning
