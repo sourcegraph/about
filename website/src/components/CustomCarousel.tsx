@@ -46,13 +46,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between height-x-lg-450 height-lg-700 height-md-700 height-sm-auto'
+                              'justify-content-between height-xl-450 height-lg-700 height-md-700 height-sm-auto'
                           )
                         : autoAdvance
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between height-x-lg-450 height-lg-850 height-md-850 height-sm-auto'
+                              'justify-content-between height-xl-450 height-lg-850 height-md-850 height-sm-auto'
                           )
                         : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-8 py-lg-8')
                 }
@@ -71,7 +71,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
-                    <ul className="ml-lg-5 mb-0">
+                    <ul className="ml-lg-4 mb-0">
                         {carouselItems.map((item, index) => (
                             <li
                                 className={
@@ -103,12 +103,12 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         autoAdvance && props.smallPanel
                             ? classNames(
                                   carouselRightPanelStyles,
-                                  'height-x-lg-500 height-lg-500 height-md-350 height-sm-350'
+                                  'height-xl--500 height-lg-500 height-md-350 height-sm-350'
                               )
                             : autoAdvance
                             ? classNames(
                                   carouselRightPanelStyles,
-                                  'height-x-lg-500 height-lg-500 height-md-500 height-sm-550'
+                                  'height-xl-500 height-lg-500 height-md-500 height-sm-550'
                               )
                             : classNames(carouselRightPanelStyles)
                     }

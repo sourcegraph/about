@@ -19,7 +19,7 @@ export default ((props: any) => (
                 'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
-        heroAndHeaderClassName={`${styles.headerAndHero}`}
+        heroAndHeaderClassName={styles.headerAndHero}
         hero={
             <div className="container">
                 <div className="row">
