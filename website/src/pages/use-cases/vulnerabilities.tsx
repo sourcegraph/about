@@ -298,12 +298,14 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <ContentSection>
             <div className="row mt-lg-0 mt-5 justify-content-center">
-                <div className="d-flex flex-column mt-lg-7 mt-4 w-100 mx-3">
+                <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
                     <h1 className="font-weight-light text-lg-center text-left mb-lg-6 mb-md-6">
                         How Sourcegraph helps
                     </h1>
                 </div>
-                <CustomCarousel items={items} autoAdvance={true} hideCarouselNav={true} smallPanel={true} />
+                <div className="pb-lg-5 pb-md-6 pb-5">
+                    <CustomCarousel items={items} autoAdvance={true} hideCarouselNav={true} smallPanel={true} />
+                </div>
             </div>
         </ContentSection>
 
