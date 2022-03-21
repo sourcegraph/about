@@ -57,7 +57,7 @@ Notebooks have several new features in 3.38 to help your team better understand 
 
 We're introducing a new backend service, Rockskip, for search-based Code Intelligence, the symbol sidebar, and symbol search. Rockskip was architected with monorepos in mind, and it can index new commits much faster than the existing SQLite backend.
 
-From 3.38 onwards, Rockskip can be turned on for specific repositories and it will make the symbol sidebar and search-based Code Intelligence much faster. If you're interested in turning this on for your repositories, read more in the [Rockslip docs](https://docs.sourcegraph.com/code_intelligence/explanations/rockskip) or [contact us](mailto:support@sourcegraph.com).
+From 3.38 onwards, Rockskip can be turned on for specific repositories and it will make the symbol sidebar and search-based Code Intelligence much faster. If you're interested in turning this on for your repositories, read more in the [Rockskip docs](https://docs.sourcegraph.com/code_intelligence/explanations/rockskip) or [contact us](mailto:support@sourcegraph.com).
 
 ## Search your project dependencies for better incident resolution
 
