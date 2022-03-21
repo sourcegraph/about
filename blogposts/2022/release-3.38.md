@@ -11,7 +11,7 @@ changelogItems:
   - description: Code Insights will now periodically clean up data series that are not in use. There is a 1 hour grace period where the series can be reattached to a view, after which all of the time series data and metadata will be deleted. This means customers deploying their own instance won't be storing data that has no use.
     url: https://github.com/sourcegraph/sourcegraph/pull/32094
     category: Code Insights
-  - description: 'Notebooks from private enterprise instances can now be embedded in external sites by enabling the `enable-embed-route` feature flag.'
+  - description: 'Notebooks from private enterprise instances can now be embedded in external sites by enabling the `enable-embed-route` feature flag. This allows you to embed Notebooks within existing technical documentation to see your documentation and code side-by-side.'
     url: https://docs.sourcegraph.com/notebooks/notebook-embedding
     category: Notebooks
   - description: LSIF upload pages now include a section listing the reasons and related retention policies resulting in an upload being retained and not expired.
@@ -31,7 +31,7 @@ Sourcegraph 3.38 is now available! For this release, we introduced:
 
 [Code Insights](https://docs.sourcegraph.com/code_insights) transforms any search query into customizable, visual dashboards in seconds. Code Insights surfaces high-level information about your codebase, based on both how your code changes over time and its current state. You can learn more about why we built Code Insights in [the announcement from our CEO](https://about.sourcegraph.com/blog/announcing-code-insights/).
 
-Any Sourcegraph instance can create up to two code insights, even without a trial or license.
+Any Sourcegraph instance can create up to two code insights, even without a trial or license. Reach out to your account team to purchase access to the full version.
 
 <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
   <iframe
