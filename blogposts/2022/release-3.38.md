@@ -11,9 +11,6 @@ changelogItems:
   - description: Code Insights will now periodically clean up data series that are not in use. There is a 1 hour grace period where the series can be reattached to a view, after which all of the time series data and metadata will be deleted. This means customers deploying their own instance won't be storing data that has no use.
     url: https://github.com/sourcegraph/sourcegraph/pull/32094
     category: Code Insights
-  - description: 'Code Insights critical telemetry total count now only includes insights that are not frozen (limited by trial mode restrictions).'
-    url: https://github.com/sourcegraph/sourcegraph/pull/32529
-    category: Code Insights
   - description: 'Notebooks from private enterprise instances can now be embedded in external sites by enabling the `enable-embed-route` feature flag.'
     url: https://docs.sourcegraph.com/notebooks/notebook-embedding
     category: Notebooks
