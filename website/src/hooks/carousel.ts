@@ -1,7 +1,7 @@
 import { useEffect, useState, ReactNode, useCallback } from 'react'
 
 interface CarouselItems {
-    items: CarouselItem[] | Template[]
+    items: CarouselItem[] | ReactNode[]
     currentItem?: CarouselItem | ReactNode
     previousItem?: CarouselItem | ReactNode
     currentItemIndex?: number
@@ -9,18 +9,11 @@ interface CarouselItems {
 }
 
 interface CarouselItem {
-    id: number
-    backgroundClass: string
+    backgroundClass?: string
     buttonLabel: string
     headerClass: string
     text: string | ReactNode
     itemClass: string
-}
-
-interface Template {
-    header: string
-    description: string
-    queries: ReactNode[]
 }
 
 interface CarouselHookObject {
@@ -31,7 +24,7 @@ interface CarouselHookObject {
 }
 
 export const useCarousel = (
-    initialItems: CarouselItem[] | Template[],
+    initialItems: CarouselItem[] | ReactNode[],
     iniitialAutoAdvance: boolean
 ): CarouselHookObject => {
     const [carouselItems, setCarouselItems] = useState<CarouselItems>({
