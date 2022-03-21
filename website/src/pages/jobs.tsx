@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import Layout from '../components/Layout'
 import Carousel from 'react-bootstrap/Carousel'
 import { ContentSection } from '../components/content/ContentSection'
@@ -217,14 +218,10 @@ const CareersPage = props => {
                 <Carousel
                     className="values-carousel"
                     prevIcon={
-                        <span aria-hidden="true">
-                            <img src="../ArrowLeft.svg" />
-                        </span>
+                        <ArrowLeftIcon color="#808080" />
                     }
                     nextIcon={
-                        <span aria-hidden="true">
-                            <img src="../ArrowRight.svg" />
-                        </span>
+                        <ArrowRightIcon color="#808080" />
                     }
                 >
                     <Carousel.Item>
@@ -338,6 +335,55 @@ const CareersPage = props => {
                         </a>
                     </ContentSection>
                 </div>
+
+                <Carousel
+                    className="values-carousel"
+                    prevIcon={ <ArrowLeftIcon color="#808080" /> }
+                    nextIcon={ <ArrowRightIcon color="#808080" /> }
+                >
+                    <Carousel.Item>
+                        <div className="row">
+                            <div>
+                                <img src="../careers/review1.png" />
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <div>
+                                <img src="../careers/review2.png" />
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <div>
+                                <img src="../careers/review3.png" />
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <div>
+                                <img src="../careers/review4.png" />
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <div>
+                                <img src="../careers/review5.png" />
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <div>
+                                <img src="../careers/review6.png" />
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                </Carousel>
             </div>
         </Layout>
     )
