@@ -210,14 +210,14 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </>
         }
     >
-        <ContentSection className="my-lg-7">
+        <ContentSection className="my-lg-5">
             <div className="row mx-lg-0 mx-4">
                 <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold w-50">
+                    <h1 className="text-center font-weight-bold w-75 px-lg-8">
                         Identify, resolve, and monitor with confidence
                     </h1>
                 </div>
-                <div className="d-flex flex-column flex-lg-row my-6">
+                <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
                     <div className="text-center">
                         <TimerOutlineIcon className="mb-4" color="#00a1c7" size={40} />
                         <h4 className="font-weight-bold">Reduce time to discovery and resolution</h4>
