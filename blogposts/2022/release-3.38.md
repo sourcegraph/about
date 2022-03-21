@@ -17,7 +17,7 @@ changelogItems:
   - description: LSIF upload pages now include a section listing the reasons and related retention policies resulting in an upload being retained and not expired.
     url: https://github.com/sourcegraph/sourcegraph/pull/30864
     category: Code Intelligence
-  - description: 'Code monitoring now has a Logs tab enabled as a Beta feature. This lets you see recent runs of your code monitors and determine if any notifications were sent or if there were any errors during the run.'
+  - description: 'Code monitoring now has a Logs tab enabled as a beta feature. This lets you see recent runs of your code monitors and determine if any notifications were sent or if there were any errors during the run.'
     url: https://github.com/sourcegraph/sourcegraph/pull/32292
     category: Admin
   - description: 'Searching for the pattern `//` with regular expression search is now interpreted literally and will search for `//`. Previously, the `//` pattern was interpreted as our regular expression syntax `/<regexp>/` which would in turn be interpreted as the empty string. Since searching for an empty string is not very useful, we now instead interpret `//` as searching for its literal meaning in regular expression search.'
@@ -65,7 +65,7 @@ From 3.38 onwards, Rockskip can be turned on for specific repositories and it wi
 
 Dependencies search currently supports NPM, and more dependency repositories are coming soon.
 
-## Configure custom language highlighting for file & extensions
+## Configure custom language highlighting for files & extensions
 
 In the past, it was not possible to configure what language a file was highlighted as without sending a Pull Request to Sourcegraph to update our global configuration for language detection. Now, if you have specific extensions or files that you want highlighted as a particular language, you can easily configure that in the site settings. This allows you to get accurate highlighting for custom languages, for example.
 
