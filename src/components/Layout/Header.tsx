@@ -31,7 +31,7 @@ const Header: FunctionComponent<Props> = props => {
 
     return (
         <nav className={`header navbar py-3 ${props.className || 'navbar-light'}`}>
-            <div className="container-lg">
+            <div className="container-xl">
                 <Navbar.Brand className="header__logo" href="/" onContextMenu={onRightClickLogo}>
                     <span role="img" aria-label="Sourcegraph - Universal code search">
                         {' '}

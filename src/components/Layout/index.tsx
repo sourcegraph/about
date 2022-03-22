@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import Script from 'next/script'
 import React, { FunctionComponent, ReactNode, ReactFragment } from 'react'
 
 import Footer from './Footer'
@@ -33,6 +32,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     const isHome = pathname === '/'
     const isBlog = pathname === '/blog'
     const isProductPage = pathname.startsWith('/product/')
+    const isCaseStudyPage = pathname.startsWith('/case-studies/') && pathname.split('/')[2] !== ''
 
     const meta: LayoutProps['meta'] = {
         ...props.meta,
@@ -45,7 +45,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     }
 
     return (
-        <div className={`flex flex-column fill-height ${props.className || ''}`}>
+        <div className={`d-flex flex-column min-vh-100 ${props.className || ''}`}>
             <Head>
                 <title>{meta.externalTitle || meta.title}</title>
                 <meta name="description" content={meta.externalDescription || meta.description} />
@@ -77,10 +77,15 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
                 {props.hero}
             </div>
+            
+            <section className="flex-1">{props.children}</section>
 
-            <section className="d-flex flex-column fill-height">{props.children}</section>
-
-            {!props.hideFooter && <Footer minimal={props.minimal} />}
+            {!props.hideFooter && (
+                <Footer
+                    className={`pt-4 ${props.className || ''} ${isCaseStudyPage ? 'bg-black' : ''}`}
+                    minimal={props.minimal}
+                />
+            )}
         </div>
     )
 }

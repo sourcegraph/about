@@ -1,4 +1,4 @@
-/* Official Sourcegraph Brand Colors */
+/* Sourcegraph Brand Colors */
 $sg-space-black: #000000;
 $blue: #2c7ef6;
 $red: #dc3545;
@@ -8,6 +8,13 @@ $brand-purple: #a112ff;
 $brand-cyan: #00cbec;
 $brand-orange: #ff5543;
 $brand-primary-blue: #2a66e2;
+$logo-purple: #b200f8;
+
+// Sourcegraph Brand Secondary Colors
+$brand-onahau: #c7ffff;
+$brand-mint: #8fedcf;
+$brand-fog: #e8d1ff;
+// TODO: consolidate and name more brand colours
 
 $body-bg: #f9f9f9;
 $body-color: #222233;
@@ -43,12 +50,14 @@ $light-green: #bceee9;
 $light-green2: #c4ffe8;
 $light-blue: #d5e6f7;
 $light-blue2: #bfbfff;
-$light-purple: #e8d1ff;
 $light-yellow: #fff2cf;
 $light-red: #ffc9c9;
 $blue-3: #72c3fc;
 $blue-7: #1c7cd6;
+$blue-mist: #c7ffff;
+$wild-sand: #f5f5f5;
 
+$cyan-2: #00a1c7;
 $cyan-3: #66d9e8;
 
 $teal-7: #0ca678;
@@ -57,3 +66,22 @@ $green-1: #d3f9d8;
 $green-5: #51cf66;
 $green-7: #37b24d;
 $green-9: #2b8a3e;
+
+.bg-light-gray {
+    background-color: $light-gray-2;
+}
+.bg-light-gray2 {
+    background-color: $light-11;
+}
+.bg-black {
+    background-color: $sg-space-black;
+}
+.bg-purple {
+    background-color: $logo-purple;
+}
+.bg-light-transparent {
+    background-color: transparentize($light-11, 0.3);
+}
+.bg-unset {
+    background-color: unset;
+}

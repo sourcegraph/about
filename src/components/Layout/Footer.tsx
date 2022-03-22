@@ -9,11 +9,12 @@ import React, { FunctionComponent } from 'react'
 
 interface Props {
     minimal?: boolean
+    className?: string
 }
 
-const Footer: FunctionComponent<Props> = ({ minimal }) => (
-    <footer className={`${minimal ? '' : 'pt-6 pb-2'}`}>
-        <div className="footer__container container">
+const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
+    <footer className={`${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
+        <div className="container-xl">
             {!minimal && (
                 <>
                     <div className="row footer__nav-sections">
@@ -172,7 +173,7 @@ const Footer: FunctionComponent<Props> = ({ minimal }) => (
 
             <div className="footer__postscript d-flex justify-content-between pt-4 pb-2 small">
                 <ul className="nav">
-                    <li className="nav-item text-muted mr-3">&copy; 2021 Sourcegraph</li>
+                    <li className="nav-item text-muted mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
                     <li className="nav-item">
                         <Link href="/terms" passHref={true}>
                             <a href="#none" className="nav-link">

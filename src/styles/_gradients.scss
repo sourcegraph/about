@@ -1,3 +1,4 @@
+@use 'sass:color';
 @import '@styles/colors';
 
 @mixin BgGradientPrimary {
@@ -9,14 +10,28 @@
 @mixin BgGradientBlueGreen {
     background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
 }
+@mixin BgGradientOnahauMint {
+    background: linear-gradient(
+        90deg,
+        color.adjust($brand-onahau, $alpha: -0.7) 14.33%,
+        color.adjust($brand-mint, $alpha: -0.7) 81.79%
+    );
+}
+@mixin BgGradientOnahauFog {
+    background: linear-gradient(
+        90deg,
+        color.adjust($brand-onahau, $alpha: -0.7) 14.33%,
+        color.adjust($brand-fog, $alpha: -0.7) 81.79%
+    );
+}
 @mixin BgGradientBluePurple {
-    background: linear-gradient(90deg, $light-blue 0%, $light-purple 100%);
+    background: linear-gradient(90deg, $light-blue 0%, $brand-fog 100%);
 }
 @mixin BgGradientPurpleYellow {
-    background: linear-gradient(90deg, $light-purple 0%, $light-yellow 100%);
+    background: linear-gradient(90deg, $brand-fog 0%, $light-yellow 100%);
 }
-@mixin BgGradientPurpleBlue2 {
-    background: linear-gradient(90deg, $light-purple 0%, $light-blue2 100%);
+@mixin BgGradientFogBlue2 {
+    background: linear-gradient(90deg, $brand-fog 0%, $light-blue2 100%);
 }
 @mixin BgGradientYellowGreen2 {
     background: linear-gradient(90deg, $light-yellow 0%, $light-green2 100%);
@@ -30,6 +45,10 @@
 @mixin BgGradientBlue2Blue {
     background: linear-gradient(90deg, $light-blue2 0%, $light-blue 100%);
 }
+@mixin BgGradientBlueMist {
+    background: radial-gradient(ellipse at top left, rgba($blue-mist, 0.5), transparent),
+        radial-gradient(ellipse at bottom right, rgba($light-green2, 0.5), transparent);
+}
 
 .bg-gradient-primary {
     @include BgGradientPrimary;
@@ -40,14 +59,20 @@
 .bg-gradient-blue-green {
     @include BgGradientBlueGreen;
 }
+.bg-gradient-onahau-mint {
+    @include BgGradientOnahauMint;
+}
+.bg-gradient-onahau-fog {
+    @include BgGradientOnahauFog;
+}
 .bg-gradient-blue-purple {
     @include BgGradientBluePurple;
 }
 .bg-gradient-purple-yellow {
     @include BgGradientPurpleYellow;
 }
-.bg-gradient-purple-blue2 {
-    @include BgGradientPurpleBlue2;
+.bg-gradient-fog-blue2 {
+    @include BgGradientFogBlue2;
 }
 .bg-gradient-yellow-green2 {
     @include BgGradientYellowGreen2;
@@ -60,4 +85,7 @@
 }
 .bg-gradient-blue2-blue {
     @include BgGradientBlue2Blue;
+}
+.bg-gradient-blue-mist {
+    @include BgGradientBlueMist;
 }

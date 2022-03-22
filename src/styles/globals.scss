@@ -124,9 +124,7 @@ $grid-gutter-width: 2rem;
 @import 'node_modules/bootstrap/scss/carousel';
 
 html,
-body,
-#___gatsby {
-    height: 100%;
+body {
     -webkit-overflow-scrolling: touch;
 }
 
@@ -231,6 +229,7 @@ table {
 @import 'components/content/ContentPage';
 @import 'components/content/ContentSection';
 @import 'components/pricing/index';
+@import 'components/product/CaseStudiesSection';
 @import 'components/product/CustomerLogosSection';
 @import 'components/product/CustomerLogosSectionAnimated';
 @import 'components/product/EventsSection';
@@ -240,12 +239,13 @@ table {
 @import 'components/Cookiebot';
 @import 'components/CustomCarousel';
 @import 'components/Events';
-@import 'components/GetStarted';
+@import 'components/SelfHostedSection';
 @import 'components/Header';
 @import 'components/IconItem';
 @import 'components/Footer';
 @import 'components/LeadershipSection';
 @import 'components/PrismTheme';
+@import 'components/TemplateCodeBlock';
 @import 'components/TestimonialCarousel';
 @import 'components/Tweets';
 @import 'pages/about';
@@ -256,8 +256,6 @@ table {
 @import 'pages/_white_papers';
 @import 'pages/content';
 @import 'pages/events';
-@import 'pages/get-started';
-@import 'pages/get-started/cloud';
 @import 'pages/index';
 @import 'pages/jobs';
 @import 'pages/landing-page';
@@ -272,56 +270,14 @@ table {
 @import 'pages/universal-code-search';
 @import 'templates/PostTemplate';
 @import 'pages/dev-tools-quiz';
+@import 'pages/code-insights';
 @import './gradients';
+@import './spacing';
 
 .virtual-br::before {
     content: '\A';
 }
-/* Gradient backgrounds */
-.bg-gradient-primary {
-    background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
-}
-.bg-gradient-green-blue {
-    background: linear-gradient(90deg, $light-green 0%, $light-blue 100%);
-}
-.bg-gradient-blue-green {
-    background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
-}
-.bg-gradient-blue-purple {
-    background: linear-gradient(90deg, $light-blue 0%, $light-purple 100%);
-}
-.bg-gradient-purple-yellow {
-    background: linear-gradient(90deg, $light-purple 0%, $light-yellow 100%);
-}
-.bg-gradient-purple-blue2 {
-    background: linear-gradient(90deg, $light-purple 0%, $light-blue2 100%);
-}
-.bg-gradient-yellow-green2 {
-    background: linear-gradient(90deg, $light-yellow 0%, $light-green2 100%);
-}
-.bg-gradient-green2-red {
-    background: linear-gradient(90deg, $light-green 0%, $light-red 100%);
-}
-.bg-gradient-red-blue2 {
-    background: linear-gradient(90deg, $light-red 0%, $light-blue2 100%);
-}
-.bg-gradient-blue2-blue {
-    background: linear-gradient(90deg, $light-blue2 0%, $light-blue 100%);
-}
-/* END Gradient backgrounds */
 
-.bg-light-gray {
-    background-color: $light-gray-2;
-}
-.bg-black {
-    background-color: $sg-space-black;
-}
-.bg-light-transparent {
-    background-color: transparentize($light-11, 0.3);
-}
-.bg-unset {
-    background-color: unset;
-}
 .font-size-base {
     font-size: $font-size-base !important;
 }
@@ -359,4 +315,11 @@ table {
     margin-bottom: 1rem;
     border: 1px solid var(--border-color);
     max-width: 100%;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
 }
