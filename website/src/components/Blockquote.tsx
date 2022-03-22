@@ -21,11 +21,11 @@ export const Blockquote: FunctionComponent<{
                         : classNames(quoteStyles, 'bg-light')
                 }
             >
-                {border ? <p>&ldquo;{quote}&rdquo;</p> : <>&ldquo;{quote}&rdquo;</>}
+                {border ? <p className="font-weight-normal">&ldquo;{quote}&rdquo;</p> : <>&ldquo;{quote}&rdquo;</>}
                 {by && (
                     <>
                         <br />
-                        <div className="text-right text-muted">&mdash; {by}</div>
+                        <div className="text-center text-muted">&mdash; {by}</div>
                     </>
                 )}
             </blockquote>

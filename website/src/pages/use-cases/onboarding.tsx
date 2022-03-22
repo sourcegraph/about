@@ -227,7 +227,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 mt-lg-0 mt-7">
+                        <h4 className="font-weight-bold text-center">Lunar makes every developer autonomous</h4>
                         <Blockquote
                             quote={`Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. 
                             This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked.`}
@@ -248,7 +249,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         How Sourcegraph helps
                     </h1>
                 </div>
-                <div className="pb-lg-5 pb-md-7 pb-5">
+                <div className="pb-lg-5 pb-md-8 pb-5">
                     <CustomCarousel items={items} autoAdvance={true} hideCarouselNav={true} smallPanel={true} />
                 </div>
             </div>
