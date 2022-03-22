@@ -65,3 +65,22 @@ $green-1: #d3f9d8;
 $green-5: #51cf66;
 $green-7: #37b24d;
 $green-9: #2b8a3e;
+
+.bg-light-gray {
+    background-color: $light-gray-2;
+}
+.bg-light-gray2 {
+    background-color: $light-11;
+}
+.bg-black {
+    background-color: $sg-space-black;
+}
+.bg-purple {
+    background-color: $logo-purple;
+}
+.bg-light-transparent {
+    background-color: transparentize($light-11, 0.3);
+}
+.bg-unset {
+    background-color: unset;
+}
