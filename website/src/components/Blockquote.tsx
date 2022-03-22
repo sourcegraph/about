@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import { Link } from 'gatsby'
 import React, { FunctionComponent, ReactFragment } from 'react'
@@ -5,17 +6,39 @@ import React, { FunctionComponent, ReactFragment } from 'react'
 export const Blockquote: FunctionComponent<{
     quote: string
     by?: string | ReactFragment
-}> = ({ quote, by }) => (
-    <blockquote className="p-3 bg-light rounded rounded-lg">
-        &ldquo;{quote}&rdquo;
-        {by && (
-            <>
-                <br />
-                <div className="text-right text-muted">&mdash; {by}</div>
-            </>
-        )}
-    </blockquote>
-)
+    logoHref?: string
+    logoImage?: string
+    border?: boolean
+}> = ({ quote, by, logoHref, logoImage, border }) => {
+    const quoteStyles = 'p-3 rounded rounded-lg'
+
+    return (
+        <>
+            <blockquote
+                className={
+                    border
+                        ? classNames(quoteStyles, 'case-studies__quote--in-content')
+                        : classNames(quoteStyles, 'bg-light')
+                }
+            >
+                {border ? <p>&ldquo;{quote}&rdquo;</p> : <>&ldquo;{quote}&rdquo;</>}
+                {by && (
+                    <>
+                        <br />
+                        <div className="text-right text-muted">&mdash; {by}</div>
+                    </>
+                )}
+            </blockquote>
+            {logoHref && logoImage && (
+                <div className="d-flex justify-content-center">
+                    <a href={logoHref} className="btn">
+                        <img src={logoImage} width="110px" alt="Prezi" />
+                    </a>
+                </div>
+            )}
+        </>
+    )
+}
 
 export const BlockquoteWithLogo: FunctionComponent<{
     quote: string
