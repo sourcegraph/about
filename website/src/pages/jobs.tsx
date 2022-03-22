@@ -313,6 +313,43 @@ const CareersPage = props => {
                     </Carousel.Item>
                 </Carousel>
 
+                <Carousel
+                    className="reviews-carousel"
+                    prevIcon={ <ArrowLeftIcon color="#808080" /> }
+                    nextIcon={ <ArrowRightIcon color="#808080" /> }
+                >
+                    <Carousel.Item>
+                        <div className="row">
+                            <img src="../careers/review1.png" />
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <img src="../careers/review2.png" />
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <img src="../careers/review3.png" />
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <img src="../careers/review4.png" />
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <img src="../careers/review5.png" />
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="row">
+                            <img src="../careers/review6.png" />
+                        </div>
+                    </Carousel.Item>
+                </Carousel>
+
                 <div className="bg-white contact-us">
                     <ContentSection>
                         <div className="row">
@@ -335,55 +372,6 @@ const CareersPage = props => {
                         </a>
                     </ContentSection>
                 </div>
-
-                <Carousel
-                    className="values-carousel"
-                    prevIcon={ <ArrowLeftIcon color="#808080" /> }
-                    nextIcon={ <ArrowRightIcon color="#808080" /> }
-                >
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <img src="../careers/review1.png" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <img src="../careers/review2.png" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <img src="../careers/review3.png" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <img src="../careers/review4.png" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <img src="../careers/review5.png" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <img src="../careers/review6.png" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                </Carousel>
             </div>
         </Layout>
     )

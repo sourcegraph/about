@@ -245,6 +245,35 @@
         }
     }
 
+    .reviews-carousel {
+        padding: 0 0 100px 0;
+        background-color: #fff;
+
+        .carousel-item {
+            background-color: #fff;
+            height: 850px;
+
+            .row {
+                padding: 128px;
+                display: flex;
+                justify-content: center;
+
+                @media only screen and (max-width: 768px) {
+                    padding: 40px 60px;
+                }
+            }
+            img {
+                width: 60%;
+                max-width: 700px;
+
+                @media only screen and (max-width: 768px) {
+                    max-width: 300px;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+
     .contact-us {
         padding: 170px 0 390px 0;
 
