@@ -302,7 +302,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6">How Sourcegraph helps</h1>
                 </div>
                 <div className="pb-lg-5 pb-md-6 pb-5">
-                    <CustomCarousel items={items} autoAdvance={true} hideCarouselNav={true} smallPanel={true} />
+                    <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />
                 </div>
             </div>
         </ContentSection>

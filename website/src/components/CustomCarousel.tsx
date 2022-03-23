@@ -15,8 +15,8 @@ interface CarouselProps {
     previousItem?: CarouselItem
     currentItemIndex?: number
     autoAdvance?: boolean
-    hideCarouselNav?: boolean
     smallPanel?: boolean
+    showHeadlinesOnMobile?: boolean
 }
 
 interface CarouselItem {
@@ -31,7 +31,6 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const carouselMainStyles = 'd-flex flex-wrap'
     const carouselRightPanelStyles =
         'col-lg-6 col-md-8 col-sm-12 mt-lg-6 ml-md-6 px-lg-0 d-flex align-items-center align-items-lg-start'
-    const autoAdvanceCarouselNavStyles = 'col-md-2 m-0 px-0 my-lg-3 col-lg-5 d-flex flex-column'
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
@@ -46,23 +45,42 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between height-xl-450 height-lg-700 height-md-700 height-sm-auto'
+                              'justify-content-between height-xl-450 height-lg-250 height-md-250 height-sm-auto'
                           )
                         : autoAdvance
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between height-xl-450 height-lg-850 height-md-850 height-sm-auto'
+                              'justify-content-between height-xl-450 height-lg-auto height-md-auto height-sm-auto'
                           )
-                        : classNames(carouselMainStyles, currentCarousel.currentItem?.backgroundClass, 'py-8 py-lg-8')
+                        : classNames(
+                              carouselMainStyles,
+                              currentCarousel.currentItem?.backgroundClass,
+                              'flex-lg-row flex-column py-8 py-lg-8'
+                          )
                 }
             >
+                {props.showHeadlinesOnMobile && (
+                    <ul className="d-block d-lg-none mb-0 height-md-100 height-sm-200">
+                        {carouselItems.map((item, index) => (
+                            <li
+                                className={
+                                    item === carouselHook.carouselItems.currentItem
+                                        ? 'custom-carousel-item active'
+                                        : 'custom-carousel-item'
+                                }
+                                key={index}
+                                onClick={() => carouselHook.moveCarousel(index)}
+                            >
+                                {item.buttonLabel}
+                            </li>
+                        ))}
+                    </ul>
+                )}
                 <div
                     className={
-                        carouselHook.autoAdvance && props.hideCarouselNav
-                            ? classNames(autoAdvanceCarouselNavStyles, 'carousel-nav')
-                            : autoAdvance
-                            ? classNames(autoAdvanceCarouselNavStyles)
+                        carouselHook.autoAdvance
+                            ? 'carousel-nav col-md-2 m-0 px-0 my-lg-3 col-lg-5 d-flex flex-column'
                             : 'carousel-nav ml-lg-7 col-lg-4 ml-md-5'
                     }
                 >
@@ -103,12 +121,12 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         autoAdvance && props.smallPanel
                             ? classNames(
                                   carouselRightPanelStyles,
-                                  'height-xl--500 height-lg-500 height-md-350 height-sm-350'
+                                  'height-xl-500 height-lg-300 height-md-300 height-sm-250'
                               )
                             : autoAdvance
                             ? classNames(
                                   carouselRightPanelStyles,
-                                  'height-xl-500 height-lg-500 height-md-500 height-sm-550'
+                                  'height-xl-500 height-lg-500 height-md-500 height-sm-450'
                               )
                             : classNames(carouselRightPanelStyles)
                     }

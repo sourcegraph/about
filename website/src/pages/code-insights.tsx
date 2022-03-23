@@ -369,7 +369,12 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
 
         <ContentSection>
             <div className="pb-lg-7 pb-6">
-                <CustomCarousel items={items} autoAdvance={true} title="How engineering teams use Code Insights" />
+                <CustomCarousel
+                    items={items}
+                    autoAdvance={true}
+                    showHeadlinesOnMobile={true}
+                    title="How engineering teams use Code Insights"
+                />
             </div>
         </ContentSection>
 
