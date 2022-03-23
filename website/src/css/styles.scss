@@ -283,34 +283,16 @@ table {
 @import 'pages/support';
 @import 'pages/uninstall';
 @import 'pages/universal-code-search';
-@import 'pages/use-cases';
 @import 'templates/PostTemplate';
 @import 'pages/dev-tools-quiz';
 @import 'pages/code-insights';
-@import './gradients';
+@import 'gradients';
+@import 'spacing';
 
 .virtual-br::before {
     content: '\A';
 }
 
-.bg-light-gray {
-    background-color: $light-gray-2;
-}
-.bg-light-gray2 {
-    background-color: $light-11;
-}
-.bg-black {
-    background-color: $sg-space-black;
-}
-.bg-purple {
-    background-color: $logo-purple;
-}
-.bg-light-transparent {
-    background-color: transparentize($light-11, 0.3);
-}
-.bg-unset {
-    background-color: unset;
-}
 .font-size-base {
     font-size: $font-size-base !important;
 }

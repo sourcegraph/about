@@ -26,7 +26,6 @@ import LighteningBoltOutlineIcon from 'mdi-react/LightningBoltOutlineIcon'
 
 const items = [
     {
-        id: 0,
         backgroundClass: '',
         buttonLabel: 'Track migrations, adoption, and deprecations',
         text: (
@@ -36,7 +35,6 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        id: 1,
         backgroundClass: '',
         buttonLabel: 'Detect and track versions of languages or packages',
         text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} />,
@@ -44,7 +42,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 2,
         backgroundClass: '',
         buttonLabel: 'Ensure removal of security vulnerabilities',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
@@ -52,7 +49,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 3,
         backgroundClass: '',
         buttonLabel: 'Understand code by team',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />,
@@ -60,7 +56,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 4,
         backgroundClass: '',
         buttonLabel: 'Track code smells and health',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} />,
@@ -68,7 +63,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 5,
         backgroundClass: '',
         buttonLabel: 'Visualize configurations and services',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
@@ -271,14 +265,14 @@ const blogListItems = [
         title: 'How we migrated entirely to CSS Modules using codemods and Sourcegraph Code Insights',
         description:
             'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.',
-        type: 'Blog',
+        type: 'Blog post',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
         title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
         description: 'Learn about why we built Code Insights from our CEO.',
-        type: 'Blog',
+        type: 'Blog post',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
         href: '/blog/announcing-code-insights',
     },
@@ -374,7 +368,9 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         </ContentSection>
 
         <ContentSection>
-            <CustomCarousel items={items} autoAdvance={true} title="How engineering teams use Code Insights" />
+            <div className="pb-lg-7 pb-6">
+                <CustomCarousel items={items} autoAdvance={true} title="How engineering teams use Code Insights" />
+            </div>
         </ContentSection>
 
         <div className="bg-gradient-blue-mist py-4">

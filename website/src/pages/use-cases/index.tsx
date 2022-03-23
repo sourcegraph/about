@@ -2,11 +2,13 @@ import { Link } from 'gatsby'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
-import { ContentSection } from '../components/content/ContentSection'
-import Layout from '../components/Layout'
-import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
-import { TrySourcegraph } from '../components/TrySourcegraph'
-import { buttonStyle, buttonLocation } from '../tracking'
+import { ContentSection } from '../../components/content/ContentSection'
+import Layout from '../../components/Layout'
+import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
+import { TrySourcegraph } from '../../components/TrySourcegraph'
+import { buttonStyle, buttonLocation } from '../../tracking'
+
+import styles from './useCases.module.scss'
 
 export default ((props: any) => (
     <Layout
@@ -17,9 +19,9 @@ export default ((props: any) => (
                 'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
-        heroAndHeaderClassName="use-cases-page__header-and-hero"
+        heroAndHeaderClassName={styles.headerAndHero}
         hero={
-            <div className="use-cases-page use-cases-page__hero container">
+            <div className="container">
                 <div className="row">
                     <div className="col-lg-7 mb-lg-6 mt-6">
                         <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
@@ -29,9 +31,7 @@ export default ((props: any) => (
                         </p>
                     </div>
                     <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h2 className="font-weight-normal use-cases-page__see-how">
-                            See how customers use Sourcegraph to
-                        </h2>
+                        <h5 className="font-weight-normal">See how customers use Sourcegraph to</h5>
                         <div className="list-group">
                             <Link
                                 to="#find-and-fix-security-vulnerabilities"
@@ -107,8 +107,8 @@ export default ((props: any) => (
                             </li>
                             <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
+                        <a
+                            href="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -116,6 +116,9 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                        </a>
+                        <Link to="/use-cases/vulnerabilities" className="btn btn-link font-weight-bold">
+                            Learn more
                         </Link>
                     </div>
                     <div className="col-lg-6 text-center">
@@ -181,8 +184,8 @@ export default ((props: any) => (
                             </li>
                             <li>Get answers faster with shareable links to specific code</li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
+                        <a
+                            href="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -190,7 +193,7 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </ContentSection>
@@ -222,8 +225,8 @@ export default ((props: any) => (
                                 search notebook
                             </li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
+                        <a
+                            href="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -231,7 +234,7 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                        </a>
                     </div>
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
@@ -292,8 +295,8 @@ export default ((props: any) => (
                             </li>
                             <li>Add a code monitor to alert you of commits using an out-of-date library</li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
+                        <a
+                            href="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -301,7 +304,7 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </ContentSection>
@@ -332,8 +335,8 @@ export default ((props: any) => (
                             </li>
                             <li>Efficiently tackle tech debt from legacy systems and acquisitions</li>
                         </ul>
-                        <Link
-                            to="https://info.sourcegraph.com/demo-request"
+                        <a
+                            href="https://info.sourcegraph.com/demo-request"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -341,7 +344,7 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </Link>
+                        </a>
                     </div>
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-6">

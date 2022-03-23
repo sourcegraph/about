@@ -8,7 +8,6 @@ import { buttonStyle, buttonLocation } from '../tracking'
 
 const items = [
     {
-        id: 0,
         backgroundClass: 'bg-gradient-green-blue',
         buttonLabel: 'Understand your code',
         text: 'Understand new code fast: discover code across all of your repositories, code hosts, and languages, and utilize Sourcegraph’s Code Intelligence to highlight dependencies and assess the impact of proposed code changes.',
@@ -16,7 +15,6 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        id: 1,
         backgroundClass: 'bg-gradient-blue-purple',
         buttonLabel: 'Accelerate velocity',
         text: 'Streamline collaboration across teams, even while apart: find and reuse code, search for best practices for unfamiliar libraries or APIs, share links to code with teammates, and catch more bugs through better code reviews—and fix them faster, too.',
@@ -24,7 +22,6 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        id: 2,
         backgroundClass: 'bg-gradient-purple-yellow',
         buttonLabel: 'Mitigate risks',
         text: 'Identify and mitigate issues across your entire codebase: monitor the introduction of vulnerable dependencies, hunt down outdated practices and patterns, and reduce the time it takes to search for bugs and security concerns.',

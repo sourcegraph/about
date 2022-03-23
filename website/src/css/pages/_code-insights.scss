@@ -128,25 +128,6 @@
         }
     }
 
-    /* Handle the different code insights chart sizes */
-    .set-height {
-        height: 425px;
-
-        @media only screen and (max-width: 990px) {
-            height: auto;
-        }
-    }
-
-    .set-height-panel {
-        height: auto;
-
-        @media only screen and (max-width: 768px) {
-            height: 550px;
-            display: flex;
-            align-items: center;
-        }
-    }
-
     .icon-paragraph {
         @media only screen and (max-width: 768px) {
             font-size: 14px;

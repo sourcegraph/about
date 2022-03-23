@@ -1,0 +1,62 @@
+// Custom heights
+$heights: 100, 200, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850;
+
+// Custom height utility classes
+@each $height in $heights {
+    .height-#{$height} {
+        height: #{$height}px;
+    }
+    @media (min-width: 1200px) {
+        .height-xl-#{$height} {
+            height: #{$height}px;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1200px) {
+        .height-lg-#{$height} {
+            height: #{$height}px;
+        }
+    }
+    @media (max-width: 768px) {
+        .height-md-#{$height} {
+            height: #{$height}px;
+        }
+    }
+    @media (max-width: 576px) {
+        .height-sm-#{$height} {
+            height: #{$height}px;
+        }
+    }
+}
+.height-auto {
+    height: auto;
+}
+@media (min-width: 1200px) {
+    .height-xl-auto {
+        height: auto;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .height-lg-auto {
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .height-md-auto {
+        height: auto;
+    }
+}
+@media (max-width: 576px) {
+    .height-sm-auto {
+        height: auto;
+    }
+}
+
+// Custom max widths
+$maxWidths: 100, 200, 300, 350, 400, 450, 500, 550, 600, 650, 700;
+
+// Custom max-width utility classes
+@each $maxWidth in $maxWidths {
+    .mw-#{$maxWidth} {
+        max-width: #{$maxWidth}px;
+    }
+}

@@ -1,21 +1,14 @@
 import React, { FunctionComponent } from 'react'
-import { Link, PageProps } from 'gatsby'
-import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
+import { PageProps } from 'gatsby'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
+import { BackButton } from '../../components/BackButton'
 import { Install } from '../../components/Install'
 import { buttonStyle, buttonLocation } from '../../tracking'
 import { BestForTitle, MostPopularBadge } from '.'
 
 import styles from './getStarted.module.scss'
-
-export const BackButton: FunctionComponent<{ search: string }> = ({ search }) => (
-    <Link className="btn p-0 text-uppercase mb-3 font-weight-normal" to={`/get-started${search}`}>
-        <ArrowLeftIcon className="mb-1" />
-        <span className="h6 font-weight-normal ml-3">Deployment Options</span>
-    </Link>
-)
 
 export const SelfHostedPage: FunctionComponent<PageProps> = props => (
     <Layout
@@ -40,7 +33,7 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => (
             <div className="row container-xl mx-auto py-5">
                 <div className="col-lg-6">
                     <div>
-                        <BackButton search={props.location.search} />
+                        <BackButton href={`/get-started${props.location.search}`} text="Deployment Options" />
 
                         <h1 className="display-2 font-weight-bolder mb-2">
                             Sourcegraph <br />
