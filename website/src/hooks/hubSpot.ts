@@ -46,49 +46,53 @@ interface IChiliPiper {
 }
 
 interface HubSpotProps {
-    region: string
+    region?: string
     portalId: string
     formId: string
     target: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
     onFormReady?: ($form: HubSpotForm) => void
+    onFormSubmitted?: () => void,
 }
 
 interface HubSpotForm {
-    region: string
+    region?: string
     [index: number]: HTMLFormElement
     portalId: string
     formId: string
     targetId: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
     onFormReady?: ($form: HTMLFormElement) => void
+    onFormSubmitted?: () => void,
 }
 
-const loadHubSpotScript = (): HTMLScriptElement => {
+const loadHubSpotScript = (): HTMLScriptElement | Element => {
     const hubSpotScript = '//js.hsforms.net/forms/v2.js'
     const script = document.querySelector(`script[src="${hubSpotScript}"]`)
-    const scriptElement = document.createElement('script')
-    scriptElement.src = hubSpotScript
+        
     if (!script) {
+        const scriptElement = document.createElement('script')
+        scriptElement.src = hubSpotScript
         document.head.append(scriptElement)
         return scriptElement
-    } else {
-        return script
     }
+
+    return script
 }
 
-const loadChiliPiperScript = (cb: Function): void => {
+const loadChiliPiperScript = (callback: () => void): void => {
     const chiliPiperScript = '//js.chilipiper.com/marketing.js'
     const script = document.querySelector(`script[src="${chiliPiperScript}"]`)
-    const scriptElement = document.createElement('script')
-    scriptElement.src = chiliPiperScript
+    
     if (!script) {
+        const scriptElement = document.createElement('script')
+        scriptElement.src = chiliPiperScript
         document.head.append(scriptElement)
-        cb()
+        return callback()
     }
 }
 
-function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, onFormReady }: HubSpotForm): void {
+function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, onFormSubmitted, onFormReady }: HubSpotForm): void {
     const getAllCookies: { [index: string]: string } = document.cookie
         .split(';')
         .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
@@ -103,6 +107,7 @@ function createHubSpotForm({ region, portalId, formId, targetId, onFormSubmit, o
             formId,
             target: `#${targetId}`,
             onFormSubmit,
+            onFormSubmitted,
             onFormReady: (form: HubSpotForm) => {
                 if (form) {
                     // We want to populate hidden fields in the form with values stored in cookies when the form loads.
@@ -141,7 +146,8 @@ export const useHubSpot = (
     portalId: string,
     formId: string,
     targetId: string,
-    chiliPiper: boolean
+    chiliPiper: boolean,
+    onFormSubmitted?: () => void,
 ): void => {
     useEffect(() => {
         createHubSpotForm({
@@ -149,6 +155,7 @@ export const useHubSpot = (
             portalId,
             formId,
             targetId,
+            onFormSubmitted
         })
 
         if (chiliPiper) {
@@ -171,5 +178,5 @@ export const useHubSpot = (
                 })
             })
         }
-    }, [chiliPiper, portalId, formId, targetId])
+    }, [chiliPiper, portalId, formId, targetId, region, onFormSubmitted])
 }
