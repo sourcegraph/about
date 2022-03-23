@@ -8,7 +8,7 @@ tags: [blog]
 slug: real-weakest-link-in-software-supply-chain-security
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png
-published: false
+published: true
 ---
 
 ![Vulnerabilities in open source packages](https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png)
