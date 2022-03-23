@@ -220,7 +220,9 @@ Our framework values efficiency. Any qualitative feedback for an IC “should be
 
 [IC4](https://handbook.sourcegraph.com/engineering/career-development/framework#ic4) describes “A particularly experienced, impactful contributor.”
 
-[IC5](https://handbook.sourcegraph.com/engineering/career-development/framework#ic5) and [IC6](https://handbook.sourcegraph.com/engineering/career-development/framework#ic6) are deliberately left without bullet points because the impact an IC5 or IC6 makes will vary between individuals. For IC5, we've put together a [list of profiles](https://handbook.sourcegraph.com/departments/product-engineering/engineering/career-development/ic5/) that evoke common traits amongst IC5 engineers. Here, we encourage engineers to use these profiles in "career growth conversations between ICs and EMs, and in calibration discussions between EMs and directors."
+[IC5](https://handbook.sourcegraph.com/engineering/career-development/framework#ic5) describes “A different IC role from levels 1-4, with a focus on technical leadership.”
+
+[IC6](https://handbook.sourcegraph.com/engineering/career-development/framework#ic6) and are deliberately left without bullet points, having not yet been finalized.
 
 Titles were of particular concern to us as we designed these levels. In other companies, we found during our research, ICs might get titles like “Team Lead” or “Tech Lead” as they advanced.
 
@@ -250,7 +252,7 @@ Our struggle is parallel to that of a 10-person startup trying to define a VP of
 
 As such, IC5 and above are the most likely to change during calibration.
 
-### Creating IC5 and IC6
+### Creating IC6
 
 At a small startup, roles like IC6 don’t necessarily exist yet. Sourcegraph, which crossed 200 employees in September of 2021, is right at the brink. We also have to figure out who, if anyone, embodies an IC6 role. Plus, we need to determine whether such a role would be equivalent, similar, or different to how the industry considers such a role.
 
