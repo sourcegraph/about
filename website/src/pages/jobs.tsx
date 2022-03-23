@@ -217,8 +217,8 @@ const CareersPage = props => {
 
                 <Carousel
                     className="values-carousel"
-                    prevIcon={ <ArrowLeftIcon color="#808080" /> }
-                    nextIcon={ <ArrowRightIcon color="#808080" /> }
+                    prevIcon={<ArrowLeftIcon color="#808080" />}
+                    nextIcon={<ArrowRightIcon color="#808080" />}
                 >
                     <Carousel.Item>
                         <div className="row">
@@ -311,8 +311,8 @@ const CareersPage = props => {
 
                 <Carousel
                     className="reviews-carousel"
-                    prevIcon={ <ArrowLeftIcon color="#808080" /> }
-                    nextIcon={ <ArrowRightIcon color="#808080" /> }
+                    prevIcon={<ArrowLeftIcon color="#808080" />}
+                    nextIcon={<ArrowRightIcon color="#808080" />}
                 >
                     <Carousel.Item>
                         <img src="../careers/review1.png" />
