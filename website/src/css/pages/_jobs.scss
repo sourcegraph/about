@@ -250,29 +250,24 @@
         background-color: #fff;
 
         .carousel-item {
+            text-align: center;
+            padding: 4%;
             background-color: #fff;
             height: 800px;
 
+
             @media (min-width: 500px) and (max-width: 768px) {
-                height: 695px;
+                height: 570px;
                 padding: 0px;
             }
             @media only screen and (max-width: 500px) {
-                height: 563px;
+                height: 530px;
                 padding: 0px;
             }
 
-            .row {
-                position: relative;
-                top: 16%;
-                left: 26%;
-
-                @media only screen and (max-width: 500px) {
-                    top: 0%;
-                    left: 6%;
-                }
-            }
             img {
+                display: block;
+                margin: auto;
                 width: 60%;
                 min-width: 500px;
                 max-width: 600px;

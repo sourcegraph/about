@@ -315,36 +315,22 @@ const CareersPage = props => {
                     nextIcon={ <ArrowRightIcon color="#808080" /> }
                 >
                     <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <img src="../careers/review1.png" />
-                            </div>
-                        </div>
+                        <img src="../careers/review1.png" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="row">
-                            <img src="../careers/review2.png" />
-                        </div>
+                        <img src="../careers/review2.png" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="row">
-                            <img src="../careers/review3.png" />
-                        </div>
+                        <img src="../careers/review3.png" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="row">
-                            <img src="../careers/review4.png" />
-                        </div>
+                        <img src="../careers/review4.png" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="row">
-                            <img src="../careers/review5.png" />
-                        </div>
+                        <img src="../careers/review5.png" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="row">
-                            <img src="../careers/review6.png" />
-                        </div>
+                        <img src="../careers/review6.png" />
                     </Carousel.Item>
                 </Carousel>
 
