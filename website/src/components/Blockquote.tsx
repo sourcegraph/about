@@ -9,8 +9,9 @@ export const Blockquote: FunctionComponent<{
     logoHref?: string
     logoImage?: string
     border?: boolean
-}> = ({ quote, by, logoHref, logoImage, border }) => {
-    const quoteStyles = 'p-3 rounded rounded-lg'
+    headline?: string
+}> = ({ quote, by, logoHref, logoImage, border, headline }) => {
+    const quoteStyles = 'p-3 rounded rounded-lg text-center'
 
     return (
         <>
@@ -21,7 +22,14 @@ export const Blockquote: FunctionComponent<{
                         : classNames(quoteStyles, 'bg-light')
                 }
             >
-                {border ? <p className="font-weight-normal">&ldquo;{quote}&rdquo;</p> : <>&ldquo;{quote}&rdquo;</>}
+                {border && headline ? (
+                    <p className="font-weight-normal">
+                        <h5 className="font-weight-bold mb-4">{headline}</h5>
+                        &ldquo;{quote}&rdquo;
+                    </p>
+                ) : (
+                    <>&ldquo;{quote}&rdquo;</>
+                )}
                 {by && (
                     <>
                         <br />

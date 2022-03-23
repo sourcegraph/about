@@ -205,9 +205,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-blue-mist">
             <ContentSection className="my-7">
-                <div className="row flex-column flex-lg-row align-items-center justify-content-between">
+                <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 font-weight-light">Developer onboarding is slow and expensive</h1>
+                        <h1 className="mb-4 mw-400 font-weight-bold">Developer onboarding is slow and expensive</h1>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
                             efficiently.
@@ -228,7 +228,6 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </ul>
                     </div>
                     <div className="col-lg-5 mt-lg-0 mt-7">
-                        <h4 className="font-weight-bold text-center">Lunar makes every developer autonomous</h4>
                         <Blockquote
                             quote={`Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. 
                             This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked.`}
@@ -236,6 +235,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             logoHref="https://www.lunar.app/"
                             logoImage="/external-logos/lunar.svg"
                             border={true}
+                            headline="Lunar makes every developer autonomous"
                         />
                     </div>
                 </div>
@@ -245,9 +245,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="row mt-lg-0 mt-5 justify-content-center">
                 <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-light text-lg-center text-left mb-lg-6 mb-md-6">
-                        How Sourcegraph helps
-                    </h1>
+                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6">How Sourcegraph helps</h1>
                 </div>
                 <div className="pb-lg-5 pb-md-8 pb-5">
                     <CustomCarousel items={items} autoAdvance={true} hideCarouselNav={true} smallPanel={true} />
