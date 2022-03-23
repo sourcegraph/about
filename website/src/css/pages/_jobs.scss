@@ -251,23 +251,36 @@
 
         .carousel-item {
             background-color: #fff;
-            height: 850px;
+            height: 800px;
+
+            @media (min-width: 500px) and (max-width: 768px) {
+                height: 695px;
+                padding: 0px;
+            }
+            @media only screen and (max-width: 500px) {
+                height: 563px;
+                padding: 0px;
+            }
 
             .row {
-                padding: 128px;
-                display: flex;
-                justify-content: center;
+                position: relative;
+                top: 16%;
+                left: 26%;
 
-                @media only screen and (max-width: 768px) {
-                    padding: 40px 60px;
+                @media only screen and (max-width: 500px) {
+                    top: 0%;
+                    left: 6%;
                 }
             }
             img {
                 width: 60%;
-                max-width: 700px;
+                min-width: 500px;
+                max-width: 600px;
 
                 @media only screen and (max-width: 768px) {
-                    max-width: 300px;
+                    width: 90%;
+                    min-width: 350px;
+                    max-width: 490px;
                     margin-top: 25px;
                 }
             }
