@@ -24,7 +24,7 @@ The solution? A framework that would align the entire engineering organization a
 
 If you want to skip to the results, you can [read the handbook page](https://handbook.sourcegraph.com/engineering/career-development) or [read the summary](https://about.sourcegraph.com/blog/software-engineer-career-ladder/#The-Sourcegraph-career-development-framework) in this post. But if you want the story, and to see how you can apply our learnings at your company, read on.
 
-_Note: this post is a snapshot of our work as of October 2021. For the up-to-date, source of truth, refer to our [handbook](https://handbook.sourcegraph.com/engineering/career-development)._
+_Note: this post is a snapshot of our work as of October 2021. For the up-to-date source of truth, refer to our [handbook](https://handbook.sourcegraph.com/engineering/career-development)._
 
 ## Engineering managers, assemble!
 
@@ -176,7 +176,7 @@ Below, we highlight some especially important aspects of the resulting career de
 
 ### Expectations
 
-Levels for Sourcegraph ICs range from L1 to L7 and each level contains three axes:
+Levels for Sourcegraph ICs range from L1 to L6 and each level contains three axes:
 
 - Proficiency
 - Execution
