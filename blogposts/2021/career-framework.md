@@ -222,7 +222,7 @@ Our framework values efficiency. Any qualitative feedback for an IC “should be
 
 [IC5](https://handbook.sourcegraph.com/engineering/career-development/framework#ic5) describes “A different IC role from levels 1-4, with a focus on technical leadership.”
 
-[IC6](https://handbook.sourcegraph.com/engineering/career-development/framework#ic6) and are deliberately left without bullet points, having not yet been finalized.
+[IC6](https://handbook.sourcegraph.com/engineering/career-development/framework#ic6) is deliberately left without bullet points, having not yet been finalized.
 
 Titles were of particular concern to us as we designed these levels. In other companies, we found during our research, ICs might get titles like “Team Lead” or “Tech Lead” as they advanced.
 
