@@ -88,6 +88,12 @@ const CASESTUDIES: {
         title: 'Thorn deprecates legacy code safely',
         url: '/case-studies/we-are-thorn',
     },
+    {
+        name: 'Nutanix',
+        logo: '/external-logos/nutanix-logo.svg',
+        title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
+        url: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
+    },
 ]
 
 export const CaseStudiesSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
