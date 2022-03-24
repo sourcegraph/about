@@ -6,7 +6,13 @@ import { useHubSpot } from '../../../hooks/hubSpot'
 import styles from './index.module.scss'
 
 const ContinuousDevOnboarding: FunctionComponent<PageProps> = props => {
-    useHubSpot('na1', '2762526', '35e18409-5be7-4fcb-aa57-8152b34eef66', `form`, true)
+    useHubSpot({
+        portalId: '2762526',
+        formId: '35e18409-5be7-4fcb-aa57-8152b34eef66',
+        targetId: `form`,
+        chiliPiper: false,
+        onFormSubmitted: () => window.open('/guides/dev-onboarding/sg-continuous-developer-onboarding.pdf')
+    })
 
     return (
         <Layout
