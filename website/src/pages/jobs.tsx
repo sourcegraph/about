@@ -205,7 +205,7 @@ const CareersPage = props => {
                     <img src="/careers/Culture_8.png" className="culture-section mx-auto" />
                     <div className="culture-section-mobile mx-auto">
                         {new Array(8).fill(null).map((el, i) => (
-                            <img src={`/careers/${i+1}-Zoom.png`} />
+                            <img src={`/careers/${i + 1}-Zoom.png`} />
                         ))}
                     </div>
                 </div>
@@ -310,8 +310,8 @@ const CareersPage = props => {
                     nextIcon={<ArrowRightIcon color="#808080" />}
                 >
                     {new Array(6).fill(null).map((el, i) => (
-                        <Carousel.Item key={`review-${i+1}`}>
-                            <img src={`/careers/review${i+1}.png`} />
+                        <Carousel.Item key={`review-${i + 1}`}>
+                            <img src={`/careers/review${i + 1}.png`} />
                         </Carousel.Item>
                     ))}
                 </Carousel>
