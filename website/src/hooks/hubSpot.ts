@@ -74,6 +74,15 @@ interface HubSpotForm {
     onFormSubmitted?: () => void
 }
 
+interface HookProps {
+    region?: string
+    portalId: string
+    formId: string
+    targetId: string | string[]
+    chiliPiper: boolean
+    onFormSubmitted?: () => void
+}
+
 const loadHubSpotScript = (): HTMLScriptElement | Element => {
     const hubSpotScript = '//js.hsforms.net/forms/v2.js'
     const script = document.querySelector(`script[src="${hubSpotScript}"]`)
@@ -155,15 +164,6 @@ function createHubSpotForm({
             },
         })
     })
-}
-
-interface HookProps {
-    region?: string
-    portalId: string
-    formId: string
-    targetId: string | string[]
-    chiliPiper: boolean
-    onFormSubmitted?: () => void
 }
 
 export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onFormSubmitted }: HookProps): void => {
