@@ -7,7 +7,12 @@ const title = 'Sourcegraph - Schedule a Batch Changes demo.'
 const description = 'Learn how you can automate large-scale code changes with Sourcegraph Batch Changes.'
 
 const Contact: FunctionComponent = () => {
-    useHubSpot('2762526', 'c98d6435-f0fc-4b34-8cff-cfe7633121c8', 'hubspotRequestBatchChangesDemo', true)
+    useHubSpot({
+        portalId: '2762526',
+        formId: 'c98d6435-f0fc-4b34-8cff-cfe7633121c8',
+        targetId: 'hubspotRequestBatchChangesDemo',
+        chiliPiper: true,
+    })
 
     return (
         <Layout

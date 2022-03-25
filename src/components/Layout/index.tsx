@@ -77,7 +77,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
                 {props.hero}
             </div>
-            
+
             <section className="flex-1">{props.children}</section>
 
             {!props.hideFooter && (

@@ -4,7 +4,12 @@ import { Layout } from '@components'
 import { useHubSpot } from '@hooks'
 
 const Contact: FunctionComponent = () => {
-    useHubSpot('2762526', '202906aa-b46d-4657-86c4-30fbfda2413f', 'hubspotRequestTrialForm', false)
+    useHubSpot({
+        portalId: '2762526',
+        formId: '202906aa-b46d-4657-86c4-30fbfda2413f',
+        targetId: 'hubspotRequestTrialForm',
+        chiliPiper: false,
+    })
 
     return (
         <Layout
