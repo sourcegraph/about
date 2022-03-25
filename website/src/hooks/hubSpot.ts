@@ -126,7 +126,7 @@ function createHubSpotForm({
 
     const script = loadHubSpotScript()
     script?.addEventListener('load', () => {
-        ;(window as Window).hbspt?.forms.create({
+        window.hbspt?.forms.create({
             region: region || 'na1',
             portalId,
             formId,
@@ -170,6 +170,8 @@ export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onF
     useEffect(() => {
         if (Array.isArray(targetId)) {
             for (const id of targetId) {
+                console.log(`id: ${id}`);
+                
                 createHubSpotForm({
                     region,
                     portalId,
