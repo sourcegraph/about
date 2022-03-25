@@ -169,8 +169,8 @@ function createHubSpotForm({
 export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onFormSubmitted }: HookProps): void => {
     useEffect(() => {
         if (Array.isArray(targetId)) {
-            for (const id of targetId) {
-                console.log(`id: ${id}`);
+            targetId.forEach(id => {
+                console.log(`new id with forEach: ${id}`);
                 
                 createHubSpotForm({
                     region,
@@ -179,7 +179,7 @@ export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onF
                     targetId: id,
                     onFormSubmitted,
                 })
-            }
+            })
         } else {
             createHubSpotForm({
                 region,
