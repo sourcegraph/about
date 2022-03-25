@@ -59,4 +59,24 @@ $maxWidths: 100, 200, 300, 350, 400, 450, 500, 550, 600, 650, 700;
     .mw-#{$maxWidth} {
         max-width: #{$maxWidth}px;
     }
+    @media (min-width: 1200px) {
+        .height-xl-#{$maxWidth} {
+            height: #{$maxWidth}px;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1200px) {
+        .height-lg-#{$maxWidth} {
+            height: #{$maxWidth}px;
+        }
+    }
+    @media (max-width: 768px) {
+        .height-md-#{$maxWidth} {
+            height: #{$maxWidth}px;
+        }
+    }
+    @media (max-width: 576px) {
+        .height-sm-#{$maxWidth} {
+            height: #{$maxWidth}px;
+        }
+    }
 }

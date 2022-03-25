@@ -245,33 +245,6 @@
         }
     }
 
-    .reviews-carousel {
-        background-color: #fff;
-
-        .carousel-item {
-            height: 800px;
-
-            @media (min-width: 500px) and (max-width: 768px) {
-                height: 650px;
-            }
-            @media only screen and (max-width: 500px) {
-                height: 575px;
-            }
-
-            img {
-                width: 60%;
-                min-width: 500px;
-                max-width: 600px;
-
-                @media only screen and (max-width: 768px) {
-                    width: 90%;
-                    min-width: 350px;
-                    max-width: 490px;
-                }
-            }
-        }
-    }
-
     .contact-us {
         padding: 170px 0 390px 0;
 
