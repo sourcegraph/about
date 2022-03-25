@@ -246,27 +246,19 @@
     }
 
     .reviews-carousel {
-        padding: 0 0 100px 0;
         background-color: #fff;
 
         .carousel-item {
-            text-align: center;
-            padding: 4%;
-            background-color: #fff;
             height: 800px;
 
             @media (min-width: 500px) and (max-width: 768px) {
-                height: 570px;
-                padding: 0;
+                height: 635px;
             }
             @media only screen and (max-width: 500px) {
                 height: 530px;
-                padding: 0px;
             }
 
             img {
-                display: block;
-                margin: auto;
                 width: 60%;
                 min-width: 500px;
                 max-width: 600px;
@@ -275,7 +267,6 @@
                     width: 90%;
                     min-width: 350px;
                     max-width: 490px;
-                    margin-top: 25px;
                 }
             }
         }
