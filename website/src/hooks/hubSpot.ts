@@ -125,8 +125,8 @@ function createHubSpotForm({
     const firstSourceURL = getAllCookies.sourcegraphSourceUrl
 
     const script = loadHubSpotScript()
-    
-    const invokeHubSpotForm = ({region, portalId, formId, targetId, onFormSubmitted}: HubSpotForm): void => {
+
+    const invokeHubSpotForm = ({ region, portalId, formId, targetId, onFormSubmitted }: HubSpotForm): void => {
         script?.addEventListener('load', () => {
             window.hbspt?.forms.create({
                 region: region || 'na1',
@@ -145,7 +145,7 @@ function createHubSpotForm({
                             // Populate hidden anonymous_user_id form field with value from sourcegraphAnonymousUid
                             anonymousIdInput.value = anonymousId || ''
                         }
-    
+
                         const firstSourceURLInput = form[0].querySelector(
                             'input[name="first_source_url"]'
                         ) as HTMLInputElement
