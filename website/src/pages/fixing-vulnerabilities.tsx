@@ -9,7 +9,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
     useHubSpot({
         portalId: '2762526',
         formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
-        targetId: ['form-0', 'form-1'],
+        targetId: ['topForm', 'bottomForm'],
         chiliPiper: true,
     })
 
@@ -35,7 +35,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                         </p>
 
                         <div className="mt-5 mw-400">
-                            <div id="form-0" />
+                            <div id="topForm" />
                             <FormLegal />
                         </div>
                     </div>
@@ -92,7 +92,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                     </h2>
 
                     <div className="mt-5 mw-400 mx-auto">
-                        <div id="form-1" />
+                        <div id="bottomForm" />
                         <FormLegal />
                     </div>
                 </div>

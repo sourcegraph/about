@@ -9,7 +9,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
     useHubSpot({
         portalId: '2762526',
         formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
-        targetId: ['form-0', 'form-1'],
+        targetId: ['topForm', 'bottomForm'],
         chiliPiper: true,
     })
 
@@ -38,7 +38,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                         </p>
 
                         <div className="mt-5 mw-400">
-                            <div id="form-0" />
+                            <div id="topForm" />
                             <FormLegal />
                         </div>
                     </div>
@@ -86,7 +86,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                     <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
 
                     <div className="mt-5 mw-400 mx-auto">
-                        <div id="form-1" />
+                        <div id="bottomForm" />
                         <FormLegal />
                     </div>
                 </div>
