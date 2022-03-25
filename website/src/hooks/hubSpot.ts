@@ -170,8 +170,8 @@ export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onF
     useEffect(() => {
         if (Array.isArray(targetId)) {
             targetId.forEach(id => {
-                console.log(`new id with forEach: ${id}`);
-                
+                console.log(`new id with forEach: ${id}`)
+
                 createHubSpotForm({
                     region,
                     portalId,
