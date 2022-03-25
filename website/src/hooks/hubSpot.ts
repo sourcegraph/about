@@ -78,7 +78,7 @@ interface HookProps {
     region?: string
     portalId: string
     formId: string
-    targetId: string | string[]
+    targetId: string
     chiliPiper: boolean
     onFormSubmitted?: () => void
 }
@@ -126,7 +126,7 @@ function createHubSpotForm({
 
     const script = loadHubSpotScript()
     script?.addEventListener('load', () => {
-        ;(window as Window).hbspt?.forms.create({
+        window.hbspt?.forms.create({
             region: region || 'na1',
             portalId,
             formId,
@@ -168,25 +168,13 @@ function createHubSpotForm({
 
 export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onFormSubmitted }: HookProps): void => {
     useEffect(() => {
-        if (Array.isArray(targetId)) {
-            for (const id of targetId) {
-                createHubSpotForm({
-                    region,
-                    portalId,
-                    formId,
-                    targetId: id,
-                    onFormSubmitted,
-                })
-            }
-        } else {
-            createHubSpotForm({
-                region,
-                portalId,
-                formId,
-                targetId,
-                onFormSubmitted,
-            })
-        }
+        createHubSpotForm({
+            region,
+            portalId,
+            formId,
+            targetId,
+            onFormSubmitted,
+        })
 
         if (chiliPiper) {
             loadChiliPiperScript(() => {
