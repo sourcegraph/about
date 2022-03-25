@@ -1,7 +1,6 @@
 import '@styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
-import React from 'react'
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => (
     <>

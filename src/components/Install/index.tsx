@@ -1,5 +1,6 @@
-import classNames from 'classnames'
 import { FunctionComponent, useEffect, useState } from 'react'
+
+import classNames from 'classnames'
 
 import styles from './install.module.scss'
 

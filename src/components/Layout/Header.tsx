@@ -1,6 +1,7 @@
+import { FunctionComponent, useState } from 'react'
+
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import Link from 'next/link'
-import React, { FunctionComponent, useState } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'

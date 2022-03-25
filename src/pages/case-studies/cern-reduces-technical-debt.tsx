@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
 
 import { Layout, CaseStudyLayout, ContentSection, InContentImage, InContentBlockquote } from '@components'
 

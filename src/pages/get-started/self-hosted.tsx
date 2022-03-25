@@ -1,13 +1,14 @@
+import { FunctionComponent } from 'react'
+
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import { useRouter } from 'next/router'
-import { FunctionComponent } from 'react'
 
 import { Layout, Install } from '@components'
 
-import styles from './getStarted.module.scss'
-
 import { BestForTitle, MostPopularBadge } from '.'
+
+import styles from './getStarted.module.scss'
 
 export const BackButton: FunctionComponent = () => {
     const router = useRouter()

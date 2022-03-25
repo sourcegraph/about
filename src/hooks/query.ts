@@ -1,5 +1,6 @@
-import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
+
+import { useRouter } from 'next/router'
 
 export const useQueryString = (): { queryString: string; navigatedFromProduct: boolean } => {
     const router = useRouter()

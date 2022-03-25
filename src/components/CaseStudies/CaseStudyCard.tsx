@@ -1,7 +1,8 @@
+import { FunctionComponent } from 'react'
+
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import Link from 'next/link'
-import React, { FunctionComponent } from 'react'
 
 import styles from './CaseStudyCard.module.scss'
 

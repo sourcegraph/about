@@ -1,3 +1,5 @@
+import { FunctionComponent } from 'react'
+
 import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import SpotifyIcon from 'mdi-react/SpotifyIcon'
@@ -5,7 +7,6 @@ import TwitchIcon from 'mdi-react/TwitchIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import Link from 'next/link'
-import React, { FunctionComponent } from 'react'
 
 interface Props {
     minimal?: boolean

@@ -1,10 +1,11 @@
+import { FunctionComponent } from 'react'
+
 import EmailIcon from 'mdi-react/EmailIcon'
 import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import MapMarkerIcon from 'mdi-react/MapMarkerIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
-import { FunctionComponent } from 'react'
 
 import { Layout, ContentSection, ContentPage } from '@components'
 

@@ -1,7 +1,7 @@
+import { FunctionComponent } from 'react'
+
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { FunctionComponent } from 'react'
 
 import { Layout } from '@components'
 import { useQueryString } from '@hooks'

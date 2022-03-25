@@ -1,14 +1,16 @@
+import { FunctionComponent } from 'react'
+
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
-import { FunctionComponent, useEffect, useState } from 'react'
 
 import { Layout } from '@components'
 import { useQueryString } from '@hooks'
 
-import styles from './getStarted.module.scss'
 import { BackButton } from './self-hosted'
 
 import { BestForTitle } from '.'
+
+import styles from './getStarted.module.scss'
 
 export const CloudPage: FunctionComponent = () => {
     const routerHook = useQueryString()

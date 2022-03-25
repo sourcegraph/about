@@ -1,5 +1,6 @@
-import Script from 'next/script'
 import { FunctionComponent } from 'react'
+
+import Script from 'next/script'
 
 interface EmbeddedHubSpotProps {
     portalId: string
