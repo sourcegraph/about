@@ -68,7 +68,7 @@ interface HubSpotForm {
     [index: number]: HTMLFormElement
     portalId: string
     formId: string
-    targetId: string | string[]
+    targetId: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
     onFormReady?: ($form: HTMLFormElement) => void
     onFormSubmitted?: () => void
@@ -78,7 +78,7 @@ interface HookProps {
     region?: string
     portalId: string
     formId: string
-    targetId: string | string[]
+    targetId: string
     chiliPiper: boolean
     onFormSubmitted?: () => void
 }
@@ -125,68 +125,45 @@ function createHubSpotForm({
     const firstSourceURL = getAllCookies.sourcegraphSourceUrl
 
     const script = loadHubSpotScript()
-    
-    const invokeHubSpotForm = ({region, portalId, formId, targetId, onFormSubmitted}: HubSpotForm): void => {
-        script?.addEventListener('load', () => {
-            window.hbspt?.forms.create({
-                region: region || 'na1',
-                portalId,
-                formId,
-                target: `#${targetId}`,
-                onFormSubmit,
-                onFormSubmitted,
-                onFormReady: (form: HubSpotForm) => {
-                    if (form) {
-                        // Populate hidden form fields with values stored in cookies
-                        const anonymousIdInput = form[0].querySelector(
-                            'input[name="anonymous_user_id"]'
-                        ) as HTMLInputElement
-                        if (anonymousIdInput && anonymousIdInput.value === '') {
-                            // Populate hidden anonymous_user_id form field with value from sourcegraphAnonymousUid
-                            anonymousIdInput.value = anonymousId || ''
-                        }
-    
-                        const firstSourceURLInput = form[0].querySelector(
-                            'input[name="first_source_url"]'
-                        ) as HTMLInputElement
-                        const emailInput = form[0].querySelector('input[name="email"]') as HTMLInputElement
-                        if (
-                            firstSourceURLInput &&
-                            firstSourceURLInput.value === '' &&
-                            emailInput &&
-                            emailInput.value === ''
-                        ) {
-                            // Populate hidden first_source_url form field with value from sourcegraphSourceUrl
-                            firstSourceURLInput.value = firstSourceURL || ''
-                        }
-                    }
-                    if (onFormReady) {
-                        onFormReady(form[0])
-                    }
-                },
-            })
-        })
-    }
-
-    if (Array.isArray(targetId)) {
-        targetId.forEach(id => {
-            invokeHubSpotForm({
-                region,
-                portalId,
-                formId,
-                targetId: id,
-                onFormSubmitted,
-            })
-        })
-    } else {
-        invokeHubSpotForm({
-            region,
+    script?.addEventListener('load', () => {
+        window.hbspt?.forms.create({
+            region: region || 'na1',
             portalId,
             formId,
-            targetId,
+            target: `#${targetId}`,
+            onFormSubmit,
             onFormSubmitted,
+            onFormReady: (form: HubSpotForm) => {
+                if (form) {
+                    // Populate hidden form fields with values stored in cookies
+                    const anonymousIdInput = form[0].querySelector(
+                        'input[name="anonymous_user_id"]'
+                    ) as HTMLInputElement
+                    if (anonymousIdInput && anonymousIdInput.value === '') {
+                        // Populate hidden anonymous_user_id form field with value from sourcegraphAnonymousUid
+                        anonymousIdInput.value = anonymousId || ''
+                    }
+
+                    const firstSourceURLInput = form[0].querySelector(
+                        'input[name="first_source_url"]'
+                    ) as HTMLInputElement
+                    const emailInput = form[0].querySelector('input[name="email"]') as HTMLInputElement
+                    if (
+                        firstSourceURLInput &&
+                        firstSourceURLInput.value === '' &&
+                        emailInput &&
+                        emailInput.value === ''
+                    ) {
+                        // Populate hidden first_source_url form field with value from sourcegraphSourceUrl
+                        firstSourceURLInput.value = firstSourceURL || ''
+                    }
+                }
+                if (onFormReady) {
+                    onFormReady(form[0])
+                }
+            },
         })
-    }
+    })
 }
 
 export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onFormSubmitted }: HookProps): void => {
