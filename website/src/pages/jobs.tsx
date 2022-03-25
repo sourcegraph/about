@@ -205,7 +205,7 @@ const CareersPage = props => {
                     <img src="/careers/Culture_8.png" className="culture-section mx-auto" />
                     <div className="culture-section-mobile mx-auto">
                         {new Array(8).fill(null).map((el, i) => (
-                            <img key={i} src={`/careers/${i+1}-Zoom.png`} />
+                            <img key={i} src={`/careers/${i + 1}-Zoom.png`} />
                         ))}
                     </div>
                 </div>
@@ -311,7 +311,7 @@ const CareersPage = props => {
                 >
                     {new Array(6).fill(null).map((el, i) => (
                         <Carousel.Item key={`review-${i}`} className="pt-sm-6 pt-5">
-                            <img src={`/careers/review${i+1}.png`} className="d-block m-auto" />
+                            <img src={`/careers/review${i + 1}.png`} className="d-block m-auto" />
                         </Carousel.Item>
                     ))}
                 </Carousel>
