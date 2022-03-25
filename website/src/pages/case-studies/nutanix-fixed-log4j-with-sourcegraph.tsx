@@ -1,7 +1,8 @@
 import * as React from 'react'
-import { CaseStudyPage, InContentBlockquote, CaseStudyRequestDemoForm } from '../../components/content/CaseStudyPage'
+import { CaseStudyPage, CaseStudyJumbotron, MediaQuote, InContentBlockquote, CaseStudyRequestDemoForm } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
+import slugify from 'slugify'
 
 const derrickFaunce = 'Derrick Faunce, Associate Director of Developer Services'
 
@@ -14,18 +15,12 @@ export default ((props: any) => (
                 'Sourcegraph enables Nutanix to find and fix security vulnerabilities quickly across the code base. When the Log4j vulnerability rocked the industry, Nutanix was able to confidently identify every instance of Log4j across its sprwaling codebase and deliver patches to its customers that fully remediated the vulnerability within 4 days.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
-        className="navbar-dark bg-black"
     >
-        <CaseStudyPage
-            customer="FactSet"
-            title="FactSet migrates from Perforce to GitHub"
-            logo="/external-logos/factset-logo.svg"
-            quote={{
-                quote: 'With Sourcegraph, we were able to make a smooth transition from Perforce to GitHub.',
-                author: derrickFaunce,
-                image: '/case-studies/derrick-faunce.png',
-            }}
-        >
+        <div className={`${slugify('Nutanix').toLowerCase()}-case-study`}>
+            <CaseStudyJumbotron className="mb-7 bg-gradient-onahau-fog" customer="Nutanix">
+                <h1 className="text-black py-5">Nutanix fixed Log4j quickly and confidently with Sourcegraph</h1>
+            </CaseStudyJumbotron>
+            {/* <MediaQuote quote={quote.quote} author={quote.author} image={quote.image} /> */}
             <ContentSection color="white" className="col-md-6">
                 <div className="container">
                     <div className="row">
@@ -152,7 +147,7 @@ export default ((props: any) => (
                     <br />
                 </div>
             </ContentSection>
-        </CaseStudyPage>
-        <CaseStudyRequestDemoForm demoFormURL="/contact/request-batch-changes-demo" />
+            <CaseStudyRequestDemoForm demoFormURL="/contact/request-batch-changes-demo" />
+        </div>
     </Layout>
 )) as React.FunctionComponent<any>
