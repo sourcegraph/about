@@ -51,6 +51,36 @@ $heights: 100, 200, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850;
     }
 }
 
+// Custom widths with breakpoints
+$widths: 25, 50, 75, 90, 100;
+
+// Custom width utility classes
+@each $width in $widths {
+    .w-#{$width} {
+        width: percentage($width/100);
+    }
+    @media (min-width: 1200px) {
+        .w-xl-#{$width} {
+            width: percentage($width/100);
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1200px) {
+        .w-lg-#{$width} {
+            width: percentage($width/100);
+        }
+    }
+    @media (max-width: 768px) {
+        .w-md-#{$width} {
+            width: percentage($width/100);
+        }
+    }
+    @media (max-width: 576px) {
+        .w-sm-#{$width} {
+            width: percentage($width/100);
+        }
+    }
+}
+
 // Custom max widths
 $maxWidths: 100, 200, 300, 350, 400, 450, 500, 550, 600, 650, 700;
 
@@ -60,23 +90,23 @@ $maxWidths: 100, 200, 300, 350, 400, 450, 500, 550, 600, 650, 700;
         max-width: #{$maxWidth}px;
     }
     @media (min-width: 1200px) {
-        .height-xl-#{$maxWidth} {
-            height: #{$maxWidth}px;
+        .mw-xl-#{$maxWidth} {
+            max-width: #{$maxWidth}px;
         }
     }
     @media (min-width: 769px) and (max-width: 1200px) {
-        .height-lg-#{$maxWidth} {
-            height: #{$maxWidth}px;
+        .mw-lg-#{$maxWidth} {
+            max-width: #{$maxWidth}px;
         }
     }
     @media (max-width: 768px) {
-        .height-md-#{$maxWidth} {
-            height: #{$maxWidth}px;
+        .mw-md-#{$maxWidth} {
+            max-width: #{$maxWidth}px;
         }
     }
     @media (max-width: 576px) {
-        .height-sm-#{$maxWidth} {
-            height: #{$maxWidth}px;
+        .mw-sm-#{$maxWidth} {
+            max-width: #{$maxWidth}px;
         }
     }
 }
