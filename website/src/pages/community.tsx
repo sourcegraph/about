@@ -34,7 +34,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
                             href={
-                                'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
+                                'https://srcgr.ph/wp-join-community-space'
                             }
                             title="Join our Slack"
                         >
@@ -134,7 +134,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <a
                         className="btn btn-primary"
                         href={
-                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
+                            'https://srcgr.ph/wp-join-community-space'
                         }
                         title="Join us on Slack"
                     >
@@ -241,7 +241,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"
                         href={
-                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
+                            'https://srcgr.ph/wp-join-community-space'
                         }
                         title="Join us on Slack"
                     >
