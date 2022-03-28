@@ -28,7 +28,7 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 
 </span>
 
-We make money through paid subscriptions to use our Services. We do not sell your information. 
+We make money through paid subscriptions to use our Services. We do not sell your information.
 
 <span style="color:#b200f8;">
   
@@ -36,7 +36,7 @@ We make money through paid subscriptions to use our Services. We do not sell you
 
 </span>
 
-When you interact with our Services, we collect information that could be used to identify you (**“Personal Information”**). Examples include a username and password, an email address, a name, and an IP address. 
+When you interact with our Services, we collect information that could be used to identify you (**“Personal Information”**). Examples include a username and password, an email address, a name, and an IP address.
 
 Some of the information we collect is stored in a manner that cannot be linked back to you (**“Non-Personal Information”**). Non-Personal Information includes aggregated, non-personally identifying information that does not identify a user or cannot otherwise be reasonably linked or connected with them. We may use such aggregated, non-personally identifying information to improve our Services.
 
@@ -52,7 +52,7 @@ We may receive information about you from third-party services if you log in or 
 
 We use information provided directly by you and third parties to operate, maintain, and provide to you the features of the Services. We may use this information to communicate with you, such as to send you email messages, and to follow up with you to offer news and information about our Services. We may also send you Service-related emails or messages (e.g., account verification, change or updates to features of the Services, technical and security notices). For more information about your communication preferences, see [Will Sourcegraph send me emails]((#will-sourcegraph-send-me-emails) below.
 
-### Automatically collected information 
+### Automatically collected information
 
 #### Usage data
 
@@ -68,13 +68,13 @@ When you visit or use our Website, including when you access the Sourcegraph Clo
 
 #### Cookies
 
-When you visit or use our Website, we may send one or more cookies — a small text file containing a string of alphanumeric characters — to your computer that uniquely identifies your browser and lets us help you log in faster and enhance your navigation through the Website. A cookie may also convey information to us about how you use the Website(e.g., the pages you view, the links you click, how frequently you access the Website, and other actions you take on the Website), and allow us to track your usage of the Website over time. For more information, see “Third-party tracking and online advertising” below and our [Cookie Policy](https://about.sourcegraph.com/privacy/cookie-policy/). 
+When you visit or use our Website, we may send one or more cookies — a small text file containing a string of alphanumeric characters — to your computer that uniquely identifies your browser and lets us help you log in faster and enhance your navigation through the Website. A cookie may also convey information to us about how you use the Website(e.g., the pages you view, the links you click, how frequently you access the Website, and other actions you take on the Website), and allow us to track your usage of the Website over time. For more information, see “Third-party tracking and online advertising” below and our [Cookie Policy](https://about.sourcegraph.com/privacy/cookie-policy/).
 
 #### Log data
 
-As with most websites and technology services delivered over the internet, when you access or use our Website, our servers automatically collect data and record it in log files. This log data may include your web request, IP address, browser type and settings, date and time of use, information about browser configuration, error data, repository name, user ID, and cookie data. 
+As with most websites and technology services delivered over the internet, when you access or use our Website, our servers automatically collect data and record it in log files. This log data may include your web request, IP address, browser type and settings, date and time of use, information about browser configuration, error data, repository name, user ID, and cookie data.
 
-#### Access, authorization, and activity audit logs 
+#### Access, authorization, and activity audit logs
 
 When you visit or use our Website, we may collect information related to accessing systems and data, including IP addresses, usernames, and data accessed. This information is only retained for the purposes of identifying, analyzing, and resolving potential security incidents. Access to this information is limited to those who require access for these purposes and will only be shared with the relevant customers in the event of a security incident.
 
@@ -139,7 +139,7 @@ Where laws like GDPR govern our processing of your Personal Information, Sourceg
 
 ### Public repositories
 
-If your repository is public, anyone may view its contents. 
+If your repository is public, anyone may view its contents.
 
 ### Private repositories
 
@@ -151,8 +151,7 @@ If you have a private repository on Sourcegraph Cloud or a Sourcegraph managed i
 - if we have reason to believe the contents violate the law, or
 - with your consent.
 
-We may scan our servers and content to detect certain tokens or security signatures of known active malware, known vulnerabilities in dependencies, or other content known to violate our Terms of Service, based on algorithmic fingerprinting techniques (collectively, "automated scanning"). 
-
+We may scan our servers and content to detect certain tokens or security signatures of known active malware, known vulnerabilities in dependencies, or other content known to violate our Terms of Service, based on algorithmic fingerprinting techniques (collectively, "automated scanning").
 
 <span style="color:#b200f8;">
 
@@ -163,32 +162,38 @@ We may scan our servers and content to detect certain tokens or security signatu
 We may share your personal information with third parties in the instances described below.
 
 #### Service providers
-Our service providers process your Personal Information as needed to provide our Services to you, including hosting and customer support ticketing. They may only process your Personal Information pursuant to our instructions and to perform their duties to us. See our [Subprocessors](https://about.sourcegraph.com/subprocessors/) page for a list of our service providers. 
+
+Our service providers process your Personal Information as needed to provide our Services to you, including hosting and customer support ticketing. They may only process your Personal Information pursuant to our instructions and to perform their duties to us. See our [Subprocessors](https://about.sourcegraph.com/subprocessors/) page for a list of our service providers.
 
 #### Security purposes
+
 If you are a member of an Organization, we may share your username, email, IP address, and any collected logs about the user associated with that Organization with an owner or administrator of the Organization to investigate or respond to a security incident that affects or compromises the security of that particular Organization.
 
 #### Legal disclosure
-We may share your Personal Information with law enforcement and other third parties if required by law or subpoena or if we reasonably believe that such action is necessary to (a) comply with the law, legal process, and the reasonable requests of law enforcement; (b) to enforce our Terms of Service or to protect the security or integrity of our Service with regard to suspected fraud or other illegal activities; or (c) to exercise or protect the rights, property, or personal safety of Sourcegraph, our users, or others. 
+
+We may share your Personal Information with law enforcement and other third parties if required by law or subpoena or if we reasonably believe that such action is necessary to (a) comply with the law, legal process, and the reasonable requests of law enforcement; (b) to enforce our Terms of Service or to protect the security or integrity of our Service with regard to suspected fraud or other illegal activities; or (c) to exercise or protect the rights, property, or personal safety of Sourcegraph, our users, or others.
 
 #### Mergers and common ownership
+
 We may share your Personal Information with another entity in connection with a company transaction, such as a merger, acquisition, sale of assets or shares, reorganization, or bankruptcy. In these cases we may transfer some or all of your Personal Information to another entity, subject to this Privacy Policy. We may also share your Personal Information with any companies owned by or under common ownership with Sourcegraph, subject to this Privacy Policy.
 
 #### With your consent
+
 With your consent, we may share your Personal Information with other third parties. If you join an Organization, you agree to provide the administrator of the Organization with the ability to view your activity in the Organization’s access log. Any information or content that you voluntarily disclose by posting to the Website becomes available to the public, as controlled by your privacy settings. If you remove information or content that you posted to the Website, copies may remain viewable in cached and archived pages of the Website, or if other users have copied or saved that information.
 
 ### Does Sourcegraph share aggregate, Non-Personal Information with third parties?
 
-We share aggregated, Non-Personal Information with others about our product usage like number of users, user growth, and lines of indexed code. 
+We share aggregated, Non-Personal Information with others about our product usage like number of users, user growth, and lines of indexed code.
 
 ### Does Sourcegraph sell or rent my Personal Information?
+
 No. We do not sell or rent your Personal Information for monetary or other consideration under the CCPA (California Consumer Privacy Act of 2018) or other data privacy laws.
 
 ### Will Sourcegraph send me emails
-From time to time, we may share information about product announcements, product use, and special offers. You may opt out of our promotional email communications at any time by clicking the “unsubscribe” link provided in such communications. 
 
-Sourcegraph users will continue to receive transactional messages related to your use of our Services such as account management, technical, and security notices, even if you unsubscribe from promotional emails. 
+From time to time, we may share information about product announcements, product use, and special offers. You may opt out of our promotional email communications at any time by clicking the “unsubscribe” link provided in such communications.
 
+Sourcegraph users will continue to receive transactional messages related to your use of our Services such as account management, technical, and security notices, even if you unsubscribe from promotional emails.
 
 <span style="color:#b200f8;">
 
@@ -196,7 +201,7 @@ Sourcegraph users will continue to receive transactional messages related to you
 
 </span>
 
-We participate in interest-based advertising and use third-party advertising companies to serve you targeted advertisements based on your online browsing history and your interests. We permit third-party online advertising networks, social media companies, and other third-party services, to collect information about your use of our Website over time so that they may play or display ads for our products on other websites, apps, or services you may use and on other devices you may use. 
+We participate in interest-based advertising and use third-party advertising companies to serve you targeted advertisements based on your online browsing history and your interests. We permit third-party online advertising networks, social media companies, and other third-party services, to collect information about your use of our Website over time so that they may play or display ads for our products on other websites, apps, or services you may use and on other devices you may use.
 
 We and our third-party partners may use cookies and tracking technologies on our Website for the purpose of tracking the effectiveness of our own ads placed on Google, Twitter, etc. (never on private or self-hosted instances). We and our third-party partners use this information to make the advertisements you see online more relevant to your interests, as well as to provide advertising-related services such as reporting, attribution, analytics and market research.
 
@@ -236,7 +241,6 @@ Additional rights that may apply to you in certain instances:
 
 To exercise your privacy rights, you can contact us directly at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-
 <span style="color:#b200f8;">
 
 ## Data storage, security, deletion, and retention
@@ -245,14 +249,13 @@ To exercise your privacy rights, you can contact us directly at <a href="mailto:
 
 ### Where is my information stored?
 
-We store and process the information that we collect in the United States in accordance with this Privacy Policy, though our employees, contractors, and service providers may store and process data outside the United States. 
+We store and process the information that we collect in the United States in accordance with this Privacy Policy, though our employees, contractors, and service providers may store and process data outside the United States.
 
 When we transfer the personal data of EEA, Swiss, and UK residents outside of those regions, we do so via appropriate user privacy safeguards, such as using Standard Contractual Clauses or obtaining your consent.
 
-
 ### How secure is my information?
 
-We secure your information by implementing technical and organizational security controls that you can read about in [Security is core to everything we do](https://about.sourcegraph.com/security/). 
+We secure your information by implementing technical and organizational security controls that you can read about in [Security is core to everything we do](https://about.sourcegraph.com/security/).
 
 When we receive your information, we protect it on our servers using technical, physical, and logical security safeguards. For information stored in any Software installed in your computing system, you are responsible for its security by making use of the security features of your device. We recommend that you take the appropriate steps to secure all computing devices that you use in connection with our Services.
 
@@ -260,7 +263,7 @@ Sourcegraph cares about the security of your information, and uses commercially 
 
 ### How do I update or delete my Personal Information from Sourcegraph?
 
-You can update or remove your Personal Information from Sourcegraph at any time by logging into your account and updating your profile settings, including deleting your account. 
+You can update or remove your Personal Information from Sourcegraph at any time by logging into your account and updating your profile settings, including deleting your account.
 
 ### How long does Sourcegraph retain my Personal Information?
 
@@ -268,14 +271,13 @@ You can remove your Personal Information from Sourcegraph at any time by deletin
 
 For questions about reviewing, modifying, or deleting your account information, contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
-
 <span style="color:#b200f8;">
 
 ## Children's privacy
 
 </span>
 
-Sourcegraph does not knowingly collect or solicit any information from anyone under the age of 13 or knowingly allow such persons to register as Users. If you are based in the European Union, we will not knowingly collect your information if you are under the age of 16. Different countries may have different minimum age limits. If you are below the minimum age for providing consent for data collection in your country, you may not have a Sourcegraph account. In the event that we learn that we have collected personal information from a child under age 13  or the applicable minimum age limit, we will delete that information as quickly as possible. If you believe that we might have any information from a child under 13 or otherwise under the applicable minimum age limit, please contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
+Sourcegraph does not knowingly collect or solicit any information from anyone under the age of 13 or knowingly allow such persons to register as Users. If you are based in the European Union, we will not knowingly collect your information if you are under the age of 16. Different countries may have different minimum age limits. If you are below the minimum age for providing consent for data collection in your country, you may not have a Sourcegraph account. In the event that we learn that we have collected personal information from a child under age 13 or the applicable minimum age limit, we will delete that information as quickly as possible. If you believe that we might have any information from a child under 13 or otherwise under the applicable minimum age limit, please contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
 <span style="color:#b200f8;">
 
