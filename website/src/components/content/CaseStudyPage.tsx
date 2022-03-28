@@ -2,9 +2,9 @@ import { Link } from 'gatsby'
 import React from 'react'
 import slugify from 'slugify'
 import { COLORS } from '../Jumbotron'
+import { BackButton } from '../../components/BackButton'
 import { ContentSection } from './ContentSection'
 import { buttonStyle, buttonLocation } from '../../tracking'
-
 interface Quote {
     quote: string
     author: string
@@ -98,12 +98,15 @@ export const MediaQuote: React.FunctionComponent<{
 
 export const CaseStudyJumbotron: React.FunctionComponent<{
     customer: string
-    logo: string
+    logo?: string
     className?: string
     color?: keyof typeof COLORS
     children?: React.ReactNode
 }> = ({ customer, logo, className = '', color = 'dark', children }) => (
     <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
+        <div className="pl-7">
+            <BackButton href={'/case-studies'} text="Case Studies" bold={true} />
+        </div>
         <div className="container text-center pt-3 pb-3">
             {logo && <img className="case-studies__logo my-3" src={logo} alt={customer} />}
             <span className="case-studies__label d-block mt-1">
