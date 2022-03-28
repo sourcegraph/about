@@ -140,7 +140,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         data-button-style={buttonStyle.outline}
                                         data-button-location={buttonLocation.nav}
                                         data-button-type="cta"
-                                        href="https://info.sourcegraph.com/demo-request"
+                                        href="/demo"
                                         title="Request a demo"
                                     >
                                         Request a demo
@@ -289,9 +289,9 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             </li>
                                         )}
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <a className="nav-link" href="https://info.sourcegraph.com/demo-request">
+                                            <Link className="nav-link" to="/demo">
                                                 Request a demo
-                                            </a>
+                                            </Link>
                                         </li>
                                         {!this.props.hideGetStartedButton && (
                                             <li className="header__nav-item nav-item" role="presentation">

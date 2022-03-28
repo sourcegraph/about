@@ -34,16 +34,16 @@ const Index: React.FunctionComponent = (props: any) => (
                                 >
                                     Get started <ArrowRightIcon className="ml-1" />
                                 </Link>
-                                <a
+                                <Link
                                     className="btn btn-outline-primary m-3"
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
-                                    href="https://info.sourcegraph.com/demo-request"
+                                    to="/demo"
                                     title="Request a demo"
                                 >
                                     Request a demo <ArrowRightIcon className="ml-1" />
-                                </a>
+                                </Link>
                             </div>
                             <p className="my-3 col-9 mx-auto">
                                 Product or installation questions?{' '}
