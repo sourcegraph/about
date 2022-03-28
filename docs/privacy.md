@@ -17,8 +17,8 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 
 </span>
 
-- We do not sell your information. We don’t help companies advertise their products to you. ([read more](#what-is-sourcegraph’s-business-model))
-- We use a number of trusted third parties to help provide our products. ([read more](#does-sourcegraph-share-my-information?))
+- We do not sell your information. We don’t help companies advertise their products to you. ([read more](#what-is-sourcegraphs-business-model))
+- We use a number of trusted third parties to help provide our products. ([read more](#does-sourcegraph-share-my-information))
 - We use cookies to provide, protect, and promote our own products. ([read more](#cookies))
 - You can exercise your rights under privacy laws. ([read more](#global-privacy-practices))
 
@@ -50,7 +50,7 @@ We may receive information about you from third-party services if you log in or 
 
 ### How does Sourcegraph use my information provided directly by me and third parties?
 
-We use information provided directly by you and third parties to operate, maintain, and provide to you the features of the Services. We may use this information to communicate with you, such as to send you email messages, and to follow up with you to offer news and information about our Services. We may also send you Service-related emails or messages (e.g., account verification, change or updates to features of the Services, technical and security notices). For more information about your communication preferences, see [Will Sourcegraph send me emails]((#will-sourcegraph-send-me-emails) below.
+We use information provided directly by you and third parties to operate, maintain, and provide to you the features of the Services. We may use this information to communicate with you, such as to send you email messages, and to follow up with you to offer news and information about our Services. We may also send you Service-related emails or messages (e.g., account verification, change or updates to features of the Services, technical and security notices). For more information about your communication preferences, see [Will Sourcegraph send me emails](#will-sourcegraph-send-me-emails) below.
 
 ### Automatically collected information
 
@@ -293,7 +293,7 @@ Our Service may integrate with or contain links to other third-party sites and s
 
 </span>
 
-If you have any questions about this Privacy Policy or the Service, please contact us at <a href="mailto:privacy@sourcegraph.com">privacy@sourcegraph.com</a>.
+If you have any questions about this Privacy Policy or the Service, please contact us at <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
 
 <span style="color:#b200f8;">
 
