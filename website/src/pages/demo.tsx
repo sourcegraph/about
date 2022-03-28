@@ -17,13 +17,15 @@ const Demo: FunctionComponent<PageProps> = props => {
             location={props.location}
             meta={{
                 title: 'Request a Demo | Sourcegraph',
-                description: `From developer onboarding to incident response, see how companies of all sizes use Sourcegraph to solve the industry's most challenging code problems.`
+                description: `From developer onboarding to incident response, see how companies of all sizes use Sourcegraph to solve the industry's most challenging code problems.`,
             }}
             heroAndHeaderClassName="bg-gradient-green-blue"
             hero={
                 <div className="container pt-6 pb-4">
                     <h1 className="font-weight-bolder">Request a demo</h1>
-                    <p className="mw-450">Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert.</p>
+                    <p className="mw-450">
+                        Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert.
+                    </p>
                 </div>
             }
         >
@@ -32,7 +34,7 @@ const Demo: FunctionComponent<PageProps> = props => {
                     <div className="col-lg-6">
                         <h2 className="font-weight-bold">Let us show you around</h2>
                         <p>Watch this quick video to see what Sourcegraph can do</p>
-                        
+
                         <div className="embed-responsive embed-responsive-16by9 my-5">
                             <iframe
                                 src="https://www.youtube-nocookie.com/embed/E2QYIwKlMac"
@@ -40,7 +42,8 @@ const Demo: FunctionComponent<PageProps> = props => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Sourcegraph Product Tour"
-                                className="embed-responsive-item" />
+                                className="embed-responsive-item"
+                            />
                         </div>
 
                         <h2 className="font-weight-bold">Like what you see?</h2>
