@@ -3,6 +3,10 @@ import { Link } from 'gatsby'
 import { CaseStudyJumbotron } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
+import ClipboardTextOutlineIcon from 'mdi-react/ClipboardTextOutlineIcon'
+import ChartBarIcon from 'mdi-react/ChartBarIcon'
+import CheckCircleOutlineIcon from 'mdi-react/CheckCircleOutlineIcon'
+import FlagOutlineIcon from 'mdi-react/FlagOutlineIcon'
 import slugify from 'slugify'
 
 export default ((props: any) => (
@@ -31,6 +35,53 @@ export default ((props: any) => (
                     <footer className="blockquote-footer">Jon Kohler, Technical Director of Solution Engineering at Nutanix</footer>
                 </blockquote>
             </ContentSection>
+
+            <section className="d-flex">
+                <div className="bg-light-gray-2 p-6 col-sm-12 col-md-6">
+                    <div className="mb-5 ml-5 row">
+                        <ClipboardTextOutlineIcon color="#00A1C7" size={30} />
+                        <div className="pl-3 w-75">
+                            <h5 className="font-weight-semibold">Use case</h5>
+                            <p>Find and fix security vulnerabilities quickly across the code base.</p>
+                        </div>
+                    </div>
+                    <div className="mb-5 ml-5 row">
+                        <FlagOutlineIcon color="#00A1C7" size={30} />
+                        <div className="pl-3 w-75">
+                            <h5 className="font-weight-semibold">Challenge</h5>
+                            <ul className="pl-3">
+                                <li>Inability to efficiently find all the instances of Log4j in their large codebase.</li>
+                                <li>Lack of code-level clarity that vulnerabilities were completely resolved.</li>
+                                <li>Uncertainty about the scope and impact of the Log4j vulnerability.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="mb-5 ml-5 row">
+                        <CheckCircleOutlineIcon color="#00A1C7" size={30} />
+                        <div className="pl-3 w-75">
+                            <h5 className="font-weight-semibold">Solution</h5>
+                            <ul className="pl-3">
+                                <li>Able to quickly and efficiently find every instance of the Log4j vulnerability.</li>
+                                <li>Full confidence that all Log4j-vulnerable code was identified and resolved.</li>
+                                <li>Able to quickly validate that no known vulnerabilities exist in the codebase prior to each release.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-gradient-blue-mist p-6 col-sm-12 col-md-6">
+                    <div className="mb-5 ml-5 row">
+                        <ChartBarIcon color="#00A1C7" size={30} />
+                        <div className="pl-3 w-75">
+                            <h5 className="font-weight-semibold">Result</h5>
+                            <ul className="pl-3">
+                                <li>Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in less than 5 minutes.</li>
+                                <li>Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.</li>
+                                <li>Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-7">
                 <section>
@@ -83,7 +134,7 @@ export default ((props: any) => (
             <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
                 <blockquote className="py-6">
                     <h3 className="font-weight-normal">
-                        “It’s nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much better than having to say, 'Well, boss, I think we got it all.’”
+                        “It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much better than having to say, 'Well, boss, I think we got it all.’”
                     </h3>
                     <footer className="blockquote-footer">Jon Kohler</footer>
                 </blockquote>
@@ -113,6 +164,24 @@ export default ((props: any) => (
                     </p>
                 </section>
             </ContentSection>
+
+            <div className="bg-gradient-blue-mist p-md-7 p-sm-2">
+                <h3 className="text-center pb-5">Results</h3>
+                <div className="mb-5 ml-5 row">
+                    <div className="col-sm-12 col-md-4 text-center">
+                        <h3 className="pb-3 font-weight-semibold">5 min</h3>
+                        <p>Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in less than 5 minutes.</p>
+                    </div>
+                    <div className="col-sm-12 col-md-4 text-center">
+                        <h3 className="pb-3 font-weight-semibold">4 days</h3>
+                        <p>Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.</p>
+                    </div>
+                    <div className="col-sm-12 col-md-4 text-center">
+                        <h3 className="pb-3 font-weight-semibold">100%</h3>
+                        <p>Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.</p>
+                    </div>
+                </div>
+            </div>
 
             <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-7">
                 <section>
