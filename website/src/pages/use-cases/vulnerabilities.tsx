@@ -111,7 +111,7 @@ const items = [
 
 const quoteCarouselItems = [
     {
-        header: 'Nutanix fixed log4j in days',
+        header: 'Nutanix fixed Log4j in days',
         quote: 'The more we dug, the more we realized [Log4Shell] was everywhere and nowhere at the same time… Sourcegraph was the right product at the right time.',
         by: 'Jon Kohler, Technical Director of Solution Engineering at Nutanix',
         logoHref: 'https://www.nutanix.com/',
@@ -128,7 +128,7 @@ const quoteCarouselItems = [
     },
     {
         header: 'Indeed merges code at scale',
-        quote: `On average, I'd say that for every automated merge request that we're able to merge we save an hour. That's a rough but conservative estimate. It shows, 
+        quote: `On average, I'd say that for every automated merge request that we're able to merge we save an hour. That's a rough but conservative estimate. It shows,
         though, that if we are doing several thousand automated merges in a year, we're saving several employee's worth of time.`,
         by: 'Jared Hodge, Senior Manager, Developer Experience at Indeed',
         logoHref: 'https://www.indeed.com/',
@@ -281,12 +281,12 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                 multiple teams in an org.
                             </p>
                             <p>
-                                Sourcegraph enables companies like Nutanix to completely remediate log4j vulnerabilities
+                                Sourcegraph enables companies like Nutanix to completely remediate Log4j vulnerabilities
                                 across multiple build and artifact management systems, as well as a large monorepo with
                                 many component branches and hundreds of git repositories, in under four days, and with
                                 100% certainty.
                             </p>
-                            <h6>Learn how to use Sourcegraph to identify and resolve every instance of log4j.</h6>
+                            <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
                             <Link className="font-weight-bold" to="/blog/log4j-log4shell-0-day">
                                 Read the blog post.
                             </Link>
