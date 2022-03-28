@@ -281,11 +281,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="d-flex flex-column">
-                        <Link
-                            className="btn btn-primary"
-                            to="/demo"
-                            title="Request a Demo."
-                        >
+                        <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
                             Request a demo
                         </Link>
                         <Link to="/use-cases" className="d-flex justify-content-center mt-4">
