@@ -233,6 +233,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked.`}
                             by="Bjørn Hal Sørensen, Web Architect at Lunar"
                             logoImage="/external-logos/lunar.svg"
+                            logoAlt="Lunar"
                             border={true}
                             headline="Lunar makes every developer autonomous"
                         />
@@ -261,6 +262,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         header="Convoy knows its codebase inside and out"
                         by="Owen Kim, Senior Software Engineer at Convoy"
                         logoImage="/external-logos/convoy-logo.svg"
+                        logoAlt="Convoy"
                         linkText="Read the case study"
                         link="/case-studies/convoy-improved-on-boarding"
                     />

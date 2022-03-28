@@ -116,6 +116,7 @@ const quoteCarouselItems = [
         by: 'Jon Kohler, Technical Director of Solution Engineering at Nutanix',
         logoHref: 'https://www.nutanix.com/',
         logoImage: '/external-logos/nutanix-logo.svg',
+        logoAlt: 'Nutanix',
     },
     {
         header: `Cloudflare proves to auditors that its code isn't vulnerable`,
@@ -125,6 +126,7 @@ const quoteCarouselItems = [
         logoImage: '/external-logos/cloudflare-color-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
+        logoAlt: 'Cloudflare',
     },
     {
         header: 'Indeed merges code at scale',
@@ -135,6 +137,7 @@ const quoteCarouselItems = [
         logoImage: '/external-logos/indeed-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/indeed-accelerates-development-velocity',
+        logoAlt: 'Indeed',
     },
 ]
 
