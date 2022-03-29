@@ -113,7 +113,7 @@ Experience level also affects how new hires onboard. Junior engineers generally 
 
 ---
 
-There's a lot more to successful developer onboarding than setting up a local dev environment. The value of cohesive onboarding practices becomes especially clear as an organization scales up its developer team, enabling your developers to get up to speed quickly while building confidence and knowledge around your codebase.
+There's a lot more to successful developer onboarding than setting up a local dev environment, and onboarding doesn't stop when a new hire reaches the end of their checklist. Check out [Continuous developer onboarding: A guide to cultivating a culture of professional growth in your engineering organization](https://about.sourcegraph.com/guides/continuous-developer-onboarding/).
 
 _This post was originally published in April 2020. It has been revised and updated as of March 9, 2022._
 
