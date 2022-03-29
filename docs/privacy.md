@@ -23,8 +23,8 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 - You can exercise your rights under privacy laws. ([read more](#global-privacy-practices))
 
 <span style="color:#b200f8;">
-  
-## What is Sourcegraph’s business model?
+
+  ## What is Sourcegraph’s business model?
 
 </span>
 
@@ -96,7 +96,7 @@ We may also collect analytics data, or use third-party analytics tools, to help 
 
 Although we do our best to honor the privacy preferences of our users, we are not able to respond to Do Not Track signals from your browser at this time.
 
-### How does Sourcegraph my automatically collected data?
+### How does Sourcegraph use my automatically collected data?
 
 We may use the automatically collected data to:
 
