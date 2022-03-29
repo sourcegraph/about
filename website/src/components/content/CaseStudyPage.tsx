@@ -124,8 +124,8 @@ export const AuthorBio: React.FunctionComponent<{
     title: string
     about: string
 }> = ({ customer, image, author, title, about }) => (
-    <div className="container d-flex justify-content-lg-around justify-content-between my-auto py-8">
-        <div className="col-lg-5 col-6 d-flex">
+    <div className="container d-flex flex-md-row flex-column justify-content-lg-around justify-content-between text-center text-md-start align-items-center align-items-md-start my-auto py-8">
+        <div className="col-lg-5 col-6 d-flex flex-md-row flex-column">
             {image && <img className="rounded-circle p-1 mr-5" style={{ border: '2px solid #00A1C7' }} src={image} alt={author} />}
             <div>
                 <h5 className="fw-600">{author}</h5>

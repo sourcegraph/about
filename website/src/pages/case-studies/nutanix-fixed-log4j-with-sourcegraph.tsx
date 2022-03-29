@@ -37,10 +37,10 @@ export default ((props: any) => (
                 </blockquote>
             </ContentSection>
 
-            <section className="d-flex">
-                <div className="bg-light-gray-2 p-lg-6 p-5 col-sm-12 col-md-6">
-                    <div className="mb-5 ml-5 row">
-                        <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
+            <section className="d-flex flex-column flex-md-row">
+                <div className="bg-light-gray-2 p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
+                    <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
+                        <div className="bg-white align-self-center align-self-sm-start col-1 height-40 p-0 rounded-circle text-center pt-1">
                             <ClipboardTextOutlineIcon color="#00A1C7" size={30} />
                         </div>
                         <div className="pl-3 w-75">
@@ -48,8 +48,8 @@ export default ((props: any) => (
                             <p>Find and fix security vulnerabilities quickly across the code base.</p>
                         </div>
                     </div>
-                    <div className="mb-5 ml-5 row">
-                        <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
+                    <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
+                        <div className="bg-white align-self-center align-self-sm-start col-1 height-40 p-0 rounded-circle text-center pt-1">
                             <FlagOutlineIcon color="#00A1C7" size={30} />
                         </div>
                         <div className="pl-3 w-75">
@@ -61,8 +61,8 @@ export default ((props: any) => (
                             </ul>
                         </div>
                     </div>
-                    <div className="mb-5 ml-5 row">
-                        <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
+                    <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
+                        <div className="bg-white align-self-center align-self-sm-start col-1 height-40 p-0 rounded-circle text-center pt-1">
                             <CheckCircleOutlineIcon color="#00A1C7" size={30} />
                         </div>
                         <div className="pl-3 w-75">
@@ -75,9 +75,9 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <div className="bg-gradient-blue-mist p-lg-6 p-5 col-sm-12 col-md-6">
-                    <div className="mb-5 ml-5 row">
-                        <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
+                <div className="bg-gradient-blue-mist p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
+                    <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
+                        <div className="bg-white align-self-center align-self-sm-start col-1 height-40 p-0 rounded-circle text-center pt-1">
                             <ChartBarIcon color="#00A1C7" size={30} />
                         </div>
                         <div className="pl-3 w-75">
@@ -153,7 +153,7 @@ export default ((props: any) => (
             </ContentSection>
 
             <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
-                <blockquote className="py-6">
+                <blockquote className="py-md-6">
                     <h3 className="font-weight-normal mw-600 mx-auto">
                         “It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much better than having to say, 'Well, boss, I think we got it all.’”
                     </h3>
