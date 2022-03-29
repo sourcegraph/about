@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { CaseStudyJumbotron } from '../../components/content/CaseStudyPage'
+import { CaseStudyJumbotron, AuthorBio } from '../../components/content/CaseStudyPage'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 import ClipboardTextOutlineIcon from 'mdi-react/ClipboardTextOutlineIcon'
@@ -39,14 +39,18 @@ export default ((props: any) => (
             <section className="d-flex">
                 <div className="bg-light-gray-2 p-6 col-sm-12 col-md-6">
                     <div className="mb-5 ml-5 row">
-                        <ClipboardTextOutlineIcon color="#00A1C7" size={30} />
+                        <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
+                            <ClipboardTextOutlineIcon color="#00A1C7" size={30} />
+                        </div>
                         <div className="pl-3 w-75">
                             <h5 className="font-weight-semibold">Use case</h5>
                             <p>Find and fix security vulnerabilities quickly across the code base.</p>
                         </div>
                     </div>
                     <div className="mb-5 ml-5 row">
-                        <FlagOutlineIcon color="#00A1C7" size={30} />
+                        <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
+                            <FlagOutlineIcon color="#00A1C7" size={30} />
+                        </div>
                         <div className="pl-3 w-75">
                             <h5 className="font-weight-semibold">Challenge</h5>
                             <ul className="pl-3">
@@ -57,7 +61,9 @@ export default ((props: any) => (
                         </div>
                     </div>
                     <div className="mb-5 ml-5 row">
-                        <CheckCircleOutlineIcon color="#00A1C7" size={30} />
+                        <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
+                            <CheckCircleOutlineIcon color="#00A1C7" size={30} />
+                        </div>
                         <div className="pl-3 w-75">
                             <h5 className="font-weight-semibold">Solution</h5>
                             <ul className="pl-3">
@@ -70,7 +76,9 @@ export default ((props: any) => (
                 </div>
                 <div className="bg-gradient-blue-mist p-6 col-sm-12 col-md-6">
                     <div className="mb-5 ml-5 row">
-                        <ChartBarIcon color="#00A1C7" size={30} />
+                        <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
+                            <ChartBarIcon color="#00A1C7" size={30} />
+                        </div>
                         <div className="pl-3 w-75">
                             <h5 className="font-weight-semibold">Result</h5>
                             <ul className="pl-3">
@@ -92,7 +100,11 @@ export default ((props: any) => (
                         Log4j: The vulnerability that rocked an industry
                     </h2>
                     <p>
-                        <span className="font-weight-bold">In December of 2021,</span> software companies around the world discovered that Log4j, an open-source logging library bundled in many software packages, contained significant vulnerabilities, one of which was a 10/10 on the CVSS scale. The Federal Trade Commission called the library “ubiquitous.”
+                        <span className="font-weight-bold">In December of 2021, </span>
+                        software companies around the world discovered that Log4j, an open-source logging library bundled in many software packages, contained significant vulnerabilities, one of which was a 10/10 on the CVSS scale. The Federal Trade Commission called the library “
+                         <a href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2022/01/ftc-warns-companies-remediate-log4j-security-vulnerability">
+                             ubiquitous
+                        </a>.”
                     </p>
                     <p>
                         Jon discovered that the offending module recurred throughout their build. “The more we dug,” Jon explained, “the more we realized this bug was everywhere and nowhere at the same time.”
@@ -108,14 +120,22 @@ export default ((props: any) => (
                     Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
                 </h2>
                 <p>
-                    <span className="font-weight-bold">Speed was of the essence,</span>
-                     but the timing of the Log4j news, which broke right before many employees go on vacation for the winter holidays, didn't make things easy.
+                    <span className="font-weight-bold">Speed was of the essence, </span>
+                    but the timing of the Log4j news, which broke right before many employees go on vacation for the winter holidays, didn't make things easy.
                 </p>
                 <p>
                     However, Nutanix armed its engineers with Sourcegraph. Within a couple of days, a few Sourcegraph queries identified every instance of the Log4j vulnerability.
                 </p>
                 <p>
-                    With the Log4j 1.x vulnerability, for instance, codebases were only insecure if they used JMSAppender. Jon used Sourcegraph to see where JMSAppender existed, fixed it, and sent out a release. “That took almost less than five minutes,” Jon said. Sourcegraph released a blog post that explained how other companies addressing Log4j could use code search for similar benefits.
+                    With the Log4j 1.x vulnerability, for instance, codebases were only insecure if they used
+                    <a href="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/net/JMSAppender.html">
+                        {' '}JMSAppender
+                    </a>
+                    . Jon used Sourcegraph to see where JMSAppender existed, fixed it, and sent out a release. “That took almost less than five minutes,” Jon said. Sourcegraph released a
+                    <Link to="/blog/log4j-log4shell-0-day/">
+                        {' '}blog post{' '}
+                    </Link>
+                    that explained how other companies addressing Log4j could use code search for similar benefits.
                 </p>
                 <p>
                     This speed gave the team a head start on mitigation.
@@ -146,8 +166,8 @@ export default ((props: any) => (
                         Nutanix has renewed confidence in its vulnerability remediation
                     </h2>
                     <p>
-                        <span className="font-weight-bold">Tracking down the Log4j vulnerability was,</span>
-                         in Jon's words, like “herding cats who were herding mice at the same time.”
+                        <span className="font-weight-bold">Tracking down the Log4j vulnerability was, </span>
+                        in Jon's words, like “herding cats who were herding mice at the same time.”
                     </p>
                     <p>
                         Without Sourcegraph, Jon would have either been tracking down whoever built each component to ask them how and where they used Log4j or stumbling through all of the company's repositories.
@@ -157,7 +177,11 @@ export default ((props: any) => (
                     </p>
                         Nutanix needed that confidence because of its sprawling codebase. One thing that made Log4j especially complicated for Nutanix—as it does for other large-scale enterprises—is that there were multiple source control systems in play. Sourcegraph provided them with “unified visibility,” according to Jon. “I can't imagine the pain of having to do that either with grep or OpenGrok,” he added.
                     <p>
-                        Confidence spread from Jon to the rest of the team and throughout the company. With search contexts, Jon was able to share relevant contexts and queries, showing the team how they could verify whether a given Log4j instance was present or absent. He could show them precisely what they changed.
+                        Confidence spread from Jon to the rest of the team and throughout the company. With
+                        <Link to="/blog/introducing-search-contexts/">
+                            {' '}search contexts
+                        </Link>
+                        , Jon was able to share relevant contexts and queries, showing the team how they could verify whether a given Log4j instance was present or absent. He could show them precisely what they changed.
                     </p>
                     <p>
                         “We used Sourcegraph contexts to see specifically where a service was at any given point in time,” Jon said. Without Sourcegraph, the team would've had to use code scanning, which takes a lot of time, or manual build inspections, which aren't foolproof.
@@ -204,6 +228,14 @@ export default ((props: any) => (
                     </p>
                 </section>
             </ContentSection>
+
+            <AuthorBio
+                customer="Nutanix"
+                image="/case-studies/jon-kohler.png"
+                author="Jon Kohler"
+                title="Technical Director of Solution Engineering at Nutanix"
+                about="Nutanix has 20,000 customers, an annual revenue of nearly $1.394 billion, and over 6,000 employees. Organizations around the world rely on Nutanix software as a single platform to manage any app at any scale for their hybrid multicloud environments."
+            />
 
             <div className="bg-light-gray2">
                 <ContentSection>

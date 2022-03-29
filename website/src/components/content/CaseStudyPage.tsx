@@ -117,6 +117,28 @@ export const CaseStudyJumbotron: React.FunctionComponent<{
     </div>
 )
 
+export const AuthorBio: React.FunctionComponent<{
+    customer: string
+    image?: string
+    author: string
+    title: string
+    about: string
+}> = ({ customer, image, author, title, about }) => (
+    <div className="container d-flex justify-content-around my-auto py-8">
+        <div className="col-5 d-flex">
+            {image && <img className="rounded-circle p-1 mr-5" style={{ border: '2px solid #00A1C7' }} src={image} alt={author} />}
+            <div>
+                <h4>{author}</h4>
+                <p>{title}</p>
+            </div>
+        </div>
+        <div className="col-5">
+            <h5>About {customer}</h5>
+            <p>{about}</p>
+        </div>
+    </div>
+)
+
 export const InContentBlockquote: React.FunctionComponent<{
     quote: string
     author?: string
