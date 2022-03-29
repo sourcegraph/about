@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { CaseStudyJumbotron, AuthorBio } from '../../components/content/CaseStudyPage'
+import { CaseStudiesList } from '../../components/product/CaseStudiesList'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 import ClipboardTextOutlineIcon from 'mdi-react/ClipboardTextOutlineIcon'
@@ -20,8 +21,8 @@ export default ((props: any) => (
         }}
     >
         <div className={`${slugify('Nutanix').toLowerCase()}-case-study`}>
-            <CaseStudyJumbotron className="bg-gradient-onahau-fog text-black height-450" color="white" customer="Nutanix">
-                <h1 className="text-black py-5 px-7 py-auto">Nutanix fixed Log4j quickly and confidently with Sourcegraph</h1>
+            <CaseStudyJumbotron className="bg-gradient-onahau-fog text-black height-md-450 height-auto p-2" color="white" customer="Nutanix">
+                <h1 className="pt-5 display-2 font-weight-bold mw-600 mx-auto">Nutanix fixed Log4j quickly and confidently with Sourcegraph</h1>
             </CaseStudyJumbotron>
 
             <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
@@ -29,21 +30,21 @@ export default ((props: any) => (
                     <div className="my-4">
                         <img src="/external-logos/nutanix-logo.svg" width="210px" alt="nutanix" />
                     </div>
-                    <h1 className="font-weight-normal">
+                    <h2 className="display-3 fw-550 mw-600 mx-auto">
                         "Sourcegraph was the right product at the right time."
-                    </h1>
+                    </h2>
                     <footer className="blockquote-footer">Jon Kohler, Technical Director of Solution Engineering at Nutanix</footer>
                 </blockquote>
             </ContentSection>
 
             <section className="d-flex">
-                <div className="bg-light-gray-2 p-6 col-sm-12 col-md-6">
+                <div className="bg-light-gray-2 p-lg-6 p-5 col-sm-12 col-md-6">
                     <div className="mb-5 ml-5 row">
                         <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
                             <ClipboardTextOutlineIcon color="#00A1C7" size={30} />
                         </div>
                         <div className="pl-3 w-75">
-                            <h5 className="font-weight-semibold">Use case</h5>
+                            <h5 className="fw-550">Use case</h5>
                             <p>Find and fix security vulnerabilities quickly across the code base.</p>
                         </div>
                     </div>
@@ -52,8 +53,8 @@ export default ((props: any) => (
                             <FlagOutlineIcon color="#00A1C7" size={30} />
                         </div>
                         <div className="pl-3 w-75">
-                            <h5 className="font-weight-semibold">Challenge</h5>
-                            <ul className="pl-3">
+                            <h5 className="fw-550">Challenge</h5>
+                            <ul className="pl-4">
                                 <li>Inability to efficiently find all the instances of Log4j in their large codebase.</li>
                                 <li>Lack of code-level clarity that vulnerabilities were completely resolved.</li>
                                 <li>Uncertainty about the scope and impact of the Log4j vulnerability.</li>
@@ -65,8 +66,8 @@ export default ((props: any) => (
                             <CheckCircleOutlineIcon color="#00A1C7" size={30} />
                         </div>
                         <div className="pl-3 w-75">
-                            <h5 className="font-weight-semibold">Solution</h5>
-                            <ul className="pl-3">
+                            <h5 className="fw-550">Solution</h5>
+                            <ul className="pl-4">
                                 <li>Able to quickly and efficiently find every instance of the Log4j vulnerability.</li>
                                 <li>Full confidence that all Log4j-vulnerable code was identified and resolved.</li>
                                 <li>Able to quickly validate that no known vulnerabilities exist in the codebase prior to each release.</li>
@@ -74,14 +75,14 @@ export default ((props: any) => (
                         </div>
                     </div>
                 </div>
-                <div className="bg-gradient-blue-mist p-6 col-sm-12 col-md-6">
+                <div className="bg-gradient-blue-mist p-lg-6 p-5 col-sm-12 col-md-6">
                     <div className="mb-5 ml-5 row">
                         <div className="bg-white col-1 height-40 p-0 rounded-circle text-center pt-1">
                             <ChartBarIcon color="#00A1C7" size={30} />
                         </div>
                         <div className="pl-3 w-75">
-                            <h5 className="font-weight-semibold">Result</h5>
-                            <ul className="pl-3">
+                            <h5 className="fw-550">Result</h5>
+                            <ul className="pl-4">
                                 <li>Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in less than 5 minutes.</li>
                                 <li>Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.</li>
                                 <li>Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.</li>
@@ -96,7 +97,7 @@ export default ((props: any) => (
                     <p>
                         As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the complexity involved in securing the multitude of applications and solutions required to power such a large organization. “Security is something that we care about intensely here at Nutanix,” Jon said, “because it’s part of our bedrock. It's why customers like us, and we have to take it seriously.”
                     </p>
-                    <h2 className="mt-6 mb-4 font-weight-normal">
+                    <h2 className="mt-6 mb-4 display-3 font-weight-bold mw-600">
                         Log4j: The vulnerability that rocked an industry
                     </h2>
                     <p>
@@ -116,7 +117,7 @@ export default ((props: any) => (
             </ContentSection>
 
             <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-7">
-                <h2 className="font-weight-normal mb-4">
+                <h2 className="mb-4 display-4 font-weight-bold mw-600">
                     Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
                 </h2>
                 <p>
@@ -153,7 +154,7 @@ export default ((props: any) => (
 
             <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
                 <blockquote className="py-6">
-                    <h3 className="font-weight-normal">
+                    <h3 className="font-weight-normal mw-600 mx-auto">
                         “It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much better than having to say, 'Well, boss, I think we got it all.’”
                     </h3>
                     <footer className="blockquote-footer">Jon Kohler</footer>
@@ -162,7 +163,7 @@ export default ((props: any) => (
 
             <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-7">
                 <section>
-                    <h2 className="font-weight-normal mb-4">
+                    <h2 className="mb-4 display-4 font-weight-bold mw-600">
                         Nutanix has renewed confidence in its vulnerability remediation
                     </h2>
                     <p>
@@ -189,27 +190,27 @@ export default ((props: any) => (
                 </section>
             </ContentSection>
 
-            <div className="bg-gradient-blue-mist p-md-7 p-sm-2">
-                <h3 className="text-center pb-5">Results</h3>
-                <div className="mb-5 ml-5 row">
+            <div className="bg-gradient-blue-mist py-lg-7 p-5">
+                <h2 className="text-center pb-5 display-3 font-weight-bold">Results</h2>
+                <div className="mb-5 row">
                     <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 font-weight-semibold">5 min</h3>
-                        <p>Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in less than 5 minutes.</p>
+                        <h3 className="pb-3 fw-550 text-blue-7">5 min</h3>
+                        <p className="mw-250 mx-auto">Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in less than 5 minutes.</p>
                     </div>
                     <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 font-weight-semibold">4 days</h3>
-                        <p>Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.</p>
+                        <h3 className="pb-3 fw-550">4 days</h3>
+                        <p className="mw-250 mx-auto">Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.</p>
                     </div>
                     <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 font-weight-semibold">100%</h3>
-                        <p>Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.</p>
+                        <h3 className="pb-3 fw-550">100%</h3>
+                        <p className="mw-250 mx-auto">Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.</p>
                     </div>
                 </div>
             </div>
 
             <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-7">
                 <section>
-                    <h2 className="font-weight-normal mb-4">
+                    <h2 className="mb-4 display-4 font-weight-bold mw-500">
                         Log4j is the tip of the open-source vulnerability iceberg
                     </h2>
                     <p>
@@ -241,7 +242,7 @@ export default ((props: any) => (
                 <ContentSection>
                     <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
                         <div className="mb-5 d-flex flex-column">
-                            <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
+                            <h1 className="text-center font-weight-bold">Get started with Sourcegraph</h1>
                             <p className="text-center">Understand, fix, and automate changes across your entire codebase.</p>
                         </div>
                         <div className="d-flex flex-column">
@@ -259,6 +260,11 @@ export default ((props: any) => (
                     </div>
                 </ContentSection>
             </div>
+
+            <ContentSection color="white" className="py-lg-7 py-5">
+                <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>
+                <CaseStudiesList listLength={4} />
+            </ContentSection>
         </div>
     </Layout>
 )) as React.FunctionComponent<any>

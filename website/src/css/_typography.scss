@@ -1,0 +1,23 @@
+
+@import 'colors';
+
+// Custom font weights
+$font-weights: 500, 550, 600, 700;
+
+// Custom font weight utility classes
+@each $font-weight in $font-weights {
+    .fw-#{$font-weight} {
+        font-weight: #{$font-weight};
+    }
+}
+
+
+// Custom font colors
+$colors: blue-7, light-5;
+
+// Custom font color utility classes
+@each $color in $colors {
+    .text-#{$color} {
+        color: #{$color};
+    }
+}

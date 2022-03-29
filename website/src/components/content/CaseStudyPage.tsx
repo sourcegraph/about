@@ -104,10 +104,10 @@ export const CaseStudyJumbotron: React.FunctionComponent<{
     children?: React.ReactNode
 }> = ({ customer, logo, className = '', color = 'dark', children }) => (
     <div className={`jumbotron rounded-0 d-flex flex-column ${COLORS[color]} ${className}`}>
-        <div className="pl-7 pt-5">
+        <div className="pl-lg-7 pl-4 pl-sm-0 pt-5">
             <BackButton href={'/case-studies'} text="Case Studies" bold={true} />
         </div>
-        <div className="container text-center my-auto">
+        <div className="container text-md-center">
             {logo && <img className="case-studies__logo my-3" src={logo} alt={customer} />}
             <span className="case-studies__label d-block mt-1">
                 <span className="sr-only">{customer}</span> case study
@@ -124,16 +124,16 @@ export const AuthorBio: React.FunctionComponent<{
     title: string
     about: string
 }> = ({ customer, image, author, title, about }) => (
-    <div className="container d-flex justify-content-around my-auto py-8">
-        <div className="col-5 d-flex">
+    <div className="container d-flex justify-content-lg-around justify-content-between my-auto py-8">
+        <div className="col-lg-5 col-6 d-flex">
             {image && <img className="rounded-circle p-1 mr-5" style={{ border: '2px solid #00A1C7' }} src={image} alt={author} />}
             <div>
-                <h4>{author}</h4>
+                <h5 className="fw-600">{author}</h5>
                 <p>{title}</p>
             </div>
         </div>
-        <div className="col-5">
-            <h5>About {customer}</h5>
+        <div className="col-lg-5 col-6">
+            <h5 className="fw-600">About {customer}</h5>
             <p>{about}</p>
         </div>
     </div>
