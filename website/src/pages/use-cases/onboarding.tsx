@@ -46,8 +46,8 @@ const items = [
                 header="Enable developers to learn by example"
                 text={
                     <p>
-                        With Sourcegraph <Link to="/code-search">Code Search</Link>, you can find examples to learn from
-                        across all of your company's private repositories and the open source universe.
+                        With <Link to="/code-search">Code Search</Link>, you can find examples to learn from across all
+                        of your company's private repositories and the open source universe.
                     </p>
                 }
             />
@@ -92,9 +92,9 @@ const items = [
                 header="Document and share actionable code snippets"
                 text={
                     <p>
-                        With <a href="https://docs.sourcegraph.com/notebooks"> Sourcegraph Notebooks</a>, teams can
-                        create always up-to-date, living documentation with familiar features like Markdown and novel
-                        capabilities like embedded searches, snippets, and symbols.
+                        With <a href="https://docs.sourcegraph.com/notebooks"> Notebooks</a>, teams can create always
+                        up-to-date, living documentation with familiar features like Markdown and novel capabilities
+                        like embedded searches, snippets, and symbols.
                     </p>
                 }
             />
@@ -232,8 +232,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             quote={`Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. 
                             This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked.`}
                             by="Bjørn Hal Sørensen, Web Architect at Lunar"
-                            logoHref="https://www.lunar.app/"
                             logoImage="/external-logos/lunar.svg"
+                            logoAlt="Lunar"
                             border={true}
                             headline="Lunar makes every developer autonomous"
                         />
@@ -261,8 +261,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             and self-service during their investigations.`}
                         header="Convoy knows its codebase inside and out"
                         by="Owen Kim, Senior Software Engineer at Convoy"
-                        logoHref="https://convoy.com"
                         logoImage="/external-logos/convoy-logo.svg"
+                        logoAlt="Convoy"
                         linkText="Read the case study"
                         link="/case-studies/convoy-improved-on-boarding"
                     />
