@@ -24,7 +24,7 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 
 <span style="color:#b200f8;">
 
-  ## What is Sourcegraph’s business model?
+## What is Sourcegraph’s business model?
 
 </span>
 
