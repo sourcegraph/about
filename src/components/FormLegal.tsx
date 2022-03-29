@@ -1,5 +1,6 @@
-import Link from 'next/link'
 import { FunctionComponent } from 'react'
+
+import Link from 'next/link'
 
 export const FormLegal: FunctionComponent = () => (
     <p>
