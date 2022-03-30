@@ -195,15 +195,15 @@ export default ((props: any) => (
                 <div className="mb-5 row">
                     <div className="col-sm-12 col-md-4 text-center">
                         <h3 className="pb-3 fw-550 text-blue7">{'<'} 5 min</h3>
-                        <p className="mw-250 mx-auto">Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in less than 5 minutes.</p>
+                        <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in less than 5 minutes.</p>
                     </div>
                     <div className="col-sm-12 col-md-4 text-center">
                         <h3 className="pb-3 fw-550 text-blue7">4 days</h3>
-                        <p className="mw-250 mx-auto">Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.</p>
+                        <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.</p>
                     </div>
                     <div className="col-sm-12 col-md-4 text-center">
                         <h3 className="pb-3 fw-550 text-blue7">100%</h3>
-                        <p className="mw-250 mx-auto">Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.</p>
+                        <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.</p>
                     </div>
                 </div>
             </div>
