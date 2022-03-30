@@ -104,14 +104,14 @@ export const CaseStudyJumbotron: React.FunctionComponent<{
     children?: React.ReactNode
 }> = ({ customer, logo, className = '', color = 'dark', children }) => (
     <div className={`jumbotron rounded-0 d-flex flex-column ${COLORS[color]} ${className}`}>
-        <div className="pl-lg-7 pl-4 pl-sm-0 pt-5">
-            <BackButton href={'/case-studies'} text="Case Studies" bold={true} />
+        <div className="pl-lg-7 pl-sm-0 pt-5 container">
+            <BackButton href={'/case-studies'} text="Case Studies" bold={true} dark={color === 'dark'} />
         </div>
         <div className="container text-md-center">
             {logo && <img className="case-studies__logo my-3" src={logo} alt={customer} />}
-            <span className="case-studies__label d-block mt-1">
-                <span className="sr-only">{customer}</span> case study
-            </span>
+            <h5 className="font-weight-bold mt-1">
+                <span className="sr-only">{customer}</span> Case Study
+            </h5>
             {children}
         </div>
     </div>

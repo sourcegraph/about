@@ -1,5 +1,5 @@
 
-@import 'colors';
+@import '@styles/colors';
 
 // Custom font weights
 $font-weights: 500, 550, 600, 700;
@@ -12,12 +12,10 @@ $font-weights: 500, 550, 600, 700;
 }
 
 
-// Custom font colors
-$colors: blue-7, light-5;
+$colors: ("blue7": $blue-7, "gray": $gray);
 
-// Custom font color utility classes
-@each $color in $colors {
-    .text-#{$color} {
-        color: #{$color};
-    }
+@each $name, $glyph in $colors {
+  .text-#{$name} {
+    color: $glyph;
+  }
 }

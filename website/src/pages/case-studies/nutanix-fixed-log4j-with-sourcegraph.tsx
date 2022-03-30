@@ -22,7 +22,7 @@ export default ((props: any) => (
     >
         <div className={`${slugify('Nutanix').toLowerCase()}-case-study`}>
             <CaseStudyJumbotron className="bg-gradient-onahau-fog text-black height-md-450 height-auto p-2" color="white" customer="Nutanix">
-                <h1 className="pt-5 display-2 font-weight-bold mw-600 mx-auto">Nutanix fixed Log4j quickly and confidently with Sourcegraph</h1>
+                <h1 className="pt-5 pb-6 display-2 font-weight-bold mw-600 mx-auto">Nutanix fixed Log4j quickly and confidently with Sourcegraph</h1>
             </CaseStudyJumbotron>
 
             <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
@@ -40,19 +40,19 @@ export default ((props: any) => (
             <section className="d-flex flex-column flex-md-row">
                 <div className="bg-light-gray-2 p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
                     <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="bg-white align-self-center align-self-sm-start col-1 height-40 p-0 rounded-circle text-center pt-1">
-                            <ClipboardTextOutlineIcon color="#00A1C7" size={30} />
+                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center pt-1 mw-50">
+                            <ClipboardTextOutlineIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
-                        <div className="pl-3 w-75">
+                        <div className="pl-3 col-11 col-lg-9">
                             <h5 className="fw-550">Use case</h5>
                             <p>Find and fix security vulnerabilities quickly across the code base.</p>
                         </div>
                     </div>
                     <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="bg-white align-self-center align-self-sm-start col-1 height-40 p-0 rounded-circle text-center pt-1">
-                            <FlagOutlineIcon color="#00A1C7" size={30} />
+                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center pt-1 mw-50">
+                            <FlagOutlineIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
-                        <div className="pl-3 w-75">
+                        <div className="pl-3 col-11 col-lg-9">
                             <h5 className="fw-550">Challenge</h5>
                             <ul className="pl-4">
                                 <li>Inability to efficiently find all the instances of Log4j in their large codebase.</li>
@@ -62,10 +62,10 @@ export default ((props: any) => (
                         </div>
                     </div>
                     <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="bg-white align-self-center align-self-sm-start col-1 height-40 p-0 rounded-circle text-center pt-1">
-                            <CheckCircleOutlineIcon color="#00A1C7" size={30} />
+                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center pt-1 mw-50">
+                            <CheckCircleOutlineIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
-                        <div className="pl-3 w-75">
+                        <div className="pl-3 col-11 col-lg-9">
                             <h5 className="fw-550">Solution</h5>
                             <ul className="pl-4">
                                 <li>Able to quickly and efficiently find every instance of the Log4j vulnerability.</li>
@@ -77,10 +77,10 @@ export default ((props: any) => (
                 </div>
                 <div className="bg-gradient-blue-mist p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
                     <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="bg-white align-self-center align-self-sm-start col-1 height-40 p-0 rounded-circle text-center pt-1">
-                            <ChartBarIcon color="#00A1C7" size={30} />
+                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center pt-1 mw-50">
+                            <ChartBarIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
-                        <div className="pl-3 w-75">
+                        <div className="pl-3 col-11 col-lg-9">
                             <h5 className="fw-550">Result</h5>
                             <ul className="pl-4">
                                 <li>Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in less than 5 minutes.</li>
@@ -154,7 +154,7 @@ export default ((props: any) => (
 
             <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
                 <blockquote className="py-md-6">
-                    <h3 className="font-weight-normal mw-600 mx-auto">
+                    <h3 className="font-weight-normal text-gray mw-600 mx-auto">
                         “It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much better than having to say, 'Well, boss, I think we got it all.’”
                     </h3>
                     <footer className="blockquote-footer">Jon Kohler</footer>
@@ -194,15 +194,15 @@ export default ((props: any) => (
                 <h2 className="text-center pb-5 display-3 font-weight-bold">Results</h2>
                 <div className="mb-5 row">
                     <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 fw-550 text-blue-7">5 min</h3>
+                        <h3 className="pb-3 fw-550 text-blue7">{'<'} 5 min</h3>
                         <p className="mw-250 mx-auto">Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in less than 5 minutes.</p>
                     </div>
                     <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 fw-550">4 days</h3>
+                        <h3 className="pb-3 fw-550 text-blue7">4 days</h3>
                         <p className="mw-250 mx-auto">Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.</p>
                     </div>
                     <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 fw-550">100%</h3>
+                        <h3 className="pb-3 fw-550 text-blue7">100%</h3>
                         <p className="mw-250 mx-auto">Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.</p>
                     </div>
                 </div>
