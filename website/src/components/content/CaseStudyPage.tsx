@@ -5,6 +5,7 @@ import { COLORS } from '../Jumbotron'
 import { BackButton } from '../../components/BackButton'
 import { ContentSection } from './ContentSection'
 import { buttonStyle, buttonLocation } from '../../tracking'
+
 interface Quote {
     quote: string
     author: string
