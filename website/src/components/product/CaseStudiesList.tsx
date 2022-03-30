@@ -94,7 +94,10 @@ const CASESTUDIES: {
     },
 ]
 
-export const CaseStudiesList: React.FunctionComponent<{ className?: string, listLength?: number }> = ({ className = '', listLength = CASESTUDIES.length }) => (
+export const CaseStudiesList: React.FunctionComponent<{ className?: string; listLength?: number }> = ({
+    className = '',
+    listLength = CASESTUDIES.length,
+}) => (
     <div id="customers" className={`case-studies-section container-fluid ${className}`}>
         <div className="card-deck">
             {CASESTUDIES.slice(0, listLength).map((study, i) => (
@@ -104,9 +107,14 @@ export const CaseStudiesList: React.FunctionComponent<{ className?: string, list
                         <div className="card-body">
                             <img className="case-studies-section__item-logo " src={study.logo} alt="Card image cap" />
                             <p className="card-text">
-                                {study.title}{" "}
+                                {study.title}{' '}
                                 <span>
-                                    <a href={study.url} className="card-link" target={study.external ? "_blank" : ""} rel={study.external ? "nofollow noopener" : ""}>
+                                    <a
+                                        href={study.url}
+                                        className="card-link"
+                                        target={study.external ? '_blank' : ''}
+                                        rel={study.external ? 'nofollow noopener' : ''}
+                                    >
                                         Learn more.
                                     </a>
                                 </span>

@@ -1,4 +1,3 @@
-
 @import '@styles/colors';
 
 // Custom font weights
@@ -11,11 +10,13 @@ $font-weights: 500, 550, 600, 700;
     }
 }
 
-
-$colors: ("blue7": $blue-7, "gray": $gray);
+$colors: (
+    'blue7': $blue-7,
+    'gray': $gray,
+);
 
 @each $name, $glyph in $colors {
-  .text-#{$name} {
-    color: $glyph;
-  }
+    .text-#{$name} {
+        color: $glyph;
+    }
 }
