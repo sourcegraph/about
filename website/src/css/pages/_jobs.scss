@@ -245,6 +245,23 @@
         }
     }
 
+    .reviews-carousel {
+        height: 800px;
+        display: table;
+        width: 100%;
+        @media (max-width: 768px) {
+            height: 650px;
+        }
+        @media (max-width: 576px) {
+            height: 575px;
+        }
+
+        .carousel-inner {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
     .contact-us {
         padding: 170px 0 390px 0;
 
