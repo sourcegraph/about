@@ -126,7 +126,7 @@ export const AuthorBio: React.FunctionComponent<{
 }> = ({ customer, image, author, title, about }) => (
     <div className="d-flex flex-md-row flex-column align-items-center align-items-md-start col-12 py-6 py-md-8">
         {image &&
-            <div className="col-3 text-md-right">
+            <div className="col-md-3 text-center text-md-right">
                 <img className="rounded-circle p-1" style={{ border: '2px solid #00A1C7' }} src={image} alt={author} />
             </div>
         }

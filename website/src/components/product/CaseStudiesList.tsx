@@ -98,7 +98,8 @@ export const CaseStudiesList: React.FunctionComponent<{ className?: string, list
     <div id="customers" className={`case-studies-section container-fluid ${className}`}>
         <div className="card-deck">
             {CASESTUDIES.slice(0, listLength).map((study, i) => (
-                <div key={i} className="col-lg-6 mb-6">
+                // 3 Cards per row if this is the Case Study index pg, otherwise it's being re-used as a preview w/ 2 Cards per row
+                <div key={i} className={`col-lg-${listLength === CASESTUDIES.length ? 4 : 6} mb-6`}>
                     <div key={i} className={`${study.name.replace(' ', '-').toLowerCase()} card`}>
                         <div className="card-body">
                             <img className="case-studies-section__item-logo " src={study.logo} alt="Card image cap" />
