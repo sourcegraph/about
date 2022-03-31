@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
-import { CaseStudiesList } from '../../components/product/CaseStudiesList'
+import { CaseStudyCard, CASESTUDIES } from '../../components/product/CaseStudyCard'
 import { TrySourcegraph } from '../../components/TrySourcegraph'
 
 const DESCRIPTION = 'Learn how engineering teams use Sourcegraph Universal Code Search.'
@@ -25,7 +25,15 @@ export default ((props: any) => (
                 <h2>Learn how engineering teams use Universal Code Search</h2>
             </ContentSection>
             <ContentSection>
-                <CaseStudiesList />
+                <div className="d-flex flex-wrap">
+                    {CASESTUDIES.map((study, i) => (
+                        <div key={i} className="col-lg-4 mb-6">
+                            <div key={i} className="card">
+                                <CaseStudyCard study={study} />
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </ContentSection>
             <TrySourcegraph className="my-6" />
         </div>

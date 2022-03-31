@@ -1,13 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const CASESTUDIES: {
+interface CaseStudy {
     name: string
     logo: string
     title: string
     url: string
     external?: boolean
-}[] = [
+}
+
+export const CASESTUDIES: CaseStudy[] = [
     {
         name: 'FactSet',
         logo: '/external-logos/factset-logo.svg',
@@ -95,39 +97,25 @@ const CASESTUDIES: {
     },
 ]
 
-export const CaseStudiesList: React.FunctionComponent<{ className?: string; listLength?: number }> = ({
-    className = '',
-    listLength = CASESTUDIES.length,
-}) => (
-    <div id="customers" className={`case-studies-section container-fluid ${className}`}>
-        <div className="card-deck">
-            {CASESTUDIES.slice(0, listLength).map((study, i) => (
-                // 3 Cards per row if this is the Case Study index pg, otherwise it's being re-used as a preview w/ 2 Cards per row
-                <div key={i} className={`col-lg-${listLength === CASESTUDIES.length ? 4 : 6} mb-6`}>
-                    <div key={i} className={`${study.name.replace(' ', '-').toLowerCase()} card`}>
-                        <div className="card-body">
-                            <img className="case-studies-section__item-logo " src={study.logo} alt="Card image cap" />
-                            <p className="card-text">
-                                {study.title}{' '}
-                                <span>
-                                    {study.external ? (
-                                        <a
-                                            href={study.url}
-                                            className="card-link"
-                                            target="_blank"
-                                            rel="nofollow noopener"
-                                        >
-                                            Learn more.
-                                        </a>
-                                    ) : (
-                                        <Link to={study.url}>Learn more.</Link>
-                                    )}
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            ))}
-        </div>
+export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy }> = ({ study }) => (
+    <div className="card-body">
+        <img className="height-50 mw-200 mb-4" src={study.logo} alt="Card image cap" />
+        <p className="card-text">
+            {study.title}{' '}
+            <span>
+                {study.external ? (
+                    <a
+                        href={study.url}
+                        className="card-link"
+                        target="_blank"
+                        rel="nofollow noopener"
+                    >
+                        Learn more.
+                    </a>
+                ) : (
+                    <Link to={study.url}>Learn more.</Link>
+                )}
+            </span>
+        </p>
     </div>
 )

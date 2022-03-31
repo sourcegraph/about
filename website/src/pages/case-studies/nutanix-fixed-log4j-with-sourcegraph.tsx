@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { Blockquote, BlockquoteWithLogo } from '../../components/Blockquote'
 import { CaseStudyJumbotron, AuthorBio } from '../../components/content/CaseStudyPage'
-import { CaseStudiesList } from '../../components/product/CaseStudiesList'
+import { CaseStudyCard, CASESTUDIES } from '../../components/product/CaseStudyCard'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
 import ClipboardTextOutlineIcon from 'mdi-react/ClipboardTextOutlineIcon'
@@ -333,7 +333,13 @@ export default ((props: any) => (
 
             <ContentSection color="white" className="py-lg-7 py-5">
                 <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>
-                <CaseStudiesList listLength={4} />
+                <div className="d-flex flex-wrap">
+                    {CASESTUDIES.slice(0, 4).map((study, i) => (
+                        <div key={i} className="col-lg-6 mb-6">
+                            <CaseStudyCard study={study} />
+                        </div>
+                    ))}
+                </div>
             </ContentSection>
         </div>
     </Layout>
