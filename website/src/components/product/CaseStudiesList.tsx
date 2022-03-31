@@ -119,9 +119,9 @@ export const CaseStudiesList: React.FunctionComponent<{ className?: string; list
                                         >
                                             Learn more.
                                         </a>
-                                     ) : (
+                                    ) : (
                                         <Link to={study.url}>Learn more.</Link>
-                                     )}
+                                    )}
                                 </span>
                             </p>
                         </div>
