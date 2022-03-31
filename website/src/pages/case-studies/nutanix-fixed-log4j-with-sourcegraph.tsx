@@ -1,17 +1,19 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
+import React, { FunctionComponent } from 'react'
+import { PageProps, Link } from 'gatsby'
+import slugify from 'slugify'
+
 import { Blockquote, BlockquoteWithLogo } from '../../components/Blockquote'
 import { CaseStudyJumbotron, AuthorBio } from '../../components/content/CaseStudyPage'
 import { CaseStudyCard, CASESTUDIES } from '../../components/product/CaseStudyCard'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
+
 import ClipboardTextOutlineIcon from 'mdi-react/ClipboardTextOutlineIcon'
 import ChartBarIcon from 'mdi-react/ChartBarIcon'
 import CheckCircleOutlineIcon from 'mdi-react/CheckCircleOutlineIcon'
 import FlagOutlineIcon from 'mdi-react/FlagOutlineIcon'
-import slugify from 'slugify'
 
-export default ((props: any) => (
+const NutanixCaseStudy: FunctionComponent<PageProps> = (props) => (
     <Layout
         location={props.location}
         meta={{
@@ -343,4 +345,6 @@ export default ((props: any) => (
             </ContentSection>
         </div>
     </Layout>
-)) as React.FunctionComponent<any>
+)
+
+export default NutanixCaseStudy
