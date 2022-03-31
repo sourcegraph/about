@@ -321,7 +321,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>
                 <div className="d-flex flex-wrap">
                     {CASESTUDIES.slice(0, 4).map((study, i) => (
-                        <div key={i} className="col-lg-6 mb-6">
+                        <div key={i} className="col-lg-6 mb-3">
                             <CaseStudyCard study={study} />
                         </div>
                     ))}
