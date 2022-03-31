@@ -320,13 +320,9 @@ export default ((props: any) => (
                             </p>
                         </div>
                         <div className="d-flex flex-column">
-                            <a
-                                className="btn btn-primary"
-                                href="https://info.sourcegraph.com/demo-request"
-                                title="Request a Demo."
-                            >
+                            <Link to="/demo" className="btn btn-primary">
                                 Request a demo
-                            </a>
+                            </Link>
                             <Link to="/get-started" className="d-flex justify-content-center mt-4">
                                 <p className="font-weight-bold">Try Sourcegraph now</p>
                             </Link>
