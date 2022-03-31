@@ -188,7 +188,10 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-6 display-4 text-gray font-weight-normal">
+            <ContentSection
+                color="white"
+                className="py-6 text-center col-sm-12 col-md-9 col-lg-6 display-4 text-gray font-weight-normal"
+            >
                 <Blockquote
                     border={true}
                     quote={`It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much
