@@ -6,11 +6,11 @@ import React, { FunctionComponent, ReactFragment } from 'react'
 export const Blockquote: FunctionComponent<{
     quote: string
     by?: string | ReactFragment
-    logoHref?: string
     logoImage?: string
+    logoAlt?: string
     border?: boolean
     headline?: string
-}> = ({ quote, by, logoHref, logoImage, border, headline }) => {
+}> = ({ quote, by, logoImage, border, headline, logoAlt }) => {
     const quoteStyles = 'p-3 rounded rounded-lg text-center'
 
     return (
@@ -23,10 +23,10 @@ export const Blockquote: FunctionComponent<{
                 }
             >
                 {border && headline ? (
-                    <p className="font-weight-normal">
+                    <div className="case-studies__quote--in-content--section">
                         <h5 className="font-weight-bold mb-4">{headline}</h5>
-                        &ldquo;{quote}&rdquo;
-                    </p>
+                        <div className="font-weight-normal">&ldquo;{quote}&rdquo;</div>
+                    </div>
                 ) : (
                     <>&ldquo;{quote}&rdquo;</>
                 )}
@@ -37,11 +37,9 @@ export const Blockquote: FunctionComponent<{
                     </>
                 )}
             </blockquote>
-            {logoHref && logoImage && (
+            {logoImage && logoAlt && (
                 <div className="d-flex justify-content-center">
-                    <a href={logoHref} className="btn">
-                        <img src={logoImage} width="110px" alt="Prezi" />
-                    </a>
+                    <img src={logoImage} width="110px" alt={logoAlt} />
                 </div>
             )}
         </>
@@ -54,20 +52,25 @@ export const BlockquoteWithLogo: FunctionComponent<{
     by?: string | ReactFragment
     logoHref?: string
     logoImage?: string
+    logoAlt?: string
     linkText?: string
     link?: string
-}> = ({ quote, header, by, logoHref, logoImage, linkText, link }) => (
+}> = ({ quote, header, by, logoHref, logoImage, linkText, link, logoAlt }) => (
     <>
         {header && <h1 className="font-weight-bold">{header}</h1>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
             <h4 className="font-weight-normal">&ldquo;{quote}&rdquo;</h4>
             {by && <div className="pt-3 text-muted text-center">&mdash; {by}</div>}
         </blockquote>
-        {logoHref && logoImage && (
+        {logoImage && logoAlt && (
             <div className="d-flex justify-content-center">
-                <a href={logoHref} className="btn">
-                    <img src={logoImage} width="110px" alt="Prezi" />
-                </a>
+                {logoHref ? (
+                    <a href={logoHref} className="btn">
+                        <img src={logoImage} width="110px" alt={logoAlt} />
+                    </a>
+                ) : (
+                    <img src={logoImage} width="110px" alt={logoAlt} />
+                )}
             </div>
         )}
         {linkText && link && (

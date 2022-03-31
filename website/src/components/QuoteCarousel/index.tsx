@@ -12,6 +12,7 @@ interface Blockquote {
     by?: string | ReactFragment
     logoHref?: string
     logoImage?: string
+    logoAlt?: string
     linkText?: string
     link?: string
 }
@@ -45,6 +46,7 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
                             by={item.by}
                             logoHref={item.logoHref}
                             logoImage={item.logoImage}
+                            logoAlt={item.logoAlt}
                             linkText={item.linkText}
                             link={item.link}
                         />
