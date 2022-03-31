@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import slugify from 'slugify'
 import { COLORS } from '../Jumbotron'
-import { BackButton } from '../../components/BackButton'
+import { BackButtonBold, BackButtonLight } from '../../components/BackButton'
 import { ContentSection } from './ContentSection'
 import { buttonStyle, buttonLocation } from '../../tracking'
 
@@ -106,7 +106,11 @@ export const CaseStudyJumbotron: React.FunctionComponent<{
 }> = ({ customer, logo, className = '', color = 'dark', children }) => (
     <div className={`jumbotron rounded-0 d-flex flex-column ${COLORS[color]} ${className}`}>
         <div className="pl-lg-7 pl-sm-0 pt-5 container">
-            <BackButton href={'/case-studies'} text="Case Studies" bold={true} dark={color === 'dark'} />
+            {color === 'dark' ? (
+                <BackButtonLight href={'/case-studies'} text="Case Studies" />
+            ) : (
+                <BackButtonBold href={'/case-studies'} text="Case Studies" />
+            )}
         </div>
         <div className="container text-md-center">
             {logo && <img className="case-studies__logo my-3" src={logo} alt={customer} />}

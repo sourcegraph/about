@@ -5,7 +5,7 @@ import CompassOutlineIcon from 'mdi-react/CompassOutlineIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
-import { BackButton } from '../../components/BackButton'
+import { BackButtonBold } from '../../components/BackButton'
 import { Blockquote, BlockquoteWithLogo } from '../../components/Blockquote'
 import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
@@ -139,7 +139,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="container pb-4">
                     <div className="row">
                         <div className="col-lg-7 mb-8 mt-7">
-                            <BackButton href="/use-cases" text="USE CASES" bold={true} />
+                            <BackButtonBold href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">Accelerate developer onboarding</h1>
                             <div className="display-4 font-weight-normal mb-5">
                                 Decrease time to first commit for new developers, help existing engineers master your
@@ -229,7 +229,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="col-lg-5 mt-lg-0 mt-7">
                         <Blockquote
-                            quote={`Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. 
+                            quote={`Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues.
                             This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked.`}
                             by="Bjørn Hal Sørensen, Web Architect at Lunar"
                             logoImage="/external-logos/lunar.svg"
@@ -257,7 +257,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             <ContentSection>
                 <div className="d-flex flex-column justify-content-center text-center px-lg-8">
                     <BlockquoteWithLogo
-                        quote={`For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, 
+                        quote={`For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives,
                             and self-service during their investigations.`}
                         header="Convoy knows its codebase inside and out"
                         by="Owen Kim, Senior Software Engineer at Convoy"

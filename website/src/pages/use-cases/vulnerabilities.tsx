@@ -5,7 +5,7 @@ import TimerOutlineIcon from 'mdi-react/TimerOutlineIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
-import { BackButton } from '../../components/BackButton'
+import { BackButtonBold } from '../../components/BackButton'
 import { BlogListItem } from '../../components/BlogListItem'
 import { QuoteCarousel } from '../../components/QuoteCarousel'
 import CustomCarousel from '../../components/CustomCarousel'
@@ -182,7 +182,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="container pb-4">
                     <div className="row">
                         <div className="col-lg-7 mb-8 mt-7">
-                            <BackButton href="/use-cases" text="USE CASES" bold={true} />
+                            <BackButtonBold href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">Find and fix security vulnerabilities</h1>
                             <div className="display-4 font-weight-normal mb-5">
                                 Search across all your repositories to find and resolve vulnerabilities in minutes, not
