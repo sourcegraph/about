@@ -32,7 +32,7 @@ export default ((props: any) => (
                 </h1>
             </CaseStudyJumbotron>
 
-            <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
+            <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-6">
                 <BlockquoteWithLogo
                     quote={`Sourcegraph was the right product at the right time.`}
                     by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
@@ -121,7 +121,7 @@ export default ((props: any) => (
                 </div>
             </section>
 
-            <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-7">
+            <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-6">
                 <section>
                     <p>
                         As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
@@ -156,7 +156,7 @@ export default ((props: any) => (
                 </section>
             </ContentSection>
 
-            <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-7">
+            <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-6">
                 <h2 className="mb-4 display-4 font-weight-bold mw-600">
                     Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
                 </h2>
@@ -196,7 +196,7 @@ export default ((props: any) => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
+            <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-6">
                 <Blockquote
                     quote={`It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much
                     better than having to say, 'Well, boss, I think we got it all.’`}
@@ -211,7 +211,7 @@ export default ((props: any) => (
                 </blockquote> */}
             </ContentSection>
 
-            <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-7">
+            <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-6">
                 <section>
                     <h2 className="mb-4 display-4 font-weight-bold mw-600">
                         Nutanix has renewed confidence in its vulnerability remediation
@@ -275,7 +275,7 @@ export default ((props: any) => (
                 </div>
             </div>
 
-            <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-7">
+            <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-6">
                 <section>
                     <h2 className="mb-4 display-4 font-weight-bold mw-500">
                         Log4j is the tip of the open-source vulnerability iceberg
