@@ -245,26 +245,6 @@
         }
     }
 
-    .reviews-carousel {
-        height: 800px;
-        display: table;
-        width: 100%;
-        @media (max-width: 768px) {
-            height: 775px;
-        }
-        @media (max-width: 576px) {
-            height: 650px;
-        }
-
-        .carousel-inner {
-            display: table-cell;
-            vertical-align: middle;
-            .carousel-item {
-                padding-bottom: 10%;
-            }
-        }
-    }
-
     .contact-us {
         padding: 170px 0 390px 0;
 
