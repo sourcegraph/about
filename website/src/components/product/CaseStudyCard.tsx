@@ -104,12 +104,7 @@ export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy }> = ({ s
             {study.title}{' '}
             <span>
                 {study.external ? (
-                    <a
-                        href={study.url}
-                        className="card-link"
-                        target="_blank"
-                        rel="nofollow noopener"
-                    >
+                    <a href={study.url} className="card-link" target="_blank" rel="nofollow noopener">
                         Learn more.
                     </a>
                 ) : (
