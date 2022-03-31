@@ -305,6 +305,7 @@ const CareersPage = props => {
                 </Carousel>
 
                 <Carousel
+                    interval={null}
                     className="bg-white reviews-carousel"
                     prevIcon={<ArrowLeftIcon color="#808080" />}
                     nextIcon={<ArrowRightIcon color="#808080" />}

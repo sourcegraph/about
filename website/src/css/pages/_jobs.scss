@@ -250,15 +250,18 @@
         display: table;
         width: 100%;
         @media (max-width: 768px) {
-            height: 650px;
+            height: 775px;
         }
         @media (max-width: 576px) {
-            height: 575px;
+            height: 650px;
         }
 
         .carousel-inner {
             display: table-cell;
             vertical-align: middle;
+            .carousel-item {
+                padding-bottom: 10%;
+            }
         }
     }
 
