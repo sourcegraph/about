@@ -4,7 +4,7 @@ import { ContentSection } from './content/ContentSection'
 import { buttonStyle, buttonLocation } from '../tracking'
 
 export const TrySourcegraph: React.FunctionComponent<{ demoFormURL?: string; className?: string }> = ({
-    demoFormURL = 'https://info.sourcegraph.com/demo-request',
+    demoFormURL = '/demo',
     className = '',
 }) => (
     <ContentSection className={className}>

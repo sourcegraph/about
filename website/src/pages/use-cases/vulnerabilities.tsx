@@ -189,13 +189,13 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                 days.
                             </div>
                             <div className="d-flex flex-column flex-lg-row pt-1">
-                                <a
+                                <Link
                                     className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                    href="https://info.sourcegraph.com/demo-request"
+                                    to="/demo"
                                     title="Request a Demo."
                                 >
                                     Request a demo
-                                </a>
+                                </Link>
                                 <Link
                                     className="btn btn-outline-primary w-md-100"
                                     to="/get-started"
@@ -321,13 +321,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
                     </div>
                     <div className="d-flex flex-column">
-                        <a
-                            className="btn btn-primary"
-                            href="https://info.sourcegraph.com/demo-request"
-                            title="Request a Demo."
-                        >
+                        <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
                             Request a demo
-                        </a>
+                        </Link>
                         <Link to="/use-cases" className="d-flex justify-content-center mt-4">
                             <p className="font-weight-bold">Explore other use cases</p>
                         </Link>

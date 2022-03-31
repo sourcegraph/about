@@ -107,8 +107,8 @@ export default ((props: any) => (
                             </li>
                             <li>Alert for known vulnerabilities and risky code changes with code monitoring</li>
                         </ul>
-                        <a
-                            href="https://info.sourcegraph.com/demo-request"
+                        <Link
+                            to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -116,7 +116,7 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </a>
+                        </Link>
                         <Link to="/use-cases/vulnerabilities" className="btn btn-link font-weight-bold">
                             Learn more
                         </Link>
@@ -184,8 +184,8 @@ export default ((props: any) => (
                             </li>
                             <li>Get answers faster with shareable links to specific code</li>
                         </ul>
-                        <a
-                            href="https://info.sourcegraph.com/demo-request"
+                        <Link
+                            to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -193,7 +193,7 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </a>
+                        </Link>
                         <Link to="/use-cases/onboarding" className="btn btn-link font-weight-bold">
                             Learn more
                         </Link>
@@ -228,8 +228,8 @@ export default ((props: any) => (
                                 search notebook
                             </li>
                         </ul>
-                        <a
-                            href="https://info.sourcegraph.com/demo-request"
+                        <Link
+                            to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -237,7 +237,7 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
@@ -298,8 +298,8 @@ export default ((props: any) => (
                             </li>
                             <li>Add a code monitor to alert you of commits using an out-of-date library</li>
                         </ul>
-                        <a
-                            href="https://info.sourcegraph.com/demo-request"
+                        <Link
+                            to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -307,7 +307,7 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </ContentSection>
@@ -338,8 +338,8 @@ export default ((props: any) => (
                             </li>
                             <li>Efficiently tackle tech debt from legacy systems and acquisitions</li>
                         </ul>
-                        <a
-                            href="https://info.sourcegraph.com/demo-request"
+                        <Link
+                            to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
                             data-button-style={buttonStyle.arrowBoxOutlined}
@@ -347,7 +347,7 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-6">
