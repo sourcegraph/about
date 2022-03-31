@@ -13,7 +13,7 @@ import ChartBarIcon from 'mdi-react/ChartBarIcon'
 import CheckCircleOutlineIcon from 'mdi-react/CheckCircleOutlineIcon'
 import FlagOutlineIcon from 'mdi-react/FlagOutlineIcon'
 
-const NutanixCaseStudy: FunctionComponent<PageProps> = (props) => (
+const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
         meta={{
