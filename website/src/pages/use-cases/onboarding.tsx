@@ -6,7 +6,7 @@ import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
 import { BackButtonBold } from '../../components/BackButton'
-import { Blockquote, BlockquoteWithLogo } from '../../components/Blockquote'
+import { Blockquote, BlockquoteWithLogoBottom } from '../../components/Blockquote'
 import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -256,7 +256,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <div className="bg-gradient-onahau-fog py-8">
             <ContentSection>
                 <div className="d-flex flex-column justify-content-center text-center px-lg-8">
-                    <BlockquoteWithLogo
+                    <BlockquoteWithLogoBottom
                         quote={`For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives,
                             and self-service during their investigations.`}
                         header="Convoy knows its codebase inside and out"

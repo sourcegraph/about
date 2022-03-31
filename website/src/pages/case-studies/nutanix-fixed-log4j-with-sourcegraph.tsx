@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { PageProps, Link } from 'gatsby'
 import slugify from 'slugify'
 
-import { Blockquote, BlockquoteWithLogo } from '../../components/Blockquote'
+import { Blockquote, BlockquoteWithLogoTop } from '../../components/Blockquote'
 import { CaseStudyJumbotron, AuthorBio } from '../../components/content/CaseStudyPage'
 import { CaseStudyCard, CASESTUDIES } from '../../components/product/CaseStudyCard'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -35,23 +35,13 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = (props) => (
             </CaseStudyJumbotron>
 
             <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-6">
-                <BlockquoteWithLogo
+                <BlockquoteWithLogoTop
                     quote={`Sourcegraph was the right product at the right time.`}
                     by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
                     logoHref="https://nutanix.com"
+                    logoAlt="Nutanix"
                     logoImage="/external-logos/nutanix-logo.svg"
                 />
-                {/* <blockquote>
-                    <div className="my-4">
-                        <img src="/external-logos/nutanix-logo.svg" width="210px" alt="nutanix" />
-                    </div>
-                    <h2 className="display-3 font-weight-bold mw-600 mx-auto">
-                        "Sourcegraph was the right product at the right time."
-                    </h2>
-                    <footer className="blockquote-footer">
-                        Jon Kohler, Technical Director of Solution Engineering at Nutanix
-                    </footer>
-                </blockquote> */}
             </ContentSection>
 
             <section className="d-flex flex-column flex-md-row">
@@ -198,19 +188,13 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = (props) => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-6">
+            <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-6 display-4 text-gray font-weight-normal">
                 <Blockquote
+                    border={true}
                     quote={`It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much
                     better than having to say, 'Well, boss, I think we got it all.’`}
                     by="Jon Kohler"
                 />
-                {/* <blockquote className="py-md-6">
-                    <h3 className="font-weight-normal text-gray mw-600 mx-auto">
-                        “It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much
-                        better than having to say, 'Well, boss, I think we got it all.’”
-                    </h3>
-                    <footer className="blockquote-footer">Jon Kohler</footer>
-                </blockquote> */}
             </ContentSection>
 
             <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-6">

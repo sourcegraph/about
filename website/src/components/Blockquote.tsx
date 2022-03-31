@@ -33,7 +33,7 @@ export const Blockquote: FunctionComponent<{
                 {by && (
                     <>
                         <br />
-                        <div className="text-center text-muted">&mdash; {by}</div>
+                        <figcaption className="text-center text-muted pt-4">&mdash; {by}</figcaption>
                     </>
                 )}
             </blockquote>
@@ -46,7 +46,7 @@ export const Blockquote: FunctionComponent<{
     )
 }
 
-export const BlockquoteWithLogo: FunctionComponent<{
+export const BlockquoteWithLogoBottom: FunctionComponent<{
     quote: string
     header?: string
     by?: string | ReactFragment
@@ -60,7 +60,7 @@ export const BlockquoteWithLogo: FunctionComponent<{
         {header && <h1 className="font-weight-bold">{header}</h1>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
             <h4 className="font-weight-normal">&ldquo;{quote}&rdquo;</h4>
-            {by && <div className="pt-3 text-muted text-center">&mdash; {by}</div>}
+            {by && <figcaption className="pt-3 text-muted text-center">&mdash; {by}</figcaption>}
         </blockquote>
         {logoImage && logoAlt && (
             <div className="d-flex justify-content-center">
@@ -79,5 +79,31 @@ export const BlockquoteWithLogo: FunctionComponent<{
                 <ArrowRightIcon className="icon-inline ml-1" />
             </Link>
         )}
+    </>
+)
+
+export const BlockquoteWithLogoTop: FunctionComponent<{
+    quote: string
+    by?: string | ReactFragment
+    logoHref?: string
+    logoImage?: string
+    logoAlt?: string
+}> = ({ quote, by, logoHref, logoImage, logoAlt }) => (
+    <>
+        {logoImage && logoAlt && (
+            <div className="d-flex justify-content-center">
+                {logoHref ? (
+                    <a href={logoHref} className="btn">
+                        <img src={logoImage} width="150px" alt={logoAlt} />
+                    </a>
+                ) : (
+                    <img src={logoImage} width="150px" alt={logoAlt} />
+                )}
+            </div>
+        )}
+        <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
+            <h2 className="display-3 font-weight-bold">&ldquo;{quote}&rdquo;</h2>
+            {by && <figcaption className="pt-3 text-muted text-center">&mdash; {by}</figcaption>}
+        </blockquote>
     </>
 )
