@@ -132,11 +132,11 @@ export const AuthorBio: React.FunctionComponent<{
             </div>
         )}
         <div className="col-md-3 col-lg-2 col-9 text-center text-md-left">
-            <h5 className="fw-600 pt-5">{author}</h5>
+            <h5 className="font-weight-bold pt-5">{author}</h5>
             <p>{title}</p>
         </div>
         <div className="col-lg-5 col-md-6 col-12 mx-md-auto text-center text-md-left">
-            <h5 className="fw-600 pt-5">About {customer}</h5>
+            <h5 className="font-weight-bold pt-5">About {customer}</h5>
             <p>{about}</p>
         </div>
     </div>

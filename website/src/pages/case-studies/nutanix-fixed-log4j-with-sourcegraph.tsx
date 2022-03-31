@@ -36,7 +36,7 @@ export default ((props: any) => (
                     <div className="my-4">
                         <img src="/external-logos/nutanix-logo.svg" width="210px" alt="nutanix" />
                     </div>
-                    <h2 className="display-3 fw-550 mw-600 mx-auto">
+                    <h2 className="display-3 font-weight-bold mw-600 mx-auto">
                         "Sourcegraph was the right product at the right time."
                     </h2>
                     <footer className="blockquote-footer">
@@ -52,7 +52,7 @@ export default ((props: any) => (
                             <ClipboardTextOutlineIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
                         <div className="pl-3 col-11 col-lg-9">
-                            <h5 className="fw-550">Use case</h5>
+                            <h5 className="font-weight-bold">Use case</h5>
                             <p>Find and fix security vulnerabilities quickly across the code base.</p>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ export default ((props: any) => (
                             <FlagOutlineIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
                         <div className="pl-3 col-11 col-lg-9">
-                            <h5 className="fw-550">Challenge</h5>
+                            <h5 className="font-weight-bold">Challenge</h5>
                             <ul className="pl-4">
                                 <li>
                                     Inability to efficiently find all the instances of Log4j in their large codebase.
@@ -76,7 +76,7 @@ export default ((props: any) => (
                             <CheckCircleOutlineIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
                         <div className="pl-3 col-11 col-lg-9">
-                            <h5 className="fw-550">Solution</h5>
+                            <h5 className="font-weight-bold">Solution</h5>
                             <ul className="pl-4">
                                 <li>Able to quickly and efficiently find every instance of the Log4j vulnerability.</li>
                                 <li>Full confidence that all Log4j-vulnerable code was identified and resolved.</li>
@@ -94,7 +94,7 @@ export default ((props: any) => (
                             <ChartBarIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
                         <div className="pl-3 col-11 col-lg-9">
-                            <h5 className="fw-550">Result</h5>
+                            <h5 className="font-weight-bold">Result</h5>
                             <ul className="pl-4">
                                 <li>
                                     Nutanix was able to see where JMSAppender existed, fix it, and send out a release
@@ -240,21 +240,21 @@ export default ((props: any) => (
                 <h2 className="text-center pb-5 display-3 font-weight-bold">Results</h2>
                 <div className="mb-5 row">
                     <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 fw-550 text-blue7">{'<'} 5 min</h3>
+                        <h3 className="pb-3 font-weight-bold text-blue7">{'<'} 5 min</h3>
                         <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
                             Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in
                             less than 5 minutes.
                         </p>
                     </div>
                     <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 fw-550 text-blue7">4 days</h3>
+                        <h3 className="pb-3 font-weight-bold text-blue7">4 days</h3>
                         <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
                             Nutanix was able to deliver patches to its customers that fully remediated the Log4j
                             vulnerability.
                         </p>
                     </div>
                     <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 fw-550 text-blue7">100%</h3>
+                        <h3 className="pb-3 font-weight-bold text-blue7">100%</h3>
                         <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
                             Nutanix was able to confidently identify every instance of Log4j across its sprawling
                             codebase.
