@@ -55,7 +55,7 @@ export default ((props: any) => (
             <section className="d-flex flex-column flex-md-row">
                 <div className="bg-light-gray-2 p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
                     <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center pt-1 mw-50">
+                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
                             <ClipboardTextOutlineIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
                         <div className="pl-3 col-11 col-lg-9">
@@ -64,7 +64,7 @@ export default ((props: any) => (
                         </div>
                     </div>
                     <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center pt-1 mw-50">
+                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
                             <FlagOutlineIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
                         <div className="pl-3 col-11 col-lg-9">
@@ -79,7 +79,7 @@ export default ((props: any) => (
                         </div>
                     </div>
                     <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center pt-1 mw-50">
+                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
                             <CheckCircleOutlineIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
                         <div className="pl-3 col-11 col-lg-9">
@@ -97,7 +97,7 @@ export default ((props: any) => (
                 </div>
                 <div className="bg-gradient-blue-mist p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
                     <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center pt-1 mw-50">
+                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
                             <ChartBarIcon color="#00A1C7" size={40} className="p-1" />
                         </div>
                         <div className="pl-3 col-11 col-lg-9">
