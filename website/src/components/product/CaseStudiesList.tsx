@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const CASESTUDIES: {
     name: string
@@ -109,14 +110,18 @@ export const CaseStudiesList: React.FunctionComponent<{ className?: string; list
                             <p className="card-text">
                                 {study.title}{' '}
                                 <span>
-                                    <a
-                                        href={study.url}
-                                        className="card-link"
-                                        target={study.external ? '_blank' : ''}
-                                        rel={study.external ? 'nofollow noopener' : ''}
-                                    >
-                                        Learn more.
-                                    </a>
+                                    {study.external ? (
+                                        <a
+                                            href={study.url}
+                                            className="card-link"
+                                            target="_blank"
+                                            rel="nofollow noopener"
+                                        >
+                                            Learn more.
+                                        </a>
+                                     ) : (
+                                        <Link to={study.url}>Learn more.</Link>
+                                     )}
                                 </span>
                             </p>
                         </div>

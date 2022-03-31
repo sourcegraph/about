@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { Blockquote, BlockquoteWithLogo } from '../../components/Blockquote'
 import { CaseStudyJumbotron, AuthorBio } from '../../components/content/CaseStudyPage'
 import { CaseStudiesList } from '../../components/product/CaseStudiesList'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -32,7 +33,13 @@ export default ((props: any) => (
             </CaseStudyJumbotron>
 
             <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
-                <blockquote>
+                <BlockquoteWithLogo
+                    quote={`Sourcegraph was the right product at the right time.`}
+                    by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
+                    logoHref="https://nutanix.com"
+                    logoImage="/external-logos/nutanix-logo.svg"
+                />
+                {/* <blockquote>
                     <div className="my-4">
                         <img src="/external-logos/nutanix-logo.svg" width="210px" alt="nutanix" />
                     </div>
@@ -42,7 +49,7 @@ export default ((props: any) => (
                     <footer className="blockquote-footer">
                         Jon Kohler, Technical Director of Solution Engineering at Nutanix
                     </footer>
-                </blockquote>
+                </blockquote> */}
             </ContentSection>
 
             <section className="d-flex flex-column flex-md-row">
@@ -190,13 +197,18 @@ export default ((props: any) => (
             </ContentSection>
 
             <ContentSection color="white" className="py-6 text-center col-sm-12 col-md-9 col-lg-7">
-                <blockquote className="py-md-6">
+                <Blockquote
+                    quote={`It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much
+                    better than having to say, 'Well, boss, I think we got it all.’`}
+                    by="Jon Kohler"
+                />
+                {/* <blockquote className="py-md-6">
                     <h3 className="font-weight-normal text-gray mw-600 mx-auto">
                         “It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much
                         better than having to say, 'Well, boss, I think we got it all.’”
                     </h3>
                     <footer className="blockquote-footer">Jon Kohler</footer>
-                </blockquote>
+                </blockquote> */}
             </ContentSection>
 
             <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-7">
