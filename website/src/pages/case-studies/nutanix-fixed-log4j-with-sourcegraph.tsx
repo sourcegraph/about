@@ -46,109 +46,112 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
 
             <section className="d-flex flex-column flex-md-row">
                 <div className="bg-light-gray-2 p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
-                    <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
-                            <ClipboardTextOutlineIcon color="#00A1C7" size={40} className="p-1" />
+                    <section className="mw-xl-550 ml-xl-auto">
+                        <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
+                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
+                                <ClipboardTextOutlineIcon color="#00A1C7" size={40} className="p-1" />
+                            </div>
+                            <div className="pl-3 col-11 col-lg-9">
+                                <h5 className="font-weight-bold">Use case</h5>
+                                <p>Find and fix security vulnerabilities quickly across the code base.</p>
+                            </div>
                         </div>
-                        <div className="pl-3 col-11 col-lg-9">
-                            <h5 className="font-weight-bold">Use case</h5>
-                            <p>Find and fix security vulnerabilities quickly across the code base.</p>
+                        <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
+                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
+                                <FlagOutlineIcon color="#00A1C7" size={40} className="p-1" />
+                            </div>
+                            <div className="pl-3 col-11 col-lg-9">
+                                <h5 className="font-weight-bold">Challenge</h5>
+                                <ul className="pl-4">
+                                    <li>
+                                        Inability to efficiently find all the instances of Log4j in their large
+                                        codebase.
+                                    </li>
+                                    <li>Lack of code-level clarity that vulnerabilities were completely resolved.</li>
+                                    <li>Uncertainty about the scope and impact of the Log4j vulnerability.</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
-                            <FlagOutlineIcon color="#00A1C7" size={40} className="p-1" />
+                        <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
+                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
+                                <CheckCircleOutlineIcon color="#00A1C7" size={40} className="p-1" />
+                            </div>
+                            <div className="pl-3 col-11 col-lg-9">
+                                <h5 className="font-weight-bold">Solution</h5>
+                                <ul className="pl-4">
+                                    <li>
+                                        Able to quickly and efficiently find every instance of the Log4j vulnerability.
+                                    </li>
+                                    <li>Full confidence that all Log4j-vulnerable code was identified and resolved.</li>
+                                    <li>
+                                        Able to quickly validate that no known vulnerabilities exist in the codebase
+                                        prior to each release.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="pl-3 col-11 col-lg-9">
-                            <h5 className="font-weight-bold">Challenge</h5>
-                            <ul className="pl-4">
-                                <li>
-                                    Inability to efficiently find all the instances of Log4j in their large codebase.
-                                </li>
-                                <li>Lack of code-level clarity that vulnerabilities were completely resolved.</li>
-                                <li>Uncertainty about the scope and impact of the Log4j vulnerability.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
-                            <CheckCircleOutlineIcon color="#00A1C7" size={40} className="p-1" />
-                        </div>
-                        <div className="pl-3 col-11 col-lg-9">
-                            <h5 className="font-weight-bold">Solution</h5>
-                            <ul className="pl-4">
-                                <li>Able to quickly and efficiently find every instance of the Log4j vulnerability.</li>
-                                <li>Full confidence that all Log4j-vulnerable code was identified and resolved.</li>
-                                <li>
-                                    Able to quickly validate that no known vulnerabilities exist in the codebase prior
-                                    to each release.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <div className="bg-gradient-blue-mist p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
-                    <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
-                        <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
-                            <ChartBarIcon color="#00A1C7" size={40} className="p-1" />
+                    <section className="mw-xl-550">
+                        <div className="mb-5 ml-md-5 ml-3 d-flex flex-column flex-md-row">
+                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
+                                <ChartBarIcon color="#00A1C7" size={40} className="p-1" />
+                            </div>
+                            <div className="pl-3 col-11 col-lg-9">
+                                <h5 className="font-weight-bold">Result</h5>
+                                <ul className="pl-4">
+                                    <li>
+                                        Nutanix was able to see where JMSAppender existed, fix it, and send out a
+                                        release all in less than 5 minutes.
+                                    </li>
+                                    <li>
+                                        Nutanix was able to deliver patches to its customers that fully remediated the
+                                        Log4j vulnerability.
+                                    </li>
+                                    <li>
+                                        Nutanix was able to confidently identify every instance of Log4j across its
+                                        sprawling codebase.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="pl-3 col-11 col-lg-9">
-                            <h5 className="font-weight-bold">Result</h5>
-                            <ul className="pl-4">
-                                <li>
-                                    Nutanix was able to see where JMSAppender existed, fix it, and send out a release
-                                    all in less than 5 minutes.
-                                </li>
-                                <li>
-                                    Nutanix was able to deliver patches to its customers that fully remediated the Log4j
-                                    vulnerability.
-                                </li>
-                                <li>
-                                    Nutanix was able to confidently identify every instance of Log4j across its
-                                    sprawling codebase.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </section>
 
-            <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-6">
-                <section>
-                    <p>
-                        As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the
-                        complexity involved in securing the multitude of applications and solutions required to power
-                        such a large organization. “Security is something that we care about intensely here at Nutanix,”
-                        Jon said, “because it’s part of our bedrock. It's why customers like us, and we have to take it
-                        seriously.”
-                    </p>
-                    <h2 className="mt-6 mb-4 display-3 font-weight-bold mw-600">
-                        Log4j: The vulnerability that rocked an industry
-                    </h2>
-                    <p>
-                        <span className="font-weight-bold">In December of 2021, </span>
-                        software companies around the world discovered that Log4j, an open-source logging library
-                        bundled in many software packages, contained significant vulnerabilities, one of which was a
-                        10/10 on the CVSS scale. The Federal Trade Commission called the library “
-                        <a href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2022/01/ftc-warns-companies-remediate-log4j-security-vulnerability">
-                            ubiquitous
-                        </a>
-                        .”
-                    </p>
-                    <p>
-                        Jon discovered that the offending module recurred throughout their build. “The more we dug,” Jon
-                        explained, “the more we realized this bug was everywhere and nowhere at the same time.”
-                    </p>
-                    <p>
-                        Nutanix moved quickly, despite having multiple build and artifact management systems, as well as
-                        a large monorepo with many component branches and hundreds of git repositories. In under four
-                        days, Nutanix was able to deliver patches to its customers that fully remediated the Log4j
-                        vulnerability.
-                    </p>
-                </section>
+            <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-6 col-xl-5">
+                <p>
+                    As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the complexity
+                    involved in securing the multitude of applications and solutions required to power such a large
+                    organization. “Security is something that we care about intensely here at Nutanix,” Jon said,
+                    “because it’s part of our bedrock. It's why customers like us, and we have to take it seriously.”
+                </p>
+                <h2 className="mt-6 mb-4 display-3 font-weight-bold mw-600">
+                    Log4j: The vulnerability that rocked an industry
+                </h2>
+                <p>
+                    <span className="font-weight-bold">In December of 2021, </span>
+                    software companies around the world discovered that Log4j, an open-source logging library bundled in
+                    many software packages, contained significant vulnerabilities, one of which was a 10/10 on the CVSS
+                    scale. The Federal Trade Commission called the library “
+                    <a href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2022/01/ftc-warns-companies-remediate-log4j-security-vulnerability">
+                        ubiquitous
+                    </a>
+                    .”
+                </p>
+                <p>
+                    Jon discovered that the offending module recurred throughout their build. “The more we dug,” Jon
+                    explained, “the more we realized this bug was everywhere and nowhere at the same time.”
+                </p>
+                <p>
+                    Nutanix moved quickly, despite having multiple build and artifact management systems, as well as a
+                    large monorepo with many component branches and hundreds of git repositories. In under four days,
+                    Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.
+                </p>
             </ContentSection>
 
-            <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-6">
+            <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-6 col-xl-5">
                 <h2 className="mb-4 display-4 font-weight-bold mw-600">
                     Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
                 </h2>
@@ -190,7 +193,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
 
             <ContentSection
                 color="white"
-                className="py-6 text-center col-sm-12 col-md-9 col-lg-6 display-4 text-gray font-weight-normal"
+                className="py-6 text-center col-sm-12 col-md-9 col-lg-6 col-xl-5 display-4 text-gray font-weight-normal"
             >
                 <Blockquote
                     border={true}
@@ -200,7 +203,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 />
             </ContentSection>
 
-            <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-6">
+            <ContentSection className="py-6 col-sm-12 col-md-9 col-lg-6 col-xl-5">
                 <section>
                     <h2 className="mb-4 display-4 font-weight-bold mw-600">
                         Nutanix has renewed confidence in its vulnerability remediation
@@ -238,33 +241,35 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
             </ContentSection>
 
             <div className="bg-gradient-blue-mist py-lg-7 p-5">
-                <h2 className="text-center pb-5 display-3 font-weight-bold">Results</h2>
-                <div className="mb-5 row">
-                    <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 font-weight-bold text-blue7">{'<'} 5 min</h3>
-                        <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
-                            Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in
-                            less than 5 minutes.
-                        </p>
+                <section className="container-xl">
+                    <h2 className="text-center pb-5 display-3 font-weight-bold">Results</h2>
+                    <div className="mb-5 row">
+                        <div className="col-sm-12 col-md-4 text-center">
+                            <h3 className="pb-3 font-weight-bold text-blue7">{'<'} 5 min</h3>
+                            <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
+                                Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in
+                                less than 5 minutes.
+                            </p>
+                        </div>
+                        <div className="col-sm-12 col-md-4 text-center">
+                            <h3 className="pb-3 font-weight-bold text-blue7">4 days</h3>
+                            <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
+                                Nutanix was able to deliver patches to its customers that fully remediated the Log4j
+                                vulnerability.
+                            </p>
+                        </div>
+                        <div className="col-sm-12 col-md-4 text-center">
+                            <h3 className="pb-3 font-weight-bold text-blue7">100%</h3>
+                            <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
+                                Nutanix was able to confidently identify every instance of Log4j across its sprawling
+                                codebase.
+                            </p>
+                        </div>
                     </div>
-                    <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 font-weight-bold text-blue7">4 days</h3>
-                        <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
-                            Nutanix was able to deliver patches to its customers that fully remediated the Log4j
-                            vulnerability.
-                        </p>
-                    </div>
-                    <div className="col-sm-12 col-md-4 text-center">
-                        <h3 className="pb-3 font-weight-bold text-blue7">100%</h3>
-                        <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
-                            Nutanix was able to confidently identify every instance of Log4j across its sprawling
-                            codebase.
-                        </p>
-                    </div>
-                </div>
+                </section>
             </div>
 
-            <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-6">
+            <ContentSection color="white" className="py-6 col-sm-12 col-md-9 col-lg-6 col-xl-5">
                 <section>
                     <h2 className="mb-4 display-4 font-weight-bold mw-500">
                         Log4j is the tip of the open-source vulnerability iceberg
@@ -320,7 +325,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </ContentSection>
             </div>
 
-            <ContentSection color="white" className="py-lg-7 py-5">
+            <ContentSection color="white" className="py-lg-7 py-5 col-xl-5">
                 <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>
                 <div className="d-flex flex-wrap">
                     {CASESTUDIES.slice(0, 4).map((study, i) => (
