@@ -23,16 +23,16 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 - You can exercise your rights under privacy laws. ([read more](#global-privacy-practices))
 
 <span style="color:#b200f8;">
-  
-## What is Sourcegraph’s business model?
+
+#### What is Sourcegraph’s business model?
 
 </span>
 
 We make money through paid subscriptions to use our Services. We do not sell your information.
 
 <span style="color:#b200f8;">
-  
-## What information do we collect, and for what purpose
+
+#### What information do we collect, and for what purpose
 
 </span>
 
