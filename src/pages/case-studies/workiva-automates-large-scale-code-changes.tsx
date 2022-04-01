@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import Link from 'next/link'
+
 import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => {
@@ -70,7 +72,7 @@ export const CaseStudy: FunctionComponent = () => {
 
                         <p>
                             As an organization that values paying down tech debt, Workiva's Client Platform team started
-                            using Sourcegraph <a href="/batch-changes">Batch Changes</a> to help them efficiently
+                            using Sourcegraph <Link href="/batch-changes">Batch Changes</Link> to help them efficiently
                             propagate updates to dependencies across all of their repositories without any ongoing
                             maintenance. The team has already used Batch Changes to:
                         </p>

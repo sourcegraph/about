@@ -8,4 +8,16 @@
         background-size: auto 113%, 100% 100%;
         background-position: center right 15%, top left;
     }
+
+    .nav-item {
+        button {
+            font-weight: 600;
+            background-color: transparent;
+            color: $blue;
+
+            &:hover {
+                color: $brand-primary-blue;
+            }
+        }
+    }
 }
