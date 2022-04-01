@@ -312,10 +312,7 @@ const CareersPage = props => {
                     {new Array(6).fill(null).map((el, i) => (
                         <Carousel.Item key={`review-${i}`}>
                             <div className="d-flex align-center height-750 height-sm-650">
-                                <img
-                                    src={`/careers/review${i + 1}.png`}
-                                    className="d-block m-auto col-11 col-lg-5 mw-lg-600 mw-sm-500"
-                                />
+                                <img src={`/careers/review${i + 1}.png`} className="m-auto col-11 mw-sm-500 mw-600" />
                             </div>
                         </Carousel.Item>
                     ))}
