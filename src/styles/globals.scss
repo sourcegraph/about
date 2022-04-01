@@ -259,7 +259,6 @@ table {
 @import 'pages/index';
 @import 'pages/jobs';
 @import 'pages/landing-page';
-@import 'pages/news';
 @import 'pages/podcast';
 @import 'pages/pricing';
 @import 'pages/product/code-search-navigation';
@@ -322,4 +321,7 @@ table {
     &:hover {
         text-decoration: none;
     }
+}
+.text-normal {
+    font-style: normal;
 }
