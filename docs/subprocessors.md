@@ -6,7 +6,7 @@ description: This page lists the subsprocessors that Sourcegraph may use
 
 Last modified: March 8, 2022
 
-See the [previous version](https://about.sourcegraph.com/archives/subprocessors/2021-12-31/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives)
+See the [previous version](https://about.sourcegraph.com/archives/subprocessors/2021-12-03/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives)
 
 Sourcegraph, Inc. (“Sourcegraph”) uses certain third party sub-processors (“Sub-processors”) to assist in providing the Services described in the Sourcegraph Terms of Service available at [https://about.sourcegraph.com/terms/](https://about.sourcegraph.com/terms/) and/or as set forth in an applicable Order Form. Capitalized terms used but not otherwise defined herein shall have the meanings ascribed to them in the applicable Sourcegraph Terms of Service.
 
@@ -26,7 +26,7 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 | Honeycomb                | USA            | Processes any information Customer sends for debugging<br/> purposes                                                                                               | Sourcegraph Cloud                                  |
 | Incident.io              | United Kingdom | Processes incidents                                                                                                                                                | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
 | Salesforce               | USA            | Processes customer support tickets                                                                                                                                 | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
-| Sentry                   | USA            | Processes error data, which can include email addresses<br/> and other personal data, for debugging purposes                                                       | Sourcegraph Cloud<br/>Managed                      |
+| Sentry                   | USA            | Processes error data, which can include email addresses<br/> and other personal data, for debugging purposes                                                       | Sourcegraph Cloud<br/>Managed Instance             |
 | Slack Technologies       | USA            | Processes customer support communication                                                                                                                           | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
 | Zapier                   | USA            | Processes information needed to enable integrations<br/> between Sourcegraph and a third-party product                                                             | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
 | Zendesk                  | USA            | Processes customer support communication                                                                                                                           | Sourcegraph Cloud<br/>Managed Instance<br/>On Prem |
