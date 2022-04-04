@@ -39,7 +39,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                             context included, and enable senior devs to share their knowledge at scale.
                         </p>
 
-                        <div className="mt-5 mw-400">
+                        <div className="mt-5 max-w-400">
                             <div id="topForm" />
                             <FormLegal />
                         </div>
@@ -60,7 +60,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="bg-gradient-onahau-fog text-center">
-                <div className="container py-6 mw-650">
+                <div className="container py-6 max-w-650">
                     <h2 className="mb-4 font-weight-bold">
                         Learn how Convoy increases the efficiency and confidence of entry level developers
                     </h2>
@@ -84,10 +84,10 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="text-center">
-                <div className="container py-8 mw-650">
+                <div className="container py-8 max-w-650">
                     <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
 
-                    <div className="mt-5 mw-400 mx-auto">
+                    <div className="mt-5 max-w-400 mx-auto">
                         <div id="bottomForm" />
                         <FormLegal />
                     </div>

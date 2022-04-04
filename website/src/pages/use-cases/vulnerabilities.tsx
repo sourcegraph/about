@@ -250,7 +250,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             <ContentSection className="my-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 font-weight-bold mw-400">
+                        <h1 className="mb-4 font-weight-bold max-w-400">
                             Identifying & resolving security vulnerabilities is painful
                         </h1>
                         <p>

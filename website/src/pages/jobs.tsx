@@ -305,14 +305,17 @@ const CareersPage = props => {
                 </Carousel>
 
                 <Carousel
-                    className="bg-white height-800 height-sm-800 pt-md-0 pt-1"
+                    className="bg-white h-800 h-sm-800 pt-md-0 pt-1"
                     prevIcon={<ArrowLeftIcon color="#808080" />}
                     nextIcon={<ArrowRightIcon color="#808080" />}
                 >
                     {new Array(6).fill(null).map((el, i) => (
                         <Carousel.Item key={`review-${i}`}>
-                            <div className="d-flex align-center height-750 height-sm-650">
-                                <img src={`/careers/review${i + 1}.png`} className="m-auto col-11 mw-sm-500 mw-600" />
+                            <div className="d-flex align-center h-750 h-sm-650">
+                                <img
+                                    src={`/careers/review${i + 1}.png`}
+                                    className="m-auto col-11 max-w-sm-500 max-w-600"
+                                />
                             </div>
                         </Carousel.Item>
                     ))}
