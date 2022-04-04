@@ -111,30 +111,30 @@ const items = [
 
 const quoteCarouselItems = [
     {
-        header: 'Nutanix fixed log4j in days',
+        header: 'Nutanix fixed Log4j in days',
         quote: 'The more we dug, the more we realized [Log4Shell] was everywhere and nowhere at the same time… Sourcegraph was the right product at the right time.',
         by: 'Jon Kohler, Technical Director of Solution Engineering at Nutanix',
-        logoHref: 'https://www.nutanix.com/',
         logoImage: '/external-logos/nutanix-logo.svg',
+        logoAlt: 'Nutanix',
     },
     {
         header: `Cloudflare proves to auditors that its code isn't vulnerable`,
         quote: `[Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and when we get asked by an auditor.`,
         by: 'David Haynes, Security Engineer at Cloudflare',
-        logoHref: 'https://www.cloudflare.com/',
         logoImage: '/external-logos/cloudflare-color-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
+        logoAlt: 'Cloudflare',
     },
     {
         header: 'Indeed merges code at scale',
-        quote: `On average, I'd say that for every automated merge request that we're able to merge we save an hour. That's a rough but conservative estimate. It shows, 
+        quote: `On average, I'd say that for every automated merge request that we're able to merge we save an hour. That's a rough but conservative estimate. It shows,
         though, that if we are doing several thousand automated merges in a year, we're saving several employee's worth of time.`,
         by: 'Jared Hodge, Senior Manager, Developer Experience at Indeed',
-        logoHref: 'https://www.indeed.com/',
         logoImage: '/external-logos/indeed-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/indeed-accelerates-development-velocity',
+        logoAlt: 'Indeed',
     },
 ]
 
@@ -189,13 +189,13 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                 days.
                             </div>
                             <div className="d-flex flex-column flex-lg-row pt-1">
-                                <a
+                                <Link
                                     className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                    href="https://info.sourcegraph.com/demo-request"
+                                    to="/demo"
                                     title="Request a Demo."
                                 >
                                     Request a demo
-                                </a>
+                                </Link>
                                 <Link
                                     className="btn btn-outline-primary w-md-100"
                                     to="/get-started"
@@ -248,9 +248,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-blue-mist">
             <ContentSection className="my-7">
-                <div className="row flex-column flex-lg-row align-items-center justify-content-between">
+                <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 font-weight-light">
+                        <h1 className="mb-4 font-weight-bold mw-400">
                             Identifying & resolving security vulnerabilities is painful
                         </h1>
                         <p>
@@ -281,12 +281,12 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                 multiple teams in an org.
                             </p>
                             <p>
-                                Sourcegraph enables companies like Nutanix to completely remediate log4j vulnerabilities
+                                Sourcegraph enables companies like Nutanix to completely remediate Log4j vulnerabilities
                                 across multiple build and artifact management systems, as well as a large monorepo with
                                 many component branches and hundreds of git repositories, in under four days, and with
                                 100% certainty.
                             </p>
-                            <h6>Learn how to use Sourcegraph to identify and resolve every instance of log4j.</h6>
+                            <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
                             <Link className="font-weight-bold" to="/blog/log4j-log4shell-0-day">
                                 Read the blog post.
                             </Link>
@@ -299,12 +299,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="row mt-lg-0 mt-5 justify-content-center">
                 <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-light text-lg-center text-left mb-lg-6 mb-md-6">
-                        How Sourcegraph helps
-                    </h1>
+                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6">How Sourcegraph helps</h1>
                 </div>
                 <div className="pb-lg-5 pb-md-6 pb-5">
-                    <CustomCarousel items={items} autoAdvance={true} hideCarouselNav={true} smallPanel={true} />
+                    <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />
                 </div>
             </div>
         </ContentSection>
@@ -323,13 +321,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
                     </div>
                     <div className="d-flex flex-column">
-                        <a
-                            className="btn btn-primary"
-                            href="https://info.sourcegraph.com/demo-request"
-                            title="Request a Demo."
-                        >
+                        <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
                             Request a demo
-                        </a>
+                        </Link>
                         <Link to="/use-cases" className="d-flex justify-content-center mt-4">
                             <p className="font-weight-bold">Explore other use cases</p>
                         </Link>
