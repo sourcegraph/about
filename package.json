@@ -55,7 +55,7 @@
     "eslint-config-next": "^12.1.0",
     "mdi-react": "^8.2.0",
     "prettier": "^2.5.1",
-    "react-bootstrap": "1.6.1",
+    "react-bootstrap": "2.0.0",
     "react-spring": "^9.4.4",
     "sass": "^1.49.7",
     "typescript": "4.5.5"

@@ -13,7 +13,7 @@ export { Blockquote, BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWith
 export { Video } from './Video'
 
 // Tracking
-export { buttonStyle, buttonLocation } from './tracking'
+export { buttonStyle, buttonLocation } from './data/tracking'
 
 // Actions
 export {
@@ -25,6 +25,12 @@ export {
     SubmitEmailForm,
     ViewDeveloperDocumentationAction,
 } from './Actions'
+
+// Pricing
+
+export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
+
+export type { Features } from './Pricing'
 
 // Page Specific
 export {
