@@ -28,14 +28,9 @@ export const Blockquote: FunctionComponent<{
                         <div className="font-weight-normal">&ldquo;{quote}&rdquo;</div>
                     </div>
                 ) : (
-                    <>&ldquo;{quote}&rdquo;</>
+                    <h3 className="font-weight-normal">&ldquo;{quote}&rdquo;</h3>
                 )}
-                {by && (
-                    <>
-                        <br />
-                        <figcaption className="text-center text-muted pt-4">&mdash; {by}</figcaption>
-                    </>
-                )}
+                {by && <figcaption className="text-center text-muted pt-4">&mdash; {by}</figcaption>}
             </blockquote>
             {logoImage && logoAlt && (
                 <div className="d-flex justify-content-center">

@@ -204,11 +204,11 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="py-6 text-center mw-700 display-4 text-gray font-weight-normal">
+            <ContentSection color="white" className="py-6 mw-700 text-gray">
                 <Blockquote
                     border={true}
                     quote={`It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
-                    better than having to say, 'Well, boss, I think we got it all.’`}
+                    better than having to say, 'Well, boss, I think we got it all.'`}
                     by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
                 />
             </ContentSection>
