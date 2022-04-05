@@ -10,14 +10,16 @@ const News: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph - News',
-            description: 'The latest Sourcegraph news and press releases.'
+            description: 'The latest Sourcegraph news and press releases.',
         }}
     >
         <div className="container">
             <div className="text-center py-5">
                 <h1 className="display-2 font-weight-bold">Sourcegraph News</h1>
-                <p>The latest Sourcegraph news and <Link href="/press-release">press releases</Link></p>
-                
+                <p>
+                    The latest Sourcegraph news and <Link href="/press-release">press releases</Link>
+                </p>
+
                 <div className="container">
                     <div className="row justify-content-md-center">
                         <div className="col mt-5">
@@ -37,7 +39,7 @@ const News: FunctionComponent = () => (
                             <h1 className="d-block d-md-none text-center">
                                 <time dateTime={article.year.toString()}>{article.year}</time>
                             </h1>
-                            <h3 className='d-none d-md-block'>
+                            <h3 className="d-none d-md-block">
                                 <time dateTime={article.year.toString()}>{article.year}</time>
                             </h3>
                         </div>
@@ -47,15 +49,29 @@ const News: FunctionComponent = () => (
                                 <article className="row border-bottom d-flex py-3" key={a.newsLink}>
                                     <div className="col-sm-4 col-lg-2 text-center d-flex align-items-center mb-2 mb-md-0">
                                         <a href={a.newsLink} target="_blank" rel="nofollow noopener noreferrer">
-                                            <img className="max-w-100 max-w-sm-150 w-100" src={a.newsImage} alt={a.newsTitle} />
+                                            <img
+                                                className="max-w-100 max-w-sm-150 w-100"
+                                                src={a.newsImage}
+                                                alt={a.newsTitle}
+                                            />
                                         </a>
                                     </div>
 
                                     <div className="col-sm-10 col-lg-10 align-self-center">
                                         <h6 className="d-inline-block mb-2">{a.newsSource}</h6>{' '}
-                                        <time dateTime={new Date(a.newsDate).toISOString().split('T')[0]} className="ml-2 text-muted">{a.newsDate}</time>
+                                        <time
+                                            dateTime={new Date(a.newsDate).toISOString().split('T')[0]}
+                                            className="ml-2 text-muted"
+                                        >
+                                            {a.newsDate}
+                                        </time>
                                         <cite className="text-normal">
-                                            <a className="d-block" href={a.newsLink} target="_blank" rel="nofollow noopener noreferrer">
+                                            <a
+                                                className="d-block"
+                                                href={a.newsLink}
+                                                target="_blank"
+                                                rel="nofollow noopener noreferrer"
+                                            >
                                                 {a.newsTitle}
                                             </a>
                                         </cite>

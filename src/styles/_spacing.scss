@@ -1,10 +1,10 @@
-@use "sass:map";
+@use 'sass:map';
 
-$maxBreakpoint: map.get($grid-breakpoints, "xl");
+$maxBreakpoint: map.get($grid-breakpoints, 'xl');
 
 @for $spacing from 50 through $maxBreakpoint {
-    $increment: $spacing+50;
-    
+    $increment: $spacing + 50;
+
     @if $increment % 50 == 0 {
         // Utility classes for heights, min-heights and max-widths
         .h-#{$spacing} {

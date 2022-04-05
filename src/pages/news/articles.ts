@@ -11,767 +11,832 @@ interface Articles {
 
 const articles: Articles[] = [
     {
-      'year': 2021,
-      'articles': [
-        {
-          'newsSource': 'Business Insider',
-          'newsTitle': 'The cofounder of hot $2.6 billion startup Sourcegraph explains how its ambitious master plan to index all the open source code in the world will help developers manage burnout',
-          'newsDate': 'September 26, 2021',
-          'newsLink': 'https://www.businessinsider.com/sourcegraph-ceo-on-indexing-all-open-source-code-2021-8',
-          'newsImage': '/external-logos/business-insider-logo.png'
-        },
-        {
-          'newsSource': 'VentureBeat',
-          'newsTitle': 'Sourcegraph plans to index the entire open source web',
-          'newsDate': 'August 19, 2021',
-          'newsLink': 'https://venturebeat.com/2021/08/19/sourcegraph-plans-to-index-the-entire-open-source-web/',
-          'newsImage': '/external-logos/venturebeat-logo.png'
-        },
-        {
-          'newsSource': 'Techcrunch',
-          'newsTitle': 'Sourcegraph raises $125M Series D on $2.6B valuation for universal code search tool',
-          'newsDate': 'July 13, 2021',
-          'newsLink': 'https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/',
-          'newsImage': '/external-logos/techcrunch-logo.png'
-        },
-        {
-          'newsSource': 'VentureBeat',
-          'newsTitle': 'Sourcegraph now lets enterprises automate large-scale code changes across repositories',
-          'newsDate': 'March 24, 2021',
-          'newsLink': 'https://venturebeat.com/2021/03/24/sourcegraph-now-lets-enterprises-automate-large-scale-code-changes-across-repositories/',
-          'newsImage': '/external-logos/venturebeat-logo.png'
-        },
-        {
-          'newsSource': 'Forbes',
-          'newsTitle': 'Startup Opportunities In AI &mdash; The Unbundling Of Search',
-          'newsDate': 'January 12, 2021',
-          'newsLink': 'https://www.forbes.com/sites/konstantinebuhler/2021/01/12/startup-opportunities-in-ai--the-unbundling-of-search/',
-          'newsImage': '/external-logos/forbes-logo.png'
-        },
-        {
-          'newsSource': 'Business Insider',
-          'newsTitle': '54 tech startups to bet your career on in 2021',
-          'newsDate': 'January 4, 2021',
-          'newsLink': 'https://www.businessinsider.com/tech-startups-to-bet-your-career-on-in-2021#playvs-40',
-          'newsImage': '/external-logos/business-insider-logo.png'
-        }
-      ]
+        year: 2021,
+        articles: [
+            {
+                newsSource: 'Business Insider',
+                newsTitle:
+                    'The cofounder of hot $2.6 billion startup Sourcegraph explains how its ambitious master plan to index all the open source code in the world will help developers manage burnout',
+                newsDate: 'September 26, 2021',
+                newsLink: 'https://www.businessinsider.com/sourcegraph-ceo-on-indexing-all-open-source-code-2021-8',
+                newsImage: '/external-logos/business-insider-logo.png',
+            },
+            {
+                newsSource: 'VentureBeat',
+                newsTitle: 'Sourcegraph plans to index the entire open source web',
+                newsDate: 'August 19, 2021',
+                newsLink: 'https://venturebeat.com/2021/08/19/sourcegraph-plans-to-index-the-entire-open-source-web/',
+                newsImage: '/external-logos/venturebeat-logo.png',
+            },
+            {
+                newsSource: 'Techcrunch',
+                newsTitle: 'Sourcegraph raises $125M Series D on $2.6B valuation for universal code search tool',
+                newsDate: 'July 13, 2021',
+                newsLink:
+                    'https://techcrunch.com/2021/07/13/sourcegraph-raises-125m-series-d-on-2-6b-valuation-for-universal-code-search-tool/',
+                newsImage: '/external-logos/techcrunch-logo.png',
+            },
+            {
+                newsSource: 'VentureBeat',
+                newsTitle: 'Sourcegraph now lets enterprises automate large-scale code changes across repositories',
+                newsDate: 'March 24, 2021',
+                newsLink:
+                    'https://venturebeat.com/2021/03/24/sourcegraph-now-lets-enterprises-automate-large-scale-code-changes-across-repositories/',
+                newsImage: '/external-logos/venturebeat-logo.png',
+            },
+            {
+                newsSource: 'Forbes',
+                newsTitle: 'Startup Opportunities In AI &mdash; The Unbundling Of Search',
+                newsDate: 'January 12, 2021',
+                newsLink:
+                    'https://www.forbes.com/sites/konstantinebuhler/2021/01/12/startup-opportunities-in-ai--the-unbundling-of-search/',
+                newsImage: '/external-logos/forbes-logo.png',
+            },
+            {
+                newsSource: 'Business Insider',
+                newsTitle: '54 tech startups to bet your career on in 2021',
+                newsDate: 'January 4, 2021',
+                newsLink: 'https://www.businessinsider.com/tech-startups-to-bet-your-career-on-in-2021#playvs-40',
+                newsImage: '/external-logos/business-insider-logo.png',
+            },
+        ],
     },
     {
-      'year': 2020,
-      'articles': [
-        {
-          'newsSource': 'Crunchbase News',
-          'newsTitle': 'This Is What Tech Hiring Could Be Like In 2021',
-          'newsDate': 'December 23, 2020',
-          'newsLink': 'https://news.crunchbase.com/news/tech-hiring-in-2021/',
-          'newsImage': '/external-logos/crunchbase-news-logo.png'
-        },
-        {
-          'newsSource': 'InsideBIGData',
-          'newsTitle': 'Above the Trend Line &mdash; Your Industry Rumor Central for 12/16/2020',
-          'newsDate': 'December 16, 2020',
-          'newsLink': 'https://insidebigdata.com/2020/12/16/above-the-trend-line-your-industry-rumor-central-for-12-16-2020/',
-          'newsImage': '/external-logos/insidebigdata-logo.svg'
-        },
-        {
-          'newsSource': 'Business Insider',
-          'newsTitle': 'Code-collaboration startup Sourcegraph explains the key strategy that helped it nab big customers like Uber and Amazon early on',
-          'newsDate': 'December 10, 2020',
-          'newsLink': 'https://www.businessinsider.com/sourcegraph-self-hosted-customers-amazon-uber-cloud-2020-12',
-          'newsImage': '/external-logos/business-insider-logo.png'
-        },
-        {
-          'newsSource': 'Pulse 2.0',
-          'newsTitle': 'Universal Code Search Company Sourcegraph Raises $50 Million',
-          'newsDate': 'December 8, 2020',
-          'newsLink': 'https://pulse2.com/sourcegraph-raises-50-million-funding/',
-          'newsImage': '/external-logos/pulse2.0-logo.png'
-        },
-        {
-          'newsSource': 'Market Currents WealthNet',
-          'newsTitle': 'Weekly Investment Picks (November 30 to December 7)',
-          'newsDate': 'December 8, 2020',
-          'newsLink': 'https://www.marketcurrentswealthnet.com/news/weekly-investment-picks-november-30-to-december-7/',
-          'newsImage': '/external-logos/market-currents-wealthnet-logo.png'
-        },
-        {
-          'newsSource': 'Techcrunch',
-          'newsTitle': 'Podcast: Equity Monday (starts 3:18) ',
-          'newsDate': 'December 7, 2020',
-          'newsLink': 'https://techcrunch.com/2020/12/07/equity-monday-airbnb-pricing-sequoia-makes-money-and-early-stage-rounds/?tpcc=ECTW2020',
-          'newsImage': '/external-logos/techcrunch-logo.png'
-        },
-        {
-          'newsSource': 'Xataka',
-          'newsTitle': 'Qué es Sourcegraph, la herramienta que usan los desarrolladores de Google y Amazon y en la que Sequoia ha invertido 50 millones',
-          'newsDate': 'December 7, 2020',
-          'newsLink': 'https://www.xataka.com/pro/que-sourcegraph-herramienta-que-usan-desarrolladores-google-amazon-que-sequoia-ha-invertido-50-millones',
-          'newsImage': '/external-logos/xataka-logo.png'
-        },
-        {
-          'newsSource': 'Silicon Valley Business Journal',
-          'newsTitle': 'The Funded: This year\'s VC funding already tops all of last year\'s',
-          'newsDate': 'December 4, 2020',
-          'newsLink': 'https://www.bizjournals.com/sanjose/news/2020/12/04/this-years-vc-funding-already-tops-all-of-last-ye.html',
-          'newsImage': '/external-logos/svbj-logo.png'
-        },
-        {
-          'newsSource': 'Wall Street Journal',
-          'newsTitle': 'VC Daily: Question of the Week: What\'s the Future of Clean-Tech Startups?',
-          'newsDate': 'December 4, 2020',
-          'newsLink': 'https://www.wsj.com/articles/vc-daily-question-of-the-week-whats-the-future-of-clean-tech-startups-11607091952',
-          'newsImage': '/external-logos/wsj-logo.png'
-        },
-        {
-          'newsSource': 'FinTech InShorts',
-          'newsTitle': 'Sourcegraph: Raises $50M in Series C Funding',
-          'newsDate': 'December 4, 2020',
-          'newsLink': 'https://www.fintechinshorts.com/sourcegraph-raises-50m-in-series-c-funding/',
-          'newsImage': '/external-logos/fintech-inshorts-logo.png'
-        },
-        {
-          'newsSource': 'VCBay',
-          'newsTitle': 'Universal Code Search platform Sourcegraph secures US$ 50 million Series C funding',
-          'newsDate': 'December 4, 2020',
-          'newsLink': 'https://www.vcbay.news/2020/12/04/universal-code-search-platform-sourcegraph-secures-us-50-million-series-c-funding/',
-          'newsImage': '/external-logos/vcbay-logo.png'
-        },
-        {
-          'newsSource': 'VentureBeat',
-          'newsTitle': 'Sourcegraph raises $50 million to tackle "big code" problems with universal search',
-          'newsDate': 'December 3, 2020',
-          'newsLink': 'https://venturebeat.com/2020/12/03/sourcegraph-raises-50-million-to-tackle-big-code-problems-with-universal-search/',
-          'newsImage': '/external-logos/venturebeat-logo.png'
-        },
-        {
-          'newsSource': 'Crunchbase News',
-          'newsTitle': 'Sourcegraph Lands $50M Series C',
-          'newsDate': 'December 3, 2020',
-          'newsLink': 'https://news.crunchbase.com/news/sourcegraph-lands-50m-series-c/',
-          'newsImage': '/external-logos/crunchbase-news-logo.png'
-        },
-        {
-          'newsSource': 'Silicon Angle',
-          'newsTitle': 'Google for developers\' startup Sourcegraph lands $50M Sequoia-led round',
-          'newsDate': 'December 3, 2020',
-          'newsLink': 'https://siliconangle.com/2020/12/03/google-developers-startup-sourcegraph-lands-50m-sequoia-led-round/',
-          'newsImage': '/external-logos/silicon-angle-logo.svg'
-        },
-        {
-          'newsSource': 'Fortune',
-          'newsTitle': 'Newsletter|Term Sheet Venture Deals',
-          'newsDate': 'December 3, 2020',
-          'newsLink': 'https://fortune.com/2020/12/03/the-problem-with-vc-backed-founders-who-say-they-dont-care-about-getting-rich/',
-          'newsImage': '/external-logos/fortune-logo.svg'
-        },
-        {
-          'newsSource': 'FinSMES',
-          'newsTitle': 'Sourcegraph Raises $50M in Series C Funding',
-          'newsDate': 'December 3, 2020',
-          'newsLink': 'https://www.finsmes.com/2020/12/sourcegraph-raises-50m-in-series-c-funding.html',
-          'newsImage': '/external-logos/finsmes-logo.svg'
-        },
-        {
-          'newsSource': 'Devops.com',
-          'newsTitle': 'Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search',
-          'newsDate': 'December 3, 2020',
-          'newsLink': 'https://devops.com/sourcegraph-secures-50-million-in-series-c-funding-for-universal-code-search/ ',
-          'newsImage': '/external-logos/devops-com-logo.png'
-        },
-        {
-          'newsSource': 'AIthority',
-          'newsTitle': 'Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search',
-          'newsDate': 'December 3, 2020',
-          'newsLink': 'https://aithority.com/it-and-devops/sourcegraph-secures-50-million-in-series-c-funding-for-universal-code-search/ ',
-          'newsImage': '/external-logos/aithority-logo.png'
-        },
-        {
-          'newsSource': 'Sourcegraph',
-          'newsTitle': 'Press Release: Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search',
-          'newsDate': 'December 3, 2020',
-          'newsLink': '/press-release/sourcegraph-secures-series-c-sequoia',
-          'newsImage': '/sourcegraph-mark.png'
-        },
-        {
-          'newsSource': 'Devops.com',
-          'newsTitle': 'MediaOps Announces the Finalists for the DevOps Dozen² 2020 Awards',
-          'newsDate': 'December 2, 2020',
-          'newsLink': 'https://www.einpresswire.com/article/531942242/mediaops-announces-the-finalists-for-the-devops-dozen-2020-awards',
-          'newsImage': '/external-logos/devops-com-logo.png'
-        },
-        {
-          'newsSource': 'IT Business Edge',
-          'newsTitle': 'Big Code Equals Big Problems for Wannabe Software Companies',
-          'newsDate': 'November 13, 2020',
-          'newsLink': 'https://www.itbusinessedge.com/blogs/it-unmasked/big-code-equals-big-problems-for-wannabe-software-companies.html',
-          'newsImage': '/external-logos/it-businessedge-logo.png'
-        },
-        {
-          'newsSource': 'Interesting Engineering',
-          'newsTitle': 'How Programming Has Changed Over the Last Decade',
-          'newsDate': 'November 12, 2020',
-          'newsLink': 'https://interestingengineering.com/how-programming-has-changed-over-the-last-decade',
-          'newsImage': '/external-logos/interesting-engineering-logo.png'
-        },
-        {
-          'newsSource': 'Fast Company',
-          'newsTitle': 'I\'m deaf, and this is what happens when I get on a Zoom call',
-          'newsDate': 'October 26, 2020',
-          'newsLink': 'https://www.fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call',
-          'newsImage': '/external-logos/fast-company-logo.png'
-        },
-        {
-          'newsSource': 'SD Times',
-          'newsTitle': 'Report: The emergence of Big Code comes with big problems',
-          'newsDate': 'October 23, 2020',
-          'newsLink': 'https://sdtimes.com/softwaredev/report-the-emergence-of-big-code-comes-with-big-problems/',
-          'newsImage': '/external-logos/sd-times-sq-logo.svg'
-        },
-        {
-          'newsSource': 'Software.com',
-          'newsTitle': 'Big Code—How "More Code, Faster" Creates Problems',
-          'newsDate': 'October 15, 2020',
-          'newsLink': 'https://www.software.com/src/big-code-how-more-code-faster-creates-problems',
-          'newsImage': '/external-logos/software-com-src-logo.png'
-        },
-        {
-          'newsSource': 'Devops.com',
-          'newsTitle': 'New Survey Highlights Codebase Size Problems',
-          'newsDate': 'October 9, 2020',
-          'newsLink': 'https://devops.com/new-survey-highlights-codebase-size-problems/',
-          'newsImage': '/external-logos/devops-com-logo.png'
-        },
-        {
-          'newsSource': 'Devchat.tv',
-          'newsTitle': 'Podcast: Caddy 2 Web Server with Matthew Holt (starts 1:10:22)',
-          'newsDate': 'October 6, 2020',
-          'newsLink': 'https://devchat.tv/js-jabber/jsj-452-caddy-2-web-server-with-matthew-holt/',
-          'newsImage': '/external-logos/devchat-tv-logo.png'
-        },
-        {
-          'newsSource': 'Gigazine',
-          'newsTitle': 'The amount and complexity of code handled by developers has increased more than 100 times in the last decade.',
-          'newsDate': 'October 5, 2020',
-          'newsLink': 'https://gigazine.net/news/20201005-100x-more-code-in-10-years/',
-          'newsImage': '/external-logos/gigazine-logo.png'
-        },
-        {
-          'newsSource': 'ZDNet',
-          'newsTitle': 'Low and no-code are wonderful, but a \'big code\' world lurks underneath',
-          'newsDate': 'October 7, 2020',
-          'newsLink': 'https://www.zdnet.com/article/low-and-no-code-are-wonderful-but-a-big-code-world-lurks-underneath/',
-          'newsImage': '/external-logos/zdnet-logo.svg'
-        },
-        {
-          'newsSource': 'ZDNet',
-          'newsTitle': 'Oui, le low code et le no code c\'est cool, mais le \'Big Code\' les guettent (c\'est quoi ?)',
-          'newsDate': 'October 7, 2020',
-          'newsLink': 'https://www.zdnet.fr/actualites/oui-le-low-code-et-le-no-code-c-est-cool-mais-le-big-code-les-guettent-c-est-quoi-39910867.htm',
-          'newsImage': '/external-logos/zdnet-logo.svg'
-        },
-        {
-          'newsSource': 'Le Monde Informatique',
-          'newsTitle': 'Les développeurs gèrent 100 fois plus de code qu\'il y a 10 ans',
-          'newsDate': 'October 6, 2020',
-          'newsLink': 'https://www.lemondeinformatique.fr/actualites/lire-les-developpeurs-gerent-100-fois-plus-de-code-qu-il-y-a-10-ans-80597.html',
-          'newsImage': '/external-logos/le-monde-informatique-logo.png'
-        },
-        {
-          'newsSource': 'InfoWorld',
-          'newsTitle': 'The best open source software of 2020',
-          'newsDate': 'October 5, 2020',
-          'newsLink': 'https://www.infoworld.com/article/3575858/the-best-open-source-software-of-2020.html#slide24',
-          'newsImage': '/external-logos/infoworld-bossie-awards-2020.png'
-        },
-        {
-          'newsSource': 'Developer Tech',
-          'newsTitle': '51% of devs say they\'re dealing with 100x more code than 10 years ago',
-          'newsDate': 'October 5, 2020',
-          'newsLink': 'https://developer-tech.com/news/2020/oct/05/51-percent-devs-100-times-more-code-10-years-ago/',
-          'newsImage': '/external-logos/developer-tech-logo.png'
-        },
-        {
-          'newsSource': 'Fudzilla',
-          'newsTitle': 'Developers dealing with more code than before',
-          'newsDate': 'October 5, 2020',
-          'newsLink': 'https://www.fudzilla.com/news/51645-developers-dealing-with-more-code-than-before',
-          'newsImage': '/external-logos/fudzilla-logo.png'
-        },
-        {
-          'newsSource': 'Golem.de',
-          'newsTitle': '100-mal mehr Code als vor zehn Jahren',
-          'newsDate': 'October 5, 2020',
-          'newsLink': 'https://www.golem.de/news/softwareentwickler-100-mal-mehr-code-als-vor-zehn-jahren-2010-151298.html',
-          'newsImage': '/external-logos/golem.de-logo.png'
-        },
-        {
-          'newsSource': 'Slashdot',
-          'newsTitle': '51% of Developers Say They\'re Managing 100 Times More Code Than a Decade Ago',
-          'newsDate': 'October 4, 2020',
-          'newsLink': 'https://developers.slashdot.org/story/20/10/04/0157214/51-of-developers-say-theyre-managing-100-times-more-code-than-a-decade-ago',
-          'newsImage': '/external-logos/slashdot-logo.png'
-        },
-        {
-          'newsSource': 'Techzine',
-          'newsTitle': 'Ontwikkelaars beheren 100 keer meer code dan 10 jaar geleden',
-          'newsDate': 'October 2, 2020',
-          'newsLink': 'https://www.techzine.be/nieuws/devops/61168/ontwikkelaars-beheren-100-keer-meer-code-dan-10-jaar-geleden/',
-          'newsImage': '/external-logos/techzine-logo.png'
-        },
-        {
-          'newsSource': 'Best Gaming Pro',
-          'newsTitle': 'Sourcegraph: Devs are managing 100x more code now than they did in 2010',
-          'newsDate': 'October 2, 2020',
-          'newsLink': 'https://bestgamingpro.com/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/',
-          'newsImage': '/external-logos/bestgamingpro-logo.png'
-        },
-        {
-          'newsSource': 'Business Insider - Markets Insider',
-          'newsTitle': 'Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries',
-          'newsDate': 'October 1, 2020',
-          'newsLink': 'https://markets.businessinsider.com/news/stocks/survey-findings-reveal-big-code-presents-challenges-for-development-teams-across-all-industries-1029641029',
-          'newsImage': '/external-logos/business-insider-logo.png'
-        },
-        {
-          'newsSource': 'Developpez',
-          'newsTitle': 'Les développeurs gèrent un volume de code 100',
-          'newsDate': 'October 1, 2020',
-          'newsLink': 'https://www.developpez.com/actu/309305/Les-developpeurs-gerent-un-volume-de-code-100-fois-plus-important-maintenant-qu-en-2010-dans-plus-de-langages-pour-plus-de-plateformes-que-jamais-Une-complexite-qui-a-un-impact-personnel-sur-eux/',
-          'newsImage': '/external-logos/developpez-logo.png'
-        },
-        {
-          'newsSource': 'Ars Technica',
-          'newsTitle': 'Sourcegraph: Devs are managing 100x more code now than they did in 2010',
-          'newsDate': 'October 1, 2020',
-          'newsLink': 'https://arstechnica.com/gadgets/2020/10/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/',
-          'newsImage': '/external-logos/ars-technica-logo.png'
-        },
-        {
-          'newsSource': 'Sourcegraph',
-          'newsTitle': 'Press Release: Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries',
-          'newsDate': 'October 1, 2020',
-          'newsLink': '/press-release/big-code-survey-2020',
-          'newsImage': '/sourcegraph-mark.png'
-        },
-        {
-          'newsSource': 'Tracxn',
-          'newsTitle': 'Emerging Startups 2020: Top Application Development Tools',
-          'newsDate': 'August 28, 2020',
-          'newsLink': 'https://tracxn.com/d/emerging-startups/application-development-tools-startups-2020',
-          'newsImage': '/external-logos/tracxn-logo.png'
-        },
-        {
-          'newsSource': 'LWN.net',
-          'newsTitle': 'Searching code with Sourcegraph (subscriber content)',
-          'newsDate': 'August 17, 2020',
-          'newsLink': 'https://lwn.net/SubscriberLink/828748/9bd97e8761546ed4/',
-          'newsImage': '/external-logos/lwn-net-logo.png'
-        },
-        {
-          'newsSource': 'The Twenty Minute VC',
-          'newsTitle': 'Podcast: Interview with Apurva Mehta, managing partner at Summit Peak Investments (starts 35:45)',
-          'newsDate': 'August 17, 2020',
-          'newsLink': 'https://thetwentyminutevc.com/apurvamehta/',
-          'newsImage': '/external-logos/twenty-minute-vc-logo.png'
-        },
-        {
-          'newsSource': 'ITPro Today',
-          'newsTitle': 'Code Challenges: Coping in the Era of "Big Code"',
-          'newsDate': 'August 10, 2020',
-          'newsLink': 'https://www.itprotoday.com/devops-and-software-development/code-challenges-coping-era-big-code',
-          'newsImage': '/external-logos/itpro-today-logo.png'
-        },
-        {
-          'newsSource': 'DevOps Digest',
-          'newsTitle': 'Sourcegraph Raises Additional $5 Million in Series B Funding',
-          'newsDate': 'August 3, 2020',
-          'newsLink': 'https://www.devopsdigest.com/sourcegraph-raises-additional-5-million-in-series-b-funding',
-          'newsImage': '/external-logos/devops-digest-logo.png'
-        },
-        {
-          'newsSource': 'SaaS Product Chat',
-          'newsTitle': 'Podcast: Empresas API-céntricas y API como producto (starts 16:43)',
-          'newsDate': 'July 23, 2020',
-          'newsLink': 'https://saasproductchat.com/episodes/api',
-          'newsImage': '/external-logos/saas-product-chat-logo.png'
-        },
-        {
-          'newsSource': 'Wall Street Journal',
-          'newsTitle': 'Tech Startup Funding Declines as Pandemic Drags On',
-          'newsDate': 'July 23, 2020',
-          'newsLink': 'https://www.wsj.com/articles/tech-startup-funding-declines-as-pandemic-drags-on-11595494800',
-          'newsImage': '/external-logos/wsj-logo.png'
-        },
-        {
-          'newsSource': 'Software Engineering Daily',
-          'newsTitle': 'Podcast: Sourcegraph: Code Search and Intelligence with Beyang Liu',
-          'newsDate': 'July 22, 2020',
-          'newsLink': 'https://softwareengineeringdaily.com/2020/07/22/sourcegraph-code-search-and-intelligence-with-beyang-liu/',
-          'newsImage': '/external-logos/software-engineering-daily-logo.png'
-        },
-        {
-          'newsSource': 'KMWorld',
-          'newsTitle': 'Sourcegraph new funding to innovate with Sourcegraph Cloud and Universal Code Search',
-          'newsDate': 'July 16, 2020',
-          'newsLink': 'https://www.kmworld.com/Articles/News/News/Sourcegraph-new-funding-to-innovate-with-Sourcegraph-Cloud-and-Universal-Code-Search-141852.aspx',
-          'newsImage': '/external-logos/kmworld-logo.svg'
-        },
-        {
-          'newsSource': 'Silicon Valley Business Journal',
-          'newsTitle': 'The Funded: 10 Bay Area startups score more than $270M at midweek',
-          'newsDate': 'July 15, 2020',
-          'newsLink': 'https://www.bizjournals.com/sanjose/news/2020/07/15/10-bay-area-startups-score-more-than-270-million.html',
-          'newsImage': '/external-logos/svbj-logo.png'
-        },
-        {
-          'newsSource': 'Devops.com',
-          'newsTitle': 'Hiring world-class talent to build Sourcegraph Cloud',
-          'newsDate': 'July 15, 2020',
-          'newsLink': 'https://devops.com/hiring-world-class-talent-to-build-sourcegraph-cloud/',
-          'newsImage': '/external-logos/devops-com-logo.png'
-        },
-        {
-          'newsSource': 'WSJ Pro',
-          'newsTitle': 'Venture Capital Newsletter',
-          'newsDate': 'July 15, 2020',
-          'newsLink': 'https://venturecapital.createsend1.com/t/ViewEmail/d/8B15B1AD8CDBDF882540EF23F30FEDED',
-          'newsImage': '/external-logos/wsjpro-logo.png'
-        },
-        {
-          'newsSource': 'FinSMES',
-          'newsTitle': 'Sourcegraph Raises Additional $5M in Series B Funding',
-          'newsDate': 'July 15, 2020',
-          'newsLink': 'http://www.finsmes.com/2020/07/sourcegraph-raises-additional-5m-in-series-b-funding.html',
-          'newsImage': '/external-logos/finsmes-logo.svg'
-        },
-        {
-          'newsSource': 'Fortune',
-          'newsTitle': 'Newsletter|Term Sheet Venture Deals',
-          'newsDate': 'July 15, 2020',
-          'newsLink': 'https://fortune.com/2020/07/15/the-needle-has-barely-moved-on-racism-in-investing-but-this-investor-thinks-this-time-is-different/',
-          'newsImage': '/external-logos/fortune-logo.svg'
-        },
-        {
-          'newsSource': 'Business Insider',
-          'newsTitle': 'Code collaboration startup Sourcegraph has raised $28 million',
-          'newsDate': 'July 14, 2020',
-          'newsLink': 'https://www.businessinsider.com/sourcegraph-adds-to-funding-doubles-headcount-and-lands-new-customers-2020-7',
-          'newsImage': '/external-logos/business-insider-logo.png'
-        },
-        {
-          'newsSource': 'Digital Anarchist',
-          'newsTitle': 'Podcast: Quinn Slack &mdash; TechStrong TV',
-          'newsDate': 'July 13, 2020',
-          'newsLink': 'https://digitalanarchist.com/videos/featured-guests/quinn-slack-techstrong-tv-2',
-          'newsImage': '/external-logos/digital-anarchist-logo.png'
-        },
-        {
-          'newsSource': 'InfoQ',
-          'newsTitle': 'Podcast: Quinn Slack of Sourcegraph on Moving to Fully Remote and Zoomcations',
-          'newsDate': 'July 6, 2020',
-          'newsLink': 'https://www.infoq.com/podcasts/zoomcations-fully-remote/',
-          'newsImage': '/external-logos/infoq-logo.png'
-        },
-        {
-          'newsSource': 'Security Boulevard',
-          'newsTitle': 'Breaking the Solidity Compiler with a Fuzzer',
-          'newsDate': 'June 5, 2020',
-          'newsLink': 'https://securityboulevard.com/2020/06/breaking-the-solidity-compiler-with-a-fuzzer/',
-          'newsImage': '/external-logos/security-boulevard-logo.png'
-        },
-        {
-          'newsSource': 'itWeek',
-          'newsTitle': 'Four Trends Forming a New Era of Big Code',
-          'newsDate': 'June 4, 2020',
-          'newsLink': 'https://www.itweek.ru/digitalization/article/detail.php?ID=212823',
-          'newsImage': '/external-logos/itweek-ru-logo.png'
-        },
-        {
-          'newsSource': 'eWeek',
-          'newsTitle': 'Four Trends Shaping the New Era of Big Code',
-          'newsDate': 'May 18, 2020',
-          'newsLink': 'https://www.eweek.com/development/four-trends-shaping-the-new-era-of-big-code',
-          'newsImage': '/external-logos/eweek-logo.svg'
-        },
-        {
-          'newsSource': 'Code Review News',
-          'newsTitle': 'Code review tools that increase productivity',
-          'newsDate': 'May 17, 2020',
-          'newsLink': 'https://codereviewnews.com/code-review-tools-that-increase-productivity',
-          'newsImage': '/external-logos/code-review-logo.png'
-        },
-        {
-          'newsSource': 'Podcast.__init__',
-          'newsTitle': 'Podcast: Managing Distributed Teams In The Age Of Remote Work',
-          'newsDate': 'May 11, 2020',
-          'newsLink': 'https://www.pythonpodcast.com/sourcegraph-remote-work-episode-262/',
-          'newsImage': '/external-logos/podcast-init.png'
-        },
-        {
-          'newsSource': 'The Enterprisers Project',
-          'newsTitle': 'How to lead remote development teams: 4 tips',
-          'newsDate': 'May 1, 2020',
-          'newsLink': 'https://enterprisersproject.com/article/2020/5/how-lead-remote-dev-teams',
-          'newsImage': '/external-logos/enterprisers-project-logo.png'
-        },
-        {
-          'newsSource': 'TechStrong TV',
-          'newsTitle': 'Podcast: Interview Quinn Slack (starts 1:21:20)',
-          'newsDate': 'April 29, 2020',
-          'newsLink': 'https://www.youtube.com/watch?v=XEr-_RpmgDI&t=4887',
-          'newsImage': '/external-logos/techstrong-tv-logo.png'
-        },
-        {
-          'newsSource': 'Sourcegraph',
-          'newsTitle': 'Press Release: Sourcegraph Releases Free Digital Children\'s Book Titled "Our ABCs: Always Be Coding"',
-          'newsDate': 'April 23, 2020',
-          'newsLink': '/press-release/our-abcs-childrens-book',
-          'newsImage': 'https://info.sourcegraph.com/hubfs/CTA%20images/abc-book-cover.png'
-        },
-        {
-          'newsSource': 'The Server Side',
-          'newsTitle': 'Consider these developer volunteer opportunities during COVID-19',
-          'newsDate': 'April 23, 2020',
-          'newsLink': 'https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Consider-these-developer-volunteer-opportunities-during-COVID-19',
-          'newsImage': '/external-logos/serverside-logo.png'
-        },
-        {
-          'newsSource': 'SDxCentral',
-          'newsTitle': 'Money Moves: March 2020',
-          'newsDate': 'April 12, 2020',
-          'newsLink': 'https://www.sdxcentral.com/articles/news/money-moves-march-2020/2020/04/',
-          'newsImage': '/external-logos/sdx-central-logo.svg'
-        },
-        {
-          'newsSource': 'Anchor.fm',
-          'newsTitle': 'Podcast: Universal code search with Sourcegraph (starts 16:35)',
-          'newsDate': 'April 9, 2020',
-          'newsLink': 'https://anchor.fm/theweeklysqueak/episodes/Universal-code-search-with-Sourcegraph---Civilization--Lockdowns--and-AmigaOS-eciok5',
-          'newsImage': '/external-logos/anchor-logo.png'
-        },
-        {
-          'newsSource': 'Database Trends and Applications',
-          'newsTitle': 'Startups to Watch in 2020: Sourcegraph',
-          'newsDate': 'April 8, 2020',
-          'newsLink': 'http://www.dbta.com/Editorial/Trends-and-Applications/Startups-to-Watch-in-2020-139682.aspx',
-          'newsImage': '/external-logos/databasetrendsapp-logo.jpg'
-        },
-        {
-          'newsSource': 'InfoQ',
-          'newsTitle': 'Code Search Now Available to Browse Google\'s Open-Source Projects',
-          'newsDate': 'April 8, 2020',
-          'newsLink': 'https://www.infoq.com/news/2020/04/google-code-search-available/',
-          'newsImage': '/external-logos/infoq-logo.png'
-        },
-        {
-          'newsSource': 'Devops.com',
-          'newsTitle': 'Universal Code Search Combinations',
-          'newsDate': 'April 7, 2020',
-          'newsLink': 'https://devops.com/universal-code-search-combinations/',
-          'newsImage': '/external-logos/devops-com-logo.png'
-        },
-        {
-          'newsSource': 'IEEE Spectrum',
-          'newsTitle': 'Q&A: Sourcegraph\'s Universal Code Search Tool',
-          'newsDate': 'April 3, 2020',
-          'newsLink': 'https://spectrum.ieee.org/tech-talk/computing/software/sourcegraph-universal-code-search-tool',
-          'newsImage': '/external-logos/ieee-spectrum-logo.png'
-        },
-        {
-          'newsSource': 'DEVOPSdigest',
-          'newsTitle': 'Sourcegraph Secures $23 Million Series B Funding',
-          'newsDate': 'March 16, 2020',
-          'newsLink': 'https://www.devopsdigest.com/sourcegraph-secures-23-million-series-b-funding/',
-          'newsImage': '/external-logos/devops-digest-logo.png'
-        },
-        {
-          'newsSource': 'The New Stack',
-          'newsTitle': 'Universal Code Search: A New Search Tech for the Era of Big Code',
-          'newsDate': 'March 9, 2020',
-          'newsLink': 'https://thenewstack.io/universal-code-search-a-new-search-tech-for-the-era-of-big-code/',
-          'newsImage': '/external-logos/the-new-stack-sq-logo.svg'
-        },
-        {
-          'newsSource': 'Pulse 2.0',
-          'newsTitle': 'Universal Code Search Company Sourcegraph Raises $23 Million',
-          'newsDate': 'March 5, 2020',
-          'newsLink': 'https://pulse2.com/sourcegraph-raises-23-million/',
-          'newsImage': '/external-logos/pulse2.0-logo.png'
-        },
-        {
-          'newsSource': 'Silicon Valley Business Journal',
-          'newsTitle': 'The Funded: 9 startups raise over $450M at midweek in Bay Area',
-          'newsDate': 'March 4, 2020',
-          'newsLink': 'https://www.bizjournals.com/sanjose/news/2020/03/04/the-funded-9-startups-raise-over-450m-at-midweek.html',
-          'newsImage': '/external-logos/svbj-logo.png'
-        },
-        {
-          'newsSource': 'Fortune',
-          'newsTitle': 'Term Sheet',
-          'newsDate': 'March 4, 2020',
-          'newsLink': 'https://fortune.com/2020/03/04/the-bitter-lesson-founders-can-learn-from-edens-acquisition-of-managed-by-q/',
-          'newsImage': '/external-logos/fortune-2016-logo.png'
-        },
-        {
-          'newsSource': 'Sourcegraph',
-          'newsTitle': 'Press Release: Sourcegraph Secures $23 Million Series B Round for Universal Code Search',
-          'newsDate': 'March 3, 2020',
-          'newsLink': '/press-release/sourcegraph-secures-series-b',
-          'newsImage': '/sourcegraph-mark.png'
-        },
-        {
-          'newsSource': 'Vator News',
-          'newsTitle': 'Daily funding roundup - March 3rd, 2020',
-          'newsDate': 'March 3, 2020',
-          'newsLink': 'https://vator.tv/news/2020-03-03-daily-funding-roundup-march-3rd-2020',
-          'newsImage': '/external-logos/vatortv.svg'
-        },
-        {
-          'newsSource': 'Medium',
-          'newsTitle': 'Why We Invested in Sourcegraph',
-          'newsDate': 'March 3, 2020',
-          'newsLink': 'https://medium.com/craft-ventures/why-we-invested-in-sourcegraph-5ace28317e3d',
-          'newsImage': '/external-logos/medium-logo.svg'
-        },
-        {
-          'newsSource': 'Silicon Angle',
-          'newsTitle': 'Universal code search startup Sourcegraph gets $23 million in funding',
-          'newsDate': 'March 3, 2020',
-          'newsLink': 'https://siliconangle.com/2020/03/03/universal-code-search-startup-sourcegraph-gets-23-million-series-b-funding/',
-          'newsImage': '/external-logos/silicon-angle-logo.svg'
-        },
-        {
-          'newsSource': 'ZDNet',
-          'newsTitle': 'Universal Code Search gets a boost: Sourcegraph secures $23 million Series B Round funding',
-          'newsDate': 'March 3, 2020',
-          'newsLink': 'https://www.zdnet.com/article/universal-code-search-gets-a-boost-sourcegraph-secures-23-million-series-b-round-funding/',
-          'newsImage': '/external-logos/zdnet-logo.svg'
-        },
-        {
-          'newsSource': 'VentureBeat',
-          'newsTitle': 'Sourcegraph raises $23 million to bring universal code search to all developers',
-          'newsDate': 'March 3, 2020',
-          'newsLink': 'https://venturebeat.com/2020/03/03/sourcegraph-raises-23-million-to-bring-universal-code-search-to-all-developers/',
-          'newsImage': '/external-logos/venturebeat-logo.png'
-        },
-        {
-          'newsSource': 'InsideBIGData',
-          'newsTitle': 'Above the Trend Line” &mdash; Your Industry Rumor Central for 3/3/2020',
-          'newsDate': 'March 3, 2020',
-          'newsLink': 'https://insidebigdata.com/2020/03/03/above-the-trend-line-your-industry-rumor-central-for-3-3-2020/',
-          'newsImage': '/external-logos/insidebigdata-logo.svg'
-        },
-        {
-          'newsSource': 'KMWorld',
-          'newsTitle': 'Sourcegraph receives $23 million in funding round to expand',
-          'newsDate': 'March 3, 2020',
-          'newsLink': 'https://www.kmworld.com/Articles/News/News/Sourcegraph-receives-%2423-million-in-funding-round-to-expand-139537.aspx',
-          'newsImage': '/external-logos/kmworld-logo.svg'
-        },
-        {
-          'newsSource': 'SD Times',
-          'newsTitle': 'SD Times news digest: Babylon.js 4.1, DataStax acquires Apache Cassandra services company, Waymo announces first external investment round',
-          'newsDate': 'March 3, 2020',
-          'newsLink': 'https://sdtimes.com/n-software/sd-times-news-digest-babylon-js-4-1-datastax-acquires-apache-cassandra-services-company-waymo-announces-first-external-investment-round/',
-          'newsImage': '/external-logos/sd-times-sq-logo.svg'
-        },
-        {
-          'newsSource': 'FinSMES',
-          'newsTitle': 'Sourcegraph raises $23 million to bring universal code search to all developers',
-          'newsDate': 'March 3, 2020',
-          'newsLink': 'http://www.finsmes.com/2020/03/sourcegraph-raises-23m-in-series-b-funding-round.html',
-          'newsImage': '/external-logos/finsmes-logo.svg'
-        },
-        {
-          'newsSource': 'InfoWorld',
-          'newsTitle': 'Sourcegraph: Universal code search and intelligence',
-          'newsDate': 'January 15, 2020',
-          'newsLink': 'https://www.infoworld.com/article/3514213/sourcegraph-universal-code-search-and-intelligence.html',
-          'newsImage': '/external-logos/infoworld-sq-logo.png'
-        }
-      ]
+        year: 2020,
+        articles: [
+            {
+                newsSource: 'Crunchbase News',
+                newsTitle: 'This Is What Tech Hiring Could Be Like In 2021',
+                newsDate: 'December 23, 2020',
+                newsLink: 'https://news.crunchbase.com/news/tech-hiring-in-2021/',
+                newsImage: '/external-logos/crunchbase-news-logo.png',
+            },
+            {
+                newsSource: 'InsideBIGData',
+                newsTitle: 'Above the Trend Line &mdash; Your Industry Rumor Central for 12/16/2020',
+                newsDate: 'December 16, 2020',
+                newsLink:
+                    'https://insidebigdata.com/2020/12/16/above-the-trend-line-your-industry-rumor-central-for-12-16-2020/',
+                newsImage: '/external-logos/insidebigdata-logo.svg',
+            },
+            {
+                newsSource: 'Business Insider',
+                newsTitle:
+                    'Code-collaboration startup Sourcegraph explains the key strategy that helped it nab big customers like Uber and Amazon early on',
+                newsDate: 'December 10, 2020',
+                newsLink: 'https://www.businessinsider.com/sourcegraph-self-hosted-customers-amazon-uber-cloud-2020-12',
+                newsImage: '/external-logos/business-insider-logo.png',
+            },
+            {
+                newsSource: 'Pulse 2.0',
+                newsTitle: 'Universal Code Search Company Sourcegraph Raises $50 Million',
+                newsDate: 'December 8, 2020',
+                newsLink: 'https://pulse2.com/sourcegraph-raises-50-million-funding/',
+                newsImage: '/external-logos/pulse2.0-logo.png',
+            },
+            {
+                newsSource: 'Market Currents WealthNet',
+                newsTitle: 'Weekly Investment Picks (November 30 to December 7)',
+                newsDate: 'December 8, 2020',
+                newsLink:
+                    'https://www.marketcurrentswealthnet.com/news/weekly-investment-picks-november-30-to-december-7/',
+                newsImage: '/external-logos/market-currents-wealthnet-logo.png',
+            },
+            {
+                newsSource: 'Techcrunch',
+                newsTitle: 'Podcast: Equity Monday (starts 3:18) ',
+                newsDate: 'December 7, 2020',
+                newsLink:
+                    'https://techcrunch.com/2020/12/07/equity-monday-airbnb-pricing-sequoia-makes-money-and-early-stage-rounds/?tpcc=ECTW2020',
+                newsImage: '/external-logos/techcrunch-logo.png',
+            },
+            {
+                newsSource: 'Xataka',
+                newsTitle:
+                    'Qué es Sourcegraph, la herramienta que usan los desarrolladores de Google y Amazon y en la que Sequoia ha invertido 50 millones',
+                newsDate: 'December 7, 2020',
+                newsLink:
+                    'https://www.xataka.com/pro/que-sourcegraph-herramienta-que-usan-desarrolladores-google-amazon-que-sequoia-ha-invertido-50-millones',
+                newsImage: '/external-logos/xataka-logo.png',
+            },
+            {
+                newsSource: 'Silicon Valley Business Journal',
+                newsTitle: "The Funded: This year's VC funding already tops all of last year's",
+                newsDate: 'December 4, 2020',
+                newsLink:
+                    'https://www.bizjournals.com/sanjose/news/2020/12/04/this-years-vc-funding-already-tops-all-of-last-ye.html',
+                newsImage: '/external-logos/svbj-logo.png',
+            },
+            {
+                newsSource: 'Wall Street Journal',
+                newsTitle: "VC Daily: Question of the Week: What's the Future of Clean-Tech Startups?",
+                newsDate: 'December 4, 2020',
+                newsLink:
+                    'https://www.wsj.com/articles/vc-daily-question-of-the-week-whats-the-future-of-clean-tech-startups-11607091952',
+                newsImage: '/external-logos/wsj-logo.png',
+            },
+            {
+                newsSource: 'FinTech InShorts',
+                newsTitle: 'Sourcegraph: Raises $50M in Series C Funding',
+                newsDate: 'December 4, 2020',
+                newsLink: 'https://www.fintechinshorts.com/sourcegraph-raises-50m-in-series-c-funding/',
+                newsImage: '/external-logos/fintech-inshorts-logo.png',
+            },
+            {
+                newsSource: 'VCBay',
+                newsTitle: 'Universal Code Search platform Sourcegraph secures US$ 50 million Series C funding',
+                newsDate: 'December 4, 2020',
+                newsLink:
+                    'https://www.vcbay.news/2020/12/04/universal-code-search-platform-sourcegraph-secures-us-50-million-series-c-funding/',
+                newsImage: '/external-logos/vcbay-logo.png',
+            },
+            {
+                newsSource: 'VentureBeat',
+                newsTitle: 'Sourcegraph raises $50 million to tackle "big code" problems with universal search',
+                newsDate: 'December 3, 2020',
+                newsLink:
+                    'https://venturebeat.com/2020/12/03/sourcegraph-raises-50-million-to-tackle-big-code-problems-with-universal-search/',
+                newsImage: '/external-logos/venturebeat-logo.png',
+            },
+            {
+                newsSource: 'Crunchbase News',
+                newsTitle: 'Sourcegraph Lands $50M Series C',
+                newsDate: 'December 3, 2020',
+                newsLink: 'https://news.crunchbase.com/news/sourcegraph-lands-50m-series-c/',
+                newsImage: '/external-logos/crunchbase-news-logo.png',
+            },
+            {
+                newsSource: 'Silicon Angle',
+                newsTitle: "Google for developers' startup Sourcegraph lands $50M Sequoia-led round",
+                newsDate: 'December 3, 2020',
+                newsLink:
+                    'https://siliconangle.com/2020/12/03/google-developers-startup-sourcegraph-lands-50m-sequoia-led-round/',
+                newsImage: '/external-logos/silicon-angle-logo.svg',
+            },
+            {
+                newsSource: 'Fortune',
+                newsTitle: 'Newsletter|Term Sheet Venture Deals',
+                newsDate: 'December 3, 2020',
+                newsLink:
+                    'https://fortune.com/2020/12/03/the-problem-with-vc-backed-founders-who-say-they-dont-care-about-getting-rich/',
+                newsImage: '/external-logos/fortune-logo.svg',
+            },
+            {
+                newsSource: 'FinSMES',
+                newsTitle: 'Sourcegraph Raises $50M in Series C Funding',
+                newsDate: 'December 3, 2020',
+                newsLink: 'https://www.finsmes.com/2020/12/sourcegraph-raises-50m-in-series-c-funding.html',
+                newsImage: '/external-logos/finsmes-logo.svg',
+            },
+            {
+                newsSource: 'Devops.com',
+                newsTitle: 'Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search',
+                newsDate: 'December 3, 2020',
+                newsLink:
+                    'https://devops.com/sourcegraph-secures-50-million-in-series-c-funding-for-universal-code-search/ ',
+                newsImage: '/external-logos/devops-com-logo.png',
+            },
+            {
+                newsSource: 'AIthority',
+                newsTitle: 'Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search',
+                newsDate: 'December 3, 2020',
+                newsLink:
+                    'https://aithority.com/it-and-devops/sourcegraph-secures-50-million-in-series-c-funding-for-universal-code-search/ ',
+                newsImage: '/external-logos/aithority-logo.png',
+            },
+            {
+                newsSource: 'Sourcegraph',
+                newsTitle:
+                    'Press Release: Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search',
+                newsDate: 'December 3, 2020',
+                newsLink: '/press-release/sourcegraph-secures-series-c-sequoia',
+                newsImage: '/sourcegraph-mark.png',
+            },
+            {
+                newsSource: 'Devops.com',
+                newsTitle: 'MediaOps Announces the Finalists for the DevOps Dozen² 2020 Awards',
+                newsDate: 'December 2, 2020',
+                newsLink:
+                    'https://www.einpresswire.com/article/531942242/mediaops-announces-the-finalists-for-the-devops-dozen-2020-awards',
+                newsImage: '/external-logos/devops-com-logo.png',
+            },
+            {
+                newsSource: 'IT Business Edge',
+                newsTitle: 'Big Code Equals Big Problems for Wannabe Software Companies',
+                newsDate: 'November 13, 2020',
+                newsLink:
+                    'https://www.itbusinessedge.com/blogs/it-unmasked/big-code-equals-big-problems-for-wannabe-software-companies.html',
+                newsImage: '/external-logos/it-businessedge-logo.png',
+            },
+            {
+                newsSource: 'Interesting Engineering',
+                newsTitle: 'How Programming Has Changed Over the Last Decade',
+                newsDate: 'November 12, 2020',
+                newsLink: 'https://interestingengineering.com/how-programming-has-changed-over-the-last-decade',
+                newsImage: '/external-logos/interesting-engineering-logo.png',
+            },
+            {
+                newsSource: 'Fast Company',
+                newsTitle: "I'm deaf, and this is what happens when I get on a Zoom call",
+                newsDate: 'October 26, 2020',
+                newsLink:
+                    'https://www.fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call',
+                newsImage: '/external-logos/fast-company-logo.png',
+            },
+            {
+                newsSource: 'SD Times',
+                newsTitle: 'Report: The emergence of Big Code comes with big problems',
+                newsDate: 'October 23, 2020',
+                newsLink: 'https://sdtimes.com/softwaredev/report-the-emergence-of-big-code-comes-with-big-problems/',
+                newsImage: '/external-logos/sd-times-sq-logo.svg',
+            },
+            {
+                newsSource: 'Software.com',
+                newsTitle: 'Big Code—How "More Code, Faster" Creates Problems',
+                newsDate: 'October 15, 2020',
+                newsLink: 'https://www.software.com/src/big-code-how-more-code-faster-creates-problems',
+                newsImage: '/external-logos/software-com-src-logo.png',
+            },
+            {
+                newsSource: 'Devops.com',
+                newsTitle: 'New Survey Highlights Codebase Size Problems',
+                newsDate: 'October 9, 2020',
+                newsLink: 'https://devops.com/new-survey-highlights-codebase-size-problems/',
+                newsImage: '/external-logos/devops-com-logo.png',
+            },
+            {
+                newsSource: 'Devchat.tv',
+                newsTitle: 'Podcast: Caddy 2 Web Server with Matthew Holt (starts 1:10:22)',
+                newsDate: 'October 6, 2020',
+                newsLink: 'https://devchat.tv/js-jabber/jsj-452-caddy-2-web-server-with-matthew-holt/',
+                newsImage: '/external-logos/devchat-tv-logo.png',
+            },
+            {
+                newsSource: 'Gigazine',
+                newsTitle:
+                    'The amount and complexity of code handled by developers has increased more than 100 times in the last decade.',
+                newsDate: 'October 5, 2020',
+                newsLink: 'https://gigazine.net/news/20201005-100x-more-code-in-10-years/',
+                newsImage: '/external-logos/gigazine-logo.png',
+            },
+            {
+                newsSource: 'ZDNet',
+                newsTitle: "Low and no-code are wonderful, but a 'big code' world lurks underneath",
+                newsDate: 'October 7, 2020',
+                newsLink:
+                    'https://www.zdnet.com/article/low-and-no-code-are-wonderful-but-a-big-code-world-lurks-underneath/',
+                newsImage: '/external-logos/zdnet-logo.svg',
+            },
+            {
+                newsSource: 'ZDNet',
+                newsTitle: "Oui, le low code et le no code c'est cool, mais le 'Big Code' les guettent (c'est quoi ?)",
+                newsDate: 'October 7, 2020',
+                newsLink:
+                    'https://www.zdnet.fr/actualites/oui-le-low-code-et-le-no-code-c-est-cool-mais-le-big-code-les-guettent-c-est-quoi-39910867.htm',
+                newsImage: '/external-logos/zdnet-logo.svg',
+            },
+            {
+                newsSource: 'Le Monde Informatique',
+                newsTitle: "Les développeurs gèrent 100 fois plus de code qu'il y a 10 ans",
+                newsDate: 'October 6, 2020',
+                newsLink:
+                    'https://www.lemondeinformatique.fr/actualites/lire-les-developpeurs-gerent-100-fois-plus-de-code-qu-il-y-a-10-ans-80597.html',
+                newsImage: '/external-logos/le-monde-informatique-logo.png',
+            },
+            {
+                newsSource: 'InfoWorld',
+                newsTitle: 'The best open source software of 2020',
+                newsDate: 'October 5, 2020',
+                newsLink:
+                    'https://www.infoworld.com/article/3575858/the-best-open-source-software-of-2020.html#slide24',
+                newsImage: '/external-logos/infoworld-bossie-awards-2020.png',
+            },
+            {
+                newsSource: 'Developer Tech',
+                newsTitle: "51% of devs say they're dealing with 100x more code than 10 years ago",
+                newsDate: 'October 5, 2020',
+                newsLink:
+                    'https://developer-tech.com/news/2020/oct/05/51-percent-devs-100-times-more-code-10-years-ago/',
+                newsImage: '/external-logos/developer-tech-logo.png',
+            },
+            {
+                newsSource: 'Fudzilla',
+                newsTitle: 'Developers dealing with more code than before',
+                newsDate: 'October 5, 2020',
+                newsLink: 'https://www.fudzilla.com/news/51645-developers-dealing-with-more-code-than-before',
+                newsImage: '/external-logos/fudzilla-logo.png',
+            },
+            {
+                newsSource: 'Golem.de',
+                newsTitle: '100-mal mehr Code als vor zehn Jahren',
+                newsDate: 'October 5, 2020',
+                newsLink:
+                    'https://www.golem.de/news/softwareentwickler-100-mal-mehr-code-als-vor-zehn-jahren-2010-151298.html',
+                newsImage: '/external-logos/golem.de-logo.png',
+            },
+            {
+                newsSource: 'Slashdot',
+                newsTitle: "51% of Developers Say They're Managing 100 Times More Code Than a Decade Ago",
+                newsDate: 'October 4, 2020',
+                newsLink:
+                    'https://developers.slashdot.org/story/20/10/04/0157214/51-of-developers-say-theyre-managing-100-times-more-code-than-a-decade-ago',
+                newsImage: '/external-logos/slashdot-logo.png',
+            },
+            {
+                newsSource: 'Techzine',
+                newsTitle: 'Ontwikkelaars beheren 100 keer meer code dan 10 jaar geleden',
+                newsDate: 'October 2, 2020',
+                newsLink:
+                    'https://www.techzine.be/nieuws/devops/61168/ontwikkelaars-beheren-100-keer-meer-code-dan-10-jaar-geleden/',
+                newsImage: '/external-logos/techzine-logo.png',
+            },
+            {
+                newsSource: 'Best Gaming Pro',
+                newsTitle: 'Sourcegraph: Devs are managing 100x more code now than they did in 2010',
+                newsDate: 'October 2, 2020',
+                newsLink:
+                    'https://bestgamingpro.com/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/',
+                newsImage: '/external-logos/bestgamingpro-logo.png',
+            },
+            {
+                newsSource: 'Business Insider - Markets Insider',
+                newsTitle:
+                    'Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries',
+                newsDate: 'October 1, 2020',
+                newsLink:
+                    'https://markets.businessinsider.com/news/stocks/survey-findings-reveal-big-code-presents-challenges-for-development-teams-across-all-industries-1029641029',
+                newsImage: '/external-logos/business-insider-logo.png',
+            },
+            {
+                newsSource: 'Developpez',
+                newsTitle: 'Les développeurs gèrent un volume de code 100',
+                newsDate: 'October 1, 2020',
+                newsLink:
+                    'https://www.developpez.com/actu/309305/Les-developpeurs-gerent-un-volume-de-code-100-fois-plus-important-maintenant-qu-en-2010-dans-plus-de-langages-pour-plus-de-plateformes-que-jamais-Une-complexite-qui-a-un-impact-personnel-sur-eux/',
+                newsImage: '/external-logos/developpez-logo.png',
+            },
+            {
+                newsSource: 'Ars Technica',
+                newsTitle: 'Sourcegraph: Devs are managing 100x more code now than they did in 2010',
+                newsDate: 'October 1, 2020',
+                newsLink:
+                    'https://arstechnica.com/gadgets/2020/10/sourcegraph-devs-are-managing-100x-more-code-now-than-they-did-in-2010/',
+                newsImage: '/external-logos/ars-technica-logo.png',
+            },
+            {
+                newsSource: 'Sourcegraph',
+                newsTitle:
+                    'Press Release: Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries',
+                newsDate: 'October 1, 2020',
+                newsLink: '/press-release/big-code-survey-2020',
+                newsImage: '/sourcegraph-mark.png',
+            },
+            {
+                newsSource: 'Tracxn',
+                newsTitle: 'Emerging Startups 2020: Top Application Development Tools',
+                newsDate: 'August 28, 2020',
+                newsLink: 'https://tracxn.com/d/emerging-startups/application-development-tools-startups-2020',
+                newsImage: '/external-logos/tracxn-logo.png',
+            },
+            {
+                newsSource: 'LWN.net',
+                newsTitle: 'Searching code with Sourcegraph (subscriber content)',
+                newsDate: 'August 17, 2020',
+                newsLink: 'https://lwn.net/SubscriberLink/828748/9bd97e8761546ed4/',
+                newsImage: '/external-logos/lwn-net-logo.png',
+            },
+            {
+                newsSource: 'The Twenty Minute VC',
+                newsTitle:
+                    'Podcast: Interview with Apurva Mehta, managing partner at Summit Peak Investments (starts 35:45)',
+                newsDate: 'August 17, 2020',
+                newsLink: 'https://thetwentyminutevc.com/apurvamehta/',
+                newsImage: '/external-logos/twenty-minute-vc-logo.png',
+            },
+            {
+                newsSource: 'ITPro Today',
+                newsTitle: 'Code Challenges: Coping in the Era of "Big Code"',
+                newsDate: 'August 10, 2020',
+                newsLink:
+                    'https://www.itprotoday.com/devops-and-software-development/code-challenges-coping-era-big-code',
+                newsImage: '/external-logos/itpro-today-logo.png',
+            },
+            {
+                newsSource: 'DevOps Digest',
+                newsTitle: 'Sourcegraph Raises Additional $5 Million in Series B Funding',
+                newsDate: 'August 3, 2020',
+                newsLink: 'https://www.devopsdigest.com/sourcegraph-raises-additional-5-million-in-series-b-funding',
+                newsImage: '/external-logos/devops-digest-logo.png',
+            },
+            {
+                newsSource: 'SaaS Product Chat',
+                newsTitle: 'Podcast: Empresas API-céntricas y API como producto (starts 16:43)',
+                newsDate: 'July 23, 2020',
+                newsLink: 'https://saasproductchat.com/episodes/api',
+                newsImage: '/external-logos/saas-product-chat-logo.png',
+            },
+            {
+                newsSource: 'Wall Street Journal',
+                newsTitle: 'Tech Startup Funding Declines as Pandemic Drags On',
+                newsDate: 'July 23, 2020',
+                newsLink: 'https://www.wsj.com/articles/tech-startup-funding-declines-as-pandemic-drags-on-11595494800',
+                newsImage: '/external-logos/wsj-logo.png',
+            },
+            {
+                newsSource: 'Software Engineering Daily',
+                newsTitle: 'Podcast: Sourcegraph: Code Search and Intelligence with Beyang Liu',
+                newsDate: 'July 22, 2020',
+                newsLink:
+                    'https://softwareengineeringdaily.com/2020/07/22/sourcegraph-code-search-and-intelligence-with-beyang-liu/',
+                newsImage: '/external-logos/software-engineering-daily-logo.png',
+            },
+            {
+                newsSource: 'KMWorld',
+                newsTitle: 'Sourcegraph new funding to innovate with Sourcegraph Cloud and Universal Code Search',
+                newsDate: 'July 16, 2020',
+                newsLink:
+                    'https://www.kmworld.com/Articles/News/News/Sourcegraph-new-funding-to-innovate-with-Sourcegraph-Cloud-and-Universal-Code-Search-141852.aspx',
+                newsImage: '/external-logos/kmworld-logo.svg',
+            },
+            {
+                newsSource: 'Silicon Valley Business Journal',
+                newsTitle: 'The Funded: 10 Bay Area startups score more than $270M at midweek',
+                newsDate: 'July 15, 2020',
+                newsLink:
+                    'https://www.bizjournals.com/sanjose/news/2020/07/15/10-bay-area-startups-score-more-than-270-million.html',
+                newsImage: '/external-logos/svbj-logo.png',
+            },
+            {
+                newsSource: 'Devops.com',
+                newsTitle: 'Hiring world-class talent to build Sourcegraph Cloud',
+                newsDate: 'July 15, 2020',
+                newsLink: 'https://devops.com/hiring-world-class-talent-to-build-sourcegraph-cloud/',
+                newsImage: '/external-logos/devops-com-logo.png',
+            },
+            {
+                newsSource: 'WSJ Pro',
+                newsTitle: 'Venture Capital Newsletter',
+                newsDate: 'July 15, 2020',
+                newsLink: 'https://venturecapital.createsend1.com/t/ViewEmail/d/8B15B1AD8CDBDF882540EF23F30FEDED',
+                newsImage: '/external-logos/wsjpro-logo.png',
+            },
+            {
+                newsSource: 'FinSMES',
+                newsTitle: 'Sourcegraph Raises Additional $5M in Series B Funding',
+                newsDate: 'July 15, 2020',
+                newsLink: 'http://www.finsmes.com/2020/07/sourcegraph-raises-additional-5m-in-series-b-funding.html',
+                newsImage: '/external-logos/finsmes-logo.svg',
+            },
+            {
+                newsSource: 'Fortune',
+                newsTitle: 'Newsletter|Term Sheet Venture Deals',
+                newsDate: 'July 15, 2020',
+                newsLink:
+                    'https://fortune.com/2020/07/15/the-needle-has-barely-moved-on-racism-in-investing-but-this-investor-thinks-this-time-is-different/',
+                newsImage: '/external-logos/fortune-logo.svg',
+            },
+            {
+                newsSource: 'Business Insider',
+                newsTitle: 'Code collaboration startup Sourcegraph has raised $28 million',
+                newsDate: 'July 14, 2020',
+                newsLink:
+                    'https://www.businessinsider.com/sourcegraph-adds-to-funding-doubles-headcount-and-lands-new-customers-2020-7',
+                newsImage: '/external-logos/business-insider-logo.png',
+            },
+            {
+                newsSource: 'Digital Anarchist',
+                newsTitle: 'Podcast: Quinn Slack &mdash; TechStrong TV',
+                newsDate: 'July 13, 2020',
+                newsLink: 'https://digitalanarchist.com/videos/featured-guests/quinn-slack-techstrong-tv-2',
+                newsImage: '/external-logos/digital-anarchist-logo.png',
+            },
+            {
+                newsSource: 'InfoQ',
+                newsTitle: 'Podcast: Quinn Slack of Sourcegraph on Moving to Fully Remote and Zoomcations',
+                newsDate: 'July 6, 2020',
+                newsLink: 'https://www.infoq.com/podcasts/zoomcations-fully-remote/',
+                newsImage: '/external-logos/infoq-logo.png',
+            },
+            {
+                newsSource: 'Security Boulevard',
+                newsTitle: 'Breaking the Solidity Compiler with a Fuzzer',
+                newsDate: 'June 5, 2020',
+                newsLink: 'https://securityboulevard.com/2020/06/breaking-the-solidity-compiler-with-a-fuzzer/',
+                newsImage: '/external-logos/security-boulevard-logo.png',
+            },
+            {
+                newsSource: 'itWeek',
+                newsTitle: 'Four Trends Forming a New Era of Big Code',
+                newsDate: 'June 4, 2020',
+                newsLink: 'https://www.itweek.ru/digitalization/article/detail.php?ID=212823',
+                newsImage: '/external-logos/itweek-ru-logo.png',
+            },
+            {
+                newsSource: 'eWeek',
+                newsTitle: 'Four Trends Shaping the New Era of Big Code',
+                newsDate: 'May 18, 2020',
+                newsLink: 'https://www.eweek.com/development/four-trends-shaping-the-new-era-of-big-code',
+                newsImage: '/external-logos/eweek-logo.svg',
+            },
+            {
+                newsSource: 'Code Review News',
+                newsTitle: 'Code review tools that increase productivity',
+                newsDate: 'May 17, 2020',
+                newsLink: 'https://codereviewnews.com/code-review-tools-that-increase-productivity',
+                newsImage: '/external-logos/code-review-logo.png',
+            },
+            {
+                newsSource: 'Podcast.__init__',
+                newsTitle: 'Podcast: Managing Distributed Teams In The Age Of Remote Work',
+                newsDate: 'May 11, 2020',
+                newsLink: 'https://www.pythonpodcast.com/sourcegraph-remote-work-episode-262/',
+                newsImage: '/external-logos/podcast-init.png',
+            },
+            {
+                newsSource: 'The Enterprisers Project',
+                newsTitle: 'How to lead remote development teams: 4 tips',
+                newsDate: 'May 1, 2020',
+                newsLink: 'https://enterprisersproject.com/article/2020/5/how-lead-remote-dev-teams',
+                newsImage: '/external-logos/enterprisers-project-logo.png',
+            },
+            {
+                newsSource: 'TechStrong TV',
+                newsTitle: 'Podcast: Interview Quinn Slack (starts 1:21:20)',
+                newsDate: 'April 29, 2020',
+                newsLink: 'https://www.youtube.com/watch?v=XEr-_RpmgDI&t=4887',
+                newsImage: '/external-logos/techstrong-tv-logo.png',
+            },
+            {
+                newsSource: 'Sourcegraph',
+                newsTitle:
+                    'Press Release: Sourcegraph Releases Free Digital Children\'s Book Titled "Our ABCs: Always Be Coding"',
+                newsDate: 'April 23, 2020',
+                newsLink: '/press-release/our-abcs-childrens-book',
+                newsImage: 'https://info.sourcegraph.com/hubfs/CTA%20images/abc-book-cover.png',
+            },
+            {
+                newsSource: 'The Server Side',
+                newsTitle: 'Consider these developer volunteer opportunities during COVID-19',
+                newsDate: 'April 23, 2020',
+                newsLink:
+                    'https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Consider-these-developer-volunteer-opportunities-during-COVID-19',
+                newsImage: '/external-logos/serverside-logo.png',
+            },
+            {
+                newsSource: 'SDxCentral',
+                newsTitle: 'Money Moves: March 2020',
+                newsDate: 'April 12, 2020',
+                newsLink: 'https://www.sdxcentral.com/articles/news/money-moves-march-2020/2020/04/',
+                newsImage: '/external-logos/sdx-central-logo.svg',
+            },
+            {
+                newsSource: 'Anchor.fm',
+                newsTitle: 'Podcast: Universal code search with Sourcegraph (starts 16:35)',
+                newsDate: 'April 9, 2020',
+                newsLink:
+                    'https://anchor.fm/theweeklysqueak/episodes/Universal-code-search-with-Sourcegraph---Civilization--Lockdowns--and-AmigaOS-eciok5',
+                newsImage: '/external-logos/anchor-logo.png',
+            },
+            {
+                newsSource: 'Database Trends and Applications',
+                newsTitle: 'Startups to Watch in 2020: Sourcegraph',
+                newsDate: 'April 8, 2020',
+                newsLink: 'http://www.dbta.com/Editorial/Trends-and-Applications/Startups-to-Watch-in-2020-139682.aspx',
+                newsImage: '/external-logos/databasetrendsapp-logo.jpg',
+            },
+            {
+                newsSource: 'InfoQ',
+                newsTitle: "Code Search Now Available to Browse Google's Open-Source Projects",
+                newsDate: 'April 8, 2020',
+                newsLink: 'https://www.infoq.com/news/2020/04/google-code-search-available/',
+                newsImage: '/external-logos/infoq-logo.png',
+            },
+            {
+                newsSource: 'Devops.com',
+                newsTitle: 'Universal Code Search Combinations',
+                newsDate: 'April 7, 2020',
+                newsLink: 'https://devops.com/universal-code-search-combinations/',
+                newsImage: '/external-logos/devops-com-logo.png',
+            },
+            {
+                newsSource: 'IEEE Spectrum',
+                newsTitle: "Q&A: Sourcegraph's Universal Code Search Tool",
+                newsDate: 'April 3, 2020',
+                newsLink:
+                    'https://spectrum.ieee.org/tech-talk/computing/software/sourcegraph-universal-code-search-tool',
+                newsImage: '/external-logos/ieee-spectrum-logo.png',
+            },
+            {
+                newsSource: 'DEVOPSdigest',
+                newsTitle: 'Sourcegraph Secures $23 Million Series B Funding',
+                newsDate: 'March 16, 2020',
+                newsLink: 'https://www.devopsdigest.com/sourcegraph-secures-23-million-series-b-funding/',
+                newsImage: '/external-logos/devops-digest-logo.png',
+            },
+            {
+                newsSource: 'The New Stack',
+                newsTitle: 'Universal Code Search: A New Search Tech for the Era of Big Code',
+                newsDate: 'March 9, 2020',
+                newsLink: 'https://thenewstack.io/universal-code-search-a-new-search-tech-for-the-era-of-big-code/',
+                newsImage: '/external-logos/the-new-stack-sq-logo.svg',
+            },
+            {
+                newsSource: 'Pulse 2.0',
+                newsTitle: 'Universal Code Search Company Sourcegraph Raises $23 Million',
+                newsDate: 'March 5, 2020',
+                newsLink: 'https://pulse2.com/sourcegraph-raises-23-million/',
+                newsImage: '/external-logos/pulse2.0-logo.png',
+            },
+            {
+                newsSource: 'Silicon Valley Business Journal',
+                newsTitle: 'The Funded: 9 startups raise over $450M at midweek in Bay Area',
+                newsDate: 'March 4, 2020',
+                newsLink:
+                    'https://www.bizjournals.com/sanjose/news/2020/03/04/the-funded-9-startups-raise-over-450m-at-midweek.html',
+                newsImage: '/external-logos/svbj-logo.png',
+            },
+            {
+                newsSource: 'Fortune',
+                newsTitle: 'Term Sheet',
+                newsDate: 'March 4, 2020',
+                newsLink:
+                    'https://fortune.com/2020/03/04/the-bitter-lesson-founders-can-learn-from-edens-acquisition-of-managed-by-q/',
+                newsImage: '/external-logos/fortune-2016-logo.png',
+            },
+            {
+                newsSource: 'Sourcegraph',
+                newsTitle: 'Press Release: Sourcegraph Secures $23 Million Series B Round for Universal Code Search',
+                newsDate: 'March 3, 2020',
+                newsLink: '/press-release/sourcegraph-secures-series-b',
+                newsImage: '/sourcegraph-mark.png',
+            },
+            {
+                newsSource: 'Vator News',
+                newsTitle: 'Daily funding roundup - March 3rd, 2020',
+                newsDate: 'March 3, 2020',
+                newsLink: 'https://vator.tv/news/2020-03-03-daily-funding-roundup-march-3rd-2020',
+                newsImage: '/external-logos/vatortv.svg',
+            },
+            {
+                newsSource: 'Medium',
+                newsTitle: 'Why We Invested in Sourcegraph',
+                newsDate: 'March 3, 2020',
+                newsLink: 'https://medium.com/craft-ventures/why-we-invested-in-sourcegraph-5ace28317e3d',
+                newsImage: '/external-logos/medium-logo.svg',
+            },
+            {
+                newsSource: 'Silicon Angle',
+                newsTitle: 'Universal code search startup Sourcegraph gets $23 million in funding',
+                newsDate: 'March 3, 2020',
+                newsLink:
+                    'https://siliconangle.com/2020/03/03/universal-code-search-startup-sourcegraph-gets-23-million-series-b-funding/',
+                newsImage: '/external-logos/silicon-angle-logo.svg',
+            },
+            {
+                newsSource: 'ZDNet',
+                newsTitle: 'Universal Code Search gets a boost: Sourcegraph secures $23 million Series B Round funding',
+                newsDate: 'March 3, 2020',
+                newsLink:
+                    'https://www.zdnet.com/article/universal-code-search-gets-a-boost-sourcegraph-secures-23-million-series-b-round-funding/',
+                newsImage: '/external-logos/zdnet-logo.svg',
+            },
+            {
+                newsSource: 'VentureBeat',
+                newsTitle: 'Sourcegraph raises $23 million to bring universal code search to all developers',
+                newsDate: 'March 3, 2020',
+                newsLink:
+                    'https://venturebeat.com/2020/03/03/sourcegraph-raises-23-million-to-bring-universal-code-search-to-all-developers/',
+                newsImage: '/external-logos/venturebeat-logo.png',
+            },
+            {
+                newsSource: 'InsideBIGData',
+                newsTitle: 'Above the Trend Line” &mdash; Your Industry Rumor Central for 3/3/2020',
+                newsDate: 'March 3, 2020',
+                newsLink:
+                    'https://insidebigdata.com/2020/03/03/above-the-trend-line-your-industry-rumor-central-for-3-3-2020/',
+                newsImage: '/external-logos/insidebigdata-logo.svg',
+            },
+            {
+                newsSource: 'KMWorld',
+                newsTitle: 'Sourcegraph receives $23 million in funding round to expand',
+                newsDate: 'March 3, 2020',
+                newsLink:
+                    'https://www.kmworld.com/Articles/News/News/Sourcegraph-receives-%2423-million-in-funding-round-to-expand-139537.aspx',
+                newsImage: '/external-logos/kmworld-logo.svg',
+            },
+            {
+                newsSource: 'SD Times',
+                newsTitle:
+                    'SD Times news digest: Babylon.js 4.1, DataStax acquires Apache Cassandra services company, Waymo announces first external investment round',
+                newsDate: 'March 3, 2020',
+                newsLink:
+                    'https://sdtimes.com/n-software/sd-times-news-digest-babylon-js-4-1-datastax-acquires-apache-cassandra-services-company-waymo-announces-first-external-investment-round/',
+                newsImage: '/external-logos/sd-times-sq-logo.svg',
+            },
+            {
+                newsSource: 'FinSMES',
+                newsTitle: 'Sourcegraph raises $23 million to bring universal code search to all developers',
+                newsDate: 'March 3, 2020',
+                newsLink: 'http://www.finsmes.com/2020/03/sourcegraph-raises-23m-in-series-b-funding-round.html',
+                newsImage: '/external-logos/finsmes-logo.svg',
+            },
+            {
+                newsSource: 'InfoWorld',
+                newsTitle: 'Sourcegraph: Universal code search and intelligence',
+                newsDate: 'January 15, 2020',
+                newsLink:
+                    'https://www.infoworld.com/article/3514213/sourcegraph-universal-code-search-and-intelligence.html',
+                newsImage: '/external-logos/infoworld-sq-logo.png',
+            },
+        ],
     },
     {
-      'year': 2019,
-      'articles': [
-        {
-          'newsSource': 'Tech Republic',
-          'newsTitle': 'Java and JavaScript dominated software development in the 2010s',
-          'newsDate': 'December 4, 2019',
-          'newsLink': 'https://www.techrepublic.com/article/java-and-javascript-dominated-software-development-in-the-2010s/',
-          'newsImage': '/external-logos/techrepublic-sq-logo.png'
-        },
-        {
-          'newsSource': 'Security Boulevard',
-          'newsTitle': '5 Free Developer Tools We\'re Grateful For',
-          'newsDate': 'November 28, 2019',
-          'newsLink': 'https://securityboulevard.com/2019/11/5-free-developer-tools-were-grateful-for/',
-          'newsImage': '/external-logos/security-boulevard-logo.png'
-        },
-        {
-          'newsSource': 'App Developer Magazine',
-          'newsTitle': 'Universal source code search engine emerges',
-          'newsDate': 'November 28, 2019',
-          'newsLink': 'https://appdevelopermagazine.com/universal-source-code-search-engine-emerges/',
-          'newsImage': '/external-logos/app-developer-magazine-sq-logo.svg'
-        },
-        {
-          'newsSource': 'DevClass',
-          'newsTitle': 'GitLab 12.5 gets multi-cloud rolling',
-          'newsDate': 'November 25, 2019',
-          'newsLink': 'https://devclass.com/2019/11/25/gitlab-12-5-gets-multi-cloud-rolling/',
-          'newsImage': '/external-logos/devclass-sq-logo.svg'
-        },
-        {
-          'newsSource': 'Dataversity',
-          'newsTitle': 'Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine',
-          'newsDate': 'November 18, 2019',
-          'newsLink': 'https://www.dataversity.net/sourcegraph-announces-new-gitlab-native-integration-universal-code-search-engine/',
-          'newsImage': '/external-logos/dataversity-sq-logo.svg'
-        },
-        {
-          'newsSource': 'The New Stack',
-          'newsTitle': 'This Week in Programming: Dear Tech Conferences, Do Better',
-          'newsDate': 'November 15, 2019',
-          'newsLink': 'https://thenewstack.io/this-week-in-programming-dear-tech-conferences-do-better/',
-          'newsImage': '/external-logos/the-new-stack-sq-logo.svg'
-        },
-        {
-          'newsSource': 'DevClass',
-          'newsTitle': 'GitLab gets native with Sourcegraph code review in upcoming release',
-          'newsDate': 'November 13, 2019',
-          'newsLink': 'https://devclass.com/2019/11/13/gitlab-gets-native-with-sourcegraph-code-review-in-upcoming-release/',
-          'newsImage': '/external-logos/devclass-sq-logo.svg'
-        },
-        {
-          'newsSource': 'Sourcegraph',
-          'newsTitle': 'Press Release: Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum',
-          'newsDate': 'November 12, 2019',
-          'newsLink': '/press-release/sourcegraph-announces-new-gitlab-native-integration',
-          'newsImage': '/sourcegraph-mark.png'
-        },
-        {
-          'newsSource': 'SD Times',
-          'newsTitle': 'SD Times news digest: Codefresh\'s CI/CD live debugger, Azure Functions Premium, and SmartBear announces ReadyAPI 3.0',
-          'newsDate': 'November 12, 2019',
-          'newsLink': 'https://sdtimes.com/softwaredev/sd-times-news-digest-codefreshs-ci-cd-live-debugger-azure-functions-premium-and-smartbear-announces-readyapi-3-0/',
-          'newsImage': '/external-logos/sd-times-sq-logo.svg'
-        }
-      ]
+        year: 2019,
+        articles: [
+            {
+                newsSource: 'Tech Republic',
+                newsTitle: 'Java and JavaScript dominated software development in the 2010s',
+                newsDate: 'December 4, 2019',
+                newsLink:
+                    'https://www.techrepublic.com/article/java-and-javascript-dominated-software-development-in-the-2010s/',
+                newsImage: '/external-logos/techrepublic-sq-logo.png',
+            },
+            {
+                newsSource: 'Security Boulevard',
+                newsTitle: "5 Free Developer Tools We're Grateful For",
+                newsDate: 'November 28, 2019',
+                newsLink: 'https://securityboulevard.com/2019/11/5-free-developer-tools-were-grateful-for/',
+                newsImage: '/external-logos/security-boulevard-logo.png',
+            },
+            {
+                newsSource: 'App Developer Magazine',
+                newsTitle: 'Universal source code search engine emerges',
+                newsDate: 'November 28, 2019',
+                newsLink: 'https://appdevelopermagazine.com/universal-source-code-search-engine-emerges/',
+                newsImage: '/external-logos/app-developer-magazine-sq-logo.svg',
+            },
+            {
+                newsSource: 'DevClass',
+                newsTitle: 'GitLab 12.5 gets multi-cloud rolling',
+                newsDate: 'November 25, 2019',
+                newsLink: 'https://devclass.com/2019/11/25/gitlab-12-5-gets-multi-cloud-rolling/',
+                newsImage: '/external-logos/devclass-sq-logo.svg',
+            },
+            {
+                newsSource: 'Dataversity',
+                newsTitle: 'Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine',
+                newsDate: 'November 18, 2019',
+                newsLink:
+                    'https://www.dataversity.net/sourcegraph-announces-new-gitlab-native-integration-universal-code-search-engine/',
+                newsImage: '/external-logos/dataversity-sq-logo.svg',
+            },
+            {
+                newsSource: 'The New Stack',
+                newsTitle: 'This Week in Programming: Dear Tech Conferences, Do Better',
+                newsDate: 'November 15, 2019',
+                newsLink: 'https://thenewstack.io/this-week-in-programming-dear-tech-conferences-do-better/',
+                newsImage: '/external-logos/the-new-stack-sq-logo.svg',
+            },
+            {
+                newsSource: 'DevClass',
+                newsTitle: 'GitLab gets native with Sourcegraph code review in upcoming release',
+                newsDate: 'November 13, 2019',
+                newsLink:
+                    'https://devclass.com/2019/11/13/gitlab-gets-native-with-sourcegraph-code-review-in-upcoming-release/',
+                newsImage: '/external-logos/devclass-sq-logo.svg',
+            },
+            {
+                newsSource: 'Sourcegraph',
+                newsTitle:
+                    'Press Release: Sourcegraph Announces New GitLab Native Integration, Universal Code Search Engine, and Amazing Company Momentum',
+                newsDate: 'November 12, 2019',
+                newsLink: '/press-release/sourcegraph-announces-new-gitlab-native-integration',
+                newsImage: '/sourcegraph-mark.png',
+            },
+            {
+                newsSource: 'SD Times',
+                newsTitle:
+                    "SD Times news digest: Codefresh's CI/CD live debugger, Azure Functions Premium, and SmartBear announces ReadyAPI 3.0",
+                newsDate: 'November 12, 2019',
+                newsLink:
+                    'https://sdtimes.com/softwaredev/sd-times-news-digest-codefreshs-ci-cd-live-debugger-azure-functions-premium-and-smartbear-announces-readyapi-3-0/',
+                newsImage: '/external-logos/sd-times-sq-logo.svg',
+            },
+        ],
     },
     {
-      'year': 2017,
-      'articles': [
-        {
-          'newsSource': 'Forbes',
-          'newsTitle': '30 Under 30 2017: The Young Innovators Transforming Enterprise Tech',
-          'newsDate': 'January 3, 2017',
-          'newsLink': 'https://www.forbes.com/sites/kathleenchaykowski/2017/01/03/30-under-30-2017-the-young-innovators-transforming-enterprise-tech/',
-          'newsImage': '/external-logos/forbes-logo.png'
-        }
-      ]
-    }
-  ]
-  
-  export default articles
+        year: 2017,
+        articles: [
+            {
+                newsSource: 'Forbes',
+                newsTitle: '30 Under 30 2017: The Young Innovators Transforming Enterprise Tech',
+                newsDate: 'January 3, 2017',
+                newsLink:
+                    'https://www.forbes.com/sites/kathleenchaykowski/2017/01/03/30-under-30-2017-the-young-innovators-transforming-enterprise-tech/',
+                newsImage: '/external-logos/forbes-logo.png',
+            },
+        ],
+    },
+]
+
+export default articles

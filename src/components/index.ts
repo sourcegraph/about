@@ -11,6 +11,8 @@ export { BackButton } from './BackButton'
 export { FormLegal } from './FormLegal'
 export { Blockquote, BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
 export { Video } from './Video'
+export { IntegrationsSection } from './IntegrationsSection'
+export { SelfHostedSection } from './SelfHostedSection'
 
 // Tracking
 export { buttonStyle, buttonLocation } from './data/tracking'
