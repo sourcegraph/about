@@ -11,6 +11,12 @@ interface CaseStudy {
 
 export const CASESTUDIES: CaseStudy[] = [
     {
+        name: 'Nutanix',
+        logo: '/external-logos/nutanix-logo.svg',
+        title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph.',
+        url: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
+    },
+    {
         name: 'FactSet',
         logo: '/external-logos/factset-logo.svg',
         title: 'FactSet migrates from Perforce to GitHub.',
@@ -88,12 +94,6 @@ export const CASESTUDIES: CaseStudy[] = [
         logo: '/external-logos/thorn-logo.svg',
         title: 'Thorn deprecates legacy code safely.',
         url: '/case-studies/we-are-thorn',
-    },
-    {
-        name: 'Nutanix',
-        logo: '/external-logos/nutanix-logo.svg',
-        title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph.',
-        url: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
     },
 ]
 

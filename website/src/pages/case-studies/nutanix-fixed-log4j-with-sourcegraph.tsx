@@ -19,7 +19,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
         meta={{
             title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
             description:
-                'Sourcegraph enables Nutanix to find and fix security vulnerabilities quickly across the code base. When the Log4j vulnerability rocked the industry, Nutanix was able to confidently identify every instance of Log4j across its sprwaling codebase and deliver patches to its customers that fully remediated the vulnerability within 4 days.',
+                'Sourcegraph enables Nutanix to find and fix security vulnerabilities quickly across the codebase. When the Log4j vulnerability rocked the industry, Nutanix was able to confidently identify every instance of Log4j across its sprwaling codebase and deliver patches to its customers that fully remediated the vulnerability within 4 days.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
     >
@@ -53,7 +53,13 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
                                 <h5 className="font-weight-bold">Use case</h5>
-                                <p>Find and fix security vulnerabilities quickly across the code base.</p>
+                                <ul className="pl-4">
+                                    <li>
+                                        <Link to="/use-cases/vulnerabilities">
+                                            Find and fix security vulnerabilities quickly across the codebase.
+                                        </Link>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
@@ -99,19 +105,19 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                                 <ChartBarIcon color="#00A1C7" size={40} className="p-1" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
-                                <h5 className="font-weight-bold">Result</h5>
+                                <h5 className="font-weight-bold">Results</h5>
                                 <ul className="pl-4">
                                     <li>
                                         Nutanix was able to see where JMSAppender existed, fix it, and send out a
-                                        release all in less than 5 minutes.
+                                        release in less than 5 minutes.
                                     </li>
                                     <li>
                                         Nutanix was able to deliver patches to its customers that fully remediated the
-                                        Log4j vulnerability.
+                                        Log4j vulnerability in under 4 days.
                                     </li>
                                     <li>
-                                        Nutanix was able to confidently identify every instance of Log4j across its
-                                        sprawling codebase.
+                                        Nutanix was able to identify every instance of Log4j across its sprawling
+                                        codebase with 100% confidence.
                                     </li>
                                 </ul>
                             </div>
@@ -133,9 +139,16 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 <p>
                     <span className="font-weight-bold">In December of 2021, </span>
                     software companies around the world discovered that Log4j, an open-source logging library bundled in
-                    many software packages, contained significant vulnerabilities, one of which was a 10/10 on the CVSS
-                    scale. The Federal Trade Commission called the library “
-                    <a href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2022/01/ftc-warns-companies-remediate-log4j-security-vulnerability">
+                    many software packages, contained significant vulnerabilities, one of which was a{' '}
+                    <a target="_blank" href="https://logging.apache.org/log4j/2.x/security.html">
+                        10/10 on the CVSS scale
+                    </a>
+                    {'. '}
+                    The Federal Trade Commission called the library “
+                    <a
+                        target="_blank"
+                        href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2022/01/ftc-warns-companies-remediate-log4j-security-vulnerability"
+                    >
                         ubiquitous
                     </a>
                     .”
@@ -166,7 +179,10 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </p>
                 <p>
                     With the Log4j 1.x vulnerability, for instance, codebases were only insecure if they used
-                    <a href="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/net/JMSAppender.html">
+                    <a
+                        target="_blank"
+                        href="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/net/JMSAppender.html"
+                    >
                         {' '}
                         JMSAppender
                     </a>
@@ -176,14 +192,11 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                     that explained how other companies addressing Log4j could use code search for similar benefits.
                 </p>
                 <p>This speed gave the team a head start on mitigation.</p>
+                <p>Deploying these fixes required quality assurance and testing as well as discovery and fixing.</p>
                 <p>
-                    Deploying these fixes required quality assurance and testing as well as discovery and fixing. Within
-                    a week and a half, Nutanix had deployed three back-to-back patches.
-                </p>
-                <p>
-                    With the help of Sourcegraph, Nutanix was able to release these patches relatively quickly compared
-                    to other companies. Nutanix's customers reported satisfaction with both the speed of the patches and
-                    their quality.
+                    With the help of Sourcegraph, Nutanix was able to release three back-to-back patches relatively
+                    quickly compared to other companies. Nutanix's customers reported satisfaction with both the speed
+                    of the patches and their quality.
                 </p>
                 <p>
                     “We tried to take a measured approach,” Jon said. “We wanted to get things done quickly but without
@@ -191,12 +204,12 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="py-6 text-center mw-600 display-4 text-gray font-weight-normal">
+            <ContentSection color="white" className="py-6 text-center mw-700 display-4 text-gray font-weight-normal">
                 <Blockquote
                     border={true}
-                    quote={`It's nice when you can just run a report and say, 'Here it is,'' or 'Here it isn't.'' It's much
+                    quote={`It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                     better than having to say, 'Well, boss, I think we got it all.’`}
-                    by="Jon Kohler"
+                    by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
                 />
             </ContentSection>
 
@@ -218,11 +231,13 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                         results. “It's nice,” Jon said, “when you can just run a report and say, 'Here it is,'' or 'Here
                         it isn't.'' It's much better than having to say, 'Well, boss, I think we got it all.’”
                     </p>
-                    Nutanix needed that confidence because of its sprawling codebase. One thing that made Log4j
-                    especially complicated for Nutanix—as it does for other large-scale enterprises—is that there were
-                    multiple source control systems in play. Sourcegraph provided them with “unified visibility,”
-                    according to Jon. “I can't imagine the pain of having to do that either with grep or OpenGrok,” he
-                    added.
+                    <p>
+                        Nutanix needed that confidence because of its sprawling codebase. One thing that made Log4j
+                        especially complicated for Nutanix—as it does for other large-scale enterprises—is that there
+                        were multiple source control systems in play. Sourcegraph provided them with “unified
+                        visibility,” according to Jon. “I can't imagine the pain of having to do that either with grep
+                        or OpenGrok,” he added.
+                    </p>
                     <p>
                         Confidence spread from Jon to the rest of the team and throughout the company. With
                         <Link to="/blog/introducing-search-contexts/"> search contexts</Link>, Jon was able to share
@@ -244,7 +259,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                         <div className="col-sm-12 col-md-4 text-center">
                             <h3 className="pb-3 font-weight-bold text-blue7">{'<'} 5 min</h3>
                             <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
-                                Nutanix was able to see where JMSAppender existed, fix it, and send out a release all in
+                                Nutanix was able to see where JMSAppender existed, fix it, and send out a release in
                                 less than 5 minutes.
                             </p>
                         </div>
@@ -256,7 +271,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                             </p>
                         </div>
                         <div className="col-sm-12 col-md-4 text-center">
-                            <h3 className="pb-3 font-weight-bold text-blue7">100%</h3>
+                            <h3 className="pb-3 font-weight-bold text-blue7">100% confidence</h3>
                             <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
                                 Nutanix was able to confidently identify every instance of Log4j across its sprawling
                                 codebase.
@@ -268,11 +283,11 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
 
             <ContentSection color="white" className="py-6 mw-700 col-xl-5">
                 <section>
-                    <h2 className="mb-4 display-4 font-weight-bold mw-500">
+                    <h2 className="mb-4 display-4 font-weight-bold mw-600">
                         Log4j is the tip of the open-source vulnerability iceberg
                     </h2>
                     <p>
-                        <span className="font-weight-bold">With Sourcegraph's help,</span>
+                        <span className="font-weight-bold">With Sourcegraph's help, </span>
                         Nutanix was able to transform a trust-threatening risk into a trust-building opportunity. Their
                         customers, Jon explained, were worried about hundreds of other vendors, all of whom were likely
                         affected by Log4j.
@@ -287,9 +302,11 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                         in on a dependency and find it hasn't been reviewed for four, five, six, or even ten years. But
                         it works, so why update it?”
                     </p>
-                    Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies will
-                    have to be more diligent,” Jon said.
-                    <p>Sourcegraph is the best way to find and fix the next Log4j vulnerability.</p>
+                    <p>
+                        Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies
+                        will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to
+                        <Link to="/use-cases/vulnerabilities"> find and fix the next vulnerability</Link>.
+                    </p>
                 </section>
             </ContentSection>
 
