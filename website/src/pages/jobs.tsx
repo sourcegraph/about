@@ -30,7 +30,7 @@ const CareersPage = props => {
                 </ContentSection>
 
                 <div className="text-center">
-                    <img src="../careers/careers_hero_img.png" className="hero-image" />
+                    <img src="../careers/careers_hero_img.jpg" className="hero-image" />
                     <img src="../careers/careers_hero_img_mobile.jpg" className="hero-image-mobile" />
                 </div>
 
