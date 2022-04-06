@@ -86,7 +86,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
             {!props.hideFooter && (
                 <Footer
-                    className={`pt-4 ${props.className || ''} ${isCaseStudyPage ? 'bg-black' : ''}`}
+                    className={`${props.className || ''} ${isCaseStudyPage ? 'bg-black' : ''}`}
                     minimal={props.minimal}
                 />
             )}
