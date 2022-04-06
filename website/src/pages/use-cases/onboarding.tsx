@@ -207,7 +207,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             <ContentSection className="my-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 mw-400 font-weight-bold">Developer onboarding is slow and expensive</h1>
+                        <h1 className="mb-4 max-w-400 font-weight-bold">Developer onboarding is slow and expensive</h1>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
                             efficiently.
@@ -229,7 +229,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="col-lg-5 mt-lg-0 mt-7">
                         <Blockquote
-                            quote={`Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. 
+                            quote={`Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues.
                             This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked.`}
                             by="Bjørn Hal Sørensen, Web Architect at Lunar"
                             logoImage="/external-logos/lunar.svg"
@@ -257,7 +257,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             <ContentSection>
                 <div className="d-flex flex-column justify-content-center text-center px-lg-8">
                     <BlockquoteWithLogo
-                        quote={`For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, 
+                        quote={`For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives,
                             and self-service during their investigations.`}
                         header="Convoy knows its codebase inside and out"
                         by="Owen Kim, Senior Software Engineer at Convoy"
