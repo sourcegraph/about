@@ -99,7 +99,7 @@ export const CASESTUDIES: CaseStudy[] = [
 
 export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy }> = ({ study }) => (
     <div className="card-body" style={{ minHeight: '13rem' }}>
-        <img className="height-50 mw-200 mb-4" src={study.logo} alt="Card image cap" />
+        <img className="max-w-200 mb-4" height="60" src={study.logo} alt="Card image cap" />
         <p className="card-text">
             {study.title}{' '}
             <span>

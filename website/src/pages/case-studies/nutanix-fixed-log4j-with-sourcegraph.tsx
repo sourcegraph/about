@@ -25,16 +25,16 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
     >
         <div className={`${slugify('Nutanix').toLowerCase()}-case-study`}>
             <CaseStudyJumbotron
-                className="bg-gradient-onahau-fog text-black height-md-450 height-auto p-2"
+                className="bg-gradient-onahau-fog text-black h-md-450 h-auto p-2"
                 color="white"
                 customer="Nutanix"
             >
-                <h1 className="pt-5 pb-6 display-2 font-weight-bold mw-600 mx-auto">
+                <h1 className="pt-5 pb-6 display-2 font-weight-bold max-w-600 mx-auto">
                     Nutanix fixed Log4j quickly and confidently with Sourcegraph
                 </h1>
             </CaseStudyJumbotron>
 
-            <ContentSection color="white" className="py-6 text-center mw-600">
+            <ContentSection color="white" className="py-6 text-center max-w-600">
                 <BlockquoteWithLogoTop
                     quote={`Sourcegraph was the right product at the right time.`}
                     by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
@@ -46,9 +46,9 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
 
             <section className="d-flex flex-column flex-md-row">
                 <div className="bg-light-gray-2 p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
-                    <section className="mw-xl-550 ml-xl-auto">
+                    <section className="max-w-xl-550 ml-xl-auto">
                         <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
-                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
+                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
                                 <ClipboardTextOutlineIcon color="#00A1C7" size={40} className="p-1" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
@@ -63,7 +63,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                             </div>
                         </div>
                         <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
-                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
+                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
                                 <FlagOutlineIcon color="#00A1C7" size={40} className="p-1" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
@@ -79,7 +79,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                             </div>
                         </div>
                         <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
-                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
+                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
                                 <CheckCircleOutlineIcon color="#00A1C7" size={40} className="p-1" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
@@ -99,9 +99,9 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                     </section>
                 </div>
                 <div className="bg-gradient-blue-mist p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
-                    <section className="mw-xl-550">
+                    <section className="max-w-xl-550">
                         <div className="mb-5 ml-3 ml-lg-0 d-flex flex-column flex-md-row">
-                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 mw-50">
+                            <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
                                 <ChartBarIcon color="#00A1C7" size={40} className="p-1" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
@@ -126,14 +126,14 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </div>
             </section>
 
-            <ContentSection color="white" className="py-6 mw-700">
+            <ContentSection color="white" className="py-6 max-w-700">
                 <p>
                     As the Technical Director of Solution Engineering at Nutanix, Jon Kohler understands the complexity
                     involved in securing the multitude of applications and solutions required to power such a large
                     organization. “Security is something that we care about intensely here at Nutanix,” Jon said,
                     “because it’s part of our bedrock. It's why customers like us, and we have to take it seriously.”
                 </p>
-                <h2 className="mt-6 mb-4 display-3 font-weight-bold mw-600">
+                <h2 className="mt-6 mb-4 display-3 font-weight-bold max-w-600">
                     Log4j: The vulnerability that rocked an industry
                 </h2>
                 <p>
@@ -165,8 +165,8 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </p>
             </ContentSection>
 
-            <ContentSection className="py-6 mw-700">
-                <h2 className="mb-4 display-4 font-weight-bold mw-600">
+            <ContentSection className="py-6 max-w-700">
+                <h2 className="mb-4 display-4 font-weight-bold max-w-600">
                     Nutanix used Sourcegraph to identify every instance of Log4j within 2 days
                 </h2>
                 <p>
@@ -206,7 +206,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="py-6 mw-700 text-gray">
+            <ContentSection color="white" className="py-6 max-w-700 text-gray">
                 <Blockquote
                     border={true}
                     quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
@@ -215,9 +215,9 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 />
             </ContentSection>
 
-            <ContentSection className="py-6 mw-700">
+            <ContentSection className="py-6 max-w-700">
                 <section>
-                    <h2 className="mb-4 display-4 font-weight-bold mw-600">
+                    <h2 className="mb-4 display-4 font-weight-bold max-w-600">
                         Nutanix has renewed confidence in its vulnerability remediation
                     </h2>
                     <p>
@@ -260,21 +260,21 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                     <div className="mb-5 row">
                         <div className="col-sm-12 col-md-4 text-center">
                             <h3 className="pb-3 font-weight-bold text-blue7">{'<'} 5 min</h3>
-                            <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
+                            <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">
                                 Nutanix was able to see where JMSAppender existed, fix it, and send out a release in
                                 less than 5 minutes.
                             </p>
                         </div>
                         <div className="col-sm-12 col-md-4 text-center">
                             <h3 className="pb-3 font-weight-bold text-blue7">4 days</h3>
-                            <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
+                            <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">
                                 Nutanix was able to deliver patches to its customers that fully remediated the Log4j
                                 vulnerability.
                             </p>
                         </div>
                         <div className="col-sm-12 col-md-4 text-center">
                             <h3 className="pb-3 font-weight-bold text-blue7">100% confidence</h3>
-                            <p className="mw-md-400 mw-lg-250 mw-xl-250 mx-auto">
+                            <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">
                                 Nutanix was able to confidently identify every instance of Log4j across its sprawling
                                 codebase.
                             </p>
@@ -283,9 +283,9 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </section>
             </div>
 
-            <ContentSection color="white" className="py-6 mw-700 col-xl-5">
+            <ContentSection color="white" className="py-6 max-w-700 col-xl-5">
                 <section>
-                    <h2 className="mb-4 display-4 font-weight-bold mw-600">
+                    <h2 className="mb-4 display-4 font-weight-bold max-w-600">
                         Log4j is the tip of the open-source vulnerability iceberg
                     </h2>
                     <p>
@@ -341,7 +341,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </ContentSection>
             </div>
 
-            <ContentSection color="white" className="py-lg-7 py-5 col-xl-5">
+            <ContentSection color="white" className="py-lg-7 py-5 col-xl-6">
                 <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>
                 <div className="d-flex flex-wrap">
                     {CASESTUDIES.slice(1, 5).map((study, i) => (
