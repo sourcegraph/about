@@ -140,13 +140,14 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                     <span className="font-weight-bold">In December of 2021, </span>
                     software companies around the world discovered that Log4j, an open-source logging library bundled in
                     many software packages, contained significant vulnerabilities, one of which was a{' '}
-                    <a target="_blank" href="https://logging.apache.org/log4j/2.x/security.html">
+                    <a target="_blank" rel="noreferrer" href="https://logging.apache.org/log4j/2.x/security.html">
                         10/10 on the CVSS scale
                     </a>
                     {'. '}
                     The Federal Trade Commission called the library “
                     <a
                         target="_blank"
+                        rel="noreferrer"
                         href="https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2022/01/ftc-warns-companies-remediate-log4j-security-vulnerability"
                     >
                         ubiquitous
@@ -181,6 +182,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                     With the Log4j 1.x vulnerability, for instance, codebases were only insecure if they used
                     <a
                         target="_blank"
+                        rel="noreferrer"
                         href="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/net/JMSAppender.html"
                     >
                         {' '}
@@ -207,8 +209,8 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
             <ContentSection color="white" className="py-6 mw-700 text-gray">
                 <Blockquote
                     border={true}
-                    quote={`It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
-                    better than having to say, 'Well, boss, I think we got it all.'`}
+                    quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
+                    better than having to say, 'Well, boss, I think we got it all.'"
                     by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
                 />
             </ContentSection>
