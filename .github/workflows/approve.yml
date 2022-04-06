@@ -1,8 +1,10 @@
+# This skips PR approvals for specific directories listed below
+# See https://handbook.sourcegraph.com/departments/product-engineering/engineering/enablement/content-platform/#pull-requests for context.
 name: Skip Approval
 
 on:
   pull_request:
-    types: opened
+    types: [opened, synchronize]
     branches:
       - main
 
@@ -10,6 +12,7 @@ on:
     paths:
       - 'docs/**/*'
       - 'blogposts/**/*'
+      - 'podcast/**/*'
 
 jobs:
   approve:
