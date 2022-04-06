@@ -78,16 +78,16 @@ export const CodeSearchPage: FunctionComponent = () => (
                 </div>
                 <div className="col-lg-6">
                     <h2 className="display-3 font-weight-bold mb-3 mt-lg-0 mt-3">A search engine built for code</h2>
-                    <ul className="list-spaced">
-                        <li>
+                    <ul>
+                        <li className="mt-3">
                             <strong>Universal.</strong> Point Sourcegraph at the repositories you work with, stored in
                             any code host, or search across the open source universe.
                         </li>
-                        <li>
+                        <li className="mt-3">
                             <strong>Powerful.</strong> Get answers quickly with literal, structural, and regular
                             expression search, along with smart filters and Code Intelligence.
                         </li>
-                        <li>
+                        <li className="mt-3">
                             <strong>Extensible.</strong> Connect all your other tools to get things like test coverage,
                             1-click open file in editor, custom highlighting, and information from your other favorite
                             services all in one place with

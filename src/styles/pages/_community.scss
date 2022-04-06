@@ -5,17 +5,20 @@
         background-size: 100% 100%;
         background-position: top left;
     }
-}
 
-.hero_img {
-    width: 100%;
-    margin-top: 100px;
-}
-
-.cheatsheet_img {
-    max-width: 75%;
-}
-
-.sg_champion_img {
-    width: 100%;
+    .nav-item {
+        button {
+            font-weight: 600;
+            background-color: transparent;
+            color: $blue;
+    
+            &:hover {
+                color: $brand-primary-blue;
+                
+                @media only screen and (max-width: 990px) {
+                    color: unset;
+                }
+            }
+        }
+    }
 }
