@@ -7,12 +7,15 @@ author: Joe Chen
 publishDate: 2022-01-13T18:00+02:00
 tags: [blog]
 slug: integration-testing
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/backend-integration-testing/backend-integration-testing.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/backend-integration-testing/backend-integration-testing.png
 published: true
 ---
 
-![Unglamorous engineering graphic](https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg)
+<video loop autoplay muted playsinline>
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/backend-integration-testing/backend-integration-testing.webm" type="video/webm" />
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/backend-integration-testing/backend-integration-testing.mp4" type="video/mp4" />
+</video>
 
 My name is Joe Chen and I was on the Core Application team at Sourcegraph (before it split into Repo Management and Cloud SaaS––I'm on the latter at the time of writing). Our responsibility was to build and maintain the infrastructure of the Sourcegraph application for other teams. Some of our previous work includes licensing enforcement, background permissions syncing, and explicit permissions APIs.
 

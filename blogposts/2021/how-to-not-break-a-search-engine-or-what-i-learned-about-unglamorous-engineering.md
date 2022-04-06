@@ -8,12 +8,12 @@ authorUrl: https://twitter.com/rvtond
 publishDate: 2021-06-25T10:00-07:00
 tags: [blog, code, search, software, engineering, testing]
 slug: how-not-to-break-a-search-engine-unglamorous-engineering
-heroImage: https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
-socialImage: https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png
 published: true
 ---
 
-![Unglamorous engineering](https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg)
+![Unglamorous engineering](https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png)
 
 > _"In 2020 I flipped the switch to use a completely rewritten parser for
 > Sourcegraph search queries. It serves tens of thousands of users and processes
