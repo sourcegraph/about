@@ -8,8 +8,8 @@ authorUrl: https://twitter.com/rvtond
 publishDate: 2021-06-25T10:00-07:00
 tags: [blog, code, search, software, engineering, testing]
 slug: how-not-to-break-a-search-engine-unglamorous-engineering
-heroImage: (https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png)
-socialImage: (https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png)
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png
 published: true
 ---
 
