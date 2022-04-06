@@ -1,9 +1,9 @@
+import { kebabCase } from 'lodash'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { Layout, ContentSection, TrySourcegraph } from '@components'
-import { stringToKebabCase } from '@util'
 
 import styles from './useCases.module.scss'
 
@@ -42,7 +42,7 @@ const UseCases: React.FunctionComponent = () => (
                             {features.map((feature: string) => (
                                 <a
                                     key={feature}
-                                    href={`#${stringToKebabCase(feature)}`}
+                                    href={`#${kebabCase(feature)}`}
                                     className={`${styles.listGroupItem} list-group-item list-group-item-action d-flex justify-content-between align-items-center`}
                                 >
                                     {feature}

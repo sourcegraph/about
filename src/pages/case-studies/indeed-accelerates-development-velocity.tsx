@@ -1,5 +1,7 @@
 import { FunctionComponent } from 'react'
 
+import Link from 'next/link'
+
 import { Layout, CaseStudyLayout, ContentSection, InContentBlockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => {
@@ -84,10 +86,10 @@ export const CaseStudy: FunctionComponent = () => {
                             happened or to even nudge them towards completion. “I actually did a bit of prototyping to
                             see if I could create JIRA issues based on the code searches,” Hodge said, as part of a
                             search for a way to help other team members actually make the changes that need to happen.
-                            When Sourcegraph's <a href="/blog/introducing-batch-changes/">Batch Changes</a> came out,
-                            Hodge immediately saw the value in further removing friction by letting one person update
-                            all versions of a library across the codebase and then notify all the service owners so they
-                            could review.
+                            When Sourcegraph's <Link href="/blog/introducing-batch-changes/">Batch Changes</Link> came
+                            out, Hodge immediately saw the value in further removing friction by letting one person
+                            update all versions of a library across the codebase and then notify all the service owners
+                            so they could review.
                         </p>
 
                         <InContentBlockquote

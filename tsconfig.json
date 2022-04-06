@@ -18,12 +18,13 @@
     "baseUrl": "src",
     "paths": {
       "@hooks": ["hooks"],
+      "@interfaces/*": ["interfaces/*"],
       "@lib": ["lib"],
       "@util": ["util"],
       "@components": ["components"],
       "@styles/*": ["styles/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "src/**/*", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

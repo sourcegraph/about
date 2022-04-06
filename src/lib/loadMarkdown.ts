@@ -7,30 +7,14 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 import gfm from 'remark-gfm'
 
-interface Page {
-    frontMatter: FrontMatter
-    content: string
-}
+import { Page, Post } from '@interfaces/posts'
 
-interface FrontMatter {
-    title?: string
-    layout?: string
-    slug?: string
-    description?: string
-    author?: string
-    authorUrl?: string
-    publishDate?: Date
-    heroImage?: string
-    socialImage?: string
-    tags?: string[]
-}
-
-export const loadMarkdownFile = async (filename: string): Promise<Page | Error> => {
+export const loadMarkdownFile = async (filename: string): Promise<Page | Post | Error> => {
     const page = await fs
         .readFile(filename, 'utf8')
         .then(page => {
             const { data, content } = matter(page)
-            return { frontMatter: data, content }
+            return { frontmatter: data, content }
         })
         .catch(error => {
             throw new Error(error)

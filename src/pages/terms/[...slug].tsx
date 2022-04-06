@@ -4,7 +4,8 @@ import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 import { Layout, EmbeddedHubSpot } from '@components'
-import { getMarkdownPages, loadMarkdownFile, serializeMdxSource } from '@lib'
+import { Page } from '@interfaces/posts'
+import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
 export type Components = import('mdx/types').MDXComponents
 
@@ -13,31 +14,13 @@ export interface PageProps {
     content?: MDXRemoteSerializeResult
 }
 
-interface FrontMatter {
-    title?: string
-    layout?: string
-    slug?: string
-    description?: string
-    author?: string
-    authorUrl?: string
-    publishDate?: Date
-    heroImage?: string
-    socialImage?: string
-    tags?: string[]
-}
-
-export interface Page {
-    content: string
-    frontMatter: FrontMatter
-}
-
-const CONTENT_PARENT_DIRECTORY = './content/terms'
+const CONTENT_PARENT_DIRECTORY = './content/'
 
 const components = { EmbeddedHubSpot }
 
 const TermPage: NextPage<PageProps> = ({ page, content }) => (
     <Layout>
-        <section className="content-page__title">{page && <h1>{page.frontMatter.title}</h1>}</section>
+        <section className="content-page__title">{page && <h1>{page.frontmatter.title}</h1>}</section>
         <section className="content-page__body">
             {content && <MDXRemote {...content} components={components as Components} />}
         </section>
@@ -47,11 +30,15 @@ const TermPage: NextPage<PageProps> = ({ page, content }) => (
 export default TermPage
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = await getMarkdownPages(path.join(process.cwd(), CONTENT_PARENT_DIRECTORY))
-    const slugs = paths.map(path => path.slugPath.split('/'))
+    const allSlugs = await getAllSlugs()
+    if (!allSlugs) {
+        return { paths: [{ params: { slug: ['404'] } }], fallback: false }
+    }
+    const slugs = Object.keys(allSlugs.records.terms.recordSlugs)
+    const paths = slugs.map(slug => ({ params: { slug: slug.split('/') } }))
 
     return {
-        paths: slugs.map(slug => ({ params: { slug } })),
+        paths,
         fallback: false,
     }
 }
@@ -60,10 +47,14 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false }
     if (!params || !params.slug) {
         throw new Error('Missing slug')
     }
+    const files = await getMarkdownFiles()
+    if (!files) {
+        return { notFound: true }
+    }
+    const fileSlug = `${(params.slug as string[]).join('/')}`
+    const filePath = files.records[fileSlug].filePath
 
-    const page = (await loadMarkdownFile(
-        path.resolve(CONTENT_PARENT_DIRECTORY, `${(params.slug as string[]).join('/')}.md`)
-    )) as Page
+    const page = (await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, filePath))) as Page
     const content = await serializeMdxSource(page.content)
 
     return {

@@ -1,7 +1,8 @@
 import { FunctionComponent } from 'react'
 
+import { kebabCase } from 'lodash'
+
 import { ContentSection, RequestDemoForm, MediaQuote } from '@components'
-import { stringToKebabCase } from '@util'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
 
@@ -37,7 +38,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
     children,
 }) => (
     <>
-        <div className={`${stringToKebabCase(customer)}-${className} ${className}`}>
+        <div className={`${kebabCase(customer)}-${className} ${className}`}>
             <CaseStudyJumbotron className="mb-5" customer={customer} logo={logo}>
                 {heroImage && (
                     <div className="case-studies__quote row pt-3">
