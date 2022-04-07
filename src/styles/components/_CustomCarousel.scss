@@ -1,22 +1,38 @@
 .custom-carousel {
     @media only screen and (max-width: 768px) {
-        text-align: center;
+        text-align: flex-start;
     }
 
     .carousel-nav {
-        @media only screen and (max-width: 768px) {
-            display: none;
+        @media only screen and (max-width: 992px) {
+            display: none !important;
         }
     }
 
     .carousel-nav-mobile {
-        @media only screen and (min-width: 768px) {
+        display: flex;
+        @media only screen and (min-width: 992px) {
             display: none;
+        }
+    }
+
+    .carousel-title {
+        @media only screen and (max-width: 768px) {
+            text-transform: uppercase;
+            font-size: 14px;
+            width: 100% !important;
+            margin-bottom: 0 !important;
+            margin: 0 20px;
         }
     }
 
     ul {
         list-style-type: none;
+
+        @media only screen and (max-width: 768px) {
+            margin: 0;
+            padding: 0;
+        }
     }
 
     li {
@@ -27,6 +43,10 @@
 
     li.active {
         font-weight: bold;
+
+        @media only screen and (max-width: 768px) {
+            display: block;
+        }
     }
 
     h1 {

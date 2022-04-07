@@ -3,7 +3,7 @@ import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { Layout, ContentSection, TrySourcegraph } from '@components'
+import { Layout, ContentSection, TrySourcegraph, CustomerLogosSectionAnimated } from '@components'
 
 import styles from './useCases.module.scss'
 
@@ -23,7 +23,7 @@ const UseCases: React.FunctionComponent = () => (
                 'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
-        heroAndHeaderClassName={styles.headerAndHero}
+        heroAndHeaderClassName={styles.landingHeader}
         hero={
             <div className="container">
                 <div className="row">
@@ -55,8 +55,8 @@ const UseCases: React.FunctionComponent = () => (
             </div>
         }
     >
-        <div>
-            {/* Todo: Add new Customer Logos Section when homepage updates are finalized */}
+        <div className="use-cases-page">
+            <CustomerLogosSectionAnimated showButton={false} showSection={true} className="pt-5" />
 
             <ContentSection id="find-and-fix-security-vulnerabilities" className="pt-8">
                 <div className="row justify-content-center">
@@ -83,6 +83,10 @@ const UseCases: React.FunctionComponent = () => (
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </a>
+                        <Link href="/use-cases/vulnerabilities" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a className="btn btn-link font-weight-bold">Learn more</a>
+                        </Link>
                     </div>
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
@@ -159,6 +163,10 @@ const UseCases: React.FunctionComponent = () => (
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </a>
+                        <Link href="/use-cases/onboarding" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a className="btn btn-link font-weight-bold">Learn more</a>
+                        </Link>
                     </div>
                 </div>
             </ContentSection>

@@ -1,12 +1,16 @@
-.headerAndHero {
+@import '@styles/colors';
+@import '@styles/gradients';
+
+.landingHeader {
     background: url('/customers-page-bg.svg') no-repeat;
     background-size: cover;
 }
-
-.seeHow {
-    font-size: 1.25rem;
-}
-
-.listGroupItem {
-    background-color: rgba(255, 255, 255, 0.75);
+.pageHeader {
+    min-height: 587px;
+    position: relative;
+    background-image: url('/code-insights/code-insights-page-bg.svg'),
+        // Fallback while the SVGs are loading
+        radial-gradient(ellipse at bottom left, rgba($light-green2, 0.5), transparent);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -9,8 +9,10 @@ export { Install } from './Install'
 export { EmbeddedHubSpot } from './HubSpot'
 export { BackButton } from './BackButton'
 export { FormLegal } from './FormLegal'
+export { BlogListItem } from './BlogListItem'
 export { Blockquote, BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
 export { Video } from './Video'
+export { CustomerLogosSectionAnimated } from './CustomerLogosSectionAnimated'
 export { IntegrationsSection } from './IntegrationsSection'
 export { SelfHostedSection } from './SelfHostedSection'
 export { YouTube } from './YouTube'
@@ -28,6 +30,9 @@ export {
     SubmitEmailForm,
     ViewDeveloperDocumentationAction,
 } from './Actions'
+
+// Carousels
+export { CustomCarousel, QuoteCarousel } from './Carousels'
 
 // Pricing
 export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'

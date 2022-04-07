@@ -82,7 +82,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
         <blockquote className="p-3 rounded rounded-lg text-center case-studies__quote--in-content">
             <div className="case-studies__quote--in-content--section">
                 {headline && <h5 className="font-weight-bold mb-4">{headline}</h5>}
-                <div className={bold ? 'font-weight-bold mb-3' : 'font-weight-bold mb-3'}>&ldquo;{quote}&rdquo;</div>
+                <div className={bold ? 'font-weight-bold mb-3' : 'font-weight-normal mb-3'}>&ldquo;{quote}&rdquo;</div>
             </div>
             {author && (
                 <>
