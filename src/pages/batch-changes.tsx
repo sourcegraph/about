@@ -101,9 +101,13 @@ export const BatchChangesPage: FunctionComponent = () => (
                                 Find all occurrences of code to change with Sourcegraph{' '}
                                 <a href="http://about.sourcegraph.com/">universal code search</a>
                             </li>
-                            <li className="mt-2">Programmatically define changes by creating a declarative specification file</li>
+                            <li className="mt-2">
+                                Programmatically define changes by creating a declarative specification file
+                            </li>
                             <li className="mt-2">Execute specifications via a lightweight CLI</li>
-                            <li className="mt-2">Track changeset lifecycle status across multiple code hosts via the Sourcegraph UI</li>
+                            <li className="mt-2">
+                                Track changeset lifecycle status across multiple code hosts via the Sourcegraph UI
+                            </li>
                         </ul>
                     </div>
                     <div className="col-lg-7">

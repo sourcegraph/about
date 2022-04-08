@@ -3,12 +3,7 @@ import { FunctionComponent } from 'react'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-import {
-        buttonStyle,
-        buttonLocation,
-        ContentSection,
-        Layout
-    } from '@components'
+import { buttonStyle, buttonLocation, ContentSection, Layout } from '@components'
 
 export const Community: FunctionComponent = () => (
     <Layout
@@ -60,10 +55,9 @@ export const Community: FunctionComponent = () => (
             <h2 className="display-3 font-weight-bold mt-5 mb-3">Get up to speed</h2>
             <div className="row justify-content-center">
                 <p className="col-md-8">
-                    We can’t give you a 25-hour day, but here is a{' '}
-                    <a href="http://srcgr.ph/cheatsheet">speed sheet</a> with the most useful Sourcegraph
-                    shortcuts. Need even more speed? Fasten your seat belt and dive into our curated{' '}
-                    <a href="https://learn.sourcegraph.com/tags/sourcegraph">tutorials</a> &#38; other{' '}
+                    We can’t give you a 25-hour day, but here is a <a href="http://srcgr.ph/cheatsheet">speed sheet</a>{' '}
+                    with the most useful Sourcegraph shortcuts. Need even more speed? Fasten your seat belt and dive
+                    into our curated <a href="https://learn.sourcegraph.com/tags/sourcegraph">tutorials</a> &#38; other{' '}
                     <a href="https://docs.sourcegraph.com/">tip documents</a>.
                 </p>
             </div>
@@ -100,7 +94,10 @@ export const Community: FunctionComponent = () => (
                         <p>
                             We can't wait to meet you! And send you really cool custom swag ;)
                             <br />
-                            <a className="btn btn-primary mt-3" href="https://handbook.sourcegraph.com/marketing/becoming_a_sourcegraph_champion">
+                            <a
+                                className="btn btn-primary mt-3"
+                                href="https://handbook.sourcegraph.com/marketing/becoming_a_sourcegraph_champion"
+                            >
                                 Become a Sourcegraph Champion
                             </a>
                         </p>
@@ -127,19 +124,21 @@ export const Community: FunctionComponent = () => (
                     What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
                     <ul>
                         <li className="mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
-                        <li className="mt-2">Reach out to the community, discover new ideas &#38; seek or give mentorship</li>
+                        <li className="mt-2">
+                            Reach out to the community, discover new ideas &#38; seek or give mentorship
+                        </li>
                         <li className="mt-2">Share the road less traveled so that everyone can learn</li>
                     </ul>
-                        <a className="btn btn-primary" href="https://srcgr.ph/wp-join-community-space" title="Join us on Slack">
-                            Join us on Slack
-                        </a>
+                    <a
+                        className="btn btn-primary"
+                        href="https://srcgr.ph/wp-join-community-space"
+                        title="Join us on Slack"
+                    >
+                        Join us on Slack
+                    </a>
                 </div>
                 <div className="col-lg-5">
-                    <img
-                        className="w-100 mt-6"
-                        src="/community/SG_DM_us_on_slack.png"
-                        alt="DM us on Slack!"
-                    />
+                    <img className="w-100 mt-6" src="/community/SG_DM_us_on_slack.png" alt="DM us on Slack!" />
                 </div>
             </div>
         </ContentSection>
@@ -156,7 +155,10 @@ export const Community: FunctionComponent = () => (
                             </p>
                             <ul>
                                 <li>
-                                    <a href="https://events.linuxfoundation.org/open-source-summit-north-america/register/">Open Source Summit</a> - 9/27 - 9/30
+                                    <a href="https://events.linuxfoundation.org/open-source-summit-north-america/register/">
+                                        Open Source Summit
+                                    </a>{' '}
+                                    - 9/27 - 9/30
                                 </li>
                                 <li>
                                     <a href="https://reactadvanced.com/">React Advanced London</a> - 10/22
@@ -179,18 +181,18 @@ export const Community: FunctionComponent = () => (
                         <div className="col-lg-8">
                             <p>
                                 Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
-                                <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and
-                                subscribe to keep up with new episodes.
+                                <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
+                                keep up with new episodes.
                             </p>
-                                <a href="https://srcgr.ph/dev-tool-time-playlist">
-                                    <img
-                                        className="w-100 h-auto mt-4"
-                                        width="850"
-                                        height="380"
-                                        src="/community/DTT_module.jpg"
-                                        alt="Dev Tool Time"
-                                    />
-                                </a>
+                            <a href="https://srcgr.ph/dev-tool-time-playlist">
+                                <img
+                                    className="w-100 h-auto mt-4"
+                                    width="850"
+                                    height="380"
+                                    src="/community/DTT_module.jpg"
+                                    alt="Dev Tool Time"
+                                />
+                            </a>
                         </div>
                     </div>
                 </Tab>
@@ -201,15 +203,15 @@ export const Community: FunctionComponent = () => (
                                 Tune into our developer convos wherever you listen to your favorite podcasts. Every
                                 episode is an inspiration.
                             </p>
-                                <a href="https://about.sourcegraph.com/podcast">
-                                    <img
-                                        className="w-100 h-auto mt-4"
-                                        width="750"
-                                        height="472"
-                                        src="/community/Podcast_module.png"
-                                        alt="Podcasts"
-                                    />
-                                </a>
+                            <a href="https://about.sourcegraph.com/podcast">
+                                <img
+                                    className="w-100 h-auto mt-4"
+                                    width="750"
+                                    height="472"
+                                    src="/community/Podcast_module.png"
+                                    alt="Podcasts"
+                                />
+                            </a>
                         </div>
                     </div>
                 </Tab>

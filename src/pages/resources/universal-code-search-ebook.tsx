@@ -8,7 +8,7 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => {
         portalId: '2762526',
         formId: 'd2425310-4f8c-4b6c-8b63-c4729912df82',
         targetId: 'hubspotContactForm',
-        chiliPiper: false
+        chiliPiper: false,
     })
 
     return (

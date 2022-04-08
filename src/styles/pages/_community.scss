@@ -11,10 +11,10 @@
             font-weight: 600;
             background-color: transparent;
             color: $blue;
-    
+
             &:hover {
                 color: $brand-primary-blue;
-                
+
                 @media only screen and (max-width: 990px) {
                     color: unset;
                 }

@@ -1,6 +1,4 @@
 // Common
-export { Layout } from './Layout'
-export { ContentPage } from './ContentPage'
 export { ContentSection } from './ContentSection'
 export { Jumbotron } from './Jumbotron'
 export { RequestDemoForm } from './RequestDemoForm'
@@ -38,7 +36,7 @@ export { CustomCarousel, QuoteCarousel } from './Carousels'
 export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
 export type { Features } from './Pricing'
 
-// Page Specific
+// Case Studies
 export {
     CaseStudyJumbotron,
     CaseStudyLayout,
@@ -61,3 +59,8 @@ export {
     ReleasePost,
     BLOG_TYPE_TO_INFO,
 } from './Blog'
+
+// Layouts
+export { Layout } from './Layout'
+export { WhitePaperPage } from './WhitePaperPage'
+export { ContentPage } from './ContentPage'
