@@ -31,7 +31,7 @@ const CareersPage = props => {
         },
         {
             header: 'Great start to an awesome adventure',
-            quote: '- Professional at a level many pre-IPO companies are not - Really good product that is easy to get behind and support - Dedicated leadership that support all employees - Everyone is motivated and pulling in the same direction',
+            quote: 'Professional at a level many pre-IPO companies are not. Really good product that is easy to get behind and support. Dedicated leadership that support all employees. Everyone is motivated and pulling in the same direction',
             by: 'Current Employee, Aug 28, 2021 - ',
             linkText: 'Read full review',
             link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW51765366.htm',
@@ -350,13 +350,13 @@ const CareersPage = props => {
                     </Carousel.Item>
                 </Carousel>
 
-                <div className="bg-white py-8">
+                <div className="bg-gradient-onahau-fog py-8">
                     <ContentSection>
                         <QuoteCarousel items={glassdoorReviewItems} autoAdvance={true} />
                     </ContentSection>
                 </div>
 
-                <div className="bg-white contact-us">
+                <div className="bg-white py-8">
                     <ContentSection>
                         <div className="row">
                             <div className="col-lg-12">
