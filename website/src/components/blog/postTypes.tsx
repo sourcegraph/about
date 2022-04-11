@@ -93,6 +93,7 @@ export enum BlogType {
     PressRelease = 'press',
     Podcast = 'podcast',
     Blog = 'blog',
+    Resources = 'resources',
 }
 
 export interface BlogTypeInfo {
@@ -171,6 +172,19 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         meta: {
             title: 'Sourcegraph Podcast',
             description: 'Conversations, stories, and insights from dev tool creators',
+        },
+    },
+    resources: {
+        title: 'Resource library: Guides, ebooks, webinars, and more.',
+        belowTitle: (
+            <>
+                <p className="mb-1">Resources to help engineering teams unlock developer velocity.</p>
+            </>
+        ),
+        baseUrl: '/resources',
+        meta: {
+            title: 'Resource library: Guides, ebooks, webinars, and more.',
+            description: 'Resources to help engineering teams unlock developer velocity.',
         },
     },
 }
