@@ -10,7 +10,7 @@ socialImage: https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d
 published: true
 ---
 
-<p style="text-align: center"><strong>Editor’s note: This is a company news announcement. If you’re a developer, we wrote <a href="/blog/the-future-of-code-search">this post</a> just for you. Choose your own adventure.</strong></p>
+<p style={{textAlign: 'center'}}><strong>Editor’s note: This is a company news announcement. If you’re a developer, we wrote <a href="/blog/the-future-of-code-search">this post</a> just for you. Choose your own adventure.</strong></p>
 
 ![Announcing Sourcegraph's Series D Round](/blog/announcing-sourcegraphs-series-d-round.jpg)
 

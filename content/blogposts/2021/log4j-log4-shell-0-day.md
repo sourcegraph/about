@@ -11,10 +11,10 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/log4j/log4j-
 published: true
 ---
 
-<div class="alert alert-primary" role="alert" style="max-width:650px; align-items: center; margin: auto auto 20px auto">
+<div className="alert alert-primary" role="alert" style={{maxWidth:'650px', alignItems:'center', margin: 'auto auto 20px auto'}}>
       <strong>Update as of 17:20 UTC on Dec 18:</strong> The  <a href="https://logging.apache.org/log4j/2.x/security.html#CVE-2021-45105">latest advice is to patch all the way up to 2.17.0</a>. We have updated all queries and configurations in this post to reflect this recommendation.
-      <br>
-      <span style="text-decoration: line-through;"><strong>Update as of 23:30 UTC on Dec 14:</strong> The  <a href="https://logging.apache.org/log4j/2.x/security.html#CVE-2021-45046">latest advice is to patch all the way up to 2.16.0</a>. We have updated all queries and configurations in this post to reflect this recommendation.</span>
+      <br/>
+      <span><strong>Update as of 23:30 UTC on Dec 14:</strong> The  <a href="https://logging.apache.org/log4j/2.x/security.html#CVE-2021-45046">latest advice is to patch all the way up to 2.16.0</a>. We have updated all queries and configurations in this post to reflect this recommendation.</span>
 </div>
 
 The steps to identify and fix/mitigate the [log4j 0-day (CVE-2021-44228)](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) ("Log4Shell") in your code have been widely reported ([1](https://www.lunasec.io/docs/blog/log4j-zero-day/) [2](https://logging.apache.org/log4j/2.x/security.html) [3](https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/)). But the steps are manual and tedious, and it's hard to track the progress of fixes/mitigations across all your code. To help, we're publishing queries, scripts, and instructions for using code search to:
@@ -72,7 +72,7 @@ After you preview and create a batch change, you can see all of the pull request
 
 Here's a video walkthrough of how to use Batch Changes to fix/mitigate log4j vulnerabilities in your code:
 
-<div style="position: relative; padding-bottom: 45.18828451882845%; height: 0;"><iframe src="https://www.loom.com/embed/84807e1388ce4a5383df7fe5174ed2d7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style={{position:'relative', paddingBottom:'45.18828451882845%', height: 0}}><iframe src="https://www.loom.com/embed/84807e1388ce4a5383df7fe5174ed2d7"frameBorder="0" webkitallowfullscreen mozallowfullscreenallowFullScreen style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}></iframe></div>
 
 ### To use Batch Changes on your organization's private code:
 

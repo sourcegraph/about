@@ -19,8 +19,6 @@ Liveblogger: [Alan Braithwaite](https://www.abraithwaite.net)
 
 We're on the road to Go 2. But where exactly are we? Where are we headed? Come find out.
 
----
-
 ## Summary
 
 Development on Go has been a loop consisting of the following stages:
@@ -39,8 +37,6 @@ The main areas of focus for Go2 are:
 - Generics
 - Dependency Management
 - Tooling
-
----
 
 ## Introduction
 
@@ -220,12 +216,12 @@ The problem with dep and the vendor directory is that multiple distinct
 incompatible versions of a dependency are represented by one import path.  We
 now call this the "Import Compatibility Rule".
 
-We took what worked well and learned from what didn't to create VGo.  VGo
-provides package uniqueness without breaking builds.  VGo dictates different
-import paths for incompatible package versions.
+We took what worked well and learned from what didn't to create `VGo`. `VGo`
+provides package uniqueness without breaking builds. `VGo` dictates different
+paths for importing incompatible package versions.
 
 We took this, grouped similar packages and gave these groups a name: Modules.
-The VGo system is now go modules.  It now integrates directly with the Go
+The `VGo` system is now go modules.  It now integrates directly with the Go
 command.
 
 The challenge presented going forward is mostly around updating everything to

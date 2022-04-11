@@ -3,9 +3,10 @@
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
-    "predev": "./scripts/preDev.sh",
+    "predev": "./scripts/buildCache.sh",
     "dev": "next dev",
     "build:cache": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node src/scripts/cache.ts",
+    "prebuild": "./scripts/buildCache.sh",
     "build": "next build && next export",
     "start": "next start",
     "lint": "yarn eslint && yarn typecheck",

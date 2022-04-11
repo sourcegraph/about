@@ -12,16 +12,16 @@ heroImage: /blog/strange-loop-thumbnail-square-v2.jpg
 published: true
 ---
 
-<div class="container p-0 liveblog-presenters">
-  <div class="row m-0">
-      <p class=" mr-6 m-0">
-        <span class="liveblog-presenters__name">Michael Donatz</span>
-        <a href="https://twitter.com/donutsonhudson" target="_blank" title="Twitter"><i class="fa fa-twitter pr-2"></i></a>
-        <a href="https://github.com/donutsonhudson" target="_blank" title="GitHub"><i class="fa fa-github pr-2"></i></a>
+<div className="container p-0 liveblog-presenters d-flex w-100 text-center">
+  <div className="row m-0 w-100">
+      <p className=" mr-6 m-0">
+        <span className="liveblog-presenters__name">Michael Donatz</span>
+        <a href="https://twitter.com/donutsonhudson" target="_blank" title="Twitter"><i className="fa fa-twitter pr-2"></i></a>
+        <a href="https://github.com/donutsonhudson" target="_blank" title="GitHub"><i className="fa fa-github pr-2"></i></a>
       </p>
-  <p class=" mr-6 m-0">
-        <span class="liveblog-presenters__name">Jillian Murphy</span>
-        <a href="https://www.linkedin.com/in/jillianemurphy" target="_blank" title="LinkedIn"><i class="fa fa-linkedin pr-2"></i></a>
+  <p className=" mr-6 m-0">
+        <span className="liveblog-presenters__name">Jillian Murphy</span>
+        <a href="https://www.linkedin.com/in/jillianemurphy" target="_blank" title="LinkedIn"><i className="fa fa-linkedin pr-2"></i></a>
       </p>
   </div>
 </div>

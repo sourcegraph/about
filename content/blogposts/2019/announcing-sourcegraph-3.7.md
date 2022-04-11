@@ -13,7 +13,7 @@ description: 'Sourcegraph 3.7: Improved performance, efficiency, accuracy, and r
  
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🏎 Symbol search performant at scale**](#symbol-search-performant-at-scale)<br />
 Symbol searches are now indexed for default branches.
@@ -49,19 +49,19 @@ Sourcegraph couldn't be what it is without the community.
 
 ## Symbol search performant at scale
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/354904682?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/354904682?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/354904682" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/354904682" target="_blank">View on Vimeo</a></p>
+</div>
 
 Symbol search (`type:symbol`) is a powerful feature for finding specific symbols, such as a function, variable, or package, and not just all text occurrences of your query. More and more users are taking advantage of symbol search results, which was leading to performance issues for some users with large instances. **Symbol search is now indexed for default branches**, which is a major improvement for both users running symbol searches and admins with large instances that were having performance issues. On large symbol searches, we've seen speed ups by factor of 20x ([benchmarks](https://docs.google.com/spreadsheets/d/1oPzePjD8YLrnppLm3nk46h48_Cxipz4_QqRMBYaIOYQ/edit?usp=sharing)).
 
 Upon upgrading, Sourcegraph will seamlessly & automatically re-index repositories in the background. Once finished, you'll see substantially improved symbol search performance. In the meantime, Sourcegraph will perform as it would normally.
 
-<div class="alert alert-info">
-  <h4 class="alert-heading">Deployment note</h4>
+<div style={{backgroundColor: '#d1ecf1', color: '#0c5460', borderColor: '#bee5eb', width: '40rem'}} className="p-4 mx-auto">
+  <h4 className="alert-heading">Deployment note</h4>
   <p>Prior to upgrading, please consult our <a href="https://docs.sourcegraph.com/admin/migration/3_7">3.7.2+ migration guide</a> to ensure you have enough free disk space.</p>
   <hr />
 </div>
@@ -79,11 +79,12 @@ As we continue to make incremental improvements, Sourcegraph search is getting f
 
 ## More accurate TypeScript code intelligence
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/354938928?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/354938928?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/354938928" target="_blank">View on Vimeo</a></p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/354938928" target="_blank">View on Vimeo</a></p>
+</div>
 
 Out-of-the-box TypeScript code intelligence has been improved with an updated ctags version that includes a built-in TypeScript parser. This means that jump to definition is more accurate for TypeScript files, and the symbols sidebar recognizes more functions and variables with fewer false positives.
 
@@ -113,7 +114,7 @@ You can now set `EXTSVC_CONFIG_ALLOW_EDITS=true` and `SITE_CONFIG_ALLOW_EDITS=tr
 
 ## In case you missed it...
 
-<a href="/go"/>
+<a href="/go">
   <img src="https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png" alt="GopherCon liveblog San Diago 2019" />
 </a>
 

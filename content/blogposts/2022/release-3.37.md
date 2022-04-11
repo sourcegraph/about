@@ -36,13 +36,13 @@ Sourcegraph 3.37 is now available! For this release, we introduced:
 
 If you’re already using Sourcegraph, upgrade to 3.37 for a limited trial of Code Insights or reach out to your account team to purchase access to the full version.
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
   <iframe
-    class="embed-responsive-item"
+    className="embed-responsive-item"
     src="https://www.youtube-nocookie.com/embed/fMCUJQHfbUA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-    allowfullscreen="true"
+   allowFullScreen="true"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    frameborder="0"
+   frameBorder="0"
     title="Sourcegraph Code Insights demo"
   ></iframe>
 </div>
@@ -51,18 +51,18 @@ If you’re already using Sourcegraph, upgrade to 3.37 for a limited trial of Co
 
 LSIF index processing just got a whole lot faster, so you can upload your indexes and start utilizing precise Code Intelligence immediately. Previously, certain LSIF indexes, especially for Javascript and Typescript, could take over 30 minutes to process. This meant that a long queue would build up with frequent uploads, such as those from a CI job that runs on every commit on a development branch. Now, most indexes should be processed in a few seconds instead of minutes so that you can access precise Code Intelligence soon after uploading an index.
 
-<img class="blog-image" title="LSIF upload speedup" alt="Comparative chart before and after processing improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/lsif-upload-speedup.png">
+<img className="blog-image" title="LSIF upload speedup" alt="Comparative chart before and after processing improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/lsif-upload-speedup.png"/>
 
 The symbols sidebar also got a significant performance boost. Previously, the symbols sidebar would search for symbols in the whole directory tree, even if you were only looking at a subdirectory or file, which would cause it to time out and show an error message on big monorepos. Now prefix queries like `^src/app` are better optimized and subdirectory searches are much faster and less likely to time out.
 
-<img class="blog-image" title="Symbol's sidebar improvement" alt="Comparative chart before and after symbol improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/symbols-sidebar-improvement.png">
+<img className="blog-image" title="Symbol's sidebar improvement" alt="Comparative chart before and after symbol improvements." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.37/symbols-sidebar-improvement.png"/>
 
 ## Share Notebooks with your organization
 
 Notebooks are now shareable within organizations. Previously, you could only share Notebooks with your entire instance (or share them publicly, in the case of Sourcegraph Cloud). This update allows you to create Notebooks with specific relevance to your organization, such as documentation of preferred engineering patterns or anti-patterns. Your organization's shared Notebooks will now show up in their own tabs on the [Notebooks home page](https://sourcegraph.com/notebooks).
 
-<div style="text-align:center">
-<img class="blog-image" title="Notebooks sharing" alt="Image of Notebooks sharing modal." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/notebooks/notebook_sharing.png">
+<div style={{textAlign:'center'}}>
+<img className="blog-image" title="Notebooks sharing" alt="Image of Notebooks sharing modal." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/notebooks/notebook_sharing.png"/>
 </div>
 
 ## Import and export Notebooks as Markdown
@@ -73,8 +73,8 @@ Notebooks can now be created by uploading a Markdown file, so if you're already 
 
 The search contexts creation UI has received visual tweaks, making it easier to understand if you're using search queries or JSON to define your contexts. We've also added guidance on valid expressions for query-based contexts to make the creation process clearer.
 
-<div style="text-align:center">
-<img class="blog-image" title="Search contexts type selection" alt="Screenshot of search contexts configuration UI." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/search_contexts/select_context_type.png">
+<div style={{textAlign:'center'}}>
+<img className="blog-image" title="Search contexts type selection" alt="Screenshot of search contexts configuration UI." src="https://storage.googleapis.com/sourcegraph-assets/docs/images/search_contexts/select_context_type.png"/>
 </div>
 
 ## Upgrading Sourcegraph is now easier with the new migrator service

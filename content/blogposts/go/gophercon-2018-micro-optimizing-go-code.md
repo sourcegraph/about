@@ -52,7 +52,7 @@ Blake2 is an awesome new hash function with some great features:
 - prefix-MAC personalization
 - ...
 
-<img width="739" alt="screen shot 2018-08-29 at 12 57 45 pm" src="https://user-images.githubusercontent.com/926067/44808041-ceebcb80-ab90-11e8-886b-4e48e48c144f.png">
+<img width="739" alt="screen shot 2018-08-29 at 12 57 45 pm" src="https://user-images.githubusercontent.com/926067/44808041-ceebcb80-ab90-11e8-886b-4e48e48c144f.png"/>
 
 but...
 
@@ -61,7 +61,7 @@ It's under-specified, and no one implements all of it.
 "under-specified" is not a phrase you want to hear with regards to things like
 crypto and hash functions.
 
-<img width="652" alt="screen shot 2018-08-29 at 12 59 25 pm" src="https://user-images.githubusercontent.com/926067/44808007-a8c62b80-ab90-11e8-85ef-0705c2078f14.png">
+<img width="652" alt="screen shot 2018-08-29 at 12 59 25 pm" src="https://user-images.githubusercontent.com/926067/44808007-a8c62b80-ab90-11e8-85ef-0705c2078f14.png"/>
 
 Zcash wanted to implement Blake2 independently in several languages to validate
 it.
@@ -78,7 +78,7 @@ Blake2 Algorithm:
 
 A fairly complex interface.
 
-<img width="795" alt="screen shot 2018-08-29 at 12 41 43 pm" src="https://user-images.githubusercontent.com/926067/44807986-93e99800-ab90-11e8-8d14-ff668380175e.png">
+<img width="795" alt="screen shot 2018-08-29 at 12 41 43 pm" src="https://user-images.githubusercontent.com/926067/44807986-93e99800-ab90-11e8-8d14-ff668380175e.png"/>
 
 Doesn't work for Blake2
 
@@ -212,4 +212,4 @@ carefully that new Go versions don't break your "optimizations".
 
 You won't be competitive in assemply in pure Go - maybe use Rust?
 
-<img width="1394" alt="screen shot 2018-08-29 at 1 41 50 pm" src="https://user-images.githubusercontent.com/926067/44808250-576a6c00-ab91-11e8-8eea-cd63ac21dbe7.png">
+<img width="1394" alt="screen shot 2018-08-29 at 1 41 50 pm" src="https://user-images.githubusercontent.com/926067/44808250-576a6c00-ab91-11e8-8eea-cd63ac21dbe7.png"/>

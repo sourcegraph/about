@@ -8,27 +8,23 @@ heroImage: https://about.sourcegraph.com/blog/gitlab-integration-preview-dark.pn
 published: true
 ---
 
-<p style="text-align: center">
+<p style={{textAlign: 'center'}}>
   <img src="/blog/gitlab-integration-banner-dark.png" alt="GitLab plus Sourcegraph logo"/>
 </p>
 
-<div class="blockquote case-studies__quote case-studies__quote--in-content">
-  <p>
-    Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab.
-  </p>
-  <footer class="blockquote-footer">
-    Sid Sijbrandij, GitLab CEO
-  </footer>
-</div>
+<BlockquoteWithBorder
+  quote='Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab.'
+  author='Sid Sijbrandij, GitLab CEO'
+/>
 
 Check out the below video where Quinn sat down with GitLab CEO Sid Sijbrandij to discuss the native GitLab integration, and why Sourcegraph's code intelligence means better code reviews and improved code quality for [GitLab Enterprise](https://about.gitlab.com/solutions/enterprise-class/) customers and open source projects on [GitLab.com](https://gitlab.com/explore).
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/372590007?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/372590007?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/372590007" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/372590007" target="_blank">View on Vimeo</a></p>
+</div>
 
 Over 100,000 organizations use GitLab to manage their DevOps lifecycle. Today, [GitLab announced its collaboration with Sourcegraph](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/) to provide a native integration for these organizations, making code navigation and code intelligence available to all GitLab users.
 
@@ -41,12 +37,12 @@ Sourcegraph provides these much-loved, much-used features at scale for all code,
 Because we have many satisfied customers in common, a shared focus on developers, and some [CEO-to-CEO discussion on Hacker News](https://news.ycombinator.com/item?id=18118924), GitLab chose Sourcegraph to integrate these essential code navigation and code intelligence features for the 100,000+ organizations who trust GitLab.
 
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/372226334?color=0CB6F4&amp;title=0&amp;byline=&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" allowfullscreen="" autoplay="" allow="autoplay; fullscreen"></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/372226334?color=0CB6F4&amp;title=0&amp;byline=&autoplay=1&loop=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/372226334" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/372226334" target="_blank">View on Vimeo</a></p>
+</div>
 
 ## Built-in IDE-like features improve code reviews
 

@@ -33,7 +33,7 @@ impact, namely batching, "big old map", sharding and avoiding lock contention.
 ## Background
 
 Sean has lots of experience in FFI over a very long time. For example he has
-even written a bridge between Java <-> Perl. At Wallaroo Labs he needed to
+even written a bridge between Java < - > Perl. At Wallaroo Labs he needed to
 call into Pony from cgo, and vice versa. Wallaroo users would write go and
 call this API, which was expected to be very high performance. This lead Sean
 down the road of cgo performance.

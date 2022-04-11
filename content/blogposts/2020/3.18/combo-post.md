@@ -16,11 +16,11 @@ We've improved in-product documentation to clarify how Sourcegraph fetches data 
 
 [Campaigns](https://docs.sourcegraph.com/campaigns) enable you to initiate and manage large-scale code changes across your codebase, across multiple repositories _and even_ multiple code hosts. Initially, only GitHub and Bitbucket Server were supported, and a lot of users cried out for GitLab support. We heard you, and [here it is](https://github.com/sourcegraph/sourcegraph/issues/11586), courtesy of the wonderful [Adam Harvey](https://github.com/LawnGnome):
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube-nocookie.com/embed/KatiVJ4D3H4" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://www.youtube-nocookie.com/embed/KatiVJ4D3H4" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-</p>
+</div>
 
 ## Highlight all elements on hover
 

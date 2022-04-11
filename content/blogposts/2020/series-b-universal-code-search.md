@@ -14,6 +14,6 @@ We're excited to welcome David Sacks of Craft Ventures to our board of directors
 
 Code search is most valuable when it's universal–every programming language, every file format, every code host, every developer tool, everything. This funding will let us ship [Universal Code Search](https://about.sourcegraph.com/universal-code-search) to more and more developers and cover every major language and integration by [growing our all-remote team](https://about.sourcegraph.com/jobs/). Sourcegraph Universal Code Search lets developers focus on solving problems instead of struggling to find and understand code in rapidly changing and complex codebases. And it's super easy to [set up a self-hosted Sourcegraph instance for your organization's code](https://docs.sourcegraph.com/#quickstart).
 
-<div class="vimeo-embed embed-responsive embed-responsive-16by9 ">
-  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/353422112?color=0CB6F4&amp;title=&amp;byline=&amp;muted=1&amp;controls=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;time=0&amp;texttrack=en.subtitles" allowfullscreen="" allow="autoplay; fullscreen"></iframe>
+<div className="vimeo-embed embed-responsive embed-responsive-16by9 ">
+  <iframe className="embed-responsive-item" src="https://player.vimeo.com/video/353422112?color=0CB6F4&amp;title=&amp;byline=&amp;muted=1&amp;controls=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;time=0&amp;texttrack=en.subtitles" allowFullScreen="" allow="autoplay; fullscreen"></iframe>
 </div>

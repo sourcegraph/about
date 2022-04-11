@@ -11,7 +11,7 @@ published: true
 description: "Sourcegraph enables SoFi to innovate and move quickly while ensuring production stability for hundreds of microservices."
 ---
 
-<p style="text-align: center">
+<p style={{textAlign: 'center'}}>
   <img src="/case-studies/sofi-sourcegraph-case-study-og-embed.png" alt="SoFi engineers rely on Sourcegraph to help manage hundreds of microservices" />
 </p>
 
@@ -19,4 +19,6 @@ SoFi helps its over 900,000 members achieve financial independence to realize th
 
 In this case study, learn how Sourcegraph enables SoFi to innovate and move quickly while ensuring production stability for their [hundreds of microservices](/case-studies/sofi-moves-fast-on-hundreds-of-microservices).
 
-<a href="/case-studies/sofi-moves-fast-on-hundreds-of-microservices" class="btn btn-primary mt-4">Learn more</a>
+<div className="align-items-center justify-content-center d-flex">
+  <a href="/case-studies/sofi-moves-fast-on-hundreds-of-microservices" className="btn btn-primary mt-4">Learn more</a>
+</div>

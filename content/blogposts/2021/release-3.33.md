@@ -38,14 +38,14 @@ Search contexts can be used in all kinds of situations to scope searches. For ex
 
 You can read more about this change and how to migrate your version contexts to search contexts in [this blog post](https://about.sourcegraph.com/blog/introducing-search-contexts/). Going forward, search contexts will only be available for enterprise customers; if you are currently using Sourcegraph OSS, you will need to become an enterprise customer to use this feature.
 
-<div style="text-align:center">
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-dropdown.png" alt="The search context dropdown embedded in the search bar" class="blog-image"/>
+<div style={{textAlign:'center'}}>
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-dropdown.png" alt="The search context dropdown embedded in the search bar" className="blog-image"/>
 </div>
 
 ## All users can now visualize and track the status of their LSIF data
 
 Previously, the Code Intelligence UI was only available to site-admins (except for hovers and reference panels). This conflicted with our users' need to add precise Code Intelligence to their own repositories. They could upload LSIF data and get precise Code Intelligence results, but couldn't visualize the status of that data. We now allow users to see uploads and indexes for repositories they have access to, helping them easily keep track of the status of all their LSIF data.
 
-<div style="text-align:center">
-<img src="https://user-images.githubusercontent.com/1657213/137551018-de2aaa21-7afe-46ed-9040-f62af536d53c.png" alt="The Code Intelligence uploads UI<" class="blog-image"/>
+<div style={{textAlign:'center'}}>
+<img src="https://user-images.githubusercontent.com/1657213/137551018-de2aaa21-7afe-46ed-9040-f62af536d53c.png" alt="The Code Intelligence uploads UI<" className="blog-image"/>
 </div>

@@ -13,17 +13,15 @@ description: 'Sourcegraph 3.1 released'
 
 Sourcegraph 3.1 is now out! This release includes stability and documentation improvements, plus an easy query builder for searching your code (with useful query examples). Also, mark your calendars: our new fixed release schedule means you get a new Sourcegraph release on the 20th of each month.
 
-<!-- (ryan): Hyperlink to headings in above paragraph -->
-
 What is Sourcegraph? Sourcegraph is an open source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph.](#install-or-upgrade)
 
 ## Find answers in code more easily with the new query builder
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/318509611?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/318509611?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-</p>
+</div>
 
 Did you know that in addition to code, you can search commit diffs, commit messages, and symbols?
 
@@ -31,11 +29,11 @@ Give it a try and let us know what you think via [GitHub](https://github.com/sou
 
 ## Improved go-to-definition and hover tooltips for all languages
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/318518281?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/318518281?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-</p>
+</div>
 
 We've improved Sourcegraph's [code intelligence extensions](https://sourcegraph.com/extensions?query=category%3A%22Programming+languages%22), which let you go to definitions, find references, and see hover tooltips on your code (in all languages).
 
@@ -47,11 +45,11 @@ We're actively improving code intelligence in all languages, so please [send us 
 
 ## Site admin improvements
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/318533427?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/318533427?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-</p>
+</div>
 
 We've added a couple features to help site admins manage a Sourcegraph instance in an enterprise environment:
 
@@ -71,11 +69,11 @@ The documentation pages for [site configuration](https://docs.sourcegraph.com/ad
 
 ## New Sourcegraph extension APIs
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/318541630?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/318541630?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-</p>
+</div>
 
 The [Sourcegraph extension API](https://docs.sourcegraph.com/extensions) has two new APIs to make it easier to add interactive features to code views on Sourcegraph, GitHub, and other similar tools:
 

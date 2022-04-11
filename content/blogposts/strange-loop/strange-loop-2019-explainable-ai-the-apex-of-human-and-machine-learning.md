@@ -13,11 +13,11 @@ heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.j
 published: true
 ---
 
-<div class="container p-0 liveblog-presenters">
-  <div class="row m-0">
-      <p class=" mr-12 m-0">
-        <span class="liveblog-presenters__name">Baxter Eaves</span>
-        <a href="https://github.com/BaxterEaves" target="_blank" title="GitHub"><i class="fa fa-github pr-2"></i></a>
+<div className="container p-0 liveblog-presenters d-flex w-100 text-center">
+  <div className="row m-0 w-100">
+      <p className=" mr-12 m-0 w-100">
+        <span className="liveblog-presenters__name">Baxter Eaves</span>
+        <a href="https://github.com/BaxterEaves" target="_blank" title="GitHub"><i className="fa fa-github pr-2"></i></a>
       </p>
   </div>
 </div>

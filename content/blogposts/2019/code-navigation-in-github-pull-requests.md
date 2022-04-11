@@ -42,7 +42,7 @@ You'll need to use Sourcegraph because [GitHub's code navigation](https://help.g
 Next, run a Sourcegraph server yourself to use code navigation for your organization's private code (without sending any code to Sourcegraph).
 
 1. Follow the [Sourcegraph `docker run` quickstart guide](http://docs.sourcegraph.com/#quickstart) and add a GitHub external service with your private repositories.
-1. In your browser toolbar, open the Sourcegraph options menu by pressing the Sourcegraph icon (<img src="https://about.sourcegraph.com/sourcegraph-mark.png" width=28 height=28 style="border:0" alt="Sourcegraph icon" />) and set the **Sourcegraph URL** to `http://localhost:7080` (the URL of your Sourcegraph instance).
+1. In your browser toolbar, open the Sourcegraph options menu by pressing the Sourcegraph icon (<img src="https://about.sourcegraph.com/sourcegraph-mark.png" width="28" height="28" style={{border: 0}} alt="Sourcegraph icon" />) and set the **Sourcegraph URL** to `http://localhost:7080` (the URL of your Sourcegraph instance).
 1. Visit a code file or pull request in a GitHub private repository.
    - Using GitHub Enterprise Server? You'll need to [grant permissions on its domain](https://docs.sourcegraph.com/integration/github#browser-extension).
 1. Hover over a symbol and press **Go to definition** or **Find references**.

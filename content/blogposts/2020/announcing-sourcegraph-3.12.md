@@ -15,7 +15,7 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 We're excited to announce Sourcegraph 3.12. In addition to the usual updates, this release includes powerful experimental features. We're looking forward to your feedback!
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**⌨️ Search bar match case toggle**](#search-bar-match-case-toggle)<br />
 
@@ -44,23 +44,23 @@ Sourcegraph couldn't be what it is without the community
 
 ## Search bar match case toggle
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/385925610?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/385925610?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/385925610" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/385925610" target="_blank">View on Vimeo</a></p>
+</div>
 
 Quickly toggle between case sensitive and case insensitive queries using the `Aa` icon in the search field. Previously, this filter was applied by adding `case:yes` to the search query. The toggle simplifies and standardizes this functionality.
 
 ## Create draft campaigns
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/386036051?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/386036051?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/386036051" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/386036051" target="_blank">View on Vimeo</a></p>
+</div>
 
 When rolling out organization-wide changes, it is desirable to review campaigns with your teammates. Campaigns can now be created and saved as drafts prior to publishing the campaign and creating changesets (i.e. pull requests) on your code hosts. Changes can be published individually while in draft mode to verify the change with a subset of owners.
 
@@ -72,23 +72,23 @@ You can now exclude archived repositories from Bitbucket Server using the `archi
 
 ## Download files from code views
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/385925514?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/385925514?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/385925514" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/385925514" target="_blank">View on Vimeo</a></p>
+</div>
 
 Quickly download files from Sourcegraph using the new download icon in the file header.
 
 ## GitHub authentication now supports org membership restriction
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/385925276?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/385925276?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/385925276" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/385925276" target="_blank">View on Vimeo</a></p>
+</div>
 
 Organizations using GitHub for authentication can now limit access to a list of GitHub organizations for enhanced security and configuration. In the site configuration `auth.providers`, find the GitHub section (or add it using the ‘Add GitHub sign-in’ quick config button). Add the new `allowOrgs` setting, and list the organizations whose members should have access to your Sourcegraph instance.
 
@@ -104,12 +104,12 @@ This release contains many exciting new improvements to the Sourcegraph UI, conf
 
 ### Interactive search mode
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/386108600?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/386108600?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/386108600" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/386108600" target="_blank">View on Vimeo</a></p>
+</div>
 
 A new interactive search mode has been added to help users construct queries using UI elements. The new UI components help to narrow down search results as you iterate on your search. The existing plain text search mode and the query builder are still available via the dropdown menu to the left of the search bar.
 

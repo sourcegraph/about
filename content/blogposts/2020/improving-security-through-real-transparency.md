@@ -1,7 +1,7 @@
 ---
 title: "Improving security through real transparency"
 author: Chayim Kirshen
-publishDate: 2020-10-20
+publishDate: 2020-10-20T10:00-07:00
 tags: [blog]
 slug: improving-security-through-transparency
 heroImage: https://sourcegraphstatic.com/blog/transparent-security-tomorrow.png
@@ -26,8 +26,8 @@ At Sourcegraph, we’re starting down the path to Transparent Security.  We’ve
 
 Security should never be focused solely on responsible disclosure and responding in reactive mode. It’s about proactively doing what’s right, to protect data. It’s about professionals working together for the common good. A transparent approach means we’re collaborating on that proactivity with the public, not just the Sourcegraph team. You, dear reader, can help be that value, that second set of eyes! The next step for Sourcegraph is to run ongoing vulnerability scans, and publish them publicly. We’ll begin by doing so after we’ve addressed some of the vulnerabilities, and over time these reports will be provided closer and closer to real time.  We’re in the midst of documenting our security policies, which we will post publicly in our handbook. This is only the beginning.
 
-<div class="text-center">
-  <img src="https://sourcegraphstatic.com/blog/transparent-security-tomorrow.png" alt="transparent security tomorrow, a path.">
+<div className="text-center">
+  <img src="https://sourcegraphstatic.com/blog/transparent-security-tomorrow.png" alt="transparent security tomorrow, a path."/>
 </div>
 
 ## So how can you help?

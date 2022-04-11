@@ -16,7 +16,7 @@ CircleCI 2.0 officially came out of beta in July 2017, introducing a versioned c
 
 Using [Sourcegraph.com](https://sourcegraph.com/) and as an example, [Segment's open source code on GitHub](https://github.com/segmentio), let's search for repositories that contain the 1.0 `circle.yml` file:
 
-<div class="text-center" style="margin-bottom: -1rem">
+<div className="text-center" style={{marginBottom: '-1rem'}}>
 
   Query: [`repo:/segmentio/ file:circle.yml`](https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml).
 
@@ -26,43 +26,37 @@ Using [Sourcegraph.com](https://sourcegraph.com/) and as an example, [Segment's 
   <img src="https://about.sourcegraph.com/blog/circleci-results.png" alt="CircleCi results" />
 </a>
 
-<p style="margin-top:2rem">
+<div style={{marginTop:'2rem'}}>
   Typing this query every time would be inefficient, so let's save this query as a saved search.
   <img src="https://about.sourcegraph.com/blog/circleci-create-saved-search.png" alt="CicleCi create saved search"/>
-</p>
+</div>
 
-<p style="margin-top:2rem">
+<div style={{marginTop:'2rem'}}>
   Then we can access it with a single click.
   <img src="https://about.sourcegraph.com/blog/circleci-access-saved-search.png" alt="CicleCi access saved search"/>
-</p>
-
-<!--
-TODO(ryan): Needs type:diff <p style="margin-top:2rem">
-  We can take this a step further by opting to receive a notification when the number of results for <code>circle.yml</code> files change:
-  <img src="https://about.sourcegraph.com//blog/circleci-saved-search-notification.png" />
-</p> -->
+</div>
 
 ## Bonus queries
 
 If we wanted to find which repositories **have** been upgraded.
 
-<div class="text-center" style="margin-bottom: -1rem">
+<div className="text-center" style={{marginBottom: '-1rem'}}>
 
 Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/search?q=repo:/segmentio/+file:%5C.circleci/config%5C.yml).
 
 </div>
 
-<div class="text-center">
+<div className="text-center">
   <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
     <img src="https://about.sourcegraph.com/blog/circleci-results.png" alt="CircleCi results"/>
   </a>
 </div>
 
-<p style="margin-top:2rem">
+<div tyle={{marginTop:'2rem'}}>
   Using Sourcegraph's diff search (<code>type: diff</code>), we can find who made the commit that contained the upgrade.
-</p>
+</div>
 
-<div class="text-center" style="margin-bottom: -1rem">
+<div className="text-center" style={{marginBottom: '-1rem'}}>
 
   Query: [`repo:/segmentio/ file:\.circleci/config\.yml type:diff "version: 2"`](https://sourcegraph.com/search?q=repo:/segmentio/+file:%5C.circleci/config%5C.yml+type:diff+%22version:+2%22).
 
@@ -79,6 +73,8 @@ Sourcegraph helps you find answers in code, supporting 10,000+ repositories and 
 Although this example was specific to CircleCI config files, the concepts apply equally well for many other similar use cases, such as tracking the removal of a deprecated Node.js package.
 
 <style>
+{`
   .blog-post__body img { border: none; }
   .blog-post__body code { font-size: 0.9rem; }
+`}
 </style>

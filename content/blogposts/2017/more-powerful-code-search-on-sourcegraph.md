@@ -17,7 +17,7 @@ For example, **repo:foo** will restrict your query to repositories whose name co
 Search scopes make it easier to quickly search only among the code you care about, such as all JavaScript files or only non-vendored code.
 
 <div>
-    <img class="pa1 ba b--light-7" src="//images.contentful.com/le3mxztn6yoo/Fko76K31Ic6q0KC8IKEue/7e0dff2bb462e5cc4d60d1e5a3a3505d/search-demo.gif" alt="Search scopes demo, a more powerful code search on Sourcegraph"/>
+    <img className="pa1 ba b--light-7" src="//images.contentful.com/le3mxztn6yoo/Fko76K31Ic6q0KC8IKEue/7e0dff2bb462e5cc4d60d1e5a3a3505d/search-demo.gif" alt="Search scopes demo, a more powerful code search on Sourcegraph"/>
 </div>
 
 Try it out at [sourcegraph.com/search](https://sourcegraph.com/search) or on a [self-hosted Sourcegraph instance](https://docs.sourcegraph.com/#quickstart) now.
@@ -28,7 +28,7 @@ As you continue using it, you can express your query more quickly by using the o
 
 * Search non-vendored files for “open file”: [**repogroup:sample -file:vendor/ -file:node_modules/ open file**](https://sourcegraph.com/search?q=open+file&sq=repogroup:sample+-file:vendor/+-file:node_modules/)
 * Search repositories named “mux” in test files for “new route”: [**repogroup:sample file:(test|spec) repo:mux new route**](https://sourcegraph.com/search?q=repo:mux+new+route&sq=repogroup:sample+file:%28test%7Cspec%29)
-* Search for occurrences of “partial<” in TypeScript files: [**repogroup:sample file:\.ts$ partial<**](https://sourcegraph.com/search?q=file:%5C.ts+partial%3C&sq=repogroup:sample)
+* Search for occurrences of `partial<` in TypeScript files: [**`repogroup:sample file:\.ts$ partial<`**](https://sourcegraph.com/search?q=file:%5C.ts+partial%3C&sq=repogroup:sample)
 
 Let us know what you think on Twitter ([@sourcegraph](https://twitter.com/sourcegraph)). To get advanced code search for your company’s code, [install Sourcegraph](https://docs.sourcegraph.com).
 

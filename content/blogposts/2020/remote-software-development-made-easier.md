@@ -12,4 +12,4 @@ description: "Sourcegraph transitioned from remote-first to all-remote early 202
 
 Sourcegraph transitioned from remote-first to all-remote early 2020. In this white paper, we share some tips and tricks on how to live your best distributed work life and a summary of why using Sourcegraph makes remote software development easier.
 
-<a href="/white-papers/remote-work-easier" class="btn btn-primary mt-4">Learn more</a>
+<a href="/white-papers/remote-work-easier" className="btn btn-primary mt-4">Learn more</a>

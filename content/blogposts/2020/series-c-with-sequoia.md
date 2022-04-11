@@ -14,7 +14,7 @@ description: "Today we're announcing Sourcegraph's $50M Series C round of fundin
 
 At [Sourcegraph](https://about.sourcegraph.com), we bring universal code search to every developer and company so they can innovate faster. Our product helps [customers](https://about.sourcegraph.com/customers) such as Amazon, Atlassian, Lyft, PayPal, Uber, and Yelp create the software you use every day. Today we're announcing a [$50M Series C round of funding](https://about.sourcegraph.com/press-release/sourcegraph-secures-series-c-sequoia/) led by Sequoia. [Andrew Reed](https://twitter.com/andrew__reed) from Sequoia will join our board. All major existing investors (Goldcrest, Craft, Redpoint, and Felicis) also participated.
 
-<img src="https://about.sourcegraph.com/blog/sourcegraph-social-img.png" alt="Sourcegraph raises $50M Series C round led by Sequoia">
+<img src="https://about.sourcegraph.com/blog/sourcegraph-social-img.png" alt="Sourcegraph raises $50M Series C round led by Sequoia"/>
 
 ## Why raise? How will this $50M help developers?
 

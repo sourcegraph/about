@@ -28,10 +28,10 @@ As part of his drive to make typing more efficient, ThePrimeagen uses the Dvorak
 ThePrimeagen is known for his Vim mastery, which he demonstrates on stream with speed and smoothness. His approach isn't driven purely by speed or efficiency, though. As much as possible, ThePrimeagen tries to reduce thinking about steps he shouldn't have to think about, such as which keybinding will take him to the window with his terminal (Mod+3) or to his always-open [GIMP](https://www.gimp.org/) window (Mod+6).
 
 <figure>
-    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/navigating.mp4" data-cookieconsent="ignore"></video>
     </div>
-    <figcaption style="text-align: center; font-style: italic;">Watch ThePrimeagen demonstrate his setup for navigating windows consistently</figcaption>
+    <figcaption style={{textAlign:'center', fontStyle: 'italic'}}>Watch ThePrimeagen demonstrate his setup for navigating windows consistently</figcaption>
 </figure>
 
 By consistently organizing keybindings for actions, and building muscle memory, ThePrimeagen cuts down on the small pauses needed to figure out how to perform the next intended action. This approach carries through to his main text editor, [Neovim](https://neovim.io/), for which he, and his co-contributors, built [Harpoon](https://github.com/ThePrimeagen/harpoon), a plugin for file and terminal navigation.
@@ -39,10 +39,10 @@ By consistently organizing keybindings for actions, and building muscle memory, 
 Configuration is personal, though, and while ThePrimeagen's [dotfiles](https://github.com/ThePrimeagen/.dotfiles) are a source of inspiration for many, his own keybindings and preferences are optimized for him. Others might need to take different approaches, or fine-tune the same combination of core apps (i3, tmux, and Neovim) differently. Following ThePrimeagen's approach is about finding problematically complex aspects of your current setup, even if that complexity comes from seemingly ergonomic approaches like mnemonics, and simplifying in a way that works with your own mental model and habits.
 
 <figure>
-    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/thinking.mp4" data-cookieconsent="ignore"></video>
     </div>
-    <figcaption style="text-align: center; font-style: italic;">Listen to ThePrimeagen discuss the importance of reducing complexity to reduce unnecessary thinking</figcaption>
+    <figcaption style={{textAlign:'center', fontStyle: 'italic'}}>Listen to ThePrimeagen discuss the importance of reducing complexity to reduce unnecessary thinking</figcaption>
 </figure>
 
 ## `git worktree` so you don't have to `git stash`
@@ -50,10 +50,10 @@ Configuration is personal, though, and while ThePrimeagen's [dotfiles](https://g
 Reducing cognitive overhead is as much about taking advantage of existing tools and workflows as it is extensive configuration. One of ThePrimagen's examples of this is his relatively recent switch to using Git worktrees, which allow you to concurrently checkout multiple branches of a repository. Rather than going through the steps of stashing changes, switching branches, and later on figuring out what to pop, worktrees are an interface to a simpler model of navigating branches.
 
 <figure>
-    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/worktree.mp4" data-cookieconsent="ignore"></video>
     </div>
-    <figcaption style="text-align: center; font-style: italic;">Watch ThePrimeagen demonstrate one of his favorite Git features: worktrees</figcaption>
+    <figcaption style={{textAlign:'center', fontStyle: 'italic'}}>Watch ThePrimeagen demonstrate one of his favorite Git features: worktrees</figcaption>
 </figure>
 
 ## Even milliseconds matter (to ThePrimeagen)
@@ -61,10 +61,10 @@ Reducing cognitive overhead is as much about taking advantage of existing tools 
 In his VimConf 2020 talk, ["Vim Speed and Excellence"](https://www.youtube.com/watch?v=tCktGgPQ3D0&list=PLcTu2VkAIIWzD2kicFNHN2c35XQCeZdsv), ThePrimeagen examines the ways that using particular commands in Vim can be faster or slower for himself and, by extension, for other individuals. It comes down to milliseconds of gain, but that's worth it for someone who is perpetually evolving a development environment for speed, efficiency, and unobtrusiveness. ThePrimeagen thinks a lot about his setup sometimes, so that the rest of the time, when he's using it, he doesn't really have to think about it at all. Instead, he just codes.
 
 <figure>
-    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/primeagen/milliseconds.mp4" data-cookieconsent="ignore"></video>
     </div>
-    <figcaption style="text-align: center; font-style: italic;">Listen to ThePrimeagen's deep dive on Vim keybindings and time</figcaption>
+    <figcaption style={{textAlign:'center', fontStyle: 'italic'}}>Listen to ThePrimeagen's deep dive on Vim keybindings and time</figcaption>
 </figure>
 
 ## Show notes
@@ -101,6 +101,6 @@ In his VimConf 2020 talk, ["Vim Speed and Excellence"](https://www.youtube.com/w
 
 Check out the recording of the episode below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/GXxvxSlzJdI?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/GXxvxSlzJdI?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>

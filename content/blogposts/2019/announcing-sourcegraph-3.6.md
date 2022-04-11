@@ -13,7 +13,7 @@ description: 'Sourcegraph 3.6: Bitbucket Server plugin, search performance impro
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🌎 Native code intelligence with Sourcegraph Bitbucket Server plugin**](#native-code-intelligence-with-sourcegraph-bitbucket-server-plugin)<br />
 
@@ -39,12 +39,12 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 ## Native code intelligence with Sourcegraph Bitbucket Server plugin
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/350033114?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/350033114?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/350033114" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/350033114" target="_blank">View on Vimeo</a></p>
+</div>
 
 The [Sourcegraph for Bitbucket Server plugin](https://github.com/sourcegraph/bitbucket-server-plugin) is now available for installation on Bitbucket Server instances to provide native code intelligence automatically. Code intelligence, previously available only through the browser extension, includes hovers, tooltips, go to definition, and custom line decorations when browsing and reviewing code on Bitbucket Server instances.
 
@@ -61,12 +61,12 @@ We have improved our search algorithm's performance and reduced peak memory usag
 
 ## New customizable quick links for frequently used code searches or other URLs
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/349147319?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/349147319?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/349147319" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/349147319" target="_blank">View on Vimeo</a></p>
+</div>
 
 [Quick links](https://docs.sourcegraph.com/getting-started/personalization/quick_links) can now be added below the search bar on the home and search results pages. They can be used for quickly accessing frequently used URLs such as a code search, main repository, or external resources like your CI system or team documentation.
 
@@ -98,23 +98,23 @@ Quick links can be defined at the global, organization, and user level using the
 
 ## New repository syncing support for Bitbucket Cloud
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/349145191?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/349145191?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/349145191" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/349145191" target="_blank">View on Vimeo</a></p>
+</div>
 
 Sourcegraph 3.6 now supports repository syncing for [Bitbucket Cloud](https://docs.sourcegraph.com/admin/external_service/bitbucket_cloud). In this initial release, all repositories accessible by the token for the user (including from teams listed in the config) will be synced. Support for excluding repositories and for adding public repositories is coming in a future version.
 
 ## Improved repository syncing progress UI
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/343706613?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/343706613?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/343706613" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/343706613" target="_blank">View on Vimeo</a></p>
+</div>
 
 Applying an external service configuration change is now done in the background upon saving, with progress information available to admins by clicking the syncing status indicator on the global navigation bar.
 

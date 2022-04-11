@@ -14,7 +14,7 @@ published: true
 
 Sign up to get instant access to code navigation and intelligence across your team’s private code and 2M open source repositories. Sourcegraph Cloud for teams brings enterprise advantages to small teams. Not ready to bring your team along? You can use [Sourcegraph.com](https://sourcegraph.com) to search your personal repos and the open source universe today.
 
-<p style="text-align: center">
+<p style={{textAlign: 'center'}}>
     <a href="https://about.sourcegraph.com/cloud-beta/?&utm_medium=direct-traffic&utm_source=blog&utm_content=cloud-product-beta-teams">
         Sign up for private beta access
     </a>
@@ -57,8 +57,8 @@ We know from talking with hundreds of developers that devs spend more time readi
 
 Sourcegraph Cloud provides a way to traverse your entire codebase so you can quickly get up to speed on new code or work through refactors. With Sourcegraph code search, you can jump to definition, find references, and code coverage annotations. This helps teams get up to speed on new code, and it also helps for onboarding new devs to your codebase.
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://storage.googleapis.com/sourcegraph-assets/blog/cloud-for-teams/Find-Refs-Example.mp4" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <iframe className="embed-responsive-item" src="https://storage.googleapis.com/sourcegraph-assets/blog/cloud-for-teams/Find-Refs-Example.mp4" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>
 
 For small teams who are growing quickly, Sourcegraph helps orient developers to new code faster.

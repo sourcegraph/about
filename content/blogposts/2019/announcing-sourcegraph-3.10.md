@@ -11,7 +11,7 @@ description: "Sourcegraph 3.10: Improved search autocompletion, native GitLab in
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🔬 Improved autocompletion for search query filters**](#improved-autocompletion-for-search-query-filters)<br />
 
@@ -37,23 +37,23 @@ Sourcegraph couldn't be what it is without the community.
 
 ## Improved autocompletion for search query filters
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/374329715?color=0CB6F4&title=0&byline=&loop=1&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/374329715?color=0CB6F4&title=0&byline=&loop=1&autoplay=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/374329715" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/374329715" target="_blank">View on Vimeo</a></p>
+</div>
 
 Autocomplete suggestions make it easier to use filters in your Sourcegraph searches. Use `ctrl-space` to trigger suggestions for filters you can apply to your query. As you type, the suggestions become more relevant, helping you to apply correct filter options or autocomplete repository or file names.
 
 ## Sourcegraph provides native code intelligence to GitLab
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/372226334?color=0CB6F4&title=&byline=&loop=1&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/372226334?color=0CB6F4&title=&byline=&loop=1&autoplay=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/372226334/de668e24fa" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/372226334/de668e24fa" target="_blank">View on Vimeo</a></p>
+</div>
 
 Sourcegraph users use the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension) to take advantage of go-to-definition and find references on their code hosts. GitLab recognizes the value this brings to developer productivity and has partnered with Sourcegraph to provide this functionality natively to all GitLab users. Read our [feature announcement](https://about.sourcegraph.com/blog/gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence) and [GitLab’s post](https://about.gitlab.com/blog/2019/11/12/sourcegraph-code-intelligence-integration-for-gitlab/) about collaborating in the open.
 
@@ -63,12 +63,12 @@ Users with private GitLab instances or repositories can enable Sourcegraph code 
 
 ## Create cross-repository search and replace campaigns
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/374473021?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/374473021?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/374473021" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/374473021" target="_blank">View on Vimeo</a></p>
+</div>
 
 Sourcegraph now supports creating and tracking code-aware search and replace campaigns on GitHub and Bitbucket Server. When running a search and replace campaign, you can preview the changes across repositories and then generate the corresponding pull requests on your GitHub and Bitbucket Server instances. Once created, you can track the PRs to completion in a burndown chart.
 
@@ -88,16 +88,6 @@ Code change management campaigns are in private beta. [Watch the campaigns scree
 
 ## Precise LSIF-based code intelligence for 5 languages
 
-<!--
-Video will be added later, not essential for release post, but important in its own right
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/{ID}?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-  <p style="text-align: center"><a href="https://vimeo.com/{ID}" target="_blank">View on Vimeo</a></p>
-</p>
--->
-
 With the completion of the Java LSIF indexer, LSIF-based precise code intelligence now supports five languages: Go, Typescript, Java, C++, and Python. See [lsif.dev](https://lsif.dev/) for the most up-to-date information on the list of languages with LSIF indexers.
 
 We are looking for feedback from project owners interested in trying out precise code intelligence! Use our new [LSIF quickstart guide](https://docs.sourcegraph.com/code_intelligence/lsif_quickstart) to try it out manually before adding it as a step in your CI.
@@ -108,11 +98,11 @@ Customers wanting better indexed search performance or wishing to add many more 
 
 The Kubernetes [deployment manifest](https://github.com/sourcegraph/deploy-sourcegraph) for indexed-search services has changed from a Normal Service to a Headless Service. This enables Sourcegraph to individually resolve indexed-search pods. Services are immutable, so a [migration is required](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310).
 
-<div class="alert alert-warning">
-  <p>
+<div className="alert alert-warning mx-auto" style={{width: '40rem'}}>
+  <div>
     <strong>IMPORTANT: required migration for all Kubernetes deployments.</strong>
     Please see the <a href="https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310">3.10 migration guide</a> for details.
-  </p>
+  </div>
 </div>
 
 ## Fully automated release testing process

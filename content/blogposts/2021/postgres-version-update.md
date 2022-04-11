@@ -132,8 +132,8 @@ We are unable to utilize a statement-level trigger approach in Postgres 9.6 as s
 
 So how bad would this approach be?
 
-<div class="no-shadow">
-  <img src="https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update-latency.png" alt="performance comparison">
+<div className="no-shadow">
+  <img src="https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update-latency.png" alt="performance comparison"/>
 </div>
 
 Turns out it's pretty bad. Inserting 800k rows into the database with statement-level triggers takes under a minute (on a non-production test machine). Using row-level triggers the same operation takes over an hour.
@@ -145,6 +145,8 @@ In order to enable us to continue to scale and improve the performance of your S
 Once you plan to upgrade to Sourcegraph 3.27, you must first ensure that your database meets the new minimum version requirement of Postgres 12. See the [following instructions](https://docs.sourcegraph.com/admin/postgres#upgrading-postgresql) for a step-by-step guide.
 
 <style>
+{`
   .blog-post__html .no-shadow img { box-shadow: none; }
   .blog-post__html .inline-images img { margin-left: 0; margin-right: 0; padding: 0; border: 0; display: inline; width: 49.5% }
+`}
 </style>

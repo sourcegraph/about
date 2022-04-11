@@ -10,7 +10,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/7MLYQeQ1TGcumqgUmuY2mY/18d5
 published: true
 ---
 
-[Francesc de Campoy Flores (@francesc)](https://twitter.com/francesc) is VP of Developer Relations at source{d}. Previously, he was a developer and advocate at Google for Go and Google Cloud. He also runs the popular video series [#justforfunc](https://github.com/campoy/justforfunc#justforfunc).
+[Francesc de Campoy Flores (@francesc)](https://twitter.com/francesc) is VP of Developer Relations at `source{d}`. Previously, he was a developer and advocate at Google for Go and Google Cloud. He also runs the popular video series [#justforfunc](https://github.com/campoy/justforfunc#justforfunc).
 
 All the cool kids are doing machine learning, but they're doing it in Python. Can we change that? Can we solve ML problems in Go? What are the libraries out there? Is it fast enough? Follow Francesc on a trip that will take us from machine learning and matrix multiplication, through TensorFlow and Python, to finish with Go and cgo on the GPU.
 

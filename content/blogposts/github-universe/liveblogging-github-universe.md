@@ -27,7 +27,7 @@ For those of you lucky enough to be at the conference, stop by and say hello! Lo
 
 So stay tuned for a fantastic conference with some great new tools and processes for software development. Or in the words of Steve Ballmer, “Developers! Developers! Developers! Developers!”
 
-<div class="text-center"><iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/Vhh_GeBPOhs" frameborder="0" allowfullscreen></iframe></div>
+<div className="text-center"><iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/Vhh_GeBPOhs"frameBorder="0"allowFullScreen></iframe></div>
 
 Developers, I say!
 

@@ -89,11 +89,11 @@ If you’re interested in using Thyme to investigate your own productivity, you 
 
 The Thyme tracker snapshots all open windows on your computer at a a given point in time. You can have it output this information to a file. It’s like a sampling profiler, but instead of CPU time and processes, it looks at human time and open application windows. You can make it run every 30 seconds like this:
 
-<pre name="a5ed" id="a5ed" class="graf graf--pre graf-after--p">$ watch -n 30 thyme track -o thyme.json</pre>
+<pre name="a5ed" id="a5ed" className="graf graf--pre graf-after--p">$ watch -n 30 thyme track -o thyme.json</pre>
 
 The Thyme data explorer reads data from the tracker output file and shows a single page with interactive charts. You run it with a single command, too:
 
-<pre name="3364" id="3364" class="graf graf--pre graf-after--p">$ thyme show -i thyme.json -w stats > thyme.html</pre>
+<pre name="3364" id="3364" className="graf graf--pre graf-after--p">$ thyme show -i thyme.json -w stats > thyme.html</pre>
 
 Then just open **thyme.html** in your favorite web browser and voila, you get the pretty charts you see above.
 

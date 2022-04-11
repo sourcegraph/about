@@ -2,7 +2,7 @@
 title: "What happens when a successful product gets its first design team..."
 author: Alicja Suska
 authorUrl: https://alicjasuska.com
-publishDate: 2020-09-17
+publishDate: 2020-09-17T00:00-07:00
 tags: [blog]
 slug: what-happens-when-a-successful-product-gets-its-first-design-team
 heroImage: https://sourcegraphstatic.com/design-component-system.png
@@ -30,8 +30,8 @@ You can visit our [handbook](https://handbook.sourcegraph.com/product/goals) to 
 
 It is also a good time to think about long term efforts. As Sourcegraph was growing really fast, thanks to the constant innovation and lean approach to development, some areas of the product lost their initial design coherence. It is a natural process for startups to generate some design debt over time. Our new design team is planning to focus on improving the consistency and reducing the design debt over the course of the next 6-8 months.
 
-<div class="text-center">
-  <img src="https://sourcegraphstatic.com/design-debt.png" width="70%" alt="Design debt illustration">
+<div className="text-center">
+  <img src="https://sourcegraphstatic.com/design-debt.png" width="70%" alt="Design debt illustration"/>
 </div>
 
 ## Why is it important?
@@ -46,16 +46,16 @@ In the next few paragraphs, I will walk you through the changes that we have int
 
 We started by mapping the current information architecture of Sourcegraph. It gave us the perspective that we needed - a 10,000-feet view of the experience. From here, we could start identifying improvements.
 
-<div class="text-center">
-  <img src="https://sourcegraphstatic.com/design-architecture.png" width="70%" alt="Information Architecture Diagram illustration">
+<div className="text-center">
+  <img src="https://sourcegraphstatic.com/design-architecture.png" width="70%" alt="Information Architecture Diagram illustration"/>
 </div>
 
 Not all changes should be made within one iteration. It is important to identify the most impactful ones and target elements that are the most visible for the users first. Navigation patterns were a great candidate - they have an impact on all our users and influence the structure of many pages.
 
 We have introduced **new headers** that maintain consistent structure on all the pages. In addition, we have added **breadcrumbs** for better context and easier navigation.
 
-<div class="text-center">
-  <img src="https://sourcegraphstatic.com/design-header.png" width="70%" alt="New header illustration">
+<div className="text-center">
+  <img src="https://sourcegraphstatic.com/design-header.png" width="70%" alt="New header illustration"/>
 </div>
 
 ## Build and start using the component system
@@ -72,14 +72,14 @@ In order to change it, we started by listing all the components that needed to b
 
 We have also introduced some improvements to our flow to help us keep the consistency we have achieved so far. We have added the [Figma add-on](https://www.figma.com/resources/extensions-and-apis/storybook-figma-addon/) to our Storybook. This way, both design, and implementation are visible next to each other and are easy to compare.
 
-<div class="text-center">
-  <img src="https://sourcegraphstatic.com/design-figma-storybook.png" width="70%" alt="Figma design in Storybook">
+<div className="text-center">
+  <img src="https://sourcegraphstatic.com/design-figma-storybook.png" width="70%" alt="Figma design in Storybook"/>
 </div>
 
 In addition, we started using [Chromatic](https://www.chromatic.com/). This tool helps us gather feedback about changes to Storybook and makes the review process easier. From now on, a Chromatic PR review is an integral process of approving all Storybook-oriented PRs.
 
-<div class="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/design-storybook.png" width="70%" alt="Chromatic PR review process">
+<div className="text-center benchmark-results">
+  <img src="https://sourcegraphstatic.com/design-storybook.png" width="70%" alt="Chromatic PR review process"/>
 </div>
 
 ### Make design components more flexible
@@ -88,8 +88,8 @@ To work more efficiently, we needed to create reusable components that provide a
 
 Headers described earlier, are a great example of an editable component we have created in Figma. Designers can edit elements like page titles, breadcrumbs, or buttons. Every instance is linked to the parent component and is automatically updated if its styles change. In addition, each design component is created in two variants - for light and dark themes. Thanks to using the consistent naming convention of .../light and .../dark, it is easy to switch between the modes. It is also worth mentioning that color names in Figma are aligned with CSS variables used by our developers. It makes the design handoff process easier and prevents us from using colors from outside of our pallet.
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/azrbGVShQis?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/azrbGVShQis?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>
 
 See this design in [Figma](https://www.figma.com/file/iQIlSvEBuVz1jXTGjRVNeE/Header-editable-component-example-Sourcegraph?node-id=0%3A1)
@@ -100,8 +100,8 @@ To keep our design system up-to-date we have set up a review and [approval proce
 
 A most recent example of the change that was proposed using this process is an update of our outline buttons and button groups. See the [proposal](https://www.figma.com/file/iQIlSvEBuVz1jXTGjRVNeE/Header-example-article-Alicja?node-id=6%3A65) and the [pull request](https://github.com/sourcegraph/sourcegraph/issues/12982) for more details.
 
-<div class="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/design-component-system.png" width="70%" alt="Brand new component system illustration">
+<div className="text-center benchmark-results">
+  <img src="https://sourcegraphstatic.com/design-component-system.png" width="70%" alt="Brand new component system illustration"/>
 </div>
 
 ## What’s next?

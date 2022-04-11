@@ -16,7 +16,7 @@ At Sourcegraph, we have a small team working hard on a new experimental feature:
 In order to build awesome code search we've built a global graph of code that has a deep, semantic understanding of the underlying code—which we represent as [LSIF code intelligence data](https://lsif.dev). Using Sourcegraph's LSIF code intelligence data, we can analyze your code and generate API documentation for all of it. We've started with Go code and intend to expand to more languages as we develop this feature.
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/api-docs/api-docs.png" alt="Sourcegraph's new API docs feature">
+  <img src="https://sourcegraphstatic.com/blog/api-docs/api-docs.png" alt="Sourcegraph's new API docs feature"/>
   <figcaption>API docs generated for the Go encoding/json package</figcaption>
 </figure>
 
@@ -43,12 +43,12 @@ Want to try it out on your own Go repositories? Tweet [@sourcegraph](https://twi
 The most important announcement here is that API docs is now an on-by-default experiment for everyone! You can begin trying it out on Sourcegraph.com as well as your own Sourcegraph instance.
 
 <figure>
-  <img height="200px" src="https://sourcegraphstatic.com/blog/api-docs/api-docs-button.png" alt="The new API Docs button on repository pages">
+  <img height="200px" src="https://sourcegraphstatic.com/blog/api-docs/api-docs-button.png" alt="The new API Docs button on repository pages"/>
   <figcaption>Use the API docs button on any repository page to access API docs</figcaption>
 </figure>
 
 <figure>
-  <img height="80px" src="https://sourcegraphstatic.com/blog/api-docs/welcome-prompt.png" alt="The new welcome prompt describing how to use API docs">
+  <img height="80px" src="https://sourcegraphstatic.com/blog/api-docs/welcome-prompt.png" alt="The new welcome prompt describing how to use API docs"/>
   <figcaption>Once you click it, you'll be greeted with information about how to get started</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ The most important announcement here is that API docs is now an on-by-default ex
 API docs is built on code intelligence data, so it has a deep semantic understanding of symbols, their type information, whether they're deprecated, a function, variable, interface, etc., and the UI now communicates this information using icons:
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/api-docs/symbols.gif" alt="A structured tree of symbols with type information to navigate a Go package">
+  <img src="https://sourcegraphstatic.com/blog/api-docs/symbols.gif" alt="A structured tree of symbols with type information to navigate a Go package"/>
   <figcaption>A structured tree of symbols with type information to navigate a Go package's documentation</figcaption>
 </figure>
 
@@ -70,12 +70,12 @@ At Sourcegraph, we use primarily Go and TypeScript—so we're starting by buildi
 One way we've enabled this is by allowing LSIF language indexers to emit data in the way they see fit. Sourcegraph merely renders it, indexes it, and adds a nice navigation experience.
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/api-docs/url-hash-displays.gif" alt="Browser URL bar showing a URL and hash designed specifically for the Go language">
+  <img src="https://sourcegraphstatic.com/blog/api-docs/url-hash-displays.gif" alt="Browser URL bar showing a URL and hash designed specifically for the Go language"/>
   <figcaption>The Go LSIF indexer chooses to display URL hashes in a way that makes sense specifically for Go, with a `Receiver.Method` format</figcaption>
 </figure>
 
 <figure>
-  <img height="400px" src="https://sourcegraphstatic.com/blog/api-docs/symbol-types.gif" alt="Hovering over symbols and showing Sourcegraph's deep semantic understanding of type information">
+  <img height="400px" src="https://sourcegraphstatic.com/blog/api-docs/symbol-types.gif" alt="Hovering over symbols and showing Sourcegraph's deep semantic understanding of type information"/>
   <figcaption>Soon it will be possible to search and filter using Sourcegraph's deep semantic understanding of type information</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ API docs is still very early in development, so we're making it as easy as possi
 We've also made it possible to submit feedback on the API docs pages themselves,and you can also send feedback to us via Twitter [@sourcegraph](https://twitter.com/sourcegraph).
 
 <figure>
-  <img height="400px" src="https://sourcegraphstatic.com/blog/api-docs/feedback-widget.png" alt="The new feedback widget with various emojis">
+  <img height="400px" src="https://sourcegraphstatic.com/blog/api-docs/feedback-widget.png" alt="The new feedback widget with various emojis"/>
   <figcaption>Use the feedback widget on API docs pages, or directly email feedback to us!</figcaption>
 </figure>
 
@@ -97,6 +97,7 @@ We've also made it possible to submit feedback on the API docs pages themselves,
 _Special thanks to [Rebecca Dodd](https://handbook.sourcegraph.com/company/team#rebecca-dodd) and [Erica Lindberg](https://handbook.sourcegraph.com/company/team#erica-lindberg) for their help with the content of this article, and [Jean du Plessis](https://handbook.sourcegraph.com/company/team#jean-du-plessis) and the rest of the team for their assistance and feedback on API docs._
 
 <style>
+{`
   figure .no-shadow { box-shadow: none; }
   .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
 
@@ -104,5 +105,5 @@ _Special thanks to [Rebecca Dodd](https://handbook.sourcegraph.com/company/team#
     text-align: center;
     margin-top: -2rem;
     font-style: italic;
-  }
+  }`}
 </style>

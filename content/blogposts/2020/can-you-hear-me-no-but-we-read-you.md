@@ -2,7 +2,7 @@
 title: "Can you hear me? No, but we read you—an experiment with video calls"
 author: Quinn Keast
 authorUrl: https://twitter.com/quinnkeast
-publishDate: 2020-10-29
+publishDate: 2020-10-29T00:00-07:00
 tags: [blog]
 slug: can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls
 heroImage: /blog/silent-team-call.jpg
@@ -32,7 +32,7 @@ Our team has been growing quickly, expanding from just a single product manager 
 
 When we held our next product team sync, the whole team joined sans audio. We would all depend only on captions to follow the conversation.
 
-<blockquote style="border-left: 2px solid #F96216;">
+<blockquote style={{borderLeft: '2px solid #F96216'}}>
 <p><strong>A quick caution</strong></p>
 <p>Most exercises to simulate the experience of living with a disability aren’t effective—or even a good idea—because they can never truly simulate what it’s like to live day-by-day, and can leave folks with a mistaken idea of the experience.</p>
 <p>But this idea was compelling because the unique nature of the hacky setup I’m using means that it’s not about <em>ability</em>, it’s about <em>technology</em>. It wasn’t about learning what it’s like to do video calls with a hearing problem: it was about learning what it’s like to rely on captions for video calls.</p>
@@ -74,7 +74,7 @@ Even sentence structure has changed: others have started to say names at the beg
 
 Most compelling of all, many members of the team are now using captions on calls themselves—not because they need them, but to keep an eye on how what they’re saying is being received by others on the call who might be relying on them.
 
-<blockquote style="border-left: 2px solid #00B4F2;">
+<blockquote style={{borderLeft: '2px solid #00B4F2'}}>
 <p>Another member of our team shared a wonderful story of their own after reading this article:</p>
 <p><em>Incidentally, we did something almost exactly like this on my previous team! I hired an excellent engineer who was hard of hearing, and we were using Meet for captioning. After some hiccups and realizing that we had left that engineer behind a couple of times, we all decided to turn on captioning and to pay attention to it.</em></p>
 <p><em>It was great for giving us an idea of what our teammate was experiencing, but the most important thing was that it gave us a chance to correct ourselves when we “misspoke”—when the captioning said something other than what we'd intended. This way, we avoided putting the burden of deciphering onto the engineer who relied on the captions.</em></p>
@@ -88,9 +88,9 @@ While my own hearing loss is permanent, someone dealing with situational challen
 
 Our team is working on universal code search for developers. Universal code search, to us, means creating inclusive experiences from the beginning, and always working to improve our baseline for accessibility.
 
-<p style="padding: .75rem 1.25rem; margin-top: 2rem; background-color: #f2f4f8; border-radius: 8px; line-height: 1.5;"><strong>If we can do more to support how you   use Sourcegraph, <a href="https://airtable.com/shr2JxrSfqFcySukF?prefill_Source=Blog+post+about+silent+team+call" target="_blank">please get in touch</a>!</strong> We’d love to talk with you to learn how we can do better.</p>
+<p style={{padding: '.75rem 1.25rem', marginTop: '2rem', backgroundColor: '#f2f4f8', borderRadius: '8px', lineHeight: '1.5'}}><strong>If we can do more to support how you   use Sourcegraph, <a href="https://airtable.com/shr2JxrSfqFcySukF?prefill_Source=Blog+post+about+silent+team+call" target="_blank">please get in touch</a>!</strong> We’d love to talk with you to learn how we can do better.</p>
 
-<p class="text-center" style="color: #00B4F2; margin-top: 3rem; margin-bottom: 1.5rem;" aria-hidden="true">• • •</p>
+<p className="text-center" style={{color: '#00B4F2', marginTop: '3rem', marginBottom: '1.5rem'}} aria-hidden="true">• • •</p>
 
 **Bonus panel**
 

@@ -13,7 +13,7 @@ description: "Sourcegraph 3.13: Interactive search mode, structural search toggl
 
 Quickly explore and better understand all the code everywhere with Sourcegraph Universal Code Search. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🔎 Interactive search mode**](#interactive-search-mode)<br />
 
@@ -51,12 +51,12 @@ Sourcegraph couldn't be what it is without the community
 
 ## Interactive search mode
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/392614914?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/392614914?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/392614914" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/392614914" target="_blank">View on Vimeo</a></p>
+</div>
 
 Interactive search mode helps users construct queries using UI elements, and is now enabled by default for all users. In this mode, search filters are more discoverable and the query input is simplified to the search query pattern. A dropdown to the left of the search bar allows users to switch between interactive and plain text modes.
 
@@ -64,23 +64,23 @@ The option to use interactive search mode can be disabled by adding `{ "experime
 
 ## Code-aware structural search toggle
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/392724955?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/392724955?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/392724955" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/392724955" target="_blank">View on Vimeo</a></p>
+</div>
 
-Sourcegraph 3.13 adds a UI toggle <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius: 2px; fill:#2b2b2b; background:#cbd4e2" width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> for structural search, a code-aware search syntax. Structural search was introduced in Sourcegraph 3.11 and was previously enabled using the `patternType:structural` query parameter. When enabled, the regexp and case sensitivity toggles will be disabled, since the search types work independently. Structural code search lets you match nested expressions and whole code blocks that can be difficult or awkward to match using regular expressions. Read more about structural search and see examples in our recent blog post ["Going beyond regular expressions with structural code search"](https://about.sourcegraph.com/blog/going-beyond-regular-expressions-with-structural-code-search).
+Sourcegraph 3.13 adds a UI toggle <svg className="mdi-icon " style={{border:'1px solid #2f9cf1', borderRadius:'2px', fill: '#2b2b2b', background: '#cbd4e2'}} width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> for structural search, a code-aware search syntax. Structural search was introduced in Sourcegraph 3.11 and was previously enabled using the `patternType:structural` query parameter. When enabled, the regexp and case sensitivity toggles will be disabled, since the search types work independently. Structural code search lets you match nested expressions and whole code blocks that can be difficult or awkward to match using regular expressions. Read more about structural search and see examples in our recent blog post ["Going beyond regular expressions with structural code search"](https://about.sourcegraph.com/blog/going-beyond-regular-expressions-with-structural-code-search).
 
 ## Campaigns with custom code execution using `src-cli`
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/390882141?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/390882141?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/390882141" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/390882141" target="_blank">View on Vimeo</a></p>
+</div>
 
 Sourcegraph campaigns now support running arbitrary code over all your repositories using the [Sourcegraph CLI](https://github.com/sourcegraph/src-cli). This is helpful when you need to run a series of steps over your code, or run a formatter after making an update.
 
@@ -112,23 +112,23 @@ With the addition of GraphQL, Groovy, Objective-C, Pascal, Protobufs, Verilog, a
 
 ## LSIF-based precise code intelligence for Dart
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/392760161?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/392760161?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/392760161" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/392760161" target="_blank">View on Vimeo</a></p>
+</div>
 
 The [Dart LSIF indexer](https://github.com/sourcegraph/lsif-dart) makes precise code intelligence available for Dart projects. LSIF (Language Server Index Format) is a file format for precomputed code intelligence data that you can upload to your Sourcegraph instance for your projects. Follow the [LSIF quickstart guide](https://docs.sourcegraph.com/code_intelligence/lsif_quickstart) to get started and see the most up-to-date information on languages with LSIF indexers at [lsif.dev](https://lsif.dev/).
 
 ## New `content` search keyword
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/392639232?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/392639232?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/392639232" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/392639232" target="_blank">View on Vimeo</a></p>
+</div>
 
 We added a new `content:` search keyword to help you search for patterns that might clash with other parts of the query. For example, if you want to search for `file:file` in javascript files, you can now use the following query: `file:.js content:"file:file"`. This parameter overrides any other search patterns in a query.
 
@@ -160,12 +160,12 @@ This release contains several new experimental features. We look forward to hear
 
 ### Smart search field in plain text mode
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/392761379?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/392761379?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/392761379" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/392761379" target="_blank">View on Vimeo</a></p>
+</div>
 
 The plain text mode search query input field now provides syntax highlighting, hover tooltips, and diagnostics on filters. Set the user or global settings value `{ "experimentalFeatures": { "smartSearchField": true } }` to take advantage of this feature.
 
@@ -175,12 +175,12 @@ A new experimenal field `experimentalFeatures.customGitFetch` allows defining cu
 
 ### Import code from any code host with src-expose
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/368923038?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/368923038?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/368923038" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/368923038" target="_blank">View on Vimeo</a></p>
+</div>
 
 [src-expose](https://docs.sourcegraph.com/admin/external_service/other#experimental-src-expose) is a new tool that enables admins to import code from any code host. This makes it possible to bring code from other version control systems or textual artifacts from non-version controlled systems (e.g., configuration) into Sourcegraph.
 

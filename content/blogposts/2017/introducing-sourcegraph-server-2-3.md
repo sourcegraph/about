@@ -47,22 +47,22 @@ See how to set up Sourcegraph to search over repositories hosted on:
 
 ## Light color theme
 By popular request, we've added a light color theme in addition to our current dark theme! It's not just aesthetic: we've heard from people who use Sourcegraph on their daily train commute and on the beach (really!), and the light color theme handles glare better. Click the sun/moon toggle next to your profile avatar to switch between the light and dark themes.
-<div style="padding-bottom:82.6%;height:0;position:relative;">
-  <img alt="SS2.3 light theme" src="//images.contentful.com/le3mxztn6yoo/2GTGlQWblSkoCiCom0IQwq/d6dc97ee8e65d66883369f613e5b0643/SS2.3_light_theme.gif" class="ba pa1 b--light-7 br2" />
+<div style={{paddingBottom: '82.6%', height: '0', position: 'relative'}}>
+  <img alt="SS2.3 light theme" src="//images.contentful.com/le3mxztn6yoo/2GTGlQWblSkoCiCom0IQwq/d6dc97ee8e65d66883369f613e5b0643/SS2.3_light_theme.gif" className="ba pa1 b--light-7 br2" />
 </div>
 
 ## Organizations
 You can now create and join organizations (also known as “orgs”). Organizations are named groups of users with an associated JSON settings file. These settings take effect for all users who are members of the organization. What kinds of settings, you might ask? This release includes custom search scopes and saved queries, and more features that rely on configuration will be rolling out soon.
 
 Server admins can [create organizations that new users automatically join](https://docs.sourcegraph.com/admin/organizations), and any user can create organizations and invite new members from the settings page.
-<div style="padding-bottom:78.8%;height:0;position:relative;">
+<div style={{paddingBottom:'78.8%', height: 0, position: 'relative'}}>
   <img alt="SS2.3 orgs" src="//images.contentful.com/le3mxztn6yoo/3xHwIft9qUqwqcYiYGamAu/c4dbe46cf2d8698472ce3e63aef0a7c2/Screen_Shot_2017-12-05_at_12.17.13_PM.png" />
 </div>
 
 ## Custom search scopes
 Every project and team has a different set of repositories they commonly work with and search over. We've added [custom search scopes](https://docs.sourcegraph.com/code_search/explanations/features/#scope) to enable users and organizations to search over predefined subsets of files and repositories. Instead of typing the set of files and repositories you search over, you can now simply define a search scope and select it from the dropdown next to the search box whenever you need.
-<div style="padding-bottom:72.8%;height:0;position:relative;">
-  <img src="//images.contentful.com/le3mxztn6yoo/6mdWr31pBY2YwgQwmmE446/1c099368b51400f18a9cefdecb8d79dc/SS2017_settings_and_search_scopes.gif" alt="SS2.3 settings and search scopes" class="ba pa1 b--light-7 br2" />
+<div style={{paddingBottom:'72.8%', height: 0, position: 'relative'}}>
+  <img src="//images.contentful.com/le3mxztn6yoo/6mdWr31pBY2YwgQwmmE446/1c099368b51400f18a9cefdecb8d79dc/SS2017_settings_and_search_scopes.gif" alt="SS2.3 settings and search scopes" className="ba pa1 b--light-7 br2" />
 </div>
 
 ## Saved queries
@@ -77,8 +77,8 @@ See some [examples of useful saved queries](https://docs.sourcegraph.com/code_se
 * Lint-disable on unmerged branches
 
 
-<div style="padding-bottom:73.4%;height:0;position:relative;">
-  <img alt="SS2.3 saved queries" src="//images.contentful.com/le3mxztn6yoo/5X92w2GneMcmwKsgUEqc0O/347154873b0538ebeb277261a26d39f2/SS2.3_saved_queries_0.5-2.gif" class="ba pa1 b--light-7 br2 w-100" />
+<div style={{paddingBottom: '73.4%', height: '0', position: 'relative'}}>
+  <img alt="SS2.3 saved queries" src="//images.contentful.com/le3mxztn6yoo/5X92w2GneMcmwKsgUEqc0O/347154873b0538ebeb277261a26d39f2/SS2.3_saved_queries_0.5-2.gif" className="ba pa1 b--light-7 br2 w-100" />
 </div>
 
 ## Admin dashboard
@@ -93,8 +93,8 @@ Sourcegraph now supports [single sign-on (SSO) user authentication](https://docs
 
 The [Sourcegraph browser extension (Chrome/Firefox)](https://docs.sourcegraph.com/integration/browser_extension) now supports self-hosted Sourcegraph instances. After entering the Sourcegraph URL in the browser extension's options menu (revealed by clicking on the Sourcegraph icon in the browser toolbar), you'll get code intelligence on GitHub.com or GitHub Enterprise.
 
-<div style="padding-bottom:73.4%;height:0;position:relative;">
-<img alt="SS2.3 GitHub browser extension" src="//images.contentful.com/le3mxztn6yoo/1fhRd4FYxcACYQOoy8yw8U/fb51d99384947e0a8bac29dff35b3619/SS2.3_GitHub_browser_extension.gif" class="ba pa1 b--light-7 br2 w-100"/>
+<div style={{paddingBottom: '73.4%', height: '0', position: 'relative'}}>
+<img alt="SS2.3 GitHub browser extension" src="//images.contentful.com/le3mxztn6yoo/1fhRd4FYxcACYQOoy8yw8U/fb51d99384947e0a8bac29dff35b3619/SS2.3_GitHub_browser_extension.gif" className="ba pa1 b--light-7 br2 w-100"/>
 </div>
 
 ## Repository list page

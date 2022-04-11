@@ -123,7 +123,7 @@ Server Name Indication (SNI) is how the client tells the server which host it is
 
 What if we want to parse SNI and then proxy the connection? We need to make sure to proxy the part of the connection that we have already read.
 
-<img width="1148" alt="screen shot 2018-08-28 at 7 47 11 am" src="https://user-images.githubusercontent.com/754768/44727286-ed6d9c00-aa96-11e8-8a0e-3b0cc4dab189.png">
+<img width="1148" alt="screen shot 2018-08-28 at 7 47 11 am" src="https://user-images.githubusercontent.com/754768/44727286-ed6d9c00-aa96-11e8-8a0e-3b0cc4dab189.png" />
 
 The solution is to use a io.MultiReader that first reads the Client Hello that we already have in the buffer, and then reads from the rest of the connection.
 

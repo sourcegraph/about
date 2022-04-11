@@ -12,12 +12,12 @@ heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.j
 published: true
 ---
 
-<div class="container p-0 liveblog-presenters">
-  <div class="row m-0">
-      <p class=" mr-12 m-0">
-        <span class="liveblog-presenters__name">Meredith Broussard</span>
-        <a href="https://twitter.com/merbroussard" target="_blank" title="Twitter"><i class="fa fa-twitter pr-2"></i></a>
-        <a href="http://meredithbroussard.com/" target="_blank" title="Speaker's site"><i class="fa fa-globe pr-2"></i></a>
+<div className="container p-0 liveblog-presenters d-flex w-100 text-center">
+  <div className="row m-0 w-100">
+      <p className=" mr-12 m-0 w-100">
+        <span className="liveblog-presenters__name">Meredith Broussard</span>
+        <a href="https://twitter.com/merbroussard" target="_blank" title="Twitter"><i className="fa fa-twitter pr-2"></i></a>
+        <a href="http://meredithbroussard.com/" target="_blank" title="Speaker's site"><i className="fa fa-globe pr-2"></i></a>
       </p>
   </div>
 </div>
@@ -69,13 +69,13 @@ Why would we do something like this in the real world? As an example, if an insu
 
 However, this approach doesn't make sense socially. When looking at the Titanic data, the mathematical value that matters the most is _passenger class_. The data may make it seem the cost of the ticket is connected to the outcome. However, the real reason these passenger classes were more likely to die is second and third class passengers were locked in their corridors until the first class passengers got to the life boats… _which is horrific._ There is no way from the _data_ to understand the tragedy, this really terrible decision (to lock gates) leading to this horrific outcome for certain populations and not others. If an insurance decision was made based solely on this data, does it feel fair? No. It doesn't.
 
-**There are limits to what we can do with data.** ~ Meredith Broussard
+**There are limits to what we can do with data.** - Meredith Broussard
 
 ### Limits of Data
 
 ML prediction is about quantitative understanding of the world. We can use qualitative understanding alongside it to improve our understanding, as in the story of Jack and Milton, first class friends on the Titanic. When the disaster struck, they both swung into action. They both were heroic. They both loaded people on the life boats and they both volunteered to stay as the life boats were rowing away. Realizing their only chance of survival was to jump into the ocean and swim to the life boats, Milton volunteered to go first. He jumped straight down from the edge of the ship and was lost to the ocean. Jack went second, said a prayer, and jumped as far out from the ship as he could. He managed to survive because he changed his approach to the jump from the ship. That was the only real difference – how they jumped from the ship. This is not a difference we can reflect in the  data or capture mathematically. It is a qualitative data point which really mattered to survival, even though it could not be captured quantitatively.
 
-**Not everything that counts can be counted, and not everything that can be counted counts.** ~ Meredith Broussard
+**Not everything that counts can be counted, and not everything that can be counted counts.** - Meredith Broussard
 
 ### Technochauvinism
 
@@ -83,7 +83,7 @@ Technochauvinism is the idea that technology is superior to people. Instead of a
 
 How did our widespread cultural bias towards the superiority of technology come to be? What is really being said when we say computers are better than people is MATH is better than people. When something is done with a computer, it always comes down to MATH (after all computer == compute == computation). This can seem like magic, as any sufficiently advanced technology will seem, but it always comes down to math.
 
-Who told us math is better than people? {photo of a number of mathematicians crucial to the creation of computer science as it exists today.} The discipline of computer science came from a small group of people: white, male, mathematicians, with ivy-league or Oxford educations. There is nothing wrong with being an ivy-league, white male, mathematician {Meredith interjects as an aside "Some of my best friends are white, male, ivy-league mathematicians" to a peel of laughter from the audience.} The problem with a small group of people doing the work is people embed their own bias in tech. Everyone has conscious and unconscious bias and while we are striving every day to be better people, we can't see our unconscious bias (it is unconscious!) Without diverse points of view, these unconscious biases get in embedded in the tech as it is created.
+Who told us math is better than people? (photo of a number of mathematicians crucial to the creation of computer science as it exists today.) The discipline of computer science came from a small group of people: white, male, mathematicians, with ivy-league or Oxford educations. There is nothing wrong with being an ivy-league, white male, mathematician (Meredith interjects as an aside "Some of my best friends are white, male, ivy-league mathematicians" to a peel of laughter from the audience.) The problem with a small group of people doing the work is people embed their own bias in tech. Everyone has conscious and unconscious bias and while we are striving every day to be better people, we can't see our unconscious bias (it is unconscious!). Without diverse points of view, these unconscious biases get in embedded in the tech as it is created.
 
 As of 2017, there were zero tenured women faculty members in the Harvard math department. This bias in favor of men in mathematics goes back centuries, couched in the idea that mathematics is "different" from everything else. While untrue, there is the notion of math being _so special_ mathematicians don't have to concern themselves with the petty social constructs other disciplines need to worry about. Since there is structural bias inside the field of mathematics, and computer science is descended from mathematics, it is reasonable that computer science as a discipline inherited mathematics' embedded biases.
 
@@ -92,10 +92,10 @@ As of 2017, there were zero tenured women faculty members in the Harvard math de
 Unconscious bias manifests in technology in a variety of ways.
 
 1. **Wide-spread harassment in computer science and mathematics**: news headlines and movements to speak out openly about the experiences many today still have
-2. **Bias in word embedding**: critical to how Google figures out what you're looking for when you search occupations associated with he and she {photo of _extreme she_ and _extreme he_ occupations}; these are the embeddings that feed the algorithms which increasingly make decisions on our behalf; biases at creation were not noticed because of unconscious bias 
+2. **Bias in word embedding**: critical to how Google figures out what you're looking for when you search occupations associated with he and she (photo of _extreme she_ and _extreme he_ occupations); these are the embeddings that feed the algorithms which increasingly make decisions on our behalf; biases at creation were not noticed because of unconscious bias 
 3. **Bias in tech features and functions**: Environmentally racist soap dispenser ([YouTube video][3]) light skin man can get it to work; dark skin man can't get it to work; white paper towel works just fine; Meredith's take: "_I do not believe the people who made the dispenser tech sat down to make a racist soap dispenser. What I do believe is that the technology was developed by a bunch of people with light skin who said 'oh hey it works!' and then sent it out into the world and now people can't wash their hands._"
 4. **Positive Asymmetry**: concep t of how we as humans like to focus more on what's happy than what iss problematic; it is a group dynamic and we need to recognize this type of behavior happens; while uncomfortable to do so, it is worth pushing past; if we don't push past the discomfort, we end up with Machine Bias
-5. **Algorithms are NOT Neutral**: {photo with article heading with two petty theft arrests and future crime risks score mis-match between a white man and a black woman} unconscious bias is embedded into the "future crime" model through the training data used to create the model; facial recognition algorithms work better for light skin men vs darker skin women and regularly mis-gender/mis-identify women and dark skinned people; book reference: _ALGORITHMS OF OPPRESSION_
+5. **Algorithms are NOT Neutral**: (photo with article heading with two petty theft arrests and future crime risks score mis-match between a white man and a black woman) unconscious bias is embedded into the "future crime" model through the training data used to create the model; facial recognition algorithms work better for light skin men vs darker skin women and regularly mis-gender/mis-identify women and dark skinned people; book reference: _ALGORITHMS OF OPPRESSION_
 6. **Bias Magnified**: the unconscious bias in the soap dispenser is magnified in facial recognition; same tech in the soap dispensers and used in facial recognition are in self-driving cars; image recognition algorithms are really, really _fragile_; Are they going to recognize people with darker skin? What about people with disabilities?
 
 ### Better Informed
@@ -106,7 +106,7 @@ What do we do? Meredith: "First thing: BUY MY BOOK!" (lots of laughing from audi
 
 We should not assume using tech is the same as making the world a better place.
 
-- Differentiate between automation and AI {gif of mechanical finger touching a smartphone screen is automation, NOT AI}
+- Differentiate between automation and AI (gif of mechanical finger touching a smartphone screen is automation, NOT AI)
 - Be specific about what tech does and doesn't do (it isn't magic)
 - Be aware of what's going on inside / behind the systems, such as when a company says they are using AI but actually have humans behind the systems to do the work when the AI fails; acknowledge there are humans doing human work and they deserve to be paid; book reference: _GHOST WORK_
 - Read the Resistance (books to inform us [Goodreads][1] shelf):
@@ -139,15 +139,3 @@ Leave the idea of Technochauvinism behind. When you are designing tech in your e
 [1]: <https://www.goodreads.com/review/list/34907331-rainya-mosher?shelf=strangeloop2019-keynote-list> "Goodreads"
 [2]: <https://drive.google.com/file/d/0B\_IUFuUrVtW\_b29vd3FpNnVkWVk/view> "Discipline of Machine Learning"
 [3]: <https://youtu.be/YJjv\_OeiHmo> "YouTube video"
-
-<!-- Note on images
-  Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
-
-  Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
-    - JPEG compression set between 60%-80%
-    - Resizing the image to be no wider then 750px
-    - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
-
-  I suggest re-sizing and compressing all the images in one batch as a last step.
--->  

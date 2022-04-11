@@ -102,25 +102,6 @@ This release improves support for access tokens, which enable access to the Sour
 
 Along with the [Sourcegraph GraphQL API improvements](#sourcegraph-api) in this release, we're working hard to let you build new kinds of tools on Sourcegraph to speed up and automate your team's work.
 
-<!--
-
-## Code view improvements
-
-TODO
-
-- "Go to definition" and other actions now only require a single click.
-- All hover information from the language server, not just the first item, is shown. This means, for example, that TypeScript and Go interface fields are shown underneath the formatted docstring.
-- The hover now has a button to “Find implementations” of interfaces and concrete types (if supported by the language server).
-- Many visual glitches were fixed with hovers and token highlighting.
-- You can hover over the plug icon in the top right to see the code intelligence status for the current file (to see what features are supported, such as hovers, definitions, references, and implementations).
-- Error messages (such as compiler errors) from the language server are displayed in the hover, so you know the reason if something isn't working.
-
-Try the new code view and hover on an [example open source file](https://sourcegraph.com/github.com/golang/oauth2/-/blob/clientcredentials/clientcredentials.go#L58).
-
-<img src="//images.ctfassets.net/le3mxztn6yoo/48HJWiBrpe0Kkq2y6wumqo/93f5a4061318ebcca9eec6f31af33c34/Screenshot_from_2018-05-21_17-01-43.png" style="max-width:400px;border:solid 1px #ccc"/>
-
--->
-
 ## Server pings
 
 Sourcegraph no longer tracks any detailed usage data, so the `disableTelemetry` configuration option has been deprecated. (The telemetry that it disabled has been completely removed.)
@@ -142,4 +123,4 @@ See the [Sourcegraph changelog](https://sourcegraph.com/github.com/sourcegraph/s
 
 **Ready to install or upgrade? [Get Sourcegraph 2.8.](https://docs.sourcegraph.com/#quickstart)**
 
-Questions/feedback/complaints/requests? Contact us at [@sourcegraph](https://twitter.com/sourcegraph) or <mailto:support@sourcegraph.com>, or file issues on our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues). We're planning for our next release, Sourcegraph 2.9 in mid-June, right now. The sooner we hear from you, the better!
+Questions/feedback/complaints/requests? Contact us at [@sourcegraph](https://twitter.com/sourcegraph) or support@sourcegraph.com, or file issues on our [public issue tracker](https://github.com/sourcegraph/sourcegraph/issues). We're planning for our next release, Sourcegraph 2.9 in mid-June, right now. The sooner we hear from you, the better!

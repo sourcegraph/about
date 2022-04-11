@@ -41,9 +41,11 @@ Though typically viewed as a last line of defense in production, health checks a
 
 Because Checkup can be used as a simple CLI, you can roll it into your continuous integration scripts. Below is a snippet taken from Sourcegraph’s CI build that demonstrates this ability. We version a [checkup.json](https://github.com/sourcegraph/checkup#create-your-checkup-config) file directly in our codebase that describes critical URLs that we must not break.
 
-<pre name="00ac" id="00ac" class="graf graf--pre graf-after--p">#!/bin/bash</pre>
+```
+#!/bin/bash
 
-<pre name="eb8d" id="eb8d" class="graf graf--pre graf-after--pre"># Quick end-to-end uptime tests
+# Quick end-to-end uptime tests
+
 checkup_success=false
 src serve &                    # run an instance of our server
 for i in {1..5}; do
@@ -57,7 +59,8 @@ done;
 kill %1                        # kill the instance of our server
 if ! "$checkup_success"; then
     echo "Checkup health checks failed after 5 attempts" && false;
-fi</pre>
+fi
+```
 
 #### 3\. In development
 

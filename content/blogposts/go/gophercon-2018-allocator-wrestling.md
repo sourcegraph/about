@@ -356,12 +356,6 @@ If we've concluded that allocations are a source of inefficiency, what can we do
 * Live heap size is generally but not always small
 * High GGOC makes avoiding OOMs harder
 
-<!--
-* In a throughput-oriented application, [GOGC](https://golang.org/pkg/runtime/#hdr-Environment_Variables) fundamentally doesn't express the real goal: "use all available memory, but no more"
-* Live heap size is generally (but not always) small
-* SetMaxHeap API is a better fit.
--->
-
 Okay, now onto things we can change in code to improve allocation/GC behavior...
 
 ### Limit pointers

@@ -11,15 +11,15 @@ published: true
 description: 'Sourcegraph 3.5: Powerful new search filters, improved configuration, and Bitbucket Server repository permissions'
 ---
 
-<p class="text-center">
+<p className="text-center">
   <b>Happy Pride Month 🏳️‍🌈 from all of us at Sourcegraph!</b>
 </p>
 
 [Sourcegraph](https://about.sourcegraph.com/) is the standard developer platform for code search and navigation at many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-[**⏎ Multi-line search with newline (`\n`) characters**](#multi-line-search-with-newline-code-classlanguage-textncode-characters)<br />
+[**⏎ Multi-line search with newline (`\n`) characters**](#multi-line-search-with-newline-n-characters)<br />
 
 [**📅 Restrict search results to repositories with recent activity**](#restrict-search-results-to-repositories-with-recent-activity)<br />
 
@@ -34,7 +34,7 @@ Use extensions like Codecov, Sentry, Datadog, and more to put info in context of
 [**💾 Powering code alerts with saved searches**](#powering-code-alerts-with-saved-searches)<br />
 Improved UI to separate User and Organization saved searches.
 
-[**🛠 New `orgs` field to optimize repository syncing for GitHub organizations**](#new-code-classlanguage-textorgscode-field-to-optimize-repository-syncing-for-github-organizations)<br />
+[**🛠 New `orgs` field to optimize repository syncing for GitHub organizations**](#new-code-classNamelanguage-textorgscode-field-to-optimize-repository-syncing-for-github-organizations)<br />
 Easier configuration for cloning all repos in an organization.
 
 [**💡 Repository syncing status for site admins**](#repository-syncing-status-for-site-admins)<br />
@@ -50,7 +50,7 @@ Experimental feature to convey the status of cloning repositories.
 
 ## Multi-line search with newline (`\n`) characters
 
-Sourcegraph now supports multi-line searches by matching on `\n`, providing new search use cases. For example, to identify usage of Python decorators at the module and class level:
+Sourcegraph now supports multi-line searches by matching on `\n`, providing new search use cases. For example, to identify usage of Python decorators at the module and className level:
 
 ```
 lang:python ^\s*@.*\n\s*def
@@ -114,23 +114,23 @@ We are working closely with our customers who have larger Sourcegraph instances 
 
 ## Improved code reviews with line decorations in pull requests
 
-<p class="container">
-<div style="padding:56.25% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/343070976?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+<div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+  <iframe src="https://player.vimeo.com/video/343070976?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
 </div>
-<p style="text-align: center"><a href="https://vimeo.com/343070976" target="_blank">View on Vimeo</a></p>
-</p>
+<p style={{textAlign: 'center'}}><a href="https://vimeo.com/343070976" target="_blank">View on Vimeo</a></p>
+</div>
 
 Line decorations enhance code views with Sourcegraph extensions such as [Codecov](https://sourcegraph.com/extensions/sourcegraph/codecov), [Sentry](https://sourcegraph.com/extensions/sourcegraph/sentry), and [Datadog](https://sourcegraph.com/extensions/sourcegraph/datadog-metrics). In 3.5, line decorations are now available on pull/merge requests on GitHub, Bitbucket Server, and GitLab.
 
 ## Powering code alerts with saved searches
 
-<p class="container">
-<div style="padding:56.25% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/342111852?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+<div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+  <iframe src="https://player.vimeo.com/video/342111852?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
 </div>
-<p style="text-align: center"><a href="https://vimeo.com/342111852" target="_blank">View on Vimeo</a></p>
-</p>
+<p style={{textAlign: 'center'}}><a href="https://vimeo.com/342111852" target="_blank">View on Vimeo</a></p>
+</div>
 
 User-level and organization-level saved searches are now separate. You can view and manage saved searches in the user and organization profile areas, respectively.
 
@@ -162,12 +162,12 @@ This is the resulting set of repositories from the above configuration:
 
 ## Repository syncing status for site admins
 
-<p class="container">
-<div style="padding:56.25% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/343706613?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+<div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+  <iframe src="https://player.vimeo.com/video/343706613?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
 </div>
-<p style="text-align: center"><a href="https://vimeo.com/343706613" target="_blank">View on Vimeo</a></p>
-</p>
+<p style={{textAlign: 'center'}}><a href="https://vimeo.com/343706613" target="_blank">View on Vimeo</a></p>
+</div>
 
 To give more visibility into the status of repository syncing and updating operations, we added an experimental status indicator in the navigation bar.
 

@@ -10,7 +10,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/4mYbWG3HL2MiweO2Si8OGA/7d44
 published: true
 ---
 
-<p class="tc"><img alt="GraphQL Summit" src="//images.contentful.com/le3mxztn6yoo/4mYbWG3HL2MiweO2Si8OGA/7d44f227a75697aeccd62d98366614cb/logo-dotgo.png" class="h5"></p>
+<p className="tc"><img alt="GraphQL Summit" src="//images.contentful.com/le3mxztn6yoo/4mYbWG3HL2MiweO2Si8OGA/7d44f227a75697aeccd62d98366614cb/logo-dotgo.png" className="h5"/></p>
 
 We’re excited to be running the official liveblog for dotGo 2017 in Paris on Monday, November 6. With the help of volunteer Gophers at dotGo in Paris, we’ll be  blogging [concise technical summaries](/go) of all dotGo talks, so people from all around the world can follow along and learn. Liveblogging conferences is a tradition in the Go community going back to the very first dotGo and GopherCon in 2014, and we’re excited to be continuing it.
 

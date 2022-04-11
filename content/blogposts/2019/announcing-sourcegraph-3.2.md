@@ -11,16 +11,16 @@ published: true
 description: 'Sourcegraph 3.2: (Mostly) no new features - Improved stability, setup, and documentation'
 ---
 
-<p style="text-align: center">
-  <img src="https://user-images.githubusercontent.com/133014/54649997-a2829880-4a69-11e9-862a-cfa84df3d9de.png" alt="My top feature request is: no new features. Just fix what's broken">
+<div style={{textAlign: 'center'}}>
+  <img src="https://user-images.githubusercontent.com/133014/54649997-a2829880-4a69-11e9-862a-cfa84df3d9de.png" alt="My top feature request is: no new features. Just fix what's broken"/>
   <small>Credit: <a href="https://twitter.com/rstevens">Rich Stevens</a></small>
-</p>
+</div>
 
 *Sourcegraph is an open source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph](#install-or-upgrade).*
 
 [Developing Sourcegraph in the open](https://handbook.sourcegraph.com/company#open-company) with a [public product roadmap](https://handbook.sourcegraph.com/direction), and having a product used by tons of developers, means we receive a constant stream of feedback. A clear theme emerged:
 
-<p style="text-align:center;font-style:italic">“Improving x feature would help me more than adding new features.”</p>
+<div style={{textAlign: 'center', fontStyle:'italic'}}>“Improving x feature would help me more than adding new features.”</div>
 
 Seemingly small improvements can deliver huge productivity gains to engineers at companies such as Uber,  Lyft, and Yelp, which have hundreds or thousands of developers using Sourcegraph to search and navigate thousands of repositories every day.
 
@@ -35,12 +35,12 @@ That’s why this release focuses on productivity and stability improvements tha
 
 ## Onboarding flow for site admins and users
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/325481465?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/325481465?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/325481465" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/325481465" target="_blank">View on Vimeo</a></p>
+</div>
 
 Getting your team on Sourcegraph is now easier thanks to the onboarding guide in the top navigation bar.
 
@@ -50,19 +50,19 @@ Users are guided through performing their first search and code navigation actio
 
 ## Easier deployment to EC2 and DigitalOcean
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/325473911?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0',position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/325473911?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/325473911" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/325473911" target="_blank">View on Vimeo</a></p>
+</div>
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/321525296?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0',position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/321525296?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/321525296" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/321525296" target="_blank">View on Vimeo</a></p>
+</div>
 
 You can [run Sourcegraph locally with a single Docker command](https://docs.sourcegraph.com/#quickstart-guide), but what about when you want to share Sourcegraph with your team?
 
@@ -90,12 +90,12 @@ Much of 3.2 is building the foundation upon which these improvements can be made
 
 ## Code intelligence improvements
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/325480377?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0',position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/325480377?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/325480377" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/325480377" target="_blank">View on Vimeo</a></p>
+</div>
 
 Hover tooltips and jump-to-definition continue to be quicker and more efficient as you can see in the below demo of navigating around the Linux repository on Sourcegraph.com.
 

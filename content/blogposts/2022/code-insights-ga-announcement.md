@@ -29,7 +29,7 @@ _If you’re already using Sourcegraph, upgrade to 3.37 for a limited trial of C
 Built on Sourcegraph's fast, comprehensive code search, Code Insights allows you to create insights in seconds for anything you can search for. For example, in a world with Code Insights, the answer to the migration question raised above looks like this: "53% done, Logan's team migrated almost 50 projects in the last month, all new projects are using the new way, and we still have 135 projects using the old way."
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-new-graphql-ts-types.svg" alt="Migration to GraphQL TS types progress" class="no-shadow">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-new-graphql-ts-types.svg" alt="Migration to GraphQL TS types progress" className="no-shadow"></img>
 </figure>
 
 And this is what the query is based on:
@@ -73,7 +73,7 @@ We started exploring Code Insights because our engineering teams faced the same 
 Then, as we built from concept to prototype to Beta to General Availability today, we were consistently surprised by how eager our customers were to start using it. Some of them would even snoop around our GitHub and changelog drafts to find out what features would arrive in each release before we shared the updates. It turns out we weren’t the only ones who wanted a tool to finally set KPIs on custom metrics based directly on the source of truth—the code—rather than manual spreadsheets or ad hoc updates.
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-dashboard.svg" alt="Code Insights dashboard" class="no-shadow">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-dashboard.svg" alt="Code Insights dashboard" className="no-shadow"></img>
 </figure>
 
 ## Beyond code search
@@ -83,6 +83,7 @@ Code Insights is a core part of our growth this year. More than 1.275 million de
 As we look ahead in 2022, we’re working on more ways to leverage search across Sourcegraph and give developers a more complete understanding of their codebase—so they can secure vulnerabilities, resolve incidents faster, automate key workflows, and ultimately do their best work.
 
 <style>
+{`
   figure .no-shadow { box-shadow: none; }
   .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
 
@@ -90,5 +91,5 @@ As we look ahead in 2022, we’re working on more ways to leverage search across
     text-align: center;
     margin-top: -2rem;
     font-style: italic;
-  }
+  }`}
 </style>

@@ -51,7 +51,7 @@ const Title = () => <h1 class={styles.title}>Heading!</h1>
 The compiler would update the CSS file during the build step by replacing the CSS selector class referenced in the markup with a unique character set. And the JavaScript file would be updated by replacing the CSS class with the new inlined string. The final HTML markup might look like this:
 
 ```html
-<h1 class="module__title__2QcnY">Heading!</h1>
+<h1 className="module__title__2QcnY">Heading!</h1>
 ```
 
 This approach is designed to fix the problem of the global scope in CSS. Engineers can happily name their CSS selectors whatever they want, without worrying about unintended consequences in other areas of the code. Creating a CSS module is ultimately very similar to creating a typical CSS file. Maintaining this flow ensured we could easily start adopting this approach without interfering with our developer experience too much. After we updated documentation on how to use CSS modules, teams adopted this approach for new features immediately.
@@ -71,7 +71,7 @@ We knew we could search the codebase manually for relevant files and make conclu
 Code Insights entered Beta in August 2021, and we happily started using it to track the migration progress. As of today, [Code Insights is now Generally Available](/blog/announcing-code-insights/).
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-css-modules-insight.png" alt="Count of CSS files that are global vs module files." class="css-modules-insight">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-to-css-modules-insight.png" alt="Count of CSS files that are global vs module files." className="css-modules-insight"/>
   <figcaption>Count of CSS files that are global vs module files.</figcaption>
 </figure>
 
@@ -97,7 +97,7 @@ A codemod is an automated change to source code, which helps platform teams exec
 4. Regenerate the source file based on the new AST.
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/abstract-syntax-tree.svg" alt="High-level visual representation of the codemod." class="no-shadow" style="margin-top: 0;">
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/abstract-syntax-tree.svg" alt="High-level visual representation of the codemod." className="no-shadow" style={{marginTop: 0}}/>
   <figcaption>High-level visual representation of the codemod.</figcaption>
 </figure>
 
@@ -131,7 +131,9 @@ It’s a multistep operation:
 }
 ```
 
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" class="snippet-arrow" xml:space="preserve"><path fill="#223" d="M44.78.03 24.511 20.516 4.241.03.066 4.253l24.446 24.71L48.957 4.251 44.78.029zM1.685 4.39l2.626-2.79 20.2 20.764L44.85 1.532l2.555 2.65-22.961 23.21-22.758-23z"></path></svg>
+<div className="d-flex justify-content-center my-">
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" className="snippet-arrow" xmlSpace="preserve"><path fill="#223" d="M44.78.03 24.511 20.516 4.241.03.066 4.253l24.446 24.71L48.957 4.251 44.78.029zM1.685 4.39l2.626-2.79 20.2 20.764L44.85 1.532l2.555 2.65-22.961 23.21-22.758-23z"></path></svg>
+</div>
 
 ```css
 .insights-dashboard {
@@ -162,7 +164,7 @@ To manipulate Typescript AST, we used [ts-morph](https://github.com/dsherret/ts-
 Here’s the AST generated for our small example. Explore it yourself using [AST Explorer](https://astexplorer.net/#/gist/eca630c9f5464e6b027ec13aac91711a/4295e325b8cdad474f9d4f559248f534e709356e).
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/insights-dashboard-ast.png" alt="Insights dashboard AST"
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/insights-dashboard-ast.png" alt="Insights dashboard AST"/>
 </figure>
 
 Codemod replaces every string literal match with reference to the corresponding CSS Module class.
@@ -170,8 +172,9 @@ Codemod replaces every string literal match with reference to the corresponding 
 ```jsx
 <div className="insights-dashboard__wrapper" />
 ```
-
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" class="snippet-arrow" xml:space="preserve"><path fill="#223" d="M44.78.03 24.511 20.516 4.241.03.066 4.253l24.446 24.71L48.957 4.251 44.78.029zM1.685 4.39l2.626-2.79 20.2 20.764L44.85 1.532l2.555 2.65-22.961 23.21-22.758-23z"></path></svg>
+<div className="d-flex justify-content-center my-3">
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="29" className="snippet-arrow" xmlSpace="preserve"><path fill="#223" d="M44.78.03 24.511 20.516 4.241.03.066 4.253l24.446 24.71L48.957 4.251 44.78.029zM1.685 4.39l2.626-2.79 20.2 20.764L44.85 1.532l2.555 2.65-22.961 23.21-22.758-23z"></path></svg>
+</div>
 
 ```jsx
 <div className={styles.wrapper} />
@@ -190,7 +193,7 @@ $ yarn transform --transform ./globalCssToCssModule.ts ./sourcegraph/**/*.tsx
 We developed [the proof of concept codemod](https://github.com/sourcegraph/codemod/tree/92d5088106a81247a997c52577b0cb5749fc1082/src/transforms/globalCssToCssModule) for the migration in a separate repo at the end of September 2021 and spent a couple of days applying it to the codebase. The code insights created to track the migration readily showed a spike in the migration progress that we happily shared with other teams in Slack:
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-progress.svg" alt="Intermediate migration progress"
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-progress.svg" alt="Intermediate migration progress"/>
 </figure>
 
 ## Collaboration with contractors
@@ -199,57 +202,17 @@ Another challenge we faced was that we kept breaking our own rules: In quite a f
 
 To keep executing the migration behind the scenes, we started working with contractors to help us handle cases that the codemod could not address. It was another productivity lever akin to the codemod that immensely helped us to focus on critical problems while keeping the migration process going in the background.
 
-<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Nothing like using <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a> to build <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a>—we&#39;re migrating from global CSS to CSS Modules and our frontend platform team is using Code Insights to track migration progress: <a href="https://t.co/1lRqYjLiwz">pic.twitter.com/1lRqYjLiwz</a></p>&mdash; Beyang Liu (@beyang) <a href="https://twitter.com/beyang/status/1454937232368832522?ref_src=twsrc%5Etfw">October 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote className="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Nothing like using <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a> to build <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a>—we&#39;re migrating from global CSS to CSS Modules and our frontend platform team is using Code Insights to track migration progress: <a href="https://t.co/1lRqYjLiwz">pic.twitter.com/1lRqYjLiwz</a></p>&mdash; Beyang Liu (@beyang) <a href="https://twitter.com/beyang/status/1454937232368832522?ref_src=twsrc%5Etfw">October 31, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
 
 ## Overview of the outcome
 
 We successfully migrated to CSS Modules behind the scenes, delivering on the “frictionless developer experience” goal set for our team:
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-completion.svg" alt="Completed migration"
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migration-completion.svg" alt="Completed migration"/>
 </figure>
 
 We're relying on the same combination of Code Insights and codemods in our subsequent significant migration from global Bootstrap classes to our new Wildcard design system. We find this approach is more than just automating some simple tasks and speeding up the development work, as it helps keep engineers happy by reducing manual labor when upgrading their projects' dependencies, refactoring legacy patterns, or fixing bugs if the next version of a public API has breaking changes. As a next step, we plan to make codemods useful for engineers outside of the Frontend Platform team by developing [a higher-level toolkit for creating codemods](https://github.com/sourcegraph/codemod) that will eventually make it as simple as writing a regex find-and-replace.
 
 We hope you found this account of our migration useful and will consider trying codemods and [Code Insights](/blog/announcing-code-insights/) in your work.
 
-<style>
-  figure .no-shadow {
-     box-shadow: none;
-  }
-
-  .workingtable-highlight td {
-     color: #ffffff;
-     background-color: #005cb9;
-  }
-
-  .blog-post__html figure {
-    margin-bottom: 2rem;
-  }
-
-  .blog-post__html .gatsby-highlight {
-    margin: 1.25rem auto;
-  }
-
-  .snippet-arrow {
-    display: block;
-    margin: 2rem auto;
-  }
-
-  div.gatsby-highlight > pre {
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .blog-post__html .css-modules-insight {
-    width: 32rem;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .blog-post__html .css-modules-insight {
-      width: 100%;
-    }
-  }
-
-</style>

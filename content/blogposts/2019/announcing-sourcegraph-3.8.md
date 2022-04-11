@@ -15,7 +15,7 @@ Sourcegraph is the standard developer platform for code search and navigation at
 
 We're excited to announce Sourcegraph 3.8. This release contains lots of behind the scenes work, both foundational and forward-looking.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🤖 Introducing code change management campaigns**](#introducing-code-change-management-campaigns)<br />
 Learn more about new functionality that is coming soon to Sourcegraph!
@@ -43,12 +43,12 @@ Sourcegraph couldn't be what it is without the community.
 
 ## Introducing code change management campaigns
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/355392896?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/355392896?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/355392896" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/355392896" target="_blank">View on Vimeo</a></p>
+</div>
 
 Soon, you can [use Sourcegraph for large-scale code change campaigns](https://about.sourcegraph.com/product/code-change-management) to remove legacy code, fix critical security issues, and pay down tech debt across all of your repositories.
 
@@ -56,7 +56,7 @@ Code change management campaigns are in private beta. [Watch the code change man
 
 ## Beta release of fast and precise LSIF-based code intelligence
 
-![LSIF code intelligence comparison](/blog/3.8-lsif.png "LSIF code intelligence comparison")
+[LSIF code intelligence comparison](/blog/3.8-lsif.png "LSIF code intelligence comparison")
 
 Each Sourcegraph instance ships with basic code intelligence that provides jump to definition and find references for every language. Basic code intelligence works well for many of our customers, but some customers have been asking for more precise code intelligence. Language servers provide precise code intelligence, but they are complex to configure, require separate deployment, and are slow to initialize, so we have added support for LSIF based code intelligence.
 
@@ -66,23 +66,23 @@ In Sourcegraph 3.8, LSIF-backed code intelligence is available for beta testing 
 
 ## Search result tabs for improved result type discoverability
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/361355622?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/361355622?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/361355622" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/361355622" target="_blank">View on Vimeo</a></p>
+</div>
 
 Many users were not aware of the different search result types that are supported by Sourcegraph, such as diff or symbol results. We have added tabs to the search results page to surface the different result types and make it quick and easy to navigate between them.
 
 ## Out of the box monitoring of your Sourcegraph instance
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/361342137?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/361342137?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/361342137" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/361342137" target="_blank">View on Vimeo</a></p>
+</div>
 
 Sourcegraph 3.8 introduces out of the box access to monitoring tools for admins to keep tabs on the health of your Sourcegraph instance. Sourcegraph now ships with Grafana and Prometheus built-in, and some basic dashboards for better debugging of your instance. We will continue to work on improving the dashboards and metrics surfaced in the next release, with the goal of providing an accurate view of the health of your instance.
 
@@ -90,7 +90,7 @@ Sourcegraph 3.8 introduces out of the box access to monitoring tools for admins 
 
 Over the last few releases we have worked on improving Sourcegraph’s performance at scale for customers with 30k+ repositories, and we continue to do so. With each major improvement we make to search, we’re now running even more extensive end-to-end load tests to verify our improvements. These load tests enable us to quickly gather and analyze approximately one million search API requests, and automatically generate reports we can interpret and learn from:
 
-![search performance benchmarks](/blog/3.8-benchmarks.png "search performance benchmarks")
+[search performance benchmarks](/blog/3.8-benchmarks.png "search performance benchmarks")
 
 We now have greater confidence rolling out search performance improvements. For example, in just the past two Sourcegraph releases we’ve used this same methodology to validate and roll out changes that have resulted in:
 
@@ -102,12 +102,12 @@ We’ve also been hard at work automating even more of our internal testing and 
 
 ## Quickly toggle the browser extension on/off
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/361358653?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/361358653?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/361358653" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/361358653" target="_blank">View on Vimeo</a></p>
+</div>
 
 You can now toggle the browser extension on and off without having to fully disable the extension. This was added to make testing and personal workflows easier for users to quickly opt in and out of the extension capabilities.
 
@@ -138,7 +138,7 @@ You can now toggle the browser extension on and off without having to fully disa
 #### Fixed
 
 - Fixed an issue where some repositories with very long symbol names would fail to index after v3.7.
-- We now retain one prior search index version after an upgrade, meaning upgrading AND downgrading from v3.6.2 <-> v3.7.2 is now 100% seamless and involves no downtime or negated search performance while repositories reindex. Please refer to the [v3.7+ migration guide](https://docs.sourcegraph.com/@3.18/admin/migration/3_7) for details.
+- We now retain one prior search index version after an upgrade, meaning upgrading AND downgrading from v3.6.2 -> v3.7.2 is now 100% seamless and involves no downtime or negated search performance while repositories reindex. Please refer to the [v3.7+ migration guide](https://docs.sourcegraph.com/@3.18/admin/migration/3_7) for details.
 
 ### 3.7.1
 

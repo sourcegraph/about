@@ -14,7 +14,7 @@ published: true
 
 We're excited to announce Sourcegraph 3.4. This release makes Sourcegraph more flexible and configurable to meet the needs of [our large enterprise customers](https://about.sourcegraph.com/), such as Uber, Lyft and Yelp. Our customers rely on Sourcegraph to search across 30,000+ repositories, with 1,000s of daily users on single instances.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🗺 Browser extension now supports repository path mapping**](#browser-extension-now-supports-repository-path-mapping)<br />
 Get shorter repository URLs in Sourcegraph.
@@ -39,12 +39,12 @@ For site admins, instead of saving configuration to the database.
 
 ## Browser extension now supports repository path mapping
 
-<p class="container">
-<div style="padding:56.25% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/336923053?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+<div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+  <iframe src="https://player.vimeo.com/video/336923053?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
 </div>
-<p style="text-align: center"><a href="https://vimeo.com/336923053" target="_blank">View on Vimeo</a></p>
-</p>
+<p style={{textAlign: 'center'}}><a href="https://vimeo.com/336923053" target="_blank">View on Vimeo</a></p>
+</div>
 
 If your code host's hostname is long, such as `githubenterprise.mycompany.internal`, then your Sourcegraph URLs will be long (e.g. `https://sourcegraph.mycompany.internal` `/githubenterprise.mycompany.internal` `/myteam/myproject`). To shorten these URLs, you can use the [`repositoryPathPattern`](https://www.google.com/search?ie=UTF-8&q=site%3Adocs.sourcegraph.com+%22repositoryPathPattern%22) external service configuration property.
 
@@ -74,12 +74,12 @@ For [cluster (Kubernetes) deployments](https://github.com/sourcegraph/deploy-sou
 
 ## Configurable upgrade notifications for patch releases
 
-<p class="container">
-<div style="padding:56.25% 0 0 0;position:relative;">
-  <iframe src="https://player.vimeo.com/video/336927042?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+<div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+  <iframe src="https://player.vimeo.com/video/336927042?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
 </div>
-<p style="text-align: center"><a href="https://vimeo.com/336927042" target="_blank">View on Vimeo</a></p>
-</p>
+<p style={{textAlign: 'center'}}><a href="https://vimeo.com/336927042" target="_blank">View on Vimeo</a></p>
+</div>
 
 Sourcegraph detects when a new version is available and shows a dismissible notification to site admins. In Sourcegraph 3.4, site admins can now control if they want to see patch release notifications by adding the following to settings:
 

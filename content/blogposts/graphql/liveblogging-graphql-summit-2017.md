@@ -10,7 +10,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/2YBGlmUKd2YI20SKKaQk4U/96ab
 published: true
 ---
 
-<p class="tc"><img alt="GraphQL Summit" src="https://images.ctfassets.net/le3mxztn6yoo/2YBGlmUKd2YI20SKKaQk4U/96abd1cef08936f9fec31818980516a3/graphql.png?h=250" class="h5"></p>
+<p className="tc"><img alt="GraphQL Summit" src="https://images.ctfassets.net/le3mxztn6yoo/2YBGlmUKd2YI20SKKaQk4U/96abd1cef08936f9fec31818980516a3/graphql.png?h=250" className="h5"/></p>
 
 We're excited to be the official liveblogging partner for GraphQL Summit 2017!
 

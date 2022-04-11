@@ -22,7 +22,7 @@ Follow these 4 steps to get code search for your Bitbucket Server code:
 2. Click **Configuration** in the site admin menu.
 3. Click **Add Bitbucket Server repositories** and fill in the fields in the generated `bitbucketServer` configuration option.
 
-  <img alt="Bitbucket" src="//images.ctfassets.net/le3mxztn6yoo/1s4x4eOcXaEqIQY20eoues/469f7dd3bcae8cb36b7e815f4b0f8518/Bitbucket2.png" class="ba pa1 b--light-7 br2"/>
+  <img alt="Bitbucket" src="//images.ctfassets.net/le3mxztn6yoo/1s4x4eOcXaEqIQY20eoues/469f7dd3bcae8cb36b7e815f4b0f8518/Bitbucket2.png" className="ba pa1 b--light-7 br2"/>
 
 
 4. Click **Repositories** in the site admin menu and enable the repositories you want to search over.

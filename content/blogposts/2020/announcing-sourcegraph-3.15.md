@@ -13,7 +13,7 @@ description: "Sourcegraph 3.15: Campaigns beta available, GitHub repository perm
 
 Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**📣 Campaigns beta available to all site admins**](#campaigns-beta-available-to-all-site-admins)<br />
 
@@ -51,11 +51,11 @@ Sourcegraph couldn't be what it is without the community.
 
 Go in-depth with the 3.15 release by watching the recorded livestream with Product Manager [Christina Forney](https://twitter.com/christina4nee) and CTO [Beyang Liu](https://twitter.com/beyang).
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube-nocookie.com/embed/EJ221hdssDw" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://www.youtube-nocookie.com/embed/EJ221hdssDw" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-</p>
+</div>
 
 **NOTE**: Sourcegraph site admins should definitely check out [Beyang discussing improvements to monitoring, observability, and alerting](https://youtu.be/EJ221hdssDw?t=507).
 
@@ -64,12 +64,12 @@ Go in-depth with the 3.15 release by watching the recorded livestream with Produ
 
 ## Campaigns beta available to all site admins
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube-nocookie.com/embed/ju0XEFU31W0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://www.youtube-nocookie.com/embed/ju0XEFU31W0" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://youtu.be/ju0XEFU31W0" target="_blank">View on YouTube</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://youtu.be/ju0XEFU31W0" target="_blank">View on YouTube</a></p>
+</div>
 
 Campaigns are available for general use in beta by any Sourcegraph instance admin. Users of Sourcegraph.com will need to run a private Sourcegraph instance with their repositories added to try running campaigns on their code. Sourcegraph admins can enable campaigns on their instance by adding `{"experimentalFeatures": { "automation": "enabled" }}”` to their site configuration settings.
 
@@ -85,12 +85,12 @@ Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` 
 
 ## Experimental AND/OR operators for search contents
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube-nocookie.com/embed/PAsZP6wv3Gg" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://www.youtube-nocookie.com/embed/PAsZP6wv3Gg" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://youtu.be/PAsZP6wv3Gg" target="_blank">View on YouTube</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://youtu.be/PAsZP6wv3Gg" target="_blank">View on YouTube</a></p>
+</div>
 
 Search for file contents using AND and OR expressions in queries. These operators enable more expressive searches in regexp and structural search modes. [The documentation](https://docs.sourcegraph.com/code_search/reference/queries#operators) includes more details about how to these operators and their precedence and grouping.
 
@@ -136,12 +136,12 @@ Additionally, it is now possible to log all search and GraphQL requests slower t
 
 ## New visibility filter for scoping searches to public or private repositories
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube-nocookie.com/embed/Q2ZWPwMmbOI" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://www.youtube-nocookie.com/embed/Q2ZWPwMmbOI" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://youtu.be/Q2ZWPwMmbOI" target="_blank">View on YouTube</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://youtu.be/Q2ZWPwMmbOI" target="_blank">View on YouTube</a></p>
+</div>
 
 The new `visibility:` search scope enables filtering based on a repository’s shared state on the code host. Scope options include any, public, or private, and defaults to `visibility:any` when the scope is not specified.
 

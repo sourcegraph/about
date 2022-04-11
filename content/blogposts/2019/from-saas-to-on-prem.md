@@ -11,14 +11,14 @@ published: true
 ---
 
  **“Trust is great. Control is better.”** - German proverb
-<br>
-<br>
+<br/>
+<br/>
 In December 2017, Sourcegraph went from being a traditional cloud-hosted Software as a Service (SaaS) product to an on-premises, self-hosted product. This blog post covers what drove our decision and what challenges we encountered. It explains why we still believe that on-premises and self-hosted are the best way to ensure the success of a product dealing with sensitive customer data. We focus on the technical benefits and challenges of this decision, some of which overlap with the positive business aspects that are mentioned in the [Self-hosted > cloud-hosted](https://docs.google.com/presentation/d/1SpTssaLfALx3SIQj5xkA0ZO8l_6tcuLacQtMqeJubo4) ([Open Core Summit 2019](https://opencoresummit.com/)) talk by Sourcegraph CEO Quinn Slack.
-<br>
+<br/>
 ## Going against the SaaS trend
 2017 was a challenging year for Sourcegraph. Despite having launched a SaaS product that performed code search and code intelligence with blazing speed across tens of thousands of repositories, we had only managed to close a handful of paying customers. Companies were constantly reaching out and requesting information about our product, which, in turn, endorsed the high demand for Sourcegraph. Yet, the conversion from interest to adoption was low. We asked company decision makers why they had opted against using Sourcegraph despite the obvious demand from their engineers. The answer was always the same: they didn’t want to push their private code base to an external software provider, no matter how many benefits we would provide them. This frequent feedback made us question if the SaaS model, despite its popularity and high success rate for many businesses, was the right solution for a product dealing with vulnerable data.
 In mid-2017, we decided to go against the SaaS trend and turn our product into an on-prem, self-hosted solution.
-<br>
+<br/>
 ## The transition from cloud SaaS to on-prem
 While a decade ago on-premises solutions were difficult to setup and required on-site installation, Continuous Integration (CI) has made it possible to verify builds in different environments and increase successful deployments off-site. [Docker](https://docs.sourcegraph.com/admin/install/docker) (for shipping) and [Kubernetes](https://github.com/sourcegraph/deploy-sourcegraph) (for container orchestration) simplify packaging up software and running it on [AWS](https://docs.sourcegraph.com/admin/install/docker/aws), [Google Cloud](https://docs.sourcegraph.com/admin/install/docker/google_cloud) or [DigitalOcean](https://docs.sourcegraph.com/admin/install/docker/digitalocean). This infrastructure eased the way for Sourcegraph to transition from a multi-tenant cloud product to a self-hosted one.
 
@@ -38,11 +38,11 @@ Many of our customers have high security requirements and don’t feel comfortab
 ![Weekly Active Users from paying customers since 2017](/blog/on-prem-customerWAUs.jpg "Weekly Active Users from paying customers since 2017")
 
 Companies can deploy in-house without exposing their code to Sourcegraph employees or other providers. This allows anyone at a company to start running Sourcegraph locally and hassle-free, instead of needing to ask permission to grant access to the codebase to an external cloud infrastructure provider.
-<br>
+<br/>
 ## Ensuring scalability and performance
 The performance of locally run software depends mostly on how much hardware the customer is willing to allocate. The benefit for on-premises software here is that, contrary to SaaS, companies aren’t restrained to a one-size-fits-all performance framework, but can scale the software based on the best hardware that best suits their needs and resources. Sourcegraph is able to work with the existing infrastructure of our customers, and scale and perform accordingly. 
 On the flip side, Sourcegraph has to tackle the diverse challenges that come with running software in different environments.
-<br>
+<br/>
 ## All infrastructure is visible
 By running on-premises, our DevOps work is exposed to the customer, making them aware of the quality of our code. From our point of view, this is a blessing in disguise and helps us set our expectations higher for quality and documentation.
 

@@ -18,7 +18,7 @@ We've all wondered how to use Machine Learning with Go, but what about turning t
 
 ## Summary
 
-Francesc Campoy has since left Google and now works at source{d} (prounounced "sourced"). While he's been there machine learning has been at the forefront of his work.
+Francesc Campoy has since left Google and now works at `source{d}` (prounounced "sourced"). While he's been there machine learning has been at the forefront of his work.
 
 He breaks the discussion down into 4 challenge areas:
 
@@ -27,7 +27,7 @@ He breaks the discussion down into 4 challenge areas:
 * Challenge 3: Learning from Source Code
 * Challenge 4: What Can We Build?
 
-As he walked us through the steps above, other roadblocks were identified and changing tack allows Francesc and source{d} to introduce us to some pretty exciting things that are on the horizon (Rob Pike as a service, anyone?).
+As he walked us through the steps above, other roadblocks were identified and changing tack allows Francesc and `source{d}` to introduce us to some pretty exciting things that are on the horizon (Rob Pike as a service, anyone?).
 
 ---
 

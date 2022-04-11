@@ -40,7 +40,7 @@ A trace can be analyzed later with
 
 But then you end up with something like this:
 
-![Selection 029](//images.contentful.com/le3mxztn6yoo/6ISMViZAA0QwgqcwQUO0Cw/e77570002073afff3245061060460893/Selection_029.png)
+![Selection 029](https://images.contentful.com/le3mxztn6yoo/6ISMViZAA0QwgqcwQUO0Cw/e77570002073afff3245061060460893/Selection_029.png)
 
 The remainder of the talk will talk about how to decipher the tracing output and how you can use it effectively. To do that, we'll walk through 3 demos:
 
@@ -77,7 +77,7 @@ This is a bug that involves gRPC and HTTP/2. We have a server serving client req
 
 Here's what the trace looks like when we encounter the bug:
 
-![Selection 030](//images.contentful.com/le3mxztn6yoo/C2SacK5pbUWKYcaMACi2u/8af6d55a2e5ba8bff2904447a5081bc5/Selection_030.png)
+![Selection 030](https://images.contentful.com/le3mxztn6yoo/C2SacK5pbUWKYcaMACi2u/8af6d55a2e5ba8bff2904447a5081bc5/Selection_030.png)
 
 Note the long pauses.
 
@@ -85,33 +85,33 @@ This server would send very large and very slow responses to its clients. It was
 
 So to investigate, we run a command to create the trace output file. Then we pass that file to `go tool trace`. We get several options for visualizing the data:
 
-![Selection 031](//images.contentful.com/le3mxztn6yoo/5gxYB3kKJGOMsuEKEac8mc/166fc4256479128e7fc5716139be2aaf/Selection_031.png)
+![Selection 031](https://images.contentful.com/le3mxztn6yoo/5gxYB3kKJGOMsuEKEac8mc/166fc4256479128e7fc5716139be2aaf/Selection_031.png)
 
 ### Visualization 1: "View trace"
 
 Note the 1 second pause. The fact that it pauses is surprising. We'd expect this server to be continuously serving client requests. But the 1 second length of the pause isn't surprising, because that's what the `context.WithTimeout` timeout is in the code.
 
 
-![Selection 032](//images.contentful.com/le3mxztn6yoo/UkxPBu9eKGkweeGEoKi0y/62ba78535740e596a842a60feec8197d/Selection_032.png)
+![Selection 032](https://images.contentful.com/le3mxztn6yoo/UkxPBu9eKGkweeGEoKi0y/62ba78535740e596a842a60feec8197d/Selection_032.png)
 
 We're going to click around a bunch in the tracing UI. If you do this yourself, consult the help screen:
 
-![Selection 033](//images.contentful.com/le3mxztn6yoo/1D2utrojmYq6IQ02YAmM40/e20c41222c4c8b7a8f626660ac9bcd6c/Selection_033.png)
+![Selection 033](https://images.contentful.com/le3mxztn6yoo/1D2utrojmYq6IQ02YAmM40/e20c41222c4c8b7a8f626660ac9bcd6c/Selection_033.png)
 
 Here's a quick overview of this view:
 
 
-![Selection 092](//images.contentful.com/le3mxztn6yoo/6n3UgaHcVas2qccGGom6aW/c8146baf53213160a652dd60ae9a181a/Selection_092.png)
+![Selection 092](https://images.contentful.com/le3mxztn6yoo/6n3UgaHcVas2qccGGom6aW/c8146baf53213160a652dd60ae9a181a/Selection_092.png)
 
 ### Visualization 2: "Sync blocking profile"
 
 Let's use this visualization on our example:
 
-![Selection 035](//images.contentful.com/le3mxztn6yoo/3d6tMBYt8QkMO46QeGUeyu/eb799a82b5513a914af9b636e0a30e10/Selection_035.png)
+![Selection 035](https://images.contentful.com/le3mxztn6yoo/3d6tMBYt8QkMO46QeGUeyu/eb799a82b5513a914af9b636e0a30e10/Selection_035.png)
 
-![Selection 036](//images.contentful.com/le3mxztn6yoo/1coke9T28wuoeWmaO0io0m/537e24a8fe2568cbf52d45b997ad82e5/Selection_036.png)
+![Selection 036](https://images.contentful.com/le3mxztn6yoo/1coke9T28wuoeWmaO0io0m/537e24a8fe2568cbf52d45b997ad82e5/Selection_036.png)
 
-![Selection 037](//images.contentful.com/le3mxztn6yoo/2YLaFW7KvmEe2EoyUiOggo/dcdf7e6ee3300cf15c906602ff3ab578/Selection_037.png)
+![Selection 037](https://images.contentful.com/le3mxztn6yoo/2YLaFW7KvmEe2EoyUiOggo/dcdf7e6ee3300cf15c906602ff3ab578/Selection_037.png)
 
 
 
@@ -119,24 +119,24 @@ Let's use this visualization on our example:
 
 All the different types of goroutines running in the program during the trace period:
 
-![Selection 038](//images.contentful.com/le3mxztn6yoo/6fRbIJZ8CAMWguic0UCWas/1b521974a8c060e35c9e24664bed8085/Selection_038.png)
+![Selection 038](https://images.contentful.com/le3mxztn6yoo/6fRbIJZ8CAMWguic0UCWas/1b521974a8c060e35c9e24664bed8085/Selection_038.png)
 
 Click the top item, with 10000 goroutines, and we get here:
 
 
-![Selection 039](//images.contentful.com/le3mxztn6yoo/4OFTnOvSZq4iqOOseYuuig/6ab8692df5cc2bd19c3c90d593390c91/Selection_039.png)
+![Selection 039](https://images.contentful.com/le3mxztn6yoo/4OFTnOvSZq4iqOOseYuuig/6ab8692df5cc2bd19c3c90d593390c91/Selection_039.png)
 
 The Sync block time corresponds to the 1 second pause we saw.
 
-![Selection 040](//images.contentful.com/le3mxztn6yoo/4i5gNOIoY0gGaIakWWEaiW/d6fc265596c4e4342eda5f8312683346/Selection_040.png)
+![Selection 040](https://images.contentful.com/le3mxztn6yoo/4i5gNOIoY0gGaIakWWEaiW/d6fc265596c4e4342eda5f8312683346/Selection_040.png)
 
 
 
 What was the goroutine doing when it suddenly stopped? The Go execution tracer can lead us to the relevant code:
 
-![Selection 041](//images.contentful.com/le3mxztn6yoo/1DPVypYONG0WSQeqeMQYYa/6a56bbd4827b1e196e295d3a2ef35de9/Selection_041.png)
+![Selection 041](https://images.contentful.com/le3mxztn6yoo/1DPVypYONG0WSQeqeMQYYa/6a56bbd4827b1e196e295d3a2ef35de9/Selection_041.png)
 
-![Selection 042](//images.contentful.com/le3mxztn6yoo/23en1HvMfKe08m68I8m8U6/cc55d4885a419d73b29fd4fbd2b79c73/Selection_042.png)
+![Selection 042](https://images.contentful.com/le3mxztn6yoo/23en1HvMfKe08m68I8m8U6/cc55d4885a419d73b29fd4fbd2b79c73/Selection_042.png)
 
 The body of that function is a giant select statement. The proceed channel is the only case that returns an actual non-error value.
 
@@ -245,15 +245,15 @@ func (qb *quotaPool) cancel() {
 
 Here's how execution of these methods might interleave across multiple goroutines:
 
-![Selection 065](//images.contentful.com/le3mxztn6yoo/pCLL9lrMg8kIOq4CEA84E/b8e31659320e5f17f84fa70189f08592/Selection_065.png)
+![Selection 065](https://images.contentful.com/le3mxztn6yoo/pCLL9lrMg8kIOq4CEA84E/b8e31659320e5f17f84fa70189f08592/Selection_065.png)
 
 or it might do this
 
-![Selection 066](//images.contentful.com/le3mxztn6yoo/52VIgkciH6MgKkI2m8gC4A/d9b30737dd4ba3dc8386e936f8c0def9/Selection_066.png)
+![Selection 066](https://images.contentful.com/le3mxztn6yoo/52VIgkciH6MgKkI2m8gC4A/d9b30737dd4ba3dc8386e936f8c0def9/Selection_066.png)
 
 or maybe this
 
-![Selection 067](//images.contentful.com/le3mxztn6yoo/2fqqws6VcceYGsK4AIoQ4E/26803797dd758ab883cda7648b637cf0/Selection_067.png)
+![Selection 067](https://images.contentful.com/le3mxztn6yoo/2fqqws6VcceYGsK4AIoQ4E/26803797dd758ab883cda7648b637cf0/Selection_067.png)
 
 
 
@@ -262,11 +262,11 @@ or maybe this
 
 Let's take a look at the goroutine that's about to stall. It overlaps completely with the goroutine above it. They overlap for 36 microseconds.
 
-![Selection 043](//images.contentful.com/le3mxztn6yoo/7xCss3I0neuUUC4IOa0AGw/d178a87cd30a5c17572e87179ad390be/Selection_043.png)
+![Selection 043](https://images.contentful.com/le3mxztn6yoo/7xCss3I0neuUUC4IOa0AGw/d178a87cd30a5c17572e87179ad390be/Selection_043.png)
 
 So it looks like it's doing this:
 
-![Selection 068](//images.contentful.com/le3mxztn6yoo/tpUaVpcxBQ0kUQgiCk2A6/5b6e7e8c683849b1946795ed77868c63/Selection_068.png)
+![Selection 068](https://images.contentful.com/le3mxztn6yoo/tpUaVpcxBQ0kUQgiCk2A6/5b6e7e8c683849b1946795ed77868c63/Selection_068.png)
 
 
 
@@ -334,9 +334,9 @@ There's three ways to get the tracing data.
 This is an execution trace from another program:
 
 
-![Selection 044](//images.contentful.com/le3mxztn6yoo/3F3FAQIbJYyoumgkie64Yi/10c6a0551c017c10975febef929eb11b/Selection_044.png)
+![Selection 044](https://images.contentful.com/le3mxztn6yoo/3F3FAQIbJYyoumgkie64Yi/10c6a0551c017c10975febef929eb11b/Selection_044.png)
 
-![Selection 045](//images.contentful.com/le3mxztn6yoo/5d0xohJB8s8ccmQkme2C6C/d9e17633ff3573d21bccb3cef75e3b5e/Selection_045.png)
+![Selection 045](https://images.contentful.com/le3mxztn6yoo/5d0xohJB8s8ccmQkme2C6C/d9e17633ff3573d21bccb3cef75e3b5e/Selection_045.png)
 
 Note:
 
@@ -351,9 +351,9 @@ Note:
 
 What about the other goroutine?
 
-![Selection 046](//images.contentful.com/le3mxztn6yoo/4qLyMxQ3MA4ekE4SwYgMSm/5027c63c363c1e3872af17f99e2dac02/Selection_046.png)
+![Selection 046](https://images.contentful.com/le3mxztn6yoo/4qLyMxQ3MA4ekE4SwYgMSm/5027c63c363c1e3872af17f99e2dac02/Selection_046.png)
 
-![Selection 047](//images.contentful.com/le3mxztn6yoo/6t8do3L83eYMQESwSsmIAm/e42230c4c93b15a14c13d32ed34a56f4/Selection_047.png)
+![Selection 047](https://images.contentful.com/le3mxztn6yoo/6t8do3L83eYMQESwSsmIAm/e42230c4c93b15a14c13d32ed34a56f4/Selection_047.png)
 
 Note these questions do not pertain to when the goroutine starts or stops, so the execution tracer is probably not the right tool to answer these questions. It might be helpful to add the capability to provide annotations to the tracer for additional context, but that's not currently a feature.
 
@@ -370,7 +370,7 @@ Go's garbage collector has come a long way, but it's still improving.
 
 Here's an execution trace from a server:
 
-![Selection 048](//images.contentful.com/le3mxztn6yoo/3Hy24tFtHiSUEg4g0Kgqcs/087ef2b6357ea68ed6fca66b28836d66/Selection_048.png)
+![Selection 048](https://images.contentful.com/le3mxztn6yoo/3Hy24tFtHiSUEg4g0Kgqcs/087ef2b6357ea68ed6fca66b28836d66/Selection_048.png)
 
 Note the number of goroutines waiting to run increases (note the bump).
 
@@ -384,16 +384,16 @@ A brief history of Go garbage collection timeline:
 * Go 1: program fully stopped
 * Go 1.1: GC uses parallel threads
 * Go 1.4: precise collection (understood the difference between large integers and pointers)
-* Go 1.5: global application pauses <10ms
-* Go 1.8: individual goroutine pauses <100μs
+* Go 1.5: global application pauses < 10ms
+* Go 1.8: individual goroutine pauses < 100μs
 
-![Selection 049](//images.contentful.com/le3mxztn6yoo/5SOjEgRUwosCwGmaOA4QMY/c11f41dd8a275bd849824772002c40d6/Selection_049.png)
+![Selection 049](https://images.contentful.com/le3mxztn6yoo/5SOjEgRUwosCwGmaOA4QMY/c11f41dd8a275bd849824772002c40d6/Selection_049.png)
 
-![Selection 050](//images.contentful.com/le3mxztn6yoo/FgFCsIwIEwWG0MWK2cwoG/50311a63a3df028a9ff2220fe6f8ee4a/Selection_050.png)
+![Selection 050](https://images.contentful.com/le3mxztn6yoo/FgFCsIwIEwWG0MWK2cwoG/50311a63a3df028a9ff2220fe6f8ee4a/Selection_050.png)
 
-![Selection 051](//images.contentful.com/le3mxztn6yoo/3ffwibcVmMKQCaeKSSuuOW/a52d05000eb4e3ff348e748f487c9294/Selection_051.png)
+![Selection 051](https://images.contentful.com/le3mxztn6yoo/3ffwibcVmMKQCaeKSSuuOW/a52d05000eb4e3ff348e748f487c9294/Selection_051.png)
 
-![Selection 052](//images.contentful.com/le3mxztn6yoo/1vtsqtlG3W8msakAc0YcUc/03cb42b43d47146aa07727659c9db16d/Selection_052.png)
+![Selection 052](https://images.contentful.com/le3mxztn6yoo/1vtsqtlG3W8msakAc0YcUc/03cb42b43d47146aa07727659c9db16d/Selection_052.png)
 
 
 
@@ -407,7 +407,7 @@ A brief history of Go garbage collection timeline:
 
 Everything stops when the GC begins and ends its mark phase (garbage collector does bookkeeping here that requires user code to stop). Stopping everything takes time:
 
-![Selection 053](//images.contentful.com/le3mxztn6yoo/18fRvlKaG4Msuw02AS0MMe/0b83b93540af2a03b23e58b2fc6312d4/Selection_053.png)
+![Selection 053](https://images.contentful.com/le3mxztn6yoo/18fRvlKaG4Msuw02AS0MMe/0b83b93540af2a03b23e58b2fc6312d4/Selection_053.png)
 
 Here, we have an issue, because a few straggler goroutines don't stop with the others. GC can only begin after all goroutines have stopped. In the 3.6ms gap between most goroutines stop and when the laggards stop, GC cannot proceed and there is no CPU utilization.
 
@@ -442,7 +442,7 @@ go func() {
 
 The Go 1.10 compiler should have a general, permanent fix (golang.org/issue/10958). The workaround is available now.
 
-![Selection 054](//images.contentful.com/le3mxztn6yoo/3k9SDwShWoIsgwm0wMMcGE/864744c4bbfeea27dcfcaf55c807e03e/Selection_054.png)
+![Selection 054](https://images.contentful.com/le3mxztn6yoo/3k9SDwShWoIsgwm0wMMcGE/864744c4bbfeea27dcfcaf55c807e03e/Selection_054.png)
 
 
 
@@ -458,17 +458,17 @@ The GC needs to make progress; it needs to know that it will collect garbage bef
 
 Each of these goroutine lines has 2 rows. The top is user code, the bottom is GC:
 
-![Selection 055](//images.contentful.com/le3mxztn6yoo/6mondzjgQ0oWgk2WyOm046/1b672b0b8ff75321b0c1778792b81241/Selection_055.png)
+![Selection 055](https://images.contentful.com/le3mxztn6yoo/6mondzjgQ0oWgk2WyOm046/1b672b0b8ff75321b0c1778792b81241/Selection_055.png)
 
 
 Here's an assist that ran for 4.4ms:
 
-![Selection 056](//images.contentful.com/le3mxztn6yoo/59PzEvaVZKGuyYwCqU0EEO/c1d61a9b21f3e5887165ecfac05be0eb/Selection_056.png)
+![Selection 056](https://images.contentful.com/le3mxztn6yoo/59PzEvaVZKGuyYwCqU0EEO/c1d61a9b21f3e5887165ecfac05be0eb/Selection_056.png)
 
 
 Other assists are slower:
 
-![Selection 057](//images.contentful.com/le3mxztn6yoo/44NQsrYsusUuqaKUUgKGuI/cffe74043c0a6a67fdb2bc79636cd231/Selection_057.png)
+![Selection 057](https://images.contentful.com/le3mxztn6yoo/44NQsrYsusUuqaKUUgKGuI/cffe74043c0a6a67fdb2bc79636cd231/Selection_057.png)
 
 ...but that goroutine probably allocated 10MB of memory, so it deserved what it got.
 

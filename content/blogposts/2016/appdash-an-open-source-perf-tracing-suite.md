@@ -29,11 +29,11 @@ This post will walk you through an example app that uses Appdash and cover exact
 
 If you don’t already have Go, [install that first](https://golang.org/doc/install). Then install Appdash by running:
 
-<pre name="27e2" id="27e2" class="graf graf--pre graf-after--p">go get -u sourcegraph.com/sourcegraph/appdash/...</pre>
+<pre name="27e2" id="27e2" className="graf graf--pre graf-after--p">go get -u sourcegraph.com/sourcegraph/appdash/...</pre>
 
 This will also install the example web app in the Appdash repository that demonstrates the basic features of Appdash. Let’s run that first:
 
-<pre name="c9e1" id="c9e1" class="graf graf--pre graf-after--p">$ go get -u sourcegraph.com/sourcegraph/appdash/...
+<pre name="c9e1" id="c9e1" className="graf graf--pre graf-after--p">$ go get -u sourcegraph.com/sourcegraph/appdash/...
 $ webapp
 2015/04/27 20:40:56 Appdash web UI running on HTTP :8700
 [negroni] listening on :8699</pre>

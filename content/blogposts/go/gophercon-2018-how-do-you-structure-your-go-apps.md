@@ -48,7 +48,7 @@ Kat answers the opening question by building a beer reviewing service that has a
 ## Types of Structure
 There's a variety of ways one can dive in and start organizing a project. Some common ways of the beer reviewing service could be structured are:
 - [Flat Structure](https://sourcegraph.com/github.com/katzien/go-structure-examples@master/-/tree/flat)
-<img width="832" alt="screenshot 2018-08-28 16 01 40" src="https://user-images.githubusercontent.com/4897310/44753563-c2f20200-aadb-11e8-908d-16803b637fe4.png">
+<img width="832" alt="screenshot 2018-08-28 16 01 40" src="https://user-images.githubusercontent.com/4897310/44753563-c2f20200-aadb-11e8-908d-16803b637fe4.png"/>
 
   - Start with the obvious one, a flat structure. Don't over complicate things too early.
 
@@ -56,14 +56,14 @@ As the application gets more complex we can try other approaches:
 - [Layered](https://sourcegraph.com/github.com/katzien/go-structure-examples@master/-/tree/layered)
   - A layered architecture approach that places files that interact with similar areas in the same directory.
   - This grouping by functional type is a classic MVC used by a lot of frameworks.
-<img width="428" alt="screenshot 2018-08-28 16 01 48" src="https://user-images.githubusercontent.com/4897310/44753601-ddc47680-aadb-11e8-882c-54e7d9ebb8ef.png">
+<img width="428" alt="screenshot 2018-08-28 16 01 48" src="https://user-images.githubusercontent.com/4897310/44753601-ddc47680-aadb-11e8-882c-54e7d9ebb8ef.png"/>
 
 However, there are some issues with the group by function approach. For example, it could be problematic if a variable needs to be shared by two different layers, which layer do you put it in? Or do you duplicate? Or it could be tough to understand where does initialization go? Does main initialize a storage shared between models, or does each model initialize their own storage.
 
 - [Modular](https://sourcegraph.com/github.com/katzien/go-structure-examples@master/-/tree/modular)
   - Beers, reviews and storage
     - Everything is grouped logically, but it’s still hard to decide which packages should be reused or when to make a new package.
-<img width="832" alt="screenshot 2018-08-28 16 02 01" src="https://user-images.githubusercontent.com/4897310/44753609-e6b54800-aadb-11e8-8d3e-73698cc0da4a.png">
+<img width="832" alt="screenshot 2018-08-28 16 02 01" src="https://user-images.githubusercontent.com/4897310/44753609-e6b54800-aadb-11e8-8d3e-73698cc0da4a.png"/>
 
 There's a different approach that we can try - Grouping by context or also known as Domain Driven Development.
 
@@ -94,7 +94,7 @@ In the real world you could be dealing with this type of complexity so this is a
 
 ## Hexagonal Architecture
 
-<img width="832" alt="screenshot 2018-08-28 15 46 43" src="https://user-images.githubusercontent.com/4897310/44753508-90480980-aadb-11e8-8362-7f01b5b1fb7f.png">
+<img width="832" alt="screenshot 2018-08-28 15 46 43" src="https://user-images.githubusercontent.com/4897310/44753508-90480980-aadb-11e8-8362-7f01b5b1fb7f.png"/>
 
 Hexagonal architecture helps achieve the goal of being able to easily change one part of the application without having to rewrite the entire thing. The key rule in the hex model is that dependencies are only allowed to point inwards.
 
@@ -106,7 +106,7 @@ The outer layer in the hex model can reach out to the domain as much as they lik
 
 In the demo application we end up with the following architecture:
 
-<img width="832" alt="screenshot 2018-08-28 12 31 24" src="https://user-images.githubusercontent.com/4897310/44753500-8920fb80-aadb-11e8-8243-f2ebd1f0a4d7.png">
+<img width="832" alt="screenshot 2018-08-28 12 31 24" src="https://user-images.githubusercontent.com/4897310/44753500-8920fb80-aadb-11e8-8243-f2ebd1f0a4d7.png"/>
 
 
 A huge benefit of this structure that becomes more visible in larger projects, is how it is very easy to extend it’s functionality without affecting multiple parts of the codebase. For example, you want to create an RPC version of the API. You would add it to the `pkg` directory and implement the interfaces.

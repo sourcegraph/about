@@ -105,7 +105,7 @@ With natural sounding commands, we handle human element. Next we need to be able
 
 Once you have the option to have multiple outputs, human output should be the primary. Sometimes this also means thinking about the presentation of the values of the content, for example dates. "2019-07-15T14:32:22Z" is not very readable. "10 days ago" is better. 
 
-<https://github.com/dustin/go-humanize> go-humanize has functions to help make human readable output. 
+https://github.com/dustin/go-humanize go-humanize has functions to help make human readable output. 
 
 ### Implicit Resources in the Domain
 
@@ -124,7 +124,7 @@ Once you create aliases, helpful to customize the output of help.
 
 Instead of all the options and all the flags (the most common help output), give some guidance of what the user SHOULD be doing with this command.
 
-<https://carolynvanslyck.com/talk/go/cli/#/alias-helptext>
+https://carolynvanslyck.com/talk/go/cli/#/alias-helptext
 
 We can group the set of resources that folks can work with, and then group the aliases or shortcuts for the commands.
 
@@ -219,10 +219,10 @@ This code is great, but something will haunt me. Anyone who is working on my app
 Create a configuration package and load all the viper into that. Then configuration is loaded once and read over and over again. 
 
 Example:
-<https://carolynvanslyck.com/talk/go/cli/#/sting-of-the-viper>
+https://carolynvanslyck.com/talk/go/cli/#/sting-of-the-viper
 
 Refactored application:
-<https://carolynvanslyck.com/talk/go/cli/#/app-with-config-pkg>
+https://carolynvanslyck.com/talk/go/cli/#/app-with-config-pkg
 
 https://carolynvanslyck.com/talk/go/cli/#/bind-viper-flag
 

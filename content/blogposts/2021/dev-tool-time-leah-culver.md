@@ -41,11 +41,11 @@ Slightly more complex Git functionalities, such as cherry picking into other bra
 
 ## [Dropbox Paper](https://www.dropbox.com/paper)
 
-<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">“If you’re still using Google docs, what are you doing!” 😂Questioning everything as <a href="https://twitter.com/leahculver?ref_src=twsrc%5Etfw">@leahculver</a> walks us through her workflow and favorite tools. <a href="https://t.co/1kYLl1QfZU">https://t.co/1kYLl1QfZU</a></p>&mdash; Kacie (@mskaciej) <a href="https://twitter.com/mskaciej/status/1387471457018515458?ref_src=twsrc%5Etfw">April 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote className="twitter-tweet tw-align-center"><p lang="en" dir="ltr">“If you’re still using Google docs, what are you doing!” 😂Questioning everything as <a href="https://twitter.com/leahculver?ref_src=twsrc%5Etfw">@leahculver</a> walks us through her workflow and favorite tools. <a href="https://t.co/1kYLl1QfZU">https://t.co/1kYLl1QfZU</a></p>&mdash; Kacie (@mskaciej) <a href="https://twitter.com/mskaciej/status/1387471457018515458?ref_src=twsrc%5Etfw">April 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Leah loves the simplicity of Dropbox Paper for taking notes and appreciates how easy it is to include Markdown as well as the fun features like adding emoji. Despite its name, Dropbox Paper is not intended to be used to format something that will later be printed. It’s intended as a minimalistic note-taking app that allows the user to discover hidden features along the way instead of the traditional approach of cluttering all the options into hierarchical menus. One of the cooler hidden features is its rich [code syntax highlighting](https://youtu.be/QNYoOCLocAI?t=1187) (this blew our minds).
 
-<img src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-leah-culver-dropbox-paper.png" alt="Dropbox Paper code syntax highlighting" width="700" height="375">
+<img src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-leah-culver-dropbox-paper.png" alt="Dropbox Paper code syntax highlighting" width="700" height="375" />
 
 ## [1Password](https://1password.com/)
 
@@ -86,6 +86,6 @@ There are also features like labels and snooze to help locate and surface messag
 
 Check out the recording of the episode below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/QNYoOCLocAI?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/QNYoOCLocAI?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameBorder="0"></iframe>
 </div>

@@ -23,6 +23,7 @@ You should organize your types into its own code structure and take time to revi
 
 Define your schema
 
+```
     import faker from 'faker';
 
     export const typeDefs = `
@@ -43,9 +44,10 @@ Define your schema
         };
       }
     }
-
+```
 * decorator
 
+```
 
     import { configure, addDecorator } from '@storybook/react';
     import apolloStorybookDecorator from 'apollo-storybook-decorator';
@@ -63,10 +65,10 @@ Define your schema
 
     configure(loadStories, module);
 
-
+```
 * write a storybook story.
 
-
+```
     import React from 'react';
     import { graphql } from 'react-apollo';
     import gql from 'graphql-tag';
@@ -97,4 +99,4 @@ Define your schema
         return <HelloWorld />;
       });
 
-
+```

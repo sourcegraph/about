@@ -67,7 +67,7 @@ While a +/-3% difference may not seem like it's worth losing sleep over, package
 
 For that, we're going to need some statistics.
 
-## Benchmarks <3 Statistics
+## Benchmarks / Statistics
 
 To understand the true performance characteristics of a package, we'll want to look at multiple executions of our benchmarks, so we can compute the mean and variance. For that, we can use the [`benchstat`](https://godoc.org/golang.org/x/perf/cmd/benchstat) command:
 
@@ -96,8 +96,6 @@ While `benchstat` can be used to analyze multiple benchmark executions to comput
 As you can see above, our new code ran, on average, in `13.4ms` vs. `13.5ms`. ...Woohoo? Thankfully, `benchstat` provides some statistical context at the bottom to help us understand if this improvement is statistically significant. Usually, instead of a `~` we'll see a `+/-X.XX%` change between the two sets of benchmark executions. However, in this case `benchstat` decided that the delta was not significant enough because of the high `p-value` (`0.247`). What's a p-value? Think of it as the probability, assuming our change had no impact on the performance of our code, of seeing `benchstat` report a performance improvement at least as good as what we just saw. Lower p-values are better, because that means any improvement that `benchstat` found is more unlikely to have occurred without a meaningful performance improvement.
 
 Now for a surprise -- that was actually two runs of the same code with no changes! A p-value of `0.247` is actually quite bad, and in general you'll want a p-value of `<= 0.05` for an improvement to be statistically significant.
-
-<!-- Keep in mind that statistically, if you run your code enough times, you'll eventually get a good p-value, even with no changes to the underlying code. This is referred to as the `Multiple Testing Problem` (enter, [obligatory XKCD](https://xkcd.com/882/)). -->
 
 ## Benchmarking Recap
 

@@ -4,8 +4,12 @@ import { truncate } from 'lodash'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
+import { BlockquoteWithBorder } from '@components'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
+
+export type Components = import('mdx/types').MDXComponents
+const components = { BlockquoteWithBorder }
 
 /**
  * A blog post.
@@ -25,7 +29,7 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
     const body =
         full && content ? (
             <div className="blog-post__html">
-                <MDXRemote {...content} />
+                <MDXRemote {...content} components={components as Components} />
             </div>
         ) : (
             <>

@@ -11,9 +11,11 @@ published: true
 ---
 
 <style>
+{`
   p {
     overflow:scroll
   }
+`}
 </style>
 
 # Install Sourcegraph to get great code search on AWS CodeCommit
@@ -25,11 +27,11 @@ Setting up Sourcegraph code search to work with AWS CodeCommit is quick and easy
 1. First, [install and run an instance of Sourcegraph](https://docs.sourcegraph.com/admin).
 2. Create a AWS IAM user with programmatic access.
 
- <img alt="CodeCommit-CreateUser" src="//images.contentful.com/le3mxztn6yoo/750VgGMn84q6ciwoOKiGMi/a6007e31880c976df94f9ecde68dcf1a/CodeCommit-CreateUser.png" class="ba pa1 b--light-7 br2" />
+ <img alt="CodeCommit-CreateUser" src="//images.contentful.com/le3mxztn6yoo/750VgGMn84q6ciwoOKiGMi/a6007e31880c976df94f9ecde68dcf1a/CodeCommit-CreateUser.png" className="ba pa1 b--light-7 br2" />
 
 3. Attach the permission `AWSCodeCommitReadOnly` to this user.
 
-  <img alt="CodeCommit-Permissions" src="//images.contentful.com/le3mxztn6yoo/2vZ3AXk9Mc2MOGMIseQemg/e319cfd46a79fdf9237503f57e6c67c8/CodeCommit-Permissions.png" class="ba pa1 b--light-7 br2"/>
+  <img alt="CodeCommit-Permissions" src="//images.contentful.com/le3mxztn6yoo/2vZ3AXk9Mc2MOGMIseQemg/e319cfd46a79fdf9237503f57e6c67c8/CodeCommit-Permissions.png" className="ba pa1 b--light-7 br2"/>
 
 4. Create a SSH key pair:
 
@@ -39,7 +41,7 @@ Setting up Sourcegraph code search to work with AWS CodeCommit is quick and easy
 
 5. Add the public key to the IAM user (under the "Security credentials" tab). After it is uploaded, make a note of its **SSH key ID**.
 
- <img alt="CodeCommit-PublicKey" src="//images.contentful.com/le3mxztn6yoo/37bSN5FztCU6IAIMSiqYgQ/ccd769ca77041b11b8daef49cba42da0/CodeCommit-PublicKey.png" class="ba pa1 b--light-7 br2" />
+ <img alt="CodeCommit-PublicKey" src="//images.contentful.com/le3mxztn6yoo/37bSN5FztCU6IAIMSiqYgQ/ccd769ca77041b11b8daef49cba42da0/CodeCommit-PublicKey.png" className="ba pa1 b--light-7 br2" />
 
 6. Modify your `config.json` (which you created as part of installing Sourcegraph) to access your AWS CodeCommit repositories. You'll need to make two changes:
 

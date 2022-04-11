@@ -36,9 +36,9 @@ Sourcegraph 3.34 is now available! Here are some highlights from this release:
 ## Troubleshoot your searches with the "no results" page
 
 Searches that return no results can result in a confusing experience. When this occurs, we now display helpful tips on how to use search, examples of how to solve common query issues, and links to tutorial videos addressing common use cases.
-<img class="blog-image" title="No results page" alt="This image shows the new no results page, with resources available to troubleshoot your search when no results are returned." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.34/no_results_page.png">
+<img className="blog-image" title="No results page" alt="This image shows the new no results page, with resources available to troubleshoot your search when no results are returned." src="https://storage.googleapis.com/sourcegraph-assets/blog/3.34/no_results_page.png"/>
 
 ## Quickly navigate your Go code with Find Implementations
 
 If you have precise code intelligence enabled for your Go repositories, you can now click on "Find Implementations" to navigate to a symbol's interface definition. If you're at the interface definition itself, clicking on the same button will show all the places where the interface is being implemented, allowing you to explore how it's being used by other users across repositories. It can also show you which interfaces a struct implements.
-<img class="blog-image" title="Find implementations for Go" alt="Find implementations for Go" src="https://user-images.githubusercontent.com/1657213/142938393-7aed0c41-28b8-4cab-bf0d-2f9fd7f1078c.png">
+<img className="blog-image" title="Find implementations for Go" alt="Find implementations for Go" src="https://user-images.githubusercontent.com/1657213/142938393-7aed0c41-28b8-4cab-bf0d-2f9fd7f1078c.png"/>

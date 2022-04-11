@@ -13,13 +13,13 @@ heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.j
 published: true
 ---
 
-<div class="container p-0 liveblog-presenters">
-  <div class="row m-0">
-      <p class=" mr-12 m-0">
-        <span class="liveblog-presenters__name">Tara Vancil</span>
-        <a href="https://twitter.com/taravancil" target="_blank" title="Twitter"><i class="fa fa-twitter pr-2"></i></a>
-        <a href="https://github.com/taravancil" target="_blank" title="GitHub"><i class="fa fa-github pr-2"></i></a>
-        <a href="https://taravancil.com" target="_blank" title="Speaker's site"><i class="fa fa-globe pr-2"></i></a>
+<div className="container p-0 liveblog-presenters d-flex w-100 text-center">
+  <div className="row m-0 w-100">
+      <p className=" mr-12 m-0 w-100">
+        <span className="liveblog-presenters__name">Tara Vancil</span>
+        <a href="https://twitter.com/taravancil" target="_blank" title="Twitter"><i className="fa fa-twitter pr-2"></i></a>
+        <a href="https://github.com/taravancil" target="_blank" title="GitHub"><i className="fa fa-github pr-2"></i></a>
+        <a href="https://taravancil.com" target="_blank" title="Speaker's site"><i className="fa fa-globe pr-2"></i></a>
       </p>
   </div>
 </div>
@@ -170,6 +170,6 @@ JavaScript is precious, learn to love it or eat it's dust.
 
 ## Q&A
 
-1. **What book would you recommend?**<br>She learned from MDN, Moxilla Developers Network?<br><br>
-2. **What are your thoughts on [WASM](https://webassembly.org/)?**<br>
+1. **What book would you recommend?**<br/>She learned from MDN, Moxilla Developers Network?<br/>
+2. **What are your thoughts on [WASM](https://webassembly.org/)?**<br/>
 Very excited about it because it cooperates with the web, doesn't change/break it.

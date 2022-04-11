@@ -68,11 +68,11 @@ memory into the kernelspace memory. This function has a history of [careful
 auditing](https://www.defcon.org/images/defcon-19/dc-19-presentations/Cook/DEFCON-19-Cook-Kernel-Exploitation.pdf)
 because incorrect uses can (and have) lead to vulnerabilities. We can find all
 `copy_from_user` calls with a query like `copy_from_user(:[args])`. Try it
-live (the <svg class="mdi-icon " style="border:1px solid #2f9cf1; border-radius: 2px; fill:#2b2b2b; background:#cbd4e2" width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> toggle means structural search is active):
+live (the <svg className="mdi-icon" style={{border:'1px solid #2f9cf1', borderRadius:'2px', fill: '#2b2b2b', background: '#cbd4e2'}} width="24" height="24" viewBox="0 0 24 24"><path d="M15,4V6H18V18H15V20H20V4M4,4V20H9V18H6V6H9V4H4Z"></path></svg> toggle means structural search is active):
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [copy\_from\_user(:[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28:%5Bargs%5D%29&patternType=structural)
+🔎 [`copy\_from\_user(:[args])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28:%5Bargs%5D%29&patternType=structural)
 
 </div>
 
@@ -86,7 +86,7 @@ enough to just follow along this blog post!
 
 Of course, we _could_ have run a simpler regex search for the prefix with
 something like
-[copy\_from\_user(](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
+[`copy\_from\_user(`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28+lang:c+&patternType=literal)
 and get results more quickly, and sometimes that's the right thing to do.
 
 But in other cases we can do more interesting things with structural search
@@ -106,10 +106,10 @@ error-prone than simple or static values. So, one thing we could check is
 whether there are other calls that calculate the size of memory in a similar way to the
 above, using subtraction and `sizeof`:
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
-:[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29&patternType=structural)
+🔎 [`copy\_from\_user(:[dst], :[src], sizeof(:[\_]) -
+:[\_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+copy_from_user%28:%5Bdst%5D%2C+:%5B_%5D%2C+sizeof%28:%5B_%5D%29+-+:%5B_%5D%29&patternType=structural)
 
 </div>
 
@@ -125,9 +125,9 @@ Structural search can also identify patterns to clean up. For example, one [clea
 
 Here's a query to easily find more of these patterns:
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [list\_del(:[x]); list\_add(:[x], :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29&patternType=structural)
+🔎 [`list\_del(:[x]); list\_add(:[x], :[\_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/torvalds/linux%24+list_del%28:%5Bx%5D%29%3B+list_add%28:%5Bx%5D%2C+:%5B_%5D%29&patternType=structural)
 
 </div>
 
@@ -158,57 +158,57 @@ a short list that gives just a taste of some patterns you can try out:
 
 **Java**. Find try-catch-finally statements where the catch statement has no body (the `catch` clause could be omitted)
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [try {:[\_]} catch (:[\_]) { } finally {:[\_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/elastic/elasticsearch%24+try+%7B:%5B_%5D%7D+catch+%28:%5Be%5D%29+%7B+%7D+finally+%7B:%5B_%5D%7D+lang:java&patternType=structural)
+🔎 [`try {:[\_]} catch (:[\_]) { } finally {:[\_]}`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/elastic/elasticsearch%24+try+%7B:%5B_%5D%7D+catch+%28:%5Be%5D%29+%7B+%7D+finally+%7B:%5B_%5D%7D+lang:java&patternType=structural)
 
 </div>
 
 **Python**. Find old-style string formatted `print` statements
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [print(":[string]" % :[args])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/django/django%24+print%28%22:%5Bargs%5D%22+%25+:%5Bv%5D%29+lang:python&patternType=structural)
+🔎 [`print(":[string]" % :[args])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/django/django%24+print%28%22:%5Bargs%5D%22+%25+:%5Bv%5D%29+lang:python&patternType=structural)
 
 </div>
 
 **Rust**. Find chained `filter(...).next()` that could simplified to `.find(...)` (based on [lint](https://rust-lang.github.io/rust-clippy/master/index.html#filter_next))
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [.filter(:[\_]).next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24++.filter%28:%5B_%5D%29.next%28%29&patternType=structural) and [.filter(:[\_]) .next()](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24+.filter%28:%5B_%5D%29+.next%28%29&patternType=structural) (the latter matches across newlines)
+🔎 [`.filter(:[\_]).next()`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24++.filter%28:%5B_%5D%29.next%28%29&patternType=structural) and [`.filter(:[\_]) .next()`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/openethereum/openethereum%24+.filter%28:%5B_%5D%29+.next%28%29&patternType=structural) (the latter matches across newlines)
 
 </div>
 
 **ReactJS**. Look for opportunities to optimize away arrow functions (see the [React FAQ](https://reactjs.org/docs/faq-functions.html#arrow-function-in-render))
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [:[[prop]]={() => :[fn]()}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/withspectrum/spectrum%24+:%5B%5Bprop%5D%5D%3D%7B%28%29+%3D%3E+:%5Bfn%5D%28%29%7D&patternType=structural)
+🔎 [`:[[prop]]={() => :[fn]()}`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/withspectrum/spectrum%24+:%5B%5Bprop%5D%5D%3D%7B%28%29+%3D%3E+:%5Bfn%5D%28%29%7D&patternType=structural)
 
 </div>
 
 **Go**. Find `.type(...)` switches that contain a `nil:` case
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [switch :[[v]] := :[x].(type) {:[\_] case nil: :[\_]}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24+switch+:%5B%5Bv%5D%5D+:%3D+:%5Bx%5D.%28type%29+%7B:%5B_%5D+case+nil:+:%5B_%5D%7D+lang:go+&patternType=structural)
+🔎 [`switch :[[v]] := :[x].(type) {:[\_] case nil: :[\_]}`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/golang/go%24+switch+:%5B%5Bv%5D%5D+:%3D+:%5Bx%5D.%28type%29+%7B:%5B_%5D+case+nil:+:%5B_%5D%7D+lang:go+&patternType=structural)
 
 </div>
 
 **Clojure**. Find `cond` expressions with an `:else nil` branch at the end
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [(cond :[\_] :else nil)](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/LightTable/LightTable%24+%28cond+:%5B_%5D+:else+nil%29+lang:clojure&patternType=structural)
+🔎 [`(cond :[\_] :else nil)`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/LightTable/LightTable%24+%28cond+:%5B_%5D+:else+nil%29+lang:clojure&patternType=structural)
 
 </div>
 
 **Dart**. Find `Image.asset` constructors in the Flutter API where width is initialized to `100`
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
-🔎 [Image.asset(:[\_] width: 100, :[\_])](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24+Image.asset%28:%5B_%5D+width:+100%2C+:%5B_%5D%29+lang:dart&patternType=structural)
+🔎 [`Image.asset(:[\_] width: 100, :[\_])`](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/flutter/flutter%24+Image.asset%28:%5B_%5D+width:+100%2C+:%5B_%5D%29+lang:dart&patternType=structural)
 
 </div>
 
@@ -269,7 +269,7 @@ that you may be familiar with or find interesting:
 
 At Sourcegraph we're continually looking to improve developer tools, and to
 integrate richer search functionality. If you find these tools or others
-valuable, share your thoughts with us at <feedback@sourcegraph.com>.
+valuable, share your thoughts with us at feedback@sourcegraph.com.
 
 ---
 
@@ -302,5 +302,5 @@ For a complete overview, refer to [comby.dev](https://comby.dev).
 
 ## Feedback
 
-- Have a usage question or suggestion about structural search? [Send us a tweet](https://twitter.com/sourcegraph) or e-mail us at <feedback@sourcegraph.com>
+- Have a usage question or suggestion about structural search? [Send us a tweet](https://twitter.com/sourcegraph) or e-mail us at feedback@sourcegraph.com
 - Run into a bug? [Create an issue on GitHub](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=bug_report.md&title=)

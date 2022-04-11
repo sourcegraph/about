@@ -23,7 +23,7 @@ Our badges pull dependency information from the same global code graph that help
 
 Copy the following snippet to your README.md and replace “github.com/junit-team/junit4” with the name of your repository:
 
-<pre name="9547" id="9547" class="graf graf--pre graf-after--p">[![Sourcegraph]
+<pre name="9547" id="9547" className="graf graf--pre graf-after--p">[![Sourcegraph]
 (https://sourcegraph.com/github.com/junit-team/junit4/-/badge.svg)](https://sourcegraph.com/github.com/junit-team/junit4?badge)</pre>
 
 Customize the look and feel of your badge with 3 different styles by tacking any of these onto the `badge.svg` URL:
@@ -42,9 +42,9 @@ Here are just a few of the popular open source repositories that already use the
 
 How many people rely on your open source code? Find out now by pasting the Markdown snippet into your README. Here it is again:
 
-<pre name="af89" id="af89" class="graf graf--pre graf-after--p graf--trailing">[![Sourcegraph]
+<pre name="af89" id="af89" className="graf graf--pre graf-after--p graf--trailing">[![Sourcegraph]
 (https://sourcegraph.com/github.com/junit-team/junit4/-/badge.svg)](https://sourcegraph.com/github.com/junit-team/junit4?badge)</pre>
 
-<div class="thanks">
+<div className="thanks">
   Thanks to Dan Adler and Quinn Slack.
 </div>

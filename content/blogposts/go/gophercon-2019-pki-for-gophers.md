@@ -66,7 +66,7 @@ What if a server wants to authenticate a client? For example, a backend service 
 
 In the same way that servers present certificates to their clients, clients too can present certificates to servers. This can be done using the same CA mode where the CA signs the client certificate and the server trusts the CA and thus the client certificate inherently.
 
-Like in the more common client <-> CA interaction model, a server verifying its clients must also trust the CA, so we provide a serve pool which turns on `clientAuth` by setting it to `RequireAndVerifyClientCert` (which is the only value it should ever really be set to).
+Like in the more common client < - > CA interaction model, a server verifying its clients must also trust the CA, so we provide a serve pool which turns on `clientAuth` by setting it to `RequireAndVerifyClientCert` (which is the only value it should ever really be set to).
 
 You have now created a mutually authenticated connection.
 

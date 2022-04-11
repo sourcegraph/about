@@ -13,13 +13,13 @@ heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.j
 published: true
 ---
 
-<div class="container p-0 liveblog-presenters">
-  <div class="row m-0">
-      <p class=" mr-12 m-0">
-        <span class="liveblog-presenters__name">Stephanie Nemeth</span>
-        <a href="https://twitter.com/stephaniecodes" target="_blank" title="Twitter"><i class="fa fa-twitter pr-2"></i></a>
-        <a href="https://github.com/traumverloren" target="_blank" title="GitHub"><i class="fa fa-github pr-2"></i></a>
-        <a href="https://stephanie.lol" target="_blank" title="Speaker's site"><i class="fa fa-globe pr-2"></i></a>
+<div className="container p-0 liveblog-presenters d-flex w-100 text-center">
+  <div className="row m-0 w-100">
+      <p className=" mr-12 m-0 w-100">
+        <span className="liveblog-presenters__name">Stephanie Nemeth</span>
+        <a href="https://twitter.com/stephaniecodes" target="_blank" title="Twitter"><i className="fa fa-twitter pr-2"></i></a>
+        <a href="https://github.com/traumverloren" target="_blank" title="GitHub"><i className="fa fa-github pr-2"></i></a>
+        <a href="https://stephanie.lol" target="_blank" title="Speaker's site"><i className="fa fa-globe pr-2"></i></a>
       </p>
   </div>
 </div>
@@ -33,8 +33,6 @@ I'm an introvert. This can be a bit unfortunate, when you are a person that enjo
 ---
 
 Stephanie Nemeth walks on stage with a homemade, hand-crafted necklace. Stephanie's necklace is loaded with tech.
-
-<image>
 
 | Hardware     | Software      |
 | ------------ | ------------ |

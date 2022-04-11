@@ -32,6 +32,7 @@ where do you begin?
 You may go through a progression like this:
 
 <style>
+{`
 table.brain {
     table-layout: fixed;
     vertical-align: middle;
@@ -44,45 +45,48 @@ table.brain td {
 table.brain td img {
     margin: 0;
     float: right;
-}
+    max-width: 75%;
+} `}
 </style>
-<table class="brain">
-  <tr>
-    <td>
-      <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain1.jpg">
-    </td>
-    <td>
-    You start with manual find-replace, maybe with some regex in your editor.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain2.jpg">
-    </td>
-    <td>
-    You bite the bullet and finally learn <code class="language-text">grep</code> and <code class="language-text">sed</code>,
-    so you're no longer constrained by the bounds of your editor.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain3.jpg">
-    </td>
-    <td>
-    You get annoyed wth <code class="language-text">grep</code> and <code class="language-text">sed</code> and find
-    tools like ripgrep (<code class="language-text">rg</code>) and <code class="language-text">codemod</code>.
-    Maybe you dive down the rabbit hole of parsers. Powerful—but it's a slog reading AST specs and writing tree traversers.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain4.jpg">
-    </td>
-    <td>
-    In your quest for ever greater efficiency, you discover <code class="language-text">comby</code>, an awesome new pattern-matching language for code.
-    You use it to execute really really large crucial changes across your organization's code.
-    </td>
-  </tr>
+<table className="brain">
+  <tbody>
+    <tr>
+      <td>
+        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain1.jpg"></img>
+      </td>
+      <td>
+      You start with manual find-replace, maybe with some regex in your editor.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain2.jpg"></img>
+      </td>
+      <td>
+      You bite the bullet and finally learn <code className="language-text">grep</code> and <code className="language-text">sed</code>,
+      so you're no longer constrained by the bounds of your editor.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain3.jpg"></img>
+      </td>
+      <td>
+      You get annoyed wth <code className="language-text">grep</code> and <code className="language-text">sed</code> and find
+      tools like ripgrep (<code className="language-text">rg</code>) and <code className="language-text">codemod</code>.
+      Maybe you dive down the rabbit hole of parsers. Powerful—but it's a slog reading AST specs and writing tree traversers.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain4.jpg"></img>
+      </td>
+      <td>
+      In your quest for ever greater efficiency, you discover <code className="language-text">comby</code>, an awesome new pattern-matching language for code.
+      You use it to execute really really large crucial changes across your organization's code.
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 In this post, we'll cover all the legs of this journey. If you're new to all this, you'll get an
@@ -334,7 +338,7 @@ It fits on one line! But it's not the clearest thing in the world, so let's brea
 | `sed` | `sed` transforms the contents of a file using a regex replacement pattern. |
 | `-i` | This flag tells `sed` to modify files "in place", rather than printing the transformed contents to standard output. |
 | `-E` | This flag tells `sed` to used extended regex syntax. |
-| `s`<br>`/`<br>`Handler\(([A-Za-z0-9_\.]+)\)`<br>`/`<br>`Handler(\1, "default value")`<br>`/` | This specifies the replacement pattern and is a bit of a doozy, so let's break it down even further. This is actually an expression in the `sed` language. `s` is the "substitute" command. The character immediately after `s` specifies the delimiter that will separate arguments to `s`. (In this case, it is `/`, but we can make it any character we want so long as we're consistent.) The first argument, `Handler\(([A-Za-z0-9_\.]+)\)`, is a regular expression with a matching group to capture the argument to the function call. The second argument, `Handler(\1, "default value")`, is a replacement pattern, which references the regex capture group with `\1`. |
+| `s`<br></br>`/`<br></br>`Handler\(([A-Za-z0-9_\.]+)\)`<br></br>`/`<br></br>`Handler(\1, "default value")`<br></br>`/` | This specifies the replacement pattern and is a bit of a doozy, so let's break it down even further. This is actually an expression in the `sed` language. `s` is the "substitute" command. The character immediately after `s` specifies the delimiter that will separate arguments to `s`. (In this case, it is `/`, but we can make it any character we want so long as we're consistent.) The first argument, `Handler\(([A-Za-z0-9_\.]+)\)`, is a regular expression with a matching group to capture the argument to the function call. The second argument, `Handler(\1, "default value")`, is a replacement pattern, which references the regex capture group with `\1`. |
 
 If all this is clear as mud, don't worry—you're not alone. `grep` and `sed` are powerful tools, but
 they're not super beginner-friendly.[^7] [^8]

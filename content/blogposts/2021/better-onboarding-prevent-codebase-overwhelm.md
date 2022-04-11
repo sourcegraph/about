@@ -75,7 +75,7 @@ As Marek notes, “Sometimes when you’re reaching for a particular tool or lib
 
 Introduce new hires to the tools and processes that are specific to the team. For example, demonstrate how to set up the team’s development environment, and introduce new hires to what needs to happen to ship that first bug fix or feature enhancement. Such info may not reside in a department-wide resource, even if it should. After all, the more information that is codified for all team members to see, the better it is for the entire team.
 
-<div class="alert alert-primary" role="alert" style="max-width:650px; text-align: center; margin: auto auto 20px auto">
+<div className="alert alert-primary" role="alert" style={{maxWidth: '650px', textAlign: 'center', margin: 'auto auto 20px auto'}}>
 Read about how robust, universal code search<a href = "/case-studies/convoy-improved-on-boarding"> enables developers at Convoy to onboard faster by quickly getting to know the repository structure, tracking down where code lives, and self-servicing during investigations</a>.
 </div>
 
@@ -85,7 +85,7 @@ When a new developer comes on board, they’ll go through some of the same ritua
 
 All of those steps are important table-setters to jumpstart a new hire in the organization. But onboarding can extend beyond these basics through a multi-tiered process that provides a layered, holistic view of the business. By providing such a holistic view, new hires can better understand the big picture of what the company does and how the various organizations interact with each other to serve the needs and goals of the business. This way a new hire understands their role as a piece of the greater puzzle that it is the business.
 
-<div class="alert alert-primary" role="alert" style="max-width:650px; text-align: center; margin: auto auto 20px auto">
+<div className="alert alert-primary" role="alert" style={{maxWidth: '650px', textAlign: 'center', margin: 'auto auto 20px auto'}}>
 Keep reading: <a href = "/blog/ex-googler-guide-dev-tools">An ex-Googler’s guide to dev tools</a>
 </div>
 

@@ -12,7 +12,7 @@ published: true
 
 Jumping to the definition of a symbol under your cursor and finding all its references are two of the basic mental mechanics of software engineering. Fast code navigation accelerates the rate at which you can build a mental model of the code, and when it's available, you're likely to use it hundreds, if not thousands, of times per day.
 
-<div style="margin: 2em;">
+<div style={{margin: '2em'}}>
 <img src="https://sourcegraphstatic.com/predcise-j2d-find-refs.gif" alt="Precise jump to definition and find refs" />
 </div>
 
@@ -110,8 +110,6 @@ This was fine so long as there was just one instance each of lsif-server and lsi
 
 The potential volume of additional writes continued to concern us. As LSIF use grew, would it cause operational issues in the PostgreSQL instance that would affect the performance of unrelated parts of the application? To be safe, we kept the table spaces of the LSIF data disjoint (prefixed table names, no foreign keys to existing tables) from the other data. We also tried migrating the LSIF tables into a second PostgreSQL instance. However, this required some nasty trickery with [db_link](https://github.com/sourcegraph/sourcegraph/blob/d1cffed06e58a90082243601d936279214547e30/migrations/1528395594_create_lsif_database.up.sql) in order to run migrations, which we found quite painful and [eventually reverted](https://github.com/sourcegraph/sourcegraph/pull/5935). Some more back-of-the-envelope calculations suggested that the LSIF-related load wouldn't overwhelm the single shared PostgreSQL instance, and these calculations have largely held up over time.
 
-<!-- **PR**: [LSIF: Cross-repository database to target Postgres (#5740)](https://github.com/sourcegraph/sourcegraph/pull/5740) -->
-
 
 ## Queue v2: Bull and Redis
 
@@ -127,11 +125,6 @@ The relevant PRs:
 
 ## Queue v3: PostgreSQL
 
-<!-- **PRs**:  -->
-<!-- - [LSIF: Dequeue from postgres (#6879)](https://github.com/sourcegraph/sourcegraph/pull/6879) -->
-<!-- - [LSIF: Enqueue jobs to postgres (#6877)](https://github.com/sourcegraph/sourcegraph/pull/6877) -->
-<!-- - [LSIF: Remove dead LSIF jobs code (#6880)](https://github.com/sourcegraph/sourcegraph/pull/6880) -->
-
 The adoption of Bull resolved some issues in our queue implementation, but others remained. In particular, there was a problem of enforcing logical transactions across data that was stored partially in Redis and partially in PostgreSQL.
 
 In particular, data could be written to PostgreSQL indicating the successful completion of an LSIF bundle conversion, but the corresponding job in the queue, stored in Redis, could not be updated within in the same transaction. These sometimes got out of sync.
@@ -144,8 +137,6 @@ To address these issues, we moved the queue data from Redis into PostgreSQL. Thi
 
 ## Adding GraphQL resolvers
 
-<!-- **PR**: [LSIF: Add LSIF intelligence GraphQL resolvers (#7021)](https://github.com/sourcegraph/sourcegraph/pull/7021) -->
-
 For a while, the lsif-server was accessible only through an undocumented proxy in the Sourcegraph frontend service. This proxy accepted uploads and served code navigation queries. The only consumers of this API were first-party Sourcegraph extensions like [sourcegraph/go](https://sourcegraph.com/extensions/sourcegraph/go) and [sourcegraph/typescript](https://sourcegraph.com/extensions/sourcegraph/typescript).
 
 Adding a GraphQL API enabled the LSIF backend to be used by other parts of Sourcegraph, such as the nascent [Batch Changes](https://docs.sourcegraph.com/batch_changes) feature, and also to third-party Sourcegraph extension authors and third-party API consumers. As the functionality of the LSIF backend continues to grow (we've recently added support for [diagnostics](https://github.com/sourcegraph/sourcegraph/pull/11233)), so do the possibilities for users of this API.
@@ -154,8 +145,6 @@ Adding a GraphQL API enabled the LSIF backend to be used by other parts of Sourc
 
 ## Introducing multiple workers
 
-<!-- **PR**: [LSIF: Replicate worker within container (#8951)](https://github.com/sourcegraph/sourcegraph/pull/8951) -->
-
 The lsif-server and lsif-worker were still run together in the [same container](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@7443d5f7bcbe0ec038a2f2602aec34558f79284c/-/blob/cmd/lsif-server/Dockerfile). As an easy way to enable multiple workers without changing the container orchestration, we decided to [prefork](https://stackoverflow.com/questions/25834333/what-exactly-is-a-pre-fork-web-server-model) the worker.
 
 This was a rudimentary way to scale, as overall resource use was still constrained by the single container and there was no isolation between worker processes (meaning runaway memory use in one can starve out all the others in the container), but this worked well enough for the time being. This change also helped us resolve some issues with LSIF processing on [Sourcegraph.com](https://sourcegraph.com), which was suffering from [head-of-line blocking](https://en.wikipedia.org/wiki/Head-of-line_blocking).
@@ -163,8 +152,6 @@ This was a rudimentary way to scale, as overall resource use was still constrain
 ![architecture diagram](https://sourcegraphstatic.com/lsif-arch-6.png)
 
 ## Introducing the bundle manager
-
-<!-- **PR**: [LSIF: RFC127-1: Add API between backend and database (#9179)](https://github.com/sourcegraph/sourcegraph/pull/9179) -->
 
 We needed to enable the lsif-server and lsif-worker instances to scale horizontally. At the same time, all instances had to have shared access to the same persistent storage that would store the LSIF data used to serve queries.
 
@@ -177,11 +164,6 @@ The solution was to factor out the responsibility of managing the shared storage
 This made the lsif-server and lsif-worker stateless, freeing them to scale horizontally. Scaling the bundle managers requires a sharding scheme, similar to what we already used for the gitserver service that is responsible for serving Git data in the Sourcegraph backend.
 
 ## Rewriting in Go
-
-<!-- **PRs**: -->
-<!-- - [Rewrite precise-code-intel-api-server in Go (#9703)](https://github.com/sourcegraph/sourcegraph/pull/9703/) -->
-<!-- - [Rewrite precise-code-intel-bundle-manager in Go (#9586)](https://github.com/sourcegraph/sourcegraph/pull/9586/) -->
-<!-- - [Rewrite precise-code-intel-worker in Go (#10105)](https://github.com/sourcegraph/sourcegraph/pull/10105) -->
 
 The original LSIF backend had been written in TypeScript, because that was easiest to prototype and it also matched the technical skillset of the original team. Over time, performance became more of a consideration and the experience of the team shifted more toward Go. In particular, we were familiar with a variety of techniques to optimize programs written in Go, but were less well-versed in such techniques for applications written in TypeScript.
 
@@ -197,11 +179,6 @@ The rewrite has unlocked a large number of performance improvement opportunities
 
 
 ## Removing lsif-server
-
-<!-- **PRs**:  -->
-<!-- - [codeintel: Call handleEnqueue from lsifserver proxy (#10871)](https://github.com/sourcegraph/sourcegraph/pull/10871) -->
-<!-- - [codeintel: Call query methods from from lsifserver client (#10872)](https://github.com/sourcegraph/sourcegraph/pull/10872) -->
-<!-- - [Remove precise-code-intel-api-server service (#10906)](https://github.com/sourcegraph/sourcegraph/pull/10906) -->
 
 After rewriting the LSIF backend in Go, the LSIF API server (lsif-server) was completely stateless and it no longer had to talk to a process (the bundle manager) written in a different language. After taking a step back, we realized the API server process now had little purpose.
 
@@ -222,9 +199,9 @@ Just a few things we are looking forward to:
 Keep an eye out for updates!
 
 <style>
-  /* Images in this post have natural borders
-     Make <p><img></p> snuggle up nice and close to the surrounding text */
+{`
   .blog-post__html img { box-shadow: none; margin: -16px auto; }
+`}
 </style>
 
 

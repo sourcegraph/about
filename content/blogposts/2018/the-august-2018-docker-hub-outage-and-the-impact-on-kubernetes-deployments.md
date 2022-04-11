@@ -10,7 +10,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/1LMHTsJzjOwOweIoUmMk2i/2ff8
 published: true
 ---
 
-<p class="tc"><img alt="Docker Logo" src="https://images.ctfassets.net/le3mxztn6yoo/1LMHTsJzjOwOweIoUmMk2i/2ff8fd218923eda3f0e32f81cec6016f/Docker-logo-011.png" class="h5"></p>
+<p className="tc"><img alt="Docker Logo" src="https://images.ctfassets.net/le3mxztn6yoo/1LMHTsJzjOwOweIoUmMk2i/2ff8fd218923eda3f0e32f81cec6016f/Docker-logo-011.png" className="h5"/></p>
 
 Docker announced that the Docker Hub and Docker Store (backed by the same Docker Registry) [will be down](https://success.docker.com/article/planned-downtime-on-hub-cloud-store) (totally offline) from [11:00 Pacific Time](https://everytimezone.com/#2018-8-25,-1080,b8jj) 25 August with 15-45 minutes (expected) downtime.
 

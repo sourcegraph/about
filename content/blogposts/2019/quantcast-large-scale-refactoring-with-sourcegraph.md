@@ -11,9 +11,9 @@ published: true
 description: "Founded in 2006, Quantcast's engineering team had amassed thousands of repositories. Learn how after deploying Sourcegraph, Quantcast was able to do major refactors with confidence."
 ---
 
-<p style="text-align: center">
+<div style={{textAlign: 'center'}}>
   <img src="/case-studies/quantcast-sourcegraph-case-study-og-embed.jpg" alt="Case study: Quantcast adopts Sourcegraph Universal Code Search"/>
-</p>
+</div>
 
 [Quantcast](https://www.quantcast.com) uses machine-learning-driven, real-time audience insights to radically simplify advertising for brands and customers such as BuzzFeed, Dell, and Fiat Chrysler.
 
@@ -21,4 +21,6 @@ Founded in 2006, Quantcast's engineering team had amassed thousands of repositor
 
 Learn how, Sourcegraph's [multi-repository code search](/product/code-search-navigation) makes [large scale refactoring at Quantcast](/case-studies/quantcast) systematic, safe, and efficient.
 
-<a href="/case-studies/quantcast-large-scale-refactoring" class="btn btn-primary mt-4">Learn more</a>
+<div className="align-items-center justify-content-center d-flex">
+  <a href="/case-studies/quantcast-large-scale-refactoring" className="btn btn-primary mt-4">Learn more</a>
+</div>

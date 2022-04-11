@@ -98,8 +98,6 @@ Every Dropbox engineer goes through the same rigorous Go onboarding process, con
 
 This onboarding process takes about a week for experienced engineers.
 
-<!--(For testing Go code - zviad's talks Go at Dropbox at Gopherfest "Start using Go by rewriting one of your core systems in Go" (he created Edgestore in Go)-->
-
 # What's going well with Go at Dropbox? And not going well?
 
 Overall, Dropbox's usage of Go has been very successful.

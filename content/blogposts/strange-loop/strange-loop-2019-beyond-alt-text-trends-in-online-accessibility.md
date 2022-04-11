@@ -13,11 +13,11 @@ heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.j
 published: true
 ---
 
-<div class="container p-0 liveblog-presenters">
-  <div class="row m-0">
-      <p class=" mr-12 m-0">
-        <span class="liveblog-presenters__name">Ian Forrest</span>
-        <a href="https://twitter.com/ianforr" target="_blank" title="Twitter"><i class="fa fa-twitter pr-2"></i></a>
+<div className="container p-0 liveblog-presenters d-flex w-100">
+  <div className="row m-0 text-center w-100">
+      <p className=" mr-12 m-0 w-100">
+        <span className="liveblog-presenters__name">Ian Forrest</span>
+        <a href="https://twitter.com/ianforr" target="_blank" title="Twitter"><i className="fa fa-twitter pr-2"></i></a>
       </p>
   </div>
 </div>
@@ -30,17 +30,6 @@ If you're like the 2016 version of me, then you think you have a decent handle o
 
 ---
 
-<!-- Note on images
-  Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
-
-  Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
-    - JPEG compression set between 60%-80%
-    - Resizing the image to be no wider then 750px
-    - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
-
-  I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
 ![Beyond Alt-Text: Trends in Online Accessibility Presentation Title Slide](/blog/strange-loop-2019/beyond-alt-text-0.png)
 
 ## A bit about our speaker - Ian Forrest
@@ -93,7 +82,7 @@ The 11 stands for the 11 characters inbetween "a" and "y" (a***********y)
 
 ### Technical Specifications
 
-  **Accessible Rich Internet Applications (ARIA)** is a tool at your disposal to meet WCAG standards (aria-hidden and aria-labeledby as examples), however, this should not be your first tool of choice. Using HTML elements to their semantic specifications is what you should be doing first. As an example, don't use "<div class="button"...>" as divs are not focusable by default. A much better method would be to use a button and then apply a style.
+  **Accessible Rich Internet Applications (ARIA)** is a tool at your disposal to meet WCAG standards (aria-hidden and aria-labeledby as examples), however, this should not be your first tool of choice. Using HTML elements to their semantic specifications is what you should be doing first. As an example, don't use `<div className="button"...>` as divs are not focusable by default. A much better method would be to use a button and then apply a style.
 
 ### So why do we care about accessibility, a history lesson
 

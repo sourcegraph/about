@@ -197,7 +197,7 @@ func (p *PageView) Render() vecty.ComponentOrHTML {
 The last example shown is Vugu. It is a Vue-like library and uses a relatively new custom file format, which is a super set of html with code generators. Vugu provides a generator `vugugen` which takes `.vugu` files and generates the Go code, which you should never have to modify. For handling asynchronous functions, goroutines are used, and Vugu offers locking functions `Lock` and `UnlockRender`. The embedded code is Go.
 
 ```bash
-<div class="demo-comp">
+<div className="demo-comp">
 	<div vg-if='data.isLoading'>Loading...</div>
 	<div vg-if='len(data.bpi.BPI) > 0'>
 		<div>Updated: <span vg-html='data.bpi.Time.Updated'></span></div>

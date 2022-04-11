@@ -5,7 +5,7 @@ author: Nick Snyder
 authorUrl: https://twitter.com/nickdsnyder
 description: "We’re rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
 externalDescription: "We’re rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
-publishDate: 2020-10-05
+publishDate: 2020-10-05T10:00-07:00
 tags: [blog]
 slug: a-different-way-to-think-about-code-ownership
 heroImage: https://sourcegraphstatic.com/blog/codenotify-survey-results.png
@@ -35,8 +35,8 @@ I had a hypothesis—that we needed something other than CODEOWNERS to create co
 
 To get the sentiment of the team, [I opened a pull request that proposed deleting CODEOWNERS with my reasons](https://github.com/sourcegraph/sourcegraph/pull/11718) and asked the entire team to submit anonymous feedback. Here were the results:
 
-<div class="text-center">
-  <img src="https://sourcegraphstatic.com/blog/codenotify-survey-results.png" alt="50% yes, 31% maybe, 19% no">
+<div className="text-center">
+  <img src="https://sourcegraphstatic.com/blog/codenotify-survey-results.png" alt="50% yes, 31% maybe, 19% no"></img>
 </div>
 
 In the free-form comments, responders provided extra context about their support, concerns, and suggestions for the proposal. Here are a few representative examples:
@@ -73,9 +73,9 @@ Notification rules are stored in [CODENOTIFY files](https://sourcegraph.com/gith
 
 Codenotify rules and files are familiar in syntax to CODEOWNERS, but simpler to understand because each rule is additive, not hierarchical. This means that you can understand how a single rule behaves without needing to consider any other rules (unlike OWNERS or CODEOWNERS).
 
-<p style="padding: 1em 2em; background-color: lightblue;">
+<div style={{padding: '1em 2em', backgroundColor: 'lightblue', width: '40rem', marginRight: 'auto', marginLeft: 'auto'}}>
 If you want to learn more about Codenotify or try it out for yourself, then the project's <a href="https://sourcegraph.com/github.com/sourcegraph/codenotify/-/blob/README.md">README</a> has everything you need to know!
-</p>
+</div>
 
 ## Starting our code ownership experiment
 

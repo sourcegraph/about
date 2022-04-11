@@ -18,12 +18,12 @@ This screencast (with accompanying audio) shows how to [connect and configure](h
 
 In addition to configuring the Sourcegraph-GitLab connection, the screencast discusses important factors for determining which repositories Sourcegraph will index, such as excluding archived and forked repositories, and optionally excluding repositories based on naming patterns (e.g., `deploy-`).
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/397320487?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/397320487?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://www.youtube.com/watch?v=r8kvCUeeMKQ" target="_blank">View on YouTube</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://www.youtube.com/watch?v=r8kvCUeeMKQ" target="_blank">View on YouTube</a></p>
+</div>
 
 See the [Sourcegraph GitLab documentation](https://docs.sourcegraph.com/admin/external_service/gitlab) for full configuration options, including [enabling repository permissions](https://docs.sourcegraph.com/admin/external_service/gitlab#repository-permissions).
 

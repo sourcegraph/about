@@ -13,7 +13,7 @@ description: "Sourcegraph 3.14: Faster repository permissions, excluding forks a
 
 Explore, navigate, and better understand all code, everywhere, faster with Sourcegraph Universal Code Search. Uber, Lyft, Yelp, and other enterprises rely on Sourcegraph to improve developer productivity and manage large-scale code changes.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🔑 Faster syncing of GitLab and Bitbucket Server repository permissions**](#faster-syncing-of-gitlab-and-bitbucket-server-repository-permissions)<br />
 
@@ -56,11 +56,11 @@ Sourcegraph couldn't be what it is without the community
 
 Watch the recording of the 3.14 release livestream with Product Manager Christina Forney.
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://www.youtube-nocookie.com/embed/2tBUzBbiZJ4" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://www.youtube-nocookie.com/embed/2tBUzBbiZJ4" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-</p>
+</div>
 
 ## Faster syncing of GitLab and Bitbucket Server repository permissions
 
@@ -70,12 +70,12 @@ Enable this feature by adding `"permissions.backgroundSync": {"enabled": true}` 
 
 ## Forks and archived repositories are excluded from search results by default
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/398759697?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/398759697?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/398759697" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/398759697" target="_blank">View on Vimeo</a></p>
+</div>
 
 The default setting for including forks and archived repositories in your search results has changed from including by default to excluding by default. This is because most often, users want to see the active and original repositories in their queries. You can still use `archived:yes` or `fork:yes` filters to show results that include archived and forked repositories.
 
@@ -91,12 +91,12 @@ Sourcegraph 3.14 introduces a new [docker-compose deployment model](https://docs
 
 ## Campaigns are easier to create and manage and have reduced the load on code hosts
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/398878670?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/398878670?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/398878670" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/398878670" target="_blank">View on Vimeo</a></p>
+</div>
 
 Behind the scenes, campaign changesets are now kept up to date using a heuristic solution that reduces the load placed on the code host. Previously, each changeset was updated during regularly scheduled update processes. The new implementation prioritizes syncing changesets based on when last they changed and is also aware of real-time changes that arrive via webhooks.
 
@@ -166,12 +166,12 @@ Sourcegraph collects a small amount of high-level and aggregate data from each i
 
 ## Experimental smart search bar
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/392761379?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/392761379?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/392761379" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/392761379" target="_blank">View on Vimeo</a></p>
+</div>
 
 In Sourcegraph 3.13, we introduced the smart search bar as an experimental feature. Many improvements have been made, but it will stay marked as experimental as we continue to solicit feedback. If you or your team are interested in trying this feature, add the following setting to your user, organization, or global settings on your Sourcegraph instance: `{ "experimentalFeatures": { "smartSearchField": true } }`. Tweet [@sourcegraph](https://twitter.com/sourcegraph) or email feedback@sourcegraph.com with your feedback.
 

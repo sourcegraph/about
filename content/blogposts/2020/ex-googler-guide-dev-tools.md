@@ -5,7 +5,7 @@ description:  "After leaving Google, many engineers miss the developer tools. He
 externalDescription: 'An ex-Googler, or Xoogler, shows how you can replicate Google’s internal tools and development environment outside of Google.'
 author: Beyang Liu
 authorUrl: https://twitter.com/beyang
-publishDate: 2020-11-24
+publishDate: 2020-11-24T00:00-14:30
 tags: [blog]
 slug: ex-googler-guide-dev-tools
 heroImage: /blog/exgoogler-backpack-dev-tools.jpg
@@ -15,8 +15,8 @@ published: true
 
 Many years ago, I did a brief stint at Google–yes, I’m an ex-Googler or Xoogler. A lot has changed since then, but even that brief exposure to Google's internal tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
 
-<div style="margin: 2em;">
-<img src="/blog/exgoogler-campfire.jpg" style="max-width: 600px" alt="Ex-Googler's guide to dev tools" />
+<div style={{margin: '2em'}}>
+<img src="/blog/exgoogler-campfire.jpg" style={{maxWidth: '600px'}} alt="Ex-Googler's guide to dev tools" />
 </div>
 
 In other ways, however, Google's internal tools are awfully limited. In particular, nearly all of them are tightly coupled with Google's internal environment. Unfortunately, that means you can't take them with you when you leave.
@@ -155,7 +155,7 @@ One of your competitive advantages after leaving Google will be to apply these e
 Building software at scale is hard. As everyone who has read <a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month" rel="nofollow" target="_blank">*The Mythical Man Month*</a> knows, you can't get better software just by hiring more engineers. You need better tools. Just as software is a multiplier for the productivity of end users, dev tools are a multiplier for the productivity of the people who build the software. So if you truly believe in your new company's mission, make it one of your priorities to use your special knowledge as an ex-Googler and bring them the best developer tools available.
 
 &nbsp;
-<hr>
+<hr/>
 
 **Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
 

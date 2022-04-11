@@ -37,7 +37,7 @@ See the [installation documentation](https://docs.sourcegraph.com) for more info
 
 The new site admin area makes it easier for administrators to configure and manage Sourcegraph. Site admins can click **Admin** in the upper right of any page to view the site admin area.
 
-<div class="padding-bottom:75%;height:0;position:relative;overflow:hidden;">
+<div className="padding-bottom:75%;height:0;position:relative;overflow:hidden;">
 
 ![SiteAdminArea](//images.contentful.com/le3mxztn6yoo/62vc2oU944MiEC6GQ6a2aC/a58830b525a36667907e2ba01a7e2ca4/SiteAdminArea.png)
 
@@ -45,7 +45,7 @@ The new site admin area makes it easier for administrators to configure and mana
 
 From here, click **Configuration** in the site admin menu to configure your Sourcegraph instance. The new in-app JSON site config editor makes it easy to add repositories from GitHub, GitHub Enterprise, and other sources, configure SSO, and change other settings.
 
-<div class="padding-bottom:71.9%;height:0;position:relative;overflow:hidden;">
+<div className="padding-bottom:71.9%;height:0;position:relative;overflow:hidden;">
 
 ![ConfigEditor](//images.contentful.com/le3mxztn6yoo/4r2yOyPFbWAUSCgAKoQesO/74658437ab34d7e67bced62cc98aeed6/ConfigEditor.png)
 
@@ -61,7 +61,7 @@ We've introduced a cleaner, more intuitive search interface in Sourcegraph 2.4. 
 
 Saved queries are useful for keeping track of important code changes. Now, you can monitor changes in your saved queries on the homepage. Adding a saved query to the homepage shows the current number of results and a graph of the number of results over time. Whether it's lint violations, security vulnerabilities, or hacks, you can now easily monitor changes in your code from the homepage.
 
-<div class="padding-bottom:69.89%;height:0;position:relative;overflow:hidden;">
+<div className="padding-bottom:69.89%;height:0;position:relative;overflow:hidden;">
 
 ![MonitorSavedQueries](//images.contentful.com/le3mxztn6yoo/6pXGbl3HCosyywUAAiQiCs/8b2042f917c2cc6ad78bf2abf88ba389/MonitorSavedQueries.png)
 
@@ -75,7 +75,7 @@ You can now search over commit diffs using the `type:diff` operator in search qu
 
 [See a sample diff search](https://sourcegraph.com/search?q=r:moby/moby+type:diff+MarshalJSON+after:%222+months+ago%22&sq=) on a public repository on Sourcegraph.com.
 
-<div class="padding-bottom:72.7%;height:0;position:relative;overflow:hidden;">
+<div className="padding-bottom:72.7%;height:0;position:relative;overflow:hidden;">
 
 ![CommitDiffSearch](//images.contentful.com/le3mxztn6yoo/664m9SJ8cgCaKMsq8WMQAg/299e902df9acba91f3636bd03c97d3dc/CommitDiffSearch.png)
 
@@ -88,7 +88,7 @@ See the [documentation](https://docs.sourcegraph.com/code_search/explanations/fe
 ### Commit message search
 Like diff search above, but use `type:commit` to search inside commit *messages*. [See all commits mentioning “bug” or “fix”](https://sourcegraph.com/search?q=r:golang/go%24+type:commit+after:%221+month+ago%22+bug%7Cfix&sq=) in a public repository on Sourcegraph.com, for example.
 
-<div class="padding-bottom:72.7%;height:0;position:relative;overflow:hidden;">
+<div className="padding-bottom:72.7%;height:0;position:relative;overflow:hidden;">
 
 ![CommitMessageSearch](//images.contentful.com/le3mxztn6yoo/3gIn18atFe4KAUoY0aYIug/9028a175fba62892b16a7288f976b277/CommitMessageSearch.png)
 

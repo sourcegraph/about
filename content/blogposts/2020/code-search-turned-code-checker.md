@@ -10,6 +10,7 @@ published: true
 ---
 
 <style>
+{`
   .gatsby-highlight {
     max-width: 100%;
     width: 40rem;
@@ -40,7 +41,7 @@ published: true
   }
   table tr:nth-child(2n) {
     background-color: transparent;
-  }
+  } `}
 </style>
 
 I find code checkers like linters and lightweight static analyzers most
@@ -129,14 +130,9 @@ The `or` keyword separates individual patterns.
 We can search over the top 100 Go repositories on GitHub (by stars) those by
 adding `repogroup:go-gh-100` to the query. Have a look at some of the results:
 
-[🔘 Find ways to improve code in popular Go projects ↗](https://sourcegraph.com/search/console?q=repogroup%3Ago-gh-100%0Alanguage%3Ago%0Anot%20file%3Atest%0Anot%20file%3Avendor%0Anot%20file%3AGodeps%0Aindex%3Aonly%0A%0A%2F%2F%20Find%20strings.Index%20calls%20that%20can%20be%20replaced%20by%20strings.Contains%0A%2F%2F%20See%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1003%0A%0Astrings.Index(...%2C%20...)%20%3E%20-1%0A%0Aor%0A%0Astrings.Index(...%2C%20...)%20%3E%3D%200%0A%0Aor%0A%0Astrings.Index(...%2C%20...)%20!%3D%20-1)
-<br />
-<sup>Side note: our multiline query editor is in a proof-of-concept phase.</sup>
+[🔘 Find ways to improve code in popular Go projects ↗](https://sourcegraph.com/search/console?q=repogroup%3Ago-gh-100%0Alanguage%3Ago%0Anot%20file%3Atest%0Anot%20file%3Avendor%0Anot%20file%3AGodeps%0Aindex%3Aonly%0A%0A%2F%2F%20Find%20strings.Index%20calls%20that%20can%20be%20replaced%20by%20strings.Contains%0A%2F%2F%20See%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1003%0A%0Astrings.Index(...%2C%20...)%20%3E%20-1%0A%0Aor%0A%0Astrings.Index(...%2C%20...)%20%3E%3D%200%0A%0Aor%0A%0Astrings.Index(...%2C%20...)%20!%3D%20-1)<sup>Side note: our multiline query editor is in a proof-of-concept phase.</sup>
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2020/strings-dot-index-hits.png" style="width: 40rem">
-
-<sup>Some search hits in projects like Go and Kubernetes where a simpler `strings.Contains` can be used instead.</sup>
-
+<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2020/strings-dot-index-hits.png" style={{width: '40rem'}}/><sup>Some search hits in projects like Go and Kubernetes where a simpler `strings.Contains` can be used instead.</sup>
 The query finds matches in some of the most popular Go projects in a
 couple of seconds. An exhaustive search shows that there are more than 10 matches
 at the time of writing. For this flavor of syntactic change, I have a good sense
@@ -172,7 +168,7 @@ against the reference tests and discover which variants to cover, all in a
 self-contained search webapp. Here's an example where the query matches all the
 true hits in the test file, annotated with `// want strings.Contains ...`:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2020/multiline-query-editor.png">
+<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2020/multiline-query-editor.png" />
 
 [🔘 Example query to match known patterns in test files↗](https://sourcegraph.com/search/console?q=repo%3A%5Egithub%5C.com%2Fdominikh%2Fgo-tools%24%20%0Alang%3Ago%0Afile%3Atest%0A%0Astrings.IndexRune(...%2C%20...)%20%3E%20-1%20or%0Astrings.IndexRune(...%2C%20...)%20%3E%3D%200%20or%0Astrings.IndexRune(...%2C%20...)%20!%3D%20-1%20or%0Astrings.IndexRune(...%2C%20...)%20%3D%3D%20-1%20or%0Astrings.IndexRune(...%2C%20...)%20%3C%200%20or%0Astrings.IndexAny(...%2C%20...)%20%3E%20-1%20or%0Astrings.IndexAny(...%2C%20...)%20%3E%3D%200%20or%0Astrings.IndexAny(...%2C%20...)%20!%3D%20-1%20or%0Astrings.IndexAny(...%2C%20...)%20%3D%3D%20-1%20or%0Astrings.IndexAny(...%2C%20...)%20%3C%200%20or%0Astrings.Index(...%2C%20...)%20%3E%20-1%20or%0Astrings.Index(...%2C%20...)%20%3E%3D%200%20or%0Astrings.Index(...%2C%20...)%20!%3D%20-1%20or%0Astrings.Index(...%2C%20...)%20%3D%3D%20-1%20or%0Astrings.Index(...%2C%20...)%20%3C%200%0A)
 
@@ -256,7 +252,7 @@ But I know there are still places where we do comparisons the old way. This
 query highlights some of the remnants, and how how the inner block uses the
 compared values:
 
-[🔘 file:test if want != got {...} ↗](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:test+if+want+%21%3D+got+%7B...%7D&patternType=structural)
+[{`🔘 file:test if want != got {...} ↗`}](https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:test+if+want+%21%3D+got+%7B...%7D&patternType=structural)
 
 So code checks can also be specific and customizable to your organization that
 you won't find in off-the-shelf tools.
@@ -310,7 +306,7 @@ query does exclude common test and vendored files, it's best to check that
 matches occur in files that really are part of the project.
 
 If you're interested in turning the results of [the complete query](https://sourcegraph.com/search/console?q=repogroup%3Ago-gh-100%0Alang%3Ago%0Anot%20file%3Atest%0Anot%20file%3Avendor%0Anot%20file%3AGodeps%0Aindex%3Aonly%0A%0A%2F%2F%20Inefficient%20string%20comparison%20with%20strings.ToLower%20or%20strings.ToUpper%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23SA6005%0Aif%20strings.ToLower(...)%20%3D%3D%20strings.ToLower(...)%20or%0Aif%20strings.ToLower(...)%20!%3D%20strings.ToLower(...)%20or%0Aif%20strings.ToUpper(...)%20%3D%3D%20strings.ToUpper(...)%20or%0Aif%20strings.ToUpper(...)%20!%3D%20strings.ToUpper(...)%20or%0A%0A%2F%2F%20Replace%20call%20to%20strings.Index%20with%20strings.Contains%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1003%0Astrings.IndexRune(...%2C%20...)%20%3E%20-1%20or%0Astrings.IndexRune(...%2C%20...)%20%3E%3D%200%20or%0Astrings.IndexRune(...%2C%20...)%20!%3D%20-1%20or%0Astrings.IndexRune(...%2C%20...)%20%3D%3D%20-1%20or%0Astrings.IndexRune(...%2C%20...)%20%3C%200%20or%0Astrings.IndexAny(...%2C%20...)%20%3E%20-1%20or%0Astrings.IndexAny(...%2C%20...)%20%3E%3D%200%20or%0Astrings.IndexAny(...%2C%20...)%20!%3D%20-1%20or%0Astrings.IndexAny(...%2C%20...)%20%3D%3D%20-1%20or%0Astrings.IndexAny(...%2C%20...)%20%3C%200%20or%0Astrings.Index(...%2C%20...)%20%3E%20-1%20or%0Astrings.Index(...%2C%20...)%20%3E%3D%200%20or%0Astrings.Index(...%2C%20...)%20!%3D%20-1%20or%0Astrings.Index(...%2C%20...)%20%3D%3D%20-1%20or%0Astrings.Index(...%2C%20...)%20%3C%200%20or%0A%0A%2F%2F%20Replace%20call%20to%20bytes.Compare%20with%20bytes.Equal%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1004%0Abytes.Compare(...%2C%20...)%20%3D%3D%200%20or%0Abytes.Compare(...%2C%20...)%20!%3D%200%20or%0A%0A%2F%2F%20Drop%20unnecessary%20use%20of%20the%20blank%20identifier%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1005%0Afor%20%3A%5B~_%5D%2C%20%3A%5B~_%5D%20%3D%20range%20or%0Afor%20%3A%5B~_%5D%20%3D%20range%20or%0A%0A%2F%2F%20Use%20for%20%7B%20...%20%7D%20for%20infinite%20loops%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1006%0Afor%20true%20%7B...%7D%20or%0A%0A%2F%2F%20Omit%20default%20slice%20index%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1010%0A%3A%5Bs.%5D%5B%3Alen(%3A%5Bs%5D)%5D%20or%0A%0A%2F%2F%20Replace%20time.Now().Sub(x)%20with%20time.Since(x)%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1012%0Atime.Now().Sub(...)%20or%0A%0A%2F%2F%20Use%20copy%20for%20sliding%20elements%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1018%0Afor%20%3A%5Bi.%5D%20%3A%3D%200%3B%20%3A%5Bi.%5D%20%3C%20%3A%5Bn.%5D%3B%20%3A%5Bi.%5D%20%20%20%7B%0A%20%20%3A%5Bbs.%5D%5B%3A%5Bi%5D%5D%20%3D%20%3A%5Bbs.%5D%5B%3A%5Boffset.%5D%20%3A%5Bi.%5D%5D%0A%7D%0A%0Aor%0A%0A%2F%2F%20Simplify%20make%20call%20by%20omitting%20redundant%20arguments%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1019%0Amake(...%2C%20%3A%5Bx%5D%2C%20%3A%5Bx%5D)%20or%20%0Amake(map%5B%3A%5B%5Bw%5D%5D%5D%3A%5B%5Bw%5D%5D%2C%200)%20or%0Amake(chan%20int%2C%200)%20or%0A%0A%2F%2F%20Omit%20redundant%20nil%20check%20in%20type%20assertion%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1020%0Aif%20%3A%5B_.%5D%2C%20ok%20%3A%3D%20%3A%5Bi.%5D.(%3A%5BT%5D)%3B%20ok%20%26%26%20%3A%5Bi.%5D%20!%3D%20nil%20%7B%20...%20%7D%20or%0Aif%20%3A%5B_.%5D%2C%20ok%20%3A%3D%20%3A%5Bi.%5D.(%3A%5BT%5D)%3B%20%3A%5Bi.%5D%20!%3D%20nil%20%26%26%20ok%20%7B%20...%20%7D%20or%0A%0Aif%20%3A%5Bi.%5D%20!%3D%20nil%20%7B%0A%20%20if%20%3A%5B_.%5D%2C%20ok%20%3A%3D%20%3A%5Bi.%5D.(%3A%5BT%5D)%3B%20ok%20%7B%20...%20%7D%0A%7D%0A%0Aor%0A%0A%2F%2F%20Omit%20redundant%20control%20flow%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1023%0Afunc%20%3A%5Bfn.%5D(...)%20%7B...%20return%20%7D%20%20or%20%0Afunc()%20%7B...%20return%20%7D%20or%0A%0A%2F%2F%20Replace%20x.Sub(time.Now())%20with%20time.Until(x)%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1024%0A.Sub(time.Now())%20or%0A%0A%2F%2F%20Don%27t%20use%20fmt.Sprintf(%22%25s%22%2C%20x)%20unnecessarily%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1025%0Afmt.Println(%22%25s%22%2C%20%22...%22)%20or%0A%0A%2F%2F%20Simplify%20error%20construction%20with%20fmt.Errorf%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1028%0Aerrors.New(fmt.Sprintf(...))%20or%0A%0A%2F%2F%20Range%20over%20the%20string%20directly%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1029%0Afor%20%3A%5B~_%5D%2C%20%3A%5B_.%5D%20%3A%3D%20range%20%5B%5Drune(...)%20or%0A%0A%2F%2F%20Use%20sort.Ints(x)%2C%20sort.Float64s(x)%2C%20and%20sort.Strings(x)%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1032%0Asort.Sort(sort.IntSlice(...))%20or%0Asort.Sort(sort.Float64Slice(...))%20or%0Asort.Sort(sort.StringSlice(...))%20or%0A%0A%2F%2F%20Redundant%20call%20to%20net%2Fhttp.CanonicalHeaderKey%20in%20method%20call%20on%20net%2Fhttp.Header%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1035%0Aheaders.Add(http.CanonicalHeaderKey(...)%2C%20...)%20or%0Aheaders.Del(http.CanonicalHeaderKey(...))%20or%0Aheaders.Get(http.CanonicalHeaderKey(...))%20or%0Aheaders.Set(http.CanonicalHeaderKey(...)%2C%20...)%20or%0A%0A%2F%2F%20Unnecessary%20guard%20around%20map%20access%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1036%0Aif%20%3A%5B~_%5D%2C%20ok%20%3A%3D%20%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%3B%20ok%20%7B%0A%20%20%20%20%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%20%2B%3D%20%3A%5Bx.%5D%0A%7D%20else%20%7B%0A%20%20%20%20%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%20%3D%20%3A%5Bx.%5D%0A%7D%0A%0Aor%0A%0Aif%20%3A%5B~_%5D%2C%20ok%20%3A%3D%20%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%3B%20ok%20%7B%0A%20%20%20%20%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%2B%2B%0A%7D%20else%20%7B%0A%20%20%20%20%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%20%3D%201%0A%7D%0A%0Aor%0A%0Aif%20%3A%5B~_%5D%2C%20ok%20%3A%3D%20%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%3B%20ok%20%7B%0A%09%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%20%3D%20append(%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%2C%20%22%3A%5Bv1%5D%22)%0A%7D%20else%20%7B%0A%09%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%20%3D%20%5B%5Dstring%7B%22%3A%5Bv1%5D%22%7D%0A%7D%0A%0Aor%0A%0Aif%20%3A%5B~_%5D%2C%20ok%20%3A%3D%20%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%3B%20ok%20%7B%0A%09%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%20%3D%20append(%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%2C%20%22%3A%5Bv1%5D%22%2C%20%22%3A%5Bv2%5D%22)%0A%7D%20else%20%7B%0A%09%3A%5Bm.%5D%5B%3A%5Bk%5D%5D%20%3D%20%5B%5Dstring%7B%22%3A%5Bv1%5D%22%2C%20%22%3A%5Bv2%5D%22%7D%0A%7D%0A%0Aor%0A%0A%2F%2F%20Elaborate%20way%20of%20sleeping%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1037%0Aselect%20%7B%0A%09case%20%3C-time.After(0)%3A%0A%7D%0A%0Aor%0A%0A%2F%2F%20Unnecessarily%20complex%20way%20of%20printing%20formatted%20string%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1038%0Afmt.Print(fmt.Sprintf(%22...%22%2C%20...))%20or%0Afmt.Println(fmt.Sprintf(%22...%22%2C%20...))%20or%0Afmt.Fprint(nil%2C%20fmt.Sprintf(%22...%22%2C%20...))%20or%0Afmt.Fprintln(nil%2C%20fmt.Sprintf(%22...%22%2C%20...))%20or%0Afmt.Sprint(fmt.Sprintf(%22...%22%2C%20...))%20or%0Afmt.Sprintln(fmt.Sprintf(%22...%22%2C%20...))%20or%20%0A%0A%2F%2F%20Unnecessary%20use%20of%20fmt.Sprint%0A%2F%2F%20https%3A%2F%2Fstaticcheck.io%2Fdocs%2Fchecks%23S1039%0Afmt.Sprintf(%22%25s%22%2C%20%22...%22)) into open source
-contributions, e-mail me at <rijnard@sourcegraph.com>, I can help.
+contributions, e-mail me at rijnard@sourcegraph.com, I can help.
 
 ## What's next for search queries
 
@@ -324,7 +320,7 @@ In the meantime, you can find an all-in-one config for replacing the patterns on
 at [comby-tools/go-patterns](https://github.com/comby-tools/go-patterns). If you want to make large scale,
 org-wide changes, talk to us about [Batch Changes](https://docs.sourcegraph.com/batch_changes).
 And if you find code checking valuable and want to learn more about our work at Sourcegraph, reach us at
-<feedback@sourcegraph.com>. Happy searching!
+feedback@sourcegraph.com. Happy searching!
 
 ---
 
@@ -334,14 +330,13 @@ And if you find code checking valuable and want to learn more about our work at 
 <br/>
 <sup>3</sup> These are all the [simple static check](https://staticcheck.io/docs/checks) of the form `S<number>`, excluding `SA` and `ST` checks.
 <br/>
-<sup>4</sup> There's plenty of opportunity to pick other tools or languages, I picked `staticcheck` because its the nicely illustrative.</sup>
+<sup>4</sup> There's plenty of opportunity to pick other tools or languages, I picked `staticcheck` because its the nicely illustrative.
 <br/>
 <sup>5</sup> Also, it probably makes sense for these projects to run `staticcheck` in their CI, and a quick search helps make it more obvious which ones do not 😛.
 
 ---
 
 <sup>
-
 Acks: Thanks [@lguychard](https://twitter.com/lguychard),
 [@thorstenball](https://twitter.com/thorstenball), [@stefanhengl](https://github.com/stefanhengl) [@beyang](https://twitter.com/beyang),
 [@sqs](https://twitter.com/sqs) for feedback on the content of this post.

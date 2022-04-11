@@ -42,8 +42,8 @@ Liz’s dev workflow follows a structure that might be familiar for many devs. S
 This automation goes hand in hand with Liz’s attention to [observability](https://www.honeycomb.io/what-is-observability/), which emphasizes the capacity to introspect a system and understand its internal state. Automated builds and infrastructure configuration, using tools such as [Chef](https://www.chef.io/) and [Terraform](https://www.terraform.io/), increase the transparency of the systems with which Liz regularly works. As part of her work for [Honeycomb](https://www.honeycomb.io/), Liz uses Honeycomb, and shifting into its interface to understand workflows, processes, and debug errors or failures is a key part of her workflow.
 
 <figure>
-    <figcaption style="text-align: center; font-style: italic;">Watch Liz use Honeycomb as part of her dev workflow.</figcaption>
-    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <figcaption style={{textAlign:'center', fontStyle: 'italic'}}>Watch Liz use Honeycomb as part of her dev workflow.</figcaption>
+    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-observability.mp4" data-cookieconsent="ignore"></video>
     </div>
 </figure>
@@ -57,8 +57,8 @@ One of Liz’s desktop machines has an ARM64 processor, and she notes that it ru
 The use of ARM64 is compelling, not just for the performance and cost. It’s also part of a future of computing that attends to the sustainability of our environment given the ever expanding role of computing in society. This concern for sustainability isn’t just business, but a commitment that shapes Liz’s own choices in hardware.
 
 <figure>
-    <figcaption style="text-align: center; font-style: italic;">Hear Liz discuss the benefits and limitations of ARM64 in the current development ecosystem.</figcaption>
-    <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <figcaption style={{textAlign:'center', fontStyle: 'italic'}}>Hear Liz discuss the benefits and limitations of ARM64 in the current development ecosystem.</figcaption>
+    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
         <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-fong-jones-arm64.mp4" data-cookieconsent="ignore"></video>
     </div>
 </figure>
@@ -85,6 +85,6 @@ The use of ARM64 is compelling, not just for the performance and cost. It’s al
 
 Check out the recording of the episode below, and be sure to [sign up for upcoming events](https://info.sourcegraph.com/dev-tool-time)!
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/QlR9jdj0sa4?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/QlR9jdj0sa4?autoplay=0&amp;cc_load_policy=0&amp;start=93&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameBorder="0"></iframe>
 </div>

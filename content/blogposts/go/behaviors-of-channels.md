@@ -21,7 +21,7 @@ Writing a service for a TV, but the tv stream fails because you can't write logs
 
 Bill then proceeded to do live coding for a custom Logger which solves our problem, below is the code he wrote annotated with what he was explaining as he wrote it:
 
-<div class="src-snippet" data-file-path="test.go" data-commit="ad6f12f5071742201c61ea16f0a5d6e6f1dc17ec"></div>
+<div className="src-snippet" data-file-path="test.go" data-commit="ad6f12f5071742201c61ea16f0a5d6e6f1dc17ec"></div>
 
 ```go
 package logger

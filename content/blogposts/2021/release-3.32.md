@@ -34,8 +34,8 @@ Sourcegraph 3.32 is now available! Here are some highlights from this release:
 
 In the left sidebar of your search results, you can now see both branches and tags associated with a repository you’re viewing. When you add a search literal, such as “auth,” the search term will persist across searches, allowing you to search quickly between branches or tags for that search term.
 
-<div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
-  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.32/search_revisions_sidebar.mp4" type="video/mp4" data-cookieconsent="ignore">
+<div style={{textAlign:'center'}}><video autoplay loop muted playsinline style={{width:'625px'}}>
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/3.32/search_revisions_sidebar.mp4" type="video/mp4" data-cookieconsent="ignore"/>
 </video></div>
 
 ## Search caching and improved back button behavior

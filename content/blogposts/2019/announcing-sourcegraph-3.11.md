@@ -11,7 +11,7 @@ description: "Sourcegraph 3.11: Structural search, removed management console, l
 
 Sourcegraph is the standard developer platform for code search and navigation at many of the largest and most advanced technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🏗 Introducing code-aware structural search**](#introducing-code-aware-structural-search)<br />
 
@@ -40,12 +40,12 @@ Sourcegraph couldn't be what it is without the community.
 
 ## Introducing code-aware structural search
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/380662673?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/380662673?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/380662673" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/380662673" target="_blank">View on Vimeo</a></p>
+</div>
 
 Sourcegraph 3.11 introduces [structural search](https://docs.sourcegraph.com/code_search/reference/structural), a code-aware search syntax that can identify structural patterns in code. This enables advanced code search to specifically match patterns inside code structures such as function parameters and loop bodies.
 
@@ -77,11 +77,11 @@ The management console has been completely removed and there is now a single sit
 
 In the rare event that your Sourcegraph instance is misconfigured and causes the UI to become inaccessible, we have added an [escape hatch file](https://docs.sourcegraph.com/admin/config/site_config#editing-your-site-configuration-if-you-cannot-access-the-web-ui) that allows you to edit your site configuration without the web UI. Upon saving, the updated configuration will be synchronized from the file and applied to your Sourcegraph instance.
 
-<div class="alert alert-warning">
-  <p>
+<div className="alert alert-warning mx-auto" style={{width: '40rem'}}>
+  <div>
     <strong>NOTE:</strong>
     If you’re using the <code>CRITICAL_CONFIG_FILE</code> or <code>SITE_CONFIG_FILE</code> environment variables please see our <a href="https://docs.sourcegraph.com/admin/migration/3_11#management-console-removal">management console migration guide</a> for more details.
-  </p>
+  </div>
 </div>
 
 ## High-level health monitoring
@@ -104,12 +104,12 @@ Some teams prefer updating Sourcegraph configuration in version control rather t
 
 ## Find and remove leaked NPM credentials
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/380663070?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/380663070?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/380663070" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/380663070" target="_blank">View on Vimeo</a></p>
+</div>
 
 Credential leaks compromise organization code and are a top concern for security teams and developers alike. Sourcegraph 3.11 introduces a new campaign type to find and remove leaked NPM credentials across all repositories at your organization. The leaked credentials campaign type allows you to preview the proposed changes, create pull requests on your code hosts, and track the PRs in a burndown chart to ensure they are merged.
 
@@ -117,12 +117,12 @@ Code change management campaigns are in private beta. [Watch the campaigns scree
 
 ## Search query language statistics
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/380662321?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/380662321?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/380662321" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/380662321" target="_blank">View on Vimeo</a></p>
+</div>
 
 A new experimental feature has been added to show [language statistics about your search query](https://docs.sourcegraph.com/code_search/explanations/features#statistics). Search result pages now have a **Stats** link to a visual breakdown of the languages that comprise the results for the query. This data is also available through our [GraphQL API](https://docs.sourcegraph.com/api/graphql).
 

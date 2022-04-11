@@ -20,16 +20,16 @@ So far, IPFS has 2 implementations: [go-ipfs](https://github.com/jbenet/go-ipfs)
 
 Let’s dig a bit deeper into IPFS and how it could be used.
 
-<iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/Fa4pckodM9g" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/Fa4pckodM9g"frameBorder="0"allowFullScreen></iframe>
 
 ### The Permanent Web
 
 IPFS envisions a world where any resource is available via a locally mounted filesystem at paths like:
 
-<pre name="fdaf" id="fdaf" class="graf graf--pre graf-after--p"># a mutable path
+<pre name="fdaf" id="fdaf" className="graf graf--pre graf-after--p"># a mutable path
 /ipns/my.host.com/some/file.txt</pre>
 
-<pre name="d756" id="d756" class="graf graf--pre graf-after--pre"># or a permanent path
+<pre name="d756" id="d756" className="graf graf--pre graf-after--pre"># or a permanent path
 /ipfs/QmaKtFK3wiq9z2LmhMKgoXvuB4XDeY5Xrac8vVBLPjc9CX/some/file.txt</pre>
 
 But this file doesn't necessarily reside on the local disk. Instead, it exists in IPFS, a global distributed storage system. IPFS makes files in this namespace:

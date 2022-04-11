@@ -15,13 +15,13 @@ In Sourcegraph 3.18, you can now search across multiple revisions of the same re
 For example, a search over Sourcegraph versions 3.16 & 3.17 would look something like this:
 
 <a href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%403.17:3.16+CONTAINER_ID&patternType=literal" target="_blank">
-<img alt="Search over Sourcegraph versions 3.16 and 3.17" src="/blog/3.18-search-across-revisions.png">
+<img alt="Search over Sourcegraph versions 3.16 and 3.17" src="/blog/3.18-search-across-revisions.png"/>
 </a>
 
 A search over all branches using [@\*refs/heads/](https://sourcegraph.com/search?q=repo:%5Egithub.com/sourcegraph/sourcegraph%24%40*refs/heads/+CONTAINER_ID&patternType=literal&case=yes) would look like this:
 
 <a href="https://sourcegraph.com/search?q=repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24%40*refs/heads/+CONTAINER_ID&patternType=literal" target="_blank">
-<img alt="Search over all branches using @*refs/heads/" src="/blog/3.18-search-all-branches.png">
+<img alt="Search over all branches using @*refs/heads/" src="/blog/3.18-search-all-branches.png"/>
 </a>
 
 Be aware that searching over all branches may be slower than searching over a single branch. The cost of searching a branch is the same cost as searching a repository. To speed this up, ensure that branches are indexed with our experimental [indexed non-default branches feature](/blog/indexed-non-default-branches).

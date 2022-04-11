@@ -28,6 +28,7 @@ Breakages due to the programmer are the result of erroneous assumptions that com
 
 Here is a list of packages that users incorrectly assume to be stable:
 
+```
 - archive/{tar,zip}
 - compress/{flate,gzip,lzw,zlib}
 - encoding/{csv,gob,json,xml}
@@ -35,6 +36,7 @@ Here is a list of packages that users incorrectly assume to be stable:
 - net/http
 - math/rand
 - sort
+```
 
 Having unstable output means that it is not safe to assume that the outputs are byte-for-byte identical. Assuming this can have huge implications. Below we have a type Record where one of the fields is a TimeStamp in seconds. An ID method returns the SHA-256 checksum of the JSON encoded struct to obtain a unique identifier for each Record. However, this is problematic because the JSON representation of the timestamp differs between releases. When this Record is stored in the database on one release of Go, it can not be properly retrieved in a later release since the ID has changed. Bugs of this nature are surprising and difficult to track down.
 

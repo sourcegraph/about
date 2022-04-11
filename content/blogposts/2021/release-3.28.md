@@ -34,7 +34,7 @@ Sourcegraph 3.28 is now available! For this release, we added new security enhan
 ## Extensions registry update
 
 <p>
-  <img src="https://sourcegraphstatic.com/blog/3.28/before_after_extensions_registry_redesign.jpg" width="500" alt="before and after screenshot of the registry redesign">
+  <img src="https://sourcegraphstatic.com/blog/3.28/before_after_extensions_registry_redesign.jpg" width="500" alt="before and after screenshot of the registry redesign"/>
 </p>
 
 Extensions allow you to connect all your other tools to get functionality like test coverage, 1-click open file in editor, custom highlighting, and information from your other favorite services all in one place on Sourcegraph. The [extensions registry main page](https://sourcegraph.com/extensions?category=All) has a new visual design that better conveys the most useful information about extensions. Individual extension pages now have better information architecture.
@@ -51,8 +51,8 @@ Bulk actions allow users to automate taking an action on many changesets at a ti
 - add links to docs, or add instructions to all the changesets in a batch change
 - [Read more](https://docs.sourcegraph.com/batch_changes/how-tos/bulk_operations_on_changesets)
 
-<p><video autoplay loop muted playsinline style="width:600px">
-  <source src="https://sourcegraphstatic.com/blog/3.28/batch-changes-bulk-action-comment.mp4" type="video/mp4" data-cookieconsent="ignore">
+<p><video autoplay loop muted playsinline style={{width:'600px'}}>
+  <source src="https://sourcegraphstatic.com/blog/3.28/batch-changes-bulk-action-comment.mp4" type="video/mp4" data-cookieconsent="ignore"/>
  </video></p>
 
 In future releases we will add other bulk actions: merge, close and more.

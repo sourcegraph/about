@@ -11,7 +11,7 @@ published: true
 
 ---
 
-<p class="text-center">
+<p className="text-center">
   <a href="/strange-loop/" title="Go to the Strange Loop 2019 liveblog">
     <img alt="Strange Loop 2019 Banner" src="/blog/strange-loop-banner-landscape.jpg" />
   </a>
@@ -19,15 +19,15 @@ published: true
 
 ---
 
-<p class="text-center">
+<p className="text-center">
   <strong>Go to the liveblog - <a href="/strange-loop/">https://about.sourcegraph.com/strange-loop/</a></strong>
 </p>
 
 ---
 
-<div class="alert alert-info text-center">
+<div className="alert alert-info text-center mx-auto" style={{width:'40rem'}}>
   Want to sign up to liveblog at Strange Loop?
-  <a href="https://forms.gle/egsGKSrapRJkhiWw6" class="btn btn-primary ml-3" rel="nofollow" target="_blank"><i class="fa fa-file-pdf pr-2"></i>Sign up here</a>
+  <a href="https://forms.gle/egsGKSrapRJkhiWw6" className="btn btn-primary ml-3" rel="nofollow" target="_blank"><i className="fa fa-file-pdf pr-2"></i>Sign up here</a>
 </div>
 
 Sourcegraph is the standard developer platform for [code search](/product/code-search-navigation), [review](/product/code-review), and [code change management](/product/code-change-management) for many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
@@ -64,9 +64,8 @@ Once live, your post will be promoted on the [Strange Loop](https://twitter.com/
 
 For any questions, reach out to me (Ryan) via [Twitter DM](https://twitter.com/ryan_blunden) or [via email](mailto:ryan@sourcegraph.com).
 
-<p class="text-center">
-    <a href="https://forms.gle/egsGKSrapRJkhiWw6" class="btn btn-primary ml-3" rel="nofollow" target="_blank">
-    <i class="fa fa-file-pdf pr-2"></i>Sign up to be a liveblogger</a>
+<p className="text-center">
+    <a href="https://forms.gle/egsGKSrapRJkhiWw6" className="btn btn-primary ml-3" rel="nofollow" target="_blank">Sign up to be a liveblogger</a>
 </p>
 
 ## Hangout with us at Strange Loop 2019!
@@ -77,7 +76,7 @@ From all of us at Sourcegraph, we hope you enjoy Strange Loop 2019!
 
 ---
 
-<p class="text-center">
+<p className="text-center">
   <strong>Go to the liveblog - <a href="/strange-loop/">https://about.sourcegraph.com/strange-loop/</a></strong>
 </p>
 

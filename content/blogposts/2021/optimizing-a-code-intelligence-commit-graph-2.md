@@ -13,7 +13,7 @@ published: true
 
 ![Optimizing code intelligence commit graph graphic](/blog/optimizing-code-intelligence-commit-graph.png)
 
-In [Part 1 of this optimization story](/blog/optimizing-a-code-intel-commit-graph/), we detailed how Sourcegraph can resolve code intelligence queries using data from older commits when data on the requested commit is not yet available. The implementation lies completely within PostgreSQL, and the queries run with very low latency (<1ms). We boldly claimed that our fears of scalability were no longer cause for concern.
+In [Part 1 of this optimization story](/blog/optimizing-a-code-intel-commit-graph/), we detailed how Sourcegraph can resolve code intelligence queries using data from older commits when data on the requested commit is not yet available. The implementation lies completely within PostgreSQL, and the queries run with very low latency (< 1ms). We boldly claimed that our fears of scalability were no longer cause for concern.
 
 Turns out that claim was a half-truth (if not a lie) as Sourcegraph solves the problem well, but only at a particular scale. There is an entire class of enterprise customers who could benefit from this feature as well, but the speed at which the code moves is a huge obstacle to overcome when calculating visible uploads on demand.
 
@@ -24,7 +24,7 @@ In [Part 1](/blog/optimizing-a-code-intel-commit-graph/#Performance-improvements
 The following Git commit graph illustrates this difference. Searching from commit `g`, we could find index data on commits `a` and `m`, both only two steps away. However, if we had a limit of 10, we would see only the commits directly adjacent to `g` and would hit our limit before expanding outwards.
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph6.png" alt="High-merge commit graph" class="no-shadow">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph6.png" alt="High-merge commit graph" className="no-shadow"/>
   <figcaption>A Git commit graph with a large number of paths from <code>a</code> to <code>g</code> and <code>g</code> to <code>m</code>.</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ Another issue is high commit velocity. Suppose that we have a hard limit of view
 The following Git commit graph illustrates this, where commit `b` could simply be stranded on both sides by ancestor and descendant commits with code intelligence data just out of reach.
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph7.png" alt="Flat commit graph" class="no-shadow">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph7.png" alt="Flat commit graph" className="no-shadow"/>
   <figcaption>A Git commit graph with large distances between code intelligence indexes.</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ The `lsif_dirty_repositories` table tracks which repositories need their commit 
 For this example, we'll use the following commit graph, where commits `80c800`, `c85b4b`, and `3daedb` define uploads #1, #2, and #3, respectively.
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph3.png" alt="Sample commit graph" class="no-shadow">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph3.png" alt="Sample commit graph" className="no-shadow"/>
   <figcaption>A Git commit graph with code intelligence indexes attached to commits <code>80c800</code>, <code>c85b4b</code>, and <code>3daedb</code>.</figcaption>
 </figure>
 
@@ -108,132 +108,134 @@ This means that there is no single nearest upload per commit: there is a nearest
 - Commit `69a5ed` defines upload #5 rooted at the directory `/bonk`
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph4.png" alt="Sample commit graph" class="no-shadow">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph4.png" alt="Sample commit graph" className="no-shadow"/>
   <figcaption>A Git commit graph with code intelligence indexes rooted at different subdirectories.</figcaption>
 </figure>
 
 <table>
-<tr>
-    <th>Commit</th>
-    <th>Descendant visibility</th>
-    <th>Ancestor visibility</th>
-    <th>Combined visibility</th>
-</tr>
-<tr>
-    <td><code>80c800</code></td>
-    <td>
-        <code>(id=1, root=foo/, dist=0)</code>
-    </td>
-    <td>
-        <code>(id=1, root=foo/, dist=0)</code><br />
-        <code>(id=2, root=bar/, dist=1)</code><br />
-        <code>(id=4, root=bnk/, dist=2)</code><br />
-        <code>(id=5, root=baz/, dist=3)</code>
-    </td>
-    <td>
-        <code>(id=1, root=foo/, dist=0)</code><br />
-        <code>(id=2, root=bar/, dist=1)</code><br />
-        <code>(id=4, root=bnk/, dist=2)</code><br />
-        <code>(id=5, root=baz/, dist=3)</code>
-    </td>
-</tr>
-<tr>
-    <td><code>d9c29f</code></td>
-    <td>
-        <code>(id=1, root=foo/, dist=1)</code><br />
-        <code>(id=2, root=bar/, dist=0)</code>
-    </td>
-    <td>
-        <code>(id=2, root=bar/, dist=0)</code><br />
-        <code>(id=3, root=foo/, dist=1)</code><br />
-        <code>(id=5, root=baz/, dist=2)</code>
-    </td>
-    <td>
-        <code>(id=1, root=foo/, dist=1)</code><br />
-        <code>(id=2, root=bar/, dist=0)</code><br />
-        <code>(id=5, root=baz/, dist=2)</code>
-    </td>
-</tr>
-<tr>
-    <td><code>c85b4b</code></td>
-    <td>
-        <code>(id=2, root=bar/, dist=1)</code><br />
-        <code>(id=3, root=foo/, dist=0)</code>
-    </td>
-    <td>
-        <code>(id=3, root=foo/, dist=0)</code><br />
-        <code>(id=5, root=baz/, dist=1)</code>
-    </td>
-    <td>
-        <code>(id=2, root=bar/, dist=1)</code><br />
-        <code>(id=3, root=foo/, dist=0)</code><br />
-        <code>(id=5, root=baz/, dist=1)</code>
-    </td>
-</tr>
-<tr>
-    <td><code>69a5ed</code></td>
-    <td>
-        <code>(id=2, root=bar/, dist=2)</code><br />
-        <code>(id=3, root=foo/, dist=1)</code><br />
-        <code>(id=4, root=bnk/, dist=1)</code><br />
-        <code>(id=5, root=baz/, dist=0)</code>
-    </td>
-    <td>
-        <code>(id=5, root=baz/, dist=0)</code>
-    </td>
-    <td>
-        <code>(id=2, root=bar/, dist=2)</code><br />
-        <code>(id=3, root=foo/, dist=1)</code><br />
-        <code>(id=4, root=bnk/, dist=1)</code>
-    </td>
-</tr>
-<tr>
-    <td><code>f9727d</code></td>
-    <td>
-        <code>(id=1, root=foo/, dist=1)</code>
-    </td>
-    <td>
-        <code>(id=4, root=bnk/, dist=1)</code><br />
-        <code>(id=5, root=baz/, dist=2)</code>
-    </td>
-    <td>
-        <code>(id=1, root=foo/, dist=1)</code><br />
-        <code>(id=4, root=bnk/, dist=1)</code><br />
-        <code>(id=5, root=baz/, dist=2)</code>
-    </td>
-</tr>
-<tr>
-    <td><code>3daedb</code></td>
-    <td>
-        <code>(id=1, root=foo/, dist=2)</code><br />
-        <code>(id=4, root=bnk/, dist=0)</code>
-    </td>
-    <td>
-        <code>(id=4, root=bnk/, dist=0)</code><br />
-        <code>(id=5, root=baz/, dist=1)</code>
-    </td>
-    <td>
-        <code>(id=1, root=foo/, dist=2)</code><br />
-        <code>(id=4, root=bnk/, dist=0)</code><br />
-        <code>(id=5, root=baz/, dist=1)</code>
-    </td>
-</tr>
-<tr>
-    <td><code>063211</code></td>
-    <td>
-        <code>(id=2, root=bar/, dist=3)</code><br />
-        <code>(id=3, root=foo/, dist=2)</code><br />
-        <code>(id=4, root=bnk/, dist=2)</code><br />
-        <code>(id=5, root=baz/, dist=1)</code>
-    </td>
-    <td></td>
-    <td>
-        <code>(id=2, root=bar/, dist=3)</code><br />
-        <code>(id=3, root=foo/, dist=2)</code><br />
-        <code>(id=4, root=bnk/, dist=2)</code><br />
-        <code>(id=5, root=baz/, dist=1)</code>
-    </td>
-</tr>
+    <tbody>
+        <tr>
+            <th>Commit</th>
+            <th>Descendant visibility</th>
+            <th>Ancestor visibility</th>
+            <th>Combined visibility</th>
+        </tr>
+        <tr>
+            <td><code>80c800</code></td>
+            <td>
+                <code>(id=1, root=foo/, dist=0)</code>
+            </td>
+            <td>
+                <code>(id=1, root=foo/, dist=0)</code><br />
+                <code>(id=2, root=bar/, dist=1)</code><br />
+                <code>(id=4, root=bnk/, dist=2)</code><br />
+                <code>(id=5, root=baz/, dist=3)</code>
+            </td>
+            <td>
+                <code>(id=1, root=foo/, dist=0)</code><br />
+                <code>(id=2, root=bar/, dist=1)</code><br />
+                <code>(id=4, root=bnk/, dist=2)</code><br />
+                <code>(id=5, root=baz/, dist=3)</code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>d9c29f</code></td>
+            <td>
+                <code>(id=1, root=foo/, dist=1)</code><br />
+                <code>(id=2, root=bar/, dist=0)</code>
+            </td>
+            <td>
+                <code>(id=2, root=bar/, dist=0)</code><br />
+                <code>(id=3, root=foo/, dist=1)</code><br />
+                <code>(id=5, root=baz/, dist=2)</code>
+            </td>
+            <td>
+                <code>(id=1, root=foo/, dist=1)</code><br />
+                <code>(id=2, root=bar/, dist=0)</code><br />
+                <code>(id=5, root=baz/, dist=2)</code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>c85b4b</code></td>
+            <td>
+                <code>(id=2, root=bar/, dist=1)</code><br />
+                <code>(id=3, root=foo/, dist=0)</code>
+            </td>
+            <td>
+                <code>(id=3, root=foo/, dist=0)</code><br />
+                <code>(id=5, root=baz/, dist=1)</code>
+            </td>
+            <td>
+                <code>(id=2, root=bar/, dist=1)</code><br />
+                <code>(id=3, root=foo/, dist=0)</code><br />
+                <code>(id=5, root=baz/, dist=1)</code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>69a5ed</code></td>
+            <td>
+                <code>(id=2, root=bar/, dist=2)</code><br />
+                <code>(id=3, root=foo/, dist=1)</code><br />
+                <code>(id=4, root=bnk/, dist=1)</code><br />
+                <code>(id=5, root=baz/, dist=0)</code>
+            </td>
+            <td>
+                <code>(id=5, root=baz/, dist=0)</code>
+            </td>
+            <td>
+                <code>(id=2, root=bar/, dist=2)</code><br />
+                <code>(id=3, root=foo/, dist=1)</code><br />
+                <code>(id=4, root=bnk/, dist=1)</code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>f9727d</code></td>
+            <td>
+                <code>(id=1, root=foo/, dist=1)</code>
+            </td>
+            <td>
+                <code>(id=4, root=bnk/, dist=1)</code><br />
+                <code>(id=5, root=baz/, dist=2)</code>
+            </td>
+            <td>
+                <code>(id=1, root=foo/, dist=1)</code><br />
+                <code>(id=4, root=bnk/, dist=1)</code><br />
+                <code>(id=5, root=baz/, dist=2)</code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>3daedb</code></td>
+            <td>
+                <code>(id=1, root=foo/, dist=2)</code><br />
+                <code>(id=4, root=bnk/, dist=0)</code>
+            </td>
+            <td>
+                <code>(id=4, root=bnk/, dist=0)</code><br />
+                <code>(id=5, root=baz/, dist=1)</code>
+            </td>
+            <td>
+                <code>(id=1, root=foo/, dist=2)</code><br />
+                <code>(id=4, root=bnk/, dist=0)</code><br />
+                <code>(id=5, root=baz/, dist=1)</code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>063211</code></td>
+            <td>
+                <code>(id=2, root=bar/, dist=3)</code><br />
+                <code>(id=3, root=foo/, dist=2)</code><br />
+                <code>(id=4, root=bnk/, dist=2)</code><br />
+                <code>(id=5, root=baz/, dist=1)</code>
+            </td>
+            <td></td>
+            <td>
+                <code>(id=2, root=bar/, dist=3)</code><br />
+                <code>(id=3, root=foo/, dist=2)</code><br />
+                <code>(id=4, root=bnk/, dist=2)</code><br />
+                <code>(id=5, root=baz/, dist=1)</code>
+            </td>
+        </tr>
+    </tbody>
 </table>
 
 The size of the table here (relative to the simple table produced by a single-root repository) is the thing to note. Let's say a repository has _n_ commits and _m_ distinctly indexable directories. Each commit then can see up to _m_ uploads, which drastically balloons the cost of merging 2 sets of visible uploads. This further impacts performance in the presence of many merge commits.
@@ -243,7 +245,7 @@ The size of the table here (relative to the simple table produced by a single-ro
 One of our large enterprise customers, who is also one of our earliest adopters of LSIF-based code intelligence at scale, had completed an upgrade from Sourcegraph 3.17 to 3.20. After the upgrade, they realized they were no longer getting refreshed precise code intelligence and sent us this cubist Sydney Opera House of a graph, indicating that something was deeply wrong.
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/oom.png" alt="Worker OOM">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/oom.png" alt="Worker OOM"/>
   <figcaption>Worker memory usage exploding, then falling suddenly after the process crashes.</figcaption>
 </figure>
 
@@ -336,7 +338,7 @@ var visibleUploads map[string /* commit */]map[string /* indexer+root */]Upload 
 We stop pre-calculating the set of visible uploads for **every** commit at once. We make the observation that for a large class of commits, the set of visible uploads are simply redundant information.
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph5.png" alt="Sample commit graph" class="no-shadow">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph5.png" alt="Sample commit graph" className="no-shadow"/>
   <figcaption>A Git commit graph with code intelligence attached to commits <code>68acd3</code> and <code>67e0bf</code>.</figcaption>
 </figure>
 
@@ -354,7 +356,7 @@ It turns out that 80% of our problematic commit graph can be recalculated in thi
 This last change turned out to be a **huge** win. When we started, the commit graph could only be calculated in 5 **hours** using 21GB of memory. Now, it takes 5 **seconds** and a single gigabyte. This is a ~3600x reduction in CPU and a ~20x reduction in memory.
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/cpu-mem-fix.png" alt="CPU and memory reduction">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/cpu-mem-fix.png" alt="CPU and memory reduction"/>
   <figcaption>CPU and memory usage drastically after skipping calculation of visible uploads for "trivial" commits.</figcaption>
 </figure>
 
@@ -363,7 +365,7 @@ But of course the story isn't over. We're battling with the [triple constraint](
 In this case, it was **very** noticeable.
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/full-disk.png" alt="Critical db size">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/full-disk.png" alt="Critical db size"/>
   <figcaption>Sorry about your disk.</figcaption>
 </figure>
 
@@ -395,7 +397,7 @@ We introduced a new table, `lsif_nearest_uploads_links`, which stores a link fro
 We'll use the following commit graph again for our example. Here, commit `68acd3` defines upload #1, and `67e0bf` defines upload #2 (both with distinct indexing root directories).
 
 <figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph5.png" alt="Sample commit graph" class="no-shadow">
+  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph5.png" alt="Sample commit graph" className="no-shadow"/>
   <figcaption>A Git commit graph with code intelligence attached to commits <code>68acd3</code> and <code>67e0bf</code>.</figcaption>
 </figure>
 
@@ -439,160 +441,8 @@ In Part 2, we presented a fantastic way to "optimize the database" by reducing t
 - [How not to break a search engine or: What I learned about unglamorous engineering](/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
 - [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](/blog/avoiding-the-pitfalls-of-iteration-based-development/)
 
-<!--
-digraph G {
-  rankdir="LR";
-  node [fontname="monospace"];
-  edge[arrowhead=none];
-
-  main[shape=box,label="main",color=grey];
-  branch[shape=box,label="feat/x",color=grey];
-
-  g[label="323e23",group=main];
-  f[label="d67b8d",group=main, color=blue];
-  c[label="4c8d9d",group=main];
-  a[label="f4fb06",group=main, color=blue];
-  b[label="a36064",group=main];
-  d[label="313082",group=branch];
-  e[label="6a06fc",group=branch];
-
-  g -> f; f -> c; c -> a; a -> b; b -> main;
-  c -> d; d -> e; e-> branch;
-}
-
-digraph G {
-  rankdir="LR";
-  node [fontname="monospace"];
-  edge[arrowhead=none];
-  graph[nodesep=0.5];
-
-  main[shape=box,label="main",color=grey,group=main];
-  branch1[shape=box,label="feat/x",color=grey,group=branch];
-  branch2[shape=box,label="feat/y",color=grey,group=branch2];
-
-  a[label="09210f",group=main,color=blue];
-  b[label="3d2f27",group=main];
-  e[label="1f64f9",group=branch1];
-  l[label="2190d3",group=branch1];
-  f[label="4a848f",group=main];
-  g[label="5a24e4",group=branch2];
-  j[label="703e33",group=main];
-  k[label="6307e6",group=main];
-
-  a -> b -> f -> k -> j;
-  a -> e -> l -> b;
-  b -> g -> j;
-
-  j -> main;
-  l -> branch1;
-  g -> branch2;
-}
-
-digraph G {
-  rankdir="LR";
-  node [fontname="monospace"];
-  edge[arrowhead=none];
-  graph[nodesep=0.5];
-
-  a[label="80c800",group=main,color=blue];
-  b[label="69a5ed",group=main];
-  c[label="d9c29f",group=branch1];
-  d[label="c85b4b",group=branch1,color=blue];
-  e[label="063211",group=main];
-  f[label="f9727d",group=branch1];
-  g[label="3daedb",group=branch1,color=blue];
-  h[label="9d9c37",group=main];
-  j[label="e8331f",group=main];
-
-  a -> b -> e -> h -> j;
-  a -> c -> d -> b;
-  b -> f -> g -> j;
-}
-
-digraph G {
-  rankdir="LR";
-  node [fontname="monospace"];
-  edge[arrowhead=none];
-  graph[nodesep=0.5];
-
-  c[label="d9c29f",group=branch1, color=red];
-  d[label="c85b4b",group=branch1, color=blue];
-  a[label="80c800",group=main, color=blue];
-  b[label="69a5ed",group=main, color=gold];
-  e[label="063211",group=main];
-  f[label="f9727d",group=branch2];
-  g[label="3daedb",group=branch2, color=green];
-
-  b -> e;
-  a -> c -> d -> b;
-  a -> f -> g -> b;
-}
-
-digraph G {
-  rankdir="LR";
-  node [fontname="monospace"];
-  edge[arrowhead=none];
-  graph[nodesep=0.5];
-
-  a[label="4a8a33",group=main];
-  b[label="68acd3",group=main, color=blue];
-  c[label="91a565",group=main];
-  d[label="e43f5b",group=main];
-  e[label="599611",group=main];
-  f[label="7b1a18",group=main];
-  g[label="7e0471",group=branch1];
-  h[label="52811d",group=branch1];
-  j[label="67e0bf",group=branch1,color=red];
-  i[label="dd8578",group=main];
-
-  a -> g -> h -> j -> e;
-  a -> b -> c -> d -> e -> f -> i;
-}
-
-digraph G {
-  rankdir="LR";
-  node [fontname="monospace"];
-  edge[arrowhead=none];
-  graph[nodesep=0.5];
-
-  a[label="a",group=main, color=red];
-  b2[label="b",group=f2];
-  b3[label="c",group=f3];
-  b1[label="d",group=main];
-  b4[label="e",group=f4];
-  b5[label="f",group=f5];
-  c[label="g",group=main];
-  d2[label="h",group=f2];
-  d3[label="i",group=f3];
-  d1[label="j",group=main];
-  d4[label="k",group=f4];
-  d5[label="l",group=f5];
-  e[label="m",group=main, color=blue];
-
-  a -> b1 -> c -> d1 -> e;
-  a -> b2 -> c -> d2 -> e;
-  a -> b3 -> c -> d3 -> e;
-  a -> b4 -> c -> d4 -> e;
-  a -> b5 -> c -> d5 -> e;
-}
-
-digraph G {
-  rankdir="LR";
-  node [fontname="monospace"];
-  edge[arrowhead=none];
-  graph[nodesep=0.5];
-
-  a[label="a",group="main",color=red];
-  b[label="...",group=main, color=white];
-  c[label="b",group=main];
-  d[label="...",group=main, color=white];
-  e[label="c",group=main, color=blue];
-
-  a -> b -> c -> d -> e;
-}
--->
-
 <style>
+  {`
   figure .no-shadow { box-shadow: none; }
   .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
 
@@ -601,4 +451,5 @@ digraph G {
     margin-top: -2rem;
     font-style: italic;
   }
+`}
 </style>

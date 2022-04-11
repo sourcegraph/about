@@ -13,7 +13,7 @@ description: "Sourcegraph 3.17: Faster and automatic precise code intelligence a
 
 We've shipped Sourcegraph 3.17 with many improvements to help you explore, navigate, and understand your code with universal code search:
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🧠 Faster and automatic precise code intelligence**](#faster-and-automatic-precise-code-intelligence)<br />
 Precise code intelligence is now 35% faster than in 3.16. The experimental feature of automatic precise code intelligence will bring precise results to more repositories faster.
@@ -42,38 +42,40 @@ Sourcegraph couldn't be what it is without our contributors.
 
 Precise code intelligence queries are now faster. The following chart shows the decrease in query latency while running our [integration test suite](https://github.com/sourcegraph/sourcegraph/tree/5f51043ad2130a1acdcfca8b969f907cd03a220d/internal/cmd/precise-code-intel-test) compared to the previous two Sourcegraph releases. Sourcegraph 3.17 is 50% faster than in Sourcegraph 3.15, and 35% faster than in Sourcegraph 3.16.
 
-<div class="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/lsif-query-latency-317.png" width="70%" alt="Precise code intel query latency chart">
+<div className="text-center benchmark-results">
+  <img src="https://sourcegraphstatic.com/lsif-query-latency-317.png" width="70%" alt="Precise code intel query latency chart"/>
 </div>
 
 In [Sourcegraph 3.16](https://about.sourcegraph.com/blog/sourcegraph-3.16#performance-improvements-for-precise-code-intelligence), our precise code intelligence backend was rewritten from TypeScript to Go. This was part of a larger effort to aggressively optimize conversion and querying of LSIF data. That effort is now well underway!
 
 The task of uploading and processing precise code intelligence bundles, which has previously been a sticking point on private instances with large repositories, has also been improved (around 45% faster than Sourcegraph 3.16 and 48% faster than Sourcegraph 3.15). The following chart shows the time required to upload the indexes for our integration test suite. This includes three commits from [etcd-io/etcd](https://github.com/etcd-io/etcd), [pingcap/tidb](https://github.com/pingcap/tidb), and [distributedio/titan](https://github.com/distributedio/titan), and two commits from [uber-go/zap](https://github.com/uber-go/zap).
 
-<div class="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/lsif-processing-latency-317.png" width="50%" alt="Precise code intel index processing latency chart">
+<div className="text-center benchmark-results">
+  <img src="https://sourcegraphstatic.com/lsif-processing-latency-317.png" width="50%" alt="Precise code intel index processing latency chart"/>
 </div>
 
 We’ve also poured some love into the on-disk format of precise code intel bundles (each bundle is now 30-50% smaller than the previous release). This should be helpful in private instances with large, frequent index uploads and constrained disk, where frequent eviction of recent bundles was previously an issue.
 
-<div class="text-center benchmark-results">
-  <img src="https://sourcegraphstatic.com/tidb-bundle-size.png" width="48%" alt="tidb bundle process code intel bundle (processed index) size on disk chart">
-  <img src="https://sourcegraphstatic.com/etcd-bundle-size.png" width="48%" alt="etcd bundle process code intel bundle (processed index) size on disk chart">
+<div className="text-center benchmark-results">
+  <img src="https://sourcegraphstatic.com/tidb-bundle-size.png" width="48%" alt="tidb bundle process code intel bundle (processed index) size on disk chart"/>
+  <img src="https://sourcegraphstatic.com/etcd-bundle-size.png" width="48%" alt="etcd bundle process code intel bundle (processed index) size on disk chart"/>
   <br />
-  <img src="https://sourcegraphstatic.com/titan-bundle-size.png" width="48%" alt="titan bundle process code intel bundle (processed index) size on disk chart">
-  <img src="https://sourcegraphstatic.com/zap-bundle-size.png" width="48%" alt="zap bundle process code intel bundle (processed index) size on disk chart">
+  <img src="https://sourcegraphstatic.com/titan-bundle-size.png" width="48%" alt="titan bundle process code intel bundle (processed index) size on disk chart"/>
+  <img src="https://sourcegraphstatic.com/zap-bundle-size.png" width="48%" alt="zap bundle process code intel bundle (processed index) size on disk chart"/>
 </div>
 
 <style>
+{`
   .blog-post__body .benchmark-results img { box-shadow: none; display: inline; margin: 10px auto; }
+`}
 </style>
 
 We plan to continue on this path of performance improvements, and the next release will focus on processing multiple bundles concurrently in order to multiply the benefit of this release’s raw latency gains.
 
 ### Automatic precise code intelligence
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/BHYka1CT700?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/BHYka1CT700?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>
 
 An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence) for eligible repositories based on their popularity, so that the repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that do not require additional build steps, and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
@@ -84,8 +86,8 @@ Currently, a repository will need 50 navigation events (hovers, jump to definiti
 
 ## AND/OR operators for code search
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>
 
 In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced experimental AND/OR queries for file content in regular expressions and structural search modes. Now in Sourcegraph 3.17, AND/OR queries are included in the recently added literal search mode, and enabled for all users (no longer considered experimental).

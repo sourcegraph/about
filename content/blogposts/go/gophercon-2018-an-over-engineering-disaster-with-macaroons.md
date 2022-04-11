@@ -154,7 +154,7 @@ This is nice, it improved authentication but not the authorization to check what
 
 Macaroon solves this by adding layers (a.k.a Caveat), chaining HMAC:
 
-<img width="419" alt="screen shot 2018-08-28 at 11 28 23 am" src="https://user-images.githubusercontent.com/521701/44739621-827f8d80-aab5-11e8-8996-4e62f61c6779.png">
+<img width="419" alt="screen shot 2018-08-28 at 11 28 23 am" src="https://user-images.githubusercontent.com/521701/44739621-827f8d80-aab5-11e8-8996-4e62f61c6779.png" />
 
 Let's take a look at the code:
 
@@ -245,7 +245,7 @@ All this seemed very exciting and a great fit for Chain's use case.
 
 ### The good parts
 
-<img width="455" alt="screen shot 2018-08-28 at 11 27 14 am" src="https://user-images.githubusercontent.com/521701/44739575-5e23b100-aab5-11e8-8db7-be1dae79a5f9.png">
+<img width="455" alt="screen shot 2018-08-28 at 11 27 14 am" src="https://user-images.githubusercontent.com/521701/44739575-5e23b100-aab5-11e8-8db7-be1dae79a5f9.png" />
 
 *Ledgerd* creates a "golden" macaroon, pass it to the *Dashboard* who "downgrades" it so it can only do some specific actions.
 

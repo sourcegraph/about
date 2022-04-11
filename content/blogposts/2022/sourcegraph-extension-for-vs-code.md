@@ -14,8 +14,8 @@ published: true
 
 My name is [Murat Sutunc](https://handbook.sourcegraph.com/team#murat-sutunc), and I’m the Engineering Manager for the Growth and Integrations team at Sourcegraph. Our team currently owns the initial user journey, growth-oriented projects, our code host and third-party integrations (including our IDE and browser extensions), and Sourcegraph extensions. As someone who does a lot of code reviews and occasionally jumps in to fix small issues, I wanted to share with everyone how I use my favorite IDE (VS Code!) and Sourcegraph together.
 
-<div class="alert alert-primary" role="alert" style="max-width:650px; align-items: center; margin: auto auto 20px auto">
-      <span>TL;DR 👉 The Sourcegraph VS Code extension is a really powerful tool that lets you search your code and 2M+ open source repositories, all from your IDE! It’s available on <a = href="https://marketplace.visualstudio.com/items?itemName=sourcegraph.sourcegraph">the marketplace</a>—no account needed, give it a try!</span>
+<div className="alert alert-primary" role="alert" style={{maxWidth:'650px', alignItems:'center', margin: 'auto auto 20px auto'}}>
+      <span>TL;DR 👉 The Sourcegraph VS Code extension is a really powerful tool that lets you search your code and 2M+ open source repositories, all from your IDE! It’s available on <a href="https://marketplace.visualstudio.com/items?itemName=sourcegraph.sourcegraph">the marketplace</a>—no account needed, give it a try!</span>
 </div>
 
 ### Finding reusable code to fix issues

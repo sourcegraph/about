@@ -13,7 +13,7 @@ description: 'Sourcegraph 3.3: Improving the user experience for site admins'
 
 We're excited to announce Sourcegraph 3.3. Sourcegraph is a code search and navigation tool (self-hosted, open source, and cross-repository). Read on for the details, and thanks to our customers and community for reporting issues and providing feedback. You’re helping to make each Sourcegraph release the best one yet!
 
-<div style="padding-left: 2rem">
+<div style={{paddingLeft: '2rem'}}>
 
 [**🛠️ Config-based repository selection**](#config-based-repository-selection)<br />
 Define add/exclude lists in external services instead of enabling/disabling.
@@ -33,11 +33,7 @@ Fly around Swift code on Sourcegraph.com or your code host.
 [**🗄 Symbols for the current file**](#symbols-for-the-current-file)<br />
 The symbols sidebar is now scoped to the current file/directory you’re viewing.
 
-<!--
-TODO(ryan): Show once 3.3 is available on DigitalOcean
-[**🚢 Deployments secure by default with TLS pre-configured**](#deployments)<br />
-AWS and DigitalOcean deployments with TLS via self-signed certs.
--->
+`{/*TODO(ryan): Show once 3.3 is available on DigitalOcean[**🚢 Deployments secure by default with TLS pre-configured**](#deployments)<br />AWS and DigitalOcean deployments with TLS via self-signed certs.*/}`
 
 [**🔎 Handle common search queries containing (unintended) invalid regexp**](#handle-common-search-queries-containing-unintended-invalid-regexp)<br />
 Searching for function call sites such as `open(` now work as expected.
@@ -45,7 +41,7 @@ Searching for function call sites such as `open(` now work as expected.
 [**📣 Tips for making Sourcegraph a part of your dev tools stack**](#making-sourcegraph-a-part-of-your-dev-tools-stack)<br />
 Documentation on integrating Sourcegraph and code search into your team's workflow.
 
-**[🧯 Jump to Sentry issue from your code](#jump-to-sentry-issue-from-your-code)**<br/>
+[**🧯 Jump to Sentry issue from your code**](#jump-to-sentry-issue-from-your-code)<br/>
 Your error and exception handling code, annotated with Sentry links.
 
 [**📝 Changelog**](#330-changelog)<br />
@@ -56,7 +52,7 @@ Sourcegraph couldn’t be what it is without the community.
 
 </div>
 
-**Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) <!--| [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c)--> | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
+**Deploy or upgrade:** [Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) `{/*<!--| [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c)-->*/}`| [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
 **Insiders:** Want to try pre-release development builds? Change the Docker image tag to `sourcegraph:insiders`.
 
@@ -97,12 +93,12 @@ This has been implemented for [GitHub](https://docs.sourcegraph.com/admin/extern
 
 ## Bitbucket Server integration
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/331821650?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/331821650?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/331821650" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/331821650" target="_blank">View on Vimeo</a></p>
+</div>
 
 Get IDE-like features on your next pull request review inline on Bitbucket Server by installing the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension), then granting permissions for your Bitbucket Server domain.
 
@@ -110,7 +106,7 @@ Get IDE-like features on your next pull request review inline on Bitbucket Serve
 
 Granting permissions in the Sourcegraph browser extension is necessary when using anything except GitHub.com. It's now easier to discover:
 
-<div style="text-align: center">
+<div style={{textAlign: 'center'}}>
 
   ![Sourcegraph browser extension enabled prompt](/blog/sourcegraph-browser-extension-enable-prompt.png)
 
@@ -124,12 +120,12 @@ Definitions are now filtered using `import` / `require` statements to reduce fal
 
 ## Swift code navigation
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/331859021?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/331859021?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/331859021" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/331859021" target="_blank">View on Vimeo</a></p>
+</div>
 
 See it in action on [Sourcegraph.com](https://sourcegraph.com/github.com/googleprojectzero/fuzzilli/-/blob/Sources/Fuzzilli/Configuration.swift#L64:27) or use it on your own instance for yourself or [for all users](https://docs.sourcegraph.com/admin/extensions#enable-an-extension-for-all-users):
 
@@ -139,24 +135,7 @@ The symbols sidebar is now scoped to the current file/directory you’re viewing
 
 ![File scoped symbols](/blog/file-scoped-symbols.png)
 
-<!--
-TODO(ryan): Show once 3.3 is available on DigitalOcean
-
-## Deployments secure by default with TLS pre-configured
-
-<p style="text-align: center">
-  <img src="/blog/tls.png" style="width: 350px" />
-</p>
-
-The 3.2 release brought with it two new ways of deploying Sourcegraph to the cloud:
-
-- [One-click installer on the DigitalOcean marketplace](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c)
-- [AWS EC2 Terraform plan](https://github.com/sourcegraph/deploy-sourcegraph-aws)
-
-They have been updated for 3.3 and now come pre-configured to use TLS with a self-signed certificate. Additional documentation now exists for getting the [self-signed certificate trusted by your browser](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx#5-getting-the-self-signed-certificate-to-be-trusted-valid-on-external-instances).
-
-Terraform plans for Google Cloud and Azure are being scheduled for upcoming releases. Let us know via [tweet](https://twitter.com/sourcegraph) or [GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=) which cloud provider you want support for next, along with any special instructions for that provider.
--->
+`{/*TODO(ryan): Show once 3.3 is available on DigitalOcean ## Deployments secure by default with TLS pre-configured<p style="text-align: center"><img src="/blog/tls.png" style="width: 350px" /></p>The 3.2 release brought with it two new ways of deploying Sourcegraph to the cloud:- [One-click installer on the DigitalOcean marketplace](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c)- [AWS EC2 Terraform plan](https://github.com/sourcegraph/deploy-sourcegraph-aws)They have been updated for 3.3 and now come pre-configured to use TLS with a self-signed certificate. Additional documentation now exists for getting the [self-signed certificate trusted by your browser](https://docs.sourcegraph.com/admin/ssl_https_self_signed_cert_nginx#5-getting-the-self-signed-certificate-to-be-trusted-valid-on-external-instances)Terraform plans for Google Cloud and Azure are being scheduled for upcoming releases. Let us know via [tweet](https://twitter.com/sourcegraph) or [GitHub issue](https://github.com/sourcegraph/sourcegraph/issues/new?assignees=&labels=&template=feature_request.md&title=) which cloud provider you want support for next, along with any special instructions for that provider.*/}`
 
 ## Handle common search queries containing (unintended) invalid regexp
 
@@ -183,12 +162,12 @@ See examples of how developers at companies such as Uber, Lyft, and Yelp depend 
 
 ## Jump to Sentry issue from your code
 
-<p class="container">
-  <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/331346276?color=0CB6F4&amp;title=0&amp;byline=" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<div className="container">
+  <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+    <iframe src="https://player.vimeo.com/video/331346276?color=0CB6F4&amp;title=0&amp;byline=" style={{position:'absolute',top:0,left:0,width:'100%',height:'100%'}} frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe>
   </div>
-  <p style="text-align: center"><a href="https://vimeo.com/331346276" target="_blank">View on Vimeo</a></p>
-</p>
+  <p style={{textAlign: 'center'}}><a href="https://vimeo.com/331346276" target="_blank">View on Vimeo</a></p>
+</div>
 
 [Sentry](https://sentry.io/) is an [open source](https://github.com/getsentry/sentry) error tracking tool which captures and sends error and exception notifications instantly. When browsing code on Sourcegraph or your code host, wouldn't it be great if you could jump straight to the Sentry records page whenever you see error handling code instead of manually navigating around Sentry?
 
@@ -295,7 +274,7 @@ Thank you to the many people who contributed to Sourcegraph since the last relea
 
 ## Deploy or upgrade
 
-[Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) <!--| [DigitalOcean](https://marketplace.digitalocean.com/apps/sourcegraph?action=deploy&refcode=48dfb3ccb51c)--> | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
+[Local](https://docs.sourcegraph.com/#quickstart-guide) | [AWS](https://github.com/sourcegraph/deploy-sourcegraph-aws) | [Kubernetes cluster](https://github.com/sourcegraph/deploy-sourcegraph)
 
 Upgrading from 2.x or 3.0? [See the migration guide](https://docs.sourcegraph.com/admin/migration/3_0)
 
