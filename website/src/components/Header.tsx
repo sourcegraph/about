@@ -111,6 +111,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                             Dev Tool Time
                                         </NavDropdown.Item>
                                         <NavDropdown.Item href="/podcast/">Sourcegraph Podcast</NavDropdown.Item>
+                                        <NavDropdown.Item href="/resources/">Resources</NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title="Customers" onToggle={this.dropdownToggle}>
                                         <NavDropdown.Item href="/case-studies">Case studies</NavDropdown.Item>
@@ -231,6 +232,9 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 </li>
                                                 <li className="nav-link" role="presentation">
                                                     <a href="/podcast">Podcast</a>
+                                                </li>
+                                                <li className="nav-link" role="presentation">
+                                                    <a href="/resources">Resources</a>
                                                 </li>
                                             </ul>
                                         </li>
