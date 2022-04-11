@@ -8,8 +8,8 @@
     "target": "ESNext",
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
-    "lib": ["dom", "es2015", "es2017"],
+    "lib": ["dom", "es2015", "es2017"]
   },
   "baseUrl": ".",
-  "include": ["./src/**/*", "./typings/**/*"],
+  "include": ["./src/**/*", "./typings/**/*"]
 }
