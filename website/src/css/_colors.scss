@@ -85,3 +85,30 @@ $green-9: #2b8a3e;
 .bg-unset {
     background-color: unset;
 }
+
+.btn {
+    &.btn-primary {
+        color: $white;
+    }
+    &.btn-outline-primary {
+        color: $blue;
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+    &.btn-purple {
+        color: $white;
+        background-color: $purple;
+    }
+    &.btn-outline-purple {
+        border: 1px solid $purple;
+        color: $purple;
+
+        &:hover {
+            background-color: $purple;
+            color: $white;
+        }
+    }
+}
