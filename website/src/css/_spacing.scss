@@ -1,0 +1,63 @@
+@use 'sass:map';
+
+$maxBreakpoint: map.get($grid-breakpoints, 'xl');
+
+@for $spacing from 50 through $maxBreakpoint {
+    $increment: $spacing + 50;
+
+    @if $increment % 50 == 0 {
+        // Utility classes for heights, min-heights and max-widths
+        .h-#{$spacing} {
+            height: #{$spacing}px;
+        }
+        .min-h-#{$spacing} {
+            min-height: #{$spacing}px;
+        }
+        .min-w-#{$spacing} {
+            min-width: #{$spacing}px;
+        }
+        .max-w-#{$spacing} {
+            max-width: #{$spacing}px;
+        }
+
+        // Mobile-first utility classes for heights, min-heights, and max-widths
+        @each $breakpoint, $width in $grid-breakpoints {
+            @media (min-width: $width) {
+                // Auto resets
+                .h-#{$breakpoint}-auto {
+                    height: auto;
+                }
+                .min-h-#{$breakpoint}-auto {
+                    min-height: auto;
+                }
+                .min-w-#{$breakpoint}-auto {
+                    min-width: auto;
+                }
+
+                // Height, min height, min width, and max width
+                .h-#{$breakpoint}-#{$spacing} {
+                    height: #{$spacing}px;
+                }
+                .min-h-#{$breakpoint}-#{$spacing} {
+                    min-height: #{$spacing}px;
+                }
+                .min-w-#{$breakpoint}-#{$spacing} {
+                    min-width: #{$spacing}px;
+                }
+                .max-w-#{$breakpoint}-#{$spacing} {
+                    max-width: #{$spacing}px;
+                }
+            }
+        }
+    }
+}
+
+.h-auto {
+    height: auto;
+}
+.min-h-auto {
+    min-height: auto;
+}
+.min-w-auto {
+    min-width: auto;
+}

@@ -1,10 +1,10 @@
 import { Link } from 'gatsby'
-import ExternalLinkIcon from 'mdi-react/ExternalLinkIcon'
 import * as React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 interface HeaderProps {
     isHome?: boolean
@@ -12,6 +12,7 @@ interface HeaderProps {
     isProductPage?: boolean
     minimal?: boolean
     className?: string
+    hideGetStartedButton?: boolean
 }
 
 export default class Header extends React.Component<HeaderProps, any> {
@@ -65,11 +66,16 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                <nav
-                    expand="lg"
-                    className={`header navbar navbar-expand-md py-3 ${this.props.className || 'navbar-light'}`}
-                >
-                    <div className="container-lg">
+                {this.props.isHome && (
+                    <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center bg-purple text-white font-weight-bold p-2">
+                        Track what really matters to you and your team.
+                        <Link to="/code-insights" className="ml-2 rounded btn btn-sm btn-light">
+                            🎉 <span className="mx-2">Show me Code Insights!</span>
+                        </Link>
+                    </div>
+                )}
+                <nav className={`header navbar py-3 ${this.props.className || 'navbar-light'}`}>
+                    <div className="container-xl">
                         <Navbar.Brand className="header__logo" href="/" onContextMenu={this.handleRightClick}>
                             <span role="img" aria-label="Sourcegraph - Universal code search">
                                 {' '}
@@ -87,10 +93,11 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     <span className="sr-only">Toggle navigation</span>
                                     <span className="navbar-toggler-icon" />
                                 </button>
-                                <Nav className="me-auto ml-md-2">
+                                <Nav className="left-nav me-auto ml-md-2">
                                     <NavDropdown onToggle={val => this.dropdownToggle(val)} title="Product">
                                         <NavDropdown.Item href="/code-search">Code Search</NavDropdown.Item>
                                         <NavDropdown.Item href="/batch-changes">Batch Changes</NavDropdown.Item>
+                                        <NavDropdown.Item href="/code-insights">Code Insights</NavDropdown.Item>
                                         <NavDropdown.Item href="https://docs.sourcegraph.com/code_intelligence">
                                             Code Intelligence
                                         </NavDropdown.Item>
@@ -107,7 +114,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     </NavDropdown>
                                     <NavDropdown title="Customers" onToggle={this.dropdownToggle}>
                                         <NavDropdown.Item href="/case-studies">Case studies</NavDropdown.Item>
-                                        <NavDropdown.Item href="/customers">Use cases</NavDropdown.Item>
+                                        <NavDropdown.Item href="/use-cases">Use cases</NavDropdown.Item>
                                         <NavDropdown.Item href="/contact/product-specialist">
                                             Become one
                                         </NavDropdown.Item>
@@ -117,20 +124,40 @@ export default class Header extends React.Component<HeaderProps, any> {
                                         Docs
                                     </Nav.Link>
                                 </Nav>
-                                <Nav className="right-nav justify-content-lg-end ml-lg-8">
+                                <Nav className="right-nav justify-content-lg-end">
+                                    {!this.props.hideGetStartedButton && (
+                                        <Nav.Link
+                                            className="btn btn-simple px-2 py-2"
+                                            href="https://sourcegraph.com/search"
+                                            title="Search code"
+                                        >
+                                            Search code
+                                        </Nav.Link>
+                                    )}
+
                                     <Nav.Link
-                                        href="https://sourcegraph.com/sign-in"
-                                        title="Search public code with Sourcegraph Cloud"
+                                        className="btn btn-outline-primary ml-3 px-5 py-2"
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.nav}
+                                        data-button-type="cta"
+                                        href="/demo"
+                                        title="Request a demo"
                                     >
-                                        Sign in
+                                        Request a demo
                                     </Nav.Link>
-                                    <Nav.Link
-                                        className="btn btn-outline-primary"
-                                        href="https://sourcegraph.com/search"
-                                        title="Get started with Sourcegraph"
-                                    >
-                                        Search Code
-                                    </Nav.Link>
+
+                                    {!this.props.hideGetStartedButton && (
+                                        <Nav.Link
+                                            className="btn btn-primary ml-3 px-5 py-2"
+                                            data-button-style={buttonStyle.primary}
+                                            data-button-location={buttonLocation.nav}
+                                            data-button-type="cta"
+                                            href="/get-started"
+                                            title="Get started"
+                                        >
+                                            Get started
+                                        </Nav.Link>
+                                    )}
                                 </Nav>
 
                                 {/* Mobile Navbar */}
@@ -161,6 +188,9 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 </li>
                                                 <li className="nav-link" role="presentation">
                                                     <a href="/batch-changes">Batch Changes</a>
+                                                </li>
+                                                <li className="nav-link" role="presentation">
+                                                    <Link to="/code-insights">Code Insights</Link>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
                                                     <a href="https://docs.sourcegraph.com/code_intelligence">
@@ -225,7 +255,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                     <a href="/case-studies">Case studies</a>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
-                                                    <a href="/customers">Use cases</a>
+                                                    <a href="/use-cases">Use cases</a>
                                                 </li>
                                                 <li className="nav-link" role="presentation">
                                                     <a href="/contact/product-specialist">Become one</a>
@@ -251,11 +281,25 @@ export default class Header extends React.Component<HeaderProps, any> {
                                                 Sign in
                                             </a>
                                         </li>
+                                        {!this.props.hideGetStartedButton && (
+                                            <li className="header__nav-item nav-item" role="presentation">
+                                                <a className="nav-link" href="https://sourcegraph.com/search">
+                                                    Search code
+                                                </a>
+                                            </li>
+                                        )}
                                         <li className="header__nav-item nav-item" role="presentation">
-                                            <a className="nav-link" href="https://sourcegraph.com/search">
-                                                Search Code
-                                            </a>
+                                            <Link className="nav-link" to="/demo">
+                                                Request a demo
+                                            </Link>
                                         </li>
+                                        {!this.props.hideGetStartedButton && (
+                                            <li className="header__nav-item nav-item" role="presentation">
+                                                <a className="nav-link" href="/get-started">
+                                                    Get started
+                                                </a>
+                                            </li>
+                                        )}
                                     </ul>
                                 </div>
                             </>

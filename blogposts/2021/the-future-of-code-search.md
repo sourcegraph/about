@@ -76,7 +76,6 @@ We have a "Ctags++" level of code navigation for every major programming languag
 
 We want to enable developers to explore their code as a dataset and track useful and actionable metrics like code coverage, the quantity of dead code or TODOs, the progress of big migrations and deprecations, and the prevalence of anti-patterns. We also want to make large-scale changes that may address the issues that underlie these metrics much easier.
 
-- [Code insights](https://www.youtube.com/watch?v=XqeRb6Mc4Co) enable developers to track and analyze specific trends in code.
 - [Batch changes](https://docs.sourcegraph.com/batch_changes/explanations/permissions_in_batch_changes) turn Sourcegraph into find _and_ replace, and greatly alleviate the pain of shepherding large refactors with many code reviewers.
 
 ## Open extensibility, compatibility, and integrations

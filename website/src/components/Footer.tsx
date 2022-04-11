@@ -5,11 +5,16 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import TwitchIcon from 'mdi-react/TwitchIcon'
 import SpotifyIcon from 'mdi-react/SpotifyIcon'
-import * as React from 'react'
+import React, { FunctionComponent } from 'react'
 
-export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
-    <footer className={`${minimal ? '' : 'pt-6 pb-2'}`}>
-        <div className="footer__container container">
+interface Props {
+    minimal?: boolean
+    className?: string
+}
+
+export const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
+    <footer className={`flex-shrink-0 ${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
+        <div className="container-xl">
             {!minimal && (
                 <React.Fragment>
                     <div className="row footer__nav-sections">
@@ -20,22 +25,18 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/case-studies">Case studies</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/customers">Customers</Link>
+                                    <Link to="/use-cases">Use cases</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/pricing">Pricing</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a
-                                        href="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-overview.pdf"
+                                        href="/handouts/Sourcegraph-Overview.pdf"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         Sourcegraph overview (PDF)
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="https://share.hsforms.com/1P0DMMkj6REGkZ__9GyVjxA1n7ku" target="_blank">
-                                        Free stickers!
                                     </a>
                                 </li>
                             </ul>
@@ -61,9 +62,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/podcast">Podcast</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://info.sourcegraph.com/emergence-of-big-code-2020-survey">
-                                        Big code survey
-                                    </a>
+                                    <a href="/dev-tools-quiz">Dev tools quiz</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/community">Community</Link>
@@ -77,7 +76,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                     <Link to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="https://boards.greenhouse.io/sourcegraph91">Careers - We're Hiring!</a>
+                                    <a href="/jobs">Careers - We're Hiring!</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/contact">Contact</Link>
@@ -167,7 +166,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
             )}
             <div className="footer__postscript d-flex justify-content-between pt-4 pb-2 small">
                 <ul className="nav">
-                    <li className="nav-item text-muted mr-3">&copy; 2021 Sourcegraph</li>
+                    <li className="nav-item text-muted mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
                     <li className="nav-item">
                         <Link to="/terms" className="nav-link">
                             Terms

@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 3.31 release'
 publishDate: 2021-09-02T10:00-07:00
-description: 'Sourcegraph 3.31 introduces the Private Beta release of Code Insights and the ability to automatically migrate saved search notifications to code monitors.'
+description: 'Sourcegraph 3.31 introduces the ability to automatically migrate saved search notifications to code monitors.'
 tags: [blog, release]
 slug: 'release/3.31'
 published: true
@@ -23,12 +23,6 @@ changelogItems:
   - description: 'Batch Changes changesets can now be set to published when previewing new or updated batch changes.'
     url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
     category: Batch Changes
-  - description: 'Code Insights drill-down filters now allow filtering insights data on the dashboard page using `repo:` filters.'
-    url: https://github.com/sourcegraph/sourcegraph/issues/23186
-    category: Code Insights
-  - description: 'Code Insights feature flag `DISABLE_CODE_INSIGHTS` environment variable has moved from the `repo-updater` service to the `worker` service. Any users of this flag will need to update their `worker` service configuration to continue using it.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/23050
-    category: Code Insights
   - description: "The Docker Compose Jaeger container's `SAMPLING_STRATEGIES_FILE` now has a default value. If you are using a custom sampling strategies configuration, you may need to make sure your configuration is not overridden by the change when upgrading."
     url: 'https://github.com/sourcegraph/deploy-sourcegraph-docker/pull/489'
     category: Admin
@@ -44,18 +38,6 @@ changelogItems:
 ---
 
 Sourcegraph 3.31 is now available! Here are some highlights from this release:
-
-## Code Insights now in Private Beta
-
-Code Insights enables you to track historical and future trends of anything in your codebase, from code migrations to API usage to linter overrides—or anything else you can run a Sourcegraph search for. Now in Private Beta, Code Insights can run across thousands of repositories, letting you then filter and explore your insights live. Reach out to your Account Executive for details.
-
-<div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
-  <source src="https://sourcegraphstatic.com/blog/3.31/code_insights_3.31_beta.mp4" type="video/mp4">
-</video></div>
-
-- Code Insights runs over all your repositories—we've removed the ~50-70 repo limit.
-- [Instant filtering](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters) allows you to explore insights using `repo:` and `-repo:` regular expressions.
-- [Save your filtered insights as new views](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters#filter-persistance-and-sharing).
 
 ## We're moving to Alpine-based database images
 

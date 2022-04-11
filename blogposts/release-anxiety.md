@@ -44,13 +44,11 @@ This pressure comes both from the external expectations of your market and your 
 
 Downstream, that push results in a pressure applied to every release. Release anxiety is likely to get out of hand if every release carries the weight of the product’s future. In one sense, this anxiety is neurotic–one release isn’t going to kill your company. In another sense, it’s all too real–an important customer may very well be on the other end of a release, waiting for the change they asked for.
 
-For engineers working on our [Batch Changes](https://about.sourcegraph.com/batch-changes/) and [Code Insights](https://docs.sourcegraph.com/code_insights#code-insights-beta) features, feedback is only available after a monthly release because these features are only available in the self-hosted product.
+For engineers working on our [Batch Changes](https://about.sourcegraph.com/batch-changes/) feature, feedback is only available after a monthly release because these features are only available in the self-hosted product.
 
 If we don’t get a change into a release, that means it will be–at a minimum–two months before we can get feedback on something we worked on. Missing a release is a missed opportunity to close a feedback loop, blocking us from fully validating a new change. And two months is a minimum–with a self-hosted product, customers can wait as long as they want to actually upgrade (many only upgrade on a quarterly basis).
 
-This missed opportunity is especially important for Code Insights because it’s still in beta. Products in beta have a special need for feedback–especially from test users who may one day become paying customers.
-
-Meanwhile, [Search](https://sourcegraph.com/search) can push to its cloud deployment numerous times a day and instantly see how it performs. No, the Batch Changes and Code Insights teams aren’t jealous, why do you ask?
+Meanwhile, [Search](https://sourcegraph.com/search) can push to its cloud deployment numerous times a day and instantly see how it performs. No, the Batch Changes team isn’t jealous, why do you ask?
 
 Release anxiety builds up the closer you get to the cut date–the day your team cuts a branch that will become the stable branch for the release.
 

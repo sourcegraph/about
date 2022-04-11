@@ -2,6 +2,6 @@
 // (Cards for the website are configured to have white background, but body text is also configured to be white).
 // stylelint-disable-next-line selector-max-id
 #CybotCookiebotDialog {
-    color: map-get($theme-colors, 'dark');
+    color: $dark-9;
     opacity: 0.95;
 }

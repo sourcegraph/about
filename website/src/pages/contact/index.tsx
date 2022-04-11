@@ -135,14 +135,3 @@ export default ((props: any) => (
         </ContentPage>
     </Layout>
 )) as React.FunctionComponent<any>
-
-/*
-## Around the web
-
-## Plans, pricing, sales
-
-For enterprise accounts or any questions about getting Sourcegraph for your private code, <a href="/contact/product-specialist">submit our contact form</a>, or email us at <a href="mailto:sales@sourcegraph.com">sales@sourcegraph.com</a>.
-
-## In the real world
-
-*/

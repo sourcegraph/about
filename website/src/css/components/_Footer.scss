@@ -1,7 +1,5 @@
 // stylelint-disable declaration-property-unit-whitelist
 .footer {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(198, 198, 215, 0.8) 100%);
-
     &__nav-sections {
         .nav-item > a {
             color: $dark;

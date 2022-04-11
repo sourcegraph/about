@@ -6,3 +6,5 @@ public/
 .cache/
 docs/server/config/site.md
 utils/*.json
+.vscode
+tsconfig.json

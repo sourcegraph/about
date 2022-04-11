@@ -94,7 +94,7 @@ We've also made it possible to submit feedback on the API docs pages themselves,
 
 [Stephen Gutekanst](https://slimsag.com) is one of Sourcegraph's earliest engineers, and has authored many parts of Sourcegraph including _the `src` CLI_, m*onitoring architecture*, _managed instances_, and _editor extensions_ to name a few. Stephen has worked with most of Sourcegraph's largest customers, and enjoys solving the most critical and technically challenging issues users face in our effort to bring world-class developer tools to everyone. Outside of Sourcegraph, Stephen researches and develops search engine and video game technology.
 
-_Special thanks to [Rebecca Dodd](https://handbook.sourcegraph.com/company/team#rebecca-dodd-she-her) and [Erica Lindberg](https://handbook.sourcegraph.com/company/team#erica-lindberg-she-her) for their help with the content of this article, and [Jean du Plessis](https://handbook.sourcegraph.com/company/team#jean-du-plessis-he-him) and the rest of the team for their assistance and feedback on API docs._
+_Special thanks to [Rebecca Dodd](https://handbook.sourcegraph.com/company/team#rebecca-dodd) and [Erica Lindberg](https://handbook.sourcegraph.com/company/team#erica-lindberg) for their help with the content of this article, and [Jean du Plessis](https://handbook.sourcegraph.com/company/team#jean-du-plessis) and the rest of the team for their assistance and feedback on API docs._
 
 <style>
   figure .no-shadow { box-shadow: none; }

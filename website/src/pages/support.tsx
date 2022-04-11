@@ -39,7 +39,7 @@ export default ((props: any) => (
                                     <h2 className="card-title mt-3 mb-1 text-center support-plan__title">Free</h2>
                                     <a
                                         className="support-plan__button btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
-                                        href="https://sourcegraph.com/subscriptions/new"
+                                        href="https://docs.sourcegraph.com#quickstart-guide"
                                     >
                                         Deploy
                                     </a>
@@ -90,7 +90,7 @@ export default ((props: any) => (
                                     <h2 className="card-title mt-3 mb-1 text-center support-plan__title">Team</h2>
                                     <a
                                         className="support-plan__button btn btn-success w-100 justify-content-center text-center d-inline-flex"
-                                        href="/contact/request-info/?form_submission_source=support-enterprise"
+                                        href="https://sourcegraph.com/subscriptions/new"
                                     >
                                         Buy now
                                     </a>
@@ -140,7 +140,7 @@ export default ((props: any) => (
                                     <h2 className="card-title mt-3 mb-1 text-center support-plan__title">Enterprise</h2>
                                     <a
                                         className="support-plan__button btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
-                                        href="https://docs.sourcegraph.com#quickstart-guide"
+                                        href="/contact/request-info/?form_submission_source=support-enterprise"
                                     >
                                         Contact us
                                     </a>
@@ -173,7 +173,7 @@ export default ((props: any) => (
                                     <li className={liClassName}>
                                         <CheckIcon className={checkClassName} /> Shared Slack channel for feedback and
                                         communication (available,{' '}
-                                        <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">
+                                        <Link to="/contact/request-info/?form_submission_source=support-enterprise">
                                             contact us
                                         </Link>
                                         )
@@ -181,7 +181,7 @@ export default ((props: any) => (
                                     <li className={liClassName}>
                                         <CheckIcon className={checkClassName} /> Dedicated customer engineer assigned to
                                         you (available,{' '}
-                                        <Link to="/contact/request-info/?form_submission_source=pricing-enterprise">
+                                        <Link to="/contact/request-info/?form_submission_source=support-enterprise">
                                             contact us
                                         </Link>
                                         )

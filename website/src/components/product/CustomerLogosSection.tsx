@@ -149,7 +149,7 @@ const ITEMS: {
 
 export const CustomerLogosSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
     <div id="customers" className={`container customer-logos-section ${className}`}>
-        <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
+        <h3 className="customer-logos-section__header text-center font-weight-light">
             Our customers use Sourcegraph every day to build software you rely on.
         </h3>
         <div className="text-center mt-4 d-flex flex-wrap justify-content-center align-items-center line-height-normal">

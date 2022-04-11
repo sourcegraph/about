@@ -8,53 +8,26 @@
 
 @import 'colors';
 
-$font-family-sans-serif: source-sans-pro, sans-serif; // Adobe Source Sans Pro
-$font-family-monospace: source-code-pro, monospace; // Adobe Source Code Pro for code
+$font-family-sans-serif: source-sans-pro, sans-serif; /* Adobe Source Sans Pro */
+$font-family-monospace: source-code-pro, monospace; /* Adobe Source Code Pro for code */
 $font-family-base: $font-family-sans-serif;
 $headings-font-family: $font-family-base;
-
-$blue: #2c7ef6;
-$red: #dc3545;
-$purple: #5033e1;
-$white: #ffffff;
-$brand-purple: #b200f8;
-$brand-cyan: #00b4f2;
-$brand-orange: #f96316;
-$colors: (
-    'blue': $blue,
-    'brand-purple': $brand-purple,
-    'brand-cyan': $brand-cyan,
-    'brand-orange': $brand-orange,
-);
-
-$theme-colors: (
-    'primary': #2a66e2,
-    'dark': $dark-9,
-    'light': $light-11,
-    'purple': $brand-purple,
-    'gray': #dddddd,
-    'pink': lighten($red, 35%),
-    'light-orange': lighten($brand-orange, 35%),
-    'orange': $brand-orange,
-);
-
-$brand-primary: $brand-purple;
 
 $border-radius: 0.3125rem;
 $border-radius-lg: 0.25rem;
 $border-radius-sm: 0.1rem;
 
 $font-weight-semibold: 600;
-$font-weight-bold: $font-weight-semibold; // uses Adobe Sans Pro Semi-bold
-$font-weight-bolder: 700; // uses Adobe Sans Pro Bold
+$font-weight-bold: $font-weight-semibold; /* uses Adobe Sans Pro Semi-bold */
+$font-weight-bolder: 700; /* uses Adobe Sans Pro Bold */
 
-$headings-font-weight: 700; // uses Adobe Sans Pro Bold
+$headings-font-weight: 700; /* uses Adobe Sans Pro Bold */
 
 $input-btn-padding-y: 0.55rem;
 
 @import 'node_modules/bootstrap/scss/variables';
 
-// Set variables that rely on Bootstrap variables.
+/* Set variables that rely on Bootstrap variables. */
 $spacer: 1rem;
 $spacers: (
     0: 0,
@@ -82,9 +55,6 @@ $spacers: (
     ),
 );
 
-$body-bg: #f9f9f9;
-$body-color: #222233;
-
 $border-color: $gray-300;
 
 $display1-size: 4rem;
@@ -106,7 +76,7 @@ $btn-font-weight: 600;
 $input-bg: transparent;
 $input-color: $body-color;
 $input-box-shadow: none;
-$input-border-color: map-get($theme-colors, 'primary');
+$input-border-color: $brand-primary-blue;
 $input-border-width: 3px;
 $input-focus-bg: $input-bg;
 $input-focus-color: $body-color;
@@ -147,17 +117,29 @@ $grid-gutter-width: 2rem;
 @import 'node_modules/bootstrap/scss/list-group';
 @import 'node_modules/bootstrap/scss/tooltip';
 @import 'node_modules/bootstrap/scss/popover';
-@import 'node_modules/bootstrap/scss/carousel';
 @import 'node_modules/bootstrap/scss/utilities';
 @import 'node_modules/bootstrap/scss/alert';
 @import 'node_modules/bootstrap/scss/badge';
 @import 'node_modules/bootstrap/scss/dropdown';
+@import 'node_modules/bootstrap/scss/carousel';
 
 html,
 body,
 #___gatsby {
     height: 100%;
     -webkit-overflow-scrolling: touch;
+}
+
+// Inner target container
+#gatsby-focus-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+// Global layout
+.layout {
+    flex: 1 0 auto;
 }
 
 .flex-1 {
@@ -175,9 +157,8 @@ body {
 }
 
 .popover {
-    // Prevent a child element with non-rounded corners from extruding.
-    // overflow: hidden;
-
+    /* Prevent a child element with non-rounded corners from extruding.
+     overflow: hidden; */
     border: 0;
 }
 
@@ -188,14 +169,13 @@ body {
 .popover-body {
     border: solid 1px $gray-200;
     box-shadow: rgba(0, 0, 0, 0.1) 0 0 9px 3px;
-    background-color: white;
+    background-color: $white;
 }
 
-// Formats an icon so that it appears inline in the text
-// with height matching the text
+/* Formats an icon so that it appears inline in the text with height matching the text */
 .icon-inline {
-    // SVGs already include padding to account for text baseline,
-    // so align with the bottom of the text
+    /* SVGs already include padding to account for text baseline,
+     so align with the bottom of the text */
     vertical-align: bottom;
     display: inline-flex;
     align-items: center;
@@ -204,13 +184,13 @@ svg.icon-inline,
 img.icon-inline,
 .icon-inline svg,
 .icon-inline img {
-    // TODO find a better way to scale icons that is not proportional to the font size
-    // 14px font size -> 20px icon size
+    /* TODO find a better way to scale icons that is not proportional to the font size
+     14px font size -> 20px icon size */
     // stylelint-disable-next-line declaration-property-unit-whitelist
     width: (20em / 14);
     // stylelint-disable-next-line declaration-property-unit-whitelist
     height: (20em / 14);
-    // Match color of the text
+    /* Match color of the text */
     fill: currentColor;
 }
 
@@ -225,7 +205,7 @@ img.icon-inline,
 }
 
 code.border {
-    background-color: #f2f4f8;
+    background-color: $light-11;
     font-size: 80%;
 }
 
@@ -235,24 +215,24 @@ table {
     margin-bottom: 1rem;
     background-color: transparent;
     border-collapse: collapse;
-    border: 1px solid #ddd;
+    border: 1px solid $light-gray-0;
 }
 table td,
 table th {
     padding: 0.75rem;
     vertical-align: top;
-    border: 1px solid #dee2e6;
-    background-color: #fff;
+    border: 1px solid $light-gray-1;
+    background-color: $white;
 }
 table thead th {
     vertical-align: bottom;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid $light-gray-1;
 }
 table tbody + tbody {
-    border-top: 2px solid #dee2e6;
+    border-top: 2px solid $light-gray-1;
 }
 table {
-    background-color: #fff;
+    background-color: $white;
 }
 
 @import 'components/blog/BlogPost';
@@ -271,19 +251,22 @@ table {
 @import 'components/product/IntegratesWithSection';
 @import 'components/product/UseCasesTable';
 @import 'components/Cookiebot';
+@import 'components/CustomCarousel';
 @import 'components/Events';
-@import 'components/GetStarted';
+@import 'components/SelfHostedSection';
 @import 'components/Header';
 @import 'components/IconItem';
 @import 'components/Footer';
 @import 'components/LeadershipSection';
+@import 'components/PrismTheme';
+@import 'components/TemplateCodeBlock';
 @import 'components/TestimonialCarousel';
 @import 'components/Tweets';
 @import 'pages/404';
 @import 'pages/about';
 @import 'pages/batch-changes';
+@import 'pages/cloud-beta';
 @import 'pages/community';
-@import 'pages/customers';
 @import 'pages/_case_studies';
 @import 'pages/_white_papers';
 @import 'pages/content';
@@ -301,32 +284,15 @@ table {
 @import 'pages/uninstall';
 @import 'pages/universal-code-search';
 @import 'templates/PostTemplate';
-@import 'components/PrismTheme';
+@import 'pages/dev-tools-quiz';
+@import 'pages/code-insights';
+@import 'gradients';
+@import 'spacing';
 
 .virtual-br::before {
     content: '\A';
 }
-.bg-gradient-primary {
-    background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
-}
-.bg-gradient-green-blue {
-    background: linear-gradient(
-            90deg,
-            rgba(108, 255, 212, 0.4) 10%,
-            rgba(105, 255, 211, 0.1) 50%,
-            rgba(255, 255, 255, 0) 100%
-        ),
-        linear-gradient(180deg, rgba(0, 155, 242, 0.2) 0%, rgba(156, 229, 254, 0.2) 100%);
-}
-.bg-black {
-    background-color: #000;
-}
-.bg-light-transparent {
-    background-color: transparentize($light-11, 0.3);
-}
-.bg-unset {
-    background-color: unset;
-}
+
 .font-size-base {
     font-size: $font-size-base !important;
 }
@@ -347,4 +313,28 @@ table {
 .font-size-medium {
     font-size: 1.2em;
     line-height: 1.95em;
+}
+
+.font-size-large {
+    font-size: 4.5em;
+    line-height: 1.25em;
+}
+
+.font-size-extra-large {
+    font-size: 6em;
+    line-height: 1.25em;
+}
+
+.blog-image {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    max-width: 100%;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
 }

@@ -12,7 +12,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/engineering-
 
 ![Software engineer career framework graphic](https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png)
 
-_Sourcegraph provides universal code search: a navigation engine for understanding your code. We’re also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://about.sourcegraph.com/handbook/company/team). See our [careers page](https://boards.greenhouse.io/sourcegraph91) for current openings._
+_Sourcegraph provides universal code search: a navigation engine for understanding your code. We’re also an [all-remote](https://about.sourcegraph.com/handbook/company/remote) company with a global [team](https://handbook.sourcegraph.com/team). See our [careers page](https://boards.greenhouse.io/sourcegraph91) for current openings._
 
 Engineering managers felt empowered but unconfident. It was the summer of 2020 and the company was seven years old and about 50 people strong (about half of whom were engineers). In the year to come, we would grow, rapidly hiring more engineers.
 
@@ -24,15 +24,17 @@ The solution? A framework that would align the entire engineering organization a
 
 If you want to skip to the results, you can [read the handbook page](https://handbook.sourcegraph.com/engineering/career-development) or [read the summary](https://about.sourcegraph.com/blog/software-engineer-career-ladder/#The-Sourcegraph-career-development-framework) in this post. But if you want the story, and to see how you can apply our learnings at your company, read on.
 
+_Note: this post is a snapshot of our work as of October 2021. For the up-to-date source of truth, refer to our [handbook](https://handbook.sourcegraph.com/engineering/career-development)._
+
 ## Engineering managers, assemble!
 
 To create the career development framework, our VP of Engineering Nick Snyder formed a working group. We took on the [DACI framework](https://www.atlassian.com/team-playbook/plays/daci), meaning one person would drive the project, one person would approve the project’s results, a select few would contribute to the project, and everyone else would be informed.
 
 The working group consisted of four people:
 
-- [Chris Pine](https://about.sourcegraph.com/handbook/company/team#chris-pine-he-she-they-chris), engineering manager, was the driver.
-- [Nick Snyder](https://about.sourcegraph.com/handbook/company/team#nick-snyder-he-him), VP of Engineering, was the approver.
-- [Felix Becker](https://about.sourcegraph.com/handbook/company/team#felix-becker) and [Patrick Dubroy](https://about.sourcegraph.com/handbook/company/team#patrick-dubroy-he-him), both engineering managers, were contributors.
+- [Chris Pine](https://handbook.sourcegraph.com/team#chris-pine), engineering manager, was the driver.
+- [Nick Snyder](https://handbook.sourcegraph.com/team#nick-snyder), VP of Engineering, was the approver.
+- [Felix Becker](https://handbook.sourcegraph.com/team#felix-becker) and [Patrick Dubroy](https://handbook.sourcegraph.com/team#patrick-dubroy), both engineering managers, were contributors.
 
 Everyone else in engineering was to be informed of the project’s progress and results.
 
@@ -174,7 +176,7 @@ Below, we highlight some especially important aspects of the resulting career de
 
 ### Expectations
 
-Levels for Sourcegraph ICs range from L1 to L7 and each level contains three axes:
+Levels for Sourcegraph ICs range from L1 to L6 and each level contains three axes:
 
 - Proficiency
 - Execution
@@ -220,7 +222,7 @@ Our framework values efficiency. Any qualitative feedback for an IC “should be
 
 [IC5](https://handbook.sourcegraph.com/engineering/career-development/framework#ic5) describes “A different IC role from levels 1-4, with a focus on technical leadership.”
 
-[IC6](https://handbook.sourcegraph.com/engineering/career-development/framework#ic6) and [IC7](https://handbook.sourcegraph.com/engineering/career-development/framework#ic7) are deliberately left without bullet points, having not yet been finalized.
+[IC6](https://handbook.sourcegraph.com/engineering/career-development/framework#ic6) is deliberately left without bullet points, having not yet been finalized.
 
 Titles were of particular concern to us as we designed these levels. In other companies, we found during our research, ICs might get titles like “Team Lead” or “Tech Lead” as they advanced.
 
@@ -250,9 +252,9 @@ Our struggle is parallel to that of a 10-person startup trying to define a VP of
 
 As such, IC5 and above are the most likely to change during calibration.
 
-### Creating IC6 and IC7
+### Creating IC6
 
-At a small startup, roles like IC6 and IC7 don’t necessarily exist. Sourcegraph, which crossed 200 employees in September of 2021, is right at the brink. We also have to figure out who, if anyone, embodies an IC6 or IC7 role. Plus, we need to determine whether such a role would be equivalent, similar, or different to how the industry considers such a role.
+At a small startup, roles like IC6 don’t necessarily exist yet. Sourcegraph, which crossed 200 employees in September of 2021, is right at the brink. We also have to figure out who, if anyone, embodies an IC6 role. Plus, we need to determine whether such a role would be equivalent, similar, or different to how the industry considers such a role.
 
 Typically, from IC1 up to senior engineer, the skillset tends to be similar. Most senior engineers, in other words, will have similar kinds of skill sets, but staff engineers and above might operate in entirely different capacities. Some might focus on finding the biggest technical problem a company has and solving it, producing a system that will last for the next decade. Others might operate more like managers, focusing on influencing, helping, and mentoring people.
 

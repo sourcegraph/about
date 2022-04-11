@@ -8,12 +8,12 @@ authorUrl: https://twitter.com/rvtond
 publishDate: 2021-06-25T10:00-07:00
 tags: [blog, code, search, software, engineering, testing]
 slug: how-not-to-break-a-search-engine-unglamorous-engineering
-heroImage: https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
-socialImage: https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png
 published: true
 ---
 
-![Unglamorous engineering](https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg)
+![Unglamorous engineering](https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png)
 
 > _"In 2020 I flipped the switch to use a completely rewritten parser for
 > Sourcegraph search queries. It serves tens of thousands of users and processes
@@ -292,7 +292,7 @@ practice. That's why he currently works at Sourcegraph, where he applies his
 research background to develop new tools and techniques for large-scale code
 search and automated refactoring._
 
-<small>Acks: Thanks [Rebecca Dodd](/company/team#rebecca-dodd-she-her) and [Camden Cheek](https://twitter.com/camdendcheek) for feedback on the content of this post.</small>
+<small>Acks: Thanks [Rebecca Dodd](https://handbook.sourcegraph.com/team#rebecca-dodd) and [Camden Cheek](https://twitter.com/camdendcheek) for feedback on the content of this post.</small>
 
 ### More posts like this
 

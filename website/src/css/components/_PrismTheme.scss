@@ -48,7 +48,7 @@ pre[class*='language-'] {
     padding: 1em;
     margin: 0.5em 0;
     overflow: auto;
-    border: 1px solid #dddddd;
+    border: 1px solid $light-gray-0;
     background-color: white;
 }
 
@@ -58,7 +58,7 @@ pre[class*='language-'] {
     padding-top: 1px;
     padding-bottom: 1px;
     background: #f8f8f8;
-    border: 1px solid #dddddd;
+    border: 1px solid $light-gray-0;
 }
 
 .token.comment,

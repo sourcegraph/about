@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 3.30 release'
 publishDate: 2021-07-20T10:00-07:00
-description: 'Sourcegraph 3.30 introduces support for publishing batch changes from the UI, Code Insights dashboards, a new search reference in the search sidebar, and experimental API docs.'
+description: 'Sourcegraph 3.30 introduces support for publishing batch changes from the UI, a new search reference in the search sidebar, and experimental API docs.'
 tags: [blog, release]
 slug: 'release/3.30'
 published: true
@@ -11,9 +11,6 @@ changelogItems:
   - description: 'Batch Changes changesets can now be published from the Sourcegraph UI.'
     url: https://docs.sourcegraph.com/batch_changes/how-tos/publishing_changesets#within-the-ui
     category: Batch Changes
-  - description: Code Insights can now be grouped into dashboards.
-    url: https://github.com/sourcegraph/sourcegraph/issues/22215
-    category: Code Insights
   - description: Search References is a new search sidebar section to simplify learning about the available search filters directly where they are used.
     url: https://github.com/sourcegraph/sourcegraph/issues/21539
     category: Search
@@ -41,9 +38,6 @@ changelogItems:
   - description: The repository page now has a new button to view Batch Change changesets created in that specific repository, with a badge indicating how many changesets are currently open.
     url: https://github.com/sourcegraph/sourcegraph/pull/22804
     category: Batch Changes
-  - description: 'Experimental: Search-based Code Insights can run over all repositories on the instance. To enable, use the feature flag `"experimentalFeatures": { "codeInsightsAllRepos": true }`.'
-    url: https://github.com/sourcegraph/sourcegraph/issues/22759
-    category: Code Insights
   - description: "Search queries now disallow specifying `rev:` without `repo:`. Note that to search across potentially multiple revisions, a query like `repo:.* rev:\u003crevision\u003e` remains valid."
     url: https://github.com/sourcegraph/sourcegraph/pull/22705
     category: Search
@@ -76,23 +70,15 @@ This workflow is great for reproducibility and having a completely CLI-based wor
 _In addition_, we are allowing changesets to be published and unpublished directly from the GUI, to make the workflow more approachable to new users. Simply omit the `published` field in the specs, and the GUI will become the source of truth for publishing changesets.
 
 <div style="text-align:center">
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-changesets-from-gui.gif" alt="Publish changesets from GUI demo" style="max-width:calc(100% - 10px);"/>
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/publish-changesets-from-gui.gif" alt="Publish changesets from GUI demo" class="blog-image"/>
 </div>
-
-## Code Insights dashboards
-
-You can now add your code insights to individual dashboard pages, in order to group and share a contextual subset of all created insights. Dashboards can have one of three possible visibility scopes: private, users in your organization, or global. For more on dashboards, [see the docs](https://docs.sourcegraph.com/code_insights/explanations/viewing_code_insights#insights-dashboards).
-
-<div style="text-align:center"><video autoplay loop muted playsinline style="width:625px">
-  <source src="https://sourcegraphstatic.com/blog/3.30/insights_dashboards.mp4" type="video/mp4">
-</video></div>
 
 ## New code search reference
 
 We've added a new search reference to the search results sidebar. The search reference lists search filters which can be expanded to display documentation and examples. The reference can be used to learn about filters or as a shortcut to using the filters in queries.
 
 <div style="text-align:center">
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/search-ref.gif" alt="Search reference demo" style="max-width:calc(100% - 10px);"/>
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/search-ref.gif" alt="Search reference demo" class="blog-image"/>
 </div>
 
 ## Introducing API docs
@@ -102,5 +88,5 @@ Try out our brand new experimental feature that builds on top of Sourcegraph's s
 Read the [Sneak peek: API documentation generated for all your code](https://about.sourcegraph.com/blog/api-documentation-for-all-your-code/) blog post for more details.
 
 <div style="text-align:center">
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/api-docs.png" alt="Sourcegraph's new API docs feature" style="max-width:calc(100% - 10px);"/>
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/3.30/api-docs.png" alt="Sourcegraph's new API docs feature" class="blog-image"/>
 </div>

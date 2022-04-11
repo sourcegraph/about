@@ -1,22 +1,34 @@
 # Sourcegraph website
 
-This repository contains source code for the Sourcegraph website, ([https://about.sourcegraph.com](https://about.sourcegraph.com)). The site is built using the [GatsbyJS](https://gatsbyjs.org) static site generator.
+This repository contains source code for the Sourcegraph About Website, ([https://about.sourcegraph.com](https://about.sourcegraph.com)). The site is built using the [GatsbyJS](https://gatsbyjs.org) static site generator.
 
 ## Development
 
-`npm install`
+Install project dependencies:
 
-`npm start` - Start development server on http://localhost:8000.
+```shell
+./script/install.sh
+```
+
+Start development server on http://localhost:8000.
+
+```shell
+yarn dev
+```
 
 ## Building
 
 Generate production build:
 
-`npm run build`
+```shell
+yarn build
+```
 
 Generate a production build of the site and serve it locally on http://localhost:9000. Use this when doing a final review:
 
-`npm run serve`
+```shell
+yarn serve
+```
 
 ## Blog
 

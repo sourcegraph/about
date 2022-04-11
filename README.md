@@ -4,10 +4,10 @@ Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 
 ## Quick start
 
-| What                               | Command                                    |
-| ---------------------------------- | ------------------------------------------ |
-| Auto-preview about.sourcegraph.com | `cd website && yarn install && yarn start` |
-| Final review about.sourcegraph.com | `cd website && yarn install && yarn serve` |
+| What                               | Command                                          |
+| ---------------------------------- | ------------------------------------------------ |
+| Auto-preview about.sourcegraph.com | `cd website && yarn && yarn dev`                 |
+| Final review about.sourcegraph.com | `cd website && yarn && yarn build && yarn serve` |
 
 ## Requirements
 
@@ -17,11 +17,13 @@ Gatsby requires Node.js, and we recommend using [yarn](https://yarnpkg.com/en/) 
 
 Developing the static site locally is separate from developing the handbook. [Read the Handbook section](#Handbook) to learn how to develop the handbook locally.
 
-In a terminal, change into the `website` directory, and run:
+In a terminal, change into the `website` directory, and run the install script:
 
 ```shell
-yarn install
+./script/install.sh
 ```
+
+This will check that you have the correct version of Node installed, and install the dependeny versions pinned in the lockfile.
 
 Then to serve the site, you have two options:
 
@@ -34,7 +36,7 @@ yarn serve
 2. To serve the site using the development server with auto-compiling and page reloading:
 
 ```shell
-yarn start
+yarn dev
 ```
 
 ## Publishing a blog post

@@ -1,6 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react'
+import { Link } from 'gatsby'
 import { useSpring, animated } from 'react-spring'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
+
+import { buttonStyle, buttonLocation } from '../../tracking'
 
 const ITEMS: {
     name: string
@@ -26,6 +29,10 @@ const ITEMS: {
     {
         name: 'GE',
         url: '/external-logos/general-electric-logo.svg',
+    },
+    {
+        name: 'Reddit',
+        url: '/external-logos/reddit-logo.png',
     },
     {
         name: 'Paypal',
@@ -128,8 +135,8 @@ const ITEMS: {
         url: '/external-logos/workiva-vector-logo.svg',
     },
     {
-        name: 'Apex Clearing',
-        url: '/external-logos/apex-clearing-logo.png',
+        name: 'Mercado Libre',
+        url: '/external-logos/mercado-libre.svg',
     },
     {
         name: 'Blend',
@@ -163,14 +170,20 @@ const ITEMS: {
         name: 'Twilio',
         url: '/external-logos/twilio-segment-horizontal-darkacai-logo.svg',
     },
+    {
+        name: 'Apex Clearing',
+        url: '/external-logos/apex-clearing-logo.png',
+    },
 ]
 
 interface Props {
     showButton: boolean
     className: String
+    showSection: boolean
+    noCta?: boolean
 }
 
-export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, className }) => {
+export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, className, showSection, noCta }) => {
     const [buttonClass, setButtonClass] = useState('')
     const [windowWidth, setWindowWidth] = useState(0)
     const [imagesWidth, setImagesWidth] = useState(0)
@@ -383,15 +396,23 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
 
     return (
         <div id="customers" className={`container customer-logos-section ${className}`}>
-            <h3 className="customer-logos-section__header text-center font-weight-light text-muted">
-                Our customers use Sourcegraph every day to build software you rely on.
-            </h3>
+            {showSection && (
+                <h3 className="customer-logos-section__header text-center font-weight-normal">
+                    Our customers use Sourcegraph every day to build software you rely on.
+                </h3>
+            )}
             {!showButton && (
                 <div className="row justify-content-center">
                     <div className="col-lg-6 text-center mt-2">
-                        <a href="/case-studies" className="btn btn-outline-primary">
-                            Read case studies <ArrowRightBoxIcon className="icon-inline ml-1" />
-                        </a>
+                        <Link
+                            to="/demo"
+                            className="btn btn-outline-primary"
+                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
+                            Schedule a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                        </Link>
                     </div>
                 </div>
             )}
@@ -452,7 +473,7 @@ export const CustomerLogosSectionAnimated: React.FC<Props> = ({ showButton, clas
                     })}
                 </div>
             </div>
-            {windowWidth < minDeviceWidth && showButton && (
+            {windowWidth < minDeviceWidth && showButton && !noCta && (
                 <div className={'sourcegraph-cta-bottom-container'}>
                     <a href="/case-studies" className={'sourcegraph-cta-link-bottom'}>
                         <div className={'sourcegraph-cta-button-bottom'}>

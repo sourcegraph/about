@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import { TrySourcegraph } from '../components/TrySourcegraph'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
     <video
@@ -16,12 +17,19 @@ const Video: React.FunctionComponent<{ name: string }> = ({ name }) => (
         loop={true}
         playsInline={true}
         controls={false}
+        // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
+        data-cookieconsent="ignore"
     >
         <source
             type="video/webm"
             src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.webm`}
+            data-cookieconsent="ignore"
         />
-        <source type="video/mp4" src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`} />
+        <source
+            type="video/mp4"
+            src={`https://storage.googleapis.com/sourcegraph-assets/batch-changes/${name}.mp4`}
+            data-cookieconsent="ignore"
+        />
     </video>
 )
 
@@ -47,7 +55,14 @@ export const BatchChangesPage: React.FunctionComponent<PageProps> = props => (
                             Keep your code up to date, fix critical security issues, and pay down tech debt across all
                             of your repositories with Batch Changes.
                         </p>
-                        <Link className="btn btn-primary" to={batchChangesDemoFormURL} title="Request a demo">
+                        <Link
+                            className="btn btn-primary"
+                            to={batchChangesDemoFormURL}
+                            title="Request a demo"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                        >
                             Request a demo
                         </Link>
                     </div>
