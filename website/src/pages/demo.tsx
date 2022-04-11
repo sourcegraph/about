@@ -23,7 +23,7 @@ const Demo: FunctionComponent<PageProps> = props => {
             hero={
                 <div className="container pt-6 pb-4">
                     <h1 className="font-weight-bolder">Request a demo</h1>
-                    <p className="mw-450">
+                    <p className="max-w-450">
                         Want to see Sourcegraph in action? Schedule time with a Sourcegraph expert.
                     </p>
                 </div>

@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import Layout from '../components/Layout'
 import Carousel from 'react-bootstrap/Carousel'
 import { ContentSection } from '../components/content/ContentSection'
@@ -30,7 +31,7 @@ const CareersPage = props => {
                 </ContentSection>
 
                 <div className="text-center">
-                    <img src="../careers/careers_hero_img.png" className="hero-image" />
+                    <img src="../careers/careers_hero_img.jpg" className="hero-image" />
                     <img src="../careers/careers_hero_img_mobile.jpg" className="hero-image-mobile" />
                 </div>
 
@@ -59,47 +60,47 @@ const CareersPage = props => {
                     </div>
                     <div className="d-flex flex-wrap benefits-row">
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="../careers/Remote.svg" />
+                            <img className="icon my-2 mx-auto" src="/careers/Remote.svg" />
                             <h3 className="my-2">Work fully remote</h3>
                             <p>Anywhere and at anytime</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="../careers/PTO.svg" />
+                            <img className="icon my-2 mx-auto" src="/careers/PTO.svg" />
                             <h3 className="my-2">Unlimited PTO</h3>
                             <p>...with a 30-day minimum</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="../careers/Travel.svg" />
+                            <img className="icon my-2 mx-auto" src="/careers/Travel.svg" />
                             <h3 className="my-2">Generous travel budgets</h3>
                             <p>Meet your team across the globe</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="../careers/Salary.svg" />
+                            <img className="icon my-2 mx-auto" src="/careers/Salary.svg" />
                             <h3 className="my-2">Competitive pay + equity</h3>
                             <p>So you can live your best life</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="../careers/Medical.svg" />
+                            <img className="icon my-2 mx-auto" src="/careers/Medical.svg" />
                             <h3 className="my-2">Medical, dental, and vision</h3>
                             <p>Got you covered 100% (US only)</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="../careers/ProfessionalDevelopment.svg" />
+                            <img className="icon my-2 mx-auto" src="/careers/ProfessionalDevelopment.svg" />
                             <h3 className="my-2">Professional development</h3>
                             <p>Find your thing and we pay for it</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="../careers/OfficeBudget.svg" />
+                            <img className="icon my-2 mx-auto" src="/careers/OfficeBudget.svg" />
                             <h3 className="my-2">Office budget</h3>
                             <p>Create a space where you thrive</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="../careers/Wellness.svg" />
+                            <img className="icon my-2 mx-auto" src="/careers/Wellness.svg" />
                             <h3 className="my-2">Wellness budget</h3>
                             <p>Take care of yourself on our dime</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center mx-auto">
-                            <img className="icon my-2 mx-auto" src="../careers/FamilyPlanning.svg" />
+                            <img className="icon my-2 mx-auto" src="/careers/FamilyPlanning.svg" />
                             <h3 className="my-2">Family Planning benefits</h3>
                             <p>$25K, because family comes first</p>
                         </div>
@@ -117,7 +118,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="../careers/culture1.png" />
+                                <img src="/careers/culture1.png" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -131,7 +132,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="../careers/culture2.png" />
+                                <img src="/careers/culture2.png" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -143,7 +144,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="../careers/culture3.png" />
+                                <img src="/careers/culture3.png" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -156,7 +157,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="../careers/culture4.png" className="landscape" />
+                                <img src="/careers/culture4.png" className="landscape" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -169,7 +170,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="../careers/culture5.png" />
+                                <img src="/careers/culture5.png" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -183,7 +184,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="../careers/culture6.jpg" className="landscape" />
+                                <img src="/careers/culture6.jpg" className="landscape" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -194,38 +195,25 @@ const CareersPage = props => {
                                 <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="../careers/culture7.png" />
+                                <img src="/careers/culture7.png" />
                             </div>
                         </div>
                     </Carousel.Item>
                 </Carousel>
 
                 <div>
-                    <img src="../careers/Culture_8.png" className="culture-section mx-auto" />
+                    <img src="/careers/Culture_8.png" className="culture-section mx-auto" />
                     <div className="culture-section-mobile mx-auto">
-                        <img src="../careers/01-Zoom.png" className="m-2" />
-                        <img src="../careers/02-Zoom.png" className="m-2" />
-                        <img src="../careers/03-Zoom.png" className="m-2" />
-                        <img src="../careers/04-Zoom.png" className="m-2" />
-                        <img src="../careers/05-Zoom.png" className="m-2" />
-                        <img src="../careers/06-Zoom.png" className="m-2" />
-                        <img src="../careers/07-Zoom.png" className="m-2" />
-                        <img src="../careers/08-Zoom.png" className="m-2" />
+                        {new Array(8).fill(null).map((el, i) => (
+                            <img key={i} src={`/careers/${i + 1}-Zoom.png`} />
+                        ))}
                     </div>
                 </div>
 
                 <Carousel
                     className="values-carousel"
-                    prevIcon={
-                        <span aria-hidden="true">
-                            <img src="../ArrowLeft.svg" />
-                        </span>
-                    }
-                    nextIcon={
-                        <span aria-hidden="true">
-                            <img src="../ArrowRight.svg" />
-                        </span>
-                    }
+                    prevIcon={<ArrowLeftIcon color="#808080" />}
+                    nextIcon={<ArrowRightIcon color="#808080" />}
                 >
                     <Carousel.Item>
                         <div className="row">
@@ -236,7 +224,7 @@ const CareersPage = props => {
                                     You are responsible for finding out what high-quality work looks like and producing
                                     that high-quality work iteratively.
                                 </p>
-                                <img src="../careers/1highquality.svg" />
+                                <img src="/careers/1highquality.svg" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -248,7 +236,7 @@ const CareersPage = props => {
                                 <p className="paragraph">
                                     You earn and keep the trust of our customers by putting their interests first.
                                 </p>
-                                <img src="../careers/2customerdriven.svg" />
+                                <img src="/careers/2customerdriven.svg" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -261,7 +249,7 @@ const CareersPage = props => {
                                     You work collaboratively with your peers, cross-functional teammates, and leadership
                                     to create shared success, trust, and belonging.
                                 </p>
-                                <img src="../careers/3team.svg" />
+                                <img src="/careers/3team.svg" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -274,7 +262,7 @@ const CareersPage = props => {
                                     You have the power and the responsibility to improve Sourcegraph as a company and as
                                     a product. You deliver regardless of the circumstances.
                                 </p>
-                                <img src="../careers/4highagency.svg" />
+                                <img src="/careers/4highagency.svg" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -287,7 +275,7 @@ const CareersPage = props => {
                                     You make people from all groups and backgrounds feel comfortable belonging to our
                                     team and community.
                                 </p>
-                                <img src="../careers/5welcoming.svg" />
+                                <img src="/careers/5welcoming.svg" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -297,7 +285,7 @@ const CareersPage = props => {
                                 <p className="subTitle">We value:</p>
                                 <h1>Being open & transparent</h1>
                                 <p className="paragraph">You proactively communicate in an open and transparent way.</p>
-                                <img src="../careers/6open.svg" />
+                                <img src="/careers/6open.svg" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -310,10 +298,27 @@ const CareersPage = props => {
                                     You strive to continuously grow and learn by genuinely soliciting feedback early and
                                     often, and humbly reflecting on your past mistakes.
                                 </p>
-                                <img src="../careers/7growth.svg" />
+                                <img src="/careers/7growth.svg" />
                             </div>
                         </div>
                     </Carousel.Item>
+                </Carousel>
+
+                <Carousel
+                    className="bg-white h-800 h-sm-800 pt-md-0 pt-1"
+                    prevIcon={<ArrowLeftIcon color="#808080" />}
+                    nextIcon={<ArrowRightIcon color="#808080" />}
+                >
+                    {new Array(6).fill(null).map((el, i) => (
+                        <Carousel.Item key={`review-${i}`}>
+                            <div className="d-flex align-center h-750 h-sm-650">
+                                <img
+                                    src={`/careers/review${i + 1}.png`}
+                                    className="m-auto col-11 max-w-sm-500 max-w-600"
+                                />
+                            </div>
+                        </Carousel.Item>
+                    ))}
                 </Carousel>
 
                 <div className="bg-white contact-us">

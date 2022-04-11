@@ -36,7 +36,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                             vulnerability-free.
                         </p>
 
-                        <div className="mt-5 mw-400">
+                        <div className="mt-5 max-w-400">
                             <div id="topForm" />
                             <FormLegal />
                         </div>
@@ -57,7 +57,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="bg-gradient-onahau-mint text-center">
-                <div className="container py-6 mw-650">
+                <div className="container py-6 max-w-650">
                     <h2 className="mb-4 font-weight-bold">
                         Cloudflare proves to auditors that its code isn't vulnerable
                     </h2>
@@ -88,12 +88,12 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="text-center">
-                <div className="container py-8 mw-650">
+                <div className="container py-8 max-w-650">
                     <h2 className="font-weight-bold">
                         Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.
                     </h2>
 
-                    <div className="mt-5 mw-400 mx-auto">
+                    <div className="mt-5 max-w-400 mx-auto">
                         <div id="bottomForm" />
                         <FormLegal />
                     </div>
