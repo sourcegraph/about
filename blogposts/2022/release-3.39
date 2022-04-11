@@ -1,0 +1,20 @@
+---
+title: 'Sourcegraph 3.39 release'
+publishDate: 2022-04-21T10:00-07:00
+description: 'Sourcegraph 3.39 introduces...'
+tags: [blog, release]
+slug: 'release/3.39'
+published: false
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-39-release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-39-release.png
+changelogItems:
+
+---
+
+Sourcegraph 3.39 is now available! In this release:
+
+## Feature 1
+
+Description
+
+## Feature 2
