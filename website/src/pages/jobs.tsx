@@ -154,21 +154,6 @@ const CareersPage = props => {
                 </div>
 
                 <Carousel className="culture-carousel">
-                    {/*
-                    <Carousel.Item className="bg-gradient-blue2-blue">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    Whether you're early in your career or have written a few books on coding, we have a
-                                    spot for you
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture1.png" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                */}
                     <Carousel.Item className="bg-gradient-blue-purple">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
@@ -178,7 +163,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture2.png" />
+                                <img src="/careers/culture1.png" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -190,7 +175,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture3.png" />
+                                <img src="/careers/culture2.png" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -203,7 +188,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture4.png" className="landscape" />
+                                <img src="/careers/culture3.png" className="landscape" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -216,45 +201,21 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture5.png" />
+                                <img src="/careers/culture4.png" />
                             </div>
                         </div>
                     </Carousel.Item>
-                    {/*
-                    <Carousel.Item className="bg-gradient-red-blue2">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    We have fun inside and outside of work <br />
-                                    This pic was taken at a team meetup in Berlin
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture6.jpg" className="landscape" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                */}
                     <Carousel.Item className="bg-gradient-red-blue2">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture7.png" />
+                                <img src="/careers/culture5.png" />
                             </div>
                         </div>
                     </Carousel.Item>
                 </Carousel>
-
-                <div>
-                    <img src="/careers/Culture_8.png" className="culture-section mx-auto" />
-                    <div className="culture-section-mobile mx-auto">
-                        {new Array(8).fill(null).map((el, i) => (
-                            <img key={i} src={`/careers/${i + 1}-Zoom.png`} />
-                        ))}
-                    </div>
-                </div>
 
                 <Carousel
                     className="values-carousel"
