@@ -54,3 +54,10 @@ _\*\*Ask the new parents beforehand if they are ok with fresh flowers, as some p
 ---
 
 _PS: We are [hiring](https://boards.greenhouse.io/sourcegraph91)!_
+
+---
+
+### More posts like this
+- [Let's talk about release anxiety](https://about.sourcegraph.com/blog/release-anxiety/)
+- [How we built our software engineering career framework](https://about.sourcegraph.com/blog/software-engineer-career-ladder/)
+- [Async, remote, and flexible: How 7 engineers rethought their work calendars](https://about.sourcegraph.com/blog/remote-work-calendar/)
