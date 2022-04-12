@@ -3,9 +3,55 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import Layout from '../components/Layout'
 import Carousel from 'react-bootstrap/Carousel'
+import { QuoteCarousel } from '../components/QuoteCarousel'
 import { ContentSection } from '../components/content/ContentSection'
 
 const CareersPage = props => {
+    const glassdoorReviewItems = [
+        {
+            header: 'Just interviewed and accepted role / position',
+            quote: 'Transparency and openness are genuine and real differentiators. Highly collaborative and focused exec team.',
+            by: 'Current Employee, Nov 23, 2021 - ',
+            linkText: 'Read full review',
+            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW55781366.htm',
+        },
+        {
+            header: 'Progressive company that means what they say',
+            quote: 'For the first time ever.. I have no complaints about my place of employment',
+            by: 'Current Employee, Sep 3, 2021 - ',
+            linkText: 'Read full review',
+            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW52059760.htm',
+        },
+        {
+            header: 'Fast paced startup that cares',
+            quote: 'Great teams full of extremely smart people. Management that cares about the well being of its employees. Full remote and async culture.',
+            by: 'Current Employee, Feb 4, 2021 - ',
+            linkText: 'Read full review',
+            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW41989078.htm',
+        },
+        {
+            header: 'Great start to an awesome adventure',
+            quote: 'Professional at a level many pre-IPO companies are not. Really good product that is easy to get behind and support. Dedicated leadership that support all employees. Everyone is motivated and pulling in the same direction',
+            by: 'Current Employee, Aug 28, 2021 - ',
+            linkText: 'Read full review',
+            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW51765366.htm',
+        },
+        {
+            header: 'Awesome people, incredible company',
+            quote: 'Competitive pay, smart and awesome management leaders, strong product, and amazing company growth.',
+            by: 'Current Employee, Jul 20, 2021 - ',
+            linkText: 'Read full review',
+            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW50015620.htm',
+        },
+        {
+            header: 'Sourcegraph is my dream company',
+            quote: `Sourcegraph will make huge impact on the software industry. By improving the productivity of developers, Sourcegraph advances the rate of technological progress enabling us to bring the future sooner. As a software developer, I can't think of a better way to make a positive impact on the world.`,
+            by: 'Current Employee, Sep 15, 2016 - ',
+            linkText: 'Read full review',
+            link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW11950185.htm',
+        },
+    ]
+
     return (
         <Layout location={props.location} className="jobs-page">
             <div>
@@ -108,21 +154,6 @@ const CareersPage = props => {
                 </div>
 
                 <Carousel className="culture-carousel">
-                    {/*
-                    <Carousel.Item className="bg-gradient-blue2-blue">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    Whether you're early in your career or have written a few books on coding, we have a
-                                    spot for you
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture1.png" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                */}
                     <Carousel.Item className="bg-gradient-blue-purple">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
@@ -132,7 +163,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture2.png" />
+                                <img src="/careers/culture1.png" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -144,7 +175,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture3.png" />
+                                <img src="/careers/culture2.png" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -157,7 +188,7 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture4.png" className="landscape" />
+                                <img src="/careers/culture3.png" className="landscape" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -170,45 +201,21 @@ const CareersPage = props => {
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture5.png" />
+                                <img src="/careers/culture4.png" />
                             </div>
                         </div>
                     </Carousel.Item>
-                    {/*
-                    <Carousel.Item className="bg-gradient-red-blue2">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    We have fun inside and outside of work <br />
-                                    This pic was taken at a team meetup in Berlin
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture6.jpg" className="landscape" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                */}
                     <Carousel.Item className="bg-gradient-red-blue2">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
                             </h1>
                             <div className="col-lg-6 img-container">
-                                <img src="/careers/culture7.png" />
+                                <img src="/careers/culture5.png" />
                             </div>
                         </div>
                     </Carousel.Item>
                 </Carousel>
-
-                <div>
-                    <img src="/careers/Culture_8.png" className="culture-section mx-auto" />
-                    <div className="culture-section-mobile mx-auto">
-                        {new Array(8).fill(null).map((el, i) => (
-                            <img key={i} src={`/careers/${i + 1}-Zoom.png`} />
-                        ))}
-                    </div>
-                </div>
 
                 <Carousel
                     className="values-carousel"
@@ -304,24 +311,13 @@ const CareersPage = props => {
                     </Carousel.Item>
                 </Carousel>
 
-                <Carousel
-                    className="bg-white h-800 h-sm-800 pt-md-0 pt-1"
-                    prevIcon={<ArrowLeftIcon color="#808080" />}
-                    nextIcon={<ArrowRightIcon color="#808080" />}
-                >
-                    {new Array(6).fill(null).map((el, i) => (
-                        <Carousel.Item key={`review-${i}`}>
-                            <div className="d-flex align-center h-750 h-sm-650">
-                                <img
-                                    src={`/careers/review${i + 1}.png`}
-                                    className="m-auto col-11 max-w-sm-500 max-w-600"
-                                />
-                            </div>
-                        </Carousel.Item>
-                    ))}
-                </Carousel>
+                <div className="bg-gradient-onahau-fog py-8">
+                    <ContentSection>
+                        <QuoteCarousel items={glassdoorReviewItems} autoAdvance={true} />
+                    </ContentSection>
+                </div>
 
-                <div className="bg-white contact-us">
+                <div className="bg-white py-8">
                     <ContentSection>
                         <div className="row">
                             <div className="col-lg-12">

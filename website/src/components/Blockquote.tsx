@@ -68,7 +68,12 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
                 )}
             </div>
         )}
-        {linkText && link && (
+        {linkText && link && link.includes('http') && (
+            <a href={link} target="_blank" rel="nofollow noopener noreferrer">
+                {linkText}
+            </a>
+        )}
+        {linkText && link && !link.includes('http') && (
             <Link to={link} className="d-flex justify-content-center mt-3">
                 <p className="font-weight-bold">{linkText}</p>
                 <ArrowRightIcon className="icon-inline ml-1" />
