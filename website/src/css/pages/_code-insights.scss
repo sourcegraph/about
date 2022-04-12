@@ -39,7 +39,7 @@
             &::after {
                 background-image: url('/code-insights/code-insights-illustration.svg'),
                     // Fallback while the SVGs are loading
-                    radial-gradient(ellipse at bottom right, rgba($dodger-blue-mist, 0.5), transparent);
+                    radial-gradient(ellipse at bottom right, rgba($blue-mist, 0.5), transparent);
                 background-position: bottom right;
                 @media only screen and (max-width: 990px) {
                     background-size: 150%;
