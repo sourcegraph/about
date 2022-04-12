@@ -17,7 +17,8 @@ const Index: FunctionComponent<PageProps> = props => (
         location={props.location}
         meta={{
             title: 'Sourcegraph | Code Intelligence Platform',
-            description: 'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Soucegraph.'
+            description:
+                'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Soucegraph.',
         }}
     >
         <div className="home">
