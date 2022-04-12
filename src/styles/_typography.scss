@@ -1,0 +1,12 @@
+@import '@styles/colors';
+
+$colors: (
+    'blue7': $blue-7,
+    'gray': $gray,
+);
+
+@each $name, $glyph in $colors {
+    .text-#{$name} {
+        color: $glyph;
+    }
+}

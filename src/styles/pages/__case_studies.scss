@@ -9,14 +9,6 @@
         max-width: 740px; // Copied from medium.com
     }
 
-    &__label {
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        opacity: 0.9;
-    }
-
     &__img {
         max-width: 100%;
     }
@@ -81,6 +73,13 @@
                 line-height: 1.5;
             }
         }
+    }
+}
+
+.case-study .author-bio {
+    &__img {
+        // TODO: On Tailwind migration, trade out this style for utility class: "border border-3 border-sky-400"
+        border: 3px solid #00a1c7;
     }
 }
 

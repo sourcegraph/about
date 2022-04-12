@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 import {
     Layout,
-    BackButton,
+    BackButtonBold,
     BlogListItem,
     ContentSection,
     CustomerLogosSectionAnimated,
@@ -184,7 +184,7 @@ const UseCasePage: FunctionComponent = () => (
                 <div className="container pb-4">
                     <div className="row">
                         <div className="col-lg-7 mb-8 mt-7">
-                            <BackButton href="/use-cases" text="USE CASES" bold={true} />
+                            <BackButtonBold href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">Find and fix security vulnerabilities</h1>
                             <div className="display-4 font-weight-normal mb-5">
                                 Search across all your repositories to find and resolve vulnerabilities in minutes, not

@@ -2,10 +2,11 @@
 export { ContentSection } from './ContentSection'
 export { Jumbotron } from './Jumbotron'
 export { RequestDemoForm } from './RequestDemoForm'
+export { RequestDemoTrySourcegraph } from './RequestDemoTrySourcegraph'
 export { TrySourcegraph } from './TrySourcegraph'
 export { Install } from './Install'
 export { EmbeddedHubSpot } from './HubSpot'
-export { BackButton } from './BackButton'
+export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
 export { FormLegal } from './FormLegal'
 export { BlogListItem } from './BlogListItem'
 export { Blockquote, BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
@@ -38,12 +39,16 @@ export type { Features } from './Pricing'
 
 // Case Studies
 export {
+    AuthorBio,
     CaseStudyJumbotron,
     CaseStudyLayout,
     CaseStudyCard,
     InContentBlockquote,
     InContentImage,
     MediaQuote,
+    NewCaseStudyLayout,
+    ThreeUpText,
+    UseChallengeSolutionResults,
 } from './CaseStudies'
 
 // Blog

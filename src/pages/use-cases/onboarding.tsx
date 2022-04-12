@@ -6,7 +6,7 @@ import UploadIcon from 'mdi-react/UploadIcon'
 import Link from 'next/link'
 
 import {
-    BackButton,
+    BackButtonBold,
     BlockquoteWithBorder,
     BlockquoteWithLogoBottom,
     BlogListItem,
@@ -142,7 +142,7 @@ const UseCasePage: FunctionComponent = () => (
                 <div className="container pb-4">
                     <div className="row">
                         <div className="col-lg-7 mb-8 mt-7">
-                            <BackButton href="/use-cases" text="USE CASES" bold={true} />
+                            <BackButtonBold href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">Accelerate developer onboarding</h1>
                             <div className="display-4 font-weight-normal mb-5">
                                 Decrease time to first commit for new developers, help existing engineers master your
