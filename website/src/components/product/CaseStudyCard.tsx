@@ -5,6 +5,7 @@ interface CaseStudy {
     name: string
     logo: string
     title: string
+    altTitle?: string
     url: string
     external?: boolean
 }
@@ -100,6 +101,7 @@ export const CASESTUDIES: CaseStudy[] = [
 export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy }> = ({ study }) => (
     <div className="card-body" style={{ minHeight: '13rem' }}>
         <img className="max-w-200 mb-4" height="60" src={study.logo} alt="Card image cap" />
+        {study.altTitle && <h5 className="font-weight-bold">{study.altTitle}</h5>}
         <p className="card-text">
             {study.title}{' '}
             <span>
