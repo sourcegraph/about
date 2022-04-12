@@ -59,7 +59,7 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                 </div>
             </div>
 
-            <div className="bg-gradient-onahau-fog text-center">
+            <div className="bg-gradient-saturn-saturated text-center">
                 <div className="container py-6 max-w-650">
                     <h2 className="mb-4 font-weight-bold">
                         Learn how Convoy increases the efficiency and confidence of entry level developers

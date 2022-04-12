@@ -64,9 +64,9 @@ $display4-size: 1.75rem;
 
 $navbar-nav-link-padding-x: $spacer * 0.75;
 $navbar-light-color: $dark;
-$navbar-light-hover-color: $blue;
+$navbar-light-hover-color: $blurple;
 $navbar-dark-color: $light;
-$navbar-dark-hover-color: $blue;
+$navbar-dark-hover-color: $blurple;
 
 $nav-tabs-border-width: 0;
 
@@ -74,13 +74,13 @@ $btn-padding-x: 1.5rem;
 $btn-font-weight: 600;
 
 $input-bg: transparent;
-$input-color: $body-color;
+$input-color: $dark-8;
 $input-box-shadow: none;
-$input-border-color: $brand-primary-blue;
+$input-border-color: $blurple;
 $input-border-width: 3px;
 $input-focus-bg: $input-bg;
-$input-focus-color: $body-color;
-$input-placeholder-color: $body-color;
+$input-focus-color: $dark-8;
+$input-placeholder-color: $dark-8;
 $input-focus-border-color: darken($component-active-bg, 25%);
 $input-focus-box-shadow: none;
 
@@ -97,7 +97,7 @@ $card-spacer-x: 1.25 * $spacer;
 $grid-gutter-width: 2rem;
 
 :root {
-    --body-color: #{$body-color};
+    --body-color: #{$dark-8};
     --border-color: #{$border-color};
 }
 
@@ -205,7 +205,7 @@ img.icon-inline,
 }
 
 code.border {
-    background-color: $light-11;
+    background-color: $light-gray-3;
     font-size: 80%;
 }
 

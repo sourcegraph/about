@@ -1,16 +1,25 @@
-import { Link } from 'gatsby'
+import React, { FunctionComponent } from 'react'
+
+import { Link, PageProps } from 'gatsby'
+
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import * as React from 'react'
+
+import Layout from '../components/Layout'
 import { ContentSection } from '../components/content/ContentSection'
 import { IntegrationsSection } from '../components/IntegrationsSection'
-import Layout from '../components/Layout'
 import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
 import { SelfHostedSection } from '../components/SelfHostedSection'
 import { buttonStyle, buttonLocation } from '../tracking'
 
-const Index: React.FunctionComponent = (props: any) => (
-    <Layout location={props.location}>
+const Index: FunctionComponent<PageProps> = props => (
+    <Layout
+        location={props.location}
+        meta={{
+            title: 'Sourcegraph | Code Intelligence Platform',
+            description: 'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Soucegraph.'
+        }}
+    >
         <div className="home">
             <div className="home__hero mb-6">
                 <div className="home__intro container">

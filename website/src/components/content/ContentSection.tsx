@@ -5,7 +5,7 @@ const COLORS = {
     white: 'bg-white text-dark',
     black: 'bg-black text-light',
     gray: 'bg-dark text-light',
-    purple: 'bg-purple text-light',
+    purple: 'bg-vivid-violet text-light',
     primary: 'bg-primary text-light',
     pink: 'bg-pink text-dark',
     'light-orange': 'bg-light-orange text-dark',

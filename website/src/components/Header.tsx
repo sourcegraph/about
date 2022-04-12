@@ -67,7 +67,7 @@ export default class Header extends React.Component<HeaderProps, any> {
         return (
             <>
                 {this.props.isHome && (
-                    <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center bg-purple text-white font-weight-bold p-2">
+                    <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center bg-vivid-violet text-white font-weight-bold p-2">
                         Track what really matters to you and your team.
                         <Link to="/code-insights" className="ml-2 rounded btn btn-sm btn-light">
                             🎉 <span className="mx-2">Show me Code Insights!</span>

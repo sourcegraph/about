@@ -109,7 +109,7 @@ const CareersPage = props => {
 
                 <Carousel className="culture-carousel">
                     {/*
-                    <Carousel.Item className="bg-gradient-blue2-blue">
+                    <Carousel.Item className="bg-gradient-plum-mist-blue">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
@@ -123,7 +123,7 @@ const CareersPage = props => {
                         </div>
                     </Carousel.Item>
                 */}
-                    <Carousel.Item className="bg-gradient-blue-purple">
+                    <Carousel.Item className="bg-gradient-blue-violet-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
@@ -136,7 +136,7 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-purple-yellow">
+                    <Carousel.Item className="bg-gradient-violet-yellow-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
@@ -148,7 +148,7 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-yellow-green2">
+                    <Carousel.Item className="bg-gradient-yellow-green-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
@@ -161,7 +161,7 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-green2-red">
+                    <Carousel.Item className="bg-gradient-green-red-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
@@ -175,7 +175,7 @@ const CareersPage = props => {
                         </div>
                     </Carousel.Item>
                     {/*
-                    <Carousel.Item className="bg-gradient-red-blue2">
+                    <Carousel.Item className="bg-gradient-red-plum-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
@@ -189,7 +189,7 @@ const CareersPage = props => {
                         </div>
                     </Carousel.Item>
                 */}
-                    <Carousel.Item className="bg-gradient-red-blue2">
+                    <Carousel.Item className="bg-gradient-red-plum-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
