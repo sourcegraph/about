@@ -105,17 +105,17 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                                 <ChartBarIcon color="#00A1C7" size={40} className="p-1" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
-                                <h4 className="font-weight-bold">Results</h4>
+                                <h5 className="font-weight-bold">Results</h5>
                                 <ul className="pl-4">
-                                    <li className="py-3 h5 font-weight-normal">
+                                    <li>
                                         Nutanix was able to see where JMSAppender existed, fix it, and send out a
                                         release in less than 5 minutes.
                                     </li>
-                                    <li className="py-3 h5 font-weight-normal">
+                                    <li>
                                         Nutanix was able to deliver patches to its customers that fully remediated the
                                         Log4j vulnerability in under 4 days.
                                     </li>
-                                    <li className="py-3 h5 font-weight-normal">
+                                    <li>
                                         Nutanix was able to identify every instance of Log4j across its sprawling
                                         codebase with 100% confidence.
                                     </li>
