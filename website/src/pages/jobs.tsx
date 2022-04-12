@@ -311,7 +311,7 @@ const CareersPage = props => {
                     </Carousel.Item>
                 </Carousel>
 
-                <div className="bg-gradient-onahau-fog py-8">
+                <div className="bg-gradient-saturn-saturated py-8">
                     <ContentSection>
                         <QuoteCarousel items={glassdoorReviewItems} autoAdvance={true} />
                     </ContentSection>

@@ -20,6 +20,7 @@ $blurple: #5033e1;
 $pacific-blue: #00a1c7;
 
 // Sourcegraph Colors for Website UI
+$pale-sky: #6c757d;
 $space-black: #000000;
 
 // Colors not listed in our Brand Guidelines
@@ -46,7 +47,7 @@ $green-5: #51cf66;
 $green-7: #37b24d;
 $green-9: #2b8a3e;
 
-$pale-sky: #6c757d;
+$alabaster: #f9f9f9;
 $light-blue: #d5e6f7;
 $light-green: #bceee9;
 $turquoise: #66d9e8;
@@ -80,6 +81,7 @@ $theme-colors: (
     'pacific-blue': $pacific-blue,
 
     // Sourcegraph Colors for Website UI
+    'pale-sky': $pale-sky,
     'black': $space-black,
 
     // Colors not listed in our Brand Guidelines
@@ -106,7 +108,7 @@ $theme-colors: (
     'green-7': $green-7,
     'green-9': $green-9,
 
-    'pale-sky': $pale-sky,
+    'alabaster': $alabaster,
     'light-blue': $light-blue,
     'light-green': $light-green,
     'turquoise': $turquoise,
