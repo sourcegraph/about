@@ -206,7 +206,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="py-6 max-w-700 text-gray">
+            <ContentSection color="white" className="py-6 max-w-700 text-pale-sky">
                 <Blockquote
                     border={true}
                     quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
@@ -259,21 +259,21 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                     <h2 className="text-center pb-5 display-3 font-weight-bold">Results</h2>
                     <div className="mb-5 row">
                         <div className="col-sm-12 col-md-4 text-center">
-                            <h3 className="pb-3 font-weight-bold text-blue7">{'<'} 5 min</h3>
+                            <h3 className="pb-3 font-weight-bold text-text-curious-blue">{'<'} 5 min</h3>
                             <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">
                                 Nutanix was able to see where JMSAppender existed, fix it, and send out a release in
                                 less than 5 minutes.
                             </p>
                         </div>
                         <div className="col-sm-12 col-md-4 text-center">
-                            <h3 className="pb-3 font-weight-bold text-blue7">4 days</h3>
+                            <h3 className="pb-3 font-weight-bold text-text-curious-blue">4 days</h3>
                             <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">
                                 Nutanix was able to deliver patches to its customers that fully remediated the Log4j
                                 vulnerability.
                             </p>
                         </div>
                         <div className="col-sm-12 col-md-4 text-center">
-                            <h3 className="pb-3 font-weight-bold text-blue7">100% confidence</h3>
+                            <h3 className="pb-3 font-weight-bold text-text-curious-blue">100% confidence</h3>
                             <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">
                                 Nutanix was able to confidently identify every instance of Log4j across its sprawling
                                 codebase.
