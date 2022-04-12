@@ -30,7 +30,13 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
                 )}
             </div>
         )}
-        {linkText && link && (
+        {linkText && link && link.includes('http') && (
+            <a href={link} target="_blank" rel="nofollow noopener noreferrer">
+                {linkText}
+                <ArrowRightIcon className="icon-inline ml-1" />
+            </a>
+        )}
+        {linkText && link && !link.includes('http') && (
             <Link href={link} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className="d-flex justify-content-center mt-3">
@@ -95,7 +101,13 @@ export const BlockquoteWithBorder: FunctionComponent<{
                 <img src={logoImage} width="110px" alt={logoAlt} />
             </div>
         )}
-        {linkText && link && (
+        {linkText && link && link.includes('http') && (
+            <a href={link} target="_blank" rel="nofollow noopener noreferrer">
+                {linkText}
+                <ArrowRightIcon className="icon-inline ml-1" />
+            </a>
+        )}
+        {linkText && link && !link.includes('http') && (
             <Link href={link} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className="d-flex justify-content-center mt-3">
@@ -135,7 +147,13 @@ export const Blockquote: FunctionComponent<{
                 )}
             </div>
         )}
-        {linkText && link && (
+        {linkText && link && link.includes('http') && (
+            <a href={link} target="_blank" rel="nofollow noopener noreferrer">
+                {linkText}
+                <ArrowRightIcon className="icon-inline ml-1" />
+            </a>
+        )}
+        {linkText && link && !link.includes('http') && (
             <Link href={link} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className="d-flex justify-content-center mt-3">

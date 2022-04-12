@@ -97,8 +97,13 @@
                 bottom: 0;
             }
 
-            li {
+            .active {
+                opacity: 1;
+            }
+
+            button {
                 background-color: $sg-space-black;
+                opacity: 0.5;
                 width: 10px;
                 height: 10px;
                 border-radius: 5px;
@@ -152,31 +157,6 @@
         .carousel-control-prev,
         .carousel-control-next {
             display: none;
-        }
-    }
-
-    .culture-section {
-        /* Temp fix: to hide zoom section */
-        display: none;
-        width: 100%;
-        max-width: 1500px;
-
-        @media only screen and (max-width: 768px) {
-            padding: 100px 0;
-            margin-bottom: 70px;
-            display: none;
-        }
-    }
-
-    .culture-section-mobile {
-        display: none;
-
-        @media only screen and (max-width: 768px) {
-            /* Temp fix: to hide zoom section: display: block;*/
-
-            img {
-                width: 45%;
-            }
         }
     }
 
@@ -242,24 +222,6 @@
         .carousel-control-next-icon,
         .carousel-indicators li {
             background-color: $sg-space-black;
-        }
-    }
-
-    .contact-us {
-        padding: 170px 0 390px 0;
-
-        @media only screen and (max-width: 768px) {
-            padding: 170px 0;
-        }
-
-        p {
-            font-size: 1.5rem;
-            line-height: 1.9rem;
-
-            @media only screen and (max-width: 768px) {
-                font-size: 1.125rem;
-                line-height: 1.42rem;
-            }
         }
     }
 }
