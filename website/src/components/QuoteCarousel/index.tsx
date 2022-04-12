@@ -31,7 +31,7 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
 
     return (
         <div className="d-flex flex-lg-row align-items-lg-center flex-column justify-content-center text-center h-xl-450 h-lg-450 h-md-450 h-sm-550 position-relative">
-            <div className="d-lg-flex d-none align-items-center">
+            <div className="d-lg-flex d-none align-items-center btn">
                 <ArrowLeftIcon className="mr-4" onClick={() => carouselHook.moveCarousel('decrement')} />
             </div>
             <div className="px-lg-7">
@@ -53,7 +53,7 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
                     </div>
                 ))}
             </div>
-            <div className="d-lg-flex d-none align-items-center">
+            <div className="d-lg-flex d-none align-items-center btn">
                 <ArrowRightIcon className="ml-4" onClick={() => carouselHook.moveCarousel()} />
             </div>
             <div

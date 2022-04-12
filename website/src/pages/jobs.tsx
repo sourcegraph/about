@@ -17,7 +17,7 @@ const CareersPage = props => {
         },
         {
             header: 'Progressive company that means what they say',
-            quote: 'Progressive company that means what they say. For the first time ever.. i have no complaints about my place of employment',
+            quote: 'For the first time ever.. I have no complaints about my place of employment',
             by: 'Current Employee, Sep 3, 2021 - ',
             linkText: 'Read full review',
             link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW52059760.htm',
