@@ -1,6 +1,6 @@
 import { useCarousel } from '../../hooks/carousel'
 import React, { FunctionComponent, ReactFragment, ReactNode } from 'react'
-import { BlockquoteWithLogo } from '../Blockquote'
+import { BlockquoteWithLogoBottom } from '../Blockquote'
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
@@ -40,7 +40,7 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
                         key={item.quote}
                         className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
                     >
-                        <BlockquoteWithLogo
+                        <BlockquoteWithLogoBottom
                             quote={item.quote}
                             header={item.header}
                             by={item.by}
