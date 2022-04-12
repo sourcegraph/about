@@ -244,22 +244,4 @@
             background-color: $space-black;
         }
     }
-
-    .contact-us {
-        padding: 170px 0 390px 0;
-
-        @media only screen and (max-width: 768px) {
-            padding: 170px 0;
-        }
-
-        p {
-            font-size: 1.5rem;
-            line-height: 1.9rem;
-
-            @media only screen and (max-width: 768px) {
-                font-size: 1.125rem;
-                line-height: 1.42rem;
-            }
-        }
-    }
 }
