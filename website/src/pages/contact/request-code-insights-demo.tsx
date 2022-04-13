@@ -6,7 +6,8 @@ import { CustomerLogosSection } from '../../components/product/CustomerLogosSect
 import { useHubSpot } from '../../hooks/hubSpot'
 
 const title = 'Sourcegraph - Schedule a Code Insights demo.'
-const description = 'Learn how you can track and visualize trends in your entire codebase with Sourcegraph Code Insights.'
+const description =
+    'Learn how you can track and visualize trends in your entire codebase with Sourcegraph Code Insights.'
 
 const Contact: FunctionComponent<PageProps> = props => {
     useHubSpot({
@@ -15,7 +16,7 @@ const Contact: FunctionComponent<PageProps> = props => {
         targetId: 'hubspotRequestCodeInsightsDemo',
         chiliPiper: true,
     })
-    
+
     return (
         <Layout
             className="pt-0"
