@@ -378,7 +378,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-blue-mist py-4">
+        <div className="bg-gradient-venus-radial py-4">
             <ContentSection className="py-lg-6">
                 <div className="row d-flex text-center justify-content-center px-lg-7 py-6">
                     <div className="w-100">
@@ -404,7 +404,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray2">
+        <div className="bg-light-gray-3">
             <ContentSection className="py-7">
                 <div className="d-flex flex-wrap">
                     <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">
@@ -417,7 +417,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <BullsEyeArrowIcon className="icon" size={70} />
+                                <BullsEyeArrowIcon className="icon text-blurple" size={70} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Set goals</div>
@@ -426,7 +426,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         </div>
                         <div className="d-flex py-lg-5 py-3">
                             <div className="icon mr-4">
-                                <LighteningBoltOutlineIcon className="icon" size={70} />
+                                <LighteningBoltOutlineIcon className="icon text-blurple" size={70} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Plan proactively</div>
@@ -439,7 +439,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                     <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <TrendingUpIcon className="icon" size={70} />
+                                <TrendingUpIcon className="icon text-blurple" size={70} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">{'Track ownership & trends'}</div>
@@ -448,7 +448,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
                         </div>
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <RocketLaunchOutlineIcon className="icon" size={70} />
+                                <RocketLaunchOutlineIcon className="icon text-blurple" size={70} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Celebrate progress</div>
@@ -478,7 +478,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         </ContentSection>
 
         {/* Use Cases */}
-        <div className="bg-gradient-blue-mist py-4 tab-section">
+        <div className="bg-gradient-venus-radial py-4 tab-section">
             <ContentSection className="py-4 py-md-7">
                 <h1 className="mb-2 text-center font-weight-bold">Popular Code Insights templates</h1>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
@@ -532,7 +532,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
         </div>
 
         {/* Use Cases Carousel */}
-        <div className="bg-gradient-blue-mist py-4 tab-carousel-section">
+        <div className="bg-gradient-venus-radial py-4 tab-carousel-section">
             <ContentSection className="py-4 py-md-7">
                 <h1 className="mb-2 text-center">Popular Code Insights templates</h1>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
@@ -577,7 +577,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray2">
+        <div className="bg-light-gray-3">
             <ContentSection>
                 <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
                     <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
