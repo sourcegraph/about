@@ -52,7 +52,7 @@ export const LinkPost: React.FunctionComponent<Props> = ({
                 {title}
                 <div className="link-post__html d-inline" dangerouslySetInnerHTML={{ __html: post.html }} />
             </div>
-            <div className="card-footer bg-unset border-top-0 pt-0">
+            <div className="card-footer bg-transparent border-top-0 pt-0">
                 <Link to={url} className={`text-muted ${titleLinkClassName}`}>
                     {post.frontmatter.publishDate}
                 </Link>

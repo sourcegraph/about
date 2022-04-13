@@ -10,12 +10,11 @@
         margin-right: 0.5rem;
         padding: 0.125rem;
 
-        @include icon-item-color('blue', $primary);
-        @include icon-item-color('brand-cyan', $brand-cyan);
-        @include icon-item-color('brand-purple', $brand-purple);
-        @include icon-item-color('brand-orange', $brand-orange);
-        @include icon-item-color('green', $green);
-        @include icon-item-color('red', $red);
+        @include icon-item-color('primary', $primary);
+        @include icon-item-color('sky-blue', $sky-blue);
+        @include icon-item-color('vivid-violet', $vivid-violet);
+        @include icon-item-color('green', $green-5);
+        @include icon-item-color('vermillion', $vermillion);
         @include icon-item-color('white', $white);
     }
 }
