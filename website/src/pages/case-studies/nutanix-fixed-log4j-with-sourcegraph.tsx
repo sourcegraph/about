@@ -49,7 +49,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                     <section className="max-w-xl-550 ml-xl-auto">
                         <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
                             <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                                <ClipboardTextOutlineIcon  size={40} className="p-1 text-blurple" />
+                                <ClipboardTextOutlineIcon size={40} className="p-1 text-blurple" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
                                 <h5 className="font-weight-bold">Use case</h5>
@@ -64,7 +64,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                         </div>
                         <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
                             <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                                <FlagOutlineIcon  size={40} className="p-1 text-blurple" />
+                                <FlagOutlineIcon size={40} className="p-1 text-blurple" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
                                 <h5 className="font-weight-bold">Challenge</h5>
@@ -80,7 +80,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                         </div>
                         <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
                             <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                                <CheckCircleOutlineIcon  size={40} className="p-1 text-blurple" />
+                                <CheckCircleOutlineIcon size={40} className="p-1 text-blurple" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
                                 <h5 className="font-weight-bold">Solution</h5>
@@ -102,7 +102,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                     <section className="max-w-xl-550">
                         <div className="mb-5 ml-3 ml-lg-0 d-flex flex-column flex-md-row">
                             <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                                <ChartBarIcon  size={40} className="p-1 text-blurple" />
+                                <ChartBarIcon size={40} className="p-1 text-blurple" />
                             </div>
                             <div className="pl-3 col-11 col-lg-9">
                                 <h5 className="font-weight-bold">Results</h5>
