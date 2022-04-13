@@ -11,7 +11,7 @@ export const CaseStudy: FunctionComponent = () => {
                 title: 'FactSet migrates from Perforce to GitHub',
                 description:
                     'FactSet case study. Learn how FactSet uses Sourcegraph after migrating from Perforce to GitHub.',
-                image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+                image: '/sourcegraph-og.png',
             }}
             className="navbar-dark bg-black"
         >

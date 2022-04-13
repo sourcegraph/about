@@ -13,6 +13,8 @@ export { Blockquote, BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWith
 export { Video } from './Video'
 export { CustomerLogosSectionAnimated } from './CustomerLogosSectionAnimated'
 export { IntegrationsSection } from './IntegrationsSection'
+export { BoardSection } from './BoardSection'
+export { LeadershipSection } from './LeadershipSection'
 export { SelfHostedSection } from './SelfHostedSection'
 export { YouTube } from './YouTube'
 

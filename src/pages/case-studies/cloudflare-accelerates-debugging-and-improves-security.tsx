@@ -10,7 +10,7 @@ export const CaseStudy: FunctionComponent = () => {
             meta={{
                 title: 'Cloudflare accelerates debugging and improves security',
                 description: 'Cloudflare case study. Learn how Cloudflare accelerates debugging and improves security',
-                image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+                image: '/sourcegraph-og.png',
             }}
             className="navbar-dark bg-black"
         >

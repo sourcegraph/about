@@ -11,7 +11,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
             title: 'Sourcegraph white paper: Remote software development made easier',
             description:
                 'Sourcegraph transitioned from remote-first to all-remote early 2020. Here is a compilation of tips and tricks on how to live your best distributed work life and a summary of the benefits of using Sourcegraph when working remotely.',
-            image: 'https://about.sourcegraph.com/white-papers/remote-easier.jpg',
+            image: '/white-papers/remote-easier.jpg',
         }}
     >
         <WhitePaperPage

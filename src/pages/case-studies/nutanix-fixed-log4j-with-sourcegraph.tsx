@@ -18,7 +18,7 @@ export const CaseStudy: FunctionComponent = () => (
             title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
             description:
                 'Nutanix case study. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
-            image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+            image: '/sourcegraph-og.png',
         }}
     >
         <NewCaseStudyLayout

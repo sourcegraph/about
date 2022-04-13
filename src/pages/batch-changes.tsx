@@ -22,7 +22,7 @@ export const BatchChangesPage: FunctionComponent = () => (
             title: 'Sourcegraph Batch Changes | Large-Scale Code Changes',
             description:
                 'Automate large-scale changes with Sourcegraph Batch Changes. Keep your code up to date and pay down tech debt across all repositories and code hosts.',
-            image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+            image: '/sourcegraph-og.png',
         }}
         className="batch-changes-page"
         heroAndHeaderClassName="batch-changes-page__hero-and-header"

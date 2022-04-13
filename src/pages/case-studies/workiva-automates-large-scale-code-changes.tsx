@@ -13,7 +13,7 @@ export const CaseStudy: FunctionComponent = () => {
                 title: 'Workiva reduces the time it takes to make large-scale code changes by 80%',
                 description:
                     'Workiva case study. Learn how Workiva uses Sourcegraph Batch Changes to reduce the time it takes to make large-scale code updates by 80%.',
-                image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+                image: '/sourcegraph-og.png',
             }}
             className="navbar-dark bg-black"
         >

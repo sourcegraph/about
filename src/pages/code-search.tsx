@@ -20,7 +20,7 @@ export const CodeSearchPage: FunctionComponent = () => (
             title: 'Sourcegraph | Code Search',
             description:
                 'Onboard to a new codebase, find answers faster, and identify security risks with Sourcegraph Code Search. Search across all the repositories you work with.',
-            image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+            image: '/sourcegraph-og.png',
         }}
         heroAndHeaderClassName="code-search-page__hero-and-header"
         hero={

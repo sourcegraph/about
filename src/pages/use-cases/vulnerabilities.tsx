@@ -174,7 +174,7 @@ const UseCasePage: FunctionComponent = () => (
             title: 'Find and fix security vulnerabilities',
             description:
                 'Search across all your repositories to find and resolve vulnerabilities in minutes, not days.',
-            image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+            image: '/sourcegraph-og.png',
         }}
         className="use-cases-page"
         heroAndHeaderClassName={`${styles.pageHeader} navbar-light`}

@@ -8,7 +8,7 @@ export const CaseStudy: FunctionComponent = () => (
             title: 'F5 streamlines collaboration for global and distributed software teams',
             description:
                 "With Sourcegraph, F5's global workforce can stay better connected and quickly solve problems across the entire codebase.",
-            image: 'https://about.sourcegraph.com/external-logos/f5-logo.svg',
+            image: '/external-logos/f5-logo.svg',
         }}
         className="navbar-dark bg-black"
     >

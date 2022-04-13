@@ -73,7 +73,7 @@ const PricingPage: FunctionComponent = () => (
             title: 'Sourcegraph - Pricing',
             description:
                 'Sourcegraph is always free for public and open source code. Start using it for private code with a paid plan.',
-            image: 'https://about.sourcegraph.com/sourcegraph-og.png',
+            image: '/sourcegraph-og.png',
         }}
     >
         <div className="text-dark">
