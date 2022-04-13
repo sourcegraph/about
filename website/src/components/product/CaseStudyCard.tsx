@@ -7,6 +7,7 @@ interface CaseStudy {
     title: string
     altTitle?: string
     url: string
+    linkText?: string
     external?: boolean
 }
 
@@ -98,19 +99,21 @@ export const CASESTUDIES: CaseStudy[] = [
     },
 ]
 
-export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy }> = ({ study }) => (
+export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy }> = ({
+    study: { logo, altTitle, title, external, url, linkText = 'Learn more' },
+}) => (
     <div className="card-body" style={{ minHeight: '13rem' }}>
-        <img className="max-w-200 mb-4" height="60" src={study.logo} alt="Card image cap" />
-        {study.altTitle && <h5 className="font-weight-bold">{study.altTitle}</h5>}
+        <img className="max-w-200 mb-4" height="60" src={logo} alt="Card image cap" />
+        {altTitle && <h5 className="font-weight-bold">{altTitle}</h5>}
         <p className="card-text">
-            {study.title}{' '}
+            {title}{' '}
             <span className="text-nowrap">
-                {study.external ? (
-                    <a href={study.url} target="_blank" rel="nofollow noopener">
-                        Learn more.
+                {external ? (
+                    <a href={url} target="_blank" rel="nofollow noopener">
+                        {linkText}.
                     </a>
                 ) : (
-                    <Link to={study.url}>Learn more.</Link>
+                    <Link to={url}>{linkText}.</Link>
                 )}
             </span>
         </p>

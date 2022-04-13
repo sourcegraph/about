@@ -19,7 +19,7 @@ const resourceItems = [
         description:
             'See how Nutanix was able to confidently identify every instance of Log4j across its sprwaling codebase and deliver patches to its customers that fully remediated the vulnerability within 4 days.',
         type: 'Case study',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png',
+        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
         href: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
     },
 ]
@@ -31,6 +31,7 @@ const caseStudyItems = [
         altTitle: 'Fix vulnerabilities',
         title: 'Find, fix, and track vulnerable code quickly across your entire codebase. See how Sourcegraph enables Nutanix to remediate every instance of a vulnerability with confidence.',
         url: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
+        linkText: 'Read the case study',
     },
     {
         name: 'Cloudflare',
@@ -38,6 +39,7 @@ const caseStudyItems = [
         altTitle: 'Resolve incidents',
         title: 'Identify the root cause in code and fix the issue everywhere, faster. See how Cloudflare stays audit-ready with Sourcegraph.',
         url: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
+        linkText: 'Read the case study',
     },
     {
         name: 'Indeed',
@@ -45,12 +47,15 @@ const caseStudyItems = [
         altTitle: 'Boost code health',
         title: 'Improve code health with large-scale changes and track code health initiatives towards completion. Learn how Indeed improves code health at scale.',
         url: '/case-studies/indeed-accelerates-development-velocity',
+        linkText: 'Read the case study',
     },
     {
         name: 'Lyft',
         logo: '/external-logos/lyft-logo.svg',
-        title: 'Lyft ensures production stability during monolith to microservices transition.',
+        altTitle: 'Onboard developers',
+        title: 'Decrease time to first commit with self-serve codebase onboarding and knowledge sharing. Learn how Lyft makes every developer autonomous with Sourcegraph.',
         url: '/case-studies/lyft-monolith-to-microservices',
+        linkText: 'Read the case study',
     },
     {
         name: 'FactSet',
@@ -58,6 +63,7 @@ const caseStudyItems = [
         altTitle: 'Promote code reuse',
         title: 'Find existing libraries for reuse and contribute to a more secure and coherent codebase. See how FactSet ensures consistency across its codebase.',
         url: '/case-studies/factset-migrates-from-perforce-to-github',
+        linkText: 'Read the case study',
     },
 ]
 
@@ -72,12 +78,14 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
             }}
         >
             <div className="bg-gradient-saturn-radial py-md-8 py-6">
-                <section className="container">
+                <section className="container max-w-900">
                     <h1 className="display-2 font-weight-bold max-w-600">
                         Accelerate engineering velocity with Sourcegraph
                     </h1>
-                    <p className="py-4">See why over 1.2M engineers use Sourcegraph to build software you rely on</p>
-                    <div className="d-flex flex-column flex-md-row">
+                    <h5 className="py-4 font-weight-normal">
+                        See why over 1.2M engineers use Sourcegraph to build software you rely on
+                    </h5>
+                    <div className="d-flex flex-column flex-md-row pt-0 pt-md-4">
                         <Link to="/demo" className="btn btn-primary max-w-200">
                             Request a demo
                         </Link>
@@ -88,12 +96,12 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                 </section>
             </div>
 
-            <div className="container my-6">
-                <h1 className="display-4 font-weight-bold">Move fast — even in big code bases</h1>
-                <p>Learn how these software companies used Sourcegraph</p>
-                <div className="d-flex flex-wrap">
+            <div className="container max-w-900 mt-6">
+                <h1 className="display-3 font-weight-bold">Move fast — even in big code bases</h1>
+                <h5 className="font-weight-normal py-3">Learn how these software companies used Sourcegraph</h5>
+                <div className="d-flex flex-wrap pt-4">
                     {caseStudyItems.map((study, i) => (
-                        <div key={i} className="col-md-4 px-3 mb-6 partner-pod__case-study-card">
+                        <div key={i} className="col-md-4 mb-6 px-0 partner-pod__case-study-card">
                             <CaseStudyCard study={study} />
                         </div>
                     ))}
@@ -101,9 +109,9 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="bg-gradient-venus-extra-saturated py-6">
-                <section className="container text-center">
-                    <h1 className="display-4 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
-                    <p className="pt-4 mx-auto max-w-500">
+                <section className="container max-w-900 text-center">
+                    <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
+                    <h5 className="pt-4 pb-3 mx-auto max-w-550 font-weight-normal">
                         <span>
                             <Link to="/get-started">Get started </Link>
                         </span>
@@ -112,11 +120,11 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                             <Link to="/demo"> request a demo </Link>
                         </span>
                         to learn about our enterprise plan and to see Sourcegraph in your own environment.
-                    </p>
+                    </h5>
                 </section>
             </div>
 
-            <div className="container my-md-8 my-6">
+            <div className="container max-w-900 my-md-8 my-6">
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>
                 </div>
@@ -126,12 +134,12 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
             </div>
 
             <div className="py-5 d-flex flex-md-row flex-column align-items-center justify-content-center bg-primary text-white font-weight-bold">
-                <p className="max-w-200 max-w-md-400 text-center my-auto pr-md-4">
+                <h5 className="max-w-250 max-w-md-400 text-center font-weight-bold my-auto pr-md-4">
                     Looking for our changelog? Look no further
-                </p>
+                </h5>
                 <a
                     href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
-                    className="rounded btn btn-primary border-white mt-md-0 mt-3"
+                    className="rounded btn btn-primary border-white mt-md-0 mt-4"
                 >
                     Changelog
                 </a>
