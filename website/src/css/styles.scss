@@ -8,6 +8,8 @@
 
 @import 'colors';
 
+/* ==================== Bootstrap Overrides ==================== */
+
 $font-family-sans-serif: source-sans-pro, sans-serif; /* Adobe Source Sans Pro */
 $font-family-monospace: source-code-pro, monospace; /* Adobe Source Code Pro for code */
 $font-family-base: $font-family-sans-serif;
@@ -123,6 +125,8 @@ $grid-gutter-width: 2rem;
 @import 'node_modules/bootstrap/scss/dropdown';
 @import 'node_modules/bootstrap/scss/carousel';
 
+/* ==================== Layout ==================== */
+
 html,
 body,
 #___gatsby {
@@ -152,25 +156,11 @@ body {
     background-color: $alabaster;
 }
 
+/* ==================== Icons ==================== */
+
 .material-icons {
     margin-right: 4px;
     fill: currentColor;
-}
-
-.popover {
-    /* Prevent a child element with non-rounded corners from extruding.
-     overflow: hidden; */
-    border: 0;
-}
-
-.text-sans-serif {
-    font-family: $font-family-sans-serif;
-}
-
-.popover-body {
-    border: solid 1px $gray-200;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 0 9px 3px;
-    background-color: $white;
 }
 
 /* Formats an icon so that it appears inline in the text with height matching the text */
@@ -195,20 +185,7 @@ img.icon-inline,
     fill: currentColor;
 }
 
-.img-drop-shadow {
-    max-width: calc(100% - 10px);
-    max-height: 100vh;
-    box-shadow: 0 4px 18px 0 #0000001a, 0 6px 20px 0 #00000017;
-    margin: 40px auto;
-    display: block;
-    vertical-align: middle;
-    border-style: none;
-}
-
-code.border {
-    background-color: $light-gray-3;
-    font-size: 80%;
-}
+/* ==================== Tables ==================== */
 
 table {
     width: 100%;
@@ -235,6 +212,8 @@ table tbody + tbody {
 table {
     background-color: $white;
 }
+
+/* ==================== BEM Pages/Components ==================== */
 
 @import 'components/blog/BlogPost';
 @import 'components/blog/LinkPost';
@@ -289,9 +268,7 @@ table {
 @import 'gradients';
 @import 'spacing';
 
-.virtual-br::before {
-    content: '\A';
-}
+/* ==================== Typography ==================== */
 
 .font-size-base {
     font-size: $font-size-base !important;
@@ -299,9 +276,40 @@ table {
 .font-family-base {
     font-family: $font-family-base !important;
 }
+.font-size-medium {
+    font-size: 1.2em;
+    line-height: 1.95em;
+}
+.font-size-large {
+    font-size: 4.5em;
+    line-height: 1.25em;
+}
+.font-size-extra-large {
+    font-size: 6em;
+    line-height: 1.25em;
+}
+.text-sans-serif {
+    font-family: $font-family-sans-serif;
+}
+.text-decoration-underline {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
 
-.list-spaced > li {
-    margin-bottom: 1rem;
+/* ==================== Bootstrap Components ==================== */
+
+.popover {
+    /* Prevent a child element with non-rounded corners from extruding.
+     overflow: hidden; */
+    border: 0;
+}
+
+.popover-body {
+    border: solid 1px $gray-200;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 9px 3px;
+    background-color: $white;
 }
 
 .nav-tabs {
@@ -310,19 +318,28 @@ table {
     border-bottom-width: 1px;
 }
 
-.font-size-medium {
-    font-size: 1.2em;
-    line-height: 1.95em;
+/* ==================== Misc ==================== */
+
+.virtual-br::before {
+    content: '\A';
 }
 
-.font-size-large {
-    font-size: 4.5em;
-    line-height: 1.25em;
+.img-drop-shadow {
+    max-width: calc(100% - 10px);
+    max-height: 100vh;
+    box-shadow: 0 4px 18px 0 #0000001a, 0 6px 20px 0 #00000017;
+    margin: 40px auto;
+    display: block;
+    border-style: none;
 }
 
-.font-size-extra-large {
-    font-size: 6em;
-    line-height: 1.25em;
+code.border {
+    background-color: $light-gray-3;
+    font-size: 80%;
+}
+
+.list-spaced > li {
+    margin-bottom: 1rem;
 }
 
 .blog-image {
@@ -330,11 +347,4 @@ table {
     margin-bottom: 1rem;
     border: 1px solid var(--border-color);
     max-width: 100%;
-}
-
-.text-decoration-underline {
-    text-decoration: underline;
-    &:hover {
-        text-decoration: none;
-    }
 }
