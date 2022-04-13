@@ -1,5 +1,4 @@
 @import '@styles/colors';
-@import '@styles/gradients';
 
 .landingHeader {
     background: url('/customers-page-bg.svg') no-repeat;
@@ -10,7 +9,7 @@
     position: relative;
     background-image: url('/code-insights/code-insights-page-bg.svg'),
         // Fallback while the SVGs are loading
-        radial-gradient(ellipse at bottom left, rgba($light-green2, 0.5), transparent);
+        radial-gradient(ellipse at bottom left, rgba($green-mist, 0.5), transparent);
     background-repeat: no-repeat;
     background-size: cover;
 }

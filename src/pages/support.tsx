@@ -28,12 +28,11 @@ const SUPPORT_FEATURES = {
 }
 
 const Support: FunctionComponent = () => (
-    <Layout 
+    <Layout
         className="text-dark"
         meta={{
             title: 'Sourcegraph - Support',
-            description:
-                'Sourcegraph support details for each pricing tier.',
+            description: 'Sourcegraph support details for each pricing tier.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
     >
@@ -102,7 +101,8 @@ const Support: FunctionComponent = () => (
                                 <h1 className="card-title mt-3 mb-3 text-center">Team</h1>
                                 <a
                                     className="font-size-base min-w-150 btn btn-success w-100 justify-content-center text-center d-inline-flex"
-                                    href="https://sourcegraph.com/subscriptions/new">
+                                    href="https://sourcegraph.com/subscriptions/new"
+                                >
                                     Buy now
                                 </a>
                             </div>
@@ -149,8 +149,8 @@ const Support: FunctionComponent = () => (
                         <div className="card">
                             <div className="card-body">
                                 <h1 className="card-title mt-3 mb-3 text-center">Enterprise</h1>
-                                <Link 
-                                    href="/contact/request-info/?form_submission_source=support-enterprise" 
+                                <Link
+                                    href="/contact/request-info/?form_submission_source=support-enterprise"
                                     passHref={true}
                                 >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -196,7 +196,7 @@ const Support: FunctionComponent = () => (
                                     )
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} /> 
+                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
                                     Dedicated customer engineer assigned to you (available,{' '}
                                     <Link href="/contact/request-info/?form_submission_source=support-enterprise">
                                         contact us
@@ -208,10 +208,10 @@ const Support: FunctionComponent = () => (
                     </div>
                 </div>
                 <p className="mx-4">
-                        * We will use commercially reasonable efforts to adhere to the SLAs and uptime defined
-                        above. SLAs apply to tickets submitted via email to{' '}
-                        <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
-                    </p>
+                    * We will use commercially reasonable efforts to adhere to the SLAs and uptime defined above. SLAs
+                    apply to tickets submitted via email to{' '}
+                    <a href="mailto:support@sourcegraph.com">support@sourcegraph.com</a>.
+                </p>
                 <hr className="my-4" />
             </div>
         </div>

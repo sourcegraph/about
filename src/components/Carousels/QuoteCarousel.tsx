@@ -34,7 +34,11 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
     return (
         <div className="d-flex flex-lg-row align-items-lg-center flex-column justify-content-center align-items-center text-center h-xl-450 h-lg-450 h-md-450 h-sm-550 h-550 position-relative">
             <div className="d-lg-flex d-none align-items-center btn">
-                <ArrowLeftIcon className="mr-4" onClick={() => carouselHook.moveCarousel('decrement')} />
+                <ArrowLeftIcon
+                    className="mr-4"
+                    color="#808080"
+                    onClick={() => carouselHook.moveCarousel('decrement')}
+                />
             </div>
             <div className="px-lg-6">
                 {carouselItems.map(item => (
@@ -56,14 +60,18 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
                 ))}
             </div>
             <div className="d-lg-flex d-none align-items-center btn">
-                <ArrowRightIcon className="ml-4" onClick={() => carouselHook.moveCarousel()} />
+                <ArrowRightIcon className="ml-4" color="#808080" onClick={() => carouselHook.moveCarousel()} />
             </div>
             <div className={`d-lg-none d-flex justify-content-center w-100 position-absolute ${styles.positionNav}`}>
                 <div className="btn">
-                    <ArrowLeftIcon className="mr-4" onClick={() => carouselHook.moveCarousel('decrement')} />
+                    <ArrowLeftIcon
+                        className="mr-4"
+                        color="#808080"
+                        onClick={() => carouselHook.moveCarousel('decrement')}
+                    />
                 </div>
                 <div className="btn">
-                    <ArrowRightIcon className="ml-4" onClick={() => carouselHook.moveCarousel()} />
+                    <ArrowRightIcon className="ml-4" color="#808080" onClick={() => carouselHook.moveCarousel()} />
                 </div>
             </div>
         </div>

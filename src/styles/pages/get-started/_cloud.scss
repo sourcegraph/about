@@ -21,7 +21,7 @@
 
         .small-font a {
             text-decoration: underline;
-            color: $sg-space-black;
+            color: $space-black;
             margin: 0 0 4px 0;
         }
         .small-font,
@@ -45,7 +45,7 @@
     }
     .badge {
         text-transform: uppercase;
-        background-color: $brand-purple;
+        background-color: $vivid-violet;
         padding: 7px 10px 5px;
         color: $white;
         font-weight: bold;
@@ -92,7 +92,7 @@
 
         @media only screen and (max-width: 768px) {
             .btn {
-                color: $blue;
+                color: $blurple;
                 background-color: transparent;
                 border: 0 none;
                 padding: 0;
@@ -125,7 +125,7 @@
                 display: none;
             }
             .mdi-icon {
-                color: $sg-space-black;
+                color: $space-black;
             }
         }
 
@@ -165,16 +165,16 @@
         }
     }
     .github {
-        background-color: $sg-space-black;
+        background-color: $space-black;
     }
     .gitlab {
-        background-color: $purple;
+        background-color: $blurple;
     }
     a {
         margin: 8px 0;
     }
     hr {
-        color: $sg-space-black;
+        color: $space-black;
         opacity: 0.5;
     }
     .small-font {

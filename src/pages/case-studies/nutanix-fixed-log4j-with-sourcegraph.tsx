@@ -145,7 +145,7 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
             </ContentSection>
 
-            <ContentSection color="white" className="py-6 max-w-700 col-xl-5 text-gray text-center">
+            <ContentSection color="white" className="py-6 max-w-700 col-xl-5 text-pale-sky text-center">
                 <Blockquote
                     quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                     better than having to say, 'Well, boss, I think we got it all.'"

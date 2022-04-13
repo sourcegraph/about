@@ -53,7 +53,7 @@ const FixingVulnerabilities: FunctionComponent = () => {
                 </div>
             </div>
 
-            <div className="bg-gradient-onahau-mint text-center">
+            <div className="bg-gradient-venus-saturated text-center">
                 <div className="container py-6 mw-650">
                     <h2 className="mb-4 font-weight-bold">
                         Cloudflare proves to auditors that its code isn't vulnerable

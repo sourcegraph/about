@@ -45,7 +45,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({
         <>
             <div className={`${kebabCase(customer)}-${className} ${className}`}>
                 <CaseStudyJumbotron
-                    className="bg-gradient-onahau-fog text-black height-md-450 height-auto p-2"
+                    className="bg-gradient-saturn-saturated text-black height-md-450 height-auto p-2"
                     customer={customer}
                     color="white"
                 >

@@ -222,7 +222,7 @@ const UseCasePage: FunctionComponent = () => (
                 </div>
                 <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
                     <div className="text-center">
-                        <TimerOutlineIcon className="mb-4" color="#00a1c7" size={40} />
+                        <TimerOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Reduce time to discovery and resolution</h4>
                         <p>
                             Find every instance of a vulnerability and start remediating in minutes instead of days or
@@ -230,7 +230,7 @@ const UseCasePage: FunctionComponent = () => (
                         </p>
                     </div>
                     <div className="mx-lg-7 text-center">
-                        <AutoFixIcon className="mb-4" color="#00a1c7" size={40} />
+                        <AutoFixIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
                         <p>
                             Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident
@@ -238,7 +238,7 @@ const UseCasePage: FunctionComponent = () => (
                         </p>
                     </div>
                     <div className="text-center">
-                        <ShieldAlertOutlineIcon className="mb-4" color="#00a1c7" size={40} />
+                        <ShieldAlertOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Alert for risky code changes & known vulnerabilities</h4>
                         <p>
                             Get on top of vulnerabilities by monitoring your repositories for commits when risky
@@ -249,7 +249,7 @@ const UseCasePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-blue-mist">
+        <div className="bg-gradient-venus-radial">
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
@@ -313,13 +313,13 @@ const UseCasePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-onahau-fog py-5">
+        <div className="bg-gradient-saturn-saturated py-5">
             <ContentSection>
                 <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} />
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray2">
+        <div className="bg-light-gray-4-3">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column">

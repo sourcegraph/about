@@ -10,10 +10,10 @@
         button {
             font-weight: 600;
             background-color: transparent;
-            color: $blue;
+            color: $blurple;
 
             &:hover {
-                color: $brand-primary-blue;
+                color: $blurple;
 
                 @media only screen and (max-width: 990px) {
                     color: unset;
