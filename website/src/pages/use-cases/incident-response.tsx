@@ -29,10 +29,11 @@ const items = [
                 header="Respond to incidents faster"
                 text={
                     <p>
-                        No heroics required: Quickly understand all the context and dependencies around
-                        your codebase with <Link to="/code-search">Code Search</Link> so you can find the
-                        root cause of an incident with confidence and speed. Document work in progress
-                        with <a href="https://docs.sourcegraph.com/notebooks">Notebooks</a> so teammates can get up to speed quickly.
+                        No heroics required: Quickly understand all the context and dependencies around your codebase
+                        with <Link to="/code-search">Code Search</Link> so you can find the root cause of an incident
+                        with confidence and speed. Document work in progress with{' '}
+                        <a href="https://docs.sourcegraph.com/notebooks">Notebooks</a> so teammates can get up to speed
+                        quickly.
                     </p>
                 }
             />
@@ -65,8 +66,8 @@ const items = [
                 text={
                     <p>
                         Visualize fixes in progress and track their deployment. With{' '}
-                        <Link to="/code-insights">Code Insights</Link>, get visibility
-                        into remediation efforts and share progress with team leaders and customers.
+                        <Link to="/code-insights">Code Insights</Link>, get visibility into remediation efforts and
+                        share progress with team leaders and customers.
                     </p>
                 }
             />
@@ -80,15 +81,15 @@ const items = [
                 header="Monitor for the introduction of unsafe code"
                 text={
                     <p>
-                        Close the loop on your incident response efforts. After finding the root cause,
-                        use <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a> to track whether similarly unsafe
-                        code is ever merged. Get alerts and stop incidents before they occur.
+                        Close the loop on your incident response efforts. After finding the root cause, use{' '}
+                        <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a> to track whether
+                        similarly unsafe code is ever merged. Get alerts and stop incidents before they occur.
                     </p>
                 }
             />
         ),
-        itemClass: 'd-none'
-    }, 
+        itemClass: 'd-none',
+    },
 ]
 
 const quoteCarouselItems = [
@@ -157,11 +158,12 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     <div className="row">
                         <div className="col-lg-7 mb-8 mt-7">
                             <BackButtonBold href="/use-cases" text="USE CASES" />
-                            <h1 className="display-2 font-weight-bold mb-4">Resolve incidents quickly and confidently</h1>
+                            <h1 className="display-2 font-weight-bold mb-4">
+                                Resolve incidents quickly and confidently
+                            </h1>
                             <div className="display-4 font-weight-normal mb-5">
-                                Identify the root cause of an incident, understand its potential impact
-                                on other services, and fix the issue everywhere in your codebase so
-                                it won't reoccur.
+                                Identify the root cause of an incident, understand its potential impact on other
+                                services, and fix the issue everywhere in your codebase so it won't reoccur.
                             </div>
                             <div className="d-flex flex-column flex-lg-row pt-1">
                                 <Link
@@ -197,26 +199,24 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         <CrosshairsGpsIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Assess incidents quickly</h4>
                         <p>
-                            Pinpoint the code responsible for the incident and find the root
-                            cause in your codebase. Understand the code's functionality to verify
-                            the issue.
+                            Pinpoint the code responsible for the incident and find the root cause in your codebase.
+                            Understand the code's functionality to verify the issue.
                         </p>
                     </div>
                     <div className="mx-lg-5 text-center mb-4">
                         <ClockTimeThreeOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Plan your remediation</h4>
                         <p>
-                            Reduce time to resolution by supplying response teams with actionable
-                            details, like links to all affected code.
+                            Reduce time to resolution by supplying response teams with actionable details, like links to
+                            all affected code.
                         </p>
                     </div>
                     <div className="text-center mb-4">
                         <WebIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Execute your plan globally</h4>
                         <p>
-                            Fix the root cause and confirm the same issue doesn't reoccur in other
-                            areas by locating the code pattern and automating fixes across your 
-                            entire codebase.
+                            Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the
+                            code pattern and automating fixes across your entire codebase.
                         </p>
                     </div>
                 </div>
