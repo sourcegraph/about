@@ -176,7 +176,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 </div>
                 <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
                     <div className="text-center">
-                        <MagnifyIcon className="mb-4" color="#00a1c7" size={40} />
+                        <MagnifyIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Find answers across all repositories</h4>
                         <p>
                             Codebases grow increasingly complex over time. Sourcegraph enables developers to search
@@ -184,7 +184,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="mx-lg-7 text-center">
-                        <UploadIcon className="mb-4" color="#00a1c7" size={40} />
+                        <UploadIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Share knowledge quickly with links to specific code</h4>
                         <p>
                             Knowledge sharing takes time. With Sourcegraph, developers can share links directly to
@@ -192,7 +192,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="text-center">
-                        <CompassOutlineIcon className="mb-4" color="#00a1c7" size={40} />
+                        <CompassOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Navigate and understand large codebases</h4>
                         <p>
                             Make new codebases approachable, not aggravating. Search across all your repositories in one
@@ -203,7 +203,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-blue-mist">
+        <div className="bg-gradient-venus-radial">
             <ContentSection className="my-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
@@ -253,7 +253,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-onahau-fog py-8">
+        <div className="bg-gradient-saturn-saturated py-8">
             <ContentSection>
                 <div className="d-flex flex-column justify-content-center text-center px-lg-8">
                     <BlockquoteWithLogoBottom
@@ -270,7 +270,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray2">
+        <div className="bg-light-gray-3">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column px-lg-7 text-center">

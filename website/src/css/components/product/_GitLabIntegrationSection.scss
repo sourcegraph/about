@@ -8,7 +8,7 @@
     }
 
     &__new-badge {
-        color: $light-11;
+        color: $light-gray-3;
         background-color: #dc3545;
         border: 1px solid transparent;
         padding: 0.15rem 0.75rem;
@@ -25,7 +25,7 @@
         font-size: 1.35rem;
 
         p {
-            border-left: 3px solid $brand-cyan;
+            border-left: 3px solid $sky-blue;
             padding-left: 1rem;
 
             text-indent: 0.4em;

@@ -40,10 +40,10 @@
             color: $white;
         }
         &.btn-outline-primary {
-            color: $blue;
+            color: $blurple;
 
             &:hover {
-                background-color: $blue;
+                background-color: $blurple;
                 color: $white;
             }
         }
@@ -51,7 +51,7 @@
 
     .right-nav {
         .nav-link.btn-simple {
-            color: $blue;
+            color: $blurple;
         }
         .nav-link.btn {
             font-weight: bold;
@@ -88,7 +88,7 @@
             font-weight: normal;
             &:hover {
                 color: $navbar-light-hover-color !important;
-                background-color: $nav-bg-color !important;
+                background-color: $white !important;
             }
         }
         /* Adjust dropdown arrow positioning */
@@ -125,5 +125,5 @@
 
 /* Hello bar */
 .background-purple {
-    background-color: $purple;
+    background-color: $blurple;
 }

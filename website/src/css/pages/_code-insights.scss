@@ -28,7 +28,7 @@
             &::before {
                 background-image: url('/code-insights/code-insights-page-bg.svg'),
                     // Fallback while the SVGs are loading
-                    radial-gradient(ellipse at bottom left, rgba($light-green2, 0.5), transparent);
+                    radial-gradient(ellipse at bottom left, rgba($green-mist, 0.5), transparent);
                 background-position: top left;
                 @media only screen and (max-width: 990px) {
                     transform: rotate(180deg);
@@ -70,7 +70,6 @@
             border-radius: 45%;
             padding: 1rem;
             background-color: $white;
-            color: $cyan-2;
         }
     }
 
@@ -88,13 +87,7 @@
     }
 
     .btn-link {
-        color: $brand-primary-blue;
         text-decoration: none;
-    }
-
-    .btn-primary {
-        color: $white;
-        background-color: $brand-primary-blue;
     }
 
     .tab-section {
@@ -146,7 +139,7 @@
             font-size: 1.5rem;
             line-height: 1.4rem;
             cursor: pointer;
-            color: $sg-space-black;
+            color: $space-black;
             display: block;
             margin: 10px 0 10px 10px;
             font-size: 18px;

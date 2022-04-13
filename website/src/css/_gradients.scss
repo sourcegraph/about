@@ -1,91 +1,94 @@
 @use 'sass:color';
 @import '@styles/colors';
 
-@mixin BgGradientPrimary {
-    background-image: radial-gradient(circle at 50% 0px, $blue-7, darken($blue, 9%));
-}
-@mixin BgGradientGreenBlue {
-    background: linear-gradient(90deg, $light-green 0%, $light-blue 100%);
-}
-@mixin BgGradientBlueGreen {
-    background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
-}
-@mixin BgGradientOnahauMint {
+/**
+ * Sourcegraph Brand Gradients
+ * See: https://handbook.sourcegraph.com/departments/marketing/brand/brand_guidelines/color/#gradients
+ */
+
+/**
+ * Sourcegraph Gradients
+ * Note: These are slightly adjusted and not true to the Brand Guidelines
+ * due to following Figma designs provided.
+ */
+@mixin GradientVenusSaturated {
     background: linear-gradient(
         90deg,
-        color.adjust($brand-onahau, $alpha: -0.7) 14.33%,
-        color.adjust($brand-mint, $alpha: -0.7) 81.79%
+        color.adjust($blue-mist, $alpha: -0.7) 14.33%,
+        color.adjust($mint, $alpha: -0.7) 81.79%
     );
 }
-@mixin BgGradientOnahauFog {
-    background: linear-gradient(
-        90deg,
-        color.adjust($brand-onahau, $alpha: -0.7) 14.33%,
-        color.adjust($brand-fog, $alpha: -0.7) 81.79%
-    );
-}
-@mixin BgGradientBluePurple {
-    background: linear-gradient(90deg, $light-blue 0%, $brand-fog 100%);
-}
-@mixin BgGradientPurpleYellow {
-    background: linear-gradient(90deg, $brand-fog 0%, $light-yellow 100%);
-}
-@mixin BgGradientFogBlue2 {
-    background: linear-gradient(90deg, $brand-fog 0%, $light-blue2 100%);
-}
-@mixin BgGradientYellowGreen2 {
-    background: linear-gradient(90deg, $light-yellow 0%, $light-green2 100%);
-}
-@mixin BgGradientGreen2Red {
-    background: linear-gradient(90deg, $light-green 0%, $light-red 100%);
-}
-@mixin BgGradientRedBlue2 {
-    background: linear-gradient(90deg, $light-red 0%, $light-blue2 100%);
-}
-@mixin BgGradientBlue2Blue {
-    background: linear-gradient(90deg, $light-blue2 0%, $light-blue 100%);
-}
-@mixin BgGradientBlueMist {
+@mixin GradientVenusRadial {
     background: radial-gradient(ellipse at top left, rgba($blue-mist, 0.5), transparent),
-        radial-gradient(ellipse at bottom right, rgba($light-green2, 0.5), transparent);
+        radial-gradient(ellipse at bottom right, rgba($green-mist, 0.5), transparent);
+}
+@mixin GradientSaturnSaturated {
+    background: linear-gradient(
+        90deg,
+        color.adjust($blue-mist, $alpha: -0.7) 14.33%,
+        color.adjust($violet-mist, $alpha: -0.7) 81.79%
+    );
 }
 
-.bg-gradient-primary {
-    @include BgGradientPrimary;
+// Gradients not listed in our Brand Guidelines
+@mixin GradientGreenBlue {
+    background: linear-gradient(90deg, $light-green 0%, $light-blue 100%);
 }
+@mixin GradientBlueGreen {
+    background: linear-gradient(90deg, $light-blue 0%, $light-green 100%);
+}
+@mixin GradientBlueVioletMist {
+    background: linear-gradient(90deg, $light-blue 0%, $violet-mist 100%);
+}
+@mixin GradientVioletYellowMist {
+    background: linear-gradient(90deg, $violet-mist 0%, $yellow-mist 100%);
+}
+@mixin GradientYellowGreenMist {
+    background: linear-gradient(90deg, $yellow-mist 0%, $green-mist 100%);
+}
+@mixin GradientGreenRedMist {
+    background: linear-gradient(90deg, $light-green 0%, $red-mist 100%);
+}
+@mixin GradientRedPlumMist {
+    background: linear-gradient(90deg, $red-mist 0%, $plum-mist 100%);
+}
+@mixin GradientPlumMistBlue {
+    background: linear-gradient(90deg, $plum-mist 0%, $light-blue 100%);
+}
+
+// Sourcegraph Gradients - utility classes
+.bg-gradient-venus-saturated {
+    @include GradientVenusSaturated;
+}
+.bg-gradient-venus-radial {
+    @include GradientVenusRadial;
+}
+.bg-gradient-saturn-saturated {
+    @include GradientSaturnSaturated;
+}
+
+// Gradients not listed in our Brand Guidelines - utility classes
 .bg-gradient-green-blue {
-    @include BgGradientGreenBlue;
+    @include GradientGreenBlue;
 }
 .bg-gradient-blue-green {
-    @include BgGradientBlueGreen;
+    @include GradientBlueGreen;
 }
-.bg-gradient-onahau-mint {
-    @include BgGradientOnahauMint;
+.bg-gradient-blue-violet-mist {
+    @include GradientBlueVioletMist;
 }
-.bg-gradient-onahau-fog {
-    @include BgGradientOnahauFog;
+.bg-gradient-violet-yellow-mist {
+    @include GradientVioletYellowMist;
 }
-.bg-gradient-blue-purple {
-    @include BgGradientBluePurple;
+.bg-gradient-yellow-green-mist {
+    @include GradientYellowGreenMist;
 }
-.bg-gradient-purple-yellow {
-    @include BgGradientPurpleYellow;
+.bg-gradient-green-red-mist {
+    @include GradientGreenRedMist;
 }
-.bg-gradient-fog-blue2 {
-    @include BgGradientFogBlue2;
+.bg-gradient-red-plum-mist {
+    @include GradientRedPlumMist;
 }
-.bg-gradient-yellow-green2 {
-    @include BgGradientYellowGreen2;
-}
-.bg-gradient-green2-red {
-    @include BgGradientGreen2Red;
-}
-.bg-gradient-red-blue2 {
-    @include BgGradientRedBlue2;
-}
-.bg-gradient-blue2-blue {
-    @include BgGradientBlue2Blue;
-}
-.bg-gradient-blue-mist {
-    @include BgGradientBlueMist;
+.bg-gradient-plum-mist-blue {
+    @include GradientPlumMistBlue;
 }

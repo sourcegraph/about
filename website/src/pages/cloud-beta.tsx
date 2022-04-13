@@ -15,14 +15,14 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        backgroundClass: 'bg-gradient-blue-purple',
+        backgroundClass: 'bg-gradient-blue-violet-mist',
         buttonLabel: 'Accelerate velocity',
         text: 'Streamline collaboration across teams, even while apart: find and reuse code, search for best practices for unfamiliar libraries or APIs, share links to code with teammates, and catch more bugs through better code reviews—and fix them faster, too.',
         headerClass: '',
         itemClass: 'd-none',
     },
     {
-        backgroundClass: 'bg-gradient-purple-yellow',
+        backgroundClass: 'bg-gradient-violet-yellow-mist',
         buttonLabel: 'Mitigate risks',
         text: 'Identify and mitigate issues across your entire codebase: monitor the introduction of vulnerable dependencies, hunt down outdated practices and patterns, and reduce the time it takes to search for bugs and security concerns.',
         headerClass: '',
@@ -71,7 +71,7 @@ export const CloudBetaPage: React.FunctionComponent<PageProps> = props => (
             </div>
         }
     >
-        <ContentSection className="py-4 py-md-7 bg-light-gray">
+        <ContentSection className="py-4 py-md-7 bg-light-gray-4">
             <div className="row">
                 <div className="col-lg-12">
                     <div className="container video-embed embed-responsive embed-responsive-16by9 border">

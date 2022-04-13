@@ -58,7 +58,7 @@ const CareersPage = props => {
                 <ContentSection className="hero-section">
                     <div className="row">
                         <div className="col-lg-10">
-                            <h1 className="display-2 title">Let’s build the future together.</h1>
+                            <h1 className="display-2 title">Let's build the future together.</h1>
                             <h1 className="display-2 font-weight-normal">
                                 We're developing the world's most advanced code search navigation platform with
                                 brilliant dreamers around the globe.
@@ -88,7 +88,7 @@ const CareersPage = props => {
                                 Happy, healthy, and always in the flow.
                             </h2>
                             <p className="col-lg-6 text-center mx-auto">
-                                Our Teammates are our most valuable resource. That’s why we provide total rewards that
+                                Our Teammates are our most valuable resource. That's why we provide total rewards that
                                 are highly competitive and allow you to thrive both personally and professionally.
                             </p>
                             <p className="text-center mt-3">
@@ -154,11 +154,11 @@ const CareersPage = props => {
                 </div>
 
                 <Carousel className="culture-carousel">
-                    <Carousel.Item className="bg-gradient-blue-purple">
+                    <Carousel.Item className="bg-gradient-blue-violet-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
-                                    Just because we’re remote doesn’t mean we’re apart <br />
+                                    Just because we're remote doesn't mean we're apart <br />
                                     #life-at-sourcegraph
                                 </p>
                             </h1>
@@ -167,11 +167,11 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-purple-yellow">
+                    <Carousel.Item className="bg-gradient-violet-yellow-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
-                                    We’re moving <i>fast</i> to create a world in which everyone can code
+                                    We're moving <i>fast</i> to create a world in which everyone can code
                                 </p>
                             </h1>
                             <div className="col-lg-6 img-container">
@@ -179,7 +179,7 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-yellow-green2">
+                    <Carousel.Item className="bg-gradient-yellow-green-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
@@ -192,7 +192,7 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-green2-red">
+                    <Carousel.Item className="bg-gradient-green-red-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>
@@ -205,7 +205,7 @@ const CareersPage = props => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-red-blue2">
+                    <Carousel.Item className="bg-gradient-red-plum-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
                                 <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
@@ -311,7 +311,7 @@ const CareersPage = props => {
                     </Carousel.Item>
                 </Carousel>
 
-                <div className="bg-gradient-onahau-fog py-8">
+                <div className="bg-gradient-saturn-saturated py-8">
                     <ContentSection>
                         <QuoteCarousel items={glassdoorReviewItems} autoAdvance={true} />
                     </ContentSection>

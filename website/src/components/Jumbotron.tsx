@@ -3,7 +3,7 @@ import React from 'react'
 export const COLORS = {
     white: '',
     dark: 'bg-black text-light',
-    purple: 'bg-purple text-light',
+    purple: 'bg-vivid-violet text-light',
 }
 
 export const Jumbotron: React.FunctionComponent<{
