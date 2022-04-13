@@ -1,8 +1,9 @@
+import React, { FunctionComponent, ReactNode } from 'react'
+
 import { Link, PageProps } from 'gatsby'
+import CrosshairsGpsIcon from 'mdi-react/CrosshairsGpsIcon'
 import ClockTimeThreeOutlineIcon from 'mdi-react/ClockTimeThreeOutlineIcon'
 import WebIcon from 'mdi-react/WebIcon'
-import CrosshairsGpsIcon from 'mdi-react/CrosshairsGpsIcon'
-import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
 import { BackButtonBold } from '../../components/BackButton'
@@ -47,7 +48,7 @@ const items = [
                 header="Limit the impact of incidents"
                 text={
                     <p>
-                        Automate the deployment of fixes everywhere and at scale. With {' '}
+                        Automate the deployment of fixes everywhere and at scale. With{' '}
                         <Link to="/batch-changes">Batch Changes</Link>, you can automate code changes and monitor 
                         the merge status of each resulting PR. Refactor code to replace insecure functions, update 
                         vulnerable packages, or modify container configurations across hundreds of repositories.
@@ -103,7 +104,7 @@ const quoteCarouselItems = [
     },
     {    
         header: 'Nutanix proves the Log4j vulnerability no longer affects its codebase',
-        quote: `"Isn't it nice when you can just run a report and say, 'Here it is' or 'Here it isn't?' Much better than having to say, 'Well, boss, I think we got it all.'"`,
+        quote: `Isn't it nice when you can just run a report and say, 'Here it is' or 'Here it isn't?' Much better than having to say, 'Well, boss, I think we got it all.'`,
         by: 'Jon Kohler, Technical Director of Solution Engineering, Nutanix',
         logoImage: '/external-logos/nutanix-logo.svg',
         linkText: 'Read the case study',
@@ -124,7 +125,7 @@ const blogListItems = [
     {
         title: `The real weakest link in software supply chain security (it's not open source)`,
         description:
-            'Using open source code can jump-start development but it can also expose you to security vulnerabilities. In this post, learn how to design an effective vulnerability management process that can make dependencies visibile and mitigation less time-consuming.',
+            'Using open source code can jump-start development but it can also expose you to security vulnerabilities. In this post, learn how to design an effective vulnerability management process that can make dependencies visible and mitigation less time-consuming.',
         type: 'Blog post',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png',
         href: '/blog/real-weakest-link-in-software-supply-chain-security',
@@ -132,7 +133,7 @@ const blogListItems = [
     {
         title: 'How to remove secrets from your codebase',
         description:
-            `Back in early 2021, Sourcegraph stored infrastructure and service passwords in private repositories. Security engineer André Eleuterio moved every secret to a secure vault and used code search to ensure the move was successful and complete.`,
+            'Back in early 2021, Sourcegraph stored infrastructure and service passwords in private repositories. Security engineer André Eleuterio moved every secret to a secure vault and used code search to ensure the move was successful and complete.',
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
         href: '/blog/eliminate-secrets-from-codebase-with-universal-code-search',
@@ -143,9 +144,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Find and fix security vulnerabilities',
+            title: 'Incident Response | Sourcegraph',
             description:
-                'Search across all your repositories to find and resolve vulnerabilities in minutes, not days.',
+                'Identify the root cause of an incident, understand its potential impact, fix the issue everywhere in your codebase. Incident response from Sourcegraph.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
         className="use-cases-page"
@@ -188,13 +189,13 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection className="my-lg-5">
             <div className="row mx-lg-0 mx-4">
                 <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold w-75 px-lg-7">
+                    <h1 className="text-center font-weight-bold w-100 px-lg-8">
                         Identify the root cause of an incident and fix it everywhere, fast
                     </h1>
                 </div>
                 <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
-                    <div className="mx-3 text-center">
-                        <CrosshairsGpsIcon className="mb-4" color="#00a1c7" size={40} />
+                    <div className="text-center mb-4">
+                        <CrosshairsGpsIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Assess incidents quickly</h4>
                         <p>
                             Pinpoint the code responsible for the incident and find the root
@@ -202,16 +203,16 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             the issue.
                         </p>
                     </div>
-                    <div className="mx-3 text-center">
-                        <ClockTimeThreeOutlineIcon className="mb-4" color="#00a1c7" size={40} />
+                    <div className="mx-lg-5 text-center mb-4">
+                        <ClockTimeThreeOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Plan your remediation</h4>
                         <p>
                             Reduce time to resolution by supplying response teams with actionable
                             details, like links to all affected code.
                         </p>
                     </div>
-                    <div className="mx-3 text-center">
-                        <WebIcon className="mb-4" color="#00a1c7" size={40} />
+                    <div className="text-center mb-4">
+                        <WebIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Execute your plan globally</h4>
                         <p>
                             Fix the root cause and confirm the same issue doesn't reoccur in other
@@ -223,50 +224,49 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-blue-mist">
+        <div className="bg-gradient-venus-radial">
             <ContentSection className="my-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 font-weight-bold max-w-400">
-                            Identifying & resolving security vulnerabilities is painful
+                        <h1 className="mb-4 font-weight-bold max-w-500">
+                            Incident response is stressful and overwhelming
                         </h1>
                         <p>
-                            Existing tooling doesn't enable teams to be agile and effective when responding to security
-                            vulnerabilities. What does that mean for you?
+                            Current tools don't enable teams to quickly get to the root cause of an incident
+                            and ensure it doesn't reoccur. <strong>What does that mean for you?</strong>
                         </p>
                         <ul>
-                            <li>Finding vulnerabilities scattered across codebases takes extra time and resources.</li>
-                            <li>
-                                Following dependencies across your codebase is inefficient with IDEs that aren't
-                                connected to all code or up to date.
+                            <li className="mt-1">Outages and degraded performance persist while development teams look for causes,
+                                leading to lost revenue and frustrated customers.
                             </li>
-                            <li>
-                                Whether you're making changes to 50 or 5,000 repositories, tracking and managing PRs to
-                                completion is a manual and spreadsheet-heavy process.
+                            <li className="mt-1">
+                                Incidents can reoccur if developers can't find the root cause, leaving your company
+                                with a reputation for unreliability and missed SLAs.
                             </li>
-                            <li>
-                                The vulnerability management and remediation process remains cumbersome, unclear, and
-                                stressful for all involved.
+                            <li className="mt-1">
+                                Incident response often relies on knowledge silos, which are neither scalable 
+                                nor sustainable.
+                            </li>
+                            <li className="mt-1">
+                                Company leaders struggle for visibility into incident response in progress and to
+                                communicate timelines to stakeholders.
                             </li>
                         </ul>
                     </div>
                     <div className="col-lg-5">
                         <div className="bg-white p-5 mt-lg-0 mt-5">
-                            <h4>Log4j was the tip of the iceberg</h4>
+                            <h4>Cloudflare quickly addresses root-cause incidents</h4>
                             <p>
-                                Log4j is a prime example of how challenging it is to create a cohesive response across
-                                multiple teams in an org.
+                                Cloudflare engineers use Sourcegraph's code intelligence platform to refactor and
+                                debug faster. With Sourcegraph, they can quickly identify out-of-date code libraries
+                                by only searching certain repositories while excluding specific file types. And it's
+                                easier to search for error logs. As a result, the team can feel confident they've
+                                addressed each issue.
                             </p>
-                            <p>
-                                Sourcegraph enables companies like Nutanix to completely remediate Log4j vulnerabilities
-                                across multiple build and artifact management systems, as well as a large monorepo with
-                                many component branches and hundreds of git repositories, in under four days, and with
-                                100% certainty.
-                            </p>
-                            <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
-                            <Link className="font-weight-bold" to="/blog/log4j-log4shell-0-day">
-                                Read the blog post.
+                            <Link className="font-weight-bold" to="/case-studies/cloudflare-accelerates-debugging-and-improves-security">
+                                Read the Cloudflare case study
                             </Link>
+                            <img src="/external-logos/cloudflare-color-logo.svg" className="d-block max-w-150 mt-3"/>
                         </div>
                     </div>
                 </div>
@@ -284,17 +284,17 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-onahau-fog py-8">
+        <div className="bg-gradient-saturn-saturated py-8">
             <ContentSection>
                 <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} />
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray2">
+        <div className="bg-light-gray-3">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column">
-                        <h1 className="font-weight-bold text-center">Get started with Sourcegraph</h1>
+                        <h1 className="font-weight-bold text-left text-lg-center">Get started with Sourcegraph</h1>
                         <p>Respond to incidents with confidence and speed, and remediate issues at their root to ensure they don't reoccur.</p>
                     </div>
                     <div className="d-flex flex-column">
@@ -323,7 +323,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <ContentSection>
         <div className="d-flex flex-wrap justify-content-center text-center">
-                <h2 className="w-100 font-weight-bold mb-4">Respond to incidents faster and more effectively.</h2>
+                <h2 className="w-100 font-weight-bold mb-4 mx-4 mx-lg-0">Respond to incidents faster and more effectively.</h2>
                 <Link to="/get-started" className="btn btn-primary">
                     Ready to get started?
                 </Link>
