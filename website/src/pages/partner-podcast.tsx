@@ -79,7 +79,7 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
         >
             <div className="bg-gradient-saturn-radial py-md-8 py-6">
                 <section className="container max-w-900">
-                    <h1 className="display-2 font-weight-bold max-w-600">
+                    <h1 className="display-1 font-weight-bold max-w-800">
                         Accelerate engineering velocity with Sourcegraph
                     </h1>
                     <h5 className="py-4 font-weight-normal">
@@ -124,7 +124,7 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                 </section>
             </div>
 
-            <div className="container max-w-900 my-md-8 my-6">
+            <div className="container max-w-900 my-md-8 my-6 px-0">
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>
                 </div>

@@ -21,6 +21,8 @@ export const BlogListItem: FunctionComponent<Props> = ({ blog }) => (
             <p className="text-muted">{blog.type}</p>
             <p>{blog.description}</p>
         </div>
-        <div className="col-lg-3">{blog.image && <img className="flex-1 blog-post__image" src={blog.image} />}</div>
+        <div className="col-lg-3">
+            {blog.image && <img className="flex-1 blog-post__image max-w-md-250" src={blog.image} />}
+        </div>
     </div>
 )
