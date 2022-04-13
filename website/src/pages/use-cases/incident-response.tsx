@@ -49,8 +49,8 @@ const items = [
                 text={
                     <p>
                         Automate the deployment of fixes everywhere and at scale. With{' '}
-                        <Link to="/batch-changes">Batch Changes</Link>, you can automate code changes and monitor
-                        the merge status of each resulting PR. Refactor code to replace insecure functions, update
+                        <Link to="/batch-changes">Batch Changes</Link>, you can automate code changes and monitor the
+                        merge status of each resulting PR. Refactor code to replace insecure functions, update
                         vulnerable packages, or modify container configurations across hundreds of repositories.
                     </p>
                 }
@@ -231,20 +231,21 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             Incident response is stressful and overwhelming
                         </h1>
                         <p>
-                            Current tools don't enable teams to quickly get to the root cause of an incident
-                            and ensure it doesn't reoccur. <strong>What does that mean for you?</strong>
+                            Current tools don't enable teams to quickly get to the root cause of an incident and ensure
+                            it doesn't reoccur. <strong>What does that mean for you?</strong>
                         </p>
                         <ul>
-                            <li className="mt-1">Outages and degraded performance persist while development teams look for causes,
+                            <li className="mt-1">
+                                Outages and degraded performance persist while development teams look for causes,
                                 leading to lost revenue and frustrated customers.
                             </li>
                             <li className="mt-1">
-                                Incidents can reoccur if developers can't find the root cause, leaving your company
-                                with a reputation for unreliability and missed SLAs.
+                                Incidents can reoccur if developers can't find the root cause, leaving your company with
+                                a reputation for unreliability and missed SLAs.
                             </li>
                             <li className="mt-1">
-                                Incident response often relies on knowledge silos, which are neither scalable
-                                nor sustainable.
+                                Incident response often relies on knowledge silos, which are neither scalable nor
+                                sustainable.
                             </li>
                             <li className="mt-1">
                                 Company leaders struggle for visibility into incident response in progress and to
@@ -256,16 +257,19 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         <div className="bg-white p-5 mt-lg-0 mt-5">
                             <h4>Cloudflare quickly addresses root-cause incidents</h4>
                             <p>
-                                Cloudflare engineers use Sourcegraph's code intelligence platform to refactor and
-                                debug faster. With Sourcegraph, they can quickly identify out-of-date code libraries
-                                by only searching certain repositories while excluding specific file types. And it's
-                                easier to search for error logs. As a result, the team can feel confident they've
-                                addressed each issue.
+                                Cloudflare engineers use Sourcegraph's code intelligence platform to refactor and debug
+                                faster. With Sourcegraph, they can quickly identify out-of-date code libraries by only
+                                searching certain repositories while excluding specific file types. And it's easier to
+                                search for error logs. As a result, the team can feel confident they've addressed each
+                                issue.
                             </p>
-                            <Link className="font-weight-bold" to="/case-studies/cloudflare-accelerates-debugging-and-improves-security">
+                            <Link
+                                className="font-weight-bold"
+                                to="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
+                            >
                                 Read the Cloudflare case study
                             </Link>
-                            <img src="/external-logos/cloudflare-color-logo.svg" className="d-block max-w-150 mt-3"/>
+                            <img src="/external-logos/cloudflare-color-logo.svg" className="d-block max-w-150 mt-3" />
                         </div>
                     </div>
                 </div>
@@ -294,7 +298,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column">
                         <h1 className="font-weight-bold text-left text-lg-center">Get started with Sourcegraph</h1>
-                        <p>Respond to incidents with confidence and speed, and remediate issues at their root to ensure they don't reoccur.</p>
+                        <p>
+                            Respond to incidents with confidence and speed, and remediate issues at their root to ensure
+                            they don't reoccur.
+                        </p>
                     </div>
                     <div className="d-flex flex-column">
                         <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
@@ -321,8 +328,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         </ContentSection>
 
         <ContentSection>
-        <div className="d-flex flex-wrap justify-content-center text-center">
-                <h2 className="w-100 font-weight-bold mb-4 mx-4 mx-lg-0">Respond to incidents faster and more effectively.</h2>
+            <div className="d-flex flex-wrap justify-content-center text-center">
+                <h2 className="w-100 font-weight-bold mb-4 mx-4 mx-lg-0">
+                    Respond to incidents faster and more effectively.
+                </h2>
                 <Link to="/get-started" className="btn btn-primary">
                     Ready to get started?
                 </Link>
