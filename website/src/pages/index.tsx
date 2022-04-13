@@ -1,9 +1,7 @@
-import React, { FunctionComponent } from 'react'
-
+import React, { FunctionComponent, useEffect, useState } from 'react'
 import { Link, PageProps } from 'gatsby'
 
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../components/Layout'
 import { ContentSection } from '../components/content/ContentSection'
@@ -12,60 +10,71 @@ import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogo
 import { SelfHostedSection } from '../components/SelfHostedSection'
 import { buttonStyle, buttonLocation } from '../tracking'
 
-const Index: FunctionComponent<PageProps> = props => (
-    <Layout
-        location={props.location}
-        meta={{
-            title: 'Sourcegraph | Code Intelligence Platform',
-            description:
-                'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Soucegraph.',
-        }}
-    >
-        <div className="home">
-            <div className="home__hero mb-6">
-                <div className="home__intro container">
-                    <div className="row">
-                        <div className="col mt-6 mb-6 mb-lg-0 text-center">
-                            <h1 className="display-1 font-weight-bold mb-0">Universal Code Search</h1>
-                            <h2 className="display-2 mb-0">Move fast, even in big codebases.</h2>
-                            <p className="my-5 col-9 mx-auto">
-                                Find and fix things across all of your code faster with Sourcegraph. Onboard to a new
-                                codebase, make large-scale refactors, promote code reuse, increase efficiency, address
-                                security risks, root-cause incidents, and more.
-                            </p>
-                            <div className="pt-1">
-                                <Link
-                                    className="btn btn-primary m-3"
-                                    to="/get-started"
-                                    title="Get started"
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Get started <ArrowRightIcon className="ml-1" />
-                                </Link>
-                                <Link
-                                    className="btn btn-outline-primary m-3"
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                    to="/demo"
-                                    title="Request a demo"
-                                >
-                                    Request a demo <ArrowRightIcon className="ml-1" />
-                                </Link>
-                            </div>
-                            <p className="my-3 col-9 mx-auto">
-                                Product or installation questions?{' '}
-                                <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
-                                    Talk to an expert
-                                </a>
-                                .
-                            </p>
-                        </div>
-                    </div>
-                </div>
+const Index: FunctionComponent<PageProps> = props => {
+
+    const headlines: string[] = [
+        'Understand and search',
+        'Fix vulnerabilities and issues',
+        'Automate key workflows'
+    ]
+    const [ headlineIndex, setHeadlineIndex ] = useState(0)
+    const [ headline, setHeadline ] = useState(headlines[0])
+
+    useEffect(() => {
+        const cycle = setInterval(() => {        
+            const newIndex = headlineIndex === headlines.length - 1 ? 0 : headlineIndex + 1
+
+            setHeadline(headlines[newIndex])
+            setHeadlineIndex(newIndex)
+        }, 5000)
+
+        return () => clearInterval(cycle)
+    })
+
+    return (
+        <Layout
+            location={props.location}
+            meta={{
+                title: 'Sourcegraph | Code Intelligence Platform',
+                description: 'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Soucegraph.',
+            }}
+        >
+            <div className="hero">
+                <h1><span>{headline}</span> across your entire codebase</h1>
+                <p>Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.</p>
+
+                <Link
+                    className="btn btn-primary"
+                    to="/get-started"
+                    title="Get started"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.hero}
+                    data-button-type="cta"
+                >
+                    Get started
+                </Link>
+
+                <Link
+                    className="btn btn-outline-primary"
+                    to="/demo"
+                    title="Request a demo"
+                    data-button-style={buttonStyle.outline}
+                    data-button-location={buttonLocation.hero}
+                    data-button-type="cta"
+                >
+                    Request a demo
+                </Link>
+
+                <p className="my-3 col-9 mx-auto">
+                    Product or installation questions?{' '}
+                    <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
+                        Talk to an expert
+                    </a>
+                    .
+                </p>
             </div>
+
+
             <CustomerLogosSectionAnimated showButton={true} showSection={true} className="pt-5" />
             <ContentSection className="pt-6 mt-3 d-none d-sm-block">
                 <div className="home__screenshot"></div>
@@ -83,7 +92,7 @@ const Index: FunctionComponent<PageProps> = props => (
                             <code className="border rounded px-1">repo:frontend</code>, and more. Stop{' '}
                             <code className="border rounded px-1">grep</code>'ing your stale local clones and fighting
                             with your code host's search to match &ldquo;special&rdquo; characters like{' '}
-                            <code className="border rounded px-1 text-nowrap">.:=(){}</code>.
+                            <code className="border rounded px-1 text-nowrap">.:=()</code>.
                         </p>
                         <div className="pt-1">
                             <a className="d-flex align-items-center" href="https://docs.sourcegraph.com/code_search">
@@ -95,8 +104,7 @@ const Index: FunctionComponent<PageProps> = props => (
                         <img
                             src="/code-search-illustrated.svg"
                             className="home__diagram w-150"
-                            alt="Code search across multiple code hosts, including GitHub, GitLab, BitBucket, and Azure"
-                        />
+                            alt="Code search across multiple code hosts, including GitHub, GitLab, BitBucket, and Azure" />
                     </div>
                 </div>
             </ContentSection>
@@ -305,8 +313,8 @@ const Index: FunctionComponent<PageProps> = props => (
             </ContentSection>
 
             <SelfHostedSection />
-        </div>
-    </Layout>
-)
+        </Layout>
+    )
+}
 
 export default Index
