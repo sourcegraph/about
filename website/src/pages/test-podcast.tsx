@@ -71,17 +71,17 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                     'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
             }}
         >
-            <div className="bg-gradient-fog-onahau py-md-8 py-6">
+            <div className="bg-gradient-saturn-radial py-md-8 py-6">
                 <section className="container">
                     <h1 className="display-2 font-weight-bold max-w-600">
                         Accelerate engineering velocity with Sourcegraph
                     </h1>
                     <p className="py-4">See why over 1.2M engineers use Sourcegraph to build software you rely on</p>
                     <div className="d-flex flex-column flex-md-row">
-                        <Link to="/demo" className="btn btn-purple max-w-200">
+                        <Link to="/demo" className="btn btn-primary max-w-200">
                             Request a demo
                         </Link>
-                        <Link to="/get-started" className="btn btn-outline-purple max-w-150 ml-md-4 mt-4 mt-md-0">
+                        <Link to="/get-started" className="btn btn-outline-primary max-w-150 ml-md-4 mt-4 mt-md-0">
                             Get started
                         </Link>
                     </div>
@@ -100,7 +100,7 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                 </div>
             </div>
 
-            <div className="bg-gradient-onahau-green py-6">
+            <div className="bg-gradient-venus-extra-saturated py-6">
                 <section className="container text-center">
                     <h1 className="display-4 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
                     <p className="pt-4 mx-auto max-w-500">
@@ -125,13 +125,13 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                 ))}
             </div>
 
-            <div className="py-5 d-flex flex-md-row flex-column align-items-center justify-content-center bg-purple text-white font-weight-bold">
+            <div className="py-5 d-flex flex-md-row flex-column align-items-center justify-content-center bg-primary text-white font-weight-bold">
                 <p className="max-w-200 max-w-md-400 text-center my-auto pr-md-4">
                     Looking for our changelog? Look no further
                 </p>
                 <a
                     href="https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
-                    className="rounded btn btn-outline-purple mt-md-0 mt-3"
+                    className="rounded btn btn-primary border-white mt-md-0 mt-3"
                 >
                     Changelog
                 </a>

@@ -104,9 +104,9 @@ export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy }> = ({ s
         {study.altTitle && <h5 className="font-weight-bold">{study.altTitle}</h5>}
         <p className="card-text">
             {study.title}{' '}
-            <span>
+            <span className="text-nowrap">
                 {study.external ? (
-                    <a href={study.url} className="card-link" target="_blank" rel="nofollow noopener">
+                    <a href={study.url} target="_blank" rel="nofollow noopener">
                         Learn more.
                     </a>
                 ) : (
