@@ -1,9 +1,8 @@
-import React, { FunctionComponent, ReactNode } from 'react'
-
 import { Link, PageProps } from 'gatsby'
 import CrosshairsGpsIcon from 'mdi-react/CrosshairsGpsIcon'
 import ClockTimeThreeOutlineIcon from 'mdi-react/ClockTimeThreeOutlineIcon'
 import WebIcon from 'mdi-react/WebIcon'
+import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
 import { BackButtonBold } from '../../components/BackButton'
@@ -49,8 +48,8 @@ const items = [
                 text={
                     <p>
                         Automate the deployment of fixes everywhere and at scale. With{' '}
-                        <Link to="/batch-changes">Batch Changes</Link>, you can automate code changes and monitor 
-                        the merge status of each resulting PR. Refactor code to replace insecure functions, update 
+                        <Link to="/batch-changes">Batch Changes</Link>, you can automate code changes and monitor
+                        the merge status of each resulting PR. Refactor code to replace insecure functions, update
                         vulnerable packages, or modify container configurations across hundreds of repositories.
                     </p>
                 }
@@ -102,7 +101,7 @@ const quoteCarouselItems = [
         link: '/case-studies/quantcast-large-scale-refactoring',
         logoAlt: 'Quantcast',
     },
-    {    
+    {
         header: 'Nutanix proves the Log4j vulnerability no longer affects its codebase',
         quote: `Isn't it nice when you can just run a report and say, 'Here it is' or 'Here it isn't?' Much better than having to say, 'Well, boss, I think we got it all.'`,
         by: 'Jon Kohler, Technical Director of Solution Engineering, Nutanix',
@@ -244,7 +243,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                 with a reputation for unreliability and missed SLAs.
                             </li>
                             <li className="mt-1">
-                                Incident response often relies on knowledge silos, which are neither scalable 
+                                Incident response often relies on knowledge silos, which are neither scalable
                                 nor sustainable.
                             </li>
                             <li className="mt-1">
