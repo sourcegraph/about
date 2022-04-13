@@ -1,78 +1,49 @@
-import * as React from 'react'
-import { Helmet } from 'react-helmet'
-import { createHubSpotForm } from '../../components/HubSpot'
+import React, { FunctionComponent } from 'react'
+import { PageProps } from 'gatsby'
+
 import Layout from '../../components/Layout'
 import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
+import { useHubSpot } from '../../hooks/hubSpot'
 
 const title = 'Sourcegraph - Talk to a product specialist'
-const desc = 'Talk to a Sourcegraph product specialist. Let us know how we can help.'
+const description = 'Talk to a Sourcegraph product specialist. Let us know how we can help.'
 
-export default class SalesPage extends React.Component<any, any> {
-    constructor(props: any) {
-        super(props)
-        this.state = {
-            events: [],
-        }
-    }
+const Contact: FunctionComponent<PageProps> = props => {
+    useHubSpot({
+        portalId: '2762526',
+        formId: '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9',
+        targetId: 'hubspotContactForm',
+        chiliPiper: true,
+    })
 
-    public componentDidMount(): void {
-        createHubSpotForm({
-            portalId: '2762526',
-            formId: '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9',
-            targetId: 'hubspotContactForm',
-        })
-        if (document) {
-            document.getElementsByTagName('body')[0].setAttribute('style', 'background-image:none;')
-        }
-
-        // Chili Piper script
-        const cpTenantDomain = 'sourcegraph'
-        const cpRouterName = 'contact-sales'
-        window.addEventListener('message', event => {
-            if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
-                var lead = event.data.data.reduce((obj, item) => Object.assign(obj, { [item.name]: item.value }), {})
-                console.log(lead)
-                ChiliPiper.submit(cpTenantDomain, cpRouterName, {
-                    map: true,
-                    lead: lead,
-                })
-            }
-        })
-    }
-
-    public render(): JSX.Element | null {
-        return (
-            <Layout className="pt-0" location={this.props.location} minimal={true}>
-                <Helmet>
-                    <title>{title}</title>
-                    <meta name="twitter:title" content={title} />
-                    <meta property="og:title" content={title} />
-                    <meta name="twitter:description" content={desc} />
-                    <meta property="og:description" content={desc} />
-                    <meta name="description" content={desc} />
-                    <link rel="icon" type="image/png" href="/favicon.png" />
-                    <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
-                </Helmet>
-                <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
-                <div className="form-page bg-white text-dark">
-                    <div className="container-xl pt-5 px-5">
-                        <div className="row flex-wrap-reverse">
-                            <div className="col-md-6">
-                                <h1 className="display-3 font-weight-bold">Talk to a product specialist</h1>
-                                <h3 className="font-weight-light">
-                                    Let us know how we can help. We'll follow up soon.
-                                </h3>
-                                <div className="form mt-5">
-                                    <div id="hubspotContactForm" className="d-flex justify-center" />
-                                </div>
+    return (
+        <Layout
+            location={props.location}
+            className="pt-0"
+            minimal={true}
+            meta={{
+                title,
+                description,
+            }}
+        >
+            <div className="form-page bg-white text-dark">
+                <div className="container-xl pt-5 px-5">
+                    <div className="row flex-wrap-reverse">
+                        <div className="col-md-6">
+                            <h1 className="display-3 font-weight-bold">Talk to a product specialist</h1>
+                            <h3 className="font-weight-light">Let us know how we can help. We'll follow up soon.</h3>
+                            <div className="form mt-5">
+                                <div id="hubspotContactForm" className="d-flex justify-center" />
                             </div>
-                            <div className="col-md-6">
-                                <CustomerLogosSection className="full-color mt-3 mb-6" />
-                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <CustomerLogosSection className="full-color mt-3 mb-6" />
                         </div>
                     </div>
                 </div>
-            </Layout>
-        )
-    }
+            </div>
+        </Layout>
+    )
 }
+
+export default Contact
