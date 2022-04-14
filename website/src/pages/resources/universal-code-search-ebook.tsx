@@ -56,7 +56,7 @@ export default ((props: any) => {
                                 />
                             </div>
                             <div className="col-md-4">
-                                <h3 className="font-weight-light text-sans-serif">Get your free ebook.</h3>
+                                <h3 className="font-weight-light font-serif">Get your free ebook.</h3>
                                 <div className="form mt-5">
                                     <div id="hubspotContactForm" className="d-flex justify-center" />
                                 </div>

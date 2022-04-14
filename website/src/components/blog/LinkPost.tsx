@@ -27,7 +27,7 @@ export const LinkPost: React.FunctionComponent<Props> = ({
         .replace(/^<p>/, '')
         .replace(/<\/p>$/, '')
 
-    const titleClassName = 'font-size-base font-family-base link-post__html d-inline'
+    const titleClassName = 'text-base link-post__html d-inline'
     const title = post.frontmatter.canonical ? (
         <h2 className={titleClassName}>
             <Link

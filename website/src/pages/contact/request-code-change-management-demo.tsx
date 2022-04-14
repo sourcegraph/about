@@ -26,7 +26,7 @@ export default ((props: any) => {
                     <div className="row flex-wrap-reverse">
                         <div className="col-md-6">
                             <h1 className="display-4">Request a code change management demo</h1>
-                            <h3 className="font-weight-light text-sans-serif">
+                            <h3 className="font-weight-light font-serif">
                                 We'll reach out to discuss a demo and to learn more about your needs.
                             </h3>
                             <div className="form mt-5">

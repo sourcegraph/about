@@ -42,7 +42,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                 <div className="col-lg-6 self-hosted-section__search">
                     <h2 className="self-hosted-section__search-headings">Why choose self-hosted?</h2>
 
-                    <ul className="font-size-medium">
+                    <ul>
                         <li>Free for up to 10 users</li>
                         <li>Collaborate with your team across infinite repositories</li>
                         <li>Connect to private code hosts (and local installs)</li>

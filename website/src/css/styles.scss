@@ -265,36 +265,7 @@ table {
 @import 'pages/code-insights';
 @import 'gradients';
 @import 'spacing';
-
-/* ==================== Typography ==================== */
-
-.font-size-base {
-    font-size: $font-size-base !important;
-}
-.font-family-base {
-    font-family: $font-family-base !important;
-}
-.font-size-medium {
-    font-size: 1.2em;
-    line-height: 1.95em;
-}
-.font-size-large {
-    font-size: 4.5em;
-    line-height: 1.25em;
-}
-.font-size-extra-large {
-    font-size: 6em;
-    line-height: 1.25em;
-}
-.text-sans-serif {
-    font-family: $font-family-sans-serif;
-}
-.text-decoration-underline {
-    text-decoration: underline;
-    &:hover {
-        text-decoration: none;
-    }
-}
+@import 'typography';
 
 /* ==================== Bootstrap Components ==================== */
 
