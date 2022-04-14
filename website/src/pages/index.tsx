@@ -11,17 +11,12 @@ import { SelfHostedSection } from '../components/SelfHostedSection'
 import { buttonStyle, buttonLocation } from '../tracking'
 
 const Index: FunctionComponent<PageProps> = props => {
-
-    const headlines: string[] = [
-        'Understand and search',
-        'Fix vulnerabilities and issues',
-        'Automate key workflows'
-    ]
-    const [ headlineIndex, setHeadlineIndex ] = useState(0)
-    const [ headline, setHeadline ] = useState(headlines[0])
+    const headlines: string[] = ['Understand and search', 'Fix vulnerabilities and issues', 'Automate key workflows']
+    const [headlineIndex, setHeadlineIndex] = useState(0)
+    const [headline, setHeadline] = useState(headlines[0])
 
     useEffect(() => {
-        const cycle = setInterval(() => {        
+        const cycle = setInterval(() => {
             const newIndex = headlineIndex === headlines.length - 1 ? 0 : headlineIndex + 1
 
             setHeadline(headlines[newIndex])
@@ -36,12 +31,18 @@ const Index: FunctionComponent<PageProps> = props => {
             location={props.location}
             meta={{
                 title: 'Sourcegraph | Code Intelligence Platform',
-                description: 'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Soucegraph.',
+                description:
+                    'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Soucegraph.',
             }}
         >
             <div className="hero">
-                <h1><span>{headline}</span> across your entire codebase</h1>
-                <p>Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.</p>
+                <h1>
+                    <span>{headline}</span> across your entire codebase
+                </h1>
+                <p>
+                    Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
+                    code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.
+                </p>
 
                 <Link
                     className="btn btn-primary"
@@ -74,7 +75,6 @@ const Index: FunctionComponent<PageProps> = props => {
                 </p>
             </div>
 
-
             <CustomerLogosSectionAnimated showButton={true} showSection={true} className="pt-5" />
             <ContentSection className="pt-6 mt-3 d-none d-sm-block">
                 <div className="home__screenshot"></div>
@@ -104,7 +104,8 @@ const Index: FunctionComponent<PageProps> = props => {
                         <img
                             src="/code-search-illustrated.svg"
                             className="home__diagram w-150"
-                            alt="Code search across multiple code hosts, including GitHub, GitLab, BitBucket, and Azure" />
+                            alt="Code search across multiple code hosts, including GitHub, GitLab, BitBucket, and Azure"
+                        />
                     </div>
                 </div>
             </ContentSection>
