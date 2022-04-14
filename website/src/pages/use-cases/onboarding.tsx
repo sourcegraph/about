@@ -5,6 +5,7 @@ import CompassOutlineIcon from 'mdi-react/CompassOutlineIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
+import { ThreeUpText } from '../../components/ThreeUpText'
 import { BackButtonBold } from '../../components/BackButton'
 import { Blockquote, BlockquoteWithLogoBottom } from '../../components/Blockquote'
 import { BlogListItem } from '../../components/BlogListItem'
@@ -103,6 +104,31 @@ const items = [
     },
 ]
 
+const threeUpTextItems = [
+    {
+        icon: <MagnifyIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Find answers across all repositories</h4>,
+        description:
+            'Codebases grow increasingly complex over time. Sourcegraph enables developers to search everything at once without needing to clone and search locally.',
+    },
+    {
+        icon: <UploadIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">
+                Share knowledge quickly with links to specific code
+            </h4>
+        ),
+        description:
+            'Knowledge sharing takes time. With Sourcegraph, developers can share links directly to specific lines of code and ask questions with context included.',
+    },
+    {
+        icon: <CompassOutlineIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Navigate and understand large codebases</h4>,
+        description:
+            "Make new codebases approachable, not aggravating. Search across all your repositories in one place with Sourcegraph's IDE-inspired features.",
+    },
+]
+
 const blogListItems = [
     {
         title: '8 ways to implement better onboarding',
@@ -167,41 +193,11 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </>
         }
     >
-        <ContentSection className="my-lg-5">
-            <div className="row mx-lg-0 mx-4">
-                <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold w-75 px-lg-8">
-                        Make your codebase accessible for your entire team
-                    </h1>
-                </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
-                    <div className="text-center">
-                        <MagnifyIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Find answers across all repositories</h4>
-                        <p>
-                            Codebases grow increasingly complex over time. Sourcegraph enables developers to search
-                            everything at once without needing to clone and search locally.
-                        </p>
-                    </div>
-                    <div className="mx-lg-7 text-center">
-                        <UploadIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Share knowledge quickly with links to specific code</h4>
-                        <p>
-                            Knowledge sharing takes time. With Sourcegraph, developers can share links directly to
-                            specific lines of code and ask questions with context included.
-                        </p>
-                    </div>
-                    <div className="text-center">
-                        <CompassOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Navigate and understand large codebases</h4>
-                        <p>
-                            Make new codebases approachable, not aggravating. Search across all your repositories in one
-                            place with Sourcegraph's IDE-inspired features.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </ContentSection>
+        <div className="bg-white">
+            <ContentSection className="my-lg-5">
+                <ThreeUpText title="Make your codebase accessible for your entire team" items={threeUpTextItems} />
+            </ContentSection>
+        </div>
 
         <div className="bg-gradient-venus-radial">
             <ContentSection className="my-7">

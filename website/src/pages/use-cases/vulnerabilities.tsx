@@ -5,6 +5,7 @@ import TimerOutlineIcon from 'mdi-react/TimerOutlineIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
+import { ThreeUpText } from '../../components/ThreeUpText'
 import { BackButtonBold } from '../../components/BackButton'
 import { BlogListItem } from '../../components/BlogListItem'
 import { QuoteCarousel } from '../../components/QuoteCarousel'
@@ -109,6 +110,33 @@ const items = [
     },
 ]
 
+const threeUpTextItems = [
+    {
+        icon: <TimerOutlineIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Reduce time to discovery and resolution</h4>,
+        description:
+            'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
+    },
+    {
+        icon: <AutoFixIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
+        ),
+        description:
+            'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
+    },
+    {
+        icon: <ShieldAlertOutlineIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">
+                Alert for risky code changes & known vulnerabilities
+            </h4>
+        ),
+        description:
+            'Get on top of vulnerabilities by monitoring your repositories for commits when risky patterns and known vulnerabilities enter your codebase.',
+    },
+]
+
 const quoteCarouselItems = [
     {
         header: 'Nutanix fixed Log4j in days',
@@ -210,41 +238,11 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </>
         }
     >
-        <ContentSection className="my-lg-5">
-            <div className="row mx-lg-0 mx-4">
-                <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold w-75 px-lg-8">
-                        Identify, resolve, and monitor with confidence
-                    </h1>
-                </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
-                    <div className="text-center">
-                        <TimerOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Reduce time to discovery and resolution</h4>
-                        <p>
-                            Find every instance of a vulnerability and start remediating in minutes instead of days or
-                            weeks. Use that head start to deploy fixes sooner.
-                        </p>
-                    </div>
-                    <div className="mx-lg-7 text-center">
-                        <AutoFixIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
-                        <p>
-                            Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident
-                            you resolved every vulnerability.
-                        </p>
-                    </div>
-                    <div className="text-center">
-                        <ShieldAlertOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Alert for risky code changes & known vulnerabilities</h4>
-                        <p>
-                            Get on top of vulnerabilities by monitoring your repositories for commits when risky
-                            patterns and known vulnerabilities enter your codebase.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </ContentSection>
+        <div className="bg-white">
+            <ContentSection className="my-lg-5">
+                <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
+            </ContentSection>
+        </div>
 
         <div className="bg-gradient-venus-radial">
             <ContentSection className="my-7">

@@ -6,7 +6,6 @@ import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
 import { ThreeUpText } from '../../components/ThreeUpText'
-import { Jumbotron } from '../../components/Jumbotron'
 import { BackButtonBold } from '../../components/BackButton'
 import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
@@ -106,6 +105,31 @@ const items = [
     },
 ]
 
+const threeUpTextItems = [
+    {
+        icon: <XmlIcon className="mb-4 text-blurple" size={80} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Quickly find trustworthy code to reuse</h4>,
+        description:
+            'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code and when, and where else it’s being used.',
+    },
+    {
+        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple" size={80} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Safely maintain and improve shared libraries</h4>
+        ),
+        description:
+            'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate the overhead of duplicative code.',
+    },
+    {
+        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple" size={80} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Understand your team’s code reuse efforts</h4>
+        ),
+        description:
+            'Code maintainers or stakeholders can easily track and understand innersourcing and code reuse trends and monitor the growth in popularity within the team.',
+    },
+]
+
 const resourceItems = [
     {
         title: 'FactSet avoids duplicative work across engineering teams',
@@ -122,27 +146,6 @@ const resourceItems = [
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
         href: '/blog/ways-to-use-sourcegraph-extension-for-vs-code',
-    },
-]
-
-const threeUpTextItems = [
-    {
-        icon: <XmlIcon className="mb-4 text-blurple" size={80} />,
-        subtitle: <h3 className="pb-3 font-weight-bold">Quickly find trustworthy code to reuse</h3>,
-        description:
-            'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code and when, and where else it’s being used.',
-    },
-    {
-        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple" size={80} />,
-        subtitle: <h3 className="pb-3 font-weight-bold">Safely maintain and improve shared libraries</h3>,
-        description:
-            'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate the overhead of duplicative code.',
-    },
-    {
-        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple" size={80} />,
-        subtitle: <h3 className="pb-3 font-weight-bold">Understand your team’s code reuse efforts</h3>,
-        description:
-            'Code maintainers or stakeholders can easily track and understand innersourcing and code reuse trends and monitor the growth in popularity within the team.',
     },
 ]
 
@@ -184,8 +187,6 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
             </section>
         }
     >
-        {/* <Jumbotron /> */}
-
         <div className="bg-white">
             <ContentSection className="my-7">
                 <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />

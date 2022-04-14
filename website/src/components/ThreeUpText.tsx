@@ -12,14 +12,14 @@ interface Props {
 }
 
 export const ThreeUpText: FunctionComponent<Props> = ({ title, items }) => (
-    <section>
-        <h2 className="text-center display-3 font-weight-bold">{title}</h2>
+    <section className="row mx-lg-0 mx-4">
+        <h1 className="text-center col-12 max-w-lg-550 mx-auto mt-6 mb-lg-4 px-0 font-weight-bold">{title}</h1>
 
-        <div className="mb-5 d-flex flex-wrap justify-content-between">
+        <div className="mb-6 d-flex flex-wrap justify-content-between">
             {items.map((item, index) => (
                 <div
                     key={`item-${index + 1}-${item.description}`}
-                    className="col-sm-12 col-md-3 min-w-350 text-center pt-5"
+                    className="col-12 col-xl-3 min-w-350 text-center pt-5"
                 >
                     {item.icon && item.icon}
                     {item.subtitle}
