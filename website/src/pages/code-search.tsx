@@ -89,25 +89,26 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                     </ul>
                 </div>
             </div>
-
         </ContentSection>
 
         {/* Onboard to new code */}
         <ContentSection>
             <div className="row pt-md-6">
                 <div className="col-lg-6">
-                    <h2 className="display-3 font-weight-bold mb-3 my-3 my-md-0">Onboard to new code fast with living documentation</h2>
+                    <h2 className="display-3 font-weight-bold mb-3 my-3 my-md-0">
+                        Onboard to new code fast with living documentation
+                    </h2>
                     <ul className="list-spaced">
                         <li>
-                            Create living documentation with markdown and live code queries to get engineers up to 
-                            speed on unfamiliar code faster
+                            Create living documentation with markdown and live code queries to get engineers up to speed
+                            on unfamiliar code faster
                         </li>
                         <li>
-                            Navigate through complex parts of your codebase or resolve incidents with collaborative 
-                            and shareable notebooks
+                            Navigate through complex parts of your codebase or resolve incidents with collaborative and
+                            shareable notebooks
                         </li>
                         <li>
-                            Embed notebooks anywhere you can embed HTML, like your own internal documentation, so you 
+                            Embed notebooks anywhere you can embed HTML, like your own internal documentation, so you
                             can spend less time updating stale docs
                         </li>
                     </ul>
