@@ -1,10 +1,12 @@
 import { Link, PageProps } from 'gatsby'
-import AutoFixIcon from 'mdi-react/AutoFixIcon'
-import ShieldAlertOutlineIcon from 'mdi-react/ShieldAlertOutlineIcon'
-import TimerOutlineIcon from 'mdi-react/TimerOutlineIcon'
+import FolderUploadOutlineIcon from 'mdi-react/FolderUploadOutlineIcon'
+import AccountGroupOutlineIcon from 'mdi-react/AccountGroupOutlineIcon'
+import XmlIcon from 'mdi-react/XmlIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
+import { ThreeUpText } from '../../components/ThreeUpText'
+import { Jumbotron } from '../../components/Jumbotron'
 import { BackButtonBold } from '../../components/BackButton'
 import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
@@ -123,6 +125,27 @@ const resourceItems = [
     },
 ]
 
+const threeUpTextItems = [
+    {
+        icon: <XmlIcon className="mb-4 text-blurple" size={80} />,
+        subtitle: <h3 className="pb-3 font-weight-bold">Quickly find trustworthy code to reuse</h3>,
+        description:
+            'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code and when, and where else it’s being used.',
+    },
+    {
+        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple" size={80} />,
+        subtitle: <h3 className="pb-3 font-weight-bold">Safely maintain and improve shared libraries</h3>,
+        description:
+            'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate the overhead of duplicative code.',
+    },
+    {
+        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple" size={80} />,
+        subtitle: <h3 className="pb-3 font-weight-bold">Understand your team’s code reuse efforts</h3>,
+        description:
+            'Code maintainers or stakeholders can easily track and understand innersourcing and code reuse trends and monitor the growth in popularity within the team.',
+    },
+]
+
 const CodeReusePage: FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
@@ -132,13 +155,11 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                 'Find existing code libraries for reuse and avoid spending time on problems a teammate already solved for a more secure and coherent codebase.',
         }}
         className="use-cases-page"
-        heroAndHeaderClassName={`${styles.useCaseHeader} navbar-light`}
         hero={
-            <>
-                <div className="bg" />
-                <div className="container pb-4">
+            <section className={`${styles.useCaseHeader} navbar-light`}>
+                <div className="container">
                     <div className="row">
-                        <div className="col-lg-7 mb-8 mt-7">
+                        <div className="col-lg-7 my-7">
                             <BackButtonBold href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">Find and use code that already exists</h1>
                             <div className="display-4 font-weight-normal mb-5">
@@ -160,45 +181,16 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                         </div>
                     </div>
                 </div>
-            </>
+            </section>
         }
     >
-        <ContentSection className="my-lg-5">
-            {/* TODO: Reuse ThreeUpText from Replatform */}
-            <div className="row mx-lg-0 mx-4">
-                <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold w-75 px-lg-8">
-                        Identify, resolve, and monitor with confidence
-                    </h1>
-                </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
-                    <div className="text-center">
-                        <TimerOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Quickly find trustworthy code to reuse</h4>
-                        <p>
-                            Search your entire codebase to discover existing code to reuse. Gather crucial context, like
-                            who wrote the code and when, and where else it’s being used.
-                        </p>
-                    </div>
-                    <div className="mx-lg-7 text-center">
-                        <AutoFixIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Safely maintain and improve shared libraries</h4>
-                        <p>
-                            Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated
-                            functions are used, and eliminate the overhead of duplicative code.
-                        </p>
-                    </div>
-                    <div className="text-center">
-                        <ShieldAlertOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Understand your team’s code reuse efforts</h4>
-                        <p>
-                            Code maintainers or stakeholders can easily track and understand innersourcing and code
-                            reuse trends and monitor the growth in popularity within the team.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </ContentSection>
+        {/* <Jumbotron /> */}
+
+        <div className="bg-white">
+            <ContentSection className="my-7">
+                <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
+            </ContentSection>
+        </div>
 
         <div className="bg-gradient-venus-radial">
             <ContentSection className="my-7">
