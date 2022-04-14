@@ -29,7 +29,7 @@ const INVESTORS: {
     {
         name: 'Goldcrest Capital',
         image: '/about/sg-goldcrest.png',
-    }
+    },
 ]
 
 const About: FunctionComponent = () => (
@@ -45,21 +45,19 @@ const About: FunctionComponent = () => (
             <ContentSection className="hero-section py-6">
                 <h1>About Sourcegraph</h1>
                 <p className="h4 font-weight-normal">
-                    Sourcegraph builds universal code search for every developer and company so they can
-                    innovate faster. We help developers and companies with billions of lines of code
-                    create the software you use every day.
+                    Sourcegraph builds universal code search for every developer and company so they can innovate
+                    faster. We help developers and companies with billions of lines of code create the software you use
+                    every day.
                 </p>
             </ContentSection>
             <div className="bg-gradient-green-blue mb-5">
                 <ContentSection className="container py-6">
                     <h2>Learn all about Sourcegraph</h2>
                     <p>
-                        The <a href="https://handbook.sourcegraph.com">Sourcegraph handbook</a> has
-                        everything from our high-level{' '}
-                        <a href="https://handbook.sourcegraph.com/strategy-goals/strategy">strategy</a>{' '}
-                        and{' '}
-                        <a href="https://handbook.sourcegraph.com/company/values">values</a>, to
-                        documentation of business processes including{' '}
+                        The <a href="https://handbook.sourcegraph.com">Sourcegraph handbook</a> has everything from our
+                        high-level <a href="https://handbook.sourcegraph.com/strategy-goals/strategy">strategy</a> and{' '}
+                        <a href="https://handbook.sourcegraph.com/company/values">values</a>, to documentation of
+                        business processes including{' '}
                         <a href="https://handbook.sourcegraph.com/marketing/messaging">messaging</a> and{' '}
                         <a href="https://handbook.sourcegraph.com/departments/product-engineering/engineering/process/principles-and-practices">
                             engineering principles
@@ -75,14 +73,11 @@ const About: FunctionComponent = () => (
             <ContentSection className="container py-5 mb-5">
                 <h2>Sourcegraph team</h2>
                 <p>
-                    Sourcegraph is an{' '}
-                    <a href="https://handbook.sourcegraph.com/company/remote">all-remote</a> company,
+                    Sourcegraph is an <a href="https://handbook.sourcegraph.com/company/remote">all-remote</a> company,
                     working asynchronously across time zones and continents. Meet our{' '}
-                    <a href="https://handbook.sourcegraph.com/company/team">team members</a> and learn
-                    about our commitment to{' '}
-                    <a href="https://handbook.sourcegraph.com/communication/code_of_conduct#our-standards">
-                        inclusion
-                    </a>
+                    <a href="https://handbook.sourcegraph.com/company/team">team members</a> and learn about our
+                    commitment to{' '}
+                    <a href="https://handbook.sourcegraph.com/communication/code_of_conduct#our-standards">inclusion</a>
                     .
                 </p>
                 <a className="btn btn-primary mt-3" href="https://boards.greenhouse.io/sourcegraph91">

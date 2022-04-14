@@ -2,14 +2,15 @@ import { FunctionComponent } from 'react'
 
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
-import { 
-    BlockquoteWithBorder, 
-    buttonStyle, 
-    buttonLocation, 
-    ContentSection, 
-    CustomCarousel, 
-    Layout, 
-    YouTube } from '@components'
+import {
+    BlockquoteWithBorder,
+    buttonStyle,
+    buttonLocation,
+    ContentSection,
+    CustomCarousel,
+    Layout,
+    YouTube,
+} from '@components'
 
 const items = [
     {
@@ -52,7 +53,9 @@ export const CloudBeta: FunctionComponent = () => (
                         </h1>
                     </div>
                     <div className="col-lg-6">
-                        <h4 className="font-weight-bold mb-2">Introducing team access to Sourcegraph Cloud (Private Beta)</h4>
+                        <h4 className="font-weight-bold mb-2">
+                            Introducing team access to Sourcegraph Cloud (Private Beta)
+                        </h4>
                         <p>
                             Teams of up to 25 users can now add their private repositories to Sourcegraph Cloud to
                             experience great code search together. Find & fix vulnerabilities, resolve incidents, and
@@ -83,10 +86,10 @@ export const CloudBeta: FunctionComponent = () => (
                 logoImage="/external-logos/anyscale-logo.svg"
                 logoAlt="Anyscale Logo"
                 bold={true}
-                />
+            />
         </ContentSection>
         <div className="py-7">
-            <CustomCarousel items={items} backgroundClass="bg-gradient-green-blue"/>
+            <CustomCarousel items={items} backgroundClass="bg-gradient-green-blue" />
         </div>
         <ContentSection className="text-center">
             <div className="row">
@@ -98,7 +101,9 @@ export const CloudBeta: FunctionComponent = () => (
                     <ul className="mb-5 list-group list-group-flush max-w-500 mx-auto">
                         <li className="list-group-item">Have 5 to 25 engineers</li>
                         <li className="list-group-item">Host their code on GitHub.com or GitLab.com</li>
-                        <li className="list-group-item">Are eager to partner with our Product team to provide feedback</li>
+                        <li className="list-group-item">
+                            Are eager to partner with our Product team to provide feedback
+                        </li>
                         <li className="list-group-item">Are ready to experience the power of code search</li>
                     </ul>
                     <a

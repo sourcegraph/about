@@ -101,22 +101,42 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                         />
                     </a>
                     <h5>
-                        <a href={staff.bio} className="text-dark">{staff.name}</a>
+                        <a href={staff.bio} className="text-dark">
+                            {staff.name}
+                        </a>
                     </h5>
                     <p className="mb-0">{staff.title}</p>
                     <ul className="nav mt-1">
                         <li className="nav-item p-1">
-                            <a href={staff.github} target="_blank" rel="nofollow noopener noreferrer" aria-label="GitHub" className="text-dark">
+                            <a
+                                href={staff.github}
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
+                                aria-label="GitHub"
+                                className="text-dark"
+                            >
                                 <GithubIcon />
                             </a>
                         </li>
                         <li className="nav-item p-1">
-                            <a href={staff.twitter} target="_blank" rel="nofollow noopener noreferrer" aria-label="Twitter" className="text-dark">
+                            <a
+                                href={staff.twitter}
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
+                                aria-label="Twitter"
+                                className="text-dark"
+                            >
                                 <TwitterIcon />
                             </a>
                         </li>
                         <li className="nav-item p-1">
-                            <a href={staff.linkedin} target="_blank" rel="nofollow noopener noreferrer" aria-label="LinkedIn" className="text-dark">
+                            <a
+                                href={staff.linkedin}
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
+                                aria-label="LinkedIn"
+                                className="text-dark"
+                            >
                                 <LinkedinIcon />
                             </a>
                         </li>
