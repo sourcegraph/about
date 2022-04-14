@@ -7,10 +7,10 @@ import React, { FunctionComponent, ReactNode } from 'react'
 import Layout from '../../components/Layout'
 import { BackButtonBold } from '../../components/BackButton'
 import { BlogListItem } from '../../components/BlogListItem'
-import { QuoteCarousel } from '../../components/QuoteCarousel'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import styles from './useCases.module.scss'
 
@@ -23,16 +23,15 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: 'Find vulnerabilities',
+        buttonLabel: 'Find reusable code',
         text: (
             <CarouselItem
-                header="Find vulnerabilities"
+                header="Find reusable code"
                 text={
                     <p>
-                        Vulnerabilities are inevitable, but they don't have to be disruptive. With{' '}
-                        <Link to="/code-search">Code Search</Link>, you can find vulnerabilities across your
-                        repositories in a single search. Relieve your engineers from manual work, get a headstart on
-                        remediation, and act confidently knowing that you've located all affected code.
+                        Someone else might have already solved this problem. With{' '}
+                        <Link to="/code-search">Code Search</Link>, you can find code that does what you need across all
+                        your repositories with a single search.
                     </p>
                 }
             />
@@ -41,16 +40,14 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        buttonLabel: 'Automatically merge and deploy fixes',
+        buttonLabel: "Evaluate the code's stability and trustworthiness",
         text: (
             <CarouselItem
-                header="Automatically merge and deploy fixes"
+                header="Evaluate the code's stability & trustworthiness"
                 text={
                     <p>
-                        Deploy fixes at scale. Don't let the size and complexity of your codebase hold you back. With{' '}
-                        <Link to="/batch-changes">Batch Changes</Link>, you can automate the merging and deployment of
-                        fixes. Move faster than your competitors, free up your engineers, and return your codebase to a
-                        healthy state.
+                        Code reuse avoids introducing avoidable bugs—a reviewed and tested piece of code that’s known to
+                        work can be easily and securely used instead.
                     </p>
                 }
             />
@@ -58,16 +55,15 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Proactively monitor for the presence of vulnerable code',
+        buttonLabel: 'Automate PRs to make code consistent and apply updates',
         text: (
             <CarouselItem
-                header="Proactively monitor for the presence of vulnerable code"
+                header="Automate PRs to make code consistent & apply updates"
                 text={
                     <p>
-                        Get ahead of vulnerabilities. With
-                        <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>, get alerts whenever
-                        specified patterns enter your codebase. Monitors ensure new occurrences are detected immediately
-                        and allow you to catch them before merging—and before customers have reason to worry.
+                        Spend less time on manual updates. Whether you’re refactoring duplicative code or updating a
+                        shared library, implement changes seamlessly across your codebase with{' '}
+                        <Link to="/batch-changes">Batch Changes</Link>.
                     </p>
                 }
             />
@@ -75,16 +71,16 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Ensure removal of security vulnerabilities',
+        buttonLabel: 'Alert for deprecated code use',
         text: (
             <CarouselItem
-                header="Ensure removal of security vulnerabilities"
+                header="Alert for deprecated code use"
                 text={
                     <p>
-                        Get the full picture of an incident. Track how long the vulnerable code has been in your
-                        codebase and how quickly you're removing it. With <Link to="/code-insights">Code Insights</Link>
-                        , you can measure the progress of applying longer-term fixes for vulnerabilities and incidents
-                        across all your code.
+                        Catch deprecated code as it’s committed with
+                        <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>. It takes time for
+                        teams to adopt a culture of code reuse; in the meantime, you know where opportunities for code
+                        reuse exist.
                     </p>
                 }
             />
@@ -92,15 +88,14 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Bring peace of mind to customers',
+        buttonLabel: 'Track code reuse adoption',
         text: (
             <CarouselItem
-                header="Bring peace of mind to customers"
+                header="Track code reuse adoption"
                 text={
                     <p>
-                        The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can know
-                        you'll find every instance of affected code, be able to fix it at scale, monitor for its
-                        presence long-term, and ensure your customers that your code is safe.
+                        Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
+                        over time with Code Insights.
                     </p>
                 }
             />
@@ -109,59 +104,22 @@ const items = [
     },
 ]
 
-const quoteCarouselItems = [
+const resourceItems = [
     {
-        header: 'Nutanix fixed Log4j in days',
-        quote: 'The more we dug, the more we realized [Log4Shell] was everywhere and nowhere at the same time… Sourcegraph was the right product at the right time.',
-        by: 'Jon Kohler, Technical Director of Solution Engineering at Nutanix',
-        logoImage: '/external-logos/nutanix-logo.svg',
-        logoAlt: 'Nutanix',
-    },
-    {
-        header: `Cloudflare proves to auditors that its code isn't vulnerable`,
-        quote: `[Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and when we get asked by an auditor.`,
-        by: 'David Haynes, Security Engineer at Cloudflare',
-        logoImage: '/external-logos/cloudflare-color-logo.svg',
-        linkText: 'Read the case study',
-        link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
-        logoAlt: 'Cloudflare',
-    },
-    {
-        header: 'Indeed merges code at scale',
-        quote: `On average, I'd say that for every automated merge request that we're able to merge we save an hour. That's a rough but conservative estimate. It shows,
-        though, that if we are doing several thousand automated merges in a year, we're saving several employee's worth of time.`,
-        by: 'Jared Hodge, Senior Manager, Developer Experience at Indeed',
-        logoImage: '/external-logos/indeed-logo.svg',
-        linkText: 'Read the case study',
-        link: '/case-studies/indeed-accelerates-development-velocity',
-        logoAlt: 'Indeed',
-    },
-]
-
-const blogListItems = [
-    {
-        title: 'Log4j Log4Shell 0-day: find, fix, and track affected code',
+        title: 'FactSet avoids duplicative work across engineering teams',
         description:
-            'In December 2021, the Log4j vulnerability shook the world. In this post, Sourcegraph founder and CEO Quinn Slack explains how to find the vulnerability using Sourcegraph.',
-        type: 'Blog post',
+            "FactSet undertook a major migration from a monolithic code repository in Perforce to microservices in GitHub. Mid-migration, they adopted Sourcegraph to enable efficient code search. Here's what happened.",
+        type: 'Case study',
         image: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
-        href: '/blog/log4j-log4shell-0-day',
+        href: '/case-studies/factset-migrates-from-perforce-to-github',
     },
     {
-        title: 'The Nine Circles of Dependency Hell (and a roadmap out)',
+        title: 'How one engineering manager uses the Sourcegraph extension for VS Code',
         description:
-            'A complex web of software dependencies can stop software development in its tracks. In this post, former Google software engineer Matt Rickard explains how to handle dependencies so engineers can spend more time coding.',
+            'Here’s how one engineering manager uses the Sourcegraph VS Code extension to browse millions of open source repositories, without leaving his IDE, to find reusable code and more.',
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
-        href: '/blog/nine-circles-of-dependency-hell',
-    },
-    {
-        title: 'How to remove secrets from your codebase',
-        description:
-            'In early 2021, many Sourcegraph infrastructure and service account passwords were stored in private repositories. With Sourcegraph code search, security engineer André Eleuterio was able to ensure he moved every secret to a secure vault.',
-        type: 'Blog post',
-        image: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
-        href: '/blog/eliminate-secrets-from-codebase-with-universal-code-search',
+        href: '/blog/ways-to-use-sourcegraph-extension-for-vs-code',
     },
 ]
 
@@ -206,6 +164,7 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
         }
     >
         <ContentSection className="my-lg-5">
+            {/* TODO: Reuse ThreeUpText from Replatform */}
             <div className="row mx-lg-0 mx-4">
                 <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
                     <h1 className="text-center font-weight-bold w-75 px-lg-8">
@@ -243,49 +202,46 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-gradient-venus-radial">
             <ContentSection className="my-7">
-                <div className="row flex-column flex-lg-row justify-content-between">
+                <div className="row flex-column flex-lg-row justify-content-between px-0">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 font-weight-bold max-w-400">
-                            Finding reliable, reusable codeis tedious and inefficient
+                        <h1 className="mb-4 font-weight-bold max-w-600">
+                            Finding reliable, reusable code is tedious and inefficient
                         </h1>
                         <p>
-                            Existing tooling doesn't enable teams to be agile and effective when responding to security
-                            vulnerabilities. What does that mean for you?
+                            Current tools don’t fully enable teams to innersource and use existing code to develop a
+                            more secure and coherent codebase.
+                            <span className="font-weight-bold"> What does that mean for you and your team?</span>
                         </p>
                         <ul>
-                            <li>Finding vulnerabilities scattered across codebases takes extra time and resources.</li>
+                            <li>Finding idiomatic code examples is challenging if you don't know where to look.</li>
                             <li>
-                                Following dependencies across your codebase is inefficient with IDEs that aren't
-                                connected to all code or up to date.
+                                Without easy access to existing patterns, developers default to implementing from
+                                scratch, unintentionally increasing complexity and confusion in the codebase.
                             </li>
                             <li>
-                                Whether you're making changes to 50 or 5,000 repositories, tracking and managing PRs to
-                                completion is a manual and spreadsheet-heavy process.
-                            </li>
-                            <li>
-                                The vulnerability management and remediation process remains cumbersome, unclear, and
-                                stressful for all involved.
+                                Engineering leaders lack the visibility needed to ensure teams adopt recommended
+                                packages and retire deprecated ones.
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-5">
-                        <div className="bg-white p-5 mt-lg-0 mt-5">
-                            <h4>Log4j was the tip of the iceberg</h4>
+                    <div className="col-lg-5 mt-8 text-center">
+                        <section className="case-studies__quote--in-content--section font-weight-normal">
+                            <h4 className="mb-3">FactSet ensures consistency across its entire codebase</h4>
                             <p>
-                                Log4j is a prime example of how challenging it is to create a cohesive response across
-                                multiple teams in an org.
+                                “If I’m developing code for a library that might draw charts, for example, we don’t want
+                                30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
+                                find other chart examples, and simply copy the code. This saves us time and ensures
+                                consistency.”
                             </p>
-                            <p>
-                                Sourcegraph enables companies like Nutanix to completely remediate Log4j vulnerabilities
-                                across multiple build and artifact management systems, as well as a large monorepo with
-                                many component branches and hundreds of git repositories, in under four days, and with
-                                100% certainty.
-                            </p>
-                            <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
-                            <Link className="font-weight-bold" to="/blog/log4j-log4shell-0-day">
-                                Read the blog post.
-                            </Link>
-                        </div>
+                            <figcaption className="pt-2 text-muted text-center">
+                                &mdash; Joseph Majesky, Software Engineer at FactSet
+                            </figcaption>
+                        </section>
+                        <img className="my-4" src="/external-logos/factset-logo.svg" width="150" alt="Factset logo" />
+                        <Link className="d-block font-weight-bold" to="/blog/log4j-log4shell-0-day">
+                            Read the case study
+                            <ArrowRightIcon className="ml-2" />
+                        </Link>
                     </div>
                 </div>
             </ContentSection>
@@ -302,27 +258,19 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-saturn-saturated py-8">
-            <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} />
-            </ContentSection>
-        </div>
-
         <div className="bg-light-gray-3">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column">
+                    <div className="mb-5 d-flex flex-column text-center max-w-600">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
-                        <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
+                        <p>
+                            Make it easier to discover trustworthy code for reuse so your teams can spend more time
+                            solving new problems and less time rewriting code.
+                        </p>
                     </div>
-                    <div className="d-flex flex-column">
-                        <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
-                            Request a demo
-                        </Link>
-                        <Link to="/use-cases" className="d-flex justify-content-center mt-4">
-                            <p className="font-weight-bold">Explore other use cases</p>
-                        </Link>
-                    </div>
+                    <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
+                        Request a demo
+                    </Link>
                 </div>
             </ContentSection>
             <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="py-6" />
@@ -333,15 +281,16 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>
                 </div>
-                {blogListItems.map(item => (
+                {resourceItems.map(item => (
                     <BlogListItem key={item.title} blog={item} />
                 ))}
             </div>
         </ContentSection>
 
         <ContentSection>
-            <div className="d-flex justify-content-center">
-                <Link to="/get-started" className="btn btn-primary">
+            <div className="text-center">
+                <h1 className="font-weight-bold mb-6">Make the most of your existing code.</h1>
+                <Link to="/get-started" className="btn btn-primary mb-8">
                     Ready to get started?
                 </Link>
             </div>
