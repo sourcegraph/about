@@ -70,7 +70,7 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                     ></iframe>
                 </div>
                 <div className="col-lg-6">
-                    <h2 className="display-3 font-weight-bold mb-3">A search engine built for code</h2>
+                    <h2 className="display-3 font-weight-bold mb-3 mt-4 mt-md-0">A search engine built for code</h2>
                     <ul className="list-spaced">
                         <li>
                             <strong>Universal.</strong> Point Sourcegraph at the repositories you work with, stored in
@@ -87,6 +87,40 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                             <a href="https://sourcegraph.com/extensions?category=All"> extensions</a>.
                         </li>
                     </ul>
+                </div>
+            </div>
+
+        </ContentSection>
+
+        {/* Onboard to new code */}
+        <ContentSection>
+            <div className="row pt-md-6">
+                <div className="col-lg-6">
+                    <h2 className="display-3 font-weight-bold mb-3 my-3 my-md-0">Onboard to new code fast with living documentation</h2>
+                    <ul className="list-spaced">
+                        <li>
+                            Create living documentation with markdown and live code queries to get engineers up to 
+                            speed on unfamiliar code faster
+                        </li>
+                        <li>
+                            Navigate through complex parts of your codebase or resolve incidents with collaborative 
+                            and shareable notebooks
+                        </li>
+                        <li>
+                            Embed notebooks anywhere you can embed HTML, like your own internal documentation, so you 
+                            can spend less time updating stale docs
+                        </li>
+                    </ul>
+                </div>
+                <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 ">
+                    <iframe
+                        className="embed-responsive-item"
+                        src="https://www.youtube-nocookie.com/embed/aDU4C9j-hYA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                        allowFullScreen={true}
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        frameBorder={0}
+                        title="AND/OR operators for universal code search"
+                    ></iframe>
                 </div>
             </div>
         </ContentSection>
