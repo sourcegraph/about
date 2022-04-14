@@ -63,10 +63,12 @@ $dodger-blue: #2c7ef6;
 $theme-colors: (
     // Bootstrap overrides
     'primary': $blurple,
+
     // Sourcegraph Primary Colors
     'sky-blue': $sky-blue,
     'vivid-violet': $vivid-violet,
     'vermillion': $vermillion,
+
     // Sourcegraph Secondary Colors
     'yellow-mist': $yellow-mist,
     'red-mist': $red-mist,
@@ -77,14 +79,17 @@ $theme-colors: (
     'mint': $mint,
     'blurple': $blurple,
     'pacific-blue': $pacific-blue,
+
     // Sourcegraph Colors for Website UI
     'pale-sky': $pale-sky,
     'black': $space-black,
+
     // Colors not listed in our Brand Guidelines
     'dark-9': $dark-9,
     'dark-8': $dark-8,
     'dark-5': $dark-5,
     'dark-3': $dark-3,
+
     'light-1': $light-1,
     'light-2': $light-2,
     'light-5': $light-5,
@@ -97,6 +102,7 @@ $theme-colors: (
     'light-gray-3': $light-gray-3,
     'light-gray-4': $light-gray-4,
     'light-gray-5': $light-gray-5,
+
     'green-1': $green-1,
     'green-5': $green-5,
     'green-7': $green-7,
@@ -110,3 +116,7 @@ $theme-colors: (
     'cornflower-blue': $cornflower-blue,
     'dodger-blue': $dodger-blue
 );
+
+.brightness-0 {
+    filter: brightness(0);
+}

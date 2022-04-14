@@ -77,7 +77,7 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                     'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
             }}
         >
-            <div className="bg-gradient-saturn-radial py-md-8 py-6">
+            <div className="bg-gradient-saturn-reversed py-md-8 py-6">
                 <section className="container max-w-900">
                     <h1 className="display-1 font-weight-bold max-w-800">
                         Accelerate engineering velocity with Sourcegraph
@@ -101,14 +101,14 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                 <h5 className="font-weight-normal py-3">Learn how these software companies used Sourcegraph</h5>
                 <div className="d-flex flex-wrap pt-4">
                     {caseStudyItems.map((study, i) => (
-                        <div key={i} className="col-md-4 mb-6 px-0 partner-pod__case-study-card">
+                        <div key={i} className="col-md-4 mb-6 px-0 brightness-0">
                             <CaseStudyCard study={study} />
                         </div>
                     ))}
                 </div>
             </div>
 
-            <div className="bg-gradient-venus-extra-saturated py-6">
+            <div className="bg-gradient-venus-saturated py-6">
                 <section className="container max-w-900 text-center">
                     <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
                     <h5 className="pt-4 pb-3 mx-auto max-w-550 font-weight-normal">

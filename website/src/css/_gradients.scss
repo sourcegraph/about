@@ -18,13 +18,6 @@
         color.adjust($mint, $alpha: -0.7) 81.79%
     );
 }
-@mixin GradientVenusExtraSaturated {
-    background: linear-gradient(
-        90deg,
-        color.adjust($green-mist, $alpha: -0.2) 14.33%,
-        color.adjust($blue-mist, $alpha: 0.3) 81.79%
-    );
-}
 @mixin GradientVenusRadial {
     background: radial-gradient(ellipse at top left, rgba($blue-mist, 0.5), transparent),
         radial-gradient(ellipse at bottom right, rgba($green-mist, 0.5), transparent);
@@ -36,7 +29,7 @@
         color.adjust($violet-mist, $alpha: -0.7) 81.79%
     );
 }
-@mixin GradientSaturnRadial {
+@mixin GradientSaturnReversedSaturated {
     background: linear-gradient(
         90deg,
         color.adjust($violet-mist, $alpha: -0.7) 14.33%,
@@ -74,17 +67,14 @@
 .bg-gradient-venus-saturated {
     @include GradientVenusSaturated;
 }
-.bg-gradient-venus-extra-saturated {
-    @include GradientVenusExtraSaturated;
-}
 .bg-gradient-venus-radial {
     @include GradientVenusRadial;
 }
 .bg-gradient-saturn-saturated {
     @include GradientSaturnSaturated;
 }
-.bg-gradient-saturn-radial {
-    @include GradientSaturnRadial;
+.bg-gradient-saturn-reversed {
+    @include GradientSaturnReversedSaturated;
 }
 
 // Gradients not listed in our Brand Guidelines - utility classes
