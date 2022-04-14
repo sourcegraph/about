@@ -13,8 +13,8 @@ changelogItems:
 
 Sourcegraph 3.39 is now available! In this release:
 
-## Feature 1
+## Dependencies search now supports GO
 
-Description
+Dependencies search beta feature announced in our 3.38 release now supports saerching your GO dependencies.
 
 ## Feature 2
