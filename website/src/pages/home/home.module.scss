@@ -1,0 +1,9 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+
+.floatingBox {
+    @include media-breakpoint-up(lg) {
+        margin-bottom: -173.5px;
+    }
+}

@@ -316,3 +316,23 @@ code.border {
     border: 1px solid var(--border-color);
     max-width: 100%;
 }
+
+/* ==================== Positioning ==================== */
+
+$positions: ('top', 'right', 'bottom', 'left');
+@each $position in $positions {
+    .#{$position}-0 {
+        #{$position}: 0;
+    }
+}
+
+@each $breakpoint, $width in $grid-breakpoints {
+    @media (min-width: $width) {
+        .#{$breakpoint}-absolute {
+            position: absolute;
+        }
+        .#{$breakpoint}-relative {
+            position: relative;
+        }
+    }
+}
