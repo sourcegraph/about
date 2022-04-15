@@ -4,7 +4,7 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import * as React from 'react'
 import { ContentSection } from '../../components/content/ContentSection'
 import Layout from '../../components/Layout'
-import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
+import { CustomerLogos } from '../../components/CustomerLogos'
 import { TrySourcegraph } from '../../components/TrySourcegraph'
 import { buttonStyle, buttonLocation } from '../../tracking'
 
@@ -85,9 +85,11 @@ export default ((props: any) => (
         }
     >
         <div className="use-cases-page">
-            <CustomerLogosSectionAnimated showButton={false} showSection={true} className="pt-5" />
+            <div className="pt-6">
+                <CustomerLogos />
+            </div>
 
-            <hr className="mt-8 mb-6" />
+            <hr className="my-6" />
 
             <ContentSection id="find-and-fix-security-vulnerabilities" className="py-4">
                 <div className="row justify-content-center pt-md-4">
@@ -359,7 +361,7 @@ export default ((props: any) => (
                             <footer className="blockquote-footer">Justin Phillips, Software Engineer, Lyft</footer>
                             <div className="d-flex justify-content-center my-4">
                                 <a href="/case-studies/lyft-monolith-to-microservices" className="btn">
-                                    <img src="/external-logos/lyft-logo.svg" width="110px" alt="Lyft" />
+                                    <img src="/external-logos/lyft-color-logo.svg" width="110px" alt="Lyft" />
                                 </a>
                             </div>
                         </blockquote>

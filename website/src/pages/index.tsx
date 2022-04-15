@@ -6,7 +6,7 @@ import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import Layout from '../components/Layout'
 import { ContentSection } from '../components/content/ContentSection'
 import { IntegrationsSection } from '../components/IntegrationsSection'
-import { CustomerLogosSectionAnimated } from '../components/product/CustomerLogosSectionAnimated'
+import { CustomerLogos } from '../components/CustomerLogos'
 import { SelfHostedSection } from '../components/SelfHostedSection'
 import { buttonStyle, buttonLocation } from '../tracking'
 
@@ -34,53 +34,64 @@ const Index: FunctionComponent<PageProps> = props => {
                 description:
                     'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Soucegraph.',
             }}
+            heroAndHeaderClassName="bg-white"
         >
-            <div className="hero text-center max-w-700 mx-auto py-7 px-2">
-                <h1 className="text-5xl font-weight-bold">
-                    <span className="d-block text-transparent bg-clip-text text-gradient">{headline}</span> across your entire codebase
-                </h1>
-                <p className="font-weight-bold my-5">
-                    Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
-                    code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.
-                </p>
+            <div className="bg-white py-7 px-2">
+                <div className="text-center max-w-700 mx-auto">
+                    <h1 className="text-5xl font-weight-bold">
+                        <span className="d-block text-transparent bg-clip-text text-gradient">{headline}</span> across your entire codebase
+                    </h1>
+                    <p className="font-weight-bold my-5">
+                        Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
+                        code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.
+                    </p>
 
-                <div className="max-w-400 mx-auto flex-column flex-sm-row d-sm-flex align-items-center">
-                    <div className="col-sm-6 px-sm-0 mb-3 mb-sm-0 mr-sm-3">
-                        <Link
-                            className="btn btn-primary w-100"
-                            to="/get-started"
-                            title="Get started"
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.hero}
-                            data-button-type="cta"
-                        >
-                            Get started
-                        </Link>
+                    <div className="max-w-350 mx-auto flex-column flex-sm-row d-sm-flex align-items-center">
+                        <div className="col-sm-6 px-sm-0 mb-3 mb-sm-0 mr-sm-3">
+                            <Link
+                                className="btn btn-primary w-100"
+                                to="/get-started"
+                                title="Get started"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Get started
+                            </Link>
+                        </div>
+                        <div className="col-sm-6 px-sm-0">
+                            <Link
+                                className="btn btn-outline-primary w-100"
+                                to="/demo"
+                                title="Request a demo"
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
+                                Request a demo
+                            </Link>
+                        </div>
                     </div>
-                    <div className="col-sm-6 px-sm-0">
-                        <Link
-                            className="btn btn-outline-primary w-100"
-                            to="/demo"
-                            title="Request a demo"
-                            data-button-style={buttonStyle.outline}
-                            data-button-location={buttonLocation.hero}
-                            data-button-type="cta"
-                        >
-                            Request a demo
-                        </Link>
-                    </div>
+
+
+                    <p className="mt-5">
+                        Product or installation questions?{' '}
+                        <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
+                            Talk to an expert
+                        </a>
+                    </p>
+                </div>
+                
+                <div className="py-7">
+                    <CustomerLogos />
                 </div>
 
-
-                <p className="mt-5">
-                    Product or installation questions?{' '}
-                    <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
-                        Talk to an expert
-                    </a>
-                </p>
+                <div className="max-w-600 mx-auto text-center">
+                    <h2 className="font-weight-bold">Over <span className="text-vivid-violet">1.2M engineers</span> use Sourcegraph to build software you rely on</h2>
+                    <Link to="/case-studies">Learn how our customers use Sourcegraph</Link>
+                </div>
             </div>
 
-            {/* <CustomerLogos /> */}
 
             <ContentSection className="mt-5 mb-6">
                 <div className="row flex-wrap-reverse">

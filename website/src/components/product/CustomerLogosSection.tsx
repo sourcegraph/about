@@ -15,26 +15,26 @@ const ITEMS: {
     },
     {
         name: 'Nutanix',
-        url: '/external-logos/nutanix-logo.svg',
+        url: '/external-logos/nutanix-color-logo.svg',
     },
     {
         name: 'Uber',
-        url: '/external-logos/uber.svg',
+        url: '/external-logos/uber-logo.svg',
     },
     {
         name: 'Lyft',
-        url: '/external-logos/lyft-logo.svg',
+        url: '/external-logos/lyft-color-logo.svg',
         link: {
             url: '/case-studies/lyft-monolith-to-microservices',
         },
     },
     {
         name: 'Amazon',
-        url: '/external-logos/amazon-logo.svg',
+        url: '/external-logos/amazon-color-logo.svg',
     },
     {
         name: 'Qualtrics',
-        url: '/external-logos/qualtrics-logo.svg',
+        url: '/external-logos/qualtrics-color-logo.svg',
     },
     {
         name: 'Toast',
@@ -42,7 +42,7 @@ const ITEMS: {
     },
     {
         name: 'GE',
-        url: '/external-logos/general-electric-logo.svg',
+        url: '/external-logos/general-electric-color-logo.svg',
     },
     {
         name: 'SoFi',
@@ -89,7 +89,7 @@ const ITEMS: {
     },
     {
         name: 'Paypal',
-        url: '/external-logos/paypal-logo.svg',
+        url: '/external-logos/paypal-color-logo.svg',
     },
     {
         name: 'Convoy',

@@ -147,7 +147,7 @@ export default ((props: any) => (
                                         Aneesh Agrawal, Software Engineer, Lyft
                                     </footer>
                                     <div className="d-flex justify-content-center my-4">
-                                        <img src="/external-logos/lyft-logo.svg" width="87px" alt="Lyft" />
+                                        <img src="/external-logos/lyft-color-logo.svg" width="87px" alt="Lyft" />
                                     </div>
                                 </blockquote>
                             </a>

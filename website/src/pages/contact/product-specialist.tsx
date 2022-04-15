@@ -67,7 +67,7 @@ export default class SalesPage extends React.Component<any, any> {
                                 </div>
                             </div>
                             <div className="col-md-6">
-                                <CustomerLogosSection className="full-color mt-3 mb-6" />
+                                <CustomerLogosSection className="mt-3 mb-6" />
                             </div>
                         </div>
                     </div>

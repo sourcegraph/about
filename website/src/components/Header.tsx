@@ -127,7 +127,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                 <Nav className="right-nav justify-content-lg-end">
                                     {!this.props.hideGetStartedButton && (
                                         <Nav.Link
-                                            className="btn btn-simple px-2 py-2"
+                                            className="btn btn-simple px-2 py-2 font-weight-bold"
                                             href="https://sourcegraph.com/search"
                                             title="Search code"
                                         >
@@ -136,7 +136,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     )}
 
                                     <Nav.Link
-                                        className="btn btn-outline-primary ml-3 px-5 py-2"
+                                        className="btn btn-outline-primary ml-3 px-5 py-2 font-weight-bold"
                                         data-button-style={buttonStyle.outline}
                                         data-button-location={buttonLocation.nav}
                                         data-button-type="cta"
@@ -148,7 +148,7 @@ export default class Header extends React.Component<HeaderProps, any> {
 
                                     {!this.props.hideGetStartedButton && (
                                         <Nav.Link
-                                            className="btn btn-primary ml-3 px-5 py-2"
+                                            className="btn btn-primary ml-3 px-5 py-2 font-weight-bold"
                                             data-button-style={buttonStyle.primary}
                                             data-button-location={buttonLocation.nav}
                                             data-button-type="cta"

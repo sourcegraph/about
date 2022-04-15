@@ -10,7 +10,7 @@ import { BlogListItem } from '../../components/BlogListItem'
 import { QuoteCarousel } from '../../components/QuoteCarousel'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
-import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
+import { CustomerLogos } from '../../components/CustomerLogos'
 
 import styles from './useCases.module.scss'
 
@@ -114,7 +114,7 @@ const quoteCarouselItems = [
         header: 'Nutanix fixed Log4j in days',
         quote: 'The more we dug, the more we realized [Log4Shell] was everywhere and nowhere at the same time… Sourcegraph was the right product at the right time.',
         by: 'Jon Kohler, Technical Director of Solution Engineering at Nutanix',
-        logoImage: '/external-logos/nutanix-logo.svg',
+        logoImage: '/external-logos/nutanix-color-logo.svg',
         logoAlt: 'Nutanix',
     },
     {
@@ -313,9 +313,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray-3">
+        <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
+                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
@@ -330,7 +330,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="py-6" />
+
+            <div className="mt-6">
+                <CustomerLogos />
+            </div>
         </div>
 
         <ContentSection className="py-lg-7 py-5">

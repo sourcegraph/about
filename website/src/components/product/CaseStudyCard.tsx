@@ -12,7 +12,7 @@ interface CaseStudy {
 export const CASESTUDIES: CaseStudy[] = [
     {
         name: 'Nutanix',
-        logo: '/external-logos/nutanix-logo.svg',
+        logo: '/external-logos/nutanix-color-logo.svg',
         title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph.',
         url: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
     },
@@ -66,7 +66,7 @@ export const CASESTUDIES: CaseStudy[] = [
     },
     {
         name: 'Lyft',
-        logo: '/external-logos/lyft-logo.svg',
+        logo: '/external-logos/lyft-color-logo.svg',
         title: 'Lyft ensures production stability during monolith to microservices transition.',
         url: '/case-studies/lyft-monolith-to-microservices',
     },
