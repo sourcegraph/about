@@ -101,7 +101,7 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                 <h5 className="font-weight-normal py-3">Learn how these software companies used Sourcegraph</h5>
                 <div className="d-flex flex-wrap pt-4">
                     {caseStudyItems.map((study, i) => (
-                        <div key={i} className="col-md-4 mb-6 px-0 brightness-0">
+                        <div key={i} className="col-sm-6 col-md-4 mb-6 px-0 brightness-0">
                             <CaseStudyCard study={study} />
                         </div>
                     ))}
