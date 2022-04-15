@@ -31,13 +31,13 @@ const features: Features[] = [
         icon: ToolsIcon,
         title: 'Fix vulnerabilities',
         description: 'Find, fix, and track vulnerable code quickly across your entire codebase.',
-        link: '/use-cases/vulnerabilities'
+        link: '/use-cases/vulnerabilities',
     },
     {
         icon: ClockOutlineIcon,
         title: 'Onboard developers',
         description: 'Decrease time to first commit with codebase onboarding and knowledge sharing.',
-        link: '/use-cases/onboarding'
+        link: '/use-cases/onboarding',
     },
     {
         icon: CheckboxMarkedCircleOutlineIcon,
@@ -56,7 +56,7 @@ const features: Features[] = [
         title: 'Boost code health',
         description: 'Improve code health with large-scale changes, and track key initiatives.',
         // link: '/use-cases/code-health'
-    }
+    },
 ]
 
 const Home: FunctionComponent<PageProps> = props => {
@@ -88,7 +88,8 @@ const Home: FunctionComponent<PageProps> = props => {
             <div className={classNames(styles.hero, 'bg-white py-7 px-2')}>
                 <div className="text-center max-w-700 mx-auto">
                     <h1 className="text-5xl font-weight-bold">
-                        <span className="d-block text-transparent bg-clip-text text-gradient">{headline}</span> across your entire codebase
+                        <span className="d-block text-transparent bg-clip-text text-gradient">{headline}</span> across
+                        your entire codebase
                     </h1>
                     <p className="font-weight-bold my-5">
                         Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
@@ -122,7 +123,6 @@ const Home: FunctionComponent<PageProps> = props => {
                         </div>
                     </div>
 
-
                     <p className="mt-5">
                         Product or installation questions?{' '}
                         <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
@@ -130,13 +130,16 @@ const Home: FunctionComponent<PageProps> = props => {
                         </a>
                     </p>
                 </div>
-                
+
                 <div className="py-7">
                     <CustomerLogos />
                 </div>
 
                 <div className="max-w-600 mx-auto text-center">
-                    <h2 className="font-weight-bold">Over <span className="text-vivid-violet">1.2M engineers</span> use Sourcegraph to build software you rely on</h2>
+                    <h2 className="font-weight-bold">
+                        Over <span className="text-vivid-violet">1.2M engineers</span> use Sourcegraph to build software
+                        you rely on
+                    </h2>
                     <Link to="/case-studies">Learn how our customers use Sourcegraph</Link>
                 </div>
             </div>
@@ -152,9 +155,10 @@ const Home: FunctionComponent<PageProps> = props => {
                         {features.map((feature, i) => (
                             <div
                                 key={feature.title}
-                                className={classNames({
+                                className={classNames(
+                                    {
                                         ['mb-6']: i !== features.length - 1,
-                                        ['mb-0']: i === features.length -1
+                                        ['mb-0']: i === features.length - 1,
                                     },
                                     'col-sm-6 d-flex align-items-start'
                                 )}
@@ -170,15 +174,27 @@ const Home: FunctionComponent<PageProps> = props => {
                     </div>
                 </ContentSection>
 
-                <div className={classNames(styles.floatingBox, 'col-6 bg-gradient-venus px-7 p-6 lg-absolute right-0 bottom-0 max-w-550')}>
+                <div
+                    className={classNames(
+                        styles.floatingBox,
+                        'col-6 bg-gradient-venus px-7 p-6 lg-absolute right-0 bottom-0 max-w-550'
+                    )}
+                >
                     <h3 className="font-weight-bold mb-4">Want to use Sourcegraph at your company?</h3>
-                    <p className="text-xl"><Link to="/get-started">Get started</Link> for free with up to 10 teammates or <Link to="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph in your own environment.</p>
+                    <p className="text-xl">
+                        <Link to="/get-started">Get started</Link> for free with up to 10 teammates or{' '}
+                        <Link to="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph
+                        in your own environment.
+                    </p>
                 </div>
             </div>
 
             <ContentSection color="white" className="py-8 mt-8 pb-7 text-center">
                 <h1 className="font-weight-bold">How teams use Sourcegraph</h1>
-                <p className="max-w-500 mx-auto">Sourcegraph's code intelligence platform is built with features that help you understand, fix, and automate across your entire codebase.</p>
+                <p className="max-w-500 mx-auto">
+                    Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
+                    automate across your entire codebase.
+                </p>
             </ContentSection>
 
             <ContentSection className="mt-5 mb-6">
