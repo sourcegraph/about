@@ -19,7 +19,7 @@ Dependencies search beta feature announced in our 3.38 release now supports sear
 
 ## Code Insights is no longer backed by Timescale
 
-Code Insights can now be used with managed database solutions that do not support [Timescale](https://www.timescale.com/), and it now uses native Postgres. 
+Code Insights can now be used with managed database solutions that do not support [Timescale](https://www.timescale.com/), like Amazon RDS. It now uses native Postgres. 
 
 This migration has been applied over 3.37 and 3.38, and should be seamless if you are running infrastructure as described by the [official Sourcegraph deployment repositories](https://sourcegraph.com/search?q=context:%40sourcegraph/all+repo:%5Egithub%5C.com/sourcegraph/deploy-sourcegraph+select:repo&patternType=literal). If you have a customized deployment, you may need to incorporate some changes into your configuration ([more details and examples here](https://github.com/sourcegraph/sourcegraph/issues/32271#issuecomment-1086328666)).
 
