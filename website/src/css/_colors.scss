@@ -107,6 +107,7 @@ $theme-colors: (
     'green-5': $green-5,
     'green-7': $green-7,
     'green-9': $green-9,
+
     'alabaster': $alabaster,
     'light-blue': $light-blue,
     'light-green': $light-green,
@@ -117,6 +118,7 @@ $theme-colors: (
     'dodger-blue': $dodger-blue
 );
 
+// TODO: After Tailwind migration this class can be deleted
 .brightness-0 {
     filter: brightness(0);
 }
