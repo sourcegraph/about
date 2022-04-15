@@ -9,10 +9,7 @@ interface Props {
     className?: string
 }
 
-export const TrySourcegraph: FunctionComponent<Props> = ({
-    demoFormURL = 'https://info.sourcegraph.com/demo-request',
-    className = '',
-}) => (
+export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo', className = '' }) => (
     <ContentSection className={className}>
         <div className="row">
             <div className="col-md-6 pr-md-5">

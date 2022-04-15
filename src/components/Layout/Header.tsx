@@ -98,7 +98,7 @@ const Header: FunctionComponent<Props> = props => {
 
                             <Nav.Link
                                 className="btn btn-outline-primary ml-3 px-5 py-2"
-                                href="https://info.sourcegraph.com/demo-request"
+                                href="/demo"
                                 title="Request a demo"
                             >
                                 Request a demo
@@ -253,9 +253,10 @@ const Header: FunctionComponent<Props> = props => {
                                     </li>
                                 )}
                                 <li className="header__nav-item nav-item" role="presentation">
-                                    <a className="nav-link" href="https://info.sourcegraph.com/demo-request">
-                                        Request a demo
-                                    </a>
+                                    <Link href="/demo" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a className="nav-link">Request a demo</a>
+                                    </Link>
                                 </li>
                                 {!props.hideGetStartedButton && (
                                     <li className="header__nav-item nav-item" role="presentation">
