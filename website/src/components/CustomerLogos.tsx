@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 
 interface Logos {
-    name: string,
+    name: string
     src: string
 }
 
@@ -28,7 +28,7 @@ const logos: Logos[] = [
     },
     {
         name: 'Paypal',
-        src: '/external-logos/paypal-logo.svg', 
+        src: '/external-logos/paypal-logo.svg',
     },
     {
         name: 'Uber',

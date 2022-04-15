@@ -39,7 +39,8 @@ const Index: FunctionComponent<PageProps> = props => {
             <div className="bg-white py-7 px-2">
                 <div className="text-center max-w-700 mx-auto">
                     <h1 className="text-5xl font-weight-bold">
-                        <span className="d-block text-transparent bg-clip-text text-gradient">{headline}</span> across your entire codebase
+                        <span className="d-block text-transparent bg-clip-text text-gradient">{headline}</span> across
+                        your entire codebase
                     </h1>
                     <p className="font-weight-bold my-5">
                         Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
@@ -73,7 +74,6 @@ const Index: FunctionComponent<PageProps> = props => {
                         </div>
                     </div>
 
-
                     <p className="mt-5">
                         Product or installation questions?{' '}
                         <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
@@ -81,17 +81,19 @@ const Index: FunctionComponent<PageProps> = props => {
                         </a>
                     </p>
                 </div>
-                
+
                 <div className="py-7">
                     <CustomerLogos />
                 </div>
 
                 <div className="max-w-600 mx-auto text-center">
-                    <h2 className="font-weight-bold">Over <span className="text-vivid-violet">1.2M engineers</span> use Sourcegraph to build software you rely on</h2>
+                    <h2 className="font-weight-bold">
+                        Over <span className="text-vivid-violet">1.2M engineers</span> use Sourcegraph to build software
+                        you rely on
+                    </h2>
                     <Link to="/case-studies">Learn how our customers use Sourcegraph</Link>
                 </div>
             </div>
-
 
             <ContentSection className="mt-5 mb-6">
                 <div className="row flex-wrap-reverse">
