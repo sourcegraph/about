@@ -13,9 +13,7 @@ changelogItems:
 
 Sourcegraph 3.39 is now available! In this release:
 
-## Dependencies search now supports GO
-
-Dependencies search beta feature announced in our 3.38 release now supports searching your GO dependencies.
+## Create living documentation with Notebooks, now Generally Available
 
 ## Code Insights is no longer backed by Timescale
 
@@ -29,4 +27,10 @@ Any managed database solution that supports the [official Sourcegraph Postgres v
 
 We've added tree-sitter to our search-based recipe to make our local navigation for Java faster and more precise.
 
-https://user-images.githubusercontent.com/1657213/163855878-4355bcb0-5407-4307-b3f2-4581e1ab2fe2.mp4
+<video class="blog-image" title="Java code Intelligence" alt="An example of using Java Code Intelligence within the sourcegraph/sourcegraph repo." loop autoplay muted playsinline>
+  <source src="https://user-images.githubusercontent.com/1657213/163855878-4355bcb0-5407-4307-b3f2-4581e1ab2fe2.mp4">
+</video>
+
+## Search your Go dependenices
+
+[Dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search) allows you to quickly search through both your code and dependencies for faster incident and bug resolution. Dependencies search now supports Go dependencies in addition to NPM.
