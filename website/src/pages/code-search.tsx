@@ -59,7 +59,7 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
         {/* A search engine built for code */}
         <ContentSection>
             <div className="row">
-                <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 ">
+                <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9">
                     <iframe
                         className="embed-responsive-item"
                         src="https://www.youtube-nocookie.com/embed/aDU4C9j-hYA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -71,16 +71,16 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                 </div>
                 <div className="col-lg-6">
                     <h2 className="display-3 font-weight-bold mb-3 mt-4 mt-md-0">A search engine built for code</h2>
-                    <ul className="list-spaced">
-                        <li>
+                    <ul>
+                        <li className="mb-1">
                             <strong>Universal.</strong> Point Sourcegraph at the repositories you work with, stored in
                             any code host, or search across the open source universe.
                         </li>
-                        <li>
+                        <li className="mb-1">
                             <strong>Powerful.</strong> Get answers quickly with literal, structural, and regular
                             expression search, along with smart filters and Code Intelligence.
                         </li>
-                        <li>
+                        <li className="mb-1">
                             <strong>Extensible.</strong> Connect all your other tools to get things like test coverage,
                             1-click open file in editor, custom highlighting, and information from your other favorite
                             services all in one place with
@@ -89,37 +89,38 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                     </ul>
                 </div>
             </div>
-
         </ContentSection>
 
-        {/* Onboard to new code */}
+        {/* Notebooks */}
         <ContentSection>
             <div className="row pt-md-6">
                 <div className="col-lg-6">
-                    <h2 className="display-3 font-weight-bold mb-3 my-3 my-md-0">Onboard to new code fast with living documentation</h2>
-                    <ul className="list-spaced">
-                        <li>
-                            Create living documentation with markdown and live code queries to get engineers up to 
-                            speed on unfamiliar code faster
+                    <h2 className="display-3 font-weight-bold mb-3 mt-4 mt-md-0">
+                        Document and explore code with Notebooks
+                    </h2>
+                    <ul>
+                        <li className="mb-1">
+                            Create living documentation with markdown and live code queries to get engineers up to speed
+                            on unfamiliar code faster
                         </li>
-                        <li>
-                            Navigate through complex parts of your codebase or resolve incidents with collaborative 
-                            and shareable notebooks
+                        <li className="mb-1">
+                            Navigate through complex parts of your codebase or resolve incidents with collaborative and
+                            shareable notebooks
                         </li>
-                        <li>
-                            Embed notebooks anywhere you can embed HTML, like your own internal documentation, so you 
+                        <li className="mb-1">
+                            Embed notebooks anywhere you can embed HTML, like your own internal documentation, so you
                             can spend less time updating stale docs
                         </li>
                     </ul>
                 </div>
-                <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 ">
+                <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9">
                     <iframe
                         className="embed-responsive-item"
-                        src="https://www.youtube-nocookie.com/embed/aDU4C9j-hYA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
+                        src="https://storage.googleapis.com/sourcegraph-assets/notebooks/Notebooks_Capture_20s.mp4"
                         allowFullScreen={true}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         frameBorder={0}
-                        title="AND/OR operators for universal code search"
+                        title="Creating a Notebook with Sourcegraph"
                     ></iframe>
                 </div>
             </div>
