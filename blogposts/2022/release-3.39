@@ -19,7 +19,7 @@ Built with onboarding in mind, Notebooks make documentation effortless, stable, 
 
 !["Notebooks overview"](https://storage.googleapis.com/sourcegraph-assets/notebooks/notebooks_overview_release_post.mp4)
 
-With file-based Notebooks, augment existing documentation and meet where your developers already are. You can also embed notebooks on any web page, enabling easy integration with your knowledge management systems.
+Web-based notebooks are the easiest way to create and share notebooks with your team or company, but we also support file-based notebooks via a special `.snb.md` file type. With file-based Notebooks, you can augment existing documentation and meet where your developers where they already are. You can also embed notebooks on any web page, enabling easy integration with your knowledge management systems.
 
 Explore [public notebooks on sourcegraph.com](https://sourcegraph.com/notebooks?tab=explore) (no account required to view; create a free account to build your own) or get started creating your own at `https://{your-sourcegraph-url}/notebooks`!
 
