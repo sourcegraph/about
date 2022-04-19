@@ -321,7 +321,16 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                                     in seconds.
                                 </h4>
                                 <div className="d-flex flex-column pt-1">
-                                    <div id="form" />
+                                    <Link
+                                        className="btn btn-primary md-col-5 col-5"
+                                        to="/contact/request-code-insights-demo"
+                                        title="Request a Demo of Code Insights."
+                                        data-button-style={buttonStyle.primary}
+                                        data-button-location={buttonLocation.nav}
+                                        data-button-type="cta"
+                                    >
+                                        Request a demo
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -589,16 +598,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                             </p>
                         </div>
                         <div className="col-lg-7 d-flex flex-column pt-1">
-                            <Link
-                                className="btn btn-primary col-4 mr-3"
-                                to="/contact/request-code-insights-demo"
-                                title="Request a Demo of Code Insights."
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.trySourcegraph}
-                                data-button-type="cta"
-                            >
-                                Request a demo
-                            </Link>
+                            <div id="form" />
                         </div>
                     </div>
                 </ContentSection>
