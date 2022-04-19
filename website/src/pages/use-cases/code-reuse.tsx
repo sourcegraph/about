@@ -170,15 +170,15 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                                 on problems a teammate already solved.
                             </div>
                             <div className="d-flex flex-column flex-lg-row pt-1">
+                                <Link className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100" to="/demo" title="Request a Demo.">
+                                    Request a demo
+                                </Link>
                                 <Link
-                                    className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
+                                    className="btn btn-outline-primary w-md-100"
                                     to="/get-started"
                                     title="Try Sourcegraph."
                                 >
                                     Try Sourcegraph now
-                                </Link>
-                                <Link className="btn btn-outline-primary w-md-100" to="/demo" title="Request a Demo.">
-                                    Request a demo
                                 </Link>
                             </div>
                         </div>
