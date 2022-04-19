@@ -65,14 +65,15 @@ const logos: Logos[] = [
 ]
 
 export const CustomerLogos: FunctionComponent = () => (
-    <div className="d-flex flex-wrap align-items-center justify-content-center max-w-1000 mx-auto">
+    <div className="d-flex flex-wrap align-items-center justify-content-center max-w-1000 mx-auto user-select-none">
         {logos.map((logo: Logos) => (
             <img
                 key={logo.name}
                 src={logo.src}
-                alt={logo.name}
+                alt={`${logo.name} logo`}
                 title={`${logo.name} logo`}
                 className="max-w-100 h-100 my-3 mx-4 flex-shrink-0"
+                draggable={false}
             />
         ))}
     </div>

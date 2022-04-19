@@ -17,6 +17,9 @@ import { CustomerLogos } from '../../components/CustomerLogos'
 import { SelfHostedSection } from '../../components/SelfHostedSection'
 import { buttonStyle, buttonLocation } from '../../tracking'
 
+import meshLeft from './assets/mesh-left.png'
+import meshRight from './assets/mesh-right.png'
+
 import styles from './home.module.scss'
 
 interface Features {
@@ -85,10 +88,19 @@ const Home: FunctionComponent<PageProps> = props => {
             }}
             heroAndHeaderClassName="bg-white"
         >
-            <div className={classNames(styles.hero, 'bg-white py-7 px-2')}>
+            <div className="bg-white py-7 px-2 position-relative">
+                <div
+                    className={classNames(styles.mesh, 'd-none d-lg-block position-absolute top-0 left-0')}
+                    style={{ backgroundImage: `url(${meshLeft})` }}
+                />
+                <div
+                    className={classNames(styles.mesh, 'd-none d-lg-block position-absolute top-0 right-0')}
+                    style={{ backgroundImage: `url(${meshRight})` }}
+                />
+
                 <div className="text-center max-w-700 mx-auto">
                     <h1 className="text-5xl font-weight-bold">
-                        <span className="d-block text-transparent bg-clip-text text-gradient">{headline}</span> across
+                        <span className="d-block mb-2 text-transparent bg-clip-text text-gradient">{headline}</span> across
                         your entire codebase
                     </h1>
                     <p className="font-weight-bold my-5">

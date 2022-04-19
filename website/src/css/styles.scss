@@ -321,11 +321,14 @@ code.border {
 
 $positions: ('top', 'right', 'bottom', 'left');
 @each $position in $positions {
+
+    // Zero positions
     .#{$position}-0 {
         #{$position}: 0;
     }
 }
 
+// Breakpoint-based positions
 @each $breakpoint, $width in $grid-breakpoints {
     @media (min-width: $width) {
         .#{$breakpoint}-absolute {
