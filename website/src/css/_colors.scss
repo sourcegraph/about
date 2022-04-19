@@ -117,8 +117,3 @@ $theme-colors: (
     'cornflower-blue': $cornflower-blue,
     'dodger-blue': $dodger-blue
 );
-
-// TODO: After Tailwind migration this class can be deleted
-.brightness-0 {
-    filter: brightness(0);
-}
