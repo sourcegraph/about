@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout } from '@components'
+import { Layout, CustomerLogosSection } from '@components'
 import { useHubSpot } from '@hooks'
 
 const description = 'Contact us to learn more about Sourcegraph enterprise.'
@@ -34,7 +34,7 @@ const Contact: FunctionComponent = () => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            {/* <CustomerLogosSection className="full-color mt-3 mb-6" /> */}
+                            <CustomerLogosSection className="full-color mt-3 mb-6" />
                         </div>
                     </div>
                 </div>
