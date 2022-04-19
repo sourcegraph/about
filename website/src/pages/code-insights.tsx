@@ -1,6 +1,5 @@
 import { Link, PageProps } from 'gatsby'
 import * as React from 'react'
-
 import { BlogListItem } from '../components/BlogListItem'
 import { ContentSection } from '../components/content/ContentSection'
 import { CodeInsightExample } from '../components/code-insights/CodeInsightsExamples'
@@ -16,9 +15,7 @@ import {
 import Layout from '../components/Layout'
 import { TabCarousel } from '../components/TabCarousel'
 import { TemplateCodeBlock } from '../components/TemplateCodeBlock'
-
 import { useHubSpot } from '../hooks/hubSpot'
-
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import CustomCarousel from '../components/CustomCarousel'
@@ -320,20 +317,11 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                                     Track what really matters to you and your team.
                                 </h1>
                                 <h4 className="mb-5">
-                                    Transform your code into a queryable database to create customizable, visual
-                                    dashboards in seconds.
+                                    Transform your code into a queryable database to create customizable, visual dashboards
+                                    in seconds.
                                 </h4>
                                 <div className="d-flex flex-column pt-1">
-                                    <Link
-                                        className="btn btn-primary md-col-5 col-5"
-                                        to="/contact/request-code-insights-demo"
-                                        title="Request a Demo of Code Insights."
-                                        data-button-style={buttonStyle.primary}
-                                        data-button-location={buttonLocation.nav}
-                                        data-button-type="cta"
-                                    >
-                                        Request a demo
-                                    </Link>
+                                    <div id="form" />
                                 </div>
                             </div>
                         </div>
@@ -373,8 +361,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                         <p>
                             Forget about inaccurate spreadsheets, manual processes, and missing historical data. You can{' '}
                             <strong>track everything in your codebase</strong>, from migrations to code smells, in a
-                            seamless and precise way. Make data-driven decisions using visualizations based on the power
-                            and accuracy of Sourcegraph Code Search.
+                            seamless and precise way. Make data-driven decisions using visualizations based on the power and
+                            accuracy of Sourcegraph Code Search.
                         </p>
                     </div>
                 </div>
@@ -391,7 +379,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                 </div>
             </ContentSection>
 
-            <div className="bg-gradient-blue-mist py-4">
+            <div className="bg-gradient-venus-radial py-4">
                 <ContentSection className="py-lg-6">
                     <div className="row d-flex text-center justify-content-center px-lg-7 py-6">
                         <div className="w-100">
@@ -401,9 +389,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                             <h4 className="font-weight-normal">
                                 &ldquo;As we've grown, so has the need to better track and communicate our progress and
                                 goals across the engineering team and broader company. With Code Insights, our data and
-                                migration tracking is accurate across our entire codebase, and our engineers and
-                                managers can shift out of manual spreadsheets and spend more time working on
-                                code.&rdquo;
+                                migration tracking is accurate across our entire codebase, and our engineers and managers
+                                can shift out of manual spreadsheets and spend more time working on code.&rdquo;
                             </h4>
                             <div className="pt-3 text-muted text-center">
                                 &mdash; Balázs Tóthfalussy, Engineering Manager, Prezi
@@ -418,7 +405,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                 </ContentSection>
             </div>
 
-            <div className="bg-light-gray2">
+            <div className="bg-light-gray-3">
                 <ContentSection className="py-7">
                     <div className="d-flex flex-wrap">
                         <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">
@@ -431,7 +418,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                         <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                             <div className="d-flex py-lg-5 py-3">
                                 <div className="mr-4">
-                                    <BullsEyeArrowIcon className="icon" size={70} />
+                                    <BullsEyeArrowIcon className="icon text-blurple" size={70} />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <div className="display-lg-3 font-weight-bold">Set goals</div>
@@ -440,7 +427,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                             </div>
                             <div className="d-flex py-lg-5 py-3">
                                 <div className="icon mr-4">
-                                    <LighteningBoltOutlineIcon className="icon" size={70} />
+                                    <LighteningBoltOutlineIcon className="icon text-blurple" size={70} />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <div className="display-lg-3 font-weight-bold">Plan proactively</div>
@@ -453,7 +440,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                         <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                             <div className="d-flex py-lg-5 py-3">
                                 <div className="mr-4">
-                                    <TrendingUpIcon className="icon" size={70} />
+                                    <TrendingUpIcon className="icon text-blurple" size={70} />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <div className="display-lg-3 font-weight-bold">{'Track ownership & trends'}</div>
@@ -462,7 +449,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                             </div>
                             <div className="d-flex py-lg-5 py-3">
                                 <div className="mr-4">
-                                    <RocketLaunchOutlineIcon className="icon" size={70} />
+                                    <RocketLaunchOutlineIcon className="icon text-blurple" size={70} />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <div className="display-lg-3 font-weight-bold">Celebrate progress</div>
@@ -492,7 +479,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
             </ContentSection>
 
             {/* Use Cases */}
-            <div className="bg-gradient-blue-mist py-4 tab-section">
+            <div className="bg-gradient-venus-radial py-4 tab-section">
                 <ContentSection className="py-4 py-md-7">
                     <h1 className="mb-2 text-center font-weight-bold">Popular Code Insights templates</h1>
                     <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
@@ -546,7 +533,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
             </div>
 
             {/* Use Cases Carousel */}
-            <div className="bg-gradient-blue-mist py-4 tab-carousel-section">
+            <div className="bg-gradient-venus-radial py-4 tab-carousel-section">
                 <ContentSection className="py-4 py-md-7">
                     <h1 className="mb-2 text-center">Popular Code Insights templates</h1>
                     <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
@@ -591,18 +578,27 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                 </ContentSection>
             </div>
 
-            <div className="bg-light-gray2">
+            <div className="bg-light-gray-3">
                 <ContentSection>
                     <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
                         <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
                             <h1 className="font-weight-bold">Get started with Code Insights</h1>
                             <p>
-                                Create a code insight in 60 seconds and get historical data for previously untracked
-                                metrics — data backfills automatically.
+                                Create a code insight in 60 seconds and get historical data for previously untracked metrics
+                                — data backfills automatically.
                             </p>
                         </div>
                         <div className="col-lg-7 d-flex flex-column pt-1">
-                            <div id="form" />
+                            <Link
+                                className="btn btn-primary col-4 mr-3"
+                                to="/contact/request-code-insights-demo"
+                                title="Request a Demo of Code Insights."
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.trySourcegraph}
+                                data-button-type="cta"
+                            >
+                                Request a demo
+                            </Link>
                         </div>
                     </div>
                 </ContentSection>

@@ -21,7 +21,7 @@
         border-top: 1px solid $dark-5;
         border-bottom: 1px solid $dark-5;
         color: black;
-        background-color: $blue-3;
+        background-color: $malibu;
         padding-top: 1em;
         padding-bottom: 1em;
         &-highlight {
@@ -51,13 +51,13 @@
 
     &__content-option {
         margin: 1.5em 0 1.5em 0;
-        color: $blue-3;
+        color: $malibu;
         a {
             padding-top: 0.5em;
             padding-bottom: 0.5em;
             padding-right: 1em;
             padding-left: 1em;
-            color: $blue-3;
+            color: $malibu;
 
             &:first-child {
                 margin-left: -1em;
@@ -66,8 +66,8 @@
             border-radius: 0.5em;
         }
         a.podcast__content-option-selected {
-            text-shadow: 0 0 0.9px $blue-3, 0 0 0.9px $blue-3;
-            border: 1px solid $blue-3;
+            text-shadow: 0 0 0.9px $malibu, 0 0 0.9px $malibu;
+            border: 1px solid $malibu;
             box-sizing: border-box;
         }
     }
@@ -92,13 +92,13 @@
         font-size: 2.5em;
         margin: 0.75em auto 0.75em auto;
         font-weight: 100;
-        color: $blue-3;
+        color: $malibu;
         a {
-            color: $blue-3;
+            color: $malibu;
         }
         a:hover {
             text-decoration: none;
-            border-bottom: 2px solid $blue-3;
+            border-bottom: 2px solid $malibu;
         }
     }
 

@@ -1,33 +1,31 @@
-/* Sourcegraph Brand Colors */
-$sg-space-black: #000000;
-$blue: #2c7ef6;
-$red: #dc3545;
-$purple: #5033e1;
-$white: #ffffff;
-$gray: #6c757d;
-$brand-purple: #a112ff;
-$brand-cyan: #00cbec;
-$brand-orange: #ff5543;
-$brand-primary-blue: #2a66e2;
-$logo-purple: #b200f8;
+/**
+ * Sourcegraph Brand Colors
+ * See: https://handbook.sourcegraph.com/departments/marketing/brand/brand_guidelines/color/
+ */
 
-// Sourcegraph Brand Secondary Colors
-$brand-onahau: #c7ffff;
-$brand-mint: #8fedcf;
-$brand-fog: #e8d1ff;
-// TODO: consolidate and name more brand colours
+// Sourcegraph Primary Colors
+$sky-blue: #00cbec;
+$vivid-violet: #a112ff;
+$vermillion: #ff5543;
 
-$body-bg: #f9f9f9;
-$body-color: #222233;
+// Sourcegraph Secondary Colors
+$yellow-mist: #fff2cf;
+$red-mist: #ffc9c9;
+$violet-mist: #e8d1ff;
+$plum-mist: #bfbfff;
+$blue-mist: #c7ffff;
+$green-mist: #c4ffe8;
+$mint: #8fedcf;
+$blurple: #5033e1;
+$pacific-blue: #00a1c7;
 
-$nav-bg-color: #f9f9f9;
+// Sourcegraph Colors for Website UI
+$pale-sky: #6c757d;
+$space-black: #000000;
 
-$dark-13: #000000;
-$dark-12: #07090d;
-$dark-11: #0e121b;
-$dark-10: #151c28;
+// Colors not listed in our Brand Guidelines
 $dark-9: #1d2535;
-$dark-8: #242e42;
+$dark-8: #222233;
 $dark-5: #39496a;
 $dark-3: #475c85;
 
@@ -37,52 +35,85 @@ $light-5: #a2b0cd;
 $light-6: #afbcd4;
 $light-8: #cad2e2;
 $light-9: #d7ddea;
-$light-gray-0: #ddd;
+$light-gray-0: #dddddd;
 $light-gray-1: #dee2e6;
-$light-gray-2: #f9fafb;
-$light-10: #e4e9f1;
-$light-11: #f2f4f8;
-
-$red-7: #f03e3e;
-
-$indigo-5: #5c7cfa;
-
-$light-green: #bceee9;
-$light-green2: #c4ffe8;
-$light-blue: #d5e6f7;
-$light-blue2: #bfbfff;
-$light-yellow: #fff2cf;
-$light-red: #ffc9c9;
-$blue-3: #72c3fc;
-$blue-7: #1c7cd6;
-$blue-mist: #c7ffff;
-$wild-sand: #f5f5f5;
-
-$cyan-2: #00a1c7;
-$cyan-3: #66d9e8;
-
-$teal-7: #0ca678;
+$light-gray-2: #e4e9f1;
+$light-gray-3: #f2f4f8;
+$light-gray-4: #f9fafb;
+$light-gray-5: #f5f5f5;
 
 $green-1: #d3f9d8;
 $green-5: #51cf66;
 $green-7: #37b24d;
 $green-9: #2b8a3e;
 
-.bg-light-gray {
-    background-color: $light-gray-2;
-}
-.bg-light-gray2 {
-    background-color: $light-11;
-}
-.bg-black {
-    background-color: $sg-space-black;
-}
-.bg-purple {
-    background-color: $logo-purple;
-}
-.bg-light-transparent {
-    background-color: transparentize($light-11, 0.3);
-}
-.bg-unset {
-    background-color: unset;
-}
+$alabaster: #f9f9f9;
+$light-blue: #d5e6f7;
+$light-green: #bceee9;
+$turquoise: #66d9e8;
+$malibu: #72c3fc;
+$curious-blue: #1c7cd6;
+$cornflower-blue: #5c7cfa;
+$dodger-blue: #2c7ef6;
+
+/**
+ * Bootstrap Theme Colors
+ * This allows us to use text-{colorName} and bg-{colorName} utility classes
+ */
+$theme-colors: (
+    // Bootstrap overrides
+    'primary': $blurple,
+
+    // Sourcegraph Primary Colors
+    'sky-blue': $sky-blue,
+    'vivid-violet': $vivid-violet,
+    'vermillion': $vermillion,
+
+    // Sourcegraph Secondary Colors
+    'yellow-mist': $yellow-mist,
+    'red-mist': $red-mist,
+    'violet-mist': $violet-mist,
+    'plum-mist': $plum-mist,
+    'blue-mist': $blue-mist,
+    'green-mist': $green-mist,
+    'mint': $mint,
+    'blurple': $blurple,
+    'pacific-blue': $pacific-blue,
+
+    // Sourcegraph Colors for Website UI
+    'pale-sky': $pale-sky,
+    'black': $space-black,
+
+    // Colors not listed in our Brand Guidelines
+    'dark-9': $dark-9,
+    'dark-8': $dark-8,
+    'dark-5': $dark-5,
+    'dark-3': $dark-3,
+
+    'light-1': $light-1,
+    'light-2': $light-2,
+    'light-5': $light-5,
+    'light-6': $light-6,
+    'light-8': $light-8,
+    'light-9': $light-9,
+    'light-gray-0': $light-gray-0,
+    'light-gray-1': $light-gray-1,
+    'light-gray-2': $light-gray-2,
+    'light-gray-3': $light-gray-3,
+    'light-gray-4': $light-gray-4,
+    'light-gray-5': $light-gray-5,
+
+    'green-1': $green-1,
+    'green-5': $green-5,
+    'green-7': $green-7,
+    'green-9': $green-9,
+
+    'alabaster': $alabaster,
+    'light-blue': $light-blue,
+    'light-green': $light-green,
+    'turquoise': $turquoise,
+    'malibu': $malibu,
+    'curious-blue': $curious-blue,
+    'cornflower-blue': $cornflower-blue,
+    'dodger-blue': $dodger-blue
+);
