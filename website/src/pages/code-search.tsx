@@ -121,6 +121,8 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                         loop={true}
                         playsInline={true}
                         controls={false}
+                        // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
+                        data-cookieconsent="ignore"
                     >
                         <source
                             src="https://storage.googleapis.com/sourcegraph-assets/notebooks/Notebooks_Capture_20s.mp4"
