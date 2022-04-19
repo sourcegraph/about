@@ -1,14 +1,14 @@
 ---
 title: 'Sourcegraph 3.39 release'
 publishDate: 2022-04-21T10:00-07:00
-description: 'Sourcegraph 3.39 introduces...'
+description: 'Sourcegraph 3.39 introduces Notebooks, Code Insights on native Postgres, faster Code Intelligence for Java, and dependencies search for Go.'
 tags: [blog, release]
 slug: 'release/3.39'
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-39-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-39-release.png
 changelogItems:
-  - description: "A redesigned repository page, with useful information such as recent commits and Code Intel advailability, is now available using the `new-repo-page` feature flag."
+  - description: "A redesigned repository page, with information such as recent commits and Code Intelligence availability, is now available using the `new-repo-page` feature flag."
     url: https://github.com/sourcegraph/sourcegraph/pull/33319
     category: Repositories
   - description: "The Code Insights GraphQL API now accepts search contexts as filters. Using a search context as a filter will extract the `repo` and `-repo` search query fields from the context and apply it, allowing you to scope your insights."
@@ -17,13 +17,13 @@ changelogItems:
   - description: "The Code Insights commit indexer can now index commits in smaller batches to ensure it succeeds for repositories with many commits. Set the number of days per batch in the site setting `insights.commit.indexer.windowDuration`. A value of 0 (default) will disable batching."
     url: https://github.com/sourcegraph/sourcegraph/pull/33666
     category: Code Insights
-  - description: "Code Insights series data is now sorted by semantic version and then alphabetically to make it easier to see data in order of earliest to latest versions."
+  - description: "Code Insights series data is now sorted by semantic version and then alphabetically to make it easier to understand data in order of earliest to latest versions."
     url: https://github.com/sourcegraph/sourcegraph/pull/33454
     category: Code Insights
   - description: "We've optimized search patterns containing `and` and `not` expressions. These kinds of queries are now an order of magnitude faster. Previous cases where no results were returned due to hitting the file limit should now work and return results quickly."
     url: https://github.com/sourcegraph/sourcegraph/pull/33308
     category: Search
-  - description: "Built-in authentication (i.e. username and password) now supports account lockout after consecutive failed sign-in attempts. New config options have been added under `\"auth.lockout\"` to customize the threshold for failed attempts and length of lockouts."
+  - description: "Built-in authentication (i.e. username and password) now supports account lockout after consecutive failed sign-in attempts. New config options have been added under `\auth.lockout\` to customize the threshold for failed attempts and length of lockouts."
     url: https://github.com/sourcegraph/sourcegraph/pull/33999
     category: Admin
 ---
@@ -34,13 +34,15 @@ Sourcegraph 3.39 is now available! In this release:
 
 Built with onboarding in mind, Notebooks make documentation effortless, stable, and fun. Notebooks are inspired by the Jupyter Notebooks project and feature four unique block types, an intelligent notepad for creating notebooks on the fly, and deep integration with Sourcegraph's code search so you can always find the code you need.
 
-!["Notebooks overview"](https://storage.googleapis.com/sourcegraph-assets/notebooks/notebooks_overview_release_post.mp4)
+<video class="blog-image" title="Notebooks overview" alt="An example of using a notebook." loop autoplay muted playsinline>
+  <source src="https://user-images.githubusercontent.com/1657213/163855878-4355bcb0-5407-4307-b3f2-4581e1ab2fe2.mp4">
+</video>
 
-Web-based notebooks are the easiest way to create and share notebooks with your team or company, but we also support file-based notebooks via a special `.snb.md` file type. With file-based Notebooks, you can augment existing documentation and meet where your developers where they already are. You can also embed notebooks on any web page, enabling easy integration with your knowledge management systems.
+Web-based notebooks are the easiest way to create and share notebooks with your team or company, but we also support file-based notebooks via a special `.snb.md` file type. With file-based Notebooks, you can transform your existing documentation and augment it with Sourcegraph query blocks. You can also embed notebooks on any web page, enabling easy integration with your own knowledge management systems, so you can meet your developers where they are.
 
-Explore [public notebooks on sourcegraph.com](https://sourcegraph.com/notebooks?tab=explore) (no account required to view; create a free account to build your own) or get started creating your own at `https://{your-sourcegraph-url}/notebooks`!
+Notebooks are now available for all users in Sourcegraph 3.39, and you can also explore some of our [public notebooks on Sourcegraph Cloud](https://sourcegraph.com/notebooks?tab=explore) with no account required.
 
-To learn all about Notebooks, [read the docs](https://docs.sourcegraph.com/notebooks)!
+To learn more about Notebooks, [read the docs](https://docs.sourcegraph.com/notebooks).
 
 ## Code Insights is no longer backed by Timescale
 
@@ -52,12 +54,12 @@ Any managed database solution that supports the [official Sourcegraph Postgres v
 
 ## Local navigation for Java code is now faster and more accurate
 
-We've added tree-sitter to our search-based Code Intelligence to make our local navigation for Java faster and more precise.
+We've added tree-sitter to our search-based Code Intelligence, meaning that local navigation for Java is now faster and more precise.
 
 <video class="blog-image" title="Java code Intelligence" alt="An example of using Java Code Intelligence within the sourcegraph/sourcegraph repo." loop autoplay muted playsinline>
   <source src="https://user-images.githubusercontent.com/1657213/163855878-4355bcb0-5407-4307-b3f2-4581e1ab2fe2.mp4">
 </video>
 
-## Search your Go dependenices
+## Search your Go dependencies natively in Sourcegraph
 
-[Dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search) allows you to quickly search through your repository dependencies for faster incident and vulnerability resolution. Dependencies search now supports Go dependencies in addition to NPM.
+[Dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search), introduced for NPM in Sourcegraph 3.38, allows you to quickly search through your repository dependencies for faster incident and vulnerability resolution. Dependencies search has been expanded to now support Go dependencies as well.
