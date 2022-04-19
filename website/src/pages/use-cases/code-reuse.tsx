@@ -107,13 +107,13 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <XmlIcon className="mb-4 text-blurple" size={80} />,
+        icon: <XmlIcon className="mb-4 text-blurple" size={70} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Quickly find trustworthy code to reuse</h4>,
         description:
             'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code and when, and where else it’s being used.',
     },
     {
-        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple" size={80} />,
+        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple" size={70} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Safely maintain and improve shared libraries</h4>
         ),
@@ -121,7 +121,7 @@ const threeUpTextItems = [
             'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate the overhead of duplicative code.',
     },
     {
-        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple" size={80} />,
+        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple" size={70} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Understand your team’s code reuse efforts</h4>
         ),
@@ -136,7 +136,7 @@ const resourceItems = [
         description:
             "FactSet undertook a major migration from a monolithic code repository in Perforce to microservices in GitHub. Mid-migration, they adopted Sourcegraph to enable efficient code search. Here's what happened.",
         type: 'Case study',
-        image: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
+        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
         href: '/case-studies/factset-migrates-from-perforce-to-github',
     },
     {
@@ -196,7 +196,7 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
         <div className="bg-gradient-venus-radial">
             <ContentSection className="my-7">
                 <div className="row flex-column flex-lg-row justify-content-between px-0">
-                    <div className="p-lg-0 col-lg-6 px-4">
+                    <div className="p-lg-0 col-xl-6 col-lg-7 px-4">
                         <h1 className="mb-4 font-weight-bold max-w-600">
                             Finding reliable, reusable code is tedious and inefficient
                         </h1>
