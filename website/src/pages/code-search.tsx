@@ -114,14 +114,20 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                     </ul>
                 </div>
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9">
-                    <iframe
+                    <video
                         className="embed-responsive-item"
-                        src="https://storage.googleapis.com/sourcegraph-assets/notebooks/Notebooks_Capture_20s.mp4"
-                        allowFullScreen={true}
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        frameBorder={0}
-                        title="Creating a Notebook with Sourcegraph"
-                    ></iframe>
+                        autoPlay={true}
+                        muted={true}
+                        loop={true}
+                        playsInline={true}
+                        controls={false}
+                    >
+                        <source
+                            src="https://storage.googleapis.com/sourcegraph-assets/notebooks/Notebooks_Capture_20s.mp4"
+                            type="video/mp4"
+                        />
+                        Creating a Notebook with Sourcegraph
+                    </video>
                 </div>
             </div>
         </ContentSection>
