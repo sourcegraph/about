@@ -30,7 +30,7 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
     const carouselItems = carouselHook.carouselItems.items as Blockquote[]
 
     return (
-        <div className="d-flex flex-lg-row align-items-lg-center flex-column justify-content-center text-center h-xl-450 h-lg-450 h-md-450 h-sm-550 position-relative">
+        <div className="d-flex flex-lg-row align-items-lg-center flex-column justify-content-center text-center h-xl-450 h-lg-450 h-md-450 h-sm-550 h-550 position-relative">
             <div className="d-lg-flex d-none align-items-center btn">
                 <ArrowLeftIcon
                     className="mr-4"

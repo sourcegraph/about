@@ -119,7 +119,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <div
                     className={
                         autoAdvance && props.smallPanel
-                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-300 h-md-300 h-sm-250')
+                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-300 h-md-300 h-sm-250 h-250')
                             : autoAdvance
                             ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-500 h-md-500 h-sm-450')
                             : classNames(carouselRightPanelStyles)
