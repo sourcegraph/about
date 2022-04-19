@@ -33,7 +33,7 @@ This migration has been applied over 3.37 and 3.38, and should be seamless if yo
 
 Any managed database solution that supports the [official Sourcegraph Postgres version requirements](https://docs.sourcegraph.com/admin/postgres#version-requirements) is now suitable for Code Insights. Migration from a self-hosted database is not performed automatically, and will need to be performed by a Sourcegraph admin at your own discretion.
 
-## Improved search-based local navigation for Java
+## Local navigation for Java code is now faster and more accurate
 
 We've added tree-sitter to our search-based Code Intelligence to make our local navigation for Java faster and more precise.
 
