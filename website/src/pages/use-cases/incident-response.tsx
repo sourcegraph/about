@@ -352,7 +352,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     to="/get-started"
                     className="btn btn-primary"
                     data-button-style={buttonStyle.primary}
-                    data-button-location={buttonLocation.bodyDemo}
+                    data-button-location={buttonLocation.trySourcegraph}
                     data-button-type="cta"
                 >
                     Ready to get started?

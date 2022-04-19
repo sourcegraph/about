@@ -11,6 +11,7 @@ import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
+import { buttonStyle, buttonLocation } from '../../tracking'
 
 import styles from './useCases.module.scss'
 
@@ -150,6 +151,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                     className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
                                     to="/demo"
                                     title="Request a Demo."
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
                                 >
                                     Request a demo
                                 </Link>
@@ -157,6 +161,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                     className="btn btn-outline-primary w-md-100"
                                     to="/get-started"
                                     title="Try Sourcegraph."
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
                                 >
                                     Try Sourcegraph now
                                 </Link>
@@ -281,7 +288,14 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="d-flex flex-column">
-                        <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
+                        <Link
+                            className="btn btn-primary"
+                            to="/demo"
+                            title="Request a Demo."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
                             Request a demo
                         </Link>
                         <Link to="/use-cases" className="d-flex justify-content-center mt-4">
@@ -307,7 +321,13 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="d-flex flex-wrap justify-content-center text-center">
                 <h2 className="w-100 font-weight-bold mb-4">Better onboarding is only a few searches away.</h2>
-                <Link to="/get-started" className="btn btn-primary">
+                <Link
+                    to="/get-started"
+                    className="btn btn-primary"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.trySourcegraph}
+                    data-button-type="cta"
+                >
                     Ready to get started?
                 </Link>
             </div>
