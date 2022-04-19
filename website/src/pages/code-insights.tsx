@@ -317,8 +317,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                                     Track what really matters to you and your team.
                                 </h1>
                                 <h4 className="mb-5">
-                                    Transform your code into a queryable database to create customizable, visual dashboards
-                                    in seconds.
+                                    Transform your code into a queryable database to create customizable, visual
+                                    dashboards in seconds.
                                 </h4>
                                 <div className="d-flex flex-column pt-1">
                                     <Link
@@ -370,8 +370,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                         <p>
                             Forget about inaccurate spreadsheets, manual processes, and missing historical data. You can{' '}
                             <strong>track everything in your codebase</strong>, from migrations to code smells, in a
-                            seamless and precise way. Make data-driven decisions using visualizations based on the power and
-                            accuracy of Sourcegraph Code Search.
+                            seamless and precise way. Make data-driven decisions using visualizations based on the power
+                            and accuracy of Sourcegraph Code Search.
                         </p>
                     </div>
                 </div>
@@ -398,8 +398,9 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                             <h4 className="font-weight-normal">
                                 &ldquo;As we've grown, so has the need to better track and communicate our progress and
                                 goals across the engineering team and broader company. With Code Insights, our data and
-                                migration tracking is accurate across our entire codebase, and our engineers and managers
-                                can shift out of manual spreadsheets and spend more time working on code.&rdquo;
+                                migration tracking is accurate across our entire codebase, and our engineers and
+                                managers can shift out of manual spreadsheets and spend more time working on
+                                code.&rdquo;
                             </h4>
                             <div className="pt-3 text-muted text-center">
                                 &mdash; Balázs Tóthfalussy, Engineering Manager, Prezi
@@ -593,8 +594,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                         <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
                             <h1 className="font-weight-bold">Get started with Code Insights</h1>
                             <p>
-                                Create a code insight in 60 seconds and get historical data for previously untracked metrics
-                                — data backfills automatically.
+                                Create a code insight in 60 seconds and get historical data for previously untracked
+                                metrics — data backfills automatically.
                             </p>
                         </div>
                         <div className="col-lg-7 d-flex flex-column pt-1">
