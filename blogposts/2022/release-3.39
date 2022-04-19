@@ -44,6 +44,16 @@ Notebooks are now available for all users in Sourcegraph 3.39, and you can also 
 
 To learn more about Notebooks, [read the docs](https://docs.sourcegraph.com/notebooks).
 
+## Initial support for filtering code insights using search contexts
+
+<div style="text-align:center">
+<img class="blog-image" title="Code insights have search context filters" alt="Image of a search context being used to filter a code insight" src="https://storage.googleapis.com/sourcegraph-assets/blog/3.39/code_insights_3.39_dynamic_context_filters.png
+">
+</div>
+
+Using a search context lets you reuse the same `repo:` pattern to filter multiple insights to a subset of your repos, and then maintain and update that group of repos in just one place, the search context. Your filtered insights will automatically reflect the current state of any updated context. Using a context is also a more succinct way to reference an extended `repo:` filter for reuse as a filter.
+In this initial release, you can use the `repo:` field of [query-based search contexts](https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts) to filter your code insights. We're continuing to explore enabling other capabilities of search contexts to use as filters.
+
 ## Code Insights is no longer backed by Timescale
 
 Code Insights can now be used with managed database solutions that do not support [Timescale](https://www.timescale.com/), like Amazon RDS. It now uses native Postgres.
