@@ -52,7 +52,7 @@ To learn more about Notebooks, [read the docs](https://docs.sourcegraph.com/note
 </div>
 
 Using a search context lets you reuse the same `repo:` pattern to filter multiple insights to a subset of your repos, and then maintain and update that group of repos in just one place, the search context. Your filtered insights will automatically reflect the current state of any updated context. Using a context is also a more succinct way to reference an extended `repo:` filter for reuse as a filter.
-In this initial release, you can use the `repo:` field of [query-based search contexts](https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts) to filter your insights. We're continuing to explore enabling other capabilities of search contexts to use as filters. To learn more, [read the docs](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters#context-query-based-search-context-filters)
+In this initial release, you can use the `repo:` or `-repo:` field of [query-based search contexts](https://docs.sourcegraph.com/code_search/how-to/search_contexts#beta-query-based-search-contexts) to filter your insights. We're continuing to explore enabling other capabilities of search contexts to use as filters. To learn more, [read the docs](https://docs.sourcegraph.com/code_insights/explanations/code_insights_filters#context-query-based-search-context-filters)
 
 ## Code Insights no longer requires a Timescale database
 
