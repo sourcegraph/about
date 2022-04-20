@@ -30,10 +30,12 @@ const Hero: FunctionComponent = () => {
         <div className="bg-white py-7 px-2 position-relative">
             <div
                 className={classNames(styles.mesh, 'd-none d-lg-block position-absolute top-0 left-0')}
-                style={{ backgroundImage: `url(${meshLeft})` }} />
+                style={{ backgroundImage: `url(${meshLeft})` }}
+            />
             <div
                 className={classNames(styles.mesh, 'd-none d-lg-block position-absolute top-0 right-0')}
-                style={{ backgroundImage: `url(${meshRight})` }} />
+                style={{ backgroundImage: `url(${meshRight})` }}
+            />
 
             <div className="text-center max-w-700 mx-auto">
                 <h1 className="text-5xl font-weight-bold">
@@ -86,8 +88,8 @@ const Hero: FunctionComponent = () => {
 
             <div className="max-w-600 mx-auto text-center">
                 <h2 className="font-weight-bold">
-                    Over <span className="text-vivid-violet">1.2M engineers</span> use Sourcegraph to build software
-                    you rely on
+                    Over <span className="text-vivid-violet">1.2M engineers</span> use Sourcegraph to build software you
+                    rely on
                 </h2>
                 <Link to="/case-studies">Learn how our customers use Sourcegraph</Link>
             </div>
