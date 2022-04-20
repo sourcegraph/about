@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import { ContentSection } from './content/ContentSection'
 
-export const IntegrationsSection: React.FunctionComponent<{ className?: string }> = ({ className = '' }) => (
-    <ContentSection className={className}>
+export const IntegrationsSection: FunctionComponent = () => (
+    <ContentSection className="py-7">
         <h2 className="display-3 font-weight-bold mb-3">Works with your code, infrastructure, and tools</h2>
         <div className="row">
             <div className="col-lg-6">
