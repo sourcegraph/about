@@ -348,6 +348,9 @@ export default ((props: any) => (
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
+                        <Link to="/use-cases/code-health" className="btn btn-link font-weight-bold">
+                            Learn more
+                        </Link>
                     </div>
                     <div className="col-lg-6 text-center">
                         <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-6">
