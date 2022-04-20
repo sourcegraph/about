@@ -85,7 +85,7 @@ const tools: string[] = [
     'SonarQube',
 ]
 
-const renderListItems = (items: string[]) => 
+const renderListItems = (items: string[]) =>
     items.map((item: string) => (
         <li key={item} className="list-inline-item">
             <code className="border rounded px-1">{item}</code>
@@ -136,20 +136,17 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <h3 className="h5 font-weight-bold pt-3">Deployment options</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">
                     <li className="list-inline-item text-wrap">
-                        Who?{' '}
-                        <code className="border rounded px-1">Self-hosted (you)</code>{' '}
+                        Who? <code className="border rounded px-1">Self-hosted (you)</code>{' '}
                         <code className="border rounded px-1">Managed by us</code>{' '}
                     </li>
                     <li className="list-inline-item text-wrap">
-                        Where?{' '}
-                        <code className="border rounded px-1">AWS</code>{' '}
+                        Where? <code className="border rounded px-1">AWS</code>{' '}
                         <code className="border rounded px-1">Google Cloud</code>{' '}
                         <code className="border rounded px-1">Azure</code>{' '}
                         <code className="border rounded px-1">Other infra</code>
                     </li>
                     <li className="list-inline-item text-wrap">
-                        What?{' '}
-                        <code className="border rounded px-1">Docker container</code>{' '}
+                        What? <code className="border rounded px-1">Docker container</code>{' '}
                         <code className="border rounded px-1">Kubernetes cluster</code>{' '}
                         <code className="border rounded px-1">Custom cluster</code>
                     </li>
