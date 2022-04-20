@@ -1,7 +1,3 @@
-@import 'node_modules/bootstrap/scss/functions';
-@import 'node_modules/bootstrap/scss/variables';
-@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
-
 // Hero mesh background images
 .mesh {
     background-size: cover;
@@ -22,7 +18,6 @@
 
 // Floating CTA
 .floatingBox {
-    @include media-breakpoint-up(lg) {
-        margin-bottom: -173.5px;
-    }
+    margin-bottom: -205px;
+    width: 90%;
 }

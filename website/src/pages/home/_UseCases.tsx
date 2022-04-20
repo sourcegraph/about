@@ -70,14 +70,16 @@ const UseCases: FunctionComponent = () => (
                                 ['mb-6']: i !== useCases.length - 1,
                                 ['mb-0']: i === useCases.length - 1,
                             },
-                            'col-sm-6 d-flex align-items-start'
+                            'col-sm-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start'
                         )}
                     >
-                        <useCase.icon className="text-vivid-violet w-100 max-w-50 h-auto mr-2" />
-                        <div>
+                        <useCase.icon className="text-vivid-violet w-100 max-w-50 h-auto mr-sm-2 mb-4 mb-sm-0" />
+                        <div className="text-center text-sm-left">
                             <h4 className="font-weight-bold">{useCase.title}</h4>
-                            <p className="m-0">{useCase.description}</p>
-                            {useCase.link && <Link to={useCase.link}>Learn more</Link>}
+                            <div className="text-lg">
+                                <p className="m-0">{useCase.description}</p>
+                                {useCase.link && <Link to={useCase.link}>Learn more</Link>}
+                            </div>
                         </div>
                     </div>
                 ))}
@@ -87,7 +89,7 @@ const UseCases: FunctionComponent = () => (
         <div
             className={classNames(
                 styles.floatingBox,
-                'col-6 bg-gradient-venus px-7 p-6 lg-absolute right-0 bottom-0 max-w-550'
+                'col-6 bg-gradient-venus px-4 py-7 p-sm-7 mx-auto mx-lg-0 lg-absolute right-0 bottom-0 max-w-550'
             )}
         >
             <h3 className="font-weight-bold mb-4">Want to use Sourcegraph at your company?</h3>
