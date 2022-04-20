@@ -321,7 +321,6 @@ code.border {
 
 $positions: ('top', 'right', 'bottom', 'left');
 @each $position in $positions {
-
     // Zero positions
     .#{$position}-0 {
         #{$position}: 0;

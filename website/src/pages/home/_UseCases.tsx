@@ -93,8 +93,8 @@ const UseCases: FunctionComponent = () => (
             <h3 className="font-weight-bold mb-4">Want to use Sourcegraph at your company?</h3>
             <p className="text-xl">
                 <Link to="/get-started">Get started</Link> for free with up to 10 teammates or{' '}
-                <Link to="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph
-                in your own environment.
+                <Link to="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph in your
+                own environment.
             </p>
         </div>
     </div>
