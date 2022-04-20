@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react'
+import classNames from 'classnames'
+
+import { buttonStyle, buttonLocation } from '../../tracking'
+import copyIcon from './copyIcon.svg'
 
 import styles from './install.module.scss'
 
 const installText = `
-docker run
---publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm
+docker run --publish 7080:7080 --publish
+127.0.0.1:3370:3370 --rm
 --volume ~/.sourcegraph/config:/etc/sourcegraph
 --volume ~/.sourcegraph/data:/var/opt/sourcegraph
 sourcegraph/server:3.37.0
@@ -38,17 +42,42 @@ export const Install: React.FunctionComponent = () => {
     }, [copied])
 
     return (
-        <div className="bg-white p-5">
-            <h4>
-                Install Sourcegraph locally
-                <span onClick={copy} role="button">
-                    <img src="/copy-text-icon.svg" alt="copy script to clipboard" className="icon-inline ml-4" />
-                </span>
-            </h4>
+        <div className={classNames(styles.windowUI, 'bg-white overflow-hidden')}>
+            <div className={classNames(styles.windowActions, 'd-flex align-items-center px-4')}>
+                {new Array(3).fill(null).map((a, i) => 
+                    <span
+                        key={i}
+                        className={classNames(styles.windowAction, 'bg-white rounded-circle mr-2')}
+                    />
+                )}
+            </div>
 
-            <code>
-                <small className={copied ? styles.flashBackground : ''}>{installText}</small>
-            </code>
+            <div className="p-5">
+                <h3 className="font-weight-bold">
+                    Install Sourcegraph locally
+                    <span
+                        onClick={copy}
+                        role="button"
+                        className={classNames(styles.icon, 'icon-inline ml-4 align-text-top')}
+                    >
+                        <img src={copyIcon} draggable={false} className="w-100" />
+                    </span>
+                </h3>
+
+                <code className="d-block my-4 pr-5 text-lg">
+                    <small className={copied ? styles.flashBackground : ''}>{installText}</small>
+                </code>
+
+                <a
+                    className="d-inline-block text-lg"
+                    href="https://docs.sourcegraph.com"
+                    data-button-style={buttonStyle.arrowWithText}
+                    data-button-location={buttonLocation.trySourcegraph}
+                    data-button-type="cta"
+                >
+                    Deploy to a server or cluster
+                </a>
+            </div>
         </div>
     )
 }
