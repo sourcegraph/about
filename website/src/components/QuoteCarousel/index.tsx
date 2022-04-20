@@ -42,7 +42,7 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
                 {carouselItems.map(item => (
                     <div
                         key={item.quote}
-                        className={item === carouselHook.carouselItems.currentItem ? 'd-block h-450' : 'd-none'}
+                        className={item === carouselHook.carouselItems.currentItem ? 'd-block h-md-auto h-600' : 'd-none'}
                     >
                         <BlockquoteWithLogoBottom
                             quote={item.quote}
