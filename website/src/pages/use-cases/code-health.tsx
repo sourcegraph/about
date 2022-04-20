@@ -175,7 +175,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     <div className="row">
                         <div className="col-lg-7 mb-8 mt-7">
                             <BackButtonBold href="/use-cases" text="USE CASES" />
-                            <h1 className="display-2 font-weight-bold mb-4 w-50">Healthy code, happy teams</h1>
+                            <h1 className="display-2 font-weight-bold mb-4 max-w-400">Healthy code, happy teams</h1>
                             <div className="display-4 font-weight-normal mb-5">
                                 Improve code health with large-scale changes and track key initiatives across your
                                 entire codebase.
@@ -211,7 +211,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection className="my-lg-5">
             <div className="row mx-lg-0 mx-4">
                 <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold w-75 px-lg-8">
+                    <h1 className="text-center font-weight-bold col-lg-10 px-lg-8">
                         Track and improve code health across your entire codebase
                     </h1>
                 </div>
@@ -269,7 +269,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-5 mt-lg-0 mt-7">
+                    <div className="col-lg-5 mt-lg-6 mt-5">
                         <Blockquote
                             quote={`With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time.`}
                             by="Justin Phillips, Software Engineer at Lyft"
