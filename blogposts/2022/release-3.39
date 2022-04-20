@@ -11,7 +11,7 @@ changelogItems:
   - description: "The repository page has been redesigned and now includes information such as recent commits and Code Intelligence availability. To use this feature, enable the `new-repo-page` feature flag."
     url: https://github.com/sourcegraph/sourcegraph/pull/33319
     category: Repositories
-  - description: "The Code Insights GraphQL API now accepts search contexts as filters. Using a search context as a filter will extract the `repo` and `-repo` search query fields from the context and apply it, allowing you to scope your insights."
+  - description: "The Code Insights GraphQL API now accepts search contexts as filters. Using a search context as a filter will extract the `repo` and `-repo` search query fields from the context and apply it, allowing you to scope your insights and only return data relevant to the repositories you care about."
     url: https://github.com/sourcegraph/sourcegraph/pull/33866
     category: Code Insights
   - description: "The Code Insights commit indexer can now index commits in smaller batches to ensure it succeeds for repositories with many commits. Set the number of days per batch in the site setting `insights.commit.indexer.windowDuration`. A value of 0 (default) will disable batching."
@@ -20,7 +20,7 @@ changelogItems:
   - description: "Code Insights series data is now sorted by semantic version and then alphabetically to make it easier to understand data in order of earliest to latest versions."
     url: https://github.com/sourcegraph/sourcegraph/pull/33454
     category: Code Insights
-  - description: "We've optimized search patterns containing `and` and `not` expressions. These kinds of queries are now an order of magnitude faster. Previous cases where no results were returned due to hitting the file limit should now work and return results quickly."
+  - description: "We've optimized search patterns containing `and` and `not` expressions. These kinds of queries now generally execute ten times faster than before. Previous cases where no results were returned due to hitting the file limit should now work and return results quickly."
     url: https://github.com/sourcegraph/sourcegraph/pull/33308
     category: Search
   - description: "Built-in authentication (i.e. username and password) now supports account lockout after consecutive failed sign-in attempts. New config options have been added under `\auth.lockout\` to customize the threshold for failed attempts and length of lockouts."
@@ -32,15 +32,15 @@ Sourcegraph 3.39 is now available! In this release:
 
 ## Onboard developers fast with Notebooks
 
-Built with onboarding in mind, Notebooks allow you to integrate search results and Markdown to make documentation that is both effortless and doesn't get stale. Notebooks are inspired by the Jupyter Notebooks project and feature four unique block types, an intelligent notepad for creating notebooks on the fly, and deep integration with Code Search so you can always find the code you need.
+Built with onboarding in mind, Notebooks allows you to integrate search results and Markdown to make documentation that is easy to create and doesn't get stale. Notebooks is inspired by the Jupyter Notebooks project and features four unique block types, an intelligent notepad for creating notebooks on the fly, and deep integration with Code Search so you can always find the code you need.
 
 <video class="blog-image" title="Notebooks overview" alt="An example of using a notebook." loop autoplay muted playsinline>
   <source src="https://user-images.githubusercontent.com/1657213/163855878-4355bcb0-5407-4307-b3f2-4581e1ab2fe2.mp4">
 </video>
 
-Web-based notebooks are the easiest way to create and share notebooks with your team or company, but we also support file-based notebooks via a special `.snb.md` file type. With file-based Notebooks, you can transform your existing documentation and augment it with Sourcegraph query blocks. You can also embed notebooks on any web page, enabling easy integration with your own knowledge management systems, so you can meet your developers where they are.
+Web-based notebooks are the easiest way to create and share new documentation with your team, but we also support file-based notebooks via a special `.snb.md` file type. With file-based notebooks, you can transform your existing documentation and augment it with Sourcegraph query blocks. You can also embed notebooks on any web page, enabling easy integration with your own knowledge management systems, so you can meet your developers where they are.
 
-Notebooks are now available for all users in Sourcegraph 3.39, and you can also explore some of our [public notebooks on Sourcegraph Cloud](https://sourcegraph.com/notebooks?tab=explore) with no account required.
+Notebooks are now available for free for all users in Sourcegraph 3.39, and you can also explore some of our [public notebooks on Sourcegraph Cloud](https://sourcegraph.com/notebooks?tab=explore) with no account required.
 
 To learn more about Notebooks, [read the docs](https://docs.sourcegraph.com/notebooks).
 
@@ -72,4 +72,4 @@ We've added tree-sitter to our search-based Code Intelligence, meaning that loca
 
 ## Search your Go dependencies natively in Sourcegraph
 
-[Dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search), introduced for NPM in Sourcegraph 3.38, allows you to quickly search through your repository dependencies for faster incident and vulnerability resolution. Dependencies search has been expanded to now support Go dependencies as well.
+Dependencies search, introduced for NPM in Sourcegraph 3.38, allows you to quickly search through your repository dependencies for faster incident and vulnerability resolution. Dependencies search has been expanded to now support Go dependencies as well. You can [read the docs here](https://docs.sourcegraph.com/code_search/how-to/dependencies_search) or [try it out yourself on Sourcegraph Cloud](https://sourcegraph.com/search?q=context:global+r:deps%28%5Egithub%5C.com/sourcegraph/sourcegraph%24%403.37%29+r:%5Ego+fmt.Println&patternType=literal).
