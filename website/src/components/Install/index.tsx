@@ -44,12 +44,9 @@ export const Install: React.FunctionComponent = () => {
     return (
         <div className={classNames(styles.windowUI, 'bg-white overflow-hidden')}>
             <div className={classNames(styles.windowActions, 'd-flex align-items-center px-4')}>
-                {new Array(3).fill(null).map((a, i) => 
-                    <span
-                        key={i}
-                        className={classNames(styles.windowAction, 'bg-white rounded-circle mr-2')}
-                    />
-                )}
+                {new Array(3).fill(null).map((a, i) => (
+                    <span key={i} className={classNames(styles.windowAction, 'bg-white rounded-circle mr-2')} />
+                ))}
             </div>
 
             <div className="p-5">
@@ -65,7 +62,9 @@ export const Install: React.FunctionComponent = () => {
                 </h3>
 
                 <code className="d-block my-4 pr-5 text-lg">
-                    <small className={copied ? classNames(styles.flashBackground, 'text-break') : 'text-break'}>{installText}</small>
+                    <small className={copied ? classNames(styles.flashBackground, 'text-break') : 'text-break'}>
+                        {installText}
+                    </small>
                 </code>
 
                 <a

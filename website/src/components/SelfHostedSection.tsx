@@ -14,9 +14,7 @@ const selfHostedFeatures: string[] = [
 export const SelfHostedSection: FunctionComponent = () => (
     <div className="bg-gradient-venus py-7">
         <div className="container">
-            <h1 className="font-weight-bold mb-6 text-center">
-                Self-hosted deployment
-            </h1>
+            <h1 className="font-weight-bold mb-6 text-center">Self-hosted deployment</h1>
 
             <div className="row">
                 <div className="col-lg-6">
@@ -27,9 +25,11 @@ export const SelfHostedSection: FunctionComponent = () => (
                     <h3 className="mt-6 mt-lg-0 font-weight-bold">Why choose self-hosted?</h3>
 
                     <ul className="my-4 text-lg">
-                        {selfHostedFeatures.map((feature, i) => 
-                            <li key={i} className={classNames({'mb-2': selfHostedFeatures.length !== i+1})}>{feature}</li>)
-                        }
+                        {selfHostedFeatures.map((feature, i) => (
+                            <li key={i} className={classNames({ 'mb-2': selfHostedFeatures.length !== i + 1 })}>
+                                {feature}
+                            </li>
+                        ))}
                     </ul>
 
                     <a
