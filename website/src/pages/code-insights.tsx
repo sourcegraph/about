@@ -287,7 +287,7 @@ const blogListItems = [
 ]
 
 export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
-    ['topForm', 'bottomForm'].forEach(id => {
+    ;['topForm', 'bottomForm'].forEach(id => {
         useHubSpot({
             portalId: '2762526',
             formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
