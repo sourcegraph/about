@@ -1,5 +1,5 @@
 ---
-title: 'Adding IDE-style autocomplete to Sourcegraph’s CLI with Fig'
+title: 'Interact with Sourcegraph from the command line faster with Fig'
 description: "Sourcegraph teamed up with Fig to enhance 'src' the CLI that allows you to search code and more from your terminal."
 author: Justin Dorfman
 authorUrl: https://twitter.com/jdorfman
@@ -11,7 +11,7 @@ socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/042022-fig-b
 published: true
 ---
 
-![](https://storage.googleapis.com/sourcegraph-assets/blog/042122-fig-blog-post-screenshot-transparent.png)
+![](https://storage.googleapis.com/sourcegraph-assets/blog/042122-fig-blog-post-screenshot-transparent-updated.png)
 
 We are really excited to announce our latest [integration with Fig](https://fig.io/manual/src)! For those of you who don’t know about Fig, it is a tool that adds IDE-style autocomplete to your existing terminal (currently on macOS.)
 
@@ -25,22 +25,18 @@ Then I remembered Zeno Rocha [tweeting about Fig](https://twitter.com/zenorocha/
 
 I’m in the process of creating a budget for sponsoring the dependencies that Sourcegraph uses via Open Collective. Here is a real-world example of how I accomplish that.
 
-<div style="position: relative; padding-bottom: 51.18483412322274%; height: 0;"><iframe src="https://www.loom.com/embed/46094880c87844958d74ef28b1d76719" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 51.13908872901679%; height: 0;"><iframe src="https://www.loom.com/embed/46094880c87844958d74ef28b1d76719" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ### Want to try it out?
 
 We got you covered. Install `src` (no login required):
 
-**Curl**
-
 ```shell
+# via Curl
 curl -L https://sourcegraph.com/.api/src-cli/src_darwin_amd64 -o /usr/local/bin/src
 chmod +x /usr/local/bin/src
-```
 
-**Brew**
-
-```shell
+# via Brew
 brew install sourcegraph/src-cli/src-cli
 ```
 
