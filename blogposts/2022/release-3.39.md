@@ -8,22 +8,22 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-39-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-39-release.png
 changelogItems:
-  - description: "The repository page has been redesigned and now includes information such as recent commits and Code Intelligence availability. To use this feature, enable the `new-repo-page` feature flag."
+  - description: 'The repository page has been redesigned and now includes information such as recent commits and Code Intelligence availability. To use this feature, enable the `new-repo-page` feature flag.'
     url: https://github.com/sourcegraph/sourcegraph/pull/33319
     category: Repositories
-  - description: "The Code Insights GraphQL API now accepts search contexts as filters. Using a search context as a filter will extract the `repo` and `-repo` search query fields from the context and apply it, allowing you to scope your insights and only return data relevant to the repositories you care about."
+  - description: 'The Code Insights GraphQL API now accepts search contexts as filters. Using a search context as a filter will extract the `repo` and `-repo` search query fields from the context and apply it, allowing you to scope your insights and only return data relevant to the repositories you care about.'
     url: https://github.com/sourcegraph/sourcegraph/pull/33866
     category: Code Insights
-  - description: "The Code Insights commit indexer can now index commits in smaller batches to ensure it succeeds for repositories with many commits. Set the number of days per batch in the site setting `insights.commit.indexer.windowDuration`. A value of 0 (default) will disable batching."
+  - description: 'The Code Insights commit indexer can now index commits in smaller batches to ensure it succeeds for repositories with many commits. Set the number of days per batch in the site setting `insights.commit.indexer.windowDuration`. A value of 0 (default) will disable batching.'
     url: https://github.com/sourcegraph/sourcegraph/pull/33666
     category: Code Insights
-  - description: "Code Insights series data is now sorted by semantic version and then alphabetically to make it easier to understand data in order of earliest to latest versions."
+  - description: 'Code Insights series data is now sorted by semantic version and then alphabetically to make it easier to understand data in order of earliest to latest versions.'
     url: https://github.com/sourcegraph/sourcegraph/pull/33454
     category: Code Insights
   - description: "We've optimized search patterns containing `and` and `not` expressions. These kinds of queries now generally execute 10 times faster than before. Previous cases where no results were returned due to hitting the file limit should now work and return results quickly."
     url: https://github.com/sourcegraph/sourcegraph/pull/33308
     category: Search
-  - description: "Built-in authentication (i.e. username and password) now supports account lockout after consecutive failed sign-in attempts. New config options have been added under `auth.lockout` to customize the threshold for failed attempts and length of lockouts."
+  - description: 'Built-in authentication (i.e. username and password) now supports account lockout after consecutive failed sign-in attempts. New config options have been added under `auth.lockout` to customize the threshold for failed attempts and length of lockouts.'
     url: https://github.com/sourcegraph/sourcegraph/pull/33999
     category: Admin
 ---
