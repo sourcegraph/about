@@ -118,16 +118,16 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                     </h2>
                     <ul>
                         <li className="mb-1">
-                            Create living documentation with markdown and live code queries to get engineers up to speed
-                            on unfamiliar code faster
+                            Create living documentation with Markdown and live code queries to get engineers up to speed
+                            on unfamiliar code faster.
                         </li>
                         <li className="mb-1">
                             Navigate through complex parts of your codebase or resolve incidents with collaborative and
-                            shareable notebooks
+                            shareable notebooks.
                         </li>
                         <li className="mb-1">
                             Embed notebooks anywhere you can embed HTML, like your own internal documentation, so you
-                            can spend less time updating stale docs
+                            can spend less time updating stale docs.
                         </li>
                     </ul>
                 </div>
