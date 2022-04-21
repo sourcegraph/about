@@ -59,7 +59,7 @@ In this initial release, you can use the `repo:` or `-repo:` field of [query-bas
 
 Code Insights can now be used with managed database solutions that do not support [Timescale](https://www.timescale.com/), like Amazon RDS. It now uses native PostgreSQL.
 
-This migration has been applied over 3.37 and 3.38, and should be seamless if you are running infrastructure as described by the [official Sourcegraph deployment repositories](https://sourcegraph.com/search?q=context:%40sourcegraph/all+repo:%5Egithub%5C.com/sourcegraph/deploy-sourcegraph+select:repo&patternType=literal). If you have a customized deployment, you may need to incorporate some changes into your configuration ([more details and examples here](https://github.com/sourcegraph/sourcegraph/issues/32271#issuecomment-1086328666)).
+This migration has been applied over 3.37 and 3.38, and should be seamless if you are running infrastructure as described by the [official Sourcegraph deployment repositories](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/deploy-sourcegraph+select:repo&patternType=literal). If you have a customized deployment, you may need to incorporate some changes into your configuration ([more details and examples here](https://github.com/sourcegraph/sourcegraph/issues/32271#issuecomment-1086328666)).
 
 Any managed database solution that supports the [official Sourcegraph PostgreSQL version requirements](https://docs.sourcegraph.com/admin/postgres#version-requirements) is now suitable for Code Insights. Migration from a self-hosted database is not performed automatically, and will need to be performed by a Sourcegraph admin at your own discretion.
 
