@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { PageProps } from 'gatsby'
 
 import Layout from '../../components/Layout'
-import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
+import { CustomerLogos } from '../../components/CustomerLogos'
 import { useHubSpot } from '../../hooks/hubSpot'
 
 const title = 'Request a code change management demo'
@@ -28,7 +28,7 @@ const Contact: FunctionComponent<PageProps> = props => {
         >
             <div className="bg-white text-dark">
                 <div className="container-lg py-6 px-5">
-                    <div className="row flex-wrap-reverse">
+                    <div className="row">
                         <div className="col-md-6">
                             <h1 className="display-4">Request a code change management demo</h1>
                             <h3 className="font-weight-light font-serif">
@@ -42,7 +42,7 @@ const Contact: FunctionComponent<PageProps> = props => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <CustomerLogosSection className="full-color mt-3 mb-6" />
+                            <CustomerLogos />
                         </div>
                     </div>
                 </div>
