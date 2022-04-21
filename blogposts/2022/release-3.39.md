@@ -5,8 +5,8 @@ description: 'Sourcegraph 3.39 introduces Notebooks, Code Insights on native Pos
 tags: [blog, release]
 slug: 'release/3.39'
 published: true
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-39-release.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.38/sourcegraph-3-39-release.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.39/sourcegraph-3-39-release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.39/sourcegraph-3-39-release.png
 changelogItems:
   - description: 'The repository page has been redesigned and now includes information such as recent commits and Code Intelligence availability. To use this feature, enable the `new-repo-page` feature flag.'
     url: https://github.com/sourcegraph/sourcegraph/pull/33319
