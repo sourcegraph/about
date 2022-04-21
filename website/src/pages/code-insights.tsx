@@ -287,12 +287,14 @@ const blogListItems = [
 ]
 
 export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
-        region: 'na1',
-        targetId: 'form',
-        chiliPiper: true,
+    ['topForm', 'bottomForm'].forEach(id => {
+        useHubSpot({
+            portalId: '2762526',
+            formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
+            region: 'na1',
+            targetId: id,
+            chiliPiper: true,
+        })
     })
 
     return (
@@ -320,17 +322,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                                     Transform your code into a queryable database to create customizable, visual
                                     dashboards in seconds.
                                 </h4>
-                                <div className="d-flex flex-column pt-1">
-                                    <Link
-                                        className="btn btn-primary md-col-5 col-5"
-                                        to="/contact/request-code-insights-demo"
-                                        title="Request a Demo of Code Insights."
-                                        data-button-style={buttonStyle.primary}
-                                        data-button-location={buttonLocation.nav}
-                                        data-button-type="cta"
-                                    >
-                                        Request a demo
-                                    </Link>
+                                <div className="d-flex flex-column pt-1 max-w-400">
+                                    <div id="topForm" />
                                 </div>
                             </div>
                         </div>
@@ -598,8 +591,8 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                                 metrics — data backfills automatically.
                             </p>
                         </div>
-                        <div className="col-lg-7 d-flex flex-column pt-1">
-                            <div id="form" />
+                        <div className="col-lg-7 d-flex flex-column pt-1 max-w-400">
+                            <div id="bottomForm" />
                         </div>
                     </div>
                 </ContentSection>
