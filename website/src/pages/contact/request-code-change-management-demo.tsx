@@ -31,7 +31,7 @@ const Contact: FunctionComponent<PageProps> = props => {
                     <div className="row">
                         <div className="col-md-6">
                             <h1 className="display-4">Request a code change management demo</h1>
-                            <h3 className="font-weight-light font-serif">
+                            <h3 className="font-weight-light font-sans">
                                 We'll reach out to discuss a demo and to learn more about your needs.
                             </h3>
                             <div className="form mt-5">
