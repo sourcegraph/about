@@ -69,7 +69,7 @@ const features: Features[] = [
 
 const FeatureSection: FunctionComponent = () => (
     <ContentSection color="white" className="py-8 mt-8 pb-7">
-        <div className="text-center">
+        <div className="text-center mb-7">
             <h1 className="font-weight-bold">How teams use Sourcegraph</h1>
             <p className="max-w-500 mx-auto">
                 Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
@@ -80,14 +80,15 @@ const FeatureSection: FunctionComponent = () => (
         {features.map((feature, i) => (
             <div
                 key={i}
-                className={classNames('row py-7', {
+                className={classNames('row flex-column-reverse flex-lg-row', {
                     'flex-lg-row-reverse': i % 2,
+                    'mb-5 mb-lg-8': i !== features.length - 1,
                 })}
             >
                 <div
                     className={classNames('col-lg-6', {
                         'pr-lg-7 pl-lg-0': i % 2 === 0,
-                        'pl-lg-7 pr-lg-0': i % 2,
+                        'pl-lg-7 pr-lg-0': i % 2
                     })}
                 >
                     <small className="text-uppercase font-weight-bold d-block mb-2">{feature.productFeature}</small>
@@ -107,7 +108,7 @@ const FeatureSection: FunctionComponent = () => (
                     )}
                 </div>
 
-                <div className="col-lg-6 mt-3 mt-lg-0 p-0">
+                <div className="col-lg-6 mb-6 mb-lg-0 py-0 px-5">
                     {/* TODO: Add animation when ready */}
                     <img
                         src="https://via.placeholder.com/576x461"
