@@ -111,8 +111,8 @@ export const IntegrationsSection: FunctionComponent = () => (
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">All your languages</h3>
                 <ul className="list-inline d-inline-flex flex-wrap">
+                    {renderListItems(languages)}
                     <li className="d-block">
-                        {renderListItems(languages)}
                         <a href="mailto:feedback@sourcegraph.com" className="d-inline-block small text-muted">
                             Need a different language?
                         </a>
