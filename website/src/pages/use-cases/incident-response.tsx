@@ -101,7 +101,7 @@ const quoteCarouselItems = [
         logoImage: '/external-logos/quantcast-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/quantcast-large-scale-refactoring',
-        logoAlt: 'Quantcast',
+        logoAlt: 'Quantcast Logo',
     },
     {
         header: 'Nutanix proves the Log4j vulnerability no longer affects its codebase',
@@ -110,7 +110,7 @@ const quoteCarouselItems = [
         logoImage: '/external-logos/nutanix-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
-        logoAlt: 'Nutanix',
+        logoAlt: 'Nutanix Logo',
     },
 ]
 
