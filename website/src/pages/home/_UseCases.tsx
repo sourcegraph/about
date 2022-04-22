@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useLayoutEffect, useRef, useState } from 'react'
 import { Link } from 'gatsby'
 import classNames from 'classnames'
 
@@ -10,6 +10,8 @@ import CachedIcon from 'mdi-react/CachedIcon'
 import LaptopIcon from 'mdi-react/LaptopIcon'
 
 import { ContentSection } from '../../components/content/ContentSection'
+import { useWindowWidth } from '../../hooks'
+import { breakpoints } from '../../breakpoints'
 
 import styles from './home.module.scss'
 
@@ -53,9 +55,32 @@ const useCases: UseCases[] = [
     },
 ]
 
-const UseCases: FunctionComponent = () => (
-    <div className="position-relative">
-        <ContentSection className="py-7">
+const UseCases: FunctionComponent = () => {
+    const box = useRef(null)
+    const [boxHeight, setBoxHeight] = useState<number>(0)
+    
+    const windowWidth = useWindowWidth()
+    const isMobile = windowWidth < breakpoints.lg
+
+    const containerPaddingY = 96 // 6 rem
+    const boxHalfHeight = `-${isMobile ? (boxHeight / 2) + containerPaddingY : boxHeight / 2}px`
+
+    function getBoxHeight() {
+        setBoxHeight(box.current?.clientHeight)
+    }
+    
+    useLayoutEffect(() => {
+        setBoxHeight(box.current?.clientHeight)
+
+        window.addEventListener('resize', getBoxHeight)
+
+        return () => {
+            window.removeEventListener('resize', getBoxHeight)
+        }
+    }, [])
+
+    return (
+        <ContentSection className="position-relative py-7">
             <div className="text-center">
                 <h1 className="font-weight-bold">Move fast &mdash; even in big codebases</h1>
                 <a href="https://docs.sourcegraph.com">See the docs</a>
@@ -65,13 +90,7 @@ const UseCases: FunctionComponent = () => (
                 {useCases.map((useCase, i) => (
                     <div
                         key={useCase.title}
-                        className={classNames(
-                            {
-                                ['mb-6']: i !== useCases.length - 1,
-                                ['mb-0']: i === useCases.length - 1,
-                            },
-                            'col-sm-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start'
-                        )}
+                        className="col-sm-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start mb-6"
                     >
                         <useCase.icon className="text-vivid-violet w-100 max-w-50 h-auto mr-sm-2 mb-4 mb-sm-0" />
                         <div className="text-center text-sm-left">
@@ -84,22 +103,21 @@ const UseCases: FunctionComponent = () => (
                     </div>
                 ))}
             </div>
-        </ContentSection>
 
-        <div
-            className={classNames(
-                styles.floatingBox,
-                'col-6 bg-gradient-venus px-4 py-7 p-sm-7 mx-auto mx-lg-0 lg-absolute right-0 bottom-0 max-w-550'
-            )}
-        >
-            <h3 className="font-weight-bold mb-4">Want to use Sourcegraph at your company?</h3>
-            <p className="text-xl">
-                <Link to="/get-started">Get started</Link> for free with up to 10 teammates or{' '}
-                <Link to="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph in your
-                own environment.
-            </p>
-        </div>
-    </div>
-)
+            <div
+                ref={box}
+                style={{ marginBottom: boxHalfHeight, width: '90%' }}
+                className="col-6 bg-gradient-venus px-4 py-7 p-sm-6 mx-auto mx-lg-0 lg-absolute right-0 max-w-550 bottom-0"
+            >
+                <h3 className="font-weight-bold mb-4">Want to use Sourcegraph at your company?</h3>
+                <p className="text-xl">
+                    <Link to="/get-started">Get started</Link> for free with up to 10 teammates or{' '}
+                    <Link to="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph in your
+                    own environment.
+                </p>
+            </div>
+        </ContentSection>
+    )
+}
 
 export default UseCases
