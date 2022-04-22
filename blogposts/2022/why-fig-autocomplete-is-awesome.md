@@ -7,7 +7,7 @@ publishDate: 2022-04-19T11:25-07:00
 tags: [blog]
 slug: why-fig-autocomplete-is-awesome
 heroImage:
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/042022-fig-blog-post-screenshot.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/042122-fig-blog-post-screenshot-transparent-updated.png
 published: true
 ---
 
