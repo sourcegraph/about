@@ -175,7 +175,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     <div className="row">
                         <div className="col-lg-7 mb-8 mt-7">
                             <BackButtonBold href="/use-cases" text="USE CASES" />
-                            <h1 className="display-2 font-weight-bold mb-4 max-w-325 w-75">
+                            <h1 className="display-2 font-weight-bold mb-4 max-w-250 max-w-sm-275 max-w-lg-400">
                                 Healthy code, happy teams
                             </h1>
                             <div className="display-4 font-weight-normal mb-5">
