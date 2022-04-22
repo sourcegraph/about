@@ -17,7 +17,7 @@ We are really excited to announce our latest [integration with Fig](https://fig.
 
 When I was onboarding at Sourcegraph one of my todos was to install and learn how to use `src`, a [command-line interface to Sourcegraph](https://docs.sourcegraph.com/cli). The installation was straightforward, but I couldn’t remember all of the different subcommands so I found myself typing `src --help` and [hitting the up arrow](https://www.commitstrip.com/en/2017/02/28/definitely-not-lazy/?) a lot.
 
-![](https://storage.googleapis.com/sourcegraph-assets/blog/042122-fig-blog-post-commit-strip.gif)
+![up arrow](https://storage.googleapis.com/sourcegraph-assets/blog/042122-fig-blog-post-commit-strip.gif)
 
 Then I remembered Zeno Rocha [tweeting about Fig](https://twitter.com/zenorocha/status/1432709006854869002) and I thought this might be a good opportunity to write an integration. After demoing the proof of concept to my team I got a lot of great feedback and decided to make a [pull request](https://github.com/withfig/autocomplete/pull/1081) to Fig on GitHub.
 
