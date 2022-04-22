@@ -13,8 +13,6 @@ import { ContentSection } from '../../components/content/ContentSection'
 import { useWindowWidth } from '../../hooks'
 import { breakpoints } from '../../breakpoints'
 
-import styles from './home.module.scss'
-
 interface UseCases {
     icon: MdiReactIconComponentType
     title: string
