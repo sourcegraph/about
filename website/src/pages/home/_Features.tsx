@@ -88,7 +88,7 @@ const FeatureSection: FunctionComponent = () => (
                 <div
                     className={classNames('col-lg-6', {
                         'pr-lg-7 pl-lg-0': i % 2 === 0,
-                        'pl-lg-7 pr-lg-0': i % 2
+                        'pl-lg-7 pr-lg-0': i % 2,
                     })}
                 >
                     <small className="text-uppercase font-weight-bold d-block mb-2">{feature.productFeature}</small>
