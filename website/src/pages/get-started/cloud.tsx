@@ -51,8 +51,8 @@ export const CloudPage: FunctionComponent<PageProps> = props => {
                             <p>Individual developers</p>
 
                             <p>
-                                Search all your repositories and the open source universe without
-                                having to install or manage a deployment.
+                                Search all your repositories and the open source universe without having to install or
+                                manage a deployment.
                             </p>
                         </div>
                     </div>
