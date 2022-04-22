@@ -104,6 +104,13 @@ export default class HTML extends React.Component<HtmlProps> {
                         }}
                     />
 
+                    {/* Add Ceros script */}
+                    <script
+                        type="text/javascript"
+                        src="//[view.ceros.com/scroll-proxy.min.js](http://view.ceros.com/scroll-proxy.min.js)"
+                        data-ceros-origin-domains="[view.ceros.com](http://view.ceros.com/)"
+                    ></script>
+
                     {/* Drift Integration */}
                     <script
                         type="text/javascript"
@@ -115,7 +122,7 @@ export default class HTML extends React.Component<HtmlProps> {
                                 var t = window.driftt = window.drift = window.driftt || [];
                                 if (!t.init) {
                                     if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-                                    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+                                    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
                                     t.factory = function(e) {
                                     return function() {
                                         var n = Array.prototype.slice.call(arguments);
