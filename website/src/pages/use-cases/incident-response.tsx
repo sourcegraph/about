@@ -202,7 +202,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </h1>
                 </div>
                 <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
-                    <div className="text-center mb-4">
+                    <div className="pr-lg-3 text-center mb-4">
                         <CrosshairsGpsIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Assess incidents quickly</h4>
                         <p>
@@ -210,7 +210,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             Understand the code's functionality to verify the issue.
                         </p>
                     </div>
-                    <div className="mx-lg-5 text-center mb-4">
+                    <div className="col-lg-4 text-center mb-4">
                         <ClockTimeThreeOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Plan your remediation</h4>
                         <p>
@@ -218,7 +218,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             all affected code.
                         </p>
                     </div>
-                    <div className="text-center mb-4">
+                    <div className="pl-lg-3 text-center mb-4">
                         <WebIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Execute your plan globally</h4>
                         <p>
@@ -255,7 +255,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                 sustainable.
                             </li>
                             <li className="mt-1">
-                                Company leaders struggle for visibility into incident response in progress and to
+                                Company leaders struggle to gain visibility into in-progress incident responses and
                                 communicate timelines to stakeholders.
                             </li>
                         </ul>
