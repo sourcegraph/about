@@ -99,7 +99,7 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
             <div className="container max-w-900 mt-6">
                 <h1 className="display-3 font-weight-bold">Move fast — even in big code bases</h1>
                 <h5 className="font-weight-normal py-3">Learn how these software companies used Sourcegraph</h5>
-                <div className="d-flex flex-wrap pt-4">
+                <div className="d-flex flex-wrap pt-4 position-relative" style={{ left: '-17px' }}>
                     {caseStudyItems.map((study, i) => (
                         <div key={i} className="col-sm-6 col-md-4 mb-6 px-0 brightness-0">
                             <CaseStudyCard study={study} />
@@ -111,7 +111,7 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
             <div className="bg-gradient-venus-saturated py-6">
                 <section className="container max-w-900 text-center">
                     <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
-                    <h5 className="pt-4 pb-3 mx-auto max-w-550 font-weight-normal">
+                    <h5 className="pt-4 pb-1 mx-auto max-w-550 font-weight-normal">
                         <span>
                             <Link to="/get-started">Get started </Link>
                         </span>
