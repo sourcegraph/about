@@ -14,7 +14,7 @@ const codeHosts: string[] = [
     'Gerrit (coming soon)',
     'Perforce',
     'CVS',
-    'Any git-based code host'
+    'Any git-based code host',
 ]
 
 const languages: string[] = [
@@ -135,15 +135,13 @@ export const IntegrationsSection: FunctionComponent = () => (
 
                 <ul className="list-inline d-inline-flex flex-wrap">
                     <li className="list-inline-item text-wrap">
-                        <span>Self-hosted by you:</span>{' '}
-                        <code className="border rounded px-1">Kubernetes cluster</code>{' '}
+                        <span>Self-hosted by you:</span> <code className="border rounded px-1">Kubernetes cluster</code>{' '}
                         <code className="border rounded px-1">Amazon EKS or EC2</code>{' '}
                         <code className="border rounded px-1">Google GKE</code>{' '}
                         <code className="border rounded px-1">Microsoft Azure AKS</code>{' '}
                         <code className="border rounded px-1">Docker Compose</code>{' '}
                     </li>
 
-                    
                     <li className="list-inline-item text-wrap">
                         <span>Managed and hosted by us:</span>{' '}
                         <code className="border rounded px-1">Docker Compose in GCP</code>
