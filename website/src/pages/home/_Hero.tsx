@@ -5,8 +5,8 @@ import classNames from 'classnames'
 import { CustomerLogos } from '../../components/CustomerLogos'
 import { buttonStyle, buttonLocation } from '../../tracking'
 
-import meshLeft from './assets/mesh-left.png'
-import meshRight from './assets/mesh-right.png'
+import meshLeft from './assets/hero/mesh-left.png'
+import meshRight from './assets/hero/mesh-right.png'
 
 import styles from './home.module.scss'
 

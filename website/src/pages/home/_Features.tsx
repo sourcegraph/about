@@ -4,12 +4,18 @@ import classNames from 'classnames'
 
 import { ContentSection } from '../../components/content/ContentSection'
 
+import codeSearch from './assets/animations/code-search.mp4'
+import codeIntel from './assets/animations/code-intel.mp4'
+import batchChanges from './assets/animations/batch-changes.mp4'
+import codeInsights from './assets/animations/code-insights.mp4'
+
 interface Features {
     productFeature: string
     title: string
     description: string | ReactFragment
     details: string[]
     ctaLink: string
+    asset: string
 }
 
 const features: Features[] = [
@@ -24,6 +30,7 @@ const features: Features[] = [
             "Access all of your team's code in one place; never get stuck searching one repository or code host at a time",
         ],
         ctaLink: '/code-search',
+        asset: codeSearch
     },
     {
         productFeature: 'code intelligence',
@@ -36,6 +43,7 @@ const features: Features[] = [
             'Follow dependencies across repositories with confidence using precompiled data for speed and precision',
         ],
         ctaLink: 'https://docs.sourcegraph.com/code_intelligence',
+        asset: codeIntel
     },
     {
         productFeature: 'batch changes',
@@ -52,6 +60,7 @@ const features: Features[] = [
             'Automate fixing breaking changes introduced by library or package updates',
         ],
         ctaLink: '/batch-changes',
+        asset: batchChanges
     },
     {
         productFeature: 'code insights',
@@ -64,6 +73,7 @@ const features: Features[] = [
             'Create visualizations that update automatically, provide historical trends, and pull directly from the source of truth: the code itself',
         ],
         ctaLink: '/code-insights',
+        asset: codeInsights
     },
 ]
 
@@ -109,12 +119,21 @@ const FeatureSection: FunctionComponent = () => (
                 </div>
 
                 <div className="col-lg-6 mb-6 mb-lg-0 py-0 px-5">
-                    {/* TODO: Add animation when ready */}
-                    <img
-                        src="https://via.placeholder.com/576x461"
-                        alt="placeholder"
+                    <video
                         className="shadow w-100 max-w-550 d-block mx-auto"
-                    />
+                        autoPlay={true}
+                        muted={true}
+                        loop={true}
+                        playsInline={true}
+                        controls={false}
+                        data-cookieconsent="ignore"
+                    >
+                        <source
+                            type="video/mp4"
+                            src={feature.asset}
+                            data-cookieconsent="ignore"
+                        />
+                    </video>
                 </div>
             </div>
         ))}
