@@ -19,7 +19,7 @@ export const Blockquote: FunctionComponent<{
             <blockquote
                 className={
                     border
-                        ? classNames('p-3 text-center my-5 border-vermillion case-studies__quote--border')
+                        ? classNames('px-3 text-center mt-6 mb-5 border-vermillion case-studies__quote--border')
                         : classNames('p-3 text-center bg-light')
                 }
             >
