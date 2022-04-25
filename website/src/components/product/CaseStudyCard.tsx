@@ -100,11 +100,17 @@ export const CASESTUDIES: CaseStudy[] = [
     },
 ]
 
-export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy, bwLogo?: boolean }> = ({
-    study: { logo, altTitle, title, external, url, linkText = 'Learn more' }, bwLogo
+export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy; bwLogo?: boolean }> = ({
+    study: { logo, altTitle, title, external, url, linkText = 'Learn more' },
+    bwLogo,
 }) => (
     <div className="card-body" style={{ minHeight: '13rem' }}>
-        <img className={classNames({ 'max-w-200 mb-4': true, 'brightness-0': bwLogo })} height="60" src={logo} alt="Card image cap" />
+        <img
+            className={classNames({ 'max-w-200 mb-4': true, 'brightness-0': bwLogo })}
+            height="60"
+            src={logo}
+            alt="Card image cap"
+        />
         {altTitle && <h5 className="font-weight-bold">{altTitle}</h5>}
         <p className="card-text">
             {title}{' '}
