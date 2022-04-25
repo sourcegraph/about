@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import classNames from 'classnames'
 
 interface CaseStudy {
     name: string
@@ -99,11 +100,11 @@ export const CASESTUDIES: CaseStudy[] = [
     },
 ]
 
-export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy }> = ({
-    study: { logo, altTitle, title, external, url, linkText = 'Learn more' },
+export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy, bwLogo?: boolean }> = ({
+    study: { logo, altTitle, title, external, url, linkText = 'Learn more' }, bwLogo
 }) => (
     <div className="card-body" style={{ minHeight: '13rem' }}>
-        <img className="max-w-200 mb-4" height="60" src={logo} alt="Card image cap" />
+        <img className={classNames({ 'max-w-200 mb-4': true, 'brightness-0': bwLogo })} height="60" src={logo} alt="Card image cap" />
         {altTitle && <h5 className="font-weight-bold">{altTitle}</h5>}
         <p className="card-text">
             {title}{' '}
