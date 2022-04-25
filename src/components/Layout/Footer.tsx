@@ -32,13 +32,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                     <Link href="/pricing">Pricing</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a
-                                        href="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-overview.pdf"
-                                        target="_blank"
-                                        rel="nofollow noopener noreferrer"
-                                    >
-                                        Sourcegraph overview (PDF)
-                                    </a>
+                                    <Link href="/handouts/Sourcegraph-Overview.pdf">Sourcegraph overview (PDF)</Link>
                                 </li>
                             </ul>
                         </div>
