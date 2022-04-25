@@ -82,7 +82,7 @@ const FeatureSection: FunctionComponent = () => (
                 key={i}
                 className={classNames('row flex-column-reverse flex-lg-row', {
                     'flex-lg-row-reverse': i % 2,
-                    'mb-5 mb-lg-8': i !== features.length - 1,
+                    'mb-8': i !== features.length - 1,
                 })}
             >
                 <div
