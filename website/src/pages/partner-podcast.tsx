@@ -3,7 +3,9 @@ import { Link, PageProps } from 'gatsby'
 
 import Layout from '../components/Layout'
 import { CaseStudyCard } from '../components/product/CaseStudyCard'
+import { FormLegal } from '../components/FormLegal'
 import { BlogListItem } from '../components/BlogListItem'
+import { useHubSpot } from '../hooks/hubSpot'
 
 const resourceItems = [
     {
@@ -68,6 +70,13 @@ const caseStudyItems = [
 ]
 
 const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
+    useHubSpot({
+        portalId: '2762526',
+        formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
+        targetId: 'form',
+        chiliPiper: true,
+    })
+
     return (
         <Layout
             location={props.location}
@@ -77,7 +86,7 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                     'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
             }}
         >
-            <div className="bg-gradient-saturn-reversed py-md-8 py-6">
+            <div className="bg-gradient-saturn-reversed py-6">
                 <section className="container max-w-900">
                     <h1 className="display-1 font-weight-bold max-w-800">
                         Accelerate engineering velocity with Sourcegraph
@@ -85,13 +94,9 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
                     <h5 className="py-4 font-weight-normal">
                         See why over 1.2M engineers use Sourcegraph to build software you rely on
                     </h5>
-                    <div className="d-flex flex-column flex-md-row pt-0 pt-md-4">
-                        <Link to="/demo" className="btn btn-primary max-w-200">
-                            Request a demo
-                        </Link>
-                        <Link to="/get-started" className="btn btn-outline-primary max-w-150 ml-md-4 mt-4 mt-md-0">
-                            Get started
-                        </Link>
+                    <div className="max-w-400 pt-0 pt-md-4">
+                        <div id="form" />
+                        <FormLegal />
                     </div>
                 </section>
             </div>
