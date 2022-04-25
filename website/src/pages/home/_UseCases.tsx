@@ -105,7 +105,7 @@ const UseCases: FunctionComponent = () => {
             <div
                 ref={box}
                 style={{ marginBottom: boxHalfHeight, width: '90%' }}
-                className="col-6 bg-gradient-venus px-4 py-7 p-sm-6 mx-auto mx-lg-0 lg-absolute right-0 max-w-550 bottom-0"
+                className="col-6 bg-gradient-venus px-4 py-6 p-sm-6 p-xl-7 mx-auto mx-lg-0 lg-absolute right-0 max-w-550 bottom-0 text-center text-sm-left"
             >
                 <h3 className="font-weight-bold mb-4">Want to use Sourcegraph at your company?</h3>
                 <p className="text-xl">
