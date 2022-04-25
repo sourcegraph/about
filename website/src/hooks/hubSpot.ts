@@ -85,16 +85,10 @@ interface HookProps {
 
 const loadHubSpotScript = (): HTMLScriptElement | Element => {
     const hubSpotScript = '//js.hsforms.net/forms/v2.js'
-    const script = document.querySelector(`script[src="${hubSpotScript}"]`)
-
-    if (!script) {
-        const scriptElement = document.createElement('script')
-        scriptElement.src = hubSpotScript
-        document.head.append(scriptElement)
-        return scriptElement
-    }
-
-    return script
+    const scriptElement = document.createElement('script')
+    scriptElement.src = hubSpotScript
+    document.head.append(scriptElement)
+    return scriptElement
 }
 
 const loadChiliPiperScript = (callback: () => void): void => {
