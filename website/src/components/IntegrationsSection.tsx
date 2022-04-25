@@ -2,25 +2,19 @@ import React, { FunctionComponent } from 'react'
 import { ContentSection } from './content/ContentSection'
 
 const codeHosts: string[] = [
-    'GitHub',
+    'GitLab.com',
+    'GitLab Enterprise',
+    'GitHub.com',
     'GitHub Enterprise',
-    'GitLab',
-    'Bitbucket Server',
-    'Bitbucket Cloud',
+    'BitBucket Server',
+    'Bitbucket Data Center',
+    'BitBucket Cloud',
     'Phabricator',
-    'AWS CodeCommit',
-    'Azure DevOps',
+    'Gitolite',
+    'Gerrit (coming soon)',
     'Perforce',
-    'Mercurial',
-    'Subversion',
     'CVS',
-    'TFS',
-    'Gitea',
-    'Gerrit',
-    'cgit',
-    'Ridiculously big monorepos',
-    '2,000,000+ open source repositories',
-    'Any combo of these',
+    'Any git-based code host'
 ]
 
 const languages: string[] = [
@@ -95,9 +89,11 @@ const renderListItems = (items: string[]) =>
 export const IntegrationsSection: FunctionComponent = () => (
     <ContentSection className="py-7">
         <h2 className="display-3 font-weight-bold mb-3">Works with your code, infrastructure, and tools</h2>
+
         <div className="row">
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">All your repositories + 2M open source (and counting)</h3>
+
                 <ul className="list-inline d-inline-flex flex-wrap">
                     {renderListItems(codeHosts)}
                     <li className="d-block">
@@ -110,6 +106,7 @@ export const IntegrationsSection: FunctionComponent = () => (
 
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">All your languages</h3>
+
                 <ul className="list-inline d-inline-flex flex-wrap">
                     {renderListItems(languages)}
                     <li className="d-block">
@@ -122,6 +119,7 @@ export const IntegrationsSection: FunctionComponent = () => (
 
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">All your tools</h3>
+
                 <ul className="list-inline d-inline-flex flex-wrap">
                     {renderListItems(tools)}
                     <li className="d-block">
@@ -134,22 +132,23 @@ export const IntegrationsSection: FunctionComponent = () => (
 
             <div className="col-lg-6">
                 <h3 className="h5 font-weight-bold pt-3">Deployment options</h3>
+
                 <ul className="list-inline d-inline-flex flex-wrap">
                     <li className="list-inline-item text-wrap">
-                        Who? <code className="border rounded px-1">Self-hosted (you)</code>{' '}
-                        <code className="border rounded px-1">Managed by us</code>{' '}
-                    </li>
-                    <li className="list-inline-item text-wrap">
-                        Where? <code className="border rounded px-1">AWS</code>{' '}
-                        <code className="border rounded px-1">Google Cloud</code>{' '}
-                        <code className="border rounded px-1">Azure</code>{' '}
-                        <code className="border rounded px-1">Other infra</code>
-                    </li>
-                    <li className="list-inline-item text-wrap">
-                        What? <code className="border rounded px-1">Docker container</code>{' '}
+                        <span>Self-hosted by you:</span>{' '}
                         <code className="border rounded px-1">Kubernetes cluster</code>{' '}
-                        <code className="border rounded px-1">Custom cluster</code>
+                        <code className="border rounded px-1">Amazon EKS or EC2</code>{' '}
+                        <code className="border rounded px-1">Google GKE</code>{' '}
+                        <code className="border rounded px-1">Microsoft Azure AKS</code>{' '}
+                        <code className="border rounded px-1">Docker Compose</code>{' '}
                     </li>
+
+                    
+                    <li className="list-inline-item text-wrap">
+                        <span>Managed and hosted by us:</span>{' '}
+                        <code className="border rounded px-1">Docker Compose in GCP</code>
+                    </li>
+
                     <li className="d-block">
                         <a href="https://docs.sourcegraph.com/admin/install" className="small text-muted">
                             Learn about deploying Sourcegraph
