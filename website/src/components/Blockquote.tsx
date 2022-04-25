@@ -13,7 +13,6 @@ export const Blockquote: FunctionComponent<{
     link?: string
     linkText?: string
 }> = ({ quote, by, logoImage, border, headline, logoAlt, link, linkText }) => {
-
     return (
         <>
             <blockquote
