@@ -13,15 +13,14 @@ export const Blockquote: FunctionComponent<{
     link?: string
     linkText?: string
 }> = ({ quote, by, logoImage, border, headline, logoAlt, link, linkText }) => {
-    const quoteStyles = 'p-3 text-center'
 
     return (
         <>
             <blockquote
                 className={
                     border
-                        ? classNames(quoteStyles, 'pl-1 my-5 case-studies__quote--border')
-                        : classNames(quoteStyles, 'bg-light')
+                        ? classNames('p-3 text-center my-5 border-vermillion case-studies__quote--border')
+                        : classNames('p-3 text-center bg-light')
                 }
             >
                 {border && headline ? (
