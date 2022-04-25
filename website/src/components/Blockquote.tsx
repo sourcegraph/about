@@ -13,27 +13,28 @@ export const Blockquote: FunctionComponent<{
     link?: string
     linkText?: string
 }> = ({ quote, by, logoImage, border, headline, logoAlt, link, linkText }) => {
-    const quoteStyles = 'p-3 rounded rounded-lg text-center'
+    const quoteStyles = 'p-3 text-center'
 
     return (
         <>
             <blockquote
                 className={
                     border
-                        ? classNames(quoteStyles, 'case-studies__quote--in-content')
+                        ? classNames(quoteStyles, 'pl-1 my-5 case-studies__quote--border')
                         : classNames(quoteStyles, 'bg-light')
                 }
             >
                 {border && headline ? (
-                    <div className="case-studies__quote--in-content--section">
-                        <h5 className="font-weight-bold mb-4">{headline}</h5>
-                        <div className="font-weight-normal">&ldquo;{quote}&rdquo;</div>
+                    <div className="">
+                        <h4 className="font-weight-bold mb-4">{headline}</h4>
+                        <h5 className="font-weight-normal">&ldquo;{quote}&rdquo;</h5>
                     </div>
                 ) : (
                     <h3 className="font-weight-normal">&ldquo;{quote}&rdquo;</h3>
                 )}
                 {by && <figcaption className="text-center text-muted pt-4">&mdash; {by}</figcaption>}
             </blockquote>
+
             {logoImage && logoAlt && (
                 <div className="d-flex justify-content-center">
                     <img src={logoImage} width="110px" alt={logoAlt} />
