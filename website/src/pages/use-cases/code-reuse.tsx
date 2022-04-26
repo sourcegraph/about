@@ -1,8 +1,10 @@
 import { Link, PageProps } from 'gatsby'
+import React, { FunctionComponent, ReactNode } from 'react'
+
 import FolderUploadOutlineIcon from 'mdi-react/FolderUploadOutlineIcon'
 import AccountGroupOutlineIcon from 'mdi-react/AccountGroupOutlineIcon'
 import XmlIcon from 'mdi-react/XmlIcon'
-import React, { FunctionComponent, ReactNode } from 'react'
+import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
 import { ThreeUpText } from '../../components/ThreeUpText'
@@ -11,7 +13,6 @@ import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import styles from './useCases.module.scss'
 
@@ -162,7 +163,7 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
             <section className={`${styles.useCaseHeader} navbar-light`}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-7 my-7">
+                        <div className="col-md-7 my-7">
                             <BackButtonBold href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">Find and use code that already exists</h1>
                             <div className="display-4 font-weight-normal mb-5">
@@ -170,7 +171,11 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                                 on problems a teammate already solved.
                             </div>
                             <div className="d-flex flex-column flex-lg-row pt-1">
-                                <Link className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100" to="/demo" title="Request a Demo.">
+                                <Link
+                                    className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
+                                    to="/demo"
+                                    title="Request a Demo."
+                                >
                                     Request a demo
                                 </Link>
                                 <Link
@@ -231,7 +236,7 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                             </figcaption>
                         </section>
                         <img className="my-4" src="/external-logos/factset-logo.svg" width="150" alt="Factset logo" />
-                        <Link className="d-block font-weight-bold" to="/blog/log4j-log4shell-0-day">
+                        <Link className="d-block font-weight-bold" to="/case-studies/factset-migrates-from-perforce-to-github">
                             Read the case study
                             <ArrowRightIcon className="ml-2" />
                         </Link>
@@ -254,16 +259,16 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
         <div className="bg-light-gray-3">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column text-center max-w-600">
+                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>
                             Make it easier to discover trustworthy code for reuse so your teams can spend more time
                             solving new problems and less time rewriting code.
                         </p>
                     </div>
-                    <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
-                        Request a demo
-                    </Link>
+                    <div className="text-center col-12 px-0">
+                        <Link className="btn btn-primary col-12 col-md-4 col-lg-2 min-w-200" to="/demo" title="Request a Demo.">Request a demo</Link>
+                    </div>
                 </div>
             </ContentSection>
             <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="py-6" />
