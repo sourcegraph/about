@@ -21,7 +21,7 @@ const Hero: FunctionComponent = () => {
 
             setHeadline(headlines[newIndex])
             setHeadlineIndex(newIndex)
-        }, 5000)
+        }, 3500)
 
         return () => clearInterval(cycle)
     })
