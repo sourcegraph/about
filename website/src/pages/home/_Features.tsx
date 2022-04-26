@@ -1,6 +1,7 @@
 import React, { FunctionComponent, ReactFragment } from 'react'
 import { Link } from 'gatsby'
 import classNames from 'classnames'
+import { capitalize } from 'lodash'
 
 import { ContentSection } from '../../components/content/ContentSection'
 
@@ -89,7 +90,7 @@ const features: Features[] = [
         description:
             'With Code Insights, know how different initiatives in your codebase are progressing in real time so you can make data-driven decisions.',
         details: [
-            'Track migrations, code smells, ownership, versions, with fully customizable dashboards',
+            'Track migrations, code smells, ownership, and versions with fully customizable dashboards',
             'Ensure that security vulnerabilities and deprecated packages get completely removed from your codebase',
             'Create visualizations that update automatically, provide historical trends, and pull directly from the source of truth: the code itself',
         ],
@@ -135,11 +136,11 @@ const FeatureSection: FunctionComponent = () => (
                     </ul>
                     {feature.ctaLink.includes('http') ? (
                         <a href={feature.ctaLink} target="_blank" rel="noreferrer" className="btn btn-outline-primary">
-                            Learn more about {feature.productFeature}
+                            Learn more about {capitalize(feature.productFeature)}
                         </a>
                     ) : (
                         <Link to={feature.ctaLink} className="btn btn-outline-primary">
-                            Learn more about {feature.productFeature}
+                            Learn more about {capitalize(feature.productFeature)}
                         </Link>
                     )}
                 </div>

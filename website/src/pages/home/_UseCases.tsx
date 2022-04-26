@@ -29,7 +29,7 @@ const useCases: UseCases[] = [
         description: 'Find, fix, and track vulnerable code quickly across your entire codebase.',
         link: {
             href: '/use-cases/vulnerabilities',
-            text: 'Learn more about fixing vulnerabilities',
+            text: 'Learn more about Fixing Vulnerabilities',
         },
     },
     {
@@ -38,7 +38,7 @@ const useCases: UseCases[] = [
         description: 'Decrease time to first commit with codebase onboarding and knowledge sharing.',
         link: {
             href: '/use-cases/onboarding',
-            text: 'Learn more about onboarding developers',
+            text: 'Learn more about Onboarding',
         },
     },
     {
@@ -47,7 +47,7 @@ const useCases: UseCases[] = [
         description: 'Identify the root cause in code and fix the issue everywhere, faster.',
         link: {
             href: '/use-cases#resolve-incidents-faster',
-            text: 'Learn more about resolving incidents',
+            text: 'Learn more about Incident Response',
         },
     },
     {
@@ -56,7 +56,7 @@ const useCases: UseCases[] = [
         description: 'Find existing code for reuse and contribute to a more coherent codebase.',
         link: {
             href: '/use-cases#streamline-code-reuse',
-            text: 'Learn more about promoting code reuse',
+            text: 'Learn more about Code Reuse',
         },
     },
     {
@@ -65,7 +65,7 @@ const useCases: UseCases[] = [
         description: 'Improve code health with large-scale changes, and track key initiatives.',
         link: {
             href: '/use-cases#boost-code-health',
-            text: 'Learn more about boosting code health',
+            text: 'Learn more about Code Health',
         },
     },
 ]
@@ -98,7 +98,7 @@ const UseCases: FunctionComponent = () => {
         <ContentSection className="position-relative pt-7 pb-5">
             <div className="text-center">
                 <h1 className="font-weight-bold">Move fast &mdash; even in big codebases</h1>
-                <a href="https://docs.sourcegraph.com">See the docs</a>
+                <a href="https://docs.sourcegraph.com">Read the docs</a>
             </div>
 
             <div className="row max-w-850 mx-auto mt-6">
