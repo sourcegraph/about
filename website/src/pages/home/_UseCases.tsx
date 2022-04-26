@@ -75,10 +75,10 @@ const UseCases: FunctionComponent = () => {
     const [boxHeight, setBoxHeight] = useState<number>(0)
 
     const windowWidth = useWindowWidth()
-    const isMobile = windowWidth < breakpoints.lg
+    const isMobile = windowWidth < breakpoints.xl
 
-    const containerPaddingY = 96 // 6 rem
-    const boxHalfHeight = `-${isMobile ? boxHeight / 2 + containerPaddingY : boxHeight / 2}px`
+    const containerPaddingBottom = 32 // 2 rem
+    const boxHalfHeight = `-${isMobile ? boxHeight / 2 + containerPaddingBottom : boxHeight / 2}px`
 
     function getBoxHeight() {
         setBoxHeight(box.current?.clientHeight)
@@ -95,7 +95,7 @@ const UseCases: FunctionComponent = () => {
     }, [])
 
     return (
-        <ContentSection className="position-relative py-7">
+        <ContentSection className="position-relative pt-7 pb-5">
             <div className="text-center">
                 <h1 className="font-weight-bold">Move fast &mdash; even in big codebases</h1>
                 <a href="https://docs.sourcegraph.com">See the docs</a>
@@ -122,7 +122,7 @@ const UseCases: FunctionComponent = () => {
             <div
                 ref={box}
                 style={{ marginBottom: boxHalfHeight, width: '90%' }}
-                className="col-6 bg-gradient-venus px-4 py-6 p-sm-6 p-xl-7 mx-auto mx-lg-0 lg-absolute right-0 max-w-550 bottom-0 text-center text-sm-left"
+                className="col-6 bg-gradient-venus px-4 py-6 p-sm-6 p-xl-7 mx-auto mx-xl-0 xl-absolute right-0 max-w-550 bottom-0 text-center text-sm-left"
             >
                 <h3 className="font-weight-bold mb-4">Want to use Sourcegraph at your company?</h3>
                 <p className="text-xl">
