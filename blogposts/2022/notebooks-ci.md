@@ -11,7 +11,6 @@ socialImage:
 published: true
 ---
 
-
 <video loop autoplay muted playsinline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/embedded_notebooks.mp4" type="video/mp4" />
 </video>
