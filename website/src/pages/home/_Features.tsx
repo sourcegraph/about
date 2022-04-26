@@ -38,7 +38,7 @@ const features: Features[] = [
             'Use Code Search to find what you need, across thousands of repositories and multiple code hosts, in milliseconds.',
         details: [
             'Search for snippets, commits, dependencies, or errors across your entire codebase',
-            'Create code monitors to be alerted when undesirable code is introduced',
+            'Create code monitors to be alerted when known vulnerabilities or undesirable code is introduced',
             "Access all of your team's code in one place; never get stuck searching one repository or code host at a time",
         ],
         ctaLink: '/code-search',
