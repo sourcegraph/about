@@ -1,5 +1,5 @@
 import { Link, PageProps } from 'gatsby'
-import CrosshairsGpsIcon from 'mdi-react/CrosshairsGpsIcon'
+import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import ClockTimeThreeOutlineIcon from 'mdi-react/ClockTimeThreeOutlineIcon'
 import WebIcon from 'mdi-react/WebIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
@@ -68,7 +68,7 @@ const items = [
                     <p>
                         Visualize fixes in progress and track their deployment. With{' '}
                         <Link to="/code-insights">Code Insights</Link>, get visibility into remediation efforts and
-                        share progress with team leaders and customers.
+                        share progress with team leaders and and all of your customers.
                     </p>
                 }
             />
@@ -79,7 +79,7 @@ const items = [
         buttonLabel: 'Monitor for the introduction of unsafe code',
         text: (
             <CarouselItem
-                header="Monitor for the introduction of unsafe code"
+                header="Monitor for unsafe code"
                 text={
                     <p>
                         Close the loop on your incident response efforts. After finding the root cause, use{' '}
@@ -118,7 +118,7 @@ const blogListItems = [
     {
         title: 'Log4j Log4Shell 0-day: find, fix, and track affected code',
         description:
-            'In the biggest security vulnerability incident since Heartbleed, Sourcegraph co-founder and CEO Quinn Slack shared how you can find affected code, automate fixes, and track progress.',
+            'In the biggest security vulnerability incident since Heartbleed, Sourcegraph co-founder and CEO Quinn Slack shares how you can find affected code, automate fixes, and track progress.',
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
         href: '/blog/log4j-log4shell-0-day',
@@ -126,7 +126,7 @@ const blogListItems = [
     {
         title: `The real weakest link in software supply chain security (it's not open source)`,
         description:
-            'Using open source code can jump-start development but it can also expose you to security vulnerabilities. In this post, learn how to design an effective vulnerability management process that can make dependencies visible and mitigation less time-consuming.',
+            'Using open source code can jump start development, but it can also expose you to security vulnerabilities. In this post, learn how to design an effective vulnerability management process that can make dependencies visible and mitigation less time-consuming.',
         type: 'Blog post',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png',
         href: '/blog/real-weakest-link-in-software-supply-chain-security',
@@ -134,7 +134,7 @@ const blogListItems = [
     {
         title: 'How to remove secrets from your codebase',
         description:
-            'Back in early 2021, Sourcegraph stored infrastructure and service passwords in private repositories. Security engineer André Eleuterio moved every secret to a secure vault and used code search to ensure the move was successful and complete.',
+            'In early 2021, Sourcegraph stored infrastructure and service passwords in private repositories. Learn how Sourcegraph Security Engineer André Eleuterio moved every secret to a secure vault and used Code Search to ensure the move was successful and complete.',
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
         href: '/blog/eliminate-secrets-from-codebase-with-universal-code-search',
@@ -203,7 +203,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 </div>
                 <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
                     <div className="text-center mb-4">
-                        <CrosshairsGpsIcon className="mb-4 text-blurple" size={40} />
+                        <MagnifyIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Assess incidents quickly</h4>
                         <p>
                             Pinpoint the code responsible for the incident and find the root cause in your codebase.
@@ -239,7 +239,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </h1>
                         <p>
                             Current tools don't enable teams to quickly get to the root cause of an incident and ensure
-                            it doesn't reoccur. <strong>What does that mean for you?</strong>
+                            it doesn't reoccur.
+                        </p>
+                        <p>
+                            <strong>What does that mean for you?</strong>
                         </p>
                         <ul>
                             <li className="mt-1">
