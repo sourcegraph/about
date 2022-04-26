@@ -11,8 +11,6 @@ socialImage:
 published: true
 ---
 
-# How we used Notebooks to make our CI more accessible and understandable
-
 Today, Sourcegraph is announcing the general availability of Notebooks. Notebooks allow developers to integrate code search queries with text, so you can create living documentation that always references live code. I remember when I first tried Notebooks shortly after it was announced internally. My reaction was something along the lines of “I didn’t know I needed this!” Now, it’s a vital part of my collaborative workflow.
 
 In this post, I’m going to walk through two ways I use Notebooks here at Sourcegraph. In both cases, I’m using Notebooks to capture and share code examples but in one, I’m embedding Sourcegraph search queries into documentation and in the other, I’m assembling code examples on the fly to make parts of our codebase more understandable to other developers.
@@ -68,7 +66,9 @@ Another example: I wrote this Notebook, [Buildkite command tracing](https://sour
 
 I walked through the code myself to jog my memory, and, along the way, using the notepad, collected links and added comments.
 
-[NOTEPAD GRAPHIC]
+<video loop autoplay muted playsinline>
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/Create_notepad.mp4" type="video/mp4" />
+</video>
 
 With a single click, I was able to create a notebook that hooked up to live code from my collected links and comments. I could then share the notebook with my teammate and they could refer to it whenever they wanted to.
 
