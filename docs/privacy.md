@@ -17,8 +17,8 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 
 </span>
 
-- We do not sell your information. We don’t help companies advertise their products to you. ([read more](#What-is-sourcegraphs-business-model))
-- We use a number of trusted third parties to help provide our products. ([read more](#Does-sourcegraph-share-my-information))
+- We do not sell your information. We don’t help companies advertise their products to you. ([read more](#What-is-Sourcegraphs-business-model))
+- We use a number of trusted third parties to help provide our products. ([read more](#Does-Sourcegraph-share-my-information))
 - We use cookies to provide, protect, and promote our own products. ([read more](#Cookies))
 - You can exercise your rights under privacy laws. ([read more](#Global-privacy-practices))
 
