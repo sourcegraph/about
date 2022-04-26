@@ -4,10 +4,22 @@ import classNames from 'classnames'
 
 import { ContentSection } from '../../components/content/ContentSection'
 
-import codeSearch from './assets/animations/code-search.mp4'
-import codeIntel from './assets/animations/code-intel.mp4'
-import batchChanges from './assets/animations/batch-changes.mp4'
-import codeInsights from './assets/animations/code-insights.mp4'
+import codeSearchMp4 from './assets/animations/code-search.mp4'
+import codeSearchWebm from './assets/animations/code-search.webm'
+
+import codeIntelMp4 from './assets/animations/code-intel.mp4'
+import codeIntelWebm from './assets/animations/code-intel.webm'
+
+import batchChangesMp4 from './assets/animations/batch-changes.mp4'
+import batchChangesWebm from './assets/animations/batch-changes.webm'
+
+import codeInsightsMp4 from './assets/animations/code-insights.mp4'
+import codeInsightsWebm from './assets/animations/code-insights.webm'
+
+interface Video {
+    mp4: string
+    webm: string
+}
 
 interface Features {
     productFeature: string
@@ -15,7 +27,7 @@ interface Features {
     description: string | ReactFragment
     details: string[]
     ctaLink: string
-    asset: string
+    video: Video
 }
 
 const features: Features[] = [
@@ -30,7 +42,10 @@ const features: Features[] = [
             "Access all of your team's code in one place; never get stuck searching one repository or code host at a time",
         ],
         ctaLink: '/code-search',
-        asset: codeSearch,
+        video: {
+            mp4: codeSearchMp4,
+            webm: codeSearchWebm
+        }
     },
     {
         productFeature: 'code intelligence',
@@ -43,7 +58,10 @@ const features: Features[] = [
             'Follow dependencies across repositories with confidence using precompiled data for speed and precision',
         ],
         ctaLink: 'https://docs.sourcegraph.com/code_intelligence',
-        asset: codeIntel,
+        video: {
+            mp4: codeIntelMp4,
+            webm: codeIntelWebm
+        }
     },
     {
         productFeature: 'batch changes',
@@ -60,7 +78,10 @@ const features: Features[] = [
             'Automate fixing breaking changes introduced by library or package updates',
         ],
         ctaLink: '/batch-changes',
-        asset: batchChanges,
+        video: {
+            mp4: batchChangesMp4,
+            webm: batchChangesWebm
+        }
     },
     {
         productFeature: 'code insights',
@@ -73,8 +94,11 @@ const features: Features[] = [
             'Create visualizations that update automatically, provide historical trends, and pull directly from the source of truth: the code itself',
         ],
         ctaLink: '/code-insights',
-        asset: codeInsights,
-    },
+        video: {
+            mp4: codeInsightsMp4,
+            webm: codeInsightsWebm
+        }
+    }
 ]
 
 const FeatureSection: FunctionComponent = () => (
@@ -128,7 +152,8 @@ const FeatureSection: FunctionComponent = () => (
                         controls={false}
                         data-cookieconsent="ignore"
                     >
-                        <source type="video/mp4" src={feature.asset} data-cookieconsent="ignore" />
+                        <source type="video/webm" src={feature.video.webm} data-cookieconsent="ignore" />
+                        <source type="video/mp4" src={feature.video.mp4} data-cookieconsent="ignore" />
                     </video>
                 </div>
             </div>
