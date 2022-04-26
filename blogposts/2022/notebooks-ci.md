@@ -6,11 +6,10 @@ authorUrl: https://handbook.sourcegraph.com/team/#robert-lin
 publishDate: 2022-04-28T18:00+02:00
 tags: [blog]
 slug: notebooks-ci
-heroImage: 
-socialImage: 
+heroImage:
+socialImage:
 published: true
 ---
-
 
 ### More posts like this
 
