@@ -62,7 +62,7 @@ This Notebook came about because a coworker was asking about how we use soft fai
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/soft_fails.mp4" type="video/mp4" />
 </video>
 
-Another example: I wrote this Notebook, [Buildkite command tracing](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6NzU0), when a coworker asked how command tracing worked. This coworker was on another team and knew, vaguely, that we used command tracing. They knew how they might implement command tracing in code but didn’t know how we had implemented it in the pipeline, especially considering things are typically scripted as shell commands in a pipeline.
+Another example: I created this Notebook, [Buildkite command tracing](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6NzU0), when a coworker asked how our CI command tracing worked. This coworker was on another team and only knew, vaguely, that we had some sort of command tracing. They knew how they might implement command tracing in code but didn’t know how we had implemented it in the pipeline, especially considering things are typically scripted as shell commands in a pipeline.
 
 I walked through the code myself to jog my memory, and, along the way, using the notepad, collected links and added comments.
 
