@@ -236,7 +236,10 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                             </figcaption>
                         </section>
                         <img className="my-4" src="/external-logos/factset-logo.svg" width="150" alt="Factset logo" />
-                        <Link className="d-block font-weight-bold" to="/case-studies/factset-migrates-from-perforce-to-github">
+                        <Link
+                            className="d-block font-weight-bold"
+                            to="/case-studies/factset-migrates-from-perforce-to-github"
+                        >
                             Read the case study
                             <ArrowRightIcon className="ml-2" />
                         </Link>
@@ -267,7 +270,13 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="text-center col-12 px-0">
-                        <Link className="btn btn-primary col-12 col-md-4 col-lg-2 min-w-200" to="/demo" title="Request a Demo.">Request a demo</Link>
+                        <Link
+                            className="btn btn-primary col-12 col-md-4 col-lg-2 min-w-200"
+                            to="/demo"
+                            title="Request a Demo."
+                        >
+                            Request a demo
+                        </Link>
                     </div>
                 </div>
             </ContentSection>
