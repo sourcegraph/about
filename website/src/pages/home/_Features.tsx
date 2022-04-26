@@ -135,10 +135,10 @@ const FeatureSection: FunctionComponent = () => (
                     </ul>
                     {feature.ctaLink.includes('http') ? (
                         <a href={feature.ctaLink} target="_blank" rel="noreferrer">
-                            Learn more
+                            Learn more about {feature.productFeature}
                         </a>
                     ) : (
-                        <Link to={feature.ctaLink}>Learn more</Link>
+                        <Link to={feature.ctaLink}>Learn more about {feature.productFeature}</Link>
                     )}
                 </div>
 
