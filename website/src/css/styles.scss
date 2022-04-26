@@ -298,6 +298,12 @@ table {
     }
 }
 
+/* ==================== Filters ==================== */
+// TODO: After Tailwind migration this class can be deleted
+.brightness-0 {
+    filter: brightness(0);
+}
+
 /* ==================== Bootstrap Components ==================== */
 
 .popover {
