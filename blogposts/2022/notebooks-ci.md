@@ -6,33 +6,10 @@ authorUrl: https://handbook.sourcegraph.com/team/#robert-lin
 publishDate: 2022-04-28T18:00+02:00
 tags: [blog]
 slug: notebooks-ci
-heroImage:
+heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
 socialImage:
 published: true
 ---
-
-<!-- Output copied to clipboard! -->
-
-<!-----
-
-Yay, no errors, warnings, or alerts!
-
-Conversion time: 0.577 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β33
-* Tue Apr 26 2022 13:23:51 GMT-0700 (PDT)
-* Source doc: How we documented our CI with search notebooks
------>
 
 # How we used Notebooks to make our CI more accessible and understandable
 
