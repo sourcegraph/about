@@ -1,6 +1,5 @@
 import React, { FunctionComponent, useLayoutEffect, useRef, useState } from 'react'
 import { Link } from 'gatsby'
-import classNames from 'classnames'
 
 import { MdiReactIconComponentType } from 'mdi-react'
 import ToolsIcon from 'mdi-react/ToolsIcon'
@@ -17,7 +16,10 @@ interface UseCases {
     icon: MdiReactIconComponentType
     title: string
     description: string
-    link?: string
+    link: {
+        ['href']: string
+        ['text']: string
+    }
 }
 
 const useCases: UseCases[] = [
@@ -25,31 +27,46 @@ const useCases: UseCases[] = [
         icon: ToolsIcon,
         title: 'Fix vulnerabilities',
         description: 'Find, fix, and track vulnerable code quickly across your entire codebase.',
-        link: '/use-cases/vulnerabilities',
+        link: {
+            href: '/use-cases/vulnerabilities',
+            text: 'Learn more about fixing vulnerabilities'
+        }
     },
     {
         icon: ClockOutlineIcon,
         title: 'Onboard developers',
         description: 'Decrease time to first commit with codebase onboarding and knowledge sharing.',
-        link: '/use-cases/onboarding',
+        link: {
+            href: '/use-cases/onboarding',
+            text: 'Learn more about onboarding developers'
+        }
     },
     {
         icon: CheckboxMarkedCircleOutlineIcon,
         title: 'Resolve incidents',
         description: 'Identify the root cause in code and fix the issue everywhere, faster.',
-        // link: '/use-cases/incidents'
+        link: {
+            href: '/use-cases#resolve-incidents-faster',
+            text: 'Learn more about resolving incidents'
+        }
     },
     {
         icon: CachedIcon,
         title: 'Promote code reuse',
         description: 'Find existing code for reuse and contribute to a more coherent codebase.',
-        // link: '/use-cases/code-reuse'
+        link: {
+            href: '/use-cases#streamline-code-reuse',
+            text: 'Learn more about promoting code reuse'
+        }
     },
     {
         icon: LaptopIcon,
         title: 'Boost code health',
         description: 'Improve code health with large-scale changes, and track key initiatives.',
-        // link: '/use-cases/code-health'
+        link: {
+            href: '/use-cases#boost-code-health',
+            text: 'Learn more about boosting code health'
+        }
     },
 ]
 
@@ -95,7 +112,7 @@ const UseCases: FunctionComponent = () => {
                             <h4 className="font-weight-bold">{useCase.title}</h4>
                             <div className="text-lg">
                                 <p className="m-0">{useCase.description}</p>
-                                {useCase.link && <Link to={useCase.link}>Learn more</Link>}
+                                {useCase.link && <Link to={useCase.link.href}>{useCase.link.text}</Link>}
                             </div>
                         </div>
                     </div>
