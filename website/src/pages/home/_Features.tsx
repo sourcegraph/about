@@ -30,7 +30,7 @@ const features: Features[] = [
             "Access all of your team's code in one place; never get stuck searching one repository or code host at a time",
         ],
         ctaLink: '/code-search',
-        asset: codeSearch
+        asset: codeSearch,
     },
     {
         productFeature: 'code intelligence',
@@ -43,7 +43,7 @@ const features: Features[] = [
             'Follow dependencies across repositories with confidence using precompiled data for speed and precision',
         ],
         ctaLink: 'https://docs.sourcegraph.com/code_intelligence',
-        asset: codeIntel
+        asset: codeIntel,
     },
     {
         productFeature: 'batch changes',
@@ -60,7 +60,7 @@ const features: Features[] = [
             'Automate fixing breaking changes introduced by library or package updates',
         ],
         ctaLink: '/batch-changes',
-        asset: batchChanges
+        asset: batchChanges,
     },
     {
         productFeature: 'code insights',
@@ -73,7 +73,7 @@ const features: Features[] = [
             'Create visualizations that update automatically, provide historical trends, and pull directly from the source of truth: the code itself',
         ],
         ctaLink: '/code-insights',
-        asset: codeInsights
+        asset: codeInsights,
     },
 ]
 
@@ -128,11 +128,7 @@ const FeatureSection: FunctionComponent = () => (
                         controls={false}
                         data-cookieconsent="ignore"
                     >
-                        <source
-                            type="video/mp4"
-                            src={feature.asset}
-                            data-cookieconsent="ignore"
-                        />
+                        <source type="video/mp4" src={feature.asset} data-cookieconsent="ignore" />
                     </video>
                 </div>
             </div>
