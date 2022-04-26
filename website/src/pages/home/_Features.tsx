@@ -53,7 +53,7 @@ const features: Features[] = [
         description:
             'Follow symbol definitions and references across packages, dependencies, and repositories seamlessly.',
         details: [
-            "Traverse your entire codebase with cross-repository 'Jump to definition' and 'Find references'",
+            "Traverse your entire codebase with cross-repository 'Go to definition' and 'Find references'",
             'Navigate your code in your web browser to see any commit, on any branch, of any repository instantly',
             'Follow dependencies across repositories with confidence using precompiled data for speed and precision',
         ],
