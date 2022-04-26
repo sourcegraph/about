@@ -44,8 +44,8 @@ const features: Features[] = [
         ctaLink: '/code-search',
         video: {
             mp4: codeSearchMp4,
-            webm: codeSearchWebm
-        }
+            webm: codeSearchWebm,
+        },
     },
     {
         productFeature: 'code intelligence',
@@ -60,8 +60,8 @@ const features: Features[] = [
         ctaLink: 'https://docs.sourcegraph.com/code_intelligence',
         video: {
             mp4: codeIntelMp4,
-            webm: codeIntelWebm
-        }
+            webm: codeIntelWebm,
+        },
     },
     {
         productFeature: 'batch changes',
@@ -80,8 +80,8 @@ const features: Features[] = [
         ctaLink: '/batch-changes',
         video: {
             mp4: batchChangesMp4,
-            webm: batchChangesWebm
-        }
+            webm: batchChangesWebm,
+        },
     },
     {
         productFeature: 'code insights',
@@ -96,9 +96,9 @@ const features: Features[] = [
         ctaLink: '/code-insights',
         video: {
             mp4: codeInsightsMp4,
-            webm: codeInsightsWebm
-        }
-    }
+            webm: codeInsightsWebm,
+        },
+    },
 ]
 
 const FeatureSection: FunctionComponent = () => (
@@ -126,7 +126,7 @@ const FeatureSection: FunctionComponent = () => (
                     })}
                 >
                     <small className="text-uppercase font-weight-bold d-block mb-2">{feature.productFeature}</small>
-                    <h2 className={classNames('font-weight-bold', {'max-w-350': i !== 0})}>{feature.title}</h2>
+                    <h2 className={classNames('font-weight-bold', { 'max-w-350': i !== 0 })}>{feature.title}</h2>
                     <p>{feature.description}</p>
                     <ul>
                         {feature.details.map((detail, k) => (
@@ -138,7 +138,9 @@ const FeatureSection: FunctionComponent = () => (
                             Learn more about {feature.productFeature}
                         </a>
                     ) : (
-                        <Link to={feature.ctaLink} className="btn btn-outline-primary">Learn more about {feature.productFeature}</Link>
+                        <Link to={feature.ctaLink} className="btn btn-outline-primary">
+                            Learn more about {feature.productFeature}
+                        </Link>
                     )}
                 </div>
 

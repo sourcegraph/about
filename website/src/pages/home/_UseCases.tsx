@@ -29,8 +29,8 @@ const useCases: UseCases[] = [
         description: 'Find, fix, and track vulnerable code quickly across your entire codebase.',
         link: {
             href: '/use-cases/vulnerabilities',
-            text: 'Learn more about fixing vulnerabilities'
-        }
+            text: 'Learn more about fixing vulnerabilities',
+        },
     },
     {
         icon: ClockOutlineIcon,
@@ -38,8 +38,8 @@ const useCases: UseCases[] = [
         description: 'Decrease time to first commit with codebase onboarding and knowledge sharing.',
         link: {
             href: '/use-cases/onboarding',
-            text: 'Learn more about onboarding developers'
-        }
+            text: 'Learn more about onboarding developers',
+        },
     },
     {
         icon: CheckboxMarkedCircleOutlineIcon,
@@ -47,8 +47,8 @@ const useCases: UseCases[] = [
         description: 'Identify the root cause in code and fix the issue everywhere, faster.',
         link: {
             href: '/use-cases#resolve-incidents-faster',
-            text: 'Learn more about resolving incidents'
-        }
+            text: 'Learn more about resolving incidents',
+        },
     },
     {
         icon: CachedIcon,
@@ -56,8 +56,8 @@ const useCases: UseCases[] = [
         description: 'Find existing code for reuse and contribute to a more coherent codebase.',
         link: {
             href: '/use-cases#streamline-code-reuse',
-            text: 'Learn more about promoting code reuse'
-        }
+            text: 'Learn more about promoting code reuse',
+        },
     },
     {
         icon: LaptopIcon,
@@ -65,8 +65,8 @@ const useCases: UseCases[] = [
         description: 'Improve code health with large-scale changes, and track key initiatives.',
         link: {
             href: '/use-cases#boost-code-health',
-            text: 'Learn more about boosting code health'
-        }
+            text: 'Learn more about boosting code health',
+        },
     },
 ]
 
@@ -124,12 +124,16 @@ const UseCases: FunctionComponent = () => {
                 style={{ marginBottom: boxHalfHeight, width: '90%' }}
                 className="col-6 bg-gradient-venus px-4 py-6 p-sm-6 px-xl-7 py-xl-6 mx-auto mx-xl-0 xl-absolute right-0 max-w-550 bottom-0 text-center text-sm-left"
             >
-                <h3 className="font-weight-bold mb-4 pr-sm-0 pr-md-7 pr-xl-4">Want to use Sourcegraph at your company?</h3>
+                <h3 className="font-weight-bold mb-4 pr-sm-0 pr-md-7 pr-xl-4">
+                    Want to use Sourcegraph at your company?
+                </h3>
                 <p className="text-xl">
                     <Link to="/get-started">Get started</Link> for free with up to 10 teammates or{' '}
                     <Link to="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph in
                     your own environment.
-                    <Link to="/demo" className="btn btn-primary mt-5 d-block d-sm-inline-block">Request a demo</Link>
+                    <Link to="/demo" className="btn btn-primary mt-5 d-block d-sm-inline-block">
+                        Request a demo
+                    </Link>
                 </p>
             </div>
         </ContentSection>
