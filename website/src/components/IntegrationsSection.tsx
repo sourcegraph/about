@@ -71,7 +71,7 @@ const tools: string[] = [
     'Atom',
     'Sublime Text',
     'Datadog',
-    'LightStep',
+    'Lightstep',
     'Sentry',
     'Codecov',
     'Jira',
