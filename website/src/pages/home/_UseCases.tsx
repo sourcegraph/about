@@ -124,7 +124,7 @@ const UseCases: FunctionComponent = () => {
                 style={{ marginBottom: boxHalfHeight, width: '90%' }}
                 className="col-6 bg-gradient-venus px-4 py-6 p-sm-6 p-xl-7 mx-auto mx-xl-0 xl-absolute right-0 max-w-550 bottom-0 text-center text-sm-left"
             >
-                <h3 className="font-weight-bold mb-4">Want to use Sourcegraph at your company?</h3>
+                <h3 className="font-weight-bold mb-4 pr-sm-0 pr-md-7 pr-xl-4">Want to use Sourcegraph at your company?</h3>
                 <p className="text-xl">
                     <Link to="/get-started">Get started</Link> for free with up to 10 teammates or{' '}
                     <Link to="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph in
