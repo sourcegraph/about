@@ -17,14 +17,14 @@ Capitalized terms that are not defined in this Privacy Policy have the meaning g
 
 </span>
 
-- We do not sell your information. We don’t help companies advertise their products to you. ([read more](#what-is-sourcegraphs-business-model))
-- We use a number of trusted third parties to help provide our products. ([read more](#does-sourcegraph-share-my-information))
-- We use cookies to provide, protect, and promote our own products. ([read more](#cookies))
-- You can exercise your rights under privacy laws. ([read more](#global-privacy-practices))
+- We do not sell your information. We don’t help companies advertise their products to you. ([read more](#What-is-sourcegraphs-business-model))
+- We use a number of trusted third parties to help provide our products. ([read more](#Does-sourcegraph-share-my-information))
+- We use cookies to provide, protect, and promote our own products. ([read more](#Cookies))
+- You can exercise your rights under privacy laws. ([read more](#Global-privacy-practices))
 
 <span style="color:#b200f8;">
 
-#### What is Sourcegraph’s business model?
+## What is Sourcegraph’s business model?
 
 </span>
 
@@ -32,7 +32,7 @@ We make money through paid subscriptions to use our Services. We do not sell you
 
 <span style="color:#b200f8;">
 
-#### What information do we collect, and for what purpose
+## What information do we collect, and for what purpose
 
 </span>
 
@@ -96,7 +96,7 @@ We may also collect analytics data, or use third-party analytics tools, to help 
 
 Although we do our best to honor the privacy preferences of our users, we are not able to respond to Do Not Track signals from your browser at this time.
 
-### How does Sourcegraph my automatically collected data?
+### How does Sourcegraph use my automatically collected data?
 
 We may use the automatically collected data to:
 
