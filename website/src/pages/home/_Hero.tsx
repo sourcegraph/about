@@ -37,12 +37,12 @@ const Hero: FunctionComponent = () => {
                 style={{ backgroundImage: `url(${meshRight})` }}
             />
 
-            <div className="text-center max-w-700 mx-auto">
-                <h1 className="text-5xl font-weight-bold">
+            <div className="text-center max-w-750 mx-auto">
+                <h1 className={classNames(styles.heading, 'font-weight-bold')}>
                     <span className="d-block mb-2 text-transparent bg-clip-text text-gradient">{headline}</span> across
                     your entire codebase
                 </h1>
-                <p className="font-weight-bold my-5">
+                <p className="font-weight-bold my-5 max-w-700 mx-auto">
                     Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
                     code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.
                 </p>
