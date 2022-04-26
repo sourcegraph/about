@@ -51,14 +51,14 @@ const ContinuousDevOnboarding: FunctionComponent<PageProps> = props => {
 
                         <p>Download this guide to learn:</p>
                         <ul>
-                            <li>
+                            <li className="mb-1">
                                 How to recontextualize traditional onboarding practices with long-term developer growth
                                 in mind
                             </li>
-                            <li>
+                            <li className="mb-1">
                                 How to cultivate an environment that enables developers to be flexible and resilient
                             </li>
-                            <li>
+                            <li className="mb-1">
                                 How to approach people, knowledge, and tools as fundamental aspects of engineering
                                 culture
                             </li>
