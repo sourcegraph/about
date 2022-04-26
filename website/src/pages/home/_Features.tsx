@@ -89,7 +89,7 @@ const features: Features[] = [
         description:
             'With Code Insights, know how different initiatives in your codebase are progressing in real time so you can make data-driven decisions.',
         details: [
-            'Track migrations, code smells, ownership, versions, and fully customizable metrics',
+            'Track migrations, code smells, ownership, versions, with fully customizable dashboards',
             'Ensure that security vulnerabilities and deprecated packages get completely removed from your codebase',
             'Create visualizations that update automatically, provide historical trends, and pull directly from the source of truth: the code itself',
         ],
