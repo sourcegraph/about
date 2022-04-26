@@ -65,7 +65,7 @@ const ContinuousDevOnboarding: FunctionComponent<PageProps> = props => {
                         </ul>
                     </div>
 
-                    <div className={`${styles.formContainer} col-lg-6 p-6 mt-5 mt-lg-0`}>
+                    <div className="col-lg-6 p-5 p-lg-6 mt-5 mt-lg-0">
                         <div id="form" />
                     </div>
                 </div>
