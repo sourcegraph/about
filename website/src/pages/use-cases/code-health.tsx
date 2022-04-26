@@ -169,7 +169,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         className="use-cases-page navbar-light"
         hero={
             <>
-                <div className={`${styles.useCaseHeader}`}>
+                <div className={styles.useCaseHeader}>
                     <div className="container pb-4">
                         <div className="row">
                             <div className="col-lg-7 mb-8 mt-7">
