@@ -11,6 +11,15 @@ socialImage:
 published: true
 ---
 
+
+<video loop autoplay muted playsinline>
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/embedded_notebooks.mp4" type="video/mp4" />
+</video>
+
+<video loop autoplay muted playsinline>
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/soft_fails.mp4" type="video/mp4" />
+</video>
+
 ### More posts like this
 
 - [How we migrated entirely to CSS Modules using codemods and Sourcegraph Code Insights](https://about.sourcegraph.com/blog/migrating-to-css-modules-with-codemods-and-code-insights/)
