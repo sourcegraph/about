@@ -84,7 +84,7 @@ const UseCases: FunctionComponent = () => {
                 <a href="https://docs.sourcegraph.com">See the docs</a>
             </div>
 
-            <div className="row max-w-800 mx-auto mt-6">
+            <div className="row max-w-850 mx-auto mt-6">
                 {useCases.map((useCase, i) => (
                     <div
                         key={useCase.title}
