@@ -135,11 +135,7 @@ export default ((props: any) => (
                                     href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
                                     className="btn"
                                 >
-                                    <img
-                                        src="/external-logos/cloudflare-logo.svg"
-                                        width="110px"
-                                        alt="Cloudflare"
-                                    />
+                                    <img src="/external-logos/cloudflare-logo.svg" width="110px" alt="Cloudflare" />
                                 </a>
                             </div>
                         </blockquote>
