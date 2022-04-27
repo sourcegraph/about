@@ -101,7 +101,7 @@ const UseCases: FunctionComponent = () => {
                 <h1 className="font-weight-bold">Move fast &mdash; even in big codebases</h1>
             </div>
 
-            <div className="row max-w-850 mx-auto mt-6">
+            <div className="row max-w-900 mx-auto mt-6">
                 {useCases.map(useCase => (
                     <div
                         key={useCase.title}
