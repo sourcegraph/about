@@ -17,10 +17,7 @@ export const ThreeUpText: FunctionComponent<Props> = ({ title, items }) => (
 
         <div className="mb-6 d-flex flex-wrap justify-content-between">
             {items.map((item, index) => (
-                <div
-                    key={`item-${index + 1}-${item.description}`}
-                    className="col-12 col-lg-4 text-center pt-5"
-                >
+                <div key={`item-${index + 1}-${item.description}`} className="col-12 col-lg-4 text-center pt-5">
                     {item.icon && item.icon}
                     {item.subtitle}
                     <p className="max-w-md-400 mx-auto">{item.description}</p>

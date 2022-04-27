@@ -20,7 +20,7 @@ const resourceItems = [
     {
         title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
         description:
-        'See how Nutanix was able to confidently identify every instance of Log4j across its sprwaling codebase and deliver patches to its customers that fully remediated the vulnerability within 4 days.',
+            'See how Nutanix was able to confidently identify every instance of Log4j across its sprwaling codebase and deliver patches to its customers that fully remediated the vulnerability within 4 days.',
         type: 'Case study',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
         href: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',

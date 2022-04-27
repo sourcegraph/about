@@ -142,7 +142,7 @@ const blogListItems = [
     {
         title: 'How we built our software engineering career framework',
         description:
-        'Learn how Sourcegraph built an engineering career development framework to align the entire engineering organization and create consistent, fair, and scalalabe conversations about growth.',
+            'Learn how Sourcegraph built an engineering career development framework to align the entire engineering organization and create consistent, fair, and scalalabe conversations about growth.',
         type: 'Blog post',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png',
         href: '/blog/software-engineer-career-ladder',
