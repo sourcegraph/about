@@ -19,7 +19,7 @@ export const ThreeUpText: FunctionComponent<Props> = ({ title, items }) => (
             {items.map((item, index) => (
                 <div
                     key={`item-${index + 1}-${item.description}`}
-                    className="col-12 col-xl-3 min-w-md-350 text-center pt-5"
+                    className="col-12 col-lg-4 text-center pt-5"
                 >
                     {item.icon && item.icon}
                     {item.subtitle}

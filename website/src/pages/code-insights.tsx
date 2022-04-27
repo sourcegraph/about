@@ -269,6 +269,7 @@ const blogListItems = [
         type: 'Blog post',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
+        alt: 'Migrating to CSS modules with codemods and code insights blog thumbnail',
     },
     {
         title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
@@ -276,6 +277,7 @@ const blogListItems = [
         type: 'Blog post',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
         href: '/blog/announcing-code-insights',
+        alt: 'Announcing code insights blog thumbnail',
     },
     {
         title: 'Dive into documentation',
@@ -283,6 +285,7 @@ const blogListItems = [
         type: 'Docs',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
         href: 'https://docs.sourcegraph.com/code_insights',
+        alt: 'Code insights documentation thumbnail',
     },
 ]
 

@@ -139,6 +139,7 @@ const resourceItems = [
         type: 'Case study',
         image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
         href: '/case-studies/factset-migrates-from-perforce-to-github',
+        alt: 'Factset case study thumbnail',
     },
     {
         title: 'How one engineering manager uses the Sourcegraph extension for VS Code',
@@ -147,6 +148,7 @@ const resourceItems = [
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
         href: '/blog/ways-to-use-sourcegraph-extension-for-vs-code',
+        alt: 'Ways to use Sourcegraph Extension for VSCode blog thumbnail',
     },
 ]
 
@@ -251,7 +253,7 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="row mt-lg-0 mt-5 justify-content-center">
                 <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6">How Sourcegraph helps</h1>
+                    <h1 className="font-weight-bold text-md-center text-left mb-lg-6 mb-md-6">How Sourcegraph helps</h1>
                 </div>
                 <div className="pb-lg-5 pb-md-6 pb-5">
                     <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />

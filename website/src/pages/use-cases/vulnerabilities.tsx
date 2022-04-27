@@ -174,22 +174,25 @@ const blogListItems = [
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
         href: '/blog/log4j-log4shell-0-day',
+        alt: 'Log4j Log4Shell 0-day blog thumbnail',
     },
     {
         title: 'The Nine Circles of Dependency Hell (and a roadmap out)',
         description:
-            'A complex web of software dependencies can stop software development in its tracks. In this post, former Google software engineer Matt Rickard explains how to handle dependencies so engineers can spend more time coding.',
+        'A complex web of software dependencies can stop software development in its tracks. In this post, former Google software engineer Matt Rickard explains how to handle dependencies so engineers can spend more time coding.',
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
         href: '/blog/nine-circles-of-dependency-hell',
+        alt: 'Nine circles of dependency hell blog thumbnail',
     },
     {
         title: 'How to remove secrets from your codebase',
         description:
-            'In early 2021, many Sourcegraph infrastructure and service account passwords were stored in private repositories. With Sourcegraph code search, security engineer André Eleuterio was able to ensure he moved every secret to a secure vault.',
+        'In early 2021, many Sourcegraph infrastructure and service account passwords were stored in private repositories. With Sourcegraph code search, security engineer André Eleuterio was able to ensure he moved every secret to a secure vault.',
         type: 'Blog post',
         image: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
         href: '/blog/eliminate-secrets-from-codebase-with-universal-code-search',
+        alt: 'How to remove secrets from your codebase blog thumbnail',
     },
 ]
 
