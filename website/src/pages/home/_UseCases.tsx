@@ -11,6 +11,7 @@ import LaptopIcon from 'mdi-react/LaptopIcon'
 import { ContentSection } from '../../components/content/ContentSection'
 import { useWindowWidth } from '../../hooks'
 import { breakpoints } from '../../breakpoints'
+import { buttonStyle, buttonLocation } from '../../tracking'
 
 interface UseCases {
     icon: MdiReactIconComponentType
@@ -131,7 +132,12 @@ const UseCases: FunctionComponent = () => {
                     <Link to="/get-started">Get started</Link> for free with up to 10 teammates or{' '}
                     <Link to="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph in
                     your own environment.
-                    <Link to="/demo" className="btn btn-primary mt-5 d-block d-sm-inline-block">
+                    <Link
+                        to="/demo"
+                        className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.bodyDemo}
+                    >
                         Request a demo
                     </Link>
                 </p>

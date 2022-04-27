@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import { startCase } from 'lodash'
 
 import { ContentSection } from '../../components/content/ContentSection'
+import { buttonStyle, buttonLocation } from '../../tracking'
 
 import codeSearchMp4 from './assets/animations/code-search.mp4'
 import codeSearchWebm from './assets/animations/code-search.webm'
@@ -135,11 +136,23 @@ const FeatureSection: FunctionComponent = () => (
                         ))}
                     </ul>
                     {feature.ctaLink.includes('http') ? (
-                        <a href={feature.ctaLink} target="_blank" rel="noreferrer" className="btn btn-outline-primary">
+                        <a
+                            href={feature.ctaLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="btn btn-outline-primary"
+                            data-button-style={buttonStyle.outline}
+                            data-button-location={buttonLocation.bodyDemo}
+                        >
                             Learn more about {startCase(feature.productFeature)}
                         </a>
                     ) : (
-                        <Link to={feature.ctaLink} className="btn btn-outline-primary">
+                        <Link
+                            to={feature.ctaLink}
+                            className="btn btn-outline-primary"
+                            data-button-style={buttonStyle.outline}
+                            data-button-location={buttonLocation.bodyDemo}
+                        >
                             Learn more about {startCase(feature.productFeature)}
                         </Link>
                     )}
