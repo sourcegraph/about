@@ -11,7 +11,7 @@ socialImage:
 published: true
 ---
 
-Today, Sourcegraph is announcing the general availability of Notebooks. Notebooks allow developers to integrate code search queries with text, so you can create living documentation that always references live code. I remember when I first tried Notebooks shortly after it was announced internally. My reaction was something along the lines of “I didn’t know I needed this!” Now, it’s a vital part of my collaborative workflow.
+Today, Sourcegraph is announcing the general availability of Notebooks. Notebooks allows developers to integrate code search queries with text, so you can create living documentation that always references live code. I remember when I first tried Notebooks shortly after it was announced internally. My reaction was something along the lines of “I didn’t know I needed this!” Now, it’s a vital part of my collaborative workflow.
 
 In this post, I’m going to walk through two ways I use Notebooks here at Sourcegraph. In both cases, I’m using Notebooks to capture and share code examples but in one, I’m embedding Sourcegraph search queries into documentation and in the other, I’m assembling code examples on the fly to make parts of our codebase more understandable to other developers.
 
@@ -23,7 +23,7 @@ Typically, continuous integration (CI) pipelines are specified by committing a Y
 
 Customizability has advantages and disadvantages: the major advantage is that you can build precisely what you want and the major disadvantage is that the more unique something is, the harder you have to work to explain it.
 
-Crossing that gap was the major use case that drove me to adopt Notebooks and make it so important to my workflow.
+Notebooks fit into this gap perfectly, and it naturally became very important to my workflow.
 
 ## Notebooks augment documentation with live code examples
 
@@ -31,7 +31,7 @@ Documentation can easily go stale and lag behind the code it documents, especial
 
 With Notebooks, you can embed code directly into your documentation (and other internal knowledge management systems) and run Sourcegraph searches without having to leave whatever page you’re on. Notebooks augment our existing documentation, allowing developers to read static, explanatory text as well as run searches that return live code results. Developers can read _about_ code and then see the actual code with just a click.
 
-Take a look at the CI docs I contributed to [here](https://docs.sourcegraph.com/dev/background-information/ci), for example. The docs run through explanations of our Buildkite pipelines, pipeline health, pipeline development, Buildkite infrastructure, and how we use GitHub Actions. In the [pipeline development section](https://docs.sourcegraph.com/dev/background-information/ci#pipeline-development), I embedded notebooks that further explain, and demonstrate, the [Run types](https://docs.sourcegraph.com/dev/background-information/ci#run-types) and [Diff types](https://docs.sourcegraph.com/dev/background-information/ci#diff-types) used internally by the pipeline generator.
+Take a look at the [CI pipeline development documentation](https://docs.sourcegraph.com/dev/background-information/ci/development), where I've embedded notebooks that further explain, and demonstrate, the [Run types](https://docs.sourcegraph.com/dev/background-information/ci/development#run-types) and [Diff types](https://docs.sourcegraph.com/dev/background-information/ci/development#diff-types) used internally by the pipeline generator.
 
 <video loop autoplay muted playsinline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/embedded_notebooks.mp4" type="video/mp4" />
@@ -42,7 +42,7 @@ You can read about these in detail in the docs, but the idea is that the pipelin
 1. Run types, which are determined by branch naming conventions, tags, and environment variables; and
 2. Diff types, which are determined by what files have been changed in a given branch.
 
-I created notebooks for Run types and Diff types so that Sourcegraph developers can see them in action and in the code. The Notebook for Run types includes both a search that shows Run types in the codebase and a search for RunTypeMatcher, which further shows how each RunType declares the conditions under which it should be used.
+I created notebooks for Run types and Diff types so that Sourcegraph developers can see them in action and in the code. The notebook for Run types includes both a search that shows Run types in the codebase and a search for RunTypeMatcher, which further shows how each RunType declares the conditions under which it should be used.
 
 Our static CI documentation now contains living documentation–code pulled directly from the current state of the codebase, complete with hover tooltips and jump-to-definition for an IDE-like experience–enabling developers to understand these concepts in theory and in practice. The end result is that our developers will spend fewer hours onboarding and combing through documentation for up-to-date information.
 
@@ -54,15 +54,15 @@ The trouble with this workflow is that it typically leaves no trace and must hap
 
 I found this really useful because it fills a gap I noticed between permanent documentation, which tends to take a while to produce, and synchronous discussions, which can be tough to arrange in a globally remote team. I call it ephemeral documentation.
 
-Let’s walk through a couple of examples. In this Notebook, [Usages of soft failures in Buildkite pipelines](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6NzU1), you can see a brief explanation of soft failures (basically, soft failures don’t cause the entire build to fail) and searches that show soft failures in the Sourcegraph pipeline generator and soft failures in our Buildkite YAML pipelines.
+Let’s walk through a couple of examples. In this notebook, [Usages of soft failures in Buildkite pipelines](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6NzU1), you can see a brief explanation of soft failures (basically, soft failures don’t cause the entire build to fail) and searches that show soft failures in the Sourcegraph pipeline generator and soft failures in our Buildkite YAML pipelines.
 
-This Notebook came about because a coworker was asking about how we use soft failures in our pipelines, and how they work. Rather than try to list out their usages, I simply wrote a Notebook with some searches that easily captured all usages. From this Notebook, you can use these two searches and see live code that shows exactly what we mean by soft failures.
+This notebook came about because a coworker was asking about how we use soft failures in our pipelines, and how they work. Rather than try to list out their usages, I simply wrote a notebook with some searches that easily captured all usages. From this notebook, you can use these two searches and see live code that shows exactly what we mean by soft failures.
 
 <video loop autoplay muted playsinline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/soft_fails.mp4" type="video/mp4" />
 </video>
 
-Another example: I created this Notebook, [Buildkite command tracing](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6NzU0), when a coworker asked how our CI command tracing worked. This coworker was on another team and only knew, vaguely, that we had some sort of command tracing. They knew how they might implement command tracing in code but didn’t know how we had implemented it in the pipeline, especially considering things are typically scripted as shell commands in a pipeline.
+Another example: I created this notebook, [Buildkite command tracing](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6NzU0), when a coworker asked how our CI command tracing worked. This coworker was on another team and only knew, vaguely, that we had some sort of command tracing. They knew how they might implement command tracing in code but didn’t know how we had implemented it in the pipeline, especially considering things are typically scripted as shell commands in a pipeline.
 
 I walked through the code myself to jog my memory, and, along the way, using the notepad, collected links and added comments.
 
@@ -78,13 +78,13 @@ Codebases often have lots of levels to them and each feature can be a vertical t
 
 Our CI pipeline generator is a good example of what happens to code as a company grows up. It was once owned by a team that has since been reshaped and looks different today. Along the way, the pipeline generator has received numerous band-aids over the years to accommodate various use cases. Until I refactored it, the pipeline generator was both messy and inaccessible. Developers struggled to understand and extend it.
 
-Now, the pipeline generator is much cleaner, functional, and extensible. I used Notebooks throughout the refactor because they made that work more accessible and easier to understand, the result being a project that receives many more internal contributions than it used to. Teams are now customizing CI pipelines for their needs and making improvements.
+Now, the pipeline generator is much cleaner, functional, and extensible. I used notebooks throughout the refactor because they made that work more accessible and easier to understand, the result being a project that receives many more internal contributions than it used to. Teams are now customizing CI pipelines for their needs and making improvements.
 
 As time goes on, I expect the benefits of creating notebooks to compound. Now, when someone refers to the CI documentation, they can see Run types and Diff types in action. Or, when someone else needs to understand soft failures or command tracing, I can just send them the relevant notebooks.
 
-All in all, I’m excited to create and share more notebooks, and excited to see how other developers use Notebooks. I think it’s the kind of feature that reveals more power and more use cases as time goes on and more people use it. I can’t wait to see what you create.
+All in all, I’m excited to create and share more notebooks, and excited to see how other developers use them. I think it’s the kind of feature that reveals more power and more use cases as time goes on and more people use it. I can’t wait to see what you create.
 
-Notebooks are now available on Sourcegraph 3.39. If you'd like to try out Notebooks on Sourcegraph Cloud, [you can try them here](https://sourcegraph.com/notebooks).
+Notebooks is now available on Sourcegraph 3.39. If you'd like to try out Notebooks on Sourcegraph Cloud, [you can try them here](https://sourcegraph.com/notebooks).
 
 ### More posts like this
 
