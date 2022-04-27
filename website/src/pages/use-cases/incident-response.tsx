@@ -278,7 +278,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             </Link>
                             <img
                                 src="/external-logos/cloudflare-color-logo.svg"
-                                className="d-flex mx-auto max-w-175 mt-3"
+                                className="d-flex mx-auto max-w-150 mt-3"
                             />
                         </div>
                     </div>
