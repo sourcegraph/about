@@ -2,7 +2,7 @@ import React, { FunctionComponent, useLayoutEffect, useRef, useState } from 'rea
 import { Link } from 'gatsby'
 
 import { MdiReactIconComponentType } from 'mdi-react'
-import ToolsIcon from 'mdi-react/ToolsIcon'
+import LockOutlineIcon from 'mdi-react/LockOutlineIcon'
 import ClockOutlineIcon from 'mdi-react/ClockOutlineIcon'
 import CheckboxMarkedCircleOutlineIcon from 'mdi-react/CheckboxMarkedCircleOutlineIcon'
 import CachedIcon from 'mdi-react/CachedIcon'
@@ -25,12 +25,12 @@ interface UseCases {
 
 const useCases: UseCases[] = [
     {
-        icon: ToolsIcon,
-        title: 'Fix vulnerabilities',
+        icon: LockOutlineIcon,
+        title: 'Improve code security',
         description: 'Find, fix, and track vulnerable code quickly across your entire codebase.',
         link: {
             href: '/use-cases/vulnerabilities',
-            text: 'Learn more about fixing vulnerabilities',
+            text: 'Learn more about code security',
         },
     },
     {
@@ -99,16 +99,15 @@ const UseCases: FunctionComponent = () => {
         <ContentSection className="position-relative pt-7 pb-5">
             <div className="text-center">
                 <h1 className="font-weight-bold">Move fast &mdash; even in big codebases</h1>
-                <a href="https://docs.sourcegraph.com">Read the docs</a>
             </div>
 
             <div className="row max-w-850 mx-auto mt-6">
-                {useCases.map((useCase, i) => (
+                {useCases.map(useCase => (
                     <div
                         key={useCase.title}
                         className="col-sm-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start mb-6"
                     >
-                        <useCase.icon className="text-vivid-violet w-100 max-w-50 h-auto mr-sm-2 mb-4 mb-sm-0" />
+                        <useCase.icon className="text-vivid-violet w-100 max-w-50 h-auto mr-sm-3 mb-4 mb-sm-0" />
                         <div className="text-center text-sm-left">
                             <h4 className="font-weight-bold">{useCase.title}</h4>
                             <div className="text-lg">

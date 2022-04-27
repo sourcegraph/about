@@ -43,8 +43,7 @@ const Hero: FunctionComponent = () => {
                     your entire codebase
                 </h1>
                 <p className="font-weight-bold my-5 max-w-700 mx-auto">
-                    Address security risks, onboard to a new codebase, identify the root cause of incidents, promote
-                    code reuse, improve code health, and accelerate engineering velocity with Sourcegraph.
+                    Understand, fix, and automate across your codebase with Sourcegraph's code intelligence platform
                 </p>
 
                 <div className="max-w-350 mx-auto flex-column flex-sm-row d-sm-flex align-items-center">
@@ -78,7 +77,7 @@ const Hero: FunctionComponent = () => {
                     Product or installation questions?{' '}
                     <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
                         Talk to an expert
-                    </a>
+                    </a>.
                 </p>
             </div>
 
