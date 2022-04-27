@@ -67,7 +67,7 @@ Another example: I created this notebook, [Buildkite command tracing](https://so
 I walked through the code myself to jog my memory, and, along the way, using the notepad, collected links and added comments.
 
 <video loop autoplay muted playsinline>
-  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/Create_notepad.mp4" type="video/mp4" />
+  <source src="https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/Notepad_final.mp4" type="video/mp4" />
 </video>
 
 With a single click, I was able to create a notebook that hooked up to live code from my collected links and comments. I could then share the notebook with my teammate and they could refer to it whenever they wanted to.
