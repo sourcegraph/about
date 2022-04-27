@@ -104,30 +104,31 @@ const features: Features[] = [
 ]
 
 const FeatureSection: FunctionComponent = () => {
-    
     useEffect(() => {
         const videos = features.map((_, i) => {
             return {
                 el: document.querySelector(`.video-${i}`),
-                paused: true
+                paused: true,
             }
         })
 
         if (!!window.IntersectionObserver) {
-            videos.forEach(vid => {                
-                const observer = new IntersectionObserver(entries => {
-                    const currentVideo = entries[0]
+            videos.forEach(vid => {
+                const observer = new IntersectionObserver(
+                    entries => {
+                        const currentVideo = entries[0]
 
-                    if (currentVideo.intersectionRatio !==1 && !vid.paused) {
-                        vid?.el?.pause()
-                        vid.paused = true
-                    }
-                    else if (vid.paused) {
-                        vid?.el?.play()
-                        vid.paused = false
-                    }
-                }, {threshold: 1})
-    
+                        if (currentVideo.intersectionRatio !== 1 && !vid.paused) {
+                            vid?.el?.pause()
+                            vid.paused = true
+                        } else if (vid.paused) {
+                            vid?.el?.play()
+                            vid.paused = false
+                        }
+                    },
+                    { threshold: 1 }
+                )
+
                 observer.observe(vid?.el)
             })
         }
