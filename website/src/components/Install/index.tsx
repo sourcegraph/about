@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
+import classNames from 'classnames'
 import styles from './install.module.scss'
 
 const installText = `
@@ -47,7 +48,9 @@ export const Install: React.FunctionComponent = () => {
             </h4>
 
             <code>
-                <small className={copied ? styles.flashBackground : ''}>{installText}</small>
+                <small className={copied ? classNames(styles.flashBackground, 'text-break') : 'text-break'}>
+                    {installText}
+                </small>
             </code>
         </div>
     )
