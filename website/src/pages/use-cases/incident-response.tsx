@@ -76,7 +76,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Monitor for the introduction of unsafe code',
+        buttonLabel: 'Monitor for unsafe code',
         text: (
             <CarouselItem
                 header="Monitor for unsafe code"
