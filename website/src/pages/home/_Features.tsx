@@ -1,7 +1,7 @@
-import React, { FunctionComponent, ReactFragment } from 'react'
+import React, { FunctionComponent, ReactFragment, useEffect } from 'react'
 import { Link } from 'gatsby'
 import classNames from 'classnames'
-import { capitalize } from 'lodash'
+import { startCase } from 'lodash'
 
 import { ContentSection } from '../../components/content/ContentSection'
 
@@ -136,11 +136,11 @@ const FeatureSection: FunctionComponent = () => (
                     </ul>
                     {feature.ctaLink.includes('http') ? (
                         <a href={feature.ctaLink} target="_blank" rel="noreferrer" className="btn btn-outline-primary">
-                            Learn more about {capitalize(feature.productFeature)}
+                            Learn more about {startCase(feature.productFeature)}
                         </a>
                     ) : (
                         <Link to={feature.ctaLink} className="btn btn-outline-primary">
-                            Learn more about {capitalize(feature.productFeature)}
+                            Learn more about {startCase(feature.productFeature)}
                         </Link>
                     )}
                 </div>
