@@ -3,11 +3,11 @@ title: 'Interact with Sourcegraph from the command line faster with Fig'
 description: "Sourcegraph teamed up with Fig to enhance 'src' the CLI that allows you to search code and more from your terminal."
 author: Justin Dorfman
 authorUrl: https://twitter.com/jdorfman
-publishDate: 2022-04-19T11:25-07:00
+publishDate: 2022-04-21T11:25-07:00
 tags: [blog]
 slug: why-fig-autocomplete-is-awesome
 heroImage:
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/042022-fig-blog-post-screenshot.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/042222-fig-blog-post-social-og.png
 published: true
 ---
 
@@ -16,8 +16,6 @@ published: true
 We are really excited to announce our latest [integration with Fig](https://fig.io/manual/src)! For those of you who don’t know about Fig, it is a tool that adds IDE-style autocomplete to your existing terminal (currently on macOS.)
 
 When I was onboarding at Sourcegraph one of my todos was to install and learn how to use `src`, a [command-line interface to Sourcegraph](https://docs.sourcegraph.com/cli). The installation was straightforward, but I couldn’t remember all of the different subcommands so I found myself typing `src --help` and [hitting the up arrow](https://www.commitstrip.com/en/2017/02/28/definitely-not-lazy/?) a lot.
-
-![](https://storage.googleapis.com/sourcegraph-assets/blog/042122-fig-blog-post-commit-strip.gif)
 
 Then I remembered Zeno Rocha [tweeting about Fig](https://twitter.com/zenorocha/status/1432709006854869002) and I thought this might be a good opportunity to write an integration. After demoing the proof of concept to my team I got a lot of great feedback and decided to make a [pull request](https://github.com/withfig/autocomplete/pull/1081) to Fig on GitHub.
 
