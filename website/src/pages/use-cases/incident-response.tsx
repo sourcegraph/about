@@ -276,7 +276,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             >
                                 Read the Cloudflare case study
                             </Link>
-                            <img src="/external-logos/cloudflare-color-logo.svg" className="d-flex mx-auto max-w-175 mt-3" />
+                            <img
+                                src="/external-logos/cloudflare-color-logo.svg"
+                                className="d-flex mx-auto max-w-175 mt-3"
+                            />
                         </div>
                     </div>
                 </div>
