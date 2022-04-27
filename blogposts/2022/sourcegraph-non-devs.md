@@ -18,7 +18,20 @@ Sourcegraph is a powerful developer tool used by engineers at top companies, fro
 
 Sourcegraph saves our Product Managers and Analytics/Business Operations teammates 20-60 minutes a few times a week, and provides definitive answers to a surprising range of questions.
 
-In this post, we'll be using a feature called [Search Notebooks](https://about.sourcegraph.com/blog/release/3.36/), which debuted in our [3.36 release](https://about.sourcegraph.com/blog/release/3.36/). Notebooks enable Sourcegraph users to document and share Sourcegraph searches and in this post, we'll use them to share the precise searches our team members used. Hit <code class="language-text">Run all blocks</code> to perform the search and see the results.
+In this post, we'll be using a feature called [Notebooks](https://about.sourcegraph.com/blog/release/3.36/), which debuted in our [3.36 release](https://about.sourcegraph.com/blog/release/3.36/). Notebooks enable Sourcegraph users to document and share Sourcegraph searches and in this post, we'll use them to share the precise searches our team members used. Hit <code class="language-text">Run all blocks</code> to perform the search and see the results.
+
+To go to the sections most relevant to you, use the table of contents below.
+1. [Product Managers](#product-managers)
+   * [What actions do our metrics track?](#what-actions-do-our-metrics-track)
+   * [I’m mid-conversation with a customer. Is another team’s feature affecting our feature?](#)
+   * [What's the Sourcegraph standard for error message syntax?](#semantic-refactoring)
+2. [Find and replace outside your editor, on your local machine](#find-and-replace-outside-your-editor)
+   * [`grep` and `sed`](#grep-and-sed)
+   * [Codemod](#codemod)
+   * [Language-specific tools](#language-specific-tools)
+   * [Comby](#comby)
+3. [Making large-scale code changes tractable](#beyond-your-local-machine)
+   * [Campaigns](#campaigns)
 
 ## Product Managers
 
@@ -33,7 +46,7 @@ I’d just joined Sourcegraph in September 2020 as the first PM for the extensib
 **Search:** First, I [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+viewRegistryExtensionManage&patternType=regexp), got no results, [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+view+RegistryExtensionManage&patternType=regexp), got results, and then [ran this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27RegistryExtension&patternType=literal), which gave me a quick reference for the pages all the events fired on. From there, I could glance through the strings and comments on the page to map them back to states in our app.
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjAz?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 150%; height: 300px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjAz?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 120%; height: 300px;"></iframe>
 </p>
 
 **Impact:** I didn’t need to ask a teammate or pull the repo(s) and search it locally. The latter means I also didn’t have to clutter my desktop with yet another open application window.
