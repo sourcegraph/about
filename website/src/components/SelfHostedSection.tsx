@@ -42,7 +42,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                         Learn about self-hosted vs Cloud features
                     </a>
 
-                    <h5 className="mt-6 mb-4 font-weight-bold">Want help?</h5>
+                    <h5 className="mt-6 mb-4 font-weight-bold">Need help setting up Sourcegraph?</h5>
 
                     <a
                         className="btn btn-primary d-inline-flex"
