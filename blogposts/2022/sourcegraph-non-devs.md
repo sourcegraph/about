@@ -21,17 +21,18 @@ Sourcegraph saves our Product Managers and Analytics/Business Operations teammat
 In this post, we'll be using a feature called [Notebooks](https://about.sourcegraph.com/blog/release/3.36/), which debuted in our [3.36 release](https://about.sourcegraph.com/blog/release/3.36/). Notebooks enable Sourcegraph users to document and share Sourcegraph searches and in this post, we'll use them to share the precise searches our team members used. Hit <code class="language-text">Run all blocks</code> to perform the search and see the results.
 
 To go to the sections most relevant to you, use the table of contents below.
+
 1. [Product Managers](#product-managers)
-   * [What actions do our metrics track?](#what-actions-do-our-metrics-track)
-   * [I’m mid-conversation with a customer. Is another team’s feature affecting our feature?](#)
-   * [What's the Sourcegraph standard for error message syntax?](#semantic-refactoring)
+   - [What actions do our metrics track?](#what-actions-do-our-metrics-track)
+   - [I’m mid-conversation with a customer. Is another team’s feature affecting our feature?](#)
+   - [What's the Sourcegraph standard for error message syntax?](#semantic-refactoring)
 2. [Find and replace outside your editor, on your local machine](#find-and-replace-outside-your-editor)
-   * [`grep` and `sed`](#grep-and-sed)
-   * [Codemod](#codemod)
-   * [Language-specific tools](#language-specific-tools)
-   * [Comby](#comby)
+   - [`grep` and `sed`](#grep-and-sed)
+   - [Codemod](#codemod)
+   - [Language-specific tools](#language-specific-tools)
+   - [Comby](#comby)
 3. [Making large-scale code changes tractable](#beyond-your-local-machine)
-   * [Campaigns](#campaigns)
+   - [Campaigns](#campaigns)
 
 ## Product Managers
 
