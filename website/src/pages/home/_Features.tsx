@@ -103,78 +103,109 @@ const features: Features[] = [
     },
 ]
 
-const FeatureSection: FunctionComponent = () => (
-    <ContentSection color="white" className="py-8 mt-8 pb-7">
-        <div className="text-center mt-4 mb-7">
-            <h1 className="font-weight-bold">How teams use Sourcegraph</h1>
-            <p className="max-w-500 mx-auto">
-                Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
-                automate across your entire codebase.
-            </p>
-        </div>
+const FeatureSection: FunctionComponent = () => {
+    
+    useEffect(() => {
+        const videos = features.map((_, i) => {
+            return {
+                el: document.querySelector(`.video-${i}`),
+                paused: true
+            }
+        })
 
-        {features.map((feature, i) => (
-            <div
-                key={i}
-                className={classNames('row flex-column-reverse flex-lg-row', {
-                    'flex-lg-row-reverse': i % 2,
-                    'mb-8': i !== features.length - 1,
-                })}
-            >
+        if (!!window.IntersectionObserver) {
+            videos.forEach(vid => {                
+                const observer = new IntersectionObserver(entries => {
+                    const currentVideo = entries[0]
+
+                    if (currentVideo.intersectionRatio !==1 && !vid.paused) {
+                        vid?.el?.pause()
+                        vid.paused = true
+                    }
+                    else if (vid.paused) {
+                        vid?.el?.play()
+                        vid.paused = false
+                    }
+                }, {threshold: 1})
+    
+                observer.observe(vid?.el)
+            })
+        }
+    }, [])
+
+    return (
+        <ContentSection color="white" className="py-8 mt-8 pb-7">
+            <div className="text-center mt-4 mb-7">
+                <h1 className="font-weight-bold">How teams use Sourcegraph</h1>
+                <p className="max-w-500 mx-auto">
+                    Sourcegraph's code intelligence platform is built with features that help you understand, fix, and
+                    automate across your entire codebase.
+                </p>
+            </div>
+
+            {features.map((feature, i) => (
                 <div
-                    className={classNames('col-lg-6', {
-                        'pr-lg-7 pl-lg-0': i % 2 === 0,
-                        'pl-lg-7 pr-lg-0': i % 2,
+                    key={i}
+                    className={classNames('row flex-column-reverse flex-lg-row', {
+                        'flex-lg-row-reverse': i % 2,
+                        'mb-8': i !== features.length - 1,
                     })}
                 >
-                    <small className="text-uppercase font-weight-bold d-block mb-2">{feature.productFeature}</small>
-                    <h2 className={classNames('font-weight-bold', { 'max-w-350': i !== 0 })}>{feature.title}</h2>
-                    <p>{feature.description}</p>
-                    <ul>
-                        {feature.details.map((detail, k) => (
-                            <li key={k}>{detail}</li>
-                        ))}
-                    </ul>
-                    {feature.ctaLink.includes('http') ? (
-                        <a
-                            href={feature.ctaLink}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn btn-outline-primary"
-                            data-button-style={buttonStyle.outline}
-                            data-button-location={buttonLocation.bodyDemo}
-                        >
-                            Learn more about {startCase(feature.productFeature)}
-                        </a>
-                    ) : (
-                        <Link
-                            to={feature.ctaLink}
-                            className="btn btn-outline-primary"
-                            data-button-style={buttonStyle.outline}
-                            data-button-location={buttonLocation.bodyDemo}
-                        >
-                            Learn more about {startCase(feature.productFeature)}
-                        </Link>
-                    )}
-                </div>
-
-                <div className="col-lg-6 mb-6 mb-lg-0 py-0 px-5">
-                    <video
-                        className="shadow w-100 max-w-550 d-block mx-auto"
-                        autoPlay={true}
-                        muted={true}
-                        loop={true}
-                        playsInline={true}
-                        controls={false}
-                        data-cookieconsent="ignore"
+                    <div
+                        className={classNames('col-lg-6', {
+                            'pr-lg-7 pl-lg-0': i % 2 === 0,
+                            'pl-lg-7 pr-lg-0': i % 2,
+                        })}
                     >
-                        <source type="video/webm" src={feature.video.webm} data-cookieconsent="ignore" />
-                        <source type="video/mp4" src={feature.video.mp4} data-cookieconsent="ignore" />
-                    </video>
+                        <small className="text-uppercase font-weight-bold d-block mb-2">{feature.productFeature}</small>
+                        <h2 className={classNames('font-weight-bold', { 'max-w-350': i !== 0 })}>{feature.title}</h2>
+                        <p>{feature.description}</p>
+                        <ul>
+                            {feature.details.map((detail, k) => (
+                                <li key={k}>{detail}</li>
+                            ))}
+                        </ul>
+                        {feature.ctaLink.includes('http') ? (
+                            <a
+                                href={feature.ctaLink}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="btn btn-outline-primary mt-2"
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.bodyDemo}
+                            >
+                                Learn more about {startCase(feature.productFeature)}
+                            </a>
+                        ) : (
+                            <Link
+                                to={feature.ctaLink}
+                                className="btn btn-outline-primary mt-2"
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.bodyDemo}
+                            >
+                                Learn more about {startCase(feature.productFeature)}
+                            </Link>
+                        )}
+                    </div>
+
+                    <div className="col-lg-6 mb-6 mb-lg-0 py-0 px-5">
+                        <video
+                            className={`shadow w-100 max-w-550 d-block mx-auto rounded video-${i}`}
+                            autoPlay={false}
+                            muted={true}
+                            loop={true}
+                            playsInline={true}
+                            controls={false}
+                            data-cookieconsent="ignore"
+                        >
+                            <source type="video/webm" src={feature.video.webm} data-cookieconsent="ignore" />
+                            <source type="video/mp4" src={feature.video.mp4} data-cookieconsent="ignore" />
+                        </video>
+                    </div>
                 </div>
-            </div>
-        ))}
-    </ContentSection>
-)
+            ))}
+        </ContentSection>
+    )
+}
 
 export default FeatureSection
