@@ -262,10 +262,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </h1>
                         <p>
                             Existing tooling doesn't enable teams to be agile and effective when responding to security
-                            vulnerabilities.
-                        </p>
-                        <p>
-                            <strong>What does that mean for you?</strong>
+                            vulnerabilities. What does that mean for you?
                         </p>
                         <ul>
                             <li>Finding vulnerabilities scattered across codebases takes extra time and resources.</li>

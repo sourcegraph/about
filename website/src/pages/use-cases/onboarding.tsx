@@ -217,10 +217,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         <h1 className="mb-4 max-w-400 font-weight-bold">Developer onboarding is slow and expensive</h1>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
-                            efficiently.
-                        </p>
-                        <p>
-                            <strong>What does that mean for you?</strong>
+                            efficiently. What does that mean for you?
                         </p>
                         <ul>
                             <li>New developers are left confused, struggling in front of an opaque codebase.</li>

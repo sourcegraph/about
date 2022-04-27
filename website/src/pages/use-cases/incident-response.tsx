@@ -239,10 +239,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </h1>
                         <p>
                             Current tools don't enable teams to quickly get to the root cause of an incident and ensure
-                            it doesn't reoccur.
-                        </p>
-                        <p>
-                            <strong>What does that mean for you?</strong>
+                            it doesn't reoccur. What does that mean for you?
                         </p>
                         <ul>
                             <li className="mt-1">
