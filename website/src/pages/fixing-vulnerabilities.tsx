@@ -72,7 +72,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                     </blockquote>
 
                     <img
-                        src="/external-logos/cloudflare-color-logo.svg"
+                        src="/external-logos/cloudflare-logo.svg"
                         alt="Cloudflare logo"
                         width={130}
                         className="mt-4"

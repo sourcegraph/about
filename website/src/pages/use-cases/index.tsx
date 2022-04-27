@@ -136,7 +136,7 @@ export default ((props: any) => (
                                     className="btn"
                                 >
                                     <img
-                                        src="/external-logos/cloudflare-color-logo.svg"
+                                        src="/external-logos/cloudflare-logo.svg"
                                         width="110px"
                                         alt="Cloudflare"
                                     />
@@ -361,7 +361,7 @@ export default ((props: any) => (
                             <footer className="blockquote-footer">Justin Phillips, Software Engineer, Lyft</footer>
                             <div className="d-flex justify-content-center my-4">
                                 <a href="/case-studies/lyft-monolith-to-microservices" className="btn">
-                                    <img src="/external-logos/lyft-color-logo.svg" width="110px" alt="Lyft" />
+                                    <img src="/external-logos/lyft-logo.svg" width="110px" alt="Lyft" />
                                 </a>
                             </div>
                         </blockquote>

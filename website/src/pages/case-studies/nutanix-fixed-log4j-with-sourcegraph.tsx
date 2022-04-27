@@ -40,7 +40,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                     by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
                     logoHref="https://nutanix.com"
                     logoAlt="Nutanix"
-                    logoImage="/external-logos/nutanix-color-logo.svg"
+                    logoImage="/external-logos/nutanix-logo.svg"
                 />
             </ContentSection>
 
