@@ -77,7 +77,8 @@ const Hero: FunctionComponent = () => {
                     Product or installation questions?{' '}
                     <a href="https://info.sourcegraph.com/talk-to-a-developer" title="Talk to an expert">
                         Talk to an expert
-                    </a>.
+                    </a>
+                    .
                 </p>
             </div>
 
