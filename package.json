@@ -12,6 +12,7 @@
     "lint": "yarn eslint && yarn typecheck",
     "typecheck": "tsc -p .",
     "eslint": "eslint '**/*.{ts,tsx}'",
+    "eslint:fix": "yarn eslint --fix",
     "ci": "yarn install --immutable --immutable-cache --check-cache",
     "prettier": "prettier '**/{*.{js?(on),ts?(x),md,scss},.*.js?(on)}' --write --list-different",
     "prettier:check": "yarn -s prettier --write=false"
@@ -39,6 +40,12 @@
     }
   },
   "dependencies": {
+    "@visx/grid": "^2.6.0",
+    "@visx/group": "^2.1.0",
+    "@visx/responsive": "^2.8.0",
+    "@visx/scale": "^2.2.2",
+    "@visx/text": "^2.3.0",
+    "@visx/xychart": "^2.9.0",
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
     "next": "^12.1.0",
@@ -48,11 +55,17 @@
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.0.1",
     "remark-gfm": "^3.0.1",
+    "ts-loader": "^9.2.8",
+    "d3-format": "^3.1.0",
+    "d3-time-format": "^4.1.0",
+    "rxjs": "^7.5.5",
     "ts-node": "^10.7.0"
   },
   "devDependencies": {
     "@sourcegraph/eslint-config": "^0.27.0",
     "@sourcegraph/prettierrc": "^3.0.3",
+    "@types/d3-format": "^3.0.1",
+    "@types/d3-time-format": "^4.0.0",
     "@types/lodash": "^4.14.180",
     "@types/node": "^17.0.23",
     "@types/react": "^17.0.43",

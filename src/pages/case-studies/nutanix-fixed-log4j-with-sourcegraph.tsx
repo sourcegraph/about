@@ -7,7 +7,7 @@ import {
     Layout,
     NewCaseStudyLayout,
     ContentSection,
-    Blockquote,
+    BlockquoteWithLogoBottom,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
@@ -146,7 +146,7 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection color="white" className="py-6 max-w-700 col-xl-5 text-pale-sky text-center">
-                <Blockquote
+                <BlockquoteWithLogoBottom
                     quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                     better than having to say, 'Well, boss, I think we got it all.'"
                     author="Jon Kohler, Technical Director of Solution Engineering at Nutanix"

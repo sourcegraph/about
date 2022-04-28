@@ -47,7 +47,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between h-xl-450 h-lg-350 h-md-300 h-sm-300 h-300'
+                              'justify-content-between h-xl-450 h-lg-250 h-md-250 h-sm-auto h-auto'
                           )
                         : autoAdvance
                         ? classNames(
@@ -125,9 +125,9 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <div
                     className={
                         autoAdvance && props.smallPanel
-                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-300 h-md-300 h-sm-300 h-300')
+                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-300 h-md-300 h-sm-250 h-250')
                             : autoAdvance
-                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-500 h-md-500 h-sm-450 h-450')
+                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-500 h-md-500 h-sm-500 h-500')
                             : classNames(carouselRightPanelStyles)
                     }
                 >
@@ -146,7 +146,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     ))}
                 </div>
 
-                <div className="carousel-nav-mobile mx-auto">
+                <div className="carousel-nav-mobile mx-auto my-4">
                     <ArrowLeftIcon
                         className="mr-4"
                         onClick={() => carouselHook.moveCarousel('decrement')}
