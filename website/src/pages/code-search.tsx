@@ -59,7 +59,7 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
         {/* A search engine built for code */}
         <ContentSection>
             <div className="row">
-                <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 ">
+                <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9">
                     <iframe
                         className="embed-responsive-item"
                         src="https://www.youtube-nocookie.com/embed/aDU4C9j-hYA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
@@ -70,17 +70,17 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                     ></iframe>
                 </div>
                 <div className="col-lg-6">
-                    <h2 className="display-3 font-weight-bold mb-3">A search engine built for code</h2>
-                    <ul className="list-spaced">
-                        <li>
+                    <h2 className="display-3 font-weight-bold mb-3 mt-4 mt-md-0">A search engine built for code</h2>
+                    <ul>
+                        <li className="mb-1">
                             <strong>Universal.</strong> Point Sourcegraph at the repositories you work with, stored in
                             any code host, or search across the open source universe.
                         </li>
-                        <li>
+                        <li className="mb-1">
                             <strong>Powerful.</strong> Get answers quickly with literal, structural, and regular
                             expression search, along with smart filters and Code Intelligence.
                         </li>
-                        <li>
+                        <li className="mb-1">
                             <strong>Extensible.</strong> Connect all your other tools to get things like test coverage,
                             1-click open file in editor, custom highlighting, and information from your other favorite
                             services all in one place with
@@ -91,8 +91,51 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
             </div>
         </ContentSection>
 
+        {/* Notebooks */}
+        <ContentSection>
+            <div className="row pt-md-6">
+                <div className="col-lg-6 order-sm-2 mt-4 mt-md-0 container video-container">
+                    <video
+                        className="w-100 h-auto shadow"
+                        autoPlay={true}
+                        muted={true}
+                        loop={true}
+                        playsInline={true}
+                        controls={false}
+                        // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
+                        data-cookieconsent="ignore"
+                    >
+                        <source
+                            src="https://storage.googleapis.com/sourcegraph-assets/notebooks/Notebooks_Capture_20s.mp4"
+                            type="video/mp4"
+                        />
+                        Creating a Notebook with Sourcegraph
+                    </video>
+                </div>
+                <div className="col-lg-6 order-sm-1">
+                    <h2 className="display-3 font-weight-bold mb-3 mt-4 mt-md-0">
+                        Document and explore code with Notebooks
+                    </h2>
+                    <ul>
+                        <li className="mb-1">
+                            Create living documentation with Markdown and live code queries to get engineers up to speed
+                            on unfamiliar code faster.
+                        </li>
+                        <li className="mb-1">
+                            Navigate through complex parts of your codebase or resolve incidents with collaborative and
+                            shareable notebooks.
+                        </li>
+                        <li className="mb-1">
+                            Embed notebooks anywhere you can embed HTML, like your own internal documentation, so you
+                            can spend less time updating stale docs.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </ContentSection>
+
         {/* Social proof */}
-        <ContentSection className="py-4">
+        <ContentSection className="pt-7">
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-6">
                     <h2 className="display-3 font-weight-bold mb-3">Move faster with Sourcegraph</h2>
@@ -132,7 +175,7 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
 
         <IntegrationsSection />
 
-        <ContentSection className="mb-6">
+        <ContentSection className="pb-7">
             <h2 className="display-3 font-weight-bold mt-5 mb-4">How developers are using Sourcegraph</h2>
             <div className="row">
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 border">
