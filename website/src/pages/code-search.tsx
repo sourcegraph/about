@@ -35,7 +35,7 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.hero}
                                 data-button-type="cta"
-                                to="#get-started"
+                                to="/get-started"
                                 title="Use this if you want to search your (or your company's) code, invite teammates, and try all the features."
                             >
                                 Deploy locally <ArrowRightIcon className="ml-1" />
