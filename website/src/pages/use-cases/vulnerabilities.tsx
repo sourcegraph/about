@@ -218,7 +218,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="bg" />
                 <div className="container pb-4">
                     <div className="row">
-                        <div className="col-lg-7 mb-8 mt-7">
+                        <div className="col-md-8 mb-8 mt-7">
                             <BackButtonBold href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">Find and fix security vulnerabilities</h1>
                             <div className="display-4 font-weight-normal mb-5">
@@ -306,7 +306,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="row mt-lg-0 mt-5 justify-content-center">
                 <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6">How Sourcegraph helps</h1>
+                    <h1 className="font-weight-bold text-md-center text-left mb-lg-6 mb-md-3">How Sourcegraph helps</h1>
                 </div>
                 <div className="pb-lg-5 pb-md-6 pb-5">
                     <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />
