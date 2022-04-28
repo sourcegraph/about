@@ -171,7 +171,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className={styles.useCaseHeader}>
                     <div className="container pb-4">
                         <div className="row">
-                            <div className="col-lg-7 mb-8 mt-7">
+                            <div className="col-md-7 mb-8 mt-7">
                                 <BackButtonBold href="/use-cases" text="USE CASES" />
                                 <h1 className="display-2 font-weight-bold mb-4 max-w-250 max-w-sm-275 max-w-lg-400">
                                     Healthy code, happy teams
@@ -308,13 +308,13 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column px-lg-7 text-center">
+                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>Give your team the tools they need to build a healthier codebase.</p>
                     </div>
-                    <div className="d-flex flex-column">
+                    <div className="text-center col-12">
                         <Link
-                            className="btn btn-primary"
+                            className="btn btn-primary min-w-200"
                             to="/demo"
                             title="Request a Demo."
                             data-button-style={buttonStyle.primary}
