@@ -34,7 +34,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         const defaultMetaProps: LayoutProps['meta'] = {
             title: 'Sourcegraph - Universal Code Search',
             description: 'Find and fix things across all of your code with Sourcegraph universal code search.',
-            image: 'https://about.sourcegraph.com/sourcegraph-mark.png',
+            image: 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png',
             icon: 'https://about.sourcegraph.com/favicon.png',
         }
         const pathname = this.props.location.pathname
@@ -55,15 +55,16 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                     <meta name="twitter:card" content="summary" />
                     <meta name="twitter:description" content={metaProps.description} />
 
+                    <meta property="og:url" content="https://about.sourcegraph.com" />
                     <meta property="og:type" content="website" />
                     <meta property="og:title" content={metaProps.title} />
                     <meta property="og:image" content={metaProps.image} />
+                    <meta property="og:image:secure_url" content={metaProps.image} />
                     <meta property="og:description" content={metaProps.description} />
 
                     <meta name="description" content={metaProps.externalDescription || metaProps.description} />
 
                     <link rel="icon" type="image/png" href={metaProps.icon} />
-                    <link rel="icon" type="image/png" href={metaProps.image} />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />

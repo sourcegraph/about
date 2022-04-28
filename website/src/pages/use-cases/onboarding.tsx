@@ -11,7 +11,7 @@ import { Blockquote, BlockquoteWithLogoBottom } from '../../components/Blockquot
 import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
-import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
+import { CustomerLogos } from '../../components/CustomerLogos'
 
 import styles from './useCases.module.scss'
 
@@ -272,7 +272,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray-3">
+        <div className="bg-light-gray-3 py-7">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column px-lg-7 text-start text-md-center max-w-600 mx-auto">
@@ -292,7 +292,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="py-6" />
+
+            <div className="mt-6">
+                <CustomerLogos />
+            </div>
         </div>
 
         <ContentSection className="py-lg-7 py-5">

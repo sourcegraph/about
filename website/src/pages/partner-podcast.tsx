@@ -43,7 +43,7 @@ const caseStudyItems = [
     },
     {
         name: 'Cloudflare',
-        logo: '/external-logos/cloudflare-color-logo.svg',
+        logo: '/external-logos/cloudflare-logo.svg',
         altTitle: 'Resolve incidents',
         title: 'Identify the root cause in code and fix the issue everywhere, faster. See how Cloudflare stays audit-ready with Sourcegraph.',
         url: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
