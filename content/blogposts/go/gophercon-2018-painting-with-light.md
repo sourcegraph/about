@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-painting-with-light
+description: 'This talk covers the history of path tracing, what basic path tracing is, and how to build a path tracer in Go. Specifically, it covers rendering images using path tracing in Go, explores tradeoffs between concurrency schemes for simulating the behavior of light in Go, and discusses how Go may fit into the future of graphics.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---

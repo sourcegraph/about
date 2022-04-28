@@ -34,7 +34,7 @@ Batch Changes offers a way to define and execute large-scale code changes across
 When a change needs to be made, you can search for the occurrences of code to change, specify the change once—using any tool that can change code—and apply it everywhere. You can then preview what the change will look like across all of the repositories. This not only automates the process of first creating the change and then opening the changeset on the codehost, but it also brings more visibility on the status of a large scale change over time.
 
 <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/eOmiyXIWTCw?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>
 
 1. **Search your code:** Find all occurrences of the code you want to change using Sourcegraph Universal Code Search.

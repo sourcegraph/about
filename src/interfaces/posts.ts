@@ -2,6 +2,7 @@ import { FunctionComponent } from 'react'
 
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
+import { BlogListItem } from '../components/Blog/BlogListItem'
 import { BlogPost } from '../components/Blog/BlogPost'
 import { LinkPost } from '../components/Blog/LinkPost'
 import { PodcastPost } from '../components/Blog/PodcastPost'
@@ -14,6 +15,10 @@ export enum PostType {
     PressReleasePost,
     ReleasePost,
     PodcastPost,
+}
+
+export enum PostIndexType {
+    BlogPostIndex,
 }
 
 export interface Post {
@@ -34,7 +39,7 @@ export interface FrontMatter {
     description?: string
     /** Controls the page's `<title>` for SEO and the browser tab label. Defaults to {@link title}. */
     externalTitle?: string
-    /** Controls the page's `<meta name="description">` for SEO. Defaults to {@link description}. */
+    /** Controls the page's `<PostIndexItemmeta name="description">` for SEO. Defaults to {@link description}. */
     externalDescription?: string
     canonical?: string
     publishDate?: string
@@ -59,12 +64,23 @@ export interface PostComponentProps {
     /** The URL to the post. */
     url: string
 
-    /**
-     * If true, show the full post. If false, only show a summary of the post (suitable for display
-     * as an item in a list of posts).
-     */
-    full: boolean
+    className?: string
+    headerClassName?: string
+    titleClassName?: string
+    titleLinkClassName?: string
+    tag?: 'li' | 'div'
+    renderTitleAsLink?: boolean
+}
 
+export interface PostIndexComponentProps {
+    posts: PostIndexItem[]
+    allPosts: PostIndexItem[]
+}
+
+export interface PostIndexItem {
+    frontmatter: FrontMatter
+    excerpt: string
+    slugPath: string
     className?: string
     headerClassName?: string
     titleClassName?: string
@@ -81,6 +97,10 @@ export const POST_TYPE_TO_COMPONENT: Record<PostType, FunctionComponent<PostComp
     [PostType.PodcastPost]: PodcastPost,
 }
 
+export const POST_INDEX_TYPE_TO_COMPONENT: Record<PostIndexType, FunctionComponent<PostIndexItem>> = {
+    [PostIndexType.BlogPostIndex]: BlogListItem,
+}
+
 export const postType = (post: Post): PostType =>
     post.frontmatter.tags?.includes('release')
         ? PostType.ReleasePost
@@ -92,12 +112,9 @@ export const postType = (post: Post): PostType =>
         ? PostType.LinkPost
         : PostType.BlogPost
 
+export const postIndexType = (): PostIndexType => PostIndexType.BlogPostIndex
+
 export enum BlogType {
-    GopherCon = 'go',
-    DotGo = 'go',
-    GraphQLSummit = 'graphql',
-    StrangeLoop = 'strange-loop',
-    GitHubUniverse = 'github-universe',
     PressRelease = 'press',
     Podcast = 'podcast',
     Blog = 'blog',

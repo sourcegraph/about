@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-grpc-state-machines-and-testing
+description: 'Amy walks us through her usage of a Finite State Machine to implement automatic upgrades of clients running in a Kubernetes (k8s) cluster, also touching on gRPC, and testing of the FSM.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---

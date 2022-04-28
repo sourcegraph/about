@@ -10,9 +10,6 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/2fNM9V86sAGw4aQQIWUqGk/5c76
 published: true
 ---
 
-
-![jp robinson](//images.contentful.com/le3mxztn6yoo/2fNM9V86sAGw4aQQIWUqGk/5c761b436ece37c070532d327a8cd2bb/jp_robinson.jpeg)
-
 [JP Robinson](https://twitter.com/jprbnsn), principal engineer at the New York Times, has "drunk Peter's koolaid" with respect to Go kit.
 
 github.com/NYTimes/gizmo adapts Go kit for use inside a production ecosystem with a bunch of existing legacy services. The NYTimes uses it across almost all their production Go services.
@@ -39,3 +36,5 @@ As we've grown, we've needed to consolidate and standardize on ways of doing thi
 As time goes on, gizmo's packages are starting to look more and more like Go kit's. More and more of their developers are using Go kit.
 
 Just open sourced github.com/NYTimes/marvin, a go-kit HTTP server for the App Engine Standard Environment. Similar to gizmo, tries to give you a composed framework for what a web server looks like.
+
+![jp robinson](//images.contentful.com/le3mxztn6yoo/2fNM9V86sAGw4aQQIWUqGk/5c761b436ece37c070532d327a8cd2bb/jp_robinson.jpeg)

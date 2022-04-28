@@ -13,8 +13,6 @@ published: true
 
 Liveblog by Matt King
 
-![IMG 4098.JPG](//images.contentful.com/le3mxztn6yoo/1jsbunUDpOo0QkkO2wucGC/a793ce04c93f80667577a62464efe664/IMG_4098.JPG.jpeg)
-
 ## Overview
 
 Struct field tags are an important part of encode/decode types, especially when using packages such as encoding/json. However, modifying tags is repetitive, cumbersome and open to human errors. We can make it easy to modify tags with an automated tool that is written for this sole purpose.
@@ -124,3 +122,5 @@ Fatih is a Software Engineer at [@DigitalOcean](https://twitter.com/digitalocean
 [Twitter](https://twitter.com/fatih)
 
 [Medium](https://medium.com/@farslan)
+
+![IMG 4098.JPG](//images.contentful.com/le3mxztn6yoo/1jsbunUDpOo0QkkO2wucGC/a793ce04c93f80667577a62464efe664/IMG_4098.JPG.jpeg)

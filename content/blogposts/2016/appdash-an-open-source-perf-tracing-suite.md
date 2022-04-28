@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: appdash-an-open-source-perf-tracing-suite
+description: 'Every developer knows they should instrument their app to identify perf bottlenecks, but it’s hard to actually get around to doing it.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/2cqIONdy7Ccumacy4eCC8W/bf4a730c417954a3c7a30394cd8ddd51/0_jXkIPsoJBjXY80cs.png
 published: true
 ---

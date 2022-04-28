@@ -4,6 +4,7 @@ author: Chayim Kirshen
 publishDate: 2020-10-20T10:00-07:00
 tags: [blog]
 slug: improving-security-through-transparency
+description: 'In the ideal world, security would be as open as our codebase, even if that ideal is a difficult reality.'
 heroImage: https://sourcegraphstatic.com/blog/transparent-security-tomorrow.png
 published: true
 ---

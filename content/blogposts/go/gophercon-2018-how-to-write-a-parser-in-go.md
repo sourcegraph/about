@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-how-to-write-a-parser-in-go
+description: 'Sugu Sougoumarane is the co-creator of Vitess, which contains a SQL parser that is now used by many other projects. In this talk he demonstrates how to write a parser using goyacc.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---

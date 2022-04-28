@@ -15,8 +15,6 @@ published: true
 A concise recap of a “fireside chat” with Bret Taylor, co-creator of Google Maps, CTO of Friend Feed, CEO and co-founder of Quip.
 
 
-![1*v90JbRraqWznmWkkDKmLzg](//images.contentful.com/le3mxztn6yoo/fRzqBIhmOkMWQakgKMcUM/6410e64b54f0002874c9f153dda056b6/1_v90JbRraqWznmWkkDKmLzg.jpeg)
-
 Q: First computer?
 A: Compact Portable, about the size of a suitcase. The lid flipped out of the keyboard. Had one game, which took up all disk space. Every time, he had to reinstall it, wait 2 hours, play the game, and his dad would then delete. It was some early Wing Commander predecessor.
 
@@ -64,3 +62,5 @@ A: We look for people who want that sense of ownership. People find it really re
 
 Q: If there’s an app or startup that you wish you created?
 A: Wouldn’t phrase it that way, but one product I respect a lot is Slack. Our mission is very similar to Slack’s — moving people away from the workflow of email. I respect the product, brand, and culture.
+
+![1*v90JbRraqWznmWkkDKmLzg](//images.contentful.com/le3mxztn6yoo/fRzqBIhmOkMWQakgKMcUM/6410e64b54f0002874c9f153dda056b6/1_v90JbRraqWznmWkkDKmLzg.jpeg)

@@ -55,5 +55,5 @@ We updated the minimum supported version of Postgres from 9.6 to 12. If you are 
 Contains is a new query built-in that enables you to conditionally filter repositories based on the repository contents. For example, you can now search across repositories only if those repositories contain a particular file (like a README), or a particular file with some content (like a CHANGELOG file that includes the word fix).
 
 <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/hKXoMVzBZ5E?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/hKXoMVzBZ5E?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>

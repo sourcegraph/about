@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: part-2-how-sourcegraph-scales-with-the-language-server-protocol
+description: 'Code Intelligence is the set of auto-navigation and auto-generation primitives that use a semantic understanding of code to enable a human programmer to efficiently read and write source code.'
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---

@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-allocator-wrestling
+description: 'A whirlwind tour of the Go memory allocator and garbage collector, with tools and tips on how to optimize.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---

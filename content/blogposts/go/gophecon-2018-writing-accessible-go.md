@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophecon-2018-writing-accessible-go
+description: 'Julia spoke to the importance of writing code that was accessible to all developers. She shared the story of her disability and how it affects her ability to read and write code. She provided examples of how her vision is affected and the difficulties of the existing tooling she uses. Finally she provided suggestions to help make code more readable for everyone.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---

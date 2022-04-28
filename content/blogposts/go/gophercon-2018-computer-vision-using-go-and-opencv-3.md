@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-computer-vision-using-go-and-opencv-3
+description: 'An introduction to and tour of computer vision programs written in Go using GoCV––with code snippets and live demos!'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---

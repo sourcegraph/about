@@ -3,6 +3,7 @@ title: GitLab integrates Sourcegraph code navigation and code intelligence
 author: Christina Forney
 publishDate: 2019-11-12T10:00-07:00
 tags: [blog]
+description: 'Check out the below video where Quinn sat down with GitLab CEO Sid Sijbrandij to discuss the native GitLab integration.'
 slug: gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence
 heroImage: https://about.sourcegraph.com/blog/gitlab-integration-preview-dark.png
 published: true

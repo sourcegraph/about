@@ -14,8 +14,6 @@ published: true
 
 ### Lynn Langit, Cloud & Data Architect Director of Teaching Kids Programming ([slides](http://slides.com/lynnlangit/meet-matt))
 
-![1*3eFc2KNwHBjrHFpD vjbhA](//images.contentful.com/le3mxztn6yoo/6hTNJKUymQkogSUaKGaCu2/436c99c4b8afb55c302fbf8079e6d562/1_3eFc2KNwHBjrHFpD_vjbhA.jpeg)
-
 She tells the story of Matt, a fifth grade history teacher who wrote some bacon-related code in Swift
 
 Lynn’s daughter has been coding since age 8 and taught Matt how to code.
@@ -25,6 +23,8 @@ Matt now teaches Java to 8th graders.
 Matt wanted to understand how he could contribute to open source. TKP introduced him to the world of open source on GitHub. They made a portal website explaining their libraries and what GitHub is.
 
 Your job today is to find a Matt.
+
+![1*3eFc2KNwHBjrHFpD vjbhA](//images.contentful.com/le3mxztn6yoo/6hTNJKUymQkogSUaKGaCu2/436c99c4b8afb55c302fbf8079e6d562/1_3eFc2KNwHBjrHFpD_vjbhA.jpeg)
 
 ### Jason Chen, Quill: open source DDOS ([slides](https://github.com/sourcegraph/github-universe-2016-slides/blob/master/OvercomingMaintainerDDoS_Jason_Chen.pdf))
 

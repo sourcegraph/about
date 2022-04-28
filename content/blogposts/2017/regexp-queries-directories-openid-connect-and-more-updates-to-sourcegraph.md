@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: regexp-queries-directories-openid-connect-and-more-updates-to-sourcegraph
+description: 'We have been hard at work on improvements to Sourcegraph to give you great code search for your code.'
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---

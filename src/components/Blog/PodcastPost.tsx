@@ -10,7 +10,6 @@ interface Props extends PostComponentProps {}
  */
 export const PodcastPost: React.FunctionComponent<Props> = ({
     post,
-    full,
     url,
     className = '',
     headerClassName = '',
@@ -48,7 +47,7 @@ export const PodcastPost: React.FunctionComponent<Props> = ({
                 {audioHTML && <div className="podcast-post__body audio-container">{audioHTML}</div>}
 
                 <div className="flex-1" />
-                {!full && post.fields?.permalink && (
+                {post.fields?.permalink && (
                     <div>
                         <Link href={post.fields.permalink} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -65,30 +64,28 @@ export const PodcastPost: React.FunctionComponent<Props> = ({
                     </div>
                 )}
             </div>
-            {full && (
-                <>
-                    {showNotesHTML && (
-                        <div className="card-body border-top">
-                            <h3 className="h4 mb-3">
-                                <a href="#notes" id="notes">
-                                    Show notes
-                                </a>
-                            </h3>
-                            <div className="podcast-post__body" dangerouslySetInnerHTML={{ __html: showNotesHTML }} />
-                        </div>
-                    )}
-                    {transcriptHTML && (
-                        <div className="card-body border-top">
-                            <h3 className="h4 mb-3">
-                                <a href="#transcript" id="transcript">
-                                    Transcript
-                                </a>
-                            </h3>
-                            <div className="podcast-post__body" dangerouslySetInnerHTML={{ __html: transcriptHTML }} />
-                        </div>
-                    )}
-                </>
-            )}
+            <>
+                {showNotesHTML && (
+                    <div className="card-body border-top">
+                        <h3 className="h4 mb-3">
+                            <a href="#notes" id="notes">
+                                Show notes
+                            </a>
+                        </h3>
+                        <div className="podcast-post__body" dangerouslySetInnerHTML={{ __html: showNotesHTML }} />
+                    </div>
+                )}
+                {transcriptHTML && (
+                    <div className="card-body border-top">
+                        <h3 className="h4 mb-3">
+                            <a href="#transcript" id="transcript">
+                                Transcript
+                            </a>
+                        </h3>
+                        <div className="podcast-post__body" dangerouslySetInnerHTML={{ __html: transcriptHTML }} />
+                    </div>
+                )}
+            </>
         </Tag>
     )
 }

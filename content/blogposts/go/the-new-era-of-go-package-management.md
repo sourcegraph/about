@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: the-new-era-of-go-package-management
+description: 'The new era of package management.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/4DunlnWOzY0cOGGKmKCsYU/ec2e2a0acdcbf616c1359c62f2531655/Boyer-1.png
 published: true
 ---

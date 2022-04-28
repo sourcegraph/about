@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: google-i-o-talk-building-sourcegraph
+description: 'Unlike other code search engines, Sourcegraph actually analyzes and understands code like a compiler, instead of just indexing the raw text of the code.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/3ayCsUlsBiAM2wsu0Ioc6M/93ceb6323af51a6c0eb49d1e2c8422ae/0_DJYjK6JTlwcaMvH4.png
 published: true
 ---

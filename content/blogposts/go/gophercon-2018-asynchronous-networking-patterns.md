@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-asynchronous-networking-patterns
+description: 'Filippo Valsorda, a Cryptogopher on the Go Team at Google, demonstrates how to write a TCP network listener using package `net`.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---

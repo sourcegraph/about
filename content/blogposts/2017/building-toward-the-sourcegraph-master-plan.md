@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: building-toward-the-sourcegraph-master-plan
+description: 'The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer. One obstacle holding back progress is the software that billions of people use is being created by just 0.2% of the world’s population (those who can write code).'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/ExRGBfWJBmAQqwwMWySMy/40d48f99e4561db3fea684ebef24a4ca/blog-chart--big.png
 published: true
 ---

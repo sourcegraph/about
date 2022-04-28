@@ -13,11 +13,11 @@ published: true
 
 Martijn Walraven is an open source developer on the Apollo team.
 
-![Walraven-1](//images.contentful.com/le3mxztn6yoo/5jPwQ4jG36ww0Qc0ci4Y6q/fe44964175c36213871f5012729d8b0a/Walraven-1.png)
-
 The first ever app that used GraphQL is the Facebook mobile app, which has used GraphQL in production since 2012.  It is in the context of this mobile app that GrpahQL was developed and created.  The team at Facebook came up with GraphQL as a result of writing an API for mobile apps. So, it's no coincidence that GraphQL is a great match for mobile apps.
 
 Today Martijn will tell us why mobile devs should be excited for GraphQL.
+
+![Walraven-1](//images.contentful.com/le3mxztn6yoo/5jPwQ4jG36ww0Qc0ci4Y6q/fe44964175c36213871f5012729d8b0a/Walraven-1.png)
 
 ### What would an ideal API for mobile apps look like?
 

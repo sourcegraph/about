@@ -58,7 +58,7 @@ We know from talking with hundreds of developers that devs spend more time readi
 Sourcegraph Cloud provides a way to traverse your entire codebase so you can quickly get up to speed on new code or work through refactors. With Sourcegraph code search, you can jump to definition, find references, and code coverage annotations. This helps teams get up to speed on new code, and it also helps for onboarding new devs to your codebase.
 
 <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe className="embed-responsive-item" src="https://storage.googleapis.com/sourcegraph-assets/blog/cloud-for-teams/Find-Refs-Example.mp4" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
+    <iframe className="embed-responsive-item" src="https://storage.googleapis.com/sourcegraph-assets/blog/cloud-for-teams/Find-Refs-Example.mp4" allowFullScreen="" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>
 
 For small teams who are growing quickly, Sourcegraph helps orient developers to new code faster.

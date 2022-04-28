@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: building-a-product-one-user-interview-at-a-time
+description: 'We’d like to open our doors and show how we improve Sourcegraph using user research — and share some things we’ve learned along the way.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/4ERYZHPMN2EiaoYY6OAMA8/9b474c0c40dce4975c2052ece22b73f3/0_flB7naFAbUKi1z8a.png
 published: true
 ---

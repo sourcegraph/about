@@ -15,14 +15,14 @@ Liveblog by Renfred Harper ([@renfredxh](https://twitter.com/renfredxh))
 
 The video for this talk has been posted [here](https://www.youtube.com/watch?v=ltqV6pDKZD8).
 
-![IMG 9383](//images.contentful.com/le3mxztn6yoo/MOi3PwYtUWake66iIGIu8/c880e5b8750cf88f94fb954cd596df88/IMG_9383.JPG)
-
 Edward Muller [@freeformz](https://twitter.com/freeformz) is a software engineer [@Heroku](https://twitter.com/heroku), where he has worked on databases, infrastructure, metrics and logs before becoming the Go language owner. In that capacity he's seen a lot of Go code and helped many developers deliver production quality code. He talked at [GopherCon 2017](https://gophercon.com/speakers/10) about ways to write more idiomatic Go code.
 
 Check out [his slides](https://drive.google.com/file/d/0B3AbvjtHI6OAeS0wcF9uNXA5X1U/view) from the talk for more in-depth details and code samples.
 
 
 *Note: This post was best-effort live-blogged at the conference. Let me know on Twitter ([@renfredxh](https://twitter.com/renfredxh)) if I missed anything!
+
+![IMG 9383](//images.contentful.com/le3mxztn6yoo/MOi3PwYtUWake66iIGIu8/c880e5b8750cf88f94fb954cd596df88/IMG_9383.JPG)
 
 ---
 

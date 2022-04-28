@@ -5,44 +5,11 @@ authorUrl: https://twitter.com/rvtond
 publishDate: 2020-10-19T14:00-07:00
 tags: [blog]
 slug: code-search-turned-code-checker
+description: 'I find code checkers like linters and lightweight static analyzers most
+valuable when they teach me better ways to code in a language or framework.'
 heroImage: https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2020/search-check.png
 published: true
 ---
-
-<style>
-{`
-  .gatsby-highlight {
-    max-width: 100%;
-    width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media screen and (min-width: 800px) {
-    table {
-      width: 40rem;
-      border: none;
-    }
-  }
-  table {
-    border: none;
-  }
-  table th {
-    border: none;
-  }
-  table td {
-    padding: 4px;
-    border: none;
-  }
-  table td:nth-child(2n) {
-    text-align: right;
-  }
-  table th:nth-child(2n) {
-    text-align: right;
-  }
-  table tr:nth-child(2n) {
-    background-color: transparent;
-  } `}
-</style>
 
 I find code checkers like linters and lightweight static analyzers most
 valuable when they teach me better ways to code in a language or framework. For
@@ -341,3 +308,38 @@ Acks: Thanks [@lguychard](https://twitter.com/lguychard),
 [@thorstenball](https://twitter.com/thorstenball), [@stefanhengl](https://github.com/stefanhengl) [@beyang](https://twitter.com/beyang),
 [@sqs](https://twitter.com/sqs) for feedback on the content of this post.
 </sup>
+
+<style>
+{`
+  .gatsby-highlight {
+    max-width: 100%;
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 800px) {
+    table {
+      width: 40rem;
+      border: none;
+    }
+  }
+  table {
+    border: none;
+  }
+  table th {
+    border: none;
+  }
+  table td {
+    padding: 4px;
+    border: none;
+  }
+  table td:nth-child(2n) {
+    text-align: right;
+  }
+  table th:nth-child(2n) {
+    text-align: right;
+  }
+  table tr:nth-child(2n) {
+    background-color: transparent;
+  } `}
+</style>

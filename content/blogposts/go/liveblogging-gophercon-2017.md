@@ -10,8 +10,6 @@ heroImage: https://assets.ctfassets.net/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc
 published: true
 ---
 
-
-
 We’re excited to be the official liveblogging partner for GopherCon 2017!
 
 That’s right — we’ll be writing up concise technical summaries of as many of the amazing talks by Go experts this year as we can. For folks tuning in from home, the liveblog will be a great way to stay on top of conference proceedings efficiently throughout the day. For folks at the conference, it’s a great way to remind yourself of the key takeaways of each talk.

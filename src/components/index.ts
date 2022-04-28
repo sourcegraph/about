@@ -57,7 +57,6 @@ export {
 // Blog
 export {
     BlogHeader,
-    BlogHeadLinks,
     BlogPost,
     LinkPost,
     PodcastPost,

@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: great-code-search-for-aws-codecommit
+description: 'Sourcegraph brings great code search and understanding abilities to development teams using AWS CodeCommit. Code search helps your engineering team find usage examples, debug errors, reuse existing libraries and packages, and understand unfamiliar parts of your code base more quickly.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/37bSN5FztCU6IAIMSiqYgQ/ccd769ca77041b11b8daef49cba42da0/CodeCommit-PublicKey.png
 published: true
 ---
@@ -18,7 +19,7 @@ published: true
 `}
 </style>
 
-# Install Sourcegraph to get great code search on AWS CodeCommit
+## Install Sourcegraph to get great code search on AWS CodeCommit
 
 Sourcegraph brings great code search and understanding abilities to development teams using [AWS CodeCommit](https://aws.amazon.com/codecommit/). Code search helps your engineering team find usage examples, debug errors, reuse existing libraries and packages, and understand unfamiliar parts of your code base more quickly. Learn more about [Sourcegraph code search](https://docs.sourcegraph.com/code_search).
 

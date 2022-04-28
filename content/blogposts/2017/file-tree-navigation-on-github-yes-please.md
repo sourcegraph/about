@@ -13,9 +13,6 @@ published: true
 
 We’ve added a file tree to GitHub so that you can quickly explore an entire repository and jump between files without taking your hands off the keyboard.
 
-![FileTree](//images.contentful.com/le3mxztn6yoo/kW80vVfYMSG8MqIkeuWMO/09b960497b3f136f7d1c45c17ee13514/FileTree.gif)
-
-
 Get started by downloading the [Sourcegraph for GitHub Chrome extension](https://docs.sourcegraph.com/integration/browser_extension?hl=en)
 
 And then jump into a repository [https://github.com/hootsuite/atlantis/](https://github.com/hootsuite/atlantis/blob/master/cmd/bootstrap.go)
@@ -27,3 +24,5 @@ And then jump into a repository [https://github.com/hootsuite/atlantis/](https:/
 * Customize your features by clicking the Sourcegraph icon in the toolbar
 
 *Note: To ensure the best user experience, we disable our features by default if we detect that another installed extension interferes with ours. You can always re-enable features in the options menu.*
+
+![FileTree](//images.contentful.com/le3mxztn6yoo/kW80vVfYMSG8MqIkeuWMO/09b960497b3f136f7d1c45c17ee13514/FileTree.gif)

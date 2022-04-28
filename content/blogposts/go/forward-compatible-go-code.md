@@ -12,8 +12,6 @@ published: true
 
 Liveblog by Linda Xie ([@lindeexie](https://twitter.com/lindeexie))
 
-![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)
-
 [Joe Tsai](https://www.linkedin.com/in/dsnet/) is a Software Engineer on Google's Go team. He is a regular contributor to the Go standard library and other open source projects.
 
 Gophers often use "Go 1 compatibility" as a magic phrase to indicate that all present Go1 code will always work on all future Go1 releases. However, people are surprised to find out that running with the next version of Go sometimes causes build and test failures.
@@ -98,3 +96,5 @@ Testing the Go1.9beta is an excellent way to contribute to the community, help d
 - `go get golang.org/x/build/version/go1.9beta2`
 - `go1.9beta2 download`
 - use the go1.9beta2 command as if it were the normal go command
+
+![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)

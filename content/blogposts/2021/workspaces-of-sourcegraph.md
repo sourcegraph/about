@@ -5,8 +5,8 @@ authorUrl: https://twitter.com/robrhyne
 publishDate: 2021-03-16T18:00+02:00
 tags: [blog, remote, design]
 slug: workspaces-of-sourcegraph
-heroImage: /blog/workspaces-of-sourcegraph-final-compressed.jpg
-socialImage: https://about.sourcegraph.com/blog/workspaces-of-sourcegraph-final-compressed.jpg/
+heroImage: https://about.sourcegraph.com/blog/workspaces-of-sourcegraph-final-compressed.jpg
+socialImage:  https://about.sourcegraph.com/blog/workspaces-of-sourcegraph-final-compressed.jpg
 published: true
 description: "We asked 17 Sourcegraph developers about their workspace preferences. Here's what we found."
 ---

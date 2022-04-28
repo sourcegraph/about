@@ -1,4 +1,3 @@
-import { truncate } from 'lodash'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
@@ -13,7 +12,6 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
     post,
     content,
     url,
-    full,
     className = '',
     headerClassName = '',
     titleClassName = '',
@@ -21,7 +19,7 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
     tag: Tag = 'div',
     renderTitleAsLink = false,
 }) => {
-    const body = full ? (
+    const body = (
         <>
             {content && (
                 <div className="card-body release-post__body">
@@ -63,18 +61,6 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 questions.
             </div>
         </>
-    ) : (
-        <>
-            <p className="blog-post__excerpt">
-                {post.frontmatter.description
-                    ? truncate(post.frontmatter.description, { length: 300 })
-                    : truncate(post.excerpt, { length: 300 })}{' '}
-            </p>
-            <Link href={url} passHref={true}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="blog-post__read-more">Read more</a>
-            </Link>
-        </>
     )
 
     return (
@@ -92,23 +78,7 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                 </h1>
                 <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
             </header>
-            {!full && post.frontmatter.heroImage ? (
-                <div className="card-body pt-0 d-flex flex-card">
-                    <div className="flex-1">{body}</div>
-                    <Link href={url} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a>
-                            <img
-                                className="blog-post__image flex-1"
-                                src={post.frontmatter.heroImage}
-                                alt={post.frontmatter.title}
-                            />
-                        </a>
-                    </Link>
-                </div>
-            ) : (
-                <div className="card-body">{body}</div>
-            )}
+            <div className="card-body">{body}</div>
         </Tag>
     )
 }

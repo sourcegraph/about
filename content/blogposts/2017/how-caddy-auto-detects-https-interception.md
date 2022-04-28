@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: how-caddy-auto-detects-https-interception
+description: 'Caddy is called what it is because it acts like a compartment for all your server things. Most people use its HTTP server, but Caddy can also serve DNS, and there are a number of other plugins that extend Caddy’s functionality.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/10PF9uoNQceQEOWOYE6uWc/0c204cb05e90d123ee5eac81fae69e90/1_dxC5SLwJzx9lOiKHTQZWWg.png
 published: true
 ---

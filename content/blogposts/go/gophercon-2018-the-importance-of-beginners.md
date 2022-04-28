@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-the-importance-of-beginners
+description: 'Natalie talks about the massive growth in the GopherCon community and the need to prepare for and embrace the huge amount of beginners that will become Gophers in 2018 and beyond.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---

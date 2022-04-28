@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-5-mistakes-c-c-devs-make-writing-go
+description: 'Nyah comes from a C/C++ background and subsequently wrote a lot of bad Go code early on. He hopes others can learn from his mistakes.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---

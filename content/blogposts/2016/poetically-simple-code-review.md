@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: poetically-simple-code-review
+description: 'Some poetic thoughts on code reviews.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/3fbdV3zjyMCAI4s0iegQaK/14672e9928b60bcd0c06650713e694db/1_KbPOkjIgK5Y9-znSHL0ymg.png
 published: true
 ---

@@ -27,40 +27,6 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
             description: 'Press release from Sourcegraph',
         },
     },
-    graphql: {
-        title: 'GraphQL Summit 2017 liveblog',
-        baseUrl: '/graphql',
-        meta: {
-            title: 'GraphQL Summit 2017 liveblog',
-            description: 'Check out the official GraphQL Summit 2017 Liveblog proudly hosted by Sourcegraph.',
-        },
-    },
-    go: {
-        title: 'GopherCon and dotGo 2019 liveblogs',
-        baseUrl: '/go',
-        meta: {
-            title: 'GopherCon and dotGo liveblogs',
-            description: 'Check out the official GopherCon 2019 Liveblog proudly hosted by Sourcegraph.',
-            image: 'https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png',
-        },
-    },
-    'strange-loop': {
-        title: 'Strange Loop 2019 liveblog',
-        baseUrl: '/strange-loop',
-        meta: {
-            title: 'Strange Loop 2019 liveblog',
-            description: 'Check out the official Strange Loop 2019 Liveblog proudly hosted by Sourcegraph.',
-            image: 'https://about.sourcegraph.com/blog/strange-loop-banner-landscape.jpg',
-        },
-    },
-    'github-universe': {
-        title: 'GitHub Universe 2016 liveblog',
-        baseUrl: '/github-universe',
-        meta: {
-            title: 'GitHub Universe 2016 liveblog',
-            description: 'We liveblogged the 2016 GitHub Universe event.',
-        },
-    },
     podcast: {
         title: 'Sourcegraph Podcast',
         belowTitle: (

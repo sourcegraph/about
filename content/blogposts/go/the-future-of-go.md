@@ -13,8 +13,6 @@ published: true
 
 Liveblog by Dmitri Shuralyov ([@shurcool](https://twitter.com/shurcool))
 
-![cox](//images.contentful.com/le3mxztn6yoo/69VBxnKJEcgCCmAuMw6Q0y/110246d95c70fc4c90bf20ca20ab70f5/cox.jpg)
-
 ## Go history
 
 On September 25, 2007, together with Rob Pike, they decided on the name. Go.
@@ -180,3 +178,5 @@ We need your help. Please help us in every step along the way. What we need toda
 ## Blog post
 
 There was an official Go blog post covering this talk posted today. It goes in further detail on this topic, and you can read it at [https://blog.golang.org/toward-go2](https://blog.golang.org/toward-go2).
+
+![cox](//images.contentful.com/le3mxztn6yoo/69VBxnKJEcgCCmAuMw6Q0y/110246d95c70fc4c90bf20ca20ab70f5/cox.jpg)

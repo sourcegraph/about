@@ -13,8 +13,6 @@ published: true
 
 Liveblog by Matt King
 
-![IMG 4097.JPG](//images.contentful.com/le3mxztn6yoo/4C6mXzqOmIcSgyQ8wawUIg/c4563c96f0b6e6f55605ae155ca22dee/IMG_4097.JPG.jpeg)
-
 ## Overview
 Even if you've never used Go’s syscall package - in fact even if you've only ever written “Hello, world” - you have definitely used syscalls. They provide the interface between your code and the operating system.
 
@@ -82,3 +80,5 @@ It is possible to use `syscalls` for nefarious purposes which makes following th
 [Liz Rice](http://www.lizrice.com/) is the technical evangelist at container security specialists Aqua Security. Prior to that she was CEO of Microscaling Systems and one of the developers of MicroBadger, the tool for managing container metadata. She has a wealth of software development, team, and product management experience from working on network protocols and distributed systems, and in digital technology sectors such as VOD, music, and VoIP. When not building startups and writing code, Liz loves riding bikes in places with better weather than her native London.
 
 [@lizrice](https://twitter.com/lizrice)
+
+![IMG 4097.JPG](//images.contentful.com/le3mxztn6yoo/4C6mXzqOmIcSgyQ8wawUIg/c4563c96f0b6e6f55605ae155ca22dee/IMG_4097.JPG.jpeg)

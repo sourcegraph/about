@@ -10,10 +10,6 @@ heroImage: https://assets.ctfassets.net/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc
 published: true
 ---
 
-
-
-![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)
-
 [Tammy Butow](http://tammybutow.com/) ([@tammybutow](https://twitter.com/tammybutow)) is an Engineering Manager in Developer Infrastructure at Dropbox. Tammy manages code workflows—the entire experience of using Go at Dropbox, from coding to shipping. She talked at [GopherCon 2017](https://gophercon.com/speakers/14) about how Dropbox engineers build and run large-scale services in Go.
 
 *Note: This post was best-effort live-blogged at the conference. Let me know on Twitter ([@sqs](https://twitter.com/sqs)) if I missed anything. Any mistakes or misrepresentations are my fault; Tammy's talk was excellent!*
@@ -123,3 +119,5 @@ Dropbox hires engineers who care about reliability and durability, so this comes
 ---
 
 Thanks to [Tammy Butow](http://tammybutow.com/) ([@tammybutow](https://twitter.com/tammybutow)) for a fantastic talk. In addition to being a hacker and engineering manager, Tammy also founded [Girl Geek Academy](https://twitter.com/girlgeekacademy), a movement to teach 1 million technical women by 2025. Check it out!
+
+![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)

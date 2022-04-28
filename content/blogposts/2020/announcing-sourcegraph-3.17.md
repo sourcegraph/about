@@ -75,7 +75,7 @@ We plan to continue on this path of performance improvements, and the next relea
 ### Automatic precise code intelligence
 
 <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/BHYka1CT700?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/BHYka1CT700?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>
 
 An experimental feature on [sourcegraph.com/search](https://sourcegraph.com/search) will automatically create an [LSIF index](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence) for eligible repositories based on their popularity, so that the repository will have precise results on hover, definition, and reference operations. We are currently able to index Go repositories containing a go.mod file that do not require additional build steps, and are working on expanding the set of eligible repositories to support additional languages and more sophisticated repository structures.
@@ -87,7 +87,7 @@ Currently, a repository will need 50 navigation events (hovers, jump to definiti
 ## AND/OR operators for code search
 
 <div className="container my-4 video-embed embed-responsive embed-responsive-16by9 ">
-    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
+    <iframe className="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/Iye0yZVr1Ro?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=0&amp;rel=0" allowFullScreen="" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>
 
 In [Sourcegraph 3.15](https://about.sourcegraph.com/blog/sourcegraph-3.15#experimental-andor-operators-for-search-contents), we introduced experimental AND/OR queries for file content in regular expressions and structural search modes. Now in Sourcegraph 3.17, AND/OR queries are included in the recently added literal search mode, and enabled for all users (no longer considered experimental).

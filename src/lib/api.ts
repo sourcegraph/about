@@ -6,7 +6,7 @@ interface Record {
     filePath: string
 }
 
-interface FileCacheObject {
+export interface FileCacheObject {
     records: FileCacheRecord
 }
 
@@ -24,8 +24,9 @@ interface Record {
     filePath: string
 }
 
-interface Slug {
+export interface Slug {
     slugPath: string
+    publishDate: string
 }
 
 interface SlugRecord {
@@ -59,6 +60,15 @@ export const getAllSlugs = async (): Promise<SlugCacheObject | undefined> => {
     if (slugData) {
         return JSON.parse(slugData) as SlugCacheObject
     }
+}
+
+export const getSortedSlugs = async (directory: string): Promise<Slug[] | undefined> => {
+    const allSlugs = await getAllSlugs()
+    if (!allSlugs) {
+        return
+    }
+    const slugsByDirectory = Object.values(allSlugs.records[`${directory}`].recordSlugs)
+    return slugsByDirectory.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf())
 }
 
 export const getMarkdownFiles = async (): Promise<FileCacheObject | undefined> => {

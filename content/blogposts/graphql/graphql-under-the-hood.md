@@ -11,7 +11,7 @@ published: true
 ---
 
 
-# Intro
+### Intro
 
 Eric Baer ([@ebaerbaerbaer](https://twitter.com/ebaerbaerbaer)) JavaScript consultant with [Formidable](https://formidable.com/) is taking us on an exploration of what GraphQL looks like under the hood.
 

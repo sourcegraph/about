@@ -6,6 +6,7 @@ tags: [
   blog
 ]
 slug: advanced-typescript-tooling-talk-fosdem-2019
+description: 'This presentation gives a tour and history of how TypeScript is able to provide the same great experience to many different clients through the tsserver and tsserver protocol, as well as how it influenced and fits into newer efforts like the Language Server Protocol.'
 heroImage: https://user-images.githubusercontent.com/133014/55199644-f67f3280-5177-11e9-8aae-56238f6c80f0.jpg
 published: true
 ---

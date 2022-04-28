@@ -10,12 +10,12 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/0197
 published: true
 ---
 
-<p className="text-center"><img alt="GopherCon 2018 Banner. Gophers riding around on Go Karts. Cute!" src="https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg?w=400" className="h5"/></p>
-
 We are Sourcegraph, known
 to our Developers as "[a great source code browsing/discovery tool, especially for large codebase like k8s](https://twitter.com/VladimirVivien/status/1032099627078696960)", and "[like Google's internal code search but for rest of us](https://twitter.com/tsaha/status/1032016464583131136)". We help developers write better software by giving them IDE like features in code hosts such as GitHub and Bitbucket server, both for Open Source and private repositories.
 
 We're proud to once again be hosting the **official liveblog for GopherCon** so we’re looking for attendees who want to contribute. Is that you?
+
+<p className="text-center"><img alt="GopherCon 2018 Banner. Gophers riding around on Go Karts. Cute!" src="https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg?w=400" className="h5"/></p>
 
 ## About liveblogging
 

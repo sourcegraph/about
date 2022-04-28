@@ -13,8 +13,6 @@ published: true
 
 Liveblog by Carlisia Pinto ([@carlisia](https://twitter.com/carlisia))
 
-![filippo](//images.contentful.com/le3mxztn6yoo/a3Y5rqBJPU6wg8S6egaUy/0b2dcdab51e21bbff9f9ee42f35bf8b1/filippo.JPG)
-
 ### Overview
 Talk by Filippo Valsorda. Starting at the beginning of this year, a lot of your internet traffic probably is going through Go. That is because Cloudflare delivers content for a great number of websites, and they have have build their TLS 1.3 using Go's crypto/tls.
 
@@ -115,3 +113,4 @@ This was a very detailed talk. Be sure not to miss watching the video of it when
 Slides for this talk: https://speakerdeck.com/filosottile/encrypting-the-internet-with-go-at-gophercon-2017
 
 Twitter: [@FiloSottile](https://twitter.com/FiloSottile)
+![filippo](//images.contentful.com/le3mxztn6yoo/a3Y5rqBJPU6wg8S6egaUy/0b2dcdab51e21bbff9f9ee42f35bf8b1/filippo.JPG)

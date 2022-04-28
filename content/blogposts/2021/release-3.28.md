@@ -51,7 +51,7 @@ Bulk actions allow users to automate taking an action on many changesets at a ti
 - add links to docs, or add instructions to all the changesets in a batch change
 - [Read more](https://docs.sourcegraph.com/batch_changes/how-tos/bulk_operations_on_changesets)
 
-<p><video autoplay loop muted playsinline style={{width:'600px'}}>
+<p><video autoPlay loop muted playsInline style={{width:'600px'}}>
   <source src="https://sourcegraphstatic.com/blog/3.28/batch-changes-bulk-action-comment.mp4" type="video/mp4" data-cookieconsent="ignore"/>
  </video></p>
 

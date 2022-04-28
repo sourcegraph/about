@@ -6,6 +6,7 @@ tags: [
   "blog"
 ]
 slug: part-1-how-sourcegraph-scales-with-the-language-server-protocol
+description: 'Sourcegraph lets you view any line of code in your web browser with all the navigation features of an IDE and more. That includes both classic abilities — like jump-to-definition, find-references, tooltips, and symbol search — and novel superpowers like cross-repository jump-to-definition and global usage examples. The sum of these parts is a quick, frictionless way to discuss or make sense of code.'
 heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
 published: true
 ---

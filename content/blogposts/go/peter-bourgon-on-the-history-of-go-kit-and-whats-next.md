@@ -10,9 +10,6 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/4cWREdTh1uK4Wm60CgCYUQ/6f76
 published: true
 ---
 
-
-![bourgon](//images.contentful.com/le3mxztn6yoo/4cWREdTh1uK4Wm60CgCYUQ/6f763d940fb0192f25b7a3d22b3a02e2/bourgon.jpg)
-
 [Peter Bourgon](https://twitter.com/peterbourgon) is the creator of Go kit.
 
 Strong majority of audience here has heard of Go kit.
@@ -74,3 +71,5 @@ People have asked for
 - BDFL is okay so far, but it can be slow at times
 - would love to delegate more than in the past; makes sense to delegate on a per-package basis. Precedent is Chris Hines' work on and ownership of package log, Bas van Beek on transport/grpc and tracing
 - So if you want to contribute to a 7,253-star project, reach out!
+
+![bourgon](//images.contentful.com/le3mxztn6yoo/4cWREdTh1uK4Wm60CgCYUQ/6f763d940fb0192f25b7a3d22b3a02e2/bourgon.jpg)

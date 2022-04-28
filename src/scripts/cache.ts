@@ -17,11 +17,6 @@ interface Post {
 }
 
 enum BlogType {
-    GopherCon = 'go',
-    DotGo = 'go',
-    GraphQLSummit = 'graphql',
-    StrangeLoop = 'strange-loop',
-    GitHubUniverse = 'github-universe',
     PressRelease = 'press',
     Podcast = 'podcast',
     Blog = 'blog',
@@ -71,6 +66,7 @@ interface Record {
 
 interface Slug {
     slugPath: string
+    publishDate: string
 }
 
 interface SlugRecord {
@@ -118,6 +114,13 @@ const loadSlug = async (file: string): Promise<string> => {
     return replaceFields(file)
 }
 
+const loadDate = async (file: string): Promise<string | undefined> => {
+    const loadedFile = (await loadMarkdownFile(path.join(process.cwd(), CONTENT_FOLDER, file))) as Post
+    if (loadedFile) {
+        return loadedFile.frontmatter.publishDate
+    }
+}
+
 const mapFileDataCache = async (baseDirectory: string): Promise<FileCacheObject> => {
     const getFiles = await globby('**/*.md', { cwd: baseDirectory })
     const records = {
@@ -144,7 +147,10 @@ const mapSlugDataCache = async (baseDirectory: string): Promise<SlugCacheObject>
                 await Promise.all(
                     directoryFiles.map(async (file: string) => [
                         await loadSlug(path.join(directory, file)),
-                        { slugPath: await loadSlug(path.join(directory, file)) },
+                        {
+                            slugPath: await loadSlug(path.join(directory, file)),
+                            publishDate: await loadDate(path.join(directory, file)),
+                        },
                     ])
                 )
             ) as SlugRecord,

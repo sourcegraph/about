@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-grpc-reflection-and-grpcurl
+description: 'grpcurl is a CLI tool that can provide a human-friendly CLI experience to dynamically invoke grpc services. Built on top of protobuf descriptors and grpc reflection, we created a set of packages to provide Go APIs to get access to rich protobuf descriptors and grpc reflection as well as packages to allow us to dynamically construct protobuf messages and dynamically invoke grpc services.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---

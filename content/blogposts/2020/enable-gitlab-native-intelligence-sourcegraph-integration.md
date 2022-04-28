@@ -6,6 +6,7 @@ tags: [
   blog
 ]
 slug: enable-native-code-intelligence-gitlab-sourcegraph-integration
+description: 'With the GitLab native code intelligence integration from Sourcegraph, you can bring IDE-like features such as hover tooltips and go to definition to every GitLab code view.'
 heroImage: /blog/gitlab-integration-preview-dark.png
 published: true
 ---

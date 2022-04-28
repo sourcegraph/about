@@ -13,8 +13,6 @@ published: true
 
 Liveblog by Carlisia Pinto ([@carlisia](https://twitter.com/carlisia))
 
-![waldemar](//images.contentful.com/le3mxztn6yoo/6OiLu7yVkkie2um2EyCYoY/23be476b4f7c8b14b293a223e3bff599/waldemar.jpg)
-
 ## About the speaker
 
 Waldemar [@wallyqs](https://twitter.com/wallyqs) is a Senior Software Engineer at Apcera, where he develops the Apcera Trusted Platform and is part of the NATS team. Previously, he formed part of the PaaS team at Rakuten in Tokyo which was one of the early adopters of CloudFoundry for production usage where he experienced operating NATS for the first time, and became a fan of its simplicity.
@@ -102,3 +100,4 @@ For the NATS project, in order to support at-least once delivery features, this 
 
 
 The slides for the rest of Wally's talk can be found here: [https://www.slideshare.net/wallyqs/gophercon-2017-the-design-implementation-of-nats-client](https://www.slideshare.net/wallyqs/gophercon-2017-the-design-implementation-of-nats-client)
+![waldemar](//images.contentful.com/le3mxztn6yoo/6OiLu7yVkkie2um2EyCYoY/23be476b4f7c8b14b293a223e3bff599/waldemar.jpg)

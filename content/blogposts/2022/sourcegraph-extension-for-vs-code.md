@@ -30,7 +30,7 @@ I ran the following search query to find all Sourcegraph extensions we have (rep
 repo:^github\.com/sourcegraph/sourcegraph-.+$  /import .+ from 'rxjs'/
 ```
 
-<video loop autoplay muted playsinline>
+<video loop autoPlay muted playsInline>
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/vs-code-extension/vs-code-regex-usecase.webm" type="video/webm" data-cookieconsent="ignore" />
   <source src="https://storage.googleapis.com/sourcegraph-assets/blog/vs-code-extension/vs-code-regex-usecase.mp4" type="video/mp4" data-cookieconsent="ignore" />
 </video>
@@ -47,7 +47,7 @@ gradle org\.apache\.logging\.log4j ['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|1
 
 As you can see in the video below, the global search returns several repositories that require further investigation. I finally changed the search context to Sourcegraph to narrow down my search scope to find all the repositories affecting our organization.
 
-<video loop autoplay muted playsinline>
+<video loop autoPlay muted playsInline>
   <source src="https://storage.cloud.google.com/sourcegraph-assets/blog/vs-code-extension/vscode-log4j.webm" type="video/webm" data-cookieconsent="ignore" />
   <source src="https://storage.cloud.google.com/sourcegraph-assets/blog/vs-code-extension/vscode-log4j.mp4" type="video/mp4" data-cookieconsent="ignore" />
 </video>

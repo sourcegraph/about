@@ -13,11 +13,11 @@ published: true
 
 Ryan Chenkie ([@ryanchenkie](https://twitter.com/@ryanchenkie)) is a developer advocate at Auth0, a Google Developer Expert and teaches a lot about Angular and GraphQL.
 
-# Phoenix
+## Phoenix
 
 Phoenix is a tool built by Auth0 that allows new employees to get permissions to the GitHub org, npm org, etc. by asking the Phoenix bot on Slack.
 
-# How to do authentication and authorization to GraphQL?
+## How to do authentication and authorization to GraphQL?
 
 The usual response to this question from the GraphQL community is "However you want". The reason for that is that the GraphQL spec is not opnionated about auth.
 
@@ -28,14 +28,14 @@ API auth needs to answer a few questions:
 - Does the request contain authentication/authorization information?
 - Is that information valid?
 
-# Typical auth in REST
+## Typical auth in REST
 
 Authentication in REST could look like this in an Express API:
 
 We want something similar in GraphQL, but not like this:
 
 
-# We need something that
+## We need something that
 
 * Isn't a catch-all
 * Gives us info on the authenticated user
@@ -138,7 +138,7 @@ import { createError } from'apollo-errors';
 image
 
 
-# Custom Directives
+## Custom Directives
 
 What if we want to limit access to specific fields? Custom directives give our queries more power:
 
@@ -203,7 +203,7 @@ With this pattern we get
 * Possibility for per-field authorization checks
 * Resolver-level authentication checks
 
-# There are many ways to do auth in GraphQL
+## There are many ways to do auth in GraphQL
 
 Everyone has its own opinion about how to do auth in GraphQL, for example some say that the API layer shouldn't have any concept of auth at all.
 

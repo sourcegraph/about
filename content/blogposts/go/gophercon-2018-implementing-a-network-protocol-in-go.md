@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-implementing-a-network-protocol-in-go
+description: 'A very detailed walkthrough of implementing a networking protocol (NDP in IPv6) in Go, with many, many code snippets.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5Oj3acpp7yysQg04W2AW4A/a93d79c10ad903d3902f6b6d8707973a/mechanic-tire-2.jpg
 published: true
 ---
@@ -14,7 +15,7 @@ Presenter: [Matt Layher](https://twitter.com/mdlayher)
 
 Liveblogger: [Beyang Liu](https://twitter.com/beyang)
 
-An very detailed walkthrough of implementing a networking protocol (NDP in IPv6) in Go, with many, many code snippets.
+A very detailed walkthrough of implementing a networking protocol (NDP in IPv6) in Go, with many, many code snippets.
 
 ---
 

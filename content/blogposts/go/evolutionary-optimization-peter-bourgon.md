@@ -10,10 +10,6 @@ heroImage: https://assets.ctfassets.net/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc
 published: true
 ---
 
-
-Liveblog by Emmanuel Odeke ([@odeke_et](https://twitter.com/odeke_et))
-
-![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)
 ## Background
 [Peter](https://twitter.com/peterbourgon) was at a Prometheus meetup in San Francisco and he lamented on the lack of logging.
 That lamentation made him wonder why there wasn't a Prometheus buffer log, so he decided to take on the challenge, why not?
@@ -152,3 +148,7 @@ getting a new mean of 25.81s which translates to a throughput of ~821MBps.
 In conclusion, the lessons learned and the results seen while building oklog are hopefully a case to show that without planning and careful examination, they would have spent a lot of time building, but with diminishing returns.
 Evolutionary design involves revisiting and examining work that was done in the previous cycle. It involves
 reiterating and revisions of previous, which still enables them to ship a product, yet with continual improvements.
+
+Liveblog by Emmanuel Odeke ([@odeke_et](https://twitter.com/odeke_et))
+
+![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)

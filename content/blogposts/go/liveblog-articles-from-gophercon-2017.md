@@ -13,8 +13,6 @@ published: true
 
 (See an overview of all GopherCon talks with links in this post).
 
-![GopherCon banner](https://images.ctfassets.net/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp?h=250)
-
 We’re excited to be the official live-blogging partner for GopherCon 2017!
 
 That’s right — we’ll be writing up concise technical summaries of as many of the amazing talks by Go experts this year as we can. For folks tuning in from home, the liveblog will be a great way to stay on top of conference proceedings efficiently throughout the day. For folks at the conference, it’s a great way to remind yourself of the key takeaways of each talk.

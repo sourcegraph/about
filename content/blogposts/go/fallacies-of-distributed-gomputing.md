@@ -10,17 +10,7 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/12WDBKdk9quUIYMm2OwumM/1215
 published: true
 ---
 
-
-Liveblog by Linda Xie ([@lindeexie](https://twtiter.com/lindeexie))
-
-![screenshot-20 2017-07-14](//images.contentful.com/le3mxztn6yoo/12WDBKdk9quUIYMm2OwumM/12159a4e2e6ac61be8752d93d2e49d60/screenshot-20_2017-07-14.png)
-
-[Michael Hausenblas](https://twitter.com/mhausenblas) is a developer advocate for OpenShift and Kubernetes Hat Red Hat. His background is in large-scale data processing and container orchestration. He also contributes to open source software, mainly using Go.
-
-## Fallacies of distributed computing
-
 There are any fallacies in distributed computing. This stuff will bite you sooner or later. For each fallacy, I address the problem with a general solution and a Go specific solution.
-
 
 **1. The network is reliable**
 
@@ -216,3 +206,9 @@ Some observations from the code reviews carried out in order to prepare this tal
 
 
 **For complete slides**: http://go-talks.appspot.com/github.com/mhausenblas/fallacies-of-distributed-gomputing/main.slide.
+
+Liveblog by Linda Xie ([@lindeexie](https://twtiter.com/lindeexie))
+
+![screenshot-20 2017-07-14](//images.contentful.com/le3mxztn6yoo/12WDBKdk9quUIYMm2OwumM/12159a4e2e6ac61be8752d93d2e49d60/screenshot-20_2017-07-14.png)
+
+[Michael Hausenblas](https://twitter.com/mhausenblas) is a developer advocate for OpenShift and Kubernetes Hat Red Hat. His background is in large-scale data processing and container orchestration. He also contributes to open source software, mainly using Go.

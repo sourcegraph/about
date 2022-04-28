@@ -13,8 +13,6 @@ published: true
 
 Liveblog by Quinn Slack ([@sqs](https://twitter.com/sqs))
 
-![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)
-
 Kelsey Hightower ([@kelseyhightower](https://twitter.com/kelseyhightower)) is a technologist and Googler who regularly comes up with refreshing new ideas for using Go and deploying software. We live-blogged his talk at [GopherCon 2017](https://gophercon.com) about self-deploying Go applications using Kubernetes.
 
 *Note: This post was best-effort live-blogged at the conference. Let me know on Twitter ([@sqs](https://twitter.com/sqs)) if I missed anything. Any mistakes or misrepresentations are my fault; Kelsey’s tutorial was excellent!*
@@ -55,3 +53,5 @@ These answers are a combination of Kelsey's answers and my ([@sqs](https://twitt
 - How does this relate to things like Google Cloud Platform's [Cloud Functions](https://cloud.google.com/functions/) and [AWS Lambda](https://aws.amazon.com/lambda/)? Answer: They're basically identical. In both cases, they have a similar wrapper. In a self-deploying program, you choose the wrapper; in the existing services, they choose the wrapper. This approach might give you more control and open up more possibilities.
 - How do you handle versioning? Answer: Longer story than can be covered here. But we can create a version identifier based on the SHA-256 of the binary (and rely on the Go compiler's stale checking to avoid creating redundant versions).
 - How do you handle updates and configuration changes? Answer: You can embed a configuration file in your program, and then doing versioning as described above will make it so any changes to the embedded configuration yield a new, distinct version. And by using a Kubernetes deployment instead of just a pod, you'll ensure that applying updates clobbers old pods.
+
+![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)

@@ -12,8 +12,6 @@ published: true
 
 Liveblog by Matt King
 
-![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)
-
 Slides for this talk have been posted [here](https://speakerdeck.com/mschoch/value-store-in-go).
 
 ## About The Speaker
@@ -81,3 +79,5 @@ MOSS is built and well suited for the problem they set out to solve. The process
 2. Benchmark
 3. Analyze results
 4. Iterate when needed and only add complexity later. You cannot add simplicity later on.
+
+![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)

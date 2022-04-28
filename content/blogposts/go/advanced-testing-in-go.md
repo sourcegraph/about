@@ -10,12 +10,6 @@ heroImage: https://assets.ctfassets.net/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc
 published: true
 ---
 
-Liveblog by Beyang Liu ([@beyang](https://twitter.com/beyang))
-
-![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)
-
-[Mitchell Hashimoto](https://twitter.com/mitchellh) is the founder of [HashiCorp](https://www.hashicorp.com/) and creator of popular DevOps tools such as Vagrant, Packer, Terraform, Consul, Vault, and more. Mitchell is an O'Reilly author and one of the top GitHub users by followers, activity, and contributions. He has been using Go since prior to Go 1.0, and he is obsessed with automation.
-
 Go is used everywhere at Hashicorp. It has been the primary language for the past 5 years.
 
 Their projects have a number of properties that make testing "interesting":
@@ -622,3 +616,9 @@ func TestThing(t *testing.T) {
 - Code scan for license compliance
 - Audits for security double, triple-check
 - QA teams for "manual" (though very automated still) testing
+
+Liveblog by Beyang Liu ([@beyang](https://twitter.com/beyang))
+
+![Selection 012](//assets.contentful.com/le3mxztn6yoo/4ODIg0jhskgiuQ0SgmaMsm/addc509ab1dff98eb6864bcee1740aad/Selection_012.bmp)
+
+[Mitchell Hashimoto](https://twitter.com/mitchellh) is the founder of [HashiCorp](https://www.hashicorp.com/) and creator of popular DevOps tools such as Vagrant, Packer, Terraform, Consul, Vault, and more. Mitchell is an O'Reilly author and one of the top GitHub users by followers, activity, and contributions. He has been using Go since prior to Go 1.0, and he is obsessed with automation.

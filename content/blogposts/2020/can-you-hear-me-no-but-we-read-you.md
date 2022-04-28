@@ -5,6 +5,7 @@ authorUrl: https://twitter.com/quinnkeast
 publishDate: 2020-10-29T00:00-07:00
 tags: [blog]
 slug: can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls
+description: 'When our VP of Product suggested an idea to help the team build empathy and better understand the video call experience from the perspective of someone relying on captions, we jumped on it.'
 heroImage: /blog/silent-team-call.jpg
 published: true
 canonical: https://fastcompany.com/90565930/im-deaf-and-this-is-what-happens-when-i-get-on-a-zoom-call

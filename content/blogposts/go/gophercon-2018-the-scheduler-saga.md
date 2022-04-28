@@ -6,6 +6,7 @@ tags: [
   "gophercon"
 ]
 slug: gophercon-2018-the-scheduler-saga
+description: 'The Go scheduler is the behind-the-scenes magical machine that powers Go programs. It efficiently runs goroutines, and also coordinates network IO and memory management. This talk will explore the inner workings of the scheduler machinery.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/5nOlXCLdhSk6ESWEW8iC24/01978fdff3206c78ad8bee4c0cdfee87/mechanic-tire.jpg
 published: true
 ---
