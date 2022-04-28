@@ -34,7 +34,7 @@ export default class Layout extends React.PureComponent<LayoutProps> {
         const defaultMetaProps: LayoutProps['meta'] = {
             title: 'Sourcegraph - Universal Code Search',
             description: 'Find and fix things across all of your code with Sourcegraph universal code search.',
-            image: 'https://about.sourcegraph.com/sourcegraph-mark.png',
+            image: 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png',
             icon: 'https://about.sourcegraph.com/favicon.png',
         }
         const pathname = this.props.location.pathname

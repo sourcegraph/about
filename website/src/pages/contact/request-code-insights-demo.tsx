@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { PageProps } from 'gatsby'
 
 import Layout from '../../components/Layout'
-import { CustomerLogosSection } from '../../components/product/CustomerLogosSection'
+import { CustomerLogos } from '../../components/CustomerLogos'
 import { useHubSpot } from '../../hooks/hubSpot'
 
 const title = 'Sourcegraph - Schedule a Code Insights demo.'
@@ -38,7 +38,7 @@ const Contact: FunctionComponent<PageProps> = props => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <CustomerLogosSection className="full-color mt-3 mb-6" />
+                            <CustomerLogos />
                         </div>
                     </div>
                 </div>

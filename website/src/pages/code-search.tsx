@@ -135,7 +135,7 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
         </ContentSection>
 
         {/* Social proof */}
-        <ContentSection className="py-4">
+        <ContentSection className="pt-7">
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-6">
                     <h2 className="display-3 font-weight-bold mb-3">Move faster with Sourcegraph</h2>
@@ -175,7 +175,7 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
 
         <IntegrationsSection />
 
-        <ContentSection className="mb-6">
+        <ContentSection className="pb-7">
             <h2 className="display-3 font-weight-bold mt-5 mb-4">How developers are using Sourcegraph</h2>
             <div className="row">
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 border">
