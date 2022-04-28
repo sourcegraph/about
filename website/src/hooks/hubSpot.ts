@@ -83,12 +83,24 @@ interface HookProps {
     onFormSubmitted?: () => void
 }
 
+const hubSpotScript = '//js.hsforms.net/forms/v2.js'
+
+const getHubSpotScript = () => {
+    const script = document.querySelector(`script[src="${hubSpotScript}"]`)
+    return script
+}
+
 const loadHubSpotScript = (): HTMLScriptElement | Element => {
-    const hubSpotScript = '//js.hsforms.net/forms/v2.js'
-    const scriptElement = document.createElement('script')
-    scriptElement.src = hubSpotScript
-    document.head.append(scriptElement)
-    return scriptElement
+    const script = getHubSpotScript()
+
+    if (!script) {
+        const scriptElement = document.createElement('script')
+        scriptElement.src = hubSpotScript
+        document.head.append(scriptElement)
+        return scriptElement
+    }
+
+    return script
 }
 
 const loadChiliPiperScript = (callback: () => void): void => {
@@ -189,6 +201,11 @@ export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onF
                     }
                 })
             })
+        }
+
+        return () => {
+            const script = getHubSpotScript()
+            script?.remove()
         }
     }, [region, portalId, formId, targetId, chiliPiper, onFormSubmitted])
 }
