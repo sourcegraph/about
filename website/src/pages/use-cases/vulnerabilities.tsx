@@ -323,12 +323,12 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <div className="bg-light-gray-3">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column">
+                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
                     </div>
-                    <div className="d-flex flex-column">
-                        <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
+                    <div className="text-center col-12">
+                        <Link className="btn btn-primary min-w-200" to="/demo" title="Request a Demo.">
                             Request a demo
                         </Link>
                         <Link to="/use-cases" className="d-flex justify-content-center mt-4 font-weight-bold">
