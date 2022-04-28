@@ -46,6 +46,7 @@ Defining the end state also helps you justify the bigger changes that are necess
 Here is [a template](https://docs.google.com/document/d/1TbsQC7fFVdMKjkfNegU7OwUUglfB8j-jOeoN6ULAgE0/edit#) derived from a few examples of planning docs for large-scale migrations.
 
 ![Sample architecture diagram](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image5.png)
+
 <figcaption>A sample architecture diagram showing the high-level change being implemented.</figcaption>
 <br>
 
