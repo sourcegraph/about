@@ -157,7 +157,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="bg" />
                 <div className="container pb-4">
                     <div className="row">
-                        <div className="col-lg-7 mb-8 mt-7">
+                        <div className="col-md-7 mb-8 mt-7">
                             <BackButtonBold href="/use-cases" text="USE CASES" />
                             <h1 className="display-2 font-weight-bold mb-4">
                                 Resolve incidents quickly and confidently
@@ -308,16 +308,16 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column px-lg-7 text-center">
+                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>
                             Respond to incidents with confidence and speed, and remediate issues at their root to ensure
                             they don't reoccur.
                         </p>
                     </div>
-                    <div className="d-flex flex-column">
+                    <div className="text-center col-12">
                         <Link
-                            className="btn btn-primary"
+                            className="btn btn-primary min-w-200"
                             to="/demo"
                             title="Request a Demo."
                             data-button-style={buttonStyle.primary}
