@@ -201,7 +201,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         Identify the root cause of an incident and fix it everywhere, fast
                     </h1>
                 </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
+                <div className="d-flex flex-column flex-lg-row mt-lg-4 my-6">
                     <div className="text-center mb-4">
                         <MagnifyIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Assess incidents quickly</h4>

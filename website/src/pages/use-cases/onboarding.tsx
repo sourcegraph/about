@@ -180,7 +180,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         Make your codebase accessible for your entire team
                     </h1>
                 </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
+                <div className="d-flex flex-column flex-lg-row mt-lg-4 my-6">
                     <div className="text-center">
                         <MagnifyIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Find answers across all repositories</h4>

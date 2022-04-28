@@ -107,7 +107,7 @@ const items = [
 const quoteCarouselItems = [
     {
         header: 'Indeed improves code health at scale',
-        quote: 'The ability to automate downstream changes that Sourcegraph Batch Changes provides is a key capability for reducing the hidden burden of updates pushed across teams and enabling us to increase our engineering velocity.',
+        quote: `On average, I'd say that for every automated merge request that we're able to merge we save an hour…if we are doing several thousand automated merges in a year, we're saving several employee's worth of time.`,
         by: 'Jared Hodge, Senior Manager, Developer Experience at Indeed',
         logoImage: '/external-logos/indeed-logo.svg',
         linkText: 'Read the case study',
@@ -124,7 +124,7 @@ const quoteCarouselItems = [
     },
     {
         header: 'Workiva efficiently pays down tech debt',
-        quote: `As an organization that values paying down tech debt, Workiva’s Client Platform team started using Sourcegraph to help them efficiently propagate updates to dependencies across all of their repositories without any ongoing maintenance.`,
+        quote: `As an organization that values paying down tech debt, Workiva's Client Platform team started using Sourcegraph to help them efficiently propagate updates to dependencies across all of their repositories without any ongoing maintenance.`,
         logoImage: '/external-logos/workiva-vector-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/workiva-automates-large-scale-code-changes',
@@ -217,7 +217,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </h1>
                 </div>
                 <div className="d-flex flex-column flex-lg-row mt-lg-4 my-6">
-                    <div className="text-center mb-4">
+                    <div className="col-lg-4 pr-lg-5 pl-lg-0 text-center mb-4">
                         <MagnifyIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Find unhealthy code</h4>
                         <p>
@@ -225,7 +225,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             patterns, and more across all your repositories.
                         </p>
                     </div>
-                    <div className="mx-lg-7 text-center mb-4">
+                    <div className="col-lg-4 text-center mb-4">
                         <WrenchOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Remediate code health issues</h4>
                         <p>
@@ -233,7 +233,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             with automated pull requests across your entire codebase.
                         </p>
                     </div>
-                    <div className="text-center mb-4">
+                    <div className="col-lg-4 pl-lg-5 pr-lg-0 text-center mb-4">
                         <ClipBoardPulseOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Monitor code health initiatives</h4>
                         <p>
@@ -252,8 +252,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         <h1 className="mb-md-4 font-weight-bold max-w-500">Improving code health can be daunting</h1>
                         <p className="max-w-500">
                             Engineering teams need to track and measure code quality consistently to monitor code health
-                            across their entire codebase, but current tools don't make this easy.{' '}
-                            <strong>What does that mean for you?</strong>
+                            across their entire codebase, but current tools don't make this easy. What does that mean
+                            for you?
                         </p>
                         <ul>
                             <li className="mt-1">
@@ -322,6 +322,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             data-button-type="cta"
                         >
                             Request a demo
+                        </Link>
+                        <Link to="/use-cases" className="d-flex justify-content-center mt-4">
+                            <p className="font-weight-bold">Explore other use cases</p>
                         </Link>
                     </div>
                 </div>
