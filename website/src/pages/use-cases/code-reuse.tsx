@@ -13,6 +13,7 @@ import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 import { CustomerLogos } from '../../components/CustomerLogos'
+import { buttonStyle, buttonLocation } from '../../tracking'
 
 import styles from './useCases.module.scss'
 
@@ -181,6 +182,9 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                                     className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
                                     to="/demo"
                                     title="Request a Demo."
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
                                 >
                                     Request a demo
                                 </Link>
@@ -188,6 +192,9 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                                     className="btn btn-outline-primary w-md-100"
                                     to="/get-started"
                                     title="Try Sourcegraph."
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
                                 >
                                     Try Sourcegraph now
                                 </Link>
@@ -279,6 +286,9 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                             className="btn btn-primary col-12 col-md-4 col-lg-2 min-w-200"
                             to="/demo"
                             title="Request a Demo."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
                         >
                             Request a demo
                         </Link>
@@ -308,7 +318,13 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="text-center">
                 <h1 className="font-weight-bold mb-6">Make the most of your existing code.</h1>
-                <Link to="/get-started" className="btn btn-primary mb-8">
+                <Link
+                    to="/get-started"
+                    className="btn btn-primary mb-8"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.trySourcegraph}
+                    data-button-type="cta"
+                >
                     Ready to get started?
                 </Link>
             </div>
