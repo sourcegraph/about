@@ -57,7 +57,7 @@ I’d just joined Sourcegraph in September 2020 as the first PM for the extensib
 **Follow-up situation:** We can quickly see the names of all of our view analytics events and be able to go to what page they’re triggered on with [this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27...%27%29+count:all&patternType=structural). (Bonus: with the [Open-in-Figma extension](https://sourcegraph.com/extensions/Joelkw/open-in-figma) I can then 1-click open a mockup of the page to get an immediate understanding of “what page fires this event” without reading the code to figure out what page it renders.)
 
 <p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc4?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc4?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 150%; height: 300px;"></iframe>
 </p>
 
 ### I’m mid-conversation with a customer. Is another team’s feature affecting our feature?
