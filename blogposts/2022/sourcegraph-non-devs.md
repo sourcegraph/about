@@ -24,8 +24,9 @@ To go to the sections most relevant to you, use the table of contents below.
 
 1. [Product Managers](#product-managers)
    - [What actions do our metrics track?](#what-actions-do-our-metrics-track)
-   - [I’m mid-conversation with a customer. Is another team’s feature affecting our feature?](#)
-   - [What's the Sourcegraph standard for error message syntax?](#semantic-refactoring)
+   - [I’m mid-conversation with a customer. Is another team’s feature affecting our feature?](#im-mid-conversation-with-a-customer-is-another-teams-feature-affecting-our-feature)
+   - [What's the Sourcegraph standard for error message syntax?](#whats-the-sourcegraph-standard-for-error-message-syntax)
+   - [Situation: Determine the different [blank]@sourcegraph emails we direct users to across our entire user-facing codebase](#situation-determine-the-different-blank-sourcegraph-emails-we-direct-users-to-across-our-entire-user-facing-codebase)
 2. [Find and replace outside your editor, on your local machine](#find-and-replace-outside-your-editor)
    - [`grep` and `sed`](#grep-and-sed)
    - [Codemod](#codemod)
