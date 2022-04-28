@@ -1,32 +1,48 @@
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import React, { FunctionComponent } from 'react'
+import classNames from 'classnames'
+
 import { Install } from './Install'
 import { buttonStyle, buttonLocation } from '../tracking'
 
+const selfHostedFeatures: string[] = [
+    'Free for up to 10 users',
+    'Your code never leaves your server',
+    'Connect to private code hosts (and local installs)',
+    'Access advanced functionality, like Code Insights and Batch Changes',
+]
+
 export const SelfHostedSection: FunctionComponent = () => (
-    <div className="self-hosted-section bg-gradient-green-blue" id="self-hosted-section">
+    <div className="bg-gradient-venus py-7">
         <div className="container">
-            <h1 id="get-started" className="display-2 font-weight-bold mb-5">
-                Self-hosted deployment
-            </h1>
+            <h1 className="font-weight-bold mb-6 text-center">Self-hosted deployment</h1>
 
             <div className="row">
-                <div className="col-lg-6 self-hosted-section__local">
+                <div className="col-lg-6">
                     <Install />
+                </div>
 
-                    <p>
-                        <a
-                            className="d-inline-flex mt-5 font-weight-bold"
-                            href="https://docs.sourcegraph.com"
-                            data-button-style={buttonStyle.arrowWithText}
-                            data-button-location={buttonLocation.trySourcegraph}
-                            data-button-type="cta"
-                        >
-                            Deploy to a server or cluster <ArrowRightIcon className="ml-1" />
-                        </a>
-                    </p>
+                <div className="col-lg-6 pl-lg-7">
+                    <h3 className="mt-6 mt-lg-0 font-weight-bold">Why choose self-hosted?</h3>
 
-                    <h2 className="h5 d-inline-flex mt-4 mr-4">Want help?</h2>
+                    <ul className="my-4 text-lg">
+                        {selfHostedFeatures.map((feature, i) => (
+                            <li key={i} className={classNames({ 'mb-2': selfHostedFeatures.length !== i + 1 })}>
+                                {feature}
+                            </li>
+                        ))}
+                    </ul>
+
+                    <a
+                        className="d-inline-block text-lg"
+                        href="/get-started"
+                        data-button-style={buttonStyle.arrowWithText}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                    >
+                        Learn about self-hosted vs Cloud features
+                    </a>
+
+                    <h5 className="mt-6 mb-4 font-weight-bold">Need help setting up Sourcegraph?</h5>
 
                     <a
                         className="btn btn-primary d-inline-flex"
@@ -35,28 +51,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"
                     >
-                        Talk to an engineer <ArrowRightIcon className="ml-1" />
-                    </a>
-                </div>
-
-                <div className="col-lg-6 self-hosted-section__search">
-                    <h2 className="self-hosted-section__search-headings">Why choose self-hosted?</h2>
-
-                    <ul className="font-size-medium">
-                        <li>Free for up to 10 users</li>
-                        <li>Collaborate with your team across infinite repositories</li>
-                        <li>Connect to private code hosts (and local installs)</li>
-                        <li>Free trial for enterprise features</li>
-                    </ul>
-
-                    <a
-                        className="d-inline-flex font-weight-bold"
-                        href="/get-started"
-                        data-button-style={buttonStyle.arrowWithText}
-                        data-button-location={buttonLocation.trySourcegraph}
-                        data-button-type="cta"
-                    >
-                        Learn about self-hosted vs.Cloud features <ArrowRightIcon className="ml-1" />
+                        Talk to an engineer
                     </a>
                 </div>
             </div>
