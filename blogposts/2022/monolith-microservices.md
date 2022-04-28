@@ -35,8 +35,7 @@ Tactically, it's important for the owner to identify all the stakeholders whose 
 
 ![Using Sourcegraph to find locations in code that will need to change](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image6.gif)
 
-<figcaption>Find all the locations in code that will need to change and identify the owners of those locations. Then, make a list or spreadsheet of owners whose approval you'll need._
-</figcaption>
+<figcaption>Find all the locations in code that will need to change and identify the owners of those locations. Then, make a list or spreadsheet of owners whose approval you'll need.</figcaption>
 
 ### 2. Define success
 
@@ -47,8 +46,8 @@ Defining the end state also helps you justify the bigger changes that are necess
 Here is [a template](https://docs.google.com/document/d/1TbsQC7fFVdMKjkfNegU7OwUUglfB8j-jOeoN6ULAgE0/edit#) derived from a few examples of planning docs for large-scale migrations.
 
 ![Sample architecture diagram](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image5.png)
-
 <figcaption>A sample architecture diagram showing the high-level change being implemented.</figcaption>
+
 
 Share this document with the list of stakeholders you created in step 1. Feedback is crucial for two reasons:
 
@@ -85,6 +84,7 @@ It's important the tool you use permits feedback and adjustments along the way, 
 ![Automating code changes](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image4.gif)
 
 <figcaption>In a microservices migration, it’s common to need to make simple changes to numerous places in the code. Automation can help with an otherwise tedious process, but it’s important to keep the human in the loop because the changes can sometimes be subtly different or can require conversations with the teams that own the code being updated.</figcaption>
+
 
 There are generally three types of tools that can help shepherd such large-scale migrations:
 
