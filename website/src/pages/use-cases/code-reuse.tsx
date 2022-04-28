@@ -209,8 +209,7 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                         </h1>
                         <p>
                             Current tools don’t fully enable teams to innersource and use existing code to develop a
-                            more secure and coherent codebase.
-                            <span className="font-weight-bold"> What does that mean for you and your team?</span>
+                            more secure and coherent codebase. What does that mean for you and your team?
                         </p>
                         <ul>
                             <li>Finding idiomatic code examples is challenging if you don't know where to look.</li>
