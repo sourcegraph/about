@@ -9,8 +9,12 @@ interface Blog {
     description: string
     type: string
     href: string
+    img?: Image
+}
+
+interface Image {
+    src: string
     alt: string
-    image?: string
 }
 
 export const BlogListItem: FunctionComponent<Props> = ({ blog }) => (
@@ -23,7 +27,7 @@ export const BlogListItem: FunctionComponent<Props> = ({ blog }) => (
             <p>{blog.description}</p>
         </div>
         <div className="col-sm-4 col-md-3 d-flex align-items-center">
-            {blog.image && <img className="flex-1 w-100" alt={blog.alt} src={blog.image} />}
+            {blog.img && <img className="flex-1 w-100" alt={blog.img.alt} src={blog.img.src} />}
         </div>
     </div>
 )

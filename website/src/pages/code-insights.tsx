@@ -267,25 +267,31 @@ const blogListItems = [
         description:
             'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.',
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
+            alt: 'Migrating to CSS modules with codemods and code insights blog thumbnail',
+        },
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
-        alt: 'Migrating to CSS modules with codemods and code insights blog thumbnail',
     },
     {
         title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
         description: 'Learn about why we built Code Insights from our CEO.',
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
+            alt: 'Announcing code insights blog thumbnail',
+        },
         href: '/blog/announcing-code-insights',
-        alt: 'Announcing code insights blog thumbnail',
     },
     {
         title: 'Dive into documentation',
         description: 'Learn everything you need to know about Code Insights.',
         type: 'Docs',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+            alt: 'Code insights documentation thumbnail',
+        },
         href: 'https://docs.sourcegraph.com/code_insights',
-        alt: 'Code insights documentation thumbnail',
     },
 ]
 

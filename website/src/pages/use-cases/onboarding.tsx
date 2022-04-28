@@ -135,18 +135,22 @@ const blogListItems = [
         description:
             'We spoke to engineering leaders and engineers to learn their secrets for successful, repeatable, and scalable onboarding.',
         type: 'Blog post',
-        image: 'https://sourcegraphstatic.com/better-onboarding-prevent-codebase-overwhelm.png',
+        img: {
+            src: 'https://sourcegraphstatic.com/better-onboarding-prevent-codebase-overwhelm.png',
+            alt: '8 ways to implement better onboarding blog thumbnail',
+        },
         href: '/blog/better-onboarding-how-to-prevent-codebase-overwhelm',
-        alt: '8 ways to implement better onboarding blog thumbnail',
     },
     {
         title: 'How we built our software engineering career framework',
         description:
             'Learn how Sourcegraph built an engineering career development framework to align the entire engineering organization and create consistent, fair, and scalalabe conversations about growth.',
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png',
+            alt: 'Software engineer career ladder blog thumbnail',
+        },
         href: '/blog/software-engineer-career-ladder',
-        alt: 'Software engineer career ladder blog thumbnail',
     },
 ]
 

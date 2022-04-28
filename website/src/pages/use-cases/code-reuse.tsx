@@ -137,18 +137,22 @@ const resourceItems = [
         description:
             "FactSet undertook a major migration from a monolithic code repository in Perforce to microservices in GitHub. Mid-migration, they adopted Sourcegraph to enable efficient code search. Here's what happened.",
         type: 'Case study',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+            alt: 'Factset case study thumbnail',
+        },
         href: '/case-studies/factset-migrates-from-perforce-to-github',
-        alt: 'Factset case study thumbnail',
     },
     {
         title: 'How one engineering manager uses the Sourcegraph extension for VS Code',
         description:
             'Here’s how one engineering manager uses the Sourcegraph VS Code extension to browse millions of open source repositories, without leaving his IDE, to find reusable code and more.',
         type: 'Blog post',
-        image: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
+        img: {
+            src: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
+            alt: 'Ways to use Sourcegraph Extension for VSCode blog thumbnail',
+        },
         href: '/blog/ways-to-use-sourcegraph-extension-for-vs-code',
-        alt: 'Ways to use Sourcegraph Extension for VSCode blog thumbnail',
     },
 ]
 
