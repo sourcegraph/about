@@ -282,6 +282,9 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                         >
                             Request a demo
                         </Link>
+                        <Link to="/use-cases" className="d-flex justify-content-center mt-4 font-weight-bold">
+                            Explore other use cases
+                        </Link>
                     </div>
                 </div>
             </ContentSection>
