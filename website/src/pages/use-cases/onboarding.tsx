@@ -10,9 +10,8 @@ import { Blockquote, BlockquoteWithLogoBottom } from '../../components/Blockquot
 import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
-import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
+import { CustomerLogos } from '../../components/CustomerLogos'
 import { buttonStyle, buttonLocation } from '../../tracking'
-
 import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
@@ -277,9 +276,9 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray-3">
+        <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
+                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column px-lg-7 text-center">
                         <h1 className="font-weight-bold">Give your team the onboarding experience they deserve.</h1>
                         <p>
@@ -304,7 +303,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="py-6" />
+
+            <div className="mt-6">
+                <CustomerLogos />
+            </div>
         </div>
 
         <ContentSection className="py-lg-7 py-5">

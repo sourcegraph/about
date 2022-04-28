@@ -66,14 +66,6 @@ export default class Header extends React.Component<HeaderProps, any> {
     public render(): JSX.Element | null {
         return (
             <>
-                {this.props.isHome && (
-                    <div className="d-flex flex-lg-row flex-column align-items-center justify-content-center bg-vivid-violet text-white font-weight-bold p-2">
-                        Track what really matters to you and your team.
-                        <Link to="/code-insights" className="ml-2 rounded btn btn-sm btn-light">
-                            🎉 <span className="mx-2">Show me Code Insights!</span>
-                        </Link>
-                    </div>
-                )}
                 <nav className={`header navbar py-3 ${this.props.className || 'navbar-light'}`}>
                     <div className="container-xl">
                         <Navbar.Brand className="header__logo" href="/" onContextMenu={this.handleRightClick}>
@@ -127,7 +119,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                 <Nav className="right-nav justify-content-lg-end">
                                     {!this.props.hideGetStartedButton && (
                                         <Nav.Link
-                                            className="btn btn-simple px-2 py-2"
+                                            className="btn btn-simple px-2 py-2 font-weight-bolder"
                                             href="https://sourcegraph.com/search"
                                             title="Search code"
                                         >
@@ -136,7 +128,7 @@ export default class Header extends React.Component<HeaderProps, any> {
                                     )}
 
                                     <Nav.Link
-                                        className="btn btn-outline-primary ml-3 px-5 py-2"
+                                        className="btn btn-outline-primary ml-3 px-5 py-2 font-weight-bolder"
                                         data-button-style={buttonStyle.outline}
                                         data-button-location={buttonLocation.nav}
                                         data-button-type="cta"
@@ -148,7 +140,7 @@ export default class Header extends React.Component<HeaderProps, any> {
 
                                     {!this.props.hideGetStartedButton && (
                                         <Nav.Link
-                                            className="btn btn-primary ml-3 px-5 py-2"
+                                            className="btn btn-primary ml-3 px-5 py-2 font-weight-bolder"
                                             data-button-style={buttonStyle.primary}
                                             data-button-location={buttonLocation.nav}
                                             data-button-type="cta"
