@@ -267,7 +267,7 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
         <div className="bg-light-gray-3">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600">
+                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>
                             Make it easier to discover trustworthy code for reuse so your teams can spend more time
