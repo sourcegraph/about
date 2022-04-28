@@ -24,6 +24,7 @@ interface LayoutProps {
 
     className?: string
     hideFooter?: boolean
+    hideHeader?: boolean
     hideGetStartedButton?: boolean
 }
 
@@ -69,18 +70,20 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 {meta.canonical ? <link rel="canonical" href={meta.canonical} /> : ''}
             </Head>
 
-            <div className={props.heroAndHeaderClassName}>
-                <Header
-                    isHome={isHome}
-                    isBlog={isBlog}
-                    isProductPage={isProductPage}
-                    minimal={props.minimal}
-                    className={props.className}
-                    hideGetStartedButton={props.hideGetStartedButton}
-                />
+            {!props.hideHeader && (
+                <div className={props.heroAndHeaderClassName}>
+                    <Header
+                        isHome={isHome}
+                        isBlog={isBlog}
+                        isProductPage={isProductPage}
+                        minimal={props.minimal}
+                        className={props.className}
+                        hideGetStartedButton={props.hideGetStartedButton}
+                    />
 
-                {props.hero}
-            </div>
+                    {props.hero}
+                </div>
+            )}
 
             <section className="flex-1">{props.children}</section>
 
