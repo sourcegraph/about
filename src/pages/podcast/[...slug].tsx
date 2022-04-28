@@ -14,7 +14,7 @@ export interface PageProps {
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
-const BlogPage: NextPage<PageProps> = ({ post, content }) => {
+const PodcastPage: NextPage<PageProps> = ({ post, content }) => {
     const title = post.frontmatter.title
     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
     const image = post.frontmatter.socialImage ?? 'https://about.sourcegraph.com/sourcegraph-mark.png'
@@ -30,14 +30,14 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
         canonical,
     }
 
-    const blogInfo = BLOG_TYPE_TO_INFO[post.fields?.blogType ?? 'blog']
+    const podcastInfo = BLOG_TYPE_TO_INFO[post.fields?.blogType ?? 'podcast']
     const PostTemplate = POST_TYPE_TO_COMPONENT[postType(post)]
 
     return (
         <Layout meta={meta}>
             <article>
                 <div className="container-lg">
-                    <BlogHeader {...blogInfo} />
+                    <BlogHeader {...podcastInfo} />
                 </div>
                 <div className="post-template mt-5 bg-white">
                     <div className="container-lg">
@@ -57,14 +57,14 @@ const BlogPage: NextPage<PageProps> = ({ post, content }) => {
     )
 }
 
-export default BlogPage
+export default PodcastPage
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const allSlugs = await getAllSlugs()
     if (!allSlugs) {
         return { paths: [{ params: { slug: ['404'] } }], fallback: false }
     }
-    const slugs = Object.keys(allSlugs.records.blogposts.recordSlugs)
+    const slugs = Object.keys(allSlugs.records.podcast.recordSlugs)
     const paths = slugs.map(slug => ({ params: { slug: slug.split('/') } }))
 
     return {
