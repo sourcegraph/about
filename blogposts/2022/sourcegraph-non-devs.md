@@ -107,7 +107,7 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 **Follow-up situation:** What anchor text do we generally use for the email link, or do we display the direct email? [Search](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+mailto:feedback%40sourcegraph.com&patternType=literal):
 
 <p align="center">
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg0?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 180%; height: 300px;"></iframe>
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg0?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 200%; height: 300px;"></iframe>
 </p>
 
 ### Should we use “prototype” or “experimental” for early-stage product features?
