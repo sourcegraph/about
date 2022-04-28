@@ -71,12 +71,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                         </figcaption>
                     </blockquote>
 
-                    <img
-                        src="/external-logos/cloudflare-color-logo.svg"
-                        alt="Cloudflare logo"
-                        width={130}
-                        className="mt-4"
-                    />
+                    <img src="/external-logos/cloudflare-logo.svg" alt="Cloudflare logo" width={130} className="mt-4" />
 
                     <Link
                         to="/case-studies/cloudflare-accelerates-debugging-and-improves-security"

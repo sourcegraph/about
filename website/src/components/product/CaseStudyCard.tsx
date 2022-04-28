@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import classNames from 'classnames'
 
 interface CaseStudy {
     name: string
     logo: string
     title: string
+    altTitle?: string
     url: string
+    linkText?: string
     external?: boolean
 }
 
@@ -24,7 +27,7 @@ export const CASESTUDIES: CaseStudy[] = [
     },
     {
         name: 'Cloudflare',
-        logo: '/external-logos/cloudflare-color-logo.svg',
+        logo: '/external-logos/cloudflare-logo.svg',
         title: 'Cloudflare accelerates debugging and improves security.',
         url: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
     },
@@ -97,18 +100,27 @@ export const CASESTUDIES: CaseStudy[] = [
     },
 ]
 
-export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy }> = ({ study }) => (
+export const CaseStudyCard: React.FunctionComponent<{ study: CaseStudy; bwLogo?: boolean }> = ({
+    study: { logo, altTitle, title, external, url, linkText = 'Learn more' },
+    bwLogo,
+}) => (
     <div className="card-body" style={{ minHeight: '13rem' }}>
-        <img className="max-w-200 mb-4" height="60" src={study.logo} alt="Card image cap" />
+        <img
+            className={classNames({ 'max-w-200 mb-4': true, 'brightness-0': bwLogo })}
+            height="60"
+            src={logo}
+            alt="Card image cap"
+        />
+        {altTitle && <h5 className="font-weight-bold">{altTitle}</h5>}
         <p className="card-text">
-            {study.title}{' '}
-            <span>
-                {study.external ? (
-                    <a href={study.url} className="card-link" target="_blank" rel="nofollow noopener">
-                        Learn more.
+            {title}{' '}
+            <span className="text-nowrap">
+                {external ? (
+                    <a href={url} target="_blank" rel="nofollow noopener">
+                        {linkText}.
                     </a>
                 ) : (
-                    <Link to={study.url}>Learn more.</Link>
+                    <Link to={url}>{linkText}.</Link>
                 )}
             </span>
         </p>
