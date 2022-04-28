@@ -10,7 +10,7 @@ import { BlogListItem } from '../../components/BlogListItem'
 import { QuoteCarousel } from '../../components/QuoteCarousel'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
-import { CustomerLogosSectionAnimated } from '../../components/product/CustomerLogosSectionAnimated'
+import { CustomerLogos } from '../../components/CustomerLogos'
 import { buttonStyle, buttonLocation } from '../../tracking'
 
 import styles from './useCases.module.scss'
@@ -101,7 +101,7 @@ const quoteCarouselItems = [
         logoImage: '/external-logos/quantcast-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/quantcast-large-scale-refactoring',
-        logoAlt: 'Quantcast',
+        logoAlt: 'Quantcast Logo',
     },
     {
         header: 'Nutanix proves the Log4j vulnerability no longer affects its codebase',
@@ -110,7 +110,7 @@ const quoteCarouselItems = [
         logoImage: '/external-logos/nutanix-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
-        logoAlt: 'Nutanix',
+        logoAlt: 'Nutanix Logo',
     },
 ]
 
@@ -210,7 +210,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                             Understand the code's functionality to verify the issue.
                         </p>
                     </div>
-                    <div className="mx-lg-5 text-center mb-4">
+                    <div className="col-lg-5 px-lg-6 text-center mb-4">
                         <ClockTimeThreeOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Plan your remediation</h4>
                         <p>
@@ -255,7 +255,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                                 sustainable.
                             </li>
                             <li className="mt-1">
-                                Company leaders struggle for visibility into incident response in progress and to
+                                Company leaders struggle to gain visibility into in-progress incident responses and
                                 communicate timelines to stakeholders.
                             </li>
                         </ul>
@@ -302,11 +302,11 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray-3">
+        <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column">
-                        <h1 className="font-weight-bold text-left text-lg-center">Get started with Sourcegraph</h1>
+                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
+                    <div className="mb-5 d-flex flex-column px-lg-7 text-center">
+                        <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>
                             Respond to incidents with confidence and speed, and remediate issues at their root to ensure
                             they don't reoccur.
@@ -329,7 +329,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="py-6" />
+
+            <div className="mt-6">
+                <CustomerLogos />
+            </div>
         </div>
 
         <ContentSection className="py-lg-7 py-5">
