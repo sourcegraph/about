@@ -291,7 +291,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
         portalId: '2762526',
         formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
         region: 'na1',
-        targetId: 'topForm',
+        targetId: '.topForm',
         formInstanceId: '1',
         chiliPiper: true,
     })
@@ -299,7 +299,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
         portalId: '2762526',
         formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
         region: 'na1',
-        targetId: 'bottomForm',
+        targetId: '.bottomForm',
         formInstanceId: '2',
         chiliPiper: true,
     })
