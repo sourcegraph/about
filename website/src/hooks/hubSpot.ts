@@ -107,7 +107,7 @@ const loadHubSpotScript = (): HTMLScriptElement | Element => {
     return script
 }
 
-const loadChiliPiperScript = (callback: () => void): void => {
+const loadChiliPiperScript = (): HTMLScriptElement | Element => {
     const chiliPiperScript = '//js.chilipiper.com/marketing.js'
     const script = document.querySelector(`script[src="${chiliPiperScript}"]`)
 
@@ -115,8 +115,10 @@ const loadChiliPiperScript = (callback: () => void): void => {
         const scriptElement = document.createElement('script')
         scriptElement.src = chiliPiperScript
         document.head.append(scriptElement)
-        return callback()
+        return scriptElement
     }
+
+    return script
 }
 
 function createHubSpotForm({
@@ -170,6 +172,9 @@ function createHubSpotForm({
                         firstSourceURLInput.value = firstSourceURL || ''
                     }
                 }
+                if (onFormReady) {
+                    onFormReady(form[0])
+                }
             },
         })
     })
@@ -195,24 +200,27 @@ export const useHubSpot = ({
         })
 
         if (chiliPiper) {
-            loadChiliPiperScript(() => {
-                const cpTenantDomain = 'sourcegraph'
-                const cpRouterName = 'contact-sales'
-                window.addEventListener('message', event => {
-                    const data = event.data as MessageEventData
-                    if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
-                        const lead = data.data.reduce(
-                            (object, item) => Object.assign(object, { [item.name]: item.value }),
-                            {}
-                        )
-                        const chilipiper = window.ChiliPiper
-                        chilipiper?.submit(cpTenantDomain, cpRouterName, {
-                            map: true,
-                            lead,
-                        })
-                    }
-                })
-            })
+            const script = loadChiliPiperScript()
+            if (script) {
+                ;() => {
+                    const cpTenantDomain = 'sourcegraph'
+                    const cpRouterName = 'contact-sales'
+                    window.addEventListener('message', event => {
+                        const data = event.data as MessageEventData
+                        if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
+                            const lead = data.data.reduce(
+                                (object, item) => Object.assign(object, { [item.name]: item.value }),
+                                {}
+                            )
+                            const chilipiper = window.ChiliPiper
+                            chilipiper?.submit(cpTenantDomain, cpRouterName, {
+                                map: true,
+                                lead,
+                            })
+                        }
+                    })
+                }
+            }
         }
 
         return () => {
