@@ -292,6 +292,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
         formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
         region: 'na1',
         targetId: 'topForm',
+        formInstanceId: '1',
         chiliPiper: true,
     })
     useHubSpot({
@@ -299,6 +300,7 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
         formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
         region: 'na1',
         targetId: 'bottomForm',
+        formInstanceId: '2',
         chiliPiper: true,
     })
 

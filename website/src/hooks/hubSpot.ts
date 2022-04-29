@@ -10,6 +10,7 @@ declare global {
                     portalId,
                     formId,
                     target,
+                    formInstanceId,
                     onFormSubmit,
                     onFormSubmitted,
                     onFormReady,
@@ -58,6 +59,7 @@ interface HubSpotProps {
     portalId: string
     formId: string
     target: string
+    formInstanceId?: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
     onFormReady?: ($form: HubSpotForm) => void
     onFormSubmitted?: () => void
@@ -67,6 +69,7 @@ interface HubSpotForm {
     region?: string
     [index: number]: HTMLFormElement
     portalId: string
+    formInstanceId?: string
     formId: string
     targetId: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
@@ -79,6 +82,7 @@ interface HookProps {
     portalId: string
     formId: string
     targetId: string
+    formInstanceId?: string
     chiliPiper: boolean
     onFormSubmitted?: () => void
 }
@@ -120,6 +124,7 @@ function createHubSpotForm({
     portalId,
     formId,
     targetId,
+    formInstanceId,
     onFormSubmit,
     onFormSubmitted,
     onFormReady,
@@ -136,6 +141,7 @@ function createHubSpotForm({
             region: region || 'na1',
             portalId,
             formId,
+            formInstanceId,
             target: `#${targetId}`,
             onFormSubmit,
             onFormSubmitted,
@@ -172,12 +178,21 @@ function createHubSpotForm({
     })
 }
 
-export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onFormSubmitted }: HookProps): void => {
+export const useHubSpot = ({
+    region,
+    portalId,
+    formId,
+    targetId,
+    chiliPiper,
+    formInstanceId,
+    onFormSubmitted,
+}: HookProps): void => {
     useEffect(() => {
         createHubSpotForm({
             region,
             portalId,
             formId,
+            formInstanceId,
             targetId,
             onFormSubmitted,
         })
@@ -207,5 +222,5 @@ export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onF
             const script = getHubSpotScript()
             script?.remove()
         }
-    }, [region, portalId, formId, targetId, chiliPiper, onFormSubmitted])
+    }, [region, portalId, formId, targetId, chiliPiper, formInstanceId, onFormSubmitted])
 }

@@ -10,12 +10,14 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
         portalId: '2762526',
         formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
         targetId: 'topForm',
+        formInstanceId: '1',
         chiliPiper: true,
     })
     useHubSpot({
         portalId: '2762526',
         formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
         targetId: 'bottomForm',
+        formInstanceId: '2',
         chiliPiper: true,
     })
 

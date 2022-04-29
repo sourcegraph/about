@@ -10,12 +10,14 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
         portalId: '2762526',
         formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
         targetId: 'topForm',
+        formInstanceId: '1',
         chiliPiper: true,
     })
     useHubSpot({
         portalId: '2762526',
         formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
         targetId: 'bottomForm',
+        formInstanceId: '2',
         chiliPiper: true,
     })
 
