@@ -6,12 +6,12 @@ import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
 
 const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
-    // prettier-ignore
-    ['topForm', 'bottomForm'].forEach(id => {
+    ;['topForm', 'bottomForm'].forEach((id, index) => {
         useHubSpot({
             portalId: '2762526',
             formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
             targetId: id,
+            formInstanceId: `${index + 1}`,
             chiliPiper: true,
         })
     })
