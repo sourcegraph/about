@@ -142,7 +142,7 @@ function createHubSpotForm({
             portalId,
             formId,
             formInstanceId,
-            target: `#${targetId}`,
+            target: `.${targetId}`,
             onFormSubmit,
             onFormSubmitted,
             onFormReady: (form: HubSpotForm) => {
