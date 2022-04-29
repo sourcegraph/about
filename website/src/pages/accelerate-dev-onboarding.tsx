@@ -6,14 +6,17 @@ import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
 
 const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
-    ;['topForm', 'bottomForm'].forEach((id, index) => {
-        useHubSpot({
-            portalId: '2762526',
-            formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
-            targetId: id,
-            formInstanceId: `${index + 1}`,
-            chiliPiper: true,
-        })
+    useHubSpot({
+        portalId: '2762526',
+        formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
+        targetId: 'topForm',
+        chiliPiper: true,
+    })
+    useHubSpot({
+        portalId: '2762526',
+        formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
+        targetId: 'bottomForm',
+        chiliPiper: true,
     })
 
     return (
