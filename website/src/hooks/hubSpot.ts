@@ -222,5 +222,5 @@ export const useHubSpot = ({
             const script = getHubSpotScript()
             script?.remove()
         }
-    }, [region, portalId, formId, targetId, chiliPiper, formInstanceId, onFormSubmitted])
+    }, [])
 }

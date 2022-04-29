@@ -6,19 +6,14 @@ import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
 
 const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
-        targetId: 'topForm',
-        formInstanceId: '1',
-        chiliPiper: true,
-    })
-    useHubSpot({
-        portalId: '2762526',
-        formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
-        targetId: 'bottomForm',
-        formInstanceId: '2',
-        chiliPiper: true,
+    ;['topForm', 'bottomForm'].forEach((id, index) => {
+        useHubSpot({
+            portalId: '2762526',
+            formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
+            targetId: id,
+            formInstanceId: `${index + 1}`,
+            chiliPiper: true,
+        })
     })
 
     return (
