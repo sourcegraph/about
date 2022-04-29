@@ -170,9 +170,6 @@ function createHubSpotForm({
                         firstSourceURLInput.value = firstSourceURL || ''
                     }
                 }
-                if (onFormReady) {
-                    onFormReady(form[0])
-                }
             },
         })
     })
