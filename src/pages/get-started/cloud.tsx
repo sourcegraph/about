@@ -45,11 +45,11 @@ export const CloudPage: FunctionComponent = () => {
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
 
                             <BestForTitle />
-                            <p>Individual developers and small teams (Beta)</p>
+                            <p>Individual developers</p>
 
                             <p>
-                                Search all your repositories, team's repositories, and the open source universe without
-                                having to install or manage a deployment.
+                                Search all your repositories and the open source universe without having to install or
+                                manage a deployment.
                             </p>
                         </div>
                     </div>
