@@ -55,15 +55,16 @@ export default class Layout extends React.PureComponent<LayoutProps> {
                     <meta name="twitter:card" content="summary" />
                     <meta name="twitter:description" content={metaProps.description} />
 
+                    <meta property="og:url" content="https://about.sourcegraph.com" />
                     <meta property="og:type" content="website" />
                     <meta property="og:title" content={metaProps.title} />
                     <meta property="og:image" content={metaProps.image} />
+                    <meta property="og:image:secure_url" content={metaProps.image} />
                     <meta property="og:description" content={metaProps.description} />
 
                     <meta name="description" content={metaProps.externalDescription || metaProps.description} />
 
                     <link rel="icon" type="image/png" href={metaProps.icon} />
-                    <link rel="icon" type="image/png" href={metaProps.image} />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
