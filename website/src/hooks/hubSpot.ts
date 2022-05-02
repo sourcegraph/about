@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 
 declare global {
     interface Window {
-        ChiliPiper?: IChiliPiper
         hbspt?: {
             forms: {
                 create: ({
@@ -18,40 +17,6 @@ declare global {
             }
         }
     }
-}
-
-export interface MessageEventData {
-    type: string
-    eventName: string
-    data: { name: string; value: string }[]
-}
-
-interface IChiliPiper {
-    submit: (
-        domain: string,
-        router: string,
-        options?: {
-            lead: { [key: string]: string | number }
-            handleSubmit?: boolean
-            formId?: string
-            debug?: boolean
-            map?: boolean
-            domain?: string
-            router?: string
-            title?: string
-            titleStyle?: string
-            onSuccess?: () => void
-            onError?: () => void
-            onClose?: () => void
-            onRouted?: () => void
-            closeOnOutside?: boolean
-            dynamicRedirectLink?: string
-            mobileRedirectLink?: string
-            injectRootCss?: boolean
-            locale?: string
-            webHook?: string
-        }
-    ) => void
 }
 
 interface HubSpotProps {
@@ -83,7 +48,6 @@ interface HookProps {
     formId: string
     targetId: string
     formInstanceId?: string
-    chiliPiper: boolean
     onFormSubmitted?: () => void
 }
 
@@ -100,20 +64,6 @@ const loadHubSpotScript = (): HTMLScriptElement | Element => {
     if (!script) {
         const scriptElement = document.createElement('script')
         scriptElement.src = hubSpotScript
-        document.head.append(scriptElement)
-        return scriptElement
-    }
-
-    return script
-}
-
-const loadChiliPiperScript = (): HTMLScriptElement | Element => {
-    const chiliPiperScript = '//js.chilipiper.com/marketing.js'
-    const script = document.querySelector(`script[src="${chiliPiperScript}"]`)
-
-    if (!script) {
-        const scriptElement = document.createElement('script')
-        scriptElement.src = chiliPiperScript
         document.head.append(scriptElement)
         return scriptElement
     }
@@ -185,7 +135,6 @@ export const useHubSpot = ({
     portalId,
     formId,
     targetId,
-    chiliPiper,
     formInstanceId,
     onFormSubmitted,
 }: HookProps): void => {
@@ -199,33 +148,9 @@ export const useHubSpot = ({
             onFormSubmitted,
         })
 
-        if (chiliPiper) {
-            const script = loadChiliPiperScript()
-            if (script) {
-                ;() => {
-                    const cpTenantDomain = 'sourcegraph'
-                    const cpRouterName = 'contact-sales'
-                    window.addEventListener('message', event => {
-                        const data = event.data as MessageEventData
-                        if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
-                            const lead = data.data.reduce(
-                                (object, item) => Object.assign(object, { [item.name]: item.value }),
-                                {}
-                            )
-                            const chilipiper = window.ChiliPiper
-                            chilipiper?.submit(cpTenantDomain, cpRouterName, {
-                                map: true,
-                                lead,
-                            })
-                        }
-                    })
-                }
-            }
-        }
-
         return () => {
             const script = getHubSpotScript()
             script?.remove()
         }
-    }, [])
+    }, [region, portalId, formId, targetId, formInstanceId, onFormSubmitted])
 }

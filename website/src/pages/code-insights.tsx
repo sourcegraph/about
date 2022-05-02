@@ -16,6 +16,7 @@ import Layout from '../components/Layout'
 import { TabCarousel } from '../components/TabCarousel'
 import { TemplateCodeBlock } from '../components/TemplateCodeBlock'
 import { useHubSpot } from '../hooks/hubSpot'
+import { useChiliPiper } from 'hooks/chiliPiper'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import CustomCarousel from '../components/CustomCarousel'
@@ -294,9 +295,9 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
             region: 'na1',
             targetId: id,
             formInstanceId: `${index + 1}`,
-            chiliPiper: true,
         })
     })
+    useChiliPiper()
 
     return (
         <Layout

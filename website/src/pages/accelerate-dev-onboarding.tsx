@@ -4,6 +4,7 @@ import { Link, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
+import { useChiliPiper } from 'hooks/chiliPiper'
 
 const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
     ;['topForm', 'bottomForm'].forEach((id, index) => {
@@ -12,9 +13,9 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
             formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
             targetId: id,
             formInstanceId: `${index + 1}`,
-            chiliPiper: true,
         })
     })
+    useChiliPiper()
 
     return (
         <Layout
