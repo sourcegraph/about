@@ -67,6 +67,7 @@ export {
     PressReleasePost,
     ReleasePost,
     BLOG_TYPE_TO_INFO,
+    PodcastAudioPlayer,
 } from './Blog'
 
 // Layouts

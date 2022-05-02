@@ -5,6 +5,7 @@ import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { BlogListItem } from '../components/Blog/BlogListItem'
 import { BlogPost } from '../components/Blog/BlogPost'
 import { LinkPost } from '../components/Blog/LinkPost'
+import { PodcastListItem } from '../components/Blog/PodcastListItem'
 import { PodcastPost } from '../components/Blog/PodcastPost'
 import { PressReleasePost } from '../components/Blog/PressReleasePost'
 import { ReleasePost } from '../components/Blog/ReleasePost'
@@ -19,6 +20,7 @@ export enum PostType {
 
 export enum PostIndexType {
     BlogPostIndex,
+    PodcastIndex,
 }
 
 export interface Post {
@@ -55,6 +57,7 @@ export interface FrontMatter {
     socialImage?: string
     layout?: string
     style?: string
+    audioSrc?: string
 }
 
 export interface PostComponentProps {
@@ -79,7 +82,7 @@ export interface PostIndexComponentProps {
 
 export interface PostIndexItem {
     frontmatter: FrontMatter
-    excerpt: string
+    excerpt: string | MDXRemoteSerializeResult
     slugPath: string
     className?: string
     headerClassName?: string
@@ -99,6 +102,7 @@ export const POST_TYPE_TO_COMPONENT: Record<PostType, FunctionComponent<PostComp
 
 export const POST_INDEX_TYPE_TO_COMPONENT: Record<PostIndexType, FunctionComponent<PostIndexItem>> = {
     [PostIndexType.BlogPostIndex]: BlogListItem,
+    [PostIndexType.PodcastIndex]: PodcastListItem,
 }
 
 export const postType = (post: Post): PostType =>
@@ -112,7 +116,8 @@ export const postType = (post: Post): PostType =>
         ? PostType.LinkPost
         : PostType.BlogPost
 
-export const postIndexType = (): PostIndexType => PostIndexType.BlogPostIndex
+export const postIndexType = (frontmatter: FrontMatter): PostIndexType =>
+    frontmatter.tags?.includes('podcast') ? PostIndexType.PodcastIndex : PostIndexType.BlogPostIndex
 
 export enum BlogType {
     PressRelease = 'press',

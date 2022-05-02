@@ -7,7 +7,7 @@ import { PostIndexItem } from '@interfaces/posts'
 import { formatDate } from '@util'
 
 /**
- * A index blog post item.
+ * An index blog post item.
  */
 export const BlogListItem: FunctionComponent<PostIndexItem> = ({
     frontmatter,
@@ -17,23 +17,19 @@ export const BlogListItem: FunctionComponent<PostIndexItem> = ({
     headerClassName = '',
     titleClassName = '',
     titleLinkClassName = '',
-    renderTitleAsLink = false,
 }) => (
     <div className={`blog-post ${className}`}>
         <header className={headerClassName}>
             <h1 className={titleClassName}>
-                {renderTitleAsLink === true && slugPath ? (
-                    <Link href={`/blog/${slugPath}`} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className={`d-block ${titleLinkClassName}`}>{frontmatter.title}</a>
-                    </Link>
-                ) : (
-                    frontmatter.title
-                )}
+                <Link href={`/blog/${slugPath}`} passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a className={`d-block ${titleLinkClassName}`}>{frontmatter.title}</a>
+                </Link>
             </h1>
             {frontmatter.author && frontmatter.publishDate && (
                 <p className="blog-post__byline mb-0">
-                    {frontmatter.author} on {formatDate(frontmatter.publishDate)}
+                    {frontmatter.author} on{' '}
+                    <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
                 </p>
             )}
         </header>
