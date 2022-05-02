@@ -25,7 +25,7 @@ const CerosMicroContent: FunctionComponent<PageProps> = props => (
             >
                 <iframe
                     allowFullScreen
-                    src="http://view.ceros.com/sourcegraph/test-microcontent?mobileHeightOverride=2000"
+                    src="https://view.ceros.com/sourcegraph/test-microcontent?mobileHeightOverride=2000"
                     style={{
                         position: 'absolute',
                         top: '0',

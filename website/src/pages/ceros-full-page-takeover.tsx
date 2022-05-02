@@ -25,7 +25,7 @@ const CerosFullPageTakeover: FunctionComponent<PageProps> = props => (
             >
                 <iframe
                     allowFullScreen
-                    src="http://view.ceros.com/sourcegraph/full-page?heightOverride=8500&mobileHeightOverride=15746"
+                    src="https://view.ceros.com/sourcegraph/full-page?heightOverride=8500&mobileHeightOverride=15746"
                     style={{
                         position: 'absolute',
                         top: '0',
