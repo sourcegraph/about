@@ -68,7 +68,7 @@ const items = [
                     <p>
                         Visualize fixes in progress and track their deployment. With{' '}
                         <Link to="/code-insights">Code Insights</Link>, get visibility into remediation efforts and
-                        share progress with team leaders and and all of your customers.
+                        share progress with team leaders and all of your customers.
                     </p>
                 }
             />
