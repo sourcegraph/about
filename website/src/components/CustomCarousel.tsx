@@ -45,13 +45,13 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between h-xl-450 h-lg-250 h-md-250 h-sm-auto'
+                              'justify-content-between h-xl-450 h-lg-250 h-md-250 h-sm-auto h-auto'
                           )
                         : autoAdvance
                         ? classNames(
                               carouselMainStyles,
                               currentCarousel.currentItem?.backgroundClass,
-                              'justify-content-between h-xl-450 h-lg-auto h-md-auto h-sm-auto'
+                              'justify-content-between h-xl-450 h-lg-auto h-md-auto h-sm-auto h-auto'
                           )
                         : classNames(
                               carouselMainStyles,
@@ -61,7 +61,7 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 }
             >
                 {props.showHeadlinesOnMobile && (
-                    <ul className="d-block d-lg-none mb-0 h-md-100 h-sm-200">
+                    <ul className="d-block d-lg-none mb-0 h-md-100 h-sm-200 h-200">
                         {carouselItems.map((item, index) => (
                             <li
                                 className={
@@ -119,9 +119,9 @@ const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <div
                     className={
                         autoAdvance && props.smallPanel
-                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-300 h-md-300 h-sm-250')
+                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-300 h-md-300 h-sm-250 h-250')
                             : autoAdvance
-                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-500 h-md-500 h-sm-450')
+                            ? classNames(carouselRightPanelStyles, 'h-xl-500 h-lg-500 h-md-500 h-sm-500 h-500')
                             : classNames(carouselRightPanelStyles)
                     }
                 >

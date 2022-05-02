@@ -205,11 +205,9 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
             </section>
         }
     >
-        <div className="bg-white">
-            <ContentSection className="my-7">
-                <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
-            </ContentSection>
-        </div>
+        <ContentSection className="my-7">
+            <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
+        </ContentSection>
 
         <div className="bg-gradient-venus-radial">
             <ContentSection className="my-7">
