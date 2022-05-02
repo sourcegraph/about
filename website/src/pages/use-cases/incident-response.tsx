@@ -147,23 +147,19 @@ const threeUpTextItems = [
         icon: <CrosshairsGpsIcon className="mb-4 text-blurple" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Assess incidents quickly</h4>,
         description:
-            'Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code\'s functionality to verify the issue.',
+            "Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code's functionality to verify the issue.",
     },
     {
         icon: <ClockTimeThreeOutlineIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Plan your remediation</h4>
-        ),
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Plan your remediation</h4>,
         description:
             'Reduce time to resolution by supplying response teams with actionable details, like links to all affected code.',
     },
     {
         icon: <WebIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Execute your plan globally</h4>
-        ),
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Execute your plan globally</h4>,
         description:
-            'Fix the root cause and confirm the same issue doesn\'t reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.',
+            "Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.",
     },
 ]
 
@@ -221,7 +217,10 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         }
     >
         <ContentSection className="my-7">
-            <ThreeUpText title="Identify the root cause of an incident and fix it everywhere, fast" items={threeUpTextItems} />
+            <ThreeUpText
+                title="Identify the root cause of an incident and fix it everywhere, fast"
+                items={threeUpTextItems}
+            />
         </ContentSection>
 
         <div className="bg-gradient-venus-radial">
