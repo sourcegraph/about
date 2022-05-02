@@ -11,7 +11,7 @@ const CerosMicroContent: FunctionComponent<PageProps> = props => (
                     position: 'relative',
                     width: 'auto',
                     padding: '0 0 56.25%',
-                    height: '0',
+                    height: '100vh',
                     top: '0',
                     left: '0',
                     bottom: '0',
