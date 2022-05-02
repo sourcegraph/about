@@ -48,7 +48,7 @@ const News: FunctionComponent = () => (
                             {article.articles.map(a => (
                                 <article className="row border-bottom d-flex py-3" key={a.newsLink}>
                                     <div className="col-sm-4 col-lg-2 text-center d-flex align-items-center mb-2 mb-md-0">
-                                        <a href={a.newsLink} target="_blank" rel="nofollow noopener noreferrer">
+                                        <a href={a.newsLink} target="_blank" rel="nofollow noreferrer">
                                             <img
                                                 className="max-w-100 max-w-sm-150 w-100"
                                                 src={a.newsImage}
@@ -70,7 +70,7 @@ const News: FunctionComponent = () => (
                                                 className="d-block"
                                                 href={a.newsLink}
                                                 target="_blank"
-                                                rel="nofollow noopener noreferrer"
+                                                rel="nofollow noreferrer"
                                             >
                                                 {a.newsTitle}
                                             </a>

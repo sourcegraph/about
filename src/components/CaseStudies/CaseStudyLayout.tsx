@@ -59,7 +59,7 @@ export const CaseStudyLayout: FunctionComponent<Props> = ({
                 )}
                 {quote && !heroImage && <MediaQuote quote={quote.text} author={quote.author} image={quote.image} />}
                 {pdf && (
-                    <a href={pdf} className="btn btn-primary mt-3" rel="nofollow noreferrer noopener" target="_blank">
+                    <a href={pdf} className="btn btn-primary mt-3" rel="nofollow noreferrer" target="_blank">
                         <i className="fa fa-file-pdf pr-2" />
                         Download PDF
                     </a>

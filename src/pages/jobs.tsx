@@ -70,7 +70,7 @@ const CareersPage: FunctionComponent = () => {
                         href="https://grnh.se/c685479c4us"
                         title="Explore our jobs"
                         target="_blank"
-                        rel="nofollow noopener noreferrer"
+                        rel="nofollow noreferrer"
                     >
                         Explore our jobs
                         <ArrowRightIcon className="ml-3" />
@@ -104,9 +104,9 @@ const CareersPage: FunctionComponent = () => {
                                 Learn more in{' '}
                                 <a
                                     target="_blank"
+                                    rel="noreferrer"
                                     className="handbook-benefits-link"
                                     href="https://handbook.sourcegraph.com/benefits-pay-perks/benefits-perks"
-                                    rel="nofollow noopener noreferrer"
                                 >
                                     our handbook
                                 </a>
@@ -350,7 +350,7 @@ const CareersPage: FunctionComponent = () => {
                             href="https://grnh.se/c685479c4us"
                             title="Explore our jobs"
                             target="_blank"
-                            rel="nofollow noopener noreferrer"
+                            rel="nofollow noreferrer"
                         >
                             Explore our jobs
                             <ArrowRightIcon className="ml-3" />

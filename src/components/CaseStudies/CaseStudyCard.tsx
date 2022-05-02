@@ -114,7 +114,7 @@ export const CaseStudyCard: FunctionComponent<Props> = props => (
                 {props.title}{' '}
                 <span>
                     {props.url.includes('http') ? (
-                        <a href={props.url} className="card-link" target="_blank" rel="nofollow noopener noreferrer">
+                        <a href={props.url} className="card-link" target="_blank" rel="nofollow noreferrer">
                             Learn more.
                         </a>
                     ) : (

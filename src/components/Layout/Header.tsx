@@ -175,11 +175,7 @@ const Header: FunctionComponent<Props> = props => {
                                             <Link href="/blog">Blog</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <a
-                                                href="https://learn.sourcegraph.com/"
-                                                target="_blank"
-                                                rel="noopener nofollow noreferrer"
-                                            >
+                                            <a href="https://learn.sourcegraph.com/" target="_blank" rel="noreferrer">
                                                 Learn
                                             </a>
                                         </li>
@@ -235,7 +231,8 @@ const Header: FunctionComponent<Props> = props => {
                                     <a
                                         className="nav-link"
                                         href="https://docs.sourcegraph.com"
-                                        target="_blank noreferrer noopener nofollow"
+                                        target="_blank"
+                                        rel="noreferrer"
                                     >
                                         Docs
                                     </a>

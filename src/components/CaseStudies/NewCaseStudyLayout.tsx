@@ -51,12 +51,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({
                 >
                     <h1 className="pt-5 pb-6 display-2 font-weight-bold max-w-600 mx-auto">{title}</h1>
                     {pdf && (
-                        <a
-                            href={pdf}
-                            className="btn btn-primary mt-3"
-                            rel="nofollow noreferrer noopener"
-                            target="_blank"
-                        >
+                        <a href={pdf} className="btn btn-primary mt-3" rel="nofollow noreferrer" target="_blank">
                             <i className="fa fa-file-pdf pr-2" />
                             Download PDF
                         </a>

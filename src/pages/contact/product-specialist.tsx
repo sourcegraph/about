@@ -29,7 +29,7 @@ const Contact: FunctionComponent = () => {
                         <div className="col-md-6">
                             <h1 className="display-3 font-weight-bold">Talk to a product specialist</h1>
                             <h3 className="font-weight-light">Let us know how we can help. We'll follow up soon.</h3>
-                            <div className="form mt-5">
+                            <div className="mt-5">
                                 <div id="hubspotContactForm" className="d-flex justify-center" />
                             </div>
                         </div>

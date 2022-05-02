@@ -8,11 +8,7 @@ interface Props {
 
 export const SubmitEmailForm: FunctionComponent<Props> = ({ formAction, buttonText, className = '' }) => (
     <div>
-        <form
-            className={`form form-inline input-group mb-2 d-inline-flex w-auto ${className}`}
-            action={formAction}
-            method="get"
-        >
+        <form className={`input-group mb-2 d-inline-flex w-auto ${className}`} action={formAction} method="get">
             <input
                 className="form-control"
                 type="email"

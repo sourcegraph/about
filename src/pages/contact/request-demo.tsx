@@ -31,7 +31,7 @@ const Contact: FunctionComponent = () => {
                             <h3 className="font-weight-light">
                                 To schedule a demo with a product specialist, tell us a bit about yourself.
                             </h3>
-                            <div className="form mt-5">
+                            <div className="mt-5">
                                 <div id="hubspotRequestDemoForm" className="d-flex justify-center" />
                             </div>
                         </div>

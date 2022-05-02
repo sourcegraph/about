@@ -111,7 +111,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                             <a
                                 href={staff.github}
                                 target="_blank"
-                                rel="nofollow noopener noreferrer"
+                                rel="nofollow noreferrer"
                                 aria-label="GitHub"
                                 className="text-dark"
                             >
@@ -122,7 +122,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                             <a
                                 href={staff.twitter}
                                 target="_blank"
-                                rel="nofollow noopener noreferrer"
+                                rel="nofollow noreferrer"
                                 aria-label="Twitter"
                                 className="text-dark"
                             >
@@ -133,7 +133,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                             <a
                                 href={staff.linkedin}
                                 target="_blank"
-                                rel="nofollow noopener noreferrer"
+                                rel="nofollow noreferrer"
                                 aria-label="LinkedIn"
                                 className="text-dark"
                             >

@@ -29,7 +29,7 @@ const Contact: FunctionComponent = () => {
                             <h3 className="font-weight-light">
                                 Talk with a product specialist to learn more about Sourcegraph.
                             </h3>
-                            <div className="form mt-5">
+                            <div className="mt-5">
                                 <div id="hubspotRequestTrialForm" className="d-flex justify-center" />
                             </div>
                         </div>

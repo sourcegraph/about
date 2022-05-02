@@ -31,7 +31,7 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
             </div>
         )}
         {linkText && link && link.includes('http') && (
-            <a href={link} target="_blank" rel="nofollow noopener noreferrer">
+            <a href={link} target="_blank" rel="nofollow noreferrer">
                 {linkText}
                 <ArrowRightIcon className="icon-inline ml-1" />
             </a>
@@ -102,7 +102,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
             </div>
         )}
         {linkText && link && link.includes('http') && (
-            <a href={link} target="_blank" rel="nofollow noopener noreferrer">
+            <a href={link} target="_blank" rel="nofollow noreferrer">
                 {linkText}
                 <ArrowRightIcon className="icon-inline ml-1" />
             </a>
