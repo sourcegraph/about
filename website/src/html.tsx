@@ -107,9 +107,9 @@ export default class HTML extends React.Component<HtmlProps> {
                     {/* Add Ceros script */}
                     <script
                         type="text/javascript"
-                        src="//[view.ceros.com/scroll-proxy.min.js](http://view.ceros.com/scroll-proxy.min.js)"
-                        data-ceros-origin-domains="[view.ceros.com](http://view.ceros.com/)"
-                    ></script>
+                        src="http://view.ceros.com/scroll-proxy.min.js"
+                        data-ceros-origin-domains="http://view.ceros.com/"
+                    />
 
                     {/* Drift Integration */}
                     <script

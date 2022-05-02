@@ -11,7 +11,7 @@ const CerosFullPageTakeover: FunctionComponent<PageProps> = props => (
                     position: 'relative',
                     width: 'auto',
                     padding: '0 0 664.06%',
-                    height: '100vh',
+                    height: '0',
                     top: '0',
                     left: '0',
                     bottom: '0',
@@ -25,7 +25,7 @@ const CerosFullPageTakeover: FunctionComponent<PageProps> = props => (
             >
                 <iframe
                     allowFullScreen
-                    src="//[view.ceros.com/sourcegraph/full-page?heightOverride=8500&mobileHeightOverride=15746](http://view.ceros.com/sourcegraph/full-page?heightOverride=8500&mobileHeightOverride=15746)"
+                    src="http://view.ceros.com/sourcegraph/full-page?heightOverride=8500&mobileHeightOverride=15746"
                     style={{
                         position: 'absolute',
                         top: '0',
