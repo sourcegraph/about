@@ -11,6 +11,7 @@ import { QuoteCarousel } from '../../components/QuoteCarousel'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 import { CustomerLogos } from '../../components/CustomerLogos'
+import { ThreeUpText } from '../../components/ThreeUpText'
 import { buttonStyle, buttonLocation } from '../../tracking'
 
 import styles from './useCases.module.scss'
@@ -141,6 +142,31 @@ const blogListItems = [
     },
 ]
 
+const threeUpTextItems = [
+    {
+        icon: <CrosshairsGpsIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Assess incidents quickly</h4>,
+        description:
+            'Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code\'s functionality to verify the issue.',
+    },
+    {
+        icon: <ClockTimeThreeOutlineIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Plan your remediation</h4>
+        ),
+        description:
+            'Reduce time to resolution by supplying response teams with actionable details, like links to all affected code.',
+    },
+    {
+        icon: <WebIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Execute your plan globally</h4>
+        ),
+        description:
+            'Fix the root cause and confirm the same issue doesn\'t reoccur in other areas by locating the code pattern and automating fixes across your entire codebase.',
+    },
+]
+
 const UseCasePage: FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
@@ -194,40 +220,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             </>
         }
     >
-        <ContentSection className="my-lg-5">
-            <div className="row mx-lg-0 mx-4">
-                <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold w-100 px-lg-8">
-                        Identify the root cause of an incident and fix it everywhere, fast
-                    </h1>
-                </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
-                    <div className="text-center mb-4">
-                        <CrosshairsGpsIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Assess incidents quickly</h4>
-                        <p>
-                            Pinpoint the code responsible for the incident and find the root cause in your codebase.
-                            Understand the code's functionality to verify the issue.
-                        </p>
-                    </div>
-                    <div className="col-lg-5 px-lg-6 text-center mb-4">
-                        <ClockTimeThreeOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Plan your remediation</h4>
-                        <p>
-                            Reduce time to resolution by supplying response teams with actionable details, like links to
-                            all affected code.
-                        </p>
-                    </div>
-                    <div className="text-center mb-4">
-                        <WebIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Execute your plan globally</h4>
-                        <p>
-                            Fix the root cause and confirm the same issue doesn't reoccur in other areas by locating the
-                            code pattern and automating fixes across your entire codebase.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <ContentSection className="my-7">
+            <ThreeUpText title="Identify the root cause of an incident and fix it everywhere, fast" items={threeUpTextItems} />
         </ContentSection>
 
         <div className="bg-gradient-venus-radial">
