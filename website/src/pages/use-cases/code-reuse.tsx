@@ -223,7 +223,8 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                         <ul>
                             <li>Finding idiomatic code examples is tough if you don't know where to look.</li>
                             <li>
-                                Without easy access to existing patterns, developers default to executing from scratch, increasing complexity and confusion in the codebase.
+                                Without easy access to existing patterns, developers default to executing from scratch,
+                                increasing complexity and confusion in the codebase.
                             </li>
                             <li>
                                 Engineering leaders lack the visibility needed to ensure teams adopt recommended
