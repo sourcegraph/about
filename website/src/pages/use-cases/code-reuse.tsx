@@ -109,13 +109,13 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <XmlIcon className="mb-4 text-blurple" size={70} />,
+        icon: <XmlIcon className="mb-4 text-blurple" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Quickly find trustworthy code to reuse</h4>,
         description:
             'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code and when, and where else it’s being used.',
     },
     {
-        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple" size={70} />,
+        icon: <FolderUploadOutlineIcon className="mb-4 text-blurple" size={40} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Safely maintain and improve shared libraries</h4>
         ),
@@ -123,7 +123,7 @@ const threeUpTextItems = [
             'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate the overhead of duplicative code.',
     },
     {
-        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple" size={70} />,
+        icon: <AccountGroupOutlineIcon className="mb-4 text-blurple" size={40} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Understand your team’s code reuse efforts</h4>
         ),
@@ -223,7 +223,7 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                             more secure and coherent codebase. What does that mean for you and your team?
                         </p>
                         <ul>
-                            <li>Finding idiomatic code examples is challenging if you don't know where to look.</li>
+                            <li>Finding idiomatic code examples is tough if you don't know where to look.</li>
                             <li>
                                 Without easy access to existing patterns, developers default to implementing from
                                 scratch, unintentionally increasing complexity and confusion in the codebase.
