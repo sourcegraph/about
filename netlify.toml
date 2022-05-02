@@ -122,3 +122,9 @@ command = "yarn run build"
   to = "/dpa.pdf"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/cloud-beta"
+  to = "/"
+  status = 200
+  force = true
