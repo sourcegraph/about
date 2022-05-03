@@ -293,14 +293,6 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
         formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
         region: 'na1',
         targetId: 'topForm',
-        formInstanceId: '1',
-    })
-    useHubSpot({
-        portalId: '2762526',
-        formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
-        region: 'na1',
-        targetId: 'bottomForm',
-        formInstanceId: '2',
     })
     useChiliPiper()
 
@@ -599,7 +591,14 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                             </p>
                         </div>
                         <div className="col-lg-7 d-flex flex-column pt-1 max-w-400">
-                            <div id="bottomForm" />
+                            <Link
+                                to="/demo"
+                                className="btn btn-primary md-col-6 col-6"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                            >
+                                Request a demo
+                            </Link>
                         </div>
                     </div>
                 </ContentSection>

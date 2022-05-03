@@ -6,6 +6,7 @@ import { CaseStudyCard } from '../components/product/CaseStudyCard'
 import { FormLegal } from '../components/FormLegal'
 import { BlogListItem } from '../components/BlogListItem'
 import { useHubSpot } from '../hooks/hubSpot'
+import { useChiliPiper } from '../hooks/chiliPiper'
 
 const resourceItems = [
     {
@@ -74,8 +75,8 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
         portalId: '2762526',
         formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
         targetId: 'form',
-        chiliPiper: true,
     })
+    useChiliPiper()
 
     return (
         <Layout

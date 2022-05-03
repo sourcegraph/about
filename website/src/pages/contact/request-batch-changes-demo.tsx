@@ -13,7 +13,6 @@ const Contact: FunctionComponent<PageProps> = props => {
         portalId: '2762526',
         formId: 'c98d6435-f0fc-4b34-8cff-cfe7633121c8',
         targetId: 'hubspotRequestBatchChangesDemo',
-        chiliPiper: true,
     })
 
     return (

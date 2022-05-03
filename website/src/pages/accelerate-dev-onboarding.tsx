@@ -4,20 +4,16 @@ import { Link, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
+import { useChiliPiper } from '../hooks/chiliPiper'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
     useHubSpot({
         portalId: '2762526',
         formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
         targetId: 'topForm',
-        formInstanceId: '1',
     })
-    useHubSpot({
-        portalId: '2762526',
-        formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
-        targetId: 'bottomForm',
-        formInstanceId: '2',
-    })
+    useChiliPiper()
 
     return (
         <Layout
@@ -92,8 +88,14 @@ const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
                     <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
 
                     <div className="mt-5 max-w-400 mx-auto">
-                        <div id="bottomForm" />
-                        <FormLegal />
+                        <Link
+                            to="/demo"
+                            className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                        >
+                            Request a demo
+                        </Link>
                     </div>
                 </div>
             </div>
