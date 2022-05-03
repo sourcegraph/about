@@ -4,7 +4,6 @@ import { Link, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
-import { useChiliPiper } from '../hooks/chiliPiper'
 
 const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
     ;['topForm', 'bottomForm'].forEach((id, index) => {
@@ -15,7 +14,6 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
             formInstanceId: `${index + 1}`,
         })
     })
-    useChiliPiper()
 
     return (
         <Layout

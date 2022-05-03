@@ -4,18 +4,20 @@ import { Link, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
-import { useChiliPiper } from '../hooks/chiliPiper'
 
 const AccelerateDevOnboarding: FunctionComponent<PageProps> = props => {
-    ;['topForm', 'bottomForm'].forEach((id, index) => {
-        useHubSpot({
-            portalId: '2762526',
-            formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
-            targetId: id,
-            formInstanceId: `${index + 1}`,
-        })
+    useHubSpot({
+        portalId: '2762526',
+        formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
+        targetId: 'topForm',
+        formInstanceId: '1',
     })
-    useChiliPiper()
+    useHubSpot({
+        portalId: '2762526',
+        formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
+        targetId: 'bottomForm',
+        formInstanceId: '2',
+    })
 
     return (
         <Layout
