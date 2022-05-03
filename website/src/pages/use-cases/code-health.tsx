@@ -229,16 +229,16 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         <WrenchOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Remediate code health issues</h4>
                         <p>
-                            Efficiently tackle refactoring efforts and tech debt from legacy systems and acquisitions
-                            with automated pull requests across your entire codebase.
+                            Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated
+                            pull requests across your entire codebase.
                         </p>
                     </div>
                     <div className="col-lg-4 pl-lg-5 pr-lg-0 text-center mb-4">
                         <ClipBoardPulseOutlineIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Monitor code health initiatives</h4>
                         <p>
-                            Stay on top of changes to your code health. Monitor and measure code health initiatives and
-                            get actionable insights into the impact of large-scale changes.
+                            Stay on top of code health changes. Monitor and measure code health initiatives and get
+                            actionable insights into the impact of large-scale changes.
                         </p>
                     </div>
                 </div>
