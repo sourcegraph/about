@@ -48,13 +48,14 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                 </h1>
                 {post.frontmatter.author && post.frontmatter.publishDate && (
                     <p className="blog-post__byline mb-0">
-                        {post.frontmatter.authorUrl ?
+                        {post.frontmatter.authorUrl ? (
                             <a href={post.frontmatter.authorUrl} target="_blank" rel="nofollow noreferrer">
                                 {post.frontmatter.author}
-                            </a> :
+                            </a>
+                        ) : (
                             <span>{post.frontmatter.author}</span>
-                        }
-                        {' '} on {post.frontmatter.publishDate}
+                        )}{' '}
+                        on {post.frontmatter.publishDate}
                     </p>
                 )}
             </header>
