@@ -1,10 +1,18 @@
 import React, { FunctionComponent } from 'react'
 import { PageProps } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
 
 const CerosFullPageTakeover: FunctionComponent<PageProps> = props => (
     <Layout location={props.location}>
+        <Helmet>
+            <script
+                type="text/javascript"
+                src="https://view.ceros.com/scroll-proxy.min.js"
+                data-ceros-origin-domains="https://view.ceros.com/"
+            />
+        </Helmet>
         <div className="container py-3">
             <div
                 style={{
