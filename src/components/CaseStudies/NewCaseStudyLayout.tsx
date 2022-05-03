@@ -80,7 +80,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({
                 <div className="d-flex flex-wrap">
                     {uniqueCaseStudyList.map(study => (
                         <div key={study.name} className="col-lg-6 mb-3">
-                            <CaseStudyCard name={study.name} logo={study.logo} title={study.title} url={study.url} />
+                            <CaseStudyCard study={study} />
                         </div>
                     ))}
                 </div>

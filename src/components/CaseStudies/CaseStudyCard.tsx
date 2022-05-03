@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 
+import classNames from 'classnames'
 import Link from 'next/link'
 
 import styles from './CaseStudyCard.module.scss'
@@ -8,7 +9,9 @@ interface CaseStudy {
     name: string
     logo: string
     title: string
+    altTitle?: string
     url: string
+    linkText?: string
 }
 
 // TODO: This data will eventually live in our CMS
@@ -99,28 +102,30 @@ export const CASESTUDIES: CaseStudy[] = [
     },
 ]
 
-interface Props {
-    name: string
-    logo: string
-    title: string
-    url: string
-}
-
-export const CaseStudyCard: FunctionComponent<Props> = props => (
+export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boolean }> = ({
+    study: { name, logo, altTitle, title, url, linkText = 'Learn more' },
+    bwLogo,
+}) => (
     <div className="flex-grow-1">
         <div className="card-body">
-            <img className={`${styles.logo} mb-2`} src={props.logo} alt={`${props.name} logo`} />
+            <img
+                className={classNames(styles.logo, 'max-w-200 mb-4', { 'brightness-0': bwLogo })}
+                height="60"
+                src={logo}
+                alt={`${name} logo`}
+            />
+            {altTitle && <h5 className="font-weight-bold">{altTitle}</h5>}
             <p className="card-text">
-                {props.title}{' '}
-                <span>
-                    {props.url.includes('http') ? (
-                        <a href={props.url} className="card-link" target="_blank" rel="nofollow noreferrer">
-                            Learn more.
+                {title}{' '}
+                <span className="text-nowrap">
+                    {url.includes('http') ? (
+                        <a href={url} className="card-link" target="_blank" rel="nofollow noreferrer">
+                            {linkText}.
                         </a>
                     ) : (
-                        <Link href={props.url} passHref={true}>
+                        <Link href={url} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="card-link">Learn more.</a>
+                            <a className="card-link">{linkText}.</a>
                         </Link>
                     )}
                 </span>

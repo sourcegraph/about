@@ -275,8 +275,13 @@ table {
     }
 }
 
-/* ==================== Bootstrap Components ==================== */
+/* ==================== Filters ==================== */
+// TODO: After Tailwind migration this class can be deleted
+.brightness-0 {
+    filter: brightness(0);
+}
 
+/* ==================== Bootstrap Components ==================== */
 .popover {
     /* Prevent a child element with non-rounded corners from extruding.
      overflow: hidden; */

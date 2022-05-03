@@ -25,12 +25,7 @@ const CaseStudiesHome: FunctionComponent = () => (
                             {CASESTUDIES.map(study => (
                                 <div className="d-flex col-lg-4 mb-6" key={study.name}>
                                     <div className="card">
-                                        <CaseStudyCard
-                                            name={study.name}
-                                            logo={study.logo}
-                                            title={study.title}
-                                            url={study.url}
-                                        />
+                                        <CaseStudyCard study={study} />
                                     </div>
                                 </div>
                             ))}

@@ -13,16 +13,16 @@ interface Blog {
 }
 
 export const BlogListItem: FunctionComponent<Props> = ({ blog }) => (
-    <div className="w-100 d-flex flex-lg-row flex-column mb-5 pb-4 border-bottom justify-content-between">
-        <div className="col-lg-9">
+    <div className="w-100 row mx-0 mb-5 pb-4 border-bottom">
+        <div className="col-sm-8 col-md-9">
             <a className="posts-list__post-title-link" href={blog.href}>
                 <h3 className="font-weight-bold">{blog.title}</h3>
             </a>
             <p className="text-muted">{blog.type}</p>
             <p>{blog.description}</p>
         </div>
-        <div className="col-lg-3">
-            {blog.image && <img className="flex-1 blog-post__image" alt={`${blog.title}`} src={blog.image} />}
+        <div className="col-sm-4 col-md-3 d-flex align-items-center">
+            {blog.image && <img className="flex-1 w-100" src={blog.image} alt={`${blog.type} thumbnail: ${blog.title.split(' ').slice(0,3).join(' ')}`} />}
         </div>
     </div>
 )
