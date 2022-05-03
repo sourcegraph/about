@@ -4,6 +4,7 @@ import { PageProps } from 'gatsby'
 import Layout from '../../components/Layout'
 import { CustomerLogos } from '../../components/CustomerLogos'
 import { useHubSpot } from '../../hooks/hubSpot'
+import { useChiliPiper } from '../../hooks/chiliPiper'
 
 const title = 'Sourcegraph - Schedule a Batch Changes demo.'
 const description = 'Learn how you can automate large-scale code changes with Sourcegraph Batch Changes.'
@@ -14,6 +15,7 @@ const Contact: FunctionComponent<PageProps> = props => {
         formId: 'c98d6435-f0fc-4b34-8cff-cfe7633121c8',
         targetId: 'hubspotRequestBatchChangesDemo',
     })
+    useChiliPiper()
 
     return (
         <Layout

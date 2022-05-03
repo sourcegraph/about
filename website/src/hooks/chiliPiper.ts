@@ -40,43 +40,25 @@ interface IChiliPiper {
     ) => void
 }
 
-const getChiliPiperScript = (): HTMLScriptElement | Element => {
-    const chiliPiperScript = '//js.chilipiper.com/marketing.js'
-    const script = document.querySelector(`script[src="${chiliPiperScript}"]`)
-
-    if (!script) {
-        const scriptElement = document.createElement('script')
-        scriptElement.src = chiliPiperScript
-        document.head.append(scriptElement)
-        return scriptElement
-    }
-
-    return script
-}
-
 export const useChiliPiper = () => {
     useEffect(() => {
-        const script = getChiliPiperScript()
-        if (script) {
-            ;() => {
-                const cpTenantDomain = 'sourcegraph'
-                const cpRouterName = 'contact-sales'
-                window.addEventListener('message', event => {
-                    const data = event.data as MessageEventData
-                    if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
-                        const lead = data.data.reduce(
-                            (object, item) => Object.assign(object, { [item.name]: item.value }),
-                            {}
-                        )
-                        const chilipiper = window.ChiliPiper
-                        chilipiper?.submit(cpTenantDomain, cpRouterName, {
-                            map: true,
-                            lead,
-                        })
-                    }
+        const chiliPiperScript = '//js.chilipiper.com/marketing.js'
+        const script = document.createElement('script')
+        script.src = chiliPiperScript
+        document.head.append(script)
+        const cpTenantDomain = 'sourcegraph'
+        const cpRouterName = 'contact-sales'
+        window.addEventListener('message', event => {
+            const data = event.data as MessageEventData
+            if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
+                const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
+                const chilipiper = window.ChiliPiper
+                chilipiper?.submit(cpTenantDomain, cpRouterName, {
+                    map: true,
+                    lead,
                 })
             }
-        }
+        })
 
         return () => {
             script?.remove()
