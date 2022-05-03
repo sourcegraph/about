@@ -21,9 +21,9 @@ Here is an attempt to do that.
 
 ### I. Inner loop and outer loop
 
-![alt_text](images/image1.png 'image_tooltip')
+![Software development lifecycle meme](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image6.png)
 
-<figcaption>_Caption: Hi, I'm the SDLC. You may remember me from such developer marketing campaigns as Shift Left, DORA the DevOps Explorer, and Agile Waterfalls.</figcaption>
+<figcaption>Hi, I'm the SDLC. You may remember me from such developer marketing campaigns as Shift Left, DORA the DevOps Explorer, and Agile Waterfalls.</figcaption>
 
 The common picture of the software development process is the SDLC. A mainstay of DevOps marketing campaigns, the SDLC does a good job of highlighting the many stages involved in bringing code to production. The SDLC, however—perhaps betraying its origins as a DevOps marketing device—leaves the most critical step in software development undefined: how the code, itself, is understood and written.
 
@@ -32,7 +32,7 @@ When I think of my own work as a developer, there isn't just one big loop, as pi
 - The outer loop maps roughly to the SDLC and happens at the level of sprints, projects, or releases.
 - The inner one is the read-write-run loop that happens many times per day when you're in the thick of understanding code, writing code, running tests, and repeating until you're happy with the code.
 
-![alt_text](images/image2.png 'image_tooltip')
+![Diagram of inner and outer developer loops](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image3.png)
 
 You enter the inner loop whenever you get "close to the source" in the development process. This happens at multiple points in the outer loop, such as when you’re:
 
@@ -49,11 +49,11 @@ It's important to talk about the inner loop. It's the heart of software creation
 
 Inside the inner loop is the golden state: [Flow](https://stackoverflow.blog/2018/09/10/developer-flow-state-and-its-impact-on-productivity/). Flow state is that state of focus and productivity that you attain when you're feeling inspired and motivated. It’s when you have "paged in" all the necessary context and can actually have fun. It's when you're _coding at the speed of thought_. The ideal path to Flow is represented in this first graph:
 
-![alt_text](images/image3.png 'image_tooltip')
+![Diagram of ideal progress toward flow state](images/image3.png 'image_tooltip')
 
 Reaching flow state accelerates the inner loop. But flow state takes uninterrupted time to reach. Mental context switches take you out of it. The most common complaint I hear from developers struggling to get things done is that there are too many interruptions. Many devs' day-to-day sadly looks more like this graph:
 
-![alt_text](images/image4.png 'image_tooltip')
+![Diagram of interrupted progress toward flow state](images/image4.png 'image_tooltip')
 
 Flow-destroying interruptions can be internal or external.
 
@@ -72,7 +72,7 @@ The atomic unit of developer productivity ought then to be one iteration of the 
 
 In the physical world, velocity has two components: direction and speed. Analogously, developer velocity can also be broken down into a direction and a magnitude.
 
-![alt_text](images/image5.png 'image_tooltip')
+![Diagram of software development odyssey](images/image5.png 'image_tooltip')
 
 The speed component indicates how quickly you're cycling through the inner loop. The more you reach flow state, the faster you iterate, and the sooner you’re able to ship your new feature or patch.
 
@@ -86,7 +86,7 @@ So far, our pictures have treated software development as a solo endeavor. But m
 
 Individual velocity tends to be choppy. There are inevitably days spent mostly onboarding to unfamiliar code or where external factors interrupt regularly scheduled programming. But individual bumps smooth out when you add them together.
 
-![alt_text](images/image6.png 'image_tooltip')
+![Diagram showing how a healthy team can sustain high velocity](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image4.png)
 
 If a team suffers from a sustained period of low productivity, it's worthwhile to ask what factor caused a correlated drop in productivity across all members of the team. Sometimes, there's a natural explanation—perhaps a new quarterly planning process took up an inordinate amount of time. And sometimes there is a more serious cause—morale issues, technical debt, or a lack of clear goals and priorities.
 
@@ -98,11 +98,11 @@ In computers, the factors that slow down parallelization are CPU context switchi
 
 You can draw this out in a picture where you've broken down a project into different deliverables. The finished product is a pyramid of sorts, where the blocks at the bottom have to be lain before the ones on top:
 
-![alt_text](images/image7.png 'image_tooltip')
+![Diagram of one dev with good domain knowledge working alone](images/image7.png 'image_tooltip')
 
 The colors map to different areas of domain expertise. If you are a developer with expertise in multiple areas, you could build the entire project yourself. Or you could delegate the task to two other developers who each have expertise in a single area:
 
-![alt_text](images/image8.png 'image_tooltip')
+![Diagram of two devs with partial domain knowledge working together](images/image8.png 'image_tooltip')
 
 The two developers have the advantage that they can build separate blocks in parallel, but their parallelism is constrained by serial dependencies (some blocks must be laid before others), the friction of onboarding to unfamiliar parts of the code, and communication overhead.
 
@@ -119,6 +119,8 @@ Even worse, however, is someone else coming along and convincing our organizatio
 It is to our benefit, and to the benefit of our industry and society at large, to advance mental models that reflect the reality of our work and honor its essential creativity.
 
 In this post, I've sketched out some pictures that resonate with one developer—me. What about you? When you think about your own creative process and your team’s processes, what pictures come to mind? Let us know in the comments on Reddit or Twitter.
+
+_Huge thanks to Dan Robinson, Thorsten Ball, Stephen Gutekanst, Timothy Liu, and Nick Moore for providing feedback on this post._
 
 ### More posts like this
 
