@@ -114,6 +114,10 @@ You will want to track progress at two levels:
 
 When it comes to big refactors and migrations, it really is about defining your destination and getting there as quickly as possible—with buy-in from all stakeholders. The good news is that many organizations have already undertaken such migrations. These 5 elements for successful monolith-to-microservices migrations come from the collective experiences of some of the best engineering organizations we've worked with. There has clearly been [a lot of pain](https://twitter.com/beyang/status/1517569661650362368). Let's learn from it.
 
+#### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software for Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab._
+
 ### More posts like this
 
 - [An ex-Googler's guide to dev tools](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools/)
