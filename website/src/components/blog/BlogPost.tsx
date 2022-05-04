@@ -55,7 +55,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                         ) : (
                             <span>{post.frontmatter.author}</span>
                         )}{' '}
-                        on {post.frontmatter.publishDate}
+                        on <time dateTime={post.frontmatter.publishDate}>{post.frontmatter.publishDate}</time>
                     </p>
                 )}
             </header>
