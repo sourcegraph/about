@@ -2,6 +2,7 @@ import { Link, PageProps } from 'gatsby'
 import * as React from 'react'
 import { ContentSection } from '../components/content/ContentSection'
 import Layout from '../components/Layout'
+import { buttonStyle, buttonLocation } from '../tracking'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
@@ -29,9 +30,10 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                         </p>
                         <a
                             className="btn btn-primary"
-                            href={
-                                'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
-                            }
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                            href={'https://srcgr.ph/wp-join-community-space'}
                             title="Join our Slack"
                         >
                             Join our Slack
@@ -129,9 +131,7 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     </ul>
                     <a
                         className="btn btn-primary"
-                        href={
-                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
-                        }
+                        href={'https://srcgr.ph/wp-join-community-space'}
                         title="Join us on Slack"
                     >
                         Join us on Slack
@@ -233,9 +233,10 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                 <div className="col-lg-5 mt-3">
                     <a
                         className="btn btn-secondary"
-                        href={
-                            'https://join.slack.com/t/sourcegraph-community/shared_invite/zt-w11gottx-c0PYTK69YVW_06tpJZ0bOQ'
-                        }
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                        href={'https://srcgr.ph/wp-join-community-space'}
                         title="Join us on Slack"
                     >
                         Join us on Slack
@@ -243,6 +244,9 @@ export const CommunityPage: React.FunctionComponent<PageProps> = props => (
                     <br />
                     <a
                         className="btn btn-primary mt-3"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
                         href={'mailto:community@sourcegraph.com'}
                         title="Send us an email"
                     >

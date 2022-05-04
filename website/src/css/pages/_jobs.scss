@@ -76,7 +76,7 @@
 
     .handbook-benefits-link {
         text-decoration: underline;
-        color: $sg-space-black;
+        color: $space-black;
     }
 
     .icon {
@@ -98,7 +98,7 @@
             }
 
             li {
-                background-color: $sg-space-black;
+                background-color: $space-black;
                 width: 10px;
                 height: 10px;
                 border-radius: 5px;
@@ -241,25 +241,7 @@
         .carousel-control-prev-icon,
         .carousel-control-next-icon,
         .carousel-indicators li {
-            background-color: $sg-space-black;
-        }
-    }
-
-    .contact-us {
-        padding: 170px 0 390px 0;
-
-        @media only screen and (max-width: 768px) {
-            padding: 170px 0;
-        }
-
-        p {
-            font-size: 1.5rem;
-            line-height: 1.9rem;
-
-            @media only screen and (max-width: 768px) {
-                font-size: 1.125rem;
-                line-height: 1.42rem;
-            }
+            background-color: $space-black;
         }
     }
 }

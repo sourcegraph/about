@@ -2,7 +2,9 @@ import { Link } from 'gatsby'
 import React from 'react'
 import slugify from 'slugify'
 import { COLORS } from '../Jumbotron'
+import { BackButtonBold, BackButtonLight } from '../../components/BackButton'
 import { ContentSection } from './ContentSection'
+import { buttonStyle, buttonLocation } from '../../tracking'
 
 interface Quote {
     quote: string
@@ -97,18 +99,49 @@ export const MediaQuote: React.FunctionComponent<{
 
 export const CaseStudyJumbotron: React.FunctionComponent<{
     customer: string
-    logo: string
+    logo?: string
     className?: string
     color?: keyof typeof COLORS
     children?: React.ReactNode
 }> = ({ customer, logo, className = '', color = 'dark', children }) => (
-    <div className={`jumbotron rounded-0 ${COLORS[color]} ${className}`}>
-        <div className="container text-center pt-3 pb-3">
+    <div className={`jumbotron rounded-0 d-flex flex-column ${COLORS[color]} ${className}`}>
+        <div className="pl-lg-7 pl-sm-0 pt-5 container">
+            {color === 'dark' ? (
+                <BackButtonLight href={'/case-studies'} text="Case Studies" />
+            ) : (
+                <BackButtonBold href={'/case-studies'} text="Case Studies" />
+            )}
+        </div>
+        <div className="container text-md-center">
             {logo && <img className="case-studies__logo my-3" src={logo} alt={customer} />}
-            <span className="case-studies__label d-block mt-1">
-                <span className="sr-only">{customer}</span> case study
-            </span>
+            <h5 className="font-weight-bold mt-1">
+                <span className="sr-only">{customer}</span> Case Study
+            </h5>
             {children}
+        </div>
+    </div>
+)
+
+export const AuthorBio: React.FunctionComponent<{
+    customer: string
+    image?: string
+    author: string
+    title: string
+    about: string
+}> = ({ customer, image, author, title, about }) => (
+    <div className="d-flex flex-md-row flex-column align-items-center align-items-md-start container-xl py-6 py-md-8">
+        {image && (
+            <div className="col-md-3 col-xl-2 text-center text-md-right">
+                <img className="rounded-circle p-1" style={{ border: '3px solid #00A1C7' }} src={image} alt={author} />
+            </div>
+        )}
+        <div className="col-md-4 col-xl-3 text-center text-md-left">
+            <h5 className="font-weight-bold pt-5">{author}</h5>
+            <p>{title}</p>
+        </div>
+        <div className="col-md-5 col-xl-6 mr-xl-0 mx-md-auto text-center text-md-left">
+            <h5 className="font-weight-bold pt-5">About {customer}</h5>
+            <p>{about}</p>
         </div>
     </div>
 )
@@ -142,13 +175,20 @@ export const CaseStudyRequestDemoForm: React.FunctionComponent<{
 }> = ({
     title = 'See Sourcegraph in action.',
     description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
-    demoFormURL = 'https://info.sourcegraph.com/demo-request',
+    demoFormURL = '/demo',
 }) => (
     <ContentSection color="black" className="col-sm-12 col-md-9 col-lg-7">
         <div className="container text-center pt-6">
             <h3 className="display-3 font-weight-bold">{title}</h3>
             <p>{description}</p>
-            <Link className="btn btn-primary mx-2 mb-3" to={demoFormURL} title="Request a demo">
+            <Link
+                className="btn btn-primary mx-2 mb-3"
+                data-button-style={buttonStyle.primary}
+                data-button-location={buttonLocation.trySourcegraph}
+                data-button-type="cta"
+                to={demoFormURL}
+                title="Request a demo"
+            >
                 Schedule a demo
             </Link>
         </div>

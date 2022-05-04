@@ -52,7 +52,7 @@ Bulk actions allow users to automate taking an action on many changesets at a ti
 - [Read more](https://docs.sourcegraph.com/batch_changes/how-tos/bulk_operations_on_changesets)
 
 <p><video autoplay loop muted playsinline style="width:600px">
-  <source src="https://sourcegraphstatic.com/blog/3.28/batch-changes-bulk-action-comment.mp4" type="video/mp4">
+  <source src="https://sourcegraphstatic.com/blog/3.28/batch-changes-bulk-action-comment.mp4" type="video/mp4" data-cookieconsent="ignore">
  </video></p>
 
 In future releases we will add other bulk actions: merge, close and more.

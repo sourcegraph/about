@@ -5,11 +5,16 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import TwitchIcon from 'mdi-react/TwitchIcon'
 import SpotifyIcon from 'mdi-react/SpotifyIcon'
-import * as React from 'react'
+import React, { FunctionComponent } from 'react'
 
-export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal }) => (
-    <footer className={`${minimal ? '' : 'pt-6 pb-2'}`}>
-        <div className="footer__container container">
+interface Props {
+    minimal?: boolean
+    className?: string
+}
+
+export const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
+    <footer className={`flex-shrink-0 ${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
+        <div className="container-xl">
             {!minimal && (
                 <React.Fragment>
                     <div className="row footer__nav-sections">
@@ -27,8 +32,9 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
                                 </li>
                                 <li className="nav-item">
                                     <a
-                                        href="https://info.sourcegraph.com/hubfs/CTA%20assets/Sourcegraph-overview.pdf"
+                                        href="/handouts/Sourcegraph-Overview.pdf"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         Sourcegraph overview (PDF)
                                     </a>
@@ -160,7 +166,7 @@ export const Footer: React.FunctionComponent<{ minimal?: boolean }> = ({ minimal
             )}
             <div className="footer__postscript d-flex justify-content-between pt-4 pb-2 small">
                 <ul className="nav">
-                    <li className="nav-item text-muted mr-3">&copy; 2021 Sourcegraph</li>
+                    <li className="nav-item text-muted mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
                     <li className="nav-item">
                         <Link to="/terms" className="nav-link">
                             Terms

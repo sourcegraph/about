@@ -9,14 +9,6 @@
         max-width: 740px; // Copied from medium.com
     }
 
-    &__label {
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        opacity: 0.9;
-    }
-
     &__img {
         max-width: 100%;
     }
@@ -66,6 +58,14 @@
             margin: 2rem 0;
 
             p {
+                padding-left: 1rem;
+                border-left: 3px solid #f86012;
+                font-weight: 600;
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+
+            &--section {
                 padding-left: 1rem;
                 border-left: 3px solid #f86012;
                 font-weight: 600;

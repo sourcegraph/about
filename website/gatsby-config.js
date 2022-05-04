@@ -69,7 +69,7 @@ module.exports = {
               icon: `<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 18 95 120" height="18" width="18"><path d="M53.69,78.7H37.94l-5.85,25H21.74l5.85-25H15.89L18,69.1H29.84l4.65-19.65H23.39l2.1-9.6H36.74l5.7-23.7H52.79l-5.7,23.7H62.84l5.7-23.7H78.89l-5.7,23.7H84.74l-2.4,9.6H70.94L66.29,69.1H77.24l-2.4,9.6H64l-5.85,25H47.84Zm-13.5-9.6H55.94l4.65-19.65H44.84Z"/></svg>`,
               maintainCase: true,
               removeAccents: true,
-              elements: [`h1`, `h2`],
+              elements: [`h1`, `h2`, `h3`, `h4`],
             },
           },
           `gatsby-remark-prismjs`,
@@ -154,15 +154,8 @@ module.exports = {
                 }
               }
             `,
-            output: '/rss.xml',
+            output: '/blog/rss.xml',
             title: 'Sourcegraph blog RSS feed',
-            // optional configuration to insert feed reference in pages:
-            // if `string` is used, it will be used to create RegExp and then test if pathname of
-            // current page satisfied this regular expression;
-            // if not provided or `undefined`, all pages will have feed reference inserted
-            match: '^/blog/',
-            // optional configuration to specify external rss feed, such as feedburner
-            link: 'https://feeds.feedburner.com/sourcegraph/blog',
           },
         ],
       },

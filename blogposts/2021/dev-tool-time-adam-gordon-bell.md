@@ -33,7 +33,7 @@ Missing from Adam’s current setup is the custom-built and programmed split key
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/custom-keyboard-struggle.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/custom-keyboard-struggle.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Adam’s custom keyboard and struggle</figcaption>
 </figure>
@@ -46,7 +46,7 @@ Adam’s main writing environment isn’t Google Docs, or even a speciality Mark
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/corporate-speak.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/corporate-speak.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">See Vale in action detecting “corporate speak”</figcaption>
 </figure>
@@ -59,7 +59,7 @@ He uses [Earthly](https://earthly.dev/), which he describes as a Makefile and Do
 
 <figure>
     <div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/Earthly.mp4"></video>
+        <video controls src="https://sourcegraphstatic.com/blog/dev-tool-time/adam-gordon-bell/Earthly.mp4" data-cookieconsent="ignore"></video>
     </div>
     <figcaption style="text-align: center; font-style: italic;">Listen to Adam talk about two approaches to build pipelines</figcaption>
 </figure>

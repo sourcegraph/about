@@ -1,16 +1,18 @@
-import React, { useLayoutEffect } from 'react'
-import { ContentPage } from '../../components/content/ContentPage'
-import { createHubSpotForm } from '../../components/HubSpot'
-import Layout from '../../components/Layout'
+import React, { FunctionComponent } from 'react'
+import { PageProps } from 'gatsby'
 
-export default ((props: any) => {
-    useLayoutEffect(() => {
-        createHubSpotForm({
-            portalId: '2762526',
-            formId: 'd2425310-4f8c-4b6c-8b63-c4729912df82',
-            targetId: 'hubspotContactForm',
-        })
-    }, [])
+import Layout from '../../components/Layout'
+import { ContentPage } from '../../components/content/ContentPage'
+import { useHubSpot } from '../../hooks/hubSpot'
+
+export const UniversalCodeSearchEbook: FunctionComponent<PageProps> = props => {
+    useHubSpot({
+        portalId: '2762526',
+        formId: 'd2425310-4f8c-4b6c-8b63-c4729912df82',
+        targetId: 'hubspotContactForm',
+        chiliPiper: false,
+    })
+
     return (
         <Layout
             location={props.location}
@@ -27,7 +29,6 @@ export default ((props: any) => {
                 className="text-dark"
                 titleClassName="display-2 font-weight-bold"
             >
-                <script charSet="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js" />
                 <div className="landing-page bg-white text-dark">
                     <div className="container-lg py-6 px-5">
                         <div className="row flex-wrap-reverse">
@@ -56,7 +57,7 @@ export default ((props: any) => {
                                 />
                             </div>
                             <div className="col-md-4">
-                                <h3 className="font-weight-light text-sans-serif">Get your free ebook.</h3>
+                                <h3 className="font-weight-light font-sans">Get your free ebook.</h3>
                                 <div className="form mt-5">
                                     <div id="hubspotContactForm" className="d-flex justify-center" />
                                 </div>
@@ -67,4 +68,6 @@ export default ((props: any) => {
             </ContentPage>
         </Layout>
     )
-}) as React.FunctionComponent<any>
+}
+
+export default UniversalCodeSearchEbook

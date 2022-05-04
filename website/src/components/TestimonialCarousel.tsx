@@ -4,7 +4,7 @@ import slugify from 'slugify'
 
 export enum CarouselColors {
     dark = 'bg-black text-light',
-    purple = 'bg-purple text-light',
+    purple = 'bg-vivid-violet text-light',
 }
 
 interface Author {

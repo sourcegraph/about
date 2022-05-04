@@ -1,0 +1,26 @@
+# This skips PR approvals for specific directories listed below
+# See https://handbook.sourcegraph.com/departments/product-engineering/engineering/enablement/content-platform/#pull-requests for context.
+name: Skip Approval
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+
+    # Glob paths to dismiss PR approvals
+    paths:
+      - 'docs/**/*'
+      - 'blogposts/**/*'
+      - 'podcast/**/*'
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl --request POST \
+          --url https://api.github.com/repos/${{github.repository}}/pulls/${{github.event.number}}/reviews \
+          --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+          --header 'content-type: application/json' \
+          -d '{"event":"APPROVE"}'
