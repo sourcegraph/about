@@ -19,65 +19,70 @@ export default ((props: any) => (
                 'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
-        heroAndHeaderClassName={styles.headerAndHero}
+        className="use-cases-page navbar-light"
         hero={
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-7 mb-lg-6 mt-6">
-                        <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
-                        <p className="home__semiwide-paragraph my-5 display-4">
-                            Companies of all sizes and in all industries use Sourcegraph universal code search to solve
-                            big code problems.
-                        </p>
-                    </div>
-                    <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h5 className="font-weight-normal">See how customers use Sourcegraph to</h5>
-                        <div className="list-group">
-                            <Link
-                                to="#find-and-fix-security-vulnerabilities"
-                                className="list-group-item list-group-item-action"
-                                data-button-style={buttonStyle.arrowWithText}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Find and fix security vulnerabilities <ArrowRightIcon className="icon-inline ml-1" />
-                            </Link>
-                            <Link
-                                to="#accelerate-developer-onboarding"
-                                className="list-group-item list-group-item-action"
-                                data-button-style={buttonStyle.arrowWithText}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Accelerate developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
-                            </Link>
-                            <Link
-                                to="#resolve-incidents-faster"
-                                className="list-group-item list-group-item-action"
-                                data-button-style={buttonStyle.arrowWithText}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Resolve incidents faster <ArrowRightIcon className="icon-inline ml-1" />
-                            </Link>
-                            <Link
-                                to="#streamline-code-reuse"
-                                className="list-group-item list-group-item-action"
-                                data-button-style={buttonStyle.arrowWithText}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Streamline code reuse <ArrowRightIcon className="icon-inline ml-1" />
-                            </Link>
-                            <Link
-                                to="#boost-code-health"
-                                className="list-group-item list-group-item-action"
-                                data-button-style={buttonStyle.arrowWithText}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
-                                Boost code health <ArrowRightIcon className="icon-inline ml-1" />
-                            </Link>
+            <div className={styles.headerAndHero}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-7 mb-lg-6 mt-6">
+                            <h1 className="display-2 font-weight-bold mb-0">
+                                Our customers move faster with Sourcegraph
+                            </h1>
+                            <p className="home__semiwide-paragraph my-5 display-4">
+                                Companies of all sizes and in all industries use Sourcegraph universal code search to
+                                solve big code problems.
+                            </p>
+                        </div>
+                        <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
+                            <h5 className="font-weight-normal">See how customers use Sourcegraph to</h5>
+                            <div className="list-group">
+                                <Link
+                                    to="#find-and-fix-security-vulnerabilities"
+                                    className="list-group-item list-group-item-action"
+                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Find and fix security vulnerabilities{' '}
+                                    <ArrowRightIcon className="icon-inline ml-1" />
+                                </Link>
+                                <Link
+                                    to="#accelerate-developer-onboarding"
+                                    className="list-group-item list-group-item-action"
+                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Accelerate developer onboarding <ArrowRightIcon className="icon-inline ml-1" />
+                                </Link>
+                                <Link
+                                    to="#resolve-incidents-faster"
+                                    className="list-group-item list-group-item-action"
+                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Resolve incidents faster <ArrowRightIcon className="icon-inline ml-1" />
+                                </Link>
+                                <Link
+                                    to="#streamline-code-reuse"
+                                    className="list-group-item list-group-item-action"
+                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Streamline code reuse <ArrowRightIcon className="icon-inline ml-1" />
+                                </Link>
+                                <Link
+                                    to="#boost-code-health"
+                                    className="list-group-item list-group-item-action"
+                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
+                                    Boost code health <ArrowRightIcon className="icon-inline ml-1" />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -348,6 +353,9 @@ export default ((props: any) => (
                             data-button-type="cta"
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                        </Link>
+                        <Link to="/use-cases/code-health" className="btn btn-link font-weight-bold">
+                            Learn more
                         </Link>
                     </div>
                     <div className="col-lg-6 text-center">

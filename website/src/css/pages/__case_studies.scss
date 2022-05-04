@@ -54,24 +54,8 @@
             font-weight: 400;
         }
 
-        &--in-content {
-            margin: 2rem 0;
-
-            p {
-                padding-left: 1rem;
-                border-left: 3px solid #f86012;
-                font-weight: 600;
-                font-size: 1.2rem;
-                line-height: 1.5;
-            }
-
-            &--section {
-                padding-left: 1rem;
-                border-left: 3px solid #f86012;
-                font-weight: 600;
-                font-size: 1.2rem;
-                line-height: 1.5;
-            }
+        &--border {
+            border-left: 2px solid;
         }
     }
 }

@@ -150,43 +150,43 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 'Identify the root cause of an incident, understand its potential impact, fix the issue everywhere in your codebase. Incident response from Sourcegraph.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
-        className="use-cases-page"
-        heroAndHeaderClassName={`${styles.useCaseHeader} navbar-light`}
+        className="use-cases-page navbar-light"
         hero={
             <>
-                <div className="bg" />
-                <div className="container pb-4">
-                    <div className="row">
-                        <div className="col-md-7 mb-8 mt-7">
-                            <BackButtonBold href="/use-cases" text="USE CASES" />
-                            <h1 className="display-2 font-weight-bold mb-4">
-                                Resolve incidents quickly and confidently
-                            </h1>
-                            <div className="display-4 font-weight-normal mb-5">
-                                Identify the root cause of an incident, understand its potential impact on other
-                                services, and fix the issue everywhere in your codebase so it won't reoccur.
-                            </div>
-                            <div className="d-flex flex-column flex-lg-row pt-1">
-                                <Link
-                                    className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                    to="/demo"
-                                    title="Request a Demo."
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo
-                                </Link>
-                                <Link
-                                    className="btn btn-outline-primary w-md-100"
-                                    to="/get-started"
-                                    title="Try Sourcegraph."
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Try Sourcegraph now
-                                </Link>
+                <div className={styles.useCaseHeader}>
+                    <div className="container pb-4">
+                        <div className="row">
+                            <div className="col-md-7 mb-8 mt-7">
+                                <BackButtonBold href="/use-cases" text="USE CASES" />
+                                <h1 className="display-2 font-weight-bold mb-4">
+                                    Resolve incidents quickly and confidently
+                                </h1>
+                                <div className="display-4 font-weight-normal mb-5">
+                                    Identify the root cause of an incident, understand its potential impact on other
+                                    services, and fix the issue everywhere in your codebase so it won't reoccur.
+                                </div>
+                                <div className="d-flex flex-column flex-lg-row pt-1">
+                                    <Link
+                                        className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
+                                        to="/demo"
+                                        title="Request a Demo."
+                                        data-button-style={buttonStyle.primary}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
+                                        Request a demo
+                                    </Link>
+                                    <Link
+                                        className="btn btn-outline-primary w-md-100"
+                                        to="/get-started"
+                                        title="Try Sourcegraph."
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
+                                        Try Sourcegraph now
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -239,7 +239,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </h1>
                         <p>
                             Current tools don't enable teams to quickly get to the root cause of an incident and ensure
-                            it doesn't reoccur. <strong>What does that mean for you?</strong>
+                            it doesn't reoccur. What does that mean for you?
                         </p>
                         <ul>
                             <li className="mt-1">
