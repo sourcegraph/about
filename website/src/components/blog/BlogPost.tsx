@@ -49,9 +49,13 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                 {post.frontmatter.author && post.frontmatter.publishDate && (
                     <p className="blog-post__byline mb-0">
                         {post.frontmatter.authorUrl ? (
-                            <a href={post.frontmatter.authorUrl} target="_blank" rel="nofollow noreferrer">
-                                {post.frontmatter.author}
-                            </a>
+                            post.frontmatter.authorUrl.includes('http') ?
+                                <a href={post.frontmatter.authorUrl} target="_blank" rel="nofollow noreferrer">
+                                    {post.frontmatter.author}
+                                </a> :
+                                <Link to={post.frontmatter.authorUrl}>
+                                    {post.frontmatter.author}
+                                </Link>
                         ) : (
                             <span>{post.frontmatter.author}</span>
                         )}{' '}
