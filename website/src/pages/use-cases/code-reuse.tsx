@@ -4,10 +4,10 @@ import React, { FunctionComponent, ReactNode } from 'react'
 import FolderUploadOutlineIcon from 'mdi-react/FolderUploadOutlineIcon'
 import AccountGroupOutlineIcon from 'mdi-react/AccountGroupOutlineIcon'
 import XmlIcon from 'mdi-react/XmlIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import Layout from '../../components/Layout'
 import { ThreeUpText } from '../../components/ThreeUpText'
+import { Blockquote } from '../../components/Blockquote'
 import { BackButtonBold } from '../../components/BackButton'
 import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
@@ -232,27 +232,20 @@ const CodeReusePage: FunctionComponent<PageProps> = props => (
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-5 mt-8 text-center">
-                        <section className="case-studies__quote--in-content--section font-weight-normal">
-                            <h4 className="mb-3">FactSet ensures consistency across its entire codebase</h4>
-                            <p>
-                                “If I’m developing code for a library that might draw charts, for example, we don’t want
-                                30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
-                                find other chart examples, and simply copy the code. This saves us time and ensures
-                                consistency.”
-                            </p>
-                            <figcaption className="pt-2 text-muted text-center">
-                                &mdash; Joseph Majesky, Software Engineer at FactSet
-                            </figcaption>
-                        </section>
-                        <img className="my-4" src="/external-logos/factset-logo.svg" width="150" alt="Factset logo" />
-                        <Link
-                            className="d-block font-weight-bold"
-                            to="/case-studies/factset-migrates-from-perforce-to-github"
-                        >
-                            Read the case study
-                            <ArrowRightIcon className="ml-2" />
-                        </Link>
+                    <div className="col-lg-5 mt-lg-6 mt-5">
+                        <Blockquote
+                            quote="If I’m developing code for a library that might draw charts, for example, we don’t want
+                            30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
+                            find other chart examples, and simply copy the code. This saves us time and ensures
+                            consistency."
+                            by="Joseph Majesky, Software Engineer at FactSet"
+                            logoImage="/external-logos/factset-logo.svg"
+                            logoAlt="Factset"
+                            border={true}
+                            headline="FactSet ensures consistency across its entire codebase"
+                            linkText="Read the case study"
+                            link="/case-studies/factset-migrates-from-perforce-to-github"
+                        />
                     </div>
                 </div>
             </ContentSection>

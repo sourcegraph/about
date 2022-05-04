@@ -54,7 +54,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
 
             <ContentSection color="white" className="py-6 text-center max-w-600">
                 <BlockquoteWithLogoTop
-                    quote={`Sourcegraph was the right product at the right time.`}
+                    quote="Sourcegraph was the right product at the right time."
                     by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
                     logoHref="https://nutanix.com"
                     logoAlt="Nutanix"

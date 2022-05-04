@@ -264,7 +264,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="col-lg-5 mt-lg-6 mt-5">
                         <Blockquote
-                            quote={`With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time.`}
+                            quote="With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
                             by="Justin Phillips, Software Engineer at Lyft"
                             logoImage="/external-logos/lyft-logo.svg"
                             logoAlt="Lyft"

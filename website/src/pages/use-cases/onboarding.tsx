@@ -232,8 +232,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="col-lg-5 mt-lg-0 mt-7">
                         <Blockquote
-                            quote={`Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues.
-                            This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked.`}
+                            quote="Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked."
                             by="Bjørn Hal Sørensen, Web Architect at Lunar"
                             logoImage="/external-logos/lunar.svg"
                             logoAlt="Lunar"
@@ -260,8 +259,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             <ContentSection>
                 <div className="d-flex flex-column justify-content-center text-center px-lg-8">
                     <BlockquoteWithLogoBottom
-                        quote={`For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives,
-                            and self-service during their investigations.`}
+                        quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
                         header="Convoy knows its codebase inside and out"
                         by="Owen Kim, Senior Software Engineer at Convoy"
                         logoImage="/external-logos/convoy-logo.svg"
