@@ -4,6 +4,7 @@ import { PageProps } from 'gatsby'
 import Layout from '../../components/Layout'
 import { CustomerLogos } from '../../components/CustomerLogos'
 import { useHubSpot } from '../../hooks/hubSpot'
+import { useChiliPiper } from '../../hooks/chiliPiper'
 
 const title = 'Sourcegraph - Talk to a product specialist'
 const description = 'Talk to a Sourcegraph product specialist. Let us know how we can help.'
@@ -14,6 +15,7 @@ const Contact: FunctionComponent<PageProps> = props => {
         formId: '6170d9b0-fa5b-4240-9f47-f3a3aa9557c9',
         targetId: 'hubspotContactForm',
     })
+    useChiliPiper()
 
     return (
         <Layout

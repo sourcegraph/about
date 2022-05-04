@@ -4,6 +4,7 @@ import { PageProps } from 'gatsby'
 import Layout from '../../components/Layout'
 import { CustomerLogos } from '../../components/CustomerLogos'
 import { useHubSpot } from '../../hooks/hubSpot'
+import { useChiliPiper } from '../../hooks/chiliPiper'
 
 const title = 'Sourcegraph - Schedule a Code Insights demo.'
 const description =
@@ -15,6 +16,7 @@ const Contact: FunctionComponent<PageProps> = props => {
         formId: 'a58be17d-86ad-4a6e-8c97-83818aafd2ab',
         targetId: 'hubspotRequestCodeInsightsDemo',
     })
+    useChiliPiper()
 
     return (
         <Layout
