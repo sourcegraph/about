@@ -16,6 +16,7 @@ import Layout from '../components/Layout'
 import { TabCarousel } from '../components/TabCarousel'
 import { TemplateCodeBlock } from '../components/TemplateCodeBlock'
 import { useHubSpot } from '../hooks/hubSpot'
+import { useChiliPiper } from '../hooks/chiliPiper'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import CustomCarousel from '../components/CustomCarousel'
@@ -287,15 +288,13 @@ const blogListItems = [
 ]
 
 export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
-    ;['topForm', 'bottomForm'].forEach(id => {
-        useHubSpot({
-            portalId: '2762526',
-            formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
-            region: 'na1',
-            targetId: id,
-            chiliPiper: true,
-        })
+    useHubSpot({
+        portalId: '2762526',
+        formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
+        region: 'na1',
+        targetId: 'topForm',
     })
+    useChiliPiper()
 
     return (
         <Layout
@@ -592,7 +591,14 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                             </p>
                         </div>
                         <div className="col-lg-7 d-flex flex-column pt-1 max-w-400">
-                            <div id="bottomForm" />
+                            <Link
+                                to="/demo"
+                                className="btn btn-primary md-col-6 col-6"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                            >
+                                Request a demo
+                            </Link>
                         </div>
                     </div>
                 </ContentSection>
