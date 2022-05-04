@@ -12,6 +12,7 @@ import { QuoteCarousel } from '../../components/QuoteCarousel'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 import { CustomerLogos } from '../../components/CustomerLogos'
+import { ThreeUpText } from '../../components/ThreeUpText'
 import { buttonStyle, buttonLocation } from '../../tracking'
 import styles from './useCases.module.scss'
 
@@ -156,6 +157,29 @@ const blogListItems = [
     },
 ]
 
+const threeUpTextItems = [
+    {
+        icon: <MagnifyIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-350 font-weight-bold">Find unhealthy code</h4>,
+        description:
+            'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
+    },
+    {
+        icon: <WrenchOutlineIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-350 font-weight-bold">Remediate code health issues</h4>
+        ),
+        description:
+            'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
+    },
+    {
+        icon: <ClipBoardPulseOutlineIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-350 font-weight-bold">Monitor code health initiatives</h4>,
+        description:
+            'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',
+    },
+]
+
 const UseCasePage: FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
@@ -210,39 +234,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         }
     >
         <ContentSection className="my-lg-5">
-            <div className="row mx-lg-0 mx-4">
-                <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold col-lg-10 px-lg-8">
-                        Track and improve code health across your entire codebase
-                    </h1>
-                </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 my-6">
-                    <div className="col-lg-4 pr-lg-5 pl-lg-0 text-center mb-4">
-                        <MagnifyIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Find unhealthy code</h4>
-                        <p>
-                            Build a healthier codebase by finding references to deprecated services, libraries, URL
-                            patterns, and more across all your repositories.
-                        </p>
-                    </div>
-                    <div className="col-lg-4 text-center mb-4">
-                        <WrenchOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Remediate code health issues</h4>
-                        <p>
-                            Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated
-                            pull requests across your entire codebase.
-                        </p>
-                    </div>
-                    <div className="col-lg-4 pl-lg-5 pr-lg-0 text-center mb-4">
-                        <ClipBoardPulseOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Monitor code health initiatives</h4>
-                        <p>
-                            Stay on top of code health changes. Monitor and measure code health initiatives and get
-                            actionable insights into the impact of large-scale changes.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <ThreeUpText title="Track and improve code health across your entire codebase" items={threeUpTextItems} />
         </ContentSection>
 
         <div className="bg-gradient-venus-radial">
