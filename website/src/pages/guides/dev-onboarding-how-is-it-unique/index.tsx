@@ -31,7 +31,7 @@ const DevOnboardingUnique: FunctionComponent<PageProps> = props => {
                     <div className="col-lg-6 pr-lg-6">
                         <h3 className="display-3 mb-5">
                             Developer onboarding: What makes it unique? A guide to creating an effective developer
-                            onboarding programs
+                            onboarding program
                         </h3>
 
                         <p className="mb-4">
