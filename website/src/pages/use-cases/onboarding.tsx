@@ -11,7 +11,7 @@ import { BlogListItem } from '../../components/BlogListItem'
 import CustomCarousel from '../../components/CustomCarousel'
 import { ContentSection } from '../../components/content/ContentSection'
 import { CustomerLogos } from '../../components/CustomerLogos'
-
+import { buttonStyle, buttonLocation } from '../../tracking'
 import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
@@ -131,35 +131,41 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 'Decrease time to first commit for new developers, help existing engineers master your codebase, and fast-track full codebase understanding.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
-        className="use-cases-page"
-        heroAndHeaderClassName={`${styles.useCaseHeader} navbar-light`}
+        className="use-cases-page navbar-light"
         hero={
             <>
-                <div className="bg" />
-                <div className="container pb-4">
-                    <div className="row">
-                        <div className="col-lg-7 mb-8 mt-7">
-                            <BackButtonBold href="/use-cases" text="USE CASES" />
-                            <h1 className="display-2 font-weight-bold mb-4">Accelerate developer onboarding</h1>
-                            <div className="display-4 font-weight-normal mb-5">
-                                Decrease time to first commit for new developers, help existing engineers master your
-                                codebase, and fast-track full codebase understanding.
-                            </div>
-                            <div className="d-flex flex-column flex-lg-row pt-1">
-                                <Link
-                                    className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                    to="/demo"
-                                    title="Request a Demo."
-                                >
-                                    Request a demo
-                                </Link>
-                                <Link
-                                    className="btn btn-outline-primary w-md-100"
-                                    to="/get-started"
-                                    title="Try Sourcegraph."
-                                >
-                                    Try Sourcegraph now
-                                </Link>
+                <div className={styles.useCaseHeader}>
+                    <div className="container pb-4">
+                        <div className="row">
+                            <div className="col-lg-7 mb-8 mt-7">
+                                <BackButtonBold href="/use-cases" text="USE CASES" />
+                                <h1 className="display-2 font-weight-bold mb-4">Accelerate developer onboarding</h1>
+                                <div className="display-4 font-weight-normal mb-5">
+                                    Decrease time to first commit for new developers, help existing engineers master
+                                    your codebase, and fast-track full codebase understanding.
+                                </div>
+                                <div className="d-flex flex-column flex-lg-row pt-1">
+                                    <Link
+                                        className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
+                                        to="/demo"
+                                        title="Request a Demo."
+                                        data-button-style={buttonStyle.primary}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
+                                        Request a demo
+                                    </Link>
+                                    <Link
+                                        className="btn btn-outline-primary w-md-100"
+                                        to="/get-started"
+                                        title="Try Sourcegraph."
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
+                                        Try Sourcegraph now
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,7 +180,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         Make your codebase accessible for your entire team
                     </h1>
                 </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
+                <div className="d-flex flex-column flex-lg-row mt-lg-4 my-6">
                     <div className="text-center">
                         <MagnifyIcon className="mb-4 text-blurple" size={40} />
                         <h4 className="font-weight-bold">Find answers across all repositories</h4>
@@ -210,10 +216,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         <h1 className="mb-4 max-w-400 font-weight-bold">Developer onboarding is slow and expensive</h1>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
-                            efficiently.
-                        </p>
-                        <p>
-                            <strong>What does that mean for you?</strong>
+                            efficiently. What does that mean for you?
                         </p>
                         <ul>
                             <li>New developers are left confused, struggling in front of an opaque codebase.</li>
@@ -281,7 +284,14 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         </p>
                     </div>
                     <div className="d-flex flex-column">
-                        <Link className="btn btn-primary" to="/demo" title="Request a Demo.">
+                        <Link
+                            className="btn btn-primary"
+                            to="/demo"
+                            title="Request a Demo."
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
                             Request a demo
                         </Link>
                         <Link to="/use-cases" className="d-flex justify-content-center mt-4">
@@ -310,7 +320,13 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="d-flex flex-wrap justify-content-center text-center">
                 <h2 className="w-100 font-weight-bold mb-4">Better onboarding is only a few searches away.</h2>
-                <Link to="/get-started" className="btn btn-primary">
+                <Link
+                    to="/get-started"
+                    className="btn btn-primary"
+                    data-button-style={buttonStyle.primary}
+                    data-button-location={buttonLocation.trySourcegraph}
+                    data-button-type="cta"
+                >
                     Ready to get started?
                 </Link>
             </div>
