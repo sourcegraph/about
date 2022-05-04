@@ -166,9 +166,7 @@ const threeUpTextItems = [
     },
     {
         icon: <WrenchOutlineIcon className="mb-4 text-blurple" size={40} />,
-        subtitle: (
-            <h4 className="pb-3 mx-auto max-w-350 font-weight-bold">Remediate code health issues</h4>
-        ),
+        subtitle: <h4 className="pb-3 mx-auto max-w-350 font-weight-bold">Remediate code health issues</h4>,
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },

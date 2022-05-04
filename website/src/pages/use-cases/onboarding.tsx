@@ -125,7 +125,7 @@ const threeUpTextItems = [
         icon: <CompassOutlineIcon className="mb-4 text-blurple" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Navigate and understand large codebases</h4>,
         description:
-            'Make new codebases approachable, not aggravating. Search across all your repositories in one place with Sourcegraph\'s IDE-inspired features.',
+            "Make new codebases approachable, not aggravating. Search across all your repositories in one place with Sourcegraph's IDE-inspired features.",
     },
 ]
 
