@@ -50,12 +50,19 @@ Once you've found where vulnerable Log4j dependency versions are used, you can:
 - Automate the creation of pull requests to fix/mitigate the issues (see the next section).
 - Share the search URLs with your team to work on eliminating all unsafe deps (getting to "0 results"). With Code Insights, you also get line charts of the progress (see below).
 - Get the raw dataset of all results: export the results to CSV or a spreadsheet with the [sourcegraph/search-export extension](https://sourcegraph.com/extensions/sourcegraph/search-export), or use the [Sourcegraph GraphQL API](https://docs.sourcegraph.com/api/graphql) or [`src` CLI](https://github.com/sourcegraph/src-cli#readme).
-- Use a [search notebook](https://sourcegraph.com/github.com/sourcegraph/notebooks/-/blob/log4j.snb.md) to compile all of the queries your team is using to identify potentially vulnerable code.
 
 Although code search is a fast and versatile tool for assessing the impact of a novel vulnerability, it's not perfect. Here are some limitations:
 
 - These build systems have no convention for dependency lockfiles, so the above queries won't find projects where Log4j is a transitive (indirect) dependency (because there's no file committed to Git that lists the fully resolved dependencies and versions). See the next section for how Sourcegraph can invoke your build tool to get a precise set of transitive dependencies (and then automate PRs to fix/mitigate the issue).
 - The queries above won't find other indirect usage of Log4j, such as a test script that downloads and runs other programs that use Log4j. There's no general way to find and fix that type of issue. However, if you know what to look for (such as specific old versions of Elasticsearch that use vulnerable Log4j versions), then code search is quite helpful.
+
+### To document and share instructions on finding Log4j:
+
+Once you've determined the queries needed to find Log4j in your codebase, you can also compile those search queries and share them across teams in your organization with [Notebooks](https://docs.sourcegraph.com/notebooks) so that each team doesn't have to find Log4j themselves from scratch.
+
+Notebooks are files for documenting search queries with Markdown annotations. We created this [public notebook with example Log4j search queries](https://about.sourcegraph.com/blog/log4j-log4shell-0-day/) which you can copy to your own Sourcegraph account and use as a starting point. 
+
+![Document search queries with a notebook](https://storage.googleapis.com/sourcegraph-assets/blog/log4j/log4j-notebook.png)
 
 ## Automate PRs to fix/mitigate the Log4j 0-day across all your code
 
