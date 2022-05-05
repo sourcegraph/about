@@ -26,14 +26,15 @@ const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ 
 
 const items = [
     {
-        buttonLabel: "Find code to reuse",
+        buttonLabel: 'Find code to reuse',
         text: (
             <CarouselItem
                 header="Find code to reuse"
                 text={
                     <p>
                         Find out if a teammate has already solved your problem. With{' '}
-                        <Link to="/code-search">Code Search</Link>, you can quickly search across all your repositories to find the code you need.
+                        <Link to="/code-search">Code Search</Link>, you can quickly search across all your repositories
+                        to find the code you need.
                     </p>
                 }
             />
@@ -42,13 +43,14 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        buttonLabel: "Improve code stability and trustworthiness",
+        buttonLabel: 'Improve code stability and trustworthiness',
         text: (
             <CarouselItem
                 header="Improve code stability and trustworthiness"
                 text={
                     <p>
-                        Code reuse avoids introducing preventable bugs. By using a reviewed and tested piece of code that's known to work, you can feel confident that your code is secure and stable.
+                        Code reuse avoids introducing preventable bugs. By using a reviewed and tested piece of code
+                        that's known to work, you can feel confident that your code is secure and stable.
                     </p>
                 }
             />
@@ -56,13 +58,14 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: "Automate PRs to make code consistent",
+        buttonLabel: 'Automate PRs to make code consistent',
         text: (
             <CarouselItem
                 header="Automate PRs to make code consistent"
                 text={
                     <p>
-                        Spend less time on manual updates. Whether refactoring duplicate code or updating a shared library, automate changes seamlessly across your codebase with{' '}
+                        Spend less time on manual updates. Whether refactoring duplicate code or updating a shared
+                        library, automate changes seamlessly across your codebase with{' '}
                         <Link to="/batch-changes">Batch Changes</Link>.
                     </p>
                 }
@@ -78,7 +81,9 @@ const items = [
                 text={
                     <p>
                         Catch deprecated code as it’s committed with
-                        <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>. Monitor and get alerts when someone uses out-of-date libraries or deprecated functions, so you know who to work with on updates and adoption.
+                        <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>. Monitor and get
+                        alerts when someone uses out-of-date libraries or deprecated functions, so you know who to work
+                        with on updates and adoption.
                     </p>
                 }
             />
@@ -86,7 +91,7 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: "Track your code reuse efforts ",
+        buttonLabel: 'Track your code reuse efforts ',
         text: (
             <CarouselItem
                 header="Track your code reuse efforts "
