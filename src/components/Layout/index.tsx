@@ -43,7 +43,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
         description:
             props.meta?.description ||
             'Find and fix things across all of your code with Sourcegraph universal code search.',
-        image: props.meta?.image || '/sourcegraph-mark.png',
+        image: props.meta?.image || 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png',
         icon: props.meta?.icon || 'https://about.sourcegraph.com/favicon.png',
     }
 
@@ -59,13 +59,14 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:description" content={meta.description} />
 
+                <meta property="og:url" content="https://about.sourcegraph.com" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content={meta.title} />
                 <meta property="og:image" content={meta.image} />
+                <meta property="og:image:secure_url" content={meta.image} />
                 <meta property="og:description" content={meta.description} />
 
                 <link rel="icon" type="image/png" href={meta.icon} />
-                <link rel="icon" type="image/png" href={meta.image} />
 
                 {meta.canonical ? <link rel="canonical" href={meta.canonical} /> : ''}
             </Head>

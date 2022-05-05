@@ -132,7 +132,6 @@ const UseCasePage: FunctionComponent = () => (
             title: 'Accelerate developer onboarding | Sourcegraph',
             description:
                 'Decrease time to first commit for new developers, help existing engineers master your codebase, and fast-track full codebase understanding.',
-            image: '/sourcegraph-og.png',
         }}
         className="use-cases-page"
         heroAndHeaderClassName={`${styles.pageHeader} navbar-light`}

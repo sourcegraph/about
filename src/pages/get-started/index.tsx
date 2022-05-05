@@ -37,7 +37,6 @@ export const GetStartedPage: FunctionComponent = () => {
                 title: 'Choose Your Deployment Model | Get Started with Sourcegraph',
                 description:
                     "From Sourcegraph Self-hosted to Sourcegraph Cloud, choose the deployment model that's best for you and get started for free today.",
-                image: '/sourcegraph-og.png',
             }}
             hero={
                 <div className="container-xl py-5">

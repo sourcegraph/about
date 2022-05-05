@@ -33,7 +33,6 @@ const Support: FunctionComponent = () => (
         meta={{
             title: 'Sourcegraph - Support',
             description: 'Sourcegraph support details for each pricing tier.',
-            image: '/sourcegraph-og.png',
         }}
     >
         <div className="mt-2">

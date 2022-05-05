@@ -13,7 +13,6 @@ export const CaseStudy: FunctionComponent = () => {
                 title: 'Indeed keeps code up to date and accelerates development velocity',
                 description:
                     'Indeed case study. Learn how Indeed keeps code up to date and accelerates development velocity',
-                image: '/sourcegraph-og.png',
             }}
             className="navbar-dark bg-black"
         >

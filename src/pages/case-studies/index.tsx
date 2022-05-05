@@ -10,7 +10,6 @@ const CaseStudiesHome: FunctionComponent = () => (
             meta={{
                 title: 'Sourcegraph - Case studies',
                 description: 'Learn how engineering teams use Sourcegraph Universal Code Search.',
-                image: '/sourcegraph-og.png',
             }}
         >
             <div className="mt-2">

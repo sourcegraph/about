@@ -38,7 +38,6 @@ const About: FunctionComponent = () => (
             title: 'Sourcegraph - About',
             description:
                 'The pace at which humans can write code is the main thing that stands between us and flying cars, a habitat on Mars, and a cure for cancer.',
-            image: '/sourcegraph-og.png',
         }}
     >
         <div className="content-page bg-white text-dark">
