@@ -314,6 +314,9 @@ export default ((props: any) => (
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
+                        <Link to="/use-cases/code-reuse" className="btn btn-link font-weight-bold">
+                            Learn more
+                        </Link>
                     </div>
                 </div>
             </ContentSection>

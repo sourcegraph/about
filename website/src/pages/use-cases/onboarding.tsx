@@ -5,6 +5,7 @@ import CompassOutlineIcon from 'mdi-react/CompassOutlineIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
+import { ThreeUpText } from '../../components/ThreeUpText'
 import { BackButtonBold } from '../../components/BackButton'
 import { Blockquote, BlockquoteWithLogoBottom } from '../../components/Blockquote'
 import { BlogListItem } from '../../components/BlogListItem'
@@ -103,13 +104,41 @@ const items = [
     },
 ]
 
+const threeUpTextItems = [
+    {
+        icon: <MagnifyIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Find answers across all repositories</h4>,
+        description:
+            'Codebases grow increasingly complex over time. Sourcegraph enables developers to search everything at once without needing to clone and search locally.',
+    },
+    {
+        icon: <UploadIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">
+                Share knowledge quickly with links to specific code
+            </h4>
+        ),
+        description:
+            'Knowledge sharing takes time. With Sourcegraph, developers can share links directly to specific lines of code and ask questions with context included.',
+    },
+    {
+        icon: <CompassOutlineIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Navigate and understand large codebases</h4>,
+        description:
+            "Make new codebases approachable, not aggravating. Search across all your repositories in one place with Sourcegraph's IDE-inspired features.",
+    },
+]
+
 const blogListItems = [
     {
         title: '8 ways to implement better onboarding',
         description:
             'We spoke to engineering leaders and engineers to learn their secrets for successful, repeatable, and scalable onboarding.',
         type: 'Blog post',
-        image: 'https://sourcegraphstatic.com/better-onboarding-prevent-codebase-overwhelm.png',
+        img: {
+            src: 'https://sourcegraphstatic.com/better-onboarding-prevent-codebase-overwhelm.png',
+            alt: '8 ways to implement better onboarding blog thumbnail',
+        },
         href: '/blog/better-onboarding-how-to-prevent-codebase-overwhelm',
     },
     {
@@ -117,7 +146,10 @@ const blogListItems = [
         description:
             'Learn how Sourcegraph built an engineering career development framework to align the entire engineering organization and create consistent, fair, and scalalabe conversations about growth.',
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/engineering-framework-images/Engineering%20career%20framework%20hero%20FINAL.png',
+            alt: 'Software engineer career ladder blog thumbnail',
+        },
         href: '/blog/software-engineer-career-ladder',
     },
 ]
@@ -174,39 +206,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         }
     >
         <ContentSection className="my-lg-5">
-            <div className="row mx-lg-0 mx-4">
-                <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold w-75 px-lg-8">
-                        Make your codebase accessible for your entire team
-                    </h1>
-                </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 my-6">
-                    <div className="text-center">
-                        <MagnifyIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Find answers across all repositories</h4>
-                        <p>
-                            Codebases grow increasingly complex over time. Sourcegraph enables developers to search
-                            everything at once without needing to clone and search locally.
-                        </p>
-                    </div>
-                    <div className="mx-lg-7 text-center">
-                        <UploadIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Share knowledge quickly with links to specific code</h4>
-                        <p>
-                            Knowledge sharing takes time. With Sourcegraph, developers can share links directly to
-                            specific lines of code and ask questions with context included.
-                        </p>
-                    </div>
-                    <div className="text-center">
-                        <CompassOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Navigate and understand large codebases</h4>
-                        <p>
-                            Make new codebases approachable, not aggravating. Search across all your repositories in one
-                            place with Sourcegraph's IDE-inspired features.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <ThreeUpText title="Make your codebase accessible for your entire team" items={threeUpTextItems} />
         </ContentSection>
 
         <div className="bg-gradient-venus-radial">
@@ -232,8 +232,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                     </div>
                     <div className="col-lg-5 mt-lg-0 mt-7">
                         <Blockquote
-                            quote={`Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues.
-                            This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked.`}
+                            quote="Sourcegraph makes it possible for us to enable every team to develop autonomous practices and solve cross-coding issues. This autonomy is vital to ensure developers and their teams can accomplish their day-to-day work in isolation without being blocked."
                             by="Bjørn Hal Sørensen, Web Architect at Lunar"
                             logoImage="/external-logos/lunar.svg"
                             logoAlt="Lunar"
@@ -248,7 +247,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         <ContentSection>
             <div className="row mt-lg-0 mt-5 justify-content-center">
                 <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6">How Sourcegraph helps</h1>
+                    <h1 className="font-weight-bold text-md-center text-left mb-lg-6 mb-md-3">How Sourcegraph helps</h1>
                 </div>
                 <div className="pb-lg-5 pb-md-8 pb-5">
                     <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />
@@ -260,8 +259,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
             <ContentSection>
                 <div className="d-flex flex-column justify-content-center text-center px-lg-8">
                     <BlockquoteWithLogoBottom
-                        quote={`For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives,
-                            and self-service during their investigations.`}
+                        quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
                         header="Convoy knows its codebase inside and out"
                         by="Owen Kim, Senior Software Engineer at Convoy"
                         logoImage="/external-logos/convoy-logo.svg"
@@ -275,8 +273,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column px-lg-7 text-center">
+                <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
+                    <div className="mb-5 d-flex flex-column px-lg-7 text-start text-md-center max-w-600 mx-auto">
                         <h1 className="font-weight-bold">Give your team the onboarding experience they deserve.</h1>
                         <p>
                             Enable all your devs to find the answers they need to work more efficiently, ship code more
@@ -294,8 +292,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         >
                             Request a demo
                         </Link>
-                        <Link to="/use-cases" className="d-flex justify-content-center mt-4">
-                            <p className="font-weight-bold">Explore other use cases</p>
+                        <Link to="/use-cases" className="d-flex justify-content-center mt-4 font-weight-bold">
+                            Explore other use cases
                         </Link>
                     </div>
                 </div>
