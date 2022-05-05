@@ -60,7 +60,7 @@ Although code search is a fast and versatile tool for assessing the impact of a 
 
 Once you've determined the queries needed to find Log4j in your codebase, you can also compile those search queries and share them across teams in your organization with [Notebooks](https://docs.sourcegraph.com/notebooks) so that each team doesn't have to find Log4j themselves from scratch.
 
-Notebooks are files for documenting search queries with Markdown annotations. We created this [public notebook with example Log4j search queries](https://about.sourcegraph.com/blog/log4j-log4shell-0-day/) which you can copy to your own Sourcegraph account and use as a starting point.
+Notebooks are files for documenting search queries with Markdown annotations. We created this [public notebook with example Log4j search queries](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MQ==) which you can copy to your own Sourcegraph account and use as a starting point.
 
 ![Document search queries with a notebook](https://storage.googleapis.com/sourcegraph-assets/blog/log4j/log4j-notebook.png)
 
