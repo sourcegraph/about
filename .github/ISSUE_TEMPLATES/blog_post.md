@@ -2,7 +2,7 @@
 name: Blog post proposal
 about: Use this template for proposing an idea for a new blog post.
 title: 'Blog post working title'
-labels: about-blog, blog-post-proposals
+labels: "about-blog", "blog-post-proposals"
 ---
 
 ## Proposal
