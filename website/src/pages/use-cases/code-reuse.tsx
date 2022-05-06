@@ -65,7 +65,7 @@ const items = [
                 text={
                     <p>
                         Spend less time on manual updates. Whether refactoring duplicate code or updating a shared
-                        library, automate changes seamlessly across your codebase with{' '}
+                        library, automate changes seamlessly across your entire codebase with{' '}
                         <Link to="/batch-changes">Batch Changes</Link>.
                     </p>
                 }
@@ -98,7 +98,8 @@ const items = [
                 text={
                     <p>
                         Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
-                        over time with Code Insights.
+                        over time with{' '}
+                        <Link to="/code-insights">Code Insights</Link>.
                     </p>
                 }
             />
