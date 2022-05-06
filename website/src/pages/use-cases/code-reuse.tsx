@@ -98,8 +98,7 @@ const items = [
                 text={
                     <p>
                         Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
-                        over time with{' '}
-                        <Link to="/code-insights">Code Insights</Link>.
+                        over time with <Link to="/code-insights">Code Insights</Link>.
                     </p>
                 }
             />
