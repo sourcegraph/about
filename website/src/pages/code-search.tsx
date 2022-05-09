@@ -35,21 +35,21 @@ export const CodeSearchPage: FunctionComponent<PageProps> = props => (
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.hero}
                                 data-button-type="cta"
-                                to="/get-started"
-                                title="Use this if you want to search your (or your company's) code, invite teammates, and try all the features."
+                                to="/demo"
+                                title="Request a demo."
                             >
-                                Deploy locally <ArrowRightIcon className="ml-1" />
+                                Request a demo
                             </Link>
-                            <a
+                            <Link
                                 className="btn btn-outline-primary my-3"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.hero}
                                 data-button-type="cta"
-                                href="https://sourcegraph.com/search"
-                                title="Use this if you want to search across top open source repositories (or add your own projects)."
+                                to="/get-started"
+                                title="Try Sourcegraph."
                             >
-                                Search open source <ArrowRightIcon className="ml-1" />
-                            </a>
+                                Try Sourcegraph now
+                            </Link>
                         </div>
                     </div>
                 </div>
