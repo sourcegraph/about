@@ -25,6 +25,7 @@ Here is an attempt to do that.
 
 <figcaption>Hi, I'm the SDLC. You may remember me from such developer marketing campaigns as Shift Left, DORA the DevOps Explorer, and Agile Waterfalls.</figcaption>
 <br>
+
 The common picture of the software development process is the SDLC. A mainstay of DevOps marketing campaigns, the SDLC does a good job of highlighting the many stages involved in bringing code to production. The SDLC, however—perhaps betraying its origins as a DevOps marketing device—leaves the most critical step in software development undefined: how the code, itself, is understood and written.
 
 When I think of my own work as a developer, there isn't just one big loop, as pictured in the SDLC, but two nested loops:
