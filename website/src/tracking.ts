@@ -1,9 +1,9 @@
 export const buttonStyle = {
     primary: 1,
     outline: 2,
-    arrowWithText: 3,
-    arrowBoxWithText: 4,
-    arrowBoxOutlined: 5,
+    textWithArrow: 3,
+    textWithBoxedArrow: 4,
+    outlineWithArrow: 5,
     text: 6
 }
 

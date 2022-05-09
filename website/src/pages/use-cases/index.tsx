@@ -39,7 +39,7 @@ export default ((props: any) => (
                                 <Link
                                     to="#find-and-fix-security-vulnerabilities"
                                     className="list-group-item list-group-item-action"
-                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-style={buttonStyle.textWithArrow}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
                                 >
@@ -49,7 +49,7 @@ export default ((props: any) => (
                                 <Link
                                     to="#accelerate-developer-onboarding"
                                     className="list-group-item list-group-item-action"
-                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-style={buttonStyle.textWithArrow}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
                                 >
@@ -58,7 +58,7 @@ export default ((props: any) => (
                                 <Link
                                     to="#resolve-incidents-faster"
                                     className="list-group-item list-group-item-action"
-                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-style={buttonStyle.textWithArrow}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
                                 >
@@ -67,7 +67,7 @@ export default ((props: any) => (
                                 <Link
                                     to="#streamline-code-reuse"
                                     className="list-group-item list-group-item-action"
-                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-style={buttonStyle.textWithArrow}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
                                 >
@@ -76,7 +76,7 @@ export default ((props: any) => (
                                 <Link
                                     to="#boost-code-health"
                                     className="list-group-item list-group-item-action"
-                                    data-button-style={buttonStyle.arrowWithText}
+                                    data-button-style={buttonStyle.textWithArrow}
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
                                 >
@@ -118,7 +118,7 @@ export default ((props: any) => (
                             to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
-                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-style={buttonStyle.outlineWithArrow}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
@@ -191,7 +191,7 @@ export default ((props: any) => (
                             to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
-                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-style={buttonStyle.outlineWithArrow}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
@@ -235,7 +235,7 @@ export default ((props: any) => (
                             to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
-                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-style={buttonStyle.outlineWithArrow}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
@@ -308,7 +308,7 @@ export default ((props: any) => (
                             to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
-                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-style={buttonStyle.outlineWithArrow}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
@@ -351,7 +351,7 @@ export default ((props: any) => (
                             to="/demo"
                             title="Request a demo"
                             className="btn btn-outline-primary"
-                            data-button-style={buttonStyle.arrowBoxOutlined}
+                            data-button-style={buttonStyle.outlineWithArrow}
                             data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
