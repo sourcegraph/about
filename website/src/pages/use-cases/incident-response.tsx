@@ -115,21 +115,27 @@ const quoteCarouselItems = [
     },
 ]
 
-const blogListItems = [
+const resourceItems = [
     {
         title: 'Log4j Log4Shell 0-day: find, fix, and track affected code',
         description:
             'In the biggest security vulnerability incident since Heartbleed, Sourcegraph co-founder and CEO Quinn Slack shared how you can find affected code, automate fixes, and track progress.',
         type: 'Blog post',
-        image: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
+        img: {
+            src: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
+            alt: 'Log4j blog thumbnail',
+        },
         href: '/blog/log4j-log4shell-0-day',
     },
     {
-        title: `The real weakest link in software supply chain security (it's not open source)`,
+        title: "The real weakest link in software supply chain security (it's not open source)",
         description:
             'Using open source code can jump-start development but it can also expose you to security vulnerabilities. In this post, learn how to design an effective vulnerability management process that can make dependencies visible and mitigation less time-consuming.',
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png',
+            alt: 'The weakest link in software supply blog thumbnail',
+        },
         href: '/blog/real-weakest-link-in-software-supply-chain-security',
     },
     {
@@ -137,7 +143,10 @@ const blogListItems = [
         description:
             'Back in early 2021, Sourcegraph stored infrastructure and service passwords in private repositories. Security engineer André Eleuterio moved every secret to a secure vault and used code search to ensure the move was successful and complete.',
         type: 'Blog post',
-        image: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
+        img: {
+            src: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
+            alt: 'Remove secrets from your codebase blog thumbnail',
+        },
         href: '/blog/eliminate-secrets-from-codebase-with-universal-code-search',
     },
 ]
@@ -333,7 +342,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>
                 </div>
-                {blogListItems.map(item => (
+                {resourceItems.map(item => (
                     <BlogListItem key={item.title} blog={item} />
                 ))}
             </div>
