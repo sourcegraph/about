@@ -173,7 +173,8 @@ const FeatureSection: FunctionComponent = () => {
                                 rel="noreferrer"
                                 className="btn btn-outline-primary mt-2"
                                 data-button-style={buttonStyle.outline}
-                                data-button-location={buttonLocation.bodyDemo}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 Learn more about {startCase(feature.productFeature)}
                             </a>
@@ -182,7 +183,8 @@ const FeatureSection: FunctionComponent = () => {
                                 to={feature.ctaLink}
                                 className="btn btn-outline-primary mt-2"
                                 data-button-style={buttonStyle.outline}
-                                data-button-location={buttonLocation.bodyDemo}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 Learn more about {startCase(feature.productFeature)}
                             </Link>

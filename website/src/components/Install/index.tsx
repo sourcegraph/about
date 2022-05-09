@@ -64,7 +64,7 @@ export const Install: React.FunctionComponent = () => {
                 <a
                     className="d-inline-block text-lg"
                     href="https://docs.sourcegraph.com"
-                    data-button-style={buttonStyle.arrowWithText}
+                    data-button-style={buttonStyle.textWithArrow}
                     data-button-location={buttonLocation.trySourcegraph}
                     data-button-type="cta"
                 >
