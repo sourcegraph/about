@@ -32,7 +32,7 @@ When I think of my own work as a developer, there isn't just one big loop, as pi
 - The outer loop maps roughly to the SDLC and happens at the level of sprints, projects, or releases.
 - The inner one is the read-write-run loop that happens many times per day when you're in the thick of understanding code, writing code, running tests, and repeating until you're happy with the code.
 
-![developer inner loop and outer loop diagram](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image3.png)
+![developer inner loop and outer loop diagram](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/drive-download-20220509T174543Z-001/image3.svg)
 
 You enter the inner loop whenever you get "close to the source" in the development process. This happens at multiple points in the outer loop, such as when you’re:
 
@@ -49,11 +49,11 @@ It's important to talk about the inner loop. It's the heart of software creation
 
 Inside the inner loop is the golden state: [Flow](https://stackoverflow.blog/2018/09/10/developer-flow-state-and-its-impact-on-productivity/). Flow state is that state of focus and productivity that you attain when you're feeling inspired and motivated. It’s when you have "paged in" all the necessary context and can actually have fun. It's when you're _coding at the speed of thought_. The ideal path to Flow is represented in this first graph:
 
-![Developer productivity over time approaches a flow state limit if there are no interruptions.](images/image3.png 'image_tooltip')
+![Developer productivity over time approaches a flow state limit if there are no interruptions.](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/drive-download-20220509T174543Z-001/Productivity-flow.svg)
 
 Reaching flow state accelerates the inner loop. But flow state takes uninterrupted time to reach. Mental context switches take you out of it. The most common complaint I hear from developers struggling to get things done is that there are too many interruptions. Many devs' day-to-day sadly looks more like this graph:
 
-![Interruptions disrupt the progress toward flow state.](images/image4.png 'image_tooltip')
+![Interruptions disrupt the progress toward flow state.](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/drive-download-20220509T174543Z-001/Productivity-no%20flow.svg)
 
 Flow-destroying interruptions can be internal or external.
 
@@ -72,7 +72,7 @@ The atomic unit of developer productivity ought then to be one iteration of the 
 
 In the physical world, velocity has two components: direction and speed. Analogously, developer velocity can also be broken down into a direction and a magnitude.
 
-![The software development odyssey](images/image5.png 'image_tooltip')
+![The software development odyssey](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/drive-download-20220509T174543Z-001/Programming%20odyssey.svg)
 
 The speed component indicates how quickly you're cycling through the inner loop. The more you reach flow state, the faster you iterate, and the sooner you’re able to ship your new feature or patch.
 
@@ -86,7 +86,7 @@ So far, our pictures have treated software development as a solo endeavor. But m
 
 Individual velocity tends to be choppy. There are inevitably days spent mostly onboarding to unfamiliar code or where external factors interrupt regularly scheduled programming. But individual bumps smooth out when you add them together.
 
-![The productivity of a team of people won't swing as a widely as that of an individual over time.](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image4.png)
+![The productivity of a team of people won't swing as a widely as that of an individual over time.](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/drive-download-20220509T174543Z-001/image4.svg)
 
 If a team suffers from a sustained period of low productivity, it's worthwhile to ask what factor caused a correlated drop in productivity across all members of the team. Sometimes, there's a natural explanation—perhaps a new quarterly planning process took up an inordinate amount of time. And sometimes there is a more serious cause—morale issues, technical debt, or a lack of clear goals and priorities.
 
