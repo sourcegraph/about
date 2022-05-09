@@ -133,26 +133,38 @@ const quoteCarouselItems = [
     },
 ]
 
-const blogListItems = [
+const resourceItems = [
     {
         title: 'How not to break a search engine or: What I learned about unglamorous engineering',
-        description: `When Sourcegraph switched to a new search query parser, you'd never know anything had changed.  This is an account of the rigorous testing that happened behind the scenes to ensure a seamless transition.`,
+        description:
+            "When Sourcegraph switched to a new search query parser, you'd never know anything had changed.  This is an account of the rigorous testing that happened behind the scenes to ensure a seamless transition.",
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png',
+            alt: 'Unglamorous engineering blog thumbnail',
+        },
         href: '/blog/how-not-to-break-a-search-engine-unglamorous-engineering',
     },
     {
         title: 'How we migrated entirely to CSS Modules using codemods and Sourcegraph Code Insights',
-        description: `Learn how Sourcegraph's Frontend Platform team overhauled our web application's design system and UI using codemods to automate a challenging global migration to CSS modules and Code Insights to track and communicate progress.`,
+        description:
+            "Learn how Sourcegraph's Frontend Platform team overhauled our web application's design system and UI using codemods to automate a challenging global migration to CSS modules and Code Insights to track and communicate progress.",
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
+            alt: 'CSS modules migration blog thumbnail',
+        },
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
         title: 'How we added backend integration testing to our CI pipeline',
-        description: `Here's the story and the lessons learned from our work to remove all existing backend-related end-to-end tests and reliably run their corresponding unit and integration tests as part of our CI pipeline on all branches.`,
+        description:
+            "Here's the story and the lessons learned from our work to remove all existing backend-related end-to-end tests and reliably run their corresponding unit and integration tests as part of our CI pipeline on all branches.",
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/backend-integration-testing/backend-integration-testing.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/backend-integration-testing/backend-integration-testing.png',
+            alt: 'Backend integration testing blog thumbnail',
+        },
         href: '/blog/integration-testing',
     },
 ]
@@ -330,7 +342,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>
                 </div>
-                {blogListItems.map(item => (
+                {resourceItems.map(item => (
                     <BlogListItem key={item.title} blog={item} />
                 ))}
             </div>
