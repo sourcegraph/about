@@ -5,15 +5,15 @@ author: Beyang Liu
 authorUrl: https://twitter.com/beyang
 publishDate: 2022-06-28T18:00+02:00
 tags: [blog]
-slug: developer-productivity
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
-socialImage:
+slug: developer-productivity-thoughts
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
 It's interesting how few diagrams you use see in discussions about "developer productivity".
 
-There are many acronyms (such as DORA), plenty of magic metrics, and long lists of supposed best practices. These may focus on one or two aspects of software development, but none tries to model the behavior of the system as a whole. That's a bit surprising, isn't it? Programmers are usually eager to call out the dangers of local optimization. And so much of what we do is building and modeling systems, which often involves drawing boxes and arrows that describe how those systems work. Why aren't we drawing any that describe how we, ourselves, work? \
+There are many acronyms (such as DORA), plenty of magic metrics, and long lists of supposed best practices. These may focus on one or two aspects of software development, but none tries to model the behavior of the system as a whole. That's a bit surprising, isn't it? Programmers are usually eager to call out the dangers of local optimization. And so much of what we do is building and modeling systems, which often involves drawing boxes and arrows that describe how those systems work. Why aren't we drawing any that describe how we, ourselves, work?
 
 I wouldn't call myself an expert in developer productivity. I'm just a developer who is perhaps a little wary of what the "experts" have had to say on the topic of how I supposedly work or should be working. But it's one thing to criticize, and another to offer a viable alternative. Such an alternative should start from first principles and direct observations. From that starting point, it should incorporate the wisdom of direct practitioners with strategies discovered from years working directly with code.
 
@@ -32,7 +32,7 @@ When I think of my own work as a developer, there isn't just one big loop, as pi
 - The outer loop maps roughly to the SDLC and happens at the level of sprints, projects, or releases.
 - The inner one is the read-write-run loop that happens many times per day when you're in the thick of understanding code, writing code, running tests, and repeating until you're happy with the code.
 
-![Diagram of inner and outer developer loops](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image3.png)
+![developer inner loop and outer loop diagram](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image3.png)
 
 You enter the inner loop whenever you get "close to the source" in the development process. This happens at multiple points in the outer loop, such as when you’re:
 
@@ -49,11 +49,11 @@ It's important to talk about the inner loop. It's the heart of software creation
 
 Inside the inner loop is the golden state: [Flow](https://stackoverflow.blog/2018/09/10/developer-flow-state-and-its-impact-on-productivity/). Flow state is that state of focus and productivity that you attain when you're feeling inspired and motivated. It’s when you have "paged in" all the necessary context and can actually have fun. It's when you're _coding at the speed of thought_. The ideal path to Flow is represented in this first graph:
 
-![Diagram of ideal progress toward flow state](images/image3.png 'image_tooltip')
+![Developer productivity over time approaches a flow state limit if there are no interruptions.](images/image3.png 'image_tooltip')
 
 Reaching flow state accelerates the inner loop. But flow state takes uninterrupted time to reach. Mental context switches take you out of it. The most common complaint I hear from developers struggling to get things done is that there are too many interruptions. Many devs' day-to-day sadly looks more like this graph:
 
-![Diagram of interrupted progress toward flow state](images/image4.png 'image_tooltip')
+![Interruptions disrupt the progress toward flow state.](images/image4.png 'image_tooltip')
 
 Flow-destroying interruptions can be internal or external.
 
@@ -72,7 +72,7 @@ The atomic unit of developer productivity ought then to be one iteration of the 
 
 In the physical world, velocity has two components: direction and speed. Analogously, developer velocity can also be broken down into a direction and a magnitude.
 
-![Diagram of software development odyssey](images/image5.png 'image_tooltip')
+![The software development odyssey](images/image5.png 'image_tooltip')
 
 The speed component indicates how quickly you're cycling through the inner loop. The more you reach flow state, the faster you iterate, and the sooner you’re able to ship your new feature or patch.
 
@@ -86,7 +86,7 @@ So far, our pictures have treated software development as a solo endeavor. But m
 
 Individual velocity tends to be choppy. There are inevitably days spent mostly onboarding to unfamiliar code or where external factors interrupt regularly scheduled programming. But individual bumps smooth out when you add them together.
 
-![Diagram showing how a healthy team can sustain high velocity](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image4.png)
+![The productivity of a team of people won't swing as a widely as that of an individual over time.](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image4.png)
 
 If a team suffers from a sustained period of low productivity, it's worthwhile to ask what factor caused a correlated drop in productivity across all members of the team. Sometimes, there's a natural explanation—perhaps a new quarterly planning process took up an inordinate amount of time. And sometimes there is a more serious cause—morale issues, technical debt, or a lack of clear goals and priorities.
 
@@ -121,6 +121,10 @@ It is to our benefit, and to the benefit of our industry and society at large, t
 In this post, I've sketched out some pictures that resonate with one developer—me. What about you? When you think about your own creative process and your team’s processes, what pictures come to mind? Let us know in the comments on Reddit or Twitter.
 
 _Huge thanks to Dan Robinson, Thorsten Ball, Stephen Gutekanst, Timothy Liu, and Nick Moore for providing feedback on this post._
+
+#### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph, the code intelligence platform for dev teams and making coding more accessible to more people. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software for Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab._
 
 ### More posts like this
 
