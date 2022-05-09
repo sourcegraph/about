@@ -112,7 +112,7 @@ const UseCases: FunctionComponent = () => {
                             <h4 className="font-weight-bold">{useCase.title}</h4>
                             <div className="text-lg">
                                 <p className="m-0">{useCase.description}</p>
-                                {useCase.link && 
+                                {useCase.link && (
                                     <Link
                                         to={useCase.link.href}
                                         data-button-style={buttonStyle.text}
@@ -121,7 +121,7 @@ const UseCases: FunctionComponent = () => {
                                     >
                                         {useCase.link.text}
                                     </Link>
-                                }
+                                )}
                             </div>
                         </div>
                     </div>

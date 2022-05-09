@@ -4,7 +4,7 @@ export const buttonStyle = {
     arrowWithText: 3,
     arrowBoxWithText: 4,
     arrowBoxOutlined: 5,
-    text: 6
+    text: 6,
 }
 
 export const buttonLocation = {
@@ -12,5 +12,5 @@ export const buttonLocation = {
     hero: 2,
     bodyDemo: 3,
     trySourcegraph: 4,
-    body: 5
+    body: 5,
 }
