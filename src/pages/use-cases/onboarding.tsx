@@ -167,48 +167,36 @@ const UseCasePage: FunctionComponent = () => (
             description:
                 'Decrease time to first commit for new developers, help existing engineers master your codebase, and fast-track full codebase understanding.',
         }}
-        className="use-cases-page"
-        heroAndHeaderClassName={`${styles.pageHeader} navbar-light`}
+        className="use-cases-page navbar-light"
         hero={
             <>
-                <div className="bg" />
-                <div className="container pb-4">
-                    <div className="row">
-                        <div className="col-lg-7 mb-8 mt-7">
-                            <BackButtonBold href="/use-cases" text="USE CASES" />
-                            <h1 className="display-2 font-weight-bold mb-4">Accelerate developer onboarding</h1>
-                            <div className="display-4 font-weight-normal mb-5">
-                                Decrease time to first commit for new developers, help existing engineers master your
-                                codebase, and fast-track full codebase understanding.
-                            </div>
-                            <div className="d-flex flex-column flex-lg-row pt-1">
-                                <Link
-                                    href="/demo"
-                                    passHref={true}
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a
-                                        className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                        title="Request a Demo."
-                                    >
-                                        Request a demo
-                                    </a>
-                                </Link>
-                                <Link
-                                    href="/get-started"
-                                    passHref={true}
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a className="btn btn-outline-primary w-md-100" title="Try Sourcegraph.">
-                                        Try Sourcegraph now
-                                    </a>
-                                </Link>
+                <div className={styles.pageHeader}>
+                    <div className="container pb-4">
+                        <div className="row">
+                            <div className="col-lg-7 mb-8 mt-7">
+                                <BackButtonBold href="/use-cases" text="USE CASES" />
+                                <h1 className="display-2 font-weight-bold mb-4">Accelerate developer onboarding</h1>
+                                <div className="display-4 font-weight-normal mb-5">
+                                    Decrease time to first commit for new developers, help existing engineers master
+                                    your codebase, and fast-track full codebase understanding.
+                                </div>
+                                <div className="d-flex flex-column flex-lg-row pt-1">
+                                    <Link href="/demo" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a
+                                            className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
+                                            title="Request a Demo."
+                                        >
+                                            Request a demo
+                                        </a>
+                                    </Link>
+                                    <Link href="/get-started" passHref={true}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a className="btn btn-outline-primary w-md-100" title="Try Sourcegraph.">
+                                            Try Sourcegraph now
+                                        </a>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

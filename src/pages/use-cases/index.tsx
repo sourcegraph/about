@@ -83,7 +83,7 @@ const UseCases: React.FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases/vulnerabilities" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-link font-weight-bold">Learn more</a>
+                            <a className="btn btn-link">Learn more</a>
                         </Link>
                     </div>
                     <div className="col-lg-6 mt-8 px-6 text-center">
@@ -144,7 +144,7 @@ const UseCases: React.FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases/onboarding" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-link font-weight-bold">Learn more</a>
+                            <a className="btn btn-link">Learn more</a>
                         </Link>
                     </div>
                 </div>
@@ -247,7 +247,7 @@ const UseCases: React.FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases/code-reuse" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-link font-weight-bold">Learn more</a>
+                            <a className="btn btn-link">Learn more</a>
                         </Link>
                     </div>
                 </div>
@@ -284,6 +284,10 @@ const UseCases: React.FunctionComponent = () => (
                             <a className="btn btn-outline-primary">
                                 Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
+                        </Link>
+                        <Link href="/use-cases/code-health" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a className="btn btn-link">Learn more</a>
                         </Link>
                     </div>
                     <div className="col-lg-6 mt-6 px-6 text-center">
