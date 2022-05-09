@@ -1,28 +1,28 @@
 import { FunctionComponent } from 'react'
 
-interface Result {
-    subtitle: string
+interface Item {
+    icon?: React.ReactNode
+    subtitle: React.ReactNode
     description: string
 }
 
 interface Props {
     title: string
-    results: Result[]
+    items: Item[]
 }
 
-export const ThreeUpText: FunctionComponent<Props> = ({ title, results }) => (
-    <div className="bg-gradient-venus-radial py-lg-7 p-5">
-        <section className="container-xl">
-            <h2 className="text-center display-3 font-weight-bold">{title}</h2>
+export const ThreeUpText: FunctionComponent<Props> = ({ title, items }) => (
+    <section className="row mx-lg-0 mx-4">
+        <h1 className="text-center col-12 max-w-lg-550 mx-auto mt-6 mb-lg-4 px-0 font-weight-bold">{title}</h1>
 
-            <div className="mb-5 d-flex flex-wrap justify-content-center">
-                {results.map((result, index) => (
-                    <div key={`result-${index + 1}-${result.subtitle}`} className="col-sm-12 col-md-4 text-center pt-5">
-                        <h3 className="pb-3 font-weight-bold text-curious-blue">{result.subtitle}</h3>
-                        <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">{result.description}</p>
-                    </div>
-                ))}
-            </div>
-        </section>
-    </div>
+        <div className="mb-6 d-flex flex-wrap justify-content-between">
+            {items.map((item, index) => (
+                <div key={`item-${index + 1}-${item.description}`} className="col-12 col-lg-4 text-center pt-5">
+                    {item.icon && item.icon}
+                    {item.subtitle}
+                    <p className="max-w-md-400 mx-auto">{item.description}</p>
+                </div>
+            ))}
+        </div>
+    </section>
 )

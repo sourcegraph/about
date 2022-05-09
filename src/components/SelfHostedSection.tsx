@@ -51,14 +51,15 @@ export const SelfHostedSection: FunctionComponent = () => (
                         <li>Free trial for enterprise features</li>
                     </ul>
 
-                    <Link href="/get-started" passHref={true}>
+                    <Link
+                        href="/get-started"
+                        passHref={true}
+                        data-button-style={buttonStyle.arrowWithText}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                    >
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a
-                            className="d-inline-flex font-weight-bold"
-                            data-button-style={buttonStyle.arrowWithText}
-                            data-button-location={buttonLocation.trySourcegraph}
-                            data-button-type="cta"
-                        >
+                        <a className="d-inline-flex font-weight-bold">
                             Learn about self-hosted vs.Cloud features <ArrowRightIcon className="ml-1" />
                         </a>
                     </Link>

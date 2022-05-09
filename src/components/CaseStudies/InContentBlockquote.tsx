@@ -6,8 +6,8 @@ interface Props {
 }
 
 export const InContentBlockquote: FunctionComponent<Props> = ({ quote, author }) => (
-    <blockquote className="blockquote case-studies__quote case-studies__quote--in-content">
-        <p>{quote}</p>
-        {author && <footer className="blockquote-footer">{author}</footer>}
+    <blockquote className="blockquote pl-5">
+        <p className="font-weight-bold border-left border-3 border-vermillion px-4">&ldquo;{quote}&rdquo;</p>
+        {author && <figcaption className="text-muted">&mdash; {author}</figcaption>}
     </blockquote>
 )

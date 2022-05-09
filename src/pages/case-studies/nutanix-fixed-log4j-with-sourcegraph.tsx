@@ -12,6 +12,23 @@ import {
     UseChallengeSolutionResults,
 } from '@components'
 
+const threeUpTextItems = [
+    {
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">{'<'} 5 min</h4>,
+        description:
+            'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
+    },
+    {
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">4 days</h4>,
+        description:
+            'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
+    },
+    {
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">100% confidence</h4>,
+        description: 'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
+    },
+]
+
 export const CaseStudy: FunctionComponent = () => (
     <Layout
         meta={{
@@ -191,26 +208,11 @@ export const CaseStudy: FunctionComponent = () => (
                 </section>
             </ContentSection>
 
-            <ThreeUpText
-                title="Results"
-                results={[
-                    {
-                        subtitle: '< 5 min',
-                        description:
-                            'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
-                    },
-                    {
-                        subtitle: '4 days',
-                        description:
-                            'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
-                    },
-                    {
-                        subtitle: '100% confidence',
-                        description:
-                            'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
-                    },
-                ]}
-            />
+            <div className="bg-gradient-venus-radial py-5">
+                <ContentSection className="my-lg-5">
+                    <ThreeUpText title="Results" items={threeUpTextItems} />
+                </ContentSection>
+            </div>
 
             <ContentSection color="white" className="py-6 max-w-700 col-xl-5">
                 <section>

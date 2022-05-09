@@ -50,11 +50,15 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
                             quote={item.quote}
                             header={item.header}
                             author={item.by}
-                            logoHref={item.logoHref}
-                            logoImage={item.logoImage}
-                            logoAlt={item.logoAlt}
-                            linkText={item.linkText}
-                            link={item.link}
+                            logo={{
+                                src: item.logoImage || '',
+                                alt: item.logoAlt || '',
+                                href: item.logoHref,
+                            }}
+                            link={{
+                                href: item.link || '',
+                                text: item.linkText || '',
+                            }}
                         />
                     </div>
                 ))}

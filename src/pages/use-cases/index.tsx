@@ -3,7 +3,7 @@ import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { Layout, ContentSection, TrySourcegraph, CustomerLogosSectionAnimated } from '@components'
+import { Layout, BlockquoteWithBorder, ContentSection, TrySourcegraph, CustomerLogosSectionAnimated } from '@components'
 
 import styles from './useCases.module.scss'
 
@@ -86,28 +86,16 @@ const UseCases: React.FunctionComponent = () => (
                             <a className="btn btn-link font-weight-bold">Learn more</a>
                         </Link>
                     </div>
-                    <div className="col-lg-6 text-center">
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
-                            <p>
-                                [Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and
-                                when we get asked by an auditor.
-                            </p>
-                            <footer className="blockquote-footer">David Haynes, Security Engineer at Cloudflare</footer>
-                            <div className="d-flex justify-content-center my-4">
-                                <Link
-                                    href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
-                                    passHref={true}
-                                >
-                                    <a href="#none" className="btn">
-                                        <img
-                                            src="/external-logos/cloudflare-color-logo.svg"
-                                            width="110px"
-                                            alt="Cloudflare"
-                                        />
-                                    </a>
-                                </Link>
-                            </div>
-                        </blockquote>
+                    <div className="col-lg-6 mt-8 px-6 text-center">
+                        <BlockquoteWithBorder
+                            quote="[Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and when we get asked by an auditor."
+                            author="David Haynes, Security Engineer at Cloudflare"
+                            logo={{
+                                src: '/external-logos/cloudflare-color-logo.svg',
+                                alt: 'Cloudflare',
+                                href: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
+                            }}
+                        />
                     </div>
                 </div>
             </ContentSection>
@@ -116,22 +104,16 @@ const UseCases: React.FunctionComponent = () => (
 
             <ContentSection id="accelerate-developer-onboarding" className="py-4">
                 <div className="row justify-content-center pt-md-4">
-                    <div className="col-lg-6 text-center">
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-8">
-                            <p>
-                                For our new developers, Sourcegraph has been invaluable to get to know the repository
-                                structure, to track down where code lives, and self-service during their investigations.
-                            </p>
-                            <footer className="blockquote-footer">Owen Kim, Senior Software Engineer, Convoy</footer>
-
-                            <div className="d-flex justify-content-center my-4">
-                                <Link href="/case-studies/convoy-improved-on-boarding" passHref={true}>
-                                    <a href="#none" className="btn">
-                                        <img src="/external-logos/convoy-logo.svg" width="110px" alt="Convoy" />
-                                    </a>
-                                </Link>
-                            </div>
-                        </blockquote>
+                    <div className="col-lg-6 mt-8 px-6 text-center">
+                        <BlockquoteWithBorder
+                            quote="For our new developers, Sourcegraph has been invaluable to get to know the repository structure, to track down where code lives, and self-service during their investigations."
+                            author="Owen Kim, Senior Software Engineer, Convoy"
+                            logo={{
+                                src: '/external-logos/convoy-logo.svg',
+                                alt: 'Convoy',
+                                href: '/case-studies/convoy-improved-on-boarding',
+                            }}
+                        />
                     </div>
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Accelerate developer onboarding</h2>
@@ -176,10 +158,11 @@ const UseCases: React.FunctionComponent = () => (
                         <h2 className="display-3 font-weight-bold mb-3">Resolve incidents faster</h2>
                         <h5>Identify the root cause in code and fix the issue everywhere.</h5>
                         <p>
-                            Every minute matters when responding to a business-critical incident. Downtime = revenue
-                            lost. Sourcegraph helps development teams identify the root cause in code, understand why
-                            the problem occurred and its potential impact on other services, fix the issue everywhere so
-                            it won't reoccur, and assure incident responders that all holes are plugged.
+                            &ldquo;Every minute matters when responding to a business-critical incident. Downtime =
+                            revenue lost. Sourcegraph helps development teams identify the root cause in code,
+                            understand why the problem occurred and its potential impact on other services, fix the
+                            issue everywhere so it won't reoccur, and assure incident responders that all holes are
+                            plugged.&rdquo;
                         </p>
                         <ul>
                             <li>
@@ -195,28 +178,23 @@ const UseCases: React.FunctionComponent = () => (
                                 search notebook
                             </li>
                         </ul>
-                        <Link href="/demo">
+                        <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="btn btn-outline-primary">
                                 Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </Link>
                     </div>
-                    <div className="col-lg-6 text-center">
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
-                            <p>
-                                Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything:
-                                Sourcegraph returns all search results, it doesn't drop or elide them.
-                            </p>
-                            <footer className="blockquote-footer">Simon Law, Staff Software Engineer, Quantcast</footer>
-                            <div className="d-flex justify-content-center my-4">
-                                <Link href="/case-studies/quantcast-large-scale-refactoring" passHref={true}>
-                                    <a href="#none" className="btn">
-                                        <img src="/external-logos/quantcast-logo.svg" width="110px" alt="Quantcast" />
-                                    </a>
-                                </Link>
-                            </div>
-                        </blockquote>
+                    <div className="col-lg-6 mt-6 px-6 text-center">
+                        <BlockquoteWithBorder
+                            quote="Sourcegraph's search gave us confidence because we knew we wouldn't overlook anything: Sourcegraph returns all search results, it doesn't drop or elide them."
+                            author="Simon Law, Staff Software Engineer, Quantcast"
+                            logo={{
+                                src: '/external-logos/quantcast-logo.svg',
+                                alt: 'Quantcast',
+                                href: '/case-studies/quantcast-large-scale-refactoring',
+                            }}
+                        />
                     </div>
                 </div>
             </ContentSection>
@@ -225,23 +203,19 @@ const UseCases: React.FunctionComponent = () => (
 
             <ContentSection id="streamline-code-reuse" className="py-4">
                 <div className="row justify-content-center pt-md-4">
-                    <div className="col-lg-6 text-center">
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-7">
-                            <p>
-                                If I'm developing code for a library that might draw charts, for example, we don't want
-                                30 different ways to draw a chart at FactSet. With Sourcegraph, I can search the code to
-                                find other chart examples, and simply copy the code. This saves us time and ensures
-                                consistency.
-                            </p>
-                            <footer className="blockquote-footer">Joseph Majesky, Software Engineer, FactSet</footer>
-                            <div className="d-flex justify-content-center my-4">
-                                <Link href="/case-studies/factset-migrates-from-perforce-to-github" passHref={true}>
-                                    <a href="#none" className="btn">
-                                        <img src="/external-logos/factset-logo.svg" width="110px" alt="FactSet" />
-                                    </a>
-                                </Link>
-                            </div>
-                        </blockquote>
+                    <div className="col-lg-6 px-6 mt-6 text-center">
+                        <BlockquoteWithBorder
+                            quote="If I'm developing code for a library that might draw charts, for example, we
+                            don't want 30 different ways to draw a chart at FactSet. With Sourcegraph, I can search
+                            the code to find other chart examples, and simply copy the code. This saves us time and
+                            ensures consistency."
+                            author="Joseph Majesky, Software Engineer, FactSet"
+                            logo={{
+                                src: '/external-logos/factset-logo.svg',
+                                alt: 'Factset',
+                                href: '/case-studies/factset-migrates-from-perforce-to-github',
+                            }}
+                        />
                     </div>
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Streamline code reuse</h2>
@@ -265,11 +239,15 @@ const UseCases: React.FunctionComponent = () => (
                             </li>
                             <li>Add a code monitor to alert you of commits using an out-of-date library</li>
                         </ul>
-                        <Link href="/demo">
+                        <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="btn btn-outline-primary">
                                 Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
+                        </Link>
+                        <Link href="/use-cases/code-reuse" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a className="btn btn-link font-weight-bold">Learn more</a>
                         </Link>
                     </div>
                 </div>
@@ -301,29 +279,23 @@ const UseCases: React.FunctionComponent = () => (
                             </li>
                             <li>Efficiently tackle tech debt from legacy systems and acquisitions</li>
                         </ul>
-                        <Link href="/demo">
+                        <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a className="btn btn-outline-primary">
                                 Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </Link>
                     </div>
-                    <div className="col-lg-6 text-center">
-                        <blockquote className="blockquote case-studies__quote case-studies__quote--in-content mt-6">
-                            <p>
-                                With the help of Sourcegraph, we were able to quickly look at all clients of an API and
-                                remove unused attributes that lived in different repositories, ultimately simplifying
-                                our APIs and speeding up developer iteration time.
-                            </p>
-                            <footer className="blockquote-footer">Justin Phillips, Software Engineer, Lyft</footer>
-                            <div className="d-flex justify-content-center my-4">
-                                <Link href="/case-studies/lyft-monolith-to-microservices" passHref={true}>
-                                    <a href="#none" className="btn">
-                                        <img src="/external-logos/lyft-logo.svg" width="110px" alt="Lyft" />
-                                    </a>
-                                </Link>
-                            </div>
-                        </blockquote>
+                    <div className="col-lg-6 mt-6 px-6 text-center">
+                        <BlockquoteWithBorder
+                            quote="With the help of Sourcegraph, we were able to quickly look at all clients of an API and remove unused attributes that lived in different repositories, ultimately simplifying our APIs and speeding up developer iteration time."
+                            author="Justin Phillips, Software Engineer, Lyft"
+                            logo={{
+                                src: '/external-logos/lyft-logo.svg',
+                                alt: 'Lyft',
+                                href: '/case-studies/lyft-monolith-to-microservices',
+                            }}
+                        />
                     </div>
                 </div>
             </ContentSection>

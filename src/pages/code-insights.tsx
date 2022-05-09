@@ -273,21 +273,30 @@ const blogListItems = [
         description:
             'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.',
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
+            alt: 'Migrating to CSS modules with codemods and code insights blog thumbnail',
+        },
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
         title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
         description: 'Learn about why we built Code Insights from our CEO.',
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
+            alt: 'Announcing code insights blog thumbnail',
+        },
         href: '/blog/announcing-code-insights',
     },
     {
         title: 'Dive into documentation',
         description: 'Learn everything you need to know about Code Insights.',
         type: 'Docs',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+            alt: 'Code insights documentation thumbnail',
+        },
         href: 'https://docs.sourcegraph.com/code_insights',
     },
 ]
@@ -317,14 +326,17 @@ export const CodeInsightsPage: FunctionComponent = () => (
                                 in seconds.
                             </h4>
                             <div className="d-flex flex-column pt-1">
-                                <Link href="/contact/request-code-insights-demo" passHref={true}>
+                                <Link
+                                    href="/contact/request-code-insights-demo"
+                                    passHref={true}
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.nav}
+                                    data-button-type="cta"
+                                >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
                                         className="btn btn-primary md-col-5 col-5"
                                         title="Request a Demo of Code Insights."
-                                        data-button-style={buttonStyle.primary}
-                                        data-button-location={buttonLocation.nav}
-                                        data-button-type="cta"
                                     >
                                         Request a demo
                                     </a>
@@ -577,15 +589,15 @@ export const CodeInsightsPage: FunctionComponent = () => (
                         </p>
                     </div>
                     <div className="col-lg-7 d-flex flex-column pt-1">
-                        <Link href="/contact/request-code-insights-demo" passHref={true}>
+                        <Link
+                            href="/contact/request-code-insights-demo"
+                            passHref={true}
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
+                        >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary col-4 mr-3"
-                                title="Request a Demo of Code Insights."
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.trySourcegraph}
-                                data-button-type="cta"
-                            >
+                            <a className="btn btn-primary col-4 mr-3" title="Request a Demo of Code Insights.">
                                 Request a demo
                             </a>
                         </Link>

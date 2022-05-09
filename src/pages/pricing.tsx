@@ -135,18 +135,22 @@ const PricingPage: FunctionComponent = () => (
                             <Link href="/case-studies/lyft-monolith-to-microservices" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a className="pricing-page__quote-link">
-                                    <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
-                                        <p>
-                                            Sourcegraph gives us the ability to search for and refactor references to
-                                            deprecated services, libraries, URL patterns, and more across our 2000+
-                                            repositories, and the confidence that we're not leaving anyone behind.
+                                    <blockquote className="blockquote text-dark text-center">
+                                        <p className="text-left font-weight-bold border-left border-3 border-vermillion px-4">
+                                            &ldquo;Sourcegraph gives us the ability to search for and refactor
+                                            references to deprecated services, libraries, URL patterns, and more across
+                                            our 2000+ repositories, and the confidence that we're not leaving anyone
+                                            behind.&rdquo;
                                         </p>
-                                        <footer className="blockquote-footer text-center">
-                                            Aneesh Agrawal, Software Engineer, Lyft
-                                        </footer>
-                                        <div className="d-flex justify-content-center my-4">
-                                            <img src="/external-logos/lyft-logo.svg" width="87px" alt="Lyft" />
-                                        </div>
+                                        <small className="text-muted">
+                                            &mdash; Aneesh Agrawal, Software Engineer, Lyft
+                                        </small>
+                                        <img
+                                            src="/external-logos/lyft-logo.svg"
+                                            className="d-block mx-auto my-4"
+                                            width="87px"
+                                            alt="Lyft logo"
+                                        />
                                     </blockquote>
                                 </a>
                             </Link>
@@ -227,17 +231,22 @@ const PricingPage: FunctionComponent = () => (
 
                     <div className="row justify-content-center pt-md-4">
                         <div className="col-lg-10">
-                            <Link href="/case-studies/criteo-tackles-big-code">
+                            <Link href="/case-studies/criteo-tackles-big-code" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a className="pricing-page__quote-link">
-                                    <blockquote className="blockquote case-studies__quote case-studies__quote--in-content text-dark">
-                                        <p>Sourcegraph pays for itself many times over—it's a game changer.</p>
-                                        <footer className="blockquote-footer text-center">
-                                            François Jehl, Senior Engineering Manager, Criteo
-                                        </footer>
-                                        <div className="d-flex justify-content-center my-4">
-                                            <img src="/external-logos/criteo-logo.svg" width="156px" alt="Criteo" />
-                                        </div>
+                                    <blockquote className="blockquote text-dark text-center">
+                                        <p className="text-left font-weight-bold border-left border-3 border-vermillion px-4">
+                                            Sourcegraph pays for itself many times over—it's a game changer.
+                                        </p>
+                                        <small className="text-muted">
+                                            &mdash; François Jehl, Senior Engineering Manager, Criteo
+                                        </small>
+                                        <img
+                                            src="/external-logos/criteo-logo.svg"
+                                            className="d-block mx-auto my-4"
+                                            width="156px"
+                                            alt="Criteo logo"
+                                        />
                                     </blockquote>
                                 </a>
                             </Link>
@@ -258,15 +267,15 @@ const PricingPage: FunctionComponent = () => (
                         </p>
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
-                        <Link href="/get-started">
+                        <Link
+                            href="/get-started"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
+                            passHref={true}
+                        >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary mx-2 mb-3"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.trySourcegraph}
-                                data-button-type="cta"
-                                title="Try Sourcegraph now"
-                            >
+                            <a className="btn btn-primary mx-2 mb-3" title="Try Sourcegraph now">
                                 Try Sourcegraph now
                             </a>
                         </Link>

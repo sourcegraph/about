@@ -63,9 +63,11 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({
                         <BlockquoteWithLogoTop
                             quote={quote.text}
                             author={quote.author}
-                            logoHref={logo?.href}
-                            logoAlt={customer}
-                            logoImage={logo?.img}
+                            logo={{
+                                src: logo?.img || '',
+                                alt: customer,
+                                href: logo?.href,
+                            }}
                         />
                     </ContentSection>
                 )}

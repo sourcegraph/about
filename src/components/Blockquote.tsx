@@ -3,67 +3,73 @@ import { FunctionComponent, ReactFragment } from 'react'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
+interface Logo {
+    src: string
+    alt: string
+    href?: string
+}
+
+interface Link {
+    text: string
+    href: string
+}
+
 export const BlockquoteWithLogoBottom: FunctionComponent<{
     quote: string
     header?: string
     author?: string | ReactFragment
-    logoHref?: string
-    logoImage?: string
-    logoAlt?: string
-    linkText?: string
-    link?: string
-}> = ({ quote, header, author, logoHref, logoImage, linkText, link, logoAlt }) => (
+    logo?: Logo
+    link?: Link
+}> = ({ quote, header, author, logo, link }) => (
     <>
         {header && <h1 className="font-weight-bold">{header}</h1>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
             <h4 className="font-weight-normal">&ldquo;{quote}&rdquo;</h4>
             {author && <figcaption className="pt-3 text-muted text-center">&mdash; {author}</figcaption>}
         </blockquote>
-        {logoImage && logoAlt && (
+        {logo && (
             <div className="d-flex justify-content-center">
-                {logoHref ? (
-                    <a href={logoHref} className="btn">
-                        <img src={logoImage} width="110px" alt={logoAlt} />
+                {logo.href ? (
+                    <a href={logo.href} className="btn">
+                        <img src={logo.src} width="110px" alt={logo.alt} />
                     </a>
                 ) : (
-                    <img src={logoImage} width="110px" alt={logoAlt} />
+                    <img src={logo.src} width="110px" alt={logo.alt} />
                 )}
             </div>
         )}
-        {linkText && link && link.includes('http') && (
-            <a href={link} target="_blank" rel="nofollow noreferrer">
-                {linkText}
-                <ArrowRightIcon className="icon-inline ml-1" />
-            </a>
-        )}
-        {linkText && link && !link.includes('http') && (
-            <Link href={link} passHref={true}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="d-flex justify-content-center mt-3">
-                    <p className="font-weight-bold">{linkText}</p>
+        {link &&
+            (link.href.includes('http') ? (
+                <a href={link.href} target="_blank" rel="nofollow noreferrer">
+                    {link.text}
                     <ArrowRightIcon className="icon-inline ml-1" />
                 </a>
-            </Link>
-        )}
+            ) : (
+                <Link href={link.href} passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a className="d-flex justify-content-center mt-3">
+                        <p className="font-weight-bold">{link.text}</p>
+                        <ArrowRightIcon className="icon-inline ml-1" />
+                    </a>
+                </Link>
+            ))}
     </>
 )
 
 export const BlockquoteWithLogoTop: FunctionComponent<{
     quote: string
     author?: string | ReactFragment
-    logoHref?: string
-    logoImage?: string
-    logoAlt?: string
-}> = ({ quote, author, logoHref, logoImage, logoAlt }) => (
+    logo?: Logo
+}> = ({ quote, author, logo }) => (
     <>
-        {logoImage && logoAlt && (
+        {logo && (
             <div className="d-flex justify-content-center">
-                {logoHref ? (
-                    <a href={logoHref} className="btn">
-                        <img src={logoImage} width="150px" alt={logoAlt} />
+                {logo.href ? (
+                    <a href={logo.href} className="btn">
+                        <img src={logo.src} width="150px" alt={logo.alt} />
                     </a>
                 ) : (
-                    <img src={logoImage} width="150px" alt={logoAlt} />
+                    <img src={logo.src} width="150px" alt={logo.alt} />
                 )}
             </div>
         )}
@@ -77,44 +83,43 @@ export const BlockquoteWithLogoTop: FunctionComponent<{
 export const BlockquoteWithBorder: FunctionComponent<{
     quote: string
     author?: string | ReactFragment
-    logoImage?: string
-    logoAlt?: string
+    logo?: Logo
+    link?: Link
     headline?: string
-    linkText?: string
-    link?: string
     bold?: boolean
-}> = ({ quote, author, logoImage, headline, logoAlt, link, linkText, bold }) => (
+}> = ({ quote, author, logo, headline, link, bold }) => (
     <>
-        <blockquote className="p-3 rounded rounded-lg text-center case-studies__quote--in-content">
-            <div className="case-studies__quote--in-content--section">
-                {headline && <h5 className="font-weight-bold mb-4">{headline}</h5>}
-                <div className={bold ? 'font-weight-bold mb-3' : 'font-weight-normal mb-3'}>&ldquo;{quote}&rdquo;</div>
-            </div>
-            {author && (
-                <>
-                    <figcaption className="text-center text-muted">&mdash; {author}</figcaption>
-                </>
-            )}
+        <blockquote className="px-3 mb-5 text-center border-left border-3 border-vermillion">
+            {headline && <h4 className="font-weight-bold mb-4">{headline}</h4>}
+            <h5 className={`font-weight-${bold ? 'bold' : 'normal'} mb-3`}>&ldquo;{quote}&rdquo;</h5>
+            {author && <figcaption className="text-center text-muted mt-5">&mdash; {author}</figcaption>}
         </blockquote>
-        {logoImage && logoAlt && (
-            <div className="d-flex justify-content-center">
-                <img src={logoImage} width="110px" alt={logoAlt} />
-            </div>
-        )}
-        {linkText && link && link.includes('http') && (
-            <a href={link} target="_blank" rel="nofollow noreferrer">
-                {linkText}
-                <ArrowRightIcon className="icon-inline ml-1" />
-            </a>
-        )}
-        {linkText && link && !link.includes('http') && (
-            <Link href={link} passHref={true}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="d-flex justify-content-center mt-3">
-                    <p className="font-weight-bold">{linkText}</p>
+        {logo &&
+            (logo.href ? (
+                <Link href={logo.href} passHref={true}>
+                    <a href="#none" className="btn">
+                        <img src={logo.src} width="110px" alt={logo.alt} />
+                    </a>
+                </Link>
+            ) : (
+                <div className="d-flex justify-content-center pt-2">
+                    <img src={logo.src} width="110px" alt={logo.alt} />
+                </div>
+            ))}
+        {link &&
+            (link?.href.includes('http') ? (
+                <a href={link.href} target="_blank" rel="nofollow noreferrer">
+                    {link.text}
                     <ArrowRightIcon className="icon-inline ml-1" />
                 </a>
-            </Link>
-        )}
+            ) : (
+                <Link href={link} passHref={true}>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                    <a className="d-flex justify-content-center mt-3">
+                        <p className="font-weight-bold">{link.text}</p>
+                        <ArrowRightIcon className="icon-inline ml-1" />
+                    </a>
+                </Link>
+            ))}
     </>
 )

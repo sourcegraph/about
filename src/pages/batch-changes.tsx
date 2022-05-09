@@ -35,15 +35,15 @@ export const BatchChangesPage: FunctionComponent = () => (
                             Keep your code up to date, fix critical security issues, and pay down tech debt across all
                             of your repositories with Batch Changes.
                         </p>
-                        <Link href={batchChangesDemoFormURL} passHref={true}>
+                        <Link
+                            href={batchChangesDemoFormURL}
+                            passHref={true}
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.hero}
+                            data-button-type="cta"
+                        >
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary"
-                                title="Request a demo"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
+                            <a className="btn btn-primary" title="Request a demo">
                                 Request a demo
                             </a>
                         </Link>
@@ -125,8 +125,10 @@ export const BatchChangesPage: FunctionComponent = () => (
                         capability for reducing the hidden burden of updates pushed across teams and enabling us to
                         increase our engineering velocity.`}
                         author="Jared Hodge, Sr. Manager Developer Experience"
-                        logoImage="/external-logos/indeed-logo.svg"
-                        logoAlt="Indeed"
+                        logo={{
+                            src: '/external-logos/indeed-logo.svg',
+                            alt: 'Indeed',
+                        }}
                         bold={true}
                     />
                 </div>
@@ -217,8 +219,10 @@ export const BatchChangesPage: FunctionComponent = () => (
                         large-scale code changes before we make them. This enables the entire team to make more
                         impactful decisions more often.`}
                         author="Trent Grover, Director of Architecture - Client Technologies, Workiva"
-                        logoImage="/external-logos/workiva-vector-logo.svg"
-                        logoAlt="Workiva"
+                        logo={{
+                            src: '/external-logos/workiva-vector-logo.svg',
+                            alt: 'Workiva',
+                        }}
                         bold={true}
                     />
                 </div>
