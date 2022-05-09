@@ -21,7 +21,7 @@ Here is an attempt to do that.
 
 ### I. Inner loop and outer loop
 
-![Software development lifecycle meme](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image6.png)
+![Software development lifecycle meme](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/meme.png)
 
 <figcaption>Hi, I'm the SDLC. You may remember me from such developer marketing campaigns as Shift Left, DORA the DevOps Explorer, and Agile Waterfalls.</figcaption>
 <br>
@@ -98,11 +98,11 @@ In computers, the factors that slow down parallelization are CPU context switchi
 
 You can draw this out in a picture where you've broken down a project into different deliverables. The finished product is a pyramid of sorts, where the blocks at the bottom have to be lain before the ones on top:
 
-![Diagram of one dev with good domain knowledge working alone](images/image7.png 'image_tooltip')
+![Diagram of one dev with good domain knowledge working alone](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image1-split-01.svg)
 
 The colors map to different areas of domain expertise. If you are a developer with expertise in multiple areas, you could build the entire project yourself. Or you could delegate the task to two other developers who each have expertise in a single area:
 
-![Diagram of two devs with partial domain knowledge working together](images/image8.png 'image_tooltip')
+![Diagram of two devs with partial domain knowledge working together](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image1-split-02.svg)
 
 The two developers have the advantage that they can build separate blocks in parallel, but their parallelism is constrained by serial dependencies (some blocks must be laid before others), the friction of onboarding to unfamiliar parts of the code, and communication overhead.
 
