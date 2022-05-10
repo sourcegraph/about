@@ -35,8 +35,6 @@ When I think of my own work as a developer, there isn't just one big loop, as pi
 
 ![developer inner loop and outer loop diagram](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/drive-download-20220509T174543Z-001/image3.svg)
 
-#### The inner loop is the heart of software creation
-
 You enter the inner loop whenever you get "close to the source" in the development process. This happens at multiple points in the outer loop, such as when you’re:
 
 - Onboarding to the code you're about to change.
