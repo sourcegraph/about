@@ -42,7 +42,7 @@ You enter the inner loop whenever you get "close to the source" in the developme
 - Debugging what went wrong in a failed deployment.
 - Remediating an incident in production.
 
-It's important to talk about the inner loop. It's the heart of software creation. If you don't talk about it, then your organizations will treat it as if it doesn't matter.
+It's important to talk about the inner loop. It's the heart of software creation. If you don't talk about it, then your organization will treat it as if it doesn't matter.
 
 ### Picture 2: Reaching flow state
 
