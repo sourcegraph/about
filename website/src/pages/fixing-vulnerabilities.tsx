@@ -4,16 +4,16 @@ import { Link, PageProps } from 'gatsby'
 import Layout from '../components/Layout'
 import { FormLegal } from '../components/FormLegal'
 import { useHubSpot } from '../hooks/hubSpot'
+import { useChiliPiper } from '../hooks/chiliPiper'
+import { buttonStyle, buttonLocation } from '../tracking'
 
 const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
-    ;['topForm', 'bottomForm'].forEach(id => {
-        useHubSpot({
-            portalId: '2762526',
-            formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
-            targetId: id,
-            chiliPiper: true,
-        })
+    useHubSpot({
+        portalId: '2762526',
+        formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
+        targetId: 'topForm',
     })
+    useChiliPiper()
 
     return (
         <Layout
@@ -89,8 +89,14 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
                     </h2>
 
                     <div className="mt-5 max-w-400 mx-auto">
-                        <div id="bottomForm" />
-                        <FormLegal />
+                        <Link
+                            to="/demo"
+                            className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                        >
+                            Request a demo
+                        </Link>
                     </div>
                 </div>
             </div>

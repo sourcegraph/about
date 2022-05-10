@@ -6,6 +6,7 @@ import { CaseStudyCard } from '../components/product/CaseStudyCard'
 import { FormLegal } from '../components/FormLegal'
 import { BlogListItem } from '../components/BlogListItem'
 import { useHubSpot } from '../hooks/hubSpot'
+import { useChiliPiper } from '../hooks/chiliPiper'
 
 const resourceItems = [
     {
@@ -13,7 +14,10 @@ const resourceItems = [
         description:
             'Download the guide to developer onboarding and learn how to shift to a culture of continuous onboarding in your engineering organization.',
         type: 'Guide',
-        image: '/guides/dev-onboarding/thumbnail.png',
+        img: {
+            src: '/guides/dev-onboarding/thumbnail.png',
+            alt: 'Continuous developer onboarding guide thumbnail',
+        },
         href: '/guides/continuous-developer-onboarding',
     },
     {
@@ -21,7 +25,10 @@ const resourceItems = [
         description:
             'See how Nutanix was able to confidently identify every instance of Log4j across its sprwaling codebase and deliver patches to its customers that fully remediated the vulnerability within 4 days.',
         type: 'Case study',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+            alt: 'Nutanix fixed Log4j quickly with Sourcegraph case study thumbnail',
+        },
         href: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
     },
 ]
@@ -74,8 +81,8 @@ const PartnerPodcastPage: FunctionComponent<PageProps> = props => {
         portalId: '2762526',
         formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
         targetId: 'form',
-        chiliPiper: true,
     })
+    useChiliPiper()
 
     return (
         <Layout

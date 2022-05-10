@@ -5,6 +5,7 @@ import TimerOutlineIcon from 'mdi-react/TimerOutlineIcon'
 import React, { FunctionComponent, ReactNode } from 'react'
 
 import Layout from '../../components/Layout'
+import { ThreeUpText } from '../../components/ThreeUpText'
 import { BackButtonBold } from '../../components/BackButton'
 import { BlogListItem } from '../../components/BlogListItem'
 import { QuoteCarousel } from '../../components/QuoteCarousel'
@@ -109,6 +110,33 @@ const items = [
     },
 ]
 
+const threeUpTextItems = [
+    {
+        icon: <TimerOutlineIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Reduce time to discovery and resolution</h4>,
+        description:
+            'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
+    },
+    {
+        icon: <AutoFixIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
+        ),
+        description:
+            'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
+    },
+    {
+        icon: <ShieldAlertOutlineIcon className="mb-4 text-blurple" size={40} />,
+        subtitle: (
+            <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">
+                Alert for risky code changes & known vulnerabilities
+            </h4>
+        ),
+        description:
+            'Get on top of vulnerabilities by monitoring your repositories for commits when risky patterns and known vulnerabilities enter your codebase.',
+    },
+]
+
 const quoteCarouselItems = [
     {
         header: 'Nutanix fixed Log4j in days',
@@ -144,7 +172,10 @@ const blogListItems = [
         description:
             'In December 2021, the Log4j vulnerability shook the world. In this post, Sourcegraph founder and CEO Quinn Slack explains how to find the vulnerability using Sourcegraph.',
         type: 'Blog post',
-        image: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
+        img: {
+            src: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
+            alt: 'Log4j Log4Shell 0-day blog thumbnail',
+        },
         href: '/blog/log4j-log4shell-0-day',
     },
     {
@@ -152,7 +183,10 @@ const blogListItems = [
         description:
             'A complex web of software dependencies can stop software development in its tracks. In this post, former Google software engineer Matt Rickard explains how to handle dependencies so engineers can spend more time coding.',
         type: 'Blog post',
-        image: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
+        img: {
+            src: 'https://sourcegraphstatic.com/blog/nine-circles-of-dependency-hell.jpg',
+            alt: 'Nine circles of dependency hell blog thumbnail',
+        },
         href: '/blog/nine-circles-of-dependency-hell',
     },
     {
@@ -160,7 +194,10 @@ const blogListItems = [
         description:
             'In early 2021, many Sourcegraph infrastructure and service account passwords were stored in private repositories. With Sourcegraph code search, security engineer André Eleuterio was able to ensure he moved every secret to a secure vault.',
         type: 'Blog post',
-        image: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
+        img: {
+            src: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
+            alt: 'How to remove secrets from your codebase blog thumbnail',
+        },
         href: '/blog/eliminate-secrets-from-codebase-with-universal-code-search',
     },
 ]
@@ -174,41 +211,43 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                 'Search across all your repositories to find and resolve vulnerabilities in minutes, not days.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
-        className="use-cases-page"
-        heroAndHeaderClassName={`${styles.useCaseHeader} navbar-light`}
+        className="use-cases-page navbar-light"
         hero={
             <>
-                <div className="bg" />
-                <div className="container pb-4">
-                    <div className="row">
-                        <div className="col-lg-7 mb-8 mt-7">
-                            <BackButtonBold href="/use-cases" text="USE CASES" />
-                            <h1 className="display-2 font-weight-bold mb-4">Find and fix security vulnerabilities</h1>
-                            <div className="display-4 font-weight-normal mb-5">
-                                Search across all your repositories to find and resolve vulnerabilities in minutes, not
-                                days.
-                            </div>
-                            <div className="d-flex flex-column flex-lg-row pt-1">
-                                <Link
-                                    className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                    to="/demo"
-                                    title="Request a Demo."
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo
-                                </Link>
-                                <Link
-                                    className="btn btn-outline-primary w-md-100"
-                                    to="/get-started"
-                                    title="Try Sourcegraph."
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
-                                    Try Sourcegraph now
-                                </Link>
+                <div className={styles.useCaseHeader}>
+                    <div className="container pb-4">
+                        <div className="row">
+                            <div className="col-lg-7 mb-8 mt-7">
+                                <BackButtonBold href="/use-cases" text="USE CASES" />
+                                <h1 className="display-2 font-weight-bold mb-4">
+                                    Find and fix security vulnerabilities
+                                </h1>
+                                <div className="display-4 font-weight-normal mb-5">
+                                    Search across all your repositories to find and resolve vulnerabilities in minutes,
+                                    not days.
+                                </div>
+                                <div className="d-flex flex-column flex-lg-row pt-1">
+                                    <Link
+                                        className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
+                                        to="/demo"
+                                        title="Request a Demo."
+                                        data-button-style={buttonStyle.primary}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
+                                        Request a demo
+                                    </Link>
+                                    <Link
+                                        className="btn btn-outline-primary w-md-100"
+                                        to="/get-started"
+                                        title="Try Sourcegraph."
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
+                                        Try Sourcegraph now
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -217,39 +256,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
         }
     >
         <ContentSection className="my-lg-5">
-            <div className="row mx-lg-0 mx-4">
-                <div className="d-flex justify-content-center w-100 mt-7 mb-lg-4 mb-0">
-                    <h1 className="text-center font-weight-bold w-75 px-lg-8">
-                        Identify, resolve, and monitor with confidence
-                    </h1>
-                </div>
-                <div className="d-flex flex-column flex-lg-row mt-lg-4 mt-6 mb-6">
-                    <div className="text-center">
-                        <TimerOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Reduce time to discovery and resolution</h4>
-                        <p>
-                            Find every instance of a vulnerability and start remediating in minutes instead of days or
-                            weeks. Use that head start to deploy fixes sooner.
-                        </p>
-                    </div>
-                    <div className="mx-lg-7 text-center">
-                        <AutoFixIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
-                        <p>
-                            Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident
-                            you resolved every vulnerability.
-                        </p>
-                    </div>
-                    <div className="text-center">
-                        <ShieldAlertOutlineIcon className="mb-4 text-blurple" size={40} />
-                        <h4 className="font-weight-bold">Alert for risky code changes & known vulnerabilities</h4>
-                        <p>
-                            Get on top of vulnerabilities by monitoring your repositories for commits when risky
-                            patterns and known vulnerabilities enter your codebase.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <ThreeUpText title="Identify, resolve, and monitor with confidence" items={threeUpTextItems} />
         </ContentSection>
 
         <div className="bg-gradient-venus-radial">
@@ -323,8 +330,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
 
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column">
+                <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
+                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
                     </div>
@@ -339,8 +346,8 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         >
                             Request a demo
                         </Link>
-                        <Link to="/use-cases" className="d-flex justify-content-center mt-4">
-                            <p className="font-weight-bold">Explore other use cases</p>
+                        <Link to="/use-cases" className="d-flex justify-content-center mt-4 font-weight-bold">
+                            Explore other use cases
                         </Link>
                     </div>
                 </div>

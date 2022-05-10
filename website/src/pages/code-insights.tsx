@@ -16,6 +16,7 @@ import Layout from '../components/Layout'
 import { TabCarousel } from '../components/TabCarousel'
 import { TemplateCodeBlock } from '../components/TemplateCodeBlock'
 import { useHubSpot } from '../hooks/hubSpot'
+import { useChiliPiper } from '../hooks/chiliPiper'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 import CustomCarousel from '../components/CustomCarousel'
@@ -267,35 +268,42 @@ const blogListItems = [
         description:
             'How our Frontend Platform team used codemods to automate a challenging global migration to CSS modules, and Code Insights to track and communicate progress.',
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/migrating-to-css-modules.png',
+            alt: 'Migrating to CSS modules with codemods and code insights blog thumbnail',
+        },
         href: '/blog/migrating-to-css-modules-with-codemods-and-code-insights',
     },
     {
         title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time',
         description: 'Learn about why we built Code Insights from our CEO.',
         type: 'Blog post',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/announcement-header.png',
+            alt: 'Announcing code insights blog thumbnail',
+        },
         href: '/blog/announcing-code-insights',
     },
     {
         title: 'Dive into documentation',
         description: 'Learn everything you need to know about Code Insights.',
         type: 'Docs',
-        image: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+        img: {
+            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+            alt: 'Code insights documentation thumbnail',
+        },
         href: 'https://docs.sourcegraph.com/code_insights',
     },
 ]
 
 export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
-    ;['topForm', 'bottomForm'].forEach(id => {
-        useHubSpot({
-            portalId: '2762526',
-            formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
-            region: 'na1',
-            targetId: id,
-            chiliPiper: true,
-        })
+    useHubSpot({
+        portalId: '2762526',
+        formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
+        region: 'na1',
+        targetId: 'topForm',
     })
+    useChiliPiper()
 
     return (
         <Layout
@@ -592,7 +600,14 @@ export const CodeInsightsPage: React.FunctionComponent<PageProps> = props => {
                             </p>
                         </div>
                         <div className="col-lg-7 d-flex flex-column pt-1 max-w-400">
-                            <div id="bottomForm" />
+                            <Link
+                                to="/demo"
+                                className="btn btn-primary md-col-6 col-6"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                            >
+                                Request a demo
+                            </Link>
                         </div>
                     </div>
                 </ContentSection>

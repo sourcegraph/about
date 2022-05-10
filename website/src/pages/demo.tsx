@@ -3,14 +3,15 @@ import { PageProps } from 'gatsby'
 
 import Layout from '../components/Layout'
 import { useHubSpot } from '../hooks/hubSpot'
+import { useChiliPiper } from '../hooks/chiliPiper'
 
 const Demo: FunctionComponent<PageProps> = props => {
     useHubSpot({
         portalId: '2762526',
         formId: 'baf7d112-bb19-4b95-851e-a83e7b214b9b',
         targetId: 'form',
-        chiliPiper: true,
     })
+    useChiliPiper()
 
     return (
         <Layout

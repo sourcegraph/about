@@ -3,6 +3,7 @@ import { PageProps, Link } from 'gatsby'
 import slugify from 'slugify'
 
 import { Blockquote, BlockquoteWithLogoTop } from '../../components/Blockquote'
+import { ThreeUpText } from '../../components/ThreeUpText'
 import { CaseStudyJumbotron, AuthorBio } from '../../components/content/CaseStudyPage'
 import { CaseStudyCard, CASESTUDIES } from '../../components/product/CaseStudyCard'
 import { ContentSection } from '../../components/content/ContentSection'
@@ -12,6 +13,23 @@ import ClipboardTextOutlineIcon from 'mdi-react/ClipboardTextOutlineIcon'
 import ChartBarIcon from 'mdi-react/ChartBarIcon'
 import CheckCircleOutlineIcon from 'mdi-react/CheckCircleOutlineIcon'
 import FlagOutlineIcon from 'mdi-react/FlagOutlineIcon'
+
+const threeUpTextItems = [
+    {
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">{'<'} 5 min</h4>,
+        description:
+            'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
+    },
+    {
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">4 days</h4>,
+        description:
+            'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
+    },
+    {
+        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">100% confidence</h4>,
+        description: 'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
+    },
+]
 
 const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
     <Layout
@@ -36,7 +54,7 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
 
             <ContentSection color="white" className="py-6 text-center max-w-600">
                 <BlockquoteWithLogoTop
-                    quote={`Sourcegraph was the right product at the right time.`}
+                    quote="Sourcegraph was the right product at the right time."
                     by="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
                     logoHref="https://nutanix.com"
                     logoAlt="Nutanix"
@@ -254,33 +272,10 @@ const NutanixCaseStudy: FunctionComponent<PageProps> = props => (
                 </section>
             </ContentSection>
 
-            <div className="bg-gradient-venus-radial py-lg-7 p-5">
-                <section className="container-xl">
-                    <h2 className="text-center pb-5 display-3 font-weight-bold">Results</h2>
-                    <div className="mb-5 row">
-                        <div className="col-sm-12 col-md-4 text-center">
-                            <h3 className="pb-3 font-weight-bold text-curious-blue">{'<'} 5 min</h3>
-                            <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">
-                                Nutanix was able to see where JMSAppender existed, fix it, and send out a release in
-                                less than 5 minutes.
-                            </p>
-                        </div>
-                        <div className="col-sm-12 col-md-4 text-center">
-                            <h3 className="pb-3 font-weight-bold text-curious-blue">4 days</h3>
-                            <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">
-                                Nutanix was able to deliver patches to its customers that fully remediated the Log4j
-                                vulnerability.
-                            </p>
-                        </div>
-                        <div className="col-sm-12 col-md-4 text-center">
-                            <h3 className="pb-3 font-weight-bold text-curious-blue">100% confidence</h3>
-                            <p className="max-w-md-400 max-w-lg-250 max-w-xl-250 mx-auto">
-                                Nutanix was able to confidently identify every instance of Log4j across its sprawling
-                                codebase.
-                            </p>
-                        </div>
-                    </div>
-                </section>
+            <div className="bg-gradient-venus-radial py-5">
+                <ContentSection className="my-lg-5">
+                    <ThreeUpText title="Results" items={threeUpTextItems} />
+                </ContentSection>
             </div>
 
             <ContentSection color="white" className="py-6 max-w-700 col-xl-5">

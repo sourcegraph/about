@@ -10,32 +10,44 @@ export const Blockquote: FunctionComponent<{
     logoAlt?: string
     border?: boolean
     headline?: string
-}> = ({ quote, by, logoImage, border, headline, logoAlt }) => {
-    const quoteStyles = 'p-3 rounded rounded-lg text-center'
-
+    link?: string
+    linkText?: string
+}> = ({ quote, by, logoImage, border, headline, logoAlt, link, linkText }) => {
     return (
         <>
             <blockquote
                 className={
                     border
-                        ? classNames(quoteStyles, 'case-studies__quote--in-content')
-                        : classNames(quoteStyles, 'bg-light')
+                        ? classNames('px-3 text-center mt-6 mb-5 border-vermillion case-studies__quote--border')
+                        : classNames('p-3 text-center bg-light')
                 }
             >
                 {border && headline ? (
-                    <div className="case-studies__quote--in-content--section">
-                        <h5 className="font-weight-bold mb-4">{headline}</h5>
-                        <div className="font-weight-normal">&ldquo;{quote}&rdquo;</div>
+                    <div className="">
+                        <h4 className="font-weight-bold mb-4">{headline}</h4>
+                        <h5 className="font-weight-normal">&ldquo;{quote}&rdquo;</h5>
                     </div>
                 ) : (
                     <h3 className="font-weight-normal">&ldquo;{quote}&rdquo;</h3>
                 )}
                 {by && <figcaption className="text-center text-muted pt-4">&mdash; {by}</figcaption>}
             </blockquote>
+
             {logoImage && logoAlt && (
                 <div className="d-flex justify-content-center">
                     <img src={logoImage} width="110px" alt={logoAlt} />
                 </div>
+            )}
+            {linkText && link && link.includes('http') && (
+                <a href={link} target="_blank" rel="nofollow noopener noreferrer">
+                    {linkText}
+                </a>
+            )}
+            {linkText && link && !link.includes('http') && (
+                <Link to={link} className="d-flex justify-content-center mt-3">
+                    <p className="font-weight-bold">{linkText}</p>
+                    <ArrowRightIcon className="icon-inline ml-1" />
+                </Link>
             )}
         </>
     )
@@ -54,7 +66,11 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
     <>
         {header && <h1 className="font-weight-bold">{header}</h1>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
-            <h4 className="font-weight-normal">&ldquo;{quote}&rdquo;</h4>
+            <h4 className="font-weight-normal">
+                {by && <>&ldquo;</>}
+                {quote}
+                {by && <>&rdquo;</>}
+            </h4>
             {by && <figcaption className="pt-3 text-muted text-center">&mdash; {by}</figcaption>}
         </blockquote>
         {logoImage && logoAlt && (
