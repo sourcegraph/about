@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { PageProps } from 'gatsby'
 import Layout from '../../components/Layout'
-import WebinarLayout from '../../components/WebinarLayout'
+import WebinarLayout from '../../components/webinars/WebinarLayout'
 
 const speakers = [
     {
@@ -33,8 +33,13 @@ export const Webinar: React.FunctionComponent<PageProps> = props => (
             subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
 
             speakers={speakers}
+            customer={{
+                name: 'Nutanix',
+                logo: '/external-logos/nutanix-logo.svg',
+                href: 'https://nutanix.com',
+            }}
             description={
-                <section className="col-6">
+                <section className="col-md-6 col-12">
                     <p>
                         For Nutanix, when 20,000+ of the world's most advanced data centers rely on your company's software, any security vulnerability is a concern. But when the Log4j vulnerability hit, rated as a 10/10 on the CVSS scale, the Nutanix team knew it had to act fast. "The more we dug, the more we realized this bug was everywhere and nowhere at the same time," said Nutanix Technical Director of Solution Engineering, Jon Kohler.
                     </p>
@@ -58,9 +63,5 @@ export const Webinar: React.FunctionComponent<PageProps> = props => (
         </WebinarLayout>
     </Layout>
 )
-// customer={{
-//     name: 'Nutanix',
-//     logo: '/external-logos/nutanix-logo.svg',
-//     href: 'https://nutanix.com',
-// }}
+
 export default Webinar
