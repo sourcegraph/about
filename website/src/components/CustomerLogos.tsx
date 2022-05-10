@@ -55,8 +55,8 @@ const logos: Logos[] = [
         src: '/external-logos/lyft-logo.svg',
     },
     {
-        name: 'Adidas Running',
-        src: '/external-logos/adidas-runtastic-sq-logo.svg',
+        name: 'Canva',
+        src: '/external-logos/canva-logo.svg',
     },
     {
         name: 'Shipt',

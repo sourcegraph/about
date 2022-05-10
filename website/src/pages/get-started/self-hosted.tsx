@@ -63,7 +63,7 @@ export const SelfHostedPage: FunctionComponent<PageProps> = props => (
                     <div className="d-flex flex-column align-items-start">
                         <a
                             className="btn p-0 mt-5 text-primary"
-                            data-button-style={buttonStyle.arrowWithText}
+                            data-button-style={buttonStyle.textWithArrow}
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
                             href="https://info.sourcegraph.com/talk-to-a-developer"
