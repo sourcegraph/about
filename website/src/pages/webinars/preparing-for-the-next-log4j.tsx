@@ -4,21 +4,19 @@ import { PageProps } from 'gatsby'
 import Layout from '../../components/Layout'
 import WebinarLayout from '../../components/WebinarLayout'
 
-const threeUpTextItems = [
+const speakers = [
     {
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">{'<'} 5 min</h4>,
-        description:
-            'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
+        name: 'Jon Kohler',
+        title: 'Technical Director of Solution Engineering at Nutanix',
+        img: '/case-studies/jon-kohler.png',
+        bio: 'Jon is a leader in the Solutions Engineering practice at Nutanix. His team covers a variety of full-stack technical solutions, focusing on both Big Data and Healthcare solutions.',
     },
     {
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">4 days</h4>,
-        description:
-            'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
-    },
-    {
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">100% confidence</h4>,
-        description: 'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
-    },
+        name: 'Mike McLaughlin',
+        title: 'Principle Customer Engineer at Sourcegraph',
+        img: '/case-studies/mike-mclaughlin.png',
+        bio: 'Mike is a Principal Customer Engineer at Sourcegraph working with some of today’s largest brands to solve the challenges of big code, developer velocity, and fixing vulnerabilities.',
+    }
 ]
 
 export const Webinar: React.FunctionComponent<PageProps> = props => (
@@ -33,13 +31,10 @@ export const Webinar: React.FunctionComponent<PageProps> = props => (
         <WebinarLayout
             title="Preparing for the Next Log4j"
             subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
-            customer={{
-                name: 'Nutanix',
-                logo: '/external-logos/nutanix-logo.svg',
-                href: 'https://nutanix.com',
-            }}
+
+            speakers={speakers}
             description={
-                <body className="bg-white col-6">
+                <section className="col-6">
                     <p>
                         For Nutanix, when 20,000+ of the world's most advanced data centers rely on your company's software, any security vulnerability is a concern. But when the Log4j vulnerability hit, rated as a 10/10 on the CVSS scale, the Nutanix team knew it had to act fast. "The more we dug, the more we realized this bug was everywhere and nowhere at the same time," said Nutanix Technical Director of Solution Engineering, Jon Kohler.
                     </p>
@@ -57,11 +52,15 @@ export const Webinar: React.FunctionComponent<PageProps> = props => (
                         <li>How this experience led to a renewed trust in Nutanix's vulnerability remediation for management and customers</li>
                         <li>Best practices to prepare for the next security vulnerability</li>
                     </ul>
-                </body>
+                </section>
             }
         >
         </WebinarLayout>
     </Layout>
 )
-
+// customer={{
+//     name: 'Nutanix',
+//     logo: '/external-logos/nutanix-logo.svg',
+//     href: 'https://nutanix.com',
+// }}
 export default Webinar
