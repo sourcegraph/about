@@ -20,6 +20,10 @@
         color: $light !important;
     }
 
+    &.navbar-white {
+        background-color: $white !important;
+    }
+
     &.navbar-dark .header {
         &__logo {
             background: url('/sourcegraph-reverse-logo.svg') no-repeat;

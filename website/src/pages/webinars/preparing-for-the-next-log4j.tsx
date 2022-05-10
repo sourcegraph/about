@@ -27,6 +27,7 @@ export const Webinar: React.FunctionComponent<PageProps> = props => (
             description: 'On-Demand Webinar. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
+        className="navbar-white"
     >
         <WebinarLayout
             title="Preparing for the Next Log4j"
