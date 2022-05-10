@@ -15,9 +15,7 @@ Why don't we hear more developer voices in the conversation about "developer pro
 
 Devs are systems thinkers. Our job is to model and build systems, and we often draw out diagrams and schematics to illustrate how those systems work. But when it comes to our own work, we are letting others draw the pictures—and they've done a poor job. I doubt that I'm the only dev who feels a little wary of what the "experts" on my productivity have had to say.
 
-Instead, shouldn't we start from direct experience, our own mental models of how we work? Shouldn't _we_ be drawing pictures and diagrams that actually approximate the world in which we live?
-
-Well, here's an attempt to do so.
+Instead, shouldn't we start from direct experience, our own mental models of how we work? Shouldn't _we_ be drawing pictures and diagrams that actually approximate the world in which we live? Here's an attempt to do so.
 
 ### Picture 1: The inner loop and outer loop
 
@@ -44,7 +42,7 @@ You enter the inner loop whenever you get "close to the source" in the developme
 - Debugging what went wrong in a failed deployment.
 - Remediating an incident in production.
 
-It's important to talk about the inner loop. It's the heart of software creation. If we don't talk about it, then our leaders will treat it as if it doesn't matter.
+It's important to talk about the inner loop. It's the heart of software creation. If you don't talk about it, then your organizations will treat it as if it doesn't matter.
 
 ### Picture 2: Reaching flow state
 
@@ -81,7 +79,7 @@ The speed component indicates how quickly you're cycling through the inner loop.
 
 The directional component reflects the technical direction taken—whether you use library X or Y, for example. Picking a good direction might provide a critical shortcut. Picking a bad direction might mean you have to retrace your steps later.
 
-Great direction-setting means making the choices that get an end-to-end system up and running as quickly as possible. Getting a system set up quickly de-risks the overall project. Reaching a shippable state well before the appointed deadline means you can make further improvements in the time remaining. It's helpful to view the destination not as a single point, but as a zone of acceptable outcomes. Get into the acceptable zone first and then improve your position.
+Great direction-setting means making the choices that get an end-to-end system up and running as quickly as possible. Getting an end-to-end system up quickly de-risks the overall project. Reaching a shippable state well before the appointed deadline means you can make further improvements in the time remaining. It's helpful to view the destination not as a single point, but as a zone of acceptable outcomes. Get into the acceptable zone first and then improve your position.
 
 ### Picture 4: Team velocity is the low-variance sum of high-variance individuals
 
@@ -99,7 +97,7 @@ It's generally believed that the productivity of a software team scales sub-line
 
 In computers, the factors that slow down parallelization are CPU context switching and how work is broken into independently processable chunks. In software teams, the primary factors are communication overhead, the dependency structure of the work, domain expertise, and the speed of context acquisition.
 
-You can draw this out in a picture where you've broken down a project into different deliverables. The finished product is a pyramid of sorts, where the blocks at the bottom have to be lain before the ones on top:
+You can draw this out in a picture where you've broken down a project into different deliverables. The finished product is a pyramid of sorts, where the blocks at the bottom have to be laid before the ones on top:
 
 ![Diagram of one dev with good domain knowledge working alone](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/image1-split-01.svg)
 
@@ -111,13 +109,13 @@ The two developers have the advantage that they can build separate blocks in par
 
 It is wishful thinking that the project will be completed twice as fast by two developers as by one. Indeed, even net speedup is no guarantee. But some amount of net speedup is well within reach if there is good division of labor and team rapport.
 
-Each added person, however, increases the complexity of the coordination task and most teams see vastly diminishing returns with each additional person. This is why many organizations spend the big bucks to hire and retain the best developers. They also invest in tooling that enables greater individual productivity and helps with the coordination of software development at scale.
+Each added person, however, increases the complexity of the coordination task and most teams see vastly diminishing returns with each additional person. This is why many organizations prioritize hiring and retaining the best developers over just expanding the size of the team. They also invest in tooling that enables greater individual productivity and helps with the coordination of software development at scale.
 
-### If we don't talk about it, someone else will
+### If we don't talk about developer productivity, someone else will
 
 Earlier, I said that if developers didn't talk about these elements of our productivity, then our organizations wouldn't realize they matter.
 
-Even worse, however, is someone else coming along and convincing our organizations that other things matter more. Too often, we find ourselves crammed into a framework that views software creation not as a journey of discovery, but as an unimaginative widget factory. Rather than value the inner loop, where all code is understood and created, we're asked to fixate on the mechanistic outer loop. What good is "change failure rate" if you can't even jump-to-def across your code? Rather than invest in quality tools that improve our lives as engineers, we're compelled toward the classic Mythical Man Month fallacy that leads to more people, more code, and more problems.
+Even worse, however, is someone else coming along and convincing our organizations that other things matter more. Too often, we find ourselves crammed into a framework that views software creation not as a journey of discovery, but as an unimaginative widget factory. Rather than value the inner loop, where all code is understood and created, we're asked to think only in terms of the mechanical outer loop. What good is "change failure rate" if you can't even jump-to-def across your code? Rather than invest in quality tools that improve our lives as engineers, we're compelled toward the classic Mythical Man Month fallacy that leads to more people, more code, and more problems.
 
 It is to our benefit, and to the benefit of our industry and society at large, to advance mental models that reflect the reality of our work and honor its essential creativity.
 
