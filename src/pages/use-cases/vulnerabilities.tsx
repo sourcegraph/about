@@ -9,14 +9,13 @@ import {
     Layout,
     BackButtonBold,
     BlogListItem,
-    buttonStyle,
-    buttonLocation,
     ContentSection,
-    CustomerLogosSectionAnimated,
+    CustomerLogos,
     CustomCarousel,
     ThreeUpText,
     QuoteCarousel,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 import styles from './useCases.module.scss'
 
@@ -156,8 +155,7 @@ const quoteCarouselItems = [
         header: "Cloudflare proves to auditors that its code isn't vulnerable",
         quote: "[Sourcegraph] is the best way to prove we're not vulnerable to a particular CVE, if and when we get asked by an auditor.",
         author: 'David Haynes, Security Engineer at Cloudflare',
-        logoImage: '/external-logos/cloudflare-color-logo.svg',
-        logoAlt: 'Cloudflare',
+        logoImage: '/external-logos/cloudflare-logo.svg',
         linkText: 'Read the case study',
         link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
     },
@@ -329,10 +327,10 @@ const UseCasePage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray-4-3">
+        <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
+                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
+                    <div className="mb-5 d-flex flex-column">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
                     </div>
@@ -358,7 +356,10 @@ const UseCasePage: FunctionComponent = () => (
                     </div>
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="py-6" />
+
+            <div className="mt-6">
+                <CustomerLogos />
+            </div>
         </div>
 
         <ContentSection className="py-lg-7 py-5">

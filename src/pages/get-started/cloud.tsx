@@ -104,7 +104,7 @@ export const CloudPage: FunctionComponent = () => {
                                     <a
                                         href="https://sourcegraph.com/sign-up?_ga=2.155066808.1628120401.1642532503-600077800.1642532503&showEmail=true"
                                         title="continue with email"
-                                        className="text-reset text-black text-decoration-underline mt-3"
+                                        className="text-reset text-black underline mt-3"
                                     >
                                         continue with email
                                     </a>
@@ -122,9 +122,7 @@ export const CloudPage: FunctionComponent = () => {
                                         and{' '}
                                         <Link href="/privacy" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a className="text-reset text-black text-decoration-underline">
-                                                Privacy Policy
-                                            </a>
+                                            <a className="text-reset text-black underline">Privacy Policy</a>
                                         </Link>
                                         .
                                     </small>
@@ -137,7 +135,7 @@ export const CloudPage: FunctionComponent = () => {
                                     <a
                                         href="https://sourcegraph.com/sign-in"
                                         title="Search public code with Sourcegraph Cloud"
-                                        className="text-reset text-black text-decoration-underline"
+                                        className="text-reset text-black underline"
                                     >
                                         Log in
                                     </a>

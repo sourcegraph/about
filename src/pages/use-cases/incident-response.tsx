@@ -8,15 +8,14 @@ import Link from 'next/link'
 import {
     BackButtonBold,
     BlogListItem,
-    buttonStyle,
-    buttonLocation,
     ContentSection,
     CustomCarousel,
-    CustomerLogosSection,
+    CustomerLogos,
     Layout,
     QuoteCarousel,
     ThreeUpText,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 import styles from './useCases.module.scss'
 
@@ -348,7 +347,7 @@ const IncidentResponsePage: FunctionComponent = () => (
             </ContentSection>
 
             <div className="py-6">
-                <CustomerLogosSection />
+                <CustomerLogos />
             </div>
         </div>
 

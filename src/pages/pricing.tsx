@@ -2,16 +2,8 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import {
-    ContentSection,
-    Layout,
-    PricingPlan,
-    PricingPlanFeature,
-    PricingPlanProperty,
-    buttonStyle,
-    buttonLocation,
-    Features,
-} from '@components'
+import { ContentSection, Layout, PricingPlan, PricingPlanFeature, PricingPlanProperty, Features } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 /** The Starter feature set. */
 const STARTER_FEATURES: Features = {

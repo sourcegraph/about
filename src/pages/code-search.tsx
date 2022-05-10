@@ -4,15 +4,8 @@ import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import {
-    ContentSection,
-    BlockquoteWithBorder,
-    IntegrationsSection,
-    Layout,
-    SelfHostedSection,
-    buttonStyle,
-    buttonLocation,
-} from '@components'
+import { ContentSection, BlockquoteWithBorder, IntegrationsSection, Layout, SelfHostedSection } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const CodeSearchPage: FunctionComponent = () => (
     <Layout
@@ -144,7 +137,7 @@ export const CodeSearchPage: FunctionComponent = () => (
         </ContentSection>
 
         {/* Social proof */}
-        <ContentSection className="py-4">
+        <ContentSection className="pt-7">
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-6">
                     <h2 className="display-3 font-weight-bold mb-3">Move faster with Sourcegraph</h2>
@@ -188,7 +181,7 @@ export const CodeSearchPage: FunctionComponent = () => (
 
         <IntegrationsSection />
 
-        <ContentSection className="mb-6">
+        <ContentSection className="pb-7">
             <h2 className="display-3 font-weight-bold mt-5 mb-4">How developers are using Sourcegraph</h2>
             <div className="row">
                 <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 border">

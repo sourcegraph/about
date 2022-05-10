@@ -1,28 +1,25 @@
 // Common
-export { ContentSection } from './ContentSection'
+export { Install } from './Install'
 export { Jumbotron } from './Jumbotron'
+export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
+export { BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
+export { BlogListItem } from './BlogListItem'
+export { BoardSection } from './BoardSection'
+export { ContentSection } from './ContentSection'
+export { CustomerLogos } from './CustomerLogos'
+export { FormLegal } from './FormLegal'
+export { EmbeddedHubSpot } from './HubSpot'
+export { IntegrationsSection } from './IntegrationsSection'
+export { LeadershipSection } from './LeadershipSection'
 export { RequestDemoForm } from './RequestDemoForm'
 export { RequestDemoTrySourcegraph } from './RequestDemoTrySourcegraph'
-export { TrySourcegraph } from './TrySourcegraph'
-export { Install } from './Install'
-export { EmbeddedHubSpot } from './HubSpot'
-export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
-export { FormLegal } from './FormLegal'
-export { BlogListItem } from './BlogListItem'
-export { BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
-export { Video } from './Video'
-export { CustomerLogosSectionAnimated } from './CustomerLogosSectionAnimated'
-export { CustomerLogosSection } from './CustomerLogosSection'
-export { IntegrationsSection } from './IntegrationsSection'
-export { BoardSection } from './BoardSection'
-export { LeadershipSection } from './LeadershipSection'
 export { SelfHostedSection } from './SelfHostedSection'
-export { YouTube } from './YouTube'
 export { TabCarousel } from './TabCarousel'
 export { TemplateCodeBlock } from './TemplateCodeBlock'
-
-// Tracking
-export { buttonStyle, buttonLocation } from './data/tracking'
+export { ThreeUpText } from './ThreeUpText'
+export { TrySourcegraph } from './TrySourcegraph'
+export { Video } from './Video'
+export { YouTube } from './YouTube'
 
 // Actions
 export {
@@ -34,27 +31,6 @@ export {
     SubmitEmailForm,
     ViewDeveloperDocumentationAction,
 } from './Actions'
-
-// Carousels
-export { CustomCarousel, QuoteCarousel } from './Carousels'
-
-// Pricing
-export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
-export type { Features } from './Pricing'
-
-// Case Studies
-export {
-    AuthorBio,
-    CaseStudyJumbotron,
-    CaseStudyLayout,
-    CaseStudyCard,
-    InContentBlockquote,
-    InContentImage,
-    MediaQuote,
-    NewCaseStudyLayout,
-    ThreeUpText,
-    UseChallengeSolutionResults,
-} from './CaseStudies'
 
 // Blog
 export {
@@ -70,7 +46,27 @@ export {
     PodcastAudioPlayer,
 } from './Blog'
 
+// Carousels
+export { CustomCarousel, QuoteCarousel } from './Carousels'
+
+// Case Studies
+export {
+    AuthorBio,
+    CaseStudyJumbotron,
+    CaseStudyLayout,
+    CaseStudyCard,
+    InContentBlockquote,
+    InContentImage,
+    MediaQuote,
+    NewCaseStudyLayout,
+    UseChallengeSolutionResults,
+} from './CaseStudies'
+
 // Layouts
 export { Layout } from './Layout'
 export { WhitePaperPage } from './WhitePaperPage'
 export { ContentPage } from './ContentPage'
+
+// Pricing
+export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
+export type { Features } from './Pricing'

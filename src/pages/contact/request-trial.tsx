@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CustomerLogosSection } from '@components'
+import { Layout, CustomerLogos } from '@components'
 import { useHubSpot } from '@hooks'
 
 const Contact: FunctionComponent = () => {
@@ -32,7 +32,7 @@ const Contact: FunctionComponent = () => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <CustomerLogosSection className="full-color mt-3 mb-6" />
+                            <CustomerLogos />
                         </div>
                     </div>
                 </div>

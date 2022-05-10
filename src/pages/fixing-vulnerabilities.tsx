@@ -68,12 +68,7 @@ const FixingVulnerabilities: FunctionComponent = () => {
                         </figcaption>
                     </blockquote>
 
-                    <img
-                        src="/external-logos/cloudflare-color-logo.svg"
-                        alt="Cloudflare logo"
-                        width={130}
-                        className="mt-4"
-                    />
+                    <img src="/external-logos/cloudflare-logo.svg" alt="Cloudflare logo" width={130} className="mt-4" />
 
                     <Link href="/case-studies/cloudflare-accelerates-debugging-and-improves-security">
                         <a href="#none" className="d-block mt-5 font-weight-bold">

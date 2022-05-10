@@ -11,9 +11,9 @@ interface Props {
 }
 
 export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
-    <div className="bg-light-gray-4-3">
+    <div className="bg-light-gray-3">
         <ContentSection>
-            <div className="bg-light-gray-4-3 row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
+            <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
                 <div className="mb-5 d-flex flex-column">
                     <h1 className="text-center font-weight-bold">Get started with Sourcegraph</h1>
                     <p className="text-center">Understand, fix, and automate changes across your entire codebase.</p>

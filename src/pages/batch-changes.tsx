@@ -4,15 +4,8 @@ import Link from 'next/link'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-import {
-    BlockquoteWithBorder,
-    ContentSection,
-    Layout,
-    Video,
-    TrySourcegraph,
-    buttonStyle,
-    buttonLocation,
-} from '@components'
+import { BlockquoteWithBorder, ContentSection, Layout, Video, TrySourcegraph } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
 

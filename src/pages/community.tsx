@@ -3,7 +3,8 @@ import { FunctionComponent } from 'react'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-import { buttonStyle, buttonLocation, ContentSection, Layout } from '@components'
+import { ContentSection, Layout } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const Community: FunctionComponent = () => (
     <Layout

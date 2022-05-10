@@ -22,6 +22,9 @@
     background: radial-gradient(ellipse at top left, rgba($blue-mist, 0.5), transparent),
         radial-gradient(ellipse at bottom right, rgba($green-mist, 0.5), transparent);
 }
+@mixin GradientVenus {
+    background: linear-gradient(90deg, $green-mist, $blue-mist);
+}
 @mixin GradientSaturnSaturated {
     background: linear-gradient(
         90deg,
@@ -69,6 +72,9 @@
 }
 .bg-gradient-venus-radial {
     @include GradientVenusRadial;
+}
+.bg-gradient-venus {
+    @include GradientVenus;
 }
 .bg-gradient-saturn-saturated {
     @include GradientSaturnSaturated;

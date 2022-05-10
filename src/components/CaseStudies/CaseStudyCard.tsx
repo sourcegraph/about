@@ -30,7 +30,7 @@ export const CASESTUDIES: CaseStudy[] = [
     },
     {
         name: 'Cloudflare',
-        logo: '/external-logos/cloudflare-color-logo.svg',
+        logo: '/external-logos/cloudflare-logo.svg',
         title: 'Cloudflare accelerates debugging and improves security.',
         url: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
     },

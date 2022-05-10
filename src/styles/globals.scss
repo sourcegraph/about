@@ -206,10 +206,7 @@ table {
 @import 'components/blog/PodcastPost';
 @import 'components/blog/PostsList';
 @import 'components/blog/ReleasePost';
-@import 'components/content/ContentSection';
 @import 'components/pricing/index';
-@import 'components/product/CustomerLogosSection';
-@import 'components/product/CustomerLogosSectionAnimated';
 @import 'components/product/EventsSection';
 @import 'components/product/GitLabIntegrationSection';
 @import 'components/product/IntegratesWithSection';
@@ -229,7 +226,6 @@ table {
 @import 'pages/_case_studies';
 @import 'pages/content';
 @import 'pages/events';
-@import 'pages/index';
 @import 'pages/jobs';
 @import 'pages/landing-page';
 @import 'pages/podcast';
@@ -241,39 +237,7 @@ table {
 @import 'pages/code-insights';
 @import 'gradients';
 @import 'spacing';
-
-/* ==================== Typography ==================== */
-
-.font-size-base {
-    font-size: $font-size-base !important;
-}
-.font-family-base {
-    font-family: $font-family-base !important;
-}
-.font-size-medium {
-    font-size: 1.2em;
-    line-height: 1.95em;
-}
-.font-size-large {
-    font-size: 4.5em;
-    line-height: 1.25em;
-}
-.font-size-extra-large {
-    font-size: 6em;
-    line-height: 1.25em;
-}
-.text-normal {
-    font-size: normal;
-}
-.text-sans-serif {
-    font-family: $font-family-sans-serif;
-}
-.text-decoration-underline {
-    text-decoration: underline;
-    &:hover {
-        text-decoration: none;
-    }
-}
+@import 'typography';
 
 /* ==================== Filters ==================== */
 // TODO: After Tailwind migration this class can be deleted
@@ -329,6 +293,28 @@ code.border {
     margin-bottom: 1rem;
     border: 1px solid var(--border-color);
     max-width: 100%;
+}
+
+/* ==================== Positioning ==================== */
+
+$positions: ('top', 'right', 'bottom', 'left');
+@each $position in $positions {
+    // Zero positions
+    .#{$position}-0 {
+        #{$position}: 0;
+    }
+}
+
+// Breakpoint-based positions
+@each $breakpoint, $width in $grid-breakpoints {
+    @media (min-width: $width) {
+        .#{$breakpoint}-absolute {
+            position: absolute;
+        }
+        .#{$breakpoint}-relative {
+            position: relative;
+        }
+    }
 }
 
 /* ==================== Temporary ==================== */

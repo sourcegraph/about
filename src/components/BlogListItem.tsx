@@ -4,17 +4,17 @@ interface Props {
     blog: Blog
 }
 
+interface Image {
+    src: string
+    alt: string
+}
+
 interface Blog {
     title: string
     description: string
     type: string
     href: string
     img?: Image
-}
-
-interface Image {
-    src: string
-    alt: string
 }
 
 export const BlogListItem: FunctionComponent<Props> = ({ blog }) => (

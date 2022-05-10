@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
 import { Layout, Install, BackButton } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 import { useQueryString } from '@hooks'
 
 import { BestForTitle, MostPopularBadge } from '.'
@@ -32,7 +33,7 @@ export const SelfHostedPage: FunctionComponent = () => {
         >
             <div className={`${styles.root} bg-gradient-blue-violet-mist py-5`}>
                 <div className="row container-xl mx-auto py-5">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 pr-lg-7">
                         <div>
                             <BackButton
                                 href={`/get-started${routerHook.queryString ? `?${routerHook.queryString}` : ''}`}
@@ -61,19 +62,18 @@ export const SelfHostedPage: FunctionComponent = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 py-4 py-lg-0">
                         <Install />
 
                         <div className="d-flex flex-column align-items-start">
                             <a
-                                className="btn p-0 my-4 text-primary"
+                                className="btn p-0 mt-5 text-primary"
+                                data-button-style={buttonStyle.textWithArrow}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
                                 href="https://info.sourcegraph.com/talk-to-a-developer"
                             >
                                 Talk to an engineer <ArrowRightIcon />
-                            </a>
-
-                            <a className="btn p-0 text-primary" href="https://docs.sourcegraph.com/">
-                                Deploy to a server or cluster <ArrowRightIcon />
                             </a>
                         </div>
                     </div>

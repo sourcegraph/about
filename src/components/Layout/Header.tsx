@@ -88,7 +88,7 @@ const Header: FunctionComponent<Props> = props => {
                         <Nav className="right-nav justify-content-lg-end">
                             {!props.hideGetStartedButton && (
                                 <Nav.Link
-                                    className="btn btn-simple px-2 py-2"
+                                    className="btn btn-simple px-2 py-2 font-weight-bolder"
                                     href="https://sourcegraph.com/search"
                                     title="Search code"
                                 >
@@ -97,7 +97,7 @@ const Header: FunctionComponent<Props> = props => {
                             )}
 
                             <Nav.Link
-                                className="btn btn-outline-primary ml-3 px-5 py-2"
+                                className="btn btn-outline-primary ml-3 px-5 py-2 font-weight-bolder"
                                 href="/demo"
                                 title="Request a demo"
                             >
@@ -106,7 +106,7 @@ const Header: FunctionComponent<Props> = props => {
 
                             {!props.hideGetStartedButton && (
                                 <Nav.Link
-                                    className="btn btn-primary ml-3 px-5 py-2"
+                                    className="btn btn-primary ml-3 px-5 py-2 font-weight-bolder"
                                     href="/get-started"
                                     title="Get started"
                                 >

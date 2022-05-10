@@ -9,15 +9,14 @@ import {
     BackButtonBold,
     BlockquoteWithBorder,
     BlogListItem,
-    buttonStyle,
-    buttonLocation,
     ContentSection,
     CustomCarousel,
-    CustomerLogosSectionAnimated,
+    CustomerLogos,
     Layout,
     QuoteCarousel,
     ThreeUpText,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 import styles from './useCases.module.scss'
 
@@ -36,8 +35,19 @@ const items = [
                 header="Find old versions easily"
                 text={
                     <p>
-                        Use <Link href="/code-search">Code Search</Link> to spot deprecated methods and APIs left in
-                        your code and share examples of how the latest versions are used.
+                        Use{' '}
+                        <Link href="/code-search" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Code Search
+                            </a>
+                        </Link>{' '}
+                        to spot deprecated methods and APIs left in your code and share examples of how the latest
+                        versions are used.
                     </p>
                 }
             />
@@ -52,9 +62,19 @@ const items = [
                 header="Automate version updates and communications"
                 text={
                     <p>
-                        With <Link href="/batch-changes">Batch Changes</Link>, you can quickly update versions and send
-                        pull requests to all your repositories as a way of alerting repository owners that they need to
-                        upgrade.
+                        With{' '}
+                        <Link href="/batch-changes">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Batch Changes
+                            </a>
+                        </Link>
+                        , you can quickly update versions and send pull requests to all your repositories as a way of
+                        alerting repository owners that they need to upgrade.
                     </p>
                 }
             />
@@ -342,14 +362,19 @@ const UseCasePage: FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="d-flex justify-content-center mt-4">
+                            <a
+                                className="d-flex justify-content-center mt-4"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
                                 <p className="font-weight-bold">Explore other use cases</p>
                             </a>
                         </Link>
                     </div>
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="mt-6" />
+            <CustomerLogos />
         </div>
 
         <ContentSection className="py-lg-7 py-5">

@@ -10,14 +10,13 @@ import {
     BlockquoteWithBorder,
     BlockquoteWithLogoBottom,
     BlogListItem,
-    buttonStyle,
-    buttonLocation,
     CustomCarousel,
     ContentSection,
-    CustomerLogosSectionAnimated,
+    CustomerLogos,
     Layout,
     ThreeUpText,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 import styles from './useCases.module.scss'
 
@@ -278,10 +277,10 @@ const UseCasePage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <div className="bg-light-gray-4-3">
+        <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column px-lg-7 text-start text-md-center max-w-600 mx-auto">
+                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
+                    <div className="mb-5 d-flex flex-column px-lg-7 text-center">
                         <h1 className="font-weight-bold">Give your team the onboarding experience they deserve.</h1>
                         <p>
                             Enable all your devs to find the answers they need to work more efficiently, ship code more
@@ -310,7 +309,10 @@ const UseCasePage: FunctionComponent = () => (
                     </div>
                 </div>
             </ContentSection>
-            <CustomerLogosSectionAnimated showButton={true} showSection={false} noCta={true} className="py-6" />
+
+            <div className="mt-6">
+                <CustomerLogos />
+            </div>
         </div>
 
         <ContentSection className="py-lg-7 py-5">

@@ -9,14 +9,13 @@ import {
     BackButtonBold,
     BlockquoteWithBorder,
     BlogListItem,
-    buttonStyle,
-    buttonLocation,
     ContentSection,
     CustomCarousel,
-    CustomerLogosSection,
+    CustomerLogos,
     Layout,
     ThreeUpText,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 import styles from './useCases.module.scss'
 
@@ -308,7 +307,7 @@ const CodeReusePage: FunctionComponent = () => (
             </ContentSection>
 
             <div className="py-6">
-                <CustomerLogosSection />
+                <CustomerLogos />
             </div>
         </div>
 

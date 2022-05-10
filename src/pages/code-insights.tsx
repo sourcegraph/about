@@ -27,9 +27,8 @@ import {
     TemplateCodeBlock,
     YouTube,
     Video,
-    buttonStyle,
-    buttonLocation,
 } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 const items = [
     {

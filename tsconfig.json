@@ -17,15 +17,16 @@
     "incremental": true,
     "baseUrl": "src",
     "paths": {
+      "@code-insights/*": ["components/CodeInsights/*"],
+      "@components": ["components"],
+      "@data": ["data"],
       "@hooks": ["hooks"],
       "@interfaces/*": ["interfaces/*"],
       "@lib": ["lib"],
-      "@util": ["util"],
-      "@components": ["components"],
-      "@code-insights/*": ["components/CodeInsights/*"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@util": ["util"]
     }
   },
-  "include": ["next-env.d.ts", "src/**/*", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "additional.d.ts", "src/**/*", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
