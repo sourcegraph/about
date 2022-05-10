@@ -13,7 +13,7 @@ published: true
 
 Why don't we hear more developer voices in the conversation about "developer productivity"? Most self-styled experts on developer productivity seem more interested in selling something rather than painting an accurate picture of how devs really work. Perhaps as a consequence, we're swimming in acronyms, magic metrics, and methodologies, but not a lot of rigorous systems thinking.
 
-Devs are systems thinkers. Our job is to model and build systems, and we often draw out diagrams and schematics to illustrate how those systems work. But when it comes to our own work, we are letting others draw the pictures—and they've done a poor job. I doubt that I'm the only dev who feels a little weary of what the "experts" on my productivity have had to say.
+Devs are systems thinkers. Our job is to model and build systems, and we often draw out diagrams and schematics to illustrate how those systems work. But when it comes to our own work, we are letting others draw the pictures—and they've done a poor job. I doubt that I'm the only dev who feels a little wary of what the "experts" on my productivity have had to say.
 
 Instead, shouldn't we start from direct experience, our own mental models of how we work? Shouldn't _we_ be drawing pictures and diagrams that actually approximate the world in which we live?
 
