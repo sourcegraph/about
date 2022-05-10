@@ -15,7 +15,7 @@ Why don't we hear more developer voices in the conversation about "developer pro
 
 Devs are systems thinkers. Our job is to model and build systems, and we often draw out diagrams and schematics to illustrate how those systems work. But when it comes to our own work, we are letting others draw the pictures—and they've done a poor job. I doubt that I'm the only dev who feels a little weary of what the "experts" on my productivity have had to say.
 
-Instead, shouldn't we start from direct experience, our own mental models of how we work? Shouldn't *we* be drawing pictures and diagrams that actually approximate the world in which we live?
+Instead, shouldn't we start from direct experience, our own mental models of how we work? Shouldn't _we_ be drawing pictures and diagrams that actually approximate the world in which we live?
 
 Well, here's an attempt to do so.
 
@@ -66,6 +66,7 @@ Flow-destroying interruptions can be internal or external.
 I suspect that every programmer has experienced the 1st graph at some point in their lives, probably early enough to suck them into programming—that feeling of flow can be quite the gateway drug. But many get stuck in the second graph when they code professionally, and that is a great source of developer misery and lost productivity.
 
 #### A unit for developer productivity
+
 The above charts reveal a question we should ponder before proceeding: **What exactly is "productivity", the y-axis in our chart above?** Many developers can describe how it _feels_, but can we arrive at a more precise definition? Lines of code? Number of commits? Some synthetic metric derived from version control history? All these seem like poor measures of developer productivity.
 
 Software development is at its core an innovative endeavor. Unlike the manufacture of physical things, the goal is not to produce something that has been produced before. The goal is to produce _new and useful_ knowledge. The atomic unit of innovation is iteration—the cycling of the inner loop.
@@ -120,7 +121,7 @@ Earlier, I said that if developers didn't talk about these elements of our produ
 
 Even worse, however, is someone else coming along and convincing our organizations that other things matter more. Too often, we find ourselves crammed into a framework that views software creation not as a journey of discovery, but as an unimaginative widget factory. Rather than value the inner loop, where all code is understood and created, we're asked to fixate on the mechanistic outer loop. What good is "change failure rate" if you can't even jump-to-def across your code? Rather than invest in quality tools that improve our lives as engineers, we're compelled toward the classic Mythical Man Month fallacy that leads to more people, more code, and more problems.
 
-It is to our benefit, and to the benefit of our industry and society at large, to advance mental models that reflect the reality of our work and honor its essential creativity. 
+It is to our benefit, and to the benefit of our industry and society at large, to advance mental models that reflect the reality of our work and honor its essential creativity.
 
 In this post, I've sketched out some pictures that resonate with one developer—me. What about you? When you think about your own creative process and that of your team, what pictures do you see?
 
