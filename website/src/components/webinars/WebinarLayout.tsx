@@ -77,8 +77,8 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
                         <h3 className="font-weight-bold">Watch the on-demand webinar</h3>
-                        <div className="border border-3 border-plum-mist pt-4 px-4 pb-2 mx-1 mt-3">
-                            {/* <div id="form" /> */}
+                        <div className="border border-2 border-plum-mist pt-4 px-4 pb-2 mx-1 mt-3">
+                            <div id="form" />
                         </div>
                     </div>
                 </ContentSection>
@@ -88,19 +88,19 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
 
             <section className="bg-white py-6">
                 <ContentSection>
-                    <h3 className="font-weight-bold">Speakers</h3>
+                    <h2 className="font-weight-bold">Speakers</h2>
 
                     <section className="d-flex flex-wrap">
                         {speakers.map((speaker: Speaker) => (
                             <div key={speaker.name} className="col-lg-5 col-md-6 col-12 pl-0 pr-lg-7">
                                 <img
                                     className="py-4"
-                                    width="150"
+                                    width="140"
                                     src={speaker.img}
                                     alt={speaker.name}
                                 />
-                                <h5>{speaker.name}</h5>
-                                <figcaption className="text-muted max-w-md-250 my-2">{speaker.title}</figcaption>
+                                <h5 className="font-weight-bold">{speaker.name}</h5>
+                                <figcaption className="h6 font-weight-normal text-muted max-w-md-250 my-2">{speaker.title}</figcaption>
                                 <p>{speaker.bio}</p>
                             </div>
                         ))}
