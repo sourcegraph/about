@@ -54,13 +54,8 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
                                 width="120"
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
-                                />
-                            <img
-                                className="ml-3"
-                                height="30"
-                                src={customer.logo}
-                                alt={`${customer.name} logo`}
                             />
+                            <img className="ml-3" height="30" src={customer.logo} alt={`${customer.name} logo`} />
                         </div>
                     )}
 
@@ -93,14 +88,11 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
                     <section className="d-flex flex-wrap">
                         {speakers.map((speaker: Speaker) => (
                             <div key={speaker.name} className="col-lg-5 col-md-6 col-12 pl-0 pr-lg-7">
-                                <img
-                                    className="py-4"
-                                    width="140"
-                                    src={speaker.img}
-                                    alt={speaker.name}
-                                />
+                                <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
                                 <h5 className="font-weight-bold">{speaker.name}</h5>
-                                <figcaption className="h6 font-weight-normal text-muted max-w-md-250 my-2">{speaker.title}</figcaption>
+                                <figcaption className="h6 font-weight-normal text-muted max-w-md-250 my-2">
+                                    {speaker.title}
+                                </figcaption>
                                 <p>{speaker.bio}</p>
                             </div>
                         ))}
