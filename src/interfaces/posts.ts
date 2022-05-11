@@ -7,6 +7,7 @@ import { BlogPost } from '../components/Blog/BlogPost'
 import { LinkPost } from '../components/Blog/LinkPost'
 import { PodcastListItem } from '../components/Blog/PodcastListItem'
 import { PodcastPost } from '../components/Blog/PodcastPost'
+import { PressReleaseListItem } from '../components/Blog/PressReleaseListItem'
 import { PressReleasePost } from '../components/Blog/PressReleasePost'
 import { ReleasePost } from '../components/Blog/ReleasePost'
 
@@ -21,6 +22,7 @@ export enum PostType {
 export enum PostIndexType {
     BlogPostIndex,
     PodcastIndex,
+    PressReleaseIndex,
 }
 
 export interface Post {
@@ -103,6 +105,7 @@ export const POST_TYPE_TO_COMPONENT: Record<PostType, FunctionComponent<PostComp
 export const POST_INDEX_TYPE_TO_COMPONENT: Record<PostIndexType, FunctionComponent<PostIndexItem>> = {
     [PostIndexType.BlogPostIndex]: BlogListItem,
     [PostIndexType.PodcastIndex]: PodcastListItem,
+    [PostIndexType.PressReleaseIndex]: PressReleaseListItem,
 }
 
 export const postType = (post: Post): PostType =>
@@ -117,7 +120,11 @@ export const postType = (post: Post): PostType =>
         : PostType.BlogPost
 
 export const postIndexType = (frontmatter: FrontMatter): PostIndexType =>
-    frontmatter.tags?.includes('podcast') ? PostIndexType.PodcastIndex : PostIndexType.BlogPostIndex
+    frontmatter.tags?.includes('podcast')
+        ? PostIndexType.PodcastIndex
+        : frontmatter.tags?.includes('press')
+        ? PostIndexType.PressReleaseIndex
+        : PostIndexType.BlogPostIndex
 
 export enum BlogType {
     PressRelease = 'press',

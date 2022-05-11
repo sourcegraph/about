@@ -8,7 +8,7 @@ import Link from 'next/link'
 import {
     BackButtonBold,
     BlockquoteWithBorder,
-    BlogListItem,
+    BlogResourceItem,
     ContentSection,
     CustomCarousel,
     CustomerLogos,
@@ -179,7 +179,7 @@ const quoteCarouselItems = [
     },
 ]
 
-const blogListItems = [
+const blogResourceItems = [
     {
         title: 'How not to break a search engine or: What I learned about unglamorous engineering',
         description:
@@ -382,8 +382,8 @@ const UseCasePage: FunctionComponent = () => (
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>
                 </div>
-                {blogListItems.map(item => (
-                    <BlogListItem key={item.title} blog={item} />
+                {blogResourceItems.map(item => (
+                    <BlogResourceItem key={item.title} blog={item} />
                 ))}
             </div>
         </ContentSection>

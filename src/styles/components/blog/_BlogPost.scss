@@ -1,25 +1,4 @@
 .blog-post {
-    overflow: hidden;
-    padding-bottom: 2rem;
-
-    &__image {
-        max-width: 100%;
-        max-height: 140px;
-
-        @include media-breakpoint-down(sm) {
-            max-height: none;
-        }
-    }
-
-    &__byline {
-        opacity: 0.7;
-        text-align: center;
-    }
-
-    &__read-more {
-        font-weight: bold;
-    }
-
     &__html {
         img,
         object,

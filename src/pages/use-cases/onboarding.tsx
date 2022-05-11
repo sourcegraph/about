@@ -9,7 +9,7 @@ import {
     BackButtonBold,
     BlockquoteWithBorder,
     BlockquoteWithLogoBottom,
-    BlogListItem,
+    BlogResourceItem,
     CustomCarousel,
     ContentSection,
     CustomerLogos,
@@ -109,7 +109,7 @@ const items = [
     },
 ]
 
-const blogListItems = [
+const blogResourceItems = [
     {
         title: '8 ways to implement better onboarding',
         description:
@@ -320,8 +320,8 @@ const UseCasePage: FunctionComponent = () => (
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>
                 </div>
-                {blogListItems.map(item => (
-                    <BlogListItem key={item.title} blog={item} />
+                {blogResourceItems.map(item => (
+                    <BlogResourceItem key={item.title} blog={item} />
                 ))}
             </div>
         </ContentSection>

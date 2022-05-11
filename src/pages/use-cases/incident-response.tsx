@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 import {
     BackButtonBold,
-    BlogListItem,
+    BlogResourceItem,
     ContentSection,
     CustomCarousel,
     CustomerLogos,
@@ -118,7 +118,7 @@ const quoteCarouselItems = [
     },
 ]
 
-const resourceItems = [
+const blogResourceItems = [
     {
         title: 'Log4j Log4Shell 0-day: find, fix, and track affected code',
         description:
@@ -356,8 +356,8 @@ const IncidentResponsePage: FunctionComponent = () => (
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Related resources</h1>
                 </div>
-                {resourceItems.map(item => (
-                    <BlogListItem key={item.title} blog={item} />
+                {blogResourceItems.map(item => (
+                    <BlogResourceItem key={item.title} blog={item} />
                 ))}
             </div>
         </ContentSection>

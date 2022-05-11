@@ -36,8 +36,9 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
                 )}
             </h1>
             {post.frontmatter.author && post.frontmatter.publishDate && (
-                <p className="blog-post__byline mb-0">
-                    {post.frontmatter.author} on {formatDate(post.frontmatter.publishDate)}
+                <p className="text-align-center text-secondary mb-0">
+                    {post.frontmatter.author} on{' '}
+                    <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
                 </p>
             )}
         </header>

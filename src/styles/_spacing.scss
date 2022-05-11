@@ -16,6 +16,9 @@ $maxBreakpoint: map.get($grid-breakpoints, 'xl');
         .min-w-#{$spacing} {
             min-width: #{$spacing}px;
         }
+        .max-h-#{$spacing} {
+            max-height: #{$spacing}px;
+        }
         .max-w-#{$spacing} {
             max-width: #{$spacing}px;
         }

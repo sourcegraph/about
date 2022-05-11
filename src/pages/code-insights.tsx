@@ -19,7 +19,7 @@ import {
 } from '@code-insights/mock-data'
 import { CodeInsightExampleType } from '@code-insights/types'
 import {
-    BlogListItem,
+    BlogResourceItem,
     ContentSection,
     CustomCarousel,
     Layout,
@@ -266,7 +266,7 @@ const templates = {
     ],
 }
 
-const blogListItems = [
+const blogResourceItems = [
     {
         title: 'How we migrated entirely to CSS Modules using codemods and Sourcegraph Code Insights',
         description:
@@ -610,8 +610,8 @@ export const CodeInsightsPage: FunctionComponent = () => (
                 <div className="col-lg-6">
                     <h1 className="mb-5 font-weight-bold">Learn more</h1>
                 </div>
-                {blogListItems.map(item => (
-                    <BlogListItem key={item.title} blog={item} />
+                {blogResourceItems.map(item => (
+                    <BlogResourceItem key={item.title} blog={item} />
                 ))}
             </div>
         </ContentSection>

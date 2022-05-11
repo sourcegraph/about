@@ -28,7 +28,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItem> = ({
                 </Link>
             </h1>
             {frontmatter.author && frontmatter.publishDate && (
-                <div className="blog-post__byline mb-0">
+                <div className="text-align-center text-secondary mb-0">
                     <div>
                         <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
                     </div>

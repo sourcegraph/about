@@ -4,6 +4,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
 import { PostComponentProps } from '@interfaces/posts'
+import { formatDate } from '@util'
 
 interface Props extends PostComponentProps {}
 
@@ -18,7 +19,7 @@ export const PressReleasePost: FunctionComponent<Props> = ({
     tag: Tag = 'div',
     renderTitleAsLink = false,
 }) => (
-    <Tag className={`blog-post ${className}`}>
+    <Tag className={`blog-post overflow-hidden pb-2 ${className}`}>
         <header className={headerClassName}>
             <h1 className={titleClassName}>
                 {renderTitleAsLink === true ? (
@@ -30,7 +31,9 @@ export const PressReleasePost: FunctionComponent<Props> = ({
                     post.frontmatter.title
                 )}
             </h1>
-            <p className="blog-post__byline mb-0">{post.frontmatter.publishDate}</p>
+            <time dateTime={post.frontmatter.publishDate} className="text-align-center text-secondary mb-0">
+                {formatDate(String(post.frontmatter.publishDate))}
+            </time>
         </header>
         {content && (
             <div className="card-body">

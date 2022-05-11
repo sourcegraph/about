@@ -3,7 +3,7 @@ export { Install } from './Install'
 export { Jumbotron } from './Jumbotron'
 export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
 export { BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
-export { BlogListItem } from './BlogListItem'
+export { BlogResourceItem } from './BlogResourceItem'
 export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
 export { CustomerLogos } from './CustomerLogos'
@@ -35,11 +35,14 @@ export {
 // Blog
 export {
     BlogHeader,
+    BlogListItem,
     BlogPost,
     LinkPost,
     PodcastPost,
+    PodcastListItem,
     PostsList,
     PostsListPage,
+    PressReleaseListItem,
     PressReleasePost,
     ReleasePost,
     BLOG_TYPE_TO_INFO,
