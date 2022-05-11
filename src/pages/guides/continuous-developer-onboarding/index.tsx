@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { Layout } from '@components'
 import { useHubSpot } from '@hooks'
 
-import styles from './guides.module.scss'
+import styles from './index.module.scss'
 
 const ContinuousDeveloperOnboarding: FunctionComponent = () => {
     useHubSpot({
@@ -50,21 +50,21 @@ const ContinuousDeveloperOnboarding: FunctionComponent = () => {
 
                         <p>Download this guide to learn:</p>
                         <ul>
-                            <li>
+                            <li className="mb-1">
                                 How to recontextualize traditional onboarding practices with long-term developer growth
                                 in mind
                             </li>
-                            <li>
+                            <li className="mb-1">
                                 How to cultivate an environment that enables developers to be flexible and resilient
                             </li>
-                            <li>
+                            <li className="mb-1">
                                 How to approach people, knowledge, and tools as fundamental aspects of engineering
                                 culture
                             </li>
                         </ul>
                     </div>
 
-                    <div className={`${styles.formContainer} col-lg-6 p-6 mt-5 mt-lg-0`}>
+                    <div className="col-lg-6 p-6 mt-5 mt-lg-0">
                         <div id="form" />
                     </div>
                 </div>
