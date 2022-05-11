@@ -1,7 +1,7 @@
 import { FunctionComponent, ReactNode } from 'react'
 
 import ClockTimeThreeOutlineIcon from 'mdi-react/ClockTimeThreeOutlineIcon'
-import CrosshairsGpsIcon from 'mdi-react/CrosshairsGpsIcon'
+import MagnifyIcon from 'mdi-react/MagnifyIcon'
 import WebIcon from 'mdi-react/WebIcon'
 import Link from 'next/link'
 
@@ -72,7 +72,7 @@ const items = [
                     <p>
                         Visualize fixes in progress and track their deployment. With{' '}
                         <Link href="/code-insights">Code Insights</Link>, get visibility into remediation efforts and
-                        share progress with team leaders and customers.
+                        share progress with team leaders and all of your customers.
                     </p>
                 }
             />
@@ -80,10 +80,10 @@ const items = [
         itemClass: 'd-none',
     },
     {
-        buttonLabel: 'Monitor for the introduction of unsafe code',
+        buttonLabel: 'Monitor for unsafe code',
         text: (
             <CarouselItem
-                header="Monitor for the introduction of unsafe code"
+                header="Monitor for unsafe code"
                 text={
                     <p>
                         Close the loop on your incident response efforts. After finding the root cause, use{' '}
@@ -122,7 +122,7 @@ const resourceItems = [
     {
         title: 'Log4j Log4Shell 0-day: find, fix, and track affected code',
         description:
-            'In the biggest security vulnerability incident since Heartbleed, Sourcegraph co-founder and CEO Quinn Slack shared how you can find affected code, automate fixes, and track progress.',
+            'In the biggest security vulnerability incident since Heartbleed, Sourcegraph co-founder and CEO Quinn Slack shares how you can find affected code, automate fixes, and track progress.',
         type: 'Blog post',
         img: {
             src: 'https://sourcegraphstatic.com/blog/log4j/log4j-blog-thumbnail.png',
@@ -133,7 +133,7 @@ const resourceItems = [
     {
         title: "The real weakest link in software supply chain security (it's not open source)",
         description:
-            'Using open source code can jump-start development but it can also expose you to security vulnerabilities. In this post, learn how to design an effective vulnerability management process that can make dependencies visible and mitigation less time-consuming.',
+            'Using open source code can jumpstart development, but it can also expose you to security vulnerabilities. In this post, learn how to design an effective vulnerability management process that can make dependencies visible and mitigation less time-consuming.',
         type: 'Blog post',
         img: {
             src: 'https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png',
@@ -144,7 +144,7 @@ const resourceItems = [
     {
         title: 'How to remove secrets from your codebase',
         description:
-            'Back in early 2021, Sourcegraph stored infrastructure and service passwords in private repositories. Security engineer André Eleuterio moved every secret to a secure vault and used code search to ensure the move was successful and complete.',
+            'In early 2021, Sourcegraph stored infrastructure and service passwords in private repositories. Learn how Sourcegraph Security Engineer André Eleuterio moved every secret to a secure vault and used Code Search to ensure the move was successful and complete.',
         type: 'Blog post',
         img: {
             src: 'https://sourcegraphstatic.com/blog/securing-sourcegraph-eliminating-secrets.png',
@@ -156,7 +156,7 @@ const resourceItems = [
 
 const threeUpTextItems = [
     {
-        icon: <CrosshairsGpsIcon className="mb-4 text-blurple" size={40} />,
+        icon: <MagnifyIcon className="mb-4 text-blurple" size={40} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Assess incidents quickly</h4>,
         description:
             "Pinpoint the code responsible for the incident and find the root cause in your codebase. Understand the code's functionality to verify the issue.",
@@ -286,9 +286,9 @@ const IncidentResponsePage: FunctionComponent = () => (
                                 <a className="font-weight-bold">Read the Cloudflare case study</a>
                             </Link>
                             <img
-                                src="/external-logos/cloudflare-color-logo.svg"
+                                src="/external-logos/cloudflare-logo.svg"
                                 alt="Cloudflare logo"
-                                className="d-block max-w-150 mt-3"
+                                className="d-flex mx-auto max-w-150 mt-3"
                             />
                         </div>
                     </div>
