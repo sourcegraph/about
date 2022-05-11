@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sourcegraph's Marketing Site
+
+This is Sourcegraph's Marketing Site which is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+Build Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/87b826cb-588e-49b1-829f-be5a1975c71c/deploy-status)](https://app.netlify.com/sites/about-replatform/deploys)
+
+---
 
 ## Getting Started
 

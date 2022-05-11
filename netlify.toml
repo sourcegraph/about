@@ -1,0 +1,109 @@
+[build]
+  base = ""
+  publish = "public"
+  command = "yarn build"
+
+[build.environment]
+  YARN_VERSION = "1.22.17"
+  YARN_FLAGS = "--no-ignore-optional"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+
+# ========== HANDBOOK REDIRECTS ==========
+[[redirects]]
+  from = "/company"
+  to = "/handbook/company"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/company/*"
+  to = "/handbook/company/:splat"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/retrospectives"
+  to = "/handbook/retrospectives"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/retrospectives/*"
+  to = "/handbook/retrospectives/:splat"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/workflow"
+  to = "/handbook/workflow"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/workflow/*"
+  to = "/handbook/workflow/:splat"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/search"
+  to = "/handbook#stq=:q"
+  query = {q = ":q"}
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/search"
+  to = "/handbook"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/handbook/*"
+  to = "https://handbook.sourcegraph.com/:splat"
+  status = 301
+  force = true
+  # ========== END HANDBOOK REDIRECTS ==========
+
+# ========== INDIVIDUAL REDIRECTS ==========
+[[redirects]]
+  from = "/terms-private"
+  to = "/terms-self-hosted"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/contact/sales"
+  to = "/contact/product-specialist"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/blog/better-onboarding-advice-from-engineering-leaders/"
+  to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm/"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/customers"
+  to = "/use-cases"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/dpa"
+  to = "/dpa.pdf"
+  status = 308
+  force = true
+
+[[redirects]]
+  from = "/cloud-beta"
+  to = "/"
+  status = 308
+  force = true
+# ========== END INDIVIDUAL REDIRECTS ==========
