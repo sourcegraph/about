@@ -7,7 +7,7 @@ publishDate: 2022-05-10T18:00+02:00
 tags: [blog]
 slug: developer-productivity-thoughts
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/meme.png
 published: true
 ---
 
