@@ -1,6 +1,6 @@
 import * as React from 'react'
-
 import { PageProps } from 'gatsby'
+
 import Layout from '../../components/Layout'
 import WebinarLayout from '../../components/webinars/WebinarLayout'
 
@@ -32,7 +32,6 @@ export const Webinar: React.FunctionComponent<PageProps> = props => (
         <WebinarLayout
             title="Preparing for the Next Log4j"
             subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
-
             speakers={speakers}
             customer={{
                 name: 'Nutanix',

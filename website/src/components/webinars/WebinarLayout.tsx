@@ -1,9 +1,13 @@
 import * as React from 'react'
+
 import classNames from 'classnames'
+import styles from './WebinarLayout.module.scss'
+
 import { ContentSection } from '../content/ContentSection'
+import { breakpoints } from '../../breakpoints'
+import { useWindowWidth } from '../../hooks'
 import { useHubSpot } from '../../hooks/hubSpot'
 import { useChiliPiper } from '../../hooks/chiliPiper'
-import styles from './WebinarLayout.module.scss'
 
 interface Props {
     customer?: Customer
@@ -42,22 +46,25 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
     })
     useChiliPiper()
 
+    const windowWidth = useWindowWidth()
+    const isMdScreen = windowWidth < breakpoints.lg && windowWidth > breakpoints.sm
+    const isMobile = windowWidth < breakpoints.md
+
     return (
         <>
             {/* Hero style differs if webinar is customer- vs. interal-based */}
             <section className={classNames(!customer && styles.hero)}>
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {customer && (
-                        <div className="col-lg-6 col-12 text-lg-center pb-6 pb-lg-0">
+                        <div className="col-lg-6 col-12 text-lg-center pb-5 pb-lg-0">
                             <img
-                                className="mr-3 pr-5 border-right border-2 border-black"
-                                width="120"
+                                className={`border-right border-black ${isMobile || isMdScreen ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'}`}
+                                width={isMobile ? '65' : isMdScreen ? '80' : '110'}
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                                 />
                             <img
-                                className="ml-3"
-                                height="30"
+                                height={isMobile ? '15' : isMdScreen ? '20' : '25'}
                                 src={customer.logo}
                                 alt={`${customer.name} logo`}
                             />
@@ -77,7 +84,7 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
                         <h3 className="font-weight-bold">Watch the on-demand webinar</h3>
-                        <div className="border border-2 border-plum-mist pt-4 px-4 pb-2 mx-1 mt-3">
+                        <div className="border border-3 border-plum-mist pt-4 px-4 pb-2 mx-1 mt-3">
                             <div id="form" />
                         </div>
                     </div>
