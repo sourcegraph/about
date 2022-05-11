@@ -58,11 +58,13 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
                     {customer && (
                         <div className="col-lg-6 col-12 text-lg-center pb-5 pb-lg-0">
                             <img
-                                className={`border-right border-black ${isMobile || isMdScreen ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'}`}
+                                className={`border-right border-black ${
+                                    isMobile || isMdScreen ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
+                                }`}
                                 width={isMobile ? '65' : isMdScreen ? '80' : '110'}
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
-                                />
+                            />
                             <img
                                 height={isMobile ? '15' : isMdScreen ? '20' : '25'}
                                 src={customer.logo}
