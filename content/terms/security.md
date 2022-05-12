@@ -33,7 +33,7 @@ Sourcegraph.com makes it easier than ever to connect your code repositories and 
 #### Monitoring and Incident Response
 
 - Our operations team monitors service availability 24x7x365. They investigate alerts and potential attacks 24x7x365, triaging and responding if necessary.
-- We only log information crucial for security and support. Only restricted personnel have access to user data. Logs are stored in GCP and the information is retained for 180 days. Find out more in our [Privacy Policy](https://about.sourcegraph.com/privacy/).
+- We only log information crucial for security and support. Only restricted personnel have access to user data. Logs are stored in GCP and the information is retained for 180 days. Find out more in our [Privacy Policy](/terms/privacy).
 - Service, application, and access logs for sourcegraph.com are stored centrally by Sourcegraph and monitored.
 - Our Incident Response plan is currently under review. It will be publicly available when finalized.
 

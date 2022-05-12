@@ -6,7 +6,7 @@ description: This page lists the subsprocessors that Sourcegraph may use
 
 Last modified: December 3, 2021
 
-Sourcegraph, Inc. (“Sourcegraph”) uses certain third party sub-processors (“Sub-processors”) to assist in providing the Services described in the Sourcegraph Terms of Service available at [https://about.sourcegraph.com/terms/](https://about.sourcegraph.com/terms/) and/or as set forth in an applicable Order Form. Capitalized terms used but not otherwise defined herein shall have the meanings ascribed to them in the applicable Sourcegraph Terms of Service.
+Sourcegraph, Inc. (“Sourcegraph”) uses certain third party sub-processors (“Sub-processors”) to assist in providing the Services described in the [Sourcegraph Terms of Service](/terms) available and/or as set forth in an applicable Order Form. Capitalized terms used but not otherwise defined herein shall have the meanings ascribed to them in the applicable Sourcegraph Terms of Service.
 
 Sourcegraph will update this page when engaging a new Sub-processor, and if you [subscribe for updates](#sign-up), Sourcegraph will notify you by email of changes to this page.
 
