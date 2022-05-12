@@ -49,26 +49,24 @@ export const Webinar: FunctionComponent<PageProps> = props => {
                     logo: '/external-logos/nutanix-logo.svg',
                     href: 'https://nutanix.com',
                 }}
-                form={
-                    <div id="form" />
-                }
+                form={<div id="form" />}
                 description={
                     <section className="col-md-6 col-12">
                         <p>
                             For Nutanix, when 20,000+ of the world's most advanced data centers rely on your company's
-                            software, any security vulnerability is a concern. But when the Log4j vulnerability hit, rated
-                            as a 10/10 on the CVSS scale, the Nutanix team knew it had to act fast. "The more we dug, the
-                            more we realized this bug was everywhere and nowhere at the same time," said Nutanix Technical
-                            Director of Solution Engineering, Jon Kohler.
+                            software, any security vulnerability is a concern. But when the Log4j vulnerability hit,
+                            rated as a 10/10 on the CVSS scale, the Nutanix team knew it had to act fast. "The more we
+                            dug, the more we realized this bug was everywhere and nowhere at the same time," said
+                            Nutanix Technical Director of Solution Engineering, Jon Kohler.
                         </p>
                         <p>
                             So how did Nutanix rise to the challenge of creating a cohesive response across the org's
                             multiple teams to quickly fix the Log4j vulnerability?
                         </p>
                         <p>
-                            Hear firsthand from Jon Kohler, Nutanix Technical Director of Solution Engineering, about how he
-                            and his team quickly identified and remediated every instance of Log4j, transforming a threat to
-                            customer trust into an opportunity to strengthen it.
+                            Hear firsthand from Jon Kohler, Nutanix Technical Director of Solution Engineering, about
+                            how he and his team quickly identified and remediated every instance of Log4j, transforming
+                            a threat to customer trust into an opportunity to strengthen it.
                         </p>
                         <p>In this session, you’ll learn:</p>
                         <ul>
