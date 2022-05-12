@@ -6,8 +6,8 @@ authorUrl: https://handbook.sourcegraph.com/team/#robert-lin
 publishDate: 2022-04-28T18:00+02:00
 tags: [blog]
 slug: notebooks-ci
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/sg-notebooks-landingpage-desktop%20copy.jpg
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Notebooks/sg-notebooks-landingpage-desktop%20copy.jpg
 published: true
 ---
 
