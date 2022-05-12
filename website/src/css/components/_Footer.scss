@@ -15,7 +15,7 @@
         font-weight: bolder;
     }
     &__logo {
-        background: url(/sourcegraph-logo.svg) no-repeat;
+        background: url("/sourcegraph-logo.svg") no-repeat;
         background-size: 200px;
         height: 40px;
     }
@@ -127,7 +127,7 @@
     .footer {
         background: none;
         &__logo {
-            background: url(/sourcegraph-reverse-logo.svg) no-repeat;
+            background: url("/sourcegraph-reverse-logo.svg") no-repeat;
         }
         &__nav-header {
             opacity: 0.6;

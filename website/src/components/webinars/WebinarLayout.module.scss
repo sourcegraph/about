@@ -1,7 +1,19 @@
+@import '@styles/colors';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/variables';
+
 .hero {
     background: url('/bg-code-saturn.svg') no-repeat;
     background-size: cover;
-    @media only screen and (max-width: 576) {
+
+    @include media-breakpoint-up(sm) {
         background: url('/bg-code-saturn-mobile.svg') no-repeat;
+        background-size: cover;
     }
+}
+
+.saturnBorder {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, $violet-mist, $blue-mist);
 }

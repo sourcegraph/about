@@ -6,15 +6,13 @@ import styles from './WebinarLayout.module.scss'
 import { ContentSection } from '../content/ContentSection'
 import { breakpoints } from '../../breakpoints'
 import { useWindowWidth } from '../../hooks'
-import { useHubSpot } from '../../hooks/hubSpot'
 
 interface Props {
     customer?: Customer
     title: string
     subtitle: string
     description: ReactNode
-    demoUrl: string
-    formId: string
+    form: ReactNode
     speakers: Speaker[]
     children?: ReactNode
 }
@@ -37,18 +35,10 @@ export const WebinarLayout: FunctionComponent<Props> = ({
     subtitle,
     customer,
     description,
-    demoUrl,
-    formId,
+    form,
     speakers,
     children,
 }) => {
-    useHubSpot({
-        portalId: '2762526',
-        formId,
-        targetId: 'form',
-        onFormSubmitted: () => window.open(demoUrl),
-    })
-
     const windowWidth = useWindowWidth()
     const isMdScreen = windowWidth < breakpoints.lg && windowWidth > breakpoints.sm
     const isMobile = windowWidth < breakpoints.md
@@ -56,7 +46,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
     return (
         <>
             {/* Hero style differs if webinar is customer- vs. interal-based */}
-            <section className={classNames(!customer && styles.hero)}>
+            <section className={classNames(customer && styles.hero)}>
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {customer && (
                         <div className="col-lg-6 col-12 text-lg-center pb-5 pb-lg-0">
@@ -89,8 +79,8 @@ export const WebinarLayout: FunctionComponent<Props> = ({
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
                         <h3 className="font-weight-bold">Watch the on-demand webinar</h3>
-                        <div className="border border-3 border-plum-mist pt-4 px-4 pb-2 mx-1 mt-3">
-                            <div id="form" />
+                        <div className={`border border-3 ${isMobile || isMdScreen ? 'border-plum-mist' : styles.saturnBorder } pt-4 px-4 pb-2 mx-1 mt-3`}>
+                            {form}
                         </div>
                     </div>
                 </ContentSection>
