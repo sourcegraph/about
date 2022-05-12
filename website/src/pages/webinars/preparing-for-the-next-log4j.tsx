@@ -34,6 +34,7 @@ export const Webinar: React.FunctionComponent<PageProps> = props => (
             title="Preparing for the Next Log4j"
             subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
             speakers={speakers}
+            demoUrl="https://my.demio.com/recording/ANM9Sjbx"
             formId="abb86998-1a6a-4cfd-9888-ffba09c850c9"
             customer={{
                 name: 'Nutanix',

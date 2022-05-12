@@ -7,13 +7,13 @@ import { ContentSection } from '../content/ContentSection'
 import { breakpoints } from '../../breakpoints'
 import { useWindowWidth } from '../../hooks'
 import { useHubSpot } from '../../hooks/hubSpot'
-import { useChiliPiper } from '../../hooks/chiliPiper'
 
 interface Props {
     customer?: Customer
     title: string
     subtitle: string
     description: React.ReactNode
+    demoUrl: string
     formId: string
     speakers: Speaker[]
     children?: React.ReactNode
@@ -37,6 +37,7 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
     subtitle,
     customer,
     description,
+    demoUrl,
     formId,
     speakers,
     children,
@@ -45,8 +46,8 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
         portalId: '2762526',
         formId,
         targetId: 'form',
+        onFormSubmitted: () => window.open(demoUrl),
     })
-    useChiliPiper()
 
     const windowWidth = useWindowWidth()
     const isMdScreen = windowWidth < breakpoints.lg && windowWidth > breakpoints.sm
