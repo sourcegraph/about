@@ -1,7 +1,7 @@
 .hero {
-    background: url(/bg-code-saturn.svg) no-repeat;
+    background: url("/bg-code-saturn.svg") no-repeat;
     background-size: cover;
     @media only screen and (max-width: 576) {
-        background: url(/bg-code-saturn-mobile.svg) no-repeat;
+        background: url("/bg-code-saturn-mobile.svg") no-repeat;
     }
 }

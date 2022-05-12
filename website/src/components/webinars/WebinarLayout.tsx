@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { ReactNode, FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 import styles from './WebinarLayout.module.scss'
@@ -12,11 +12,11 @@ interface Props {
     customer?: Customer
     title: string
     subtitle: string
-    description: React.ReactNode
+    description: ReactNode
     demoUrl: string
     formId: string
     speakers: Speaker[]
-    children?: React.ReactNode
+    children?: ReactNode
 }
 
 interface Customer {
@@ -32,7 +32,7 @@ interface Speaker {
     bio: string
 }
 
-export const WebinarLayout: React.FunctionComponent<Props> = ({
+export const WebinarLayout: FunctionComponent<Props> = ({
     title,
     subtitle,
     customer,
