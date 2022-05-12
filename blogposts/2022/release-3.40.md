@@ -8,7 +8,7 @@ published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.40/sourcegraph-3-40-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.40/sourcegraph-3-40-release.png
 changelogItems:
-  - description: 
+  - description:
     url:
     category:
 ---
