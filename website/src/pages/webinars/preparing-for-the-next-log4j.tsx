@@ -34,6 +34,7 @@ export const Webinar: React.FunctionComponent<PageProps> = props => (
             title="Preparing for the Next Log4j"
             subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
             speakers={speakers}
+            formId="abb86998-1a6a-4cfd-9888-ffba09c850c9"
             customer={{
                 name: 'Nutanix',
                 logo: '/external-logos/nutanix-logo.svg',
@@ -59,15 +60,15 @@ export const Webinar: React.FunctionComponent<PageProps> = props => (
                     </p>
                     <p>In this session, you’ll learn:</p>
                     <ul>
-                        <li>
+                        <li className="mb-2">
                             How Jon enabled his team to confidently find & fix every instance of Log4j across a
                             sprawling codebase in under 4 days
                         </li>
-                        <li>
+                        <li className="mb-2">
                             How this experience led to a renewed trust in Nutanix's vulnerability remediation for
                             management and customers
                         </li>
-                        <li>Best practices to prepare for the next security vulnerability</li>
+                        <li className="mb-2">Best practices to prepare for the next security vulnerability</li>
                     </ul>
                 </section>
             }

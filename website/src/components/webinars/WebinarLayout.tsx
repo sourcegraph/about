@@ -14,6 +14,7 @@ interface Props {
     title: string
     subtitle: string
     description: React.ReactNode
+    formId: string
     speakers: Speaker[]
     children?: React.ReactNode
 }
@@ -36,12 +37,13 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
     subtitle,
     customer,
     description,
+    formId,
     speakers,
     children,
 }) => {
     useHubSpot({
         portalId: '2762526',
-        formId: '66361163-5e08-4be3-8ab0-6590b70df69e',
+        formId,
         targetId: 'form',
     })
     useChiliPiper()
@@ -73,7 +75,7 @@ export const WebinarLayout: React.FunctionComponent<Props> = ({
                         </div>
                     )}
 
-                    <div className={classNames('col-12', customer ? 'col-lg-6' : 'text-white')}>
+                    <div className={classNames('col-12', customer && 'col-lg-6')}>
                         <h2 className="display-3 font-weight-bold mb-4">{title}</h2>
                         <h3 className={classNames('font-weight-light', { 'max-w-400': customer })}>{subtitle}</h3>
                     </div>
