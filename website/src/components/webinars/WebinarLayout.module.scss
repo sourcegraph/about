@@ -14,6 +14,6 @@
 }
 
 .saturnBorder {
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, $violet-mist, $blue-mist);
+    border-image-slice: 1 !important;
+    border-image-source: linear-gradient(to right, $violet-mist, $blue-mist) !important;
 }

@@ -80,9 +80,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
                         <h3 className="font-weight-bold">Watch the on-demand webinar</h3>
                         <div
-                            className={`border border-3 ${
-                                isMobile || isMdScreen ? 'border-plum-mist' : styles.saturnBorder
-                            } pt-4 px-4 pb-2 mx-1 mt-3`}
+                            className={`${styles.saturnBorder} border border-3 shadow-sm pt-4 px-4 pb-2 mx-1 mt-3`}
                         >
                             {form}
                         </div>
@@ -92,7 +90,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                 {children}
             </section>
 
-            <section className="bg-white py-6">
+            <section className="bg-white pb-6">
                 <ContentSection>
                     <h2 className="font-weight-bold">Speakers</h2>
 
