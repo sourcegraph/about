@@ -206,7 +206,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
         meta={{
-            title: 'Find and fix security vulnerabilities',
+            title: 'Improve code security',
             description:
                 'Search across all your repositories to find and resolve vulnerabilities in minutes, not days.',
             image: 'https://about.sourcegraph.com/sourcegraph-og.png',
@@ -219,9 +219,7 @@ const UseCasePage: FunctionComponent<PageProps> = props => (
                         <div className="row">
                             <div className="col-lg-7 mb-8 mt-7">
                                 <BackButtonBold href="/use-cases" text="USE CASES" />
-                                <h1 className="display-2 font-weight-bold mb-4">
-                                    Find and fix security vulnerabilities
-                                </h1>
+                                <h1 className="display-2 font-weight-bold mb-4">Improve code security</h1>
                                 <div className="display-4 font-weight-normal mb-5">
                                     Search across all your repositories to find and resolve vulnerabilities in minutes,
                                     not days.

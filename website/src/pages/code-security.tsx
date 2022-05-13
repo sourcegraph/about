@@ -7,7 +7,7 @@ import { useHubSpot } from '../hooks/hubSpot'
 import { useChiliPiper } from '../hooks/chiliPiper'
 import { buttonStyle, buttonLocation } from '../tracking'
 
-const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
+const CodeSecurity: FunctionComponent<PageProps> = props => {
     useHubSpot({
         portalId: '2762526',
         formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
@@ -19,7 +19,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
         <Layout
             location={props.location}
             meta={{
-                title: 'Fixing Security Vulnerabilities | Sourcegraph',
+                title: 'Improve code security | Sourcegraph',
                 description:
                     "Search within and across repositories to find and fix vulnerabilities in minutes, and deploy fixes with confidence knowing you've found every instance of affected code.",
             }}
@@ -27,7 +27,7 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
             <div className="container py-6">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h1 className="mb-4 font-weight-bold">Find and fix security vulnerabilities faster</h1>
+                        <h1 className="mb-4 font-weight-bold">Improve code security</h1>
                         <h4 className="font-weight-bold">You can't fix what you can't find</h4>
                         <p>
                             Search within and across your repositories to find and fix vulnerabilities in minutes, not
@@ -104,4 +104,4 @@ const FixingVulnerabilities: FunctionComponent<PageProps> = props => {
     )
 }
 
-export default FixingVulnerabilities
+export default CodeSecurity

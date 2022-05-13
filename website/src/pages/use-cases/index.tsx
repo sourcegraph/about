@@ -43,8 +43,7 @@ export default ((props: any) => (
                                     data-button-location={buttonLocation.hero}
                                     data-button-type="cta"
                                 >
-                                    Find and fix security vulnerabilities{' '}
-                                    <ArrowRightIcon className="icon-inline ml-1" />
+                                    Improve code security <ArrowRightIcon className="icon-inline ml-1" />
                                 </Link>
                                 <Link
                                     to="#accelerate-developer-onboarding"
@@ -99,7 +98,7 @@ export default ((props: any) => (
             <ContentSection id="find-and-fix-security-vulnerabilities" className="py-4">
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Find and fix security vulnerabilities</h2>
+                        <h2 className="display-3 font-weight-bold mb-3">Improve code security</h2>
                         <h5>Find, fix, and track vulnerable code quickly across your entire codebase.</h5>
                         <p>
                             You can’t fix what you can’t find. Remediate vulnerabilities with confidence knowing you
@@ -124,7 +123,7 @@ export default ((props: any) => (
                         >
                             Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                         </Link>
-                        <Link to="/use-cases/vulnerabilities" className="btn btn-link font-weight-bold">
+                        <Link to="/use-cases/security" className="btn btn-link font-weight-bold">
                             Learn more
                         </Link>
                     </div>
