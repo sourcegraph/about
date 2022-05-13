@@ -53,7 +53,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
         portalId: '2762526',
         formId: form.formId,
         targetId: 'form',
-        formInstanceId: form.formId
+        formInstanceId: form.formId,
     })
 
     return (
@@ -92,9 +92,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
                         <h3 className="font-weight-bold">Watch the on-demand webinar</h3>
-                        <div
-                            className={`${styles.saturnBorder} border border-3 shadow-sm py-4 px-4 mx-1 mt-3`}
-                        >
+                        <div className={`${styles.saturnBorder} border border-3 shadow-sm py-4 px-4 mx-1 mt-3`}>
                             <div id="form" />
                         </div>
                     </div>
