@@ -6,16 +6,7 @@ import styles from './WebinarLayout.module.scss'
 import { ContentSection } from '../content/ContentSection'
 import { breakpoints } from '../../breakpoints'
 import { useWindowWidth } from '../../hooks'
-
-interface Props {
-    customer?: Customer
-    title: string
-    subtitle: string
-    description: ReactNode
-    form: ReactNode
-    speakers: Speaker[]
-    children?: ReactNode
-}
+import { useHubSpot } from '../../hooks/hubSpot'
 
 interface Customer {
     name: string
@@ -30,6 +21,21 @@ interface Speaker {
     bio: string
 }
 
+interface Form {
+    formId: string
+    onFormSubmitted?: () => void
+}
+
+interface Props {
+    customer?: Customer
+    title: string
+    subtitle: string
+    description: ReactNode
+    form: Form
+    speakers: Speaker[]
+    children?: ReactNode
+}
+
 export const WebinarLayout: FunctionComponent<Props> = ({
     title,
     subtitle,
@@ -42,6 +48,13 @@ export const WebinarLayout: FunctionComponent<Props> = ({
     const windowWidth = useWindowWidth()
     const isMdScreen = windowWidth < breakpoints.lg && windowWidth > breakpoints.sm
     const isMobile = windowWidth < breakpoints.md
+
+    useHubSpot({
+        portalId: '2762526',
+        formId: form.formId,
+        targetId: 'form',
+        formInstanceId: form.formId
+    })
 
     return (
         <>
@@ -80,9 +93,9 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
                         <h3 className="font-weight-bold">Watch the on-demand webinar</h3>
                         <div
-                            className={`${styles.saturnBorder} border border-3 shadow-sm pt-4 px-4 pb-2 mx-1 mt-3`}
+                            className={`${styles.saturnBorder} border border-3 shadow-sm py-4 px-4 mx-1 mt-3`}
                         >
-                            {form}
+                            <div id="form" />
                         </div>
                     </div>
                 </ContentSection>
