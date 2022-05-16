@@ -53,7 +53,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
         portalId: '2762526',
         formId: form.formId,
         targetId: 'form',
-        formInstanceId: form.formId
+        formInstanceId: form.formId,
     }
     if (form.onFormSubmitted) {
         hubSpotConfig.onFormSubmitted = form.onFormSubmitted
