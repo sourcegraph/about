@@ -72,7 +72,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                                     isMobile || isMdScreen ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
                                 }`}
                                 width={isMobile ? '65' : isMdScreen ? '80' : '110'}
-                                src="/sourcegraph/sourcegraph-mark.svg"
+                                src="/sourcegraph/sg-logomark.svg"
                                 alt="Sourcegraph mark"
                             />
                             <img
