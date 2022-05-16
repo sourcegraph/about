@@ -41,6 +41,7 @@ export const Webinar: FunctionComponent<PageProps> = props => (
             }}
             form={{
                 formId: 'abb86998-1a6a-4cfd-9888-ffba09c850c9',
+                onFormSubmitted: () => window.open('https://my.demio.com/recording/ANM9Sjbx')
             }}
             description={
                 <section className="col-md-6 col-12">
