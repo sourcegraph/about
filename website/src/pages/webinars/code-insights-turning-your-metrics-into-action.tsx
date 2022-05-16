@@ -38,7 +38,7 @@ export const Webinar: FunctionComponent<PageProps> = props => (
                 onFormSubmitted: () => window.open('https://my.demio.com/recording/7BYqL99g'),
             }}
             description={
-                <section className="col-md-6 col-12">
+                <section className="col-md-6 col-12 pr-lg-6">
                     <p>
                         Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can
                         track with mere seconds of setup.
