@@ -15,7 +15,6 @@ const MonolithToMicroservices: FunctionComponent<PageProps> = props => {
                 description:
                     'Employ the five key techniques that the best engineering organizations enable to successfully conduct major architectural transitions.',
             }}
-            className="bg-white"
         >
             <section
                 style={{
