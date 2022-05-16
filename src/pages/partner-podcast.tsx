@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout, CaseStudyCard, FormLegal, BlogResourceItem } from '@components'
-import { useHubSpot } from '@hooks'
+import { useHubSpot, useChiliPiper } from '@hooks'
 
 const blogResourceItems = [
     {
@@ -78,8 +78,8 @@ const PartnerPodcastPage: FunctionComponent = () => {
         portalId: '2762526',
         formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
         targetId: 'form',
-        chiliPiper: true,
     })
+    useChiliPiper()
 
     return (
         <Layout

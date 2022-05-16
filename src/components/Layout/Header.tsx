@@ -56,6 +56,7 @@ const Header: FunctionComponent<Props> = props => {
                             <NavDropdown id="productDropdown" title="Product">
                                 <NavDropdown.Item href="/code-search">Code Search</NavDropdown.Item>
                                 <NavDropdown.Item href="/batch-changes">Batch Changes</NavDropdown.Item>
+                                <NavDropdown.Item href="/code-insights">Code Insights</NavDropdown.Item>
                                 <NavDropdown.Item href="https://docs.sourcegraph.com/code_intelligence">
                                     Code Intelligence
                                 </NavDropdown.Item>

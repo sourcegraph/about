@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { Layout, CustomerLogos } from '@components'
-import { useHubSpot } from '@hooks'
+import { useHubSpot, useChiliPiper } from '@hooks'
 
 const title = 'Sourcegraph - Schedule a Code Insights demo.'
 const description =
@@ -12,8 +12,8 @@ const Contact: FunctionComponent = () => {
         portalId: '2762526',
         formId: 'a58be17d-86ad-4a6e-8c97-83818aafd2ab',
         targetId: 'hubspotRequestCodeInsightsDemo',
-        chiliPiper: true,
     })
+    useChiliPiper()
 
     return (
         <Layout

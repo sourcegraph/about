@@ -1,15 +1,15 @@
 import React, { FunctionComponent } from 'react'
 
 import { Layout } from '@components'
-import { useHubSpot } from '@hooks'
+import { useHubSpot, useChiliPiper } from '@hooks'
 
 const Demo: FunctionComponent = () => {
     useHubSpot({
         portalId: '2762526',
         formId: 'baf7d112-bb19-4b95-851e-a83e7b214b9b',
         targetId: 'form',
-        chiliPiper: true,
     })
+    useChiliPiper()
 
     return (
         <Layout

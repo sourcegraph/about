@@ -10,7 +10,6 @@ const DevelopmentOnboardingUnique: FunctionComponent = () => {
         portalId: '2762526',
         formId: '25249bac-6544-4f50-9fc0-559745de5334',
         targetId: 'form',
-        chiliPiper: false,
         onFormSubmitted: () => window.open('/guides/dev-onboarding-unique/sg-dev-onboarding-what-makes-it-unique.pdf'),
     })
 

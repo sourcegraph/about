@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 
 declare global {
     interface Window {
-        ChiliPiper?: IChiliPiper
         hbspt?: {
             forms: {
                 create: ({
@@ -10,6 +9,7 @@ declare global {
                     portalId,
                     formId,
                     target,
+                    formInstanceId,
                     onFormSubmit,
                     onFormSubmitted,
                     onFormReady,
@@ -19,45 +19,12 @@ declare global {
     }
 }
 
-export interface MessageEventData {
-    type: string
-    eventName: string
-    data: { name: string; value: string }[]
-}
-
-interface IChiliPiper {
-    submit: (
-        domain: string,
-        router: string,
-        options?: {
-            lead: { [key: string]: string | number }
-            handleSubmit?: boolean
-            formId?: string
-            debug?: boolean
-            map?: boolean
-            domain?: string
-            router?: string
-            title?: string
-            titleStyle?: string
-            onSuccess?: () => void
-            onError?: () => void
-            onClose?: () => void
-            onRouted?: () => void
-            closeOnOutside?: boolean
-            dynamicRedirectLink?: string
-            mobileRedirectLink?: string
-            injectRootCss?: boolean
-            locale?: string
-            webHook?: string
-        }
-    ) => void
-}
-
 interface HubSpotProps {
     region?: string
     portalId: string
     formId: string
     target: string
+    formInstanceId?: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
     onFormReady?: ($form: HubSpotForm) => void
     onFormSubmitted?: () => void
@@ -67,6 +34,7 @@ interface HubSpotForm {
     region?: string
     [index: number]: HTMLFormElement
     portalId: string
+    formInstanceId?: string
     formId: string
     targetId: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
@@ -78,14 +46,20 @@ interface HookProps {
     region?: string
     portalId: string
     formId: string
-    targetId: string | string[]
-    chiliPiper: boolean
+    targetId: string
+    formInstanceId?: string
     onFormSubmitted?: () => void
 }
 
-const loadHubSpotScript = (): HTMLScriptElement | Element => {
-    const hubSpotScript = '//js.hsforms.net/forms/v2.js'
+const hubSpotScript = '//js.hsforms.net/forms/v2.js'
+
+const getHubSpotScript = (): Element | null => {
     const script = document.querySelector(`script[src="${hubSpotScript}"]`)
+    return script
+}
+
+const loadHubSpotScript = (): HTMLScriptElement | Element => {
+    const script = getHubSpotScript()
 
     if (!script) {
         const scriptElement = document.createElement('script')
@@ -97,23 +71,12 @@ const loadHubSpotScript = (): HTMLScriptElement | Element => {
     return script
 }
 
-const loadChiliPiperScript = (callback: () => void): void => {
-    const chiliPiperScript = '//js.chilipiper.com/marketing.js'
-    const script = document.querySelector(`script[src="${chiliPiperScript}"]`)
-
-    if (!script) {
-        const scriptElement = document.createElement('script')
-        scriptElement.src = chiliPiperScript
-        document.head.append(scriptElement)
-        return callback()
-    }
-}
-
 function createHubSpotForm({
     region,
     portalId,
     formId,
     targetId,
+    formInstanceId,
     onFormSubmit,
     onFormSubmitted,
     onFormReady,
@@ -126,10 +89,11 @@ function createHubSpotForm({
 
     const script = loadHubSpotScript()
     script?.addEventListener('load', () => {
-        ;(window as Window).hbspt?.forms.create({
+        window.hbspt?.forms.create({
             region: region || 'na1',
             portalId,
             formId,
+            formInstanceId,
             target: `#${targetId}`,
             onFormSubmit,
             onFormSubmitted,
@@ -166,47 +130,27 @@ function createHubSpotForm({
     })
 }
 
-export const useHubSpot = ({ region, portalId, formId, targetId, chiliPiper, onFormSubmitted }: HookProps): void => {
+export const useHubSpot = ({
+    region,
+    portalId,
+    formId,
+    targetId,
+    formInstanceId,
+    onFormSubmitted,
+}: HookProps): void => {
     useEffect(() => {
-        if (Array.isArray(targetId)) {
-            for (const id of targetId) {
-                createHubSpotForm({
-                    region,
-                    portalId,
-                    formId,
-                    targetId: id,
-                    onFormSubmitted,
-                })
-            }
-        } else {
-            createHubSpotForm({
-                region,
-                portalId,
-                formId,
-                targetId,
-                onFormSubmitted,
-            })
-        }
+        createHubSpotForm({
+            region,
+            portalId,
+            formId,
+            formInstanceId,
+            targetId,
+            onFormSubmitted,
+        })
 
-        if (chiliPiper) {
-            loadChiliPiperScript(() => {
-                const cpTenantDomain = 'sourcegraph'
-                const cpRouterName = 'contact-sales'
-                window.addEventListener('message', event => {
-                    const data = event.data as MessageEventData
-                    if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
-                        const lead = data.data.reduce(
-                            (object, item) => Object.assign(object, { [item.name]: item.value }),
-                            {}
-                        )
-                        const chilipiper = window.ChiliPiper
-                        chilipiper?.submit(cpTenantDomain, cpRouterName, {
-                            map: true,
-                            lead,
-                        })
-                    }
-                })
-            })
+        return () => {
+            const script = getHubSpotScript()
+            script?.remove()
         }
-    }, [region, portalId, formId, targetId, chiliPiper, onFormSubmitted])
+    }, [region, portalId, formId, targetId, formInstanceId, onFormSubmitted])
 }

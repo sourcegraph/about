@@ -8,7 +8,6 @@ const Uninstall: FunctionComponent = () => {
         portalId: '2762526',
         formId: 'a1bc77c9-019c-4f83-b5ba-327949f8e587',
         targetId: 'hubspotEditorForm',
-        chiliPiper: false,
     })
 
     return (

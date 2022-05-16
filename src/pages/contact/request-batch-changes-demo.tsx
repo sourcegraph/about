@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import { Layout, CustomerLogos } from '@components'
-import { useHubSpot } from '@hooks'
+import { useHubSpot, useChiliPiper } from '@hooks'
 
 const title = 'Sourcegraph - Schedule a Batch Changes demo.'
 const description = 'Learn how you can automate large-scale code changes with Sourcegraph Batch Changes.'
@@ -11,8 +11,8 @@ const Contact: FunctionComponent = () => {
         portalId: '2762526',
         formId: 'c98d6435-f0fc-4b34-8cff-cfe7633121c8',
         targetId: 'hubspotRequestBatchChangesDemo',
-        chiliPiper: true,
     })
+    useChiliPiper()
 
     return (
         <Layout

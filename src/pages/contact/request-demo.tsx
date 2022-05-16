@@ -11,7 +11,6 @@ const Contact: FunctionComponent = () => {
         portalId: '2762526',
         formId: '310000a0-2b6b-4da2-89e9-2be930a8a298',
         targetId: 'hubspotRequestDemoForm',
-        chiliPiper: false,
     })
 
     return (

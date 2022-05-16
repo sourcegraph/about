@@ -4,15 +4,16 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout, FormLegal } from '@components'
-import { useHubSpot } from '@hooks'
+import { buttonStyle, buttonLocation } from '@data'
+import { useHubSpot, useChiliPiper } from '@hooks'
 
 const AccelerateDevOnboarding: FunctionComponent = () => {
     useHubSpot({
         portalId: '2762526',
         formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
-        targetId: ['form-0', 'form-1'],
-        chiliPiper: true,
+        targetId: 'form-0',
     })
+    useChiliPiper()
 
     return (
         <Layout
@@ -88,7 +89,16 @@ const AccelerateDevOnboarding: FunctionComponent = () => {
                     <h2 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h2>
 
                     <div className="mt-5 mw-400 mx-auto">
-                        <div id="form-1" />
+                        <Link href="/demo">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                            >
+                                Request a demo
+                            </a>
+                        </Link>
                         <FormLegal />
                     </div>
                 </div>

@@ -3,15 +3,16 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { Layout, FormLegal } from '@components'
-import { useHubSpot } from '@hooks'
+import { buttonStyle, buttonLocation } from '@data'
+import { useHubSpot, useChiliPiper } from '@hooks'
 
 const FixingVulnerabilities: FunctionComponent = () => {
     useHubSpot({
         portalId: '2762526',
         formId: '721ac3eb-d213-45b1-858a-2df8743ad143',
-        targetId: ['form-0', 'form-1'],
-        chiliPiper: true,
+        targetId: 'form-0',
     })
+    useChiliPiper()
 
     return (
         <Layout
@@ -85,7 +86,16 @@ const FixingVulnerabilities: FunctionComponent = () => {
                     </h2>
 
                     <div className="mt-5 mw-400 mx-auto">
-                        <div id="form-1" />
+                        <Link href="/demo">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                            >
+                                Request a demo
+                            </a>
+                        </Link>
                         <FormLegal />
                     </div>
                 </div>
