@@ -84,8 +84,8 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                     )}
 
                     <div className={classNames('col-12', customer && 'col-lg-6')}>
-                        <h2 className="display-3 font-weight-bold mb-4">{title}</h2>
-                        <h3 className={classNames('font-weight-light', { 'max-w-400': customer })}>{subtitle}</h3>
+                        <h1 className="display-3 font-weight-bold mb-4">{title}</h1>
+                        <h4 className={classNames('font-weight-light', { 'max-w-400': customer })}>{subtitle}</h4>
                     </div>
                 </div>
             </section>
@@ -95,11 +95,11 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                     {description}
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
-                        <h3 className="font-weight-bold">Watch the on-demand webinar</h3>
+                        <h2 className="font-weight-bold">Watch the on-demand webinar</h2>
                         <div
                             className={`${
                                 isMdScreen || isMobile ? 'border-plum-mist' : styles.saturnBorder
-                            } border border-3 shadow-sm py-4 px-4 mx-1 mt-3`}
+                            } border border-3 shadow-sm py-4 px-4 mt-3`}
                         >
                             <div id="form" />
                         </div>

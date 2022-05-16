@@ -44,7 +44,7 @@ export const Webinar: FunctionComponent<PageProps> = props => (
                 onFormSubmitted: () => window.open('https://my.demio.com/recording/ANM9Sjbx'),
             }}
             description={
-                <section className="col-md-6 col-12">
+                <section className="col-md-6 col-12 pr-lg-6">
                     <p>
                         For Nutanix, when 20,000+ of the world's most advanced data centers rely on your company's
                         software, any security vulnerability is a concern. But when the Log4j vulnerability hit, rated
