@@ -23,21 +23,16 @@ export const Webinar: FunctionComponent<PageProps> = props => (
     <Layout
         location={props.location}
         meta={{
-            title: '[On-Demand Webinar] Learn how Nutanix remediated Log4j in 4 days',
+            title: 'Sourcegraph Code Insights: Turning Metrics into Action',
             description:
-                'On-Demand Webinar. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
+                'Join Sourcegraph Product Manager Joel Kwartler and Customer Engineer Shawn King to learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.',
         }}
         className="navbar-white"
     >
         <WebinarLayout
-            title="Preparing for the Next Log4j"
-            subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
+            title="How to track what really matters to you and your team"
+            subtitle="Sourcegraph Code Insights: Turning Metrics into Action"
             speakers={speakers}
-            customer={{
-                name: 'Nutanix',
-                logo: '/external-logos/nutanix-logo.svg',
-                href: 'https://nutanix.com',
-            }}
             form={{
                 formId: 'abb86998-1a6a-4cfd-9888-ffba09c850c9',
                 onFormSubmitted: () => window.open('https://my.demio.com/recording/ANM9Sjbx'),

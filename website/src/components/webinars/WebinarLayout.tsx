@@ -63,7 +63,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
     return (
         <>
             {/* Hero style differs if webinar is customer- vs. interal-based */}
-            <section className={classNames(customer && styles.hero)}>
+            <section className={classNames(!customer && styles.hero)}>
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {customer && (
                         <div className="col-lg-6 col-12 text-lg-center pb-5 pb-lg-0">
