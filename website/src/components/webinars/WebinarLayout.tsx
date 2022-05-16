@@ -6,7 +6,7 @@ import styles from './WebinarLayout.module.scss'
 import { ContentSection } from '../content/ContentSection'
 import { breakpoints } from '../../breakpoints'
 import { useWindowWidth } from '../../hooks'
-import { useHubSpot } from '../../hooks/hubSpot'
+import { useHubSpot, HubSpotForm } from '../../hooks/hubSpot'
 
 interface Customer {
     name: string
@@ -49,12 +49,16 @@ export const WebinarLayout: FunctionComponent<Props> = ({
     const isMdScreen = windowWidth < breakpoints.lg && windowWidth > breakpoints.sm
     const isMobile = windowWidth < breakpoints.md
 
-    useHubSpot({
+    const hubSpotConfig: HubSpotForm = {
         portalId: '2762526',
         formId: form.formId,
         targetId: 'form',
         formInstanceId: form.formId,
-    })
+    }
+    if (form.onFormSubmitted) {
+        hubSpotConfig.onFormSubmitted = form.onFormSubmitted
+    }
+    useHubSpot(hubSpotConfig)
 
     return (
         <>
