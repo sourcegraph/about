@@ -6,16 +6,16 @@ import WebinarLayout from '../../components/webinars/WebinarLayout'
 
 const speakers = [
     {
-        name: 'Jon Kohler',
-        title: 'Technical Director of Solution Engineering at Nutanix',
-        img: '/case-studies/jon-kohler.png',
-        bio: 'Jon is a leader in the Solutions Engineering practice at Nutanix. His team covers a variety of full-stack technical solutions, focusing on both Big Data and Healthcare solutions.',
+        name: 'Joel Kwartler',
+        title: 'Sourcegraph Product Manager, Code Insights',
+        img: '/staff/joel-kwartler.png',
+        bio: 'Joel is the Product Manager for Code Insights at Sourcegraph, and wants to bring the best practices of big data to the problems of big code. Joel has bounced around the startup + design world at places like Figma and IDEO, and got a bachelor’s in C.S. at Harvard. After hours, you might find him doing stand up, pretending he knows piano, or waking up way too early to take photographs. He’s made the Forbes 30 Under 30 List of Best Joel Kwartlers for 5 of the past 8 years.',
     },
     {
-        name: 'Mike McLaughlin',
-        title: 'Principle Customer Engineer at Sourcegraph',
-        img: '/case-studies/mike-mclaughlin.png',
-        bio: 'Mike is a Principal Customer Engineer at Sourcegraph working with some of today’s largest brands to solve the challenges of big code, developer velocity, and fixing vulnerabilities.',
+        name: 'Shawn King',
+        title: 'Sourcegraph Customer Engineer',
+        img: '/staff/shawn-king.png',
+        bio: 'Shawn is a customer engineer at Sourcegraph. He has helped people use technology to get insights into their work his entire career. Coming from Microsoft and a startup called Intelligent InSites, Shawn has been able to support and provide metrics to many customers across different industries. Between the times when he’s helping customers, you can catch Shawn reading science fiction and enjoying time with his family.',
     },
 ]
 
@@ -34,38 +34,31 @@ export const Webinar: FunctionComponent<PageProps> = props => (
             subtitle="Sourcegraph Code Insights: Turning Metrics into Action"
             speakers={speakers}
             form={{
-                formId: 'abb86998-1a6a-4cfd-9888-ffba09c850c9',
-                onFormSubmitted: () => window.open('https://my.demio.com/recording/ANM9Sjbx'),
+                formId: '66361163-5e08-4be3-8ab0-6590b70df69e',
+                onFormSubmitted: () => window.open('https://my.demio.com/recording/7BYqL99g'),
             }}
             description={
                 <section className="col-md-6 col-12">
                     <p>
-                        For Nutanix, when 20,000+ of the world's most advanced data centers rely on your company's
-                        software, any security vulnerability is a concern. But when the Log4j vulnerability hit, rated
-                        as a 10/10 on the CVSS scale, the Nutanix team knew it had to act fast. "The more we dug, the
-                        more we realized this bug was everywhere and nowhere at the same time," said Nutanix Technical
-                        Director of Solution Engineering, Jon Kohler.
+                        Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.
                     </p>
                     <p>
-                        So how did Nutanix rise to the challenge of creating a cohesive response across the org's
-                        multiple teams to quickly fix the Log4j vulnerability?
+                        Code Insights lets you transform your code into a queryable database and create insights in seconds for anything you can search for. You can track: migration progress, terraform versions, component reuse, code smells, vulnerability indicators, language usage, CI connections, documentation, ownership signals, and many more metrics found in your code.
                     </p>
                     <p>
-                        Hear firsthand from Jon Kohler, Nutanix Technical Director of Solution Engineering, about how he
-                        and his team quickly identified and remediated every instance of Log4j, transforming a threat to
-                        customer trust into an opportunity to strengthen it.
+                        But when you can quantifiably track everything in your codebase, from migrations to code smells, how do you decide where to start?
                     </p>
-                    <p>In this session, you’ll learn:</p>
+                    <p>In this interactive session, Sourcegraph Product Manager Joel Kwartler and Customer Engineer Shawn King will teach you:</p>
                     <ul>
-                        <li className="mb-2">
-                            How Jon enabled his team to confidently find & fix every instance of Log4j across a
-                            sprawling codebase in under 4 days
-                        </li>
-                        <li className="mb-2">
-                            How this experience led to a renewed trust in Nutanix's vulnerability remediation for
-                            management and customers
-                        </li>
-                        <li className="mb-2">Best practices to prepare for the next security vulnerability</li>
+                        <li className="mb-2">What Code Insights is and why it's important</li>
+                        <li className="mb-2">Best practices for getting started from top-tier engineering organizations</li>
+                        <li className="mb-2">How to dive deeper into your data with advanced examples, including:</li>
+                        <ul>
+                            <li className="mb-2">Metadata/config tracking</li>
+                            <li className="mb-2">Commit signals</li>
+                            <li className="mb-2">Making use of advanced Sourcegraph filters</li>
+                            <li className="mb-2">Pattern tracking versions and licenses with regular expression capture groups</li>
+                        </ul>
                     </ul>
                 </section>
             }
