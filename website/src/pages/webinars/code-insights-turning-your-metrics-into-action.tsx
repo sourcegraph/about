@@ -40,24 +40,36 @@ export const Webinar: FunctionComponent<PageProps> = props => (
             description={
                 <section className="col-md-6 col-12">
                     <p>
-                        Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.
+                        Learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can
+                        track with mere seconds of setup.
                     </p>
                     <p>
-                        Code Insights lets you transform your code into a queryable database and create insights in seconds for anything you can search for. You can track: migration progress, terraform versions, component reuse, code smells, vulnerability indicators, language usage, CI connections, documentation, ownership signals, and many more metrics found in your code.
+                        Code Insights lets you transform your code into a queryable database and create insights in
+                        seconds for anything you can search for. You can track: migration progress, terraform versions,
+                        component reuse, code smells, vulnerability indicators, language usage, CI connections,
+                        documentation, ownership signals, and many more metrics found in your code.
                     </p>
                     <p>
-                        But when you can quantifiably track everything in your codebase, from migrations to code smells, how do you decide where to start?
+                        But when you can quantifiably track everything in your codebase, from migrations to code smells,
+                        how do you decide where to start?
                     </p>
-                    <p>In this interactive session, Sourcegraph Product Manager Joel Kwartler and Customer Engineer Shawn King will teach you:</p>
+                    <p>
+                        In this interactive session, Sourcegraph Product Manager Joel Kwartler and Customer Engineer
+                        Shawn King will teach you:
+                    </p>
                     <ul>
                         <li className="mb-2">What Code Insights is and why it's important</li>
-                        <li className="mb-2">Best practices for getting started from top-tier engineering organizations</li>
+                        <li className="mb-2">
+                            Best practices for getting started from top-tier engineering organizations
+                        </li>
                         <li className="mb-2">How to dive deeper into your data with advanced examples, including:</li>
                         <ul>
                             <li className="mb-2">Metadata/config tracking</li>
                             <li className="mb-2">Commit signals</li>
                             <li className="mb-2">Making use of advanced Sourcegraph filters</li>
-                            <li className="mb-2">Pattern tracking versions and licenses with regular expression capture groups</li>
+                            <li className="mb-2">
+                                Pattern tracking versions and licenses with regular expression capture groups
+                            </li>
                         </ul>
                     </ul>
                 </section>
