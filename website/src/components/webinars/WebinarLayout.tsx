@@ -46,8 +46,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
     children,
 }) => {
     const windowWidth = useWindowWidth()
-    const isMdScreen = windowWidth < breakpoints.lg && windowWidth > breakpoints.sm
-    const isMobile = windowWidth < breakpoints.md
+    const isMdOrDown = windowWidth < breakpoints.lg
 
     const hubSpotConfig: HubSpotForm = {
         portalId: '2762526',
@@ -69,14 +68,14 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                         <div className="col-lg-6 col-12 text-lg-center pb-5 pb-lg-0">
                             <img
                                 className={`border-right border-black ${
-                                    isMobile || isMdScreen ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
+                                    isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
                                 }`}
-                                width={isMobile ? '65' : isMdScreen ? '80' : '110'}
+                                width={isMdOrDown ? '65' : '110'}
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                             />
                             <img
-                                height={isMobile ? '15' : isMdScreen ? '20' : '25'}
+                                height={isMdOrDown ? '15' : '25'}
                                 src={customer.logo}
                                 alt={`${customer.name} logo`}
                             />
@@ -96,11 +95,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
                         <h2 className="font-weight-bold">Watch the on-demand webinar</h2>
-                        <div
-                            className={`${
-                                isMdScreen || isMobile ? 'border-plum-mist' : styles.saturnBorder
-                            } border border-3 shadow-sm py-4 px-4 mt-3`}
-                        >
+                        <div className={`${styles.saturnBorder} border border-3 shadow-sm py-4 px-4 mt-3`}>
                             <div id="form" />
                         </div>
                     </div>
