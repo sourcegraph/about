@@ -4,11 +4,11 @@
 @import 'node_modules/bootstrap/scss/variables';
 
 .hero {
-    background: url('/bg-code-saturn.svg') no-repeat;
+    background: url('/bg-code-mars.png') no-repeat;
     background-size: cover;
 
-    @include media-breakpoint-up(sm) {
-        background: url('/bg-code-saturn-mobile.svg') no-repeat;
+    @include media-breakpoint-down(md) {
+        background: url('/bg-code-mars-mobile.png') no-repeat;
         background-size: cover;
     }
 }

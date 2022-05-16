@@ -74,11 +74,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                             />
-                            <img
-                                height={isMdOrDown ? '15' : '25'}
-                                src={customer.logo}
-                                alt={`${customer.name} logo`}
-                            />
+                            <img height={isMdOrDown ? '15' : '25'} src={customer.logo} alt={`${customer.name} logo`} />
                         </div>
                     )}
 
