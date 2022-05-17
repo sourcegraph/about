@@ -3,11 +3,11 @@ title: "A dev's thoughts on developer productivity"
 description: 'Developers are systems thinkers and yet, most measures of developer productivity are metrics-based, instead of systems-based. In this post, Sourcegraph co-founder and CTO Beyang Liu presents five charts that visualize what really matters for developer productivity.'
 author: Beyang Liu
 authorUrl: https://twitter.com/beyang
-publishDate: 2022-06-28T18:00+02:00
+publishDate: 2022-05-10T18:00+02:00
 tags: [blog]
 slug: developer-productivity-thoughts
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/Troy-overlay.jpeg
 published: true
 ---
 
@@ -19,7 +19,7 @@ Instead, shouldn't we start from direct experience, our own mental models of how
 
 ### Picture 1: The inner loop and outer loop
 
-![Software development lifecycle meme](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/meme.png)
+![Software development lifecycle meme](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/Troy-overlay.jpeg)
 
 <figcaption>Hi, I'm the SDLC. You may remember me from such developer marketing campaigns as Shift Left, DORA the DevOps Explorer, and Agile Waterfalls.</figcaption>
 <br>
