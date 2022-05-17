@@ -80,7 +80,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
 
                     <div className={classNames('col-12', customer && 'col-lg-8')}>
                         <h1 className="display-2 font-weight-bold mb-4">{title}</h1>
-                        <h4 className={classNames('font-weight-light', { 'max-w-400': customer })}>{subtitle}</h4>
+                        <h4 className="font-weight-normal">{subtitle}</h4>
                     </div>
                 </div>
             </section>
