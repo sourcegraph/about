@@ -28,7 +28,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                     ? truncate(post.frontmatter.description, { length: 300 })
                     : truncate(post.excerpt, { length: 300 })}{' '}
             </p>
-            <Link to={url} className="blog-post__read-more">
+            <Link to={url} className="font-weight-bold">
                 Read more
             </Link>
         </>
@@ -47,7 +47,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                     )}
                 </h1>
                 {post.frontmatter.authors?.length && (
-                    <p className="blog-post__byline mb-0">
+                    <p className="text-align-center text-secondary mb-0">
                        {post.frontmatter.authors.map((a, index) => {
                            return <span key={a.name}>
                                 {a.url ? (
@@ -58,10 +58,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                                     <Link to={a.url}>{a.name}</Link>
                                 ) : a.name
                                 }
-                                {
-                                    post.frontmatter.authors!.length > 1 && index !== post.frontmatter.authors!.length-1 ?
-                                    ', ' : ' '
-                                }
+                                {index == post.frontmatter.authors!.length - 1 ? ' ' : ', '}
                            </span>
                         })}
 
