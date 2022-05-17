@@ -34,7 +34,6 @@ export const pageQuery = graphql`
                             name
                             url
                         }
-                        author
                         canonical
                         tags
                         publishDate(formatString: "MMMM D, YYYY")
