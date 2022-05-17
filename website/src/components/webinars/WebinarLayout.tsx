@@ -65,20 +65,20 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {/* Show SG & Customer logo for customer-based webinars */}
                     {customer && (
-                        <div className="col-lg-6 col-12 text-lg-center pb-5 pb-lg-0">
+                        <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
                             <img
                                 className={`border-right border-black ${
                                     isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
                                 }`}
-                                width={isMdOrDown ? '65' : '110'}
+                                width={isMdOrDown ? '65' : '95'}
                                 src="/sourcegraph/sourcegraph-mark.svg"
                                 alt="Sourcegraph mark"
                             />
-                            <img height={isMdOrDown ? '15' : '25'} src={customer.logo} alt={`${customer.name} logo`} />
+                            <img height={isMdOrDown ? '15' : '22'} src={customer.logo} alt={`${customer.name} logo`} />
                         </div>
                     )}
 
-                    <div className={classNames('col-12', customer && 'col-lg-6')}>
+                    <div className={classNames('col-12', customer && 'col-lg-8')}>
                         <h1 className="display-2 font-weight-bold mb-4">{title}</h1>
                         <h4 className={classNames('font-weight-light', { 'max-w-400': customer })}>{subtitle}</h4>
                     </div>
