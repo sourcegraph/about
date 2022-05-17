@@ -1,7 +1,8 @@
 ---
 title: 'Universal Code Search for GitHub'
-author: Ryan Blunden
-authorUrl: https://twitter.com/ryan_blunden
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2020-03-11T05:59-06:00
 tags: [
   blog

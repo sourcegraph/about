@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Building Haskell Programs with Fused Effects"
 description: "Haskell is a purely functional programming language: by default, Haskell functions do not cause side effects such as system I/O, nondeterminism, or exception handling. As such, Haskell programs are generally expressed in terms of monad transformers, which provide the facility to compose different side effects into a single interface powerful enough to express the programmer's needs. The monad transformer library, mtl, is mature and powerful, but complicates and in some cases constrains the construction and generalization of user-specified monads."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-11:20
 tags: [
   strange-loop
@@ -37,10 +38,10 @@ AWESOME LIVEBLOG CONTENT HERE!
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
 
   Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
+    - Using JPEG compression, unless image is mostly solid color
     - JPEG compression set between 60%-80%
     - Resizing the image to be no wider then 750px
     - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
 
   I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
+-->

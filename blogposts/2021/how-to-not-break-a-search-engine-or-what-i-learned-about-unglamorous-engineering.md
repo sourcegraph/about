@@ -3,8 +3,9 @@ title: "How not to break a search engine or: What I learned about unglamorous en
 description: "When we switched to a new search query parser in September 2020, you'd never know that
 anything had changed. This is an account of the rigorous testing that
 happened behind the scenes to ensure a seamless transition."
-author: Rijnard van Tonder
-authorUrl: https://twitter.com/rvtond
+authors:
+  - name: Rijnard van Tonder
+    url: https://twitter.com/rvtond
 publishDate: 2021-06-25T10:00-07:00
 tags: [blog, code, search, software, engineering, testing]
 slug: how-not-to-break-a-search-engine-unglamorous-engineering

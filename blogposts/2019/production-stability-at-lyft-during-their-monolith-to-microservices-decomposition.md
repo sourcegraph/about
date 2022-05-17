@@ -1,6 +1,8 @@
 ---
 title: How Sourcegraph helped ensure production stability at Lyft during their monolith to microservices decomposition
-author: Ryan Blunden
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2019-12-13T10:00-07:00
 tags: [
   blog
@@ -11,7 +13,7 @@ published: true
 description: "Learn how Sourcegraph code search helped Lyft ensure (largely) issue-free production deploys during their monolith to microservices decomposition"
 ---
 
-<!-- pending approval 
+<!-- pending approval
 <p style="text-align: center">
   <img src="/case-studies/lyft-sourcegraph-case-study-og-embed.jpg" />
 </p> -->

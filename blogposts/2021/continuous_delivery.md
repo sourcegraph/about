@@ -3,8 +3,9 @@ title: 'Continuous delivery: A cure for release anxiety?'
 description: 'Engineers are anxious and continuous delivery promises to help. But how practicial is it, really? In this post, we explore the limitations of continuous delivery as well as the lessons we can learn from it.'
 externalTitle: 'A continuous delivery mindset is the antidote to release anxiety'
 externalDescription: 'Continuous delivery appears to be a solution to release anxiety but the reality is more complex. With a mindset change, however, even companies using on-prem business models can learn from continuous delivery.'
-author: Nick Moore
-authorUrl: https://twitter.com/nickwritesit
+authors:
+  - name: Nick Moore,
+    url: https://twitter.com/nickwritesit
 published: true
 publishDate: 2021-11-08T10:00-07:00
 tags: [blog]

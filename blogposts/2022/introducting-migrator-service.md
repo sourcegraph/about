@@ -1,7 +1,8 @@
 ---
 title: 'Broken database migrations: How we finally fixed an embarrassing problem'
-author: Eric Fritz
-authorUrl: https://eric-fritz.com
+authors:
+  - name: Eric Fritz,
+    url: https://eric-fritz.com
 publishDate: 2022-02-22T12:00-00:00
 tags: [blog]
 slug: introducing-migrator-service

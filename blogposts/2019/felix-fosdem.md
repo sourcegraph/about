@@ -1,6 +1,8 @@
 ---
 title: 'Advanced TypeScript tooling talk at FOSDEM 2019'
-author: Felix Becker
+authors:
+  - name: Felix Becker
+    url: https://github.com/felixfbecker
 publishDate: 2019-03-29T05:59-06:00
 tags: [
   blog
@@ -12,7 +14,7 @@ published: true
 
 <p class="container">
   <div style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/327174558?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>    
+    <iframe src="https://player.vimeo.com/video/327174558?color=0CB6F4&amp;title=0&amp;byline=0&amp;portrait=0&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 </p>
 

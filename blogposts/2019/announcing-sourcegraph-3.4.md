@@ -1,6 +1,10 @@
 ---
 title: 'Sourcegraph 3.4: Performance and configuration enhancements for managing 30,000+ repositories'
-author: Ryan Blunden and Christina Forney
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-05-20T10:00-07:00
 tags: [
   blog

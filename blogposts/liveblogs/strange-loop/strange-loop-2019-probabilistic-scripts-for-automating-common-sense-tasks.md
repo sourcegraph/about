@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Probabilistic scripts for automating common-sense tasks"
 description: "As engineers, we love automating tedious tasks. But when those tasks require common-sense reasoning, automation can be difficult. Consider, for example, cleaning a messy dataset-full of typos, NULL values, numbers in the wrong units, and other problems. People have little trouble fixing these errors by hand, but it can be difficult to express the rules for doing so programmatically."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-11:20
 tags: [
   strange-loop
@@ -36,10 +37,10 @@ AWESOME LIVEBLOG CONTENT HERE!
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
 
   Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
+    - Using JPEG compression, unless image is mostly solid color
     - JPEG compression set between 60%-80%
     - Resizing the image to be no wider then 750px
     - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
 
   I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
+-->

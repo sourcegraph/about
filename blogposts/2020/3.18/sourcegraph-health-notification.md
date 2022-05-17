@@ -1,6 +1,8 @@
 ---
 title: "Getting notified about the health of Sourcegraph is now easier"
-author: Robert Lin
+authors:
+  - name: Robert Lin
+    url: https://handbook.sourcegraph.com/company/team#robert-lin
 publishDate: 2020-07-20T06:00-07:00
 tags: [blog]
 slug: sourcegraph-health-notification

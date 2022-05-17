@@ -1,7 +1,8 @@
 ---
 title: "Why we're updating the minimum supported version of Postgres"
-author: Eric Fritz
-authorUrl: https://eric-fritz.com
+authors:
+  - name: Eric Fritz,
+    url: https://eric-fritz.com
 publishDate: 2021-03-31T18:00+02:00
 tags: [blog]
 slug: postgres-version-update

@@ -1,8 +1,9 @@
 ---
 title: 'Async, remote, and flexible: How 7 engineers rethought their work calendars'
 description: 'Engineers are leading the way toward rethinking the 40-hour work week. Here, seven Sourcegraph team members, all current or former software engineers, share how and why they transformed their work calendars to support their preferred lifestyles.'
-author: Nick Moore
-authorUrl: https://twitter.com/nickwritesit
+authors:
+  - name: Nick Moore,
+    url: https://twitter.com/nickwritesit
 published: true
 publishDate: 2021-09-23T10:00-07:00
 tags: [blog]

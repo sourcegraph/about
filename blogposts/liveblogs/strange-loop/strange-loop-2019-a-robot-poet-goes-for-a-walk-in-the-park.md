@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - A Robot Poet Goes for a Walk in the Park"
 description: "Designing complex, dynamic systems that can produce interesting and aesthetically pleasing art is a very hard problem to solve, even when you're just talking about something as focused as a Twitter bot. What happens when you try to make procgen art that doesn't just exist on the Internet, but actually lives in and interacts with the real world?"
-author: Pam Selle
-authorUrl: https://thewebivore.com/
-linkedinurl: https://www.linkedin.com/in/pamelaselle/
+authors:
+  - name: Pam Selle
+    url: https://thewebivore.com/
 publishDate: 2019-09-13T00:00-11:20
 tags: [
   strange-loop
@@ -32,10 +32,10 @@ Designing complex, dynamic systems that can produce interesting and aestheticall
 
 ---
 
-Em Lazer-Walker's talk is about an art piece, but about all the pieces that led to it, 
+Em Lazer-Walker's talk is about an art piece, but about all the pieces that led to it,
 including immersive theater, game design, emergence, and more.
 
-The piece that Lazer-Walker made is called ["Computational Flâneur"](https://lazerwalker.com/flaneur.html) 
+The piece that Lazer-Walker made is called ["Computational Flâneur"](https://lazerwalker.com/flaneur.html)
 and was made as part of the <a href="">Come Out and Play
 Festival</a> in SF. It was unique in that it was interactive (unlike a Twitter bot) and used
 non-traditional inputs to the data (GPS, accelerometer), and it was generative poetry while
@@ -54,7 +54,7 @@ as a piece of theater that doesn't involve people staying in one place, or even 
 Lazer-Walker talks about how the magic in Sleep No More isn't in the theater, per se, but in how you feel
 when you debrief about it afterwards, and "the unique and different moments" experienced.
 
-This is when she spoke about emergence: we [programmers] tend to think of these things as small algorithms; and 
+This is when she spoke about emergence: we [programmers] tend to think of these things as small algorithms; and
 the interesting part of Sleep No More is the emergence isn't from something digital or planned, but from the
 interaction of humans moving through physical space in their own way.
 
@@ -64,18 +64,18 @@ an audio experience through Central Park. This talk has already convinced me I n
 
 Now as to how things are made, Em talks about Char-RNN and very briefly about recurrent neural networks,
 referencing [an article](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) and how they can be superior to Markov chains
-for generative text. She also mentioned other useful tools: [tracery.io](http://tracery.io), 
+for generative text. She also mentioned other useful tools: [tracery.io](http://tracery.io),
 [cheapbotsdonequick.com](https://cheapbotsdonequick.com), and referenced Kate Compton's [So you want to build a generator](https://
-galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator) article. She also mentioned (although not used in 
+galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator) article. She also mentioned (although not used in
 the project) [gpt-2](https://github.com/openai/gpt-2) as something useful and interesting to look into for training
 a model quickly.
 
 Finally, on Em's own project, some initial assumptions didn't turn out as expected.
-She thought you would want to use _all_ the data available, but at a certain point, she said, 
-“An algorithm that isn’t legible might as well be a random number generator” - that is, if someone 
+She thought you would want to use _all_ the data available, but at a certain point, she said,
+“An algorithm that isn’t legible might as well be a random number generator” - that is, if someone
 interacting with the art doesn't have a chance of "getting it", it might as well be random (thus, useless effort).
 
-So, she scoped down her focus. She also talked about the process of geofencing the area (difficult since she 
+So, she scoped down her focus. She also talked about the process of geofencing the area (difficult since she
 doesn't live in SF!) as well as how much she lucked out with regards to GPS accuracy in the park being really great.
 
 She talked a little about her process, given that working in real-world spaces has a much more difficult feedback

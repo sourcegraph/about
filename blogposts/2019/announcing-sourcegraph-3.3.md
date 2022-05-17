@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph 3.3: Improving the user experience for site admins'
-author: Ryan Blunden
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2019-04-22T10:00-07:00
 tags: [
   blog

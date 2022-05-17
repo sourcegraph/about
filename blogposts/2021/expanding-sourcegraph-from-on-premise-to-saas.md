@@ -1,7 +1,9 @@
 ---
 title: 'There, here, and back again: Expanding Sourcegraph from a self-hosted product into a cloud offering'
 description: Bringing organizations to Sourcegraph Cloud meant taking a self-hosted, enterprise-focused product, and evolving it into also a cloud software-as-a-service product. Here’s how we took this big vision and turned it into incremental action.
-author: Quinn Keast
+authors:
+  - name: Quinn Keast,
+    url: https://twitter.com/quinnkeast
 publishDate: 2021-12-09T00:00-07:00
 tags: [blog, announcement, cloud, beta]
 slug: expanding-sourcegraph-from-on-premise-to-saas

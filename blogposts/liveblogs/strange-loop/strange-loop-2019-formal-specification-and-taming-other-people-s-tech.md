@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Formal Specification and Taming Other People's Tech"
 description: "Formal specifications are not just for academics and have applications way beyond checking algorithms like Paxos and Raft. Join us for a tour of using formal specifications for every day system design. If you've ever configured a load balancer or a message queue then you're already doing the kind of engineering work that formal specifications were intended for. This talk tells the story of a real life in production system built with common open source technologies that was struggling with growth and how we untangled its built-in assumptions and reworked its design using formal specifications."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-15:30
 tags: [
   strange-loop
@@ -37,10 +38,10 @@ AWESOME LIVEBLOG CONTENT HERE!
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
 
   Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
+    - Using JPEG compression, unless image is mostly solid color
     - JPEG compression set between 60%-80%
     - Resizing the image to be no wider then 750px
     - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
 
   I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
+-->

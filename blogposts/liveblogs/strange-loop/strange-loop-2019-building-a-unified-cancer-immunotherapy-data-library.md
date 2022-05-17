@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Building a Unified Cancer Immunotherapy Data Library"
 description: "The introduction of immunotherapies has revolutionized the treatment of cancer and ushered in a corresponding explosion of research into cancer, the immune system, and their interaction. In September 2018, there were 3,394 Cancer Immunotherapy agents being tested in clinical trials - a 67% increase from the number of agents being tested one year earlier. With this explosion in research comes an explosion of data and the challenge of keeping track of and unifying published and public data so that research organizations can stay on top of the field."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-15:30
 tags: [
   strange-loop
@@ -41,10 +42,10 @@ AWESOME LIVEBLOG CONTENT HERE!
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
 
   Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
+    - Using JPEG compression, unless image is mostly solid color
     - JPEG compression set between 60%-80%
     - Resizing the image to be no wider then 750px
     - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
 
   I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
+-->

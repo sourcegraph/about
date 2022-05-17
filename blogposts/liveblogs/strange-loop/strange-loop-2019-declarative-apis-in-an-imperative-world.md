@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Declarative APIs in an Imperative World"
 description: "Declarative UI frameworks have taken over the JavaScript landscape. Which is great, because making assumptions about your application's state is a source of pain, frustration, and bugs. But what happens when you need to glue together imperative APIs with your declarative UI framework? In this talk, I'll explain problems the Atom Editor team came across when we started using React as our UI framework, as well as the solutions we came up with. We'll discuss how to generalize these patterns to integrate with other imperative APIs you might come across in the wild, such as animation libraries. Finally, we'll explore what we can learn from the history of software trends over time to create a better future together."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-14:30
 tags: [
   strange-loop
@@ -36,10 +37,10 @@ AWESOME LIVEBLOG CONTENT HERE!
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
 
   Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
+    - Using JPEG compression, unless image is mostly solid color
     - JPEG compression set between 60%-80%
     - Resizing the image to be no wider then 750px
     - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
 
   I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
+-->

@@ -1,7 +1,8 @@
 ---
 title: "Please save git.io: GitHub's link shortener is being shut down in 3 days"
-author: Stephen Gutekanst
-authorUrl: https://github.com/slimsag
+authors:
+  - name: Stephen Gutekanst
+    url: https://slimsag.com
 publishDate: 2022-04-26T12:00-00:00
 tags: [blog]
 slug: please-save-git-io

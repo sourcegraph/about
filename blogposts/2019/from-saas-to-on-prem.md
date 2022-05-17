@@ -1,6 +1,8 @@
 ---
 title: 'Why Sourcegraph switched from cloud SaaS to on-premises, self-hosted software'
-author: 'Vanesa Ortiz'
+authors:
+  - name: Vanesa Ortiz
+    url: https://twitter.com/vanesacodes
 publishDate: 2019-10-30T00:00-07:00
 tags: [
   "blog"
@@ -40,7 +42,7 @@ Many of our customers have high security requirements and don’t feel comfortab
 Companies can deploy in-house without exposing their code to Sourcegraph employees or other providers. This allows anyone at a company to start running Sourcegraph locally and hassle-free, instead of needing to ask permission to grant access to the codebase to an external cloud infrastructure provider.
 <br>
 ## Ensuring scalability and performance
-The performance of locally run software depends mostly on how much hardware the customer is willing to allocate. The benefit for on-premises software here is that, contrary to SaaS, companies aren’t restrained to a one-size-fits-all performance framework, but can scale the software based on the best hardware that best suits their needs and resources. Sourcegraph is able to work with the existing infrastructure of our customers, and scale and perform accordingly. 
+The performance of locally run software depends mostly on how much hardware the customer is willing to allocate. The benefit for on-premises software here is that, contrary to SaaS, companies aren’t restrained to a one-size-fits-all performance framework, but can scale the software based on the best hardware that best suits their needs and resources. Sourcegraph is able to work with the existing infrastructure of our customers, and scale and perform accordingly.
 On the flip side, Sourcegraph has to tackle the diverse challenges that come with running software in different environments.
 <br>
 ## All infrastructure is visible
@@ -51,7 +53,7 @@ Occasionally, things go wrong. One of the challenges of dealing with customer ho
 ![Grafana dashboard for monitoring Sourcegraph instance health](/blog/3.9-grafana-dashboard.png "Grafana dashboard for monitoring Sourcegraph instance health")
 
 ## Conclusion
-Switching from SaaS to on-premises was essential for Sourcegraph to become the de facto developer platform that all engineers use among top companies like Lyft, Uber, Plaid, Convoy and many more. Our main challenges are maintaining high standards for our code quality to reduce the more tedious debugging process of an on-premises solution and ensuring Sourcegraph runs smoothly in different environments. The majority of our customers run fairly up-to-date Sourcegraph versions. We are able to achieve this by making our upgrade process as simple as possible and communicating our enticing new features to our customers. 
+Switching from SaaS to on-premises was essential for Sourcegraph to become the de facto developer platform that all engineers use among top companies like Lyft, Uber, Plaid, Convoy and many more. Our main challenges are maintaining high standards for our code quality to reduce the more tedious debugging process of an on-premises solution and ensuring Sourcegraph runs smoothly in different environments. The majority of our customers run fairly up-to-date Sourcegraph versions. We are able to achieve this by making our upgrade process as simple as possible and communicating our enticing new features to our customers.
 
 ![Current customer versions (as of October 2019)](/blog/on-prem-customerversions.jpg "Current customer versions (as of October 2019)")
 

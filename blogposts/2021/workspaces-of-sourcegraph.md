@@ -1,7 +1,8 @@
 ---
 title: 'Improving code display: A look at 17 developer workspaces'
-author: Rob Rhyne
-authorUrl: https://twitter.com/robrhyne
+authors:
+  - name: Rob Rhyne
+    url: https://handbook.sourcegraph.com/company/team#rob-rhyne
 publishDate: 2021-03-16T18:00+02:00
 tags: [blog, remote, design]
 slug: workspaces-of-sourcegraph

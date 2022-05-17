@@ -1,8 +1,9 @@
 ---
 title: 'The Nine Circles of Dependency Hell (and a roadmap out)'
 description: 'Spending more time on dependency issues than writing code—we’ve all been there, but it doesn’t have to be a one-way ticket.'
-author: Matt Rickard
-authorUrl: https://matt-rickard.com/
+authors:
+  - name: Matt Rickard
+    url: https://matt-rickard.com/
 publishDate: 2021-09-28T10:00-07:00
 tags: [blog]
 slug: nine-circles-of-dependency-hell

@@ -1,6 +1,10 @@
 ---
 title: 'Sourcegraph 3.5: Powerful new search filters, improved configuration, and Bitbucket Server repository permissions'
-author: Ryan Blunden and Christina Forney
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-06-20T10:00-07:00
 tags: [
   blog

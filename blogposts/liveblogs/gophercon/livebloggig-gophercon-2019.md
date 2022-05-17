@@ -1,7 +1,9 @@
 ---
 title: Sourcegraph liveblogging at GopherCon 2019!
 description: For the third year, Sourcegraph is proud to host the official liveblog for GopherCon and we're looking for attendees who want to contribute. Is that you?
-author: Ryan Blunden - Developer Advocate at Sourcegraph
+authors:
+  - name: Ryan Blunden - Developer Advocate at Sourcegraph
+    url: https://twitter.com/ryan_blunden
 publishDate: 2019-07-22T00:00-07:00
 tags: [
   blog
