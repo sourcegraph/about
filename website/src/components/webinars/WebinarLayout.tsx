@@ -61,9 +61,9 @@ export const WebinarLayout: FunctionComponent<Props> = ({
 
     return (
         <>
-            {/* Hero style differs if webinar is customer- vs. interal-based */}
-            <section className={classNames(!customer && styles.hero)}>
+            <section className={styles.hero}>
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                    {/* Show SG & Customer logo for customer-based webinars */}
                     {customer && (
                         <div className="col-lg-6 col-12 text-lg-center pb-5 pb-lg-0">
                             <img
@@ -79,7 +79,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                     )}
 
                     <div className={classNames('col-12', customer && 'col-lg-6')}>
-                        <h1 className="display-3 font-weight-bold mb-4">{title}</h1>
+                        <h1 className="display-2 font-weight-bold mb-4">{title}</h1>
                         <h4 className={classNames('font-weight-light', { 'max-w-400': customer })}>{subtitle}</h4>
                     </div>
                 </div>
