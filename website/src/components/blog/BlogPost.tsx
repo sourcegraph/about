@@ -48,18 +48,23 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                 </h1>
                 {post.frontmatter.authors?.length && (
                     <p className="text-align-center text-secondary mb-0">
-                       {post.frontmatter.authors.map((a, index) => {
-                           return <span key={a.name}>
-                                {a.url ? (
-                                    a.url.includes('http') ?
-                                        <a href={a.url} target="_blank" rel="nofollow noreferrer">
-                                            {a.name}
-                                        </a> :
-                                    <Link to={a.url}>{a.name}</Link>
-                                ) : a.name
-                                }
-                                {index == post.frontmatter.authors!.length - 1 ? ' ' : ', '}
-                           </span>
+                        {post.frontmatter.authors.map((a, index) => {
+                            return (
+                                <span key={a.name}>
+                                    {a.url ? (
+                                        a.url.includes('http') ? (
+                                            <a href={a.url} target="_blank" rel="nofollow noreferrer">
+                                                {a.name}
+                                            </a>
+                                        ) : (
+                                            <Link to={a.url}>{a.name}</Link>
+                                        )
+                                    ) : (
+                                        a.name
+                                    )}
+                                    {index == post.frontmatter.authors!.length - 1 ? ' ' : ', '}
+                                </span>
+                            )
                         })}
 
                         {post.frontmatter.publishDate && (
