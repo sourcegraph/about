@@ -30,6 +30,10 @@ export const pageQuery = graphql`
                         title
                         description
                         heroImage
+                        authors {
+                            name
+                            url
+                        }
                         author
                         authorUrl
                         canonical

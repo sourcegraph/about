@@ -1,8 +1,11 @@
 ---
 title: 'The real weakest link in software supply chain security (it’s not open source)'
 description: 'When a critical security vulnerability is identified, your response time is everything. There are probably shortcomings in your response process itself that are slowing you down—find out where they are and how you can be better prepared for the next third-party vulnerability.'
-author: Rebecca Dodd, André Eleuterio
-authorUrl: https://handbook.sourcegraph.com/team/#andr%C3%A9-eleuterio
+authors:
+  - name: Rebecca Dodd,
+    url: https://handbook.sourcegraph.com/team/#rebecca-dodd
+  - name: André Eleuterio
+    url: https://handbook.sourcegraph.com/team/#andr%C3%A9-eleuterio
 publishDate: 2022-03-21T18:00+02:00
 tags: [blog]
 slug: real-weakest-link-in-software-supply-chain-security

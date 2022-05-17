@@ -14,6 +14,11 @@ export enum PostType {
     PodcastPost,
 }
 
+interface Author {
+    name: string
+    url?: string
+}
+
 export interface Post {
     frontmatter: {
         title: string
@@ -26,6 +31,7 @@ export interface Post {
         canonical: string
         publishDate: string
         heroImage?: string
+        authors?: Author[]
         author?: string
         authorUrl?: string
         tags?: string[]

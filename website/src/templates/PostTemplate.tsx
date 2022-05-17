@@ -77,6 +77,10 @@ export const pageQuery = graphql`
                 externalDescription
                 heroImage
                 socialImage
+                authors {
+                    name
+                    url
+                }
                 author
                 authorUrl
                 tags

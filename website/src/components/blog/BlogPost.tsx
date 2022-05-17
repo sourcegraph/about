@@ -46,6 +46,35 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                         post.frontmatter.title
                     )}
                 </h1>
+                {post.frontmatter.authors?.length && (
+                    <p className="blog-post__byline mb-0">
+                       {post.frontmatter.authors.map(a => (
+                            a.url ? (
+                                a.url.includes('http') ? (
+                                    <span key={a.name}>
+                                        <a href={a.url} target="_blank" rel="nofollow noreferrer">
+                                            {a.name}
+                                        </a>
+                                        {' '}
+                                    </span>
+                                ) : (
+                                    <span key={a.name}>
+                                        <Link to={a.url}>{a.name}</Link>
+                                        {' '}
+                                    </span>
+                                )
+                            ) : (
+                                <span key={a.name}>{a.name}{' '}</span>
+                            )
+                        ))}
+
+                        {post.frontmatter.publishDate && (
+                            <span>
+                                on <time dateTime={post.frontmatter.publishDate}>{post.frontmatter.publishDate}</time>
+                            </span>
+                        )}
+                    </p>
+                )}
                 {post.frontmatter.author && post.frontmatter.publishDate && (
                     <p className="blog-post__byline mb-0">
                         {post.frontmatter.authorUrl ? (
