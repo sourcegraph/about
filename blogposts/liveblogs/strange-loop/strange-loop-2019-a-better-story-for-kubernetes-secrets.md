@@ -4,7 +4,6 @@ description: "Secrets are a key pillar of Kubernetes, but anyone with access to 
 authors:
   - name: Ackerley Tng
     url: https://github.com/ackerleytng
-linkedInUrl: https://www.linkedin.com/in/ackerleytng
 publishDate: 2019-09-14T00:00-11:20
 tags: [
   strange-loop

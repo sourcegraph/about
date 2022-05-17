@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - How Computers Misunderstand the World"
 description: "AI offers so many exciting possibilities for campuses, corporations, and communities. However, as we look to the future, we must keep in mind that technology has fundamental limits and AI is not a magic bullet that solves all social problems. In this talk, author and professor Meredith Broussard looks at the inner workings and outer limits of AI and argues why we should never assume that computers get everything right. Making a case against \"techno-chauvisnism\" - the belief that technology is always the superior solution - Broussard looks at why self-driving cars don't actually work and why a digital \"utopia\" will still harbor the social problems we experience today. She explores how understanding the limits of what we can do with technology allows us to make better choices about what we should do with technology to make the world better for everyone."
-author: Rainya Mosher
-authorUrl: https://www.linkedin.com/in/rainyamosher/
+authors:
+  - name: Rainya Mosher
+    url: https://www.linkedin.com/in/rainyamosher/
 publishDate: 2019-09-14T00:00-09:10
 tags: [
   strange-loop
@@ -92,7 +93,7 @@ As of 2017, there were zero tenured women faculty members in the Harvard math de
 Unconscious bias manifests in technology in a variety of ways.
 
 1. **Wide-spread harassment in computer science and mathematics**: news headlines and movements to speak out openly about the experiences many today still have
-2. **Bias in word embedding**: critical to how Google figures out what you're looking for when you search occupations associated with he and she {photo of _extreme she_ and _extreme he_ occupations}; these are the embeddings that feed the algorithms which increasingly make decisions on our behalf; biases at creation were not noticed because of unconscious bias 
+2. **Bias in word embedding**: critical to how Google figures out what you're looking for when you search occupations associated with he and she {photo of _extreme she_ and _extreme he_ occupations}; these are the embeddings that feed the algorithms which increasingly make decisions on our behalf; biases at creation were not noticed because of unconscious bias
 3. **Bias in tech features and functions**: Environmentally racist soap dispenser ([YouTube video][3]) light skin man can get it to work; dark skin man can't get it to work; white paper towel works just fine; Meredith's take: "_I do not believe the people who made the dispenser tech sat down to make a racist soap dispenser. What I do believe is that the technology was developed by a bunch of people with light skin who said 'oh hey it works!' and then sent it out into the world and now people can't wash their hands._"
 4. **Positive Asymmetry**: concep t of how we as humans like to focus more on what's happy than what iss problematic; it is a group dynamic and we need to recognize this type of behavior happens; while uncomfortable to do so, it is worth pushing past; if we don't push past the discomfort, we end up with Machine Bias
 5. **Algorithms are NOT Neutral**: {photo with article heading with two petty theft arrests and future crime risks score mis-match between a white man and a black woman} unconscious bias is embedded into the "future crime" model through the training data used to create the model; facial recognition algorithms work better for light skin men vs darker skin women and regularly mis-gender/mis-identify women and dark skinned people; book reference: _ALGORITHMS OF OPPRESSION_
@@ -100,7 +101,7 @@ Unconscious bias manifests in technology in a variety of ways.
 
 ### Better Informed
 
-What do we do? Meredith: "First thing: BUY MY BOOK!" (lots of laughing from audience) It's not all doom and gloom. Start with understanding AI REALITY. 
+What do we do? Meredith: "First thing: BUY MY BOOK!" (lots of laughing from audience) It's not all doom and gloom. Start with understanding AI REALITY.
 
 **AI REALITY: It is a machine, it is doing math, it includes social bias, it is not going to deliver us from ourselves, and it is awesome.** ~ Meredith Broussard
 
@@ -144,10 +145,10 @@ Leave the idea of Technochauvinism behind. When you are designing tech in your e
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
 
   Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
+    - Using JPEG compression, unless image is mostly solid color
     - JPEG compression set between 60%-80%
     - Resizing the image to be no wider then 750px
     - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
 
   I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
+-->

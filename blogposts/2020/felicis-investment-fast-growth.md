@@ -1,6 +1,8 @@
 ---
 title: "Felicis helping us grow universal code search faster"
-author: Quinn Slack
+authors:
+  - name: Quinn Slack,
+    url: https://twitter.com/sqs
 publishDate: 2020-07-14T10:00-07:00
 tags: [
   blog

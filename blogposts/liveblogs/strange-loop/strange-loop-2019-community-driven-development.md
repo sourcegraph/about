@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Community Driven Development"
 description: "As developers who want to lend our skills to support organizations fighting for social justice, how do we build effective, impactful collaborations with organizations and make the resulting open source projects sustainable? Over two years and 1,062 commits, we'll follow the evolution of an open source project built with and for New Sanctuary Coalition (NSC), an NYC immigrant rights organization, to meet exponentially growing demand for their immigration court accompaniment program, pro se legal clinic, and anti-detention program following the 2016 election."
-author: Jamal Rogers
-authorUrl: https://twitter.com/bambiffpow
+authors:
+  - name: Jamal Rogers
+    url: https://twitter.com/bambiffpow
 publishDate: 2019-09-14T00:00-14:30
 tags: [
   strange-loop
@@ -30,7 +31,7 @@ As developers who want to lend our skills to support organizations fighting for 
 ---
 
 
-Christine Zagrobelny began as a volunteer with the New Sanctuary Coalition. The organization was founded by immigrants to stop the system of inhumane detention and deportation of undocumented people (Friends), and to provide those Friends with assistance and resources. The services provideded include: 
+Christine Zagrobelny began as a volunteer with the New Sanctuary Coalition. The organization was founded by immigrants to stop the system of inhumane detention and deportation of undocumented people (Friends), and to provide those Friends with assistance and resources. The services provideded include:
 * Accompaniament program - Pairs Friends with volunteerss to provide support for ICE checkins and immigration hearings
 * Pro-se legal clinic - Friends work with volunteers and lawyers to plan for their legal case
 * Anti-detention program - Works with detained immigrants to fight for their release
@@ -53,8 +54,8 @@ These hack events led again to Christine being burnt out. She wasn't meeting her
 * Shared Values and goals
  * Incorporated NSC’s values and mission in the project's Code Of Counduct
  * Included all tech projects and tech volunteers at NSC, not just OSS contributors
- 
- 
+
+
 The talk concluded with an invitation for the audience to be an orginization's tech friend. Be a part of the community first, and put a focus on sustainability.
 
 For more about the NSC:

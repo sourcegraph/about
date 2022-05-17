@@ -1,6 +1,8 @@
 ---
 title: 'What we can learn from the IBM System/360, the first modular, general-purpose computer'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2016-08-26T00:00-07:00
 tags: [
   "blog"

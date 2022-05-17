@@ -4,7 +4,7 @@ externalTitle: How to improve software engineer onboarding
 description: 'Engineering leaders and engineers share their most effective approaches to help new hires onboard faster and build confidence.'
 externalDescription: 'Worried you’re onboarding software engineers to an overwhelming codebase? Learn how to onboard better from leading engineers.'
 authors:
-  - name: Beyang Liu,
+  - name: Beyang Liu
     url: https://twitter.com/beyang
   - name: Patricia No
 publishDate: 2022-03-09T18:00+02:00

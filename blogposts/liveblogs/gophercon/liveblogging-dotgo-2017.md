@@ -1,6 +1,8 @@
 ---
 title: 'Liveblogging dotGo 2017'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack,
+    url: https://twitter.com/sqs
 publishDate: 2017-10-31T00:00-07:00
 tags: [
   "dotGo"

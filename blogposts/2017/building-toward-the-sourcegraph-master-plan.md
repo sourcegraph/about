@@ -1,6 +1,8 @@
 ---
 title: 'Building toward the Sourcegraph master plan'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack,
+    url: https://twitter.com/sqs
 publishDate: 2017-10-06T00:00-07:00
 tags: [
   "blog"

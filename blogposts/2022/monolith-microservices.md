@@ -2,7 +2,7 @@
 title: '5 key elements of successful monolith-to-microservices migrations'
 description: "At Sourcegraph, we've helped enable some of the best engineering organizations in the world to perform major architectural migrations. In this post, we present five lessons, five elements of a successful monolith to microservices migration."
 authors:
-  - name: Beyang Liu,
+  - name: Beyang Liu
     url: https://twitter.com/beyang
 publishDate: 2022-04-28T18:00+02:00
 tags: [blog]

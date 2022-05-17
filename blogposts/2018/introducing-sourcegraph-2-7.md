@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph 2.7: code intelligence in pull requests and commit diffs'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack,
+    url: https://twitter.com/sqs
 publishDate: 2018-04-16T00:00-07:00
 tags: [
   "blog"

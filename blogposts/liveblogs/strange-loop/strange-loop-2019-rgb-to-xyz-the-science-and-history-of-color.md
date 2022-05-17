@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - RGB to XYZ: The Science and History of Color"
 description: "Color is a fascinating subject. It is both incredibly subjective (ie. what makes a painting beautiful) and perfectly scientific (ie. wavelengths of light) at the same time. This talk will be a deep dive into the history and science of color and the fascinating world of human perception and the scientists that attempt to define it."
-author: Brittany Walker
-authorUrl: https://musicalwebdev.com
-linkedInUrl: https://www.linkedin.com/in/brittanyrwalker/
+authors:
+  - name: Brittany Walker
+    url: https://musicalwebdev.com
 publishDate: 2019-09-13T00:00-11:20
 tags: [
   strange-loop
@@ -45,7 +45,7 @@ The talk then went into how we perceive color and how relevant it is in our ever
 
 Color is a weird subject because it is both objective and subjective. It involves science and art at the same time. Looking at biology, you can think of light as a pipeline. It bounces around the world, bounces into your eye, hits a few sensors and then goes into your brain.
 
-Light is a spectrum. We can only see a fairly small part of the spectrum.  If we were built differently, we would see different parts of the color spectrum. When light hits our eye it goes into cones. Cones are responsible for our color perception. When perceiving color, humans have short, medium and long cones that all respond differently to the spectrum but mostly align with red, green and blue. 
+Light is a spectrum. We can only see a fairly small part of the spectrum.  If we were built differently, we would see different parts of the color spectrum. When light hits our eye it goes into cones. Cones are responsible for our color perception. When perceiving color, humans have short, medium and long cones that all respond differently to the spectrum but mostly align with red, green and blue.
 
 ![A medical illustration of the inside of a human eye, how light passes through the eye and hits cones](/blog/strange-loop-2019/rgb-to-xyz-lights-eye.png)
 
@@ -67,7 +67,7 @@ John Guild worked at the National Physical Laboratory in England. He created the
 
 Irwin Priest was President of the Optical Society of America. He was upset about how the convention was being run. First, the reports everyone was supposed to review were only sent out a month in advance, so attendees didn’t have much time to study them. Also, the US already had a color system and had adopted it. It was not based on the additive primaries concept from John Guild but was driven by industries instead. The US color system was based on hue, saturation, and brightness.
 
-Irwin arrived at the Paris event a week early to meet with John Guild to discuss the proposed color system. Together they settled on a final set of systems. They presented a new set of resolutions called the CIE 1931 Resolution of Color, which we use now to define our color spaces. The final resolution was based on John Guild’s additive primaries theory but with modifications. 
+Irwin arrived at the Paris event a week early to meet with John Guild to discuss the proposed color system. Together they settled on a final set of systems. They presented a new set of resolutions called the CIE 1931 Resolution of Color, which we use now to define our color spaces. The final resolution was based on John Guild’s additive primaries theory but with modifications.
 
 ## Color Spaces
 
@@ -81,27 +81,27 @@ You can do math in this color space! You can take three numbers and add them tog
 
 ![A 3D color space](/blog/strange-loop-2019/rgb-to-xyz-volume.png)
 
-When making the first color space, there were issues and it is easier to describe by going into 2D space. You actually cannot present all colors with a fixed set of primaries. This means that today you cannot make a monitor that can present all visible colors if you use a fixed set of primaries. 
+When making the first color space, there were issues and it is easier to describe by going into 2D space. You actually cannot present all colors with a fixed set of primaries. This means that today you cannot make a monitor that can present all visible colors if you use a fixed set of primaries.
 
 They realized that to map out color spaces, they had to be creative.
 
-Take a cyan color for example. You cannot make this color with two other primaries. Instead, you can add a color on the cyan and treat it as a negative number. This will make the two primaries and the cyan color equal. 
+Take a cyan color for example. You cannot make this color with two other primaries. Instead, you can add a color on the cyan and treat it as a negative number. This will make the two primaries and the cyan color equal.
 
 ![A comparison of two grayscaled images of a sunflower](/blog/strange-loop-2019/rgb-to-xyz-negative.png)
 
-By using this negative, they were able to map out the full color space. This creates CIE-RGB. CIE-RGB was the first color space, the granddaddy of all historical color spaces. It is different from our modern RGB and it just happens to use RGB as the primary colors. In this case, you can use a scientific process to find the correct color. 
+By using this negative, they were able to map out the full color space. This creates CIE-RGB. CIE-RGB was the first color space, the granddaddy of all historical color spaces. It is different from our modern RGB and it just happens to use RGB as the primary colors. In this case, you can use a scientific process to find the correct color.
 
 ![A comparison of two grayscaled images of a sunflower](/blog/strange-loop-2019/rgb-to-xyz-cie-rgb.png)
 
 But CIE-RGB has a lot of problems. Colors can have negative numbers which make things super weird. And they were also doing math on slide rules, so negatives were awful to work with. They needed to make a more ergonomic color space and transform this color space into something better.
 
-When working with color transformations, they have to be linear. This means that the origin must stay in the same spot and the lines have to stay straight. You need it to be linear to get mathematical behavior. 
+When working with color transformations, they have to be linear. This means that the origin must stay in the same spot and the lines have to stay straight. You need it to be linear to get mathematical behavior.
 
 CIE-XYZ is a color space where we can stretch our color space to be positive instead of negative. It is called  XYZ because the axis does not have meaning anymore.  The Y-axis is aligned with brightness. It is mathematically beautiful.
 
 ![A comparison of two grayscaled images of a sunflower](/blog/strange-loop-2019/rgb-to-xyz-cie-xyz.png)
 
-CIE-XYZ is the main player in today's world when it comes to color. If Adobe was to create a new color space, they would provide a transformation back to CIE-XYZ, rather than the other color spaces. 
+CIE-XYZ is the main player in today's world when it comes to color. If Adobe was to create a new color space, they would provide a transformation back to CIE-XYZ, rather than the other color spaces.
 
 Now in 2019, we are in the digital world. Color is everywhere - in our monitors, displays, and images. Back in the 1970s, they realized that we needed a color space for the digital world. This is where sRGB comes in. This is the color space you have been waiting for, this is what is being used when you use a color picker in Chrome or in Photoshop. This is the "standard RGB"!
 
@@ -113,17 +113,17 @@ sRGB is a subset of XYZ. Monitors use visible primaries so it has to be a subset
 
 Interesting to note, we are looking at this presentation right now in sRGB!
 
-sRGB is just one more transformation. There is a weird quirk. When you look at a gradient, we are much better telling the difference between darker colors versus lighter colors. This was realized in the 1970s. So they decided to add more bits down at the part where we can tell the difference. 
+sRGB is just one more transformation. There is a weird quirk. When you look at a gradient, we are much better telling the difference between darker colors versus lighter colors. This was realized in the 1970s. So they decided to add more bits down at the part where we can tell the difference.
 
 Then they applied the gamma curve (essentially a square root). The curve spreads out the color space so that it is more optimal for storage. But this is not linear! What ends up happening, is that math is not correct in sRGB. If you add two colors, you won’t end up with the color you would get if you add them in real life. This is a perceptual problem in an incredible amount of software. So you probably shouldn’t be doing math in sRGB.
 
-You might think this isn’t a big deal. But in 2010, most game renderings were done in sRGB. All of the light was thrown into an exponential function and it looks awful. So after 2010, gaming started using a linear color space instead for a more realistic look. Generally, most game engines now use a linear sRGB. 
+You might think this isn’t a big deal. But in 2010, most game renderings were done in sRGB. All of the light was thrown into an exponential function and it looks awful. So after 2010, gaming started using a linear color space instead for a more realistic look. Generally, most game engines now use a linear sRGB.
 
 ![A comparison of game rendering in RGB vs linear sRGB](/blog/strange-loop-2019/rgb-to-xyz-gaming.png)
 
 But this is not quite the end of the picture. Maybe we don’t want scientific accuracy. This has been all about recreating the properties from real life so far, but what if you want to be more artistic with your colors?
 
-Looking at linear RGB, the colors don’t seem to have equal brightness. Our color perception is not smooth. CIELAB  is a color space where the color is perceptually uniform. It intentionally applies non-linear operations to make math align with what humans expect to see. 
+Looking at linear RGB, the colors don’t seem to have equal brightness. Our color perception is not smooth. CIELAB  is a color space where the color is perceptually uniform. It intentionally applies non-linear operations to make math align with what humans expect to see.
 
 CIELAB is the secret gem for the data visualization community because all of these visualizations are driven by data and math. If you do a gradient in RGB you can get a dark spot or weird hues. CIELAB was built for uniformness.
 
@@ -137,17 +137,17 @@ A chart of which color space to use is below:
 
 ## What color space should I use?
 
-**Linear sRGB** 
+**Linear sRGB**
 * Why? When you want to recreate the behavior of real-world light.
 * Uses: CG Rendering, Science
 * Math: Math recreates the behavior of the real world
 
-**sRGB** 
+**sRGB**
 * Why? It is the universal transfer format.
 * Uses: File I/O, Display Devices, RGB generally implies sRGB
 * Math: Please, no math
 
-**CIELAB** 
+**CIELAB**
 * Why? When you want to recreate the behavior of human perception.
 * Uses: Data Visualization, Color Interpolation, Perceptual measurement
 * Math: Math is incorrect to reality, but looks perceptually smooth.
@@ -171,10 +171,10 @@ His website: [https://johnaustin.io](https://johnaustin.io)
   Images (e.g. my_image.jpg) should be put in the `website/static/blog/strange-loop-2019` directory, with the path to the image in your post being `/blog/strange-loop-2019/my_image.jpg`. If you'd rather host the images somewhere else for ease of use, that's fine too.
 
   Please also try to keep your images to a reasonable size by:
-    - Using JPEG compression, unless image is mostly solid color 
+    - Using JPEG compression, unless image is mostly solid color
     - JPEG compression set between 60%-80%
     - Resizing the image to be no wider then 750px
     - If PNG, use a tool like ImageOptim (https://imageoptim.com/mac) to optimize the file size
 
   I suggest re-sizing and compressing all the images in one batch as a last step.
--->  
+-->

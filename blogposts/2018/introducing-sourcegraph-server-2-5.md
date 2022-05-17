@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph 2.5: Introducing code change alerts'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack,
+    url: https://twitter.com/sqs
 publishDate: 2018-02-08T00:00-08:00
 tags: [
   "blog"

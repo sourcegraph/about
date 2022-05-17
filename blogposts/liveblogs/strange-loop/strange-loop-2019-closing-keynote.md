@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Closing Keynote"
 description: "London based recording artist Imogen Heap blurs the boundaries between pure art form and creative entrepreneurship. Writing and producing 4 solo albums, one as Frou Frou (with Guy Sigsworth), and collaborating with Jeff Beck, Mika and Josh Groban amongst others, Heap has penned tracks for movies, TV shows and produced the score for Harry Potter and the Cursed Child, winning the 'Outstanding Music in a Play' Drama Desk Award."
-author: Shanti Chellaram
-authorUrl: https://twitter.com/theccoder
+authors:
+  - name: Shanti Chellaram
+    url: https://twitter.com/theccoder
 publishDate: 2019-09-14T00:00-16:30
 tags: [
   strange-loop
@@ -64,7 +65,7 @@ turned around and synthesized a sine wave from it.
 Heap asked about doing getting a copy and working on the technology together,
 but the researcher was busy with an opera. So, Heap went to Tom Mitchell in
 England, got a pair of gloves, and  a 10k pound grant. This was used to develop
-a neural network for posture recognition. 
+a neural network for posture recognition.
 
 Then she tried to make a song with the gloves. So they had to make the hardware
 and software so they can make an entire song with their gloves. And not just a
@@ -104,7 +105,7 @@ performed in the band Frou Frou 15 years ago.
 She discusses the history of the work on the gloves.
 
 Slight brag about big names and other musicians signing up to work with Glover
-in their shows notably, Ariana Grande. 
+in their shows notably, Ariana Grande.
 
 Another smaller musician, Chris, is a young man playing guitar in a rock band,
 but has cerebral palsy which makes it difficult for him to work. He went
@@ -132,7 +133,7 @@ sitting with phones out recording. I've never seen anything like this before.
 She's a one woman band.
 
 A close observation yields notice of her careful positioning of her hand. The
-link between music and movement is visible and even palpable. 
+link between music and movement is visible and even palpable.
 
 The song finished, and the applause has died down. She's pulling out
 notecards.... "I'm not so good at writing speeches, but it's really nice to be

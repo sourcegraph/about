@@ -1,6 +1,8 @@
 ---
 title: 'Why we open sourced our uptime monitoring system'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2016-09-08T00:00-07:00
 tags: [
   "blog"

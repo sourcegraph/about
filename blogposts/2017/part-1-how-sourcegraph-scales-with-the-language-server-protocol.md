@@ -1,6 +1,8 @@
 ---
 title: 'Part 1: How Sourcegraph scales with the Language Server Protocol'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-02-27T00:00-07:00
 tags: [
   "blog"

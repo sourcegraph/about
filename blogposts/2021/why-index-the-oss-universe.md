@@ -1,7 +1,9 @@
 ---
 title: Why we’re indexing the OSS universe
 description: 'We’ve indexed over 1M open source repositories on Sourcegraph cloud to bring code search to the open source universe and code literacy to a much wider set of people.'
-author: Beyang Liu
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2021-08-19T00:00-07:00
 tags: [blog]
 slug: why-index-the-oss-universe

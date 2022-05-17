@@ -1,16 +1,16 @@
 ---
 title: "Strange Loop 2019 - Rhapsody in Zero Knowledge: Proving Without Revealing"
 description: "What does it mean to prove something? Propositional logic requires we reveal propositions and then prove them true, but what if it were possible to create proofs which reveal nothing but their own validity? This is the core idea behind the emergent field of zero knowledge proofs: a decades old solution to a problem we didn't even know existed yet. As we increasingly turn to machine learning to solve problems related to security, such as detecting frauds, fakes, or other threat actors, solutions increasingly rely on accumulating massive amounts of personal data, undermining privacy and risking data breaches. This talk is about how we don't have to sacrifice privacy to get security, and the potential power of constraints, complexity, and universal verifiable computation, and assumes no prior knowledge of cryptography or proof systems."
-author: Prasanna Gautam
-authorUrl: https://twitter.com/prasincs
-linkedInUrl: https://www.linkedin.com/in/prasannagautam/
+authors:
+  - name: Prasanna Gautam
+    url: https://twitter.com/prasincs
 publishDate: 2019-09-14T00:00-14:30
 tags: [
   strange-loop
 ]
 slug: strange-loop-2019-rhapsody-in-zero-knowledge-proving-without-revealing
 heroImage: https://about.sourcegraph.com/blog/strange-loop-thumbnail-square-v2.jpg
-published: true 
+published: true
 ---
 
 <div class="container p-0 liveblog-presenters">
@@ -32,7 +32,7 @@ What does it mean to prove something? Propositional logic requires we reveal pro
 
 ---
 
-## Preface 
+## Preface
 
 Tony introduced the talk as the history of zero-knowledge proofs, there is going
 to be lot of mathematical papers referenced but this is not a math talk. Tony
@@ -43,7 +43,7 @@ be solved with Zero-Knowledge Proofs based identity system.
 ---
 
 ## Identity Theft and Zero-Knowledge Proofs
-Tony outlined two causes of identity theft - data breaches and insecure authentication methods 
+Tony outlined two causes of identity theft - data breaches and insecure authentication methods
 
 The solutions could be these
 - Moving data to a different company: But what if the next company also gets breached?
@@ -52,7 +52,7 @@ The solutions could be these
 Tracking is becoming a regular part of life in the modern world. Your phone is broadcasting various tracking data like [IMSI number](https://www.techopedia.com/definition/5067/international-mobile-subscriber-identity-imsi), [MAC address](https://en.wikipedia.org/wiki/Medium_access_control), [Bluetooth Identifier](https://reelyactive.github.io/ble-identifier-reference.html). Even the newly issued and soon to be mandatory [RealID cards](http://www.ncsl.org/research/transportation/history-behind-the-real-id-act.aspx) in the US were once feared to contain RFID trackers. This works towards enabling a state of surveillance both at the state and corporations tracking
 you level. What if we didn't have to sacrifice our privacy? Zero-Knowledge proofs try to solve that problem by proving the information but not revealing it to the verifier.
 
---- 
+---
 
 ## Definition
 
@@ -74,7 +74,7 @@ Lots of papers after this seminal paper were rejected until [Knowledge complexit
 systems](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.419.8132&rep=rep1&type=pdf) in
 1985 was finally accepted. This paper proved to be fundamental to the development of Zero-knowledge proofs.
 
---- 
+---
 
 ## Interactive zero knowledge 3-colorability Demonstration
 
@@ -101,7 +101,7 @@ Merlin and King Arthur is the verifier. The paper reminds us that the zero-knowl
 In 1986, Shafi and Michael Sipser wrote the [Private Coins vs Public Coins in Interactive Proof
 Systems](http://crypto.cs.mcgill.ca/~crepeau/COMP647/2007/TOPIC01/goldwasser-Sipser.pdf) paper which proved the
 equivalence of the interactive proof systems defined by (Safi et. al.) as private coin flip, and the outcome of Babai's
-as the public coin flip. 
+as the public coin flip.
 
 This was followed by Fiat-Shamir's paper [How to Prove Yourself](https://link.springer.com/chapter/10.1007%2F3-540-47721-7_12) where they turned the ineractive algorithms into a signature -- thereby turning the interactive algorithm into a non-interactive one. This meant that instead of requiring the verifier to be part of the initial commitment and challenge, the prover just needed to prove the hash of the message.
 
@@ -116,11 +116,11 @@ the link came together in the [Everything Provable is provable in zero-knowledge
 ## Probabilistically Checking Proofs
 
 The problem after this is how do you check a proof that's too large to verify? You may not be able to verify a large 100
-page proof. 
+page proof.
 
 In 1992, [Probabilistic checking of Proofs: A new characterizations of
 NP](https://www.cs.umd.edu/~gasarch/TOPICS/pcp/AS.pdf) tackled this problem by probabilistically checking the proof in a
-way that doesn't grow in an unbounded fashion. But, what if we could make smaller proofs? To answer this question, Joe Killian published  [A note on efficient zero-knowledge proofs and arguments](https://people.csail.mit.edu/vinodv/6892-Fall2013/efficientargs.pdf). 
+way that doesn't grow in an unbounded fashion. But, what if we could make smaller proofs? To answer this question, Joe Killian published  [A note on efficient zero-knowledge proofs and arguments](https://people.csail.mit.edu/vinodv/6892-Fall2013/efficientargs.pdf).
 
 In 2000, Micali published the [Computationally-sound proofs : Poly Logarithmic Verification
 Time](https://projecteuclid.org/download/pdf_1/euclid.lnl/1235415908) paper which proves that there's a poly-logarithmic
@@ -163,9 +163,9 @@ but it was leaked in the ceremony transcript.
 
 ### Powers of Tau
 This was followed by Powers of Tau ceremony to replace with prolonged multiparty signing ceremony with hundreds of
-signers. 
+signers.
 
-## BulletProofs and ZkSTARKs 
+## BulletProofs and ZkSTARKs
 
 These two papers present the future without the limitations of previous processes.
 
@@ -182,7 +182,7 @@ These two papers present the future without the limitations of previous processe
 
 ## Coda Protocol
 
-The [Coda Protocol](https://codaprotocol.com/) swaps the traditional blockchain for a fixed size consistent proof 
+The [Coda Protocol](https://codaprotocol.com/) swaps the traditional blockchain for a fixed size consistent proof
 
 - build on recursive zero knowledge proofs
 - always get the consistent size proof that they have whole blockchain
@@ -198,13 +198,13 @@ three of recent papers as an example:
 [Spartan: Efficient and general purpose zkSNARKs without trusted
 setup](https://www.semanticscholar.org/paper/Spartan%3A-Efficient-and-general-purpose-zkSNARKs-Setty/a876aeff0d2d0bef08738ac063ef6c48f7eb8789) describes a new public coin, succinct interactive zero-knowledge argument for NP under standard cryptographic hardness assumptions—without requiring a trusted setup.
 
-On Tuesday (September 10, 2019), major new development had happened with the publication of 
+On Tuesday (September 10, 2019), major new development had happened with the publication of
 [Halo: Recursive Proof
 Composition](https://electriccoin.co/blog/halo-recursive-proof-composition-without-a-trusted-setup/). Halo combines best parts of SNARKs and Bullet proofs with no trusted setup and uses normal elliptic curves. If you want to see it in practice, there's a WIP implementation on github: [https://github.com/ebfull/halo](https://github.com/ebfull/halo)
 
 ## Q&A
 
 Tony deffered the question about the link between P!=NP and Zero Knowledge Proofs, ie whether Zero-Knowledge
-proofs would be step towards proving P!=NP. 
+proofs would be step towards proving P!=NP.
 His work involves building a bridge between Cosmos and the Zcash Shielded Pools.
-In terms of practical usages, Tony presented the idea of checking for Non inclusion lists like checking for no fly lists without disclosing name, etc 
+In terms of practical usages, Tony presented the idea of checking for Non inclusion lists like checking for no fly lists without disclosing name, etc

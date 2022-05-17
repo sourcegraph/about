@@ -1,6 +1,8 @@
 ---
 title: 'Go code intelligence on Sourcegraph: now in general availability (GA)'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack,
+    url: https://twitter.com/sqs
 publishDate: 2017-01-25T00:00-07:00
 tags: [
   "blog"

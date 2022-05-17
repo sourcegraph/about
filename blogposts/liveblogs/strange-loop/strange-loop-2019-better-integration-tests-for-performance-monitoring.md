@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Better Integration Tests for Performance Monitoring"
 description: "In late 2017, Slack's largest customers were plagued with relentless performance-related outages. Our monolithic, spaghetti codebase was increasingly difficult to reason about; small, innocuous changes might accidentally cause a cascade of regressions. A few concerned engineers teamed up to build a tool detecting and preventing these changes from reaching production. Known as \"Slerf\" (for \"Sl\"ack P\"erf\"ormance), the simple system runs atop Slack's existing unit testing framework and alerts backend engineers early to any potential regressions their code might introduce. Learn how you can extend your own testing framework and improve both the confidence of your engineers and stability of your product while maintaining a high development velocity!"
-author: Brian Sewell
-authorUrl: https://www.linkedin.com/in/brian-sewell-9973b796/
-linkedInUrl: https://www.linkedin.com/in/brian-sewell-9973b796/
+authors:
+  - name: Brian Sewell
+    url: https://www.linkedin.com/in/brian-sewell-9973b796/
 publishDate: 2019-09-14T00:00-13:30
 tags: [
   strange-loop

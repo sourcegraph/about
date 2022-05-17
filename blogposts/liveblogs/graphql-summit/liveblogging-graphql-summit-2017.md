@@ -1,6 +1,8 @@
 ---
 title: 'Liveblogging GraphQL Summit 2017'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-10-24T00:00-07:00
 tags: [
   "graphql"

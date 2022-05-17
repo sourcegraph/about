@@ -1,6 +1,8 @@
 ---
 title: 'Great code search for AWS CodeCommit'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-11-16T00:00-08:00
 tags: [
   "blog"

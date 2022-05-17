@@ -1,6 +1,8 @@
 ---
 title: 'Gophercon 2018 - Computer Vision Using Go and OpenCV 3'
-author: 'Beyang Liu for the GopherCon Liveblog'
+authors:
+  - name: 'Beyang Liu for the GopherCon Liveblog'
+    url: https://twitter.com/beyang
 publishDate: 2018-08-28T00:00-06:00
 tags: [
   "gophercon"

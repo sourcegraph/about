@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Enhancing Angklung Music Rehearsals with Modern Tech"
 description: "Angklung is a traditional musical instrument from Indonesia. This instrument has a lot of variety in how it is performed; a common format is the orchestral format in which 15-30 players gather to form a team. Playing angklung in this way is fun but also presents some challenges that are hard to solve manually. In this talk, we will learn how technology is used to improve the quality of rehearsals of this age-old instrument."
-author: Ryan Frazier
-authorUrl: https://pianomanfrazier.com/
-linkedInUrl: https://www.linkedin.com/in/pianomanfrazier
+authors:
+  - name: Ryan Frazier
+    url: https://pianomanfrazier.com/
 publishDate: 2019-09-13T00:00-15:30
 tags: [
   strange-loop
@@ -106,7 +106,7 @@ What is the optimal distribtion of Angklung among players?
 
 - Read in the spreadsheet in
 - Compute note collisions in the piece (build a collision table)
-- Compute player time 
+- Compute player time
 - Compute Angklung size distribution
 
 Use the collision table to assign a weight to the Angklung.
@@ -135,7 +135,7 @@ for row in wb.active.rows:
     if is_empty_row:
         internal row = 0
     score[internal_row] += new_row
-    internal row += 1 
+    internal row += 1
 ```
 
 ### Calculate Collision Table
@@ -151,26 +151,26 @@ def calculate_collision_table(score):
             for m in re.finditer("<[0-9A-Gg#]+>", beat):
                 angklung = m[0].strip("<>")
                 angklung_per_column[col].add(angklung)
-                all_angklung.add(angklung) 
+                all_angklung.add(angklung)
     collision_table = {}
     while len(all_angklung) > 0:
         a = all_angklung.pop()
         for b in all_angklung:
-            collision_table[pair(a, b)] = 0 
+            collision_table[pair(a, b)] = 0
     for i, col in angklung_per_column.items():
         processing = col.copy()
         while len(processing) > 0:
             a = processing.pop()
             for b in list(processing) + list(angklung_per_column.get(i+1, set()) - {a}):
-                collision_table[pair(a, b)] += 1 
+                collision_table[pair(a, b)] += 1
 
     # normalize
     max_collision = (len(score) * 2) - 1
     norm_collision_table = {}
     for a_pair in collision table:
-        norm_collision_table[a_pair] = collision_table[a_pair] / max_collision 
+        norm_collision_table[a_pair] = collision_table[a_pair] / max_collision
 
-    return norm_collision_table 
+    return norm_collision_table
 ```
 
 ### Calculate Play Time
@@ -197,15 +197,15 @@ def calculate_play_time(*partiturs):
             try:
                 play_time[angklung] += duration
             except KeyError:
-                play_time[angklung] = duration 
+                play_time[angklung] = duration
 
     # normalize
     total_len_partiturs = sum(len(partitur) for partitur in partiturs)
     norm_play_time = {}
     for no_angklung in play_time:
-        norm_play_time[no_angklung] = play_time[no_angklung] / total_len_partiturs 
+        norm_play_time[no_angklung] = play_time[no_angklung] / total_len_partiturs
 
-    return norm_play_time 
+    return norm_play_time
 ```
 
 ### Calculate Instrument Distribution
@@ -215,14 +215,14 @@ def generate_distribution(play_time, collision_table, num_players, num_each_angk
     angklung_to_distribute = []
     for a, j in num_each_angklung.items():
         angklung_to_distribute.extend(a for _ in range(j)])
-    random.shuffle(angklung_to_distribute) 
+    random.shuffle(angklung_to_distribute)
     distribution = {i: [] for i in range(num_players)}
     while len(angklung_to_distribute) > 0:
         angklung_candidate = angklung_to_distribute.pop()
         candidate_values = {}
         for player_index, player_distribution in distribution.items():
             if angklung_candidate in player_distribution:
-                continue 
+                continue
         weight = 0
         for players_angklung in player_distribution:
             weight -= play_time[players_angklung]
@@ -238,7 +238,7 @@ def generate_distribution(play_time, collision_table, num_players, num_each_angk
             raise Exception("Too few players")
         candidate_values_sorted = sorted([(v, i) for i, v in candidate_values.items()],
                                          key=lambda t: t[0], reverse=True)
-        distribution[candidate_values_sorted[0][1]].append(angklung_candidate) 
+        distribution[candidate_values_sorted[0][1]].append(angklung_candidate)
 
     distribution = {i: sorted(angklungs, key=no_angklung_to_numeral)
                     for i, angklungs in distribution.items()}

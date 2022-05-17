@@ -1,7 +1,9 @@
 ---
 title: "GopherCon 2019 - Tracking inter-process dependencies using static analysis"
 description: "Using a service-oriented architecture instead of a monolithic architecture adds flexibility but also increases complexity. How will we keep track of which parts of our system depend on each other? To help solve this problem, I've been working on a project to analyze Go code (using Go!) to detect inter-process dependencies in our system. In this talk, I'll give a brief introduction to the static analysis libraries I used and share a few tips about how to use them effectively. I'll discuss obstacles I encountered along the way and my attempts to overcome them."
-author: Beyang Liu for the GopherCon 2019 Liveblog
+authors:
+  - name: Beyang Liu for the GopherCon 2019 Liveblog
+    url: https://twitter.com/beyang
 publishDate: 2019-07-26T00:00-14:55
 tags: [
   gophercon
@@ -148,7 +150,7 @@ The Plan: For each package Pass,
 1. Grab the SSA result from the buildssa Pass.
 2. Build the call graph using rta.Analyze.
 3. Traverse the call graph, marking paths that lead to “interesting” calls.
-4. Report unmarked paths as linter errors. 
+4. Report unmarked paths as linter errors.
 5. Report destination markers as dependency data.
 
 
@@ -250,7 +252,7 @@ He tried some workarounds:
 
 But it was just not working well:
 
-* Multiple passes, each with separate SSA program builds 
+* Multiple passes, each with separate SSA program builds
 * ssa.BuilderMode may have been a confounding factor
 * RTA limitations? Docs: "The resulting call graph is less precise than one produced by pointer analysis,
 but the algorithm is much faster. For example, running the cmd/callgraph tool

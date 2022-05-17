@@ -1,6 +1,8 @@
 ---
 title: 'Regexp queries, directories, OpenID Connect, and more updates to Sourcegraph'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack,
+    url: https://twitter.com/sqs
 publishDate: 2017-11-13T00:00-08:00
 tags: [
   "blog"

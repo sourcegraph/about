@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph 2.8: 19 languages, ridiculously huge monorepos, LSP, a GraphQL API, and more'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack,
+    url: https://twitter.com/sqs
 publishDate: 2018-05-22T09:00-07:00
 tags: [
   "blog"

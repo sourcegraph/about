@@ -1,6 +1,8 @@
 ---
 title: 'Planned unavailability of Java and PHP language servers on Sourcegraph.com'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack,
+    url: https://twitter.com/sqs
 publishDate: 2018-11-29T12:00-07:00
 tags: [
   "blog"

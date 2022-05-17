@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Finding bugs without running or even looking at code"
 description: "What if you could find complex bugs in systems without ever having looked at any of the code, without running the code, without cloning the code, or even knowing what language the code is written in or where its git repo lives? What if you could validate the correctness of an architectural proposal before writing code?"
-author: Brian Sewell
-authorUrl: https://www.linkedin.com/in/brian-sewell-9973b796/
-linkedInUrl: https://www.linkedin.com/in/brian-sewell-9973b796/
+authors:
+  - name: Brian Sewell
+    url: https://www.linkedin.com/in/brian-sewell-9973b796/
 publishDate: 2019-09-13T00:00-13:30
 tags: [
   strange-loop
@@ -59,7 +59,7 @@ He's not going to just stand here and tell people to write things down, the focu
 is a tool called Alloy.
 
 [Alloy](http://alloy.lcs.mit.edu/alloy/) is a tool from MIT, from the general class of tools known as a Model Checker.
-  
+
 - Describe your formal design in a way that the computer can explore the various scenarios and check state against correctness properties.
 
 ## Working Example

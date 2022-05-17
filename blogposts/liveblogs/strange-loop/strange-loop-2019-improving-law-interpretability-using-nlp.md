@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Improving law interpretability using NLP"
 description: "The process of legal reasoning is heavily reliant on information stored in text, but while legal texts are generally easily accessible, their interpretation often isn't straight forward, making the understanding of the law effectively inaccessible to the general public."
-author: Daniela Miao 
-authorUrl: https://www.linkedin.com/in/danielamiao/
-linkedInUrl: https://www.linkedin.com/in/danielamiao/
+authors:
+  - name: Daniela Miao
+    url: https://www.linkedin.com/in/danielamiao/
 publishDate: 2019-09-13T00:00-14:30
 tags: [
   strange-loop
@@ -32,7 +32,7 @@ The process of legal reasoning is heavily reliant on information stored in text,
 
 ---
 
-## Problem 
+## Problem
 
 What are we working with?
 
@@ -69,13 +69,13 @@ A little grammar review:
 **Burden**: a requirement or obligation that organizations have to comply with. E.g. Physical and architectural barriers, documentation and training
 
 ### Three Major Steps
-1. Burdens Extraction: identify sentences in the law and express a rule. Found limited vocabulary: shall must, oblige, require. Then use wordnet to find groups of synonyms connected by semantic meaning. 
+1. Burdens Extraction: identify sentences in the law and express a rule. Found limited vocabulary: shall must, oblige, require. Then use wordnet to find groups of synonyms connected by semantic meaning.
     * For each sentence, extract lemma from each token, if any of the lemmas is included in the ontology, label as burden
     * Result: accuracy is 89% (required the speaker to actually read the law => not fun!)
 
 2. Subjects identification
     * Objective is to identify the subject of the sentence for each burden
-    * Example: "Obligated organizations that are school boards or educational or training institutions shall keep record of the training provided". 
+    * Example: "Obligated organizations that are school boards or educational or training institutions shall keep record of the training provided".
     * Solution: identify the subject of the sentence using the *dependency parsing tags*
 
 ![Parsing Tree](/blog/strange-loop-2019/lawnlp.png)

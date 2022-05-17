@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Digital and Social Resilience through the NYC Mesh"
 description: "NYC Mesh is a community-run mesh network that helps over three-hundred homes connect to high-speed Internet; making it one of the largest mesh networks in the world. We work with anyone interested in reclaiming ownership over their Internet, but specifically engage with underserved populations including residents in low-income housing and community centers. Built by a combination of consumer-grade materials and donated fiber-optic cable, this network gives people ownership and control over their Internet usage."
-author: Shanti Chellaram
-authorUrl: https://shanti.wtf
+authors:
+  - name: Shanti Chellaram
+    url: https://shanti.wtf
 publishDate: 2019-09-13T00:00-14:30
 tags: [
   strange-loop
@@ -120,7 +121,7 @@ limits what kind of business can exist in what neighborhoods.
 NYC Mesh aims to provide a solution to the shortcomings of ISPs. Rather than
 being profit-driven, it attempts to be community-driven. It's predicated on the
 belief that everyone deserves a connection that is high-speed, affordable, and
-reliable. 
+reliable.
 
 "Trust of your internet extends beyond your home, and to the broader community
 to which you are connected."
@@ -301,7 +302,7 @@ longer-distance connections?
 
 **M:** Short: no. There'es always going t obe  longer-distnace issues
 where ISPs are going to be things. Maybe we can join with a regional mesh
-network. 
+network.
 
 **J:** Another issue is being located on backbone, where we're located,
 NYC, doesn't have much connectivity.
@@ -320,7 +321,7 @@ nodes its about $160. That's for the sector beams that need to travel a few
 hundred feet.
 
 **J:** We try in our installation price to offer a $50 volunteer fee. We try to
-subsidise installation fees and help out other people. It's a volunteer thing, so if people 
+subsidise installation fees and help out other people. It's a volunteer thing, so if people
 
 **Audience 5:** Can you talk about how you patch your network and that sort of thing?
 

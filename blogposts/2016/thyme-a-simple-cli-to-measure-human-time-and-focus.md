@@ -1,6 +1,8 @@
 ---
 title: 'Thyme: a simple CLI to measure human time and focus'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2016-08-15T00:00-07:00
 tags: [
   "blog"

@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Machine learning to interpret sign language"
 description: "Instead of just teaching Deaf people how to get along with the rest of the world and understand them, why don't we make an effort to understand them and their language via technology?! In this talk we will learn how to use machine learning to interpret sign language."
-author: Mel Chua
-authorUrl: http://melchua.com/
+authors:
+  - name: Mel Chua
+    url: http://melchua.com/
 publishDate: 2019-09-14T00:00-14:30
 tags: [
   strange-loop
@@ -47,7 +48,7 @@ Signed languages have some aspects spoken languages don't have, such as facial e
 
 ## How technology can resolve it
 
-Convolutional neural networks (CNNs) are a type of feed-forward neural network inspired by animal vision. As data flows from one layer to the next, it is progressively analyzed at higher and higher levels. Recurrent neural networks (RNN) resemble lists, and also cascade data forward. Exploding and vanishing gradients are an issue that RNNs amplify because they layer so many things atop each other. 
+Convolutional neural networks (CNNs) are a type of feed-forward neural network inspired by animal vision. As data flows from one layer to the next, it is progressively analyzed at higher and higher levels. Recurrent neural networks (RNN) resemble lists, and also cascade data forward. Exploding and vanishing gradients are an issue that RNNs amplify because they layer so many things atop each other.
 
 This project used a RNN model with Long Short Term Memory (LSTM) units. CNNs are used for spatial features, and RNNs for temporal ones.
 

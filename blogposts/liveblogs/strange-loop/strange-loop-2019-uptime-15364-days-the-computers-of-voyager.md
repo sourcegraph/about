@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Uptime 15,364 days - The Computers of Voyager"
 description: "The Voyager 1 and Voyager 2 space probes, both launched in 1977, each had a primary objective to explore Jupiter and Saturn. This goal was achieved by 1981. Yet Voyager, NASA's longest running mission, has continued to this day. Both Voyager probes are still operating, and returning scientific data from outside our solar system. This talk explores the computing systems of Voyager - the systems which enable remote control of the spacecraft, and provide for the recording and return of data to Earth. These systems have proved to be both adaptable, durable, and resilient in support of a scientific undertaking now in it's fifth decade."
-author: Gabe Ortiz for the Strange Loop 2019 Liveblog
-authorUrl: https://twitter.com/signalnine
-linkedInUrl: https://linkedin.com/in/gabrielortiz
+authors:
+  - name: Gabe Ortiz for the Strange Loop 2019 Liveblog
+    url: https://twitter.com/signalnine
 publishDate: 2019-09-13T00:00-15:30
 tags: [
   strange-loop
@@ -46,13 +46,13 @@ The Grand Tour wasn't approved for budgetary reasons but a scaled back program w
 !(/blog/strange-loop-2019/voyager02.jpg)
 
 ## Design
-The Voyager program was designed to be reconfigurable, redundant and resilient. 
+The Voyager program was designed to be reconfigurable, redundant and resilient.
 
-It was discovered that Jupiter has intense ionization belts so the spacecraft was designed to have significant shielding. 
+It was discovered that Jupiter has intense ionization belts so the spacecraft was designed to have significant shielding.
 
 The computer systems onboard were
-* CCS 
-* AACA 
+* CCS
+* AACA
 * FDS
 !(/blog/strange-loop-2019/voyager04.jpg)
 
@@ -66,18 +66,18 @@ Memory consisted of fixed procedures and uplinked events, all reconfigurable and
 The hardware was very similar to previous designs used in the Viking missions.
 
 In terms of architecture it had 18 bit words split into a 6 bit opcode and a 12 bit address
-It's capable of about 11 thousand IOPs. 
+It's capable of about 11 thousand IOPs.
 
-## AACA 
+## AACA
 The AACA keeps the spacecraft pointed in the right direction. The CCS decided WHAT to do and the AACA figured out how to do it.
-The hardware was basically the same as the CCS. 
+The hardware was basically the same as the CCS.
 
 Using digital control systems made it easier to update the systems as needed.
 
 ## FDA
 
 The FDA handles Collection, transmissiona and storage of data collected by the sensors. It used CMOS memory which was volatile and needed a lot of shielding, being vulnerable to radiation.
-The system was a new design. Because there was very lmited storage, the data collection happens in realtime. 
+The system was a new design. Because there was very lmited storage, the data collection happens in realtime.
 Golay encoding was used as a form of parity checking, since there is no ability to retry. Voyager does have a tape drive for when it can't relay data. The camera has a resolution of 800x800 pixels with 8 levels of gray.
 
 ## Voyager 0
@@ -88,5 +88,5 @@ The National Air and Space museum has a engineering prototype of Voyager that's 
 
 Post-launch there was an issue with the control transmission and the primary receiver on Voyager 1 failed after an automated failover attempt. There's a short in a capacitor on the secondary receiver so it although it works it's somewhat tempermental.
 They managed to get more funding to get to Uranus and Neptune. They added a data compression algorithm to deal with the transmission rate decreasing due to signal attenuation. They switched the probe to use both processors, one to deal with the compression.
-Power available has been decreasing slowly, the thermocouples are degrading and about half of the Plutonium has been used up. NASA has been turning off and cycling the systems to conserve power. We expect Voyager to last maybe another 5 years. After it ceases operation it'll still continue out into the galaxy, carrying the Voyager golden record. 
+Power available has been decreasing slowly, the thermocouples are degrading and about half of the Plutonium has been used up. NASA has been turning off and cycling the systems to conserve power. We expect Voyager to last maybe another 5 years. After it ceases operation it'll still continue out into the galaxy, carrying the Voyager golden record.
 
