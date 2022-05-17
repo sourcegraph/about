@@ -15,6 +15,10 @@ changelogItems:
 
 Sourcegraph 3.40 is now available! Here are some highlights from this release:
 
+# Local navigation for the top 8 languages is now faster and more accurate
+
+We [previously improved Java](https://about.sourcegraph.com/blog/release/3.39/#Local-navigation-for-Java-code-is-now-faster-and-more-accurate), and since then we’ve added support for Go, C#, Python, JavaScript, TypeScript, C/C++, and Ruby.
+
 ## Search your Python dependencies
 
 Sourcegraph [dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search) now supports python. You can now natively search your python dependencies to quickly determine if any dependency across your code has a security vulnerability. We currently have support for poetry.lock and pipfile.lock files. Check out [this example search on Sourcegraph Cloud](https://sourcegraph.com/search?q=context:global+repo:deps%28%5Egithub%5C.com/textualize/rich%24%29+&patternType=literal).
