@@ -26,7 +26,6 @@ export const Webinar: FunctionComponent<PageProps> = props => (
             title: '[On-Demand Webinar] Learn how Nutanix remediated Log4j in 4 days',
             description:
                 'On-Demand Webinar. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
-            image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
         className="navbar-white"
     >
