@@ -73,3 +73,6 @@ export { ContentPage } from './ContentPage'
 // Pricing
 export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
 export type { Features } from './Pricing'
+
+// Webinars
+export { WebinarLayout } from './Webinars'

@@ -30,7 +30,7 @@ interface HubSpotProps {
     onFormSubmitted?: () => void
 }
 
-interface HubSpotForm {
+export interface HubSpotForm {
     region?: string
     [index: number]: HTMLFormElement
     portalId: string

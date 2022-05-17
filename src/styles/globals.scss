@@ -319,6 +319,10 @@ $positions: ('top', 'right', 'bottom', 'left');
 
 /* ==================== Temporary ==================== */
 // TODO: On Tailwind migration, trade out this style for utility class: "border-3"
+.border-2 {
+    border-width: 2px !important;
+}
+
 .border-3 {
     border-width: 3px !important;
 }
