@@ -3,8 +3,9 @@ title: "An ex-Googler's guide to dev tools"
 externalTitle: 'Dev tools: The ex-Googler guide'
 description:  "After leaving Google, many engineers miss the developer tools. Here's one ex-Googler's guide to navigating the dev tools landscape outside of Google, finding the ones that fill the gaps you're feeling, and introducing these to your new team."
 externalDescription: 'An ex-Googler, or Xoogler, shows how you can replicate Google’s internal tools and development environment outside of Google.'
-author: Beyang Liu
-authorUrl: https://twitter.com/beyang
+authors:
+  - name: Beyang Liu,
+    url: https://twitter.com/beyang
 publishDate: 2020-11-24
 tags: [blog]
 slug: ex-googler-guide-dev-tools
@@ -157,7 +158,7 @@ Building software at scale is hard. As everyone who has read <a href="https://en
 &nbsp;
 <hr>
 
-**Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
+**Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.
 
 Please feel free to ask us questions either via posting on Twitter[@sourcegraph](https://twitter.com/sourcegraph) or sending an email to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
 

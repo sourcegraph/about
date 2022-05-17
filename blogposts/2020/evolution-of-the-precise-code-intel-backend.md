@@ -1,8 +1,9 @@
 ---
 title: "The Language Server Index Format (LSIF) at Sourcegraph, a year in review"
 description: We've spent a year building out the world's largest semantic code index using the Language Server Index Format (LSIF). Read about the technical journey, from MVP to scaling and optimizing the system to support large-scale codebases.
-author: Eric Fritz
-authorUrl: https://eric-fritz.com
+authors:
+  - name: Eric Fritz,
+    url: https://eric-fritz.com
 publishDate: 2020-06-17T10:00-07:00
 tags: [blog]
 slug: evolution-of-the-precise-code-intel-backend

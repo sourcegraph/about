@@ -1,8 +1,9 @@
 ---
 title: "Code ownership: Why we built a new tool for subscribing to file changes"
 externalTitle: 'Code ownership: A new perspective'
-author: Nick Snyder
-authorUrl: https://twitter.com/nickdsnyder
+authors:
+  - name: Nick Snyder,
+    url: https://twitter.com/nickdsnyder
 description: "We’re rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
 externalDescription: "We’re rethinking the way code ownership works at Sourcegraph and building a new tool that enables developers to subscribe to file changes in a Git repository."
 publishDate: 2020-10-05

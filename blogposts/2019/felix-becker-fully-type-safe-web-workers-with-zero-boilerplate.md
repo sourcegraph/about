@@ -1,7 +1,8 @@
 ---
 title: Fully type-safe Web Workers with zero boilerplate
-author: Felix Becker
-authorUrl: https://github.com/felixfbecker
+authors:
+  - name: Felix Becker,
+    url: https://github.com/felixfbecker
 publishDate: 2019-12-18T10:00-07:00
 tags: [blog]
 slug: felix-becker-fully-type-safe-web-workers-with-zero-boilerplate
