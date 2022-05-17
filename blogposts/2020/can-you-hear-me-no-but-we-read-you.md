@@ -1,7 +1,7 @@
 ---
 title: "Can you hear me? No, but we read you—an experiment with video calls"
 authors:
-  - name: Quinn Keast,
+  - name: Quinn Keast
     url: https://twitter.com/quinnkeast
 publishDate: 2020-10-29
 tags: [blog]

@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Death by three thousand timers: Streaming video-on-demand for Cable TV"
 description: "Can Go handle soft real-time applications? Learn about the challenges my team overcame to deliver video-on-demand MPEG streams to millions of cable TV customers using pure Go. Along the way we'll dig deeper into how Go manages timers and goroutine scheduling."
-author: Larry Clapp for the GopherCon 2019 Liveblog
+authors:
+  - name: Larry Clapp for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-11:55
 tags: [
   gophercon
@@ -264,7 +265,7 @@ Create GOMAXPROCS packet scheduler goroutines.  Each requests a time range to
 send their next packet.  Find a bunch of packets in the same range.  Send them
 out all at once without sleeping.  Sleep until the next group needs to go out.
 
-### BUT THEN ... 
+### BUT THEN ...
 
 If their goal was just to get everything grouped in time ... what if they just
 woke up all the goroutines at the same time?
@@ -344,7 +345,7 @@ production code.  Some hiccups there:
   video stream getting data didn't interfere with another video stream.
 
 But about two weeks ago they got this all working and into the QA environment,
-tried it with a completely cold cache, went to full load, and ... 
+tried it with a completely cold cache, went to full load, and ...
 
 **They were at 40% CPU usage on the box at full load.**
 

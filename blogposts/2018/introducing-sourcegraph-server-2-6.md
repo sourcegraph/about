@@ -1,7 +1,7 @@
 ---
 title: 'Introducing Sourcegraph 2.6: Symbol search for 75+ languages'
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2018-03-13T00:00-08:00
 tags: [

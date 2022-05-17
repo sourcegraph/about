@@ -1,7 +1,7 @@
 ---
 title: 'Building a product, one user interview at a time'
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2016-05-30T14:45-07:00
 tags: [

@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Detecting incompatible API changes"
 description: "Detecting whether your package's API is backwards-compatible is an important problem. You want to know whether your change could break existing users, or whether you're just adding new features. In this tutorial, I'll begin by discussing what we mean by API compatibility. I'll talk about how computing it is harder than it might seem at first, and I'll describe the algorithm I used to write my apidiff tool. Along the way, I'll provide tips on how to future-proof your own code against API breakage. Listeners will emerge with a new appreciation for and a deeper understanding of the Go language, as well as a sense of how to build tools like this one."
-author: Carmen Andoh for the GopherCon 2019 Liveblog
+authors:
+  - name: Carmen Andoh for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-14:00
 tags: [
   gophercon
@@ -21,12 +22,12 @@ Detecting whether your package's API is backwards-compatible is an important pro
 
 ---
 
-Greetings, fellow Gophers! I’m Jonathan Amsterdam, and I work on the Go team at Google. 
+Greetings, fellow Gophers! I’m Jonathan Amsterdam, and I work on the Go team at Google.
 Today I’d like to talk about how to detect incompatible changes in the API of your Go code.
 
-A few months ago, I was faced with a problem. I was responsible for maintaining a large set of packages, many of which consisted of generated code. I wanted to make sure that breaking changes weren't being introduced, but it wasn’t feasible for me to check all the code by hand. 
+A few months ago, I was faced with a problem. I was responsible for maintaining a large set of packages, many of which consisted of generated code. I wanted to make sure that breaking changes weren't being introduced, but it wasn’t feasible for me to check all the code by hand.
 
-And I realized, even when it seems feasible to check compatibility by hand, it’s easy to make mistakes. 
+And I realized, even when it seems feasible to check compatibility by hand, it’s easy to make mistakes.
 
 _old_
 ```go
@@ -45,9 +46,9 @@ b []int
 
 For example, here someone added an unexported field to a struct. It’s natural to think, since the field is unexported, that that’s a compatible change. But it isn’t—this change can break your users. I’ll explain why later, but the point is, looking through the diffs of your package, it’s easy to miss something like this.
 
-Anyway, faced with the challenge of detecting compatibility, I had a dangerous thought: 
+Anyway, faced with the challenge of detecting compatibility, I had a dangerous thought:
 
-I’ll write a tool to do it. I figured it would take a couple of days. 
+I’ll write a tool to do it. I figured it would take a couple of days.
 I was wrong. The problem was much harder than I realized, and I made quite a few wrong turns along the way.
 
 *First, I'll explain why compatibility is important.
@@ -64,7 +65,7 @@ Once we have the rules, the implementation is straightforward. I’ll finish by 
 
 Why should we care if we can detect API compatibility?
 
-Well, an API is what's visible to your users, so an incompatible change to the API will break your users. (That's pretty much what incompatible means.) 
+Well, an API is what's visible to your users, so an incompatible change to the API will break your users. (That's pretty much what incompatible means.)
 
 So do you want to break your users? Well, maybe. There could be good reasons to do so, like security fixes. But I think we can all agree on this:
 You don't want to _unknowingly_ break your users. If you made a breaking change to your code, you want to know about it!
@@ -76,7 +77,7 @@ If there were compatible changes, you should bump the minor version.
 If there were incompatible changes, then consider your next move carefully.
 If you’re still experimenting with the API (major version zero), then go ahead with the changes.
 
-If you’re at major version one or higher, then an incompatible change requires not only a major version bump, but a new import path. You’ll have to inform your users somehow. Some will switch to the new version, but others won’t, and you’ll have to maintain the old version for approximately forever. 
+If you’re at major version one or higher, then an incompatible change requires not only a major version bump, but a new import path. You’ll have to inform your users somehow. Some will switch to the new version, but others won’t, and you’ll have to maintain the old version for approximately forever.
 
 Perhaps instead you should back out those incompatible changes and make compatible changes instead. For example, instead of changing the signature of method, add a new method and mark the old as deprecated.
 
@@ -86,7 +87,7 @@ If you do decide to go ahead and break your users, at least you did so knowingly
 
 When I thought about writing a compatibility-checking tool, I started with the question: “What exactly is compatibility, anyway?”
 
-That was my first mistake. It leads to never-ending discussions about how every change is potentially breaking to someone (that’s Hyrum’s law), whether a security or bug fix that breaks users requires a major version bump, and so on. 
+That was my first mistake. It leads to never-ending discussions about how every change is potentially breaking to someone (that’s Hyrum’s law), whether a security or bug fix that breaks users requires a major version bump, and so on.
 
 So the right question to ask is, not “What is compatibility?” but....
 
@@ -94,55 +95,55 @@ So the right question to ask is, not “What is compatibility?” but....
 
 Since I was writing a computer program, I could define what version of compatibility it computed. Of course, the definition couldn’t be arbitrary. It had to be computable, for one thing. And it had to be useful, or what’s the point? And it was also important to me that the principles underlying the tool were easy to explain and understand. (There are some odd cases that the tool will report as incompatible, even though in fact they are compatible, because including them would have complicated the definition, and in practice you never see them.)
 
-But the flip side of this freedom to define compatibility means that it can’t capture the full, glorious, behavioral, psychological and social meaning of compatibility. It’s limited. 
+But the flip side of this freedom to define compatibility means that it can’t capture the full, glorious, behavioral, psychological and social meaning of compatibility. It’s limited.
 
 **A compatibility tool can only advise; it cannot decide. A person must ultimately decide how to use that advice.**
 
 So now that we’re free to pick a definition of compatibility, let’s do it! First, I want to say that we’re going to talk about package compatibility: whether a new instance of a package, after you've made changes to it, is compatible with an old instance. The talk will mostly be at the level of packages, because that’s the hard part, but at the end I’ll give you a definition of compatibility for modules.
 
-Anyway, here was my first attempt at a definition: if you change your package and any user code fails to compile—any possible user code—then you made an incompatible change. 
+Anyway, here was my first attempt at a definition: if you change your package and any user code fails to compile—any possible user code—then you made an incompatible change.
 
 That seems right—it sounds like something a tool should be able to tell you. It doesn't try to deal with the semantics of your change, whether you altered behavior; that’s clearly not computable. It just tells you if another tool—the compiler—could fail.
 
 But it’s far too strict.
 
-Here’s an example why. 
+Here’s an example why.
 
-old: 
+old:
 ```go
 type Point struct { X, Y int }
 ```
 
-new: 
+new:
 ```go
 type Point struct { X, Y, Z int }
 ```
 
-client: 
+client:
 ```go
 var p struct { X, Y int } = pkg.Point{}
 ```
 
 You’ll see a lot of these three-box examples in the talk. The first box shows the original code of the package. The second is the new code, the change. And the last is client code—code that’s outside the package, using it. In the client code, we’ll always call the package “pkg”.
 
-Don’t be confused by the word “client.” there's no networking here; I just mean client in the more general sense of a user. 
+Don’t be confused by the word “client.” there's no networking here; I just mean client in the more general sense of a user.
 
 In this example, the client code works with the old package, but breaks with the new one. It doesn't compile with the change. That’s why I put it in red.
 
 So what’s going on here? Well, I — the package author — added a field to an exported struct of my package. That seems like it should be a compatible change. I mean, if we can’t add a field to our structs, we are doomed, right? There aren’t going to be too many compatible API changes if this isn’t one of them. We’ve got to make this work!
 
-But it doesn't if you’re going to be strict about it, because of what the client code does. It assigns a value of my struct to a variable whose type is a copy of my original struct definition. It spoofs my struct! You might be surprised that that is legal Go, but it is. So that client compiles with the old code, but not with the new one, because of that new field Z. 
+But it doesn't if you’re going to be strict about it, because of what the client code does. It assigns a value of my struct to a variable whose type is a copy of my original struct definition. It spoofs my struct! You might be surprised that that is legal Go, but it is. So that client compiles with the old code, but not with the new one, because of that new field Z.
 
-Now the package author might be tempted to say, “You fool! I gave you a name for that struct! Why didn't you use it?” And I think that’s a perfectly reasonable response, though “fool” is a bit harsh. 
+Now the package author might be tempted to say, “You fool! I gave you a name for that struct! Why didn't you use it?” And I think that’s a perfectly reasonable response, though “fool” is a bit harsh.
 
 
-Instead of saying that every possible bit of client code has to compile for a change to be compatible, we’ll exclude some problematic constructs. We just saw one: copying a struct literal or other type literal from inside the package. 
+Instead of saying that every possible bit of client code has to compile for a change to be compatible, we’ll exclude some problematic constructs. We just saw one: copying a struct literal or other type literal from inside the package.
 
 Another one is the use of unkeyed struct literals, where you omit the field names when building a struct. Those are fine if you control the struct—if it’s in your own package, for instance. But don’t use them for structs outside your package. There's even a vet check for that one.
 
 It should come as no surprise that we have to exclude the use of the unsafe package from our definition of compile-time compatibility. For example, you can use `unsafe.Sizeof` to get the size of a struct as a compile-time constant, which basically means that any change to the size of the struct could break client code.
 
-You may be familiar with the Go 1 Compatibility Promise, which tries to define what changes to the Go language and standard library are breaking changes. It mentions a few of these same usages. 
+You may be familiar with the Go 1 Compatibility Promise, which tries to define what changes to the Go language and standard library are breaking changes. It mentions a few of these same usages.
 
 By the way, even though we’ve agreed that unkeyed struct literals aren’t our problem, it might still be nice to prevent clients from being able to write them. So here is my first compatibility tip. You can’t write an unkeyed struct literal if there are any unexported fields, so add one, as shown here.
 
@@ -174,7 +175,7 @@ Piece of cake! Looks like we’re on our way.
 
 When I started developing the tool, I basically followed the same thought process I've been taking you through. And it was at this point that I realized I was missing something fundamental.
 
-Here is the first example from the previous slide, the compatible change. I've changed the labels to be filenames, to emphasize that as far as the tool is concerned, we’re basically comparing two different packages. 
+Here is the first example from the previous slide, the compatible change. I've changed the labels to be filenames, to emphasize that as far as the tool is concerned, we’re basically comparing two different packages.
 
 So how do we match the “old” Point with the “new” Point?
 
@@ -190,7 +191,7 @@ So we need a way to determine when an old and a new type correspond. That’s th
 
 So here’s that example again, where the types don’t have the same name, but there's an alias with the same name.
 
-It looks like we need to take aliases into account. 
+It looks like we need to take aliases into account.
 
 It turns out that that is still is not enough, though.
 
@@ -210,15 +211,15 @@ So it looks like to find which types correspond, we have to consider possible re
 
 Two type names correspond if they’re the same, or you can rename one to the other without changing the API.
 
-So the good news is, that works. It’s the right definition. 
+So the good news is, that works. It’s the right definition.
 
 The bad news is that it feels a little ... hand-wavy. How do you implement it? Do you have to try every renaming?
 
-You don’t. It’s actually easy to implement. When the program compares two symbols of the same name—remember, matching by name is fine for constants, variables and functions—it asserts that the old and new type correspond. 
+You don’t. It’s actually easy to implement. When the program compares two symbols of the same name—remember, matching by name is fine for constants, variables and functions—it asserts that the old and new type correspond.
 
 If one of the types already corresponds to something else, then we have an incompatible change. Otherwise, it records the assertion and moves on.
 
-Here, it compares the old and new variable P, and basically declares that they’re compatible if point and vertex correspond. 
+Here, it compares the old and new variable P, and basically declares that they’re compatible if point and vertex correspond.
 
 Eventually the program gets to the end, after it traverses the entire API. If nothing has contradicted the assertion, then it was right—the two types correspond.
 
@@ -240,7 +241,7 @@ or
 COMPATIBILITY RULES! \m/
 
 
-There are ten rules all together. 
+There are ten rules all together.
 
 The first one is also the start of the whole comparison algorithm:
 
@@ -250,7 +251,7 @@ We match symbols by name at this stage. And the fundamental rule of compatibilit
 
 It’s worth repeating: it’s always a compatible change to add a top-level symbol to your package. You can’t possibly break old code by doing that. There's no way old code could even detect your new symbol, not even by reflection.
 
-And what if the name is present in both the old and new packages? Then the rule depends on the sort of thing we’re looking at. 
+And what if the name is present in both the old and new packages? Then the rule depends on the sort of thing we’re looking at.
 
 We’ll start with variables, because they’re easy.
 
@@ -258,7 +259,7 @@ We’ll start with variables, because they’re easy.
 
 Two variables are compatible if their types correspond. That’s it for variables. We match up package-level variables by name, and their types must correspond. Now let’s move to functions, which are a little more interesting.
 
-**Functions** 
+**Functions**
 
 Here’s the rule for functions. It’s almost as simple as variables, except for one extra bit of wiggle room: you can backwards-compatibly change a function into a variable with the same name and type. You can’t go in the other direction, though. You can’t change a variable to a function, because someone may have assigned to the variable, and you can’t assign to a function.
 
@@ -286,7 +287,7 @@ Now this is a pretty weird case, and maybe we should classify it with unkeyed st
 
 Also, you could argue that even if you ignored the compile-time problems, changing a constant’s value could have too many runtime effects to be ignored. Maybe the values are being stored persistently; changing them could result in data corruption.
 
-Better to keep it simple and report all changes in the values of constants. 
+Better to keep it simple and report all changes in the values of constants.
 
 We’ve covered variables, constants, and functions. Now let’s move on to types.
 
@@ -302,13 +303,13 @@ The compatibility rules follow from that, but before I show them to you, let’s
 
 **Method Sets**
 
-Here you see four methods on Number. Two are exported, two are unexported. 
+Here you see four methods on Number. Two are exported, two are unexported.
 
 Two are _value_ methods: the receiver is the type itself, Number.
 
 Two are _pointer_ methods: the receiver is a pointer to Number.
 
-We’ll call all the exported methods of a type its exported method set. 
+We’ll call all the exported methods of a type its exported method set.
 There's the exported method set of Number, and the exported method set of pointer to Number.
 
 Now we’re ready for the compatibility rule on defined types.
@@ -321,7 +322,7 @@ The second two rules are examples of our Fundamental Rule of Compatibility: you 
 
 What about unexported methods? You can do whatever you want with them.
 
-Every defined type T has two method sets, one for T and one for pointer to T; we have check them both. 
+Every defined type T has two method sets, one for T and one for pointer to T; we have check them both.
 
 But isn’t a method call on a value of T interchangeable with one on a pointer to T? So isn’t it compatible to switch a method on T to a method on *T?
 
@@ -344,20 +345,20 @@ We’ve talked about defined types. Let’s move on to channels.
 
 **Channels**
 
-There's only one compatible change you can make to a channel type: you can remove the direction marker. 
+There's only one compatible change you can make to a channel type: you can remove the direction marker.
 
 For example, if you started with a channel that you can only send on, you can change that to a channel that can either send or receive. That’s clearly safe, because any code that tried to receive from the channel Wouldn't have compiled in the first place.
 
 That’s all I have to say about channels.
 
-Let’s move on to interfaces. 
+Let’s move on to interfaces.
 
 **Interfaces**
 
 We’ll start with a couple of examples.
 
-IMAGE 
-Here my package has an exported interface “I”. A client has defined a type T that implements “I”. 
+IMAGE
+Here my package has an exported interface “I”. A client has defined a type T that implements “I”.
 
 When I add a method to “I”, I break the client: their type no longer implements the interface, because it’s missing method B.
 
@@ -365,14 +366,14 @@ Here’s a similar example. I start with an interface, but this time it has an u
 
 My clients cannot simply implement this interface directly. They can’t write the method “u”; it’s unexported in my package. (Writing a “u” method in their own package doesn't work.)
 
-However, they can embed the interface in a struct of their own. When a struct embeds an interface, it implements that interface, even you don’t write any methods. 
+However, they can embed the interface in a struct of their own. When a struct embeds an interface, it implements that interface, even you don’t write any methods.
 
-That may surprise you. If type T implements interface “I”, then it has a “B” method. What happens when you call B? If you create a zero value of the type, as I do here, then the undefined methods like B panic when they’re called, because the embedded field holding the interface value is nil. 
+That may surprise you. If type T implements interface “I”, then it has a “B” method. What happens when you call B? If you create a zero value of the type, as I do here, then the undefined methods like B panic when they’re called, because the embedded field holding the interface value is nil.
 
  But we defined compatibility to be about compiling, not runtime behavior. So adding method `B` to the interface is a compatible change, because the client type `T` implements the interface `I` no matter what.
 
 
-So that leads us to our rule for interfaces, which we’ll cover in two parts. 
+So that leads us to our rule for interfaces, which we’ll cover in two parts.
 
 First, if your interface has no unexported methods, then it must remain exactly the same to be backwards-compatible. You can’t add a method, and you can’t remove a method. An interesting violation of the fundamental rule of compatibility.
 
@@ -390,7 +391,7 @@ This works well if your package exports an interface that will be used by other 
 
 But if your own package is consuming the interface, then it gets you out of the compilation frying pan but puts you in the panic fire.
 
-That is, your clients’ code will compile with the new method, and the tool will say you've made a compatible change.  But if your clients pass their types into your package and you call the new method, you’ll get a panic. 
+That is, your clients’ code will compile with the new method, and the tool will say you've made a compatible change.  But if your clients pass their types into your package and you call the new method, you’ll get a panic.
 
 Here, I've added a new method B to my interface—compatibly, thanks to the unexported method “u”. But I also call it from my function F. Clients have to embed my interface to implement and use it, so they keep compiling after the change. But the program panics when they pass their old callback, which doesn't have an implementation of the B method, into my new package, which calls `B`.
 
@@ -398,7 +399,7 @@ In cases like these, you’re better off just defining a new interface that adds
 
 Here, instead of adding the new method B to Callback, I make a new type Callback2 that has B. Function F determines at runtime whether the passed callback has a B method or not, by using a type assertion.
 
-Let’s move on to structs. 
+Let’s move on to structs.
 
 **Structs**
 
@@ -427,17 +428,17 @@ After struct literals and field selection, we have comparison, the third way you
 
 The Go spec defines the word comparable to describe a type that can be used with the == or != operators, or as a map key. Basic types like numbers and strings are comparable, as are a few other types.
 
-Slices, maps and functions are not. 
+Slices, maps and functions are not.
 
 And structs? Well, it depends on the fields. A  struct type is comparable if all its fields are comparable. _All_ its fields, not just exported fields. Let’s see how that plays out.
 
-Here we have a struct that has a single field of type int. Ints are comparable, so `S` is too. 
+Here we have a struct that has a single field of type int. Ints are comparable, so `S` is too.
 
-Now we add an unexported field to S, of slice type. Slices aren’t comparable. And _voilà_, now the struct isn’t either. We’ve broken client code that compared the struct, like the line at the bottom of the slide. And we did that by adding an _unexported_ field. 
+Now we add an unexported field to S, of slice type. Slices aren’t comparable. And _voilà_, now the struct isn’t either. We’ve broken client code that compared the struct, like the line at the bottom of the slide. And we did that by adding an _unexported_ field.
 
-If this example looks familiar, it’s because I showed it at the beginning of my talk. 
+If this example looks familiar, it’s because I showed it at the beginning of my talk.
 
-That brings us to our third compatibility rule for structs: if you have a comparable struct, you have to keep it comparable. 
+That brings us to our third compatibility rule for structs: if you have a comparable struct, you have to keep it comparable.
 
 This is, in my opinion, the most surprising way to break compatibility, and it’s easy to get wrong, because it can happen when you add an unexported field. In fact, when I first ran my tool over the commits of a package I maintained, I found a single violation: several months earlier, I had added an unexported, non-comparable field to a previously comparable struct, breaking compatibility. Luckily, no one complained.
 
@@ -457,7 +458,7 @@ As the revised code here shows, if the type has a name, and the client uses the 
 
 Like I said, this applies to all the type rules we talked about. So for example, it’s okay to add a field to a named struct type, but not an anonymous one.
 
-That seems unfortunate, not to say arbitrary. Why require the types to be named? 
+That seems unfortunate, not to say arbitrary. Why require the types to be named?
 
 Well, like I said, it’s a simplification. Let’s think a bit what would happen if we considered the change on the right to be compatible.
 
@@ -473,11 +474,11 @@ In the spirit of Go, I chose to keep it simple: you have to name a type to chang
 
 And if you think about it, there's something intuitively satisfying about that. The name is the fixed point around which the changes happen.
 
-There is one more compatibility rule. 
+There is one more compatibility rule.
 
 This one isn’t about individual types, but how they fit together in the package.
 
-Here we have a type T that implements an interface “I”. 
+Here we have a type T that implements an interface “I”.
 
 We then change T by removing an unexported method. That is a compatible change to T; you can do anything you want with unexported methods.
 
@@ -495,7 +496,7 @@ Happily, the package compatibility rules we just covered do most of the work. We
 
 We only care about packages you can see outside the module, so internal packages don’t matter.
 
-There's one wrinkle, an interesting violation of the Fundamental Rule of Compatibility: you can remove a package from a module and maintain compatibility, as long as you move it to another module and make sure that your original module requires that other module. In order for the package import path to stay the same, that other module must be nested inside the first. 
+There's one wrinkle, an interesting violation of the Fundamental Rule of Compatibility: you can remove a package from a module and maintain compatibility, as long as you move it to another module and make sure that your original module requires that other module. In order for the package import path to stay the same, that other module must be nested inside the first.
 
 Let’s look at an example of that.
 
@@ -511,13 +512,13 @@ There are sub-directories “b” and “c”, also Go packages. All together, t
 
 Here, we’ve split package “a/b” off into its own module, by adding a go.mod file to the “b” directory. We’ll call a/b a nested module.
 
-This is perfectly valid, but to make it work you’ll need to do two things, represented by the arrows. 
+This is perfectly valid, but to make it work you’ll need to do two things, represented by the arrows.
 
 First, you have to make module “a” require module “a/b”. That’s what I mentioned a couple of slides ago. It’s required for the new module “a” to be backwards-compatible with the old: it ensures that any uses of module “a” will continue to get package “a/b”.
 
 The second thing you have to do is make module “a/b” require module “a”—specifically, this version of “a,” the one that has “b” split off.  If you don’t do that and you mix module “a/b” with an older version of “a”, you’ll get an error that package “a/b” is duplicated.
 
-To understand why this works—why you can compatibly remove a package from a module—take a look at the list of packages on the right. They’re the same as they were before the split. Your code—you know, the thing you actually compile—only cares about packages, not modules. It just imports packages by import paths. Modules are about delivering and versioning code, not compiling it. 
+To understand why this works—why you can compatibly remove a package from a module—take a look at the list of packages on the right. They’re the same as they were before the split. Your code—you know, the thing you actually compile—only cares about packages, not modules. It just imports packages by import paths. Modules are about delivering and versioning code, not compiling it.
 
 Now that I've told you about nested modules, I have one piece of advice: avoid them if you can. They can be tricky to work with.
 

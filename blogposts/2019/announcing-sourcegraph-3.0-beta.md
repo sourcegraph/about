@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 3.0 beta is now available'
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2019-01-15T05:59-06:00
 tags: [

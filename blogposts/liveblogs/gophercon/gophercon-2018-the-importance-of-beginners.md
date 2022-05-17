@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - The Importance of Beginners'
-author: 'Ryan Blunden for the GopherCon Liveblog'
+authors:
+  - name: Ryan Blunden for the GopherCon Liveblog
 publishDate: 2018-08-30T00:00-07:00
 tags: [
   "gophercon"

@@ -1,7 +1,7 @@
 ---
 title: "Remote software development made easier"
 authors:
-  - name: Stephen Gutekanst,
+  - name: Stephen Gutekanst
     url: https://handbook.sourcegraph.com/team/#stephen-gutekanst
   - name: Vanesa Ortiz
     url: https://handbook.sourcegraph.com/team/#vanesa-ortiz

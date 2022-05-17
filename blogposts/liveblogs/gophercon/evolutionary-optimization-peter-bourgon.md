@@ -1,6 +1,7 @@
 ---
 title: 'Evolutionary optimization'
-author: 'Peter Bourgon'
+authors:
+  - name: Peter Bourgon
 publishDate: 2017-07-14T00:00-07:00
 tags: [
   "gophercon"

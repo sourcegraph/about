@@ -1,6 +1,7 @@
 ---
 title: ' Getting buy-in: a recipe for graphQL adoption'
-author: '@bdougieYO'
+authors:
+  - name: @bdougieYO
 publishDate: 2017-10-25T00:00-07:00
 tags: [
   "graphql"

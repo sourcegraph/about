@@ -1,7 +1,8 @@
 ---
 title: 'Using shard merging to tackle the long tail of tiny and stale repos'
 description: 'Sourcegraph is on track to grow its index of open source repositories significantly, with the aim of indexing the OSS universe. This post dives into the motivations behind introducing shard merging to our search backend.'
-author: Stefan Hengl
+authors:
+  - name: Stefan Hengl
 publishDate: 2021-11-09T10:00-07:00
 tags: [blog]
 slug: tackling-the-long-tail-of-tiny-repos-with-shard-merging

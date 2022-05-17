@@ -1,6 +1,7 @@
 ---
 title: 'Writing Network Clients in Go: The Design and Implementation of the NATS Client'
-author: 'Waldemar Quevedo'
+authors:
+  - name: Waldemar Quevedo
 publishDate: 2017-07-14T00:00-07:00
 tags: [
   "gophercon"

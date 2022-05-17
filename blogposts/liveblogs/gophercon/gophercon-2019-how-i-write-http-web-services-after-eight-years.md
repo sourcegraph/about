@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - How I write HTTP web services after eight years"
 description: "A look at how Mat Ryer builds web services after doing so for the past eight years. Extremely practical, tried and tested patterns that everybody can start using today."
-author: Kenigbolo Meya Stephen for the GopherCon 2019 Liveblog
+authors:
+  - name: Kenigbolo Meya Stephen for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-14:55
 tags: [
 gophercon
@@ -41,7 +42,7 @@ How quickly can you understand the code when you read through it? How quickly ca
 
 Code should be boring here refers to boring in the sense that everything about the codebase is obvious. It’s not about writing fancy but about writing for others to understand. It is important that we understand the code might be used by people with little or no experience.
 
-* Self Similar code 
+* Self Similar code
 
 Writing code that is similar to other code in the codebase helps to increase familiarity for anyone who has to work on the code.
 
@@ -108,7 +109,7 @@ s.router.ServeHTTP(w, r)
 
 The goal here is to pass execution to the router. Ideally you should never put logic here. If you have a desire to put any kind of logic in here then consider moving it into a middleware file.
 
-### Default Routes file 
+### Default Routes file
 
 ```go
 package main
@@ -125,7 +126,7 @@ A single route file that maps out your different routing services is always usef
 ### Handlers hang off the server
 
 ```go
-func (s *server) handleSomething() http.HandlerFunc { 
+func (s *server) handleSomething() http.HandlerFunc {
   // put some programming here
 }
 ```
@@ -151,11 +152,11 @@ It is adviceable to group the names based on responsibility. It makes it easier 
 func (s *server) handleSomething() http.HandlerFunc {
   thing := prepareThing()
   return func(w http.ResponseWriter, r *http.Request) {
-      // use thing        
+      // use thing
   }
 }
 ```
-The handler gives you a closure environment where you can If you have your handler specific setup. 
+The handler gives you a closure environment where you can If you have your handler specific setup.
 
 ### Take arguments for handler-specific dependencies
 
@@ -302,7 +303,7 @@ The `httptest` package should be your best friend and your default go to package
 
 ## Summary
 
-This talk by Matt Ryer is based on a blog post he authored. The blogpost which can be found [here]( https://medium.com/statuscode/37c208122831) went viral. It is quite popular in the go community and definitely worth a read. The post was shared on reddit and resulted in a lot of questions, feedback as well as suggestions. This talk is a culmination of what he has learnt since that time. It is focused on the philosophy behind his thinking for his preferred approach as opposed to a hardline on some specific ruleset. 
+This talk by Matt Ryer is based on a blog post he authored. The blogpost which can be found [here]( https://medium.com/statuscode/37c208122831) went viral. It is quite popular in the go community and definitely worth a read. The post was shared on reddit and resulted in a lot of questions, feedback as well as suggestions. This talk is a culmination of what he has learnt since that time. It is focused on the philosophy behind his thinking for his preferred approach as opposed to a hardline on some specific ruleset.
 
 He emphasizes that tech leads, engineering managers, CTO's, etc. should strive to create a buffer where engineers are allowed to trynew things within a reasonable scope. This talk isn't one to be followed blindly as different teams might have different needs and usecases/edgecases.
 

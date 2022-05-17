@@ -4,7 +4,7 @@ externalTitle: 'Iterative software development and how to do it better'
 description: From "Automation" to "Campaigns" to "Batch Changes", this is the story of how we built (and rebuilt) our latest code search product, Batch Changes, and the lessons we learned along the way.
 externalDescription: Iterative software development is full of pitfalls but by examining a few illustrative pull requests, you can learn to avoid some of the most common mistakes.
 authors:
-  - name: Thorsten Ball,
+  - name: Thorsten Ball
     url: https://twitter.com/thorstenball
 publishDate: 2021-04-15T18:00+02:00
 tags: [blog]

@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - The Scheduler Saga'
-author: 'Keegan Carruthers-Smith for the GopherCon Liveblog'
+authors:
+  - name: Keegan Carruthers-Smith for the GopherCon Liveblog
 publishDate: 2018-08-28T00:00-06:00
 tags: [
   "gophercon"

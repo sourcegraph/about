@@ -1,6 +1,7 @@
 ---
 title: 'Extending the Limits of GraphQL - Syrus Akbary'
-author: 'Eric Baer (@ebaerbaerbaer)'
+authors:
+  - name: Eric Baer (@ebaerbaerbaer)
 publishDate: 2017-10-25T00:00-07:00
 tags: [
   "graphql"

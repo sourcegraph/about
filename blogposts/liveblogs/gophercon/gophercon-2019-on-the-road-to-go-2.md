@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - On the road to Go 2"
 description: "We're on the road to Go 2. But where exactly are we? Where are we headed? Come find out."
-author: Alan Braithwaite for the GopherCon 2019 Liveblog
+authors:
+  - name: Alan Braithwaite for the GopherCon 2019 Liveblog
 publishDate: 2019-07-25T00:00-09:10
 tags: [
   gophercon

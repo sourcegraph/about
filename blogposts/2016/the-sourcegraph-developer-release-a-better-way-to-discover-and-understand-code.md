@@ -1,6 +1,5 @@
 ---
 title: 'The Sourcegraph developer release: A better way to discover and understand code'
-author: 'null'
 publishDate: 2016-05-30T00:00-07:00
 tags: [
   "blog"

@@ -1,7 +1,7 @@
 ---
 title: "Optimizing a code intelligence indexer"
 authors:
-  - name: Eric Fritz,
+  - name: Eric Fritz
     url: https://eric-fritz.com
 publishDate: 2020-09-06T18:00-07:00
 tags: [blog]

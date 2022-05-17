@@ -1,7 +1,7 @@
 ---
 title: "Sourcegraph raises $50M Series C round led by Sequoia"
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2020-12-03T05:00-07:00
 tags: [

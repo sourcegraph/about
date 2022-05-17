@@ -1,7 +1,8 @@
 ---
 title: 'Introducing search contexts'
 description: "Version contexts and repogroups are a powerful way to search across multiple repositories. To expand this functionality, we're releasing search contexts in Sourcegraph 3.33."
-author: Rok Novosel, Ben Venker
+authors:
+  - name: Rok Novosel, Ben Venker
 publishDate: 2021-10-22T10:00-07:00
 tags: [blog]
 slug: introducing-search-contexts

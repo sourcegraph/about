@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Two Go programs, three different profiling techniques, in 50 minutes"
 description: "Go, being a relatively recent statically typed, compiled language, is known to produce efficient programs. But writing a program in Go is not sufficient for good performance."
-author: Anton Velikanov for the GopherCon 2019 Liveblog
+authors:
+  - name: Anton Velikanov for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-14:55
 tags: [
   gophercon
@@ -85,7 +86,7 @@ Check for an EOF and a space - so we can count for words and also check for lett
 Let's build and run this program:
 
 ```
-go build 
+go build
 go run main.go
 ```
 
@@ -126,15 +127,15 @@ run this program.
 
 pprof - with pprof the program runs a bit slower, but the benefit is that we have now a profile
 
-go tool pprof -http:8080 
+go tool pprof -http:8080
 
 we see here a callstack. We sample callstack of active goroutines and check the goroutines that do the most of work.
 
 Here is what is actually our program:
 
-The biggest contributor: syscall.syscall. Is it too slow? It is using all the time in our program, why? Too many syscalls. Its not that syscall is slow, but all the reading operations are unbuffered. 
+The biggest contributor: syscall.syscall. Is it too slow? It is using all the time in our program, why? Too many syscalls. Its not that syscall is slow, but all the reading operations are unbuffered.
 
-We don't know for how long the underlying goroutine 
+We don't know for how long the underlying goroutine
 If the syscall returns fast enough
 
 We fix it - we buffer.
@@ -160,7 +161,7 @@ reader interface - we don't know what should be passed here in readbyte - all th
 
 Let reuse the buffer instead allocating it every time on a stack.
 
-var buf[1] 
+var buf[1]
 
 The allocations are tinny now!
 
@@ -196,7 +197,7 @@ go tool trace trace.out
 
 That is a JavaScript debugger in Chrome.
 What we can see in this graph:
-Memory allocations are involved here. 
+Memory allocations are involved here.
 We can get the stack trace when we click.
 Problems:
  - Single threaded while composing the image.
@@ -204,7 +205,7 @@ Problems:
 We see that the main.fillPixel function was on the CPU the most when pprof captured the stack.
 
 
-Solution: 
+Solution:
  - Compute every pixel in parallel
 
 ```
@@ -302,9 +303,9 @@ Boost the performance of the code - nearly 4 times!
 For this algorithm - more CPU's - better! If we have 1000 cores we can solve each row at the same. If we have  1000000 cores - we can compute every pixel in parallel.
 But we spend 50% of writing the image. But that's a sequential operation.
 
-The speed is limited by serial part of an application that can not be paralleled. 
+The speed is limited by serial part of an application that can not be paralleled.
 
 Think about your own programs!
 How much of the work can be done in parallel?
 
-The key is to make effectively all of the work in parallel. 
+The key is to make effectively all of the work in parallel.

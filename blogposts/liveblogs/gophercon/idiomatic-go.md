@@ -1,6 +1,7 @@
 ---
 title: 'Idiomatic Go'
-author: 'Edward Muller'
+authors:
+  - name: Edward Muller
 publishDate: 2017-07-14T00:00-07:00
 tags: [
   "gophercon"

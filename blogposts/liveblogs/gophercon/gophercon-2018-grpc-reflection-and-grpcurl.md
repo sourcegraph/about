@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - gRPC reflection and grpcurl'
-author: 'Alan Shreve for the GopherCon Liveblog'
+authors:
+  - name: Alan Shreve for the GopherCon Liveblog
 publishDate: 2018-08-29T00:00-06:00
 tags: [
   "gophercon"

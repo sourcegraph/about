@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Controlling the go runtime"
 description: "Sometimes we need to tell the go runtime what to do. This talk explains how to control the runtime, why we should, and describes two new ways to control it better."
-author: Sue Spence for the GopherCon 2019 Liveblog
+authors:
+  - name: Sue Spence for the GopherCon 2019 Liveblog
 publishDate: 2019-07-25T00:00-11:55
 tags: [
   gophercon
@@ -25,7 +26,7 @@ Sometimes we need to tell the go runtime what to do. This talk explains how to c
 
 It's a library used by Go programs while they are executing. It controls things like:
 - the garbage collector, managing memory
-- the goroutine scheduler 
+- the goroutine scheduler
 
 ![Presenter Patrick Hawley](/gophercon-2019/gophercon-2019-controlling-go-runtime-presenter.jpg)
 
@@ -39,7 +40,7 @@ Some functions that can be used to control the garbage collector:
 
 Some functions that can be used to control the scheduler:
 
-- GOMAXPROCS(n) - set max simultaneously executing CPU's 
+- GOMAXPROCS(n) - set max simultaneously executing CPU's
 - Goexit() - terminate the calling goroutine
 - Gosched() - yield processor allowing other goroutines to run
 - LockOSThread()/UnlockOSThread() - wire/unwire goroutine to current OS thread
@@ -78,7 +79,7 @@ Gosched() yields processor to allow other goroutines to run. This can be put in 
 
 LockOSThread()/UnlockOSThread()
 
-Thread local state is used by some libs eg Cocoa, OpenGL, libSDL. 
+Thread local state is used by some libs eg Cocoa, OpenGL, libSDL.
 
 GC() is useful for testing, improving performance. For example checking the performance of allocating a slice of integers vs a slice of pointers to int. There are garbage collection implications to handling of values vs pointers so runtime directives can be used to benchmark them.
 
@@ -102,7 +103,7 @@ Proposals:
 
 ![GoSchedNext Colors](/gophercon-2019/gophercon-2019-controlling-go-runtime-slide2.jpg)
 
-2) GoAffinity() - requires or suggests that all goroutines of a certain "color" execute on the same CPU.  
+2) GoAffinity() - requires or suggests that all goroutines of a certain "color" execute on the same CPU.
 Reasons:
 
   * avoid CPU L1/L2 cache misses
@@ -115,17 +116,17 @@ Reasons:
 
 #### Or, Better Not Go There?
 
-a) We should never control the Go runtime directly  
-b) Controlling the runtime is bad programming  
+a) We should never control the Go runtime directly
+b) Controlling the runtime is bad programming
 c) ids for Go routines?? Never! Color is just an alias for ids..
 d) Let's just make the runtime better
 
 #### But
 
-a) Performance and testing are really necessary items that runtime helps with  
-b) User space ought to be fair game for us to control. It's not the kernel, which is legitimately off-limits  
-Let users have tools, empower them  
-c) Use types, not tokens. Also, why not be open to ids?  
+a) Performance and testing are really necessary items that runtime helps with
+b) User space ought to be fair game for us to control. It's not the kernel, which is legitimately off-limits
+Let users have tools, empower them
+c) Use types, not tokens. Also, why not be open to ids?
 d) YES, make the runtime better. But also give programmers more options.
 
 Main takeaway:

@@ -1,6 +1,7 @@
 ---
 title: 'Simulating a Real-World System in Go'
-author: 'Sameer Ajmani (speaker)'
+authors:
+  - name: Sameer Ajmani (speaker)
 publishDate: 2017-11-06T10:55+01:00
 tags: [
   "dotGo"

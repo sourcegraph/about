@@ -1,7 +1,7 @@
 ---
 title: 'Powerful code search for Bitbucket Server'
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2018-03-14T00:00-07:00
 tags: [

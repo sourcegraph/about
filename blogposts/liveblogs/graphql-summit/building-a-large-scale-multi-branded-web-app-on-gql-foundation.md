@@ -1,6 +1,7 @@
 ---
 title: 'Building a Large-Scale Multi-Branded Web App on GQL Foundation'
-author: '@attfarhan'
+authors:
+  - name: @attfarhan
 publishDate: 2017-10-26T18:00+02:00
 tags: [
   "graphql"

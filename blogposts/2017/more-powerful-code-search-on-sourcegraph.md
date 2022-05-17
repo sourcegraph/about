@@ -1,7 +1,7 @@
 ---
 title: 'More powerful code search on Sourcegraph'
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2017-11-01T00:00-07:00
 tags: [

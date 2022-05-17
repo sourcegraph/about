@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Go, pls stop breaking my editor"
 description: "The Go community has built many amazing tools to improve the Go developer experience. However, when a maintainer disappears or a new Go release wreaks havoc, the Go development experience becomes frustrating and complicated. This talk will cover the details behind a new tool to solve these issues: gopls (pronounced 'go please'). This tool is currently in development by the Go team and community, and it will ultimately serve as the backend for your Go editor."
-author: Vanessa Nicole Naff for the GopherCon 2019 Liveblog
+authors:
+  - name: Vanessa Nicole Naff for the GopherCon 2019 Liveblog
 publishDate: 2019-07-25T00:00-11:20
 tags: [
   gophercon
@@ -137,7 +138,7 @@ It is:
 - Collaborated on by the Go team and Go community
 - Pronounced "go please", not "goppels"
 - In alpha, so no stable release yet
-- A long-running server with a memory cache, so much faster 
+- A long-running server with a memory cache, so much faster
 
 Its speed doesn't degrade with modules!
 

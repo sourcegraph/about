@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - Go for Information Displays'
-author: 'Alan Braithwaite for the GopherCon Liveblog'
+authors:
+  - name: Alan Braithwaite for the GopherCon Liveblog
 publishDate: 2018-08-28T00:00-06:00
 tags: [
   "gophercon"

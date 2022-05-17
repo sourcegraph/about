@@ -4,7 +4,7 @@ description: 'Engineers are anxious and continuous delivery promises to help. Bu
 externalTitle: 'A continuous delivery mindset is the antidote to release anxiety'
 externalDescription: 'Continuous delivery appears to be a solution to release anxiety but the reality is more complex. With a mindset change, however, even companies using on-prem business models can learn from continuous delivery.'
 authors:
-  - name: Nick Moore,
+  - name: Nick Moore
     url: https://twitter.com/nickwritesit
 published: true
 publishDate: 2021-11-08T10:00-07:00

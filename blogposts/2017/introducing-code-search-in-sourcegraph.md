@@ -1,7 +1,7 @@
 ---
 title: 'Introducing code search in Sourcegraph'
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2017-04-07T00:00-07:00
 tags: [

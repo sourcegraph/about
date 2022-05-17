@@ -1,6 +1,7 @@
 ---
 title: "Search across multiple revisions of the same repository"
-author: Keegan Carruthers-Smith
+authors:
+  - name: Keegan Carruthers-Smith
 publishDate: 2020-07-20T09:00-07:00
 tags: [blog]
 slug: search-multiple-revisions

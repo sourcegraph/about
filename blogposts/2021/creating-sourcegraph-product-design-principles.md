@@ -2,7 +2,7 @@
 title: 'How we created Sourcegraph’s product design principles'
 externalTitle: 'Product design principles at Sourcegraph'
 authors:
-  - name: Quinn Keast,
+  - name: Quinn Keast
     url: https://twitter.com/quinnkeast
 description: 'Gut instinct doesn’t scale. Here’s how our rapidly growing all-remote product and design teams collaborated asynchronously to define Sourcegraph’s inclusive product design principles to help us scale consistently.'
 externalDescription: 'Gut instinct doesn’t scale. Learn how an asynchronous, fully remote company built its product design principles.'

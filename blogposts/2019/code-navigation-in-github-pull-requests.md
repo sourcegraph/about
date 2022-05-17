@@ -1,7 +1,7 @@
 ---
 title: Code navigation in GitHub pull requests
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2019-12-09T10:00-08:00
 tags: [blog]

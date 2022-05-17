@@ -1,7 +1,7 @@
 ---
 title: 'The pain of code review: how different teams manage, scale, and perform code reviews'
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2016-05-30T00:00-07:00
 tags: [

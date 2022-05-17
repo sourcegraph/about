@@ -1,6 +1,7 @@
 ---
 title: 'An Introduction to go tool trace'
-author: 'Rhys Hiltner'
+authors:
+  - name: Rhys Hiltner
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

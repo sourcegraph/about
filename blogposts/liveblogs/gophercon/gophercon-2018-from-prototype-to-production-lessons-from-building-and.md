@@ -1,6 +1,7 @@
 ---
 title: "GopherCon 2018 - From Prototype to Production: Lessons from Building and Scaling Reddit's Ad Serving Platform with Go"
-author: 'Farhan Attamimi for the GopherCon Liveblog'
+authors:
+  - name: Farhan Attamimi for the GopherCon Liveblog
 publishDate: 2018-08-29T00:00-06:00
 tags: [
   "gophercon"

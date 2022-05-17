@@ -1,6 +1,7 @@
 ---
 title: 'Encrypting the Internet with Go - Tutorial'
-author: 'Filippo Valsorda'
+authors:
+  - name: Filippo Valsorda
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

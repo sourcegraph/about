@@ -1,7 +1,7 @@
 ---
 title: The home offices of Sourcegraph
 authors:
-  - name: Thorsten Ball,
+  - name: Thorsten Ball
     url: https://twitter.com/thorstenball
 publishDate: 2020-03-27T18:00+02:00
 tags: [ blog, remote ]

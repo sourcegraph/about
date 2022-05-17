@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - Demystifying Binary Search Tree Algorithms'
-author: 'Geoffrey Gilmore for the GopherCon Liveblog'
+authors:
+  - name: Geoffrey Gilmore for the GopherCon Liveblog
 publishDate: 2018-08-30T00:00-07:00
 tags: [
   "gophercon"

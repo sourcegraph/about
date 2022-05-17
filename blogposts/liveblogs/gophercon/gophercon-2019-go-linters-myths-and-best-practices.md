@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Go Linters: Myths and best practices"
 description: "Go contains over 50 different linters. For linter adepts, I'll reveal how to use their full power, as well as little-known tips and tricks to get ahead. For linters beginners, this presentation explains what they are, the benefit of their use, and the best way to introduce them into a workflow."
-author: John Reese for the GopherCon 2019 Liveblog
+authors:
+  - name: John Reese for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-14:00
 tags: [
   gophercon
@@ -34,7 +35,7 @@ Both **go vet** and **go-critic** were given as examples.
 
 **go vet** identified an issue where a call to `cancel()` prematurely exited out of a routine, and **go-critic** was able to identify a case in which a comparison operator was used to compare a value to itself.
 
-## Myth #2 
+## Myth #2
 
 > Linters do more harm than good
 
@@ -94,7 +95,7 @@ Running `go get` in your CI to get the linters could be problematic if a version
 
 ## Automate!
 
-Lastly, as these tools really do not need any human intervention, linting should be an automated step in your CI process. 
+Lastly, as these tools really do not need any human intervention, linting should be an automated step in your CI process.
 
 Denis took this even furter by introducing tools like **ReviewDog** and **SonarQube** that have the capability of replying directly to the originating pull request. This lets the developer immediately, and more importantly, easily figure out the problems with his code. There's no need to go digging through logs!
 

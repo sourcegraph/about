@@ -1,7 +1,7 @@
 ---
 title: "Why code search is still needed for monorepos."
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2020-11-13
 tags: [blog]

@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - Micro-optimizing Go Code'
-author: 'Matthew Jaffee for the GopherCon Liveblog'
+authors:
+  - name: Matthew Jaffee for the GopherCon Liveblog
 publishDate: 2018-08-29T00:00-06:00
 tags: [
   "gophercon"

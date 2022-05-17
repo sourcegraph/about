@@ -1,6 +1,7 @@
 ---
 title: 'Self Deploying Kubernetes Applications'
-author: 'Kelsey Hightower'
+authors:
+  - name: Kelsey Hightower
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

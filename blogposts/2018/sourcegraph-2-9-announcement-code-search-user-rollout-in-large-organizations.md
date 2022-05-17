@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 2.9: Scaling code search and user rollout in large organizations'
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2018-06-19T10:30-07:00
 tags: [

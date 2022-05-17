@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2019 - Get Going with WebAssembly'
-author: 'Alex Boten for the GopherCon Liveblog'
+authors:
+  - name: Alex Boten for the GopherCon Liveblog
 publishDate: 2019-07-25T00:00-11:55
 tags: [
   gophercon
@@ -131,7 +132,7 @@ func main() {
 
 ##### Go test
 
-You might think it would be hard to run tests, but there are already a couple of options for WebAssempbly test runners. The standard library has go_wasm_js_exec for node and [wasmbrowser]( https://github.com/agnivade/wasmbrowsertest) supports testing the code using the browser.  
+You might think it would be hard to run tests, but there are already a couple of options for WebAssempbly test runners. The standard library has go_wasm_js_exec for node and [wasmbrowser]( https://github.com/agnivade/wasmbrowsertest) supports testing the code using the browser.
 
 #### Web frameworks
 

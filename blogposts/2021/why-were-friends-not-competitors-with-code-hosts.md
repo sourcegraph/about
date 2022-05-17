@@ -1,7 +1,7 @@
 ---
 title: "Why we're friends, not competitors, with code hosts"
 authors:
-  - name: Quinn Slack,
+  - name: Quinn Slack
     url: https://twitter.com/sqs
 description: Some people assume that Sourcegraph competes with GitHub, GitLab, Bitbucket, and other code hosts. This is wrong! In fact, we need code hosts to exist, and code hosts benefit from the existence of a good, vendor-neutral code search tool. Here's why.
 publishDate: 2021-04-06T10:00-07:00

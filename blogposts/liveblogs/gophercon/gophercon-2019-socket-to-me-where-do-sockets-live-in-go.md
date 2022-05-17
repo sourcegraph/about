@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Socket to me: Where do Sockets live in Go?"
 description: "Have you ever used HTTP server functions surfaced by the net/http package? Or gone down a couple of network levels and used TCP and UDP Listeners? Sockets are the secret sauce underlying these networking tools in Go. While Go abstracts away sockets, there are circumstances where knowing about sockets and how to configure them is instrumental. This talk will explain the fundamentals of socket-level programming in Go, and how and where to use it."
-author: Dawson Mortenson for the GopherCon 2019 Liveblog
+authors:
+  - name: Dawson Mortenson for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-11:55
 tags: [
   gophercon
@@ -42,7 +43,7 @@ Server (Alice):
 
 Client (Bob):
 * _socket()_ -> The client also needs to create a listening socket. The client needs a telephone in order to make a call.
-* _connect()_ -> Establishes a connection to the server like making a phone call to another number.  
+* _connect()_ -> Establishes a connection to the server like making a phone call to another number.
 
 Now they can _write()_ and _read()_ back and forth like having a conversation over a phone.
 Once the conversation is ended _close()_ will terminate the connection similar to hanging up the phone.
@@ -57,7 +58,7 @@ net.Listen() takes care of setting up the socket _socket()_, binding to the desi
 
 ##### Datastream Sockets - UDP
 UDP, on the other hand, does NOT guarantee the delivery of packets OR the order in which the packets are delivered.
-* Statelsss 
+* Statelsss
 * No reliability guarantee, no ordered delivery
 
 UDP is like sending a piece of mail through the post office.
@@ -75,20 +76,20 @@ This method of communication continues until it is no longer needed at which poi
 
 In Go:
 
-net.ListenPacket() encapsulates the _socket()_ and _bind()_ syscalls returning a net.UDPConn struct that is used to read from and write to the socket. The net.UDPConn implements the PacketConn interface which provides encapsulations for _recvfrom()_, _sendto()_, and _close()_ as ReadFrom(), WriteTo(), and close(), respectively. 
+net.ListenPacket() encapsulates the _socket()_ and _bind()_ syscalls returning a net.UDPConn struct that is used to read from and write to the socket. The net.UDPConn implements the PacketConn interface which provides encapsulations for _recvfrom()_, _sendto()_, and _close()_ as ReadFrom(), WriteTo(), and close(), respectively.
 
 ![Datastream Sockets](/gophercon-2019/gophercon-2019-datastream-diagram.png "Datastream communication is like communicating through postal mail")
 
 # Practical Socket Applications
 ##### Different Sockets
-An example of an application that needs to run multiple sockets on the same address is a DNS resolver. This is because DNS can be run over both TCP and UDP. 
+An example of an application that needs to run multiple sockets on the same address is a DNS resolver. This is because DNS can be run over both TCP and UDP.
 
-5-tuple socket matching can be used to match traffic to the correct socket on a machine. The 5-tuple consists of the protocol, destination ip, destination port, source ip, and source port. 
+5-tuple socket matching can be used to match traffic to the correct socket on a machine. The 5-tuple consists of the protocol, destination ip, destination port, source ip, and source port.
 
 Much like how a DSL internet connection and telephone are able to use the same line without colliding by using different frequencies to ensure that internet browsing and phone calls can occur simultaneously, concurrent UDP and TCP packets are on different frequencies and are able to reach their intended, distinct sockets.
 
 ##### Same Sockets
-Cloudflare's Spectrum, a cloudflare proxy that allows customers to put TCP and UDP services behind cloudflare’s CDN, and Roughtime, a secure time protocol server, had a potential conflict if a customer wanted to run a UDP service on port 2002. Any attempts to create a UDP on port 2002 would fail due to the port collision. 
+Cloudflare's Spectrum, a cloudflare proxy that allows customers to put TCP and UDP services behind cloudflare’s CDN, and Roughtime, a secure time protocol server, had a potential conflict if a customer wanted to run a UDP service on port 2002. Any attempts to create a UDP on port 2002 would fail due to the port collision.
 
 Socket behavior can be modified through socket options. One such option is SO_REUSEADDR, it enables the ability for multiple sockets to bind to and share the same address. This option fixed the port collision issues Spectrum and Roughtime were facing.
 
@@ -106,7 +107,7 @@ The syscall package is deprecated, but there are still parts of the go standard 
 ##### Other Uses of Socket Options:
 * LBLoad balancing between worker processes reading from a shared queue
 * Running parallel ingress queues
-* Implementing packet filtering via BPF 
+* Implementing packet filtering via BPF
 
 ## Takeaways
 Sockets are super awesome and by digging a little deeper you can easily unlock the advanced networking capabilities of Sockets and their use in Go applications.
