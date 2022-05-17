@@ -1,6 +1,7 @@
 ---
 title: 'Code intelligence for 13 more languages, with first-class LSP support'
-author: 'Geoffrey Gilmore'
+authors:
+  - name: Geoffrey Gilmore
 publishDate: 2018-05-22T09:00-07:00
 tags: [
   "blog"

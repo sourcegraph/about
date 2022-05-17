@@ -1,6 +1,7 @@
 ---
 title: '5 short stories from open source: pains in gains'
-author: 'Lynn Langit'
+authors:
+  - name: Lynn Langit
 publishDate: 2016-09-14T00:00-07:00
 tags: [
   "blog"

@@ -1,6 +1,8 @@
 ---
 title: 'GraphQL: Client-Driven Development'
-author: '@beyang'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-10-25T05:53-07:00
 tags: [
   "graphql"

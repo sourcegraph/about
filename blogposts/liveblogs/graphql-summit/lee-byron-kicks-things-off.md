@@ -1,6 +1,8 @@
 ---
 title: 'Lee Byron kicks things off'
-author: '@beyang'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-10-25T00:00-07:00
 tags: [
   "graphql"

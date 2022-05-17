@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph 3.13: Interactive search mode, structural search toggle, and campaigns with custom code execution"
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2020-02-20T10:00-07:00
 tags: [
   blog

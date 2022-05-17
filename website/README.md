@@ -37,7 +37,11 @@ Blog posts live in [`../blogposts`](../blogposts) directory. The following front
 ```
 ---
 title: Example blog post
-author: Your Name
+authors:
+  - name: Author-1 Name
+    url: Author-1-url.com
+  - name: Author-2 Name
+    url: Author-2-url.com
 publishDate: yyyy-mm-ddT00:00-07:00
 tags: [
   blog

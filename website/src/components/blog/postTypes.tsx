@@ -33,7 +33,6 @@ export interface Post {
         heroImage?: string
         authors?: Author[]
         author?: string
-        authorUrl?: string
         tags?: string[]
         changelogItems?: {
             url: string

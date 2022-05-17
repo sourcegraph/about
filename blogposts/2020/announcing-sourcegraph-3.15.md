@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph 3.15: Campaigns beta available, GitHub repository permissions, experimental AND/OR operators, and improved observability"
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2020-04-20T10:00-07:00
 tags: [
   blog

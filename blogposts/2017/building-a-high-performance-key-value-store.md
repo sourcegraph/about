@@ -1,6 +1,7 @@
 ---
 title: 'Building a High Performance Key/Value Store'
-author: 'Marty Schoch'
+authors:
+  - name: Marty Schoch
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

@@ -82,7 +82,6 @@ export const pageQuery = graphql`
                     url
                 }
                 author
-                authorUrl
                 tags
                 publishDate(formatString: "MMMM D, YYYY")
                 slug

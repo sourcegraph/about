@@ -1,6 +1,7 @@
 ---
 title: 'Sourcegraph 2.10: Smoother tooltips, rendered architecture diagrams, and better repository syncing'
-author: 'Geoffrey Gilmore'
+authors:
+  - name: Geoffrey Gilmore
 publishDate: 2018-08-01T09:00-07:00
 tags: [
   "blog"

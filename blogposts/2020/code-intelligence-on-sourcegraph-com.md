@@ -1,6 +1,7 @@
 ---
 title: 'Code intelligence on sourcegraph.com'
-author: 'Michael Fromberger'
+authors:
+  - name: Michael Fromberger
 publishDate: 2020-04-14T00:00-07:00
 tags: [
   "blog"

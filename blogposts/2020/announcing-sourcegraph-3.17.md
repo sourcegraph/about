@@ -1,6 +1,7 @@
 ---
 title: "Sourcegraph 3.17: Faster and automatic precise code intelligence, and AND/OR queries for searching file contents"
-author: Adam Herzog
+authors:
+  - name: Adam Herzog
 publishDate: 2020-06-20T10:00-07:00
 tags: [
   blog

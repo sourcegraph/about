@@ -1,6 +1,8 @@
 ---
 title: 'Announcing Sourcegraph 2.13'
-author: 'Nick Snyder'
+authors:
+  - name: Nick Snyder
+    url: https://twitter.com/nickdsnyder
 publishDate: 2018-11-06T00:00-07:00
 tags: [
   "blog"

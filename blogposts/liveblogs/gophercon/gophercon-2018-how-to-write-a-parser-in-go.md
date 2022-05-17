@@ -1,6 +1,8 @@
 ---
 title: 'GopherCon 2018 - How to Write a Parser in Go'
-author: 'Nick Snyder for the GopherCon Liveblog'
+authors:
+  - name: Nick Snyder for the GopherCon Liveblog
+    url: https://twitter.com/nickdsnyder
 publishDate: 2018-08-29T00:00-06:00
 tags: [
   "gophercon"

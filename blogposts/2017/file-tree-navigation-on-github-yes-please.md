@@ -1,6 +1,7 @@
 ---
 title: 'File tree navigation on GitHub? Yes, please. '
-author: 'Matt King'
+authors:
+  - name: Matt King
 publishDate: 2017-08-09T00:00-07:00
 tags: [
   "blog"

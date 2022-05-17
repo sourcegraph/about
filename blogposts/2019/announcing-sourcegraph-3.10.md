@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph 3.10: Improved search autocompletion, native GitLab integration, and search and replace campaigns"
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-11-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.10

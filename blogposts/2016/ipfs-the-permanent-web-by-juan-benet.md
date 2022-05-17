@@ -1,6 +1,7 @@
 ---
 title: 'IPFS: The Permanent Web'
-author: 'Juan Benet'
+authors:
+  - name: Juan Benet
 publishDate: 2016-05-30T12:39-07:00
 tags: [
   "blog"

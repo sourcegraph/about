@@ -1,7 +1,8 @@
 ---
 title: "Let’s rethink the software engineer career path"
 externalTitle: Rethinking the software engineer career path
-author: Chris Pine
+authors:
+  - name: Chris Pine
 publishDate: 2020-09-30
 description: The software engineer career path is rarely clear, linear, or universal. It’s time engineers rethink the different career paths they can take.
 externalDescription: The software engineer career path is rarely clear, linear, or universal. It’s time engineers rethink the different career paths they can take.

@@ -1,7 +1,9 @@
 ---
 title: 'Resolve Go dependencies with minimal version selection'
 externalTitle: 'How to resolve Go dependencies'
-author: 'Nick Snyder'
+authors:
+  - name: Nick Snyder
+    url: https://twitter.com/nickdsnyder
 publishDate: 2018-08-30T17:00-07:00
 description: 'Minimal version selection can help resolve Go dependencies. Learn how to use this methodology to produce high-fidelity builds by default.'
 externalDescription: 'Minimal version selection can help resolve Go dependencies. Learn how to use this methodology to produce high-fidelity builds by default.'
@@ -114,7 +116,7 @@ I am happy that this class of dependency problem won't exist with Go modules, an
 
 Special thanks to Felix ([@felixfbecker](https://twitter.com/felixfbecker)) for ensuring that end-to-end tests must pass on staging before deploying to sourcegraph.com, discussing minimal version selection with me, authoring [a tool to create new NPM packages with the right boilerplate](https://github.com/sourcegraph/create), searching for workarounds to get the behavior I want out of npm, and ultimately filing detailed issues to drive change in the ecosystem ([#1156](https://npm.community/t/impossible-to-update-single-package-without-updating-its-dependencies/1156), [#2348](https://github.com/renovatebot/renovate/issues/2348)).
 
-## More posts like this 
+## More posts like this
 
 - [The Nine Circles of Dependency Hell (and a roadmap out)](https://about.sourcegraph.com/blog/nine-circles-of-dependency-hell/)
 - [How not to break a search engine or: What I learned about unglamorous engineering](https://about.sourcegraph.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)

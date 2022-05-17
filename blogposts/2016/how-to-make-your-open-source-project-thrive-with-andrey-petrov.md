@@ -1,6 +1,7 @@
 ---
 title: 'How to make your open source project thrive'
-author: 'Andrey Petrov'
+authors:
+  - name: Andrey Petrov
 publishDate: 2016-06-21T00:00-07:00
 tags: [
   "blog"

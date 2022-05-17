@@ -1,6 +1,8 @@
 ---
 title: GitLab integrates Sourcegraph code navigation and code intelligence
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-11-12T10:00-07:00
 tags: [blog]
 slug: gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence

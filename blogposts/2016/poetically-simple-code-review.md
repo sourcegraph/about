@@ -1,6 +1,7 @@
 ---
 title: 'Poetically simple code review'
-author: 'John Rothfels'
+authors:
+  - name: John Rothfels
 publishDate: 2016-11-01T00:00-07:00
 tags: [
   "blog"

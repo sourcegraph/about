@@ -1,6 +1,8 @@
 ---
 title: 'Full-Stack Subscriptions'
-author: '@felixfbecker'
+authors:
+  - name: Felix Becker
+    url: https://github.com/felixfbecker
 publishDate: 2017-10-25T14:25-07:00
 tags: [
   "graphql"

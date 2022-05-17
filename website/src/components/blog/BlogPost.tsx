@@ -75,7 +75,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                         )}
                     </p>
                 )}
-                {post.frontmatter.author && post.frontmatter.publishDate && (
+                {/* {post.frontmatter.author && post.frontmatter.publishDate && (
                     <p className="blog-post__byline mb-0">
                         {post.frontmatter.authorUrl ? (
                             post.frontmatter.authorUrl.includes('http') ? (
@@ -90,7 +90,7 @@ export const BlogPost: React.FunctionComponent<Props> = ({
                         )}{' '}
                         on <time dateTime={post.frontmatter.publishDate}>{post.frontmatter.publishDate}</time>
                     </p>
-                )}
+                )} */}
             </header>
             {!full && post.frontmatter.heroImage ? (
                 <div className="card-body pt-0 d-flex flex-card">

@@ -1,6 +1,8 @@
 ---
 title: 'Handling Authentication and Authorization in GraphQL'
-author: '@felixfbecker'
+authors:
+  - name: Felix Becker
+    url: https://github.com/felixfbecker
 publishDate: 2017-10-26T00:00-07:00
 tags: [
   "graphql"

@@ -1,6 +1,7 @@
 ---
 title: 'The August 2018 Docker Hub outage and the impact on Kubernetes deployments'
-author: 'Ryan Blunden'
+authors:
+  - name: Ryan Blunden
 publishDate: 2018-08-17T16:34-07:00
 tags: [
   "blog"

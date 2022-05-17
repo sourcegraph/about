@@ -1,6 +1,7 @@
 ---
 title: 'Code intelligence with LSIF'
-author: 'Chris Wendt'
+authors:
+  - name: Chris Wendt
 publishDate: 2019-09-10T00:00-07:00
 tags: [
   "blog"
