@@ -20,7 +20,7 @@ const MonolithToMicroservices: FunctionComponent<PageProps> = props => {
                 style={{
                     position: 'relative',
                     width: 'auto',
-                    padding: '0 0 286.02%',
+                    padding: '0 0 56.25%',
                     height: '0',
                     top: '0',
                     left: '0',
@@ -29,13 +29,13 @@ const MonolithToMicroservices: FunctionComponent<PageProps> = props => {
                     margin: '0',
                     border: '0 none',
                 }}
-                id="experience-627983184b4c8"
-                data-aspectratio="0.34963125"
-                data-mobile-aspectratio="0.14484881"
+                id="experience-62855a111d5a6"
+                data-aspectratio="1.77777778"
+                data-mobile-aspectratio="0.83333333"
             >
                 <iframe
                     allowFullScreen
-                    src="https://view.ceros.com/sourcegraph/successful-monolith-to-microservices-transition?heightOverride=3661&mobileHeightOverride=5523"
+                    src="https://view.ceros.com/sourcegraph/successful-monolith-to-microservices"
                     style={{
                         position: 'absolute',
                         top: '0',
@@ -45,14 +45,14 @@ const MonolithToMicroservices: FunctionComponent<PageProps> = props => {
                         margin: '0',
                         padding: '0',
                         border: '0 none',
-                        height: '1px',
-                        width: '1px',
+                        height: '100%',
+                        width: '100%',
                         minHeight: '100%',
                         minWidth: '100%',
                     }}
                     frameBorder="0"
                     className="ceros-experience"
-                    title="5 key elements of successful monolith-to-microservices migrations"
+                    title="5 key elements of successful monolith-to-microservices migrations with pages"
                     scrolling="no"
                 />
             </section>
