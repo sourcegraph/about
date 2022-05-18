@@ -29,10 +29,4 @@ Sourcegraph [dependencies search](https://docs.sourcegraph.com/code_search/how-t
 
 You can now link to individual code insight charts directly via the context menu on each insight. When you click to share an insight, the product indicates what other groups – global or individual Sourcegrpah organizations – can see the insight. To share an insight chart, it will need to be on at least one global or org-wide dashboard, and the share link will enforce the permissions of the dashboard(s) with the insight.
 
-## Sort 'detect and track patterns' code insight chart series
-
-[img placeholder]
-
-'Detect and track patterns' charts now allow setting the pattern sort order and number (up to 20) of pattern series you can display on a chart. This means you can set an insight with greater than 20 match patterns to show the most common, lease common, oldest or newest version (lexicographical sort) match patterns; previously, if there were greater than 20 match patterns, it returned a random set of 20 each session.
-
 ## [placeholder -- reminder to keep the "insights fork archive discrepancy" changelog entry in the changelog section of the post]
