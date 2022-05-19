@@ -1,0 +1,24 @@
+.errorPage {
+    flex: 1 0 auto;
+    padding: 15% 4rem 25% 4rem;
+    background: url('/c-sprinkles-blank.svg');
+    background-size: cover;
+}
+
+.circle {
+    height: 8rem;
+    width: 8rem;
+    margin: 0 auto;
+    background: #afbcd4;
+}
+
+.icon {
+    height: 8rem;
+    width: 8rem;
+
+    svg {
+        height: 8rem;
+        width: 8rem;
+        fill: #e4e9f1;
+    }
+}
