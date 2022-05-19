@@ -10,6 +10,13 @@ export const PodcastSubscribeLinks: React.FunctionComponent<Props> = ({ classNam
         <span>Subscribe:</span>{' '}
         <a
             target="_blank"
+            href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
+            className={linkClassName}
+        >
+            YouTube
+        </a>
+        <a
+            target="_blank"
             href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
             className={linkClassName}
         >
@@ -24,13 +31,6 @@ export const PodcastSubscribeLinks: React.FunctionComponent<Props> = ({ classNam
             className={linkClassName}
         >
             Google
-        </a>
-        <a
-            target="_blank"
-            href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
-            className={linkClassName}
-        >
-            YouTube
         </a>
         <a target="_blank" href="https://feeds.buzzsprout.com/1097978.rss" className={linkClassName}>
             RSS
