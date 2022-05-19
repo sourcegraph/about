@@ -14,8 +14,8 @@ published: true
 
 ![Sourcegraph Cloud for teams now in private beta/](/blog/cloud-beta-launch-post.png)
 
-<div class="alert alert-primary" role="alert" style="max-width:650px; align-items: center; margin: auto auto 20px auto">
-      <strong>Update:</strong>  The Sourcegraph Cloud private beta (for teams) is now closed to new signups. If you are interested in using Sourcegraph for your team, you can get started via <a href="https://about.sourcegraph.com/get-started/self-hosted">self-hosting</a> or <a href="https://about.sourcegraph.com/demo"> get in contact with us for a demo</a>.
+<div className="alert alert-primary" role="alert" style={{maxWidth: '650px', alignItems: 'center', margin: 'auto auto 20px auto'}}>
+      <strong>Update:</strong>  The Sourcegraph Cloud private beta (for teams) is now closed to new signups. If you are interested in using Sourcegraph for your team, you can get started via <a href="/get-started/self-hosted">self-hosting</a> or <a href="/demo"> get in contact with us for a demo</a>.
 Sourcegraph Cloud is still available for individuals at <a href="http://sourcegraph.com/"> Sourcegraph.com</a>.
 </div>
 
@@ -52,8 +52,8 @@ We know from talking with hundreds of developers that devs spend more time readi
 
 Sourcegraph Cloud provides a way to traverse your entire codebase so you can quickly get up to speed on new code or work through refactors. With Sourcegraph code search, you can jump to definition, find references, and code coverage annotations. This helps teams get up to speed on new code, and it also helps for onboarding new devs to your codebase.
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://storage.googleapis.com/sourcegraph-assets/blog/cloud-for-teams/Find-Refs-Example.mp4" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <iframe className="embed-responsive-item" src="https://storage.googleapis.com/sourcegraph-assets/blog/cloud-for-teams/Find-Refs-Example.mp4" allowFullScreen="" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
 </div>
 
 For small teams who are growing quickly, Sourcegraph helps orient developers to new code faster.

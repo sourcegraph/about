@@ -33,9 +33,9 @@ Sourcegraph 3.38 is now available! In this release:
 
 Any Sourcegraph instance can create up to two code insights, even without a trial or license. Reach out to your account team to purchase access to the full version.
 
-<div class="container my-4 video-embed embed-responsive embed-responsive-16by9">
+<div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
   <iframe
-    class="embed-responsive-item"
+    className="embed-responsive-item"
     src="https://www.youtube-nocookie.com/embed/fMCUJQHfbUA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
     allowfullscreen="true"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

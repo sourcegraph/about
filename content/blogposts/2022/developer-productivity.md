@@ -23,7 +23,7 @@ Instead, shouldn't we start from direct experience, our own mental models of how
 ![Software development lifecycle meme](https://storage.googleapis.com/sourcegraph-assets/blog/developer-productivity/Troy-overlay.jpeg)
 
 <figcaption>Hi, I'm the SDLC. You may remember me from such developer marketing campaigns as Shift Left, DORA the DevOps Explorer, and Agile Waterfalls.</figcaption>
-<br>
+<br />
 
 The common picture of the software development process is the SDLC. A mainstay of DevOps marketing campaigns, the SDLC does a good job of highlighting the many stages involved in bringing code to production. The SDLC, however, leaves the most critical step in software development undefined: how the code, itself, is understood and written.
 

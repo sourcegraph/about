@@ -40,7 +40,7 @@ Again, the teams tasked with mitigation will need to watch out for those pesky t
 
 The solutions here will be largely the same as those for #1, with thorough code search playing a key role in sweeping your codebase or that of your dependencies for instances of the vulnerable code. [Nutanix](https://www.nutanix.com/) used Sourcegraph for its Log4Shell management process: “Isn’t it nice, when you can just run a report and say, ‘Here it is’ or ‘Here it isn’t’?” said Jon Kohler, Technical Director of Solution Engineering. Much better than having to say “‘Well, boss, I think we got it all.’”
 
-<div class="alert alert-primary" role="alert" style="max-width:650px; text-align: center; margin: auto auto 20px auto">
+<div className="alert alert-primary" role="alert" style={{maxWidth: '650px', textAlign: 'center', margin: 'auto auto 20px auto'}}>
 Keep reading: <a href = "/case-studies/nutanix-fixed-log4j-with-sourcegraph">Nutanix fixed Log4j quickly and confidently with Sourcegraph</a>
 </div>
 

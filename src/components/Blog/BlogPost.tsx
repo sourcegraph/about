@@ -37,8 +37,7 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
             </h1>
             {post.frontmatter.authors?.length && (
                     <p className="text-align-center text-secondary mb-0">
-                        {post.frontmatter.authors.map((a, index) => {
-                            return (
+                        {post.frontmatter.authors.map((a, index) => (
                                 <span key={a.name}>
                                     {a.url ? (
                                         a.url.includes('http') ? (
@@ -51,15 +50,15 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
                                     ) : (
                                         a.name
                                     )}
-                                    {index == post.frontmatter.authors!.length - 1 ? ' ' : ', '}
+                                    {index === post.frontmatter.authors!.length - 1 ? ' ' : ', '}
                                 </span>
                             )
-                        })}
+                        )}
 
                         {post.frontmatter.publishDate && (
-                            <span>
-                                on <time dateTime={post.frontmatter.publishDate}>{post.frontmatter.publishDate}</time>
-                            </span>
+                          <p className="text-align-center text-secondary mb-0">
+                            <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
+                          </p>
                         )}
                     </p>
                 )}
@@ -73,4 +72,3 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
         )}
     </article>
 )
-

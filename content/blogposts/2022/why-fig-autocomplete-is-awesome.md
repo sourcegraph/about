@@ -24,7 +24,16 @@ Then I remembered Zeno Rocha [tweeting about Fig](https://twitter.com/zenorocha/
 
 I’m in the process of creating a budget for sponsoring the dependencies that Sourcegraph uses via Open Collective. Here is a real-world example of how I accomplish that.
 
-<div style="position: relative; padding-bottom: 51.13908872901679%; height: 0;"><iframe src="https://www.loom.com/embed/46094880c87844958d74ef28b1d76719" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style={{position: 'relative', paddingBottom: '51.13908872901679%', height: 0}}>
+    <iframe
+        src="https://www.loom.com/embed/46094880c87844958d74ef28b1d76719"
+        frameborder="0"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen
+        style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}>
+    </iframe>
+</div>
 
 ### Want to try it out?
 

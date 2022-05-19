@@ -34,8 +34,8 @@ Sourcegraph 3.39 is now available! Here are some highlights from this release:
 
 Built with onboarding in mind, the Notebooks feature allows you to integrate search results and Markdown to enable documentation that is easy to create and doesn't get stale. The feature is inspired by the Jupyter Notebooks project and features four unique block types, an intelligent notepad for creating notebooks on the fly, and deep integration with Code Search, so you can always find the code you need.
 
-<video class="blog-image" title="Notebooks overview" alt="An example of using a notebook." loop autoplay muted playsinline>
-  <source src="https://storage.googleapis.com/sourcegraph-assets/notebooks/notebooks_overview_release_post.mp4">
+<video className="blog-image" title="Notebooks overview" alt="An example of using a notebook." loop autoplay muted playsinline>
+  <source src="https://storage.googleapis.com/sourcegraph-assets/notebooks/notebooks_overview_release_post.mp4" />
 </video>
 
 Web-based notebooks are the easiest way to create and share new documentation with your team, but we also support file-based notebooks via a special `.snb.md` file type. With file-based notebooks, you can transform your existing documentation and augment it with Sourcegraph query blocks. You can also embed notebooks on any web page, enabling easy integration with your own knowledge management systems, so you can meet your developers where they are.
@@ -46,9 +46,8 @@ To learn more, [read the Notebooks docs](https://docs.sourcegraph.com/notebooks)
 
 ## Filter Code Insights using search contexts
 
-<div style="text-align:center">
-<img class="blog-image" title="Code insights have search context filters" alt="Image of a search context being used to filter a code insight" src="https://storage.googleapis.com/sourcegraph-assets/blog/3.39/code_insights_3.39_dynamic_context_filters.png
-">
+<div style={{textAlign:'center'}}>
+  <img className="blog-image" title="Code insights have search context filters" alt="Image of a search context being used to filter a code insight" src="https://storage.googleapis.com/sourcegraph-assets/blog/3.39/code_insights_3.39_dynamic_context_filters.png" />
 </div>
 
 [Search contexts](https://docs.sourcegraph.com/code_search/explanations/features#search-contexts) are pre-set repository groups that make it easy to scope your Sourcegraph searches, and you can now apply search contexts to Code Insights as well. Then, by updating your search contexts, your filtered insights will automatically update to reflect the changes as well. Using search contexts is a fast, succinct way to reuse complex repository filters.
@@ -67,8 +66,8 @@ Any managed database solution that supports the [official Sourcegraph PostgreSQL
 
 We've added tree-sitter to our search-based Code Intelligence, meaning that local navigation for Java is now faster and more precise.
 
-<video class="blog-image" title="Java code Intelligence" alt="An example of using Java Code Intelligence within the sourcegraph/sourcegraph repo." loop autoplay muted playsinline>
-  <source src="https://user-images.githubusercontent.com/1657213/163855878-4355bcb0-5407-4307-b3f2-4581e1ab2fe2.mp4">
+<video className="blog-image" title="Java code Intelligence" alt="An example of using Java Code Intelligence within the sourcegraph/sourcegraph repo." loop autoplay muted playsinline>
+  <source src="https://user-images.githubusercontent.com/1657213/163855878-4355bcb0-5407-4307-b3f2-4581e1ab2fe2.mp4" />
 </video>
 
 ## Search your Go dependencies natively in Sourcegraph

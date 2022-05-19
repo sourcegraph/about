@@ -8,6 +8,7 @@ tags: [
   "blog"
 ]
 slug: appdash-an-open-source-perf-tracing-suite
+description: 'Every developer knows they should instrument their app to identify perf bottlenecks, but it’s hard to actually get around to doing it.'
 heroImage: https://images.ctfassets.net/le3mxztn6yoo/2cqIONdy7Ccumacy4eCC8W/bf4a730c417954a3c7a30394cd8ddd51/0_jXkIPsoJBjXY80cs.png
 published: true
 ---
@@ -31,11 +32,11 @@ This post will walk you through an example app that uses Appdash and cover exact
 
 If you don’t already have Go, [install that first](https://golang.org/doc/install). Then install Appdash by running:
 
-<pre name="27e2" id="27e2" class="graf graf--pre graf-after--p">go get -u sourcegraph.com/sourcegraph/appdash/...</pre>
+<pre name="27e2" id="27e2" className="graf graf--pre graf-after--p">go get -u sourcegraph.com/sourcegraph/appdash/...</pre>
 
 This will also install the example web app in the Appdash repository that demonstrates the basic features of Appdash. Let’s run that first:
 
-<pre name="c9e1" id="c9e1" class="graf graf--pre graf-after--p">$ go get -u sourcegraph.com/sourcegraph/appdash/...
+<pre name="c9e1" id="c9e1" className="graf graf--pre graf-after--p">$ go get -u sourcegraph.com/sourcegraph/appdash/...
 $ webapp
 2015/04/27 20:40:56 Appdash web UI running on HTTP :8700
 [negroni] listening on :8699</pre>

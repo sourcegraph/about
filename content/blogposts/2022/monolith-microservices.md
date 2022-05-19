@@ -7,8 +7,8 @@ authors:
 publishDate: 2022-04-28T18:00+02:00
 tags: [blog]
 slug: monolith-microservices-migration
-heroImage: //images.ctfassets.net/le3mxztn6yoo/t4Qpcq5kA0AYM24Ws4mOk/4edf5502a936bbec90c262fa00355aed/sourcegraph-mark.png
-socialImage:
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image5.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image5.png
 published: true
 ---
 
@@ -49,7 +49,7 @@ Here is [a template](https://docs.google.com/document/d/1TbsQC7fFVdMKjkfNegU7OwU
 ![Sample architecture diagram](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image5.png)
 
 <figcaption>A sample architecture diagram showing the high-level change being implemented.</figcaption>
-<br>
+<br />
 
 Share this document with the list of stakeholders you created in step 1. Feedback serves two purposes:
 
@@ -86,7 +86,7 @@ It's important the tool you use permits feedback and adjustments along the way, 
 ![Automating code changes](https://storage.googleapis.com/sourcegraph-assets/blog/monolith-microservices/image4.gif)
 
 <figcaption>In a microservices migration, it’s common to need to make simple changes to numerous places in the code. Automation can help with an otherwise tedious process, but it’s important to keep the human in the loop because the changes can sometimes be subtly different or can require conversations with the teams that own the code being updated.</figcaption>
-<br>
+<br />
 
 Here are the tools that we've seen used to shepherd such large-scale migrations:
 

@@ -9,8 +9,7 @@ slug: please-save-git-io
 heroImage: https://user-images.githubusercontent.com/3173176/165389559-26ee5644-e9db-4c95-b042-e6d72a825e9e.png
 socialImage: https://user-images.githubusercontent.com/3173176/165389559-26ee5644-e9db-4c95-b042-e6d72a825e9e.png
 published: true
-description: |
-  Yesterday, GitHub announced that it intends to shut down git.io, its link-shortener service, in just 3 days time. Please help us save git.io and the hundreds of thousands of links that will be broken!
+description: Yesterday, GitHub announced that it intends to shut down git.io, its link-shortener service, in just 3 days time. Please help us save git.io and the hundreds of thousands of links that will be broken!
 ---
 
 Yesterday, [GitHub announced](https://news.ycombinator.com/item?id=31162829) that it intends to shut down git.io, its link-shortener service, in just 3 days time:
