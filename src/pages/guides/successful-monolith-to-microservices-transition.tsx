@@ -15,6 +15,7 @@ const MonolithToMicroservices: FunctionComponent = () => {
             }}
         >
             <section
+                // eslint-disable-next-line react/forbid-dom-props
                 style={{
                     position: 'relative',
                     width: 'auto',
@@ -33,6 +34,7 @@ const MonolithToMicroservices: FunctionComponent = () => {
                 <iframe
                     allowFullScreen={true}
                     src="https://view.ceros.com/sourcegraph/test?heightOverride=3603"
+                    // eslint-disable-next-line react/forbid-dom-props
                     style={{
                         position: 'absolute',
                         top: '0',
