@@ -20,7 +20,7 @@ const MonolithToMicroservices: FunctionComponent<PageProps> = props => {
                 style={{
                     position: 'relative',
                     width: 'auto',
-                    padding: '0 0 56.25%',
+                    padding: '0 0 316.05%',
                     height: '0',
                     top: '0',
                     left: '0',
@@ -29,13 +29,12 @@ const MonolithToMicroservices: FunctionComponent<PageProps> = props => {
                     margin: '0',
                     border: '0 none',
                 }}
-                id="experience-62855a111d5a6"
-                data-aspectratio="1.77777778"
-                data-mobile-aspectratio="0.83333333"
+                id="experience-62867d97cd078"
+                data-aspectratio="0.316403"
             >
                 <iframe
                     allowFullScreen
-                    src="https://view.ceros.com/sourcegraph/successful-monolith-to-microservices"
+                    src="https://view.ceros.com/sourcegraph/test?heightOverride=3603"
                     style={{
                         position: 'absolute',
                         top: '0',
