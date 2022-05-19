@@ -29,4 +29,9 @@ Sourcegraph [dependencies search](https://docs.sourcegraph.com/code_search/how-t
 
 You can now link to individual code insight charts directly via the context menu on each insight. When you click to share an insight, the product indicates what other groups – global or individual Sourcegrpah organizations – can see the insight. To share an insight chart, it will need to be on at least one global or org-wide dashboard, and the share link will enforce the permissions of the dashboard(s) with the insight.
 
+## Batch Changes on Bitbucket Cloud
+
+Batch Changes is now available on Bitbucket Cloud. It was previously only available on self-hosted deployments of BitBucket.
+
+
 ## [placeholder -- reminder to keep the "insights fork archive discrepancy" changelog entry in the changelog section of the post]
