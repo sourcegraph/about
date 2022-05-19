@@ -99,4 +99,5 @@ Sourcegraph is an OSS product licensed under Apache 2.0. We also make great use 
 
 ## Security Updates
 
-<EmbeddedHubSpot portalId='2762526' formId='0ff99031-7caf-433a-8aef-8c9345948288' targetId='#security-updates' />
+<EmbeddedHubSpot portalId='2762526' formId='0ff99031-7caf-433a-8aef-8c9345948288' targetId='#security-updates-form' />
+<div id="security-updates-form"></div>

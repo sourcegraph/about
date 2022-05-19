@@ -8,12 +8,12 @@ authorUrl: https://twitter.com/rvtond
 publishDate: 2021-06-25T10:00-07:00
 tags: [blog, code, search, software, engineering, testing]
 slug: how-not-to-break-a-search-engine-unglamorous-engineering
-heroImage: https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
-socialImage: https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png
 published: true
 ---
 
-![Unglamorous engineering](https://sourcegraphstatic.com/blog/how-not-to-break-a-search-engine-unglamorous-engineering.jpg)
+![Unglamorous engineering](https://storage.googleapis.com/sourcegraph-assets/blog/how-not-to-break-a-search-engine-new.png)
 
 > _"In 2020 I flipped the switch to use a completely rewritten parser for
 > Sourcegraph search queries. It serves tens of thousands of users and processes
@@ -26,7 +26,7 @@ Sourcegraph—the bit that users type into the search bar. This component
 processes every single input that goes into the search bar when users search
 for code:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/search-bar.png" style={{width: '660px'}} alt="Code search input bar"/>
+<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/search-bar.png" style={{width: '660px'}} alt="Code search input bar" />
 
 When the switch activated the new parser in September 2020, you'd never know
 that anything had changed. This is an account of the invisible, rigorous
@@ -87,7 +87,7 @@ defense for testing correctness. I reused some of our existing parser tests
 lot of additional tests for new parts of the syntax. You bet there's test
 coverage.
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/parser-coverage.png" style={{width: '300px'}} alt="Parser file unit test coverage"/>
+<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/parser-coverage.png" style={{width: '300px'}} alt="Parser file unit test coverage" />
 
 ### Part 2: Integration testing
 
@@ -100,16 +100,11 @@ representation. I'd abstracted out a common interface for our backend to access
 the new data structure under the feature-flagged code path to test on.
 
 <figure style={{width: '800px', maxWidth: '100%', margin: 'auto'}}>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/integration.png" alt="Integration testing diagram" style={{boxShadow:'none'}} />
-  <i><small>Integration testing abstracts a common interface for our backend
-  to access query values.
-  We test that the backend produces the same search results for
-  simple queries (ones that don't have, e.g., </small></i>
-  <code>or</code>
-  <i>-operators), irrespective of whether those values originate from the existing parser's output or the new one.</i>
+  <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/integration.png" alt="Integration testing diagram" style={{boxShadow: 'none'}} />
+  <small><i>Integration testing abstracts a common interface for our backend to access query values. We test that the backend produces the same search results for simple queries (ones that don't have, e.g., <code>or</code> -operators), irrespective of whether those values originate from the existing parser's output or the new one.</i></small>
 </figure>
 
-<br/>
+<br />
 
 When I got to this part, we didn't have a good way to run integration tests. We
 had browser-based end-to-end testing that was onerous to set up, time-consuming
@@ -206,7 +201,7 @@ There's unglamorous engineering in the software all around us. For all its lack
 of recognition, I wish we grasped its value a bit better. I'm reminded of a
 tweet by a former colleague who researched donations for open source projects:
 
-<blockquote className="twitter-tweet tw-align-center" data-conversation="none"><p lang="en" dir="ltr">I can tell you from some informal interviews we did outside that paper, that people spend the money on gruntwork — the stuff that’s fun they’re more likely to do anyway, money or not.</p>&mdash; Bogdan Vasilescu (@b_vasilescu) <a href="https://twitter.com/b_vasilescu/status/1279199236094132227?ref_src=twsrc%5Etfw">July 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+<blockquote className="twitter-tweet tw-align-center" data-conversation="none"><p lang="en" dir="ltr">I can tell you from some informal interviews we did outside that paper, that people spend the money on gruntwork — the stuff that’s fun they’re more likely to do anyway, money or not.</p>&mdash; Bogdan Vasilescu (@b_vasilescu) <a href="https://twitter.com/b_vasilescu/status/1279199236094132227?ref_src=twsrc%5Etfw">July 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This suggests that gruntwork, if not glamorous, is certainly valuable (and
 perhaps, even disproportionately so). At the same time, I wouldn't necessarily
@@ -260,7 +255,7 @@ other engineers at Sourcegraph doing momentous but unglamorous things that most
 of the organization is blissfully unaware of. And the Twitterverse suggests
 there's more of it happening in software all around us:
 
-<blockquote className="twitter-tweet tw-align-center"><p lang="en" dir="ltr">A huge problem in software companies is that large new features get praise, promotions, accolades... while migrating off a legacy system, increasing performance 2,4,10X, or reducing error rates, pages, or alerts by X% is often only recognized by peers and not leadership.</p>&mdash; Dan Mayer (@danmayer) <a href="https://twitter.com/danmayer/status/1395564252308541440?ref_src=twsrc%5Etfw">May 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+<blockquote className="twitter-tweet tw-align-center"><p lang="en" dir="ltr">A huge problem in software companies is that large new features get praise, promotions, accolades... while migrating off a legacy system, increasing performance 2,4,10X, or reducing error rates, pages, or alerts by X% is often only recognized by peers and not leadership.</p>&mdash; Dan Mayer (@danmayer) <a href="https://twitter.com/danmayer/status/1395564252308541440?ref_src=twsrc%5Etfw">May 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I empathize with the engineers who don't have an audience for their unglamorous
 work, who want to say, "I did A Thing, there's nothing to see, but more people

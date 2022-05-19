@@ -13,6 +13,14 @@ export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ className = ''
         <a
             target="_blank"
             rel="noreferrer"
+            href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
+            className={classNames(linkClassName, 'font-weight-bold')}
+        >
+            YouTube
+        </a>
+        <a
+            target="_blank"
+            rel="noreferrer"
             href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009"
             className={classNames(linkClassName, 'font-weight-bold')}
         >
@@ -33,14 +41,6 @@ export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ className = ''
             className={classNames(linkClassName, 'font-weight-bold')}
         >
             Google
-        </a>
-        <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA"
-            className={classNames(linkClassName, 'font-weight-bold')}
-        >
-            YouTube
         </a>
         <a
             target="_blank"

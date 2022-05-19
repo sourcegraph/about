@@ -12,13 +12,12 @@ published: true
 
 ![Sourcegraph Cloud for teams now in private beta/](/blog/cloud-beta-launch-post.png)
 
-Sign up to get instant access to code navigation and intelligence across your team’s private code and 2M open source repositories. Sourcegraph Cloud for teams brings enterprise advantages to small teams. Not ready to bring your team along? You can use [Sourcegraph.com](https://sourcegraph.com) to search your personal repos and the open source universe today.
+<div className="alert alert-primary" role="alert" style={{maxWidth: '650px', alignItems: 'center', margin: 'auto auto 20px auto'}}>
+      <strong>Update:</strong>  The Sourcegraph Cloud private beta (for teams) is now closed to new signups. If you are interested in using Sourcegraph for your team, you can get started via <a href="/get-started/self-hosted">self-hosting</a> or <a href="/demo"> get in contact with us for a demo</a>.
+Sourcegraph Cloud is still available for individuals at <a href="http://sourcegraph.com/"> Sourcegraph.com</a>.
+</div>
 
-<p style={{textAlign: 'center'}}>
-    <a href="https://about.sourcegraph.com/cloud-beta/?&utm_medium=direct-traffic&utm_source=blog&utm_content=cloud-product-beta-teams">
-        Sign up for private beta access
-    </a>
-</p>
+Sourcegraph Cloud for teams brings enterprise advantages to small teams. Not ready to bring your team along? You can use [Sourcegraph.com](https://sourcegraph.com) to search your personal repos and the open source universe today.
 
 The tools you have access to matter. A lot. According to a recent [McKinsey study](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance), “best-in-class tools are the primary driver of developer velocity... The ability to access relevant tools for each stage of the software lifecycle contributes to developer satisfaction and retention rates that are 47 percent higher for top-quartile companies compared to bottom-quartile performers.”
 
@@ -31,12 +30,6 @@ Findings from GitHub’s [2021 State of the Octoverse](https://octoverse.github.
 While code search isn’t new, access to its advantages has been limited to companies who can either build it themselves or provide admin support for a self-hosted product, like Sourcegraph. We believe that every developer—regardless of whether you work for a large enterprise or small start-up—should have access to great code search. That’s why we’re investing in our SaaS offering and bringing the power of Sourcegraph to small and large teams alike.
 
 We [recently announced](/blog/why-index-the-oss-universe/) a public beta for private code on Sourcegraph Cloud and we’re expanding access to small teams. With this release of Sourcegraph Cloud for teams, teams of up to 25 developers who use GitHub.com and GitLab.com can adopt Sourcegraph and gain the benefits of universal code search in minutes without needing to self-host.
-
-<p>
-    <a href="https://about.sourcegraph.com/cloud-beta/?&utm_medium=direct-traffic&utm_source=blog&utm_content=cloud-product-beta-teams">
-        Join the waitlist to get free access for a limited time during private beta.
-    </a>
-</p>
 
 ## Code search for small teams
 
@@ -79,4 +72,4 @@ For teams leveraging open source projects and packages, the ability to track dep
 
 With Sourcegraph, you and your team can perform your best work. Understanding new code, collaboration, and code reviews are faster and more efficient when you can search your entire graph of code for answers. Sourcegraph allows you to never miss anything when understanding your code, so you can do your best work.
 
-Interested in Sourcegraph Cloud for your team? You can [read more and sign up here](/cloud-beta/?&utm_medium=direct-traffic&utm_source=blog&utm_content=cloud-product-beta-teams). You can also learn more about [how we approached expanding an on-premise product to SaaS here](/blog/expanding-sourcegraph-from-on-premise-to-saas/).
+Learn more about [how we approached expanding an on-premise product to SaaS here](/blog/expanding-sourcegraph-from-on-premise-to-saas/).

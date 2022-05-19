@@ -3,13 +3,14 @@ layout: markdown
 title: Terms of Service for Self-hosted Sourcegraph Instances
 ---
 
-Last modified: February 10, 2022
+Last modified: February 22, 2022
 
-See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-self-hosted%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-self-hosted/2021-10-11/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives).
+See the [changes](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about%24+file:%5Edocs/terms-self-hosted%5C.md+type:diff&patternType=literal) since the [previous version](https://about.sourcegraph.com/archives/terms-self-hosted/2022-02-10/) or visit our [archives](https://github.com/sourcegraph/about/tree/main/docs/archives).
 
 Thank you for using Sourcegraph! This page lays out the basic terms and conditions that apply to your use of self-hosted Sourcegraph instances.
 
-<div className="mt-4 mb-4 p-3" style={{background: '#f2f4f8'}}>
+<div className="p-3" style={{background: '#f2f4f8', wordWrap: 'break-word'}}>
+
 <span style={{color: '#b200f8'}}>
 
 ## Is this the right Terms of Service for me?
@@ -20,13 +21,13 @@ Are you interested in terms for...
 
 - **A self-hosted Sourcegraph instance**: You're in the right place! Read on.
 
-- **[Sourcegraph Cloud](/terms/cloud)**: If you’d like to use Sourcegraph Cloud (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with Sourcegraph Cloud, please see our [Sourcegraph Cloud terms and conditions](/terms/cloud).
+- **[Sourcegraph Cloud](/terms/cloud)**: If you’d like to use Sourcegraph Cloud (the public Sourcegraph instance that can be used to search, navigate, and analyze public code) rather than a self-hosted instance, or if you’d like to use any products (e.g. browser or editor extensions) developed and distributed by us for use with Sourcegraph Cloud, please see our Sourcegraph Cloud terms and conditions at https://about.sourcegraph.com/terms-cloud.
 
 - **[Sourcegraph OSS](https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache)**: It is possible to run a version of Sourcegraph without some Enterprise features from our open source code available at https://github.com/sourcegraph/sourcegraph. If you want to follow the instructions there to build and run Sourcegraph OSS from source, please see the open source license (Apache 2.0) at https://github.com/sourcegraph/sourcegraph/blob/master/LICENSE.apache.
 
 - **Sourcegraph extensions**: If you’d like to use any extensions made available via our [Extension Registry](https://sourcegraph.com/extensions), please understand that extensions made available by third-parties are not provided by us and are generally governed by separate terms and conditions. Extensions that are developed and distributed by us are governed by these terms and conditions.
 
-- **[Government](/terms/gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our [Supplemental Terms for U.S. Government Users](/terms/gov) apply. Those terms and conditions supplement these terms and conditions.
+- **[Government](/terms/gov)**: Certain features of our software may have their own terms and conditions that you must agree to when you sign up for that particular feature. As an example, if you’re using our software as an employee or contractor of the U.S. Government, our Supplemental Terms for U.S. Government Users at https://about.sourcegraph.com/terms-gov apply. Those terms and conditions supplement these terms and conditions.
 </div>
 
 PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION. THE AGREEMENT CONTAINS A MANDATORY INDIVIDUAL ARBITRATION AND CLASS ACTION/JURY TRIAL WAIVER PROVISION THAT REQUIRES THE USE OF ARBITRATION ON AN INDIVIDUAL BASIS TO RESOLVE DISPUTES, RATHER THAN JURY TRIALS OR CLASS ACTIONS.
@@ -39,21 +40,21 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 | Section                                                                                                                               | Description                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| 1. [Definitions](#1-definitions)                                                                                                      | Definitions of specific terms used on this page                                 |
-| 2. [Account terms](#2-account-terms)                                                                                                  | Your responsibilities to use Sourcegraph                                        |
-| 3. [Acceptable use](#3-acceptable-use)                                                                                                | Acceptable use of Sourcegraph                                                   |
-| 4. [Usage data](#4-usage-data)                                                                                                        | Aggregate and high-level data we collect from self-hosted Sourcegraph instances |
-| 5. [Data protection](#5-data-protection)                                                                                              | Our policies for protecting your data                                           |
-| 6. [Confidentiality](#6-confidentiality)                                                                                              | Our mutual responsibilities to protect confidential data                        |
-| 7. [Term; termination](#7-term-termination)                                                                                           | When and how your account can be terminated                                     |
-| 8. [Fees](#8-fees)                                                                                                                    | Rules for payment for paid and Enterprise features                              |
-| 9. [Third party services and software](#9-third-party-services-and-software)                                                          | Our use of third party services and software                                    |
-| 10. [Warranties; disclaimer](#10-warranties-disclaimer)                                                                               | Our warranties about Sourcegraph                                                |
-| 11. [Limitation of liability](#11-limitation-of-liability)                                                                            | Our liabilities are limited                                                     |
-| 12. [Indemnification](#12-indemnification)                                                                                            | The parties’ respective indemnification obligations                             |
-| 13. [Export controls](#13-export-controls)                                                                                            | Usage restrictions in embargoed locations                                       |
-| 14. [Governing law; arbitration; and class action/jury trial waiver](#14-governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled                                         |
-| 15. [Miscellaneous](#15-miscellaneous)                                                                                                | Miscellaneous topics                                                            |
+| 1. [Definitions](#1-Definitions)                                                                                                      | Definitions of specific terms used on this page                                 |
+| 2. [Account terms](#2-Account-terms)                                                                                                  | Your responsibilities to use Sourcegraph                                        |
+| 3. [Acceptable use](#3-Acceptable-use)                                                                                                | Acceptable use of Sourcegraph                                                   |
+| 4. [Usage data](#4-Usage-data)                                                                                                        | Aggregate and high-level data we collect from self-hosted Sourcegraph instances |
+| 5. [Data protection](#5-Data-protection)                                                                                              | Our policies for protecting your data                                           |
+| 6. [Confidentiality](#6-Confidentiality)                                                                                              | Our mutual responsibilities to protect confidential data                        |
+| 7. [Term; termination](#7-Term-termination)                                                                                           | When and how your account can be terminated                                     |
+| 8. [Fees](#8-Fees)                                                                                                                    | Rules for payment for paid and Enterprise features                              |
+| 9. [Third party services and software](#9-Third-party-services-and-software)                                                          | Our use of third party services and software                                    |
+| 10. [Warranties; disclaimer](#10-Warranties-disclaimer)                                                                               | Our warranties about Sourcegraph                                                |
+| 11. [Limitation of liability](#11-Limitation-of-liability)                                                                            | Our liabilities are limited                                                     |
+| 12. [Indemnification](#12-Indemnification)                                                                                            | The parties’ respective indemnification obligations                             |
+| 13. [Export controls](#13-Export-controls)                                                                                            | Usage restrictions in embargoed locations                                       |
+| 14. [Governing law; arbitration; and class action/jury trial waiver](#14-Governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled                                         |
+| 15. [Miscellaneous](#15-Miscellaneous)                                                                                                | Miscellaneous topics                                                            |
 
 <br/>
 <span style={{color: '#b200f8'}}>
@@ -172,7 +173,7 @@ As the Software is provided in the form of a self-hosted Instance, Sourcegraph w
 
 4. the receiving party independently develops without access to or use of the other party's Confidential Information.
 
-6.3 **Restrictions on Use and Disclosure**. Neither party will use the other party's Confidential Information except as permitted under this Agreement. Each party agrees to maintain in confidence and protect the other party's Confidential Information using at least the same degree of care as it uses for its own information of a similar nature, but in any event at least a reasonable degree of care. Each party agrees to take all reasonable precautions to prevent any unauthorized disclosure of the other party's Confidential Information, including, without limitation, disclosing such Confidential Information only to its employees, independent contractors, consultants, and legal and financial advisors (collectively, **"Representatives"**) who (i) have a need to know such information, and (ii) are subject to confidentiality obligations at least as protective of the Confidential Information as the terms of this Agreement. Each party is responsible for all acts and omissions of its Representatives. The foregoing obligations will not restrict either party from disclosing Confidential Information of the other party if required by any governmental body, so long as, to the extent allowed under applicable law, the party required to make the disclosure gives reasonable notice to the other party to enable it to contest the requirement. The restrictions set forth in this Section will survive the termination or expiration of this Agreement.
+6.3 **Restrictions on Use and Disclosure**. Neither party will use the other party's Confidential Information except as permitted under this Agreement. Each party agrees to maintain in confidence and protect the other party's Confidential Information using at least the same degree of care as it uses for its own information of a similar nature, but in any event at least a reasonable degree of care. Each party agrees to take all reasonable precautions to prevent any unauthorized disclosure of the other party's Confidential Information, including, without limitation, disclosing such Confidential Information only to its employees, independent contractors, consultants, and legal and financial advisors (collectively, **"Representatives"**) who (i) have a need to know such information, and (ii) are subject to confidentiality obligations at least as protective of the Confidential Information as the terms of this Agreement. Each party is responsible for all acts and omissions of its Representatives. The foregoing obligations will not restrict either party from disclosing Confidential Information of the other party if required by any governmental body, so long as, to the extent allowed under applicable law, the party required to make the disclosure gives reasonable notice to the other party to enable it to contest the requirement. The restrictions set forth in this Section will survive the termination or expiration of this Agreement. The terms of this Section 6 supersede any non-disclosure or confidentiality agreement entered into by the parties prior to the effective date of this Agreement.
 
 <span style={{color: '#b200f8'}}>
 

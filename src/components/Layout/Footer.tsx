@@ -179,14 +179,14 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/security" passHref={true}>
+                        <Link href="/terms/security" passHref={true}>
                             <a href="#none" className="nav-link">
                                 Security
                             </a>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/privacy" passHref={true}>
+                        <Link href="/terms/privacy" passHref={true}>
                             <a href="#none" className="nav-link">
                                 Privacy
                             </a>
