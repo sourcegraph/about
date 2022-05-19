@@ -2,7 +2,7 @@
 
 This is Sourcegraph's Marketing Site which is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Build Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/87b826cb-588e-49b1-829f-be5a1975c71c/deploy-status)](https://app.netlify.com/sites/about-replatform/deploys)
+Build Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/0078e478-115a-43da-addc-a46549a72c5d/deploy-status)](https://app.netlify.com/sites/sourcegraph/deploys)
 
 ---
 
