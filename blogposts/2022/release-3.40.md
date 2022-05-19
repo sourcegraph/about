@@ -33,5 +33,4 @@ You can now link to individual code insight charts directly via the context menu
 
 Batch Changes is now available on Bitbucket Cloud. It was previously only available on self-hosted deployments of BitBucket.
 
-
 ## [placeholder -- reminder to keep the "insights fork archive discrepancy" changelog entry in the changelog section of the post]
