@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 export const useCerosScript = (): void => {
     useEffect(() => {
-        const cerosScrip = '//view.ceros.com/scroll-proxy.min.js'
+        const cerosScrip = 'https://view.ceros.com/scroll-proxy.min.js'
         const script = document.createElement('script')
         script.src = cerosScrip
         document.head.append(script)
