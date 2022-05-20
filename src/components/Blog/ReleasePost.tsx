@@ -1,14 +1,17 @@
+import { FunctionComponent } from 'react'
+
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
 import { PostComponentProps } from '@interfaces/posts'
+import { formatDate } from '@util'
 
 interface Props extends PostComponentProps {}
 
 /**
  * A post about a release.
  */
-export const ReleasePost: React.FunctionComponent<Props> = ({
+export const ReleasePost: FunctionComponent<Props> = ({
     post,
     content,
     url,
@@ -76,7 +79,11 @@ export const ReleasePost: React.FunctionComponent<Props> = ({
                         post.frontmatter.title
                     )}
                 </h1>
-                <p className="text-muted mb-0">{post.frontmatter.publishDate}</p>
+                {post.frontmatter.publishDate && (
+                    <time className="text-muted" dateTime={post.frontmatter.publishDate}>
+                        {formatDate(post.frontmatter.publishDate)}
+                    </time>
+                )}
             </header>
             <div className="card-body">{body}</div>
         </Tag>
