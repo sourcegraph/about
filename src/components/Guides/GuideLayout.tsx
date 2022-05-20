@@ -1,8 +1,7 @@
 import { FunctionComponent, ReactNode } from 'react'
 
 import { ContentSection } from '@components'
-import { breakpoints } from '@data'
-import { useWindowWidth, useHubSpot, HubSpotForm } from '@hooks'
+import { useHubSpot, HubSpotForm } from '@hooks'
 
 import styles from './GuideLayout.module.scss'
 
@@ -21,9 +20,6 @@ interface Props {
 }
 
 export const GuideLayout: FunctionComponent<Props> = ({ title, subtitle, description, form, formLabel, children }) => {
-    const windowWidth = useWindowWidth()
-    const isMdOrDown = windowWidth < breakpoints.lg
-
     const hubSpotConfig: HubSpotForm = {
         portalId: '2762526',
         formId: form.formId,

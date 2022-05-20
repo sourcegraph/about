@@ -18,9 +18,7 @@ export const Guide: FunctionComponent = () => (
             form={{
                 formId: 'af3bc75e-c4f0-43e7-9829-c1d5d59e0a56',
                 onFormSubmitted: () =>
-                    window.open(
-                        '/guides/optimizing-developer-onboarding/optimizing-developer-onboarding.pdf'
-                    ),
+                    window.open('/guides/optimizing-developer-onboarding/optimizing-developer-onboarding.pdf'),
             }}
             formLabel="Download the guide"
             description={
