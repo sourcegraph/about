@@ -20,6 +20,9 @@ changelogItems:
   - description: `-language` is a valid filter, but the web app previously displayed it as invalid. This bug has been fixed to reflect it as valid.
     url: https://github.com/sourcegraph/sourcegraph/pull/34949
     category: Search
+  - description: `search.largeFiles` now supports recursive globs. For example, it is now possible to specify a pattern like `**/*.lock` to match a lock file anywhere in a repository.
+    url: https://docs.sourcegraph.com/code_search/explanations/search_details
+    category: Search
   - description: The `setRepositoryPermissionsUnrestricted` mutation was added, which allows you to explicitly mark a repo as available to all Sourcegraph users.
     url: https://github.com/sourcegraph/sourcegraph/pull/35378
     category: Admin
