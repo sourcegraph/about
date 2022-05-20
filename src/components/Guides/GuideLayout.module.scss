@@ -1,0 +1,9 @@
+@import '@styles/colors';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/variables';
+
+.saturnBorder {
+    border-image-slice: 1 !important;
+    border-image-source: linear-gradient(to right, $violet-mist, $blue-mist) !important;
+}
