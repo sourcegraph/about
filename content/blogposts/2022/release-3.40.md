@@ -8,9 +8,21 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.40/sourcegraph-3-40-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/3.40/sourcegraph-3-40-release.png
 changelogItems:
-  - description:
-    url:
-    category:
+  - description: Code Insights will now automatically generate queries with a default value of `fork:no` and `archived:no` if these fields are not specified by the user. This removes the need to manually add these fields to have consistent behavior from historical to non-historical results.
+    url: https://github.com/sourcegraph/sourcegraph/pull/30204
+    category: Code Insights
+  - description: Search-based Code Intelligence now recognizes local variables in Python, Java, JavaScript, TypeScript, C/C++, C#, Go, and Ruby. This provides a better code navigation experience out-of-the-box. 
+    url: https://github.com/sourcegraph/sourcegraph/pull/33689
+    category: Code Intelligence
+  - description: `type:commit` and `type:diff` searches containing `and`, `or`, and `not` queries have been optimized, and now return results significantly faster.
+    url: https://github.com/sourcegraph/sourcegraph/pull/34595
+    category: Search
+  - description: `-language` is a valid filter, but the web app previously displayed it as invalid. This bug has been fixed to reflect it as valid.
+    url: https://github.com/sourcegraph/sourcegraph/pull/34949
+    category: Search
+  - description: The `setRepositoryPermissionsUnrestricted` mutation was added, which allows you to explicitly mark a repo as available to all Sourcegraph users.
+    url: https://github.com/sourcegraph/sourcegraph/pull/35378
+    category: Admin
 ---
 
 Sourcegraph 3.40 is now available! Here are some highlights from this release:
