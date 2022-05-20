@@ -1,6 +1,7 @@
 ---
 title: 'Go at the DARPA Cyber Grand Challenge'
-author: 'Will Hawkins'
+authors:
+  - name: Will Hawkins
 publishDate: 2017-07-14T00:00-07:00
 tags: [
   "gophercon"

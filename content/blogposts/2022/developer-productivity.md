@@ -4,7 +4,6 @@ description: 'Developers are systems thinkers and yet, most measures of develope
 authors:
   - name: Beyang Liu
     url: https://twitter.com/beyang
-authorUrl: https://twitter.com/beyang
 publishDate: 2022-05-10T18:00+02:00
 tags: [blog]
 slug: developer-productivity-thoughts

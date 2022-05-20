@@ -1,6 +1,7 @@
 ---
 title: 'The Art of Testing'
-author: 'Mat Ryer (speaker)'
+authors:
+  - name: Mat Ryer (speaker)
 publishDate: 2017-11-06T11:45+01:00
 tags: [
   "dotGo"

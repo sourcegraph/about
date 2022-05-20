@@ -1,6 +1,7 @@
 ---
 title: 'Setting up GraphQL in complicated APIs'
-author: '@beyang'
+authors:
+  - name: '@beyang'
 publishDate: 2017-10-25T00:00-07:00
 tags: [
   "graphql"

@@ -1,6 +1,7 @@
 ---
 title: 'Operability in Go'
-author: 'Ian Schenck'
+authors:
+  - name: Ian Schenck
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

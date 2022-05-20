@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - An Over-Engineering Disaster with Macaroons'
-author: 'Guillaume J. Charmes for the GopherCon Liveblog'
+authors:
+  - name: Guillaume J. Charmes for the GopherCon Liveblog
 publishDate: 2018-08-28T00:00-06:00
 tags: [
   "gophercon"

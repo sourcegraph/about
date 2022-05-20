@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Uptime 15,364 days - The Computers of Voyager"
 description: "The Voyager 1 and Voyager 2 space probes, both launched in 1977, each had a primary objective to explore Jupiter and Saturn. This goal was achieved by 1981. Yet Voyager, NASA's longest running mission, has continued to this day. Both Voyager probes are still operating, and returning scientific data from outside our solar system. This talk explores the computing systems of Voyager - the systems which enable remote control of the spacecraft, and provide for the recording and return of data to Earth. These systems have proved to be both adaptable, durable, and resilient in support of a scientific undertaking now in it's fifth decade."
-author: Gabe Ortiz for the Strange Loop 2019 Liveblog
-authorUrl: https://twitter.com/signalnine
-linkedInUrl: https://linkedin.com/in/gabrielortiz
+authors:
+  - name: Gabe Ortiz for the Strange Loop 2019 Liveblog
+    url: https://twitter.com/signalnine
 publishDate: 2019-09-13T00:00-15:30
 tags: [
   strange-loop

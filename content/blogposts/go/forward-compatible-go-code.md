@@ -1,6 +1,7 @@
 ---
 title: 'Forward Compatible Go Code'
-author: 'Joe Tsai'
+authors:
+  - name: Joe Tsai
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

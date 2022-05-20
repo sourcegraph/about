@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Formal Specification and Taming Other People's Tech"
 description: "Formal specifications are not just for academics and have applications way beyond checking algorithms like Paxos and Raft. Join us for a tour of using formal specifications for every day system design. If you've ever configured a load balancer or a message queue then you're already doing the kind of engineering work that formal specifications were intended for. This talk tells the story of a real life in production system built with common open source technologies that was struggling with growth and how we untangled its built-in assumptions and reworked its design using formal specifications."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-15:30
 tags: [
   strange-loop

@@ -1,6 +1,7 @@
 ---
 title: 'What went wrong? Best Practices for Surfacing Error Messages in a GraphQL API'
-author: '@attfarhan'
+authors:
+  - name: '@attfarhan'
 publishDate: 2017-10-26T00:00-07:00
 tags: [
   "graphql"

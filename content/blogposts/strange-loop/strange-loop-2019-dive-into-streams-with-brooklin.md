@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Dive into Streams with Brooklin"
 description: "Although LinkedIn data continues to grow rapidly over the years, scaling up to handle the increasing data volume has not been the only challenge in streaming data in near real-time. Supporting the proliferation of new data systems has become yet another huge endeavor for data streaming infrastructure at LinkedIn. Building separate, specialized solutions to move data across heterogeneous systems is not sustainable, as it slows down development and makes the infrastructure unmanageable. This called for a centralized, managed, and extensible solution that can continuously deliver data to nearline applications."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-10:20
 tags: [
   strange-loop

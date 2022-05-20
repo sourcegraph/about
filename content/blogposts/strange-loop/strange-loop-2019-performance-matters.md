@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Performance Matters"
 description: "Performance clearly matters to users. For example, the most common software update on the AppStore is \"Bug fixes and performance enhancements.\" Now that Moore's Law has ended, programmers have to work hard to get high performance for their applications. But why is performance hard to deliver?"
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-14:30
 tags: [
   strange-loop

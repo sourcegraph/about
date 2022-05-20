@@ -1,6 +1,7 @@
 ---
 title: 'The New Era of Go Package Management'
-author: 'Sam Boyer'
+authors:
+  - name: Sam Boyer
 publishDate: 2017-07-14T00:00-07:00
 tags: [
   "gophercon"

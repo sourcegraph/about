@@ -4,7 +4,6 @@ description: Sourcegraph is proud to be hosting the first ever liveblog for Stra
 authors:
   - name: Ryan Blunden
     url: https://twitter.com/ryan_blunden
-authorUrl: https://twitter.com/ryan_blunden
 publishDate: 2019-09-02T00:00-07:00
 tags: [blog]
 slug: sourcegraph-liveblogging-2019-strange-loop-conference

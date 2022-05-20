@@ -1,6 +1,7 @@
 ---
 title: 'Managing Massive Schemas with Codegen'
-author: 'Adam Kramer'
+authors:
+  - name: Adam Kramer
 publishDate: 2017-10-26T00:00-07:00
 tags: [
   "graphql"

@@ -1,6 +1,7 @@
 ---
 title: 'The Future of Go'
-author: 'Russ Cox'
+authors:
+  - name: Russ Cox
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

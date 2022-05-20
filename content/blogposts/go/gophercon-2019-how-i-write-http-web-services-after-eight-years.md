@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - How I write HTTP web services after eight years"
 description: "A look at how Mat Ryer builds web services after doing so for the past eight years. Extremely practical, tried and tested patterns that everybody can start using today."
-author: Kenigbolo Meya Stephen for the GopherCon 2019 Liveblog
+authors:
+  - name: Kenigbolo Meya Stephen for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-14:55
 tags: [
 gophercon

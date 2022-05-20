@@ -1,6 +1,7 @@
 ---
 title: 'Building GraphQL-native Microservices'
-author: '@ryanchenkie'
+authors:
+  - name: '@ryanchenkie'
 publishDate: 2017-10-25T00:00-07:00
 tags: [
   "graphql"
