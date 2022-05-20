@@ -19,7 +19,7 @@ const MonolithToMicroservices: FunctionComponent = () => {
                 style={{
                     position: 'relative',
                     width: 'auto',
-                    padding: '0 0 316.05%',
+                    padding: '0 0 294.84%',
                     height: '0',
                     top: '0',
                     left: '0',
@@ -28,12 +28,13 @@ const MonolithToMicroservices: FunctionComponent = () => {
                     margin: '0',
                     border: '0 none',
                 }}
-                id="experience-62867d97cd078"
-                data-aspectratio="0.316403"
+                id="experience-62855a111d5a6"
+                data-aspectratio="0.33916269"
+                data-mobile-aspectratio="0.14484881"
             >
                 <iframe
                     allowFullScreen={true}
-                    src="https://view.ceros.com/sourcegraph/test?heightOverride=3603"
+                    src="https://view.ceros.com/sourcegraph/successful-monolith-to-microservices?heightOverride=3774&mobileHeightOverride=5523"
                     // eslint-disable-next-line react/forbid-dom-props
                     style={{
                         position: 'absolute',
