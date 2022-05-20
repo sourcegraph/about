@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 import { ContentSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-import { Features, VideoElement } from '@interfaces/featureDisplay'
+import { Features, VideoElement } from '@interfaces/featureWalkthrough'
 
 import { COLORS } from './ContentSection'
 
@@ -16,7 +16,7 @@ interface Props {
     color?: keyof typeof COLORS
 }
 
-export const FeatureDisplay: FunctionComponent<Props> = ({ features, className = '', color = 'none' }) => {
+export const FeatureWalkthrough: FunctionComponent<Props> = ({ features, className = '', color = 'none' }) => {
     useEffect(() => {
         const videos = features.map(
             (vid, index): VideoElement => ({

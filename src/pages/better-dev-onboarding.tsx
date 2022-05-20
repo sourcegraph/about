@@ -8,7 +8,7 @@ import {
     BlogResourceItem,
     ContentSection,
     CustomerLogos,
-    FeatureDisplay,
+    FeatureWalkthrough,
     IntegrationsSection,
     Layout,
 } from '@components'
@@ -97,7 +97,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <FeatureDisplay features={sourcegraphFeatures} className="pb-8" />
+        <FeatureWalkthrough features={sourcegraphFeatures} className="pb-8" />
 
         <div className="bg-light-gray-3">
             <IntegrationsSection />

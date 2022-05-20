@@ -1,4 +1,4 @@
-import { Features } from '@interfaces/featureDisplay'
+import { Features } from '@interfaces/featureWalkthrough'
 
 import batchChangesMp4 from '../pages/home/assets/animations/batch-changes.mp4'
 import batchChangesWebm from '../pages/home/assets/animations/batch-changes.webm'

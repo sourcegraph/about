@@ -69,7 +69,7 @@ export {
 export { Layout } from './Layout'
 export { WhitePaperPage } from './WhitePaperPage'
 export { ContentPage } from './ContentPage'
-export { FeatureDisplay } from './FeatureDisplay'
+export { FeatureWalkthrough } from './FeatureWalkthrough'
 
 // Pricing
 export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
