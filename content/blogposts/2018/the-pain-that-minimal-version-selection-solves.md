@@ -1,7 +1,9 @@
 ---
 title: 'Resolve Go dependencies with minimal version selection'
 externalTitle: 'How to resolve Go dependencies'
-author: 'Nick Snyder'
+authors:
+  - name: Nick Snyder
+    url: https://twitter.com/nickdsnyder
 publishDate: 2018-08-30T17:00-07:00
 description: 'Minimal version selection can help resolve Go dependencies. Learn how to use this methodology to produce high-fidelity builds by default.'
 externalDescription: 'Minimal version selection can help resolve Go dependencies. Learn how to use this methodology to produce high-fidelity builds by default.'

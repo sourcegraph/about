@@ -53,7 +53,6 @@ export interface FrontMatter {
         url?: string
     }
     author?: string
-    authorUrl?: string
     tags?: string[]
     changelogItems?: {
         url: string

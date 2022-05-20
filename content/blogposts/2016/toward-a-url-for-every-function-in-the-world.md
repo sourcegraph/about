@@ -1,6 +1,8 @@
 ---
 title: 'Toward a URL for every function in the world'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack
+    url: https://twitter.com/sqs
 publishDate: 2016-11-01T00:00-07:00
 tags: [
   "blog"

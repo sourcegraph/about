@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - Becoming a Go Contributor'
-author: 'Farhan Attamimi for the GopherCon Liveblog'
+authors:
+  - name: Farhan Attamimi for the GopherCon Liveblog
 publishDate: 2018-08-29T00:00-06:00
 tags: [
   "gophercon"

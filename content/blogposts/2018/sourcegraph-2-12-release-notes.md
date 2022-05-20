@@ -1,6 +1,7 @@
 ---
 title:  'Sourcegraph 2.12: Build your own Sourcegraph extensions, GitLab integration, code discussions, and self-service checkout'
-author: 'Dan Adler'
+authors:
+  - name: Dan Adler
 publishDate: 2018-10-15T12:00-07:00
 tags: [
   "blog"

@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph 3.11: Structural search, removed management console, language statistics, and NPM credentials campaign"
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-12-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.11

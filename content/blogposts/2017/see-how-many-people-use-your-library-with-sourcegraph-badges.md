@@ -1,6 +1,7 @@
 ---
 title: 'See how many people use your library, with Sourcegraph badges'
-author: 'Stephen Gutekanst'
+authors:
+  - name: Stephen Gutekanst
 publishDate: 2017-02-13T00:00-07:00
 tags: [
   "blog"

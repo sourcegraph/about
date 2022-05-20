@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph Launches Batch Changes to Help Enterprises Accelerate Development Velocity'
-author: Sourcegraph
+authors:
+  - name: Sourcegraph
+    url: https://about.sourcegraph.com
 publishDate: 2021-03-24T06:00
 tags: ['press']
 slug: sourcegraph-launches-batch-changes

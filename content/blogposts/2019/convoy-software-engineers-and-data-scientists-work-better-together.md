@@ -1,6 +1,8 @@
 ---
 title: At Convoy, Software Engineers and Data Scientists work better together
-author: Vanesa Ortiz
+authors:
+  - name: Vanesa Ortiz
+    url: https://twitter.com/vanesacodes
 publishDate: 2019-11-08T10:00-07:00
 tags: [
   blog

@@ -1,6 +1,7 @@
 ---
 title: 'How Caddy auto-detects HTTPS interception'
-author: 'Matt Holt'
+authors:
+  - name: Matt Holt
 publishDate: 2017-03-03T00:00-07:00
 tags: [
   "blog"

@@ -1,6 +1,8 @@
 ---
 title: 'When is it ok to recover from panics in Go?'
-author: 'Nick Snyder'
+authors:
+  - name: Nick Snyder
+    url: https://twitter.com/nickdsnyder
 publishDate: 2018-03-06T08:30-08:00
 tags: [
   "blog"

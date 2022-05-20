@@ -1,6 +1,7 @@
 ---
 title: 'Code intelligence on GitHub embedded code snippets'
-author: 'Matt King'
+authors:
+  - name: Matt King
 publishDate: 2017-08-24T00:00-07:00
 tags: [
   "blog"

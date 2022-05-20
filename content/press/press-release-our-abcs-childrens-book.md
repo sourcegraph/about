@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph Releases Free Digital Children's Book Titled 'Our ABCs: Always Be Coding'"
-author: Sourcegraph
+authors:
+  - name: Sourcegraph
+    url: https://about.sourcegraph.com
 publishDate: 2020-04-23T00:00
 tags: ['press']
 slug: our-abcs-childrens-book
