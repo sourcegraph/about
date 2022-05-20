@@ -1,8 +1,6 @@
 ---
 title: 'Sourcegraph Secures $23 Million Series B Round for Universal Code Search'
-authors:
-  - name: Sourcegraph
-    url: https://about.sourcegraph.com
+author: Sourcegraph
 publishDate: 2020-03-03T00:00
 tags: ['press']
 slug: sourcegraph-secures-series-b

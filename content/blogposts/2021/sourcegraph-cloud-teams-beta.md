@@ -1,9 +1,7 @@
 ---
 title: Sourcegraph Cloud for teams now available in private beta
 description: Get instant access to code navigation and intelligence across your team’s private code and 2M open source repositories. Sourcegraph Cloud for teams brings enterprise advantages to small teams.
-authors:
-  - name: Sourcegraph
-    url: https://about.sourcegraph.com
+author: Sourcegraph
 publishDate: 2021-12-09T00:00-07:00
 tags: [blog, announcement, cloud, beta]
 slug: sourcegraph-cloud-for-teams-now-in-private-beta

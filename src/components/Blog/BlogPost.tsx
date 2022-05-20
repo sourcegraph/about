@@ -35,12 +35,12 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
                     post.frontmatter.title
                 )}
             </h1>
-            {post.frontmatter.author && post.frontmatter.publishDate && (
+            {/* {post.frontmatter.author && post.frontmatter.publishDate && (
                 <p className="text-align-center text-secondary mb-0">
                     {post.frontmatter.author} on{' '}
                     <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
                 </p>
-            )}
+            )} */}
 
             {post.frontmatter.authors?.length && (
                 <p className="text-align-center text-secondary mb-0">

@@ -26,12 +26,13 @@ export const BlogListItem: FunctionComponent<PostIndexItem> = ({
                     <a className={`d-block ${titleLinkClassName}`}>{frontmatter.title}</a>
                 </Link>
             </h1>
-            {frontmatter.author && frontmatter.publishDate && (
+            {/* {frontmatter.author && frontmatter.publishDate && (
                 <p className="text-align-center text-secondary mb-0">
                     {frontmatter.author} on{' '}
                     <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
                 </p>
-            )}
+            )} */}
+
             {frontmatter.authors?.length && (
                 <p className="text-align-center text-secondary mb-0">
                     {frontmatter.authors.map((a, index) => (
