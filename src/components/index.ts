@@ -9,6 +9,7 @@ export { ContentSection } from './ContentSection'
 export { CustomerLogos } from './CustomerLogos'
 export { FormLegal } from './FormLegal'
 export { EmbeddedHubSpot } from './HubSpot'
+export { GuideLayout } from './GuideLayout'
 export { IntegrationsSection } from './IntegrationsSection'
 export { LeadershipSection } from './LeadershipSection'
 export { RequestDemoForm } from './RequestDemoForm'
@@ -75,7 +76,4 @@ export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
 export type { Features } from './Pricing'
 
 // Webinars
-export { WebinarLayout } from './Webinars'
-
-// Guides
-export { GuideLayout } from './Guides'
+export { WebinarLayout } from './WebinarLayout'

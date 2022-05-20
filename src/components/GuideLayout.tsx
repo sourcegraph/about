@@ -3,8 +3,6 @@ import { FunctionComponent, ReactNode } from 'react'
 import { ContentSection } from '@components'
 import { useHubSpot, HubSpotForm } from '@hooks'
 
-import styles from './GuideLayout.module.scss'
-
 interface Form {
     formId: string
     onFormSubmitted?: () => void
@@ -15,7 +13,7 @@ interface Props {
     subtitle: string
     description: ReactNode
     form: Form
-    formLabel: string
+    formLabel?: string
     children?: ReactNode
 }
 
@@ -47,8 +45,8 @@ export const GuideLayout: FunctionComponent<Props> = ({ title, subtitle, descrip
                     {description}
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
-                        <h2 className="font-weight-bold">{formLabel}</h2>
-                        <div className={`${styles.saturnBorder} border border-3 shadow-sm py-4 px-4 mt-3`}>
+                        {formLabel && <h2 className="font-weight-bold">{formLabel}</h2>}
+                        <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3">
                             <div id="form" />
                         </div>
                     </div>

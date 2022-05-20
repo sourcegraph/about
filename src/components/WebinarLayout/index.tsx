@@ -91,7 +91,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
                         <h2 className="font-weight-bold">Watch the on-demand webinar</h2>
-                        <div className={`${styles.saturnBorder} border border-3 shadow-sm py-4 px-4 mt-3`}>
+                        <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3">
                             <div id="form" />
                         </div>
                     </div>
