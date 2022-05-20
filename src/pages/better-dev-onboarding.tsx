@@ -115,7 +115,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection>
-            <div className="text-center max-w-550 mx-auto">
+            <div className="col-3 col-md-12 text-center max-w-550 mx-auto">
                 <h1 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h1>
                 <p>
                     <Link
