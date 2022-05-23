@@ -13,7 +13,7 @@ export const Guide: FunctionComponent = () => (
     >
         <WebinarAndGuideLayout
             title="Find and fix security vulnerabilities in the pursuit of healthy code"
-            formTitle="Download the guide"
+            formLabel="Download the guide"
             form={{
                 formId: 'b87dd2ef-1b61-484e-90b5-02a34e48ef82',
                 // onFormSubmitted: () => window.open(''),

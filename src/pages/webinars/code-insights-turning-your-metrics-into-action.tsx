@@ -30,7 +30,7 @@ export const Webinar: FunctionComponent = () => (
             title="How to track what really matters to you and your team"
             subtitle="Sourcegraph Code Insights: Turning Metrics into Action"
             speakers={speakers}
-            formTitle="Watch the on-demand webinar"
+            formLabel="Watch the on-demand webinar"
             form={{
                 formId: '66361163-5e08-4be3-8ab0-6590b70df69e',
                 onFormSubmitted: () => window.open('https://my.demio.com/recording/7BYqL99g'),

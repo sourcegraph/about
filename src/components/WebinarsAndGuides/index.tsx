@@ -32,7 +32,7 @@ interface Props {
     title: string
     subtitle?: string
     description: ReactNode
-    formTitle: string
+    formLabel: string
     form: Form
     speakers?: Speaker[]
     children?: ReactNode
@@ -43,7 +43,7 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
     subtitle,
     customer,
     description,
-    formTitle,
+    formLabel,
     form,
     speakers,
     children,
@@ -66,7 +66,7 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
 
     return (
         <>
-            <section className={isWebinarPg ? styles.hero : 'bg-gradient-venus-saturated'}>
+            <section className={isWebinarPg ? styles.webinar_hero : styles.guide_hero}>
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {/* Show SG & Customer logo for customer-based webinars */}
                     {customer && (
@@ -84,7 +84,7 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
                     )}
 
                     <div className={classNames('col-12', customer && 'col-lg-8')}>
-                        <h1 className="display-2 font-weight-bold mb-4">{title}</h1>
+                        <h1 className="display-2 font-weight-bold mb-4 mb-md-2">{title}</h1>
                         {subtitle && <h3 className="font-weight-normal max-w-525">{subtitle}</h3>}
                     </div>
                 </div>
@@ -95,8 +95,8 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
                     {description}
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
-                        <h2 className="font-weight-bold">{formTitle}</h2>
-                        <div className={`${styles.saturnBorder} border border-3 shadow-sm py-4 px-4 mt-3`}>
+                        <h2 className="font-weight-bold">{formLabel}</h2>
+                        <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
                             <div id="form" />
                         </div>
                     </div>

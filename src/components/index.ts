@@ -74,8 +74,5 @@ export { ContentPage } from './ContentPage'
 export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
 export type { Features } from './Pricing'
 
-// Webinars
+// Webinars & Guides
 export { WebinarAndGuideLayout } from './WebinarsAndGuides'
-
-// Guides
-export { GuideLayout } from './GuideLayout'

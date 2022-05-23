@@ -3,12 +3,22 @@
 @import 'node_modules/bootstrap/scss/mixins';
 @import 'node_modules/bootstrap/scss/variables';
 
-.hero {
+.webinar_hero {
     background: url('/bg-code-mars.png') no-repeat;
     background-size: cover;
 
     @include media-breakpoint-down(md) {
         background: url('/bg-code-mars-mobile.png') no-repeat;
+        background-size: cover;
+    }
+}
+
+.guide_hero {
+    background: url('/bg-venus.svg') no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-down(md) {
+        background: url('/bg-venus-mobile.svg') no-repeat;
         background-size: cover;
     }
 }
