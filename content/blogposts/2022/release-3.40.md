@@ -1,7 +1,7 @@
 ---
 title: 'Sourcegraph 3.40 release'
 publishDate: 2022-05-20T10:00-07:00
-description: 'Sourcegraph 3.40 introduces dependencies search for Python, faster local navigation for several languages, Batch Changes for Bitbucket Cloud, and direct sharing for individual code insights.'
+description: 'Sourcegraph 3.40 introduces dependencies search for Python, faster local navigation for several languages, Batch Changes for Bitbucket Cloud, and direct sharing for Code Insights visualizations.'
 tags: [blog, release]
 slug: 'release/3.40'
 published: true
@@ -32,7 +32,7 @@ Sourcegraph 3.40 is now available! Here are some highlights from this release:
 
 ## Search your Python dependencies
 
-Sourcegraph [dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search) now supports Python packages. You can now search through the Python dependencies of your repositories to easily identify the root cause of an error coming from the source code of a dependency or determine if any of your repository dependencies has a security vulnerability. We currently have support for poetry.lock and pipfile.lock files. Check out [this example search on Sourcegraph Cloud](https://sourcegraph.com/search?q=context:global+repo:deps%28%5Egithub%5C.com/textualize/rich%24%29+&patternType=literal).
+Sourcegraph [dependencies search](https://docs.sourcegraph.com/code_search/how-to/dependencies_search) now supports Python packages. You can now search through the Python dependencies of your repositories to easily identify the root cause of an error coming from the source code of a dependency or determine if any of your repository dependencies have a security vulnerability. We currently have support for poetry.lock and pipfile.lock files. Check out [this example search on Sourcegraph Cloud](https://sourcegraph.com/search?q=context:global+repo:deps%28%5Egithub%5C.com/textualize/rich%24%29+&patternType=literal).
 
 ## Local navigation for the top 8 languages is now faster and more accurate
 
@@ -42,7 +42,7 @@ We [previously improved navigation speed for Java code](https://about.sourcegrap
 
 Batch Changes is now available on Bitbucket Cloud. Batch Changes was previously only available on self-hosted deployments of Bitbucket; now, you can programmatically define changes across all of your Bitbucket repositories.
 
-## Share links to code insights
+## Share links to Code Insights charts
 
 [img placeholder]
 
