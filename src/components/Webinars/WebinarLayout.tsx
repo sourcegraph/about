@@ -51,7 +51,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
 
-    const isWebinarPg = useRouter().pathname.split('/')[0] === 'webinars'
+    const isWebinarPg = useRouter().pathname.split('/').slice(1)[0] === 'webinars'
 
     const hubSpotConfig: HubSpotForm = {
         portalId: '2762526',
