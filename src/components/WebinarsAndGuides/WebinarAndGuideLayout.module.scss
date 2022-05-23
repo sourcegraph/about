@@ -3,13 +3,25 @@
 @import 'node_modules/bootstrap/scss/mixins';
 @import 'node_modules/bootstrap/scss/variables';
 
-.webinar_hero {
+.webinar_customer_hero {
     background: url('/bg-code-mars.png') no-repeat;
     background-size: cover;
 
     @include media-breakpoint-down(md) {
         background: url('/bg-code-mars-mobile.png') no-repeat;
         background-size: cover;
+    }
+}
+
+.webinar_hero {
+    background: url('/bg-code-aquamarine.png') no-repeat;
+    background-size: cover;
+    color: $white;
+    
+    @include media-breakpoint-down(md) {
+        background: url('/bg-code-mars-mobile.png') no-repeat;
+        background-size: cover;
+        color: $black;
     }
 }
 

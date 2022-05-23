@@ -66,7 +66,14 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
 
     return (
         <>
-            <section className={isWebinarPg ? styles.webinar_hero : styles.guide_hero}>
+            {/* Hero bg differs if Guide vs. Webinar(Customer-based) vs. Webinar(Product-based) */}
+            <section className={
+                isWebinarPg
+                    ? customer
+                        ? styles.webinar_customer_hero
+                        : styles.webinar_hero
+                        : styles.guide_hero
+            }>
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {/* Show SG & Customer logo for customer-based webinars */}
                     {customer && (
@@ -126,5 +133,3 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
         </>
     )
 }
-
-export default WebinarAndGuideLayout
