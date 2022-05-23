@@ -1,13 +1,13 @@
 import { FunctionComponent, ReactNode } from 'react'
-import { useRouter } from 'next/router'
 
 import classNames from 'classnames'
+import { useRouter } from 'next/router'
 
 import { ContentSection } from '@components'
 import { breakpoints } from '@data'
 import { useWindowWidth, useHubSpot, HubSpotForm } from '@hooks'
 
-import styles from './WebinarLayout.module.scss'
+import styles from './WebinarAndGuideLayout.module.scss'
 
 interface Customer {
     name: string
@@ -38,7 +38,7 @@ interface Props {
     children?: ReactNode
 }
 
-export const WebinarLayout: FunctionComponent<Props> = ({
+export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
     title,
     subtitle,
     customer,
@@ -127,4 +127,4 @@ export const WebinarLayout: FunctionComponent<Props> = ({
     )
 }
 
-export default WebinarLayout
+export default WebinarAndGuideLayout
