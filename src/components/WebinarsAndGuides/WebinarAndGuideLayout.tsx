@@ -85,16 +85,16 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
 
                     <div className={classNames('col-12', customer && 'col-lg-8')}>
                         <h1 className="display-2 font-weight-bold mb-4">{title}</h1>
-                        {subtitle && <h3 className="font-weight-normal max-w-550">{subtitle}</h3>}
+                        {subtitle && <h3 className="font-weight-normal max-w-525">{subtitle}</h3>}
                     </div>
                 </div>
             </section>
 
-            <section className="bg-white pt-6 pb-3 pb-md-8">
+            <section className="bg-white py-6 pb-md-8">
                 <ContentSection className="d-flex flex-column-reverse flex-md-row">
                     {description}
 
-                    <div className="col-md-6 col-12 pb-md-0 pb-6">
+                    <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
                         <h2 className="font-weight-bold">{formTitle}</h2>
                         <div className={`${styles.saturnBorder} border border-3 shadow-sm py-4 px-4 mt-3`}>
                             <div id="form" />
