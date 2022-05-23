@@ -76,3 +76,6 @@ export type { Features } from './Pricing'
 
 // Webinars
 export { WebinarAndGuideLayout } from './WebinarsAndGuides'
+
+// Guides
+export { GuideLayout } from './GuideLayout'
