@@ -1,0 +1,14 @@
+@import '@styles/colors';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/variables';
+
+.hero {
+    background: url('/bg-venus.svg') no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-down(md) {
+        background: url('/bg-venus-mobile.svg') no-repeat;
+        background-size: cover;
+    }
+}
