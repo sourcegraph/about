@@ -85,12 +85,12 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
 
                     <div className={classNames('col-12', customer && 'col-lg-8')}>
                         <h1 className="display-2 font-weight-bold mb-4">{title}</h1>
-                        {subtitle && <h4 className="font-weight-normal">{subtitle}</h4>}
+                        {subtitle && <h3 className="font-weight-normal max-w-550">{subtitle}</h3>}
                     </div>
                 </div>
             </section>
 
-            <section className="bg-white py-6">
+            <section className="bg-white pt-6 pb-3 pb-md-8">
                 <ContentSection className="d-flex flex-column-reverse flex-md-row">
                     {description}
 
