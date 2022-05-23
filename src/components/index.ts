@@ -9,7 +9,6 @@ export { ContentSection } from './ContentSection'
 export { CustomerLogos } from './CustomerLogos'
 export { FormLegal } from './FormLegal'
 export { EmbeddedHubSpot } from './HubSpot'
-export { GuideLayout } from './GuideLayout'
 export { IntegrationsSection } from './IntegrationsSection'
 export { LeadershipSection } from './LeadershipSection'
 export { RequestDemoForm } from './RequestDemoForm'
@@ -77,3 +76,6 @@ export type { Features } from './Pricing'
 
 // Webinars
 export { WebinarLayout } from './WebinarLayout'
+
+// Guides
+export { GuideLayout } from './GuideLayout'
