@@ -34,13 +34,13 @@ export const GuideLayout: FunctionComponent<Props> = ({ title, subtitle, descrip
             <section className="bg-gradient-venus-saturated">
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     <div className="col-12">
-                        <h1 className="display-2 font-weight-bold mb-4">{title}</h1>
-                        <h4 className="display-3 max-w-750">{subtitle}</h4>
+                        <h1 className="display-2 font-weight-bold mb-4 mb-md-2">{title}</h1>
+                        <h3 className="font-weight-normal max-w-550">{subtitle}</h3>
                     </div>
                 </div>
             </section>
 
-            <section className="bg-white pt-6 pb-8">
+            <section className="bg-white pt-6 pb-3 pb-md-8">
                 <ContentSection className="d-flex flex-column-reverse flex-md-row">
                     {description}
 
