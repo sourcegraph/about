@@ -18,6 +18,7 @@ export const Guide: FunctionComponent = () => (
                 formId: 'af3bc75e-c4f0-43e7-9829-c1d5d59e0a56',
                 onFormSubmitted: () => window.open('/guides/optimizing-developer-onboarding.pdf'),
             }}
+            formLabel="Download the guide"
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <p>
