@@ -35,6 +35,7 @@ export const Webinar: FunctionComponent = () => (
                 logo: '/external-logos/nutanix-logo.svg',
                 href: 'https://nutanix.com',
             }}
+            formTitle="Watch the on-demand webinar"
             form={{
                 formId: 'abb86998-1a6a-4cfd-9888-ffba09c850c9',
                 onFormSubmitted: () => window.open('https://my.demio.com/recording/ANM9Sjbx'),

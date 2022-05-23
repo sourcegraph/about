@@ -1,4 +1,5 @@
 import { FunctionComponent, ReactNode } from 'react'
+import { useRouter } from 'next/router'
 
 import classNames from 'classnames'
 
@@ -29,10 +30,11 @@ interface Form {
 interface Props {
     customer?: Customer
     title: string
-    subtitle: string
+    subtitle?: string
     description: ReactNode
+    formTitle: string
     form: Form
-    speakers: Speaker[]
+    speakers?: Speaker[]
     children?: ReactNode
 }
 
@@ -41,12 +43,15 @@ export const WebinarLayout: FunctionComponent<Props> = ({
     subtitle,
     customer,
     description,
+    formTitle,
     form,
     speakers,
     children,
 }) => {
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
+
+    const isWebinarPg = useRouter().pathname.split('/')[0] === 'webinars'
 
     const hubSpotConfig: HubSpotForm = {
         portalId: '2762526',
@@ -61,7 +66,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
 
     return (
         <>
-            <section className={styles.hero}>
+            <section className={isWebinarPg ? styles.hero : 'bg-gradient-venus-saturated'}>
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {/* Show SG & Customer logo for customer-based webinars */}
                     {customer && (
@@ -80,7 +85,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
 
                     <div className={classNames('col-12', customer && 'col-lg-8')}>
                         <h1 className="display-2 font-weight-bold mb-4">{title}</h1>
-                        <h4 className="font-weight-normal">{subtitle}</h4>
+                        {subtitle && <h4 className="font-weight-normal">{subtitle}</h4>}
                     </div>
                 </div>
             </section>
@@ -90,7 +95,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                     {description}
 
                     <div className="col-md-6 col-12 pb-md-0 pb-6">
-                        <h2 className="font-weight-bold">Watch the on-demand webinar</h2>
+                        <h2 className="font-weight-bold">{formTitle}</h2>
                         <div className={`${styles.saturnBorder} border border-3 shadow-sm py-4 px-4 mt-3`}>
                             <div id="form" />
                         </div>
@@ -100,7 +105,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                 {children}
             </section>
 
-            <section className="bg-white pb-6">
+            {speakers?.length && <section className="bg-white pb-6">
                 <ContentSection>
                     <h2 className="font-weight-bold">Speakers</h2>
 
@@ -117,7 +122,7 @@ export const WebinarLayout: FunctionComponent<Props> = ({
                         ))}
                     </section>
                 </ContentSection>
-            </section>
+            </section>}
         </>
     )
 }
