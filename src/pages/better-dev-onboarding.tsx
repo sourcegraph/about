@@ -4,7 +4,6 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import {
-    BackButtonBold,
     BlogResourceItem,
     ContentSection,
     CustomerLogos,
@@ -55,7 +54,6 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                     <div className="container pb-4">
                         <div className="row">
                             <div className="col-lg-7 mb-8 mt-7">
-                                <BackButtonBold href="/use-cases" text="USE CASES" />
                                 <h1 className="display-2 font-weight-bold mb-4">
                                     Give your team a complete onboarding experience
                                 </h1>
