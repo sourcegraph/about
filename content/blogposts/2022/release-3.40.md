@@ -20,7 +20,7 @@ changelogItems:
   - description: '`search.largeFiles` now supports recursive globs. For example, it is now possible to configure `search.largeFiles` with a pattern like `**/*.lock` to index all lock files in a repository and make them searchable, even when they are larger than 1 MB each.'
     url: https://docs.sourcegraph.com/code_search/explanations/search_details
     category: Search
-  - description: 'The `setRepositoryPermissionsUnrestricted` mutation was added, which allows you to explicitly mark a repo as available to all Sourcegraph users on your instance. This allows you to open up repos to all new users on your instance without needing to add new users individually when they join.'
+  - description: 'The `setRepositoryPermissionsUnrestricted` mutation was added, which allows you to explicitly mark a repo as available to all Sourcegraph users on your instance. This allows you to open up repositories to all new users on your instance without needing to add new users individually when they join.'
     url: https://github.com/sourcegraph/sourcegraph/pull/35378
     category: Admin
 ---
