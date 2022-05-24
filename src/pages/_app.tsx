@@ -17,11 +17,18 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
 
             {/* // Import all top-level scripts here: https://nextjs.org/docs/messages/no-script-in-document-page */}
 
-            {/* Triblio "Webpage Personalization" for Sales/Marketing */}
+            {/* Triblio "Webpage Personalization" */}
             <Script
                 type="text/javascript"
                 src="https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8"
                 strategy="beforeInteractive"
+            />
+            
+            {/* Triblio "Analytics and Overlay Cards" */}
+            <Script
+                type="text/javascript"
+                src="https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8"
+                strategy="afterInteractive"
             />
 
             {/* Google Analytics */}
