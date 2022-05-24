@@ -64,25 +64,41 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                                     can find their own answers without waiting for someone to point them to the relevant
                                     code.
                                 </div>
-                                <div className="d-flex flex-column flex-lg-row pt-1">
-                                    <Link href="/demo" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                            title="Request a Demo."
+                                <div className="max-w-350 flex-column flex-md-row d-md-flex align-items-center">
+                                    <div className="mb-3 mb-md-0">
+                                        <Link
+                                            href="/demo"
+                                            data-button-style={buttonStyle.primary}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                            passHref={true}
                                         >
-                                            Request a demo
-                                        </a>
-                                    </Link>
-                                    <Link href="/get-started" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-outline-primary w-md-100"
-                                            title="Get started with Sourcegraph."
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                            <a
+                                                className="btn btn-primary w-100"
+                                                title="Request a Demo."
+                                            >
+                                                Request a demo
+                                            </a>
+                                        </Link>
+                                    </div>
+                                    <div className="ml-md-3">
+                                        <Link
+                                            href="/get-started"
+                                            data-button-style={buttonStyle.outline}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                            passHref={true}
                                         >
-                                            Get started
-                                        </a>
-                                    </Link>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                            <a
+                                                className="btn btn-outline-primary w-100"
+                                                title="Get started with Sourcegraph."
+                                            >
+                                                Get started
+                                            </a>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
