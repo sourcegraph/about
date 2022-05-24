@@ -11,9 +11,6 @@ changelogItems:
   - description: 'Code Insights will now automatically generate queries with a default value of `fork:no` and `archived:no` if these fields are not specified by the user. This removes the need to manually add these fields to have consistent behavior from historical to non-historical results.'
     url: https://github.com/sourcegraph/sourcegraph/pull/30204
     category: Code Insights
-  - description: 'Search-based Code Intelligence now recognizes local variables in Python, Java, JavaScript, TypeScript, C/C++, C#, Go, and Ruby. This provides a better code navigation experience out-of-the-box.'
-    url: https://github.com/sourcegraph/sourcegraph/pull/33689
-    category: Code Intelligence
   - description: '`type:commit` and `type:diff` searches containing `and`, `or`, and `not` queries have been optimized, and now return results significantly faster.'
     url: https://github.com/sourcegraph/sourcegraph/pull/34595
     category: Search
