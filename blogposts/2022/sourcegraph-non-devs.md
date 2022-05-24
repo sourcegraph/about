@@ -80,7 +80,7 @@ I quickly found [our search team had changed a limit](https://sourcegraph.com/gi
 
 I needed to finish writing the error messages that display to users for a major new feature. We have [error message guidelines](https://about.sourcegraph.com/handbook/communication/content_guidelines/actionable_language#error-messages) in our handbook, but it’s easier to quickly learn something with an example.
 
-**Search:** [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+error+try&patternType=regexp) quickly gave me dozens of in-product examples.
+**Search:** [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+Error%28+try+lang:TypeScript+&patternType=regexp) quickly gave me dozens of in-product examples.
 
 <p>
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
