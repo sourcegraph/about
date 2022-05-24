@@ -56,8 +56,8 @@ I’d just joined Sourcegraph in September 2020 as the first PM for the extensib
 
 **Follow-up situation:** We can quickly see the names of all of our view analytics events and be able to go to what page they’re triggered on with [this search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+logViewEvent%28%27...%27%29+count:all&patternType=structural). (Bonus: with the [Open-in-Figma extension](https://sourcegraph.com/extensions/Joelkw/open-in-figma) I can then 1-click open a mockup of the page to get an immediate understanding of “what page fires this event” without reading the code to figure out what page it renders.)
 
-<p align="center">
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc4?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 150%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc4?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 ### I’m mid-conversation with a customer. Is another team’s feature affecting our feature?
@@ -66,8 +66,8 @@ A customer was seeing incomplete result counts for the search results returned f
 
 **Search:** A term like “limit 5000” is likely to bring up many hits throughout our codebase, so I used [a diff search with a timeframe](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+type:diff+limit+5000+after:%22five+months+ago%22&patternType=regexp) to scope my search to the time the behavior started appearing.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTc5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 I quickly found [our search team had changed a limit](https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/commit/326d250079b789ca716878c6d2e5bc694b4ea97a?visible=1) that affected one of my team’s features. I was able to understand who made the change and why they made it in a few seconds.
@@ -82,8 +82,8 @@ I needed to finish writing the error messages that display to users for a major 
 
 **Search:** [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+Error%28+try+lang:TypeScript+&patternType=regexp) quickly gave me dozens of in-product examples.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 **Impact:** I was able to produce more unified product messaging.
@@ -96,8 +96,8 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 
 **Search:** [This search](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+mailto:...%40sourcegraph.com+-file:test+count:all&patternType=structural) showed me what email addresses were already in use.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgy?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgy?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 **Impact:** We learned we have a “feedback@sourcegraph” email that was better than the “support@” email I was about to use.
@@ -106,8 +106,8 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 
 **Follow-up situation:** What anchor text do we generally use for the email link, or do we display the direct email? [Search](https://sourcegraph.com/search?q=context:global+r:sourcegraph/+mailto:feedback%40sourcegraph.com&patternType=literal):
 
-<p align="center">
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg0?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 200%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg0?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 ### Should we use “prototype” or “experimental” for early-stage product features?
@@ -118,14 +118,14 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 
 [Search one](https://sourcegraph.com/search?q=context:global+r:sourcegraph/sourcegraph%24+experimental+count:all&patternType=regexp) returns 2.0k results.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg1?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg1?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 [Search two](https://sourcegraph.com/search?q=context:global+r:sourcegraph/sourcegraph%24+prototype+count:all&patternType=regexp) returns 452 results.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg2?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg2?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 **Impact:** In 60 seconds, we determined we used “experimental” fives times as often as “prototype.” Given that already existing, informal tendency, we [codified “experimental” in our handbook](https://handbook.sourcegraph.com/departments/product-engineering/product/process/beta_and_experimental_feature_labels) as the official Sourcegraph label.
@@ -142,14 +142,14 @@ The architecture of our internally facing data is ever changing, so it’s criti
 
 [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+file:%5Einternal/database/schema%5C.md+type:diff&patternType=literal) shows how our PostgreSQL database structure changes over time.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg3?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg3?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph+eventLogger.log%28+type:diff&patternType=literal) helps us stay on top of changing events. Our Data team has [code monitors](https://docs.sourcegraph.com/code_monitoring/how-tos/starting_points) set up so we get real-time notifications when individual events are added or removed.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg4?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg4?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 **Impact:** These searches put the information that analysts need in their hands so that they can understand our backend data structures when they create reports. We can click through the PRs that make these changes to understand the full context behind why a change was made and what it means.
@@ -162,8 +162,8 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
 
 **Search**: [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24+file:%5Ecmd/frontend/internal/app/updatecheck/handler%5C.go+json+type:diff&patternType=literal) checks for schema mirroring.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 **Impact:** A reality for most data teams is that telemetry sometimes breaks. At Sourcegraph, it used to take days to realize something was broken. It then took hours to search through logs to determine which change was made to our telemetry and how to fix it. Now, Sourcegraph code monitoring immediately alerts us when a change goes in and what it was, so we can minimize data loss.
@@ -176,8 +176,8 @@ Our data warehouse schemas need to mirror schemas in our telemetry code. If it d
 
 **Search**: [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/about+UA-40540747-20+type:diff&patternType=literal) finds which Google Analytics tags were in use on our site.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTkw?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTkw?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 **Impact:** Our Google Analytics had inconsistent data from historical changes in our web properties and nobody quite knew which web property to use within Google Analytics because they all had different numbers. I did a diff search for which tags were actually on our site and the history of changes and the search above came back with results. I was able to see which tag was in production, [when it was added](https://sourcegraph.com/github.com/sourcegraph/about/-/commit/2b60ef75c86b97bd27c8901c7ff55aadafc55d42), and who to talk to about the history of our Google Tag Manager (spoiler: it was our CEO [Quinn Slack](https://handbook.sourcegraph.com/team/#quinn-slack) – I decided not to bother him with it and just move forward!)
@@ -192,22 +192,22 @@ We use HubSpot forms for all of our opt-in form submissions. These forms are cod
 
 We used [this search](https://sourcegraph.com/search?q=context:global+repo:sourcegraph/sourcegraph+hubspot&patternType=literal) to start the process, then:
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTky?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTky?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 Then:
 
 HubSpot -> Find references on [hubspot util](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:12#tab=references) or [SubmitForm](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph@04a9ed224cd9887f54040c0ee388074df345c7df/-/blob/cmd/frontend/graphqlbackend/survey_response.go?L113:33#tab=references)
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjA5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 250px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjA5?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 [This file](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegraph/-/blob/cmd/frontend/graphqlbackend/survey_response.go#L107:20) to figure out which fields we’re sending back and the data type.
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjEw?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjEw?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 We could then send this to a dev to understand how we implement forms and who to talk to if needed.
@@ -216,8 +216,8 @@ We then gave [this link](https://sourcegraph.com/gitlab.com/sourcegraph/sourcegr
 
 We were wondering if <code class="language-text">`is_server_admin`</code> in HubSpot was populating from our code or HubSpot workflow, so I searched [this](https://sourcegraph.com/search?q=context:global+repo:%5Egitlab%5C.com/sourcegraph/sourcegraph%24%4004a9ed2+isServerAdmin&patternType=literal)
 
-<p>
-    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjEx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 200px;"></iframe>
+<p style="width: 100%">
+    <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MjEx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
 </p>
 
 **Impact**: I was able to give our software engineers a clear requirements document on which fields they should pull from when implementing a new HubSpot field. I was also able to include best practices for adding HubSpot forms in our code based on previous PRs we had committed.
