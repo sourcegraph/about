@@ -35,9 +35,9 @@ Sourcegraph [dependencies search](https://docs.sourcegraph.com/code_search/how-t
 
 We [previously improved navigation speed for Java code](https://about.sourcegraph.com/blog/release/3.39/#Local-navigation-for-Java-code-is-now-faster-and-more-accurate) in Sourcegraph 3.39 by using [tree-sitter](https://tree-sitter.github.io/tree-sitter/). We’re now using tree-sitter for Go, C#, Python, JavaScript, TypeScript, C/C++, and Ruby as well. Hover tooltips for local variables in those languages will now populate far faster and the results will be more precise, so you can navigate through files quickly and with more confidence in the tooltip information.
 
-## Batch Changes on Bitbucket Cloud
+## Batch Changes on Bitbucket Cloud (experimental)
 
-Batch Changes is now available on Bitbucket Cloud. Batch Changes was previously only available on self-hosted deployments of Bitbucket; now, you can programmatically define changes across all of your Bitbucket repositories.
+Batch Changes is now available on Bitbucket Cloud as an experimental feature. Batch Changes was previously only available on self-hosted deployments of Bitbucket; now, you can programmatically define changes across all of your Bitbucket repositories.
 
 ## Share links to Code Insights charts
 
