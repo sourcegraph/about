@@ -1,4 +1,4 @@
-import { Features } from '@interfaces/featureWalkthrough'
+import { IFeatures } from '@interfaces/featureWalkthrough'
 
 import batchChangesMp4 from '../pages/home/assets/animations/batch-changes.mp4'
 import batchChangesWebm from '../pages/home/assets/animations/batch-changes.webm'
@@ -9,7 +9,7 @@ import codeIntelWebm from '../pages/home/assets/animations/code-intel.webm'
 import codeSearchMp4 from '../pages/home/assets/animations/code-search.mp4'
 import codeSearchWebm from '../pages/home/assets/animations/code-search.webm'
 
-export const sourcegraphFeatures: Features[] = [
+export const sourcegraphFeatures: IFeatures[] = [
     {
         productFeature: 'code search',
         title: 'Find what you need: any code host, language, or repository',
