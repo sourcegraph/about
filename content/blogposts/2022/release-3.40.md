@@ -26,9 +26,9 @@ changelogItems:
 ---
 
 <div className="alert alert-primary" role="alert" style={{maxWidth:'650px', alignItems:'center', margin: 'auto auto 20px auto'}}>
-      We have identified an issue impacting Sourcegraph users who connect to certain versions GitLab, causing some repos and search results to not appear. We are working to resolve this in an upcoming patch. See the <a href="https://sourcegraphstatus.com/">status page</a> for more information on the incident.
+      GitLab 15.0 no longer supports OAuth tokens that don’t expire, which can cause authentication between Sourcegraph and GitLab to fail. We are working to fix compatibility with GitLab 15.0 (and support expiring OAuth tokens) in an upcoming patch.
   <br/>
-  We recommend GitLab users skip 3.40 and wait for the patch to be released before upgrading.
+  We recommend GitLab users wait for the patch to be released before upgrading to 3.40.
 </div>
 
 Sourcegraph 3.40 is now available! Here are some highlights from this release:
