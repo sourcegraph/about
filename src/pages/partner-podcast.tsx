@@ -12,7 +12,7 @@ const blogResourceItems = [
             'Download the guide to developer onboarding and learn how to shift to a culture of continuous onboarding in your engineering organization.',
         type: 'Guide',
         img: {
-            src: '/guides/dev-onboarding/thumbnail.png',
+            src: 'blog/thumbnails/continuous-developer-onboarding.png',
             alt: 'Continuous developer onboarding guide thumbnail',
         },
         href: '/guides/continuous-developer-onboarding',
