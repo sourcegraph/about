@@ -2,10 +2,10 @@
 
 $maxBreakpoint: map.get($grid-breakpoints, 'xl');
 
-@for $spacing from 25 through $maxBreakpoint {
-    $increment: $spacing + 25;
+@for $spacing from 50 through $maxBreakpoint {
+    $increment: $spacing + 50;
 
-    @if $increment % 25 == 0 {
+    @if $increment % 50 == 0 {
         // Utility classes for heights, min-heights and max-widths
         .h-#{$spacing} {
             height: #{$spacing}px;
