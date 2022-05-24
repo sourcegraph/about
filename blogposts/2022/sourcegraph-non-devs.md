@@ -132,7 +132,7 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 
 ## Analytics and Business Operations
 
-_This section was written by [Eric-Brody Moore](https://handbook.sourcegraph.com/team/#eric-brody-moore), a member of the Business Operations team. HBO only had room for one Sourcegrapher biopic and they unfortunately chose Joel despite Eric also being a brilliant and kind human being.”_
+_This section was written by [Eric-Brody Moore](https://handbook.sourcegraph.com/team/#eric-brody-moore), a member of the Business Operations team. HBO only had room for one Sourcegrapher biopic and they unfortunately chose Joel despite Eric also being a brilliant and kind human being._
 
 ### How has the Sourcegraph product data architecture changed over time?
 
