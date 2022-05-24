@@ -4,19 +4,14 @@ import classNames from 'classnames'
 import { startCase } from 'lodash'
 import Link from 'next/link'
 
-import { ContentSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { Features, VideoElement } from '@interfaces/featureWalkthrough'
 
-import { COLORS } from './ContentSection'
-
 interface Props {
     features: Features[]
-    className?: string
-    color?: keyof typeof COLORS
 }
 
-export const FeatureWalkthrough: FunctionComponent<Props> = ({ features, className = '', color = 'none' }) => {
+export const FeatureWalkthrough: FunctionComponent<Props> = ({ features }) => {
     useEffect(() => {
         const videos = features.map(
             (vid, index): VideoElement => ({
@@ -49,7 +44,7 @@ export const FeatureWalkthrough: FunctionComponent<Props> = ({ features, classNa
     }, [features])
 
     return (
-52:         <ContentSection color={color} className={className}>
+        <>
             <div className="text-center mt-8 pt-4 mb-7">
                 <h1 className="font-weight-bold">How teams use Sourcegraph</h1>
                 <p className="max-w-500 mx-auto">
@@ -123,6 +118,6 @@ export const FeatureWalkthrough: FunctionComponent<Props> = ({ features, classNa
                     </div>
                 </div>
             ))}
-        </ContentSection>
+        </>
     )
 }

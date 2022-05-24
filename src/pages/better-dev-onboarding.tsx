@@ -97,7 +97,9 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <FeatureWalkthrough features={sourcegraphFeatures} className="pb-8" />
+        <ContentSection className="pb-8">
+            <FeatureWalkthrough features={sourcegraphFeatures} />
+        </ContentSection>
 
         <div className="bg-light-gray-3">
             <IntegrationsSection />
