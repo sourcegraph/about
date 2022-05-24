@@ -1,12 +1,12 @@
 import { ReactFragment } from 'react'
 
-import { Video } from './video'
+import { IVideo } from './video'
 
-export interface Features {
+export interface IFeatures {
     productFeature: string
     title: string
     description: string | ReactFragment
     details: string[]
     ctaLink: string
-    video: Video
+    video: IVideo
 }

@@ -5,17 +5,17 @@ import { startCase } from 'lodash'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
-import { Features } from '@interfaces/featureWalkthrough'
-import { VideoElement } from '@interfaces/video'
+import { IFeatures } from '@interfaces/featureWalkthrough'
+import { IVideoElement } from '@interfaces/video'
 
 interface Props {
-    features: Features[]
+    features: IFeatures[]
 }
 
 export const FeatureWalkthrough: FunctionComponent<Props> = ({ features }) => {
     useEffect(() => {
         const videos = features.map(
-            (vid, index): VideoElement => ({
+            (vid, index): IVideoElement => ({
                 el: document.querySelector(`.video-${index}`),
                 paused: true,
             })

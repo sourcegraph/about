@@ -1,9 +1,9 @@
-export interface Video {
+export interface IVideo {
     mp4: string
     webm: string
 }
 
-export interface VideoElement {
+export interface IVideoElement {
     el: HTMLVideoElement | null
     paused: boolean
 }
