@@ -49,7 +49,7 @@ export const FeatureWalkthrough: FunctionComponent<Props> = ({ features, classNa
     }, [features])
 
     return (
-        <ContentSection color={`${color}`} className={`${className}`}>
+52:         <ContentSection color={color} className={className}>
             <div className="text-center mt-8 pt-4 mb-7">
                 <h1 className="font-weight-bold">How teams use Sourcegraph</h1>
                 <p className="max-w-500 mx-auto">
