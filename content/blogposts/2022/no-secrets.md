@@ -44,6 +44,6 @@ No Secrets! is a great way to get started but to truly protect your secrets, you
 
 [GitHub scans repositories](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning) for known types of secrets to prevent fraudulent use of secrets that were committed accidentally but they are limited to services they have [partnered with](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets-for-partner-patterns). No Secrets! is [open source](https://github.com/sourcegraph-community/no-secrets) so feel free to add any patterns (in regex syntax) to the [search console query](https://github.com/sourcegraph-community/no-secrets/blob/main/sourcegraph-console-query.txt).
 
-🍻 Cheers to no more secrets in your public repositories! Join the discussion on Hacker News.
+🍻 Cheers to no more secrets in your public repositories! Join the discussion on [Hacker News](https://news.ycombinator.com/item?id=31497489).
 
 _Thanks to the following people for helping with this post: Beyang Liu, André Eleuterio, and Nick Moore._
