@@ -25,6 +25,12 @@ changelogItems:
     category: Admin
 ---
 
+<div className="alert alert-primary" role="alert" style={{maxWidth:'650px', alignItems:'center', margin: 'auto auto 20px auto'}}>
+      We have identified an issue impacting Sourcegraph users who connect to certain versions GitLab, causing some repos and search results to not appear. We are working to resolve this in an upcoming patch. See the <a href="https://sourcegraphstatus.com/">status page</a> for more information on the incident and which versions of GitLab are impacted.
+  <br/>
+  For now, we recommend that GitLab users skip Sourcegraph 3.40 and wait for a patch to be released before upgrading.
+</div>
+
 Sourcegraph 3.40 is now available! Here are some highlights from this release:
 
 ## Search your Python dependencies
