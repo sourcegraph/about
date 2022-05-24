@@ -1,6 +1,6 @@
 ---
 title: 'Sourcegraph 3.40 release'
-publishDate: 2022-05-20T10:00-07:00
+publishDate: 2022-05-24T10:00-07:00
 description: 'Sourcegraph 3.40 introduces dependencies search for Python, faster local navigation for several languages, Batch Changes for Bitbucket Cloud, and direct sharing for Code Insights visualizations.'
 tags: [blog, release]
 slug: 'release/3.40'
