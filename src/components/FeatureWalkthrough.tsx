@@ -5,7 +5,8 @@ import { startCase } from 'lodash'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
-import { Features, VideoElement } from '@interfaces/featureWalkthrough'
+import { Features } from '@interfaces/featureWalkthrough'
+import { VideoElement } from '@interfaces/video'
 
 interface Props {
     features: Features[]

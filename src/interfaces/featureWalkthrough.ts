@@ -1,14 +1,6 @@
 import { ReactFragment } from 'react'
 
-export interface Video {
-    mp4: string
-    webm: string
-}
-
-export interface VideoElement {
-    el: HTMLVideoElement | null
-    paused: boolean
-}
+import { Video } from './video'
 
 export interface Features {
     productFeature: string
