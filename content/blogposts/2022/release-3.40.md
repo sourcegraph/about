@@ -17,10 +17,10 @@ changelogItems:
   - description: '`-language` is a valid filter, but the web app previously displayed it as invalid. This bug has been fixed to reflect it as valid.'
     url: https://github.com/sourcegraph/sourcegraph/pull/34949
     category: Search
-  - description: '`search.largeFiles` now supports recursive globs. For example, it is now possible to specify a pattern like `**/*.lock` to match a lock file anywhere in a repository.'
+  - description: '`search.largeFiles` now supports recursive globs. For example, it is now possible to configure `search.largeFiles` with a pattern like `**/*.lock` to index all lock files in a repository and make them searchable, even when they are larger than 1 MB each.'
     url: https://docs.sourcegraph.com/code_search/explanations/search_details
     category: Search
-  - description: 'The `setRepositoryPermissionsUnrestricted` mutation was added, which allows you to explicitly mark a repo as available to all Sourcegraph users.'
+  - description: 'The `setRepositoryPermissionsUnrestricted` mutation was added, which allows you to explicitly mark a repo as available to all Sourcegraph users on your instance. This allows you to open up repos to all new users on your instance without needing to add new users individually when they join.'
     url: https://github.com/sourcegraph/sourcegraph/pull/35378
     category: Admin
 ---
@@ -33,7 +33,7 @@ Sourcegraph [dependencies search](https://docs.sourcegraph.com/code_search/how-t
 
 ## Local navigation for the top 8 languages is now faster and more accurate
 
-We [previously improved navigation speed for Java code](https://about.sourcegraph.com/blog/release/3.39/#Local-navigation-for-Java-code-is-now-faster-and-more-accurate) in Sourcegraph 3.39. We’ve now made the same improvements for Go, C#, Python, JavaScript, TypeScript, C/C++, and Ruby, so you can navigate your code more quickly and precisely.
+We [previously improved navigation speed for Java code](https://about.sourcegraph.com/blog/release/3.39/#Local-navigation-for-Java-code-is-now-faster-and-more-accurate) in Sourcegraph 3.39 by using [tree-sitter](https://tree-sitter.github.io/tree-sitter/). We’re now using tree-sitter for Go, C#, Python, JavaScript, TypeScript, C/C++, and Ruby as well. Hover tooltips for local variables in those languages will now populate far faster and the results will be more precise, so you can navigate through files quickly and with more confidence in the tooltip information.
 
 ## Batch Changes on Bitbucket Cloud
 
