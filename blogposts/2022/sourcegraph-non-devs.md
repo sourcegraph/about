@@ -116,13 +116,13 @@ I needed to add a contact email to some new documentation, but wasn’t sure wha
 
 **Searches:**
 
-[Search one](https://sourcegraph.com/search?q=context:global+r:sourcegraph/sourcegraph%24+experimental+count:all&patternType=regexp)
+[Search one](https://sourcegraph.com/search?q=context:global+r:sourcegraph/sourcegraph%24+experimental+count:all&patternType=regexp) returns 2.0k results.
 
 <p>
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg1?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
 </p>
 
-[Search two](https://sourcegraph.com/search?q=context:global+r:sourcegraph/sourcegraph%24+prototype+count:all&patternType=regexp)
+[Search two](https://sourcegraph.com/search?q=context:global+r:sourcegraph/sourcegraph%24+prototype+count:all&patternType=regexp) returns 452 results.
 
 <p>
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTg2?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px;"></iframe>
