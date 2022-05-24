@@ -7,7 +7,12 @@ import { ContentSection } from '@components'
 import { breakpoints } from '@data'
 import { useWindowWidth, useHubSpot, HubSpotForm } from '@hooks'
 
-import styles from './WebinarAndGuideLayout.module.scss'
+import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
+import guideBg from './assets/hero/bg-code-aquamarine.png'
+import webinarCustomerMobileBg from './assets/hero/bg-code-mars-mobile.png'
+import webinarCustomerBg from './assets/hero/bg-code-mars.png'
+import webinarProductMobileBg from './assets/hero/bg-code-venus-mobile.png'
+import webinarProductBg from './assets/hero/bg-code-venus.png'
 
 interface Customer {
     name: string
@@ -64,16 +69,34 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
     }
     useHubSpot(hubSpotConfig)
 
+    const webinarCustomerMobileHeroStyle = { background: `url('${webinarCustomerMobileBg.src}')` }
+    const webinarCustomerHeroStyle = { background: `url('${webinarCustomerBg.src}')` }
+    const webinarProductMobileHeroStyle = { background: `url('${webinarProductMobileBg.src}')` }
+    const webinarProductHeroStyle = { background: `url('${webinarProductBg.src}')` }
+    const guideHeroStyle = { background: `url('${guideBg.src}')` }
+    const guideMobileHeroStyle = { background: `url('${guideMobileBg.src}')` }
+
+    const determineHeroStyle = (): { background: string } => {
+        if (isWebinarPg) {
+            // Customer-based Webinar
+            if (customer) {
+                return isMdOrDown ? webinarCustomerMobileHeroStyle : webinarCustomerHeroStyle
+            }
+            // Product-based Webinar
+            return isMdOrDown ? webinarProductMobileHeroStyle : webinarProductHeroStyle
+        }
+        if (!isWebinarPg) {
+            // Guides
+            return isMdOrDown ? guideMobileHeroStyle : guideHeroStyle
+        }
+        return webinarProductHeroStyle
+    }
+
     return (
         <>
-            {/* Hero bg differs if Guide vs. Webinar(Customer-based) vs. Webinar(Product-based) */}
-            <section className={
-                isWebinarPg
-                    ? customer
-                        ? styles.webinar_customer_hero
-                        : styles.webinar_hero
-                        : styles.guide_hero
-            }>
+            {/* eslint-disable-next-line react/forbid-dom-props */}
+            <section style={determineHeroStyle()} className={classNames('bg-cover', !isWebinarPg && 'text-white')}>
+                {/* Hero bg differs if Guide vs. Webinar(Customer-based) vs. Webinar(Product-based) */}
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {/* Show SG & Customer logo for customer-based webinars */}
                     {customer && (
