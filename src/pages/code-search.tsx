@@ -26,9 +26,9 @@ export const CodeSearchPage: FunctionComponent = () => (
                             Onboard to a new codebase, find answers faster, and identify security risks with universal
                             code search.
                         </p>
-                        <div className="pt-1">
+                        <div className="d-flex flex-column flex-lg-row max-w-sm-400 pt-1">
                             <Link
-                                href="/get-started"
+                                href="/demo"
                                 passHref={true}
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.hero}
@@ -36,22 +36,24 @@ export const CodeSearchPage: FunctionComponent = () => (
                             >
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
-                                    className="btn btn-primary mr-3"
-                                    title="Use this if you want to search your (or your company's) code, invite teammates, and try all the features."
+                                    className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
+                                    title="Request a Demo."
                                 >
-                                    Deploy locally <ArrowRightIcon className="ml-1" />
+                                    Request a demo
                                 </a>
                             </Link>
-                            <a
-                                className="btn btn-outline-primary my-3"
+                            <Link
+                                href="/get-started"
+                                passHref={true}
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.hero}
                                 data-button-type="cta"
-                                href="https://sourcegraph.com/search"
-                                title="Use this if you want to search across top open source repositories (or add your own projects)."
                             >
-                                Search open source <ArrowRightIcon className="ml-1" />
-                            </a>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a className="btn btn-outline-primary w-md-100" title="Try Sourcegraph.">
+                                    Try Sourcegraph now
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
