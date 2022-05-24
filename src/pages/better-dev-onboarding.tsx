@@ -11,7 +11,7 @@ import {
     IntegrationsSection,
     Layout,
 } from '@components'
-import { buttonStyle, buttonLocation, sourcegraphFeatures } from '@data'
+import { buttonStyle, buttonLocation } from '@data'
 
 import styles from './use-cases/useCases.module.scss'
 
@@ -23,9 +23,9 @@ const resourceItems = [
         type: 'Guide',
         img: {
             src: 'blog/thumbnails/continuous-developer-onboarding.png',
-            alt: 'Log4j Log4Shell 0-day blog thumbnail',
+            alt: 'Continuous developer onboarding guide thumbnail',
         },
-        href: '/blog/log4j-log4shell-0-day',
+        href: '/guides/continuous-developer-onboarding',
     },
     {
         title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
@@ -109,7 +109,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         </ContentSection>
 
         <ContentSection className="pb-8">
-            <FeatureWalkthrough features={sourcegraphFeatures} />
+            <FeatureWalkthrough />
         </ContentSection>
 
         <div className="bg-light-gray-3">
