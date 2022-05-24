@@ -80,7 +80,7 @@ I quickly found [our search team had changed a limit](https://sourcegraph.com/gi
 
 I needed to finish writing the error messages that display to users for a major new feature. We have [error message guidelines](https://about.sourcegraph.com/handbook/communication/content_guidelines/actionable_language#error-messages) in our handbook, but it’s easier to quickly learn something with an example.
 
-**Search:** [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+Error%28+try+lang:TypeScript+&patternType=regexp) quickly gave me dozens of in-product examples.
+**Search:** [This search](https://sourcegraph.com/search?q=context:global+repo:%5Egithub%5C.com/sourcegraph/sourcegraph%24+Error%28+try+lang:TypeScript+&patternType=regexp) quickly gave me numerous in-product examples.
 
 <p style="width: 100%">
     <iframe src="https://sourcegraph.com/embed/notebooks/Tm90ZWJvb2s6MTgx?theme=light" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups" style="width: 100%; height: 300px"></iframe>
@@ -224,4 +224,4 @@ We were wondering if <code class="language-text">`is_server_admin`</code> in Hub
 
 **Time saved**: I saved a few async hours going back and forth with a software engineer to answer a question from our marketing team, and saved any time I would’ve gone back and forth with our software engineering team on building new forms into product.
 
-If you're interested in trying Sourcegraph search for yourself, you can [sign up for an account](https://sourcegraph.com/search) and get started searching your codebase and the [OSS universe](https://about.sourcegraph.com/blog/indexing-the-oss-universe-update-more-code-hosts/) in seconds. If you're interested in Search Notebooks, you can create a Sourcegraph account and [start documenting your searches today](https://sourcegraph.com/notebooks).
+If you're interested in trying Sourcegraph search for yourself, you can [sign up for an account](https://sourcegraph.com/search) and get started searching your codebase and the [OSS universe](https://about.sourcegraph.com/blog/indexing-the-oss-universe-update-more-code-hosts/) in seconds. If you're interested in Notebooks, you can create a Sourcegraph account and [start documenting your searches today](https://sourcegraph.com/notebooks).
