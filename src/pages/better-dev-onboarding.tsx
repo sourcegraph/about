@@ -74,10 +74,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                                             passHref={true}
                                         >
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a
-                                                className="btn btn-primary w-100"
-                                                title="Request a Demo."
-                                            >
+                                            <a className="btn btn-primary w-100" title="Request a Demo.">
                                                 Request a demo
                                             </a>
                                         </Link>
