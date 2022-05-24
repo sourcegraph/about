@@ -1,6 +1,7 @@
 ---
 title: '“It’s small things that, when combined, make your development experience that much more pleasant”: Dev Tool Time with Paul Jolly'
-description: 'Paul Jolly, maintainer on the CUE project and co-creator of Play with Go, shares how a minimalist desk setup, combined with the sophisticated programming language CUE, creates a authors:
+description: 'Paul Jolly, maintainer on the CUE project and co-creator of Play with Go, shares how a minimalist desk setup, combined with the sophisticated programming language CUE, creates a streamlined development environment.'
+authors:
   - name: Nick Moore
     url: https://twitter.com/nickwritesit
 publishDate: 2021-09-22T10:00-07:00
