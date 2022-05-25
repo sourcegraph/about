@@ -76,20 +76,20 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
     const guideHeroStyle = { background: `url('${guideBg.src}')` }
     const guideMobileHeroStyle = { background: `url('${guideMobileBg.src}')` }
 
-    const determineHeroStyle = (): { background: string } => {
+    const heroImage = (): { src: string } => {
         if (isWebinarPg) {
             // Customer-based Webinar
             if (customer) {
-                return isMdOrDown ? webinarCustomerMobileHeroStyle : webinarCustomerHeroStyle
+                return isMdOrDown ? webinarCustomerMobileBg : webinarCustomerBg
             }
             // Product-based Webinar
-            return isMdOrDown ? webinarProductMobileHeroStyle : webinarProductHeroStyle
+            return isMdOrDown ? webinarProductMobileBg : webinarProductBg
         }
         if (!isWebinarPg) {
             // Guides
-            return isMdOrDown ? guideMobileHeroStyle : guideHeroStyle
+            return isMdOrDown ? guideMobileBg : guideBg
         }
-        return webinarProductHeroStyle
+        return webinarProductBg
     }
 
     return (
