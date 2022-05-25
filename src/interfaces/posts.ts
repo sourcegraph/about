@@ -130,6 +130,7 @@ export enum BlogType {
     PressRelease = 'press',
     Podcast = 'podcast',
     Blog = 'blog',
+    Resource = 'resources'
 }
 
 export interface BlogTypeInfo {

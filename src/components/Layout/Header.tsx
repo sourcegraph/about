@@ -71,6 +71,7 @@ const Header: FunctionComponent<Props> = props => {
                                     Dev Tool Time
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="/podcast/">Sourcegraph Podcast</NavDropdown.Item>
+                                <NavDropdown.Item href="/resources/">Resources</NavDropdown.Item>
                             </NavDropdown>
 
                             <NavDropdown id="customersDropdown" title="Customers">
@@ -190,6 +191,9 @@ const Header: FunctionComponent<Props> = props => {
                                         </li>
                                         <li className="nav-link" role="presentation">
                                             <Link href="/podcast">Podcast</Link>
+                                        </li>
+                                        <li className="nav-link" role="presentation">
+                                            <Link href="/resources">Resources</Link>
                                         </li>
                                     </ul>
                                 </li>
