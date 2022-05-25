@@ -10,9 +10,7 @@ on:
 
     # Glob paths to dismiss PR approvals
     paths:
-      - 'docs/**/*'
-      - 'blogposts/**/*'
-      - 'podcast/**/*'
+      - 'content/**/*'
 
 jobs:
   approve:
