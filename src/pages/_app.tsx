@@ -19,6 +19,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
 
             {/* Triblio "Webpage Personalization" */}
             <Script
+                id="triblio-p"
                 type="text/javascript"
                 src="https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8"
                 strategy="beforeInteractive"
@@ -26,6 +27,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
             
             {/* Triblio "Analytics and Overlay Cards" */}
             <Script
+                id="triblio-a"
                 type="text/javascript"
                 src="https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8"
                 strategy="afterInteractive"
@@ -78,8 +80,8 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
 
             {/* Drift */}
             <Script
-                type="text/javascript"
                 id="drift"
+                type="text/javascript"
                 strategy="afterInteractive"
             >
                 {`
