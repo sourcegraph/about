@@ -95,7 +95,7 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
     return (
         <>
             {/* eslint-disable-next-line react/forbid-dom-props */}
-            <section style={determineHeroStyle()} className={classNames('bg-cover', !isWebinarPg && 'text-white')}>
+            <section style={{ backgroundImage: `url('${heroImage().src}')` }} className={classNames('bg-cover', !isWebinarPg && 'text-white')}>
                 {/* Hero bg differs if Guide vs. Webinar(Customer-based) vs. Webinar(Product-based) */}
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {/* Show SG & Customer logo for customer-based webinars */}
