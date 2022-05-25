@@ -1,1 +1,1 @@
-module.exports = require('./website/node_modules/@sourcegraph/prettierrc')
+module.exports = require('@sourcegraph/prettierrc')
