@@ -54,8 +54,8 @@ Instead of orienting around action items or tactical steps, we oriented our effo
 
 At the highest level, these problems looked something like:
 
-<pre class="language-markdown">
-<code class="language-markdown" style="white-space: pre-wrap;">
+<pre className="language-markdown">
+<code className="language-markdown" style={{whiteSpace: 'pre-wrap'}}>
 Sourcegraph Cloud is the easiest way for organizations to get started with Sourcegraph.
 └── Small-to-medium organizations can search across their code together on Sourcegraph Cloud.
    └── Individual users can search across their private code on Sourcegraph Cloud.
