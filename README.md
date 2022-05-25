@@ -1,51 +1,46 @@
-# Sourcegraph's Marketing Site
+# Sourcegraph about.sourcegraph.com website
 
-This is Sourcegraph's Marketing Site which is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Uses Gatsby for rendering a static site that is built and deployed with Netlify.
 
-Build Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/0078e478-115a-43da-addc-a46549a72c5d/deploy-status)](https://app.netlify.com/sites/sourcegraph/deploys)
+## Quick start
 
----
+| What                               | Command                                    |
+| ---------------------------------- | ------------------------------------------ |
+| Auto-preview about.sourcegraph.com | `cd website && yarn install && yarn start` |
+| Final review about.sourcegraph.com | `cd website && yarn install && yarn serve` |
 
-## Getting Started
+## Requirements
 
-### Node.js
+Gatsby requires Node.js, and we recommend using [yarn](https://yarnpkg.com/en/) for installing packages.
 
-First, make sure that you have Node.js installed. You can use [`nvm`](https://github.com/nvm-sh/nvm) to automatically use the version of Node.js which is specified in the repository's [`.nvmrc`](./.nvmrc) file:
+## Developing locally
 
-```sh
-nvm install
+Developing the static site locally is separate from developing the handbook. [Read the Handbook section](#Handbook) to learn how to develop the handbook locally.
+
+In a terminal, change into the `website` directory, and run:
+
+```shell
+yarn install
 ```
 
-Alternatively, you can use [`n`](https://www.npmjs.com/package/n) to manage your Node versions. Use the following command to install the version of Node specified in the `.nvmrc` file:
+Then to serve the site, you have two options:
 
-```sh
-n <node version>
+1. To serve the static (built) version of the website (good for final review):
+
+```shell
+yarn serve
 ```
 
-### Install Dependencies
+2. To serve the site using the development server with auto-compiling and page reloading:
 
-From the top level of the project, run the following command to install dependencies:
-
-```sh
-yarn ci
+```shell
+yarn start
 ```
 
-This will install the dependencies while ensuring the lock file remains unmodified.
+## Publishing a blog post
 
-### Running the Application
+We want and encourage everyone at Sourcegraph to contribute to the blog. If you'd like to write for the blog, please check out how to [propose a blog post](https://handbook.sourcegraph.com/marketing/content/editorial#editorial-process) in the Editorial handbook.
 
-To run the application, type the following command from the top level of the project:
+## Handbook
 
-```sh
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### Configure the `pre-commit` Githook
-
-To enable our pre-commit hook, update the following git config setting in the project:
-
-```sh
-git config core.hooksPath .githooks
-```
+The Sourcegraph handbook now lives in https://github.com/sourcegraph/handbook and is hosted under https://handbook.sourcegraph.com.

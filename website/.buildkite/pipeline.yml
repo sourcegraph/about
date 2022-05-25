@@ -1,0 +1,8 @@
+steps:
+  - command: 'cd website && npm ci && npm run prettier && npm run build'
+    branches: '!master'
+    label: ':typescript: Test'
+
+  - command: 'cd website && npm ci && npm run prettier && npm install -g firebase-tools && npm run deploy'
+    branches: master
+    label: ':rocket: Deploy to prod'

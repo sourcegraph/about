@@ -1,0 +1,154 @@
+// stylelint-disable declaration-property-unit-whitelist
+.footer {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(198, 198, 215, 0.8) 100%);
+
+    &__nav-sections {
+        .nav-item > a {
+            color: $dark;
+            font-size: 0.9rem;
+            padding: 0.25rem 0;
+            display: inline-block;
+        }
+    }
+    &__nav-header {
+        opacity: 0.4;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: bolder;
+    }
+    &__logo {
+        background: url(/sourcegraph-logo.svg) no-repeat;
+        background-size: 200px;
+        height: 40px;
+    }
+    &__social,
+    &__postscript {
+        .nav-item > a {
+            color: $text-muted;
+            &:hover {
+                color: rgba($text-muted, 0.8);
+            }
+        }
+    }
+    &__social {
+        .nav-item > a {
+            padding: 0.3rem 0.3rem;
+        }
+    }
+    &__postscript {
+        .nav-item > a {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: $navbar-nav-link-padding-x * 0.5;
+            padding-right: $navbar-nav-link-padding-x * 0.5;
+        }
+    }
+
+    &__newsletter-form-heading {
+        opacity: 0.4;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: bolder;
+    }
+}
+.subscribe-form {
+    span.hs-form-required {
+        display: none;
+    }
+    .hs-email {
+        margin-top: -15px;
+    }
+    .hs-input {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 22px;
+        color: #fff;
+    }
+    .hs-form-field input[type='email'] {
+        border: 0;
+        border-radius: 0;
+        background: none;
+        border-bottom: 1px solid #fff;
+        opacity: 0.6;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .hs-form-field input[type='email']:focus,
+    .hs-form-field input[type='email']:active,
+    .hs-form-field input[type='email']:visited {
+        outline: none;
+        opacity: 0.9;
+    }
+    ul.inputs-list {
+        list-style-type: none;
+        display: block;
+        margin: 0 0 5px;
+        width: 100%;
+        padding-left: 5px;
+    }
+    .hs-input[type='checkbox'] {
+        cursor: pointer;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 3px 5px 3px 0px;
+        line-height: normal;
+        border: none;
+    }
+    .legal-consent-container label,
+    label.hs-error-msg {
+        color: white;
+        font-size: 13px;
+        opacity: 0.6;
+    }
+    .legal-consent-container a {
+        text-decoration: underline;
+        font-size: 13px;
+        color: white;
+        opacity: 1;
+    }
+    .legal-consent-container a:hover {
+        opacity: 0.6;
+    }
+    .hs-button {
+        background: #0a65ea;
+        border-color: #0a65ea;
+        border-radius: 2px;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: Open Sans;
+        padding: 0.5rem 1rem;
+    }
+    .hs-button:hover {
+        background-color: #0855c5;
+        border-color: #0850b9;
+    }
+}
+
+.bg-black {
+    .footer {
+        background: none;
+        &__logo {
+            background: url(/sourcegraph-reverse-logo.svg) no-repeat;
+        }
+        &__nav-header {
+            opacity: 0.6;
+        }
+        &__nav-header,
+        &__nav-sections .nav-item > a {
+            color: $light;
+        }
+        &__social,
+        &__postscript {
+            .nav-item > a {
+                color: rgba($light, 0.6);
+                &:hover {
+                    color: rgba($light, 0.8);
+                }
+            }
+            .text-muted {
+                color: rgba($light, 0.6) !important;
+            }
+        }
+    }
+}
