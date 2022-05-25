@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const ContactPresalesSupportAction: FunctionComponent<Props> = ({ className = '' }) => (
-    <Link href="/contact/product-specialist" passHref={true}>
+    <Link href="/demo" passHref={true}>
         <a href="#none" className={`d-flex align-items-center text-decoration-none ${className}`}>
             Talk to a product specialist
             <ArrowRightBoxIcon className="text-primary ml-1" />

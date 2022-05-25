@@ -211,11 +211,7 @@ const PricingPage: FunctionComponent = () => (
                         <p>
                             Sourcegraph supports the work of educational organizations and nonprofits.
                             <br />
-                            Please{' '}
-                            <Link href="/contact/product-specialist/?form_submission_source=pricing-nonprofit">
-                                contact us
-                            </Link>{' '}
-                            about discounts for your development teams.
+                            Please <Link href="/demo">contact us</Link> about discounts for your development teams.
                         </p>
                     </div>
 

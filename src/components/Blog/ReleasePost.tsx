@@ -60,8 +60,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                 </li>
             </ul>
             <div className="card-body release-post__body">
-                * Please <Link href="/contact/product-specialist/">contact Sourcegraph</Link> with any licensing
-                questions.
+                * Please <Link href="/demo">contact Sourcegraph</Link> with any licensing questions.
             </div>
         </>
     )

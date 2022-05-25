@@ -103,7 +103,7 @@
 # ========== INDIVIDUAL REDIRECTS ==========
 [[redirects]]
   from = "/contact/sales"
-  to = "/contact/product-specialist"
+  to = "/demo"
   status = 301
 
 [[redirects]]
@@ -125,4 +125,8 @@
   from = "/cloud-beta"
   to = "/"
   status = 301
+
+[[redirects]]
+  from = "/product-specialist"
+  to = "/demo"
 # ========== END INDIVIDUAL REDIRECTS ==========
