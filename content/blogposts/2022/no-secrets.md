@@ -1,5 +1,5 @@
 ---
-title: 'No Secrets: Quickly Find Sensitive Files in your GitHub Repo'
+title: 'No Secrets: Quickly find sensitive files in your GitHub repo'
 description: "With the growing volume of secrets ending up in public GitHub repositories, we tried to think of an easy, frictionless way to give developers who use GitHub peace of mind."
 author: Justin Dorfman
 authorUrl: https://twitter.com/jdorfman
