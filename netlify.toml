@@ -1,11 +1,9 @@
 [build]
-
-base = "website"
-publish = "website/public"
-command = "yarn run build"
+  publish = "out"
+  command = "yarn ci && yarn build"
 
 [build.environment]
-  YARN_VERSION = "1.15.2"
+  YARN_VERSION = "1.22.17"
   YARN_FLAGS = "--no-ignore-optional"
 
 [[headers]]
@@ -14,117 +12,117 @@ command = "yarn run build"
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
 
-[[redirects]]
-  from = "/assets/*"
-  to = "https://about-docsite.sourcegraph.com/assets/:splat"
-  status = 200
-  force = true
 
+# ========== SOURCEGRAPH REDIRECTS ==========
 [[redirects]]
-  from = "/direction"
-  to = "/handbook/direction"
-  status = 308
-  force = true
+  from = "/changelog"
+  to = "https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+  status = 301
+# ========== END SOURCEGRAPH REDIRECTS ==========
 
-[[redirects]]
-  from = "/direction/*"
-  to = "/handbook/direction/:splat"
-  status = 308
-  force = true
-
+# ========== HANDBOOK REDIRECTS ==========
 [[redirects]]
   from = "/company"
-  to = "/handbook/company"
-  status = 308
-  force = true
+  to = "https://handbook.sourcegraph.com/#stq=company"
+  status = 301
 
 [[redirects]]
   from = "/company/*"
-  to = "/handbook/company/:splat"
-  status = 308
-  force = true
-
-[[redirects]]
-  from = "/retrospectives"
-  to = "/handbook/retrospectives"
-  status = 308
-  force = true
+  to = "https://handbook.sourcegraph.com/:splat"
+  status = 301
 
 [[redirects]]
   from = "/retrospectives/*"
-  to = "/handbook/retrospectives/:splat"
-  status = 308
-  force = true
-
-[[redirects]]
-  from = "/workflow"
-  to = "/handbook/workflow"
-  status = 308
-  force = true
+  to = "https://handbook.sourcegraph.com/company-info-and-process/communication/retrospectives/"
+  status = 301
 
 [[redirects]]
   from = "/workflow/*"
-  to = "/handbook/workflow/:splat"
-  status = 308
-  force = true
+  to = "https://handbook.sourcegraph.com/#stq=workflow"
+  status = 301
 
 [[redirects]]
   from = "/search"
-  to = "/handbook#stq=:q"
+  to = "https://handbook.sourcegraph.com/#stq=:q"
   query = {q = ":q"}
-  status = 308
-  force = true
-
-[[redirects]]
-  from = "/search"
-  to = "/handbook"
-  status = 308
-  force = true
-
-[[redirects]]
-  from = "/handbook"
-  to = "https://about-docsite.sourcegraph.com/handbook"
-  status = 200
-  force = true
+  status = 301
 
 [[redirects]]
   from = "/handbook/*"
-  to = "https://about-docsite.sourcegraph.com/handbook/:splat"
-  status = 200
-  force = true
+  to = "https://handbook.sourcegraph.com/:splat"
+  status = 301
+# ========== END HANDBOOK REDIRECTS ==========
+
+# ========== TERMS REDIRECTS ==========
+[[redirects]]
+  from = "/terms-cloud"
+  to = "/terms/cloud"
+  status = 301
+
+[[redirects]]
+  from = "/terms-dotcom"
+  to = "/terms/cloud"
+  status = 301
+
+[[redirects]]
+  from = "/terms-gov"
+  to = "/terms/gov"
+  status = 301
+
+[[redirects]]
+  from = "/privacy"
+  to = "/terms/privacy"
+  status = 301
+
+[[redirects]]
+  from = "/privacy/cookie-policy"
+  to = "/terms/cookie-policy"
+  status = 301
+
+[[redirects]]
+  from = "/security"
+  to = "/terms/security"
+  status = 301
 
 [[redirects]]
   from = "/terms-private"
-  to = "/terms-self-hosted"
-  status = 200
-  force = true
+  to = "/terms/self-hosted"
+  status = 301
 
+[[redirects]]
+  from = "/terms-self-hosted"
+  to = "/terms/self-hosted"
+  status = 301
+
+[[redirects]]
+  from = "/subprocessors"
+  to = "/terms/subprocessors"
+  status = 301
+# ========== END TERMS REDIRECTS ==========
+
+# ========== INDIVIDUAL REDIRECTS ==========
 [[redirects]]
   from = "/contact/sales"
   to = "/contact/product-specialist"
-  status = 200
-  force = true
+  status = 301
 
 [[redirects]]
   from = "/blog/better-onboarding-advice-from-engineering-leaders/"
   to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm/"
-  status = 200
-  force = true
+  status = 301
 
 [[redirects]]
   from = "/customers"
   to = "/use-cases"
-  status = 200
-  force = true
+  status = 301
 
 [[redirects]]
   from = "/dpa"
   to = "/dpa.pdf"
-  status = 200
-  force = true
+  status = 301
 
 [[redirects]]
   from = "/cloud-beta"
   to = "/"
-  status = 200
-  force = true
+  status = 301
+# ========== END INDIVIDUAL REDIRECTS ==========
