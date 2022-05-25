@@ -210,9 +210,9 @@ const blogResourceItems = [
 const UseCasePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Find and fix security vulnerabilities',
+            title: 'Code Security | Find & Fix Vulnerabilities | Sourcegraph',
             description:
-                'Search across all your repositories to find and resolve vulnerabilities in minutes, not days.',
+                'Search your repositories and find vulnerabilities in minutes, not days. Learn more about Sourcegraph for code security.',
         }}
         className="use-cases-page navbar-light"
         hero={

@@ -97,7 +97,7 @@ const UseCases: React.FunctionComponent = () => (
                                 Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
                             </a>
                         </Link>
-                        <Link href="/use-cases/vulnerabilities" passHref={true}>
+                        <Link href="/use-cases/code-security" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-link font-weight-bold"
