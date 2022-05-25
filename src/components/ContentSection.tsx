@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-export const COLORS = {
+const COLORS = {
     none: '',
     white: 'bg-white text-dark',
     black: 'bg-black text-light',
