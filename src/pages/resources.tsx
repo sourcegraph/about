@@ -48,10 +48,7 @@ const Resource: FunctionComponent<ResourceProps> = ({ title, url, description, h
 )
 
 export const ResourcesPage: FunctionComponent = props => (
-    <Layout
-        meta={BLOG_TYPE_TO_INFO[BlogType.Resource].meta}
-        className="bg-light navbar-light"
-    >
+    <Layout meta={BLOG_TYPE_TO_INFO[BlogType.Resource].meta} className="bg-light navbar-light">
         <div className="container-lg">
             <BlogHeader {...BLOG_TYPE_TO_INFO[BlogType.Resource]} />
             <div className="pt-4">
