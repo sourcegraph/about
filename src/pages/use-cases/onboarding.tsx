@@ -183,7 +183,13 @@ const UseCasePage: FunctionComponent = () => (
                                     <div className="mb-3 mb-md-0">
                                         <Link href="/demo" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a className="btn btn-primary w-100" title="Request a Demo.">
+                                            <a
+                                                className="btn btn-primary w-100"
+                                                title="Request a Demo."
+                                                data-button-style={buttonStyle.primary}
+                                                data-button-location={buttonLocation.hero}
+                                                data-button-type="cta"
+                                            >
                                                 Request a demo
                                             </a>
                                         </Link>
@@ -191,7 +197,13 @@ const UseCasePage: FunctionComponent = () => (
                                     <div className="ml-md-3">
                                         <Link href="/get-started" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a className="btn btn-outline-primary w-100" title="Try Sourcegraph.">
+                                            <a
+                                                className="btn btn-outline-primary w-100"
+                                                title="Try Sourcegraph."
+                                                data-button-style={buttonStyle.outline}
+                                                data-button-location={buttonLocation.hero}
+                                                data-button-type="cta"
+                                            >
                                                 Try Sourcegraph now
                                             </a>
                                         </Link>
