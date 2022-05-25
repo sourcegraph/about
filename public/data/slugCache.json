@@ -1,1 +1,1593 @@
-{"records":{"blogposts":{"contentDirectory":"blogposts","recordSlugs":{"release-anxiety":{"slugPath":"release-anxiety","publishDate":"2021-11-04T10:00-07:00"},"5-easy-ways-to-start-contributing-to-docker-using-sourcegraph":{"slugPath":"5-easy-ways-to-start-contributing-to-docker-using-sourcegraph","publishDate":"2016-05-30T00:00-07:00"},"5-short-stories-from-open-source-pains-in-gains":{"slugPath":"5-short-stories-from-open-source-pains-in-gains","publishDate":"2016-09-14T00:00-07:00"},"announcing-checkup-simple-self-hosted-health-checks":{"slugPath":"announcing-checkup-simple-self-hosted-health-checks","publishDate":"2016-06-08T11:31-07:00"},"appdash-an-open-source-perf-tracing-suite":{"slugPath":"appdash-an-open-source-perf-tracing-suite","publishDate":"2016-05-30T00:00-07:00"},"browse-review-code-on-github-like-in-an-ide-with-the-sourcegraph-chrome-extension":{"slugPath":"browse-review-code-on-github-like-in-an-ide-with-the-sourcegraph-chrome-extension","publishDate":"2016-05-30T00:00-07:00"},"building-a-product-one-user-interview-at-a-time":{"slugPath":"building-a-product-one-user-interview-at-a-time","publishDate":"2016-05-30T14:45-07:00"},"clarence-wardell":{"slugPath":"clarence-wardell","publishDate":"2016-05-30T00:00-07:00"},"getting-started-with-sourcegraph":{"slugPath":"getting-started-with-sourcegraph","publishDate":"2016-05-30T00:00-07:00"},"google-i-o-talk-building-sourcegraph":{"slugPath":"google-i-o-talk-building-sourcegraph","publishDate":"2016-05-30T00:00-07:00"},"how-to-make-your-open-source-project-thrive-with-andrey-petrov":{"slugPath":"how-to-make-your-open-source-project-thrive-with-andrey-petrov","publishDate":"2016-06-21T00:00-07:00"},"ipfs-the-permanent-web-by-juan-benet":{"slugPath":"ipfs-the-permanent-web-by-juan-benet","publishDate":"2016-05-30T12:39-07:00"},"poetically-simple-code-review":{"slugPath":"poetically-simple-code-review","publishDate":"2016-11-01T00:00-07:00"},"some-challenges-that-startup-development-teams-face":{"slugPath":"some-challenges-that-startup-development-teams-face","publishDate":"2016-05-30T00:00-07:00"},"sourcegraph-the-best-way-to-read-code-just-got-better":{"slugPath":"sourcegraph-the-best-way-to-read-code-just-got-better","publishDate":"2016-10-04T00:00-07:00"},"the-ibm-system-360-the-first-modular-general-purpose-computer":{"slugPath":"the-ibm-system-360-the-first-modular-general-purpose-computer","publishDate":"2016-08-26T00:00-07:00"},"the-pain-of-code-review-how-different-teams-manage-scale-and-perform-code-reviews":{"slugPath":"the-pain-of-code-review-how-different-teams-manage-scale-and-perform-code-reviews","publishDate":"2016-05-30T00:00-07:00"},"the-sourcegraph-developer-release-a-better-way-to-discover-and-understand-code":{"slugPath":"the-sourcegraph-developer-release-a-better-way-to-discover-and-understand-code","publishDate":"2016-05-30T00:00-07:00"},"the-sourcegraph-test-v0-9-12-more-steps-to-better-code":{"slugPath":"the-sourcegraph-test-v0-9-12-more-steps-to-better-code","publishDate":"2016-02-11T00:00-07:00"},"thyme-a-simple-cli-to-measure-human-time-and-focus":{"slugPath":"thyme-a-simple-cli-to-measure-human-time-and-focus","publishDate":"2016-08-15T00:00-07:00"},"toward-a-url-for-every-function-in-the-world":{"slugPath":"toward-a-url-for-every-function-in-the-world","publishDate":"2016-11-01T00:00-07:00"},"why-vacation-at-tech-companies-should-be-mandatory-better-code-happier-people":{"slugPath":"why-vacation-at-tech-companies-should-be-mandatory-better-code-happier-people","publishDate":"2016-05-29T00:00-07:00"},"why-we-open-sourced-our-uptime-monitoring-system":{"slugPath":"why-we-open-sourced-our-uptime-monitoring-system","publishDate":"2016-09-08T00:00-07:00"},"announcing-sourcegraph-2":{"slugPath":"announcing-sourcegraph-2","publishDate":"2017-09-20T00:00-07:00"},"building-a-high-performance-key-value-store":{"slugPath":"building-a-high-performance-key-value-store","publishDate":"2017-07-13T00:00-07:00"},"building-toward-the-sourcegraph-master-plan":{"slugPath":"building-toward-the-sourcegraph-master-plan","publishDate":"2017-10-06T00:00-07:00"},"code-intelligence-for-java-now-available-on-sourcegraph":{"slugPath":"code-intelligence-for-java-now-available-on-sourcegraph","publishDate":"2017-04-11T00:00-07:00"},"code-intelligence-now-available-for-java-on-sourcegraph-com":{"slugPath":"code-intelligence-now-available-for-java-on-sourcegraph-com","publishDate":"2017-03-01T00:00-07:00"},"code-intelligence-on-github-embedded-code-snippets":{"slugPath":"code-intelligence-on-github-embedded-code-snippets","publishDate":"2017-08-24T00:00-07:00"},"faster-smoother-github-code-browsing":{"slugPath":"faster-smoother-github-code-browsing","publishDate":"2017-06-27T00:00-07:00"},"file-tree-navigation-on-github-yes-please":{"slugPath":"file-tree-navigation-on-github-yes-please","publishDate":"2017-08-09T00:00-07:00"},"go-code-intelligence-on-sourcegraph-now-in-general-availability-ga":{"slugPath":"go-code-intelligence-on-sourcegraph-now-in-general-availability-ga","publishDate":"2017-01-25T00:00-07:00"},"great-code-search-bad-code-search":{"slugPath":"great-code-search-bad-code-search","publishDate":"2017-11-15T00:00-08:00"},"great-code-search-for-aws-codecommit":{"slugPath":"great-code-search-for-aws-codecommit","publishDate":"2017-11-16T00:00-08:00"},"grpc-in-production-alan-shreve":{"slugPath":"grpc-in-production-alan-shreve","publishDate":"2017-07-13T00:00-07:00"},"how-caddy-auto-detects-https-interception":{"slugPath":"how-caddy-auto-detects-https-interception","publishDate":"2017-03-03T00:00-07:00"},"introducing-code-search-in-sourcegraph":{"slugPath":"introducing-code-search-in-sourcegraph","publishDate":"2017-04-07T00:00-07:00"},"introducing-sourcegraph-server-2-3":{"slugPath":"introducing-sourcegraph-server-2-3","publishDate":"2017-12-05T00:00-08:00"},"jp-robinson-of-nytimes-on-go-kit-gizmo-and-marvin":{"slugPath":"jp-robinson-of-nytimes-on-go-kit-gizmo-and-marvin","publishDate":"2017-07-12T00:00-07:00"},"more-powerful-code-search-on-sourcegraph":{"slugPath":"more-powerful-code-search-on-sourcegraph","publishDate":"2017-11-01T00:00-07:00"},"part-1-how-sourcegraph-scales-with-the-language-server-protocol":{"slugPath":"part-1-how-sourcegraph-scales-with-the-language-server-protocol","publishDate":"2017-02-27T00:00-07:00"},"part-2-how-sourcegraph-scales-with-the-language-server-protocol":{"slugPath":"part-2-how-sourcegraph-scales-with-the-language-server-protocol","publishDate":"2017-02-22T00:00-07:00"},"regexp-queries-directories-openid-connect-and-more-updates-to-sourcegraph":{"slugPath":"regexp-queries-directories-openid-connect-and-more-updates-to-sourcegraph","publishDate":"2017-11-13T00:00-08:00"},"see-how-many-people-use-a-java-library-with-sourcegraph-badges":{"slugPath":"see-how-many-people-use-a-java-library-with-sourcegraph-badges","publishDate":"2017-04-11T00:00-07:00"},"see-how-many-people-use-your-library-with-sourcegraph-badges":{"slugPath":"see-how-many-people-use-your-library-with-sourcegraph-badges","publishDate":"2017-02-13T00:00-07:00"},"sourcegraph-code-intelligence-and-the-language-server-protocol":{"slugPath":"sourcegraph-code-intelligence-and-the-language-server-protocol","publishDate":"2017-05-15T00:00-07:00"},"sourcegraph-founders-featured-on-forbes-30-under-30-list":{"slugPath":"sourcegraph-founders-featured-on-forbes-30-under-30-list","publishDate":"2017-01-06T00:00-07:00"},"why-chris-joined-sourcegraph":{"slugPath":"why-chris-joined-sourcegraph","publishDate":"2018-04-19T11:30-07:00"},"announcing-sourcegraph-2.13":{"slugPath":"announcing-sourcegraph-2.13","publishDate":"2018-11-06T00:00-07:00"},"code-intelligence-for-more-languages-and-lsp-language-server-protocol-support":{"slugPath":"code-intelligence-for-more-languages-and-lsp-language-server-protocol-support","publishDate":"2018-05-22T09:00-07:00"},"code-intelligence-in-vim":{"slugPath":"code-intelligence-in-vim","publishDate":"2018-09-19T00:00-07:00"},"java-php-experimental_language_servers-temporarily-unavailable":{"slugPath":"java-php-experimental_language_servers-temporarily-unavailable","publishDate":"2018-11-29T12:00-07:00"},"go-when-is-it-ok-to-recover":{"slugPath":"go-when-is-it-ok-to-recover","publishDate":"2018-03-06T08:30-08:00"},"new-graphql-sourcegraph-extension":{"slugPath":"new-graphql-sourcegraph-extension","publishDate":"2018-12-05T00:00-07:00"},"hack-time-at-sourcegraph":{"slugPath":"hack-time-at-sourcegraph","publishDate":"2018-08-07T09:00-07:00"},"how-sourcegraph-builds-sourcegraph":{"slugPath":"how-sourcegraph-builds-sourcegraph","publishDate":"2018-03-20T15:00-07:00"},"how-to-support-your-employee-through-pregnancy-maternity-leave-and-the":{"slugPath":"how-to-support-your-employee-through-pregnancy-maternity-leave-and-the","publishDate":"2018-08-28T09:00-06:00"},"how-we-run-end-to-end-e2e-tests-in-buildkite-ci":{"slugPath":"how-we-run-end-to-end-e2e-tests-in-buildkite-ci","publishDate":"2018-09-14T09:00-07:00"},"introducing-sourcegraph-2-7":{"slugPath":"introducing-sourcegraph-2-7","publishDate":"2018-04-16T00:00-07:00"},"introducing-sourcegraph-server-2-4":{"slugPath":"introducing-sourcegraph-server-2-4","publishDate":"2018-01-09T00:00-08:00"},"introducing-sourcegraph-server-2-5":{"slugPath":"introducing-sourcegraph-server-2-5","publishDate":"2018-02-08T00:00-08:00"},"introducing-sourcegraph-server-2-6":{"slugPath":"introducing-sourcegraph-server-2-6","publishDate":"2018-03-13T00:00-08:00"},"our-project-based-interview-experiment-for-hiring-engineers":{"slugPath":"our-project-based-interview-experiment-for-hiring-engineers","publishDate":"2018-06-19T08:45-07:00"},"powerful-code-search-for-bitbucket-server":{"slugPath":"powerful-code-search-for-bitbucket-server","publishDate":"2018-03-14T00:00-07:00"},"sourcegraph-2-10":{"slugPath":"sourcegraph-2-10","publishDate":"2018-08-01T09:00-07:00"},"sourcegraph-2-11-release-notes":{"slugPath":"sourcegraph-2-11-release-notes","publishDate":"2018-09-04T10:30-07:00"},"sourcegraph-2-12-release-notes":{"slugPath":"sourcegraph-2-12-release-notes","publishDate":"2018-10-15T12:00-07:00"},"sourcegraph-2-8-19-languages-ridiculously-huge-monorepos-lsp-a-graphql-api":{"slugPath":"sourcegraph-2-8-19-languages-ridiculously-huge-monorepos-lsp-a-graphql-api","publishDate":"2018-05-22T09:00-07:00"},"sourcegraph-2-9-announcement-code-search-user-rollout-in-large-organizations":{"slugPath":"sourcegraph-2-9-announcement-code-search-user-rollout-in-large-organizations","publishDate":"2018-06-19T10:30-07:00"},"sourcegraph-browser-extensions-are-now-open-source":{"slugPath":"sourcegraph-browser-extensions-are-now-open-source","publishDate":"2018-08-10T07:30-07:00"},"sourcegraph-future-coding-podcast-episode-32":{"slugPath":"sourcegraph-future-coding-podcast-episode-32","publishDate":"2018-10-25T00:00-07:00"},"the-august-2018-docker-hub-outage-and-the-impact-on-kubernetes-deployments":{"slugPath":"the-august-2018-docker-hub-outage-and-the-impact-on-kubernetes-deployments","publishDate":"2018-08-17T16:34-07:00"},"the-pain-that-minimal-version-selection-solves":{"slugPath":"the-pain-that-minimal-version-selection-solves","publishDate":"2018-08-30T17:00-07:00"},"sourcegraph-3.0-beta-is-now-available":{"slugPath":"sourcegraph-3.0-beta-is-now-available","publishDate":"2019-01-15T05:59-06:00"},"sourcegraph-3.0":{"slugPath":"sourcegraph-3.0","publishDate":"2019-02-08T05:59-06:00"},"sourcegraph-3.1":{"slugPath":"sourcegraph-3.1","publishDate":"2019-02-20T05:59-06:00"},"sourcegraph-3.10":{"slugPath":"sourcegraph-3.10","publishDate":"2019-11-20T10:00-07:00"},"sourcegraph-3.11":{"slugPath":"sourcegraph-3.11","publishDate":"2019-12-20T10:00-07:00"},"sourcegraph-3.2":{"slugPath":"sourcegraph-3.2","publishDate":"2019-03-20T05:59-06:00"},"sourcegraph-3.3":{"slugPath":"sourcegraph-3.3","publishDate":"2019-04-22T10:00-07:00"},"sourcegraph-3.4":{"slugPath":"sourcegraph-3.4","publishDate":"2019-05-20T10:00-07:00"},"sourcegraph-3.5":{"slugPath":"sourcegraph-3.5","publishDate":"2019-06-20T10:00-07:00"},"sourcegraph-3.6":{"slugPath":"sourcegraph-3.6","publishDate":"2019-07-20T10:00-07:00"},"sourcegraph-3.7":{"slugPath":"sourcegraph-3.7","publishDate":"2019-08-20T10:00-07:00"},"sourcegraph-3.8":{"slugPath":"sourcegraph-3.8","publishDate":"2019-09-20T10:00-07:00"},"sourcegraph-3.9":{"slugPath":"sourcegraph-3.9","publishDate":"2019-10-20T10:00-07:00"},"code-navigation-in-github-pull-requests":{"slugPath":"code-navigation-in-github-pull-requests","publishDate":"2019-12-09T10:00-08:00"},"convoy-improved-their-developer-on-boarding-with-sourcegraph":{"slugPath":"convoy-improved-their-developer-on-boarding-with-sourcegraph","publishDate":"2019-11-08T10:00-07:00"},"convoy-software-engineers-and-data-scientists-work-better-together":{"slugPath":"convoy-software-engineers-and-data-scientists-work-better-together","publishDate":"2019-11-08T10:00-07:00"},"felix-becker-fully-type-safe-web-workers-with-zero-boilerplate":{"slugPath":"felix-becker-fully-type-safe-web-workers-with-zero-boilerplate","publishDate":"2019-12-18T10:00-07:00"},"advanced-typescript-tooling-talk-fosdem-2019":{"slugPath":"advanced-typescript-tooling-talk-fosdem-2019","publishDate":"2019-03-29T05:59-06:00"},"from-saas-to-on-premises":{"slugPath":"from-saas-to-on-premises","publishDate":"2019-10-30T00:00-07:00"},"gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence":{"slugPath":"gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence","publishDate":"2019-11-12T10:00-07:00"},"improving-language-support-in-2019":{"slugPath":"improving-language-support-in-2019","publishDate":"2019-01-15T00:00-06:00"},"sourcegraph-liveblogging-2019-strange-loop-conference":{"slugPath":"sourcegraph-liveblogging-2019-strange-loop-conference","publishDate":"2019-09-02T00:00-07:00"},"writing-an-lsif-indexer":{"slugPath":"writing-an-lsif-indexer","publishDate":"2019-10-14T10:00-07:00"},"production-stability-at-lyft-during-their-monolith-to-microservices-decomposition":{"slugPath":"production-stability-at-lyft-during-their-monolith-to-microservices-decomposition","publishDate":"2019-12-13T10:00-07:00"},"quantcast-large-scale-refactoring-with-sourcegraph":{"slugPath":"quantcast-large-scale-refactoring-with-sourcegraph","publishDate":"2019-08-23T10:00-07:00"},"sofi-moves-fast-on-hundreds-of-microservices-with-sourcegraph":{"slugPath":"sofi-moves-fast-on-hundreds-of-microservices-with-sourcegraph","publishDate":"2019-11-21T10:00-07:00"},"sourcegraph-circleci-2.0-migration":{"slugPath":"sourcegraph-circleci-2.0-migration","publishDate":"2019-05-02T10:00-07:00"},"thorn-sunsets-legacy-applications-with-sourcegraph":{"slugPath":"thorn-sunsets-legacy-applications-with-sourcegraph","publishDate":"2019-07-08T10:00-07:00"},"github-universe/github-universe-liveblog-alvind-salehi-federal-government":{"slugPath":"github-universe/github-universe-liveblog-alvind-salehi-federal-government","publishDate":"2016-09-14T00:00-07:00"},"github-universe/github-universe-liveblog-bret-taylor-quip":{"slugPath":"github-universe/github-universe-liveblog-bret-taylor-quip","publishDate":"2016-09-14T00:00-07:00"},"github-universe/github-universe-liveblog-ceos-keynote":{"slugPath":"github-universe/github-universe-liveblog-ceos-keynote","publishDate":"2016-09-14T00:00-07:00"},"github-universe/github-universe-liveblog-ian-lee-lawrence-livermore-national-laboratory":{"slugPath":"github-universe/github-universe-liveblog-ian-lee-lawrence-livermore-national-laboratory","publishDate":"2016-09-15T00:00-07:00"},"github-universe/github-universe-liveblog-innersource":{"slugPath":"github-universe/github-universe-liveblog-innersource","publishDate":"2016-09-14T22:22-07:00"},"github-universe/liveblogging-github-universe":{"slugPath":"github-universe/liveblogging-github-universe","publishDate":"2016-09-28T00:00-07:00"},"announcing-code-insights":{"slugPath":"announcing-code-insights","publishDate":"2022-03-10T12:00-00:00"},"migrating-to-css-modules-with-codemods-and-code-insights":{"slugPath":"migrating-to-css-modules-with-codemods-and-code-insights","publishDate":"2022-03-10T00:00-07:00"},"developer-productivity-thoughts":{"slugPath":"developer-productivity-thoughts","publishDate":"2022-05-10T18:00+02:00"},"introducing-migrator-service":{"slugPath":"introducing-migrator-service","publishDate":"2022-02-22T12:00-00:00"},"monolith-microservices-migration":{"slugPath":"monolith-microservices-migration","publishDate":"2022-04-28T18:00+02:00"},"shush-no-secrets":{"slugPath":"shush-no-secrets","publishDate":"2022-05-24T11:25-07:00"},"notebooks-ci":{"slugPath":"notebooks-ci","publishDate":"2022-04-28T18:00+02:00"},"please-save-git-io":{"slugPath":"please-save-git-io","publishDate":"2022-04-26T12:00-00:00"},"release/3.36":{"slugPath":"release/3.36","publishDate":"2022-01-21T10:00-07:00"},"release/3.37":{"slugPath":"release/3.37","publishDate":"2022-02-22T10:00-07:00"},"release/3.38":{"slugPath":"release/3.38","publishDate":"2022-03-21T10:00-07:00"},"release/3.39":{"slugPath":"release/3.39","publishDate":"2022-04-21T10:00-07:00"},"release/3.40":{"slugPath":"release/3.40","publishDate":"2022-05-24T10:00-07:00"},"ways-to-use-sourcegraph-extension-for-vs-code":{"slugPath":"ways-to-use-sourcegraph-extension-for-vs-code","publishDate":"2022-02-08T00:00-07:00"},"real-weakest-link-in-software-supply-chain-security":{"slugPath":"real-weakest-link-in-software-supply-chain-security","publishDate":"2022-03-21T18:00+02:00"},"indexing-the-oss-universe-update-more-code-hosts":{"slugPath":"indexing-the-oss-universe-update-more-code-hosts","publishDate":"2022-01-10T00:00-07:00"},"why-fig-autocomplete-is-awesome":{"slugPath":"why-fig-autocomplete-is-awesome","publishDate":"2022-04-21T11:25-07:00"},"announcing-sourcegraphs-series-d-round":{"slugPath":"announcing-sourcegraphs-series-d-round","publishDate":"2021-07-13T00:00-07:00"},"api-documentation-for-all-your-code":{"slugPath":"api-documentation-for-all-your-code","publishDate":"2021-07-22T10:00-07:00"},"avoiding-the-pitfalls-of-iteration-based-development":{"slugPath":"avoiding-the-pitfalls-of-iteration-based-development","publishDate":"2021-04-15T18:00+02:00"},"better-onboarding-how-to-prevent-codebase-overwhelm":{"slugPath":"better-onboarding-how-to-prevent-codebase-overwhelm","publishDate":"2022-03-09T18:00+02:00"},"software-engineer-career-ladder":{"slugPath":"software-engineer-career-ladder","publishDate":"2021-10-07T10:00-07:00"},"continuous-delivery-mindset":{"slugPath":"continuous-delivery-mindset","publishDate":"2021-11-08T10:00-07:00"},"creating-sourcegraph-product-design-principles":{"slugPath":"creating-sourcegraph-product-design-principles","publishDate":"2021-05-17T18:00-07:00"},"deprecating-lsp":{"slugPath":"deprecating-lsp","publishDate":"2021-08-26T12:00-00:00"},"dev-tool-time-adam-gordon-bell":{"slugPath":"dev-tool-time-adam-gordon-bell","publishDate":"2021-10-06T10:00-07:00"},"dev-tool-time-amir-rajan":{"slugPath":"dev-tool-time-amir-rajan","publishDate":"2021-10-20T10:00-07:00"},"dev-tool-time-leah-culver":{"slugPath":"dev-tool-time-leah-culver","publishDate":"2021-07-15T10:00-07:00"},"dev-tool-time-liz-fong-jones":{"slugPath":"dev-tool-time-liz-fong-jones","publishDate":"2021-09-16T10:00-07:00"},"dev-tool-time-mitchell-hashimoto":{"slugPath":"dev-tool-time-mitchell-hashimoto","publishDate":"2021-08-25T10:00-07:00"},"dev-tool-time-paul-jolly":{"slugPath":"dev-tool-time-paul-jolly","publishDate":"2021-09-22T10:00-07:00"},"dev-tool-time-theprimeagen":{"slugPath":"dev-tool-time-theprimeagen","publishDate":"2021-11-03T10:00-07:00"},"dev-tool-time-roger-peppe":{"slugPath":"dev-tool-time-roger-peppe","publishDate":"2021-11-17T10:00-07:00"},"dev-tool-time-seth-vargo":{"slugPath":"dev-tool-time-seth-vargo","publishDate":"2021-04-28T10:00-07:00"},"dev-tool-time-thorsten-ball":{"slugPath":"dev-tool-time-thorsten-ball","publishDate":"2021-08-18T10:00-07:00"},"eliminate-secrets-from-codebase-with-universal-code-search":{"slugPath":"eliminate-secrets-from-codebase-with-universal-code-search","publishDate":"2021-09-27T10:00-07:00"},"expanding-sourcegraph-from-on-premise-to-saas":{"slugPath":"expanding-sourcegraph-from-on-premise-to-saas","publishDate":"2021-12-09T00:00-07:00"},"feature-removal-interactive-search-mode":{"slugPath":"feature-removal-interactive-search-mode","publishDate":"2021-01-20T10:00-07:00"},"how-not-to-break-a-search-engine-unglamorous-engineering":{"slugPath":"how-not-to-break-a-search-engine-unglamorous-engineering","publishDate":"2021-06-25T10:00-07:00"},"integration-testing":{"slugPath":"integration-testing","publishDate":"2022-01-13T18:00+02:00"},"introducing-batch-changes":{"slugPath":"introducing-batch-changes","publishDate":"2021-03-24T10:00-07:00"},"introducing-search-contexts":{"slugPath":"introducing-search-contexts","publishDate":"2021-10-22T10:00-07:00"},"introducing-sourcegraphs-new-ui":{"slugPath":"introducing-sourcegraphs-new-ui","publishDate":"2021-06-09T10:00-07:00"},"java-scala-kotlin-code-intelligence":{"slugPath":"java-scala-kotlin-code-intelligence","publishDate":"2021-12-20T00:00-07:00"},"log4j-log4shell-0-day":{"slugPath":"log4j-log4shell-0-day","publishDate":"2021-12-13T11:25-07:00"},"nine-circles-of-dependency-hell":{"slugPath":"nine-circles-of-dependency-hell","publishDate":"2021-09-28T10:00-07:00"},"optimizing-a-code-intel-commit-graph":{"slugPath":"optimizing-a-code-intel-commit-graph","publishDate":"2021-05-26T18:00-07:00"},"optimizing-a-code-intel-commit-graph-part-2":{"slugPath":"optimizing-a-code-intel-commit-graph-part-2","publishDate":"2021-06-03T18:00-07:00"},"postgres-text-search-balancing-query-time-and-relevancy":{"slugPath":"postgres-text-search-balancing-query-time-and-relevancy","publishDate":"2021-10-13T10:00-07:00"},"postgres-version-update":{"slugPath":"postgres-version-update","publishDate":"2021-03-31T18:00+02:00"},"release/3.24":{"slugPath":"release/3.24","publishDate":"2021-01-20T10:00-07:00"},"release/3.25":{"slugPath":"release/3.25","publishDate":"2021-02-20T10:00-07:00"},"release/3.26":{"slugPath":"release/3.26","publishDate":"2021-03-20T10:00-07:00"},"release/3.27":{"slugPath":"release/3.27","publishDate":"2021-04-27T10:00-07:00"},"release/3.28":{"slugPath":"release/3.28","publishDate":"2021-05-24T10:00-07:00"},"release/3.29":{"slugPath":"release/3.29","publishDate":"2021-06-23T10:00-07:00"},"release/3.30":{"slugPath":"release/3.30","publishDate":"2021-07-20T10:00-07:00"},"release/3.31":{"slugPath":"release/3.31","publishDate":"2021-09-02T10:00-07:00"},"release/3.32":{"slugPath":"release/3.32","publishDate":"2021-09-24T10:00-07:00"},"release/3.33":{"slugPath":"release/3.33","publishDate":"2021-10-25T10:00-07:00"},"release/3.34":{"slugPath":"release/3.34","publishDate":"2021-11-24T10:00-07:00"},"release/3.35":{"slugPath":"release/3.35","publishDate":"2021-12-21T10:00-07:00"},"role-of-observability-tools-high-performing-development-teams":{"slugPath":"role-of-observability-tools-high-performing-development-teams","publishDate":"2021-06-04T18:00-07:00"},"remote-work-calendar":{"slugPath":"remote-work-calendar","publishDate":"2021-09-23T10:00-07:00"},"sourcegraph-cloud-for-teams-now-in-private-beta":{"slugPath":"sourcegraph-cloud-for-teams-now-in-private-beta","publishDate":"2021-12-09T00:00-07:00"},"tackling-the-long-tail-of-tiny-repos-with-shard-merging":{"slugPath":"tackling-the-long-tail-of-tiny-repos-with-shard-merging","publishDate":"2021-11-09T10:00-07:00"},"the-future-of-code-search":{"slugPath":"the-future-of-code-search","publishDate":"2021-07-13T00:00-07:00"},"why-index-the-oss-universe":{"slugPath":"why-index-the-oss-universe","publishDate":"2021-08-19T00:00-07:00"},"why-we're-friends-with-code-hosts":{"slugPath":"why-we're-friends-with-code-hosts","publishDate":"2021-04-06T10:00-07:00"},"workspaces-of-sourcegraph":{"slugPath":"workspaces-of-sourcegraph","publishDate":"2021-03-16T18:00+02:00"},"sourcegraph-accepting-zoekt-maintainership":{"slugPath":"sourcegraph-accepting-zoekt-maintainership","publishDate":"2021-11-09T00:00-07:00"},"zoekt-memory-optimizations-for-sourcegraph-cloud":{"slugPath":"zoekt-memory-optimizations-for-sourcegraph-cloud","publishDate":"2021-08-19T00:00-07:00"},"a-different-way-to-think-about-code-ownership":{"slugPath":"a-different-way-to-think-about-code-ownership","publishDate":"2020-10-05T10:00-07:00"},"sourcegraph-3.12":{"slugPath":"sourcegraph-3.12","publishDate":"2020-01-20T10:00-07:00"},"sourcegraph-3.13":{"slugPath":"sourcegraph-3.13","publishDate":"2020-02-20T10:00-07:00"},"sourcegraph-3.14":{"slugPath":"sourcegraph-3.14","publishDate":"2020-03-20T10:00-07:00"},"sourcegraph-3.15":{"slugPath":"sourcegraph-3.15","publishDate":"2020-04-20T10:00-07:00"},"sourcegraph-3.16":{"slugPath":"sourcegraph-3.16","publishDate":"2020-05-20T10:00-07:00"},"sourcegraph-3.17":{"slugPath":"sourcegraph-3.17","publishDate":"2020-06-20T10:00-07:00"},"can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls":{"slugPath":"can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls","publishDate":"2020-10-29T00:00-07:00"},"code-intelligence-on-sourcegraph-com":{"slugPath":"code-intelligence-on-sourcegraph-com","publishDate":"2020-04-14T00:00-07:00"},"code-search-in-monorepos":{"slugPath":"code-search-in-monorepos","publishDate":"2020-11-13T10:00-08:00"},"code-search-turned-code-checker":{"slugPath":"code-search-turned-code-checker","publishDate":"2020-10-19T14:00-07:00"},"cs.dev-shortcut-url-for-code-search":{"slugPath":"cs.dev-shortcut-url-for-code-search","publishDate":"2020-08-25T07:00-07:00"},"enable-native-code-intelligence-gitlab-sourcegraph-integration":{"slugPath":"enable-native-code-intelligence-gitlab-sourcegraph-integration","publishDate":"2020-03-23T10:00-07:00"},"evolution-of-the-precise-code-intel-backend":{"slugPath":"evolution-of-the-precise-code-intel-backend","publishDate":"2020-06-17T10:00-07:00"},"ex-googler-guide-dev-tools":{"slugPath":"ex-googler-guide-dev-tools","publishDate":"2020-11-24T00:00-14:30"},"felicis-investment-fast-growth":{"slugPath":"felicis-investment-fast-growth","publishDate":"2020-07-14T10:00-07:00"},"a-programmers-guide-to-find-and-replace":{"slugPath":"a-programmers-guide-to-find-and-replace","publishDate":"2020-05-15T10:00-07:00"},"going-beyond-regular-expressions-with-structural-code-search":{"slugPath":"going-beyond-regular-expressions-with-structural-code-search","publishDate":"2020-02-12T14:00-07:00"},"home-offices-of-sourcegraph":{"slugPath":"home-offices-of-sourcegraph","publishDate":"2020-03-27T18:00+02:00"},"improving-security-through-transparency":{"slugPath":"improving-security-through-transparency","publishDate":"2020-10-20T10:00-07:00"},"optimizing-a-code-intel-indexer":{"slugPath":"optimizing-a-code-intel-indexer","publishDate":"2020-09-06T18:00-07:00"},"our-abcs-always-be-coding-childrens-book":{"slugPath":"our-abcs-always-be-coding-childrens-book","publishDate":"2020-04-23T10:00-07:00"},"our-journey-to-all-remote":{"slugPath":"our-journey-to-all-remote","publishDate":"2020-03-31T10:00-07:00"},"optimizing-a-code-intel-backend":{"slugPath":"optimizing-a-code-intel-backend","publishDate":"2020-06-17T10:00-08:00"},"release/3.19":{"slugPath":"release/3.19","publishDate":"2020-08-20T10:00-07:00"},"release/3.20":{"slugPath":"release/3.20","publishDate":"2020-09-20T10:00-07:00"},"release/3.23":{"slugPath":"release/3.23","publishDate":"2020-12-20T10:00-07:00"},"remote-software-development-made-easier":{"slugPath":"remote-software-development-made-easier","publishDate":"2020-04-14T17:59"},"series-b-universal-code-search":{"slugPath":"series-b-universal-code-search","publishDate":"2020-03-03T05:00"},"series-c-with-sequoia":{"slugPath":"series-c-with-sequoia","publishDate":"2020-12-03T05:00-07:00"},"software-engineer-career-paths":{"slugPath":"software-engineer-career-paths","publishDate":"2020-09-30T05:00-07:00"},"universal-code-intelligence-github-sourcegraph-browser-extension":{"slugPath":"universal-code-intelligence-github-sourcegraph-browser-extension","publishDate":"2020-04-07T00:00-15:30"},"universal-code-search-github":{"slugPath":"universal-code-search-github","publishDate":"2020-03-11T05:59-06:00"},"universal-code-search-gitlab":{"slugPath":"universal-code-search-gitlab","publishDate":"2020-03-12T05:59-06:00"},"what-happens-when-a-successful-product-gets-its-first-design-team":{"slugPath":"what-happens-when-a-successful-product-gets-its-first-design-team","publishDate":"2020-09-17T00:00-07:00"},"graphql/building-a-large-scale-multi-branded-web-app-on-gql-foundation":{"slugPath":"graphql/building-a-large-scale-multi-branded-web-app-on-gql-foundation","publishDate":"2017-10-26T18:00+02:00"},"graphql/building-graphql-native-microservices":{"slugPath":"graphql/building-graphql-native-microservices","publishDate":"2017-10-25T00:00-07:00"},"graphql/building-native-mobile-apps-with-graphql":{"slugPath":"graphql/building-native-mobile-apps-with-graphql","publishDate":"2017-10-26T00:00-07:00"},"graphql/designing-with-graphql":{"slugPath":"graphql/designing-with-graphql","publishDate":"2017-10-25T00:00-07:00"},"graphql/extending-the-limits-of-graphql-syrus-akbary":{"slugPath":"graphql/extending-the-limits-of-graphql-syrus-akbary","publishDate":"2017-10-25T00:00-07:00"},"graphql/full-stack-subscriptions":{"slugPath":"graphql/full-stack-subscriptions","publishDate":"2017-10-25T14:25-07:00"},"graphql/getting-buy-in-a-recipe-for-graphql-adoption":{"slugPath":"graphql/getting-buy-in-a-recipe-for-graphql-adoption","publishDate":"2017-10-25T00:00-07:00"},"graphql/graphql-at-massive-scale-graphql-as-the-glue-in-a-microservice-architecture":{"slugPath":"graphql/graphql-at-massive-scale-graphql-as-the-glue-in-a-microservice-architecture","publishDate":"2017-10-25T05:21-07:00"},"graphql/graphql-at-twitter":{"slugPath":"graphql/graphql-at-twitter","publishDate":"2017-10-26T23:50-07:00"},"graphql/graphql-client-driven-development":{"slugPath":"graphql/graphql-client-driven-development","publishDate":"2017-10-25T05:53-07:00"},"graphql/graphql-on-the-edge":{"slugPath":"graphql/graphql-on-the-edge","publishDate":"2017-10-26T00:00-07:00"},"graphql/graphql-productivity":{"slugPath":"graphql/graphql-productivity","publishDate":"2017-10-25T00:00-07:00"},"graphql/graphql-under-the-hood":{"slugPath":"graphql/graphql-under-the-hood","publishDate":"2017-10-26T00:00-07:00"},"graphql/handling-authentication-and-authorization-in-graphql":{"slugPath":"graphql/handling-authentication-and-authorization-in-graphql","publishDate":"2017-10-26T00:00-07:00"},"graphql/lee-byron-kicks-things-off":{"slugPath":"graphql/lee-byron-kicks-things-off","publishDate":"2017-10-25T00:00-07:00"},"graphql/liveblogging-graphql-summit-2017":{"slugPath":"graphql/liveblogging-graphql-summit-2017","publishDate":"2017-10-24T00:00-07:00"},"graphql/managing-massive-schemas-with-codegen":{"slugPath":"graphql/managing-massive-schemas-with-codegen","publishDate":"2017-10-26T00:00-07:00"},"graphql/setting-up-graphql-in-complicated-apis":{"slugPath":"graphql/setting-up-graphql-in-complicated-apis","publishDate":"2017-10-25T00:00-07:00"},"graphql/supercharge-your-graphql-development":{"slugPath":"graphql/supercharge-your-graphql-development","publishDate":"2017-10-26T22:28-07:00"},"graphql/teaching-graphql":{"slugPath":"graphql/teaching-graphql","publishDate":"2017-10-26T00:00-07:00"},"graphql/the-graphql-stack-how-everything-fits-together":{"slugPath":"graphql/the-graphql-stack-how-everything-fits-together","publishDate":"2017-10-26T00:00-07:00"},"graphql/twitch-our-graphql-transformation":{"slugPath":"graphql/twitch-our-graphql-transformation","publishDate":"2017-10-26T00:00-07:00"},"graphql/universal-graphql":{"slugPath":"graphql/universal-graphql","publishDate":"2017-10-24T05:53-07:00"},"graphql/what-went-wrong-best-practices-for-surfacing-error-messages-in-a-graphql-api":{"slugPath":"graphql/what-went-wrong-best-practices-for-surfacing-error-messages-in-a-graphql-api","publishDate":"2017-10-26T00:00-07:00"},"graphql/wordpress-graphql-bringing-graphql-to-28-of-the-internet":{"slugPath":"graphql/wordpress-graphql-bringing-graphql-to-28-of-the-internet","publishDate":"2017-10-25T09:48-07:00"},"go/a-go-guide-to-syscalls":{"slugPath":"go/a-go-guide-to-syscalls","publishDate":"2017-07-13T00:00-07:00"},"go/advanced-testing-in-go":{"slugPath":"go/advanced-testing-in-go","publishDate":"2017-07-14T00:00-07:00"},"go/an-introduction-to-go-tool-trace-rhys-hiltner":{"slugPath":"go/an-introduction-to-go-tool-trace-rhys-hiltner","publishDate":"2017-07-13T00:00-07:00"},"go/behaviors-of-channels":{"slugPath":"go/behaviors-of-channels","publishDate":"2017-11-06T12:10+01:00"},"go/code-intelligence-with-lsif":{"slugPath":"go/code-intelligence-with-lsif","publishDate":"2019-09-10T00:00-07:00"},"go/creating-a-custom-serialization-format":{"slugPath":"go/creating-a-custom-serialization-format","publishDate":"2017-07-13T00:00-07:00"},"go/debuggers-from-scratch":{"slugPath":"go/debuggers-from-scratch","publishDate":"2017-11-06T18:00+01:00"},"go/encrypting-the-internet-with-go-tutorial":{"slugPath":"go/encrypting-the-internet-with-go-tutorial","publishDate":"2017-07-13T00:00-07:00"},"go/evolutionary-optimization-peter-bourgon":{"slugPath":"go/evolutionary-optimization-peter-bourgon","publishDate":"2017-07-14T00:00-07:00"},"go/fallacies-of-distributed-gomputing":{"slugPath":"go/fallacies-of-distributed-gomputing","publishDate":"2017-07-14T14:55-07:00"},"go/forward-compatible-go-code":{"slugPath":"go/forward-compatible-go-code","publishDate":"2017-07-13T00:00-07:00"},"go/functional-programming-in-go":{"slugPath":"go/functional-programming-in-go","publishDate":"2017-07-14T23:04-07:00"},"go/generating-better-machine-code-with-ssa":{"slugPath":"go/generating-better-machine-code-with-ssa","publishDate":"2017-07-13T00:00-07:00"},"go/go-at-the-darpa-cyber-grand-challenge-will-hawkins":{"slugPath":"go/go-at-the-darpa-cyber-grand-challenge-will-hawkins","publishDate":"2017-07-14T00:00-07:00"},"go/go-lift":{"slugPath":"go/go-lift","publishDate":"2017-11-06T11:30+01:00"},"go/go-reliability-and-durability-at-dropbox-tammy-butow":{"slugPath":"go/go-reliability-and-durability-at-dropbox-tammy-butow","publishDate":"2017-07-13T00:00-07:00"},"go/gophecon-2018-writing-accessible-go":{"slugPath":"go/gophecon-2018-writing-accessible-go","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-5-mistakes-c-c-devs-make-writing-go":{"slugPath":"go/gophercon-2018-5-mistakes-c-c-devs-make-writing-go","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-adventures-in-cgo-performance":{"slugPath":"go/gophercon-2018-adventures-in-cgo-performance","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-allocator-wrestling":{"slugPath":"go/gophercon-2018-allocator-wrestling","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2018-an-over-engineering-disaster-with-macaroons":{"slugPath":"go/gophercon-2018-an-over-engineering-disaster-with-macaroons","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2018-asynchronous-networking-patterns":{"slugPath":"go/gophercon-2018-asynchronous-networking-patterns","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2018-becoming-a-go-contributor":{"slugPath":"go/gophercon-2018-becoming-a-go-contributor","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-binary-search-tree-algorithms":{"slugPath":"go/gophercon-2018-binary-search-tree-algorithms","publishDate":"2018-08-30T00:00-07:00"},"go/gophercon-2018-c-l-eye-catching-user-interfaces":{"slugPath":"go/gophercon-2018-c-l-eye-catching-user-interfaces","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-computer-vision-using-go-and-opencv-3":{"slugPath":"go/gophercon-2018-computer-vision-using-go-and-opencv-3","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2018-from-prototype-to-production-lessons-from-building-and":{"slugPath":"go/gophercon-2018-from-prototype-to-production-lessons-from-building-and","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-go-for-information-displays":{"slugPath":"go/gophercon-2018-go-for-information-displays","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2018-go-in-debian":{"slugPath":"go/gophercon-2018-go-in-debian","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-go-says-wat":{"slugPath":"go/gophercon-2018-go-says-wat","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2018-going-serverless":{"slugPath":"go/gophercon-2018-going-serverless","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-grpc-reflection-and-grpcurl":{"slugPath":"go/gophercon-2018-grpc-reflection-and-grpcurl","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-grpc-state-machines-and-testing":{"slugPath":"go/gophercon-2018-grpc-state-machines-and-testing","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-how-do-you-structure-your-go-apps":{"slugPath":"go/gophercon-2018-how-do-you-structure-your-go-apps","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2018-how-to-write-a-parser-in-go":{"slugPath":"go/gophercon-2018-how-to-write-a-parser-in-go","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-implementing-a-network-protocol-in-go":{"slugPath":"go/gophercon-2018-implementing-a-network-protocol-in-go","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-machine-learning-in-go":{"slugPath":"go/gophercon-2018-machine-learning-in-go","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2018-micro-optimizing-go-code":{"slugPath":"go/gophercon-2018-micro-optimizing-go-code","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-painting-with-light":{"slugPath":"go/gophercon-2018-painting-with-light","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2018-rethinking-classical-concurrency-patterns":{"slugPath":"go/gophercon-2018-rethinking-classical-concurrency-patterns","publishDate":"2018-09-04T00:00-07:00"},"go/gophercon-2018-the-go-programmers-guide-to-secure-connections":{"slugPath":"go/gophercon-2018-the-go-programmers-guide-to-secure-connections","publishDate":"2018-08-29T00:00-06:00"},"go/gophercon-2018-the-importance-of-beginners":{"slugPath":"go/gophercon-2018-the-importance-of-beginners","publishDate":"2018-08-30T00:00-07:00"},"go/gophercon-2018-the-scheduler-saga":{"slugPath":"go/gophercon-2018-the-scheduler-saga","publishDate":"2018-08-28T00:00-06:00"},"go/gophercon-2019-better-x86-assembly-generation-from-go":{"slugPath":"go/gophercon-2019-better-x86-assembly-generation-from-go","publishDate":"2019-07-25T00:00-14:00"},"go/gophercon-2019-controlling-the-go-runtime":{"slugPath":"go/gophercon-2019-controlling-the-go-runtime","publishDate":"2019-07-25T00:00-11:55"},"go/gophercon-2019-death-by-three-thousand-timers-streaming-video-on-demand-for-cable-tv":{"slugPath":"go/gophercon-2019-death-by-three-thousand-timers-streaming-video-on-demand-for-cable-tv","publishDate":"2019-07-26T00:00-11:55"},"go/gophercon-2019-design-command-line-tools-people-love":{"slugPath":"go/gophercon-2019-design-command-line-tools-people-love","publishDate":"2019-07-25T00:00-14:55"},"go/gophercon-2019-detecting-incompatible-api-changes":{"slugPath":"go/gophercon-2019-detecting-incompatible-api-changes","publishDate":"2019-07-26T00:00-14:00"},"go/gophercon-2019-dynamically-instrumenting-go-programs":{"slugPath":"go/gophercon-2019-dynamically-instrumenting-go-programs","publishDate":"2019-07-26T00:00-14:00"},"go/gophercon-2019-generics-in-go":{"slugPath":"go/gophercon-2019-generics-in-go","publishDate":"2019-07-26T00:00-09:40"},"go/gophercon-2019-get-going-with-webassembly":{"slugPath":"go/gophercon-2019-get-going-with-webassembly","publishDate":"2019-07-25T00:00-11:55"},"go/gophercon-2019-go-linters-myths-and-best-practices":{"slugPath":"go/gophercon-2019-go-linters-myths-and-best-practices","publishDate":"2019-07-26T00:00-14:00"},"go/gophercon-2019-go-module-proxy-life-of-a-query":{"slugPath":"go/gophercon-2019-go-module-proxy-life-of-a-query","publishDate":"2019-07-25T00:00-14:00"},"go/gophercon-2019-go-pls-stop-breaking-my-editor":{"slugPath":"go/gophercon-2019-go-pls-stop-breaking-my-editor","publishDate":"2019-07-25T00:00-11:20"},"go/gophercon-2019-handling-go-errors":{"slugPath":"go/gophercon-2019-handling-go-errors","publishDate":"2019-07-25T00:00-11:55"},"go/gophercon-2019-how-i-write-http-web-services-after-eight-years":{"slugPath":"go/gophercon-2019-how-i-write-http-web-services-after-eight-years","publishDate":"2019-07-26T00:00-14:55"},"go/gophercon-2019-how-uber-go-es":{"slugPath":"go/gophercon-2019-how-uber-go-es","publishDate":"2019-07-25T00:00-09:50"},"go/gophercon-2019-on-the-road-to-go-2":{"slugPath":"go/gophercon-2019-on-the-road-to-go-2","publishDate":"2019-07-25T00:00-09:10"},"go/gophercon-2019-optimization-for-number-of-goroutines-using-feedback-control":{"slugPath":"go/gophercon-2019-optimization-for-number-of-goroutines-using-feedback-control","publishDate":"2019-07-25T00:00-14:00"},"go/gophercon-2019-optimizing-go-code-without-a-blindfold":{"slugPath":"go/gophercon-2019-optimizing-go-code-without-a-blindfold","publishDate":"2019-07-26T00:00-11:55"},"go/gophercon-2019-contributing-to-the-os-package-how-deep-do-you-go":{"slugPath":"go/gophercon-2019-contributing-to-the-os-package-how-deep-do-you-go","publishDate":"2019-07-25T00:00-16:25"},"go/gophercon-2019-pki-for-gophers":{"slugPath":"go/gophercon-2019-pki-for-gophers","publishDate":"2019-07-25T00:00-14:55"},"go/gophercon-2019-simple-portable-efficient-graphical-interfaces-in-go":{"slugPath":"go/gophercon-2019-simple-portable-efficient-graphical-interfaces-in-go","publishDate":"2019-07-25T00:00-10:50"},"go/gophercon-2019-small-is-going-big-go-on-microcontrollers":{"slugPath":"go/gophercon-2019-small-is-going-big-go-on-microcontrollers","publishDate":"2019-07-26T00:00-11:20"},"go/gophercon-2019-socket-to-me-where-do-sockets-live-in-go":{"slugPath":"go/gophercon-2019-socket-to-me-where-do-sockets-live-in-go","publishDate":"2019-07-26T00:00-11:55"},"go/gophercon-2019-the-athens-project-a-proxy-server-for-go-modules":{"slugPath":"go/gophercon-2019-the-athens-project-a-proxy-server-for-go-modules","publishDate":"2019-07-26T00:00-09:10"},"go/gophercon-2019-the-gopher-s-manual-of-style":{"slugPath":"go/gophercon-2019-the-gopher-s-manual-of-style","publishDate":"2019-07-25T00:00-14:55"},"go/gophercon-2019-tracking-inter-process-dependencies-using-static-analysis":{"slugPath":"go/gophercon-2019-tracking-inter-process-dependencies-using-static-analysis","publishDate":"2019-07-26T00:00-14:55"},"go/gophercon-2019-two-go-programs-three-different-profiling-techniques-in-50-minutes":{"slugPath":"go/gophercon-2019-two-go-programs-three-different-profiling-techniques-in-50-minutes","publishDate":"2019-07-26T00:00-14:55"},"go/gophercon-2019-what-got-us-here-won-t-get-us-there":{"slugPath":"go/gophercon-2019-what-got-us-here-won-t-get-us-there","publishDate":"2019-07-26T00:00-16:25"},"go/gophercon-2019-you-can-t-go-your-own-way-the-standardization-of-go-at-github":{"slugPath":"go/gophercon-2019-you-can-t-go-your-own-way-the-standardization-of-go-at-github","publishDate":"2019-07-26T00:00-10:50"},"go/gos-work-stealing-scheduler":{"slugPath":"go/gos-work-stealing-scheduler","publishDate":"2017-11-06T17:30+01:00"},"go/idiomatic-go":{"slugPath":"go/idiomatic-go","publishDate":"2017-07-14T00:00-07:00"},"go/lightning-talks-1":{"slugPath":"go/lightning-talks-1","publishDate":"2017-11-06T14:45+01:00"},"go/liveblog-articles-from-gophercon-2017":{"slugPath":"go/liveblog-articles-from-gophercon-2017","publishDate":"2017-07-13T00:00-07:00"},"go/sourcegraph-liveblogging-at-gophercon-2019":{"slugPath":"go/sourcegraph-liveblogging-at-gophercon-2019","publishDate":"2019-07-22T00:00-07:00"},"go/liveblogging-dotgo-2017":{"slugPath":"go/liveblogging-dotgo-2017","publishDate":"2017-10-31T00:00-07:00"},"go/liveblogging-gophercon-2017":{"slugPath":"go/liveblogging-gophercon-2017","publishDate":"2017-07-12T00:00-07:00"},"go/machine-learning-and-go":{"slugPath":"go/machine-learning-and-go","publishDate":"2017-11-06T17:40+01:00"},"go/my-journey-to-go":{"slugPath":"go/my-journey-to-go","publishDate":"2017-07-14T00:00-07:00"},"go/operability-in-go":{"slugPath":"go/operability-in-go","publishDate":"2017-07-13T00:00-07:00"},"go/peter-bourgon-on-the-history-of-go-kit-and-whats-next":{"slugPath":"go/peter-bourgon-on-the-history-of-go-kit-and-whats-next","publishDate":"2017-07-12T00:00-07:00"},"go/preparing-for-the-next-wave":{"slugPath":"go/preparing-for-the-next-wave","publishDate":"2017-11-06T20:30+01:00"},"go/runtime-generated-typesafe-and-declarative-pick-any-three":{"slugPath":"go/runtime-generated-typesafe-and-declarative-pick-any-three","publishDate":"2017-07-14T00:00-07:00"},"go/self-deploying-kubernetes-applications-kelsey-hightower":{"slugPath":"go/self-deploying-kubernetes-applications-kelsey-hightower","publishDate":"2017-07-13T00:00-07:00"},"go/simulating-a-real-world-system-in-go":{"slugPath":"go/simulating-a-real-world-system-in-go","publishDate":"2017-11-06T10:55+01:00"},"go/sourcegraph-liveblogging-at-gophercon-2018":{"slugPath":"go/sourcegraph-liveblogging-at-gophercon-2018","publishDate":"2018-08-22T00:00-07:00"},"go/the-art-of-testing":{"slugPath":"go/the-art-of-testing","publishDate":"2017-11-06T11:45+01:00"},"go/the-functional-design-of-dep-and-package-managers-in-general":{"slugPath":"go/the-functional-design-of-dep-and-package-managers-in-general","publishDate":"2017-11-06T23:59+01:00"},"go/the-future-of-go":{"slugPath":"go/the-future-of-go","publishDate":"2017-07-13T00:00-07:00"},"go/the-new-era-of-go-package-management":{"slugPath":"go/the-new-era-of-go-package-management","publishDate":"2017-07-14T00:00-07:00"},"go/thunder-talks":{"slugPath":"go/thunder-talks","publishDate":"2017-11-06T16:25+01:00"},"go/understanding-channels-kavya-joshi":{"slugPath":"go/understanding-channels-kavya-joshi","publishDate":"2017-07-14T00:00-07:00"},"go/unmasking-netpoll-go":{"slugPath":"go/unmasking-netpoll-go","publishDate":"2017-11-06T16:20+01:00"},"go/valuable-lessons-in-over-engineering-the-core-of-kubernetes-kops":{"slugPath":"go/valuable-lessons-in-over-engineering-the-core-of-kubernetes-kops","publishDate":"2017-07-13T00:00-07:00"},"go/writing-a-go-tool-to-parse-and-modify-struct-tags":{"slugPath":"go/writing-a-go-tool-to-parse-and-modify-struct-tags","publishDate":"2017-07-13T00:00-07:00"},"go/writing-network-clients-in-go-the-design-and-implementation-of-the-nats-client":{"slugPath":"go/writing-network-clients-in-go-the-design-and-implementation-of-the-nats-client","publishDate":"2017-07-14T00:00-07:00"},"strange-loop/strange-loop-2019-a-better-story-for-kubernetes-secrets":{"slugPath":"strange-loop/strange-loop-2019-a-better-story-for-kubernetes-secrets","publishDate":"2019-09-14T00:00-11:20"},"strange-loop/strange-loop-2019-a-robot-poet-goes-for-a-walk-in-the-park":{"slugPath":"strange-loop/strange-loop-2019-a-robot-poet-goes-for-a-walk-in-the-park","publishDate":"2019-09-13T00:00-11:20"},"strange-loop/strange-loop-2019-a-stitch-in-time-the-future-of-oss-sustainability":{"slugPath":"strange-loop/strange-loop-2019-a-stitch-in-time-the-future-of-oss-sustainability","publishDate":"2019-09-13T00:00-13:30"},"strange-loop/strange-loop-2019-alda-s-dynamic-relationship-with-clojure":{"slugPath":"strange-loop/strange-loop-2019-alda-s-dynamic-relationship-with-clojure","publishDate":"2019-09-13T00:00-14:30"},"strange-loop/strange-loop-2019-apache-pulsar-and-the-legacy-of-telegraphy":{"slugPath":"strange-loop/strange-loop-2019-apache-pulsar-and-the-legacy-of-telegraphy","publishDate":"2019-09-13T00:00-13:30"},"strange-loop/strange-loop-2019-assistive-augmentation-lip-reading-with-ai":{"slugPath":"strange-loop/strange-loop-2019-assistive-augmentation-lip-reading-with-ai","publishDate":"2019-09-13T00:00-15:30"},"strange-loop/strange-loop-2019-astriagraph-monitoring-global-traffic-in-space":{"slugPath":"strange-loop/strange-loop-2019-astriagraph-monitoring-global-traffic-in-space","publishDate":"2019-09-13T00:00-16:30"},"strange-loop/strange-loop-2019-automating-operations-of-a-global-cdn":{"slugPath":"strange-loop/strange-loop-2019-automating-operations-of-a-global-cdn","publishDate":"2019-09-13T00:00-14:30"},"strange-loop/strange-loop-2019-behind-the-new-york-times-crossword":{"slugPath":"strange-loop/strange-loop-2019-behind-the-new-york-times-crossword","publishDate":"2019-09-13T00:00-10:20"},"strange-loop/strange-loop-2019-better-integration-tests-for-performance-monitoring":{"slugPath":"strange-loop/strange-loop-2019-better-integration-tests-for-performance-monitoring","publishDate":"2019-09-14T00:00-13:30"},"strange-loop/strange-loop-2019-better-spotify-playlists-through-discrete-optimization":{"slugPath":"strange-loop/strange-loop-2019-better-spotify-playlists-through-discrete-optimization","publishDate":"2019-09-13T00:00-10:20"},"strange-loop/strange-loop-2019-beyond-alt-text-trends-in-online-accessibility":{"slugPath":"strange-loop/strange-loop-2019-beyond-alt-text-trends-in-online-accessibility","publishDate":"2019-09-14T00:00-10:20"},"strange-loop/strange-loop-2019-beyond-traces-the-insights-in-trace-aggregates":{"slugPath":"strange-loop/strange-loop-2019-beyond-traces-the-insights-in-trace-aggregates","publishDate":"2019-09-13T00:00-13:30"},"strange-loop/strange-loop-2019-building-a-unified-cancer-immunotherapy-data-library":{"slugPath":"strange-loop/strange-loop-2019-building-a-unified-cancer-immunotherapy-data-library","publishDate":"2019-09-13T00:00-15:30"},"strange-loop/strange-loop-2019-building-an-open-source-artificial-pancreas":{"slugPath":"strange-loop/strange-loop-2019-building-an-open-source-artificial-pancreas","publishDate":"2019-09-14T00:00-13:30"},"strange-loop/strange-loop-2019-building-haskell-programs-with-fused-effects":{"slugPath":"strange-loop/strange-loop-2019-building-haskell-programs-with-fused-effects","publishDate":"2019-09-14T00:00-11:20"},"strange-loop/strange-loop-2019-can-androids-conceive-of-electric-sheep":{"slugPath":"strange-loop/strange-loop-2019-can-androids-conceive-of-electric-sheep","publishDate":"2019-09-14T00:00-10:20"},"strange-loop/strange-loop-2019-closing-keynote":{"slugPath":"strange-loop/strange-loop-2019-closing-keynote","publishDate":"2019-09-14T00:00-16:30"},"strange-loop/strange-loop-2019-community-driven-development":{"slugPath":"strange-loop/strange-loop-2019-community-driven-development","publishDate":"2019-09-14T00:00-14:30"},"strange-loop/strange-loop-2019-compacting-the-uncompactable":{"slugPath":"strange-loop/strange-loop-2019-compacting-the-uncompactable","publishDate":"2019-09-14T00:00-11:20"},"strange-loop/strange-loop-2019-complexities-of-color-in-computing":{"slugPath":"strange-loop/strange-loop-2019-complexities-of-color-in-computing","publishDate":"2019-09-14T00:00-10:20"},"strange-loop/strange-loop-2019-computer-vision-and-nlp-for-multi-task-fashion-modeling":{"slugPath":"strange-loop/strange-loop-2019-computer-vision-and-nlp-for-multi-task-fashion-modeling","publishDate":"2019-09-14T00:00-13:30"},"strange-loop/strange-loop-2019-correctness-proofs-of-distributed-systems-with-isabelle":{"slugPath":"strange-loop/strange-loop-2019-correctness-proofs-of-distributed-systems-with-isabelle","publishDate":"2019-09-14T00:00-11:20"},"strange-loop/strange-loop-2019-css-algorithms":{"slugPath":"strange-loop/strange-loop-2019-css-algorithms","publishDate":"2019-09-14T00:00-13:30"},"strange-loop/strange-loop-2019-declarative-apis-in-an-imperative-world":{"slugPath":"strange-loop/strange-loop-2019-declarative-apis-in-an-imperative-world","publishDate":"2019-09-13T00:00-14:30"},"strange-loop/strange-loop-2019-designing-systems-against-domestic-violence":{"slugPath":"strange-loop/strange-loop-2019-designing-systems-against-domestic-violence","publishDate":"2019-09-14T00:00-11:20"},"strange-loop/strange-loop-2019-deterministic-docker-images-with-go-microservices":{"slugPath":"strange-loop/strange-loop-2019-deterministic-docker-images-with-go-microservices","publishDate":"2019-09-13T00:00-14:30"},"strange-loop/strange-loop-2019-digital-and-social-resilience-through-the-nyc-mesh":{"slugPath":"strange-loop/strange-loop-2019-digital-and-social-resilience-through-the-nyc-mesh","publishDate":"2019-09-13T00:00-14:30"},"strange-loop/strange-loop-2019-dive-into-streams-with-brooklin":{"slugPath":"strange-loop/strange-loop-2019-dive-into-streams-with-brooklin","publishDate":"2019-09-13T00:00-10:20"},"strange-loop/strange-loop-2019-easy-abstract-interpretation-with-sparta":{"slugPath":"strange-loop/strange-loop-2019-easy-abstract-interpretation-with-sparta","publishDate":"2019-09-13T00:00-11:20"},"strange-loop/strange-loop-2019-empowering-people-to-build-a-digital-bank":{"slugPath":"strange-loop/strange-loop-2019-empowering-people-to-build-a-digital-bank","publishDate":"2019-09-13T00:00-10:20"},"strange-loop/strange-loop-2019-enhancing-angklung-music-rehearsals-with-modern-tech":{"slugPath":"strange-loop/strange-loop-2019-enhancing-angklung-music-rehearsals-with-modern-tech","publishDate":"2019-09-13T00:00-15:30"},"strange-loop/strange-loop-2019-escuincla-babosa-a-python-deep-learning-telenovela":{"slugPath":"strange-loop/strange-loop-2019-escuincla-babosa-a-python-deep-learning-telenovela","publishDate":"2019-09-14T00:00-14:30"},"strange-loop/strange-loop-2019-everything-you-wanted-to-know-about-distributed-tracing":{"slugPath":"strange-loop/strange-loop-2019-everything-you-wanted-to-know-about-distributed-tracing","publishDate":"2019-09-14T00:00-13:30"},"strange-loop/strange-loop-2019-explainable-ai-the-apex-of-human-and-machine-learning":{"slugPath":"strange-loop/strange-loop-2019-explainable-ai-the-apex-of-human-and-machine-learning","publishDate":"2019-09-14T00:00-13:30"},"strange-loop/strange-loop-2019-federated-learning-private-distributed-ml":{"slugPath":"strange-loop/strange-loop-2019-federated-learning-private-distributed-ml","publishDate":"2019-09-14T00:00-10:20"},"strange-loop/strange-loop-2019-finding-bugs-without-running-or-even-looking-at-code":{"slugPath":"strange-loop/strange-loop-2019-finding-bugs-without-running-or-even-looking-at-code","publishDate":"2019-09-13T00:00-13:30"},"strange-loop/strange-loop-2019-formal-specification-and-taming-other-people-s-tech":{"slugPath":"strange-loop/strange-loop-2019-formal-specification-and-taming-other-people-s-tech","publishDate":"2019-09-13T00:00-15:30"},"strange-loop/strange-loop-2019-from-video-games-to-fashion-a-machine-learning-journey":{"slugPath":"strange-loop/strange-loop-2019-from-video-games-to-fashion-a-machine-learning-journey","publishDate":"2019-09-14T00:00-11:20"},"strange-loop/strange-loop-2019-how-computers-misunderstand-the-world":{"slugPath":"strange-loop/strange-loop-2019-how-computers-misunderstand-the-world","publishDate":"2019-09-14T00:00-09:10"},"strange-loop/strange-loop-2019-how-not-to-read-the-room-creating-wearables-with-ml":{"slugPath":"strange-loop/strange-loop-2019-how-not-to-read-the-room-creating-wearables-with-ml","publishDate":"2019-09-13T00:00-13:30"},"strange-loop/strange-loop-2019-how-to-build-with-data-trust-and-privacy-as-a-baseline":{"slugPath":"strange-loop/strange-loop-2019-how-to-build-with-data-trust-and-privacy-as-a-baseline","publishDate":"2019-09-13T00:00-14:30"},"strange-loop/strange-loop-2019-how-to-fix-ai-solutions-to-ml-bias-and-why-they-don-t-matter":{"slugPath":"strange-loop/strange-loop-2019-how-to-fix-ai-solutions-to-ml-bias-and-why-they-don-t-matter","publishDate":"2019-09-13T00:00-10:20"},"strange-loop/strange-loop-2019-how-to-teach-programming-and-other-things":{"slugPath":"strange-loop/strange-loop-2019-how-to-teach-programming-and-other-things","publishDate":"2019-09-13T00:00-09:10"},"strange-loop/strange-loop-2019-how-we-tell-stories-in-code":{"slugPath":"strange-loop/strange-loop-2019-how-we-tell-stories-in-code","publishDate":"2019-09-14T00:00-10:20"},"strange-loop/strange-loop-2019-how-your-company-can-help-sustain-open-source":{"slugPath":"strange-loop/strange-loop-2019-how-your-company-can-help-sustain-open-source","publishDate":"2019-09-14T00:00-15:30"},"strange-loop/strange-loop-2019-improving-law-interpretability-using-nlp":{"slugPath":"strange-loop/strange-loop-2019-improving-law-interpretability-using-nlp","publishDate":"2019-09-13T00:00-14:30"},"strange-loop/strange-loop-2019-inferenceql-ai-for-data-engineers-without-the-math":{"slugPath":"strange-loop/strange-loop-2019-inferenceql-ai-for-data-engineers-without-the-math","publishDate":"2019-09-14T00:00-15:30"},"strange-loop/strange-loop-2019-jagged-ragged-awkward-arrays":{"slugPath":"strange-loop/strange-loop-2019-jagged-ragged-awkward-arrays","publishDate":"2019-09-14T00:00-14:30"},"strange-loop/strange-loop-2019-lang-wishful-thinking":{"slugPath":"strange-loop/strange-loop-2019-lang-wishful-thinking","publishDate":"2019-09-14T00:00-15:30"},"strange-loop/strange-loop-2019-learning-to-love-javascript":{"slugPath":"strange-loop/strange-loop-2019-learning-to-love-javascript","publishDate":"2019-09-13T00:00-11:20"},"strange-loop/strange-loop-2019-machine-learning-to-interpret-sign-language":{"slugPath":"strange-loop/strange-loop-2019-machine-learning-to-interpret-sign-language","publishDate":"2019-09-14T00:00-14:30"},"strange-loop/strange-loop-2019-makings-of-a-modern-acid-compliant-distributed-database":{"slugPath":"strange-loop/strange-loop-2019-makings-of-a-modern-acid-compliant-distributed-database","publishDate":"2019-09-13T00:00-10:20"},"strange-loop/strange-loop-2019-meander-declarative-explorations-at-the-limits-of-fp":{"slugPath":"strange-loop/strange-loop-2019-meander-declarative-explorations-at-the-limits-of-fp","publishDate":"2019-09-14T00:00-15:30"},"strange-loop/strange-loop-2019-minimalist-piano-forever":{"slugPath":"strange-loop/strange-loop-2019-minimalist-piano-forever","publishDate":"2019-09-14T00:00-10:20"},"strange-loop/strange-loop-2019-myths-and-metaphors-of-open-source":{"slugPath":"strange-loop/strange-loop-2019-myths-and-metaphors-of-open-source","publishDate":"2019-09-13T00:00-13:30"},"strange-loop/strange-loop-2019-networking-and-go-an-engineer-s-journey":{"slugPath":"strange-loop/strange-loop-2019-networking-and-go-an-engineer-s-journey","publishDate":"2019-09-14T00:00-11:20"},"strange-loop/strange-loop-2019-new-programming-constructs-for-probabilistic-ai":{"slugPath":"strange-loop/strange-loop-2019-new-programming-constructs-for-probabilistic-ai","publishDate":"2019-09-13T00:00-11:20"},"strange-loop/strange-loop-2019-observability-superpowers-for-developers":{"slugPath":"strange-loop/strange-loop-2019-observability-superpowers-for-developers","publishDate":"2019-09-13T00:00-11:20"},"strange-loop/strange-loop-2019-parser-parser-combinators-for-program-transformation":{"slugPath":"strange-loop/strange-loop-2019-parser-parser-combinators-for-program-transformation","publishDate":"2019-09-14T00:00-13:30"},"strange-loop/strange-loop-2019-pattern-matching-scale-using-finite-state-machine":{"slugPath":"strange-loop/strange-loop-2019-pattern-matching-scale-using-finite-state-machine","publishDate":"2019-09-14T00:00-15:30"},"strange-loop/strange-loop-2019-performance-matters":{"slugPath":"strange-loop/strange-loop-2019-performance-matters","publishDate":"2019-09-14T00:00-14:30"},"strange-loop/strange-loop-2019-privacy-governance-explainability-in-ml-ai":{"slugPath":"strange-loop/strange-loop-2019-privacy-governance-explainability-in-ml-ai","publishDate":"2019-09-13T00:00-13:30"},"strange-loop/strange-loop-2019-probabilistic-scripts-for-automating-common-sense-tasks":{"slugPath":"strange-loop/strange-loop-2019-probabilistic-scripts-for-automating-common-sense-tasks","publishDate":"2019-09-14T00:00-11:20"},"strange-loop/strange-loop-2019-realtime-hybrid-reinforcement-learning-at-scale":{"slugPath":"strange-loop/strange-loop-2019-realtime-hybrid-reinforcement-learning-at-scale","publishDate":"2019-09-14T00:00-14:30"},"strange-loop/strange-loop-2019-recreating-forgotten-programming-languages-for-art":{"slugPath":"strange-loop/strange-loop-2019-recreating-forgotten-programming-languages-for-art","publishDate":"2019-09-13T00:00-10:20"},"strange-loop/strange-loop-2019-rgb-to-xyz-the-science-and-history-of-color":{"slugPath":"strange-loop/strange-loop-2019-rgb-to-xyz-the-science-and-history-of-color","publishDate":"2019-09-13T00:00-11:20"},"strange-loop/strange-loop-2019-rhapsody-in-zero-knowledge-proving-without-revealing":{"slugPath":"strange-loop/strange-loop-2019-rhapsody-in-zero-knowledge-proving-without-revealing","publishDate":"2019-09-14T00:00-14:30"},"strange-loop/strange-loop-2019-riding-the-stream-processing-wave":{"slugPath":"strange-loop/strange-loop-2019-riding-the-stream-processing-wave","publishDate":"2019-09-13T00:00-14:30"},"strange-loop/strange-loop-2019-ruby-on-the-apple-ii-adventures-in-retro-programming":{"slugPath":"strange-loop/strange-loop-2019-ruby-on-the-apple-ii-adventures-in-retro-programming","publishDate":"2019-09-13T00:00-11:20"},"strange-loop/strange-loop-2019-safety-in-chaos-forming-realistic-failure-hypotheses":{"slugPath":"strange-loop/strange-loop-2019-safety-in-chaos-forming-realistic-failure-hypotheses","publishDate":"2019-09-13T00:00-15:30"},"strange-loop/strange-loop-2019-securing-cloud-applications-and-their-credentials":{"slugPath":"strange-loop/strange-loop-2019-securing-cloud-applications-and-their-credentials","publishDate":"2019-09-14T00:00-10:20"},"strange-loop/strange-loop-2019-temporal-databases-for-streaming-architectures":{"slugPath":"strange-loop/strange-loop-2019-temporal-databases-for-streaming-architectures","publishDate":"2019-09-13T00:00-11:20"},"strange-loop/strange-loop-2019-the-idea-becomes-a-machine-that-makes-the-art-that":{"slugPath":"strange-loop/strange-loop-2019-the-idea-becomes-a-machine-that-makes-the-art-that","publishDate":"2019-09-13T00:00-13:30"},"strange-loop/strange-loop-2019-the-strange-loop-making-parasitic-insects-our-friends":{"slugPath":"strange-loop/strange-loop-2019-the-strange-loop-making-parasitic-insects-our-friends","publishDate":"2019-09-13T00:00-15:30"},"strange-loop/strange-loop-2019-towards-an-open-reason-ml-able-web":{"slugPath":"strange-loop/strange-loop-2019-towards-an-open-reason-ml-able-web","publishDate":"2019-09-13T00:00-15:30"},"strange-loop/strange-loop-2019-tweet-my-wedding-dress":{"slugPath":"strange-loop/strange-loop-2019-tweet-my-wedding-dress","publishDate":"2019-09-14T00:00-15:30"},"strange-loop/strange-loop-2019-typing-the-untyped-soundness-in-gradual-type-systems":{"slugPath":"strange-loop/strange-loop-2019-typing-the-untyped-soundness-in-gradual-type-systems","publishDate":"2019-09-13T00:00-10:20"},"strange-loop/strange-loop-2019-unison-a-new-distributed-programming-language":{"slugPath":"strange-loop/strange-loop-2019-unison-a-new-distributed-programming-language","publishDate":"2019-09-14T00:00-13:30"},"strange-loop/strange-loop-2019-uptime-15364-days-the-computers-of-voyager":{"slugPath":"strange-loop/strange-loop-2019-uptime-15364-days-the-computers-of-voyager","publishDate":"2019-09-13T00:00-15:30"},"strange-loop/strange-loop-2019-voice-driven-development-who-needs-a-keyboard-anyway":{"slugPath":"strange-loop/strange-loop-2019-voice-driven-development-who-needs-a-keyboard-anyway","publishDate":"2019-09-13T00:00-13:30"},"strange-loop/strange-loop-2019-watch-the-watcher-facial-recognition-police-oversight":{"slugPath":"strange-loop/strange-loop-2019-watch-the-watcher-facial-recognition-police-oversight","publishDate":"2019-09-14T00:00-15:30"},"strange-loop/strange-loop-2019-why-do-tree-ensembles-work":{"slugPath":"strange-loop/strange-loop-2019-why-do-tree-ensembles-work","publishDate":"2019-09-14T00:00-10:20"},"strange-loop/strange-loop-2019-zipline-a-declarative-feature-engineering-library":{"slugPath":"strange-loop/strange-loop-2019-zipline-a-declarative-feature-engineering-library","publishDate":"2019-09-14T00:00-14:30"},"c-plus-plus-code-intel":{"slugPath":"c-plus-plus-code-intel","publishDate":"2020-07-20T07:00-07:00"},"sourcegraph-3.18":{"slugPath":"sourcegraph-3.18","publishDate":"2020-07-20T10:00-07:00"},"small-but-useful-improvements":{"slugPath":"small-but-useful-improvements","publishDate":"2020-07-20T04:00-07:00"},"custom-search-pages":{"slugPath":"custom-search-pages","publishDate":"2020-07-20T05:00-07:00"},"indexed-non-default-branches":{"slugPath":"indexed-non-default-branches","publishDate":"2020-07-20T08:00-07:00"},"search-multiple-revisions":{"slugPath":"search-multiple-revisions","publishDate":"2020-07-20T09:00-07:00"},"sourcegraph-health-notification":{"slugPath":"sourcegraph-health-notification","publishDate":"2020-07-20T06:00-07:00"}}},"podcast":{"contentDirectory":"podcast","recordSlugs":{"introducing-the-sourcegraph-podcast":{"slugPath":"introducing-the-sourcegraph-podcast","publishDate":"2020-06-01T10:00-07:00"},"david-cramer":{"slugPath":"david-cramer","publishDate":"2020-06-15T10:01-07:00"},"matt-holt":{"slugPath":"matt-holt","publishDate":"2020-08-31T10:01-07:00"},"michael-stapelberg":{"slugPath":"michael-stapelberg","publishDate":"2020-09-07T10:01-07:00"},"syrus-akbary":{"slugPath":"syrus-akbary","publishDate":"2020-10-12T10:01-07:00"},"andrew-gallant":{"slugPath":"andrew-gallant","publishDate":"2020-11-02T10:00-07:00"},"jonathan-carter":{"slugPath":"jonathan-carter","publishDate":"2020-11-09T10:00-07:00"},"peter-pezaris":{"slugPath":"peter-pezaris","publishDate":"2020-11-16T10:01-07:00"},"kelsey-hightower":{"slugPath":"kelsey-hightower","publishDate":"2020-12-16T10:01-07:00"},"onboarding-ryan-djurovich":{"slugPath":"onboarding-ryan-djurovich","publishDate":"2021-06-30T10:01-07:00"},"han-wen-nienhuys":{"slugPath":"han-wen-nienhuys","publishDate":"2021-11-09T10:00-07:00"},"cassidy-williams":{"slugPath":"cassidy-williams","publishDate":"2021-11-16T10:00-07:00"},"joseph-nelson":{"slugPath":"joseph-nelson","publishDate":"2021-11-29T10:00-07:00"},"swyx":{"slugPath":"swyx","publishDate":"2021-12-14T10:00-07:00"},"nelson-elhage":{"slugPath":"nelson-elhage","publishDate":"2022-01-04T10:00-07:00"},"sugu-sougoumarane":{"slugPath":"sugu-sougoumarane","publishDate":"2022-01-18T10:00-07:00"},"max-brunsfeld":{"slugPath":"max-brunsfeld","publishDate":"2022-02-15T10:00-07:00"},"kelly-norton":{"slugPath":"kelly-norton","publishDate":"2022-03-01T10:00-07:00"},"fedor-korotkov":{"slugPath":"fedor-korotkov","publishDate":"2022-03-15T10:00-07:00"},"onboarding-limor-bergman":{"slugPath":"onboarding-limor-bergman","publishDate":"2021-07-14T10:01-07:00"},"onboarding-jean-du-plessis":{"slugPath":"onboarding-jean-du-plessis","publishDate":"2021-07-16T10:01-07:00"},"devon-zuegel":{"slugPath":"devon-zuegel","publishDate":"2021-08-06T10:01-07:00"},"christopher-chedeau":{"slugPath":"christopher-chedeau","publishDate":"2021-08-31T10:00-07:00"},"orta-therox":{"slugPath":"orta-therox","publishDate":"2021-09-14T10:00-07:00"},"refactoring-shopify-codebase-kirsten-westeinde":{"slugPath":"refactoring-shopify-codebase-kirsten-westeinde","publishDate":"2021-08-17T10:01-07:00"},"ivar-egil-osthus":{"slugPath":"ivar-egil-osthus","publishDate":"2021-09-30T10:00-07:00"},"sam-scott":{"slugPath":"sam-scott","publishDate":"2021-10-12T10:00-07:00"},"andrew-kelley":{"slugPath":"andrew-kelley","publishDate":"2021-10-19T10:00-07:00"},"ryan-djurovich":{"slugPath":"ryan-djurovich","publishDate":"2020-06-22T10:01-07:00"},"max-howell":{"slugPath":"max-howell","publishDate":"2022-05-18T07:00-07:00"},"charity-majors":{"slugPath":"charity-majors","publishDate":"2020-06-29T10:01-07:00"},"evan-culver":{"slugPath":"evan-culver","publishDate":"2020-07-06T10:01-07:00"},"luke-hoban":{"slugPath":"luke-hoban","publishDate":"2020-07-13T10:01-07:00"},"yves-and-john":{"slugPath":"yves-and-john","publishDate":"2020-07-20T10:01-07:00"},"dan-bentley":{"slugPath":"dan-bentley","publishDate":"2020-07-27T10:01-07:00"},"rijnard-van-tonder":{"slugPath":"rijnard-van-tonder","publishDate":"2020-08-04T10:01-07:00"},"thorsten-klein":{"slugPath":"thorsten-klein","publishDate":"2020-08-24T10:01-07:00"}}},"press":{"contentDirectory":"press","recordSlugs":{"sourcegraph-launches-batch-changes":{"slugPath":"sourcegraph-launches-batch-changes","publishDate":"2021-03-24T06:00"},"big-code-survey-2020":{"slugPath":"big-code-survey-2020","publishDate":"2020-10-01T00:00"},"our-abcs-childrens-book":{"slugPath":"our-abcs-childrens-book","publishDate":"2020-04-23T00:00"},"sourcegraph-announces-new-gitlab-native-integration":{"slugPath":"sourcegraph-announces-new-gitlab-native-integration","publishDate":"2019-11-12T10:00-07:00"},"sourcegraph-secures-series-b":{"slugPath":"sourcegraph-secures-series-b","publishDate":"2020-03-03T00:00"},"sourcegraph-secures-series-c-sequoia":{"slugPath":"sourcegraph-secures-series-c-sequoia","publishDate":"2020-12-03T05:00"}}},"terms":{"contentDirectory":"terms","recordSlugs":{"cloud":{"slugPath":"cloud"},"gov":{"slugPath":"gov"},"index":{"slugPath":"index"},"privacy":{"slugPath":"privacy"},"security":{"slugPath":"security"},"self-hosted":{"slugPath":"self-hosted"},"subprocessors":{"slugPath":"subprocessors"},"archives/privacy/2021-01-15":{"slugPath":"archives/privacy/2021-01-15"},"archives/cloud/2021-06-25":{"slugPath":"archives/cloud/2021-06-25"},"archives/cloud/2021-12-09":{"slugPath":"archives/cloud/2021-12-09"},"archives/cloud/2022-02-09":{"slugPath":"archives/cloud/2022-02-09"},"archives/self-hosted/2021-06-24":{"slugPath":"archives/self-hosted/2021-06-24"},"archives/self-hosted/2021-08-25":{"slugPath":"archives/self-hosted/2021-08-25"},"archives/self-hosted/2021-10-11":{"slugPath":"archives/self-hosted/2021-10-11"},"archives/self-hosted/2022-02-10":{"slugPath":"archives/self-hosted/2022-02-10"},"archives/subprocessors/2021-12-03":{"slugPath":"archives/subprocessors/2021-12-03"}}}}}
+{
+  "records": {
+    "blogposts": {
+      "contentDirectory": "blogposts",
+      "recordSlugs": {
+        "release-anxiety": { "slugPath": "release-anxiety", "publishDate": "2021-11-04T10:00-07:00" },
+        "5-easy-ways-to-start-contributing-to-docker-using-sourcegraph": {
+          "slugPath": "5-easy-ways-to-start-contributing-to-docker-using-sourcegraph",
+          "publishDate": "2016-05-30T00:00-07:00"
+        },
+        "5-short-stories-from-open-source-pains-in-gains": {
+          "slugPath": "5-short-stories-from-open-source-pains-in-gains",
+          "publishDate": "2016-09-14T00:00-07:00"
+        },
+        "announcing-checkup-simple-self-hosted-health-checks": {
+          "slugPath": "announcing-checkup-simple-self-hosted-health-checks",
+          "publishDate": "2016-06-08T11:31-07:00"
+        },
+        "appdash-an-open-source-perf-tracing-suite": {
+          "slugPath": "appdash-an-open-source-perf-tracing-suite",
+          "publishDate": "2016-05-30T00:00-07:00"
+        },
+        "browse-review-code-on-github-like-in-an-ide-with-the-sourcegraph-chrome-extension": {
+          "slugPath": "browse-review-code-on-github-like-in-an-ide-with-the-sourcegraph-chrome-extension",
+          "publishDate": "2016-05-30T00:00-07:00"
+        },
+        "building-a-product-one-user-interview-at-a-time": {
+          "slugPath": "building-a-product-one-user-interview-at-a-time",
+          "publishDate": "2016-05-30T14:45-07:00"
+        },
+        "clarence-wardell": { "slugPath": "clarence-wardell", "publishDate": "2016-05-30T00:00-07:00" },
+        "getting-started-with-sourcegraph": {
+          "slugPath": "getting-started-with-sourcegraph",
+          "publishDate": "2016-05-30T00:00-07:00"
+        },
+        "google-i-o-talk-building-sourcegraph": {
+          "slugPath": "google-i-o-talk-building-sourcegraph",
+          "publishDate": "2016-05-30T00:00-07:00"
+        },
+        "how-to-make-your-open-source-project-thrive-with-andrey-petrov": {
+          "slugPath": "how-to-make-your-open-source-project-thrive-with-andrey-petrov",
+          "publishDate": "2016-06-21T00:00-07:00"
+        },
+        "ipfs-the-permanent-web-by-juan-benet": {
+          "slugPath": "ipfs-the-permanent-web-by-juan-benet",
+          "publishDate": "2016-05-30T12:39-07:00"
+        },
+        "poetically-simple-code-review": {
+          "slugPath": "poetically-simple-code-review",
+          "publishDate": "2016-11-01T00:00-07:00"
+        },
+        "some-challenges-that-startup-development-teams-face": {
+          "slugPath": "some-challenges-that-startup-development-teams-face",
+          "publishDate": "2016-05-30T00:00-07:00"
+        },
+        "sourcegraph-the-best-way-to-read-code-just-got-better": {
+          "slugPath": "sourcegraph-the-best-way-to-read-code-just-got-better",
+          "publishDate": "2016-10-04T00:00-07:00"
+        },
+        "the-ibm-system-360-the-first-modular-general-purpose-computer": {
+          "slugPath": "the-ibm-system-360-the-first-modular-general-purpose-computer",
+          "publishDate": "2016-08-26T00:00-07:00"
+        },
+        "the-pain-of-code-review-how-different-teams-manage-scale-and-perform-code-reviews": {
+          "slugPath": "the-pain-of-code-review-how-different-teams-manage-scale-and-perform-code-reviews",
+          "publishDate": "2016-05-30T00:00-07:00"
+        },
+        "the-sourcegraph-developer-release-a-better-way-to-discover-and-understand-code": {
+          "slugPath": "the-sourcegraph-developer-release-a-better-way-to-discover-and-understand-code",
+          "publishDate": "2016-05-30T00:00-07:00"
+        },
+        "the-sourcegraph-test-v0-9-12-more-steps-to-better-code": {
+          "slugPath": "the-sourcegraph-test-v0-9-12-more-steps-to-better-code",
+          "publishDate": "2016-02-11T00:00-07:00"
+        },
+        "thyme-a-simple-cli-to-measure-human-time-and-focus": {
+          "slugPath": "thyme-a-simple-cli-to-measure-human-time-and-focus",
+          "publishDate": "2016-08-15T00:00-07:00"
+        },
+        "toward-a-url-for-every-function-in-the-world": {
+          "slugPath": "toward-a-url-for-every-function-in-the-world",
+          "publishDate": "2016-11-01T00:00-07:00"
+        },
+        "why-vacation-at-tech-companies-should-be-mandatory-better-code-happier-people": {
+          "slugPath": "why-vacation-at-tech-companies-should-be-mandatory-better-code-happier-people",
+          "publishDate": "2016-05-29T00:00-07:00"
+        },
+        "why-we-open-sourced-our-uptime-monitoring-system": {
+          "slugPath": "why-we-open-sourced-our-uptime-monitoring-system",
+          "publishDate": "2016-09-08T00:00-07:00"
+        },
+        "announcing-sourcegraph-2": { "slugPath": "announcing-sourcegraph-2", "publishDate": "2017-09-20T00:00-07:00" },
+        "building-a-high-performance-key-value-store": {
+          "slugPath": "building-a-high-performance-key-value-store",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "building-toward-the-sourcegraph-master-plan": {
+          "slugPath": "building-toward-the-sourcegraph-master-plan",
+          "publishDate": "2017-10-06T00:00-07:00"
+        },
+        "code-intelligence-for-java-now-available-on-sourcegraph": {
+          "slugPath": "code-intelligence-for-java-now-available-on-sourcegraph",
+          "publishDate": "2017-04-11T00:00-07:00"
+        },
+        "code-intelligence-now-available-for-java-on-sourcegraph-com": {
+          "slugPath": "code-intelligence-now-available-for-java-on-sourcegraph-com",
+          "publishDate": "2017-03-01T00:00-07:00"
+        },
+        "code-intelligence-on-github-embedded-code-snippets": {
+          "slugPath": "code-intelligence-on-github-embedded-code-snippets",
+          "publishDate": "2017-08-24T00:00-07:00"
+        },
+        "faster-smoother-github-code-browsing": {
+          "slugPath": "faster-smoother-github-code-browsing",
+          "publishDate": "2017-06-27T00:00-07:00"
+        },
+        "file-tree-navigation-on-github-yes-please": {
+          "slugPath": "file-tree-navigation-on-github-yes-please",
+          "publishDate": "2017-08-09T00:00-07:00"
+        },
+        "go-code-intelligence-on-sourcegraph-now-in-general-availability-ga": {
+          "slugPath": "go-code-intelligence-on-sourcegraph-now-in-general-availability-ga",
+          "publishDate": "2017-01-25T00:00-07:00"
+        },
+        "great-code-search-bad-code-search": {
+          "slugPath": "great-code-search-bad-code-search",
+          "publishDate": "2017-11-15T00:00-08:00"
+        },
+        "great-code-search-for-aws-codecommit": {
+          "slugPath": "great-code-search-for-aws-codecommit",
+          "publishDate": "2017-11-16T00:00-08:00"
+        },
+        "grpc-in-production-alan-shreve": {
+          "slugPath": "grpc-in-production-alan-shreve",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "how-caddy-auto-detects-https-interception": {
+          "slugPath": "how-caddy-auto-detects-https-interception",
+          "publishDate": "2017-03-03T00:00-07:00"
+        },
+        "introducing-code-search-in-sourcegraph": {
+          "slugPath": "introducing-code-search-in-sourcegraph",
+          "publishDate": "2017-04-07T00:00-07:00"
+        },
+        "introducing-sourcegraph-server-2-3": {
+          "slugPath": "introducing-sourcegraph-server-2-3",
+          "publishDate": "2017-12-05T00:00-08:00"
+        },
+        "jp-robinson-of-nytimes-on-go-kit-gizmo-and-marvin": {
+          "slugPath": "jp-robinson-of-nytimes-on-go-kit-gizmo-and-marvin",
+          "publishDate": "2017-07-12T00:00-07:00"
+        },
+        "more-powerful-code-search-on-sourcegraph": {
+          "slugPath": "more-powerful-code-search-on-sourcegraph",
+          "publishDate": "2017-11-01T00:00-07:00"
+        },
+        "part-1-how-sourcegraph-scales-with-the-language-server-protocol": {
+          "slugPath": "part-1-how-sourcegraph-scales-with-the-language-server-protocol",
+          "publishDate": "2017-02-27T00:00-07:00"
+        },
+        "part-2-how-sourcegraph-scales-with-the-language-server-protocol": {
+          "slugPath": "part-2-how-sourcegraph-scales-with-the-language-server-protocol",
+          "publishDate": "2017-02-22T00:00-07:00"
+        },
+        "regexp-queries-directories-openid-connect-and-more-updates-to-sourcegraph": {
+          "slugPath": "regexp-queries-directories-openid-connect-and-more-updates-to-sourcegraph",
+          "publishDate": "2017-11-13T00:00-08:00"
+        },
+        "see-how-many-people-use-a-java-library-with-sourcegraph-badges": {
+          "slugPath": "see-how-many-people-use-a-java-library-with-sourcegraph-badges",
+          "publishDate": "2017-04-11T00:00-07:00"
+        },
+        "see-how-many-people-use-your-library-with-sourcegraph-badges": {
+          "slugPath": "see-how-many-people-use-your-library-with-sourcegraph-badges",
+          "publishDate": "2017-02-13T00:00-07:00"
+        },
+        "sourcegraph-code-intelligence-and-the-language-server-protocol": {
+          "slugPath": "sourcegraph-code-intelligence-and-the-language-server-protocol",
+          "publishDate": "2017-05-15T00:00-07:00"
+        },
+        "sourcegraph-founders-featured-on-forbes-30-under-30-list": {
+          "slugPath": "sourcegraph-founders-featured-on-forbes-30-under-30-list",
+          "publishDate": "2017-01-06T00:00-07:00"
+        },
+        "why-chris-joined-sourcegraph": {
+          "slugPath": "why-chris-joined-sourcegraph",
+          "publishDate": "2018-04-19T11:30-07:00"
+        },
+        "announcing-sourcegraph-2.13": {
+          "slugPath": "announcing-sourcegraph-2.13",
+          "publishDate": "2018-11-06T00:00-07:00"
+        },
+        "code-intelligence-for-more-languages-and-lsp-language-server-protocol-support": {
+          "slugPath": "code-intelligence-for-more-languages-and-lsp-language-server-protocol-support",
+          "publishDate": "2018-05-22T09:00-07:00"
+        },
+        "code-intelligence-in-vim": { "slugPath": "code-intelligence-in-vim", "publishDate": "2018-09-19T00:00-07:00" },
+        "java-php-experimental_language_servers-temporarily-unavailable": {
+          "slugPath": "java-php-experimental_language_servers-temporarily-unavailable",
+          "publishDate": "2018-11-29T12:00-07:00"
+        },
+        "go-when-is-it-ok-to-recover": {
+          "slugPath": "go-when-is-it-ok-to-recover",
+          "publishDate": "2018-03-06T08:30-08:00"
+        },
+        "new-graphql-sourcegraph-extension": {
+          "slugPath": "new-graphql-sourcegraph-extension",
+          "publishDate": "2018-12-05T00:00-07:00"
+        },
+        "hack-time-at-sourcegraph": { "slugPath": "hack-time-at-sourcegraph", "publishDate": "2018-08-07T09:00-07:00" },
+        "how-sourcegraph-builds-sourcegraph": {
+          "slugPath": "how-sourcegraph-builds-sourcegraph",
+          "publishDate": "2018-03-20T15:00-07:00"
+        },
+        "how-to-support-your-employee-through-pregnancy-maternity-leave-and-the": {
+          "slugPath": "how-to-support-your-employee-through-pregnancy-maternity-leave-and-the",
+          "publishDate": "2018-08-28T09:00-06:00"
+        },
+        "how-we-run-end-to-end-e2e-tests-in-buildkite-ci": {
+          "slugPath": "how-we-run-end-to-end-e2e-tests-in-buildkite-ci",
+          "publishDate": "2018-09-14T09:00-07:00"
+        },
+        "introducing-sourcegraph-2-7": {
+          "slugPath": "introducing-sourcegraph-2-7",
+          "publishDate": "2018-04-16T00:00-07:00"
+        },
+        "introducing-sourcegraph-server-2-4": {
+          "slugPath": "introducing-sourcegraph-server-2-4",
+          "publishDate": "2018-01-09T00:00-08:00"
+        },
+        "introducing-sourcegraph-server-2-5": {
+          "slugPath": "introducing-sourcegraph-server-2-5",
+          "publishDate": "2018-02-08T00:00-08:00"
+        },
+        "introducing-sourcegraph-server-2-6": {
+          "slugPath": "introducing-sourcegraph-server-2-6",
+          "publishDate": "2018-03-13T00:00-08:00"
+        },
+        "our-project-based-interview-experiment-for-hiring-engineers": {
+          "slugPath": "our-project-based-interview-experiment-for-hiring-engineers",
+          "publishDate": "2018-06-19T08:45-07:00"
+        },
+        "powerful-code-search-for-bitbucket-server": {
+          "slugPath": "powerful-code-search-for-bitbucket-server",
+          "publishDate": "2018-03-14T00:00-07:00"
+        },
+        "sourcegraph-2-10": { "slugPath": "sourcegraph-2-10", "publishDate": "2018-08-01T09:00-07:00" },
+        "sourcegraph-2-11-release-notes": {
+          "slugPath": "sourcegraph-2-11-release-notes",
+          "publishDate": "2018-09-04T10:30-07:00"
+        },
+        "sourcegraph-2-12-release-notes": {
+          "slugPath": "sourcegraph-2-12-release-notes",
+          "publishDate": "2018-10-15T12:00-07:00"
+        },
+        "sourcegraph-2-8-19-languages-ridiculously-huge-monorepos-lsp-a-graphql-api": {
+          "slugPath": "sourcegraph-2-8-19-languages-ridiculously-huge-monorepos-lsp-a-graphql-api",
+          "publishDate": "2018-05-22T09:00-07:00"
+        },
+        "sourcegraph-2-9-announcement-code-search-user-rollout-in-large-organizations": {
+          "slugPath": "sourcegraph-2-9-announcement-code-search-user-rollout-in-large-organizations",
+          "publishDate": "2018-06-19T10:30-07:00"
+        },
+        "sourcegraph-browser-extensions-are-now-open-source": {
+          "slugPath": "sourcegraph-browser-extensions-are-now-open-source",
+          "publishDate": "2018-08-10T07:30-07:00"
+        },
+        "sourcegraph-future-coding-podcast-episode-32": {
+          "slugPath": "sourcegraph-future-coding-podcast-episode-32",
+          "publishDate": "2018-10-25T00:00-07:00"
+        },
+        "the-august-2018-docker-hub-outage-and-the-impact-on-kubernetes-deployments": {
+          "slugPath": "the-august-2018-docker-hub-outage-and-the-impact-on-kubernetes-deployments",
+          "publishDate": "2018-08-17T16:34-07:00"
+        },
+        "the-pain-that-minimal-version-selection-solves": {
+          "slugPath": "the-pain-that-minimal-version-selection-solves",
+          "publishDate": "2018-08-30T17:00-07:00"
+        },
+        "sourcegraph-3.0-beta-is-now-available": {
+          "slugPath": "sourcegraph-3.0-beta-is-now-available",
+          "publishDate": "2019-01-15T05:59-06:00"
+        },
+        "sourcegraph-3.0": { "slugPath": "sourcegraph-3.0", "publishDate": "2019-02-08T05:59-06:00" },
+        "sourcegraph-3.1": { "slugPath": "sourcegraph-3.1", "publishDate": "2019-02-20T05:59-06:00" },
+        "sourcegraph-3.10": { "slugPath": "sourcegraph-3.10", "publishDate": "2019-11-20T10:00-07:00" },
+        "sourcegraph-3.11": { "slugPath": "sourcegraph-3.11", "publishDate": "2019-12-20T10:00-07:00" },
+        "sourcegraph-3.2": { "slugPath": "sourcegraph-3.2", "publishDate": "2019-03-20T05:59-06:00" },
+        "sourcegraph-3.3": { "slugPath": "sourcegraph-3.3", "publishDate": "2019-04-22T10:00-07:00" },
+        "sourcegraph-3.4": { "slugPath": "sourcegraph-3.4", "publishDate": "2019-05-20T10:00-07:00" },
+        "sourcegraph-3.5": { "slugPath": "sourcegraph-3.5", "publishDate": "2019-06-20T10:00-07:00" },
+        "sourcegraph-3.6": { "slugPath": "sourcegraph-3.6", "publishDate": "2019-07-20T10:00-07:00" },
+        "sourcegraph-3.7": { "slugPath": "sourcegraph-3.7", "publishDate": "2019-08-20T10:00-07:00" },
+        "sourcegraph-3.8": { "slugPath": "sourcegraph-3.8", "publishDate": "2019-09-20T10:00-07:00" },
+        "sourcegraph-3.9": { "slugPath": "sourcegraph-3.9", "publishDate": "2019-10-20T10:00-07:00" },
+        "code-navigation-in-github-pull-requests": {
+          "slugPath": "code-navigation-in-github-pull-requests",
+          "publishDate": "2019-12-09T10:00-08:00"
+        },
+        "convoy-improved-their-developer-on-boarding-with-sourcegraph": {
+          "slugPath": "convoy-improved-their-developer-on-boarding-with-sourcegraph",
+          "publishDate": "2019-11-08T10:00-07:00"
+        },
+        "convoy-software-engineers-and-data-scientists-work-better-together": {
+          "slugPath": "convoy-software-engineers-and-data-scientists-work-better-together",
+          "publishDate": "2019-11-08T10:00-07:00"
+        },
+        "felix-becker-fully-type-safe-web-workers-with-zero-boilerplate": {
+          "slugPath": "felix-becker-fully-type-safe-web-workers-with-zero-boilerplate",
+          "publishDate": "2019-12-18T10:00-07:00"
+        },
+        "advanced-typescript-tooling-talk-fosdem-2019": {
+          "slugPath": "advanced-typescript-tooling-talk-fosdem-2019",
+          "publishDate": "2019-03-29T05:59-06:00"
+        },
+        "from-saas-to-on-premises": { "slugPath": "from-saas-to-on-premises", "publishDate": "2019-10-30T00:00-07:00" },
+        "gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence": {
+          "slugPath": "gitlab-integrates-sourcegraph-code-navigation-and-code-intelligence",
+          "publishDate": "2019-11-12T10:00-07:00"
+        },
+        "improving-language-support-in-2019": {
+          "slugPath": "improving-language-support-in-2019",
+          "publishDate": "2019-01-15T00:00-06:00"
+        },
+        "sourcegraph-liveblogging-2019-strange-loop-conference": {
+          "slugPath": "sourcegraph-liveblogging-2019-strange-loop-conference",
+          "publishDate": "2019-09-02T00:00-07:00"
+        },
+        "writing-an-lsif-indexer": { "slugPath": "writing-an-lsif-indexer", "publishDate": "2019-10-14T10:00-07:00" },
+        "production-stability-at-lyft-during-their-monolith-to-microservices-decomposition": {
+          "slugPath": "production-stability-at-lyft-during-their-monolith-to-microservices-decomposition",
+          "publishDate": "2019-12-13T10:00-07:00"
+        },
+        "quantcast-large-scale-refactoring-with-sourcegraph": {
+          "slugPath": "quantcast-large-scale-refactoring-with-sourcegraph",
+          "publishDate": "2019-08-23T10:00-07:00"
+        },
+        "sofi-moves-fast-on-hundreds-of-microservices-with-sourcegraph": {
+          "slugPath": "sofi-moves-fast-on-hundreds-of-microservices-with-sourcegraph",
+          "publishDate": "2019-11-21T10:00-07:00"
+        },
+        "sourcegraph-circleci-2.0-migration": {
+          "slugPath": "sourcegraph-circleci-2.0-migration",
+          "publishDate": "2019-05-02T10:00-07:00"
+        },
+        "thorn-sunsets-legacy-applications-with-sourcegraph": {
+          "slugPath": "thorn-sunsets-legacy-applications-with-sourcegraph",
+          "publishDate": "2019-07-08T10:00-07:00"
+        },
+        "github-universe/github-universe-liveblog-alvind-salehi-federal-government": {
+          "slugPath": "github-universe/github-universe-liveblog-alvind-salehi-federal-government",
+          "publishDate": "2016-09-14T00:00-07:00"
+        },
+        "github-universe/github-universe-liveblog-bret-taylor-quip": {
+          "slugPath": "github-universe/github-universe-liveblog-bret-taylor-quip",
+          "publishDate": "2016-09-14T00:00-07:00"
+        },
+        "github-universe/github-universe-liveblog-ceos-keynote": {
+          "slugPath": "github-universe/github-universe-liveblog-ceos-keynote",
+          "publishDate": "2016-09-14T00:00-07:00"
+        },
+        "github-universe/github-universe-liveblog-ian-lee-lawrence-livermore-national-laboratory": {
+          "slugPath": "github-universe/github-universe-liveblog-ian-lee-lawrence-livermore-national-laboratory",
+          "publishDate": "2016-09-15T00:00-07:00"
+        },
+        "github-universe/github-universe-liveblog-innersource": {
+          "slugPath": "github-universe/github-universe-liveblog-innersource",
+          "publishDate": "2016-09-14T22:22-07:00"
+        },
+        "github-universe/liveblogging-github-universe": {
+          "slugPath": "github-universe/liveblogging-github-universe",
+          "publishDate": "2016-09-28T00:00-07:00"
+        },
+        "announcing-code-insights": { "slugPath": "announcing-code-insights", "publishDate": "2022-03-10T12:00-00:00" },
+        "migrating-to-css-modules-with-codemods-and-code-insights": {
+          "slugPath": "migrating-to-css-modules-with-codemods-and-code-insights",
+          "publishDate": "2022-03-10T00:00-07:00"
+        },
+        "developer-productivity-thoughts": {
+          "slugPath": "developer-productivity-thoughts",
+          "publishDate": "2022-05-10T18:00+02:00"
+        },
+        "introducing-migrator-service": {
+          "slugPath": "introducing-migrator-service",
+          "publishDate": "2022-02-22T12:00-00:00"
+        },
+        "monolith-microservices-migration": {
+          "slugPath": "monolith-microservices-migration",
+          "publishDate": "2022-04-28T18:00+02:00"
+        },
+        "shush-no-secrets": { "slugPath": "shush-no-secrets", "publishDate": "2022-05-24T11:25-07:00" },
+        "notebooks-ci": { "slugPath": "notebooks-ci", "publishDate": "2022-04-28T18:00+02:00" },
+        "please-save-git-io": { "slugPath": "please-save-git-io", "publishDate": "2022-04-26T12:00-00:00" },
+        "release/3.36": { "slugPath": "release/3.36", "publishDate": "2022-01-21T10:00-07:00" },
+        "release/3.37": { "slugPath": "release/3.37", "publishDate": "2022-02-22T10:00-07:00" },
+        "release/3.38": { "slugPath": "release/3.38", "publishDate": "2022-03-21T10:00-07:00" },
+        "release/3.39": { "slugPath": "release/3.39", "publishDate": "2022-04-21T10:00-07:00" },
+        "release/3.40": { "slugPath": "release/3.40", "publishDate": "2022-05-24T10:00-07:00" },
+        "ways-to-use-sourcegraph-extension-for-vs-code": {
+          "slugPath": "ways-to-use-sourcegraph-extension-for-vs-code",
+          "publishDate": "2022-02-08T00:00-07:00"
+        },
+        "real-weakest-link-in-software-supply-chain-security": {
+          "slugPath": "real-weakest-link-in-software-supply-chain-security",
+          "publishDate": "2022-03-21T18:00+02:00"
+        },
+        "indexing-the-oss-universe-update-more-code-hosts": {
+          "slugPath": "indexing-the-oss-universe-update-more-code-hosts",
+          "publishDate": "2022-01-10T00:00-07:00"
+        },
+        "why-fig-autocomplete-is-awesome": {
+          "slugPath": "why-fig-autocomplete-is-awesome",
+          "publishDate": "2022-04-21T11:25-07:00"
+        },
+        "announcing-sourcegraphs-series-d-round": {
+          "slugPath": "announcing-sourcegraphs-series-d-round",
+          "publishDate": "2021-07-13T00:00-07:00"
+        },
+        "api-documentation-for-all-your-code": {
+          "slugPath": "api-documentation-for-all-your-code",
+          "publishDate": "2021-07-22T10:00-07:00"
+        },
+        "avoiding-the-pitfalls-of-iteration-based-development": {
+          "slugPath": "avoiding-the-pitfalls-of-iteration-based-development",
+          "publishDate": "2021-04-15T18:00+02:00"
+        },
+        "better-onboarding-how-to-prevent-codebase-overwhelm": {
+          "slugPath": "better-onboarding-how-to-prevent-codebase-overwhelm",
+          "publishDate": "2022-03-09T18:00+02:00"
+        },
+        "software-engineer-career-ladder": {
+          "slugPath": "software-engineer-career-ladder",
+          "publishDate": "2021-10-07T10:00-07:00"
+        },
+        "continuous-delivery-mindset": {
+          "slugPath": "continuous-delivery-mindset",
+          "publishDate": "2021-11-08T10:00-07:00"
+        },
+        "creating-sourcegraph-product-design-principles": {
+          "slugPath": "creating-sourcegraph-product-design-principles",
+          "publishDate": "2021-05-17T18:00-07:00"
+        },
+        "deprecating-lsp": { "slugPath": "deprecating-lsp", "publishDate": "2021-08-26T12:00-00:00" },
+        "dev-tool-time-adam-gordon-bell": {
+          "slugPath": "dev-tool-time-adam-gordon-bell",
+          "publishDate": "2021-10-06T10:00-07:00"
+        },
+        "dev-tool-time-amir-rajan": { "slugPath": "dev-tool-time-amir-rajan", "publishDate": "2021-10-20T10:00-07:00" },
+        "dev-tool-time-leah-culver": {
+          "slugPath": "dev-tool-time-leah-culver",
+          "publishDate": "2021-07-15T10:00-07:00"
+        },
+        "dev-tool-time-liz-fong-jones": {
+          "slugPath": "dev-tool-time-liz-fong-jones",
+          "publishDate": "2021-09-16T10:00-07:00"
+        },
+        "dev-tool-time-mitchell-hashimoto": {
+          "slugPath": "dev-tool-time-mitchell-hashimoto",
+          "publishDate": "2021-08-25T10:00-07:00"
+        },
+        "dev-tool-time-paul-jolly": { "slugPath": "dev-tool-time-paul-jolly", "publishDate": "2021-09-22T10:00-07:00" },
+        "dev-tool-time-theprimeagen": {
+          "slugPath": "dev-tool-time-theprimeagen",
+          "publishDate": "2021-11-03T10:00-07:00"
+        },
+        "dev-tool-time-roger-peppe": {
+          "slugPath": "dev-tool-time-roger-peppe",
+          "publishDate": "2021-11-17T10:00-07:00"
+        },
+        "dev-tool-time-seth-vargo": { "slugPath": "dev-tool-time-seth-vargo", "publishDate": "2021-04-28T10:00-07:00" },
+        "dev-tool-time-thorsten-ball": {
+          "slugPath": "dev-tool-time-thorsten-ball",
+          "publishDate": "2021-08-18T10:00-07:00"
+        },
+        "eliminate-secrets-from-codebase-with-universal-code-search": {
+          "slugPath": "eliminate-secrets-from-codebase-with-universal-code-search",
+          "publishDate": "2021-09-27T10:00-07:00"
+        },
+        "expanding-sourcegraph-from-on-premise-to-saas": {
+          "slugPath": "expanding-sourcegraph-from-on-premise-to-saas",
+          "publishDate": "2021-12-09T00:00-07:00"
+        },
+        "feature-removal-interactive-search-mode": {
+          "slugPath": "feature-removal-interactive-search-mode",
+          "publishDate": "2021-01-20T10:00-07:00"
+        },
+        "how-not-to-break-a-search-engine-unglamorous-engineering": {
+          "slugPath": "how-not-to-break-a-search-engine-unglamorous-engineering",
+          "publishDate": "2021-06-25T10:00-07:00"
+        },
+        "integration-testing": { "slugPath": "integration-testing", "publishDate": "2022-01-13T18:00+02:00" },
+        "introducing-batch-changes": {
+          "slugPath": "introducing-batch-changes",
+          "publishDate": "2021-03-24T10:00-07:00"
+        },
+        "introducing-search-contexts": {
+          "slugPath": "introducing-search-contexts",
+          "publishDate": "2021-10-22T10:00-07:00"
+        },
+        "introducing-sourcegraphs-new-ui": {
+          "slugPath": "introducing-sourcegraphs-new-ui",
+          "publishDate": "2021-06-09T10:00-07:00"
+        },
+        "java-scala-kotlin-code-intelligence": {
+          "slugPath": "java-scala-kotlin-code-intelligence",
+          "publishDate": "2021-12-20T00:00-07:00"
+        },
+        "log4j-log4shell-0-day": { "slugPath": "log4j-log4shell-0-day", "publishDate": "2021-12-13T11:25-07:00" },
+        "nine-circles-of-dependency-hell": {
+          "slugPath": "nine-circles-of-dependency-hell",
+          "publishDate": "2021-09-28T10:00-07:00"
+        },
+        "optimizing-a-code-intel-commit-graph": {
+          "slugPath": "optimizing-a-code-intel-commit-graph",
+          "publishDate": "2021-05-26T18:00-07:00"
+        },
+        "optimizing-a-code-intel-commit-graph-part-2": {
+          "slugPath": "optimizing-a-code-intel-commit-graph-part-2",
+          "publishDate": "2021-06-03T18:00-07:00"
+        },
+        "postgres-text-search-balancing-query-time-and-relevancy": {
+          "slugPath": "postgres-text-search-balancing-query-time-and-relevancy",
+          "publishDate": "2021-10-13T10:00-07:00"
+        },
+        "postgres-version-update": { "slugPath": "postgres-version-update", "publishDate": "2021-03-31T18:00+02:00" },
+        "release/3.24": { "slugPath": "release/3.24", "publishDate": "2021-01-20T10:00-07:00" },
+        "release/3.25": { "slugPath": "release/3.25", "publishDate": "2021-02-20T10:00-07:00" },
+        "release/3.26": { "slugPath": "release/3.26", "publishDate": "2021-03-20T10:00-07:00" },
+        "release/3.27": { "slugPath": "release/3.27", "publishDate": "2021-04-27T10:00-07:00" },
+        "release/3.28": { "slugPath": "release/3.28", "publishDate": "2021-05-24T10:00-07:00" },
+        "release/3.29": { "slugPath": "release/3.29", "publishDate": "2021-06-23T10:00-07:00" },
+        "release/3.30": { "slugPath": "release/3.30", "publishDate": "2021-07-20T10:00-07:00" },
+        "release/3.31": { "slugPath": "release/3.31", "publishDate": "2021-09-02T10:00-07:00" },
+        "release/3.32": { "slugPath": "release/3.32", "publishDate": "2021-09-24T10:00-07:00" },
+        "release/3.33": { "slugPath": "release/3.33", "publishDate": "2021-10-25T10:00-07:00" },
+        "release/3.34": { "slugPath": "release/3.34", "publishDate": "2021-11-24T10:00-07:00" },
+        "release/3.35": { "slugPath": "release/3.35", "publishDate": "2021-12-21T10:00-07:00" },
+        "role-of-observability-tools-high-performing-development-teams": {
+          "slugPath": "role-of-observability-tools-high-performing-development-teams",
+          "publishDate": "2021-06-04T18:00-07:00"
+        },
+        "remote-work-calendar": { "slugPath": "remote-work-calendar", "publishDate": "2021-09-23T10:00-07:00" },
+        "sourcegraph-cloud-for-teams-now-in-private-beta": {
+          "slugPath": "sourcegraph-cloud-for-teams-now-in-private-beta",
+          "publishDate": "2021-12-09T00:00-07:00"
+        },
+        "tackling-the-long-tail-of-tiny-repos-with-shard-merging": {
+          "slugPath": "tackling-the-long-tail-of-tiny-repos-with-shard-merging",
+          "publishDate": "2021-11-09T10:00-07:00"
+        },
+        "the-future-of-code-search": {
+          "slugPath": "the-future-of-code-search",
+          "publishDate": "2021-07-13T00:00-07:00"
+        },
+        "why-index-the-oss-universe": {
+          "slugPath": "why-index-the-oss-universe",
+          "publishDate": "2021-08-19T00:00-07:00"
+        },
+        "why-we're-friends-with-code-hosts": {
+          "slugPath": "why-we're-friends-with-code-hosts",
+          "publishDate": "2021-04-06T10:00-07:00"
+        },
+        "workspaces-of-sourcegraph": {
+          "slugPath": "workspaces-of-sourcegraph",
+          "publishDate": "2021-03-16T18:00+02:00"
+        },
+        "sourcegraph-accepting-zoekt-maintainership": {
+          "slugPath": "sourcegraph-accepting-zoekt-maintainership",
+          "publishDate": "2021-11-09T00:00-07:00"
+        },
+        "zoekt-memory-optimizations-for-sourcegraph-cloud": {
+          "slugPath": "zoekt-memory-optimizations-for-sourcegraph-cloud",
+          "publishDate": "2021-08-19T00:00-07:00"
+        },
+        "a-different-way-to-think-about-code-ownership": {
+          "slugPath": "a-different-way-to-think-about-code-ownership",
+          "publishDate": "2020-10-05T10:00-07:00"
+        },
+        "sourcegraph-3.12": { "slugPath": "sourcegraph-3.12", "publishDate": "2020-01-20T10:00-07:00" },
+        "sourcegraph-3.13": { "slugPath": "sourcegraph-3.13", "publishDate": "2020-02-20T10:00-07:00" },
+        "sourcegraph-3.14": { "slugPath": "sourcegraph-3.14", "publishDate": "2020-03-20T10:00-07:00" },
+        "sourcegraph-3.15": { "slugPath": "sourcegraph-3.15", "publishDate": "2020-04-20T10:00-07:00" },
+        "sourcegraph-3.16": { "slugPath": "sourcegraph-3.16", "publishDate": "2020-05-20T10:00-07:00" },
+        "sourcegraph-3.17": { "slugPath": "sourcegraph-3.17", "publishDate": "2020-06-20T10:00-07:00" },
+        "can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls": {
+          "slugPath": "can-you-hear-me-no-but-we-read-you-an-experiment-with-video-calls",
+          "publishDate": "2020-10-29T00:00-07:00"
+        },
+        "code-intelligence-on-sourcegraph-com": {
+          "slugPath": "code-intelligence-on-sourcegraph-com",
+          "publishDate": "2020-04-14T00:00-07:00"
+        },
+        "code-search-in-monorepos": { "slugPath": "code-search-in-monorepos", "publishDate": "2020-11-13T10:00-08:00" },
+        "code-search-turned-code-checker": {
+          "slugPath": "code-search-turned-code-checker",
+          "publishDate": "2020-10-19T14:00-07:00"
+        },
+        "cs.dev-shortcut-url-for-code-search": {
+          "slugPath": "cs.dev-shortcut-url-for-code-search",
+          "publishDate": "2020-08-25T07:00-07:00"
+        },
+        "enable-native-code-intelligence-gitlab-sourcegraph-integration": {
+          "slugPath": "enable-native-code-intelligence-gitlab-sourcegraph-integration",
+          "publishDate": "2020-03-23T10:00-07:00"
+        },
+        "evolution-of-the-precise-code-intel-backend": {
+          "slugPath": "evolution-of-the-precise-code-intel-backend",
+          "publishDate": "2020-06-17T10:00-07:00"
+        },
+        "ex-googler-guide-dev-tools": {
+          "slugPath": "ex-googler-guide-dev-tools",
+          "publishDate": "2020-11-24T00:00-14:30"
+        },
+        "felicis-investment-fast-growth": {
+          "slugPath": "felicis-investment-fast-growth",
+          "publishDate": "2020-07-14T10:00-07:00"
+        },
+        "a-programmers-guide-to-find-and-replace": {
+          "slugPath": "a-programmers-guide-to-find-and-replace",
+          "publishDate": "2020-05-15T10:00-07:00"
+        },
+        "going-beyond-regular-expressions-with-structural-code-search": {
+          "slugPath": "going-beyond-regular-expressions-with-structural-code-search",
+          "publishDate": "2020-02-12T14:00-07:00"
+        },
+        "home-offices-of-sourcegraph": {
+          "slugPath": "home-offices-of-sourcegraph",
+          "publishDate": "2020-03-27T18:00+02:00"
+        },
+        "improving-security-through-transparency": {
+          "slugPath": "improving-security-through-transparency",
+          "publishDate": "2020-10-20T10:00-07:00"
+        },
+        "optimizing-a-code-intel-indexer": {
+          "slugPath": "optimizing-a-code-intel-indexer",
+          "publishDate": "2020-09-06T18:00-07:00"
+        },
+        "our-abcs-always-be-coding-childrens-book": {
+          "slugPath": "our-abcs-always-be-coding-childrens-book",
+          "publishDate": "2020-04-23T10:00-07:00"
+        },
+        "our-journey-to-all-remote": {
+          "slugPath": "our-journey-to-all-remote",
+          "publishDate": "2020-03-31T10:00-07:00"
+        },
+        "optimizing-a-code-intel-backend": {
+          "slugPath": "optimizing-a-code-intel-backend",
+          "publishDate": "2020-06-17T10:00-08:00"
+        },
+        "release/3.19": { "slugPath": "release/3.19", "publishDate": "2020-08-20T10:00-07:00" },
+        "release/3.20": { "slugPath": "release/3.20", "publishDate": "2020-09-20T10:00-07:00" },
+        "release/3.23": { "slugPath": "release/3.23", "publishDate": "2020-12-20T10:00-07:00" },
+        "remote-software-development-made-easier": {
+          "slugPath": "remote-software-development-made-easier",
+          "publishDate": "2020-04-14T17:59"
+        },
+        "series-b-universal-code-search": {
+          "slugPath": "series-b-universal-code-search",
+          "publishDate": "2020-03-03T05:00"
+        },
+        "series-c-with-sequoia": { "slugPath": "series-c-with-sequoia", "publishDate": "2020-12-03T05:00-07:00" },
+        "software-engineer-career-paths": {
+          "slugPath": "software-engineer-career-paths",
+          "publishDate": "2020-09-30T05:00-07:00"
+        },
+        "universal-code-intelligence-github-sourcegraph-browser-extension": {
+          "slugPath": "universal-code-intelligence-github-sourcegraph-browser-extension",
+          "publishDate": "2020-04-07T00:00-15:30"
+        },
+        "universal-code-search-github": {
+          "slugPath": "universal-code-search-github",
+          "publishDate": "2020-03-11T05:59-06:00"
+        },
+        "universal-code-search-gitlab": {
+          "slugPath": "universal-code-search-gitlab",
+          "publishDate": "2020-03-12T05:59-06:00"
+        },
+        "what-happens-when-a-successful-product-gets-its-first-design-team": {
+          "slugPath": "what-happens-when-a-successful-product-gets-its-first-design-team",
+          "publishDate": "2020-09-17T00:00-07:00"
+        },
+        "graphql/building-a-large-scale-multi-branded-web-app-on-gql-foundation": {
+          "slugPath": "graphql/building-a-large-scale-multi-branded-web-app-on-gql-foundation",
+          "publishDate": "2017-10-26T18:00+02:00"
+        },
+        "graphql/building-graphql-native-microservices": {
+          "slugPath": "graphql/building-graphql-native-microservices",
+          "publishDate": "2017-10-25T00:00-07:00"
+        },
+        "graphql/building-native-mobile-apps-with-graphql": {
+          "slugPath": "graphql/building-native-mobile-apps-with-graphql",
+          "publishDate": "2017-10-26T00:00-07:00"
+        },
+        "graphql/designing-with-graphql": {
+          "slugPath": "graphql/designing-with-graphql",
+          "publishDate": "2017-10-25T00:00-07:00"
+        },
+        "graphql/extending-the-limits-of-graphql-syrus-akbary": {
+          "slugPath": "graphql/extending-the-limits-of-graphql-syrus-akbary",
+          "publishDate": "2017-10-25T00:00-07:00"
+        },
+        "graphql/full-stack-subscriptions": {
+          "slugPath": "graphql/full-stack-subscriptions",
+          "publishDate": "2017-10-25T14:25-07:00"
+        },
+        "graphql/getting-buy-in-a-recipe-for-graphql-adoption": {
+          "slugPath": "graphql/getting-buy-in-a-recipe-for-graphql-adoption",
+          "publishDate": "2017-10-25T00:00-07:00"
+        },
+        "graphql/graphql-at-massive-scale-graphql-as-the-glue-in-a-microservice-architecture": {
+          "slugPath": "graphql/graphql-at-massive-scale-graphql-as-the-glue-in-a-microservice-architecture",
+          "publishDate": "2017-10-25T05:21-07:00"
+        },
+        "graphql/graphql-at-twitter": {
+          "slugPath": "graphql/graphql-at-twitter",
+          "publishDate": "2017-10-26T23:50-07:00"
+        },
+        "graphql/graphql-client-driven-development": {
+          "slugPath": "graphql/graphql-client-driven-development",
+          "publishDate": "2017-10-25T05:53-07:00"
+        },
+        "graphql/graphql-on-the-edge": {
+          "slugPath": "graphql/graphql-on-the-edge",
+          "publishDate": "2017-10-26T00:00-07:00"
+        },
+        "graphql/graphql-productivity": {
+          "slugPath": "graphql/graphql-productivity",
+          "publishDate": "2017-10-25T00:00-07:00"
+        },
+        "graphql/graphql-under-the-hood": {
+          "slugPath": "graphql/graphql-under-the-hood",
+          "publishDate": "2017-10-26T00:00-07:00"
+        },
+        "graphql/handling-authentication-and-authorization-in-graphql": {
+          "slugPath": "graphql/handling-authentication-and-authorization-in-graphql",
+          "publishDate": "2017-10-26T00:00-07:00"
+        },
+        "graphql/lee-byron-kicks-things-off": {
+          "slugPath": "graphql/lee-byron-kicks-things-off",
+          "publishDate": "2017-10-25T00:00-07:00"
+        },
+        "graphql/liveblogging-graphql-summit-2017": {
+          "slugPath": "graphql/liveblogging-graphql-summit-2017",
+          "publishDate": "2017-10-24T00:00-07:00"
+        },
+        "graphql/managing-massive-schemas-with-codegen": {
+          "slugPath": "graphql/managing-massive-schemas-with-codegen",
+          "publishDate": "2017-10-26T00:00-07:00"
+        },
+        "graphql/setting-up-graphql-in-complicated-apis": {
+          "slugPath": "graphql/setting-up-graphql-in-complicated-apis",
+          "publishDate": "2017-10-25T00:00-07:00"
+        },
+        "graphql/supercharge-your-graphql-development": {
+          "slugPath": "graphql/supercharge-your-graphql-development",
+          "publishDate": "2017-10-26T22:28-07:00"
+        },
+        "graphql/teaching-graphql": { "slugPath": "graphql/teaching-graphql", "publishDate": "2017-10-26T00:00-07:00" },
+        "graphql/the-graphql-stack-how-everything-fits-together": {
+          "slugPath": "graphql/the-graphql-stack-how-everything-fits-together",
+          "publishDate": "2017-10-26T00:00-07:00"
+        },
+        "graphql/twitch-our-graphql-transformation": {
+          "slugPath": "graphql/twitch-our-graphql-transformation",
+          "publishDate": "2017-10-26T00:00-07:00"
+        },
+        "graphql/universal-graphql": {
+          "slugPath": "graphql/universal-graphql",
+          "publishDate": "2017-10-24T05:53-07:00"
+        },
+        "graphql/what-went-wrong-best-practices-for-surfacing-error-messages-in-a-graphql-api": {
+          "slugPath": "graphql/what-went-wrong-best-practices-for-surfacing-error-messages-in-a-graphql-api",
+          "publishDate": "2017-10-26T00:00-07:00"
+        },
+        "graphql/wordpress-graphql-bringing-graphql-to-28-of-the-internet": {
+          "slugPath": "graphql/wordpress-graphql-bringing-graphql-to-28-of-the-internet",
+          "publishDate": "2017-10-25T09:48-07:00"
+        },
+        "go/a-go-guide-to-syscalls": {
+          "slugPath": "go/a-go-guide-to-syscalls",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/advanced-testing-in-go": {
+          "slugPath": "go/advanced-testing-in-go",
+          "publishDate": "2017-07-14T00:00-07:00"
+        },
+        "go/an-introduction-to-go-tool-trace-rhys-hiltner": {
+          "slugPath": "go/an-introduction-to-go-tool-trace-rhys-hiltner",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/behaviors-of-channels": { "slugPath": "go/behaviors-of-channels", "publishDate": "2017-11-06T12:10+01:00" },
+        "go/code-intelligence-with-lsif": {
+          "slugPath": "go/code-intelligence-with-lsif",
+          "publishDate": "2019-09-10T00:00-07:00"
+        },
+        "go/creating-a-custom-serialization-format": {
+          "slugPath": "go/creating-a-custom-serialization-format",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/debuggers-from-scratch": {
+          "slugPath": "go/debuggers-from-scratch",
+          "publishDate": "2017-11-06T18:00+01:00"
+        },
+        "go/encrypting-the-internet-with-go-tutorial": {
+          "slugPath": "go/encrypting-the-internet-with-go-tutorial",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/evolutionary-optimization-peter-bourgon": {
+          "slugPath": "go/evolutionary-optimization-peter-bourgon",
+          "publishDate": "2017-07-14T00:00-07:00"
+        },
+        "go/fallacies-of-distributed-gomputing": {
+          "slugPath": "go/fallacies-of-distributed-gomputing",
+          "publishDate": "2017-07-14T14:55-07:00"
+        },
+        "go/forward-compatible-go-code": {
+          "slugPath": "go/forward-compatible-go-code",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/functional-programming-in-go": {
+          "slugPath": "go/functional-programming-in-go",
+          "publishDate": "2017-07-14T23:04-07:00"
+        },
+        "go/generating-better-machine-code-with-ssa": {
+          "slugPath": "go/generating-better-machine-code-with-ssa",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/go-at-the-darpa-cyber-grand-challenge-will-hawkins": {
+          "slugPath": "go/go-at-the-darpa-cyber-grand-challenge-will-hawkins",
+          "publishDate": "2017-07-14T00:00-07:00"
+        },
+        "go/go-lift": { "slugPath": "go/go-lift", "publishDate": "2017-11-06T11:30+01:00" },
+        "go/go-reliability-and-durability-at-dropbox-tammy-butow": {
+          "slugPath": "go/go-reliability-and-durability-at-dropbox-tammy-butow",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/gophecon-2018-writing-accessible-go": {
+          "slugPath": "go/gophecon-2018-writing-accessible-go",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-5-mistakes-c-c-devs-make-writing-go": {
+          "slugPath": "go/gophercon-2018-5-mistakes-c-c-devs-make-writing-go",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-adventures-in-cgo-performance": {
+          "slugPath": "go/gophercon-2018-adventures-in-cgo-performance",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-allocator-wrestling": {
+          "slugPath": "go/gophercon-2018-allocator-wrestling",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2018-an-over-engineering-disaster-with-macaroons": {
+          "slugPath": "go/gophercon-2018-an-over-engineering-disaster-with-macaroons",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2018-asynchronous-networking-patterns": {
+          "slugPath": "go/gophercon-2018-asynchronous-networking-patterns",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2018-becoming-a-go-contributor": {
+          "slugPath": "go/gophercon-2018-becoming-a-go-contributor",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-binary-search-tree-algorithms": {
+          "slugPath": "go/gophercon-2018-binary-search-tree-algorithms",
+          "publishDate": "2018-08-30T00:00-07:00"
+        },
+        "go/gophercon-2018-c-l-eye-catching-user-interfaces": {
+          "slugPath": "go/gophercon-2018-c-l-eye-catching-user-interfaces",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-computer-vision-using-go-and-opencv-3": {
+          "slugPath": "go/gophercon-2018-computer-vision-using-go-and-opencv-3",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2018-from-prototype-to-production-lessons-from-building-and": {
+          "slugPath": "go/gophercon-2018-from-prototype-to-production-lessons-from-building-and",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-go-for-information-displays": {
+          "slugPath": "go/gophercon-2018-go-for-information-displays",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2018-go-in-debian": {
+          "slugPath": "go/gophercon-2018-go-in-debian",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-go-says-wat": {
+          "slugPath": "go/gophercon-2018-go-says-wat",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2018-going-serverless": {
+          "slugPath": "go/gophercon-2018-going-serverless",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-grpc-reflection-and-grpcurl": {
+          "slugPath": "go/gophercon-2018-grpc-reflection-and-grpcurl",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-grpc-state-machines-and-testing": {
+          "slugPath": "go/gophercon-2018-grpc-state-machines-and-testing",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-how-do-you-structure-your-go-apps": {
+          "slugPath": "go/gophercon-2018-how-do-you-structure-your-go-apps",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2018-how-to-write-a-parser-in-go": {
+          "slugPath": "go/gophercon-2018-how-to-write-a-parser-in-go",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-implementing-a-network-protocol-in-go": {
+          "slugPath": "go/gophercon-2018-implementing-a-network-protocol-in-go",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-machine-learning-in-go": {
+          "slugPath": "go/gophercon-2018-machine-learning-in-go",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2018-micro-optimizing-go-code": {
+          "slugPath": "go/gophercon-2018-micro-optimizing-go-code",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-painting-with-light": {
+          "slugPath": "go/gophercon-2018-painting-with-light",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2018-rethinking-classical-concurrency-patterns": {
+          "slugPath": "go/gophercon-2018-rethinking-classical-concurrency-patterns",
+          "publishDate": "2018-09-04T00:00-07:00"
+        },
+        "go/gophercon-2018-the-go-programmers-guide-to-secure-connections": {
+          "slugPath": "go/gophercon-2018-the-go-programmers-guide-to-secure-connections",
+          "publishDate": "2018-08-29T00:00-06:00"
+        },
+        "go/gophercon-2018-the-importance-of-beginners": {
+          "slugPath": "go/gophercon-2018-the-importance-of-beginners",
+          "publishDate": "2018-08-30T00:00-07:00"
+        },
+        "go/gophercon-2018-the-scheduler-saga": {
+          "slugPath": "go/gophercon-2018-the-scheduler-saga",
+          "publishDate": "2018-08-28T00:00-06:00"
+        },
+        "go/gophercon-2019-better-x86-assembly-generation-from-go": {
+          "slugPath": "go/gophercon-2019-better-x86-assembly-generation-from-go",
+          "publishDate": "2019-07-25T00:00-14:00"
+        },
+        "go/gophercon-2019-controlling-the-go-runtime": {
+          "slugPath": "go/gophercon-2019-controlling-the-go-runtime",
+          "publishDate": "2019-07-25T00:00-11:55"
+        },
+        "go/gophercon-2019-death-by-three-thousand-timers-streaming-video-on-demand-for-cable-tv": {
+          "slugPath": "go/gophercon-2019-death-by-three-thousand-timers-streaming-video-on-demand-for-cable-tv",
+          "publishDate": "2019-07-26T00:00-11:55"
+        },
+        "go/gophercon-2019-design-command-line-tools-people-love": {
+          "slugPath": "go/gophercon-2019-design-command-line-tools-people-love",
+          "publishDate": "2019-07-25T00:00-14:55"
+        },
+        "go/gophercon-2019-detecting-incompatible-api-changes": {
+          "slugPath": "go/gophercon-2019-detecting-incompatible-api-changes",
+          "publishDate": "2019-07-26T00:00-14:00"
+        },
+        "go/gophercon-2019-dynamically-instrumenting-go-programs": {
+          "slugPath": "go/gophercon-2019-dynamically-instrumenting-go-programs",
+          "publishDate": "2019-07-26T00:00-14:00"
+        },
+        "go/gophercon-2019-generics-in-go": {
+          "slugPath": "go/gophercon-2019-generics-in-go",
+          "publishDate": "2019-07-26T00:00-09:40"
+        },
+        "go/gophercon-2019-get-going-with-webassembly": {
+          "slugPath": "go/gophercon-2019-get-going-with-webassembly",
+          "publishDate": "2019-07-25T00:00-11:55"
+        },
+        "go/gophercon-2019-go-linters-myths-and-best-practices": {
+          "slugPath": "go/gophercon-2019-go-linters-myths-and-best-practices",
+          "publishDate": "2019-07-26T00:00-14:00"
+        },
+        "go/gophercon-2019-go-module-proxy-life-of-a-query": {
+          "slugPath": "go/gophercon-2019-go-module-proxy-life-of-a-query",
+          "publishDate": "2019-07-25T00:00-14:00"
+        },
+        "go/gophercon-2019-go-pls-stop-breaking-my-editor": {
+          "slugPath": "go/gophercon-2019-go-pls-stop-breaking-my-editor",
+          "publishDate": "2019-07-25T00:00-11:20"
+        },
+        "go/gophercon-2019-handling-go-errors": {
+          "slugPath": "go/gophercon-2019-handling-go-errors",
+          "publishDate": "2019-07-25T00:00-11:55"
+        },
+        "go/gophercon-2019-how-i-write-http-web-services-after-eight-years": {
+          "slugPath": "go/gophercon-2019-how-i-write-http-web-services-after-eight-years",
+          "publishDate": "2019-07-26T00:00-14:55"
+        },
+        "go/gophercon-2019-how-uber-go-es": {
+          "slugPath": "go/gophercon-2019-how-uber-go-es",
+          "publishDate": "2019-07-25T00:00-09:50"
+        },
+        "go/gophercon-2019-on-the-road-to-go-2": {
+          "slugPath": "go/gophercon-2019-on-the-road-to-go-2",
+          "publishDate": "2019-07-25T00:00-09:10"
+        },
+        "go/gophercon-2019-optimization-for-number-of-goroutines-using-feedback-control": {
+          "slugPath": "go/gophercon-2019-optimization-for-number-of-goroutines-using-feedback-control",
+          "publishDate": "2019-07-25T00:00-14:00"
+        },
+        "go/gophercon-2019-optimizing-go-code-without-a-blindfold": {
+          "slugPath": "go/gophercon-2019-optimizing-go-code-without-a-blindfold",
+          "publishDate": "2019-07-26T00:00-11:55"
+        },
+        "go/gophercon-2019-contributing-to-the-os-package-how-deep-do-you-go": {
+          "slugPath": "go/gophercon-2019-contributing-to-the-os-package-how-deep-do-you-go",
+          "publishDate": "2019-07-25T00:00-16:25"
+        },
+        "go/gophercon-2019-pki-for-gophers": {
+          "slugPath": "go/gophercon-2019-pki-for-gophers",
+          "publishDate": "2019-07-25T00:00-14:55"
+        },
+        "go/gophercon-2019-simple-portable-efficient-graphical-interfaces-in-go": {
+          "slugPath": "go/gophercon-2019-simple-portable-efficient-graphical-interfaces-in-go",
+          "publishDate": "2019-07-25T00:00-10:50"
+        },
+        "go/gophercon-2019-small-is-going-big-go-on-microcontrollers": {
+          "slugPath": "go/gophercon-2019-small-is-going-big-go-on-microcontrollers",
+          "publishDate": "2019-07-26T00:00-11:20"
+        },
+        "go/gophercon-2019-socket-to-me-where-do-sockets-live-in-go": {
+          "slugPath": "go/gophercon-2019-socket-to-me-where-do-sockets-live-in-go",
+          "publishDate": "2019-07-26T00:00-11:55"
+        },
+        "go/gophercon-2019-the-athens-project-a-proxy-server-for-go-modules": {
+          "slugPath": "go/gophercon-2019-the-athens-project-a-proxy-server-for-go-modules",
+          "publishDate": "2019-07-26T00:00-09:10"
+        },
+        "go/gophercon-2019-the-gopher-s-manual-of-style": {
+          "slugPath": "go/gophercon-2019-the-gopher-s-manual-of-style",
+          "publishDate": "2019-07-25T00:00-14:55"
+        },
+        "go/gophercon-2019-tracking-inter-process-dependencies-using-static-analysis": {
+          "slugPath": "go/gophercon-2019-tracking-inter-process-dependencies-using-static-analysis",
+          "publishDate": "2019-07-26T00:00-14:55"
+        },
+        "go/gophercon-2019-two-go-programs-three-different-profiling-techniques-in-50-minutes": {
+          "slugPath": "go/gophercon-2019-two-go-programs-three-different-profiling-techniques-in-50-minutes",
+          "publishDate": "2019-07-26T00:00-14:55"
+        },
+        "go/gophercon-2019-what-got-us-here-won-t-get-us-there": {
+          "slugPath": "go/gophercon-2019-what-got-us-here-won-t-get-us-there",
+          "publishDate": "2019-07-26T00:00-16:25"
+        },
+        "go/gophercon-2019-you-can-t-go-your-own-way-the-standardization-of-go-at-github": {
+          "slugPath": "go/gophercon-2019-you-can-t-go-your-own-way-the-standardization-of-go-at-github",
+          "publishDate": "2019-07-26T00:00-10:50"
+        },
+        "go/gos-work-stealing-scheduler": {
+          "slugPath": "go/gos-work-stealing-scheduler",
+          "publishDate": "2017-11-06T17:30+01:00"
+        },
+        "go/idiomatic-go": { "slugPath": "go/idiomatic-go", "publishDate": "2017-07-14T00:00-07:00" },
+        "go/lightning-talks-1": { "slugPath": "go/lightning-talks-1", "publishDate": "2017-11-06T14:45+01:00" },
+        "go/liveblog-articles-from-gophercon-2017": {
+          "slugPath": "go/liveblog-articles-from-gophercon-2017",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/sourcegraph-liveblogging-at-gophercon-2019": {
+          "slugPath": "go/sourcegraph-liveblogging-at-gophercon-2019",
+          "publishDate": "2019-07-22T00:00-07:00"
+        },
+        "go/liveblogging-dotgo-2017": {
+          "slugPath": "go/liveblogging-dotgo-2017",
+          "publishDate": "2017-10-31T00:00-07:00"
+        },
+        "go/liveblogging-gophercon-2017": {
+          "slugPath": "go/liveblogging-gophercon-2017",
+          "publishDate": "2017-07-12T00:00-07:00"
+        },
+        "go/machine-learning-and-go": {
+          "slugPath": "go/machine-learning-and-go",
+          "publishDate": "2017-11-06T17:40+01:00"
+        },
+        "go/my-journey-to-go": { "slugPath": "go/my-journey-to-go", "publishDate": "2017-07-14T00:00-07:00" },
+        "go/operability-in-go": { "slugPath": "go/operability-in-go", "publishDate": "2017-07-13T00:00-07:00" },
+        "go/peter-bourgon-on-the-history-of-go-kit-and-whats-next": {
+          "slugPath": "go/peter-bourgon-on-the-history-of-go-kit-and-whats-next",
+          "publishDate": "2017-07-12T00:00-07:00"
+        },
+        "go/preparing-for-the-next-wave": {
+          "slugPath": "go/preparing-for-the-next-wave",
+          "publishDate": "2017-11-06T20:30+01:00"
+        },
+        "go/runtime-generated-typesafe-and-declarative-pick-any-three": {
+          "slugPath": "go/runtime-generated-typesafe-and-declarative-pick-any-three",
+          "publishDate": "2017-07-14T00:00-07:00"
+        },
+        "go/self-deploying-kubernetes-applications-kelsey-hightower": {
+          "slugPath": "go/self-deploying-kubernetes-applications-kelsey-hightower",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/simulating-a-real-world-system-in-go": {
+          "slugPath": "go/simulating-a-real-world-system-in-go",
+          "publishDate": "2017-11-06T10:55+01:00"
+        },
+        "go/sourcegraph-liveblogging-at-gophercon-2018": {
+          "slugPath": "go/sourcegraph-liveblogging-at-gophercon-2018",
+          "publishDate": "2018-08-22T00:00-07:00"
+        },
+        "go/the-art-of-testing": { "slugPath": "go/the-art-of-testing", "publishDate": "2017-11-06T11:45+01:00" },
+        "go/the-functional-design-of-dep-and-package-managers-in-general": {
+          "slugPath": "go/the-functional-design-of-dep-and-package-managers-in-general",
+          "publishDate": "2017-11-06T23:59+01:00"
+        },
+        "go/the-future-of-go": { "slugPath": "go/the-future-of-go", "publishDate": "2017-07-13T00:00-07:00" },
+        "go/the-new-era-of-go-package-management": {
+          "slugPath": "go/the-new-era-of-go-package-management",
+          "publishDate": "2017-07-14T00:00-07:00"
+        },
+        "go/thunder-talks": { "slugPath": "go/thunder-talks", "publishDate": "2017-11-06T16:25+01:00" },
+        "go/understanding-channels-kavya-joshi": {
+          "slugPath": "go/understanding-channels-kavya-joshi",
+          "publishDate": "2017-07-14T00:00-07:00"
+        },
+        "go/unmasking-netpoll-go": { "slugPath": "go/unmasking-netpoll-go", "publishDate": "2017-11-06T16:20+01:00" },
+        "go/valuable-lessons-in-over-engineering-the-core-of-kubernetes-kops": {
+          "slugPath": "go/valuable-lessons-in-over-engineering-the-core-of-kubernetes-kops",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/writing-a-go-tool-to-parse-and-modify-struct-tags": {
+          "slugPath": "go/writing-a-go-tool-to-parse-and-modify-struct-tags",
+          "publishDate": "2017-07-13T00:00-07:00"
+        },
+        "go/writing-network-clients-in-go-the-design-and-implementation-of-the-nats-client": {
+          "slugPath": "go/writing-network-clients-in-go-the-design-and-implementation-of-the-nats-client",
+          "publishDate": "2017-07-14T00:00-07:00"
+        },
+        "strange-loop/strange-loop-2019-a-better-story-for-kubernetes-secrets": {
+          "slugPath": "strange-loop/strange-loop-2019-a-better-story-for-kubernetes-secrets",
+          "publishDate": "2019-09-14T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-a-robot-poet-goes-for-a-walk-in-the-park": {
+          "slugPath": "strange-loop/strange-loop-2019-a-robot-poet-goes-for-a-walk-in-the-park",
+          "publishDate": "2019-09-13T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-a-stitch-in-time-the-future-of-oss-sustainability": {
+          "slugPath": "strange-loop/strange-loop-2019-a-stitch-in-time-the-future-of-oss-sustainability",
+          "publishDate": "2019-09-13T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-alda-s-dynamic-relationship-with-clojure": {
+          "slugPath": "strange-loop/strange-loop-2019-alda-s-dynamic-relationship-with-clojure",
+          "publishDate": "2019-09-13T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-apache-pulsar-and-the-legacy-of-telegraphy": {
+          "slugPath": "strange-loop/strange-loop-2019-apache-pulsar-and-the-legacy-of-telegraphy",
+          "publishDate": "2019-09-13T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-assistive-augmentation-lip-reading-with-ai": {
+          "slugPath": "strange-loop/strange-loop-2019-assistive-augmentation-lip-reading-with-ai",
+          "publishDate": "2019-09-13T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-astriagraph-monitoring-global-traffic-in-space": {
+          "slugPath": "strange-loop/strange-loop-2019-astriagraph-monitoring-global-traffic-in-space",
+          "publishDate": "2019-09-13T00:00-16:30"
+        },
+        "strange-loop/strange-loop-2019-automating-operations-of-a-global-cdn": {
+          "slugPath": "strange-loop/strange-loop-2019-automating-operations-of-a-global-cdn",
+          "publishDate": "2019-09-13T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-behind-the-new-york-times-crossword": {
+          "slugPath": "strange-loop/strange-loop-2019-behind-the-new-york-times-crossword",
+          "publishDate": "2019-09-13T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-better-integration-tests-for-performance-monitoring": {
+          "slugPath": "strange-loop/strange-loop-2019-better-integration-tests-for-performance-monitoring",
+          "publishDate": "2019-09-14T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-better-spotify-playlists-through-discrete-optimization": {
+          "slugPath": "strange-loop/strange-loop-2019-better-spotify-playlists-through-discrete-optimization",
+          "publishDate": "2019-09-13T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-beyond-alt-text-trends-in-online-accessibility": {
+          "slugPath": "strange-loop/strange-loop-2019-beyond-alt-text-trends-in-online-accessibility",
+          "publishDate": "2019-09-14T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-beyond-traces-the-insights-in-trace-aggregates": {
+          "slugPath": "strange-loop/strange-loop-2019-beyond-traces-the-insights-in-trace-aggregates",
+          "publishDate": "2019-09-13T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-building-a-unified-cancer-immunotherapy-data-library": {
+          "slugPath": "strange-loop/strange-loop-2019-building-a-unified-cancer-immunotherapy-data-library",
+          "publishDate": "2019-09-13T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-building-an-open-source-artificial-pancreas": {
+          "slugPath": "strange-loop/strange-loop-2019-building-an-open-source-artificial-pancreas",
+          "publishDate": "2019-09-14T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-building-haskell-programs-with-fused-effects": {
+          "slugPath": "strange-loop/strange-loop-2019-building-haskell-programs-with-fused-effects",
+          "publishDate": "2019-09-14T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-can-androids-conceive-of-electric-sheep": {
+          "slugPath": "strange-loop/strange-loop-2019-can-androids-conceive-of-electric-sheep",
+          "publishDate": "2019-09-14T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-closing-keynote": {
+          "slugPath": "strange-loop/strange-loop-2019-closing-keynote",
+          "publishDate": "2019-09-14T00:00-16:30"
+        },
+        "strange-loop/strange-loop-2019-community-driven-development": {
+          "slugPath": "strange-loop/strange-loop-2019-community-driven-development",
+          "publishDate": "2019-09-14T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-compacting-the-uncompactable": {
+          "slugPath": "strange-loop/strange-loop-2019-compacting-the-uncompactable",
+          "publishDate": "2019-09-14T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-complexities-of-color-in-computing": {
+          "slugPath": "strange-loop/strange-loop-2019-complexities-of-color-in-computing",
+          "publishDate": "2019-09-14T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-computer-vision-and-nlp-for-multi-task-fashion-modeling": {
+          "slugPath": "strange-loop/strange-loop-2019-computer-vision-and-nlp-for-multi-task-fashion-modeling",
+          "publishDate": "2019-09-14T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-correctness-proofs-of-distributed-systems-with-isabelle": {
+          "slugPath": "strange-loop/strange-loop-2019-correctness-proofs-of-distributed-systems-with-isabelle",
+          "publishDate": "2019-09-14T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-css-algorithms": {
+          "slugPath": "strange-loop/strange-loop-2019-css-algorithms",
+          "publishDate": "2019-09-14T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-declarative-apis-in-an-imperative-world": {
+          "slugPath": "strange-loop/strange-loop-2019-declarative-apis-in-an-imperative-world",
+          "publishDate": "2019-09-13T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-designing-systems-against-domestic-violence": {
+          "slugPath": "strange-loop/strange-loop-2019-designing-systems-against-domestic-violence",
+          "publishDate": "2019-09-14T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-deterministic-docker-images-with-go-microservices": {
+          "slugPath": "strange-loop/strange-loop-2019-deterministic-docker-images-with-go-microservices",
+          "publishDate": "2019-09-13T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-digital-and-social-resilience-through-the-nyc-mesh": {
+          "slugPath": "strange-loop/strange-loop-2019-digital-and-social-resilience-through-the-nyc-mesh",
+          "publishDate": "2019-09-13T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-dive-into-streams-with-brooklin": {
+          "slugPath": "strange-loop/strange-loop-2019-dive-into-streams-with-brooklin",
+          "publishDate": "2019-09-13T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-easy-abstract-interpretation-with-sparta": {
+          "slugPath": "strange-loop/strange-loop-2019-easy-abstract-interpretation-with-sparta",
+          "publishDate": "2019-09-13T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-empowering-people-to-build-a-digital-bank": {
+          "slugPath": "strange-loop/strange-loop-2019-empowering-people-to-build-a-digital-bank",
+          "publishDate": "2019-09-13T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-enhancing-angklung-music-rehearsals-with-modern-tech": {
+          "slugPath": "strange-loop/strange-loop-2019-enhancing-angklung-music-rehearsals-with-modern-tech",
+          "publishDate": "2019-09-13T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-escuincla-babosa-a-python-deep-learning-telenovela": {
+          "slugPath": "strange-loop/strange-loop-2019-escuincla-babosa-a-python-deep-learning-telenovela",
+          "publishDate": "2019-09-14T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-everything-you-wanted-to-know-about-distributed-tracing": {
+          "slugPath": "strange-loop/strange-loop-2019-everything-you-wanted-to-know-about-distributed-tracing",
+          "publishDate": "2019-09-14T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-explainable-ai-the-apex-of-human-and-machine-learning": {
+          "slugPath": "strange-loop/strange-loop-2019-explainable-ai-the-apex-of-human-and-machine-learning",
+          "publishDate": "2019-09-14T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-federated-learning-private-distributed-ml": {
+          "slugPath": "strange-loop/strange-loop-2019-federated-learning-private-distributed-ml",
+          "publishDate": "2019-09-14T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-finding-bugs-without-running-or-even-looking-at-code": {
+          "slugPath": "strange-loop/strange-loop-2019-finding-bugs-without-running-or-even-looking-at-code",
+          "publishDate": "2019-09-13T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-formal-specification-and-taming-other-people-s-tech": {
+          "slugPath": "strange-loop/strange-loop-2019-formal-specification-and-taming-other-people-s-tech",
+          "publishDate": "2019-09-13T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-from-video-games-to-fashion-a-machine-learning-journey": {
+          "slugPath": "strange-loop/strange-loop-2019-from-video-games-to-fashion-a-machine-learning-journey",
+          "publishDate": "2019-09-14T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-how-computers-misunderstand-the-world": {
+          "slugPath": "strange-loop/strange-loop-2019-how-computers-misunderstand-the-world",
+          "publishDate": "2019-09-14T00:00-09:10"
+        },
+        "strange-loop/strange-loop-2019-how-not-to-read-the-room-creating-wearables-with-ml": {
+          "slugPath": "strange-loop/strange-loop-2019-how-not-to-read-the-room-creating-wearables-with-ml",
+          "publishDate": "2019-09-13T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-how-to-build-with-data-trust-and-privacy-as-a-baseline": {
+          "slugPath": "strange-loop/strange-loop-2019-how-to-build-with-data-trust-and-privacy-as-a-baseline",
+          "publishDate": "2019-09-13T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-how-to-fix-ai-solutions-to-ml-bias-and-why-they-don-t-matter": {
+          "slugPath": "strange-loop/strange-loop-2019-how-to-fix-ai-solutions-to-ml-bias-and-why-they-don-t-matter",
+          "publishDate": "2019-09-13T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-how-to-teach-programming-and-other-things": {
+          "slugPath": "strange-loop/strange-loop-2019-how-to-teach-programming-and-other-things",
+          "publishDate": "2019-09-13T00:00-09:10"
+        },
+        "strange-loop/strange-loop-2019-how-we-tell-stories-in-code": {
+          "slugPath": "strange-loop/strange-loop-2019-how-we-tell-stories-in-code",
+          "publishDate": "2019-09-14T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-how-your-company-can-help-sustain-open-source": {
+          "slugPath": "strange-loop/strange-loop-2019-how-your-company-can-help-sustain-open-source",
+          "publishDate": "2019-09-14T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-improving-law-interpretability-using-nlp": {
+          "slugPath": "strange-loop/strange-loop-2019-improving-law-interpretability-using-nlp",
+          "publishDate": "2019-09-13T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-inferenceql-ai-for-data-engineers-without-the-math": {
+          "slugPath": "strange-loop/strange-loop-2019-inferenceql-ai-for-data-engineers-without-the-math",
+          "publishDate": "2019-09-14T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-jagged-ragged-awkward-arrays": {
+          "slugPath": "strange-loop/strange-loop-2019-jagged-ragged-awkward-arrays",
+          "publishDate": "2019-09-14T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-lang-wishful-thinking": {
+          "slugPath": "strange-loop/strange-loop-2019-lang-wishful-thinking",
+          "publishDate": "2019-09-14T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-learning-to-love-javascript": {
+          "slugPath": "strange-loop/strange-loop-2019-learning-to-love-javascript",
+          "publishDate": "2019-09-13T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-machine-learning-to-interpret-sign-language": {
+          "slugPath": "strange-loop/strange-loop-2019-machine-learning-to-interpret-sign-language",
+          "publishDate": "2019-09-14T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-makings-of-a-modern-acid-compliant-distributed-database": {
+          "slugPath": "strange-loop/strange-loop-2019-makings-of-a-modern-acid-compliant-distributed-database",
+          "publishDate": "2019-09-13T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-meander-declarative-explorations-at-the-limits-of-fp": {
+          "slugPath": "strange-loop/strange-loop-2019-meander-declarative-explorations-at-the-limits-of-fp",
+          "publishDate": "2019-09-14T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-minimalist-piano-forever": {
+          "slugPath": "strange-loop/strange-loop-2019-minimalist-piano-forever",
+          "publishDate": "2019-09-14T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-myths-and-metaphors-of-open-source": {
+          "slugPath": "strange-loop/strange-loop-2019-myths-and-metaphors-of-open-source",
+          "publishDate": "2019-09-13T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-networking-and-go-an-engineer-s-journey": {
+          "slugPath": "strange-loop/strange-loop-2019-networking-and-go-an-engineer-s-journey",
+          "publishDate": "2019-09-14T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-new-programming-constructs-for-probabilistic-ai": {
+          "slugPath": "strange-loop/strange-loop-2019-new-programming-constructs-for-probabilistic-ai",
+          "publishDate": "2019-09-13T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-observability-superpowers-for-developers": {
+          "slugPath": "strange-loop/strange-loop-2019-observability-superpowers-for-developers",
+          "publishDate": "2019-09-13T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-parser-parser-combinators-for-program-transformation": {
+          "slugPath": "strange-loop/strange-loop-2019-parser-parser-combinators-for-program-transformation",
+          "publishDate": "2019-09-14T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-pattern-matching-scale-using-finite-state-machine": {
+          "slugPath": "strange-loop/strange-loop-2019-pattern-matching-scale-using-finite-state-machine",
+          "publishDate": "2019-09-14T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-performance-matters": {
+          "slugPath": "strange-loop/strange-loop-2019-performance-matters",
+          "publishDate": "2019-09-14T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-privacy-governance-explainability-in-ml-ai": {
+          "slugPath": "strange-loop/strange-loop-2019-privacy-governance-explainability-in-ml-ai",
+          "publishDate": "2019-09-13T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-probabilistic-scripts-for-automating-common-sense-tasks": {
+          "slugPath": "strange-loop/strange-loop-2019-probabilistic-scripts-for-automating-common-sense-tasks",
+          "publishDate": "2019-09-14T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-realtime-hybrid-reinforcement-learning-at-scale": {
+          "slugPath": "strange-loop/strange-loop-2019-realtime-hybrid-reinforcement-learning-at-scale",
+          "publishDate": "2019-09-14T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-recreating-forgotten-programming-languages-for-art": {
+          "slugPath": "strange-loop/strange-loop-2019-recreating-forgotten-programming-languages-for-art",
+          "publishDate": "2019-09-13T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-rgb-to-xyz-the-science-and-history-of-color": {
+          "slugPath": "strange-loop/strange-loop-2019-rgb-to-xyz-the-science-and-history-of-color",
+          "publishDate": "2019-09-13T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-rhapsody-in-zero-knowledge-proving-without-revealing": {
+          "slugPath": "strange-loop/strange-loop-2019-rhapsody-in-zero-knowledge-proving-without-revealing",
+          "publishDate": "2019-09-14T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-riding-the-stream-processing-wave": {
+          "slugPath": "strange-loop/strange-loop-2019-riding-the-stream-processing-wave",
+          "publishDate": "2019-09-13T00:00-14:30"
+        },
+        "strange-loop/strange-loop-2019-ruby-on-the-apple-ii-adventures-in-retro-programming": {
+          "slugPath": "strange-loop/strange-loop-2019-ruby-on-the-apple-ii-adventures-in-retro-programming",
+          "publishDate": "2019-09-13T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-safety-in-chaos-forming-realistic-failure-hypotheses": {
+          "slugPath": "strange-loop/strange-loop-2019-safety-in-chaos-forming-realistic-failure-hypotheses",
+          "publishDate": "2019-09-13T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-securing-cloud-applications-and-their-credentials": {
+          "slugPath": "strange-loop/strange-loop-2019-securing-cloud-applications-and-their-credentials",
+          "publishDate": "2019-09-14T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-temporal-databases-for-streaming-architectures": {
+          "slugPath": "strange-loop/strange-loop-2019-temporal-databases-for-streaming-architectures",
+          "publishDate": "2019-09-13T00:00-11:20"
+        },
+        "strange-loop/strange-loop-2019-the-idea-becomes-a-machine-that-makes-the-art-that": {
+          "slugPath": "strange-loop/strange-loop-2019-the-idea-becomes-a-machine-that-makes-the-art-that",
+          "publishDate": "2019-09-13T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-the-strange-loop-making-parasitic-insects-our-friends": {
+          "slugPath": "strange-loop/strange-loop-2019-the-strange-loop-making-parasitic-insects-our-friends",
+          "publishDate": "2019-09-13T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-towards-an-open-reason-ml-able-web": {
+          "slugPath": "strange-loop/strange-loop-2019-towards-an-open-reason-ml-able-web",
+          "publishDate": "2019-09-13T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-tweet-my-wedding-dress": {
+          "slugPath": "strange-loop/strange-loop-2019-tweet-my-wedding-dress",
+          "publishDate": "2019-09-14T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-typing-the-untyped-soundness-in-gradual-type-systems": {
+          "slugPath": "strange-loop/strange-loop-2019-typing-the-untyped-soundness-in-gradual-type-systems",
+          "publishDate": "2019-09-13T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-unison-a-new-distributed-programming-language": {
+          "slugPath": "strange-loop/strange-loop-2019-unison-a-new-distributed-programming-language",
+          "publishDate": "2019-09-14T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-uptime-15364-days-the-computers-of-voyager": {
+          "slugPath": "strange-loop/strange-loop-2019-uptime-15364-days-the-computers-of-voyager",
+          "publishDate": "2019-09-13T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-voice-driven-development-who-needs-a-keyboard-anyway": {
+          "slugPath": "strange-loop/strange-loop-2019-voice-driven-development-who-needs-a-keyboard-anyway",
+          "publishDate": "2019-09-13T00:00-13:30"
+        },
+        "strange-loop/strange-loop-2019-watch-the-watcher-facial-recognition-police-oversight": {
+          "slugPath": "strange-loop/strange-loop-2019-watch-the-watcher-facial-recognition-police-oversight",
+          "publishDate": "2019-09-14T00:00-15:30"
+        },
+        "strange-loop/strange-loop-2019-why-do-tree-ensembles-work": {
+          "slugPath": "strange-loop/strange-loop-2019-why-do-tree-ensembles-work",
+          "publishDate": "2019-09-14T00:00-10:20"
+        },
+        "strange-loop/strange-loop-2019-zipline-a-declarative-feature-engineering-library": {
+          "slugPath": "strange-loop/strange-loop-2019-zipline-a-declarative-feature-engineering-library",
+          "publishDate": "2019-09-14T00:00-14:30"
+        },
+        "c-plus-plus-code-intel": { "slugPath": "c-plus-plus-code-intel", "publishDate": "2020-07-20T07:00-07:00" },
+        "sourcegraph-3.18": { "slugPath": "sourcegraph-3.18", "publishDate": "2020-07-20T10:00-07:00" },
+        "small-but-useful-improvements": {
+          "slugPath": "small-but-useful-improvements",
+          "publishDate": "2020-07-20T04:00-07:00"
+        },
+        "custom-search-pages": { "slugPath": "custom-search-pages", "publishDate": "2020-07-20T05:00-07:00" },
+        "indexed-non-default-branches": {
+          "slugPath": "indexed-non-default-branches",
+          "publishDate": "2020-07-20T08:00-07:00"
+        },
+        "search-multiple-revisions": {
+          "slugPath": "search-multiple-revisions",
+          "publishDate": "2020-07-20T09:00-07:00"
+        },
+        "sourcegraph-health-notification": {
+          "slugPath": "sourcegraph-health-notification",
+          "publishDate": "2020-07-20T06:00-07:00"
+        }
+      }
+    },
+    "podcast": {
+      "contentDirectory": "podcast",
+      "recordSlugs": {
+        "introducing-the-sourcegraph-podcast": {
+          "slugPath": "introducing-the-sourcegraph-podcast",
+          "publishDate": "2020-06-01T10:00-07:00"
+        },
+        "david-cramer": { "slugPath": "david-cramer", "publishDate": "2020-06-15T10:01-07:00" },
+        "matt-holt": { "slugPath": "matt-holt", "publishDate": "2020-08-31T10:01-07:00" },
+        "michael-stapelberg": { "slugPath": "michael-stapelberg", "publishDate": "2020-09-07T10:01-07:00" },
+        "syrus-akbary": { "slugPath": "syrus-akbary", "publishDate": "2020-10-12T10:01-07:00" },
+        "andrew-gallant": { "slugPath": "andrew-gallant", "publishDate": "2020-11-02T10:00-07:00" },
+        "jonathan-carter": { "slugPath": "jonathan-carter", "publishDate": "2020-11-09T10:00-07:00" },
+        "peter-pezaris": { "slugPath": "peter-pezaris", "publishDate": "2020-11-16T10:01-07:00" },
+        "kelsey-hightower": { "slugPath": "kelsey-hightower", "publishDate": "2020-12-16T10:01-07:00" },
+        "onboarding-ryan-djurovich": {
+          "slugPath": "onboarding-ryan-djurovich",
+          "publishDate": "2021-06-30T10:01-07:00"
+        },
+        "han-wen-nienhuys": { "slugPath": "han-wen-nienhuys", "publishDate": "2021-11-09T10:00-07:00" },
+        "cassidy-williams": { "slugPath": "cassidy-williams", "publishDate": "2021-11-16T10:00-07:00" },
+        "joseph-nelson": { "slugPath": "joseph-nelson", "publishDate": "2021-11-29T10:00-07:00" },
+        "swyx": { "slugPath": "swyx", "publishDate": "2021-12-14T10:00-07:00" },
+        "nelson-elhage": { "slugPath": "nelson-elhage", "publishDate": "2022-01-04T10:00-07:00" },
+        "sugu-sougoumarane": { "slugPath": "sugu-sougoumarane", "publishDate": "2022-01-18T10:00-07:00" },
+        "max-brunsfeld": { "slugPath": "max-brunsfeld", "publishDate": "2022-02-15T10:00-07:00" },
+        "kelly-norton": { "slugPath": "kelly-norton", "publishDate": "2022-03-01T10:00-07:00" },
+        "fedor-korotkov": { "slugPath": "fedor-korotkov", "publishDate": "2022-03-15T10:00-07:00" },
+        "onboarding-limor-bergman": { "slugPath": "onboarding-limor-bergman", "publishDate": "2021-07-14T10:01-07:00" },
+        "onboarding-jean-du-plessis": {
+          "slugPath": "onboarding-jean-du-plessis",
+          "publishDate": "2021-07-16T10:01-07:00"
+        },
+        "devon-zuegel": { "slugPath": "devon-zuegel", "publishDate": "2021-08-06T10:01-07:00" },
+        "christopher-chedeau": { "slugPath": "christopher-chedeau", "publishDate": "2021-08-31T10:00-07:00" },
+        "orta-therox": { "slugPath": "orta-therox", "publishDate": "2021-09-14T10:00-07:00" },
+        "refactoring-shopify-codebase-kirsten-westeinde": {
+          "slugPath": "refactoring-shopify-codebase-kirsten-westeinde",
+          "publishDate": "2021-08-17T10:01-07:00"
+        },
+        "ivar-egil-osthus": { "slugPath": "ivar-egil-osthus", "publishDate": "2021-09-30T10:00-07:00" },
+        "sam-scott": { "slugPath": "sam-scott", "publishDate": "2021-10-12T10:00-07:00" },
+        "andrew-kelley": { "slugPath": "andrew-kelley", "publishDate": "2021-10-19T10:00-07:00" },
+        "ryan-djurovich": { "slugPath": "ryan-djurovich", "publishDate": "2020-06-22T10:01-07:00" },
+        "max-howell": { "slugPath": "max-howell", "publishDate": "2022-05-18T07:00-07:00" },
+        "charity-majors": { "slugPath": "charity-majors", "publishDate": "2020-06-29T10:01-07:00" },
+        "evan-culver": { "slugPath": "evan-culver", "publishDate": "2020-07-06T10:01-07:00" },
+        "luke-hoban": { "slugPath": "luke-hoban", "publishDate": "2020-07-13T10:01-07:00" },
+        "yves-and-john": { "slugPath": "yves-and-john", "publishDate": "2020-07-20T10:01-07:00" },
+        "dan-bentley": { "slugPath": "dan-bentley", "publishDate": "2020-07-27T10:01-07:00" },
+        "rijnard-van-tonder": { "slugPath": "rijnard-van-tonder", "publishDate": "2020-08-04T10:01-07:00" },
+        "thorsten-klein": { "slugPath": "thorsten-klein", "publishDate": "2020-08-24T10:01-07:00" }
+      }
+    },
+    "press": {
+      "contentDirectory": "press",
+      "recordSlugs": {
+        "sourcegraph-launches-batch-changes": {
+          "slugPath": "sourcegraph-launches-batch-changes",
+          "publishDate": "2021-03-24T06:00"
+        },
+        "big-code-survey-2020": { "slugPath": "big-code-survey-2020", "publishDate": "2020-10-01T00:00" },
+        "our-abcs-childrens-book": { "slugPath": "our-abcs-childrens-book", "publishDate": "2020-04-23T00:00" },
+        "sourcegraph-announces-new-gitlab-native-integration": {
+          "slugPath": "sourcegraph-announces-new-gitlab-native-integration",
+          "publishDate": "2019-11-12T10:00-07:00"
+        },
+        "sourcegraph-secures-series-b": {
+          "slugPath": "sourcegraph-secures-series-b",
+          "publishDate": "2020-03-03T00:00"
+        },
+        "sourcegraph-secures-series-c-sequoia": {
+          "slugPath": "sourcegraph-secures-series-c-sequoia",
+          "publishDate": "2020-12-03T05:00"
+        }
+      }
+    },
+    "terms": {
+      "contentDirectory": "terms",
+      "recordSlugs": {
+        "cloud": { "slugPath": "cloud" },
+        "gov": { "slugPath": "gov" },
+        "index": { "slugPath": "index" },
+        "privacy": { "slugPath": "privacy" },
+        "security": { "slugPath": "security" },
+        "self-hosted": { "slugPath": "self-hosted" },
+        "subprocessors": { "slugPath": "subprocessors" },
+        "archives/privacy/2021-01-15": { "slugPath": "archives/privacy/2021-01-15" },
+        "archives/cloud/2021-06-25": { "slugPath": "archives/cloud/2021-06-25" },
+        "archives/cloud/2021-12-09": { "slugPath": "archives/cloud/2021-12-09" },
+        "archives/cloud/2022-02-09": { "slugPath": "archives/cloud/2022-02-09" },
+        "archives/self-hosted/2021-06-24": { "slugPath": "archives/self-hosted/2021-06-24" },
+        "archives/self-hosted/2021-08-25": { "slugPath": "archives/self-hosted/2021-08-25" },
+        "archives/self-hosted/2021-10-11": { "slugPath": "archives/self-hosted/2021-10-11" },
+        "archives/self-hosted/2022-02-10": { "slugPath": "archives/self-hosted/2022-02-10" },
+        "archives/subprocessors/2021-12-03": { "slugPath": "archives/subprocessors/2021-12-03" }
+      }
+    }
+  }
+}
