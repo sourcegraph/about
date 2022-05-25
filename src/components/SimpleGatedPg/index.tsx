@@ -11,8 +11,8 @@ import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
 import guideBg from './assets/hero/bg-code-aquamarine.png'
 import webinarCustomerMobileBg from './assets/hero/bg-code-mars-mobile.png'
 import webinarCustomerBg from './assets/hero/bg-code-mars.png'
-import webinarProductMobileBg from './assets/hero/bg-code-venus-mobile.png'
-import webinarProductBg from './assets/hero/bg-code-venus.png'
+import defaultMobileBg from './assets/hero/bg-code-venus-mobile.png'
+import defaultBg from './assets/hero/bg-code-venus.png'
 
 interface Customer {
     name: string
@@ -43,7 +43,7 @@ interface Props {
     children?: ReactNode
 }
 
-export const WebinarsAndGuidesLayout: FunctionComponent<Props> = ({
+export const SimpleGatedPgLayout: FunctionComponent<Props> = ({
     title,
     subtitle,
     customer,
@@ -57,6 +57,7 @@ export const WebinarsAndGuidesLayout: FunctionComponent<Props> = ({
     const isMdOrDown = windowWidth < breakpoints.lg
 
     const isWebinarPg = useRouter().pathname.split('/').slice(1)[0] === 'webinars'
+    const isGuidePg = useRouter().pathname.split('/').slice(1)[0] === 'guides'
 
     const hubSpotConfig: HubSpotForm = {
         portalId: '2762526',
@@ -76,22 +77,22 @@ export const WebinarsAndGuidesLayout: FunctionComponent<Props> = ({
                 return isMdOrDown ? webinarCustomerMobileBg : webinarCustomerBg
             }
             // Product-based Webinar
-            return isMdOrDown ? webinarProductMobileBg : webinarProductBg
+            return isMdOrDown ? defaultMobileBg : defaultBg
         }
-        if (!isWebinarPg) {
+        if (isGuidePg) {
             // Guides
             return isMdOrDown ? guideMobileBg : guideBg
         }
-        return webinarProductBg
+        return isMdOrDown ? defaultMobileBg : defaultBg
     }
 
     return (
         <>
             <section
-                // Hero bg differs if Guide vs. Webinar(Customer-based) vs. Webinar(Product-based)
+                // Hero bg differs if Guide vs. Webinar vs. Generic
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ backgroundImage: `url('${heroImage().src}')` }}
-                className={classNames('bg-cover', !isWebinarPg && 'text-white')}
+                className={classNames('bg-cover', isGuidePg && 'text-white')}
             >
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {/* Show SG & Customer logo for customer-based webinars */}
