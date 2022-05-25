@@ -28,15 +28,15 @@ export const BatchChangesPage: FunctionComponent = () => (
                             Keep your code up to date, fix critical security issues, and pay down tech debt across all
                             of your repositories with Batch Changes.
                         </p>
-                        <Link
-                            href={batchChangesDemoFormURL}
-                            passHref={true}
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.hero}
-                            data-button-type="cta"
-                        >
+                        <Link href={batchChangesDemoFormURL} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-primary" title="Request a demo">
+                            <a
+                                className="btn btn-primary"
+                                title="Request a demo"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
                                 Request a demo
                             </a>
                         </Link>

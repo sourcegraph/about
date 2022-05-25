@@ -55,16 +55,14 @@ const UseCases: React.FunctionComponent = () => (
 
                         <div className="list-group">
                             {features.map((feature: { id: string; description: string }) => (
-                                <Link
-                                    key={feature.id}
-                                    href={`#${kebabCase(feature.id)}`}
-                                    passHref={true}
-                                    data-button-style={buttonStyle.textWithArrow}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
+                                <Link key={feature.id} href={`#${kebabCase(feature.id)}`} passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none">
+                                    <a
+                                        className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none"
+                                        data-button-style={buttonStyle.textWithArrow}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
                                         {feature.description}
                                         <ArrowRightIcon className="icon-inline ml-1" />
                                     </a>
