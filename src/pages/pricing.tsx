@@ -259,7 +259,7 @@ const PricingPage: FunctionComponent = () => (
                         </p>
                     </div>
                     <div className="col-md-6 pt-3 align-self-center text-center">
-                        <Link href="/get-started"passHref={true}>
+                        <Link href="/get-started" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary mx-2 mb-3"

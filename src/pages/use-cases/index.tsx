@@ -40,11 +40,7 @@ const UseCases: React.FunctionComponent = () => (
 
                         <div className="list-group">
                             {features.map((feature: string) => (
-                                <Link
-                                    key={feature}
-                                    href={`#${kebabCase(feature)}`}
-                                    passHref={true}
-                                >
+                                <Link key={feature} href={`#${kebabCase(feature)}`} passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
                                         className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none"
