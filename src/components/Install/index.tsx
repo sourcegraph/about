@@ -70,7 +70,7 @@ export const Install: FunctionComponent = () => {
                 <a
                     className="d-inline-block text-lg"
                     href="https://docs.sourcegraph.com"
-                    data-button-style={buttonStyle.textWithArrow}
+                    data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.trySourcegraph}
                     data-button-type="cta"
                 >

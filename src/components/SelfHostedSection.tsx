@@ -41,7 +41,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                         <a
                             className="d-inline-block text-lg"
                             href="#none"
-                            data-button-style={buttonStyle.textWithArrow}
+                            data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.trySourcegraph}
                             data-button-type="cta"
                         >
