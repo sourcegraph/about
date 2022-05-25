@@ -127,6 +127,6 @@
   status = 301
 
 [[redirects]]
-  from = "/product-specialist"
+  from = "/contact/product-specialist"
   to = "/demo"
 # ========== END INDIVIDUAL REDIRECTS ==========
