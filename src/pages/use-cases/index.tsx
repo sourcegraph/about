@@ -8,7 +8,7 @@ import { buttonStyle, buttonLocation } from '@data'
 
 import styles from './useCases.module.scss'
 
-const features: {id: string, description: string}[] = [
+const features: { id: string; description: string }[] = [
     {
         id: 'code-security',
         description: 'Find and fix security vulnerabilities',
@@ -54,7 +54,7 @@ const UseCases: React.FunctionComponent = () => (
                         <h2 className={`${styles.seeHow} font-weight-normal`}>See how customers use Sourcegraph to</h2>
 
                         <div className="list-group">
-                            {features.map((feature: {id: string, description: string}) => (
+                            {features.map((feature: { id: string; description: string }) => (
                                 <Link
                                     key={feature.id}
                                     href={`#${kebabCase(feature.id)}`}
