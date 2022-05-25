@@ -55,13 +55,13 @@ Instead of orienting around action items or tactical steps, we oriented our effo
 At the highest level, these problems looked something like:
 
 <pre className="language-markdown">
-<code className="language-markdown" style={{whiteSpace: 'pre-wrap'}}>
-Sourcegraph Cloud is the easiest way for organizations to get started with Sourcegraph.
-└── Small-to-medium organizations can search across their code together on Sourcegraph Cloud.
-   └── Individual users can search across their private code on Sourcegraph Cloud.
-       └── Sourcegraph team members can search across their private code on Sourcegraph Cloud.
-           └── Individual users can search across their public code on Sourcegraph Cloud.
-</code>
+    <code className="language-markdown" style={{whiteSpace: 'pre-wrap'}}>
+        Sourcegraph Cloud is the easiest way for organizations to get started with Sourcegraph.
+        └── Small-to-medium organizations can search across their code together on Sourcegraph Cloud.
+        └── Individual users can search across their private code on Sourcegraph Cloud.
+            └── Sourcegraph team members can search across their private code on Sourcegraph Cloud.
+                └── Individual users can search across their public code on Sourcegraph Cloud.
+    </code>
 </pre>
 
 Each problem was inherently cross-disciplinary and revealed a set of sub-problems we’d have to solve.
