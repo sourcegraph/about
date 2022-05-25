@@ -94,11 +94,11 @@ export const SimpleGatedPgLayout: FunctionComponent<Props> = ({
                 className={classNames('bg-cover', isGuidePg && 'text-white')}
             >
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
-                    {customer &&
+                    {customer && (
                         <>
-                            {isWebinarPg ?
-                            // Show SG & Customer logo for customer-based webinars
-                                 <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
+                            {isWebinarPg ? (
+                                // Show SG & Customer logo for customer-based webinars
+                                <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
                                     <img
                                         className={`border-right border-black ${
                                             isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
@@ -107,8 +107,13 @@ export const SimpleGatedPgLayout: FunctionComponent<Props> = ({
                                         src="/sourcegraph/sourcegraph-mark.svg"
                                         alt="Sourcegraph mark"
                                     />
-                                    <img height={isMdOrDown ? '15' : '22'} src={customer.logo} alt={`${customer.name} logo`} />
-                                </div> :
+                                    <img
+                                        height={isMdOrDown ? '15' : '22'}
+                                        src={customer.logo}
+                                        alt={`${customer.name} logo`}
+                                    />
+                                </div>
+                            ) : (
                                 <div className="col-lg-2 col-12 px-lg-0 pb-2 pb-lg-0">
                                     <img
                                         height={isMdOrDown ? '170' : '150'}
@@ -116,11 +121,17 @@ export const SimpleGatedPgLayout: FunctionComponent<Props> = ({
                                         alt={`${customer.name} logo`}
                                     />
                                 </div>
-                            }
+                            )}
                         </>
-                    }
+                    )}
 
-                    <div className={classNames('col-12', customer && isWebinarPg && 'col-lg-8', customer && !isWebinarPg && 'col-lg-10')}>
+                    <div
+                        className={classNames(
+                            'col-12',
+                            customer && isWebinarPg && 'col-lg-8',
+                            customer && !isWebinarPg && 'col-lg-10'
+                        )}
+                    >
                         <h1 className="display-2 font-weight-bold mb-4 mb-md-2">{title}</h1>
                         {subtitle && <h3 className="font-weight-normal max-w-800">{subtitle}</h3>}
                     </div>
