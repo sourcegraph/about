@@ -63,29 +63,26 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                                     code.
                                 </div>
                                 <div className="max-w-350 flex-column flex-md-row d-md-flex align-items-center">
-                                    <Link
-                                        href="/demo"
-                                        data-button-style={buttonStyle.primary}
-                                        data-button-location={buttonLocation.hero}
-                                        data-button-type="cta"
-                                        passHref={true}
-                                    >
+                                    <Link href="/demo" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a className="btn btn-primary w-100 mb-3 mb-md-0" title="Request a Demo.">
+                                        <a
+                                            className="btn btn-primary w-100 mb-3 mb-md-0"
+                                            title="Request a Demo."
+                                            data-button-style={buttonStyle.primary}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
                                             Request a demo
                                         </a>
                                     </Link>
-                                    <Link
-                                        href="/get-started"
-                                        data-button-style={buttonStyle.outline}
-                                        data-button-location={buttonLocation.hero}
-                                        data-button-type="cta"
-                                        passHref={true}
-                                    >
+                                    <Link href="/get-started" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             className="btn btn-outline-primary w-100 ml-md-3"
                                             title="Get started with Sourcegraph."
+                                            data-button-style={buttonStyle.outline}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
                                         >
                                             Get started
                                         </a>
