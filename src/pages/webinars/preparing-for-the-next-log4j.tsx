@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, WebinarAndGuideLayout } from '@components'
+import { Layout, WebinarsAndGuidesLayout } from '@components'
 
 const speakers = [
     {
@@ -26,7 +26,7 @@ export const Webinar: FunctionComponent = () => (
         }}
         className="navbar-white"
     >
-        <WebinarAndGuideLayout
+        <WebinarsAndGuidesLayout
             title="Preparing for the Next Log4j"
             subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
             speakers={speakers}

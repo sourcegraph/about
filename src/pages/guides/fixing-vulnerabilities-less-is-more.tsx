@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, WebinarAndGuideLayout } from '@components'
+import { Layout, WebinarsAndGuidesLayout } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -11,7 +11,7 @@ export const Guide: FunctionComponent = () => (
         }}
         className="navbar-white"
     >
-        <WebinarAndGuideLayout
+        <WebinarsAndGuidesLayout
             title="Find and fix security vulnerabilities in the pursuit of healthy code"
             formLabel="Download the guide"
             form={{
@@ -21,21 +21,32 @@ export const Guide: FunctionComponent = () => (
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <p>
-                        When your company first got word of Log4j and the Log4Shell vulnerability, did you have the tools in place to immediately fix it across every line of code in your organization? When the next vulnerability of that scale emerges (and it’s when, not if), will you be ready?
+                        When your company first got word of Log4j and the Log4Shell vulnerability, did you have the
+                        tools in place to immediately fix it across every line of code in your organization? When the
+                        next vulnerability of that scale emerges (and it’s when, not if), will you be ready?
                     </p>
                     <p>
-                        Log4j made it clear that organizations need a new approach to prepare for the next inevitable vulnerability of that scale.
+                        Log4j made it clear that organizations need a new approach to prepare for the next inevitable
+                        vulnerability of that scale.
                     </p>
                     <p>
-                        In the “<strong>Less is more: Finding and fixing security vulnerabilities</strong>” guide, we recommend a simple approach to finding and fixing security vulnerabilities that can complement more common, more complex strategies. We use Log4j as a case study of the limits that come from relying on complex security tools, especially security scanners. We’ll present the case for using a “less is more” approach in the pursuit of vulnerabilities.
+                        In the “<strong>Less is more: Finding and fixing security vulnerabilities</strong>” guide, we
+                        recommend a simple approach to finding and fixing security vulnerabilities that can complement
+                        more common, more complex strategies. We use Log4j as a case study of the limits that come from
+                        relying on complex security tools, especially security scanners. We’ll present the case for
+                        using a “less is more” approach in the pursuit of vulnerabilities.
                     </p>
                     <p>
                         Download “<strong>Less is more: Finding and fixing security vulnerabilities</strong>” to learn:
                     </p>
                     <ul>
                         <li className="mb-2">How simplicity complements complexity in the pursuit of code security</li>
-                        <li className="mb-2">What today’s code security ecosystem lacks and what that means for your business</li>
-                        <li className="mb-2">The suite of tools you need to find and fix vulnerabilities with confidence</li>
+                        <li className="mb-2">
+                            What today’s code security ecosystem lacks and what that means for your business
+                        </li>
+                        <li className="mb-2">
+                            The suite of tools you need to find and fix vulnerabilities with confidence
+                        </li>
                         <li className="mb-2">The benefits of pairing code search with security scanners</li>
                     </ul>
                 </section>

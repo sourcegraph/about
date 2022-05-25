@@ -43,7 +43,7 @@ interface Props {
     children?: ReactNode
 }
 
-export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
+export const WebinarsAndGuidesLayout: FunctionComponent<Props> = ({
     title,
     subtitle,
     customer,
@@ -69,7 +69,6 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
     }
     useHubSpot(hubSpotConfig)
 
-
     const heroImage = (): { src: string } => {
         if (isWebinarPg) {
             // Customer-based Webinar
@@ -88,9 +87,12 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
 
     return (
         <>
-            {/* eslint-disable-next-line react/forbid-dom-props */}
-            <section style={{ backgroundImage: `url('${heroImage().src}')` }} className={classNames('bg-cover', !isWebinarPg && 'text-white')}>
-                {/* Hero bg differs if Guide vs. Webinar(Customer-based) vs. Webinar(Product-based) */}
+            <section
+                // Hero bg differs if Guide vs. Webinar(Customer-based) vs. Webinar(Product-based)
+                // eslint-disable-next-line react/forbid-dom-props
+                style={{ backgroundImage: `url('${heroImage().src}')` }}
+                className={classNames('bg-cover', !isWebinarPg && 'text-white')}
+            >
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {/* Show SG & Customer logo for customer-based webinars */}
                     {customer && (
@@ -129,24 +131,26 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
                 {children}
             </section>
 
-            {speakers?.length && <section className="bg-white pb-6">
-                <ContentSection>
-                    <h2 className="font-weight-bold">Speakers</h2>
+            {speakers?.length && (
+                <section className="bg-white pb-6">
+                    <ContentSection>
+                        <h2 className="font-weight-bold">Speakers</h2>
 
-                    <section className="d-flex flex-wrap">
-                        {speakers.map((speaker: Speaker) => (
-                            <div key={speaker.name} className="col-lg-5 col-md-6 col-12 pl-0 pr-lg-7">
-                                <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
-                                <h5 className="font-weight-bold">{speaker.name}</h5>
-                                <figcaption className="h6 font-weight-normal text-muted max-w-md-250 my-2">
-                                    {speaker.title}
-                                </figcaption>
-                                <p>{speaker.bio}</p>
-                            </div>
-                        ))}
-                    </section>
-                </ContentSection>
-            </section>}
+                        <section className="d-flex flex-wrap">
+                            {speakers.map((speaker: Speaker) => (
+                                <div key={speaker.name} className="col-lg-5 col-md-6 col-12 pl-0 pr-lg-7">
+                                    <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
+                                    <h5 className="font-weight-bold">{speaker.name}</h5>
+                                    <figcaption className="h6 font-weight-normal text-muted max-w-md-250 my-2">
+                                        {speaker.title}
+                                    </figcaption>
+                                    <p>{speaker.bio}</p>
+                                </div>
+                            ))}
+                        </section>
+                    </ContentSection>
+                </section>
+            )}
         </>
     )
 }

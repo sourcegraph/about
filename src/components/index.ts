@@ -75,4 +75,4 @@ export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
 export type { Features } from './Pricing'
 
 // Webinars & Guides
-export { WebinarAndGuideLayout } from './WebinarsAndGuides'
+export { WebinarsAndGuidesLayout } from './WebinarsAndGuides'

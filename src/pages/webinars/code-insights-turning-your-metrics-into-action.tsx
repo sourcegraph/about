@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, WebinarAndGuideLayout } from '@components'
+import { Layout, WebinarsAndGuidesLayout } from '@components'
 
 const speakers = [
     {
@@ -26,7 +26,7 @@ export const Webinar: FunctionComponent = () => (
         }}
         className="navbar-white"
     >
-        <WebinarAndGuideLayout
+        <WebinarsAndGuidesLayout
             title="How to track what really matters to you and your team"
             subtitle="Sourcegraph Code Insights: Turning Metrics into Action"
             speakers={speakers}
