@@ -69,12 +69,6 @@ export const WebinarAndGuideLayout: FunctionComponent<Props> = ({
     }
     useHubSpot(hubSpotConfig)
 
-    const webinarCustomerMobileHeroStyle = { background: `url('${webinarCustomerMobileBg.src}')` }
-    const webinarCustomerHeroStyle = { background: `url('${webinarCustomerBg.src}')` }
-    const webinarProductMobileHeroStyle = { background: `url('${webinarProductMobileBg.src}')` }
-    const webinarProductHeroStyle = { background: `url('${webinarProductBg.src}')` }
-    const guideHeroStyle = { background: `url('${guideBg.src}')` }
-    const guideMobileHeroStyle = { background: `url('${guideMobileBg.src}')` }
 
     const heroImage = (): { src: string } => {
         if (isWebinarPg) {
