@@ -124,22 +124,26 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
             <div className="col-3 col-md-12 text-center max-w-550 mx-auto">
                 <h1 className="font-weight-bold">Ready to accelerate developer onboarding? Let's talk.</h1>
                 <p>
-                    <Link
-                        href="/get-started"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        Get started
+                    <Link href="/get-started" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            Get started
+                        </a>
                     </Link>{' '}
                     for free with up to 10 teammates or{' '}
-                    <Link
-                        href="/demo"
-                        data-button-style={buttonStyle.text}
-                        data-button-location={buttonLocation.body}
-                        data-button-type="cta"
-                    >
-                        request a demo
+                    <Link href="/demo" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
+                            request a demo
+                        </a>
                     </Link>{' '}
                     to learn about our enterprise plan and to see Sourcegraph in your own environment.
                 </p>
