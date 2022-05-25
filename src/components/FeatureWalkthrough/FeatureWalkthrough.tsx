@@ -5,17 +5,18 @@ import { startCase } from 'lodash'
 import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
-import { IFeatures } from '@interfaces/featureWalkthrough'
-import { IVideoElement } from '@interfaces/video'
 
-import batchChangesMp4 from '../pages/home/assets/animations/batch-changes.mp4'
-import batchChangesWebm from '../pages/home/assets/animations/batch-changes.webm'
-import codeInsightsMp4 from '../pages/home/assets/animations/code-insights.mp4'
-import codeInsightsWebm from '../pages/home/assets/animations/code-insights.webm'
-import codeIntelMp4 from '../pages/home/assets/animations/code-intel.mp4'
-import codeIntelWebm from '../pages/home/assets/animations/code-intel.webm'
-import codeSearchMp4 from '../pages/home/assets/animations/code-search.mp4'
-import codeSearchWebm from '../pages/home/assets/animations/code-search.webm'
+import batchChangesMp4 from '../../pages/home/assets/animations/batch-changes.mp4'
+import batchChangesWebm from '../../pages/home/assets/animations/batch-changes.webm'
+import codeInsightsMp4 from '../../pages/home/assets/animations/code-insights.mp4'
+import codeInsightsWebm from '../../pages/home/assets/animations/code-insights.webm'
+import codeIntelMp4 from '../../pages/home/assets/animations/code-intel.mp4'
+import codeIntelWebm from '../../pages/home/assets/animations/code-intel.webm'
+import codeSearchMp4 from '../../pages/home/assets/animations/code-search.mp4'
+import codeSearchWebm from '../../pages/home/assets/animations/code-search.webm'
+
+import { IFeatures } from './featureCopy'
+import { IVideoElement } from './video'
 
 export const features: IFeatures[] = [
     {
