@@ -33,7 +33,6 @@ export const Webinar: FunctionComponent = () => (
             customer={{
                 name: 'Nutanix',
                 logo: '/external-logos/nutanix-logo.svg',
-                href: 'https://nutanix.com',
             }}
             formLabel="Watch the on-demand webinar"
             form={{

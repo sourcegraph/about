@@ -17,7 +17,6 @@ import defaultBg from './assets/hero/bg-code-venus.png'
 interface Customer {
     name: string
     logo: string
-    href: string
 }
 
 interface Speaker {
@@ -95,22 +94,33 @@ export const SimpleGatedPgLayout: FunctionComponent<Props> = ({
                 className={classNames('bg-cover', isGuidePg && 'text-white')}
             >
                 <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
-                    {/* Show SG & Customer logo for customer-based webinars */}
-                    {customer && (
-                        <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
-                            <img
-                                className={`border-right border-black ${
-                                    isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
-                                }`}
-                                width={isMdOrDown ? '65' : '95'}
-                                src="/sourcegraph/sourcegraph-mark.svg"
-                                alt="Sourcegraph mark"
-                            />
-                            <img height={isMdOrDown ? '15' : '22'} src={customer.logo} alt={`${customer.name} logo`} />
-                        </div>
-                    )}
+                    {customer &&
+                        <>
+                            {isWebinarPg ?
+                            // Show SG & Customer logo for customer-based webinars
+                                 <div className="col-lg-4 col-12 text-lg-center px-lg-0 pb-5 pb-lg-0">
+                                    <img
+                                        className={`border-right border-black ${
+                                            isMdOrDown ? 'border-2 mr-3 pr-3' : 'border-3 mr-4 pr-4'
+                                        }`}
+                                        width={isMdOrDown ? '65' : '95'}
+                                        src="/sourcegraph/sourcegraph-mark.svg"
+                                        alt="Sourcegraph mark"
+                                    />
+                                    <img height={isMdOrDown ? '15' : '22'} src={customer.logo} alt={`${customer.name} logo`} />
+                                </div> :
+                                <div className="col-lg-2 col-12 px-lg-0 pb-2 pb-lg-0">
+                                    <img
+                                        height={isMdOrDown ? '170' : '150'}
+                                        src={customer.logo}
+                                        alt={`${customer.name} logo`}
+                                    />
+                                </div>
+                            }
+                        </>
+                    }
 
-                    <div className={classNames('col-12', customer && 'col-lg-8')}>
+                    <div className={classNames('col-12', customer && isWebinarPg && 'col-lg-8', customer && !isWebinarPg && 'col-lg-10')}>
                         <h1 className="display-2 font-weight-bold mb-4 mb-md-2">{title}</h1>
                         {subtitle && <h3 className="font-weight-normal max-w-800">{subtitle}</h3>}
                     </div>
