@@ -28,7 +28,7 @@ const Header: FunctionComponent<Props> = props => {
     const [isOpen, setIsOpen] = useState(false)
     const [productMenuOpen, setProductMenuOpen] = useState(false)
     const [resourcesMenuOpen, setResourcesMenuOpen] = useState(false)
-    const [customerMenuOpen, setCustomerMenuOpen] = useState(false)
+    const [useCaseMenuOpen, setuseCaseMenuOpen] = useState(false)
 
     return (
         <nav className={`header navbar py-3 ${props.className || 'navbar-light'}`}>
@@ -73,10 +73,15 @@ const Header: FunctionComponent<Props> = props => {
                                 <NavDropdown.Item href="/podcast/">Sourcegraph Podcast</NavDropdown.Item>
                             </NavDropdown>
 
-                            <NavDropdown id="customersDropdown" title="Customers">
-                                <NavDropdown.Item href="/case-studies">Case studies</NavDropdown.Item>
-                                <NavDropdown.Item href="/use-cases">Use cases</NavDropdown.Item>
-                                <NavDropdown.Item href="/contact/product-specialist">Become one</NavDropdown.Item>
+                            <NavDropdown id="useCaseDropdown" title="Use Cases">
+                                <NavDropdown.Item href="/use-cases/code-security">Code Security</NavDropdown.Item>
+                                <NavDropdown.Item href="/use-cases/onboarding">Developer Onboarding</NavDropdown.Item>
+                                <NavDropdown.Item href="/use-cases/incident-response">
+                                    Incident Response
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/use-cases/code-reuse">Code Reuse</NavDropdown.Item>
+                                <NavDropdown.Item href="/use-cases/code-health">Code Health</NavDropdown.Item>
+                                <NavDropdown.Item href="/case-studies">Case Studies</NavDropdown.Item>
                             </NavDropdown>
 
                             <Nav.Link href="/pricing">Pricing</Nav.Link>
@@ -200,27 +205,36 @@ const Header: FunctionComponent<Props> = props => {
                                         data-toggle="collapse"
                                         data-target="#customer-menu"
                                         aria-expanded="false"
-                                        onClick={() => setCustomerMenuOpen(!customerMenuOpen)}
-                                        onKeyDown={() => setCustomerMenuOpen(!customerMenuOpen)}
+                                        onClick={() => setuseCaseMenuOpen(!useCaseMenuOpen)}
+                                        onKeyDown={() => setuseCaseMenuOpen(!useCaseMenuOpen)}
                                         tabIndex={0}
                                     >
-                                        Customers
+                                        Use Cases
                                         <ChevronDownIcon className="icon-inline ml-1" />
                                     </span>
                                     <ul
                                         id="customer-menu"
                                         className={`small-menu collapse navbar-collapse ${
-                                            customerMenuOpen ? 'show' : 'hide'
+                                            useCaseMenuOpen ? 'show' : 'hide'
                                         }`}
                                     >
                                         <li className="nav-link" role="presentation">
-                                            <Link href="/case-studies">Case studies</Link>
+                                            <Link href="/use-cases/code-security">Code Security</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <Link href="/use-cases">Use cases</Link>
+                                            <Link href="/use-cases/onboarding">Developer Onboarding</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <Link href="/contact/product-specialist">Become one</Link>
+                                            <Link href="/use-cases/incident-response">Incident Response</Link>
+                                        </li>
+                                        <li className="nav-link" role="presentation">
+                                            <Link href="/use-cases/code-reuse">Code Reuse</Link>
+                                        </li>
+                                        <li className="nav-link" role="presentation">
+                                            <Link href="/use-cases/code-health">Code Health</Link>
+                                        </li>
+                                        <li className="nav-link" role="presentation">
+                                            <Link href="/case-studies">Case Studies</Link>
                                         </li>
                                     </ul>
                                 </li>
