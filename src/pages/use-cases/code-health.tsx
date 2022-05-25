@@ -238,30 +238,27 @@ const UseCasePage: FunctionComponent = () => (
                                     entire codebase.
                                 </div>
                                 <div className="d-flex flex-column flex-lg-row pt-1">
-                                    <Link
-                                        href="/demo"
-                                        passHref={true}
-                                        data-button-style={buttonStyle.primary}
-                                        data-button-location={buttonLocation.hero}
-                                        data-button-type="cta"
-                                    >
+                                    <Link href="/demo" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
                                             title="Request a Demo."
+                                            data-button-style={buttonStyle.primary}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
                                         >
                                             Request a demo
                                         </a>
                                     </Link>
-                                    <Link
-                                        href="/get-started"
-                                        passHref={true}
-                                        data-button-style={buttonStyle.outline}
-                                        data-button-location={buttonLocation.hero}
-                                        data-button-type="cta"
-                                    >
+                                    <Link href="/get-started" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a className="btn btn-outline-primary w-md-100" title="Try Sourcegraph.">
+                                        <a
+                                            className="btn btn-outline-primary w-md-100"
+                                            title="Try Sourcegraph."
+                                            data-button-style={buttonStyle.outline}
+                                            data-button-location={buttonLocation.hero}
+                                            data-button-type="cta"
+                                        >
                                             Try Sourcegraph now
                                         </a>
                                     </Link>
@@ -348,15 +345,15 @@ const UseCasePage: FunctionComponent = () => (
                         <p>Give your team the tools they need to build a healthier codebase.</p>
                     </div>
                     <div className="text-center col-12">
-                        <Link
-                            href="/demo"
-                            passHref={true}
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                        >
+                        <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-primary min-w-200" title="Request a Demo.">
+                            <a
+                                className="btn btn-primary min-w-200"
+                                title="Request a Demo."
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                                data-button-type="cta"
+                            >
                                 Request a demo
                             </a>
                         </Link>
@@ -392,15 +389,15 @@ const UseCasePage: FunctionComponent = () => (
             <div className="d-flex flex-wrap justify-content-center text-center mb-md-4">
                 <h2 className="w-100 font-weight-bold mb-4 mx-4 mx-lg-0">Ready to build a healthier codebase?</h2>
                 <div className="d-flex justify-content-center mb-lg-6">
-                    <Link
-                        href="/get-started"
-                        passHref={true}
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.trySourcegraph}
-                        data-button-type="cta"
-                    >
+                    <Link href="/get-started" passHref={true}>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className="btn btn-primary" title="Ready to get started?">
+                        <a
+                            className="btn btn-primary"
+                            title="Ready to get started?"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
+                        >
                             Ready to get started?
                         </a>
                     </Link>

@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
 import { ContentSection, BlockquoteWithBorder, IntegrationsSection, Layout, SelfHostedSection } from '@components'
@@ -27,30 +26,27 @@ export const CodeSearchPage: FunctionComponent = () => (
                             code search.
                         </p>
                         <div className="d-flex flex-column flex-lg-row max-w-sm-400 pt-1">
-                            <Link
-                                href="/demo"
-                                passHref={true}
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
+                            <Link href="/demo" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a
                                     className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
                                     title="Request a Demo."
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
                                 >
                                     Request a demo
                                 </a>
                             </Link>
-                            <Link
-                                href="/get-started"
-                                passHref={true}
-                                data-button-style={buttonStyle.outline}
-                                data-button-location={buttonLocation.hero}
-                                data-button-type="cta"
-                            >
+                            <Link href="/get-started" passHref={true}>
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="btn btn-outline-primary w-md-100" title="Try Sourcegraph.">
+                                <a
+                                    className="btn btn-outline-primary w-md-100"
+                                    title="Try Sourcegraph."
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.hero}
+                                    data-button-type="cta"
+                                >
                                     Try Sourcegraph now
                                 </a>
                             </Link>

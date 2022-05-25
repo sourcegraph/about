@@ -44,12 +44,14 @@ const UseCases: React.FunctionComponent = () => (
                                     key={feature}
                                     href={`#${kebabCase(feature)}`}
                                     passHref={true}
-                                    data-button-style={buttonStyle.textWithArrow}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
                                 >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none">
+                                    <a
+                                        className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none"
+                                        data-button-style={buttonStyle.textWithArrow}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
                                         {feature}
                                         <ArrowRightIcon className="icon-inline ml-1" />
                                     </a>

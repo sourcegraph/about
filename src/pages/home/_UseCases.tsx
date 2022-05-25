@@ -140,14 +140,14 @@ const UseCases: FunctionComponent = () => {
                     <Link href="/get-started">Get started</Link> for free with up to 10 teammates or{' '}
                     <Link href="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph
                     in your own environment.
-                    <Link
-                        href="/demo"
-                        data-button-style={buttonStyle.primary}
-                        data-button-location={buttonLocation.bodyDemo}
-                        passHref={true}
-                        data-button-type="cta"
-                    >
-                        <a className="btn btn-primary mt-5 d-block d-sm-inline-block" href="#none">
+                    <Link href="/demo" passHref={true}>
+                        <a
+                            className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            href="#none"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
                             Request a demo
                         </a>
                     </Link>
