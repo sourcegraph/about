@@ -163,17 +163,19 @@ export const FeatureWalkthrough: FunctionComponent = () => {
                                 className="btn btn-outline-primary mt-2"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 Learn more about {startCase(feature.productFeature)}
                             </a>
                         ) : (
-                            <Link
-                                href={feature.ctaLink}
-                                data-button-style={buttonStyle.outline}
-                                data-button-location={buttonLocation.body}
-                                passHref={true}
-                            >
-                                <a className="btn btn-outline-primary mt-2" href="#none">
+                            <Link href={feature.ctaLink} passHref={true}>
+                                <a
+                                    className="btn btn-outline-primary mt-2"
+                                    href="#none"
+                                    data-button-style={buttonStyle.outline}
+                                    data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
+                                >
                                     Learn more about {startCase(feature.productFeature)}
                                 </a>
                             </Link>
