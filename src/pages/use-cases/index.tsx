@@ -8,12 +8,27 @@ import { buttonStyle, buttonLocation } from '@data'
 
 import styles from './useCases.module.scss'
 
-const features: string[] = [
-    'Find and fix security vulnerabilities',
-    'Accelerate developer onboarding',
-    'Resolve incidents faster',
-    'Streamline code reuse',
-    'Boost code health',
+const features: {id: string, description: string}[] = [
+    {
+        id: 'code-security',
+        description: 'Find and fix security vulnerabilities',
+    },
+    {
+        id: 'onboarding',
+        description: 'Accelerate developer onboarding',
+    },
+    {
+        id: 'incident-response',
+        description: 'Resolve incidents faster',
+    },
+    {
+        id: 'code-reuse',
+        description: 'Streamline code reuse',
+    },
+    {
+        id: 'code-health',
+        description: 'Boost code health',
+    },
 ]
 
 const UseCases: React.FunctionComponent = () => (
@@ -39,10 +54,10 @@ const UseCases: React.FunctionComponent = () => (
                         <h2 className={`${styles.seeHow} font-weight-normal`}>See how customers use Sourcegraph to</h2>
 
                         <div className="list-group">
-                            {features.map((feature: string) => (
+                            {features.map((feature: {id: string, description: string}) => (
                                 <Link
-                                    key={feature}
-                                    href={`#${kebabCase(feature)}`}
+                                    key={feature.id}
+                                    href={`#${kebabCase(feature.id)}`}
                                     passHref={true}
                                     data-button-style={buttonStyle.textWithArrow}
                                     data-button-location={buttonLocation.hero}
@@ -50,7 +65,7 @@ const UseCases: React.FunctionComponent = () => (
                                 >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a className="list-group-item list-group-item-action d-flex justify-content-between align-items-center text-decoration-none">
-                                        {feature}
+                                        {feature.description}
                                         <ArrowRightIcon className="icon-inline ml-1" />
                                     </a>
                                 </Link>
@@ -68,7 +83,7 @@ const UseCases: React.FunctionComponent = () => (
 
             <hr className="my-6" />
 
-            <ContentSection id="find-and-fix-security-vulnerabilities" className="pt-8">
+            <ContentSection id="code-security" className="pt-8">
                 <div className="row justify-content-center">
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Find and fix security vulnerabilities</h2>
@@ -125,7 +140,7 @@ const UseCases: React.FunctionComponent = () => (
 
             <hr className="mt-8 mb-6" />
 
-            <ContentSection id="accelerate-developer-onboarding" className="py-4">
+            <ContentSection id="onboarding" className="py-4">
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6 mt-8 px-6 text-center">
                         <BlockquoteWithBorder
@@ -187,7 +202,7 @@ const UseCases: React.FunctionComponent = () => (
 
             <hr className="mt-8 mb-6" />
 
-            <ContentSection id="resolve-incidents-faster" className="py-4">
+            <ContentSection id="incident-response" className="py-4">
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Resolve incidents faster</h2>
@@ -252,7 +267,7 @@ const UseCases: React.FunctionComponent = () => (
 
             <hr className="mt-8 mb-6" />
 
-            <ContentSection id="streamline-code-reuse" className="py-4">
+            <ContentSection id="code-reuse" className="py-4">
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6 px-6 mt-6 text-center">
                         <BlockquoteWithBorder
@@ -328,7 +343,7 @@ const UseCases: React.FunctionComponent = () => (
 
             <hr className="mt-8 mb-6" />
 
-            <ContentSection id="boost-code-health" className="py-4">
+            <ContentSection id="code-health" className="py-4">
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-6">
                         <h2 className="display-3 font-weight-bold mb-3">Boost code health</h2>
