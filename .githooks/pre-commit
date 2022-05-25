@@ -1,0 +1,67 @@
+#!/bin/sh
+
+# Get all the changed files
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep ".tsx\?$")
+
+# If nothing changed, stop
+if [ "$STAGED_FILES" = "" ]; then
+  exit 0
+fi
+
+CURRENT_DIR=${PWD}
+PASS=true
+
+printf "\nValidating Javascript:\n"
+
+for FILE in $STAGED_FILES
+  do
+    FILE_DIR=$(dirname "$FILE")
+    cd "$CURRENT_DIR/$FILE_DIR" || exit 1
+
+    # Locate eslint
+    ESLINT="${PWD}/node_modules/.bin/eslint"
+    while [ ! -x "$ESLINT" ] && [ "${PWD}" != "$CURRENT_DIR" ]; do
+        cd .. || exit 1
+        ESLINT="${PWD}/node_modules/.bin/eslint"
+    done
+
+    # Skip if we didn't find eslint
+    if [ ! -x "$ESLINT" ]; then
+      continue
+    fi
+
+    # Run eslint
+    if "$ESLINT" "$CURRENT_DIR/$FILE"; then
+      printf "\t\033[32mESLint Passed: %s\033[0m" "$FILE"
+    else
+      printf "\t\033[41mESLint Failed: %s\033[0m" "$FILE"
+      PASS=false
+    fi
+
+    # Locate prettier
+    PRETTIER="${PWD}/node_modules/.bin/prettier"
+    while [ ! -x "$PRETTIER" ] && [ "${PWD}" != "$CURRENT_DIR" ]; do
+        cd .. || exit 1
+        PRETTIER="${PWD}/node_modules/.bin/prettier"
+    done
+
+    # Skip if we didn't find prettier
+    if [ ! -x "$PRETTIER" ]; then
+      continue
+    fi
+
+    # Run prettier
+    printf "\n"
+    "$PRETTIER" "$CURRENT_DIR/$FILE" "--check"
+  done
+
+printf "\nJavascript validation completed!\n"
+
+if ! $PASS; then
+  printf "\033[41mCOMMIT FAILED:\033[0m Your commit contains files that should pass ESLint but do not. Please fix the ESLint errors and try again.\n"
+  exit 1
+else
+  printf "\033[42mCOMMIT SUCCEEDED\033[0m\n"
+fi
+
+exit 0
