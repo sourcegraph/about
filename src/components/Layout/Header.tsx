@@ -146,6 +146,9 @@ const Header: FunctionComponent<Props> = props => {
                                             <Link href="/batch-changes">Batch Changes</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
+                                            <Link href="/code-insights">Code Insights</Link>
+                                        </li>
+                                        <li className="nav-link" role="presentation">
                                             <a href="https://docs.sourcegraph.com/code_intelligence">
                                                 Code Intelligence
                                             </a>

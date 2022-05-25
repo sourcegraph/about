@@ -325,15 +325,15 @@ const IncidentResponsePage: FunctionComponent = () => (
                         </p>
                     </div>
                     <div className="text-center col-12 px-0">
-                        <Link
-                            href="/demo"
-                            passHref={true}
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                        >
+                        <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-primary" title="Request a Demo.">
+                            <a
+                                className="btn btn-primary"
+                                title="Request a Demo."
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                                data-button-type="cta"
+                            >
                                 Request a demo
                             </a>
                         </Link>
@@ -368,15 +368,16 @@ const IncidentResponsePage: FunctionComponent = () => (
                 <h2 className="font-weight-bold mb-4 mx-4 mx-lg-0">
                     Respond to incidents faster and more effectively.
                 </h2>
-                <Link
-                    href="/get-started"
-                    passHref={true}
-                    data-button-style={buttonStyle.primary}
-                    data-button-location={buttonLocation.trySourcegraph}
-                    data-button-type="cta"
-                >
+                <Link href="/get-started" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className="btn btn-primary">Ready to get started?</a>
+                    <a
+                        className="btn btn-primary"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                    >
+                        Ready to get started?
+                    </a>
                 </Link>
             </div>
         </ContentSection>
