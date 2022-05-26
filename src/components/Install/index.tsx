@@ -9,7 +9,7 @@ import { ReactComponent as CopyIcon } from './copyIcon.svg'
 import styles from './install.module.scss'
 
 const installText =
-    'docker run --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm --volume ~/.sourcegraph/config:/etc/sourcegraph --volume ~/.sourcegraph/data:/var/opt/sourcegraph sourcegraph/server:3.39.1'
+    'docker run --publish 7080:7080 --publish 127.0.0.1:3370:3370 --rm --volume ~/.sourcegraph/config:/etc/sourcegraph --volume ~/.sourcegraph/data:/var/opt/sourcegraph sourcegraph/server:3.40.0'
 
 export const Install: FunctionComponent = () => {
     const [copied, setCopied] = useState(false)
@@ -70,7 +70,7 @@ export const Install: FunctionComponent = () => {
                 <a
                     className="d-inline-block text-lg"
                     href="https://docs.sourcegraph.com"
-                    data-button-style={buttonStyle.textWithArrow}
+                    data-button-style={buttonStyle.text}
                     data-button-location={buttonLocation.trySourcegraph}
                     data-button-type="cta"
                 >
