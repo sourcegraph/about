@@ -35,13 +35,6 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
                     post.frontmatter.title
                 )}
             </h1>
-            {/* {post.frontmatter.author && post.frontmatter.publishDate && (
-                <p className="text-align-center text-secondary mb-0">
-                    {post.frontmatter.author} on{' '}
-                    <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
-                </p>
-            )} */}
-
             {post.frontmatter.authors?.length && (
                 <p className="text-align-center text-secondary mb-0">
                     {post.frontmatter.authors.map((a, index) => (
@@ -57,6 +50,7 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
                                 ) : (
                                     a.name
                                 )}
+                                {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
                                 {index === post.frontmatter.authors!.length - 1 ? ' ' : ', '}
                             </span>
                         )
