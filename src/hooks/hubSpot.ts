@@ -102,7 +102,7 @@ async function createHubSpotForm({
     onFormSubmit,
     onFormSubmitted,
     onFormReady,
-}: HubSpotForm): void {
+}: HubSpotForm): Promise<void> {
     const getAllCookies: { [index: string]: string } = document.cookie
         .split(';')
         .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
@@ -164,6 +164,7 @@ export const useHubSpot = ({
     onFormSubmitted,
 }: HookProps): void => {
     useEffect(() => {
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
         createHubSpotForm({
             region,
             portalId,
