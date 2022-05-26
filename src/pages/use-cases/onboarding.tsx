@@ -288,15 +288,15 @@ const UseCasePage: FunctionComponent = () => (
                         </p>
                     </div>
                     <div className="d-flex flex-column">
-                        <Link
-                            href="/demo"
-                            passHref={true}
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                        >
+                        <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-primary" title="Request a Demo.">
+                            <a
+                                className="btn btn-primary"
+                                title="Request a Demo."
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                                data-button-type="cta"
+                            >
                                 Request a demo
                             </a>
                         </Link>

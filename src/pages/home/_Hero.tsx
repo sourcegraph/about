@@ -53,27 +53,29 @@ const Hero: FunctionComponent = () => {
 
                 <div className="max-w-350 mx-auto flex-column flex-sm-row d-sm-flex align-items-center">
                     <div className="col-sm-6 px-sm-0 mb-3 mb-sm-0 mr-sm-3">
-                        <Link
-                            href="/get-started"
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.hero}
-                            data-button-type="cta"
-                            passHref={true}
-                        >
-                            <a className="btn btn-primary w-100" href="#none" title="Get started">
+                        <Link href="/get-started" passHref={true}>
+                            <a
+                                className="btn btn-primary w-100"
+                                href="#none"
+                                title="Get started"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
                                 Get started
                             </a>
                         </Link>
                     </div>
                     <div className="col-sm-6 px-sm-0">
-                        <Link
-                            href="/demo"
-                            data-button-style={buttonStyle.outline}
-                            data-button-location={buttonLocation.hero}
-                            data-button-type="cta"
-                            passHref={true}
-                        >
-                            <a className="btn btn-outline-primary w-100" href="#none" title="Request a demo">
+                        <Link href="/demo" passHref={true}>
+                            <a
+                                className="btn btn-outline-primary w-100"
+                                href="#none"
+                                title="Request a demo"
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.hero}
+                                data-button-type="cta"
+                            >
                                 Request a demo
                             </a>
                         </Link>

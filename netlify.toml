@@ -12,6 +12,14 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
 
+
+# ========== SOURCEGRAPH REDIRECTS ==========
+[[redirects]]
+  from = "/changelog"
+  to = "https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
+  status = 301
+# ========== END SOURCEGRAPH REDIRECTS ==========
+
 # ========== HANDBOOK REDIRECTS ==========
 [[redirects]]
   from = "/company"

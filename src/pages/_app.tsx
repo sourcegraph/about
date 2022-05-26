@@ -17,15 +17,24 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
 
             {/* // Import all top-level scripts here: https://nextjs.org/docs/messages/no-script-in-document-page */}
 
-            {/* Triblio "Webpage Personalization" for Sales/Marketing */}
+            {/* Triblio "Webpage Personalization" */}
             <Script
-                data-cfasync="false"
+                id="triblio-p"
                 type="text/javascript"
                 src="https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8"
+                strategy="beforeInteractive"
+            />
+
+            {/* Triblio "Analytics and Overlay Cards" */}
+            <Script
+                id="triblio-a"
+                type="text/javascript"
+                src="https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8"
+                strategy="afterInteractive"
             />
 
             {/* Google Analytics */}
-            <Script data-cookieconsent="ignore" id="track-ga">
+            <Script id="track-ga" data-cookieconsent="ignore" strategy="beforeInteractive">
                 {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag() {
@@ -41,7 +50,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
             </Script>
 
             {/* Google Tag Manager */}
-            <Script data-cookieconsent="ignore" id="track-gtm">
+            <Script id="track-gtm" data-cookieconsent="ignore" strategy="beforeInteractive">
                 {`
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -58,13 +67,11 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
                 data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d"
                 data-blockingmode="auto"
                 type="text/javascript"
+                strategy="afterInteractive"
             />
 
-            {/* Add jQuery as a dependency for Clearbit - without this Clearbit doesn't work */}
-            <Script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
-
             {/* Drift */}
-            <Script type="text/javascript" id="drift">
+            <Script id="drift" type="text/javascript" strategy="afterInteractive">
                 {`
                     "use strict";
                     !function() {
@@ -90,13 +97,6 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
                     drift.SNIPPET_VERSION = '0.3.1';
                     drift.load('bgv3pp29xsp9');
                 `}
-            </Script>
-
-            {/* Clearbit script for Hubspot form enrichment */}
-            <Script type="text/javascript" id="clearbit-hubspot">
-                {
-                    '!function(e){var o=document.getElementsByTagName("script")[0];if("object"==typeof e.ClearbitForHubspot)return console.log("Clearbit For HubSpot included more than once"),!1;e.ClearbitForHubspot={},e.ClearbitForHubspot.forms=[],e.ClearbitForHubspot.addForm=function(o){var t=o[0];"function"==typeof e.ClearbitForHubspot.onFormReady?e.ClearbitForHubspot.onFormReady(t):e.ClearbitForHubspot.forms.push(t)};var t=document.createElement("script");t.async=!0,t.src="https://hubspot.clearbit.com/v1/forms/pk_a66b9ed76e62c713c06aab39bfae7234/forms.js",o.parentNode.insertBefore(t,o),e.addEventListener("message",function(o){if("hsFormCallback"===o.data.type&&"onFormReady"===o.data.eventName)if(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0)e.ClearbitForHubspot.addForm(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'));else if(document.querySelectorAll("iframe.hs-form-iframe").length>0){document.querySelectorAll("iframe.hs-form-iframe").forEach(function(t){t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0&&e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'))})}})}(window);'
-                }
             </Script>
 
             <SSRProvider>
