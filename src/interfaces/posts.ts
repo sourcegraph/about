@@ -52,7 +52,7 @@ export interface FrontMatter {
         name: string
         url?: string
     }[]
-    author?: string
+    author?: string|string[]
     tags?: string[]
     changelogItems?: {
         url: string
