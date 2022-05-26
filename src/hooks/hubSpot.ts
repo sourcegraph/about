@@ -54,11 +54,11 @@ interface HookProps {
 // Global script integrations for this hook used for HubSpot forms
 const hubSpotScript = '//js.hsforms.net/forms/v2.js'
 const jQueryScript = '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'
-const clearbitScript = '!function(e){var o=document.getElementsByTagName("script")[0];if("object"==typeof e.ClearbitForHubspot)return console.log("Clearbit For HubSpot included more than once"),!1;e.ClearbitForHubspot={},e.ClearbitForHubspot.forms=[],e.ClearbitForHubspot.addForm=function(o){var t=o[0];"function"==typeof e.ClearbitForHubspot.onFormReady?e.ClearbitForHubspot.onFormReady(t):e.ClearbitForHubspot.forms.push(t)};var t=document.createElement("script");t.async=!0,t.src="https://hubspot.clearbit.com/v1/forms/pk_a66b9ed76e62c713c06aab39bfae7234/forms.js",o.parentNode.insertBefore(t,o),e.addEventListener("message",function(o){if("hsFormCallback"===o.data.type&&"onFormReady"===o.data.eventName)if(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0)e.ClearbitForHubspot.addForm(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'));else if(document.querySelectorAll("iframe.hs-form-iframe").length>0){document.querySelectorAll("iframe.hs-form-iframe").forEach(function(t){t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0&&e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'))})}})}(window);'
+const clearbitScript =
+    '!function(e){var o=document.getElementsByTagName("script")[0];if("object"==typeof e.ClearbitForHubspot)return console.log("Clearbit For HubSpot included more than once"),!1;e.ClearbitForHubspot={},e.ClearbitForHubspot.forms=[],e.ClearbitForHubspot.addForm=function(o){var t=o[0];"function"==typeof e.ClearbitForHubspot.onFormReady?e.ClearbitForHubspot.onFormReady(t):e.ClearbitForHubspot.forms.push(t)};var t=document.createElement("script");t.async=!0,t.src="https://hubspot.clearbit.com/v1/forms/pk_a66b9ed76e62c713c06aab39bfae7234/forms.js",o.parentNode.insertBefore(t,o),e.addEventListener("message",function(o){if("hsFormCallback"===o.data.type&&"onFormReady"===o.data.eventName)if(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0)e.ClearbitForHubspot.addForm(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'));else if(document.querySelectorAll("iframe.hs-form-iframe").length>0){document.querySelectorAll("iframe.hs-form-iframe").forEach(function(t){t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0&&e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'))})}})}(window);'
 
 // Gets a script element by its id
-const getScriptElement = (id: string): HTMLScriptElement | Element | null => 
-    document.querySelector(`#${id}`)
+const getScriptElement = (id: string): HTMLScriptElement | Element | null => document.querySelector(`#${id}`)
 
 // Removes a script element by its id
 const removeScriptElement = (id: string): void => {
@@ -68,13 +68,17 @@ const removeScriptElement = (id: string): void => {
 
 /**
  * This loads a script element and appends it to the document's head tag.
- * 
+ *
  * @param id - a unique identifier for the script element
  * @param script - the script src (whether it's used for the script tag's src or innerHTML)
  * @param innerHTML - whether or not to assign the script to the script tag's src attribute or append to it's innerHTML
  * @returns - an HTML Script Element
  */
-const loadScriptElement = (id: string, script: string, innerHTML?: boolean): Promise<HTMLScriptElement | Element | null> =>
+const loadScriptElement = (
+    id: string,
+    script: string,
+    innerHTML?: boolean
+): Promise<HTMLScriptElement | Element | null> =>
     new Promise(resolve => {
         const scriptElement = getScriptElement(id)
 
@@ -107,7 +111,7 @@ async function createHubSpotForm({
         .split(';')
         .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
     const anonymousId = getAllCookies.sourcegraphAnonymousUid
-    const firstSourceURL = getAllCookies.sourcegraphSourceUrl    
+    const firstSourceURL = getAllCookies.sourcegraphSourceUrl
 
     const script = await loadScriptElement('hubspot', hubSpotScript)
     await loadScriptElement('jQuery', jQueryScript)
