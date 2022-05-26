@@ -74,6 +74,7 @@ const Header: FunctionComponent<Props> = props => {
                             </NavDropdown>
 
                             <NavDropdown id="useCaseDropdown" title="Use Cases">
+                                <NavDropdown.Item href="/use-cases/">All Use Cases</NavDropdown.Item>
                                 <NavDropdown.Item href="/use-cases/code-security">Code Security</NavDropdown.Item>
                                 <NavDropdown.Item href="/use-cases/onboarding">Developer Onboarding</NavDropdown.Item>
                                 <NavDropdown.Item href="/use-cases/incident-response">
@@ -218,6 +219,9 @@ const Header: FunctionComponent<Props> = props => {
                                             useCaseMenuOpen ? 'show' : 'hide'
                                         }`}
                                     >
+                                        <li className="nav-link" role="presentation">
+                                            <Link href="/use-cases/">All Use Cases</Link>
+                                        </li>
                                         <li className="nav-link" role="presentation">
                                             <Link href="/use-cases/code-security">Code Security</Link>
                                         </li>
