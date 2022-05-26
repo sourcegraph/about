@@ -69,10 +69,8 @@ export {
 export { Layout } from './Layout'
 export { WhitePaperPage } from './WhitePaperPage'
 export { ContentPage } from './ContentPage'
+export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides, Reports
 
 // Pricing
 export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
 export type { Features } from './Pricing'
-
-// Webinars, Guides, Reports
-export { SimpleGatedPgLayout } from './SimpleGatedPg'

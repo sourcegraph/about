@@ -43,7 +43,7 @@ interface Props {
     children?: ReactNode
 }
 
-export const SimpleGatedPgLayout: FunctionComponent<Props> = ({
+export const GatedResourceLayout: FunctionComponent<Props> = ({
     title,
     subtitle,
     customer,
