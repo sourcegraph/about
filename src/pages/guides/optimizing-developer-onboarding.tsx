@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, SimpleGatedPgLayout } from '@components'
+import { Layout, GatedResourceLayout } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -11,7 +11,7 @@ export const Guide: FunctionComponent = () => (
         }}
         className="navbar-white"
     >
-        <SimpleGatedPgLayout
+        <GatedResourceLayout
             title="Optimizing developer onboarding"
             subtitle="Lessons learned and secrets to success from 31 companies and open source projects"
             formLabel="Download the guide"

@@ -179,30 +179,27 @@ const CodeReusePage: FunctionComponent = () => (
                                 on problems a teammate already solved.
                             </div>
                             <div className="d-flex flex-column flex-lg-row pt-1">
-                                <Link
-                                    href="/demo"
-                                    passHref={true}
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
+                                <Link href="/demo" passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a
                                         className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
                                         title="Request a Demo."
+                                        data-button-style={buttonStyle.primary}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
                                     >
                                         Request a demo
                                     </a>
                                 </Link>
-                                <Link
-                                    href="/get-started"
-                                    passHref={true}
-                                    data-button-style={buttonStyle.outline}
-                                    data-button-location={buttonLocation.hero}
-                                    data-button-type="cta"
-                                >
+                                <Link href="/get-started" passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a className="btn btn-outline-primary w-md-100" title="Try Sourcegraph.">
+                                    <a
+                                        className="btn btn-outline-primary w-md-100"
+                                        title="Try Sourcegraph."
+                                        data-button-style={buttonStyle.outline}
+                                        data-button-location={buttonLocation.hero}
+                                        data-button-type="cta"
+                                    >
                                         Try Sourcegraph now
                                     </a>
                                 </Link>
@@ -284,15 +281,15 @@ const CodeReusePage: FunctionComponent = () => (
                         </p>
                     </div>
                     <div className="text-center col-12 px-0">
-                        <Link
-                            href="/demo"
-                            passHref={true}
-                            data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.bodyDemo}
-                            data-button-type="cta"
-                        >
+                        <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-primary" title="Request a Demo.">
+                            <a
+                                className="btn btn-primary"
+                                title="Request a Demo."
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.bodyDemo}
+                                data-button-type="cta"
+                            >
                                 Request a demo
                             </a>
                         </Link>
@@ -325,15 +322,16 @@ const CodeReusePage: FunctionComponent = () => (
         <ContentSection>
             <div className="text-center">
                 <h1 className="font-weight-bold mb-6">Make the most of your existing code.</h1>
-                <Link
-                    href="/get-started"
-                    passHref={true}
-                    data-button-style={buttonStyle.primary}
-                    data-button-location={buttonLocation.trySourcegraph}
-                    data-button-type="cta"
-                >
+                <Link href="/get-started" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className="btn btn-primary">Ready to get started?</a>
+                    <a
+                        className="btn btn-primary"
+                        data-button-style={buttonStyle.primary}
+                        data-button-location={buttonLocation.trySourcegraph}
+                        data-button-type="cta"
+                    >
+                        Ready to get started?
+                    </a>
                 </Link>
             </div>
         </ContentSection>
