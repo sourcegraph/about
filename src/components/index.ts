@@ -74,5 +74,5 @@ export { ContentPage } from './ContentPage'
 export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
 export type { Features } from './Pricing'
 
-// Webinars & Guides
+// Webinars, Guides, Reports
 export { SimpleGatedPgLayout } from './SimpleGatedPg'
