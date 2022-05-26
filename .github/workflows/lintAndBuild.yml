@@ -1,5 +1,5 @@
-# This ensures our production-ready builds work
-name: Production Builds
+# This ensures our linting passes and our production-ready builds work
+name: Lint & Build
 
 on:
   pull_request:
@@ -19,5 +19,7 @@ jobs:
           node-version: '16.15.0'
       - name: Install dependencies
         run: yarn ci
+      - name: Linting
+        run: yarn lint
       - name: Build production-ready site
         run: yarn build
