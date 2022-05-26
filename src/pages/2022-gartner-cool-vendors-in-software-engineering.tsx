@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, SimpleGatedPgLayout } from '@components'
+import { Layout, GatedResourceLayout } from '@components'
 
 export const Report: FunctionComponent = () => (
     <Layout
@@ -9,9 +9,8 @@ export const Report: FunctionComponent = () => (
             description:
                 'Get free access to Gartner’s 2022 Cool Vendor Report to learn how Sourcegraph and other innovative tools help engineers and engineering leaders boost developer productivity while mitigating security risks.',
         }}
-        className="navbar-white"
     >
-        <SimpleGatedPgLayout
+        <GatedResourceLayout
             title="Cool Vendors in Software Engineering: Enhancing Developer Productivity"
             customer={{
                 name: 'Gartner',
