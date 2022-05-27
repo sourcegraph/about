@@ -57,17 +57,29 @@ const Header: FunctionComponent<Props> = props => {
                                 <NavDropdown.Item href="/code-search">Code Search</NavDropdown.Item>
                                 <NavDropdown.Item href="/batch-changes">Batch Changes</NavDropdown.Item>
                                 <NavDropdown.Item href="/code-insights">Code Insights</NavDropdown.Item>
-                                <NavDropdown.Item href="https://docs.sourcegraph.com/code_intelligence">
+                                <NavDropdown.Item
+                                    href="https://docs.sourcegraph.com/code_intelligence"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     Code Intelligence
                                 </NavDropdown.Item>
                             </NavDropdown>
 
                             <NavDropdown id="resourcesDropdown" title="Resources">
                                 <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
-                                <NavDropdown.Item href="https://learn.sourcegraph.com/" target="_blank">
+                                <NavDropdown.Item
+                                    href="https://learn.sourcegraph.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     Learn
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF">
+                                <NavDropdown.Item
+                                    href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     Dev Tool Time
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="/podcast/">Sourcegraph Podcast</NavDropdown.Item>
@@ -87,7 +99,7 @@ const Header: FunctionComponent<Props> = props => {
 
                             <Nav.Link href="/pricing">Pricing</Nav.Link>
 
-                            <Nav.Link href="https://docs.sourcegraph.com" target="_blank">
+                            <Nav.Link href="https://docs.sourcegraph.com" target="_blank" rel="noreferrer">
                                 Docs
                             </Nav.Link>
                         </Nav>
@@ -155,7 +167,11 @@ const Header: FunctionComponent<Props> = props => {
                                             <Link href="/code-insights">Code Insights</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <a href="https://docs.sourcegraph.com/code_intelligence">
+                                            <a
+                                                href="https://docs.sourcegraph.com/code_intelligence"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
                                                 Code Intelligence
                                             </a>
                                         </li>
@@ -190,7 +206,11 @@ const Header: FunctionComponent<Props> = props => {
                                             </a>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF">
+                                            <a
+                                                href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
                                                 Dev Tool Time
                                             </a>
                                         </li>
@@ -244,9 +264,8 @@ const Header: FunctionComponent<Props> = props => {
                                 </li>
                                 <li className="nav-item" role="presentation">
                                     <Link href="/pricing" passHref={true}>
-                                        <a href="#none" className="nav-link">
-                                            Pricing
-                                        </a>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a className="nav-link">Pricing</a>
                                     </Link>
                                 </li>
                                 <li className="nav-item" role="presentation">
@@ -280,9 +299,8 @@ const Header: FunctionComponent<Props> = props => {
                                 {!props.hideGetStartedButton && (
                                     <li className="header__nav-item nav-item" role="presentation">
                                         <Link href="/get-started" passHref={true}>
-                                            <a href="#none" className="nav-link">
-                                                Get started
-                                            </a>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                            <a className="nav-link">Get started</a>
                                         </Link>
                                     </li>
                                 )}
