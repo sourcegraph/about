@@ -94,6 +94,7 @@ const Header: FunctionComponent<Props> = props => {
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="/use-cases/code-reuse">Code Reuse</NavDropdown.Item>
                                 <NavDropdown.Item href="/use-cases/code-health">Code Health</NavDropdown.Item>
+                                <div className="dropdown-divider" />
                                 <NavDropdown.Item href="/case-studies">Case Studies</NavDropdown.Item>
                             </NavDropdown>
 
