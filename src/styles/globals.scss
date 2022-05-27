@@ -331,3 +331,9 @@ $positions: ('top', 'right', 'bottom', 'left');
     border-image-slice: 1 !important;
     border-image-source: linear-gradient(to right, $violet-mist, $blue-mist) !important;
 }
+
+/* ==================== Background ==================== */
+// TODO: After Tailwind migration this class can be deleted
+.bg-cover {
+    background-size: cover !important;
+}
