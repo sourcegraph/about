@@ -24,7 +24,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
                 src="https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8"
                 strategy="beforeInteractive"
             />
-            
+
             {/* Triblio "Analytics and Overlay Cards" */}
             <Script
                 id="triblio-a"
@@ -34,11 +34,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
             />
 
             {/* Google Analytics */}
-            <Script
-                id="track-ga"
-                data-cookieconsent="ignore"
-                strategy="beforeInteractive"
-            >
+            <Script id="track-ga" data-cookieconsent="ignore" strategy="beforeInteractive">
                 {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag() {
@@ -54,11 +50,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
             </Script>
 
             {/* Google Tag Manager */}
-            <Script
-                id="track-gtm"
-                data-cookieconsent="ignore"
-                strategy="beforeInteractive"
-            >
+            <Script id="track-gtm" data-cookieconsent="ignore" strategy="beforeInteractive">
                 {`
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -79,11 +71,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
             />
 
             {/* Drift */}
-            <Script
-                id="drift"
-                type="text/javascript"
-                strategy="afterInteractive"
-            >
+            <Script id="drift" type="text/javascript" strategy="afterInteractive">
                 {`
                     "use strict";
                     !function() {
