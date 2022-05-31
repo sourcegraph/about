@@ -1,7 +1,8 @@
 ---
 title: A 5x reduction in RAM usage with Zoekt memory optimizations
 description: Here’s how we went from using 1400KB of RAM per repo to just 310KB without affecting latency.
-author: Ryan Hitchman
+authors:
+  - name: Ryan Hitchman
 publishDate: 2021-08-19T00:00-07:00
 tags: [blog]
 slug: zoekt-memory-optimizations-for-sourcegraph-cloud

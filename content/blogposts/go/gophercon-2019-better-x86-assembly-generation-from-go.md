@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Better x86 Assembly Generation from Go"
 description: "This talk will equip you with the tools to safely write lightning fast assembly functions for Go. We will introduce Go assembly and the role it plays in the Go ecosystem, promote best practices for assembly development and demonstrate how code generation tools can manage complexity in large assembly projects."
-author: Dimitrios Arethas for the GopherCon 2019 Liveblog
+authors:
+  - name: Dimitrios Arethas for the GopherCon 2019 Liveblog
 publishDate: 2019-07-25T00:00-14:00
 tags: [
   gophercon

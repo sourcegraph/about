@@ -1,7 +1,9 @@
 ---
 title: 'Sourcegraph is accepting maintainership of Zoekt'
 description: 'Today, we’re announcing that Sourcegraph is accepting maintainership of Zoekt, the prominent open source code search engine, from its creator, Han-Wen Nienhuys. This commitment ties directly into our mission of bringing code search to every developer in the world.'
-author: Beyang Liu
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2021-11-09T00:00-07:00
 tags: [blog]
 slug: sourcegraph-accepting-zoekt-maintainership

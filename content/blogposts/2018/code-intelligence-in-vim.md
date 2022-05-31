@@ -1,6 +1,7 @@
 ---
 title: 'Code Intelligence in Vim'
-author: 'Isaac Snow'
+authors:
+  - name: Isaac Snow
 publishDate: 2018-09-19T00:00-07:00
 tags: [
   "blog"

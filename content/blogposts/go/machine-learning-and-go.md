@@ -1,6 +1,7 @@
 ---
 title: 'Machine Learning and Go'
-author: 'Francesc Campoy Flores (speaker)'
+authors:
+  - name: Francesc Campoy Flores (speaker)
 publishDate: 2017-11-06T17:40+01:00
 tags: [
   "dotGo"

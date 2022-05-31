@@ -1,7 +1,8 @@
 ---
 title: New GraphQL Sourcegraph extension
 description: New GraphQL Sourcegraph extension
-author: Chris Wendt
+authors:
+  - name: Chris Wendt
 publishDate: 2018-12-05T00:00-07:00
 tags: [
   blog

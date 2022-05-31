@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Apache Pulsar and the Legacy of Telegraphy"
 description: "The Wireless Telegraph was invited in the 1890s and quickly spread to be the dominant method of peer-to-peer communication throughout the 19th century. As a method of communication, the Telegraph allowed for a secure, Intercontinental, high-throughput and extensible message transmission. Toward the end of its popularity, Telegraphs were a broadcast protocol (one sender to many recipients), and their utility skyrocketed. The design considerations and engineering of the Telegraph are seen in contemporary messaging systems, especially Apache Pulsar. This talk covers the design considerations required to enabled globally distributed, low-latency applications to run on top of Apache Pulsar. From the storage model to replication and deployment, I explore each of these design decisions and how they contrast with the design of wireless telegraphy. The talk concludes with a demo of Apache Pulsar functions and Pulsar SQL, displaying the extensibility of Pulsar. Attendees can expect to learn a brief history of wireless telegraphy and a deep understanding of the design of Apache Pulsar."
-author: Sebastian Murphy
-authorUrl: https://www.linkedin.com/in/sebastian-murphy-882a6716
+authors:
+  - name: Sebastian Murphy
+    url: https://www.linkedin.com/in/sebastian-murphy-882a6716
 publishDate: 2019-09-13T00:00-13:30
 tags: [
   strange-loop

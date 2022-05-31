@@ -1,6 +1,7 @@
 ---
 title: "Sourcegraph 3.18: Multi-revision search, custom search pages, campaigns for GitLab, better C++, and more"
-author: Laureen Hudson
+authors:
+  - name: Laureen Hudson
 publishDate: 2020-07-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.18

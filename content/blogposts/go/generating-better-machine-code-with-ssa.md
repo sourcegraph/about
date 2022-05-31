@@ -1,6 +1,7 @@
 ---
 title: 'Generating Better Machine Code with SSA'
-author: 'Keith Randall'
+authors:
+  - name: Keith Randall
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

@@ -1,7 +1,9 @@
 ---
 title: "GopherCon 2019 - Dynamically instrumenting Go programs"
 description: "Ever wanted to ask arbitrary questions about your program while it is running with minimal impact on performance? In this talk, we go beyond static instrumentation and look at specific techniques for gathering information about your programs so that you can understand what your gophers are up to!"
-author: Beyang Liu for the GopherCon 2019 Liveblog
+authors:
+  - name: Beyang Liu for the GopherCon 2019 Liveblog
+    url: https://twitter.com/beyang
 publishDate: 2019-07-26T00:00-14:00
 tags: [
   gophercon

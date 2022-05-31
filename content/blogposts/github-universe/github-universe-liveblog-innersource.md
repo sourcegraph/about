@@ -1,6 +1,8 @@
 ---
 title: 'InnerSource and reaping the benefits of open source behind your firewall, a discussion at GitHub Universe'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2016-09-14T22:22-07:00
 tags: [
   "github-universe"

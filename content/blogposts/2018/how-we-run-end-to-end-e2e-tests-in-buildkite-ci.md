@@ -1,7 +1,9 @@
 ---
 title: 'How we run end-to-end tests in Buildkite CI'
 externalTitle: 'End to end tests in Buildkite CI'
-author: 'Felix Becker'
+authors:
+  - name: Felix Becker
+    url: https://github.com/felixfbecker
 publishDate: 2018-09-14T09:00-07:00
 description: Here’s how we run end-to-end tests, an important part of Sourcegraph’s testing infrastructure, in Buildkite CI. 
 externalDescription: Here’s how we run end-to-end tests, an important part of Sourcegraph’s testing infrastructure, in Buildkite CI. 

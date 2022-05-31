@@ -1,6 +1,7 @@
 ---
 title: 'Sourcegraph founders featured on Forbes “30 under 30” list'
-author: 'Rich Taylor'
+authors:
+  - name: Rich Taylor
 publishDate: 2017-01-06T00:00-07:00
 tags: [
   "blog"

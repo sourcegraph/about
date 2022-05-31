@@ -1,6 +1,7 @@
 ---
 title: 'Creating a Custom Serialization Format'
-author: 'Scott Mansfield'
+authors:
+  - name: Scott Mansfield
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

@@ -1,6 +1,7 @@
 ---
 title: 'Sourcegraph Secures $50 Million in Series C Funding for Universal Code Search'
-author: Sourcegraph
+authors:
+  - name: Sourcegraph
 publishDate: 2020-12-03T05:00
 tags: ['press']
 slug: sourcegraph-secures-series-c-sequoia

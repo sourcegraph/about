@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Minimalist Piano Forever"
 description: "French composer Erik Satie was the forefather of avant-garde music, the founder of a one-man occult sect, and the inventor of entirely new genres for his hauntingly repetitive, minimalist piano works. Personally, I could listen to his \"Gnossiennes\" forever, so I created a way to do so, using digital sheet music, markov chains, and browser-based midi to create a generative, unending Gnossienne. This talk will explore the strategies, algorithms, and libraries I used to go from 19th and 20th century piano music to generative audio and on-the-fly sheet music in the browser. It features forays into topics ranging from how to make computer generated music sound more natural, to Erik Satie's very peculiar life."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-10:20
 tags: [
   strange-loop

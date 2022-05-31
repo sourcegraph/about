@@ -1,7 +1,8 @@
 ---
 title: Code search turned code checker
-author: Rijnard van Tonder
-authorUrl: https://twitter.com/rvtond
+authors:
+  - name: Rijnard van Tonder
+    url: https://twitter.com/rvtond
 publishDate: 2020-10-19T14:00-07:00
 tags: [blog]
 slug: code-search-turned-code-checker

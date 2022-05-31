@@ -1,6 +1,7 @@
 ---
 title: "Custom search pages on Sourcegraph Cloud"
-author: Farhan Attamimi
+authors:
+  - name: Farhan Attamimi
 publishDate: 2020-07-20T05:00-07:00
 tags: [blog]
 slug: custom-search-pages

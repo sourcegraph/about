@@ -1,7 +1,8 @@
 ---
 title: Improving language support in 2019
 description: Improving language support in 2019
-author: Chris Wendt
+authors:
+  - name: Chris Wendt
 publishDate: 2019-01-15T00:00-06:00
 tags: [
   blog

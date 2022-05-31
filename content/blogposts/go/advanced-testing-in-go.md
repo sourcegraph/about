@@ -1,6 +1,7 @@
 ---
 title: 'Advanced Testing in Go'
-author: 'Mitchell Hashimoto'
+authors:
+  - name: Mitchell Hashimoto
 publishDate: 2017-07-14T00:00-07:00
 tags: [
   "gophercon"

@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Building Haskell Programs with Fused Effects"
 description: "Haskell is a purely functional programming language: by default, Haskell functions do not cause side effects such as system I/O, nondeterminism, or exception handling. As such, Haskell programs are generally expressed in terms of monad transformers, which provide the facility to compose different side effects into a single interface powerful enough to express the programmer's needs. The monad transformer library, mtl, is mature and powerful, but complicates and in some cases constrains the construction and generalization of user-specified monads."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-11:20
 tags: [
   strange-loop

@@ -1,6 +1,7 @@
 ---
 title: 'Fallacies Of Distributed Gomputing'
-author: 'Michael Hausenblas'
+authors:
+  - name: Michael Hausenblas
 publishDate: 2017-07-14T14:55-07:00
 tags: [
   "gophercon"

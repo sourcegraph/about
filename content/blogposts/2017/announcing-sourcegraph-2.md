@@ -1,6 +1,8 @@
 ---
 title: 'Announcing Sourcegraph 2.0'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack
+    url: https://twitter.com/sqs
 publishDate: 2017-09-20T00:00-07:00
 tags: [
   "blog"

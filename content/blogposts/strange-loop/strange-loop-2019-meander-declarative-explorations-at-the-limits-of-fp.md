@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Meander: Declarative Explorations at the Limits of FP"
 description: "As functional programmers we love to pay lip service to declarative data transformation. Yet this allegiance rarely plays out in our actual code. Data transforming combinators (map, filter, reduce, etc) offer significant expressive power over manual loops and mutation, but when combined in complex ways, lose their declarative power. Lost in a web of nested pipelines, the shape of our data becomes obscured; our code becomes hard to follow. We wind up, yet again, needing to play computer in our heads to understand what our code is doing."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-15:30
 tags: [
   strange-loop

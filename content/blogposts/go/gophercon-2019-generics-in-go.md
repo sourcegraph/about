@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Generics in Go"
 description: "Advantages and requirements for generics in Go."
-author: Dimitrios Arethas for the GopherCon 2019 Liveblog
+authors:
+  - name: Dimitrios Arethas for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-09:40
 tags: [
   gophercon

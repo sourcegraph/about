@@ -1,6 +1,7 @@
 ---
 title: 'gRPC in Production'
-author: 'Alan Shreve'
+authors:
+  - name: Alan Shreve
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

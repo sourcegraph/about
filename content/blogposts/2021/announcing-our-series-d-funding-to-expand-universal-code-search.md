@@ -1,7 +1,8 @@
 ---
 title: Announcing Sourcegraph's Series D
 description: We raised a $125M Series D to bring really great code search to every developer in the world. With this new funding, we’re prioritizing innovations that will push the frontier of developer experience.
-author: Sourcegraph
+authors:
+  - name: Sourcegraph
 publishDate: 2021-07-13T00:00-07:00
 tags: [blog, product, batch changes]
 slug: announcing-sourcegraphs-series-d-round

@@ -1,6 +1,8 @@
 ---
 title: 'GopherCon 2018 - Allocator Wrestling'
-author: 'Beyang Liu for the GopherCon Liveblog'
+authors:
+  - name: Beyang Liu for the GopherCon Liveblog
+    url: https://twitter.com/beyang
 publishDate: 2018-08-28T00:00-06:00
 tags: [
   "gophercon"
