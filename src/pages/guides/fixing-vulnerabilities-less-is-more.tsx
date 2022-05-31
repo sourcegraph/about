@@ -9,6 +9,7 @@ export const Guide: FunctionComponent = () => (
             description:
                 'When finding security vulnerabilities, simplicity is key. Learn how to decrease recovery time with a single search by improving tooling and processes.',
         }}
+        className="navbar-white"
     >
         <GatedResourceLayout
             title="Find and fix security vulnerabilities in the pursuit of healthy code"
@@ -22,7 +23,8 @@ export const Guide: FunctionComponent = () => (
                     <p>
                         When your company first got word of Log4j and the Log4Shell vulnerability, did you have the
                         tools in place to immediately fix it across every line of code in your organization? When the
-                        next vulnerability of that scale emerges (and it’s <i>when</i>, not <i>if</i> ), will you be ready?
+                        next vulnerability of that scale emerges (and it’s <i>when</i>, not <i>if</i> ), will you be
+                        ready?
                     </p>
                     <p>
                         Log4j made it clear that organizations need a new approach to prepare for the next inevitable

@@ -125,13 +125,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                         </>
                     )}
 
-                    <div
-                        className={classNames(
-                            'col-12',
-                            customer && isWebinarPg && 'col-lg-8',
-                            customer && !isWebinarPg && 'col-lg-10'
-                        )}
-                    >
+                    <div className={classNames('col-12', customer && 'col-lg-8')}>
                         <h1 className="display-2 font-weight-bold mb-4 mb-md-2">{title}</h1>
                         {subtitle && <h3 className="font-weight-normal max-w-800">{subtitle}</h3>}
                     </div>
