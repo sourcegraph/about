@@ -7,7 +7,6 @@ publishDate: 2020-11-13T10:00-08:00
 tags: [blog]
 published: true
 canonical: https://docs.sourcegraph.com/adopt/code_search_in_monorepos
-style: short-inline-title
 ---
 
-We asked developers with monorepos why they use code search&mdash;then compiled the most convincing reasons.
+We asked developers with monorepos why they use code search&mdash;then compiled the [most convincing reasons](https://docs.sourcegraph.com/adopt/code_search_in_monorepos).
