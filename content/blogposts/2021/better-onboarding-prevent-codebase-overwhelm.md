@@ -6,7 +6,7 @@ externalDescription: 'Worried you’re onboarding software engineers to an overw
 authors:
   - name: Beyang Liu
     url: https://twitter.com/beyang
-  - Patricia No
+  - name: Patricia No
 publishDate: 2022-03-09T18:00+02:00
 tags: [blog, remote]
 slug: better-onboarding-how-to-prevent-codebase-overwhelm
