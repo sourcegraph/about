@@ -45,12 +45,11 @@ export const BlogListItem: FunctionComponent<PostIndexItem> = ({
                             {index === frontmatter.authors!.length - 1 ? ' ' : ', '}
                         </span>
                     ))}
-
-                    {frontmatter.publishDate && (
-                        <p className="text-align-center text-secondary mb-0">
-                            <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
-                        </p>
-                    )}
+                </p>
+            )}
+            {frontmatter.publishDate && (
+                <p className="text-align-center text-secondary mb-0">
+                    <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
                 </p>
             )}
         </header>

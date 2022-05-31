@@ -54,14 +54,13 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
                             {index === post.frontmatter.authors!.length - 1 ? ' ' : ', '}
                         </span>
                     ))}
-
-                    {post.frontmatter.publishDate && (
-                        <p className="text-align-center text-secondary mb-0">
-                            <time dateTime={post.frontmatter.publishDate}>
-                                {formatDate(post.frontmatter.publishDate)}
-                            </time>
-                        </p>
-                    )}
+                </p>
+            )}
+            {post.frontmatter.publishDate && (
+                <p className="text-align-center text-secondary mb-0">
+                    <time dateTime={post.frontmatter.publishDate}>
+                        {formatDate(post.frontmatter.publishDate)}
+                    </time>
                 </p>
             )}
         </header>
