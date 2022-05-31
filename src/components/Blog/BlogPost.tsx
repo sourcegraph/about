@@ -58,9 +58,7 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
             )}
             {post.frontmatter.publishDate && (
                 <p className="text-align-center text-secondary mb-0">
-                    <time dateTime={post.frontmatter.publishDate}>
-                        {formatDate(post.frontmatter.publishDate)}
-                    </time>
+                    <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
                 </p>
             )}
         </header>
