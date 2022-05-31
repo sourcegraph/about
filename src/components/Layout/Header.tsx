@@ -83,6 +83,7 @@ const Header: FunctionComponent<Props> = props => {
                                     Dev Tool Time
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="/podcast/">Sourcegraph Podcast</NavDropdown.Item>
+                                <NavDropdown.Item href="/case-studies">Case Studies</NavDropdown.Item>
                             </NavDropdown>
 
                             <NavDropdown id="useCaseDropdown" title="Use Cases">
@@ -94,8 +95,6 @@ const Header: FunctionComponent<Props> = props => {
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="/use-cases/code-reuse">Code Reuse</NavDropdown.Item>
                                 <NavDropdown.Item href="/use-cases/code-health">Code Health</NavDropdown.Item>
-                                <div className="dropdown-divider" />
-                                <NavDropdown.Item href="/case-studies">Case Studies</NavDropdown.Item>
                             </NavDropdown>
 
                             <Nav.Link href="/pricing">Pricing</Nav.Link>
@@ -216,7 +215,10 @@ const Header: FunctionComponent<Props> = props => {
                                             </a>
                                         </li>
                                         <li className="nav-link" role="presentation">
-                                            <Link href="/podcast">Podcast</Link>
+                                            <Link href="/podcast">Sourcegraph Podcast</Link>
+                                        </li>
+                                        <li className="nav-link" role="presentation">
+                                            <Link href="/case-studies">Case Studies</Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -257,9 +259,6 @@ const Header: FunctionComponent<Props> = props => {
                                         </li>
                                         <li className="nav-link" role="presentation">
                                             <Link href="/use-cases/code-health">Code Health</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/case-studies">Case Studies</Link>
                                         </li>
                                     </ul>
                                 </li>
