@@ -56,13 +56,6 @@
     }
 }
 
-.case-study .author-bio {
-    &__img {
-        // TODO: On Tailwind migration, trade out this style for utility class: "border border-3 border-sky-400"
-        border: 3px solid #00a1c7;
-    }
-}
-
 .lyft-case-study {
     .case-studies {
         &__logo {
