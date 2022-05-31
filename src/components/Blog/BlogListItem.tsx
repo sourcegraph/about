@@ -29,27 +29,26 @@ export const BlogListItem: FunctionComponent<PostIndexItem> = ({
             {frontmatter.authors?.length && (
                 <p className="text-align-center text-secondary mb-0">
                     {frontmatter.authors.map((a, index) => (
-                            <span key={a.name}>
-                                {a.url ? (
-                                    a.url.includes('http') ? (
-                                        <a href={a.url} target="_blank" rel="nofollow noreferrer">
-                                            {a.name}
-                                        </a>
-                                    ) : (
-                                        <Link href={a.url}>{a.name}</Link>
-                                    )
+                        <span key={a.name}>
+                            {a.url ? (
+                                a.url.includes('http') ? (
+                                    <a href={a.url} target="_blank" rel="nofollow noreferrer">
+                                        {a.name}
+                                    </a>
                                 ) : (
-                                    a.name
-                                )}
-                                {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
-                                {index === frontmatter.authors!.length - 1 ? ' ' : ', '}
-                            </span>
-                        )
-                    )}
+                                    <Link href={a.url}>{a.name}</Link>
+                                )
+                            ) : (
+                                a.name
+                            )}
+                            {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
+                            {index === frontmatter.authors!.length - 1 ? ' ' : ', '}
+                        </span>
+                    ))}
 
                     {frontmatter.publishDate && (
                         <p className="text-align-center text-secondary mb-0">
-                        <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
+                            <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
                         </p>
                     )}
                 </p>
