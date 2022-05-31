@@ -243,7 +243,7 @@ const Header: FunctionComponent<Props> = props => {
                                         }`}
                                     >
                                         <li className="nav-link" role="presentation">
-                                            <Link href="/use-cases/">All Use Cases</Link>
+                                            <Link href="/use-cases">All Use Cases</Link>
                                         </li>
                                         <li className="nav-link" role="presentation">
                                             <Link href="/use-cases/code-security">Code Security</Link>
