@@ -3,6 +3,8 @@ import { FunctionComponent, ReactFragment } from 'react'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
+import { buttonStyle, buttonLocation } from '@data'
+
 interface Logo {
     src: string
     alt: string
@@ -113,9 +115,14 @@ export const BlockquoteWithBorder: FunctionComponent<{
                     <ArrowRightIcon className="icon-inline ml-1" />
                 </a>
             ) : (
-                <Link href={link} passHref={true}>
+                <Link href={link.href} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className="d-flex justify-content-center mt-3">
+                    <a
+                        className="d-flex justify-content-center mt-3"
+                        data-button-style={buttonStyle.textWithArrow}
+                        data-button-location={buttonLocation.body}
+                        data-button-type="cta"
+                    >
                         <p className="font-weight-bold">{link.text}</p>
                         <ArrowRightIcon className="icon-inline ml-1" />
                     </a>
