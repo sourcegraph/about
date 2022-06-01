@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect } from 'react'
+import { FunctionComponent, ReactFragment, useEffect } from 'react'
 
 import classNames from 'classnames'
 import { startCase } from 'lodash'
@@ -34,7 +34,7 @@ interface Features {
     video: Video
 }
 
-export const features: IFeatures[] = [
+export const features: Features[] = [
     {
         productFeature: 'code search',
         title: 'Find what you need: any code host, language, or repository',
@@ -108,7 +108,7 @@ export const features: IFeatures[] = [
 export const FeatureWalkthrough: FunctionComponent = () => {
     useEffect(() => {
         const videos = features.map(
-            (vid, index): IVideoElement => ({
+            (vid, index): VideoElement => ({
                 el: document.querySelector(`.video-${index}`),
                 paused: true,
             })
