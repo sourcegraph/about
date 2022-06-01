@@ -25,23 +25,10 @@ export const Report: FunctionComponent = () => (
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <h3 className="font-weight-normal pb-5">
-                        Get complimentary access to 2022 Gartner® Cool Vendors™ report to learn how we believe
-                        Sourcegraph and other innovative tools help engineers and engineering leaders boost developer
-                        productivity while mitigating security risks.
+                        Get complimentary access to the 2022 Gartner® Cool Vendors™ report.
                     </h3>
                     <p className="pb-2">
-                        The GARTNER COOL VENDOR badge and Gartner are registered trademarks and service mark of Gartner,
-                        Inc. and/or its affiliates and is used herein with permission. All rights reserved. Gartner does
-                        not endorse any vendor, product or service depicted in its research publications and does not
-                        advise technology users to select only those vendors with the highest ratings or other
-                        designation. Gartner research publications consist of the opinions of Gartner’s Research &
-                        Advisory organization and should not be construed as statements of fact. Gartner disclaims all
-                        warranties, expressed or implied, with respect to this research, including any warranties of
-                        merchantability or fitness for a particular purpose.
-                    </p>
-                    <p>
-                        Gartner, Cool Vendors in Software Engineering: Enhancing Developer Productivity, Cool Vendors in
-                        Software Engineering: Enhancing Developer Productivity, 16th May 2022.
+                        Learn how we believe Sourcegraph and other innovative tools help engineers and engineering leaders boost developer productivity while mitigating security risks.
                     </p>
                 </section>
             }
