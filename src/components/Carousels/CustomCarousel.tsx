@@ -54,21 +54,17 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 }
             >
                 {props.showHeadlinesOnMobile && (
-                    <ul className="d-block d-lg-none mb-0 h-md-100 h-sm-200 h-200">
+                    <div className="d-block d-lg-none mb-0 h-md-100 h-sm-200 h-200">
                         {carouselItems.map(item => (
-                            <li
-                                className={
-                                    item === carouselHook.carouselItems.currentItem
-                                        ? 'custom-carousel-item active'
-                                        : 'custom-carousel-item'
-                                }
+                            <p
+                                className={classNames('custom-carousel-item', item === carouselHook.carouselItems.currentItem && 'active')}
                                 key={item.buttonLabel}
                                 role="presentation"
                             >
                                 {item.buttonLabel}
-                            </li>
+                            </p>
                         ))}
-                    </ul>
+                    </div>
                 )}
                 <div
                     className={
@@ -82,33 +78,23 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
-                    <ul className="ml-lg-4 mb-0">
+                    <div className="ml-lg-6 mb-0">
                         {carouselItems.map((item, index) => (
-                            <li
-                                className={
-                                    item === carouselHook.carouselItems.currentItem
-                                        ? 'custom-carousel-item active'
-                                        : 'custom-carousel-item'
-                                }
+                            <p
+                                className={classNames('custom-carousel-item', item === carouselHook.carouselItems.currentItem && 'active')}
                                 key={item.buttonLabel}
                                 onClick={() => carouselHook.moveCarousel(index)}
                                 onKeyDown={() => carouselHook.moveCarousel(index)}
                                 role="presentation"
                             >
                                 {item.buttonLabel}
-                            </li>
+                            </p>
                         ))}
-                    </ul>
+                    </div>
                     <ArrowDownIcon
                         className="ml-lg-6 mt-4 d-lg-flex d-md-flex d-none"
                         onClick={() => carouselHook.moveCarousel()}
-                        color={
-                            carouselHook.autoAdvance && carouselHook.isAdvancing
-                                ? '#000'
-                                : carouselHook.autoAdvance && !carouselHook.isAdvancing
-                                ? '#D0D0D0'
-                                : '#000'
-                        }
+                        color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                 </div>
                 <div
@@ -154,13 +140,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     <ArrowRightIcon
                         className="ml-4"
                         onClick={() => carouselHook.moveCarousel()}
-                        color={
-                            carouselHook.autoAdvance && carouselHook.isAdvancing
-                                ? '#000'
-                                : carouselHook.autoAdvance && !carouselHook.isAdvancing
-                                ? '#D0D0D0'
-                                : '#000'
-                        }
+                        color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                 </div>
             </div>
