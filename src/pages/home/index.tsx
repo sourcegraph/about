@@ -1,8 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, IntegrationsSection, SelfHostedSection } from '@components'
+import { ContentSection, FeatureWalkthrough, Layout, IntegrationsSection, SelfHostedSection } from '@components'
 
-import Features from './_Features'
 import Hero from './_Hero'
 import UseCases from './_UseCases'
 
@@ -19,7 +18,9 @@ const Home: FunctionComponent = () => (
 
         <UseCases />
 
-        <Features />
+        <ContentSection color="white" className="py-8 pb-7">
+            <FeatureWalkthrough />
+        </ContentSection>
 
         <IntegrationsSection />
 
