@@ -6,7 +6,7 @@ import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
 import { useCarousel } from '@hooks'
 
-import { TemplateCodeBlock } from './TemplateCodeBlock'
+import { TemplateCodeBlock } from '../TemplateCodeBlock'
 
 interface TabCarouselProps {
     items: Template[]
