@@ -1,8 +1,9 @@
 ---
 title: "Why are code reviews still so hard?"
-description: "Code reviews are part of the job, so why are they still so tedious? Here's how to make the process better." 
-author: Florian Rappl
-authorUrl: https://twitter.com/florianrappl?lang=en
+description: "Code reviews are part of the job, so why are they still so tedious? Here's how to make the process better."
+authors:
+  - name: Florian Rappl
+    url: https://twitter.com/florianrappl?lang=en
 publishDate: 2021-06-28T10:00-07:00
 tags: [blog, code review]
 slug: why-code-reviews-are-still-hard
