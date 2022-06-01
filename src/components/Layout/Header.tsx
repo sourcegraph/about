@@ -1,10 +1,13 @@
 import { FunctionComponent, useState } from 'react'
 
+import { camelCase } from 'lodash'
 import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import Link from 'next/link'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+
+import { buttonStyle, buttonLocation } from '@data'
 
 interface Props {
     isHome?: boolean
@@ -24,11 +27,109 @@ const onRightClickLogo = (event: React.MouseEvent): void => {
     }
 }
 
+const navLinks = [
+    {
+        section: 'Product',
+        items: [
+            {
+                title: 'Code Search',
+                href: '/code-search',
+            },
+            {
+                title: 'Batch Changes',
+                href: '/batch-changes',
+            },
+            {
+                title: 'Code Insights',
+                href: '/code-insights',
+            },
+            {
+                title: 'Code Intelligence',
+                href: 'https://docs.sourcegraph.com/code_intelligence',
+            },
+        ],
+    },
+    {
+        section: 'Resources',
+        items: [
+            {
+                title: 'Blog',
+                href: '/blog',
+            },
+            {
+                title: 'Learn',
+                href: 'https://learn.sourcegraph.com/',
+            },
+            {
+                title: 'Dev Tool Time',
+                href: 'https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF',
+            },
+            {
+                title: 'Sourcegraph Podcast',
+                href: '/podcast',
+            },
+            {
+                title: 'Case Studies',
+                href: '/case-studies',
+            },
+        ],
+    },
+    {
+        section: 'Use Cases',
+        items: [
+            {
+                title: 'All Use Cases',
+                href: '/use-cases',
+            },
+            {
+                title: 'Code Security',
+                href: '/use-cases/code-security',
+            },
+            {
+                title: 'Developer Onboarding',
+                href: '/use-cases/onboarding',
+            },
+            {
+                title: 'Incident Response',
+                href: '/use-cases/incident-response',
+            },
+            {
+                title: 'Code Reuse',
+                href: '/use-cases/code-reuse',
+            },
+            {
+                title: 'Code Health',
+                href: '/use-cases/code-health',
+            },
+        ],
+    },
+    {
+        section: 'Pricing',
+        items: [
+            {
+                title: 'Pricing',
+                href: '/pricing',
+            },
+        ],
+    },
+    {
+        section: 'Docs',
+        items: [
+            {
+                title: 'Docs',
+                href: 'https://docs.sourcegraph.com',
+            },
+        ],
+    },
+]
+
 const Header: FunctionComponent<Props> = props => {
+    const initialMobileMenuState = navLinks.reduce(
+        (accumulator, navLink) => ({ ...accumulator, [camelCase(navLink.section)]: false }),
+        {}
+    )
     const [isOpen, setIsOpen] = useState(false)
-    const [productMenuOpen, setProductMenuOpen] = useState(false)
-    const [resourcesMenuOpen, setResourcesMenuOpen] = useState(false)
-    const [useCaseMenuOpen, setuseCaseMenuOpen] = useState(false)
+    const [openMobileMenu, setOpenMobileMenu] = useState<Record<string, boolean>>(initialMobileMenuState)
 
     return (
         <nav className={`header navbar py-3 ${props.className || 'navbar-light'}`}>
@@ -53,55 +154,49 @@ const Header: FunctionComponent<Props> = props => {
                         </button>
 
                         <Nav className="left-nav me-auto ml-md-2">
-                            <NavDropdown id="productDropdown" title="Product">
-                                <NavDropdown.Item href="/code-search">Code Search</NavDropdown.Item>
-                                <NavDropdown.Item href="/batch-changes">Batch Changes</NavDropdown.Item>
-                                <NavDropdown.Item href="/code-insights">Code Insights</NavDropdown.Item>
-                                <NavDropdown.Item
-                                    href="https://docs.sourcegraph.com/code_intelligence"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Code Intelligence
-                                </NavDropdown.Item>
-                            </NavDropdown>
-
-                            <NavDropdown id="resourcesDropdown" title="Resources">
-                                <NavDropdown.Item href="/blog">Blog</NavDropdown.Item>
-                                <NavDropdown.Item
-                                    href="https://learn.sourcegraph.com/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Learn
-                                </NavDropdown.Item>
-                                <NavDropdown.Item
-                                    href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Dev Tool Time
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="/podcast/">Sourcegraph Podcast</NavDropdown.Item>
-                                <NavDropdown.Item href="/case-studies">Case Studies</NavDropdown.Item>
-                            </NavDropdown>
-
-                            <NavDropdown id="useCaseDropdown" title="Use Cases">
-                                <NavDropdown.Item href="/use-cases/">All Use Cases</NavDropdown.Item>
-                                <NavDropdown.Item href="/use-cases/code-security">Code Security</NavDropdown.Item>
-                                <NavDropdown.Item href="/use-cases/onboarding">Developer Onboarding</NavDropdown.Item>
-                                <NavDropdown.Item href="/use-cases/incident-response">
-                                    Incident Response
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="/use-cases/code-reuse">Code Reuse</NavDropdown.Item>
-                                <NavDropdown.Item href="/use-cases/code-health">Code Health</NavDropdown.Item>
-                            </NavDropdown>
-
-                            <Nav.Link href="/pricing">Pricing</Nav.Link>
-
-                            <Nav.Link href="https://docs.sourcegraph.com" target="_blank" rel="noreferrer">
-                                Docs
-                            </Nav.Link>
+                            {navLinks.map(navLink =>
+                                navLink.items.length === 1 ? (
+                                    navLink.items.map(item =>
+                                        item.href.includes('http') ? (
+                                            <Nav.Link
+                                                key={camelCase(item.title)}
+                                                href={item.href}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                {item.title}
+                                            </Nav.Link>
+                                        ) : (
+                                            <Nav.Link key={camelCase(item.title)} href={item.href}>
+                                                {item.title}
+                                            </Nav.Link>
+                                        )
+                                    )
+                                ) : (
+                                    <NavDropdown
+                                        key={navLink.section}
+                                        id={camelCase(navLink.section)}
+                                        title={navLink.section}
+                                    >
+                                        {navLink.items.map(item =>
+                                            item.href.includes('http') ? (
+                                                <NavDropdown.Item
+                                                    key={camelCase(item.title)}
+                                                    href={item.href}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    {item.title}
+                                                </NavDropdown.Item>
+                                            ) : (
+                                                <NavDropdown.Item key={camelCase(item.title)} href={item.href}>
+                                                    {item.title}
+                                                </NavDropdown.Item>
+                                            )
+                                        )}
+                                    </NavDropdown>
+                                )
+                            )}
                         </Nav>
 
                         <Nav className="right-nav justify-content-lg-end">
@@ -110,6 +205,9 @@ const Header: FunctionComponent<Props> = props => {
                                     className="btn btn-simple px-2 py-2 font-weight-bolder"
                                     href="https://sourcegraph.com/search"
                                     title="Search code"
+                                    data-button-style={buttonStyle.text}
+                                    data-button-location={buttonLocation.nav}
+                                    data-button-type="cta"
                                 >
                                     Search code
                                 </Nav.Link>
@@ -119,6 +217,9 @@ const Header: FunctionComponent<Props> = props => {
                                 className="btn btn-outline-primary ml-3 px-5 py-2 font-weight-bolder"
                                 href="/demo"
                                 title="Request a demo"
+                                data-button-style={buttonStyle.outline}
+                                data-button-location={buttonLocation.nav}
+                                data-button-type="cta"
                             >
                                 Request a demo
                             </Nav.Link>
@@ -128,8 +229,11 @@ const Header: FunctionComponent<Props> = props => {
                                     className="btn btn-primary ml-3 px-5 py-2 font-weight-bolder"
                                     href="/get-started"
                                     title="Get started"
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.nav}
+                                    data-button-type="cta"
                                 >
-                                    Get started
+                                    Get Started
                                 </Nav.Link>
                             )}
                         </Nav>
@@ -137,170 +241,133 @@ const Header: FunctionComponent<Props> = props => {
                         {/* Mobile Navbar */}
                         <div id="mobile-navbar" className={`collapse navbar-collapse ${isOpen ? 'show' : 'hide'}`}>
                             <ul className="nav navbar-nav">
-                                <li className="header__nav-item nav-item" role="presentation">
-                                    <span
-                                        role="button"
-                                        className="nav-link navbar-toggle collapsed"
-                                        data-toggle="collapse"
-                                        data-target="#product-menu"
-                                        aria-expanded="false"
-                                        onClick={() => setProductMenuOpen(!productMenuOpen)}
-                                        onKeyDown={() => setProductMenuOpen(!productMenuOpen)}
-                                        tabIndex={0}
-                                    >
-                                        Product
-                                        <ChevronDownIcon className="icon-inline ml-1" />
-                                    </span>
-                                    <ul
-                                        id="product-menu"
-                                        className={`small-menu collapse navbar-collapse ${
-                                            productMenuOpen ? 'show' : 'hide'
-                                        }`}
-                                    >
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/code-search">Code Search</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/batch-changes">Batch Changes</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/code-insights">Code Insights</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <a
-                                                href="https://docs.sourcegraph.com/code_intelligence"
-                                                target="_blank"
-                                                rel="noreferrer"
+                                {navLinks.map(navLink =>
+                                    navLink.items.length === 1 ? (
+                                        navLink.items.map(item =>
+                                            item.href.includes('http') ? (
+                                                <a
+                                                    key={camelCase(item.title)}
+                                                    className="nav-link"
+                                                    href={item.href}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    {item.title}
+                                                </a>
+                                            ) : (
+                                                <Link key={camelCase(item.title)} href={item.href}>
+                                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                                    <a className="nav-link">{item.title}</a>
+                                                </Link>
+                                            )
+                                        )
+                                    ) : (
+                                        <li className="align-items-center nav-item" role="presentation">
+                                            <span
+                                                role="button"
+                                                className="nav-link navbar-toggle collapsed"
+                                                data-toggle="collapse"
+                                                data-target={'#' + navLink.section.split(' ').join('-').toLowerCase()}
+                                                aria-expanded="false"
+                                                onClick={() =>
+                                                    setOpenMobileMenu({
+                                                        ...openMobileMenu,
+                                                        [camelCase(navLink.section)]:
+                                                            !openMobileMenu[camelCase(navLink.section)],
+                                                    })
+                                                }
+                                                onKeyDown={() =>
+                                                    setOpenMobileMenu({
+                                                        ...openMobileMenu,
+                                                        [camelCase(navLink.section)]:
+                                                            !openMobileMenu[camelCase(navLink.section)],
+                                                    })
+                                                }
+                                                tabIndex={0}
                                             >
-                                                Code Intelligence
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <span
-                                        role="button"
-                                        className="nav-link navbar-toggle collapsed"
-                                        data-toggle="collapse"
-                                        data-target="#resources-menu"
-                                        aria-expanded="false"
-                                        onClick={() => setResourcesMenuOpen(!resourcesMenuOpen)}
-                                        onKeyDown={() => setResourcesMenuOpen(!resourcesMenuOpen)}
-                                        tabIndex={0}
-                                    >
-                                        Resources
-                                        <ChevronDownIcon className="icon-inline ml-1" />
-                                    </span>
-                                    <ul
-                                        id="resources-menu"
-                                        className={`small-menu collapse navbar-collapse ${
-                                            resourcesMenuOpen ? 'show' : 'hide'
-                                        }`}
-                                    >
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/blog">Blog</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <a href="https://learn.sourcegraph.com/" target="_blank" rel="noreferrer">
-                                                Learn
-                                            </a>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <a
-                                                href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_iDEP4EicZ8972RgyccCRGF"
-                                                target="_blank"
-                                                rel="noreferrer"
+                                                {navLink.section}
+                                                <ChevronDownIcon className="icon-inline ml-1" />
+                                            </span>
+                                            <ul
+                                                id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}
+                                                className={`small-menu collapse navbar-collapse ${
+                                                    openMobileMenu[camelCase(navLink.section)] ? 'show' : 'hide'
+                                                }`}
                                             >
-                                                Dev Tool Time
-                                            </a>
+                                                {navLink.items.map(item =>
+                                                    item.href.includes('http') ? (
+                                                        <li
+                                                            key={camelCase(item.title)}
+                                                            className="nav-link"
+                                                            role="presentation"
+                                                        >
+                                                            <a href={item.href} target="_blank" rel="noreferrer">
+                                                                {item.title}
+                                                            </a>
+                                                        </li>
+                                                    ) : (
+                                                        <li
+                                                            key={camelCase(item.title)}
+                                                            className="nav-link"
+                                                            role="presentation"
+                                                        >
+                                                            <Link href={item.href}>{item.title}</Link>
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
                                         </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/podcast">Sourcegraph Podcast</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/case-studies">Case Studies</Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <span
-                                        role="button"
-                                        className="nav-link navbar-toggle collapsed"
-                                        data-toggle="collapse"
-                                        data-target="#customer-menu"
-                                        aria-expanded="false"
-                                        onClick={() => setuseCaseMenuOpen(!useCaseMenuOpen)}
-                                        onKeyDown={() => setuseCaseMenuOpen(!useCaseMenuOpen)}
-                                        tabIndex={0}
-                                    >
-                                        Use Cases
-                                        <ChevronDownIcon className="icon-inline ml-1" />
-                                    </span>
-                                    <ul
-                                        id="customer-menu"
-                                        className={`small-menu collapse navbar-collapse ${
-                                            useCaseMenuOpen ? 'show' : 'hide'
-                                        }`}
-                                    >
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/use-cases">All Use Cases</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/use-cases/code-security">Code Security</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/use-cases/onboarding">Developer Onboarding</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/use-cases/incident-response">Incident Response</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/use-cases/code-reuse">Code Reuse</Link>
-                                        </li>
-                                        <li className="nav-link" role="presentation">
-                                            <Link href="/use-cases/code-health">Code Health</Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <Link href="/pricing" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a className="nav-link">Pricing</a>
-                                    </Link>
-                                </li>
+                                    )
+                                )}
                                 <li className="nav-item" role="presentation">
                                     <a
                                         className="nav-link"
-                                        href="https://docs.sourcegraph.com"
-                                        target="_blank"
-                                        rel="noreferrer"
+                                        href="https://sourcegraph.com/sign-in"
+                                        data-button-style={buttonStyle.text}
+                                        data-button-location={buttonLocation.nav}
+                                        data-button-type="cta"
                                     >
-                                        Docs
-                                    </a>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <a className="nav-link" href="https://sourcegraph.com/sign-in">
                                         Sign in
                                     </a>
                                 </li>
                                 {!props.hideGetStartedButton && (
-                                    <li className="header__nav-item nav-item" role="presentation">
-                                        <a className="nav-link" href="https://sourcegraph.com/search">
+                                    <li className="align-items-center nav-item" role="presentation">
+                                        <a
+                                            className="nav-link"
+                                            href="https://sourcegraph.com/search"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.nav}
+                                            data-button-type="cta"
+                                        >
                                             Search code
                                         </a>
                                     </li>
                                 )}
-                                <li className="header__nav-item nav-item" role="presentation">
+                                <li className="align-items-center nav-item" role="presentation">
                                     <Link href="/demo" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a className="nav-link">Request a demo</a>
+                                        <a
+                                            className="nav-link"
+                                            data-button-style={buttonStyle.text}
+                                            data-button-location={buttonLocation.nav}
+                                            data-button-type="cta"
+                                        >
+                                            Request a demo
+                                        </a>
                                     </Link>
                                 </li>
                                 {!props.hideGetStartedButton && (
-                                    <li className="header__nav-item nav-item" role="presentation">
+                                    <li className="align-items-center nav-item" role="presentation">
                                         <Link href="/get-started" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                            <a className="nav-link">Get started</a>
+                                            <a
+                                                className="nav-link"
+                                                data-button-style={buttonStyle.text}
+                                                data-button-location={buttonLocation.nav}
+                                                data-button-type="cta"
+                                            >
+                                                Get started
+                                            </a>
                                         </Link>
                                     </li>
                                 )}
