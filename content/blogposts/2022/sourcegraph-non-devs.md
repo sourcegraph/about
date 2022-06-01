@@ -1,7 +1,9 @@
 ---
 title: 'How Sourcegraph can save non-developers time and effort every day'
 description: "Sourcegraph isn't just for software developers. Learn how product managers and analytics/business operations teammates use Sourcegraph as a powerful timesaver and cheat sheet that saves them 20-60 minutes multiple times per week. Everyone needs to navigate code and Sourcegraph makes codebases accessible to all."
-author: Eric Brody-Moore, Joel Kwartler
+authors:
+  - name: Eric Brody-Moore
+  - name: Joel Kwartler
 publishDate: 2022-02-17T00:00-07:00
 tags: [blog]
 slug: sourcegraph-for-non-devs
