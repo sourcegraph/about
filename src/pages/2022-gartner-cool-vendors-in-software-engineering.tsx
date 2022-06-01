@@ -16,7 +16,7 @@ export const Report: FunctionComponent = () => (
                 name: 'Gartner',
                 logo: '/external-logos/gartner-cool-vendor-2022.svg',
             }}
-            formLabel="Download the report"
+            formLabel="Access the report"
             form={{
                 formId: '4f5b127f-4d42-490a-a970-686574d0e542',
                 onFormSubmitted: () =>
