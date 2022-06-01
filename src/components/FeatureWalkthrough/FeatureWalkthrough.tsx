@@ -15,8 +15,24 @@ import codeIntelWebm from './animations/code-intel.webm'
 import codeSearchMp4 from './animations/code-search.mp4'
 import codeSearchWebm from './animations/code-search.webm'
 
-import { IFeatures } from './featureCopy'
-import { IVideoElement } from './video'
+interface Video {
+    mp4: string
+    webm: string
+}
+
+interface VideoElement {
+    el: HTMLVideoElement | null
+    paused: boolean
+}
+
+interface Features {
+    productFeature: string
+    title: string
+    description: string | ReactFragment
+    details: string[]
+    ctaLink: string
+    video: Video
+}
 
 export const features: IFeatures[] = [
     {
