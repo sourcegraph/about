@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - A Stitch in Time - The Future of OSS Sustainability"
 description: "Open Source Software (OSS) has created enormous value for individuals and businesses. However the creators of that software often capture a tiny fraction of that value, and can end up tired, burnt out, or quitting the project entirely. In the past few years, new fears have arisen that cloud providers will 'take' open source software and resell it, leading some companies to move away from open source licenses to prevent this from happening."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-13:30
 tags: [
   strange-loop

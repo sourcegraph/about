@@ -1,6 +1,7 @@
 ---
 title: 'The GraphQL Stack: How everything fits together'
-author: '@beyang'
+authors:
+  - name: '@beyang'
 publishDate: 2017-10-26T00:00-07:00
 tags: [
   "graphql"

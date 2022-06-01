@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Handling Go errors"
 description: "Let's talk about programmable errors and how you can design your own architecture that allows you to legibly master your system failures."
-author: Marvin Guerra for the GopherCon 2019 Liveblog
+authors:
+  - name: Marvin Guerra for the GopherCon 2019 Liveblog
 publishDate: 2019-07-25T00:00-11:55
 tags: [
   gophercon

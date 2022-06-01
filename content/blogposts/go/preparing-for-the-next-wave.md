@@ -1,6 +1,7 @@
 ---
 title: 'Preparing for the Next Wave'
-author: 'Brian Ketelsen (speaker)'
+authors:
+  - name: Brian Ketelsen (speaker)
 publishDate: 2017-11-06T20:30+01:00
 tags: [
   "dotGo"

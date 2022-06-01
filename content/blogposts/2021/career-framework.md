@@ -1,7 +1,14 @@
 ---
 title: 'How we built our software engineering career framework'
 description: 'Engineering managers and ICs at Sourcegraph once lacked a common language for growth. Here’s the story of how we developed the first version of our first engineering career framework.'
-author: Nick Moore, Chris Pine, Nick Snyder, Felix Becker, Patrick Dubroy
+authors:
+  - name: Nick Moore
+    url: https://twitter.com/nickwritesit
+  - name: Chris Pine
+    url: https://handbook.sourcegraph.com/team/#chris-pine
+  - name: Felix Becker
+    url: https://github.com/felixfbecker
+  - name: Patrick Dubroy
 published: true
 publishDate: 2021-10-07T10:00-07:00
 tags: [blog]

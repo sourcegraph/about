@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Jagged, ragged, awkward arrays"
 description: "Data processing languages, such as SQL, R, MATLAB, and Numpy/Pandas, implicitly loop over identically-typed objects (\"rows\") of a dataset (\"table\"). This makes for a succinct syntax in an interactive environment, but what do you do if your table doesn't have a regular shape?"
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-14:30
 tags: [
   strange-loop

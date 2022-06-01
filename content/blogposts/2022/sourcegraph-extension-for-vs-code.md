@@ -1,7 +1,8 @@
 ---
 title: 'How I use the Sourcegraph extension for VS Code'
 description: 'Sourcegraph’s extension for Visual Studio Code allows you to search millions of open source repositories without cloning them to your local machine or leaving your IDE. Here’s how one engineering manager integrates it into his workflow.'
-author: Murat Sutunc
+authors:
+  - name: Murat Sutunc
 publishDate: 2022-02-08T00:00-07:00
 tags: [blog]
 slug: ways-to-use-sourcegraph-extension-for-vs-code

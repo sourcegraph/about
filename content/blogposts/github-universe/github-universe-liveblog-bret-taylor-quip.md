@@ -1,6 +1,8 @@
 ---
 title: 'A conversation with Bret Taylor, CEO of Quip, at GitHub Universe'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2016-09-14T00:00-07:00
 tags: [
   "github-universe"

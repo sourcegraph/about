@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - C L Eye-Catching User Interfaces'
-author: 'Ryan D for the GopherCon Liveblog'
+authors:
+  - name: Ryan D for the GopherCon Liveblog
 publishDate: 2018-08-29T00:00-06:00
 tags: [
   "gophercon"

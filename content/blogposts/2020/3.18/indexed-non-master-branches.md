@@ -1,6 +1,7 @@
 ---
 title: "Indexed non-default branches"
-author: Keegan Carruthers-Smith
+authors:
+  - name: Keegan Carruthers-Smith
 publishDate: 2020-07-20T08:00-07:00
 tags: [blog]
 slug: indexed-non-default-branches

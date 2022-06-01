@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph 3.9: Literal search by default, multi-project LSIF code intelligence, Grafana dashboards, and configuration"
-author: Quinn Slack
+authors:
+  - name: Quinn Slack
+    url: https://twitter.com/sqs
 publishDate: 2019-10-20T10:00-07:00
 tags: [
   blog

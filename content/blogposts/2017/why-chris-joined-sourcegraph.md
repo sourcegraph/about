@@ -1,6 +1,7 @@
 ---
 title: 'Why Chris joined Sourcegraph'
-author: 'Chris Wendt'
+authors:
+  - name: Chris Wendt
 publishDate: 2018-04-19T11:30-07:00
 tags: [
   "blog"

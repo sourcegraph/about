@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Beyond traces: the insights in trace aggregates"
 description: "The value proposition for distributed tracing is well-understood: assembling and visualizing end-to-end transactions helps to identify latency bottlenecks and provides a head-start on problem diagnosis. However, traditional tracing practices enable data presentation at the granularity of only a single transaction. This data is useful for debugging specific issues, but it is difficult to draw conclusions about the overall system without knowing how representative a lone trace is. Instead, aggregating these traces can reveal much more, and can do so with greater precision and certainty."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-13:30
 tags: [
   strange-loop

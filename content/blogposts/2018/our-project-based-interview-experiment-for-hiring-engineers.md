@@ -1,6 +1,7 @@
 ---
 title: 'Our project-based interview experiment for hiring engineers'
-author: 'Noemi Mercado'
+authors:
+  - name: Noemi Mercado
 publishDate: 2018-06-19T08:45-07:00
 tags: [
   "blog"

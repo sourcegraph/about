@@ -1,6 +1,8 @@
 ---
 title: 'GitHub Universe liveblog: “Open source for National Security”'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2016-09-15T00:00-07:00
 tags: [
   "github-universe"

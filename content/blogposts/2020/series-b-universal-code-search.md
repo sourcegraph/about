@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph's Series B: Universal Code Search for every developer"
-author: Quinn Slack
+authors:
+  - name: Quinn Slack
+    url: https://twitter.com/sqs
 publishDate: 2020-03-03T05:00
 tags: [blog]
 slug: series-b-universal-code-search

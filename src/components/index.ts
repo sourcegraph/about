@@ -7,6 +7,7 @@ export { BlogResourceItem } from './BlogResourceItem'
 export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
 export { CustomerLogos } from './CustomerLogos'
+export { FeatureWalkthrough } from './FeatureWalkthrough'
 export { FormLegal } from './FormLegal'
 export { EmbeddedHubSpot } from './HubSpot'
 export { IntegrationsSection } from './IntegrationsSection'
@@ -69,13 +70,8 @@ export {
 export { Layout } from './Layout'
 export { WhitePaperPage } from './WhitePaperPage'
 export { ContentPage } from './ContentPage'
+export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides, Reports
 
 // Pricing
 export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
 export type { Features } from './Pricing'
-
-// Webinars
-export { WebinarLayout } from './WebinarLayout'
-
-// Guides
-export { GuideLayout } from './GuideLayout'

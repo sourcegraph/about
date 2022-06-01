@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - From Video Games to Fashion: a Machine Learning Journey"
 description: "Gaming is a rapidly growing industry. Players generate extremely rich datasets that record each and every in-game action, social interaction, ad view or purchase. Because of the constant and continued relationship between player and game, player behavioral data constitutes a unique source of information on human behavior: a simplified dynamic system that replicates real life. In this talk I will discuss the common challenges to both industries and the emergency of models that scale to really big datasets and manage to capture various kinds of consumer tastes and behaviors. Because of the importance of the temporal dimension, models based on CNN, LSTM or DeepAR play a crucial role to push back this new technological frontier. I will review how these techniques can be used to create customized events and provide personalized predictions."
-author: Lisa Vogt
-authorUrl: https://twitter.com/lisavogtsf
-linkedInUrl: http://linkedin.com/in/lisavogtsf
+authors:
+  - name: Lisa Vogt
+    url: https://twitter.com/lisavogtsf
 publishDate: 2019-09-14T00:00-11:20
 tags: [
   strange-loop

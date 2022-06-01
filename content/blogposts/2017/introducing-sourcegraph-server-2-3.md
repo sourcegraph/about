@@ -1,6 +1,8 @@
 ---
 title: 'Introducing Sourcegraph 2.3'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack
+    url: https://twitter.com/sqs
 publishDate: 2017-12-05T00:00-08:00
 tags: [
   "blog"

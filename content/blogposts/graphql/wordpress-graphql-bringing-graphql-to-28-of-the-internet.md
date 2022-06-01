@@ -1,6 +1,7 @@
 ---
 title: 'WordPress GraphQL: Bringing GraphQL to 28% of the Internet'
-author: '@attfarhan'
+authors:
+  - name: '@attfarhan'
 publishDate: 2017-10-25T09:48-07:00
 tags: [
   "graphql"

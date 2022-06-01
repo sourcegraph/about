@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - New programming constructs for probabilistic AI"
 description: "What if it were possible to do state-of-the-art AI programming without having to do math? This talk presents novel programming constructs for probabilistic AI that automate and hide difficult mathematical and numerical details from the user. These constructs are analogous to automatic differentiation for deep learning, but apply to a broader class of AI approaches that exhibit more aspects of human-like intelligence and can work without any training data."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-11:20
 tags: [
   strange-loop

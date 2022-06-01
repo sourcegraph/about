@@ -31,9 +31,11 @@ export const PressReleasePost: FunctionComponent<Props> = ({
                     post.frontmatter.title
                 )}
             </h1>
-            <time dateTime={post.frontmatter.publishDate} className="text-align-center text-secondary mb-0">
-                {formatDate(String(post.frontmatter.publishDate))}
-            </time>
+            {post.frontmatter.publishDate && (
+                <p className="text-align-center text-secondary mb-0">
+                    <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
+                </p>
+            )}
         </header>
         {content && (
             <div className="card-body">
