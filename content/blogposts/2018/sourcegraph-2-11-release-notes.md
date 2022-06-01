@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph 2.11: Easier configuration and deployments, and Sourcegraph extensions'
-author: 'Ryan Blunden'
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2018-09-04T10:30-07:00
 tags: [
   "blog"

@@ -2,7 +2,9 @@
 title: 'How to support your employee through pregnancy, maternity leave, and the transition back to work'
 externalTitle: 'Welcome back from maternity leave: How to support a returning employee'
 externalDescription: 'Working parents need time off to care for their children and a positive welcome back from maternity leave. Learn how to support them here.'
-author: 'Vanesa Ortiz'
+authors:
+  - name: Vanesa Ortiz
+    url: https://twitter.com/vanesacodes
 publishDate: 2018-08-28T09:00-06:00
 tags: [
   "blog"

@@ -1,8 +1,9 @@
 ---
 title: "Optimizing a code intelligence backend"
 description: Read about how we used a memory and CPU profiler, creative thinking, and a lot of developer elbow grease to optimize our semantic code indexing system to give users twice-as-fast tooltips, go-to-definition, and references.
-author: Eric Fritz
-authorUrl: https://eric-fritz.com
+authors:
+  - name: Eric Fritz
+    url: https://eric-fritz.com
 publishDate: 2020-06-17T10:00-08:00
 tags: [blog]
 slug: optimizing-a-code-intel-backend

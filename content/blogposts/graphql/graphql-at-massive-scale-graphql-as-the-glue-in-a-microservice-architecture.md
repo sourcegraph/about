@@ -1,6 +1,7 @@
 ---
 title: 'GraphQL at massive scale: GraphQL as the glue in a microservice architecture'
-author: '@beyang'
+authors:
+  - name: '@beyang'
 publishDate: 2017-10-25T05:21-07:00
 tags: [
   "graphql"

@@ -1,6 +1,7 @@
 ---
 title: 'Writing a Go Tool to Parse and Modify Struct Tags'
-author: 'Fatih Arslan'
+authors:
+  - name: Fatih Arslan
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

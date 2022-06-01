@@ -1,6 +1,8 @@
 ---
 title: 'GopherCon 2018 - Going Serverless'
-author: 'Ryan Blunden for the GopherCon Liveblog'
+authors:
+  - name: Ryan Blunden for the GopherCon Liveblog
+    url: https://twitter.com/ryan_blunden
 publishDate: 2018-08-29T00:00-06:00
 tags: [
   "gophercon"

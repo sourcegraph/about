@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Tweet My Wedding Dress"
 description: "Inspired by a love of rainbows and silly tech projects, I decided to make my own first wearable tech - a wedding dress full of lights that could be controlled by tweets from my friends and family! This talk will go over the tech I used (suitable for absolute beginners), the mistakes I made and the lessons I learnt. From using the Twitter API, writing my own API, coding for an Arduino and wiring the whole thing up to the worst bit - THE SEWING. I aim to share the message that it is ok to make mistakes, we all do! If you keep trying you can make something magical!"
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-15:30
 tags: [
   strange-loop

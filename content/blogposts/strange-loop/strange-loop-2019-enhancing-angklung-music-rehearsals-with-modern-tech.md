@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Enhancing Angklung Music Rehearsals with Modern Tech"
 description: "Angklung is a traditional musical instrument from Indonesia. This instrument has a lot of variety in how it is performed; a common format is the orchestral format in which 15-30 players gather to form a team. Playing angklung in this way is fun but also presents some challenges that are hard to solve manually. In this talk, we will learn how technology is used to improve the quality of rehearsals of this age-old instrument."
-author: Ryan Frazier
-authorUrl: https://pianomanfrazier.com/
-linkedInUrl: https://www.linkedin.com/in/pianomanfrazier
+authors:
+  - name: Ryan Frazier
+    url: https://pianomanfrazier.com/
 publishDate: 2019-09-13T00:00-15:30
 tags: [
   strange-loop

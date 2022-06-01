@@ -1,6 +1,7 @@
 ---
 title: 'GraphQL at Twitter'
-author: '@beyang'
+authors:
+  - name: '@beyang'
 publishDate: 2017-10-26T23:50-07:00
 tags: [
   "graphql"

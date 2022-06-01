@@ -1,6 +1,7 @@
 ---
 title: 'A Go Programmer’s Guide to Syscalls'
-author: 'Liz Rice'
+authors:
+  - name: Liz Rice
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

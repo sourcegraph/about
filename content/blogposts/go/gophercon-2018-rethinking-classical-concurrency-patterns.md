@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - Rethinking Classical Concurrency Patterns'
-author: 'Dmitri Shuralyov'
+authors:
+  - name: Dmitri Shuralyov
 publishDate: 2018-09-04T00:00-07:00
 tags: [
   "gophercon"

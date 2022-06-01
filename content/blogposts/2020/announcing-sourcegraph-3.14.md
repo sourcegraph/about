@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph 3.14: Faster repository permissions, excluding forks and archived repositories by default, and Docker Compose deployment"
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2020-03-20T10:00-07:00
 tags: [
   blog, GitLab, Bitbucket, "Docker Compose", "Kubernetes deployments"

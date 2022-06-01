@@ -1,6 +1,7 @@
 ---
 title: 'Unmasking netpoll.go'
-author: 'Cindy Sridharan (speaker)'
+authors:
+  - name: Cindy Sridharan (speaker)
 publishDate: 2017-11-06T16:20+01:00
 tags: [
   "dotGo"

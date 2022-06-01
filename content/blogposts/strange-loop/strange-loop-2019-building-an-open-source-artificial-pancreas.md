@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Building an Open Source Artificial Pancreas"
 description: "Have you ever thought about what open source software or hardware could achieve? What if it could help improve people's lives by solving some of their health problems?"
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-13:30
 tags: [
   strange-loop

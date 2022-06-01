@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Closing Keynote"
 description: "London based recording artist Imogen Heap blurs the boundaries between pure art form and creative entrepreneurship. Writing and producing 4 solo albums, one as Frou Frou (with Guy Sigsworth), and collaborating with Jeff Beck, Mika and Josh Groban amongst others, Heap has penned tracks for movies, TV shows and produced the score for Harry Potter and the Cursed Child, winning the 'Outstanding Music in a Play' Drama Desk Award."
-author: Shanti Chellaram
-authorUrl: https://twitter.com/theccoder
+authors:
+  - name: Shanti Chellaram
+    url: https://twitter.com/theccoder
 publishDate: 2019-09-14T00:00-16:30
 tags: [
   strange-loop

@@ -33,8 +33,10 @@ export interface FrontMatter {
     canonical?: string
     publishDate?: string
     heroImage?: string
-    author?: string
-    authorUrl?: string
+    authors?: {
+        name: string
+        url?: string
+    }[]
     tags?: string[]
     changelogItems?: {
         url: string

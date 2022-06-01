@@ -1,6 +1,7 @@
 ---
 title: 'Go  Lift'
-author: 'John Cinnamond (speaker)'
+authors:
+  - name: John Cinnamond (speaker)
 publishDate: 2017-11-06T11:30+01:00
 tags: [
   "dotGo"

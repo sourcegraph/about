@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - How not to read the room: Creating wearables with ML"
 description: "I'm an introvert. This can be a bit unfortunate, when you are a person that enjoys spending a lot of free time creating fashion things bedazzled with LEDs... only to rarely wear them out in public. In an effort to actually share my weird and wonderful creations with others, I decided to create a wearable project that would force me to be sociable in order for it to reveal its magic. In this talk, I'll share how I am using machine learning with javascript and tiny computers to make \"fashion\" that is responsive to the people around you and the attention you are (or aren't) receiving."
-author: Lee Edwards
-authorUrl: https://ledwards.com
-linkedInUrl: https://www.linkedin.com/in/leeredwards
+authors:
+  - name: Lee Edwards
+    url: https://ledwards.com
 publishDate: 2019-09-13T00:00-13:30
 tags: [
   strange-loop

@@ -1,6 +1,8 @@
 ---
 title: 'Announcing Sourcegraph 2.4: free, powerful search for your private code'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack
+    url: https://twitter.com/sqs
 publishDate: 2018-01-09T00:00-08:00
 tags: [
   "blog"

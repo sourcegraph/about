@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Towards an Open, Reason(ML)able Web"
 description: "Web technologies today are converging towards two paradigms - static typing and compilation to JavaScript. More than ever before, engineers want sound type systems and elegant language ergonomics while generating performant JS. ReasonML promises the best of both by pairing OCaml's robust type system with a blazing fast JavaScript compiler, BuckleScript."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-15:30
 tags: [
   strange-loop

@@ -1,6 +1,8 @@
 ---
 title: 'Announcing Code Insights: analytics for engineering teams to understand and visualize their codebase over time'
-author: Quinn Slack
+authors:
+  - name: Quinn Slack
+    url: https://twitter.com/sqs
 description: 'Devs, engineering managers, and leadership across all companies and industries are looking for a better understanding of their codebase. Code Insights allows you to create insights for anything you can search for in seconds.'
 publishDate: 2022-03-10T12:00-00:00
 tags: [blog]

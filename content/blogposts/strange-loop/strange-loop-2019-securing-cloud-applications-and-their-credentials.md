@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Securing cloud applications and their credentials"
 description: "With the rise of containerized cloud-based infrastructure, security in these architectures has been an area that has been often deferred to developers and \"shadow IT\" because the tools and technologies used previously have have not been as quick to catch up. While developers generally make reasonable decisions about securing workloads, pushes for higher velocity end up causing simple implementation misconfigurations that exponentially increase the attack surface. Attendees will learn common container security problems as well as how to increase security of your apps both on the container and scheduler level. We will also cover some of the next-gen tooling and see where long-term security initiatives are heading in this space."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-10:20
 tags: [
   strange-loop

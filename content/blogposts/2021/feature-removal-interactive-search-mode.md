@@ -1,8 +1,8 @@
 ---
 title: Interactive search mode is no longer supported
 description: As part of our 3.24 release, interactive search mode is no longer supported. We deprecated the feature last September, and as of January 20, 2021, it has been removed for all users.
-author: Sourcegraph
-authorUrl: https://about.sourcegraph.com
+authors:
+  - name: Sourcegraph
 publishDate: 2021-01-20T10:00-07:00
 tags: [blog]
 slug: feature-removal-interactive-search-mode

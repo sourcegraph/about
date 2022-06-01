@@ -1,6 +1,8 @@
 ---
 title: "Peter Bourgon on the history of Go kit and what's next"
-author: 'Beyang'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-07-12T00:00-07:00
 tags: [
   "gophercon"

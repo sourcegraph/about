@@ -1,6 +1,7 @@
 ---
 title: 'My Journey to Go'
-author: 'Ashley McNamara'
+authors:
+  - name: Ashley McNamara
 publishDate: 2017-07-14T00:00-07:00
 tags: [
   "gophercon"

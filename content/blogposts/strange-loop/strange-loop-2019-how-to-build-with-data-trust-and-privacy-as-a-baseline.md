@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - How to build with data trust and privacy as a baseline"
 description: "Tim Berners-Lee recently published his Contract for the Web with a core principle stating we must \"Respect consumers' privacy and personal data so people are in control of their lives online\". Noble's talk explores tactical approaches to be good stewards of data in the face of growing regulations through software with techniques like differential privacy."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-14:30
 tags: [
   strange-loop

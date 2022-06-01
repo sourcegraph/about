@@ -3,7 +3,8 @@ title: 'How we added backend integration testing to our CI pipeline'
 externalTitle: 'Adding backend integration testing to our CI'
 description: "Here's the story, and the lessons learned, from our work to remove all existing backend-related end-to-end tests and reliably run their corresponding unit and/or integration tests as part of our CI pipeline on all branches."
 externalDescription: "Integration testing isn't glamorous work, but it is impactful. Here's a behind-the-scenes look at how we worked toward a more reliable, less flaky testing suite."
-author: Joe Chen
+authors:
+  - name: Joe Chen
 publishDate: 2022-01-13T18:00+02:00
 tags: [blog]
 slug: integration-testing

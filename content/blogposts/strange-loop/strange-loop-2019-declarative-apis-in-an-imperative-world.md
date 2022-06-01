@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Declarative APIs in an Imperative World"
 description: "Declarative UI frameworks have taken over the JavaScript landscape. Which is great, because making assumptions about your application's state is a source of pain, frustration, and bugs. But what happens when you need to glue together imperative APIs with your declarative UI framework? In this talk, I'll explain problems the Atom Editor team came across when we started using React as our UI framework, as well as the solutions we came up with. We'll discuss how to generalize these patterns to integrate with other imperative APIs you might come across in the wild, such as animation libraries. Finally, we'll explore what we can learn from the history of software trends over time to create a better future together."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-14:30
 tags: [
   strange-loop

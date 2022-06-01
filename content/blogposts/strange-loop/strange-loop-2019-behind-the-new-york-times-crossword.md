@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Behind The New York Times Crossword"
 description: "The New York Times Crossword is serious business. Operated like a startup within the company, the NYT Games Team works tirelessly to keep our 500,000+ subscribers happily solving while driving significant revenue to support great journalism. With serious solvers comes the need for serious technology. Since rewriting the entire platform in Go and migrating it to a serverless ecosystem, the Games Team has driven innovation at The Times with the most cutting edge tools and infrastructure. Take a behind-the-scenes look of how a puzzle makes it from a constructor to our solvers around the world and the tech challenges we've had to overcome to enable it. See how we've built our games platform to handle immense traffic spikes when new puzzles are released, allow us to fearlessly test in and push changes to production, and quickly launch new games for our subscribers to puzzle over."
-author: Ali Glenesk
-authorUrl: https://twitter.com/aliglenesk
+authors:
+  - name: Ali Glenesk
+    url: https://twitter.com/aliglenesk
 publishDate: 2019-09-13T00:00-10:20
 tags: [
   strange-loop
