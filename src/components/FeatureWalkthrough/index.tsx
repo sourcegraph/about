@@ -4,21 +4,25 @@ import classNames from 'classnames'
 import { startCase } from 'lodash'
 import Link from 'next/link'
 
-import { ContentSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
-import batchChangesMp4 from './assets/animations/batch-changes.mp4'
-import batchChangesWebm from './assets/animations/batch-changes.webm'
-import codeInsightsMp4 from './assets/animations/code-insights.mp4'
-import codeInsightsWebm from './assets/animations/code-insights.webm'
-import codeIntelMp4 from './assets/animations/code-intel.mp4'
-import codeIntelWebm from './assets/animations/code-intel.webm'
-import codeSearchMp4 from './assets/animations/code-search.mp4'
-import codeSearchWebm from './assets/animations/code-search.webm'
+import batchChangesMp4 from './animations/batch-changes.mp4'
+import batchChangesWebm from './animations/batch-changes.webm'
+import codeInsightsMp4 from './animations/code-insights.mp4'
+import codeInsightsWebm from './animations/code-insights.webm'
+import codeIntelMp4 from './animations/code-intel.mp4'
+import codeIntelWebm from './animations/code-intel.webm'
+import codeSearchMp4 from './animations/code-search.mp4'
+import codeSearchWebm from './animations/code-search.webm'
 
 interface Video {
     mp4: string
     webm: string
+}
+
+interface VideoElement {
+    el: HTMLVideoElement | null
+    paused: boolean
 }
 
 interface Features {
@@ -30,7 +34,7 @@ interface Features {
     video: Video
 }
 
-const features: Features[] = [
+export const features: Features[] = [
     {
         productFeature: 'code search',
         title: 'Find what you need: any code host, language, or repository',
@@ -101,12 +105,7 @@ const features: Features[] = [
     },
 ]
 
-interface VideoElement {
-    el: HTMLVideoElement | null
-    paused: boolean
-}
-
-const FeatureSection: FunctionComponent = () => {
+export const FeatureWalkthrough: FunctionComponent = () => {
     useEffect(() => {
         const videos = features.map(
             (vid, index): VideoElement => ({
@@ -139,7 +138,7 @@ const FeatureSection: FunctionComponent = () => {
     }, [])
 
     return (
-        <ContentSection color="white" className="py-8 pb-7">
+        <>
             <div className="text-center mt-8 pt-4 mb-7">
                 <h1 className="font-weight-bold">How teams use Sourcegraph</h1>
                 <p className="max-w-500 mx-auto">
@@ -180,6 +179,7 @@ const FeatureSection: FunctionComponent = () => {
                                 className="btn btn-outline-primary mt-2"
                                 data-button-style={buttonStyle.outline}
                                 data-button-location={buttonLocation.body}
+                                data-button-type="cta"
                             >
                                 Learn more about {startCase(feature.productFeature)}
                             </a>
@@ -190,6 +190,7 @@ const FeatureSection: FunctionComponent = () => {
                                     href="#none"
                                     data-button-style={buttonStyle.outline}
                                     data-button-location={buttonLocation.body}
+                                    data-button-type="cta"
                                 >
                                     Learn more about {startCase(feature.productFeature)}
                                 </a>
@@ -213,8 +214,6 @@ const FeatureSection: FunctionComponent = () => {
                     </div>
                 </div>
             ))}
-        </ContentSection>
+        </>
     )
 }
-
-export default FeatureSection
