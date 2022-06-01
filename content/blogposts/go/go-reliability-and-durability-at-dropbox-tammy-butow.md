@@ -1,6 +1,7 @@
 ---
 title: 'Go Reliability and Durability at Dropbox'
-author: 'Tammy Butow'
+authors:
+  - name: Tammy Butow
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

@@ -1,7 +1,9 @@
 ---
 title: "GopherCon 2019 - Simple, Portable and Efficient Graphical Interfaces in Go"
 description: "Gio is a new open source Go library for writing immediate mode GUI programs that run on all the major platforms: Android, iOS/tvOS, macOS, Linux, Windows. The talk will cover Gio's unusual design and how it achieves simplicity, portability and performance."
-author: Christina Forney for the GopherCon 2019 Liveblog
+authors:
+  - name: Christina Forney for the GopherCon 2019 Liveblog
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-07-25T00:00-10:50
 tags: [
   gophercon

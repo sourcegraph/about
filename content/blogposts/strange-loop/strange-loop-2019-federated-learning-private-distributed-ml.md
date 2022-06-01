@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Federated learning: private distributed ML"
 description: "This talk will explain the ideas around training models on different nodes. I'll describe a specific instance of a federated learning algorithm (called federated averaging), and I'll explain the ways in which the real world full of malicious actors and distributed systems complicates the naive picture. I'll then talk about the research that is going on right now to harden security, reduce communication costs, and strengthen privacy guarantees."
-author: Bhavika Tekwani
-authorUrl: http://bhavikatekwani.me
-linkedInUrl: http://linkedin.com/in/bhavikatekwani
+authors:
+  - name: Bhavika Tekwani
+    url: http://bhavikatekwani.me
 publishDate: 2019-09-14T00:00-10:20
 tags: [
   strange-loop

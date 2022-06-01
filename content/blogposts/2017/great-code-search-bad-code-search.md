@@ -1,6 +1,8 @@
 ---
 title: 'Great code search, bad code search'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack
+    url: https://twitter.com/sqs
 publishDate: 2017-11-15T00:00-08:00
 tags: [
   "blog"

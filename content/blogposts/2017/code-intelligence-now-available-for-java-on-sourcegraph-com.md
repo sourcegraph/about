@@ -1,6 +1,8 @@
 ---
 title: 'Code Intelligence now available for Java on Sourcegraph.com'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-03-01T00:00-07:00
 tags: [
   "blog"

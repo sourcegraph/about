@@ -1,6 +1,7 @@
 ---
 title: 'Debuggers from Scratch'
-author: 'Liz Rice (speaker)'
+authors:
+  - name: Liz Rice (speaker)
 publishDate: 2017-11-06T18:00+01:00
 tags: [
   "dotGo"

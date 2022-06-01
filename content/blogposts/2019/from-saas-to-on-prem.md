@@ -1,6 +1,8 @@
 ---
 title: 'Why Sourcegraph switched from cloud SaaS to on-premises, self-hosted software'
-author: 'Vanesa Ortiz'
+authors:
+  - name: Vanesa Ortiz
+    url: https://twitter.com/vanesacodes
 publishDate: 2019-10-30T00:00-07:00
 tags: [
   "blog"

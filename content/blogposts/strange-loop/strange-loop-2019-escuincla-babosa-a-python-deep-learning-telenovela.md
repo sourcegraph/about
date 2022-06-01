@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - ¡Escuincla babosa! A Python Deep Learning Telenovela"
 description: "Telenovelas are beloved for their over the top drama and intricate plot twists. In this talk, we'll review popular telenovelas to synthesize a typical telenovela arc and use it to train a deep learning model. What would a telenovela script look like as imagined by a neural network? To answer this question, we'll examine three Python deep learning frameworks - Keras, PyTorch, and TensorFlow - to determine the process of translating a telenovela into a neural network and ultimately determine which one will be best for the task at hand. Be prepared for amor, pasiòn, and y el misterioso!"
-author: Alla Hoffman
-authorUrl: http://rsid.github.io/portfolio/
-linkedInUrl: https://www.linkedin.com/in/allahoffman
+authors:
+  - name: Alla Hoffman
+    url: http://rsid.github.io/portfolio/
 publishDate: 2019-09-14T00:00-14:30
 tags: [
   strange-loop

@@ -1,7 +1,8 @@
 ---
 title: "The find-and-replace Odyssey, a programmer's guide"
-author: Beyang Liu
-authorUrl: https://twitter.com/beyang
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2020-05-15T10:00-07:00
 tags: [blog]
 slug: a-programmers-guide-to-find-and-replace

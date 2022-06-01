@@ -1,6 +1,7 @@
 ---
 title: 'Lightning Talks'
-author: 'Speakers'
+authors:
+  - name: Speakers
 publishDate: 2017-11-06T14:45+01:00
 tags: [
   "dotGo"

@@ -1,6 +1,7 @@
 ---
 title: "Writing an LSIF Indexer"
-author: Uwe Hoffmann
+authors:
+  - name: Uwe Hoffman
 publishDate: 2019-10-14T10:00-07:00
 tags: [
   blog

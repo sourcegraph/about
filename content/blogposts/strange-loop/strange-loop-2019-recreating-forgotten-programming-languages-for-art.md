@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Recreating forgotten programming languages, for art!"
 description: "The early beginnings of computer graphics in the 1960s saw the birth of a number programming languages that were created specifically for making animations and graphics. Almost all of them are now obsolete and mostly forgotten. However, back then, many of these languages cutting-edge and made possible the completely new field of making art with computers. A prolific example of this was Bell Labs' BEFLIX, a language created to make animations using a microfilm plotter."
-author: Manuel
-authorUrl: http://thestrangeloop.com/
+authors:
+  - name: Manuel
+    url: http://thestrangeloop.com/
 publishDate: 2019-09-13T00:00-10:20
 tags: [
 strange-loop

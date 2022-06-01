@@ -1,6 +1,7 @@
 ---
 title: 'Understanding Channels'
-author: 'Kavya Joshi'
+authors:
+  - name: Kavya Joshi
 publishDate: 2017-07-14T00:00-07:00
 tags: [
   "gophercon"

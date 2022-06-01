@@ -1,6 +1,7 @@
 ---
 title: 'Universal GraphQL'
-author: 'James Baxley'
+authors:
+  - name: James Baxley
 publishDate: 2017-10-24T05:53-07:00
 tags: [
   "graphql"

@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph 3.2: (Mostly) no new features - Improved stability, setup, and documentation'
-author: Ryan Blunden
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2019-03-20T05:59-06:00
 tags: [
   blog

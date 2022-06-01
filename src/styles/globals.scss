@@ -318,7 +318,7 @@ $positions: ('top', 'right', 'bottom', 'left');
 }
 
 /* ==================== Borders ==================== */
-// TODO: On Tailwind migration, trade out this style for utility class: "border-3"
+// TODO: On Tailwind migration, trade out these styles for border-x utility classes"
 .border-2 {
     border-width: 2px !important;
 }
@@ -330,4 +330,10 @@ $positions: ('top', 'right', 'bottom', 'left');
 .border-saturn {
     border-image-slice: 1 !important;
     border-image-source: linear-gradient(to right, $violet-mist, $blue-mist) !important;
+}
+
+/* ==================== Background ==================== */
+// TODO: After Tailwind migration this class can be deleted
+.bg-cover {
+    background-size: cover !important;
 }

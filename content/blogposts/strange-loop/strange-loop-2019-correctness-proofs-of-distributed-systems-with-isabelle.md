@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Correctness proofs of distributed systems with Isabelle"
 description: "Testing systems is great, but tests can only explore a finite set of inputs and behaviors. Many real systems, especially distributed systems, have a potentially infinite state space. If you want to be sure that a program does the right thing in all possible situations, testing is not sufficient: you need proof. Only mathematical proof, e.g. by induction, can cover an infinite state space."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-11:20
 tags: [
   strange-loop

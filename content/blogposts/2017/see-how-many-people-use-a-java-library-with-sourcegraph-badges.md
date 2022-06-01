@@ -1,6 +1,8 @@
 ---
 title: 'See how many people use a Java library, with Sourcegraph badges'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-04-11T00:00-07:00
 tags: [
   "blog"

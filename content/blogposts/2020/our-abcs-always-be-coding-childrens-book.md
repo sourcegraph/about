@@ -1,7 +1,8 @@
 ---
 title: "Our ABCs: Always Be Coding children's book free to download"
-author: Ryan Blunden
-authorUrl: https://twitter.com/ryan_blunden
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2020-04-23T10:00-07:00
 tags: [blog]
 slug: our-abcs-always-be-coding-childrens-book

@@ -1,8 +1,9 @@
 ---
 title: 'Postgres text search: balancing query time and relevancy'
 description: 'How do you balance query time and relevance with Postgres text search? Stephen Gutekanst, an engineer working on Sourcegraph’s API docs feature, shares tips for stirring code analysis with search indexing'
-author: Stephen Gutekanst
-authorUrl: https://slimsag.com
+authors:
+  - name: Stephen Gutekanst
+    url: https://slimsag.com
 publishDate: 2021-10-13T10:00-07:00
 tags: [blog, code, search, software, engineering, postgres, trigrams, ranking, relevance]
 slug: postgres-text-search-balancing-query-time-and-relevancy

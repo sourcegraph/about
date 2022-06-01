@@ -1,6 +1,7 @@
 ---
 title: 'Thunder Talks'
-author: 'Speakers'
+authors:
+  - name: Speakers
 publishDate: 2017-11-06T16:25+01:00
 tags: [
   "dotGo"

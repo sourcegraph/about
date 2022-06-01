@@ -1,6 +1,7 @@
 ---
 title: 'Runtime Generated, Typesafe, and Declarative - Pick Any Three'
-author: 'Jon Bodner'
+authors:
+  - name: Jon Bodner
 publishDate: 2017-07-14T00:00-07:00
 tags: [
   "gophercon"

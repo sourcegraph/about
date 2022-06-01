@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Small is going big: Go On microcontrollers"
 description: "TinyGo takes the Go programming language to the 'final frontier' where we could not go before... running directly on microcontrollers like Arduino and more! In this talk I will introduce TinyGo (http://tinygo.org) a new miniature version of the Go language that uses the LLVM compiler toolchain to create native code that can run directly even on the smallest of computing devices. This talk will feature live coding demos of flying objects!"
-author: Julie A. Kohler for the GopherCon 2019 Liveblog
+authors:
+  - name: Julie A. Kohler for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-11:20
 tags: [
   gophercon

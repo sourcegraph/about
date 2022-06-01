@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - Machine Learning in Go'
-author: 'Steven Klassen for the GopherCon Liveblog'
+authors:
+  - name: Steven Klassen for the GopherCon Liveblog
 publishDate: 2018-08-28T00:00-06:00
 tags: [
   "gophercon"

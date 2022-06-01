@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, GuideLayout } from '@components'
+import { Layout, GatedResourceLayout } from '@components'
 
 export const Guide: FunctionComponent = () => (
     <Layout
@@ -11,14 +11,14 @@ export const Guide: FunctionComponent = () => (
         }}
         className="navbar-white"
     >
-        <GuideLayout
+        <GatedResourceLayout
             title="Optimizing developer onboarding"
             subtitle="Lessons learned and secrets to success from 31 companies and open source projects"
+            formLabel="Download the guide"
             form={{
                 formId: 'af3bc75e-c4f0-43e7-9829-c1d5d59e0a56',
                 onFormSubmitted: () => window.open('/guides/optimizing-developer-onboarding.pdf'),
             }}
-            formLabel="Download the guide"
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <p>

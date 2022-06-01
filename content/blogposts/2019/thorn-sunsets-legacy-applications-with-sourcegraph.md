@@ -1,6 +1,8 @@
 ---
 title: How Thorn sunsets legacy applications safely with Sourcegraph
-author: Ryan Blunden
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2019-07-08T10:00-07:00
 tags: [
   blog

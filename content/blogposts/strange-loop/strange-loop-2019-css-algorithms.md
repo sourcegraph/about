@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - CSS Algorithms"
 description: "Wait...CSS algorithms? Can one really write algorithms in CSS? Absolutely."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-13:30
 tags: [
   strange-loop

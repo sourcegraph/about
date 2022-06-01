@@ -1,6 +1,7 @@
 ---
 title: 'The Functional Design of Dep (and Package Managers in General)'
-author: 'Sam Boyer (speaker)'
+authors:
+  - name: Sam Boyer (speaker)
 publishDate: 2017-11-06T23:59+01:00
 tags: [
   "dotGo"

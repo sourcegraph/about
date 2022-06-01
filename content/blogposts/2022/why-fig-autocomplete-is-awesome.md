@@ -1,8 +1,9 @@
 ---
 title: 'Interact with Sourcegraph from the command line faster with Fig'
 description: "Sourcegraph teamed up with Fig to enhance 'src' the CLI that allows you to search code and more from your terminal."
-author: Justin Dorfman
-authorUrl: https://twitter.com/jdorfman
+authors:
+  - name: Justin Dorfman
+    url: https://twitter.com/jdorfman
 publishDate: 2022-04-21T11:25-07:00
 tags: [blog]
 slug: why-fig-autocomplete-is-awesome

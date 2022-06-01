@@ -1,6 +1,8 @@
 ---
 title: 'JP Robinson of NYTimes on Go kit, Gizmo, and Marvin'
-author: 'Beyang'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-07-12T00:00-07:00
 tags: [
   "gophercon"

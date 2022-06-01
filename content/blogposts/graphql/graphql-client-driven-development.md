@@ -1,6 +1,7 @@
 ---
 title: 'GraphQL: Client-Driven Development'
-author: '@beyang'
+authors:
+  - name: '@beyang'
 publishDate: 2017-10-25T05:53-07:00
 tags: [
   "graphql"
