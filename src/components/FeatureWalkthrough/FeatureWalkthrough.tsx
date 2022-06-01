@@ -34,7 +34,7 @@ interface Features {
     video: Video
 }
 
-export const features: IFeatures[] = [
+export const features: Features[] = [
     {
         productFeature: 'code search',
         title: 'Find what you need: any code host, language, or repository',
