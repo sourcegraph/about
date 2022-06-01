@@ -6,10 +6,10 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import { NavLinks } from '../Header'
+import { NavLink } from './navLinks'
 
 interface Props {
-    navLinks: NavLinks
+    navLinks: NavLink[]
     hideGetStartedButton: boolean | undefined
     isOpen: boolean
 }
@@ -45,7 +45,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                             )
                         )
                     ) : (
-                        <li className="align-items-center nav-item" role="presentation">
+                        <li className="align-items-center nav-item" role="presentation" key={navLink.section}>
                             <span
                                 role="button"
                                 className="nav-link navbar-toggle collapsed"

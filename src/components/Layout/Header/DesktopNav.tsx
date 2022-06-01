@@ -6,10 +6,10 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import { NavLinks } from '../Header'
+import { NavLink } from './navLinks'
 
 interface Props {
-    navLinks: NavLinks
+    navLinks: NavLink[]
     hideGetStartedButton: boolean | undefined
 }
 
