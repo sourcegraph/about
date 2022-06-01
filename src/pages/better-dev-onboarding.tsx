@@ -12,6 +12,7 @@ import {
     Layout,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
+import { useHubSpot, useChiliPiper } from '@hooks'
 
 import styles from './use-cases/useCases.module.scss'
 
@@ -40,7 +41,15 @@ const resourceItems = [
     },
 ]
 
-const BetterDeveloperOnboarding: FunctionComponent = () => (
+const BetterDeveloperOnboarding: FunctionComponent = () => {
+    useHubSpot({
+        portalId: '2762526',
+        formId: '5b81cde2-4701-425e-8782-dc79d8979b70',
+        region: 'na1',
+        targetId: 'topForm',
+    })
+    useChiliPiper()
+    return (
     <Layout
         meta={{
             title: 'Better Developer Onboarding | Sourcegraph',
@@ -53,7 +62,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                 <div className={styles.pageHeader}>
                     <div className="container pb-4">
                         <div className="row">
-                            <div className="col-lg-7 mb-8 mt-7">
+                            <div className="col-lg-7 mb-6 mt-7">
                                 <h1 className="display-2 font-weight-bold mb-4">
                                     Give your team a complete onboarding experience
                                 </h1>
@@ -62,31 +71,8 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
                                     can find their own answers without waiting for someone to point them to the relevant
                                     code.
                                 </div>
-                                <div className="max-w-350 flex-column flex-md-row d-md-flex align-items-center">
-                                    <Link href="/demo" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-primary w-100 mb-3 mb-md-0"
-                                            title="Request a Demo."
-                                            data-button-style={buttonStyle.primary}
-                                            data-button-location={buttonLocation.hero}
-                                            data-button-type="cta"
-                                        >
-                                            Request a demo
-                                        </a>
-                                    </Link>
-                                    <Link href="/get-started" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-outline-primary w-100 ml-md-3"
-                                            title="Get started with Sourcegraph."
-                                            data-button-style={buttonStyle.outline}
-                                            data-button-location={buttonLocation.hero}
-                                            data-button-type="cta"
-                                        >
-                                            Get started
-                                        </a>
-                                    </Link>
+                                <div className="d-flex flex-column pt-1 max-w-400">
+                                    <div id="topForm" />
                                 </div>
                             </div>
                         </div>
@@ -151,5 +137,6 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
         </ContentSection>
     </Layout>
 )
+}
 
 export default BetterDeveloperOnboarding
