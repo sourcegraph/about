@@ -1,7 +1,8 @@
 ---
 title: 'Code intelligence data retention'
-author: Eric Fritz
-authorUrl: https://eric-fritz.com
+authors:
+  - name: Eric Fritz
+    url: https://eric-fritz.com
 description: 'TODO'
 publishDate: 2022-01-03T12:00-00:00
 tags: [blog]
