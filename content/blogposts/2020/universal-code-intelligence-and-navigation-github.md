@@ -1,8 +1,9 @@
 ---
 title: Universal Code Intelligence for GitHub with the Sourcegraph browser extension
 description: Universal Code Intelligence for GitHub means bringing code navigation features such as hover tooltips, go to definition, and find references to every code view and pull request, supporting every popular language, and all public and private repositories on both GitHub.com and GitHub Enterprise.
-author: Ryan Blunden
-authorUrl: https://twitter.com/ryan_blunden
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2020-04-07T00:00-15:30
 tags: [blog]
 slug: universal-code-intelligence-github-sourcegraph-browser-extension

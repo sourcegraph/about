@@ -1,6 +1,7 @@
 ---
 title: 'Survey Findings Reveal Big Code Presents Challenges For Development Teams Across All Industries'
-author: Sourcegraph
+authors:
+  - name: Sourcegraph
 publishDate: 2020-10-01T00:00
 tags: ['press']
 slug: big-code-survey-2020

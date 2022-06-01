@@ -1,6 +1,6 @@
-<!-- Provide a brief summary in a sentence or two of your changes. -->
-
 <!--
+Provide a brief summary in a sentence or two of your changes.
+
 Don't forget to:
 - Add reviewers
 - Assign yourself
@@ -21,9 +21,7 @@ Examples:
 
 ### Test
 
-1. Ensure linting passes.
-2. Ensure prettier has standardized the proposed changes.
-3. Ensure dev and production builds work.
+1. Ensure prettier has standardized the proposed changes.
 <!--
 Please list any other relevant steps that your reviewer should do to test this PR.
 Examples:

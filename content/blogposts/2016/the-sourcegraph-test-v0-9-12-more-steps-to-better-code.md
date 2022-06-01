@@ -1,6 +1,8 @@
 ---
 title: 'The Sourcegraph Test: 12 more steps to better code'
-author: 'Quinn Slack'
+authors:
+  - name: Quinn Slack
+    url: https://twitter.com/sqs
 publishDate: 2016-02-11T00:00-07:00
 tags: [
   "blog"

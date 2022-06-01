@@ -1,6 +1,7 @@
 ---
 title: 'Browse & review code on GitHub like in an IDE, with the Sourcegraph Chrome extension'
-author: 'John Rothfels'
+authors:
+  - name: John Rothfels
 publishDate: 2016-05-30T00:00-07:00
 tags: [
   "blog"

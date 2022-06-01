@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Zipline - A Declarative Feature Engineering Library"
 description: "Zipline is Airbnb's data management platform specifically designed for ML use cases. Previously, ML practitioners at Airbnb spent roughly 60% of their time on collecting and writing transformations for machine learning tasks. Zipline reduces this task from months to days - by making the process declarative. It allows data scientists to easily define features in a simple configuration language. The framework then provides access to point-in-time correct features - for both - offline model training and online inference."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-14:30
 tags: [
   strange-loop

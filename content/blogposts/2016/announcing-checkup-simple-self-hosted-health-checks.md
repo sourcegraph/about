@@ -1,6 +1,8 @@
 ---
 title: 'Announcing Checkup: simple, self-hosted health checks'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2016-06-08T11:31-07:00
 tags: [
   "blog"

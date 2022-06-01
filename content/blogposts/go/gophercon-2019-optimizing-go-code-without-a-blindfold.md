@@ -1,7 +1,8 @@
 ---
 title: "GopherCon 2019 - Optimizing Go Code without a blindfold"
 description: "Making code faster is exciting, and benchmarks in Go make that easy to do! Not really. Optimizing a program can be complex and requires careful consideration to do so properly. This session will demonstrate techniques and tools which are a must for any performance aficionado."
-author: Colin King for the GopherCon 2019 Liveblog
+authors:
+  - name: Colin King for the GopherCon 2019 Liveblog
 publishDate: 2019-07-26T00:00-11:55
 tags: [
   gophercon

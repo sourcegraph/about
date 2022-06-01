@@ -1,6 +1,9 @@
 ---
 title: "Small but useful improvements"
-author: Loïc Guychard, Adam Harvey, Eric Fritz
+authors:
+  - name: Loïc Guychard
+  - name: Adam Harvey
+  - name: Eric Fritz
 publishDate: 2020-07-20T04:00-07:00
 tags: [blog]
 slug: small-but-useful-improvements

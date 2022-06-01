@@ -1,6 +1,7 @@
 ---
 title: 'Functional Programming in Go'
-author: 'Aaron Schlesinger'
+authors:
+  - name: Aaron Schlesinger
 publishDate: 2017-07-14T23:04-07:00
 tags: [
   "gophercon"

@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - A better story for Kubernetes secrets"
 description: "Secrets are a key pillar of Kubernetes, but anyone with access to etcd can all the plaintext values! Attendees will learn techniques for securing Kubernetes secrets including encryption, KMS plugins, and tools like HashiCorp Vault, and the tradeoffs of each approach to better secure their clusters."
-author: Ackerley Tng
-authorUrl: https://github.com/ackerleytng
-linkedInUrl: https://www.linkedin.com/in/ackerleytng
+authors:
+  - name: Ackerley Tng
+    url: https://github.com/ackerleytng
 publishDate: 2019-09-14T00:00-11:20
 tags: [
   strange-loop

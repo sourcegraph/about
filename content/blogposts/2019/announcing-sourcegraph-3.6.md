@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph 3.6: Bitbucket Server plugin, search performance improvements, and quick links'
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-07-20T10:00-07:00
 tags: [
   blog

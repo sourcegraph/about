@@ -1,6 +1,8 @@
 ---
 title: 'Hack time at Sourcegraph'
-author: 'Nick Snyder'
+authors:
+  - name: Nick Snyder
+    url: https://twitter.com/nickdsnyder
 publishDate: 2018-08-07T09:00-07:00
 tags: [
   "blog"

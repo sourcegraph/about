@@ -1,6 +1,7 @@
 ---
 title: 'GraphQL on the Edge'
-author: 'Michael Fix'
+authors:
+  - name: Michael Fix
 publishDate: 2017-10-26T00:00-07:00
 tags: [
   "graphql"

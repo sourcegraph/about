@@ -1,6 +1,7 @@
 ---
 title: 'Valuable Lessons in Over-Engineering the Core of Kubernetes kops, Kris Nova'
-author: 'Kris Nova'
+authors:
+  - name: Kris Nova
 publishDate: 2017-07-13T00:00-07:00
 tags: [
   "gophercon"

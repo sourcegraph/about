@@ -1,6 +1,7 @@
 ---
 title: 'Better GitHub code search and browsing with the Sourcegraph Chrome extension'
-author: 'Matt King'
+authors:
+  - name: Matt King
 publishDate: 2017-06-27T00:00-07:00
 tags: [
   "blog"

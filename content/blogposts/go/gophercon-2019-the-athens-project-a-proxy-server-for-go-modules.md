@@ -1,7 +1,9 @@
 ---
 title: "GopherCon 2019 - The Athens project: A proxy server for Go modules"
 description: "Go 1.11 was a big release for all of us because we got a new package management system called modules built right into the go CLI. If you tried out vgo before 1.11, you'll be familiar with modules. There's some really cool stuff in there, but there's one piece that a lot of us missed that we need to pay special attention to: the download API."
-author: Christina Forney for the GopherCon 2019 Liveblog
+authors:
+  - name: Christina Forney for the GopherCon 2019 Liveblog
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-07-26T00:00-09:10
 tags: [
   gophercon

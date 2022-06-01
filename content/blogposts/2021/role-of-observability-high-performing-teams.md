@@ -1,8 +1,8 @@
 ---
 title: 'Monitoring is not enough: For high-performing development teams you need observability tools'
 externalTitle: 'Observability tools for high-performing development'
-author: Kevin Graham
-authorUrl:
+authors:
+  - name: Kevin Graham
 description: "Observability and tracking the right metrics are critical to development teams' success. We chatted to Charity Majors of Honeycomb about bridging the gap between dev and ops, and making software more comprehensible to everyone."
 externalDescription: 'Observability tools, designed for distributed systems and microservices architectures, are necessary for modern software development: here’s why.'
 publishDate: 2021-06-04T18:00-07:00

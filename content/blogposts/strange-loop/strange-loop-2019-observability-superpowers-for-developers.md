@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Observability: Superpowers for Developers"
 description: "Who wants to spend time dreaming about the ability to leap tall buildings with a single bound, when we can recast stories we live day to day as powers of our own... and improve our own lives in a practical way? When observability is folded into the development process itself, it represents the potential for a beautifully virtuous cycle: production stops being just where our development code runs into issues, and it becomes where part of our development process lives."
-author: Rainya Mosher
-authorUrl: https://www.linkedin.com/in/rainyamosher/
-linkedInUrl: https://www.linkedin.com/in/rainyamosher/
+authors:
+  - name: Rainya Mosher
+    url: https://www.linkedin.com/in/rainyamosher/
 publishDate: 2019-09-13T00:00-11:20
 tags: [
   strange-loop

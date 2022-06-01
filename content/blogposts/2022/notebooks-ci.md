@@ -1,8 +1,9 @@
 ---
 title: 'How we used Notebooks to make our CI more accessible and understandable'
 description: 'The Sourcegraph CI is complex and customized. To make it more accessible, software engineer Robert Lin used the new Sourcegraph feature, Notebooks, to make living documentation.'
-author: Robert Lin
-authorUrl: https://handbook.sourcegraph.com/team/#robert-lin
+authors:
+  - name: Robert Lin
+    url: https://handbook.sourcegraph.com/company/team#robert-lin
 publishDate: 2022-04-28T18:00+02:00
 tags: [blog]
 slug: notebooks-ci

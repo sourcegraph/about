@@ -1,8 +1,9 @@
 ---
 title: "A dev's thoughts on developer productivity"
 description: 'Developers are systems thinkers and yet, most measures of developer productivity are metrics-based, instead of systems-based. In this post, Sourcegraph co-founder and CTO Beyang Liu presents five charts that visualize what really matters for developer productivity.'
-author: Beyang Liu
-authorUrl: https://twitter.com/beyang
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2022-05-10T18:00+02:00
 tags: [blog]
 slug: developer-productivity-thoughts

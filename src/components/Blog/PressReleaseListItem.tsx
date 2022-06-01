@@ -26,7 +26,7 @@ export const PressReleaseListItem: FunctionComponent<PostIndexItem> = ({
                     <a className={`d-block ${titleLinkClassName}`}>{frontmatter.title}</a>
                 </Link>
             </h1>
-            {frontmatter.author && frontmatter.publishDate && (
+            {frontmatter.publishDate && (
                 <p className="text-align-center text-secondary mb-0">
                     <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
                 </p>

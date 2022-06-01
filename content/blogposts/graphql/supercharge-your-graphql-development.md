@@ -1,6 +1,7 @@
 ---
 title: 'Supercharge your GraphQL Development'
-author: '@attfarhan'
+authors:
+  - name: '@attfarhan'
 publishDate: 2017-10-26T22:28-07:00
 tags: [
   "graphql"

@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph, code intelligence, and the Language Server Protocol'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2017-05-15T00:00-07:00
 tags: [
   "blog"

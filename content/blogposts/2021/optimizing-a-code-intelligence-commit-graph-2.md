@@ -1,7 +1,8 @@
 ---
 title: 'Optimizing a code intelligence commit graph (Part 2)'
-author: Eric Fritz
-authorUrl: https://eric-fritz.com
+authors:
+  - name: Eric Fritz
+    url: https://eric-fritz.com
 description: "We enabled Sourcegraph to resolve code intelligence requests for commits missing an index, but ran into scalability challenges when dealing with large commit graphs. Here's how we unearthed and resolved the problem."
 publishDate: 2021-06-03T18:00-07:00
 tags: [blog]
