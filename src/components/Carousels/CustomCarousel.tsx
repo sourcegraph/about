@@ -55,14 +55,16 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             >
                 {props.showHeadlinesOnMobile && (
                     <div className="d-block d-lg-none mb-0 h-md-100 h-sm-200 h-200">
-                        {carouselItems.map(item => (
-                            <p
-                                className={classNames('custom-carousel-item', item === carouselHook.carouselItems.currentItem && 'active')}
+                        {carouselItems.map((item, index) => (
+                            <h5
+                                className={classNames('custom-carousel-item font-weight-normal cursor-pointer display-5 py-3', item === carouselHook.carouselItems.currentItem && 'd-block pl-3 font-weight-bold')}
                                 key={item.buttonLabel}
+                                onClick={() => carouselHook.moveCarousel(index)}
+                                onKeyDown={() => carouselHook.moveCarousel(index)}
                                 role="presentation"
                             >
                                 {item.buttonLabel}
-                            </p>
+                            </h5>
                         ))}
                     </div>
                 )}
@@ -80,15 +82,15 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     />
                     <div className="ml-lg-6 mb-0">
                         {carouselItems.map((item, index) => (
-                            <p
-                                className={classNames('custom-carousel-item', item === carouselHook.carouselItems.currentItem && 'active')}
+                            <h5
+                                className={classNames('custom-carousel-item font-weight-normal cursor-pointer display-5 py-3', item === carouselHook.carouselItems.currentItem && 'font-weight-bolder')}
                                 key={item.buttonLabel}
                                 onClick={() => carouselHook.moveCarousel(index)}
                                 onKeyDown={() => carouselHook.moveCarousel(index)}
                                 role="presentation"
                             >
                                 {item.buttonLabel}
-                            </p>
+                            </h5>
                         ))}
                     </div>
                     <ArrowDownIcon
