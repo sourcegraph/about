@@ -194,7 +194,7 @@ Additionally, Cobol and Tcl have been added to our growing list of languages sup
 
 - The deprecated feature discussions has been removed. [#9649](https://github.com/sourcegraph/sourcegraph/issues/9649)
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.16) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#3.16) is available on GitHub.
 
 ## Thank you
 

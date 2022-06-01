@@ -125,7 +125,7 @@ Hover tooltips and jump-to-definition continue to be quicker and more efficient 
 
 - The `"updateScheduler2"` experiment is now the default and it's no longer possible to configure.
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md) is available on GitHub.
 
 ## Thank you
 
