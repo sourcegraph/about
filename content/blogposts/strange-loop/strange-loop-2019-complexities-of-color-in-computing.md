@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Complexities of Color in Computing"
 description: "Most of us don't question the assumptions we make about color and how we implement it in the technology we build, beyond perhaps a quick contrast check. This inattention to color is a grave mistake, as the history of color in computing is vibrant, and its impact on our lives can be significant! In this talk, we learn about the difference between Euclidean distance and delta-e between colors, and how it can break ADA compliance, crash your AI, and trick your facial recognition software into thinking you don't exist, all without raising an eyebrow."
-author: Shubha Rajan
-authorUrl: https://shubharajan.com/
-linkedInUrl: https://www.linkedin.com/in/shubha-rajan
+authors:
+  - name: Shubha Rajan
+    url: https://shubharajan.com/
 publishDate: 2019-09-14T00:00-10:20
 tags: [
   strange-loop

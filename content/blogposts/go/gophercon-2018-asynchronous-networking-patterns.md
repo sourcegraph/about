@@ -1,6 +1,8 @@
 ---
 title: 'GopherCon 2018 - Asynchronous Networking Patterns'
-author: 'Nick Snyder for the GopherCon Liveblog'
+authors:
+  - name: Nick Snyder for the GopherCon Liveblog
+    url: https://twitter.com/nickdsnyder
 publishDate: 2018-08-28T00:00-06:00
 tags: [
   "gophercon"

@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Improving law interpretability using NLP"
 description: "The process of legal reasoning is heavily reliant on information stored in text, but while legal texts are generally easily accessible, their interpretation often isn't straight forward, making the understanding of the law effectively inaccessible to the general public."
-author: Daniela Miao 
-authorUrl: https://www.linkedin.com/in/danielamiao/
-linkedInUrl: https://www.linkedin.com/in/danielamiao/
+authors:
+  - name: Daniela Miao 
+    url: https://www.linkedin.com/in/danielamiao/
 publishDate: 2019-09-13T00:00-14:30
 tags: [
   strange-loop

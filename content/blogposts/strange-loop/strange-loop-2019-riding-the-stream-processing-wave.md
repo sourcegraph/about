@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Riding the stream processing wave"
 description: "At LinkedIn, we run several thousands of stream processing applications which, coupled with our scale, has exposed us to some unique challenges. We will talk about the 3 kinds of applications that have made the most impact on our stream processing platform.  Machine Learning applications are driving some of the latest innovations for streaming. The current trend is to train a model in batch environments and do inference in online environments. We built some native capabilities such as \"side-inputs\" for handling large state, while allowing features to be continuously pushed from offline grids to streaming environments. Data Scientists prefer DSL's for feature generation and access. Consequently, we built the ability to convert a machine learning DSL to a streaming job and use it for feature engineering. We will talk about this capability and how this can be extended to convert Hive, Pig or other custom DSL to streaming applications.  We have observed the emergence of applications that are moving from batch processing mode to nearline processing mode as well as operating on both batch (HDFS) and streaming (Kafka) datasets (e.g Experimentation). At LinkedIn, we use Samza for stream processing, and Samza applications can achieve offline-online convergence of stream and batch processing by simply switching the streaming input systems like Kafka with HDFS-based input. Apache Beam integration for Samza enables the capability to execute in different environments. Streaming applications now maintain very large local state, and during deployments, application or node failures it is critical to restore this state to its previous version. We will talk about the impact of these failures on large stateful applications and some of the recent improvements we have made in host affinity, state restore and our new standby container solution."
-author: Ackerley Tng
-authorUrl: https://github.com/ackerleytng
-linkedInUrl: https://www.linkedin.com/in/ackerleytng
+authors:
+  - name: Ackerley Tng
+    url: https://github.com/ackerleytng
 publishDate: 2019-09-13T00:00-14:30
 tags: [
   strange-loop

@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph 3.8: Search UI improvements, monitoring tools, code change campaigns, and LSIF-based code intelligence"
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-09-20T10:00-07:00
 tags: [
   blog

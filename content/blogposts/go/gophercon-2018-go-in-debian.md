@@ -1,6 +1,7 @@
 ---
 title: 'GopherCon 2018 - Go in Debian'
-author: 'Larry Clapp for the Gophercon Liveblog'
+authors:
+  - name: Larry Clapp for the Gophercon Liveblog
 publishDate: 2018-08-29T00:00-06:00
 tags: [
   "gophercon"

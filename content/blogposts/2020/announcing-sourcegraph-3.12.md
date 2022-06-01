@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph 3.12: Match case toggle, draft campaigns, and exciting experimental features"
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2020-01-20T10:00-07:00
 tags: [
   blog

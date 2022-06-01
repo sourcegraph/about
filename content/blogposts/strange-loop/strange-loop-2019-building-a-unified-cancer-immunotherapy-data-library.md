@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Building a Unified Cancer Immunotherapy Data Library"
 description: "The introduction of immunotherapies has revolutionized the treatment of cancer and ushered in a corresponding explosion of research into cancer, the immune system, and their interaction. In September 2018, there were 3,394 Cancer Immunotherapy agents being tested in clinical trials - a 67% increase from the number of agents being tested one year earlier. With this explosion in research comes an explosion of data and the challenge of keeping track of and unifying published and public data so that research organizations can stay on top of the field."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-15:30
 tags: [
   strange-loop

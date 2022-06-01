@@ -1,6 +1,7 @@
 ---
 title: 'GraphQL Under the Hood'
-author: 'Jason Bahl'
+authors:
+  - name: Jason Bahl
 publishDate: 2017-10-26T00:00-07:00
 tags: [
   "graphql"

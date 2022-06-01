@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Can Androids Conceive of Electric Sheep"
 description: "What began as a hackathon project turned into a minor obsession... In this talk I'll answer those questions and more as I share the story behind my attempt to create an android artist."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-14T00:00-10:20
 tags: [
   strange-loop

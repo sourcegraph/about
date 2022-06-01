@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph browser extensions are now open source'
-author: 'Nick Snyder'
+authors:
+  - name: Nick Snyder
+    url: https://twitter.com/nickdsnyder
 publishDate: 2018-08-10T07:30-07:00
 tags: [
   "blog"

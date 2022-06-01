@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Rhapsody in Zero Knowledge: Proving Without Revealing"
 description: "What does it mean to prove something? Propositional logic requires we reveal propositions and then prove them true, but what if it were possible to create proofs which reveal nothing but their own validity? This is the core idea behind the emergent field of zero knowledge proofs: a decades old solution to a problem we didn't even know existed yet. As we increasingly turn to machine learning to solve problems related to security, such as detecting frauds, fakes, or other threat actors, solutions increasingly rely on accumulating massive amounts of personal data, undermining privacy and risking data breaches. This talk is about how we don't have to sacrifice privacy to get security, and the potential power of constraints, complexity, and universal verifiable computation, and assumes no prior knowledge of cryptography or proof systems."
-author: Prasanna Gautam
-authorUrl: https://twitter.com/prasincs
-linkedInUrl: https://www.linkedin.com/in/prasannagautam/
+authors:
+  - name: Prasanna Gautam
+    url: https://twitter.com/prasincs
 publishDate: 2019-09-14T00:00-14:30
 tags: [
   strange-loop

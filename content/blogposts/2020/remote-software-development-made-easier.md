@@ -1,7 +1,10 @@
 ---
 title: "Remote software development made easier"
-author: Stephen Gutekanst and Vanesa Ortiz
-authorUrl: https://twitter.com/sourcegraph
+authors:
+  - name: Stephen Gutekanst
+    url: https://handbook.sourcegraph.com/team/#stephen-gutekanst
+  - name: Vanesa Ortiz
+    url: https://handbook.sourcegraph.com/team/#vanesa-ortiz
 publishDate: 2020-04-14T17:59
 tags: [blog]
 slug: remote-software-development-made-easier

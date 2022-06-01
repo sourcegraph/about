@@ -1,6 +1,7 @@
 ---
 title: 'Behaviors of Channels'
-author: 'William Kennedy (speaker)'
+authors:
+  - name: William Kennedy (speaker)
 publishDate: 2017-11-06T12:10+01:00
 tags: [
   "dotGo"

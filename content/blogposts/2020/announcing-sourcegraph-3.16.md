@@ -1,6 +1,8 @@
 ---
 title: "Sourcegraph 3.16: Search past releases, get started with campaigns, and enjoy syntax highlighting improvements"
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2020-05-20T10:00-07:00
 tags: [
   blog

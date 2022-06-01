@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - How Computers Misunderstand the World"
 description: "AI offers so many exciting possibilities for campuses, corporations, and communities. However, as we look to the future, we must keep in mind that technology has fundamental limits and AI is not a magic bullet that solves all social problems. In this talk, author and professor Meredith Broussard looks at the inner workings and outer limits of AI and argues why we should never assume that computers get everything right. Making a case against \"techno-chauvisnism\" - the belief that technology is always the superior solution - Broussard looks at why self-driving cars don't actually work and why a digital \"utopia\" will still harbor the social problems we experience today. She explores how understanding the limits of what we can do with technology allows us to make better choices about what we should do with technology to make the world better for everyone."
-author: Rainya Mosher
-authorUrl: https://www.linkedin.com/in/rainyamosher/
+authors:
+  - name: Rainya Mosher
+    url: https://www.linkedin.com/in/rainyamosher/
 publishDate: 2019-09-14T00:00-09:10
 tags: [
   strange-loop

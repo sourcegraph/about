@@ -1,9 +1,9 @@
 ---
 title: "Strange Loop 2019 - Computer Vision and NLP for Multi-Task Fashion Modeling"
 description: "Shoprunner aggregates millions of products from 140 retailers which represent thousands of brands. In order to make these products findable and searchable by users it is important for Shoprunner to be able to standardize the attributes (style, color, pattern etc) of these millions of products. Even after defining what attributes to model, choosing the best way to predict attributes is difficult because every product can be represented in a variety of forms such as images, product description, title,and brand name. These different data representations each have their strengths and weaknesses. Images encode information such as color and pattern well while other attributes related to length and cut may be well captured in text descriptions. This session will go through the multi-task learning ensemble that the Data Science team at Shoprunner has built using both custom multi-task CNNs for images and fine-tuned Bert model for text classification in Pytorch for attribute modeling."
-author: Lee Edwards
-authorUrl: https://ledwards.com
-linkedInUrl: https://www.linkedin.com/in/leeredwards
+authors:
+  - name: Lee Edwards
+    url: https://ledwards.com
 publishDate: 2019-09-14T00:00-13:30
 tags: [
   strange-loop

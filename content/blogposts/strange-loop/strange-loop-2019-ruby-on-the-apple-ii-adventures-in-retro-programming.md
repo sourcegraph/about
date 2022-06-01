@@ -1,8 +1,9 @@
 ---
 title: "Strange Loop 2019 - Ruby on the Apple II: Adventures in Retro Programming"
 description: "The minimum system requirements for PowerPoint 2019 are 4 GB of RAM and a 1.6 GHz CPU. The system requirements for this talk are a few kilobytes of RAM, a 5 1/4\" floppy disk drive, and a 30 year old computer.  With an 8-bit CPU running at 1 megahertz and kilobytes of RAM, the Apple ][ was a humble machine. Many people first learned to program on it, but the languages designed for the Apple ][ tended to be clumsy and limiting by modern standards. Surely it isn't possible to fit a language as dynamic, rich, and complicated as Ruby on such a limited machine, right?  Come see Ruby running where it has never run before, learn how programming was done decades ago."
-author: Blogy McBlogerson
-authorUrl: https://heresblogy.com/
+authors:
+  - name: Blogy McBlogerson
+    url: https://heresblogy.com/
 publishDate: 2019-09-13T00:00-11:20
 tags: [
   strange-loop

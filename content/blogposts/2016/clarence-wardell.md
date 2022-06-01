@@ -1,6 +1,8 @@
 ---
 title: 'GitHub Universe liveblog: Clarence Wardell, U.S. Digital Service'
-author: 'Beyang Liu'
+authors:
+  - name: Beyang Liu
+    url: https://twitter.com/beyang
 publishDate: 2016-05-30T00:00-07:00
 tags: [
   "blog"

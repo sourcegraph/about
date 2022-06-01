@@ -1,7 +1,9 @@
 ---
 title: "GopherCon 2019 - PKI for Gophers"
 description: "TLS is easy, PKI is hard. Learn about Go primitives for generating certificate hierarchies, instrumenting mTLS, hardware backed keys, and public infrastructure like Let's Encrypt and Certificate Transparency. Along the way we'll discuss roots of trust for automated issuance, nuances of revocation, and encourage you to roll your own PKI."
-author: Stephen Gutekanst for the GopherCon 2019 Liveblog
+authors:
+  - name: Stephen Gutekanst for the GopherCon 2019 Liveblog
+    url: https://slimsag.com
 publishDate: 2019-07-25T00:00-14:55
 tags: [
   gophercon

@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph liveblogging at GopherCon 2018!'
-author: 'Ryan Blunden - Developer Advocate at Sourcegraph'
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2018-08-22T00:00-07:00
 tags: [
   "blog"

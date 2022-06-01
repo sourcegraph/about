@@ -1,6 +1,8 @@
 ---
 title: Sourcegraph on the future of coding podcast episode 32
-author: Ryan Blunden
+authors:
+  - name: Ryan Blunden
+    url: https://twitter.com/ryan_blunden
 publishDate: 2018-10-25T00:00-07:00
 tags: [
   blog

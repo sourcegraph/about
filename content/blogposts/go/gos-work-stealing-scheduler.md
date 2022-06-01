@@ -1,6 +1,7 @@
 ---
 title: "Go's Work Stealing Scheduler"
-author: 'Jaana B. Dogan (speaker)'
+authors:
+  - name: Jaana B. Dogan (speaker)
 publishDate: 2017-11-06T17:30+01:00
 tags: [
   "dotGo"

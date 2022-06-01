@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, WebinarLayout } from '@components'
+import { Layout, GatedResourceLayout } from '@components'
 
 const speakers = [
     {
@@ -26,7 +26,7 @@ export const Webinar: FunctionComponent = () => (
         }}
         className="navbar-white"
     >
-        <WebinarLayout
+        <GatedResourceLayout
             title="Preparing for the Next Log4j"
             subtitle="How Nutanix Remediated the Vulnerability in 4 Days"
             speakers={speakers}
@@ -35,6 +35,7 @@ export const Webinar: FunctionComponent = () => (
                 logo: '/external-logos/nutanix-logo.svg',
                 href: 'https://nutanix.com',
             }}
+            formLabel="Watch the on-demand webinar"
             form={{
                 formId: 'abb86998-1a6a-4cfd-9888-ffba09c850c9',
                 onFormSubmitted: () => window.open('https://my.demio.com/recording/ANM9Sjbx'),

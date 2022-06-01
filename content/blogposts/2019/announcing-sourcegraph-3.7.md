@@ -1,6 +1,8 @@
 ---
 title: 'Sourcegraph 3.7: Improved performance, efficiency, accuracy, and reliability'
-author: Christina Forney
+authors:
+  - name: Christina Forney
+    url: https://handbook.sourcegraph.com/team/#christina-forney
 publishDate: 2019-08-20T10:00-07:00
 tags: [
   blog
