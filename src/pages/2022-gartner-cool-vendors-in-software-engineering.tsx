@@ -14,7 +14,7 @@ export const Report: FunctionComponent = () => (
             title="Cool Vendors in Software Engineering: Enhancing Developer Productivity"
             customer={{
                 name: 'Gartner',
-                logo: '/external-logos/gartner-cool-vendor-2022.svg',
+                logo: '/external-logos/gartner-cool-vendor-2022.png',
             }}
             formLabel="Access the report"
             form={{
