@@ -28,7 +28,7 @@ const useCases: UseCases[] = [
         title: 'Improve code security',
         description: 'Find, fix, and track vulnerable code quickly across your entire codebase.',
         link: {
-            href: '/use-cases/vulnerabilities',
+            href: '/use-cases/code-security',
             text: 'Learn more about code security',
         },
     },

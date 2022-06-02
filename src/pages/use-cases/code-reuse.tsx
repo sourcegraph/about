@@ -166,9 +166,9 @@ const CodeReusePage: FunctionComponent = () => (
             description:
                 'Find existing code libraries for reuse and avoid spending time on problems a teammate already solved for a more secure and coherent codebase.',
         }}
-        className="use-cases-page"
+        className="use-cases-page navbar-light"
         hero={
-            <section className={`${styles.pageHeader} navbar-light`}>
+            <section className={styles.pageHeader}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7 my-7">

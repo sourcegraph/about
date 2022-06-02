@@ -13,9 +13,6 @@
         }
     }
 
-    &__nav-item {
-        align-items: center;
-    }
     &__nav-link.btn:hover {
         color: $light !important;
     }
@@ -55,11 +52,8 @@
     }
 
     .right-nav {
-        .nav-link.btn-simple {
+        a.btn-simple {
             color: $blurple;
-        }
-        .nav-link.btn {
-            font-weight: bold;
         }
     }
 
