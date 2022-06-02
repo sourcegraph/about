@@ -169,7 +169,7 @@ Some of our favorites were:
 - New site config option `branding.brandName` configures the brand name to display in the Sourcegraph \<title\> element.
 - `repositoryPathPattern` option added to the "Other" external service type for repository name customization.
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#370) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#370) is available on GitHub.
 
 ## Thank you
 
