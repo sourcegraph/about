@@ -32,7 +32,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                     <Link href="/pricing">Pricing</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/handouts/Sourcegraph-Overview.pdf">Sourcegraph overview (PDF)</Link>
+                                    <Link href="/handouts/Sourcegraph-Overview.pdf">Sourcegraph overview</Link>
                                 </li>
                             </ul>
                         </div>
