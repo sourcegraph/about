@@ -31,6 +31,9 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                 <li className="nav-item">
                                     <Link href="/pricing">Pricing</Link>
                                 </li>
+                                <li className="nav-item">
+                                    <Link href="/handouts/Sourcegraph-Overview.pdf">Sourcegraph Overview</Link>
+                                </li>
                             </ul>
                         </div>
 
