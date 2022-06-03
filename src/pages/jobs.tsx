@@ -167,7 +167,7 @@ const CareersPage: FunctionComponent = () => {
                     </div>
                 </div>
 
-                <Carousel className="culture-carousel">
+                <Carousel className="culture-carousel py-8" controls={false}>
                     <Carousel.Item className="bg-gradient-blue-violet-mist">
                         <div className="row">
                             <h1 className="col-lg-6 my-auto">
@@ -176,8 +176,8 @@ const CareersPage: FunctionComponent = () => {
                                     #life-at-sourcegraph
                                 </p>
                             </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture1.png" alt="Photograph strip of Sourcegraph team members" />
+                            <div className="col-lg-6 h-600">
+                                <img className="w-100 max-w-450" src="/careers/culture1.png" alt="Photograph strip of Sourcegraph team members" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -188,8 +188,8 @@ const CareersPage: FunctionComponent = () => {
                                     We're moving <i>fast</i> to create a world in which everyone can code
                                 </p>
                             </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture2.png" alt="Group riding go karts" />
+                            <div className="col-lg-6 h-600">
+                                <img className="w-100 max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -201,8 +201,8 @@ const CareersPage: FunctionComponent = () => {
                                     #life-is-beachy
                                 </p>
                             </h1>
-                            <div className="col-lg-6 img-container">
-                                <img className="landscape" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />
+                            <div className="col-lg-6 h-600">
+                                <img className="w-100 max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />
                             </div>
                         </div>
                     </Carousel.Item>
@@ -214,8 +214,9 @@ const CareersPage: FunctionComponent = () => {
                                     #pets-of-sourcegraph
                                 </p>
                             </h1>
-                            <div className="col-lg-6 img-container">
+                            <div className="col-lg-6 h-600">
                                 <img
+                                    className="w-100 max-w-450"
                                     src="/careers/culture4.png"
                                     alt="Black and white cat next to it's doppleganger cat Sourcegraph sticker"
                                 />
@@ -227,8 +228,8 @@ const CareersPage: FunctionComponent = () => {
                             <h1 className="col-lg-6 my-auto">
                                 <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
                             </h1>
-                            <div className="col-lg-6 img-container">
-                                <img src="/careers/culture5.png" alt="Baby holding a coding babybook" />
+                            <div className="col-lg-6 h-600">
+                                <img className="w-100 max-w-450" src="/careers/culture5.png" alt="Baby holding a coding babybook" />
                             </div>
                         </div>
                     </Carousel.Item>

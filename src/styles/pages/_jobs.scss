@@ -137,26 +137,6 @@
                     height: 130px;
                 }
             }
-            .img-container {
-                height: 611px;
-            }
-            img {
-                width: 100%;
-                max-width: 458px;
-                margin-left: 10%;
-
-                @media only screen and (max-width: 768px) {
-                    margin-left: 0;
-                }
-            }
-            img.landscape {
-                margin-top: 89px;
-                max-width: 577px;
-            }
-        }
-        .carousel-control-prev,
-        .carousel-control-next {
-            display: none;
         }
     }
 
