@@ -86,16 +86,8 @@
 
     /* Styling for both carousels */
     .carousel {
-        h1 {
-            font-size: 3rem;
-            line-height: 3.75rem;
-        }
         .carousel-indicators {
-            bottom: 40px;
-
-            @media only screen and (max-width: 768px) {
-                bottom: 0;
-            }
+            bottom: 5%;
 
             .active {
                 opacity: 1;
@@ -116,92 +108,6 @@
             .carousel-control-next {
                 display: none;
             }
-        }
-    }
-
-    .culture-carousel {
-        .carousel-item {
-            .row {
-                padding: 128px;
-
-                @media only screen and (max-width: 768px) {
-                    padding: 40px 60px;
-                }
-            }
-            p {
-                @media only screen and (max-width: 768px) {
-                    font-size: 2rem;
-                    line-height: 2.5rem;
-                    margin-bottom: 30px;
-                    text-align: center;
-                    height: 130px;
-                }
-            }
-        }
-    }
-
-    .values-carousel {
-        padding: 170px 0;
-
-        @media only screen and (max-width: 768px) {
-            padding: 120px 0;
-            margin-bottom: 70px;
-        }
-
-        .carousel-item .row > div {
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        .subTitle {
-            font-size: 1.25rem;
-            line-height: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-
-            @media only screen and (max-width: 768px) {
-                margin-bottom: 10px;
-            }
-        }
-        h1 {
-            margin-bottom: 20px;
-
-            @media only screen and (max-width: 768px) {
-                font-size: 2rem;
-                line-height: 2.5rem;
-            }
-        }
-        img {
-            margin-top: 50px;
-            width: 100%;
-            max-width: 500px;
-
-            @media only screen and (max-width: 768px) {
-                max-width: 300px;
-                margin-top: 25px;
-            }
-        }
-        .paragraph {
-            height: 64px; /* hardcoding height so that it doesn't jump up and down in between slides */
-            font-size: 1.125rem;
-            line-height: 1.375rem;
-            width: 50%;
-            margin: 0 auto;
-
-            @media only screen and (max-width: 768px) {
-                width: 85%;
-                margin: 0 auto;
-            }
-        }
-        .carousel-control-prev,
-        .carousel-control-next {
-            margin-top: 200px;
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon,
-        .carousel-indicators li {
-            background-color: $space-black;
         }
     }
 }

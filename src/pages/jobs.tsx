@@ -51,6 +51,93 @@ const CareersPage: FunctionComponent = () => {
             link: 'https://www.glassdoor.com/Reviews/Employee-Review-Sourcegraph-RVW11950185.htm',
         },
     ]
+    const cultureItems = [
+        {
+            className: 'bg-gradient-blue-violet-mist',
+            text: (
+                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                    Just because we're remote doesn't mean we're apart <br />
+                    #life-at-sourcegraph
+                </h2>
+            ),
+            img: <img className="w-100 max-w-450" src="/careers/culture1.png" alt="Photograph strip of Sourcegraph team members" />
+        },
+        {
+            className: 'bg-gradient-violet-yellow-mist',
+            text: (
+                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                    We're moving <i>fast</i> to create a world in which everyone can code
+                </h2>
+            ),
+            img: <img className="w-100 max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />
+        },
+        {
+            className: 'bg-gradient-yellow-green-mist',
+            text: (
+                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                    Work whenever and wherever <br />
+                    #life-is-beachy
+                </h2>
+            ),
+            img: <img className="w-100 max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />
+        },
+        {
+            className: 'bg-gradient-green-red-mist',
+            text: (
+                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                    Our pets are Sourcegraph Teammates, too <br />
+                    #pets-of-sourcegraph
+                </h2>
+            ),
+            img: <img className="w-100 max-w-450" src="/careers/culture4.png" alt="Black and white cat next to it's doppleganger cat Sourcegraph sticker" />
+        },
+        {
+            className: 'bg-gradient-red-plum-mist',
+            text: (
+                <h2 className="col-lg-6 display-3 font-weight-bolder my-auto">
+                    Creating the next generation of Sourcegraph coders, one baby at a time
+                </h2>
+            ),
+            img: <img className="w-100 max-w-450" src="/careers/culture5.png" alt="Baby holding a coding babybook" />
+        },
+    ]
+    const valueItems = [
+        {
+            value: 'High quality work',
+            description: 'You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/1highquality.svg" alt="Diamond illustration" />
+        },
+        {
+            value: 'Being customer-first',
+            description: 'You earn and keep the trust of our customers by putting their interests first.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/2customerdriven.svg" alt="Fist bump illustration" />
+        },
+        {
+            value: 'Working as a team',
+            description: 'You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/3team.svg" alt="Tandem bicycle illustration" />
+        },
+        {
+            value: 'High agency',
+            description: 'You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/4highagency.svg" alt="Stamp labeled 'First class' illustration" />
+        },
+        {
+            value: 'Being welcoming & inclusive',
+            description: 'You make people from all groups and backgrounds feel comfortable belonging to our team and community.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/5welcoming.svg" alt="Head illustration with a heart in the center" />
+        },
+        {
+            value: 'Being open & transparent',
+            description: 'You proactively communicate in an open and transparent way.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/6open.svg" alt="X-ray vision glasses illustration" />
+        },
+        {
+            value: 'Continuous growth',
+            description: 'You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/7growth.svg" alt="Tall giraffe illustration" />
+        },
+    ]
 
     return (
         <Layout className="jobs-page">
@@ -167,166 +254,33 @@ const CareersPage: FunctionComponent = () => {
                     </div>
                 </div>
 
-                <Carousel className="culture-carousel py-8" controls={false}>
-                    <Carousel.Item className="bg-gradient-blue-violet-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    Just because we're remote doesn't mean we're apart <br />
-                                    #life-at-sourcegraph
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 h-600">
-                                <img className="w-100 max-w-450" src="/careers/culture1.png" alt="Photograph strip of Sourcegraph team members" />
+                <Carousel controls={false}>
+                    {cultureItems.map(item => (
+                        <Carousel.Item className={item.className} key={item.className}>
+                            <div className="row px-md-8 px-5 py-8">
+                                {item.text}
+                                <div className="col-lg-6 h-600 d-flex align-items-center">
+                                    {item.img}
+                                </div>
                             </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-violet-yellow-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    We're moving <i>fast</i> to create a world in which everyone can code
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 h-600">
-                                <img className="w-100 max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-yellow-green-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    Work whenever and wherever <br />
-                                    #life-is-beachy
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 h-600">
-                                <img className="w-100 max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-green-red-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>
-                                    Our pets are Sourcegraph Teammates, too <br />
-                                    #pets-of-sourcegraph
-                                </p>
-                            </h1>
-                            <div className="col-lg-6 h-600">
-                                <img
-                                    className="w-100 max-w-450"
-                                    src="/careers/culture4.png"
-                                    alt="Black and white cat next to it's doppleganger cat Sourcegraph sticker"
-                                />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item className="bg-gradient-red-plum-mist">
-                        <div className="row">
-                            <h1 className="col-lg-6 my-auto">
-                                <p>Creating the next generation of Sourcegraph coders, one baby at a time</p>
-                            </h1>
-                            <div className="col-lg-6 h-600">
-                                <img className="w-100 max-w-450" src="/careers/culture5.png" alt="Baby holding a coding babybook" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
+                        </Carousel.Item>
+                    ))}
                 </Carousel>
 
                 <Carousel
-                    className="values-carousel"
                     prevIcon={<ArrowLeftIcon color="#808080" />}
                     nextIcon={<ArrowRightIcon color="#808080" />}
                 >
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>High quality work</h1>
-                                <p className="paragraph">
-                                    You are responsible for finding out what high-quality work looks like and producing
-                                    that high-quality work iteratively.
-                                </p>
-                                <img src="/careers/1highquality.svg" alt="Diamond illustration" />
+                    {valueItems.map(item => (
+                        <Carousel.Item key={item.value}>
+                            <div className="d-flex flex-column align-items-center py-8">
+                                <h5 className="display-5 font-weight-bold text-uppercase">We value:</h5>
+                                <h2 className="display-4">{item.value}</h2>
+                                <p className="col-5 display-5 text-center">{item.description}</p>
+                                {item.img}
                             </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Being customer-first</h1>
-                                <p className="paragraph">
-                                    You earn and keep the trust of our customers by putting their interests first.
-                                </p>
-                                <img src="/careers/2customerdriven.svg" alt="Fist bump illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Working as a team</h1>
-                                <p className="paragraph">
-                                    You work collaboratively with your peers, cross-functional teammates, and leadership
-                                    to create shared success, trust, and belonging.
-                                </p>
-                                <img src="/careers/3team.svg" alt="Tandem bicycle illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>High agency</h1>
-                                <p className="paragraph">
-                                    You have the power and the responsibility to improve Sourcegraph as a company and as
-                                    a product. You deliver regardless of the circumstances.
-                                </p>
-                                <img src="/careers/4highagency.svg" alt="Stamp labeled 'First class' illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Being welcoming & inclusive</h1>
-                                <p className="paragraph">
-                                    You make people from all groups and backgrounds feel comfortable belonging to our
-                                    team and community.
-                                </p>
-                                <img src="/careers/5welcoming.svg" alt="Head illustration with a heart in the center" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Being open & transparent</h1>
-                                <p className="paragraph">You proactively communicate in an open and transparent way.</p>
-                                <img src="/careers/6open.svg" alt="X-ray vision glasses illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <div className="row">
-                            <div>
-                                <p className="subTitle">We value:</p>
-                                <h1>Continuous growth</h1>
-                                <p className="paragraph">
-                                    You strive to continuously grow and learn by genuinely soliciting feedback early and
-                                    often, and humbly reflecting on your past mistakes.
-                                </p>
-                                <img src="/careers/7growth.svg" alt="Tall giraffe illustration" />
-                            </div>
-                        </div>
-                    </Carousel.Item>
+                        </Carousel.Item>
+                    ))}
                 </Carousel>
 
                 <div className="bg-gradient-saturn-saturated py-8">
