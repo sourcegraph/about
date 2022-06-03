@@ -9,7 +9,6 @@ export const Guide: FunctionComponent = () => (
             description:
                 'Learn about challenges open source projects and private companies face onboarding developers and best practices to onboard new developers more effectively.',
         }}
-        className="navbar-white"
     >
         <GatedResourceLayout
             title="Optimizing developer onboarding"
