@@ -170,7 +170,7 @@ Previously, fetching ACL data from Bitbucket Server was limited by API constrain
 - The deprecated GraphQL mutation `setAllRepositoriesEnabled` has been removed. [#7478](https://github.com/sourcegraph/sourcegraph/pull/7478)
 - The deprecated GraphQL mutation `deleteRepository` has been removed. [#7483](https://github.com/sourcegraph/sourcegraph/pull/7483)
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.12) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#3.12) is available on GitHub.
 
 ## Thank you
 

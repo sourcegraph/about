@@ -210,9 +210,9 @@ const blogResourceItems = [
 const UseCasePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Find and fix security vulnerabilities',
+            title: 'Code Security: Find & Fix Vulnerabilities | Sourcegraph',
             description:
-                'Search across all your repositories to find and resolve vulnerabilities in minutes, not days.',
+                'Search your repositories and find vulnerabilities in minutes, not days. Learn more about Sourcegraph for code security.',
         }}
         className="use-cases-page navbar-light"
         hero={
@@ -229,22 +229,35 @@ const UseCasePage: FunctionComponent = () => (
                                     Search across all your repositories to find and resolve vulnerabilities in minutes,
                                     not days.
                                 </div>
-                                <div className="d-flex flex-column flex-lg-row pt-1">
-                                    <Link href="/demo" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a
-                                            className="btn btn-primary mr-lg-3 mb-lg-0 mb-3 w-md-100"
-                                            title="Request a Demo."
-                                        >
-                                            Request a demo
-                                        </a>
-                                    </Link>
-                                    <Link href="/get-started" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                        <a className="btn btn-outline-primary w-md-100" title="Try Sourcegraph.">
-                                            Try Sourcegraph now
-                                        </a>
-                                    </Link>
+                                <div className="max-w-400 flex-column flex-md-row d-md-flex align-items-center">
+                                    <div className="mb-3 mb-md-0">
+                                        <Link href="/demo" passHref={true}>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                            <a
+                                                className="btn btn-primary w-100"
+                                                title="Request a Demo."
+                                                data-button-style={buttonStyle.primary}
+                                                data-button-location={buttonLocation.hero}
+                                                data-button-type="cta"
+                                            >
+                                                Request a demo
+                                            </a>
+                                        </Link>
+                                    </div>
+                                    <div className="ml-md-3">
+                                        <Link href="/get-started" passHref={true}>
+                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                            <a
+                                                className="btn btn-outline-primary w-100"
+                                                title="Try Sourcegraph."
+                                                data-button-style={buttonStyle.outline}
+                                                data-button-location={buttonLocation.hero}
+                                                data-button-type="cta"
+                                            >
+                                                Try Sourcegraph now
+                                            </a>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

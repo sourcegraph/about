@@ -58,7 +58,7 @@ const ContactHome: FunctionComponent = () => (
                             <h5 className="card-header">Sales</h5>
                             <div className="card-body">
                                 <p className="card-text">For information about products and purchasing:</p>
-                                <Link href="/contact/product-specialist" passHref={true}>
+                                <Link href="/demo" passHref={true}>
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                     <a className="btn btn-outline-primary stretched-link">Contact sales</a>
                                 </Link>

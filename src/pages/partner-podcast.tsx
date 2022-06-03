@@ -12,7 +12,7 @@ const blogResourceItems = [
             'Download the guide to developer onboarding and learn how to shift to a culture of continuous onboarding in your engineering organization.',
         type: 'Guide',
         img: {
-            src: '/guides/dev-onboarding/thumbnail.png',
+            src: 'blog/thumbnails/continuous-developer-onboarding.png',
             alt: 'Continuous developer onboarding guide thumbnail',
         },
         href: '/guides/continuous-developer-onboarding',
@@ -23,7 +23,7 @@ const blogResourceItems = [
             'See how Nutanix was able to confidently identify every instance of Log4j across its sprwaling codebase and deliver patches to its customers that fully remediated the vulnerability within 4 days.',
         type: 'Case study',
         img: {
-            src: 'https://storage.googleapis.com/sourcegraph-assets/blog/code-insights-ga-blogs/code-insights-docs.png',
+            src: 'blog/thumbnails/code-insights-docs.png',
             alt: 'Nutanix fixed Log4j quickly with Sourcegraph case study thumbnail',
         },
         href: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',

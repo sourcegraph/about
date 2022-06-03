@@ -24,7 +24,6 @@ export const Webinar: FunctionComponent = () => (
             description:
                 'Join Sourcegraph Product Manager Joel Kwartler and Customer Engineer Shawn King to learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.',
         }}
-        className="navbar-white"
     >
         <GatedResourceLayout
             title="How to track what really matters to you and your team"

@@ -23,16 +23,16 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             <h3 className="footer__nav-header">About Sourcegraph</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
-                                    <Link href="/case-studies">Case studies</Link>
+                                    <Link href="/use-cases">Use cases</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/use-cases">Use cases</Link>
+                                    <Link href="/case-studies">Case studies</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link href="/pricing">Pricing</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link href="/handouts/Sourcegraph-Overview.pdf">Sourcegraph overview (PDF)</Link>
+                                    <Link href="/handouts/Sourcegraph-Overview.pdf">Sourcegraph overview</Link>
                                 </li>
                             </ul>
                         </div>

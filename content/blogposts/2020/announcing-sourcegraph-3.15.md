@@ -257,7 +257,7 @@ For organizations that need to run Sourcegraph behind a proxy, `git fetch` and `
     - Git Server dashboard: The 'echo command duration test' panel now properly displays units in seconds. [#7628](https://github.com/sourcegraph/sourcegraph/issues/7628)
     - Dashboard panels showing firing alerts no longer over-count firing alerts due to the number of service replicas. [#9353](https://github.com/sourcegraph/sourcegraph/issues/9353)
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.15) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#3.15) is available on GitHub.
 
 ## Thank you
 

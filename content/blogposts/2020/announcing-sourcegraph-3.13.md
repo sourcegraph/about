@@ -239,7 +239,7 @@ The new `certificates` field allows you to add certificates to trust when commun
 - All repository fields related to `enabled` and `disabled` have been removed from the GraphQL API. These fields have been deprecated since 3.4. [#3971](https://github.com/sourcegraph/sourcegraph/pull/3971)
 - The deprecated extension API `Hover.__backcompatContents` was removed.
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.13) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#3.13) is available on GitHub.
 
 ## Thank you
 

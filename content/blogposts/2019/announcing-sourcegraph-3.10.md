@@ -172,7 +172,7 @@ As part of Sourcegraph’s ongoing commitment to providing the highest quality, 
 - Reverted [#6094](https://github.com/sourcegraph/sourcegraph/pull/6094) because it introduced a minor security hole involving only Grafana.
   [#6075](https://github.com/sourcegraph/sourcegraph/issues/6075) will be fixed with a different approach.
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#3.10) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#3.10) is available on GitHub.
 
 ## Thank you
 

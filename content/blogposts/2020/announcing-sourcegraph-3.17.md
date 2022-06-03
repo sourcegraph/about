@@ -194,7 +194,7 @@ We are running a [survey](https://www.surveygizmo.com/s3/5628315/SG) to understa
 - Automatic syncing of Campaign webhooks for Bitbucket Server. [#10962](https://github.com/sourcegraph/sourcegraph/pull/10962)
 - The `blacklist` configuration option for Gitolite is DEPRECATED and will be removed in 3.19. Use `exclude.pattern` instead.
 
-The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/master/CHANGELOG.md#{VERSION}) is available on GitHub.
+The [changelog for this and previous releases](https://github.com/sourcegraph/sourcegraph/blob/main/CHANGELOG.md#{VERSION}) is available on GitHub.
 
 ## Thank you
 

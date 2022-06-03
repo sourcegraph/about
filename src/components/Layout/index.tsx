@@ -4,7 +4,8 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import Footer from './Footer'
-import Header from './Header'
+import { Header } from './Header'
+import { navLinks } from './Header/navLinks'
 
 interface LayoutProps {
     meta?: {
@@ -80,6 +81,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                         minimal={props.minimal}
                         className={props.className}
                         hideGetStartedButton={props.hideGetStartedButton}
+                        navLinks={navLinks}
                     />
 
                     {props.hero}

@@ -24,7 +24,6 @@ export const Webinar: FunctionComponent = () => (
             description:
                 'On-Demand Webinar. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
         }}
-        className="navbar-white"
     >
         <GatedResourceLayout
             title="Preparing for the Next Log4j"
@@ -33,7 +32,6 @@ export const Webinar: FunctionComponent = () => (
             customer={{
                 name: 'Nutanix',
                 logo: '/external-logos/nutanix-logo.svg',
-                href: 'https://nutanix.com',
             }}
             formLabel="Watch the on-demand webinar"
             form={{
