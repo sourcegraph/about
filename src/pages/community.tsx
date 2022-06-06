@@ -129,11 +129,7 @@ export const Community: FunctionComponent = () => (
                         </li>
                         <li className="mt-2">Share the road less traveled so that everyone can learn</li>
                     </ul>
-                    <a
-                        className="btn btn-primary"
-                        href="https://discord.gg/rDPqBejz93"
-                        title="Join us on Discord"
-                    >
+                    <a className="btn btn-primary" href="https://discord.gg/rDPqBejz93" title="Join us on Discord">
                         Join us on Discord
                     </a>
                 </div>
@@ -223,8 +219,8 @@ export const Community: FunctionComponent = () => (
                 <div className="col-lg-7">
                     <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
                     <br />
-                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn, or
-                    email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
+                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
+                    or email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
                 </div>
                 <div className="col-lg-5 mt-3">
                     <a
