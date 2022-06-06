@@ -6,8 +6,8 @@ authors:
 publishDate: 2022-06-08T18:00+02:00
 tags: [blog]
 slug: announcing-scip
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png
+heroImage: blog/announcing-scip.png
+socialImage: blog/announcing-scip.png
 published: true
 ---
 
@@ -53,8 +53,12 @@ We are already using SCIP in our indexers scip-typescript (which supports TypeSc
 
 Don Stewart, an engineer at Meta, has integrated SCIP with [Glean](https://glean.software), the system that’s used at Meta for collecting, deriving, and querying facts about code. Don shared on Twitter that SCIP is “8x smaller, and can be processed 3x faster” in comparison with LSIF. 
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fri-yayy so hacked up native <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a> SCIP support for TypeScript repos in Glean. The SCIP data is protobuf-encoded and typed, so compared to LSIF its about 8x smaller, and can be processed 3x faster. The mapping into Glean is ~550 loc, vs 1500 for LSIF. <br/><br/>Example queries: <a href="https://t.co/AZIRqVURLR">pic.twitter.com/AZIRqVURLR</a></p>&mdash; Don Stewart (@donsbot) <a href="https://twitter.com/donsbot/status/1530069211032465408?ref_src=twsrc%5Etfw">May 27, 2022</a></blockquote> 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br/>
+<center>
+<blockquote className="twitter-tweet"><p lang="en" dir="ltr">Fri-yayy so hacked up native <a href="https://twitter.com/sourcegraph?ref_src=twsrc%5Etfw">@sourcegraph</a> SCIP support for TypeScript repos in Glean. The SCIP data is protobuf-encoded and typed, so compared to LSIF its about 8x smaller, and can be processed 3x faster. The mapping into Glean is ~550 loc, vs 1500 for LSIF. <br/><br/>Example queries: <a href="https://t.co/AZIRqVURLR">pic.twitter.com/AZIRqVURLR</a></p>&mdash; Don Stewart (@donsbot) <a href="https://twitter.com/donsbot/status/1530069211032465408?ref_src=twsrc%5Etfw">May 27, 2022</a></blockquote> 
+<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+</center>
+<br/>
 
 Going forward, we anticipate SCIP additionally unblocks the following use-cases that we previously struggled to support with LSIF:
 
