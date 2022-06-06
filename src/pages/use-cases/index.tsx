@@ -44,14 +44,14 @@ const UseCases: React.FunctionComponent = () => (
                 <div className="row">
                     <div className="col-lg-7 mb-lg-6 mt-6">
                         <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
-                        <p className="home__semiwide-paragraph my-5 display-4">
-                            Companies of all sizes and in all industries use Sourcegraph universal code search to solve
-                            big code problems.
+                        <p className="my-5 display-4">
+                            Companies of all sizes and in all industries use Sourcegraph's code intelligence platform to
+                            understand, fix, and automate across their entire codebase.
                         </p>
                     </div>
 
                     <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h2 className={`${styles.seeHow} font-weight-normal`}>See how customers use Sourcegraph to</h2>
+                        <h4 className="font-weight-bold pb-2">See how customers use Sourcegraph to</h4>
 
                         <div className="list-group">
                             {features.map((feature: { id: string; description: string }) => (
