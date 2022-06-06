@@ -32,10 +32,10 @@ export const Community: FunctionComponent = () => (
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
-                            href="https://srcgr.ph/wp-join-community-space"
-                            title="Join our Slack"
+                            href="https://discord.gg/rDPqBejz93"
+                            title="Join our Discord"
                         >
-                            Join our Slack
+                            Join our Discord
                         </a>
                     </div>
                     <div className="col-lg-6">
@@ -120,7 +120,7 @@ export const Community: FunctionComponent = () => (
         <ContentSection className="py-6">
             <div className="row">
                 <div className="col-lg-6">
-                    <h2 className="display-3 font-weight-bold mt-5 mb-3">DM us on Slack. We're here.</h2>
+                    <h2 className="display-3 font-weight-bold mt-5 mb-3">DM us on Discord. We're here.</h2>
                     What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
                     <ul>
                         <li className="mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
@@ -131,14 +131,14 @@ export const Community: FunctionComponent = () => (
                     </ul>
                     <a
                         className="btn btn-primary"
-                        href="https://srcgr.ph/wp-join-community-space"
-                        title="Join us on Slack"
+                        href="https://discord.gg/rDPqBejz93"
+                        title="Join us on Discord"
                     >
-                        Join us on Slack
+                        Join us on Discord
                     </a>
                 </div>
                 <div className="col-lg-5">
-                    <img className="w-100 mt-6" src="/community/SG_DM_us_on_slack.png" alt="DM us on Slack!" />
+                    <img className="w-100 mt-6" src="/community/SG_DM_us_on_slack.png" alt="DM us on Discord!" />
                 </div>
             </div>
         </ContentSection>
@@ -223,7 +223,7 @@ export const Community: FunctionComponent = () => (
                 <div className="col-lg-7">
                     <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
                     <br />
-                    Connect with us on the Sourcegraph Community Slack group, direct message us on Twitter, LinkedIn, or
+                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn, or
                     email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
                 </div>
                 <div className="col-lg-5 mt-3">
@@ -232,10 +232,10 @@ export const Community: FunctionComponent = () => (
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"
-                        href="https://srcgr.ph/wp-join-community-space"
-                        title="Join us on Slack"
+                        href="https://discord.gg/rDPqBejz93"
+                        title="Join us on Discord"
                     >
-                        Join us on Slack
+                        Join us on Discord
                     </a>
                     <br />
                     <a
