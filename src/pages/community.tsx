@@ -76,47 +76,6 @@ export const Community: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-green-blue py-5">
-            <ContentSection className="py-5">
-                <div className="row">
-                    <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Sourcegraph Champions Program</h2>
-                        <p>
-                            In the spirit of collaboration, we created the Sourcegraph Champions Program to serve the
-                            developer community, create a friendly networking space and share knowledge among each
-                            other.
-                        </p>
-                        <p>
-                            We believe that if we create the right environment and provide equal resources for all,
-                            everyone can learn how to code. This is our mission. And if you share the same idea you are
-                            a "champion" in our eyes.
-                        </p>
-                        <p>
-                            We can't wait to meet you! And send you really cool custom swag ;)
-                            <br />
-                            <a
-                                className="btn btn-primary mt-3"
-                                href="https://handbook.sourcegraph.com/marketing/becoming_a_sourcegraph_champion"
-                            >
-                                Become a Sourcegraph Champion
-                            </a>
-                        </p>
-                        <p>
-                            Or if you know someone that should be a Sourcegraph Champion, please{' '}
-                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them</a>.
-                        </p>
-                    </div>
-                    <div className="col-lg-6">
-                        <img
-                            className="w-100 mt-6"
-                            src="/community/SG_Robots_Trophy.png"
-                            alt="Become a Sourcegraph Champion!"
-                        />
-                    </div>
-                </div>
-            </ContentSection>
-        </div>
-
         <ContentSection className="py-6">
             <div className="row">
                 <div className="col-lg-6">
@@ -199,19 +158,19 @@ export const Community: FunctionComponent = () => (
                 <Tab eventKey="podcast" title="Podcast">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-8">
-                            <p>
-                                Tune into our developer convos wherever you listen to your favorite podcasts. Every
-                                episode is an inspiration.
-                            </p>
-                            <a href="https://about.sourcegraph.com/podcast">
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="750"
-                                    height="472"
-                                    src="/community/Podcast_module.png"
-                                    alt="Podcasts"
-                                />
-                            </a>
+                        <center>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VgVDMd2VlaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </center>
+
+                        <center className="pt-2 pb-4">
+                            <strong>Subscribe:</strong>
+                                <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA" style={{paddingLeft: '0.2em'}}>YouTube</a>
+                                <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009" style={{paddingLeft: '0.2em'}}>Apple</a>
+                                <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6" style={{paddingLeft: '0.2em'}}>Spotify</a>
+                                <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==" style={{paddingLeft: '0.2em'}}>Google</a>
+                                <a href="https://feeds.buzzsprout.com/1097978.rss" style={{paddingLeft: '0.2em'}}>RSS</a>
+                        </center>
+
                         </div>
                     </div>
                 </Tab>
