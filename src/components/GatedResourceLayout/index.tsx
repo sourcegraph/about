@@ -1,16 +1,17 @@
 import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { ContentSection } from '@components'
-import { breakpoints } from '@data'
+import { breakpoints, buttonStyle, buttonLocation } from '@data'
 import { useWindowWidth, useHubSpot, HubSpotForm } from '@hooks'
 
 import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
 import guideBg from './assets/hero/bg-code-aquamarine.png'
-import webinarCustomerMobileBg from './assets/hero/bg-code-mars-mobile.png'
-import webinarCustomerBg from './assets/hero/bg-code-mars.png'
+import webinarMobileBg from './assets/hero/bg-code-mars-mobile.png'
+import webinarBg from './assets/hero/bg-code-mars.png'
 import defaultMobileBg from './assets/hero/bg-code-venus-mobile.png'
 import defaultBg from './assets/hero/bg-code-venus.png'
 
@@ -35,9 +36,10 @@ interface Props {
     customer?: Customer
     title: string
     subtitle?: string
-    description: ReactNode
-    formLabel: string
-    form: Form
+    description?: ReactNode
+    formLabel?: string
+    form?: Form
+    learnMoreCTA?: string
     speakers?: Speaker[]
     children?: ReactNode
 }
@@ -49,6 +51,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     description,
     formLabel,
     form,
+    learnMoreCTA,
     speakers,
     children,
 }) => {
@@ -57,26 +60,25 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
     const isWebinarPg = useRouter().pathname.split('/').slice(1)[0] === 'webinars'
     const isGuidePg = useRouter().pathname.split('/').slice(1)[0] === 'guides'
-
+    const isRecordingPg = useRouter().pathname.split('/').slice(1)[2] === 'watch-now'
+    console.log(useRouter().pathname.split('/').slice(1)[1])
     const hubSpotConfig: HubSpotForm = {
         portalId: '2762526',
-        formId: form.formId,
+        formId: form?.formId ?? '',
         targetId: 'form',
-        formInstanceId: form.formId,
+        formInstanceId: form?.formId,
     }
-    if (form.onFormSubmitted) {
+    if (form?.onFormSubmitted) {
         hubSpotConfig.onFormSubmitted = form.onFormSubmitted
     }
-    useHubSpot(hubSpotConfig)
+    if (form) {
+        useHubSpot(hubSpotConfig)
+    }
 
     const heroImage = (): { src: string } => {
         if (isWebinarPg) {
-            // Customer-based Webinar
-            if (customer) {
-                return isMdOrDown ? webinarCustomerMobileBg : webinarCustomerBg
-            }
-            // Product-based Webinar
-            return isMdOrDown ? defaultMobileBg : defaultBg
+            // Webinars
+            return isMdOrDown ? webinarMobileBg : webinarBg
         }
         if (isGuidePg) {
             // Guides
@@ -132,20 +134,48 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             </section>
 
-            <section className="bg-white py-6 pb-md-8">
-                <ContentSection className="d-flex flex-column-reverse flex-md-row">
-                    {description}
+            {isRecordingPg && (
+                <div className="bg-white pb-6">
+                    <section className="py-6 pb-md-8 text-center">
+                        [ Placeholder ]
+                    </section>
 
-                    <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
-                        <h2 className="font-weight-bold">{formLabel}</h2>
-                        <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
-                            <div id="form" />
-                        </div>
+                    <div className="bg-light-gray-3">
+                        <ContentSection className="d-flex flex-column align-items-center py-lg-8 py-7">
+                            <h1 className="font-weight-bold text-center">{learnMoreCTA}</h1>
+                            <Link href="/contact/request-code-insights-demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-primary mt-4 col-12 col-md-3 col-xl-2"
+                                    title="Request a Demo of Code Insights."
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.trySourcegraph}
+                                    data-button-type="cta"
+                                >
+                                    Request a demo
+                                </a>
+                            </Link>
+                        </ContentSection>
                     </div>
-                </ContentSection>
+                </div>
+            )}
 
-                {children}
-            </section>
+            {description && (
+                <section className="bg-white py-6 pb-md-8">
+                    <ContentSection className="d-flex flex-column-reverse flex-md-row">
+                        {description}
+
+                        <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
+                            <h2 className="font-weight-bold">{formLabel}</h2>
+                            <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
+                                <div id="form" />
+                            </div>
+                        </div>
+                    </ContentSection>
+
+                    {children}
+                </section>
+            )}
 
             {speakers?.length && (
                 <section className="bg-white pb-6">
