@@ -19,13 +19,13 @@ This blog post is technical and primarily aimed at authors of developer tools th
 
 > Note on the name: SCIP is pronounced the same way as “skip” and it’s a recursive acronym that stands for “SCIP Code Intelligence Protocol.” SCIP is also a purposeful nod to SICP (Structure and Interpretation of Programs), a book about analyzing programs.
 
-## Background: precise code navigation and why we use LSIF
+## Background: Precise code navigation and why we use LSIF
 
 Sourcegraph code navigation such as “Go to definition” comes in two flavors: search-based and precise. Search-based code navigation is available out-of-the-box. It is fast and always available, but it can occasionally return false-positive and false-negative results. Precise code navigation, on the other hand, requires custom configuration to set up, but the results are compiler-accurate and work across repositories. Both search-based and precise code navigation are useful in their own ways. While search-based is less powerful, it is a quick and convenient solution. Precise is more powerful, but it also requires more upfront investment to configure.
 
 Search-based code navigation is powered by tools like ctags and tree-sitter and precise code navigation at Sourcegraph has been powered by LSIF. Precise language indexers first write LSIF to disk, and then users upload the LSIF to our Sourcegraph backend, which processes the LSIF index before storing it in our database. The final result of this pipeline is that users benefit from compiler-accurate code navigation on Sourcegraph that works across multiple repositories.
 
-### Challenges of scaling up LSIF
+## Challenges of scaling up LSIF
 
 We have created dozens of LSIF indexers ranging from prototype quality to production quality. Among our most established indexers we support Go, Java, Scala, Kotlin, TypeScript, and JavaScript.
 
@@ -67,7 +67,7 @@ Going forward, we anticipate SCIP additionally unblocks the following use-cases 
 
 We’re planning to use SCIP for all new indexers going forward. If you’re writing an LSIF indexer and want to target Sourcegraph, we recommend using SCIP instead of LSIF. If you’re writing a tool that consumes LSIF then we encourage you to consider consuming SCIP instead to enjoy the same benefits that we have from making the switch. Don’t hesitate to reach out [on GitHub](https://github.com/sourcegraph/scip) and ask for help if you have any questions.
 
-### Compatibility with LSIF
+## Compatibility with LSIF
 
 While we are excited to grow our usage of SCIP, we care deeply about compatibility with the existing LSIF ecosystem and will continue to accept LSIF uploads on Sourcegraph. Any tool that consumes LSIF can also consume SCIP by running our [`scip`](https://github.com/sourcegraph/scip) command-line tool that converts a SCIP payload into an LSIF v0.4.3 payload. In fact, we use this compatibility layer ourselves at the moment when uploading SCIP indexes to Sourcegraph because our backend still only processes LSIF.
 
