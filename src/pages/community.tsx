@@ -156,20 +156,16 @@ export const Community: FunctionComponent = () => (
                     </div>
                 </Tab>
                 <Tab eventKey="podcast" title="Podcast">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
-                        <center>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VgVDMd2VlaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </center>
+                    <div className="row mt-5">
+                        <div className="col-lg-6 align-self-center">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VgVDMd2VlaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
 
-                        <center className="pt-2 pb-4">
-                            <strong>Subscribe:</strong>
-                                <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA" style={{paddingLeft: '0.2em'}}>YouTube</a>
-                                <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009" style={{paddingLeft: '0.2em'}}>Apple</a>
-                                <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6" style={{paddingLeft: '0.2em'}}>Spotify</a>
-                                <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==" style={{paddingLeft: '0.2em'}}>Google</a>
-                                <a href="https://feeds.buzzsprout.com/1097978.rss" style={{paddingLeft: '0.2em'}}>RSS</a>
-                        </center>
+                            <strong>Subscribe:</strong>&nbsp;
+                            <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">YouTube</a>&nbsp;
+                            <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">Apple</a>&nbsp;
+                            <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6">Spotify</a>&nbsp;
+                            <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">Google</a>&nbsp;
+                            <a href="https://feeds.buzzsprout.com/1097978.rss">RSS</a>
 
                         </div>
                     </div>
