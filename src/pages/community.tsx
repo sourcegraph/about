@@ -156,9 +156,9 @@ export const Community: FunctionComponent = () => (
                     </div>
                 </Tab>
                 <Tab eventKey="podcast" title="Podcast">
-                    <div className="row mt-5">
-                        <div className="col-lg-6 align-self-center">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VgVDMd2VlaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+                    <div className="row mt-5 justify-content-center">
+                        <div className="col-lg-6">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VgVDMd2VlaU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true} />
 
                             <strong>Subscribe:</strong>&nbsp;
                             <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">YouTube</a>&nbsp;
