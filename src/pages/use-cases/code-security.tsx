@@ -341,18 +341,18 @@ const UseCasePage: FunctionComponent = () => (
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column">
+                    <div className="mb-5 d-flex flex-column text-start text-md-center mx-auto align-items-lg-center">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
-                        <p>
+                        <p className="max-w-450">
                             Find, fix, and track vulnerable code quickly across your entire codebase to improve code
                             security.
                         </p>
                     </div>
-                    <div className="d-flex flex-column">
+                    <div className="text-center col-12 px-0">
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary"
+                                className="btn btn-primary min-w-200"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}

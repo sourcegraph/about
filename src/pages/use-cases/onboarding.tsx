@@ -293,18 +293,18 @@ const UseCasePage: FunctionComponent = () => (
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column px-lg-7 text-center">
+                    <div className="mb-5 d-flex flex-column text-start text-md-center mx-auto max-w-550">
                         <h1 className="font-weight-bold">Give your team the onboarding experience they deserve.</h1>
                         <p>
                             Enable all your devs to find the answers they need to work more efficiently, ship code more
                             confidently, and stay in flow.
                         </p>
                     </div>
-                    <div className="d-flex flex-column">
+                    <div className="text-center col-12 px-0">
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary"
+                                className="btn btn-primary min-w-200"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}

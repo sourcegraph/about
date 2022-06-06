@@ -348,7 +348,7 @@ const UseCasePage: FunctionComponent = () => (
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>Give your team the tools they need to build a healthier codebase.</p>
                     </div>
-                    <div className="text-center col-12">
+                    <div className="text-center col-12 px-0">
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
@@ -375,7 +375,10 @@ const UseCasePage: FunctionComponent = () => (
                     </div>
                 </div>
             </ContentSection>
-            <CustomerLogos />
+
+            <div className="mt-6">
+                <CustomerLogos />
+            </div>
         </div>
 
         <ContentSection className="py-lg-7 py-5">
