@@ -46,8 +46,19 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
         description:
             props.meta?.description ||
             'Find and fix things across all of your code with Sourcegraph universal code search.',
-        image: props.meta?.image || 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png',
+        image: props.meta?.image || 'https://about.sourcegraph.com/meta/sourcegraph-social.png',
         icon: props.meta?.icon || 'https://about.sourcegraph.com/favicon.png',
+    }
+
+    const videoMeta = {
+        thumbnail: '',
+        embedURL: '',
+        watchURL: ''
+    }
+    if (meta.videoID) {
+        videoMeta.thumbnail = `https://i3.ytimg.com/vi/${meta.videoID}/maxresdefault.jpg`
+        videoMeta.embedURL = `https://www.youtube.com/embed/${meta.videoID}`
+        videoMeta.watchURL = `https://www.youtube.com/v/${meta.videoID}`
     }
 
     return (
@@ -62,18 +73,20 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
                 {meta.videoID ? (
                     <>
-                        <meta name="twitter:player" content={`https://www.youtube.com/embed/${meta.videoID}`} />
+                        <meta name="twitter:player" content={videoMeta.embedURL} />
                         <meta name="twitter:player:width" content="560" />
                         <meta name="twitter:player:height" content="315" />
                         <meta name="twitter:card" content="player" />
-                        <meta name="twitter:image" content={`https://i3.ytimg.com/vi/${meta.videoID}/maxresdefault.jpg`} />
+                        <meta name="twitter:image" content={videoMeta.thumbnail} />
 
-                        <meta property="og:image" content={`https://i3.ytimg.com/vi/${meta.videoID}/maxresdefault.jpg`} />
-                        <meta property="og:image:secure_url" content={`https://i3.ytimg.com/vi/${meta.videoID}/maxresdefault.jpg`} />
-                        <meta name="og:video" content={`https://www.youtube.com/v/${meta.videoID}`} />
-                        <meta name="og:video:secure_url" content={`https://www.youtube.com/v/${meta.videoID}`} />
-                        <meta name="og:video:width" content="560" />
-                        <meta name="og:video:height" content="315" />
+                        <meta property="og:video" content={videoMeta.watchURL} />
+                        <meta property="og:video:url" content={videoMeta.watchURL} />
+                        <meta property="og:video:secure_url" content={videoMeta.watchURL} />
+                        <meta property="og:video:type" content="video/mp4" />
+                        <meta property="og:video:width" content="560" />
+                        <meta property="og:video:height" content="315" />
+                        <meta property="og:image" content={videoMeta.thumbnail} />
+                        <meta property="og:image:secure_url" content={videoMeta.thumbnail} />
                     </>
                 ) : (
                     <>

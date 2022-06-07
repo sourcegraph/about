@@ -17,8 +17,7 @@ const CONTENT_PARENT_DIRECTORY = './content/'
 const PressReleasePage: NextPage<PageProps> = ({ post, content }) => {
     const title = post.frontmatter.title
     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
-    const image =
-        post.frontmatter.socialImage ?? 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png'
+    const image = post.frontmatter.socialImage
     const videoID = post.frontmatter.videoID
     const canonical = post.frontmatter.canonical
     const externalTitle = post.frontmatter.externalTitle
