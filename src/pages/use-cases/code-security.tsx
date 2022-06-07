@@ -227,12 +227,12 @@ const UseCasePage: FunctionComponent = () => (
                                     Find, fix, and track vulnerable code across your entire codebase in minutes, not
                                     days
                                 </div>
-                                <div className="max-w-400 flex-column flex-md-row d-md-flex align-items-center">
+                                <div className="flex-column flex-md-row d-md-flex align-items-center">
                                     <div className="mb-3 mb-md-0">
                                         <Link href="/demo" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
-                                                className="btn btn-primary w-100"
+                                                className="btn btn-primary w-100 max-w-350"
                                                 title="Request a Demo."
                                                 data-button-style={buttonStyle.primary}
                                                 data-button-location={buttonLocation.hero}
@@ -246,7 +246,7 @@ const UseCasePage: FunctionComponent = () => (
                                         <Link href="/get-started" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
-                                                className="btn btn-outline-primary w-100"
+                                                className="btn btn-outline-primary w-100 max-w-350"
                                                 title="Try Sourcegraph."
                                                 data-button-style={buttonStyle.outline}
                                                 data-button-location={buttonLocation.hero}
