@@ -1,11 +1,10 @@
 import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { ContentSection } from '@components'
-import { breakpoints, buttonStyle, buttonLocation } from '@data'
+import { breakpoints } from '@data'
 import { useWindowWidth, useHubSpot, HubSpotForm } from '@hooks'
 
 import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
@@ -39,7 +38,7 @@ interface Props {
     description?: ReactNode
     formLabel?: string
     form?: Form
-    learnMoreCTA?: string
+    learnMoreCTA?: ReactNode
     videoSrc?: string
     speakers?: Speaker[]
     children?: ReactNode
@@ -169,21 +168,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                     </section>
 
                     <div className="bg-light-gray-3">
-                        <ContentSection className="d-flex flex-column align-items-center py-lg-8 py-7">
-                            <h1 className="font-weight-bold text-center">{learnMoreCTA}</h1>
-                            <Link href="/contact/request-code-insights-demo" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-primary mt-4 col-12 col-md-3 col-xl-2"
-                                    title="Request a Demo"
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.trySourcegraph}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo
-                                </a>
-                            </Link>
-                        </ContentSection>
+                        {learnMoreCTA}
                     </div>
                 </div>
             )}
