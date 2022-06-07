@@ -77,7 +77,6 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 )}
 
                 <meta property="og:url" content="https://about.sourcegraph.com" />
-                <meta property="og:type" content="website" />
                 <meta property="og:title" content={meta.title} />
                 <meta property="og:description" content={meta.description} />
                 <meta property="og:type" content={isArticle ? 'article' : 'website'} />
