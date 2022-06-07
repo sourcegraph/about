@@ -53,7 +53,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     const videoMeta = {
         thumbnail: '',
         embedURL: '',
-        watchURL: ''
+        watchURL: '',
     }
     if (meta.videoID) {
         videoMeta.thumbnail = `https://i3.ytimg.com/vi/${meta.videoID}/maxresdefault.jpg`
