@@ -21,7 +21,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         <div className="text-uppercase">Code Search</div>
                         <h1 className="display-2 font-weight-bold mb-0">Search your code.</h1>
                         <h1 className="display-2 font-weight-bold mb-0">All of it.</h1>
-                        <p className="home__semiwide-paragraph my-5 display-4">
+                        <p className="my-5 display-4">
                             Onboard to a new codebase, find answers faster, and identify security risks with universal
                             code search.
                         </p>
