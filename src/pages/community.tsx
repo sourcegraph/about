@@ -88,11 +88,7 @@ export const Community: FunctionComponent = () => (
                         </li>
                         <li className="mt-2">Share the road less traveled so that everyone can learn</li>
                     </ul>
-                    <a
-                        className="btn btn-primary"
-                        href="https://discord.gg/rDPqBejz93"
-                        title="Join us on Discord"
-                    >
+                    <a className="btn btn-primary" href="https://discord.gg/rDPqBejz93" title="Join us on Discord">
                         Join us on Discord
                     </a>
                 </div>
@@ -158,15 +154,30 @@ export const Community: FunctionComponent = () => (
                 <Tab eventKey="podcast" title="Podcast">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-6">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VgVDMd2VlaU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true} />
-
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/VgVDMd2VlaU"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen={true}
+                            />
                             <strong>Subscribe:</strong>&nbsp;
-                            <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">YouTube</a>&nbsp;
-                            <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">Apple</a>&nbsp;
+                            <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">
+                                YouTube
+                            </a>
+                            &nbsp;
+                            <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">
+                                Apple
+                            </a>
+                            &nbsp;
                             <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6">Spotify</a>&nbsp;
-                            <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">Google</a>&nbsp;
+                            <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">
+                                Google
+                            </a>
+                            &nbsp;
                             <a href="https://feeds.buzzsprout.com/1097978.rss">RSS</a>
-
                         </div>
                     </div>
                 </Tab>
@@ -178,8 +189,8 @@ export const Community: FunctionComponent = () => (
                 <div className="col-lg-7">
                     <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
                     <br />
-                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn, or
-                    email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
+                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
+                    or email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
                 </div>
                 <div className="col-lg-5 mt-3">
                     <a

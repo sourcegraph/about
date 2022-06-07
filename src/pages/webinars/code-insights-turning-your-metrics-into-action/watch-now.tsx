@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 import { Layout, GatedResourceLayout } from '@components'
 
-const speakers = [
+export const speakers = [
     {
         name: 'Joel Kwartler',
         title: 'Sourcegraph Product Manager, Code Insights',
@@ -21,6 +21,7 @@ const speakers = [
 
 const Webinar: FunctionComponent = () => {
     const router = useRouter()
+    const codeInsightsMp4 = 'https://storage.googleapis.com/sourcegraph-assets/webinars/code-insights.mp4'
 
     return (
         <Layout
@@ -31,10 +32,16 @@ const Webinar: FunctionComponent = () => {
             }}
         >
             <GatedResourceLayout
-                title="Sourcegraph Code Insights: Turning Metrics into Action"
+                title={
+                    <>
+                        Sourcegraph Code Insights:
+                        <br /> Turning Metrics into Action
+                    </>
+                }
                 subtitle="How to track what really matters to you and your team"
                 speakers={speakers}
                 learnMoreCTA="Want to learn more about Code Insights?"
+                videoSrc={codeInsightsMp4}
             />
         </Layout>
     )

@@ -34,12 +34,13 @@ interface Form {
 
 interface Props {
     customer?: Customer
-    title: string
+    title: ReactNode | string
     subtitle?: string
     description?: ReactNode
     formLabel?: string
     form?: Form
     learnMoreCTA?: string
+    videoSrc?: string
     speakers?: Speaker[]
     children?: ReactNode
 }
@@ -52,6 +53,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     formLabel,
     form,
     learnMoreCTA,
+    videoSrc,
     speakers,
     children,
 }) => {
@@ -60,9 +62,8 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
     const isWebinarPg = useRouter().pathname.split('/').slice(1)[0] === 'webinars'
     const isGuidePg = useRouter().pathname.split('/').slice(1)[0] === 'guides'
-    const isRecordingPg = useRouter().pathname.split('/').slice(1)[2] === 'watch-now'
-    console.log(useRouter().pathname.split('/').slice(1)[1])
-    const hubSpotConfig: HubSpotForm = {
+
+    const hubSpotConfig: HubSpotForm | null = {
         portalId: '2762526',
         formId: form?.formId ?? '',
         targetId: 'form',
@@ -71,9 +72,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     if (form?.onFormSubmitted) {
         hubSpotConfig.onFormSubmitted = form.onFormSubmitted
     }
-    if (form) {
-        useHubSpot(hubSpotConfig)
-    }
+    useHubSpot(hubSpotConfig)
 
     const heroImage = (): { src: string } => {
         if (isWebinarPg) {
@@ -134,32 +133,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             </section>
 
-            {isRecordingPg && (
-                <div className="bg-white pb-6">
-                    <section className="py-6 pb-md-8 text-center">
-                        [ Placeholder ]
-                    </section>
-
-                    <div className="bg-light-gray-3">
-                        <ContentSection className="d-flex flex-column align-items-center py-lg-8 py-7">
-                            <h1 className="font-weight-bold text-center">{learnMoreCTA}</h1>
-                            <Link href="/contact/request-code-insights-demo" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a
-                                    className="btn btn-primary mt-4 col-12 col-md-3 col-xl-2"
-                                    title="Request a Demo of Code Insights."
-                                    data-button-style={buttonStyle.primary}
-                                    data-button-location={buttonLocation.trySourcegraph}
-                                    data-button-type="cta"
-                                >
-                                    Request a demo
-                                </a>
-                            </Link>
-                        </ContentSection>
-                    </div>
-                </div>
-            )}
-
+            {/* ---- DEFAULT BODY VARIATION ---- */}
             {description && (
                 <section className="bg-white py-6 pb-md-8">
                     <ContentSection className="d-flex flex-column-reverse flex-md-row">
@@ -175,6 +149,43 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
                     {children}
                 </section>
+            )}
+
+            {/* ---- RECORDING BODY VARIATION ---- */}
+            {videoSrc && learnMoreCTA && (
+                <div className="bg-white pb-6">
+                    <section className="py-6 text-center">
+                        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+                        <video
+                            className="container max-w-900"
+                            autoPlay={false}
+                            muted={false}
+                            loop={false}
+                            playsInline={true}
+                            controls={true}
+                            src={videoSrc}
+                            data-cookieconsent="ignore"
+                        />
+                    </section>
+
+                    <div className="bg-light-gray-3">
+                        <ContentSection className="d-flex flex-column align-items-center py-lg-8 py-7">
+                            <h1 className="font-weight-bold text-center">{learnMoreCTA}</h1>
+                            <Link href="/contact/request-code-insights-demo" passHref={true}>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <a
+                                    className="btn btn-primary mt-4 col-12 col-md-3 col-xl-2"
+                                    title="Request a Demo"
+                                    data-button-style={buttonStyle.primary}
+                                    data-button-location={buttonLocation.trySourcegraph}
+                                    data-button-type="cta"
+                                >
+                                    Request a demo
+                                </a>
+                            </Link>
+                        </ContentSection>
+                    </div>
+                </div>
             )}
 
             {speakers?.length && (
