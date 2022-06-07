@@ -328,7 +328,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary min-w-200"
+                                className="btn btn-primary max-w-200 w-100"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}
