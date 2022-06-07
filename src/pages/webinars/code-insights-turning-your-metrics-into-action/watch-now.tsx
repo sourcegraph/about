@@ -19,7 +19,7 @@ export const speakers = [
     },
 ]
 
-const Webinar: FunctionComponent = () => {
+const Recording: FunctionComponent = () => {
     const router = useRouter()
     const codeInsightsMp4 = 'https://storage.googleapis.com/sourcegraph-assets/webinars/code-insights.mp4'
 
@@ -47,4 +47,4 @@ const Webinar: FunctionComponent = () => {
     )
 }
 
-export default Webinar
+export default Recording
