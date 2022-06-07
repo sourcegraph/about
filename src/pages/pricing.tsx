@@ -71,7 +71,7 @@ const PricingPage: FunctionComponent = () => (
             <div className="pricing-page mt-2">
                 <ContentSection className="hero-section text-center py-5">
                     <h1 className="display-2 font-weight-bold">Sourcegraph Pricing</h1>
-                    <h2>Self-hosted Universal Code Search</h2>
+                    <h4 className="font-weight-normal pt-2">Self-hosted code intelligence platform</h4>
                 </ContentSection>
                 <div className="container-fluid pricing-page__plans">
                     <div className="row pt-4">
