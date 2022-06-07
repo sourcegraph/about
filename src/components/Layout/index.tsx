@@ -14,6 +14,7 @@ interface LayoutProps {
         externalTitle?: string
         externalDescription?: string
         image?: string
+        videoID?: string
         icon?: string
         canonical?: string
     }
@@ -59,6 +60,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 <meta name="twitter:image" content={meta.image} />
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:description" content={meta.description} />
+                {meta.videoID && <meta name="twitter:player" content={`https://www.youtube.com/embed/${meta.videoID}`} />}
 
                 <meta property="og:url" content="https://about.sourcegraph.com" />
                 <meta property="og:type" content="website" />
@@ -66,6 +68,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 <meta property="og:image" content={meta.image} />
                 <meta property="og:image:secure_url" content={meta.image} />
                 <meta property="og:description" content={meta.description} />
+                {meta.videoID && <meta property="og:video" content={`https://www.youtube.com/v/${meta.videoID}`} />}
 
                 <link rel="icon" type="image/png" href={meta.icon} />
 

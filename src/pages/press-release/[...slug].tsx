@@ -19,12 +19,14 @@ const PressReleasePage: NextPage<PageProps> = ({ post, content }) => {
     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
     const image =
         post.frontmatter.socialImage ?? 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png'
+    const videoID = post.frontmatter.videoID
     const canonical = post.frontmatter.canonical
     const externalTitle = post.frontmatter.externalTitle
     const externalDescription = post.frontmatter.externalDescription
     const meta = {
         title,
         image,
+        videoID,
         description,
         externalTitle,
         externalDescription,
