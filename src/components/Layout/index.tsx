@@ -36,6 +36,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
     const isHome = pathname === '/'
     const isBlog = pathname === '/blog'
+    const isArticle = ['/blog/', '/podcast/', '/release/'].includes(pathname.replace('[...slug]', ''))
     const isProductPage = pathname.startsWith('/product/')
     const isCaseStudyPage = pathname.startsWith('/case-studies/') && pathname.split('/')[2] !== ''
 
@@ -57,17 +58,19 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
                 <meta name="twitter:title" content={meta.title} />
                 <meta name="twitter:site" content="@sourcegraph" />
-                <meta name="twitter:card" content="summary" />
                 <meta name="twitter:description" content={meta.description} />
-                
+
                 {meta.videoID ? (
                     <>
                         <meta name="twitter:player" content={`https://www.youtube.com/embed/${meta.videoID}`} />
-                        <meta property="og:video" content={`https://www.youtube.com/v/${meta.videoID}`} />
+                        <meta name="twitter:card" content="player" />
+                        <meta name="og:video" content={`https://www.youtube.com/v/${meta.videoID}`} />
+                        <meta name="og:video:secure_url" content={`https://www.youtube.com/v/${meta.videoID}`} />
                     </>
                 ) :
                     <>
                         <meta name="twitter:image" content={meta.image} />
+                        <meta name="twitter:card" content="summary_large_image" />
                         <meta property="og:image" content={meta.image} />
                         <meta property="og:image:secure_url" content={meta.image} />
                     </>
@@ -77,6 +80,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content={meta.title} />
                 <meta property="og:description" content={meta.description} />
+                <meta property="og:type" content={isArticle ? 'article' : 'website'} />
 
                 <link rel="icon" type="image/png" href={meta.icon} />
 
