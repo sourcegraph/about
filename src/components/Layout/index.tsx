@@ -63,9 +63,17 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                 {meta.videoID ? (
                     <>
                         <meta name="twitter:player" content={`https://www.youtube.com/embed/${meta.videoID}`} />
+                        <meta name="twitter:player:width" content="560" />
+                        <meta name="twitter:player:height" content="315" />
                         <meta name="twitter:card" content="player" />
+                        <meta name="twitter:image" content={`https://i3.ytimg.com/vi/${meta.videoID}/maxresdefault.jpg`} />
+
+                        <meta property="og:image" content={`https://i3.ytimg.com/vi/${meta.videoID}/maxresdefault.jpg`} />
+                        <meta property="og:image:secure_url" content={`https://i3.ytimg.com/vi/${meta.videoID}/maxresdefault.jpg`} />
                         <meta name="og:video" content={`https://www.youtube.com/v/${meta.videoID}`} />
                         <meta name="og:video:secure_url" content={`https://www.youtube.com/v/${meta.videoID}`} />
+                        <meta name="og:video:width" content="560" />
+                        <meta name="og:video:height" content="315" />
                     </>
                 ) : (
                     <>
