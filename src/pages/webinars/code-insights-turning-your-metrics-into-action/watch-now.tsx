@@ -1,8 +1,9 @@
 import { FunctionComponent } from 'react'
 
-import { useRouter } from 'next/router'
+import Link from 'next/link'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, GatedResourceLayout, ContentSection } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
 export const speakers = [
     {
@@ -19,32 +20,43 @@ export const speakers = [
     },
 ]
 
-const Recording: FunctionComponent = () => {
-    const router = useRouter()
-    const codeInsightsMp4 = 'https://storage.googleapis.com/sourcegraph-assets/webinars/code-insights.mp4'
-
-    return (
-        <Layout
-            meta={{
-                title: 'Sourcegraph Code Insights: Turning Metrics into Action',
-                description:
-                    'Join Sourcegraph Product Manager Joel Kwartler and Customer Engineer Shawn King to learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.',
-            }}
-        >
-            <GatedResourceLayout
-                title={
-                    <>
-                        Sourcegraph Code Insights:
-                        <br /> Turning Metrics into Action
-                    </>
-                }
-                subtitle="How to track what really matters to you and your team"
-                speakers={speakers}
-                learnMoreCTA="Want to learn more about Code Insights?"
-                videoSrc={codeInsightsMp4}
-            />
-        </Layout>
-    )
-}
+const Recording: FunctionComponent = () => (
+    <Layout
+        meta={{
+            title: 'Sourcegraph Code Insights: Turning Metrics into Action',
+            description:
+                'Join Sourcegraph Product Manager Joel Kwartler and Customer Engineer Shawn King to learn how to use Code Insights to turn your most pressing analytics questions into KPIs you can track with mere seconds of setup.',
+        }}
+    >
+        <GatedResourceLayout
+            title={
+                <>
+                    Sourcegraph Code Insights:
+                    <br /> Turning Metrics into Action
+                </>
+            }
+            subtitle="How to track what really matters to you and your team"
+            speakers={speakers}
+            videoSrc="https://storage.googleapis.com/sourcegraph-assets/webinars/code-insights.mp4"
+            learnMoreCTA={
+                <ContentSection className="d-flex flex-column align-items-center py-lg-8 py-7">
+                    <h1 className="font-weight-bold text-center">Want to learn more about Code Insights?</h1>
+                    <Link href="/contact/request-code-insights-demo" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="btn btn-primary mt-4 col-12 col-md-3 col-xl-2"
+                            title="Request a Demo"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-type="cta"
+                        >
+                            Request a demo
+                        </a>
+                    </Link>
+                </ContentSection>
+            }
+        />
+    </Layout>
+)
 
 export default Recording
