@@ -179,7 +179,7 @@ const UseCasePage: FunctionComponent = () => (
                                     Decrease time to first commit for new developers, help existing engineers master
                                     your codebase, and fast-track full codebase understanding.
                                 </div>
-                                <div className="flex-column flex-md-row d-md-flex align-items-center">
+                                <div className="flex-column flex-md-row d-md-flex text-center">
                                     <div className="mb-3 mb-md-0">
                                         <Link href="/demo" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -304,7 +304,7 @@ const UseCasePage: FunctionComponent = () => (
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary max-w-200 w-100"
+                                className="btn btn-primary max-w-350 w-100"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}
