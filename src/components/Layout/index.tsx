@@ -67,14 +67,14 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                         <meta name="og:video" content={`https://www.youtube.com/v/${meta.videoID}`} />
                         <meta name="og:video:secure_url" content={`https://www.youtube.com/v/${meta.videoID}`} />
                     </>
-                ) :
+                ) : (
                     <>
                         <meta name="twitter:image" content={meta.image} />
                         <meta name="twitter:card" content="summary_large_image" />
                         <meta property="og:image" content={meta.image} />
                         <meta property="og:image:secure_url" content={meta.image} />
                     </>
-                }
+                )}
 
                 <meta property="og:url" content="https://about.sourcegraph.com" />
                 <meta property="og:type" content="website" />
