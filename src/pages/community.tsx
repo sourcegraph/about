@@ -117,22 +117,22 @@ export const Community: FunctionComponent = () => (
                     </div>
                 </Tab>
                 <Tab eventKey="devToolTime" title="Dev Tool Time">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
-                            <p>
+                <div className="row mt-5 justify-content-center">
+                        <div className="col-lg-6">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/QNYoOCLocAI"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen={true}
+                            />
+                             <p>
                                 Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
                                 <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
                                 keep up with new episodes.
                             </p>
-                            <a href="https://srcgr.ph/dev-tool-time-playlist">
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="850"
-                                    height="380"
-                                    src="/community/DTT_module.jpg"
-                                    alt="Dev Tool Time"
-                                />
-                            </a>
                         </div>
                     </div>
                 </Tab>
