@@ -110,22 +110,7 @@ export const Community: FunctionComponent = () => (
                             </p>
                             <ul>
                                 <li>
-                                    <a href="https://events.linuxfoundation.org/open-source-summit-north-america/register/">
-                                        Open Source Summit
-                                    </a>{' '}
-                                    - 9/27 - 9/30
-                                </li>
-                                <li>
-                                    <a href="https://reactadvanced.com/">React Advanced London</a> - 10/22
-                                </li>
-                                <li>
-                                    <a href="https://africa.jsworldconference.com/">JSWorld Africa</a> - 10/30
-                                </li>
-                                <li>
-                                    <a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13
-                                </li>
-                                <li>
-                                    <a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8
+                                    <a href="https://www.gophercon.com/">GopherCon 2022</a> - 10/6 - 10/8
                                 </li>
                             </ul>
                         </div>
