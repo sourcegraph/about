@@ -32,7 +32,7 @@ interface LayoutProps {
 
 export const Layout: FunctionComponent<LayoutProps> = props => {
     const router = useRouter()
-    const { pathname } = router
+    const { pathname, asPath } = router
 
     const isHome = pathname === '/'
     const isBlog = pathname === '/blog'
@@ -76,7 +76,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
                     </>
                 )}
 
-                <meta property="og:url" content="https://about.sourcegraph.com" />
+                <meta property="og:url" content={`https://about.sourcegraph.com${asPath}`} />
                 <meta property="og:title" content={meta.title} />
                 <meta property="og:description" content={meta.description} />
                 <meta property="og:type" content={isArticle ? 'article' : 'website'} />
