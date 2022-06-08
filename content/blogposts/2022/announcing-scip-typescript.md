@@ -2,7 +2,8 @@
 title: 'scip-typescript: a new TypeScript and JavaScript indexer'
 description: We are excited to announce the release of scip-typescript, a new indexer that allows you to navigate TypeScript and JavaScript codebases on Sourcegraph with compiler-accurate precision.
 authors:
-  - name: Olaf Geirsson
+  - name: Ólafur Páll Geirsson
+    url: https://twitter.com/olafurpg
 publishDate: 2022-06-08T18:00+02:00
 tags: [blog]
 slug: announcing-scip-typescript
