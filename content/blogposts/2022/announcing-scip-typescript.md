@@ -159,7 +159,7 @@ Before creating scip-typescript, we used another TypeScript indexer called [lsif
 
 Follow the steps below to migrate from lsif-node to scip-typescript:
 
-Replace usages of the `lsif-tsc -p ARGUMENTS` command with `scip-typescript index ARGUMENTS`. 
+- Replace usages of the `lsif-tsc -p ARGUMENTS` command with `scip-typescript index ARGUMENTS`. 
 Upgrade to the latest version of the `src` command-line interface, which you can install via `yarn global add @sourcegraph/src`. It’s okay if the version of your `src` command-line interface does not match the version of your Sourcegraph instance.
 
 You can expect to see 3-10x speedup improvements by migrating to scip-typescript. The actual speedup varies from codebase to codebase. When we migrated from lsif-node to scip-typescript in the Sourcegraph codebase, the indexing job in our CI went from ~40 minutes (12 parallel jobs) down to ~5 minutes (1 job).
