@@ -1,25 +1,25 @@
 ---
 title: 'scip-typescript: a new TypeScript and JavaScript indexer'
-description: ''
+description: We are excited to announce the release of scip-typescript, a new indexer that allows you to navigate TypeScript and JavaScript codebases on Sourcegraph with compiler-accurate precision.
 authors:
   - name: Olaf Geirsson
 publishDate: 2022-06-08T18:00+02:00
 tags: [blog]
 slug: announcing-scip-typescript
-heroImage: blog/announcing-scip.png
-socialImage: blog/announcing-scip.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript.png
 published: true
 ---
 
-![Vulnerabilities in open source packages](https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png)
+![scip-typescript: a new TypeScript and Javascript indexer](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript.png)
 
-We are excited to announce the release of scip-typescript, a new indexer allowing you to navigate TypeScript and JavaScript codebases on Sourcegraph with compiler-accurate precision. Key features of scip-typescript include:
+We are excited to announce the release of scip-typescript, a new indexer that allows you to navigate TypeScript and JavaScript codebases on Sourcegraph with compiler-accurate precision. Key features of scip-typescript include:
 
 - **Performance:** scip-typescript is almost as fast as the TypeScript typechecker, indexing 1k-5k lines per second depending on the usage of types in your codebase. If you’re migrating from lsif-node, our older TypeScript indexer, you can expect to see 3-10x speedups after migrating to scip-typescript.
 - **Cross-repository navigation:** scip-typescript is designed from the ground up to support navigating between multiple repositories. You can follow symbols between multiple TypeScript projects, or even between your codebase and package.json dependencies.
 - **Find implementations:** You can navigate from an interface, interface property, abstract class, or abstract method to its concrete implementations.
 
-The name “scip-typescript” is derived from SCIP, a new code indexing format that we are using at Sourcegraph and you can learn about by reading the [announcement here](LINK).
+The name “scip-typescript” is derived from SCIP, a new code indexing format that we are using at Sourcegraph. You can learn about SCIP by reading the [announcement here](announcing-scip).
 
 ## Get started with scip-typescript
 
@@ -39,9 +39,11 @@ Use the `--infer-tsconfig` flag for pure JavaScript projects. Optionally, to imp
 scip-typescript index --infer-tsconfig
 ```
 
-### Performance
+## Performance
 
-Indexing a codebase with scip-typescript should have roughly similar performance as type checking the codebase with `tsc`. We built scip-typescript with the official TypeScript type checker and our benchmarks indicate that indexing performance is largely bottlenecked by type checking performance. We ran scip-typescript against several open source codebases to measure the indexing performance. The numbers are measured with a 2019 MacBook Pro with a 2,6 GHz 6-Core Intel Core.
+Indexing a codebase with scip-typescript should have roughly similar performance as type checking the codebase with `tsc`. We built scip-typescript with the TypeScript type checker and our benchmarks indicate that indexing performance is largely bottlenecked by type checking performance.
+
+We benchmarked scip-typescript by running it against several open source codebases to measure the indexing performance. The numbers are measured with a 2019 MacBook Pro with a 2.6 GHz 6-Core Intel Core.
 
 <table>
     <tr>
@@ -103,20 +105,64 @@ Indexing a codebase with scip-typescript should have roughly similar performance
 
 </table>
 
-The indexing performance varies from codebase to codebase, ranging anywhere between 1k-5k lines of code per second. Given the large variation in indexing performance, the best way to understand real-world scip-typescript performance is to run it against your codebase. Our experience is that `scip-typescript` is not always a bottleneck in a CI pipeline when compared to other steps such as `git clone` to checkout the source code and `yarn install` to download external dependencies.
+The indexing performance varies from codebase to codebase, ranging anywhere between 1k-5k lines of code per second. Given the large variation in indexing performance, the best way to understand real-world scip-typescript performance is to run it against your codebase.
+
+Our experience is that the `scip-typescript index` command is not always a bottleneck in a CI pipeline when you take into account all steps such as `git clone` to checkout the source code and `yarn install` to download external dependencies.
 
 ## Cross-repository navigation
 
-The actions “go to definition” and “find references” work across your codebase and your package.json dependencies.
+The actions “Go to definition” and “Find references” work across your codebase and package.json dependencies. Try this out yourself by opening the [github.com/vendure-ecommerce/vendure repository](https://sourcegraph.com/github.com/vendure-ecommerce/vendure@0dfa9d0b4b7f9f6af1c6406d44b096543c28db3e/-/blob/packages/create/src/create-vendure-app.ts?L39:6&subtree=true#tab=references) and navigating to the definition of the `arguments()` method that’s defined by the `commander` npm package.
 
-### Migrating from lsif-node to scip-typescript
+<figure>
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/navigate-to-arguments.png" alt="Navigate to arguments() method defined in commander npm" className="no-shadow"></img>
+</figure>
 
-Before scip-typescript …, we have used [lsif-node](LINK). Started as a fork, …, extended with new features, performance improvements. Link to [SCIP announcement](LINK).
+Likewise, trigger “Find references” on the `action()` method to get real-world examples of that symbol across multiple repositories and packages.
 
+<figure>
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/trigger-find-references.png" alt="Trigger Find references on action() method" className="no-shadow"></img>
+</figure>
 
-We recommend migrating to scip-typescript if you are using lsif-node, our former TypeScript indexer. To migrate, replace `lsif-tsc -p .` invocations with the command `scip-typescript index`. You can read more in our docs, [here](https://docs.sourcegraph.com/code_intelligence/how-to/index_a_typescript_and_javascript_repository).
+Observe that the results come from both GitHub repositories and npm packages. The code from npm packages is the same source code that’s typically installed under the `node_modules/` directory.
 
-When we migrated from lsif-node to scip-typescript in the Sourcegraph codebase, the indexing job in our CI went from ~40 minutes (12 parallel jobs) down to ~5 minutes (1 job).
+Read more in our docs, [here](https://docs.sourcegraph.com/integration/npm), on how to set up the same npm package support on a self-hosted Sourcegraph instance.
 
-Give scip-typescript a try and don’t hesitate to open an issue if you have questions or need help.
+## Find implementations
 
+Use the new “Find implementations” button to navigate from an abstract class, interface, interface property, or abstract class method to their concrete implementations. For example, trigger “Find implementations” on the [`QuickPickItem.label`](https://sourcegraph.com/npm/types/vscode@b309120c719af01453d6df4a7f82902c22b1afb3/-/blob/index.d.ts?L1678:9&subtree=true#tab=implementations_typescript) property from the `@types/vscode` npm package.
+
+<figure>
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/find-implementations-feature.png" alt="Navigation with Find Implementations feature" className="no-shadow"></img>
+</figure>
+
+Observe that the implementation in the screenshot is a property on an object literal with type `ProcessInfoItem`, which is an interface that extends `QuickPickItem`.
+
+```ts
+interface QuickPickItem {
+  label: string
+  …
+}
+interface ProcessInfoItem extends QuickPickItem {
+  pid: number
+}
+const extractItem: IExpressionItem = {
+  label: string, // implements `QuickPickItem.label`
+  pid: 42 // implements `ProcessInfoItem.pid`
+  …
+}
+```
+
+This is a good example of the kind of static analysis that scip-typescript is able to perform. We are excited to extend the functionality of scip-typescript to include related navigation actions like “Go to type definition.”
+
+## Migrating from lsif-node to scip-typescript
+
+Before creating scip-typescript, we used another TypeScript indexer called [lsif-node](https://github.com/sourcegraph/lsif-node). We recommend migrating to scip-typescript if you are using lsif-node.
+
+Follow the steps below to migrate from lsif-node to scip-typescript:
+
+Replace usages of the `lsif-tsc -p ARGUMENTS` command with `scip-typescript index ARGUMENTS`. 
+Upgrade to the latest version of the `src` command-line interface, which you can install via `yarn global add @sourcegraph/src`. It’s okay if the version of your `src` command-line interface does not match the version of your Sourcegraph instance.
+
+You can expect to see 3-10x speedup improvements by migrating to scip-typescript. The actual speedup varies from codebase to codebase. When we migrated from lsif-node to scip-typescript in the Sourcegraph codebase, the indexing job in our CI went from ~40 minutes (12 parallel jobs) down to ~5 minutes (1 job).
+
+Give scip-typescript a try and don’t hesitate to [open an issue](https://github.com/sourcegraph/lsif-typescript) if you have questions or need help.
