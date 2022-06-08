@@ -2,7 +2,8 @@
 title: 'SCIP - a better code indexing format than LSIF'
 description: We are excited to announce SCIP, a new indexing format that we are using at Sourcegraph to index programming languages to power code navigation features such as "Go to definition" and "Find references."
 authors:
-  - name: Olaf Geirsson
+  - name: Ólafur Páll Geirsson
+    url: https://twitter.com/olafurpg
 publishDate: 2022-06-08T18:00+02:00
 tags: [blog]
 slug: announcing-scip
