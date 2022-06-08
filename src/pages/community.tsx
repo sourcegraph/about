@@ -117,7 +117,7 @@ export const Community: FunctionComponent = () => (
                     </div>
                 </Tab>
                 <Tab eventKey="devToolTime" title="Dev Tool Time">
-                <div className="row mt-5 justify-content-center">
+                    <div className="row mt-5 justify-content-center">
                         <div className="col-lg-6">
                             <iframe
                                 width="560"
@@ -128,7 +128,7 @@ export const Community: FunctionComponent = () => (
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen={true}
                             />
-                             <p>
+                            <p>
                                 Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
                                 <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
                                 keep up with new episodes.
