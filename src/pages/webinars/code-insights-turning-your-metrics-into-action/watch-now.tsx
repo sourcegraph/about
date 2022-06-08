@@ -37,7 +37,7 @@ const Recording: FunctionComponent = () => (
             }
             subtitle="How to track what really matters to you and your team"
             speakers={speakers}
-            videoSrc="https://storage.googleapis.com/sourcegraph-assets/webinars/code-insights.mp4"
+            videoSrc="https://www.youtube.com/embed/dXKvetMozB0"
             learnMoreCTA={
                 <ContentSection className="d-flex flex-column align-items-center py-lg-8 py-7">
                     <h1 className="font-weight-bold text-center">Want to learn more about Code Insights?</h1>
@@ -47,7 +47,7 @@ const Recording: FunctionComponent = () => (
                             className="btn btn-primary mt-4 col-12 col-md-3 col-xl-2"
                             title="Request a Demo"
                             data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
                             Request a demo
