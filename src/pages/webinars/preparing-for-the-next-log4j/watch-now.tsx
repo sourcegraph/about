@@ -36,7 +36,7 @@ const Recording: FunctionComponent = () => (
                 name: 'Nutanix',
                 logo: '/external-logos/nutanix-logo.svg',
             }}
-            videoSrc="https://storage.googleapis.com/sourcegraph-assets/webinars/nutanix-remediated-log4j.mp4"
+            videoSrc="https://www.youtube.com/embed/ANcbjQJ0OGI"
             learnMoreCTA={
                 <ContentSection className="d-flex flex-column align-items-center py-lg-8 py-7">
                     <h1 className="font-weight-bold text-center">Interesting in learning more?</h1>

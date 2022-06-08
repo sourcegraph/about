@@ -1,3 +1,5 @@
+/** Documentation at: https://docs.google.com/document/d/1Q1JMzyRmwNKk65KxxtT9EOnxoSf2dHEGkUAPbJkKzI4/edit */
+
 export const buttonStyle = {
     primary: 1,
     outline: 2,
