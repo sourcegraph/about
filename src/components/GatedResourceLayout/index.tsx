@@ -153,17 +153,14 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             {/* ---- RECORDING BODY VARIATION ---- */}
             {videoSrc && learnMoreCTA && (
                 <div className="bg-white pb-6">
-                    <section className="py-6 text-center">
-                        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-                        <video
-                            className="container max-w-900"
-                            autoPlay={false}
-                            muted={false}
-                            loop={false}
-                            playsInline={true}
-                            controls={true}
+                    <section className="py-md-6 my-md-0 my-6 container video-embed embed-responsive embed-responsive-16by9">
+                        <iframe
+                            className="p-md-7 embed-responsive-item"
                             src={videoSrc}
-                            data-cookieconsent="ignore"
+                            allowFullScreen={true}
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            frameBorder={0}
+                            title={subtitle}
                         />
                     </section>
 

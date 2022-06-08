@@ -37,7 +37,7 @@ const Recording: FunctionComponent = () => (
             }
             subtitle="How to track what really matters to you and your team"
             speakers={speakers}
-            videoSrc="https://storage.googleapis.com/sourcegraph-assets/webinars/code-insights.mp4"
+            videoSrc="https://www.youtube.com/embed/dXKvetMozB0"
             learnMoreCTA={
                 <ContentSection className="d-flex flex-column align-items-center py-lg-8 py-7">
                     <h1 className="font-weight-bold text-center">Want to learn more about Code Insights?</h1>
