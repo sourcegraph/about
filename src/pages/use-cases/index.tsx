@@ -11,7 +11,7 @@ import styles from './useCases.module.scss'
 const features: { id: string; description: string }[] = [
     {
         id: 'code-security',
-        description: 'Find and fix security vulnerabilities',
+        description: 'Improve code security',
     },
     {
         id: 'onboarding',
@@ -51,7 +51,7 @@ const UseCases: React.FunctionComponent = () => (
                     </div>
 
                     <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h2 className={`${styles.seeHow} font-weight-normal`}>See how customers use Sourcegraph to</h2>
+                        <h4 className="font-weight-bold pb-2">See how customers use Sourcegraph to</h4>
 
                         <div className="list-group">
                             {features.map((feature: { id: string; description: string }) => (
@@ -84,7 +84,7 @@ const UseCases: React.FunctionComponent = () => (
             <ContentSection id="code-security" className="pt-8">
                 <div className="row justify-content-center">
                     <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Find and fix security vulnerabilities</h2>
+                        <h2 className="display-3 font-weight-bold mb-3">Improve code security</h2>
                         <h5>Find, fix, and track vulnerable code quickly across your entire codebase.</h5>
                         <p>
                             You can't fix what you can't find. Remediate vulnerabilities with confidence knowing you
