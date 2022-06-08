@@ -159,6 +159,12 @@ async function createHubSpotForm({
     })
 }
 
+const removeScripts = ():void => {
+    removeScriptElement('jQuery')
+    removeScriptElement('clearbit')
+    removeScriptElement('hubspot')
+}
+
 export const useHubSpot = ({
     region,
     portalId,
@@ -168,6 +174,11 @@ export const useHubSpot = ({
     onFormSubmitted,
 }: HookProps): void => {
     useEffect(() => {
+        /** Some pg's conditionally require HS forms, exit fn + remove HS-Form when formId is absent */
+        if (!formId) {
+            return removeScripts()
+        }
+
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         createHubSpotForm({
             region,
@@ -178,10 +189,6 @@ export const useHubSpot = ({
             onFormSubmitted,
         })
 
-        return () => {
-            removeScriptElement('jQuery')
-            removeScriptElement('clearbit')
-            removeScriptElement('hubspot')
-        }
+        return removeScripts()
     }, [region, portalId, formId, targetId, formInstanceId, onFormSubmitted])
 }
