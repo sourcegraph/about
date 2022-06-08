@@ -56,7 +56,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
         watchURL: '',
     }
     if (meta.videoID) {
-        videoMeta.thumbnail = `https://i3.ytimg.com/vi/${meta.videoID}/hqdefault.jpg`
+        videoMeta.thumbnail = `https://img.youtube.com/vi/${meta.videoID}/maxresdefault.jpg`
         videoMeta.embedURL = `https://www.youtube.com/embed/${meta.videoID}`
         videoMeta.watchURL = `https://www.youtube.com/v/${meta.videoID}`
     }
