@@ -132,7 +132,7 @@ Read more in our docs, [here](https://docs.sourcegraph.com/integration/npm), on 
 Use the new “Find implementations” button to navigate from an abstract class, interface, interface property, or abstract class method to their concrete implementations. For example, trigger “Find implementations” on the [`QuickPickItem.label`](https://sourcegraph.com/npm/types/vscode@b309120c719af01453d6df4a7f82902c22b1afb3/-/blob/index.d.ts?L1678:9&subtree=true#tab=implementations_typescript) property from the `@types/vscode` npm package.
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/find-implementations-feature.png" alt="Navigation with Find Implementations feature" className="no-shadow"></img>
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/find-implementations-feature.png" alt="Navigation with Find Implementations feature" className="no-shadow" />
 </figure>
 
 Observe that the implementation in the screenshot is a property on an object literal with type `ProcessInfoItem`, which is an interface that extends `QuickPickItem`.
