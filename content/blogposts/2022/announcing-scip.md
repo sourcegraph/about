@@ -6,12 +6,12 @@ authors:
 publishDate: 2022-06-08T18:00+02:00
 tags: [blog]
 slug: announcing-scip
-heroImage: blog/announcing-scip.png
-socialImage: blog/announcing-scip.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip.png
 published: true
 ---
 
-![Vulnerabilities in open source packages](https://storage.googleapis.com/sourcegraph-assets/blog/third-party-open-source-vulnerabilities.png)
+![SCIP - a better code indexing format than LSIF](https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip.png)
 
 We are excited to announce SCIP, a new indexing format that we are using at Sourcegraph to index programming languages to power code navigation features such as “Go to definition” and “Find references.” We have been using another format called LSIF (Language Server Index Format) for this purpose and in this blog post we want to share the challenges we faced by using LSIF and how that led us to create SCIP. Code navigation is a critical component of the user experience on Sourcegraph and the underlying code navigation data, the main topic of this blog post, is also a building block for a suite of other products under Sourcegraph’s offering as a code intelligence platform.
 
@@ -29,7 +29,7 @@ Search-based code navigation is powered by tools like ctags and tree-sitter and 
 
 We have created dozens of LSIF indexers ranging from prototype quality to production quality. Among our most established indexers we support Go, Java, Scala, Kotlin, TypeScript, and JavaScript.
 
-We are also using LSIF at scale. At the time of this writing, over 45k repositories on [sourcegraph.com](https://www.sourcegraph.com) have precise code navigation enabled and we process, on average, more than 4k LSIF uploads per day. 
+We are also using LSIF at scale. At the time of this writing, over 45k repositories on [sourcegraph.com](https://www.sourcegraph.com) have precise code navigation enabled and we process, on average, more than 4k LSIF uploads per day.
 
 As our usage of LSIF has grown, we have encountered several limitations of the protocol:
 
@@ -51,7 +51,7 @@ We are already using SCIP in our indexers scip-typescript (which supports TypeSc
 - The resulting index file takes less disk space. We’re observing that LSIF indexes are on average 4x larger when gzip compressed compared to the equivalent SCIP payloads. Uncompressed LSIF payloads are ~5x larger.
 - The indexers are easier to test. We have built a snapshot testing utility on top of SCIP that we’re reusing across indexers. Snapshot testing with LSIF payloads, in contrast, has been [painful](https://github.com/sourcegraph/scip/pull/27/files#diff-9c76847e0d19bedf4d9afbdfbe5e11046b73d78c80437d6adf7c6e7704052c66R23) in our experience.
 
-Don Stewart, an engineer at Meta, has integrated SCIP with [Glean](https://glean.software), the system that’s used at Meta for collecting, deriving, and querying facts about code. Don shared on Twitter that SCIP is “8x smaller, and can be processed 3x faster” in comparison with LSIF. 
+Don Stewart, an engineer at Meta, has integrated SCIP with [Glean](https://glean.software), the system that’s used at Meta for collecting, deriving, and querying facts about code. Don shared on Twitter that SCIP is “8x smaller, and can be processed 3x faster” in comparison with LSIF.
 
 <br/>
 <center>
@@ -75,8 +75,8 @@ While we are excited to grow our usage of SCIP, we care deeply about compatibili
 
 To pair with this announcement, we are releasing two new SCIP indexers:
 
-- **scip-typescript**: TypeScript and JavaScript indexer built on top of the TypeScript typechecker. Learn more about using this indexer here (link).
-- **scip-java**: Java, Scala, and Kotlin indexer built on top of compiler plugins for each respective language. Learn more about using this indexer here (link).
+- **scip-typescript**: TypeScript and JavaScript indexer built on top of the TypeScript typechecker. Learn more about using this indexer here ([link](LINK)).
+- **scip-java**: Java, Scala, and Kotlin indexer built on top of compiler plugins for each respective language. Learn more about using this indexer here ([link](LINK)).
 
 You can use the indexers above to enable precise code intelligence in Sourcegraph for their respective languages, or to simply migrate from LSIF to SCIP.
 
