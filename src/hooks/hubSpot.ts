@@ -168,7 +168,6 @@ export const useHubSpot = ({
     onFormSubmitted,
 }: HookProps): void => {
     useEffect(() => {
-        console.log('test')
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         createHubSpotForm({
             region,
