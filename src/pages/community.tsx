@@ -21,7 +21,7 @@ export const Community: FunctionComponent = () => (
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
                         <h1 className="display-2 font-weight-bold mb-0">Welcome to the Sourcegraph Community</h1>
-                        <p className="home__semiwide-paragraph my-5 display-5">
+                        <p className="my-5 display-5">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
                             encourage everyone to learn from each other and share everything they know. Because when we
@@ -88,11 +88,7 @@ export const Community: FunctionComponent = () => (
                         </li>
                         <li className="mt-2">Share the road less traveled so that everyone can learn</li>
                     </ul>
-                    <a
-                        className="btn btn-primary"
-                        href="https://discord.gg/rDPqBejz93"
-                        title="Join us on Discord"
-                    >
+                    <a className="btn btn-primary" href="https://discord.gg/rDPqBejz93" title="Join us on Discord">
                         Join us on Discord
                     </a>
                 </div>
@@ -114,59 +110,59 @@ export const Community: FunctionComponent = () => (
                             </p>
                             <ul>
                                 <li>
-                                    <a href="https://events.linuxfoundation.org/open-source-summit-north-america/register/">
-                                        Open Source Summit
-                                    </a>{' '}
-                                    - 9/27 - 9/30
-                                </li>
-                                <li>
-                                    <a href="https://reactadvanced.com/">React Advanced London</a> - 10/22
-                                </li>
-                                <li>
-                                    <a href="https://africa.jsworldconference.com/">JSWorld Africa</a> - 10/30
-                                </li>
-                                <li>
-                                    <a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13
-                                </li>
-                                <li>
-                                    <a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8
+                                    <a href="https://www.gophercon.com/">GopherCon 2022</a> - 10/6 - 10/8
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </Tab>
                 <Tab eventKey="devToolTime" title="Dev Tool Time">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
-                            <p>
+                <div className="row mt-5 justify-content-center">
+                        <div className="col-lg-6">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/QNYoOCLocAI"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen={true}
+                            />
+                             <p>
                                 Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
                                 <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
                                 keep up with new episodes.
                             </p>
-                            <a href="https://srcgr.ph/dev-tool-time-playlist">
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="850"
-                                    height="380"
-                                    src="/community/DTT_module.jpg"
-                                    alt="Dev Tool Time"
-                                />
-                            </a>
                         </div>
                     </div>
                 </Tab>
                 <Tab eventKey="podcast" title="Podcast">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-6">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VgVDMd2VlaU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true} />
-
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/VgVDMd2VlaU"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen={true}
+                            />
                             <strong>Subscribe:</strong>&nbsp;
-                            <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">YouTube</a>&nbsp;
-                            <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">Apple</a>&nbsp;
+                            <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">
+                                YouTube
+                            </a>
+                            &nbsp;
+                            <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">
+                                Apple
+                            </a>
+                            &nbsp;
                             <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6">Spotify</a>&nbsp;
-                            <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">Google</a>&nbsp;
+                            <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">
+                                Google
+                            </a>
+                            &nbsp;
                             <a href="https://feeds.buzzsprout.com/1097978.rss">RSS</a>
-
                         </div>
                     </div>
                 </Tab>
@@ -178,8 +174,8 @@ export const Community: FunctionComponent = () => (
                 <div className="col-lg-7">
                     <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
                     <br />
-                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn, or
-                    email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
+                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
+                    or email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
                 </div>
                 <div className="col-lg-5 mt-3">
                     <a
