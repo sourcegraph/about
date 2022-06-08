@@ -59,6 +59,7 @@ export interface FrontMatter {
         description: string
     }[]
     socialImage?: string
+    videoID?: string
     layout?: string
     style?: string
     audioSrc?: string
