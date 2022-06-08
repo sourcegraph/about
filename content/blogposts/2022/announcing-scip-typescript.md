@@ -119,7 +119,7 @@ The actions “Go to definition” and “Find references” work across your co
 Likewise, trigger “Find references” on the `action()` method to get real-world examples of that symbol across multiple repositories and packages.
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/trigger-find-references.png" alt="Trigger Find references on action() method" className="no-shadow"></img>
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/trigger-find-references.png" alt="Trigger Find references on action() method" className="no-shadow" />
 </figure>
 
 Observe that the results come from both GitHub repositories and npm packages. The code from npm packages is the same source code that’s typically installed under the `node_modules/` directory.
