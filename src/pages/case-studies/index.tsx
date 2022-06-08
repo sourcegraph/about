@@ -9,7 +9,7 @@ const CaseStudiesHome: FunctionComponent = () => (
         <Layout
             meta={{
                 title: 'Sourcegraph - Case studies',
-                description: 'Learn how engineering teams use Sourcegraph Universal Code Search.',
+                description: "Learn how engineering teams use Sourcegraph's code intelligence platform to understand, fix, and automate across their entire codebase.",
             }}
         >
             <div className="mt-2">
