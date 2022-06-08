@@ -76,7 +76,7 @@ While we are excited to grow our usage of SCIP, we care deeply about compatibili
 To pair with this announcement, we are releasing two new SCIP indexers:
 
 - **scip-typescript**: TypeScript and JavaScript indexer built on top of the TypeScript typechecker. Learn more about using this indexer here ([link](announcing-scip-typescript)).
-- **scip-java**: Java, Scala, and Kotlin indexer built on top of compiler plugins for each respective language. Learn more about using this indexer here ([link](LINK)).
+- **scip-java**: Java, Scala, and Kotlin indexer built on top of compiler plugins for each respective language. Learn more about using this indexer here ([link](https://github.com/sourcegraph/scip-java/releases/tag/v0.8.0)).
 
 You can use the indexers above to enable precise code intelligence in Sourcegraph for their respective languages, or to simply migrate from LSIF to SCIP.
 
