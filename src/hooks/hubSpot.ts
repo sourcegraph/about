@@ -168,10 +168,7 @@ export const useHubSpot = ({
     onFormSubmitted,
 }: HookProps): void => {
     useEffect(() => {
-        /** Some pg's conditionally require HS forms, exit HS creation when formId is falsey */
-        if (!formId) {
-            return
-        }
+        console.log('test')
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         createHubSpotForm({
             region,

@@ -37,7 +37,7 @@ interface Props {
     subtitle?: string
     description?: ReactNode
     formLabel?: string
-    form?: Form
+    form: Form
     learnMoreCTA?: ReactNode
     videoSrc?: string
     speakers?: Speaker[]
@@ -56,19 +56,23 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     speakers,
     children,
 }) => {
+    const router = useRouter()
+    const { pathname, query } = router
+
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
 
-    const isWebinarPg = useRouter().pathname.split('/').slice(1)[0] === 'webinars'
-    const isGuidePg = useRouter().pathname.split('/').slice(1)[0] === 'guides'
+    const isWebinarPg = pathname.split('/').slice(1)[0] === 'webinars'
+    const isGuidePg = pathname.split('/').slice(1)[0] === 'guides'
+    const hasWatchNowQuery = Object.keys(query).includes('watch-now')
 
     const hubSpotConfig: HubSpotForm | null = {
         portalId: '2762526',
-        formId: form?.formId ?? '',
+        formId: form?.formId,
         targetId: 'form',
         formInstanceId: form?.formId,
     }
-    if (form?.onFormSubmitted) {
+    if (form.onFormSubmitted) {
         hubSpotConfig.onFormSubmitted = form.onFormSubmitted
     }
     useHubSpot(hubSpotConfig)
@@ -132,26 +136,8 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             </section>
 
-            {/* ---- DEFAULT BODY VARIATION ---- */}
-            {description && (
-                <section className="bg-white py-6 pb-md-8">
-                    <ContentSection className="d-flex flex-column-reverse flex-md-row">
-                        {description}
-
-                        <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
-                            <h2 className="font-weight-bold">{formLabel}</h2>
-                            <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
-                                <div id="form" />
-                            </div>
-                        </div>
-                    </ContentSection>
-
-                    {children}
-                </section>
-            )}
-
-            {/* ---- RECORDING BODY VARIATION ---- */}
-            {videoSrc && learnMoreCTA && (
+            {hasWatchNowQuery ? (
+                // ---- RECORDING BODY VARIATION ----
                 <div className="bg-white pb-6">
                     <section className="py-md-6 my-md-0 my-6 container video-embed embed-responsive embed-responsive-16by9">
                         <iframe
@@ -168,6 +154,22 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                         {learnMoreCTA}
                     </div>
                 </div>
+            ) : (
+                // ---- DEFAULT BODY VARIATION ----
+                <section className="bg-white py-6 pb-md-8">
+                    <ContentSection className="d-flex flex-column-reverse flex-md-row">
+                        {description}
+
+                        <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
+                            <h2 className="font-weight-bold">{formLabel}</h2>
+                            <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
+                                <div id="form" />
+                            </div>
+                        </div>
+                    </ContentSection>
+
+                    {children}
+                </section>
             )}
 
             {speakers?.length && (
