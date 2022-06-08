@@ -47,7 +47,7 @@ const Recording: FunctionComponent = () => (
                             className="btn btn-primary mt-4 col-12 col-md-3 col-xl-2"
                             title="Request a Demo"
                             data-button-style={buttonStyle.primary}
-                            data-button-location={buttonLocation.trySourcegraph}
+                            data-button-location={buttonLocation.bodyDemo}
                             data-button-type="cta"
                         >
                             Request a demo
