@@ -113,7 +113,7 @@ Our experience is that the `scip-typescript index` command is not always a bottl
 The actions “Go to definition” and “Find references” work across your codebase and package.json dependencies. Try this out yourself by opening the [github.com/vendure-ecommerce/vendure repository](https://sourcegraph.com/github.com/vendure-ecommerce/vendure@0dfa9d0b4b7f9f6af1c6406d44b096543c28db3e/-/blob/packages/create/src/create-vendure-app.ts?L39:6&subtree=true#tab=references) and navigating to the definition of the `arguments()` method that’s defined by the `commander` npm package.
 
 <figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/navigate-to-arguments.png" alt="Navigate to arguments() method defined in commander npm" className="no-shadow"></img>
+  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/navigate-to-arguments.png" alt="Navigate to arguments() method defined in commander npm" className="no-shadow" />
 </figure>
 
 Likewise, trigger “Find references” on the `action()` method to get real-world examples of that symbol across multiple repositories and packages.
