@@ -6,10 +6,11 @@ import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import SSRProvider from 'react-bootstrap/SSRProvider'
 
-import { useEventLogger } from '@hooks'
+import { useEventLogger, useLandingSource } from '@hooks'
 
 const App = ({ Component, pageProps }: AppProps): ReactNode => {
     useEventLogger()
+    useLandingSource()
 
     return (
         <>
