@@ -15,7 +15,7 @@ published: true
 
 We are excited to announce SCIP, a new indexing format that we are using at Sourcegraph to index programming languages to power code navigation features such as “Go to definition” and “Find references.” We have been using another format called LSIF (Language Server Index Format) for this purpose and in this blog post we want to share the challenges we faced by using LSIF and how that led us to create SCIP. Code navigation is a critical component of the user experience on Sourcegraph and the underlying code navigation data, the main topic of this blog post, is also a building block for a suite of other products under Sourcegraph’s offering as a code intelligence platform.
 
-This blog post is technical and primarily aimed at authors of developer tools that produce or consume metadata about programming languages. If you’re a Sourcegraph user and want to jump straight to trying out precise code navigation with scip-typescript (for TypeScript and JavaScript) or scip-java (for Java, Scala, and Kotlin), you can read more in their respective announcements, [here](LINK) and [here](LINK).
+This blog post is technical and primarily aimed at authors of developer tools that produce or consume metadata about programming languages. If you’re a Sourcegraph user and want to jump straight to trying out precise code navigation with scip-typescript (for TypeScript and JavaScript) or scip-java (for Java, Scala, and Kotlin), you can read more in their respective announcements, [here](announcing-scip-typescript) and [here](LINK).
 
 > Note on the name: SCIP is pronounced the same way as “skip” and it’s a recursive acronym that stands for “SCIP Code Intelligence Protocol.” SCIP is also a purposeful nod to SICP (Structure and Interpretation of Programs), a book about analyzing programs.
 
@@ -75,7 +75,7 @@ While we are excited to grow our usage of SCIP, we care deeply about compatibili
 
 To pair with this announcement, we are releasing two new SCIP indexers:
 
-- **scip-typescript**: TypeScript and JavaScript indexer built on top of the TypeScript typechecker. Learn more about using this indexer here ([link](LINK)).
+- **scip-typescript**: TypeScript and JavaScript indexer built on top of the TypeScript typechecker. Learn more about using this indexer here ([link](announcing-scip-typescript)).
 - **scip-java**: Java, Scala, and Kotlin indexer built on top of compiler plugins for each respective language. Learn more about using this indexer here ([link](LINK)).
 
 You can use the indexers above to enable precise code intelligence in Sourcegraph for their respective languages, or to simply migrate from LSIF to SCIP.
