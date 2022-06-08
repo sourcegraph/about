@@ -46,7 +46,7 @@ Indexing a codebase with scip-typescript should have roughly similar performance
 
 We benchmarked scip-typescript by running it against several open source codebases to measure the indexing performance. The numbers are measured with a 2019 MacBook Pro with a 2.6 GHz 6-Core Intel Core.
 
-<div style={{overflowX: 'scroll'}}>
+<div style={{overflowX: 'auto'}}>
 <table>
     <tr>
         <th></th>
