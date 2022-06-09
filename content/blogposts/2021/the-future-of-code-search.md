@@ -94,3 +94,7 @@ Sourcegraph works with every major code host (GitHub, GitLab, Bitbucket, AWS Cod
 All this is the tip of the iceberg of what we have planned. Our latest fundraise allows us to make faster progress toward shipping these features to developers everywhere and focus on our long-term mission. We believe great code search should be available to every developer in the world. If you'd like to help us build this future [as a member of our team](https://github.com/sourcegraph/careers), want to give us product feedback, or would like help bringing Sourcegraph into your organization, [hit us up](https://twitter.com/sourcegraph)!
 
 <img src="/blog/SG-signup-QR.png" width="77" height="77" alt="Sourcegraph Sign Up QR Code"/>
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

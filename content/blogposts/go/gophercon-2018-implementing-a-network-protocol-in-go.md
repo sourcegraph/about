@@ -763,3 +763,7 @@ Resources:
 * [github.com/mdlayher/ndp](https://github.com/mdlayher/ndp)
 * [Network Protocol Breakdown: NDP and Go](https://medium.com/@mdlayher/network-protocol-breakdown-ndp-and-go-3dc2900b1c20)
 * [RFC 4861](https://tools.ietf.org/html/rfc4861)
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

@@ -75,3 +75,7 @@ People have asked for
 - So if you want to contribute to a 7,253-star project, reach out!
 
 ![bourgon](//images.contentful.com/le3mxztn6yoo/4cWREdTh1uK4Wm60CgCYUQ/6f763d940fb0192f25b7a3d22b3a02e2/bourgon.jpg)
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

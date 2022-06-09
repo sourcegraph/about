@@ -66,3 +66,7 @@ bpftrace  makes writing BPF programs very straightforward.
 There is still some amount of overhead, but not nearly as much.
 
 This is all great, but it would be much better if we could write these programs in Go... goBPF does exactly that.
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

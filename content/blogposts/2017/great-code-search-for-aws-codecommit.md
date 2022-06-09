@@ -66,3 +66,7 @@ Setting up Sourcegraph code search to work with AWS CodeCommit is quick and easy
 And that's it! Now you can search over all your AWS CodeCommit repositories at once or configure a search group that lets you and your team search over a targeted subset of repositories. You can also configure Sourcegraph to work with a variety of Enterprise SSO identity providers and additional code hosts. You can read more about customizations [in the Sourcegraph administrator docs](https://docs.sourcegraph.com/admin).
 
 [Install a self-hosted Sourcegraph instance with 1 command.](https://docs.sourcegraph.com/#quickstart)
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
