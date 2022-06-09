@@ -1,5 +1,22 @@
 import { useEffect } from 'react'
 
+/**
+ * These are our Master Form IDs that are used throughout our codebase.
+ */
+const masterForms = {
+    // Demo Request Email Only
+    demoEmail: 'a26c29e7-cd79-429d-a2ac-43f694734c46',
+
+    // Demo Request Multi Field
+    demoMulti: 'e090296f-84f5-4bcb-9093-a533336841b4',
+
+    // Gated Content Email Only
+    gatedEmail: '9b2539ad-feaa-4dd2-b6b4-2439c5bc98da',
+
+    // Gated Content Multi Field
+    gatedMulti: '1fb4ef6c-f233-48ba-9f43-a88f19528282',
+}
+
 declare global {
     interface Window {
         hbspt?: {
@@ -174,7 +191,10 @@ export const useHubSpot = ({
     onFormSubmitted,
 }: HookProps): void => {
     useEffect(() => {
-        /** Some pg's conditionally require HS forms, exit fn + remove HS-Form when formId is absent */
+        /**
+         * Some pages conditionally require HubSpot forms. This will halt the
+         * form from being created when a formId is absent.
+         */
         if (!formId) {
             return removeScripts()
         }
