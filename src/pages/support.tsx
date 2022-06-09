@@ -49,7 +49,7 @@ const Support: FunctionComponent = () => (
                             <div className="card-body">
                                 <h1 className="card-title mt-3 mb-3 text-center">Free</h1>
                                 <a
-                                    className="font-size-base min-w-150 btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
+                                    className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex"
                                     href="https://docs.sourcegraph.com#quickstart-guide"
                                 >
                                     Deploy
@@ -99,7 +99,7 @@ const Support: FunctionComponent = () => (
                             <div className="card-body">
                                 <h1 className="card-title mt-3 mb-3 text-center">Team</h1>
                                 <a
-                                    className="font-size-base min-w-150 btn btn-success w-100 justify-content-center text-center d-inline-flex"
+                                    className="font-size-base btn btn-success w-100 justify-content-center text-center d-inline-flex"
                                     href="https://sourcegraph.com/subscriptions/new"
                                 >
                                     Buy now
@@ -153,7 +153,7 @@ const Support: FunctionComponent = () => (
                                     passHref={true}
                                 >
                                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a className="font-size-base min-w-150 btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex">
+                                    <a className="font-size-base btn btn-outline-primary w-100 justify-content-center text-center d-inline-flex">
                                         Contact us
                                     </a>
                                 </Link>
