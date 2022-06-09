@@ -242,3 +242,7 @@ experienced adherents to the Chicago Manual of Style will deviate from it. Learn
 * Go is positioned to borrow a lot of good ideas from publishing
 * The roles of an editor in publishing can inform what we do in the process of software engineering
 * Manuals of style
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

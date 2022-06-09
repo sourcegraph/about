@@ -493,3 +493,7 @@ https://golang.org/s/go15gcpacing
 **So You Wanna Go Fast**
 Tyler Treat
 https://bravenewgeek.com/so-you-wanna-go-fast/
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

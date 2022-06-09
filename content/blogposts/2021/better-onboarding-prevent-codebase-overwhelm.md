@@ -119,6 +119,10 @@ There's a lot more to successful developer onboarding than setting up a local de
 
 _This post was originally published in April 2020. It has been revised and updated as of March 9, 2022._
 
+## About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
+
 ## More posts like this
 
 - [How we built our software engineering career framework](https://about.sourcegraph.com/blog/software-engineer-career-ladder/)
