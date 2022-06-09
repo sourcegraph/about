@@ -159,7 +159,7 @@ async function createHubSpotForm({
     })
 }
 
-const removeScripts = ():void => {
+const removeScripts = (): void => {
     removeScriptElement('jQuery')
     removeScriptElement('clearbit')
     removeScriptElement('hubspot')
