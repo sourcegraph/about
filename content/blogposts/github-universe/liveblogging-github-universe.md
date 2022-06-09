@@ -73,3 +73,7 @@ Developers, I say!
 *   Building and Scaling a Distributed and Inclusive Team
 *   Crossing the Language Divide in Open Source Projects
 *   Building Reliability with Spokes ([Patrick Reynolds](https://github.com/piki), [slides](http://piki.org/spokes.pdf))
+
+#### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

@@ -40,3 +40,7 @@ As time goes on, gizmo's packages are starting to look more and more like Go kit
 Just open sourced github.com/NYTimes/marvin, a go-kit HTTP server for the App Engine Standard Environment. Similar to gizmo, tries to give you a composed framework for what a web server looks like.
 
 ![jp robinson](//images.contentful.com/le3mxztn6yoo/2fNM9V86sAGw4aQQIWUqGk/5c761b436ece37c070532d327a8cd2bb/jp_robinson.jpeg)
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

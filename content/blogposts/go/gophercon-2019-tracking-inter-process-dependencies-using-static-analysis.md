@@ -336,3 +336,7 @@ If you're going to do static analysis, consider the following:
 * Some documentation in the relevant packges is great. Other documentation leaves much to be desired.
 * Start simple
 * Talk to the community. He regrets not doing this sooner as it would've saved him time.
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

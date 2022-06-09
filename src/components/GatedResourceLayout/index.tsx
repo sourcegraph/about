@@ -9,8 +9,8 @@ import { useWindowWidth, useHubSpot, HubSpotForm } from '@hooks'
 
 import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
 import guideBg from './assets/hero/bg-code-aquamarine.png'
-import webinarCustomerMobileBg from './assets/hero/bg-code-mars-mobile.png'
-import webinarCustomerBg from './assets/hero/bg-code-mars.png'
+import webinarMobileBg from './assets/hero/bg-code-mars-mobile.png'
+import webinarBg from './assets/hero/bg-code-mars.png'
 import defaultMobileBg from './assets/hero/bg-code-venus-mobile.png'
 import defaultBg from './assets/hero/bg-code-venus.png'
 
@@ -33,11 +33,13 @@ interface Form {
 
 interface Props {
     customer?: Customer
-    title: string
+    title: ReactNode | string
     subtitle?: string
-    description: ReactNode
-    formLabel: string
+    description?: ReactNode
+    formLabel?: string
     form: Form
+    learnMoreCTA?: ReactNode
+    videoSrc?: string
     speakers?: Speaker[]
     children?: ReactNode
 }
@@ -49,20 +51,30 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     description,
     formLabel,
     form,
+    learnMoreCTA,
+    videoSrc,
     speakers,
     children,
 }) => {
+    const router = useRouter()
+    const { pathname, query } = router
+
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
 
-    const isWebinarPg = useRouter().pathname.split('/').slice(1)[0] === 'webinars'
-    const isGuidePg = useRouter().pathname.split('/').slice(1)[0] === 'guides'
+    const isWebinarPg = pathname.split('/').slice(1)[0] === 'webinars'
+    const isGuidePg = pathname.split('/').slice(1)[0] === 'guides'
+    const hasWatchNowQuery = Object.keys(query).includes('watch-now')
 
-    const hubSpotConfig: HubSpotForm = {
+    const hubSpotConfig: HubSpotForm | null = {
         portalId: '2762526',
         formId: form.formId,
         targetId: 'form',
-        formInstanceId: form.formId,
+        formInstanceId: form?.formId,
+    }
+    if (hasWatchNowQuery) {
+        // Exit HS Hook when HS-Form not needed
+        hubSpotConfig.formId = ''
     }
     if (form.onFormSubmitted) {
         hubSpotConfig.onFormSubmitted = form.onFormSubmitted
@@ -71,12 +83,8 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
     const heroImage = (): { src: string } => {
         if (isWebinarPg) {
-            // Customer-based Webinar
-            if (customer) {
-                return isMdOrDown ? webinarCustomerMobileBg : webinarCustomerBg
-            }
-            // Product-based Webinar
-            return isMdOrDown ? defaultMobileBg : defaultBg
+            // Webinars
+            return isMdOrDown ? webinarMobileBg : webinarBg
         }
         if (isGuidePg) {
             // Guides
@@ -132,20 +140,39 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             </section>
 
-            <section className="bg-white py-6 pb-md-8">
-                <ContentSection className="d-flex flex-column-reverse flex-md-row">
-                    {description}
+            {hasWatchNowQuery ? (
+                // ---- RECORDING BODY VARIATION ----
+                <div className="bg-white pb-6">
+                    <section className="py-md-6 my-md-0 my-6 container video-embed embed-responsive embed-responsive-16by9">
+                        <iframe
+                            className="p-md-7 embed-responsive-item"
+                            src={videoSrc}
+                            allowFullScreen={true}
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            frameBorder={0}
+                            title={subtitle}
+                        />
+                    </section>
 
-                    <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
-                        <h2 className="font-weight-bold">{formLabel}</h2>
-                        <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
-                            <div id="form" />
+                    <div className="bg-light-gray-3">{learnMoreCTA}</div>
+                </div>
+            ) : (
+                // ---- DEFAULT BODY VARIATION ----
+                <section className="bg-white py-6 pb-md-8">
+                    <ContentSection className="d-flex flex-column-reverse flex-md-row">
+                        {description}
+
+                        <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
+                            <h2 className="font-weight-bold">{formLabel}</h2>
+                            <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
+                                <div id="form" />
+                            </div>
                         </div>
-                    </div>
-                </ContentSection>
+                    </ContentSection>
 
-                {children}
-            </section>
+                    {children}
+                </section>
+            )}
 
             {speakers?.length && (
                 <section className="bg-white pb-6">

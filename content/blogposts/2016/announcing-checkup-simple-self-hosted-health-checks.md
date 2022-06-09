@@ -94,3 +94,7 @@ Because running your health checks is just a simple terminal command, you can no
 To get geographically distributed checks, you simply run Checkup from multiple AWS regions. Checkup works smoothly on the cheapest EC2 micro instances. Checkup can easily be extended to work with other cloud computing providers or even custom storage services your company uses internally. The [code is open source](https://sourcegraph.com/github.com/sourcegraph/checkup/-/def/GoPackage/github.com/sourcegraph/checkup/-/Checkup), [well-documented](https://godoc.org/github.com/sourcegraph/checkup), and [pull requests are welcome](https://github.com/sourcegraph/checkup).
 
 We’re releasing [Checkup](https://sourcegraph.github.io/checkup/), because we think it will save a lot of time and frustration for many engineers. We hope others will find it useful and extend it so that together we can make uptime monitoring simpler and more hassle-free. [Try it out](https://github.com/sourcegraph/checkup/releases) and [let us know what you think](https://twitter.com/sourcegraph)!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
