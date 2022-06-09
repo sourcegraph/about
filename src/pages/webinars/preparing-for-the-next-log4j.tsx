@@ -1,10 +1,25 @@
 import { FunctionComponent } from 'react'
 
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Layout, GatedResourceLayout } from '@components'
+import { Layout, ContentSection, GatedResourceLayout } from '@components'
+import { buttonStyle, buttonLocation } from '@data'
 
-import { speakers } from './watch-now'
+const speakers = [
+    {
+        name: 'Jon Kohler',
+        title: 'Technical Director of Solution Engineering at Nutanix',
+        img: '/case-studies/jon-kohler.png',
+        bio: 'Jon is a leader in the Solutions Engineering practice at Nutanix. His team covers a variety of full-stack technical solutions, focusing on both Big Data and Healthcare solutions.',
+    },
+    {
+        name: 'Mike McLaughlin',
+        title: 'Principle Customer Engineer at Sourcegraph',
+        img: '/case-studies/mike-mclaughlin.png',
+        bio: 'Mike is a Principal Customer Engineer at Sourcegraph working with some of today’s largest brands to solve the challenges of big code, developer velocity, and fixing vulnerabilities.',
+    },
+]
 
 const Webinar: FunctionComponent = () => {
     const router = useRouter()
@@ -29,7 +44,10 @@ const Webinar: FunctionComponent = () => {
                 form={{
                     formId: 'abb86998-1a6a-4cfd-9888-ffba09c850c9',
                     onFormSubmitted: () =>
-                        router.push('/webinars/code-insights-turning-your-metrics-into-action/watch-now'),
+                    router.push({
+                        pathname: router.pathname,
+                        query: 'watch-now',
+                    }),
                 }}
                 description={
                     <section className="col-md-6 col-12 pr-lg-6">
@@ -62,6 +80,24 @@ const Webinar: FunctionComponent = () => {
                             <li className="mb-2">Best practices to prepare for the next security vulnerability</li>
                         </ul>
                     </section>
+                }
+                videoSrc="https://www.youtube.com/embed/ANcbjQJ0OGI"
+                learnMoreCTA={
+                    <ContentSection className="d-flex flex-column align-items-center py-lg-8 py-7">
+                        <h1 className="font-weight-bold text-center">Interesting in learning more?</h1>
+                        <Link href="/case-studies/nutanix-fixed-log4j-with-sourcegraph" passHref={true}>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a
+                                className="btn btn-primary mt-4 col-12 col-md-5 col-xl-3"
+                                title="Read the Nutanix Case Study"
+                                data-button-style={buttonStyle.primary}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Read the Nutanix Case Study
+                            </a>
+                        </Link>
+                    </ContentSection>
                 }
             />
         </Layout>
