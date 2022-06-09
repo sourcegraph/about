@@ -102,3 +102,7 @@ Then just open **thyme.html** in your favorite web browser and voila, you get th
 All the information Thyme collects is kept safely on your local disk so you have full control over your data. It never sends any information over the Internet.
 
 Thyme currently supports Linux (with X-Windows) and macOS support is on the way soon. It’s built with simplicity and hackability in mind. The code is [open source](https://sourcegraph.com/github.com/sourcegraph/thyme/-/def/GoPackage/github.com/sourcegraph/thyme/cmd/thyme/-/main.go/TrackCmd/Execute), [well-documented](https://godoc.org/github.com/sourcegraph/thyme), and easily extensible. [Try it out](https://github.com/sourcegraph/thyme) and [let us know what you think](http://twitter.com/sourcegraph)!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

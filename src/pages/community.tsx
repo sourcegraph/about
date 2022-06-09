@@ -21,7 +21,7 @@ export const Community: FunctionComponent = () => (
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
                         <h1 className="display-2 font-weight-bold mb-0">Welcome to the Sourcegraph Community</h1>
-                        <p className="home__semiwide-paragraph my-5 display-5">
+                        <p className="my-5 display-5">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
                             encourage everyone to learn from each other and share everything they know. Because when we
@@ -110,22 +110,7 @@ export const Community: FunctionComponent = () => (
                             </p>
                             <ul>
                                 <li>
-                                    <a href="https://events.linuxfoundation.org/open-source-summit-north-america/register/">
-                                        Open Source Summit
-                                    </a>{' '}
-                                    - 9/27 - 9/30
-                                </li>
-                                <li>
-                                    <a href="https://reactadvanced.com/">React Advanced London</a> - 10/22
-                                </li>
-                                <li>
-                                    <a href="https://africa.jsworldconference.com/">JSWorld Africa</a> - 10/30
-                                </li>
-                                <li>
-                                    <a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13
-                                </li>
-                                <li>
-                                    <a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8
+                                    <a href="https://www.gophercon.com/">GopherCon 2022</a> - 10/6 - 10/8
                                 </li>
                             </ul>
                         </div>
@@ -133,21 +118,21 @@ export const Community: FunctionComponent = () => (
                 </Tab>
                 <Tab eventKey="devToolTime" title="Dev Tool Time">
                     <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
+                        <div className="col-lg-6">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/QNYoOCLocAI"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen={true}
+                            />
                             <p>
                                 Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
                                 <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
                                 keep up with new episodes.
                             </p>
-                            <a href="https://srcgr.ph/dev-tool-time-playlist">
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="850"
-                                    height="380"
-                                    src="/community/DTT_module.jpg"
-                                    alt="Dev Tool Time"
-                                />
-                            </a>
                         </div>
                     </div>
                 </Tab>

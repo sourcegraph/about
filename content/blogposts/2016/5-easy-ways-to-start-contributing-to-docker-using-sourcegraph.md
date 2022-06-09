@@ -79,3 +79,7 @@ And if you feel up for it, take notes along the way, document your experience, a
 One of the misconceptions that often prevents people from getting involved in projects is being daunted by the task of jumping into a large, foreign codebase. We often assume, as programmers, that the hard work lies in _writing code_, but often, it’s reading and understanding other people’s code that is the critical first step. Recognizing that and approaching the task in a principled way, armed with good tools for doing so, will help you conquer the psychological barrier of diving into the code.
 
 So make the leap and [check out Docker’s source today](https://sourcegraph.com/github.com/docker/docker). A vibrant open source community and codebase awaits you!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
