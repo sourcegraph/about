@@ -72,7 +72,8 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
         targetId: 'form',
         formInstanceId: form?.formId,
     }
-    if (hasWatchNowQuery) { // Exit HS Hook when HS-Form not needed
+    if (hasWatchNowQuery) {
+        // Exit HS Hook when HS-Form not needed
         hubSpotConfig.formId = ''
     }
     if (form.onFormSubmitted) {
