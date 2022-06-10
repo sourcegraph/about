@@ -416,42 +416,52 @@ const CodeInsightsPage: FunctionComponent = () => {
                         <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                             <div className="d-flex py-lg-5 py-3">
                                 <div className="mr-4">
-                                    <BullsEyeArrowIcon className="icon text-blurple" size={70} />
+                                    <BullsEyeArrowIcon
+                                        className="mb-4 bg-violet-mist text-vivid-violet rounded p-2"
+                                        size={48}
+                                    />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <div className="display-lg-3 font-weight-bold">Set goals</div>
-                                    <p className="icon-paragraph">Measure goals and progress in your codebase</p>
+                                    <p>Measure goals and progress in your codebase</p>
                                 </div>
                             </div>
                             <div className="d-flex py-lg-5 py-3">
                                 <div className="icon mr-4">
-                                    <LighteningBoltOutlineIcon className="icon text-blurple" size={70} />
+                                    <LighteningBoltOutlineIcon
+                                        className="mb-4 bg-violet-mist text-vivid-violet rounded p-2"
+                                        size={48}
+                                    />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <div className="display-lg-3 font-weight-bold">Plan proactively</div>
-                                    <p className="icon-paragraph">
-                                        Stay on top of engineering initiatives and catch issues before they escalate
-                                    </p>
+                                    <p>Stay on top of engineering initiatives and catch issues before they escalate</p>
                                 </div>
                             </div>
                         </div>
                         <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                             <div className="d-flex py-lg-5 py-3">
                                 <div className="mr-4">
-                                    <TrendingUpIcon className="icon text-blurple" size={70} />
+                                    <TrendingUpIcon
+                                        className="mb-4 bg-violet-mist text-vivid-violet rounded p-2"
+                                        size={48}
+                                    />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <div className="display-lg-3 font-weight-bold">Track ownership & trends</div>
-                                    <p className="icon-paragraph">Tie trends and metrics to owners on the teams</p>
+                                    <p>Tie trends and metrics to owners on the teams</p>
                                 </div>
                             </div>
                             <div className="d-flex py-lg-5 py-3">
                                 <div className="mr-4">
-                                    <RocketLaunchOutlineIcon className="icon text-blurple" size={70} />
+                                    <RocketLaunchOutlineIcon
+                                        className="mb-4 bg-violet-mist text-vivid-violet rounded p-2"
+                                        size={48}
+                                    />
                                 </div>
                                 <div className="d-flex flex-column">
                                     <div className="display-lg-3 font-weight-bold">Celebrate progress</div>
-                                    <p className="icon-paragraph">Visualize the momentum and motivate your teammates</p>
+                                    <p>Visualize the momentum and motivate your teammates</p>
                                 </div>
                             </div>
                         </div>

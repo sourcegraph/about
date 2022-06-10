@@ -206,10 +206,13 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                 </div>
             </ContentSection>
             <ContentSection color="black" className="py-5">
-                <div className="row justify-content-md-center">
+                <div className="row justify-content-md-center d-flex align-items-center">
                     <div className="col-md-3 text-center">
                         <a href="https://twitter.com/sourcegraph" target="_blank" rel="noreferrer">
-                            <TwitterIcon size={72} />
+                            <TwitterIcon
+                                className="mb-5 mb-md-2 bg-violet-mist text-vivid-violet rounded p-2"
+                                size={50}
+                            />
                         </a>
                     </div>
                     <div className="col-md-6">

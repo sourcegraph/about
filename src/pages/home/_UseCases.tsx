@@ -106,7 +106,7 @@ const UseCases: FunctionComponent = () => {
                         key={useCase.title}
                         className="col-sm-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start mb-6"
                     >
-                        <useCase.icon className="text-vivid-violet w-100 max-w-50 h-auto mr-sm-3 mb-4 mb-sm-0" />
+                        <useCase.icon className="bg-violet-mist text-vivid-violet rounded p-2 w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" />
                         <div className="text-center text-sm-left">
                             <h4 className="font-weight-bold">{useCase.title}</h4>
                             <div className="text-lg">
