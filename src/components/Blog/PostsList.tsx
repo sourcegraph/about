@@ -19,6 +19,7 @@ export const PostsList: FunctionComponent<Props> = ({ posts }) => {
         <ul className="posts-list list-unstyled">
             {posts.map(post => {
                 const PostList = POST_INDEX_TYPE_TO_COMPONENT[postIndexType(post.frontmatter)]
+
                 return (
                     <PostList
                         frontmatter={post.frontmatter}

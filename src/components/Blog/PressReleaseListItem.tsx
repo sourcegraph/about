@@ -3,8 +3,8 @@ import { FunctionComponent } from 'react'
 import { truncate } from 'lodash'
 import Link from 'next/link'
 
+import { PostHeader } from '@components'
 import { PostIndexItem } from '@interfaces/posts'
-import { formatDate } from '@util'
 
 /**
  * An index blog post item.
@@ -19,19 +19,15 @@ export const PressReleaseListItem: FunctionComponent<PostIndexItem> = ({
     titleLinkClassName = '',
 }) => (
     <div className={`blog-post ${className}`}>
-        <header className={headerClassName}>
-            <h1 className={titleClassName}>
-                <Link href={`/press-release/${slugPath}`} passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className={`d-block ${titleLinkClassName}`}>{frontmatter.title}</a>
-                </Link>
-            </h1>
-            {frontmatter.publishDate && (
-                <p className="text-align-center text-secondary mb-0">
-                    <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
-                </p>
-            )}
-        </header>
+        <PostHeader
+            frontmatter={frontmatter}
+            url={`/press-release/${slugPath}`}
+            headerClassName={headerClassName}
+            titleClassName={titleClassName}
+            renderTitleAsLink={true}
+            titleLinkClassName={titleLinkClassName}
+        />
+
         {slugPath && (
             <div className="card-body pt-0 d-flex flex-card">
                 <div className="row w-100">
@@ -48,6 +44,7 @@ export const PressReleaseListItem: FunctionComponent<PostIndexItem> = ({
                             </Link>
                         </div>
                     </div>
+
                     {frontmatter.heroImage && (
                         <div className="col-md-2 d-flex justify-content-center">
                             <Link href={`/press-release/${slugPath}`} passHref={true}>

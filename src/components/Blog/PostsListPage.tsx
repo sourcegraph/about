@@ -17,6 +17,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
         <Layout meta={blogInfo.meta} className="bg-light navbar-light">
             <div className="container-lg">
                 <BlogHeader {...blogInfo} />
+
                 <div className="pt-4">
                     <PostsList posts={loadMoreHook.currentRecords} />
                     {loadMoreHook.currentRecords.length < allPosts.length && (
@@ -31,6 +32,7 @@ export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, po
                         </div>
                     )}
                 </div>
+
                 {children}
             </div>
         </Layout>

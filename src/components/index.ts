@@ -46,6 +46,7 @@ export {
     BLOG_TYPE_TO_INFO,
     PodcastAudioPlayer,
     PostLayout,
+    PostHeader,
 } from './Blog'
 
 // Carousels

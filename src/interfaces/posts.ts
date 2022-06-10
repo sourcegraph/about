@@ -63,20 +63,25 @@ export interface FrontMatter {
     audioSrc?: string
 }
 
-export interface PostComponentProps {
-    post: Post
-    content: MDXRemoteSerializeResult | null
+export interface PostHeaderProps {
+    frontmatter: FrontMatter
 
     /** The URL to the post. */
     url: string
 
-    className?: string
     headerClassName?: string
     titleClassName?: string
     titleLinkClassName?: string
-    tag?: 'li' | 'div' | 'article'
     renderTitleAsLink?: boolean
-    contentClassName: string
+}
+
+export interface PostComponentProps extends Omit<PostHeaderProps, 'frontmatter'> {
+    post: Post
+    content: MDXRemoteSerializeResult | null
+
+    className?: string
+    tag?: 'li' | 'div' | 'article'
+    contentClassName?: string
 }
 
 export interface PostIndexComponentProps {

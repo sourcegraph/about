@@ -14,6 +14,7 @@ export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUr
                 <a className="text-body">{title}</a>
             </Link>
         </h1>
+
         {belowTitle}
     </div>
 )

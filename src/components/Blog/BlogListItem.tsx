@@ -3,8 +3,8 @@ import { FunctionComponent } from 'react'
 import { truncate } from 'lodash'
 import Link from 'next/link'
 
+import { PostHeader } from '@components'
 import { PostIndexItem } from '@interfaces/posts'
-import { formatDate } from '@util'
 
 /**
  * An index blog post item.
@@ -19,40 +19,15 @@ export const BlogListItem: FunctionComponent<PostIndexItem> = ({
     titleLinkClassName = '',
 }) => (
     <div className={`blog-post ${className}`}>
-        <header className={headerClassName}>
-            <h1 className={titleClassName}>
-                <Link href={`/blog/${slugPath}`} passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className={`d-block ${titleLinkClassName}`}>{frontmatter.title}</a>
-                </Link>
-            </h1>
-            {frontmatter.authors?.length && (
-                <p className="text-align-center text-secondary mb-0">
-                    {frontmatter.authors.map((a, index) => (
-                        <span key={a.name}>
-                            {a.url ? (
-                                a.url.includes('http') ? (
-                                    <a href={a.url} target="_blank" rel="nofollow noreferrer">
-                                        {a.name}
-                                    </a>
-                                ) : (
-                                    <Link href={a.url}>{a.name}</Link>
-                                )
-                            ) : (
-                                a.name
-                            )}
-                            {/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
-                            {index === frontmatter.authors!.length - 1 ? ' ' : ', '}
-                        </span>
-                    ))}
-                </p>
-            )}
-            {frontmatter.publishDate && (
-                <p className="text-align-center text-secondary mb-0">
-                    <time dateTime={frontmatter.publishDate}>{formatDate(frontmatter.publishDate)}</time>
-                </p>
-            )}
-        </header>
+        <PostHeader
+            frontmatter={frontmatter}
+            url={`/blog/${slugPath}`}
+            headerClassName={headerClassName}
+            titleClassName={titleClassName}
+            renderTitleAsLink={true}
+            titleLinkClassName={titleLinkClassName}
+        />
+
         {slugPath && (
             <div className="card-body pt-0 d-flex flex-card">
                 <div className="row">
@@ -69,6 +44,7 @@ export const BlogListItem: FunctionComponent<PostIndexItem> = ({
                             </Link>
                         </div>
                     </div>
+
                     {frontmatter.heroImage && (
                         <div className="col-md-3 d-flex justify-content-center">
                             <Link href={`/blog/${slugPath}`} passHref={true}>
