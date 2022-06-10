@@ -133,4 +133,8 @@
 [[redirects]]
   from = "/use-cases/vulnerabilities"
   to = "/use-cases/code-security"
+
+[[redirects]]
+  from = "/press-release/*"
+  to = "/press/:splat"
 # ========== END INDIVIDUAL REDIRECTS ==========

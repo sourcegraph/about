@@ -1,12 +1,11 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { BlogListItem } from '../components/Blog/BlogListItem'
 import { LinkPost } from '../components/Blog/LinkPost'
 import { PodcastListItem } from '../components/Blog/PodcastListItem'
 import { PostLayout } from '../components/Blog/PostLayout'
-import { PressReleaseListItem } from '../components/Blog/PressReleaseListItem'
+import { PostListItem } from '../components/Blog/PostListItem'
 import { ReleasePost } from '../components/Blog/ReleasePost'
 
 export enum PostType {
@@ -63,9 +62,10 @@ export interface FrontMatter {
     audioSrc?: string
 }
 
-export interface PostHeaderProps {
-    frontmatter: FrontMatter
-
+export interface PostComponentProps {
+    post: Post
+    content: MDXRemoteSerializeResult | null
+    
     /** The URL to the post. */
     url: string
 
@@ -73,23 +73,17 @@ export interface PostHeaderProps {
     titleClassName?: string
     titleLinkClassName?: string
     renderTitleAsLink?: boolean
-}
-
-export interface PostComponentProps extends Omit<PostHeaderProps, 'frontmatter'> {
-    post: Post
-    content: MDXRemoteSerializeResult | null
-
     className?: string
     tag?: 'li' | 'div' | 'article'
     contentClassName?: string
 }
 
 export interface PostIndexComponentProps {
-    posts: PostIndexItem[]
-    allPosts: PostIndexItem[]
+    posts: PostIndexItemProps[]
+    allPosts: PostIndexItemProps[]
 }
 
-export interface PostIndexItem {
+export interface PostIndexItemProps {
     frontmatter: FrontMatter
     excerpt: string | MDXRemoteSerializeResult
     slugPath: string
@@ -99,6 +93,8 @@ export interface PostIndexItem {
     titleLinkClassName?: string
     tag?: 'li' | 'div' | 'article'
     renderTitleAsLink?: boolean
+    blogType: BlogType
+    children?: ReactNode
 }
 
 export const POST_TYPE_TO_COMPONENT: Record<PostType, FunctionComponent<PostComponentProps>> = {
@@ -109,10 +105,10 @@ export const POST_TYPE_TO_COMPONENT: Record<PostType, FunctionComponent<PostComp
     [PostType.PodcastPost]: PostLayout,
 }
 
-export const POST_INDEX_TYPE_TO_COMPONENT: Record<PostIndexType, FunctionComponent<PostIndexItem>> = {
-    [PostIndexType.BlogPostIndex]: BlogListItem,
+export const POST_INDEX_TYPE_TO_COMPONENT: Record<PostIndexType, FunctionComponent<PostIndexItemProps>> = {
+    [PostIndexType.BlogPostIndex]: PostListItem,
     [PostIndexType.PodcastIndex]: PodcastListItem,
-    [PostIndexType.PressReleaseIndex]: PressReleaseListItem,
+    [PostIndexType.PressReleaseIndex]: PostListItem,
 }
 
 export const postType = (post: Post): PostType =>
@@ -138,6 +134,13 @@ export enum BlogType {
     Podcast = 'podcast',
     Blog = 'blog',
 }
+
+export const blogType = (frontmatter: FrontMatter): BlogType =>
+    frontmatter.tags?.includes('podcast')
+        ? BlogType.Podcast
+        : frontmatter.tags?.includes('press')
+        ? BlogType.PressRelease
+        : BlogType.Blog
 
 export interface BlogTypeInfo {
     title: string
