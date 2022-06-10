@@ -37,17 +37,15 @@ export {
 export {
     BlogHeader,
     BlogListItem,
-    BlogPost,
     LinkPost,
-    PodcastPost,
     PodcastListItem,
     PostsList,
     PostsListPage,
     PressReleaseListItem,
-    PressReleasePost,
     ReleasePost,
     BLOG_TYPE_TO_INFO,
     PodcastAudioPlayer,
+    PostLayout,
 } from './Blog'
 
 // Carousels

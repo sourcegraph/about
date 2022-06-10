@@ -11,9 +11,10 @@ export type Components = import('mdx/types').MDXComponents
 const components = { BlockquoteWithBorder }
 
 /**
- * A blog post.
+ * This component is used to render all types of posts:
+ * blog, podcast, and release posts
  */
-export const BlogPost: FunctionComponent<PostComponentProps> = ({
+export const PostLayout: FunctionComponent<PostComponentProps> = ({
     post,
     content,
     url,
@@ -21,9 +22,11 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
     headerClassName = '',
     titleClassName = '',
     titleLinkClassName = '',
+    tag: Tag = 'article',
     renderTitleAsLink = false,
+    contentClassName = '',
 }) => (
-    <article className={`blog-post ${className}`}>
+    <Tag className={`blog-post ${className}`}>
         <header className={headerClassName}>
             <h1 className={titleClassName}>
                 {renderTitleAsLink === true ? (
@@ -35,10 +38,11 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
                     post.frontmatter.title
                 )}
             </h1>
+
             {post.frontmatter.authors?.length && (
                 <p className="text-align-center text-secondary mb-0">
                     {post.frontmatter.authors.map((a, index) => (
-                        <span key={a.name}>
+                        <span key={a.name} data-author={a.name}>
                             {a.url ? (
                                 a.url.includes('http') ? (
                                     <a href={a.url} target="_blank" rel="nofollow noreferrer">
@@ -56,18 +60,20 @@ export const BlogPost: FunctionComponent<PostComponentProps> = ({
                     ))}
                 </p>
             )}
+
             {post.frontmatter.publishDate && (
                 <p className="text-align-center text-secondary mb-0">
                     <time dateTime={post.frontmatter.publishDate}>{formatDate(post.frontmatter.publishDate)}</time>
                 </p>
             )}
         </header>
+        
         {content && (
             <div className="card-body">
-                <div className="blog-post__html">
+                <div className={`blog-post__html ${contentClassName}`}>
                     <MDXRemote {...content} components={components as Components} />
                 </div>
             </div>
         )}
-    </article>
+    </Tag>
 )

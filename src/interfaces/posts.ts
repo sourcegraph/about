@@ -3,12 +3,10 @@ import { FunctionComponent } from 'react'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 import { BlogListItem } from '../components/Blog/BlogListItem'
-import { BlogPost } from '../components/Blog/BlogPost'
 import { LinkPost } from '../components/Blog/LinkPost'
 import { PodcastListItem } from '../components/Blog/PodcastListItem'
-import { PodcastPost } from '../components/Blog/PodcastPost'
+import { PostLayout } from '../components/Blog/PostLayout'
 import { PressReleaseListItem } from '../components/Blog/PressReleaseListItem'
-import { PressReleasePost } from '../components/Blog/PressReleasePost'
 import { ReleasePost } from '../components/Blog/ReleasePost'
 
 export enum PostType {
@@ -76,8 +74,9 @@ export interface PostComponentProps {
     headerClassName?: string
     titleClassName?: string
     titleLinkClassName?: string
-    tag?: 'li' | 'div'
+    tag?: 'li' | 'div' | 'article'
     renderTitleAsLink?: boolean
+    contentClassName: string
 }
 
 export interface PostIndexComponentProps {
@@ -93,16 +92,16 @@ export interface PostIndexItem {
     headerClassName?: string
     titleClassName?: string
     titleLinkClassName?: string
-    tag?: 'li' | 'div'
+    tag?: 'li' | 'div' | 'article'
     renderTitleAsLink?: boolean
 }
 
 export const POST_TYPE_TO_COMPONENT: Record<PostType, FunctionComponent<PostComponentProps>> = {
-    [PostType.BlogPost]: BlogPost,
+    [PostType.BlogPost]: PostLayout,
     [PostType.LinkPost]: LinkPost,
     [PostType.ReleasePost]: ReleasePost,
-    [PostType.PressReleasePost]: PressReleasePost,
-    [PostType.PodcastPost]: PodcastPost,
+    [PostType.PressReleasePost]: PostLayout,
+    [PostType.PodcastPost]: PostLayout,
 }
 
 export const POST_INDEX_TYPE_TO_COMPONENT: Record<PostIndexType, FunctionComponent<PostIndexItem>> = {
