@@ -63,7 +63,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 }
             >
                 {props.showHeadlinesOnMobile && (
-                    <ul className="d-block d-lg-none mb-0 h-md-100 h-sm-200 h-200">
+                    <ul className="d-block d-lg-none mb-0 h-md-100">
                         {carouselItems.map((item, index) => (
                             <li
                                 className={
