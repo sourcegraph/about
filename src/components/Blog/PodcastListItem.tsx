@@ -20,7 +20,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
     blogType,
 }) => {
     const newFrontmatter = {
-        ...frontmatter
+        ...frontmatter,
     }
     if (frontmatter.videoID) {
         newFrontmatter.heroImage = `https://img.youtube.com/vi/${frontmatter.videoID}/maxresdefault.jpg`
@@ -56,7 +56,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                 <a className="text-muted mr-4 font-weight-bold">Transcript</a>
                             </Link>
-                            {frontmatter.videoID && 
+                            {frontmatter.videoID && (
                                 <a
                                     href={`https://www.youtube.com/v/${frontmatter.videoID}`}
                                     className="text-muted mr-4 font-weight-bold"
@@ -65,7 +65,7 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                                 >
                                     Watch the video
                                 </a>
-                            }
+                            )}
                         </div>
                     </div>
                 </>

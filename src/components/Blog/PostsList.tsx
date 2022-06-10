@@ -1,6 +1,12 @@
 import { FunctionComponent } from 'react'
 
-import { POST_INDEX_TYPE_TO_COMPONENT, postIndexType, PostComponentProps, PostIndexItemProps, blogType } from '@interfaces/posts'
+import {
+    POST_INDEX_TYPE_TO_COMPONENT,
+    postIndexType,
+    PostComponentProps,
+    PostIndexItemProps,
+    blogType,
+} from '@interfaces/posts'
 
 interface Props {
     posts: PostIndexItemProps[]

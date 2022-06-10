@@ -67,7 +67,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                 </p>
             )}
         </header>
-        
+
         {content && (
             <div className="card-body">
                 <div className={`blog-post__html ${contentClassName}`}>

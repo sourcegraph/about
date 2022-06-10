@@ -65,7 +65,7 @@ export interface FrontMatter {
 export interface PostComponentProps {
     post: Post
     content: MDXRemoteSerializeResult | null
-    
+
     /** The URL to the post. */
     url: string
 

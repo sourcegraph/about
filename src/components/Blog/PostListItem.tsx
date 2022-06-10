@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react'
 
 import { truncate } from 'lodash'
 import Link from 'next/link'
@@ -81,7 +81,11 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                         <Link href={`/${blogType}/${slugPath}`} passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a>
-                                <img className="w-100" src={frontmatter.heroImage ? frontmatter.heroImage : '/meta/sourcegraph-social.png'} alt={frontmatter.title} />
+                                <img
+                                    className="w-100"
+                                    src={frontmatter.heroImage ? frontmatter.heroImage : '/meta/sourcegraph-social.png'}
+                                    alt={frontmatter.title}
+                                />
                             </a>
                         </Link>
                     </div>
