@@ -8,7 +8,7 @@ tags: [
   "blog"
 ]
 slug: see-how-many-people-use-a-java-library-with-sourcegraph-badges
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
