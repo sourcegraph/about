@@ -6,7 +6,7 @@ authors:
 publishDate: 2020-03-03T05:00
 tags: [blog]
 slug: series-b-universal-code-search
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 

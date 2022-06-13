@@ -8,7 +8,7 @@ tags: [
   "blog"
 ]
 slug: java-php-experimental_language_servers-temporarily-unavailable
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
