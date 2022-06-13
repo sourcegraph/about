@@ -137,4 +137,9 @@
 [[redirects]]
   from = "/press-release/*"
   to = "/press/:splat"
+
+# Due to our collocated directory for the homepage
+[[redirects]]
+  from = "/home/*"
+  to = "/"
 # ========== END INDIVIDUAL REDIRECTS ==========
