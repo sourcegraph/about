@@ -140,6 +140,6 @@
 
 # Due to our collocated directory for the homepage
 [[redirects]]
-  from = "/home/*"
+  from = "/home"
   to = "/"
 # ========== END INDIVIDUAL REDIRECTS ==========
