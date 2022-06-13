@@ -1,6 +1,10 @@
 import { FunctionComponent, useState } from 'react'
 
+import classNames from 'classnames'
 import Navbar from 'react-bootstrap/Navbar'
+
+import { breakpoints } from '@data'
+import { useWindowWidth } from '@hooks'
 
 import DesktopNav from './DesktopNav'
 import MobileNav from './MobileNav'
@@ -27,14 +31,22 @@ const onRightClickLogo = (event: React.MouseEvent): void => {
 
 export const Header: FunctionComponent<Props> = props => {
     const [isOpen, setIsOpen] = useState(false)
+    const windowWidth = useWindowWidth()
+    const isLgOrDown = windowWidth < breakpoints.xl
+    const isMdOrDown = windowWidth < breakpoints.lg
+
+    const isDarkNav = props.className?.includes('navbar-dark')
 
     return (
         <nav className={`header navbar py-3 ${props.className || 'navbar-light'}`}>
-            <div className="container-xl">
-                <Navbar.Brand className="header__logo" href="/" onContextMenu={onRightClickLogo}>
-                    <span role="img" aria-label="Sourcegraph - Universal code search">
-                        {' '}
-                    </span>
+            <div className={classNames('container-xl', isMdOrDown && 'px-0')}>
+                <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="header mr-0 pt-0 pb-1 d-flex">
+                    <img
+                        src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
+                        height={isLgOrDown ? '35' : '26'}
+                        className="min-w-150"
+                        aria-label="Sourcegraph - Universal code search"
+                    />
                 </Navbar.Brand>
 
                 {!props.minimal && (
