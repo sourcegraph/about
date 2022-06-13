@@ -142,4 +142,5 @@
 [[redirects]]
   from = "/home"
   to = "/"
+  force = true
 # ========== END INDIVIDUAL REDIRECTS ==========
