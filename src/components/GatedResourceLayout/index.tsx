@@ -158,7 +158,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <section className="bg-white py-6 pb-md-8">
+                <section className="bg-white py-7 pb-md-8">
                     <ContentSection className="d-flex flex-column-reverse flex-md-row">
                         {description}
 
@@ -175,7 +175,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             )}
 
             {speakers?.length && (
-                <section className="bg-white pb-6">
+                <section className="bg-white pb-7">
                     <ContentSection>
                         <h2 className="font-weight-bold">Speakers</h2>
 
