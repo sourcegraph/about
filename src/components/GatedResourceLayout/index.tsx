@@ -158,7 +158,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <section className="bg-white py-6 pb-md-8">
+                <section className="bg-white py-7 pb-md-8">
                     <ContentSection className="d-flex flex-column-reverse flex-md-row">
                         {description}
 
