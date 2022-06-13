@@ -22,7 +22,6 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
                 id="triblio-p"
                 type="text/javascript"
                 src="https://tribl.io/h.js?orgId=Yee6bMKj7QSARqAePdE8"
-                strategy="beforeInteractive"
             />
 
             {/* Triblio "Analytics and Overlay Cards" */}
@@ -30,7 +29,6 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
                 id="triblio-a"
                 type="text/javascript"
                 src="https://tribl.io/footer.js?orgId=Yee6bMKj7QSARqAePdE8"
-                strategy="afterInteractive"
             />
 
             {/* Google Analytics */}
@@ -67,7 +65,6 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
                 data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d"
                 data-blockingmode="auto"
                 type="text/javascript"
-                strategy="afterInteractive"
             />
 
             {/* Drift */}
