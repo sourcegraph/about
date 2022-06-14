@@ -99,9 +99,9 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 // Hero bg differs if Guide vs. Webinar vs. Generic
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ backgroundImage: `url('${heroImage().src}')` }}
-                className={classNames('bg-cover', isGuidePg && 'text-white')}
+                className={classNames('bg-cover py-6 py-md-7', isGuidePg && 'text-white')}
             >
-                <div className="container px-0 py-6 py-md-7 d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                <div className="container px-0 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {customer && (
                         <>
                             {isWebinarPg ? (
@@ -142,8 +142,8 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
 
             {hasWatchNowQuery ? (
                 // ---- RECORDING BODY VARIATION ----
-                <div className="bg-white py-6 py-lg-7 pb-6">
-                    <section className="py-md-6 my-md-0 my-6 container video-embed embed-responsive embed-responsive-16by9">
+                <div className="bg-white">
+                    <section className="py-6 py-lg-7 container video-embed embed-responsive embed-responsive-16by9">
                         <iframe
                             className="p-md-7 embed-responsive-item"
                             src={videoSrc}
@@ -158,7 +158,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <section className="bg-white py-6 py-lg-7 pb-md-8">
+                <section className="bg-white py-6 py-lg-7">
                     <ContentSection className="d-flex flex-column-reverse flex-md-row px-0">
                         {description}
 
@@ -175,7 +175,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             )}
 
             {speakers?.length && (
-                <section className="bg-white pb-7">
+                <section className="bg-white py-6 py-lg-7">
                     <ContentSection>
                         <h2 className="font-weight-bold">Speakers</h2>
 
