@@ -101,7 +101,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 style={{ backgroundImage: `url('${heroImage().src}')` }}
                 className={classNames('bg-cover', isGuidePg && 'text-white')}
             >
-                <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                <div className="container py-7 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {customer && (
                         <>
                             {isWebinarPg ? (
@@ -158,7 +158,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             ) : (
                 // ---- DEFAULT BODY VARIATION ----
-                <section className="bg-white py-6 pb-md-8">
+                <section className="bg-white py-7 pb-md-8">
                     <ContentSection className="d-flex flex-column-reverse flex-md-row">
                         {description}
 
@@ -175,7 +175,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             )}
 
             {speakers?.length && (
-                <section className="bg-white pb-6">
+                <section className="bg-white pb-7">
                     <ContentSection>
                         <h2 className="font-weight-bold">Speakers</h2>
 

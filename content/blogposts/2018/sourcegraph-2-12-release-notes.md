@@ -7,7 +7,7 @@ tags: [
   "blog"
 ]
 slug: sourcegraph-2-12-release-notes
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 

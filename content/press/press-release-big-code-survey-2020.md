@@ -5,7 +5,7 @@ authors:
 publishDate: 2020-10-01T00:00
 tags: ['press']
 slug: big-code-survey-2020
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 description: 'The Big Code survey shows 94% of software development professionals affected by big code. The data gathered serves to quantify Big Code’s complexity, understand its real impact on development and business outcomes, and identify what needs to be done so enterprises can succeed.'
 published: true
 ---

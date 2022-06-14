@@ -1,23 +1,21 @@
 import { useState, useEffect } from 'react'
 
-import { PostIndexItem } from '@interfaces/posts'
+import { PostIndexItemProps } from '@interfaces/posts'
 
 interface LoadMoreHookObject {
-    currentRecords: PostIndexItem[]
+    currentRecords: PostIndexItemProps[]
     page: number
     setPage: (page: number) => void
 }
 
-const CONTENT_PARENT_DIRECTORY = './content/'
-
 export const useLoadMore = (
-    initialAllRecords: PostIndexItem[],
+    initialAllRecords: PostIndexItemProps[],
     initialPage: number,
-    initialCurrentRecords: PostIndexItem[]
+    initialCurrentRecords: PostIndexItemProps[]
 ): LoadMoreHookObject => {
-    const [allRecords, setAllRecords] = useState<PostIndexItem[]>(initialAllRecords)
+    const [allRecords, setAllRecords] = useState<PostIndexItemProps[]>(initialAllRecords)
     const [page, setPage] = useState<number>(initialPage)
-    const [currentRecords, setCurrentRecords] = useState<PostIndexItem[]>(initialCurrentRecords)
+    const [currentRecords, setCurrentRecords] = useState<PostIndexItemProps[]>(initialCurrentRecords)
 
     useEffect(() => {
         const newPage = page * 20

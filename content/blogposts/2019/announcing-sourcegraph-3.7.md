@@ -8,7 +8,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.7
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: 'Sourcegraph 3.7: Improved performance, efficiency, accuracy, and reliability'
 ---

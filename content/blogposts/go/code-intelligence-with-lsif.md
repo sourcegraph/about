@@ -7,7 +7,7 @@ tags: [
   "blog"
 ]
 slug: code-intelligence-with-lsif
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: 'Code intelligence with LSIF'
 ---
