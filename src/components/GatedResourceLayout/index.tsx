@@ -3,9 +3,9 @@ import { FunctionComponent, ReactNode } from 'react'
 import classNames from 'classnames'
 import { useRouter } from 'next/router'
 
-import { ContentSection } from '@components'
+import { ContentSection, HubSpotForm } from '@components'
 import { breakpoints } from '@data'
-import { useWindowWidth, useHubSpot, HubSpotForm } from '@hooks'
+import { useWindowWidth } from '@hooks'
 
 import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
 import guideBg from './assets/hero/bg-code-aquamarine.png'
@@ -26,22 +26,17 @@ interface Speaker {
     bio: string
 }
 
-interface Form {
-    formId: string
-    onFormSubmitted?: () => void
-}
-
 interface Props {
     customer?: Customer
     title: ReactNode | string
     subtitle?: string
     description?: ReactNode
     formLabel?: string
-    form: Form
     learnMoreCTA?: ReactNode
     videoSrc?: string
     speakers?: Speaker[]
     children?: ReactNode
+    onFormSubmitted?: () => void
 }
 
 export const GatedResourceLayout: FunctionComponent<Props> = ({
@@ -50,7 +45,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     customer,
     description,
     formLabel,
-    form,
+    onFormSubmitted,
     learnMoreCTA,
     videoSrc,
     speakers,
@@ -65,21 +60,6 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     const isWebinarPg = pathname.split('/').slice(1)[0] === 'webinars'
     const isGuidePg = pathname.split('/').slice(1)[0] === 'guides'
     const hasWatchNowQuery = Object.keys(query).includes('watch-now')
-
-    const hubSpotConfig: HubSpotForm | null = {
-        portalId: '2762526',
-        formId: form.formId,
-        targetId: 'form',
-        formInstanceId: form?.formId,
-    }
-    if (hasWatchNowQuery) {
-        // Exit HS Hook when HS-Form not needed
-        hubSpotConfig.formId = ''
-    }
-    if (form.onFormSubmitted) {
-        hubSpotConfig.onFormSubmitted = form.onFormSubmitted
-    }
-    useHubSpot(hubSpotConfig)
 
     const heroImage = (): { src: string } => {
         if (isWebinarPg) {
@@ -165,7 +145,12 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                         <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
                             <h2 className="font-weight-bold">{formLabel}</h2>
                             <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
-                                <div id="form" />
+                                {!hasWatchNowQuery && (
+                                    <HubSpotForm
+                                        masterFormName="gatedMulti"
+                                        onFormSubmitted={onFormSubmitted}
+                                    />
+                                )}
                             </div>
                         </div>
                     </ContentSection>
