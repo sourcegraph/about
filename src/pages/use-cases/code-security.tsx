@@ -1,8 +1,5 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import AutoFixIcon from 'mdi-react/AutoFixIcon'
-import ShieldAlertOutlineIcon from 'mdi-react/ShieldAlertOutlineIcon'
-import TimerOutlineIcon from 'mdi-react/TimerOutlineIcon'
 import Link from 'next/link'
 
 import {
@@ -12,6 +9,7 @@ import {
     ContentSection,
     CustomerLogos,
     CustomCarousel,
+    Icon,
     ThreeUpText,
     QuoteCarousel,
 } from '@components'
@@ -116,13 +114,13 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <TimerOutlineIcon className="mb-4 bg-violet-mist text-vivid-violet rounded p-2" size={48} />,
+        icon: <Icon name="TimerSharp" size={48} />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Reduce time to discovery and resolution</h4>,
         description:
             'Find every instance of a vulnerability and start remediating in minutes instead of days or weeks. Use that head start to deploy fixes sooner.',
     },
     {
-        icon: <AutoFixIcon className="mb-4 bg-violet-mist text-vivid-violet rounded p-2" size={48} />,
+        icon: <Icon name="AutoFixHighSharp" size={48} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Automate fixing, merging, and deploying fixes</h4>
         ),
@@ -130,7 +128,7 @@ const threeUpTextItems = [
             'Automate PRs to fix vulnerabilities across your entire codebase so you can be 100% confident you resolved every vulnerability.',
     },
     {
-        icon: <ShieldAlertOutlineIcon className="mb-4 bg-violet-mist text-vivid-violet rounded p-2" size={48} />,
+        icon: <Icon name="GppMaybeSharp" size={48} />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">
                 Alert for risky code changes & known vulnerabilities

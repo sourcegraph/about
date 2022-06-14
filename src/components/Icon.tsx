@@ -1,14 +1,20 @@
 import { FunctionComponent } from 'react'
 
-import * as icons from '@material-ui/icons'
+import * as icons from '@mui/icons-material'
 
 interface Icon {
-    icon: keyof typeof icons
+    name: keyof typeof icons
     size: number
+    className?: string | undefined
 }
 
-export const Icon: FunctionComponent<Icon> = ({ icon, size }) => {
-    const IconName = icons[icon]
+export const Icon: FunctionComponent<Icon> = ({ name, size, className = '' }) => {
+    const IconName = icons[name]
 
-    return <IconName className="mb-4 bg-violet-mist text-vivid-violet rounded p-2" style={{ fontSize: size }} />
+    return (
+        <IconName
+            className={`${className} mb-4 bg-violet-mist text-vivid-violet rounded p-2`}
+            style={{ fontSize: size }}
+        />
+    )
 }

@@ -1,8 +1,5 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import ClipBoardPulseOutlineIcon from 'mdi-react/ClipboardPulseOutlineIcon'
-import MagnifyIcon from 'mdi-react/MagnifyIcon'
-import WrenchOutlineIcon from 'mdi-react/WrenchOutlineIcon'
 import Link from 'next/link'
 
 import {
@@ -133,19 +130,19 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <Icon icon="SearchSharp" size={48} />,
+        icon: <Icon name="SearchSharp" size={48} />,
         subtitle: <h4 className="font-weight-bold">Find unhealthy code</h4>,
         description:
             'Build a healthier codebase by finding references to deprecated services, libraries, URL patterns, and more across all your repositories.',
     },
     {
-        icon: <Icon icon="BuildSharp" size={48} />,
+        icon: <Icon name="BuildSharp" size={48} />,
         subtitle: <h4 className="font-weight-bold">Remediate code health issues</h4>,
         description:
             'Tackle refactoring efforts and tech debt from legacy systems and acquisitions with automated pull requests across your entire codebase.',
     },
     {
-        icon: <Icon icon="FavoriteSharp" size={48} />,
+        icon: <Icon name="MonitorHeartOutlined" size={48} />,
         subtitle: <h4 className="font-weight-bold">Monitor code health initiatives</h4>,
         description:
             'Stay on top of code health changes. Monitor and measure code health initiatives and get actionable insights into the impact of large-scale changes.',

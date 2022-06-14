@@ -4,7 +4,7 @@ import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Carousel from 'react-bootstrap/Carousel'
 
-import { Layout, ContentSection, QuoteCarousel } from '@components'
+import { Layout, ContentSection, Icon, QuoteCarousel } from '@components'
 
 const CareersPage: FunctionComponent = () => {
     const glassdoorReviewItems = [
@@ -116,51 +116,47 @@ const CareersPage: FunctionComponent = () => {
                     </div>
                     <div className="d-flex flex-wrap benefits-row">
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Remote.svg" alt="Map pin icon" />
+                            <Icon name="RoomSharp" size={48} />
                             <h3 className="my-2">Work fully remote</h3>
                             <p>Anywhere and at anytime</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/PTO.svg" alt="Sun icon" />
+                            <Icon name="WbSunnySharp" size={48} />
                             <h3 className="my-2">Unlimited PTO</h3>
                             <p>...with a 30-day minimum</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Travel.svg" alt="Airplane icon" />
+                            <Icon name="FlightSharp" size={48} />
                             <h3 className="my-2">Generous travel budgets</h3>
                             <p>Meet your team across the globe</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Salary.svg" alt="Dollar bill icon" />
+                            <Icon name="PaymentsSharp" size={48} />
                             <h3 className="my-2">Competitive pay + equity</h3>
                             <p>So you can live your best life</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Medical.svg" alt="Medical cross icon" />
+                            <Icon name="LocalHospitalSharp" size={48} />
                             <h3 className="my-2">Medical, dental, and vision</h3>
                             <p>Got you covered 100% (US only)</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img
-                                className="icon my-2 mx-auto"
-                                src="/careers/ProfessionalDevelopment.svg"
-                                alt="Graduation cap icon"
-                            />
+                            <Icon name="SchoolSharp" size={48} />
                             <h3 className="my-2">Professional development</h3>
                             <p>Find your thing and we pay for it</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/OfficeBudget.svg" alt="Headphones icon" />
+                            <Icon name="HeadphonesSharp" size={48} />
                             <h3 className="my-2">Office budget</h3>
                             <p>Create a space where you thrive</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center">
-                            <img className="icon my-2 mx-auto" src="/careers/Wellness.svg" alt="Person jogging icon" />
+                            <Icon name="DirectionsRunSharp" size={48} />
                             <h3 className="my-2">Wellness budget</h3>
                             <p>Take care of yourself on our dime</p>
                         </div>
                         <div className="benefit col-lg-3 col-md-5 my-3 text-center mx-auto">
-                            <img className="icon my-2 mx-auto" src="/careers/FamilyPlanning.svg" alt="Baby icon" />
+                            <Icon name="ChildFriendlySharp" size={48} />
                             <h3 className="my-2">Family Planning benefits</h3>
                             <p>$25K, because family comes first</p>
                         </div>

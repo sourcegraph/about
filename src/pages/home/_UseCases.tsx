@@ -1,19 +1,13 @@
 import { FunctionComponent, useEffect, useRef, useState } from 'react'
 
-import { MdiReactIconComponentType } from 'mdi-react'
-import CachedIcon from 'mdi-react/CachedIcon'
-import CheckboxMarkedCircleOutlineIcon from 'mdi-react/CheckboxMarkedCircleOutlineIcon'
-import ClockOutlineIcon from 'mdi-react/ClockOutlineIcon'
-import LaptopIcon from 'mdi-react/LaptopIcon'
-import LockOutlineIcon from 'mdi-react/LockOutlineIcon'
 import Link from 'next/link'
 
-import { ContentSection } from '@components'
+import { ContentSection, Icon } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useWindowWidth } from '@hooks'
 
 interface UseCases {
-    icon: MdiReactIconComponentType
+    icon: React.ReactNode
     title: string
     description: string
     link: {
@@ -24,7 +18,7 @@ interface UseCases {
 
 const useCases: UseCases[] = [
     {
-        icon: LockOutlineIcon,
+        icon: <Icon name="LockOutlined" size={48} className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" />,
         title: 'Improve code security',
         description: 'Find, fix, and track vulnerable code quickly across your entire codebase.',
         link: {
@@ -33,7 +27,7 @@ const useCases: UseCases[] = [
         },
     },
     {
-        icon: ClockOutlineIcon,
+        icon: <Icon name="AccessTimeSharp" size={48} className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" />,
         title: 'Onboard developers',
         description: 'Decrease time to first commit with codebase onboarding and knowledge sharing.',
         link: {
@@ -42,7 +36,7 @@ const useCases: UseCases[] = [
         },
     },
     {
-        icon: CheckboxMarkedCircleOutlineIcon,
+        icon: <Icon name="CheckCircleOutlineSharp" size={48} className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" />,
         title: 'Resolve incidents',
         description: 'Identify the root cause in code and fix the issue everywhere, faster.',
         link: {
@@ -51,7 +45,7 @@ const useCases: UseCases[] = [
         },
     },
     {
-        icon: CachedIcon,
+        icon: <Icon name="CachedSharp" size={48} className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" />,
         title: 'Promote code reuse',
         description: 'Find existing code for reuse and contribute to a more coherent codebase.',
         link: {
@@ -60,7 +54,7 @@ const useCases: UseCases[] = [
         },
     },
     {
-        icon: LaptopIcon,
+        icon: <Icon name="LaptopSharp" size={48} className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" />,
         title: 'Boost code health',
         description: 'Improve code health with large-scale changes, and track key initiatives.',
         link: {
@@ -106,7 +100,7 @@ const UseCases: FunctionComponent = () => {
                         key={useCase.title}
                         className="col-sm-6 d-flex flex-column flex-sm-row align-items-center align-items-sm-start mb-6"
                     >
-                        <useCase.icon className="bg-violet-mist text-vivid-violet rounded p-2 w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" />
+                        {useCase.icon}
                         <div className="text-center text-sm-left">
                             <h4 className="font-weight-bold">{useCase.title}</h4>
                             <div className="text-lg">
