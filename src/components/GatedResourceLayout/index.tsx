@@ -93,7 +93,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 style={{ backgroundImage: `url('${heroImage().src}')` }}
                 className={classNames('bg-cover', isGuidePg && 'text-white')}
             >
-                <div className="container py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
+                <div className="container px-0 py-6 d-flex flex-column flex-lg-row justify-content-around align-items-center">
                     {customer && (
                         <>
                             {isWebinarPg ? (
@@ -132,11 +132,11 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                 </div>
             </section>
 
-            <section className="bg-white py-6 pb-md-8">
-                <ContentSection className="d-flex flex-column-reverse flex-md-row">
+            <section className="bg-white py-6 py-lg-7 pb-md-8">
+                <ContentSection className="d-flex flex-column-reverse flex-md-row px-0">
                     {description}
 
-                    <div className="col-md-6 col-12 pb-md-0 pb-6 px-0">
+                    <div className="col-md-6 col-12 pb-md-0 pb-6">
                         <h2 className="font-weight-bold">{formLabel}</h2>
                         <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
                             <div id="form" />
