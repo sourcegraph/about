@@ -1,9 +1,15 @@
 import { FunctionComponent } from 'react'
 
-import { POST_INDEX_TYPE_TO_COMPONENT, postIndexType, PostComponentProps, PostIndexItem } from '@interfaces/posts'
+import {
+    POST_INDEX_TYPE_TO_COMPONENT,
+    postIndexType,
+    PostComponentProps,
+    PostIndexItemProps,
+    blogType,
+} from '@interfaces/posts'
 
 interface Props {
-    posts: PostIndexItem[]
+    posts: PostIndexItemProps[]
 }
 
 export const PostsList: FunctionComponent<Props> = ({ posts }) => {
@@ -19,6 +25,7 @@ export const PostsList: FunctionComponent<Props> = ({ posts }) => {
         <ul className="posts-list list-unstyled">
             {posts.map(post => {
                 const PostList = POST_INDEX_TYPE_TO_COMPONENT[postIndexType(post.frontmatter)]
+
                 return (
                     <PostList
                         frontmatter={post.frontmatter}
@@ -26,6 +33,7 @@ export const PostsList: FunctionComponent<Props> = ({ posts }) => {
                         slugPath={post.slugPath}
                         key={post.frontmatter.title}
                         renderTitleAsLink={true}
+                        blogType={blogType(post.frontmatter)}
                         {...postProps}
                     />
                 )
