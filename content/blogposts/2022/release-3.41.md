@@ -37,3 +37,12 @@ Setting up running batch changes server-side allows to:
 This is the outcome of months of iteration on the experimental version of the feature, and we're grateful to early users for their feedback!
 
 <!-- TODO: asset welcome right after deployment on demo -->
+
+
+## Sourcegraph Extensions
+
+### Allow only extensions authored by Sourcegraph
+
+You can now restrict users to only use Sourcegraph-authored extensions by setting [`extensions.allowOnlySourcegraphAuthoredExtensions`](../config/site_config.md) to `true` in your site configuration. This allows you to easily enforce that any extensions you are using are built and supported by Sourcegraph.
+
+For more information about this feature please refer to the [documentation](https://docs.sourcegraph.com/admin/extensions#allow-only-extensions-authored-by-sourcegraph)
