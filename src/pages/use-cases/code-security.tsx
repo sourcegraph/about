@@ -21,7 +21,7 @@ import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2>{header}</h2>
+        <h2 className="display-5 font-weight-bold mb-lg-0 mb-5">{header}</h2>
         {text}
     </>
 )
@@ -321,7 +321,7 @@ const UseCasePage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <ContentSection>
+        <ContentSection className="py-7">
             <CustomCarousel
                 items={items}
                 autoAdvance={true}
