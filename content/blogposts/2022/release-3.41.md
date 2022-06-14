@@ -37,3 +37,13 @@ Setting up running batch changes server-side allows to:
 This is the outcome of months of iteration on the experimental version of the feature, and we're grateful to early users for their feedback!
 
 <!-- TODO: asset welcome right after deployment on demo -->
+
+###  Batch specs can now mount local files on steps containers (experimental)
+
+As we improve Batch Changes, we're heavily focusing on making it easy to write and debug batch spec. Iteration time needs to be as small as possible, so that users can quickly put together a spec, run it, see results, and quickly improve on it.
+
+Many users have custom tooling or scripts that they run as batch changes steps. The only way to do that until now was to bake those scripts into the step container, or to copy paste the scripts directly in the spec using [steps.files](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-files). Both options slow down iterating on batch changes, either rebuilding the container at each modification, or copy pasting code inside YAML.
+
+Now users can directly mount files or directories on the batch change container using [steps.mount](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-mount). This is an experimental feature that's only supported when running batch changes locally. Lots of improvements are on the way [issue](https://github.com/sourcegraph/sourcegraph/issues/14851).
+
+We're committed to making iterating on batch changes as fast as possible. Feedback welcome on what slows you down!
