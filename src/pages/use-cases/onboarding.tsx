@@ -260,14 +260,12 @@ const UseCasePage: FunctionComponent = () => (
         </div>
 
         <ContentSection>
-            <div className="row mt-lg-0 mt-5 justify-content-center mb-lg-0 mb-md-0 mb-4">
-                <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-bold text-md-center text-left mb-lg-6 mb-md-3">How Sourcegraph helps</h1>
-                </div>
-                <div className="pb-lg-5 pb-md-8 pb-5">
-                    <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />
-                </div>
-            </div>
+            <CustomCarousel
+                items={items}
+                autoAdvance={true}
+                smallPanel={true}
+                title="How Sourcegraph helps"
+            />
         </ContentSection>
 
         <div className="bg-gradient-saturn-saturated py-8">

@@ -33,7 +33,6 @@ import { useHubSpot, useChiliPiper } from '@hooks'
 
 const items = [
     {
-        backgroundClass: '',
         buttonLabel: 'Track migrations, adoption, and deprecations',
         text: (
             <CodeInsightExample type={CodeInsightExampleType.Search} data={SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA} />
@@ -42,38 +41,28 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Detect and track versions of languages or packages',
         text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Ensure removal of security vulnerabilities',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Understand code by team',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Track code smells and health',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Visualize configurations and services',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
 ]
