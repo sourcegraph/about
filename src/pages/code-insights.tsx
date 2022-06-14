@@ -1,9 +1,5 @@
 import { FunctionComponent } from 'react'
 
-import BullsEyeArrowIcon from 'mdi-react/BullseyeArrowIcon'
-import LighteningBoltOutlineIcon from 'mdi-react/LightningBoltOutlineIcon'
-import RocketLaunchOutlineIcon from 'mdi-react/RocketLaunchOutlineIcon'
-import TrendingUpIcon from 'mdi-react/TrendingUpIcon'
 import Link from 'next/link'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
@@ -22,6 +18,7 @@ import {
     BlogResourceItem,
     ContentSection,
     CustomCarousel,
+    Icon,
     Layout,
     TabCarousel,
     TemplateCodeBlock,
@@ -404,7 +401,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                     <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <BullsEyeArrowIcon className="icon text-blurple" size={70} />
+                                <Icon name="TrackChangesSharp" size={48} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Set goals</div>
@@ -413,7 +410,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                         </div>
                         <div className="d-flex py-lg-5 py-3">
                             <div className="icon mr-4">
-                                <LighteningBoltOutlineIcon className="icon text-blurple" size={70} />
+                                <Icon name="BoltSharp" size={48} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Plan proactively</div>
@@ -426,7 +423,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                     <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <TrendingUpIcon className="icon text-blurple" size={70} />
+                                <Icon name="TrendingUpSharp" size={48} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Track ownership & trends</div>
@@ -435,7 +432,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                         </div>
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <RocketLaunchOutlineIcon className="icon text-blurple" size={70} />
+                                <Icon name="RocketLaunchSharp" size={48} />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Celebrate progress</div>
