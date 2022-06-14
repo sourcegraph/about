@@ -135,3 +135,7 @@ Thank you to the integration community for making a lot of these new announcemen
 
 ![1*GX6fjjBEAgxc8mrQV8Cbpw](//images.contentful.com/le3mxztn6yoo/5hYDJf8fjaqeomokkuYWGe/2b95f0fb48250936a334092a32659973/1_GX6fjjBEAgxc8mrQV8Cbpw.jpeg)
 ![1*UUM6rzz JZvwV6Q2BohlzA](//images.contentful.com/le3mxztn6yoo/64uDq0K9DqcSKcciWcQ0a4/20c62bfe5c816ce3d488826925bd0d8c/1_UUM6rzz_JZvwV6Q2BohlzA.jpeg)
+
+#### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

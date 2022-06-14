@@ -7,7 +7,7 @@ tags: [
   blog
 ]
 slug: writing-an-lsif-indexer
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: "Writing an LSIF Indexer"
 ---

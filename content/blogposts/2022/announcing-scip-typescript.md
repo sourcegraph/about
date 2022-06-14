@@ -46,6 +46,7 @@ Indexing a codebase with scip-typescript should have roughly similar performance
 
 We benchmarked scip-typescript by running it against several open source codebases to measure the indexing performance. The numbers are measured with a 2019 MacBook Pro with a 2.6 GHz 6-Core Intel Core.
 
+<div style={{overflowX: 'auto'}}>
 <table>
     <tr>
         <th></th>
@@ -104,6 +105,7 @@ We benchmarked scip-typescript by running it against several open source codebas
         <td>6,2</td>
     </tr>
 </table>
+</div>
 
 The indexing performance varies from codebase to codebase, ranging anywhere between 1k-5k lines of code per second. Given the large variation in indexing performance, the best way to understand real-world scip-typescript performance is to run it against your codebase.
 

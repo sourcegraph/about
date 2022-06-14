@@ -762,3 +762,7 @@ func getRightStick() pair {
 ## Wrap-up
 
 Check out [GoCV.io](https://gocv.io) or follow the Twitter account [@GoCVio](https://twitter.com/gocvio)!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

@@ -5,7 +5,7 @@ authors:
 publishDate: 2021-03-24T06:00
 tags: ['press']
 slug: sourcegraph-launches-batch-changes
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 description: 'Enterprises can now use Sourcegraph to automate large-scale code changes'
 published: true
 ---

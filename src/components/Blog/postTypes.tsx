@@ -20,11 +20,11 @@ export const BLOG_TYPE_TO_INFO: Record<BlogType, BlogTypeInfo> = {
         },
     },
     press: {
-        title: 'Press release',
-        baseUrl: '/press-release',
+        title: 'Press releases',
+        baseUrl: '/press',
         meta: {
-            title: 'Sourcegraph - Press release',
-            description: 'Press release from Sourcegraph',
+            title: 'Sourcegraph - Press releases',
+            description: 'Press releases from Sourcegraph',
         },
     },
     podcast: {

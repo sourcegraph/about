@@ -31,6 +31,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
             )}
 
             <h3 className="card-body pb-2 pt-4 m-0 release-post__changelog-header">Changelog highlights</h3>
+
             <div className="release-post__items list-group list-group-flush">
                 {post.frontmatter.changelogItems?.map(({ url, category, description }) => (
                     <a
@@ -45,6 +46,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                     </a>
                 ))}
             </div>
+
             <ul className="card-body list-unstyled d-flex flex-wrap mb-0">
                 <li className="release-post__help-item">
                     <a href="https://docs.sourcegraph.com/admin/install">How to install</a>
@@ -59,6 +61,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
                     </a>
                 </li>
             </ul>
+
             <div className="card-body release-post__body">
                 * Please <Link href="/demo">contact Sourcegraph</Link> with any licensing questions.
             </div>
@@ -78,12 +81,14 @@ export const ReleasePost: FunctionComponent<Props> = ({
                         post.frontmatter.title
                     )}
                 </h1>
+
                 {post.frontmatter.publishDate && (
                     <time className="text-muted" dateTime={post.frontmatter.publishDate}>
                         {formatDate(post.frontmatter.publishDate)}
                     </time>
                 )}
             </header>
+
             <div className="card-body">{body}</div>
         </Tag>
     )

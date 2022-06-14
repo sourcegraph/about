@@ -178,12 +178,12 @@ const CodeReusePage: FunctionComponent = () => (
                                 Identify existing code libraries for reuse and use innersourcing to avoid spending time
                                 on problems a teammate already solved.
                             </div>
-                            <div className="max-w-400 flex-column flex-md-row d-md-flex align-items-center">
+                            <div className="flex-column flex-md-row d-md-flex text-center">
                                 <div className="mb-3 mb-md-0">
                                     <Link href="/demo" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
-                                            className="btn btn-primary w-100"
+                                            className="btn btn-primary w-100 max-w-350"
                                             title="Request a Demo."
                                             data-button-style={buttonStyle.primary}
                                             data-button-location={buttonLocation.hero}
@@ -197,7 +197,7 @@ const CodeReusePage: FunctionComponent = () => (
                                     <Link href="/get-started" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
-                                            className="btn btn-outline-primary w-100"
+                                            className="btn btn-outline-primary w-100 max-w-350"
                                             title="Try Sourcegraph."
                                             data-button-style={buttonStyle.outline}
                                             data-button-location={buttonLocation.hero}
@@ -274,9 +274,9 @@ const CodeReusePage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="bg-light-gray-3">
+        <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="row d-flex flex-column mx-4 mx-lg-0 py-7 align-items-lg-center align-items-left">
+                <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
                         <p>
@@ -288,7 +288,7 @@ const CodeReusePage: FunctionComponent = () => (
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary"
+                                className="btn btn-primary max-w-350 w-100"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}
@@ -307,7 +307,7 @@ const CodeReusePage: FunctionComponent = () => (
                 </div>
             </ContentSection>
 
-            <div className="py-6">
+            <div className="mt-6">
                 <CustomerLogos />
             </div>
         </div>

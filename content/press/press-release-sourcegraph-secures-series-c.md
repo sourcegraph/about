@@ -5,7 +5,7 @@ authors:
 publishDate: 2020-12-03T05:00
 tags: ['press']
 slug: sourcegraph-secures-series-c-sequoia
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 description: 'Universal Code Search Empowers Developers to Tackle Challenges of Big Code; Andrew Reed of Sequoia Joins Board of Directors.'
 published: true
 ---

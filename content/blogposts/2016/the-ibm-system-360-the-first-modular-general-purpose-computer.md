@@ -65,3 +65,7 @@ These lessons drive us in our mission to improve the current state of software d
 Have another interesting computer history lesson to share? [Let us know!](https://twitter.com/sourcegraph)
 
 _Editor’s note: the original version of this article overstated the degree of speciation in the 1960s mainframe market. The language has been edited to clarify the transition between the pre- and post-System/360 world._
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
