@@ -146,10 +146,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                             <h2 className="font-weight-bold">{formLabel}</h2>
                             <div className="border-saturn border border-3 shadow-sm py-4 px-4 mt-3 px-0">
                                 {!hasWatchNowQuery && (
-                                    <HubSpotForm
-                                        masterFormName="gatedMulti"
-                                        onFormSubmitted={onFormSubmitted}
-                                    />
+                                    <HubSpotForm masterFormName="gatedMulti" onFormSubmitted={onFormSubmitted} />
                                 )}
                             </div>
                         </div>

@@ -48,7 +48,7 @@ interface HubSpotFormProps {
 /**
  * These are our Master Form IDs that are used throughout our codebase.
  */
- const masterForms: {[key: string]: string} = {
+const masterForms: { [key: string]: string } = {
     // Demo Request Email Only
     demoEmail: 'a26c29e7-cd79-429d-a2ac-43f694734c46',
 
@@ -171,7 +171,6 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     masterFormName,
     onFormSubmitted,
 }: HubSpotFormProps) => {
-
     const target = 'form-target'
 
     useEffect(() => {

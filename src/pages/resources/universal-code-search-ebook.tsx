@@ -24,9 +24,9 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
                             <p>By Quinn Slack and Beyang Liu</p>
                             <p>
                                 We have entered the era of Big Code: rapidly growing codebases and repositories,
-                                multiple languages and file formats, and a wide variety of developer tools. To
-                                grapple with this increasing complexity, engineering teams need a tool that provides
-                                Universal Code Search.
+                                multiple languages and file formats, and a wide variety of developer tools. To grapple
+                                with this increasing complexity, engineering teams need a tool that provides Universal
+                                Code Search.
                             </p>
 
                             <p>With this ebook, you will learn:</p>
@@ -41,7 +41,8 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
                             <img
                                 src="/external-logos/sourcegraph-universal-code-search-ebook-v1.jpg"
                                 alt="Download: Universal Code Search and Intelligence"
-                                className="landing-page__img" />
+                                className="landing-page__img"
+                            />
                         </div>
                         <div className="col-md-4">
                             <h3 className="font-weight-light font-sans">Get your free ebook.</h3>

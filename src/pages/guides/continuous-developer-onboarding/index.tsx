@@ -8,7 +8,8 @@ const ContinuousDeveloperOnboarding: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Guide to Developer Onboarding | Accelerate Dev Onboarding',
-            description: 'Continuous onboarding shifts traditional onboarding practices to cultivate an environment that enables developers to build themselves as flexible and resilient engineers.',
+            description:
+                'Continuous onboarding shifts traditional onboarding practices to cultivate an environment that enables developers to build themselves as flexible and resilient engineers.',
         }}
         hero={<div className={styles.hero} />}
         className="bg-white"
@@ -17,17 +18,16 @@ const ContinuousDeveloperOnboarding: FunctionComponent = () => (
             <div className="row">
                 <div className="col-lg-6 pr-lg-6">
                     <h3 className="display-3 mb-5">
-                        Continuous developer onboarding: A guide to cultivating a culture of professional growth in
-                        your engineering organization
+                        Continuous developer onboarding: A guide to cultivating a culture of professional growth in your
+                        engineering organization
                     </h3>
 
                     <p className="mb-4">
-                        Companies often define developer onboarding as a process exclusive to new hires. But
-                        developer onboarding continues far past a developer's first few months. Engineers want to
-                        explore new parts of a codebase, learn new skills, and build new things as they switch
-                        teams, take on new features and own different parts of a codebase. Successful engineers are
-                        those who have the capacity to make these transitions in a largely self-guided way; they
-                        continuously onboard.
+                        Companies often define developer onboarding as a process exclusive to new hires. But developer
+                        onboarding continues far past a developer's first few months. Engineers want to explore new
+                        parts of a codebase, learn new skills, and build new things as they switch teams, take on new
+                        features and own different parts of a codebase. Successful engineers are those who have the
+                        capacity to make these transitions in a largely self-guided way; they continuously onboard.
                     </p>
 
                     <p className="mb-4">
@@ -40,15 +40,14 @@ const ContinuousDeveloperOnboarding: FunctionComponent = () => (
                     <p>Download this guide to learn:</p>
                     <ul>
                         <li className="mb-1">
-                            How to recontextualize traditional onboarding practices with long-term developer growth
-                            in mind
+                            How to recontextualize traditional onboarding practices with long-term developer growth in
+                            mind
                         </li>
                         <li className="mb-1">
                             How to cultivate an environment that enables developers to be flexible and resilient
                         </li>
                         <li className="mb-1">
-                            How to approach people, knowledge, and tools as fundamental aspects of engineering
-                            culture
+                            How to approach people, knowledge, and tools as fundamental aspects of engineering culture
                         </li>
                     </ul>
                 </div>

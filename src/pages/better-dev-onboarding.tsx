@@ -10,7 +10,7 @@ import {
     FeatureWalkthrough,
     IntegrationsSection,
     Layout,
-    HubSpotForm
+    HubSpotForm,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useChiliPiper } from '@hooks'

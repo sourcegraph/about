@@ -27,7 +27,7 @@ import {
     TemplateCodeBlock,
     YouTube,
     Video,
-    HubSpotForm
+    HubSpotForm,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useChiliPiper } from '@hooks'
