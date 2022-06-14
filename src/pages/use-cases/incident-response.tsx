@@ -33,7 +33,7 @@ const items = [
             <CarouselItem
                 header="Response to incidents faster"
                 text={
-                    <p>
+                    <p className="pb-5">
                         No heroics required: Quickly understand all the context and dependencies around your codebase
                         with <Link href="/code-search">Code Search</Link> so you can find the root cause of an incident
                         with confidence and speed. Document work in progress with{' '}
@@ -52,7 +52,7 @@ const items = [
             <CarouselItem
                 header="Limit the impact of incidents"
                 text={
-                    <p>
+                    <p className="pb-5">
                         Automate the deployment of fixes everywhere and at scale. With{' '}
                         <Link href="/batch-changes">Batch Changes</Link>, you can automate code changes and monitor the
                         merge status of each resulting PR. Refactor code to replace insecure functions, update
@@ -69,7 +69,7 @@ const items = [
             <CarouselItem
                 header="Track remediation progress"
                 text={
-                    <p>
+                    <p className="pb-5">
                         Visualize fixes in progress and track their deployment. With{' '}
                         <Link href="/code-insights">Code Insights</Link>, get visibility into remediation efforts and
                         share progress with team leaders and all of your customers.
@@ -85,7 +85,7 @@ const items = [
             <CarouselItem
                 header="Monitor for unsafe code"
                 text={
-                    <p>
+                    <p className="pb-5">
                         Close the loop on your incident response efforts. After finding the root cause, use{' '}
                         <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a> to track whether
                         similarly unsafe code is ever merged. Get alerts and stop incidents before they occur.
@@ -301,7 +301,6 @@ const IncidentResponsePage: FunctionComponent = () => (
             <CustomCarousel
                 items={items}
                 autoAdvance={true}
-                smallPanel={true}
                 title="How Sourcegraph helps"
             />
         </ContentSection>

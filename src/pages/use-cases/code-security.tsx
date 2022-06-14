@@ -33,7 +33,7 @@ const items = [
             <CarouselItem
                 header="Find vulnerabilities"
                 text={
-                    <p>
+                    <p className="pb-5">
                         Vulnerabilities are inevitable, but they don't have to be disruptive. With{' '}
                         <Link href="/code-search">Code Search</Link>, you can find vulnerabilities across your
                         repositories in a single search. Relieve your engineers from manual work, get a headstart on
@@ -51,7 +51,7 @@ const items = [
             <CarouselItem
                 header="Automatically merge and deploy fixes"
                 text={
-                    <p>
+                    <p className="pb-5">
                         Deploy fixes at scale. Don't let the size and complexity of your codebase hold you back. With{' '}
                         <Link href="/batch-changes">Batch Changes</Link>, you can automate the merging and deployment of
                         fixes. Move faster than your competitors, free up your engineers, and return your codebase to a
@@ -68,7 +68,7 @@ const items = [
             <CarouselItem
                 header="Proactively monitor for the presence of vulnerable code"
                 text={
-                    <p>
+                    <p className="pb-5">
                         Get ahead of vulnerabilities. With
                         <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>, get alerts whenever
                         specified patterns enter your codebase. Monitors ensure new occurrences are detected immediately
@@ -85,7 +85,7 @@ const items = [
             <CarouselItem
                 header="Ensure removal of security vulnerabilities"
                 text={
-                    <p>
+                    <p className="pb-5">
                         Get the full picture of an incident. Track how long the vulnerable code has been in your
                         codebase and how quickly you're removing it. With{' '}
                         <Link href="/code-insights">Code Insights</Link>, you can measure the progress of applying
@@ -102,7 +102,7 @@ const items = [
             <CarouselItem
                 header="Bring peace of mind to customers"
                 text={
-                    <p>
+                    <p className="pb-5">
                         The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can know
                         you'll find every instance of affected code, be able to fix it at scale, monitor for its
                         presence long-term, and ensure your customers that your code is safe.
@@ -325,7 +325,6 @@ const UseCasePage: FunctionComponent = () => (
             <CustomCarousel
                 items={items}
                 autoAdvance={true}
-                smallPanel={true}
                 title="How Sourcegraph helps"
             />
         </ContentSection>

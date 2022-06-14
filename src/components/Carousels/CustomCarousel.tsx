@@ -16,7 +16,6 @@ interface CarouselProps {
     previousItem?: CarouselItem
     currentItemIndex?: number
     autoAdvance?: boolean
-    smallPanel?: boolean
     showHeadlinesOnMobile?: boolean
 }
 
@@ -28,7 +27,7 @@ interface CarouselItem {
 }
 
 export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
-    const carouselMainStyles = 'd-flex flex-wrap'
+    const carouselMainStyles = 'd-flex flex-wrap h-auto'
     const carouselRightPanelStyles =
         'col-lg-6 col-md-10 col-sm-12 mt-lg-6 px-0 m-auto d-flex align-items-center align-items-lg-start text-lg-left text-md-center'
     const { items, autoAdvance, title } = props
@@ -45,8 +44,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         carouselMainStyles,
                         {
                             'justify-content-between h-xl-450 h-auto': autoAdvance,
-                            'h-xl-150 h-auto': props.smallPanel,
-                            'flex-lg-row flex-column py-8 py-lg-8': !autoAdvance
+                            'flex-lg-row flex-column py-8 py-lg-8': !autoAdvance,
                         }
                     )
                 }
