@@ -1,16 +1,11 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CustomerLogos } from '@components'
-import { useHubSpot, useChiliPiper } from '@hooks'
+import { Layout, CustomerLogos, HubSpotForm } from '@components'
+import { useChiliPiper } from '@hooks'
 
 const description = 'Contact us to learn more about Sourcegraph enterprise.'
 
 const Contact: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '202906aa-b46d-4657-86c4-30fbfda2413f',
-        targetId: 'hubspotRequestTrialForm',
-    })
     useChiliPiper()
 
     return (
@@ -29,8 +24,8 @@ const Contact: FunctionComponent = () => {
                             <h3 className="font-weight-light">
                                 Talk with a product specialist to learn more about Sourcegraph.
                             </h3>
-                            <div className="mt-5">
-                                <div id="hubspotRequestTrialForm" className="d-flex justify-center" />
+                            <div className="mt-5 d-flex justify-center">
+                                <HubSpotForm masterFormName="demoMulti" />
                             </div>
                         </div>
                         <div className="col-md-6">

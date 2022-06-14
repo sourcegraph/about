@@ -2,15 +2,10 @@ import React, { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout } from '@components'
-import { useHubSpot, useChiliPiper } from '@hooks'
+import { Layout, HubSpotForm } from '@components'
+import { useChiliPiper } from '@hooks'
 
 export const Pricing: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '7d6c55af-3de3-4e57-a5df-a0de341a4814',
-        targetId: 'trial-form',
-    })
     useChiliPiper()
 
     return (
@@ -78,7 +73,7 @@ export const Pricing: FunctionComponent = () => {
                     </div>
                 </div>
                 <div>
-                    <div id="trial-form" />
+                    <HubSpotForm formId="7d6c55af-3de3-4e57-a5df-a0de341a4814" />
                 </div>
             </section>
         </Layout>

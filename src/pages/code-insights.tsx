@@ -27,9 +27,10 @@ import {
     TemplateCodeBlock,
     YouTube,
     Video,
+    HubSpotForm
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-import { useHubSpot, useChiliPiper } from '@hooks'
+import { useChiliPiper } from '@hooks'
 
 const items = [
     {
@@ -302,12 +303,6 @@ const blogResourceItems = [
 ]
 
 const CodeInsightsPage: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '1367e810-da5f-4abd-97bc-49df5a5b459f',
-        region: 'na1',
-        targetId: 'topForm',
-    })
     useChiliPiper()
 
     return (
@@ -334,7 +329,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                                     dashboards in seconds.
                                 </h4>
                                 <div className="d-flex flex-column pt-1 max-w-400">
-                                    <div id="topForm" />
+                                    <HubSpotForm masterFormName="demoEmail" />
                                 </div>
                             </div>
                         </div>

@@ -10,9 +10,10 @@ import {
     FeatureWalkthrough,
     IntegrationsSection,
     Layout,
+    HubSpotForm
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-import { useHubSpot, useChiliPiper } from '@hooks'
+import { useChiliPiper } from '@hooks'
 
 import styles from './use-cases/useCases.module.scss'
 
@@ -42,13 +43,8 @@ const resourceItems = [
 ]
 
 const BetterDeveloperOnboarding: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '5b81cde2-4701-425e-8782-dc79d8979b70',
-        region: 'na1',
-        targetId: 'topForm',
-    })
     useChiliPiper()
+
     return (
         <Layout
             meta={{
@@ -72,7 +68,7 @@ const BetterDeveloperOnboarding: FunctionComponent = () => {
                                         to the relevant code.
                                     </div>
                                     <div className="d-flex flex-column pt-1 max-w-400">
-                                        <div id="topForm" />
+                                        <HubSpotForm masterFormName="demoEmail" />
                                     </div>
                                 </div>
                             </div>

@@ -2,8 +2,8 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, CaseStudyCard, FormLegal, BlogResourceItem } from '@components'
-import { useHubSpot, useChiliPiper } from '@hooks'
+import { Layout, CaseStudyCard, FormLegal, BlogResourceItem, HubSpotForm } from '@components'
+import { useChiliPiper } from '@hooks'
 
 const blogResourceItems = [
     {
@@ -74,11 +74,6 @@ const caseStudyItems = [
 ]
 
 const PartnerPodcastPage: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
-        targetId: 'form',
-    })
     useChiliPiper()
 
     return (
@@ -98,7 +93,7 @@ const PartnerPodcastPage: FunctionComponent = () => {
                         See why over 1.2M engineers use Sourcegraph to build software you rely on
                     </h5>
                     <div className="max-w-400 pt-0 pt-md-4">
-                        <div id="form" />
+                        <HubSpotForm masterFormName="demoEmail" />
                         <FormLegal />
                     </div>
                 </section>

@@ -3,16 +3,11 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, FormLegal } from '@components'
+import { Layout, FormLegal, HubSpotForm } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
-import { useHubSpot, useChiliPiper } from '@hooks'
+import { useChiliPiper } from '@hooks'
 
 const AccelerateDevOnboarding: FunctionComponent = () => {
-    useHubSpot({
-        portalId: '2762526',
-        formId: '98187d3b-d8a9-43e2-bb95-d93dd029c688',
-        targetId: 'form-0',
-    })
     useChiliPiper()
 
     return (
@@ -39,7 +34,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => {
                         </p>
 
                         <div className="mt-5 mw-400">
-                            <div id="form-0" />
+                            <HubSpotForm masterFormName="demoEmail" />
                             <FormLegal />
                         </div>
                     </div>
