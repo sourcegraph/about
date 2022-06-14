@@ -1,21 +1,4 @@
-import { useEffect } from 'react'
-
-/**
- * These are our Master Form IDs that are used throughout our codebase.
- */
-const masterForms = {
-    // Demo Request Email Only
-    demoEmail: 'a26c29e7-cd79-429d-a2ac-43f694734c46',
-
-    // Demo Request Multi Field
-    demoMulti: 'e090296f-84f5-4bcb-9093-a533336841b4',
-
-    // Gated Content Email Only
-    gatedEmail: '9b2539ad-feaa-4dd2-b6b4-2439c5bc98da',
-
-    // Gated Content Multi Field
-    gatedMulti: '1fb4ef6c-f233-48ba-9f43-a88f19528282',
-}
+import { FunctionComponent, useEffect } from 'react'
 
 declare global {
     interface Window {
@@ -30,45 +13,56 @@ declare global {
                     onFormSubmit,
                     onFormSubmitted,
                     onFormReady,
-                }: HubSpotProps) => HubSpotForm
+                }: HubSpotAPIProps) => CreateHubSpotFormProps
             }
         }
     }
 }
 
-interface HubSpotProps {
+interface HubSpotAPIProps {
     region?: string
     portalId: string
     formId: string
     target: string
     formInstanceId?: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
-    onFormReady?: ($form: HubSpotForm) => void
+    onFormReady?: ($form: CreateHubSpotFormProps) => void
     onFormSubmitted?: () => void
 }
 
-export interface HubSpotForm {
-    region?: string
+export interface CreateHubSpotFormProps {
     [index: number]: HTMLFormElement
-    portalId: string
-    formInstanceId?: string
     formId: string
-    targetId: string
+    target: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
     onFormReady?: ($form: HTMLFormElement) => void
     onFormSubmitted?: () => void
 }
 
-interface HookProps {
-    region?: string
-    portalId: string
-    formId: string
-    targetId: string
-    formInstanceId?: string
+interface HubSpotFormProps {
+    formId?: string
+    masterFormName?: 'demoMulti' | 'demoEmail' | 'gatedMulti' | 'gatedEmail'
     onFormSubmitted?: () => void
 }
 
-// Global script integrations for this hook used for HubSpot forms
+/**
+ * These are our Master Form IDs that are used throughout our codebase.
+ */
+ const masterForms: {[key: string]: string} = {
+    // Demo Request Email Only
+    demoEmail: 'a26c29e7-cd79-429d-a2ac-43f694734c46',
+
+    // Demo Request Multi Field
+    demoMulti: 'e090296f-84f5-4bcb-9093-a533336841b4',
+
+    // Gated Content Email Only
+    gatedEmail: '9b2539ad-feaa-4dd2-b6b4-2439c5bc98da',
+
+    // Gated Content Multi Field
+    gatedMulti: '1fb4ef6c-f233-48ba-9f43-a88f19528282',
+}
+
+// Global script integrations for HubSpot forms
 const hubSpotScript = '//js.hsforms.net/forms/v2.js'
 const jQueryScript = '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'
 const clearbitScript =
@@ -84,7 +78,7 @@ const removeScriptElement = (id: string): void => {
 }
 
 /**
- * This loads a script element and appends it to the document's head tag.
+ * This loads a script element and appends it to the document head
  *
  * @param id - a unique identifier for the script element
  * @param script - the script src (whether it's used for the script tag's src or innerHTML)
@@ -115,15 +109,12 @@ const loadScriptElement = (
     })
 
 async function createHubSpotForm({
-    region,
-    portalId,
     formId,
-    targetId,
-    formInstanceId,
+    target,
     onFormSubmit,
     onFormSubmitted,
     onFormReady,
-}: HubSpotForm): Promise<void> {
+}: CreateHubSpotFormProps): Promise<void> {
     const getAllCookies: { [index: string]: string } = document.cookie
         .split(';')
         .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
@@ -136,14 +127,13 @@ async function createHubSpotForm({
 
     script?.addEventListener('load', () => {
         window.hbspt?.forms.create({
-            region: region || 'na1',
-            portalId,
+            region: 'na1',
+            portalId: '2762526',
             formId,
-            formInstanceId,
-            target: `#${targetId}`,
+            target: `#${target}`,
             onFormSubmit,
             onFormSubmitted,
-            onFormReady: (form: HubSpotForm) => {
+            onFormReady: (form: CreateHubSpotFormProps) => {
                 if (form) {
                     // Populate hidden form fields with values stored in cookies
                     const anonymousIdInput = form[0].querySelector(
@@ -176,39 +166,33 @@ async function createHubSpotForm({
     })
 }
 
-const removeScripts = (): void => {
-    removeScriptElement('jQuery')
-    removeScriptElement('clearbit')
-    removeScriptElement('hubspot')
-}
-
-export const useHubSpot = ({
-    region,
-    portalId,
+export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     formId,
-    targetId,
-    formInstanceId,
+    masterFormName,
     onFormSubmitted,
-}: HookProps): void => {
+}: HubSpotFormProps) => {
+
+    const target = 'form-target'
+
     useEffect(() => {
-        /**
-         * Some pages conditionally require HubSpot forms. This will halt the
-         * form from being created when a formId is absent.
-         */
-        if (!formId) {
-            return removeScripts()
+        let masterFormId = ''
+        if (masterFormName) {
+            masterFormId = masterForms[masterFormName]
         }
 
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         createHubSpotForm({
-            region,
-            portalId,
-            formId,
-            formInstanceId,
-            targetId,
+            formId: formId || masterFormId,
+            target,
             onFormSubmitted,
         })
 
-        return removeScripts()
-    }, [region, portalId, formId, targetId, formInstanceId, onFormSubmitted])
+        return () => {
+            removeScriptElement('jQuery')
+            removeScriptElement('clearbit')
+            removeScriptElement('hubspot')
+        }
+    }, [formId, onFormSubmitted, masterFormName])
+
+    return <div id={target} />
 }

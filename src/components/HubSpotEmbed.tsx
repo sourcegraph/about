@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Script from 'next/script'
 
-interface EmbeddedHubSpotProps {
+interface HubSpotEmbedProps {
     portalId: string
     formId: string
     targetId: string
@@ -10,7 +10,7 @@ interface EmbeddedHubSpotProps {
     [index: string]: string
 }
 
-export const EmbeddedHubSpot: FunctionComponent<EmbeddedHubSpotProps> = ({ portalId, formId, targetId, region }) => (
+export const HubSpotEmbed: FunctionComponent<HubSpotEmbedProps> = ({ portalId, formId, targetId, region }) => (
     <Script id={targetId}>{`
         const script = document.createElement('script')
         script.src = '//js.hsforms.net/forms/v2.js'
