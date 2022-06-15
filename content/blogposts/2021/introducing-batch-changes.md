@@ -7,7 +7,7 @@ publishDate: 2021-03-24T10:00-07:00
 tags: [blog, product, batch changes]
 slug: introducing-batch-changes
 heroImage:
-socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
+socialImage: why-we're-friends-with-code-hosts
 published: true
 ---
 
