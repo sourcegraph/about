@@ -60,7 +60,13 @@ const CareersPage: FunctionComponent = () => {
                     #life-at-sourcegraph
                 </h2>
             ),
-            img: <img className="w-100 max-w-450" src="/careers/culture1.png" alt="Photograph strip of Sourcegraph team members" />
+            img: (
+                <img
+                    className="w-100 max-w-450"
+                    src="/careers/culture1.png"
+                    alt="Photograph strip of Sourcegraph team members"
+                />
+            ),
         },
         {
             className: 'bg-gradient-violet-yellow-mist',
@@ -69,7 +75,7 @@ const CareersPage: FunctionComponent = () => {
                     We're moving <i>fast</i> to create a world in which everyone can code
                 </h2>
             ),
-            img: <img className="w-100 max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />
+            img: <img className="w-100 max-w-450" src="/careers/culture2.png" alt="Group riding go karts" />,
         },
         {
             className: 'bg-gradient-yellow-green-mist',
@@ -79,7 +85,7 @@ const CareersPage: FunctionComponent = () => {
                     #life-is-beachy
                 </h2>
             ),
-            img: <img className="w-100 max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />
+            img: <img className="w-100 max-w-450" src="/careers/culture3.png" alt="Sourcegrapher on a beach" />,
         },
         {
             className: 'bg-gradient-green-red-mist',
@@ -89,7 +95,13 @@ const CareersPage: FunctionComponent = () => {
                     #pets-of-sourcegraph
                 </h2>
             ),
-            img: <img className="w-100 max-w-450" src="/careers/culture4.png" alt="Black and white cat next to it's doppleganger cat Sourcegraph sticker" />
+            img: (
+                <img
+                    className="w-100 max-w-450"
+                    src="/careers/culture4.png"
+                    alt="Black and white cat next to it's doppleganger cat Sourcegraph sticker"
+                />
+            ),
         },
         {
             className: 'bg-gradient-red-plum-mist',
@@ -98,44 +110,73 @@ const CareersPage: FunctionComponent = () => {
                     Creating the next generation of Sourcegraph coders, one baby at a time
                 </h2>
             ),
-            img: <img className="w-100 max-w-450" src="/careers/culture5.png" alt="Baby holding a coding babybook" />
+            img: <img className="w-100 max-w-450" src="/careers/culture5.png" alt="Baby holding a coding babybook" />,
         },
     ]
     const valueItems = [
         {
             value: 'High quality work',
-            description: 'You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/1highquality.svg" alt="Diamond illustration" />
+            description:
+                'You are responsible for finding out what high-quality work looks like and producing that high-quality work iteratively.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/1highquality.svg" alt="Diamond illustration" />,
         },
         {
             value: 'Being customer-first',
             description: 'You earn and keep the trust of our customers by putting their interests first.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/2customerdriven.svg" alt="Fist bump illustration" />
+            img: (
+                <img
+                    className="mt-10 w-100 max-w-500"
+                    src="/careers/2customerdriven.svg"
+                    alt="Fist bump illustration"
+                />
+            ),
         },
         {
             value: 'Working as a team',
-            description: 'You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/3team.svg" alt="Tandem bicycle illustration" />
+            description:
+                'You work collaboratively with your peers, cross-functional teammates, and leadership to create shared success, trust, and belonging.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/3team.svg" alt="Tandem bicycle illustration" />,
         },
         {
             value: 'High agency',
-            description: 'You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/4highagency.svg" alt="Stamp labeled 'First class' illustration" />
+            description:
+                'You have the power and the responsibility to improve Sourcegraph as a company and as a product. You deliver regardless of the circumstances.',
+            img: (
+                <img
+                    className="mt-10 w-100 max-w-500"
+                    src="/careers/4highagency.svg"
+                    alt="Stamp labeled 'First class' illustration"
+                />
+            ),
         },
         {
             value: 'Being welcoming & inclusive',
-            description: 'You make people from all groups and backgrounds feel comfortable belonging to our team and community.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/5welcoming.svg" alt="Head illustration with a heart in the center" />
+            description:
+                'You make people from all groups and backgrounds feel comfortable belonging to our team and community.',
+            img: (
+                <img
+                    className="mt-10 w-100 max-w-500"
+                    src="/careers/5welcoming.svg"
+                    alt="Head illustration with a heart in the center"
+                />
+            ),
         },
         {
             value: 'Being open & transparent',
             description: 'You proactively communicate in an open and transparent way.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/6open.svg" alt="X-ray vision glasses illustration" />
+            img: (
+                <img
+                    className="mt-10 w-100 max-w-500"
+                    src="/careers/6open.svg"
+                    alt="X-ray vision glasses illustration"
+                />
+            ),
         },
         {
             value: 'Continuous growth',
-            description: 'You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.',
-            img: <img className="mt-10 w-100 max-w-500" src="/careers/7growth.svg" alt="Tall giraffe illustration" />
+            description:
+                'You strive to continuously grow and learn by genuinely soliciting feedback early and often, and humbly reflecting on your past mistakes.',
+            img: <img className="mt-10 w-100 max-w-500" src="/careers/7growth.svg" alt="Tall giraffe illustration" />,
         },
     ]
 
@@ -259,9 +300,7 @@ const CareersPage: FunctionComponent = () => {
                         <Carousel.Item className={item.className} key={item.className}>
                             <div className="row px-md-8 px-5 py-7">
                                 {item.text}
-                                <div className="col-lg-6 h-600 d-flex align-items-center">
-                                    {item.img}
-                                </div>
+                                <div className="col-lg-6 h-600 d-flex align-items-center">{item.img}</div>
                             </div>
                         </Carousel.Item>
                     ))}

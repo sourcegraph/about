@@ -41,23 +41,31 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
 
     return (
         <div>
-            {title && <h2 className={classNames('text-md-center font-weight-bold mt-lg-3 pb-4', isMdOrDown && 'uppercase text-base')}>{title}</h2>}
+            {title && (
+                <h2
+                    className={classNames(
+                        'text-md-center font-weight-bold mt-lg-3 pb-4',
+                        isMdOrDown && 'uppercase text-base'
+                    )}
+                >
+                    {title}
+                </h2>
+            )}
             <div
-                className={
-                   classNames(
-                        carouselMainStyles,
-                        {
-                            'justify-content-between h-xl-450 h-auto': autoAdvance,
-                            'flex-lg-row flex-column py-8 py-lg-8': !autoAdvance,
-                        }
-                    )
-                }
+                className={classNames(carouselMainStyles, {
+                    'justify-content-between h-xl-450 h-auto': autoAdvance,
+                    'flex-lg-row flex-column py-8 py-lg-8': !autoAdvance,
+                })}
             >
                 {props.showHeadlinesOnMobile && (
                     <div className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
                         {carouselItems.map((item, index) => (
                             <h2
-                                className={classNames('d-none', item === carouselHook.carouselItems.currentItem && 'd-block display-5 font-weight-bold')}
+                                className={classNames(
+                                    'd-none',
+                                    item === carouselHook.carouselItems.currentItem &&
+                                        'd-block display-5 font-weight-bold'
+                                )}
                                 key={item.buttonLabel}
                                 onClick={() => carouselHook.moveCarousel(index)}
                                 onKeyDown={() => carouselHook.moveCarousel(index)}
@@ -83,7 +91,10 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                     <div className="ml-lg-5 mb-0">
                         {carouselItems.map((item, index) => (
                             <p
-                                className={classNames('custom-carousel-item font-weight-normal cursor-pointer display-5 py-2', item === carouselHook.carouselItems.currentItem && 'font-weight-bolder')}
+                                className={classNames(
+                                    'custom-carousel-item font-weight-normal cursor-pointer display-5 py-2',
+                                    item === carouselHook.carouselItems.currentItem && 'font-weight-bolder'
+                                )}
                                 key={item.buttonLabel}
                                 onClick={() => carouselHook.moveCarousel(index)}
                                 onKeyDown={() => carouselHook.moveCarousel(index)}
@@ -108,7 +119,14 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             onFocus={() => carouselHook.moveCarousel(index)}
                         >
                             {!autoAdvance && (
-                                <h1 className={classNames('font-weight-bold', autoAdvance ? 'mb-lg-4' : 'display-2 mb-lg-4')}>{item.buttonLabel}</h1>
+                                <h1
+                                    className={classNames(
+                                        'font-weight-bold',
+                                        autoAdvance ? 'mb-lg-4' : 'display-2 mb-lg-4'
+                                    )}
+                                >
+                                    {item.buttonLabel}
+                                </h1>
                             )}
                             <div>{item.text}</div>
                         </div>
