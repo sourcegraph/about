@@ -5,12 +5,7 @@ import { useChiliPiper } from '@hooks'
 
 import { slugs, slugData, ContactPageProps } from './data'
 
-const ContactPage: NextPage<ContactPageProps> = ({
-    title,
-    description,
-    masterFormName,
-    formId,
-}) => {
+const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFormName, formId }) => {
     useChiliPiper()
 
     return (
@@ -59,5 +54,5 @@ export const getStaticPaths: GetStaticPaths = () => {
 }
 
 export const getStaticProps: GetStaticProps = ({ params }) => ({
-    props: params?.slug && slugData[params?.slug[0]] || {}
+    props: (params?.slug && slugData[params?.slug[0]]) || {},
 })
