@@ -220,7 +220,7 @@ const UseCasePage: FunctionComponent = () => (
                 <div className={styles.pageHeader}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-7 mb-8 mt-7">
+                            <div className="col-lg-7 my-7">
                                 <BackButtonBold href="/use-cases" text="USE CASES" />
                                 <h1 className="display-2 font-weight-bold mb-4">Improve code security</h1>
                                 <div className="display-4 font-weight-normal mb-5">

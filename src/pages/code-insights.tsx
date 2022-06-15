@@ -435,14 +435,16 @@ const CodeInsightsPage: FunctionComponent = () => {
                 </div>
             </ContentSection>
 
-            <ContentSection className="bg-light-gray-3">
-                <CustomCarousel
-                    items={items}
-                    autoAdvance={true}
-                    showHeadlinesOnMobile={true}
-                    title="How engineering teams use Code Insights"
-                />
-            </ContentSection>
+            <div className="bg-light-gray-3 py-7">
+                <ContentSection>
+                    <CustomCarousel
+                        items={items}
+                        autoAdvance={true}
+                        showHeadlinesOnMobile={true}
+                        title="How engineering teams use Code Insights"
+                    />
+                </ContentSection>
+            </div>
 
             {/* Demo */}
             <ContentSection className="py-7">
