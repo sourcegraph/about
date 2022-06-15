@@ -267,23 +267,27 @@ const CareersPage: FunctionComponent = () => {
                     ))}
                 </Carousel>
 
-                <Carousel
-                    prevIcon={<ArrowLeftIcon color="#808080" />}
-                    nextIcon={<ArrowRightIcon color="#808080" />}
-                >
-                    {valueItems.map(item => (
-                        <Carousel.Item key={item.value}>
-                            <div className="d-flex flex-column align-items-center py-7">
-                                <h5 className="display-5 font-weight-bold text-uppercase">We value:</h5>
-                                <h2 className="display-4">{item.value}</h2>
-                                <p className="col-5 display-5 text-center">{item.description}</p>
-                                {item.img}
-                            </div>
-                        </Carousel.Item>
-                    ))}
-                </Carousel>
+                <ContentSection>
+                    <Carousel
+                        prevIcon={<ArrowLeftIcon color="#808080" />}
+                        prevLabel=""
+                        nextIcon={<ArrowRightIcon color="#808080" />}
+                        nextLabel=""
+                    >
+                        {valueItems.map(item => (
+                            <Carousel.Item key={item.value}>
+                                <div className="d-flex flex-column align-items-center min-h-550 py-7">
+                                    <h5 className="display-5 font-weight-bold text-uppercase">We value:</h5>
+                                    <h2 className="display-4">{item.value}</h2>
+                                    <p className="col-8 display-5 text-center">{item.description}</p>
+                                    {item.img}
+                                </div>
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
+                </ContentSection>
 
-                <div className="bg-gradient-saturn-saturated py-7">
+                <div className="bg-gradient-saturn-saturated">
                     <ContentSection>
                         <QuoteCarousel items={glassdoorReviewItems} />
                     </ContentSection>

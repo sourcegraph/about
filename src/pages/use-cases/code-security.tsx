@@ -327,7 +327,7 @@ const UseCasePage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <div className="bg-gradient-saturn-saturated py-7">
+        <div className="bg-gradient-saturn-saturated">
             <ContentSection>
                 <QuoteCarousel items={quoteCarouselItems} />
             </ContentSection>

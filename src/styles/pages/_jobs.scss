@@ -83,31 +83,4 @@
         width: 45px;
         height: 45px;
     }
-
-    /* Styling for both carousels */
-    .carousel {
-        .carousel-indicators {
-            bottom: 5%;
-
-            .active {
-                opacity: 1;
-            }
-
-            button {
-                background-color: $space-black;
-                opacity: 0.5;
-                width: 10px;
-                height: 10px;
-                border-radius: 5px;
-                border: 0 none;
-                margin: 0 8px;
-            }
-        }
-        @media only screen and (max-width: 768px) {
-            .carousel-control-prev,
-            .carousel-control-next {
-                display: none;
-            }
-        }
-    }
 }
