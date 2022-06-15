@@ -49,3 +49,11 @@ Many users have custom tooling or scripts that they run as batch changes steps. 
 Now you can directly mount files or directories on the batch change container using [steps.mount](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-mount). This is an experimental feature that's only supported when running batch changes locally. Lots of improvements are on the way ([issue](https://github.com/sourcegraph/sourcegraph/issues/14851)).
 
 We're committed to making iterating on batch changes as fast as possible. Feedback welcome on what slows you down!
+
+## Sourcegraph Extensions
+
+### Allow only extensions authored by Sourcegraph
+
+You can now restrict users to only use Sourcegraph-authored extensions by setting [`extensions.allowOnlySourcegraphAuthoredExtensions`](../config/site_config.md) to `true` in your site configuration. This allows you to easily enforce that any extensions you are using are built and supported by Sourcegraph.
+
+For more information about this feature please refer to the [documentation](https://docs.sourcegraph.com/admin/extensions#allow-only-extensions-authored-by-sourcegraph)
