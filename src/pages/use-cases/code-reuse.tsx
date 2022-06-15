@@ -33,7 +33,7 @@ const items = [
             <CarouselItem
                 header="Find code to reuse"
                 text={
-                    <p className="pb-5">
+                    <p className="pb-3">
                         Find out if a teammate has already solved your problem. With{' '}
                         <Link href="/code-search">Code Search</Link>, you can quickly search across all your
                         repositories to find the code you need.
@@ -50,7 +50,7 @@ const items = [
             <CarouselItem
                 header="Improve code stability and trustworthiness"
                 text={
-                    <p className="pb-5">
+                    <p className="pb-3">
                         Code reuse avoids introducing preventable bugs. By using a reviewed and tested piece of code
                         that's known to work, you can feel confident that your code is secure and stable.
                     </p>
@@ -65,7 +65,7 @@ const items = [
             <CarouselItem
                 header="Automate PRs to make code consistent"
                 text={
-                    <p className="pb-5">
+                    <p className="pb-3">
                         Spend less time on manual updates. Whether refactoring duplicate code or updating a shared
                         library, automate changes seamlessly across your entire codebase with{' '}
                         <Link href="/batch-changes">Batch Changes</Link>.
@@ -81,7 +81,7 @@ const items = [
             <CarouselItem
                 header="Alert for deprecated code use"
                 text={
-                    <p className="pb-5">
+                    <p className="pb-3">
                         Catch deprecated code as it’s committed with
                         <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>. Monitor and get
                         alerts when someone uses out-of-date libraries or deprecated functions, so you know who to work
@@ -98,7 +98,7 @@ const items = [
             <CarouselItem
                 header="Track your code reuse efforts "
                 text={
-                    <p className="pb-5">
+                    <p className="pb-3">
                         Get visibility into code reuse progress. Track the prevalence of shared code in your codebase
                         over time with <Link href="/code-insights">Code Insights</Link>..
                     </p>
