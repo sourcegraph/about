@@ -21,6 +21,7 @@ export { ThreeUpText } from './ThreeUpText'
 export { TrySourcegraph } from './TrySourcegraph'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
+export type { HubSpotFormProps } from './HubSpotForm'
 
 // Actions
 export {

@@ -39,7 +39,7 @@ export interface CreateHubSpotFormProps {
     onFormSubmitted?: () => void
 }
 
-interface HubSpotFormProps {
+export interface HubSpotFormProps {
     formId?: string
     masterFormName?: 'demoMulti' | 'demoEmail' | 'gatedMulti' | 'gatedEmail'
     onFormSubmitted?: () => void
