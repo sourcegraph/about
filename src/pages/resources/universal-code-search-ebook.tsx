@@ -17,7 +17,7 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
             className="text-dark"
             titleClassName="display-2 font-weight-bold"
         >
-            <div className="landing-page bg-white text-dark">
+            <div className="bg-white text-dark">
                 <div className="container-lg py-6 px-5">
                     <div className="row flex-wrap-reverse">
                         <div className="col-md-4">
@@ -46,7 +46,7 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
                         </div>
                         <div className="col-md-4">
                             <h3 className="font-weight-light font-sans">Get your free ebook.</h3>
-                            <div className="mt-5 d-flex justify-center">
+                            <div className="mt-5">
                                 <HubSpotForm masterFormName="gatedMulti" />
                             </div>
                         </div>

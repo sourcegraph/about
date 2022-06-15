@@ -30,7 +30,7 @@ export const AbcsEbook: FunctionComponent = () => (
                         <a
                             className="button btn btn-primary"
                             id="abc-dlbook"
-                            href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download"
+                            href="https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf"
                         >
                             Download your book
                         </a>
@@ -47,7 +47,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     </p>
                     <p>
                         That's why we created a new digital children's book titled{' '}
-                        <a href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download">
+                        <a href="https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf">
                             <strong>&quot;Our ABCs: Always Be Coding&quot;</strong>
                         </a>
                         —for all children at home that wonder what their techie parents do all day, night, and some
@@ -61,7 +61,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     </p>
                     <p className="text-center">
                         <a
-                            href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download"
+                            href="https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf"
                             className="d-block"
                             id="abc-dlbook"
                         >
@@ -77,7 +77,7 @@ export const AbcsEbook: FunctionComponent = () => (
                         <a
                             className="button btn btn-primary"
                             id="abc-dlbook"
-                            href="https://about.sourcegraph.com/resources/our-abcs-childrens-book-download"
+                            href="https://cdn2.hubspot.net/hubfs/2762526/CTA%20assets/sourcegraph-abc-book.pdf"
                         >
                             Download your book
                         </a>
@@ -127,7 +127,7 @@ export const AbcsEbook: FunctionComponent = () => (
                     <h3 className="text-center">About Sourcegraph</h3>
                     <p>
                         Sourcegraph empowers all developers to explore, navigate and better understand all code, faster,
-                        with <Link href="/universal-code-search">Universal Code Search</Link>. Sourcegraph's mission is
+                        with <Link href="/code-search">Code Search</Link>. Sourcegraph's mission is
                         to make it easier and faster for developers to work on solving problems.
                     </p>
                     <p>
