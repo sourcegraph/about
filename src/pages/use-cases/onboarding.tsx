@@ -34,7 +34,7 @@ const items = [
             <CarouselItem
                 header="Make knowledge self-serve"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         With Sourcegraph, developers can find answers without waiting for a teammate to point them to
                         the relevant code. When questions arise, devs feel more confident that they're asking a more
                         focused and informed question.
@@ -51,7 +51,7 @@ const items = [
             <CarouselItem
                 header="Enable developers to learn by example"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         With <Link href="/code-search">Code Search</Link>, you can find examples to learn from across
                         all of your company's private repositories and the open source universe.
                     </p>
@@ -66,7 +66,7 @@ const items = [
             <CarouselItem
                 header="Get code history and ownership at a glance"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         Sourcegraph natively supports Git-based version control systems. Searches can quickly reveal who
                         updated code and when, helping developers find the right stakeholders to solve problems
                         effectively.
@@ -82,7 +82,7 @@ const items = [
             <CarouselItem
                 header="Visualize contributions and chart team progress"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         <Link href="/code-insights">Code Insights</Link> allows onboarding developers to understand
                         in-process work and visualize how their contributions advance team goals.
                     </p>
@@ -97,7 +97,7 @@ const items = [
             <CarouselItem
                 header="Document and share actionable code snippets"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         With <a href="https://docs.sourcegraph.com/notebooks"> Notebooks</a>, teams can create always
                         up-to-date, living documentation with familiar features like Markdown and novel capabilities
                         like embedded searches, snippets, and symbols.

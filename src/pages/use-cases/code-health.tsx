@@ -34,7 +34,7 @@ const items = [
             <CarouselItem
                 header="Find old versions easily"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         Use{' '}
                         <Link href="/code-search" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -61,7 +61,7 @@ const items = [
             <CarouselItem
                 header="Automate version updates and communications"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         With{' '}
                         <Link href="/batch-changes">
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -87,7 +87,7 @@ const items = [
             <CarouselItem
                 header="Get everyone on the same page with living docs"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         Create living, actionable documentation with{' '}
                         <a href="https://docs.sourcegraph.com/notebooks">Notebooks</a> that show your best practices
                         with real-life examples you can share with your team.
@@ -103,7 +103,7 @@ const items = [
             <CarouselItem
                 header="Monitor for deprecated code"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         Make sure deprecated endpoints don't sneak back into your code. Get alerts for new occurrences
                         of deprecated methods or restricted patterns with{' '}
                         <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a>.
@@ -119,7 +119,7 @@ const items = [
             <CarouselItem
                 header="Develop a data-driven relationship with your code"
                 text={
-                    <p className="pb-3">
+                    <p className="py-3">
                         Create dashboards to track mitigations, package use, version adoption, code smells, codebase
                         size, and more to understand code health with <Link href="/code-insights">Code Insights</Link>.
                     </p>
