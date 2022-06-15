@@ -2,8 +2,9 @@ import { FunctionComponent, ReactFragment } from 'react'
 
 import Link from 'next/link'
 
-import { Icon } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
+
+import { Icon } from './Icon'
 
 interface Logo {
     src: string
