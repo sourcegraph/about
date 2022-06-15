@@ -376,7 +376,14 @@ const UseCases: React.FunctionComponent = () => (
                         </Link>
                         <Link href="/use-cases/code-health" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-link">Learn more</a>
+                            <a
+                                className="btn btn-link font-weight-bold"
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                Learn more
+                            </a>
                         </Link>
                     </div>
                     <div className="col-lg-6 mt-6 px-6 text-center">

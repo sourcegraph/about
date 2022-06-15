@@ -31,8 +31,8 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
         <div className="bg-light-gray-4-2 p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
             <section className="max-w-xl-550 ml-xl-auto">
                 <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
-                    <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <Icon name="AssignmentSharp" size={40} className="p-1 text-blurple" />
+                    <div className="d-flex align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 text-center p-1 max-w-50">
+                        <Icon name="AssignmentSharp" size={40} className="p-1" variant="boxed" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Use case</h5>
@@ -44,8 +44,8 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                 </div>
                 <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
-                    <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <Icon name="FlagSharp" size={40} className="p-1 text-blurple" />
+                    <div className="d-flex align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 text-center p-1 max-w-50">
+                        <Icon name="FlagSharp" size={40} className="p-1" variant="boxed" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Challenge</h5>
@@ -57,8 +57,8 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                 </div>
                 <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
-                    <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <Icon name="CheckCircleSharp" size={40} className="p-1 text-blurple" />
+                    <div className="d-flex align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 text-center p-1 max-w-50">
+                        <Icon name="CheckCircleSharp" size={40} className="p-1" variant="boxed" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Solution</h5>
@@ -74,8 +74,8 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
         <div className="bg-gradient-venus-radial p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
             <section className="max-w-xl-550">
                 <div className="mb-5 ml-3 ml-lg-0 d-flex flex-column flex-md-row">
-                    <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <Icon name="BarChartSharp" size={40} className="p-1 text-blurple" />
+                    <div className="d-flex align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 text-center p-1 max-w-50">
+                        <Icon name="BarChartSharp" size={40} className="p-1" variant="boxed" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Results</h5>
