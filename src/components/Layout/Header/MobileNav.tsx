@@ -1,9 +1,9 @@
 import { FunctionComponent, useState } from 'react'
 
 import { camelCase } from 'lodash'
-import ChevronDownIcon from 'mdi-react/ChevronDownIcon'
 import Link from 'next/link'
 
+import { Icon } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import { NavLink } from './navLinks'
@@ -67,7 +67,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                                 tabIndex={0}
                             >
                                 {navLink.section}
-                                <ChevronDownIcon className="icon-inline ml-1" />
+                                <Icon name="ExpandMoreSharp" size={16} className="icon-inline ml-1" />
                             </span>
                             <ul
                                 id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}

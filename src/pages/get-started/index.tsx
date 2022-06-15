@@ -1,9 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { Layout } from '@components'
+import { Icon, Layout } from '@components'
 import { useQueryString } from '@hooks'
 
 import styles from './getStarted.module.scss'
@@ -26,7 +25,7 @@ export const GetStartedPage: FunctionComponent = () => {
         <Link href={routerHook.queryString ? `${href}?${routerHook.queryString}` : href}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="btn btn-primary my-2">
-                Get started for free <ArrowRightIcon />
+                Get started for free <Icon name="ArrowForwardSharp" size={21} className="ml-2" />
             </a>
         </Link>
     )

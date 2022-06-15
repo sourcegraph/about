@@ -1,9 +1,7 @@
 import { kebabCase } from 'lodash'
-import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { Layout, BlockquoteWithBorder, ContentSection, TrySourcegraph, CustomerLogos } from '@components'
+import { BlockquoteWithBorder, ContentSection, CustomerLogos, Icon, Layout, TrySourcegraph } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 import styles from './useCases.module.scss'
@@ -64,7 +62,7 @@ const UseCases: React.FunctionComponent = () => (
                                         data-button-type="cta"
                                     >
                                         {feature.description}
-                                        <ArrowRightIcon className="icon-inline ml-1" />
+                                        <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                                     </a>
                                 </Link>
                             ))}
@@ -107,7 +105,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/code-security" passHref={true}>
@@ -180,7 +178,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/onboarding" passHref={true}>
@@ -234,7 +232,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/incident-response" passHref={true}>
@@ -321,7 +319,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/code-reuse" passHref={true}>
@@ -373,7 +371,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/code-health" passHref={true}>

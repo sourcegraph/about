@@ -1,8 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-
-import { Layout, Install, BackButton } from '@components'
+import { BackButton, Icon, Install, Layout } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useQueryString } from '@hooks'
 
@@ -73,7 +71,7 @@ export const SelfHostedPage: FunctionComponent = () => {
                                 data-button-type="cta"
                                 href="https://info.sourcegraph.com/talk-to-a-developer"
                             >
-                                Talk to an engineer <ArrowRightIcon />
+                                Talk to an engineer <Icon name="ArrowForwardSharp" size={21} />
                             </a>
                         </div>
                     </div>

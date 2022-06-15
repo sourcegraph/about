@@ -1,8 +1,8 @@
 import { FunctionComponent, ReactFragment } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
+import { Icon } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 interface Logo {
@@ -44,14 +44,14 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
             (link.href.includes('http') ? (
                 <a href={link.href} target="_blank" rel="nofollow noreferrer">
                     {link.text}
-                    <ArrowRightIcon className="icon-inline ml-1" />
+                    <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="d-flex justify-content-center mt-3">
                         <p className="font-weight-bold">{link.text}</p>
-                        <ArrowRightIcon className="icon-inline ml-1" />
+                        <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                     </a>
                 </Link>
             ))}
@@ -112,7 +112,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
             (link?.href.includes('http') ? (
                 <a href={link.href} target="_blank" rel="nofollow noreferrer">
                     {link.text}
-                    <ArrowRightIcon className="icon-inline ml-1" />
+                    <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
@@ -124,7 +124,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
                         data-button-type="cta"
                     >
                         <p className="font-weight-bold">{link.text}</p>
-                        <ArrowRightIcon className="icon-inline ml-1" />
+                        <Icon name="ArrowForwardSharp" size={16} className="icon-inline ml-1" />
                     </a>
                 </Link>
             ))}

@@ -1,8 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import GithubIcon from 'mdi-react/GithubIcon'
-import LinkedinIcon from 'mdi-react/LinkedinIcon'
-import TwitterIcon from 'mdi-react/TwitterIcon'
+import { Icon } from '@components'
 
 const LEADERS: {
     name: string
@@ -115,7 +113,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                                 aria-label="GitHub"
                                 className="text-dark"
                             >
-                                <GithubIcon />
+                                <Icon name="GitHub" size={21} />
                             </a>
                         </li>
                         <li className="nav-item p-1">
@@ -126,7 +124,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                                 aria-label="Twitter"
                                 className="text-dark"
                             >
-                                <TwitterIcon />
+                                <Icon name="Twitter" size={21} />
                             </a>
                         </li>
                         <li className="nav-item p-1">
@@ -137,7 +135,7 @@ export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ c
                                 aria-label="LinkedIn"
                                 className="text-dark"
                             >
-                                <LinkedinIcon />
+                                <Icon name="LinkedIn" size={21} />
                             </a>
                         </li>
                     </ul>

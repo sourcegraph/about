@@ -1,9 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import CheckIcon from 'mdi-react/CheckIcon'
 import Link from 'next/link'
 
-import { ContentSection, Layout, TrySourcegraph } from '@components'
+import { ContentSection, Icon, Layout, TrySourcegraph } from '@components'
 
 const CLASS_NAMES = {
     featureOffered: 'list-group-item bg-transparent border-0',
@@ -57,38 +56,38 @@ const Support: FunctionComponent = () => (
                             </div>
                             <ol className="mt-4 list-group list-group-flush py-2 h-100">
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
                                     <a href="https://github.com/sourcegraph/sourcegraph/issues">
                                         {SUPPORT_FEATURES.publicIssueTracker}
                                     </a>
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.emailSupport}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.workingHoursSupport}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.responseTime48}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.uptime}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.implementationSupport}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.sharedSlackChannel}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.customerEngineer}
                                 </li>
                             </ol>
@@ -107,38 +106,38 @@ const Support: FunctionComponent = () => (
                             </div>
                             <ol className="mt-4 list-group list-group-flush py-2 h-100">
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
                                     <a href="https://github.com/sourcegraph/sourcegraph/issues">
                                         {SUPPORT_FEATURES.publicIssueTracker}
                                     </a>
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.emailSupport}
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.workingHoursSupport}
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.responseTime48}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.uptime}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.implementationSupport}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.sharedSlackChannel}
                                 </li>
                                 <li className={CLASS_NAMES.featureNotOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureNotChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureNotChecked} />
                                     {SUPPORT_FEATURES.customerEngineer}
                                 </li>
                             </ol>
@@ -160,34 +159,34 @@ const Support: FunctionComponent = () => (
                             </div>
                             <ol className="mt-4 list-group list-group-flush py-2 h-100">
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.communitySupport}
                                     <a href="https://github.com/sourcegraph/sourcegraph/issues">
                                         {SUPPORT_FEATURES.publicIssueTracker}
                                     </a>
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.emailSupport}
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.workingHoursSupport}
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.responseTime24}
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.uptime}
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.implementationSupport}
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     {SUPPORT_FEATURES.sharedSlackChannelContact}{' '}
                                     <Link href="/contact/request-info/?form_submission_source=support-enterprise">
                                         contact us
@@ -195,7 +194,7 @@ const Support: FunctionComponent = () => (
                                     )
                                 </li>
                                 <li className={CLASS_NAMES.featureOffered}>
-                                    <CheckIcon className={CLASS_NAMES.featureChecked} />
+                                    <Icon name="CheckSharp" size={18} className={CLASS_NAMES.featureChecked} />
                                     Dedicated customer engineer assigned to you (available,{' '}
                                     <Link href="/contact/request-info/?form_submission_source=support-enterprise">
                                         contact us

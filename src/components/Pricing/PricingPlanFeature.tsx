@@ -1,9 +1,9 @@
 import { FunctionComponent } from 'react'
 
-import CheckIcon from 'mdi-react/CheckIcon'
-import QuestionMarkCircleOutlineIcon from 'mdi-react/QuestionMarkCircleOutlineIcon'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
+
+import { Icon } from '@components'
 
 import { FeatureInfo } from './interfaces'
 
@@ -27,7 +27,9 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
             }`}
         >
             <div>
-                <CheckIcon
+                <Icon
+                    name="CheckSharp"
+                    size={18}
                     className={`icon-inline ${
                         value ? 'pricing-plan-feature__icon-true' : 'pricing-plan-feature__icon-false'
                     }`}
@@ -43,7 +45,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
                 >
                     {({ ref, ...triggerHandler }) => (
                         <span {...triggerHandler} ref={ref} className="ml-2 pricing-plan-feature__help">
-                            <QuestionMarkCircleOutlineIcon />
+                            <Icon name="HelpOutlineSharp" size={23} />
                         </span>
                     )}
                 </OverlayTrigger>

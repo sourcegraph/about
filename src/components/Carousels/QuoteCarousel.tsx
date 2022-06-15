@@ -1,9 +1,6 @@
 import React, { FunctionComponent, ReactFragment, ReactNode } from 'react'
 
-import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-
-import { BlockquoteWithLogoBottom } from '@components'
+import { BlockquoteWithLogoBottom, Icon } from '@components'
 import { useCarousel } from '@hooks'
 
 import styles from './QuoteCarousel.module.scss'
@@ -34,7 +31,9 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
     return (
         <div className="d-flex flex-lg-row align-items-lg-center flex-column justify-content-center align-items-center text-center h-xl-450 h-lg-450 h-md-450 h-sm-550 h-550 position-relative">
             <div className="d-lg-flex d-none align-items-center btn">
-                <ArrowLeftIcon
+                <Icon
+                    name="ArrowBackSharp"
+                    size={24}
                     className="mr-4"
                     color="#808080"
                     onClick={() => carouselHook.moveCarousel('decrement')}
@@ -64,18 +63,32 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
                 ))}
             </div>
             <div className="d-lg-flex d-none align-items-center btn">
-                <ArrowRightIcon className="ml-4" color="#808080" onClick={() => carouselHook.moveCarousel()} />
+                <Icon
+                    name="ArrowForwardSharp"
+                    size={24}
+                    className="ml-4"
+                    color="#808080"
+                    onClick={() => carouselHook.moveCarousel()}
+                />
             </div>
             <div className={`d-lg-none d-flex justify-content-center w-100 position-absolute ${styles.positionNav}`}>
                 <div className="btn">
-                    <ArrowLeftIcon
+                    <Icon
+                        name="ArrowBackSharp"
+                        size={24}
                         className="mr-4"
                         color="#808080"
                         onClick={() => carouselHook.moveCarousel('decrement')}
                     />
                 </div>
                 <div className="btn">
-                    <ArrowRightIcon className="ml-4" color="#808080" onClick={() => carouselHook.moveCarousel()} />
+                    <Icon
+                        name="ArrowForwardSharp"
+                        size={24}
+                        className="ml-4"
+                        color="#808080"
+                        onClick={() => carouselHook.moveCarousel()}
+                    />
                 </div>
             </div>
         </div>

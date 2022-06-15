@@ -1,9 +1,6 @@
 import { FunctionComponent, ReactNode } from 'react'
 
-import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
-
+import { Icon } from '@components'
 import { useCarousel } from '@hooks'
 
 import { TemplateCodeBlock } from './TemplateCodeBlock'
@@ -40,20 +37,27 @@ export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAd
             </div>
 
             <div className="d-flex justify-content-center">
-                <ArrowLeftIcon
+                <Icon
+                    name="ArrowBackSharp"
+                    size={24}
                     className="mr-4"
                     onClick={() => carouselHook.moveCarousel('decrement')}
                     color={carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                 />
                 <div>
                     {carouselItems.map(item => (
-                        <CircleSmallIcon
-                            color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
+                        <Icon
+                            name="CircleSharp"
+                            size={6}
                             key={item.header}
+                            className="mx-2"
+                            color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
                         />
                     ))}
                 </div>
-                <ArrowRightIcon
+                <Icon
+                    name="ArrowForwardSharp"
+                    size={24}
                     className="ml-4"
                     onClick={() => carouselHook.moveCarousel()}
                     color={carouselHook.isAdvancing ? '#000' : '#D0D0D0'}

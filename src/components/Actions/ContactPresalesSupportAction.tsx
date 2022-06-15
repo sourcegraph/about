@@ -1,7 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import Link from 'next/link'
+
+import { Icon } from '@components'
 
 interface Props {
     className?: string
@@ -11,7 +12,7 @@ export const ContactPresalesSupportAction: FunctionComponent<Props> = ({ classNa
     <Link href="/demo" passHref={true}>
         <a href="#none" className={`d-flex align-items-center text-decoration-none ${className}`}>
             Talk to a product specialist
-            <ArrowRightBoxIcon className="text-primary ml-1" />
+            <Icon name="ArrowForwardSharp" size={18} className="text-primary ml-1" />
         </a>
     </Link>
 )

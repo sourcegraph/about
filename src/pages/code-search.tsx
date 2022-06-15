@@ -1,9 +1,8 @@
 import React, { FunctionComponent } from 'react'
 
-import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import Link from 'next/link'
 
-import { ContentSection, BlockquoteWithBorder, IntegrationsSection, Layout, SelfHostedSection } from '@components'
+import { ContentSection, BlockquoteWithBorder, Icon, IntegrationsSection, Layout, SelfHostedSection } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const CodeSearchPage: FunctionComponent = () => (
@@ -169,7 +168,8 @@ export const CodeSearchPage: FunctionComponent = () => (
                         <Link href="/case-studies/criteo-tackles-big-code" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a>
-                                Criteo Tackles Big Code <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Criteo Tackles Big Code{' '}
+                                <Icon name="ArrowForwardSharp" size={18} className="icon-inline ml-1" />
                             </a>
                         </Link>
                     </div>

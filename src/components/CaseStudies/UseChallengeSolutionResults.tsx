@@ -1,10 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import ChartBarIcon from 'mdi-react/ChartBarIcon'
-import CheckCircleOutlineIcon from 'mdi-react/CheckCircleOutlineIcon'
-import ClipboardTextOutlineIcon from 'mdi-react/ClipboardTextOutlineIcon'
-import FlagOutlineIcon from 'mdi-react/FlagOutlineIcon'
 import Link from 'next/link'
+
+import { Icon } from '@components'
 
 interface TextLink {
     text: string
@@ -34,7 +32,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
             <section className="max-w-xl-550 ml-xl-auto">
                 <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
                     <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <ClipboardTextOutlineIcon size={40} className="p-1 text-blurple" />
+                        <Icon name="AssignmentSharp" size={40} className="p-1 text-blurple" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Use case</h5>
@@ -47,7 +45,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 </div>
                 <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
                     <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <FlagOutlineIcon size={40} className="p-1 text-blurple" />
+                        <Icon name="FlagSharp" size={40} className="p-1 text-blurple" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Challenge</h5>
@@ -60,7 +58,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 </div>
                 <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
                     <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <CheckCircleOutlineIcon size={40} className="p-1 text-blurple" />
+                        <Icon name="CheckCircleSharp" size={40} className="p-1 text-blurple" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Solution</h5>
@@ -77,7 +75,7 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
             <section className="max-w-xl-550">
                 <div className="mb-5 ml-3 ml-lg-0 d-flex flex-column flex-md-row">
                     <div className="d-flex bg-white align-self-center align-self-md-start col-1 col-md-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
-                        <ChartBarIcon size={40} className="p-1 text-blurple" />
+                        <Icon name="BarChartSharp" size={40} className="p-1 text-blurple" />
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Results</h5>

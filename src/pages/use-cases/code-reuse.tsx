@@ -109,13 +109,13 @@ const items = [
 
 const threeUpTextItems = [
     {
-        icon: <Icon name="CodeSharp" size={48} />,
+        icon: <Icon name="CodeSharp" size={48} variant="boxed" className="mb-4" />,
         subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Quickly find trustworthy code to reuse</h4>,
         description:
             'Search your entire codebase to discover existing code to reuse. Gather crucial context, like who wrote the code, when, and where it’s used.',
     },
     {
-        icon: <Icon name="DriveFolderUploadSharp" size={48} />,
+        icon: <Icon name="DriveFolderUploadSharp" size={48} variant="boxed" className="mb-4" />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Safely maintain and improve shared libraries</h4>
         ),
@@ -123,7 +123,7 @@ const threeUpTextItems = [
             'Automate PRs to push global updates. Get alerts when out-of-date libraries or deprecated functions are used, and eliminate duplicative code.',
     },
     {
-        icon: <Icon name="GroupSharp" size={48} />,
+        icon: <Icon name="GroupSharp" size={48} variant="boxed" className="mb-4" />,
         subtitle: (
             <h4 className="pb-3 mx-auto max-w-300 font-weight-bold">Understand your team’s code reuse efforts</h4>
         ),

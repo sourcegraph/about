@@ -1,12 +1,8 @@
 import { FunctionComponent, ReactNode } from 'react'
 
 import classNames from 'classnames'
-import ArrowDownIcon from 'mdi-react/ArrowDownIcon'
-import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
-import ArrowUpIcon from 'mdi-react/ArrowUpIcon'
-import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
+import { Icon } from '@components'
 import { useCarousel } from '@hooks'
 
 interface CarouselProps {
@@ -88,8 +84,10 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             : 'carousel-nav ml-lg-7 col-lg-4 ml-md-5'
                     }
                 >
-                    <ArrowUpIcon
+                    <Icon
+                        name="ArrowUpwardSharp"
                         className="ml-lg-6 mb-4 d-lg-flex d-md-flex d-none"
+                        size={24}
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
@@ -110,8 +108,10 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             </li>
                         ))}
                     </ul>
-                    <ArrowDownIcon
+                    <Icon
+                        name="ArrowDownwardSharp"
                         className="ml-lg-6 mt-4 d-lg-flex d-md-flex d-none"
+                        size={24}
                         onClick={() => carouselHook.moveCarousel()}
                         color={
                             carouselHook.autoAdvance && carouselHook.isAdvancing
@@ -147,21 +147,28 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 </div>
 
                 <div className="carousel-nav-mobile mx-auto my-4">
-                    <ArrowLeftIcon
+                    <Icon
+                        name="ArrowBackSharp"
                         className="mr-4"
+                        size={24}
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                     <div>
                         {carouselItems.map(item => (
-                            <CircleSmallIcon
-                                color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
+                            <Icon
+                                name="CircleSharp"
+                                size={6}
                                 key={item.buttonLabel}
+                                className="mx-2"
+                                color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
                             />
                         ))}
                     </div>
-                    <ArrowRightIcon
+                    <Icon
+                        name="ArrowForwardSharp"
                         className="ml-4"
+                        size={24}
                         onClick={() => carouselHook.moveCarousel()}
                         color={
                             carouselHook.autoAdvance && carouselHook.isAdvancing

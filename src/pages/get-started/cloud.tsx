@@ -1,9 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import Link from 'next/link'
 
-import { Layout, BackButton } from '@components'
+import { BackButton, Icon, Layout } from '@components'
 import { useQueryString } from '@hooks'
 
 import { BestForTitle } from '.'
@@ -62,7 +61,7 @@ export const CloudPage: FunctionComponent = () => {
                                 <h3 className="mb-3">Search open source code</h3>
                                 <p className="mb-5">No account required.</p>
                                 <a href="https://sourcegraph.com/search" className="btn btn-primary">
-                                    Start searching now <ArrowRightIcon />
+                                    Start searching now <Icon name="ArrowForwardSharp" size={21} />
                                 </a>
                             </div>
 

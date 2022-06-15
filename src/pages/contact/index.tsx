@@ -1,13 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import EmailIcon from 'mdi-react/EmailIcon'
-import GithubIcon from 'mdi-react/GithubIcon'
-import LinkedinIcon from 'mdi-react/LinkedinIcon'
-import MapMarkerIcon from 'mdi-react/MapMarkerIcon'
-import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
-import { Layout, ContentSection, ContentPage } from '@components'
+import { ContentSection, ContentPage, Icon, Layout } from '@components'
 
 const title = 'Sourcegraph - Contact Sourcegraph'
 const description = 'Contact a real human being on our team.'
@@ -40,7 +35,7 @@ const ContactHome: FunctionComponent = () => (
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <GithubIcon /> File a public issue
+                                    <Icon name="GitHub" size={21} className="mr-1" /> File a public issue
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -48,7 +43,7 @@ const ContactHome: FunctionComponent = () => (
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <EmailIcon /> Email support@sourcegraph.com
+                                    <Icon name="EmailSharp" size={21} className="mr-1" /> Email support@sourcegraph.com
                                 </a>
                             </div>
                         </div>
@@ -89,7 +84,7 @@ const ContactHome: FunctionComponent = () => (
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <EmailIcon /> hi@sourcegraph.com
+                                    <Icon name="EmailSharp" size={21} className="mr-1" /> hi@sourcegraph.com
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -97,7 +92,7 @@ const ContactHome: FunctionComponent = () => (
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <TwitterIcon /> @sourcegraph
+                                    <Icon name="Twitter" size={21} className="mr-1" /> @sourcegraph
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -105,7 +100,7 @@ const ContactHome: FunctionComponent = () => (
                                     href="https://github.com/sourcegraph"
                                     rel="noreferrer"
                                 >
-                                    <GithubIcon /> github.com/sourcegraph
+                                    <Icon name="GitHub" size={21} className="mr-1" /> github.com/sourcegraph
                                 </a>
                                 <a
                                     className="list-group-item list-group-item-action"
@@ -113,10 +108,10 @@ const ContactHome: FunctionComponent = () => (
                                     href="https://www.linkedin.com/company/sourcegraph"
                                     rel="noreferrer"
                                 >
-                                    <LinkedinIcon /> Sourcegraph on LinkedIn
+                                    <Icon name="LinkedIn" size={21} className="mr-1" /> Sourcegraph on LinkedIn
                                 </a>
                                 <div className="list-group-item d-flex p-relative">
-                                    <MapMarkerIcon className="mr-1" />
+                                    <Icon name="RoomSharp" size={21} className="mr-1" />
                                     <div>
                                         Sourcegraph
                                         <br />

@@ -1,9 +1,8 @@
 import { FunctionComponent } from 'react'
 
-import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
-import { Layout, WhitePaperPage, ContentSection, BlockquoteWithBorder, InContentImage } from '@components'
+import { BlockquoteWithBorder, ContentSection, Icon, InContentImage, Layout, WhitePaperPage } from '@components'
 
 export const RemoteWorkEasier: FunctionComponent = () => (
     <Layout
@@ -209,7 +208,8 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                 <div className="row justify-content-md-center d-flex align-items-center">
                     <div className="col-md-3 text-center">
                         <a href="https://twitter.com/sourcegraph" target="_blank" rel="noreferrer">
-                            <TwitterIcon
+                            <Icon
+                                name="Twitter"
                                 className="mb-5 mb-md-2 bg-violet-mist text-vivid-violet rounded p-2"
                                 size={50}
                             />

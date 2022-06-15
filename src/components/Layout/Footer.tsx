@@ -1,12 +1,10 @@
 import { FunctionComponent } from 'react'
 
-import GithubIcon from 'mdi-react/GithubIcon'
-import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import SpotifyIcon from 'mdi-react/SpotifyIcon'
 import TwitchIcon from 'mdi-react/TwitchIcon'
-import TwitterIcon from 'mdi-react/TwitterIcon'
-import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import Link from 'next/link'
+
+import { Icon } from '@components'
 
 interface Props {
     minimal?: boolean
@@ -107,7 +105,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                         rel="nofollow noreferrer"
                                         aria-label="GitHub"
                                     >
-                                        <GithubIcon />
+                                        <Icon name="GitHub" size={21} />
                                     </a>
                                 </li>
                                 <li className="nav-item">
@@ -117,7 +115,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                         rel="nofollow noreferrer"
                                         aria-label="Twitter"
                                     >
-                                        <TwitterIcon />
+                                        <Icon name="Twitter" size={21} />
                                     </a>
                                 </li>
                                 <li className="nav-item">
@@ -127,7 +125,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                         rel="nofollow noreferrer"
                                         aria-label="LinkedIn"
                                     >
-                                        <LinkedinIcon />
+                                        <Icon name="LinkedIn" size={21} />
                                     </a>
                                 </li>
                                 <li className="nav-item">
@@ -137,7 +135,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                         rel="nofollow noreferrer"
                                         aria-label="YouTube"
                                     >
-                                        <YouTubeIcon />
+                                        <Icon name="YouTube" size={21} />
                                     </a>
                                 </li>
                                 <li className="nav-item">
