@@ -8,7 +8,6 @@ export const CaseStudy: FunctionComponent = () => (
             title: 'Criteo uses Sourcegraph universal code search to tackle Big Code',
             description:
                 'Sourcegraph provides Criteo the ability to cross boundaries of different codebases and languages authored by different people with different tools.',
-            image: '/external-logos/criteo-logo.svg',
         }}
         className="navbar-dark bg-black"
     >
