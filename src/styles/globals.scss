@@ -212,7 +212,6 @@ table {
 @import 'components/product/IntegratesWithSection';
 @import 'components/product/UseCasesTable';
 @import 'components/Cookiebot';
-@import 'components/CustomCarousel';
 @import 'components/Events';
 @import 'components/SelfHostedSection';
 @import 'components/Header';
@@ -340,4 +339,8 @@ $positions: ('top', 'right', 'bottom', 'left');
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }

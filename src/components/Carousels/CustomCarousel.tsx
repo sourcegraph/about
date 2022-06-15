@@ -7,7 +7,8 @@ import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 import ArrowUpIcon from 'mdi-react/ArrowUpIcon'
 import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 
-import { useCarousel } from '@hooks'
+import { breakpoints } from '@data'
+import { useCarousel, useWindowWidth } from '@hooks'
 
 interface CarouselProps {
     items: CarouselItem[]
@@ -35,9 +36,12 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
     const currentCarousel = carouselHook.carouselItems as CarouselProps
 
+    const windowWidth = useWindowWidth()
+    const isMdOrDown = windowWidth < breakpoints.lg
+
     return (
-        <div className="custom-carousel">
-            {title && <h2 className="carousel-title text-md-center font-weight-bold mt-lg-3 pb-4">{title}</h2>}
+        <div>
+            {title && <h2 className={classNames('text-md-center font-weight-bold mt-lg-3 pb-4', isMdOrDown && 'uppercase text-base')}>{title}</h2>}
             <div
                 className={
                    classNames(
@@ -50,7 +54,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 }
             >
                 {props.showHeadlinesOnMobile && (
-                    <ul className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
+                    <div className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
                         {carouselItems.map((item, index) => (
                             <h2
                                 className={classNames('d-none', item === carouselHook.carouselItems.currentItem && 'd-block display-5 font-weight-bold')}
@@ -62,17 +66,17 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                                 {item.buttonLabel}
                             </h2>
                         ))}
-                    </ul>
+                    </div>
                 )}
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'carousel-nav col-md-2 m-0 px-0 my-lg-3 col-lg-5 d-flex flex-column'
-                            : 'carousel-nav ml-lg-7 col-lg-4 ml-md-5'
+                            ? 'd-lg-flex flex-column d-none col-md-2 m-0 px-0 my-lg-3 col-lg-5'
+                            : 'd-lg-flex d-none ml-lg-7 col-lg-4 ml-md-5'
                     }
                 >
                     <ArrowUpIcon
-                        className="ml-lg-5 mb-4 d-lg-flex d-md-flex d-none"
+                        className="ml-lg-5 mb-4 cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
@@ -90,7 +94,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         ))}
                     </div>
                     <ArrowDownIcon
-                        className="ml-lg-5 mt-4 d-lg-flex d-md-flex d-none"
+                        className="ml-lg-5 mt-4 cursor-pointer"
                         onClick={() => carouselHook.moveCarousel()}
                         color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
@@ -104,16 +108,16 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             onFocus={() => carouselHook.moveCarousel(index)}
                         >
                             {!autoAdvance && (
-                                <h1 className={autoAdvance ? 'mb-lg-4' : 'display-2 mb-lg-4'}>{item.buttonLabel}</h1>
+                                <h1 className={classNames('font-weight-bold', autoAdvance ? 'mb-lg-4' : 'display-2 mb-lg-4')}>{item.buttonLabel}</h1>
                             )}
                             <div>{item.text}</div>
                         </div>
                     ))}
                 </div>
 
-                <div className="carousel-nav-mobile mx-auto my-4">
+                <div className="d-lg-none d-flex mx-auto my-4">
                     <ArrowLeftIcon
-                        className="mr-4"
+                        className="mr-4 cursor-pointer"
                         onClick={() => carouselHook.moveCarousel('decrement')}
                         color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
@@ -122,11 +126,12 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             <CircleSmallIcon
                                 color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
                                 key={item.buttonLabel}
+                                className="cursor-pointer"
                             />
                         ))}
                     </div>
                     <ArrowRightIcon
-                        className="ml-4"
+                        className="ml-4 cursor-pointer"
                         onClick={() => carouselHook.moveCarousel()}
                         color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
