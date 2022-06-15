@@ -127,8 +127,8 @@ export const AbcsEbook: FunctionComponent = () => (
                     <h3 className="text-center">About Sourcegraph</h3>
                     <p>
                         Sourcegraph empowers all developers to explore, navigate and better understand all code, faster,
-                        with <Link href="/code-search">Code Search</Link>. Sourcegraph's mission is
-                        to make it easier and faster for developers to work on solving problems.
+                        with <Link href="/code-search">Code Search</Link>. Sourcegraph's mission is to make it easier
+                        and faster for developers to work on solving problems.
                     </p>
                     <p>
                         To learn more, get our ebook:{' '}
