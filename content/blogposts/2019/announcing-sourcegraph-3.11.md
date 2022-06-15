@@ -6,7 +6,7 @@ authors:
 publishDate: 2019-12-20T10:00-07:00
 tags: [blog]
 slug: sourcegraph-3.11
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: "Sourcegraph 3.11: Structural search, removed management console, language statistics, and NPM credentials campaign"
 ---

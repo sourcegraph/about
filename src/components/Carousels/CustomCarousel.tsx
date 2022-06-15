@@ -50,7 +50,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 }
             >
                 {props.showHeadlinesOnMobile && (
-                    <div className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
+                    <ul className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
                         {carouselItems.map((item, index) => (
                             <h2
                                 className={classNames('d-none', item === carouselHook.carouselItems.currentItem && 'd-block display-5 font-weight-bold')}
@@ -62,7 +62,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                                 {item.buttonLabel}
                             </h2>
                         ))}
-                    </div>
+                    </ul>
                 )}
                 <div
                     className={

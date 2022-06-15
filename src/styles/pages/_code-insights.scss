@@ -75,7 +75,9 @@
 
     /* Bootstrap overrides */
     .tab-header {
-        background-color: transparent !important;
+        background-color: transparent;
+        color: $blurple;
+        font-weight: 600 !important;
     }
 
     .btn-link,

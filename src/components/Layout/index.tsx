@@ -14,6 +14,7 @@ interface LayoutProps {
         externalTitle?: string
         externalDescription?: string
         image?: string
+        videoID?: string
         icon?: string
         canonical?: string
     }
@@ -31,10 +32,11 @@ interface LayoutProps {
 
 export const Layout: FunctionComponent<LayoutProps> = props => {
     const router = useRouter()
-    const { pathname } = router
+    const { pathname, asPath } = router
 
     const isHome = pathname === '/'
     const isBlog = pathname === '/blog'
+    const isArticle = ['/blog/', '/podcast/', '/release/'].includes(pathname.replace('[...slug]', ''))
     const isProductPage = pathname.startsWith('/product/')
     const isCaseStudyPage = pathname.startsWith('/case-studies/') && pathname.split('/')[2] !== ''
 
@@ -44,8 +46,19 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
         description:
             props.meta?.description ||
             'Find and fix things across all of your code with Sourcegraph universal code search.',
-        image: props.meta?.image || 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png',
+        image: props.meta?.image || 'https://about.sourcegraph.com/meta/sourcegraph-social.png',
         icon: props.meta?.icon || 'https://about.sourcegraph.com/favicon.png',
+    }
+
+    const videoMeta = {
+        thumbnail: '',
+        embedURL: '',
+        watchURL: '',
+    }
+    if (meta.videoID) {
+        videoMeta.thumbnail = `https://img.youtube.com/vi/${meta.videoID}/maxresdefault.jpg`
+        videoMeta.embedURL = `https://www.youtube.com/embed/${meta.videoID}`
+        videoMeta.watchURL = `https://www.youtube.com/v/${meta.videoID}`
     }
 
     return (
@@ -56,16 +69,38 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
                 <meta name="twitter:title" content={meta.title} />
                 <meta name="twitter:site" content="@sourcegraph" />
-                <meta name="twitter:image" content={meta.image} />
-                <meta name="twitter:card" content="summary" />
                 <meta name="twitter:description" content={meta.description} />
 
-                <meta property="og:url" content="https://about.sourcegraph.com" />
-                <meta property="og:type" content="website" />
+                {meta.videoID ? (
+                    <>
+                        <meta name="twitter:player" content={videoMeta.embedURL} />
+                        <meta name="twitter:player:width" content="560" />
+                        <meta name="twitter:player:height" content="315" />
+                        <meta name="twitter:card" content="player" />
+                        <meta name="twitter:image" content={videoMeta.thumbnail} />
+
+                        <meta property="og:video" content={videoMeta.watchURL} />
+                        <meta property="og:video:url" content={videoMeta.watchURL} />
+                        <meta property="og:video:secure_url" content={videoMeta.watchURL} />
+                        <meta property="og:video:type" content="video/mp4" />
+                        <meta property="og:video:width" content="560" />
+                        <meta property="og:video:height" content="315" />
+                        <meta property="og:image" content={videoMeta.thumbnail} />
+                        <meta property="og:image:secure_url" content={videoMeta.thumbnail} />
+                    </>
+                ) : (
+                    <>
+                        <meta name="twitter:image" content={meta.image} />
+                        <meta name="twitter:card" content="summary_large_image" />
+                        <meta property="og:image" content={meta.image} />
+                        <meta property="og:image:secure_url" content={meta.image} />
+                    </>
+                )}
+
+                <meta property="og:url" content={`https://about.sourcegraph.com${asPath}`} />
                 <meta property="og:title" content={meta.title} />
-                <meta property="og:image" content={meta.image} />
-                <meta property="og:image:secure_url" content={meta.image} />
                 <meta property="og:description" content={meta.description} />
+                <meta property="og:type" content={isArticle ? 'article' : 'website'} />
 
                 <link rel="icon" type="image/png" href={meta.icon} />
 

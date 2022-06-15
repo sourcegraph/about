@@ -218,23 +218,21 @@ const UseCasePage: FunctionComponent = () => (
         hero={
             <>
                 <div className={styles.pageHeader}>
-                    <div className="container pb-4">
+                    <div className="container">
                         <div className="row">
                             <div className="col-lg-7 mb-8 mt-7">
                                 <BackButtonBold href="/use-cases" text="USE CASES" />
-                                <h1 className="display-2 font-weight-bold mb-4">
-                                    Find and fix security vulnerabilities
-                                </h1>
+                                <h1 className="display-2 font-weight-bold mb-4">Improve code security</h1>
                                 <div className="display-4 font-weight-normal mb-5">
-                                    Search across all your repositories to find and resolve vulnerabilities in minutes,
-                                    not days.
+                                    Find, fix, and track vulnerable code across your entire codebase in minutes, not
+                                    days
                                 </div>
-                                <div className="max-w-400 flex-column flex-md-row d-md-flex align-items-center">
+                                <div className="flex-column flex-md-row d-md-flex text-center">
                                     <div className="mb-3 mb-md-0">
                                         <Link href="/demo" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
-                                                className="btn btn-primary w-100"
+                                                className="btn btn-primary w-100 max-w-350"
                                                 title="Request a Demo."
                                                 data-button-style={buttonStyle.primary}
                                                 data-button-location={buttonLocation.hero}
@@ -248,7 +246,7 @@ const UseCasePage: FunctionComponent = () => (
                                         <Link href="/get-started" passHref={true}>
                                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
-                                                className="btn btn-outline-primary w-100"
+                                                className="btn btn-outline-primary w-100 max-w-350"
                                                 title="Try Sourcegraph."
                                                 data-button-style={buttonStyle.outline}
                                                 data-button-location={buttonLocation.hero}
@@ -338,15 +336,18 @@ const UseCasePage: FunctionComponent = () => (
         <div className="bg-light-gray-3 py-7">
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
-                    <div className="mb-5 d-flex flex-column">
+                    <div className="mb-5 d-flex flex-column text-start text-md-center mx-auto align-items-lg-center">
                         <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
-                        <p>Find, fix, and track vulnerable code quickly across your entire codebase.</p>
+                        <p className="max-w-450">
+                            Find, fix, and track vulnerable code quickly across your entire codebase to improve code
+                            security.
+                        </p>
                     </div>
-                    <div className="d-flex flex-column">
+                    <div className="text-center col-12 px-0">
                         <Link href="/demo" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
-                                className="btn btn-primary"
+                                className="btn btn-primary max-w-350 w-100"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}

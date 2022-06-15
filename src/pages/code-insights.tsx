@@ -333,9 +333,6 @@ const CodeInsightsPage: FunctionComponent = () => {
         >
             <ContentSection className="py-lg-8 py-7">
                 <div className="row justify-content-between">
-                    <div className="col-lg-7 ml-lg-6 mb-md-4 d-flex align-items-center video-container">
-                        <Video filePath="code_insights/code-insights-720" />
-                    </div>
                     <div className="col-lg-4 pl-lg-0">
                         <h2 className="mb-3 font-weight-bold">
                             Finally, useful engineering metrics{' '}
@@ -351,16 +348,10 @@ const CodeInsightsPage: FunctionComponent = () => {
                             and accuracy of Sourcegraph Code Search.
                         </p>
                     </div>
+                    <div className="col-lg-7 ml-lg-6 mb-md-4 d-flex align-items-center video-container">
+                        <Video filePath="code_insights/code-insights-720" />
+                    </div>
                 </div>
-            </ContentSection>
-
-            <ContentSection className="pb-lg-7 pb-7">
-                <CustomCarousel
-                    items={items}
-                    autoAdvance={true}
-                    showHeadlinesOnMobile={true}
-                    title="How engineering teams use Code Insights"
-                />
             </ContentSection>
 
             <div className="bg-gradient-venus-radial py-4">
@@ -390,61 +381,68 @@ const CodeInsightsPage: FunctionComponent = () => {
                 </ContentSection>
             </div>
 
-            <div className="bg-light-gray-3">
-                <ContentSection className="py-7">
-                    <div className="d-flex flex-wrap">
-                        <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">
-                            Engineering leadership with superpowers
-                        </h2>
-                        <p className="icon-subheader w-100 text-center">
-                            Code Insights provides reliable real-time reporting directly from the codebase, making
-                            engineering leaders and their teams more effective.
-                        </p>
-                        <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
-                            <div className="d-flex py-lg-5 py-3">
-                                <div className="mr-4">
-                                    <BullsEyeArrowIcon className="icon text-blurple" size={70} />
-                                </div>
-                                <div className="d-flex flex-column">
-                                    <div className="display-lg-3 font-weight-bold">Set goals</div>
-                                    <p className="icon-paragraph">Measure goals and progress in your codebase</p>
-                                </div>
+            <ContentSection className="py-7">
+                <div className="d-flex flex-wrap">
+                    <h2 className="display-3 font-weight-bold mb-3 w-100 text-center">
+                        Engineering leadership with superpowers
+                    </h2>
+                    <p className="icon-subheader w-100 text-center">
+                        Code Insights provides reliable real-time reporting directly from the codebase, making
+                        engineering leaders and their teams more effective.
+                    </p>
+                    <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
+                        <div className="d-flex py-lg-5 py-3">
+                            <div className="mr-4">
+                                <BullsEyeArrowIcon className="icon text-blurple" size={70} />
                             </div>
-                            <div className="d-flex py-lg-5 py-3">
-                                <div className="icon mr-4">
-                                    <LighteningBoltOutlineIcon className="icon text-blurple" size={70} />
-                                </div>
-                                <div className="d-flex flex-column">
-                                    <div className="display-lg-3 font-weight-bold">Plan proactively</div>
-                                    <p className="icon-paragraph">
-                                        Stay on top of engineering initiatives and catch issues before they escalate
-                                    </p>
-                                </div>
+                            <div className="d-flex flex-column">
+                                <div className="display-lg-3 font-weight-bold">Set goals</div>
+                                <p className="icon-paragraph">Measure goals and progress in your codebase</p>
                             </div>
                         </div>
-                        <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
-                            <div className="d-flex py-lg-5 py-3">
-                                <div className="mr-4">
-                                    <TrendingUpIcon className="icon text-blurple" size={70} />
-                                </div>
-                                <div className="d-flex flex-column">
-                                    <div className="display-lg-3 font-weight-bold">Track ownership & trends</div>
-                                    <p className="icon-paragraph">Tie trends and metrics to owners on the teams</p>
-                                </div>
+                        <div className="d-flex py-lg-5 py-3">
+                            <div className="icon mr-4">
+                                <LighteningBoltOutlineIcon className="icon text-blurple" size={70} />
                             </div>
-                            <div className="d-flex py-lg-5 py-3">
-                                <div className="mr-4">
-                                    <RocketLaunchOutlineIcon className="icon text-blurple" size={70} />
-                                </div>
-                                <div className="d-flex flex-column">
-                                    <div className="display-lg-3 font-weight-bold">Celebrate progress</div>
-                                    <p className="icon-paragraph">Visualize the momentum and motivate your teammates</p>
-                                </div>
+                            <div className="d-flex flex-column">
+                                <div className="display-lg-3 font-weight-bold">Plan proactively</div>
+                                <p className="icon-paragraph">
+                                    Stay on top of engineering initiatives and catch issues before they escalate
+                                </p>
                             </div>
                         </div>
                     </div>
-                </ContentSection>
-            </div>
+                    <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
+                        <div className="d-flex py-lg-5 py-3">
+                            <div className="mr-4">
+                                <TrendingUpIcon className="icon text-blurple" size={70} />
+                            </div>
+                            <div className="d-flex flex-column">
+                                <div className="display-lg-3 font-weight-bold">Track ownership & trends</div>
+                                <p className="icon-paragraph">Tie trends and metrics to owners on the teams</p>
+                            </div>
+                        </div>
+                        <div className="d-flex py-lg-5 py-3">
+                            <div className="mr-4">
+                                <RocketLaunchOutlineIcon className="icon text-blurple" size={70} />
+                            </div>
+                            <div className="d-flex flex-column">
+                                <div className="display-lg-3 font-weight-bold">Celebrate progress</div>
+                                <p className="icon-paragraph">Visualize the momentum and motivate your teammates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ContentSection>
+
+            <ContentSection className="bg-light-gray-3">
+                <CustomCarousel
+                    items={items}
+                    autoAdvance={true}
+                    showHeadlinesOnMobile={true}
+                    title="How engineering teams use Code Insights"
+                />
+            </ContentSection>
 
             {/* Demo */}
             <ContentSection className="py-7">

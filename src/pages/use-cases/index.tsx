@@ -11,7 +11,7 @@ import styles from './useCases.module.scss'
 const features: { id: string; description: string }[] = [
     {
         id: 'code-security',
-        description: 'Find and fix security vulnerabilities',
+        description: 'Improve code security',
     },
     {
         id: 'onboarding',
@@ -36,7 +36,7 @@ const UseCases: React.FunctionComponent = () => (
         meta={{
             title: 'Use Cases | Sourcegraph',
             description:
-                'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
+                'See how the most productive dev teams use Sourcegraph to build software you rely on. From improving code security to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
         }}
         heroAndHeaderClassName={styles.landingHeader}
         hero={
@@ -44,14 +44,14 @@ const UseCases: React.FunctionComponent = () => (
                 <div className="row">
                     <div className="col-lg-7 mb-lg-6 mt-6">
                         <h1 className="display-2 font-weight-bold mb-0">Our customers move faster with Sourcegraph</h1>
-                        <p className="home__semiwide-paragraph my-5 display-4">
-                            Companies of all sizes and in all industries use Sourcegraph universal code search to solve
-                            big code problems.
+                        <p className="my-5 display-4">
+                            Companies of all sizes and in all industries use Sourcegraph's code intelligence platform to
+                            understand, fix, and automate across their entire codebase.
                         </p>
                     </div>
 
                     <div className="col-lg-5 mt-lg-6 pt-4 mb-6">
-                        <h2 className={`${styles.seeHow} font-weight-normal`}>See how customers use Sourcegraph to</h2>
+                        <h4 className="font-weight-bold pb-2">See how customers use Sourcegraph to</h4>
 
                         <div className="list-group">
                             {features.map((feature: { id: string; description: string }) => (
@@ -84,7 +84,7 @@ const UseCases: React.FunctionComponent = () => (
             <ContentSection id="code-security" className="pt-8">
                 <div className="row justify-content-center">
                     <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Find and fix security vulnerabilities</h2>
+                        <h2 className="display-3 font-weight-bold mb-3">Improve code security</h2>
                         <h5>Find, fix, and track vulnerable code quickly across your entire codebase.</h5>
                         <p>
                             You can't fix what you can't find. Remediate vulnerabilities with confidence knowing you

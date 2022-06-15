@@ -8,7 +8,7 @@ tags: [
   blog
 ]
 slug: sourcegraph-3.12
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 description: "Sourcegraph 3.12: Match case toggle, draft campaigns, and exciting experimental features"
 ---

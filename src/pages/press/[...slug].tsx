@@ -17,14 +17,15 @@ const CONTENT_PARENT_DIRECTORY = './content/'
 const PressReleasePage: NextPage<PageProps> = ({ post, content }) => {
     const title = post.frontmatter.title
     const description = post.frontmatter.description ? post.frontmatter.description : post.excerpt
-    const image =
-        post.frontmatter.socialImage ?? 'https://about.sourcegraph.com/meta/sourcegraph-social-image-share-02.png'
+    const image = post.frontmatter.socialImage
+    const videoID = post.frontmatter.videoID
     const canonical = post.frontmatter.canonical
     const externalTitle = post.frontmatter.externalTitle
     const externalDescription = post.frontmatter.externalDescription
     const meta = {
         title,
         image,
+        videoID,
         description,
         externalTitle,
         externalDescription,
@@ -46,7 +47,7 @@ const PressReleasePage: NextPage<PageProps> = ({ post, content }) => {
                             post={post}
                             content={content}
                             url={urlToPost(post)}
-                            className="post-template__post"
+                            className="post-template__post blog-post overflow-hidden pb-2"
                             headerClassName="card-header bg-white border-bottom-0 text-center pt-5"
                             titleClassName=""
                             titleLinkClassName="post-template__post-title-link"

@@ -133,4 +133,14 @@
 [[redirects]]
   from = "/use-cases/vulnerabilities"
   to = "/use-cases/code-security"
+
+[[redirects]]
+  from = "/press-release/*"
+  to = "/press/:splat"
+
+# Due to our collocated directory for the homepage
+[[redirects]]
+  from = "/home/*"
+  to = "/"
+  force = true
 # ========== END INDIVIDUAL REDIRECTS ==========

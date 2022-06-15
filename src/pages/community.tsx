@@ -21,7 +21,7 @@ export const Community: FunctionComponent = () => (
                     <div className="col-lg-6">
                         <div className="text-uppercase">Join us</div>
                         <h1 className="display-2 font-weight-bold mb-0">Welcome to the Sourcegraph Community</h1>
-                        <p className="home__semiwide-paragraph my-5 display-5">
+                        <p className="my-5 display-5">
                             Seek guidance. Share best practices. Ask questions. The Sourcegraph Community is your new
                             platform to connect with one of the world's most talented developer communities. Here, we
                             encourage everyone to learn from each other and share everything they know. Because when we
@@ -32,10 +32,10 @@ export const Community: FunctionComponent = () => (
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.hero}
                             data-button-type="cta"
-                            href="https://srcgr.ph/wp-join-community-space"
-                            title="Join our Slack"
+                            href="https://discord.gg/rDPqBejz93"
+                            title="Join our Discord"
                         >
-                            Join our Slack
+                            Join our Discord
                         </a>
                     </div>
                     <div className="col-lg-6">
@@ -76,51 +76,10 @@ export const Community: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="bg-gradient-green-blue py-5">
-            <ContentSection className="py-5">
-                <div className="row">
-                    <div className="col-lg-6">
-                        <h2 className="display-3 font-weight-bold mb-3">Sourcegraph Champions Program</h2>
-                        <p>
-                            In the spirit of collaboration, we created the Sourcegraph Champions Program to serve the
-                            developer community, create a friendly networking space and share knowledge among each
-                            other.
-                        </p>
-                        <p>
-                            We believe that if we create the right environment and provide equal resources for all,
-                            everyone can learn how to code. This is our mission. And if you share the same idea you are
-                            a "champion" in our eyes.
-                        </p>
-                        <p>
-                            We can't wait to meet you! And send you really cool custom swag ;)
-                            <br />
-                            <a
-                                className="btn btn-primary mt-3"
-                                href="https://handbook.sourcegraph.com/marketing/becoming_a_sourcegraph_champion"
-                            >
-                                Become a Sourcegraph Champion
-                            </a>
-                        </p>
-                        <p>
-                            Or if you know someone that should be a Sourcegraph Champion, please{' '}
-                            <a href="https://forms.gle/QP6BBCpN1TwQfHzo6">nominate them</a>.
-                        </p>
-                    </div>
-                    <div className="col-lg-6">
-                        <img
-                            className="w-100 mt-6"
-                            src="/community/SG_Robots_Trophy.png"
-                            alt="Become a Sourcegraph Champion!"
-                        />
-                    </div>
-                </div>
-            </ContentSection>
-        </div>
-
         <ContentSection className="py-6">
             <div className="row">
                 <div className="col-lg-6">
-                    <h2 className="display-3 font-weight-bold mt-5 mb-3">DM us on Slack. We're here.</h2>
+                    <h2 className="display-3 font-weight-bold mt-5 mb-3">DM us on Discord. We're here.</h2>
                     What you seek is seeking you — come, chat and collaborate with inspiring engineers like you.
                     <ul>
                         <li className="mt-2">Ask questions - any questions: what is the best sit-stand desk?</li>
@@ -129,16 +88,12 @@ export const Community: FunctionComponent = () => (
                         </li>
                         <li className="mt-2">Share the road less traveled so that everyone can learn</li>
                     </ul>
-                    <a
-                        className="btn btn-primary"
-                        href="https://srcgr.ph/wp-join-community-space"
-                        title="Join us on Slack"
-                    >
-                        Join us on Slack
+                    <a className="btn btn-primary" href="https://discord.gg/rDPqBejz93" title="Join us on Discord">
+                        Join us on Discord
                     </a>
                 </div>
                 <div className="col-lg-5">
-                    <img className="w-100 mt-6" src="/community/SG_DM_us_on_slack.png" alt="DM us on Slack!" />
+                    <img className="w-100 mt-6" src="/community/SG_DM_us_on_slack.png" alt="DM us on Discord!" />
                 </div>
             </div>
         </ContentSection>
@@ -155,22 +110,7 @@ export const Community: FunctionComponent = () => (
                             </p>
                             <ul>
                                 <li>
-                                    <a href="https://events.linuxfoundation.org/open-source-summit-north-america/register/">
-                                        Open Source Summit
-                                    </a>{' '}
-                                    - 9/27 - 9/30
-                                </li>
-                                <li>
-                                    <a href="https://reactadvanced.com/">React Advanced London</a> - 10/22
-                                </li>
-                                <li>
-                                    <a href="https://africa.jsworldconference.com/">JSWorld Africa</a> - 10/30
-                                </li>
-                                <li>
-                                    <a href="https://festival.oscafrica.org/">Open Source Festival</a> - 11/11 - 11/13
-                                </li>
-                                <li>
-                                    <a href="https://www.gophercon.com/">GopherCon</a> - 12/5 - 12/8
+                                    <a href="https://www.gophercon.com/">GopherCon 2022</a> - 10/6 - 10/8
                                 </li>
                             </ul>
                         </div>
@@ -178,40 +118,51 @@ export const Community: FunctionComponent = () => (
                 </Tab>
                 <Tab eventKey="devToolTime" title="Dev Tool Time">
                     <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
+                        <div className="col-lg-6">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/QNYoOCLocAI"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen={true}
+                            />
                             <p>
                                 Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
                                 <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
                                 keep up with new episodes.
                             </p>
-                            <a href="https://srcgr.ph/dev-tool-time-playlist">
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="850"
-                                    height="380"
-                                    src="/community/DTT_module.jpg"
-                                    alt="Dev Tool Time"
-                                />
-                            </a>
                         </div>
                     </div>
                 </Tab>
                 <Tab eventKey="podcast" title="Podcast">
                     <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
-                            <p>
-                                Tune into our developer convos wherever you listen to your favorite podcasts. Every
-                                episode is an inspiration.
-                            </p>
-                            <a href="https://about.sourcegraph.com/podcast">
-                                <img
-                                    className="w-100 h-auto mt-4"
-                                    width="750"
-                                    height="472"
-                                    src="/community/Podcast_module.png"
-                                    alt="Podcasts"
-                                />
+                        <div className="col-lg-6">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/VgVDMd2VlaU"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen={true}
+                            />
+                            <strong>Subscribe:</strong>&nbsp;
+                            <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">
+                                YouTube
                             </a>
+                            &nbsp;
+                            <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">
+                                Apple
+                            </a>
+                            &nbsp;
+                            <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6">Spotify</a>&nbsp;
+                            <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">
+                                Google
+                            </a>
+                            &nbsp;
+                            <a href="https://feeds.buzzsprout.com/1097978.rss">RSS</a>
                         </div>
                     </div>
                 </Tab>
@@ -223,8 +174,8 @@ export const Community: FunctionComponent = () => (
                 <div className="col-lg-7">
                     <h2 className="display-3 font-weight-bold mb-3">We’d love to hear from you!</h2>
                     <br />
-                    Connect with us on the Sourcegraph Community Slack group, direct message us on Twitter, LinkedIn, or
-                    email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
+                    Connect with us on the Sourcegraph Community Discord server, direct message us on Twitter, LinkedIn,
+                    or email us at <a href="mailto:community@sourcegraph.com">community@sourcegraph.com</a>.
                 </div>
                 <div className="col-lg-5 mt-3">
                     <a
@@ -232,10 +183,10 @@ export const Community: FunctionComponent = () => (
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"
-                        href="https://srcgr.ph/wp-join-community-space"
-                        title="Join us on Slack"
+                        href="https://discord.gg/rDPqBejz93"
+                        title="Join us on Discord"
                     >
-                        Join us on Slack
+                        Join us on Discord
                     </a>
                     <br />
                     <a

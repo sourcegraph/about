@@ -9,7 +9,7 @@ tags: [
 ]
 slug: part-2-how-sourcegraph-scales-with-the-language-server-protocol
 description: 'Code Intelligence is the set of auto-navigation and auto-generation primitives that use a semantic understanding of code to enable a human programmer to efficiently read and write source code.'
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -116,3 +116,7 @@ Both the file-fetching and cross-repository extensions are works in progress. We
 The extensibility of the Language Server Protocol has made it relatively easy to experiment with new features like those mentioned above without worrying about breaking the backwards compatibility of the [dozens of open source language servers and LSP editor plugins currently being developed](http://langserver.org/). LSP is both standardizing a lot of what we’ve come to expect from IDEs and editor plugins _and_ enabling new innovation in Code Intelligence like what you see on Sourcegraph. For these reasons, we think it is an invaluable contribution to the larger software ecosystem. We hope you’ll join us in making it the open standard for Code Intelligence.
 
 In the next post in this series, I’ll dive into implementation details of how we make language servers fast. Stay tuned!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

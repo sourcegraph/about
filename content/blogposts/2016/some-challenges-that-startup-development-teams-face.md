@@ -73,3 +73,7 @@ Code reviews were largely conducted manually and we heard from many dev team lea
 *   [Srclib](https://srclib.org/) — a polyglot code analysis library, built with hackability in mind.
 
 ![1*QqyAGU4FbfAYLAlhC9FjSw](//images.contentful.com/le3mxztn6yoo/6NmfpJgoV2M4WGiUgkOSao/64a9a5624a47de19271c2f6ec87f59d1/1_QqyAGU4FbfAYLAlhC9FjSw.png) Photo credit: <a href='https://flic.kr/p/7oemTB'>Derek Gavey</a>
+
+#### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

@@ -34,19 +34,16 @@ export {
 
 // Blog
 export {
+    BLOG_TYPE_TO_INFO,
     BlogHeader,
-    BlogListItem,
-    BlogPost,
     LinkPost,
-    PodcastPost,
+    PodcastAudioPlayer,
     PodcastListItem,
+    PostLayout,
+    PostListItem,
     PostsList,
     PostsListPage,
-    PressReleaseListItem,
-    PressReleasePost,
     ReleasePost,
-    BLOG_TYPE_TO_INFO,
-    PodcastAudioPlayer,
 } from './Blog'
 
 // Carousels

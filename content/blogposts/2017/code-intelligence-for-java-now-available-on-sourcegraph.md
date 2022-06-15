@@ -8,7 +8,7 @@ tags: [
   "blog"
 ]
 slug: code-intelligence-for-java-now-available-on-sourcegraph
-heroImage: https://about.sourcegraph.com/sourcegraph-mark.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 published: true
 ---
 
@@ -97,3 +97,7 @@ See Sourcegraph in action now on some popular open source Java projects:
 *   [Dropwizard](https://sourcegraph.com/github.com/dropwizard/dropwizard@04490cb148003b011efe5fa045e9af2811b8a764/-/blob/dropwizard-core/src/main/java/io/dropwizard/Application.java#L24:23-24:34)
 
 Or you can test it out on your [private repositories on GitHub.com](https://sourcegraph.com/pricing). We also do [on-premises deployments for enterprise software teams](https://sourcegraph.com/pricing). Contact us for more info!
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._

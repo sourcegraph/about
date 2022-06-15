@@ -27,8 +27,8 @@ const logos: Logos[] = [
         src: '/external-logos/nutanix-logo.svg',
     },
     {
-        name: 'Paypal',
-        src: '/external-logos/paypal-logo.svg',
+        name: 'Canva',
+        src: '/external-logos/canva-logo.svg',
     },
     {
         name: 'Uber',
@@ -55,8 +55,8 @@ const logos: Logos[] = [
         src: '/external-logos/lyft-logo.svg',
     },
     {
-        name: 'Canva',
-        src: '/external-logos/canva-logo.svg',
+        name: 'Databricks',
+        src: '/external-logos/databricks-logo.svg',
     },
     {
         name: 'Shipt',

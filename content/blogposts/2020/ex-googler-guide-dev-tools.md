@@ -162,6 +162,10 @@ Building software at scale is hard. As everyone who has read <a href="https://en
 
 Please feel free to ask us questions either via posting on Twitter[@sourcegraph](https://twitter.com/sourcegraph) or sending an email to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
 
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
+
 ### More posts like this
 
 - [A 5x reduction in RAM usage with Zoekt memory optimizations](/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
