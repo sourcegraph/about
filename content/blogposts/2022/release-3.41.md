@@ -32,7 +32,7 @@ Setting up running batch changes server-side allows to:
 - Run large-scale or resource intensive batch changes without clogging your local machine.
 - Run large batch changes faster by distributing them across an autoscaled pool of compute instances
 - Get a better debugging experience, with logs being streamed directly into Sourcegraph.
-- Trade-off a little more setup for the Sourcegraph admin, against a lot less setup for users (no local `src-cli`)
+- Trade-off a little more setup for the Sourcegraph admin, against less setup for users (no local `src-cli`)
 
 This is the outcome of months of iteration on the experimental version of the feature, and we're grateful to early users for their feedback!
 
