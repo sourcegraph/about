@@ -257,7 +257,7 @@ const CareersPage: FunctionComponent = () => {
                 <Carousel controls={false}>
                     {cultureItems.map(item => (
                         <Carousel.Item className={item.className} key={item.className}>
-                            <div className="row px-md-8 px-5 py-8">
+                            <div className="row px-md-8 px-5 py-7">
                                 {item.text}
                                 <div className="col-lg-6 h-600 d-flex align-items-center">
                                     {item.img}
@@ -273,7 +273,7 @@ const CareersPage: FunctionComponent = () => {
                 >
                     {valueItems.map(item => (
                         <Carousel.Item key={item.value}>
-                            <div className="d-flex flex-column align-items-center py-8">
+                            <div className="d-flex flex-column align-items-center py-7">
                                 <h5 className="display-5 font-weight-bold text-uppercase">We value:</h5>
                                 <h2 className="display-4">{item.value}</h2>
                                 <p className="col-5 display-5 text-center">{item.description}</p>
@@ -283,13 +283,13 @@ const CareersPage: FunctionComponent = () => {
                     ))}
                 </Carousel>
 
-                <div className="bg-gradient-saturn-saturated py-8">
+                <div className="bg-gradient-saturn-saturated py-7">
                     <ContentSection>
-                        <QuoteCarousel items={glassdoorReviewItems} autoAdvance={true} />
+                        <QuoteCarousel items={glassdoorReviewItems} />
                     </ContentSection>
                 </div>
 
-                <div className="bg-white py-8">
+                <div className="bg-white py-7">
                     <ContentSection>
                         <div className="row">
                             <div className="col-lg-12">

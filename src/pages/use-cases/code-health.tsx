@@ -330,9 +330,9 @@ const UseCasePage: FunctionComponent = () => (
             />
         </ContentSection>
 
-        <div className="bg-gradient-saturn-saturated py-8">
+        <div className="bg-gradient-saturn-saturated py-7">
             <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} />
+                <QuoteCarousel items={quoteCarouselItems} />
             </ContentSection>
         </div>
 
