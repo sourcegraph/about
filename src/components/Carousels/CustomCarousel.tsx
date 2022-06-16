@@ -17,6 +17,7 @@ interface CarouselProps {
     previousItem?: CarouselItem
     currentItemIndex?: number
     autoAdvance?: boolean
+    smallPanel?: boolean
     showHeadlinesOnMobile?: boolean
 }
 
@@ -48,7 +49,9 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 </h2>
             )}
             <div
-                className={`d-flex flex-wrap h-auto ${autoAdvance ? 'justify-content-between h-xl-450' : 'flex-lg-row flex-column py-8'}`}
+                className={`d-flex flex-wrap h-auto ${
+                    autoAdvance ? 'justify-content-between h-xl-450' : 'flex-lg-row flex-column py-8'
+                }`}
             >
                 {props.showHeadlinesOnMobile && (
                     <div className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
@@ -103,7 +106,11 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                 </div>
-                <div className="h-auto col-lg-6 col-md-10 col-sm-12 mt-lg-6 px-0 m-auto d-flex align-items-center align-items-lg-start justify-content-lg-start justify-content-center">
+                <div
+                    className={`${
+                        props.smallPanel ? 'h-300' : 'h-500'
+                    } col-lg-6 col-md-10 col-sm-12 mt-4 px-0 m-auto d-flex align-items-center align-items-lg-start justify-content-lg-start justify-content-center`}
+                >
                     {carouselItems.map((item, index) => (
                         <div
                             key={item.buttonLabel}
@@ -112,12 +119,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                             onFocus={() => carouselHook.moveCarousel(index)}
                         >
                             {!autoAdvance && (
-                                <h1
-                                    className={classNames(
-                                        'font-weight-bold',
-                                        autoAdvance ? 'mb-lg-4' : 'display-2 mb-lg-4'
-                                    )}
-                                >
+                                <h1 className={classNames('font-weight-bold mb-lg-4', !autoAdvance && 'display-2')}>
                                     {item.buttonLabel}
                                 </h1>
                             )}
