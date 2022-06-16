@@ -50,6 +50,11 @@ Now you can directly mount files or directories on the batch change container us
 
 We're committed to making iterating on batch changes as fast as possible. Feedback welcome on what slows you down!
 
+## Sort and filter "detect and track patterns" code insights series 
+
+<!-- TODO: add screenshot of sorting --> 
+
+Detect and track patterns charts now allow setting the series sort order and number (up to 20) of series. This means you can set an insight with greater than 20 match patterns to show the 1-20 most or least common series by match count; oldest or newest version by series name; or oldest-added or newest-added versions by date appearing in the codebase. Previously, if there were greater than 20 match patterns, it returned a random set of 20 each session.
 ## Sourcegraph Extensions
 
 ### Allow only extensions authored by Sourcegraph
