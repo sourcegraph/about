@@ -7,8 +7,8 @@ authors:
 publishDate: 2022-06-08T18:00+02:00
 tags: [blog]
 slug: announcing-scip-typescript
-heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript.png
-socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript.png
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript-2.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript-2.png
 published: true
 ---
 
