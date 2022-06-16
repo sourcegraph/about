@@ -332,7 +332,7 @@ $positions: ('top', 'right', 'bottom', 'left');
     border-image-source: linear-gradient(to right, $violet-mist, $blue-mist) !important;
 }
 
-/* ==================== Background ==================== */
+/* ==================== Tailwind placeholders ==================== */
 // TODO: After Tailwind migration this class can be deleted
 .bg-cover {
     background-size: cover !important;
@@ -340,8 +340,4 @@ $positions: ('top', 'right', 'bottom', 'left');
 
 .cursor-pointer {
     cursor: pointer;
-}
-
-.uppercase {
-    text-transform: uppercase;
 }

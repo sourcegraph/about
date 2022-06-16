@@ -28,13 +28,9 @@ interface CarouselItem {
 }
 
 export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
-    const carouselMainStyles = 'd-flex flex-wrap h-auto'
-    const carouselRightPanelStyles =
-        'col-lg-6 col-md-10 col-sm-12 mt-lg-6 px-0 m-auto d-flex align-items-center align-items-lg-start justify-content-lg-start justify-content-center'
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
     const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
-    const currentCarousel = carouselHook.carouselItems as CarouselProps
 
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg
@@ -45,17 +41,14 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <h2
                     className={classNames(
                         'text-md-center font-weight-bold mt-lg-3 pb-4',
-                        isMdOrDown && 'uppercase text-base'
+                        isMdOrDown && 'text-uppercase text-base'
                     )}
                 >
                     {title}
                 </h2>
             )}
             <div
-                className={classNames(carouselMainStyles, {
-                    'justify-content-between h-xl-450 h-auto': autoAdvance,
-                    'flex-lg-row flex-column py-8 py-lg-8': !autoAdvance,
-                })}
+                className={`d-flex flex-wrap h-auto ${autoAdvance ? 'justify-content-between h-xl-450' : 'flex-lg-row flex-column py-8'}`}
             >
                 {props.showHeadlinesOnMobile && (
                     <div className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
@@ -110,7 +103,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                         color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
                     />
                 </div>
-                <div className={`${carouselRightPanelStyles} h-auto`}>
+                <div className="h-auto col-lg-6 col-md-10 col-sm-12 mt-lg-6 px-0 m-auto d-flex align-items-center align-items-lg-start justify-content-lg-start justify-content-center">
                     {carouselItems.map((item, index) => (
                         <div
                             key={item.buttonLabel}
