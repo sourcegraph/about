@@ -62,7 +62,7 @@ const masterForms: { [key: string]: string } = {
     gatedMulti: '1fb4ef6c-f233-48ba-9f43-a88f19528282',
 }
 
-// Global script integrations for HubSpot forms
+// Third party script integrations for HubSpot forms
 const hubSpotScript = '//js.hsforms.net/forms/v2.js'
 const jQueryScript = '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'
 const clearbitScript =
@@ -118,8 +118,9 @@ async function createHubSpotForm({
     const getAllCookies: { [index: string]: string } = document.cookie
         .split(';')
         .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
-    const anonymousId = getAllCookies.sourcegraphAnonymousUid
-    const firstSourceURL = getAllCookies.sourcegraphSourceUrl
+    const { sourcegraphAnonymousUid, sourcegraphSourceUrl } = getAllCookies
+    const landingSource: string = sessionStorage.getItem('landingSource') || ''
+    const firstSourceURL: string = sourcegraphSourceUrl?.includes('redacted') ? landingSource : sourcegraphSourceUrl
 
     const script = await loadScriptElement('hubspot', hubSpotScript)
     await loadScriptElement('jQuery', jQueryScript)
@@ -135,29 +136,23 @@ async function createHubSpotForm({
             onFormSubmitted,
             onFormReady: (form: CreateHubSpotFormProps) => {
                 if (form) {
-                    // Populate hidden form fields with values stored in cookies
-                    const anonymousIdInput = form[0].querySelector(
-                        'input[name="anonymous_user_id"]'
-                    ) as HTMLInputElement
-                    if (anonymousIdInput && anonymousIdInput.value === '') {
-                        // Populate hidden anonymous_user_id form field with value from sourcegraphAnonymousUid
-                        anonymousIdInput.value = anonymousId || ''
+                    /**
+                     * This allows you to populate hidden form fields with values
+                     * @param formField - the form field name
+                     * @param value - the value to populate
+                     */
+                    const populateHiddenFormField = (formField: string, value: string): void => {
+                        const input = form[0].querySelector(`input[name="${formField}"]`) as HTMLInputElement
+                        if (input && input.value === '') {
+                            input.value = value || ''
+                        }
                     }
 
-                    const firstSourceURLInput = form[0].querySelector(
-                        'input[name="first_source_url"]'
-                    ) as HTMLInputElement
-                    const emailInput = form[0].querySelector('input[name="email"]') as HTMLInputElement
-                    if (
-                        firstSourceURLInput &&
-                        firstSourceURLInput.value === '' &&
-                        emailInput &&
-                        emailInput.value === ''
-                    ) {
-                        // Populate hidden first_source_url form field with value from sourcegraphSourceUrl
-                        firstSourceURLInput.value = firstSourceURL || ''
-                    }
+                    populateHiddenFormField('anonymous_user_id', sourcegraphAnonymousUid)
+                    populateHiddenFormField('first_source_url', firstSourceURL)
+                    populateHiddenFormField('form_submission_source', window.location.href)
                 }
+
                 if (onFormReady) {
                     onFormReady(form[0])
                 }
