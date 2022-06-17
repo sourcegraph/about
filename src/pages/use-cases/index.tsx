@@ -34,7 +34,7 @@ const UseCases: React.FunctionComponent = () => (
         meta={{
             title: 'Use Cases | Sourcegraph',
             description:
-                'See how the most productive dev teams use Sourcegraph to build software you rely on. From remediating vulnerabilities to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
+                'See how the most productive dev teams use Sourcegraph to build software you rely on. From improving code security to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
         }}
         heroAndHeaderClassName={styles.landingHeader}
         hero={
