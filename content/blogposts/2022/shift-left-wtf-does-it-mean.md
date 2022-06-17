@@ -54,7 +54,8 @@ Time is of the essence. Discovering existing functions and functionality early o
       Discovering and reusing existing code can help you spin up a MVP ASAP, so you can quickly validate the user need with a rough sketch of the product.
     </figcaption>
     <video title="Code reuse" alt="Discovering and reusing existing code can help you spin up a MVP ASAP, so you can quickly validate the user need with a rough sketch of the product." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.webm" type="video/webm" data-cookieconsent="ignore"/>
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.mp4" type="video/mp4" data-cookieconsent="ignore" />
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.webm" type="video/webm" data-cookieconsent="ignore" />
     </video>
   </div>
 </center>
@@ -69,6 +70,7 @@ Investing in great documentation helps, but this is a hard change to make if you
       Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it.
     </figcaption>
     <video title="Find references" alt="Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it." loop autoPlay muted playsInline>
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/02-find-references.mp4" type="video/mp4" data-cookieconsent="ignore"/>
       <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/02-find-references.webm" type="video/webm" data-cookieconsent="ignore"/>
     </video>
   </div>
@@ -95,6 +97,7 @@ Acquiring context means understanding the structure and relationships in code. T
       Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works.
     </figcaption>
     <video title="Definitions and references" alt="Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works." loop autoPlay muted playsInline>
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/03-defs-and-refs.mp4" type="video/mp4" data-cookieconsent="ignore" />
       <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/03-defs-and-refs.webm" type="video/webm" data-cookieconsent="ignore"/>
     </video>
   </div>
@@ -106,6 +109,7 @@ Acquiring context means understanding the structure and relationships in code. T
       Fast and accurate jump-to-definition that Just Works, even across dependency boundaries, is essential for chasing down context through the winding rabbitholes of code.
     </figcaption>
     <video title="Jump to definition" alt="Fast and accurate jump-to-definition that Just Works, even across dependency boundaries, is essential for chasing down context through the winding rabbitholes of code." loop autoPlay muted playsInline>
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/04-jump-to-definition.mp4" type="video/mp4" data-cookieconsent="ignore"/>
       <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/04-jump-to-definition.webm" type="video/webm" data-cookieconsent="ignore"/>
     </video>
   </div>
@@ -119,6 +123,7 @@ Targeted pieces of documentation can help guide new devs to quickly acquire the 
       Interactive docs that tie high-level descriptions with entrypoints into the source code conserves senior engineers' time while enabling other engineers to quickly onboard to new parts of the codebase.
     </figcaption>
     <video title="Interactive docs for engineering" alt="Interactive docs that tie high-level descriptions with entrypoints into the source code conserves senior engineers' time while enabling other engineers to quickly onboard to new parts of the codebase." loop autoPlay muted playsInline>
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/05-notebooks.mp4" type="video/mp4" data-cookieconsent="ignore"/>
       <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/05-notebooks.webm" type="video/webm" data-cookieconsent="ignore"/>
     </video>
   </div>
@@ -133,6 +138,7 @@ Reading tests is a good way to understand the structure of the code. Unit tests 
   <div className="max-w-650">
     <figcaption>Discover unit tests by looking up references to a public API function.</figcaption>
     <video title="Reference lookup" alt="Discover unit tests by looking up references to a public API function." loop autoPlay muted playsInline>
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/06-discover-unit-tests.mp4" type="video/mp4" data-cookieconsent="ignore"/>
       <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/06-discover-unit-tests.webm" type="video/webm" data-cookieconsent="ignore"/>
     </video>
   </div>
@@ -144,6 +150,7 @@ It's also helpful to understand how well tested the current code is. Test covera
   <div className="max-w-650">
     <figcaption>Code coverage tools reveal gaps in test coverage.</figcaption>
     <video title="Reveal gaps in test coverage" alt="Code coverage tools reveal gaps in test coverage." loop autoPlay muted playsInline>
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/07-test-coverage.mp4" type="video/mp4" data-cookieconsent="ignore"/>
       <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/07-test-coverage.webm" type="video/webm" data-cookieconsent="ignore"/>
     </video>
   </div>
@@ -184,6 +191,7 @@ There are many security scanners that do this, but some can be quite noisy. We'v
   <div className="max-w-650">
     <figcaption>Set up alerts for anti-patterns and vulnerable dependency versions in your codebase.</figcaption>
     <video title="Codebase alerts" alt="Set up alerts for anti-patterns and vulnerable dependency versions in your codebase." loop autoPlay muted playsInline>
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/09-code-monitoring.mp4" type="video/mp4" data-cookieconsent="ignore"/>
       <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/09-code-monitoring.webm" type="video/webm" data-cookieconsent="ignore"/>
     </video>
   </div>
@@ -213,6 +221,7 @@ Having precise code navigation capabilities in code review will help reviewers q
   <div className="max-w-650">
     <figcaption>Use go-to-definition and find references to conduct code reviews that are both thorough and efficient.</figcaption>
     <video title="Find references in code reviews" alt="Use go-to-definition and find references to conduct code reviews that are both thorough and efficient." loop autoPlay muted playsInline>
+      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/10-code-reviews.mp4" type="video/mp4" data-cookieconsent="ignore"/>
       <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/10-code-reviews.webm" type="video/webm" data-cookieconsent="ignore"/>
     </video>
   </div>
