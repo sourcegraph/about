@@ -18,13 +18,7 @@ interface UseCases {
 
 const useCases: UseCases[] = [
     {
-        icon: (
-            <Icon
-                name="LockOutlined"
-                className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0"
-                variant="boxed"
-            />
-        ),
+        icon: <Icon name="LockOutlined" className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />,
         title: 'Improve code security',
         description: 'Find, fix, and track vulnerable code quickly across your entire codebase.',
         link: {
@@ -33,13 +27,7 @@ const useCases: UseCases[] = [
         },
     },
     {
-        icon: (
-            <Icon
-                name="AccessTimeSharp"
-                className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0"
-                variant="boxed"
-            />
-        ),
+        icon: <Icon name="AccessTimeSharp" className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />,
         title: 'Onboard developers',
         description: 'Decrease time to first commit with codebase onboarding and knowledge sharing.',
         link: {
@@ -63,9 +51,7 @@ const useCases: UseCases[] = [
         },
     },
     {
-        icon: (
-            <Icon name="CachedSharp" className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />
-        ),
+        icon: <Icon name="CachedSharp" className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />,
         title: 'Promote code reuse',
         description: 'Find existing code for reuse and contribute to a more coherent codebase.',
         link: {
@@ -74,9 +60,7 @@ const useCases: UseCases[] = [
         },
     },
     {
-        icon: (
-            <Icon name="LaptopSharp" className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />
-        ),
+        icon: <Icon name="LaptopSharp" className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />,
         title: 'Boost code health',
         description: 'Improve code health with large-scale changes, and track key initiatives.',
         link: {
