@@ -182,3 +182,7 @@ To learn more about dev tools that assist with shifting left and accelerating th
 - A dev's thoughts on dev productivity
 
 Or you can learn more about how Sourcegraph can serve as a dev tools hub for your organization to drive the cultural and process shifts that shifting left entails.
+
+### About the author
+
+_Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
