@@ -7,14 +7,14 @@ import { createRandomId } from '@util'
 
 interface Icon {
     name: keyof typeof icons
-    size: number
+    size?: number
     className?: string | undefined
     color?: string
     onClick?: (event: SyntheticEvent) => void
     variant?: 'boxed'
 }
 
-export const Icon: FunctionComponent<Icon> = ({ name, size, className = '', color, onClick, variant }) => {
+export const Icon: FunctionComponent<Icon> = ({ name, size = 48, className = '', color, onClick, variant }) => {
     const IconName = icons[name]
 
     return (

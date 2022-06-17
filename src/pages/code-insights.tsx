@@ -401,7 +401,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                     <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <Icon name="TrackChangesSharp" size={48} variant="boxed" />
+                                <Icon name="TrackChangesSharp" variant="boxed" />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Set goals</div>
@@ -410,7 +410,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                         </div>
                         <div className="d-flex py-lg-5 py-3">
                             <div className="icon mr-4">
-                                <Icon name="BoltSharp" size={48} variant="boxed" />
+                                <Icon name="BoltSharp" variant="boxed" />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Plan proactively</div>
@@ -423,7 +423,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                     <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <Icon name="TrendingUpSharp" size={48} variant="boxed" />
+                                <Icon name="TrendingUpSharp" variant="boxed" />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Track ownership & trends</div>
@@ -432,7 +432,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                         </div>
                         <div className="d-flex py-lg-5 py-3">
                             <div className="mr-4">
-                                <Icon name="RocketLaunchSharp" size={48} variant="boxed" />
+                                <Icon name="RocketLaunchSharp" variant="boxed" />
                             </div>
                             <div className="d-flex flex-column">
                                 <div className="display-lg-3 font-weight-bold">Celebrate progress</div>

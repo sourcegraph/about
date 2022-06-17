@@ -21,7 +21,6 @@ const useCases: UseCases[] = [
         icon: (
             <Icon
                 name="LockOutlined"
-                size={48}
                 className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0"
                 variant="boxed"
             />
@@ -37,7 +36,6 @@ const useCases: UseCases[] = [
         icon: (
             <Icon
                 name="AccessTimeSharp"
-                size={48}
                 className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0"
                 variant="boxed"
             />
@@ -53,7 +51,6 @@ const useCases: UseCases[] = [
         icon: (
             <Icon
                 name="CheckCircleOutlineSharp"
-                size={48}
                 className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0"
                 variant="boxed"
             />
@@ -67,7 +64,7 @@ const useCases: UseCases[] = [
     },
     {
         icon: (
-            <Icon name="CachedSharp" size={48} className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />
+            <Icon name="CachedSharp" className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />
         ),
         title: 'Promote code reuse',
         description: 'Find existing code for reuse and contribute to a more coherent codebase.',
@@ -78,7 +75,7 @@ const useCases: UseCases[] = [
     },
     {
         icon: (
-            <Icon name="LaptopSharp" size={48} className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />
+            <Icon name="LaptopSharp" className="w-100 max-w-50 h-auto mr-sm-4 mb-4 mb-sm-0" variant="boxed" />
         ),
         title: 'Boost code health',
         description: 'Improve code health with large-scale changes, and track key initiatives.',
