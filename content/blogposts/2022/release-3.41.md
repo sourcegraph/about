@@ -1,21 +1,14 @@
 ---
-title: 'Sourcegraph 3.41 release'
-publishDate: TODO
-description: TODO
+title: "Sourcegraph 3.41 release"
+publishDate: 2022-06-21T10:00-07:00
+description: "Sourcegraph 3.41 introduces..."
 tags: [blog, release]
-slug: 'release/3.41'
+slug: "release/3.41"
 published: false
-heroImage: TODO
-socialImage: TODO
+heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
+socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 changelogItems: TODO
 ---
-
-<!-- <div className="alert alert-primary" role="alert" style={{maxWidth:'650px', alignItems:'center', margin: 'auto auto 20px auto'}}>
-      <strong>Update as of May 31:</strong> Patch 3.40.1 has been released, which fixes the issue below. We recommend GitLab users upgrade to this patch. In the unlikely event you still see GitLab repositories missing, you can log out of Sourcegraph via GitLab and then log back in to refresh your OAuth token.
-      <br/>
-      <strong>May 24:</strong> GitLab 15.0 no longer supports OAuth tokens that don’t expire, which can cause authorization between Sourcegraph and GitLab to fail. We are working to fix compatibility with GitLab 15.0 (and support expiring OAuth tokens) in an upcoming patch.
-</div>
- -->
  
 Sourcegraph 3.41 is now available! Here are some highlights from this release:
 
