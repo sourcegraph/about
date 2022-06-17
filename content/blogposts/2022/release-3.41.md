@@ -24,10 +24,7 @@ changelogItems:
  
 Sourcegraph 3.41 is now available! Here are some highlights from this release:
 
-
-## Batch Changes
-
-### Running batch changes server-side is moving to Beta
+## Running batch changes server-side is moving to Beta
 
 Until now, you had to run `src-cli` locally to create your batch changes. `src-cli` pulls repo archives through Sourcegraph, and runs your batch spec to create diffs. For large amounts of repositories or resource-intensive code rewrites, running `src-cli` locally could take an impractical amount of time or be brittle.
 
@@ -45,7 +42,7 @@ This feature requires to setup [executors](https://docs.sourcegraph.com/admin/ex
 
 <!-- TODO: asset welcome right after deployment on demo -->
 
-###  Batch specs can now mount local files on steps containers (experimental)
+##  Batch specs can now mount local files on steps containers (experimental)
 
 As we improve Batch Changes, we're heavily focusing on making it easy to write and debug batch specs. Iteration time needs to be as small as possible, so that users can quickly put together a spec, run it, see results, and quickly improve on it.
 
@@ -61,9 +58,7 @@ We're committed to making iterating on batch changes as fast as possible. Feedba
 
 Detect and track patterns charts now allow setting the series sort order and number (up to 20) of series. This means you can set an insight with greater than 20 match patterns to show the 1-20 most or least common series by match count; oldest or newest version by series name; or oldest-added or newest-added versions by date appearing in the codebase. Previously, if there were greater than 20 match patterns, it returned a random set of 20 each session.
 
-## Sourcegraph Extensions
-
-### Allow only extensions authored by Sourcegraph
+## Allow only extensions authored by Sourcegraph
 
 You can now restrict users to only use Sourcegraph-authored extensions by setting [`extensions.allowOnlySourcegraphAuthoredExtensions`](../config/site_config.md) to `true` in your site configuration. This allows you to easily enforce that any extensions you are using are built and supported by Sourcegraph.
 
