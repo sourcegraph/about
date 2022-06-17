@@ -145,12 +145,12 @@ There are many security scanners that do this, but some can be quite noisy. We'v
 
 <figcaption>Example of proactively monitoring dependencies</figcaption>
 <figure>
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left-log4j-incident-response.png" alt="log4j incident response example of proactively monitoring dependencies" className="no-shadow" />
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left-1-log4j-response.png" alt="log4j incident response example of proactively monitoring dependencies" className="no-shadow" />
 </figure>
 
 <figcaption>Visually tracking overall code health</figcaption>
 <figure>
-<img src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left-go-versions-across-repos.png" alt="Visually tracking overall code health across repos" className="no-shadow" />
+<img src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left-2-repos.png" alt="Visually tracking overall code health across repos" className="no-shadow" />
 </figure>
 
 One advantage of the "simple" approach is you can tailor it more to specific codebases and anti-patterns. Rather than rely on the same set of publicly reported vulnerabilities, you can specify your own set of regular expressions and [Comby patterns](https://docs.sourcegraph.com/code_search/reference/structural#syntax-reference), and these can even be suggested opportunistically by your dev team.
