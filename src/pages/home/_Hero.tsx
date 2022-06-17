@@ -91,7 +91,7 @@ const Hero: FunctionComponent = () => {
                 </p>
             </div>
 
-            <div className="py-7">
+            <div className="py-5 py-md-7">
                 <CustomerLogos />
             </div>
 

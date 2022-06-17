@@ -95,7 +95,7 @@ const UseCases: FunctionComponent = () => {
     }, [])
 
     return (
-        <ContentSection className="position-relative pt-7">
+        <ContentSection className="position-relative pt-5 pt-md-7">
             <div className="text-center">
                 <h1 className="font-weight-bold">Move fast &mdash; even in big codebases</h1>
             </div>
