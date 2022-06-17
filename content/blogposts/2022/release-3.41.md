@@ -7,7 +7,19 @@ slug: "release/3.41"
 published: false
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
-changelogItems: TODO
+changelogItems: 
+  - description: 'A new templating variable, batch_change_link has been added for more control over where the "Created by Sourcegraph batch change ..." message appears in the published changeset description.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/35319
+    category: Batch Chanages
+  - description: Sort and limit filters have been added to capture group insights. This gives users more control over which series are displayed.
+    url: https://github.com/sourcegraph/sourcegraph/pull/34611
+    category: Code Insights
+  - description: 'Commit and diff search: The hard limit of 50 repositories has been removed, so you can now run broader searches. Long-running searches will continue running until the timeout is hit.'
+    url: https://github.com/sourcegraph/sourcegraph/pull/36486
+    category: Search
+  - description: 'Zoekt-indexserver has a new debug landing page, /debug, which exposes information about the queue, the list of indexed repositories, and the list of assigned repositories for easier visual debugging. Admins can reach the debug landing page by selecting Instrumentation > indexed-search-indexer from the site admin view. The debug page is linked at the top.'
+    url: https://github.com/sourcegraph/zoekt/pull/346
+    category: Admin
 ---
  
 Sourcegraph 3.41 is now available! Here are some highlights from this release:
