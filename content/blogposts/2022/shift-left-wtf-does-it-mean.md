@@ -228,8 +228,8 @@ Ultimately, "shift left" is a philosophy that guides a set of specific cultural 
 
 To learn more about dev tools that assist with shifting left and accelerating the dev cycle, check out the following posts:
 
-- An ex-Googler's guide to dev tools
-- A dev's thoughts on dev productivity
+- [An ex-Googler's guide to dev tools](ex-googler-guide-dev-tools)
+- [A dev's thoughts on dev productivity](developer-productivity-thoughts)
 
 Or you can learn more about how Sourcegraph can serve as a dev tools hub for your organization to drive the cultural and process shifts that shifting left entails.
 
