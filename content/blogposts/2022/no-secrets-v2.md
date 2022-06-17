@@ -9,7 +9,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-no-secret
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/blog-no-secrets.jpg
 ---
 
-Open source supply chains and code security has been on my mind lately, and one thing white hats and black hats alike often do is search Git repositories for secrets that have been accidentally committed.  While playing with the Sourcegrah [search console](https://sourcegraph.com/search/console) to learn about the different filters/types/options, and to sharpen up on my regex I thought why not create a bookmarklet that can reveal what secrets might be lurking in any given GitHub repository?
+Open source supply chains and code security has been on my mind lately, and one thing white hats and black hats alike often do is search Git repositories for secrets that have been accidentally committed.  While playing with the Sourcegraph [search console](https://sourcegraph.com/search/console) to learn about the different filters/types/options, and to sharpen up on my regex I thought why not create a bookmarklet that can reveal what secrets might be lurking in any given GitHub repository?
 
 ## Secrets, No More
 
