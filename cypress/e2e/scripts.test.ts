@@ -10,8 +10,8 @@ beforeEach(() => {
     cy.visit('/')
 })
 
-describe('Google Analytics', () => {
-    it('has a data layer and GTM loads', () => {
+describe('Analytics', () => {
+    it('has a data layer for GTM and GTM loads', () => {
         cy.window().then(window => {
             assert.isDefined(window.dataLayer, 'window.dataLayer is defined')
             assert.isDefined(
