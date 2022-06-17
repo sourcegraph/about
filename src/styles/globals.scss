@@ -305,7 +305,7 @@ $positions: ('top', 'right', 'bottom', 'left');
     }
 }
 
-// Breakpoint-based positions
+/* ==================== Breakpoint-based positions ==================== */
 @each $breakpoint, $width in $grid-breakpoints {
     @media (min-width: $width) {
         .#{$breakpoint}-absolute {
