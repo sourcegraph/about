@@ -17,7 +17,7 @@ export const Icon: FunctionComponent<Icon> = ({ name, size, className = '', colo
 
     return (
         <IconName
-            className={`${className} ${variant === 'boxed' ? 'bg-violet-mist text-vivid-violet rounded p-2' : ''}`}
+className={classNames(className, variant === 'boxed' && 'bg-violet-mist text-vivid-violet rounded p-2')}`
             style={{ fontSize: size }}
             key={key}
             htmlColor={color}
