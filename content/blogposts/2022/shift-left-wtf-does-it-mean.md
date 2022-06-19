@@ -208,13 +208,11 @@ Another approach that is complementary to security scanners is to run recurring 
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left-1-log4j-response.png" alt="log4j incident response example of proactively monitoring dependencies" className="no-shadow" />
 </figure>
 <figcaption>Example of proactively monitoring dependencies</figcaption>
-<br/>
 
 <figure>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left-2-repos.png" alt="Visually tracking overall code health across repos" className="no-shadow" />
 </figure>
 <figcaption>Visually tracking overall code health</figcaption>
-<br/>
 
 One advantage of the search-based approach is you can tailor these more to specific codebases and anti-patterns. Rather than rely on the same set of publicly reported vulnerabilities, you can specify your own set of regular expressions and [Comby patterns](https://docs.sourcegraph.com/code_search/reference/structural#syntax-reference), and these can even be suggested opportunistically by your dev team.
 
@@ -235,6 +233,7 @@ Having precise code navigation capabilities in code review will help reviewers q
     <figcaption>Use go-to-definition and find references to conduct code reviews that are both thorough and efficient.</figcaption>
   </div>
 </center>
+<br/>
 
 Another trick is to break up a large changeset into smaller changesets that don't change the behavior of the system until the very last one (e.g., using feature flags). These smaller changes can be more easily reviewed and validated.
 
