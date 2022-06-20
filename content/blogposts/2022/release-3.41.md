@@ -1,9 +1,9 @@
 ---
-title: "Sourcegraph 3.41 release"
+title: 'Sourcegraph 3.41 release'
 publishDate: 2022-06-21T10:00-07:00
-description: "Sourcegraph 3.41 introduces running batch changes server-side, file mounting for the batch change container, greater pattern tracking in Code Insights, and admin settings to restrict extensions to those authored by Sourcegraph."
+description: 'Sourcegraph 3.41 introduces running batch changes server-side, file mounting for the batch change container, greater pattern tracking in Code Insights, and admin settings to restrict extensions to those authored by Sourcegraph.'
 tags: [blog, release]
-slug: "release/3.41"
+slug: 'release/3.41'
 published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
