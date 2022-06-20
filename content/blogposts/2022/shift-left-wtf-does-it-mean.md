@@ -51,15 +51,13 @@ It seems like an obvious statement, but a surprising number of software projects
 Time is of the essence. Discovering existing functions and functionality early on—and avoiding the temptation to reinvent the wheel—can save loads of time.
 
 <center>
-  <div className="max-w-650">
-    <video title="Code reuse" alt="Discovering and reusing existing code can help you spin up a MVP ASAP, so you can quickly validate the user need with a rough sketch of the product." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.mp4" type="video/mp4" data-cookieconsent="ignore" />
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.webm" type="video/webm" data-cookieconsent="ignore" />
-    </video>
-    <figcaption>
-      Discovering and reusing existing code can help you spin up a MVP ASAP, so you can quickly validate the user need with a rough sketch of the product.
-    </figcaption>
-  </div>
+  <video title="Code reuse" alt="Discovering and reusing existing code can help you spin up a MVP ASAP, so you can quickly validate the user need with a rough sketch of the product." loop autoPlay muted playsInline>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.mp4" type="video/mp4" data-cookieconsent="ignore" />
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/01-code-reuse.webm" type="video/webm" data-cookieconsent="ignore" />
+  </video>
+  <figcaption>
+    Discovering and reusing existing code can help you spin up a MVP ASAP, so you can quickly validate the user need with a rough sketch of the product.
+  </figcaption>
 </center>
 
 In order to take full advantage of existing libraries, you need to be able to understand how to use them quickly. This applies to both open source and inner source. Shared libraries must not only be available, they must be accessible and understandable.
@@ -67,15 +65,13 @@ In order to take full advantage of existing libraries, you need to be able to un
 Investing in great documentation helps, but this is a hard change to make if your codebase isn't already well-documented. The best way to learn is by example. A single real usage example can be worth a thousand words of documentation.
 
 <center>
-  <div className="max-w-650">
-    <video title="Find references" alt="Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/02-find-references.mp4" type="video/mp4" data-cookieconsent="ignore"/>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/02-find-references.webm" type="video/webm" data-cookieconsent="ignore"/>
-    </video>
-    <figcaption>
-      Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it.
-    </figcaption>
-  </div>
+  <video title="Find references" alt="Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it." loop autoPlay muted playsInline>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/02-find-references.mp4" type="video/mp4" data-cookieconsent="ignore"/>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/02-find-references.webm" type="video/webm" data-cookieconsent="ignore"/>
+  </video>
+  <figcaption>
+    Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it.
+  </figcaption>
 </center>
 
 By stitching together existing components, you can spin up a basic, hacky version of a new feature or product 10x more quickly. Ideally, you don't even have to worry about spinning up a production environment before soliciting user feedback—tools like ngrok (a favorite of hackathons) enable you to quickly share a service running on your local machine to early adopters around the world.
@@ -94,41 +90,35 @@ Context acquisition is one of the most time-consuming parts of the job—unless 
 Acquiring context means understanding the structure and relationships in code. This becomes 10x easier when you have code navigation. Not having jump-to-def and xrefs is like trying to browse the web without hyperlinks.
 
 <center>
-  <div className="max-w-650">
-    <video title="Definitions and references" alt="Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/03-defs-and-refs.mp4" type="video/mp4" data-cookieconsent="ignore" />
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/03-defs-and-refs.webm" type="video/webm" data-cookieconsent="ignore"/>
-    </video>
-    <figcaption>
-      Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works.
-    </figcaption>
-  </div>
+  <video title="Definitions and references" alt="Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works." loop autoPlay muted playsInline>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/03-defs-and-refs.mp4" type="video/mp4" data-cookieconsent="ignore" />
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/03-defs-and-refs.webm" type="video/webm" data-cookieconsent="ignore"/>
+  </video>
+  <figcaption>
+    Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works.
+  </figcaption>
 </center>
 
 <center>
-  <div className="max-w-650">
-    <video title="Jump to definition" alt="Fast and accurate jump-to-definition that Just Works, even across dependency boundaries, is essential for chasing down context through the winding rabbitholes of code." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/04-jump-to-definition.mp4" type="video/mp4" data-cookieconsent="ignore"/>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/04-jump-to-definition.webm" type="video/webm" data-cookieconsent="ignore"/>
-    </video>
-    <figcaption>
-      Fast and accurate jump-to-definition that Just Works, even across dependency boundaries, is essential for chasing down context through the winding rabbitholes of code.
-    </figcaption>
-  </div>
+  <video title="Jump to definition" alt="Fast and accurate jump-to-definition that Just Works, even across dependency boundaries, is essential for chasing down context through the winding rabbitholes of code." loop autoPlay muted playsInline>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/04-jump-to-definition.mp4" type="video/mp4" data-cookieconsent="ignore"/>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/04-jump-to-definition.webm" type="video/webm" data-cookieconsent="ignore"/>
+  </video>
+  <figcaption>
+    Fast and accurate jump-to-definition that Just Works, even across dependency boundaries, is essential for chasing down context through the winding rabbitholes of code.
+  </figcaption>
 </center>
 
 Targeted pieces of documentation can help guide new devs to quickly acquire the essential aspects of an area of code. You'll ideally want to use a tool that integrates nicely with the source code and doesn't go stale with time.
 
 <center>
-  <div className="max-w-650">
-    <video title="Interactive docs for engineering" alt="Interactive docs that tie high-level descriptions with entrypoints into the source code conserves senior engineers' time while enabling other engineers to quickly onboard to new parts of the codebase." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/05-notebooks.mp4" type="video/mp4" data-cookieconsent="ignore"/>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/05-notebooks.webm" type="video/webm" data-cookieconsent="ignore"/>
-    </video>
-    <figcaption>
-      Interactive docs that tie high-level descriptions with entrypoints into the source code conserves senior engineers' time while enabling other engineers to quickly onboard to new parts of the codebase.
-    </figcaption>
-  </div>
+  <video title="Interactive docs for engineering" alt="Interactive docs that tie high-level descriptions with entrypoints into the source code conserves senior engineers' time while enabling other engineers to quickly onboard to new parts of the codebase." loop autoPlay muted playsInline>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/05-notebooks.mp4" type="video/mp4" data-cookieconsent="ignore"/>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/05-notebooks.webm" type="video/webm" data-cookieconsent="ignore"/>
+  </video>
+  <figcaption>
+    Interactive docs that tie high-level descriptions with entrypoints into the source code conserves senior engineers' time while enabling other engineers to quickly onboard to new parts of the codebase.
+  </figcaption>
 </center>
 
 And don't forget to have conversations with your colleagues! A good code exploration tool should make it easy to discover and get in touch with the person or team who wrote the code. Technical conversations where both parties come to the table well-informed (e.g., with context acquired through self-guided code navigation) to discuss a matter relevant to pushing forward a current priority are rarely wastes of time.
@@ -140,25 +130,21 @@ It may seem obvious to state that you should acquire the necessary context befor
 Reading tests is a good way to understand the structure of the code. Unit tests provide examples of the canonical invocations of public APIs—they show you how you're supposed to use them. For this reason, reading unit tests is often more helpful than reading the documentation.
 
 <center>
-  <div className="max-w-650">
-    <video title="Reference lookup" alt="Discover unit tests by looking up references to a public API function." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/06-discover-unit-tests.mp4" type="video/mp4" data-cookieconsent="ignore"/>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/06-discover-unit-tests.webm" type="video/webm" data-cookieconsent="ignore"/>
-    </video>
-    <figcaption>Discover unit tests by looking up references to a public API function.</figcaption>
-  </div>
+  <video title="Reference lookup" alt="Discover unit tests by looking up references to a public API function." loop autoPlay muted playsInline>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/06-discover-unit-tests.mp4" type="video/mp4" data-cookieconsent="ignore"/>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/06-discover-unit-tests.webm" type="video/webm" data-cookieconsent="ignore"/>
+  </video>
+  <figcaption>Discover unit tests by looking up references to a public API function.</figcaption>
 </center>
 
 It's also helpful to understand how well tested the current code is. Test coverage can be a proxy for general code quality, which is something you want to keep in mind. You may want to add tests beforehand, so you don't have to waste a bunch of time manually testing and debugging uncaught failure modes later.
 
 <center>
-  <div className="max-w-650">
-    <video title="Reveal gaps in test coverage" alt="Code coverage tools reveal gaps in test coverage." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/07-test-coverage.mp4" type="video/mp4" data-cookieconsent="ignore"/>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/07-test-coverage.webm" type="video/webm" data-cookieconsent="ignore"/>
-    </video>
-    <figcaption>Code coverage tools reveal gaps in test coverage.</figcaption>
-  </div>
+  <video title="Reveal gaps in test coverage" alt="Code coverage tools reveal gaps in test coverage." loop autoPlay muted playsInline>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/07-test-coverage.mp4" type="video/mp4" data-cookieconsent="ignore"/>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/07-test-coverage.webm" type="video/webm" data-cookieconsent="ignore"/>
+  </video>
+  <figcaption>Code coverage tools reveal gaps in test coverage.</figcaption>
 </center>
 
 If the desired functionality is clear and has been validated (see the earlier section about User Value), then writing tests first—before any other code—can help you be disciplined about defining a good API boundary. This is commonly called "Test-Driven Development."
@@ -175,15 +161,14 @@ The first is having a security review process that is clear, transparent, and id
 
 The second is about shifting the security stance of the organization from reactive to proactive. Reactive means you wait for the next zero-day to emerge, which forces you to raise a fire-alarm that stops production on all the teams affected. This sort of scenario played out across numerous software organization when the Log4j vulnerability was released in late 2021. We wrote a [blog post](log4j-log4shell-0-day) to help organizations react and remediate quickly with automation.
 
+<br/>
 <center>
-  <div className="max-w-650">
-    <div className="container my-4 video-embed embed-responsive embed-responsive-16by9">
-        <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/13OqKPXqZXo" allowFullScreen="" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
-    </div>
-    <figcaption>
-      Here is a 60 second video that shows how you could find, fix, and monitor patches to vulnerabilities using Sourcegraph. This uses Log4 as an example.
-    </figcaption>
+  <div className="max-w-650 container my-4 video-embed embed-responsive embed-responsive-16by9">
+    <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/13OqKPXqZXo" allowFullScreen="" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"frameBorder="0"></iframe>
   </div>
+  <figcaption>
+    Here is a 60 second video that shows how you could find, fix, and monitor patches to vulnerabilities using Sourcegraph. This uses Log4 as an example.
+  </figcaption>
 </center>
 
 The benefit of this sort of automation is that it lets you preview the prospective change across all the different locations that have to change. Instead of having to manually open up pull requests to many different parts of the codebase, you can preview them before beginning review processes with many different teams. You also have the benefit of re-applying the patch should a new vulnerability emerge in a later version of the library, as happened with Log4j multiple times.
@@ -195,24 +180,22 @@ There are many security scanners that do this, but some can be quite noisy. We'v
 Another approach that is complementary to security scanners is to run recurring searches for anti-patterns indicative of vulnerable code blocks or dependencies. These are patterns you define rather than the same common set of CVEs used by security scanners:
 
 <center>
-  <div className="max-w-650">
-    <video title="Codebase alerts" alt="Set up alerts for anti-patterns and vulnerable dependency versions in your codebase." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/09-code-monitoring.mp4" type="video/mp4" data-cookieconsent="ignore"/>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/09-code-monitoring.webm" type="video/webm" data-cookieconsent="ignore"/>
-    </video>
-    <figcaption>Set up alerts for anti-patterns and vulnerable dependency versions in your codebase.</figcaption>
-  </div>
+  <video title="Codebase alerts" alt="Set up alerts for anti-patterns and vulnerable dependency versions in your codebase." loop autoPlay muted playsInline>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/09-code-monitoring.mp4" type="video/mp4" data-cookieconsent="ignore"/>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/09-code-monitoring.webm" type="video/webm" data-cookieconsent="ignore"/>
+  </video>
+  <figcaption>Set up alerts for anti-patterns and vulnerable dependency versions in your codebase.</figcaption>
 </center>
 
 <figure>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left-1-log4j-response.png" alt="log4j incident response example of proactively monitoring dependencies" className="no-shadow" />
+  <figcaption>Example of proactively monitoring dependencies</figcaption>
 </figure>
-<figcaption>Example of proactively monitoring dependencies</figcaption>
 
 <figure>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left-2-repos.png" alt="Visually tracking overall code health across repos" className="no-shadow" />
+  <figcaption>Visually tracking overall code health</figcaption>
 </figure>
-<figcaption>Visually tracking overall code health</figcaption>
 
 One advantage of the search-based approach is you can tailor these more to specific codebases and anti-patterns. Rather than rely on the same set of publicly reported vulnerabilities, you can specify your own set of regular expressions and [Comby patterns](https://docs.sourcegraph.com/code_search/reference/structural#syntax-reference), and these can even be suggested opportunistically by your dev team.
 
@@ -225,15 +208,12 @@ It's important that code reviews are thorough, but often the tools don't scale w
 Having precise code navigation capabilities in code review will help reviewers quickly spin up on the structure and content of the changeset and conduct a review that is both thorough *and* timely.
 
 <center>
-  <div className="max-w-650">
-    <video title="Find references in code reviews" alt="Use go-to-definition and find references to conduct code reviews that are both thorough and efficient." loop autoPlay muted playsInline>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/10-code-reviews.mp4" type="video/mp4" data-cookieconsent="ignore"/>
-      <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/10-code-reviews.webm" type="video/webm" data-cookieconsent="ignore"/>
-    </video>
-    <figcaption>Use go-to-definition and find references to conduct code reviews that are both thorough and efficient.</figcaption>
-  </div>
+  <video title="Find references in code reviews" alt="Use go-to-definition and find references to conduct code reviews that are both thorough and efficient." loop autoPlay muted playsInline>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/10-code-reviews.mp4" type="video/mp4" data-cookieconsent="ignore"/>
+    <source src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left/10-code-reviews.webm" type="video/webm" data-cookieconsent="ignore"/>
+  </video>
+  <figcaption>Use go-to-definition and find references to conduct code reviews that are both thorough and efficient.</figcaption>
 </center>
-<br/>
 
 Another trick is to break up a large changeset into smaller changesets that don't change the behavior of the system until the very last one (e.g., using feature flags). These smaller changes can be more easily reviewed and validated.
 
