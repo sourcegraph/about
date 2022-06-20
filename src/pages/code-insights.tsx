@@ -463,42 +463,34 @@ const CodeInsightsPage: FunctionComponent = () => {
             {/* Use Cases */}
             <div className="bg-gradient-venus-radial py-4 d-none d-lg-block d-md-block">
                 <ContentSection className="py-4 py-md-7 h-lg-850 h-md-850">
-                    <h2 className="mb-2 display-3 text-center font-weight-bold">Popular Code Insights templates</h2>
+                    <h2 className="mb-5 display-3 text-center font-weight-bold">Popular Code Insights templates</h2>
                     <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                         <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
-                            <div className="row mt-5">
-                                <div className="w-100 d-flex flex-wrap">
-                                    {templates.migrations.map(template => (
-                                        <TemplateCodeBlock key={template.header} template={template} />
-                                    ))}
-                                </div>
+                            <div className="w-100 d-flex flex-wrap mt-5">
+                                {templates.migrations.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
                             </div>
                         </Tab>
                         <Tab eventKey="version-tracking" title="Version Tracking" tabClassName="tab-header">
-                            <div className="row mt-5 justify-content-center">
-                                <div className="w-100 d-flex flex-wrap">
-                                    {templates.versionTracking.map(template => (
-                                        <TemplateCodeBlock key={template.header} template={template} />
-                                    ))}
-                                </div>
+                            <div className="w-100 d-flex flex-wrap mt-5 justify-content-center">
+                                {templates.versionTracking.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
                             </div>
                         </Tab>
                         <Tab eventKey="security" title="Security" tabClassName="tab-header">
-                            <div className="row mt-5 justify-content-center">
-                                <div className="w-100 d-flex flex-wrap">
-                                    {templates.security.map(template => (
-                                        <TemplateCodeBlock key={template.header} template={template} />
-                                    ))}
-                                </div>
+                            <div className="w-100 d-flex flex-wrap mt-5 justify-content-center">
+                                {templates.security.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
                             </div>
                         </Tab>
                         <Tab eventKey="code-health" title="Code Health" tabClassName="tab-header">
-                            <div className="row mt-5 justify-content-center">
-                                <div className="w-100 d-flex flex-wrap">
-                                    {templates.codeHealth.map(template => (
-                                        <TemplateCodeBlock key={template.header} template={template} />
-                                    ))}
-                                </div>
+                            <div className="w-100 d-flex flex-wrap mt-5 justify-content-center">
+                                {templates.codeHealth.map(template => (
+                                    <TemplateCodeBlock key={template.header} template={template} />
+                                ))}
                             </div>
                         </Tab>
                     </Tabs>
@@ -517,34 +509,26 @@ const CodeInsightsPage: FunctionComponent = () => {
             {/* Use Cases Carousel */}
             <div className="bg-gradient-venus-radial py-4 d-block d-lg-none d-md-none">
                 <ContentSection className="py-4 py-md-7">
-                    <h2 className="mb-2 display-3 text-center">Popular Code Insights templates</h2>
+                    <h2 className="mb-5 display-3 font-weight-bold text-center">Popular Code Insights templates</h2>
                     <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                         <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
-                            <div className="row mt-5 justify-content-center">
-                                <div className="w-100">
-                                    <TabCarousel items={templates.migrations} autoAdvance={true} />
-                                </div>
+                            <div className="w-100 mt-5 justify-content-center">
+                                <TabCarousel items={templates.migrations} autoAdvance={true} />
                             </div>
                         </Tab>
                         <Tab eventKey="version-tracking" title="Version Tracking" tabClassName="tab-header">
-                            <div className="row mt-5 justify-content-center">
-                                <div className="w-100">
-                                    <TabCarousel items={templates.versionTracking} autoAdvance={true} />
-                                </div>
+                            <div className="w-100 mt-5 justify-content-center">
+                                <TabCarousel items={templates.versionTracking} autoAdvance={true} />
                             </div>
                         </Tab>
                         <Tab eventKey="security" title="Security" tabClassName="tab-header">
-                            <div className="row mt-5 justify-content-center">
-                                <div className="w-100">
-                                    <TabCarousel items={templates.security} autoAdvance={true} />
-                                </div>
+                            <div className="w-100 mt-5 justify-content-center">
+                                <TabCarousel items={templates.security} autoAdvance={true} />
                             </div>
                         </Tab>
                         <Tab eventKey="code-health" title="Code Health" tabClassName="tab-header">
-                            <div className="row mt-5 justify-content-center">
-                                <div className="w-100">
-                                    <TabCarousel items={templates.codeHealth} autoAdvance={true} />
-                                </div>
+                            <div className="w-100 mt-5 justify-content-center">
+                                <TabCarousel items={templates.codeHealth} autoAdvance={true} />
                             </div>
                         </Tab>
                     </Tabs>

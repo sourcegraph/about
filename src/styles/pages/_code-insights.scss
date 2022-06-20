@@ -79,6 +79,13 @@
         color: $blurple;
         font-weight: 600 !important;
     }
+    .nav-tabs .nav-link.active {
+        color: $black !important;
+        background-color: transparent !important;
+        @include media-breakpoint-up(md) {
+            border-bottom: solid $vivid-violet 3px;
+        }
+    }
 
     .btn-link,
     .btn-primary {
