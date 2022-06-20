@@ -50,7 +50,7 @@ Many users have custom tooling or scripts that they run as batch changes steps. 
 
 Now you can directly mount files or directories on the batch change container using [steps.mount](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-mount). This is an experimental feature that's only supported when running batch changes locally. Lots of improvements are on the way ([issue](https://github.com/sourcegraph/sourcegraph/issues/14851)).
 
-We're committed to making the process of iterating on batch changes as fast as possible. Submit feedback through your Sourcegraph account manager, or raise an issue [here](https://github.com/sourcegraph/sourcegraph/issues/new?title=Batch%20changes:&body=@batchers%20this%20is%20an%20issue%20for%20you)!
+We're committed to making the process of iterating on batch changes as fast as possible. Submit feedback through your Sourcegraph account manager, or raise an issue [here](https://github.com/sourcegraph/sourcegraph/issues/new?title=Batch%20changes:&body=@batchers%20this%20is%20an%20issue%20for%20you).
 
 ## Sort and filter "detect and track patterns" code insights series 
 
