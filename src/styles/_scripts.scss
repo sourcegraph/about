@@ -9,6 +9,9 @@
     color: $dark-9;
     opacity: 0.95;
     z-index: 1075 !important;
+    @include media-breakpoint-down(md) {
+        height: 90vh;
+    }
 }
 
 /* Show one prompt at a time. Cookie Banner covers ChatBot until complete */
