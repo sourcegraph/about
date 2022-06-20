@@ -30,7 +30,7 @@ Until now, you had to run `src-cli` locally to create your batch changes. `src-c
 
 Today, we're announcing that you can now run [batch changes server-side (beta)](https://docs.sourcegraph.com/batch_changes/explanations/server_side). 
 
-Setting up running batch changes server-side allows to:
+Setting up running batch changes server-side allows you to:
 - Run large-scale or resource intensive batch changes without clogging your local machine.
 - Run large batch changes faster by distributing them across an autoscaled pool of compute instances.
 - Get a better debugging experience, with logs being streamed directly into Sourcegraph.
