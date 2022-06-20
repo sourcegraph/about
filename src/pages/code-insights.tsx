@@ -440,6 +440,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                     <CustomCarousel
                         items={items}
                         autoAdvance={true}
+                        hasImages={true}
                         showHeadlinesOnMobile={true}
                         title="How engineering teams use Code Insights"
                     />

@@ -260,7 +260,7 @@ const UseCasePage: FunctionComponent = () => (
         </div>
 
         <ContentSection className="py-7">
-            <CustomCarousel items={items} autoAdvance={true} smallPanel={true} title="How Sourcegraph helps" />
+            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
         </ContentSection>
 
         <div className="bg-gradient-saturn-saturated py-8">

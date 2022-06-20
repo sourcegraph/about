@@ -17,14 +17,13 @@ interface CarouselProps {
     previousItem?: CarouselItem
     currentItemIndex?: number
     autoAdvance?: boolean
-    smallPanel?: boolean
-    showHeadlinesOnMobile?: boolean
+    hasImages?: boolean
 }
 
 interface CarouselItem {
     buttonLabel: string
     headerClass?: string
-    text: string | ReactNode
+    text: ReactNode
     itemClass: string
 }
 
@@ -41,7 +40,8 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
             {title && (
                 <h2
                     className={classNames(
-                        'display-3 text-md-center font-weight-bold mt-lg-3 pb-4',
+                        'display-3 text-md-center font-weight-bold mt-lg-3',
+                        props.hasImages ? 'mb-6' : 'mb-4',
                         isMdOrDown && 'text-uppercase text-base'
                     )}
                 >
@@ -49,11 +49,11 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 </h2>
             )}
             <div
-                className={`d-flex flex-wrap h-auto ${
-                    autoAdvance ? 'justify-content-between h-xl-450' : 'flex-lg-row flex-column py-8'
+                className={`d-flex flex-wrap align-items-center h-auto ${
+                    autoAdvance ? 'justify-content-between' : 'flex-lg-row flex-column py-8'
                 }`}
             >
-                {props.showHeadlinesOnMobile && (
+                {props.hasImages && (
                     <div className="d-block d-lg-none mb-lg-0 mb-5 mx-md-auto">
                         {carouselItems.map((item, index) => (
                             <h2
@@ -75,7 +75,7 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 <div
                     className={
                         carouselHook.autoAdvance
-                            ? 'd-lg-flex flex-column d-none col-md-2 m-0 px-0 my-lg-3 col-lg-5'
+                            ? 'd-lg-flex flex-column d-none col-md-2 m-0 px-0 col-lg-5'
                             : 'd-lg-flex d-none ml-lg-7 col-lg-4 ml-md-5'
                     }
                 >
@@ -108,8 +108,8 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                 </div>
                 <div
                     className={`${
-                        props.smallPanel ? 'h-300' : 'h-500'
-                    } col-lg-6 col-md-10 col-sm-12 mt-4 px-0 m-auto d-flex align-items-center align-items-lg-start justify-content-lg-start justify-content-center`}
+                        props.hasImages ? 'h-500' : 'h-300'
+                    } col-lg-6 col-md-10 col-sm-12 mt-4 px-0 m-auto d-flex align-items-center justify-content-lg-start justify-content-center`}
                 >
                     {carouselItems.map((item, index) => (
                         <div
