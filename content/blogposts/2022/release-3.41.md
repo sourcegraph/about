@@ -60,6 +60,6 @@ Detect and track patterns charts now allow setting the series sort order and num
 
 ## Allow only extensions authored by Sourcegraph
 
-You can now restrict users to only use Sourcegraph-authored extensions by setting [`extensions.allowOnlySourcegraphAuthoredExtensions`](../config/site_config.md) to `true` in your site configuration. This allows you to easily enforce that any extensions you are using are built and supported by Sourcegraph.
+You can now restrict users to only use Sourcegraph-authored extensions by setting [`extensions.allowOnlySourcegraphAuthoredExtensions`](../config/site_config.md) to `true` in your site configuration. This allows you to easily enforce that any extensions you are using are built and supported by Sourcegraph. While we encourage trying out open source extensions from the community, this setting may be valuable for those teams who want to ensure all of their extensions are directly supported by Sourcegraph.
 
 For more information about this feature please refer to the [documentation](https://docs.sourcegraph.com/admin/extensions#allow-only-extensions-authored-by-sourcegraph).
