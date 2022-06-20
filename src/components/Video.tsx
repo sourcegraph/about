@@ -12,7 +12,7 @@ interface Video {
 }
 
 export const Video: FunctionComponent<Video> = ({ source, loop, caption, showCaption = false, title }) => (
-    <figure role="tooltip" aria-label="Your accessible description goes here">
+    <figure>
         <video
             className="w-100 h-auto shadow"
             width={1280}
