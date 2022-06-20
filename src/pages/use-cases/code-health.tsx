@@ -282,7 +282,9 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h2 className="mb-md-4 display-3 font-weight-bold max-w-500">Improving code health can be daunting</h2>
+                        <h2 className="mb-md-4 display-3 font-weight-bold max-w-500">
+                            Improving code health can be daunting
+                        </h2>
                         <p className="max-w-500">
                             Engineering teams need to track and measure code quality consistently to monitor code health
                             across their entire codebase, but current tools don't make this easy. What does that mean
