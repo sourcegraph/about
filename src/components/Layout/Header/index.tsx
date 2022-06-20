@@ -46,6 +46,7 @@ export const Header: FunctionComponent<Props> = props => {
                         height={isLgOrDown ? '35' : '26'}
                         className="min-w-150"
                         aria-label="Sourcegraph - Universal code search"
+                        draggable={false}
                     />
                 </Navbar.Brand>
 
