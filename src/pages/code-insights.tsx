@@ -360,7 +360,12 @@ const CodeInsightsPage: FunctionComponent = () => {
                         </p>
                     </div>
                     <div className="col-lg-7 ml-lg-6 mb-md-4 d-flex align-items-center video-container">
-                        <Video filePath="code_insights/code-insights-720" />
+                        <Video
+                            source={{ webm: 'code_insights/code-insights-720', mp4: 'code_insights/code-insights-720' }}
+                            title="Code Insights"
+                            caption="Code Insights"
+                            loop={true}
+                        />
                     </div>
                 </div>
             </ContentSection>
@@ -463,12 +468,8 @@ const CodeInsightsPage: FunctionComponent = () => {
             <ContentSection className="py-7">
                 <h1 className="mb-3 text-center font-weight-bold">See Code Insights in action</h1>
                 <div className="row justify-content-center pt-md-4">
-                    <div className="col-lg-8 container video-embed embed-responsive embed-responsive-16by9 ">
-                        <YouTube
-                            className="embed-responsive-item"
-                            id="fMCUJQHfbUA"
-                            title="Sourcegraph Code Insights demo"
-                        />
+                    <div className="col-lg-8">
+                        <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" />
                     </div>
                 </div>
             </ContentSection>
