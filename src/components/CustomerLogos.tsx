@@ -96,7 +96,7 @@ const ImageWrapper: FunctionComponent<ImageWrapper> = ({ children, isLink, logo 
         return (
             <Link href={logo.link} key={logo.name} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="pointer-cursor">{children}</a>
+                <a className="cursor-pointer">{children}</a>
             </Link>
         )
     }
