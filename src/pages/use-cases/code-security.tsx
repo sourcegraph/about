@@ -272,9 +272,9 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 font-weight-bold mw-400">
+                        <h2 className="mb-4 display-3 font-weight-bold mw-400">
                             Identifying & resolving security vulnerabilities is painful
-                        </h1>
+                        </h2>
                         <p>
                             Existing tooling doesn't enable teams to be agile and effective when responding to security
                             vulnerabilities. What does that mean for you?
@@ -333,7 +333,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column text-start text-md-center mx-auto align-items-lg-center">
-                        <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
+                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
                         <p className="max-w-450">
                             Find, fix, and track vulnerable code quickly across your entire codebase to improve code
                             security.
@@ -370,7 +370,7 @@ const UseCasePage: FunctionComponent = () => (
         <ContentSection className="py-lg-7 py-5">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />

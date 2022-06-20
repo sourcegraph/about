@@ -222,9 +222,9 @@ const CodeReusePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between px-0">
                     <div className="p-lg-0 col-xl-6 col-lg-7 px-4">
-                        <h1 className="mb-4 font-weight-bold max-w-600">
+                        <h2 className="mb-4 display-3 font-weight-bold max-w-600">
                             Finding reliable, reusable code is tedious and inefficient
-                        </h1>
+                        </h2>
                         <p className="mt-5">
                             Current tools don’t fully enable teams to innersource and use existing code to develop a
                             more secure and coherent codebase. What does that mean for you and your team?
@@ -271,7 +271,7 @@ const CodeReusePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
-                        <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
+                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
                         <p>
                             Make it easier to discover trustworthy code for reuse so your teams can spend more time
                             solving new problems and less time rewriting code.
@@ -308,7 +308,7 @@ const CodeReusePage: FunctionComponent = () => (
         <ContentSection className="py-lg-7 py-5">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
@@ -318,7 +318,7 @@ const CodeReusePage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="text-center">
-                <h1 className="font-weight-bold mb-6">Make the most of your existing code.</h1>
+                <h2 className="display-3 font-weight-bold mb-6">Make the most of your existing code.</h2>
                 <Link href="/get-started" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a

@@ -313,9 +313,9 @@ const CodeInsightsPage: FunctionComponent = () => {
                     <div className="bg" />
                     <div className="container pb-4">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-7">
                                 <div className="text-uppercase mb-2">Code Insights</div>
-                                <h1 className="display-3 font-weight-bold mb-4">
+                                <h1 className="display-2 font-weight-bold mb-4">
                                     Track what really matters to you and your team.
                                 </h1>
                                 <h4 className="mb-5">
@@ -333,8 +333,8 @@ const CodeInsightsPage: FunctionComponent = () => {
         >
             <ContentSection className="py-lg-8 py-7">
                 <div className="row justify-content-between">
-                    <div className="col-lg-4 pl-lg-0">
-                        <h2 className="mb-3 font-weight-bold">
+                    <div className="col-lg-5 pl-lg-0">
+                        <h2 className="mb-3 display-3 font-weight-bold">
                             Finally, useful engineering metrics{' '}
                             <span>
                                 <i>you</i>
@@ -348,7 +348,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                             and accuracy of Sourcegraph Code Search.
                         </p>
                     </div>
-                    <div className="col-lg-7 ml-lg-6 mb-md-4 d-flex align-items-center video-container">
+                    <div className="col-lg-7 mb-md-4 d-flex align-items-center video-container">
                         <Video filePath="code_insights/code-insights-720" />
                     </div>
                 </div>
@@ -448,7 +448,7 @@ const CodeInsightsPage: FunctionComponent = () => {
 
             {/* Demo */}
             <ContentSection className="py-7">
-                <h1 className="mb-3 text-center font-weight-bold">See Code Insights in action</h1>
+                <h2 className="mb-3 display-3 text-center font-weight-bold">See Code Insights in action</h2>
                 <div className="row justify-content-center pt-md-4">
                     <div className="col-lg-8 container video-embed embed-responsive embed-responsive-16by9 ">
                         <YouTube
@@ -463,7 +463,7 @@ const CodeInsightsPage: FunctionComponent = () => {
             {/* Use Cases */}
             <div className="bg-gradient-venus-radial py-4 d-none d-lg-block d-md-block">
                 <ContentSection className="py-4 py-md-7 h-lg-850 h-md-850">
-                    <h1 className="mb-2 text-center font-weight-bold">Popular Code Insights templates</h1>
+                    <h2 className="mb-2 display-3 text-center font-weight-bold">Popular Code Insights templates</h2>
                     <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                         <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                             <div className="row mt-5">
@@ -517,7 +517,7 @@ const CodeInsightsPage: FunctionComponent = () => {
             {/* Use Cases Carousel */}
             <div className="bg-gradient-venus-radial py-4 d-block d-lg-none d-md-none">
                 <ContentSection className="py-4 py-md-7">
-                    <h1 className="mb-2 text-center">Popular Code Insights templates</h1>
+                    <h2 className="mb-2 display-3 text-center">Popular Code Insights templates</h2>
                     <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                         <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
                             <div className="row mt-5 justify-content-center">
@@ -564,7 +564,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                 <ContentSection>
                     <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
                         <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
-                            <h1 className="font-weight-bold">Get started with Code Insights</h1>
+                            <h2 className="display-3 font-weight-bold">Get started with Code Insights</h2>
                             <p>
                                 Create a code insight in 60 seconds and get historical data for previously untracked
                                 metrics — data backfills automatically.
@@ -591,7 +591,7 @@ const CodeInsightsPage: FunctionComponent = () => {
             <ContentSection className="py-lg-7 py-5">
                 <div className="row d-flex">
                     <div className="col-lg-6">
-                        <h1 className="mb-5 font-weight-bold">Learn more</h1>
+                        <h2 className="mb-5 display-3 font-weight-bold">Learn more</h2>
                     </div>
                     {blogResourceItems.map(item => (
                         <BlogResourceItem key={item.title} blog={item} />

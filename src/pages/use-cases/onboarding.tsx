@@ -224,7 +224,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 mw-400 font-weight-bold">Developer onboarding is slow and expensive</h1>
+                        <h2 className="mb-4 mw-400 display-3 font-weight-bold">Developer onboarding is slow and expensive</h2>
                         <p>
                             Current tools and practices don't enable teams to onboard developers effectively or
                             efficiently.
@@ -287,7 +287,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column text-start text-md-center mx-auto max-w-550">
-                        <h1 className="font-weight-bold">Give your team the onboarding experience they deserve.</h1>
+                        <h2 className="display-3 font-weight-bold">Give your team the onboarding experience they deserve.</h2>
                         <p>
                             Enable all your devs to find the answers they need to work more efficiently, ship code more
                             confidently, and stay in flow.
@@ -324,7 +324,7 @@ const UseCasePage: FunctionComponent = () => (
         <ContentSection className="py-lg-7 py-5">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
@@ -334,7 +334,7 @@ const UseCasePage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="d-flex flex-wrap justify-content-center text-center mb-lg-6">
-                <h2 className="w-100 font-weight-bold mb-4">Better onboarding is only a few searches away.</h2>
+                <h2 className="w-100 display-3 font-weight-bold mb-4">Better onboarding is only a few searches away.</h2>
                 <Link href="/get-started" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
