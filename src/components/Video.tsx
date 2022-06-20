@@ -6,7 +6,7 @@ interface Video {
         mp4: string
     }
     loop: boolean
-    caption: string // can also be used for alt
+    caption: string
     title: string
 }
 
