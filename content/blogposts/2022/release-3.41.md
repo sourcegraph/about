@@ -17,7 +17,7 @@ changelogItems:
   - description: 'Commit and diff search: The hard limit of 50 repositories has been removed, so you can now run broader searches. Long-running searches will continue running until the timeout is hit.'
     url: https://github.com/sourcegraph/sourcegraph/pull/36486
     category: Search
-  - description: 'Zoekt-indexserver has a new debug landing page, /debug, which exposes information about the queue, the list of indexed repositories, and the list of assigned repositories for easier visual debugging. Admins can reach the debug landing page by selecting Instrumentation > indexed-search-indexer from the site admin view. The debug page is linked at the top.'
+  - description: 'Zoekt-indexserver has a new debug landing page, /debug, which exposes information about the queue, the list of indexed repositories, and the list of assigned repositories for easier visual debugging. Admins can reach the debug landing page by going to the site admin view and selecting Instrumentation > indexed-search-indexer > Debug.'
     url: https://github.com/sourcegraph/zoekt/pull/346
     category: Admin
 ---
@@ -34,7 +34,7 @@ Setting up running batch changes server-side allows you to:
 - Run large-scale or resource intensive batch changes without clogging your local machine.
 - Run large batch changes faster by distributing them across an autoscaled pool of compute instances.
 - Get a better debugging experience, with logs being streamed directly into Sourcegraph.
-- Trade-off a little more setup for the Sourcegraph admin, against less setup for users (no local `src-cli`)
+- Simplify setup for local users (no local `src-cli`) by having the Sourcegraph admin manage server-side setup.
 
 This is the outcome of months of iteration on the experimental version of the feature, and we're grateful to early users for their feedback!
 
