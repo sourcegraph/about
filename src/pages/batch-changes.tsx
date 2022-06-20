@@ -107,7 +107,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                             source={{ webm: 'batch-changes/how-it-works', mp4: 'batch-changes/how-it-works' }}
                             loop={true}
                             title="Batch Changes: How it works"
-                            caption="Search, define, executre and track code changes"
+                            caption="Search, define, execute, and track code changes"
                         />
                     </div>
                 </div>

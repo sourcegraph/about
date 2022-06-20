@@ -54,11 +54,9 @@ Time is of the essence. Discovering existing functions and functionality early o
   source={{webm: 'blog/shift-left/01-code-reuse', mp4: 'blog/shift-left/01-code-reuse'}} 
   loop={true}
   title="Code reuse"
-  caption="Discovering and reusing existing code can help you spin up a MVP ASAP, so you can quickly validate the user need with a rough sketch of the product." 
+  caption="Discovering and reusing existing code can help you spin up a MVP ASAP, so you can quickly validate the user need with a rough sketch of the product."
+  showCaption={true}
 />
-<figcaption>
-  Discovering and reusing existing code can help you spin up a MVP ASAP, so you can quickly validate the user need with a rough sketch of the product.
-</figcaption>
 
 In order to take full advantage of existing libraries, you need to be able to understand how to use them quickly. This applies to both open source and inner source. Shared libraries must not only be available, they must be accessible and understandable.
 
@@ -68,11 +66,9 @@ Investing in great documentation helps, but this is a hard change to make if you
   source={{webm: 'blog/shift-left/02-find-references', mp4: 'blog/shift-left/01-code-reuse'}} 
   loop={true}
   title="Find references" 
-  caption="Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it." 
+  caption="Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it."
+  showCaption={true}
 />
-<figcaption>
-  Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it.
-</figcaption>
 
 By stitching together existing components, you can spin up a basic, hacky version of a new feature or product 10x more quickly. Ideally, you don't even have to worry about spinning up a production environment before soliciting user feedback—tools like ngrok (a favorite of hackathons) enable you to quickly share a service running on your local machine to early adopters around the world.
 
@@ -93,21 +89,17 @@ Acquiring context means understanding the structure and relationships in code. T
   source={{webm: 'blog/shift-left/03-defs-and-refs', mp4: 'blog/shift-left/03-defs-and-refs'}} 
   loop={true}
   title="Definitions and references" 
-  caption="Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works." 
+  caption="Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works."
+  showCaption={true}
 />
-<figcaption>
-  Walking the forward and backward graph of code (defs and refs) is the bread-and-butter of building up a contextual mental model of how the code works.
-</figcaption>
 
 <Video 
   source={{webm: 'blog/shift-left/04-jump-to-definition', mp4: 'blog/shift-left/04-jump-to-definition'}} 
   loop={true}
   title="Jump to definition" 
-  caption="Fast and accurate jump-to-definition that Just Works, even across dependency boundaries, is essential for chasing down context through the winding rabbitholes of code." 
+  caption="Fast and accurate jump-to-definition that Just Works, even across dependency boundaries, is essential for chasing down context through the winding rabbitholes of code"
+  showCaption={true} 
 />
-<figcaption>
-  Fast and accurate jump-to-definition that Just Works, even across dependency boundaries, is essential for chasing down context through the winding rabbitholes of code.
-</figcaption>
 
 Targeted pieces of documentation can help guide new devs to quickly acquire the essential aspects of an area of code. You'll ideally want to use a tool that integrates nicely with the source code and doesn't go stale with time.
 
@@ -115,11 +107,9 @@ Targeted pieces of documentation can help guide new devs to quickly acquire the 
   source={{webm: 'blog/shift-left/05-notebooks', mp4: 'blog/shift-left/05-notebooks'}} 
   loop={true}
   title="Interactive docs for engineering" 
-  caption="Interactive docs that tie high-level descriptions with entrypoints into the source code conserves senior engineers' time while enabling other engineers to quickly onboard to new parts of the codebase." 
+  caption="Interactive docs that tie high-level descriptions with entrypoints into the source code conserves senior engineers' time while enabling other engineers to quickly onboard to new parts of the codebase."
+  showCaption={true}
 />
-<figcaption>
-  Interactive docs that tie high-level descriptions with entrypoints into the source code conserves senior engineers' time while enabling other engineers to quickly onboard to new parts of the codebase.
-</figcaption>
 
 And don't forget to have conversations with your colleagues! A good code exploration tool should make it easy to discover and get in touch with the person or team who wrote the code. Technical conversations where both parties come to the table well-informed (e.g., with context acquired through self-guided code navigation) to discuss a matter relevant to pushing forward a current priority are rarely wastes of time.
 
@@ -133,9 +123,9 @@ Reading tests is a good way to understand the structure of the code. Unit tests 
   source={{webm: 'blog/shift-left/06-discover-unit-tests', mp4: 'blog/shift-left/06-discover-unit-tests'}} 
   loop={true}
   title="Reference lookup" 
-  caption="Discover unit tests by looking up references to a public API function." 
+  caption="Discover unit tests by looking up references to a public API function."
+  showCaption={true}
 />
-<figcaption>Discover unit tests by looking up references to a public API function.</figcaption>
 
 It's also helpful to understand how well tested the current code is. Test coverage can be a proxy for general code quality, which is something you want to keep in mind. You may want to add tests beforehand, so you don't have to waste a bunch of time manually testing and debugging uncaught failure modes later.
 
@@ -143,9 +133,9 @@ It's also helpful to understand how well tested the current code is. Test covera
   source={{webm: 'blog/shift-left/07-test-coverage', mp4: 'blog/shift-left/07-test-coverage'}} 
   loop={true}
   title="Reveal gaps in test coverage" 
-  caption="Code coverage tools reveal gaps in test coverage." 
+  caption="Code coverage tools reveal gaps in test coverage."
+  showCaption={true}
 />
-<figcaption>Code coverage tools reveal gaps in test coverage.</figcaption>
 
 If the desired functionality is clear and has been validated (see the earlier section about User Value), then writing tests first—before any other code—can help you be disciplined about defining a good API boundary. This is commonly called "Test-Driven Development."
 
@@ -178,9 +168,9 @@ Another approach that is complementary to security scanners is to run recurring 
   source={{webm: 'blog/shift-left/09-code-monitoring', mp4: 'blog/shift-left/09-code-monitoring'}} 
   loop={true}
   title="Codebase alerts" 
-  caption="Set up alerts for anti-patterns and vulnerable dependency versions in your codebase." 
+  caption="Set up alerts for anti-patterns and vulnerable dependency versions in your codebase."
+  showCaption={true}
 />
-<figcaption>Set up alerts for anti-patterns and vulnerable dependency versions in your codebase.</figcaption>
 
 <figure>
   <img src="https://storage.googleapis.com/sourcegraph-assets/blog/shift-left-1-log4j-response.png" alt="log4j incident response example of proactively monitoring dependencies" className="no-shadow" />
@@ -206,9 +196,9 @@ Having precise code navigation capabilities in code review will help reviewers q
   source={{webm: 'blog/shift-left/10-code-reviews', mp4: 'blog/shift-left/10-code-reviews'}} 
   loop={true}
   title="Find references in code reviews" 
-  caption="Use go-to-definition and find references to conduct code reviews that are both thorough and efficient." 
+  caption="Use go-to-definition and find references to conduct code reviews that are both thorough and efficient."
+  showCaption={true}
 />
-<figcaption>Use go-to-definition and find references to conduct code reviews that are both thorough and efficient.</figcaption>
 
 Another trick is to break up a large changeset into smaller changesets that don't change the behavior of the system until the very last one (e.g., using feature flags). These smaller changes can be more easily reviewed and validated.
 

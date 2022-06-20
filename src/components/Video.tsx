@@ -6,12 +6,13 @@ interface Video {
         mp4: string
     }
     loop: boolean
+    showCaption?: boolean
     caption: string
     title: string
 }
 
-export const Video: FunctionComponent<Video> = ({ source, loop, caption, title }) => (
-    <figure>
+export const Video: FunctionComponent<Video> = ({ source, loop, caption, showCaption = false, title }) => (
+    <figure role="tooltip" aria-label="Your accessible description goes here">
         <video
             className="w-100 h-auto shadow"
             width={1280}
@@ -35,7 +36,8 @@ export const Video: FunctionComponent<Video> = ({ source, loop, caption, title }
                 src={`https://storage.googleapis.com/sourcegraph-assets/${source.mp4}.mp4`}
                 data-cookieconsent="ignore"
             />
-            {caption && <figcaption>{caption}</figcaption>}
+            {caption && caption}
         </video>
+        {showCaption && <figcaption>{caption}</figcaption>}
     </figure>
 )
