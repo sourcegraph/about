@@ -150,11 +150,12 @@ Inside many organizations, the security team and the development team butt heads
 The first is having a security review process that is clear, transparent, and ideally as automated as possible. This enables the developer to ensure their patch meets the security standards on their own, without having to go through costly, multi-person round-trip review cycles. You can use tools that automate code coverage, linting, and static checks. And you can implement a security testing suite that validates key aspects of your application security model.
 
 The second is about shifting the security stance of the organization from reactive to proactive. Reactive means you wait for the next zero-day to emerge, which forces you to raise a fire-alarm that stops production on all the teams affected. This sort of scenario played out across numerous software organization when the Log4j vulnerability was released in late 2021. We wrote a [blog post](log4j-log4shell-0-day) to help organizations react and remediate quickly with automation.
-∂
-<YouTube title="Find, fix, and monitor patches to vulnerabilities using Sourcegraph" id="13OqKPXqZXo"/>
-<figcaption>
-  Here is a 60 second video that shows how you could find, fix, and monitor patches to vulnerabilities using Sourcegraph. This uses Log4 as an example.
-</figcaption>
+
+<YouTube 
+title="Here is a 60 second video that shows how you could find, fix, and monitor patches to vulnerabilities using Sourcegraph. This uses Log4 as an example."
+showTitle={true}
+id="13OqKPXqZXo"
+/>
 
 The benefit of this sort of automation is that it lets you preview the prospective change across all the different locations that have to change. Instead of having to manually open up pull requests to many different parts of the codebase, you can preview them before beginning review processes with many different teams. You also have the benefit of re-applying the patch should a new vulnerability emerge in a later version of the library, as happened with Log4j multiple times.
 
