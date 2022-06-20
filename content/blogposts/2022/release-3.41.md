@@ -38,7 +38,7 @@ Setting up running batch changes server-side allows to:
 
 This is the outcome of months of iteration on the experimental version of the feature, and we're grateful to early users for their feedback!
 
-This feature requires to setup [executors](https://docs.sourcegraph.com/admin/executors) (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run Code Intelligence [auto-indexing](https://docs.sourcegraph.com/code_intelligence/how-to/enable_auto_indexing) (experimental).
+This feature requires admins to setup [executors](https://docs.sourcegraph.com/admin/executors) (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run Code Intelligence [auto-indexing](https://docs.sourcegraph.com/code_intelligence/how-to/enable_auto_indexing) (experimental).
 
 <!-- TODO: asset welcome right after deployment on demo -->
 
