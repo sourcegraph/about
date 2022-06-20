@@ -37,7 +37,7 @@ const Demo: FunctionComponent = () => {
                         <YouTube
                             title="Sourcegraph Product Tour"
                             id="E2QYIwKlMac"
-                            className="embed-responsive-item my-5"
+                            className="my-5"
                         />
 
                         <h2 className="font-weight-bold">Like what you see?</h2>
