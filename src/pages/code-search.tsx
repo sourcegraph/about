@@ -3,7 +3,14 @@ import React, { FunctionComponent } from 'react'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import Link from 'next/link'
 
-import { ContentSection, BlockquoteWithBorder, IntegrationsSection, Layout, SelfHostedSection } from '@components'
+import {
+    ContentSection,
+    BlockquoteWithBorder,
+    IntegrationsSection,
+    Layout,
+    SelfHostedSection,
+    YouTube,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const CodeSearchPage: FunctionComponent = () => (
@@ -59,15 +66,8 @@ export const CodeSearchPage: FunctionComponent = () => (
         {/* A search engine built for code */}
         <ContentSection>
             <div className="row">
-                <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 ">
-                    <iframe
-                        className="embed-responsive-item"
-                        src="https://www.youtube-nocookie.com/embed/aDU4C9j-hYA?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                        allowFullScreen={true}
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        frameBorder={0}
-                        title="AND/OR operators for universal code search"
-                    />
+                <div className="col-lg-6">
+                    <YouTube title="AND/OR operators for universal code search" id="aDU4C9j-hYA" />
                 </div>
                 <div className="col-lg-6">
                     <h2 className="display-3 font-weight-bold mb-3 mt-lg-0 mt-3">A search engine built for code</h2>
@@ -182,15 +182,8 @@ export const CodeSearchPage: FunctionComponent = () => (
         <ContentSection className="pb-7">
             <h2 className="display-3 font-weight-bold mt-5 mb-4">How developers are using Sourcegraph</h2>
             <div className="row">
-                <div className="col-lg-6 container video-embed embed-responsive embed-responsive-16by9 border">
-                    <iframe
-                        className="embed-responsive-item"
-                        src="https://www.youtube-nocookie.com/embed/r2CpLe1h89I?autoplay=0&amp;cc_load_policy=0&amp;start=0&amp;end=0&amp;loop=0&amp;controls=1&amp;modestbranding=1&amp;rel=0"
-                        allowFullScreen={true}
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        frameBorder={0}
-                        title="How developers are using Sourcegraph"
-                    />
+                <div className="col-lg-6">
+                    <YouTube title="How developers are using Sourcegraph" id="r2CpLe1h89I" />
                 </div>
                 <div className="col-lg-6">
                     <p>

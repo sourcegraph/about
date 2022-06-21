@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, FormLegal } from '@components'
+import { Layout, FormLegal, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useHubSpot, useChiliPiper } from '@hooks'
 
@@ -40,16 +40,12 @@ const FixingVulnerabilities: FunctionComponent = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 mt-4 mt-lg-0">
-                        <div className="embed-responsive embed-responsive-16by9">
-                            <iframe
-                                src="https://www.youtube.com/embed/13OqKPXqZXo"
-                                title="Finding and fixing vulnerabilities with Sourcegraph"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen={true}
-                                className="embed-responsive-item"
-                            />
-                        </div>
+                    <div className="col-lg-6">
+                        <YouTube
+                            title="Finding and fixing vulnerabilities with Sourcegraph"
+                            id="13OqKPXqZXo"
+                            className="mt-4 mt-lg-0"
+                        />
                     </div>
                 </div>
             </div>

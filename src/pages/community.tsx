@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-import { ContentSection, Layout } from '@components'
+import { ContentSection, Layout, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const Community: FunctionComponent = () => (
@@ -103,7 +103,7 @@ export const Community: FunctionComponent = () => (
             <Tabs defaultActiveKey="sgEvents" id="use-cases" className="justify-content-center">
                 <Tab eventKey="sgEvents" title="Events">
                     <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-8">
+                        <div className="col-lg-6">
                             <p>
                                 Keynote speakers. Job opportunities and partnerships. You can find us in every major
                                 industry event. Give us an air-hug if you see us.
@@ -119,16 +119,8 @@ export const Community: FunctionComponent = () => (
                 <Tab eventKey="devToolTime" title="Dev Tool Time">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-6">
-                            <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/QNYoOCLocAI"
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen={true}
-                            />
-                            <p>
+                            <YouTube title="Dev Tool Time" id="QNYoOCLocAI" />
+                            <p className="pt-3">
                                 Cool hardware. Most-wanted guests. And hot topics. Check our{' '}
                                 <a href="https://srcgr.ph/dev-tool-time-playlist">YouTube channel</a> and subscribe to
                                 keep up with new episodes.
@@ -136,33 +128,27 @@ export const Community: FunctionComponent = () => (
                         </div>
                     </div>
                 </Tab>
-                <Tab eventKey="podcast" title="Podcast">
+                <Tab eventKey="podcast" title="Sourcegraph Podcast">
                     <div className="row mt-5 justify-content-center">
                         <div className="col-lg-6">
-                            <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/VgVDMd2VlaU"
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen={true}
-                            />
-                            <strong>Subscribe:</strong>&nbsp;
-                            <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">
-                                YouTube
-                            </a>
-                            &nbsp;
-                            <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">
-                                Apple
-                            </a>
-                            &nbsp;
-                            <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6">Spotify</a>&nbsp;
-                            <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">
-                                Google
-                            </a>
-                            &nbsp;
-                            <a href="https://feeds.buzzsprout.com/1097978.rss">RSS</a>
+                            <YouTube title="Sourcegraph Podcast" id="VgVDMd2VlaU" />
+                            <p className="pt-3">
+                                <strong>Subscribe:</strong>&nbsp;
+                                <a href="https://www.youtube.com/playlist?list=PL6zLuuRVa1_jf5GDl61SvEOXvwvKS1IXA">
+                                    YouTube
+                                </a>
+                                &nbsp;
+                                <a href="https://podcasts.apple.com/us/podcast/the-sourcegraph-podcast/id1516219009">
+                                    Apple
+                                </a>
+                                &nbsp;
+                                <a href="https://open.spotify.com/show/1YlDYvCxNB7jAndbZPt5a6">Spotify</a>&nbsp;
+                                <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMDk3OTc4LnJzcw==">
+                                    Google
+                                </a>
+                                &nbsp;
+                                <a href="https://feeds.buzzsprout.com/1097978.rss">RSS</a>
+                            </p>
                         </div>
                     </div>
                 </Tab>
