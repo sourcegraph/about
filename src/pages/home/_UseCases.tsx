@@ -7,7 +7,7 @@ import { buttonStyle, buttonLocation } from '@data'
 import { useWindowWidth } from '@hooks'
 
 interface UseCases {
-    icon: React.ReactNode
+    icon: ReactNode
     title: string
     description: string
     link: {
