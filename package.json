@@ -45,7 +45,6 @@
   },
   "dependencies": {
     "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.8.4",
     "@visx/grid": "^2.6.0",
     "@visx/group": "^2.1.0",
     "@visx/responsive": "^2.8.0",

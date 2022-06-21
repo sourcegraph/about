@@ -1489,10 +1489,10 @@
     "@types/mdx" "^2.0.0"
     "@types/react" ">=16"
 
-"@mui/base@5.0.0-alpha.85":
-  "integrity" "sha512-ONlQJOmQrxmR+pYF9AqH69FOG4ofwzVzNltwb2xKAQIW3VbsNZahcHIpzhFd70W6EIU+QHzB9TzamSM+Fg/U7w=="
-  "resolved" "https://registry.npmjs.org/@mui/base/-/base-5.0.0-alpha.85.tgz"
-  "version" "5.0.0-alpha.85"
+"@mui/base@5.0.0-alpha.86":
+  "integrity" "sha512-0vi/Nni1mizrgrzKeyksEjw5JVSrgT8Vr2NhxzFtYxqpMgtdSrBvcmcuzBf9kE/ECMPbgpSIcqv0nLbLZUYkOQ=="
+  "resolved" "https://registry.npmjs.org/@mui/base/-/base-5.0.0-alpha.86.tgz"
+  "version" "5.0.0-alpha.86"
   dependencies:
     "@babel/runtime" "^7.17.2"
     "@emotion/is-prop-valid" "^1.1.2"
@@ -1510,14 +1510,14 @@
   dependencies:
     "@babel/runtime" "^7.17.2"
 
-"@mui/material@^5.0.0", "@mui/material@^5.8.4":
-  "integrity" "sha512-KlOJS1JGhwuhdoF4fulmz41h/YxyMdZSc+ncz+HAah0GKn8ovAs5774f1w0lIasxbtI1Ziunwvmnu9PvvUKdMw=="
-  "resolved" "https://registry.npmjs.org/@mui/material/-/material-5.8.4.tgz"
-  "version" "5.8.4"
+"@mui/material@^5.0.0":
+  "integrity" "sha512-wngPXlOI9BurLSGlObQM/2L0QFFaIcvJnDK5A+ALxuUyuQnPviVWfC1l/r8rPlxQ4PCbSYpq3gzLlgnLoWcO/g=="
+  "resolved" "https://registry.npmjs.org/@mui/material/-/material-5.8.5.tgz"
+  "version" "5.8.5"
   dependencies:
     "@babel/runtime" "^7.17.2"
-    "@mui/base" "5.0.0-alpha.85"
-    "@mui/system" "^5.8.4"
+    "@mui/base" "5.0.0-alpha.86"
+    "@mui/system" "^5.8.5"
     "@mui/types" "^7.1.4"
     "@mui/utils" "^5.8.4"
     "@types/react-transition-group" "^4.4.4"
@@ -1545,10 +1545,10 @@
     "@emotion/cache" "^11.7.1"
     "prop-types" "^15.8.1"
 
-"@mui/system@^5.8.4":
-  "integrity" "sha512-eeYZXlOn4p+tYwqqDlci6wW4knJ68aGx5A24YU9ubYZ5o0IwveoNP3LC9sHAMxigk/mUTqL4bpSMJ2HbTn2aQg=="
-  "resolved" "https://registry.npmjs.org/@mui/system/-/system-5.8.4.tgz"
-  "version" "5.8.4"
+"@mui/system@^5.8.5":
+  "integrity" "sha512-1bhITHp5sX/CVEf1QwtBWvW+kNnH+GU7lKz0CeAL1RyH9dWvoL9Yt/+i/L8hJ6jVZB/7Au2F6MsyDPt8V1jfdA=="
+  "resolved" "https://registry.npmjs.org/@mui/system/-/system-5.8.5.tgz"
+  "version" "5.8.5"
   dependencies:
     "@babel/runtime" "^7.17.2"
     "@mui/private-theming" "^5.8.4"
