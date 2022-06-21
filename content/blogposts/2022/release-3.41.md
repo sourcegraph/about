@@ -8,7 +8,7 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 changelogItems: 
-  - description: 'Added a new templating variable, `batch_change_link`, to give more control over where the "Created by Sourcegraph batch change ..." message appears in the published changeset description. This message would occasionally break CI workflows that parsed the bottom of a message; it can now be moved accordingly.'
+  - description: 'Added a new templating variable, batch_change_link, to give more control over where the "Created by Sourcegraph batch change ..." message appears in the published changeset description. This message would occasionally break CI workflows that parsed the bottom of a message; it can now be moved accordingly.'
     url: https://github.com/sourcegraph/sourcegraph/pull/35319
     category: Batch Changes
   - description: Added `sort` and `limit` filters for capture group insights. This gives Code Insights users more control over which series are displayed.
@@ -44,9 +44,9 @@ This feature requires admins to setup [executors](https://docs.sourcegraph.com/a
 
 As we improve Batch Changes, we're heavily focusing on making it easy to write and debug batch specs. Iteration time needs to be as small as possible, so that users can quickly put together a spec, run it, see results, and quickly improve on it.
 
-Many users have custom tooling or scripts that they run as batch changes steps. The only way to do that until now was to bake those scripts into the step container, or to copy-paste the scripts directly in the spec using [steps.files](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-files). Both options slow down iterating on batch changes, requiring users either to rebuild the container at each modification, or to copy-paste code inside YAML.
+Many users have custom tooling or scripts that they run as batch changes steps. The only way to do that until now was to bake those scripts into the step container, or to copy-paste the scripts directly in the spec using [`steps.files`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-files). Both options slow down iterating on batch changes, requiring users either to rebuild the container at each modification, or to copy-paste code inside YAML.
 
-Now you can directly mount files or directories on the batch change container using [steps.mount](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-mount). This is an experimental feature that's only supported when running batch changes locally. [Lots of improvements are on the way as well](https://github.com/sourcegraph/sourcegraph/issues/14851).
+Now you can directly mount files or directories on the batch change container using [`steps.mount`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-mount). This is an experimental feature that's only supported when running batch changes locally. [Lots of improvements are on the way as well](https://github.com/sourcegraph/sourcegraph/issues/14851).
 
 We're committed to making the process of iterating on batch changes as fast as possible. You can submit feedback through your Sourcegraph account manager, or raise an issue [here](https://github.com/sourcegraph/sourcegraph/issues/new?title=Batch%20changes:&body=@batchers%20this%20is%20an%20issue%20for%20you).
 
