@@ -74,7 +74,7 @@ export const CustomerLogos: FunctionComponent = () => (
         {logos.map((logo: Logo) => (
             <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="cursor-pointer max-w-100 max-h-100 my-3 mx-4 flex-shrink-0">
+                <a className="max-w-100 max-h-100 my-3 mx-4 flex-shrink-0">
                     <img
                         src={logo.src}
                         alt={`${logo.name} logo`}
