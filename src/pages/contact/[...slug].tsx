@@ -1,42 +1,37 @@
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 
 import { Layout, CustomerLogos, HubSpotForm } from '@components'
-import { useChiliPiper } from '@hooks'
 
 import { slugs, slugData, type ContactPageProps } from './data'
 
-const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFormName, formId }) => {
-    useChiliPiper()
+const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFormName, formId }) => (
+    <Layout
+        minimal={true}
+        meta={{
+            title: `Sourcegraph - ${title}`,
+            description,
+        }}
+    >
+        <div className="bg-white text-dark">
+            <div className="container-xl py-5 px-5">
+                <div className="row">
+                    <div className="col-md-6">
+                        <h1 className="display-3 font-weight-bold">{title}</h1>
+                        <h3 className="font-weight-light">{description}</h3>
 
-    return (
-        <Layout
-            minimal={true}
-            meta={{
-                title: `Sourcegraph - ${title}`,
-                description,
-            }}
-        >
-            <div className="bg-white text-dark">
-                <div className="container-xl py-5 px-5">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <h1 className="display-3 font-weight-bold">{title}</h1>
-                            <h3 className="font-weight-light">{description}</h3>
-
-                            <div className="mt-5">
-                                <HubSpotForm masterFormName={masterFormName} formId={formId} />
-                            </div>
+                        <div className="mt-5">
+                            <HubSpotForm masterFormName={masterFormName} formId={formId} chiliPiper={true} />
                         </div>
+                    </div>
 
-                        <div className="col-md-6">
-                            <CustomerLogos />
-                        </div>
+                    <div className="col-md-6">
+                        <CustomerLogos />
                     </div>
                 </div>
             </div>
-        </Layout>
-    )
-}
+        </div>
+    </Layout>
+)
 
 export default ContactPage
 

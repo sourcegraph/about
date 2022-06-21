@@ -16,6 +16,7 @@ declare global {
                 }: HubSpotAPIProps) => CreateHubSpotFormProps
             }
         }
+        ChiliPiper?: ChiliPiperAPIProps
     }
 }
 
@@ -37,12 +38,48 @@ interface CreateHubSpotFormProps {
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
     onFormReady?: ($form: HTMLFormElement) => void
     onFormSubmitted?: () => void
+    chiliPiper?: boolean
 }
 
 export interface HubSpotFormProps {
     formId?: string
     masterFormName?: 'demoMulti' | 'demoEmail' | 'gatedMulti' | 'gatedEmail'
     onFormSubmitted?: () => void
+    chiliPiper?: boolean
+}
+
+interface ChiliPiperAPIProps {
+    submit: (
+        domain: string,
+        router: string,
+        options?: {
+            lead: { [key: string]: string | number }
+            handleSubmit?: boolean
+            formId?: string
+            debug?: boolean
+            map?: boolean
+            domain?: string
+            router?: string
+            title?: string
+            titleStyle?: string
+            onSuccess?: () => void
+            onError?: () => void
+            onClose?: () => void
+            onRouted?: () => void
+            closeOnOutside?: boolean
+            dynamicRedirectLink?: string
+            mobileRedirectLink?: string
+            injectRootCss?: boolean
+            locale?: string
+            webHook?: string
+        }
+    ) => void
+}
+
+export interface ChiliPiperEventProps {
+    type: string
+    eventName: string
+    data: { name: string; value: string }[]
 }
 
 /**
@@ -67,6 +104,7 @@ const hubSpotScript = '//js.hsforms.net/forms/v2.js'
 const jQueryScript = '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'
 const clearbitScript =
     '!function(e){var o=document.getElementsByTagName("script")[0];if("object"==typeof e.ClearbitForHubspot)return console.log("Clearbit For HubSpot included more than once"),!1;e.ClearbitForHubspot={},e.ClearbitForHubspot.forms=[],e.ClearbitForHubspot.addForm=function(o){var t=o[0];"function"==typeof e.ClearbitForHubspot.onFormReady?e.ClearbitForHubspot.onFormReady(t):e.ClearbitForHubspot.forms.push(t)};var t=document.createElement("script");t.async=!0,t.src="https://hubspot.clearbit.com/v1/forms/pk_a66b9ed76e62c713c06aab39bfae7234/forms.js",o.parentNode.insertBefore(t,o),e.addEventListener("message",function(o){if("hsFormCallback"===o.data.type&&"onFormReady"===o.data.eventName)if(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0)e.ClearbitForHubspot.addForm(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'));else if(document.querySelectorAll("iframe.hs-form-iframe").length>0){document.querySelectorAll("iframe.hs-form-iframe").forEach(function(t){t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0&&e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'))})}})}(window);'
+const chiliPiperScript = '//js.chilipiper.com/marketing.js'
 
 // Gets a script element by its id
 const getScriptElement = (id: string): HTMLScriptElement | Element | null => document.querySelector(`#${id}`)
@@ -114,6 +152,7 @@ async function createHubSpotForm({
     onFormSubmit,
     onFormSubmitted,
     onFormReady,
+    chiliPiper
 }: CreateHubSpotFormProps): Promise<void> {
     const getAllCookies: { [index: string]: string } = document.cookie
         .split(';')
@@ -125,6 +164,25 @@ async function createHubSpotForm({
     const script = await loadScriptElement('hubspot', hubSpotScript)
     await loadScriptElement('jQuery', jQueryScript)
     await loadScriptElement('clearbit', clearbitScript, true)
+
+    if (chiliPiper) {
+        await loadScriptElement('chiliPiper', chiliPiperScript)
+
+        const cpTenantDomain = 'sourcegraph'
+        const cpRouterName = 'contact-sales'
+
+        window.addEventListener('message', event => {
+            const data = event.data as ChiliPiperEventProps
+            if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
+                const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
+                const chilipiper = window.ChiliPiper
+                chilipiper?.submit(cpTenantDomain, cpRouterName, {
+                    map: true,
+                    lead,
+                })
+            }
+        })
+    }
 
     script?.addEventListener('load', () => {
         window.hbspt?.forms.create({
@@ -165,6 +223,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     formId,
     masterFormName,
     onFormSubmitted,
+    chiliPiper
 }: HubSpotFormProps) => {
     const target = 'form-target'
 
@@ -179,14 +238,16 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
             formId: formId || masterFormId,
             target,
             onFormSubmitted,
+            chiliPiper
         })
 
         return () => {
             removeScriptElement('jQuery')
             removeScriptElement('clearbit')
             removeScriptElement('hubspot')
+            removeScriptElement('chiliPiper')
         }
-    }, [formId, onFormSubmitted, masterFormName])
+    }, [formId, onFormSubmitted, masterFormName, chiliPiper])
 
     return <div id={target} />
 }
