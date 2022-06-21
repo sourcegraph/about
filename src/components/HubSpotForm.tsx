@@ -34,8 +34,6 @@ interface HubSpotAPIProps {
 interface CreateHubSpotFormProps {
     [index: number]: HTMLFormElement
     formId: string
-    target: string
-    onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
     onFormReady?: ($form: HTMLFormElement) => void
     onFormSubmitted?: () => void
     chiliPiper?: boolean
@@ -76,7 +74,7 @@ interface ChiliPiperAPIProps {
     ) => void
 }
 
-export interface ChiliPiperEventProps {
+interface HubSpotEventProps {
     type: string
     eventName: string
     data: { name: string; value: string }[]
@@ -84,6 +82,8 @@ export interface ChiliPiperEventProps {
 
 /**
  * These are our Master Form IDs that are used throughout our codebase.
+ * Each masterFormName is used as an identifier that is mapped to a specific
+ * master form id.
  */
 const masterForms: { [key: string]: string } = {
     // Demo Request Email Only
@@ -146,25 +146,30 @@ const loadScriptElement = (
         resolve(scriptElement)
     })
 
+/**
+ * This creates the HubSpot form with the configuration options.
+ * See: https://legacydocs.hubspot.com/docs/methods/forms/advanced_form_options
+ * 
+ * @param CreateHubSpotFormProps - object props passed to createHubSpotForm
+ * @param CreateHubSpotFormProps.formId - the form's id
+ * @param CreateHubSpotFormProps.onFormReady - callback after form is built
+ * @param CreateHubSpotFormProps.onFormSubmitted - callback after data is sent
+ * @param CreateHubSpotFormProps.chiliPiper - option to enable ChiliPiper
+ */
 async function createHubSpotForm({
     formId,
-    target,
-    onFormSubmit,
-    onFormSubmitted,
     onFormReady,
+    onFormSubmitted,
     chiliPiper
 }: CreateHubSpotFormProps): Promise<void> {
-    const getAllCookies: { [index: string]: string } = document.cookie
-        .split(';')
-        .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
-    const { sourcegraphAnonymousUid, sourcegraphSourceUrl } = getAllCookies
-    const landingSource: string = sessionStorage.getItem('landingSource') || ''
-    const firstSourceURL: string = sourcegraphSourceUrl?.includes('redacted') ? landingSource : sourcegraphSourceUrl
-
     const script = await loadScriptElement('hubspot', hubSpotScript)
     await loadScriptElement('jQuery', jQueryScript)
     await loadScriptElement('clearbit', clearbitScript, true)
 
+    /**
+     * If ChiliPiper is enabled, load the script and add an event
+     * listener to map the lead data to the ChiliPiper scheduler.
+     */
     if (chiliPiper) {
         await loadScriptElement('chiliPiper', chiliPiperScript)
 
@@ -172,10 +177,12 @@ async function createHubSpotForm({
         const cpRouterName = 'contact-sales'
 
         window.addEventListener('message', event => {
-            const data = event.data as ChiliPiperEventProps
+            const data = event.data as HubSpotEventProps
+
             if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
                 const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
                 const chilipiper = window.ChiliPiper
+
                 chilipiper?.submit(cpTenantDomain, cpRouterName, {
                     map: true,
                     lead,
@@ -184,49 +191,65 @@ async function createHubSpotForm({
         })
     }
 
+    // When the HubSpot script is loaded, create the form with the config
     script?.addEventListener('load', () => {
         window.hbspt?.forms.create({
             region: 'na1',
             portalId: '2762526',
             formId,
-            target: `#${target}`,
-            onFormSubmit,
-            onFormSubmitted,
+            target: '#form-target',
             onFormReady: (form: CreateHubSpotFormProps) => {
-                if (form) {
-                    /**
-                     * This allows you to populate hidden form fields with values
-                     * @param formField - the form field name
-                     * @param value - the value to populate
-                     */
-                    const populateHiddenFormField = (formField: string, value: string): void => {
-                        const input = form[0].querySelector(`input[name="${formField}"]`) as HTMLInputElement
-                        if (input && input.value === '') {
-                            input.value = value || ''
-                        }
-                    }
-
-                    populateHiddenFormField('anonymous_user_id', sourcegraphAnonymousUid)
-                    populateHiddenFormField('first_source_url', firstSourceURL)
-                    populateHiddenFormField('form_submission_source', window.location.href)
-                }
-
                 if (onFormReady) {
                     onFormReady(form[0])
                 }
             },
+            onFormSubmitted
         })
     })
 }
 
+// This gets called when the HubSpot form is ready
+const onFormReady = (form: HTMLFormElement): void => {    
+    /**
+     * This allows you to populate hidden form fields with values
+     * 
+     * @param formField - the form field name
+     * @param value - the value to populate
+     */
+    const populateHiddenFormField = (formField: string, value: string): void => {
+        const input = form[0].querySelector(`input[name="${formField}"]`) as HTMLInputElement
+        if (input && input.value === '') {
+            input.value = value || ''
+        }
+    }
+    
+    /**
+     * If the form is ready and visible in the DOM, gather all cookie and
+     * session data and populate hidden form fields.
+     */
+    if (form) {
+        const getAllCookies: { [index: string]: string } = document.cookie
+            .split(';')
+            .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
+        const { sourcegraphAnonymousUid, sourcegraphSourceUrl } = getAllCookies
+        const landingSource: string = sessionStorage.getItem('landingSource') || ''
+        const firstSourceURL: string = sourcegraphSourceUrl?.includes('redacted') ? landingSource : sourcegraphSourceUrl
+
+        populateHiddenFormField('anonymous_user_id', sourcegraphAnonymousUid)
+        populateHiddenFormField('first_source_url', firstSourceURL)
+        populateHiddenFormField('form_submission_source', window.location.href)
+    }
+}
+
+/**
+ * The HubSpot form component. This takes an optional 
+ */
 export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     formId,
     masterFormName,
     onFormSubmitted,
-    chiliPiper
+    chiliPiper,
 }: HubSpotFormProps) => {
-    const target = 'form-target'
-
     useEffect(() => {
         let masterFormId = ''
         if (masterFormName) {
@@ -236,7 +259,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
         createHubSpotForm({
             formId: formId || masterFormId,
-            target,
+            onFormReady,
             onFormSubmitted,
             chiliPiper
         })
@@ -247,7 +270,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
             removeScriptElement('hubspot')
             removeScriptElement('chiliPiper')
         }
-    }, [formId, onFormSubmitted, masterFormName, chiliPiper])
+    }, [formId, masterFormName, onFormSubmitted, chiliPiper])
 
-    return <div id={target} />
+    return <div id="form-target" />
 }
