@@ -27,13 +27,13 @@ export const Video: FunctionComponent<Video> = ({ source, loop, caption, showCap
             data-cookieconsent="ignore"
         >
             <source
-                type="video/webm"
-                src={`https://storage.googleapis.com/sourcegraph-assets/${source.webm}.webm`}
+                type="video/mp4"
+                src={`https://storage.googleapis.com/sourcegraph-assets/${source.mp4}.mp4`}
                 data-cookieconsent="ignore"
             />
             <source
-                type="video/mp4"
-                src={`https://storage.googleapis.com/sourcegraph-assets/${source.mp4}.mp4`}
+                type="video/webm"
+                src={`https://storage.googleapis.com/sourcegraph-assets/${source.webm}.webm`}
                 data-cookieconsent="ignore"
             />
             {caption && caption}
