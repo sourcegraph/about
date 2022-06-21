@@ -2,8 +2,7 @@ import { FunctionComponent, SyntheticEvent } from 'react'
 
 import * as icons from '@mui/icons-material'
 import classNames from 'classnames'
-
-import { createRandomId } from '@util'
+import { v4 as uuidv4 } from 'uuid'
 
 interface Icon {
     name: keyof typeof icons
@@ -21,7 +20,7 @@ export const Icon: FunctionComponent<Icon> = ({ name, size = 48, className = '',
         <IconName
             className={classNames(className, variant === 'boxed' && 'bg-violet-mist text-vivid-violet rounded p-2')}
             style={{ fontSize: size }}
-            key={createRandomId()}
+            key={uuidv4()}
             htmlColor={color}
             onClick={onClick}
         />
