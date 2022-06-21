@@ -8,10 +8,10 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 changelogItems: 
-  - description: 'Added a new templating variable, batch_change_link, to give more control over where the "Created by Sourcegraph batch change ..." message appears in the published changeset description. This message would occasionally break CI workflows that parsed the bottom of a message; it can now be moved accordingly.'
+  - description: 'Added a new templating variable, `batch_change_link`, to give more control over where the "Created by Sourcegraph batch change ..." message appears in the published changeset description. This message would occasionally break CI workflows that parsed the bottom of a message; it can now be moved accordingly.'
     url: https://github.com/sourcegraph/sourcegraph/pull/35319
-    category: Batch Chanages
-  - description: Added sort and limit filters for capture group insights. This gives Code Insights users more control over which series are displayed.
+    category: Batch Changes
+  - description: Added `sort` and `limit` filters for capture group insights. This gives Code Insights users more control over which series are displayed.
     url: https://github.com/sourcegraph/sourcegraph/pull/34611
     category: Code Insights
   - description: 'Commit and diff search: The hard limit of 50 repositories has been removed, so you can now run broader searches. Long-running searches will continue running until the timeout is hit.'
@@ -24,7 +24,7 @@ changelogItems:
  
 Sourcegraph 3.41 is now available! Here are some highlights from this release:
 
-## Running batch changes server-side is moving to Beta
+## Running batch changes server-side is moving to beta
 
 Until now, you had to run `src-cli` locally to create your batch changes. `src-cli` pulls repo archives through Sourcegraph, and runs your batch spec to create diffs. For large amounts of repositories or resource-intensive code rewrites, running `src-cli` locally could take an impractical amount of time or be brittle.
 
@@ -46,9 +46,9 @@ As we improve Batch Changes, we're heavily focusing on making it easy to write a
 
 Many users have custom tooling or scripts that they run as batch changes steps. The only way to do that until now was to bake those scripts into the step container, or to copy-paste the scripts directly in the spec using [steps.files](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-files). Both options slow down iterating on batch changes, requiring users either to rebuild the container at each modification, or to copy-paste code inside YAML.
 
-Now you can directly mount files or directories on the batch change container using [steps.mount](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-mount). This is an experimental feature that's only supported when running batch changes locally. Lots of improvements are on the way ([issue](https://github.com/sourcegraph/sourcegraph/issues/14851)).
+Now you can directly mount files or directories on the batch change container using [steps.mount](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-mount). This is an experimental feature that's only supported when running batch changes locally. [Lots of improvements are on the way as well](https://github.com/sourcegraph/sourcegraph/issues/14851).
 
-We're committed to making the process of iterating on batch changes as fast as possible. Submit feedback through your Sourcegraph account manager, or raise an issue [here](https://github.com/sourcegraph/sourcegraph/issues/new?title=Batch%20changes:&body=@batchers%20this%20is%20an%20issue%20for%20you).
+We're committed to making the process of iterating on batch changes as fast as possible. You can submit feedback through your Sourcegraph account manager, or raise an issue [here](https://github.com/sourcegraph/sourcegraph/issues/new?title=Batch%20changes:&body=@batchers%20this%20is%20an%20issue%20for%20you).
 
 ## Sort and filter "detect and track patterns" code insights series 
 
@@ -60,4 +60,4 @@ Detect and track patterns charts now allow setting the series sort order and num
 
 You can now restrict users to only use Sourcegraph-authored extensions by setting [`extensions.allowOnlySourcegraphAuthoredExtensions`](../config/site_config.md) to `true` in your site configuration. This allows you to easily enforce that any extensions you are using are built and supported by Sourcegraph. While we encourage trying out open source extensions from the community, this setting may be valuable for those teams who want to ensure all of their extensions are directly supported by Sourcegraph.
 
-For more information about this feature please refer to the [documentation](https://docs.sourcegraph.com/admin/extensions#allow-only-extensions-authored-by-sourcegraph).
+For more information about this feature, please refer to the [documentation](https://docs.sourcegraph.com/admin/extensions#allow-only-extensions-authored-by-sourcegraph).
