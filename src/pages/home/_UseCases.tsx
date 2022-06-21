@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect, useRef, useState } from 'react'
+import { FunctionComponent, ReactNode, useEffect, useRef, useState } from 'react'
 
 import Link from 'next/link'
 
@@ -7,7 +7,7 @@ import { buttonStyle, buttonLocation } from '@data'
 import { useWindowWidth } from '@hooks'
 
 interface UseCases {
-    icon: React.ReactNode
+    icon: ReactNode
     title: string
     description: string
     link: {

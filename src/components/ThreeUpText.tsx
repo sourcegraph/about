@@ -1,8 +1,8 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 interface Item {
-    icon?: React.ReactNode
-    subtitle: React.ReactNode
+    icon?: ReactNode
+    subtitle: ReactNode
     description: string
 }
 
