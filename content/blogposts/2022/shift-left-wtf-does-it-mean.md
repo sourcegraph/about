@@ -63,7 +63,7 @@ In order to take full advantage of existing libraries, you need to be able to un
 Investing in great documentation helps, but this is a hard change to make if your codebase isn't already well-documented. The best way to learn is by example. A single real usage example can be worth a thousand words of documentation.
 
 <Video 
-  source={{webm: 'blog/shift-left/02-find-references', mp4: 'blog/shift-left/01-code-reuse'}} 
+  source={{webm: 'blog/shift-left/02-find-references', mp4: 'blog/shift-left/02-find-references'}} 
   loop={true}
   title="Find references" 
   caption="Usage examples are critical to lowering the friction of code reuse. Validate the prototype first by using existing functions and components. You can always go back and build a better wheel if user feedback demands it."
