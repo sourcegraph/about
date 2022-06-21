@@ -42,7 +42,7 @@ const PressReleasePage: NextPage<PageProps> = ({ post, content }) => {
                     <BlogHeader {...pressReleaseInfo} />
                 </div>
                 <div className="post-template mt-5 bg-white">
-                    <div className="container-lg">
+                    <div className="container-lg max-w-650">
                         <PostTemplate
                             post={post}
                             content={content}
