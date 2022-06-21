@@ -8,7 +8,7 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 changelogItems: 
-  - description: 'Added a new templating variable, batch_change_link, to give more control over where the "Created by Sourcegraph batch change ..." message appears in the published changeset description. This message would occasionally break CI workflows that parsed the bottom of a message; it can now be moved accordingly.'
+  - description: 'Added a new templating variable, batch_change_link, to give more control over where the "Created by Sourcegraph batch change" message appears in the published changeset description. This message would occasionally break CI workflows that parsed the bottom of a message; it can now be moved accordingly.'
     url: https://github.com/sourcegraph/sourcegraph/pull/35319
     category: Batch Changes
   - description: Added `sort` and `limit` filters for capture group insights. This gives Code Insights users more control over which series are displayed.
@@ -17,7 +17,7 @@ changelogItems:
   - description: 'Commit and diff search: The hard limit of 50 repositories has been removed, so you can now run broader searches. Long-running searches will continue running until the timeout is hit.'
     url: https://github.com/sourcegraph/sourcegraph/pull/36486
     category: Search
-  - description: 'Zoekt-indexserver has a new debug landing page, /debug, which exposes information about the queue, the list of indexed repositories, and the list of assigned repositories for easier visual debugging. Admins can reach the debug landing page by going to the site admin view and selecting Instrumentation > indexed-search-indexer > Debug.'
+  - description: 'Zoekt-indexserver has a new debug landing page, /debug, which exposes information about the queue, the list of indexed repositories, and the list of assigned repositories for easier visual debugging. Admins can reach the debug landing page by going to the site admin view and selecting "Instrumentation" > indexed-search-indexer > "Debug".'
     url: https://github.com/sourcegraph/zoekt/pull/346
     category: Admin
 ---
@@ -30,7 +30,7 @@ Until now, you had to run `src-cli` locally to create your batch changes. `src-c
 
 Today, we're announcing that you can now run [batch changes server-side (beta)](https://docs.sourcegraph.com/batch_changes/explanations/server_side). 
 
-Setting up running batch changes server-side allows you to:
+Running batch changes server-side allows you to:
 - Run large-scale or resource intensive batch changes without clogging your local machine.
 - Run large batch changes faster by distributing them across an autoscaled pool of compute instances.
 - Get a better debugging experience, with logs being streamed directly into Sourcegraph.
@@ -38,11 +38,11 @@ Setting up running batch changes server-side allows you to:
 
 This is the outcome of months of iteration on the experimental version of the feature, and we're grateful to early users for their feedback!
 
-This feature requires admins to setup [executors](https://docs.sourcegraph.com/admin/executors) (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run Code Intelligence [auto-indexing](https://docs.sourcegraph.com/code_intelligence/how-to/enable_auto_indexing) (experimental).
+This feature requires admins to set up [executors](https://docs.sourcegraph.com/admin/executors) (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run Code Intelligence [auto-indexing](https://docs.sourcegraph.com/code_intelligence/how-to/enable_auto_indexing) (experimental).
 
 ##  Batch specs can now mount local files on steps containers (experimental)
 
-As we improve Batch Changes, we're heavily focusing on making it easy to write and debug batch specs. Iteration time needs to be as small as possible, so that users can quickly put together a spec, run it, see results, and quickly improve on it.
+As we improve Batch Changes, we're focused on making it easy to write and debug batch specs. Iteration time needs to be as small as possible, so that users can quickly put together a spec, run it, see results, and quickly improve on it.
 
 Many users have custom tooling or scripts that they run as batch changes steps. The only way to do that until now was to bake those scripts into the step container, or to copy-paste the scripts directly in the spec using [`steps.files`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-files). Both options slow down iterating on batch changes, requiring users either to rebuild the container at each modification, or to copy-paste code inside YAML.
 
