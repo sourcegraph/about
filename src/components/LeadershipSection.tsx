@@ -15,7 +15,7 @@ const LEADERS: {
 }[] = [
     {
         name: 'Quinn Slack',
-        image: '/staff/avatar-quinn.jpg',
+        image: '/staff/avatar-quinn.png',
         title: 'CEO and Cofounder',
         bio: 'https://handbook.sourcegraph.com/company/team#quinn-slack',
         github: 'https://github.com/sqs',
@@ -24,7 +24,7 @@ const LEADERS: {
     },
     {
         name: 'Beyang Liu',
-        image: '/staff/avatar-beyang.jpg',
+        image: '/staff/avatar-beyang.png',
         title: 'CTO and Cofounder',
         bio: 'https://handbook.sourcegraph.com/company/team#beyang-liu',
         github: 'https://github.com/beyang',
@@ -33,7 +33,7 @@ const LEADERS: {
     },
     {
         name: 'Christina Forney',
-        image: '/staff/avatar-christina.jpg',
+        image: '/staff/avatar-christina.png',
         title: 'Product Advisor',
         bio: 'https://handbook.sourcegraph.com/company/team#christina-forney',
         github: 'https://github.com/christinaforney',
@@ -42,7 +42,7 @@ const LEADERS: {
     },
     {
         name: 'Nick Snyder',
-        image: '/staff/avatar-nick.jpg',
+        image: '/staff/avatar-nick.png',
         title: 'Engineering Advisor',
         bio: 'https://handbook.sourcegraph.com/team/#nick-snyder',
         github: 'https://github.com/nicksnyder',
@@ -69,7 +69,7 @@ const LEADERS: {
     },
     {
         name: 'Carly Jones',
-        image: '/staff/avatar-carly.jpg',
+        image: '/staff/avatar-carly.png',
         title: 'VP Talent & People',
         bio: 'https://handbook.sourcegraph.com/company/team#carly-jones',
         github: 'https://github.com/carlyj0nes',
