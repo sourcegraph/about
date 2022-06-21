@@ -44,7 +44,10 @@
     }
   },
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.5",
     "@visx/grid": "^2.6.0",
     "@visx/group": "^2.1.0",
     "@visx/responsive": "^2.8.0",
@@ -64,7 +67,8 @@
     "remark-gfm": "^3.0.1",
     "rxjs": "^7.5.5",
     "ts-loader": "^9.2.8",
-    "ts-node": "^10.7.0"
+    "ts-node": "^10.7.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.12.0",

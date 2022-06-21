@@ -1298,7 +1298,7 @@
   "resolved" "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.7.5.tgz"
   "version" "0.7.5"
 
-"@emotion/react@^11.0.0-rc.0", "@emotion/react@^11.4.1", "@emotion/react@^11.5.0":
+"@emotion/react@^11.0.0-rc.0", "@emotion/react@^11.4.1", "@emotion/react@^11.5.0", "@emotion/react@^11.9.3":
   "integrity" "sha512-g9Q1GcTOlzOEjqwuLF/Zd9LC+4FljjPjDfxSM7KmEakm+hsHXk+bYZ2q+/hTJzr0OUNkujo72pXLQvXj6H+GJQ=="
   "resolved" "https://registry.npmjs.org/@emotion/react/-/react-11.9.3.tgz"
   "version" "11.9.3"
@@ -1327,7 +1327,7 @@
   "resolved" "https://registry.npmjs.org/@emotion/sheet/-/sheet-1.1.1.tgz"
   "version" "1.1.1"
 
-"@emotion/styled@^11.3.0":
+"@emotion/styled@^11.3.0", "@emotion/styled@^11.9.3":
   "integrity" "sha512-o3sBNwbtoVz9v7WB1/Y/AmXl69YHmei2mrVnK7JgyBJ//Rst5yqPZCecEJlMlJrFeWHp+ki/54uN265V2pEcXA=="
   "resolved" "https://registry.npmjs.org/@emotion/styled/-/styled-11.9.3.tgz"
   "version" "11.9.3"
@@ -1510,7 +1510,7 @@
   dependencies:
     "@babel/runtime" "^7.17.2"
 
-"@mui/material@^5.0.0":
+"@mui/material@^5.0.0", "@mui/material@^5.8.5":
   "integrity" "sha512-wngPXlOI9BurLSGlObQM/2L0QFFaIcvJnDK5A+ALxuUyuQnPviVWfC1l/r8rPlxQ4PCbSYpq3gzLlgnLoWcO/g=="
   "resolved" "https://registry.npmjs.org/@mui/material/-/material-5.8.5.tgz"
   "version" "5.8.5"
@@ -7800,7 +7800,7 @@
 
 "uuid@^8.3.2":
   "integrity" "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
-  "resolved" "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz"
+  "resolved" "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   "version" "8.3.2"
 
 "uvu@^0.5.0":
