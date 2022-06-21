@@ -92,7 +92,7 @@ const Hero: FunctionComponent = () => {
             </div>
 
             <div className="py-7">
-                <CustomerLogos isLink={true} />
+                <CustomerLogos />
             </div>
 
             <div className="max-w-600 mx-auto text-center">
