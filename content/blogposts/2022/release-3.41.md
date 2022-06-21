@@ -8,10 +8,10 @@ published: true
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/sourcegraph-3-41-release.png
 changelogItems: 
-  - description: 'A new templating variable, batch_change_link has been added for more control over where the "Created by Sourcegraph batch change ..." message appears in the published changeset description.'
+  - description: 'Added a new templating variable, batch_change_link, to give more control over where the "Created by Sourcegraph batch change ..." message appears in the published changeset description. This message would occasionally break CI workflows that parsed the bottom of a message; it can now be moved accordingly.'
     url: https://github.com/sourcegraph/sourcegraph/pull/35319
     category: Batch Chanages
-  - description: Sort and limit filters have been added to capture group insights. This gives Code Insights users more control over which series are displayed.
+  - description: Added sort and limit filters for capture group insights. This gives Code Insights users more control over which series are displayed.
     url: https://github.com/sourcegraph/sourcegraph/pull/34611
     category: Code Insights
   - description: 'Commit and diff search: The hard limit of 50 repositories has been removed, so you can now run broader searches. Long-running searches will continue running until the timeout is hit.'
