@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
+
 interface Logo {
     name: string
     src: string
