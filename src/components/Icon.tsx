@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { FunctionComponent, SyntheticEvent } from 'react'
 
 import * as icons from '@mui/icons-material'
@@ -15,12 +16,13 @@ interface Icon {
 
 export const Icon: FunctionComponent<Icon> = ({ name, size = 48, className = '', color, onClick, variant }) => {
     const IconName = icons[name]
+    const uuid = uuidv4() as string
 
     return (
         <IconName
             className={classNames(className, variant === 'boxed' && 'bg-violet-mist text-vivid-violet rounded p-2')}
             style={{ fontSize: size }}
-            key={uuidv4()}
+            key={uuid}
             htmlColor={color}
             onClick={onClick}
         />
