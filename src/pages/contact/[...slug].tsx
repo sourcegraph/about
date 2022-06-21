@@ -3,7 +3,7 @@ import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { Layout, CustomerLogos, HubSpotForm } from '@components'
 import { useChiliPiper } from '@hooks'
 
-import { slugs, slugData, ContactPageProps } from './data'
+import { slugs, slugData, type ContactPageProps } from './data'
 
 const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFormName, formId }) => {
     useChiliPiper()

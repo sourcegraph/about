@@ -30,7 +30,7 @@ interface HubSpotAPIProps {
     onFormSubmitted?: () => void
 }
 
-export interface CreateHubSpotFormProps {
+interface CreateHubSpotFormProps {
     [index: number]: HTMLFormElement
     formId: string
     target: string

@@ -7,7 +7,7 @@ export { ContentSection } from './ContentSection'
 export { CustomerLogos } from './CustomerLogos'
 export { FeatureWalkthrough } from './FeatureWalkthrough'
 export { FormLegal } from './FormLegal'
-export { HubSpotForm } from './HubSpotForm'
+export { HubSpotForm, type HubSpotFormProps } from './HubSpotForm'
 export { Install } from './Install'
 export { IntegrationsSection } from './IntegrationsSection'
 export { Jumbotron } from './Jumbotron'
@@ -21,7 +21,6 @@ export { ThreeUpText } from './ThreeUpText'
 export { TrySourcegraph } from './TrySourcegraph'
 export { Video } from './Video'
 export { YouTube } from './YouTube'
-export type { HubSpotFormProps } from './HubSpotForm'
 
 // Actions
 export {
