@@ -40,8 +40,6 @@ This is the outcome of months of iteration on the experimental version of the fe
 
 This feature requires admins to setup [executors](https://docs.sourcegraph.com/admin/executors) (much like CI agents), which Sourcegraph will use to offload expensive tasks. Executors can also be used to run Code Intelligence [auto-indexing](https://docs.sourcegraph.com/code_intelligence/how-to/enable_auto_indexing) (experimental).
 
-<!-- TODO: asset welcome right after deployment on demo -->
-
 ##  Batch specs can now mount local files on steps containers (experimental)
 
 As we improve Batch Changes, we're heavily focusing on making it easy to write and debug batch specs. Iteration time needs to be as small as possible, so that users can quickly put together a spec, run it, see results, and quickly improve on it.
@@ -54,7 +52,7 @@ We're committed to making the process of iterating on batch changes as fast as p
 
 ## Sort and filter "detect and track patterns" code insights series 
 
-<!-- TODO: add screenshot of sorting --> 
+![Code_Insights_sorting](https://storage.googleapis.com/sourcegraph-assets/blog/release-post/3.41/code_insights_sorting.png)
 
 Detect and track patterns charts now allow setting the series sort order and number (up to 20) of series. This means you can set an insight with greater than 20 match patterns to show the 1-20 most or least common series by match count; oldest or newest version by series name; or oldest-added or newest-added versions by date appearing in the codebase. Previously, if there were greater than 20 match patterns, it returned a random set of 20 each session.
 
