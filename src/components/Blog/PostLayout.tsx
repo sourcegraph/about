@@ -3,12 +3,12 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { BlockquoteWithBorder, EmbeddedHubSpot, Video, YouTube } from '@components'
+import { BlockquoteWithBorder, HubSpotForm, Video, YouTube } from '@components'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
 export type Components = import('mdx/types').MDXComponents
-const components = { BlockquoteWithBorder, EmbeddedHubSpot, Video, YouTube }
+const components = { BlockquoteWithBorder, HubSpotForm, Video, YouTube }
 
 /**
  * This component is used to render all types of posts:

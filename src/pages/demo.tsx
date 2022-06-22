@@ -26,17 +26,14 @@ const Demo: FunctionComponent = () => (
                     <p>Watch this quick video to see what Sourcegraph can do</p>
 
                     <YouTube title="Sourcegraph Product Tour" id="E2QYIwKlMac" className="my-5" />
-
-                    <h2 className="font-weight-bold">Like what you see?</h2>
-                    <p>Get a live demo in your environment! Just fill out the form to request a demo.</p>
                 </div>
 
-                <h2 className="font-weight-bold">Like what you see?</h2>
-                <p>Get a live demo in your environment! Just fill out the form to request a demo.</p>
-            </div>
+                <div className="col-lg-6 pl-lg-7 mt-5 mt-lg-0">
+                    <h2 className="font-weight-bold">Like what you see?</h2>
+                    <p className="mb-5">Get a live demo in your environment! Just fill out the form to request a demo.</p>
 
-            <div className="col-lg-6 pl-lg-7 mt-5 mt-lg-0">
-                <HubSpotForm masterFormName="demoMulti" chiliPiper={true} />
+                    <HubSpotForm masterFormName="demoMulti" chiliPiper={true} />
+                </div>
             </div>
         </div>
     </Layout>
