@@ -32,9 +32,6 @@ export const Guide: FunctionComponent = () => (
                             their respective codebases
                         </li>
                         <li className="mb-2">
-                            What today's code security ecosystem lacks and what that means for your business
-                        </li>
-                        <li className="mb-2">
                             Which capabilities are necessary to mitigate a known vulnerability quickly
                         </li>
                         <li className="mb-2">How do these companies respond to zero-day vulnerabilities</li>
