@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, CaseStudyCard, FormLegal, BlogResourceItem, HubSpotForm } from '@components'
+import { Layout, CaseStudyCard, BlogResourceItem, HubSpotForm } from '@components'
 
 const blogResourceItems = [
     {
@@ -89,7 +89,6 @@ const PartnerPodcastPage: FunctionComponent = () => (
                 </h5>
                 <div className="max-w-400 pt-0 pt-md-4">
                     <HubSpotForm masterFormName="demoEmail" chiliPiper={true} />
-                    <FormLegal />
                 </div>
             </section>
         </div>

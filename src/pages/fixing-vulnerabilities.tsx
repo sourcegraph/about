@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, FormLegal, YouTube, HubSpotForm } from '@components'
+import { Layout, YouTube, HubSpotForm } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const FixingVulnerabilities: FunctionComponent = () => (
@@ -26,7 +26,6 @@ const FixingVulnerabilities: FunctionComponent = () => (
 
                     <div className="mt-5 mw-400">
                         <HubSpotForm masterFormName="demoEmail" chiliPiper={true} />
-                        <FormLegal />
                     </div>
                 </div>
 
@@ -82,7 +81,6 @@ const FixingVulnerabilities: FunctionComponent = () => (
                             Request a demo
                         </a>
                     </Link>
-                    <FormLegal />
                 </div>
             </div>
         </div>
