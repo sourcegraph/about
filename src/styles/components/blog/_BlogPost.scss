@@ -7,7 +7,7 @@
             width: 100%;
             max-height: 100vh;
             box-shadow: 0 2px 18px 0 #0000001a, 0 6px 20px 0 #00000017;
-            margin: 3rem auto;
+            margin: 3rem auto 2rem auto;
             display: block;
             border-style: none;
             height: auto; // Allow providing the media width and height as HTML attributes for aspect-ratio calculation to avoid layout shift
@@ -25,15 +25,11 @@
         }
 
         figcaption {
-            margin-top: 2rem;
+            margin: 1rem auto 3rem auto;
             text-align: center;
             font-style: italic;
         }
 
-        // Make sure margin for figures with caption is applied after the caption, not before.
-        figure > :is(img, object, video) {
-            margin-bottom: 0;
-        }
         figure {
             margin-bottom: 3rem;
         }

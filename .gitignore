@@ -33,3 +33,6 @@ build
 
 # cache
 public/data
+
+# Cypress screenshots
+cypress/screenshots
