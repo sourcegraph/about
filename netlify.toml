@@ -107,8 +107,8 @@
   status = 301
 
 [[redirects]]
-  from = "/go/*"
-  to = "/blog/go/:splat"
+  from = "/go/:post-name"
+  to = "/blog/go/:post-name"
   status = 301
 
 [[redirects]]
@@ -117,8 +117,8 @@
   status = 301
 
 [[redirects]]
-  from = "/strange-loop/*"
-  to = "/blog/strange-loop/:splat"
+  from = "/strange-loop/:post-name"
+  to = "/blog/strange-loop/:post-name"
   status = 301
 
 [[redirects]]
@@ -127,8 +127,8 @@
   status = 301
 
 [[redirects]]
-  from = "/graphql/*"
-  to = "/blog/graphql/:splat"
+  from = "/graphql/:post-name"
+  to = "/blog/graphql/:post-name"
   status = 301
 
 [[redirects]]
@@ -137,8 +137,8 @@
   status = 301
 
 [[redirects]]
-  from = "/github-universe/*"
-  to = "/blog/github-universe/:splat"
+  from = "/github-universe/:post-name"
+  to = "/blog/github-universe/:post-name"
   status = 301
 
 [[redirects]]
