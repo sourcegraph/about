@@ -132,7 +132,7 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                 </li>
                 {!hideGetStartedButton && (
                     <li className="align-items-center nav-item" role="presentation">
-                        <Link href="/get-started" passHref={true}>
+                        <Link href="/get-started/self-hosted" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="nav-link"

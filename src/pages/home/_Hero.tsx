@@ -53,7 +53,7 @@ const Hero: FunctionComponent = () => {
 
                 <div className="max-w-350 mx-auto flex-column flex-sm-row d-sm-flex align-items-center">
                     <div className="col-sm-6 px-sm-0 mb-3 mb-sm-0 mr-sm-3">
-                        <Link href="/get-started" passHref={true}>
+                        <Link href="/get-started/self-hosted" passHref={true}>
                             <a
                                 className="btn btn-primary w-100"
                                 href="#none"

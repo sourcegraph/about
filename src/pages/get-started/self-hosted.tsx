@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
 
-import { Layout, Install, BackButton } from '@components'
+import { Layout, Install } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useQueryString } from '@hooks'
 
@@ -35,11 +35,6 @@ export const SelfHostedPage: FunctionComponent = () => {
                 <div className="row container-xl mx-auto py-5">
                     <div className="col-lg-6 pr-lg-7">
                         <div>
-                            <BackButton
-                                href={`/get-started${routerHook.queryString ? `?${routerHook.queryString}` : ''}`}
-                                text="Deployment Options"
-                            />
-
                             <h1 className="display-2 font-weight-bolder mb-2">
                                 Sourcegraph <br />
                                 Self-Hosted

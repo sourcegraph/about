@@ -143,4 +143,8 @@
   from = "/home/*"
   to = "/"
   force = true
+
+[[redirects]]
+  from = "/get-started"
+  to = "/get-started/self-hosted"
 # ========== END INDIVIDUAL REDIRECTS ==========
