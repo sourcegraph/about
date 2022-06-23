@@ -8,7 +8,6 @@ export const CaseStudy: FunctionComponent = () => (
             title: 'Sourcegraph empowers CERN to tackle code reuse and code changes in mission-critical applications',
             description:
                 'Sourcegraph empowers developers at CERN to reuse existing code and manage mission-critical code changes with ease',
-            image: '/external-logos/cern-name-reverse-logo.svg',
         }}
         className="navbar-dark bg-black"
     >

@@ -11,7 +11,6 @@ const DevelopmentToolsQuizPage: FunctionComponent = () => (
             title: 'New Year, New Dev Tools - Take the Quiz - Sourcegraph',
             description:
                 'Dev tools have made huge strides recently. This is a chance to think about your go-to tools for searching, reading, and understanding code and discover some new ones along the way.',
-            image: 'https://about.sourcegraph.com/sourcegraph-og.png',
         }}
         hideHeader={true}
         hideFooter={true}

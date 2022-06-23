@@ -83,7 +83,11 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                             <a>
                                 <img
                                     className="w-100"
-                                    src={frontmatter.heroImage ? frontmatter.heroImage : '/meta/sourcegraph-social.png'}
+                                    src={
+                                        frontmatter.heroImage
+                                            ? frontmatter.heroImage
+                                            : 'https://storage.googleapis.com/sourcegraph-assets/sourcegraph-social-image.png'
+                                    }
                                     alt={frontmatter.title}
                                 />
                             </a>
