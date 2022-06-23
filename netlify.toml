@@ -113,7 +113,7 @@
 
 [[redirects]]
   from = "/go"
-  to = "/blog/"
+  to = "/blog"
   status = 301
 
 [[redirects]]
