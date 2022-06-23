@@ -3,12 +3,12 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { BlockquoteWithBorder } from '@components'
+import { BlockquoteWithBorder, EmbeddedHubSpot, Video, YouTube } from '@components'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
 export type Components = import('mdx/types').MDXComponents
-const components = { BlockquoteWithBorder }
+const components = { BlockquoteWithBorder, EmbeddedHubSpot, Video, YouTube }
 
 /**
  * This component is used to render all types of posts:
@@ -69,7 +69,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         </header>
 
         {content && (
-            <div className="card-body">
+            <div className="card-body max-w-650">
                 <div className={`blog-post__html ${contentClassName}`}>
                     <MDXRemote {...content} components={components as Components} />
                 </div>

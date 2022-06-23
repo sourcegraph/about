@@ -62,7 +62,7 @@ const App = ({ Component, pageProps }: AppProps): ReactNode => {
 
             {/* Cookiebot */}
             <Script
-                id="Cookiebot"
+                id="cookiebot"
                 src="https://consent.cookiebot.com/uc.js"
                 data-cbid="fb31dc3e-afb3-4be8-ae84-7090bba7797d"
                 data-blockingmode="auto"

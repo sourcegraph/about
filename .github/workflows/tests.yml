@@ -1,0 +1,22 @@
+# This ensures our end to end tests run for production builds
+name: E2E Tests
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.15.0'
+      - name: Install dependencies
+        run: yarn ci
+      - name: Run E2E Tests
+        run: yarn test:ci

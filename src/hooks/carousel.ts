@@ -9,7 +9,6 @@ interface CarouselItems {
 }
 
 interface CarouselItem {
-    backgroundClass?: string
     buttonLabel: string
     headerClass: string
     text: string | ReactNode
