@@ -107,8 +107,8 @@
   status = 301
 
 [[redirects]]
-  from = "/go/:post-name"
-  to = "/blog/go/:post-name"
+  from = "/go/:slug"
+  to = "/blog/go/:slug"
   status = 301
 
 [[redirects]]
