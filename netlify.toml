@@ -102,8 +102,8 @@
 
 # ========== BLOG REDIRECTS ==========
 [[redirects]]
-  from = "/blog/better-onboarding-advice-from-engineering-leaders/"
-  to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm/"
+  from = "/blog/better-onboarding-advice-from-engineering-leaders"
+  to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm"
   status = 301
 
 [[redirects]]
