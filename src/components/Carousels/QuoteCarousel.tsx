@@ -1,13 +1,12 @@
-import React, { FunctionComponent, ReactFragment, ReactNode } from 'react'
+import React, { FunctionComponent, ReactFragment } from 'react'
 
 import ArrowLeftIcon from 'mdi-react/ArrowLeftIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import Carousel from 'react-bootstrap/Carousel'
 
 import { BlockquoteWithLogoBottom } from '@components'
-import { useCarousel } from '@hooks'
-
-import styles from './QuoteCarousel.module.scss'
-
+import { breakpoints } from '@data'
+import { useWindowWidth } from '@hooks'
 interface Blockquote {
     quote: string
     header?: string
@@ -20,33 +19,26 @@ interface Blockquote {
 }
 
 interface QuoteCarouselProps {
-    items: ReactNode[]
-    currentItem?: ReactNode
-    previousItem?: ReactNode
-    currentItemIndex?: number
-    autoAdvance?: boolean
+    items: Blockquote[]
 }
 
-export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, autoAdvance }) => {
-    const carouselHook = useCarousel(items, autoAdvance ?? false)
-    const carouselItems = carouselHook.carouselItems.items as Blockquote[]
+export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items }) => {
+    const windowWidth = useWindowWidth()
+    const isLgOrDown = windowWidth < breakpoints.xl
 
     return (
-        <div className="d-flex flex-lg-row align-items-lg-center flex-column justify-content-center align-items-center text-center h-xl-450 h-lg-450 h-md-450 h-sm-550 h-550 position-relative">
-            <div className="d-lg-flex d-none align-items-center btn">
-                <ArrowLeftIcon
-                    className="mr-4"
-                    color="#808080"
-                    onClick={() => carouselHook.moveCarousel('decrement')}
-                />
-            </div>
-            <div className="px-lg-6">
-                {carouselItems.map(item => (
-                    <div
-                        key={item.quote}
-                        className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
-                    >
+        <Carousel
+            prevIcon={<ArrowLeftIcon color="#808080" />}
+            prevLabel=""
+            nextIcon={<ArrowRightIcon color="#808080" />}
+            nextLabel=""
+            indicators={isLgOrDown}
+        >
+            {items.map(item => (
+                <Carousel.Item key={item.quote}>
+                    <div className="d-flex flex-column align-items-center justify-content-center text-center mx-auto col-lg-8 col-12 py-7 min-h-md-550">
                         <BlockquoteWithLogoBottom
+                            key={item.quote}
                             quote={item.quote}
                             header={item.header}
                             author={item.by}
@@ -61,23 +53,8 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items, au
                             }}
                         />
                     </div>
-                ))}
-            </div>
-            <div className="d-lg-flex d-none align-items-center btn">
-                <ArrowRightIcon className="ml-4" color="#808080" onClick={() => carouselHook.moveCarousel()} />
-            </div>
-            <div className={`d-lg-none d-flex justify-content-center w-100 position-absolute ${styles.positionNav}`}>
-                <div className="btn">
-                    <ArrowLeftIcon
-                        className="mr-4"
-                        color="#808080"
-                        onClick={() => carouselHook.moveCarousel('decrement')}
-                    />
-                </div>
-                <div className="btn">
-                    <ArrowRightIcon className="ml-4" color="#808080" onClick={() => carouselHook.moveCarousel()} />
-                </div>
-            </div>
-        </div>
+                </Carousel.Item>
+            ))}
+        </Carousel>
     )
 }

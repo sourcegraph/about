@@ -79,6 +79,13 @@
         color: $blurple;
         font-weight: 600 !important;
     }
+    .nav-tabs .nav-link.active {
+        color: $black !important;
+        background-color: transparent !important;
+        @include media-breakpoint-up(md) {
+            border-bottom: solid $vivid-violet 3px;
+        }
+    }
 
     .btn-link,
     .btn-primary {
@@ -122,7 +129,6 @@
             font-size: 1.5rem;
             line-height: 1.4rem;
             cursor: pointer;
-            color: $space-black;
             display: block;
             margin: 10px 0 10px 10px;
             font-size: 18px;
@@ -130,7 +136,7 @@
             width: 100%;
 
             &.active {
-                font-weight: 600;
+                font-weight: 600 !important;
                 display: block;
 
                 @media only screen and (max-width: 992px) {
@@ -143,7 +149,6 @@
                 padding: 0;
                 margin: 20px 0;
                 display: none;
-                font-size: 34px;
                 line-height: 2.5rem;
                 width: auto;
             }
