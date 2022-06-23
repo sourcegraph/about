@@ -112,7 +112,7 @@
   status = 301
 
 [[redirects]]
-  from = "/go/"
+  from = "/go"
   to = "/blog/"
   status = 301
 
@@ -122,7 +122,7 @@
   status = 301
 
 [[redirects]]
-  from = "/strange-loop/"
+  from = "/strange-loop"
   to = "/blog/"
   status = 301
 
@@ -132,7 +132,7 @@
   status = 301
 
 [[redirects]]
-  from = "/graphql/"
+  from = "/graphql"
   to = "/blog/"
   status = 301
 
@@ -142,7 +142,7 @@
   status = 301
 
 [[redirects]]
-  from = "/github-universe/"
+  from = "/github-universe"
   to = "/blog/"
   status = 301
 # ========== END BLOG REDIRECTS ==========
