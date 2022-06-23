@@ -100,15 +100,57 @@
   status = 301
 # ========== END TERMS REDIRECTS ==========
 
+# ========== BLOG REDIRECTS ==========
+[[redirects]]
+  from = "/blog/better-onboarding-advice-from-engineering-leaders/"
+  to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm/"
+  status = 301
+
+[[redirects]]
+  from = "/go/*"
+  to = "/blog/go/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/go/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/strange-loop/*"
+  to = "/blog/strange-loop/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/strange-loop/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/graphql/*"
+  to = "/blog/graphql/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/graphql/"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/github-universe/*"
+  to = "/blog/github-universe/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/github-universe/"
+  to = "/blog/"
+  status = 301
+# ========== END BLOG REDIRECTS ==========
+
 # ========== INDIVIDUAL REDIRECTS ==========
 [[redirects]]
   from = "/contact/sales"
   to = "/demo"
-  status = 301
-
-[[redirects]]
-  from = "/blog/better-onboarding-advice-from-engineering-leaders/"
-  to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm/"
   status = 301
 
 [[redirects]]
