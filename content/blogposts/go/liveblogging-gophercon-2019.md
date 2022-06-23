@@ -8,7 +8,7 @@ publishDate: 2019-07-22T00:00-07:00
 tags: [
   blog
 ]
-slug: sourcegraph-liveblogging-at-gophercon-2019
+slug: liveblogging-gophercon-2019
 heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
