@@ -17,156 +17,127 @@
 [[redirects]]
   from = "/changelog"
   to = "https://sourcegraph.com/github.com/sourcegraph/sourcegraph/-/blob/CHANGELOG.md"
-  status = 301
 # ========== END SOURCEGRAPH REDIRECTS ==========
 
 # ========== HANDBOOK REDIRECTS ==========
 [[redirects]]
   from = "/company"
   to = "https://handbook.sourcegraph.com/#stq=company"
-  status = 301
 
 [[redirects]]
   from = "/company/*"
   to = "https://handbook.sourcegraph.com/:splat"
-  status = 301
 
 [[redirects]]
   from = "/retrospectives/*"
-  to = "https://handbook.sourcegraph.com/company-info-and-process/communication/retrospectives/"
-  status = 301
+  to = "https://handbook.sourcegraph.com/company-info-and-process/communication/retrospectives"
 
 [[redirects]]
   from = "/workflow/*"
   to = "https://handbook.sourcegraph.com/#stq=workflow"
-  status = 301
 
 [[redirects]]
   from = "/search"
   to = "https://handbook.sourcegraph.com/#stq=:q"
   query = {q = ":q"}
-  status = 301
 
 [[redirects]]
   from = "/handbook/*"
   to = "https://handbook.sourcegraph.com/:splat"
-  status = 301
 # ========== END HANDBOOK REDIRECTS ==========
 
 # ========== TERMS REDIRECTS ==========
 [[redirects]]
   from = "/terms-cloud"
   to = "/terms/cloud"
-  status = 301
 
 [[redirects]]
   from = "/terms-dotcom"
   to = "/terms/cloud"
-  status = 301
 
 [[redirects]]
   from = "/terms-gov"
   to = "/terms/gov"
-  status = 301
 
 [[redirects]]
   from = "/privacy"
   to = "/terms/privacy"
-  status = 301
 
 [[redirects]]
   from = "/privacy/cookie-policy"
   to = "/terms/cookie-policy"
-  status = 301
 
 [[redirects]]
   from = "/security"
   to = "/terms/security"
-  status = 301
 
 [[redirects]]
   from = "/terms-private"
   to = "/terms/self-hosted"
-  status = 301
 
 [[redirects]]
   from = "/terms-self-hosted"
   to = "/terms/self-hosted"
-  status = 301
 
 [[redirects]]
   from = "/subprocessors"
   to = "/terms/subprocessors"
-  status = 301
 # ========== END TERMS REDIRECTS ==========
 
 # ========== BLOG REDIRECTS ==========
 [[redirects]]
   from = "/blog/better-onboarding-advice-from-engineering-leaders"
   to = "/blog/better-onboarding-how-to-prevent-codebase-overwhelm"
-  status = 301
 
 [[redirects]]
   from = "/go/:slug"
   to = "/blog/go/:slug"
-  status = 301
 
 [[redirects]]
   from = "/go"
   to = "/blog"
-  status = 301
 
 [[redirects]]
-  from = "/strange-loop/:post-name"
-  to = "/blog/strange-loop/:post-name"
-  status = 301
+  from = "/strange-loop/:slug"
+  to = "/blog/strange-loop/:slug"
 
 [[redirects]]
   from = "/strange-loop"
-  to = "/blog/"
-  status = 301
+  to = "/blog"
 
 [[redirects]]
-  from = "/graphql/:post-name"
-  to = "/blog/graphql/:post-name"
-  status = 301
+  from = "/graphql/:slug"
+  to = "/blog/graphql/:slug"
 
 [[redirects]]
   from = "/graphql"
-  to = "/blog/"
-  status = 301
+  to = "/blog"
 
 [[redirects]]
-  from = "/github-universe/:post-name"
-  to = "/blog/github-universe/:post-name"
-  status = 301
+  from = "/github-universe/:slug"
+  to = "/blog/github-universe/:slug"
 
 [[redirects]]
   from = "/github-universe"
-  to = "/blog/"
-  status = 301
+  to = "/blog"
 # ========== END BLOG REDIRECTS ==========
 
 # ========== INDIVIDUAL REDIRECTS ==========
 [[redirects]]
   from = "/contact/sales"
   to = "/demo"
-  status = 301
 
 [[redirects]]
   from = "/customers"
   to = "/use-cases"
-  status = 301
 
 [[redirects]]
   from = "/dpa"
   to = "/dpa.pdf"
-  status = 301
 
 [[redirects]]
   from = "/cloud-beta"
   to = "/"
-  status = 301
 
 [[redirects]]
   from = "/contact/product-specialist"
