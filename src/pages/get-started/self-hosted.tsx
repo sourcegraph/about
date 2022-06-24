@@ -23,7 +23,7 @@ export const SelfHostedPage: FunctionComponent = () => {
             hero={
                 <div className="container-xl py-5">
                     <h1 className="display-1 mb-2">
-                        <strong>What's best for you?</strong>
+                        <strong>Get started</strong>
                     </h1>
                     <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
                 </div>
