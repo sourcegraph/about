@@ -147,4 +147,5 @@
 [[redirects]]
   from = "/get-started"
   to = "/get-started/self-hosted"
+  force = true
 # ========== END INDIVIDUAL REDIRECTS ==========
