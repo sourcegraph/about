@@ -1,5 +1,8 @@
 ---
 title: 'No Secrets! Quickly find sensitive files in your GitHub repo'
+authors:
+  - name: Justin Dorfman
+    url: https://twitter.com/jdorfman
 publishDate: 2022-05-25T10:00-07:00
 description: 'One thing white hats and black hats alike often do is search Git repositories for secrets that have been accidentally committed. So we created a bookmarklet that can reveal what secrets might be lurking in any given GitHub repository.'
 tags: [blog]
