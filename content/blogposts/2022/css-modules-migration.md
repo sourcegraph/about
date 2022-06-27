@@ -185,7 +185,7 @@ At this point, the transformation is complete, and the script outputs informatio
 
 The codemod script can be used as a CLI tool by supplying a list of files to transform:
 
-```sh
+```shell
 $ yarn transform --transform ./globalCssToCssModule.ts ./sourcegraph/**/*.tsx
 ```
 
@@ -216,4 +216,3 @@ We successfully migrated to CSS Modules behind the scenes, delivering on the “
 We're relying on the same combination of Code Insights and codemods in our subsequent significant migration from global Bootstrap classes to our new Wildcard design system. We find this approach is more than just automating some simple tasks and speeding up the development work, as it helps keep engineers happy by reducing manual labor when upgrading their projects' dependencies, refactoring legacy patterns, or fixing bugs if the next version of a public API has breaking changes. As a next step, we plan to make codemods useful for engineers outside of the Frontend Platform team by developing [a higher-level toolkit for creating codemods](https://github.com/sourcegraph/codemod) that will eventually make it as simple as writing a regex find-and-replace.
 
 We hope you found this account of our migration useful and will consider trying codemods and [Code Insights](/blog/announcing-code-insights/) in your work.
-
