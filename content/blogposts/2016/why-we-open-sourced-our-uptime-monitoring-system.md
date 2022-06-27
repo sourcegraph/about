@@ -43,7 +43,7 @@ Though typically viewed as a last line of defense in production, health checks a
 
 Because Checkup can be used as a simple CLI, you can roll it into your continuous integration scripts. Below is a snippet taken from Sourcegraph’s CI build that demonstrates this ability. We version a [checkup.json](https://github.com/sourcegraph/checkup#create-your-checkup-config) file directly in our codebase that describes critical URLs that we must not break.
 
-```
+```bash
 #!/bin/bash
 
 # Quick end-to-end uptime tests

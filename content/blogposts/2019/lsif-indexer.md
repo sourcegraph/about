@@ -49,7 +49,7 @@ There are many ways to write parsers. For this exploration we choose the parser 
 
 For example the following Jsonnet snippet:
 
-```
+```json
 local bar = 5;
 
 {

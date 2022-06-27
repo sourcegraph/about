@@ -202,7 +202,7 @@ Let's say we want to add an additional parameter to call sites of the function, 
 file](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@e6691da7035873fd6394e16cdf32d2f8537fb9e1/-/blob/cmd/frontend/internal/app/errorutil/handlers.go#L19:6)). In
 Emacs, I can describe the change I'd like to make in the following keystrokes:
 
-```
+```emacs
 Ctrl-x (                   # begin recording the macro
 Ctrl-s errorutil.Handler(  # search for the pattern
 Ctrl-Alt-n Ctrl-b          # jump to one character before the end parens
@@ -215,7 +215,7 @@ Once I've recorded the macro, I can replay my keystrokes with `C-x e` and can ho
 it repeatedly.
 
 Here's another example involving data transformation. Say you want to turn an HTML table like this:
-```
+```html
 <table>
   <tr><td>John</td><td>25</td><tr>
   <tr><td>Alice</td><td>24</td></tr>
@@ -224,7 +224,7 @@ Here's another example involving data transformation. Say you want to turn an HT
 </table>
 ```
 into a JSON list like this:
-```
+```json
 [
   { "name": "John", "age": 25 },
   { "name": "Alice", "age": 24},
@@ -233,7 +233,7 @@ into a JSON list like this:
 ]
 ```
 To do that with keyboard macros in Emacs, you can type this:
-```
+```emacs
 Ctrl-x (                             # begin recording the macro
 Ctrl-s < t d Ctrl-f                  # move cursor to 'John'
 Ctrl-<space> Ctrl-a Ctrl-w           # delete everything on the line prior to 'John'
@@ -543,7 +543,7 @@ Here's how you'd do that in a campaign:
 
 1. Create a JSON file named `wrapped-errors.action.json` with the following contents:
 
-   ```
+   ```json
    {
      "scopeQuery": "repo:^github.com/sourcegraph/ fmt.Errorf",
      "steps": [
