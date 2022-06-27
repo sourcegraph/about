@@ -97,8 +97,12 @@ const Hero: FunctionComponent = () => {
 
             <div className="max-w-600 mx-auto text-center">
                 <h2 className="font-weight-bold">
-                    Over <span className="text-vivid-violet">1.2M engineers</span> use Sourcegraph to build software you
-                    rely on
+                    Over{' '}
+                    <Link href="/case-studies" passHref={true}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a className="text-vivid-violet">1.2M engineers</a>
+                    </Link>{' '}
+                    use Sourcegraph to build software you rely on
                 </h2>
                 <Link
                     href="/case-studies"
