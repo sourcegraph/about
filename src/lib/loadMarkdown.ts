@@ -31,7 +31,7 @@ export const serializeMdxSource = async (markdownContent: string): Promise<MDXRe
             rehypePlugins: [
                 // Adds syntax highlighting
                 rehypeHighlight,
-                
+
                 // Adds "slug" IDs to each heading, for links and table of contents.
                 rehypeSlug,
 
