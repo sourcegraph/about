@@ -28,7 +28,7 @@ const Hero: FunctionComponent = () => {
     })
 
     return (
-        <div className="bg-white py-7 px-2 position-relative">
+        <div className="bg-white py-5 py-md-7 px-2 position-relative">
             {[meshLeft, meshRight].map((image, index) => (
                 <div
                     key={image.src}
@@ -91,7 +91,7 @@ const Hero: FunctionComponent = () => {
                 </p>
             </div>
 
-            <div className="py-7">
+            <div className="py-5 py-md-7">
                 <CustomerLogos />
             </div>
 

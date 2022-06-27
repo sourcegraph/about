@@ -211,7 +211,6 @@ table {
 @import 'components/product/GitLabIntegrationSection';
 @import 'components/product/IntegratesWithSection';
 @import 'components/product/UseCasesTable';
-@import 'components/Cookiebot';
 @import 'components/Events';
 @import 'components/SelfHostedSection';
 @import 'components/Header';
@@ -236,6 +235,7 @@ table {
 @import 'pages/code-insights';
 @import 'carousels';
 @import 'gradients';
+@import 'scripts';
 @import 'spacing';
 @import 'typography';
 
@@ -305,7 +305,7 @@ $positions: ('top', 'right', 'bottom', 'left');
     }
 }
 
-// Breakpoint-based positions
+/* ==================== Breakpoint-based positions ==================== */
 @each $breakpoint, $width in $grid-breakpoints {
     @media (min-width: $width) {
         .#{$breakpoint}-absolute {
