@@ -6,7 +6,7 @@ import { Layout, Install } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useQueryString } from '@hooks'
 
-import { BestForTitle, MostPopularBadge } from '.'
+import { DesignedForTitle } from '.'
 
 import styles from './getStarted.module.scss'
 
@@ -40,14 +40,12 @@ export const SelfHostedPage: FunctionComponent = () => {
                                 Self-Hosted
                             </h1>
 
-                            <MostPopularBadge />
-
                             <p className="mt-4">
                                 Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
                                 locally. Get started for free.
                             </p>
 
-                            <BestForTitle />
+                            <DesignedForTitle />
                             <p>Teams and enterprises</p>
 
                             <p>
