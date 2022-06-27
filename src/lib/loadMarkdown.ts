@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeHighlight from 'rehype-highlight'
 import rehypeSlug from 'rehype-slug'
 import gfm from 'remark-gfm'
 
@@ -28,9 +29,13 @@ export const serializeMdxSource = async (markdownContent: string): Promise<MDXRe
         mdxOptions: {
             remarkPlugins: [gfm],
             rehypePlugins: [
-                // Add "slug" IDs to each heading, for links and table of contents.
+                // Adds syntax highlighting
+                rehypeHighlight,
+                
+                // Adds "slug" IDs to each heading, for links and table of contents.
                 rehypeSlug,
-                // Add auto links to each heading.
+
+                // Adds auto links to each heading.
                 [
                     rehypeAutolinkHeadings,
                     {

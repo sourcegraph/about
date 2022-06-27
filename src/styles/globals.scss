@@ -3,6 +3,8 @@
 
 @use 'sass:math';
 
+@import 'node_modules/highlight.js/scss/atom-one-light.scss';
+
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/mixins';
 
@@ -215,7 +217,6 @@ table {
 @import 'components/SelfHostedSection';
 @import 'components/Header';
 @import 'components/Footer';
-@import 'components/PrismTheme';
 @import 'components/TemplateCodeBlock';
 @import 'components/TestimonialCarousel';
 @import 'components/Tweets';
