@@ -71,7 +71,7 @@ General steps:
 
 Goyacc is almost an exact translation of the original yacc so some of the idiosyncrasies have been inherited. For example, C programs return only 1 value: 0 for success and 1 for failure. This means you need awkward boilerplate to give values to the lexer:
 
-```
+```go
 %{
 package jsonparser
 func setResult(l yyLexer, v Result) {
@@ -116,7 +116,7 @@ The generated parser is just a single function that runs a state machine and use
 
 These variables are saved in a union data structure:
 
-```
+```go
 %union{
   result Result
   part string
