@@ -211,8 +211,6 @@ table {
 @import 'components/product/GitLabIntegrationSection';
 @import 'components/product/IntegratesWithSection';
 @import 'components/product/UseCasesTable';
-@import 'components/Cookiebot';
-@import 'components/CustomCarousel';
 @import 'components/Events';
 @import 'components/SelfHostedSection';
 @import 'components/Header';
@@ -235,7 +233,9 @@ table {
 @import 'pages/universal-code-search';
 @import 'templates/PostTemplate';
 @import 'pages/code-insights';
+@import 'carousels';
 @import 'gradients';
+@import 'scripts';
 @import 'spacing';
 @import 'typography';
 
@@ -301,7 +301,7 @@ $positions: ('top', 'right', 'bottom', 'left');
     }
 }
 
-// Breakpoint-based positions
+/* ==================== Breakpoint-based positions ==================== */
 @each $breakpoint, $width in $grid-breakpoints {
     @media (min-width: $width) {
         .#{$breakpoint}-absolute {
@@ -328,8 +328,12 @@ $positions: ('top', 'right', 'bottom', 'left');
     border-image-source: linear-gradient(to right, $violet-mist, $blue-mist) !important;
 }
 
-/* ==================== Background ==================== */
+/* ==================== Tailwind placeholders ==================== */
 // TODO: After Tailwind migration this class can be deleted
 .bg-cover {
     background-size: cover !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }

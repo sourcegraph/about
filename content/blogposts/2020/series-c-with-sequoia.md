@@ -9,7 +9,6 @@ tags: [
 ]
 slug: series-c-with-sequoia
 heroImage: /blog/sourcegraph-social-img.png
-socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 published: true
 description: "Today we're announcing Sourcegraph's $50M Series C round of funding led by Sequoia. We'll use this funding to bring universal code search to more developers and companies."
 ---

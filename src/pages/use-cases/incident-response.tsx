@@ -19,7 +19,7 @@ import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2>{header}</h2>
+        <h2 className="display-5 font-weight-bold mb-lg-0 mb-5">{header}</h2>
         {text}
     </>
 )
@@ -31,7 +31,7 @@ const items = [
             <CarouselItem
                 header="Response to incidents faster"
                 text={
-                    <p>
+                    <p className="py-3">
                         No heroics required: Quickly understand all the context and dependencies around your codebase
                         with <Link href="/code-search">Code Search</Link> so you can find the root cause of an incident
                         with confidence and speed. Document work in progress with{' '}
@@ -50,7 +50,7 @@ const items = [
             <CarouselItem
                 header="Limit the impact of incidents"
                 text={
-                    <p>
+                    <p className="py-3">
                         Automate the deployment of fixes everywhere and at scale. With{' '}
                         <Link href="/batch-changes">Batch Changes</Link>, you can automate code changes and monitor the
                         merge status of each resulting PR. Refactor code to replace insecure functions, update
@@ -67,7 +67,7 @@ const items = [
             <CarouselItem
                 header="Track remediation progress"
                 text={
-                    <p>
+                    <p className="py-3">
                         Visualize fixes in progress and track their deployment. With{' '}
                         <Link href="/code-insights">Code Insights</Link>, get visibility into remediation efforts and
                         share progress with team leaders and all of your customers.
@@ -83,7 +83,7 @@ const items = [
             <CarouselItem
                 header="Monitor for unsafe code"
                 text={
-                    <p>
+                    <p className="py-3">
                         Close the loop on your incident response efforts. After finding the root cause, use{' '}
                         <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a> to track whether
                         similarly unsafe code is ever merged. Get alerts and stop incidents before they occur.
@@ -241,9 +241,9 @@ const IncidentResponsePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between px-0">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 font-weight-bold max-w-500">
+                        <h2 className="mb-4 display-3 font-weight-bold max-w-500">
                             Incident response is stressful and overwhelming
-                        </h1>
+                        </h2>
                         <p>
                             Current tools don't enable teams to quickly get to the root cause of an incident and ensure
                             it doesn't reoccur. What does that mean for you?
@@ -295,20 +295,13 @@ const IncidentResponsePage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <ContentSection>
-            <div className="row mt-lg-0 mt-5 justify-content-center">
-                <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-bold text-md-center text-left mb-lg-6 mb-md-3">How Sourcegraph helps</h1>
-                </div>
-                <div className="pb-lg-5 pb-md-6 pb-5">
-                    <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />
-                </div>
-            </div>
+        <ContentSection className="py-7">
+            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
         </ContentSection>
 
-        <div className="bg-gradient-saturn-saturated py-8">
+        <div className="bg-gradient-saturn-saturated">
             <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} />
+                <QuoteCarousel items={quoteCarouselItems} />
             </ContentSection>
         </div>
 
@@ -316,7 +309,7 @@ const IncidentResponsePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
-                        <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
+                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
                         <p>
                             Respond to incidents with confidence and speed, and remediate issues at their root to ensure
                             they don't reoccur.
@@ -353,7 +346,7 @@ const IncidentResponsePage: FunctionComponent = () => (
         <ContentSection className="py-lg-7 py-5">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
@@ -363,7 +356,7 @@ const IncidentResponsePage: FunctionComponent = () => (
 
         <ContentSection>
             <div className="text-center">
-                <h2 className="font-weight-bold mb-4 mx-4 mx-lg-0">
+                <h2 className="font-weight-bold display-3 mb-4 mx-4 mx-lg-0">
                     Respond to incidents faster and more effectively.
                 </h2>
                 <Link href="/get-started" passHref={true}>

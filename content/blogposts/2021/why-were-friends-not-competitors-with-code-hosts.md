@@ -7,7 +7,6 @@ description: Some people assume that Sourcegraph competes with GitHub, GitLab, B
 publishDate: 2021-04-06T10:00-07:00
 tags: [blog, code search]
 slug: why-we're-friends-with-code-hosts
-socialImage: https://about.sourcegraph.com/blog/sourcegraph-social-img.png
 published: true
 ---
 

@@ -13,7 +13,7 @@ const LEADERS: {
 }[] = [
     {
         name: 'Quinn Slack',
-        image: '/staff/avatar-quinn.jpg',
+        image: '/staff/avatar-quinn.png',
         title: 'CEO and Cofounder',
         bio: 'https://handbook.sourcegraph.com/company/team#quinn-slack',
         github: 'https://github.com/sqs',
@@ -22,7 +22,7 @@ const LEADERS: {
     },
     {
         name: 'Beyang Liu',
-        image: '/staff/avatar-beyang.jpg',
+        image: '/staff/avatar-beyang.png',
         title: 'CTO and Cofounder',
         bio: 'https://handbook.sourcegraph.com/company/team#beyang-liu',
         github: 'https://github.com/beyang',
@@ -31,12 +31,21 @@ const LEADERS: {
     },
     {
         name: 'Christina Forney',
-        image: '/staff/avatar-christina.jpg',
-        title: 'VP of Product and Engineering',
+        image: '/staff/avatar-christina.png',
+        title: 'Product Advisor',
         bio: 'https://handbook.sourcegraph.com/company/team#christina-forney',
         github: 'https://github.com/christinaforney',
         linkedin: 'https://www.linkedin.com/in/christinaforney',
         twitter: 'https://twitter.com/christina4nee',
+    },
+    {
+        name: 'Nick Snyder',
+        image: '/staff/avatar-nick.png',
+        title: 'Engineering Advisor',
+        bio: 'https://handbook.sourcegraph.com/team/#nick-snyder',
+        github: 'https://github.com/nicksnyder',
+        linkedin: 'https://www.linkedin.com/in/nickdsnyder',
+        twitter: 'https://twitter.com/nickdsnyder',
     },
     {
         name: 'Dan Adler',
@@ -57,18 +66,9 @@ const LEADERS: {
         twitter: 'https://twitter.com/sourcegraph',
     },
     {
-        name: 'Kacie Jenkins',
-        image: '/staff/avatar-kacie.jpg',
-        title: 'VP Marketing',
-        bio: 'https://handbook.sourcegraph.com/company/team#kacie-jenkins',
-        github: 'https://github.com/sourcegraph',
-        linkedin: 'https://www.linkedin.com/in/kaciejenkins',
-        twitter: 'https://twitter.com/mskaciej',
-    },
-    {
         name: 'Carly Jones',
-        image: '/staff/avatar-carly.jpg',
-        title: 'VP Talent',
+        image: '/staff/avatar-carly.png',
+        title: 'VP Talent & People',
         bio: 'https://handbook.sourcegraph.com/company/team#carly-jones',
         github: 'https://github.com/carlyj0nes',
         linkedin: 'https://www.linkedin.com/in/carlycjones/',

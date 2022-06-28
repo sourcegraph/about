@@ -20,7 +20,7 @@ import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2>{header}</h2>
+        <h2 className="display-5 font-weight-bold mb-lg-0 mb-5">{header}</h2>
         {text}
     </>
 )
@@ -32,7 +32,7 @@ const items = [
             <CarouselItem
                 header="Find old versions easily"
                 text={
-                    <p>
+                    <p className="py-3">
                         Use{' '}
                         <Link href="/code-search" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -59,7 +59,7 @@ const items = [
             <CarouselItem
                 header="Automate version updates and communications"
                 text={
-                    <p>
+                    <p className="py-3">
                         With{' '}
                         <Link href="/batch-changes">
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -85,7 +85,7 @@ const items = [
             <CarouselItem
                 header="Get everyone on the same page with living docs"
                 text={
-                    <p>
+                    <p className="py-3">
                         Create living, actionable documentation with{' '}
                         <a href="https://docs.sourcegraph.com/notebooks">Notebooks</a> that show your best practices
                         with real-life examples you can share with your team.
@@ -101,7 +101,7 @@ const items = [
             <CarouselItem
                 header="Monitor for deprecated code"
                 text={
-                    <p>
+                    <p className="py-3">
                         Make sure deprecated endpoints don't sneak back into your code. Get alerts for new occurrences
                         of deprecated methods or restricted patterns with{' '}
                         <a href="https://docs.sourcegraph.com/code_monitoring">code monitoring</a>.
@@ -117,7 +117,7 @@ const items = [
             <CarouselItem
                 header="Develop a data-driven relationship with your code"
                 text={
-                    <p>
+                    <p className="py-3">
                         Create dashboards to track mitigations, package use, version adoption, code smells, codebase
                         size, and more to understand code health with <Link href="/code-insights">Code Insights</Link>.
                     </p>
@@ -226,7 +226,7 @@ const UseCasePage: FunctionComponent = () => (
                 <div className={styles.pageHeader}>
                     <div className="container pb-4">
                         <div className="row">
-                            <div className="col-md-7 mb-8 mt-7">
+                            <div className="col-md-7 my-7">
                                 <BackButtonBold href="/use-cases" text="USE CASES" />
                                 <h1 className="display-2 font-weight-bold mb-4 max-w-250 max-w-sm-275 max-w-lg-400">
                                     Healthy code, happy teams
@@ -280,7 +280,9 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-md-4 font-weight-bold max-w-500">Improving code health can be daunting</h1>
+                        <h2 className="mb-md-4 display-3 font-weight-bold max-w-500">
+                            Improving code health can be daunting
+                        </h2>
                         <p className="max-w-500">
                             Engineering teams need to track and measure code quality consistently to monitor code health
                             across their entire codebase, but current tools don't make this easy. What does that mean
@@ -320,22 +322,13 @@ const UseCasePage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <ContentSection>
-            <div className="row mt-lg-0 mt-5 justify-content-center">
-                <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6 mb-4">
-                        How Sourcegraph helps
-                    </h1>
-                </div>
-                <div className="pb-lg-5 pb-md-6 pb-5">
-                    <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />
-                </div>
-            </div>
+        <ContentSection className="py-7">
+            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
         </ContentSection>
 
-        <div className="bg-gradient-saturn-saturated py-8">
+        <div className="bg-gradient-saturn-saturated">
             <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} />
+                <QuoteCarousel items={quoteCarouselItems} />
             </ContentSection>
         </div>
 
@@ -343,7 +336,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column text-start text-md-center max-w-600 mx-auto">
-                        <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
+                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
                         <p>Give your team the tools they need to build a healthier codebase.</p>
                     </div>
                     <div className="text-center col-12 px-0">
@@ -382,7 +375,7 @@ const UseCasePage: FunctionComponent = () => (
         <ContentSection className="py-lg-7 py-5">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />

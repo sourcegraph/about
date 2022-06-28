@@ -1,11 +1,14 @@
-import React, { FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
 
-interface Logos {
+import Link from 'next/link'
+
+interface Logo {
     name: string
     src: string
+    link?: string
 }
 
-const logos: Logos[] = [
+const logos: Logo[] = [
     {
         name: 'Amazon',
         src: '/external-logos/amazon-logo.svg',
@@ -25,6 +28,7 @@ const logos: Logos[] = [
     {
         name: 'Nutanix',
         src: '/external-logos/nutanix-logo.svg',
+        link: '/case-studies/nutanix-fixed-log4j-with-sourcegraph',
     },
     {
         name: 'Canva',
@@ -53,6 +57,7 @@ const logos: Logos[] = [
     {
         name: 'Lyft',
         src: '/external-logos/lyft-logo.svg',
+        link: '/case-studies/lyft-monolith-to-microservices',
     },
     {
         name: 'Databricks',
@@ -66,15 +71,19 @@ const logos: Logos[] = [
 
 export const CustomerLogos: FunctionComponent = () => (
     <div className="d-flex flex-wrap align-items-center justify-content-center max-w-1000 mx-auto user-select-none">
-        {logos.map((logo: Logos) => (
-            <img
-                key={logo.name}
-                src={logo.src}
-                alt={`${logo.name} logo`}
-                title={`${logo.name} logo`}
-                className="max-w-100 h-100 my-3 mx-4 flex-shrink-0"
-                draggable={false}
-            />
+        {logos.map((logo: Logo) => (
+            <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a className="max-w-100 max-h-100 my-3 mx-4 flex-shrink-0">
+                    <img
+                        src={logo.src}
+                        alt={`${logo.name} logo`}
+                        title={`${logo.name} logo`}
+                        className="w-100"
+                        draggable={false}
+                    />
+                </a>
+            </Link>
         ))}
     </div>
 )

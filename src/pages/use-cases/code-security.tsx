@@ -19,7 +19,7 @@ import styles from './useCases.module.scss'
 
 const CarouselItem: FunctionComponent<{ header: string; text: ReactNode }> = ({ header, text }) => (
     <>
-        <h2>{header}</h2>
+        <h2 className="display-5 font-weight-bold mb-lg-0 mb-5">{header}</h2>
         {text}
     </>
 )
@@ -31,7 +31,7 @@ const items = [
             <CarouselItem
                 header="Find vulnerabilities"
                 text={
-                    <p>
+                    <p className="py-3">
                         Vulnerabilities are inevitable, but they don't have to be disruptive. With{' '}
                         <Link href="/code-search">Code Search</Link>, you can find vulnerabilities across your
                         repositories in a single search. Relieve your engineers from manual work, get a headstart on
@@ -49,7 +49,7 @@ const items = [
             <CarouselItem
                 header="Automatically merge and deploy fixes"
                 text={
-                    <p>
+                    <p className="py-3">
                         Deploy fixes at scale. Don't let the size and complexity of your codebase hold you back. With{' '}
                         <Link href="/batch-changes">Batch Changes</Link>, you can automate the merging and deployment of
                         fixes. Move faster than your competitors, free up your engineers, and return your codebase to a
@@ -66,7 +66,7 @@ const items = [
             <CarouselItem
                 header="Proactively monitor for the presence of vulnerable code"
                 text={
-                    <p>
+                    <p className="py-3">
                         Get ahead of vulnerabilities. With
                         <a href="https://docs.sourcegraph.com/code_monitoring"> code monitoring</a>, get alerts whenever
                         specified patterns enter your codebase. Monitors ensure new occurrences are detected immediately
@@ -83,7 +83,7 @@ const items = [
             <CarouselItem
                 header="Ensure removal of security vulnerabilities"
                 text={
-                    <p>
+                    <p className="py-3">
                         Get the full picture of an incident. Track how long the vulnerable code has been in your
                         codebase and how quickly you're removing it. With{' '}
                         <Link href="/code-insights">Code Insights</Link>, you can measure the progress of applying
@@ -100,10 +100,10 @@ const items = [
             <CarouselItem
                 header="Bring peace of mind to customers"
                 text={
-                    <p>
-                        The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can
-                        quickly identify and understand the severity of a vulnerability so you can communicate your
-                        remediation plan to customers faster and deploy fixes sooner.
+                    <p className="py-3">
+                        The last thing you want to do is walk back an “all clear” report. With Sourcegraph, you can know
+                        you'll find every instance of affected code, be able to fix it at scale, monitor for its
+                        presence long-term, and ensure your customers that your code is safe.
                     </p>
                 }
             />
@@ -218,7 +218,7 @@ const UseCasePage: FunctionComponent = () => (
                 <div className={styles.pageHeader}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-7 mb-8 mt-7">
+                            <div className="col-lg-7 my-7">
                                 <BackButtonBold href="/use-cases" text="USE CASES" />
                                 <h1 className="display-2 font-weight-bold mb-4">Improve code security</h1>
                                 <div className="display-4 font-weight-normal mb-5">
@@ -270,9 +270,9 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h1 className="mb-4 font-weight-bold mw-400">
+                        <h2 className="mb-4 display-3 font-weight-bold mw-400">
                             Identifying & resolving security vulnerabilities is painful
-                        </h1>
+                        </h2>
                         <p>
                             Existing tooling doesn't enable teams to be agile and effective when responding to security
                             vulnerabilities. What does that mean for you?
@@ -317,22 +317,13 @@ const UseCasePage: FunctionComponent = () => (
             </ContentSection>
         </div>
 
-        <ContentSection>
-            <div className="row mt-lg-0 mt-5 justify-content-center mb-lg-0 mb-md-0 mb-4">
-                <div className="d-flex flex-column mt-lg-6 mt-4 w-100 mx-3">
-                    <h1 className="font-weight-bold text-lg-center text-left mb-lg-6 mb-md-6 mb-5">
-                        How Sourcegraph helps
-                    </h1>
-                </div>
-                <div className="pb-lg-5 pb-md-6 pb-5">
-                    <CustomCarousel items={items} autoAdvance={true} smallPanel={true} />
-                </div>
-            </div>
+        <ContentSection className="py-7">
+            <CustomCarousel items={items} autoAdvance={true} title="How Sourcegraph helps" />
         </ContentSection>
 
-        <div className="bg-gradient-saturn-saturated py-5">
+        <div className="bg-gradient-saturn-saturated">
             <ContentSection>
-                <QuoteCarousel items={quoteCarouselItems} autoAdvance={true} />
+                <QuoteCarousel items={quoteCarouselItems} />
             </ContentSection>
         </div>
 
@@ -340,7 +331,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection>
                 <div className="row d-flex flex-column mx-4 mx-lg-0 align-items-lg-center align-items-left">
                     <div className="mb-5 d-flex flex-column text-start text-md-center mx-auto align-items-lg-center">
-                        <h1 className="font-weight-bold">Get started with Sourcegraph</h1>
+                        <h2 className="display-3 font-weight-bold">Get started with Sourcegraph</h2>
                         <p className="max-w-450">
                             Find, fix, and track vulnerable code quickly across your entire codebase to improve code
                             security.
@@ -377,7 +368,7 @@ const UseCasePage: FunctionComponent = () => (
         <ContentSection className="py-lg-7 py-5">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Related resources</h1>
+                    <h2 className="mb-5 display-3 font-weight-bold">Related resources</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
