@@ -163,7 +163,7 @@ async function createHubSpotForm({
 }: CreateHubSpotFormProps): Promise<void> {
     // Load third party script integrations sequentially
     const script = await loadScriptElement('hubspot', hubSpotScript)
-    await loadScriptElement('jQuery', jQueryScript)
+    await loadScriptElement('jquery', jQueryScript)
     await loadScriptElement('clearbit', clearbitScript, true)
 
     /**
@@ -171,7 +171,7 @@ async function createHubSpotForm({
      * listener to map the lead data to the ChiliPiper scheduler.
      */
     if (chiliPiper) {
-        await loadScriptElement('chiliPiper', chiliPiperScript)
+        await loadScriptElement('chilipiper', chiliPiperScript)
 
         const cpTenantDomain = 'sourcegraph'
         const cpRouterName = 'contact-sales'
@@ -272,10 +272,10 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
         })
 
         return () => {
-            removeScriptElement('jQuery')
+            removeScriptElement('jquery')
             removeScriptElement('clearbit')
             removeScriptElement('hubspot')
-            removeScriptElement('chiliPiper')
+            removeScriptElement('chilipiper')
         }
     }, [formId, masterFormName, onFormSubmitted, chiliPiper])
 
