@@ -15,7 +15,7 @@ interface Props {
 
 const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }) => (
     <>
-        <Nav className="left-nav me-auto ml-md-2">
+        <Nav className="left-nav me-auto ml-xl-2">
             {navLinks.map(navLink =>
                 navLink.items.length === 1 ? (
                     navLink.items.map((item: { href: string; title: string }) =>
