@@ -55,11 +55,13 @@ git config core.hooksPath .githooks
 We use [Cypress](https://www.cypress.io/) as our test suite and currently have end to end tests configured.
 
 To run tests visually, run:
+
 ```sh
 yarn test
 ```
 
 To run tests headlessly in the CLI, run:
+
 ```sh
 yarn test:ci
 ```

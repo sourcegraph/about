@@ -1,5 +1,6 @@
 import fs from 'fs/promises'
 
+import rehypePrism from '@mapbox/rehype-prism'
 import matter from 'gray-matter'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
@@ -28,9 +29,13 @@ export const serializeMdxSource = async (markdownContent: string): Promise<MDXRe
         mdxOptions: {
             remarkPlugins: [gfm],
             rehypePlugins: [
-                // Add "slug" IDs to each heading, for links and table of contents.
+                // Adds syntax highlighting
+                rehypePrism,
+
+                // Adds "slug" IDs to each heading, for links and table of contents.
                 rehypeSlug,
-                // Add auto links to each heading.
+
+                // Adds auto links to each heading.
                 [
                     rehypeAutolinkHeadings,
                     {

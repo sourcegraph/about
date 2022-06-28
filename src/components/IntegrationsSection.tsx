@@ -88,7 +88,7 @@ const renderListItems = (items: string[]): ReactNode =>
     ))
 
 export const IntegrationsSection: FunctionComponent = () => (
-    <ContentSection className="py-7">
+    <ContentSection className="py-5 py-md-7">
         <h2 className="display-3 font-weight-bold mb-3">Works with your code, infrastructure, and tools</h2>
 
         <div className="row">
