@@ -100,12 +100,12 @@ Customers wanting better indexed search performance or wishing to add many more 
 
 The Kubernetes [deployment manifest](https://github.com/sourcegraph/deploy-sourcegraph) for indexed-search services has changed from a Normal Service to a Headless Service. This enables Sourcegraph to individually resolve indexed-search pods. Services are immutable, so a [migration is required](https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310).
 
-<div className="alert alert-warning mx-auto" style={{width: '40rem'}}>
+<Alert style="warning">
   <div>
     <strong>IMPORTANT: required migration for all Kubernetes deployments.</strong>
     Please see the <a href="https://github.com/sourcegraph/deploy-sourcegraph/blob/master/docs/migrate.md#310">3.10 migration guide</a> for details.
   </div>
-</div>
+</Alert>
 
 ## Fully automated release testing process
 

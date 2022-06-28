@@ -1,6 +1,7 @@
 // Common
 export { Install } from './Install'
 export { Jumbotron } from './Jumbotron'
+export { Alert } from './Alert'
 export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
 export { BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
 export { BlogResourceItem } from './BlogResourceItem'

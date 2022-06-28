@@ -12,11 +12,9 @@ published: true
 description: 'Code intelligence with LSIF'
 ---
 
-<div className="alert alert-info">
-
-Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)".
-
-</div>
+<Alert style="info">
+  Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)".
+</Alert>
 
 Since the [last code intelligence update](https://about.sourcegraph.com/blog/improving-language-support-in-2019), we have shifted our efforts away from improving language servers. We found that language servers were hard to develop due to the number of build and dependency systems per language, hard to deploy and connect to a Sourcegraph instance, and hard to make fast enough to meet our user's expectations. The Sourcegraph 3.0 release in February included [zero configuration code intelligence for the 20+ most popular languages](https://github.com/sourcegraph/sourcegraph-basic-code-intel) based on ctags and text search. This has provided a much better default experience for Sourcegraph customers, but there is one limitation: results are imprecise unless a customer configures a language server.
 

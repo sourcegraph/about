@@ -42,6 +42,6 @@ This screencast (with accompanying audio) shows how to enable code intelligence 
   <br/>
 </div>
 
-<div className="alert alert-info text-center mx-auto" style={{width:'40rem'}}>
+<Alert style="info">
   See the <a href="https://docs.gitlab.com/ee/integration/sourcegraph.html">GitLab Sourcegraph integration docs</a> for more information.
-</div>
+</Alert>
