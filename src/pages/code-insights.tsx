@@ -348,7 +348,7 @@ const CodeInsightsPage: FunctionComponent = () => {
                             and accuracy of Sourcegraph Code Search.
                         </p>
                     </div>
-                    <div className="col-lg-7 ml-lg-6 mb-md-4 d-flex align-items-center video-container">
+                    <div className="col-lg-7 mb-md-4 pl-lg-5 d-flex align-items-center video-container">
                         <Video
                             source={{ webm: 'code_insights/code-insights-720', mp4: 'code_insights/code-insights-720' }}
                             title="Code Insights"
