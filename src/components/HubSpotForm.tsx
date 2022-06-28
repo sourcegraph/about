@@ -133,6 +133,7 @@ const loadScriptElement = (
         if (!scriptElement) {
             const newScriptElement = document.createElement('script')
             newScriptElement.setAttribute('id', id)
+            newScriptElement.setAttribute('async', '')
             if (innerHTML) {
                 newScriptElement.innerHTML = script
             } else {
