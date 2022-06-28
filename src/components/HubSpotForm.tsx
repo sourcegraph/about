@@ -81,9 +81,8 @@ interface HubSpotEventProps {
 }
 
 /**
- * These are our Master Form IDs that are used throughout our codebase.
- * Each masterFormName is used as an identifier that is mapped to a specific
- * master form id.
+ * These are our Master Forms that are used throughout our codebase. Each
+ * masterFormName is used as an identifier to map to a specific master form id.
  */
 const masterForms: { [key: string]: string } = {
     // Demo Request Email Only
@@ -149,7 +148,7 @@ const loadScriptElement = (
 /**
  * This creates the HubSpot form with the configuration options.
  * See: https://legacydocs.hubspot.com/docs/methods/forms/advanced_form_options
- * 
+ *
  * @param CreateHubSpotFormProps - object props passed to createHubSpotForm
  * @param CreateHubSpotFormProps.formId - the form's id
  * @param CreateHubSpotFormProps.onFormReady - callback after form is built
@@ -160,8 +159,9 @@ async function createHubSpotForm({
     formId,
     onFormReady,
     onFormSubmitted,
-    chiliPiper
+    chiliPiper,
 }: CreateHubSpotFormProps): Promise<void> {
+    // Load third party script integrations sequentially
     const script = await loadScriptElement('hubspot', hubSpotScript)
     await loadScriptElement('jQuery', jQueryScript)
     await loadScriptElement('clearbit', clearbitScript, true)
@@ -203,16 +203,16 @@ async function createHubSpotForm({
                     onFormReady(form[0])
                 }
             },
-            onFormSubmitted
+            onFormSubmitted,
         })
     })
 }
 
 // This gets called when the HubSpot form is ready
-const onFormReady = (form: HTMLFormElement): void => {    
+const onFormReady = (form: HTMLFormElement): void => {
     /**
      * This allows you to populate hidden form fields with values
-     * 
+     *
      * @param formField - the form field name
      * @param value - the value to populate
      */
@@ -222,7 +222,7 @@ const onFormReady = (form: HTMLFormElement): void => {
             input.value = value || ''
         }
     }
-    
+
     /**
      * If the form is ready and visible in the DOM, gather all cookie and
      * session data and populate hidden form fields.
@@ -242,7 +242,14 @@ const onFormReady = (form: HTMLFormElement): void => {
 }
 
 /**
- * The HubSpot form component. This takes an optional 
+ * The HubSpot form component.
+ *
+ * @param options - option props
+ * @param options.formId - an optional form id
+ * @param options.masterFormName - an optional master form name
+ * @param options.onFormSubmitted - a callback that runs after a form submission
+ * @param options.chiliPiper - a boolean prop to enable/disable ChiliPiper
+ * @returns - a div element with an id where the HubSpot form renders
  */
 export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     formId,
@@ -261,7 +268,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
             formId: formId || masterFormId,
             onFormReady,
             onFormSubmitted,
-            chiliPiper
+            chiliPiper,
         })
 
         return () => {
