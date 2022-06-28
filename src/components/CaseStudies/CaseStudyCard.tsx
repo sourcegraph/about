@@ -54,7 +54,7 @@ export const CASESTUDIES: CaseStudy[] = [
     },
     {
         name: 'Criteo',
-        logo: '/external-logos/criteo-logo.svg',
+        logo: '/external-logos/criteo-logo.png',
         title: 'Criteo uses Sourcegraph universal code search to tackle Big Code.',
         url: '/case-studies/criteo-tackles-big-code',
     },

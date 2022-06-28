@@ -161,7 +161,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         byproduct.`}
                         author="Francois Jehl, Senior Engineering Manager, Criteo"
                         logo={{
-                            src: '/external-logos/criteo-logo.svg',
+                            src: '/external-logos/criteo-logo.png',
                             alt: 'Criteo',
                         }}
                     />
