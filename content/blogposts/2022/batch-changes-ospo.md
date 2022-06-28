@@ -118,7 +118,7 @@ If you have any questions, I’ll be hanging out in [our Discord](https://discor
 
 ---
 
-_Thanks to the following people for helping with this post: Erik Seliger, Daniel Marques, Malo Marrec, Kalid Azad, Marcos Placona, and Tammy Zhu._
+_Thanks to the following people for helping with this post: Erik Seliger, Daniel Marques, Malo Marrec, Kalid Azad, Marcos Placona, Fabiana Castellanos, and Tammy Zhu._
 
 #### About the author
 
