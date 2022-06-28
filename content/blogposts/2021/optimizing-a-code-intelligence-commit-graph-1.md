@@ -18,10 +18,11 @@ Sourcegraph's [Code Intelligence](https://handbook.sourcegraph.com/engineering/c
 
 Since the first version of Sourcegraph, precise code navigation has been a first-order concern. Its ability to provide compiler-accurate code navigation in a web-based interface is a superpower for our users.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/precise-xrepo-j2d.gif" alt="Cross-repository jump to definition"/>
-  <figcaption>Cross-repository jump to definition from a use in <code>sourcegraph/sourcegraph</code> to a definition in <code>gorilla/mux</code>.</figcaption>
-</figure>
+<Figure
+  src="https://sourcegraphstatic.com/precise-xrepo-j2d.gif"
+  alt="Cross-repository jump to definition"
+  caption={<>Cross-repository jump to definition from a use in <code>sourcegraph/sourcegraph</code> to a definition in <code>gorilla/mux</code>.</>}
+/>
 
 The [journey to our current implementation](/blog/evolution-of-the-precise-code-intel-backend/) began in February 2019 when we shifted our efforts from running Language Servers alongside Sourcegraph to pre-indexing source code via the Language Server Index Format (LSIF) and uploading it to Sourcegraph. This change introduced a new requirement of the user: they are now responsible for producing and uploading the LSIF index.
 

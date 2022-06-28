@@ -29,32 +29,34 @@ With the guidance of the Go memory and CPU profiler, we implemented optimization
 
 Premature optimization is the root of all evil, so we initiated our optimization efforts by using a CPU and memory profiler to identify performance bottlenecks in our existing system. Here are the CPU and memory allocation profiles we began with:
 
-<table>
-<tbody>
-    <tr>
-        <th>CPU</th>
-        <th>Memory allocations</th>
-        <th>Heap</th>
-    </tr>
-    <tr>
-        <td>
-            <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
-                <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png" alt="3.16 cpu"/>
-            </a>
-        </td>
-        <td>
-            <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
-                <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png" alt="3.16 allocs"/>
-            </a>
-        </td>
-        <td>
-            <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
-                <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png" alt="3.16 heap"/>
-            </a>
-        </td>
-    </tr>
-</tbody>
-</table>
+<div style={{overflowX: 'auto'}}>
+    <table>
+    <tbody>
+        <tr>
+            <th>CPU</th>
+            <th>Memory allocations</th>
+            <th>Heap</th>
+        </tr>
+        <tr>
+            <td>
+                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
+                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png" alt="3.16 cpu"/>
+                </a>
+            </td>
+            <td>
+                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
+                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png" alt="3.16 allocs"/>
+                </a>
+            </td>
+            <td>
+                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
+                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png" alt="3.16 heap"/>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>
 
 These profiles revealed a number of hotspots in the code, and we combined these results with a high-level understanding of the system architecture to come up with a list of changes that would have a substantial impact on both upload and query performance.
 
