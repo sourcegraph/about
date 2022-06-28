@@ -567,22 +567,22 @@ func fuzz(data []byte) int {
 
 go-fuzz usage:
 * Prepare the fuzzer by building an instrumented test program:
-  ```
+  ```bash
   $ CGO_ENABLED=0 go-fuzz-build github.com/mdlayher/ndp
   ```
 * Run go-fuzz with multiple CPU's and output results to ./fuzz/
-  ```
+  ```bash
   $ go-fuzz -bin ./ndp-fuzz.zip -procs 16 -workdir ./fuzz/
   … workers: 16, corpus: 78 (0s ago), crashers: 5
   ^C
   ```
 * Inspect the resulting crasher inputs
-  ```
+  ```bash
   $ cat fuzz/crashers/4c24217a9963fae05ea48d657c342549a731989.quoted
         "\x860000000000000000\x05"
   ```
 * Write a test, fix the bug, and repeat!
-  ```
+  ```bash
   fuzz([]byte("\x860000000000000000\x05"))
   ```
 
@@ -693,7 +693,7 @@ Add a cmd/ directory with a testing utility during development
   * cmd/ndp: tool for generating and capturing NDP traffic
 
 Introducing the ndp tool:
-```
+```bash
 $ ndp [listen]
 # Listens for any NDP messages that pass through the interface
 $ ndp rs
@@ -703,7 +703,7 @@ $ ndp -t fd00::1 ns
 ```
 
 Easier to use than `tcpdump`. E.g., here's the `tcpdump` command and output to watch for NDP packets:
-```
+```bash
 $ sudo tcpdump -i enp4s0 'icmp6 && (ip6[40] == 133 or ip6[40] == 134)'
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 listening on enp4s0, link-type EN10MB (Ethernet), capture size 262144 bytes
@@ -713,7 +713,7 @@ listening on enp4s0, link-type EN10MB (Ethernet), capture size 262144 bytes
 
 Compare that with `ndp`:
 
-```
+```bash
 $ sudo ./bin/ndp rs
 ndp> interface: enp4s0, link-layer address: 74:d4:35:e7:cb:c4, IPv6 address: fe80::e563:9887:3aca:e01e
 ndp rs> router solicitation:
@@ -733,13 +733,13 @@ ndp rs> router advertisement from: fe80::618:d6ff:fea1:ceb7:
 You can also use Go to troubleshoot any difficulties your ISP has with IPv6.
 
 Ubiquiti EdgeRouter Lite can run Go programs:
-```
+```bash
 desktop $ GOARCH=mips64 go build -o ndp_mips64
 desktop $ scp ndp_mips64 router:~/ndp
  router $ sudo ./ndp -i eth1 rs
 ```
 
-```
+```bash
 $ sudo ./ndp -i eth1 rs
 ndp> interface: eth1, link-layer address: 04:18:d6:a1:ce:b7, IPv6 address: fe80::618:d6ff:fea1:ceb7
 ndp rs> router solicitation:

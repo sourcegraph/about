@@ -262,13 +262,13 @@ We know how to do this
 * Lift control flow
 
 Create a new type
-```
+```go
 type SignupRequest struct {
 }
 ```
 
 Lift initial data
-```
+```go
 type SignupRequest struct {
   w http.ResponseWriter
   r *http.Request
@@ -276,7 +276,7 @@ type SignupRequest struct {
 ```
 
 Lift behaviour
-```
+```go
 func (s *SignupRequest) validate() {
   if s.email == "" || ... {
     s.err = "invalid email"
@@ -291,7 +291,7 @@ func (s *SignupRequest) checkNewRegistration() {
 ```
 
 Lift control flow
-```
+```go
 func (s *SignupRequest) checkNewRegistration() {
   if existingEmails.Contains(s.email) {
     s.err = "already registered"
@@ -310,7 +310,7 @@ func (s *SignupRequest) checkNewRegistration() {
 ```
 
 Compose the functions
-```
+```go
 func signupHandler(w http.ResponseWriter, r *http.Request) {
   s := newSignupRequest(w, r)
   s.validate()

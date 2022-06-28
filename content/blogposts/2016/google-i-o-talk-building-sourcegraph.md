@@ -83,7 +83,7 @@ We don’t use a web framework because we found we didn't need one in Go. Go’s
 
 **Handler functions:** We define our handlers with an error return value, and we use a simple wrapper function to make them implement [http.Handler](https://sourcegraph.com/github.com/golang/go/-/def/GoPackage/net/http/-/Handler). This means we can centralize error handling instead of having to format error messages and pass them to the [http.Error](https://sourcegraph.com/github.com/golang/go/-/def/GoPackage/net/http/-/Error) func for each possible error. Our handler functions look like:
 
-```
+```go
 func serveXYZ(w http.ResponseWriter, r *http.Request) error { ... }
 ```
 
@@ -93,13 +93,13 @@ func serveXYZ(w http.ResponseWriter, r *http.Request) error { ... }
 
 **Rendering HTML:** We use html/template and a simpler helper function to render the template:
 
-```
+```go
 func executeTemplate(req *http.Request, resp http.ResponseWriter, tmplName string, status int, header http.Header, tmplData interface{}) error { ... }
 ```
 
 **Returning JSON:** We just use a simpler helper function:
 
-```
+```go
 // writeJSON writes a JSON Content-Type header and a JSON-encoded object to the
 // http.ResponseWriter.
 func writeJSON(w http.ResponseWriter, v interface{}) error {
@@ -122,7 +122,7 @@ We have one “service” interface for each noun in our system: repositories, u
 
 Here’s a simplified version of our repositories interface.
 
-```
+```go
 type RepositoriesService interface {
     Get(name string) (*Repo, error)
     List() ([]*Repo, error)
@@ -139,7 +139,7 @@ Unifying the sets of interfaces took away a tiny bit of performance and user-fri
 
 Here’s a (simplified) example of one of those data store methods, to make it concrete. This method implements the RepositoriesService.Get method described above.
 
-```
+```go
 type repoStore struct{ db *db }
 
 func (s *repoStore) Get(name string) (*Repo, error) {
@@ -152,7 +152,7 @@ func (s *repoStore) Get(name string) (*Repo, error) {
 
 And here’s a (simplified) example of a method implementation in our HTTP API client library. Again, this is the same RepositoriesService.Get method.
 
-```
+```go
 type repoClient struct{ baseURL string }
 
 func (s *repoClient) Get(name string) (*Repo, error) {
@@ -176,7 +176,7 @@ Initially our frontend web app just called the data store functions directly. Th
 Now our handlers have very clearly delineated responsibilities. The frontend handlers do HTML templating and call an API client method. The API handlers do HTTP authentication/authorization/caching and then call a data store method. In all cases, our HTTP handlers are concerned with HTTP (which is exactly as it should be) and they delegate the rest of the work.
 
 For example, here’s what a (simplified) frontend handler looks like. It reads the HTTP request parameters, calls the API client (to do the real work), and renders the HTTP (HTML) response.
-```
+```go
 var repoAPIClient RepositoriesService = &repoClient{"http://localhost:7777"}
 
 func handleRepoPage(w http.ResponseWriter, r *http.Request) {
@@ -187,7 +187,7 @@ func handleRepoPage(w http.ResponseWriter, r *http.Request) {
 ```
 And here’s what a (simplified) API handler looks like. Again, it reads the HTTP request parameters, calls the data store (to do the real work), and renders the HTTP (JSON) response with a cache header.
 
-```
+```go
 var repoStore RepositoriesService = &repoStore{dbh}
 
 func serveRepository(w http.ResponseWriter, r *http.Request) error {
@@ -214,7 +214,7 @@ Remember back to our API client implementation? We used Sprintf to construct the
 
 To solve this, we use a router package (such as [gorilla/mux](https://sourcegraph.com/github.com/gorilla/mux)) that lets us define routes and mount handlers separately. Our server mounts handlers by looking up named routes we’ve defined, but our API client will just use the route definitions to generate URLs.
 
-```
+```go
 const (
     RepoGetRoute    = "repo"
     RepoListRoute   = "repo.list"
@@ -241,7 +241,7 @@ func init() {
 
 Then to generate URLs in our HTTP API client using the router, we use the existing route definition:
 
-```
+```go
 var apiRouter = NewAPIRouter()
 
 func (s *repoClient) List() ([]*Repo, error) {
@@ -279,7 +279,7 @@ Having a single definition of each parameter set is much simpler _and_ it lets u
 
 Here’s an example parameter struct that is shared by all implementations (frontend and backend):
 
-```
+```go
 // this is the options struct for the method: Search(opt *SearchOptions) ([]*Repo, error)
 type SearchOptions struct {
     Owner    string
@@ -289,7 +289,7 @@ type SearchOptions struct {
 
 To decode the parameter struct from a querystring like ?Owner=alice&Language=go, in the API HTTP handler:
 
-```
+```go
 import ["github.com/gorilla/schema"](https://sourcegraph.com/github.com/gorilla/schema)
 
 var d = schema.NewDecoder()
@@ -302,7 +302,7 @@ func handleRepoSearch(w http.ResponseWriter, r *http.Request) {
 
 And to encode a parameter struct like SearchOptions{"alice", "go"} back into ?Owner=alice&Language=go, in the HTTP API client:
 
-```
+```go
 import ["github.com/google/go-querystring/query"](https://sourcegraph.com/github.com/google/go-querystring)
 
 func (s *repoClient) Search(opt *SearchOptions) ([]*Repo, error) {

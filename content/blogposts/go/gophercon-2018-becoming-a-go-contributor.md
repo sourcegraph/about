@@ -42,7 +42,7 @@ When you are using Go, notice when things don't match up with your expectation, 
 
 At one point, Kevin was working on a program that parsed all Go contributor emails. He ran into an unexpected issue where a particular email was causing `mail.ParseAddress` to return an error:
 
-```
+```shell
 mail.ParseAddress('A (middle) B <a@b.com>')
 >>> mail: no angle-addr
 ```

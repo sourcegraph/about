@@ -323,7 +323,7 @@ Suppose again you're adding an additional parameter to the `errorutil.Handler` [
 and now need to update all call sites of that function to pass some default value for the extra
 argument. You can do that[^5] in a one-liner with `grep` and `sed`:
 
-```
+```perl
 grep -lRE 'errorutil\.Handler' | xargs sed -i -E 's/Handler\(([A-Za-z0-9_\.]+)\)/Handler(\1, "default value")/'
 ```
 
@@ -349,7 +349,7 @@ faster and has more user-friendly defaults (e.g., you don't need to remember to 
 `-RE` to get the behavior you want). Here's the one-liner above rewritten with ripgrep, instead of
 grep:
 
-```
+```perl
 rg -l 'errorutil\.Handler' | xargs sed -i -E 's/Handler\(([A-Za-z0-9_\.]+)\)/Handler(\1, "default value")/'
 ```
 
@@ -364,7 +364,7 @@ interactively. This is the approach taken by [Codemod](https://github.com/facebo
 
 Here's how you would use `codemod` to add an additional argument to `errorutil.Handler` call sites:
 
-```
+```python
 codemod -m -d . --extensions go 'errorutil.Handler\(([A-Za-z0-9_\.]+)\)' 'errorutil.Handler(\1, "default value")'
 ```
 
@@ -430,7 +430,7 @@ this domain.[^10]
 
 Here is a Comby one-liner that handles adding an extra argument to `errorutil.Handler`:
 
-```
+```ocaml
 rg -l errorutil | xargs comby -in-place 'errorutil.Handler(:[1])' 'errorutil.Handler(:[1], "default value")'
 ```
 
@@ -448,14 +448,14 @@ in this post.
 Comby can also express patterns that cannot be expressed in any regex. Consider the following call
 site:
 
-```
+```ocaml
 errorutil.Handler(someOtherFunction(blah))
 ```
 
 This call site would not be selected by our earlier regular expression, which doesn't account for
 the nested parens. We could update the regex to account for one layer of nested parens:
 
-```
+```ocaml
 errorutil\.Handler\((\w*\(\w*\)|\w+)\)
 ```
 

@@ -169,7 +169,7 @@ $ go test -update
 - If necessary, make global state a var so it can be modified. This is a last
   case scenario, though.
 
-```
+```go
 // Not good on its own
 const port = 1000
 // Better
