@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentImage, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Figure, InContentBlockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -36,15 +36,15 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                     <div className="row justify-content-md-center pt-3">
                         <div className="col-md-4">
-                            <InContentImage
+                            <Figure
                                 src="/case-studies/francois-jehl-criteo.jpg"
                                 alt="François Jehl, Senior Engineering Manager, Criteo"
                                 caption="François Jehl, Senior Engineering Manager, Criteo"
-                                className="case-studies__img rounded-circle img-fluid mx-auto d-block mb-3"
+                                className="w-100 rounded-circle img-fluid mx-auto d-block mb-3"
                             />
                         </div>
                         <div className="col-md-4">
-                            <InContentImage
+                            <Figure
                                 src="/case-studies/loic-teikiteetini-vaysse-criteo.jpg"
                                 alt="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"
                                 caption="Loic Teikiteetini-Vaysse, Software Development Engineer, Criteo"

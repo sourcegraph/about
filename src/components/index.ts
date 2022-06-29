@@ -58,7 +58,6 @@ export {
     CaseStudyLayout,
     CaseStudyCard,
     InContentBlockquote,
-    InContentImage,
     MediaQuote,
     NewCaseStudyLayout,
     UseChallengeSolutionResults,

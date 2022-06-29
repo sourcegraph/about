@@ -4,11 +4,12 @@ interface FigureProps {
     src: string
     alt: string
     caption?: string | ReactNode
+    className?: string
 }
 
-export const Figure: FunctionComponent<FigureProps> = ({ src, alt, caption }) => (
+export const Figure: FunctionComponent<FigureProps> = ({ src, alt, caption, className }) => (
     <figure>
-    <img src={src} alt={alt} />
-    {caption && <figcaption>{caption}</figcaption>}
+        <img src={src} alt={alt} className={className} />
+        {caption && <figcaption>{caption}</figcaption>}
     </figure>
 )

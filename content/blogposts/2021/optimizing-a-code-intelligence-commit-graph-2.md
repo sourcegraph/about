@@ -24,19 +24,21 @@ In [Part 1](/blog/optimizing-a-code-intel-commit-graph/#Performance-improvements
 
 The following Git commit graph illustrates this difference. Searching from commit `g`, we could find index data on commits `a` and `m`, both only two steps away. However, if we had a limit of 10, we would see only the commits directly adjacent to `g` and would hit our limit before expanding outwards.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph6.png" alt="High-merge commit graph" className="no-shadow"/>
-  <figcaption>A Git commit graph with a large number of paths from <code>a</code> to <code>g</code> and <code>g</code> to <code>m</code>.</figcaption>
-</figure>
+<Figure
+    src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph6.png" 
+    alt="High-merge commit graph"
+    caption={<>A Git commit graph with a large number of paths from <code>a</code> to <code>g</code> and <code>g</code> to <code>m</code>.</>}
+/>
 
 Another issue is high commit velocity. Suppose that we have a hard limit of viewing 50 commits. We will then be able to look (approximately) 25 commits in a single direction. If the process for uploading LSIF data only happens every 50 commits, on average, then there will be pockets of commits that cannot see far enough to spot a relative commit with an upload. This turns out to be common in the case of large development teams working on a single repository.
 
 The following Git commit graph illustrates this, where commit `b` could simply be stranded on both sides by ancestor and descendant commits with code intelligence data just out of reach.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph7.png" alt="Flat commit graph" className="no-shadow"/>
-  <figcaption>A Git commit graph with large distances between code intelligence indexes.</figcaption>
-</figure>
+<Figure
+    src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph7.png" 
+    alt="Flat commit graph"
+    caption="A Git commit graph with large distances between code intelligence indexes."
+/>
 
 ## A better design
 
@@ -69,10 +71,11 @@ The `lsif_dirty_repositories` table tracks which repositories need their commit 
 
 For this example, we'll use the following commit graph, where commits `80c800`, `c85b4b`, and `3daedb` define uploads #1, #2, and #3, respectively.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph3.png" alt="Sample commit graph" className="no-shadow"/>
-  <figcaption>A Git commit graph with code intelligence indexes attached to commits <code>80c800</code>, <code>c85b4b</code>, and <code>3daedb</code>.</figcaption>
-</figure>
+<Figure
+    src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph3.png" 
+    alt="Sample commit graph"
+    caption={<>A Git commit graph with code intelligence indexes attached to commits <code>80c800</code>, <code>c85b4b</code>, and <code>3daedb</code>.</>}
+/>
 
 The first step of the algorithm is to [topologically sort](https://en.wikipedia.org/wiki/Topological_sorting) each commit so that a commit is processed only after all of its parents are processed. Then we perform a simple [greedy process](https://en.wikipedia.org/wiki/Greedy_algorithm) to determine which uploads are visible at each stage of the commit. If a commit defines an upload, it is visible to that commit. Otherwise, the set of visible uploads for the commit is the same as the uploads visible from each parent (just at a higher distance).
 
@@ -108,10 +111,11 @@ This means that there is no single nearest upload per commit: there is a nearest
 - Commit `3daedb` defines upload #4 rooted at the directory `/baz`
 - Commit `69a5ed` defines upload #5 rooted at the directory `/bonk`
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph4.png" alt="Sample commit graph" className="no-shadow"/>
-  <figcaption>A Git commit graph with code intelligence indexes rooted at different subdirectories.</figcaption>
-</figure>
+<Figure
+    src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph4.png"
+    alt="Sample commit graph"
+    caption="A Git commit graph with code intelligence indexes rooted at different subdirectories."
+/>
 
 <table>
     <tbody>
@@ -245,10 +249,11 @@ The size of the table here (relative to the simple table produced by a single-ro
 
 One of our large enterprise customers, who is also one of our earliest adopters of LSIF-based code intelligence at scale, had completed an upgrade from Sourcegraph 3.17 to 3.20. After the upgrade, they realized they were no longer getting refreshed precise code intelligence and sent us this cubist Sydney Opera House of a graph, indicating that something was deeply wrong.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/oom.png" alt="Worker OOM"/>
-  <figcaption>Worker memory usage exploding, then falling suddenly after the process crashes.</figcaption>
-</figure>
+<Figure
+    src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/oom.png"
+    alt="Worker OOM"
+    caption="Worker memory usage exploding, then falling suddenly after the process crashes."
+/>
 
 The precise code intelligence worker process, which converts LSIF data uploaded by the user into our internal representation and writes it to our code intelligence data store, was ballooning in memory as jobs were processed. The extra memory hunger was extreme enough that the workers were consistently crashing with an "out of memory" exception towards the end of each job. No job was completing successfully.
 
@@ -338,10 +343,11 @@ var visibleUploads map[string /* commit */]map[string /* indexer+root */]Upload 
 
 We stop pre-calculating the set of visible uploads for **every** commit at once. We make the observation that for a large class of commits, the set of visible uploads are simply redundant information.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph5.png" alt="Sample commit graph" className="no-shadow"/>
-  <figcaption>A Git commit graph with code intelligence attached to commits <code>68acd3</code> and <code>67e0bf</code>.</figcaption>
-</figure>
+<Figure
+    src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph5.png"
+    alt="Sample commit graph"
+    caption={<>A Git commit graph with code intelligence attached to commits <code>68acd3</code> and <code>67e0bf</code>.</>}
+/>
 
 In the preceding commit graph, commits `91a565`, `52811d`, `7b1a18`, and `dd8578` are considered "trivial" and can be easily and efficiently recalculated by performing a very fast single-path traversal up the graph to find a unique ancestor (or, descendant in the other direction) for which we store the set of visible uploads. The re-calculated visible uploads are then the visible uploads of this ancestor with an adjusted distance.
 
@@ -356,19 +362,21 @@ It turns out that 80% of our problematic commit graph can be recalculated in thi
 
 This last change turned out to be a **huge** win. When we started, the commit graph could only be calculated in 5 **hours** using 21GB of memory. Now, it takes 5 **seconds** and a single gigabyte. This is a ~3600x reduction in CPU and a ~20x reduction in memory.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/cpu-mem-fix.png" alt="CPU and memory reduction"/>
-  <figcaption>CPU and memory usage drastically after skipping calculation of visible uploads for "trivial" commits.</figcaption>
-</figure>
+<Figure
+    src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/cpu-mem-fix.png"
+    alt="CPU and memory reduction"
+    caption={<>CPU and memory usage drastically after skipping calculation of visible uploads for "trivial" commits.</>}
+/>
 
 But of course the story isn't over. We're battling with the [triple constraint](https://en.wikipedia.org/wiki/Project_management_triangle) of latency, memory, and disk usage here. And since we've optimized two of these properties, the third must necessarily suffer. Improvements in software often deal with similar time/space trade-offs. Removing a bad performance property of a system often doesn't _remove_ the bad property completely—it just pushes it into a corner that is less noticeable.
 
 In this case, it was **very** noticeable.
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/full-disk.png" alt="Critical db size"/>
-  <figcaption>Sorry about your disk.</figcaption>
-</figure>
+<Figure
+    src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/full-disk.png"
+    alt="Critical db size"
+    caption="Sorry about your disk."
+/>
 
 ## Pick 3: low latency, low memory usage, low disk usage, or developer sanity
 
@@ -397,10 +405,11 @@ We introduced a new table, `lsif_nearest_uploads_links`, which stores a link fro
 
 We'll use the following commit graph again for our example. Here, commit `68acd3` defines upload #1, and `67e0bf` defines upload #2 (both with distinct indexing root directories).
 
-<figure>
-  <img src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph5.png" alt="Sample commit graph" className="no-shadow"/>
-  <figcaption>A Git commit graph with code intelligence attached to commits <code>68acd3</code> and <code>67e0bf</code>.</figcaption>
-</figure>
+<Figure
+    src="https://sourcegraphstatic.com/blog/commit-graph-optimizations/graph5.png"
+    alt="Sample commit graph"
+    caption={<>A Git commit graph with code intelligence attached to commits <code>68acd3</code> and <code>67e0bf</code>.</>}
+/>
 
 The `lsif_nearest_uploads` table associates a commit with its visible uploads, just as before. But now, the number of records in the table is much, much smaller. The commits present in this table satisfy one of the properties described above that make the commit non-trivial to recompute.
 

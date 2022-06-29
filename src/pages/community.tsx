@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-import { ContentSection, Layout, YouTube } from '@components'
+import { ContentSection, Figure, Layout, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 export const Community: FunctionComponent = () => (
@@ -39,13 +39,11 @@ export const Community: FunctionComponent = () => (
                         </a>
                     </div>
                     <div className="col-lg-6">
-                        <figure>
-                            <img
-                                className="w-100 mt-7"
-                                src="/community/hero_illustration.svg"
-                                alt="Sourcegraph Community"
-                            />
-                        </figure>
+                        <Figure
+                            src="/community/hero_illustration.svg"
+                            alt="Sourcegraph Community"
+                            className="w-100 mt-7"
+                        />
                     </div>
                 </div>
             </div>
@@ -64,13 +62,11 @@ export const Community: FunctionComponent = () => (
             <div className="row">
                 <div className="col-12 mt-4">
                     <a href="http://srcgr.ph/cheatsheet">
-                        <figure>
-                            <img
-                                className="max-w-800 w-100"
-                                src="/community/cheatsheet_top.png"
-                                alt="Sourcegraph Cheatsheet"
-                            />
-                        </figure>
+                        <Figure
+                            src="/community/cheatsheet_top.png"
+                            alt="Sourcegraph Cheatsheet"
+                            className="max-w-800 w-100"
+                        />
                     </a>
                 </div>
             </div>
