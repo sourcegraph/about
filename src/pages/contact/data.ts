@@ -17,28 +17,28 @@ export const slugData: SlugDataProps = {
     'request-batch-changes-demo': {
         title: 'Schedule a Batch Changes demo',
         description: 'Learn how you can automate large-scale code changes with Sourcegraph Batch Changes.',
-        masterFormName: 'demoMulti',
+        masterFormName: 'contactMulti',
     },
     'request-code-change-management-demo': {
         title: 'Request a code change management demo',
         description: "We'll reach out to discuss a demo and to learn more about your needs.",
-        masterFormName: 'demoMulti',
+        masterFormName: 'contactMulti',
     },
     'request-code-insights-demo': {
         title: 'Schedule a Code Insights demo',
         description:
             'Learn how you can track and visualize trends in your entire codebase with Sourcegraph Code Insights.',
-        masterFormName: 'demoMulti',
+        masterFormName: 'contactMulti',
     },
     'request-info': {
         title: 'Contact us',
         description: 'Talk with a product specialist to learn more about Sourcegraph.',
-        masterFormName: 'demoMulti',
+        masterFormName: 'contactMulti',
     },
     'request-trial': {
         title: 'Sign up for a free trial',
         description: 'To start your free Sourcegraph trial, tell us a bit about yourself.',
-        masterFormName: 'demoMulti',
+        masterFormName: 'contactMulti',
     },
     'talk-to-a-developer': {
         title: 'Talk to a Developer',

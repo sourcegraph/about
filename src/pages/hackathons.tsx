@@ -69,7 +69,7 @@ export const Pricing: FunctionComponent = () => (
                 </div>
             </div>
             <div>
-                <HubSpotForm masterFormName="demoMulti" chiliPiper={true} />
+                <HubSpotForm masterFormName="contactMulti" chiliPiper={true} />
             </div>
         </section>
     </Layout>

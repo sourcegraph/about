@@ -1,3 +1,4 @@
+/* eslint-disable no-multiple-empty-lines */
 import { FunctionComponent, useEffect } from 'react'
 
 declare global {
@@ -41,7 +42,7 @@ interface CreateHubSpotFormProps {
 
 export interface HubSpotFormProps {
     formId?: string
-    masterFormName?: 'demoMulti' | 'demoEmail' | 'gatedMulti' | 'gatedEmail'
+    masterFormName?: 'contactMulti' | 'contactEmail' | 'gatedMulti' | 'gatedEmail'
     onFormSubmitted?: () => void
     chiliPiper?: boolean
 }
@@ -80,16 +81,20 @@ interface HubSpotEventProps {
     data: { name: string; value: string }[]
 }
 
+
+
+
+
 /**
  * These are our Master Forms that are used throughout our codebase. Each
  * masterFormName is used as an identifier to map to a specific master form id.
  */
 const masterForms: { [key: string]: string } = {
     // Demo Request Email Only
-    demoEmail: 'a26c29e7-cd79-429d-a2ac-43f694734c46',
+    contactEmail: 'a26c29e7-cd79-429d-a2ac-43f694734c46',
 
     // Demo Request Multi Field
-    demoMulti: 'e090296f-84f5-4bcb-9093-a533336841b4',
+    contactMulti: 'e090296f-84f5-4bcb-9093-a533336841b4',
 
     // Gated Content Email Only
     gatedEmail: '9b2539ad-feaa-4dd2-b6b4-2439c5bc98da',
@@ -97,6 +102,10 @@ const masterForms: { [key: string]: string } = {
     // Gated Content Multi Field
     gatedMulti: '1fb4ef6c-f233-48ba-9f43-a88f19528282',
 }
+
+
+
+
 
 // Third party script integrations for HubSpot forms
 const hubSpotScript = '//js.hsforms.net/forms/v2.js'
@@ -113,6 +122,10 @@ const removeScriptElement = (id: string): void => {
     const scriptElement: HTMLScriptElement | Element | null = getScriptElement(id)
     scriptElement?.remove()
 }
+
+
+
+
 
 /**
  * This loads a script element and appends it to the document head
@@ -145,6 +158,10 @@ const loadScriptElement = (
 
         resolve(scriptElement)
     })
+
+
+
+
 
 /**
  * This creates the HubSpot form with the configuration options.
@@ -209,6 +226,10 @@ async function createHubSpotForm({
     })
 }
 
+
+
+
+
 // This gets called when the HubSpot form is ready
 const onFormReady = (form: HTMLFormElement): void => {
     /**
@@ -241,6 +262,10 @@ const onFormReady = (form: HTMLFormElement): void => {
         populateHiddenFormField('form_submission_source', window.location.href)
     }
 }
+
+
+
+
 
 /**
  * The HubSpot form component.

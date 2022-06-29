@@ -88,7 +88,7 @@ const PartnerPodcastPage: FunctionComponent = () => (
                     See why over 1.2M engineers use Sourcegraph to build software you rely on
                 </h5>
                 <div className="max-w-400 pt-0 pt-md-4">
-                    <HubSpotForm masterFormName="demoEmail" chiliPiper={true} />
+                    <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
                 </div>
             </section>
         </div>
