@@ -1,5 +1,5 @@
 ---
-title: 'How our OSPO uses Batch Changes to automatically add license files'
+title: 'How we analyzed hundreds of repositories to ensure they had open source licenses'
 authors:
   - name: Justin Dorfman
     url: https://twitter.com/jdorfman
