@@ -21,7 +21,10 @@ Zoekt is a Go program created by Han-Wen Nienhuys that performs [trigram-based r
 
 In the below image, the large purple area on the left is the RAM used by the 20 Zoekt replicas alone, and the tiny lines under it are all the other jobs. The drops represent deploying the changes described in this post.
 
-<img src="/blog/ram-usage.png" width="1200" alt="RAM used by the 20 Zoekt replicas"/>
+<Figure
+  src="/blog/ram-usage.png" 
+  alt="RAM used by the 20 Zoekt replicas"
+/>
 
 Here’s how we achieved a 5x reduction in memory usage with no measurable latency changes.
 
