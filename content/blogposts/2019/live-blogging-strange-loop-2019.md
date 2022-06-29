@@ -12,11 +12,12 @@ published: true
 
 ---
 
-<p className="text-center">
-  <a href="/strange-loop/" title="Go to the Strange Loop 2019 liveblog">
-    <img alt="Strange Loop 2019 Banner" src="/blog/strange-loop-banner-landscape.jpg" />
-  </a>
-</p>
+<a href="/strange-loop/" title="Go to the Strange Loop 2019 liveblog">
+  <Figure
+    src="/blog/strange-loop-banner-landscape.jpg"
+    alt="Strange Loop 2019 Banner" 
+  />
+</a>
 
 ---
 
@@ -26,10 +27,12 @@ published: true
 
 ---
 
-<Alert style="info">
-  Want to sign up to liveblog at Strange Loop?
-  <a href="https://forms.gle/egsGKSrapRJkhiWw6" className="btn btn-primary ml-3" rel="nofollow" target="_blank"><i className="fa fa-file-pdf pr-2"></i>Sign up here</a>
-</Alert>
+<div className="text-center">
+  <Alert style="info">
+    Want to sign up to liveblog at Strange Loop?
+    <a href="https://forms.gle/egsGKSrapRJkhiWw6" className="btn btn-primary ml-3" rel="nofollow" target="_blank"><i className="fa fa-file-pdf pr-2"></i>Sign up here</a>
+  </Alert>
+</div>
 
 Sourcegraph is the standard developer platform for [code search](/product/code-search-navigation), [review](/product/code-review), and [code change management](/product/code-change-management) for many of the largest and most exacting technology companies. With Sourcegraph, every company has access to the same kind of tools that Google and Facebook developers use every day.
 

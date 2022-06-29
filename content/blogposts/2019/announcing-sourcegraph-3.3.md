@@ -129,7 +129,7 @@ Granting permissions in the Sourcegraph browser extension is necessary when usin
 
 <div style={{textAlign: 'center'}}>
 
-  ![Sourcegraph browser extension enabled prompt](/blog/sourcegraph-browser-extension-enable-prompt.png)
+![Sourcegraph browser extension enabled prompt](/blog/sourcegraph-browser-extension-enable-prompt.png)
 
 </div>
 

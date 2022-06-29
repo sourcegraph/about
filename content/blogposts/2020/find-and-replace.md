@@ -53,7 +53,7 @@ table.brain td img {
   <tbody>
     <tr>
       <td>
-        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain1.jpg"></img>
+        <Figure src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain1.jpg" alt="Stage 1 Meme: You start with manual find-replace" />
       </td>
       <td>
       You start with manual find-replace, maybe with some regex in your editor.
@@ -61,7 +61,7 @@ table.brain td img {
     </tr>
     <tr>
       <td>
-        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain2.jpg"></img>
+        <Figure src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain2.jpg" alt="Stage 2 Meme: You finally learn grep and sed" />
       </td>
       <td>
       You bite the bullet and finally learn <code className="language-text">grep</code> and <code className="language-text">sed</code>,
@@ -70,7 +70,7 @@ table.brain td img {
     </tr>
     <tr>
       <td>
-        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain3.jpg"></img>
+        <Figure src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain3.jpg" alt="Stage 3 Meme: You learn ripgrep and codemod, and maybe parsers" />
       </td>
       <td>
       You get annoyed wth <code className="language-text">grep</code> and <code className="language-text">sed</code> and find
@@ -80,7 +80,7 @@ table.brain td img {
     </tr>
     <tr>
       <td>
-        <img src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain4.jpg"></img>
+        <Figure src="https://storage.googleapis.com/about.sourcegraph.com/blog/a-programmers-guide-to-find-and-replace/brain4.jpg" alt="Stage 4 Meme: You discover comby" />
       </td>
       <td>
       In your quest for ever greater efficiency, you discover <code className="language-text">comby</code>, an awesome new pattern-matching language for code.

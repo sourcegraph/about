@@ -13,9 +13,10 @@ published: true
 
 Jumping to the definition of a symbol under your cursor and finding all its references are two of the basic mental mechanics of software engineering. Fast code navigation accelerates the rate at which you can build a mental model of the code, and when it's available, you're likely to use it hundreds, if not thousands, of times per day.
 
-<div style={{margin: '2em'}}>
-<img src="https://sourcegraphstatic.com/predcise-j2d-find-refs.gif" alt="Precise jump to definition and find refs" />
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/predcise-j2d-find-refs.gif" 
+  alt="Precise jump to definition and find refs" 
+/>
 
 Code navigation is the core of how Sourcegraph helps you understand the parts of the universe of code that are most relevant and important to you. Code navigation also presents a difficult technical challenge, especially when you want to provide code navigation *outside the IDE* in a variety of other applications where developers are trying to understand code: a web-based code search engine like [Sourcegraph.com](https://sourcegraph.com/search), [private instances of Sourcegraph](https://docs.sourcegraph.com/#quickstart-guide), and in code hosts like GitHub, GitLab, Bitbucket, and Phabricator through the [Sourcegraph browser extension](https://docs.sourcegraph.com/integration/browser_extension).
 

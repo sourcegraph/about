@@ -13,16 +13,17 @@ published: true
 description: 'Sourcegraph 3.2: (Mostly) no new features - Improved stability, setup, and documentation'
 ---
 
-<div style={{textAlign: 'center'}}>
-  <img src="https://user-images.githubusercontent.com/133014/54649997-a2829880-4a69-11e9-862a-cfa84df3d9de.png" alt="My top feature request is: no new features. Just fix what's broken"/>
-  <small>Credit: <a href="https://twitter.com/rstevens">Rich Stevens</a></small>
-</div>
+<Figure
+  src="https://user-images.githubusercontent.com/133014/54649997-a2829880-4a69-11e9-862a-cfa84df3d9de.png" 
+  alt="My top feature request is: no new features. Just fix what's broken"
+  caption={<>Credit: <a href="https://twitter.com/rstevens">Rich Stevens</a></>}
+/>
 
 *Sourcegraph is an open source, self-hosted, cross-repository code search and navigation tool, with an efficient web interface and "feels-like-native" integration into your code host. [Install or upgrade Sourcegraph](#install-or-upgrade).*
 
 [Developing Sourcegraph in the open](https://handbook.sourcegraph.com/company#open-company) with a [public product roadmap](https://handbook.sourcegraph.com/direction), and having a product used by tons of developers, means we receive a constant stream of feedback. A clear theme emerged:
 
-<div style={{textAlign: 'center', fontStyle:'italic'}}>“Improving x feature would help me more than adding new features.”</div>
+<figcaption>“Improving x feature would help me more than adding new features.”</figcaption>
 
 Seemingly small improvements can deliver huge productivity gains to engineers at companies such as Uber,  Lyft, and Yelp, which have hundreds or thousands of developers using Sourcegraph to search and navigate thousands of repositories every day.
 

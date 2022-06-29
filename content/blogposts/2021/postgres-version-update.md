@@ -137,9 +137,11 @@ We are unable to utilize a statement-level trigger approach in Postgres 9.6 as s
 
 So how bad would this approach be?
 
-<div className="no-shadow">
-  <img src="https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update-latency.png" alt="performance comparison"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/postgres-version-update/postgres-version-update-latency.png" 
+  alt="performance comparison" 
+  className="shadow-none" 
+/>
 
 Turns out it's pretty bad. Inserting 800k rows into the database with statement-level triggers takes under a minute (on a non-production test machine). Using row-level triggers the same operation takes over an hour.
 

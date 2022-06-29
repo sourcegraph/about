@@ -20,9 +20,10 @@ Second, I was wrong about how to get that Senior title. At the time, I measured 
 
 What I ultimately came to realize was that _the real measure of my career growth was in having an ever-increasing impact_. My focus at that time was very much on my personal performance, which was only one part of my impact.
 
-<div className="text-center">
-  <img src="https://sourcegraphstatic.com/blog/career/Impact.jpg" width="70%" alt="Advancing in my career illustration"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/career/Impact.jpg" 
+  alt="Advancing in my career illustration"
+/>
 
 ## Impact is the north star for a software engineer career path
 
@@ -34,9 +35,10 @@ I’m not saying titles don’t matter. They do, depending on where you work. Ha
 
 Every career is unique; there’s no one right way to do this. The trick is to find the path that most resonates with _you_. When you are the most engaged, you will be most effective in expanding your own impact. Here are a few anonymized examples of real software engineers and their career paths.
 
-<div className="text-center">
-  <img src="https://sourcegraphstatic.com/blog/career/Maria.jpg" width="70%" alt="Maria illustration"/>
-</div>
+<Figure
+  src="https://sourcegraphstatic.com/blog/career/Maria.jpg" 
+  alt="Maria illustration"
+/>
 
 ## Maria, Engineer (technical breadth)
 
@@ -52,9 +54,10 @@ Maria showed them how. She led the effort to phase it out and replace it with so
 
 Maria’s initiatives prepared the company for a major industry shift, and delivered the revamped feature well before their competitors could catch up. For her outstanding work, Maria was eventually promoted to the title of… but that’s not really the point, is it?
 
-<div className="text-center">
-  <img src="https://sourcegraphstatic.com/blog/career/Theo.jpg" width="70%" alt="Theo illustration"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/career/Theo.jpg" 
+  alt="Theo illustration"
+/>
 
 ## Theo, Engineer (technical depth)
 
@@ -68,9 +71,10 @@ Theo was there from the beginning: building prototypes, redesigning key componen
 
 After that, he had the pick of projects to work on. He was given the freedom to work with any team on any project. He would gravitate toward the most complex problems the company was facing, pair with the engineers on that team to turn “intractable” to “performant”, and then move on to the next big problem.
 
-<div className="text-center">
-  <img src="https://sourcegraphstatic.com/blog/career/Jan.jpg" width="70%" alt="Jan illustration"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/career/Jan.jpg" 
+  alt="Jan illustration"
+/>
 
 ## Jan, Engineering Manager (growing engineers)
 

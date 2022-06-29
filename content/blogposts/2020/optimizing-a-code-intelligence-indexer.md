@@ -16,11 +16,12 @@ We (Sourcegraph's [code intelligence team](https://handbook.sourcegraph.com/engi
 
 Developers use [Sourcegraph](https://about.sourcegraph.com) for code search and navigation. When you're navigating code on Sourcegraph, you get hovers, definitions, and references to help you along the way. They're fast and cross-repository, can work on any branch or commit, and can be precise (with [LSIF](https://lsif.dev) set up in CI).
 
-<div>
-  <a href="https://sourcegraph.com/github.com/gorilla/mux/-/blob/route.go"  target="_blank">
-    <img src="https://sourcegraphstatic.com/precise-xrepo-j2d.gif" alt="Cross-repository jump to definition"/>
-  </a>
-</div>
+<a href="https://sourcegraph.com/github.com/gorilla/mux/-/blob/route.go" target="_blank">
+  <Figure 
+    src="https://sourcegraphstatic.com/precise-xrepo-j2d.gif" 
+    alt="Cross-repository jump to definition"
+  />
+</a>
 
 ## The problem: really big monorepos
 
@@ -72,11 +73,13 @@ As part of indexing, we extract the docstring attached to each symbol. In the co
 
 The following shows a _very_ reduced Go AST for the EKS API from the Go AWS SDK (click to enlarge). Here we're going to concentrate on the definition of the struct [`CreateClusterInput`](https://sourcegraph.com/github.com/aws/aws-sdk-go@a3411680ac767bb37ff50c73e58c53e2426fd80a/-/blob/service/eks/api.go#L2769:6).
 
-<div className="no-shadow">
-  <a href="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-ast.svg" target="_blank">
-    <img src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-ast.svg" alt="Go AST"/>
-  </a>
-</div>
+<a href="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-ast.svg" target="_blank">
+  <Figure 
+    src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-ast.svg" 
+    alt="Go AST" 
+    className="shadow-none" 
+  />
+</a>
 
 This struct contains 9 fields, meaning that there are 18 identifiers within the struct body: one for the field name and one for the field type. To find each of these nodes, the same three edges (`File` to `GenDecl`, `GenDecl` to `TypeSpec`, `TypeSpec` to `FieldList`) need to be traversed. In addition, this file contains definitions for 94 constants, 76 other struct types, 510 methods, and 21 functions. Each traversal needs to exclude these non-relevant subtrees when searching for a particular node, which also costs a non-negligible amount of time. Walking the same tree for a file with tens or hundreds of thousands of identifiers can really put a dent in the indexer's throughput.
 
@@ -160,9 +163,11 @@ Alternative solutions here require pushing back tasks whose dependencies have no
 
 The cost of indexing an entire package is high enough that there is obvious, tangible benefit of indexing multiple packages in different cores. This benefit far outweighs the any of the setup and queueing overhead.
 
-<div className="no-shadow">
-  <img src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-parallel.svg" alt="Parallelism diagram"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-parallel.svg" 
+  alt="Parallelism diagram" 
+  className="shadow-none" 
+/>
 
 In the current version of lsif-go, all writes to the file are synchronized by a single goroutine controlling the output buffer. This ensures that for any single goroutine emitting elements, the order of the elements they emit will hit disk in the same order. This is important as LSIF requires that edges refer only to a vertex that has already been indexed.
 
@@ -172,24 +177,20 @@ Each non-trivial task is broken into package-level work, queued into a channel, 
 
 The following chart show the comparison between lsif-go v0.9.0 (the un-optimized, previous release), v0.10.0 (some optimizations applied here), and v1.0 (the new stable release).
 
-<div className="no-shadow">
-  <img src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-perf-3.png" alt="performance comparison"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-perf-3.png" 
+  alt="performance comparison"
+  className="shadow-none"
+/>
 
 Dropping the un-optimized v0.9.0 release from our data set, we get the following chart with better readability for the index time required by lsif-go v1.0.
 
-<div className="no-shadow">
-  <img src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-perf-2.png" alt="performance comparison"/>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/lsif-go/lsif-go-perf-2.png" 
+  alt="performance comparison" 
+  className="shadow-none"
+/>
 
 We're still working on improving performance so every language, every codebase, and every programmer gets fast, precise code intelligence. If you thought this post was interesting or valuable, we'd appreciate it if you'd share it with others!
 
 To read another optimization story similar to this one, see our previous discussion about optimizing the [code intelligence backend](/blog/optimizing-a-code-intel-backend/), which concentrates on reducing the latency of the part of the code intelligence indexing system that receives the data emitted by LSIF indexers like lsif-go.
-
-<style>
-{`
-  .blog-post__html .no-shadow img { box-shadow: none; }
-  .blog-post__html .inline-images img { margin-left: 0; margin-right: 0; padding: 0; border: 0; display: inline; width: 49.5% }
-  blockquote { margin: 10px 0; padding: 0 5rem; font-style: italic; text-align: justify; }
-`}
-</style>
