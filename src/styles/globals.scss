@@ -195,8 +195,9 @@ table thead th {
 table tbody + tbody {
     border-top: 2px solid $light-gray-1;
 }
-table {
-    background-color: $white;
+
+.table-overflow {
+    overflow-x: auto;
 }
 
 /* ==================== BEM Pages/Components ==================== */

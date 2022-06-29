@@ -99,6 +99,7 @@ The **approach we chose** tracks the minimum and maximum row versions for each i
 
 _lsif_data_definitions_:
 
+<TableWrapper>
 | index_id | scheme | identifier | data | version |
 | -------- | ------ | ---------- | ---- | ------- |
 | 1        | foo    | bar        | .... | 1       |
@@ -106,14 +107,17 @@ _lsif_data_definitions_:
 | 2        | baz    | quux       | .... | 2       |
 | 2        | quux   | bonk       | .... | 2       |
 | 3        | bonk   | honk       | .... | 1       |
+</TableWrapper>
 
 _lsif_data_definitions_schema_versions_:
 
+<TableWrapper>
 | index_id | min_version | max_version |
 | -------- | ----------- | ----------- |
 | 1        | 1           | 2           |
 | 2        | 2           | 2           |
 | 3        | 1           | 1           |
+</TableWrapper>
 
 This second table allows us to efficiently determine which indexes have been migrated and which still need attention. For example, if we are currently migrating from schema version 1 to 2, then the table above shows index 1 is partially migrated, index 2 is fully migrated, and index 3 has yet to be touched.
 

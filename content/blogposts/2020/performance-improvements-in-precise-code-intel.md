@@ -29,34 +29,29 @@ With the guidance of the Go memory and CPU profiler, we implemented optimization
 
 Premature optimization is the root of all evil, so we initiated our optimization efforts by using a CPU and memory profiler to identify performance bottlenecks in our existing system. Here are the CPU and memory allocation profiles we began with:
 
-<div style={{overflowX: 'auto'}}>
-    <table>
-    <tbody>
-        <tr>
-            <th>CPU</th>
-            <th>Memory allocations</th>
-            <th>Heap</th>
-        </tr>
-        <tr>
-            <td>
-                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
-                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png" alt="3.16 cpu"/>
-                </a>
-            </td>
-            <td>
-                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
-                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png" alt="3.16 allocs"/>
-                </a>
-            </td>
-            <td>
-                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
-                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png" alt="3.16 heap"/>
-                </a>
-            </td>
-        </tr>
-    </tbody>
-    </table>
-</div>
+<a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
+    <Figure
+        src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png"
+        alt="3.16 CPU"
+        caption="CPU"
+    />
+</a>
+
+<a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
+    <Figure
+        src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png"
+        alt="3.16 allocs"
+        caption="Memory allocations"
+    />
+</a>
+
+<a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
+    <Figure
+        src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png"
+        alt="3.16 heap"
+        caption="Heap"
+    />
+</a>
 
 These profiles revealed a number of hotspots in the code, and we combined these results with a high-level understanding of the system architecture to come up with a list of changes that would have a substantial impact on both upload and query performance.
 
@@ -167,12 +162,14 @@ Because there can be many references to a single definition, there will be many 
 
 The table below shows the number of definition and reference rows in each bundle file before and after this change in the set of repositories we used for integration testing. The decrease in the number of definition rows written grew proportionally with code size (yielding greater savings the larger the project), and the number of reference rows written decreased by an order of magnitude in all cases.
 
+<TableWrapper>
 | repository | definition rows (before) | definition rows (after) | reference rows (before) | reference rows (after) |
 | --- | --- | --- | --- | --- |
 | [pingcap/tidb](https://github.com/pingcap/tidb) | 17,888 | 15,236 (-15%) | 32,2972 | 19,046 (-94%) |
 | [etcd-io/etcd](https://github.com/etcd-io/etcd) | 9,862 | 9,279 (-6%) | 85,718 | 9,990 (-88%) |
 | [distributedio/titan](https://github.com/distributedio/titan) | 1,082 | 1,016 (-6%) | 11,821 | 1,236 (-90%) |
 | [uber-go/zap](https://github.com/uber-go/zap) | 967 | 902 (-7%) | 6,732 | 951 (-86%) |
+</TableWrapper>
 
 Due to the reduced size of data, we are also able to insert more definition and references per SQL update query, further decreasing the overall time it takes to write a bundle. (SQLite imposes a hard insertion limit, [SQLITE\_MAX\_VARIABLE\_NUMBER](https://www.sqlite.org/limits.html).)
 
@@ -370,55 +367,57 @@ With all the changes discussed in this post combined, the latency for queries an
 
 Finally, here are the before and after profiles of CPU, memory allocations, and heap of the LSIF processing system. Note that most of the original red spots have been eliminated. New ones have naturally emerged, but overall the system is much faster:
 
-<table>
-    <tbody>
-        <tr>
-            <th></th>
-            <th>CPU</th>
-            <th>Memory allocations</th>
-            <th>Heap</th>
-        </tr>
-        <tr>
-            <td>
-                3.16
-            </td>
-            <td>
-                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
-                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png" alt="3.16 cpu"/>
-                </a>
-            </td>
-            <td>
-                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
-                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png" alt="3.16 allocs"/>
-                </a>
-            </td>
-            <td>
-                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
-                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png" alt="3.16 heap"/>
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                3.17
-            </td>
-            <td>
-                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.svg">
-                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.png" alt="3.17 cpu"/>
-                </a>
-            </td>
-            <td>
-                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.svg">
-                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.png" alt="3.17 allocs"/>
-                </a>
-            </td>
-            <td>
-                <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.svg">
-                    <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.png" alt="3.17 heap"/>
-                </a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<TableWrapper>
+    <table>
+        <tbody>
+            <tr>
+                <th></th>
+                <th>CPU</th>
+                <th>Memory allocations</th>
+                <th>Heap</th>
+            </tr>
+            <tr>
+                <td>
+                    3.16
+                </td>
+                <td>
+                    <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
+                        <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png" alt="3.16 cpu"/>
+                    </a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
+                        <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png" alt="3.16 allocs"/>
+                    </a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
+                        <img src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png" alt="3.16 heap"/>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3.17
+                </td>
+                <td>
+                    <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.svg">
+                        <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.png" alt="3.17 cpu"/>
+                    </a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.svg">
+                        <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.png" alt="3.17 allocs"/>
+                    </a>
+                </td>
+                <td>
+                    <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.svg">
+                        <img src="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.png" alt="3.17 heap"/>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</TableWrapper>
 
 We plan to continue on this path of performance improvements, and the next release will focus specifically on processing multiple bundles in parallel in order to multiply the benefit of these recent performance gains. This is just the latest chapter in our continuing effort to bring fast, precise code navigation to every language, every codebase, and every programmer. If you thought this post was interesting or valuable, we'd appreciate it if you'd share it with others!

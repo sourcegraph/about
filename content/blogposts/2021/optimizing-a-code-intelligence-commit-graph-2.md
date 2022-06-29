@@ -50,6 +50,7 @@ This [change](https://github.com/sourcegraph/sourcegraph/issues/12098) was made 
 
 The `lsif_nearest_uploads` table stores what you would expect. For each commit that has a visible upload, there is a row in the table indicating the source commit, the identifier of the visible upload, and the distance between the source commit and the commit on which the upload is defined. Multiple uploads may be visible from a single commit as we look in both ancestor and descendant directions. There may also be multiple visible uploads in the case of different languages or different directories at index time, but we'll hand-wave around these particular details for now.
 
+<TableWrapper>
 | repository                    | commit              | upload_id | distance |
 | ----------------------------- | ------------------- | --------- | -------- |
 | github.com/sourcegraph/sample | <code>323e23</code> | 1         | 1        |
@@ -60,12 +61,15 @@ The `lsif_nearest_uploads` table stores what you would expect. For each commit t
 | github.com/sourcegraph/sample | <code>a36064</code> | 2         | 1        |
 | github.com/sourcegraph/sample | <code>313082</code> | 1         | 2        |
 | github.com/sourcegraph/sample | <code>6a06fc</code> | 1         | 3        |
+</TableWrapper>
 
 The `lsif_dirty_repositories` table tracks which repositories need their commit graphs updated. When we receive an upload for a repository, or get a request for a commit that we don't currently track, we bump the `dirty_token` value attached to that repository. When we are about to refresh the graph, we note the dirty token, calculate the set of visible uploads for each commit, write it to the database, and set the `update_token` to the value of the dirty token we noted earlier. This ensures that we avoid a particular class of race conditions that occur when we receive an upload at the same time we're re-calculating the commit graph from a previous upload.
 
+<TableWrapper>
 | repository                    | dirty_token | update_token |
 | ----------------------------- | ----------- | ------------ |
 | github.com/sourcegraph/sample | 42          | 42           |
+</TableWrapper>
 
 #### Example
 
@@ -83,6 +87,7 @@ Because each parent can see a different set of uploads, we need to specify what 
 
 We want to search the graph in both directions, so we perform the operation again but visit the commits in the reverse order. The set of forward-visible uploads and backwards-visible uploads can then be merged using the same rules as stated above. The complete set of visible uploads for each commit for this example commit graph are shown below.
 
+<TableWrapper>
 | Commit              | Descendant visibility         | Ancestor visibility           | Combined visibility           | Nearest upload |
 | ------------------- | ----------------------------- | ----------------------------- | ----------------------------- | -------------- |
 | <code>80c800</code> | <code>{(id=1, dist=0)}</code> | <code>{(id=1, dist=0)}</code> | <code>{(id=1, dist=0)}</code> | #1             |
@@ -94,6 +99,7 @@ We want to search the graph in both directions, so we perform the operation agai
 | <code>f9727d</code> | <code>{(id=3, dist=1)}</code> | <code>{(id=1, dist=2)}</code> | <code>{(id=3, dist=1)}</code> | #3             |
 | <code>3daedb</code> | <code>{(id=3, dist=0)}</code> | <code>{(id=3, dist=0)}</code> | <code>{(id=3, dist=0)}</code> | #3             |
 | <code>e8331f</code> | <code>{}</code>               | <code>{(id=3, dist=1)}</code> | <code>{(id=3, dist=1)}</code> | #3             |
+</TableWrapper>
 
 The topological ordering of the commit graph and each traversal takes time linear to the size of the commit graph, making this entire procedure a linear time operation.
 
@@ -117,131 +123,133 @@ This means that there is no single nearest upload per commit: there is a nearest
     caption="A Git commit graph with code intelligence indexes rooted at different subdirectories."
 />
 
-<table>
-    <tbody>
-        <tr>
-            <th>Commit</th>
-            <th>Descendant visibility</th>
-            <th>Ancestor visibility</th>
-            <th>Combined visibility</th>
-        </tr>
-        <tr>
-            <td><code>80c800</code></td>
-            <td>
-                <code>(id=1, root=foo/, dist=0)</code>
-            </td>
-            <td>
-                <code>(id=1, root=foo/, dist=0)</code><br />
-                <code>(id=2, root=bar/, dist=1)</code><br />
-                <code>(id=4, root=bnk/, dist=2)</code><br />
-                <code>(id=5, root=baz/, dist=3)</code>
-            </td>
-            <td>
-                <code>(id=1, root=foo/, dist=0)</code><br />
-                <code>(id=2, root=bar/, dist=1)</code><br />
-                <code>(id=4, root=bnk/, dist=2)</code><br />
-                <code>(id=5, root=baz/, dist=3)</code>
-            </td>
-        </tr>
-        <tr>
-            <td><code>d9c29f</code></td>
-            <td>
-                <code>(id=1, root=foo/, dist=1)</code><br />
-                <code>(id=2, root=bar/, dist=0)</code>
-            </td>
-            <td>
-                <code>(id=2, root=bar/, dist=0)</code><br />
-                <code>(id=3, root=foo/, dist=1)</code><br />
-                <code>(id=5, root=baz/, dist=2)</code>
-            </td>
-            <td>
-                <code>(id=1, root=foo/, dist=1)</code><br />
-                <code>(id=2, root=bar/, dist=0)</code><br />
-                <code>(id=5, root=baz/, dist=2)</code>
-            </td>
-        </tr>
-        <tr>
-            <td><code>c85b4b</code></td>
-            <td>
-                <code>(id=2, root=bar/, dist=1)</code><br />
-                <code>(id=3, root=foo/, dist=0)</code>
-            </td>
-            <td>
-                <code>(id=3, root=foo/, dist=0)</code><br />
-                <code>(id=5, root=baz/, dist=1)</code>
-            </td>
-            <td>
-                <code>(id=2, root=bar/, dist=1)</code><br />
-                <code>(id=3, root=foo/, dist=0)</code><br />
-                <code>(id=5, root=baz/, dist=1)</code>
-            </td>
-        </tr>
-        <tr>
-            <td><code>69a5ed</code></td>
-            <td>
-                <code>(id=2, root=bar/, dist=2)</code><br />
-                <code>(id=3, root=foo/, dist=1)</code><br />
-                <code>(id=4, root=bnk/, dist=1)</code><br />
-                <code>(id=5, root=baz/, dist=0)</code>
-            </td>
-            <td>
-                <code>(id=5, root=baz/, dist=0)</code>
-            </td>
-            <td>
-                <code>(id=2, root=bar/, dist=2)</code><br />
-                <code>(id=3, root=foo/, dist=1)</code><br />
-                <code>(id=4, root=bnk/, dist=1)</code>
-            </td>
-        </tr>
-        <tr>
-            <td><code>f9727d</code></td>
-            <td>
-                <code>(id=1, root=foo/, dist=1)</code>
-            </td>
-            <td>
-                <code>(id=4, root=bnk/, dist=1)</code><br />
-                <code>(id=5, root=baz/, dist=2)</code>
-            </td>
-            <td>
-                <code>(id=1, root=foo/, dist=1)</code><br />
-                <code>(id=4, root=bnk/, dist=1)</code><br />
-                <code>(id=5, root=baz/, dist=2)</code>
-            </td>
-        </tr>
-        <tr>
-            <td><code>3daedb</code></td>
-            <td>
-                <code>(id=1, root=foo/, dist=2)</code><br />
-                <code>(id=4, root=bnk/, dist=0)</code>
-            </td>
-            <td>
-                <code>(id=4, root=bnk/, dist=0)</code><br />
-                <code>(id=5, root=baz/, dist=1)</code>
-            </td>
-            <td>
-                <code>(id=1, root=foo/, dist=2)</code><br />
-                <code>(id=4, root=bnk/, dist=0)</code><br />
-                <code>(id=5, root=baz/, dist=1)</code>
-            </td>
-        </tr>
-        <tr>
-            <td><code>063211</code></td>
-            <td>
-                <code>(id=2, root=bar/, dist=3)</code><br />
-                <code>(id=3, root=foo/, dist=2)</code><br />
-                <code>(id=4, root=bnk/, dist=2)</code><br />
-                <code>(id=5, root=baz/, dist=1)</code>
-            </td>
-            <td></td>
-            <td>
-                <code>(id=2, root=bar/, dist=3)</code><br />
-                <code>(id=3, root=foo/, dist=2)</code><br />
-                <code>(id=4, root=bnk/, dist=2)</code><br />
-                <code>(id=5, root=baz/, dist=1)</code>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<TableWrapper>
+    <table>
+        <tbody>
+            <tr>
+                <th>Commit</th>
+                <th>Descendant visibility</th>
+                <th>Ancestor visibility</th>
+                <th>Combined visibility</th>
+            </tr>
+            <tr>
+                <td><code>80c800</code></td>
+                <td>
+                    <code>(id=1, root=foo/, dist=0)</code>
+                </td>
+                <td>
+                    <code>(id=1, root=foo/, dist=0)</code><br />
+                    <code>(id=2, root=bar/, dist=1)</code><br />
+                    <code>(id=4, root=bnk/, dist=2)</code><br />
+                    <code>(id=5, root=baz/, dist=3)</code>
+                </td>
+                <td>
+                    <code>(id=1, root=foo/, dist=0)</code><br />
+                    <code>(id=2, root=bar/, dist=1)</code><br />
+                    <code>(id=4, root=bnk/, dist=2)</code><br />
+                    <code>(id=5, root=baz/, dist=3)</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>d9c29f</code></td>
+                <td>
+                    <code>(id=1, root=foo/, dist=1)</code><br />
+                    <code>(id=2, root=bar/, dist=0)</code>
+                </td>
+                <td>
+                    <code>(id=2, root=bar/, dist=0)</code><br />
+                    <code>(id=3, root=foo/, dist=1)</code><br />
+                    <code>(id=5, root=baz/, dist=2)</code>
+                </td>
+                <td>
+                    <code>(id=1, root=foo/, dist=1)</code><br />
+                    <code>(id=2, root=bar/, dist=0)</code><br />
+                    <code>(id=5, root=baz/, dist=2)</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>c85b4b</code></td>
+                <td>
+                    <code>(id=2, root=bar/, dist=1)</code><br />
+                    <code>(id=3, root=foo/, dist=0)</code>
+                </td>
+                <td>
+                    <code>(id=3, root=foo/, dist=0)</code><br />
+                    <code>(id=5, root=baz/, dist=1)</code>
+                </td>
+                <td>
+                    <code>(id=2, root=bar/, dist=1)</code><br />
+                    <code>(id=3, root=foo/, dist=0)</code><br />
+                    <code>(id=5, root=baz/, dist=1)</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>69a5ed</code></td>
+                <td>
+                    <code>(id=2, root=bar/, dist=2)</code><br />
+                    <code>(id=3, root=foo/, dist=1)</code><br />
+                    <code>(id=4, root=bnk/, dist=1)</code><br />
+                    <code>(id=5, root=baz/, dist=0)</code>
+                </td>
+                <td>
+                    <code>(id=5, root=baz/, dist=0)</code>
+                </td>
+                <td>
+                    <code>(id=2, root=bar/, dist=2)</code><br />
+                    <code>(id=3, root=foo/, dist=1)</code><br />
+                    <code>(id=4, root=bnk/, dist=1)</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>f9727d</code></td>
+                <td>
+                    <code>(id=1, root=foo/, dist=1)</code>
+                </td>
+                <td>
+                    <code>(id=4, root=bnk/, dist=1)</code><br />
+                    <code>(id=5, root=baz/, dist=2)</code>
+                </td>
+                <td>
+                    <code>(id=1, root=foo/, dist=1)</code><br />
+                    <code>(id=4, root=bnk/, dist=1)</code><br />
+                    <code>(id=5, root=baz/, dist=2)</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>3daedb</code></td>
+                <td>
+                    <code>(id=1, root=foo/, dist=2)</code><br />
+                    <code>(id=4, root=bnk/, dist=0)</code>
+                </td>
+                <td>
+                    <code>(id=4, root=bnk/, dist=0)</code><br />
+                    <code>(id=5, root=baz/, dist=1)</code>
+                </td>
+                <td>
+                    <code>(id=1, root=foo/, dist=2)</code><br />
+                    <code>(id=4, root=bnk/, dist=0)</code><br />
+                    <code>(id=5, root=baz/, dist=1)</code>
+                </td>
+            </tr>
+            <tr>
+                <td><code>063211</code></td>
+                <td>
+                    <code>(id=2, root=bar/, dist=3)</code><br />
+                    <code>(id=3, root=foo/, dist=2)</code><br />
+                    <code>(id=4, root=bnk/, dist=2)</code><br />
+                    <code>(id=5, root=baz/, dist=1)</code>
+                </td>
+                <td></td>
+                <td>
+                    <code>(id=2, root=bar/, dist=3)</code><br />
+                    <code>(id=3, root=foo/, dist=2)</code><br />
+                    <code>(id=4, root=bnk/, dist=2)</code><br />
+                    <code>(id=5, root=baz/, dist=1)</code>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</TableWrapper>
 
 The size of the table here (relative to the simple table produced by a single-root repository) is the thing to note. Let's say a repository has _n_ commits and _m_ distinctly indexable directories. Each commit then can see up to _m_ uploads, which drastically balloons the cost of merging 2 sets of visible uploads. This further impacts performance in the presence of many merge commits.
 
@@ -413,6 +421,7 @@ We'll use the following commit graph again for our example. Here, commit `68acd3
 
 The `lsif_nearest_uploads` table associates a commit with its visible uploads, just as before. But now, the number of records in the table is much, much smaller. The commits present in this table satisfy one of the properties described above that make the commit non-trivial to recompute.
 
+<TableWrapper>
 | repository                    | commit              | upload_ids          |
 | ----------------------------- | ------------------- | ------------------- |
 | github.com/sourcegraph/sample | <code>4a8a33</code> | <code>[]</code>     |
@@ -420,11 +429,13 @@ The `lsif_nearest_uploads` table associates a commit with its visible uploads, j
 | github.com/sourcegraph/sample | <code>e43f5b</code> | <code>[1]</code>    |
 | github.com/sourcegraph/sample | <code>67e0bf</code> | <code>[2]</code>    |
 | github.com/sourcegraph/sample | <code>599611</code> | <code>[1, 2]</code> |
+</TableWrapper>
 
 Luckily, some benefits compound one another here, and after we started ignoring traversing the graph in both directions, we can simplify these properties to only account for ancestor-direction traversals. Notably, commits whose parent has multiple children (`7e0471`, for example) no longer need to be stored because they were useful only in descendant-direction traversals (unless they are non-trivial for another reason). This further increases the number of trivially recomputable commits, saving even more space.
 
 The `lsif_nearest_uploads_links` table stores a _forwarding pointer_ to the ancestor that has the same set of visible uploads.
 
+<TableWrapper>
 | repository                    | commit              | ancestor_commit     |
 | ----------------------------- | ------------------- | ------------------- |
 | github.com/sourcegraph/sample | <code>91a565</code> | <code>68acd3</code> |
@@ -432,6 +443,7 @@ The `lsif_nearest_uploads_links` table stores a _forwarding pointer_ to the ance
 | github.com/sourcegraph/sample | <code>52811d</code> | <code>7e0471</code> |
 | github.com/sourcegraph/sample | <code>7b1a18</code> | <code>599611</code> |
 | github.com/sourcegraph/sample | <code>dd8578</code> | <code>599611</code> |
+</TableWrapper>
 
 Note that for our instances with a large number of distinct indexing roots, this saves a **massive** amount of storage space. The majority of commits (> 80%) can link to an ancestor, which requires only referencing a fixed-size commit hash. The remaining minority of commits must explicitly list their visible uploads, of which there may be many thousands.
 
@@ -450,16 +462,3 @@ In Part 2, we presented a fantastic way to "optimize the database" by reducing t
 - [A 5x reduction in RAM usage with Zoekt memory optimizations](/blog/zoekt-memory-optimizations-for-sourcegraph-cloud/)
 - [How not to break a search engine or: What I learned about unglamorous engineering](/blog/how-not-to-break-a-search-engine-unglamorous-engineering/)
 - [Avoiding the pitfalls of iteration-based development, explained in 5 pull requests](/blog/avoiding-the-pitfalls-of-iteration-based-development/)
-
-<style>
-  {`
-  figure .no-shadow { box-shadow: none; }
-  .workingtable-highlight td { color: #ffffff; background-color: #005cb9; }
-
-  figcaption {
-    text-align: center;
-    margin-top: -2rem;
-    font-style: italic;
-  }
-`}
-</style>

@@ -128,11 +128,13 @@ or icon with the `.*` symbol.
 
 With regexes, you can do stuff like this:
 
+<TableWrapper>
 | Description                                         | Regex       | Match              | Does not match |
 |-----------------------------------------------------|-------------|--------------------|----------------|
 | Find all symbol names starting with "foo"           | `foo\w*`    | fooBar             | barFoo         |
 | Find all characters between double quotes           | `"[^"]"`    | "hello&nbsp;world" | hello world'   |
 | Find all references to fields of a certain variable | `base\.\w+` | base.Path          | basePath       |
+</TableWrapper>
 
 There are different dialects of regex. In this post, we'll use [**POSIX Extended Regular
 Expressions**](https://www.gnu.org/software/findutils/manual/html_node/find_html/posix_002dextended-regular-expression-syntax.html#posix_002dextended-regular-expression-syntax).
@@ -157,10 +159,12 @@ Regex has a notion of **capturing groups** for find-replace operations. Capturin
 part of the overall match so they can be referenced in a replacement pattern. For example, here's a
 regex and replacement pattern that will reverse the order of arguments in a function call:
 
+<TableWrapper>
 | Input &rarr; Output | `myFunc(foo, bar)` &rarr; `myFunc(bar, foo)` |
 |---------------------|----------------------------------------------|
 | Regex               | `myFunc\((\w+), (\w+)\)`                     |
 | Replacement pattern | `myFunc(\2, \1)`[^2]                         |
+</TableWrapper>
 
 In the regex above, the literal parens are escaped `\(\)` while the unescaped parens `()` capture
 the parts of the match that correspond to the arguments to the function.
@@ -329,6 +333,7 @@ grep -lRE 'errorutil\.Handler' | xargs sed -i -E 's/Handler\(([A-Za-z0-9_\.]+)\)
 
 It fits on one line! But it's not the clearest thing in the world, so let's break it down[^6]:
 
+<TableWrapper>
 | Part | Description |
 |-|-|
 | `grep` | We're using `grep` to generate a list of filenames that may contain the specified pattern. We'll then feed these to `sed` to do the actual replacing. This is necessary for performance reasons, as running `sed` over all the files in your repository will be slow. |
@@ -340,6 +345,7 @@ It fits on one line! But it's not the clearest thing in the world, so let's brea
 | `-i` | This flag tells `sed` to modify files "in place", rather than printing the transformed contents to standard output. |
 | `-E` | This flag tells `sed` to used extended regex syntax. |
 | `s`<br></br>`/`<br></br>`Handler\(([A-Za-z0-9_\.]+)\)`<br></br>`/`<br></br>`Handler(\1, "default value")`<br></br>`/` | This specifies the replacement pattern and is a bit of a doozy, so let's break it down even further. This is actually an expression in the `sed` language. `s` is the "substitute" command. The character immediately after `s` specifies the delimiter that will separate arguments to `s`. (In this case, it is `/`, but we can make it any character we want so long as we're consistent.) The first argument, `Handler\(([A-Za-z0-9_\.]+)\)`, is a regular expression with a matching group to capture the argument to the function call. The second argument, `Handler(\1, "default value")`, is a replacement pattern, which references the regex capture group with `\1`. |
+</TableWrapper>
 
 If all this is clear as mud, don't worry—you're not alone. `grep` and `sed` are powerful tools, but
 they're not super beginner-friendly.[^7] [^8]
@@ -368,6 +374,7 @@ Here's how you would use `codemod` to add an additional argument to `errorutil.H
 codemod -m -d . --extensions go 'errorutil.Handler\(([A-Za-z0-9_\.]+)\)' 'errorutil.Handler(\1, "default value")'
 ```
 
+<TableWrapper>
 | Part                                     | Description                                                                                                  |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | `codemod`                                | The Codemod command.                                                                                         |
@@ -376,6 +383,7 @@ codemod -m -d . --extensions go 'errorutil.Handler\(([A-Za-z0-9_\.]+)\)' 'erroru
 | `--extensions go`                        | Restrict search to files ending in `.go`.                                                                    |
 | `errorutil.Handler\(([A-Za-z0-9_\.]+)\)` | The "find" regex, with a capturing group.                                                                    |
 | `errorutil.Handler(\1, "default value")` | The replace pattern.                                                                                         |
+</TableWrapper>
 
 When you run the command, `codemod` will prompt you to accept, reject, or make further edits to each
 change:
@@ -434,6 +442,7 @@ Here is a Comby one-liner that handles adding an extra argument to `errorutil.Ha
 rg -l errorutil | xargs comby -in-place 'errorutil.Handler(:[1])' 'errorutil.Handler(:[1], "default value")'
 ```
 
+<TableWrapper>
 | Part | Description |
 |-|-|
 | `rg -l errorutil` | Use ripgrep to print names of all code files that contain "errorutil" |
@@ -441,6 +450,7 @@ rg -l errorutil | xargs comby -in-place 'errorutil.Handler(:[1])' 'errorutil.Han
 | `comby -in-place` | Edit the files in-place with the `comby` CLI |
 | `errorutil.Handler(:[1])` | The match pattern, which sub-matches the argument using the Comby [hole syntax](https://comby.dev/#basic-usage) |
 | `errorutil.Handler(:[1], "default value")` | The replace pattern, which references the sub-matched hole |
+</TableWrapper>
 
 Contrast the relative readability of this `comby` example with the regex we wrote for `sed` earlier
 in this post.
@@ -471,12 +481,13 @@ it easy.
 
 Here are a few more examples:
 
+<TableWrapper>
 | Description | Comby invocation |
 |-|-|
 | Reverse function argument order | `comby 'myFunc(:[1], :[2])' 'myFunc(:[2], :[1])'` |
 | Convert HTML table to JSON | `comby '<tr><td>:[1]</td><td>:[2]</td></tr>' '":[1]": :[2]'` |
 | Update Go error handling to use wrapped errors | `comby 'fmt.Errorf(":[head]%s:[tail]", err)' 'fmt.Errorf(":[head]%w:[tail]", err)'` |
-
+</TableWrapper>
 
 Comby's advantages can be summed up in two words: expressivity and ergonomics.
 * Expressivity: You can capture patterns that involve nested delimiters, which are inexpressible with regex.

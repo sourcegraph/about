@@ -42,7 +42,8 @@ Our initial stab at this problem was to introduce 2 new tables to PostgreSQL: `c
 
 The `commits` table stores data similar to a flattened version of the output from `git log --all --pretty='%H %P'` (a commit followed by a list of its parents), for each repository. Example values for this table are shown below to aid our running example. This table would generally store the full 40-character commit ID—we are abbreviating them for brevity here.
 
-| repository                    | commit              | parent_commit       |
+<TableWrapper>
+  | repository                    | commit              | parent_commit       |
 | ----------------------------- | ------------------- | ------------------- |
 | github.com/sourcegraph/sample | <code>a36064</code> | <code>f4fb06</code> |
 | github.com/sourcegraph/sample | <code>f4fb06</code> | <code>4c8d9d</code> |
@@ -51,14 +52,17 @@ The `commits` table stores data similar to a flattened version of the output fro
 | github.com/sourcegraph/sample | <code>4c8d9d</code> | <code>d67b8d</code> |
 | github.com/sourcegraph/sample | <code>d67b8d</code> | <code>323e23</code> |
 | github.com/sourcegraph/sample | <code>323e23</code> |                     |
+</TableWrapper>
 
 This table is synchronized with the source of truth in gitserver whenever we receive a request for a commit that we didn't know about previously. A row present in the `lsif_data_markers` table denotes that an index was uploaded for a particular commit. Example values for this table are also shown below.
 
+<TableWrapper>
 | repository                    | commit              |
 | ----------------------------- | ------------------- |
 | github.com/sourcegraph/sample | <code>f4fb06</code> |
 | github.com/sourcegraph/sample | <code>d67b8d</code> |
 | github.com/sourcegraph/sample | <code>0eed16</code> |
+</TableWrapper>
 
 Together, these 2 tables enable us to recursively search up and down the commit graph starting at a particular requested commit, and stop the search once we reach a commit that has index data. The following [recursive common table expression](https://www.postgresql.org/docs/13/queries-with.html) does just that.
 
@@ -126,6 +130,7 @@ The values of the tables above represent the following hypothetical commit graph
 
 Running the query above from the commit `313082` produces the following CTE results over 3 iterations before halting, and ultimately returns `d67b8d` as the nearest commit visible to the target query.
 
+<TableWrapper>
 | iteration | commit              | parent_commit       | distance | direction |
 | --------- | ------------------- | ------------------- | -------- | --------- |
 | 1         | <code>313082</code> | <code>4c8d9d</code> | 0        | A         |
@@ -133,6 +138,7 @@ Running the query above from the commit `313082` produces the following CTE resu
 | 2         | <code>4c8d9d</code> | <code>d67b8d</code> | 1        | A         |
 | 2         | <code>6a06fc</code> | <code>313082</code> | 1        | D         |
 | 3         | <code>d67b8d</code> | <code>323e23</code> | 2        | A         |
+</TableWrapper>
 
 Of particular note is that we don't visit _sibling_ commits: once we reach a commit by travelling in the ancestor direction, we can't suddenly flip direction. Maintaining the direction heading during traversal ensures that the algorithm will eventually terminate.
 
@@ -182,24 +188,28 @@ The following hypothetical commit graph contains a number of feature branches th
 
 Running the query above from the commit `703e33` produces the following CTE results over the first 4 iterations.
 
-<table>
-<tbody>
-<tr><th>iteration</th><th>commit</th><th>parent_commit</th><th>distance</th><th>direction</th></tr>
-<tr><td>1</td><td><code>703e33</code></td><td><code>6307e6</code></td><td>0</td><td>A</td></tr>
-<tr><td>1</td><td><code>703e33</code></td><td><code>6307e6</code></td><td>0</td><td>D</td></tr>
-<tr><td>1</td><td><code>703e33</code></td><td><code>5a24e4</code></td><td>0</td><td>A</td></tr>
-<tr><td>1</td><td><code>703e33</code></td><td><code>5a24e4</code></td><td>0</td><td>D</td></tr>
-<tr><td>2</td><td><code>5a24e4</code></td><td><code>3d2f27</code></td><td>1</td><td>A</td></tr>
-<tr><td>2</td><td><code>6307e6</code></td><td><code>4a848f</code></td><td>1</td><td>A</td></tr>
-<tr className="workingtable-highlight"><td>3</td><td><code>3d2f27</code></td><td><code>09210f</code></td><td>2</td><td>A</td></tr>
-<tr className="workingtable-highlight"><td>3</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>2</td><td>A</td></tr>
-<tr><td>3</td><td><code>4a848f</code></td><td><code>3d2f27</code></td><td>2</td><td>A</td></tr>
-<tr><td>4</td><td><code>09210f</code></td><td></td><td>3</td><td>A</td></tr>
-<tr><td>4</td><td><code>2190d3</code></td><td><code>1f64f9</code></td><td>3</td><td>A</td></tr>
-<tr className="workingtable-highlight"><td>4</td><td><code>3d2f27</code></td><td><code>09210f</code></td><td>3</td><td>A</td></tr>
-<tr className="workingtable-highlight"><td>4</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>3</td><td>A</td></tr>
-</tbody>
-</table>
+<TableWrapper>
+  <table>
+    <thead>
+      <tr><th>iteration</th><th>commit</th><th>parent_commit</th><th>distance</th><th>direction</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td><code>703e33</code></td><td><code>6307e6</code></td><td>0</td><td>A</td></tr>
+      <tr><td>1</td><td><code>703e33</code></td><td><code>6307e6</code></td><td>0</td><td>D</td></tr>
+      <tr><td>1</td><td><code>703e33</code></td><td><code>5a24e4</code></td><td>0</td><td>A</td></tr>
+      <tr><td>1</td><td><code>703e33</code></td><td><code>5a24e4</code></td><td>0</td><td>D</td></tr>
+      <tr><td>2</td><td><code>5a24e4</code></td><td><code>3d2f27</code></td><td>1</td><td>A</td></tr>
+      <tr><td>2</td><td><code>6307e6</code></td><td><code>4a848f</code></td><td>1</td><td>A</td></tr>
+      <tr className="table-primary"><td>3</td><td><code>3d2f27</code></td><td><code>09210f</code></td><td>2</td><td>A</td></tr>
+      <tr className="table-primary"><td>3</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>2</td><td>A</td></tr>
+      <tr><td>3</td><td><code>4a848f</code></td><td><code>3d2f27</code></td><td>2</td><td>A</td></tr>
+      <tr><td>4</td><td><code>09210f</code></td><td></td><td>3</td><td>A</td></tr>
+      <tr><td>4</td><td><code>2190d3</code></td><td><code>1f64f9</code></td><td>3</td><td>A</td></tr>
+      <tr className="table-primary"><td>4</td><td><code>3d2f27</code></td><td><code>09210f</code></td><td>3</td><td>A</td></tr>
+      <tr className="table-primary"><td>4</td><td><code>3d2f27</code></td><td><code>2190d3</code></td><td>3</td><td>A</td></tr>
+    </tbody>
+  </table>
+</TableWrapper>
 
 Notice that there are 2 ways to get from commit `7033ee` to commit `3d2f27`, therefore the entries for `3d2f27` are duplicated in the CTE results (and therefore the working table). Also notice that the number of _new_ rows per iteration is growing as the iteration count rises in such graphs. **For some configuration of input, this query is [quadratic](https://accidentallyquadratic.tumblr.com/) instead of linear.**
 

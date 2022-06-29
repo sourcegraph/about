@@ -7,7 +7,7 @@ import { Alert } from '@components'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
-export type Components = import('mdx/types').MDXComponents
+export type ReleaseComponents = import('mdx/types').MDXComponents
 const components = { Alert }
 
 interface Props extends PostComponentProps {}
@@ -30,7 +30,7 @@ export const ReleasePost: FunctionComponent<Props> = ({
         <>
             {content && (
                 <div className="card-body release-post__body">
-                    <MDXRemote {...content} components={components as Components} />
+                    <MDXRemote {...content} components={components as ReleaseComponents} />
                 </div>
             )}
 
