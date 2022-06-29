@@ -170,24 +170,24 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                 className={`footer__postscript d-flex justify-content-between ${minimal ? 'py-3' : 'pt-4 pb-2'} small`}
             >
                 <ul className="nav">
-                    <li className="nav-item text-muted mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
+                    <li className="nav-item text-gray-5 mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
                     <li className="nav-item">
                         <Link href="/terms" passHref={true}>
-                            <a href="#none" className="nav-link">
+                            <a href="#none" className="nav-link text-gray-5">
                                 Terms
                             </a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/terms/security" passHref={true}>
-                            <a href="#none" className="nav-link">
+                            <a href="#none" className="nav-link text-gray-5">
                                 Security
                             </a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/terms/privacy" passHref={true}>
-                            <a href="#none" className="nav-link">
+                            <a href="#none" className="nav-link text-gray-5">
                                 Privacy
                             </a>
                         </Link>
