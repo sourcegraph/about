@@ -4,6 +4,10 @@ import { Layout, CustomerLogos, HubSpotForm } from '@components'
 
 import { slugs, slugData, type ContactPageProps } from './data'
 
+/**
+ * This is a contact page slug template. The data used to generate these pages
+ * can be found in data.ts.
+ */
 const ContactPage: NextPage<ContactPageProps> = ({ title, description, masterFormName, formId }) => (
     <Layout
         minimal={true}

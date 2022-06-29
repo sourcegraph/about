@@ -9,6 +9,10 @@ interface SlugDataProps {
     [key: string]: ContactPageProps
 }
 
+/**
+ * This data is used to generate different contact pages under [...slug].tsx
+ * since they all share the same template.
+ */
 export const slugData: SlugDataProps = {
     'request-batch-changes-demo': {
         title: 'Schedule a Batch Changes demo',
@@ -24,11 +28,6 @@ export const slugData: SlugDataProps = {
         title: 'Schedule a Code Insights demo',
         description:
             'Learn how you can track and visualize trends in your entire codebase with Sourcegraph Code Insights.',
-        masterFormName: 'demoMulti',
-    },
-    'request-demo': {
-        title: 'Schedule a Sourcegraph demo',
-        description: 'To schedule a demo with a product specialist, tell us a bit about yourself.',
         masterFormName: 'demoMulti',
     },
     'request-info': {
