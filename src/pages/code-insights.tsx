@@ -27,7 +27,7 @@ import {
     TemplateCodeBlock,
     YouTube,
     Video,
-    HubSpotForm
+    HubSpotForm,
 } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
@@ -294,30 +294,33 @@ const CodeInsightsPage: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Sourcegraph | Code Insights',
-            description: 'Draw insights from your codebase about how different initiatives are tracking over time. Code Insights is now generally available for teams of all sizes.',
+            description:
+                'Draw insights from your codebase about how different initiatives are tracking over time. Code Insights is now generally available for teams of all sizes.',
         }}
         className="code-insights-page"
         heroAndHeaderClassName="code-insights-page__hero-and-header navbar-light"
-        hero={<>
-            <div className="bg" />
-            <div className="container pb-4">
-                <div className="row">
-                    <div className="col-lg-7">
-                        <div className="text-uppercase mb-2">Code Insights</div>
-                        <h1 className="display-2 font-weight-bold mb-4">
-                            Track what really matters to you and your team.
-                        </h1>
-                        <h4 className="mb-5">
-                            Transform your code into a queryable database to create customizable, visual
-                            dashboards in seconds.
-                        </h4>
-                        <div className="d-flex flex-column pt-1 max-w-400">
-                            <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
+        hero={
+            <>
+                <div className="bg" />
+                <div className="container pb-4">
+                    <div className="row">
+                        <div className="col-lg-7">
+                            <div className="text-uppercase mb-2">Code Insights</div>
+                            <h1 className="display-2 font-weight-bold mb-4">
+                                Track what really matters to you and your team.
+                            </h1>
+                            <h4 className="mb-5">
+                                Transform your code into a queryable database to create customizable, visual dashboards
+                                in seconds.
+                            </h4>
+                            <div className="d-flex flex-column pt-1 max-w-400">
+                                <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </>}
+            </>
+        }
     >
         <ContentSection className="py-lg-8 py-7">
             <div className="row justify-content-between">
@@ -332,8 +335,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                     <p>
                         Forget about inaccurate spreadsheets, manual processes, and missing historical data. You can{' '}
                         <strong>track everything in your codebase</strong>, from migrations to code smells, in a
-                        seamless and precise way. Make data-driven decisions using visualizations based on the power
-                        and accuracy of Sourcegraph Code Search.
+                        seamless and precise way. Make data-driven decisions using visualizations based on the power and
+                        accuracy of Sourcegraph Code Search.
                     </p>
                 </div>
                 <div className="col-lg-7 mb-md-4 pl-lg-5 d-flex align-items-center video-container">
@@ -341,7 +344,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                         source={{ webm: 'code_insights/code-insights-720', mp4: 'code_insights/code-insights-720' }}
                         title="Code Insights"
                         caption="Code Insights"
-                        loop={true} />
+                        loop={true}
+                    />
                 </div>
             </div>
         </ContentSection>
@@ -356,9 +360,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                         <h4 className="font-weight-normal">
                             &ldquo;As we've grown, so has the need to better track and communicate our progress and
                             goals across the engineering team and broader company. With Code Insights, our data and
-                            migration tracking is accurate across our entire codebase, and our engineers and
-                            managers can shift out of manual spreadsheets and spend more time working on
-                            code.&rdquo;
+                            migration tracking is accurate across our entire codebase, and our engineers and managers
+                            can shift out of manual spreadsheets and spend more time working on code.&rdquo;
                         </h4>
                         <div className="pt-3 text-muted text-center">
                             &mdash; Balázs Tóthfalussy, Engineering Manager, Prezi
@@ -379,8 +382,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                     Engineering leadership with superpowers
                 </h2>
                 <p className="icon-subheader w-100 text-center">
-                    Code Insights provides reliable real-time reporting directly from the codebase, making
-                    engineering leaders and their teams more effective.
+                    Code Insights provides reliable real-time reporting directly from the codebase, making engineering
+                    leaders and their teams more effective.
                 </p>
                 <div className="d-flex flex-column col-lg-6 px-lg-6 justify-content-around">
                     <div className="d-flex py-lg-5 py-3">
@@ -433,7 +436,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                     items={items}
                     autoAdvance={true}
                     hasImages={true}
-                    title="How engineering teams use Code Insights" />
+                    title="How engineering teams use Code Insights"
+                />
             </ContentSection>
         </div>
 
@@ -537,8 +541,8 @@ const CodeInsightsPage: FunctionComponent = () => (
                     <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
                         <h2 className="display-3 font-weight-bold">Get started with Code Insights</h2>
                         <p>
-                            Create a code insight in 60 seconds and get historical data for previously untracked
-                            metrics — data backfills automatically.
+                            Create a code insight in 60 seconds and get historical data for previously untracked metrics
+                            — data backfills automatically.
                         </p>
                     </div>
                     <div className="col-lg-7 d-flex flex-column pt-1">

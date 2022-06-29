@@ -76,7 +76,8 @@ const PartnerPodcastPage: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Code Intelligence Platform | Sourcegraph',
-            description: 'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
+            description:
+                'Address security risks, onboard to a new codebase, identify the root cause of incidents, promote code reuse, improve code health, and more with Sourcegraph.',
         }}
     >
         <div className="bg-gradient-saturn-reversed py-6">

@@ -86,10 +86,6 @@ interface HubSpotEventProps {
     data: { name: string; value: string }[]
 }
 
-
-
-
-
 /**
  * These are our Master Forms that are used throughout our codebase. Each
  * masterFormName is used as an identifier to map to a specific master form id.
@@ -108,9 +104,6 @@ const masterForms: { [key: string]: string } = {
     gatedMulti: '1fb4ef6c-f233-48ba-9f43-a88f19528282',
 }
 
-
-
-
 // HubSpot script integration
 const hubSpotScript = '//js.hsforms.net/forms/v2.js'
 
@@ -120,26 +113,14 @@ const clearbitScript =
     '!function(e){var o=document.getElementsByTagName("script")[0];if("object"==typeof e.ClearbitForHubspot)return console.log("Clearbit For HubSpot included more than once"),!1;e.ClearbitForHubspot={},e.ClearbitForHubspot.forms=[],e.ClearbitForHubspot.addForm=function(o){var t=o[0];"function"==typeof e.ClearbitForHubspot.onFormReady?e.ClearbitForHubspot.onFormReady(t):e.ClearbitForHubspot.forms.push(t)};var t=document.createElement("script");t.async=!0,t.src="https://hubspot.clearbit.com/v1/forms/pk_a66b9ed76e62c713c06aab39bfae7234/forms.js",o.parentNode.insertBefore(t,o),e.addEventListener("message",function(o){if("hsFormCallback"===o.data.type&&"onFormReady"===o.data.eventName)if(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0)e.ClearbitForHubspot.addForm(document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'));else if(document.querySelectorAll("iframe.hs-form-iframe").length>0){document.querySelectorAll("iframe.hs-form-iframe").forEach(function(t){t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\').length>0&&e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll(\'form[data-form-id="\'+o.data.id+\'"]\'))})}})}(window);'
 const chiliPiperScript = '//js.chilipiper.com/marketing.js'
 
-
-
-
-
 // Gets a script element by its id
 const getScriptElement = (id: string): HTMLScriptElement | Element | null => document.querySelector(`#${id}`)
-
-
-
-
 
 // Removes a script element by its id
 const removeScriptElement = (id: string): void => {
     const scriptElement: HTMLScriptElement | Element | null = getScriptElement(id)
     scriptElement?.remove()
 }
-
-
-
-
 
 /**
  * This loads a script element and appends it to the document head
@@ -173,13 +154,9 @@ const loadScriptElement = (
         resolve(scriptElement)
     })
 
-
-
-
-
 /**
  * This loads all necessary scripts and third party integrations
- * 
+ *
  * @param chiliPiper - boolean to enable ChiliPiper
  */
 const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
@@ -197,7 +174,7 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
      * If ChiliPiper is enabled, load the script and add an event
      * listener to map the lead data to the ChiliPiper scheduler.
      */
-     if (chiliPiper) {
+    if (chiliPiper) {
         await loadScriptElement('chilipiper', chiliPiperScript)
 
         const cpTenantDomain = 'sourcegraph'
@@ -219,10 +196,6 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
     }
 }
 
-
-
-
-
 /**
  * This creates the HubSpot form with the configuration options.
  * See: https://legacydocs.hubspot.com/docs/methods/forms/advanced_form_options
@@ -232,11 +205,7 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
  * @param CreateHubSpotFormProps.onFormReady - callback after form is built
  * @param CreateHubSpotFormProps.onFormSubmitted - callback after data is sent
  */
-function createHubSpotForm({
-    formId,
-    onFormReady,
-    onFormSubmitted,
-}: CreateHubSpotFormProps): void {
+function createHubSpotForm({ formId, onFormReady, onFormSubmitted }: CreateHubSpotFormProps): void {
     const script = getScriptElement('hubspot')
 
     // When the HubSpot script is loaded, create the form with the config
@@ -255,10 +224,6 @@ function createHubSpotForm({
         })
     })
 }
-
-
-
-
 
 // This gets called when the HubSpot form is ready
 const onFormReady = (form: HTMLFormElement): void => {
@@ -293,10 +258,6 @@ const onFormReady = (form: HTMLFormElement): void => {
     }
 }
 
-
-
-
-
 /**
  * The HubSpot form component.
  *
@@ -321,12 +282,12 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
         if (masterFormName) {
             masterFormId = masterForms[masterFormName]
         }
-        
+
         // Load all scripts
         // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        loadAllScripts(chiliPiper)        
+        loadAllScripts(chiliPiper)
 
-        if (!formCreated) {            
+        if (!formCreated) {
             createHubSpotForm({
                 formId: formId || masterFormId,
                 onFormReady,

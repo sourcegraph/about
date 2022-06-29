@@ -45,30 +45,33 @@ const BetterDeveloperOnboarding: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Better Developer Onboarding | Sourcegraph',
-            description: 'Find your own answers with self-serve onboarding, codebase exploration, and knowledge sharing, without waiting for someone to point you to the relevant code.',
+            description:
+                'Find your own answers with self-serve onboarding, codebase exploration, and knowledge sharing, without waiting for someone to point you to the relevant code.',
         }}
         className="navbar-light"
-        hero={<>
-            <div className={styles.pageHeader}>
-                <div className="container pb-4">
-                    <div className="row">
-                        <div className="col-lg-7 mb-6 mt-7">
-                            <h1 className="display-2 font-weight-bold mb-4">
-                                Give your team a complete onboarding experience
-                            </h1>
-                            <div className="display-4 font-weight-normal mb-5">
-                                With self-serve onboarding, codebase exploration, and knowledge sharing,
-                                developers can find their own answers without waiting for someone to point them
-                                to the relevant code.
-                            </div>
-                            <div className="d-flex flex-column pt-1 max-w-400">
-                                <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
+        hero={
+            <>
+                <div className={styles.pageHeader}>
+                    <div className="container pb-4">
+                        <div className="row">
+                            <div className="col-lg-7 mb-6 mt-7">
+                                <h1 className="display-2 font-weight-bold mb-4">
+                                    Give your team a complete onboarding experience
+                                </h1>
+                                <div className="display-4 font-weight-normal mb-5">
+                                    With self-serve onboarding, codebase exploration, and knowledge sharing, developers
+                                    can find their own answers without waiting for someone to point them to the relevant
+                                    code.
+                                </div>
+                                <div className="d-flex flex-column pt-1 max-w-400">
+                                    <HubSpotForm masterFormName="contactEmail" chiliPiper={true} />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </>}
+            </>
+        }
     >
         <ContentSection>
             <div className="mt-6 brightness-0">

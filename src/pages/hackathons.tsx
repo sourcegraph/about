@@ -14,8 +14,8 @@ export const Pricing: FunctionComponent = () => (
         <section className="text-center mb-0 px-5">
             <h1 className="mt-4">Set up Sourcegraph during a hackathon</h1>
             <p>
-                We'll give you access to Sourcegraph Enterprise features so you can ship code search and
-                intelligence to your team.
+                We'll give you access to Sourcegraph Enterprise features so you can ship code search and intelligence to
+                your team.
             </p>
         </section>
         <section className="d-flex justify-content-around flex-column flex-lg-row bg-white max-w-1100 p-4 m-auto">

@@ -9,7 +9,8 @@ const FixingVulnerabilities: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Fixing Security Vulnerabilities | Sourcegraph',
-            description: "Search within and across repositories to find and fix vulnerabilities in minutes, and deploy fixes with confidence knowing you've found every instance of affected code.",
+            description:
+                "Search within and across repositories to find and fix vulnerabilities in minutes, and deploy fixes with confidence knowing you've found every instance of affected code.",
         }}
     >
         <div className="container py-6">
@@ -41,13 +42,11 @@ const FixingVulnerabilities: FunctionComponent = () => (
 
         <div className="bg-gradient-venus-saturated text-center">
             <div className="container py-6 mw-650">
-                <h2 className="mb-4 font-weight-bold">
-                    Cloudflare proves to auditors that its code isn't vulnerable
-                </h2>
+                <h2 className="mb-4 font-weight-bold">Cloudflare proves to auditors that its code isn't vulnerable</h2>
                 <blockquote>
                     <p>
-                        &ldquo;[Sourcegraph] is the best way to prove that we're not vulnerable to a particular CVE,
-                        if and when we get asked by an auditor.&rdquo;
+                        &ldquo;[Sourcegraph] is the best way to prove that we're not vulnerable to a particular CVE, if
+                        and when we get asked by an auditor.&rdquo;
                     </p>
                     <figcaption className="text-muted mt-4">
                         &mdash; David Haynes, Security Engineer at Cloudflare

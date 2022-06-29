@@ -10,7 +10,8 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Accelerating Developer Onboarding | Sourcegraph',
-            description: 'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
+            description:
+                'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
         }}
     >
         <div className="container py-6">
@@ -47,8 +48,7 @@ const AccelerateDevOnboarding: FunctionComponent = () => (
                 <blockquote>
                     <p>
                         &ldquo;For our new developers, Sourcegraph has been invaluable to get to know the repository
-                        structure, to track down where code lives, and self-service during their
-                        investigations.&rdquo;
+                        structure, to track down where code lives, and self-service during their investigations.&rdquo;
                     </p>
                     <figcaption className="text-muted mt-4">
                         &mdash; Owen Kim, Senior Software Engineer at Convoy
