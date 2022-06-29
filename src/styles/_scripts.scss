@@ -1,0 +1,20 @@
+/* ================ 3rd Party Script styling overrides ================ */
+
+/**
+ * Needed to make sure cookie banner doesn't have white text on white background
+ * (Cards for the website are configured to have white background, but body text is also configured to be white).
+ */
+/* stylelint-disable-next-line selector-max-id */
+#CybotCookiebotDialog {
+    color: $dark-9;
+    opacity: 0.95;
+    z-index: 1075 !important;
+    @include media-breakpoint-down(md) {
+        height: 90vh;
+    }
+}
+
+/* Show one prompt at a time. Cookie Banner covers ChatBot until complete */
+#drift-frame-controller {
+    z-index: 1070 !important;
+}

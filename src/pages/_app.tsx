@@ -8,6 +8,8 @@ import SSRProvider from 'react-bootstrap/SSRProvider'
 
 import { useEventLogger, useLandingSource } from '@hooks'
 
+import 'prism-themes/themes/prism-one-light.css'
+
 const App = ({ Component, pageProps }: AppProps): ReactNode => {
     useEventLogger()
     useLandingSource()

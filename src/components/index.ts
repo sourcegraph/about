@@ -14,7 +14,6 @@ export { LeadershipSection } from './LeadershipSection'
 export { RequestDemoForm } from './RequestDemoForm'
 export { RequestDemoTrySourcegraph } from './RequestDemoTrySourcegraph'
 export { SelfHostedSection } from './SelfHostedSection'
-export { TabCarousel } from './TabCarousel'
 export { TemplateCodeBlock } from './TemplateCodeBlock'
 export { ThreeUpText } from './ThreeUpText'
 export { TrySourcegraph } from './TrySourcegraph'
@@ -47,7 +46,7 @@ export {
 } from './Blog'
 
 // Carousels
-export { CustomCarousel, QuoteCarousel } from './Carousels'
+export { CustomCarousel, TabCarousel, QuoteCarousel } from './Carousels'
 
 // Case Studies
 export {

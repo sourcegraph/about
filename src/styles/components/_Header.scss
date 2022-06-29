@@ -1,32 +1,11 @@
 // stylelint-disable declaration-property-unit-whitelist
 .header {
-    &__logo {
-        background: url('/sourcegraph-logo.svg') no-repeat;
-        background-size: contain;
-        min-width: 150px;
-        height: 26px;
-        margin-right: 0;
-
-        &-image {
-            height: 26px;
-            margin-bottom: 0.125rem;
-        }
-    }
-
     &__nav-link.btn:hover {
         color: $light !important;
     }
 
     &.navbar-white {
         background-color: $white !important;
-    }
-
-    &.navbar-dark .header {
-        &__logo {
-            background: url('/sourcegraph-reverse-logo.svg') no-repeat;
-            background-size: 150px;
-            height: 26px;
-        }
     }
 
     /* New Top Nav Customization */

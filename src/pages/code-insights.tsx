@@ -33,7 +33,6 @@ import { buttonStyle, buttonLocation } from '@data'
 
 const items = [
     {
-        backgroundClass: '',
         buttonLabel: 'Track migrations, adoption, and deprecations',
         text: (
             <CodeInsightExample type={CodeInsightExampleType.Search} data={SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA} />
@@ -42,38 +41,28 @@ const items = [
         itemClass: 'd-block',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Detect and track versions of languages or packages',
         text: <CodeInsightExample type={CodeInsightExampleType.Capture} data={ALPINE_VERSIONS_INSIGHT} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Ensure removal of security vulnerabilities',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LOG_4_J_INCIDENT_INSIGHT} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Understand code by team',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={DEPRECATED_API_USAGE_BY_TEAM} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Track code smells and health',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={LINTER_OVERRIDES} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
     {
-        backgroundClass: '',
         buttonLabel: 'Visualize configurations and services',
         text: <CodeInsightExample type={CodeInsightExampleType.Search} data={REPOS_WITH_CI_SYSTEM} />,
-        headerClass: '',
         itemClass: 'd-none',
     },
 ]
@@ -313,9 +302,9 @@ const CodeInsightsPage: FunctionComponent = () => (
             <div className="bg" />
             <div className="container pb-4">
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-7">
                         <div className="text-uppercase mb-2">Code Insights</div>
-                        <h1 className="display-3 font-weight-bold mb-4">
+                        <h1 className="display-2 font-weight-bold mb-4">
                             Track what really matters to you and your team.
                         </h1>
                         <h4 className="mb-5">
@@ -332,8 +321,8 @@ const CodeInsightsPage: FunctionComponent = () => (
     >
         <ContentSection className="py-lg-8 py-7">
             <div className="row justify-content-between">
-                <div className="col-lg-4 pl-lg-0">
-                    <h2 className="mb-3 font-weight-bold">
+                <div className="col-lg-5 pl-lg-0">
+                    <h2 className="mb-3 display-3 font-weight-bold">
                         Finally, useful engineering metrics{' '}
                         <span>
                             <i>you</i>
@@ -347,7 +336,7 @@ const CodeInsightsPage: FunctionComponent = () => (
                         and accuracy of Sourcegraph Code Search.
                     </p>
                 </div>
-                <div className="col-lg-7 ml-lg-6 mb-md-4 d-flex align-items-center video-container">
+                <div className="col-lg-7 mb-md-4 pl-lg-5 d-flex align-items-center video-container">
                     <Video
                         source={{ webm: 'code_insights/code-insights-720', mp4: 'code_insights/code-insights-720' }}
                         title="Code Insights"
@@ -438,21 +427,19 @@ const CodeInsightsPage: FunctionComponent = () => (
             </div>
         </ContentSection>
 
-        <div className="bg-light-gray-3">
+        <div className="bg-light-gray-3 py-7">
             <ContentSection>
-                <div className="pt-6 pb-5 pb-lg-0">
-                    <CustomCarousel
-                        items={items}
-                        autoAdvance={true}
-                        showHeadlinesOnMobile={true}
-                        title="How engineering teams use Code Insights" />
-                </div>
+                <CustomCarousel
+                    items={items}
+                    autoAdvance={true}
+                    hasImages={true}
+                    title="How engineering teams use Code Insights" />
             </ContentSection>
         </div>
 
         {/* Demo */}
         <ContentSection className="py-7">
-            <h1 className="mb-3 text-center font-weight-bold">See Code Insights in action</h1>
+            <h2 className="mb-3 display-3 text-center font-weight-bold">See Code Insights in action</h2>
             <div className="row justify-content-center pt-md-4">
                 <div className="col-lg-8">
                     <YouTube id="fMCUJQHfbUA" title="Sourcegraph Code Insights demo" />
@@ -463,42 +450,34 @@ const CodeInsightsPage: FunctionComponent = () => (
         {/* Use Cases */}
         <div className="bg-gradient-venus-radial py-4 d-none d-lg-block d-md-block">
             <ContentSection className="py-4 py-md-7 h-lg-850 h-md-850">
-                <h1 className="mb-2 text-center font-weight-bold">Popular Code Insights templates</h1>
+                <h2 className="mb-5 display-3 text-center font-weight-bold">Popular Code Insights templates</h2>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
-                        <div className="row mt-5">
-                            <div className="w-100 d-flex flex-wrap">
-                                {templates.migrations.map(template => (
-                                    <TemplateCodeBlock key={template.header} template={template} />
-                                ))}
-                            </div>
+                        <div className="w-100 d-flex flex-wrap mt-5">
+                            {templates.migrations.map(template => (
+                                <TemplateCodeBlock key={template.header} template={template} />
+                            ))}
                         </div>
                     </Tab>
                     <Tab eventKey="version-tracking" title="Version Tracking" tabClassName="tab-header">
-                        <div className="row mt-5 justify-content-center">
-                            <div className="w-100 d-flex flex-wrap">
-                                {templates.versionTracking.map(template => (
-                                    <TemplateCodeBlock key={template.header} template={template} />
-                                ))}
-                            </div>
+                        <div className="w-100 d-flex flex-wrap mt-5 justify-content-center">
+                            {templates.versionTracking.map(template => (
+                                <TemplateCodeBlock key={template.header} template={template} />
+                            ))}
                         </div>
                     </Tab>
                     <Tab eventKey="security" title="Security" tabClassName="tab-header">
-                        <div className="row mt-5 justify-content-center">
-                            <div className="w-100 d-flex flex-wrap">
-                                {templates.security.map(template => (
-                                    <TemplateCodeBlock key={template.header} template={template} />
-                                ))}
-                            </div>
+                        <div className="w-100 d-flex flex-wrap mt-5 justify-content-center">
+                            {templates.security.map(template => (
+                                <TemplateCodeBlock key={template.header} template={template} />
+                            ))}
                         </div>
                     </Tab>
                     <Tab eventKey="code-health" title="Code Health" tabClassName="tab-header">
-                        <div className="row mt-5 justify-content-center">
-                            <div className="w-100 d-flex flex-wrap">
-                                {templates.codeHealth.map(template => (
-                                    <TemplateCodeBlock key={template.header} template={template} />
-                                ))}
-                            </div>
+                        <div className="w-100 d-flex flex-wrap mt-5 justify-content-center">
+                            {templates.codeHealth.map(template => (
+                                <TemplateCodeBlock key={template.header} template={template} />
+                            ))}
                         </div>
                     </Tab>
                 </Tabs>
@@ -517,34 +496,26 @@ const CodeInsightsPage: FunctionComponent = () => (
         {/* Use Cases Carousel */}
         <div className="bg-gradient-venus-radial py-4 d-block d-lg-none d-md-none">
             <ContentSection className="py-4 py-md-7">
-                <h1 className="mb-2 text-center">Popular Code Insights templates</h1>
+                <h2 className="mb-5 display-3 font-weight-bold text-center">Popular Code Insights templates</h2>
                 <Tabs defaultActiveKey="migrations" id="use-cases" className="justify-content-center">
                     <Tab eventKey="migrations" title="Migrations" tabClassName="tab-header">
-                        <div className="row mt-5 justify-content-center">
-                            <div className="w-100">
-                                <TabCarousel items={templates.migrations} autoAdvance={true} />
-                            </div>
+                        <div className="w-100 mt-5 justify-content-center">
+                            <TabCarousel items={templates.migrations} autoAdvance={true} />
                         </div>
                     </Tab>
                     <Tab eventKey="version-tracking" title="Version Tracking" tabClassName="tab-header">
-                        <div className="row mt-5 justify-content-center">
-                            <div className="w-100">
-                                <TabCarousel items={templates.versionTracking} autoAdvance={true} />
-                            </div>
+                        <div className="w-100 mt-5 justify-content-center">
+                            <TabCarousel items={templates.versionTracking} autoAdvance={true} />
                         </div>
                     </Tab>
                     <Tab eventKey="security" title="Security" tabClassName="tab-header">
-                        <div className="row mt-5 justify-content-center">
-                            <div className="w-100">
-                                <TabCarousel items={templates.security} autoAdvance={true} />
-                            </div>
+                        <div className="w-100 mt-5 justify-content-center">
+                            <TabCarousel items={templates.security} autoAdvance={true} />
                         </div>
                     </Tab>
                     <Tab eventKey="code-health" title="Code Health" tabClassName="tab-header">
-                        <div className="row mt-5 justify-content-center">
-                            <div className="w-100">
-                                <TabCarousel items={templates.codeHealth} autoAdvance={true} />
-                            </div>
+                        <div className="w-100 mt-5 justify-content-center">
+                            <TabCarousel items={templates.codeHealth} autoAdvance={true} />
                         </div>
                     </Tab>
                 </Tabs>
@@ -564,7 +535,7 @@ const CodeInsightsPage: FunctionComponent = () => (
             <ContentSection>
                 <div className="row d-flex flex-column justify-content-start py-lg-8 py-7">
                     <div className="col-lg-8 mb-5 d-flex flex-column justify-content-start">
-                        <h1 className="font-weight-bold">Get started with Code Insights</h1>
+                        <h2 className="display-3 font-weight-bold">Get started with Code Insights</h2>
                         <p>
                             Create a code insight in 60 seconds and get historical data for previously untracked
                             metrics — data backfills automatically.
@@ -591,7 +562,7 @@ const CodeInsightsPage: FunctionComponent = () => (
         <ContentSection className="py-lg-7 py-5">
             <div className="row d-flex">
                 <div className="col-lg-6">
-                    <h1 className="mb-5 font-weight-bold">Learn more</h1>
+                    <h2 className="mb-5 display-3 font-weight-bold">Learn more</h2>
                 </div>
                 {blogResourceItems.map(item => (
                     <BlogResourceItem key={item.title} blog={item} />
