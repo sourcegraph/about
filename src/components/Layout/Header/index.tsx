@@ -57,10 +57,23 @@ export const Header: FunctionComponent<Props> = props => {
         setLastScrollPosition(scrollPosition)
     }
 
+    // This listens for scroll events to handle the sticky nav
     useEffect(() => {    
       window.addEventListener('scroll', handleScroll)
 
       return () => window.removeEventListener('scroll', handleScroll)
+    })
+
+    /**
+     * This sets a top buffer for the sticky nav's main position by using
+     * the height of the navbar.
+     */
+    useEffect(() => {
+        const nav = document.querySelector('.navbar')
+        const navHeight = nav?.getBoundingClientRect().height || 78
+        const parentElement = nav?.parentElement
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        parentElement!.style.paddingTop = `${navHeight}px`
     })
 
     const navStyle = classNames(
