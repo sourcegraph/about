@@ -31,7 +31,7 @@ After experimentation and great customer feedback, we have decided that a single
 
 ## The future of Sourcegraph Cloud
 
-Today, we are doubling down on our single-tenant, dedicated Sourcegraph solution as our next-gen Sourcegraph Cloud. This solution is available today, and is already in use by a number of our customers; if you’d like to see a demo and get started with Sourcegraph Cloud, [get in contact with a Sourcegraph engineer](https://info.sourcegraph.com/talk-to-a-developer). 
+Moving forward, we are doubling down on our single-tenant, dedicated Sourcegraph solution as our next-gen Sourcegraph Cloud. This solution is available today, and is already in use by a number of our customers; if you’d like to see a demo and get started with Sourcegraph Cloud, [get in contact with a Sourcegraph engineer](https://info.sourcegraph.com/talk-to-a-developer). 
 
 As we invest further in the single-tenant Sourcegraph Cloud, we will also be returning Sourcegraph.com to its original purpose: searching open source code. Doing so will allow us to focus on our Cloud solution and continue rapid development. We will also be sunsetting our beta features on Sourcegraph.com. 
 
