@@ -23,7 +23,7 @@ interface Props {
 const onRightClickLogo = (event: React.MouseEvent): void => {
     event.preventDefault()
 
-    if (event.button === 3) {
+    if (event.button === 2) {
         window.location.href =
             'https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/Sourcegraph%20Brand%20Kit%202.2%20-%20May%202021.zip'
     }
