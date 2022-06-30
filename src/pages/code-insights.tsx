@@ -20,6 +20,7 @@ import {
 import { CodeInsightExampleType } from '@code-insights/types'
 import {
     BlogResourceItem,
+    BlockquoteWithLogoBottom,
     ContentSection,
     CustomCarousel,
     Layout,
@@ -360,29 +361,17 @@ const CodeInsightsPage: FunctionComponent = () => {
             </ContentSection>
 
             <div className="bg-gradient-venus-radial py-4">
-                <ContentSection className="py-lg-6">
-                    <div className="row d-flex text-center justify-content-center px-lg-7 py-6">
-                        <div className="w-100">
-                            <p className="font-weight-bold display-3">Trusted by engineering teams worldwide</p>
-                        </div>
-                        <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
-                            <h4 className="font-weight-normal">
-                                &ldquo;As we've grown, so has the need to better track and communicate our progress and
-                                goals across the engineering team and broader company. With Code Insights, our data and
-                                migration tracking is accurate across our entire codebase, and our engineers and
-                                managers can shift out of manual spreadsheets and spend more time working on
-                                code.&rdquo;
-                            </h4>
-                            <div className="pt-3 text-muted text-center">
-                                &mdash; Balázs Tóthfalussy, Engineering Manager, Prezi
-                            </div>
-                        </blockquote>
-                        <div className="d-flex justify-content-center">
-                            <a href="https://prezi.com" className="btn">
-                                <img src="/external-logos/prezi-logo.svg" width="110px" alt="Prezi" />
-                            </a>
-                        </div>
-                    </div>
+                <ContentSection className="py-lg-6 col-lg-8 text-center">
+                    <BlockquoteWithLogoBottom
+                        header="Trusted by engineering teams worldwide"
+                        quote="As we've grown, so has the need to better track and communicate our progress and
+                        goals across the engineering team and broader company. With Code Insights, our data and
+                        migration tracking is accurate across our entire codebase, and our engineers and
+                        managers can shift out of manual spreadsheets and spend more time working on
+                        code."
+                        author="Balázs Tóthfalussy, Engineering Manager, Prezi"
+                        logo={{ src: '/external-logos/prezi-logo.svg', alt: 'Prezi logo', href: 'https://prezi.com' }}
+                    />
                 </ContentSection>
             </div>
 
