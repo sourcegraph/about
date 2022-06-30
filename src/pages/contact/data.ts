@@ -40,11 +40,6 @@ export const slugData: SlugDataProps = {
         description: 'To start your free Sourcegraph trial, tell us a bit about yourself.',
         masterFormName: 'contactMulti',
     },
-    'talk-to-a-developer': {
-        title: 'Talk to a Developer',
-        description: 'Talk with a Sourcegraph engineer to get help with your installation.',
-        formId: '7e04d4f5-ce13-4125-b1d0-8f6015a520ca',
-    },
     'team-pricing': {
         title: 'Team Pricing',
         description: 'Talk to a product specialist about upgrading to a Team plan.',
