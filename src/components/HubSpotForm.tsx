@@ -35,6 +35,7 @@ interface HubSpotAPIProps {
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
     onFormReady?: ($form: CreateHubSpotFormProps) => void
     onFormSubmitted?: () => void
+    inlineMessage?: string
 }
 
 interface CreateHubSpotFormProps {
@@ -42,6 +43,7 @@ interface CreateHubSpotFormProps {
     formId: string
     onFormReady?: ($form: HTMLFormElement) => void
     onFormSubmitted?: () => void
+    inlineMessage?: string
     chiliPiper?: boolean
 }
 
@@ -49,6 +51,7 @@ export interface HubSpotFormProps {
     formId?: string
     masterFormName?: 'contactMulti' | 'contactEmail' | 'gatedMulti' | 'gatedEmail'
     onFormSubmitted?: () => void
+    inlineMessage?: string
     chiliPiper?: boolean
 }
 
@@ -205,7 +208,7 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
  * @param CreateHubSpotFormProps.onFormReady - callback after form is built
  * @param CreateHubSpotFormProps.onFormSubmitted - callback after data is sent
  */
-function createHubSpotForm({ formId, onFormReady, onFormSubmitted }: CreateHubSpotFormProps): void {
+function createHubSpotForm({ formId, onFormReady, onFormSubmitted, inlineMessage }: CreateHubSpotFormProps): void {
     const script = getScriptElement('hubspot')
 
     // When the HubSpot script is loaded, create the form with the config
@@ -221,6 +224,7 @@ function createHubSpotForm({ formId, onFormReady, onFormSubmitted }: CreateHubSp
                 }
             },
             onFormSubmitted,
+            inlineMessage,
         })
     })
 }
@@ -265,6 +269,7 @@ const onFormReady = (form: HTMLFormElement): void => {
  * @param options.formId - an optional form id
  * @param options.masterFormName - an optional master form name
  * @param options.onFormSubmitted - a callback that runs after a form submission
+ * @param options.inlineMessage - a message to display after a form submission
  * @param options.chiliPiper - a boolean prop to enable/disable ChiliPiper
  * @returns - a div element with an id where the HubSpot form renders
  */
@@ -272,6 +277,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
     formId,
     masterFormName,
     onFormSubmitted,
+    inlineMessage = 'Thank you for your interest in Sourcegraph. We will be in contact with you soon!',
     chiliPiper,
 }: HubSpotFormProps) => {
     const [formCreated, setFormCreated] = useState<boolean>(false)
@@ -292,6 +298,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
                 formId: formId || masterFormId,
                 onFormReady,
                 onFormSubmitted,
+                inlineMessage
             })
 
             setFormCreated(true)
@@ -303,7 +310,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
             removeScriptElement('clearbit')
             removeScriptElement('chilipiper')
         }
-    }, [formId, masterFormName, onFormSubmitted, chiliPiper, formCreated])
+    }, [formId, masterFormName, onFormSubmitted, inlineMessage, chiliPiper, formCreated])
 
     return <div id="form-target" />
 }
