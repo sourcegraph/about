@@ -27,7 +27,7 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
         {header && <h1 className="font-weight-bold">{header}</h1>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
             <h4 className="font-weight-normal">&ldquo;{quote}&rdquo;</h4>
-            {author && <figcaption className="pt-3 text-muted text-center">&mdash; {author}</figcaption>}
+            {author && <figcaption className="pt-3 text-gray-5 text-center">&mdash; {author}</figcaption>}
         </blockquote>
         {logo && (
             <div className="d-flex justify-content-center">
@@ -77,7 +77,7 @@ export const BlockquoteWithLogoTop: FunctionComponent<{
         )}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
             <h2 className="display-3 font-weight-bold">&ldquo;{quote}&rdquo;</h2>
-            {author && <figcaption className="pt-3 text-muted text-center">&mdash; {author}</figcaption>}
+            {author && <figcaption className="pt-3 text-gray-5 text-center">&mdash; {author}</figcaption>}
         </blockquote>
     </>
 )
@@ -94,7 +94,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
         <blockquote className="px-3 mb-5 text-center border-left border-3 border-vermillion">
             {headline && <h4 className="font-weight-bold mb-4">{headline}</h4>}
             <h5 className={`font-weight-${bold ? 'bold' : 'normal'} mb-3`}>&ldquo;{quote}&rdquo;</h5>
-            {author && <figcaption className="text-center text-muted mt-5">&mdash; {author}</figcaption>}
+            {author && <figcaption className="text-center text-gray-5 mt-5">&mdash; {author}</figcaption>}
         </blockquote>
         {logo &&
             (logo.href ? (

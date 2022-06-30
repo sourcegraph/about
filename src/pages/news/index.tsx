@@ -61,7 +61,7 @@ const News: FunctionComponent = () => (
                                         <h6 className="d-inline-block mb-2">{a.newsSource}</h6>{' '}
                                         <time
                                             dateTime={new Date(a.newsDate).toISOString().split('T')[0]}
-                                            className="ml-2 text-muted"
+                                            className="ml-2 text-gray-5"
                                         >
                                             {a.newsDate}
                                         </time>

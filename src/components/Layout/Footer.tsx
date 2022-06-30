@@ -13,11 +13,13 @@ interface Props {
     className?: string
 }
 
-const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
-    <footer className={`${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
-        <div className="container-xl">
-            {!minimal && (
-                <>
+const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
+    const test = ''
+    
+    return (
+        <footer className={`${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
+            <div className="container-xl">
+                {!minimal && (
                     <div className="row footer__nav-sections">
                         <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-2">
                             <h3 className="footer__nav-header">About Sourcegraph</h3>
@@ -163,39 +165,39 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             </ul>
                         </div>
                     </div>
-                </>
-            )}
+                )}
 
-            <div
-                className={`footer__postscript d-flex justify-content-between ${minimal ? 'py-3' : 'pt-4 pb-2'} small`}
-            >
-                <ul className="nav">
-                    <li className="nav-item text-gray-5 mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
-                    <li className="nav-item">
-                        <Link href="/terms" passHref={true}>
-                            <a href="#none" className="nav-link text-gray-5">
-                                Terms
-                            </a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="/terms/security" passHref={true}>
-                            <a href="#none" className="nav-link text-gray-5">
-                                Security
-                            </a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="/terms/privacy" passHref={true}>
-                            <a href="#none" className="nav-link text-gray-5">
-                                Privacy
-                            </a>
-                        </Link>
-                    </li>
-                </ul>
+                <div
+                    className={`footer__postscript d-flex justify-content-between ${minimal ? 'py-3' : 'pt-4 pb-2'} small`}
+                >
+                    <ul className="nav">
+                        <li className="nav-item text-gray-5 mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
+                        <li className="nav-item">
+                            <Link href="/terms" passHref={true}>
+                                <a href="#none" className="nav-link text-gray-5">
+                                    Terms
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="/terms/security" passHref={true}>
+                                <a href="#none" className="nav-link text-gray-5">
+                                    Security
+                                </a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="/terms/privacy" passHref={true}>
+                                <a href="#none" className="nav-link text-gray-5">
+                                    Privacy
+                                </a>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
-)
+        </footer>
+    )
+}
 
 export default Footer
