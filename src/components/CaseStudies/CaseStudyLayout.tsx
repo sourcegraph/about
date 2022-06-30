@@ -6,17 +6,17 @@ import { ContentSection, RequestDemoForm, MediaQuote } from '@components'
 
 import { CaseStudyJumbotron } from './CaseStudyJumbotron'
 
-interface Quote {
+interface QuoteProps {
     text: string
     author: string
     image?: string
 }
 
-interface Props {
+interface CaseStudyLayoutProps {
     customer: string
     title: string
     logo?: string
-    quote?: Quote
+    quote?: QuoteProps
     pdf?: string
     heroImage?: string
     heroLink?: string
@@ -25,7 +25,7 @@ interface Props {
     children?: React.ReactNode
 }
 
-export const CaseStudyLayout: FunctionComponent<Props> = ({
+export const CaseStudyLayout: FunctionComponent<CaseStudyLayoutProps> = ({
     customer,
     title,
     logo,

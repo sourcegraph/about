@@ -2,17 +2,17 @@ import { useEffect } from 'react'
 
 declare global {
     interface Window {
-        ChiliPiper?: IChiliPiper
+        ChiliPiper?: IChiliPiperProps
     }
 }
 
-export interface MessageEventData {
+export interface MessageEventDataProps {
     type: string
     eventName: string
     data: { name: string; value: string }[]
 }
 
-interface IChiliPiper {
+interface IChiliPiperProps {
     submit: (
         domain: string,
         router: string,
@@ -49,7 +49,7 @@ export const useChiliPiper = (): void => {
         const cpTenantDomain = 'sourcegraph'
         const cpRouterName = 'contact-sales'
         window.addEventListener('message', event => {
-            const data = event.data as MessageEventData
+            const data = event.data as MessageEventDataProps
             if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
                 const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
                 const chilipiper = window.ChiliPiper

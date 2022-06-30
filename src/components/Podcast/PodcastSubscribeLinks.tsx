@@ -2,12 +2,12 @@ import { FunctionComponent } from 'react'
 
 import classNames from 'classnames'
 
-interface Props {
+interface PodcastSubscribeLinksProps {
     className?: string
     linkClassName?: string
 }
 
-export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ className = '', linkClassName = '' }) => (
+export const PodcastSubscribeLinks: FunctionComponent<PodcastSubscribeLinksProps> = ({ className = '', linkClassName = '' }) => (
     <div className={className}>
         <span>Subscribe:</span>{' '}
         <a

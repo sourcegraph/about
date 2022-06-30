@@ -1,18 +1,18 @@
 import { MouseEvent } from 'react'
 
-export interface LineChartContent<D extends object, XK extends keyof D> {
+export interface LineChartContentProps<D extends object, XK extends keyof D> {
     chart: 'line'
 
     /** An array of data objects, with one element for each step on the X axis. */
     data: D[]
 
     /** The series (lines) of the chart. */
-    series: LineChartSeries<D>[]
+    series: LineChartSeriesProps<D>[]
 
-    xAxis: ChartAxis<XK, D>
+    xAxis: ChartAxisProps<XK, D>
 }
 
-export interface LineChartSeries<D> {
+export interface LineChartSeriesProps<D> {
     /** The key in each data object for the values this line should be calculated from. */
     dataKey: keyof D
 
@@ -29,7 +29,7 @@ export interface LineChartSeries<D> {
     stroke?: string
 }
 
-export interface ChartAxis<K extends keyof D, D extends object> {
+export interface ChartAxisProps<K extends keyof D, D extends object> {
     /** The key in the data object. */
     dataKey: K
 
@@ -43,24 +43,24 @@ export interface ChartAxis<K extends keyof D, D extends object> {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type YAccessor<Datum> = (data: Datum) => any
 
-export interface LineChartSeriesWithData<Datum> extends LineChartSeries<Datum> {
-    data: Point[]
+export interface LineChartSeriesWithDataProps<Datum> extends LineChartSeriesProps<Datum> {
+    data: PointProps[]
 }
 
-export interface Point {
+export interface PointProps {
     x: Date | number
     y: number | null
 }
 
 /** Accessors map for getting values for x and y axes from datum object */
-export interface Accessors<Datum, Key extends keyof Datum> {
+export interface AccessorsProps<Datum, Key extends keyof Datum> {
     x: (d: Datum) => Date | number
     y: Record<Key, YAccessor<Datum>>
 }
 
-export interface DatumZoneClickEvent {
+export interface DatumZoneClickEventProps {
     originEvent: MouseEvent<unknown>
     link?: string
 }
 
-export type onDatumZoneClick = (event: DatumZoneClickEvent) => void
+export type onDatumZoneClick = (event: DatumZoneClickEventProps) => void

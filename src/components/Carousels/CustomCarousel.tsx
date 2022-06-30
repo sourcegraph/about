@@ -10,27 +10,27 @@ import CircleSmallIcon from 'mdi-react/CircleSmallIcon'
 import { breakpoints } from '@data'
 import { useCarousel, useWindowWidth } from '@hooks'
 
-interface CarouselProps {
-    items: CarouselItem[]
+interface CustomCarouselProps {
+    items: CustomCarouselItemProps[]
     title?: string
-    currentItem?: CarouselItem
-    previousItem?: CarouselItem
+    currentItem?: CustomCarouselItemProps
+    previousItem?: CustomCarouselItemProps
     currentItemIndex?: number
     autoAdvance?: boolean
     hasImages?: boolean
 }
 
-interface CarouselItem {
+interface CustomCarouselItemProps {
     buttonLabel: string
     headerClass?: string
     text: ReactNode
     itemClass: string
 }
 
-export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
+export const CustomCarousel: FunctionComponent<CustomCarouselProps> = props => {
     const { items, autoAdvance, title } = props
     const carouselHook = useCarousel(items, autoAdvance ?? false)
-    const carouselItems = carouselHook.carouselItems.items as CarouselItem[]
+    const carouselItems = carouselHook.carouselItems.items as CustomCarouselItemProps[]
 
     const windowWidth = useWindowWidth()
     const isMdOrDown = windowWidth < breakpoints.lg

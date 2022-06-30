@@ -1,7 +1,7 @@
 /**
  * The features to display for pricing plans.
  */
-export interface Features {
+export interface FeaturesProps {
     codeSearch: boolean
     codeIntelligence: boolean
     batchChanges: boolean
@@ -26,7 +26,7 @@ export interface Features {
     codeInsightsTrial: boolean
 }
 
-export interface FeatureInfo {
+export interface FeatureInfoProps {
     label: string
     url?: string
     description: string

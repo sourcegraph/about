@@ -9,14 +9,14 @@ const COLORS = {
     primary: 'bg-primary text-light',
 }
 
-interface Props {
+interface ContentSectionProps {
     id?: string
     color?: keyof typeof COLORS
     className?: string
     children: ReactNode
 }
 
-export const ContentSection: FunctionComponent<Props> = ({ id = '', color = 'none', className = '', children }) => (
+export const ContentSection: FunctionComponent<ContentSectionProps> = ({ id = '', color = 'none', className = '', children }) => (
     <div id={id} className={COLORS[color]}>
         <section className={`container ${className}`}>{children}</section>
     </div>

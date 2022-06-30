@@ -5,7 +5,7 @@ import { EventHandlerParams, GlyphProps } from '@visx/xychart/lib/types'
 import classNames from 'classnames'
 
 import { getLineStroke } from '../constants'
-import { LineChartSeries, Point } from '../types'
+import { LineChartSeriesProps, PointProps } from '../types'
 
 import { MaybeLink } from './MaybeLink'
 import { dateLabelFormatter } from './TickComponent'
@@ -16,12 +16,12 @@ import styles from './GlyphContent.module.scss'
  * Type for active datum state in LineChartContent component. In order to render active state
  * for hovered or focused point we need to track active datum to calculate styles for active glyph.
  */
-export interface ActiveDatum<Datum extends object> extends EventHandlerParams<Point> {
+export interface ActiveDatumProps<Datum extends object> extends EventHandlerParams<PointProps> {
     /** Series of data of active datum */
-    line?: LineChartSeries<Datum>
+    line?: LineChartSeriesProps<Datum>
 }
 
-interface GlyphContentProps<Datum extends object> extends Omit<GlyphProps<Point>, 'key' | 'index'> {
+interface GlyphContentProps<Datum extends object> extends Omit<GlyphProps<PointProps>, 'key' | 'index'> {
     /**
      * Just because GlyphProps has a bug with types.
      * GlyphProps key is an index of current datum and
@@ -30,10 +30,10 @@ interface GlyphContentProps<Datum extends object> extends Omit<GlyphProps<Point>
     index: string
 
     /** Hovered point info (datum) to calculate proper styles for particular Glyph */
-    hoveredDatum: ActiveDatum<Datum> | null
+    hoveredDatum: ActiveDatumProps<Datum> | null
 
     /** Focused point info (datum) to calculate proper styles for particular Glyph */
-    focusedDatum: ActiveDatum<Datum> | null
+    focusedDatum: ActiveDatumProps<Datum> | null
 
     /** Line (series) index of current point */
     lineIndex: number
@@ -42,10 +42,10 @@ interface GlyphContentProps<Datum extends object> extends Omit<GlyphProps<Point>
     totalNumberOfLines: number
 
     /** Data of particular line of current glyph (chart point) */
-    line: LineChartSeries<Datum>
+    line: LineChartSeriesProps<Datum>
 
     /** Focus handler for glyph (chart point) */
-    setFocusedDatum: (datum: ActiveDatum<Datum> | null) => void
+    setFocusedDatum: (datum: ActiveDatumProps<Datum> | null) => void
 
     /** On click handler for root component of glyph content */
     onClick: MouseEventHandler

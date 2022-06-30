@@ -2,7 +2,7 @@ import { FunctionComponent, ReactNode, ReactFragment } from 'react'
 
 import { Jumbotron } from '@components'
 
-interface Props {
+interface ContentPageProps {
     title: string
     description?: string
     extraDescription?: ReactFragment
@@ -12,7 +12,7 @@ interface Props {
     children?: ReactNode
 }
 
-export const ContentPage: FunctionComponent<Props> = ({
+export const ContentPage: FunctionComponent<ContentPageProps> = ({
     title,
     description,
     extraDescription,

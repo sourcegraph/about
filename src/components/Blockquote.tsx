@@ -5,24 +5,41 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-interface Logo {
+interface LogoProps {
     src: string
     alt: string
     href?: string
 }
 
-interface Link {
+interface LinkProps {
     text: string
     href: string
 }
 
-export const BlockquoteWithLogoBottom: FunctionComponent<{
+interface BlockquoteWithLogoBottomProps {
     quote: string
     header?: string
     author?: string | ReactFragment
-    logo?: Logo
-    link?: Link
-}> = ({ quote, header, author, logo, link }) => (
+    logo?: LogoProps
+    link?: LinkProps
+}
+
+interface BlockquoteWithLogoTopProps {
+    quote: string
+    author?: string | ReactFragment
+    logo?: LogoProps
+}
+
+interface BlockquoteWithBorderProps {
+    quote: string
+    author?: string | ReactFragment
+    logo?: LogoProps
+    link?: LinkProps
+    headline?: string
+    bold?: boolean
+}
+
+export const BlockquoteWithLogoBottom: FunctionComponent<BlockquoteWithLogoBottomProps> = ({ quote, header, author, logo, link }) => (
     <>
         {header && <h1 className="font-weight-bold">{header}</h1>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
@@ -58,11 +75,7 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
     </>
 )
 
-export const BlockquoteWithLogoTop: FunctionComponent<{
-    quote: string
-    author?: string | ReactFragment
-    logo?: Logo
-}> = ({ quote, author, logo }) => (
+export const BlockquoteWithLogoTop: FunctionComponent<BlockquoteWithLogoTopProps> = ({ quote, author, logo }) => (
     <>
         {logo && (
             <div className="d-flex justify-content-center">
@@ -82,14 +95,7 @@ export const BlockquoteWithLogoTop: FunctionComponent<{
     </>
 )
 
-export const BlockquoteWithBorder: FunctionComponent<{
-    quote: string
-    author?: string | ReactFragment
-    logo?: Logo
-    link?: Link
-    headline?: string
-    bold?: boolean
-}> = ({ quote, author, logo, headline, link, bold }) => (
+export const BlockquoteWithBorder: FunctionComponent<BlockquoteWithBorderProps> = ({ quote, author, logo, headline, link, bold }) => (
     <>
         <blockquote className="px-3 mb-5 text-center border-left border-3 border-vermillion">
             {headline && <h4 className="font-weight-bold mb-4">{headline}</h4>}

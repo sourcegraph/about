@@ -6,21 +6,21 @@ import { CaseStudyJumbotron, ContentSection, RequestDemoTrySourcegraph, Blockquo
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
 
-interface Quote {
+interface QuoteProps {
     text: string
     author: string
 }
 
-interface Logo {
+interface LogoProps {
     img: string
     href: string
 }
 
-interface Props {
+interface NewCaseStudyLayoutProps {
     customer: string
     title: string
-    logo?: Logo
-    quote?: Quote
+    logo?: LogoProps
+    quote?: QuoteProps
     pdf?: string
     heroImage?: string
     heroLink?: string
@@ -29,7 +29,7 @@ interface Props {
     children?: React.ReactNode
 }
 
-export const NewCaseStudyLayout: FunctionComponent<Props> = ({
+export const NewCaseStudyLayout: FunctionComponent<NewCaseStudyLayoutProps> = ({
     customer,
     title,
     logo,

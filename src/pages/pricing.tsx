@@ -2,11 +2,11 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { ContentSection, Layout, PricingPlan, PricingPlanFeature, PricingPlanProperty, Features } from '@components'
+import { ContentSection, Layout, PricingPlan, PricingPlanFeature, PricingPlanProperty, FeaturesProps } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 /** The Starter feature set. */
-const STARTER_FEATURES: Features = {
+const STARTER_FEATURES: FeaturesProps = {
     codeSearch: true,
     codeIntelligence: true,
     batchChanges: false,
@@ -32,9 +32,9 @@ const STARTER_FEATURES: Features = {
 }
 
 /** The Team feature set. */
-const TEAM_FEATURES: Features = { ...STARTER_FEATURES, singleSignOn: false, userAndAdminRoles: true }
+const TEAM_FEATURES: FeaturesProps = { ...STARTER_FEATURES, singleSignOn: false, userAndAdminRoles: true }
 
-const ENTERPRISE_FEATURES: Features = {
+const ENTERPRISE_FEATURES: FeaturesProps = {
     codeSearch: false,
     codeIntelligence: false,
     codeHostIntegration: false,

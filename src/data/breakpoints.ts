@@ -1,9 +1,9 @@
-interface Breakpoints {
+interface BreakpointsProps {
     [name: string]: number
 }
 
 // Bootstrap breakpoints
-export const breakpoints: Breakpoints = {
+export const breakpoints: BreakpointsProps = {
     xs: 0,
     sm: 576,
     md: 768,

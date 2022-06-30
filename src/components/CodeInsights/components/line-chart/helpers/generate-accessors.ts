@@ -1,14 +1,14 @@
 import { EMPTY_DATA_POINT_VALUE } from '../constants'
-import { ChartAxis, Accessors } from '../types'
+import { ChartAxisProps, AccessorsProps } from '../types'
 
 /**
  * Returns accessors map which allows charts to get right values from datum object
  * One accessor for x - time axis and a map for different series of data for y axis
  */
 export function generateAccessors<Datum extends object>(
-    xAxis: ChartAxis<keyof Datum, Datum>,
+    xAxis: ChartAxisProps<keyof Datum, Datum>,
     series: { dataKey: keyof Datum }[]
-): Accessors<Datum, keyof Datum> {
+): AccessorsProps<Datum, keyof Datum> {
     const { dataKey: xDataKey, scale = 'time' } = xAxis
 
     return {

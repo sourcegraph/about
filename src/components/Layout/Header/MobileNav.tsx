@@ -6,15 +6,15 @@ import Link from 'next/link'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import { NavLink } from './navLinks'
+import { NavLinkProps } from './navLinks'
 
-interface Props {
-    navLinks: NavLink[]
+interface MobileNavProps {
+    navLinks: NavLinkProps[]
     hideGetStartedButton: boolean | undefined
     isOpen: boolean
 }
 
-const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, isOpen }) => {
+const MobileNav: FunctionComponent<MobileNavProps> = ({ navLinks, hideGetStartedButton, isOpen }) => {
     const initialMobileMenuState = navLinks.reduce(
         (accumulator, navLink) => ({ ...accumulator, [camelCase(navLink.section)]: false }),
         {}

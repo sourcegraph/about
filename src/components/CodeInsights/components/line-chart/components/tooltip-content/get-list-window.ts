@@ -1,4 +1,4 @@
-export interface ListWindow<T> {
+export interface ListWindowProps<T> {
     window: T[]
     leftRemaining: number
     rightRemaining: number
@@ -13,7 +13,7 @@ export interface ListWindow<T> {
  * result 3,4,5 because 1,2, * 3, 4, 5 * 6, 7
  * remaining left 2 (1,2) remaining right 2 (6, 7)
  */
-export function getListWindow<T>(list: T[], index: number, size: number): ListWindow<T> {
+export function getListWindow<T>(list: T[], index: number, size: number): ListWindowProps<T> {
     if (list.length < size) {
         return { window: list, leftRemaining: 0, rightRemaining: 0 }
     }

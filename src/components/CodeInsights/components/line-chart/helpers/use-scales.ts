@@ -6,23 +6,23 @@ import { PickScaleConfigWithoutType } from '@visx/scale/lib/types/ScaleConfig'
 import { ScaleTime } from 'd3-scale'
 
 import { LineChartSettingsContext } from '../line-chart-settings-provider'
-import { Accessors } from '../types'
+import { AccessorsProps } from '../types'
 
 import { getMinAndMax } from './get-min-max'
 
-interface ScalesConfiguration {
+interface ScalesConfigurationProps {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     x: ScaleConfig<AxisScaleOutput, any, any>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     y: ScaleConfig<AxisScaleOutput, any, any>
 }
 
-export interface UseScalesConfiguration<Datum> {
+export interface UseScalesConfigurationProps<Datum> {
     /**
      * D3 scales configuration
      * See https://github.com/d3/d3-scale#continuous_domain
      */
-    config: ScalesConfiguration
+    config: ScalesConfigurationProps
 
     /**
      * Dataset with all series (lines) of chart
@@ -32,10 +32,10 @@ export interface UseScalesConfiguration<Datum> {
     /**
      * Accessors map to get (x, y) value from datum objects
      */
-    accessors: Accessors<Datum, keyof Datum>
+    accessors: AccessorsProps<Datum, keyof Datum>
 }
 
-export function useScalesConfiguration<Datum>(props: UseScalesConfiguration<Datum>): ScalesConfiguration {
+export function useScalesConfiguration<Datum>(props: UseScalesConfigurationProps<Datum>): ScalesConfigurationProps {
     const { config, data, accessors } = props
     const { zeroYAxisMin } = useContext(LineChartSettingsContext)
 
@@ -92,7 +92,7 @@ interface UseXScalesProps<Datum> {
     config: ScaleConfig<AxisScaleOutput, any, any>
 
     /** Accessors map to get value from datum object */
-    accessors: Accessors<Datum, keyof Datum>
+    accessors: AccessorsProps<Datum, keyof Datum>
 
     /** Chart width in px */
     width: number

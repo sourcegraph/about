@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-interface YouTube {
+interface YouTubeProps {
     className?: string
     id: string
     title: string
@@ -18,7 +18,7 @@ interface YouTube {
  * A responsive YouTube video player.
  * See https://developers.google.com/youtube/player_parameters for options.
  */
-export const YouTube: FunctionComponent<YouTube> = ({
+export const YouTube: FunctionComponent<YouTubeProps> = ({
     className = '',
     id,
     title,

@@ -6,14 +6,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 import { buttonStyle, buttonLocation } from '@data'
 
-import { NavLink } from './navLinks'
+import { NavLinkProps } from './navLinks'
 
-interface Props {
-    navLinks: NavLink[]
+interface DesktopNavProps {
+    navLinks: NavLinkProps[]
     hideGetStartedButton: boolean | undefined
 }
 
-const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }) => (
+const DesktopNav: FunctionComponent<DesktopNavProps> = ({ navLinks, hideGetStartedButton }) => (
     <>
         <Nav className="left-nav me-auto ml-md-2">
             {navLinks.map(navLink =>

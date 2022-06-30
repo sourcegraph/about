@@ -20,7 +20,7 @@ import { EventHandlerParams } from '@visx/xychart/lib/types'
 import classNames from 'classnames'
 import { noop } from 'rxjs'
 
-import { ActiveDatum, GlyphContent } from './components/GlyphContent'
+import { ActiveDatumProps, GlyphContent } from './components/GlyphContent'
 import { dateTickFormatter, numberFormatter, Tick, getTickXProps, getTickYProps } from './components/TickComponent'
 import { TooltipContent } from './components/tooltip-content/TooltipContent'
 import { getLineStroke } from './constants'
@@ -30,7 +30,7 @@ import { getYAxisWidth } from './helpers/get-y-axis-width'
 import { getYTicks } from './helpers/get-y-ticks'
 import { usePointerEventEmitters } from './helpers/use-event-emitters'
 import { useScalesConfiguration, useXScale, useYScale } from './helpers/use-scales'
-import { LineChartContent as LineChartContentType, onDatumZoneClick, Point } from './types'
+import { LineChartContentProps as LineChartContentType, onDatumZoneClick, PointProps } from './types'
 
 import styles from './LineChartContent.module.scss'
 
@@ -122,17 +122,17 @@ export function LineChartContent<Datum extends object>(props: LineChartContentPr
     )
 
     // state
-    const [hoveredDatum, setHoveredDatum] = useState<ActiveDatum<Datum> | null>(null)
-    const [focusedDatum, setFocusedDatum] = useState<ActiveDatum<Datum> | null>(null)
+    const [hoveredDatum, setHoveredDatum] = useState<ActiveDatumProps<Datum> | null>(null)
+    const [focusedDatum, setFocusedDatum] = useState<ActiveDatumProps<Datum> | null>(null)
 
     // callbacks
     const renderTooltip = useCallback(
-        (renderProps: RenderTooltipParams<Point>) => <TooltipContent {...renderProps} series={seriesWithData} />,
+        (renderProps: RenderTooltipParams<PointProps>) => <TooltipContent {...renderProps} series={seriesWithData} />,
         [seriesWithData]
     )
 
     const handlePointerMove = useCallback(
-        (event: EventHandlerParams<Point>) => {
+        (event: EventHandlerParams<PointProps>) => {
             // If active point hasn't been change we shouldn't call setActiveDatum again
             if (hoveredDatum?.index === event.index && hoveredDatum?.key === event.key) {
                 return
@@ -154,7 +154,7 @@ export function LineChartContent<Datum extends object>(props: LineChartContentPr
     )
 
     const handlePointerUp = useCallback(
-        (info: EventHandlerParams<Point>) => {
+        (info: EventHandlerParams<PointProps>) => {
             info.event?.persist()
 
             // According to types from visx/xychart index can be undefined

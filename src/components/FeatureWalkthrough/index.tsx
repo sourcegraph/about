@@ -15,26 +15,26 @@ import codeIntelWebm from './animations/code-intel.webm'
 import codeSearchMp4 from './animations/code-search.mp4'
 import codeSearchWebm from './animations/code-search.webm'
 
-interface Video {
+interface VideoProps {
     mp4: string
     webm: string
 }
 
-interface VideoElement {
+interface VideoElementProps {
     el: HTMLVideoElement | null
     paused: boolean
 }
 
-interface Features {
+interface FeaturesProps {
     productFeature: string
     title: string
     description: string | ReactFragment
     details: string[]
     ctaLink: string
-    video: Video
+    video: VideoProps
 }
 
-export const features: Features[] = [
+export const features: FeaturesProps[] = [
     {
         productFeature: 'code search',
         title: 'Find what you need: any code host, language, or repository',
@@ -108,7 +108,7 @@ export const features: Features[] = [
 export const FeatureWalkthrough: FunctionComponent = () => {
     useEffect(() => {
         const videos = features.map(
-            (vid, index): VideoElement => ({
+            (vid, index): VideoElementProps => ({
                 el: document.querySelector(`.video-${index}`),
                 paused: true,
             })

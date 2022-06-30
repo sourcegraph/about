@@ -2,7 +2,7 @@ import { FocusEventHandler, MouseEventHandler, useCallback } from 'react'
 
 import { useEventEmitter } from '@visx/xychart'
 
-interface PointerEventEmitterParameters {
+interface PointerEventEmitterParametersProps {
     /** Source of the events, e.g., the component name. */
     source: string
     onBlur?: boolean
@@ -12,7 +12,7 @@ interface PointerEventEmitterParameters {
     onPointerUp?: boolean
 }
 
-interface PointerEventEmitterOutput {
+interface PointerEventEmitterOutputProps {
     onPointerMove?: MouseEventHandler
     onFocus?: FocusEventHandler
     onBlur?: FocusEventHandler
@@ -31,7 +31,7 @@ export function usePointerEventEmitters({
     onPointerUp = true,
     onFocus = false,
     onBlur = false,
-}: PointerEventEmitterParameters): PointerEventEmitterOutput {
+}: PointerEventEmitterParametersProps): PointerEventEmitterOutputProps {
     const emit = useEventEmitter()
 
     const emitPointerMove = useCallback(

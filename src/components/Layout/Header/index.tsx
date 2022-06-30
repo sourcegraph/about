@@ -8,16 +8,16 @@ import { useWindowWidth } from '@hooks'
 
 import DesktopNav from './DesktopNav'
 import MobileNav from './MobileNav'
-import { NavLink, navLinks } from './navLinks'
+import { NavLinkProps, navLinks } from './navLinks'
 
-interface Props {
+interface HeaderProps {
     isHome?: boolean
     isBlog?: boolean
     isProductPage?: boolean
     minimal?: boolean
     className?: string
     hideGetStartedButton?: boolean
-    navLinks: NavLink[]
+    navLinks: NavLinkProps[]
 }
 
 const onRightClickLogo = (event: React.MouseEvent): void => {
@@ -29,7 +29,7 @@ const onRightClickLogo = (event: React.MouseEvent): void => {
     }
 }
 
-export const Header: FunctionComponent<Props> = props => {
+export const Header: FunctionComponent<HeaderProps> = props => {
     const [isOpen, setIsOpen] = useState(false)
     const windowWidth = useWindowWidth()
     const isLgOrDown = windowWidth < breakpoints.xl

@@ -1,4 +1,4 @@
-import { Accessors, Point, LineChartSeriesWithData, LineChartSeries } from '../types'
+import { AccessorsProps, PointProps, LineChartSeriesWithDataProps, LineChartSeriesProps } from '../types'
 
 interface GetProcessedChartDataProps<Datum extends object> {
     data: Datum[]
@@ -6,16 +6,16 @@ interface GetProcessedChartDataProps<Datum extends object> {
     /**
      * Accessors map to get (x, y) value from datum objects
      */
-    accessors: Accessors<Datum, keyof Datum>
+    accessors: AccessorsProps<Datum, keyof Datum>
 
-    series: LineChartSeries<Datum>[]
+    series: LineChartSeriesProps<Datum>[]
 }
 
-interface ProcessedChartData<Datum extends object> {
+interface ProcessedChartDataProps<Datum extends object> {
     /**
      * List of processed data series data for each data series line.
      */
-    seriesWithData: LineChartSeriesWithData<Datum>[]
+    seriesWithData: LineChartSeriesWithDataProps<Datum>[]
 
     sortedData: Datum[]
 }
@@ -38,7 +38,7 @@ interface ProcessedChartData<Datum extends object> {
  */
 export function getProcessedChartData<Datum extends object>(
     props: GetProcessedChartDataProps<Datum>
-): ProcessedChartData<Datum> {
+): ProcessedChartDataProps<Datum> {
     const { data, series, accessors } = props
 
     // In case if we've got unsorted by x (time) axis dataset we have to sort that by ourselves
@@ -50,7 +50,7 @@ export function getProcessedChartData<Datum extends object>(
 
     const seriesWithData = series
         // Separate datum object by series lines
-        .map<LineChartSeriesWithData<Datum>>(line => ({
+        .map<LineChartSeriesWithDataProps<Datum>>(line => ({
             ...line,
             // Filter select series data from the datum object and process this points array
             data: getFilteredSeriesData(
@@ -86,7 +86,7 @@ export function getProcessedChartData<Datum extends object>(
  *
  * @param data - Series data list
  */
-function getFilteredSeriesData<Datum>(data: Point[]): Point[] {
+function getFilteredSeriesData<Datum>(data: PointProps[]): PointProps[] {
     const firstNonNullablePointIndex = Math.max(
         data.findIndex(datum => datum.y !== null),
         0

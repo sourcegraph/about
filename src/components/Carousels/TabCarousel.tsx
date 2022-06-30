@@ -9,14 +9,14 @@ import { useCarousel } from '@hooks'
 import { TemplateCodeBlock } from '../TemplateCodeBlock'
 
 interface TabCarouselProps {
-    items: Template[]
+    items: TemplateProps[]
     currentItem?: ReactNode
     previousItem?: ReactNode
     currentItemIndex?: number
     autoAdvance?: boolean
 }
 
-interface Template {
+interface TemplateProps {
     header: string
     description: string
     queries: ReactNode[]
@@ -24,7 +24,7 @@ interface Template {
 
 export const TabCarousel: FunctionComponent<TabCarouselProps> = ({ items, autoAdvance }) => {
     const carouselHook = useCarousel(items, autoAdvance ?? false)
-    const carouselItems = carouselHook.carouselItems.items as Template[]
+    const carouselItems = carouselHook.carouselItems.items as TemplateProps[]
 
     return (
         <div className="tab-carousel">

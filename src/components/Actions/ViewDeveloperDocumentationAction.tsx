@@ -2,13 +2,13 @@ import { FunctionComponent } from 'react'
 
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 
-interface Props {
+interface ViewDeveloperDocumentationActionProps {
     className?: string
     url?: string
     children?: React.ReactNode
 }
 
-export const ViewDeveloperDocumentationAction: FunctionComponent<Props> = ({
+export const ViewDeveloperDocumentationAction: FunctionComponent<ViewDeveloperDocumentationActionProps> = ({
     className = '',
     url = 'https://docs.sourcegraph.com/',
     children = 'Read the docs and install',

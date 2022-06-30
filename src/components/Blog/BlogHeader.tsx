@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 import { BlogTypeInfo } from '@interfaces/posts'
 
-interface Props extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> {}
+interface BlogHeaderProps extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> {}
 
-export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUrl }) => (
+export const BlogHeader: FunctionComponent<BlogHeaderProps> = ({ title, belowTitle, baseUrl }) => (
     <div>
         <h1 className="display-4 font-weight-bold mt-3">
             <Link href={baseUrl} passHref={true}>

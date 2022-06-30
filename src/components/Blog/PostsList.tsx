@@ -8,11 +8,11 @@ import {
     blogType,
 } from '@interfaces/posts'
 
-interface Props {
+interface PostsListProps {
     posts: PostIndexItemProps[]
 }
 
-export const PostsList: FunctionComponent<Props> = ({ posts }) => {
+export const PostsList: FunctionComponent<PostsListProps> = ({ posts }) => {
     const postProps: Omit<PostComponentProps, 'post' | 'url'> = {
         className: 'posts-list__post card',
         headerClassName: 'card-header bg-white border-bottom-0 text-center',

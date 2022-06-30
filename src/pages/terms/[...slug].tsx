@@ -4,13 +4,13 @@ import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 import { Layout, EmbeddedHubSpot } from '@components'
-import { Page } from '@interfaces/posts'
+import { PageProps } from '@interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
 export type Components = import('mdx/types').MDXComponents
 
-export interface PageProps {
-    page?: Page
+export interface TermPageProps {
+    page?: PageProps
     content?: MDXRemoteSerializeResult
 }
 
@@ -18,7 +18,7 @@ const CONTENT_PARENT_DIRECTORY = './content/'
 
 const components = { EmbeddedHubSpot }
 
-const TermPage: NextPage<PageProps> = ({ page, content }) => (
+const TermPage: NextPage<TermPageProps> = ({ page, content }) => (
     <Layout>
         <section className="content-page__title">{page && <h1>{page.frontmatter.title}</h1>}</section>
         <section className="content-page__body">
@@ -54,7 +54,7 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false }
     const fileSlug = `${(params.slug as string[]).join('/')}`
     const filePath = files.records[fileSlug].filePath
 
-    const page = (await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, filePath))) as Page
+    const page = (await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, filePath))) as PageProps
     const content = await serializeMdxSource(page.content)
 
     return {

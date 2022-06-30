@@ -4,11 +4,11 @@ import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 import { Layout, BlogHeader, BLOG_TYPE_TO_INFO } from '@components'
-import { Post, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '@interfaces/posts'
+import { PostProps, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '@interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
 export interface PageProps {
-    post: Post
+    post: PostProps
     content: MDXRemoteSerializeResult
 }
 
@@ -85,7 +85,7 @@ export const getStaticProps: GetStaticProps = async ({ params, preview = false }
     }
     const fileSlug = `${(params.slug as string[]).join('/')}`
     const filePath = files.records[fileSlug].filePath
-    const post = (await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, filePath))) as Post
+    const post = (await loadMarkdownFile(path.resolve(CONTENT_PARENT_DIRECTORY, filePath))) as PostProps
     const content = await serializeMdxSource(post.content)
 
     return {

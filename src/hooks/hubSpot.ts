@@ -13,7 +13,7 @@ declare global {
                     onFormSubmit,
                     onFormSubmitted,
                     onFormReady,
-                }: HubSpotProps) => HubSpotForm
+                }: HubSpotProps) => HubSpotFormProps
             }
         }
     }
@@ -26,11 +26,11 @@ interface HubSpotProps {
     target: string
     formInstanceId?: string
     onFormSubmit?: (object: { data: { name: string; value: string }[] }) => void
-    onFormReady?: ($form: HubSpotForm) => void
+    onFormReady?: ($form: HubSpotFormProps) => void
     onFormSubmitted?: () => void
 }
 
-export interface HubSpotForm {
+export interface HubSpotFormProps {
     region?: string
     [index: number]: HTMLFormElement
     portalId: string
@@ -106,7 +106,7 @@ async function createHubSpotForm({
     onFormSubmit,
     onFormSubmitted,
     onFormReady,
-}: HubSpotForm): Promise<void> {
+}: HubSpotFormProps): Promise<void> {
     const getAllCookies: { [index: string]: string } = document.cookie
         .split(';')
         .reduce((key, string) => Object.assign(key, { [string.split('=')[0].trim()]: string.split('=')[1] }), {})
@@ -126,7 +126,7 @@ async function createHubSpotForm({
             target: `#${targetId}`,
             onFormSubmit,
             onFormSubmitted,
-            onFormReady: (form: HubSpotForm) => {
+            onFormReady: (form: HubSpotFormProps) => {
                 if (form) {
                     // Populate hidden form fields with values stored in cookies
                     const anonymousIdInput = form[0].querySelector(

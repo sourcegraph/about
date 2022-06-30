@@ -1,9 +1,9 @@
 import { ReactFragment, FunctionComponent } from 'react'
 
-import { Features, FeatureInfo } from './interfaces'
+import { FeaturesProps, FeatureInfoProps } from './interfaces'
 import { PricingPlanFeature } from './PricingPlanFeature'
 
-const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
+const FEATURE_INFO: Record<keyof FeaturesProps, FeatureInfoProps> = {
     codeSearch: {
         label: 'Code search',
         description:
@@ -104,7 +104,7 @@ const FEATURE_INFO: Record<keyof Features, FeatureInfo> = {
     },
 }
 
-const FEATURE_ORDER: (keyof Features)[] = [
+const FEATURE_ORDER: (keyof FeaturesProps)[] = [
     'codeSearch',
     'codeIntelligence',
     'codeHostIntegration',
@@ -129,13 +129,13 @@ const FEATURE_ORDER: (keyof Features)[] = [
     'customContractLegalBillingTerms',
 ]
 
-interface Props {
+interface PricingPlanProps {
     className?: string
 
     name: string
     planProperties: ReactFragment
     price: ReactFragment
-    features: Features
+    features: FeaturesProps
 
     isFree: boolean
 
@@ -148,7 +148,7 @@ interface Props {
 /**
  * A pricing plan on the pricing page.
  */
-export const PricingPlan: FunctionComponent<Props> = ({
+export const PricingPlan: FunctionComponent<PricingPlanProps> = ({
     className = '',
 
     name,

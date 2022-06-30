@@ -1,13 +1,13 @@
 import { FunctionComponent } from 'react'
 
-interface Props {
+interface InContentImageProps {
     src: string
     alt: string
     className?: string
     caption?: string
 }
 
-export const InContentImage: FunctionComponent<Props> = ({ src, caption, alt, className }) => (
+export const InContentImage: FunctionComponent<InContentImageProps> = ({ src, caption, alt, className }) => (
     <figure>
         <img src={src} className={className} alt={alt} />
         {caption && <figcaption className="blockquote-footer">{caption}</figcaption>}

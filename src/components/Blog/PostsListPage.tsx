@@ -4,13 +4,13 @@ import { Layout, BlogHeader, PostsList } from '@components'
 import { useLoadMore } from '@hooks'
 import { BlogTypeInfo, PostIndexItemProps } from '@interfaces/posts'
 
-interface Props {
+interface PostsListPageProps {
     blogInfo: BlogTypeInfo
     posts: PostIndexItemProps[]
     allPosts: PostIndexItemProps[]
 }
 
-export const PostsListPage: FunctionComponent<Props> = ({ allPosts, blogInfo, posts, children }) => {
+export const PostsListPage: FunctionComponent<PostsListPageProps> = ({ allPosts, blogInfo, posts, children }) => {
     const loadMoreHook = useLoadMore(allPosts, 1, posts)
 
     return (

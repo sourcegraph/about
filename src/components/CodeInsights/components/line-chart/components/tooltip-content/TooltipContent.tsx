@@ -3,9 +3,9 @@ import React, { ReactElement, useMemo } from 'react'
 import { RenderTooltipParams } from '@visx/xychart/lib/components/Tooltip'
 
 import { getLineStroke } from '../../constants'
-import { LineChartSeriesWithData, Point } from '../../types'
+import { LineChartSeriesWithDataProps, PointProps } from '../../types'
 
-import { getListWindow, ListWindow } from './get-list-window'
+import { getListWindow, ListWindowProps } from './get-list-window'
 
 import styles from './TooltipContent.module.scss'
 
@@ -15,9 +15,9 @@ function isDefined<T>(value: T): value is NonNullable<T> {
     return value !== undefined && value !== null
 }
 
-export interface TooltipContentProps<Datum extends object> extends RenderTooltipParams<Point> {
+export interface TooltipContentProps<Datum extends object> extends RenderTooltipParams<PointProps> {
     /** Dataset of series (lines) on the chart. */
-    series: LineChartSeriesWithData<Datum>[]
+    series: LineChartSeriesWithDataProps<Datum>[]
 }
 
 /**
@@ -29,7 +29,7 @@ export function TooltipContent<Datum extends object>(props: TooltipContentProps<
     const datum = tooltipData?.nearestDatum?.datum
     const nearestSeriesKey = tooltipData?.nearestDatum?.key
 
-    const lines = useMemo<ListWindow<LineChartSeriesWithData<Datum> & { point: Point }>>(() => {
+    const lines = useMemo<ListWindowProps<LineChartSeriesWithDataProps<Datum> & { point: PointProps }>>(() => {
         if (!datum) {
             return { window: [], leftRemaining: 0, rightRemaining: 0 }
         }

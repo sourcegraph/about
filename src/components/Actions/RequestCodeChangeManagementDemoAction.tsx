@@ -2,12 +2,12 @@ import { FunctionComponent } from 'react'
 
 import { SubmitEmailForm } from './SubmitEmailForm'
 
-interface Props {
+interface RequestCodeChangeManagementDemoActionProps {
     className?: string
     now?: boolean
 }
 
-export const RequestCodeChangeManagementDemoAction: FunctionComponent<Props> = ({
+export const RequestCodeChangeManagementDemoAction: FunctionComponent<RequestCodeChangeManagementDemoActionProps> = ({
     className = '',
     now = false,
 }): JSX.Element => {

@@ -2,13 +2,13 @@ import { FunctionComponent } from 'react'
 
 import { ContentSection } from '@components'
 
-interface Props {
+interface RequestDemoFormProps {
     title?: string
     description?: string
     demoFormURL?: string
 }
 
-export const RequestDemoForm: FunctionComponent<Props> = ({
+export const RequestDemoForm: FunctionComponent<RequestDemoFormProps> = ({
     title = 'See Sourcegraph in action.',
     description = 'Learn how companies of all sizes and in all industries use Sourcegraph to solve big code problems.',
     demoFormURL = '/demo',

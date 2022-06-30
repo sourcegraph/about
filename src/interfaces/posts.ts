@@ -22,8 +22,8 @@ export enum PostIndexType {
     PressReleaseIndex,
 }
 
-export interface Post {
-    frontmatter: FrontMatter
+export interface PostProps {
+    frontmatter: FrontMatterProps
     content: string
     excerpt?: string
     fileAbsolutePath?: string
@@ -34,7 +34,7 @@ export interface Post {
     }
 }
 
-export interface FrontMatter {
+export interface FrontMatterProps {
     slug?: string
     title?: string
     description?: string
@@ -63,7 +63,7 @@ export interface FrontMatter {
 }
 
 export interface PostComponentProps {
-    post: Post
+    post: PostProps
     content: MDXRemoteSerializeResult | null
 
     /** The URL to the post. */
@@ -84,7 +84,7 @@ export interface PostIndexComponentProps {
 }
 
 export interface PostIndexItemProps {
-    frontmatter: FrontMatter
+    frontmatter: FrontMatterProps
     excerpt: string | MDXRemoteSerializeResult
     slugPath: string
     className?: string
@@ -111,7 +111,7 @@ export const POST_INDEX_TYPE_TO_COMPONENT: Record<PostIndexType, FunctionCompone
     [PostIndexType.PressReleaseIndex]: PostListItem,
 }
 
-export const postType = (post: Post): PostType =>
+export const postType = (post: PostProps): PostType =>
     post.frontmatter.tags?.includes('release')
         ? PostType.ReleasePost
         : post.frontmatter.tags?.includes('press')
@@ -122,7 +122,7 @@ export const postType = (post: Post): PostType =>
         ? PostType.LinkPost
         : PostType.BlogPost
 
-export const postIndexType = (frontmatter: FrontMatter): PostIndexType =>
+export const postIndexType = (frontmatter: FrontMatterProps): PostIndexType =>
     frontmatter.tags?.includes('podcast')
         ? PostIndexType.PodcastIndex
         : frontmatter.tags?.includes('press')
@@ -135,7 +135,7 @@ export enum BlogType {
     Blog = 'blog',
 }
 
-export const blogType = (frontmatter: FrontMatter): BlogType =>
+export const blogType = (frontmatter: FrontMatterProps): BlogType =>
     frontmatter.tags?.includes('podcast')
         ? BlogType.Podcast
         : frontmatter.tags?.includes('press')
@@ -149,14 +149,14 @@ export interface BlogTypeInfo {
     meta: { title: string; description: string; image?: string }
 }
 
-export const urlToPost = (post: Post): string =>
+export const urlToPost = (post: PostProps): string =>
     post.frontmatter.style === 'short-inline-title' && post.frontmatter.canonical
         ? post.frontmatter.canonical
         : post.frontmatter.slug
         ? post.frontmatter.slug
         : '/blog'
 
-export interface Page {
-    frontmatter: FrontMatter
+export interface PageProps {
+    frontmatter: FrontMatterProps
     content: string
 }

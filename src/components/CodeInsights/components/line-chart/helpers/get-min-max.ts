@@ -1,9 +1,9 @@
-import { Accessors } from '../types'
+import { AccessorsProps } from '../types'
 
 /** Returns minimal and maximal value from data series */
 export function getMinAndMax<Datum, Key extends keyof Datum>(
     data: Datum[],
-    accessors: Accessors<Datum, Key>
+    accessors: AccessorsProps<Datum, Key>
 ): [number, number] {
     const keys = Object.keys(accessors.y) as Key[]
 

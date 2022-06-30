@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import { ContentSection } from '@components'
 import { breakpoints } from '@data'
-import { useWindowWidth, useHubSpot, HubSpotForm } from '@hooks'
+import { useWindowWidth, useHubSpot, HubSpotFormProps } from '@hooks'
 
 import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
 import guideBg from './assets/hero/bg-code-aquamarine.png'
@@ -14,37 +14,37 @@ import webinarBg from './assets/hero/bg-code-mars.png'
 import defaultMobileBg from './assets/hero/bg-code-venus-mobile.png'
 import defaultBg from './assets/hero/bg-code-venus.png'
 
-interface Customer {
+interface CustomerProps {
     name: string
     logo: string
 }
 
-interface Speaker {
+interface SpeakerProps {
     name: string
     title: string
     img: string
     bio: string
 }
 
-interface Form {
+interface FormProps {
     formId: string
     onFormSubmitted?: () => void
 }
 
-interface Props {
-    customer?: Customer
+interface GatedResourceLayoutProps {
+    customer?: CustomerProps
     title: ReactNode | string
     subtitle?: string
     description?: ReactNode
     formLabel?: string
-    form: Form
+    form: FormProps
     learnMoreCTA?: ReactNode
     videoSrc?: string
-    speakers?: Speaker[]
+    speakers?: SpeakerProps[]
     children?: ReactNode
 }
 
-export const GatedResourceLayout: FunctionComponent<Props> = ({
+export const GatedResourceLayout: FunctionComponent<GatedResourceLayoutProps> = ({
     title,
     subtitle,
     customer,
@@ -66,7 +66,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     const isGuidePg = pathname.split('/').slice(1)[0] === 'guides'
     const hasWatchNowQuery = Object.keys(query).includes('watch-now')
 
-    const hubSpotConfig: HubSpotForm | null = {
+    const hubSpotConfig: HubSpotFormProps | null = {
         portalId: '2762526',
         formId: form.formId,
         targetId: 'form',
@@ -180,7 +180,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
                         <h2 className="font-weight-bold">Speakers</h2>
 
                         <section className="d-flex flex-wrap">
-                            {speakers.map((speaker: Speaker) => (
+                            {speakers.map((speaker: SpeakerProps) => (
                                 <div key={speaker.name} className="col-lg-5 col-md-6 col-12 pl-0 pr-lg-7">
                                     <img className="py-4" width="140" src={speaker.img} alt={speaker.name} />
                                     <h5 className="font-weight-bold">{speaker.name}</h5>

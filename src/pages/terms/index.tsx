@@ -1,8 +1,8 @@
 import { GetStaticProps } from 'next'
 
-import TermPage, { PageProps, getStaticProps as getStaticPropsForSlug } from './[...slug]'
+import TermPage, { TermPageProps, getStaticProps as getStaticPropsForSlug } from './[...slug]'
 
-export const getStaticProps: GetStaticProps<PageProps> = async context =>
+export const getStaticProps: GetStaticProps<TermPageProps> = async context =>
     getStaticPropsForSlug({ ...context, params: { slug: ['index'] } })
 
 export default TermPage

@@ -1,11 +1,11 @@
-import { LineChartSeries } from './types'
+import { LineChartSeriesProps } from './types'
 
 /**
  * Default value for line color in case if we didn't get color for line from content config.
  */
 export const DEFAULT_LINE_STROKE = 'var(--gray-07)'
 
-export const getLineStroke = <Datum extends object>(line: LineChartSeries<Datum>): string =>
+export const getLineStroke = <Datum extends object>(line: LineChartSeriesProps<Datum>): string =>
     line?.stroke ?? DEFAULT_LINE_STROKE
 
 /**

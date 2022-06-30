@@ -5,16 +5,16 @@ import QuestionMarkCircleOutlineIcon from 'mdi-react/QuestionMarkCircleOutlineIc
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 
-import { FeatureInfo } from './interfaces'
+import { FeatureInfoProps } from './interfaces'
 
-interface Props {
-    info: FeatureInfo
+interface PricingPlanFeatureProps {
+    info: FeatureInfoProps
     value: boolean
     tag: 'li'
     className?: string
 }
 
-export const PricingPlanFeature: FunctionComponent<Props> = ({
+export const PricingPlanFeature: FunctionComponent<PricingPlanFeatureProps> = ({
     info: { label, description },
     value,
     tag: Tag = 'li',

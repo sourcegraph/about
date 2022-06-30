@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-interface Video {
+interface VideoProps {
     source: {
         webm: string
         mp4: string
@@ -11,7 +11,7 @@ interface Video {
     title: string
 }
 
-export const Video: FunctionComponent<Video> = ({ source, loop, caption, showCaption = false, title }) => (
+export const Video: FunctionComponent<VideoProps> = ({ source, loop, caption, showCaption = false, title }) => (
     <figure>
         <video
             className="w-100 h-auto shadow"

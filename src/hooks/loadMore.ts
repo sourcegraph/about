@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 import { PostIndexItemProps } from '@interfaces/posts'
 
-interface LoadMoreHookObject {
+interface LoadMoreHookObjectProps {
     currentRecords: PostIndexItemProps[]
     page: number
     setPage: (page: number) => void
@@ -12,7 +12,7 @@ export const useLoadMore = (
     initialAllRecords: PostIndexItemProps[],
     initialPage: number,
     initialCurrentRecords: PostIndexItemProps[]
-): LoadMoreHookObject => {
+): LoadMoreHookObjectProps => {
     const [allRecords, setAllRecords] = useState<PostIndexItemProps[]>(initialAllRecords)
     const [page, setPage] = useState<number>(initialPage)
     const [currentRecords, setCurrentRecords] = useState<PostIndexItemProps[]>(initialCurrentRecords)

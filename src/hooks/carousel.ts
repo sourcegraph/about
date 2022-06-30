@@ -1,14 +1,14 @@
 import { useEffect, useState, ReactNode, useCallback, useRef } from 'react'
 
-interface CarouselItems {
-    items: CarouselItem[] | ReactNode[]
-    currentItem?: CarouselItem | ReactNode
-    previousItem?: CarouselItem | ReactNode
+interface CarouselItemsProps {
+    items: CarouselItemProps[] | ReactNode[]
+    currentItem?: CarouselItemProps | ReactNode
+    previousItem?: CarouselItemProps | ReactNode
     currentItemIndex?: number
     autoAdvance?: boolean
 }
 
-interface CarouselItem {
+interface CarouselItemProps {
     buttonLabel: string
     headerClass: string
     text: string | ReactNode
@@ -19,14 +19,14 @@ interface CarouselHookObject {
     autoAdvance: boolean
     isAdvancing: boolean
     moveCarousel: (itemOrDirection?: number | string) => void
-    carouselItems: CarouselItems
+    carouselItems: CarouselItemsProps
 }
 
 export const useCarousel = (
-    initialItems: CarouselItem[] | ReactNode[],
+    initialItems: CarouselItemProps[] | ReactNode[],
     initialAutoAdvance: boolean
 ): CarouselHookObject => {
-    const [carouselItems, setCarouselItems] = useState<CarouselItems>({
+    const [carouselItems, setCarouselItems] = useState<CarouselItemsProps>({
         currentItemIndex: 0,
         currentItem: initialItems[0],
         items: initialItems,

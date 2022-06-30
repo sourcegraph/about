@@ -5,7 +5,7 @@ export enum LineChartLayoutOrientation {
     Horizontal = 'horizontal',
 }
 
-interface LineChartSettingsContext {
+interface LineChartSettingsContextProps {
     /**
      * Enables Y-label generation from 0 value.
      *
@@ -44,6 +44,6 @@ interface LineChartSettingsContext {
     layout?: LineChartLayoutOrientation
 }
 
-export const LineChartSettingsContext = createContext<LineChartSettingsContext>({
+export const LineChartSettingsContext = createContext<LineChartSettingsContextProps>({
     zeroYAxisMin: false,
 })

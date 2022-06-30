@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import { PostComponentProps } from '@interfaces/posts'
 
-interface Props extends PostComponentProps {
+interface LinkPostProps extends PostComponentProps {
     post: PostComponentProps['post']
 }
 
@@ -13,7 +13,7 @@ interface Props extends PostComponentProps {
  * A blog post that consists of short text (with no headline, only an emphasized first sentence).
  * This post always displays its full text and never hides it behind a "Read more" link.
  */
-export const LinkPost: FunctionComponent<Props> = ({
+export const LinkPost: FunctionComponent<LinkPostProps> = ({
     post,
     content,
     url,

@@ -7,9 +7,9 @@ import { CodeInsightsQueryBlock } from './components/CodeInsightsQueryBlock'
 import { LegendBlock, LegendItem } from './components/legend/CodeInsightLegend'
 import { getLineStroke } from './components/line-chart/constants'
 import { LineChart } from './components/line-chart/LineChart'
-import { LineChartSeries } from './components/line-chart/types'
+import { LineChartSeriesProps } from './components/line-chart/types'
 import { View } from './components/view/View'
-import { CaptureGroupInsightData, CodeInsightExampleType, SearchInsightData } from './types'
+import { CaptureGroupInsightDataProps, CodeInsightExampleType, SearchInsightDataProps } from './types'
 
 import styles from './CodeInsightsExamples.module.scss'
 
@@ -17,13 +17,13 @@ export type CodeInsightExampleProps = CodeInsightSearchExampleProps | CodeInsigh
 
 export interface CodeInsightSearchExampleProps {
     type: CodeInsightExampleType.Search
-    data: SearchInsightData
+    data: SearchInsightDataProps
     className?: string
 }
 
 export interface CodeInsightCaptureExampleProps {
     type: CodeInsightExampleType.Capture
-    data: CaptureGroupInsightData
+    data: CaptureGroupInsightDataProps
     className?: string
 }
 
@@ -85,7 +85,7 @@ const CodeInsightCaptureExample: React.FunctionComponent<CodeInsightCaptureExamp
 
                 <LegendBlock className={classNames(styles.legend, 'horizontal')}>
                     {data.series.map(line => (
-                        <LegendItem key={line.dataKey.toString()} color={getLineStroke<LineChartSeries<string>>(line)}>
+                        <LegendItem key={line.dataKey.toString()} color={getLineStroke<LineChartSeriesProps<string>>(line)}>
                             {line.name}
                         </LegendItem>
                     ))}

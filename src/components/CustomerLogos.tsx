@@ -2,13 +2,13 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-interface Logo {
+interface LogoProps {
     name: string
     src: string
     link?: string
 }
 
-const logos: Logo[] = [
+const logos: LogoProps[] = [
     {
         name: 'Amazon',
         src: '/external-logos/amazon-logo.svg',
@@ -71,7 +71,7 @@ const logos: Logo[] = [
 
 export const CustomerLogos: FunctionComponent = () => (
     <div className="d-flex flex-wrap align-items-center justify-content-center max-w-1000 mx-auto user-select-none">
-        {logos.map((logo: Logo) => (
+        {logos.map((logo: LogoProps) => (
             <Link key={logo.name} href={logo.link ? logo.link : '/case-studies'} passHref={true}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className="max-w-100 max-h-100 my-3 mx-4 flex-shrink-0">

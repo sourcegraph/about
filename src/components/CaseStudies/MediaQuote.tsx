@@ -1,12 +1,12 @@
 import { FunctionComponent } from 'react'
 
-interface Props {
+interface MediaQuoteProps {
     image?: string
     quote: string
     author: string
 }
 
-export const MediaQuote: FunctionComponent<Props> = ({ image, quote, author }) => (
+export const MediaQuote: FunctionComponent<MediaQuoteProps> = ({ image, quote, author }) => (
     <div className="container pt-3">
         <div className="case-studies__quote row justify-content-center">
             {image && (

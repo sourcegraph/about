@@ -6,29 +6,29 @@ import ClipboardTextOutlineIcon from 'mdi-react/ClipboardTextOutlineIcon'
 import FlagOutlineIcon from 'mdi-react/FlagOutlineIcon'
 import Link from 'next/link'
 
-interface TextLink {
+interface TextLinkProps {
     text: string
     href?: string
 }
 
-interface Props {
-    useCases: TextLink[]
-    challenges: TextLink[]
-    solutions: TextLink[]
-    results: TextLink[]
+interface UseChallengeSolutionResultsProps {
+    useCases: TextLinkProps[]
+    challenges: TextLinkProps[]
+    solutions: TextLinkProps[]
+    results: TextLinkProps[]
 }
 
 interface ListItemProps {
-    item: TextLink
+    item: TextLinkProps
 }
 
-const isString = (value: string | TextLink): boolean => typeof value === 'string'
+const isString = (value: string | TextLinkProps): boolean => typeof value === 'string'
 
 const ListItemType: FunctionComponent<ListItemProps> = ({ item }) => (
     <li>{item?.href ? <Link href={item.href}>{item.text}</Link> : <span>{item.text}</span>}</li>
 )
 
-export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases, challenges, solutions, results }) => (
+export const UseChallengeSolutionResults: FunctionComponent<UseChallengeSolutionResultsProps> = ({ useCases, challenges, solutions, results }) => (
     <section className="d-flex flex-column flex-md-row">
         <div className="bg-light-gray-4-2 p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
             <section className="max-w-xl-550 ml-xl-auto">

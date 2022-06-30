@@ -4,12 +4,12 @@ import Link from 'next/link'
 
 import { ContentSection } from '@components'
 
-interface Props {
+interface TrySourcegraphProps {
     demoFormURL?: string
     className?: string
 }
 
-export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo', className = '' }) => (
+export const TrySourcegraph: FunctionComponent<TrySourcegraphProps> = ({ demoFormURL = '/demo', className = '' }) => (
     <ContentSection className={className}>
         <div className="row">
             <div className="col-md-6 pr-md-5">

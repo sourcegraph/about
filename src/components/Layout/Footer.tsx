@@ -8,12 +8,12 @@ import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import Link from 'next/link'
 
-interface Props {
+interface FooterProps {
     minimal?: boolean
     className?: string
 }
 
-const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
+const Footer: FunctionComponent<FooterProps> = ({ minimal, className }) => (
     <footer className={`${minimal ? '' : 'pt-6 pb-2'} ${className || ''}`}>
         <div className="container-xl">
             {!minimal && (

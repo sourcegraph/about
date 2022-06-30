@@ -3,7 +3,8 @@ import { FunctionComponent } from 'react'
 import { BackButtonBold, BackButtonLight } from '@components'
 
 import { COLORS } from '../Jumbotron'
-interface Props {
+
+interface CaseStudyJumbotronProps {
     customer: string
     logo?: string
     className?: string
@@ -11,7 +12,7 @@ interface Props {
     children?: React.ReactNode
 }
 
-export const CaseStudyJumbotron: FunctionComponent<Props> = ({
+export const CaseStudyJumbotron: FunctionComponent<CaseStudyJumbotronProps> = ({
     customer,
     logo,
     className = '',

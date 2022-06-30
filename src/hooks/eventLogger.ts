@@ -2,14 +2,14 @@ import { useEffect } from 'react'
 
 import { EventLogger } from '@sourcegraph/event-logger'
 
-interface EventArguments {
+interface EventArgumentsProps {
     path: string
     [key: string]: string | null
 }
 
 export const useEventLogger = (): void => {
     useEffect(() => {
-        const eventArguments: EventArguments = { path: location.pathname }
+        const eventArguments: EventArgumentsProps = { path: location.pathname }
         const urlSearchParameters = new URLSearchParams(location.search)
         const utmParameters: string[] = ['utm_source', 'utm_campaign', 'utm_medium', 'utm_term', 'utm_content']
 

@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 import { ContentSection } from '@components'
 
-interface Props {
+interface RequestDemoTrySourcegraphProps {
     title?: string
     description?: string
     demoFormURL?: string
 }
 
-export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
+export const RequestDemoTrySourcegraph: FunctionComponent<RequestDemoTrySourcegraphProps> = () => (
     <div className="bg-light-gray-3">
         <ContentSection>
             <div className="row d-flex flex-column mx-4 mx-lg-0 py-5 py-md-7 align-items-lg-center align-items-left">

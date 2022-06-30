@@ -1,4 +1,4 @@
-export interface NavLink {
+export interface NavLinkProps {
     section: string
     items: {
         title: string
@@ -6,7 +6,7 @@ export interface NavLink {
     }[]
 }
 
-export const navLinks: NavLink[] = [
+export const navLinks: NavLinkProps[] = [
     {
         section: 'Product',
         items: [

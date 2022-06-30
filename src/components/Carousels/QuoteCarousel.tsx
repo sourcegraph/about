@@ -7,7 +7,8 @@ import Carousel from 'react-bootstrap/Carousel'
 import { BlockquoteWithLogoBottom } from '@components'
 import { breakpoints } from '@data'
 import { useWindowWidth } from '@hooks'
-interface Blockquote {
+
+interface BlockquoteProps {
     quote: string
     header?: string
     by?: string | ReactFragment
@@ -19,7 +20,7 @@ interface Blockquote {
 }
 
 interface QuoteCarouselProps {
-    items: Blockquote[]
+    items: BlockquoteProps[]
 }
 
 export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items }) => {

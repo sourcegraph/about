@@ -8,9 +8,9 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 import gfm from 'remark-gfm'
 
-import { Page, Post } from '@interfaces/posts'
+import { PageProps, PostProps } from '@interfaces/posts'
 
-export const loadMarkdownFile = async (filename: string): Promise<Page | Post | Error> => {
+export const loadMarkdownFile = async (filename: string): Promise<PageProps | PostProps | Error> => {
     const page = await fs
         .readFile(filename, 'utf8')
         .then(page => {

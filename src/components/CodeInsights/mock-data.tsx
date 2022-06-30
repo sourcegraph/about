@@ -1,11 +1,11 @@
 import React from 'react'
 
 import { DATA_SERIES_COLORS } from './constants'
-import { CaptureGroupInsightData, SearchInsightData } from './types'
+import { CaptureGroupInsightDataProps, SearchInsightDataProps } from './types'
 
 import styles from './CodeInsightsExamples.module.scss'
 
-export const LOG_4_J_INCIDENT_INSIGHT: SearchInsightData = {
+export const LOG_4_J_INCIDENT_INSIGHT: SearchInsightDataProps = {
     title: 'Log4j incident response',
     repositories: (
         <>
@@ -55,7 +55,7 @@ export const LOG_4_J_INCIDENT_INSIGHT: SearchInsightData = {
     },
 }
 
-export const SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA: SearchInsightData = {
+export const SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA: SearchInsightDataProps = {
     title: 'Migration to CSS modules',
     repositories: (
         <>
@@ -106,7 +106,7 @@ export const SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA: SearchInsightData = {
     },
 }
 
-export const ALPINE_VERSIONS_INSIGHT: CaptureGroupInsightData = {
+export const ALPINE_VERSIONS_INSIGHT: CaptureGroupInsightDataProps = {
     title: 'Alpine versions over all repos',
     repositories: 'All repositories',
     query: (
@@ -168,7 +168,7 @@ export const ALPINE_VERSIONS_INSIGHT: CaptureGroupInsightData = {
     },
 }
 
-export const DEPRECATED_API_USAGE_BY_TEAM: SearchInsightData = {
+export const DEPRECATED_API_USAGE_BY_TEAM: SearchInsightDataProps = {
     title: 'Deprecated API usage by team',
     repositories: 'All repositories',
     data: [
@@ -222,7 +222,7 @@ export const DEPRECATED_API_USAGE_BY_TEAM: SearchInsightData = {
     },
 }
 
-export const LINTER_OVERRIDES: SearchInsightData = {
+export const LINTER_OVERRIDES: SearchInsightDataProps = {
     title: 'Linter override rules in all repos',
     repositories: 'All repositories',
     data: [
@@ -255,7 +255,7 @@ export const LINTER_OVERRIDES: SearchInsightData = {
     },
 }
 
-export const REPOS_WITH_CI_SYSTEM: SearchInsightData = {
+export const REPOS_WITH_CI_SYSTEM: SearchInsightDataProps = {
     title: '# of repos connected to the CI system',
     repositories: 'All repositories',
     data: [

@@ -6,12 +6,12 @@ import Link from 'next/link'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
-interface Props extends PostComponentProps {}
+interface ReleasePostProps extends PostComponentProps {}
 
 /**
  * A post about a release.
  */
-export const ReleasePost: FunctionComponent<Props> = ({
+export const ReleasePost: FunctionComponent<ReleasePostProps> = ({
     post,
     content,
     url,

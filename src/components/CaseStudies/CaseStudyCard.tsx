@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import styles from './CaseStudyCard.module.scss'
 
-interface CaseStudy {
+interface CaseStudyProps {
     name: string
     logo: string
     title: string
@@ -15,7 +15,7 @@ interface CaseStudy {
 }
 
 // TODO: This data will eventually live in our CMS
-export const CASESTUDIES: CaseStudy[] = [
+export const CASESTUDIES: CaseStudyProps[] = [
     {
         name: 'Nutanix',
         logo: '/external-logos/nutanix-logo.svg',
@@ -102,7 +102,7 @@ export const CASESTUDIES: CaseStudy[] = [
     },
 ]
 
-export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boolean }> = ({
+export const CaseStudyCard: FunctionComponent<{ study: CaseStudyProps; bwLogo?: boolean }> = ({
     study: { name, logo, altTitle, title, url, linkText = 'Learn more' },
     bwLogo,
 }) => (

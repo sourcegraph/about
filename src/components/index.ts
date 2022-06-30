@@ -70,4 +70,4 @@ export { GatedResourceLayout } from './GatedResourceLayout' // Webinars, Guides,
 
 // Pricing
 export { PricingPlanProperty, PricingPlanFeature, PricingPlan } from './Pricing'
-export type { Features } from './Pricing'
+export type { FeaturesProps } from './Pricing'
