@@ -39,7 +39,13 @@ interface BlockquoteWithBorderProps {
     bold?: boolean
 }
 
-export const BlockquoteWithLogoBottom: FunctionComponent<BlockquoteWithLogoBottomProps> = ({ quote, header, author, logo, link }) => (
+export const BlockquoteWithLogoBottom: FunctionComponent<BlockquoteWithLogoBottomProps> = ({
+    quote,
+    header,
+    author,
+    logo,
+    link,
+}) => (
     <>
         {header && <h1 className="font-weight-bold">{header}</h1>}
         <blockquote className="p-3 rounded rounded-lg d-flex flex-column bg-transparent">
@@ -95,7 +101,14 @@ export const BlockquoteWithLogoTop: FunctionComponent<BlockquoteWithLogoTopProps
     </>
 )
 
-export const BlockquoteWithBorder: FunctionComponent<BlockquoteWithBorderProps> = ({ quote, author, logo, headline, link, bold }) => (
+export const BlockquoteWithBorder: FunctionComponent<BlockquoteWithBorderProps> = ({
+    quote,
+    author,
+    logo,
+    headline,
+    link,
+    bold,
+}) => (
     <>
         <blockquote className="px-3 mb-5 text-center border-left border-3 border-vermillion">
             {headline && <h4 className="font-weight-bold mb-4">{headline}</h4>}

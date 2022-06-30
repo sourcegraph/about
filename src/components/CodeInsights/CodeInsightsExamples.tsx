@@ -85,7 +85,10 @@ const CodeInsightCaptureExample: React.FunctionComponent<CodeInsightCaptureExamp
 
                 <LegendBlock className={classNames(styles.legend, 'horizontal')}>
                     {data.series.map(line => (
-                        <LegendItem key={line.dataKey.toString()} color={getLineStroke<LineChartSeriesProps<string>>(line)}>
+                        <LegendItem
+                            key={line.dataKey.toString()}
+                            color={getLineStroke<LineChartSeriesProps<string>>(line)}
+                        >
                             {line.name}
                         </LegendItem>
                     ))}

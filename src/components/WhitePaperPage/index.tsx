@@ -14,7 +14,13 @@ interface WhitePaperPageProps {
     heroBackgroundImage?: string
 }
 
-export const WhitePaperPage: FunctionComponent<WhitePaperPageProps> = ({ title, className, pdf, children, heroBackgroundImage }) => (
+export const WhitePaperPage: FunctionComponent<WhitePaperPageProps> = ({
+    title,
+    className,
+    pdf,
+    children,
+    heroBackgroundImage,
+}) => (
     <div className={className}>
         <div
             className={classNames('jumbotron rounded-0 min-h-250 d-flex align-items-center text-light', className, {

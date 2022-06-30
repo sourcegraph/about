@@ -16,7 +16,12 @@ interface ContentSectionProps {
     children: ReactNode
 }
 
-export const ContentSection: FunctionComponent<ContentSectionProps> = ({ id = '', color = 'none', className = '', children }) => (
+export const ContentSection: FunctionComponent<ContentSectionProps> = ({
+    id = '',
+    color = 'none',
+    className = '',
+    children,
+}) => (
     <div id={id} className={COLORS[color]}>
         <section className={`container ${className}`}>{children}</section>
     </div>

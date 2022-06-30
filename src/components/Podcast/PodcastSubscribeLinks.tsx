@@ -7,7 +7,10 @@ interface PodcastSubscribeLinksProps {
     linkClassName?: string
 }
 
-export const PodcastSubscribeLinks: FunctionComponent<PodcastSubscribeLinksProps> = ({ className = '', linkClassName = '' }) => (
+export const PodcastSubscribeLinks: FunctionComponent<PodcastSubscribeLinksProps> = ({
+    className = '',
+    linkClassName = '',
+}) => (
     <div className={className}>
         <span>Subscribe:</span>{' '}
         <a

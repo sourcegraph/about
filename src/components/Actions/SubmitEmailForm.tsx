@@ -6,7 +6,11 @@ interface SubmitEmailFormProps {
     className?: string
 }
 
-export const SubmitEmailForm: FunctionComponent<SubmitEmailFormProps> = ({ formAction, buttonText, className = '' }) => (
+export const SubmitEmailForm: FunctionComponent<SubmitEmailFormProps> = ({
+    formAction,
+    buttonText,
+    className = '',
+}) => (
     <div>
         <form className={`input-group mb-2 d-inline-flex w-auto ${className}`} action={formAction} method="get">
             <input

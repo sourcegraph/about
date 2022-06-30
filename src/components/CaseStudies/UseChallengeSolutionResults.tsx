@@ -28,7 +28,12 @@ const ListItemType: FunctionComponent<ListItemProps> = ({ item }) => (
     <li>{item?.href ? <Link href={item.href}>{item.text}</Link> : <span>{item.text}</span>}</li>
 )
 
-export const UseChallengeSolutionResults: FunctionComponent<UseChallengeSolutionResultsProps> = ({ useCases, challenges, solutions, results }) => (
+export const UseChallengeSolutionResults: FunctionComponent<UseChallengeSolutionResultsProps> = ({
+    useCases,
+    challenges,
+    solutions,
+    results,
+}) => (
     <section className="d-flex flex-column flex-md-row">
         <div className="bg-light-gray-4-2 p-lg-6 p-md-5 px-1 py-5 col-sm-12 col-md-6">
             <section className="max-w-xl-550 ml-xl-auto">
