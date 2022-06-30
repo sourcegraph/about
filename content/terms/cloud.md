@@ -263,7 +263,7 @@ We respect the intellectual property of others and ask that you do too. We reser
 
 The above information must be submitted to the following DMCA Agent:
 
-```
+```text
 Attn:		DMCA Notice
             Sourcegraph Inc.
 Address:    548 Market St PMB 20739, San Francisco, CA 94104-5401

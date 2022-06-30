@@ -146,7 +146,7 @@ It has both a live and non-live mode (for reproducibility).
 
 Here's what the code looks like:
 
-```
+```go
 live_handle, err = pcap.OpenLive(*iface, 1024, false, pcap.BlockForever)
 …
 defer live_handle.Close()
@@ -180,7 +180,7 @@ We use `gopacket` again. There's two steps here:
 
 Code:
 
-```
+```go
 var ipv4_layer gopacket.Layer
 var udp_layer gopacket.Layer
 var udp *layers.UDP
@@ -224,7 +224,7 @@ if filter.DstPorts != nil && !cgc_utils.MatchAnyPort(udp.DstPort,filter.DstPorts
 
 There's a lot of metadata with packates, so we want to parse that and store that in a struct. This code probably could be better, but it's doing something straightforward:
 
-```
+```go
 func ParseCgcPacket(packet []byte) (cgc_packet IdsPacket, err error) {
     	packet_length := len(packet)
     	packet_offset := 0
@@ -265,7 +265,7 @@ Next()
 
 Code:
 
-```
+```go
 db, err := sql.Open("mysql",
                      user+":"+password+"@unix(/var/run/mysqld/mysqld.sock)/"+database)
 if err != nil {
@@ -352,7 +352,7 @@ Where is the buffering happen? Possible sources:
 
 * Capturer itself
 * `gopackage/libpcap`:
-```
+```go
 func (p *PacketSource) Packets() chan Packet {
     	if p.c == nil {
             	p.c = make(chan Packet, 1000)     // Note this line
@@ -365,7 +365,7 @@ func (p *PacketSource) Packets() chan Packet {
 
 
 On Linux, rmem_default:
-```
+```text
 $ cat /proc/sys/net/core/rmem_default
 212992
 On BSD, net.bpf.size/maxsize.
@@ -387,7 +387,7 @@ Profiling can be
 
 Misleading, suggests perf bottleneck is capturing packets off the wire:
 
-```
+```go
 go tool pprof -cum -top cap pcap.prof | head
 210ms of 210ms total (  100%)
   	flat  flat%   sum%    	cum   cum%
@@ -402,7 +402,7 @@ go tool pprof -cum -top cap pcap.prof | head
 ```
 
 Helpful, shows all slowness is coming from slowness putting things in DB:
-```
+```go
 $ go tool pprof -cum -top cap pcap.prof | head
 80ms of 80ms total (  100%)
   	flat  flat%   sum%    	cum   cum%
@@ -419,7 +419,7 @@ $ go tool pprof -cum -top cap pcap.prof | head
 
 In between, suggests packets slow off the network and slow putting into the database:
 
-```
+```go
 $ go tool pprof -cum -top cap pcap.prof | head
 730ms of 1120ms total (65.18%)
 Showing top 80 nodes out of 150 (cum >= 20ms)
@@ -463,7 +463,7 @@ The solution here was to go into `gopacket` and set the buffer size to 1, so tha
 
 Fortunately, it didn't take very long to turn off the thing that was causing the slowdown.
 
-```
+```go
 func log_cgc_packet(packet cgc_utils.IdsPacket, statement sql.Stmt) {
 	return // I added this
 	if _, err := statement.Exec(packet.Csid,

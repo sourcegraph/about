@@ -56,7 +56,7 @@ So instead of HTTP error codes, they track the number of the exceptions per quer
 
 They also use GraphQL-specific defenses. Imagine a pathologically nested query (followers of followers of followers...):
 
-```
+```graphql
 {
   user(rest_id: "12") {
     name
@@ -81,7 +81,7 @@ Twitter also uses _query depth_ measurement, which simply calculates the height 
 
 They don't allow arbitrary queries. All queries must be uploaded and stored ahead of time and exchanged for a unique key:
 
-```
+```graphql
 POST /graphql/eyBuaWNlIHsgdHJ5IH0gfQ
 ```
 
@@ -133,7 +133,7 @@ Now that there's a service that picks up events from EventBus, the events need t
 This means that the API receives both a query and an event, and uses the event as the basis for the query execution. This is similar to a Thrift interface, so they are using GraphQL over both Thrift and HTTP.
 
 This JSON bundle shows that the API will run the query against the event. This keeps the GraphQL API concerned only with executing GraphQL queries:
-```
+```json
 {
   "query": "subscription { random_tweet { id } }",
   "event": {
