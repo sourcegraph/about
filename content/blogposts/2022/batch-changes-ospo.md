@@ -12,7 +12,7 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-cha
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/ospo-batch-changes-hero_social.png
 ---
 
-We’re excited to announce that our Open Source Program Office (OSPO) is now up and running! One of my first tasks was making sure [our open source software](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MTI2OQ==) is in compliance with the Open Source Definition ([OSD](https://opensource.org/osd)).
+We’re excited to announce that our Open Source Program Office (OSPO) is now up and running! One of my first tasks was making sure [our open source software](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6OTQ0) is in compliance with the Open Source Definition ([OSD](https://opensource.org/osd)).
 
 As of June 2022, we have 428 public repositories, but 75 (over 17%) active repos were missing a license.
 
