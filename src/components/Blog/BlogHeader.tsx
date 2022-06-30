@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { BlogTypeInfo } from '@interfaces/posts'
+import { BlogTypeInfo } from '@interfaces/postProps'
 
 interface BlogHeaderProps extends Pick<BlogTypeInfo, 'title' | 'belowTitle' | 'baseUrl'> {}
 

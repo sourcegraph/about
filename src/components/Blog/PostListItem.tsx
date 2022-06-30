@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { truncate } from 'lodash'
 import Link from 'next/link'
 
-import { PostIndexItemProps } from '@interfaces/posts'
+import { PostIndexItemProps } from '@interfaces/postProps'
 import { formatDate } from '@util'
 
 export const PostListItem: FunctionComponent<PostIndexItemProps> = ({

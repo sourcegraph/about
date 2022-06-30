@@ -42,7 +42,11 @@ const BOARD: {
     },
 ]
 
-export const BoardSection: FunctionComponent<{ className?: string }> = ({ className = '' }) => (
+interface BoardSectionProps {
+    className?: string
+}
+
+export const BoardSection: FunctionComponent<BoardSectionProps> = ({ className = '' }) => (
     <div id="board" className={`${className}`}>
         <h2>Board of Directors</h2>
         <div className="row my-5">

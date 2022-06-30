@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import { BackButtonBold, BackButtonLight } from '@components'
 
@@ -9,7 +9,7 @@ interface CaseStudyJumbotronProps {
     logo?: string
     className?: string
     color?: keyof typeof COLORS
-    children?: React.ReactNode
+    children?: ReactNode
 }
 
 export const CaseStudyJumbotron: FunctionComponent<CaseStudyJumbotronProps> = ({

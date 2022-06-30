@@ -1,3 +1,5 @@
+import { FunctionComponent } from 'react'
+
 import { kebabCase } from 'lodash'
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
@@ -31,7 +33,7 @@ const features: { id: string; description: string }[] = [
     },
 ]
 
-const UseCases: React.FunctionComponent = () => (
+const UseCases: FunctionComponent = () => (
     <Layout
         meta={{
             title: 'Use Cases | Sourcegraph',

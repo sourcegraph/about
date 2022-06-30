@@ -1,18 +1,18 @@
-import React from 'react'
+import { FunctionComponent, HTMLAttributes, LiHTMLAttributes } from 'react'
 
 import classNames from 'classnames'
 
 import styles from './CodeInsightLegend.module.scss'
 
-export const LegendBlock: React.FunctionComponent<React.HTMLAttributes<HTMLUListElement>> = props => (
+export const LegendBlock: FunctionComponent<HTMLAttributes<HTMLUListElement>> = props => (
     <ul className={classNames(styles.legendList, props.className)}>{props.children}</ul>
 )
 
-interface LegendItemProps extends React.LiHTMLAttributes<HTMLLIElement> {
+interface LegendItemProps extends LiHTMLAttributes<HTMLLIElement> {
     color: string
 }
 
-export const LegendItem: React.FunctionComponent<LegendItemProps> = props => (
+export const LegendItem: FunctionComponent<LegendItemProps> = props => (
     <div className="d-flex">
         <li className={classNames(props.className, styles.legendItem)}>
             <div

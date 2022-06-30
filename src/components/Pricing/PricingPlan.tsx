@@ -1,7 +1,7 @@
 import { ReactFragment, FunctionComponent } from 'react'
 
-import { FeaturesProps, FeatureInfoProps } from './interfaces'
 import { PricingPlanFeature } from './PricingPlanFeature'
+import { FeaturesProps, FeatureInfoProps } from './pricingProps'
 
 const FEATURE_INFO: Record<keyof FeaturesProps, FeatureInfoProps> = {
     codeSearch: {

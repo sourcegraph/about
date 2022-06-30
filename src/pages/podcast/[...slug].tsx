@@ -4,7 +4,7 @@ import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 import { Layout, BlogHeader, BLOG_TYPE_TO_INFO } from '@components'
-import { PostProps, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '@interfaces/posts'
+import { PostProps, POST_TYPE_TO_COMPONENT, postType, urlToPost } from '@interfaces/postProps'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
 export interface PageProps {

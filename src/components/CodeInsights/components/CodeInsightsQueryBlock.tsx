@@ -1,9 +1,9 @@
-import React from 'react'
+import { FunctionComponent, HTMLAttributes } from 'react'
 
 import classNames from 'classnames'
 
 import styles from './CodeInsightsQueryBlock.module.scss'
 
-export const CodeInsightsQueryBlock: React.FunctionComponent<React.HTMLAttributes<HTMLSpanElement>> = props => (
+export const CodeInsightsQueryBlock: FunctionComponent<HTMLAttributes<HTMLSpanElement>> = props => (
     <span {...props} className={classNames(props.className, styles.query)} />
 )

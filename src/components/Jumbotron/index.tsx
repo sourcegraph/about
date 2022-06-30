@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import styles from './jumbotron.module.scss'
 
@@ -15,7 +15,7 @@ interface JumbotronProps {
     title: string
     titleClassName?: string
     description?: string
-    children: React.ReactNode
+    children: ReactNode
 }
 
 export const Jumbotron: FunctionComponent<JumbotronProps> = ({

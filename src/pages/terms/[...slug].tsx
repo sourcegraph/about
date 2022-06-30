@@ -4,7 +4,7 @@ import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
 import { Layout, EmbeddedHubSpot } from '@components'
-import { PageProps } from '@interfaces/posts'
+import { PageProps } from '@interfaces/postProps'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
 export type Components = import('mdx/types').MDXComponents

@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, ReactNode } from 'react'
+import React, { DetailedHTMLProps, FunctionComponent, HTMLAttributes, PropsWithChildren, ReactNode } from 'react'
 
 import classNames from 'classnames'
 
@@ -6,10 +6,7 @@ import { Card } from '../card/Card'
 
 import styles from './View.module.scss'
 
-type ViewCardElementProps = React.DetailedHTMLProps<
-    Omit<React.HTMLAttributes<HTMLElement>, 'contextMenu' | 'title'>,
-    HTMLElement
->
+type ViewCardElementProps = DetailedHTMLProps<Omit<HTMLAttributes<HTMLElement>, 'contextMenu' | 'title'>, HTMLElement>
 
 export interface ViewCardProps extends ViewCardElementProps {
     title?: ReactNode
@@ -22,7 +19,7 @@ export interface ViewCardProps extends ViewCardElementProps {
     actions?: ReactNode
 }
 
-export const View: React.FunctionComponent<PropsWithChildren<ViewCardProps>> = props => {
+export const View: FunctionComponent<PropsWithChildren<ViewCardProps>> = props => {
     const { title, subtitle, actions, children, ...otherProps } = props
 
     // In case if we don't have a content for the header component

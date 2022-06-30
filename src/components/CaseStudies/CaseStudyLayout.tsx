@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import { kebabCase } from 'lodash'
 
@@ -22,7 +22,7 @@ interface CaseStudyLayoutProps {
     heroLink?: string
     className?: string
     titleClassName?: string
-    children?: React.ReactNode
+    children?: ReactNode
 }
 
 export const CaseStudyLayout: FunctionComponent<CaseStudyLayoutProps> = ({

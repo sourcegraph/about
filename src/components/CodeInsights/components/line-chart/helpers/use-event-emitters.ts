@@ -1,4 +1,4 @@
-import { FocusEventHandler, MouseEventHandler, useCallback } from 'react'
+import { FocusEvent, FocusEventHandler, MouseEventHandler, PointerEvent, useCallback } from 'react'
 
 import { useEventEmitter } from '@visx/xychart'
 
@@ -34,17 +34,11 @@ export function usePointerEventEmitters({
 }: PointerEventEmitterParametersProps): PointerEventEmitterOutputProps {
     const emit = useEventEmitter()
 
-    const emitPointerMove = useCallback(
-        (event: React.PointerEvent) => emit?.('pointermove', event, source),
-        [emit, source]
-    )
-    const emitPointerOut = useCallback(
-        (event: React.PointerEvent) => emit?.('pointerout', event, source),
-        [emit, source]
-    )
-    const emitPointerUp = useCallback((event: React.PointerEvent) => emit?.('pointerup', event, source), [emit, source])
-    const emitFocus = useCallback((event: React.FocusEvent) => emit?.('focus', event, source), [emit, source])
-    const emitBlur = useCallback((event: React.FocusEvent) => emit?.('blur', event, source), [emit, source])
+    const emitPointerMove = useCallback((event: PointerEvent) => emit?.('pointermove', event, source), [emit, source])
+    const emitPointerOut = useCallback((event: PointerEvent) => emit?.('pointerout', event, source), [emit, source])
+    const emitPointerUp = useCallback((event: PointerEvent) => emit?.('pointerup', event, source), [emit, source])
+    const emitFocus = useCallback((event: FocusEvent) => emit?.('focus', event, source), [emit, source])
+    const emitBlur = useCallback((event: FocusEvent) => emit?.('blur', event, source), [emit, source])
 
     return {
         onPointerMove: onPointerMove ? emitPointerMove : undefined,

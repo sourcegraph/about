@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode } from 'react'
+import { FunctionComponent, ReactFragment, ReactNode } from 'react'
 
 import { MDXRemoteSerializeResult } from 'next-mdx-remote'
 
@@ -144,7 +144,7 @@ export const blogType = (frontmatter: FrontMatterProps): BlogType =>
 
 export interface BlogTypeInfo {
     title: string
-    belowTitle?: React.ReactFragment
+    belowTitle?: ReactFragment
     baseUrl: string
     meta: { title: string; description: string; image?: string }
 }

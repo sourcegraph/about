@@ -1,4 +1,4 @@
-import React from 'react'
+import { FunctionComponent } from 'react'
 
 import { TickLabelProps, TickRendererProps } from '@visx/axis/lib/types'
 import { Group } from '@visx/group'
@@ -33,7 +33,7 @@ export const getTickXProps: TickLabelProps<Date> = (value, index, values): Parti
 })
 
 /** Tick component displays tick label for each axis line of chart */
-export const Tick: React.FunctionComponent<TickRendererProps> = props => {
+export const Tick: FunctionComponent<TickRendererProps> = props => {
     const { to, formattedValue, x: xPosition, y: yPosition, ...tickLabelProps } = props
 
     // Hack with Group + Text (aria hidden)

@@ -2,7 +2,6 @@ import { FunctionComponent, ReactFragment } from 'react'
 
 interface PricingPlanPropertyProps {
     description?: ReactFragment
-
     className?: string
 }
 

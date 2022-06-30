@@ -6,7 +6,7 @@ import { truncate } from 'lodash'
 import { GetStaticProps } from 'next'
 
 import { PostsListPage, BLOG_TYPE_TO_INFO } from '@components'
-import { BlogType, PostProps, PostIndexComponentProps } from '@interfaces/posts'
+import { BlogType, PostProps, PostIndexComponentProps } from '@interfaces/postProps'
 import { getSortedSlugs, loadMarkdownFile, getMarkdownFiles } from '@lib'
 import { convertExcerptMarkdown } from '@util'
 

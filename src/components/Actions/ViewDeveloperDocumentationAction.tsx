@@ -1,11 +1,11 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, ReactNode } from 'react'
 
 import ArrowRightBoxIcon from 'mdi-react/ArrowRightBoxIcon'
 
 interface ViewDeveloperDocumentationActionProps {
     className?: string
     url?: string
-    children?: React.ReactNode
+    children?: ReactNode
 }
 
 export const ViewDeveloperDocumentationAction: FunctionComponent<ViewDeveloperDocumentationActionProps> = ({

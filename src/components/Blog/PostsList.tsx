@@ -6,7 +6,7 @@ import {
     PostComponentProps,
     PostIndexItemProps,
     blogType,
-} from '@interfaces/posts'
+} from '@interfaces/postProps'
 
 interface PostsListProps {
     posts: PostIndexItemProps[]

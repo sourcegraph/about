@@ -5,7 +5,7 @@ import QuestionMarkCircleOutlineIcon from 'mdi-react/QuestionMarkCircleOutlineIc
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 
-import { FeatureInfoProps } from './interfaces'
+import { FeatureInfoProps } from './pricingProps'
 
 interface PricingPlanFeatureProps {
     info: FeatureInfoProps

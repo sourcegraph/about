@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import { Layout, BlogHeader, PostsList } from '@components'
 import { useLoadMore } from '@hooks'
-import { BlogTypeInfo, PostIndexItemProps } from '@interfaces/posts'
+import { BlogTypeInfo, PostIndexItemProps } from '@interfaces/postProps'
 
 interface PostsListPageProps {
     blogInfo: BlogTypeInfo

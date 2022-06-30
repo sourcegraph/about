@@ -1,4 +1,4 @@
-import React, { ReactElement, useCallback, useMemo, useState, MouseEvent, useRef } from 'react'
+import { ReactElement, useCallback, useMemo, useState, MouseEvent, PointerEvent, useRef } from 'react'
 
 import { curveLinear } from '@visx/curve'
 import { GridRows } from '@visx/grid'
@@ -50,7 +50,7 @@ const SCALES_CONFIG = {
     },
 }
 
-const stopPropagation = (event: React.MouseEvent): void => event.stopPropagation()
+const stopPropagation = (event: MouseEvent): void => event.stopPropagation()
 
 export interface LineChartContentProps<Datum extends object>
     extends Omit<LineChartContentType<Datum, keyof Datum>, 'chart'> {
@@ -70,7 +70,7 @@ export interface LineChartContentProps<Datum extends object>
      * Callback calls every time when link-point and only link-point
      * on the chart was clicked.
      */
-    onDatumLinkClick?: (event: React.MouseEvent) => void
+    onDatumLinkClick?: (event: MouseEvent) => void
 }
 
 export function LineChart<Datum extends object>(props: LineChartContentProps<Datum>): ReactElement {
@@ -193,7 +193,7 @@ export function LineChartContent<Datum extends object>(props: LineChartContentPr
     const focused = useRef(false)
 
     const handleRootPointerMove = useCallback(
-        (event: React.PointerEvent) => {
+        (event: PointerEvent) => {
             // Track user activity over chart
             focused.current = true
             onPointerMove(event)
@@ -202,7 +202,7 @@ export function LineChartContent<Datum extends object>(props: LineChartContentPr
     )
 
     const handleRootPointerOut = useCallback(
-        (event: React.PointerEvent) => {
+        (event: PointerEvent) => {
             event.persist()
 
             // Some element has lost cursor and fired pointerout event but

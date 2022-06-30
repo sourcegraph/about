@@ -1,10 +1,12 @@
+import { FunctionComponent } from 'react'
+
 import SignDirectionIcon from 'mdi-react/SignDirectionIcon'
 
 import { Layout } from '@components'
 
 import styles from './404.module.scss'
 
-const Custom404: React.FunctionComponent = () => (
+const Custom404: FunctionComponent = () => (
     <Layout className="bg-white">
         <div className={`${styles.errorPage} d-flex flex-column align-items-center justify-content-center text-dark`}>
             <div className={`${styles.circle} rounded-circle`}>

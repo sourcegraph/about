@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BlogType, BlogTypeInfo } from '@interfaces/posts'
+import { BlogType, BlogTypeInfo } from '@interfaces/postProps'
 
 import { PodcastSubscribeLinks } from '../Podcast/PodcastSubscribeLinks'
 

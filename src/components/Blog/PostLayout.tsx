@@ -4,7 +4,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
 import { BlockquoteWithBorder, EmbeddedHubSpot, Video, YouTube } from '@components'
-import { PostComponentProps } from '@interfaces/posts'
+import { PostComponentProps } from '@interfaces/postProps'
 import { formatDate } from '@util'
 
 export type Components = import('mdx/types').MDXComponents

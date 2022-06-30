@@ -1,4 +1,4 @@
-import React from 'react'
+import { FunctionComponent } from 'react'
 
 import { ParentSize } from '@visx/responsive'
 import classNames from 'classnames'
@@ -27,7 +27,7 @@ export interface CodeInsightCaptureExampleProps {
     className?: string
 }
 
-export const CodeInsightExample: React.FunctionComponent<CodeInsightExampleProps> = props => {
+export const CodeInsightExample: FunctionComponent<CodeInsightExampleProps> = props => {
     const { type } = props
 
     if (type === CodeInsightExampleType.Search) {
@@ -37,7 +37,7 @@ export const CodeInsightExample: React.FunctionComponent<CodeInsightExampleProps
     return <CodeInsightCaptureExample {...(props as CodeInsightCaptureExampleProps)} />
 }
 
-const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExampleProps> = props => {
+const CodeInsightSearchExample: FunctionComponent<CodeInsightSearchExampleProps> = props => {
     const { className, data } = props
 
     return (
@@ -67,7 +67,7 @@ const CodeInsightSearchExample: React.FunctionComponent<CodeInsightSearchExample
     )
 }
 
-const CodeInsightCaptureExample: React.FunctionComponent<CodeInsightCaptureExampleProps> = props => {
+const CodeInsightCaptureExample: FunctionComponent<CodeInsightCaptureExampleProps> = props => {
     const { className, data } = props
 
     return (

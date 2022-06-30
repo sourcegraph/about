@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent, MouseEvent, useState } from 'react'
 
 import classNames from 'classnames'
 import Navbar from 'react-bootstrap/Navbar'
@@ -20,7 +20,7 @@ interface HeaderProps {
     navLinks: NavLinkProps[]
 }
 
-const onRightClickLogo = (event: React.MouseEvent): void => {
+const onRightClickLogo = (event: MouseEvent): void => {
     event.preventDefault()
 
     if (event.button === 3) {

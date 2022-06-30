@@ -87,7 +87,11 @@ const LEADERS: {
     },
 ]
 
-export const LeadershipSection: FunctionComponent<{ className?: string }> = ({ className = '' }) => (
+interface LeadershipSectionProps {
+    className?: string
+}
+
+export const LeadershipSection: FunctionComponent<LeadershipSectionProps> = ({ className = '' }) => (
     <div id="leadership" className={`leadership-section ${className}`}>
         <h2>Leadership</h2>
         <div className="row my-5">

@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { PostComponentProps } from '@interfaces/posts'
+import { PostComponentProps } from '@interfaces/postProps'
 
 interface LinkPostProps extends PostComponentProps {
     post: PostComponentProps['post']

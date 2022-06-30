@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import Link from 'next/link'
 
 import { PostListItem, PodcastAudioPlayer } from '@components'
-import { PostIndexItemProps } from '@interfaces/posts'
+import { PostIndexItemProps } from '@interfaces/postProps'
 
 /**
  * An index podcast post item.
