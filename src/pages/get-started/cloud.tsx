@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { Layout, BackButton } from '@components'
 import { useQueryString } from '@hooks'
 
-import { BestForTitle } from '.'
+import { DesignedForTitle } from '.'
 
 import styles from './getStarted.module.scss'
 
@@ -44,7 +44,7 @@ export const CloudPage: FunctionComponent = () => {
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
 
-                            <BestForTitle />
+                            <DesignedForTitle />
                             <p>Individual developers</p>
 
                             <p>

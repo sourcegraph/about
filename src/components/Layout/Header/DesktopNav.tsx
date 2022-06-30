@@ -80,7 +80,7 @@ const DesktopNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton }
             {!hideGetStartedButton && (
                 <Nav.Link
                     className="btn btn-primary ml-3 px-5 py-2 font-weight-bolder"
-                    href="/get-started"
+                    href="/get-started/self-hosted"
                     title="Get started"
                     data-button-style={buttonStyle.primary}
                     data-button-location={buttonLocation.nav}
