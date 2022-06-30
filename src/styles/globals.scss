@@ -10,8 +10,8 @@
 
 /* ==================== Bootstrap Overrides ==================== */
 
-$font-family-sans-serif: "Source Sans Pro", sans-serif;
-$font-family-monospace: "Source Code Pro", monospace;
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-monospace: 'Source Code Pro', monospace;
 $font-family-base: $font-family-sans-serif;
 $headings-font-family: $font-family-base;
 
@@ -295,7 +295,7 @@ code.border {
 }
 
 code {
-    font-family: "Source Code Pro", monospace !important;
+    font-family: 'Source Code Pro', monospace !important;
 }
 
 /* ==================== Positioning ==================== */

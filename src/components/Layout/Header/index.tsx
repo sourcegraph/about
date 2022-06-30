@@ -38,7 +38,7 @@ export const Header: FunctionComponent<Props> = props => {
     const windowWidth = useWindowWidth()
     const isLgOrDown = windowWidth < breakpoints.xl
     const isMdOrDown = windowWidth < breakpoints.lg
-    
+
     const isDarkNav = props.className?.includes('navbar-dark')
 
     /**
@@ -47,7 +47,7 @@ export const Header: FunctionComponent<Props> = props => {
      */
     const handleScroll = (): void => {
         const scrollPosition = window.scrollY
-    
+
         if (scrollPosition > lastScrollPosition && scrollPosition > 1) {
             setSticky(true)
         } else if (scrollPosition === 0) {
@@ -58,10 +58,10 @@ export const Header: FunctionComponent<Props> = props => {
     }
 
     // This listens for scroll events to handle the sticky nav
-    useEffect(() => {    
-      window.addEventListener('scroll', handleScroll)
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
 
-      return () => window.removeEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
     })
 
     /**
@@ -76,14 +76,10 @@ export const Header: FunctionComponent<Props> = props => {
         parentElement!.style.paddingTop = `${navHeight}px`
     })
 
-    const navStyle = classNames(
-        'header navbar py-3 w-100 fixed-top',
-        props.className,
-        {
-            'bg-white shadow-sm': !isDarkNav && (sticky || isOpen),
-            'bg-black shadow-sm': isDarkNav && (sticky || isOpen)
-        },
-    )
+    const navStyle = classNames('header navbar py-3 w-100 fixed-top', props.className, {
+        'bg-white shadow-sm': !isDarkNav && (sticky || isOpen),
+        'bg-black shadow-sm': isDarkNav && (sticky || isOpen),
+    })
 
     return (
         <nav className={navStyle}>
@@ -108,7 +104,9 @@ export const Header: FunctionComponent<Props> = props => {
                             onClick={() => setIsOpen(!isOpen)}
                         >
                             <span className="sr-only">Toggle navigation</span>
-                            {[0,1,2].map(key => <div key={key} className="nav-line" />)}
+                            {[0, 1, 2].map(key => (
+                                <div key={key} className="nav-line" />
+                            ))}
                         </button>
 
                         <DesktopNav navLinks={navLinks} hideGetStartedButton={props.hideGetStartedButton} />
