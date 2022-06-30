@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
 import Navbar from 'react-bootstrap/Navbar'
@@ -30,15 +30,50 @@ const onRightClickLogo = (event: React.MouseEvent): void => {
 }
 
 export const Header: FunctionComponent<Props> = props => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState<boolean>(false)
+
+    const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
+    const [sticky, setSticky] = useState<boolean>(false)
+
     const windowWidth = useWindowWidth()
     const isLgOrDown = windowWidth < breakpoints.xl
     const isMdOrDown = windowWidth < breakpoints.lg
-
+    
     const isDarkNav = props.className?.includes('navbar-dark')
 
+    /**
+     * This checks the scroll position to see if the viewport has been
+     * scrolled past the last scroll position.
+     */
+    const handleScroll = (): void => {
+        const scrollPosition = window.scrollY
+    
+        if (scrollPosition > lastScrollPosition && scrollPosition > 1) {
+            setSticky(true)
+        } else if (scrollPosition === 0) {
+            setSticky(false)
+        }
+
+        setLastScrollPosition(scrollPosition)
+    }
+
+    useEffect(() => {    
+      window.addEventListener('scroll', handleScroll)
+
+      return () => window.removeEventListener('scroll', handleScroll)
+    })
+
+    const navStyle = classNames(
+        'header navbar py-3 w-100 fixed-top',
+        props.className,
+        {
+            'bg-white shadow-sm': !isDarkNav && (sticky || isOpen),
+            'bg-black shadow-sm': isDarkNav && (sticky || isOpen)
+        },
+    )
+
     return (
-        <nav className={`header navbar py-3 ${props.className || 'navbar-light'}`}>
+        <nav className={navStyle}>
             <div className={classNames('container-xl', isMdOrDown && 'px-0')}>
                 <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="header mr-0 pt-0 pb-1 d-flex">
                     <img
@@ -60,7 +95,7 @@ export const Header: FunctionComponent<Props> = props => {
                             onClick={() => setIsOpen(!isOpen)}
                         >
                             <span className="sr-only">Toggle navigation</span>
-                            <span className="navbar-toggler-icon" />
+                            {[0,1,2].map(key => <div key={key} className="nav-line" />)}
                         </button>
 
                         <DesktopNav navLinks={navLinks} hideGetStartedButton={props.hideGetStartedButton} />

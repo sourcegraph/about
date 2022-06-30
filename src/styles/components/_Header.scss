@@ -1,5 +1,7 @@
 // stylelint-disable declaration-property-unit-whitelist
 .header {
+    transition: all 0.3s ease-in-out;
+
     &__nav-link.btn:hover {
         color: $light !important;
     }
@@ -98,5 +100,26 @@
                 color: $light-5;
             }
         }
+    }
+
+    .navbar-toggler {
+        border: 0;
+        padding: 8px 4px;
+        width: 35px;
+        height: 30px;
+        position: relative;
+        transition: 0.3s all ease-in-out;
+    }
+    .nav-line {
+        width: 100%;
+        height: 2px;
+        background: #000;
+        
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+    &.navbar-dark .nav-line {
+        background: #fff;
     }
 }

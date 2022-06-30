@@ -108,7 +108,11 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
             </Head>
 
             {!props.hideHeader && (
-                <div className={props.heroAndHeaderClassName}>
+                <div
+                    className={props.heroAndHeaderClassName}
+                    // eslint-disable-next-line react/forbid-dom-props
+                    style={{ paddingTop: 78 }}
+                >
                     <Header
                         isHome={isHome}
                         isBlog={isBlog}
