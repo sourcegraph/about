@@ -1,5 +1,5 @@
 import { EMPTY_DATA_POINT_VALUE } from '../constants'
-import { ChartAxisProps, AccessorsProps } from '../types'
+import { ChartAxisProps, AccessorsProps } from '../lineChartProps'
 
 /**
  * Returns accessors map which allows charts to get right values from datum object

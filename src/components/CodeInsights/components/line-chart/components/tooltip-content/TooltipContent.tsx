@@ -3,7 +3,7 @@ import React, { ReactElement, useMemo } from 'react'
 import { RenderTooltipParams } from '@visx/xychart/lib/components/Tooltip'
 
 import { getLineStroke } from '../../constants'
-import { LineChartSeriesWithDataProps, PointProps } from '../../types'
+import { LineChartSeriesWithDataProps, PointProps } from '../../lineChartProps'
 
 import { getListWindow, ListWindowProps } from './get-list-window'
 

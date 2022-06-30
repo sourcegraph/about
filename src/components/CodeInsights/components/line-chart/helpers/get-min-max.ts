@@ -1,4 +1,4 @@
-import { AccessorsProps } from '../types'
+import { AccessorsProps } from '../lineChartProps'
 
 /** Returns minimal and maximal value from data series */
 export function getMinAndMax<Datum, Key extends keyof Datum>(

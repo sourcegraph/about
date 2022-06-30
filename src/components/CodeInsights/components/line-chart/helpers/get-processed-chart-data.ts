@@ -1,4 +1,4 @@
-import { AccessorsProps, PointProps, LineChartSeriesWithDataProps, LineChartSeriesProps } from '../types'
+import { AccessorsProps, PointProps, LineChartSeriesWithDataProps, LineChartSeriesProps } from '../lineChartProps'
 
 interface GetProcessedChartDataProps<Datum extends object> {
     data: Datum[]

@@ -30,7 +30,7 @@ import { getYAxisWidth } from './helpers/get-y-axis-width'
 import { getYTicks } from './helpers/get-y-ticks'
 import { usePointerEventEmitters } from './helpers/use-event-emitters'
 import { useScalesConfiguration, useXScale, useYScale } from './helpers/use-scales'
-import { LineChartContentProps as LineChartContentType, onDatumZoneClick, PointProps } from './types'
+import { LineChartContentProps as LineChartContentType, onDatumZoneClick, PointProps } from './lineChartProps'
 
 import styles from './LineChartContent.module.scss'
 

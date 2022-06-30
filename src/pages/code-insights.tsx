@@ -9,6 +9,7 @@ import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
 import { CodeInsightExample } from '@code-insights/CodeInsightsExamples'
+import { CodeInsightExampleType } from '@code-insights/codeInsightsProps'
 import {
     SEARCH_INSIGHT_CSS_MODULES_EXAMPLES_DATA,
     ALPINE_VERSIONS_INSIGHT,
@@ -17,7 +18,6 @@ import {
     LINTER_OVERRIDES,
     REPOS_WITH_CI_SYSTEM,
 } from '@code-insights/mock-data'
-import { CodeInsightExampleType } from '@code-insights/types'
 import {
     BlogResourceItem,
     ContentSection,

@@ -1,7 +1,7 @@
 import React from 'react'
 
+import { CaptureGroupInsightDataProps, SearchInsightDataProps } from './codeInsightsProps'
 import { DATA_SERIES_COLORS } from './constants'
-import { CaptureGroupInsightDataProps, SearchInsightDataProps } from './types'
 
 import styles from './CodeInsightsExamples.module.scss'
 

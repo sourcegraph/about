@@ -4,7 +4,7 @@ import {
     LineChartContentProps as LineChartContentTypeProps,
     LineChartContentProps,
     LineChartSeriesProps,
-} from './components/line-chart/types'
+} from './components/line-chart/lineChartProps'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface SeriesWithQueryProps extends LineChartSeriesProps<any> {

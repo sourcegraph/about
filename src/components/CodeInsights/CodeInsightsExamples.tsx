@@ -3,13 +3,13 @@ import React from 'react'
 import { ParentSize } from '@visx/responsive'
 import classNames from 'classnames'
 
+import { CaptureGroupInsightDataProps, CodeInsightExampleType, SearchInsightDataProps } from './codeInsightsProps'
 import { CodeInsightsQueryBlock } from './components/CodeInsightsQueryBlock'
 import { LegendBlock, LegendItem } from './components/legend/CodeInsightLegend'
 import { getLineStroke } from './components/line-chart/constants'
 import { LineChart } from './components/line-chart/LineChart'
-import { LineChartSeriesProps } from './components/line-chart/types'
+import { LineChartSeriesProps } from './components/line-chart/lineChartProps'
 import { View } from './components/view/View'
-import { CaptureGroupInsightDataProps, CodeInsightExampleType, SearchInsightDataProps } from './types'
 
 import styles from './CodeInsightsExamples.module.scss'
 

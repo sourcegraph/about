@@ -6,7 +6,7 @@ import { PickScaleConfigWithoutType } from '@visx/scale/lib/types/ScaleConfig'
 import { ScaleTime } from 'd3-scale'
 
 import { LineChartSettingsContext } from '../line-chart-settings-provider'
-import { AccessorsProps } from '../types'
+import { AccessorsProps } from '../lineChartProps'
 
 import { getMinAndMax } from './get-min-max'
 

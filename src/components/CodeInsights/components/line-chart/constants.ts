@@ -1,4 +1,4 @@
-import { LineChartSeriesProps } from './types'
+import { LineChartSeriesProps } from './lineChartProps'
 
 /**
  * Default value for line color in case if we didn't get color for line from content config.

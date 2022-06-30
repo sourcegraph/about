@@ -5,7 +5,7 @@ import { EventHandlerParams, GlyphProps } from '@visx/xychart/lib/types'
 import classNames from 'classnames'
 
 import { getLineStroke } from '../constants'
-import { LineChartSeriesProps, PointProps } from '../types'
+import { LineChartSeriesProps, PointProps } from '../lineChartProps'
 
 import { MaybeLink } from './MaybeLink'
 import { dateLabelFormatter } from './TickComponent'
