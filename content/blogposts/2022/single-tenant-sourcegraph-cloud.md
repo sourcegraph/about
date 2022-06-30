@@ -15,7 +15,7 @@ published: true
 
 We believe that great code search is an essential solution for all software developers. That’s why we built a code intelligence platform, with code search at its core, that can be easily deployed by any team.
 
-Over the last year, we’ve invested heavily in developing a managed version of Sourcegraph. This will enable more teams—including the teams that are not able to host their own code search solution—to access a fully-featured code intelligence platform.
+Over the last year, we’ve invested heavily in developing a managed version of Sourcegraph. This will enable more teams—including the teams that are not able to host their own code search solution—to access a full-featured code intelligence platform.
 
 We invested in managed Sourcegraph in two ways. First, we expanded Sourcegraph.com. This site is a massive, multi-tenant instance of Sourcegraph, originally built as a way to search open source code. We pushed the scale of Sourcegraph.com in several ways: 
 - We indexed millions of open source repositories across multiple code hosts and made them searchable.
@@ -45,7 +45,7 @@ Note that this does not mean your repositories themselves will be deleted; we wi
 
 We will also be sunsetting the team beta on Sourcegraph.com. For customers currently paying for a Sourcegraph.com team account, your accounts will be migrated to a dedicated Sourcegraph Cloud instance. All teams have received a message directly from their Customer Engineer, who will help with the transition.
 
-For users who are participating in the team beta but have decided not to purchase Sourcegraph Cloud at this time, your team access will end on August 1, 2022, meaning your organization (and organization’s code) will be removed from Sourcegraph.com. If you’d like to continue using Sourcegraph for your team, you [get a demo of the single-tenant solution](https://about.sourcegraph.com/demo), or [try out a self-hosted installation of Sourcegraph](https://docs.sourcegraph.com/#quick-install) (which is free for small teams).
+For users who are participating in the team beta but have decided not to purchase Sourcegraph Cloud at this time, your team access will end on August 1, 2022, meaning your organization (and organization’s code) will be removed from Sourcegraph.com. If you’d like to continue using Sourcegraph for your team, you can [get a demo of the single-tenant solution](https://about.sourcegraph.com/demo), or [try out a self-hosted installation of Sourcegraph](https://docs.sourcegraph.com/#quick-install) (which is free for small teams).
 
 **Bringing Sourcegraph.com back to its roots**
 
