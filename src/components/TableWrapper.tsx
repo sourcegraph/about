@@ -2,9 +2,8 @@ import { FunctionComponent, ReactNode } from 'react'
 
 interface TableWrapperProps {
     children: ReactNode
-    className?: string
 }
 
-export const TableWrapper: FunctionComponent<TableWrapperProps> = ({ className = '', children }) => (
-    <div className={`${className} table-overflow`}>{children}</div>
+export const TableWrapper: FunctionComponent<TableWrapperProps> = ({ children }) => (
+    <div className="table-overflow">{children}</div>
 )
