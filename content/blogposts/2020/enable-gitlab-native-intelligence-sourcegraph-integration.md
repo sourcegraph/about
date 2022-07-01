@@ -42,6 +42,6 @@ This screencast (with accompanying audio) shows how to enable code intelligence 
   <br/>
 </div>
 
-<Alert style="info">
+<Alert type="info">
   See the <a href="https://docs.gitlab.com/ee/integration/sourcegraph.html">GitLab Sourcegraph integration docs</a> for more information.
 </Alert>

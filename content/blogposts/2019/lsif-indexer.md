@@ -12,7 +12,7 @@ published: true
 description: "Writing an LSIF Indexer"
 ---
 
-<Alert style="info">
+<Alert type="info">
 	Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)".
 </Alert>
 
