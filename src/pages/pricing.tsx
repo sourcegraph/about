@@ -230,7 +230,7 @@ const PricingPage: FunctionComponent = () => (
                                             &mdash; François Jehl, Senior Engineering Manager, Criteo
                                         </small>
                                         <img
-                                            src="/external-logos/criteo-logo.png"
+                                            src="/external-logos/criteo-logo.svg"
                                             className="d-block mx-auto my-4"
                                             width="156px"
                                             alt="Criteo logo"
