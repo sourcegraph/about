@@ -73,6 +73,10 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                 <div className={`blog-post__html ${contentClassName}`}>
                     <MDXRemote {...content} components={components as Components} />
                 </div>
+                <div className="try-sourcegraph">
+                    <h4>Interested in seeing a demo of Sourcegraph?</h4>
+                    <p><a href="https://about.sourcegraph.com/demo">You can request a demo here.</a></p>
+                </div>
             </div>
         )}
     </Tag>
