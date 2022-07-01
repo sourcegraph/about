@@ -26,7 +26,7 @@ published: true
 
 ---
 
-<Alert style="info">
+<Alert type="info">
   Want to sign up to liveblog at Strange Loop?
   <a href="https://forms.gle/egsGKSrapRJkhiWw6" className="btn btn-primary ml-3" rel="nofollow" target="_blank"><i className="fa fa-file-pdf pr-2"></i>Sign up here</a>
 </Alert>
