@@ -82,7 +82,7 @@ You might want a progress bar with clock emoji or braille checks, e.g:
 `drawing spinners: ⠏  🕙`
 
 To do this, we create slice literal of runes for each state:
-```
+```bash
 braille = []rune{'⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'}
 clock   = []rune{'🕒', '🕓', '🕔', '🕕', '🕖', '🕗', '🕘', '🕙', '🕚', '🕛', '🕐', '🕑'}
 ```
@@ -90,7 +90,7 @@ clock   = []rune{'🕒', '🕓', '🕔', '🕕', '🕖', '🕗', '🕘', '🕙',
 The reason we use a slice rather than a string, is that it's much more difficult to index a string of unicode characters.
 
 To make our spinner, we have a loop including a `\r` to move to the start of the line each time, and print the next rune in our slice:
-```
+```bash
 fmt.Printf("\rdrawing spinners: %c  %c", braille[i%len(braille)], clock[i%len(clock)])
 ```
 

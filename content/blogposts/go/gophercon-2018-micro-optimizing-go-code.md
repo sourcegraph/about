@@ -150,7 +150,7 @@ avoids function call overhead, but increases binary size.
 Is it worth it? In this case making the function inline will give a 70% speed boost.
 
 How do you know if a function will inline?
-```
+```bash
 go test -gcflags="-m=2" 2>&1 | grep "too complex"
 ```
 

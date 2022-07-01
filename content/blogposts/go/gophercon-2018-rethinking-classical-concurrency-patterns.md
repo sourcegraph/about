@@ -329,7 +329,7 @@ One of the problems are idle workers:
 
 This makes it hard to debug, because the useful information is spread between lots of idle workers that are not relevant.
 
-```
+```text
        2 kilobytes
      x N workers
      = ?

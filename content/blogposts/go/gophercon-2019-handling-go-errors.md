@@ -351,7 +351,7 @@ if err != nil {
 
 #### What is an Operation?
 
-```
+```go
 type Op string
 ```
 
@@ -414,7 +414,7 @@ What does our stacktrace look like now?
 
 vs.
 
-```
+```bash
 // classic stacktrace
 goroutine 19 [running]:
 net/http.(*conn).serve.func1(0xc0000928c0)
@@ -450,7 +450,7 @@ created by net/http.(*Server).Serve
 
 #### Query your stack trace
 
-```
+```SQL
 SELECT * FROM logs WHERE operations.include("login.Validate")
 
 ["account.getUser"],

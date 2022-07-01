@@ -73,7 +73,7 @@ Conditional execution of steps was already possible to some extent by passing `s
 
 In this release, we are introducing [`steps.if`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-if) to allow for `steps` to run conditionally.
 
-```
+```text
 steps:
   - if: ${{ eq repository.name "github.com/sourcegraph/automation-testing" }}
     run: echo "this container starts only on a specific repository!" >> message.txt

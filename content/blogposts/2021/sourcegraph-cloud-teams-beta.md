@@ -14,8 +14,8 @@ published: true
 ![Sourcegraph Cloud for teams now in private beta/](/blog/cloud-beta-launch-post.png)
 
 <Alert>
-  <strong>Update:</strong>  The Sourcegraph Cloud private beta (for teams) is now closed to new signups. If you are interested in using Sourcegraph for your team, you can get started via <a href="/get-started/self-hosted">self-hosting</a> or <a href="/demo"> get in contact with us for a demo</a>.
-  Sourcegraph Cloud is still available for individuals at <a href="http://sourcegraph.com/"> Sourcegraph.com</a>.
+  <strong>Update:</strong>  The Sourcegraph Cloud private beta (for teams) is now closed. If you are interested in using Sourcegraph for your team, you can get started via <a href="/get-started/self-hosted">self-hosting</a> or <a href="/demo"> get in contact with us for a demo of single-tenant Sourcegraph Cloud</a>.
+<a href="http://sourcegraph.com/">Sourcegraph.com</a> is still available for individuals to search OSS code.
 </Alert>
 
 Sourcegraph Cloud for teams brings enterprise advantages to small teams. Not ready to bring your team along? You can use [Sourcegraph.com](https://sourcegraph.com) to search your personal repos and the open source universe today.
