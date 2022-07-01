@@ -15,45 +15,40 @@ This is a great resource that we hope will make these communities accessible to 
 
 Here are the communities currently supported:
 
-<a target="_blank" href="https://sourcegraph.com/kubernetes">
-  <h2 className="text-center">Kubernetes</h2>
-  <Figure 
-    alt="K8s search page" 
-    src="https://sourcegraphstatic.com/blog/3.18/k8s-search-page.png"
-  />
-</a>
+<h2 className="text-center">Kubernetes</h2>
+<Figure 
+  alt="K8s search page" 
+  src="https://sourcegraphstatic.com/blog/3.18/k8s-search-page.png"
+  link={{ href: 'https://sourcegraph.com/kubernetes', alt: 'Sourcegraph search page for Kubernetes' }}
+/>
 
-<a target="_blank" href="https://sourcegraph.com/refactor-python2-to-3">
-  <h2 className="text-center">Python 2 to Python 3 migration</h2>
-  <Figure
-    alt="Python search page" 
-    src="https://sourcegraphstatic.com/blog/3.18/resize-python-search-page.png"
-  />
-</a>
+<h2 className="text-center">Python 2 to Python 3 migration</h2>
+<Figure
+  alt="Python search page" 
+  src="https://sourcegraphstatic.com/blog/3.18/resize-python-search-page.png"
+  link={{ href: 'https://sourcegraph.com/refactor-python2-to-3', alt: 'Sourcegraph search page for refactoring Python 2 and Python 3' }}
+/>
 
-<a target="_blank" href="https://sourcegraph.com/golang">
-  <h2 className="text-center">Go</h2>
-  <Figure 
-    alt="Golang search page" 
-    src="https://sourcegraphstatic.com/blog/3.18/golang-search-page.png"
-  />
-</a>
+<h2 className="text-center">Go</h2>
+<Figure 
+  alt="Golang search page" 
+  src="https://sourcegraphstatic.com/blog/3.18/golang-search-page.png"
+  link={{ href: 'https://sourcegraph.com/golang', alt: 'Sourcegraph search page for the Go programming language' }}
+/>
 
-<a target="_blank" href="https://sourcegraph.com/react-hooks">
-  <h2 className="text-center">React Hooks</h2>
-  <Figure 
-    alt="React search page" 
-    src="https://sourcegraphstatic.com/blog/3.18/react-search-page.png"
-  />
-</a>
+<h2 className="text-center">React Hooks</h2>
+<Figure 
+  alt="React search page" 
+  src="https://sourcegraphstatic.com/blog/3.18/react-search-page.png"
+  link={{ href: 'https://sourcegraph.com/react-hooks', alt: 'Sourcegraph search page for React Hooks' }}
+/>
 
-<a target="_blank" href="https://sourcegraph.com/android">
-  <h2 className="text-center">Android</h2>
-  <Figure 
-    alt="Android search page"
-    src="https://sourcegraphstatic.com/blog/3.18/resize-android-search-page.png"
-  />
-</a>
+<h2 className="text-center">Android</h2>
+<Figure 
+  alt="Android search page"
+  src="https://sourcegraphstatic.com/blog/3.18/resize-android-search-page.png"
+  link={{ href: 'https://sourcegraph.com/android', alt: 'Sourcegraph search page for Android' }}
+/>
 
 ...and more to come. If you are a member of another community that you think would benefit from having a custom Sourcegraph search page, [let us know](https://github.com/sourcegraph/sourcegraph/issues/new/choose)!
 
