@@ -155,7 +155,7 @@ const extractItem: IExpressionItem = {
   pid: 42 // implements `ProcessInfoItem.pid`
   …
 }
-```
+``` 
 
 This is a good example of the kind of static analysis that scip-typescript is able to perform. We are excited to extend the functionality of scip-typescript to include related navigation actions like “Go to type definition.”
 

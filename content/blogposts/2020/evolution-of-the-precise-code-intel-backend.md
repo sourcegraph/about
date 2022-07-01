@@ -41,7 +41,7 @@ In February 2019, to our surprise and delight, Dirk Bäumer, one of the creators
 
 LSIF provides a cross-language serialization format that describes the data needed to quickly resolve actions like go-to-definition and find-references. Raw LSIF data is JSON that looks like this:
 
-```
+```json
 {"id":"13","type":"vertex","label":"definitionResult"}
 {"id":"14","type":"edge","label":"textDocument/definition","outV":"11","inV":"13"}
 {"id":"15","type":"edge","label":"item","outV":"13","inVs":["10"],"document":"7"}

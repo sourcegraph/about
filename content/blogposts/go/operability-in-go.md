@@ -91,7 +91,7 @@ Here's some good sources of information to aid your diagnosis:
 Structured logging is nice. It makes it easier to scan, analyze, and filter your logs.
 
 You can do structured logging with https://github.com/sirupsen/logrus:
-```
+```go
 	log.WithFields(logrus.Fields{
 		"animal": "walrus",
 		"number": 8,
@@ -108,12 +108,12 @@ Here's an example of structured logging:
 ### A note on logging errors:
 
 Some errors provide good context. For example
-```
+```text
 listen tcp :33712: bind: address already in use
 ```
 
 "Named" errors do not:
-```
+```text
 unexpected EOF
 ```
 
@@ -147,7 +147,7 @@ Beyond logging, how can we expose useful information in production?
 
 It exposes this information via a HTTP handler that returns data in a form that looks like this:
 
-```
+```json
 {
   "cmdline": [
     ".\/expvar_example"
@@ -162,7 +162,7 @@ It exposes this information via a HTTP handler that returns data in a form that 
 
 You can also specify your own state via the `Publish` method, which accepts a `Func` that returns an arbitrary `interface{}` that is then marshalled to JSON in the `expvar` HTTP endpoint:
 
-```
+```go
 func init() {
   	http.HandleFunc("/debug/vars", expvarHandler)
   	Publish("cmdline", Func(cmdline))
@@ -173,7 +173,7 @@ func init() {
 You can use this to expose key environment variables, command-line flags, and even secrets (provided you securely hash the values so you can do equality comparisons without leaking the actual secret to the HTTP endpoint).
 
 Environment variables:
-```
+```go
 func publishEnv() map[string]string {
   env := make(map[string]string)
   for _, line := range os.Environ() {
@@ -185,7 +185,7 @@ func publishEnv() map[string]string {
 ```
 
 Flag values:
-```
+```go
 func publishFlags() {
   flagMap := make(map[string]interface{})
   flag.VisitAll(func(f *flag.Flag) {
@@ -198,7 +198,7 @@ func publishFlags() {
 
 
 You can also publish stack traces:
-```
+```go
 func publishStack() interface{} {
 	buf := make([]byte, 65535)
 	n := runtime.Stack(buf, true)

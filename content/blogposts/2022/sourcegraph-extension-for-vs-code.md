@@ -27,7 +27,7 @@ When working on a plugin issue, I first start with the repository that the issue
 
 I ran the following search query to find all Sourcegraph extensions we have (repository name pattern is sourcegraph-extension-name) which make use of the rxjs library:
 
-```
+```text
 repo:^github\.com/sourcegraph/sourcegraph-.+$  /import .+ from 'rxjs'/
 ```
 
@@ -42,7 +42,7 @@ Using this regex and the Sourcegraph Extension, I was able to find the code I wa
 
 Code search is really useful for error researching as well. You might have heard of the [log4j vulnerability](/blog/log4j-log4shell-0-day/) that was recently in the news. In such widely impactful security vulnerabilities, it’s really important to move as fast as possible. Luckily, in our case, the security team was able to identify the packages that were potentially affected. All we had to do was to build a search query. In this case, we used the language filter to make sure we searched for gradle files and made sure to include the log4j import statement along with the affected versions:
 
-```
+```text
 gradle org\.apache\.logging\.log4j ['"] 2\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16)(\.[0-9]+)
 ```
 

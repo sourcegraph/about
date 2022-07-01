@@ -314,11 +314,11 @@ Problems with this approach:
 The *execution tracer* might be the best tool at our disposal to understand the impact of allocating in granular detail.
 
 The execution tracer captures very granular runtime events over a short time window:
-```
+```shell
 curl localhost:6060/debug/pprof/trace?seconds=5 > trace.out
 ```
 You can visualize the output in a web UI:
-```
+```go
 go tool trace trace.out
 ```
 ...though it can be a little dense:
@@ -364,7 +364,7 @@ Okay, now onto things we can change in code to improve allocation/GC behavior...
 ### Limit pointers
 
 The Go compiler can be enticed to tell you why a variable is heap-allocated:
-```
+```go
 go build -gcflags="-m -m"
 ```
 but its output is a bit unwieldy.

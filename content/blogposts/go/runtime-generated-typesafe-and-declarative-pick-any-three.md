@@ -34,7 +34,7 @@ You can view Jon's code on [Sourcegraph](https://sourcegraph.com/github.com/jonb
 We brag about language features. Take these examples:
 
 "My language has immutability"
-```
+```go
 (let [my-vector [1 2 3 4]
 	  my-map {:fred "ethel}
 	  my-list {list 4 3 2 1}]
@@ -49,7 +49,7 @@ We brag about language features. Take these examples:
 ```
 
 "My language has generics"
-```
+```go
 case class ListNode(+T)(h: T, t: ListNode[T]) {
 	def head: T = h
 	def trail: ListNode[T] = t
@@ -58,7 +58,7 @@ case class ListNode(+T)(h: T, t: ListNode[T]) {
 ```
 
 "My language has unreadible syntax"
-```
+```go
 life←{↑1 ⍵∨.∧3 4=+/, ̄1 0 1∘.⊖ ̄1 0 1∘.⌽⊂⍵}
 ```
 
@@ -81,7 +81,7 @@ This talk is based on Proteus is a simple tool for generating an application's d
 
 ### Under the Hood
 Let's start with a simple `init` and `main` function that is responsible for setting up the `PostgresDB`
-```
+```go
 var personDao PersonDao
 
 func init() {
@@ -123,7 +123,7 @@ Before we dive into writing a full implementation of `DoPersonStuff` it's import
 ### Reflection
 
 We can use the [reflect package](https://golang.org/pkg/reflect/#pkg-examples) to get the type of a variable, the kind of a variable, the type of a pointer, and create a type token.
-```
+```go
 // Get the type of a variable
 varType := reflect.TypeOf(var)
 
@@ -140,7 +140,7 @@ token := reflect.TypeOf((*io.Reader)(nil)).Elem()
 In addition to getting the type you can use [reflect package](https://golang.org/pkg/reflect/#pkg-examples) to find the values.
 
 First create a `reflect.Value` and in order to modify it we need to make it a pointer.
-```
+```go
 var := 10
 var2 := 20
 varVal := reflect.ValueOf(&var)
@@ -148,7 +148,7 @@ varVal2 := reflect.ValueOf(var2)
 ```
 
 Reading the value of a pointer is straightforward as well:
-```
+```go
 // For a pointer
 varVal.Elem().Interface()
 varVal2.Interface()
@@ -170,7 +170,7 @@ We use the struct tags to get the fields and the values so that we can store our
 
 ### How do you turn a SQL string into runnable code?
 To turn a SQL string into runnable code we generate functions at runtime using the reflect package. For example:
-```
+```go
 type Calculator func(a, b int) int
 
 func MemoizeCalculator(c Calculator) Calculator {
@@ -196,7 +196,7 @@ func MemoizeCalculator(c Calculator) Calculator {
 ```
 
 So let's say we have these two functions that take advantage of our memoization:
-```
+```go
 func AddSlowly(a, b int) int {
   time.Sleep(1 * time.Second)
   return a + b
@@ -211,7 +211,7 @@ This has lots of overhead if you were to use these generated functions, however 
 ### Struct fields can be functions
 We use the struct to hold our generated queries. Let's start to put the above concepts together by creating a struct with fields that are functions.
 
-```
+```go
 type PersonDao struct {
 	Create func(/*Parameters*/) `proq:"CREATE SQL QUERY GOES HERE"`
 	Get    func(/*Parameters*/) `proq:"READ SQL QUERY GOES HERE"`
@@ -231,7 +231,7 @@ func init() {
 
 When you use these, it looks like standard Go code.
 
-```
+```go
 func DoPersonStuff() {
 	personDao.Create()
 	personDao.Get()
@@ -243,7 +243,7 @@ func main() {
 }
 ```
 
-```
+```go
 func Build(dao interface{}) error {
 	daoPointerType := reflect.TypeOf(dao)
 	//must be a pointer to struct
@@ -305,7 +305,7 @@ Queries can be broken into two types:
 
 We need to write a querier that returns rows from the datastore and an executor that runs queries that modify the datastore.
 
-```
+```go
 // Querier runs queries that return Rows from the datastore
 type Querier interface {
   Query(query string, args ...interface{}) (Rows, error)
@@ -319,7 +319,7 @@ type Executor interface {
 
 A problem that arises is returning `sql.Rows != returning Rows` where `Rows` is defined as
 
-```
+```go
 type Rows interface {
 	Next() bool
 	Err() error
@@ -329,7 +329,7 @@ type Rows interface {
 }
 ```
 The solution is to create an adapter struct and a factory function.
-```
+```go
 func Adapt(sqle Sql) Wrapper {
   return sqlAdapter{sqle}
 }
@@ -355,7 +355,7 @@ type Sql interface {
 
 Now we can improve our stubbed implementation of `makeImplementation` to use the executor and querier.
 
-```
+```go
 var exType = reflect.TypeOf((*Executor)(nil)).Elem()
 var qType = reflect.TypeOf((*Querier)(nil)).Elem()
 func makeImplementation(funcType reflect.Type, query string)
@@ -375,7 +375,7 @@ func makeImplementation(funcType reflect.Type, query string)
 ```
 
 Two new functions were introduced depending on which case statement is used:
-```
+```go
 func makeExecutorImplementation(funcType reflect.Type, query string)
                                (func([]reflect.Value) []reflect.Value, error) {
 	return func(args []reflect.Value) []reflect.Value {
@@ -400,7 +400,7 @@ func makeQuerierImplementation(funcType reflect.Type, query string)
 ```
 
 We also define a new interface Wrapper that is a wrapper for our querier and executor interfaces.
-```
+```go
 type Wrapper interface {
   Executor
   Querier
@@ -409,7 +409,7 @@ type Wrapper interface {
 
 Going back to our stubbed client code, we modify `PersonDao struct` to include SQL commands.
 
-```
+```go
 type PersonDao struct {
   Create func(Executor /*Parameters*/) `proq:"INSERT INTO PERSON(name, age) VALUES(:name:, :age:)"`
   Get    func(Querier /*Parameters*/)  `proq:"SELECT * FROM PERSON WHERE id = :id:"`
@@ -437,7 +437,7 @@ Next, associate the parameters to query placeholders.
 
 Since Go doesn't save parameters names we cannot use `reflect` to get them at runtime. So we use a second struct tag key/value pair to map the names to their position `prop:"id,name,age"`. It's then necessary to define a ParamAdapter because different bases use different parameter notation.
 
-```
+```go
 type ParamAdapter func(pos int) string
 func MySQL(pos int) string {
 	return "?"
@@ -469,7 +469,7 @@ Now we are ready to return back values.
 ### Executors First
 The executor type will be an `int64` and an `error`. The executor will first look at the `sql.Result` and `error` returned. If there is an error we handle it. Otherwise, we get the number of rows modified and once again handle the error if necessary. Lastly, we return the number of rows and a `nil` error.
 
-```
+```go
 var errType = reflect.TypeOf((*error)(nil)).Elem()
 var errZero = reflect.Zero(errType)
 
@@ -495,7 +495,7 @@ func makeExecutorImplementation(funcType reflect.Type, query string, paramOrder 
 ```
 
 Our client code is modified as:
-```
+```go
 type PersonDao struct {
     Create func(e Executor, name string, age int) (int64, error) `proq:"INSERT INTO PERSON(name, age) VALUES(:name:, :age:)" prop:"name,age"`
     Get    func(q Querier, id int) `proq:"SELECT * FROM PERSON WHERE id = :id:" prop:"id"`
@@ -520,7 +520,7 @@ However, returning the count of the rows isn't really what we are looking for. W
 
 ### Return back values
 To return back real data we need to define a struct with struct tags to map fields to query results.
-```
+```go
 type Person struct {
 	Id   int    `prof:"id"`
 	Name string `prof:"name"`
@@ -528,12 +528,12 @@ type Person struct {
 }
 ```
 The return type will be a pointer to a struct and an error
-```
+```go
 Get func(q Querier, id int) (*Person, error) `proq:"SELECT * FROM PERSON WHERE id = :id:" prop:"id"`
 ```
 
 Let's update our `makeQuerierImplementation` to return a value back from the database:
-```
+```go
 func makeQuerierImplementation(funcType reflect.Type, query string, paramOrder []paramInfo) (func([]reflect.Value) []reflect.Value, error) {
   firstResult := funcType.Out(0)
   zeroVal := reflect.Zero(firstResult)
@@ -558,7 +558,7 @@ func makeQuerierImplementation(funcType reflect.Type, query string, paramOrder [
 ```
 
 Build a mapper:
-```
+```go
 func buildMapper(returnType reflect.Type, zeroVal reflect.Value) Builder {
     //build map of col names to field names (makes this 2N instead of N^2)
     colFieldMap := map[string]fieldInfo{}
@@ -583,7 +583,7 @@ func buildMapper(returnType reflect.Type, zeroVal reflect.Value) Builder {
 ```
 
 Populate the return value:
-```
+```go
 func populateReturnVal(returnVal reflect.Value, cols []string, vals []interface{}, colFieldMap map[string]fieldInfo) error {
     val := returnVal.Elem()
     for k, v := range cols {
@@ -602,7 +602,7 @@ func populateReturnVal(returnVal reflect.Value, cols []string, vals []interface{
 ```
 
 Lastly, map the row:
-```
+```go
 func mapOneRow(rows Rows, mapper Mapper, zeroVal reflect.Value) (reflect.Value, error) {
     if !rows.Next() {
         if err := rows.Err(); err != nil {
@@ -629,12 +629,12 @@ Now we are returning real values back from our datastore, but this is only for s
 
 ### Returning multiple values
 To do this we use a slice of a struct and an error for the return type. The function looks like:
-```
+```go
 GetAll func(q Querier) ([]Person, error) `proq:"SELECT * FROM PERSON"`
 ```
 
 We follow the same implementation as before, but we do this for multiple rows instead of a single row.
-```
+```go
 func makeQuerierImplementation(funcType reflect.Type, query string, paramOrder []paramInfo)
                               (func([]reflect.Value) []reflect.Value, error) {
     // skipping unchanged code

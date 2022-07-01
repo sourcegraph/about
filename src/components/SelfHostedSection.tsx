@@ -37,7 +37,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                         ))}
                     </ul>
 
-                    <Link href="/get-started" passHref={true}>
+                    <Link href="/get-started/self-hosted" passHref={true}>
                         <a
                             className="d-inline-block text-lg"
                             href="#none"
@@ -45,7 +45,7 @@ export const SelfHostedSection: FunctionComponent = () => (
                             data-button-location={buttonLocation.trySourcegraph}
                             data-button-type="cta"
                         >
-                            Learn about self-hosted vs Cloud features
+                            Learn about self-hosted
                         </a>
                     </Link>
 

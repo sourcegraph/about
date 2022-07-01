@@ -206,7 +206,7 @@ Let's say we want to add an additional parameter to call sites of the function, 
 file](https://sourcegraph.com/github.com/sourcegraph/sourcegraph@e6691da7035873fd6394e16cdf32d2f8537fb9e1/-/blob/cmd/frontend/internal/app/errorutil/handlers.go#L19:6)). In
 Emacs, I can describe the change I'd like to make in the following keystrokes:
 
-```
+```emacs
 Ctrl-x (                   # begin recording the macro
 Ctrl-s errorutil.Handler(  # search for the pattern
 Ctrl-Alt-n Ctrl-b          # jump to one character before the end parens
@@ -219,7 +219,7 @@ Once I've recorded the macro, I can replay my keystrokes with `C-x e` and can ho
 it repeatedly.
 
 Here's another example involving data transformation. Say you want to turn an HTML table like this:
-```
+```html
 <table>
   <tr><td>John</td><td>25</td><tr>
   <tr><td>Alice</td><td>24</td></tr>
@@ -228,7 +228,7 @@ Here's another example involving data transformation. Say you want to turn an HT
 </table>
 ```
 into a JSON list like this:
-```
+```json
 [
   { "name": "John", "age": 25 },
   { "name": "Alice", "age": 24},
@@ -237,7 +237,7 @@ into a JSON list like this:
 ]
 ```
 To do that with keyboard macros in Emacs, you can type this:
-```
+```emacs
 Ctrl-x (                             # begin recording the macro
 Ctrl-s < t d Ctrl-f                  # move cursor to 'John'
 Ctrl-<space> Ctrl-a Ctrl-w           # delete everything on the line prior to 'John'
@@ -327,7 +327,7 @@ Suppose again you're adding an additional parameter to the `errorutil.Handler` [
 and now need to update all call sites of that function to pass some default value for the extra
 argument. You can do that[^5] in a one-liner with `grep` and `sed`:
 
-```
+```perl
 grep -lRE 'errorutil\.Handler' | xargs sed -i -E 's/Handler\(([A-Za-z0-9_\.]+)\)/Handler(\1, "default value")/'
 ```
 
@@ -355,7 +355,7 @@ faster and has more user-friendly defaults (e.g., you don't need to remember to 
 `-RE` to get the behavior you want). Here's the one-liner above rewritten with ripgrep, instead of
 grep:
 
-```
+```perl
 rg -l 'errorutil\.Handler' | xargs sed -i -E 's/Handler\(([A-Za-z0-9_\.]+)\)/Handler(\1, "default value")/'
 ```
 
@@ -370,7 +370,7 @@ interactively. This is the approach taken by [Codemod](https://github.com/facebo
 
 Here's how you would use `codemod` to add an additional argument to `errorutil.Handler` call sites:
 
-```
+```python
 codemod -m -d . --extensions go 'errorutil.Handler\(([A-Za-z0-9_\.]+)\)' 'errorutil.Handler(\1, "default value")'
 ```
 
@@ -438,7 +438,7 @@ this domain.[^10]
 
 Here is a Comby one-liner that handles adding an extra argument to `errorutil.Handler`:
 
-```
+```ocaml
 rg -l errorutil | xargs comby -in-place 'errorutil.Handler(:[1])' 'errorutil.Handler(:[1], "default value")'
 ```
 
@@ -458,14 +458,14 @@ in this post.
 Comby can also express patterns that cannot be expressed in any regex. Consider the following call
 site:
 
-```
+```ocaml
 errorutil.Handler(someOtherFunction(blah))
 ```
 
 This call site would not be selected by our earlier regular expression, which doesn't account for
 the nested parens. We could update the regex to account for one layer of nested parens:
 
-```
+```ocaml
 errorutil\.Handler\((\w*\(\w*\)|\w+)\)
 ```
 
@@ -554,7 +554,7 @@ Here's how you'd do that in a campaign:
 
 1. Create a JSON file named `wrapped-errors.action.json` with the following contents:
 
-   ```
+   ```json
    {
      "scopeQuery": "repo:^github.com/sourcegraph/ fmt.Errorf",
      "steps": [
