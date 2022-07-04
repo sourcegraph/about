@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { BlockquoteWithBorder, EmbeddedHubSpot, Video, YouTube } from '@components'
+import { BlockquoteWithBorder, EmbeddedHubSpot, Video, YouTube, TrySourcegraph } from '@components'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
@@ -73,11 +73,9 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
                 <div className={`blog-post__html ${contentClassName}`}>
                     <MDXRemote {...content} components={components as Components} />
                 </div>
-                <div className="try-sourcegraph">
-                    <h4>Interested in seeing a demo of Sourcegraph?</h4>
-                    <p><a href="https://about.sourcegraph.com/demo">You can request a demo here.</a></p>
-                </div>
             </div>
         )}
+        <TrySourcegraph />
     </Tag>
+    
 )
