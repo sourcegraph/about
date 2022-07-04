@@ -14,7 +14,7 @@ export const CaseStudy: FunctionComponent = () => (
         <CaseStudyLayout
             customer="Criteo"
             title="Criteo uses Sourcegraph universal code search to tackle Big Code"
-            logo="/external-logos/criteo-white-logo.svg"
+            logo="/external-logos/criteo-logo.svg"
             quote={{
                 text: "Sourcegraph pays for itself many times over—it's a game changer.",
                 author: 'François Jehl, Senior Engineering Manager, Criteo',
