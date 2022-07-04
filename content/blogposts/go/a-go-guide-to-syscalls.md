@@ -53,7 +53,7 @@ It is helpful to review the Linux man page to better understand `ptrace` and Liz
 * Attachment and subsequent commands are per thread
 * Ptrace commands are always sent to a specific tracee using a call of the form
 
-> ```
+```go
 ptrace(PTRACE_food, pid, …)
 ```
 

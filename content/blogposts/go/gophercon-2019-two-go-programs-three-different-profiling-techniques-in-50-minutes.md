@@ -85,13 +85,13 @@ Check for an EOF and a space - so we can count for words and also check for lett
 
 Let's build and run this program:
 
-```
+```bash
 go build 
 go run main.go
 ```
 
 We have some text:
-```
+```bash
 vim moby.txt
 ```
 1.2 MB text of a fine prose.
@@ -191,7 +191,7 @@ main.fillPixel - using all the CPU time here. But its hard to improve the algori
 
 Lets use the *trace* tool to find out.
 
-```
+```bash
 go tool trace trace.out
 ```
 
@@ -238,7 +238,7 @@ We saw from the previous trace that the program is running sequentially and not 
 
 Mandelbrot generation is known as embarrassingly_parallel. Each pixel is independent of any other, they could all be computed in parallel. So, let’s try that.
 
-```
+```text
 % go build mandelbrot.go
 % time ./mandelbrot -mode px
 2017/09/17 13:19:48 profile: trace enabled, trace.out
@@ -258,7 +258,7 @@ Using one goroutine per pixel was too fine grained. There wasn't’t enough work
 
 Instead, let’s try processing one row per goroutine.
 
-```
+```bash
 % go build mandelbrot.go
 % time ./mandelbrot -mode row
 2017/09/17 13:41:55 profile: trace enabled, trace.out

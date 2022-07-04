@@ -40,7 +40,7 @@ kops takes you from a cluster definition to a working Kubernetes deployment in t
 
 Here's what some of the configuration YAML looks like:
 
-```
+```yaml
 apiVersion: “kops/v1alpha2”
 kind: “Cluster”
 kubernetesVersion: “1.7.0”

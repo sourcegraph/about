@@ -57,13 +57,13 @@ There’s a simple way for most language-level package managers to reference a s
 
 For npm, you can simply do
 
-```
+```shell
 npm install git+https://github.com/organization/repository.git#commit
 ```
 
 For Go modules, you can do
 
-```
+```go
 go get github.com/organization/repository@commit
 ```
 

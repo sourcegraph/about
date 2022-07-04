@@ -76,7 +76,7 @@ We could implement our own `Accept()` method which reads the bytes we need befor
 
 What’s the alternative? We can’t block on `Accept()`, but there's a function that’s specifically for reading from the network, and it runs in its own goroutine: `net.Conn.Read()`. So I implemented my own “wrapper” over the standard `net.Conn` type:
 
-```
+```go
 type clientHelloConn struct {
     net.Conn
     listener  *tlsHelloListener
@@ -89,7 +89,7 @@ We have it keep a reference to the listener so it can store the parsed data in t
 
 Back to the `tlsHelloListener` for a moment. Right now, it acts like the plain TCP listener embedded inside it. We need to make it act like a TLS listener:
 
-```
+```go
 func (l *tlsHelloListener) Accept() (net.Conn, error) {
     conn, err := l.Listener.Accept()
     if err != nil {
@@ -112,7 +112,7 @@ This is tricky. Not only are we dealing with highly volatile network environment
 
 The first iteration of our `Read()` is a simple pass-thru that doesn't do anything custom:
 
-```
+```go
 func (c *clientHelloConn) Read(b []byte) (n int, err error) {
     return c.Conn.Read(b)
 }
@@ -120,7 +120,7 @@ func (c *clientHelloConn) Read(b []byte) (n int, err error) {
 
 Booorrrring. So what do we know? We know that we need to read the ClientHello if it hasn’t already been read. But if it has, our job is done, and it can carry on as if we weren't there:
 
-```
+```go
 func (c *clientHelloConn) Read(b []byte) (n int, err error) {
     if c.readHello {
         return c.Conn.Read(b)
@@ -131,7 +131,7 @@ func (c *clientHelloConn) Read(b []byte) (n int, err error) {
 
 We can replace our TODO with some code to read the header:
 
-```
+```go
 hdr := make([]byte, 5)
 n, err = io.ReadFull(c.Conn, hdr)
 if err != nil {
@@ -145,7 +145,7 @@ Easy, right? **Danger, danger!** We are reading bytes from an untrusted client f
 
 So scratch that `ReadFull()`code above. We’re going to let the standard library do all the reading from the wire and we’ll mooch on what it gets for us. It will take care of timeouts and most edge cases, drastically reducing the error surface. What the standard lib reads in, we will have copied to our little buffer:
 
-```
+```go
 tee := io.TeeReader(c.Conn, c.buf)
 n, err = tee.Read(b) // standard lib does the dangerous stuff!
 if err != nil {
@@ -164,7 +164,7 @@ I [borrowed](https://sourcegraph.com/github.com/mholt/caddy@0a0d2cc1cf12d58c5e38
 
 After we’ve parsed the ClientHello and stored the results in the map, we can clear the buffer and indicate that we’re done:
 
-```
+```go
 c.buf = nil
 c.readHello = true
 return
@@ -174,7 +174,7 @@ return
 
 To bring this full circle, the last piece of the puzzle was to create [an HTTP handler](https://sourcegraph.com/github.com/mholt/caddy@0a0d2cc1cf12d58c5e38680689c78f18044288e6/-/blob/caddyhttp/httpserver/mitm.go#L19:1-20:1) that could read from that map. The most conventional way of doing this is writing an HTTP middleware with a reference to our `tlsHelloListener`:
 
-```
+```go
 type tlsHandler struct {
     next     http.Handler
     listener *tlsHelloListener
@@ -183,7 +183,7 @@ type tlsHandler struct {
 
 Its <a href="https://sourcegraph.com/github.com/mholt/caddy@f49e0c9b560ea7efc25c0b15d422b59f42a6edb1/-/blob/caddyhttp/httpserver/mitm.go#L36:1-37:1">**ServeHTTP()**</a> method looks something like this:
 
-```
+```go
 func (h *tlsHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
     if h.listener == nil {
         h.next.ServeHTTP(w, r)

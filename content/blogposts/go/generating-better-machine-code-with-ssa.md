@@ -27,7 +27,7 @@ The Go compiler was originally based on the Plan9 C compiler, which is old. This
 In the era of Go 1.5, Keith began looking through Go-generated assembly code with the aim of making things faster. He noticed a number of instances where he thought the generated assembly was more verbose than it needed to be.
 
 Consider the following assembly code generated from Go 1.5:
-```
+```go
 MOVQ	AX, BX
 SHLQ	$0x3, BX
 MOVQ	BX, 0x10(SP)
@@ -35,7 +35,7 @@ CALL	runtime.memmove(SB)
 ```
 
 Why is that first MOVQ there? Why not just:
-```
+```go
 SHLQ	$0x3, AX
 MOVQ	AX, 0x10(SP)
 CALL	runtime.memmove(SB)
@@ -43,24 +43,24 @@ CALL	runtime.memmove(SB)
 
 Another example: Why do an expensive multiply operation:
 
-```
+```go
 IMULQ	$0x10, R8, R8
 ```
 instead of a shift operation, which is cheap:
 
-```
+```go
 SHLQ	$0x4, R8
 ```
 
 Yet another example: Writing value to register only to move the value straight to another register:
 
-```
+```go
 MOVQ	R8, 0x20(CX)
 MOVQ	0x20(CX), R9
 ```
 
 Why not just:
-```
+```go
 MOVQ R8, 0x20(CX)MOVQ R8, R9
 ```
 
@@ -119,7 +119,7 @@ All phases of the Go 1.5 compiler dealt in syntax trees as its internal represen
 
 For this code snippet,
 
-```
+```go
 func f(a []int) {
   for i := 0; i < 10; i++ {
     a[i] = 0;
@@ -181,19 +181,19 @@ Consider the case of common subexpression elimination. If you're dealing with a 
 
 With SSA, however, it is clear. In fact, many optimizations can be reduced to simple (and not-so-simple) rewrite rules on the SSA form. Rules like:
 
-```
+```go
 (Mul64 x (Const64 [2])) -> (Add64 x x)
 ```
 
 Here's a rewrite rule that lowers machine-independent operations to machine-dependent operations:
 
-```
+```go
 (Add64 x y) -> (ADDQ x y)
 ```
 
 Rules can also be more complicated:
 
-```
+```go
 (ORQ
     s1:(SHLQconst [j1] x1:(MOVBload [i1] {s} p mem))
     or:(ORQ

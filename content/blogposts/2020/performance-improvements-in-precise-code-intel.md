@@ -97,7 +97,7 @@ We identified that the reading and writing steps (marshalling, unmarshalling, an
 
 Profiling identified JSON parsing as a CPU hotspot, which pointed us to the reader portion of the pipeline. LSIF data is uploaded as JSON that describes the network of nodes and edges that captures the referential structure of code:
 
-```
+```json
 {"id":"13","type":"vertex","label":"definitionResult"}
 {"id":"14","type":"edge","label":"textDocument/definition","outV":"11","inV":"13"}
 {"id":"15","type":"edge","label":"item","outV":"13","inVs":["10"],"document":"7"}
@@ -282,7 +282,7 @@ for _, location := range locations {
 
 The `locations` slice holds non-pointer struct values, each of which has around 20 fields. On each iteration of the loop, one of these values is copied into the portion of the stack allocated to hold the loop variable `location`. go-lint warns us about this:
 
-```
+```text
 rangeValCopy: each iteration copies 216 bytes (consider pointers or indexing) (gocritic) go-lint
 ```
 
