@@ -196,10 +196,6 @@ table tbody + tbody {
     border-top: 2px solid $light-gray-1;
 }
 
-.table-overflow {
-    overflow-x: auto;
-}
-
 /* ==================== BEM Pages/Components ==================== */
 
 @import 'components/blog/BlogPost';
@@ -344,4 +340,8 @@ $positions: ('top', 'right', 'bottom', 'left');
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.table-overflow {
+    overflow-x: auto;
 }
