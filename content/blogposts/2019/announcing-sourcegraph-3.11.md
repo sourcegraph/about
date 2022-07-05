@@ -79,12 +79,12 @@ The management console has been completely removed and there is now a single sit
 
 In the rare event that your Sourcegraph instance is misconfigured and causes the UI to become inaccessible, we have added an [escape hatch file](https://docs.sourcegraph.com/admin/config/site_config#editing-your-site-configuration-if-you-cannot-access-the-web-ui) that allows you to edit your site configuration without the web UI. Upon saving, the updated configuration will be synchronized from the file and applied to your Sourcegraph instance.
 
-<div className="alert alert-warning mx-auto" style={{width: '40rem'}}>
+<Alert type="warning">
   <div>
     <strong>NOTE:</strong>
     If you’re using the <code>CRITICAL_CONFIG_FILE</code> or <code>SITE_CONFIG_FILE</code> environment variables please see our <a href="https://docs.sourcegraph.com/admin/migration/3_11#management-console-removal">management console migration guide</a> for more details.
   </div>
-</div>
+</Alert>
 
 ## High-level health monitoring
 
