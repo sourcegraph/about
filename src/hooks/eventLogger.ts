@@ -35,9 +35,16 @@ export const useEventLogger = (): void => {
 export const useLogAllLinkClicks = (): void => {
     useEffect(() => {
         const links = document.querySelectorAll('a')
-        for(const link of links) {
+        for (const link of links) {
             link.addEventListener('click', () => {
-                const eventArguments = { textContent: link.textContent, eventKey: link.dataset.rrUiEventKey, id: link.id, buttonStyle: link.dataset.buttonStyle, buttonType: link.dataset.buttonType, buttonLocation: link.dataset.buttonLocation }
+                const eventArguments = {
+                    textContent: link.textContent,
+                    eventKey: link.dataset.rrUiEventKey,
+                    id: link.id,
+                    buttonStyle: link.dataset.buttonStyle,
+                    buttonType: link.dataset.buttonType,
+                    buttonLocation: link.dataset.buttonLocation,
+                }
 
                 getEventLogger()?.log('StaticPageButtonClicked', eventArguments, eventArguments)
             })
