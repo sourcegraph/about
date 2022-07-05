@@ -246,7 +246,7 @@ This worked well, but there was a snag: How could you run a local instance of th
 
 The solution was to add an override for local data sources:
 
-```
+```bash
 gramps --data-source-dir ./
 ```
 

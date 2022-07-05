@@ -13,14 +13,6 @@ heroImage: https://images.ctfassets.net/le3mxztn6yoo/37bSN5FztCU6IAIMSiqYgQ/ccd7
 published: true
 ---
 
-<style>
-{`
-  p {
-    overflow:scroll
-  }
-`}
-</style>
-
 ## Install Sourcegraph to get great code search on AWS CodeCommit
 
 Sourcegraph brings great code search and understanding abilities to development teams using [AWS CodeCommit](https://aws.amazon.com/codecommit/). Code search helps your engineering team find usage examples, debug errors, reuse existing libraries and packages, and understand unfamiliar parts of your code base more quickly. Learn more about [Sourcegraph code search](https://docs.sourcegraph.com/code_search).
@@ -30,31 +22,40 @@ Setting up Sourcegraph code search to work with AWS CodeCommit is quick and easy
 1. First, [install and run an instance of Sourcegraph](https://docs.sourcegraph.com/admin).
 2. Create a AWS IAM user with programmatic access.
 
- <img alt="CodeCommit-CreateUser" src="//images.contentful.com/le3mxztn6yoo/750VgGMn84q6ciwoOKiGMi/a6007e31880c976df94f9ecde68dcf1a/CodeCommit-CreateUser.png" className="ba pa1 b--light-7 br2" />
+<Figure 
+    src="//images.contentful.com/le3mxztn6yoo/750VgGMn84q6ciwoOKiGMi/a6007e31880c976df94f9ecde68dcf1a/CodeCommit-CreateUser.png"
+    alt="CodeCommit-CreateUser"
+/>
 
 3. Attach the permission `AWSCodeCommitReadOnly` to this user.
 
-  <img alt="CodeCommit-Permissions" src="//images.contentful.com/le3mxztn6yoo/2vZ3AXk9Mc2MOGMIseQemg/e319cfd46a79fdf9237503f57e6c67c8/CodeCommit-Permissions.png" className="ba pa1 b--light-7 br2"/>
+<Figure 
+    src="//images.contentful.com/le3mxztn6yoo/2vZ3AXk9Mc2MOGMIseQemg/e319cfd46a79fdf9237503f57e6c67c8/CodeCommit-Permissions.png"
+    alt="CodeCommit-Permissions" 
+/>
 
 4. Create a SSH key pair:
 
-  ```
+  ```text
   ssh-keygen -t rsa
   ```
 
 5. Add the public key to the IAM user (under the "Security credentials" tab). After it is uploaded, make a note of its **SSH key ID**.
 
- <img alt="CodeCommit-PublicKey" src="//images.contentful.com/le3mxztn6yoo/37bSN5FztCU6IAIMSiqYgQ/ccd769ca77041b11b8daef49cba42da0/CodeCommit-PublicKey.png" className="ba pa1 b--light-7 br2" />
+<Figure 
+  src="//images.contentful.com/le3mxztn6yoo/37bSN5FztCU6IAIMSiqYgQ/ccd769ca77041b11b8daef49cba42da0/CodeCommit-PublicKey.png"
+  alt="CodeCommit-PublicKey"
+/>
 
 6. Modify your `config.json` (which you created as part of installing Sourcegraph) to access your AWS CodeCommit repositories. You'll need to make two changes:
 
  a. Set the `gitOriginMap` field to include a mapping of the form `aws/!ssh://${YOUR_SSH_KEY_ID}@${YOUR_SSH_CLONE_URL_PREFIX}/%`. Substitute the SSH key ID associated with the SSH key you added and the SSH clone URL prefix, which you can obtain by viewing the SSH clone URL of any of your repositories. It should look something like this:
-  ```
+  ```json
   "gitOriginMap": "aws/!ssh://XXXXXXXXXXXXXXXXXXXX@git-codecommit.us-west-1.amazonaws.com/v1/repos/%",
   ```
 
  b. Copy the private SSH key to a file called `id_rsa` in the directory that contains your `config.json`. Then add the following entry:
-  ```
+  ```json
   "gitserverSSH": {
     "id_rsa": "file!id_rsa"
   },

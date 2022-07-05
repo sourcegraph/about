@@ -40,7 +40,7 @@ The more trigrams that can be extracted from the regexp’s terms, the more effe
 
 Another nice property of Postgres trigram search is the ability to order results by similarity to the actual search terms, i.e. to get relevant results. For example, we can go beyond getting back results that are similar but not relevant to our search terms `Package json`:
 
-```
+```SQL
 sg=> SELECT label FROM lsif_data_documentation_search_public WHERE label <<% 'Package json' LIMIT 10;
      label
 ---------------
@@ -60,7 +60,7 @@ sg=> SELECT label FROM lsif_data_documentation_search_public WHERE label <<% 'Pa
 
 We can instead ask Postgres to count the number of matching trigrams between our `label` text column and our search query terms (`Package json`) and give us an indication of how similar they are. This returns a number between zero and one, where zero is a perfect match and one is a poor match:
 
-```
+```SQL
 sg=> select label, label <<<-> 'Package json' as label_dist from lsif_data_documentation_search_public WHERE label <<% 'Package json' ORDER BY label_dist LIMIT 10;
       label      | label_dist
 -----------------+-------------
@@ -84,7 +84,7 @@ Using this search, we get better matches that are more relevant to our query ter
 
 One major problem with using pg\*trgm’s relevancy ordering– i.e. `ORDER BY` with a trigram match distance–is that it often _substantially_ harms query time. We’ve traded our ultra-fast search results, which were often completely irrelevant, for very relevant results suffering from super slow query times:
 
-```
+```SQL
 sg=> SELECT label FROM lsif_data_documentation_search_public WHERE label <<% 'Package json' LIMIT 1;
     label
 --------------
@@ -94,7 +94,7 @@ sg=> SELECT label FROM lsif_data_documentation_search_public WHERE label <<% 'Pa
 Time: 83.221 ms
 ```
 
-```
+```SQL
 sg=> select label, label <<<-> 'Package json' as label_dist from lsif_data_documentation_search_public WHERE label <<% 'Package json' ORDER BY label_dist LIMIT 1;
     label     | label_dist
 --------------+------------
@@ -169,7 +169,7 @@ What other options do we have?
 
 pg_trgm provides the ability for us to replace our `WHERE <<% ‘query terms’` condition, which defaults to a strict word similarity threshold of 0.5, with our own threshold value. In effect, instead of using `ORDER BY` similarity we can just ask Postgres to only give us more similar results–don’t include the others.–his can be much faster because it doesn’t need to sort so many results while still giving good relevance. Swapping the default 0.5 with 0.9 gives us what we’d expect:
 
-```
+```SQL
 sourcegraph=# select label, label <<<-> 'Package json' as label_dist from lsif_data_documentation_search_public WHERE strict_word_similarity(label, 'Package json') > 0.9 LIMIT 10;
     label     | label_dist
 --------------+------------

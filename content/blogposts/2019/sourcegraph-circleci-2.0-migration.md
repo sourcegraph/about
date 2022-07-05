@@ -25,17 +25,26 @@ Using [Sourcegraph.com](https://sourcegraph.com/) and as an example, [Segment's 
 </div>
 
 <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
-  <img src="https://about.sourcegraph.com/blog/circleci-results.png" alt="CircleCi results" />
+  <Figure 
+    src="https://about.sourcegraph.com/blog/circleci-results.png"
+    alt="CircleCi results"
+  />
 </a>
 
 <div style={{marginTop:'2rem'}}>
   Typing this query every time would be inefficient, so let's save this query as a saved search.
-  <img src="https://about.sourcegraph.com/blog/circleci-create-saved-search.png" alt="CicleCi create saved search"/>
+  <Figure 
+    src="https://about.sourcegraph.com/blog/circleci-create-saved-search.png"
+    alt="CicleCi create saved search"
+  />
 </div>
 
 <div style={{marginTop:'2rem'}}>
   Then we can access it with a single click.
-  <img src="https://about.sourcegraph.com/blog/circleci-access-saved-search.png" alt="CicleCi access saved search"/>
+  <Figure 
+    src="https://about.sourcegraph.com/blog/circleci-access-saved-search.png" 
+    alt="CicleCi access saved search"
+  />
 </div>
 
 ## Bonus queries
@@ -50,7 +59,10 @@ Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/
 
 <div className="text-center">
   <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
-    <img src="https://about.sourcegraph.com/blog/circleci-results.png" alt="CircleCi results"/>
+    <Figure 
+      src="https://about.sourcegraph.com/blog/circleci-results.png"
+      alt="CircleCi results"
+    />
   </a>
 </div>
 
@@ -65,7 +77,10 @@ Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/
 </div>
 
 <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
-  <img src="https://about.sourcegraph.com/blog/circleci-who-upgraded.png" alt="CicleCi who upgraded" />
+  <Figure 
+      src="https://about.sourcegraph.com/blog/circleci-who-upgraded.png"
+      alt="CicleCi who upgraded"
+  />
 </a>
 
 ## Find answers in code with Sourcegraph

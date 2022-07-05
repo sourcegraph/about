@@ -11,9 +11,10 @@ heroImage: https://about.sourcegraph.com/blog/gitlab-integration-preview-dark.pn
 published: true
 ---
 
-<p style={{textAlign: 'center'}}>
-  <img src="/blog/gitlab-integration-banner-dark.png" alt="GitLab plus Sourcegraph logo"/>
-</p>
+<Figure 
+  src="/blog/gitlab-integration-banner-dark.png" 
+  alt="GitLab plus Sourcegraph logo"
+/>
 
 <BlockquoteWithBorder
   quote='Sourcegraph has the best find-definition, find-references, and intelligent code navigation capability on the planet - and they brought it to GitLab.'

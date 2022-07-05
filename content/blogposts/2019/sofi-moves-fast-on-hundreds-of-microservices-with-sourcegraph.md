@@ -13,9 +13,10 @@ published: true
 description: "Sourcegraph enables SoFi to innovate and move quickly while ensuring production stability for hundreds of microservices."
 ---
 
-<p style={{textAlign: 'center'}}>
-  <img src="/case-studies/sofi-sourcegraph-case-study-og-embed.png" alt="SoFi engineers rely on Sourcegraph to help manage hundreds of microservices" />
-</p>
+<Figure 
+  src="/case-studies/sofi-sourcegraph-case-study-og-embed.png" 
+  alt="SoFi engineers rely on Sourcegraph to help manage hundreds of microservices"
+/>
 
 SoFi helps its over 900,000 members achieve financial independence to realize their ambitions with products for borrowing, saving, spending, investing, and protecting their money. 
 

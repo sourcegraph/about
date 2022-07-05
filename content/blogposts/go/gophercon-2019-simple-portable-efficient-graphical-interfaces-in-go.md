@@ -142,7 +142,7 @@ I recommend you enable for convenience and also because I break the API often, s
 
 <br />
 
-```
+```bash
 go build gioui.org/ui/apps/hello
 go install scatter.im/cmd/scatter
 go run helloworld.go
@@ -154,14 +154,14 @@ There is a tool to package your application as an APK that you can install throu
 
 Install the gio tool:
 
-```
+```bash
 go install gioui.org/cmd/gio
 $GOBIN/gio -target android -o hello.apk helloworld.go
 ```
 
 Install on a connected device or emulator with adb:
 
-```
+```bash
 adb install hello.apk
 ```
 
@@ -169,19 +169,19 @@ adb install hello.apk
 
 For iOS/tvOS devices:
 
-```
+```bash
 $GOBIN/gio -target <ios|tvos> -o hello.ipa -appid <bundle id> helloworld.go
 ```
 
 Use the .app file extension for simulators:
 
-```
+```bash
 $GOBIN/gio -target <ios|tvos> -o hello.app helloworld.go
 ```
 
 Install on a running simulator:
 
-```
+```bash
 xcrun simctl install booted hello.app
 ```
 
@@ -189,13 +189,13 @@ xcrun simctl install booted hello.app
 
 To output a directory ready to serve:
 
-```
+```bash
 $GOBIN/gio -target js -o www helloworld.go
 ```
 
 Use a webserver or goexec to serve it:
 
-```
+```bash
 go run github.com/shurcooL/goexec ‘http.ListenAndServe(“:8080”, http.FileServer(http.Dir(“www”)))’
 ```
 

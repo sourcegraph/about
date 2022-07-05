@@ -27,7 +27,7 @@ Breakages due to the programmer are the result of erroneous assumptions that com
 
 Here is a list of packages that users incorrectly assume to be stable:
 
-```
+```text
 - archive/{tar,zip}
 - compress/{flate,gzip,lzw,zlib}
 - encoding/{csv,gob,json,xml}

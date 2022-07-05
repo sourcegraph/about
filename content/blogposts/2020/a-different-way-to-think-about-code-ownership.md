@@ -36,9 +36,10 @@ I had a hypothesis—that we needed something other than CODEOWNERS to create co
 
 To get the sentiment of the team, [I opened a pull request that proposed deleting CODEOWNERS with my reasons](https://github.com/sourcegraph/sourcegraph/pull/11718) and asked the entire team to submit anonymous feedback. Here were the results:
 
-<div className="text-center">
-  <img src="https://sourcegraphstatic.com/blog/codenotify-survey-results.png" alt="50% yes, 31% maybe, 19% no"></img>
-</div>
+<Figure 
+  src="https://sourcegraphstatic.com/blog/codenotify-survey-results.png" 
+  alt="50% yes, 31% maybe, 19% no"
+/>
 
 In the free-form comments, responders provided extra context about their support, concerns, and suggestions for the proposal. Here are a few representative examples:
 

@@ -46,7 +46,10 @@ Slightly more complex Git functionalities, such as cherry picking into other bra
 
 Leah loves the simplicity of Dropbox Paper for taking notes and appreciates how easy it is to include Markdown as well as the fun features like adding emoji. Despite its name, Dropbox Paper is not intended to be used to format something that will later be printed. It’s intended as a minimalistic note-taking app that allows the user to discover hidden features along the way instead of the traditional approach of cluttering all the options into hierarchical menus. One of the cooler hidden features is its rich [code syntax highlighting](https://youtu.be/QNYoOCLocAI?t=1187) (this blew our minds).
 
-<img src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-leah-culver-dropbox-paper.png" alt="Dropbox Paper code syntax highlighting" width="700" height="375" />
+<Figure 
+  src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-leah-culver-dropbox-paper.png" 
+  alt="Dropbox Paper code syntax highlighting"
+/>
 
 ## [1Password](https://1password.com/)
 

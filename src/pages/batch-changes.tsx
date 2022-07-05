@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-import { BlockquoteWithBorder, ContentSection, Layout, Video, TrySourcegraph, YouTube } from '@components'
+import { BlockquoteWithBorder, ContentSection, Figure, Layout, Video, TrySourcegraph, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 const batchChangesDemoFormURL = '/contact/request-batch-changes-demo'
@@ -57,27 +57,26 @@ export const BatchChangesPage: FunctionComponent = () => (
             </div>
             <div className="row">
                 <div className="col-md-6 mt-4">
-                    <figure>
-                        <img
-                            src="/batch-changes/asking_developers_to_update_repos.svg"
-                            alt="Graphic of many developers individually updating repositories, while some are not updating their repositories."
-                            className="max-w-100"
-                        />
-                        <figcaption className="mt-5">
-                            Asking <strong>developers</strong> to update repositories
-                        </figcaption>
-                    </figure>
+                    <Figure
+                        src="/batch-changes/asking_developers_to_update_repos.svg"
+                        alt="Graphic of many developers individually updating repositories, while some are not updating their repositories."
+                        caption={
+                            <div className="mt-5">
+                                Asking <strong>developers</strong> to update repositories
+                            </div>
+                        }
+                    />
                 </div>
                 <div className="col-md-6 mt-4">
-                    <figure>
-                        <img
-                            src="/batch-changes/using_batch_changes_to_update_repos.svg"
-                            alt="Graphic of a single developer updating a lot of repositories."
-                        />
-                        <figcaption className="mt-5">
-                            Using <strong className="text-purple">Batch Changes</strong> to update repositories
-                        </figcaption>
-                    </figure>
+                    <Figure
+                        src="/batch-changes/using_batch_changes_to_update_repos.svg"
+                        alt="Graphic of a single developer updating a lot of repositories."
+                        caption={
+                            <div className="mt-5">
+                                Using <strong className="text-purple">Batch Changes</strong> to update repositories
+                            </div>
+                        }
+                    />
                 </div>
             </div>
         </ContentSection>

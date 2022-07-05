@@ -21,7 +21,7 @@ In this post, I’ll walk you through setting up a language server client for Vi
 
 I’ll start with this minimal `.vimrc` file:
 
-```
+```vim
 syntax on
 set number
 set hidden " Required for specific actions that require multiple buffers
@@ -31,7 +31,7 @@ I’ll also use [`vim-plug`](https://github.com/junegunn/vim-plug) to manage plu
 
 Now let’s configure Vim to use `vim-plug` by adding the following to your `.vimrc`:
 
-```
+```vim
 call plug#begin('~/.vim/plugged')
 
 " Plugins go here
@@ -48,13 +48,13 @@ At Sourcegraph, we write a lot of Go, so we’ll use the Go language server for 
 
 Let’s install the Go language server.
 
-```
+```shell
 go get -u github.com/sourcegraph/go-langserver
 ```
 
 Make sure it was installed and is executable.
 
-```
+```shell
 go-langserver -version
 ```
 
@@ -68,7 +68,7 @@ Now it’s time to install the language server client plugin. We’ll use [Langu
 
 To install the plugin, let’s add the plugin to our `.vimrc` so `vim-plug` can install it:
 
-```
+```vim
 call plug#begin('~/.vim/plugged')
 
 Plug 'autozimu/LanguageClient-neovim', {
@@ -83,7 +83,7 @@ After you add this to your `.vimrc`, make sure you install the plugin. For `vim-
 
 Next, we need to tell the language client how to use the language servers you have installed. To do this, we’ll add a configuration option to your `.vimrc`:
 
-```
+```vim
 let g:LanguageClient_serverCommands = {
     \ 'go': ['go-langserver']
     \ }
@@ -95,7 +95,7 @@ That’s it! You now have many of the powerful features you’re used to from So
 
 Now use this on a Go file you have locally or save the below to hello.go in your Go workspace.
 
-```
+```go
 package main
 
 import "fmt"
@@ -111,7 +111,7 @@ func main() {
 
 Open this file, then type the following command to execute the context menu function.
 
-```
+```shell
 :call LanguageClient_contextMenu()
 ```
 
@@ -123,29 +123,29 @@ This command opens up a context menu showing you all of the different functional
 While this is pretty cool, it’s still a bit clunky to use. Let’s set up some shortcuts. Add each of the following to your `.vimrc`:
 
 * Get “hover” information by hitting the keys `<leader>h`
-```
+```vim
 nnoremap <silent> <leader>d :call LanguageClient_textDocument_hover()<CR>
 ```
 
 * Go to definition by hitting the keys `<leader>d`
-```
+```vim
 nnoremap <silent> <leader>d :call LanguageClient_textDocument_definition()<CR>
 ```
 
 * Find references by hitting the keys `<leader>fr`
-```
+```vim
 nnoremap <silent> <leader>fr :call LanguageClient_textDocument_references()<CR>
 ```
 
 >>> **Gotcha alert!** The language client adds the list of references to Vim’s location list. Once the operation has completed, you’ll see “Location list updated.” To see the list, type `:lopen`. I recommend installing [junegunn/fzf](https://github.com/junegunn/fzf) for an easier-to-navigate list that opens automatically.
 
 * Rename symbol by hitting the keys `<leader>r`
-```
+```vim
 nnoremap <silent> <leader>r :call LanguageClient_textDocument_rename()<CR>
 ```
 
 * Open the context menu to get each of the available actions by hitting the keys `<leader>m`
-```
+```vim
 nnoremap <silent> <leader>r :call LanguageClient_contextMenu()<CR>
 ```
 

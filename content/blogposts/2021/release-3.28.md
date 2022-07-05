@@ -33,9 +33,10 @@ Sourcegraph 3.28 is now available! For this release, we added new security enhan
 
 ## Extensions registry update
 
-<p>
-  <img src="https://sourcegraphstatic.com/blog/3.28/before_after_extensions_registry_redesign.jpg" width="500" alt="before and after screenshot of the registry redesign"/>
-</p>
+<Figure
+  src="https://sourcegraphstatic.com/blog/3.28/before_after_extensions_registry_redesign.jpg" 
+  alt="before and after screenshot of the registry redesign"
+/>
 
 Extensions allow you to connect all your other tools to get functionality like test coverage, 1-click open file in editor, custom highlighting, and information from your other favorite services all in one place on Sourcegraph. The [extensions registry main page](https://sourcegraph.com/extensions?category=All) has a new visual design that better conveys the most useful information about extensions. Individual extension pages now have better information architecture.
 
@@ -72,7 +73,7 @@ Conditional execution of steps was already possible to some extent by passing `s
 
 In this release, we are introducing [`steps.if`](https://docs.sourcegraph.com/batch_changes/references/batch_spec_yaml_reference#steps-if) to allow for `steps` to run conditionally.
 
-```
+```text
 steps:
   - if: ${{ eq repository.name "github.com/sourcegraph/automation-testing" }}
     run: echo "this container starts only on a specific repository!" >> message.txt

@@ -38,15 +38,17 @@ If you're an individual developer, you can create contexts out of sets of reposi
 
 You can access search contexts in two ways. First, after you create a context, it will be available in the context dropdown on the left side of the search bar. Second, you can use the `context:` filter anywhere search queries are used to utilize any context available to you.
 
-<figure>
-  <object role="image" data="https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-dropdown.png"></object>
-  <figcaption>Using the context dropdown in the search bar</figcaption>
-</figure>
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/search-context-dropdown.png"
+  alt="Using the context dropdown in the search bar"
+  caption="Using the context dropdown in the search bar"
+/>
 
-<figure>
-  <object role="image" data="https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/manual-search-context.png"></object>
-  <figcaption>Using the `context:` filter</figcaption>
-</figure>
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/introducing-search-contexts/manual-search-context.png"
+  alt="Using the context filter"
+  caption="Using the `context:` filter"
+/>
 
 ## Performing the migration to search contexts
 

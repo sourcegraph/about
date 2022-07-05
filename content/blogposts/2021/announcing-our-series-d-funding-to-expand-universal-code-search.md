@@ -41,4 +41,7 @@ Our new and existing investors will partner with us to help launch new products 
 
 We have a lot more coming down the pipe. And if you haven't yet tried Sourcegraph, [try Sourcegraph now](https://docs.sourcegraph.com)! It takes less than five minutes to set up and start searching your own code locally.
 
-<img src="/blog/SG-signup-QR.png" width="77" height="77" alt="Sourcegraph Sign Up QR Code"/>
+<Figure 
+  src="/blog/SG-signup-QR.png"
+  alt="Sourcegraph Sign Up QR Code"
+/>
