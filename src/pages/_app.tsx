@@ -6,12 +6,13 @@ import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import SSRProvider from 'react-bootstrap/SSRProvider'
 
-import { useEventLogger } from '@hooks'
+import { useEventLogger, useLogAllLinkClicks } from '@hooks'
 
 import 'prism-themes/themes/prism-one-light.css'
 
 const App = ({ Component, pageProps }: AppProps): ReactNode => {
     useEventLogger()
+    useLogAllLinkClicks()
 
     return (
         <>

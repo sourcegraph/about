@@ -7,6 +7,15 @@ interface EventArguments {
     [key: string]: string | null
 }
 
+let eventLogger: EventLogger
+
+function getEventLogger(): EventLogger {
+    if (!eventLogger) {
+        eventLogger = new EventLogger('https://sourcegraph.com')
+    }
+    return eventLogger
+}
+
 export const useEventLogger = (): void => {
     useEffect(() => {
         const eventArguments: EventArguments = { path: location.pathname }
@@ -19,7 +28,19 @@ export const useEventLogger = (): void => {
             }
         }
 
-        const eventLogger = new EventLogger('https://sourcegraph.com')
-        eventLogger?.log('ViewStaticPage', eventArguments, eventArguments)
+        getEventLogger()?.log('ViewStaticPage', eventArguments, eventArguments)
+    })
+}
+
+export const useLogAllLinkClicks = (): void => {
+    useEffect(() => {
+        const links = document.querySelectorAll('a')
+        for(const link of links) {
+            link.addEventListener('click', () => {
+                const eventArguments = { textContent: link.textContent, eventKey: link.dataset.rrUiEventKey, id: link.id, buttonStyle: link.dataset.buttonStyle, buttonType: link.dataset.buttonType, buttonLocation: link.dataset.buttonLocation }
+
+                getEventLogger()?.log('StaticPageButtonClicked', eventArguments, eventArguments)
+            })
+        }
     })
 }
