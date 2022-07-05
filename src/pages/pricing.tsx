@@ -135,8 +135,8 @@ const PricingPage: FunctionComponent = () => (
 
                     <div className="row pt-4">
                         <div className="col-md-12 mx-auto mb-4">
-                            <div className="pricing-plan pricing-plan--team card">
-                                <h2 className="card-title mt-3 mb-3 pricing-plan__title">Team</h2>
+                            <div className="px-6 card">
+                                <h2 className="my-3 display-2 font-weight-bolder">Team</h2>
 
                                 <div className="row">
                                     <div className="col-md-6 mx-auto mb-4 pr-5">
@@ -149,7 +149,7 @@ const PricingPage: FunctionComponent = () => (
                                 </div>
                                 <div className="row">
                                     <div className="col-md-6 mx-auto mb-4 pr-5">
-                                        <ol className="pricing-plan__features list-group list-group-flush mr-5">
+                                        <ol className="list-group list-group-flush mr-5">
                                             <PricingPlanFeature
                                                 key="team-feature-1"
                                                 info={{ label: 'Up to 25 users', description: '' }}
@@ -179,7 +179,7 @@ const PricingPage: FunctionComponent = () => (
                                     </div>
                                     <div className="col-md-6 mx-auto mb-4 pl-6">
                                         <a
-                                            className="pricing-plan__button btn btn-outline-primary w-100 mx-auto my-0"
+                                            className="btn btn-outline-primary col-lg-7 col-10 mx-auto my-0"
                                             href="https://info.sourcegraph.com/team-pricing"
                                         >
                                             Contact us

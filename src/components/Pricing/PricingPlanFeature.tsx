@@ -21,17 +21,9 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
     className = '',
 }) =>
     value ? (
-        <Tag
-            className={`pricing-plan-feature ${className} d-flex justify-content-between ${
-                value ? 'pricing-plan-feature__value-true' : 'pricing-plan-feature__value-false'
-            }`}
-        >
+        <Tag className={`${className} d-flex justify-content-between`}>
             <div>
-                <CheckIcon
-                    className={`icon-inline ${
-                        value ? 'pricing-plan-feature__icon-true' : 'pricing-plan-feature__icon-false'
-                    }`}
-                />{' '}
+                <CheckIcon className="icon-inline text-success mr-2" />{' '}
                 {label}
             </div>
             {description && (
@@ -42,7 +34,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
                     overlay={<Tooltip id="tooltip">{description}</Tooltip>}
                 >
                     {({ ref, ...triggerHandler }) => (
-                        <span {...triggerHandler} ref={ref} className="ml-2 pricing-plan-feature__help">
+                        <span {...triggerHandler} ref={ref} className="ml-2 text-gray-3">
                             <QuestionMarkCircleOutlineIcon />
                         </span>
                     )}
