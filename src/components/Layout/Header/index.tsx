@@ -3,9 +3,6 @@ import { FunctionComponent, useState, useEffect } from 'react'
 import classNames from 'classnames'
 import Navbar from 'react-bootstrap/Navbar'
 
-import { breakpoints } from '@data'
-import { useWindowWidth } from '@hooks'
-
 import DesktopNav from './DesktopNav'
 import MobileNav from './MobileNav'
 import { NavLink, navLinks } from './navLinks'
@@ -34,10 +31,6 @@ export const Header: FunctionComponent<Props> = props => {
 
     const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
     const [sticky, setSticky] = useState<boolean>(false)
-
-    const windowWidth = useWindowWidth()
-    const isLgOrDown = windowWidth < breakpoints.xl
-    const isMdOrDown = windowWidth < breakpoints.lg
 
     const isDarkNav = props.className?.includes('navbar-dark')
 
@@ -70,7 +63,7 @@ export const Header: FunctionComponent<Props> = props => {
      */
     useEffect(() => {
         const nav = document.querySelector('.navbar')
-        const navHeight = nav?.getBoundingClientRect().height || 78
+        const navHeight = nav?.getBoundingClientRect().height || 74
         const parentElement = nav?.parentElement
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         parentElement!.style.paddingTop = `${navHeight}px`
@@ -83,11 +76,11 @@ export const Header: FunctionComponent<Props> = props => {
 
     return (
         <nav className={navStyle}>
-            <div className={classNames('container-xl', isMdOrDown && 'px-0')}>
+            <div className="container-xl px-0">
                 <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="header mr-0 pt-0 pb-1 d-flex">
                     <img
                         src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
-                        height={isLgOrDown ? '35' : '26'}
+                        height={26}
                         className="min-w-150"
                         aria-label="Sourcegraph - Universal code search"
                         draggable={false}
