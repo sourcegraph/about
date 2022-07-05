@@ -29,26 +29,29 @@ With the guidance of the Go memory and CPU profiler, we implemented optimization
 
 Premature optimization is the root of all evil, so we initiated our optimization efforts by using a CPU and memory profiler to identify performance bottlenecks in our existing system. Here are the CPU and memory allocation profiles we began with:
 
-<Figure
-    src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png"
-    alt="3.16 CPU"
-    link={{ href: 'https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg', alt: 'Expand the CPU illustration' }}
-    caption="CPU"
-/>
+<a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
+    <Figure
+        src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png"
+        alt="3.16 CPU"
+        caption="CPU"
+    />
+</a>
 
-<Figure
-    src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png"
-    alt="3.16 allocs"
-    link={{ href: 'https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg', alt: 'Expand the allocations illustration' }}
-    caption="Memory allocations"
-/>
+<a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
+    <Figure
+        src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png"
+        alt="3.16 allocs"
+        caption="Memory allocations"
+    />
+</a>
 
-<Figure
-    src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png"
-    alt="3.16 heap"
-    link={{ href: 'https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg', alt: 'Expand the Heap illustration' }}
-    caption="Heap"
-/>
+<a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
+    <Figure
+        src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png"
+        alt="3.16 heap"
+        caption="Heap"
+    />
+</a>
 
 These profiles revealed a number of hotspots in the code, and we combined these results with a high-level understanding of the system architecture to come up with a list of changes that would have a substantial impact on both upload and query performance.
 
@@ -367,53 +370,36 @@ Finally, here are the before and after profiles of CPU, memory allocations, and 
 <div className="row">
     <h3 className="text-center">Comparing CPU</h3>
     <div className="col-lg-6">
-        <Figure 
-        src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png"
-        alt="3.16 CPU"
-        link={{ href: 'https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg', alt: 'Expand the 3.16 CPU illustration' }}
-        caption="3.16 CPU" 
-        />
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.svg">
+            <Figure src="https://sourcegraphstatic.com/codeintel-profiles/3.16-cpu.png" alt="3.16 cpu" caption="3.16 CPU" />
+        </a>
     </div>
     <div className="col-lg-6">
-        <Figure 
-          src="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.png" 
-          alt="3.17 cpu" 
-          link={{ href: 'https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.svg', alt: 'Expand the 3.17 CPU illustration' }}
-          caption="3.17 CPU" />
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.svg">
+            <Figure src="https://sourcegraphstatic.com/codeintel-profiles/3.17-cpu.png" alt="3.17 cpu" caption="3.17 CPU" />
+        </a>
     </div>
     <h3 className="text-center">Comparing Allocs</h3>
     <div className="col-lg-6">
-        <Figure 
-          src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png" 
-          alt="3.16 allocs" 
-          link={{ href: 'https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg', alt: 'Expand the 3.16 allocations illustration' }}
-          caption="3.16 Allocs" 
-        />
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.svg">
+            <Figure src="https://sourcegraphstatic.com/codeintel-profiles/3.16-allocs.png" alt="3.16 allocs" caption="3.16 Allocs" />
+        </a>
     </div>
     <div className="col-lg-6">
-        <Figure 
-          src="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.png" 
-          alt="3.17 allocs" 
-          link={{ href: 'https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.svg', alt: 'Expand the 3.17 allocations illustration' }}
-          caption="3.17 Allocs" 
-        />
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.svg">
+            <Figure src="https://sourcegraphstatic.com/codeintel-profiles/3.17-allocs.png" alt="3.17 allocs" caption="3.17 Allocs" />
+        </a>
     </div>
     <h3 className="text-center">Comparing Heap</h3>
     <div className="col-lg-6">
-        <Figure 
-          src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png" 
-          alt="3.16 heap" 
-          link={{ href: 'https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg', alt: 'Expand the 3.16 Heap illustration' }}
-          caption="3.16 Heap" 
-        />
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.svg">
+            <Figure src="https://sourcegraphstatic.com/codeintel-profiles/3.16-heap.png" alt="3.16 heap" caption="3.16 Heap" />
+        </a>
     </div>
     <div className="col-lg-6">
-        <Figure 
-          src="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.png" 
-          alt="3.17 heap" 
-          link={{ href: 'https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.svg', alt: 'Expand the 3.17 Heap illustration' }}
-          caption="3.17 Heap" 
-        />
+        <a target="_blank" href="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.svg">
+            <Figure src="https://sourcegraphstatic.com/codeintel-profiles/3.17-heap.png" alt="3.17 heap" caption="3.17 Heap" />
+        </a>
     </div>
 </div>
 

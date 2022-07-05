@@ -24,11 +24,12 @@ Using [Sourcegraph.com](https://sourcegraph.com/) and as an example, [Segment's 
 
 </div>
 
-<Figure 
-  src="https://about.sourcegraph.com/blog/circleci-results.png"
-  alt="CircleCi results"
-  link={{ href: 'https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml', alt: 'Search results for CircleCi' }}
-/>
+<a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
+  <Figure 
+    src="https://about.sourcegraph.com/blog/circleci-results.png"
+    alt="CircleCi results"
+  />
+</a>
 
 <div style={{marginTop:'2rem'}}>
   Typing this query every time would be inefficient, so let's save this query as a saved search.
@@ -56,11 +57,14 @@ Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/
 
 </div>
 
-<Figure 
-  src="https://about.sourcegraph.com/blog/circleci-results.png"
-  alt="CircleCi results"
-  link={{ href: 'https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml', alt: 'Search results for CircleCi' }}
-/>
+<div className="text-center">
+  <a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
+    <Figure 
+      src="https://about.sourcegraph.com/blog/circleci-results.png"
+      alt="CircleCi results"
+    />
+  </a>
+</div>
 
 <div tyle={{marginTop:'2rem'}}>
   Using Sourcegraph's diff search (<code>type: diff</code>), we can find who made the commit that contained the upgrade.
@@ -72,11 +76,12 @@ Query: [`repo:/segmentio/ file:\.circleci/config\.yml`](https://sourcegraph.com/
 
 </div>
 
-<Figure 
-    src="https://about.sourcegraph.com/blog/circleci-who-upgraded.png"
-    alt="CicleCi who upgraded"
-    link={{ href: 'https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml', alt: 'CicleCi who upgraded' }}
-/>
+<a href="https://sourcegraph.com/search?q=repo:/segmentio/+file:circle.yml">
+  <Figure 
+      src="https://about.sourcegraph.com/blog/circleci-who-upgraded.png"
+      alt="CicleCi who upgraded"
+  />
+</a>
 
 ## Find answers in code with Sourcegraph
 
