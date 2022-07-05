@@ -1,10 +1,7 @@
-import { FunctionComponent, useState } from 'react'
+import { FunctionComponent, useState, useEffect } from 'react'
 
 import classNames from 'classnames'
 import Navbar from 'react-bootstrap/Navbar'
-
-import { breakpoints } from '@data'
-import { useWindowWidth } from '@hooks'
 
 import DesktopNav from './DesktopNav'
 import MobileNav from './MobileNav'
@@ -23,27 +20,67 @@ interface Props {
 const onRightClickLogo = (event: React.MouseEvent): void => {
     event.preventDefault()
 
-    if (event.button === 3) {
+    if (event.button === 2) {
         window.location.href =
             'https://f.hubspotusercontent20.net/hubfs/2762526/Brand%20assets/Sourcegraph%20Brand%20Kit%202.2%20-%20May%202021.zip'
     }
 }
 
 export const Header: FunctionComponent<Props> = props => {
-    const [isOpen, setIsOpen] = useState(false)
-    const windowWidth = useWindowWidth()
-    const isLgOrDown = windowWidth < breakpoints.xl
-    const isMdOrDown = windowWidth < breakpoints.lg
+    const [isOpen, setIsOpen] = useState<boolean>(false)
+
+    const [lastScrollPosition, setLastScrollPosition] = useState<number>(0)
+    const [sticky, setSticky] = useState<boolean>(false)
 
     const isDarkNav = props.className?.includes('navbar-dark')
 
+    /**
+     * This checks the scroll position to see if the viewport has been
+     * scrolled past the last scroll position.
+     */
+    const handleScroll = (): void => {
+        const scrollPosition = window.scrollY
+
+        if (scrollPosition > lastScrollPosition && scrollPosition > 1) {
+            setSticky(true)
+        } else if (scrollPosition === 0) {
+            setSticky(false)
+        }
+
+        setLastScrollPosition(scrollPosition)
+    }
+
+    // This listens for scroll events to handle the sticky nav
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+
+        return () => window.removeEventListener('scroll', handleScroll)
+    })
+
+    /**
+     * This sets a top buffer for the sticky nav's main position by using
+     * the height of the navbar.
+     */
+    useEffect(() => {
+        const nav = document.querySelector('.navbar')
+        const navHeight = nav?.getBoundingClientRect().height || 74
+        const parentElement = nav?.parentElement
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        parentElement!.style.paddingTop = `${navHeight}px`
+    })
+
+    const navStyle = classNames('header navbar py-3 w-100 fixed-top', props.className, {
+        'bg-white shadow-sm': !isDarkNav && (sticky || isOpen),
+        'bg-black shadow-sm': isDarkNav && (sticky || isOpen),
+    })
+
     return (
-        <nav className={`header navbar py-3 ${props.className || 'navbar-light'}`}>
-            <div className={classNames('container-xl', isMdOrDown && 'px-0')}>
+        <nav className={navStyle}>
+            <div className="container-xl px-0">
                 <Navbar.Brand href="/" onContextMenu={onRightClickLogo} className="header mr-0 pt-0 pb-1 d-flex">
                     <img
                         src={isDarkNav ? '/sourcegraph-reverse-logo.svg' : '/sourcegraph-logo.svg'}
-                        height={isLgOrDown ? '35' : '26'}
+                        height={26}
                         className="min-w-150"
                         aria-label="Sourcegraph - Universal code search"
                         draggable={false}
@@ -54,13 +91,15 @@ export const Header: FunctionComponent<Props> = props => {
                     <>
                         <button
                             type="button"
-                            className="navbar-toggler justify-content-end"
+                            className={classNames('navbar-toggler justify-content-end', { ['isOpen']: isOpen })}
                             data-toggle="collapse"
                             data-target="#mobile-navbar"
                             onClick={() => setIsOpen(!isOpen)}
                         >
                             <span className="sr-only">Toggle navigation</span>
-                            <span className="navbar-toggler-icon" />
+                            {[0, 1, 2].map(key => (
+                                <div key={key} className="nav-line" />
+                            ))}
                         </button>
 
                         <DesktopNav navLinks={navLinks} hideGetStartedButton={props.hideGetStartedButton} />

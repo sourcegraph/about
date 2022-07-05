@@ -7,7 +7,7 @@ import { Alert, Figure } from '@components'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
-export type ReleaseComponents = import('mdx/types').MDXComponents
+type ReleaseComponents = import('mdx/types').MDXComponents
 const components = { Alert, Figure }
 
 interface Props extends PostComponentProps {}
