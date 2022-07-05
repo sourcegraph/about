@@ -5,7 +5,7 @@ import * as icons from '@mui/icons-material'
 import classNames from 'classnames'
 import { v4 as uuidv4 } from 'uuid'
 
-interface Icon {
+interface IconProps {
     name: keyof typeof icons
     size?: number
     className?: string | undefined
@@ -14,9 +14,9 @@ interface Icon {
     variant?: 'boxed'
 }
 
-export const Icon: FunctionComponent<Icon> = ({ name, size = 48, className = '', color, onClick, variant }) => {
+export const Icon: FunctionComponent<IconProps> = ({ name, size = 48, className = '', color, onClick, variant }) => {
     const IconName = icons[name]
-    const uuid = uuidv4() as string
+    const uuid = uuidv4()
 
     return (
         <IconName

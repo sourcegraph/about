@@ -7,7 +7,7 @@ import { BlockquoteWithBorder, EmbeddedHubSpot, Icon, Video, YouTube } from '@co
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
-export type Components = import('mdx/types').MDXComponents
+type PostComponents = import('mdx/types').MDXComponents
 const components = { BlockquoteWithBorder, EmbeddedHubSpot, Icon, Video, YouTube }
 
 /**
@@ -71,7 +71,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         {content && (
             <div className="card-body max-w-650">
                 <div className={`blog-post__html ${contentClassName}`}>
-                    <MDXRemote {...content} components={components as Components} />
+                    <MDXRemote {...content} components={components as PostComponents} />
                 </div>
             </div>
         )}
