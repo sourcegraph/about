@@ -28,9 +28,12 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                     navLink.items.length === 1 ? (
                         navLink.items.map(item =>
                             item.href.includes('http') ? (
-                                <li className="nav-item" role="presentation" key={navLink.section}>
+                                <li
+                                    className="nav-item"
+                                    role="presentation"
+                                    key={item.title}
+                                >
                                     <a
-                                        key={camelCase(item.title)}
                                         className="nav-link"
                                         href={item.href}
                                         target="_blank"
@@ -40,8 +43,8 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                                     </a>
                                 </li>
                             ) : (
-                                <li className="nav-item" role="presentation" key={navLink.section}>
-                                    <Link key={camelCase(item.title)} href={item.href}>
+                                <li className="nav-item" role="presentation" key={camelCase(item.title)}>
+                                    <Link href={item.href}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a className="nav-link">{item.title}</a>
                                     </Link>
