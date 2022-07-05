@@ -91,7 +91,7 @@ export const Header: FunctionComponent<Props> = props => {
                     <>
                         <button
                             type="button"
-                            className={classNames('navbar-toggler justify-content-end', {['isOpen']: isOpen})}
+                            className={classNames('navbar-toggler justify-content-end', { ['isOpen']: isOpen })}
                             data-toggle="collapse"
                             data-target="#mobile-navbar"
                             onClick={() => setIsOpen(!isOpen)}

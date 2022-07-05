@@ -80,7 +80,7 @@
         width: 100%;
         height: 2px;
         background: #000;
-        transition: all .3s;
+        transition: all 0.3s;
         &:not(:last-child) {
             margin-bottom: 5px;
         }
@@ -110,5 +110,4 @@
             transform: translateY(-7px) rotate(-45deg);
         }
     }
-
 }
