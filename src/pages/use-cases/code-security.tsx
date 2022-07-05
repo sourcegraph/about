@@ -272,7 +272,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h2 className="mb-4 display-3 font-weight-bold mw-400">
+                        <h2 className="mb-4 display-3 font-weight-bold max-w-400">
                             Identifying & resolving security vulnerabilities is painful
                         </h2>
                         <p>

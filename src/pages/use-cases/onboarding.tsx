@@ -224,7 +224,7 @@ const UseCasePage: FunctionComponent = () => (
             <ContentSection className="py-7">
                 <div className="row flex-column flex-lg-row justify-content-between">
                     <div className="p-lg-0 col-lg-6 px-4">
-                        <h2 className="mb-4 mw-400 display-3 font-weight-bold">
+                        <h2 className="mb-4 max-w-400 display-3 font-weight-bold">
                             Developer onboarding is slow and expensive
                         </h2>
                         <p>

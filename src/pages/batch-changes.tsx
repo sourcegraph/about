@@ -61,7 +61,7 @@ export const BatchChangesPage: FunctionComponent = () => (
                         <img
                             src="/batch-changes/asking_developers_to_update_repos.svg"
                             alt="Graphic of many developers individually updating repositories, while some are not updating their repositories."
-                            className="mw-100"
+                            className="max-w-100"
                         />
                         <figcaption className="mt-5">
                             Asking <strong>developers</strong> to update repositories
