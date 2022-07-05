@@ -35,7 +35,7 @@ A Go tool to modify/update field tags in structs. `gomodifytags` makes it easy t
 Because working with struct tags are not fun. Let's take the following struct:
 
 
-```
+```go
 type Example struct {
 
     StatusID int64 `json:"status_id"`
@@ -65,7 +65,7 @@ Maybe you noticed or maybe you didn't, but there are 4 errors in the first struc
 
 Here is how the struct should look:
 
-```
+```go
 type Example struct {
 
     StatusID int64 `json:"status_id"`

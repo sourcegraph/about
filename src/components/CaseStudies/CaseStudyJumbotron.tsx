@@ -26,8 +26,8 @@ export const CaseStudyJumbotron: FunctionComponent<Props> = ({
                 <BackButtonBold href="/case-studies" text="Case Studies" />
             )}
         </div>
-        <div className="container text-center pt-3 pb-3">
-            {logo && <img className="case-studies__logo my-3" src={logo} alt={customer} />}
+        <div className="container text-center pb-3">
+            {logo && <img className="case-studies__logo mb-3" src={logo} alt={customer} />}
             <h5 className="font-weight-bold mt-1">
                 <span className="sr-only">{customer}</span> Case Study
             </h5>

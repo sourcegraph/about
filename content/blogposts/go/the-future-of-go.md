@@ -91,7 +91,7 @@ On September 10, 2011, Russ reported an issue:
 > **error.Value**
 >
 > A problem that we have in very low-level libs is that everything depends on "os" for os.Error, **so it's hard to do things that os itself can use (like time.Nano below). If not for os.Error, package os would not be depended on by nearly so many packages.** Computation-only packages like hash/* or strconv or strings or bytes would not not need to mention it, for example. I plan to explore defining a package error with an API of approximately:
-```
+```text
 >     package error
 >     type Value interface { String() error)}
 >     func New(s string) Value

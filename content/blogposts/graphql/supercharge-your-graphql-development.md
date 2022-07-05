@@ -33,7 +33,7 @@ Why are these tools important and useful to learn?
 
 Before we begin... you need your GraphQL schema:
 
-```
+```bash
 yarn add graphql-cli
 graphql-init
 graphql get-schema

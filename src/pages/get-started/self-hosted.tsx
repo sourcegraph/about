@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react'
 
-import { BackButton, Icon, Install, Layout } from '@components'
+import { Layout, Install, Icon } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useQueryString } from '@hooks'
 
-import { BestForTitle, MostPopularBadge } from '.'
+import { DesignedForTitle } from '.'
 
 import styles from './getStarted.module.scss'
 
@@ -21,9 +21,9 @@ export const SelfHostedPage: FunctionComponent = () => {
             hero={
                 <div className="container-xl py-5">
                     <h1 className="display-1 mb-2">
-                        <strong>What's best for you?</strong>
+                        <strong>Get started</strong>
                     </h1>
-                    <p>From Amazon to Uber, the world's best developers use Sourcegraph every day.</p>
+                    <p>The world's best developers use Sourcegraph every day.</p>
                 </div>
             }
             heroAndHeaderClassName={styles.hero}
@@ -33,24 +33,17 @@ export const SelfHostedPage: FunctionComponent = () => {
                 <div className="row container-xl mx-auto py-5">
                     <div className="col-lg-6 pr-lg-7">
                         <div>
-                            <BackButton
-                                href={`/get-started${routerHook.queryString ? `?${routerHook.queryString}` : ''}`}
-                                text="Deployment Options"
-                            />
-
                             <h1 className="display-2 font-weight-bolder mb-2">
                                 Sourcegraph <br />
                                 Self-Hosted
                             </h1>
-
-                            <MostPopularBadge />
 
                             <p className="mt-4">
                                 Deploy and control Sourcegraph in your own infrastructure, or use Docker to install
                                 locally. Get started for free.
                             </p>
 
-                            <BestForTitle />
+                            <DesignedForTitle />
                             <p>Teams and enterprises</p>
 
                             <p>

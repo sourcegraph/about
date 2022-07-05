@@ -14,8 +14,8 @@ export const MostPopularBadge: FunctionComponent = () => (
     </span>
 )
 
-export const BestForTitle: FunctionComponent = () => (
-    <div className={`text-uppercase font-weight-bolder mb-1 ${styles.bestForTitle}`}>Best For</div>
+export const DesignedForTitle: FunctionComponent = () => (
+    <div className={`text-uppercase font-weight-bolder mb-1 ${styles.designedForTitle}`}>Designed For</div>
 )
 
 export const GetStartedPage: FunctionComponent = () => {
@@ -61,7 +61,7 @@ export const GetStartedPage: FunctionComponent = () => {
                                 locally. Get started for free.
                             </p>
 
-                            <BestForTitle />
+                            <DesignedForTitle />
                             <p>Teams and enterprises</p>
 
                             <p>
@@ -77,7 +77,7 @@ export const GetStartedPage: FunctionComponent = () => {
 
                             <p>Sync your code from GitHub.com or GitLab.com. No technical setup is required.</p>
 
-                            <BestForTitle />
+                            <DesignedForTitle />
                             <p>Individual developers</p>
 
                             <p>

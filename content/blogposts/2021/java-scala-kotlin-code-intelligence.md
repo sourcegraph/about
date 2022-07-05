@@ -24,7 +24,7 @@ Cross-language navigation between Java, Scala, and Kotlin languages works as you
 
 For Gradle, Maven, and sbt users, the easiest way to get started is to run the `sourcegraph/lsif-java` Docker container.
 
-```sh
+```shell
 docker run -v $(pwd):/home/gradle sourcegraph/lsif-java lsif-java index
 src lsif upload
 ```

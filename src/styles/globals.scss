@@ -10,8 +10,8 @@
 
 /* ==================== Bootstrap Overrides ==================== */
 
-$font-family-sans-serif: source-sans-pro, sans-serif; /* Adobe Source Sans Pro */
-$font-family-monospace: source-code-pro, monospace; /* Adobe Source Code Pro for code */
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-monospace: 'Source Code Pro', monospace;
 $font-family-base: $font-family-sans-serif;
 $headings-font-family: $font-family-base;
 
@@ -20,10 +20,10 @@ $border-radius-lg: 0.25rem;
 $border-radius-sm: 0.1rem;
 
 $font-weight-semibold: 600;
-$font-weight-bold: $font-weight-semibold; /* uses Adobe Sans Pro Semi-bold */
-$font-weight-bolder: 700; /* uses Adobe Sans Pro Bold */
+$font-weight-bold: $font-weight-semibold; /* uses Source Sans Pro Semi-bold */
+$font-weight-bolder: 700; /* uses Source Sans Pro Bold */
 
-$headings-font-weight: 700; /* uses Adobe Sans Pro Bold */
+$headings-font-weight: 700; /* uses Source Sans Pro Bold */
 
 $input-btn-padding-y: 0.55rem;
 
@@ -215,7 +215,6 @@ table {
 @import 'components/SelfHostedSection';
 @import 'components/Header';
 @import 'components/Footer';
-@import 'components/PrismTheme';
 @import 'components/TemplateCodeBlock';
 @import 'components/TestimonialCarousel';
 @import 'components/Tweets';
@@ -289,6 +288,10 @@ code.border {
     margin-bottom: 1rem;
     border: 1px solid var(--border-color);
     max-width: 100%;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace !important;
 }
 
 /* ==================== Positioning ==================== */

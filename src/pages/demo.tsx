@@ -34,7 +34,7 @@ const Demo: FunctionComponent = () => {
                         <h2 className="font-weight-bold">Let us show you around</h2>
                         <p>Watch this quick video to see what Sourcegraph can do</p>
 
-                        <YouTube title="Sourcegraph Product Tour" id="E2QYIwKlMac" className="my-5" />
+                        <YouTube title="Sourcegraph Product Tour" id="Kk1ea2-l8Hk" className="my-5" />
 
                         <h2 className="font-weight-bold">Like what you see?</h2>
                         <p>Get a live demo in your environment! Just fill out the form to request a demo.</p>
