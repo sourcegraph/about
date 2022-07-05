@@ -22,7 +22,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                 {!minimal && (
                     <div className="row footer__nav-sections">
                         <div className="col-sm-6 col-md-3 col-lg-2 mb-3 order-md-2">
-                            <h3 className="text-lg font-weight-bold">About Sourcegraph</h3>
+                            <h3 className="footer__nav-header text-lg font-weight-bold">About Sourcegraph</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link href="/use-cases">Use cases</Link>
@@ -40,7 +40,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                         </div>
 
                         <div className="col-sm-6 col-md-3 col-lg-2 mb-3 order-md-3">
-                            <h3 className="text-lg font-weight-bold">Resources</h3>
+                            <h3 className="footer__nav-header text-lg font-weight-bold">Resources</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link href="/blog">Blog</Link>
@@ -69,7 +69,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                         </div>
 
                         <div className="col-sm-6 col-md-3 col-lg-2 mb-3 order-md-4">
-                            <h3 className="text-lg font-weight-bold">Company</h3>
+                            <h3 className="footer__nav-header text-lg font-weight-bold">Company</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link href="/about">About</Link>
