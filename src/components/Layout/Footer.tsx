@@ -21,8 +21,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
             <div className="container-xl">
                 {!minimal && (
                     <div className="row footer__nav-sections">
-                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-2">
-                            <h3 className="footer__nav-header">About Sourcegraph</h3>
+                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3 order-md-2">
+                            <h3 className="text-lg font-weight-bold">About Sourcegraph</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link href="/use-cases">Use cases</Link>
@@ -39,8 +39,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                             </ul>
                         </div>
 
-                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-3">
-                            <h3 className="footer__nav-header">Resources</h3>
+                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3 order-md-3">
+                            <h3 className="text-lg font-weight-bold">Resources</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link href="/blog">Blog</Link>
@@ -68,8 +68,8 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                             </ul>
                         </div>
 
-                        <div className="col-sm-6 col-md-3 col-lg-2 mt-3 mb-3 order-md-4">
-                            <h3 className="footer__nav-header">Company</h3>
+                        <div className="col-sm-6 col-md-3 col-lg-2 mb-3 order-md-4">
+                            <h3 className="text-lg font-weight-bold">Company</h3>
                             <ul className="nav flex-column">
                                 <li className="nav-item">
                                     <Link href="/about">About</Link>
@@ -171,7 +171,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => {
                     className={`footer__postscript d-flex justify-content-between ${minimal ? 'py-3' : 'pt-4 pb-2'} small`}
                 >
                     <ul className="nav">
-                        <li className="nav-item text-gray-5 mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
+                        <li className="nav-item mr-3">&copy; {new Date().getFullYear()} Sourcegraph</li>
                         <li className="nav-item">
                             <Link href="/terms" passHref={true}>
                                 <a href="#none" className="nav-link text-gray-5">
