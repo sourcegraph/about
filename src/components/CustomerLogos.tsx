@@ -49,7 +49,6 @@ const logos: Logo[] = [
     {
         name: 'Cloudflare',
         src: '/external-logos/cloudflare-logo.svg',
-        link: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
     },
     {
         name: 'Mercado Libre',

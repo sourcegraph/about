@@ -26,7 +26,7 @@ const CaseStudiesHome: FunctionComponent = () => (
                         <div className="d-flex flex-wrap">
                             {CASESTUDIES.map(study => (
                                 <div className="d-flex col-lg-4 mb-6" key={study.name}>
-                                    <div className="card w-100">
+                                    <div className="card">
                                         <CaseStudyCard study={study} />
                                     </div>
                                 </div>

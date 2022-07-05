@@ -12,11 +12,12 @@ published: true
 
 ---
 
-<p className="text-center">
-  <a href="/strange-loop/" title="Go to the Strange Loop 2019 liveblog">
-    <img alt="Strange Loop 2019 Banner" src="/blog/strange-loop-banner-landscape.jpg" />
-  </a>
-</p>
+<a href="/strange-loop/" title="Go to the Strange Loop 2019 liveblog">
+  <Figure
+    src="/blog/strange-loop-banner-landscape.jpg"
+    alt="Strange Loop 2019 Banner" 
+  />
+</a>
 
 ---
 

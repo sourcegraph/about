@@ -54,7 +54,10 @@ The team immediately spotted the tradeoffs: while Meet’s captions were built i
 
 But fundamentally, it _worked_. Everyone was able to participate in the call, and we had our sync.
 
-<img src="/blog/silent-team-call.jpg" alt="The team on the video call" />
+<Figure 
+  src="/blog/silent-team-call.jpg" 
+  alt="The team on the video call" 
+/>
 
 ## Takeaways
 

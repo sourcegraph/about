@@ -117,7 +117,9 @@ You can now set `EXTSVC_CONFIG_ALLOW_EDITS=true` and `SITE_CONFIG_ALLOW_EDITS=tr
 ## In case you missed it...
 
 <a href="/go">
-  <img src="https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png" alt="GopherCon liveblog San Diago 2019" />
+  <Figure 
+    src="https://about.sourcegraph.com/gophercon-2019/gophercon-2019-banner.png"
+    alt="GopherCon liveblog San Diago 2019"/>
 </a>
 
 We were proud to host the official [liveblog for GopherCon 2019](/go), and all 28 talks are now live.

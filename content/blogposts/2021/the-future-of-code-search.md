@@ -68,7 +68,10 @@ Our focus on design encompasses both visual elements and the syntax of the query
 
 We have a "Ctags++" level of code navigation for every major programming language. We aim to achieve compiler-accurate code navigation in every language soon through the use of language servers and LSIF indexers. We want to make it so you never have to set up a development environment again in order to get hover tooltips, jump-to-definition, or references working.
 
-<img src="https://sourcegraphstatic.com/precise-xrepo-j2d.gif" alt="Cross-repository jump to definition"/>
+<Figure 
+  src="https://sourcegraphstatic.com/precise-xrepo-j2d.gif" 
+  alt="Cross-repository jump to definition"
+/>
 
 - Sourcegraph will understand every language at the level a compiler or typechecker does. For starters, we've focused on Go, Java, TypeScript, and JavaScript, with more languages coming soon. For now, we have the best automatic language-aware code navigation in every programming language.
 - We're building the "Global Graph of Code" that connects every repository and library package in the world through imports, function calls, and symbol references. It should all "just work" like hyperlinks on the web.
@@ -93,7 +96,10 @@ Sourcegraph works with every major code host (GitHub, GitLab, Bitbucket, AWS Cod
 
 All this is the tip of the iceberg of what we have planned. Our latest fundraise allows us to make faster progress toward shipping these features to developers everywhere and focus on our long-term mission. We believe great code search should be available to every developer in the world. If you'd like to help us build this future [as a member of our team](https://github.com/sourcegraph/careers), want to give us product feedback, or would like help bringing Sourcegraph into your organization, [hit us up](https://twitter.com/sourcegraph)!
 
-<img src="/blog/SG-signup-QR.png" width="77" height="77" alt="Sourcegraph Sign Up QR Code"/>
+<Figure
+  src="/blog/SG-signup-QR.png" 
+  alt="Sourcegraph Sign Up QR Code"
+/>
 
 ### About the author
 

@@ -30,7 +30,10 @@ Kaylyn will explain why that is and show you how to do it with binary search tre
 
 ## Learning algorithms is horrible
 
-<img width="1306" alt="screen shot 2018-08-28 at 6 12 17 pm" src="https://user-images.githubusercontent.com/9022011/44757761-fdfd3100-aaed-11e8-8efb-bcac3d9aebb4.png"/>
+<Figure 
+    alt="Binary search tree section of Introduction to Algorithms text" 
+    src="https://user-images.githubusercontent.com/9022011/44757761-fdfd3100-aaed-11e8-8efb-bcac3d9aebb4.png"
+/>
 
 This screenshot is from the binary search tree section of Introduction to Algorithms (a.k.a. CLRS). CLRS is considered to be the "gospel" of algorithms books. To the authors' credit, there hadn't been a great algorithms textbook written before it came out in 1989. However, anyone reading CLRS can tell that it was written by professors whose primary audience was academically minded.
 
@@ -61,11 +64,17 @@ The rest of this talk will cover what a binary search tree is. You'll find it us
 
 This is the only thing that you need to know to understand the rest of this talk.
 
-<img width="1365" alt="screen shot 2018-08-28 at 6 45 40 pm" src="https://user-images.githubusercontent.com/9022011/44758592-a01f1800-aaf2-11e8-9225-00c9d88ccaf9.png"/>
+<Figure 
+    alt="Guess the Number game" 
+    src="https://user-images.githubusercontent.com/9022011/44758592-a01f1800-aaf2-11e8-9225-00c9d88ccaf9.png"
+/>
 
 This is the "Guess the Number Game", a game that many of you played when you were kids. You'd ask your friends to guess a number within a specific range, like 1-100. Your friend would throw out a number like "57". Their first guess was generally wrong since the range is so broad, but you were allowed to tell them if their guess was higher or lower than the answer. They'd keep guessing new numbers, taking into account the hints that you'd give them, and eventually they'd guess the right answer.
 
-<img width="979" alt="screen shot 2018-08-28 at 6 52 01 pm" src="https://user-images.githubusercontent.com/9022011/44758764-7b777000-aaf3-11e8-92d4-ebb4e92c2832.png"/>
+<Figure 
+alt="Binary search illustration" 
+src="https://user-images.githubusercontent.com/9022011/44758764-7b777000-aaf3-11e8-92d4-ebb4e92c2832.png"
+/>
 
 This guessing game is pretty much exactly what goes on during binary search. If you understand this guessing game, you also understand the core principal behind binary search tree algorithms. The numbers that they guessed are the numbers in the tree, and the "higher"/"lower" hints tell you the direction that you need to move: either to the right or left child node.
 
