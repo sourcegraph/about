@@ -221,6 +221,3 @@ Or you can learn more about Sourcegraph, a dev tool that provides an interface o
 ### About the author
 
 _Beyang Liu is the CTO and co-founder of Sourcegraph. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab. You can chat with Beyang on Twitter [@beyang](https://twitter.com/beyang) or our community [Discord](https://discord.com/invite/vqsBW8m5Y8)._
-
-## Interested in seeing a demo of Sourcegraph?
-[You can request a demo here.](https://about.sourcegraph.com/demo)

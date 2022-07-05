@@ -206,11 +206,10 @@ const UseCases: React.FunctionComponent = () => (
                         <h2 className="display-3 font-weight-bold mb-3">Resolve incidents faster</h2>
                         <h5>Identify the root cause in code and fix the issue everywhere.</h5>
                         <p>
-                            &ldquo;Every minute matters when responding to a business-critical incident. Downtime =
-                            revenue lost. Sourcegraph helps development teams identify the root cause in code,
-                            understand why the problem occurred and its potential impact on other services, fix the
-                            issue everywhere so it won't reoccur, and assure incident responders that all holes are
-                            plugged.&rdquo;
+                            Every minute matters when responding to a business-critical incident. Downtime = revenue
+                            lost. Sourcegraph helps development teams identify the root cause in code, understand why
+                            the problem occurred and its potential impact on other services, fix the issue everywhere so
+                            it won't reoccur, and assure incident responders that all holes are plugged.
                         </p>
                         <ul>
                             <li>
