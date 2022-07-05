@@ -7,7 +7,7 @@ import { Alert, BlockquoteWithBorder, EmbeddedHubSpot, Figure, TableWrapper, Vid
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
-export type PostComponents = import('mdx/types').MDXComponents
+type PostComponents = import('mdx/types').MDXComponents
 const components = { Alert, BlockquoteWithBorder, EmbeddedHubSpot, Figure, TableWrapper, Video, YouTube }
 
 /**
