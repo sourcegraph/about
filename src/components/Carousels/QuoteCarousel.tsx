@@ -26,19 +26,9 @@ export const QuoteCarousel: FunctionComponent<QuoteCarouselProps> = ({ items }) 
 
     return (
         <Carousel
-            prevIcon={<Icon
-                name="ArrowBackSharp"
-                size={24}
-                className="mr-4"
-                color="#808080"
-            />}
+            prevIcon={<Icon name="ArrowBackSharp" size={24} className="mr-4" color="#808080" />}
             prevLabel=""
-            nextIcon={<Icon
-                name="ArrowForwardSharp"
-                size={24}
-                className="ml-4"
-                color="#808080"
-            />}
+            nextIcon={<Icon name="ArrowForwardSharp" size={24} className="ml-4" color="#808080" />}
             nextLabel=""
             indicators={isLgOrDown}
         >

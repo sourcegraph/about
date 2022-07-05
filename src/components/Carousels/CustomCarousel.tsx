@@ -97,65 +97,65 @@ export const CustomCarousel: FunctionComponent<CarouselProps> = props => {
                                 {item.buttonLabel}
                             </p>
                         ))}
-                    <Icon
-                        name="ArrowDownwardSharp"
-                        className="ml-lg-5 mt-4 d-lg-flex d-md-flex d-none"
-                        size={24}
-                        onClick={() => carouselHook.moveCarousel()}
-                        color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
-                    />
-                </div>
-                <div
-                    className={`${
-                        props.hasImages ? 'h-500' : 'h-300'
-                    } col-lg-6 col-md-10 col-sm-12 mt-4 px-0 m-auto d-flex align-items-center justify-content-lg-start justify-content-center`}
-                >
-                    {carouselItems.map((item, index) => (
-                        <div
-                            key={item.buttonLabel}
-                            className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
-                            onMouseOver={() => carouselHook.moveCarousel(index)}
-                            onFocus={() => carouselHook.moveCarousel(index)}
-                        >
-                            {!autoAdvance && (
-                                <h1 className={classNames('font-weight-bold mb-lg-4', !autoAdvance && 'display-2')}>
-                                    {item.buttonLabel}
-                                </h1>
-                            )}
-                            <div>{item.text}</div>
-                        </div>
-                    ))}
-                </div>
-
-                <div className="d-lg-none d-flex mx-auto my-4">
-                    <Icon
-                        name="ArrowBackSharp"
-                        className="mr-4 cursor-pointer"
-                        size={24}
-                        onClick={() => carouselHook.moveCarousel('decrement')}
-                        color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
-                    />
-                    <div>
-                        {carouselItems.map(item => (
-                            <Icon
-                                name="CircleSharp"
-                                size={6}
+                        <Icon
+                            name="ArrowDownwardSharp"
+                            className="ml-lg-5 mt-4 d-lg-flex d-md-flex d-none"
+                            size={24}
+                            onClick={() => carouselHook.moveCarousel()}
+                            color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
+                        />
+                    </div>
+                    <div
+                        className={`${
+                            props.hasImages ? 'h-500' : 'h-300'
+                        } col-lg-6 col-md-10 col-sm-12 mt-4 px-0 m-auto d-flex align-items-center justify-content-lg-start justify-content-center`}
+                    >
+                        {carouselItems.map((item, index) => (
+                            <div
                                 key={item.buttonLabel}
-                                className="mx-2 cursor-pointer"
-                                color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
-                            />
+                                className={item === carouselHook.carouselItems.currentItem ? 'd-block' : 'd-none'}
+                                onMouseOver={() => carouselHook.moveCarousel(index)}
+                                onFocus={() => carouselHook.moveCarousel(index)}
+                            >
+                                {!autoAdvance && (
+                                    <h1 className={classNames('font-weight-bold mb-lg-4', !autoAdvance && 'display-2')}>
+                                        {item.buttonLabel}
+                                    </h1>
+                                )}
+                                <div>{item.text}</div>
+                            </div>
                         ))}
                     </div>
-                    <Icon
-                        name="ArrowForwardSharp"
-                        className="ml-4"
-                        size={24}
-                        onClick={() => carouselHook.moveCarousel()}
-                        color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
-                    />
+
+                    <div className="d-lg-none d-flex mx-auto my-4">
+                        <Icon
+                            name="ArrowBackSharp"
+                            className="mr-4 cursor-pointer"
+                            size={24}
+                            onClick={() => carouselHook.moveCarousel('decrement')}
+                            color={carouselHook.autoAdvance && carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
+                        />
+                        <div>
+                            {carouselItems.map(item => (
+                                <Icon
+                                    name="CircleSharp"
+                                    size={6}
+                                    key={item.buttonLabel}
+                                    className="mx-2 cursor-pointer"
+                                    color={item === carouselHook.carouselItems.currentItem ? '#000' : '#D0D0D0'}
+                                />
+                            ))}
+                        </div>
+                        <Icon
+                            name="ArrowForwardSharp"
+                            className="ml-4"
+                            size={24}
+                            onClick={() => carouselHook.moveCarousel()}
+                            color={carouselHook.autoAdvance && !carouselHook.isAdvancing ? '#D0D0D0' : '#000'}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     )
 }

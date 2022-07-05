@@ -77,5 +77,5 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         )}
 
         <TrySourcegraph />
-    </Tag>    
+    </Tag>
 )
