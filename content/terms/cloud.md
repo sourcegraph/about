@@ -38,6 +38,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 
 </span>
 
+<TableWrapper>
 | Section                                                                                                                               | Description                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
 | 1. [Definitions](#1-definitions)                                                                                                      | Definitions of specific terms used on this page     |
@@ -56,6 +57,7 @@ PLEASE READ THESE TERMS CAREFULLY TO ENSURE YOUR UNDERSTANDING OF EACH PROVISION
 | 14. [Location of the Services; export controls](#14-location-of-the-services-export-controls)                                         | Usage restrictions in embargoed locations           |
 | 15. [Governing law; arbitration; and class action/jury trial waiver](#15-governing-law-arbitration-and-class-actionjury-trial-waiver) | Where and how disputes would be handled             |
 | 16. [Miscellaneous](#16-miscellaneous)                                                                                                | Miscellaneous topics                                |
+</TableWrapper>
 
 <br/>
 <span style={{color: '#b200f8'}}>

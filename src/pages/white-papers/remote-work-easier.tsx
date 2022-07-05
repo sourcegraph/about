@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import Link from 'next/link'
 
-import { Layout, WhitePaperPage, ContentSection, BlockquoteWithBorder, InContentImage } from '@components'
+import { Layout, WhitePaperPage, ContentSection, BlockquoteWithBorder, Figure } from '@components'
 
 export const RemoteWorkEasier: FunctionComponent = () => (
     <Layout
@@ -112,7 +112,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         reviewing. This allows you to build a comprehensive understanding of how the code works and
                         ensure your questions are specific to what the author has changed.
                     </p>
-                    <InContentImage
+                    <Figure
                         className="w-100 shadow0"
                         src="/white-papers/remotework_codereview.png"
                         alt="Sourcegraph's go to definition and find references hover tooltip on a code review"
@@ -135,7 +135,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         see if others have made similar changes in the past—allowing you to follow the paper trail of
                         your code's history.
                     </p>
-                    <InContentImage
+                    <Figure
                         className="w-100 shadow0"
                         src="/white-papers/remotework_commithistory.png"
                         alt="A commit history search with highlighted code authors in Sourcegraph"
@@ -182,7 +182,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                         to quickly search across your entire organization's code. Both allow you to instantly get a link
                         to that code that you can share with a coworker.
                     </p>
-                    <InContentImage
+                    <Figure
                         className="w-100 shadow0"
                         src="/white-papers/remotework_codelinksharing.png"
                         alt="With Sourcegraph, you can share a direct link to the code you want to discuss"

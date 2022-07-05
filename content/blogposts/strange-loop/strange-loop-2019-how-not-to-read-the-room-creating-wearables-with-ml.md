@@ -34,6 +34,7 @@ I'm an introvert. This can be a bit unfortunate, when you are a person that enjo
 
 Stephanie Nemeth walks on stage with a homemade, hand-crafted necklace. Stephanie's necklace is loaded with tech.
 
+<TableWrapper>
 | Hardware     | Software      |
 | ------------ | ------------ |
 | [Raspberry Pi](https://www.raspberrypi.org/) | [NodeJS](https://nodejs.org) |
@@ -41,6 +42,7 @@ Stephanie Nemeth walks on stage with a homemade, hand-crafted necklace. Stephani
 | Camera       | C++           |
 | LEDs         |               |
 | Battery      |               |
+</TableWrapper>
 
 Stephanie is a web developer from Berlin working at Microsoft on web accessiblity. She started making wearbales a few years ago, and loves beautiful bright clothing, but once she started making wearable tech, she found she was somewhat uncomfortable with the attention her clothing was drawing. Rather than retreat into her shell, she decided to lean into the discomfort, and make wearable tech that would draw attention and force her to interact with people. Her first project was a fiber-optic outfit for a festival made out of a rave whip. No programming, no soldering.
 
