@@ -5,5 +5,5 @@ interface TableWrapperProps {
 }
 
 export const TableWrapper: FunctionComponent<TableWrapperProps> = ({ children }) => (
-    <div className="table-overflow">{children}</div>
+    <div className="overflow-x-auto">{children}</div>
 )
