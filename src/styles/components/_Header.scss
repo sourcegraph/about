@@ -62,7 +62,6 @@
 
     /* Mobile & Tablet */
     @media only screen and (max-width: 1099px) {
-        /* New Top Nav Customization */
         .btn-outline-primary {
             border: 0 none;
             font-weight: normal;
@@ -102,19 +101,22 @@
         }
     }
 
+    // Mobile menu toggle button
     .navbar-toggler {
         border: 0;
         padding: 8px 4px;
         width: 35px;
-        height: 30px;
+        height: 35px;
         position: relative;
         transition: 0.3s all ease-in-out;
     }
+
+    // Mobile menu toggle button lines
     .nav-line {
         width: 100%;
         height: 2px;
         background: #000;
-
+        transition: all .3s;
         &:not(:last-child) {
             margin-bottom: 5px;
         }
@@ -122,4 +124,27 @@
     &.navbar-dark .nav-line {
         background: #fff;
     }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    // Mobile menu toggle button animation
+    .navbar-toggler.isOpen {
+        .nav-line:nth-of-type(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .nav-line:nth-of-type(2) {
+            animation: fadeOut 0.3s forwards;
+        }
+        .nav-line:nth-of-type(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+    }
+
 }
