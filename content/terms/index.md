@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Sourcegraph Terms of Service
+title: Terms of Service
 ---
 
 Thank you for using Sourcegraph! Select the appropriate Terms of Service below.
