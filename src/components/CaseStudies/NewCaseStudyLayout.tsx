@@ -75,7 +75,10 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({
                 {children}
             </div>
 
-            <RequestDemoTrySourcegraph />
+            {/* eslint-disable-next-line react/forbid-dom-props */}
+            <div className="py-7 bg-cover" style={{ backgroundImage: 'url(/bg-images/bg-code-venus.png)' }}>
+                <RequestDemoTrySourcegraph />
+            </div>
 
             <ContentSection color="white" className="py-lg-7 py-5 col-xl-6">
                 <h1 className="pl-5 pb-5 display-3 font-weight-bold">Explore other case studies</h1>

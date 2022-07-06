@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import { BackButtonBold, BackButton, BackButtonLight } from '@components'
 
 import { COLORS } from '../Jumbotron'
+
 interface Props {
     customer: string
     logo?: string
@@ -33,8 +34,9 @@ export const CaseStudyJumbotron: FunctionComponent<Props> = ({
     </div>
 )
 
-export const NewCaseStudyJumbotron: FunctionComponent<Props> = ({ className = '', children }) => (
-    <div className={`py-7 ${className}`}>
+export const NewCaseStudyJumbotron: FunctionComponent<Props> = ({ children }) => (
+    // eslint-disable-next-line react/forbid-dom-props
+    <div className="py-7 bg-cover" style={{ backgroundImage: 'url(/bg-images/bg-code-venus.png)' }}>
         <div className="container">
             <BackButton href="/case-studies" text="Case Studies" />
             {children}

@@ -7,13 +7,6 @@ import { ContentSection } from '@components'
 import { breakpoints } from '@data'
 import { useWindowWidth, useHubSpot, HubSpotForm } from '@hooks'
 
-import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
-import guideBg from './assets/hero/bg-code-aquamarine.png'
-import webinarMobileBg from './assets/hero/bg-code-mars-mobile.png'
-import webinarBg from './assets/hero/bg-code-mars.png'
-import defaultMobileBg from './assets/hero/bg-code-venus-mobile.png'
-import defaultBg from './assets/hero/bg-code-venus.png'
-
 interface Customer {
     name: string
     logo: string
@@ -81,16 +74,14 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     }
     useHubSpot(hubSpotConfig)
 
-    const heroImage = (): { src: string } => {
-        if (isWebinarPg) {
-            // Webinars
-            return isMdOrDown ? webinarMobileBg : webinarBg
+    const heroImage = (): string => {
+        if (isWebinarPg) { // Webinars
+            return isMdOrDown ? '/bg-images/bg-code-mars-mobile.png' : '/bg-images/bg-code-mars.png'
         }
-        if (isGuidePg) {
-            // Guides
-            return isMdOrDown ? guideMobileBg : guideBg
+        if (isGuidePg) { // Guides
+            return isMdOrDown ? '/bg-images/bg-code-aquamarine-mobile.png' : '/bg-images/bg-code-aquamarine.png'
         }
-        return isMdOrDown ? defaultMobileBg : defaultBg
+        return isMdOrDown ? '/bg-images/bg-code-venus-mobile.png' : '/bg-images/bg-code-venus.png'
     }
 
     return (
@@ -98,7 +89,7 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
             <section
                 // Hero bg differs if Guide vs. Webinar vs. Generic
                 // eslint-disable-next-line react/forbid-dom-props
-                style={{ backgroundImage: `url('${heroImage().src}')` }}
+                style={{ backgroundImage: `url('${heroImage()}')` }}
                 className={classNames('bg-cover py-6 py-md-7', isGuidePg && 'text-white')}
             >
                 <div className="container px-0 d-flex flex-column flex-lg-row justify-content-around align-items-center">
