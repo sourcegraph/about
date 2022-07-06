@@ -202,7 +202,7 @@ export const CaseStudy: FunctionComponent = () => (
                 </p>
             </ContentSection>
 
-            <div className="bg-gradient-venus-radial py-7">
+            <div className="bg-gradient-saturn-reversed py-7">
                 <ContentSection>
                     <ThreeUpText title="Results" items={threeUpTextItems} />
                 </ContentSection>
