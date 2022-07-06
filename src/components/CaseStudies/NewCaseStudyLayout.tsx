@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import { kebabCase } from 'lodash'
 
-import { CaseStudyJumbotron, ContentSection, RequestDemoTrySourcegraph, BlockquoteWithLogoTop } from '@components'
+import { CaseStudyJumbotron, ContentSection, RequestDemoTrySourcegraph, BlockquoteWithLogoBottom } from '@components'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
 
@@ -49,7 +49,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({
                     customer={customer}
                     color="white"
                 >
-                    <h1 className="pt-5 pb-6 display-2 font-weight-bold max-w-600 mx-auto">{title}</h1>
+                    <h1 className="pt-5 pb-6 display-2 font-weight-bold max-w-600">{title}</h1>
                     {pdf && (
                         <a href={pdf} className="btn btn-primary mt-3" rel="nofollow noreferrer" target="_blank">
                             <i className="fa fa-file-pdf pr-2" />
@@ -60,7 +60,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({
 
                 {quote && (
                     <ContentSection color="white" className="py-6 text-center max-w-600">
-                        <BlockquoteWithLogoTop
+                        <BlockquoteWithLogoBottom
                             quote={quote.text}
                             author={quote.author}
                             logo={{

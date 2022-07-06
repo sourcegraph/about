@@ -28,9 +28,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
         >
             <div>
                 <CheckIcon
-                    className={`icon-inline ${
-                        value ? 'pricing-plan-feature__icon-true' : 'pricing-plan-feature__icon-false'
-                    }`}
+                    className={value ? 'pricing-plan-feature__icon-true' : 'pricing-plan-feature__icon-false'}
                 />{' '}
                 {label}
             </div>

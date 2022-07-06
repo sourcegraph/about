@@ -9,7 +9,7 @@ export const AuthorBio: React.FunctionComponent<{
         {image && (
             <div className="col-md-3 col-xl-2 text-center text-md-right">
                 <img
-                    className="p-1 rounded-circle border border-3 border-pacific-blue max-w-150"
+                    className="p-1 rounded-circle max-w-150"
                     src={image}
                     alt={author}
                 />

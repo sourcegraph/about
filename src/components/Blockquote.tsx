@@ -44,14 +44,14 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
             (link.href.includes('http') ? (
                 <a href={link.href} target="_blank" rel="nofollow noreferrer">
                     {link.text}
-                    <ArrowRightIcon className="icon-inline ml-1" />
+                    <ArrowRightIcon className="ml-1" />
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a className="d-flex justify-content-center mt-3">
                         <p className="font-weight-bold">{link.text}</p>
-                        <ArrowRightIcon className="icon-inline ml-1" />
+                        <ArrowRightIcon className="ml-1" />
                     </a>
                 </Link>
             ))}
@@ -91,7 +91,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
     bold?: boolean
 }> = ({ quote, author, logo, headline, link, bold }) => (
     <>
-        <blockquote className="px-3 mb-5 text-center border-left border-3 border-vermillion">
+        <blockquote className="px-3 mb-5 text-center border-left border-3 border-vivid-violet">
             {headline && <h4 className="font-weight-bold mb-4">{headline}</h4>}
             <h5 className={`font-weight-${bold ? 'bold' : 'normal'} mb-3`}>&ldquo;{quote}&rdquo;</h5>
             {author && <figcaption className="text-center text-muted mt-5">&mdash; {author}</figcaption>}
@@ -112,7 +112,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
             (link?.href.includes('http') ? (
                 <a href={link.href} target="_blank" rel="nofollow noreferrer">
                     {link.text}
-                    <ArrowRightIcon className="icon-inline ml-1" />
+                    <ArrowRightIcon className="ml-1" />
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
@@ -124,7 +124,7 @@ export const BlockquoteWithBorder: FunctionComponent<{
                         data-button-type="cta"
                     >
                         <p className="font-weight-bold">{link.text}</p>
-                        <ArrowRightIcon className="icon-inline ml-1" />
+                        <ArrowRightIcon className="ml-1" />
                     </a>
                 </Link>
             ))}

@@ -7,24 +7,24 @@ import {
     Layout,
     NewCaseStudyLayout,
     ContentSection,
-    BlockquoteWithLogoBottom,
+    BlockquoteWithBorder,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
 
 const threeUpTextItems = [
     {
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">{'<'} 5 min</h4>,
+        subtitle: <h3 className="pb-3 mx-auto max-w-300 font-weight-bold text-blurple">5 minutes</h3>,
         description:
             'Nutanix was able to see where JMSAppender existed, fix it, and send out a release in less than 5 minutes.',
     },
     {
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">4 days</h4>,
+        subtitle: <h3 className="pb-3 mx-auto max-w-300 font-weight-bold text-blurple">4 days</h3>,
         description:
             'Nutanix was able to deliver patches to its customers that fully remediated the Log4j vulnerability.',
     },
     {
-        subtitle: <h4 className="pb-3 mx-auto max-w-300 font-weight-bold text-curious-blue">100% confidence</h4>,
+        subtitle: <h3 className="pb-3 mx-auto max-w-300 font-weight-bold text-blurple">100%</h3>,
         description: 'Nutanix was able to confidently identify every instance of Log4j across its sprawling codebase.',
     },
 ]
@@ -162,10 +162,10 @@ export const CaseStudy: FunctionComponent = () => (
             </ContentSection>
 
             <ContentSection color="white" className="py-6 max-w-700 col-xl-5 text-pale-sky text-center">
-                <BlockquoteWithLogoBottom
+                <BlockquoteWithBorder
                     quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                     better than having to say, 'Well, boss, I think we got it all.'"
-                    author="Jon Kohler, Technical Director of Solution Engineering at Nutanix"
+                    author="Jon Kohler"
                 />
             </ContentSection>
 

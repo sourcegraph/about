@@ -169,7 +169,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                         <Link href="/case-studies/criteo-tackles-big-code" passHref={true}>
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a>
-                                Criteo Tackles Big Code <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Criteo Tackles Big Code <ArrowRightBoxIcon className="ml-1" />
                             </a>
                         </Link>
                     </div>

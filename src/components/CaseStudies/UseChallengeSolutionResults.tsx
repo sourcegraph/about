@@ -38,11 +38,15 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Use case</h5>
-                        <ul className="pl-4">
-                            {useCases.map(useCase => (
-                                <ListItemType key={useCase.text} item={useCase} />
-                            ))}
-                        </ul>
+                        {useCases.length > 1 ? (
+                            <ul className="pl-4">
+                                {useCases.map(useCase => (
+                                    <ListItemType key={useCase.text} item={useCase} />
+                                ))}
+                            </ul>
+                        ) : (
+                            useCases[0].href ? <Link href={useCases[0].href}>{useCases[0].text}</Link> : <span>{useCases[0].text}</span>
+                        )}
                     </div>
                 </div>
                 <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
@@ -51,11 +55,15 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Challenge</h5>
-                        <ul className="pl-4">
-                            {challenges.map(challenge => (
-                                <ListItemType key={challenge.text} item={challenge} />
-                            ))}
-                        </ul>
+                        {challenges.length > 1 ? (
+                            <ul className="pl-4">
+                                {challenges.map(challenge => (
+                                    <ListItemType key={challenge.text} item={challenge} />
+                                ))}
+                            </ul>
+                        ) : (
+                            challenges[0].href ? <Link href={challenges[0].href}>{challenges[0].text}</Link> : <span>{challenges[0].text}</span>
+                        )}
                     </div>
                 </div>
                 <div className="mb-5 ml-3 d-flex flex-column flex-md-row justify-content-lg-end">
@@ -64,11 +72,15 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Solution</h5>
-                        <ul className="pl-4">
-                            {solutions.map(solution => (
-                                <ListItemType key={solution.text} item={solution} />
-                            ))}
-                        </ul>
+                        {solutions.length > 1 ? (
+                            <ul className="pl-4">
+                                {solutions.map(solution => (
+                                    <ListItemType key={solution.text} item={solution} />
+                                ))}
+                            </ul>
+                        ) : (
+                            solutions[0].href ? <Link href={solutions[0].href}>{solutions[0].text}</Link> : <span>{solutions[0].text}</span>
+                        )}
                     </div>
                 </div>
             </section>
@@ -81,11 +93,15 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                     </div>
                     <div className="pl-3 col-11 col-lg-9">
                         <h5 className="font-weight-bold">Results</h5>
-                        <ul className="pl-4">
-                            {results.map(result => (
-                                <ListItemType key={result.text} item={result} />
-                            ))}
-                        </ul>
+                        {results.length > 1 ? (
+                            <ul className="pl-4">
+                                {results.map(result => (
+                                    <ListItemType key={result.text} item={result} />
+                                ))}
+                            </ul>
+                        ) : (
+                            results[0].href ? <Link href={results[0].href}>{results[0].text}</Link> : <span>{results[0].text}</span>
+                        )}
                     </div>
                 </div>
             </section>

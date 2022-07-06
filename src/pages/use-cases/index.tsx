@@ -64,7 +64,7 @@ const UseCases: React.FunctionComponent = () => (
                                         data-button-type="cta"
                                     >
                                         {feature.description}
-                                        <ArrowRightIcon className="icon-inline ml-1" />
+                                        <ArrowRightIcon className="ml-1" />
                                     </a>
                                 </Link>
                             ))}
@@ -107,7 +107,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <ArrowRightBoxIcon className="ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/code-security" passHref={true}>
@@ -180,7 +180,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <ArrowRightBoxIcon className="ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/onboarding" passHref={true}>
@@ -234,7 +234,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <ArrowRightBoxIcon className="ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/incident-response" passHref={true}>
@@ -321,7 +321,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <ArrowRightBoxIcon className="ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/code-reuse" passHref={true}>
@@ -373,7 +373,7 @@ const UseCases: React.FunctionComponent = () => (
                                 data-button-location={buttonLocation.bodyDemo}
                                 data-button-type="cta"
                             >
-                                Request a demo <ArrowRightBoxIcon className="icon-inline ml-1" />
+                                Request a demo <ArrowRightBoxIcon className="ml-1" />
                             </a>
                         </Link>
                         <Link href="/use-cases/code-health" passHref={true}>
