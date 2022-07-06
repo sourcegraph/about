@@ -15,7 +15,7 @@ export const Guide: FunctionComponent = () => (
             title="Continuous developer onboarding"
             subtitle="A guide to cultivating a culture of professional growth in your engineering organization"
             formLabel="Download the guide"
-            onFormSubmitted={() => window.open('/guides/sg-continuous-developer-onboarding.pdf')}
+            resource="/guides/sg-continuous-developer-onboarding.pdf"
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <p>

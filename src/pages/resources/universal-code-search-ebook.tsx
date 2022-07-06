@@ -47,7 +47,10 @@ export const UniversalCodeSearchEbook: FunctionComponent = () => (
                         <div className="col-md-4">
                             <h3 className="font-weight-light font-sans">Get your free ebook.</h3>
                             <div className="mt-5">
-                                <HubSpotForm masterFormName="gatedMulti" />
+                                <HubSpotForm
+                                    masterFormName="gatedMulti"
+                                    inlineMessage='Enjoy your copy of <a href="https://cdn2.hubspot.net/hubfs/2762526/sourgraph-universal-code-search-e020720.pdf?__hstc=41780861.703a2535af92dad1055c48fba5b9c3e0.1655354706303.1656610026802.1656620925168.29&__hssc=41780861.20.1656620925168&__hsfp=2908620477&hsCtaTracking=94702abd-8413-44d2-8ed8-16aa1479271e%7C3eba2b2a-b20f-49ab-b252-a262cc174938" target="_blank" rel="noopener noreferrer">Universal code search and intelligence</a>.'
+                                />
                             </div>
                         </div>
                     </div>

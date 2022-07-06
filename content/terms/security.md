@@ -99,4 +99,4 @@ Sourcegraph is an OSS product licensed under Apache 2.0. We also make great use 
 
 ## Security Updates
 
-<HubSpotForm formId='0ff99031-7caf-433a-8aef-8c9345948288' />
+<HubSpotForm formId='0ff99031-7caf-433a-8aef-8c9345948288' inlineMessage="Thank you for your interest in Sourcegraph. You will be notified of any changes to our security updates." />

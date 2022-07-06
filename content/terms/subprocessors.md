@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Sourcegraph Subprocessors
+title: Subprocessors
 description: This page lists the subsprocessors that Sourcegraph may use
 ---
 
@@ -35,4 +35,4 @@ Sourcegraph engages Sub-processors to perform the functions described in the tab
 
 Complete this form to be notified of changes to our sub-processors.
 
-<HubSpotForm masterFormName="contactMulti" />
+<HubSpotForm masterFormName="contactMulti" inlineMessage="Thank you for your interest in Sourcegraph. You will be notified of any changes to our sub-processors." />

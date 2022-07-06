@@ -1,4 +1,3 @@
-/* eslint-disable no-multiple-empty-lines */
 import { FunctionComponent, useEffect, useState } from 'react'
 
 declare global {
@@ -207,6 +206,7 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
  * @param CreateHubSpotFormProps.formId - the form's id
  * @param CreateHubSpotFormProps.onFormReady - callback after form is built
  * @param CreateHubSpotFormProps.onFormSubmitted - callback after data is sent
+ * @param CreateHubSpotFormProps.inlineMessage - form submission message
  */
 function createHubSpotForm({ formId, onFormReady, onFormSubmitted, inlineMessage }: CreateHubSpotFormProps): void {
     const script = getScriptElement('hubspot')
@@ -298,7 +298,7 @@ export const HubSpotForm: FunctionComponent<HubSpotFormProps> = ({
                 formId: formId || masterFormId,
                 onFormReady,
                 onFormSubmitted,
-                inlineMessage
+                inlineMessage,
             })
 
             setFormCreated(true)

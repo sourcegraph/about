@@ -14,7 +14,7 @@ export const Guide: FunctionComponent = () => (
             title="Optimizing developer onboarding"
             subtitle="Lessons learned and secrets to success from 31 companies and open source projects"
             formLabel="Download the guide"
-            onFormSubmitted={() => window.open('/guides/optimizing-developer-onboarding.pdf')}
+            resource="/guides/optimizing-developer-onboarding.pdf"
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <p>

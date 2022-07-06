@@ -17,7 +17,7 @@ export const Report: FunctionComponent = () => (
                 logo: '/external-logos/gartner-cool-vendor-2022.png',
             }}
             formLabel="Access the report"
-            onFormSubmitted={() => window.open('https://www.gartner.com/doc/reprints?id=1-2A44UTV8&ct=220524&st=sb')}
+            resource="https://www.gartner.com/doc/reprints?id=1-2A44UTV8&ct=220524&st=sb"
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <h3 className="font-weight-normal pb-5">

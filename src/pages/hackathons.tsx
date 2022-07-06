@@ -7,7 +7,7 @@ import { Layout, HubSpotForm } from '@components'
 export const Pricing: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph | Set up Sourcegraph at a Hackathon',
+            title: 'Sourcegraph - Set up Sourcegraph at a Hackathon',
             description: 'Set up Sourcegraph at a Hackathon',
         }}
     >
@@ -69,7 +69,21 @@ export const Pricing: FunctionComponent = () => (
                 </div>
             </div>
             <div>
-                <HubSpotForm masterFormName="contactMulti" chiliPiper={true} />
+                <HubSpotForm
+                    masterFormName="contactMulti"
+                    chiliPiper={true}
+                    inlineMessage={`
+                        <p>Thank you for your interest in Sourcegraph. We will be in contact with you soon!</p>
+                        
+                        <p>Get started today:</p>
+
+                        <ul>
+                            <li><a href="https://docs.sourcegraph.com/admin/deploy/docker-single-container" target="_blank" rel="noopener noreferrer">Install Sourcegraph with Docker</a> <b>(recommended, easiest)</b></li>
+                            <li><a href="https://docs.sourcegraph.com" target="_blank" rel="noopener noreferrer">Review the documentation</a></li>
+                            <li>Check your email for your 30-day license key.</li>
+                        </ul>
+                    `}
+                />
             </div>
         </section>
     </Layout>

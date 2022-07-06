@@ -33,12 +33,7 @@ const Webinar: FunctionComponent = () => {
             }}
         >
             <GatedResourceLayout
-                title={
-                    <>
-                        Sourcegraph Code Insights:
-                        <br /> Turning Metrics into Action
-                    </>
-                }
+                title={'Sourcegraph Code Insights: \n Turning Metrics into Action'}
                 subtitle="How to track what really matters to you and your team"
                 speakers={speakers}
                 formLabel="Watch the on-demand webinar"

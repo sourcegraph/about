@@ -293,7 +293,7 @@ const blogResourceItems = [
 const CodeInsightsPage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Sourcegraph | Code Insights',
+            title: 'Sourcegraph - Code Insights',
             description:
                 'Draw insights from your codebase about how different initiatives are tracking over time. Code Insights is now generally available for teams of all sizes.',
         }}

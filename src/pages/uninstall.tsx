@@ -13,7 +13,10 @@ const Uninstall: FunctionComponent = () => (
                     <div className="d-flex flex-column p-4 mx-auto">
                         <h3>Why did you uninstall the Sourcegraph browser extension?</h3>
                         <p>Your feedback helps us improve the product for everyone.</p>
-                        <HubSpotForm formId="a1bc77c9-019c-4f83-b5ba-327949f8e587" />
+                        <HubSpotForm
+                            formId="a1bc77c9-019c-4f83-b5ba-327949f8e587"
+                            inlineMessage="Thank you for your interest in Sourcegraph. Your feedback has been received and is valuable to us!"
+                        />
                     </div>
                 </div>
             </section>

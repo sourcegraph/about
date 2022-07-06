@@ -14,7 +14,7 @@ export const Guide: FunctionComponent = () => (
         <GatedResourceLayout
             title="Find and fix security vulnerabilities in the pursuit of healthy code"
             formLabel="Download the guide"
-            onFormSubmitted={() => window.open('/guides/fixing-vulnerabilities-less-is-more.pdf')}
+            resource="/guides/fixing-vulnerabilities-less-is-more.pdf"
             description={
                 <section className="col-md-6 col-12 pr-lg-6">
                     <p>
