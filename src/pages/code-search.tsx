@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import {
     ContentSection,
-    BlockquoteWithBorder,
+    InContentBlockquote,
     IntegrationsSection,
     Layout,
     SelfHostedSection,
@@ -155,7 +155,7 @@ export const CodeSearchPage: FunctionComponent = () => (
                     <p>Get alerts for vulnerabilities and then automate security fixes across your entire codebase.</p>
                 </div>
                 <div className="col-lg-6 text-center">
-                    <BlockquoteWithBorder
+                    <InContentBlockquote
                         quote={`At Criteo, developer happiness is our top priority-not just productivity. By providing them
                         with the right tools, like Sourcegraph, we've found that increased productivity is a natural
                         byproduct.`}

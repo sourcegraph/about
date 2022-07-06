@@ -7,7 +7,7 @@ import {
     Layout,
     NewCaseStudyLayout,
     ContentSection,
-    BlockquoteWithBorder,
+    InContentBlockquote,
     ThreeUpText,
     UseChallengeSolutionResults,
 } from '@components'
@@ -158,11 +158,12 @@ export const CaseStudy: FunctionComponent = () => (
                     completely flying by the seats of our pants.”
                 </p>
 
-                <div className="my-7">
-                    <BlockquoteWithBorder
+                <div className="py-7">
+                    <InContentBlockquote
                         quote="It's nice when you can just run a report and say, 'Here it is,' or 'Here it isn't.' It's much
                         better than having to say, 'Well, boss, I think we got it all.'"
                         author="Jon Kohler"
+                        largeText={true}
                     />
                 </div>
 

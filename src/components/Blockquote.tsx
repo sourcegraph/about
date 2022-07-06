@@ -82,19 +82,23 @@ export const BlockquoteWithLogoTop: FunctionComponent<{
     </>
 )
 
-export const BlockquoteWithBorder: FunctionComponent<{
+export const InContentBlockquote: FunctionComponent<{
     quote: string
-    author?: string | ReactFragment
+    author?: string
     logo?: Logo
     link?: Link
     headline?: string
-    bold?: boolean
-}> = ({ quote, author, logo, headline, link, bold }) => (
+    largeText?: boolean
+}> = ({ quote, author, logo, link, headline, largeText = false }) => (
     <>
-        <blockquote className="px-3 mb-5 text-center border-left border-3 border-vivid-violet">
-            {headline && <h4 className="font-weight-bold mb-4">{headline}</h4>}
-            <h5 className={`font-weight-${bold ? 'bold' : 'normal'} mb-3`}>&ldquo;{quote}&rdquo;</h5>
-            {author && <figcaption className="text-center text-muted mt-5">&mdash; {author}</figcaption>}
+        <blockquote className="border-left border-3 border-vivid-violet">
+            {headline && <h4 className="font-weight-bold mb-4 px-4">{headline}</h4>}
+            {largeText ? (
+                <h3 className="font-weight-normal px-4">&ldquo;{quote}&rdquo;</h3>
+            ) : (
+                <h5 className="font-weight-normal px-4">&ldquo;{quote}&rdquo;</h5>
+            )}
+            {author && <figcaption className="text-muted px-4 pt-3">&mdash; {author}</figcaption>}
         </blockquote>
         {logo &&
             (logo.href ? (
