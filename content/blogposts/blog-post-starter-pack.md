@@ -9,7 +9,7 @@ tags: [blog]
 slug: starter-pack
 heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/default_hero_social.png
-published: true
+published: false
 ---
 
 <Figure 
