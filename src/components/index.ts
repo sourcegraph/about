@@ -60,6 +60,7 @@ export {
     CaseStudyCard,
     InContentBlockquote,
     MediaQuote,
+    NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     UseChallengeSolutionResults,
 } from './CaseStudies'

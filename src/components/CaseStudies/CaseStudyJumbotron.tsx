@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { BackButtonBold, BackButtonLight } from '@components'
+import { BackButtonBold, BackButton, BackButtonLight } from '@components'
 
 import { COLORS } from '../Jumbotron'
 interface Props {
@@ -26,8 +26,17 @@ export const CaseStudyJumbotron: FunctionComponent<Props> = ({
                 <BackButtonBold href="/case-studies" text="Case Studies" />
             )}
         </div>
-        <div className="container text-center pt-3 pb-3">
+        <div className="container text-center py-3">
             {logo && <img className="case-studies__logo my-3" src={logo} alt={customer} />}
+            {children}
+        </div>
+    </div>
+)
+
+export const NewCaseStudyJumbotron: FunctionComponent<Props> = ({ className = '', children }) => (
+    <div className={`py-7 ${className}`}>
+        <div className="container">
+            <BackButton href="/case-studies" text="Case Studies" />
             {children}
         </div>
     </div>

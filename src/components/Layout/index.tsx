@@ -38,7 +38,6 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
     const isBlog = pathname === '/blog'
     const isArticle = ['/blog/', '/podcast/', '/release/'].includes(pathname.replace('[...slug]', ''))
     const isProductPage = pathname.startsWith('/product/')
-    const isCaseStudyPage = pathname.startsWith('/case-studies/') && pathname.split('/')[2] !== ''
 
     const meta: LayoutProps['meta'] = {
         ...props.meta,
@@ -127,7 +126,7 @@ export const Layout: FunctionComponent<LayoutProps> = props => {
 
             {!props.hideFooter && (
                 <Footer
-                    className={`${props.className || ''} ${isCaseStudyPage ? 'bg-black' : ''}`}
+                    className={`${props.className || ''}`}
                     minimal={props.minimal}
                 />
             )}
