@@ -187,7 +187,7 @@ You can easily embed YouTube videos using the `YouTube` component. The `id` valu
 
 ### Video
 
-The `Video` component supports local files. First, upload the .webm and .mp4 versions of the video to Google Cloud. Then, add the root names of these files to the `source` property, without including their extensions. You can choose to repeat a video by including the `loop` property, or display the caption using the `showCaption` property.
+The `Video` component supports .mp4 and .webm files. First, upload the two versions of the video to Google Cloud. Then, add the root names of these files to the `source` property, without including their extensions. You can choose to repeat a video by including the `loop` property, or display the caption using the `showCaption` property.
 
 <Video 
   source={{webm: 'blog/shift-left/01-code-reuse', mp4: 'blog/shift-left/01-code-reuse'}} 
