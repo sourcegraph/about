@@ -22,7 +22,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
 }) =>
     value ? (
         <Tag className={`${className} d-flex justify-content-between`}>
-            <div>
+            <div className="text-xl">
                 <CheckIcon className="icon-inline text-success mr-2" />{' '}
                 {label}
             </div>
@@ -34,7 +34,7 @@ export const PricingPlanFeature: FunctionComponent<Props> = ({
                     overlay={<Tooltip id="tooltip">{description}</Tooltip>}
                 >
                     {({ ref, ...triggerHandler }) => (
-                        <span {...triggerHandler} ref={ref} className="ml-2 text-gray-3">
+                        <span {...triggerHandler} ref={ref} className="ml-2 text-gray-4">
                             <QuestionMarkCircleOutlineIcon />
                         </span>
                     )}
