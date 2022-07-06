@@ -116,13 +116,13 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                 ref={box}
                 // eslint-disable-next-line react/forbid-dom-props
                 style={{ marginBottom: boxHalfHeight, width: '95%' }}
-                className="col-5 bg-gradient-venus lg-absolute right-0 max-w-xl-500 max-w-450 bottom-0 mx-auto px-4 py-5"
+                className="col-5 bg-gradient-venus-radial lg-absolute right-0 max-w-xl-500 max-w-450 bottom-0 mx-auto px-4 py-5"
             >
                 <div className="ml-lg-0 d-flex flex-column flex-lg-row">
                     <div className="d-flex bg-white align-self-start mb-3 col-1 col-lg-2 justify-content-center align-items-center p-0 rounded-circle text-center p-1 max-w-50">
                         <ChartBarIcon size={40} className="p-1 text-blurple" />
                     </div>
-                    <div className="pl-3 col-11">
+                    <div className="pl-3 col-lg-11 col-12">
                         <h5 className="font-weight-bold">Results</h5>
                         {results.length > 1 ? (
                             <ul className="pl-4 mb-0">

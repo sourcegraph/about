@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 
-import Link from 'next/link'
 import ArrowRightIcon from 'mdi-react/ArrowRightIcon'
+import Link from 'next/link'
 
 import { ContentSection } from '@components'
 
@@ -18,9 +18,9 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                 <h1 className="text-center font-weight-bold">Get started with Sourcegraph</h1>
                 <p className="text-center">Understand, fix, and automate changes across your entire codebase.</p>
             </div>
-            <div className="d-flex flex-column">
+            <div className="d-flex flex-column align-items-center">
                 <Link href="/demo" passHref={true}>
-                    <div className="btn btn-primary">Request a demo</div>
+                    <div className="btn btn-primary col-12">Request a demo</div>
                 </Link>
                 <Link href="/get-started" passHref={true}>
                     <a href="#none" className="mt-4 font-weight-bold">

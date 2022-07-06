@@ -3,9 +3,10 @@ import { FunctionComponent } from 'react'
 import { kebabCase } from 'lodash'
 
 import { NewCaseStudyJumbotron, ContentSection, RequestDemoTrySourcegraph, BlockquoteWithLogoBottom } from '@components'
+import { breakpoints } from '@data'
+import { useWindowWidth } from '@hooks'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
-
 interface Quote {
     text: string
     author: string
@@ -40,6 +41,10 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({
 }) => {
     // CaseStudy preview list NOT including current CaseStudy page
     const uniqueCaseStudyList = CASESTUDIES.filter(study => study.name !== customer).slice(0, 4)
+
+    const windowWidth = useWindowWidth()
+    const isMdOrDown = windowWidth < breakpoints.lg
+    const getBgImg = (): string => `url(/bg-images/bg-code-venus${isMdOrDown ? '-mobile' : ''}.png)`
 
     return (
         <>
@@ -76,7 +81,7 @@ export const NewCaseStudyLayout: FunctionComponent<Props> = ({
             </div>
 
             {/* eslint-disable-next-line react/forbid-dom-props */}
-            <div className="py-7 bg-cover" style={{ backgroundImage: 'url(/bg-images/bg-code-venus.png)' }}>
+            <div className="py-7 bg-cover" style={{ backgroundImage: getBgImg() }}>
                 <RequestDemoTrySourcegraph />
             </div>
 
