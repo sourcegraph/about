@@ -90,7 +90,7 @@ Here are the common code search engines we've seen in use:
 * <a href="https://oracle.github.io/opengrok/" rel="nofollow" target="_blank">OpenGrok</a>: a fairly old but persistent code search engine now maintained by Oracle
 * <a href="https://github.com/hound-search/hound" rel="nofollow" target="_blank">Hound</a>: a code search engine created and open-sourced by engineers at Etsy
 * <a href="https://livegrep.com/search/linux" rel="nofollow" target="_blank">Livegrep</a>: a code search engine created by Nelson Elhage at Stripe
-* And of course, [Sourcegraph](https://about.sourcegraph.com/get-started)
+* And of course, [Sourcegraph](https://about.sourcegraph.com/get-started/self-hosted)
 
 ## Get good monitoring
 
@@ -161,7 +161,7 @@ Building software at scale is hard. As everyone who has read <a href="https://en
 &nbsp;
 <hr/>
 
-**Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
+**Try out Sourcegraph.** Get started searching your code by [self-hosting Sourcegraph](https://about.sourcegraph.com/get-started/self-hosted) – free up to 10 users. Or try [Sourcegraph Cloud](https://sourcegraph.com/search) to easily search public, open source code.  
 
 Please feel free to ask us questions either via posting on Twitter[@sourcegraph](https://twitter.com/sourcegraph) or sending an email to [hi@sourcegraph.com](mailto:hi@sourcegraph.com).
 

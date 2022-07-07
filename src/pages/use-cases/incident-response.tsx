@@ -212,7 +212,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                                     </Link>
                                 </div>
                                 <div className="ml-md-3">
-                                    <Link href="/get-started" passHref={true}>
+                                    <Link href="/get-started/self-hosted" passHref={true}>
                                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             className="btn btn-outline-primary w-100 max-w-350"
@@ -361,7 +361,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                 <h2 className="font-weight-bold display-3 mb-4 mx-4 mx-lg-0">
                     Respond to incidents faster and more effectively.
                 </h2>
-                <Link href="/get-started" passHref={true}>
+                <Link href="/get-started/self-hosted" passHref={true}>
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
