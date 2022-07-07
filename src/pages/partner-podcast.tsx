@@ -121,7 +121,7 @@ const PartnerPodcastPage: FunctionComponent = () => {
                     <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
                     <h5 className="pt-4 pb-1 mx-auto max-w-550 font-weight-normal">
                         <span>
-                            <Link href="/get-started">Get started </Link>
+                            <Link href="/get-started/self-hosted">Get started </Link>
                         </span>
                         for free with up to 10 teammates or
                         <span>
