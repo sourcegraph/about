@@ -27,7 +27,7 @@ export const TrySourcegraph: FunctionComponent<Props> = ({ demoFormURL = '/demo'
                         </a>
                     </Link>
                 )}
-                <Link href="/get-started" passHref={true}>
+                <Link href="/get-started/self-hosted" passHref={true}>
                     <a href="#none" className="btn btn-primary mx-2 mb-3" title="Try Sourcegraph now">
                         Try Sourcegraph now
                     </a>

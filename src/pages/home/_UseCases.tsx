@@ -137,7 +137,7 @@ const UseCases: FunctionComponent = () => {
                     Want to use Sourcegraph at your company?
                 </h3>
                 <p className="text-xl">
-                    <Link href="/get-started">Get started</Link> for free with up to 10 teammates or{' '}
+                    <Link href="/get-started/self-hosted">Get started</Link> for free with up to 10 teammates or{' '}
                     <Link href="/demo">request a demo</Link> to learn about our enterprise plan and to see Sourcegraph
                     in your own environment.
                     <Link href="/demo" passHref={true}>

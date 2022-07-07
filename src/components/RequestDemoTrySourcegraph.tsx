@@ -22,7 +22,7 @@ export const RequestDemoTrySourcegraph: FunctionComponent<Props> = () => (
                     <Link href="/demo" passHref={true}>
                         <div className="btn btn-primary">Request a demo</div>
                     </Link>
-                    <Link href="/get-started" passHref={true}>
+                    <Link href="/get-started/self-hosted" passHref={true}>
                         <p className="mt-4 btn font-weight-bold text-curious-blue">Try Sourcegraph now</p>
                     </Link>
                 </div>

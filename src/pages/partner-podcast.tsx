@@ -94,16 +94,29 @@ const PartnerPodcastPage: FunctionComponent = () => (
             </section>
         </div>
 
-        <div className="container max-w-900 mt-6">
-            <h1 className="display-3 font-weight-bold">Move fast — even in big code bases</h1>
-            <h5 className="font-weight-normal py-3">Learn how these software companies used Sourcegraph</h5>
-            <div className="d-flex flex-wrap pt-4 position-relative">
-                {caseStudyItems.map(study => (
-                    <div key={study.name} className="col-sm-6 col-md-4 mb-6 px-0">
-                        <CaseStudyCard study={study} bwLogo={true} />
-                    </div>
-                ))}
+        <div className="bg-gradient-venus-saturated py-6">
+            <section className="container max-w-900 text-center">
+                <h1 className="display-3 font-weight-bold pt-2">Want to use Sourcegraph at your company?</h1>
+                <h5 className="pt-4 pb-1 mx-auto max-w-550 font-weight-normal">
+                    <span>
+                        <Link href="/get-started/self-hosted">Get started </Link>
+                    </span>
+                    for free with up to 10 teammates or
+                    <span>
+                        <Link href="/demo"> request a demo </Link>
+                    </span>
+                    to learn about our enterprise plan and to see Sourcegraph in your own environment.
+                </h5>
+            </section>
+        </div>
+
+        <div className="container max-w-900 my-md-8 my-6 px-0">
+            <div className="col-lg-6">
+                <h1 className="mb-5 font-weight-bold">Related resources</h1>
             </div>
+            {blogResourceItems.map(item => (
+                <BlogResourceItem key={item.title} blog={item} />
+            ))}
         </div>
 
         <div className="bg-gradient-venus-saturated py-6">
