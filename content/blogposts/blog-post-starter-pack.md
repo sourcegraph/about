@@ -233,7 +233,7 @@ Add links with an anchor tag as you usually would:
   <a href="https://www.sourcegraph.com/search">Check out Sourcegraph Search!</a>
 </div>
 
-If you are wrapping an image in a link, please include a `title` on the anchor tag for accessibility.
+If you are wrapping an image in a link, please include a `title` on the anchor tag for accessibility, this way screen readers can pick up all the content.
 
 <a href="https://www.sourcegraph.com/search" title="Go to Sourcegraph Code Search">
   <Figure 
