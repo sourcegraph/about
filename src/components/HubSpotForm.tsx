@@ -179,19 +179,26 @@ const loadAllScripts = async (chiliPiper?: boolean): Promise<void> => {
     if (chiliPiper) {
         await loadScriptElement('chilipiper', chiliPiperScript)
 
-        const cpTenantDomain = 'sourcegraph'
-        const cpRouterName = 'contact-sales'
+        const chiliPiperDomain = 'sourcegraph'
+        const chiliPiperRouter = 'contact-sales'
 
         window.addEventListener('message', event => {
             const data = event.data as HubSpotEventProps
 
             if (data.type === 'hsFormCallback' && data.eventName === 'onFormSubmit') {
                 const lead = data.data.reduce((object, item) => Object.assign(object, { [item.name]: item.value }), {})
-                const chilipiper = window.ChiliPiper
+                const chiliPiperWindow = window.ChiliPiper
 
-                chilipiper?.submit(cpTenantDomain, cpRouterName, {
+                // Prevent schdulder from opening twice
+                const scheduler = document.querySelector('.chilipiper-popup')
+                if (scheduler) {
+                    return
+                }
+
+                chiliPiperWindow?.submit(chiliPiperDomain, chiliPiperRouter, {
                     map: true,
                     lead,
+                    closeOnOutside: true
                 })
             }
         })
