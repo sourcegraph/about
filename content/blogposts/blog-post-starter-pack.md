@@ -212,7 +212,7 @@ Use the `EmbeddedHubSpot` component to drop a custom HubSpot form into your post
 
 ## Code
 
-Any code you write, you can style! The Blog uses Prism for code formatting. Specify the language at the front of the code block. 
+You can add syntax highlighting to any code you write! The Blog uses Prism for code formatting. Specify the language at the front of the code block. 
 
 **TypeScript**
 
