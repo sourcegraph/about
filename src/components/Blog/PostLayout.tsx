@@ -3,12 +3,12 @@ import { FunctionComponent } from 'react'
 import { MDXRemote } from 'next-mdx-remote'
 import Link from 'next/link'
 
-import { BlockquoteWithBorder, HubSpotForm, Video, YouTube } from '@components'
+import { Alert, BlockquoteWithBorder, HubSpotForm, Figure, TableWrapper, Video, YouTube, TrySourcegraph } from '@components'
 import { PostComponentProps } from '@interfaces/posts'
 import { formatDate } from '@util'
 
-export type Components = import('mdx/types').MDXComponents
-const components = { BlockquoteWithBorder, HubSpotForm, Video, YouTube }
+type PostComponents = import('mdx/types').MDXComponents
+const components = { Alert, BlockquoteWithBorder, HubSpotForm, Figure, TableWrapper, Video, YouTube }
 
 /**
  * This component is used to render all types of posts:
@@ -71,9 +71,11 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
         {content && (
             <div className="card-body max-w-650">
                 <div className={`blog-post__html ${contentClassName}`}>
-                    <MDXRemote {...content} components={components as Components} />
+                    <MDXRemote {...content} components={components as PostComponents} />
                 </div>
             </div>
         )}
+        <TrySourcegraph />
     </Tag>
+    
 )

@@ -9,7 +9,7 @@ export const Guide: FunctionComponent = () => (
             description:
                 'When finding security vulnerabilities, simplicity is key. Learn how to decrease recovery time with a single search by improving tooling and processes.',
         }}
-        className="navbar-white"
+        className="bg-white"
     >
         <GatedResourceLayout
             title="Find and fix security vulnerabilities in the pursuit of healthy code"

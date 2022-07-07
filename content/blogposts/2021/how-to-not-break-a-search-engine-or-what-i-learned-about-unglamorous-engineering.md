@@ -27,7 +27,10 @@ Sourcegraph—the bit that users type into the search bar. This component
 processes every single input that goes into the search bar when users search
 for code:
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/search-bar.png" style={{width: '660px'}} alt="Code search input bar" />
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/search-bar.png"
+  alt="Code search input bar" 
+/>
 
 When the switch activated the new parser in September 2020, you'd never know
 that anything had changed. This is an account of the invisible, rigorous
@@ -88,7 +91,10 @@ defense for testing correctness. I reused some of our existing parser tests
 lot of additional tests for new parts of the syntax. You bet there's test
 coverage.
 
-<img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/parser-coverage.png" style={{width: '300px'}} alt="Parser file unit test coverage" />
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/parser-coverage.png" 
+  alt="Parser file unit test coverage" 
+/>
 
 ### Part 2: Integration testing
 
@@ -100,12 +106,12 @@ important because the parser produced a new and different internal
 representation. I'd abstracted out a common interface for our backend to access
 the new data structure under the feature-flagged code path to test on.
 
-<figure style={{width: '800px', maxWidth: '100%', margin: 'auto'}}>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/integration.png" alt="Integration testing diagram" style={{boxShadow: 'none'}} />
-  <small><i>Integration testing abstracts a common interface for our backend to access query values. We test that the backend produces the same search results for simple queries (ones that don't have, e.g., <code>or</code> -operators), irrespective of whether those values originate from the existing parser's output or the new one.</i></small>
-</figure>
-
-<br />
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/about.sourcegraph.com/blog/2021/integration.png"
+  alt="Integration testing diagram"
+  className="shadow-none"
+  caption={<>Integration testing abstracts a common interface for our backend to access query values. We test that the backend produces the same search results for simple queries (ones that don't have, e.g., <code>or</code> -operators), irrespective of whether those values originate from the existing parser's output or the new one.</>}
+/>
 
 When I got to this part, we didn't have a good way to run integration tests. We
 had browser-based end-to-end testing that was onerous to set up, time-consuming

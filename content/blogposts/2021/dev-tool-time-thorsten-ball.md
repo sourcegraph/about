@@ -68,7 +68,10 @@ Inside tmux Thorsten uses:
 
 This is Thorsten’s main editor thanks to our coworker [TJ](https://www.twitch.tv/teej_dv), a Neovim core contributor, who worked on bringing [built-in LSP support](https://github.com/neovim/nvim-lspconfig) to Neovim.
 
-<img src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-thorsten-neovim-lsp.png" alt="Neovim LSP" width="700" height="375"/>
+<Figure
+  src="https://sourcegraphstatic.com/blog/dev-tool-time/dev-tool-time-thorsten-neovim-lsp.png"
+  alt="Neovim LSP"
+/>
 
 > “Down here at the bottom there’s a small X and a 1 which means you know there’s one error in the file and you can jump to it from wherever you are in the file... that has been a source of joy in the past two weeks.”
 

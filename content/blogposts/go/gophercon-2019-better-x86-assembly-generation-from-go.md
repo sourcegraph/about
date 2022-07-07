@@ -90,7 +90,7 @@ go tool objdump add.a
 
 ...and check out the generated assembly instructions.
 
-```
+```bash
 TEXT %22%22.Add(SB) gofile../Users/michaelmcloughlin/Dev...
   add.go:5    0x2e7   488b442410    MOVQ 0x10(SP), AX
   add.go:5    0x2e7   488b4c2408    MOVQ 0x8(SP), CX
@@ -110,7 +110,7 @@ func Add(x, y uint64) uint64
 
 When the build system sees this version of the Add function (without the function body), it expects to see an assembly implementation in another file.
 
-```
+```bash
 #include "textflag.h"
 // func Add(x, y uint64) uint64
   TEXT ·Add(SB), NOSPLIT, $0-24  <-- Declaration
@@ -137,7 +137,7 @@ Crypto is the heavy hitter here. Crypto is also in this awkward intersection whe
 
 Drilling down even further into some code in the crypto package (There is no expectation that the code is understood, it is just to give a feel for the problem Michael is talking about)
 
-```
+```text
 openAVX2InternalLoop:
 // Lets just say this spaghetti loop interleaves 2 quarter rounds with 3 poly multiplications
 // Effectively per 512 bytes of stream we hash 480 bytes of ciphertext
@@ -175,7 +175,7 @@ So naturally, one might find themselves asking,
 
 Much of this code is written by world experts in cryptography and performance and we are lucky to have these people in the Go community. It probably is fine. But maybe it is worth looking at.
 
-```
+```text
 TEXT p256SubInternal(SB),NOSPLIT,$0
 XORQ mul0, mul0
 SUBQ t0, acc4

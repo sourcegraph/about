@@ -51,7 +51,7 @@ He'll talk about 3 developments that were driven by client needs.
 
 ## Scaling models
 
-```
+```graphql
 query {
   me {
     name
@@ -83,7 +83,7 @@ In order to make full use of codegen, they needed to create static GraphQL queri
 ![GraphQLSummit Selection 041](//images.contentful.com/le3mxztn6yoo/2LXxJE9s8EY4QCyAOmiOgo/bfe59b1c16f05b2e20415094712c3b7f/GraphQLSummit_Selection_041.png)
 
 Here's a quick refresher on fragments as they exist today:
-```
+```graphql
 query {
   me {
     name
@@ -96,7 +96,7 @@ query {
 }
 ```
 becomes:
-```
+```graphql
 query {
   me {
     name
@@ -208,7 +208,7 @@ What does the future bring? He thinks directives will play a key role in enablin
 
 Directives were initially created to enable conditional field fetching. Suppose you want to fetch a user's nickname only if the it's in the nickname test group. Previously, you had to write:
 
-```
+```graphql
 query {
   me {
     name
@@ -218,7 +218,7 @@ query {
 ```
 
 But they had a client that really wanted to do something like this:
-```
+```graphql
 query {
   me {
     name
@@ -228,7 +228,7 @@ query {
 ```
 The above is what the syntax looked like for 3 years, but when they went to codify it, they realized it didn't really feel right. The conditional didn't seem like a true "field." So they added the directive syntax:
 
-```
+```graphql
 query {
   me {
     name

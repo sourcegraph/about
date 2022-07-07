@@ -115,15 +115,17 @@ Our experience is that the `scip-typescript index` command is not always a bottl
 
 The actions “Go to definition” and “Find references” work across your codebase and package.json dependencies. Try this out yourself by opening the [github.com/vendure-ecommerce/vendure repository](https://sourcegraph.com/github.com/vendure-ecommerce/vendure@0dfa9d0b4b7f9f6af1c6406d44b096543c28db3e/-/blob/packages/create/src/create-vendure-app.ts?L39:6&subtree=true#tab=references) and navigating to the definition of the `arguments()` method that’s defined by the `commander` npm package.
 
-<figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/navigate-to-arguments.png" alt="Navigate to arguments() method defined in commander npm" className="no-shadow" />
-</figure>
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/navigate-to-arguments.png"
+  alt="Navigate to arguments() method defined in commander npm"
+/>
 
 Likewise, trigger “Find references” on the `action()` method to get real-world examples of that symbol across multiple repositories and packages.
 
-<figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/trigger-find-references.png" alt="Trigger Find references on action() method" className="no-shadow" />
-</figure>
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/trigger-find-references.png"
+  alt="Trigger Find references on action() method"
+/>
 
 Observe that the results come from both GitHub repositories and npm packages. The code from npm packages is the same source code that’s typically installed under the `node_modules/` directory.
 
@@ -133,9 +135,10 @@ Read more in our docs, [here](https://docs.sourcegraph.com/integration/npm), on 
 
 Use the new “Find implementations” button to navigate from an abstract class, interface, interface property, or abstract class method to their concrete implementations. For example, trigger “Find implementations” on the [`QuickPickItem.label`](https://sourcegraph.com/npm/types/vscode@b309120c719af01453d6df4a7f82902c22b1afb3/-/blob/index.d.ts?L1678:9&subtree=true#tab=implementations_typescript) property from the `@types/vscode` npm package.
 
-<figure>
-  <img src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/find-implementations-feature.png" alt="Navigation with Find Implementations feature" className="no-shadow" />
-</figure>
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/announcing-scip-typescript/find-implementations-feature.png"
+  alt="Navigation with Find Implementations feature"
+/>
 
 Observe that the implementation in the screenshot is a property on an object literal with type `ProcessInfoItem`, which is an interface that extends `QuickPickItem`.
 
@@ -152,7 +155,7 @@ const extractItem: IExpressionItem = {
   pid: 42 // implements `ProcessInfoItem.pid`
   …
 }
-```
+``` 
 
 This is a good example of the kind of static analysis that scip-typescript is able to perform. We are excited to extend the functionality of scip-typescript to include related navigation actions like “Go to type definition.”
 

@@ -1,4 +1,5 @@
 // Common
+export { Alert } from './Alert'
 export { BackButton, BackButtonBold, BackButtonLight } from './BackButton'
 export { BlockquoteWithBorder, BlockquoteWithLogoTop, BlockquoteWithLogoBottom } from './Blockquote'
 export { BlogResourceItem } from './BlogResourceItem'
@@ -6,6 +7,7 @@ export { BoardSection } from './BoardSection'
 export { ContentSection } from './ContentSection'
 export { CustomerLogos } from './CustomerLogos'
 export { FeatureWalkthrough } from './FeatureWalkthrough'
+export { Figure } from './Figure'
 export { HubSpotForm, type HubSpotFormProps } from './HubSpotForm'
 export { Install } from './Install'
 export { IntegrationsSection } from './IntegrationsSection'
@@ -14,6 +16,7 @@ export { LeadershipSection } from './LeadershipSection'
 export { RequestDemoForm } from './RequestDemoForm'
 export { RequestDemoTrySourcegraph } from './RequestDemoTrySourcegraph'
 export { SelfHostedSection } from './SelfHostedSection'
+export { TableWrapper } from './TableWrapper'
 export { TemplateCodeBlock } from './TemplateCodeBlock'
 export { ThreeUpText } from './ThreeUpText'
 export { TrySourcegraph } from './TrySourcegraph'
@@ -55,7 +58,6 @@ export {
     CaseStudyLayout,
     CaseStudyCard,
     InContentBlockquote,
-    InContentImage,
     MediaQuote,
     NewCaseStudyLayout,
     UseChallengeSolutionResults,

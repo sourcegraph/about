@@ -12,7 +12,10 @@ heroImage: https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Yo
 socialImage: https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png
 ---
 
-![Flexible work calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png)
+<Figure 
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Show%20Us%20Your%20Calendar%20Hero.png"
+  alt="Flexible work calendar graphic"
+/>
 
 _Sourcegraph provides universal code search: a navigation engine for understanding your code. We're also an [all-remote](https://handbook.sourcegraph.com/company/remote) company with a global [team](https://handbook.sourcegraph.com/company/team)._
 
@@ -50,10 +53,11 @@ The workplace can get noisy. For Gutekanst, it comes in waves.
 
 Over the course of two months, he says, half of his time might go toward helping other people: “It’s a weird conundrum because it’s a completely useful way to spend my time. On the other hand, it’s completely unrelated to what my focus area actually is, which is working on a product feature or something like that.”
 
-<figure>
-  <object role="image" data="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/stephen-gutekanst-workation.svg" width="791" height="426"></object>
-  <figcaption>Stephen’s message to the team about his workation.</figcaption>
-</figure>
+<Figure
+  src="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/stephen-gutekanst-workation.svg"
+  alt="Stephen's message to the team about his workstation"
+  caption="Stephen’s message to the team about his workstation."
+/>
 
 Part of the reason for that comes from working at a [high-growth startup](https://about.sourcegraph.com/blog/announcing-sourcegraphs-series-d-round/): “A lot of the time, we don’t have an owner for an area and I’m the person with the most context, so it’s useful for me to help out there.”
 
@@ -85,16 +89,18 @@ Vanesa recommends the four-day work week to everyone, but especially to primary 
 
 TJ jokingly acknowledges it’s not his _ideal_ schedule. “My preferred hours would be working in the middle of the night but that doesn’t work with a family,” he says, laughing. TJ has an 11-month-old baby boy, a wife, and responsibilities at church: all of which make weeknights busy.
 
-![4 day work week calendar](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4_day_work_week_highres.png)
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/4_day_work_week_highres.png"
+  alt="4 day work week calendar"
+/>
 
 Working four tens allows him to handle those responsibilities at night and have Fridays free for streaming his [live coding sessions](https://www.twitch.tv/teej_dv).
 
-<figure>
-
-![TJ coding live on Twitch](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%202.03.37%20PM.png)
-
-  <figcaption>TJ coding live on Twitch.</figcaption>
-</figure>
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/Screen%20Shot%202021-09-13%20at%202.03.37%20PM.png"
+  alt="TJ coding live on Twitch."
+  caption="TJ coding live on Twitch."
+/>
 
 Many would rightfully worry that lopping off one day a week wouldn’t sit well with a manager. TJ had the opposite experience: "No one minds how you’re working as long as you’re getting done what you say you’re going to get done and staying healthy." As long as his new schedule wasn’t a detriment to his team, TJ says, then he had his manager’s full support.
 
@@ -110,7 +116,10 @@ When considering how to build your own work schedule, TJ recommends carrying ove
 
 Robert works a split schedule, meaning that for three days a week, he works from 8 am to 12 pm and 6 pm to 10 pm. On the other two days, he works a normal 9 am to 5 pm. Robert, who’s currently in the United States, usually lives and works from Taiwan. There, he maintains a similar schedule, the hours shifted only slightly to maximize overlap with his American teammates.
 
-![Split schedule graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/split_schedule_highres.png)
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/split_schedule_highres.png"
+  alt="Split schedule graphic"
+/>
 
 Robert is used to some degree of flexibility. When he was a student, he optimized his schedule for his primary hobbies–taking advantage of daylight hours to be out and about. Robert decided he didn’t want to change that as he started working full time.
 
@@ -128,7 +137,10 @@ Robert recommends building a company culture that prizes independence. A company
 
 The nonlinear workday, [according to GitLab](https://about.gitlab.com/company/culture/all-remote/non-linear-workday/), the company that popularized the term, “decouples time from work and acts as a forcing function to embrace asynchronous workflows.”
 
-![Nonlinear calendar graphic](https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/nonlinear%E2%80%93highres.png)
+<Figure
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/Show%20Us%20Your%20Calendar%20Images/nonlinear%E2%80%93highres.png"
+  alt="Nonlinear calendar graphic"
+/>
 
 For Jean, this means using the morning to take care of the chores that most would do after work, such as grocery shopping and walking the dog. From the late morning to the afternoon, he focuses on meetings with his teammates and completing work leftover from the previous day.
 
@@ -136,10 +148,11 @@ For Jean, this means using the morning to take care of the chores that most woul
 
 In the afternoon, Jean is frank: he might just nap. After, around 3 pm (his time), is when most people in the east coast of the United States start to wake up, so the next three hours have some of the best overlap for meetings. From 6:00 pm to 8:30 pm is family time: “We have supper together, kids get bathed, and I put them to bed.” And from 8:30 pm to 10:00 pm, he handles any stray follow-up meetings and completes some light work.
 
-<figure>
-  <object role="image" data="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/jean-du-plessis-slack.svg" width="859" height="480"></object>
-  <figcaption>Jean's message to the team about his work schedule.</figcaption>
-</figure>
+<Figure
+  src="https://sourcegraphstatic.com/blog/Show%20Us%20Your%20Calendar%20Images/jean-du-plessis-slack.svg"
+  alt="Jean's message to the team about his work schedule."
+  caption="Jean's message to the team about his work schedule."
+/>
 
 For Jean, the nonlinear work day isn’t merely a traditional workday, fragmented: “I’m picky about what I do in the evenings.” He tends to schedule meetings that he doesn’t have to lead during his evening sessions–meetings where he only has to listen or provide input. He optimizes his entire day based on what he does best when.
 

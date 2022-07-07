@@ -206,7 +206,7 @@ For organizations that need to run Sourcegraph behind a proxy, `git fetch` and `
     - `"none"` (default) turns off tracing.
   - Jaeger is now the officially supported distributed tracing system. The following is the recommended site configuration to connect Sourcegraph to a Jaeger agent (which must be deployed on the same host and listening on the default ports):
 
-    ```
+    ```json
     "observability.tracing": {
       "sampling": "selective"
     }

@@ -28,7 +28,7 @@ CPU and memory profiling are common in other languages, but Go's tracing tool is
 
 When you read the docs, using the Go execution tracer seems very simple:
 
-```
+```go
 $ go doc runtime/trace
 package trace // import "runtime/trace"
 
@@ -52,7 +52,7 @@ The remainder of the talk will talk about how to decipher the tracing output and
 ## A timing-dependent bug (race condition)
 
 Here's how you test, build, and install Go binaries with the race detector enabled:
-```
+```go
 go test -race
 go build -race
 go install -race
@@ -60,7 +60,7 @@ go install -race
 
 The race detector will detect race conditions and warn you when they occur:
 
-```
+```go
 ==================
 WARNING: DATA RACE
 Read at 0x00c420141500 by goroutine 27:
@@ -141,7 +141,7 @@ What was the goroutine doing when it suddenly stopped? The Go execution tracer c
 
 The body of that function is a giant select statement. The proceed channel is the only case that returns an actual non-error value.
 
-```
+```go
 func wait(ctx context.Context, ...,
   proceed <-chan int) (int, error) {
 
@@ -157,7 +157,7 @@ func wait(ctx context.Context, ...,
 
 `wait`'s called from here:
 
-```
+```go
 t.sendQuotaPool.add(0)
 
 tq, err := wait(s.ctx, ...,
@@ -179,7 +179,7 @@ The quota pool looks like this:
 
 
 
-```
+```go
 type quotaPool struct {
   c chan int // positive quota here
   mu sync.Mutex
@@ -189,7 +189,7 @@ type quotaPool struct {
 
 When we create it, the integer channel has capacity 1. Might be empty or might contain a single integer. If the initial quota is positive, the value is sent to the channel, other wise the value is put into the `qb.quota` field.
 
-```
+```go
 func newQuotaPool(q int) *quotaPool {
   qb := &quotaPool{
     c: make(chan int, 1),
@@ -207,7 +207,7 @@ func newQuotaPool(q int) *quotaPool {
 
 Acquire method is trivial:
 
-```
+```go
 func (qb *quotaPool) acquire()
   <-chan int {
   return qb.c
@@ -216,7 +216,7 @@ func (qb *quotaPool) acquire()
 
 The add method is interesting. Protected by a lock. Does arithmetic to figure out how much quota leftover. If quota left, attempts to send, then zeros out.
 
-```
+```go
 func (qb *quotaPool) add(n int) {
   qb.mu.Lock(); defer qb.mu.Unlock()
   if qb.quota += n; qb.quota <= 0 {
@@ -233,7 +233,7 @@ select {
 
 cancel method pretty much breaks the invariant we might want to make by receiving on the channel. When this function returns, the channel is definitely empty.
 
-```
+```go
 func (qb *quotaPool) cancel() {
   qb.mu.Lock(); defer qb.mu.Unlock()
   select {
@@ -276,7 +276,7 @@ So the cancel method appears to be the culprit here. So we delete it.
 
 In addition, we need to modify the add function to always clear the channel, always calculate the total quota available, and if positive, always put value back on channel. So if any quota available, always ready to receive.
 
-```
+```go
 func (qb *quotaPool) add(v int) {
   qb.mu.Lock(); defer qb.mu.Unlock()
   select {
@@ -430,7 +430,7 @@ So if you're crunching numbers in a loop, your goroutine might chug on refusing 
 
 It's measurable for 1MB values if you're looking for it (check code lines before "End Stack Trace"). Or just write your own tight loop to observe it:
 
-```
+```go
 go func() {
   for i := 0; i < 1e9; i++ {
   }

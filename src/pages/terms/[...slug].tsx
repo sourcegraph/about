@@ -3,7 +3,7 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout, HubSpotForm } from '@components'
+import { Layout, HubSpotForm, TableWrapper } from '@components'
 import { Page } from '@interfaces/posts'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
@@ -16,7 +16,7 @@ export interface PageProps {
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
-const components = { HubSpotForm }
+const components = { HubSpotForm, TableWrapper }
 
 const TermPage: NextPage<PageProps> = ({ page, content }) => {
     const title = page?.frontmatter.title

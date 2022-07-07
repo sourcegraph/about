@@ -16,10 +16,10 @@ published: true
 
 We've been hard at work on improvements to [Sourcegraph](https://docs.sourcegraph.com) to give you great code search on your company's code. Here's what's new and improved:
 
-
-<div>
-    <img className="pa1 ba b--light-7" alt="Changelog-RegExpSearch" src="//images.contentful.com/le3mxztn6yoo/7ChTngy1biw4caUM2c6iIM/749d73d57328c130269e4760bf181963/2017-11-13_23.43.01.gif"/>
-</div>
+<Figure 
+  src="//images.contentful.com/le3mxztn6yoo/7ChTngy1biw4caUM2c6iIM/749d73d57328c130269e4760bf181963/2017-11-13_23.43.01.gif"
+  alt="Changelog-RegExpSearch"
+/>
 
 Code search:
 * There is now a [directory listing view](https://sourcegraph.com/github.com/golang/go/-/tree/src) with the last Git commit for each subdirectory and file.

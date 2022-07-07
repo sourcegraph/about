@@ -195,9 +195,6 @@ table thead th {
 table tbody + tbody {
     border-top: 2px solid $light-gray-1;
 }
-table {
-    background-color: $white;
-}
 
 /* ==================== BEM Pages/Components ==================== */
 
@@ -343,6 +340,10 @@ $positions: ('top', 'right', 'bottom', 'left');
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
 }
 
 .whitespace-pre-line {
