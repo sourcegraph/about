@@ -21,7 +21,10 @@ Zoekt is a Go program created by Han-Wen Nienhuys that performs [trigram-based r
 
 In the below image, the large purple area on the left is the RAM used by the 20 Zoekt replicas alone, and the tiny lines under it are all the other jobs. The drops represent deploying the changes described in this post.
 
-<img src="/blog/ram-usage.png" width="1200" alt="RAM used by the 20 Zoekt replicas"/>
+<Figure
+  src="/blog/ram-usage.png" 
+  alt="RAM used by the 20 Zoekt replicas"
+/>
 
 Here’s how we achieved a 5x reduction in memory usage with no measurable latency changes.
 
@@ -29,10 +32,11 @@ Here’s how we achieved a 5x reduction in memory usage with no measurable laten
 
 As a first optimization step, a test corpus was created from one of the Zoekt backend servers, and a memory profile was collected to measure precisely how a server's RAM was being consumed. The corpus has 19,000 different repos, 2.6 billion lines of code, and takes 166GB on disk. Go has [built-in profiling tools](https://golang.org/doc/diagnostics#profiling) with deep runtime integrations that make it easy to collect this information. The memory profile below shows 22GB of live objects on one server. The actual RAM usage of a Go program depends on how aggressive the garbage collector is. By default, it can use roughly twice as much memory as the size of the live objects, but you can set the `GOGC` environment variable to more aggressively reduce the maximum overhead. We run Zoekt with `GOGC=50` to reduce the likelihood that it will exceed its available memory.
 
-<figure>
-  <img src="/blog/22GB of live objects on one server.png" alt="22GB of live objects on one server" className="no-shadow"/>
-  <figcaption>22GB of live objects on one server.</figcaption>
-</figure>
+<Figure
+  src="/blog/22GB of live objects on one server.png"
+  alt="22GB of live objects on one server"
+  caption="22GB of live objects on one server."
+/>
 
 The memory profile shows which functions are responsible for allocating RAM, and it's immediately apparent that readNgrams is responsible for 67% of the memory usage. Digging into [the code](https://github.com/google/zoekt/blob/d5ee8b074530f291e1173f8e79f7fcdb4d972cc5/read.go#L256), this turned out to be a function that builds a map from trigrams to the location of a posting list on disk. It's building a big mapping from 64-bit trigrams (three 21-bit Unicode characters) to 32-bit offsets and lengths.
 
@@ -129,10 +133,11 @@ func shrinkUint32Slice(a []uint32) []uint32 {
 
 ## Results and what’s next
 
-<figure>
-  <img src="/blog/4GB of live objects after, with all optimizations applied.png" alt="22GB of live objects on one server" className="no-shadow"/>
-  <figcaption>4GB of live objects after, with all optimizations applied.</figcaption>
-</figure>
+<Figure
+  src="/blog/4GB of live objects after, with all optimizations applied.png"
+  alt="22GB of live objects on one server"
+  caption="4GB of live objects after, with all optimizations applied."
+/>
 
 Putting it all together, the new memory profile looks like this: a 5x reduction overall, which means we can serve search queries for five times more repositories without requiring any more servers. We went from 1400KB of RAM per repo to 310KB with no measurable latency changes.
 

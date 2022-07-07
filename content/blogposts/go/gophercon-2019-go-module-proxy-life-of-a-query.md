@@ -24,9 +24,10 @@ The Go team has built a module mirror and checksum database, which adds reliabil
 
 ## Introduction
 
-<div style={{textAlign:'center'}}>
-  <img width="740" height="480" src="/gophercon-2019/go-module-proxy-life-of-a-query-katie.jpg" alt="Go module proxy life of a query katie"/>
-</div>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-katie.jpg" 
+  alt="Go module proxy life of a query katie"
+/>
 
 Katie Hockman, a software engineer at Google working on the Go Open Source team in NYC, is part of the group of engineers building the Go module mirror and checksum database.
 
@@ -81,23 +82,26 @@ Package walk, package bark, and package toys.
 These packages are all very related to one another, and share a lot of the same dependencies.
 She put each of these packages in a single module that can now be versioned.
 
-<p style={{textAlign:'center'}}>
-  <img width="450" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-9.png" alt="Go module proxy life of a query 9"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-9.png" 
+  alt="Go module proxy life of a query 9"
+/>
 
 A module's version has a major, minor, and patch component to make up it's semantic version.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-10.png" alt="Go module proxy life of a query 10"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-10.png" 
+  alt="Go module proxy life of a query 10"
+/>
 
 If you wanted to import a package before the existence of modules, you either had to vendor that source code if you wanted a specific commit, or you had to rely on the latest version of that package at the source.
 
 Now, packages can sit inside of a module that's a versioned snapshot in time, to uniquely identify it for everyone. The contents of a version are never allowed to change.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-11.png" alt="Go module proxy life of a query 11"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-11.png" 
+  alt="Go module proxy life of a query 11"
+/>
 
 Every new commit to this major version of the module also has to be backwards compatible.
 
@@ -119,9 +123,10 @@ A go.mod file specifies the minimum version of all of the packages that your mod
 
 You could see semantic versions like v1.4.1 as well as pseudo-versions like v0.0.0 with a date and commit hash, which can be helpful if you either want to depend on a specific commit, or if the repository doesn't have version tags yet.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-13.png" alt="Go module proxy life of a query 13"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-13.png" 
+  alt="Go module proxy life of a query 13"
+/>
 
 By specifying that your code relies on a module with version 1.4.1 or later, then you guarantee that everyone who imports your package will never be allowed to use a version older than 1.4.1 with your code.
 
@@ -129,9 +134,10 @@ The go command uses something called "minimal version selection" to build a modu
 
 As a basic example, let's say we have module A and B, both of which Katie's module depends on.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-15.png" alt="Go module proxy life of a query 15"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-15.png" 
+  alt="Go module proxy life of a query 15"
+/>
 
 Each of these modules relies on C, but at a different version. "A" requires at least version 1.5 and "B" requires at least version 1.6.
 
@@ -139,9 +145,10 @@ C has also published another, newer version. 1.7
 
 If her module relies on A and B, then the go command will choose the minimum possible version that satisfies the constraints of A and B's go.mod files when doing a build. In this case, that would be version 1.6.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-16.png" alt="Go module proxy life of a query 16"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-16.png" 
+  alt="Go module proxy life of a query 16"
+/>
 
 This minimal version selection guarantees reproducible builds because the go command uses the _oldest_ allowed version of each dependency in the build, instead of the newest one which may change day to day.
 
@@ -155,9 +162,10 @@ Now that we have a versioned module that is never allowed to change, we have new
 
 This is where module proxies come in.
 
-<p style={{textAlign:'center'}}>
-  <img width="900" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-19.png" alt="Go module proxy life of a query 19"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-19.png" 
+  alt="Go module proxy life of a query 19"
+/>
 
 This is what the flow looks like without a proxy. Pretty simple, right?
 A Go developer runs a go command, like `go get`. And the go command hits the origin server directly every time the package isn't in the user's local cache. By origin server here, we're referring to any place where Go source code is hosted. Like Github, for example.
@@ -175,15 +183,17 @@ The go command may be forced to pull down the entire source of a transitive depe
 
 So for the dependency resolution, this is what the go command is fetching
 
-<p style={{textAlign:'center'}}>
-  <img width="450" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-21.png" alt="Go module proxy life of a query 21"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-21.png" 
+  alt="Go module proxy life of a query 21"
+/>
 
 And this is how much of that source that it actually needs.
 
-<p style={{textAlign:'center'}}>
-  <img width="450" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-22.png" alt="Go module proxy life of a query 22"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-22.png" 
+  alt="Go module proxy life of a query 22"
+/>
 
 Remember that the only thing the go command needs to understand the dependencies of a module is a single go.mod file. So, for 20 MB modules, it only needs a few KB go.mod to do this dependency resolution. That's a lot of storage in your system's cache that is going unused, and it's a lot of wasted time connecting to the origin and pulling down a large file like this when it doesn't really need to.
 
@@ -191,9 +201,10 @@ For those of you that have been using modules without a proxy for some time, thi
 
 Going back to our example with the go command fetching source code, let's put a module proxy into the picture.
 
-<p style={{textAlign:'center'}}>
-  <img width="900" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-24.png" alt="Go module proxy life of a query 24"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-24.png" 
+  alt="Go module proxy life of a query 24"
+/>
 
 If you tell the go command to use a proxy, rather than reaching out to the origin server directly like before, it will instead hit the proxy to ask for the thing it wants.
 
@@ -201,9 +212,10 @@ Now, instead of interacting with an origin server, the go command can interact w
 
 Let's walk through what this interaction with a proxy looks like.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-33.png" alt="Go module proxy life of a query 33"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-33.png" 
+  alt="Go module proxy life of a query 33"
+/>
 
 She's working on her puppies module, and she's decided that she wants to import a new package that tells me information about the different dog breeds.
 
@@ -237,9 +249,10 @@ We'll immediately jump into requesting the info for the master branch
 
 In this case, you'll see that the info given back is a bit different. This time, we got a pseudo-version which is the _canonical_ version at "master" at the time of the request.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-39.png" alt="Go module proxy life of a query 39"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-39.png" 
+  alt="Go module proxy life of a query 39"
+/>
 
 Once it gets this canonical version back, it can proceed as before, pulling down and resolving dependencies, and requesting the zip file for the contents at the end.
 
@@ -281,9 +294,10 @@ You've probably seen this when you're using modules, and maybe scratched your he
 
 This go.sum file is meant to act as your record for what source code looked like when you downloaded it, the first time the go command saw it from your machine. The go command can use them in some situations to detect misbehavior by origin servers or proxies that might be giving you different code than you saw earlier.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-51.png" alt="Go module proxy life of a query 51"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-51.png" 
+  alt="Go module proxy life of a query 51"
+/>
 
 So here's that somewhat confusing looking go.sum file she was talking about, which sits right next to your go.mod file in the root directory of your module.
 
@@ -297,9 +311,10 @@ The go command can use these checksums for one very cool thing in particular: fo
 
 This go.sum file should be checked into your repository, because the go command can use this as a source of trust going forward when anyone tries to download your dependencies.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-53.png" alt="Go module proxy life of a query 53"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-53.png" 
+  alt="Go module proxy life of a query 53"
+/>
 
 Once it's checked into your repository, the go command will check against your module's go.sum file when it fetches code.
 
@@ -329,9 +344,10 @@ In the best possible scenario, we can imagine a world where the code author tell
 
 What we can do _instead_ is the next best thing: let's make sure that everyone agrees to add the _same_ go.sum lines to their module's go.sum file.
 
-<p style={{textAlign:'center'}}>
-  <img width="600" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-58.png" alt="Go module proxy life of a query 58"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-58.png"
+  alt="Go module proxy life of a query 58"
+/>
 
 [Design document for sumdb](https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md)
 
@@ -345,29 +361,33 @@ We could just have a database running on a server somewhere that can give you th
 
 But, all that really does is take a problem
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-61.png" alt="Go module proxy life of a query 61"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-61.png" 
+  alt="Go module proxy life of a query 61"
+/>
 
 And move it somewhere else. All we would be doing is creating a different target for attackers to focus on.
 
 You can also imagine a scenario where the checksum database is run by those cat people she was worried about before.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-63.png" alt="Go module proxy life of a query 63"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-63.png" 
+  alt="Go module proxy life of a query 63"
+/>
 
 With a simple database, it would be easy for the checksum database to start targeting the dog people.
 
-<p style={{textAlign:'center'}}>
-  <img width="700" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-64.png" alt="Go module proxy life of a query 64"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-64.png" 
+  alt="Go module proxy life of a query 64"
+/>
 
 They could serve checksums for the real code to all the cat people, but serve checksums for a malicious version of that code to the dog people.
 
-<p style={{textAlign:'center'}}>
-  <img width="600" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-65.png" alt="Go module proxy life of a query 65"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-65.png" 
+  alt="Go module proxy life of a query 65"
+/>
 
 Auditing an entire database is difficult and expensive.
 
@@ -375,15 +395,17 @@ It's also easy for man-in-the-middle attacks to go undetected, and manipulated d
 
 We shouldn't have to trust the checksum database as a source of truth without any means of holding it accountable.
 
-<p style={{textAlign:'center'}}>
-  <img width="600" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-66.png" alt="Go module proxy life of a query 66"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-66.png" 
+  alt="Go module proxy life of a query 66"
+/>
 
 We need a solution that won't let the checksum database misbehave, and will make targeted attacks easily detectable to auditors and the go command.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-67.png" alt="Go module proxy life of a query 67"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-67.png" 
+  alt="Go module proxy life of a query 67"
+/>
 
 [Transparent Logs and Merkle Trees Research](https://research.swtch.com/tlog)
 
@@ -391,9 +413,10 @@ We'll do this by storing our go.sum lines inside what's called a Transparent Log
 
 This is the same technique used by certificate transparency to protect HTTPS.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-68.png" alt="Go module proxy life of a query 68"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-68.png" 
+  alt="Go module proxy life of a query 68"
+/>
 
 You may have also heard this called a merkle tree, if you've been spending too much time with crypto folks.
 
@@ -401,21 +424,24 @@ We use this merkle tree, instead of a simple database as our source of truth, be
 
 It has properties that don't allow for misbehavior to go undetected.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-70.png" alt="Go module proxy life of a query 70"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-70.png" 
+  alt="Go module proxy life of a query 70"
+/>
 
 Once you put a record in the log, it can never be modified or deleted.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-71.png" alt="Go module proxy life of a query 71"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-71.png" 
+  alt="Go module proxy life of a query 71"
+/>
 
 If a single record in the log is changed, then the hashes would no longer line up, and it would be immediately detectable.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-72.png" alt="Go module proxy life of a query 72"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-72.png" 
+  alt="Go module proxy life of a query 72"
+/>
 
 So if the go command can prove that the go.sum lines that it's about to add to your module's go.sum file is in this transparent log, then it can be very confident that these are the right go.sum lines to add to your module's go.sum file.
 
@@ -423,15 +449,17 @@ Remember that our goal is to make sure that everyone is getting the "correct" mo
 
 And from our and the go command's perspective, "correct" means..
 
-<p style={{textAlign:'center'}}>
-  <img width="600" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-74.png" alt="Go module proxy life of a query 74"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-74.png" 
+  alt="Go module proxy life of a query 74"
+/>
 
 "the same as it was yesterday and every day before that, for every single person that asks for it", so it's important that we have a data structure that can't be tampered with.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="600" src="/gophercon-2019/go-module-proxy-life-of-a-query-75.png" alt="Go module proxy life of a query 75"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-75.png" 
+  alt="Go module proxy life of a query 75"
+/>
 
 This log provides a very reliable way to prove two key things to auditors and the go command:
 
@@ -446,61 +474,70 @@ I won't go into all of the cryptography in this presentation, but let's just tal
 
 So let's jump into an inclusion proof
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-76.png" alt="Go module proxy life of a query 76"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-76.png" 
+  alt="Go module proxy life of a query 76"
+/>
 
 Let's start with what this data structure actually is, and how its built.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-77.png" alt="Go module proxy life of a query 77"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-77.png" 
+  alt="Go module proxy life of a query 77"
+/>
 
 The foundation of our transparency log is the go.sum lines, indicated by the green boxes in this image.
 
 Let's start by assuming that our log currently has 16 records.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-78.png" alt="Go module proxy life of a query 78"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-78.png" 
+  alt="Go module proxy life of a query 78"
+/>
 
 tbdFor example, record 0 is the go.sum lines for go.opencensus.io at version 0.19.2. These are the only go.sum lines for this module version in the log, and the only go.sum lines the checksum database should serve. This is something that auditors can be in charge of verifying.
 
 From here, we can start creating the rest of our tree.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-79.png" alt="Go module proxy life of a query 79"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-79.png"
+  alt="Go module proxy life of a query 79"
+/>
 
 We do a SHA-256 hash of each record's go.sum lines, and store them as level 0 nodes.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-80.png" alt="Go module proxy life of a query 80"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-80.png" 
+  alt="Go module proxy life of a query 80"
+/>
 
 Then we hash together pairs of level 0 nodes to create the level 1 nodes.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-81.png" alt="Go module proxy life of a query 81"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-81.png" 
+  alt="Go module proxy life of a query 81"
+/>
 
 Then hash the pairs of level 1 nodes to create the level 2 nodes
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-82.png" alt="Go module proxy life of a query 82"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-82.png"
+  alt="Go module proxy life of a query 82"
+/>
 
 And so on
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-83.png" alt="Go module proxy life of a query 83"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-83.png"
+  alt="Go module proxy life of a query 83"
+/>
 
 Until finally, we end up at level 4 in this example with a single hash at the top of the tree, which we'll call a tree head.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-84.png" alt="Go module proxy life of a query 84"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-84.png"
+  alt="Go module proxy life of a query 84"
+/>
 
 So why create hashes to begin with?
 
@@ -508,53 +545,60 @@ Well, remember those proofs she talked about? They basically boil down to compar
 
 Let's go through an example of an inclusion proof, which only requires a few hashes to work. Proving that a set of go.sum lines are included in the tree is how the go command will verify the source code we just got back from a proxy.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-85.png" alt="Go module proxy life of a query 85"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-85.png" 
+  alt="Go module proxy life of a query 85"
+/>
 
 Let's say we want to verify the go.sum lines of go.dog/breeds at version 0.3.2 which we just fetched from a proxy, which in this example, just so happens to be record 9.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-86.png" alt="Go module proxy life of a query 86"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-86.png" 
+  alt="Go module proxy life of a query 86"
+/>
 
 The first thing we'll do, is hit an endpoint on the checksum database called "lookup" with our module version, and it gives us back 3 things
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-87.png" alt="Go module proxy life of a query 87"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-87.png" 
+  alt="Go module proxy life of a query 87"
+/>
 
 - the unique record number that identifies it in the log, in this case, 9
 - the go.sum lines for go.dog/breeds at version 0.3.2
 - a tree head that contains this record
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-88.png" alt="Go module proxy life of a query 88"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-88.png" 
+  alt="Go module proxy life of a query 88"
+/>
 
 To prove that record 9 exists in the tree, we need to form a path from that leaf up to the head, and make sure its consistent with the head we were given.
 If we walk up by level in this example starting at level 0, that would nodes 9, 4, 2, 1, and 0 (the head at level 4).
 
 The go command can create node 9 at level 0 by hashing the go.sum lines it was given , but it'll need some more nodes in order to create the rest of the path to head.
 
-<p style={{textAlign:'center'}}>
-  <img width="458000" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-89.png" alt="Go module proxy life of a query 89"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-89.png" 
+  alt="Go module proxy life of a query 89"
+/>
 
 Here, in order to calculate the hash at node 4, we need to hash together nodes 8 and 9.
 Then, we can use that newly created hash at node 4 and hash it together with node 5 to create node 2, and so on , until we have the top level 4 hash.
 
 If this level 4 hash that we just created at the top of the tree is consistent with the tree head that we got back from the lookup endpoint, then we've done our inclusion proof, and verified the go.sum lines that we were looking for exist in our checksum database, and we're done!
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-90.png" alt="Go module proxy life of a query 90"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-90.png"
+  alt="Go module proxy life of a query 90"
+/>
 
 As this tree grows, you'll get new tree heads, and you should check that these new trees are a superset of the old one. So the go command stores these tree heads as they are discovered, doing a consistency proof to verify that the new tree head it just found is consistent with the old tree head that it knew about before, to be sure the tree hasn't been tampered with.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-91.png" alt="Go module proxy life of a query 91"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-91.png"
+  alt="Go module proxy life of a query 91"
+/>
 
 Oftentimes, the size of the tree won't be a power of 2, but we still want to be able to do our inclusion proofs in those cases. That's still possible!
 
@@ -568,17 +612,19 @@ And the way these inner nodes are stored and served are through something new, c
 
 Under the hood, the checksum database breaks this tree apart into chunks called tiles. Each tile contains a set of hash nodes that can be used for proofs and accessed by clients.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-94.png" alt="Go module proxy life of a query 94"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-94.png"
+  alt="Go module proxy life of a query 94"
+/>
 
 In this example, we've chosen a tile height of 2, meaning that a new tile is created every two levels up the tree. The actual checksum database tree is much larger than this, so that uses a tile height of 8 in practice.
 
 As an example of how the go command uses tiles, let's again look at our inclusion proof for record 9
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-95.png" alt="Go module proxy life of a query 95"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-95.png" 
+  alt="Go module proxy life of a query 95"
+/>
 
 We know that one of the nodes we'll need for this proof is node 3 at level 2, like before.
 
@@ -588,17 +634,19 @@ Using tiles has a few great benefits.
 
 Tiles are nice for the checksum database server, since they are very cache-friendly at the frontend.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-96.png" alt="Go module proxy life of a query 96"/>
-</p>
+<Figure
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-96.png" 
+  alt="Go module proxy life of a query 96"
+/>
 
 But it's also nice for the clients, because they only cache the bottom row of each tile, and build any necessary intermediate nodes from that. We've chosen a tile height of 8, so this cuts down on your storage costs. Instead of caching the entire tree, the go command is just caching every 8th level in the tree, and building inner nodes on the fly as needed.
 
 Now that you've seen some of the math, let's get back to how it works within the context of Go.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-97.png" alt="Go module proxy life of a query 97"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-97.png"
+  alt="Go module proxy life of a query 97"
+/>
 
 This tree is made available to the go command through the checksum database spec that you see here. It uses the lookup and tile endpoints to retrieve the data we just talked about.
 
@@ -606,9 +654,10 @@ There is an additional endpoint, `/latest`, which serves the latest tree head th
 
 A signed tree head looks something like this:
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-98.png" alt="Go module proxy life of a query 98"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-98.png" 
+  alt="Go module proxy life of a query 98"
+/>
 
 It tells you the size of the tree for this tree head, and it's hash value.
 In this example, the tree size is 11,131.
@@ -617,9 +666,10 @@ At the bottom is the signature, which contains the name of the checksum database
 
 Let's go back to our example with the proxy. The last thing we did was fetch the zip of go.dog/breeds at version 0.3.2.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-102.png" alt="Go module proxy life of a query 102"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-102.png"
+  alt="Go module proxy life of a query 102"
+/>
 
 Before it updates your go.sum and go.mod file, it will make a hash, then check that this is the same hash that the checksum database has.
 
@@ -635,9 +685,10 @@ Once the go command is done with it's proofs, it can update your module's go.sum
 
 Now, instead of every person in the world individually trusting their first download of a module, the _first_ version that the checksum database signs is the only one that is trusted. This ensures that the source code for a version of a module will be the same for every person in the world, since there is a single source of checksums to trust that can be verified and audited.
 
-<p style={{textAlign:'center'}}>
-  <img width="800" height="400" src="/gophercon-2019/go-module-proxy-life-of-a-query-103.png" alt="Go module proxy life of a query 103"/>
-</p>
+<Figure 
+  src="/gophercon-2019/go-module-proxy-life-of-a-query-103.png" 
+  alt="Go module proxy life of a query 103"
+/>
 
 And this all works really well, even with just one checksum database that everyone uses. The community has the means of holding it accountable, and the go command does proofs on-the-fly as well, verifying that the checksum database hasn't been tampered with.
 

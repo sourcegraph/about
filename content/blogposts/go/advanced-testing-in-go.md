@@ -46,7 +46,7 @@ The topics in this talk cover both of these parts. From here on out, we're just 
 
 ## Subtests
 
-```
+```go
 func TestAdd(t *testing.T) {
   a := 1
 
@@ -61,7 +61,7 @@ func TestAdd(t *testing.T) {
 
 Subtests are built-in to Go. You can target subtests and can nest subtests further if necessary.
 
-```
+```go
 $ go test -run=TestAdd/+1
 ```
 
@@ -71,7 +71,7 @@ It's hard to explain the value of subtests without talking about table-driven te
 
 Table tests are a way to build a table of data within a test and run through the table. Hashicorp uses table-driven tests everywhere. Mitchell defaults to table-driven tests since there might be other parameters you want to test later.
 
-```
+```go
 func TestAdd(t *testing.T) {
     cases := []struct{ A, B, Expected int }{
 	{ 1, 1, 2 },
@@ -96,7 +96,7 @@ func TestAdd(t *testing.T) {
 
 Consider naming the cases in a table-driven test:
 
-```
+```go
 func TestAdd(t *testing.T) {
     cases := []struct{
 	Name string
@@ -117,7 +117,7 @@ The first place Mitchell saw table-driven tests was in the Go standard library. 
 
 ## Test fixtures
 
-```
+```go
 func TestAdd(t *testing.T) {
     data := filepath.Join(“test-fixtures”, “add_data.json”)
     // ... Do something with data
@@ -134,7 +134,7 @@ func TestAdd(t *testing.T) {
 - Human eyeball the generated golden data. If it is correct, commit it.
 - Very scalable way to test complex structures (write a String() method)
 
-```
+```go
 var update = flag.Bool(“update”, false, “update golden files”)
 func TestAdd(t *testing.T) {
     // ... table (probably!)
@@ -154,7 +154,7 @@ func TestAdd(t *testing.T) {
 
 Then you can run
 
-```
+```go
 $ go test
 ...
 $ go test -update
@@ -169,7 +169,7 @@ $ go test -update
 - If necessary, make global state a var so it can be modified. This is a last
   case scenario, though.
 
-```
+```go
 // Not good on its own
 const port = 1000
 // Better
@@ -183,7 +183,7 @@ type ServerOpts {
 
 ## Test helpers
 
-```
+```go
 func testTempFile(t *testing.T) string {
     t.Helper()
     tf, err := ioutil.TempFile(“”, “test”)
@@ -201,7 +201,7 @@ func testTempFile(t *testing.T) string {
 - Used to make tests clear on what they’re testing vs what is boilerplate
 - Call `t.Helper()` for cleaner failure output (Go 1.9)
 
-```
+```go
 func testTempFile(t *testing.T) (string, func()) {
     t.Helper()
     tf, err := ioutil.TempFile(“”, “test”)
@@ -217,7 +217,7 @@ func TestThing(t *testing.T) {
 }
 ```
 
-```
+```go
 func testChdir(t *testing.T, dir string) func() {
     t.Helper()
     old, err := os.Getwd()
@@ -281,7 +281,7 @@ This will be a little controversial. Some experienced Go devs disagree with this
 
 If you're testing networking, make a real network connection. Don’t mock `net.Conn`, no point.
 
-```
+```go
 // Error checking omitted for brevity
 func TestConn(t *testing.T) (client, server net.Conn) {
     t.Helper()
@@ -310,7 +310,7 @@ func TestConn(t *testing.T) (client, server net.Conn) {
 - It is okay to make these configurations unexported so only tests can set
   them.
 
-```
+```go
 // Do this, even if cache path and port are always the same
 // in practice. For testing, it lets us be more careful.
 type ServerOpts struct {
@@ -326,7 +326,7 @@ type ServerOpts struct {
   credentials in "test mode"
 - Can export it or can unexport it and require access via a helper
 
-```
+```go
 type ServerOpts struct {
     // ...
     // Enables test mode which changes the behavior by X, Y, Z.
@@ -336,7 +336,7 @@ type ServerOpts struct {
 
 ## Complex structs
 
-```
+```go
 type ComplexThing struct { /* ... */ }
 func (c *ComplexThing) testString() string {
     // produce human-friendly output for test comparison
@@ -355,7 +355,7 @@ func TestComplexThing(t *testing.T) {
 - Can sometimes produce better output and test more specific
   functionality with a `testString()` method, which just converts structs to strings and tests for string equality. This method is a bit blunt, but we've had good results, because string diffs are easy to read.
 
-```
+```go
 const testSingleDepStr = `
 root: root
 aws_instance.bar
@@ -383,7 +383,7 @@ You have two options:
 - Guard the test for the existence of the binary
 - Make sure side effects don’t affect any other test
 
-```
+```go
 var testHasGit bool
 func init() {
     if _, err := exec.LookPath("git"); err == nil {
@@ -408,7 +408,7 @@ func TestGitGetter(t *testing.T) {
 
 Get the `*exec.Cmd`:
 
-```
+```go
 func helperProcess(s ...string) *exec.Cmd {
     cs := []string{"-test.run=TestHelperProcess", "--"}
     cs = append(cs, s...)
@@ -423,7 +423,7 @@ func helperProcess(s ...string) *exec.Cmd {
 
 What it executes:
 
-```
+```go
 func TestHelperProcess(*testing.T) {
     if os.Getenv("GO_WANT_HELPER_PROCESS") != "1" {
 	return
@@ -459,7 +459,7 @@ func TestHelperProcess(*testing.T) {
   you only need the Close function, take only the io.Closer.
 - Simplifies testing since a smaller mock interface can be implemented
 
-```
+```go
 func ServeConn(rwc io.ReadWriteCloser) error {
     // ...
 }
@@ -498,7 +498,7 @@ Example: interface for downloading files
 - Using the real "testing" package will modify global state (adds flags to
   the global flag), and allows testing your test APIs!
 
-```
+```go
 import "github.com/mitchellh/go-testing-interface"
 // NOTE: non-pointer, cause its not the real "testing" package
 func TestConfig(t testing.T) {
@@ -513,7 +513,7 @@ func TestConfig(t testing.T) {
   `go test`, rather than a separate test harness.
 - Example: Terraform providers, Vault backends, Nomad schedulers
 
-```
+```go
 // Example from Vault
 func TestBackend_basic(t *testing.T) {
     b, _ := Factory(logical.TestBackendConfig())
@@ -539,7 +539,7 @@ func TestBackend_basic(t *testing.T) {
 
 ## Timing-dependent tests
 
-```
+```go
 func TestThing(t *testing.T) {
     // ...
     select {
@@ -557,7 +557,7 @@ func TestThing(t *testing.T) {
   need for fake time for any of them while maintaining strong test
   coverage
 
-```
+```go
 func TestThing(t *testing.T) {
     // ...
     timeout := 3 * time.Minute * timeMultiplier
@@ -579,7 +579,7 @@ func TestThing(t *testing.T) {
 
 Test helpers:
 
-```
+```go
 func TestThing(t *testing.T) {
   t.Parallel()
 }

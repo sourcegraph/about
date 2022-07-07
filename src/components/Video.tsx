@@ -9,19 +9,29 @@ interface VideoProps {
     showCaption?: boolean
     caption: string
     title: string
+    controls?: boolean
+    autoPlay?: boolean
 }
 
-export const Video: FunctionComponent<VideoProps> = ({ source, loop, caption, showCaption = false, title }) => (
+export const Video: FunctionComponent<VideoProps> = ({
+    source,
+    loop,
+    caption,
+    showCaption = false,
+    title,
+    controls = false,
+    autoPlay = true,
+}) => (
     <figure>
         <video
             className="w-100 h-auto shadow"
             width={1280}
             height={720}
-            autoPlay={true}
+            autoPlay={autoPlay}
             muted={true}
             loop={loop}
             playsInline={true}
-            controls={false}
+            controls={controls}
             title={title}
             // GCS does not set cookies, so we don't want Cookiebot to block this video based on consent
             data-cookieconsent="ignore"

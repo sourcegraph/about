@@ -97,7 +97,7 @@ Use go generate to create the actual parser.go file:
 
 Area code has three parts: area code, first part, second part.
 
-```
+```go
 %token D
 
 phone:
@@ -128,7 +128,7 @@ These variables are saved in a union data structure:
 ```
 
 Actions run Go code (i.e. everything inside the braces) when a rule matches. Dollar variables address a variable that is a value returned by the parser.
-```
+```go
 part2: D D D D
   {
     $$ = cat($1, $2, $3, $4)

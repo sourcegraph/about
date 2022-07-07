@@ -16,9 +16,10 @@ published: true
 
 Many years ago, I did a brief stint at Google–yes, I’m an ex-Googler or Xoogler. A lot has changed since then, but even that brief exposure to Google's internal tools left a lasting impression on me. In many ways, the dev tools inside Google are the most advanced in the world. Google has been a pioneer not only in scaling their own software systems but in figuring out how to build software effectively at scale. They've dealt with issues related to codebase volume, code discoverability, organizational knowledge sharing, and multi-service deployment at a level of sophistication that most other companies have not yet reached. (For reference, see <a href="https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791" rel="nofollow" target="_blank">Software Engineering at Google</a>.)
 
-<div style={{margin: '2em'}}>
-<img src="/blog/exgoogler-campfire.jpg" style={{maxWidth: '600px'}} alt="Ex-Googler's guide to dev tools" />
-</div>
+<Figure 
+  src="/blog/exgoogler-campfire.jpg"
+  alt="Ex-Googler's guide to dev tools"
+/>
 
 In other ways, however, Google's internal tools are awfully limited. In particular, nearly all of them are tightly coupled with Google's internal environment. Unfortunately, that means you can't take them with you when you leave.
 
@@ -44,6 +45,7 @@ Both inside Google and out, the software development lifecycle looks something l
 
 At every stage in this process, there is typically a tool that anchors the developer experience. Tools shape your work cycle and have an immense impact on your productivity.
 
+<TableWrapper>
 | Software development stage                          | Inside Google      | Outside Google               |
 |-----------------------------------------------------|--------------------|------------------------------|
 | Identify feature or bug                             | Issue Tracker       | GitHub issues, Jira         |
@@ -53,6 +55,7 @@ At every stage in this process, there is typically a tool that anchors the devel
 | Review code                                         | Critique           | <a href="http://github.com/" rel="nofollow" target="_blank">GitHub</a> PRs, <a href="https://www.gerritcodereview.com/" rel="nofollow" target="_blank">Gerrit</a>, <a href="https://www.phacility.com/phabricator/" rel="nofollow" target="_blank">Phabricator</a>, <a href="https://reviewable.io/" rel="nofollow" target="_blank">Reviewable</a>     |
 | Deployment                                          | Borg               | <a href="https://kubernetes.io/" rel="nofollow" target="_blank">Kubernetes</a>   |
 | Monitoring                                          | Borgmon, Dapper, Viceroy     | <a href="https://prometheus.io/" rel="nofollow" target="_blank">Prometheus</a>, <a href="https://grafana.com/" rel="nofollow" target="_blank">Grafana</a>, <a href="https://lightstep.com/" rel="nofollow" target="_blank">Lightstep</a>, <a href="https://www.honeycomb.io/" rel="nofollow" target="_blank">Honeycomb</a>, <a href="https://sentry.io/" rel="nofollow" target="_blank">Sentry</a>     |
+</TableWrapper>
 
 To improve your productivity, you need to find better tools. There's a useful GitHub repository that identifies nearly every single tool inside Google and its closest comparables outside of Google: <a href="https://github.com/jhuangtw/xg2xg" rel="nofollow" target="_blank">https://github.com/jhuangtw/xg2xg</a>. This list is comprehensive, but a bit overwhelming. So where do you start?
 

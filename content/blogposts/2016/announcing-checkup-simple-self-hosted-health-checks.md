@@ -37,7 +37,7 @@ We talked to [Matt Holt](https://twitter.com/mholt6), creator of the [Caddy web 
 
 Health checks should be as easy to create and maintain as unit tests. We wanted an interface that lets you easily say, “Here are a bunch of URLs I want to test. Here’s the expected behavior for each.” It seemed to us that the best interface for declaring these was not a GUI that forced you to point and click, but a config file. Here’s an example **checkup.json**:
 
-```
+```json
 {
      "checkers": [{
          "type": "http",
@@ -58,7 +58,7 @@ You simply specify a list of endpoints in JSON and provide Checkup access to an 
 
 Then all you need to do to check the health of your endpoints is run
 
-```
+```shell
 **$ checkup**
 == Website - https://sourcegraph.com
   Threshold: 0
@@ -72,13 +72,13 @@ Then all you need to do to check the health of your endpoints is run
 
 You can have Checkup upload this data to your S3 bucket with
 
-```
+```shell
 $ checkup --store
 ```
 
 or have it run every 10 minutes with
 
-```
+```shell
 $ checkup every 10m
 ^C
 ```

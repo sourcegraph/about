@@ -13,11 +13,12 @@ heroImage: https://about.sourcegraph.com/gophercon2019.png
 published: true
 ---
 
-<p className="text-center">
-  <a href="/go" title="Go to the GopherCon 2019 liveblog">
-    <img alt="GopherCon 2019 Banner" src="/gophercon-2019/gophercon-2019-banner.png" className="h5" />
-  </a>
-</p>
+<a href="/go" title="Go to the GopherCon 2019 liveblog">
+  <Figure 
+    alt="GopherCon 2019 Banner" 
+    src="/gophercon-2019/gophercon-2019-banner.png"
+  />
+</a>
 
 ---
 

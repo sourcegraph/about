@@ -12,11 +12,9 @@ published: true
 description: "Writing an LSIF Indexer"
 ---
 
-<div className="alert alert-info">
-
-Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)".
-
-</div>
+<Alert type="info">
+	Want to use LSIF for precise code intelligence on Sourcegraph? See "[LSIF: Fast and precise code intelligence (Sourcegraph documentation)](https://docs.sourcegraph.com/code_intelligence/explanations/precise_code_intelligence)".
+</Alert>
 
 This article explores what it would take to write an LSIF indexer. Along the way, we will learn a little bit about parsing, walking abstract syntax trees, scopes and the LSIF file format.
 
@@ -49,7 +47,7 @@ There are many ways to write parsers. For this exploration we choose the parser 
 
 For example the following Jsonnet snippet:
 
-```
+```json
 local bar = 5;
 
 {

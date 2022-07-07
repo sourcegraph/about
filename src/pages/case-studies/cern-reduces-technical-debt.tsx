@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { Layout, CaseStudyLayout, ContentSection, InContentImage, InContentBlockquote } from '@components'
+import { Layout, CaseStudyLayout, ContentSection, Figure, InContentBlockquote } from '@components'
 
 export const CaseStudy: FunctionComponent = () => (
     <Layout
@@ -34,11 +34,11 @@ export const CaseStudy: FunctionComponent = () => (
                     </p>
                     <div className="row justify-content-md-center pt-3">
                         <div className="col-md-8">
-                            <InContentImage
+                            <Figure
                                 src="/case-studies/cern-image-lhc-cc.jpg"
                                 alt="Large Hadron Collider, image by CERN"
                                 caption="Large Hadron Collider, image by CERN"
-                                className="case-studies__img img-fluid d-block mb-3"
+                                className="w-100 img-fluid d-block mb-3"
                             />
                         </div>
                     </div>
@@ -56,10 +56,10 @@ export const CaseStudy: FunctionComponent = () => (
                     />
                     <div className="row pt-3">
                         <div className="col-md-3 pt-5">
-                            <InContentImage
+                            <Figure
                                 src="/case-studies/chris-roderick-cern.jpg"
                                 alt="Chris Roderick, Applications and Services Section Leader, CERN"
-                                className="case-studies__img rounded-circle img-fluid mx-auto d-block mb-3"
+                                className="w-100 rounded-circle img-fluid mx-auto d-block mb-3"
                             />
                         </div>
                         <div className="col-md-9">

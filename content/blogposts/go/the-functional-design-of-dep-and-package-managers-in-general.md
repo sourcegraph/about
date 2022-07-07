@@ -29,19 +29,19 @@ When thinking about package management, Sam asked himself, "Can I construct this
 
 You can think of a package manager as a mapping:
 
-```
+```text
 Project source code -> Dependency source code
 ```
 
 In practice, it's a bit more complex. Sometimes you need to specify additional metadata (beyond what's in source code) about what dependency versions should be used:
 
-```
+```text
 Project src + (Metadata) -> Deps src
 ```
 
 It's useful to think of the metadata as consisting of a "manifest" and "lock," conceptually:
 
-```
+```text
 Project src + Manifest + Lock -> Deps src
 ```
 
@@ -51,7 +51,7 @@ A common anti-pattern is for dependency managers to use `Deps src` as input to t
 
 In [dep](https://github.com/golang/dep), this looks like:
 
-```
+```go
 Project src  \
               +----- Gopkg.lock -----> Deps src
 Gopkg.toml   /
@@ -59,7 +59,7 @@ Gopkg.toml   /
 
 The code is essentially as follows:
 
-```
+```go
 // Read imports, Gopkg.toml and Gopkg.lock from disk to populate a SolveParameters
 params := SolveParameters{...}
 

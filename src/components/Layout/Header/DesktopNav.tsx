@@ -15,7 +15,7 @@ interface DesktopNavProps {
 
 const DesktopNav: FunctionComponent<DesktopNavProps> = ({ navLinks, hideGetStartedButton }) => (
     <>
-        <Nav className="left-nav me-auto ml-md-2">
+        <Nav className="left-nav mr-auto ml-lg-5">
             {navLinks.map(navLink =>
                 navLink.items.length === 1 ? (
                     navLink.items.map((item: { href: string; title: string }) =>
@@ -55,7 +55,7 @@ const DesktopNav: FunctionComponent<DesktopNavProps> = ({ navLinks, hideGetStart
         <Nav className="right-nav justify-content-lg-end">
             {!hideGetStartedButton && (
                 <Nav.Link
-                    className="btn btn-simple px-2 py-2 font-weight-bolder"
+                    className="btn text-blurple px-2 py-2 font-weight-bolder"
                     href="https://sourcegraph.com/search"
                     title="Search code"
                     data-button-style={buttonStyle.text}

@@ -3,7 +3,7 @@ import path from 'path'
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import { Layout, EmbeddedHubSpot } from '@components'
+import { Layout, EmbeddedHubSpot, TableWrapper } from '@components'
 import { PageProps } from '@interfaces/postProps'
 import { getAllSlugs, getMarkdownFiles, loadMarkdownFile, serializeMdxSource } from '@lib'
 
@@ -16,7 +16,7 @@ export interface TermPageProps {
 
 const CONTENT_PARENT_DIRECTORY = './content/'
 
-const components = { EmbeddedHubSpot }
+const components = { EmbeddedHubSpot, TableWrapper }
 
 const TermPage: NextPage<TermPageProps> = ({ page, content }) => (
     <Layout>

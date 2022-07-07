@@ -46,9 +46,10 @@ To learn more, [read the Notebooks docs](https://docs.sourcegraph.com/notebooks)
 
 ## Filter Code Insights using search contexts
 
-<div style={{textAlign:'center'}}>
-  <img className="blog-image" title="Code insights have search context filters" alt="Image of a search context being used to filter a code insight" src="https://storage.googleapis.com/sourcegraph-assets/blog/3.39/code_insights_3.39_dynamic_context_filters.png" />
-</div>
+<Figure 
+  alt="Image of a search context being used to filter a code insight" 
+  src="https://storage.googleapis.com/sourcegraph-assets/blog/3.39/code_insights_3.39_dynamic_context_filters.png"
+/>
 
 [Search contexts](https://docs.sourcegraph.com/code_search/explanations/features#search-contexts) are pre-set repository groups that make it easy to scope your Sourcegraph searches, and you can now apply search contexts to Code Insights as well. Then, by updating your search contexts, your filtered insights will automatically update to reflect the changes as well. Using search contexts is a fast, succinct way to reuse complex repository filters.
 

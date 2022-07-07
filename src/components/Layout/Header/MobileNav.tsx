@@ -28,20 +28,27 @@ const MobileNav: FunctionComponent<MobileNavProps> = ({ navLinks, hideGetStarted
                     navLink.items.length === 1 ? (
                         navLink.items.map(item =>
                             item.href.includes('http') ? (
-                                <a
-                                    key={camelCase(item.title)}
-                                    className="nav-link"
-                                    href={item.href}
-                                    target="_blank"
-                                    rel="noreferrer"
+                                <li
+                                    className="nav-item"
+                                    role="presentation"
+                                    key={item.title}
                                 >
-                                    {item.title}
-                                </a>
+                                    <a
+                                        className="nav-link"
+                                        href={item.href}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        {item.title}
+                                    </a>
+                                </li>
                             ) : (
-                                <Link key={camelCase(item.title)} href={item.href}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a className="nav-link">{item.title}</a>
-                                </Link>
+                                <li className="nav-item" role="presentation" key={camelCase(item.title)}>
+                                    <Link href={item.href}>
+                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                        <a className="nav-link">{item.title}</a>
+                                    </Link>
+                                </li>
                             )
                         )
                     ) : (
@@ -71,7 +78,7 @@ const MobileNav: FunctionComponent<MobileNavProps> = ({ navLinks, hideGetStarted
                             </span>
                             <ul
                                 id={navLink.section.split(' ').join('-').toLowerCase() + '-menu'}
-                                className={`small-menu collapse navbar-collapse ${
+                                className={`sub-menu collapse navbar-collapse ${
                                     openMobileMenu[camelCase(navLink.section)] ? 'show' : 'hide'
                                 }`}
                             >
