@@ -2,7 +2,15 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { ContentSection, Layout, PricingPlan, PricingPlanFeature, PricingPlanProperty, BlockquoteWithBorder, Features } from '@components'
+import {
+    ContentSection,
+    Layout,
+    PricingPlan,
+    PricingPlanFeature,
+    PricingPlanProperty,
+    BlockquoteWithBorder,
+    Features,
+} from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 
 /** The Starter feature set. */
@@ -128,7 +136,11 @@ const PricingPage: FunctionComponent = () => (
                                 our 2000+ repositories, and the confidence that we're not leaving anyone
                                 behind."
                                 author="Aneesh Agrawal, Software Engineer, Lyft"
-                                logo={{src: '/external-logos/lyft-logo.svg', alt: 'Lyft logo: Read the case study', href: '/case-studies/criteo-tackles-big-code'}}
+                                logo={{
+                                    src: '/external-logos/lyft-logo.svg',
+                                    alt: 'Lyft logo: Read the case study',
+                                    href: '/case-studies/criteo-tackles-big-code',
+                                }}
                             />
                         </div>
                     </div>
@@ -206,7 +218,11 @@ const PricingPage: FunctionComponent = () => (
                             <BlockquoteWithBorder
                                 quote="Sourcegraph pays for itself many times over—it's a game changer."
                                 author="François Jehl, Senior Engineering Manager, Criteo"
-                                logo={{src: '/external-logos/criteo-logo.svg', alt: 'Criteo logo: Read the case study', href: '/case-studies/criteo-tackles-big-code'}}
+                                logo={{
+                                    src: '/external-logos/criteo-logo.svg',
+                                    alt: 'Criteo logo: Read the case study',
+                                    href: '/case-studies/criteo-tackles-big-code',
+                                }}
                             />
                         </div>
                     </div>

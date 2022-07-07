@@ -57,8 +57,11 @@ const FixingVulnerabilities: FunctionComponent = () => {
                         quote="[Sourcegraph] is the best way to prove that we're not vulnerable to a particular CVE,
                         if and when we get asked by an auditor."
                         author="David Haynes, Security Engineer at Cloudflare"
-                        logo={{src: '/external-logos/cloudflare-logo.svg', alt: 'Cloudflare logo'}}
-                        link={{text: 'Read the full case study', href: '/case-studies/cloudflare-accelerates-debugging-and-improves-security'}}
+                        logo={{ src: '/external-logos/cloudflare-logo.svg', alt: 'Cloudflare logo' }}
+                        link={{
+                            text: 'Read the full case study',
+                            href: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
+                        }}
                     />
                 </div>
             </div>

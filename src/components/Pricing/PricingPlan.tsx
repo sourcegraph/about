@@ -164,11 +164,7 @@ export const PricingPlan: FunctionComponent<Props> = ({
     buttonHref,
 }) => {
     const button = (
-        <a
-            className={`btn ${buttonClassName} w-50 min-w-250`}
-            href={buttonHref}
-            onClick={buttonOnClick}
-        >
+        <a className={`btn ${buttonClassName} w-50 min-w-250`} href={buttonHref} onClick={buttonOnClick}>
             {buttonLabel}
         </a>
     )

@@ -58,8 +58,8 @@ const AccelerateDevOnboarding: FunctionComponent = () => {
                         structure, to track down where code lives, and self-service during their
                         investigations."
                         author="Owen Kim, Senior Software Engineer at Convoy"
-                        logo={{src: '/external-logos/convoy-logo.svg', alt: 'Convoy logo'}}
-                        link={{text: 'Read the full case study', href: '/case-studies/convoy-improved-on-boarding'}}
+                        logo={{ src: '/external-logos/convoy-logo.svg', alt: 'Convoy logo' }}
+                        link={{ text: 'Read the full case study', href: '/case-studies/convoy-improved-on-boarding' }}
                     />
                 </div>
             </div>
