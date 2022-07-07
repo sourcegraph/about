@@ -5,7 +5,7 @@ import { Layout, YouTube, HubSpotForm } from '@components'
 const Demo: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Request a Demo | Sourcegraph',
+            title: 'Request a Demo - Sourcegraph',
             description:
                 "From developer onboarding to incident response, see how companies of all sizes use Sourcegraph to solve the industry's most challenging code problems.",
         }}

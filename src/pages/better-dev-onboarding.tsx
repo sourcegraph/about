@@ -44,7 +44,7 @@ const resourceItems = [
 const BetterDeveloperOnboarding: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Better Developer Onboarding | Sourcegraph',
+            title: 'Better Developer Onboarding - Sourcegraph',
             description:
                 'Find your own answers with self-serve onboarding, codebase exploration, and knowledge sharing, without waiting for someone to point you to the relevant code.',
         }}

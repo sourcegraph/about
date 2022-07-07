@@ -8,7 +8,7 @@ import { buttonStyle, buttonLocation } from '@data'
 const FixingVulnerabilities: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Fixing Security Vulnerabilities | Sourcegraph',
+            title: 'Fixing Security Vulnerabilities - Sourcegraph',
             description:
                 "Search within and across repositories to find and fix vulnerabilities in minutes, and deploy fixes with confidence knowing you've found every instance of affected code.",
         }}

@@ -34,7 +34,7 @@ const features: { id: string; description: string }[] = [
 const UseCases: React.FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Use Cases | Sourcegraph',
+            title: 'Use Cases - Sourcegraph',
             description:
                 'See how the most productive dev teams use Sourcegraph to build software you rely on. From improving code security to streamlining code reuse, our customers use Sourcegraph to solve big code problems.',
         }}

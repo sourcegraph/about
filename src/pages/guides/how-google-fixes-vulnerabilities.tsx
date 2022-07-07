@@ -5,7 +5,7 @@ import { Layout, GatedResourceLayout } from '@components'
 export const Guide: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'How Google and others find and fix vulnerabilities | Sourcegraph',
+            title: 'How Google and others find and fix vulnerabilities - Sourcegraph',
             description:
                 'See how tech companies large and small address code security. In this post, we explore how Google, Microsoft, Lyft, GitLab, and Atlassian find and fix vulnerabilities.',
         }}

@@ -6,7 +6,7 @@ import { Layout, GatedResourceLayout } from '@components'
 export const Guide: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Developer onboarding: How is it unique? | Sourcegraph',
+            title: 'Developer onboarding: How is it unique? - Sourcegraph',
             description:
                 'A guide to understanding how to create a developer onboarding program that differs from general employee onboarding and creates an engaged development team.',
         }}

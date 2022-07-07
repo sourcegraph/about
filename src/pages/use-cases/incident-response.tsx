@@ -178,7 +178,7 @@ const threeUpTextItems = [
 const IncidentResponsePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Incident Response | Sourcegraph',
+            title: 'Incident Response - Sourcegraph',
             description:
                 'Identify the root cause of an incident, understand its potential impact, fix the issue everywhere in your codebase. Incident response from Sourcegraph.',
         }}

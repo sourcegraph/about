@@ -162,7 +162,7 @@ const blogResourceItems = [
 const CodeReusePage: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Code Reuse | Sourcegraph',
+            title: 'Code Reuse - Sourcegraph',
             description:
                 'Find existing code libraries for reuse and avoid spending time on problems a teammate already solved for a more secure and coherent codebase.',
         }}

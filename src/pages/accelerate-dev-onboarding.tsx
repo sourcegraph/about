@@ -9,7 +9,7 @@ import { buttonStyle, buttonLocation } from '@data'
 const AccelerateDevOnboarding: FunctionComponent = () => (
     <Layout
         meta={{
-            title: 'Accelerating Developer Onboarding | Sourcegraph',
+            title: 'Accelerating Developer Onboarding - Sourcegraph',
             description:
                 'Get sharable links to help new developers ask questions with context, and enable senior devs to share knowledge without running local searches for specific bits of code.',
         }}
