@@ -78,6 +78,7 @@ const FixingVulnerabilities: FunctionComponent = () => {
                             className="btn btn-primary mt-5 d-block d-sm-inline-block"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
                         >
                             Request a demo
                         </a>
