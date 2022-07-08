@@ -1,9 +1,9 @@
 import { FunctionComponent } from 'react'
 
+import DiscordIcon from 'mdi-react/DiscordIcon'
 import GithubIcon from 'mdi-react/GithubIcon'
 import LinkedinIcon from 'mdi-react/LinkedinIcon'
 import SpotifyIcon from 'mdi-react/SpotifyIcon'
-import TwitchIcon from 'mdi-react/TwitchIcon'
 import TwitterIcon from 'mdi-react/TwitterIcon'
 import YouTubeIcon from 'mdi-react/YoutubeIcon'
 import Link from 'next/link'
@@ -60,7 +60,7 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                                 <Link href="/dev-tools-quiz">Dev tools quiz</Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/community">Community</Link>
+                                <Link href="/community">Discord</Link>
                             </li>
                         </ul>
                     </div>
@@ -141,12 +141,12 @@ const Footer: FunctionComponent<Props> = ({ minimal, className }) => (
                             </li>
                             <li className="nav-item">
                                 <a
-                                    href="https://www.twitch.tv/sourcegraph"
+                                    href="https://discord.gg/s2qDtYGnAE"
                                     target="_blank"
                                     rel="nofollow noreferrer"
-                                    aria-label="Twitch"
+                                    aria-label="Discord"
                                 >
-                                    <TwitchIcon />
+                                    <DiscordIcon />
                                 </a>
                             </li>
                             <li className="nav-item">
