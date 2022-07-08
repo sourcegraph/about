@@ -19,11 +19,6 @@ export const slugData: SlugDataProps = {
         description: 'Learn how you can automate large-scale code changes with Sourcegraph Batch Changes.',
         masterFormName: 'contactMulti',
     },
-    'request-code-change-management-demo': {
-        title: 'Request a code change management demo',
-        description: "We'll reach out to discuss a demo and to learn more about your needs.",
-        masterFormName: 'contactMulti',
-    },
     'request-code-insights-demo': {
         title: 'Schedule a Code Insights demo',
         description:

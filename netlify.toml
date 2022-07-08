@@ -136,6 +136,10 @@
   to = "/demo"
 
 [[redirects]]
+  from = "/contact/request-code-change-management-demo"
+  to = "/demo"
+
+[[redirects]]
   from = "/customers"
   to = "/use-cases"
 
