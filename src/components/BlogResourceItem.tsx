@@ -23,7 +23,7 @@ export const BlogResourceItem: FunctionComponent<Props> = ({ blog }) => (
             <a className="posts-list__post-title-link" href={blog.href}>
                 <h3 className="font-weight-bold">{blog.title}</h3>
             </a>
-            <p className="text-muted">{blog.type}</p>
+            <p className="text-gray-5">{blog.type}</p>
             <p>{blog.description}</p>
         </div>
         <div className="col-sm-4 col-md-3 d-flex align-items-center">

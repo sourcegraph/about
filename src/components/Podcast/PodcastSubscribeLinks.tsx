@@ -3,13 +3,12 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 
 interface Props {
-    className?: string
     linkClassName?: string
 }
 
-export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ className = '', linkClassName = '' }) => (
-    <div className={className}>
-        <span>Subscribe:</span>{' '}
+export const PodcastSubscribeLinks: FunctionComponent<Props> = ({ linkClassName = '' }) => (
+    <div>
+        <span className="text-gray-5">Subscribe:</span>{' '}
         <a
             target="_blank"
             rel="noreferrer"

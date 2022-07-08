@@ -98,7 +98,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="list-inline d-inline-flex flex-wrap">
                     {renderListItems(codeHosts)}
                     <li className="d-block">
-                        <a href="mailto:feedback@sourcegraph.com" className="small text-muted">
+                        <a href="mailto:feedback@sourcegraph.com" className="small text-gray-5">
                             Have a repository not covered here?
                         </a>
                     </li>
@@ -111,7 +111,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="list-inline d-inline-flex flex-wrap">
                     {renderListItems(languages)}
                     <li className="d-block">
-                        <a href="mailto:feedback@sourcegraph.com" className="d-inline-block small text-muted">
+                        <a href="mailto:feedback@sourcegraph.com" className="d-inline-block small text-gray-5">
                             Need a different language?
                         </a>
                     </li>
@@ -124,7 +124,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                 <ul className="list-inline d-inline-flex flex-wrap">
                     {renderListItems(tools)}
                     <li className="d-block">
-                        <a href="https://docs.sourcegraph.com/integration" className="small text-muted">
+                        <a href="https://docs.sourcegraph.com/integration" className="small text-gray-5">
                             See all integrations or build your own
                         </a>
                     </li>
@@ -149,7 +149,7 @@ export const IntegrationsSection: FunctionComponent = () => (
                     </li>
 
                     <li className="d-block">
-                        <a href="https://docs.sourcegraph.com/admin/install" className="small text-muted">
+                        <a href="https://docs.sourcegraph.com/admin/install" className="small text-gray-5">
                             Learn about deploying Sourcegraph
                         </a>
                     </li>

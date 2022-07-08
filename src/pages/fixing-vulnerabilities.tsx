@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react'
 
 import Link from 'next/link'
 
-import { Layout, FormLegal, YouTube } from '@components'
+import { BlockquoteWithLogoBottom, Layout, FormLegal, YouTube } from '@components'
 import { buttonStyle, buttonLocation } from '@data'
 import { useHubSpot, useChiliPiper } from '@hooks'
 
@@ -22,7 +22,7 @@ const FixingVulnerabilities: FunctionComponent = () => {
                     "Search within and across repositories to find and fix vulnerabilities in minutes, and deploy fixes with confidence knowing you've found every instance of affected code.",
             }}
         >
-            <div className="container py-6">
+            <div className="container py-7">
                 <div className="row">
                     <div className="col-lg-6">
                         <h1 className="mb-4 font-weight-bold">Find and fix security vulnerabilities faster</h1>
@@ -34,7 +34,7 @@ const FixingVulnerabilities: FunctionComponent = () => {
                             vulnerability-free.
                         </p>
 
-                        <div className="mt-5 mw-400">
+                        <div className="mt-5 max-w-400">
                             <div id="form-0" />
                             <FormLegal />
                         </div>
@@ -51,49 +51,39 @@ const FixingVulnerabilities: FunctionComponent = () => {
             </div>
 
             <div className="bg-gradient-venus-saturated text-center">
-                <div className="container py-6 mw-650">
-                    <h2 className="mb-4 font-weight-bold">
-                        Cloudflare proves to auditors that its code isn't vulnerable
-                    </h2>
-                    <blockquote>
-                        <p>
-                            &ldquo;[Sourcegraph] is the best way to prove that we're not vulnerable to a particular CVE,
-                            if and when we get asked by an auditor.&rdquo;
-                        </p>
-                        <figcaption className="text-muted mt-4">
-                            &mdash; David Haynes, Security Engineer at Cloudflare
-                        </figcaption>
-                    </blockquote>
-
-                    <img src="/external-logos/cloudflare-logo.svg" alt="Cloudflare logo" width={130} className="mt-4" />
-
-                    <Link href="/case-studies/cloudflare-accelerates-debugging-and-improves-security">
-                        <a href="#none" className="d-block mt-5 font-weight-bold">
-                            Read the full case study
-                        </a>
-                    </Link>
+                <div className="container py-7 max-w-650">
+                    <BlockquoteWithLogoBottom
+                        header="Cloudflare proves to auditors that its code isn't vulnerable"
+                        quote="[Sourcegraph] is the best way to prove that we're not vulnerable to a particular CVE,
+                        if and when we get asked by an auditor."
+                        author="David Haynes, Security Engineer at Cloudflare"
+                        logo={{ src: '/external-logos/cloudflare-logo.svg', alt: 'Cloudflare logo' }}
+                        link={{
+                            text: 'Read the full case study',
+                            href: '/case-studies/cloudflare-accelerates-debugging-and-improves-security',
+                        }}
+                    />
                 </div>
             </div>
 
-            <div className="text-center">
-                <div className="container py-8 mw-650">
-                    <h2 className="font-weight-bold">
-                        Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.
-                    </h2>
+            <div className="text-center container py-7 max-w-650">
+                <h2 className="font-weight-bold">
+                    Ready to find, fix, and monitor vulnerabilities with confidence? Let's talk.
+                </h2>
 
-                    <div className="mt-5 mw-400 mx-auto">
-                        <Link href="/demo">
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a
-                                className="btn btn-primary mt-5 d-block d-sm-inline-block"
-                                data-button-style={buttonStyle.primary}
-                                data-button-location={buttonLocation.bodyDemo}
-                            >
-                                Request a demo
-                            </a>
-                        </Link>
-                        <FormLegal />
-                    </div>
+                <div className="mt-5 max-w-400 mx-auto">
+                    <Link href="/demo">
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                        <a
+                            className="btn btn-primary mt-5 d-block d-sm-inline-block"
+                            data-button-style={buttonStyle.primary}
+                            data-button-location={buttonLocation.bodyDemo}
+                            data-button-type="cta"
+                        >
+                            Request a demo
+                        </a>
+                    </Link>
+                    <FormLegal />
                 </div>
             </div>
         </Layout>
