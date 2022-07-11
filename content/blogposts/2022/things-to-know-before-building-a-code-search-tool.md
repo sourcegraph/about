@@ -4,7 +4,7 @@ authors:
   - name: Quinn Slack
     url: https://twitter.com/sqs
 publishDate: 2022-07-11T10:00-07:00
-description: ' As your company’s codebase grows, devs will start needing code search to understand, fix, and automate across the codebase. Here are a few questions you should ask yourself before deciding to build code search inside your company.'
+description: 'As your company’s codebase grows, devs will start needing code search to understand, fix, and automate across the codebase. Here are a few questions you should ask yourself before deciding to build code search inside your company.'
 tags: [blog]
 slug: 'things-to-know-before-building-a-code-search-tool'
 published: true
