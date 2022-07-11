@@ -28,17 +28,8 @@ const MobileNav: FunctionComponent<Props> = ({ navLinks, hideGetStartedButton, i
                     navLink.items.length === 1 ? (
                         navLink.items.map(item =>
                             item.href.includes('http') ? (
-                                <li
-                                    className="nav-item"
-                                    role="presentation"
-                                    key={item.title}
-                                >
-                                    <a
-                                        className="nav-link"
-                                        href={item.href}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
+                                <li className="nav-item" role="presentation" key={item.title}>
+                                    <a className="nav-link" href={item.href} target="_blank" rel="noreferrer">
                                         {item.title}
                                     </a>
                                 </li>

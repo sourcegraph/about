@@ -21,12 +21,7 @@ interface Props {
     children?: React.ReactNode
 }
 
-export const NewCaseStudyLayout: FunctionComponent<Props> = ({
-    customer,
-    logo,
-    quote = null,
-    children,
-}) => {
+export const NewCaseStudyLayout: FunctionComponent<Props> = ({ customer, logo, quote = null, children }) => {
     // CaseStudy preview list NOT including current CaseStudy page
     const uniqueCaseStudyList = CASESTUDIES.filter(study => study.name !== customer).slice(0, 4)
 

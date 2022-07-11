@@ -75,10 +75,12 @@ export const GatedResourceLayout: FunctionComponent<Props> = ({
     useHubSpot(hubSpotConfig)
 
     const heroImage = (): string => {
-        if (isWebinarPg) { // Webinars
+        if (isWebinarPg) {
+            // Webinars
             return isMdOrDown ? '/bg-images/bg-code-mars-mobile.png' : '/bg-images/bg-code-mars.png'
         }
-        if (isGuidePg) { // Guides
+        if (isGuidePg) {
+            // Guides
             return isMdOrDown ? '/bg-images/bg-code-aquamarine-mobile.png' : '/bg-images/bg-code-aquamarine.png'
         }
         return isMdOrDown ? '/bg-images/bg-code-venus-mobile.png' : '/bg-images/bg-code-venus.png'

@@ -36,7 +36,7 @@ export const CaseStudy: FunctionComponent = () => (
             title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
             description:
                 'Nutanix case study. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
-            }}
+        }}
         heroAndHeaderClassName="case-study-hero-and-header"
         hero={
             <NewCaseStudyJumbotron
@@ -44,7 +44,9 @@ export const CaseStudy: FunctionComponent = () => (
                 customer="Nutanix"
                 color="white"
             >
-                <h1 className="pt-2 display-2 font-weight-bold max-w-800">Nutanix fixed Log4j quickly and confidently with Sourcegraph</h1>
+                <h1 className="pt-2 display-2 font-weight-bold max-w-800">
+                    Nutanix fixed Log4j quickly and confidently with Sourcegraph
+                </h1>
             </NewCaseStudyJumbotron>
         }
     >
@@ -185,31 +187,31 @@ export const CaseStudy: FunctionComponent = () => (
                     in Jon's words, like “herding cats who were herding mice at the same time.”
                 </p>
                 <p>
-                    Without Sourcegraph, Jon would have either been tracking down whoever built each component to
-                    ask them how and where they used Log4j or stumbling through all of the company's repositories.
+                    Without Sourcegraph, Jon would have either been tracking down whoever built each component to ask
+                    them how and where they used Log4j or stumbling through all of the company's repositories.
                 </p>
                 <p>
-                    Using Sourcegraph, Jon discovered every instance of Log4j and was fully confident in the
-                    results. “It's nice,” Jon said, “when you can just run a report and say, 'Here it is,'' or 'Here
-                    it isn't.'' It's much better than having to say, 'Well, boss, I think we got it all.’”
+                    Using Sourcegraph, Jon discovered every instance of Log4j and was fully confident in the results.
+                    “It's nice,” Jon said, “when you can just run a report and say, 'Here it is,'' or 'Here it isn't.''
+                    It's much better than having to say, 'Well, boss, I think we got it all.’”
                 </p>
                 <p>
                     Nutanix needed that confidence because of its sprawling codebase. One thing that made Log4j
-                    especially complicated for Nutanix—as it does for other large-scale enterprises—is that there
-                    were multiple source control systems in play. Sourcegraph provided them with “unified
-                    visibility,” according to Jon. “I can't imagine the pain of having to do that either with grep
-                    or OpenGrok,” he added.
+                    especially complicated for Nutanix—as it does for other large-scale enterprises—is that there were
+                    multiple source control systems in play. Sourcegraph provided them with “unified visibility,”
+                    according to Jon. “I can't imagine the pain of having to do that either with grep or OpenGrok,” he
+                    added.
                 </p>
                 <p>
                     Confidence spread from Jon to the rest of the team and throughout the company. With
                     <Link href="/blog/introducing-search-contexts/"> search contexts</Link>, Jon was able to share
-                    relevant contexts and queries, showing the team how they could verify whether a given Log4j
-                    instance was present or absent. He could show them precisely what they changed.
+                    relevant contexts and queries, showing the team how they could verify whether a given Log4j instance
+                    was present or absent. He could show them precisely what they changed.
                 </p>
                 <p>
-                    “We used Sourcegraph contexts to see specifically where a service was at any given point in
-                    time,” Jon said. Without Sourcegraph, the team would've had to use code scanning, which takes a
-                    lot of time, or manual build inspections, which aren't foolproof.
+                    “We used Sourcegraph contexts to see specifically where a service was at any given point in time,”
+                    Jon said. Without Sourcegraph, the team would've had to use code scanning, which takes a lot of
+                    time, or manual build inspections, which aren't foolproof.
                 </p>
             </ContentSection>
 
@@ -230,18 +232,18 @@ export const CaseStudy: FunctionComponent = () => (
                     affected by Log4j.
                 </p>
                 <p>
-                    “That's hopefully something customers will remember us for,” Jon said. “We quickly either
-                    provided them with clarity or gave them a line on the next available patch because we were able
-                    to identify the issue and start fixing it ASAP.”
+                    “That's hopefully something customers will remember us for,” Jon said. “We quickly either provided
+                    them with clarity or gave them a line on the next available patch because we were able to identify
+                    the issue and start fixing it ASAP.”
                 </p>
                 <p>
-                    Jon explained that, at many enterprises, dependencies are unseen and forgotten. “You might check
-                    in on a dependency and find it hasn't been reviewed for four, five, six, or even ten years. But
-                    it works, so why update it?”
+                    Jon explained that, at many enterprises, dependencies are unseen and forgotten. “You might check in
+                    on a dependency and find it hasn't been reviewed for four, five, six, or even ten years. But it
+                    works, so why update it?”
                 </p>
                 <p>
-                    Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies
-                    will have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to
+                    Log4j is one of many reasons why monitoring and updating is now a renewed priority. “Companies will
+                    have to be more diligent,” Jon said. With Sourcegraph, Nutanix is prepared to
                     <Link href="/use-cases/code-security"> find and fix the next vulnerability</Link>.
                 </p>
             </ContentSection>

@@ -224,7 +224,6 @@ export const BatchChangesPage: FunctionComponent = () => (
                             src: '/external-logos/workiva-vector-logo.svg',
                             alt: 'Workiva',
                         }}
-                        bold={true}
                     />
                 </div>
             </div>

@@ -69,8 +69,10 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                                     <ListItemType key={useCase.text} item={useCase} />
                                 ))}
                             </ul>
+                        ) : useCases[0].href ? (
+                            <Link href={useCases[0].href}>{useCases[0].text}</Link>
                         ) : (
-                            useCases[0].href ? <Link href={useCases[0].href}>{useCases[0].text}</Link> : <span>{useCases[0].text}</span>
+                            <span>{useCases[0].text}</span>
                         )}
                     </div>
                 </div>
@@ -86,8 +88,10 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                                     <ListItemType key={challenge.text} item={challenge} />
                                 ))}
                             </ul>
+                        ) : challenges[0].href ? (
+                            <Link href={challenges[0].href}>{challenges[0].text}</Link>
                         ) : (
-                            challenges[0].href ? <Link href={challenges[0].href}>{challenges[0].text}</Link> : <span>{challenges[0].text}</span>
+                            <span>{challenges[0].text}</span>
                         )}
                     </div>
                 </div>
@@ -105,8 +109,10 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                                     <ListItemType key={solution.text} item={solution} />
                                 ))}
                             </ul>
+                        ) : solutions[0].href ? (
+                            <Link href={solutions[0].href}>{solutions[0].text}</Link>
                         ) : (
-                            solutions[0].href ? <Link href={solutions[0].href}>{solutions[0].text}</Link> : <span>{solutions[0].text}</span>
+                            <span>{solutions[0].text}</span>
                         )}
                     </div>
                 </div>
@@ -130,8 +136,10 @@ export const UseChallengeSolutionResults: FunctionComponent<Props> = ({ useCases
                                     <ListItemType key={result.text} item={result} />
                                 ))}
                             </ul>
+                        ) : results[0].href ? (
+                            <Link href={results[0].href}>{results[0].text}</Link>
                         ) : (
-                            results[0].href ? <Link href={results[0].href}>{results[0].text}</Link> : <span>{results[0].text}</span>
+                            <span>{results[0].text}</span>
                         )}
                     </div>
                 </div>
