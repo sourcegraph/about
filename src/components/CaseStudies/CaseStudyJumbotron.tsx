@@ -35,8 +35,7 @@ export const CaseStudyJumbotron: FunctionComponent<Props> = ({
 )
 
 export const NewCaseStudyJumbotron: FunctionComponent<Props> = ({ children }) => (
-    // eslint-disable-next-line react/forbid-dom-props
-    <div className="py-7 bg-cover" style={{ backgroundImage: 'url(/bg-images/bg-code-venus.png)' }}>
+    <div className="py-7">
         <div className="container">
             <BackButton href="/case-studies" text="Case Studies" />
             {children}

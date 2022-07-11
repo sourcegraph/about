@@ -1,10 +1,6 @@
 import { FunctionComponent } from 'react'
 
-import { kebabCase } from 'lodash'
-
-import { NewCaseStudyJumbotron, ContentSection, RequestDemoTrySourcegraph, BlockquoteWithLogoBottom } from '@components'
-import { breakpoints } from '@data'
-import { useWindowWidth } from '@hooks'
+import { ContentSection, RequestDemoTrySourcegraph, BlockquoteWithLogoBottom } from '@components'
 
 import { CaseStudyCard, CASESTUDIES } from './CaseStudyCard'
 interface Quote {
@@ -19,69 +15,40 @@ interface Logo {
 
 interface Props {
     customer: string
-    title: string
     logo?: Logo
     quote?: Quote
     pdf?: string
-    heroImage?: string
-    heroLink?: string
-    className?: string
-    titleClassName?: string
     children?: React.ReactNode
 }
 
 export const NewCaseStudyLayout: FunctionComponent<Props> = ({
     customer,
-    title,
     logo,
     quote = null,
-    className = 'case-study',
-    pdf,
     children,
 }) => {
     // CaseStudy preview list NOT including current CaseStudy page
     const uniqueCaseStudyList = CASESTUDIES.filter(study => study.name !== customer).slice(0, 4)
 
-    const windowWidth = useWindowWidth()
-    const isMdOrDown = windowWidth < breakpoints.lg
-    const getBgImg = (): string => `url(/bg-images/bg-code-venus${isMdOrDown ? '-mobile' : ''}.png)`
-
     return (
         <>
-            <div className={`${kebabCase(customer)}-${className} ${className}`}>
-                <NewCaseStudyJumbotron
-                    className="bg-gradient-saturn-saturated text-black height-md-450 height-auto p-2"
-                    customer={customer}
-                    color="white"
-                >
-                    <h1 className="pt-2 display-2 font-weight-bold max-w-800">{title}</h1>
-                    {pdf && (
-                        <a href={pdf} className="btn btn-primary mt-3" rel="nofollow noreferrer" target="_blank">
-                            <i className="fa fa-file-pdf pr-2" />
-                            Download PDF
-                        </a>
-                    )}
-                </NewCaseStudyJumbotron>
+            {quote && (
+                <ContentSection color="white" className="py-7 text-center max-w-600">
+                    <BlockquoteWithLogoBottom
+                        quote={quote.text}
+                        author={quote.author}
+                        logo={{
+                            src: logo?.img || '',
+                            alt: customer,
+                            href: logo?.href,
+                        }}
+                    />
+                </ContentSection>
+            )}
 
-                {quote && (
-                    <ContentSection color="white" className="py-7 text-center max-w-600">
-                        <BlockquoteWithLogoBottom
-                            quote={quote.text}
-                            author={quote.author}
-                            logo={{
-                                src: logo?.img || '',
-                                alt: customer,
-                                href: logo?.href,
-                            }}
-                        />
-                    </ContentSection>
-                )}
+            {children}
 
-                {children}
-            </div>
-
-            {/* eslint-disable-next-line react/forbid-dom-props */}
-            <div className="py-7 bg-cover" style={{ backgroundImage: getBgImg() }}>
+            <div className="py-7">
                 <RequestDemoTrySourcegraph />
             </div>
 

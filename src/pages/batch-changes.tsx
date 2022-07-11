@@ -126,7 +126,6 @@ export const BatchChangesPage: FunctionComponent = () => (
                             src: '/external-logos/indeed-logo.svg',
                             alt: 'Indeed',
                         }}
-                        bold={true}
                     />
                 </div>
             </div>

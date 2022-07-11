@@ -59,3 +59,12 @@
         }
     }
 }
+
+.case-study-hero-and-header {
+    background-image: url('/bg-images/bg-code-venus.png');
+    background-size: cover;
+    @include media-breakpoint-down(lg) {
+        background-image: url('/bg-images/bg-code-venus-mobile.png');
+        background-size: cover;
+    }
+}

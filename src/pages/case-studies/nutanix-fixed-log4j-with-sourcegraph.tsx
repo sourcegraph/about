@@ -5,6 +5,7 @@ import Link from 'next/link'
 import {
     AuthorBio,
     Layout,
+    NewCaseStudyJumbotron,
     NewCaseStudyLayout,
     ContentSection,
     InContentBlockquote,
@@ -35,11 +36,20 @@ export const CaseStudy: FunctionComponent = () => (
             title: 'Nutanix fixed Log4j quickly and confidently with Sourcegraph',
             description:
                 'Nutanix case study. Learn how Nutanix uses Sourcegraph to find and fix security vulnerabilities quickly across their code base.',
-        }}
+            }}
+        heroAndHeaderClassName="case-study-hero-and-header"
+        hero={
+            <NewCaseStudyJumbotron
+                className="text-black height-md-450 height-auto p-2"
+                customer="Nutanix"
+                color="white"
+            >
+                <h1 className="pt-2 display-2 font-weight-bold max-w-800">Nutanix fixed Log4j quickly and confidently with Sourcegraph</h1>
+            </NewCaseStudyJumbotron>
+        }
     >
         <NewCaseStudyLayout
             customer="Nutanix"
-            title="Nutanix fixed Log4j quickly and confidently with Sourcegraph"
             quote={{
                 text: 'Sourcegraph was the right product at the right time.',
                 author: 'Jon Kohler, Technical Director of Solution Engineering at Nutanix',
