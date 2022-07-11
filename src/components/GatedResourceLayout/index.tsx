@@ -11,10 +11,10 @@ import guideMobileBg from './assets/hero/bg-code-aquamarine-mobile.png'
 import guideBg from './assets/hero/bg-code-aquamarine.png'
 import webinarMobileBg from './assets/hero/bg-code-mars-mobile.png'
 import webinarBg from './assets/hero/bg-code-mars.png'
-import workshopMobileBg from './assets/hero/bg-dark-nebulous-gradient-3-mobile.png'
-import workshopBg from './assets/hero/bg-dark-nebulous-gradient-3.png'
 import defaultMobileBg from './assets/hero/bg-code-venus-mobile.png'
 import defaultBg from './assets/hero/bg-code-venus.png'
+import workshopMobileBg from './assets/hero/bg-dark-nebulous-gradient-3-mobile.png'
+import workshopBg from './assets/hero/bg-dark-nebulous-gradient-3.png'
 
 interface Customer {
     name: string
