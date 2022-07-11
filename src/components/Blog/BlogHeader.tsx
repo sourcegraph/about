@@ -10,8 +10,7 @@ export const BlogHeader: FunctionComponent<Props> = ({ title, belowTitle, baseUr
     <div>
         <h1 className="display-4 font-weight-bold mt-3">
             <Link href={baseUrl} passHref={true}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className="text-body">{title}</a>
+                <a className="text-body" href="#none">{title}</a>
             </Link>
         </h1>
 

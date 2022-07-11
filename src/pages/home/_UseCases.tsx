@@ -113,8 +113,8 @@ const UseCases: FunctionComponent = () => {
                                 <p className="m-0">{useCase.description}</p>
                                 {useCase.link && (
                                     <Link href={useCase.link.href}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
+                                            href="#none"
                                             title={useCase.link.text}
                                             data-button-style={buttonStyle.text}
                                             data-button-location={buttonLocation.body}
@@ -141,8 +141,8 @@ const UseCases: FunctionComponent = () => {
                 </h3>
                 <p className="text-xl">
                     <Link href="/get-started/self-hosted" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
+                            href="#none"
                             title="Get started"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.trySourcegraph}
@@ -153,8 +153,8 @@ const UseCases: FunctionComponent = () => {
                     </Link>
                     {' '}for free with up to 10 teammates or{' '}
                     <Link href="/demo">
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
+                            href="#none"
                             title="Request a demo"
                             data-button-style={buttonStyle.text}
                             data-button-location={buttonLocation.bodyDemo}

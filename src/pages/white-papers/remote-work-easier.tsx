@@ -251,8 +251,7 @@ export const RemoteWorkEasier: FunctionComponent = () => (
                             href="/resources/universal-code-search-ebook/?utm_medium=organic_search&utm_source=about&utm_content=universal-code-search"
                             passHref={true}
                         >
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal">
+                            <a className="btn btn-lg btn-outline-light universal-code-search__btn mt-3 font-weight-normal" href="#none" title="Free download">
                                 Free download
                             </a>
                         </Link>

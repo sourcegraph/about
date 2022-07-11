@@ -44,17 +44,14 @@ export const PodcastListItem: FunctionComponent<PostIndexItemProps> = ({
                     <div className="flex-1">
                         <div>
                             <Link href={`/podcast/${slugPath}`} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="text-muted mr-4 font-weight-bold">Permalink</a>
+                                <a className="text-muted mr-4 font-weight-bold" href="#none" title="Permalink">Permalink</a>
                             </Link>
 
                             <Link href={`/podcast/${slugPath}#notes`} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="text-muted mr-4 font-weight-bold">Show notes</a>
+                                <a className="text-muted mr-4 font-weight-bold" href="#none" title="Show notes">Show notes</a>
                             </Link>
                             <Link href={`/podcast/${slugPath}#transcript`} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="text-muted mr-4 font-weight-bold">Transcript</a>
+                                <a className="text-muted mr-4 font-weight-bold" href="#none" title="Transcript">Transcript</a>
                             </Link>
                             {frontmatter.videoID && (
                                 <a

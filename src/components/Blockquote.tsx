@@ -48,8 +48,7 @@ export const BlockquoteWithLogoBottom: FunctionComponent<{
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a className="d-flex justify-content-center mt-3">
+                    <a className="d-flex justify-content-center mt-3" href="#none">
                         <p className="font-weight-bold">{link.text}</p>
                         <ArrowRightIcon className="icon-inline ml-1" />
                     </a>
@@ -116,9 +115,10 @@ export const BlockquoteWithBorder: FunctionComponent<{
                 </a>
             ) : (
                 <Link href={link.href} passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="d-flex justify-content-center mt-3"
+                        href="#none"
+                        title={link.text}
                         data-button-style={buttonStyle.textWithArrow}
                         data-button-location={buttonLocation.body}
                         data-button-type="cta"

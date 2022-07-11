@@ -3,6 +3,8 @@ import { FunctionComponent } from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
 
+import { buttonStyle, buttonLocation } from '@data'
+
 import styles from './CaseStudyCard.module.scss'
 
 interface CaseStudy {
@@ -119,13 +121,30 @@ export const CaseStudyCard: FunctionComponent<{ study: CaseStudy; bwLogo?: boole
                 {title}{' '}
                 <span className="text-nowrap">
                     {url.includes('http') ? (
-                        <a href={url} className="card-link" target="_blank" rel="nofollow noreferrer">
+                        <a
+                            href={url}
+                            className="card-link"
+                            target="_blank"
+                            rel="nofollow noreferrer"
+                            title={linkText + ': ' + title}
+                            data-button-style={buttonStyle.text}
+                            data-button-location={buttonLocation.body}
+                            data-button-type="cta"
+                        >
                             {linkText}.
                         </a>
                     ) : (
                         <Link href={url} passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="card-link">{linkText}.</a>
+                            <a
+                                className="card-link"
+                                href="#none"
+                                title={linkText + ': ' + title}
+                                data-button-style={buttonStyle.text}
+                                data-button-location={buttonLocation.body}
+                                data-button-type="cta"
+                            >
+                                {linkText}.
+                            </a>
                         </Link>
                     )}
                 </span>

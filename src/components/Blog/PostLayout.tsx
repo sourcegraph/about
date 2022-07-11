@@ -40,8 +40,7 @@ export const PostLayout: FunctionComponent<PostComponentProps> = ({
             <h1 className={titleClassName}>
                 {renderTitleAsLink === true ? (
                     <Link href={url} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className={`d-block ${titleLinkClassName}`}>{post.frontmatter.title}</a>
+                        <a className={`d-block ${titleLinkClassName}`} href="#none" title={post.frontmatter.title}>{post.frontmatter.title}</a>
                     </Link>
                 ) : (
                     post.frontmatter.title

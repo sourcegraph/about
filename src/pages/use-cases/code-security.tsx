@@ -230,9 +230,9 @@ const UseCasePage: FunctionComponent = () => (
                                 <div className="flex-column flex-md-row d-md-flex text-center">
                                     <div className="mb-3 mb-md-0">
                                         <Link href="/demo" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="btn btn-primary w-100 max-w-350"
+                                                href="#none"
                                                 title="Request a Demo."
                                                 data-button-style={buttonStyle.primary}
                                                 data-button-location={buttonLocation.hero}
@@ -244,9 +244,9 @@ const UseCasePage: FunctionComponent = () => (
                                     </div>
                                     <div className="ml-md-3">
                                         <Link href="/get-started/self-hosted" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="btn btn-outline-primary w-100 max-w-350"
+                                                href="#none"
                                                 title="Try Sourcegraph."
                                                 data-button-style={buttonStyle.outline}
                                                 data-button-location={buttonLocation.hero}
@@ -310,8 +310,7 @@ const UseCasePage: FunctionComponent = () => (
                             </p>
                             <h6>Learn how to use Sourcegraph to identify and resolve every instance of Log4j.</h6>
                             <Link href="/blog/log4j-log4shell-0-day" passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="font-weight-bold">Read the blog post.</a>
+                                <a className="font-weight-bold" href="#none" title="Read the blog post">Read the blog post.</a>
                             </Link>
                         </div>
                     </div>
@@ -341,9 +340,9 @@ const UseCasePage: FunctionComponent = () => (
                     </div>
                     <div className="text-center col-12 px-0">
                         <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary max-w-350 w-100"
+                                href="#none"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}
@@ -353,8 +352,7 @@ const UseCasePage: FunctionComponent = () => (
                             </a>
                         </Link>
                         <Link href="/use-cases" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="d-flex justify-content-center mt-4 font-weight-bold">
+                            <a className="d-flex justify-content-center mt-4 font-weight-bold" href="#none" title="Explore other use cases">
                                 Explore other use cases
                             </a>
                         </Link>
@@ -381,9 +379,10 @@ const UseCasePage: FunctionComponent = () => (
         <ContentSection>
             <div className="d-flex justify-content-center mb-lg-6">
                 <Link href="/get-started/self-hosted" passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
+                        href="#none"
+                        title="Ready to get started?"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

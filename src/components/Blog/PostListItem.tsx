@@ -23,8 +23,7 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
             <h1 className={titleClassName}>
                 {renderTitleAsLink === true ? (
                     <Link href={`/${blogType}/${slugPath}`} passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a className={`d-block ${titleLinkClassName}`}>{frontmatter.title}</a>
+                        <a className={`d-block ${titleLinkClassName}`} href="#none" title={frontmatter.title}>{frontmatter.title}</a>
                     </Link>
                 ) : (
                     frontmatter.title
@@ -71,16 +70,14 @@ export const PostListItem: FunctionComponent<PostIndexItemProps> = ({
                         )}
                         <div className="text-center text-sm-left">
                             <Link href={`/${blogType}/${slugPath}`} passHref={true}>
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="font-weight-bold">Read more</a>
+                                <a className="font-weight-bold" href="#none" title="Read more">Read more</a>
                             </Link>
                         </div>
                     </div>
 
                     <div className="col-md-3 d-flex">
                         <Link href={`/${blogType}/${slugPath}`} passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a>
+                            <a href="#none">
                                 <img
                                     className="w-100"
                                     src={

@@ -199,9 +199,9 @@ const IncidentResponsePage: FunctionComponent = () => (
                             <div className="flex-column flex-md-row d-md-flex text-center">
                                 <div className="mb-3 mb-md-0">
                                     <Link href="/demo" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             className="btn btn-primary w-100 max-w-350"
+                                            href="#none"
                                             title="Request a Demo."
                                             data-button-style={buttonStyle.primary}
                                             data-button-location={buttonLocation.hero}
@@ -213,9 +213,9 @@ const IncidentResponsePage: FunctionComponent = () => (
                                 </div>
                                 <div className="ml-md-3">
                                     <Link href="/get-started/self-hosted" passHref={true}>
-                                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                         <a
                                             className="btn btn-outline-primary w-100 max-w-350"
+                                            href="#none"
                                             title="Try Sourcegraph."
                                             data-button-style={buttonStyle.outline}
                                             data-button-location={buttonLocation.hero}
@@ -283,8 +283,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                                 href="/case-studies/cloudflare-accelerates-debugging-and-improves-security"
                                 passHref={true}
                             >
-                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                <a className="font-weight-bold">Read the Cloudflare case study</a>
+                                <a className="font-weight-bold" href="#none" title="Read the Cloudflare case study">Read the Cloudflare case study</a>
                             </Link>
                             <img
                                 src="/external-logos/cloudflare-logo.svg"
@@ -319,9 +318,9 @@ const IncidentResponsePage: FunctionComponent = () => (
                     </div>
                     <div className="text-center col-12 px-0">
                         <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary max-w-350 w-100"
+                                href="#none"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}
@@ -331,8 +330,7 @@ const IncidentResponsePage: FunctionComponent = () => (
                             </a>
                         </Link>
                         <Link href="/use-cases" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                            <a className="d-flex justify-content-center mt-4 font-weight-bold">
+                            <a className="d-flex justify-content-center mt-4 font-weight-bold" href="#none" title="Explore other use cases">
                                 Explore other use cases
                             </a>
                         </Link>
@@ -362,9 +360,10 @@ const IncidentResponsePage: FunctionComponent = () => (
                     Respond to incidents faster and more effectively.
                 </h2>
                 <Link href="/get-started/self-hosted" passHref={true}>
-                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <a
                         className="btn btn-primary"
+                        href="#none"
+                        title="Ready to get started?"
                         data-button-style={buttonStyle.primary}
                         data-button-location={buttonLocation.trySourcegraph}
                         data-button-type="cta"

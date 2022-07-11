@@ -37,8 +37,9 @@ const items = [
                     <p className="py-3">
                         Use{' '}
                         <Link href="/code-search" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
+                                title="Code Search"
+                                href="#none"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -64,8 +65,9 @@ const items = [
                     <p className="py-3">
                         With{' '}
                         <Link href="/batch-changes">
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
+                                href="#none"
+                                title="Batch Changes"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -240,9 +242,9 @@ const UseCasePage: FunctionComponent = () => (
                                 <div className="flex-column flex-md-row d-md-flex text-center">
                                     <div className="mb-3 mb-md-0">
                                         <Link href="/demo" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="btn btn-primary w-100 max-w-350"
+                                                href="#none"
                                                 title="Request a Demo."
                                                 data-button-style={buttonStyle.primary}
                                                 data-button-location={buttonLocation.hero}
@@ -254,9 +256,9 @@ const UseCasePage: FunctionComponent = () => (
                                     </div>
                                     <div className="ml-md-3">
                                         <Link href="/get-started/self-hosted" passHref={true}>
-                                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                             <a
                                                 className="btn btn-outline-primary w-100 max-w-350"
+                                                href="#none"
                                                 title="Try Sourcegraph."
                                                 data-button-style={buttonStyle.outline}
                                                 data-button-location={buttonLocation.hero}
@@ -343,9 +345,9 @@ const UseCasePage: FunctionComponent = () => (
                     </div>
                     <div className="text-center col-12 px-0">
                         <Link href="/demo" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="btn btn-primary max-w-350 w-100"
+                                href="#none"
                                 title="Request a Demo."
                                 data-button-style={buttonStyle.primary}
                                 data-button-location={buttonLocation.bodyDemo}
@@ -355,9 +357,10 @@ const UseCasePage: FunctionComponent = () => (
                             </a>
                         </Link>
                         <Link href="/use-cases" passHref={true}>
-                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a
                                 className="d-flex justify-content-center mt-4"
+                                href="#none"
+                                title="Explore other use cases"
                                 data-button-style={buttonStyle.text}
                                 data-button-location={buttonLocation.body}
                                 data-button-type="cta"
@@ -390,9 +393,9 @@ const UseCasePage: FunctionComponent = () => (
                 <h2 className="w-100 font-weight-bold mb-4 mx-4 mx-lg-0">Ready to build a healthier codebase?</h2>
                 <div className="d-flex justify-content-center mb-lg-6">
                     <Link href="/get-started/self-hosted" passHref={true}>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a
                             className="btn btn-primary"
+                            href="#none"
                             title="Ready to get started?"
                             data-button-style={buttonStyle.primary}
                             data-button-location={buttonLocation.trySourcegraph}
