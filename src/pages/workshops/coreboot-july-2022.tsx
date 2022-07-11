@@ -11,7 +11,7 @@ export const Workshops: FunctionComponent = () => (
     >
         <GatedResourceLayout
             title="Coreboot + Sourcegraph Workshop"
-            formLabel="Register now or get a recording"
+            formLabel="Save a spot or receive the recording 📽️"
             form={{
                 formId: '3f61adb5-bcdc-4511-83cb-9be6a2e7a947',
             }}
